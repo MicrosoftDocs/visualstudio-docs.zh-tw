@@ -1,5 +1,7 @@
 ---
 title: 如何：將自訂的 Debug Engine 進行調試 |Microsoft Docs
+description: 瞭解可讓您使用 Visual Studio 來將自訂的 debug engine 或自訂專案類型進行偵錯工具的步驟。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a65e69655c4e8699bd267f1835ec0c49603014d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79ceea58fc78922cd07bb6635ed2f399e97dd1c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903311"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560807"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>如何：將自訂的 debug engine 進行調試
 專案類型會啟動 debug engine (從方法中取消) <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> 。 這表示會在控制專案類型的實例控制下啟動取消 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 但是，該實例 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 無法解除對 DE 的偵錯工具。 接下來的步驟可讓您進行自訂的 DE 錯。
@@ -31,7 +33,7 @@ ms.locfileid: "85903311"
 
 1. 啟動 *msvsmon.exe*，遠端偵錯監視器。
 
-2. 從*msvsmon.exe*的 [**工具**] 功能表中選取 [**選項**]，以開啟 [**選項**] 對話方塊。
+2. 從 *msvsmon.exe* 的 [**工具**] 功能表中選取 [**選項**]，以開啟 [**選項**] 對話方塊。
 
 3. 選取 [無驗證] 選項，然後按一下 **[確定]**。
 
@@ -41,9 +43,9 @@ ms.locfileid: "85903311"
 
 6. 在的第二個實例中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，從您的自訂專案載入原始程式檔，然後啟動要進行調試的程式。 等候幾分鐘的時間，以允許取消載入，或等候直到點擊中斷點為止。
 
-7. 在 (的第一個實例中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，當您取消專案) ，請從 [**調試**程式] 功能表中選取 [**附加至進程**]。
+7. 在 (的第一個實例中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，當您取消專案) ，請從 [**調試** 程式] 功能表中選取 [**附加至進程**]。
 
-8. 在 [ **附加至進程** ] 對話方塊中，將 [ **傳輸** ] 變更 (為 [ **僅限原生，而不使用驗證) **]。
+8. 在 [ **附加至進程** ] 對話方塊中，將 [ **傳輸** ] 變更 (為 [ **僅限原生，而不使用驗證)**]。
 
 9. 將辨識 **符號** 變更為您的電腦名稱稱 (注意：有專案的歷程記錄，因此您只需要在) 時輸入此名稱一次。
 
@@ -57,13 +59,13 @@ ms.locfileid: "85903311"
 
 1. 從 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 一般登錄區開始，然後載入您的專案類型專案 (這是您專案類型的來源，而不是專案類型的具現化) 。
 
-2. 開啟專案屬性，並移至 [ **Debug** ] 頁面。 在 **命令**中，輸入 IDE (的路徑 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，預設為 *[磁片磁碟機]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe) 。
+2. 開啟專案屬性，並移至 [ **Debug** ] 頁面。 在 **命令** 中，輸入 IDE (的路徑 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，預設為 *[磁片磁碟機]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe) 。
 
 3. 在 [ **命令引數**] 中，輸入 `/rootsuffix exp` (在安裝 VSIP 時所建立的實驗登錄 hive) 。
 
-4. 按一下 [確定] **** 以接受變更。
+4. 按一下 [確定]  以接受變更。
 
-5. 按下 **F5**以啟動您的專案類型。 這會啟動的第二個實例 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
+5. 按下 **F5** 以啟動您的專案類型。 這會啟動的第二個實例 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
 6. 此時，您可以將中斷點放置在您的專案類型原始程式碼中。
 

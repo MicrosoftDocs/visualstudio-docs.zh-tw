@@ -1,5 +1,7 @@
 ---
 title: CRT 調試技術 |Microsoft Docs
+description: 您可以使用各種技術來對使用 C 執行時間 (CRT) 程式庫的程式進行程式設計。 您可以使用本文及其連結來瞭解這類技術。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,34 +21,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b71c91dbcc420fd4cc89a5e86fb976cca738bdcc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62564030"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560521"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 偵錯技術
 如果您要偵錯的程式使用 C 執行階段程式庫，可以使用這些偵錯技術。
 
 ## <a name="in-this-section"></a>本節內容
- [CRT 偵錯程式庫操作](../debugger/crt-debug-library-use.md)
+ [CRT Debug 程式庫使用](../debugger/crt-debug-library-use.md)
 
  描述由 C 執行階段程式庫提供的偵錯支援，並提供存取這些工具的指示。
 
- [報告巨集](../debugger/macros-for-reporting.md)
+ [報告的宏](../debugger/macros-for-reporting.md)
 
  提供 **_RPTn** 和 **_RPTFn** 巨集 (定義於 CRTDBG.H) 的相關資訊，這些巨集取代偵錯時使用的 `printf` 陳述式。
 
- [堆積配置函式的偵錯版本](../debugger/debug-versions-of-heap-allocation-functions.md)
+ [堆積配置函數的偵錯工具版本](../debugger/debug-versions-of-heap-allocation-functions.md)
 
  討論堆積配置函式的特殊偵錯版本，包括：CRT 對應呼叫的方式、明確呼叫他們的優點、如何避免轉換、追蹤用戶端區塊中不同的配置類型，以及未定義 _DEBUG 的結果。
 
- [CRT 偵錯堆積詳細資料](../debugger/crt-debug-heap-details.md)
+ [CRT Debug 堆積詳細資料](../debugger/crt-debug-heap-details.md)
 
  提供記憶體管理和偵錯堆積、偵錯堆積上的區塊類型、使用偵錯堆積、回報函式的堆積狀態和追蹤堆積配置要求的連結。
 
- [撰寫偵錯攔截函式](../debugger/debug-hook-function-writing.md)
+ [調試攔截函式寫入](../debugger/debug-hook-function-writing.md)
 
  列出以下主題的連結：用戶端區塊攔截函式、配置攔截函式，配置攔截與 CRT 記憶體配置，以及報告攔截函式。
 

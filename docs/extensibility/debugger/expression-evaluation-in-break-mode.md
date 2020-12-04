@@ -1,5 +1,7 @@
 ---
 title: 中斷模式中的運算式評估 |Microsoft Docs
+description: 深入瞭解偵錯工具處於中斷模式時所發生的程式，並且必須進行運算式評估。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc09fc43bd9f0edea4f6dc32e5f37c387c045796
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e73d98e9fff713258f4797577fd8402932fe266
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738730"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559632"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>中斷模式中的運算式評估
 下一節將描述偵錯工具處於中斷模式且必須進行運算式評估時所發生的程式。

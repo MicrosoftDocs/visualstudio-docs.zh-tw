@@ -1,5 +1,7 @@
 ---
 title: 執行和註冊埠供應商 |Microsoft Docs
+description: 瞭解如何執行和註冊通訊埠供應商，以追蹤和提供管理進程的埠。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efa9cdd8740648b66fe7190177b5fe769c4b2539
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5bce26a00a525ed93e27b531b36aca1fc04dce4
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738528"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559923"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>執行並註冊埠供應商
 埠供應商的角色是追蹤和提供埠，進而管理進程。 當需要建立埠時，會使用 CoCreate 搭配埠供應商的 GUID 來具現化埠供應商 (會話 debug manager [SDM] 將使用使用者選取的埠供應商或專案系統所指定的埠供應商) 。 SDM 接著會呼叫 [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) ，以查看是否可以加入任何埠。 如果可以新增埠，則會藉由呼叫 [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) 來要求新的埠，並將描述該埠的 [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) 傳遞給它。 `AddPort` 傳回 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 介面所代表的新埠。
@@ -55,7 +57,7 @@ RemoveMetric(metrictypePortSupplier,
 ```
 
 > [!NOTE]
-> [用於偵錯工具的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` 和在 `RemoveMetric` *dbgmetric*中定義的靜態函式，並編譯成*ad2de .lib*。 `metrictypePortSupplier`、 `metricCLSID` 和協助程式 `metricName` 也會在*dbgmetric*中定義。
+> [用於偵錯工具的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` 和在 `RemoveMetric` *dbgmetric* 中定義的靜態函式，並編譯成 *ad2de .lib*。 `metrictypePortSupplier`、 `metricCLSID` 和協助程式 `metricName` 也會在 *dbgmetric* 中定義。
 
  埠供應商可以分別透過 [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) 和 [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)方法提供其名稱和 GUID。
 

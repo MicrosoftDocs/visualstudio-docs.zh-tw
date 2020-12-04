@@ -1,5 +1,7 @@
 ---
 title: CRT Debug 程式庫使用 |Microsoft Docs
+description: 瞭解 C 執行時間 (CRT) 程式庫如何支援您的偵錯工具，以及使用 CRT 偵錯工具庫時必須執行的工作。
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2019
 ms.topic: conceptual
 f1_keywords:
@@ -28,15 +30,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20aeee220bec600c2232286d18600b04201ad03b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d145ccd8764e488a5d1270985050b29bcd8987d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745613"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560560"
 ---
 # <a name="crt-debug-library-use"></a>CRT 偵錯程式庫操作
-C 執行階段程式庫提供更多的偵錯支援。 若要使用其中一個 CRT debug 程式庫，您必須與 [/debug](/cpp/build/reference/debug-generate-debug-info) 連結，並使用 **/MDd**、 **/MTd**或 **/LDd**進行編譯。
+C 執行階段程式庫提供更多的偵錯支援。 若要使用其中一個 CRT debug 程式庫，您必須與 [/debug](/cpp/build/reference/debug-generate-debug-info) 連結，並使用 **/MDd**、 **/MTd** 或 **/LDd** 進行編譯。
 
 ## <a name="remarks"></a>備註
  可以在 CRTDBG.h 標頭檔裡找到 CRT 偵錯的主要定義和巨集。
@@ -47,5 +49,5 @@ C 執行階段程式庫提供更多的偵錯支援。 若要使用其中一個 C
 
 ## <a name="see-also"></a>另請參閱
 
-- [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)
-- [/MD、/MT、/LD (使用執行時間程式庫) ](/cpp/build/reference/md-mt-ld-use-run-time-library)
+- [CRT 調試技術](../debugger/crt-debugging-techniques.md)
+- [/MD、/MT、/LD (使用 Run-Time 程式庫) ](/cpp/build/reference/md-mt-ld-use-run-time-library)

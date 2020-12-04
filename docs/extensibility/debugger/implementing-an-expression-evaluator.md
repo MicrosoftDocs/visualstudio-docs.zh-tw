@@ -1,5 +1,7 @@
 ---
 title: 執行運算式評估工具 |Microsoft Docs
+description: 瞭解如何評估運算式，其中牽涉到 debug engine、symbol provider、系結器物件和運算式評估工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8c7c9a1130794dd4c28f212afd6cb3c030f5a1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28989178ab726a9b274f66e0a9296f2bf49ead4a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738548"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559962"
 ---
 # <a name="implement-an-expression-evaluator"></a>執行運算式評估工具
 > [!IMPORTANT]
@@ -46,7 +48,7 @@ ms.locfileid: "80738548"
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-  EE 會執行 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)。 `IDebugProperty2` 提供用來描述運算式評估結果的機制，例如區域變數、基本或要 Visual Studio 的物件，然後在 [ **區域變數**]、 **[監看**式] 或 [即時運算 **] 視窗中** 顯示適當的資訊。
+  EE 會執行 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)。 `IDebugProperty2` 提供用來描述運算式評估結果的機制，例如區域變數、基本或要 Visual Studio 的物件，然後在 [ **區域變數**]、 **[監看** 式] 或 [即時運算 **] 視窗中** 顯示適當的資訊。
 
   當您要求資訊時，會將 SP 指定給 EE。 SP 會執行描述位址和欄位的介面，例如下列介面及其衍生項：
 

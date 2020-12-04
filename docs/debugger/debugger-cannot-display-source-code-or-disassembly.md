@@ -1,6 +1,7 @@
 ---
 title: 偵錯工具無法顯示原始程式碼或反組解碼
-ms.custom: seodec18
+description: 請參閱「偵錯工具無法針對執行已停止的目前位置顯示原始程式碼或反組解碼」訊息的原因。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d87de3034cb6cb8ba3364fa362eff1c27e6bae9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd0ed9a798c29010911a1537c99f30ba44e01aea
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738350"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561041"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>偵錯工具無法顯示原始程式碼或反組譯碼
 這個錯誤為：
@@ -32,7 +33,7 @@ ms.locfileid: "72738350"
 
 - 所叫用的中斷點位置可能沒有原始程式碼，可是您正在偵錯不支援反組譯碼的語言。 開啟 [ **中斷點** ] 視窗、找出中斷點，然後刪除它。
 
-- 若您正在偵錯指令碼，可能會叫用中斷點，但是程式中卻沒有任何執行緒。 從 [偵錯]**** 功能表選擇 [逐步執行]**** 或 [繼續]****，以繼續偵錯。
+- 若您正在偵錯指令碼，可能會叫用中斷點，但是程式中卻沒有任何執行緒。 從 [偵錯] 功能表選擇 [逐步執行] 或 [繼續]，以繼續偵錯。
 
 - 安全性考量可能會禁止偵錯工具從您正在偵錯的程式中讀取堆疊、執行緒、暫存器和其他的內容資訊。 您正在偵錯 Web 應用程式，但沒有正確的使用權限來存取虛擬目錄時，最常發生這種情形。 請將虛擬目錄的安全性設成 [匿名]，然後再試一次。
 

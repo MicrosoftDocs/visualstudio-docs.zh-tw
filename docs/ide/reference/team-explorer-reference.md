@@ -1,16 +1,18 @@
 ---
 title: Team Explorer 參考
+description: 瞭解 Team Explorer 中的各種功能，以管理工作並與其他小組成員協調以開發專案。
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: a7089defb41c3ba8379d1020cbf1225d6333b912
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928078"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560989"
 ---
 # <a name="team-explorer-reference"></a>Team Explorer 參考
 
@@ -20,18 +22,18 @@ ms.locfileid: "91928078"
 
 ## <a name="home-page"></a>首頁
 
-在 **Team Explorer** 中[連線到專案](../connect-team-project.md)之後，即可在 [專案]**** 區段中使用下列連結：
+在 **Team Explorer** 中 [連線到專案](../connect-team-project.md)之後，即可在 [專案] 區段中使用下列連結：
 
 - [複製存放庫](/azure/devops/repos/git/clone)
 - [入口網站](/azure/devops/project/navigation/index)
 - [工作面板](/azure/devops/boards/sprints/task-board)
 
-根據您是連線到 [Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true) 或 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview) 存放庫，[首頁]**** 會有不同的功能。
+根據您是連線到 [Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true) 或 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview) 存放庫，[首頁] 會有不同的功能。
 
 > [!TIP]
 > 如需比較這兩種版本控制系統，請參閱[為您的專案選擇正確版本控制 (Azure DevOps)](/azure/devops/repos/tfvc/comparison-git-tfvc)。
 
-| 含 Git 的 [首頁]**** | 含 TFVC 的 [首頁]**** |
+| 含 Git 的 [首頁] | 含 TFVC 的 [首頁] |
 | - | - |
 | ![Visual Studio 2019 中含 Git 的 Team Explorer [首頁]](media/team-explorer-reference/team-explorer-git.png) | ![Visual Studio 中含 TFVC 的 Team Explorer [首頁]](media/team-explorer-reference/team-explorer-tfvc.png) |
 
@@ -69,7 +71,7 @@ ms.locfileid: "91928078"
 
 ## <a name="work-items-page"></a>工作項目頁面
 
-[工作項目]**** 頁面可讓您查看[工作項目](/azure/devops/boards/work-items/about-work-items)查詢。 請參閱：
+[工作項目] 頁面可讓您查看[工作項目](/azure/devops/boards/work-items/about-work-items)查詢。 請參閱：
 
 - [新增工作項目](/azure/devops/boards/backlogs/add-work-items)
 - [使用查詢編輯器列出和管理查詢](/azure/devops/boards/queries/using-queries)
@@ -88,7 +90,7 @@ ms.locfileid: "91928078"
 
 ## <a name="builds-page"></a>組建頁面
 
-[組建]**** 頁面可讓您查看專案的組建定義。
+[組建] 頁面可讓您查看專案的組建定義。
 
 請參閱：
 
@@ -100,9 +102,9 @@ ms.locfileid: "91928078"
 
 ## <a name="settings-page"></a>設定頁面
 
-[設定]**** 頁面可讓您為專案或專案集合設定管理功能。 請參閱下列文章：
+[設定] 頁面可讓您為專案或專案集合設定管理功能。 查看下列文章：
 
-| 專案 | 專案集合 | 其他 |
+| Project | 專案集合 | 其他 |
 | - | - | - |
 | [安全性、群組成員資格](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[安全性、原始檔控制 (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[工作項目區域](/azure/devops/organizations/settings/set-area-paths)<br/>[工作項目反覆項目](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[入口網站設定](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[專案警示](/azure/devops/notifications/howto-manage-team-notifications) | [安全性、群組成員資格](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[原始檔控制 (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[流程範本管理員](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Git 全域設定](/azure/devops/repos/git/git-config)<br/>[Git 存放庫設定](/azure/devops/repos/git/git-config) |
 

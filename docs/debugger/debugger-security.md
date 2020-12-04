@@ -1,5 +1,7 @@
 ---
 title: 偵錯工具安全性 |Microsoft Docs
+description: 瞭解偵錯工具所造成的安全性風險，以及偵錯工具和所要進行的機器的風險。 遵循建議以將風險降至最低。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8b7ac2aed43bcb39b4bb5924ad6f1cf2c438b64
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: f6d0c09a7f54157bd2ace9a6be09a357eb436ceb
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600087"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559741"
 ---
 # <a name="debugger-security"></a>偵錯工具安全性
 偵錯其他處理序的功能可以讓您獲得在他處無法得到的多樣化功能，特別是在遠端偵錯時。 惡意偵錯工具可能會在被偵錯的電腦上散佈更廣泛的損害。
@@ -37,7 +39,7 @@ ms.locfileid: "89600087"
 ### <a name="managed-debugging-security"></a>Managed 偵錯安全性
  以下列出幾項適用所有 Managed 偵錯的一般建議：
 
-- 當附加至未受信任使用者的處理序時要小心：在執行這項動作時是假設它沒有任何問題的。 當您嘗試附加至未受信任使用者的處理序時，就會出現安全性警告對話方塊確認，詢問您是否想要附加至處理序。 「信任的使用者」包括您，以及安裝 .NET Framework 後電腦上通常會定義的標準使用者集，例如 **aspnet**、 **localsystem**、 **networkservice**和 **localservice**。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。
+- 當附加至未受信任使用者的處理序時要小心：在執行這項動作時是假設它沒有任何問題的。 當您嘗試附加至未受信任使用者的處理序時，就會出現安全性警告對話方塊確認，詢問您是否想要附加至處理序。 「信任的使用者」包括您，以及安裝 .NET Framework 後電腦上通常會定義的標準使用者集，例如 **aspnet**、 **localsystem**、 **networkservice** 和 **localservice**。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。
 
 - 從網際網路下載專案並載入 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]時要小心。 即使不使用偵錯，這個動作也非常危險。 在執行這項動作時，是假設專案和其中包含的程式碼沒有任何問題。
 
@@ -78,7 +80,7 @@ ms.locfileid: "89600087"
   請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 ## <a name="see-also"></a>另請參閱
-- [偵錯設定及準備](../debugger/debugger-settings-and-preparation.md)
+- [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [安全性警告附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
 - [安全性警告：偵錯工具必須執行未受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

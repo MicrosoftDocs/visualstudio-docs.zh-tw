@@ -1,5 +1,7 @@
 ---
 title: 未使用的值和參數
+description: 瞭解未使用的值指派、變數和參數，以及它們如何出現在 Visual Studio 的程式碼編輯器中。
+ms.custom: SEO-VS-2020
 ms.date: 02/15/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce2b0f1e0c0db45c478c3917306683b314da0564
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8768992ce3ef9f40ab0adba1724d43b32e5bde5c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65531868"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560703"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>未使用的值指派、變數及參數
 

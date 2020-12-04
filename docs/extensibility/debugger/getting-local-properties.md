@@ -1,5 +1,7 @@
 ---
 title: 取得區域屬性 |Microsoft Docs
+description: 瞭解 Visual Studio 如何使用 EnumChildren 來取得本機屬性，以及這些適用于 managed 和非受控程式碼的範例。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e084f28257ddede388468f36e1635e87c8f65961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17b6d104f88999ba7dd8e115a752a78853af6603
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738626"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560014"
 ---
 # <a name="get-local-properties"></a>取得區域屬性
 > [!IMPORTANT]

@@ -1,5 +1,7 @@
 ---
 title: " (UWP) 的 Web 工作控制項進行 Debug 錯 |Microsoft Docs"
+description: 瞭解如何檢查和偵測 Windows 執行階段應用程式中所使用的 Web 程式控制項。 您可以使用 [DOM 總管] 和 [JavaScript 主控台] 視窗。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: f0cab4a77c601414e766851aaf048fb3c32f6458
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 5439f9f253126e159df5dd9ea58bad04c3f6c649
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211111"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560547"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>在 UWP 應用程式中將 Web 程式控制項進行偵錯工具
 
@@ -33,13 +35,13 @@ ms.locfileid: "91211111"
 
 1. 在 Visual Studio 中，將 `WebView` 控項項加入 Windows 執行階段元件。
 
-2. 在 [方案總管] 中，從專案的捷徑功能表選擇 [屬性]****，即可開啟專案的屬性。
+2. 在 [方案總管] 中，從專案的捷徑功能表選擇 [屬性]，即可開啟專案的屬性。
 
-3. 選擇 [偵錯]****。 在 [應用程式程序]**** 清單中，選擇 [指令碼]****。
+3. 選擇 [偵錯]。 在 [應用程式程序] 清單中，選擇 [指令碼]。
 
      ![附加 Script 偵錯工具](../debugger/media/js_dom_webview_script_debugger.png "JS_DOM_WebView_Script_Debugger")
 
-4. (選擇性) 若為非 Express 版本的 Visual Studio，依序選擇 [工具] > [選項] > [偵錯] > [Just-In-Time]****，然後停用指令碼的 Just-In-Time (JIT) 偵錯，以停用 JIT 偵錯。
+4. (選擇性) 若為非 Express 版本的 Visual Studio，依序選擇 [工具] > [選項] > [偵錯] > [Just-In-Time]，然後停用指令碼的 Just-In-Time (JIT) 偵錯，以停用 JIT 偵錯。
 
     > [!NOTE]
     > 藉由停用 JIT 偵錯，您可以隱藏在部分網頁上發生之未處理例外的對話方塊。 在 Visual Studio Express 中，一律停用 JIT 偵錯。

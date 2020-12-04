@@ -1,5 +1,7 @@
 ---
 title: 專案屬性參考
+description: 瞭解如何設定和自訂專案屬性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc3ec00ed771caba7e779e708801d611ca16b8c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f76e34f0a806a524c1305796bddabebd155e680c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567719"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560339"
 ---
 # <a name="project-properties-reference"></a>專案屬性參考
 
@@ -24,7 +26,7 @@ ms.locfileid: "75567719"
 
 ## <a name="project-properties-pages"></a>專案屬性頁面
 
-| 標題 | 說明 |
+| 標題 | 描述 |
 | - | - |
 | [Application Page, Project Designer (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | 使用這個頁面來指定 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 專案的應用程式設定和屬性。 |
 | [專案設計工具，應用程式頁 (C#)](../../ide/reference/application-page-project-designer-csharp.md) | 使用這個頁面來指定 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案的應用程式設定和屬性。 |

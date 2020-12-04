@@ -1,5 +1,7 @@
 ---
 title: 偵錯工具設定和準備 |Microsoft Docs
+description: 本節說明如何準備使用 Visual Studio 偵錯工具，以及描述相關的屬性。 遵循您需要的資訊連結。
+ms.custom: SEO-VS-2020
 ms.date: 08/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2704f4e73b1077f14c89e377453a858d341a2738
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ddae505580781c707678e95d9e270c46b86cdae
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738284"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560222"
 ---
 # <a name="debugger-settings-and-preparation"></a>偵錯設定及準備
 本章節說明與偵錯工具相關的屬性設定，以及使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具偵錯程式時所需的準備。 如果您是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用專案範本建立程式，這些設定會正確設定在偵錯組態中。

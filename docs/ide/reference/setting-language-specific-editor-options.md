@@ -1,5 +1,7 @@
 ---
 title: 設定語言特定編輯器選項
+description: 瞭解如何設定適用于特定程式設計語言的各種文字編輯器選項。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1060abe1b16b9391eadb88be1499fa2231fb1859
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590835"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560742"
 ---
 # <a name="set-language-specific-editor-options"></a>設定語言專用編輯器的選項
 
-Visual Studio 提供多種 [文字編輯器] 選項，可以套用至特定的程式語言。 您可以設定 [選項]**** 對話方塊中的選項，以從 [工具]**** 功能表中存取。 您也可以藉由 [建立 EditorConfig](../../ide/create-portable-custom-editor-options.md)檔案，以專案或程式碼基底為基礎來設定某些編輯器設定。
+Visual Studio 提供多種 [文字編輯器] 選項，可以套用至特定的程式語言。 您可以設定 [選項] 對話方塊中的選項，以從 [工具] 功能表中存取。 您也可以藉由 [建立 EditorConfig](../../ide/create-portable-custom-editor-options.md)檔案，以專案或程式碼基底為基礎來設定某些編輯器設定。
 
 ## <a name="settings-available-in-the-options-dialog-box"></a>[選項] 對話方塊中提供的設定
 

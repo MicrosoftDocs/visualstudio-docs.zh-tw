@@ -1,5 +1,7 @@
 ---
 title: 運算式評估工具執行策略 |Microsoft Docs
+description: 深入瞭解建立運算式評估工具的策略，方法是先執行程式碼，以在 [區域變數] 視窗中顯示本機變數。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3922689c20c839b3c0c2b2440bc9fefd5d25c80a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b936b465c3a7becbdcb3ea4f36a16b839260ad74
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738679"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560144"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>運算式評估工具執行策略
 > [!IMPORTANT]

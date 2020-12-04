@@ -1,5 +1,7 @@
 ---
 title: CRT Debug 堆積詳細資料 |Microsoft Docs
+description: Debug 堆積提供強大的工具來協助解決記憶體配置問題。 瞭解這些工具，以及它們如何協助解決問題，例如流失和超支。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -73,12 +75,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22307c44e4f82056887fadf6e8fde9e1449a19a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 774c6c03d0485664eb01e1a7967003ef2f5bd2bc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247936"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560612"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 偵錯堆積詳細資料
 本主題提供 CRT 偵錯堆積的詳細檢視。
@@ -309,7 +311,7 @@ typedef struct _CrtMemState
 
 **建立配置常式的偵錯版本**
 
-較複雜的方法是建立您自己的配置常式偵錯版本，與[堆積配置函式](../debugger/debug-versions-of-heap-allocation-functions.md)的 **_dbg** 版本相似。 然後您可以傳遞原始程式檔和行號引數到下面的堆積配置常式，而且立即能夠看到錯誤的配置的發生位置。
+較複雜的方法是建立您自己的配置常式偵錯版本，與 [堆積配置函式](../debugger/debug-versions-of-heap-allocation-functions.md)的 **_dbg** 版本相似。 然後您可以傳遞原始程式檔和行號引數到下面的堆積配置常式，而且立即能夠看到錯誤的配置的發生位置。
 
 例如，假設應用程式包含一個類似下列的一般使用常式：
 

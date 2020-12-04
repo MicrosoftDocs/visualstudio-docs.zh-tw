@@ -1,5 +1,7 @@
 ---
 title: 運算式評估 (Visual Studio 調試 SDK) |Microsoft Docs
+description: 在中斷模式期間，IDE 會評估涉及程式變數的運算式。 瞭解 debug engine 如何剖析和評估運算式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e41179fd530818f5ac59aa54420ede1b4eafa1ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c398d9eb79a6b5fcd1a6851596ab8913faf32fa
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738708"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560885"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>運算式評估 (Visual Studio 調試 SDK) 
 在中斷模式期間，IDE 必須評估涉及數個程式變數的簡單運算式。 若要完成其評估，debug engine (DE) 必須剖析和評估輸入至 IDE 其中一個視窗的運算式。
 
  運算式會以 [IDebugExpressionCoNtext2：:P arsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 方法建立，並以產生的 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 介面表示。
 
- **IDebugExpression2**介面是由 DE 所執行，並呼叫其**EvalAsync**方法以將[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)介面傳回 ide，以便在 ide 中顯示運算式評估的結果。 [IDebugProperty2：： GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 會傳回用來將運算式的值放入 **[監看** 式] 視窗或 [ **區域變數** ] 視窗中的結構。
+ **IDebugExpression2** 介面是由 DE 所執行，並呼叫其 **EvalAsync** 方法以將 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)介面傳回 ide，以便在 ide 中顯示運算式評估的結果。 [IDebugProperty2：： GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 會傳回用來將運算式的值放入 **[監看** 式] 視窗或 [ **區域變數** ] 視窗中的結構。
 
  Debug 封裝或會話 debug manager (SDM) 呼叫 [IDebugExpression2：： EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 或 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 來取得代表評估結果的 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 介面。 `IDebugProperty2` 有方法可傳回運算式的名稱、類型和值。 這項資訊會出現在各種偵錯工具視窗中。
 

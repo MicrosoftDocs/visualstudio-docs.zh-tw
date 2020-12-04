@@ -1,5 +1,7 @@
 ---
 title: 建立受控物件的自訂視圖 |Microsoft Docs
+description: Visual Studio 偵錯工具會在變數視窗中顯示資料。 學習自訂如何顯示資料類型（包括自訂類型）。
+ms.custom: SEO-VS-2020
 ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5247a56667f5715d9f155c662eb333967878d71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2248a361837f664b0f78acfe61f6d7588f5258b
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188643"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560209"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>建立 managed 物件的自訂視圖 (c #、Visual Basic、F #、c + +/CLI) 
 您可以自訂 Visual Studio 在偵錯工具變數視窗中顯示資料型別的方式。

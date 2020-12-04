@@ -1,5 +1,7 @@
 ---
 title: 偵錯工具專案設定 |Microsoft Docs
+description: 有各種專案設定會影響偵錯工具。 遵循本文中的連結，以瞭解如何使用 [屬性頁] 對話方塊來變更設定。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a3a5ba7a1e215fddd5b1127859948496e9b4e1d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188628"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561028"
 ---
 # <a name="debugger-project-settings"></a>偵錯工具專案設定
 某些專案設定也會影響偵錯。 這些設定可以決定像是偵錯工具要查看哪些目錄、用於啟動程式的命令和命令引數，以及為程式建立的偵錯資訊類型等行為。 您可以在 [ **屬性頁** ] 對話方塊中變更這些設定。
@@ -31,7 +33,7 @@ ms.locfileid: "73188628"
 ## <a name="in-this-section"></a>本節內容
  [如何：指定偵錯工具設定](../debugger/how-to-specify-debugger-settings.md) 描述 [ **選項** ] 對話方塊中的偵錯工具設定。
 
- How [to：設定 Debug 和 Release 設定](../debugger/how-to-set-debug-and-release-configurations.md)描述**Debug**和**Release**設定，以及如何在兩者之間切換。
+ How [to：設定 Debug 和 Release 設定](../debugger/how-to-set-debug-and-release-configurations.md)描述 **Debug** 和 **Release** 設定，以及如何在兩者之間切換。
 
  [C + + 偵錯工具設定的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md) 在 [ **屬性頁** ] 對話方塊中，列出 C 或 c + + 專案可用的屬性。
 

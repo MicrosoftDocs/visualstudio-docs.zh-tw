@@ -1,5 +1,7 @@
 ---
 title: 執行控制和狀態評估 |Microsoft Docs
+description: 瞭解 Visual Studio 的偵錯工具如何以偵錯工具元件之間所傳送之事件的執行控制為基礎。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc76ae97e8baa6ce78dd4d565109d6a19e2051e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 021fab07cfaf1ec17821a8ef9a33a03f2d6ec714
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738749"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560898"
 ---
 # <a name="execution-control-and-state-evaluation"></a>執行控制和狀態評估
 若要對應用程式進行偵錯工具，您必須將這類執行控制功能實作為逐步執行函式、在中斷點停止，然後繼續執行。 Visual Studio 的偵錯工具會根據偵錯工具元件之間傳送的事件來執行控制項的執行控制。

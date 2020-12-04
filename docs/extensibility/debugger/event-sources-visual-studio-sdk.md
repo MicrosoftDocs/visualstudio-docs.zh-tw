@@ -1,5 +1,7 @@
 ---
 title: Visual Studio SDK) 的事件來源 (|Microsoft Docs
+description: 深入瞭解 Visual Studio 偵錯工具中的兩個事件來源： debug engine 和 Session Debug Manager。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ab0bc2bb61069e20276c471d1245d167715cc7a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738780"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559663"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Visual Studio SDK) 的事件來源 (
 事件有兩個來源： debug engine (DE) ，以及會話 Debug Manager (SDM) 。 從 DE 傳送的事件具有非 Null 的引擎，而從 SDM 傳送的事件則具有 Null 引擎。

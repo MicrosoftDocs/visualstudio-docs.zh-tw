@@ -1,5 +1,7 @@
 ---
 title: 命令別名
+description: 瞭解當您想要執行命令時，如何使用命令別名來輸入較少的字元。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,18 +18,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dda564939652a09b64fec65747ca14d1315b3f1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596407"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561067"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
-命令別名可讓您在想要執行命令時鍵入較少的字元。 您要將別名鍵入到 [尋找/命令]**** 方塊或 [命令]**** 視窗。 例如，您可以使用預先定義的別名 `>of` (而不是輸入 `>File.OpenFile`)，來顯示 [開啟檔案]**** 對話方塊。
+命令別名可讓您在想要執行命令時鍵入較少的字元。 您要將別名鍵入到 [尋找/命令] 方塊或 [命令] 視窗。 例如，您可以使用預先定義的別名 `>of` (而不是輸入 `>File.OpenFile`)，來顯示 [開啟檔案] 對話方塊。
 
-在 [命令]**** 視窗中鍵入 `alias` 可顯示目前的別名及其定義。 鍵入 `>cls` 可清除 [命令]**** 視窗的內容。 如果您想要查看特定命令的別名，請鍵入 `alias <command name>`。
+在 [命令] 視窗中鍵入 `alias` 可顯示目前的別名及其定義。 鍵入 `>cls` 可清除 [命令] 視窗的內容。 如果您想要查看特定命令的別名，請鍵入 `alias <command name>`。
 
 您可以輕鬆地為其中一個 Visual Studio 命令 (不論是否包含引數) 建立自己的別名。 例如，`File.NewFile MyFile.txt` 的別名語法是 `alias MyAlias File.NewFile MyFile.txt`。 您可以使用 `alias <alias name> /delete` 刪除其中一個別名
 
@@ -65,7 +67,7 @@ ms.locfileid: "75596407"
 |[評估語句命令](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
 |結束|結束|File.Exit|
 |格式化選取範圍|format|Edit.FormatSelection|
-|全螢幕|全螢幕|View.FullScreen|
+|全螢幕|FullScreen|View.FullScreen|
 |[Start 命令](../../ide/reference/start-command.md)|g|Debug.Start|
 |[移至命令](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |移至大括號|GotoBrace|Edit.GotoBrace|
@@ -78,7 +80,7 @@ ms.locfileid: "75596407"
 |刪除行|LineDel|Edit.LineDelete|
 |列出成員|ListMembers|Edit.ListMembers|
 |[區域變數] 視窗|本機|Debug.Locals|
-|[記錄命令視窗輸出命令](../../ide/reference/log-command-window-output-command.md)|Log|Tools.LogCommandWindowOutput|
+|[記錄命令視窗輸出命令](../../ide/reference/log-command-window-output-command.md)|記錄|Tools.LogCommandWindowOutput|
 |命令視窗標記模式|mark|Tools.CommandWindowMarkMode|
 |記憶體視窗|Memory Memory1|Debug.Memory1|
 |記憶體視窗 2|Memory2|Debug.Memory2|
@@ -98,7 +100,7 @@ ms.locfileid: "75596407"
 |上一個書籤|PrevBook|Edit.PreviousBookmark|
 |列印檔案|print|File.Print|
 |屬性視窗|props|View.PropertiesWindow|
-|Stop|q|Debug.StopDebugging|
+|停止|q|Debug.StopDebugging|
 |取消復原|重做|Edit.Redo|
 |暫存器視窗|暫存器|Debug.Registers|
 |執行至游標處|rtc|Debug.RunToCursor|
@@ -111,7 +113,7 @@ ms.locfileid: "75596407"
 |逐步執行|t|Debug.StepInto|
 |將選取範圍空白鍵轉定點|空白鍵轉定位鍵|Edit.TabifySelection|
 |工作清單視窗|TaskList|View.TaskList|
-|執行緒視窗|Threads|Debug.Threads|
+|執行緒視窗|執行緒|Debug.Threads|
 |水平並排顯示|TileH|Window.TileHorizontally|
 |垂直並排|TileV|Window.TileVertically|
 |切換書籤|ToggleBook|Edit.ToggleBookmark|
@@ -120,7 +122,7 @@ ms.locfileid: "75596407"
 |設成大寫|Ucase|Edit.MakeUppercase|
 |復原|恢復|Edit.Undo|
 |將選取範圍定位點轉空白|Untabify|Edit.UntabifySelection|
-|監看式視窗|監看式|Debug.WatchN|
+|監看式視窗|觀看|Debug.WatchN|
 |切換自動換行|WordWrap|Edit.ToggleWordWrap|
 |列出處理序|&#124;|Debug.ListProcesses|
 |[列出執行緒命令](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|

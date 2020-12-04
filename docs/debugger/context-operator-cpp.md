@@ -1,5 +1,7 @@
 ---
 title: 偵錯工具中的內容運算子 (c + +) |Microsoft Docs
+description: 您可能需要為外部範圍內的 c + + 名稱提供內容，並以區功能變數名稱稱隱藏。 瞭解如何使用內容運算子來執行此作業。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bc238cc56e1b815e79ba381a7cd4866085d3bef
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62564700"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559754"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Visual Studio 偵錯工具中的內容運算子 (c + +) 
 您可以使用 C++ 中的內容運算子限定中斷點位置、變數名稱或運算式。 內容運算子對於指定來自外部範圍的名稱相當實用，因為這類名稱會被本機名稱所隱藏。
@@ -53,13 +55,13 @@ ms.locfileid: "62564700"
 
 - *module* 是模組的名稱。 您可以使用完整路徑釐清具有相同名稱的模組。
 
-   如果 *module* 路徑包含逗號、內嵌空格或大括號，您就必須使用引號括住路徑，如此內容剖析器才能正確辨識字串。 單引號會視為 Windows 檔案名稱的一部分，因此您必須使用雙引號。 例如，
+   如果 *module* 路徑包含逗號、內嵌空格或大括號，您就必須使用引號括住路徑，如此內容剖析器才能正確辨識字串。 單引號會視為 Windows 檔案名稱的一部分，因此您必須使用雙引號。 例如
 
   ```C++
   {,,"a long, long, library name.dll"} g_Var
   ```
 
-- *expression* 是解析為有效目標的任何有效 C++ 運算式，例如 *module*中的函式名稱、變數名稱或指標位址。
+- *expression* 是解析為有效目標的任何有效 C++ 運算式，例如 *module* 中的函式名稱、變數名稱或指標位址。
 
   當運算式評估工具在運算式中遇到符號時，它會依照下列順序搜尋該符號：
 

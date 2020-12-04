@@ -1,5 +1,7 @@
 ---
 title: 其他檔案
+description: 瞭解如何處理不包含在 Visual Studio 專案或方案中的檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 793500faf217c74772506b4b7394d926447ffd40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc797fe7676d24a80867cc318cbe02f94e90e7d0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585293"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561093"
 ---
 # <a name="miscellaneous-files"></a>其他檔案
 
@@ -46,7 +48,7 @@ ms.locfileid: "75585293"
 
 ## <a name="folder-display-options"></a>資料夾顯示選項
 
-您可以設定 [其他檔案]**** 資料夾的顯示選項，以顯示資料夾，即使您尚未開啟任何其他檔案也是一樣。 方案檔不會永久管理其他檔案的清單。 它會使用選擇性功能，以記住每位使用者最常使用 (MRU) 的檔案清單。
+您可以設定 [其他檔案] 資料夾的顯示選項，以顯示資料夾，即使您尚未開啟任何其他檔案也是一樣。 方案檔不會永久管理其他檔案的清單。 它會使用選擇性功能，以記住每位使用者最常使用 (MRU) 的檔案清單。
 
 ## <a name="see-also"></a>另請參閱
 

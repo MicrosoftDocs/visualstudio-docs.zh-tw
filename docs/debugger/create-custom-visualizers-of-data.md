@@ -1,5 +1,7 @@
 ---
 title: 建立自訂資料視覺化檢視 |Microsoft Docs
+description: Visual Studio 偵錯工具視覺化程式是顯示資料的元件。 瞭解六個標準的視覺化檢視，以及您可以如何撰寫或下載其他視覺化檢視。
+ms.custom: SEO-VS-2020
 ms.date: 05/27/2020
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c39fae399cd735d09218699f10c1eaead8e40ee
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280872"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560677"
 ---
 # <a name="create-custom-data-visualizers"></a>建立自訂資料視覺化檢視
 
@@ -34,7 +36,7 @@ ms.locfileid: "85280872"
 
 您可以從 Microsoft、協力廠商和社區下載更多的視覺化檢視。 您也可以撰寫自己的視覺化程式，並在偵錯工具中安裝它們 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 。
 
-在偵錯工具中，視覺化檢視是以放大鏡圖示 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示")表示。 您可以選取 [**資料提示**]、[偵錯工具監看式] 視窗或 [**快速****監看**式] 對話方塊中的圖示，然後針對對應的物件選取適當的視覺化檢視。
+在偵錯工具中，視覺化檢視是以放大鏡圖示 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示")表示。 您可以選取 [**資料提示**]、[偵錯工具監看式] 視窗或 [**快速****監看** 式] 對話方塊中的圖示，然後針對對應的物件選取適當的視覺化檢視。
 
 ## <a name="write-custom-visualizers"></a>撰寫自訂的視覺化檢視
 
@@ -45,11 +47,11 @@ ms.locfileid: "85280872"
 
 偵錯工具視覺化檢視的架構分為兩部分：
 
-- *偵錯工具端*在 Visual Studio 偵錯工具內執行，並建立和顯示視覺化程式使用者介面。
+- *偵錯工具端* 在 Visual Studio 偵錯工具內執行，並建立和顯示視覺化程式使用者介面。
 
-- 「偵錯項目端」** 會在 Visual Studio 正在偵錯的處理序 (亦即「偵錯項目」**) 中執行。 用來視覺化 (的資料物件，例如，) 存在於偵錯工具進程中的字串物件。 偵錯工具端會將物件傳送至偵錯工具端，這會顯示在您所建立的使用者介面中。
+- 「偵錯項目端」會在 Visual Studio 正在偵錯的處理序 (亦即「偵錯項目」) 中執行。 用來視覺化 (的資料物件，例如，) 存在於偵錯工具進程中的字串物件。 偵錯工具端會將物件傳送至偵錯工具端，這會顯示在您所建立的使用者介面中。
 
-偵錯工具端會從執行介面的 *物件提供者* 接收資料物件 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> 。 偵錯工具端會透過衍生自的 *物件來源*傳送物件 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> 。
+偵錯工具端會從執行介面的 *物件提供者* 接收資料物件 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> 。 偵錯工具端會透過衍生自的 *物件來源* 傳送物件 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> 。
 
 物件提供者也可以將資料傳送回物件來源，讓您撰寫可編輯資料的視覺化檢視。 您可以覆寫物件提供者，以與運算式評估工具和物件來源交談。
 

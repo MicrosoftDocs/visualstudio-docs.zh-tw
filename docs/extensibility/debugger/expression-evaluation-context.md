@@ -1,5 +1,7 @@
 ---
 title: 運算式評估內容 |Microsoft Docs
+description: 瞭解運算式評估內容，此內容代表運算式評估的內容，並在程式于中斷點停止時存在。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e939a4fa5f4673e2f701206c96599c54bc0c3b51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26705b32628a9bd9ecc79489e2552f2d7e537273
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738744"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559676"
 ---
 # <a name="expression-evaluation-context"></a>運算式評估內容
-在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 偵錯工具中， **運算式評估**內容：
+在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 偵錯工具中， **運算式評估** 內容：
 
 - 表示運算式評估的內容。 一般而言，評估內容會對應到要在其中評估變數、參數、函式和方法的詞彙範圍。 例如，與堆疊框架相關聯的運算式評估內容將提供用於評估區域變數、方法參數和類別成員的內容， (如果適用) 的話。
 

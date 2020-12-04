@@ -1,5 +1,7 @@
 ---
 title: Debug 64 位應用程式 |Microsoft Docs
+description: 瞭解如何使用 Visual Studio 來進行64位應用程式的偵錯工具。 有一些秘訣可針對未預期的偵錯工具延遲進行疑難排解。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cc84f690962cd83f45245758f88f7fd8261e500
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29deb50bb57f018d3031ed1065145b6a39abab67
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386247"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560443"
 ---
 # <a name="debug-64-bit-applications"></a>偵錯 64 位元應用程式
 您可以對本機電腦或遠端電腦上執行的 64 位元應用程式進行偵錯。

@@ -1,5 +1,7 @@
 ---
 title: 取得埠 |Microsoft Docs
+description: 瞭解 Visual Studio 如何提供埠給 debug engine，以向埠註冊程式節點，以及滿足處理常式資訊的要求。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd86d84ba4187df70d2aa02181249336c38dda41
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738640"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560044"
 ---
 # <a name="get-a-port"></a>取得埠
 埠代表與執行進程之電腦的連接。 該電腦可以是本機電腦或遠端電腦 (可能會執行非 Windows 作業系統;如需詳細資訊) ，請參閱 [埠](../../extensibility/debugger/ports.md) 。

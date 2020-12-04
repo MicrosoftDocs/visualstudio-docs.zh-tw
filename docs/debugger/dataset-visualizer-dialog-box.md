@@ -1,5 +1,7 @@
 ---
 title: 資料集視覺化對話方塊 |Microsoft Docs
+description: Visual Studio 偵錯工具視覺化程式是顯示資料的元件。 您可以使用資料集視覺化程式來查看 DataSet、DataTable、DataView 或 DataViewManager 物件的內容。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f57247d23a318da6bf492534c1ff060bb4116bb
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745594"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560469"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>資料集視覺化檢視對話方塊
 [資料集視覺化檢視] 可讓您檢視 DataSet、DataTable、DataView 或 DataViewManager 物件的內容。 在偵錯工具變數視窗或 DataTip 中，按一下每一個物件的 [值] 旁邊出現的放大鏡圖示，就可以存取這個視覺化檢視。

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 627724410ac9e0829faeb23cb5b0eef01b153293
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 6c47f8c399c89df9bf91879abc7cf926eac925bc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479169"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560235"
 ---
 # <a name="troubleshoot-broken-references"></a>針對中斷參考進行疑難排解
 

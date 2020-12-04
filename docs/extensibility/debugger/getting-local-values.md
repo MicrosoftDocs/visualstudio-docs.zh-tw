@@ -1,5 +1,7 @@
 ---
 title: 取得區域值 |Microsoft Docs
+description: 瞭解 Visual Studio 如何使用 managed 和非受控碼的 GetPropertyInfo 來取得本機變數的值。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75cc530f13de22a994eff70492f340059d2a5839
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4287bb726ca4b64bc939c12098ca0fc98948931
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738603"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559975"
 ---
 # <a name="get-local-values"></a>取得區域值
 > [!IMPORTANT]

@@ -1,5 +1,7 @@
 ---
 title: 運算式評估工具架構 |Microsoft Docs
+description: 瞭解如何將專屬語言整合至 Visual Studio 的 debug 封裝，包括運算式評估工具和符號提供者/系結器介面。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aac782c653f230d5598a49d43eb70f548de6dc41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 216bf2f19d528084685a2361a158e105e2284010
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738705"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560157"
 ---
 # <a name="expression-evaluator-architecture"></a>運算式評估工具架構
 > [!IMPORTANT]
@@ -37,7 +39,7 @@ ms.locfileid: "80738705"
 ### <a name="evaluate-the-expression"></a>評估運算式
  Visual Studio 會呼叫 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 或 [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 來評估剖析的運算式。 這兩種方法都會[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)呼叫 EvaluateSync `IDebugExpression2::EvaluateSync` ， (立即呼叫方法，而 `IDebugExpression2::EvaluateAsync` 透過背景執行緒呼叫方法) 來評估剖析的運算式，並傳回代表已剖析運算式之值和類型的[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)介面。 `IDebugParsedExpression::EvaluateSync` 使用提供的 SH、address 和系結器，將剖析的運算式轉換為實際值（由介面表示） `IDebugProperty2` 。
 
-### <a name="for-example"></a>例如
+### <a name="for-example"></a>例如：
  在執行程式中叫用中斷點之後，使用者選擇在 [ **快速** 監看式] 對話方塊中查看變數。 此對話方塊會顯示變數的名稱、其值和類型。 使用者通常可以變更此值。
 
  當顯示 [ **快速** 監看式] 對話方塊時，所檢查之變數的名稱會以文字的形式傳送至 [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)。 這會傳回 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 物件，代表已剖析的運算式，在此案例中為變數。 接著會呼叫[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ，以產生 `IDebugProperty2` 代表變數值和類型以及其名稱的物件。 這是所顯示的資訊。
