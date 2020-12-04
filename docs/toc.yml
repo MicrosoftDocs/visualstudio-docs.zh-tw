@@ -272,8 +272,8 @@
           href: ide/codespaces/customize-codespaces.md
         - name: 支援的 Visual Studio 功能
           href: ide/codespaces/supported-features-codespaces.md
-    - name: 連線到專案或存放庫
-      displayName: Azure DevOps VSTS GitHub
+    - name: 在 Team Explorer 中連線到專案
+      displayName: Azure DevOps VSTS
       href: ide/connect-team-project.md
     - name: Visual Studio 中新的 Git 體驗
       href: ide/git-with-visual-studio.md
@@ -619,7 +619,7 @@
           href: ide/class-designer/additional-information-about-errors.md
     - name: 改善您的程式碼
       href: ide/find-and-fix-code-errors.md
-    - name: 秘訣與技巧
+    - name: 秘訣和訣竅
       items:
         - name: 生產力功能
           href: ide/productivity-features.md
@@ -838,7 +838,7 @@
         - name: 設計國際化應用程式
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-- name: Build
+- name: 組建
   items:
     - name: 概觀
       displayName: Compile build
@@ -966,7 +966,7 @@
           href: ide/optimize-visual-studio-startup-time.md
         - name: 載入已篩選的解決方案
           href: ide/filtered-solutions.md
-        - name: 秘訣與技巧
+        - name: 秘訣和訣竅
           href: ide/visual-studio-performance-tips-and-tricks.md
 - name: 協助工具選項
   items:
@@ -1088,7 +1088,7 @@
           href: ide/reference/immediate-window.md
         - name: 其他檔案
           href: ide/reference/miscellaneous-files.md
-        - name: 選項
+        - name: 選項。
           items:
             - name: 選項對話方塊
               href: ide/reference/options-dialog-box-visual-studio.md
@@ -1212,7 +1212,7 @@
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: 進行 Lint 檢查
                       href: ide/reference/options-text-editor-javascript-linting.md
-                    - name: 隨附此逐步解說的專案
+                    - name: 專案
                       href: ide/reference/options-text-editor-javascript-project.md
                 - name: U-SQL
                   items:
