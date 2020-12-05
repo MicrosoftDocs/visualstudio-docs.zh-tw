@@ -1,5 +1,7 @@
 ---
 title: 介面 (Visual Studio 調試) |Microsoft Docs
+description: 使用這些資源來瞭解 Visual Studio 偵錯工具中的核心介面、運算式評估介面和符號提供者介面。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d31eb6900841dee9d2675e87bac573b432ff2acb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 508cf5d324a62b0ada056fe0c2495ff97334b8cf
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715074"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606553"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>介面 (Visual Studio 偵錯)
 方法會依字母順序列在目錄中的每個介面下，以及在介面頁面上以 Vtable 順序列出。

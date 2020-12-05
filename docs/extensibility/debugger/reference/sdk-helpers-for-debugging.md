@@ -1,5 +1,7 @@
 ---
 title: 用於偵錯工具的 SDK 協助程式 |Microsoft Docs
+description: 深入瞭解函式和宣告，這些函式和宣告是全域 helper 函式，可在 c + + 中執行 debug 引擎、運算式評估工具和符號提供者
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edb7c508fdea6736a71c0f70c0d2ff305d4a399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713642"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606537"
 ---
 # <a name="sdk-helpers-for-debugging"></a>適用於偵錯的 SDK 協助程式
 這些函式和宣告都是全域 helper 函式，可用於在 c + + 中執行 debug 引擎、運算式評估工具和符號提供者。
@@ -269,7 +271,7 @@ HRESULT EnumMetricSections(
 |*[度量值]*|指派給度量的值。 值應該有 (字串、數位等的型別 ) 取決於度量。|
 
 > [!NOTE]
-> 所有 Guid 都會以的格式儲存 `{GUID}` 。 例如 `{123D150B-FA18-461C-B218-45B3E4589F9B}`。
+> 所有 Guid 都會以的格式儲存 `{GUID}` 。 例如： `{123D150B-FA18-461C-B218-45B3E4589F9B}` 。
 
 ### <a name="debug-engines"></a>Debug 引擎
  以下是在登錄中的「debug 引擎」度量組織。 `Engine` 這是偵測引擎的計量型別名稱，而且對應于上述登錄子樹中的 *[計量類型]* 。
@@ -414,10 +416,10 @@ HRESULT EnumMetricSections(
 |預留位置|描述|
 |-----------------|-----------------|
 |*[debug engine guid]*|支援例外狀況之偵錯工具引擎的 GUID。|
-|*[例外狀況類型]*|子機碼的一般標題，可識別可處理的例外狀況類別。 一般名稱是 **c + + 例外**狀況、 **Win32 例外**狀況、 **Common Language Runtime 例外**狀況和 **原生執行時間檢查**。 這些名稱也用來識別使用者的特定例外狀況類別。|
+|*[例外狀況類型]*|子機碼的一般標題，可識別可處理的例外狀況類別。 一般名稱是 **c + + 例外** 狀況、 **Win32 例外** 狀況、 **Common Language Runtime 例外** 狀況，以及 **原生 Run-Time 檢查**。 這些名稱也用來識別使用者的特定例外狀況類別。|
 |*意外*|例外狀況的名稱：例如 **_com_error** 或 **控制中斷**。 這些名稱也用來識別使用者的特定例外狀況。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  這些檔案位於 [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] SDK 安裝目錄 (預設為 *[磁片磁碟機]* \Program FILES\MICROSOFT Visual Studio 2010 SDK \\) 。
 
  標頭： includes\dbgmetric。h

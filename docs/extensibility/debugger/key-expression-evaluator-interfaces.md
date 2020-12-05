@@ -1,5 +1,7 @@
 ---
 title: 索引鍵運算式評估工具介面 |Microsoft Docs
+description: 瞭解當您撰寫運算式評估工具時應該熟悉的介面，以及評估內容。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01527edac4000f0b2f7b89fdd507fc093f0d7734
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5693ebee96428b343da2bb14202ffef06fd6dd81
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738485"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606680"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>索引鍵運算式評估工具介面
 > [!IMPORTANT]

@@ -1,5 +1,7 @@
 ---
 title: 啟動偵錯工具 |Microsoft Docs
+description: 瞭解方法和事件的順序，以及啟動偵錯工具所需的適當屬性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceb2f484449d1b3f8474a6586d298b057875b342
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40b91ae695a5e78745c01c5ac974411ac924f8f0
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738453"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606654"
 ---
 # <a name="launch-the-debugger"></a>啟動偵錯工具
 啟動偵錯工具需要以其適當的屬性來傳送正確的方法和事件順序。

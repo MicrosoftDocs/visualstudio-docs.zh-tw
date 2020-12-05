@@ -1,5 +1,7 @@
 ---
 title: 參考 (Visual Studio) 調試的 Api |Microsoft Docs
+description: Visual Studio 偵錯工具 SDK 參考概述偵錯工具及其元件的執行時間架構和功能的基本模型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a85979c53d61d4b8d5a4f4b26d3ed3a1e19e952
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d281ad2f7df73a42835d0f0670a96af07e036d72
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713632"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606459"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>參考 (Visual Studio 偵錯 API)
 

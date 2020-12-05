@@ -1,7 +1,7 @@
 ---
 title: 可用的工具
 description: 可以用來自訂開發環境的所有 devinit 工具清單。
-ms.date: 08/28/2020
+ms.date: 12/02/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6bb4656dd04db576877cfdddf67869eb6d1eff35
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: a8d8409cb6c959b8b2d1e9802a53775f2f360a44
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399949"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606705"
 ---
 # <a name="available-tools"></a>可用工具
 
@@ -26,11 +26,11 @@ ms.locfileid: "93399949"
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | [**azurecli-login**](tool-azurecli-login.md)                                                     | 用來執行 Azure CLI 命令的工具 `az login --device-code` 。                                             |
 | [**choco-install**](tool-choco-install.md)                                                       | 安裝 chocolatey 套件的工具。                                                                        |
-| [**choco-upgrade**](tool-choco-upgrade.md)                                                       | 升級 chocolatey 封裝的工具。                                                                       |
+| [**choco-upgrade**](tool-choco-upgrade.md)                                                       | 升級 chocolatey 封裝的工具。                                                                        |
 | [**dotnet-restore**](tool-dotnet-restore.md)                                                     | 此工具可還原 .NET 專案的相依性和工具。                                               |
 | [**dotnet-toolinstall**](tool-dotnet-toolinstall.md)                                             | 例如，安裝 .NET Core 工具 (的工具。 dotnet-ef)                                                 |
 | [**enable-iis**](tool-enable-iis.md)                                                             | 此工具可啟用 IIS 功能，並安裝最新的 ASP.NET 裝載套件組合。                                  |
-| [**msi-安裝**](tool-msi-install.md)                                                           | 用來安裝 MSI 檔案的工具（提供路徑或 URL）。                                                              |
+| [**msi-install**](tool-msi-install.md)                                                           | 用來安裝 MSI 檔案的工具（提供路徑或 URL）。                                                              |
 | [**npm-install**](tool-npm-install.md)                                                           | 安裝 NPM 套件的工具。                                                                               |
 | [**nuget-restore**](tool-nuget-restore.md)                                                       | 用來還原 NuGet 套件的工具。                                                                         |
 | [**require-azureartifactscredentialprovider**](tool-require-azureartifactscredentialprovider.md) | 安裝 Azure Artifacts 認證提供者。                                                           |
@@ -39,6 +39,7 @@ ms.locfileid: "93399949"
 | [**require-dotnetframeworksdk**](tool-require-dotnetframeworksdk.md)                             | 安裝 .NET Framework SDK 的工具。                                                                     |
 | [**require-mssql**](tool-require-mssql.md)                                                       | 安裝 MS SQL Server 2019 的工具。                                                                         |
 | [**require-nodejs**](tool-require-nodejs.md)                                                     | 用來安裝 Nodejs 和 NPM 的工具。                                                                             |
+| [**require-nuget**](tool-require-nuget.md)                                                       | 安裝 NuGet 的工具。                                                                                      |
 | [**require-npm**](tool-require-npm.md)                                                           | 用來安裝 NPM 的工具。                                                                                        |
 | [**require-psmodule**](tool-require-psmodule.md)                                                 | 從資源庫安裝 PowerShell 模組的工具。                                                        |
 | [**require-vcpkg**](tool-require-vcpkg.md)                                                       | 用來安裝 vcpkg 的工具。                                                                                      |

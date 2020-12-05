@@ -1,5 +1,7 @@
 ---
 title: 通知埠 |Microsoft Docs
+description: 瞭解如何在啟動程式之後通知埠。 本文包含詳細的描述。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff94c20969e77bcc70af2f5a16137e09366a0d7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9a838879e7c1eb590bb16cd12a6bf345de8031a
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738323"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606615"
 ---
 # <a name="notify-the-port"></a>通知埠
 啟動程式之後，必須通知埠，如下所示：

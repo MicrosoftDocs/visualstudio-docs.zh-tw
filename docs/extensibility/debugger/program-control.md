@@ -1,5 +1,7 @@
 ---
 title: 程式控制 |Microsoft Docs
+description: 瞭解在程式層級進行 Visual Studio 偵錯工具中的常式，例如執行、逐步執行、繼續和暫停/繼續執行緒。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e77e233050c5ce10aef5053f82c8d26cb984b85
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 640b09620022d17fd6b7c8758f1dec4f9a3936eb
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738237"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606524"
 ---
 # <a name="program-control"></a>程式控制
 在 Visual Studio 的偵錯工具中，會在程式層級進行下列所有逐步執行和繼續常式：

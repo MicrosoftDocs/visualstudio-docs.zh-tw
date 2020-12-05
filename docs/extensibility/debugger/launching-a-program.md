@@ -1,5 +1,7 @@
 ---
 title: 啟動程式 |Microsoft Docs
+description: 瞭解當您使用 F5 將程式進行偵錯工具以從 IDE 執行偵錯工具時，所發生的一系列事件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf638e0c96c7df1de2650260427a972a07efce23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dce13e49eeadf4dc02fec07707bebcfe164ed9c
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738472"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606693"
 ---
 # <a name="launch-a-program"></a>啟動程式
 想要進行程式設計的使用者可以按 **F5** 從 IDE 執行偵錯工具。 這會開始一系列的事件，這些事件最後會導致 IDE 連接到偵錯工具， () 取消連接或附加至程式，如下所示：
@@ -39,7 +41,7 @@ ms.locfileid: "80738472"
 
    新建立的程式，以及從相同 IDE 啟動或附加至的任何其他程式（從相同的 IDE 啟動或附加），撰寫一個 debug 會話。
 
-   以程式設計的方式，當使用者第一次按下 **F5**時， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的 debug 封裝會呼叫專案封裝， (與透過方法啟動) 的程式類型相關聯 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> ，然後再以 <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> 方案的使用中專案 debug 設定填滿結構。 此結構會透過呼叫方法傳遞回 debug 封裝 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> 。 然後，debug 封裝會具現化會話 debug manager (SDM) ，它會啟動正在進行調試的程式，以及任何相關聯的偵錯工具引擎。
+   以程式設計的方式，當使用者第一次按下 **F5** 時， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的 debug 封裝會呼叫專案封裝， (與透過方法啟動) 的程式類型相關聯 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> ，然後再以 <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> 方案的使用中專案 debug 設定填滿結構。 此結構會透過呼叫方法傳遞回 debug 封裝 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> 。 然後，debug 封裝會具現化會話 debug manager (SDM) ，它會啟動正在進行調試的程式，以及任何相關聯的偵錯工具引擎。
 
    傳遞至 SDM 的其中一個引數是用來啟動程式的 DE 的 GUID。
 
