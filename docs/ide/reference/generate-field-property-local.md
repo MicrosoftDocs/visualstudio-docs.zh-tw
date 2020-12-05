@@ -1,5 +1,7 @@
 ---
 title: 產生欄位、屬性、區域變數
+description: 瞭解如何使用 [快速動作與重構] 功能表，為先前未宣告的欄位、屬性或區域變數產生程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b554aa5586150942c0fc7d7aeada9356a67029ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebce688317a04bdc223659fb0c085b2f0223119d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595601"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617496"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>在 Visual Studio 中產生欄位、屬性或區域變數
 
@@ -43,9 +45,9 @@ ms.locfileid: "75595601"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+      - 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
-      - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
       - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 圖示。
       - 按一下 ![錯誤燈泡](media/error-bulb.png) 圖示，如果文字游標已經在具有紅色曲線的行上，此圖示就會出現在左邊界上。
 
@@ -54,7 +56,7 @@ ms.locfileid: "75595601"
 3. 從下拉式功能表中選取其中一個產生選項。
 
    > [!TIP]
-   > 請使用位於預覽視窗底部的 [預覽變更]**** 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
+   > 請使用位於預覽視窗底部的 [預覽變更] 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
 
    欄位、屬性或區域隨即建立，而類型會從使用方式推斷。
 

@@ -1,5 +1,7 @@
 ---
 title: C++ 專案設定選項
+description: 瞭解如何使用 [專案和方案] 區段中的 [VC + + 專案設定] 頁面，來定義與記錄、效能和支援檔案類型相關的 c + + 組建和專案設定。
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16226cd66c2cf46d1dc46f1cb3f90dc3bad9658c
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68918890"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616274"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和方案、VC++ 專案設定
 
@@ -33,7 +35,7 @@ ms.locfileid: "68918890"
 
 1. 在 **[工具]** 功能表上，按一下 **[選項]** 。
 
-2. 選取 [專案和方案]****，然後選取 [VC++ 專案設定]****。
+2. 選取 [專案和方案]，然後選取 [VC++ 專案設定]。
 
 ## <a name="build-logging"></a>建置記錄
 
@@ -75,7 +77,7 @@ ms.locfileid: "68918890"
 
 ## <a name="extensions-to-hide"></a>要隱藏的副檔名
 
-指定啟用 [顯示所有檔案]**** 時，不會顯示在方案總管**** 中之檔案的副檔名。
+指定啟用 [顯示所有檔案] 時，不會顯示在方案總管中之檔案的副檔名。
 
 ## <a name="build-customization-search-path"></a>建置自訂搜尋路徑
 
@@ -85,11 +87,11 @@ ms.locfileid: "68918890"
 
 **僅顯示專案中的檔案**
 
-將方案總管**** 設定為僅顯示專案中的檔案。
+將方案總管設定為僅顯示專案中的檔案。
 
 **顯示所有檔案**
 
-將方案總管**** 設定為顯示專案中的檔案，以及專案資料夾中磁碟上的檔案。
+將方案總管設定為顯示專案中的檔案，以及專案資料夾中磁碟上的檔案。
 
 ## <a name="enable-project-caching"></a>啟用專案快取
 

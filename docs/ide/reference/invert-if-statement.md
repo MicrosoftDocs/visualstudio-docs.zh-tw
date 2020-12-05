@@ -1,5 +1,7 @@
 ---
 title: 反轉 if 陳述式
+description: 瞭解如何使用 [快速動作] 和 [重構] 功能表來反轉 if 或 else 語句，而不變更程式碼的意義。
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a0419100cbc5fcd543eb250fa85cbfe2ebd1c97f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71b3a11e053b6a600d0b33db7c52a91c4950bf5b
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65531594"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616976"
 ---
 # <a name="invert-if-statement"></a>反轉 if 陳述式
 
@@ -36,11 +38,11 @@ ms.locfileid: "65531594"
 
     ![反轉 if else](media/invert-if.png)
 
-2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
 
     ![反轉 if else 程式碼修正](media/invert-if-codefix.png)
 
-3. 選取 [反轉 if]****。
+3. 選取 [反轉 if]。
 
     ![反轉 if else 結果](media/invert-if-codefix-result.png)
 

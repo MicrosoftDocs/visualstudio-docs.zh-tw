@@ -1,5 +1,6 @@
 ---
 title: 透過 IntelliSense 功能表完成 RegEx
+description: 瞭解如何使用 intellisense 功能表，以 IntelliSense 的協助撰寫正則運算式。
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68b5cb480184a287d9fcb088b0a74ac9d607f3f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 750869abbad079f3c109113f8cd65b5e8f11c147
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093853"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616690"
 ---
 # <a name="regex-completion-through-intellisense-menu"></a>透過 IntelliSense 功能表完成 RegEx
 
@@ -34,7 +35,7 @@ ms.locfileid: "79093853"
 ## <a name="how-to"></a>操作方式
 
 1. 將游標放在 RegEx 字串中。
-2. 按**Ctrl** + **空格鍵**以觸發 [ **IntelliSense** ] 功能表。
+2. 按 **Ctrl** + **空格鍵** 以觸發 [ **IntelliSense** ] 功能表。
 3. 選取想要新增至 RegEx 字串的字元。
 
    ![Regex 完成 IntelliSense](../media/regex-completion-intellisense.png)

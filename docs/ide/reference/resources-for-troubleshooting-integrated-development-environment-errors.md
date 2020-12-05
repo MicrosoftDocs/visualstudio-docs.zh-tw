@@ -1,5 +1,7 @@
 ---
 title: 針對錯誤進行疑難排解的資源
+description: 瞭解如何使用知識庫文章、論壇或產品支援來針對沒有足夠資訊的 IDE 錯誤進行疑難排解，以協助您解決問題。
+ms.custom: SEO-VS-2020
 ms.date: 07/23/2020
 ms.topic: troubleshooting
 f1_keywords:
@@ -93,12 +95,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f18ef8a0bf8ffc6b7478f307b6c2a37247bef034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3fdf18c67be8188bd03c498778fe8e6ad9409ee
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234727"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616575"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於針對整合式開發環境錯誤進行疑難排解的資源
 

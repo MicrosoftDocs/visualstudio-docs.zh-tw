@@ -1,5 +1,7 @@
 ---
 title: 設定目前執行緒命令
+description: 瞭解「設定目前線程」命令，以及它如何將指定的執行緒設定為目前的執行緒。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54c2dabeea14293fdb86120f822eb396a028757a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cedd37ece7bcc0eb79ad52cc426b07f8cb2ca57
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768690"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616560"
 ---
 # <a name="set-current-thread-command"></a>設定目前執行緒命令
 將指定的執行緒設為目前執行緒。

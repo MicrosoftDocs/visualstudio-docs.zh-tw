@@ -1,5 +1,7 @@
 ---
 title: Start 命令
+description: 瞭解 Start 命令，以及它如何開始對啟始專案進行調試。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6138c4cff33f0b2a4211439a01a058da59da811
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6d9e1e36a2790fb63f9d39c0c83d67d889cc0a8
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590276"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616417"
 ---
 # <a name="start-command"></a>Start 命令
 開始偵錯啟始專案。

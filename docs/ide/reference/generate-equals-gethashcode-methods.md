@@ -1,5 +1,7 @@
 ---
 title: 產生 C# Equals 與 GetHashCode 方法的覆寫
+description: 瞭解如何使用 [快速動作與重構] 功能表來產生 Equals 和 GetHashCode 方法。
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6f7ec74af21ef62079a3fef18dd39544e7b42aa
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569279"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617509"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>在 Visual Studio 中產生 Equals 與 GetHashCode 方法覆寫
 
@@ -43,17 +45,17 @@ ms.locfileid: "75569279"
 
 1. 接著，執行下列其中一項操作：
 
-   - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+   - 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
 
-   - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
+   - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
 
    - 按一下 ![螺絲起子](../media/screwdriver-icon.png) 圖示。
 
    ![「產生覆寫」預覽](media/overrides-preview-cs.png)
 
-1. 從下拉式功能表選取 [產生 Equals(object)]**** 或 [產生 Equals 和 GetHashCode]****。
+1. 從下拉式功能表選取 [產生 Equals(object)]或 [產生 Equals 和 GetHashCode]。
 
-1. 在 [選取成員]**** 對話方塊中，選取您想要產生方法的成員：
+1. 在 [選取成員]對話方塊中，選取您想要產生方法的成員：
 
     ![[產生覆寫] 對話方塊](media/overrides-dialog-cs.png)
 

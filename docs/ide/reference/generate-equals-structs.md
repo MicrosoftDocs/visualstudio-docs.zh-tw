@@ -1,5 +1,7 @@
 ---
 title: 產生結構的 IEquatable 運算子
+description: 瞭解如何使用 [快速動作與重構] 功能表來產生結構的 Equals 和 IEquatable 運算子。
+ms.custom: SEO-VS-2020
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5ee695169f52036858fc70598f81f375638ab03f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 28d70c0ea95c9373eb87e6199d53f1b43fadd508
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808112"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617197"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>產生結構的 Equals 時產生 IEquatable 運算子
 
@@ -20,7 +22,7 @@ ms.locfileid: "90808112"
 
 - C#
 
-事項 **：** 可讓您產生[結構](/dotnet/csharp/language-reference/builtin-types/struct)的**Equals**和**IEquatable**運算子。
+事項 **：** 可讓您產生 [結構](/dotnet/csharp/language-reference/builtin-types/struct)的 **Equals** 和 **IEquatable** 運算子。
 
 時機 **：** 您有一個結構，我們會為您自動新增 IEquatable 以及 equals 和 not equals 運算子。
 
@@ -30,21 +32,21 @@ ms.locfileid: "90808112"
 
 - Implements IEquatable 介面會執行特定類型的 Equals ( # A1 方法。
 
-## <a name="how-to"></a>使用方法
+## <a name="how-to"></a>操作方式
 
 1. 將游標放在您的結構宣告行的某個位置。
 
 2. 接著，執行下列其中一項操作：
 
-   - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+   - 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
 
-   - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
+   - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
 
    - 按一下 ![螺絲起子](../media/screwdriver-icon.png) 圖示。
 
    ![產生結構的 IEquatable 和 Equals](media/generate-equals-structs.png)
 
-3. 從下拉式功能表中選取 [ **產生等於 (物件) ** ]。
+3. 從下拉式功能表中選取 [ **產生等於 (物件)** ]。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,5 +1,7 @@
 ---
 title: 將變數宣告移到靠近參考的位置
+description: 瞭解如何使用 [快速動作] 和 [重構] 功能表，將變數宣告移到更接近其使用方式。
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1339f4a9d151ef41d9a35c5aac0a96f220a297b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 188907b4f1b6630e95ab435d588878b16c763f4a
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093989"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616924"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>將宣告移到靠近參考的位置重構
 
@@ -38,11 +40,11 @@ ms.locfileid: "79093989"
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [將宣告移近參考]****。
+      - 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將宣告移近參考]。
    - **滑鼠**
-      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [將宣告移近參考]****。
+      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將宣告移近參考]。
 
-1. 對變更感到滿意時，按 **Enter**或按一下功能表中的修正，便會認可變更。
+1. 對變更感到滿意時，按 **Enter** 或按一下功能表中的修正，便會認可變更。
 
 範例：
 

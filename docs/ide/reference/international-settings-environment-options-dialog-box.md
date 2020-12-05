@@ -1,5 +1,6 @@
 ---
 title: 選項對話方塊中的國際設定
+description: 瞭解當您安裝多個語言版本的 IDE 時，如何使用 [環境] 區段中的 [國際設定] 頁面來變更預設語言。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,20 +19,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1210f217c9e1dc1f8a90eb99fec9e55970aa8eff
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 37be8d3e5a652bb55b1d71f66c0e9c8ca4cc2f16
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102489"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617366"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>選項對話方塊：環境 \> 國際設定
 
-當您在電腦上安裝多個語言版本的整合式開發環境 (IDE) 時，[國際設定] 頁面可讓您變更預設語言。 您可以從 [工具]  功能表選取 [選項]  ，然後從 [環境]  資料夾選擇 [國際設定]  ，來存取這個對話方塊。
+當您在電腦上安裝多個語言版本的整合式開發環境 (IDE) 時，[國際設定] 頁面可讓您變更預設語言。 您可以從 [工具] 功能表選取 [選項]，然後從 [環境] 資料夾選擇 [國際設定]，來存取這個對話方塊。
 
-**語言**
+**Language**
 
-列出已安裝產品語言版本的可用語言。 如果產品的多個語言或產品的混合語言安裝共用環境，這個 [語言] 區段會變更為 [與 Microsoft Windows 相同]  。
+列出已安裝產品語言版本的可用語言。 如果產品的多個語言或產品的混合語言安裝共用環境，這個 [語言] 區段會變更為 [與 Microsoft Windows 相同]。
 
 > [!CAUTION]
 > 在安裝了多個語言的系統中，Visual C++ 建置工具 (cl.exe、link.exe、nmake.exe、bscmake.exe 和相關檔案) 不會受到這項設定的影響。 這些工具會使用最後一個安裝之語言的版本。 因為 Visual C++ 建置工具不會使用附屬 DLL 模型，所以會覆寫先前已安裝語言的建置工具。

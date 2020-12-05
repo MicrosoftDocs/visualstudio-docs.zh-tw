@@ -1,5 +1,7 @@
 ---
 title: 產生解構函式的快速動作
+description: 瞭解如何使用 [快速動作與重構] 功能表立即產生新解構函式的方法 stub。
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff2ac7682eff1c3da0597a95945a6a0b016d9213
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65531890"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617249"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>在 Visual Studio 中產生解構函式
 
@@ -37,14 +39,14 @@ ms.locfileid: "65531890"
 2. 採取下列其中一個步驟：
 
    - **鍵盤**
-      - 將游標放在您的宣告中，然後選取 Ctrl+. 以觸發 [快速動作與重構]**** 功能表。
+      - 將游標放在您的宣告中，然後選取 Ctrl+. 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
-      - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
-      - 選取 ![螺絲起子](media/screwdriver.png) 圖示，如果文字游標已經在類別中的空白行上，此圖示就會出現在左邊界上。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
+      - :::image type="icon" source="media/screwdriver.png":::如果文字游標已經在類別中的空白行上，請選取出現在左邊界中的圖示。
 
       ![產生解構函式程式碼修正](media/deconstruct-codefix.png)
 
-3. 選取 [產生方法 'MyInternalClass.Deconstruct']**** 來產生解構函式。
+3. 選取 [產生方法 'MyInternalClass.Deconstruct'] 來產生解構函式。
 
    ![產生的解構函式程式碼](media/deconstruct-result.png)
 

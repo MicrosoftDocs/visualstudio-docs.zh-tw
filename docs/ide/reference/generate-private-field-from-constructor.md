@@ -1,5 +1,7 @@
 ---
 title: 從函式產生私用欄位和屬性
+description: 瞭解如何使用 [快速動作與重構] 功能表，從函式產生私用欄位或屬性。
+ms.custom: SEO-VS-2020
 ms.date: 06/20/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56bd361d2bffb4ff17b03ac6743837032d1934e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e989efed8b58746312ed5f5a510efa049393f3db
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283719"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617457"
 ---
 # <a name="generate-private-field-and-property-from-constructor"></a>從函式產生私用欄位和屬性
 
@@ -33,7 +35,7 @@ ms.locfileid: "85283719"
 
 1. 將游標放在函式中的參數名稱上。
 
-2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
    
 3. 接著，選取下列其中一項：
 

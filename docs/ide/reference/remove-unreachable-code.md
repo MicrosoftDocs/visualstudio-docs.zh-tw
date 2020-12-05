@@ -1,5 +1,7 @@
 ---
 title: 移除執行不到的程式碼重構
+description: 瞭解如何使用 [快速動作與重構] 功能表來移除永遠不會執行的程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cd827870f07fb3161674d287d20f266942e61afe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3af9d0a14b600773c5025fcaad68380c7bb82b29
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093976"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616703"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>移除執行不到的程式碼重構
 
@@ -40,11 +42,11 @@ ms.locfileid: "79093976"
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [移除執行不到的程式碼]****。
+      - 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [移除執行不到的程式碼]。
    - **滑鼠**
-      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [移除執行不到的程式碼]****。
+      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [移除執行不到的程式碼]。
 
-1. 對變更感到滿意時，按 **Enter**或按一下功能表中的修正，便會認可變更。
+1. 對變更感到滿意時，按 **Enter** 或按一下功能表中的修正，便會認可變更。
 
 範例：
 

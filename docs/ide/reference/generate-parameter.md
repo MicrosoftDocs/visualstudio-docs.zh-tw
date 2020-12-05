@@ -1,5 +1,7 @@
 ---
 title: 產生參數重構
+description: 瞭解如何使用 [快速動作與重構] 功能表來自動產生方法參數。
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 372a3f705e5e85c0edb31a754105f61056402b9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21e209f5be9072390df58e78db34811f886fa9c5
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094358"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617145"
 ---
 # <a name="generate-parameter"></a>產生參數
 
@@ -33,8 +35,8 @@ ms.locfileid: "79094358"
 
 ## <a name="how-to"></a>操作方式
 
-1. 將游標放在變數名稱中，然後按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
-1. 選取 [產生參數]****。
+1. 將游標放在變數名稱中，然後按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
+1. 選取 [產生參數]。
 
    ![產生參數](media/generate-parameter.png) 
 

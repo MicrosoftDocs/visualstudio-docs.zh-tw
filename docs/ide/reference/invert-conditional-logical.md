@@ -1,5 +1,7 @@
 ---
 title: 轉換條件運算式和邏輯運算
+description: 瞭解如何使用 [快速動作與重構] 功能表來反轉條件運算式或條件式 AND/OR 運算子。
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3931ae53fc29b0ffd8b8b6e96951a0f4786ff756
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 180e42d5399116df95289e4e5fd0aed1255bf3de
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65531681"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617379"
 ---
 # <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>反轉條件運算式和條件式 AND/OR 運算子
 
@@ -33,12 +35,12 @@ ms.locfileid: "65531681"
 ## <a name="invert-conditional-expressions-and-conditional-andor-operators-refactoring"></a>反轉條件運算式和條件式 AND/OR 運算子重構
 
 1. 將您的游標放在條件運算式或條件式 AND/OR 運算子中。
-2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
-3. 選取 [反轉條件]**** 或**以 '||' 取代 '&&'**
+2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
+3. 選取 [反轉條件] 或 **以 '||' 取代 '&&'**
 
-    ![反轉條件](media/invert-conditional.png)
+    ![[反向條件] 選項的螢幕擷取畫面。](media/invert-conditional.png)
 
-    ![反轉條件](media/invert-logical-operator.png)
+    ![以 | | 取代 && 的螢幕擷取畫面選項。](media/invert-logical-operator.png)
 
 ## <a name="see-also"></a>另請參閱
 

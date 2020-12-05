@@ -1,5 +1,7 @@
 ---
 title: 擷取介面重構
+description: 瞭解如何使用 [快速動作與重構] 功能表，利用類別、結構或介面的現有成員來建立介面。
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13e9b684c81abf491b5836c96190c6a89bdc0643
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595666"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617392"
 ---
 # <a name="extract-an-interface-refactoring"></a>擷取介面重構
 
@@ -49,19 +51,19 @@ ms.locfileid: "75595666"
 
    - **鍵盤**
       - 按 **CTRL+R**，再按 **CTRL+I**。 (根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
-      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [擷取介面]****。
+      - 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取介面]。
    - **滑鼠**
-      - 選取 [編輯] > [重構] > [擷取介面]****。
-      - 在類別名稱上按一下滑鼠右鍵，選取 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [擷取介面]****。
+      - 選取 [編輯] > [重構] > [擷取介面]。
+      - 在類別名稱上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取介面]。
 
-3. 在 [擷取介面]**** 快顯對話方塊中，輸入系統要求的資訊：
+3. 在 [擷取介面] 快顯對話方塊中，輸入系統要求的資訊：
 
    ![擷取介面](media/extractinterface-dialog-same-file.png)
 
-   | 欄位 | 說明 |
+   | 欄位 | 描述 |
    | - | - |
-   | **新介面名稱** | 要建立的介面名稱。 名稱會預設為 I*ClassName*，其中 *ClassName* 是您在上方選取的類別名稱。 |
-   | **新檔名** | 產生的檔案名稱，該檔案會包含介面。 與介面名稱一樣，此名稱會預設為 I*ClassName*，其中 *ClassName* 是您在上方選取的類別名稱。 您也可以選取 [Add to current file] \(新增至目前的檔案\)**** 選項。 |
+   | **新介面名稱** | 要建立的介面名稱。 名稱會預設為 I *ClassName*，其中 *ClassName* 是您在上方選取的類別名稱。 |
+   | **新檔名** | 產生的檔案名稱，該檔案會包含介面。 與介面名稱一樣，此名稱會預設為 I *ClassName*，其中 *ClassName* 是您在上方選取的類別名稱。 您也可以選取 [Add to current file] \(新增至目前的檔案\) 選項。 |
    | **選取公用成員以形成介面** | 要擷取到介面中的項目。 您可以視需要選取所需數量的項目。 |
 
 4. 選擇 [確定]。

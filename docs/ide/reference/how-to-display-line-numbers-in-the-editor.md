@@ -1,5 +1,7 @@
 ---
 title: 顯示程式碼行號
+description: 瞭解如何在程式碼中顯示或隱藏行號。
+ms.custom: SEO-VS-2020
 ms.date: 08/28/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02d26a452315f144e52a78d7fcea737d39052f59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca50674c3e16f9c43e71cfa041a0e05612740f3f
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091469"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617431"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>如何：在編輯器中顯示行號
 
@@ -26,9 +28,9 @@ ms.locfileid: "89091469"
 
 ## <a name="display-line-numbers-in-code"></a>顯示程式碼行號
 
-1. 在功能表列上，選擇 [**工具**  >  **選項**]。 展開 [文字編輯器]**** 節點，然後選取您所使用的語言，或選取 [所有語言]**** 以開啟所有語言的行號。 (或在搜尋方塊中輸入**行號**，然後從結果中選擇 [開啟或關閉行號]****。)
+1. 在功能表列上，選擇 [**工具**  >  **選項**]。 展開 [文字編輯器] 節點，然後選取您所使用的語言，或選取 [所有語言] 以開啟所有語言的行號。 (或在搜尋方塊中輸入 **行號**，然後從結果中選擇 [開啟或關閉行號]。)
 
-2. 選取 [行號]**** 核取方塊。
+2. 選取 [行號] 核取方塊。
 
    ![在 VS 編輯器中顯示行號的選項](../../ide/reference/media/line-numbers-option.png)
 

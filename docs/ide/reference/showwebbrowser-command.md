@@ -1,5 +1,7 @@
 ---
 title: ShowWebBrowser 命令
+description: 深入瞭解顯示 Web 瀏覽器命令，以及它如何顯示您在 IDE 內或 IDE 外部的網頁瀏覽器視窗中指定的 URL。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8266a7c70544d8a320658fcd8b9f5ad249162fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 026878bdc2158d803f191cf2d28c8eb52f0b6e09
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769575"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616313"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
 

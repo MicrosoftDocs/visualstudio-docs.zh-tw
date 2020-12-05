@@ -1,5 +1,7 @@
 ---
 title: 以暫存變數的值來取代暫存變數
+description: 瞭解如何使用 [快速動作與重構] 功能表來移除暫存變數，並改為以其值取代。
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d24c63bdc1908ecc15c206faeda3e9de511f8f9b
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568863"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617405"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>內嵌暫存變數重構
 
@@ -46,11 +48,11 @@ ms.locfileid: "75568863"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+      - 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
-      - 在程式碼上按一下滑鼠右鍵，然後選取 [快速動作與重構]**** 功能表。
+      - 在程式碼上按一下滑鼠右鍵，然後選取 [快速動作與重構] 功能表。
 
-3. 從 [預覽] 快顯視窗中選取 [內嵌暫存變數]****。
+3. 從 [預覽] 快顯視窗中選取 [內嵌暫存變數]。
 
    系統會移除變數，並以變數的值取代使用該變數的地方。
 
