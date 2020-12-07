@@ -4,7 +4,7 @@ summary: 探索 Visual Studio 產品系列的文件。
 brand: visual-studio
 metadata:
   title: Visual Studio 產品系列文件
-  description: 探索 Visual Studio 產品系列的文件。
+  description: 探索 Visual Studio 產品系列文件，包括適用於 Windows 和 Mac 的 Visual Studio IDE、Visual Studio Code、Visual Studio App Center、GitHub Codespaces 以及 Visual Studio 訂閱。
   ms.topic: hub-page
   ms.custom: contperfq1
   ms.date: 10/22/2020
@@ -15,12 +15,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: ddddea310637a4afd96210441e0c842aaed18c00
-  ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+  ms.openlocfilehash: 2396ca63847bfcd9f6a3fea995abb7a40bcf98b6
+  ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 11/06/2020
-  ms.locfileid: "93414525"
+  ms.lasthandoff: 12/03/2020
+  ms.locfileid: "96560833"
 productDirectory:
   items:
   - title: Visual Studio
