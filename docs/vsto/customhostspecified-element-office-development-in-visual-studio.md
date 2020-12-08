@@ -1,7 +1,8 @@
 ---
 title: '&lt;&gt;在 Visual Studio) 中 (Office 開發的 d 元素'
+description: 瞭解 d 元素如何表示此解決方案不是獨立的應用程式。
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 689848f14b4540a54489b4ea5bbad67e493fe276
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8327c6e154f051f5ce79d41ceaa696e330c794f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544907"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848127"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 開發的 d 元素
   `customHostSpecified`元素表示此方案不是獨立的應用程式。 Office 方案包含在 Microsoft Office 應用程式中裝載的元件。

@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式關閉檔
+description: 瞭解如何關閉使用中的檔，或指定要關閉的 Microsoft Office Word 檔。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18dc4099f4c1df17efbe2dd3c213332bb73b52c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52914e60d0519eb923e5c4f327d58afdfa858c1c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547455"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848257"
 ---
 # <a name="how-to-programmatically-close-documents"></a>如何：以程式設計方式關閉檔
   您可以關閉使用中文件，或者指定要關閉的文件。

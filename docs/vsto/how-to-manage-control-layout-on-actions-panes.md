@@ -1,5 +1,7 @@
 ---
 title: 如何：管理執行窗格的控制項版面配置
+description: 瞭解如何藉由撰寫程式碼來適當地堆疊使用者控制項，來管理動作窗格上的控制項版面配置。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6df90847000560299b8b1a6f259ffa6e7df0729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520143"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848244"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>如何：管理執行窗格的控制項版面配置
   執行窗格預設會停駐在檔或工作表的右側;不過，它可以停駐在左邊、頂端或底部。 如果您使用多個使用者控制項，您可以撰寫程式碼，在 [動作] 窗格上適當地堆疊使用者控制項。 如需詳細資訊，請參閱執行 [窗格總覽](../vsto/actions-pane-overview.md)。
@@ -38,7 +40,7 @@ ms.locfileid: "85520143"
 
 1. 開啟 Microsoft Office Word 的檔層級專案，其中包含具有多個使用者控制項或嵌套動作窗格控制項的執行窗格。 如需詳細資訊，請參閱 [如何：將執行窗格加入 Word 檔或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。
 
-2. 在**方案總管**中，以滑鼠右鍵按一下 [ **ThisDocument.cs** ] 或 [ **ThisDocument** ]，然後按一下 [**視圖程式碼**]。
+2. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **ThisDocument.cs** ] 或 [ **ThisDocument** ]，然後按一下 [**視圖程式碼**]。
 
 3. 在 <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> [動作] 窗格的 [事件處理常式] 中，檢查 [動作] 窗格的方向是否為水準。
 

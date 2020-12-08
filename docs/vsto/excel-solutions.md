@@ -1,5 +1,7 @@
 ---
 title: Excel 方案
+description: '瞭解您可以使用專案範本將 Excel 自動化、延伸 Excel 功能，以及自訂 Excel 使用者介面 (UI) '
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53351354a470eb5770f07b9afd527b81c4e587b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6ca4cfd45c1147d10ffaf8d3308b9adb09c689e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986074"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848114"
 ---
 # <a name="excel-solutions"></a>Excel 方案
   Visual Studio 提供的專案範本，可用以建立 Microsoft Office Excel 的文件層級自訂和 VSTO 增益集。 您可以使用這些解決方案自動化 Excel、擴充 Excel 功能和自訂 Excel 使用者介面 (UI)。 如需檔層級自訂和 VSTO 增益集之間差異的詳細資訊，請參閱 [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -85,7 +87,7 @@ ms.locfileid: "72986074"
 ### <a name="options-for-all-project-types"></a>所有專案類型的選項
  下表列出的自訂選項，文件層級自訂和 VSTO 增益集皆可使用。
 
-|工作|取得詳細資訊|
+|Task|取得詳細資訊|
 |----------|--------------------------|
 |自訂功能區。|[功能區總覽](../vsto/ribbon-overview.md)|
 |在文件層級自訂的自訂活頁簿工作表，或任何開啟的 VSTO 增益集活頁簿中，加入 Windows Form 控制項或擴充的 Excel 控制項。|[如何：將 Windows forms 控制項新增至 Office 檔](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [如何：將圖表控制項加入至工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [如何：將 ListObject 控制項加入至工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [如何：將 NamedRange 控制項加入至工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|
@@ -93,7 +95,7 @@ ms.locfileid: "72986074"
 ### <a name="options-for-document-level-customizations"></a>檔層級自訂的選項
  下表列出的自訂選項僅限文件層級自訂使用。
 
-|工作|取得詳細資訊|
+|Task|取得詳細資訊|
 |----------|--------------------------|
 |在活頁簿中加入執行窗格。|[動作窗格總覽](../vsto/actions-pane-overview.md)<br /><br /> [如何：將執行窗格加入 Word 檔或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|
 |在工作表中加入對應到 XML 節點的擴充範圍控制項。|[如何：將 XMLMappedRange 控制項加入至工作表](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|
@@ -101,7 +103,7 @@ ms.locfileid: "72986074"
 ### <a name="options-for-vsto-add-ins"></a>VSTO 增益集的選項
  下表列出的自訂選項僅限 VSTO 增益集使用。
 
-|工作|取得詳細資訊|
+|Task|取得詳細資訊|
 |----------|--------------------------|
 |建立自訂工作窗格。|[自訂工作窗格](../vsto/custom-task-panes.md)|
 

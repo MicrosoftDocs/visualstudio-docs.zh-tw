@@ -1,5 +1,7 @@
 ---
 title: Outlook 表單區域中的自訂動作
+description: 瞭解動作顯示按鈕（例如 [回復] 和 [全部回復]）可讓使用者回應 Microsoft Office Outlook 專案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 817cf9fe8698c2908e873246a8971f90fe72b460
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fe77cddcfe810e73d13de81cc7280969c1d1b1c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254447"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848192"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 表單區域中的自訂動作
   動作會顯示可讓使用者回應 Microsoft Office Outlook 專案的按鈕。 例如，若要回應訊息項目，使用者可以按一下 [ **回復**]、[ **回復至全部**] 或 [ **轉寄** 動作] 按鈕。 上述每個動作都會建立新的訊息項目，並使用原始專案的資訊填入專案的欄位。
@@ -28,7 +30,7 @@ ms.locfileid: "71254447"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>將自訂動作新增至表單區域
- 若要將自訂動作加入至表單區域，請使用 [ **自訂動作** ] 對話方塊。 您可以開啟 [**自訂動作**] 對話方塊，方法是選取**方案總管**中的表單區域、展開 [**屬性] 視窗**中的 [**資訊清單**] 節點、選取 [ **CustomActions** ] 屬性，然後按一下省略號按鈕 (![ASP.NET mobile 設計](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")工具]) 。
+ 若要將自訂動作加入至表單區域，請使用 [ **自訂動作** ] 對話方塊。 您可以開啟 [**自訂動作**] 對話方塊，方法是選取 **方案總管** 中的表單區域、展開 [**屬性] 視窗** 中的 [**資訊清單**] 節點、選取 [ **CustomActions** ] 屬性，然後按一下省略號按鈕 (![ASP.NET mobile 設計](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")工具]) 。
 
  您可以使用 [ **自訂動作** ] 對話方塊來指定 *目標表單*。 目標表單是使用者執行自訂動作時所顯示的表單。
 
@@ -36,11 +38,11 @@ ms.locfileid: "71254447"
 
  下表描述 [ **自訂動作** ] 對話方塊中可用的屬性。
 
-|屬性|說明|
+|屬性|描述|
 |--------------|-----------------|
 |**AddressLike**|指定目標表單的定址方式。|
 |**本文**|指定原始專案的主體如何附加至目標表單。|
-|**已啟用**|指出是否已啟用自訂動作。 如果這個屬性設定為 **false**，則會停用自訂動作。|
+|**啟用**|指出是否已啟用自訂動作。 如果這個屬性設定為 **false**，則會停用自訂動作。|
 |**方法**|指定執行自訂動作時可使用的回應類型。 自訂動作可以傳送表單、開啟表單，或提示使用者是否要傳送或開啟表單。|
 |**名稱**|指定您可以在程式碼中用來參考這個自訂動作的內部名稱。|
 |**ShowOnRibbon**|指出是否要在原始專案的功能區上顯示自訂動作。|

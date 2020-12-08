@@ -1,5 +1,7 @@
 ---
 title: 擴充偵錯工具的藍圖 |Microsoft Docs
+description: Visual Studio 的偵錯工具包括範例、參考和數個示範自訂偵錯工具之一般方式的案例。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d97a7edd62540d12a0a60d15b3179ca0a623c26
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 2574fe76faadf4284088c0d47592d0c5ba0d38f9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011823"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848335"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>擴充偵錯工具的藍圖
 本檔提供使用擴充偵錯工具的指南和參考資訊 [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 。

@@ -1,7 +1,8 @@
 ---
 title: 如何：將架構對應至 Visual Studio 內的工作表
+description: 瞭解如何在 Visual Studio 中開啟工作表時，將 XML 架構對應至 Microsoft Office Excel 工作表。
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8a0437b940953e89e24969314f63df34d223496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a7e1a06e644536ce9ce881d9b9f1dc23aae03f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538134"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848205"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>如何：將架構對應至 Visual Studio 內的工作表
   在 Visual Studio 中開啟工作表時，您可以將 XML 架構對應至工作表。 您可以使用在活頁簿于 Visual Studio 之外開啟時所使用的相同 Microsoft Office Excel 工具。 無論您是在建立 Excel 方案之前或之後，將架構對應至工作表，Office 專案都會建立相同的物件。
@@ -38,10 +39,10 @@ ms.locfileid: "85538134"
 
 2. 按一下工作表，將焦點移至設計工具。
 
-3. 按一下 [功能區] 上的 [開發人員] **** 索引標籤。
+3. 按一下 [功能區] 上的 [開發人員]  索引標籤。
 
     > [!NOTE]
-    > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
+    > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
 
 4. 在 [ **XML** ] 群組中，按一下 [ **來源**]。
 
@@ -55,7 +56,7 @@ ms.locfileid: "85538134"
 
 7. 流覽至您的架構檔案，選取它，然後按一下 [ **開啟**]。
 
-8. 按一下 [確定]  。
+8. 按一下 [確定]。
 
      架構會以 **XML 來源** 視窗表示。 在您的專案中， <xref:System.Data.DataSet> 會根據架構產生型別，並 <xref:System.Windows.Forms.BindingSource> 建立。
 

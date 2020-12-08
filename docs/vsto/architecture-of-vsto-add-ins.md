@@ -1,5 +1,7 @@
 ---
 title: VSTO 增益集的架構
+description: 在 Visual Studio 中建立的 VSTO 增益集具有可強調穩定性和安全性的架構功能，並可讓這些增益集與 Microsoft Office 緊密搭配運作。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 401ce9b8421cd636fc72c59dcd6641ff4e05d968
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 451ae0bd466403819a5b4e53d76070876d762c38
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839054"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848348"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO 增益集的架構
   使用 Visual Studio 中 Office Developer Tools 建立的 VSTO 增益集具有同時強調穩定性和安全性的架構功能，這些功能可讓其與 Microsoft Office 密切合作。 本主題描述 VSTO 增益集的下列層面：

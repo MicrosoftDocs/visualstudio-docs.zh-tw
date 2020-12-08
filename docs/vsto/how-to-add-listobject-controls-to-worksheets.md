@@ -1,5 +1,7 @@
 ---
 title: 如何：將 ListObject 控制項加入至工作表
+description: 瞭解如何在設計階段和執行時間于檔層級專案中，將 ListObject 控制項加入 Microsoft Office Excel 工作表。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5dd72db2678f448158f268b790d39d4f6e44a737
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538316"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848153"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>如何：將 ListObject 控制項加入至工作表
   您可以在文件層級專案中，於設計階段和執行階段將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入 Microsoft Office Excel 工作表。
@@ -44,25 +46,25 @@ ms.locfileid: "85538316"
 
 ### <a name="to-use-the-ribbon-in-excel"></a>使用 Excel 中的功能區
 
-1. 在 [插入] **** 索引標籤上，按一下 [表格] **** 群組中的 [表格] ****。
+1. 在 [插入]  索引標籤上，按一下 [表格]  群組中的 [表格] 。
 
-2. 選取您要包含在清單中的一或多個儲存格，然後按一下 [確定] ****。
+2. 選取您要包含在清單中的一或多個儲存格，然後按一下 [確定] 。
 
 #### <a name="to-use-the-toolbox"></a>使用工具箱
 
-1. 從 [工具箱] **** 的 [Excel 控制項] **** 索引標籤中，將 <xref:Microsoft.Office.Tools.Excel.ListObject> 拖曳至工作表。
+1. 從 [工具箱]  的 [Excel 控制項] 索引標籤中，將 <xref:Microsoft.Office.Tools.Excel.ListObject> 拖曳至工作表。
 
-     [加入 ListObject 控制項] **** 對話方塊隨即出現。
+     [加入 ListObject 控制項]  對話方塊隨即出現。
 
-2. 選取您要包含在清單中的一或多個儲存格，然後按一下 [確定] ****。
+2. 選取您要包含在清單中的一或多個儲存格，然後按一下 [確定] 。
 
-     如果您不想保留預設名稱，您可以在 [屬性] **** 視窗中變更名稱。
+     如果您不想保留預設名稱，您可以在 [屬性]  視窗中變更名稱。
 
 #### <a name="to-use-the-data-sources-window"></a>使用資料來源視窗
 
-1. 開啟 [資料來源] **** 視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱 [加入新的連接](../data-tools/add-new-connections.md)。
+1. 開啟 [資料來源]  視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱 [加入新的連接](../data-tools/add-new-connections.md)。
 
-2. 將資料表從 [資料來源] **** 視窗拖曳至您的工作表。
+2. 將資料表從 [資料來源]  視窗拖曳至您的工作表。
 
      資料繫結 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項隨即加入工作表。 如需詳細資訊，請參閱資料系結 [和 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)。
 

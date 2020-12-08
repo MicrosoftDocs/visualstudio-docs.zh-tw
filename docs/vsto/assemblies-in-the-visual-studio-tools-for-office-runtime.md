@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Tools for Office 執行時間中的元件
+description: 瞭解 Visual Studio 會自動加入 Visual Studio Tools for Office 執行時間元件的參考。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2fc47aa917fa9c9d5351fd313ec46ae4aaa0664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86c3c2b77b6bbea1e609bbea092b44bd1dee1dd4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75918788"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848291"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Visual Studio Tools for Office 執行時間中的元件
   當您建立 Office 專案時，Visual Studio 會自動針對專案類型和專案的目標 .NET Framework，加入適用 [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] 組件的參考。 適用於 .NET Framework 3.5、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]和 [!INCLUDE[net_v45](includes/net-v45-md.md)]的 Office 擴充功能包含不同的組件。 如需 Office 擴充功能的詳細資訊，請參閱 [Visual Studio Tools for Office 執行時間總覽](visual-studio-tools-for-office-runtime-overview.md)。
@@ -37,7 +39,7 @@ ms.locfileid: "75918788"
 |Microsoft.VisualStudio.Tools.Applications.Runtime.dll|提供下列類型：<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 屬性和 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> 介面，您可以在檔層級自訂中用來快取資料物件。 如需詳細資訊，請參閱快取 [資料](caching-data.md)。<br />- <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> 介面，可讓您執行額外的安裝步驟，做為 Office 方案之 ClickOnce 安裝程式的最後一個步驟。 如需詳細資訊，請參閱 [使用 ClickOnce 部署 Office 方案](deploying-an-office-solution-by-using-clickonce.md)。<br />-Visual Studio Tools for Office 執行時間可擲回的例外狀況。<br />-其他屬於 Visual Studio Tools for Office runtime 基礎結構的型別，而且並非設計直接從程式碼使用的類型。|
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll|提供下列類型：<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 類別，您可以使用這個類別將自訂群組件附加至檔，並存取檔中的快取資料。 如需詳細資訊，請參閱 [使用 ServerDocument 類別管理伺服器上的檔](managing-documents-on-a-server-by-using-the-serverdocument-class.md)。<br />-數個類別，代表檔層級自訂中快取資料的階層。 如需詳細資訊，請參閱 [存取伺服器檔中的資料](accessing-data-in-documents-on-the-server.md)。|
 
- 以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](includes/net-v45-md.md)] 為目標的專案還會參考下列組件。 這些組件不是 [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] 可轉散發套件的一部分， 而是必須隨方案一起部署的相依組件。 根據預設，這些組件會複製到專案的組建輸出資料夾 (當這些組件的 [複製到本機] **** 屬性設定為 [True] **** 時)。 如果使用 ClickOnce 部署專案，這些組件會包含在產生的套件中。
+ 以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](includes/net-v45-md.md)] 為目標的專案還會參考下列組件。 這些組件不是 [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] 可轉散發套件的一部分， 而是必須隨方案一起部署的相依組件。 根據預設，這些組件會複製到專案的組建輸出資料夾 (當這些組件的 [複製到本機]  屬性設定為 [True] 時)。 如果使用 ClickOnce 部署專案，這些組件會包含在產生的套件中。
 
 |組件名稱|描述|
 |-------------------|-----------------|

@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式檢查工作表中的拼寫
+description: 瞭解如何以程式設計方式檢查 Microsoft Excel 工作表中的單字拼寫。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 797fc498c54bdbc466fe8ddc35229b2c106db80d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f2a9f50767082ead9daafe684aae7fc1524ba9c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541540"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848283"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>如何：以程式設計方式檢查工作表中的拼寫
-  您可以用程式設計方式檢查工作表中的拼字。 如果工作表中有任何拼寫不正確的字，[拼字檢查] **** 對話方塊就會自動出現。
+  您可以用程式設計方式檢查工作表中的拼字。 如果工作表中有任何拼寫不正確的字，[拼字檢查]  對話方塊就會自動出現。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 

@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式檢查檔中的拼寫
+description: 瞭解如何以程式設計的方式檢查檔中的拼寫，您可以使用 CheckSpelling 方法。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93ba9d9907135952f7408652bfb36f440d23138d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85294b21e9fd1f52f5cc707fc6824a87530e3cda
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537848"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848309"
 ---
 # <a name="how-to-programmatically-check-spelling-in-documents"></a>如何：以程式設計方式檢查檔中的拼寫
   若要檢查檔中的拼寫，請使用 <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> 方法。 這個方法會傳回布林值，指出提供的參數是否拼寫正確。

@@ -1,5 +1,7 @@
 ---
 title: 如何：將 ListObject 資料行對應至資料
+description: 瞭解如何在呼叫 SetDataBinding 方法時，對應您要在 ListObject 中顯示的資料行。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b09c07c8b36baeed096c0049c778e431fe232458
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa24e4a0f0dab9c01de8e5a2960f28d71a9dad6e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538160"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848231"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>如何：將 ListObject 資料行對應至資料
   當您將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項繫結到 <xref:System.Data.DataTable>時，您可能不想在清單中顯示所有資料行，或可能有某些資料行未繫結至資料。 當您呼叫 <xref:Microsoft.Office.Tools.Excel.ListObject> 方法時，您可以對應想要顯示在 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 的資料行。
