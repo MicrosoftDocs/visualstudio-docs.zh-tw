@@ -1,5 +1,7 @@
 ---
 title: 將執行窗格新增至 Word 檔或 Excel 活頁簿
+description: 瞭解若要將執行窗格加入 Microsoft Office Word 檔或 Microsoft Excel 活頁簿，您應該先建立 Windows Forms 的使用者控制項。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d24ec3a17c9e0824c6b7aaffeaaac02c1c4f76e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d675209f2a3ac47e8681da8fca73c5cd86e95d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546220"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848062"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>如何：將執行窗格加入至 Word 文件或 Excel 活頁簿
   若要將執行窗格加入 Microsoft Office Word 檔或 Microsoft Excel 活頁簿，請先建立 Windows Forms 的使用者控制項。 然後，將使用者控制項加入至 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> `ThisDocument.ActionsPane` 專案中 (Word) 或 `ThisWorkbook.ActionsPane` 欄位 (Excel) 欄位的屬性。
@@ -37,7 +39,7 @@ ms.locfileid: "85546220"
 
 1. 在 Visual Studio 中開啟您的 Word 或 Excel 檔層級專案。
 
-2. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
+2. 在 [專案] 功能表上，按一下 [加入新項目]。
 
 3. 在 [ **加入新專案** ] 對話方塊中，選取 [ **動作] 窗格控制項**，將其命名為 **HelloControl**，然後按一下 [ **加入**]。
 
@@ -47,7 +49,7 @@ ms.locfileid: "85546220"
 4. 從 [工具箱] 的 [ **Windows Forms** ] 索引標籤中 **，** 將 [ **Button** ] 控制項拖曳至控制項上。
 
     > [!NOTE]
-    > 如果在設計工具中看不到控制項，請按兩下**方案總管**中的 [ **HelloControl** ]。
+    > 如果在設計工具中看不到控制項，請按兩下 **方案總管** 中的 [ **HelloControl** ]。
 
 5. 將程式碼加入至 <xref:System.Windows.Forms.Control.Click> 按鈕的事件處理常式。 下列範例顯示 Microsoft Office Word 檔的程式碼。
 

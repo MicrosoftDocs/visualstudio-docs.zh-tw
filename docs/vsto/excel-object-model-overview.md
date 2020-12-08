@@ -1,5 +1,7 @@
 ---
 title: Excel 物件模型總覽
+description: 瞭解您可以與 Excel 物件模型所提供的物件互動，以開發使用 Microsoft Office Excel 的方案。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a823692a5cc0f154c514edff4fe9398de0efd212
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb3134b7656fc5156554e60fc88d16e6c2b58120
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649418"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847685"
 ---
 # <a name="excel-object-model-overview"></a>Excel 物件模型總覽
   若要開發使用 Microsoft Office Excel 的方案，您可以與 Excel 物件模型提供的物件進行互動。 本主題將介紹最重要的物件：
@@ -59,7 +61,7 @@ ms.locfileid: "81649418"
 |Sheet2.vb|Sheet2.cs|
 |Sheet3.vb|Sheet3.cs|
 
- 您可以在專案中使用 `Globals` 類別，從個別的類別之外存取 `ThisWorkbook`、`Sheet1`、`Sheet2` 或 `Sheet3`。 如需詳細資訊，請參閱 [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。 下列範例會呼叫的 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> 方法， `Sheet1` 不論程式碼是否放在其中一個 `Sheet` *n*類別或 `ThisWorkbook` 類別中。
+ 您可以在專案中使用 `Globals` 類別，從個別的類別之外存取 `ThisWorkbook`、`Sheet1`、`Sheet2` 或 `Sheet3`。 如需詳細資訊，請參閱 [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。 下列範例會呼叫的 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> 方法， `Sheet1` 不論程式碼是否放在其中一個 `Sheet` *n* 類別或 `ThisWorkbook` 類別中。
 
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]
@@ -114,7 +116,7 @@ ms.locfileid: "81649418"
 
 ### <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[Excel 方案](../vsto/excel-solutions.md)|說明如何建立 Microsoft Office Excel 的文件層級自訂和 VSTO 增益集。|
 |[使用範圍](../vsto/working-with-ranges.md)|提供示範如何使用範圍執行常見工作的範例。|

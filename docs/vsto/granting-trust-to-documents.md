@@ -1,5 +1,7 @@
 ---
 title: 授與信任給檔
+description: 瞭解檔層級專案與應用層級專案的安全性需求相同，例如使用憑證來簽署資訊清單，或按一下信任提示。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a631e8d8cffe6bfde925dfbae4a7350e6a0ef95a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9d91a86f8596e0ed7a04ae68099c7c9ab6099a40
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298623"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847737"
 ---
 # <a name="grant-trust-to-documents"></a>授與信任給檔
   文件層級專案和應用程式層級專案具有相同的安全性需求：您需使用憑證簽署資訊清單，或按一下信任提示。 此外，文件或活頁簿所在的目錄，必須指定為信任位置。

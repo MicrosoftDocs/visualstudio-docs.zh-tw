@@ -1,5 +1,7 @@
 ---
 title: 從其他 Office 方案呼叫 VSTO 增益集的程式碼
+description: 瞭解如何將 VSTO 增益集中的物件公開給其他方案，包括其他 Microsoft Office 的解決方案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 584406098f058c17b3dd215dda9c8c4e9498cf46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255334"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847841"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>從其他 Office 方案呼叫 VSTO 增益集的程式碼
   您可以將 VSTO 增益集中的物件公開給其他方案 (包括其他 Microsoft Office 方案)。 如果您想要讓其他方案也能使用 VSTO 增益集提供的服務，這就很有用。 例如，如果您有 Microsoft Office Excel 的 VSTO 增益集，該增益集會在 Web 服務的財務資料上執行計算，則其他方案可以在執行時間呼叫 Excel VSTO 增益集來執行這些計算。
@@ -72,7 +74,7 @@ ms.locfileid: "71255334"
 
    - 從 <xref:System.Runtime.InteropServices.StandardOleMarshalObject>衍生類別。 如需詳細資訊，請參閱 [將類別公開給跨進程用戶端](#outofproc)。
 
-   - 在您定義介面的專案中設定 [註冊 COM Interop] **** 屬性。 只有當您想要讓用戶端使用早期繫結來呼叫 VSTO 增益集時，才需要這個屬性。
+   - 在您定義介面的專案中設定 [註冊 COM Interop]  屬性。 只有當您想要讓用戶端使用早期繫結來呼叫 VSTO 增益集時，才需要這個屬性。
 
    下列程式碼範例示範 `AddInUtilities` 類別，該類別具有其他方案可以呼叫的 `ImportData` 方法。 若要在較大的逐步解說內容中查看這個程式碼，請參閱 [逐步解說：從 VBA 呼叫 VSTO 增益集中的程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。
 
@@ -111,7 +113,7 @@ ms.locfileid: "71255334"
    針對 VBA 用戶端和非 VBA 用戶端，您使用 Microsoft.office.core.comaddin.object 的傳回值方式會有所不同。 對於跨處理序用戶端，還需要其他程式碼才能避免可能的競爭情形。
 
 ### <a name="access-objects-from-vba-solutions"></a>從 VBA 方案存取物件
- 下列程式碼範例示範如何使用 VBA 來呼叫 VSTO 增益集所公開的方法。 此 VBA 宏會呼叫名為 `ImportData` 的方法，該方法會定義在名為 **EXCELIMPORTDATA**的 VSTO 增益集中。 若要在較大的逐步解說內容中查看這個程式碼，請參閱 [逐步解說：從 VBA 呼叫 VSTO 增益集中的程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。
+ 下列程式碼範例示範如何使用 VBA 來呼叫 VSTO 增益集所公開的方法。 此 VBA 宏會呼叫名為 `ImportData` 的方法，該方法會定義在名為 **EXCELIMPORTDATA** 的 VSTO 增益集中。 若要在較大的逐步解說內容中查看這個程式碼，請參閱 [逐步解說：從 VBA 呼叫 VSTO 增益集中的程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。
 
 ```vb
 Sub CallVSTOMethod()

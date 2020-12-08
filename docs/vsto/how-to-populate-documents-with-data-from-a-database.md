@@ -1,5 +1,7 @@
 ---
 title: 如何：使用資料庫的資料填入檔
+description: 瞭解如何在您的方案中使用資料庫中的資料，以及如何使用 Windows Forms 控制項來顯示檔中的資料。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8470ec4acf686c016088c5f474539a1ab7ed85df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0915d0ef57da5cba7fe73b6b374babe95b1a09c7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547195"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848075"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>如何：使用資料庫的資料填入檔
 
@@ -69,7 +71,7 @@ ms.locfileid: "85547195"
 ## <a name="see-also"></a>另請參閱
 
 - [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [新增資料來源](../data-tools/add-new-data-sources.md)
+- [新增新資料來源](../data-tools/add-new-data-sources.md)
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [如何：將物件的資料填入檔](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [如何：使用主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

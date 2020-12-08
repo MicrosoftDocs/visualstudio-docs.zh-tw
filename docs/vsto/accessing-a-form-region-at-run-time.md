@@ -1,5 +1,7 @@
 ---
 title: 在執行時間存取表單區域
+description: 瞭解如何在執行時間存取各種專案類型和版本 Microsoft Office 中的表單區域。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5dd8818b57a1aa33b70254303150d8f00e36cc02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0276405c023717c88f334d6231939d59f79ee4e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255791"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847412"
 ---
 # <a name="access-a-form-region-at-run-time"></a>在執行時間存取表單區域
 
@@ -59,12 +61,12 @@ ms.locfileid: "71255791"
  若要使用 `Globals` 類別存取表單區域上的控制項，您必須使控制項能存取表單區域程式碼檔案外部的程式碼。
 
 ### <a name="form-regions-designed-in-the-form-region-designer"></a>表單區域設計工具中設計的表單區域
- 若為 C#，請變更您想要存取之每個控制項的修飾詞。 若要這樣做，請在 [表單區域設計工具] 中選取每個控制項，並且將 [屬性] **** 視窗中的 **修飾詞** 屬性變更為 **內部** 或 **公用** 。 例如，如果您將 **的** 修飾詞 `textBox1` 屬性變更為 **內部**，您可以輸入 `textBox1` 來存取 `Globals.FormRegions.FormRegion1.textBox1`。
+ 若為 C#，請變更您想要存取之每個控制項的修飾詞。 若要這樣做，請在 [表單區域設計工具] 中選取每個控制項，並且將 [屬性]  視窗中的 **修飾詞** 屬性變更為 **內部** 或 **公用** 。 例如，如果您將 **的** 修飾詞 `textBox1` 屬性變更為 **內部**，您可以輸入 `textBox1` 來存取 `Globals.FormRegions.FormRegion1.textBox1`。
 
  若為 Visual Basic，您不需要變更修飾詞。
 
 ### <a name="imported-form-regions"></a>匯入的表單區域
- 當您匯入在 Outlook 中設計的表單區域時，在表單區域之每個控制項的存取修飾詞會變成私用。 因為您無法使用表單區域設計工具來修改匯入的表單區域，所以沒有任何方法可以變更 [屬性] **** 視窗中控制項的修飾詞。
+ 當您匯入在 Outlook 中設計的表單區域時，在表單區域之每個控制項的存取修飾詞會變成私用。 因為您無法使用表單區域設計工具來修改匯入的表單區域，所以沒有任何方法可以變更 [屬性]  視窗中控制項的修飾詞。
 
  若要啟用區域程式碼檔案之外控制項表單的存取，請在表單區域程式碼檔案中建立屬性以傳回該控制項。
 

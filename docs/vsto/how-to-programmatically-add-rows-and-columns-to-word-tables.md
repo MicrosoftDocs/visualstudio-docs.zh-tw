@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式將資料列和資料行加入至 Word 資料表
+description: 瞭解如何使用資料列物件的 Add 方法，將資料列加入至資料表。 您也可以使用 Columns 物件的 Add 方法來加入資料行。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3887f80a5c2a0cb775059f58876135d91350133c
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 10154033c23cccc134752afb7f8b1e9c67099671
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585375"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846359"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>如何：以程式設計方式將資料列和資料行加入至 Word 資料表
   在 Microsoft Office Word 表格中，儲存格會組織成資料列和資料行。 您可以使用 <xref:Microsoft.Office.Interop.Word.Rows> 物件的 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法新增資料表的資料列，以及使用 <xref:Microsoft.Office.Interop.Word.Columns> 物件的 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法來新增資料行。

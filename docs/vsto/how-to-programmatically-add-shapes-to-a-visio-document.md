@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式將圖形新增至 Visio 檔
+description: 瞭解如何藉由從樣板中取出主機板並將圖形放在使用中的頁面上，來將圖形新增至 Microsoft Office Visio 檔。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8eb3ad837f699a1bb0bbc327b6e892a20866e0a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 819560d584f267bfa54ae2bcfc61a162f45e0383
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584226"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848023"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>如何：以程式設計方式將圖形新增至 Visio 檔
   您可以從樣板擷取主圖形並把圖形放在使用中的頁面上，即可在 Microsoft Office Visio 文件中加入圖形。
@@ -32,7 +34,7 @@ ms.locfileid: "91584226"
 
 - 以使用中的文件，從 Documents.Masters 集合中擷取主圖形，然後將圖形放在使用中的文件。 您可以使用索引或主圖形名稱來擷取主圖形。
 
-     下列程式碼範例會建立空白的 Visio 文件，然後用停駐的 [基本圖形] **** 樣板開啟它。 程式碼接著會擷取數個圖形，並將它們放在使用中的頁面上。
+     下列程式碼範例會建立空白的 Visio 文件，然後用停駐的 [基本圖形]  樣板開啟它。 程式碼接著會擷取數個圖形，並將它們放在使用中的頁面上。
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#13)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#13)]

@@ -1,8 +1,8 @@
 ---
 title: 建立/開啟 VSTO 系統專案的 VBA 存取權
 titleSuffix: ''
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-ms.custom: seodec18
+description: 瞭解您必須明確啟用 Office VBA 專案系統的存取權，才能建立或開啟 Visual Studio Tools for Office 系統專案。
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e30a89bdf8547eab9ed9c51b07c49e014b7302
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584855"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846125"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>啟用 VBA 存取以建立或開啟 Microsoft Office 系統專案的 Visual Studio Tools
 
@@ -49,7 +49,7 @@ ms.locfileid: "91584855"
 
 ## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>若要啟用或停用 Visual Basic 專案的存取權
 
-1. 按一下 [檔案] **** 索引標籤。
+1. 按一下 [檔案]  索引標籤。
 
 2. 按一下 [選項]。
 
@@ -59,7 +59,7 @@ ms.locfileid: "91584855"
 
 5. 核取或取消核取 **VBA 專案物件模型的 [信任存取權** ]，以啟用或停用 Visual Basic 專案的存取權。
 
-6. 按一下 [確定]  。
+6. 按一下 [確定]。
 
 ### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>若要啟用或停用具有 2007 Microsoft Office 系統之 Visual Basic 專案的存取權
 
@@ -69,11 +69,11 @@ ms.locfileid: "91584855"
 
 3. 選取以啟用或清除 [停用]， **Visual Basic 專案的 [信任存取**]。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定]。
 
 ## <a name="to-set-your-office-macro-security-level"></a>設定 Office 巨集安全性層級
 
-1. 按一下 [檔案] **** 索引標籤。
+1. 按一下 [檔案]  索引標籤。
 
 2. 按一下 [選項]。
 
@@ -83,7 +83,7 @@ ms.locfileid: "91584855"
 
 5. 在 [ **宏設定** ] 區段中，選取所需的設定。
 
-6. 按一下 [確定]  。
+6. 按一下 [確定]。
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>使用 2007 Microsoft Office 系統設定 Office 宏安全性等級
 
@@ -99,7 +99,7 @@ ms.locfileid: "91584855"
 
 2. 在 [ **目前安裝的程式** ] 清單中選取 [Office]。
 
-3. 按一下 [變更]****。
+3. 按一下 [變更]。
 
 4. 選取 [ **新增或移除功能**]，然後按一下 [ **繼續**]。
 
@@ -107,11 +107,11 @@ ms.locfileid: "91584855"
 
 6. 展開 [**選擇應用程式和工具的更新選項**] 清單中的 [ **Office 共用功能**]。
 
-7. 開啟 **Visual Basic for Applications**旁的下拉式功能表，然後按一下 [ **從我的電腦執行**]。
+7. 開啟 **Visual Basic for Applications** 旁的下拉式功能表，然後按一下 [ **從我的電腦執行**]。
 
 8. 按一下 **[繼續]** 。
 
-9. 按一下 [關閉]。
+9. 按一下 [關閉]  。
 
 ## <a name="to-repair-your-installation-of-office"></a>修復 Office 的安裝
 
@@ -119,7 +119,7 @@ ms.locfileid: "91584855"
 
 2. 在 [ **目前安裝的程式** ] 清單中選取您的 Office 版本。
 
-3. 按一下 [變更]****。
+3. 按一下 [變更]。
 
 4. 選取 [ **重新安裝或修復**]，然後按 **[下一步]**。
 

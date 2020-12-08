@@ -1,5 +1,7 @@
 ---
 title: 如何：防止 Outlook 顯示表單區域
+description: 瞭解如何防止 Microsoft Office Outlook 顯示特定專案的表單區域。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90da255beb0a85a302158feb1f9d5cc4981437eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f247bf82d51fda6d321b45c16f91b857300cc1e4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520130"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847672"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>如何：防止 Outlook 顯示表單區域
   在某些情況下，您可能不想 Microsoft Office Outlook 顯示特定專案的表單區域。 例如，如果連絡人項目不包含商務位址，您可以防止在地圖中顯示企業位置的表單區域出現。

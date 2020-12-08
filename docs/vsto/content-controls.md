@@ -1,5 +1,7 @@
 ---
 title: 內容控制項
+description: 學習內容控制項，以及內容控制項如何提供方法讓您設計檔和範本。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -38,12 +40,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8683f5379aaa33446b150adf34f8a5aa57a83ff3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986183"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848036"
 ---
 # <a name="content-controls"></a>內容控制項
   內容控制項提供一種設計文件和範本的方式，能讓它們具有下列功能：
@@ -94,7 +96,7 @@ ms.locfileid: "72986183"
 ### <a name="drop-down-list"></a>下拉式清單
  下拉式清單會顯示使用者可以選取的項目清單。 不同於下拉式方塊，下拉式清單不會讓使用者加入或編輯項目。 如需詳細資訊，請參閱 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 型別。
 
-### <a name="group"></a>分組
+### <a name="group"></a>群組
  群組控制項定義的文件受保護區域，使用者不能予以編輯或刪除。 群組控制項可以包含任何文件項目，例如文字、表格、圖形及其他內容控制項。 如需詳細資訊，請參閱 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 型別。
 
 ### <a name="picture"></a>Picture
@@ -130,9 +132,9 @@ ms.locfileid: "72986183"
 
  如果要保護的區域在內容控制項內，您可以使用內容控制項的屬性，防止使用者編輯或刪除控制項：
 
-- **LockContents**屬性可防止使用者編輯內容。
+- **LockContents** 屬性可防止使用者編輯內容。
 
-- **LockContentControl**屬性可防止使用者刪除該控制項。
+- **LockContentControl** 屬性可防止使用者刪除該控制項。
 
   如果要保護的區域不在內容控制項內，或者要保護的區域包含內容控制項和其他類型的內容，您可以將整個區域放入 <xref:Microsoft.Office.Tools.Word.GroupContentControl>。 不像其他內容的控制項，<xref:Microsoft.Office.Tools.Word.GroupContentControl> 不提供向使用者顯示的 UI。 它唯一的用途是定義使用者無法編輯的區域。
 
@@ -165,7 +167,7 @@ ms.locfileid: "72986183"
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
 |<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> 陣列|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|無|
 
- 在文件層級和 VSTO 增益集專案中，您可以使用控制項的 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 屬性的 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 方法，以程式設計方式將內容控制項繫結至資料來源。 如果您這樣做，請將字串 **文字** 傳遞至方法的 *propertyName* 參數 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 。 **Text**屬性是內容控制項的預設資料系結屬性。
+ 在文件層級和 VSTO 增益集專案中，您可以使用控制項的 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 屬性的 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 方法，以程式設計方式將內容控制項繫結至資料來源。 如果您這樣做，請將字串 **文字** 傳遞至方法的 *propertyName* 參數 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 。 **Text** 屬性是內容控制項的預設資料系結屬性。
 
  內容控制項也支援雙向的資料繫結，讓控制項中的變更更新回資料來源。 如需詳細資訊，請參閱 [如何：使用主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。
 
@@ -204,7 +206,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-bind-events-for-content-controls"></a>內容控制項的資料系結事件
  所有的內容控制項都會提供一組事件，您可以控制它們來執行與資料相關的工作，例如先驗證控制項中的文字是否符合特定準則，再更新資料來源。 下表列出與資料繫結相關的內容控制項事件。
 
-|工作|事件|
+|Task|事件|
 |----------|-----------|
 |就在 Word 自動更新繫結至自訂 XML 組件的內容控制項文字之前，執行程式碼。|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|
 |就在 Word 自動更新繫結至內容控制項的自訂 XML 組件資料之前 (也就是內容控制項中的文字變更之後)，執行程式碼。|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|

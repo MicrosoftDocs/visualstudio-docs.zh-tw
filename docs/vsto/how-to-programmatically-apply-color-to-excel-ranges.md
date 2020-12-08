@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式將色彩套用至 Excel 範圍
+description: 瞭解如何將色彩套用至儲存格範圍內的文字，您可以使用 NamedRange 控制項或原生 Excel 範圍物件。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d4a99e2e71e6a87b304ceea45a3cd595f911ff1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63a38bb4fb6f8f8ab35b9e1104a1b93d6d757446
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543451"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847997"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>如何：以程式設計方式將色彩套用至 Excel 範圍
   若要將色彩套用至儲存格範圍內的文字，請使用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件。

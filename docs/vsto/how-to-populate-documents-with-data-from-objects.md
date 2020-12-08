@@ -1,5 +1,7 @@
 ---
 title: 如何：將物件的資料填入檔
+description: 瞭解如何在您的方案中使用物件中的資料，而且您可以使用 Windows Forms 控制項來顯示檔中的資料。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38461fc30f71a811033ea70bfe560a6492f56e12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73cc795b5476f312f5fc80ba76dc383175596b64
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547169"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848049"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>如何：將物件的資料填入檔
 
@@ -48,7 +50,7 @@ ms.locfileid: "85547169"
 
 若要將資料物件連接至 BindingSource：
 
-1. 將想要的資料欄位從 [資料來源] **** 視窗拖曳至您的文件。 這樣會自動建立控制項。
+1. 將想要的資料欄位從 [資料來源]  視窗拖曳至您的文件。 這樣會自動建立控制項。
 
 2. 在程式碼中，針對您為資料來源所選取的物件類型，建立執行個體。
 
@@ -68,7 +70,7 @@ ms.locfileid: "85547169"
 
 ## <a name="see-also"></a>另請參閱
 
-- [新增資料來源](../data-tools/add-new-data-sources.md)
+- [新增新資料來源](../data-tools/add-new-data-sources.md)
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [如何：使用資料庫的資料填入檔](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [如何：使用主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

@@ -1,6 +1,7 @@
 ---
 title: '如何：將程式碼公開給 c # 專案中的 VBA'
-ms.custom: seodec18
+description: '如果您想要讓兩種類型的程式碼彼此互動，您可以瞭解如何在 Visual c # 專案中公開程式碼，以 Visual Basic for Applications (VBA) 程式碼。'
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21d7672d3c08012e75d73ee8bf4d9816b850eb2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a830ec75e3997bee8d4bed9e275fc6229fec3405
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544829"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846593"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何：將程式碼公開給 Visual c # 專案中的 VBA
   如果您想要讓兩種類型的程式碼彼此互動，您可以公開 Visual c # 專案中的程式碼，以 Visual Basic for Applications (VBA) 程式碼。
@@ -90,12 +91,12 @@ ms.locfileid: "85544829"
 
 9. 在的設計工具中開啟 Word) 的檔 (或 Excel) 的工作表 ([!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-10. 在 [屬性] **** 視窗中，選取 **ReferenceAssemblyFromVbaProject** 屬性，然後將值變更為 [True] ****。
+10. 在 [屬性]  視窗中，選取 **ReferenceAssemblyFromVbaProject** 屬性，然後將值變更為 [True] 。
 
     > [!NOTE]
-    > 如果活頁簿或檔尚未包含 VBA 程式碼，或檔中的 VBA 程式碼不受信任而無法執行，當您將 **ReferenceAssemblyFromVbaProject** 屬性設定為 **True**時，您將會收到錯誤訊息。 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。
+    > 如果活頁簿或檔尚未包含 VBA 程式碼，或檔中的 VBA 程式碼不受信任而無法執行，當您將 **ReferenceAssemblyFromVbaProject** 屬性設定為 **True** 時，您將會收到錯誤訊息。 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。
 
-11. 按一下訊息中顯示的 [確定] **** 。 這則訊息會提醒您，如果您在從執行專案時將 VBA 程式碼加入至活頁簿或檔 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，vba 程式碼將會在您下一次建立專案時遺失。 這是因為每次您建立專案時，就會覆寫組建輸出檔案夾中的檔。
+11. 按一下訊息中顯示的 [確定]  。 這則訊息會提醒您，如果您在從執行專案時將 VBA 程式碼加入至活頁簿或檔 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，vba 程式碼將會在您下一次建立專案時遺失。 這是因為每次您建立專案時，就會覆寫組建輸出檔案夾中的檔。
 
      此時，Visual Studio 會設定專案，讓 VBA 專案可以呼叫元件。 Visual Studio 也會將名為 `GetManagedClass` 的方法加入至 VBA 專案。 您可以從 VBA 專案的任何位置呼叫這個方法，以存取您公開給 VBA 的類別。
 

@@ -1,5 +1,7 @@
 ---
 title: 建立 Office 方案
+description: 瞭解在 Visual Studio 中建立和調試 Office 專案，以及建立和偵錯工具的其他專案類型的差異，例如 Windows Forms。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d942a7818c3c71e0859c9271b329688734682f2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551854"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847932"
 ---
 # <a name="build-office-solutions"></a>建立 Office 方案
   一般而言，建置和偵錯 Office 專案，和在 Visual Studio 中建置和偵錯其他類型的專案是相同的，例如 Windows Forms。 本節主題會說明兩者之間的差異。 如需如何建立應用程式的一般資訊，請參閱 [Visual Studio 中的編譯和建立](../ide/compiling-and-building-in-visual-studio.md)。
@@ -46,11 +48,11 @@ ms.locfileid: "69551854"
 
 - 一份專案文件的複本。
 
-- 其 [複製到本機] **** 屬性設定為 **true**的專案組件和所有參考組件。
+- 其 [複製到本機]  屬性設定為 **true** 的專案組件和所有參考組件。
 
 - 應用程式資訊清單，其副檔名為 *.manifest*。 如需詳細資訊，請參閱 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。
 
-- 具有副檔名 *vsto*的部署資訊清單。 如需詳細資訊，請參閱 [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)。
+- 具有副檔名 *vsto* 的部署資訊清單。 如需詳細資訊，請參閱 [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)。
 
 - 程式資料庫 (*PDB*) 檔。
 
@@ -60,11 +62,11 @@ ms.locfileid: "69551854"
 ### <a name="application-level-projects"></a>應用層級專案
  當您建立 VSTO 增益集專案時，專案輸出中會包含下列專案：
 
-- 其 [複製到本機] **** 屬性設定為 **true**的專案組件和所有參考組件。
+- 其 [複製到本機]  屬性設定為 **true** 的專案組件和所有參考組件。
 
 - 應用程式資訊清單，其副檔名為 *.manifest*。 如需詳細資訊，請參閱 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。
 
-- 具有副檔名 *vsto*的部署資訊清單。 如需詳細資訊，請參閱 [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)。
+- 具有副檔名 *vsto* 的部署資訊清單。 如需詳細資訊，請參閱 [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)。
 
 - 專案元件的程式資料庫 (*PDB*) 檔。
 
@@ -79,7 +81,7 @@ ms.locfileid: "69551854"
   Outlook 需要這項資訊載入表單區域。
 
 ## <a name="referenced-assemblies"></a>參考的組件
- 您可以參考您「建置 Office 解決方案」專案的組件 (包括類別庫專案)。 每個參考的組件都有稱為 [複製到本機] **** 的屬性。 [複製到本機]**** 指出組件是否要複製到輸出目錄。 依預設，它會設定為 **true**。 每個將 [複製到本機] **** 設為 **true** 的參考組件都會複製到輸出目錄。
+ 您可以參考您「建置 Office 解決方案」專案的組件 (包括類別庫專案)。 每個參考的組件都有稱為 [複製到本機] 的屬性。 [複製到本機] 指出組件是否要複製到輸出目錄。 依預設，它會設定為 **true**。 每個將 [複製到本機]  設為 **true** 的參考組件都會複製到輸出目錄。
 
 ## <a name="security-during-the-build-process"></a>組建流程期間的安全性
  Visual Studio 會自動設定開發電腦的安全性設定，在建置程序期間將信任授與解決方案。 這讓解決方案在被偵錯時依然執行。
@@ -101,7 +103,7 @@ ms.locfileid: "69551854"
  如果平台目標設定為 x64，解決方案就不能在 32 位元版本的 Windows 或 Office 中執行。 X64 平台目標需要解決方案在 64 位元處理序中執行。
 
 ## <a name="use-the-clean-command"></a>使用 Clean 命令
- 若要從開發電腦中移除已建置的專案檔案，您可以使用 **之 [建置]****功能表的 [清除]**[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]命令。 [清除] **** 命令會刪除建置輸出位置的所有檔案。 至於應用程式層級專案，[清除] **** 命令也會移除建置程序所建立的登錄項目。
+ 若要從開發電腦中移除已建置的專案檔案，您可以使用 **之 [建置]****功能表的 [清除]**[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]命令。 [清除]  命令會刪除建置輸出位置的所有檔案。 至於應用程式層級專案，[清除]  命令也會移除建置程序所建立的登錄項目。
 
 ## <a name="related-topics"></a>相關主題
 

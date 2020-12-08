@@ -1,5 +1,7 @@
 ---
 title: Excel 方案的全球化與當地語系化
+description: 瞭解 Microsoft Office Excel 解決方案的特殊考慮，這些問題將會在具有非英文設定的 Windows 電腦上執行。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51e4a2cc4fb74309c44b8068152253de92eed0df
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986049"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847750"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 方案的全球化與當地語系化
   本節包含在非英文設定的 Windows 電腦上執行 Microsoft Office Excel 解決方案之特殊考量的相關資訊。 當您使用 Visual Studio 建立其他種類的解決方案時，遇到的 Microsoft Office 解決方案全球化和當地語系化問題層面，大部分都一樣。 如需一般資訊，請參閱 [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)。

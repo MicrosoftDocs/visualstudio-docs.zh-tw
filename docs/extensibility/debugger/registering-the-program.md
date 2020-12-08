@@ -1,5 +1,7 @@
 ---
 title: 註冊程式 |Microsoft Docs
+description: 瞭解 debug 引擎取得埠之後，要如何使用埠註冊程式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80c3d13cc7319e43390a7e9e6f4eb42a5a87c780
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713163"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847092"
 ---
 # <a name="register-the-program"></a>註冊程式
 在偵測引擎取得埠（以 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 介面表示）之後，啟用要進行偵錯工具的下一個步驟是向埠註冊程式。 註冊之後，程式便可透過下列其中一種方式進行偵錯工具：

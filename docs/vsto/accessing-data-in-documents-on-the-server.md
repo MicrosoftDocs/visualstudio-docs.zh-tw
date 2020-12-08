@@ -1,5 +1,7 @@
 ---
 title: 存取伺服器檔中的資料
+description: 瞭解如何在檔層級自訂中針對資料進行程式設計，而不需要使用 Microsoft Office Word 或 Microsoft Office Excel 的物件模型。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab033120c0913bbae33458c5a2d0b53972364581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255771"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847620"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>存取伺服器檔中的資料
   您可以針對檔層級自訂中的資料進行程式設計，而不需要使用 Microsoft Office Word 或 Microsoft Office Excel 的物件模型。 這表示您可以在未安裝 Word 或 Excel 的伺服器上，存取包含在檔中的資料。 例如，伺服器上的程式碼 (例如，在頁面中 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]) 可以自訂檔中的資料，並將自訂檔傳送給終端使用者。 當使用者開啟檔時，方案元件中的資料系結程式碼會將自訂資料系結至檔。 這是可能的，因為檔中的資料與使用者介面分開。 如需詳細資訊，請參閱 [檔層級自訂中](../vsto/cached-data-in-document-level-customizations.md)的快取資料。
@@ -55,9 +57,9 @@ ms.locfileid: "71255771"
 
 3. 使用下列其中一個選項，將已變更的物件序列化回資料快取：
 
-    - 如果您想要自動序列化變更，請使用 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 方法。 這個方法會使用 **DiffGram** 格式 <xref:System.Data.DataSet> ，在資料快取中序列化、 <xref:System.Data.DataTable> 和具類型的資料集物件。 **DiffGram**格式可確保離線檔中資料快取的變更會正確地傳送至伺服器。
+    - 如果您想要自動序列化變更，請使用 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 方法。 這個方法會使用 **DiffGram** 格式 <xref:System.Data.DataSet> ，在資料快取中序列化、 <xref:System.Data.DataTable> 和具類型的資料集物件。 **DiffGram** 格式可確保離線檔中資料快取的變更會正確地傳送至伺服器。
 
-    - 如果您想要執行自己的序列化來變更快取的資料，您可以直接寫入 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> 屬性。 如果您**DiffGram**使用 <xref:System.Data.Common.DataAdapter> 來更新資料庫，並在、或具類型的資料集中對資料進行變更，請指定 DiffGram 格式 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 。 否則， <xref:System.Data.Common.DataAdapter> 將會藉由加入新的資料列，而不是修改現有的資料列來更新資料庫。
+    - 如果您想要執行自己的序列化來變更快取的資料，您可以直接寫入 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> 屬性。 如果您 **DiffGram** 使用 <xref:System.Data.Common.DataAdapter> 來更新資料庫，並在、或具類型的資料集中對資料進行變更，請指定 DiffGram 格式 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 。 否則， <xref:System.Data.Common.DataAdapter> 將會藉由加入新的資料列，而不是修改現有的資料列來更新資料庫。
 
 ### <a name="modify-data-without-deserializing-the-current-value"></a>修改資料，而不還原序列化目前的值
  在某些情況下，您可能會想要修改快取物件的值，而不需要先還原序列化目前的值。 例如，如果您要變更具有簡單類型的物件值（例如字串或整數），或在伺服器上的檔中初始化快取，就可以這樣做 <xref:System.Data.DataSet> 。 在這些情況下，您可以使用 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 方法，而不需要先還原序列化快取物件的目前值。
@@ -70,7 +72,7 @@ ms.locfileid: "71255771"
 ### <a name="modify-null-values-in-the-data-cache"></a>修改資料快取中的 null 值
  儲存並關閉檔時，資料快取不會儲存具有 **null** 值的物件。 當您修改快取資料時，這項限制會有數個結果：
 
-- 如果您將資料快取中的任何物件設定為 **null**值，則當檔開啟時，資料快取中的所有物件都會自動設為 **null** ，而且在儲存和關閉檔時，將會清除整個資料快取。 也就是說，所有快取的物件都會從資料快取中移除，而且 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 集合將會是空的。
+- 如果您將資料快取中的任何物件設定為 **null** 值，則當檔開啟時，資料快取中的所有物件都會自動設為 **null** ，而且在儲存和關閉檔時，將會清除整個資料快取。 也就是說，所有快取的物件都會從資料快取中移除，而且 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 集合將會是空的。
 
 - 如果您在資料快取中建立具有 **null** 物件的方案，而您想要在 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 第一次開啟檔之前使用類別初始化這些物件，您必須確定已初始化資料快取中的所有物件。 如果您只初始化部分物件，當檔開啟時，所有物件都會設為 **null** ，而且在儲存和關閉檔時，會清除整個資料快取。
 

@@ -1,5 +1,7 @@
 ---
 title: 如何：設定包含清單安全性
+description: 設定 ClickOnce 信任提示，以控制終端使用者是否可以透過將信任決策儲存至內含清單來選擇安裝 Office 方案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541631"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846723"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>如何：設定包含清單安全性
   如果您有系統管理員許可權，您可以設定 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 信任提示，以控制終端使用者是否可透過將信任決策儲存至內含清單，來控制使用者是否可以選擇安裝 Office 方案。 如需包含清單的詳細資訊，請參閱 [使用包含清單來信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。
@@ -55,10 +57,10 @@ ms.locfileid: "85541631"
     |字串值子機碼|值|
     |-------------------------|-----------|
     |**網際網路**|**AuthenticodeRequired**|
-    |**UntrustedSites**|**已停用**|
-    |**MyComputer**|**已啟用**|
-    |**LocalIntranet**|**已啟用**|
-    |**TrustedSites**|**已啟用**|
+    |**UntrustedSites**|**停用**|
+    |**MyComputer**|**啟用**|
+    |**LocalIntranet**|**啟用**|
+    |**TrustedSites**|**啟用**|
 
      根據預設， **網際網路** 的值為 **AuthenticodeRequired** ，而 **UntrustedSites** 的值為 **Disabled**。
 
@@ -66,7 +68,7 @@ ms.locfileid: "85541631"
 
 1. 建立 Visual Basic 或 Visual c # 主控台應用程式。
 
-2. 開啟要編輯的*Program.cs*檔案，然後加入下列*程式*代碼。
+2. 開啟要編輯的 *Program.cs* 檔案，然後加入下列 *程式* 代碼。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -113,7 +115,7 @@ ms.locfileid: "85541631"
 
     |字串值子機碼|值|
     |-------------------------|-----------|
-    |**UntrustedSites**|**已停用**|
+    |**UntrustedSites**|**停用**|
     |**網際網路**|**AuthenticodeRequired**|
     |**MyComputer**|**AuthenticodeRequired**|
     |**LocalIntranet**|**AuthenticodeRequired**|
@@ -125,7 +127,7 @@ ms.locfileid: "85541631"
 
 1. 建立 Visual Basic 或 Visual c # 主控台應用程式。
 
-2. 開啟要編輯的*Program.cs*檔案，然後加入下列*程式*代碼。
+2. 開啟要編輯的 *Program.cs* 檔案，然後加入下列 *程式* 代碼。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -170,17 +172,17 @@ ms.locfileid: "85541631"
 
     |字串值子機碼|值|
     |-------------------------|-----------|
-    |**UntrustedSites**|**已停用**|
-    |**網際網路**|**已停用**|
-    |**MyComputer**|**已停用**|
-    |**LocalIntranet**|**已停用**|
-    |**TrustedSites**|**已停用**|
+    |**UntrustedSites**|**停用**|
+    |**網際網路**|**停用**|
+    |**MyComputer**|**停用**|
+    |**LocalIntranet**|**停用**|
+    |**TrustedSites**|**停用**|
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>以程式設計方式停用包含清單
 
 1. 建立 Visual Basic 或 Visual c # 主控台應用程式。
 
-2. 開啟要編輯的*Program.cs*檔案，然後加入下列*程式*代碼。
+2. 開啟要編輯的 *Program.cs* 檔案，然後加入下列 *程式* 代碼。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey

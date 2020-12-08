@@ -1,5 +1,7 @@
 ---
 title: 使用 Windows Installer 部署 VSTO 方案
+description: 瞭解如何使用 Visual Studio 安裝程式專案部署 Office (VSTO) 增益集或檔層級方案的 Microsoft Visual Studio 工具。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/18/2010
 ms.topic: conceptual
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6fd2824ae10ad36a7ed50250620e98575e9ea60
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e49705c99801cd6e09f4bf6d9be3c411cc2c53e3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585689"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846541"
 ---
 # <a name="deploying-a-vsto-solution-using-windows-installer"></a>使用 Windows Installer 部署 VSTO 方案
 
@@ -119,11 +121,11 @@ Microsoft Office 使用登錄專案來找出並載入增益集。這些登錄專
 2. 開啟 Office 專案後，在 [檔案 **] 功能表上** ，展開 [ **加入** ]，然後按一下 [ **新增專案** ] 以新增專案。
 ::: moniker range="=vs-2017"
 3. 在 [**加入新專案**] 對話方塊中，展開 **[專案類型**] 窗格中的 [**其他專案類型**]，然後展開 [**安裝和部署**]，然後選取 [ **Visual Studio 安裝程式**]。
-4. 在 [**範本**] 窗格中，從 [ **Visual Studio 安裝**的範本] 群組中選取 [**安裝專案**]。
+4. 在 [**範本**] 窗格中，從 [ **Visual Studio 安裝** 的範本] 群組中選取 [**安裝專案**]。
 ::: moniker-end
 ::: moniker range="=vs-2019"
 3. 在 [ **加入新專案** ] 對話方塊中，選取 [ **安裝專案** ] 範本。
-4. 按 [下一步]  。
+4. 按一下 [下一步] 。
 ::: moniker-end
 
 5. 在 [ **名稱** ] 方塊中，輸入 **officeaddinsetup]**。
@@ -144,7 +146,7 @@ Visual Studio 開啟新安裝專案的檔案系統 Explorer。 檔案系統 Expl
 
 ### <a name="to-add-the-exceladdin-project-output"></a>若要加入 ExcelAddIn 專案輸出
 
-1. 在 [ **方案總管**中，以滑鼠右鍵按一下 [ **officeaddinsetup]**]，按一下 [ **新增** ]，然後按一下 [ **專案輸出**]。
+1. 在 [ **方案總管** 中，以滑鼠右鍵按一下 [ **officeaddinsetup]**]，按一下 [ **新增** ]，然後按一下 [ **專案輸出**]。
 2. 在 [ **加入專案輸出群組** ] 對話方塊中，從 [專案] 清單中選取 [ **ExcelAddIn** ]，然後選取 [ **主要輸出**]。
 3. 按一下 **[確定]** ，將專案輸出加入至安裝專案。
 
@@ -156,9 +158,9 @@ Visual Studio 開啟新安裝專案的檔案系統 Explorer。 檔案系統 Expl
 
 ### <a name="to-add-the-deployment-and-application-manifests"></a>加入部署和應用程式資訊清單
 
-1. 在 [**方案總管**中，以滑鼠右鍵按一下 [ **officeaddinsetup]**] **，按一下 [****新增**]，然後按一下 [檔案]。
+1. 在 [**方案總管** 中，以滑鼠右鍵按一下 [ **officeaddinsetup]**] **，按一下 [****新增**]，然後按一下 [檔案]。
 2. 在 [ **新增** 檔案] 對話方塊中，流覽至 **ExcelAddIn** 輸出目錄。 輸出目錄通常是專案根目錄的 **bin \\ 發行** 子資料夾（視選取的組建設定而定）。
-3. 選取ExcelAddIn.dll **ExcelAddIn** ，然後按一下**ExcelAddIn.dll.manifest** [**開啟**]，將這兩個檔案加入至安裝專案。
+3. 選取ExcelAddIn.dll **ExcelAddIn** ，然後按一下 **ExcelAddIn.dll.manifest** [**開啟**]，將這兩個檔案加入至安裝專案。
 
     ![方案總管中的應用程式和部署資訊清單的螢幕擷取畫面](media/setup-project-figure-3.jpg)
 
@@ -168,7 +170,7 @@ Visual Studio 開啟新安裝專案的檔案系統 Explorer。 檔案系統 Expl
 
 ### <a name="to-exclude-the-exceladdin-project-dependencies"></a>排除 ExcelAddIn 專案相依性
 
-1. 在 [**方案總管** **]** 的 [ **officeaddinsetup]** ] 節點中，選取 [偵測到的相依性專案] 下的 [所有相依性專案]，但**Microsoft .NET Framework**或任何以** \*.Utilities.dll**結尾的元件除外。 公用程式元件可與您的應用程式一起部署。
+1. 在 [**方案總管** **]** 的 [ **officeaddinsetup]** ] 節點中，選取 [偵測到的相依性專案] 下的 [所有相依性專案]，但 **Microsoft .NET Framework** 或任何以 **\*.Utilities.dll** 結尾的元件除外。 公用程式元件可與您的應用程式一起部署。
 2. 以滑鼠右鍵按一下群組，然後選取 [ **屬性**]。
 3. 在 [ **屬性** ] 視窗中，將 [ **排除** ] 屬性變更為 [ **True** ]，將相依元件從安裝專案中排除。 請務必不要排除任何公用程式元件。
 
@@ -185,7 +187,7 @@ Visual Studio 開啟新安裝專案的檔案系統 Explorer。 檔案系統 Expl
 
 將相依元件設定為必要條件
 
-1. 在 [ **方案總管**中，以滑鼠右鍵按一下 **officeaddinsetup]** 專案，然後選取 [ **屬性**]。
+1. 在 [ **方案總管** 中，以滑鼠右鍵按一下 **officeaddinsetup]** 專案，然後選取 [ **屬性**]。
 2. [ **Officeaddinsetup] 屬性頁** ] 對話方塊隨即出現。
 3. 按一下 [ **必要條件** ] 按鈕。
 4. 在 [必要條件] 對話方塊中，選取正確的 .NET Framework 版本和 Microsoft Visual Studio Tools for Office Runtime。
@@ -201,14 +203,14 @@ Microsoft Office 使用登錄機碼來尋找增益集。 HKEY \_ CURRENT user hi
 
 ### <a name="to-configure-the-registry"></a>設定登錄
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **officeaddinsetup]**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **officeaddinsetup]**]。
 2. 展開 [ **View**]。
 3. 按一下 [登錄] 以開啟 **[登錄編輯程式** ] 視窗。
-4. 在登錄 ** (officeaddinsetup]) ** 編輯器] 中，依序展開 [ **HKEY \_ 本機 \_ 電腦** ] 和 [ **軟體**]。
-5. 刪除在 [ **HKEY \_ 本機 \_ 電腦 \\ 軟體**] 下找到的** \[ 製造商 \] **。
+4. 在登錄 **(officeaddinsetup])** 編輯器] 中，依序展開 [ **HKEY \_ 本機 \_ 電腦** ] 和 [ **軟體**]。
+5. 刪除在 [ **HKEY \_ 本機 \_ 電腦 \\ 軟體**] 下找到的 **\[ 製造商 \]**。
 6. 展開 [ **HKEY \_ 目前 \_ 使用者** ]，然後依序展開 [ **軟體**]。
-7. 刪除在 [ **HKEY \_ 目前的 \_ 使用者 \\ 軟體**] 下找到的** \[ 製造商 \] **金鑰。
-8. 若要新增增益集安裝的登錄機碼，請以滑鼠右鍵按一下 **使用者/電腦 Hive** 機碼，然後選取 [ **新增金鑰**]。 使用文字 **軟體** 作為新金鑰的名稱。 以滑鼠右鍵按一下新建立的 **軟體** 金鑰，並使用 **Microsoft**文字建立新的金鑰。
+7. 刪除在 [ **HKEY \_ 目前的 \_ 使用者 \\ 軟體**] 下找到的 **\[ 製造商 \]** 金鑰。
+8. 若要新增增益集安裝的登錄機碼，請以滑鼠右鍵按一下 **使用者/電腦 Hive** 機碼，然後選取 [ **新增金鑰**]。 使用文字 **軟體** 作為新金鑰的名稱。 以滑鼠右鍵按一下新建立的 **軟體** 金鑰，並使用 **Microsoft** 文字建立新的金鑰。
 9. 使用類似的程式來建立增益集註冊所需的整個金鑰階層：
 
     **使用者/電腦 Hive \\ 軟體 \\ Microsoft \\ Office \\ Excel \\ 增益集 \\ samplecompany.exceladdin 機碼. ExcelAddIn**
@@ -217,22 +219,22 @@ Microsoft Office 使用登錄機碼來尋找增益集。 HKEY \_ CURRENT user hi
 
 10. 以滑鼠右鍵按一下 [ **samplecompany.exceladdin 機碼. ExcelAddIn** ] 鍵，選取 [ **新增**]，然後按一下 [ **字串值**]。 使用名稱的文字 **描述** 。
 11. 您可以使用此步驟來新增其他三個值：
-    - **字串**類型的**FriendlyName**
-    - **DWORD**類型的**LoadBehavior**
-    - **字串**類型的**資訊清單**
+    - **字串** 類型的 **FriendlyName**
+    - **DWORD** 類型的 **LoadBehavior**
+    - **字串** 類型的 **資訊清單**
 
-12. 以滑鼠右鍵按一下登錄編輯程式中的 **描述** 值，然後按一下 [ **屬性視窗]**。 在 [ **屬性] 視窗**中，針對 [值] 屬性輸入 **Excel 示範載入** 宏。
-13. 在登錄編輯程式中，選取 [ **FriendlyName** ] 機碼。 在 [ **屬性] 視窗**中，將 [ **值** ] 屬性變更為 **Excel 示範載入**宏。
-14. 在 [登錄編輯程式] 中選取 **LoadBehavior** 機碼。 在 [ **屬性] 視窗**中，將 [ **值** ] 屬性變更為 **3。** LoadBehavior 的值3表示增益集應該在主應用程式啟動時載入。 如需載入行為的詳細資訊，請參閱 [VSTO 增益集的登錄專案](registry-entries-for-vsto-add-ins.md)。
+12. 以滑鼠右鍵按一下登錄編輯程式中的 **描述** 值，然後按一下 [ **屬性視窗]**。 在 [ **屬性] 視窗** 中，針對 [值] 屬性輸入 **Excel 示範載入** 宏。
+13. 在登錄編輯程式中，選取 [ **FriendlyName** ] 機碼。 在 [ **屬性] 視窗** 中，將 [ **值** ] 屬性變更為 **Excel 示範載入** 宏。
+14. 在 [登錄編輯程式] 中選取 **LoadBehavior** 機碼。 在 [ **屬性] 視窗** 中，將 [ **值** ] 屬性變更為 **3。** LoadBehavior 的值3表示增益集應該在主應用程式啟動時載入。 如需載入行為的詳細資訊，請參閱 [VSTO 增益集的登錄專案](registry-entries-for-vsto-add-ins.md)。
 
-15. 在 [登錄編輯程式] 中選取 **資訊清單** 索引鍵。 在 [ **屬性] 視窗**中，將 [ **值** ] 屬性變更為 **file：///[TARGETDIR] ExcelAddIn vsto | vstolocal**
+15. 在 [登錄編輯程式] 中選取 **資訊清單** 索引鍵。 在 [ **屬性] 視窗** 中，將 [ **值** ] 屬性變更為 **file：///[TARGETDIR] ExcelAddIn vsto | vstolocal**
 
     ![登錄編輯程式的螢幕擷取畫面](media/setup-project-figure-6.png)
 
     **圖6：設定登錄機碼**
 
       VSTO 執行時間會使用這個登錄機碼來尋找部署資訊清單。 [TARGETDIR] 宏將會取代為安裝增益集的資料夾。 宏會包含尾端的 \ 字元，因此部署資訊清單的檔案名應該是 ExcelAddIn，不含 \ 字元。
-      **Vstolocal**後置詞會告知 VSTO 執行時間，增益集應該從這個位置載入，而不是 ClickOnce 快取。 移除此後置，會導致執行時間將自訂複製到 ClickOnce 快取中。
+      **Vstolocal** 後置詞會告知 VSTO 執行時間，增益集應該從這個位置載入，而不是 ClickOnce 快取。 移除此後置，會導致執行時間將自訂複製到 ClickOnce 快取中。
 
    >[!WARNING]
    >在 Visual Studio 中，您應該非常小心使用登錄編輯程式。 例如，如果您不小心針對錯誤的機碼設定 DeleteAtUninstall，您可能會刪除登錄中的使用中部分，讓使用者電腦處於不一致或更糟的狀態。
@@ -252,22 +254,22 @@ Microsoft Office 使用登錄機碼來尋找增益集。 HKEY \_ CURRENT user hi
 
 ### <a name="configure-a-launch-condition-to-detect-the-vsto-runtime"></a>設定啟動條件以偵測 VSTO 執行時間
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **officeaddinsetup]**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **officeaddinsetup]**]。
 2. 展開 [ **View**]。
 3. 按一下 [ **啟動條件**]。
-4. 在 [ **啟動條件 (officeaddinsetup]) ** 編輯器] 中，以滑鼠右鍵按一下 [ **目的電腦上的需求**]，然後按一下 [ **新增登錄啟動條件**]。 此搜尋條件可以在登錄中搜尋 VSTO 執行時間所安裝的金鑰。 然後，您可以透過已命名的屬性，將金鑰的值提供給安裝程式的各個部分。 啟動條件會使用搜尋條件所定義的屬性來檢查某個值。
-5. 在 [ **啟動條件 (officeaddinsetup]) ** 編輯器] 中，選取 [ **搜尋 RegistryEntry1** 搜尋條件]，以滑鼠右鍵按一下條件，然後選取 [ **屬性視窗]**。
+4. 在 [ **啟動條件 (officeaddinsetup])** 編輯器] 中，以滑鼠右鍵按一下 [ **目的電腦上的需求**]，然後按一下 [ **新增登錄啟動條件**]。 此搜尋條件可以在登錄中搜尋 VSTO 執行時間所安裝的金鑰。 然後，您可以透過已命名的屬性，將金鑰的值提供給安裝程式的各個部分。 啟動條件會使用搜尋條件所定義的屬性來檢查某個值。
+5. 在 [ **啟動條件 (officeaddinsetup])** 編輯器] 中，選取 [ **搜尋 RegistryEntry1** 搜尋條件]，以滑鼠右鍵按一下條件，然後選取 [ **屬性視窗]**。
 
-6. 在 [屬性] **** 視窗中，設定這些屬性：
-   1. 將 ** (名稱) ** 的值設定為 **搜尋 VSTO 2010 運行**時間。
+6. 在 [屬性]  視窗中，設定這些屬性：
+   1. 將 **(名稱)** 的值設定為 **搜尋 VSTO 2010 運行** 時間。
    2. 將 **屬性** 的值變更為 **VSTORUNTIMEREDIST**。
    3. 將 [ **RegKey** ] 的值設定為 [ **SOFTWARE \\ Microsoft \\ VSTO Runtime 安裝 \\ v4R** ]
    4. 將 [ **根** ] 屬性設定為 [ **vsdrrHKLM**]。
    5. 將 [ **值** ] 屬性變更為 [ **版本**]。
 
-7. 在 [ **啟動條件 (officeaddinsetup]) ** 編輯器] 中，選取 [ **Condition1** 啟動條件]，以滑鼠右鍵按一下條件，然後選取 [ **屬性視窗]**。
+7. 在 [ **啟動條件 (officeaddinsetup])** 編輯器] 中，選取 [ **Condition1** 啟動條件]，以滑鼠右鍵按一下條件，然後選取 [ **屬性視窗]**。
 8. 在 [屬性] 視窗中，設定這些屬性：
-   1. 設定 ** (名稱) ** 以 **驗證 VSTO 2010 執行時間可用性**。
+   1. 設定 **(名稱)** 以 **驗證 VSTO 2010 執行時間可用性**。
    2. 將 **條件** 的值變更為 **VSTORUNTIMEREDIST \> = "10.0.30319"**
    3. 將 **InstallURL** 屬性保留空白。
    4. 將 **訊息** 設定為 **未安裝適用于 Office Runtime 的 Visual Studio 2010 工具。請執行 Setup.exe 來安裝增益集**。
@@ -280,16 +282,16 @@ Microsoft Office 使用登錄機碼來尋找增益集。 HKEY \_ CURRENT user hi
 
 ### <a name="configure-a-launch-condition-to-detect-the-vsto-runtime-installed-by-office"></a>設定啟動條件以偵測 Office 所安裝的 VSTO 執行時間
 
-1. 在 [ **啟動條件] (officeaddinsetup]) ** 編輯器] 中，以滑鼠右鍵按一下 [ **搜尋目的電腦**]，然後按一下 [ **新增登錄搜尋**]。
+1. 在 [ **啟動條件] (officeaddinsetup])** 編輯器] 中，以滑鼠右鍵按一下 [ **搜尋目的電腦**]，然後按一下 [ **新增登錄搜尋**]。
 2. 選取 [ **搜尋 RegistryEntry1** 搜尋條件]，以滑鼠右鍵按一下條件，然後選取 [ **屬性視窗]**。
-3. 在 [屬性] **** 視窗中，設定這些屬性：
-    1. 將 ** (名稱) ** 的值設定為 **搜尋 Office VSTO Runtime**。
+3. 在 [屬性]  視窗中，設定這些屬性：
+    1. 將 **(名稱)** 的值設定為 **搜尋 Office VSTO Runtime**。
     2. 將 **屬性** 的值變更為 **OfficeRuntime**。
     3. 將 [ **RegKey** ] 的值設定為 [ **SOFTWARE \\ Microsoft \\ VSTO Runtime Setup \\ v4**]。
     4. 將 [ **根** ] 屬性設定為 [ **vsdrrHKLM**]。
     5. 將 [ **值** ] 屬性變更為 [ **版本**]。
 
-4. 在 [ **啟動條件 (officeaddinsetup]) ** 編輯器] 中，選取 [驗證之前定義的 **VSTO 2010 執行時間可用性** 啟動條件]，以滑鼠右鍵按一下條件，然後選取 [ **屬性視窗]**。
+4. 在 [ **啟動條件 (officeaddinsetup])** 編輯器] 中，選取 [驗證之前定義的 **VSTO 2010 執行時間可用性** 啟動條件]，以滑鼠右鍵按一下條件，然後選取 [ **屬性視窗]**。
 
 5. 將 **Condition** 屬性的值變更為 **VSTORUNTIMEREDIST \> = "10.0.30319" 或 OFFICERUNTIME \> = "10.0.21022"**。 根據您的增益集所需的執行階段版本，版本號碼可能會不同。
 
@@ -312,22 +314,22 @@ Microsoft Office 使用登錄機碼來尋找增益集。 HKEY \_ CURRENT user hi
 
 ### <a name="to-configure-launch-conditions-to-detect-that-for-office-pias"></a>若要設定啟動條件以偵測 Office Pia 的情況
 
-1. 在 [ **啟動條件] (officeaddinsetup]) ** 編輯器] 中，以滑鼠右鍵按一下 [ **目的電腦上的需求**]，然後 **按一下 [新增] Windows Installer 啟動條件**。 此啟動條件會搜尋特定的元件識別碼，以搜尋 Office PIA。
+1. 在 [ **啟動條件] (officeaddinsetup])** 編輯器] 中，以滑鼠右鍵按一下 [ **目的電腦上的需求**]，然後 **按一下 [新增] Windows Installer 啟動條件**。 此啟動條件會搜尋特定的元件識別碼，以搜尋 Office PIA。
 2. 以滑鼠右鍵按一下 [ **搜尋 Component1** ]，然後按一下 [ **屬性視窗]** 來顯示啟動條件的屬性。
-3. 在 [ **屬性] 視窗**中，設定下列屬性：
+3. 在 [ **屬性] 視窗** 中，設定下列屬性：
 
-    1. 將 ** (名稱) ** 屬性的值變更為 **搜尋 Office 共用 PIA**
+    1. 將 **(名稱)** 屬性的值變更為 **搜尋 Office 共用 PIA**
     2. 將 [元件識別碼] 的值 **變更為您** 要使用之 Office 元件的元件識別碼。 您可以在下表中找到元件識別碼的清單，例如 **{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}**。
     3. 將 [ **屬性** ] 屬性的值變更為 **HASSHAREDPIA**。
 
-4. 在 [ **啟動條件 (officeaddinsetup]) ** 編輯器] 中，以滑鼠右鍵按一下 [ **Condition1** ]，然後按一下 [ **屬性視窗]** 來顯示啟動條件的屬性。
+4. 在 [ **啟動條件 (officeaddinsetup])** 編輯器] 中，以滑鼠右鍵按一下 [ **Condition1** ]，然後按一下 [ **屬性視窗]** 來顯示啟動條件的屬性。
 
-5. 變更 **Condition1**的下列屬性：
+5. 變更 **Condition1** 的下列屬性：
 
-    1. 變更 ** (名稱) ** 以 **確認 Office 共用 PIA 的可用性**。
+    1. 變更 **(名稱)** 以 **確認 Office 共用 PIA 的可用性**。
     2. 將 **條件** 變更為 **HASSHAREDPIA**。
     3. 將 **InstallUrl** 保留空白。
-    4. 將 **訊息** 變更為 **無法與 Excel 互動的必要元件。請 setup.exe執行 **。
+    4. 將 **訊息** 變更為 **無法與 Excel 互動的必要元件。請 setup.exe執行**。
 
     ![確認 Office 共用 PIA 啟動條件之 [屬性] 視窗的螢幕擷取畫面](media/setup-project-figure-10.jpg)
   
@@ -357,7 +359,7 @@ Microsoft Office 使用登錄機碼來尋找增益集。 HKEY \_ CURRENT user hi
 
 ### <a name="to-build-the-setup-project"></a>若要建立安裝專案
 
-1. 在 [ **方案總管**中，以滑鼠右鍵按一下 **officeaddinsetup]** 專案，然後按一下 [ **建立**]。
+1. 在 [ **方案總管** 中，以滑鼠右鍵按一下 **officeaddinsetup]** 專案，然後按一下 [ **建立**]。
 2. 使用 **Windows 檔案總管**，流覽至 **officeaddinsetup]** 專案的輸出目錄，並移至 [發行] 或 [Debug] 資料夾（視選取的組建設定而定）。 將資料夾中的所有檔案複製到使用者可以存取的位置。
 
 測試 ExcelAddIn 設定
@@ -395,7 +397,7 @@ Office 檔內的屬性可用來尋找檔層級方案。 如果檔與 VSTO 元件
 
 將自訂動作專案新增至您的 Visual Studio 方案
 
-1. 以滑鼠右鍵按一下**方案總管**中的**Office 檔部署專案**，以將新的 .net 主控台專案加入方案中
+1. 以滑鼠右鍵按一下 **方案總管** 中的 **Office 檔部署專案**，以將新的 .net 主控台專案加入方案中
 2. 展開 [ **加入** ]，然後按一下 [ **新增專案**]。
 3. 選取 [主控台應用程式] 範本，並將專案命名為 **AddCustomizationCustomAction**。
 
@@ -514,30 +516,30 @@ Office 檔內的屬性可用來尋找檔層級方案。 如果檔與 VSTO 元件
 若要取得解決方案識別碼
 
 1. 在 [ **組建** ] 功能表上，按一下 [ **建立方案** ] 來建立檔層級方案，並將 [方案識別碼] 屬性加入至專案檔。
-2. 在 **方案總管**中，以滑鼠右鍵按一下檔層級專案 **ExcelWorkbookProject**
+2. 在 **方案總管** 中，以滑鼠右鍵按一下檔層級專案 **ExcelWorkbookProject**
 3. 按一下 [ **UnloadProject** ] 以從 Visual Studio 記憶體取專案檔。
 
     ![卸載 Excel 檔方案方案總管的螢幕擷取畫面](media/setup-project-figure-16.jpg)
 
     **圖13：卸載 Excel 檔方案**
 
-4. 在 **方案總管**中，以滑鼠右鍵按一下 **ExcelWorkbookProject** ，然後按一下 [EditExcelWorkbookProject]，再按一下 [ **Vbproj** ] 或 [ **編輯 ExcelWorkbookProject**]。
-5. 在 [ **ExcelWorkbookProject**編輯器] 中，找出**PropertyGroup**元素內的**SolutionID**元素。
+4. 在 **方案總管** 中，以滑鼠右鍵按一下 **ExcelWorkbookProject** ，然後按一下 [EditExcelWorkbookProject]，再按一下 [ **Vbproj** ] 或 [ **編輯 ExcelWorkbookProject**]。
+5. 在 [ **ExcelWorkbookProject** 編輯器] 中，找出 **PropertyGroup** 元素內的 **SolutionID** 元素。
 6. 複製此元素的 GUID 值。
 
     ![正在抓取 SolutionID](media/setup-project-figure-17.jpg)
 
     **圖14：正在抓取 SolutionID**
 
-7. 在 **方案總管**中，以滑鼠右鍵按一下 **ExcelWorkbookProject** ，然後按一下 [ **重載專案**]。
+7. 在 **方案總管** 中，以滑鼠右鍵按一下 **ExcelWorkbookProject** ，然後按一下 [ **重載專案**]。
 8. 在出現的對話方塊中按一下 [ **是** ]，以關閉 [ **ExcelWorkbookProject** 編輯器]。
-9. **解決方案識別碼**將用於安裝自訂動作。
+9. **解決方案識別碼** 將用於安裝自訂動作。
 
 最後一個步驟是設定 **安裝** 和 **卸載** 步驟的自訂動作。
 
 ### <a name="to-configure-the-setup-project"></a>設定安裝專案
 
-1. 在 [ **方案總管**中，以滑鼠右鍵按一下 [ **ExcelWorkbookSetup**]，展開 [ **加入** ]，然後按一下 [ **專案輸出**]。
+1. 在 [ **方案總管** 中，以滑鼠右鍵按一下 [ **ExcelWorkbookSetup**]，展開 [ **加入** ]，然後按一下 [ **專案輸出**]。
 2. 在 [ **加入專案輸出群組** ] 對話方塊的 [ **專案** ] 清單中，按一下 [ **AddCustomizationCustomAction**]。
 3. 選取 [ **主要輸出** ]，然後按一下 **[確定** ] 關閉對話方塊，並將包含自訂動作的元件加入至安裝專案。
 
@@ -545,18 +547,18 @@ Office 檔內的屬性可用來尋找檔層級方案。 如果檔與 VSTO 元件
 
     **圖15：檔資訊清單自訂動作-新增專案輸出群組**
 
-4. 在 **方案總管**中，以滑鼠右鍵按一下 [ **ExcelWorkbookSetup**]。
+4. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **ExcelWorkbookSetup**]。
 5. 展開 [ **View** ]，然後按一下 [ **自訂動作**]。
-6. 在 [**自訂動作 (ExcelWorkbookSetup) **編輯器] 中，以滑鼠右鍵按一下 [**自訂動作**]，然後按一下 [**新增自訂動作**
+6. 在 [**自訂動作 (ExcelWorkbookSetup)** 編輯器] 中，以滑鼠右鍵按一下 [**自訂動作**]，然後按一下 [**新增自訂動作**
 7. 在 [ **在專案中選取專案** ] 對話方塊的 [ **查詢** ] 清單中，按一下 [ **應用程式資料夾**]。 **從 AddCustomizationCustomAction (active) 選取 [主要輸出**]，然後按一下 **[確定]** ，將自訂動作新增至安裝步驟。
-8. 在 [ **安裝] 節點**下，以滑鼠右鍵按一下 **AddCustomizationCustomAction (Active) 的 [主要輸出 **]，然後按一下 [ **重新命名**]。 將自訂動作 **複製檔命名為我的檔並附加自訂**。
-9. 在 [ **卸載] 節點**下，以滑鼠右鍵按一下 **AddCustomizationCustomAction (Active) 的 [主要輸出 ** ]，然後按一下 [ **重新命名**]。 將自訂動作 **從 [檔] 資料夾**命名為 [移除檔]。
+8. 在 [ **安裝] 節點** 下，以滑鼠右鍵按一下 **AddCustomizationCustomAction (Active) 的 [主要輸出**]，然後按一下 [ **重新命名**]。 將自訂動作 **複製檔命名為我的檔並附加自訂**。
+9. 在 [ **卸載] 節點** 下，以滑鼠右鍵按一下 **AddCustomizationCustomAction (Active) 的 [主要輸出** ]，然後按一下 [ **重新命名**]。 將自訂動作 **從 [檔] 資料夾** 命名為 [移除檔]。
 
     ![檔資訊清單自訂動作視窗的螢幕擷取畫面](media/setup-project-figure-19.jpg)
 
     **圖16：檔資訊清單自訂動作**
 
-10. 在 [ **自訂動作] (ExcelWorkbookSetup) ** 編輯器] 中，以滑鼠右鍵按一下 [ **複製檔]，我的檔並附加自訂** ，然後按一下 [ **屬性視窗]**。
+10. 在 [ **自訂動作] (ExcelWorkbookSetup)** 編輯器] 中，以滑鼠右鍵按一下 [ **複製檔]，我的檔並附加自訂** ，然後按一下 [ **屬性視窗]**。
 11. 在 [ **CustomActionData** **屬性** ] 視窗中，輸入自訂 DLL 的位置、部署資訊清單，以及 Microsoft Office 檔的位置。 也需要 SolutionID。
 12. 如果您想要將任何安裝錯誤記錄到檔案中，請包含 LogFile 參數。
 s
@@ -568,7 +570,7 @@ s
 
     **圖17：將檔案複製到我的檔的自訂動作**
 
-13. 卸載的自訂動作需要檔的名稱，您可以在**CustomActionData**中使用相同的 documentLocation 參數來提供此名稱。
+13. 卸載的自訂動作需要檔的名稱，您可以在 **CustomActionData** 中使用相同的 documentLocation 參數來提供此名稱。
 
     ``` text
     /documentLocation="[INSTALLDIR]ExcelWorkbookProject.xlsx"

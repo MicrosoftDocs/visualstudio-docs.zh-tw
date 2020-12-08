@@ -1,5 +1,7 @@
 ---
 title: 如何：將 Windows forms 控制項新增至 Office 檔
+description: 瞭解如何在檔層級專案中，于設計階段將 Windows Forms 控制項加入 Microsoft Office Excel 和 Microsoft Office Word 檔。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b12d51ffe3a2e647a067b95d320e8beb70cac384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8f073a72db1a18574dff6ab060b1ea069475fbb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547533"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846775"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>如何：將 Windows Forms 控制項新增至 Office 檔
   您可以在文件層級專案的設計階段中，將 Windows Form 控制項加入 Microsoft Office Excel 和 Microsoft Office Word 文件。 在執行時間，您可以在檔層級自訂和 VSTO 增益集中加入控制項。例如，您可以將控制項新增 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> 至工作表，讓使用者可以從選項清單中選取。
@@ -47,7 +49,7 @@ ms.locfileid: "85547533"
 2. 在 [**工具箱**] 的 [**通用控制項**] 索引標籤中，按一下您要加入的控制項，然後將它拖曳至檔。
 
     > [!NOTE]
-    > 在 Excel 中選取控制項時，您會在 [資料編輯列] **** 看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。
+    > 在 Excel 中選取控制項時，您會在 [資料編輯列]  看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。
 
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>若要將 Windows Form 控制項拖曳至文件
 
@@ -60,7 +62,7 @@ ms.locfileid: "85547533"
      控制項會依指定的位置和大小加入文件。
 
     > [!NOTE]
-    > 當您在 Excel 中選取控制項時，您會在**公式**列中看到 **= EMBED ( "WinForms"，"" ) ** 。 這個文字是必要的，不應該刪除。
+    > 當您在 Excel 中選取控制項時，您會在 **公式** 列中看到 **= EMBED ( "WinForms"，"" )** 。 這個文字是必要的，不應該刪除。
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>若要按一下控制項，將 Windows Form 控制項加入文件
 
@@ -73,7 +75,7 @@ ms.locfileid: "85547533"
      控制項會依預設大小加入文件。
 
     > [!NOTE]
-    > 在 Excel 中選取控制項時，您會在 [資料編輯列] **** 看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。
+    > 在 Excel 中選取控制項時，您會在 [資料編輯列]  看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>若要按兩下控制項，將 Windows Form 控制項加入文件
 
@@ -84,18 +86,18 @@ ms.locfileid: "85547533"
      控制項會加入文件或現用窗格的中央位置。
 
     > [!NOTE]
-    > 在 Excel 中選取控制項時，您會在 [資料編輯列] **** 看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。
+    > 在 Excel 中選取控制項時，您會在 [資料編輯列]  看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>按 Enter 鍵將 Windows Forms 控制項新增至檔
 
 1. 在 Visual Studio 中建立或開啟 Excel 活頁簿專案或 Word 文件專案，如此才能在設計工具中看到文件。 如需建立專案的詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-2. 在 [**工具箱**] 的 [**通用控制項**] 索引標籤中，按一下您要新增的控制項，然後按下**enter**鍵。
+2. 在 [**工具箱**] 的 [**通用控制項**] 索引標籤中，按一下您要新增的控制項，然後按下 **enter** 鍵。
 
      控制項會加入文件或現用窗格的中央位置。
 
     > [!NOTE]
-    > 在 Excel 中選取控制項時，您會在 [資料編輯列] **** 看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。
+    > 在 Excel 中選取控制項時，您會在 [資料編輯列]  看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。
 
 ## <a name="add-controls-at-run-time-in-document-level-projects"></a><a name="runtimedoclevel"></a> 在檔層級專案中的執行時間加入控制項
  您可以透過程式設計的方式，在執行階段將 Windows Form 控制項加入文件。 在 Word 中，請使用 `ThisDocument` 類別之 <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> 屬性的方法。 在 Excel 中，使用 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> n 類別的屬性方法 `Sheet` *n* 。 每個方法都有數個多載，可讓您以不同方式指定控制項的位置。

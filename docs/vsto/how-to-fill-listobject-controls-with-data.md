@@ -1,5 +1,7 @@
 ---
 title: 如何：使用資料填入 ListObject 控制項
+description: 使用資料系結來快速將資料新增至您的檔。 您也可以中斷清單物件的連線，使其顯示資料，但不再系結至資料來源。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2941022cb434198298e9d098ef562efeaba4893f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ce2ef20b56a1803af5356137b798d83a5f1457f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544816"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846515"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>如何：使用資料填入 ListObject 控制項
   使用資料繫結也可以快速在文件中加入資料。 將資料繫結至清單物件之後，您可以中斷清單物件的連線，讓它顯示資料但不再繫結至資料來源。

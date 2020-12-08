@@ -1,5 +1,7 @@
 ---
 title: 註冊運算式評估工具 |Microsoft Docs
+description: 瞭解運算式評估工具必須將本身註冊為具有 Windows COM 環境和 Visual Studio 的 class factory。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 600f7c8a2e2957cddf23ccc82b0872617e491940
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713203"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847139"
 ---
 # <a name="register-an-expression-evaluator"></a>註冊運算式評估工具
 > [!IMPORTANT]
@@ -120,7 +122,7 @@ namespace EEMC
     > [!NOTE]
     > `metricLanguage``GUID`會依名稱識別語言，但它是 `guidLang` 選取語言的引數 `SetEEMetric` 。 當編譯器產生 debug 資訊檔案時，它應該撰寫適當的， `guidLang` 讓 DE 知道要使用哪一個 EE。 這種方式通常會要求此語言的符號提供者 `GUID` 會儲存在 debug 資訊檔中。
 
-3. 使用 Visual Studio 註冊，方法是在 HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. y*下建立索引鍵，其中， *x. y*是要註冊的 Visual Studio 版本。
+3. 藉由在 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudioX-y 下建立索引鍵來註冊 Visual Studio \\ **，其中， *x. y* 是要註冊的 Visual Studio 版本。
 
 ### <a name="example"></a>範例
  下列函式顯示非受控碼 (c + +) EE 如何向 Visual Studio 註冊及取消註冊本身。

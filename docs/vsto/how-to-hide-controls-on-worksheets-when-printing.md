@@ -1,5 +1,7 @@
 ---
 title: 如何：列印時隱藏工作表上的控制項
+description: 瞭解在列印包含 Windows Forms 控制項的 Microsoft Office Excel 工作表時，您可以隱藏控制項。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 336723f60a2cd90dc63db24e981dd06e0388cb9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acc90986dd394e69de12893aac01e0a4f662b1a3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544803"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846489"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>如何：列印時隱藏工作表上的控制項
   當您列印包含 Windows Forms 控制項 Microsoft Office Excel 檔時，會在列印的工作表上顯示這些控制項。 列印工作表時，您可以隱藏控制項。

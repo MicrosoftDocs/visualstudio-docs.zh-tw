@@ -1,5 +1,7 @@
 ---
 title: Office 檔上的控制項
+description: 瞭解如何使用 Visual Studio 中的 Office 開發工具，將 Windows Forms 控制項和主控制項加入 Word 檔和 Excel 工作表。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 160897a37ff6a8b335479b42a80f4186f176cab6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 203edcf2b77cfff3fb557ce7c1c8fea7592e17ea
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254407"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847984"
 ---
 # <a name="controls-on-office-documents"></a>Office 檔上的控制項
   您也可以在 Visual Studio 中使用 Office 開發工具，將 Windows Forms 控制項和「主控制項」 *appliesto_controls* (Host Control) 加入 Word 文件和 Excel 工作表。 主控制項是一種物件，在 Word 和 Excel 物件模型中擴充各種使用者介面 (UI) 物件。

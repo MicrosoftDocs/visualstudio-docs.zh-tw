@@ -1,5 +1,7 @@
 ---
 title: 部署 Office 方案
+description: 您可以使用 ClickOnce 或 Windows Installer 部署 Office 方案。 藉由使用 ClickOnce，您可以減少部署解決方案所需的步驟數目。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24ec10c42935ac961218f910fbef98d51f5f5569
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e10e922e346dc2ff1d289de94b398b7afd8f3f18
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416506"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846307"
 ---
 # <a name="deploy-an-office-solution"></a>部署 Office 方案
   您可以使用 ClickOnce 或 Windows Installer 部署 Office 方案。 使用 ClickOnce 可減少部署和更新您的方案所需的步驟。 如果您使用 Windows Installer，就可以控制安裝方案的方式，以及使用者安裝您的方案時安裝程式顯示的頁面。

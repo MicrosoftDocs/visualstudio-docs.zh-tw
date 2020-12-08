@@ -1,5 +1,7 @@
 ---
 title: 以程式設計方式將文字 & 格式新增至 Word 表格儲存格
+description: 瞭解如何以程式設計的方式，將文字和格式加入 Microsoft Office Word 資料表中的資料格。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0dc63c96669848703f3c18554100841a9f6c9cb
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f10684fa3e9309611ebf3b04d3cea77ee822f49e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585362"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848010"
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>如何：以程式設計方式在 Word 表格的儲存格中加入文字和格式
   每個資料表都是由一組儲存格組成。 每個個別的 <xref:Microsoft.Office.Interop.Word.Cell> 物件各代表資料表中的一個儲存格。 您可以依據儲存格在資料表中的位置來參考每一個儲存格。 這個範例會參考位於資料表中第一列和第一欄的儲存格、將文字加入儲存格，並套用格式。

@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;在 Visual Studio) 中 (Office 程式開發的應用程式元素'
+description: 瞭解 vstav3 命名空間的 application 元素如何包裝 Office 方案的描述。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3540df77b4498376dcde389730e17e7506647fb8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 37ab88939b6a5a753f67621697a63903c5a35eb2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543737"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847035"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 程式開發的應用程式元素
   `application` 命名空間的 `vstav3` 項目會包裝 Office 方案的描述。 文件層級自訂與 VSTO 增益集的子項目不同。

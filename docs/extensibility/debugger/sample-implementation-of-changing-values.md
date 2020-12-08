@@ -1,5 +1,7 @@
 ---
 title: 變更值的範例執行 |Microsoft Docs
+description: '[區域變數] 視窗中顯示的每個本機都有與其相關聯的 IDebugProperty2 物件。 瞭解 Visual Studio 如何更新記憶體中的本機值。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d7b712d2a97b02bed215c4996d3309341fb8ff9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5193fd07c1a891f052814446815bfbc836c6a9a7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713120"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847724"
 ---
 # <a name="sample-implementation-of-changing-values"></a>變更值的範例執行
 > [!IMPORTANT]
@@ -25,7 +27,7 @@ ms.locfileid: "80713120"
  [ **區域變數** ] 視窗中顯示的每個本機都有與其相關聯的 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 物件。 此 `IDebugProperty2` 物件包含本機的名稱、值和類型。 當使用者變更本機的值時，Visual Studio 會呼叫 [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) 來更新記憶體中的本機值。 在此範例中，本機是以實 `CFieldProperty` 介面的類別來表示 `IDebugProperty2` 。
 
 > [!NOTE]
-> 若為 Watch 和**快速****監看**式運算式，所變更的值會以 `CValueProperty` MyCEE 範例中的類別表示。 但是，的執行 `IDebugProperty2::SetValueAsString` 方式與此處所示的相同。
+> 若為 Watch 和 **快速****監看** 式運算式，所變更的值會以 `CValueProperty` MyCEE 範例中的類別表示。 但是，的執行 `IDebugProperty2::SetValueAsString` 方式與此處所示的相同。
 
  的 `IDebugProperty2::SetValueAsString` 執行作業會執行下列工作：
 

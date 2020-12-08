@@ -1,5 +1,7 @@
 ---
 title: 檔主專案
+description: 瞭解檔主項目目是一種類型，可從 Word 的主要 interop 元件延伸檔案類型。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ebea0c3a09d08741523deddce94def170d844202
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35455ac7751a34632362cfa3f2c9b8f2f827fc6d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253700"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846905"
 ---
 # <a name="document-host-item"></a>檔主專案
   <xref:Microsoft.Office.Tools.Word.Document> 主項目是一種類型，其會從 Word 的主要 Interop 組件擴充 <xref:Microsoft.Office.Interop.Word.Document> 類型。 <xref:Microsoft.Office.Tools.Word.Document> 主項目除了提供與 <xref:Microsoft.Office.Interop.Word.Document> 物件相同的所有屬性、方法和事件之外，也會公開其他事件，並做為主控制項和 Windows Forms 控制項的容器。

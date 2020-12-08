@@ -1,5 +1,7 @@
 ---
 title: 合併 VBA 和檔層級自訂
+description: 瞭解如何在 Microsoft Office Word 或 Excel 的檔層級自訂一部分的檔中，使用 Visual Basic for Applications (VBA) 程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3bab9c132439c6efa53842f1e13c6c5be31db00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70977607"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846398"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>合併 VBA 和檔層級自訂
   您可以在屬於 Microsoft Office Word 或 Microsoft Office Excel 文件層級自訂的文件中使用 Visual Basic for Applications (VBA) 程式碼。 您可以在來自自訂組件的文件中呼叫 VBA 程式碼，或者可以設定專案，讓文件中的 VBA 程式碼可以呼叫自訂組件中的程式碼。
@@ -42,7 +44,7 @@ ms.locfileid: "70977607"
  當您執行方案時，VBA 和自訂組件中的事件處理常式都會拾取文件中引發的事件，且兩組程式碼都會執行。 您不能事先決定哪一個程式碼會比其他程式碼先執行；您必須透過測試個別的案例來得知。 如果兩組程式碼並未經過小心地協調及測試，您可能會得到非預期的結果。
 
 ## <a name="call-vba-code-from-the-customization-assembly"></a>從自訂群組件呼叫 VBA 程式碼
- 您可以在 Word 文件中呼叫巨集，以及在 Excel 活頁簿中呼叫巨集和函式。 若要這麼做，請使用下列其中一種方法：
+ 您可以在 Word 文件中呼叫巨集，以及在 Excel 活頁簿中呼叫巨集和函式。 若要執行此工作，請使用下列的其中一個方法：
 
 - 對於 Word，請呼叫 <xref:Microsoft.Office.Interop.Word._Application.Run%2A> 類別的方法 <xref:Microsoft.Office.Interop.Word.Application> 。
 
@@ -83,14 +85,14 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 > [!NOTE]
 > 這項功能無法用於 Word 範本專案。 它只能在 Word 文件、Excel 活頁簿或 Excel 範本專案中使用。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  您的專案必須符合下列需求，您才能啟用 VBA 程式碼以呼叫自訂組件：
 
 - 文件必須具有下列其中一個副檔名：
 
   - 針對 Word： *. docm* 或 *.doc*
 
-  - 適用于 Excel： *. xlsm*、 *. xltm*、 *.xls*或 *.xlt*
+  - 適用于 Excel： *. xlsm*、 *. xltm*、 *.xls* 或 *.xlt*
 
 - 文件必須已經包含有 VBA 程式碼存在的 VBA 專案。
 
@@ -103,7 +105,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ## <a name="enable-vba-code-to-call-into-the-customization-assembly"></a>讓 VBA 程式碼呼叫自訂群組件
  有兩種不同的方式，您可以將自訂組件中的成員公開給文件中的 VBA 程式碼：
 
-- 您可以將 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 專案中的主項目類別成員公開給 VBA。 若要這樣做，請在設計工具中開啟主項目 (也就是文件、工作表或活頁簿) 時，在 [屬性] **** 視窗中將主項目的 **EnableVbaCallers** 屬性設為 **True** 。 Visual Studio 會自動執行所有必要工作，讓 VBA 程式碼能呼叫類別的成員。
+- 您可以將 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 專案中的主項目類別成員公開給 VBA。 若要這樣做，請在設計工具中開啟主項目 (也就是文件、工作表或活頁簿) 時，在 [屬性]  視窗中將主項目的 **EnableVbaCallers** 屬性設為 **True** 。 Visual Studio 會自動執行所有必要工作，讓 VBA 程式碼能呼叫類別的成員。
 
 - 您可以在 Visual C# 專案中將任何公用類別中的成員公開給 VBA，或在 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 專案中將非主項目類別中的成員公開給 VBA。 此選項可讓您更彈性地選擇要公開給 VBA 的類別，但它也需要更多的手動步驟。
 
@@ -117,10 +119,10 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
   如需詳細指示，請參閱 [如何：公開程式碼給 Visual Basic 專案中的 vba](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) 和 [如何：將程式碼公開給 Visual C&#35; 專案中的 vba](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。
 
-  **EnableVbaCallers** 和 **ReferenceAssemblyFromVbaProject** 屬性都只在設計階段的 [屬性] **** 視窗使用，不能用在執行階段。 若要檢視屬性，請在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]開啟主項目的設計工具。 如需有關設定這些屬性時 Visual Studio 執行之特定工作的詳細資訊，請參閱 [主專案屬性所執行](#PropertyTasks)的工作。
+  **EnableVbaCallers** 和 **ReferenceAssemblyFromVbaProject** 屬性都只在設計階段的 [屬性]  視窗使用，不能用在執行階段。 若要檢視屬性，請在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]開啟主項目的設計工具。 如需有關設定這些屬性時 Visual Studio 執行之特定工作的詳細資訊，請參閱 [主專案屬性所執行](#PropertyTasks)的工作。
 
 > [!NOTE]
-> 如果活頁簿或文件尚未包含 VBA 程式碼，或文件中的 VBA 程式碼不受信任而無法執行，當您將 **EnableVbaCallers** 或 **ReferenceAssemblyFromVbaProject** 屬性設為 **True**時會收到錯誤訊息。 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。
+> 如果活頁簿或文件尚未包含 VBA 程式碼，或文件中的 VBA 程式碼不受信任而無法執行，當您將 **EnableVbaCallers** 或 **ReferenceAssemblyFromVbaProject** 屬性設為 **True** 時會收到錯誤訊息。 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。
 
 ## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>使用 VBA 程式碼中的成員呼叫自訂群組件
  在您設定專案以讓 VBA 程式碼呼叫自訂組件之後，Visual Studio 會將下列成員加入文件中的 VBA 專案：
@@ -213,17 +215,17 @@ GetManagedClass(pdispInteropObject Object) As Object
 
 3. 它會將主項目的 **ReferenceAssemblyFromVbaProject** 屬性設為 **True**。
 
-   當您將 **EnableVbaCallers** 屬性設回 **False**時，Visual Studio 會執行下列工作：
+   當您將 **EnableVbaCallers** 屬性設回 **False** 時，Visual Studio 會執行下列工作：
 
 4. 它會從 <xref:Microsoft.VisualBasic.ComClassAttribute> 類別移除 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 和 `ThisDocument` 屬性。
 
 5. 它會從主項目類別移除 **GetAutomationObject** 方法。
 
    > [!NOTE]
-   > Visual Studio 不會自動將 **ReferenceAssemblyFromVbaProject** 屬性設回 **False**。 您可以使用 [屬性] **** 視窗，手動將此屬性設定為 **False** 。
+   > Visual Studio 不會自動將 **ReferenceAssemblyFromVbaProject** 屬性設回 **False**。 您可以使用 [屬性]  視窗，手動將此屬性設定為 **False** 。
 
 ### <a name="referenceassemblyfromvbaproject"></a>ReferenceAssemblyFromVbaProject
- 當 Visual Basic 或 Visual C# 專案中的任何主項目的 **ReferenceAssemblyFromVbaProject** 屬性設為 **True**時，Visual Studio 會執行下列工作：
+ 當 Visual Basic 或 Visual C# 專案中的任何主項目的 **ReferenceAssemblyFromVbaProject** 屬性設為 **True** 時，Visual Studio 會執行下列工作：
 
 1. 它會為自訂組件產生類型程式庫，並將類型程式庫內嵌在組件中。
 
@@ -233,7 +235,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 
    - Microsoft Visual Studio Tools for Office Execution Engine 9.0 類型程式庫。 這個類型程式庫已包括在 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中。
 
-   當 **ReferenceAssemblyFromVbaProject** 屬性設回 **False**時，Visual Studio 會執行下列工作：
+   當 **ReferenceAssemblyFromVbaProject** 屬性設回 **False** 時，Visual Studio 會執行下列工作：
 
 3. 它會從文件中的 VBA 專案移除類型程式庫參考。
 

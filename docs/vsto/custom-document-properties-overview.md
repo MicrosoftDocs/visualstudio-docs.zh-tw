@@ -1,5 +1,7 @@
 ---
 title: 自訂文件屬性總覽
+description: 瞭解當您建立檔層級專案時，Visual Studio 會將兩個自訂屬性加入至專案中的檔。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d9fd14753f447b929faf5aecd37277529e0dd19
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8c30e0b3253e19316eed24fa26500cd55a3dd515
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298467"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847789"
 ---
 # <a name="custom-document-properties-overview"></a>自訂文件屬性總覽
 
@@ -40,15 +42,15 @@ ms.locfileid: "92298467"
 
  \_AssemblyLocation 屬性值可以有不同的格式，視解決方案的部署方式而定：
 
-- 如果從網站、UNC 路徑或 CD 或 USB 磁片磁碟機發行方案，則 _AssemblyLocation 屬性的格式為*DeploymentManifestPath* | *SolutionID*。 下列字串為範例：
+- 如果從網站、UNC 路徑或 CD 或 USB 磁片磁碟機發行方案，則 _AssemblyLocation 屬性的格式為 *DeploymentManifestPath* | *SolutionID*。 下列字串為範例：
 
      file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
 
-- 如果您是從 Visual Studio 執行或錯用方案，則 _AssemblyLocation 屬性的格式為*DeploymentManifestName* | *SolutionID*| vstolocal。 下列字串為範例：
+- 如果您是從 Visual Studio 執行或錯用方案，則 _AssemblyLocation 屬性的格式為 *DeploymentManifestName* | *SolutionID*| vstolocal。 下列字串為範例：
 
      Excelworkbook1.xlsx.log vsto | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9 | vstolocal
 
-  *SolutionID*是 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 用來識別方案的 GUID。 當您建立專案時，會自動產生 *SolutionID* 。 **Vstolocal**字詞會向指出 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 應該從與檔相同的資料夾載入元件。
+  *SolutionID* 是 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 用來識別方案的 GUID。 當您建立專案時，會自動產生 *SolutionID* 。 **Vstolocal** 字詞會向指出 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 應該從與檔相同的資料夾載入元件。
 
 ## <a name="see-also"></a>另請參閱
 

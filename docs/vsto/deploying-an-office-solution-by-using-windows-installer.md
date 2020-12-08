@@ -1,5 +1,7 @@
 ---
 title: 使用 Windows Installer 部署 Office 方案
+description: 藉由使用 Visual Studio 建立 Windows Installer，您可以部署需要終端使用者電腦之系統管理存取權的 Office 方案。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1336af7469b030492b486004940b730d372760bb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c001b3ce308c9e991cee747bdcab3ad646b226ab
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807959"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847113"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 方案
 
@@ -87,7 +89,7 @@ ms.locfileid: "90807959"
 
 1. 在功能表列上 **，選擇 [** 檔案  >  **新增**  >  **專案**]。
 
-   此時會開啟 [新增專案]**** 對話方塊。
+   此時會開啟 [新增專案] 對話方塊。
 
 2. 在範本窗格中，展開 [ **其他專案類型**]，然後選擇 [ **安裝和部署** ] 範本。
 
@@ -105,7 +107,7 @@ ms.locfileid: "90807959"
 
 1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中，開啟要部署的 Office 專案。
 
-   與這個主題相關聯的 VSTO 增益集範例包含名為 **ExcelAddIn**的專案。 文件層級自訂範例包含名為 **ExcelWorkbook**的專案。 本主題會使用這兩個名稱之一，談及您方案中的 Office 專案。
+   與這個主題相關聯的 VSTO 增益集範例包含名為 **ExcelAddIn** 的專案。 文件層級自訂範例包含名為 **ExcelWorkbook** 的專案。 本主題會使用這兩個名稱之一，談及您方案中的 Office 專案。
 
 2. 在功能表列上 **，選擇 [** 檔案  >  **加入**  >  **新專案**]。
 
@@ -117,7 +119,7 @@ ms.locfileid: "90807959"
 
    您所建立的 InstallShield 安裝專案會出現在您的解決方案中。
 
-   本主題的範例包含名為 **OfficeAddInSetup**的安裝專案。 本主題會使用同一個名稱，談及您方案中的安裝專案。
+   本主題的範例包含名為 **OfficeAddInSetup** 的安裝專案。 本主題會使用同一個名稱，談及您方案中的安裝專案。
 
 ## <a name="add-the-project-output"></a><a name="Add"></a>加入專案輸出
 
@@ -179,7 +181,7 @@ ms.locfileid: "90807959"
 
 ### <a name="add-the-visual-studio-2010-tools-for-office-runtime"></a><a name="AddToolsForOffice"></a>加入 Visual Studio 2010 Tools for Office Runtime
 
-[ **Redistributables** ] 頁面包含名為 **Microsoft VSTO 2010 Runtime**的項目，不過這指的是較舊版的執行階段。 因此，您或許可以手動建立參考最新版本的組態檔。 然後您必須針對出現在 [ **Redistributables** ] 頁面上的所有的其他項目，將該檔案置入其組態檔所在的目錄中。
+[ **Redistributables** ] 頁面包含名為 **Microsoft VSTO 2010 Runtime** 的項目，不過這指的是較舊版的執行階段。 因此，您或許可以手動建立參考最新版本的組態檔。 然後您必須針對出現在 [ **Redistributables** ] 頁面上的所有的其他項目，將該檔案置入其組態檔所在的目錄中。
 
 #### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>將適用于 Office runtime 的 Visual Studio 2010 工具新增為先決條件
 
@@ -209,18 +211,18 @@ ms.locfileid: "90807959"
 
 4. 在 [記事本] 中，貼上 GUID 以取代文字 **Your GUID goes here** 。
 
-   檔案的** &lt; properties &gt; **元素如下所示。
+   檔案的 **&lt; properties &gt;** 元素如下所示。
 
    ```xml
    <properties Id="{87989B73-21DC-4403-8FD1-0C68A41A6D8C}" Description="This prerequisite installs the most recent version of the Microsoft Visual Studio 2010 Tools for Office Runtime." >
    </properties>
    ```
 
-5. 在 [記事本] 的功能表列上 **，選擇 [**  >  **儲存**盤案]。
+5. 在 [記事本] 的功能表列上 **，選擇 [**  >  **儲存** 盤案]。
 
 6. 在 [ **另存新檔** ] 對話方塊中，瀏覽至 [ **桌面** ] 資料夾。
 
-7. 在 [檔 **類型** ] 清單中，選擇 [所有檔案] ** ( # A0. &#42;) **。
+7. 在 [檔 **類型** ] 清單中，選擇 [所有檔案] **( # A0. &#42;)**。
 
 8. 在 [ **檔案名稱** ] 方塊中，輸入 **Visual Studio 2010 Tools for Office Runtime.prq**，然後選擇 [ **儲存** ] 按鈕。
 
@@ -231,9 +233,9 @@ ms.locfileid: "90807959"
 
 10. 從您的 **桌面** 資料夾，將 *適用于 Office runtime.prq 的 Visual Studio 2010 工具* 複製到電腦上的下列其中一個目錄。
 
-   若為32位作業系統： *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\ *
+   若為32位作業系統： *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\*
 
-   若為64位作業系統： *% ProgramFiles (x86) % \ \2013le\setupprerequisites\ \ \2013le\setupprerequisites\ \\ *
+   若為64位作業系統： *% ProgramFiles (x86) % \ \2013le\setupprerequisites\ \ \2013le\setupprerequisites\ \\*
 
 11. 在 InstallShield 專案的 [ **可轉散發套件** ] 頁面上，選擇 [ **重新整理** ] 按鈕以重新整理可轉散發元件清單，如下圖所示。
 
@@ -279,7 +281,7 @@ ms.locfileid: "90807959"
 
 3. 在 [ **AllUSERS** ] 屬性的清單中，指定您要為電腦的所有使用者安裝此方案，還是只為安裝方案的使用者安裝。
 
-   若要為目前使用者安裝 VSTO 增益集，請選擇 [ **ALLUSERS = "" (每位使用者安裝) **。 若要為電腦上所有使用者安裝 VSTO 增益集，請選擇 [ALLUSERS=1 (每一使用者安裝)] ****
+   若要為目前使用者安裝 VSTO 增益集，請選擇 [ **ALLUSERS = "" (每位使用者安裝)**。 若要為電腦上所有使用者安裝 VSTO 增益集，請選擇 [ALLUSERS=1 (每一使用者安裝)] 
 
    在下一個程式中，您將建立登錄機碼，讓 Office 應用程式能夠探索和載入 VSTO 增益集。 請參閱 [VSTO 增益集的登錄專案](../vsto/registry-entries-for-vsto-add-ins.md)。
 
@@ -303,21 +305,21 @@ ms.locfileid: "90807959"
 
    **個別使用者安裝程式**
 
-   **HKEY_CURRENT_USER \Software\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**
+   **HKEY_CURRENT_USER\Software\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**
 
    **根據 Office 版本的每部電腦安裝程式**
 
 | Office 版本<br /><br /> | InstallShield 組態路徑<br /><br /> |
 |----------------------------| - |
-| 32 位元<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 位) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 位元<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (64 位) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 位元<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 位元<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **根據 Windows 版本的每部電腦安裝程式**
 
 | Windows 版本<br /><br /> | InstallShield 組態路徑<br /><br /> |
 |-----------------------------| - |
-| 32 位元<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 位) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 位元<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 位) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE \SOFTWARE (64 位) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 位元<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 位元<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > 64位 Windows 的安裝程式需要兩個登錄路徑，因為使用者可以在執行64位 Windows 的電腦上執行32位和64位版本的 Office。
@@ -333,25 +335,25 @@ ms.locfileid: "90807959"
 
 7. 重複這個程序，建立下列值。
 
-|實值類型<br /><br />|[屬性]<br /><br />|
+|實值類型<br /><br />|名稱<br /><br />|
 |--------------|--------|
-|字串值<br /><br />|**友好**<br /><br />|
+|字串值<br /><br />|**FriendlyName**<br /><br />|
 |DWORD 值<br /><br />|**LoadBehavior**<br /><br />|
-|字串值<br /><br />|**清單**<br /><br />|
+|字串值<br /><br />|**file:///**<br /><br />|
 
 8. 開啟 **Description** 值的捷徑功能表，然後選擇 [ **修改**]。
 
    [ **編輯資料** ] 對話方塊隨即出現。
 
-9. 在 [數值資料] **** 文字方塊中，輸入 **Excel 示範增益集**，然後選擇 [確定] **** 按鈕。
+9. 在 [數值資料]  文字方塊中，輸入 **Excel 示範增益集**，然後選擇 [確定]  按鈕。
 
-   當使用者開啟 Office 應用程式，開啟 [選項] **** 對話方塊，然後在 [增益集] **** 窗格中選擇 VSTO 增益集時，就會顯示這段描述。
+   當使用者開啟 Office 應用程式，開啟 [選項]  對話方塊，然後在 [增益集]  窗格中選擇 VSTO 增益集時，就會顯示這段描述。
 
 10. 開啟 **FriendlyName** 值的捷徑功能表，然後選擇 [ **修改**]。
 
    [ **編輯資料** ] 對話方塊隨即出現。
 
-11. 在 [數值資料] **** 文字方塊中，輸入 **Excel 示範增益集**，然後選擇 [確定] **** 按鈕。
+11. 在 [數值資料]  文字方塊中，輸入 **Excel 示範增益集**，然後選擇 [確定]  按鈕。
 
    這個字串會出現在 Office 應用程式的 [ **COM 增益集** ] 對話方塊中。 根據預設，字串的值是 VSTO 增益集 ID。
 
@@ -359,7 +361,7 @@ ms.locfileid: "90807959"
 
    [ **編輯資料** ] 對話方塊隨即出現。
 
-13. 在 [數值資料] **** 文字方塊中輸入 **3**，然後選擇 [確定] **** 按鈕。
+13. 在 [數值資料]  文字方塊中輸入 **3**，然後選擇 [確定]  按鈕。
 
    值為 3，會在應用程式啟動時載入 VSTO 增益集。 如需 LoadBehavior 值的詳細資訊，請參閱 [VSTO 增益集的登錄專案](../vsto/registry-entries-for-vsto-add-ins.md)。
 
@@ -367,9 +369,9 @@ ms.locfileid: "90807959"
 
    [ **編輯資料** ] 對話方塊隨即出現。
 
-15. 在 [數值資料] **** 文字方塊中，輸入 **file:///[INSTALLDIR]ExcelAddIn.vsto|vstolocal**，然後選擇 [確定] **** 按鈕。
+15. 在 [數值資料]  文字方塊中，輸入 **file:///[INSTALLDIR]ExcelAddIn.vsto|vstolocal**，然後選擇 [確定]  按鈕。
 
-   Visual Studio 2010 Tools for Office Runtime 使用這個路徑尋找部署資訊清單。 這個路徑的 **[INSTALLDIR]** 部分是巨集，對應到 InstallShield 安裝專案 [一般資訊] **** 屬性頁中的 **INSTALLDIR** 屬性。 這個屬性會指定目標電腦上要安裝 VSTO 增益集的位置。 **|vstolocal** 後置字元可以確保方案是從安裝資料夾載入，而不是從 ClickOnce 快取載入。
+   Visual Studio 2010 Tools for Office Runtime 使用這個路徑尋找部署資訊清單。 這個路徑的 **[INSTALLDIR]** 部分是巨集，對應到 InstallShield 安裝專案 [一般資訊]  屬性頁中的 **INSTALLDIR** 屬性。 這個屬性會指定目標電腦上要安裝 VSTO 增益集的位置。 **|vstolocal** 後置字元可以確保方案是從安裝資料夾載入，而不是從 ClickOnce 快取載入。
 
 > [!IMPORTANT]
 > 如果您在 Outlook 的 VSTO 增益集中建立自訂表單區域，則必須建立更多登錄專案，才能向 Outlook 註冊區域。 如需詳細資訊，請參閱 [Outlook 表單區域的登錄專案](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries)。
@@ -392,7 +394,7 @@ ms.locfileid: "90807959"
 
 3. 在 [ **Windows**] 的專案類型清單中，選擇 [ **主控台應用程式** ] 範本。
 
-4. 將專案命名為 **SetExcelDocumentProperties**，然後選擇 [確定] **** 按鈕。
+4. 將專案命名為 **SetExcelDocumentProperties**，然後選擇 [確定]  按鈕。
 
 5. 在 [ **方案總管**] 中，選擇 [ **顯示所有檔案** ] 按鈕，開啟 [ **SetExcelDocumentProperties** ] 專案節點的捷徑功能表，然後選擇 [ **加入參考**]。
 
@@ -440,7 +442,7 @@ ms.locfileid: "90807959"
    > [!NOTE]
    > 只有少數幾個出現在此清單中的事件可在 InstallShield 限量版中使用。 在此程式中，您將會使用 **After Setup Complete Success dialog** 事件來執行程式。
 
-8. 在事件清單的 **Custom Actions During Installation**底下，開啟 **After Setup Complete Success dialog** 事件的捷徑功能表，然後選擇 [ **新增 EXE**]。
+8. 在事件清單的 **Custom Actions During Installation** 底下，開啟 **After Setup Complete Success dialog** 事件的捷徑功能表，然後選擇 [ **新增 EXE**]。
 
    名為 **NewCustomAction1** 的自訂動作出現在 **After Setup Complete Success dialog** 事件底下。 自訂動作的一組屬性出現在窗格中事件旁邊。
 
@@ -453,7 +455,7 @@ ms.locfileid: "90807959"
 
 11. 在 [ **瀏覽目的檔案** ] 對話方塊中，瀏覽至 **SetExcelDocumentProperties.Primary.output** 檔案，然後選擇 [ **開啟** ] 按鈕。
 
-    這個檔案的位置取決於您為安裝專案的 **INSTALLDIR** 屬性指定的資料夾。 例如，如果您將該屬性設定為名稱是 **[PersonalFolder]DemoWorkbookApp**的資料夾，您可以瀏覽至 **[ProgramFilesFolder]\DemoWorkbookApp** 找到 **SetExcelDocumentProperties.Primary.output**檔案。
+    這個檔案的位置取決於您為安裝專案的 **INSTALLDIR** 屬性指定的資料夾。 例如，如果您將該屬性設定為名稱是 **[PersonalFolder]DemoWorkbookApp** 的資料夾，您可以瀏覽至 **[ProgramFilesFolder]\DemoWorkbookApp** 找到 **SetExcelDocumentProperties.Primary.output** 檔案。
 
     在接下來的幾個步驟中，您將會取得檔的解決方案識別碼，然後將該識別碼作為參數傳遞給主控台應用程式。 您也會傳遞檔、部署資訊清單和檔元件的位置。
 
@@ -463,11 +465,11 @@ ms.locfileid: "90807959"
 
 13. 在 [記事本] 中開啟方案的專案檔。 針對 Visual Basic 專案，檔案的名稱為 *ExcelWorkbook. vbproj*。 針對 c # 專案，檔案的名稱是 *ExcelWorkbook .csproj*。
 
-14. 在專案檔中，搜尋** &lt; SolutionID &gt; **元素、將其值複製到剪貼簿，然後關閉 [記事本]。
+14. 在專案檔中，搜尋 **&lt; SolutionID &gt;** 元素、將其值複製到剪貼簿，然後關閉 [記事本]。
 
     您會將這個值傳入主控台應用程式做為參數。
 
-15. 在 **NewCustomAction1**的屬性頁中，將 [ **命令列** ] 屬性設定為下列一行文字。
+15. 在 **NewCustomAction1** 的屬性頁中，將 [ **命令列** ] 屬性設定為下列一行文字。
 
    ```cmd
    /assemblyLocation="[INSTALLDIR]ExcelWorkbook.dll" /deploymentManifestLocation="[INSTALLDIR]ExcelWorkbook.vsto" /documentLocation="[INSTALLDIR]ExcelWorkbook.xlsx" /solutionID="Your Solution ID"
@@ -476,7 +478,7 @@ ms.locfileid: "90807959"
 16. 將 **Your Solution ID** 取代為您已複製到剪貼簿的方案 ID。
 
    > [!IMPORTANT]
-   > 測試您的安裝程式，確認這個自訂動作執行的主控台應用程式可以存取 [INSTALLDIR] 目錄中的文件。 使用者電腦上的某些目錄可能需要系統管理存取權 (例如，[Program Files] 目錄) 。 如果您要將方案部署到需要系統管理存取權的目錄，您應該開啟*setup.exe*檔案**的 [內容**] 對話方塊，選擇 [**相容性**] 索引標籤，然後在散發安裝程式之前選取 [**以系統管理員身分執行此程式**] 核取方塊。 如果您不想讓使用者以系統管理許可權執行安裝程式，請將 [INSTALLDIR] 屬性設定為使用者可能已經有存取權的目錄，例如 **Documents** 目錄。 如需詳細資訊，請參閱本主題的 [指定在使用者電腦上安裝方案的位置](#Location) 一節。
+   > 測試您的安裝程式，確認這個自訂動作執行的主控台應用程式可以存取 [INSTALLDIR] 目錄中的文件。 使用者電腦上的某些目錄可能需要系統管理存取權 (例如，[Program Files] 目錄) 。 如果您要將方案部署到需要系統管理存取權的目錄，您應該開啟 *setup.exe* 檔案 **的 [內容**] 對話方塊，選擇 [**相容性**] 索引標籤，然後在散發安裝程式之前選取 [**以系統管理員身分執行此程式**] 核取方塊。 如果您不想讓使用者以系統管理許可權執行安裝程式，請將 [INSTALLDIR] 屬性設定為使用者可能已經有存取權的目錄，例如 **Documents** 目錄。 如需詳細資訊，請參閱本主題的 [指定在使用者電腦上安裝方案的位置](#Location) 一節。
 
 ## <a name="build-the-setup-project"></a><a name="Build"></a>Build the Setup Project
 
@@ -500,7 +502,7 @@ ms.locfileid: "90807959"
 
 9. 在功能表列上，選擇 [**組建**  >  **組建 officeaddinsetup]**]。
 
-   組建完成後，您可以在下列位置找到**officeaddinsetup]** 專案的*setup.exe*檔案： <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\ **
+   組建完成後，您可以在下列位置找到 **officeaddinsetup]** 專案的 *setup.exe* 檔案： <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\**
 
 ## <a name="see-also"></a>另請參閱
 

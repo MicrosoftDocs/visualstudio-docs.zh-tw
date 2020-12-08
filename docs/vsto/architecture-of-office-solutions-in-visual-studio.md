@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 中的 Office 方案架構
+description: 瞭解在 Visual Studio 中使用 Microsoft Office 開發人員工具所建立的解決方案，以及它們的運作方式。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ca40ed18639caae3250ddc1dc2a664b11780f7a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551872"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847581"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio 中的 Office 方案架構
   本節中的主題提供有關使用 Visual Studio 中之 Office Developer Tools 建立方案之運作方式的資訊。

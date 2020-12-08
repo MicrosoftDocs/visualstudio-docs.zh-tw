@@ -1,7 +1,8 @@
 ---
 title: 如何：安裝 Visual Studio Tools for Office 執行時間可轉散發套件
+description: 瞭解如何安裝 Microsoft Visual Studio 2010 Tools for Office runtime 可轉散發套件。
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ef71de75be5977ab80cbdd85448daa5de381c077
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8fce7cc0fdbba49e0e247a6a65336105e149b6d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547221"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846528"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>如何：安裝 Visual Studio Tools for Office 執行時間可轉散發套件
   您必須在執行使用中的 Microsoft Office 開發人員工具所建立之方案的每部電腦上，安裝 Visual Studio 2010 Tools for Office runtime [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 當您安裝 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 Microsoft Office 時，此執行階段會自動安裝。 如需詳細資訊，請參閱 [Visual Studio Tools for Office 執行時間安裝案例](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。

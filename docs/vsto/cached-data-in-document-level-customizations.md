@@ -1,5 +1,7 @@
 ---
 title: 檔層級自訂中的快取資料
+description: 瞭解如何在檔層級自訂中將資料內嵌為數據快取，Visual Studio 如何分隔資料。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,17 +20,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9985dd25ba62cc9c0735a8a8f4008a4c0abe0558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238344"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847893"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>檔層級自訂中的快取資料
   檔層級自訂的主要目標是將資料與 Office 檔中的 view 分開。 資料指的是儲存在檔中的資訊，包括數位和文字。 View 指的是使用者介面以及 Microsoft Office Word 和 Microsoft Office Excel 的物件模型。
 
- Visual Studio 可將資料內嵌為 *資料島*（也稱為 *資料*快取），藉以將資料從檔層級自訂中的視圖區隔開。 您可以直接讀取或修改資料，而不需要啟動 Word 或 Excel。 當您需要修改未安裝 Microsoft Office 之伺服器上檔的資料時，這會很有用。 Word 和 Excel 的用途是在用戶端環境中使用;它們並非設計來在伺服器上執行。
+ Visual Studio 可將資料內嵌為 *資料島*（也稱為 *資料* 快取），藉以將資料從檔層級自訂中的視圖區隔開。 您可以直接讀取或修改資料，而不需要啟動 Word 或 Excel。 當您需要修改未安裝 Microsoft Office 之伺服器上檔的資料時，這會很有用。 Word 和 Excel 的用途是在用戶端環境中使用;它們並非設計來在伺服器上執行。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 

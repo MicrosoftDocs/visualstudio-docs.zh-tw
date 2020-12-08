@@ -1,5 +1,7 @@
 ---
 title: 將網頁與 Outlook 資料夾產生關聯
+description: 瞭解如何將網頁與 Microsoft Office Outlook 資料夾產生關聯。 此範例會檢查 Outlook 中名為 HtmlView 的資料夾。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35eb2dc3b1b595a4bf960af67ac5006cd9839c6e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e4c2ee5e6494023ee3d5bca97f96ad3c8fe35517
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585336"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847503"
 ---
 # <a name="associate-a-web-page-with-an-outlook-folder"></a>將網頁與 Outlook 資料夾產生關聯
 

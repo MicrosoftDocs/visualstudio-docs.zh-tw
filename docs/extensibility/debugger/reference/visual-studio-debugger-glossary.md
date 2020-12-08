@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 偵錯工具詞彙 |Microsoft Docs
+description: 本文說明 Visual Studio 偵錯工具中使用的數個詞彙，例如系結中斷點、因果和程式碼內容。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 954532311fe6b63fc288877a6d41722e6ea47581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a01a6ad0e23af04001e9b0990be57d78e84c7241
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713352"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847061"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Visual Studio 偵錯工具字彙
 以下是在調試 SDK 中使用的術語 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
@@ -56,7 +58,7 @@ ms.locfileid: "80713352"
 
   處理實體 Win32 進程。 一個進程可以包含多個程式。 另請參閱 *程式*。
 
-  為在特定執行時間架構內執行的單一命名空間進行程式設計。 另請參閱 *處理*程式。
+  為在特定執行時間架構內執行的單一命名空間進行程式設計。 另請參閱 *處理* 程式。
 
   會話 debug manager (SDM) 管理任意數量的偵測引擎，在任意數目的電腦上，對多個進程中的任何程式進行任何數目的偵錯工具。 在基本層級中，SDM 是偵錯工具引擎的多工器。 此外，SDM 也提供對 IDE 之偵錯工具的統一觀點。
 

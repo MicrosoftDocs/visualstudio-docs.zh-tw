@@ -1,5 +1,7 @@
 ---
 title: Office 專案中的協助工具
+description: 瞭解 Microsoft Office 專案如何包含許多協助工具功能，可讓您建立符合標準協助工具需求的自訂解決方案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de877ccc2d2a036bf03b0888a7edf455b17788a4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189627"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847360"
 ---
 # <a name="accessibility-in-office-projects"></a>Office 專案中的協助工具
 
@@ -33,7 +35,7 @@ Microsoft Visual Studio 和 Microsoft Office 包含許多協助工具功能，�
 ## <a name="accessibility-at-design-time"></a>設計階段的協助工具
 
 ### <a name="use-shortcut-keys-in-document-level-projects"></a>在檔層級專案中使用快速鍵
- 當 Microsoft Office Word 檔或 Microsoft Office Excel 活頁簿在 Visual Studio 中開啟時，一次只有一個應用程式會收到快速鍵命令。 根據預設，Visual Studio 會接收所有快速鍵命令，但是您可以在檔具有焦點時，在 [**選項**] 對話方塊的 [**鍵盤設定**] 頁面上選取 [**動態鍵盤**佈局]，讓 Word 或 Excel 接收它們。 如需詳細資訊，請參閱 [Microsoft Office Word 鍵盤、Microsoft Office 鍵盤設定、選項對話方塊](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md) 和 [Microsoft Office Excel 鍵盤、Microsoft Office 鍵盤設定、選項對話方塊](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)。
+ 當 Microsoft Office Word 檔或 Microsoft Office Excel 活頁簿在 Visual Studio 中開啟時，一次只有一個應用程式會收到快速鍵命令。 根據預設，Visual Studio 會接收所有快速鍵命令，但是您可以在檔具有焦點時，在 [**選項**] 對話方塊的 [**鍵盤設定**] 頁面上選取 [**動態鍵盤** 佈局]，讓 Word 或 Excel 接收它們。 如需詳細資訊，請參閱 [Microsoft Office Word 鍵盤、Microsoft Office 鍵盤設定、選項對話方塊](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md) 和 [Microsoft Office Excel 鍵盤、Microsoft Office 鍵盤設定、選項對話方塊](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)。
 
 ### <a name="display-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>在檔層級專案中顯示功能區的快速鍵
  在 Visual Studio 中開啟 Word 檔或 Excel 活頁簿時，您不能按 **Alt** 鍵來查看功能區上索引標籤和控制項的快速鍵。 若要在設計工具中開啟檔或活頁簿時查看快速鍵，請執行下列步驟。
@@ -44,11 +46,11 @@ Microsoft Visual Studio 和 Microsoft Office 包含許多協助工具功能，�
 
 2. 展開 [ **Office 工具** ] 節點，然後視需要選取 [ **Microsoft Office Excel 鍵盤** ] 或 [ **Microsoft Office Word 鍵盤**]。
 
-3. 選取 [ **動態鍵盤**佈局]。
+3. 選取 [ **動態鍵盤** 佈局]。
 
      此時會出現一則訊息，指出您必須重新開機 Visual Studio，變更才會生效。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定]。
 
 5. 重新開機 Visual Studio，然後重新開啟您的專案。
 
@@ -80,7 +82,7 @@ Visual Studio 與顯示模式有下列限制：
 
 - 當您將檔的縮放設定變更為100% 以外的任何值時，Word 檔或 Excel 工作表上的控制項將會停用。
 
-- 如果使用者變更電腦的協助工具選項來**使用高對比**，[**新增專案**] 對話方塊就不會正確地顯示控制項。
+- 如果使用者變更電腦的協助工具選項來 **使用高對比**，[**新增專案**] 對話方塊就不會正確地顯示控制項。
 
 您可以使用放大鏡來克服這些限制。 [放大鏡] 是 Windows 中的顯示公用程式，會建立顯示幕幕放大部分的個別視窗。
 

@@ -1,5 +1,7 @@
 ---
 title: Office 程式設計中的一般工作
+description: 瞭解如何在檔層級自訂中針對資料進行程式設計，而不需要使用 Microsoft Office Word 或 Office Excel 的物件模型。
+ms.custom: SEO-VS-2020SS
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c82b4dec0c92f19933b045040ed0f1fcecb5b10b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4f6fae2b7d446035a08e3fcb77bcffaaed6de3a9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809855"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846294"
 ---
 # <a name="common-tasks-in-office-programming"></a>Office 程式設計中的一般工作
   本主題旨在協助您找出下列類別之使用 Visual Studio 進行 Office 方案程式設計的相關常見問題解答。

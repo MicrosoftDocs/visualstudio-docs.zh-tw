@@ -1,5 +1,7 @@
 ---
 title: 建立 Outlook 表單區域
+description: 瞭解如何使用表單區域自訂 Microsoft Outlook 表單，以便更輕鬆地設計、開發及調試表單區域。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a999ca11427533690628fb92f28e93d22cf0971
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255907"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847958"
 ---
 # <a name="create-outlook-form-regions"></a>建立 Outlook 表單區域
   您可以使用表單區域自訂 Microsoft Office Outlook 表單。 Visual Studio 提供進階的工具，可讓您更方便地設計、開發和偵錯表單區域。
@@ -69,7 +71,7 @@ ms.locfileid: "71255907"
 
  使用此精靈指定要建立的表單區域類型。 下表將描述每一個表單區域類型。
 
-|區域類型|說明|
+|區域類型|描述|
 |-----------------|-----------------|
 |獨立|加入表單區域，做為 Outlook 表單中的新頁面。|
 |相鄰|附加表單區域至 Outlook 表單預設頁面的下方。|
@@ -78,7 +80,7 @@ ms.locfileid: "71255907"
 
  您也可以使用此精靈指定顯示條件以及選取要擴充的表單類型。 如需詳細資訊，請參閱 [如何：在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
 
- 您在精靈中所做的選擇會影響其他精靈頁面中提供的選項。 例如，如果您在 [**建立新的 Outlook 表單區域**] 頁面中選取 [**相鄰**] 或 [**獨立**]，則 [**提供描述文字] 和 [顯示喜好**設定] 頁面中的 [**標題**] 和 [**描述**] 欄位無法使用。 這是因為 Outlook 顯示相鄰或獨立表單區域時不會使用這些欄位。
+ 您在精靈中所做的選擇會影響其他精靈頁面中提供的選項。 例如，如果您在 [**建立新的 Outlook 表單區域**] 頁面中選取 [**相鄰**] 或 [**獨立**]，則 [**提供描述文字] 和 [顯示喜好** 設定] 頁面中的 [**標題**] 和 [**描述**] 欄位無法使用。 這是因為 Outlook 顯示相鄰或獨立表單區域時不會使用這些欄位。
 
 #### <a name="form-region-files"></a>表單區域檔案
  當您完成 [ **新的 Outlook 表單區域** ] 時，Visual Studio 會自動將下列檔案加入至您的專案：
@@ -97,14 +99,14 @@ ms.locfileid: "71255907"
 
  您可以藉由展開 **表單區域 Factory** 區域來尋找此類別。
 
- **新的 Outlook 表單區域**wizard 會將屬性新增至這個類別，以指定表單區域的內部名稱，以及顯示表單區域的訊息類別。 您可以在將檔案加入專案之後，手動修改這些屬性。
+ **新的 Outlook 表單區域** wizard 會將屬性新增至這個類別，以指定表單區域的內部名稱，以及顯示表單區域的訊息類別。 您可以在將檔案加入專案之後，手動修改這些屬性。
 
  大部分表單區域 Factory 類別是在表單區域設計工具檔案中實作。 不過，`FormRegionInitializing` 事件處理常式會在表單區域程式碼檔案中公開。 您可以使用這個事件處理常式指定 Outlook 是否應顯示表單區域。 如需詳細資訊，請參閱 [處理表單區域事件](#HandlingFormRegionEvents)。
 
 ### <a name="add-an-existing-form-region-to-your-project"></a><a name="AddingExistingFormRegion"></a> 將現有的表單區域新增至您的專案
- 如果在其他 Outlook 專案中有您使用的 Outlook 表單區域，則可使用 [加入現有項目] **** 對話方塊在目前的 Outlook VSTO 增益集專案中重複使用該表單區域。
+ 如果在其他 Outlook 專案中有您使用的 Outlook 表單區域，則可使用 [加入現有項目]  對話方塊在目前的 Outlook VSTO 增益集專案中重複使用該表單區域。
 
- 現有的表單區域必須有程式碼檔 (*.vb*或 *.cs*) ;您無法使用 [**加入現有專案**] 對話方塊，將 Outlook 表單儲存 (*.ofs*) 檔。 不過，您可以藉由匯入 Outlook 表單儲存區檔案建立新的表單區域。 如需詳細資訊，請參閱 [如何：在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
+ 現有的表單區域必須有程式碼檔 (*.vb* 或 *.cs*) ;您無法使用 [**加入現有專案**] 對話方塊，將 Outlook 表單儲存 (*.ofs*) 檔。 不過，您可以藉由匯入 Outlook 表單儲存區檔案建立新的表單區域。 如需詳細資訊，請參閱 [如何：在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
 
 ## <a name="use-the-form-region-designer"></a><a name="UsingFormRegionDesigner"></a> 使用表單區域設計工具
  [表單區域設計工具] 可協助您設計表單區域的配置和外觀。 您可以將 managed 控制項拖曳至設計工具的介面，按兩下控制項開啟事件處理常式，並在 [ **屬性** ] 視窗中設定屬性。
@@ -116,20 +118,20 @@ ms.locfileid: "71255907"
 
  開啟 [表單區域設計工具] 的方式有三種：
 
-- 在 **方案總管**中，按兩下表單區域程式碼檔案。
+- 在 **方案總管** 中，按兩下表單區域程式碼檔案。
 
-- 在 **方案總管**中，以滑鼠右鍵按一下表單區域程式碼檔案，然後按一下 [ **視圖設計**工具]。
+- 在 **方案總管** 中，以滑鼠右鍵按一下表單區域程式碼檔案，然後按一下 [ **視圖設計** 工具]。
 
-- 在 **方案總管**中，選取表單區域程式碼檔案，然後在 [ **View** ] 功能表上，按一下 [ **設計**工具]。
+- 在 **方案總管** 中，選取表單區域程式碼檔案，然後在 [ **View** ] 功能表上，按一下 [ **設計** 工具]。
 
   [表單區域設計工具] 只支援 Managed 控制項。 因此您無法加入原生 Outlook 控制項。
 
 ## <a name="import-a-form-region-designed-in-outlook"></a><a name="UsingFormRegionDesignedOutlook"></a> 匯入在 Outlook 中設計的表單區域
  當您在 Outlook 中設計時，可將原生 Outlook 控制項加入表單區域。 原生 Outlook 控制項可讓您在設計階段時繫結至 Outlook 資料。 不過，之後您就無法使用 [表單區域設計工具] 加入 Managed 控制項，或是變更表單區域的設計。
 
- 您可以使用 [ **新的 Outlook 表單區域** ] 嚮導，將表單區域匯入至 Outlook VSTO 增益集專案。 在 [ **選取您要如何建立表單區域** ] 頁面上，選取 [匯 **入 Outlook 表單儲存 ( .ofs) **檔。 然後，您可以流覽至 Outlook 表單儲存檔的位置， (*.ofs*) 檔。  (Outlook 會將表單區域儲存為 *.ofs* 檔案。 ) 
+ 您可以使用 [ **新的 Outlook 表單區域** ] 嚮導，將表單區域匯入至 Outlook VSTO 增益集專案。 在 [ **選取您要如何建立表單區域** ] 頁面上，選取 [匯 **入 Outlook 表單儲存 ( .ofs)** 檔。 然後，您可以流覽至 Outlook 表單儲存檔的位置， (*.ofs*) 檔。  (Outlook 會將表單區域儲存為 *.ofs* 檔案。 ) 
 
- **新的 Outlook 表單區域**wizard 會將 *.ofs*檔案複製到專案目錄，並將控制項參考加入表單區域設計工具檔案中。 然後您就可以在表單區域程式碼檔案中處理控制項事件。
+ **新的 Outlook 表單區域** wizard 會將 *.ofs* 檔案複製到專案目錄，並將控制項參考加入表單區域設計工具檔案中。 然後您就可以在表單區域程式碼檔案中處理控制項事件。
 
  若要在 Visual Basic 專案中處理事件，請從 [程式碼編輯器] 頂端的方法名稱清單選取事件。
 
@@ -176,7 +178,7 @@ ms.locfileid: "71255907"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[建立 Outlook 表單區域的指導方針](../vsto/guidelines-for-creating-outlook-form-regions.md)|提供資訊來協助您最佳化表單區域及避免發生可能的問題。|
 |[如何：在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|示範如何使用 [ **新的 Outlook 表單區域** ] wizard 建立表單區域，以擴充標準或自訂 Microsoft Office Outlook 表單。|

@@ -1,5 +1,7 @@
 ---
 title: 如何：將自訂 XML 元件加入至檔層級自訂
+description: 瞭解如何在檔層級自訂中建立自訂 XML 元件，以便將 XML 資料儲存在 Microsoft Office Excel 活頁簿或 Microsoft Office Word 檔中。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74bceeeabdaa46e6c1a35b5ab76de6a180d16d53
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9b2f3b4e72f9255099ed7190867faba5585ced4c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298455"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847426"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>如何：將自訂 XML 元件加入至檔層級自訂
   您可以在文件層級自訂中建立自訂 XML 組件，將 XML 資料儲存在 Microsoft Office Excel 活頁簿或 Microsoft Office Word 文件中。 如需詳細資訊，請參閱 [自訂 XML 元件總覽](../vsto/custom-xml-parts-overview.md)。

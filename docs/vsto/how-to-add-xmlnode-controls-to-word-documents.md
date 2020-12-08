@@ -1,5 +1,7 @@
 ---
 title: 如何：將 XMLNode 控制項新增至 Word 檔
+description: 瞭解當您將非重複的 XML 架構元素對應到 Microsoft Office Word 檔時，Visual Studio 會自動將 XMLNode 控制項新增至您的檔。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd0429374b175da3260c3605f39c90cf2dffb841
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b9deb6732552a827cb89465f6521bc566e8c46f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544894"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846736"
 ---
 # <a name="how-to-add-xmlnode-controls-to-word-documents"></a>如何：將 XMLNode 控制項新增至 Word 檔
   **重要** 本主題中有關 Microsoft Word 的資訊，只會提供給位於美國以外的個人和組織，或使用或正在開發的 microsoft word 產品（在2010年1月之前由 Microsoft 授權的 microsoft Word 產品），而 Microsoft 已從 Microsoft Word 移除與自訂 XML 相關的特定功能。 這項有關 Microsoft Word 的資訊，可能無法由美國的個人或組織、在2010年1月10日之後由 Microsoft 授權的 Microsoft Word 產品所使用的 microsoft word 產品或開發人員所使用;這些產品的行為不像在該日期之前授權的產品，或購買並授權在美國以外地區使用。
@@ -37,7 +39,7 @@ ms.locfileid: "85544894"
 1. 在 Visual Studio 設計工具的檔中，按一下功能區上的 [ **開發人員** ] 索引標籤。
 
     > [!NOTE]
-    > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
+    > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
 
 2. 在 [ **XML** ] 群組中，按一下 [ **架構**]。
 

@@ -1,5 +1,7 @@
 ---
 title: 如何：自訂內建索引標籤
+description: 瞭解如何將群組和控制項新增至內建索引標籤。內建索引標籤是已在 Microsoft Office 應用程式功能區上的索引標籤。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f73ec7a8555a5e5d569d4316ca619747550bf11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ac002b4c9ebacaf9cb522b583d6c4c9580b7bf2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547182"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846632"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>如何：自訂內建索引標籤
   您可以將群組和控制項加入至內建索引標籤。內建索引標籤是已在 Microsoft Office 應用程式功能區上的索引標籤。 例如，[ **資料** ] 索引標籤是 Excel 中的內建索引標籤。 當您建立自訂群組時，它會出現在索引標籤的最末端，但是您可以在索引標籤上任意移動群組。
@@ -30,10 +32,10 @@ ms.locfileid: "85547182"
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>在內建索引標籤加入群組
 
-1. 以滑鼠右鍵按一下 **方案總管**中的功能區程式碼檔案，然後按一下 [ **視圖設計**工具]。
+1. 以滑鼠右鍵按一下 **方案總管** 中的功能區程式碼檔案，然後按一下 [ **視圖設計** 工具]。
 
     > [!NOTE]
-    > 如果功能區程式碼檔案未出現在 **方案總管**中，您就必須將 **功能區專案** 加入至您的專案。 請參閱 [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。
+    > 如果功能區程式碼檔案未出現在 **方案總管** 中，您就必須將 **功能區專案** 加入至您的專案。 請參閱 [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。
 
 2. 以滑鼠右鍵按一下功能區設計工具中的任何索引標籤，然後按一下 [ **屬性**]。
 

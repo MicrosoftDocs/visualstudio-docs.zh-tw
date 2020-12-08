@@ -1,5 +1,7 @@
 ---
 title: 安全性問題 |Microsoft Docs
+description: 瞭解使用 Visual Studio 來對程式進行偵錯工具所需的許可權，包括遠端偵錯程式以及牽涉到其他服務的情況。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40898f5633eac374206ed40bfcac96d9c1c5b753
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 632150101b966e128e8a34636b01a369a1db5c64
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713056"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847607"
 ---
 # <a name="security-issues"></a>安全性問題
 若要使用 Visual Studio 來對程式進行偵錯工具，唯一需要的許可權，與開發人員執行程式所需的許可權相同。 這包括在大部分情況下進行遠端偵錯程式。 某些情況下，牽涉到其他服務（例如網際網路資訊服務）可能需要較高層級的許可權。

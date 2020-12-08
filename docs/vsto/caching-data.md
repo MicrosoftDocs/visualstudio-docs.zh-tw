@@ -1,5 +1,7 @@
 ---
 title: 快取資料
+description: 瞭解如何在檔層級自訂中快取資料物件，讓資料可以離線存取，或不開啟 Microsoft Office Word 或 Excel。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6e0f6d7fcf9920ddb8861712b7c5f8bf04506fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db22378477daffd4562a9d60c6b30bc7b96e58e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62939411"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847867"
 ---
 # <a name="cache-data"></a>快取資料
   您可以快取檔層級自訂中的資料物件，讓資料可以離線存取，或不開啟 Microsoft Office Word 或 Microsoft Office Excel。 若要快取物件，物件的資料類型必須符合特定需求。 .NET Framework 中的許多常見資料類型都符合這些需求，包括 <xref:System.String> 、 <xref:System.Data.DataSet> 和 <xref:System.Data.DataTable> 。
@@ -79,7 +81,7 @@ ms.locfileid: "62939411"
  如需詳細資訊，請參閱 [如何：快取受密碼保護檔中的資料](../vsto/how-to-cache-data-in-a-password-protected-document.md)。
 
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>將 null 值新增至資料快取時防止資料遺失
- 當您將物件加入至資料快取時，必須先將所有快取的物件初始化為非**null** 值，然後才儲存並關閉檔。 當儲存並關閉檔時，如果有任何快取物件具有 **null** 值，則 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會自動從資料快取中移除所有快取的物件。
+ 當您將物件加入至資料快取時，必須先將所有快取的物件初始化為非 **null** 值，然後才儲存並關閉檔。 當儲存並關閉檔時，如果有任何快取物件具有 **null** 值，則 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會自動從資料快取中移除所有快取的物件。
 
  如果您在設計階段使用屬性將具有 **null** 值的物件加入至資料快取 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> ，您可以使用 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 類別在開啟檔之前初始化快取的資料物件。 如果您想要在不安裝 Word 或 Excel 的伺服器上初始化快取的資料，在使用者開啟檔之前，這會很有用。 如需詳細資訊，請參閱 [存取伺服器檔中的資料](../vsto/accessing-data-in-documents-on-the-server.md)。
 

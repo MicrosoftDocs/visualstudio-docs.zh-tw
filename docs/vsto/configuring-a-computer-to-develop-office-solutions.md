@@ -1,5 +1,7 @@
 ---
 title: 設定電腦以開發 Office 方案
+description: 瞭解如何安裝支援的 Visual Studio 版本、.NET Framework 和 Microsoft Office，讓您可以建立適用于 Microsoft Office 的 VSTO 增益集和自訂。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a0304c217599e790b8cfa9e738245927336470e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3658f655c50c9d1a0775a8cc69dd65baf32d1408
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801837"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847256"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>設定電腦以開發 Office 方案
 
@@ -37,9 +39,9 @@ ms.locfileid: "88801837"
 
 - 確定電腦上已安裝 Microsoft Office 開發人員工具。
 
-     Office developer tools 是 Visual Studio 的選用元件，但會隨 Visual Studio 自動安裝。 如果您透過指定要安裝的功能來自訂 Visual Studio 安裝，請確定已在安裝期間選擇 [Microsoft Office Developer Tools] **** ，以安裝這些工具。
+     Office developer tools 是 Visual Studio 的選用元件，但會隨 Visual Studio 自動安裝。 如果您透過指定要安裝的功能來自訂 Visual Studio 安裝，請確定已在安裝期間選擇 [Microsoft Office Developer Tools]  ，以安裝這些工具。
 
-     若要確認已安裝這些工具，請啟動 Visual Studio 安裝程式，然後選擇 [ **修改** ] 按鈕。 選取 [Microsoft Office Developer Tools] **** 核取方塊，然後選擇 [更新] **** 按鈕。
+     若要確認已安裝這些工具，請啟動 Visual Studio 安裝程式，然後選擇 [ **修改** ] 按鈕。 選取 [Microsoft Office Developer Tools]  核取方塊，然後選擇 [更新]  按鈕。
 
 - 確定您不是執行隨用隨的 Office 版本，而是由隨用隨之執行。 請參閱 [如何：確認 Outlook 是否為電腦上的隨時執行應用程式](/previous-versions/office/developer/office-2010/ff864733(v=office.14))。
 

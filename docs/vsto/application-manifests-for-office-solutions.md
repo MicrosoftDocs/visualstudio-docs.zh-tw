@@ -1,5 +1,7 @@
 ---
 title: Office 方案的應用程式資訊清單
+description: 瞭解應用程式資訊清單是 XML 檔案，該檔案描述載入 Microsoft Office 方案中的元件。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -12,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6272f145ee2c7ef2a91cc635112e440e6404457
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a16d0f438d06cbfa48538bb3e370ed9b334ad16
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531504"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847919"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Office 方案的應用程式資訊清單
   應用程式資訊清單是描述載入至 Microsoft Office 方案之組件的 XML 檔案。 Visual Studio 中的 Microsoft Office 開發工具會使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md) 參考中定義的應用程式資訊清單架構。
 
  Office 方案的應用程式資訊清單會使用下列 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 項目和屬性。
 
-|項目|描述|屬性|
+|元素|描述|屬性|
 |-------------|-----------------|----------------|
 |[ &#40;ClickOnce 應用程式&#60;元件&#62; 元素&#41;](../deployment/assembly-element-clickonce-deployment.md)|必要。 最上層項目。|**manifestVersion**|
 |[&#60;ClickOnce 應用程式 &#40;的 assemblyIdentity&#62; 元素&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|必要。 識別 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 應用程式的主要組件。|**name**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **processorArchitecture**<br /><br /> **language**|
@@ -67,7 +69,7 @@ ms.locfileid: "85531504"
 </addIn>
 ```
 
-|項目|描述|屬性|
+|元素|描述|屬性|
 |-------------|-----------------|----------------|
 |[&#60;d&#62; 元素 &#40;Visual Studio 中的 Office 開發）&#41;](../vsto/customhostspecified-element-office-development-in-visual-studio.md)|必要。 將資訊清單特別標示為 Office 方案。|無|
 |[&#60;增益集&#62; 元素 &#40;Visual Studio 中的 Office 程式開發）&#41;](../vsto/addin-element-office-development-in-visual-studio.md)|必要。 將進入點儲存至單一命名空間。|無|

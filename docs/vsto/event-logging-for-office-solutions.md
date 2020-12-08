@@ -1,5 +1,7 @@
 ---
 title: Office 方案的事件記錄
+description: 瞭解如何使用 Windows 中的事件檢視器，查看 Visual Studio Tools for Office 執行時間所捕捉的例外狀況訊息。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74aaf7c1c07c349fa3669332a41e4e7d06ba86f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951928"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847763"
 ---
 # <a name="event-logging-for-office-solutions"></a>Office 方案的事件記錄
   在安裝或解除安裝 Office 方案時，您可以使用 Windows 的事件檢視器查看 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 擷取的例外狀況訊息。 您可以使用事件記錄器的這些訊息，解決安裝和部署問題。
@@ -28,7 +30,7 @@ ms.locfileid: "62951928"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="read-the-event-log"></a>讀取事件記錄檔
- 開啟 [事件檢視器] **** 並篩選出您要查看的事件。
+ 開啟 [事件檢視器]  並篩選出您要查看的事件。
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>若要讀取 Windows Server 2003 和 Windows XP 中的事件記錄檔
 
@@ -36,15 +38,15 @@ ms.locfileid: "62951928"
 
 2. 開始 **事件檢視器**。
 
-3. 在事件記錄檔清單中，選取 [應用程式] ****。
+3. 在事件記錄檔清單中，選取 [應用程式] 。
 
-4. 在 [檢視] **** 功能表上，按一下 [篩選] ****。
+4. 在 [檢視]  功能表上，按一下 [篩選] 。
 
-5. 在 [事件來源] **** 清單中，選取 [VSTO 4.0] ****。
+5. 在 [事件來源]  清單中，選取 [VSTO 4.0] 。
 
-6. 針對安裝事件，在 [事件識別碼] **** 方塊中輸入 **4096**。
+6. 針對安裝事件，在 [事件識別碼]  方塊中輸入 **4096**。
 
-7. 按一下 [確定] **** 以查看篩選過的檢視。
+7. 按一下 [確定]  以查看篩選過的檢視。
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>若要在 Windows 7、Windows Vista 和 Windows Server 2008 中讀取事件記錄檔
 
@@ -52,17 +54,17 @@ ms.locfileid: "62951928"
 
 2. 開始 **事件檢視器**。
 
-3. 展開 [Windows 記錄] ****。
+3. 展開 [Windows 記錄] 。
 
-4. 在事件記錄檔清單中，選取 [應用程式] ****。
+4. 在事件記錄檔清單中，選取 [應用程式] 。
 
-5. 在 [執行]**** 功能表上，按一下 [篩選目前的記錄]****。
+5. 在 [執行] 功能表上，按一下 [篩選目前的記錄]。
 
-6. 在 [事件來源] **** 清單中，選取 [VSTO 4.0] ****。
+6. 在 [事件來源]  清單中，選取 [VSTO 4.0] 。
 
-7. 針對安裝事件，在 [事件識別碼] **** 方塊中輸入 **4096**。
+7. 針對安裝事件，在 [事件識別碼]  方塊中輸入 **4096**。
 
-8. 按一下 [確定] **** 以查看篩選過的檢視。
+8. 按一下 [確定]  以查看篩選過的檢視。
 
    事件檢視器包含下列資訊：
 
@@ -84,17 +86,17 @@ ms.locfileid: "62951928"
 
 ### <a name="to-disable-the-event-log"></a>停用事件記錄檔
 
-1. 在 [控制台] 中，開啟 [系統] ****。
+1. 在 [控制台] 中，開啟 [系統] 。
 
 2. 按一下 [ **進階** ] 索引標籤上的 [ **環境變數**]。
 
-3. 在 [系統變數] **** 窗格中，按一下 [新增] ****。
+3. 在 [系統變數]  窗格中，按一下 [新增] 。
 
-4. 在 [新增系統變數] **** 對話方塊的 [變數名稱] **** 方塊中，輸入 **VSTO_EVENTLOGDISABLED** 。
+4. 在 [新增系統變數]  對話方塊的 [變數名稱]  方塊中，輸入 **VSTO_EVENTLOGDISABLED** 。
 
-5. 在 [變數值] **** 方塊中，輸入 **1**。
+5. 在 [變數值]  方塊中，輸入 **1**。
 
-6. 按一下 [確定]  。
+6. 按一下 [確定]。
 
 ## <a name="see-also"></a>另請參閱
 - [部署 Office 方案](../vsto/deploying-an-office-solution.md)

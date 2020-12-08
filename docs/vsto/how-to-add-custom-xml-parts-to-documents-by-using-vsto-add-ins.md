@@ -1,5 +1,7 @@
 ---
 title: 使用 VSTO 增益集將自訂 XML 元件新增至檔
+description: 瞭解如何在 VSTO 增益集中建立自訂 XML 元件，以便將 XML 資料儲存在下列類型的檔中。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92c00ea69069b7374f5f595cc6f198aac23d1f91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b153fe3e7c68ed6a8288ff69a30e16dd32c448a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538290"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847711"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>如何：使用 VSTO 增益集將自訂 XML 元件新增至檔
   您可以將 XML 資料儲存在下列類型的文件中，方法是在 VSTO 增益集中建立自訂 XML 組件：
@@ -67,7 +69,7 @@ ms.locfileid: "85538290"
 
 ## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>將自訂 XML 組件加入至 PowerPoint 簡報
 
-1. 將新的 <xref:Microsoft.Office.Core.CustomXMLPart> 物件加入至展示檔中 [_Presentation 的 CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) 集合。 <xref:Microsoft.Office.Core.CustomXMLPart> 包含您要儲存在簡報中的 XML 字串。
+1. 將新 <xref:Microsoft.Office.Core.CustomXMLPart> 物件加入至展示中的 [Microsoft.Office.Interop.PowerPoint._Presentation CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) 集合。 <xref:Microsoft.Office.Core.CustomXMLPart> 包含您要儲存在簡報中的 XML 字串。
 
      下列程式碼範例會將自訂 XML 組件加入至指定的簡報。
 
@@ -76,7 +78,7 @@ ms.locfileid: "85538290"
 
 2. 將 `AddCustomXmlPartToPresentation` 方法加入至 `ThisAddIn` 適用于 POWERPOINT 的 VSTO 增益集專案中的類別。
 
-3. 從專案中的其他程式碼呼叫方法。 例如，若要在使用者開啟簡報時建立自訂 XML 元件，請從 AfterPresentationOpen 事件的事件處理 [EApplication_Event](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) 程式呼叫方法。
+3. 從專案中的其他程式碼呼叫方法。 例如，若要在使用者開啟簡報時建立自訂 XML 元件，請從 [Microsoft.Office.Interop.PowerPoint.EApplication_Event AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) 事件的事件處理常式呼叫方法。
 
 ## <a name="robust-programming"></a>穩固程式設計
  為了簡單起見，這個範例使用定義為方法中區域變數的 XML 字串。 通常，您應從外部來源取得 XML，例如檔案或資料庫。

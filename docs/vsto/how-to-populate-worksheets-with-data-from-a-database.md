@@ -1,5 +1,7 @@
 ---
 title: 如何：使用資料庫中的資料填入工作表
+description: 瞭解如何在您的方案中使用物件中的資料，以及如何使用 Windows Forms 控制項來顯示工作表中的資料。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4252eac32540ac2d0b6e763b5b6e9cf0e2ac7055
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520116"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846437"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>如何：使用資料庫中的資料填入工作表
 
@@ -35,7 +37,7 @@ ms.locfileid: "85520116"
 
 1. 在 Visual Studio 中開啟 Excel 檔層級專案，並在設計工具中開啟工作表。
 
-2. 開啟 [資料來源] **** 視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱 [加入新的連接](../data-tools/add-new-connections.md)。
+2. 開啟 [資料來源]  視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱 [加入新的連接](../data-tools/add-new-connections.md)。
 
 3. 將您想要的欄位或資料表從 [ **資料來源** ] 視窗拖曳至工作表。
 
@@ -70,7 +72,7 @@ ms.locfileid: "85520116"
 ## <a name="see-also"></a>另請參閱
 
 - [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [新增資料來源](../data-tools/add-new-data-sources.md)
+- [新增新資料來源](../data-tools/add-new-data-sources.md)
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [如何：將物件的資料填入檔](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [如何：使用資料庫的資料填入檔](../vsto/how-to-populate-documents-with-data-from-a-database.md)
