@@ -1,5 +1,7 @@
 ---
 title: 結構和等位 |Microsoft Docs
+description: 本文將連結至 Visual Studio 偵錯工具中結構和等位的參考描述。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19d8f547d98488edffc6049be7619e5b5e921d93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1f477b46083b5abd5b8e93593cc728b660b58d9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713487"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845761"
 ---
 # <a name="structures-and-unions"></a>Structures and Unions
 以下是 Visual Studio 調試 SDK 中的結構和等位。
@@ -132,7 +134,7 @@ ms.locfileid: "80713487"
 
 - [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) 描述相對於 `this` Visual Basic) 中指標 (的位址 `Me` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg .h、sh. h 或 ee
 
  命名空間： VisualStudio

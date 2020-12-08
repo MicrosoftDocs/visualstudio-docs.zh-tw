@@ -1,5 +1,7 @@
 ---
 title: 如何：將功能區設計工具的功能區匯出至功能區 XML
+description: 瞭解自訂功能區時，您可以從設計工具將功能區匯出至功能區 XML，並直接編輯 XML。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,15 +21,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f39131eb7e3469d389ad2d50aaeb1ee97e3865b9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298431"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844136"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>如何：將功能區設計工具的功能區匯出至功能區 XML
-  **功能區 (的視覺化設計工具) **專案不支援所有可能的功能區自訂類型。 若要以先進的方式自訂功能區，您可以從設計工具將功能區匯出至功能區 XML，並直接編輯 XML。
+  **功能區 (的視覺化設計工具)** 專案不支援所有可能的功能區自訂類型。 若要以先進的方式自訂功能區，您可以從設計工具將功能區匯出至功能區 XML，並直接編輯 XML。
 
 > [!NOTE]
 > 並非所有的屬性值都會出現在功能區 XML 檔案中。 如需詳細資訊，請參閱 [功能區總覽](../vsto/ribbon-overview.md)。
@@ -36,7 +38,7 @@ ms.locfileid: "92298431"
 
 ### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>將功能區設計工具的功能區匯出至功能區 XML
 
-1. 以滑鼠右鍵按一下 **方案總管**中的功能區程式碼檔案，然後按一下 [ **視圖設計**工具]。
+1. 以滑鼠右鍵按一下 **方案總管** 中的功能區程式碼檔案，然後按一下 [ **視圖設計** 工具]。
 
 2. 以滑鼠右鍵按一下 [功能區設計工具]，然後按一下 [ **將功能區匯出到 XML**]。
 
@@ -44,11 +46,11 @@ ms.locfileid: "92298431"
 
 3. 在功能區程式碼類別中，找出以開頭的批註 `TODO:` 。
 
-4. 將這些批註中的程式碼區塊複製到 **ThisAddin**、 **ThisWorkbook**或 **ThisDocument** 類別，視您開發的方案類型而定。
+4. 將這些批註中的程式碼區塊複製到 **ThisAddin**、 **ThisWorkbook** 或 **ThisDocument** 類別，視您開發的方案類型而定。
 
      這段程式碼可讓 Microsoft Office 應用程式探索和載入您的自訂功能區。 如需詳細資訊，請參閱 [Ribbon XML](../vsto/ribbon-xml.md)。
 
-5. 在 **ThisAddin**、 **ThisWorkbook**或 **ThisDocument** 類別中，取消批註程式碼區塊。
+5. 在 **ThisAddin**、 **ThisWorkbook** 或 **ThisDocument** 類別中，取消批註程式碼區塊。
 
      在您取消批註程式碼之後，它應該會類似下列範例。 在此範例中，會呼叫功能區類別 `MyRibbon` 。
 

@@ -1,5 +1,7 @@
 ---
 title: 符號提供者介面 |Microsoft Docs
+description: 本文將連結至 Visual Studio SDK 的符號處理介面描述，此介面會在中斷模式期間評估呼叫堆疊中的變數。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7929ba36c76f0db1cabab087afe3590de509efff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715843"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845787"
 ---
 # <a name="symbol-provider-interfaces"></a>Symbol Provider Interfaces
 以下是的符號處理介面 [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] 。
@@ -25,7 +27,7 @@ ms.locfileid: "80715843"
 ## <a name="discussion"></a>討論
  在中斷模式期間，這些介面是用來評估呼叫堆疊中的變數。 它們只會在 (SP) 的 common language runtime 符號提供者上執行。
 
-|介面|實作為|說明|
+|介面|實作為|描述|
 |---------------|--------------------|-----------------|
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|表示專案的位址。|
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|代表專案的位址，提供處理序識別碼的存取權。|

@@ -1,5 +1,7 @@
 ---
 title: VSTO 增益集程式設計入門
+description: 瞭解如何使用 VSTO 增益集來自動化 Microsoft Office 的應用程式、擴充應用程式的功能，以及自訂應用程式的使用者介面。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cf3e8d59a2ced26f878da979fa87fc663b5bab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4e129de68d2a7f7690ba24acc92fb09400cfb2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253582"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845111"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO 增益集程式設計入門
   您可以使用 VSTO 增益集來自動化 Microsoft Office 應用程式、擴充應用程式的功能，以及自訂應用程式的使用者介面 (UI)。 如需 VSTO 增益集與您可以使用 Visual Studio 建立之其他類型 Office 方案相較之下的詳細資訊，請參閱 [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -33,7 +35,7 @@ ms.locfileid: "71253582"
  如需如何建立 VSTO 增益集專案的詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。 如需專案範本的詳細資訊，請參閱 [Office 專案範本總覽](../vsto/office-project-templates-overview.md)。
 
 ## <a name="develop-vsto-add-in-projects"></a>開發 VSTO 增益集專案
- 當您建立 VSTO 增益集專案時，Visual Studio 會在 c # *ThisAddIn.vb* ) 程式碼檔案的 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 或*ThisAddIn.cs* (中自動建立 ThisAddIn (。 這個檔案包含 `ThisAddIn` 類別，該類別會提供 VSTO 增益集的基礎。 載入或卸載 VSTO 增益集時，您可以使用這個類別的成員來執行程式碼，以存取主應用程式的物件模型及擴充應用程式的功能。 如需詳細資訊，請參閱 [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
+ 當您建立 VSTO 增益集專案時，Visual Studio 會在 c # *ThisAddIn.vb* ) 程式碼檔案的 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 或 *ThisAddIn.cs* (中自動建立 ThisAddIn (。 這個檔案包含 `ThisAddIn` 類別，該類別會提供 VSTO 增益集的基礎。 載入或卸載 VSTO 增益集時，您可以使用這個類別的成員來執行程式碼，以存取主應用程式的物件模型及擴充應用程式的功能。 如需詳細資訊，請參閱 [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
 
 ## <a name="automate-applications-by-using-the-object-models"></a>使用物件模型將應用程式自動化
  Microsoft Office 應用程式的物件模型公開許多您可以在 VSTO 增益集中進行程式設計的類型。 您可以使用這些類型將應用程式自動化。 例如，您可以在 Outlook 中以程式設計的方式建立和傳送電子郵件訊息，也可以在 Word 中開啟文件和加入內容。 如需如何在程式碼中存取主應用程式物件模型的詳細資訊，請參閱 [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
@@ -74,7 +76,7 @@ ms.locfileid: "71253582"
 
 - [逐步解說：建立 Excel 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 
-- [逐步解說：建立 Outlook 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [逐步解說：建立 Outlook 的第一個 VSTO Add-In](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
 
 - [逐步解說：建立 PowerPoint 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 

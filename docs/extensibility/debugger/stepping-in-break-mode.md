@@ -1,5 +1,7 @@
 ---
 title: 在中斷模式中逐步執行 |Microsoft Docs
+description: 深入瞭解偵錯工具處於中斷模式時所發生的進程。 偵錯工具必須接著逐步執行程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3161fc1c1ec8b44d96b3793198ac630ba2e32d67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80273bf470a3ed0c342e781085de6e991508451c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712850"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845189"
 ---
 # <a name="stepping-in-break-mode"></a>在中斷模式中逐步執行
 下一節將描述偵錯工具處於中斷模式，且必須逐步執行程式碼時所發生的進程：

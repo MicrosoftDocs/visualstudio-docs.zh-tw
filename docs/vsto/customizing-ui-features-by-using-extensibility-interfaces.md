@@ -1,5 +1,7 @@
 ---
 title: 使用擴充性介面自訂 UI 功能
+description: 瞭解 Visual Studio 中的 Office 開發工具提供可協助您自訂 UI 功能的擴充性介面。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07b62903388012dac3459c86011e349f8053762c
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 436f426eee6c90476997f416bab907c8e17f94cc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583836"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845618"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>使用擴充性介面自訂 UI 功能
   當您使用 Visual Studio 中的 Office 開發工具，在 VSTO 增益集中建立自訂工作窗格、功能區自訂和 Outlook 表單區域時，這些工具提供可處理許多實作詳細資料的類別和設計工具。 不過，如果您有特殊需求，也可以針對每項功能自行實作 *「擴充性介面」* (Extensibility Interface)。
@@ -45,7 +47,7 @@ ms.locfileid: "91583836"
 
 |介面|描述|應用程式|
 |---------------|-----------------|------------------|
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|實作這個介面可自訂功能區 UI。 **注意：**  您可以將 **功能區 (XML) ** 專案加入至專案，以在 VSTO 增益集中產生預設的 <xref:Microsoft.Office.Core.IRibbonExtensibility> 實值。 如需詳細資訊，請參閱 [Ribbon XML](../vsto/ribbon-xml.md)。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|實作這個介面可自訂功能區 UI。 **注意：**  您可以將 **功能區 (XML)** 專案加入至專案，以在 VSTO 增益集中產生預設的 <xref:Microsoft.Office.Core.IRibbonExtensibility> 實值。 如需詳細資訊，請參閱 [Ribbon XML](../vsto/ribbon-xml.md)。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|實作這個介面可建立自訂工作窗格。|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|實作這個介面可建立 Outlook 表單區域。|Outlook|
 
@@ -64,7 +66,7 @@ ms.locfileid: "91583836"
 - `TaskPaneUI` 類別提供工作窗格的 UI。 `TaskPaneUI` 類別的屬性讓 COM 可以看見該類別，進而讓 Microsoft Office 應用程式可以探索該類別。 在這個範例中，UI 是空的 <xref:System.Windows.Forms.UserControl>，但是您可以透過修改程式碼來加入控制項。
 
   > [!NOTE]
-  > 若要將 `TaskPaneUI` 類別公開至 COM，您也必須設定專案的 [註冊 COM Interop] **** 屬性。
+  > 若要將 `TaskPaneUI` 類別公開至 COM，您也必須設定專案的 [註冊 COM Interop]  屬性。
 
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]

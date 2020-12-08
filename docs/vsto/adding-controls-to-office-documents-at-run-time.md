@@ -1,5 +1,7 @@
 ---
 title: 在執行時間將控制項新增至 Office 檔
+description: 瞭解如何在執行時間將控制項加入 Microsoft Office Word 檔和 Microsoft Office Excel 活頁簿。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44bf1de5d550a264a63ba7293fe1bdc0c9630aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e971556605a120b4ef475f434390c6dcf7b17938
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986327"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844838"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>在執行時間將控制項新增至 Office 檔
   您可以在執行階段將控制項加入 Microsoft Office Word 文件與 Microsoft Office Excel 活頁簿中。 您也可以在執行階段加以移除。 您在執行階段加入或移除的控制項稱為 *動態控制項*。

@@ -1,5 +1,7 @@
 ---
 title: 開發 Office 方案的其他資源
+description: 瞭解您可以用來開發 Microsoft Office 應用程式延伸模組的其他資源。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bea9faa315fbd6ec41c667836dac7216f1f8f81
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 828cd2c451e531eeecda7574b5750bc3bb7023b2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986268"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844812"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>開發 Office 方案的其他資源
   Microsoft Office Developer Tools for Visual Studio 只代表許多擴充 Office 應用程式方式的其中之一。 Office 應用程式也有一些內建的功能，例如 Open XML 格式，是 Office Developer Tools for Visual Studio 或本文件未涵蓋者。

@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式存取 Outlook 連絡人
+description: 瞭解如何以程式設計方式存取 Outlook 連絡人。 此範例會尋找姓氏包含指定之搜尋字串的所有連絡人。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f6d64512af660392c10082e3bcd3c26b6bc6885
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68fe58f2f70a68c37d9171eb01f9294bb5e4d4af
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520090"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844683"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>如何：以程式設計方式存取 Outlook 連絡人
   此範例會尋找姓氏包含指定之搜尋字串的所有連絡人。

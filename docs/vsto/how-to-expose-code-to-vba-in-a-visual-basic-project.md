@@ -1,5 +1,7 @@
 ---
 title: 如何：將程式碼公開給 Visual Basic 專案中的 VBA
+description: 如果您想要讓兩種類型的程式碼彼此互動，請瞭解如何公開 Visual Basic 專案中的程式碼，以 Visual Basic for Applications (VBA) 程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8aa29fca9905c9f1ed056949eec64ad967323462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61f94ebb5ed0c5e76693ddc8c0717b6adf9222f3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544842"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845982"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>如何：將程式碼公開給 Visual Basic 專案中的 VBA
   [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]如果您想要讓兩種類型的程式碼彼此互動，您可以公開專案中的程式碼，以 Visual Basic for Applications (VBA) 程式碼。
@@ -63,9 +65,9 @@ ms.locfileid: "85544842"
      設定這個屬性之後，Visual Studio 會自動將 **ReferenceAssemblyFromVbaProject** 屬性設定為 **True**。
 
     > [!NOTE]
-    > 如果活頁簿或檔尚未包含 VBA 程式碼，或檔中的 VBA 程式碼不受信任而無法執行，當您將 **EnableVbaCallers** 屬性設定為 **True**時，您將會收到錯誤訊息。 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。
+    > 如果活頁簿或檔尚未包含 VBA 程式碼，或檔中的 VBA 程式碼不受信任而無法執行，當您將 **EnableVbaCallers** 屬性設定為 **True** 時，您將會收到錯誤訊息。 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。
 
-5. 按一下訊息中顯示的 [確定] **** 。 這則訊息會提醒您，如果您在執行專案時將 VBA 程式碼加入至活頁簿或檔，則在下次建立專案時，將會 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 遺失 vba 程式碼。 這是因為每次您建立專案時，就會覆寫組建輸出檔案夾中的檔。
+5. 按一下訊息中顯示的 [確定]  。 這則訊息會提醒您，如果您在執行專案時將 VBA 程式碼加入至活頁簿或檔，則在下次建立專案時，將會 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 遺失 vba 程式碼。 這是因為每次您建立專案時，就會覆寫組建輸出檔案夾中的檔。
 
      此時，Visual Studio 會設定專案，讓 VBA 專案可以呼叫元件。 Visual Studio 也會將名為的屬性加入 `CallVSTOAssembly` 至 `ThisDocument` `ThisWorkbook` `Sheet1` VBA 專案中的、、、 `Sheet2` 或 `Sheet3` 模組。 您可以使用這個屬性來存取您公開給 VBA 之類別的公用成員。
 
@@ -104,12 +106,12 @@ ms.locfileid: "85544842"
 
 6. 開啟 Word) 的檔 (或 Excel) 設計師的工作表 ([!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-7. 在 [屬性] **** 視窗中，選取 **ReferenceAssemblyFromVbaProject** 屬性，然後將值變更為 [True] ****。
+7. 在 [屬性]  視窗中，選取 **ReferenceAssemblyFromVbaProject** 屬性，然後將值變更為 [True] 。
 
     > [!NOTE]
-    > 如果活頁簿或檔尚未包含 VBA 程式碼，或檔中的 VBA 程式碼不受信任而無法執行，當您將 **ReferenceAssemblyFromVbaProject** 屬性設定為 **True**時，您將會收到錯誤訊息。 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。
+    > 如果活頁簿或檔尚未包含 VBA 程式碼，或檔中的 VBA 程式碼不受信任而無法執行，當您將 **ReferenceAssemblyFromVbaProject** 屬性設定為 **True** 時，您將會收到錯誤訊息。 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。
 
-8. 按一下訊息中顯示的 [確定] **** 。 這則訊息會提醒您，如果您在執行專案時將 VBA 程式碼加入至活頁簿或檔，則在下次建立專案時，將會 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 遺失 vba 程式碼。 這是因為每次您建立專案時，就會覆寫組建輸出檔案夾中的檔。
+8. 按一下訊息中顯示的 [確定]  。 這則訊息會提醒您，如果您在執行專案時將 VBA 程式碼加入至活頁簿或檔，則在下次建立專案時，將會 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 遺失 vba 程式碼。 這是因為每次您建立專案時，就會覆寫組建輸出檔案夾中的檔。
 
      此時，Visual Studio 會設定專案，讓 VBA 專案可以呼叫元件。 Visual Studio 也會將名為 `GetManagedClass` 的方法加入至 VBA 專案。 您可以從 VBA 專案的任何位置呼叫這個方法，以存取您公開給 VBA 的類別。
 

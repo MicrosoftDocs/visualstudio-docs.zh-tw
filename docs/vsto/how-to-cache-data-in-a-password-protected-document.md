@@ -1,5 +1,7 @@
 ---
 title: 如何：快取受密碼保護檔中的資料
+description: 瞭解如果您將資料加入至以密碼保護的檔或活頁簿中的資料快取，您可以藉由覆寫專案中的兩個方法來儲存快取資料的變更。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12b04b985d54161343d26cdd32178b67bd6e6b91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a11b70da4bdd2500f70d2b45f025340af21ea94
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547234"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845995"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>如何：快取受密碼保護檔中的資料
   如果您將資料加入至以密碼保護的檔或活頁簿中的資料快取，系統不會自動儲存對快取資料的變更。 您可以藉由覆寫專案中的兩個方法，來儲存快取資料的變更。
@@ -54,7 +56,7 @@ ms.locfileid: "85547234"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>若要在使用密碼保護的 Excel 活頁簿中快取資料
 
-1. 在 `ThisWorkbook` 類別或其中一個 `Sheet` *n*類別中，將公用欄位或屬性標示為快取。 如需詳細資訊，請參閱快取 [資料](../vsto/caching-data.md)。
+1. 在 `ThisWorkbook` 類別或其中一個 `Sheet` *n* 類別中，將公用欄位或屬性標示為快取。 如需詳細資訊，請參閱快取 [資料](../vsto/caching-data.md)。
 
 2. 覆寫 <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> 類別中的方法 `ThisWorkbook` ，並從活頁簿移除保護。
 

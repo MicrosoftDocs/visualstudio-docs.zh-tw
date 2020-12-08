@@ -1,7 +1,8 @@
 ---
 title: '&lt;&gt;在 Visual Studio) 中 (Office 開發的自訂元素'
+description: 瞭解 vstov4 命名空間的自訂元素如何描述特定的 Office 方案。
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1239c6749f25bf4bce7a1f5cc89a2a8430c98a4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f50b441393e9d07dcd0b409248f199484022654
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544868"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844110"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 開發的自訂元素
   `customization` 命名空間的 `vstov4` 項目描述特定的 Office 方案。 文件層級自訂與 VSTO 增益集的子項目不同。
@@ -57,11 +58,11 @@ ms.locfileid: "85544868"
 
  `customization` 項目具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`id`|多專案部署所需。 `id` 項目能唯一地識別 Office 方案。|
 
-### <a name="document-level-customizations"></a>檔層級自訂
+### <a name="document-level-customizations"></a>Document-Level 自訂
  `customization` 項目具有下列子項目。
 
 #### <a name="document"></a>文件
@@ -75,7 +76,7 @@ ms.locfileid: "85544868"
 
 ## <a name="example-of-a-document-level-customization"></a>檔層級自訂的範例
 
-### <a name="description"></a>說明
+### <a name="description"></a>描述
  下列程式碼範例可說明文件層級自訂的 `customization` 項目。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
@@ -89,7 +90,7 @@ ms.locfileid: "85544868"
 
 ## <a name="example-of-a-vsto-add-in"></a>VSTO 增益集範例
 
-### <a name="description"></a>說明
+### <a name="description"></a>描述
  下列程式碼範例說明 `customization` VSTO 增益集的元素。 這是包含表單區域的 Outlook VSTO 增益集。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼

@@ -1,5 +1,7 @@
 ---
 title: 如何：開啟 Office 方案而不執行程式碼
+description: 學習如何開啟包含 managed 程式碼延伸模組的檔或活頁簿，而不需要執行元件程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543477"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844916"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>如何：開啟 Office 方案而不執行程式碼
   即使終端使用者的 Office 應用程式中的安全性設定設為 [高]，使用 managed 程式碼擴充功能建立的 Microsoft Office 方案仍會執行。 這是因為 .NET 元件碼安全性是由 Microsoft .NET Framework 管理，而不是由 Microsoft Office 管理。

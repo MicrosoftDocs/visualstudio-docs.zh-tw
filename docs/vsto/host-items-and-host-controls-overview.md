@@ -1,5 +1,7 @@
 ---
 title: 主專案和主控制項總覽
+description: 瞭解主專案和主控制項是可協助提供 Office 方案之程式設計模型的類型。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -36,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c349756eb12fe66800e209bd6a1aad5b8d2337ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc8939f2a9e5f41f81c8176d5268528c273a7ce
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255922"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845566"
 ---
 # <a name="host-items-and-host-controls-overview"></a>主專案和主控制項總覽
   主項目和主控制項類型可為使用 Visual Studio 中的 Office 開發工具建立的 Office 方案，提供程式撰寫模型。 主項目和主控制項會以較接近與 Managed 物件 (例如 Windows Form 控制項) 互動的方式，與以 COM 為基礎的 Microsoft Office Word 和 Microsoft Office Excel 物件模型進行互動。
@@ -59,7 +61,7 @@ ms.locfileid: "71255922"
 
 - <xref:Microsoft.Office.Tools.Excel.ChartSheet>
 
-  上述每種類型會擴充原本就存在於 Word 或 Excel 物件模型的物件，又稱為「原生 Office 物件」 **(Native Office Object)。 例如， <xref:Microsoft.Office.Tools.Word.Document> 主項目會擴充 <xref:Microsoft.Office.Interop.Word.Document> 物件，此物件是在 Word 的主要 Interop 組件中定義。
+  上述每種類型會擴充原本就存在於 Word 或 Excel 物件模型的物件，又稱為「原生 Office 物件」 (Native Office Object)。 例如， <xref:Microsoft.Office.Tools.Word.Document> 主項目會擴充 <xref:Microsoft.Office.Interop.Word.Document> 物件，此物件是在 Word 的主要 Interop 組件中定義。
 
   主項目通常與對應的 Office 物件具有相同的基本功能，但是增強了下列功能：
 
@@ -120,9 +122,9 @@ ms.locfileid: "71255922"
 
 - 依照加入原生物件的相同方式，在設計階段將主控制項加入文件。
 
-- 將主控制項從 [工具箱] **** 拖曳至文件和工作表上。 您可以在 Excel 專案的 [Excel 控制項] **** 索引標籤中使用 Excel 主控制項，並在 Word 專案的 [Word 控制項] **** 索引標籤中使用 Word 主控制項。
+- 將主控制項從 [工具箱]  拖曳至文件和工作表上。 您可以在 Excel 專案的 [Excel 控制項]  索引標籤中使用 Excel 主控制項，並在 Word 專案的 [Word 控制項]  索引標籤中使用 Word 主控制項。
 
-- 將主控制項從 [資料來源] **** 視窗拖曳至文件和工作表上。 這可讓您加入已經繫結至資料的控制項。 如需詳細資訊，請參閱 [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。
+- 將主控制項從 [資料來源]  視窗拖曳至文件和工作表上。 這可讓您加入已經繫結至資料的控制項。 如需詳細資訊，請參閱 [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。
 
   在文件層級和 VSTO 增益集專案中，您也可以在執行階段將某些主控制項加入文件。 如需詳細資訊，請參閱 [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
@@ -145,13 +147,13 @@ ms.locfileid: "71255922"
 - [如何：將 XMLNodes 控制項加入至 Word 檔](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
 
 ### <a name="name-host-controls"></a>命名主控制項
- 當您將主控制項從 [工具箱] **** 拖曳至文件時，會自動使用控制項類型來命名控制項，並在結尾處加上一個累加號碼。 例如，書籤會命名為 **bookmark1**、 **bookmark2**，依此類推。 如果使用 Word 或 Excel 的原生功能來加入控制項，可以在建立控制項時為它指定特定名稱。 您也可以變更 [屬性] **** 視窗中的 [名稱] **** 屬性值，來重新命名控制項。
+ 當您將主控制項從 [工具箱]  拖曳至文件時，會自動使用控制項類型來命名控制項，並在結尾處加上一個累加號碼。 例如，書籤會命名為 **bookmark1**、 **bookmark2**，依此類推。 如果使用 Word 或 Excel 的原生功能來加入控制項，可以在建立控制項時為它指定特定名稱。 您也可以變更 [屬性]  視窗中的 [名稱]  屬性值，來重新命名控制項。
 
 > [!NOTE]
 > 您不可以使用保留字來命名主控制項。 例如，如果將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入工作表，並將名稱變更為 **System**，則建置專案時會發生錯誤。
 
 ### <a name="delete-host-controls"></a>刪除主控制項
- 在檔層級專案中，您可以在設計階段刪除主控制項，方法是選取 Excel 工作表或 Word 檔上的控制項，然後按 **delete** 鍵。 不過，您必須使用 Excel 中的 [定義名稱] **** 對話方塊來刪除 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項。
+ 在檔層級專案中，您可以在設計階段刪除主控制項，方法是選取 Excel 工作表或 Word 檔上的控制項，然後按 **delete** 鍵。 不過，您必須使用 Excel 中的 [定義名稱]  對話方塊來刪除 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項。
 
  如果在設計階段將主控制項加入文件，則不應該在執行階段以程式設計方式將其移除，因為這麼做會使您下次嘗試使用程式碼中的控制項時，擲回例外狀況。 主控制項的 `Delete` 方法只會移除在執行階段加入文件的主控制項。 如果您呼叫在設計階段建立之主控制項的 `Delete` 方法，則會擲回例外狀況。
 

@@ -1,5 +1,7 @@
 ---
 title: 檔層級自訂的架構
+description: 瞭解檔層級自訂的各個層面，包括自訂群組件，以及自訂如何與 Microsoft Office 的應用程式搭配運作。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5028f5a9b16ecfc2461c0d29cbedb44be70a64c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a522446f9109d996088dff9389f267ef5ff39447
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926553"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845957"
 ---
 # <a name="architecture-of-document-level-customizations"></a>檔層級自訂的架構
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包含的專案可以建立 Microsoft Office Word 和 Microsoft Office Excel 的文件層級自訂。 本主題描述文件層級自訂的下列各方面：
@@ -84,18 +86,18 @@ ms.locfileid: "68926553"
 
 |Excel|Word|
 |-----------|----------|
-|Excel 活頁簿 (*.xlsx*) <br /><br /> Excel 啟用巨集活頁簿 (*. xlsm*) <br /><br /> Excel 二進位活頁簿 (*. .xlsb*) <br /><br /> Excel 97-2003 活頁簿 (*.xls*) <br /><br /> Excel 範本 (*. xltx*) <br /><br /> 已啟用 Excel 宏的範本 (*. xltm*) <br /><br /> Excel 97-2003 範本 (*.xlt*) |Word 檔 (*.docx*) <br /><br /> Word 啟用巨集檔 (*docm*) <br /><br /> Word 97-2003 檔 (*.doc*) <br /><br /> *Dotx) 的*Word 範本 (<br /><br /> Word 啟用巨集範本 (*normal.dotm*) <br /><br /> Word 97-2003 範本 (*的. 點*) |
+|Excel 活頁簿 (*.xlsx*) <br /><br /> Excel 啟用巨集活頁簿 (*. xlsm*) <br /><br /> Excel 二進位活頁簿 (*. .xlsb*) <br /><br /> Excel 97-2003 活頁簿 (*.xls*) <br /><br /> Excel 範本 (*. xltx*) <br /><br /> 已啟用 Excel 宏的範本 (*. xltm*) <br /><br /> Excel 97-2003 範本 (*.xlt*) |Word 檔 (*.docx*) <br /><br /> Word 啟用巨集檔 (*docm*) <br /><br /> Word 97-2003 檔 (*.doc*) <br /><br /> *Dotx) 的* Word 範本 (<br /><br /> Word 啟用巨集範本 (*normal.dotm*) <br /><br /> Word 97-2003 範本 (*的. 點*) |
 
  您只能以支援的格式為文件設計 Managed 程式碼擴充。 否則，當文件在應用程式中開啟時，可能無法引發特定事件。 例如， <xref:Microsoft.Office.Tools.Excel.Workbook.Open> 當您使用 managed 程式碼延伸模組搭配以 EXCEL XML 試算表格式儲存的活頁簿，或在網頁 (.htm 時，不會引發事件 *。**.html*) 格式。
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>支援具有 .xml 副檔名的 Word 檔
  文件層級專案範本不允許您建立以下列檔案格式為基礎的專案：
 
-- Word XML 檔 (* \* XML*) 。
+- Word XML 檔 (*\* XML*) 。
 
-- Word 2003 XML 檔 (* \* xml*) 。
+- Word 2003 XML 檔 (*\* xml*) 。
 
-  如果您希望使用者使用這些檔案格式的自訂，請將自訂建置和部署為使用上表指定的其中一個支援的檔案格式。 安裝自訂之後，使用者可以將檔儲存為 Word XML 檔 (* \* Xml*) 格式或 Word 2003 xml 檔 (* \* xml*) 格式，自訂將繼續如預期般運作。
+  如果您希望使用者使用這些檔案格式的自訂，請將自訂建置和部署為使用上表指定的其中一個支援的檔案格式。 安裝自訂之後，使用者可以將檔儲存為 Word XML 檔 (*\* Xml*) 格式或 Word 2003 xml 檔 (*\* xml*) 格式，自訂將繼續如預期般運作。
 
 ## <a name="components-of-customizations"></a><a name="Components"></a> 自訂群組件
  自訂的主要元件是文件和組件。 除了這些元件之外，還有其他數個組件在 Microsoft Office 應用程式探索和載入自訂的方式中扮演重要角色。
@@ -109,7 +111,7 @@ ms.locfileid: "68926553"
  如需詳細資訊，請參閱 [Visual Studio tools For Office runtime 總覽](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
 ## <a name="how-customizations-work-with-microsoft-office-applications"></a><a name="HowCustomizationsWork"></a> 自訂如何與 Microsoft Office 的應用程式搭配運作
- 當使用者開啟屬於 Microsoft Office 自訂一部分的文件時，應用程式會使用連結至該文件的部署資訊清單，來尋找及載入最新版的自訂組件。 部署資訊清單的位置會儲存在名為 **AssemblyLocation**的自訂文件屬性中。 建置方案時，識別這個位置的字串會插入至這個屬性。
+ 當使用者開啟屬於 Microsoft Office 自訂一部分的文件時，應用程式會使用連結至該文件的部署資訊清單，來尋找及載入最新版的自訂組件。 部署資訊清單的位置會儲存在名為 **AssemblyLocation** 的自訂文件屬性中。 建置方案時，識別這個位置的字串會插入至這個屬性。
 
  部署資訊清單會指向應用程式資訊清單，而應用程式資訊清單則會指向最新的組件。 如需詳細資訊，請參閱 [Office 方案中的應用程式和部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)。
 
@@ -129,7 +131,7 @@ ms.locfileid: "68926553"
 
 3. *VSTOLoader.dll* 載入 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] ，並啟動的 managed 部分 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。
 
-4. 如果從本機電腦以外的位置開啟文件， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會確認文件的位置是否在該特定 Office 應用程式之 [信任中心設定] **** 的 [信任位置] **** 清單中。 如果文件位置不是在信任的位置中，則不會信任自訂，且載入程序會在這裡停止。
+4. 如果從本機電腦以外的位置開啟文件， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會確認文件的位置是否在該特定 Office 應用程式之 [信任中心設定]  的 [信任位置]  清單中。 如果文件位置不是在信任的位置中，則不會信任自訂，且載入程序會在這裡停止。
 
 5. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會安裝尚未安裝的方案、下載最新的應用程式和部署資訊清單，並執行一系列的安全性檢查。 如需詳細資訊，請參閱 [安全的 Office 方案](../vsto/securing-office-solutions.md)。
 

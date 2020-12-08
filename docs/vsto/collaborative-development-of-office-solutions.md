@@ -1,5 +1,7 @@
 ---
 title: Office 方案的共同開發
+description: 瞭解多個開發人員如何以與其他 Visual Studio 專案共同作業相同的方式，來處理 Office 專案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62949483"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845800"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Office 方案的共同開發
   多個開發人員可以使用與其他 Visual Studio 專案共同作業的相同方式來處理 Office 專案。 Visual Studio 在每部電腦上正確地找到 Microsoft Office 安裝，即使 Office 安裝在不同的位置。 不過，有一些重要的考慮要留意。
@@ -33,7 +35,7 @@ ms.locfileid: "62949483"
  如果專案是存放在網路共用上，而不是在原始檔控制中，則必須採取一些額外的步驟，讓共同作業的開發人員可以開啟方案並測試元件。
 
 ## <a name="source-control-requires-checking-out-all-files"></a>原始檔控制需要簽出所有檔案
- 如果您在專案中使用原始檔控制，您應該 (**方案總管** 在每次變更程式碼檔案時，簽出程式碼檔下的所有檔案（例如 *ThisDocument*、 *ThisWorkbook*或 *ThisAddIn* 程式碼檔案）) ，甚至是預設隱藏的檔案。 如果您只簽出最上層程式碼檔案，您的變更可能會遺失。
+ 如果您在專案中使用原始檔控制，您應該 (**方案總管** 在每次變更程式碼檔案時，簽出程式碼檔下的所有檔案（例如 *ThisDocument*、 *ThisWorkbook* 或 *ThisAddIn* 程式碼檔案）) ，甚至是預設隱藏的檔案。 如果您只簽出最上層程式碼檔案，您的變更可能會遺失。
 
  進行變更之後，請將所有檔案存回。 如需有關專案中隱藏程式碼檔案的詳細資訊，請參閱 [Visual Studio 環境中的 Office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)。
 

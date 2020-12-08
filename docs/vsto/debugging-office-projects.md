@@ -1,5 +1,7 @@
 ---
 title: Debug Office 專案
+description: 瞭解如何使用您用於其他 Visual Studio 專案的相同 Microsoft Visual Studio 工具來將 Office 專案進行 debug。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92cc0922a36d8c57b54b69ad984d18cf4742b823
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea4874effcba4ee948f921ae9bf91f145b661f4f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189707"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845631"
 ---
 # <a name="debug-office-projects"></a>Debug Office 專案
   您可以使用與偵錯其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 專案時所使用的相同 Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 工具，來偵錯 Office 專案。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 偵錯工具功能（例如在 [ **區域變數** ] 視窗中插入中斷點和 view 變數的功能），也可以在您進行 Office 專案的偵錯工具時使用。 如需偵錯工具的詳細資訊 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，請參閱 [Visual Studio 中的 Debug](../debugger/debugger-feature-tour.md)。
@@ -48,7 +50,7 @@ ms.locfileid: "73189707"
 ### <a name="debug-office-2013-vsto-add-ins-by-using-either-office-2013-or-office-2016"></a>使用 Office 2013 或 Office 2016 偵錯 Office 2013 VSTO 增益集
  如果您使用 Visual Studio 2015，並同時安裝了兩個版本的 Office，Visual Studio 會啟動 Office 2016。 如果您是使用 Visual Studio 2013，Visual Studio 會啟動 Office 2013。
 
- 如果您想要使用不同的 Office 版本 (2013 或 2016) 偵錯 VSTO 增益集，請開啟 [專案設計工具] ****，並在 [偵錯] **** 索引標籤中，選擇 [啟動外部程式] **** 選項按鈕。 然後，瀏覽至適當 Office 應用程式可執行檔的位置。
+ 如果您想要使用不同的 Office 版本 (2013 或 2016) 偵錯 VSTO 增益集，請開啟 [專案設計工具] ，並在 [偵錯]  索引標籤中，選擇 [啟動外部程式]  選項按鈕。 然後，瀏覽至適當 Office 應用程式可執行檔的位置。
 
 ## <a name="f10-and-f11-behavior"></a>F10 和 F11 的行為
  當您開始進行 Office 專案的偵錯工具時， **F10** 和 **F11** 的行為與您開始錯其他 Visual Basic 或 c # 專案的行為不同。 在 Visual Basic 或 C# 專案中，偵錯工具會在 main 函式上停止；在 Office 專案中，Visual Studio 並不能控制 Office 應用程式的 main 函式。 不過，在調試過程中， **F10** 和 **F11** 的功能與 Visual Basic 和 c # 專案中的函式相同。
@@ -63,7 +65,7 @@ ms.locfileid: "73189707"
  根據預設，Visual Studio 亦不顯示 Office 專案的 Just-In-Time 偵錯錯誤，但是您可以啟用這項功能，以便查看所引發的錯誤。 如需詳細資訊，請參閱 Visual Studio 中的 [即時調試](../debugger/just-in-time-debugging-in-visual-studio.md)程式。
 
 ## <a name="command-line-arguments"></a>命令列引數
- 如果 [**調試**程式] 屬性頁上的 [**起始動作**] 設定為 [**起始專案**]，則即使您已指定命令列引數做為起始選項，Visual Studio 也不會在對專案進行偵錯工具時使用命令列引數。 如果您想要在啟動偵錯工具時使用命令列引數，您必須選取 [**起始專案**] 以外的 [**起始動作**]。
+ 如果 [**調試** 程式] 屬性頁上的 [**起始動作**] 設定為 [**起始專案**]，則即使您已指定命令列引數做為起始選項，Visual Studio 也不會在對專案進行偵錯工具時使用命令列引數。 如果您想要在啟動偵錯工具時使用命令列引數，您必須選取 [**起始專案**] 以外的 [**起始動作**]。
 
 ## <a name="source-control"></a>原始檔控制
  偵錯屬性不是在原始檔控制中由多位使用者共用。 Visual Basic 和 C# 專案將偵錯屬性儲存在使用者專屬檔案中 (*專案名稱*.vbproj.user 或 *專案名稱*.csproj.user)，而這個檔案不在原始檔控制中。 如果有多人同時進行偵錯，每個人都必須手動輸入偵錯屬性。

@@ -2,7 +2,7 @@
 title: 'Visual Studio 檔：新功能的歷程記錄 '
 titleSuffix: ''
 description: Visual Studio 文件中的新功能歷程記錄
-ms.date: 10/04/2020
+ms.date: 12/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,106 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2314965dad6c77e749a62946f3372993813240bb
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ef6f6e71dc7c4c0625877444d0091c73e81455ac
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414499"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844006"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio 文件中的新功能歷程記錄
 
-歡迎使用 Visual Studio 檔的新功能歷程記錄。本文包含2020年10月 (開始 2020) 之前檔的重大變更。 如需最新的新功能，請參閱 [Visual Studio 檔：檔中的新功能](whats-new-visual-studio-docs.md)。
+歡迎使用 Visual Studio 檔的新功能歷程記錄。本文包含在2020年11月 (開始 2020) 之前檔的重大變更。 如需最新的新功能，請參閱 [Visual Studio 檔：檔中的新功能](whats-new-visual-studio-docs.md)。
+
+## <a name="october-2020"></a>2020 年 10 月
+### <a name="code-quality"></a>程式碼品質
+
+**更新的文章**
+- 程式[代碼分析器](../code-quality/index.yml)-適用于 .net 5 的 CA 重構
+
+### <a name="containers"></a>容器
+
+**更新的文章**
+
+- [快速入門：在 Visual Studio 中搭配使用 Docker 與回應單一頁面應用程式](../containers/container-tools-react.md)
+  - 容器工具：移除舊映射存放庫的參考
+  - .NET 3.1 和 VS 16.7 的更新容器回應教學課程
+- [Kubernetes 的橋樑如何運作](../containers/overview-bridge-to-kubernetes.md) -橋接器至 Kubernetes：新增限制
+- [在本機 docker 容器中偵錯工具](../containers/edit-and-refresh.md) -docker 工具箱
+
+### <a name="debugger"></a>偵錯工具
+
+**新文章**
+
+- [Visual Studio 中的 DirectX 12 支援](../debugger/graphics/visual-studio-graphics-diagnostics-directx-12.md) -Vsdg dx12
+
+**更新的文章**
+
+- [在 Visual Studio 中偵錯工具 ASP.NET 或 ASP.NET Core 應用程式](../debugger/how-to-enable-debugging-for-aspnet-applications.md) -GitHub 問題的偵錯工具內容修正
+- [在 Visual Studio 偵錯工具中使用中斷點](../debugger/using-breakpoints.md) -GitHub 問題的偵錯工具內容修正
+- [在 Visual Studio 中偵錯工具的 Azure 服務](../debugger/debug-azure-apps.md) -SEO 和快照偵錯工具的連結更新
+- 使用適用于快照偵錯工具的快照偵錯工具 SEO 和連結更新來進行[即時 ASP.NET Azure 應用程式的調試](../debugger/debug-live-azure-applications.md)程式
+- [遠端偵錯](../debugger/remote-debugging.md) 程式-適用于快照偵錯工具的 SEO 和連結更新
+- [Visual Studio 圖形診斷的總覽](../debugger/graphics/overview-of-visual-studio-graphics-diagnostics.md) -Vsdg dx12
+- [Visual Studio 圖形診斷](../debugger/graphics/visual-studio-graphics-diagnostics.md) -Vsdg dx12
+
+### <a name="get-started"></a>開始使用
+
+**更新的文章**
+
+- 教學課程：擴充擴充 c # 教學課程的[簡單 c # 主控台應用程式](../get-started/csharp/tutorial-console-part-2.md)-偵錯工具新增
+
+### <a name="ide"></a>IDE
+
+**新文章**
+
+- [使用 Visual Studio 搜尋](./visual-studio-search.md) 和搜尋檔
+
+### <a name="install"></a>安裝
+
+**更新的文章**
+
+- [Visual Studio 組建編號和發行日期](../install/visual-studio-build-numbers-and-release-dates.md)
+  - 新增16.7.7 和 16.8 Preview 6 資料
+  - 新增 16.8 Preview 5 資訊
+
+### <a name="msbuild"></a>MSBuild
+
+**更新的文章**
+
+- [逐步解說：使用 msbuild](../msbuild/walkthrough-using-msbuild.md) -msbuild 逐步解說：新增獨立安裝步驟
+
+### <a name="profiling"></a>程式碼剖析
+
+**更新的文章**
+
+- [分析記憶體使用量](../profiling/analyze-memory-usage.md)
+  - 程式碼剖析的記憶體使用量更新-連結和說明
+  - 記憶體使用量工具更新
+- [在效能分析工具中分析記憶體使用量，而不進行調試](../profiling/memory-usage-without-debugging2.md)
+  - 程式碼剖析的記憶體使用量更新-連結和說明
+  - 記憶體使用量工具更新
+- [初步認識分析工具](../profiling/profiling-feature-tour.md)
+  - 程式碼剖析的記憶體使用量更新-連結和說明
+  - 記憶體使用量工具更新
+- [使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
+  - 程式碼剖析的記憶體使用量更新-連結和說明
+  - 記憶體使用量工具更新
+- 在效能分析工具記憶體使用量工具更新[中分析 CPU 使用量，而不進行調試](../profiling/cpu-usage.md)程式
+
+### <a name="windows"></a>Windows
+
+**更新的文章**
+
+- [Visual Studio 檔 |Microsoft Docs](../windows/index.yml) -Windows 中樞更新
+
+### <a name="xaml-tools"></a>XAML 工具
+
+**新文章**
+
+- [使用 XAML 設計工具的設計階段資料 Visual Studio](../xaml-tools/xaml-designtime-data.md)
+  - 已將擴充性區段新增至 XAML 設計階段檔
+  - 新的設計階段 XAML 文章
 
 ## <a name="september-2020"></a>2020 年 9 月
 ### <a name="code-quality"></a>程式碼品質

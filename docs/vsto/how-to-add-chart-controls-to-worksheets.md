@@ -1,5 +1,7 @@
 ---
 title: 如何：將圖表控制項加入至工作表
+description: 瞭解如何在設計階段和執行時間于檔層級自訂中，將圖表控制項加入 Microsoft Office Excel 工作表。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e48b8cfbcf4ee1c7340aef4cd59e09698f89412
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546233"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845462"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>如何：將圖表控制項加入至工作表
   您可以在 <xref:Microsoft.Office.Tools.Excel.Chart> 設計階段和執行時間的檔層級自訂中，將控制項加入 Microsoft Office Excel 工作表。 您也可以在 <xref:Microsoft.Office.Tools.Excel.Chart> VSTO 增益集的執行時間加入控制項。

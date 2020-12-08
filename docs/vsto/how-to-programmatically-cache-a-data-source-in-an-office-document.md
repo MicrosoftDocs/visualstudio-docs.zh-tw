@@ -1,5 +1,7 @@
 ---
 title: 以程式設計方式快取 Office 檔中的資料來源
+description: 瞭解如何藉由呼叫主專案的 StartCaching 方法，以程式設計方式將資料物件新增至檔中的資料快取。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544764"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845008"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>如何：以程式設計方式快取 Office 檔中的資料來源
   您可以藉由呼叫 `StartCaching` 主專案的方法（例如、或），以程式設計方式將資料物件新增至檔中的資料快取 <xref:Microsoft.Office.Tools.Word.Document> <xref:Microsoft.Office.Tools.Excel.Workbook> <xref:Microsoft.Office.Tools.Excel.Worksheet> 。 藉由呼叫主專案的方法，從資料快取中移除資料物件 `StopCaching` 。

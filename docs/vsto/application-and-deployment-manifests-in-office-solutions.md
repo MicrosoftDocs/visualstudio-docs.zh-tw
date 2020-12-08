@@ -1,5 +1,7 @@
 ---
 title: Office 方案中的應用程式和部署資訊清單
+description: 瞭解應用程式資訊清單是 XML 檔案，該檔案提供 Office 方案用來尋找和更新其元件的資訊。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc4095ce8cd945ff35903c9d8ffc95400cc3b7ab
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9ca8cf2774b7a24ec3bef40418b6a2157bf0f992
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584434"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844708"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Office 方案中的應用程式和部署資訊清單
   應用程式資訊清單是提供資訊讓 Office 方案用來尋找及更新其組件的 XML 檔案。 應用程式資訊清單可以搭配部署資訊清單使用，部署資訊清單是伺服器上儲存的 XML 檔案，可提供尋找最新版應用程式資訊清單和組件所需的資訊。
@@ -36,7 +38,7 @@ ms.locfileid: "91584434"
 ## <a name="create-application-and-deployment-manifests"></a>建立應用程式和部署資訊清單
  應用程式資訊清單會在建置流程中自動建立。 每次建置文件層級專案時，部署資訊清單的位置會內嵌在文件中做為自訂文件屬性。 對於 VSTO 增益集，部署資訊清單的位置儲存在登錄中。
 
- 如需 **發佈嚮導**的詳細資訊，請參閱 [使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。
+ 如需 **發佈嚮導** 的詳細資訊，請參閱 [使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。
 
  如需資訊清單如何與 Office 方案搭配使用的詳細資訊，請參閱 [部署 office 方案](../vsto/deploying-an-office-solution.md)。
 

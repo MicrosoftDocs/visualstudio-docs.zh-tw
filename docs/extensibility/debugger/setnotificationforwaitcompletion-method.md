@@ -1,5 +1,7 @@
 ---
 title: SetNotificationForWaitCompletion 方法 |Microsoft Docs
+description: 瞭解偵錯工具如何使用狀態位，協助跳出非承諾樣式工作的非同步方法主體。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226ac41c8e3b7427ac3b9aba7bea08dbb7329d16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80904e95c1561dd20ed2a6cc9ad561e6c18ee93a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712866"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845215"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion 方法
 設定或清除 TASK_STATE_WAIT_COMPLETION_NOTIFICATION 狀態位。
@@ -35,12 +37,12 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 
  `true` 設定位;取消設定 `false` 位。
 
-## <a name="exceptions"></a>例外狀況
+## <a name="exceptions"></a>例外
 
 ## <a name="remarks"></a>備註
  偵錯工具會設定此位，以協助跳出非同步方法主體。 如果 `enabled` 為 `true` ，則必須在尚未完成的工作上呼叫這個方法。 當 `enabled` 為時 `false` ，可以在已完成的工作上呼叫這個方法。 在任一事件中，它只能用於承諾樣式的工作。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 ## <a name="see-also"></a>另請參閱
 - [Task 類別](../../extensibility/debugger/task-class-internal-members.md)

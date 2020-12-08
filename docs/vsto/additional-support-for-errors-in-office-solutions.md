@@ -1,5 +1,7 @@
 ---
 title: Office 方案中錯誤的其他支援
+description: 瞭解當您在 Visual Studio 中建立 Office 方案時，如何使用支援資源來尋找您遇到的問題解答。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -56,12 +58,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e307c839dfb0aa764ccd0aa5727f009635ecabce
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984629"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844773"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office 方案中錯誤的其他支援
 

@@ -1,5 +1,7 @@
 ---
 title: 如何：將命令新增至快捷方式功能表
+description: 瞭解如何使用 VSTO 增益集，將命令加入 Office 應用程式中的快捷方式功能表。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95cc6a9dc773c9a0cb07eff518566af9dcc49e96
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546194"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845488"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>如何：將命令新增至快捷方式功能表
   本主題示範如何使用 VSTO 增益集，將命令加入 Office 應用程式中的快捷方式功能表。
@@ -29,9 +31,9 @@ ms.locfileid: "85546194"
 
 1. 將 **功能區 XML** 項目加入文件層級或 VSTO 增益集專案。 如需詳細資訊，請參閱 [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。 位於
 
-2. 在方案總管**** 中，選取 **ThisAddin.cs** 或 **ThisAddin.vb**。
+2. 在方案總管中，選取 **ThisAddin.cs** 或 **ThisAddin.vb**。
 
-3. 在功能表列上，選擇 [**視圖**程式  >  **代碼**]。
+3. 在功能表列上，選擇 [**視圖** 程式  >  **代碼**]。
 
      **ThisAddin** 類別隨即在程式碼編輯器中開啟。
 
@@ -40,9 +42,9 @@ ms.locfileid: "85546194"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. 在方案總管 **** 中選取功能區 XML 檔案。 依預設，功能區 XML 檔案的名稱為 *Ribbon1.xml*。
+5. 在方案總管 中選取功能區 XML 檔案。 依預設，功能區 XML 檔案的名稱為 *Ribbon1.xml*。
 
-6. 在功能表列上，選擇 [**視圖**程式  >  **代碼**]。
+6. 在功能表列上，選擇 [**視圖** 程式  >  **代碼**]。
 
      功能區 XML 檔案隨即在程式碼編輯器中開啟。
 
@@ -70,11 +72,11 @@ ms.locfileid: "85546194"
     </customUI>
     ```
 
-8. 在方案總管 **** 中，選擇 **MyRibbon.cs** 或 **MyRibbon.vb**。
+8. 在方案總管 中，選擇 **MyRibbon.cs** 或 **MyRibbon.vb**。
 
 9. `Ribbon1`針對您要處理的每個控制項，將回呼方法加入至類別。
 
-     下列回呼方法會處理 [My Button] **** 按鈕。 此程式碼會在使用中文件的目前游標位置加入字串。
+     下列回呼方法會處理 [My Button]  按鈕。 此程式碼會在使用中文件的目前游標位置加入字串。
 
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]

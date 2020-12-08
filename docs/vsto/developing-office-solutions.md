@@ -1,5 +1,7 @@
 ---
 title: 開發 Office 方案
+description: 瞭解如何使用 Visual Studio 中的 Office developer tools 來設計專案。 同時瞭解如何開始執行程式碼和自訂使用者介面， (UI) 。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ede09f18808eda22c747ac28e3c279fc43266bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbfe569e587c53aede6d550bc20527ad8d0fd328
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551571"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844994"
 ---
 # <a name="develop-office-solutions"></a>開發 Office 方案
   在您使用 Visual Studio 中的 Office Developer Tools 來設計專案並且設定專案檔之後，即可開始專注於實作程式碼和自訂使用者介面 (UI)。
@@ -32,7 +34,7 @@ ms.locfileid: "69551571"
  Office 物件模型會公開您可以對其進行程式設計的各種物件。 每當您使用 Managed 程式碼進行 Office 方案程式設計時，您會撰寫使用 Office 主要 Interop 組件中類型的程式碼。 在您使用 Visual Studio 中的 Office 專案範本建立的方案中，也可以直接在專案中針對產生的類別撰寫程式碼。 如需詳細資訊，請參閱 [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)。
 
 ## <a name="program-different-types-of-office-solutions"></a>程式設計不同類型的 Office 方案
- 您建立的方案類型，會決定可以在專案中使用的功能。 例如，您可以在設計階段從 Visual Studio 中的 [工具箱] ** 拖曳項目，藉此將 Windows Form 控制項和擴充的 Office 控制項 (名為 **「主控制項」** (Host Control)) 加入文件層級自訂。 不過，如果您要開發 VSTO 增益集，就只能藉由撰寫程式碼的方式，在執行階段將這類控制項加入文件。
+ 您建立的方案類型，會決定可以在專案中使用的功能。 例如，您可以在設計階段從 Visual Studio 中的 [工具箱] 拖曳項目，藉此將 Windows Form 控制項和擴充的 Office 控制項 (名為 **「主控制項」** (Host Control)) 加入文件層級自訂。 不過，如果您要開發 VSTO 增益集，就只能藉由撰寫程式碼的方式，在執行階段將這類控制項加入文件。
 
  如需不同類型解決方案特有功能的詳細資訊，請參閱下列主題：
 

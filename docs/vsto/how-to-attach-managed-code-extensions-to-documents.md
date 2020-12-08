@@ -1,5 +1,7 @@
 ---
 title: 如何：將 managed 程式碼擴充附加至檔
+description: 瞭解如何將自訂群組件附加至現有的 Microsoft Office Word 檔或 Microsoft Office Excel 活頁簿。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f44b153ac7d55704ba649a7dc09860518a5e76b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1929daaa82dbfec6f58513bf94eefe01f9520601
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547520"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844384"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>如何：將 managed 程式碼擴充附加至檔
   您可以將自訂群組件附加至現有的 Microsoft Office Word 檔或 Microsoft Office Excel 活頁簿。 檔或活頁簿可以使用 Visual Studio 中的 Microsoft Office 專案和開發工具所支援的任何檔案格式。 如需詳細資訊，請參閱 [檔層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)。

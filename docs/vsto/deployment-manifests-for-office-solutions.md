@@ -1,5 +1,7 @@
 ---
 title: Office 方案的部署資訊清單
+description: 瞭解部署資訊清單是 XML 檔案，可描述 Office 方案的部署設定，並識別目前的應用程式版本。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547546"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845501"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Office 方案的部署資訊清單
   部署資訊清單是 XML 檔案，可描述 Office 方案的部署設定，並識別目前的應用程式版本。

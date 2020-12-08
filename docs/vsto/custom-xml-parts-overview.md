@@ -1,5 +1,7 @@
 ---
 title: 自訂 XML 元件總覽
+description: 瞭解如何將 XML 資料內嵌至某些 Microsoft Office 應用程式的檔中。 當您將 XML 資料嵌入文件時，該資料就稱為「自訂 XML 組件」(custom XML part)。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b94deacad38f40d76b4c8485186bfd563808d912
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7998f2a47edd85a65b1e81dd45a046de80d0cdb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64784424"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844123"
 ---
 # <a name="custom-xml-parts-overview"></a>自訂 XML 元件總覽
   您可以將 XML 資料嵌入某些 Microsoft Office 應用程式的文件中。 當您在檔中內嵌 XML 資料時，資料會命名為 *自訂 XML 元件*。
@@ -41,9 +43,9 @@ ms.locfileid: "64784424"
 > Visual Studio 也可讓您快取文件層級自訂中的資料物件。 雖然這項功能與自訂 XML 組件有些類似，但兩者卻不相同。 如需詳細資訊，請參閱 [檔層級自訂中](../vsto/cached-data-in-document-level-customizations.md)的快取資料。
 
 ## <a name="understand-custom-xml-parts"></a>瞭解自訂 XML 元件
- 2007 Microsoft Office system 中加入了自訂 XML 組件以及 Open XML 格式。 這些格式包括適用于 Excel、PowerPoint 和 Word (的新 XML 檔案格式，例如 *.xlsx*、 *.pptx*和 *.docx*) 。 這些格式的檔是由 XML 檔案所組成， (也是在 ZIP 封存的資料夾中組織) 的 *xml 元件* 。 大部分的 XML 組件都是用來協助定義文件結構和狀態的內建組件。 但是，文件也可包含自訂 XML 組件，您可以使用這類自訂 XML 組件在文件中儲存任意 XML 資料。
+ 2007 Microsoft Office system 中加入了自訂 XML 組件以及 Open XML 格式。 這些格式包括適用于 Excel、PowerPoint 和 Word (的新 XML 檔案格式，例如 *.xlsx*、 *.pptx* 和 *.docx*) 。 這些格式的檔是由 XML 檔案所組成， (也是在 ZIP 封存的資料夾中組織) 的 *xml 元件* 。 大部分的 XML 組件都是用來協助定義文件結構和狀態的內建組件。 但是，文件也可包含自訂 XML 組件，您可以使用這類自訂 XML 組件在文件中儲存任意 XML 資料。
 
- XML 檔案格式可讓應用程式以較舊的二進位檔案格式（例如 *.xls*、 *.ppt*和 *.doc*) ）來處理檔 (。 即使未安裝 Microsoft Office，任何可讀取 ZIP 封存的應用程式都可以檢查和修改文件的內容。
+ XML 檔案格式可讓應用程式以較舊的二進位檔案格式（例如 *.xls*、 *.ppt* 和 *.doc*) ）來處理檔 (。 即使未安裝 Microsoft Office，任何可讀取 ZIP 封存的應用程式都可以檢查和修改文件的內容。
 
  如需 Open XML 和自訂 XML 組件之結構的詳細資訊，請參閱下列文章：
 

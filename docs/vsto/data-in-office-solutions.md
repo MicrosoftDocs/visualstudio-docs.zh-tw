@@ -1,5 +1,7 @@
 ---
 title: Office 方案中的資料
+description: 瞭解當您使用 Visual Studio 建立 Microsoft Office 的解決方案時，使用資料的各種方式。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a5f0b85acfd45996dd00208aae820b24265be9f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ce6d73a7c70101c0fe364ac5dafba8cbe47f5c8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189690"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845544"
 ---
 # <a name="data-in-office-solutions"></a>Office 方案中的資料
   許多 Office 方案都可以讓使用者擷取或修改資料。 當您使用 Visual Studio 建立 Office 方案時，可運用數種方式來處理資料。

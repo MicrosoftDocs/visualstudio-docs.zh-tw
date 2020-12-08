@@ -1,5 +1,7 @@
 ---
 title: 動作窗格總覽
+description: 瞭解 [動作] 窗格如何是附加至特定 Microsoft Office Word 檔或 Excel 活頁簿的可自訂檔動作工作窗格。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986317"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844825"
 ---
 # <a name="actions-pane-overview"></a>動作窗格總覽
   [動作] 窗格是附加至特定 Microsoft Office Word 檔或 Microsoft Office Excel 活頁簿的可自訂 **檔動作** 工作窗格。 [動作] 窗格會與其他內建工作窗格一起裝載在 Office 工作窗格內，例如 Excel 的 [ **XML 來源** ] 工作窗格或 Word 中的 [ **樣式與格式** ] 工作窗格。 您可以使用 Windows Form 控制項或 WPF 控制項，設計執行窗格使用者介面。
@@ -78,7 +80,7 @@ ms.locfileid: "72986317"
  當使用者在顯示 [執行] 窗格時儲存檔時，無論 [執行] 窗格是否包含任何控制項，每次開啟檔時都可以看見 [動作] 窗格。 如果想要控制其出現時機，請呼叫 `ThisDocument` 或 `ThisWorkbook` 的 `Startup` 事件處理常式中 `ActionsPane` 欄位的 <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> 方法，以確保文件開啟時不顯示執行窗格。
 
 ### <a name="determine-when-the-actions-pane-is-closed"></a>判斷動作窗格何時關閉
- 執行窗格關閉時未引發任何事件。 雖然 <xref:Microsoft.Office.Tools.ActionsPane> 類別具有 <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> 事件，但當使用者關閉執行窗格時並未引發這個事件。 相反地，當執行窗格上的控制項透過呼叫 <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> 方法或將 <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> 屬性設為 **false**時，就會引發此事件。
+ 執行窗格關閉時未引發任何事件。 雖然 <xref:Microsoft.Office.Tools.ActionsPane> 類別具有 <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> 事件，但當使用者關閉執行窗格時並未引發這個事件。 相反地，當執行窗格上的控制項透過呼叫 <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> 方法或將 <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> 屬性設為 **false** 時，就會引發此事件。
 
  當使用者關閉 [執行] 窗格時，使用者可以在應用程式的使用者介面 (UI) 中執行下列其中一個程式，再次顯示該視窗。
 

@@ -1,5 +1,7 @@
 ---
 title: 如何：將服務的資料填入檔
+description: 瞭解如何使用解決方案中服務的資料，以及如何使用 Windows Forms 控制項來顯示檔中的資料。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01e2a83f464576d1ca780daa17c0d9478f0caa14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4d8fb377896762672574c6ef5ff15b4e12b9e59
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547143"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845826"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>如何：將服務的資料填入檔
 
@@ -31,9 +33,9 @@ ms.locfileid: "85547143"
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>若要在檔層級專案中填入 web 服務的資料
 
-1. 開啟 [資料來源] **** 視窗並為您的專案建立服務資料來源。 如需詳細資訊，請參閱[新增資料來源](../data-tools/add-new-data-sources.md)。
+1. 開啟 [資料來源]  視窗並為您的專案建立服務資料來源。 如需詳細資訊，請參閱[新增資料來源](../data-tools/add-new-data-sources.md)。
 
-2. 將想要的資料表或欄位從 [資料來源] **** 視窗拖曳至您的文件。
+2. 將想要的資料表或欄位從 [資料來源]  視窗拖曳至您的文件。
 
      即會在文件中建立控制項，並建立 <xref:System.Windows.Forms.BindingSource> 以繫結至專案中的物件類別，然後再產生該服務的類別。
 
@@ -52,7 +54,7 @@ ms.locfileid: "85547143"
 ## <a name="see-also"></a>另請參閱
 
 - [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [新增資料來源](../data-tools/add-new-data-sources.md)
+- [新增新資料來源](../data-tools/add-new-data-sources.md)
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [如何：使用資料庫中的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 - [如何：將物件的資料填入檔](../vsto/how-to-populate-documents-with-data-from-objects.md)

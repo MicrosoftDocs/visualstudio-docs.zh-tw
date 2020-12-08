@@ -1,5 +1,7 @@
 ---
 title: 伺服器 (Visual Studio SDK) |Microsoft Docs
+description: 本文說明 Visual Studio 中偵錯工具架構中伺服器的定義和角色。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32fdbb5afca40c3b4fced468d2f9ef0ea5226c00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9eaccebf874fa5fc0e7aaf63823547742215a568
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712888"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845293"
 ---
 # <a name="servers-visual-studio-sdk"></a>伺服器 (Visual Studio SDK)
 在偵錯工具架構中， *伺服器*：

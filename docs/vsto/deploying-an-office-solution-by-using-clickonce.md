@@ -1,5 +1,7 @@
 ---
 title: 使用 ClickOnce 部署 Office 方案
+description: 瞭解當您使用 ClickOnce 時，如何使用較少的步驟來部署 Office 方案。 如果您發行更新，方案會自動偵測並安裝更新。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809345"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845644"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 方案
   使用 ClickOnce 只需要幾個步驟就能部署 Office 方案。 如果您發行更新，方案會自動偵測並安裝更新。 不過，ClickOnce 要求您針對電腦上的每個使用者分別安裝方案。 因此，如果有一位以上的使用者要在同一部電腦上執行您的方案，您應該考慮使用 Windows Installer (*.msi) 。*
@@ -46,27 +48,27 @@ ms.locfileid: "90809345"
   如需有關如何藉由建立 Windows Installer 檔案來部署 Office 方案的詳細資訊，請參閱 [使用 Windows Installer 部署 office 方案](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md)。
 
 ## <a name="publish-the-solution"></a><a name="Publish"></a> 發佈方案
- 您可以使用 [ **發佈嚮導]** 或 [ **專案設計**工具] 發行您的方案。 在這個程式中，您將使用 [ **專案設計** 工具]，因為它會提供一組完整的發行選項。 請參閱 [Visual Studio&#41;中的發佈嚮導 &#40;Office 開發 ](../vsto/publish-wizard-office-development-in-visual-studio.md)。
+ 您可以使用 [ **發佈嚮導]** 或 [ **專案設計** 工具] 發行您的方案。 在這個程式中，您將使用 [ **專案設計** 工具]，因為它會提供一組完整的發行選項。 請參閱 [Visual Studio&#41;中的發佈嚮導 &#40;Office 開發 ](../vsto/publish-wizard-office-development-in-visual-studio.md)。
 
 #### <a name="to-publish-the-solution"></a>若要發行方案
 
-1. 在 **方案總管**中，選擇為您的專案命名的節點。
+1. 在 **方案總管** 中，選擇為您的專案命名的節點。
 
 2. 在功能表列上，選擇 [專案]、[**專案***名稱*]**屬性**。
 
-3. 在 [ **專案設計**工具] 中，選擇 [ **發行** ] 索引標籤，如下圖所示。
+3. 在 [ **專案設計** 工具] 中，選擇 [ **發行** ] 索引標籤，如下圖所示。
 
     ![[專案設計工具] 中的 [發行] 索引標籤](../vsto/media/vsto-publishtab.png "[專案設計工具] 中的 [發行] 索引標籤")
 
-4. 在 [ **發行資料夾位置 (ftp 伺服器或檔案路徑) ** ] 方塊中，輸入您要 **專案設計** 工具複製方案檔的資料夾路徑。
+4. 在 [ **發行資料夾位置 (ftp 伺服器或檔案路徑)** ] 方塊中，輸入您要 **專案設計** 工具複製方案檔的資料夾路徑。
 
     您可以輸入下列任何類型的路徑。
 
    - 本機路徑 (例如， *C:\FolderName\FolderName*) 。
 
-   - 統一命名慣例 (UNC) 路徑到網路上的資料夾 (例如， * \\ \ServerName\FolderName*) 。
+   - 統一命名慣例 (UNC) 路徑到網路上的資料夾 (例如， *\\ \ServerName\FolderName*) 。
 
-   - 相對路徑 (例如*PublishFolder \\ *，這是預設發佈專案) 的資料夾。
+   - 相對路徑 (例如 *PublishFolder \\*，這是預設發佈專案) 的資料夾。
 
 5. 在 [ **安裝資料夾 URL** ] 方塊中，輸入終端使用者可在其中找到您解決方案的位置完整路徑。
 
@@ -168,9 +170,9 @@ ms.locfileid: "90809345"
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>若要將 .vsto MIME 類型加入至 IIS 7.0
 
-1. 在執行 IIS 7.0 的伺服器上，選擇 [**啟動**  >  **所有程式**  >  **附屬**應用程式]。
+1. 在執行 IIS 7.0 的伺服器上，選擇 [**啟動**  >  **所有程式**  >  **附屬** 應用程式]。
 
-2. 開啟 [ **命令提示**字元] 的快捷方式功能表，然後選擇 [以  **系統管理員身分執行]。**
+2. 開啟 [ **命令提示** 字元] 的快捷方式功能表，然後選擇 [以  **系統管理員身分執行]。**
 
 3. 在 [ **開啟** ] 方塊中，輸入下列路徑，然後選擇 [ **確定]** 按鈕。
 
@@ -202,7 +204,7 @@ ms.locfileid: "90809345"
 
 4. 在 [ **名稱** ] 欄位中，輸入 **FileCopyPDA**，然後選擇 [ **確定]** 按鈕。
 
-5. 在 **方案總管**中，選擇 [ **FileCopyPDA** ] 專案。
+5. 在 **方案總管** 中，選擇 [ **FileCopyPDA** ] 專案。
 
 6. 在功能表列上，選擇 [**專案**  >  **加入參考**]。
 
@@ -221,7 +223,7 @@ ms.locfileid: "90809345"
 
 ### <a name="build-and-publish-the-solution"></a>建置及發行方案
 
-1. 在 **方案總管**中，開啟 **FileCopyPDA** 專案的快捷方式功能表，然後選擇 [ **組建**]。
+1. 在 **方案總管** 中，開啟 **FileCopyPDA** 專案的快捷方式功能表，然後選擇 [ **組建**]。
 
 2. 開啟 **ExcelWorkbook** 專案的快捷方式功能表，然後選擇 [ **建立**]。
 
@@ -229,13 +231,13 @@ ms.locfileid: "90809345"
 
 4. 在 [ **加入參考** ] 對話方塊中，選擇 [ **專案** ] 索引標籤，選擇 [ **FileCopyPDA**]，然後選擇 [ **確定]** 按鈕。
 
-5. 在 **方案總管**中，選擇 [ **ExcelWorkbook** ] 專案。
+5. 在 **方案總管** 中，選擇 [ **ExcelWorkbook** ] 專案。
 
 6. 在功能表列上，選擇 [**專案**  >  **新資料夾**]。
 
 7. 輸入 **資料**，然後選擇 **enter** 鍵。
 
-8. 在 **方案總管**中，選擇 [ **Data** ] 資料夾。
+8. 在 **方案總管** 中，選擇 [ **Data** ] 資料夾。
 
 9. 在功能表列上，選擇 [**專案**  >  **加入現有專案**]。
 
@@ -253,7 +255,7 @@ ms.locfileid: "90809345"
 
 ### <a name="modify-the-application-manifest"></a>修改應用程式資訊清單
 
-1. 使用**檔案總管**開啟方案目錄（ **c:\publish**）。
+1. 使用 **檔案總管** 開啟方案目錄（ **c:\publish**）。
 
 2. 開啟 [ **應用程式檔** ] 資料夾，然後開啟對應至最新發行之方案版本的資料夾。
 
@@ -280,9 +282,9 @@ ms.locfileid: "90809345"
 
 ### <a name="re-sign-the-application-and-deployment-manifests"></a>重新簽署應用程式和部署資訊清單
 
-1. 在 **%USERPROFILE%\Documents\Visual Studio 2013 \ Projects\ExcelWorkbook\ExcelWorkbook**資料夾中，複製**ExcelWorkbook_TemporaryKey 的 .pfx**憑證檔案，然後將它貼到*PublishFolder* **\Application Files\ExcelWorkbook** \_ _MostRecentPublishedVersion_資料夾中。
+1. 在 **%USERPROFILE%\Documents\Visual Studio 2013 \ Projects\ExcelWorkbook\ExcelWorkbook** 資料夾中，複製 **ExcelWorkbook_TemporaryKey 的 .pfx** 憑證檔案，然後將它貼到 *PublishFolder* **\Application Files\ExcelWorkbook** \_ _MostRecentPublishedVersion_ 資料夾中。
 
-2. 開啟 Visual Studio 命令提示字元，然後將目錄變更為**c:\publish\Application Files\ExcelWorkbook** \_ _MostRecentPublishedVersion_資料夾 (例如**c:\publish\Application Files \ ExcelWorkbook_1_0_0_4**) 。
+2. 開啟 Visual Studio 命令提示字元，然後將目錄變更為 **c:\publish\Application Files\ExcelWorkbook** \_ _MostRecentPublishedVersion_ 資料夾 (例如 **c:\publish\Application Files \ ExcelWorkbook_1_0_0_4**) 。
 
 3. 執行下列命令簽署修改後的應用程式資訊清單：
 
@@ -304,7 +306,7 @@ ms.locfileid: "90809345"
 
      「ExcelWorkbook.vsto 簽署成功」訊息隨即顯示。
 
-5. 將*ExcelWorkbook vsto*檔複製到**c:\publish\Application Files\ExcelWorkbook** \_ _MostRecentVersionNumber_目錄。
+5. 將 *ExcelWorkbook vsto* 檔複製到 **c:\publish\Application Files\ExcelWorkbook** \_ _MostRecentVersionNumber_ 目錄。
 
 ## <a name="put-the-document-of-a-solution-onto-a-server-thats-running-sharepoint-document-level-customizations-only"></a><a name="SharePoint"></a> 將方案的檔放置到執行 SharePoint 的伺服器上 (檔層級的自訂) 
  您可以使用 SharePoint 將文件層級自訂發行至終端使用者。 當使用者前往 SharePoint 網站並開啟文件時，執行階段會自動將共用網路資料夾中的方案安裝到使用者的本機電腦。 方案安裝到本機上之後，即使文件是複製到其他地方 (例如桌面)，自訂仍舊會執行。
@@ -325,7 +327,7 @@ ms.locfileid: "90809345"
 
         2. 在 [ **信任中心** ] 對話方塊中，選擇 [ **信任位置** ] 按鈕。
 
-        3. 選取 [ **允許我的網路上的受信任位置 (不建議使用) ** ] 核取方塊，然後選擇 [ **新增位置** ] 按鈕。
+        3. 選取 [ **允許我的網路上的受信任位置 (不建議使用)** ] 核取方塊，然後選擇 [ **新增位置** ] 按鈕。
 
         4. 在 [ **路徑** ] 方塊中，輸入包含您上傳之檔的 SharePoint 文件庫 URL (例如 *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*) 。
 
@@ -342,18 +344,18 @@ ms.locfileid: "90809345"
 
  *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
- 如果工具不在該位置中，您可以使用 **HKEY_LOCAL_MACHINE \Software\microsoft\vsto runtime Setup\v4\InstallerPath** 或 **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\vsto runtime Setup\v4\InstallerPath** 登錄機碼來尋找該工具的路徑。
+ 如果工具不在該位置中，您可以使用 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** 或 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath** 登錄機碼來尋找該工具的路徑。
 
- 您可以搭配 *VSTOinstaller.exe*使用下列參數。
+ 您可以搭配 *VSTOinstaller.exe* 使用下列參數。
 
 | 參數 | 定義 |
 |------------------| - |
-| /Install 或 /I | 安裝方案。 這個選項後面必須接著部署資訊清單的路徑。 您可以指定本機電腦上的路徑，也就是通用命名慣例 (UNC) 檔案共用。 您可以指定本機路徑 (*C:\FolderName\PublishFolder*) 、 (*發行 \\ *) 的相對路徑，或 (* \\ \ServerName\FolderName*或 HTTP://<em>ServerName/資料夾名稱</em>) 的完整位置。 |
-| /Uninstall 或 /U | 解除安裝方案。 這個選項後面必須接著部署資訊清單的路徑。 您可以指定位於本機電腦或 UNC 檔案共用上的路徑。 您可以指定本機路徑 (*c:\FolderName\PublishFolder*) 、 (*發行 \\ *) 的相對路徑，或 (* \\ \ServerName\FolderName*或 HTTP://<em>ServerName/資料夾名稱</em>) 的完整位置。 |
+| /Install 或 /I | 安裝方案。 這個選項後面必須接著部署資訊清單的路徑。 您可以指定本機電腦上的路徑，也就是通用命名慣例 (UNC) 檔案共用。 您可以指定本機路徑 (*C:\FolderName\PublishFolder*) 、 (*發行 \\*) 的相對路徑，或 (*\\ \ServerName\FolderName* 或 HTTP://<em>ServerName/資料夾名稱</em>) 的完整位置。 |
+| /Uninstall 或 /U | 解除安裝方案。 這個選項後面必須接著部署資訊清單的路徑。 您可以指定位於本機電腦或 UNC 檔案共用上的路徑。 您可以指定本機路徑 (*c:\FolderName\PublishFolder*) 、 (*發行 \\*) 的相對路徑，或 (*\\ \ServerName\FolderName* 或 HTTP://<em>ServerName/資料夾名稱</em>) 的完整位置。 |
 | /Silent 或 /S | 在不提示使用者輸入或顯示任何訊息的情況下，進行安裝或解除安裝。 如果需要信任提示，則不會安裝或更新自訂。 |
 | /Help 或 /? | 顯示 [說明] 資訊。 |
 
- 當您執行 *VSTOinstaller.exe*時，可能會出現下列錯誤碼。
+ 當您執行 *VSTOinstaller.exe* 時，可能會出現下列錯誤碼。
 
 |錯誤碼|定義|
 |----------------|----------------|
@@ -410,7 +412,7 @@ ms.locfileid: "90809345"
 
 #### <a name="to-update-the-_assemblylocation-property-in-a-document"></a>若要更新文件中的 _AssemblyLocation 屬性
 
-1. **在 [檔案] 索引**標籤上，選擇 [**資訊**]，如下圖所示。
+1. **在 [檔案] 索引** 標籤上，選擇 [**資訊**]，如下圖所示。
 
      ![Excel 中的 [資訊] 索引標籤](../vsto/media/vsto-infotab.png "Excel 中的 [資訊] 索引標籤")
 
@@ -424,7 +426,7 @@ ms.locfileid: "90809345"
 
      [ **值** ] 方塊包含部署資訊清單識別碼。
 
-4. 在識別碼前面輸入檔的完整路徑，後面接著一個橫條，格式*路徑* | *識別碼* (例如*File://ServerName/FolderName/FileName|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*。
+4. 在識別碼前面輸入檔的完整路徑，後面接著一個橫條，格式 *路徑* | *識別碼* (例如 *File://ServerName/FolderName/FileName|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*。
 
      如需有關如何格式化此識別碼的詳細資訊，請參閱 [自訂文件屬性總覽](../vsto/custom-document-properties-overview.md)。
 
@@ -445,7 +447,7 @@ ms.locfileid: "90809345"
 
 4. 將部署資訊清單從該資料夾複製至最上層發行資料夾。
 
-     例如，若要將稱為**為 outlookaddin1 方案**的方案從版本1.0.0.1 復原至1.0.0.0 版，請從**OutlookAddIn1_1_0_0_0**資料夾複製檔案**為 outlookaddin1 方案。** 將檔案貼到最上層的 [發行] 資料夾，覆寫已存在的 **OutlookAddIn1_1_0_0_1** 的版本特定部署資訊清單。
+     例如，若要將稱為 **為 outlookaddin1 方案** 的方案從版本1.0.0.1 復原至1.0.0.0 版，請從 **OutlookAddIn1_1_0_0_0** 資料夾複製檔案 **為 outlookaddin1 方案。** 將檔案貼到最上層的 [發行] 資料夾，覆寫已存在的 **OutlookAddIn1_1_0_0_1** 的版本特定部署資訊清單。
 
      下圖顯示這個範例中的發行資料夾結構。
 

@@ -1,5 +1,7 @@
 ---
 title: GetValidCompatibleFramework 函式
+description: 瞭解 GetValidCompatibleFramework API 如何支援 Office 基礎結構，而且不適合直接從程式碼使用。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2219417fe8ddae3d11d0e624ad12d3de80e290dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96f536b3ab8e28b87a59a637fcf6dbaadeb21bf7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520220"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845072"
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework 函式
   此 API 支援 Office 基礎結構，而且不適合直接從程式碼使用。
@@ -31,7 +33,7 @@ HRESULT WINAPI GetValidCompatibleFramework(
 
 ### <a name="parameters"></a>參數
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |*lpwszCompatibleFrameworksXML*|請勿使用。|
 |*pbstrValidFrameworkTag*|請勿使用。|
