@@ -1,5 +1,7 @@
 ---
 title: How to：產生安裝程式的登錄資訊 |Microsoft Docs
+description: 瞭解如何使用 Visual Studio 中的 RegPkg.exe 公用程式來產生 VSPackage 登錄資訊，以併入 Windows installer 安裝套件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,19 +14,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0140ea2e1b894754b0cf35bc75676f277b12a0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 082833c97706868261e39b50377c158f90b46a4a
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905464"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761221"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>How to：產生安裝程式的登錄資訊
 
-*RegPkg.exe*公用程式可以用來產生受控 VSPackage 的註冊資訊清單。 資訊清單可以併入 Windows Installer 安裝套件中。 RegPkg 也可以產生可包含在安裝程式原始程式檔中的檔案，該檔案是以 [WINDOWS INSTALLER XML 工具](https://wixtoolset.org/)組為基礎。
+*RegPkg.exe* 公用程式可以用來產生受控 VSPackage 的註冊資訊清單。 資訊清單可以併入 Windows Installer 安裝套件中。 RegPkg 也可以產生可包含在安裝程式原始程式檔中的檔案，該檔案是以 [WINDOWS INSTALLER XML 工具](https://wixtoolset.org/)組為基礎。
 
 > [!IMPORTANT]
-> RegPkg 會產生您的開發系統專屬的路徑名稱，因此您每次使用 RegPkg 時，都必須編輯輸出，以使用適當的 Windows Installer 格式化屬性。 例如，此 `InprocServer32` 值應該是* \<SystemFolder\>mscoree.dll* ，且路徑應該使用 *\<#filekey\>* 和 *\<$componentkey\>* 。 以這種方式調整輸出，可支援在不同的磁片磁碟機或不同的目錄、當地語系化的目錄名稱和使用者可以選擇的路徑上安裝 Windows 的電腦。 如需詳細資訊，請參閱 Windows Installer SDK 中的 [格式化](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) 。 如果您遵循開發系統路徑的 RegPkg 慣例（例如*File_ \<filename\> *格式的檔案識別碼），您需要進行較少的變更。
+> RegPkg 會產生您的開發系統專屬的路徑名稱，因此您每次使用 RegPkg 時，都必須編輯輸出，以使用適當的 Windows Installer 格式化屬性。 例如，此 `InprocServer32` 值應該是 *\<SystemFolder\>mscoree.dll* ，且路徑應該使用 *\<#filekey\>* 和 *\<$componentkey\>* 。 以這種方式調整輸出，可支援在不同的磁片磁碟機或不同的目錄、當地語系化的目錄名稱和使用者可以選擇的路徑上安裝 Windows 的電腦。 如需詳細資訊，請參閱 Windows Installer SDK 中的 [格式化](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) 。 如果您遵循開發系統路徑的 RegPkg 慣例（例如 *File_ \<filename\>* 格式的檔案識別碼），您需要進行較少的變更。
 
 ## <a name="to-create-a-registration-manifest"></a>若要建立註冊資訊清單
 

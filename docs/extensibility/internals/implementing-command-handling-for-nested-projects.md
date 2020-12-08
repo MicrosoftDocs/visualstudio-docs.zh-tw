@@ -1,5 +1,7 @@
 ---
 title: 執行嵌套專案的命令處理 |Microsoft Docs
+description: 瞭解如何在 (IDE) 的 Visual Studio 整合式開發環境中，執行嵌套專案的命令處理。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2092fc8033d5a5cc53b12bd63a945bd9865ca30e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cfa6ebb8cae645202339c511f15ca15e2b3490
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707601"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761149"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>實作巢狀專案的命令處理
 IDE 可以傳遞透過 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面傳遞至嵌套專案的命令，或可讓父專案篩選或覆寫命令的命令。

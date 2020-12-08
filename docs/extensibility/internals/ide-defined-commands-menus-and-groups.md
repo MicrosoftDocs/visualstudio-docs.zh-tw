@@ -1,5 +1,7 @@
 ---
-title: IDE 定義的命令、功能表和群組 |Microsoft Docs
+title: IDE-Defined 命令、功能表和群組 |Microsoft Docs
+description: 瞭解 Visual Studio 整合式開發環境中定義的功能表、命令和命令群組 (IDE) 。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6557f49b019a6793698dabe852919ec2e9f28cfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6314199fdf850c377825ee31e58cd9f315c5f672
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707722"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761019"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE 定義的命令、功能表和群組
 許多功能表、命令和命令群組已定義為可供 IDE 使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 當您擴充時，也可以使用這些命令 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-## <a name="finding-environment-defined-commands"></a>尋找環境定義的命令
+## <a name="finding-environment-defined-commands"></a>尋找 Environment-Defined 命令
  環境命令是定義在一組四個 .vsct 檔案中：
 
 - SharedCmdDef. .vsct

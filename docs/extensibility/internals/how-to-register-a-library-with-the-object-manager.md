@@ -1,5 +1,7 @@
 ---
 title: 如何：使用物件管理員註冊程式庫 |Microsoft Docs
+description: 瞭解如何使用 Visual Studio 物件管理員註冊程式庫，讓您可以在流覽工具中（例如類別檢視和物件瀏覽器）查看符號。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7179bd87fdfd9a2c3fc36958a9d964ec4f790dbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8036a0f4fe073473891805766ea8e3bb941951f8
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905230"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761374"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>如何：使用物件管理員註冊程式庫
 符號流覽工具（例如 **類別檢視**、 **物件瀏覽器**、 **呼叫瀏覽器** 和 **尋找符號結果**）可讓您在專案或外部元件中查看符號。 這些符號包括命名空間、類別、介面、方法和其他語言元素。 這些程式庫會追蹤這些符號，並將它們公開給以 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 資料填入工具的物件管理員。

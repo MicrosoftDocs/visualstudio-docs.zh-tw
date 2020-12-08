@@ -1,5 +1,7 @@
 ---
-title: 用來擴充專案系統的 IDE 定義的命令 |Microsoft Docs
+title: 擴充專案系統的 IDE-Defined 命令 |Microsoft Docs
+description: 瞭解用來擴充專案系統的 Visual Studio 整合式開發環境 (IDE) 中定義的命令和命令群組。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61c0b2924548f50ad650389e3ad81759be1986a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d5147f4e03b019b083613a77afe95b95e9e033a
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707728"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761162"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>用來擴充專案系統的 IDE 定義的命令
 當您想要擴充專案系統時，可以使用 IDE 所提供的命令和命令群組 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
@@ -28,11 +30,11 @@ ms.locfileid: "80707728"
 
 |命令功能表|描述|
 |------------------|-----------------|
-|IDM_VS_MENU_PROJECT|**專案**最上層功能表。|
-|IDM_VS_TOOL_PROJWIN|**方案總管**的工具列。|
+|IDM_VS_MENU_PROJECT|**專案** 最上層功能表。|
+|IDM_VS_TOOL_PROJWIN|**方案總管** 的工具列。|
 
 ## <a name="shortcut-menus"></a>快顯功能表
- 下表顯示在 **方案總管**中選取單一節點時，或當 **方案總管**中有多個同質選取時（當所有選取的節點都屬於相同類型時）適用的快捷方式功能表。
+ 下表顯示在 **方案總管** 中選取單一節點時，或當 **方案總管** 中有多個同質選取時（當所有選取的節點都屬於相同類型時）適用的快捷方式功能表。
 
 |捷徑功能表|描述|
 |-------------------|-----------------|

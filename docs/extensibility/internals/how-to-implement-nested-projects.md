@@ -1,5 +1,7 @@
 ---
 title: 如何：執行嵌套專案 |Microsoft Docs
+description: 瞭解如何藉由從方案和父專案引發事件以建立專案階層，在 Visual Studio 中執行嵌套專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85a5c14196211a638cd830ac6df39570288aa831
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905351"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761333"
 ---
 # <a name="how-to-implement-nested-projects"></a>如何：執行嵌套專案
 

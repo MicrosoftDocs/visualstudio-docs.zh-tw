@@ -1,5 +1,7 @@
 ---
 title: 提供語言服務中的大綱支援 |Microsoft Docs
+description: 瞭解如何藉由新增編輯器控制的大綱區域和用戶端控制的大綱區域，在舊版語言服務中提供展開大綱的支援。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9397ff17ba80368a86ba03260b3c5af3759bfe8d
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905278"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761357"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>如何：在舊版語言服務中提供展開大綱支援
 有兩個選項可以擴充您語言的大綱支援，除了支援 [折迭 **至定義** ] 命令以外。 您可以新增編輯器控制的大綱區域，以及新增用戶端控制的大綱區域。

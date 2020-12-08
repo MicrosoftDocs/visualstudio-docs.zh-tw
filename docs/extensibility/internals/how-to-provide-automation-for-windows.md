@@ -1,5 +1,7 @@
 ---
 title: 如何：為 Windows 提供自動化 |Microsoft Docs
+description: 瞭解如何使用 VisualStudio 方法，為 Visual Studio 中的檔和工具視窗提供自動化。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fec2b9ef6612a294dc70d129cf4bdd3dde843262
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a22e397a4c55ae23241e6fc89fb7d896fffa78f4
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905261"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761292"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>如何：為 windows 提供自動化
 

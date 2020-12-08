@@ -1,5 +1,7 @@
 ---
 title: 如何：在舊版語言服務中支援大綱 |Microsoft Docs
+description: 瞭解如何在舊版語言服務中提供大綱、擴充或折迭不同文字區域的支援。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28396d513c83ed83e2769e75a6020a98b10251b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9d1d7b7a74b6565c666e4d5e3293caaef3c7732
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707910"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761318"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何：在舊版語言服務中支援大綱
 大綱是用來展開或折迭不同的文字區域。 使用大綱的方式可以不同的語言來定義。 如需詳細資訊，請參閱[大綱](../../ide/outlining.md)。
@@ -36,7 +38,7 @@ ms.locfileid: "80707910"
 2. 呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> 目前大綱的會話物件，以加入新的外框區域。
 
 ## <a name="robust-programming"></a>穩固程式設計
- 當使用者選取**大綱**功能表上的 [折迭**至定義**] 時，IDE 會 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> 在您的語言服務上呼叫。
+ 當使用者選取 **大綱** 功能表上的 [折迭 **至定義**] 時，IDE 會 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> 在您的語言服務上呼叫。
 
  當呼叫這個方法時，IDE 會將指標傳入 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> (文字緩衝區的指標) 和 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (目前大綱會話) 的指標。
 

@@ -1,5 +1,7 @@
 ---
 title: Vspackage 如何新增消費者介面元素 |Microsoft Docs
+description: 瞭解 Vspackage 如何將使用者介面 (UI) 元素（例如功能表、工具列和工具視窗）新增至 Visual Studio。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d9cc3184009dd98e743064db1b8eb2abe6059d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649602"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761084"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 如何新增使用者介面元素
 VSPackage 可以新增使用者介面 (UI) 專案，例如功能表、工具列和工具視窗），透過 .vsct 檔案來 Visual Studio *。*
@@ -36,7 +38,7 @@ VSPackage 可以新增使用者介面 (UI) 專案，例如功能表、工具列�
 每個命令都必須有群組作為其父系，即使它是該群組中唯一的子系。 每個標準功能表也都必須有父群組。 工具列和工具視窗作為其本身的父系。 群組可以有主要 Visual Studio 功能表列或任何功能表、工具列或工具視窗的父系。
 
 ### <a name="how-items-are-defined"></a>專案的定義方式
-*.Vsct*檔案會以 XML 格式格式化。 它會定義封裝的 UI 元素，並決定這些專案在 IDE 中的顯示位置。 套件中的每個功能表、群組或命令都會先指派一節中的 GUID 和識別碼 `Symbols` 。 在 *.vsct* 檔案的其餘部分中，每個功能表、命令和群組都是以其 GUID 和 ID 組合來識別。 下列範例顯示在 `Symbols` 範本中選取 **功能表命令** 時，Visual Studio 套件範本所產生的一般區段。
+*.Vsct* 檔案會以 XML 格式格式化。 它會定義封裝的 UI 元素，並決定這些專案在 IDE 中的顯示位置。 套件中的每個功能表、群組或命令都會先指派一節中的 GUID 和識別碼 `Symbols` 。 在 *.vsct* 檔案的其餘部分中，每個功能表、命令和群組都是以其 GUID 和 ID 組合來識別。 下列範例顯示在 `Symbols` 範本中選取 **功能表命令** 時，Visual Studio 套件範本所產生的一般區段。
 
 ```xml
 <Symbols>
@@ -77,7 +79,7 @@ VSPackage 可以新增使用者介面 (UI) 專案，例如功能表、工具列�
 
 - `id`符合相關聯元素名稱的屬性 `IDSymbol` 。
 
-`guid`和屬性會一起 `id` 撰寫 UI 元素*signature*的簽章。
+`guid`和屬性會一起 `id` 撰寫 UI 元素 *signature* 的簽章。
 
 - `priority`屬性，決定 UI 元素在其父功能表或群組中的位置。
 
@@ -88,7 +90,7 @@ VSPackage 可以新增使用者介面 (UI) 專案，例如功能表、工具列�
 
 - `type`屬性，指定功能表是否應在 IDE 中顯示為一種功能表或工具列。
 
-- 包含[ButtonText](../../extensibility/buttontext-element.md)專案的[字串](../../extensibility/strings-element.md)專案，這個專案會指定 IDE 中的功能表標題，以及[CommandName 元素](../../extensibility/commandname-element.md)，以指定**命令**視窗中用來存取功能表的名稱。
+- 包含 [ButtonText](../../extensibility/buttontext-element.md)專案的 [字串](../../extensibility/strings-element.md)專案，這個專案會指定 IDE 中的功能表標題，以及 [CommandName 元素](../../extensibility/commandname-element.md)，以指定 **命令** 視窗中用來存取功能表的名稱。
 
 - 選擇性旗標。 [CommandFlag 元素](../../extensibility/command-flag-element.md)可能會出現在功能表定義中，以變更其在 IDE 中的外觀或行為。
 
@@ -183,9 +185,9 @@ Combos 是在 `Combos` 一節中定義。 每個 `Combo` 元素都代表 IDE 中
 ### <a name="parenting"></a>育兒
 下列規則會管理專案如何呼叫另一個專案做為其父代。
 
-|項目|在命令資料表的這個區段中定義|可能包含 (做為父系，或在區段中放置 `CommandPlacements` ，或兩者) |可能包含 (稱為父) |
+|元素|在命令資料表的這個區段中定義|可能包含 (做為父系，或在區段中放置 `CommandPlacements` ，或兩者) |可能包含 (稱為父) |
 |-------------| - | - | - |
-|分組|[Groups 元素](../../extensibility/groups-element.md)、IDE、其他 vspackage|功能表、群組、專案本身|功能表、群組和命令|
+|群組|[Groups 元素](../../extensibility/groups-element.md)、IDE、其他 vspackage|功能表、群組、專案本身|功能表、群組和命令|
 |功能表|Menu[元素](../../extensibility/menus-element.md)、IDE、其他 vspackage|1到 *n* 個群組|0到 *n* 個群組|
 |工具列|Menu[元素](../../extensibility/menus-element.md)、IDE、其他 vspackage|專案本身|0到 *n* 個群組|
 |功能表項目|[按鈕元素](../../extensibility/buttons-element.md)、IDE、其他 vspackage|1到 *n* 個群組，專案本身|-0 到 *n* 個群組|

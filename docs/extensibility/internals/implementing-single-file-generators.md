@@ -1,5 +1,7 @@
 ---
-title: 執行單一檔案產生器 |Microsoft Docs
+title: 執行 Single-File 產生器 |Microsoft Docs
+description: '瞭解如何使用自訂工具來執行 IVsSingleFileGenerator 介面，以擴充 Visual Studio 中的 Visual Basic 和 Visual c # 專案系統。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e700d09277edbb04b30676d3965b6c996d0a11f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 373536844e3572e2e61b56c1b86f3e00ed47845d
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707662"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761240"
 ---
 # <a name="implementing-single-file-generators"></a>實作單一檔案產生器
 自訂工具（有時稱為單一檔案產生器）可用來擴充 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 和 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 中的專案系統 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 自訂工具是可實介面的 COM 元件 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> 。 使用這個介面時，自訂工具會將單一輸入檔轉換成單一輸出檔。 轉換的結果可能是原始程式碼，或任何其他有用的輸出。 自訂工具產生的程式碼檔案有兩個範例，是為了回應視覺化設計工具中的變更而產生的程式碼，以及使用 Web 服務描述語言 (WSDL) 產生的檔案。

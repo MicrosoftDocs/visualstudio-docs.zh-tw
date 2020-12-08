@@ -1,5 +1,7 @@
 ---
 title: 執行舊版語言 Service2 |Microsoft Docs
+description: 瞭解如何使用 managed package framework (MPF) ，來實行支援擴充語言服務功能的舊版語言服務。 第2部，共2部。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df44b92cdf311689397a062b127d4c3e514a15e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7da218a9ada593731e6205e017861084e73adc
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238695"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761136"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>執行舊版語言服務2
 若要使用 managed package framework (MPF) 來執行語言服務，您必須從類別衍生類別， <xref:Microsoft.VisualStudio.Package.LanguageService> 並執行下列抽象方法和屬性：
@@ -32,7 +34,7 @@ ms.locfileid: "88238695"
 
   為了支援其他功能，您的語言服務可能必須從其中一個 MPF 語言服務類別衍生類別;例如，若要支援其他的功能表命令，您必須從類別衍生類別 <xref:Microsoft.VisualStudio.Package.ViewFilter> ，並覆寫數個命令處理方法 (如需詳細資料，請參閱 <xref:Microsoft.VisualStudio.Package.ViewFilter>) 。 <xref:Microsoft.VisualStudio.Package.LanguageService>類別會提供一些方法，這些方法會呼叫以建立各種類別的新實例，而您會覆寫適當的建立方法以提供類別的實例。 例如，您需要覆寫 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> 類別中的方法， <xref:Microsoft.VisualStudio.Package.LanguageService> 以傳回您自己的類別的實例 <xref:Microsoft.VisualStudio.Package.ViewFilter> 。 如需詳細資訊，請參閱「具現化自訂類別」一節。
 
-  您的語言服務也可以提供自己的圖示，這些圖示會在許多地方使用。 例如，當顯示 IntelliSense 完成清單時，清單中的每個專案都可以有相關聯的圖示，將專案標記為方法、類別、命名空間、屬性，或您的語言所需的專案。 這些圖示用於所有 IntelliSense 清單、 **導覽**列，以及 [ **錯誤清單** ] 工作視窗。 如需詳細資訊，請參閱下面的「語言服務影像」一節。
+  您的語言服務也可以提供自己的圖示，這些圖示會在許多地方使用。 例如，當顯示 IntelliSense 完成清單時，清單中的每個專案都可以有相關聯的圖示，將專案標記為方法、類別、命名空間、屬性，或您的語言所需的專案。 這些圖示用於所有 IntelliSense 清單、 **導覽** 列，以及 [ **錯誤清單** ] 工作視窗。 如需詳細資訊，請參閱下面的「語言服務影像」一節。
 
 ## <a name="getlanguagepreferences-method"></a>GetLanguagePreferences 方法
  <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>方法一律會傳回類別的相同實例 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 。 <xref:Microsoft.VisualStudio.Package.LanguagePreferences>如果您的語言服務不需要任何其他喜好設定，則可以使用基類。 MPF 語言服務類別假設至少存在基類 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 。
@@ -232,7 +234,7 @@ namespace TestLanguagePackage
  針對 IntelliSense 完成清單，會針對類別的方法中的每個專案指定影像索引 <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> <xref:Microsoft.VisualStudio.Package.Declarations> ，如果您想要提供影像索引，則必須覆寫此專案。 從方法傳回的值 <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> 是在提供給類別的函式之影像清單中的索引 <xref:Microsoft.VisualStudio.Package.CompletionSet> ，也就是從類別中的方法傳回的相同影像清單 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> (<xref:Microsoft.VisualStudio.Package.CompletionSet> 當您覆寫 <xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A> 類別中的方法 <xref:Microsoft.VisualStudio.Package.Source> ，以提供不同的影像清單) 時，您可以變更要用於的影像清單。
 
 ### <a name="images-used-in-the-navigation-bar"></a>在巡覽列中使用的影像
- **巡覽列**會顯示類型和成員的清單，並用於快速導覽，可顯示圖示。 這些圖示是從 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> 類別中的方法取得 <xref:Microsoft.VisualStudio.Package.LanguageService> ，而且無法專門針對 **巡覽列**覆寫。 當代表下拉式方塊的清單填入類別中的方法時，會指定用於下拉式方塊中每一個專案的索引， <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> (查看 [舊版語言服務中的導覽列支援](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)) 。 這些映射索引是從剖析器以某種方式取得，通常是透過您的 <xref:Microsoft.VisualStudio.Package.Declarations> 類別版本。 取得索引的方式完全由您決定。
+ **巡覽列** 會顯示類型和成員的清單，並用於快速導覽，可顯示圖示。 這些圖示是從 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> 類別中的方法取得 <xref:Microsoft.VisualStudio.Package.LanguageService> ，而且無法專門針對 **巡覽列** 覆寫。 當代表下拉式方塊的清單填入類別中的方法時，會指定用於下拉式方塊中每一個專案的索引， <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> (查看 [舊版語言服務中的導覽列支援](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)) 。 這些映射索引是從剖析器以某種方式取得，通常是透過您的 <xref:Microsoft.VisualStudio.Package.Declarations> 類別版本。 取得索引的方式完全由您決定。
 
 ### <a name="images-used-in-the-error-list-task-window"></a>錯誤清單工作視窗中所使用的影像
  每當方法剖析器 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> (看到 [舊版語言服務剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)) 遇到錯誤，並將該錯誤傳遞給 <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> 類別中的方法時，錯誤 <xref:Microsoft.VisualStudio.Package.AuthoringSink> **清單** 工作視窗中就會回報錯誤。 圖示可以與工作視窗中出現的每個專案產生關聯，而該圖示來自于類別中的方法所傳回的相同影像清單 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> 。 MPF 類別的預設行為是不顯示包含錯誤訊息的影像。 不過，您可以從類別衍生類別並覆寫方法，以覆寫這個行為 <xref:Microsoft.VisualStudio.Package.Source> <xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A> 。 在該方法中，您會建立新的 <xref:Microsoft.VisualStudio.Package.DocumentTask> 物件。 在傳回該物件之前，您可以使用 <xref:Microsoft.VisualStudio.Shell.Task.ImageIndex%2A> 物件上的屬性 <xref:Microsoft.VisualStudio.Package.DocumentTask> 來設定影像索引。 這看起來會像下面的範例。 請注意， `TestIconImageIndex` 是一種列舉，其中會列出所有圖示，而且是此範例特有的。 您可能會有不同的方式來識別語言服務中的圖示。

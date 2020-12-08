@@ -1,5 +1,7 @@
 ---
 title: 影像服務工具 |Microsoft Docs
+description: 瞭解 Visual Studio SDK 中提供的工具，可協助您使用 Visual Studio 映射服務來建立擴充功能。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2ddb0342-eb22-429a-bdf3-ccc2719a7ceb
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f5f1ff7cd573ff2524d35afc268858855540526
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9988b32d693fe9d65d70543a0f3d1da9a69959db
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707713"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761123"
 ---
 # <a name="image-service-tools"></a>影像服務工具
 VS SDK 包含數個工具，可協助延伸模組產生器使用 Visual Studio 的映射服務。
