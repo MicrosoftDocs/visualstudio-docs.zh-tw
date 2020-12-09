@@ -1,5 +1,7 @@
 ---
 title: 使用 CRT 程式庫尋找記憶體流失 |Microsoft Docs
+description: 瞭解 C/c + + 偵錯工具和 C 執行時間程式庫 (CRT) 如何協助找出記憶體流失。 這些技術包括記憶體流失報告和比較記憶體快照集。
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f5c906bd06fd4107166a45e93bf11be579c2270
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350481"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863071"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>尋找 CRT 程式庫的記憶體流失問題
 
@@ -67,7 +69,7 @@ _CrtDumpMemoryLeaks();
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
 ```
 
-根據預設， `_CrtDumpMemoryLeaks` 會將記憶體流失報告輸出至 [輸出] **** 視窗的 [偵錯] **** 窗格。 如果您使用程式庫，該程式庫可能會重設輸出至其他位置。
+根據預設， `_CrtDumpMemoryLeaks` 會將記憶體流失報告輸出至 [輸出]  視窗的 [偵錯]  窗格。 如果您使用程式庫，該程式庫可能會重設輸出至其他位置。
 
 您可以使用 `_CrtSetReportMode` 將報表重新導向至另一個位置，或重新導向至 [ **輸出** ] 視窗，如下所示：
 
@@ -108,11 +110,11 @@ Object dump complete.
 - 區塊的大小， `64 bytes` 在此範例中為。
 - 區塊中前 16 個位元組的資料 (十六進位格式)。
 
-記憶體區塊類型為 *一般*、 *用戶端*或 *CRT*。 *「一般區塊」* (Normal Block) 是您的程式所配置的一般記憶體。 *「用戶端區塊」* (Client Block) 是 MFC 程式專為需要解構函式的物件所使用的一種特殊類型的記憶體區塊。 MFC 的 `new` 運算子會根據所建立的物件來建立一般區塊或用戶端區塊。
+記憶體區塊類型為 *一般*、 *用戶端* 或 *CRT*。 *「一般區塊」* (Normal Block) 是您的程式所配置的一般記憶體。 *「用戶端區塊」* (Client Block) 是 MFC 程式專為需要解構函式的物件所使用的一種特殊類型的記憶體區塊。 MFC 的 `new` 運算子會根據所建立的物件來建立一般區塊或用戶端區塊。
 
 *「CRT 區塊」* (CRT Block) 則是 CRT 程式庫配置來供自身使用的記憶體區塊。 CRT 程式庫會處理這些區塊的解除配置，因此 CRT 區塊不會出現在記憶體流失報告中，除非 CRT 程式庫發生嚴重問題。
 
-另外還有兩種絕對不會出現在記憶體流失報告中的記憶體區塊。 *可用區塊*是已釋放的記憶體，因此不會流失定義。 「 *忽略區塊」（ignore block* ）是您明確標示為從記憶體流失報告中排除的記憶體。
+另外還有兩種絕對不會出現在記憶體流失報告中的記憶體區塊。 *可用區塊* 是已釋放的記憶體，因此不會流失定義。 「 *忽略區塊」（ignore block* ）是您明確標示為從記憶體流失報告中排除的記憶體。
 
 上述技術會識別使用標準 CRT 函數配置的記憶體記憶體流失 `malloc` 。 但是，如果您的程式使用 c + + 運算子來配置記憶體 `new` ，您可能只會看到檔案名和行號，也就 `operator new` `_malloc_dbg` 是記憶體流失報告中的呼叫。 若要建立更有用的記憶體流失報表，您可以撰寫如下所示的宏來報告進行配置的那一行：
 
@@ -167,7 +169,7 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```
 
-此輸出報告遺漏的配置是在 *debug_new .cpp*的第20行上。
+此輸出報告遺漏的配置是在 *debug_new .cpp* 的第20行上。
 
 >[!NOTE]
 >我們不建議您建立名為的預處理器宏 `new` ，或任何其他語言關鍵字。
@@ -182,7 +184,7 @@ Object dump complete.
 
 1. 在應用程式的開頭附近設定中斷點，然後開始進行偵錯工具。
 
-1. 當應用程式在中斷點暫停時，請選取 [ **Debug**Windows **Watch**  >  **Windows**  >  **Watch 1** (] 或 **[觀賞 2**]、 **[監看式 3**] 或 **[觀賞 4]**) 開啟 [監看式] 視窗。
+1. 當應用程式在中斷點暫停時，請選取 [ **Debug** Windows **Watch**  >  **Windows**  >  **Watch 1** (] 或 **[觀賞 2**]、 **[監看式 3**] 或 **[觀賞 4]**) 開啟 [監看式] 視窗。
 
 1. 在 [ **監看** 式] 視窗中，輸入 `_crtBreakAlloc` [ **名稱** ] 資料行。
 
@@ -192,7 +194,7 @@ Object dump complete.
 
 1. 按 **Enter**。
 
-   偵錯工具會評估呼叫，並將結果放在 [值] **** 欄中。 如果您尚未在記憶體配置上設定任何中斷點，此值將會是 **-1** 。
+   偵錯工具會評估呼叫，並將結果放在 [值]  欄中。 如果您尚未在記憶體配置上設定任何中斷點，此值將會是 **-1** 。
 
 1. 在 [ **值** ] 資料行中，將值取代為您想要偵錯工具中斷的記憶體配置的配置編號。
 
@@ -262,6 +264,6 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 
 ## <a name="see-also"></a>另請參閱
 
-- [CRT debug 堆積詳細資料](../debugger/crt-debug-heap-details.md)
+- [CRT 偵錯堆積詳細資料](../debugger/crt-debug-heap-details.md)
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [程式碼的偵錯工具](../debugger/debugging-native-code.md)

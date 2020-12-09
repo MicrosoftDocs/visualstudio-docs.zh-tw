@@ -1,5 +1,7 @@
 ---
 title: 偵錯工具中的運算式 |Microsoft Docs
+description: 'Visual c # 專案可使用 [編輯後繼續]。 瞭解哪些是支援的編輯，以及如何控制是否以及何時套用您的編輯。'
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a06a249fee38ca7fd8521459eda7bbf4100a97
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 28d04ce836316024eb4aef9f1b4a9955d98dbba8
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600286"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862863"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的運算式
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。
@@ -170,7 +172,7 @@ int main()
 不支援匯入別名。
 
 ### <a name="variable-declarations"></a>變數宣告
-您無法在偵錯工具視窗中明確宣告新的變數。 不過，您可以在 [即時運算] **** 視窗中指派新的隱含變數。 這些隱含變數的範圍限於偵錯工作階段，並且無法在偵錯工具之外存取。 例如，陳述式 `o = 5` 將會隱含地建立新變數 `o` ，並將值 5 指派給該變數。 除非偵錯工具能夠推斷類型，否則這類隱含變數屬於 **Object** 類型。
+您無法在偵錯工具視窗中明確宣告新的變數。 不過，您可以在 [即時運算]  視窗中指派新的隱含變數。 這些隱含變數的範圍限於偵錯工作階段，並且無法在偵錯工具之外存取。 例如，陳述式 `o = 5` 將會隱含地建立新變數 `o` ，並將值 5 指派給該變數。 除非偵錯工具能夠推斷類型，否則這類隱含變數屬於 **Object** 類型。
 
 ### <a name="unsupported-keywords"></a>不支援的關鍵字
 
@@ -206,6 +208,6 @@ int main()
 
 ## <a name="see-also"></a>另請參閱
 - [C + + 中的格式規範](../debugger/format-specifiers-in-cpp.md)
-- [內容運算子 (C++)](../debugger/context-operator-cpp.md)
-- [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)
+- [ (c + +) 的內容運算子 ](../debugger/context-operator-cpp.md)
+- [C 中的格式規範#](../debugger/format-specifiers-in-csharp.md)
 - [虛擬變數](../debugger/pseudovariables.md)

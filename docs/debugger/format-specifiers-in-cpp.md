@@ -1,5 +1,7 @@
 ---
 title: 偵錯工具中的格式規範 (c + +) |Microsoft Docs
+description: 使用格式規範來變更在 [監看式]、[自動變數] 或 [區域變數] 視窗中顯示值的格式。 本文提供使用詳細資料。
+ms.custom: SEO-VS-2020
 ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
-ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
+ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832316"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863032"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中 c + + 的格式規範
 您可以使用格式規範變更在 [**監看式]、[** 自動變數]**和 [****區域變數**] 視窗中顯示值的格式。
@@ -50,7 +52,7 @@ int main() {
 }
 ```
 
-將 `my_var1` 變數加入至 [**監看**式] 視窗（在進行調試時），並將它設為 [ **Debug**  >  ** **]  >  **Watch**  >  **Watch 1** 接下來，以滑鼠右鍵按一下變數，然後選取 [ **十六進位顯示**]。 現在 [ **監看** 式] 視窗會顯示值0x0065。 若要查看以字元而非整數表示的此值，請先以滑鼠右鍵按一下並取消選取 [ **十六進位顯示**]。 然後在**名稱**資料行中 **，** 將字元格式規範 c 加入變數名稱後面。 **值**資料行現在會顯示**101 ' e '**。
+將 `my_var1` 變數加入至 [**監看** 式] 視窗（在進行調試時），並將它設為 [ **Debug**  >  ****]  >  **Watch**  >  **Watch 1** 接下來，以滑鼠右鍵按一下變數，然後選取 [ **十六進位顯示**]。 現在 [ **監看** 式] 視窗會顯示值0x0065。 若要查看以字元而非整數表示的此值，請先以滑鼠右鍵按一下並取消選取 [ **十六進位顯示**]。 然後在 **名稱** 資料行中 **，** 將字元格式規範 c 加入變數名稱後面。 **值** 資料行現在會顯示 **101 ' e '**。
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 
@@ -156,7 +158,7 @@ int main() {
 |**l**<br /><br />**h**|長整數或短整數前置詞，用於：d、i、u、o、x、X|00406042|0x0c22|
 |**f**|帶正負號的浮點數|(3./2.), f|1.500000|
 |**pci-e**|帶正負號的科學記號表示法|(3.0/2.0)|1.500000e+000|
-|**g**|帶正負號的浮點數或帶正負號的科學記號<br/> 以較短者為准|(3.0/2.0)|1.5|
+|**G**|帶正負號的浮點數或帶正負號的科學記號<br/> 以較短者為准|(3.0/2.0)|1.5|
 |c|單一字元|\<location>|101 'e'|
 |s|const char * (加上引號) |\<location>|"hello world"|
 |su|const wchar_t*<br /><br /> 以引號括住的 const char16_t \* () |\<location>|L"hello world"|

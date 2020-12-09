@@ -1,5 +1,7 @@
 ---
 title: " (c + +) 的 [編輯後繼續] |Microsoft Docs"
+description: C + + 專案可使用 [編輯後繼續]。 瞭解哪些是支援的編輯，以及如何控制是否以及何時套用您的編輯。
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2a8cb40850aefe83ac048c708192bc24533a8296
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599648"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863058"
 ---
 # <a name="edit-and-continue-c"></a>編輯後繼續 (C++)
 您可以在 c + + 專案中使用 [編輯後繼續]。 如需 [編輯後繼續] 限制的相關資訊，請參閱支援的程式 [代碼變更 (c + +) ](../debugger/supported-code-changes-cpp.md) 。
@@ -41,13 +43,13 @@ ms.locfileid: "89599648"
 
 1. 如果您是在偵測會話中，請停止調試 (**Shift + F5**) 。
 
-2. 在 [工具]**** 功能表上，選擇 [選項]****。
+2. 在 [工具] 功能表上，選擇 [選項]。
 
 3. 在 [ **選項** ] 對話方塊中，選取 **[調試 > 一般**]。
 
 4. 若要啟用，請選取 [ **啟用編輯後繼續**]。 若要停用，請清除該核取方塊。
 
-5. 在 [編輯後繼續] **** 群組中，選取或清除 [啟用原生編輯後繼續] **** 核取方塊。
+5. 在 [編輯後繼續]  群組中，選取或清除 [啟用原生編輯後繼續]  核取方塊。
 
    修改這個設定會影響您處理的所有專案。 變更這個設定之後不需要重建應用程式。 如果您從命令列或 makefile 建立您的應用程式，但在 Visual Studio 環境中進行偵錯工具，您仍然可以在設定 **/zi** 選項時使用 [編輯後繼續]。
 
@@ -56,14 +58,14 @@ ms.locfileid: "89599648"
 
  當您明確套用程式碼變更時，程式會保持在中斷模式中，即完全不會執行。
 
-- 若要明確套用程式碼變更，請在 [偵錯] **** 功能表上，選擇 [套用程式碼變更] ****。
+- 若要明確套用程式碼變更，請在 [偵錯]  功能表上，選擇 [套用程式碼變更] 。
 
 ## <a name="how-to-stop-code-changes"></a><a name="BKMK_How_to_stop_code_changes"></a> 如何停止程式碼變更
  當 [編輯後繼續] 正在套用程式碼變更時，您可以停止該作業。
 
  若要停止套用程式碼變更：
 
-- 在 [偵錯] **** 功能表上，選擇 [停止套用程式碼變更] ****。
+- 在 [偵錯]  功能表上，選擇 [停止套用程式碼變更] 。
 
   只有套用程式碼變更時，才能看見這個功能表項目。
 
@@ -80,4 +82,4 @@ ms.locfileid: "89599648"
  在上述情形中，偵錯工具會繼續執行原始的程式碼直到套用變更為止。 過時程式碼會在不同的來源視窗中顯示為暫時原始程式檔視窗，並使用像是 `enc25.tmp`的標題。 已編輯的來源會繼續出現在原始來源視窗中。 如果您嘗試編輯過時程式碼，就會出現警告訊息。
 
 ## <a name="see-also"></a>另請參閱
-- [ (c + +) 支援的程式碼變更 ](../debugger/supported-code-changes-cpp.md)
+- [支援的程式碼變更 (C++)](../debugger/supported-code-changes-cpp.md)

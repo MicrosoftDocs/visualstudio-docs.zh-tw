@@ -1,5 +1,7 @@
 ---
 title: 編輯後繼續 (Visual Basic) |Microsoft Docs
+description: Visual Basic 專案可使用 [編輯後繼續]。 瞭解哪些是支援的編輯，以及如何控制是否以及何時套用您的編輯。
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4560973cd6ccd2bbfee48028494731935945a4c
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62851264"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862967"
 ---
 # <a name="edit-and-continue-visual-basic"></a>編輯後繼續 (Visual Basic)
 「編輯後繼續」是 [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] 偵錯的一個功能，當程式碼在中斷模式中執行時，這項功能可讓您變更程式碼。 套用程式碼編輯之後，您可以繼續以新的編輯執行程式碼，並查看其效果。
@@ -40,7 +42,7 @@ ms.locfileid: "62851264"
  > [!NOTE]
  > 不支援的應用程式和平臺包括 ASP.NET 5、Silverlight 5 及 Windows 8.1。
 
- 當您使用 [附加至處理序]**** 開始偵錯時，並不支援 [編輯後繼續]。 優化的程式碼或混合的 managed 和原生程式碼不支援 [編輯後繼續]。 如需詳細資訊，請參閱 [ (c # 和 Visual Basic) 支援的程式碼變更 ](../debugger/supported-code-changes-csharp.md)。
+ 當您使用 [附加至處理序] 開始偵錯時，並不支援 [編輯後繼續]。 優化的程式碼或混合的 managed 和原生程式碼不支援 [編輯後繼續]。 如需詳細資訊，請參閱 [ (c # 和 Visual Basic) 支援的程式碼變更 ](../debugger/supported-code-changes-csharp.md)。
 
  本章節中的主題提供其他詳細資訊，說明使用這項功能的方法以及不允許進行的變更種類。
 

@@ -1,6 +1,8 @@
 ---
 title: 檢查例外狀況
 titleSuffix: ''
+description: 瞭解 Visual Studio 提供來協助您偵測例外狀況的資訊，以及如何選擇性地停用例外狀況的中斷。
+ms.custom: SEO-VS-2020
 ms.date: 1/18/2020
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d0084abff760ff227b20137cd55d905b57e1a18
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ddc57d28510fe2e2cd5dbbb3aeea993813546715
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852494"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862811"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>使用例外狀況協助程式檢查例外狀況 
 
@@ -48,7 +50,7 @@ ms.locfileid: "90852494"
 > 在 managed 程式碼中的 Null 參考分析需要 .NET 版本4.6.2。 通用 Windows 平臺 (UWP) 和任何其他 .NET Core 應用程式目前不支援 Null 分析。 只有在對沒有任何及時 (JIT) 程式碼優化的程式碼進行偵錯工具時，才可使用此功能。
 
 ## <a name="configure-exception-settings"></a>設定例外狀況設定 
-您可以設定偵錯工具，以便在例外狀況協助程式的 **例外狀況設定** 區段中擲回目前類型的例外狀況時中斷。 如果偵錯工具在擲回的例外狀況時暫停，您就可以使用此核取方塊來停用在未來擲回的例外狀況類型。 如果您不想要在這個特定的模組中擲回這個特定的例外狀況時中斷，請在 [**例外狀況設定**] 視窗中的 [擲回**時除外**] 下，依模組名稱勾選核取方塊。 
+您可以設定偵錯工具，以便在例外狀況協助程式的 **例外狀況設定** 區段中擲回目前類型的例外狀況時中斷。 如果偵錯工具在擲回的例外狀況時暫停，您就可以使用此核取方塊來停用在未來擲回的例外狀況類型。 如果您不想要在這個特定的模組中擲回這個特定的例外狀況時中斷，請在 [**例外狀況設定**] 視窗中的 [擲回 **時除外**] 下，依模組名稱勾選核取方塊。 
 
 ## <a name="inspect-inner-exceptions"></a>檢查內部例外狀況 
 如果例外狀況 ([InnerException](/dotnet/api/system.exception.innerexception)有任何內部例外狀況，您可以在例外狀況協助程式中查看這些例外狀況。 如果有多個例外狀況，您可以使用呼叫堆疊上方顯示的向左和向右箭號來進行切換。
@@ -61,4 +63,4 @@ ms.locfileid: "90852494"
 ![引發例外狀況的例外狀況協助程式](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>與 Live Share 共用 debug 會話
-從例外狀況協助程式，您可以使用 [**啟動 Live Share 會話**] 連結來啟動[Live Share](/visualstudio/liveshare/)會話 .。。任何加入 Live Share 會話的人都可以看到例外狀況協助程式，以及任何其他的 debug 資訊。
+從例外狀況協助程式，您可以使用 [**啟動 Live Share 會話**] 連結來啟動 [Live Share](/visualstudio/liveshare/)會話 .。。任何加入 Live Share 會話的人都可以看到例外狀況協助程式，以及任何其他的 debug 資訊。

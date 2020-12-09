@@ -1,5 +1,6 @@
 ---
 title: 執行緒屬性對話方塊、一般索引標籤 |Microsoft Docs
+description: 如需執行緒的詳細資訊，請參閱 [執行緒屬性] 對話方塊，包括模組名稱、執行緒識別碼、處理序識別碼、執行緒狀態、等候原因和 CPU 時間。
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8604c2d31f6bb50e9e77efbf6423f56ed719c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd4c2bf24058ce8a69f05d8d2cee17a18ff9505d
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62896361"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862993"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>執行緒屬性對話方塊、一般索引標籤
 使用此對話方塊可深入瞭解特定執行緒。 若要顯示此對話方塊，請將焦點移至 [ [執行緒] 視圖](../debugger/threads-view.md) 視窗，或開啟 [訊息] [視圖](../debugger/messages-view.md) 並展開訊息。 選取樹狀結構中的任何執行緒節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。

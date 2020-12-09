@@ -1,5 +1,7 @@
 ---
 title: '偵錯工具中的格式規範 (c # ) |Microsoft Docs'
+description: 使用格式規範來變更監看式視窗中顯示值的格式。 本文提供使用詳細資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849835"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862785"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中 c # 的格式規範
 您可以使用格式規範變更在 [ **監看** 式] 視窗中顯示值的格式。 您也可以 **在 [即時** 運算] 視窗、 **命令** 視窗、追蹤 [點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)和來源視窗中使用格式規範。 如果您在這些視窗中的運算式上暫停，結果會以指定的格式顯示顯示在  [資料提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) 中。
@@ -48,7 +50,7 @@ ms.locfileid: "62849835"
 }
 ```
 
-將 `my_var1` 變數加入至 [**監看**式] 視窗（在進行調試時），並將它設為 [ **Debug**  >  ** **]  >  **Watch**  >  **Watch 1** 接下來，以滑鼠右鍵按一下變數，然後選取 [ **十六進位顯示**]。 現在 [ **監看** 式] 視窗會顯示值0x0065。 若要以十進位整數而非十六進位整數來查看此值，請在變數名稱後面的**名稱**資料行中，加入十進位格式規範**d** 。 **值**資料行現在會顯示**101**。
+將 `my_var1` 變數加入至 [**監看** 式] 視窗（在進行調試時），並將它設為 [ **Debug**  >  ****]  >  **Watch**  >  **Watch 1** 接下來，以滑鼠右鍵按一下變數，然後選取 [ **十六進位顯示**]。 現在 [ **監看** 式] 視窗會顯示值0x0065。 若要以十進位整數而非十六進位整數來查看此值，請在變數名稱後面的 **名稱** 資料行中，加入十進位格式規範 **d** 。 **值** 資料行現在會顯示 **101**。
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
 

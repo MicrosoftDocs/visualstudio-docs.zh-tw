@@ -1,5 +1,7 @@
 ---
 title: 'Visual c # ) 的 [編輯後繼續] (|Microsoft Docs'
+description: 'Visual c # 專案可使用 [編輯後繼續]。 瞭解哪些是支援的編輯，以及如何控制是否以及何時套用您的編輯。'
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62411229acd2d2f8462984789037fc832dac09b8
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: 55406001e4017c853895002445d9bd5d614b4b20
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421637"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862876"
 ---
 # <a name="edit-and-continue-visual-c"></a>編輯後繼續 (Visual C#)
  利用 C# 的 [編輯後繼續]，偵錯時您可以在中斷模式中變更程式碼。 不需要停止並重新啟動偵錯工作階段，就可以套用這些變更。 在執行模式中，原始檔編輯器是唯讀的。
@@ -34,7 +36,7 @@ ms.locfileid: "91421637"
  > [!NOTE]
  > 不支援的應用程式和平臺包括 Silverlight 5，以及 Windows 8.1。
 
- 啟用 [編輯後繼續] 時，當您使用偵錯工具執行命令 (例如 [繼續]****、[逐步執行]****、[設定下一個陳述式]****)，或在偵錯工具視窗中執行函式評估時，便會自動套用支援的變更。
+ 啟用 [編輯後繼續] 時，當您使用偵錯工具執行命令 (例如 [繼續]、[逐步執行]、[設定下一個陳述式])，或在偵錯工具視窗中執行函式評估時，便會自動套用支援的變更。
 
  如需詳細資訊，請參閱 [如何：使用編輯後繼續 (c # ) ](../debugger/how-to-use-edit-and-continue-csharp.md)。
 

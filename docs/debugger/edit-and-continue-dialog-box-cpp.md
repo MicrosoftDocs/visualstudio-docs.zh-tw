@@ -1,5 +1,7 @@
 ---
 title: " (c + +) 的 [編輯後繼續] 對話方塊 |Microsoft Docs"
+description: '[編輯後繼續] 可能會報告它無法套用您的程式碼變更。 瞭解為何會發生這種情況，以及您可以執行的動作。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba7b133594d016d1a80efae4d18d1fb55a96398d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: dc1e7a27624cede9ca20295d3dc890f172e35889
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599555"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862980"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>編輯後繼續對話方塊 (C++)
 [編輯後繼續] 無法套用您對機器碼所做的變更。 不過這可能只是暫時的狀況。 有時 [編輯後繼續] 無法立即套用機器碼變更，但是可以稍後在偵錯工作階段期間套用 (例如，完成目前執行的程序呼叫後)。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。

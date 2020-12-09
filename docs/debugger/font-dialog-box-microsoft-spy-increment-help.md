@@ -1,5 +1,7 @@
 ---
 title: 字型對話方塊 (Microsoft Spy + + 說明) |Microsoft Docs
+description: 您可以使用 [字型] 對話方塊來設定 Spy + + Views 視窗中所使用的字元字型。 本文提供使用詳細資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1746b8419c342b5627e1c6374b2b29f08f7ee75c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c3a3d5babc0fe78098661f22dd84fca1eac9b19
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849864"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862824"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>字型對話方塊 (Microsoft Spy++ 說明)
 使用此對話方塊來設定 [Spy + + [視圖](../debugger/spy-increment-views.md) ] 視窗中所使用的字元字型。 若要顯示此對話方塊，請展開 [ **View** ] 功能表並選擇 [ **字型**]。

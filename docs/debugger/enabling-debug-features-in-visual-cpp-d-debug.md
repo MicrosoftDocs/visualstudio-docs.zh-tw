@@ -1,5 +1,7 @@
 ---
 title: 在 c + + 專案中啟用 Debug 功能 (-D_DEBUG) |Microsoft Docs
+description: 在 Visual C++ 您可以藉由定義 _DEBUG 來啟用偵錯工具功能。 瞭解如何進行這項作業，並瞭解如何連結 MFC 程式以進行調試。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a2ead92108d66b54342019fc19702e7a6e53575
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737948"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862929"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>在 c + + 專案中啟用 Debug 功能 (/D_DEBUG) 
 在 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 中，當您使用已定義的 **_DEBUG** 符號編譯您的程式時，便會啟用判斷提示之類的偵錯功能。 您可以使用下列兩種方法之一定義 **_DEBUG**：
@@ -44,4 +46,4 @@ ms.locfileid: "72737948"
 
 ## <a name="see-also"></a>另請參閱
 - [偵錯機器碼](../debugger/debugging-native-code.md)
-- [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [C + + 偵錯工具設定的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)

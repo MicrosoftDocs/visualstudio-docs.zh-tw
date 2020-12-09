@@ -1,5 +1,7 @@
 ---
 title: 編輯後繼續錯誤訊息對話方塊 |Microsoft Docs
+description: '[編輯後繼續] 可能會報告您的程式碼變更無法使用它。 本文提供可能的原因。'
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df95eae689f7c3abbb0d75a7557ce749bdceee5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ef34889b838e2f7eaa92420eec90db9def57e65
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188230"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862839"
 ---
 # <a name="edit-and-continue-error-message"></a>編輯後繼續錯誤訊息
 
@@ -40,7 +42,7 @@ ms.locfileid: "73188230"
 - 嘗試在偵測 Dr. Watson 傾印時編輯程式碼。
 - 在未處理的例外狀況發生後嘗試編輯程式碼，但未選取 [未處理的例外狀況] 的 **[回溯呼叫堆疊** ] 選項。
 - 嘗試在對內嵌執行時間應用程式進行偵錯工具時編輯程式碼。
-- 嘗試使用64位應用程式目標的4.5.1 之前的 .NET Framework 版本來編輯 managed 程式碼。 若要針對4.5.1 之前的 .NET Framework 使用 [編輯後繼續]，請**x86**在 [ **\<ProjectName>**  >  **屬性**  >  **編譯**] **Advanced Compiler**索引標籤中，將 [目標] 設定為 [x86]
+- 嘗試使用64位應用程式目標的4.5.1 之前的 .NET Framework 版本來編輯 managed 程式碼。 若要針對4.5.1 之前的 .NET Framework 使用 [編輯後繼續]，請 **x86** 在 [ **\<ProjectName>**  >  **屬性**  >  **編譯**] **Advanced Compiler** 索引標籤中，將 [目標] 設定為 [x86]
 - 嘗試編輯元件中的程式碼在偵錯工具期間已修改，且已重載。
 - 嘗試編輯尚未載入之元件中的程式碼。
 - 開始對繼承應用程式進行偵錯工具，因為最新版本的組建錯誤。
