@@ -1,5 +1,7 @@
 ---
 title: 如何：加入刪除者方法 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 的 BDC 設計工具中加入刪除者方法，讓終端使用者可以從 SharePoint 網站上的外部清單中刪除資料記錄。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,19 +21,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd97d28936e9f0cc50e9064fdc1a6a64bb20fc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e41fbb4f70bd3f5ae2db72b630ae6e524d3def
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017037"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915436"
 ---
 # <a name="how-to-add-a-deleter-method"></a>如何：加入刪除者方法
   您可以藉由將刪除者方法加入至模型，讓終端使用者可以從 SharePoint 網站上的外部清單中刪除資料記錄。 如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
 ### <a name="to-create-a-deleter-method"></a>若要建立刪除者方法
 
-1. 在 **BDC 設計**工具上，選擇實體。
+1. 在 **BDC 設計** 工具上，選擇實體。
 
 2. 在功能表列上，選擇 [**查看**  >  **其他 Windows**  >  **BDC 方法詳細資料**]。
 
@@ -41,7 +43,7 @@ ms.locfileid: "86017037"
 
     Visual Studio 將下列元素加入至模型。 這些專案會出現在 [ **BDC 方法詳細資料** ] 視窗中。
 
-   - 名為 **Delete**的方法。
+   - 名為 **Delete** 的方法。
 
    - 方法的輸入參數。
 
@@ -51,7 +53,7 @@ ms.locfileid: "86017037"
 
      如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
-4. 在 **方案總管**中，開啟針對實體所產生之服務程式代碼檔案的快捷方式功能表，然後選擇 [ **View code**]。
+4. 在 **方案總管** 中，開啟針對實體所產生之服務程式代碼檔案的快捷方式功能表，然後選擇 [ **View code**]。
 
     Entity service 程式碼檔案會在程式碼編輯器中開啟。 如需實體服務程式代碼檔案的詳細資訊，請參閱 [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
 

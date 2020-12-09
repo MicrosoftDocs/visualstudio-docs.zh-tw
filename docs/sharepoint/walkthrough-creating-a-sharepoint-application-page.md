@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：建立 SharePoint 應用程式頁面 |Microsoft Docs
+description: 在這個逐步解說中， (特殊形式的 ASP.NET 網頁來建立應用程式頁面) 然後使用本機 SharePoint 網站進行調試。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95addb145312de85a3525c228297e7ff9636ea0d
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016495"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914877"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>逐步解說：建立 SharePoint 應用程式頁面
 
@@ -37,7 +39,7 @@ ms.locfileid: "86016495"
 > [!NOTE]
 > 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [個人化 VISUAL STUDIO IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 - 支援的 Windows 和 SharePoint 版本。
 
@@ -59,7 +61,7 @@ ms.locfileid: "86016495"
 
 若要建立應用程式頁面，請將 **應用程式頁面** 專案加入至專案。
 
-1. 在 **方案總管**中，選擇 [ **MySharePointProject** ] 專案。
+1. 在 **方案總管** 中，選擇 [ **MySharePointProject** ] 專案。
 
 2. 在功能表列上，選擇 [ **Project**  >  **加入新專案**]。
 
@@ -77,7 +79,7 @@ ms.locfileid: "86016495"
 
 2. 在 [ **工具箱**] 的 [標準] 節點中，執行下列其中一個步驟：
 
-    - 開啟 **標籤** 專案的快捷方式功能表，選擇 [ **複製**]，在設計工具中的 **PlaceHolderMain** 內容控制項下，開啟該行的快捷方式功能表，然後選擇 [ **貼**上]。
+    - 開啟 **標籤** 專案的快捷方式功能表，選擇 [ **複製**]，在設計工具中的 **PlaceHolderMain** 內容控制項下，開啟該行的快捷方式功能表，然後選擇 [ **貼** 上]。
 
     - 將 [ **標籤** ] 專案從 [ **工具箱** ] 拖曳至 **PlaceHolderMain** 內容控制項的主體。
 
@@ -127,7 +129,7 @@ ms.locfileid: "86016495"
 
 當您執行專案時，會開啟 SharePoint 網站並顯示應用程式頁面。
 
-1. 在 **方案總管**中，開啟 [應用程式] 頁面的快捷方式功能表，然後選擇 [ **設定為啟始專案**]。
+1. 在 **方案總管** 中，開啟 [應用程式] 頁面的快捷方式功能表，然後選擇 [ **設定為啟始專案**]。
 
 2. 選擇 **F5** 鍵。
 

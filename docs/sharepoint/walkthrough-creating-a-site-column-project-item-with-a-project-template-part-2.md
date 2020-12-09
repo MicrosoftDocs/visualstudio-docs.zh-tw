@@ -1,6 +1,8 @@
 ---
 title: 使用專案範本建立網站資料行專案專案（第2部分）
 titleSuffix: ''
+description: 當使用者使用範本來建立包含專案專案的 SharePoint 專案時，請將嚮導新增至網站資料行專案範本，以收集使用者的資料。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51fb7a4fb3d2ccba8c0a811619d7793e730a8ec4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e6e5c9a0bb461f6b81b9cb7e1aa5f0134a7bdcbd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585454"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915137"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>逐步解說：使用專案範本建立網站資料行專案專案（第2部分）
   在您定義自訂類型的 SharePoint 專案專案，並將其與 Visual Studio 中的專案範本建立關聯之後，您可能也會想要提供範本的嚮導。 當使用者使用您的範本建立包含專案專案的新專案時，您可以使用此嚮導來收集使用者的資訊。 您收集的資訊可以用來初始化專案專案。
@@ -80,7 +82,7 @@ ms.locfileid: "91585454"
 
 1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，開啟 SiteColumnProjectItem 方案。
 
-2. 在 **方案總管**中，開啟 [ **SiteColumnProjectItem** ] 方案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
+2. 在 **方案總管** 中，開啟 [ **SiteColumnProjectItem** ] 方案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
 
 3. 在 [ **加入新專案** ] 對話方塊頂端，確定已在 .NET Framework 版本清單中選擇 **.NET Framework 4.5** 。
 
@@ -94,7 +96,7 @@ ms.locfileid: "91585454"
 
 #### <a name="to-create-the-sharepoint-commands-project"></a>若要建立 SharePoint 命令專案
 
-1. 在 **方案總管**中，開啟 [SiteColumnProjectItem] 方案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
+1. 在 **方案總管** 中，開啟 [SiteColumnProjectItem] 方案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
 
 2. 在 [ **加入新專案** ] 對話方塊的頂端，選擇 .NET Framework 版本清單中的 **.NET Framework 3.5** 。
 
@@ -111,9 +113,9 @@ ms.locfileid: "91585454"
 
 #### <a name="to-configure-the-wizard-project"></a>若要設定 wizard 專案
 
-1. 在 **方案總管**中，開啟 [ **ProjectTemplateWizard** ] 專案節點的快捷方式功能表，然後選擇 [ **屬性**]。
+1. 在 **方案總管** 中，開啟 [ **ProjectTemplateWizard** ] 專案節點的快捷方式功能表，然後選擇 [ **屬性**]。
 
-2. 在 [ **專案設計**工具] 中，選擇 Visual c # 專案的 [ **應用程式** ] 索引標籤或 Visual Basic 專案的 [ **編譯** ] 索引標籤。
+2. 在 [ **專案設計** 工具] 中，選擇 Visual c # 專案的 [ **應用程式** ] 索引標籤或 Visual Basic 專案的 [ **編譯** ] 索引標籤。
 
 3. 請確定目標 framework 設定為 .NET Framework 4.5，而不是 .NET Framework 4.5 用戶端設定檔。
 
@@ -121,9 +123,9 @@ ms.locfileid: "91585454"
 
 4. 開啟 **ProjectTemplateWizard** 專案的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
 
-5. 選擇 **視窗 (WPF) ** 專案、將專案命名為 **WizardWindow**，然後選擇 [ **加入** ] 按鈕。
+5. 選擇 **視窗 (WPF)** 專案、將專案命名為 **WizardWindow**，然後選擇 [ **加入** ] 按鈕。
 
-6. 將 ** (WPF) ** 專案的兩個使用者控制項新增至專案，並將其命名為 **Page1** 和 **Page2**。
+6. 將 **(WPF)** 專案的兩個使用者控制項新增至專案，並將其命名為 **Page1** 和 **Page2**。
 
 7. 將四個程式碼檔案新增至專案，並為其指定下列名稱：
 
@@ -155,17 +157,17 @@ ms.locfileid: "91585454"
 
 10. 選擇 [ **確定]** 按鈕，將元件新增至專案。
 
-11. 在**方案總管**的 [ **ProjectTemplateWizard** ] 專案的 [**參考**] 資料夾下，選擇 [ **EnvDTE**]。
+11. 在 **方案總管** 的 [ **ProjectTemplateWizard** ] 專案的 [**參考**] 資料夾下，選擇 [ **EnvDTE**]。
 
 12. 在 [ **屬性** ] 視窗中，將 [ **內嵌 Interop 類型** ] 屬性的值變更為 [ **False**]。
 
-13. 如果您要開發 Visual Basic 專案，請使用 [ **專案設計**工具] 將 ProjectTemplateWizard 命名空間匯入至專案。
+13. 如果您要開發 Visual Basic 專案，請使用 [ **專案設計** 工具] 將 ProjectTemplateWizard 命名空間匯入至專案。
 
      如需詳細資訊，請參閱 [如何：新增或移除匯入的命名空間 &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)。
 
 #### <a name="to-configure-the-sharepointcommands-project"></a>設定 SharePointcommands 專案
 
-1. 在 **方案總管**中，選擇 [ **SharePointCommands** ] 專案節點。
+1. 在 **方案總管** 中，選擇 [ **SharePointCommands** ] 專案節點。
 
 2. 在功能表列上，選擇 [ **專案**]、[  **加入現有專案**]。
 
@@ -325,7 +327,7 @@ ms.locfileid: "91585454"
 
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>從專案範本中移除金鑰 .snk 檔案
 
-1. 在 **方案總管**的 [ **SiteColumnProjectTemplate** ] 節點底下，開啟機 **碼 .snk** 檔案的快捷方式功能表，然後選擇 [ **刪除**]。
+1. 在 **方案總管** 的 [ **SiteColumnProjectTemplate** ] 節點底下，開啟機 **碼 .snk** 檔案的快捷方式功能表，然後選擇 [ **刪除**]。
 
 2. 在隨後出現的確認對話方塊中選擇 [**確定**] 按鈕。
 
@@ -365,7 +367,7 @@ ms.locfileid: "91585454"
 
 #### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>使用強式名稱簽署 wizard 元件
 
-1. 在 **方案總管**中，開啟 **ProjectTemplateWizard** 專案的快捷方式功能表，然後選擇 [ **屬性**]。
+1. 在 **方案總管** 中，開啟 **ProjectTemplateWizard** 專案的快捷方式功能表，然後選擇 [ **屬性**]。
 
 2. 在 [簽署] 索引標籤上，選取 [簽署組件] 核取方塊。
 
@@ -377,7 +379,7 @@ ms.locfileid: "91585454"
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>取得 wizard 元件的公開金鑰 token
 
-1. 在 [ **開始] 功能表**上，依序選擇 [ **所有程式**]、[ **Microsoft Visual Studio**]、[ **Visual Studio Tools**]，然後選擇 [ **開發人員命令提示字元**]。
+1. 在 [ **開始] 功能表** 上，依序選擇 [ **所有程式**]、[ **Microsoft Visual Studio**]、[ **Visual Studio Tools**]，然後選擇 [ **開發人員命令提示字元**]。
 
      Visual Studio 的命令提示字元視窗隨即開啟。
 
@@ -393,7 +395,7 @@ ms.locfileid: "91585454"
 
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>在 .vstemplate 檔案中加入 wizard 元件的參考
 
-1. 在 **方案總管**中，展開 [ **SiteColumnProjectTemplate** ] 專案節點，然後開啟 SiteColumnProjectTemplate .vstemplate 檔案。
+1. 在 **方案總管** 中，展開 [ **SiteColumnProjectTemplate** ] 專案節點，然後開啟 SiteColumnProjectTemplate .vstemplate 檔案。
 
 2. 在檔案結尾附近， `WizardExtension` 于和標記之間新增下列元素 `</TemplateContent>` `</VSTemplate>` 。 *your token* `PublicKeyToken` 以您在上一個程式中取得的公開金鑰 token 取代屬性的 token 值。
 
@@ -473,17 +475,17 @@ ms.locfileid: "91585454"
 
 2. 在 ProjectTemplateWizard 專案中，開啟 SiteColumnProjectWizard 程式碼檔案，然後將中斷點加入至方法中的第一行程式碼 `RunStarted` 。
 
-3. 在功能表列上，選擇 [ **Debug**  >  **例外**狀況]。
+3. 在功能表列上，選擇 [ **Debug**  >  **例外** 狀況]。
 
-4. 在 [**例外**狀況] 對話方塊中，確定已清除 [ **Common Language Runtime 例外**狀況] 的 [擲回 **] 和 [** **使用者未處理**] 核取方塊，然後選擇 [**確定]** 按鈕。
+4. 在 [**例外** 狀況] 對話方塊中，確定已清除 [ **Common Language Runtime 例外** 狀況] 的 [擲回 **] 和 [** **使用者未處理**] 核取方塊，然後選擇 [**確定]** 按鈕。
 
-5. 選擇**F5**鍵，或是在功能表列上選擇 [ **Debug**  >  **開始調試**程式]，以開始進行偵錯工具。
+5. 選擇 **F5** 鍵，或是在功能表列上選擇 [ **Debug**  >  **開始調試** 程式]，以開始進行偵錯工具。
 
      Visual Studio 將擴充功能安裝到%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Site Column\1.0，並啟動 Visual Studio 的實驗實例。 您將在 Visual Studio 的這個實例中測試專案專案。
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>若要在 Visual Studio 中測試嚮導
 
-1. 在 Visual Studio 的實驗實例中 **，選擇功能表**欄上的 [檔案  >  **新增**  >  **專案**]。
+1. 在 Visual Studio 的實驗實例中 **，選擇功能表** 欄上的 [檔案  >  **新增**  >  **專案**]。
 
 2. 展開 [ **Visual c #** ] 節點或 [ **Visual Basic** 節點 (依據您的專案範本所支援的語言) ，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
@@ -491,11 +493,11 @@ ms.locfileid: "91585454"
 
 4. 確認 Visual Studio 的另一個實例中的程式碼會在您稍早在此方法中設定的中斷點上停止 `RunStarted` 。
 
-5. 選擇**F5**鍵或在功能表列上選擇 [ **debug**continue]，繼續進行專案的偵錯工具  >  ** **。
+5. 選擇 **F5** 鍵或在功能表列上選擇 [ **debug** continue]，繼續進行專案的偵錯工具  >  ****。
 
 6. 在 [ **SharePoint 自訂嚮導]** 中，輸入您要用於偵錯工具的網站 URL，然後選擇 [ **下一步]** 按鈕。
 
-7. 在 [ **SharePoint 自訂] 嚮導**的第二個頁面中，進行下列選擇：
+7. 在 [ **SharePoint 自訂] 嚮導** 的第二個頁面中，進行下列選擇：
 
    - 在 [ **類型** ] 清單中，選擇 [ **布林值**]。
 
@@ -503,7 +505,7 @@ ms.locfileid: "91585454"
 
    - 在 [ **名稱** ] 方塊中，輸入 [ **是]/[否**] 資料行，然後選擇 [ **完成]** 按鈕。
 
-     在 **方案總管**中，新專案隨即出現，並包含名為 **Field1**的專案專案，Visual Studio 在編輯器中開啟專案的 *Elements.xml* 檔。
+     在 **方案總管** 中，新專案隨即出現，並包含名為 **Field1** 的專案專案，Visual Studio 在編輯器中開啟專案的 *Elements.xml* 檔。
 
 8. 確認 *Elements.xml* 包含您在嚮導中指定的值。
 
@@ -520,7 +522,7 @@ ms.locfileid: "91585454"
 
 3. 在 [網站設定] 頁面的 [資源 **庫**] 下，選擇 [ **網站資料行** ] 連結。
 
-4. 在 [網站資料行] 清單中，確認 **自訂 [是]/[否]** 資料行群組是否包含名為 **[是]/[否] 資料行**的資料行，然後關閉 web 瀏覽器。
+4. 在 [網站資料行] 清單中，確認 **自訂 [是]/[否]** 資料行群組是否包含名為 **[是]/[否] 資料行** 的資料行，然後關閉 web 瀏覽器。
 
 ## <a name="clean-up-the-development-computer"></a>清除開發電腦
  完成專案專案的測試之後，請從 Visual Studio 的實驗實例中移除專案範本。
@@ -529,7 +531,7 @@ ms.locfileid: "91585454"
 
 1. 在 Visual Studio 的實驗實例中，選擇功能表列上的 [**工具**  >  **擴充功能和更新**]。
 
-     [擴充功能和更新]**** 對話方塊隨即開啟。
+     [擴充功能和更新] 對話方塊隨即開啟。
 
 2. 在擴充功能清單中，選擇 [ **網站資料行**]，然後選擇 [ **卸載** ] 按鈕。
 

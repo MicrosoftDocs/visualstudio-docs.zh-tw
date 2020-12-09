@@ -1,5 +1,7 @@
 ---
 title: 如何：將實體加入至模型 |Microsoft Docs
+description: 將實體控制項從 Visual Studio 工具箱加入至商務資料連線 (BDC) 設計工具，以將實體新增至模型。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b80f39494b98014a75d4265f228906be2ff45188
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0efd7a6fc0d6254dbfd3cbda538ffe0e30585453
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016674"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915384"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>如何：將實體加入至模型
   若要建立實體，請將 Visual Studio 工具箱中的實體控制項加入至 [商務資料連線 (BDC) 設計 **工具** ]。

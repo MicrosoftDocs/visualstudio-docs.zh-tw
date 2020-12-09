@@ -1,5 +1,7 @@
 ---
 title: 事件描述 |Microsoft Docs
+description: 瞭解事件的類型，以及其使用的原因。 每種類型的事件都有特定用途。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c2582717fd4da3b833da90a951f9b8f72a59f71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea477d3d21cd3b7a1a5352c736dc2f78195b99a4
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738794"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915605"
 ---
 # <a name="event-descriptions"></a>事件描述
 每種類型的事件都有特定用途。

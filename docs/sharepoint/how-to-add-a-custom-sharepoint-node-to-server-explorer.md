@@ -1,6 +1,8 @@
 ---
 title: 如何：將自訂 SharePoint 節點新增至伺服器總管 |Microsoft Docs
 titleSuffix: ''
+description: 將自訂 SharePoint 節點新增至 Visual Studio 中的伺服器總管。 顯示預設未顯示在伺服器總管中的額外 SharePoint 元件。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a74c9c879df57a5ff6444626870ee9f021fb4e9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bbee6d780c7f447c8b47f7b478531cb58cef94fd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584881"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915462"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>如何：將自訂 SharePoint 節點新增至伺服器總管
-  您可以在**伺服器總管**的 [ **SharePoint 連接**] 節點下加入自訂節點。 當您想要顯示預設不會顯示在 **伺服器總管** 中的其他 SharePoint 元件時，這會很有用。 如需詳細資訊，請參閱 [伺服器總管中的擴充 SharePoint 連接節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
+  您可以在 **伺服器總管** 的 [ **SharePoint 連接**] 節點下加入自訂節點。 當您想要顯示預設不會顯示在 **伺服器總管** 中的其他 SharePoint 元件時，這會很有用。 如需詳細資訊，請參閱 [伺服器總管中的擴充 SharePoint 連接節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
 
  若要加入自訂節點，請先建立定義新節點的類別。 然後建立一個延伸模組，將節點新增為現有節點的子系。
 
@@ -46,7 +48,7 @@ ms.locfileid: "91584881"
 
     - <xref:System.ComponentModel.Composition.ExportAttribute>. 這個屬性可讓 Visual Studio 探索和載入您的 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> 執行。 將型別傳遞 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> 至屬性（attribute）的函式。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. 在節點定義中，這個屬性會指定新節點的字串識別碼。 建議您使用 *公司名稱*格式。*節點名稱* ，以確保所有節點都有唯一的識別碼。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. 在節點定義中，這個屬性會指定新節點的字串識別碼。 建議您使用 *公司名稱* 格式。*節點名稱* ，以確保所有節點都有唯一的識別碼。
 
 5. 在您的方法的執行中 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A> ，請使用 *typeDefinition* 參數的成員來設定新節點的行為。 這個參數是一個 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition> 物件，可讓您存取在介面中定義的事件 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> 。
 
@@ -65,7 +67,7 @@ ms.locfileid: "91584881"
 
      若要指定 Visual Studio 所提供的內建節點類型，請將下列其中一個列舉值傳遞給屬性函式：
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>：使用這些值來指定網站連接節點 (節點，這些節點會在 **伺服器總管**中顯示網站 url) 、網站節點或所有其他父節點。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>：使用這些值來指定網站連接節點 (節點，這些節點會在 **伺服器總管** 中顯示網站 url) 、網站節點或所有其他父節點。
 
     - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>：使用這些值來指定其中一個內建節點，代表 SharePoint 網站上的個別元件，例如代表清單、欄位或內容類型的節點。
 
@@ -73,13 +75,13 @@ ms.locfileid: "91584881"
 
 5. 在 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> 事件處理常式中，將新的節點加入至 <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeEventArgs.Node%2A> 事件引數參數所公開之物件的子節點集合。
 
-     下列程式碼範例示範如何在 **伺服器總管**中，將新的節點新增為 SharePoint 網站節點的子系。
+     下列程式碼範例示範如何在 **伺服器總管** 中，將新的節點新增為 SharePoint 網站節點的子系。
 
      [!code-vb[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#7)]
      [!code-csharp[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#7)]
 
 ## <a name="complete-example"></a>完整範例
- 下列程式碼範例會提供完整的程式碼，以定義簡單的節點，並將它新增為 **伺服器總管**中 SharePoint 網站節點的子系。
+ 下列程式碼範例會提供完整的程式碼，以定義簡單的節點，並將它新增為 **伺服器總管** 中 SharePoint 網站節點的子系。
 
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#5)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#5)]

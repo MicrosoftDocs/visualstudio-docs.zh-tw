@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：將應用程式頁面加入至工作流程 |Microsoft Docs
+description: 在這個逐步解說中，將應用程式頁面加入至 SharePoint 工作流程方案。 修改工作流程程式碼。 建立、撰寫程式碼和測試應用程式頁面。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015490"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915657"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>逐步解說：將應用程式頁面加入至工作流程
   本逐步解說將示範如何新增應用程式頁面，以將衍生自工作流程的資料顯示至工作流程專案。 它是以「 [逐步解說：使用關聯與初始表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)」主題中所述的專案為基礎。
@@ -44,7 +46,7 @@ ms.locfileid: "86015490"
 
 - 您也必須完成「 [逐步解說：使用關聯與初始表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)」主題中的專案。
 
-## <a name="ammend-the-workflow-code"></a>Ammend 工作流程程式碼
+## <a name="amend-the-workflow-code"></a>修改工作流程程式碼
  首先，將程式程式碼加入至工作流程，以將 [結果] 資料行的值設定為費用報表的數量。 此值稍後會用於 expense report 摘要計算中。
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>若要在工作流程中設定結果資料行的值
@@ -308,7 +310,7 @@ ms.locfileid: "86015490"
 
 3. 若要代表此範例的費用報表，請在頁面頂端的 [ **LibraryTools** ] 索引標籤上選擇 [**檔**] 連結，然後選擇工具功能區上的 [**上傳檔**] 按鈕，將一些新的檔上傳到 [檔] 清單中。
 
-4. 上傳一些檔之後，請在頁面頂端的 [ **LibraryTools** ] 索引標籤上選擇 [連結**庫**] 連結，然後選擇工具功能區上的 [連結**庫設定**] 按鈕，以具現化工作流程。
+4. 上傳一些檔之後，請在頁面頂端的 [ **LibraryTools** ] 索引標籤上選擇 [連結 **庫**] 連結，然後選擇工具功能區上的 [連結 **庫設定**] 按鈕，以具現化工作流程。
 
 5. 在 [**文件庫設定**] 頁面的 [**許可權與管理**] 區段中，選擇 [**工作流程設定**] 連結。
 
@@ -318,7 +320,7 @@ ms.locfileid: "86015490"
 
     工作流程關聯表單隨即出現。 您可以使用它來報告費用限制金額。
 
-8. 在 [關聯] 表單的 [**自動核准限制**] 方塊中，輸入**1000** ，然後選擇 [**關聯工作流程**] 按鈕。
+8. 在 [關聯] 表單的 [**自動核准限制**] 方塊中，輸入 **1000** ，然後選擇 [**關聯工作流程**] 按鈕。
 
 9. 選擇 [ **首頁** ] 按鈕以返回 SharePoint 首頁。
 
@@ -330,7 +332,7 @@ ms.locfileid: "86015490"
 
 13. 在 [ **費用總計** ] 文字方塊中，輸入大於1000的值，然後選擇 [ **啟動工作流程** ] 按鈕。
 
-     當回報的支出超過配置的費用金額時，就會將工作新增至工作清單。 已**完成**值的資料行（名稱為**ExpenseTest** ）也會加入至 [共用文件] 清單中的 [費用報表] 專案。
+     當回報的支出超過配置的費用金額時，就會將工作新增至工作清單。 已 **完成** 值的資料行（名稱為 **ExpenseTest** ）也會加入至 [共用文件] 清單中的 [費用報表] 專案。
 
 14. 使用共用文件清單中的其他檔重複步驟 11-13。  (確切的檔數目並不重要。 ) 
 

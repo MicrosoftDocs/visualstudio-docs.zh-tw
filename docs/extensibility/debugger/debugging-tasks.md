@@ -1,5 +1,7 @@
 ---
 title: 調試作業 |Microsoft Docs
+description: 瞭解對程式進行偵錯工具所需的工作，例如將它附加至偵測引擎、產生啟動事件，以及叫用中斷點。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 070068853d962bdf9b209edb9410d33d46ccf853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83d351e2b995922d1a8257f7ea9fc0cdad67ab3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903555"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915566"
 ---
 # <a name="debug-tasks"></a>調試作業
 若要對程式進行程式設計，必須將它啟動，而且必須將 debug engine (DE) 必須附加到該程式，否則 DE 必須附加至先前啟動的程式。 附加之後，DE 必須產生特定的啟動事件。 在回應中，debug 封裝會嘗試系結 IDE 中設定的中斷點。 當程式到達系結的中斷點時，它會中止，並等候使用者輸入。

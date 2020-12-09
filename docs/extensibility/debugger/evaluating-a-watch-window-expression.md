@@ -1,5 +1,7 @@
 ---
 title: 評估監看式視窗運算式 |Microsoft Docs
+description: 瞭解當執行暫停時，Visual Studio 如何呼叫 debug engine 來判斷其監看清單中每個運算式的目前值。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cef2f27eec095ee7b136153ecb764feba9effbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97fb2c11b94a97a5c7a00083aa61877bb68d377b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738847"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915644"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>評估監看式視窗運算式
 > [!IMPORTANT]

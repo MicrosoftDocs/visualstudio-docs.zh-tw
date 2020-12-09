@@ -1,5 +1,7 @@
 ---
 title: 如何：將篩選描述元新增至搜尋工具方法 |Microsoft Docs
+description: 瞭解如何使用 Visual Studio 中的 [BDC 方法詳細資料] 視窗，將篩選描述元新增至搜尋工具方法。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff312753be07867d8978dc4d5f60d5dfc0eee557
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016739"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915423"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：將篩選描述元新增至搜尋工具方法
   篩選描述項可讓模型的取用者在執行之前，將值傳遞給方法。 如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -37,11 +39,11 @@ ms.locfileid: "86016739"
 
 4. 在 [ **屬性** ] 視窗中，將 [ **類型名稱** ] 屬性設定為適用于篩選準則的資料類型。
 
-     例如，篩選可能會使用訂單日期來限制方法所傳回的銷售訂單數目。 若要支援該篩選準則，類型描述項的**類型名稱**屬性必須**設定為 [system.string]。**
+     例如，篩選可能會使用訂單日期來限制方法所傳回的銷售訂單數目。 若要支援該篩選準則，類型描述項的 **類型名稱** 屬性必須 **設定為 [system.string]。**
 
 5. 在 [ **方法詳細資料** ] 視窗中，展開 [ **篩選描述** 項] 節點。
 
-6. 在 [ **加入篩選描述** 項] 清單中，選擇 [ **建立篩選描述**元]。
+6. 在 [ **加入篩選描述** 項] 清單中，選擇 [ **建立篩選描述** 元]。
 
      新的篩選描述項會出現在 [ **篩選描述** 項] 節點底下。
 

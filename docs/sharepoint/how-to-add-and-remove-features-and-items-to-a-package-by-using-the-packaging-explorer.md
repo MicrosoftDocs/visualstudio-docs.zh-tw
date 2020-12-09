@@ -1,6 +1,8 @@
 ---
 title: 封裝 Explorer：新增 & 移除功能 & 專案至封裝
 titleSuffix: ''
+description: 使用 Visual Studio 中的 [封裝瀏覽器]，來新增和移除 SharePoint 封裝的功能和專案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bc4546d598a2fcca822f1921f778034fb768c2b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ee9b2a12c9eaa168f0223dff29a3379a12b3d691
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585585"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915345"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何：使用封裝瀏覽器加入和移除封裝的功能和專案
   若要設定套件以部署 SharePoint 專案和功能，您可以使用封裝瀏覽器。 您可以調整 .wsp 檔案內的 SharePoint 專案專案和功能。
@@ -34,7 +36,7 @@ ms.locfileid: "91585585"
 
 1. 在功能表列上，選擇 [ **View**  >  **Other Windows**  >  **封裝瀏覽器**]。
 
-     **封裝瀏覽器**會出現在 [**工具箱**] 中。
+     **封裝瀏覽器** 會出現在 [**工具箱**] 中。
 
 ## <a name="adding-a-feature-to-a-package"></a>將功能加入封裝中
  您可以使用封裝瀏覽器，將新的和現有的功能加入封裝中。
@@ -49,7 +51,7 @@ ms.locfileid: "91585585"
 
     - 將 **功能** 從一個專案拖曳至另一個專案。
 
-    - 開啟功能的快捷方式功能表，選擇 [ **剪**下]，開啟要移動功能的專案快捷方式功能表，然後選擇 [ **貼**上]。
+    - 開啟功能的快捷方式功能表，選擇 [ **剪** 下]，開啟要移動功能的專案快捷方式功能表，然後選擇 [ **貼** 上]。
 
     > [!NOTE]
     > 如果您的方案中有一個以上的 SharePoint 專案，請使用此程序。

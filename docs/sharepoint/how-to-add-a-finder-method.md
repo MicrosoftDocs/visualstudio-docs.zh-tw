@@ -1,5 +1,7 @@
 ---
 title: 如何：加入 Finder 方法 |Microsoft Docs
+description: 在 Visual Studio 中加入 Finder 方法，可讓商務資料連線 (BDC) 服務，以顯示 SharePoint web 元件或清單中的實體清單。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1fa8f8eb34943cc17bc6cabca8e93ea7569a7ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e2bb74278194878ed4496c12c918707cdc1e6e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016727"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915085"
 ---
 # <a name="how-to-add-a-finder-method"></a>如何：加入搜尋工具方法
   若要啟用商務資料連線 (BDC) 服務來顯示 web 元件或清單中的實體清單，您必須建立 *Finder* 方法。 Finder 方法是傳回實體實例集合的特殊方法。 如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
 ### <a name="to-create-a-finder-method"></a>若要建立 Finder 方法
 
-1. 在 **BDC 設計**工具上，選擇實體。
+1. 在 **BDC 設計** 工具上，選擇實體。
 
     如需詳細資訊，請參閱 [如何：將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。
 
@@ -46,7 +48,7 @@ ms.locfileid: "86016727"
    > [!NOTE]
    > 如果您已將特定 Finder 方法加入至實體，就不需要執行此步驟。 Visual Studio 會使用您在特定搜尋工具方法中定義的型別描述項。
 
-5. 在 **方案總管**中，開啟針對實體所產生之服務程式代碼檔案的快捷方式功能表，然後選擇 [ **View code**]。 如需服務程式代碼檔案的詳細資訊，請參閱 [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
+5. 在 **方案總管** 中，開啟針對實體所產生之服務程式代碼檔案的快捷方式功能表，然後選擇 [ **View code**]。 如需服務程式代碼檔案的詳細資訊，請參閱 [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
 
 6. 將程式碼新增至搜尋工具方法。 此程式碼會執行下列工作：
 

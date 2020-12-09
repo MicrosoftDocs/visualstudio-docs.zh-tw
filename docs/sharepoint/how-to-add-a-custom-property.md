@@ -1,5 +1,7 @@
 ---
 title: 如何：加入自訂屬性 |Microsoft Docs
+description: 瞭解如何使用 Visual Studio 的 BDC Explorer 中的屬性編輯器，將自訂屬性加入至 SharePoint 中的商務資料連線 (BDC) 模型。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b12124d874c58ce17f1fa24d2bd9283af64f1c92
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017083"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915475"
 ---
 # <a name="how-to-add-a-custom-property"></a>如何：加入自訂屬性
   您可以使用 **屬性編輯器**，將自訂屬性加入至模型。 您可以在程式碼中存取這些屬性，以便在執行時間取得連接字串和其他資料等資訊。

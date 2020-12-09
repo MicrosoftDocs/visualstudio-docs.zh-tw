@@ -1,5 +1,7 @@
 ---
 title: 列舉區域變數 |Microsoft Docs
+description: 瞭解 Visual Studio 如何使用 IDebugProperty2：： EnumChildren 填入 [區域變數] 視窗的詳細資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 540c062d3d4f73a5468b39629fc277e6fd10df7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4282e55dbf90c4ae24a9e3d16beea8bd93420524
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738866"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915683"
 ---
 # <a name="enumerate-locals"></a>列舉區域變數
 > [!IMPORTANT]
 > 在 Visual Studio 2015 中，這種執行運算式評估工具的方法已被取代。 如需有關執行 CLR 運算式評估工具的詳細資訊，請參閱 [clr 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 工具和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
-當 Visual Studio 準備好要填入 [**區域變數**] 視窗時，它會在[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) (所傳回的[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)物件上呼叫[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) ，請參閱實[GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)) 。 `IDebugProperty2::EnumChildren` 傳回 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 物件。
+當 Visual Studio 準備好要填入 [**區域變數**] 視窗時，它會在 [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) (所傳回的 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)物件上呼叫 [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) ，請參閱實 [GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)) 。 `IDebugProperty2::EnumChildren` 傳回 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 物件。
 
 執行 `IDebugProperty2::EnumChildren` 作業會執行下列工作：
 

@@ -1,5 +1,7 @@
 ---
 title: 進入中斷模式 |Microsoft Docs
+description: 瞭解函式中發生的中斷點所發生的程式、在游標處執行至原始程式碼的行，或執行至中斷點。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bbcec8adf6468f70d95df5f291ce1e5540406cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73c64d17aee48cdb67a110e93aa556f112a1014
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738886"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915228"
 ---
 # <a name="enter-break-mode"></a>進入中斷模式
 下列資訊描述在逐步執行函式之後遇到中斷點時所發生的程式，執行至具有游標所在的源程式碼，或執行至中斷點。

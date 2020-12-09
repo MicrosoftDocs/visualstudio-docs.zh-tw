@@ -1,6 +1,8 @@
 ---
 title: 使用專案範本建立自訂動作專案專案（第2部分）
 titleSuffix: ''
+description: 在這個逐步解說中，當使用者使用專案範本在 SharePoint 網站上加入自訂動作專案專案時，請加入嚮導來收集使用者的資訊。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957af3fdb4a86f4973ff8ac24251bae923ec299c
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fe283da2c2a81827ca70414315278cebd775873a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585467"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915202"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說：使用專案範本建立自訂動作專案專案（第2部分）
   在您定義自訂類型的 SharePoint 專案專案，並將其與 Visual Studio 中的專案範本建立關聯之後，您可能也會想要提供範本的嚮導。 當使用者使用您的範本將新的專案專案實例加入至專案時，您可以使用此嚮導來收集使用者的資訊。 您收集的資訊可以用來初始化專案專案。
@@ -59,7 +61,7 @@ ms.locfileid: "91585467"
 
 1. 在 Visual Studio 中，開啟 CustomActionProjectItem 方案
 
-2. 在 **方案總管**中，開啟方案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
+2. 在 **方案總管** 中，開啟方案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
 
 3. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** 節點]，然後選擇 [ **Windows** ] 節點。
 
@@ -76,13 +78,13 @@ ms.locfileid: "91585467"
 
 #### <a name="to-configure-the-wizard-project"></a>若要設定 wizard 專案
 
-1. 在 **方案總管**中，開啟 **ItemTemplateWizard** 專案節點的快捷方式功能表，然後選擇 [ **屬性**]。
+1. 在 **方案總管** 中，開啟 **ItemTemplateWizard** 專案節點的快捷方式功能表，然後選擇 [ **屬性**]。
 
-2. 在 [ **專案設計**工具] 中，確認 [目標 framework] 設定為 .NET Framework 4.5。
+2. 在 [ **專案設計** 工具] 中，確認 [目標 framework] 設定為 .NET Framework 4.5。
 
      針對 Visual c # 專案，您可以在 [ **應用程式** ] 索引標籤上設定這個值。針對 Visual Basic 的專案，您可以在 [ **編譯** ] 索引標籤上設定這個值。如需詳細資訊，請參閱 [如何：以 .NET Framework 版本為目標](../ide/visual-studio-multi-targeting-overview.md)。
 
-3. 在 **ItemTemplateWizard** 專案中，將 **視窗 (WPF) ** 專案加入至專案，然後將專案命名為 **WizardWindow**。
+3. 在 **ItemTemplateWizard** 專案中，將 **視窗 (WPF)** 專案加入至專案，然後將專案命名為 **WizardWindow**。
 
 4. 加入兩個名為 CustomActionWizard 和字串的程式碼檔案。
 
@@ -172,7 +174,7 @@ ms.locfileid: "91585467"
 
 #### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>使用強式名稱簽署 wizard 元件
 
-1. 在 **方案總管**中，開啟 **ItemTemplateWizard** 專案節點的快捷方式功能表，然後選擇 [ **屬性**]。
+1. 在 **方案總管** 中，開啟 **ItemTemplateWizard** 專案節點的快捷方式功能表，然後選擇 [ **屬性**]。
 
 2. 在 [簽署] 索引標籤上，選取 [簽署組件] 核取方塊。
 
@@ -190,13 +192,13 @@ ms.locfileid: "91585467"
     sn.exe -T PathToWizardAssembly
     ```
 
-     *ItemTemplateWizard.dll*元件的公開金鑰 token 會寫入 Visual Studio 命令提示字元視窗。
+     *ItemTemplateWizard.dll* 元件的公開金鑰 token 會寫入 Visual Studio 命令提示字元視窗。
 
 2. 讓 Visual Studio 的命令提示字元視窗保持開啟。 您將需要公開金鑰 token 才能完成下一個程式。
 
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>在 .vstemplate 檔案中加入 wizard 元件的參考
 
-1. 在 **方案總管**中，展開 [ **itemtemplate** ] 專案節點，然後開啟 *itemtemplate .vstemplate* 檔案。
+1. 在 **方案總管** 中，展開 [ **itemtemplate** ] 專案節點，然後開啟 *itemtemplate .vstemplate* 檔案。
 
 2. 在檔案結尾附近， `WizardExtension` 于和標記之間新增下列元素 `</TemplateContent>` `</VSTemplate>` 。 將屬性的 *YourToken* 值取代 `PublicKeyToken` 為您在上一個程式中取得的公開金鑰 token。
 
@@ -243,7 +245,7 @@ ms.locfileid: "91585467"
 
 #### <a name="to-add-the-wizard-to-the-vsix-package"></a>將嚮導加入 VSIX 套件
 
-1. 在 **方案總管**中，從 CustomActionProjectItem 專案的 **extension.vsixmanifest** 檔案開啟快捷方式功能表，然後選擇 [ **開啟** ]，以在資訊清單編輯器中開啟檔案。
+1. 在 **方案總管** 中，從 CustomActionProjectItem 專案的 **extension.vsixmanifest** 檔案開啟快捷方式功能表，然後選擇 [ **開啟** ]，以在資訊清單編輯器中開啟檔案。
 
 2. 在資訊清單編輯器中，選擇 [ **資產** ] 索引標籤，然後選擇 [ **新增** ] 按鈕。
 
@@ -266,17 +268,17 @@ ms.locfileid: "91585467"
 
 2. 在 ItemTemplateWizard 專案中，開啟 CustomActionWizard 程式碼檔案，然後將中斷點加入至方法中的第一行程式碼 `RunStarted` 。
 
-3. 在功能表列上，選擇 [ **Debug**  >  **例外**狀況]。
+3. 在功能表列上，選擇 [ **Debug**  >  **例外** 狀況]。
 
-4. 在 [**例外**狀況] 對話方塊中，確定已清除 [ **Common Language Runtime 例外**狀況] 的 [擲回 **] 和 [** **使用者未處理**] 核取方塊，然後選擇 [**確定]** 按鈕。
+4. 在 [**例外** 狀況] 對話方塊中，確定已清除 [ **Common Language Runtime 例外** 狀況] 的 [擲回 **] 和 [** **使用者未處理**] 核取方塊，然後選擇 [**確定]** 按鈕。
 
-5. 選擇**F5**鍵，或是在功能表列上選擇 [ **Debug**  >  **開始調試**程式]，以啟動偵錯工具。
+5. 選擇 **F5** 鍵，或是在功能表列上選擇 [ **Debug**  >  **開始調試** 程式]，以啟動偵錯工具。
 
      Visual Studio 將擴充功能安裝至%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom 動作專案 Item\1.0，並啟動 Visual Studio 的實驗實例。 您將在 Visual Studio 的這個實例中測試專案專案。
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>若要在 Visual Studio 中測試嚮導
 
-1. 在 Visual Studio 的實驗實例中 **，選擇功能表**欄上的 [檔案  >  **新增**  >  **專案**]。
+1. 在 Visual Studio 的實驗實例中 **，選擇功能表** 欄上的 [檔案  >  **新增**  >  **專案**]。
 
 2. 展開 **Visual c #** 或 **Visual Basic** 節點 (根據您的專案範本支援的語言) ，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
@@ -284,7 +286,7 @@ ms.locfileid: "91585467"
 
 4. 在 [ **SharePoint 自訂嚮導]** 中，輸入您要用於偵錯工具的網站 URL，然後選擇 [ **完成]** 按鈕。
 
-5. 在 **方案總管**中，開啟專案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
+5. 在 **方案總管** 中，開啟專案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
 
 6. 在 [ **加入新專案-CustomItemWizardTest** ] 對話方塊中，展開 [ **SharePoint** ] 節點，然後展開 **2010** 節點。
 
@@ -292,7 +294,7 @@ ms.locfileid: "91585467"
 
 8. 確認 Visual Studio 的另一個實例中的程式碼會在您稍早在此方法中設定的中斷點上停止 `RunStarted` 。
 
-9. 選擇**F5**鍵或在功能表列上選擇 [ **debug**continue]，繼續進行專案的偵錯工具  >  ** **。
+9. 選擇 **F5** 鍵或在功能表列上選擇 [ **debug** continue]，繼續進行專案的偵錯工具  >  ****。
 
       SharePoint 自訂精靈隨即出現。
 
@@ -310,7 +312,7 @@ ms.locfileid: "91585467"
 
 #### <a name="to-test-the-custom-action-in-sharepoint"></a>若要在 SharePoint 中測試自訂動作
 
-1. 在 Visual Studio 的實驗實例中，選擇**F5**鍵，或是在功能表列上選擇 [ **Debug**錯  >  **開始調試**程式]。
+1. 在 Visual Studio 的實驗實例中，選擇 **F5** 鍵，或是在功能表列上選擇 [ **Debug** 錯  >  **開始調試** 程式]。
 
      自訂動作會封裝並部署至專案的 [ **網站 URL** ] 屬性所指定的 SharePoint 網站，而網頁瀏覽器會開啟至此網站的預設頁面。
 
@@ -334,7 +336,7 @@ ms.locfileid: "91585467"
 
 1. 在 Visual Studio 的實驗實例中，選擇功能表列上的 [**工具**  >  **擴充功能和更新**]。
 
-     [擴充功能和更新]**** 對話方塊隨即開啟。
+     [擴充功能和更新] 對話方塊隨即開啟。
 
 2. 在擴充功能清單中，選擇 [ **自訂動作] 專案** 專案延伸，然後選擇 [ **卸載** ] 按鈕。
 

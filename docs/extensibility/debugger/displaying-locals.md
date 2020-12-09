@@ -1,5 +1,7 @@
 ---
 title: 顯示區域變數 |Microsoft Docs
+description: 深入瞭解區域變數和引數的清單，統稱為方法的區域變數，當執行暫停時，就會顯示這些區域變數。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d44b276aeb9c6acb0ef34cc186662d49246de7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddc7bc564e4e294144eeb3fa34db8bdf73971053
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738939"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915540"
 ---
 # <a name="display-locals"></a>顯示區域變數
 > [!IMPORTANT]

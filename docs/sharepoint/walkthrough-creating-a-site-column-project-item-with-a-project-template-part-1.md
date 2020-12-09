@@ -1,6 +1,8 @@
 ---
 title: 使用專案範本建立網站資料行專案專案（第1部分）
 titleSuffix: ''
+description: 定義專案專案類型以建立網站資料行，然後建立專案範本，以用來建立包含專案專案的 SharePoint 專案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a740d96fb6ae846188fc4fa457c5baeb7b5e907d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 32f56f282dc5755b8162c4f19a9c036dc2e9cc5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585546"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915209"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本建立網站資料行專案專案（第1部分）
   SharePoint 專案是一個或多個 SharePoint 專案專案的容器。 您可以建立自己的 SharePoint 專案專案類型，然後將它們與專案範本產生關聯，藉以擴充 Visual Studio 中的 SharePoint 專案系統。 在這個逐步解說中，您將會定義用來建立網站資料行的專案專案類型，然後您將建立專案範本，可用來建立包含網站資料行專案專案的新專案。
@@ -76,7 +78,7 @@ ms.locfileid: "91585546"
 4. 展開 [ **Visual Basic** ] 或 [ **Visual c #** ] 節點，然後選擇 [擴充性 **] 節點。**
 
     > [!NOTE]
-    > 只有當您安裝 Visual Studio SDK 時，才能使用擴充**性節點。** 如需詳細資訊，請參閱本主題稍早的必要條件一節。
+    > 只有當您安裝 Visual Studio SDK 時，才能使用擴充 **性節點。** 如需詳細資訊，請參閱本主題稍早的必要條件一節。
 
 5. 在專案範本清單中，選擇 [ **VSIX 專案**]。
 
@@ -86,11 +88,11 @@ ms.locfileid: "91585546"
 
 #### <a name="to-create-the-project-template-project"></a>若要建立專案範本專案
 
-1. 在 **方案總管**中，開啟方案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
+1. 在 **方案總管** 中，開啟方案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
 
 2. 在 [ **新增專案** ] 對話方塊頂端，確定已在 .NET Framework 的版本清單中選擇 **.NET Framework 4.5** 。
 
-3. 展開**Visual c #** 或**Visual Basic**節點，然後選擇 [擴充性 **] 節點。**
+3. 展開 **Visual c #** 或 **Visual Basic** 節點，然後選擇 [擴充性 **] 節點。**
 
 4. 在專案範本清單中，選擇 **c # 專案範本** 或 **Visual Basic 專案範本** 範本。
 
@@ -116,7 +118,7 @@ ms.locfileid: "91585546"
 
 #### <a name="to-create-the-extension-project"></a>建立延伸模組專案
 
-1. 在 **方案總管**中，開啟方案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
+1. 在 **方案總管** 中，開啟方案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
 
 2. 在 [ **新增專案** ] 對話方塊頂端，確定已在 .NET Framework 的版本清單中選擇 **.NET Framework 4.5** 。
 
@@ -133,7 +135,7 @@ ms.locfileid: "91585546"
 
 #### <a name="to-configure-the-project"></a>若要設定專案
 
-1. 在 ProjectItemTypeDefinition 專案中，加入名為 **SiteColumnProjectItemTypeProvider**的程式碼檔案。
+1. 在 ProjectItemTypeDefinition 專案中，加入名為 **SiteColumnProjectItemTypeProvider** 的程式碼檔案。
 
 2. 在功能表列上，選擇 [**專案**  >  **加入參考**]。
 
@@ -160,18 +162,18 @@ ms.locfileid: "91585546"
 
 1. 使用系統管理認證啟動的第二個實例 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-2. 建立名為 **BaseSharePointProject**的 SharePoint 2010 專案。
+2. 建立名為 **BaseSharePointProject** 的 SharePoint 2010 專案。
 
    > [!IMPORTANT]
-   > 在 [ **SharePoint 自訂] 嚮導**中，不要選取 [ **部署為伺服器陣列方案** ] 選項按鈕。
+   > 在 [ **SharePoint 自訂] 嚮導** 中，不要選取 [ **部署為伺服器陣列方案** ] 選項按鈕。
 
 3. 將空白元素專案加入至專案，然後將專案命名為 **Field1**。
 
 4. 儲存專案，然後關閉的第二個實例 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-5. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 開啟 SiteColumnProjectItem 方案的實例中，于 **方案總管**中，開啟 [ **SiteColumnProjectTemplate** ] 專案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **現有專案**]。
+5. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 開啟 SiteColumnProjectItem 方案的實例中，于 **方案總管** 中，開啟 [ **SiteColumnProjectTemplate** ] 專案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **現有專案**]。
 
-6. 在 [ **加入現有專案** ] 對話方塊中，開啟副檔名清單，然後選擇 [所有檔案 ** (] \* \*) **。
+6. 在 [ **加入現有專案** ] 對話方塊中，開啟副檔名清單，然後選擇 [所有檔案 **(] \* \*)**。
 
 7. 在包含 BaseSharePointProject 專案的目錄中，選取金鑰 .snk 檔案，然後選擇 [ **加入** ] 按鈕。
 
@@ -196,7 +198,7 @@ ms.locfileid: "91585546"
 
 #### <a name="to-configure-how-developers-discover-the-project-template-in-the-new-project-dialog-box"></a>設定開發人員如何在 [新增專案] 對話方塊中探索專案範本
 
-1. 在 **方案總管**中，開啟 [ **SiteColumnProjectTemplate** ] 專案節點的快捷方式功能表，然後選擇 **[卸載專案**]。 如果系統提示您儲存任何檔案的變更，請選擇 [ **是]** 按鈕。
+1. 在 **方案總管** 中，開啟 [ **SiteColumnProjectTemplate** ] 專案節點的快捷方式功能表，然後選擇 **[卸載專案**]。 如果系統提示您儲存任何檔案的變更，請選擇 [ **是]** 按鈕。
 
 2. 再次開啟 [ **SiteColumnProjectTemplate** ] 節點的快捷方式功能表，然後選擇 [ **編輯 SiteColumnProjectTemplate .csproj** ] 或 [ **編輯 SiteColumnProjectTemplate. vbproj**]。
 
@@ -218,7 +220,7 @@ ms.locfileid: "91585546"
 
 5. 儲存並關閉檔案。
 
-6. 在 **方案總管**中，開啟 **SiteColumnProjectTemplate** 專案的快捷方式功能表，然後選擇 [ **重載專案**]。
+6. 在 **方案總管** 中，開啟 **SiteColumnProjectTemplate** 專案的快捷方式功能表，然後選擇 [ **重載專案**]。
 
 ## <a name="edit-the-project-template-files"></a>編輯專案範本檔
  在 SiteColumnProjectTemplate 專案中編輯下列檔案，以定義專案範本的行為：
@@ -638,7 +640,7 @@ ms.locfileid: "91585546"
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>設定和建立 VSIX 封裝
 
-1. 在 **方案總管**的 **SiteColumnProjectItem** 專案中，在資訊清單編輯器中開啟 extension.vsixmanifest 檔案。
+1. 在 **方案總管** 的 **SiteColumnProjectItem** 專案中，在資訊清單編輯器中開啟 extension.vsixmanifest 檔案。
 
      Extension.vsixmanifest 檔案是所有 VSIX 封裝所需的 extension.vsixmanifest 檔案基礎。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](/previous-versions/dd393700(v=vs.110))。
 
@@ -689,7 +691,7 @@ ms.locfileid: "91585546"
 
 #### <a name="to-test-the-project-in-visual-studio"></a>若要在 Visual Studio 中測試專案
 
-1. 在 Visual Studio 的實驗實例中 **，選擇功能表**欄上的 [檔案  >  **新增**  >  **專案**]。
+1. 在 Visual Studio 的實驗實例中 **，選擇功能表** 欄上的 [檔案  >  **新增**  >  **專案**]。
 
 2. 展開 **Visual c #** 或 **Visual Basic** 節點 (根據您的專案範本所支援的語言) ，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
@@ -697,19 +699,19 @@ ms.locfileid: "91585546"
 
 4. 在 [ **名稱** ] 方塊中，輸入 **SiteColumnTest** ，然後選擇 [ **確定]** 按鈕。
 
-     在 **方案總管**中，會出現一個新專案，其中包含名為 **Field1**的專案專案。
+     在 **方案總管** 中，會出現一個新專案，其中包含名為 **Field1** 的專案專案。
 
 5. 確認 Visual Studio 的另一個實例中的程式碼會在您稍早在此方法中設定的中斷點上停止 `InitializeType` ，然後選擇 **F5** 鍵繼續進行專案的偵錯工具。
 
-6. 在 **方案總管**中，選擇 [ **Field1** ] 節點，然後選擇 **F4** 鍵。
+6. 在 **方案總管** 中，選擇 [ **Field1** ] 節點，然後選擇 **F4** 鍵。
 
-     [屬性]**** 視窗隨即開啟。
+     [屬性] 視窗隨即開啟。
 
 7. 在 [屬性] 清單中，確認 [屬性 **範例] 屬性** 出現。
 
 #### <a name="to-test-the-site-column-in-sharepoint"></a>測試 SharePoint 中的網站資料行
 
-1. 在 **方案總管**中，選擇 [ **SiteColumnTest** ] 節點。
+1. 在 **方案總管** 中，選擇 [ **SiteColumnTest** ] 節點。
 
 2. 在 [ **屬性** ] 視窗中的 [ **網站 URL** ] 屬性旁邊的文字方塊中，輸入 **http://localhost** 。
 
@@ -740,7 +742,7 @@ ms.locfileid: "91585546"
 
 1. 在 Visual Studio 的實驗實例中，選擇功能表列上的 [**工具**  >  **擴充功能和更新**]。
 
-     [擴充功能和更新]**** 對話方塊隨即開啟。
+     [擴充功能和更新] 對話方塊隨即開啟。
 
 2. 在擴充功能清單中，選擇 [ **網站資料行** ] 延伸模組，然後選擇 [ **卸載** ] 按鈕。
 

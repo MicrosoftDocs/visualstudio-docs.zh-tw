@@ -1,5 +1,7 @@
 ---
 title: 評估區域變數 |Microsoft Docs
+description: 瞭解 Visual Studio 如何存取記憶體中包含區域值的位置，這取決於程式的目前狀態。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaf140a9ddbc7733da4d05450a024c0f0a713712
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d9c25c9b7b32b69983aeec4a1e533cbb927a11
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738814"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915631"
 ---
 # <a name="evaluate-locals"></a>評估區域變數
 > [!IMPORTANT]

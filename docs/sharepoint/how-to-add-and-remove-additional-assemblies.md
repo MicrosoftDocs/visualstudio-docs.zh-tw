@@ -1,5 +1,7 @@
 ---
 title: 如何：新增和移除其他元件 |Microsoft Docs
+description: 瞭解如何在 SharePoint 方案套件中加入和移除其他元件。 也可以新增或刪除安全控制項和類別資源。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07b9016a4e246d3ed5a2697d924f556517a8226f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41b41ccd5eda2a44457adf23302a833574dade9e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014834"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914968"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>如何：新增和移除其他元件
   如果 SharePoint 封裝相依于其他元件的功能或資料，您可以將元件加入至方案套件， ( .wsp) 。 如此一來，SharePoint 伺服器便可確保自訂群組件會隨封裝一起安裝。
@@ -31,7 +33,7 @@ ms.locfileid: "86014834"
 
 #### <a name="to-add-an-existing-assembly"></a>若要加入現有的元件
 
-1. 開啟 [ **封裝設計**工具]。 如需詳細資訊，請參閱 [如何：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。
+1. 開啟 [ **封裝設計** 工具]。 如需詳細資訊，請參閱 [如何：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。
 
 2. 選擇 [ **Advanced （Advanced** ）] 索引標籤。
 
@@ -45,7 +47,7 @@ ms.locfileid: "86014834"
 
 #### <a name="to-add-an-assembly-from-project-output"></a>從專案輸出加入元件
 
-1. 開啟 [ **封裝設計**工具]。
+1. 開啟 [ **封裝設計** 工具]。
 
      如需詳細資訊，請參閱 [如何：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。
 
@@ -84,7 +86,7 @@ ms.locfileid: "86014834"
 
 #### <a name="to-delete-an-existing-assembly"></a>若要刪除現有的元件
 
-1. 開啟 [ **封裝設計**工具]。 如需詳細資訊，請參閱 [如何：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。
+1. 開啟 [ **封裝設計** 工具]。 如需詳細資訊，請參閱 [如何：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。
 
 2. 選擇 [ **Advanced （Advanced** ）] 索引標籤。
 

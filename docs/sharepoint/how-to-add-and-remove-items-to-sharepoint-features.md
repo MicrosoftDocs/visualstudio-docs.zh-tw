@@ -1,5 +1,7 @@
 ---
 title: 如何：在 SharePoint 功能中加入和移除專案 |Microsoft Docs
+description: 使用 Visual Studio 中的功能設計工具，以手動方式將 SharePoint 專案專案加入和移除 SharePoint 功能。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27c6ebfb0b0cdbff0a184859ffa2a73acab809c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dacfbf715ff37238af5332976313c3b592d21be6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014532"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914916"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>如何：新增和移除 SharePoint 功能的專案
   當您建立 SharePoint 方案時，Visual Studio 會將預設的 SharePoint 專案專案加入至您的功能。 在部署之前，您可以新增和移除 SharePoint 專案專案來修改 SharePoint 功能。

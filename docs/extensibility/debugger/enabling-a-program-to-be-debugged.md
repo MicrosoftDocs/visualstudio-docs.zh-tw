@@ -1,5 +1,7 @@
 ---
 title: 啟用要進行調試的程式 |Microsoft Docs
+description: 瞭解如何啟動您的偵錯工具引擎，或將偵錯工具附加至現有的程式以進行程式的偵錯工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17c6218cd0b25c0cf0134351fd5efd7490b6a1f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac9a43a0ec539dd978710c23c9b44f27eac81799
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738888"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915254"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>啟用要進行調試的程式
 在您的 debug engine (DE) 可以對程式進行偵錯工具之前，您必須先將它取消或附加至現有的程式。

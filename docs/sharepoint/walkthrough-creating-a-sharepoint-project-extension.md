@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：建立 SharePoint 專案延伸模組 |Microsoft Docs
+description: 建立 SharePoint 專案延伸模組，您可以使用它來回應專案層級的事件，例如新增、刪除或重新命名專案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,17 +16,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739924"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914864"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>逐步解說：建立 SharePoint 專案延伸模組
   本逐步解說將說明如何建立 SharePoint 專案的擴充功能。 您可以使用專案延伸回應專案層級的事件，例如新增、刪除或重新命名專案。 您也可以在屬性值變更時加入自訂屬性或回應。 與專案專案延伸不同的是，專案延伸無法與特定的 SharePoint 專案類型建立關聯。 當您建立專案擴充功能時，會在中開啟任何種類的 SharePoint 專案時載入擴充功能 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
- 在這個逐步解說中，您將建立自訂的布林值屬性，此屬性會加入至中所建立的任何 SharePoint 專案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 當設定為 **True**時，新的屬性會將 Images 資源資料夾（或對應）新增至您的專案。 當設定為 **False**時，會移除 Images 資料夾（如果有的話）。 如需詳細資訊，請參閱 [如何：加入和移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。
+ 在這個逐步解說中，您將建立自訂的布林值屬性，此屬性會加入至中所建立的任何 SharePoint 專案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 當設定為 **True** 時，新的屬性會將 Images 資源資料夾（或對應）新增至您的專案。 當設定為 **False** 時，會移除 Images 資料夾（如果有的話）。 如需詳細資訊，請參閱 [如何：加入和移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。
 
  本逐步解說將示範下列工作：
 
@@ -40,7 +42,7 @@ ms.locfileid: "90739924"
 
 - 調試和測試專案屬性。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  您需要在開發電腦上執行下列元件，才能完成此逐步解說：
 
 - [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]、SharePoint 和支援的版本 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
@@ -62,7 +64,7 @@ ms.locfileid: "90739924"
 
 2. 在功能表列上 **，選擇 [** 檔案  >  **新增**  >  **專案**]。
 
-3. 在 [**新增專案**] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic**節點]，然後選擇 [擴充性 **] 節點。**
+3. 在 [**新增專案**] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** 節點]，然後選擇 [擴充性 **] 節點。**
 
     > [!NOTE]
     > 只有當您安裝 Visual Studio SDK 時，才能使用此節點。 如需詳細資訊，請參閱本主題稍早的必要條件一節。
@@ -71,11 +73,11 @@ ms.locfileid: "90739924"
 
 5. 在 [ **名稱** ] 方塊中，輸入 **ProjectExtensionPackage**，然後選擇 [ **確定]** 按鈕。
 
-     **ProjectExtensionPackage**專案隨即出現在**方案總管**中。
+     **ProjectExtensionPackage** 專案隨即出現在 **方案總管** 中。
 
 #### <a name="to-create-the-extension-project"></a>建立延伸模組專案
 
-1. 在 **方案總管**中，開啟方案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
+1. 在 **方案總管** 中，開啟方案節點的快捷方式功能表，選擇 [ **加入**]，然後選擇 [ **新增專案**]。
 
 2. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** 節點]，然後選擇 [ **Windows**]。
 
@@ -100,7 +102,7 @@ ms.locfileid: "90739924"
 
 4. 選擇 [ **擴充** 功能] 節點，選取 [VisualStudio] 和 [EnvDTE 元件] 旁的核取方塊，然後選擇 [ **確定]** 按鈕。
 
-5. 在**方案總管**的 [ **ProjectExtension** ] 專案的 [**參考**] 資料夾下，選擇 [ **EnvDTE**]。
+5. 在 **方案總管** 的 [ **ProjectExtension** ] 專案的 [**參考**] 資料夾下，選擇 [ **EnvDTE**]。
 
 6. 在 [ **屬性** ] 視窗中，將 [ **內嵌 Interop 類型** ] 屬性變更為 [ **False**]。
 
@@ -126,7 +128,7 @@ ms.locfileid: "90739924"
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>設定和建立 VSIX 封裝
 
-1. 在 **方案總管**中，開啟 extension.vsixmanifest 檔案的快捷方式功能表，然後選擇 [ **開啟** ] 按鈕。
+1. 在 **方案總管** 中，開啟 extension.vsixmanifest 檔案的快捷方式功能表，然後選擇 [ **開啟** ] 按鈕。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在資訊清單設計工具中開啟檔案。 [ **中繼資料** ] 索引標籤中顯示的資訊也會出現在 [ **擴充功能和更新**] 中。 所有 VSIX 套件都需要副檔名 extension.vsixmanifest 檔案。 如需此檔案的詳細資訊，請參閱 [VSIX 延伸架構1.0 參考](/previous-versions/dd393700(v=vs.110))。
 
@@ -153,13 +155,13 @@ ms.locfileid: "90739924"
 
 9. 選擇 **[確定]** 以關閉 [ **加入新資產** ] 對話方塊。
 
-10. 在功能表列上 **，選擇**  >  [當您完成時**全部儲存**]，然後關閉 [資訊清單設計工具]。
+10. 在功能表列上 **，選擇**  >  [當您完成時 **全部儲存**]，然後關閉 [資訊清單設計工具]。
 
 11. 在功能表列上，選擇 [**組建**  >  **組建方案**]，然後確定專案已編譯而不會發生錯誤。
 
-12. 在 **方案總管**中，開啟 **ProjectExtensionPackage** 專案的快捷方式功能表，然後選擇 [ **在檔案總管中開啟資料夾** ] 按鈕。
+12. 在 **方案總管** 中，開啟 **ProjectExtensionPackage** 專案的快捷方式功能表，然後選擇 [ **在檔案總管中開啟資料夾** ] 按鈕。
 
-13. 在 **檔案總管**中，開啟 ProjectExtensionPackage 專案的 [組建輸出] 資料夾，然後確認該資料夾包含名為 ProjectExtensionPackage 的檔案。
+13. 在 **檔案總管** 中，開啟 ProjectExtensionPackage 專案的 [組建輸出] 資料夾，然後確認該資料夾包含名為 ProjectExtensionPackage 的檔案。
 
      根據預設，組建輸出檔案夾為。包含您專案檔之資料夾下的 \bin\Debug 資料夾。
 
@@ -170,7 +172,7 @@ ms.locfileid: "90739924"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]以系統管理認證重新開機，然後開啟 ProjectExtensionPackage 方案。
 
-2. 選擇**F5**鍵，或是在功能表列上選擇 [ **debug**  >  **開始調試**程式]，以啟動專案的偵錯工具組建。
+2. 選擇 **F5** 鍵，或是在功能表列上選擇 [ **debug**  >  **開始調試** 程式]，以啟動專案的偵錯工具組建。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將延伸模組安裝至%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom 專案 Property\1.0，並啟動的實驗實例 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
@@ -186,7 +188,7 @@ ms.locfileid: "90739924"
 
     4. 選擇 [ **SharePoint 2010] 專案** 範本，然後輸入 **ModuleTest** 做為專案的名稱。
 
-4. 在 **方案總管**中，選擇 [ **ModuleTest** ] 專案節點。
+4. 在 **方案總管** 中，選擇 [ **ModuleTest** ] 專案節點。
 
      新的自訂屬性 **對應影像資料夾** 會出現在 [ **屬性** ] 視窗中，預設值為 [ **False**]。
 
@@ -196,7 +198,7 @@ ms.locfileid: "90739924"
 
 6. 將該屬性的值變更回 **False**。
 
-     如果您選擇 [**刪除映射] 資料夾**中的 [**是**] 按鈕，就會從 SharePoint 專案中刪除 Images 資源資料夾。
+     如果您選擇 [**刪除映射] 資料夾** 中的 [**是**] 按鈕，就會從 SharePoint 專案中刪除 Images 資源資料夾。
 
 7. 關閉 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的實驗執行個體。
 

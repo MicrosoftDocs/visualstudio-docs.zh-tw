@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：新增功能事件接收器 |Microsoft Docs
+description: 在這個逐步解說中，新增功能事件接收器，也就是在安裝、啟動、停用或移除 SharePoint 功能時所執行的方法。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98b85222fca4da6dfca653ad74e1315801798d83
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015358"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915592"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>逐步解說：新增功能事件接收器
-  功能事件接收器是在 SharePoint 中發生下列其中一個功能相關事件時所執行的方法：
+功能事件接收器是在 SharePoint 中發生下列其中一個功能相關事件時所執行的方法：
 
 - 已安裝功能。
 
@@ -34,7 +36,7 @@ ms.locfileid: "86015358"
 
 - 已移除功能。
 
-  本逐步解說示範如何將事件接收器加入至 SharePoint 專案中的功能。 它會示範下列工作：
+本逐步解說示範如何將事件接收器加入至 SharePoint 專案中的功能。 它會示範下列工作：
 
 - 使用功能事件接收器建立空白專案。
 
@@ -83,7 +85,7 @@ ms.locfileid: "86015358"
 
 2. 在 [ **功能** ] 節點下，開啟 [ **Feature1**] 的快捷方式功能表，然後選擇 [ **加入事件接收器** ]，將事件接收器加入至功能。
 
-     這會在 Feature1 底下加入程式碼檔案。 在此情況下，會根據您專案的開發語言，將它命名為*Feature1.EventReceiver.cs*或*Feature1。*
+     這會在 Feature1 底下加入程式碼檔案。 在此情況下，會根據您專案的開發語言，將它命名為 *Feature1.EventReceiver.cs* 或 *Feature1。*
 
 3. 如果您的專案是以撰寫的 [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ，請在事件接收器的頂端新增下列程式碼（如果它還不存在）：
 
@@ -111,7 +113,7 @@ ms.locfileid: "86015358"
 
 5. 在 [**功能**] 頁面上，選擇 [ **FeatureEvtTest Feature1** ] 功能旁的 [**啟用**] 按鈕。
 
-6. 在 [**功能**] 頁面上，選擇 [ **FeatureEvtTest Feature1** ] 功能旁的 [**停用**] 按鈕，然後選擇 [**停用此功能**確認] 連結以停用此功能。
+6. 在 [**功能**] 頁面上，選擇 [ **FeatureEvtTest Feature1** ] 功能旁的 [**停用**] 按鈕，然後選擇 [**停用此功能** 確認] 連結以停用此功能。
 
 7. 選擇 [ **首頁** ] 按鈕。
 

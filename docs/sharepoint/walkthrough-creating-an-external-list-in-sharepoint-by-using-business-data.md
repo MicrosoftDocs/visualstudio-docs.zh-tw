@@ -1,5 +1,7 @@
 ---
 title: 使用商務資料在 SharePoint 中建立外部清單
+description: 建立 BDC 服務的模型，以傳回商務資料庫中連絡人的相關資訊，然後使用此模型在 SharePoint 中建立外部清單。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f4fe79c3a6f158eb61d624ce6c5e1566925e3fd
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740054"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915332"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>逐步解說：使用商務資料在 SharePoint 中建立外部清單
 
@@ -52,7 +54,7 @@ ms.locfileid: "90740054"
 
 1. 在 Visual Studio 的功能表列上 **，選擇 [** 檔案  >  **新增**  >  **專案**]。
 
-     此時會開啟 [新增專案]**** 對話方塊。
+     此時會開啟 [新增專案] 對話方塊。
 
 2. 在 [ **Visual c #** ] 或 [ **Visual Basic**] 下，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 專案。
 
@@ -64,19 +66,19 @@ ms.locfileid: "90740054"
 
 5. 選擇 [ **完成]** 按鈕以接受預設的本機 SharePoint 網站。
 
-6. 在 **方案總管**中，選擇 [SharePoint 專案] 節點。
+6. 在 **方案總管** 中，選擇 [SharePoint 專案] 節點。
 
 7. 在功能表列上，選擇 [ **Project**  >  **加入新專案**]。
 
      [ **加入新專案** ] 對話方塊隨即開啟。
 
-8. 在 [ **範本** ] 窗格中，選擇 [ **商務資料連線模型 (伺服器陣列方案]) **、將專案命名為 **Adventureworkscontacts.bdcmodel1.contact**，然後選擇 [ **加入** ] 按鈕。
+8. 在 [ **範本** ] 窗格中，選擇 [ **商務資料連線模型 (伺服器陣列方案])**、將專案命名為 **Adventureworkscontacts.bdcmodel1.contact**，然後選擇 [ **加入** ] 按鈕。
 
 ## <a name="add-data-access-classes-to-the-project"></a>將資料存取類別加入至專案
 
 1. 在功能表列上，選擇 [**工具**  >  **連接到資料庫]**。
 
-     [新增連線]**** 對話方塊隨即開啟。
+     [新增連線] 對話方塊隨即開啟。
 
 2. 將連接新增至 SQL Server AdventureWorks 範例資料庫。
 
@@ -96,23 +98,23 @@ ms.locfileid: "90740054"
 
 8. 在功能表列上，選擇 [ **View**  >  **伺服器總管**]。
 
-9. 在 **伺服器總管**中，展開代表 AdventureWorks 範例資料庫的節點，然後展開 [ **資料表]** 節點。
+9. 在 **伺服器總管** 中，展開代表 AdventureWorks 範例資料庫的節點，然後展開 [ **資料表]** 節點。
 
-10. 將 **Contact (Person) ** 資料表加入至 O/R 設計工具。
+10. 將 **Contact (Person)** 資料表加入至 O/R 設計工具。
 
      實體類別隨即建立並出現在設計介面上。 Entity 類別的屬性會對應至 Contact (Person) 資料表中的資料行。
 
 ## <a name="remove-the-default-entity-from-the-bdc-model"></a>從 BDC 模型移除預設實體
 
-**商務資料連線模型**專案會將名為 Entity1 的預設實體加入至模型。 移除此實體。 稍後，您將會加入新的實體。 從空白模型開始，可減少完成逐步解說所需的步驟數目。
+**商務資料連線模型** 專案會將名為 Entity1 的預設實體加入至模型。 移除此實體。 稍後，您將會加入新的實體。 從空白模型開始，可減少完成逐步解說所需的步驟數目。
 
-1. 在 **方案總管**中，展開 [ **BdcModel1** ] 節點，然後開啟 *BdcModel1 .bdcm* 檔案。
+1. 在 **方案總管** 中，展開 [ **BdcModel1** ] 節點，然後開啟 *BdcModel1 .bdcm* 檔案。
 
 2. 商務資料連線模型檔會在 BDC 設計工具中開啟。
 
-3. 在設計工具中，開啟 **Entity1**的快捷方式功能表，然後選擇 [ **刪除**]。
+3. 在設計工具中，開啟 **Entity1** 的快捷方式功能表，然後選擇 [ **刪除**]。
 
-4. 在**方案總管**中，開啟 [Entity1.cs] 中的 [Visual Basic (*Entity1* ] 的快捷方式功能表，) 或 [c # 中的*Entity1.cs* (] ) ，然後選擇 [**刪除**]。
+4. 在 **方案總管** 中，開啟 [Entity1.cs] 中的 [Visual Basic (*Entity1* ] 的快捷方式功能表，) 或 [c # 中的 *Entity1.cs* (] ) ，然後選擇 [**刪除**]。
 
 5. 在 Visual Basic) 中開啟 *Entity1Service* 的快捷方式功能表 (，或在 c # ) 中開啟 [ *Entity1Service.cs* (]，然後選擇 [ **刪除**]。
 
@@ -122,7 +124,7 @@ ms.locfileid: "90740054"
 
 1. 在功能表列上，選擇 [ **View**  >  **工具箱**]。
 
-2. 在 [工具箱] 的 [ **BusinessDataConnectivity** ] 索引標籤上，將**實體**加入至 BDC 設計**工具**。
+2. 在 [工具箱] 的 [ **BusinessDataConnectivity** ] 索引標籤上，將 **實體** 加入至 BDC 設計 **工具**。
 
      新的實體會出現在設計工具上。 Visual Studio 會將名為 *EntityService* (的檔案新增至 Visual Basic) 或 c # (中的 *EntityService.cs* ) 至專案。
 
@@ -170,9 +172,9 @@ ms.locfileid: "90740054"
 
 5. 在 [ **屬性** ] 視窗中，開啟 [ **TypeName** ] 屬性旁邊的清單，選擇 [ **目前的專案** ] 索引標籤，然後選擇 [ **Contact** ] 屬性。
 
-6. 在 [ **BDC Explorer**] 中，開啟 [ **Contact**] 的快捷方式功能表，然後選擇 [ **加入類型描述**元]。
+6. 在 [ **BDC Explorer**] 中，開啟 [ **Contact**] 的快捷方式功能表，然後選擇 [ **加入類型描述** 元]。
 
-     名為 **TypeDescriptor1** 的新類型描述元會出現在 **BDC Explorer**中。
+     名為 **TypeDescriptor1** 的新類型描述元會出現在 **BDC Explorer** 中。
 
 7. 在 [ **屬性** ] 視窗中，將 [ **名稱** ] 屬性值設定為 **ContactID**。
 
@@ -184,8 +186,8 @@ ms.locfileid: "90740054"
 
     |名稱|類型名稱|
     |----------|---------------|
-    |FirstName|System.String|
-    |LastName|System.String|
+    |名字|System.String|
+    |姓氏|System.String|
     |電話|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|

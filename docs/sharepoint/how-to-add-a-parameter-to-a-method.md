@@ -1,5 +1,7 @@
 ---
 title: 如何：將參數加入至方法 |Microsoft Docs
+description: 瞭解如何將參數加入至商務資料連線 (BDC) 方法，這可讓您將資訊傳遞至方法，或從方法傳回信息。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 179109ff4c0def002dac45887fe9491196a70d3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016708"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915397"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>如何：將參數加入至方法
   使用參數將資訊傳遞至方法，或是從方法傳回信息。 所有方法都必須至少有一個參數。 如需如何設計參數以支援您想要建立的方法類型的詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。

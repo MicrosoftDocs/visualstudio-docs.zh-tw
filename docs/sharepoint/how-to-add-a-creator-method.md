@@ -1,5 +1,7 @@
 ---
 title: 如何：新增建立者方法 |Microsoft Docs
+description: 瞭解如何新增建立者方法，該方法會將新的資料加入至 SharePoint 中的商務資料連線 (BDC) 服務之實體的資料來源。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 962e353b5ae82f6dd3eccc2898385fd4b9ee30ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790b4265b232c71ff3e0613cffcb45e710081fa3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017071"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915449"
 ---
 # <a name="how-to-add-a-creator-method"></a>如何：新增建立者方法
-  建立者方法會將新的資料加入至實體的資料來源。 當使用者在以模型為基礎之清單的**功能區**上選擇 [**新增專案**] 按鈕時， (BDC) 服務的商務資料連線會呼叫這個方法。 如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
+  建立者方法會將新的資料加入至實體的資料來源。 當使用者在以模型為基礎之清單的 **功能區** 上選擇 [**新增專案**] 按鈕時， (BDC) 服務的商務資料連線會呼叫這個方法。 如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
 ### <a name="to-add-a-creator-method"></a>新增建立者方法
 
-1. 在 **BDC 設計**工具上，選擇實體。
+1. 在 **BDC 設計** 工具上，選擇實體。
 
 2. 在功能表列上，選擇 [**查看**  >  **其他 Windows**  > **BDC 方法詳細資料**]。
 
@@ -39,7 +41,7 @@ ms.locfileid: "86017071"
 
     Visual Studio 將下列元素加入至模型，而且這些專案會出現在 [ **BDC 方法詳細資料** ] 視窗中。
 
-   - 名為 **Create**的方法。
+   - 名為 **Create** 的方法。
 
    - 方法的輸入參數。
 
@@ -51,7 +53,7 @@ ms.locfileid: "86017071"
 
      如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
-4. 在 **方案總管**中，開啟針對實體所產生之服務程式代碼檔案的快捷方式功能表，然後選擇 [ **View code**]。
+4. 在 **方案總管** 中，開啟針對實體所產生之服務程式代碼檔案的快捷方式功能表，然後選擇 [ **View code**]。
 
     Entity service 程式碼檔案會在程式碼編輯器中開啟。 如需實體服務程式代碼檔案的詳細資訊，請參閱 [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
 

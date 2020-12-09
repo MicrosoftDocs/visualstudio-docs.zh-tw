@@ -1,5 +1,7 @@
 ---
 title: 如何：新增和移除功能相依性 |Microsoft Docs
+description: 請參閱 Visual Studio 中的功能設計工具，以瞭解如何在 SharePoint 方案中新增和移除功能相依性。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c318a7dc4672a10e993d0149ec77e7f94679d465
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5011db32123e77e9bf60c99459125302b2bf8264
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014778"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915358"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>如何：新增和移除功能相依性
   您的 SharePoint 功能可能相依于功能或資料的其他功能。 在這些情況下，您可以將這些其他功能標示為功能的相依性。 如此一來，SharePoint 伺服器便可確保在啟用功能之前，會先啟用相依功能。

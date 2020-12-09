@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 09/21/2020
 ms.topic: conceptual
 description: 瞭解系統管理員如何將授權指派給訂閱者
-ms.openlocfilehash: 95e0358a39ccb88ed93f8e5bcee11d2b36d12d48
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: dd80a14a3ff57100f210fd7ae1b882c0ab7a9faf
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863110"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915410"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 訂閱系統管理入口網站中指派授權
 Visual Studio 訂用帳戶管理員，您可以使用系統管理員入口網站將訂用帳戶指派給個別使用者和使用者群組。
@@ -58,7 +58,7 @@ Visual Studio 訂用帳戶管理員，您可以使用系統管理員入口網站
 ## <a name="why-use-a-different-notification-email-address"></a>為何要使用不同的通知電子郵件地址？
 某些組織會設定電子郵件服務，以封鎖來自其他網域的傳入電子郵件。  封鎖內送電子郵件表示「訂閱者」和「系統管理員」會錯過重要的通訊：
 - 訂閱者將不會收到已指派訂用帳戶的通知。  這也會讓它們無法啟用部分包含的權益。  
-- 已獲派 GitHub Enterprise Visual Studio 訂用帳戶的訂閱者將不會收到加入 GitHub 組織的邀請，這表示他們將無法接受邀請。 他們必須接受以電子郵件傳送的邀請，才能取得您 GitHub 組織的存取權。 
+- 已獲派 GitHub Enterprise Visual Studio 訂用帳戶的訂閱者將不會收到加入 GitHub 組織的邀請，這表示他們將無法接受邀請。 他們 **必須接受以電子郵件傳送的邀請** ，才能取得您 GitHub 組織的存取權。 
 - 當系統管理員新增至合約時，系統管理員會收到每月系統管理員聲明或功能變更的通知，而這些變更會影響管理訂閱的方式。
 
 使用通知電子郵件地址可讓您選擇讓您的訂閱者接收其訂閱的重要通訊，而不需要變更其登入電子郵件地址的功能。  
