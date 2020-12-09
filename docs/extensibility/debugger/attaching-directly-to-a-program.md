@@ -1,5 +1,7 @@
 ---
 title: 直接附加至程式 |Microsoft Docs
+description: 瞭解 Visual Studio 如何使用 Visual Studio IDE 中的程式，將偵錯工具附加至已經在執行的進程。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,19 +12,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc78234b31b98865f1779dd65d743d4196f9cbf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80ee40d60b5a7511c3f44c22c16e02751d9f1f36
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903272"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913772"
 ---
 # <a name="attach-directly-to-a-program"></a>直接附加至程式
 如果使用者想要在已經在執行的進程中進行程式偵錯工具，通常會遵循此進程：
 
 1. 在 IDE 中，從 [**工具**] 功能表選擇 [ **Debug 進程**] 命令。
 
-    [處理序]**** 對話方塊隨即出現。
+    [處理序] 對話方塊隨即出現。
 
 2. 選擇處理常式，然後按一下 [ **附加** ] 按鈕。
 

@@ -1,6 +1,8 @@
 ---
 title: 建立顯示 OData for SharePoint 的 Silverlight web 元件
 titleSuffix: ''
+description: 建立會顯示適用于 SharePoint 之 OData 的 Silverlight web 元件。 自訂 Silverlight 應用程式，以及修改和測試 Silverlight 網頁元件。
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298495"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914786"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>逐步解說：建立顯示適用于 SharePoint 之 OData 的 Silverlight web 元件
   SharePoint 2010 透過 OData 公開其清單資料。 在 SharePoint 中，OData 服務是由 RESTful service ListData 所執行。 本逐步解說將示範如何建立裝載 Silverlight 應用程式的 SharePoint 網頁元件。 Silverlight 應用程式會使用 ListData 來顯示 SharePoint 公告清單資訊。 如需詳細資訊，請參閱 [SharePoint FOUNDATION REST 介面](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) 和 [開放式資料通訊協定](https://www.odata.org/)。
@@ -60,7 +62,7 @@ ms.locfileid: "92298495"
 
 8. 將 **名稱** 變更為 **SLApplication**、將 **語言** 設定為 **Visual Basic** 或 **Visual c #**，然後將 **silverlight 版本** 設定為 **silverlight 4.0**。
 
-9. 選擇 [完成]**** 按鈕。 專案會出現在 **方案總管**中。
+9. 選擇 [完成] 按鈕。 專案會出現在 **方案總管** 中。
 
      此方案包含兩個專案： Silverlight 應用程式和 Silverlight 網頁元件。 Silverlight 應用程式會從 SharePoint 抓取並顯示清單資料，而 Silverlight web 元件會裝載 Silverlight 應用程式，讓您可以在 SharePoint 中加以查看。
 
@@ -71,10 +73,10 @@ ms.locfileid: "92298495"
 
 1. 在 Silverlight 應用程式中，將元件參考加入至 System.object。 如需詳細資訊，請參閱 [如何：使用加入參考對話方塊加入或移除參考](/previous-versions/wkze6zky(v=vs.140))。
 
-2. 在 **方案總管**中，開啟 [ **參考**] 的快捷方式功能表，然後選擇 [ **加入服務參考**]。
+2. 在 **方案總管** 中，開啟 [ **參考**] 的快捷方式功能表，然後選擇 [ **加入服務參考**]。
 
     > [!NOTE]
-    > 如果您是使用 Visual Basic，則必須選擇**方案總管**頂端的 [**顯示所有**檔案] 圖示，以顯示 [**參考**] 節點。
+    > 如果您是使用 Visual Basic，則必須選擇 **方案總管** 頂端的 [**顯示所有** 檔案] 圖示，以顯示 [**參考**] 節點。
 
 3. 在 [ **加入服務參考** ] 對話方塊的 [位址] 方塊中，輸入 SharePoint 網站的 URL （例如），然後 **http://MySPSite** 選擇 [ **移至** ] 按鈕。
 
@@ -94,7 +96,7 @@ ms.locfileid: "92298495"
 
 8. 調整方格控制項的大小，使其符合 Silverlight 頁面。
 
-9. 在 MainPage 的 MainPage.xaml.cs 中， (Visual c # 或) Visual Basic *MainPage*的*MainPage.xaml.cs* ，請新增下列命名空間參考。
+9. 在 MainPage 的 MainPage.xaml.cs 中， (Visual c # 或) Visual Basic *MainPage* 的 *MainPage.xaml.cs* ，請新增下列命名空間參考。
 
     ```vb
     ' Add the following three Imports statements.
@@ -201,7 +203,7 @@ ms.locfileid: "92298495"
 
 2. 在 [ **屬性** ] 視窗中，選擇 [ **SharePoint** ] 索引標籤。
 
-3. 如果尚未選取，請選取 [ **啟用 Silverlight 偵錯工具 (而非腳本偵錯工具) ** ] 核取方塊。
+3. 如果尚未選取，請選取 [ **啟用 Silverlight 偵錯工具 (而非腳本偵錯工具)** ] 核取方塊。
 
 4. 儲存專案。
 

@@ -1,5 +1,7 @@
 ---
 title: 中斷點錯誤 |Microsoft Docs
+description: 瞭解中斷點嘗試系結至程式碼但失敗時的程式，以及如何針對中斷點錯誤進行疑難排解。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0766792f19faf7c1933c6576ab41f65ec1b31ae9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88a5003ce8abe79fcba9f9604047d2265810fda2
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739225"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914487"
 ---
 # <a name="breakpoint-errors"></a>中斷點錯誤
 以下說明中斷點嘗試系結至程式碼但失敗時的進程。

@@ -1,5 +1,7 @@
 ---
 title: 偵錯工具元件 |Microsoft Docs
+description: 瞭解組成 Visual Studio 偵錯工具所管理之偵錯工具的元素，這些專案會實作為 VSPackage。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03c400fd03c5ee0f2629e9f436b65f53f8f2ac8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739005"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914097"
 ---
 # <a name="debugger-components"></a>偵錯工具元件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯工具會實作為 VSPackage 並管理整個偵錯工具會話。 Debug 會話包含下列元素：
@@ -32,7 +34,7 @@ ms.locfileid: "80739005"
 
 - **運算式評估工具 (EE) ：** 當程式在特定時間點停止時，提供動態評估使用者所提供之變數和運算式的支援。 它是由 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 其支援的語言 (所執行，) 以及想要支援其專屬語言的協力廠商廠商。
 
-- ** (SP) 的符號提供者：** 也稱為符號處理常式，會將程式的偵錯工具符號對應至程式的執行中實例，以提供有意義的資訊 (例如原始程式碼層級的偵錯工具和運算式評估) 。 它是由 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Common Language Runtime [CLR] 符號的 (和程式資料庫 [PDB] 符號檔格式所執行，) ，以及由有專屬方法可儲存偵錯工具的協力廠商廠商所執行。
+- **(SP) 的符號提供者：** 也稱為符號處理常式，會將程式的偵錯工具符號對應至程式的執行中實例，以提供有意義的資訊 (例如原始程式碼層級的偵錯工具和運算式評估) 。 它是由 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Common Language Runtime [CLR] 符號的 (和程式資料庫 [PDB] 符號檔格式所執行，) ，以及由有專屬方法可儲存偵錯工具的協力廠商廠商所執行。
 
   下圖顯示 Visual Studio 偵錯工具的這些元素之間的關聯性。
 

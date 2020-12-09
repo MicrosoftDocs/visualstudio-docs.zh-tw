@@ -1,5 +1,7 @@
 ---
 title: 變更區域變數的值 |Microsoft Docs
+description: 瞭解在 [區域變數] 視窗的 [值] 欄位中輸入新值時，變更本機值的程式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 565ae9f27b9f5a113e51520724f525599ad5eda7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08f366162f4031b9cc7aa651bf9eca7aab55a15a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904273"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914331"
 ---
 # <a name="change-the-value-of-a-local"></a>變更本機的值
 > [!IMPORTANT]

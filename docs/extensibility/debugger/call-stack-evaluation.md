@@ -1,5 +1,7 @@
 ---
 title: 呼叫堆疊評估 |Microsoft Docs
+description: 瞭解 EnumFrameInfo 方法，以及如何在中斷模式期間，執行它以查看呼叫堆疊的堆疊框架。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5557d7eae0ffe54b0f01f1f9e95935d71455229
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc637ff3ce2fe596eed48684523da7114fe0a03a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739186"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914669"
 ---
 # <a name="call-stack-evaluation"></a>呼叫堆疊評估
 為了在中斷模式期間查看呼叫堆疊的堆疊框架，您必須執行 [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 方法。

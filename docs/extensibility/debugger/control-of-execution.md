@@ -1,5 +1,7 @@
 ---
 title: 執行的控制 |Microsoft Docs
+description: 瞭解停止事件，這表示會使用 IDE 來等候使用者的回應。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c59831efb2fc97ad1bb2891fd93a67fe79f8eff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88adaad3092e084841c40b5e04d45f94985a2ee8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387001"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913876"
 ---
 # <a name="control-of-execution"></a>執行的控制
 Debug engine (DE) 通常會將下列其中一個事件傳送為最後一個啟動事件：
@@ -57,7 +59,7 @@ Debug engine (DE) 通常會將下列其中一個事件傳送為最後一個啟�
 
    如果 debug 封裝要忽略特定的停止事件，debug 封裝會呼叫 SDM，它會呼叫 [IDebugProgram2：： Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)。 如果程式在遇到停止狀況時進入、跳過或移出函式，它會繼續執行步驟。 這表示程式會維持逐步執行狀態，讓它知道如何繼續進行。
 
-   對 SDM 進行 `Step` 、 **執行**和 **繼續** 的呼叫是非同步，這表示 sdm 預期呼叫會快速傳回。 如果「取消」會在相同的執行緒上傳送 SDM a 停止事件，然後才會傳回 `Step` 、 **執行**或 **繼續** ，則 sdm 將會停止回應。
+   對 SDM 進行 `Step` 、 **執行** 和 **繼續** 的呼叫是非同步，這表示 sdm 預期呼叫會快速傳回。 如果「取消」會在相同的執行緒上傳送 SDM a 停止事件，然後才會傳回 `Step` 、 **執行** 或 **繼續** ，則 sdm 將會停止回應。
 
 ## <a name="see-also"></a>另請參閱
 - [調試作業](../../extensibility/debugger/debugging-tasks.md)

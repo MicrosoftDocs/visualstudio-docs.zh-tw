@@ -1,5 +1,7 @@
 ---
 title: 如何：新增和移除對應的資料夾 |Microsoft Docs
+description: 新增和移除 SharePoint 中專案的對應資料夾。  變更對應資料夾的部署位置。 重新命名或移除對應的資料夾。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80fbd3e18b8d440eae2873c73013ad7468073640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4d29be9b008bfaa9ad6694725b03e25bf6847df
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014647"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914800"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>如何：新增和移除對應的資料夾
   SharePoint 中一些常用的資料夾（例如影像和版面配置）會在檔案階層中緊密內嵌。 您可以將這些資料夾對應到 SharePoint 專案，以便更輕鬆地存取這些資料夾。 對應的資料夾是 SharePoint 專案中對應至 SharePoint Server 安裝中檔案實體位置的資料夾。
@@ -41,13 +43,13 @@ ms.locfileid: "86014647"
 
 4. 在 [ **名稱** ] 方塊中，輸入 **TestProject1**，然後選擇 [ **確定]** 按鈕。
 
-5. 在 [ **SharePoint 自訂] 嚮導**中，選擇 [ **完成]** 按鈕以保留預設設定。
+5. 在 [ **SharePoint 自訂] 嚮導** 中，選擇 [ **完成]** 按鈕以保留預設設定。
 
-6. 在**方案總管**中，選擇 [專案] 節點，然後在功能表列上選擇 [**專案**  >  **加入 SharePoint] 的 [影像] 對應資料夾**。
+6. 在 **方案總管** 中，選擇 [專案] 節點，然後在功能表列上選擇 [**專案**  >  **加入 SharePoint] 的 [影像] 對應資料夾**。
 
      名為「 **影像** 」的資料夾會出現在您的專案中，並包含名為 TestProject1 的子資料夾。 這個對應的資料夾將包含視覺 web 元件專案的影像。
 
-7. 在 [**方案總管**中，選擇專案節點，然後在功能表列上選擇 [**專案**  >  **加入 sharepoint 對應資料夾**]，以顯示 [**新增 sharepoint 對應資料夾**] 對話方塊。
+7. 在 [**方案總管** 中，選擇專案節點，然後在功能表列上選擇 [**專案**  >  **加入 sharepoint 對應資料夾**]，以顯示 [**新增 sharepoint 對應資料夾**] 對話方塊。
 
 8. 在可供對應之資料夾的樹狀檢視中，選擇 [ **資源** ] 資料夾，然後選擇 [ **確定]** 按鈕。
 

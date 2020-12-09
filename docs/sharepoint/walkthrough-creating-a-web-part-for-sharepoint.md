@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：建立 SharePoint 的網頁元件 |Microsoft Docs
+description: 建立 SharePoint 的網頁元件。 Web 元件可讓使用者使用瀏覽器直接變更 SharePoint 網站頁面的內容、外觀和行為。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247647"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914656"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>逐步解說：建立 SharePoint 的網頁元件
 
@@ -42,7 +44,7 @@ Web 元件會顯示資料方格中的員工。 使用者指定包含員工資料
     > [!NOTE]
     > 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [個人化 VISUAL STUDIO IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 - 支援的 Microsoft Windows 和 SharePoint 版本。
 
@@ -66,7 +68,7 @@ Web 元件會顯示資料方格中的員工。 使用者指定包含員工資料
 
 ## <a name="add-a-web-part-to-the-project"></a>將網頁元件新增至專案
 
-將 **Web 元件** 專案加入至專案。 **Web 元件**專案會加入 web 元件的程式碼檔案。 稍後，您會將程式碼加入至 Web 元件程式碼檔案，以轉譯網頁元件的內容。
+將 **Web 元件** 專案加入至專案。 **Web 元件** 專案會加入 web 元件的程式碼檔案。 稍後，您會將程式碼加入至 Web 元件程式碼檔案，以轉譯網頁元件的內容。
 
 1. 在功能表列上，選擇 [ **Project**  >  **加入新專案**]。
 
@@ -74,13 +76,13 @@ Web 元件會顯示資料方格中的員工。 使用者指定包含員工資料
 
 3. 在 SharePoint 範本清單中，選擇 [ **Web 元件** ] 範本，然後選擇 [ **加入** ] 按鈕。
 
-     **Web 元件**專案隨即出現在**方案總管**中。
+     **Web 元件** 專案隨即出現在 **方案總管** 中。
 
 ## <a name="rendering-content-in-the-web-part"></a>轉譯網頁元件中的內容
 
 您可以藉由將控制項加入網頁元件類別的控制項集合，來指定要在 Web 元件中顯示哪些控制項。
 
-1. 在**方案總管**中， (Visual Basic) 或 c # (中的*WebPart1.cs* ) 開啟*WebPart1。*
+1. 在 **方案總管** 中， (Visual Basic) 或 c # (中的 *WebPart1.cs* ) 開啟 *WebPart1。*
 
      Web 元件程式碼檔案會在程式碼編輯器中開啟。
 
@@ -162,9 +164,9 @@ Web 元件會顯示資料方格中的員工。 使用者指定包含員工資料
         </employees>
     ```
 
-2. 在 [記事本] 的功能表列上，**選擇 [** 檔案  >  **另存**新檔]。
+2. 在 [記事本] 的功能表列上，**選擇 [** 檔案  >  **另存** 新檔]。
 
-3. 在 [ **另存** 新檔] 對話方塊的 [ **存檔類型** ] 清單中，選擇 [ **所有**檔案]。
+3. 在 [ **另存** 新檔] 對話方塊的 [ **存檔類型** ] 清單中，選擇 [ **所有** 檔案]。
 
 4. 在 [ **檔案名** ] 方塊中，輸入 **data.xml**。
 

@@ -1,5 +1,7 @@
 ---
-title: 中斷點相關的方法 |Microsoft Docs
+title: Breakpoint-Related 方法 |Microsoft Docs
+description: Visual Studio 的偵錯工具支援系結的中斷點，其已成功系結至程式碼中的位置，而暫止的中斷點尚未系結。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72ec63e500ac86a4a5bd66a2956fe0fb06c8834
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9472f1ff4105790951ddd687d7e71c3e57fa39da
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739204"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914461"
 ---
 # <a name="breakpoint-related-methods"></a>中斷點相關的方法
 Debug engine (DE) 必須支援中斷點的設定。 Visual Studio 的偵錯工具支援下列類型的中斷點：
@@ -39,7 +41,7 @@ Debug engine (DE) 必須支援中斷點的設定。 Visual Studio 的偵錯工�
 |方法|描述|
 |------------|-----------------|
 |[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|判斷指定的暫止中斷點是否可以系結至程式碼位置。|
-|[繫結](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|將指定的暫止中斷點系結至一個或多個程式碼位置。|
+|[綁定](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|將指定的暫止中斷點系結至一個或多個程式碼位置。|
 |[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|取得暫止中斷點的狀態。|
 |[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|取得用來建立暫止中斷點的中斷點要求。|
 |[啟用](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|切換暫止中斷點的啟用狀態。|

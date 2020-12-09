@@ -1,5 +1,7 @@
 ---
 title: 在啟動後附加 |Microsoft Docs
+description: 當程式啟動時，就可以將 debug engine 附加至程式。 選擇與 debug engine 進行通訊的設計方法。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a4ce0a7465891035b43bbb8f6f22f0c064d104c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e19d9090126a13b657f53c20d7ec44a793d5376
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739278"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913889"
 ---
 # <a name="attach-after-a-launch"></a>在啟動後附加
 程式啟動之後，就可以將偵錯工具附加 (DE) 的程式。

@@ -1,5 +1,7 @@
 ---
 title: 評估內容 |Microsoft Docs
+description: 當 debug engine 呼叫運算式評估工具時，引數會決定尋找和評估符號的內容： pSymbolProvider、pAddress 和 pBinder。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e3d02bd652d6c46b5aabe00e049e425f0921c27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a021d5dfdff5058211f5bafdfd7854611f977c27
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738809"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914513"
 ---
 # <a name="evaluation-context"></a>評估內容
 > [!IMPORTANT]

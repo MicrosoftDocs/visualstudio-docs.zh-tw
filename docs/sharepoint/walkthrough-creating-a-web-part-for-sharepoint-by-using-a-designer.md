@@ -1,5 +1,7 @@
 ---
 title: 使用設計工具建立 SharePoint 的網頁元件
+description: 在這個逐步解說中，使用 Visual Studio 中的 SharePoint 視覺 Web 元件專案範本，以視覺化方式建立網頁元件。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732bd9fe3d34a768e0c6f71315f212c49bdf02af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc214e98b2ec0ed6feb31c9aaa6e8170b3ddd2c8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016383"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913980"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>逐步解說：使用設計工具建立 SharePoint 的網頁元件
 
@@ -73,9 +75,9 @@ ms.locfileid: "86016383"
 
 3. 在 [**工具箱**] 的 [**標準**] 節點中，選擇 [ **CheckBoxList** ] 控制項，然後執行下列其中一個步驟：
 
-    - 開啟 **CheckBoxList** 控制項的快捷方式功能表，選擇 [ **複製**]，開啟設計工具中第一行的快捷方式功能表，然後選擇 [ **貼**上]。
+    - 開啟 **CheckBoxList** 控制項的快捷方式功能表，選擇 [ **複製**]，開啟設計工具中第一行的快捷方式功能表，然後選擇 [ **貼** 上]。
 
-    - 從 [工具箱] 拖曳 [ **CheckBoxList** ] 控制項，然後將控制項連接到設計 **工具**中的第一行。
+    - 從 [工具箱] 拖曳 [ **CheckBoxList** ] 控制項，然後將控制項連接到設計 **工具** 中的第一行。
 
 4. 重複上述步驟，但將按鈕移至設計工具的下一行。
 
@@ -83,7 +85,7 @@ ms.locfileid: "86016383"
 
 6. 在功能表列上，選擇 [**視圖**  >  **屬性視窗]**。
 
-     [屬性]**** 視窗隨即開啟。
+     [屬性] 視窗隨即開啟。
 
 7. 在按鈕的 [ **Text** ] 屬性中，輸入 **Update**。
 

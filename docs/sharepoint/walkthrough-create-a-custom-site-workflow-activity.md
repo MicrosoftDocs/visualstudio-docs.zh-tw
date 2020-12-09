@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：建立自訂網站工作流程活動 |Microsoft Docs
+description: 在這個逐步解說中，請參閱如何使用 Visual Studio 建立網站層級 SharePoint 工作流程的自訂活動。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016526"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913952"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>逐步解說：建立自訂網站工作流程活動
   本逐步解說示範如何使用建立網站層級工作流程的自訂活動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。  (網站層級的工作流程會套用到整個網站，而不只是網站上的清單。 ) 自訂活動會建立備份公告清單，然後將公告清單的內容複寫到其中。
@@ -66,11 +68,11 @@ ms.locfileid: "86016526"
 
      此步驟會將解決方案的信任層級設定為伺服器陣列方案，這是工作流程專案的唯一可用選項。
 
-6. 在**方案總管**中，選擇專案節點，然後在功能表列上選擇 [**專案**  >  **加入新專案**]。
+6. 在 **方案總管** 中，選擇專案節點，然後在功能表列上選擇 [**專案**  >  **加入新專案**]。
 
 7. 在 [ **Visual c #** ] 或 [ **Visual Basic**] 下，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 
-8. 在 [ **範本** ] 窗格中，選擇 [ **僅限順序的工作流程 (伺服器陣列方案]) ** 範本，然後選擇 [ **加入** ] 按鈕。
+8. 在 [ **範本** ] 窗格中，選擇 [ **僅限順序的工作流程 (伺服器陣列方案])** 範本，然後選擇 [ **加入** ] 按鈕。
 
      [ **SharePoint 自訂] Wizard** 隨即出現。
 
@@ -83,7 +85,7 @@ ms.locfileid: "86016526"
 
 #### <a name="to-add-a-custom-workflow-activity-class"></a>若要加入自訂工作流程活動類別
 
-1. 在功能表列上 **，選擇 [**  >  **加入新**專案]，以顯示 [**加入新專案**] 對話方塊。
+1. 在功能表列上 **，選擇 [**  >  **加入新** 專案]，以顯示 [**加入新專案**] 對話方塊。
 
 2. 在 [ **已安裝的範本** ] 樹狀檢視中，選擇 [程式 **代碼** ] 節點，然後選擇專案專案範本清單中的 [ **類別** ] 範本。 使用預設名稱 Class1。 選擇 [新增] 按鈕。
 
@@ -103,7 +105,7 @@ ms.locfileid: "86016526"
 
 1. 在設計檢視的工作流程設計工具中開啟 Workflow1.xaml。
 
-2. 從 [ **工具箱** ] 拖曳 [Class1]，使其出現在活動底下， `onWorkflowActivated1` 或是開啟 [class1] 的快捷方式功能表，選擇 [ **複製**]，開啟活動下的行的快捷方式功能表， `onWorkflowActivated1` 然後選擇 [ **貼**上]。
+2. 從 [ **工具箱** ] 拖曳 [Class1]，使其出現在活動底下， `onWorkflowActivated1` 或是開啟 [class1] 的快捷方式功能表，選擇 [ **複製**]，開啟活動下的行的快捷方式功能表， `onWorkflowActivated1` 然後選擇 [ **貼** 上]。
 
 3. 儲存專案。
 

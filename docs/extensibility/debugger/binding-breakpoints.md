@@ -1,5 +1,7 @@
 ---
 title: 系結中斷點 |Microsoft Docs
+description: 瞭解 IDE 如何會構成中斷點的要求，並在使用者設定中斷點時提示 debug 會話建立中斷點。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e839b6e0e7967c4802bee5617da3334c5d4033c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 606c1f4cb5559722028b78ef4ef21c41c0ba5556
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903224"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914708"
 ---
 # <a name="bind-breakpoints"></a>系結中斷點
 如果使用者設定中斷點（也許是按 **F9**），IDE 就會會構成要求，並提示 debug 會話來建立中斷點。

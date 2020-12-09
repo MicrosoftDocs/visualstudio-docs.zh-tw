@@ -1,5 +1,7 @@
 ---
 title: Debug 封裝 |Microsoft Docs
+description: 瞭解 debug 封裝如何在 Visual Studio shell 中執行，並透過取用偵錯工具和與會話偵錯工具通訊來處理 UI。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de6240ea5d938d02f8415009203962e124ff049e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad62a487d38500617999a276aa3ae15a75089736
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739030"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914123"
 ---
 # <a name="debug-package"></a>Debug 封裝
 Debug 封裝會在 Visual Studio shell 中執行，並處理所有的 UI。 它會取用 Visual Studio 的偵錯工具，並與會話 debug manager (SDM) 進行通訊。
@@ -24,7 +26,7 @@ Debug 封裝會在 Visual Studio shell 中執行，並處理所有的 UI。 它�
 
  Debug 封裝沒有語言或執行時間環境相依性。 不需要執行或修改偵錯工具封裝。
 
- Debug 封裝是由 *vsdebug.dll*所執行。
+ Debug 封裝是由 *vsdebug.dll* 所執行。
 
 ## <a name="see-also"></a>另請參閱
 - [會話偵錯工具管理員](../../extensibility/debugger/session-debug-manager.md)

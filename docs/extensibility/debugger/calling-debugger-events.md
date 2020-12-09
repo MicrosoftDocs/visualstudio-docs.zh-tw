@@ -1,5 +1,7 @@
 ---
 title: 呼叫偵錯工具事件 |Microsoft Docs
+description: 調試會話中的事件會以特定順序發生。 本文列出一般偵錯工具會話中發生之事件的呼叫順序。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3deef418620ab17297b4ef7e824a0d95c25e439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 832b42e62731a087048b4aa50e19b74c408343c5
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904322"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914384"
 ---
 # <a name="call-debugger-events"></a>呼叫偵錯工具事件
 調試會話中的事件會以特定順序發生。
