@@ -1,6 +1,6 @@
 ---
-title: 在成員與關聯標記法之間變更 (類別設計工具)
-description: 瞭解如何變更類別圖表代表兩種類型之間的關聯關聯性與關聯標記法之間的關聯關係，反之亦然。
+title: 在成員 & 關聯標記法之間變更
+description: 瞭解如何將類別圖表的關聯性，從成員標記法變更為關聯標記法的類別設計工具，反之亦然。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d26b6ca1c71fe3484544f02006a27866ff4843
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f96fe04ee84be50bd241db6bf9f73280c40dec02
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901657"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933566"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>如何：在類別設計工具中變更為成員標記法或關聯標記法
 

@@ -1,6 +1,6 @@
 ---
-title: 如何：將類別圖表匯出為影像 (類別設計工具)
-description: 瞭解如何將圖表儲存為影像，以從專案中的程式碼匯出您建立的類別圖。
+title: 將類別圖表匯出為影像
+description: 瞭解如何使用類別設計工具將圖表儲存為影像，以從專案中的程式碼匯出您建立的類別圖。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cb72a494cbafc9e2ab6661f056436a083b52de1
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2b82c96c99f3144d12afd887a82bc66dc0499f95
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901397"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933462"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>如何：將類別圖表匯出為影像
 

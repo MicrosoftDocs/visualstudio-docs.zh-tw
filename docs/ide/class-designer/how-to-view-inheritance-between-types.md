@@ -1,5 +1,5 @@
 ---
-title: 如何：檢視類型之間的繼承 (類別設計工具)
+title: 檢視類型之間的繼承
 description: 瞭解如何在類別設計工具中的類別圖上，尋找基底類型與其衍生類型之間的繼承關係。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82785f1a5cac2185925c63c4d6d224ffd5fd67de
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 0e4dff57b11d0ba16fcab7d2ddf8c175e05c2b6d
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901189"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933449"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>如何：在類別設計工具中檢視類型之間的繼承
 

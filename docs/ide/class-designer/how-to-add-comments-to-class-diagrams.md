@@ -1,6 +1,6 @@
 ---
-title: 如何：將註解加入至類別圖表 (類別設計工具)
-description: 瞭解如何使用批註圖形來標注類別圖表。
+title: 將註解新增至類別圖表
+description: 瞭解如何使用批註圖形來標注類別設計工具中的類別圖表。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b146efb27bb76d91b7453d574bda6d79d53a68a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: aa001c301174f2f7b45fb69265eeb24454a6626f
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901670"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933540"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>如何：將註解新增至類別圖表
 
