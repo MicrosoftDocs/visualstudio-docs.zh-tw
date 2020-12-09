@@ -1,0 +1,91 @@
+### YamlMime:Hub
+title: Visual Studio 遊戲開發檔
+summary: 瞭解如何使用 Visual Studio、Visual Studio for Mac 以及與 Unity、Unreal Engine 等整合的主要工具來建立遊戲。
+brand: visual-studio
+metadata:
+  title: Visual Studio 遊戲開發檔 |Microsoft Docs
+  description: 本文介紹遊戲開發 Visual Studio 的功能。
+  author: therealjohn
+  ms.author: johmil
+  ms.date: 08/05/2020
+  ms.topic: hub-page
+  ms.openlocfilehash: 5cd2470d62d90f686cc5175ac15e7c49eadfc014
+  ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 11/05/2020
+  ms.locfileid: "96926483"
+highlightedContent:
+  items:
+  - title: 使用 Visual Studio 開發遊戲
+    itemType: overview
+    url: https://visualstudio.microsoft.com/vs/features/game-development
+  - title: '使用 Unity 進行 c # 遊戲開發'
+    itemType: learn
+    url: unity/get-started/visual-studio-tools-for-unity.md
+  - title: Visual Studio Tools for Unity 的新功能
+    itemType: whats-new
+    url: unity/change-log-visual-studio-tools-for-unity.md
+  - title: 使用 Unity 建立您的第一個3D 應用程式
+    itemType: quickstart
+    url: https://dotnet.microsoft.com/learn/games/unity-tutorial/intro
+  - title: 深入瞭解 .NET 遊戲開發
+    itemType: learn
+    url: https://dotnet.microsoft.com/apps/gaming
+productDirectory:
+  title: 遊戲開發
+  summary: 深入瞭解與 Visual Studio 和 .NET 整合的領先工具和技術
+  items:
+  - title: Unity
+    imageSrc: unity/media/unity-logo.png
+    links:
+    - url: unity/get-started/visual-studio-tools-for-unity.md
+      text: 導覽 Visual Studio Tools for Unity
+    - url: unity/get-started/getting-started-with-visual-studio-tools-for-unity.md
+      text: 開始使用 Visual Studio 和 Unity
+    - url: unity/troubleshooting/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+      text: 疑難排解 Visual Studio Tools for Unity
+  - title: MonoGame
+    imageSrc: monogame/media/monogame-logo.png
+    links:
+    - url: https://www.monogame.net/
+      text: MonoGame 總覽
+    - url: https://docs.monogame.net/articles/getting_started/0_getting_started.html
+      text: 開始使用 MonoGame
+    - url: https://docs.monogame.net/articles/getting_started/0_getting_started.html#setting-up-your-development-environment
+      text: 設定 MonoGame 的 Visual Studio
+  - title: Unreal Engine
+    imageSrc: unreal/media/unreal-engine-logo.png
+    links:
+    - url: https://www.unrealengine.com/features
+      text: Unreal 引擎總覽
+    - url: https://docs.unrealengine.com/GettingStarted/index.html
+      text: 開始使用 Unreal 引擎
+    - url: https://docs.unrealengine.com/Programming/Development/VisualStudioSetup/index.html
+      text: 設定 Unreal 引擎的 Visual Studio
+conceptualContent:
+  title: Visual Studio 的等級
+  summary: 深入瞭解 Visual Studio 中的程式碼編輯、偵錯工具和建立。
+  items:
+  - title: 了解如何使用 Visual Studio
+    links:
+    - text: 開始引導式導覽
+      url: /docs/get-started/visual-studio-ide.md
+      itemType: overview
+    - text: 撰寫和編輯程式碼
+      url: /docs/ide/index-writing-code.yml
+      itemType: tutorial
+    - text: 一般調試功能
+      itemType: tutorial
+      url: /docs/debugger/debugger-feature-tour.md
+  - title: 追隨教學課程
+    links:
+    - text: 第一個使用 Unity 的遊戲
+      url: https://dotnet.microsoft.com/learn/games/unity-tutorial/intro
+      itemType: tutorial
+    - text: MonoGame 範例 & 示範
+      url: https://docs.monogame.net/articles/samples.html
+      itemType: tutorial
+    - text: Unreal 引擎教學課程
+      url: https://www.unrealengine.com/en-US/onlinelearning-courses
+      itemType: learn
