@@ -1,5 +1,7 @@
 ---
 title: 錯誤處理和傳回值 |Microsoft Docs
+description: 瞭解 Visual Studio SDK 如何提供 interop 元件，以便在收到錯誤通知時，記錄豐富的錯誤資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b6b9bff9056360f9ea840f47b1488f05bee872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8e8385e0b270cd6e359ef03a3060d5eefb97479
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711927"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995846"
 ---
 # <a name="error-handling-and-return-values"></a>錯誤處理和傳回值
 Vspackage 和 COM 針對錯誤使用相同的架構。 和函式 `SetErrorInfo` `GetErrorInfo` 是 Win32 應用程式設計介面的一部分， (API) 。 整合式開發環境 (IDE) 中的任何 VSPackage 都可以呼叫這些全域 Win32 Api，以在收到錯誤通知時記錄豐富的錯誤資訊。 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]提供 interop 元件來管理錯誤資訊。

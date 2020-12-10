@@ -1,6 +1,6 @@
 ---
-title: 工作流程設計工具 RemoveFromCollection &lt; T &gt; 活動設計工具
-description: 瞭解如何使用 RemoveFromCollection <T> 活動設計工具來建立和設定 RemoveFromCollection <T> 活動。
+title: RemoveFromCollection &lt; T &gt; 活動設計工具
+description: 在工作流程設計工具中，您將瞭解如何使用 RemoveFromCollection <T> 活動設計工具來建立和設定 RemoveFromCollection <T> 活動。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61ffa2aaec2cfcc588607bd71c6524ab7c8f39e3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 069640dccf185f2f2c738efdde6a2311352a04b6
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434125"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996093"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T> 活動設計工具
 
@@ -29,8 +29,8 @@ ms.locfileid: "94434125"
 
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>使用 RemoveFromCollection \<T> 活動設計工具
 
-存取 [工具箱] 的 [ **集合** ] 類別中的 [ **RemoveFromCollection \<T>** ] 活動設計 **工具** 。
-[ **RemoveFromCollection \<T>** ] 活動設計工具可以從 [ **工具箱** ] 拖曳出來，放到工作流程設計工具介面上通常用來放置活動的任一處，例如內部 <xref:System.Activities.Statements.Sequence> 。 這會建立一個 <xref:System.Activities.Statements.RemoveFromCollection%601> 活動，預設值 <xref:System.Activities.Activity.DisplayName%2A> 為 RemoveFromCollection<Int32 \> 。 您 <xref:System.Activities.Activity.DisplayName%2A> 可以在 **RemoveFromCollection<T \>** 活動設計工具的標頭中編輯此值，或在屬性方格的 [ **DisplayName** ] 方塊中編輯此值。 其他的屬性必須在屬性方格上進行編輯。
+存取 [工具箱] 的 [**集合**] 類別中的 [ **RemoveFromCollection \<T>** ] 活動設計 **工具**。
+[ **RemoveFromCollection \<T>** ] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到工作流程設計工具介面上通常用來放置活動的任一處，例如內部 <xref:System.Activities.Statements.Sequence> 。 這會建立一個 <xref:System.Activities.Statements.RemoveFromCollection%601> 活動，預設值 <xref:System.Activities.Activity.DisplayName%2A> 為 RemoveFromCollection<Int32 \> 。 您 <xref:System.Activities.Activity.DisplayName%2A> 可以在 **RemoveFromCollection<T \>** 活動設計工具的標頭中編輯此值，或在屬性方格的 [ **DisplayName** ] 方塊中編輯此值。 其他的屬性必須在屬性方格上進行編輯。
 
 ### <a name="the-removefromcollectiont-properties"></a>RemoveFromCollection<T \> 屬性
 
@@ -39,12 +39,12 @@ ms.locfileid: "94434125"
 |屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|否|<xref:System.Activities.Statements.RemoveFromCollection%601> 活動可選用的易記名稱。 預設值為 RemoveFromCollection<Int32 \> 。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|對|要從 **集合 \<T>** 中移除的專案。 此專案的類型為 *T* ，其類型為 *TypeArgument* 。 若要指定項目，請在屬性方格中輸入 Visual Basic 運算式。|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|對|要從中移除專案的集合。 此集合的類型為 **ICollection<TypeArgument \> 。** 若要指定集合，請在屬性方格中輸入 Visual Basic 運算式。|
-|*TypeArgument*|對|<xref:System.Collections.Generic.ICollection%601> 所包含項目的 T 型別。 根據預設，這個 *TypeArgument* 類型設定為 **Int32** 。 若要變更類型，請變更屬性方格中下拉式方塊的 *TypeArgument* 值。|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|是|要從 **集合 \<T>** 中移除的專案。 此專案的類型為 *T*，其類型為 *TypeArgument*。 若要指定項目，請在屬性方格中輸入 Visual Basic 運算式。|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|是|要從中移除專案的集合。 此集合的類型為 **ICollection<TypeArgument \> 。** 若要指定集合，請在屬性方格中輸入 Visual Basic 運算式。|
+|*TypeArgument*|是|<xref:System.Collections.Generic.ICollection%601> 所包含項目的 T 型別。 根據預設，這個 *TypeArgument* 類型設定為 **Int32**。 若要變更類型，請變更屬性方格中下拉式方塊的 *TypeArgument* 值。|
 |<xref:System.Activities.Activity%601.Result%2A>|否|指出指定的項目是否可從集合內移除的值。 若要指定繫結至結果的變數，請在屬性方格中輸入變數。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [集合](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)

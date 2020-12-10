@@ -1,5 +1,7 @@
 ---
 title: Task 類別-內部成員 |Microsoft Docs
+description: 深入瞭解可協助您執行自訂偵錯工具之 System.object 的內部成員。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf278c0248b344cea4be7cf161ecc91581f5f2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f18de66a524fbc652b8153c5b34b4464cda60f5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712740"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996015"
 ---
 # <a name="task-class---internal-members"></a>Task 類別-內部成員
 本文說明 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 可協助您執行自訂偵錯工具之類別的內部成員。 如需此類別的一般資訊，請參閱 <xref:System.Threading.Tasks.Task> 參考文章。
@@ -42,14 +44,14 @@ ms.locfileid: "80712740"
 
 ### <a name="methods"></a>方法
 
-|名稱|說明|
+|名稱|描述|
 |----------|-----------------|
 |[SetNotificationForWaitCompletion 方法](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|設定或清除 TASK_STATE_WAIT_COMPLETION_NOTIFICATION 狀態位。|
 |[NotifyDebuggerOfWaitCompletion 方法](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|偵錯工具用來當做中斷點目標的預留位置方法。|
 
 ### <a name="fields"></a>欄位
 
-|Name|說明|
+|名稱|描述|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|表示要在物件中執行之程式碼的委派 <xref:System.Threading.Tasks.Task> 。|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|儲存物件的其他屬性 <xref:System.Threading.Tasks.Task> 。|

@@ -1,5 +1,7 @@
 ---
 title: 設計工具初始化和中繼資料設定 |Microsoft Docs
+description: 瞭解 Visual Studio SDK 如何協助控制設計工具或設計工具元件的初始化及其中繼資料（VSPackage）。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d8ebb285bdc8211f590f49e615042b7029d70
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 9907298cf730d6e51c108dc92f633d0b50451f12
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011705"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996158"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>設計工具初始化和中繼資料設定
 

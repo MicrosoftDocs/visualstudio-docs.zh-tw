@@ -1,5 +1,7 @@
 ---
 title: IDE 常數 |Microsoft Docs
+description: VSConstants 類別提供 IDE 特有的常數，而且先前只定義在標頭檔中。
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc2eddac1cc7d7e616deb197752adf41a4d68d15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b419981e8fe1224cef5c25e112d58924a8301b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710507"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995560"
 ---
 # <a name="ide-constants"></a>IDE 常數
 
@@ -33,7 +35,7 @@ ms.locfileid: "80710507"
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`處理常式應該將此值傳遞給 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 方法，以取得 [**開啟方式**] 對話方塊，在此案例中可能是程式碼視圖。|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`處理常式會將此值傳遞給 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 方法，以取得 [**開啟方式**] 對話方塊，在此案例中，會使用 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> 對應至相同視圖的可能偵錯工具視圖來填入 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> 。|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`處理常式會將此值傳遞給 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 方法，以取得 [**開啟方式**] 對話方塊，在此案例中是用來**查看表單**設計工具的視圖。|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`處理常式會將此值傳遞給 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 方法，以取得 [**開啟方式**] 對話方塊，在此案例中是用來 **查看表單** 設計工具的視圖。|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Primary_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`處理常式會將此值傳遞給 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 方法，以取得 [**開啟方式**] 對話方塊，在此案例中為編輯器 factory 的預設/主要視圖。|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.TextView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`處理常式會將此值傳遞給 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 方法，以取得 [**開啟方式**] 對話方塊，在此為 [檔] 或 [資料文字編輯器] 視圖。|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.UserChooseView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`處理常式會將此值傳遞給方法，以 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 提示使用者選擇要使用的使用者定義視圖。|
@@ -80,7 +82,7 @@ ms.locfileid: "80710507"
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  描述剛在呼叫中選取的 IDE 元件（ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> 例如）。
 
-|持續性|值|
+|常數|值|
 |--------------|-----------|
 |[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
 |[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
@@ -92,7 +94,7 @@ ms.locfileid: "80710507"
 ## <a name="vsselelemid"></a>VSSELELEMID
  用來表示新選取狀態的常數。
 
-|持續性|值|
+|常數|值|
 |--------------|-----------|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|
@@ -105,7 +107,7 @@ ms.locfileid: "80710507"
 
 ## <a name="component-selector-dialog-constants"></a>元件選取器對話方塊常數
 
-|持續性|值|
+|常數|值|
 |--------------|-----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELCHANGED>|WM_USER + 1280|
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER + 1281|

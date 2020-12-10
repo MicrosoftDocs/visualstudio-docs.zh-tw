@@ -1,5 +1,7 @@
 ---
 title: 編輯器和語言服務延伸模組 |Microsoft Docs
+description: 您可以擴充 Visual Studio 程式碼編輯器的大部分功能（使用 Windows Presentation Foundation 來執行），並以 managed 程式碼撰寫。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78d85cd3651f8769104a61586bea1468e1c21cd2
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 2b15d5f970bfc6a32489991b578a54f2eadc96ea
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414070"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995820"
 ---
 # <a name="editor-and-language-service-extensions"></a>編輯器和語言服務延伸模組
 您可以擴充 Visual Studio 程式碼編輯器的大部分功能。 編輯器是以 Windows Presentation Foundation (WPF) 為基礎，而且是以 managed 程式碼撰寫。 雖然此設計與舊版 Visual Studio 的設計不同，但它會提供大部分相同的功能。 若要擴充編輯器，請使用 Managed Extensibility Framework (MEF) 。
@@ -24,7 +26,7 @@ ms.locfileid: "93414070"
 
 ## <a name="related-topics"></a>相關主題
 
-|Title|描述|
+|標題|描述|
 |-----------|-----------------|
 |[使用編輯器專案範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)|使用編輯器專案範本的簡介。|
 |[擴充編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)|檔的連結，這些檔會介紹核心編輯器的設計和功能，並示範如何擴充。|

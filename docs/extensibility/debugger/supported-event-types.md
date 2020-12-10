@@ -1,5 +1,7 @@
 ---
 title: 支援的事件種類 |Microsoft Docs
+description: 瞭解 Visual Studio 偵錯工具支援的事件種類，包括非同步事件、同步事件和停止事件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94e26897c50fd7e10a8b831655610848cb93043f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 215256cbbcff45dfa0b85a480f0900e6f8ddfa71
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712805"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996028"
 ---
 # <a name="supported-event-types"></a>支援的事件種類
 Visual Studio 的偵測目前支援下列事件種類：

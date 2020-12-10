@@ -1,5 +1,7 @@
 ---
 title: IDSymbol 元素 |Microsoft Docs
+description: IDSymbol 元素包含 GUID： ID 組的識別碼，代表功能表、群組或命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d02a26a6874165738d917a14986d16d142c01915
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4feb477f8507bc3fe57e6db355538ab98ceeeaa
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710367"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995534"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 元素
 `IDSymbol`元素包含 GUID： id 組的識別碼，代表功能表、群組或命令。 GUID 來自父 `GuidSymbol` 元素。 專案 `IDSymbol` 具有屬性， `name` 該屬性會提供識別碼的易記名稱，該名稱包含在屬性中 `value` 。
@@ -35,14 +37,14 @@ ms.locfileid: "80710367"
 |屬性|描述|
 |---------------|-----------------|
 |NAME|必要。 識別碼符號的名稱。|
-|value|必要。 識別碼符號的數值識別碼值。|
+|值|必要。 識別碼符號的數值識別碼值。|
 
 ### <a name="child-elements"></a>子元素
  無。
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[GuidSymbol 元素](../extensibility/guidsymbol-element.md)|包含代表功能表、群組或命令之 GUID： ID 組的 GUID。 將 `IDSymbol` 項目設為群組。|
 

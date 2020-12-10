@@ -1,5 +1,6 @@
 ---
 title: '[擴充屬性]、[工作清單]、[輸出]、[選項] 視窗'
+description: 瞭解如何將 Visual Studio 中的工具視窗相關資訊整合至新的 [選項] 頁面，以及 [屬性] 頁面上的新設定。
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c968544c6bf52a901052fc7aedbbee66dcc10e62
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038474"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995794"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>擴充屬性、工作清單、輸出和選項視窗
 您可以存取 Visual Studio 中的任何工具視窗。 本逐步解說將示範如何將工具視窗的相關資訊整合至新的 [ **選項** ] 頁面和 [ **屬性** ] 頁面上的新設定，以及如何寫入 **工作清單** 和 **輸出** 視窗中。
@@ -31,7 +32,7 @@ ms.locfileid: "90038474"
 
 ## <a name="create-an-extension-with-a-tool-window"></a>使用工具視窗建立擴充功能
 
-1. 使用 VSIX 範本來建立名為 **TodoList** 的專案，並新增名為 **TodoWindow**的自訂工具視窗專案範本。
+1. 使用 VSIX 範本來建立名為 **TodoList** 的專案，並新增名為 **TodoWindow** 的自訂工具視窗專案範本。
 
     > [!NOTE]
     > 如需使用工具視窗建立延伸模組的詳細資訊，請參閱 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。
@@ -39,16 +40,16 @@ ms.locfileid: "90038474"
 ## <a name="set-up-the-tool-window"></a>設定工具視窗
  加入文字方塊，在其中輸入新的 ToDo 專案、將新專案新增至清單的按鈕，以及顯示清單上專案的 ListBox。
 
-1. 在 *TodoWindow*中，刪除 UserControl 中的 Button、TextBox 和 StackPanel 控制項。
+1. 在 *TodoWindow* 中，刪除 UserControl 中的 Button、TextBox 和 StackPanel 控制項。
 
     > [!NOTE]
     > 這不會刪除 **button1_Click** 的事件處理常式，您將在稍後的步驟中重複使用它。
 
-2. 從 [**工具箱**] 的 [**所有 WPF 控制項**] 區段中，將**Canvas**控制項拖曳至方格。
+2. 從 [**工具箱**] 的 [**所有 WPF 控制項**] 區段中，將 **Canvas** 控制項拖曳至方格。
 
-3. 將 **TextBox**、 **Button**和 **ListBox** 拖曳至畫布。 排列元素，讓 TextBox 和 Button 在相同層級上，而 ListBox 會填滿視窗的其餘部分，如下圖所示。
+3. 將 **TextBox**、 **Button** 和 **ListBox** 拖曳至畫布。 排列元素，讓 TextBox 和 Button 在相同層級上，而 ListBox 會填滿視窗的其餘部分，如下圖所示。
 
-     ![完成的工具視窗](../extensibility/media/t5-toolwindow.png "T5-工具視窗")
+     ![完成的工具視窗](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")
 
 4. 在 [XAML] 窗格中，尋找按鈕，並將其 [內容] 屬性設定為 [ **新增**]。 藉由新增屬性，將按鈕事件處理常式重新連接至按鈕控制項 `Click="button1_Click"` 。 Canvas 區塊看起來應該像這樣：
 
@@ -80,7 +81,7 @@ ms.locfileid: "90038474"
     }
     ```
 
-3. 在 *TodoWindow.cs*中，變更 TodoWindowControl 的函式以包含 TodoWindow 參數。 程式碼看起來應該像這樣：
+3. 在 *TodoWindow.cs* 中，變更 TodoWindowControl 的函式以包含 TodoWindow 參數。 程式碼看起來應該像這樣：
 
     ```csharp
     public TodoWindow() : base(null)
@@ -126,7 +127,7 @@ ms.locfileid: "90038474"
 
 ### <a name="make-the-options-page-available-to-users"></a>讓使用者可以使用 [選項] 頁面
 
-1. 在 *TodoWindowPackage.cs*中，將新增 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 至 `TodoWindowPackage` 類別：
+1. 在 *TodoWindowPackage.cs* 中，將新增 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 至 `TodoWindowPackage` 類別：
 
     ```csharp
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
@@ -147,7 +148,7 @@ ms.locfileid: "90038474"
 
      當使用者可以使用工具視窗時，ListBox 中的專案會以 TodoItems 表示。 當使用者在清單方塊中選取其中一個專案時，[ **屬性** ] 視窗會顯示專案的相關資訊。
 
-     若要在 [ **屬性** ] 視窗中提供資料，請將資料轉換成具有兩個特殊屬性（和）的公用屬性 `Description` `Category` 。 `Description` 是出現在 [ **屬性** ] 視窗底部的文字。 `Category` 決定在 [ **屬性** ] 視窗顯示于 [ **分類** ] 視圖時，屬性應出現的位置。 在下圖中，[**屬性**] 視窗是在 [**分類**視圖] 中，已選取 [ **ToDo 欄位**] 分類中的 [**名稱**] 屬性，而 [**名稱**] 屬性的描述會顯示在視窗底部。
+     若要在 [ **屬性** ] 視窗中提供資料，請將資料轉換成具有兩個特殊屬性（和）的公用屬性 `Description` `Category` 。 `Description` 是出現在 [ **屬性** ] 視窗底部的文字。 `Category` 決定在 [ **屬性** ] 視窗顯示于 [ **分類** ] 視圖時，屬性應出現的位置。 在下圖中，[**屬性**] 視窗是在 [**分類** 視圖] 中，已選取 [ **ToDo 欄位**] 分類中的 [**名稱**] 屬性，而 [**名稱**] 屬性的描述會顯示在視窗底部。
 
      ![屬性視窗](../extensibility/media/t5properties.png "T5Properties")
 
@@ -240,7 +241,7 @@ ms.locfileid: "90038474"
     }
     ```
 
-6. 在 *TodoWindowControl.xaml.cs*中，將存根方法加入至 `TodoWindowControl` `CheckForError` 和方法的類別 `UpdateList` 。 將它們放在 System.windows.forms.control.processdialogchar 之後和檔案結尾之前。
+6. 在 *TodoWindowControl.xaml.cs* 中，將存根方法加入至 `TodoWindowControl` `CheckForError` 和方法的類別 `UpdateList` 。 將它們放在 System.windows.forms.control.processdialogchar 之後和檔案結尾之前。
 
     ```csharp
     public void CheckForErrors()
@@ -352,7 +353,7 @@ ms.locfileid: "90038474"
 
      現在您已經有一個可供 [ **屬性** ] 視窗使用的類別，您可以將 [ **屬性** ] 視窗與 [工具] 視窗整合。 當使用者按一下工具視窗中清單方塊中的專案時，[ **屬性** ] 視窗應該會隨之更新。 同樣地，當使用者變更 [ **屬性** ] 視窗中的 ToDo 專案時，應該更新相關聯的專案。
 
-7. 現在，在 *TodoWindowControl.xaml.cs*中新增其餘的 UpdateList 函式程式碼。 它應該從 ListBox 中卸載並重新新增修改過的 TodoItem。
+7. 現在，在 *TodoWindowControl.xaml.cs* 中新增其餘的 UpdateList 函式程式碼。 它應該從 ListBox 中卸載並重新新增修改過的 TodoItem。
 
     ```csharp
     public void UpdateList(TodoItem item)
@@ -375,9 +376,9 @@ ms.locfileid: "90038474"
 12. 在清單方塊中，您應該會看到比今天晚兩天的日期。
 
 ## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>將文字新增至 [輸出] 視窗，並將專案加入至工作清單
- 在 **工作清單**中，您會建立工作類型的新物件，然後藉由呼叫其方法，將該工作物件加入至 **工作清單** `Add` 。 若要寫入至 [ **輸出** ] 視窗，您可以呼叫其 `GetPane` 方法來取得窗格物件，然後呼叫 `OutputString` 窗格物件的方法。
+ 在 **工作清單** 中，您會建立工作類型的新物件，然後藉由呼叫其方法，將該工作物件加入至 **工作清單** `Add` 。 若要寫入至 [ **輸出** ] 視窗，您可以呼叫其 `GetPane` 方法來取得窗格物件，然後呼叫 `OutputString` 窗格物件的方法。
 
-1. 在*TodoWindowControl.xaml.cs*的方法中 `button1_Click` ，新增程式碼以取得**輸出**視窗的 **[一般**] 窗格 (這是預設) ，並寫入其中。 方法看起來應如下所示：
+1. 在 *TodoWindowControl.xaml.cs* 的方法中 `button1_Click` ，新增程式碼以取得 **輸出** 視窗的 **[一般**] 窗格 (這是預設) ，並寫入其中。 方法看起來應如下所示：
 
     ```csharp
     private void button1_Click(object sender, EventArgs e)
@@ -479,19 +480,19 @@ ms.locfileid: "90038474"
     }
     ```
 
-## <a name="try-it-out"></a>試試看
+## <a name="try-it-out"></a>試做
 
 1. 建置此專案並開始偵錯。 實驗實例隨即出現。
 
-2. 開啟**TodoWindow** (**查看**  >  **其他 Windows**  >  **TodoWindow**) 。
+2. 開啟 **TodoWindow** (**查看**  >  **其他 Windows**  >  **TodoWindow**) 。
 
 3. 在文字方塊中輸入內容，然後按一下 [ **新增**]。
 
-     今天的到期日是在清單方塊中新增了2天。 不會產生任何錯誤，且**工作清單** (**視圖**  >  **工作清單**) 應該沒有任何專案。
+     今天的到期日是在清單方塊中新增了2天。 不會產生任何錯誤，且 **工作清單** (**視圖**  >  **工作清單**) 應該沒有任何專案。
 
-4. 現在將 [**工具**  >  **選項**  >  **待辦事項**] 頁面上的設定，從**2**變更回**0**。
+4. 現在將 [**工具**  >  **選項**  >  **待辦事項**] 頁面上的設定，從 **2** 變更回 **0**。
 
-5. 在 **TodoWindow** 中輸入其他內容，然後再按一下 [ **新增** ]。 這會觸發錯誤，也會觸發 **工作清單**中的專案。
+5. 在 **TodoWindow** 中輸入其他內容，然後再按一下 [ **新增** ]。 這會觸發錯誤，也會觸發 **工作清單** 中的專案。
 
      當您加入專案時，初始日期會設定為現在加上2天。
 

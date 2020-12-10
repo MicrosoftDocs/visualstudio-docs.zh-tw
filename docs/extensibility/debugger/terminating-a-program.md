@@ -1,5 +1,7 @@
 ---
 title: 終止程式 |Microsoft Docs
+description: 本文說明 IDE 如何使用 debug engine，以單一線程終止單一程式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 985b20fe75f8ceee3d434ac681b437c51baf85e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b2b883611d5479f0febc169b32f7f378230be4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712514"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995976"
 ---
 # <a name="terminating-a-program"></a>終止程式
 下一節說明使用一個執行緒的單一程式終止。

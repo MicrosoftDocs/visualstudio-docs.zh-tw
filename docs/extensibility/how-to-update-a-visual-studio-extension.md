@@ -1,5 +1,7 @@
 ---
 title: 如何：更新 Visual Studio 延伸模組 |Microsoft Docs
+description: 瞭解如何使用延伸模組和更新來更新您系統上的 Visual Studio 延伸模組，以安裝更新的版本。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee81fe30e10253239bc51dd9d2f199340debc65a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be22ca13fd5af8df88501835c8a030cc6469e179
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905618"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995600"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>如何：更新 Visual Studio 延伸模組
 您可以使用 **擴充功能和更新** 來更新系統上的 Visual Studio 延伸模組，以安裝更新的版本。 如果您建立了擴充功能的更新版本，您可以在 VSIX 資訊清單中遞增版本號碼，以表示更新的版本。
@@ -45,7 +47,7 @@ ms.locfileid: "85905618"
     > [!IMPORTANT]
     > 未簽署的所有使用者延伸模組不會自動更新。 您應一律簽署您的延伸模組。
 
-2. 在 **方案總管**中，開啟 [ *副檔名*]。
+2. 在 **方案總管** 中，開啟 [ *副檔名*]。
 
 3. 在 [資訊清單設計工具] 中，增加 [ **版本** ] 欄位中的數位值。
 
@@ -55,10 +57,10 @@ ms.locfileid: "85905618"
 
      當具有舊版擴充功能的使用者開啟 [ **擴充功能和更新**] 時，新版本將會出現在 [ **更新** ] 清單中，前提是該工具已設定為自動尋找更新。
 
-     您可以啟用或停用 [**更新**] 窗格底部的 [自動檢查更新] ([**啟用/停用可用更新的自動偵測**) ]，這會變更 [**工具**選項] **Check for updates**  >  **Options**  >  **環境**  >  **擴充功能和更新**中的 [檢查更新] 設定。
+     您可以啟用或停用 [**更新**] 窗格底部的 [自動檢查更新] ([**啟用/停用可用更新的自動偵測**) ]，這會變更 [**工具** 選項]   >    >  **環境**  >  **擴充功能和更新** 中的 [檢查更新] 設定。
 
     > [!NOTE]
-    > 從 Visual Studio 2015 Update 2 開始，您可以在 [**工具**  >  **選項**  >  **環境**擴充功能和更新] 中指定 ( >  **Extensions and Updates**) 您是否想要針對個別使用者延伸模組、所有使用者延伸模組，或兩者 (預設設定) 進行自動更新。
+    > 從 Visual Studio 2015 Update 2 開始，您可以在 [**工具**  >  **選項**  >  **環境** 擴充功能和更新] 中指定 ( >  ) 您是否想要針對個別使用者延伸模組、所有使用者延伸模組，或兩者 (預設設定) 進行自動更新。
 
 ## <a name="see-also"></a>另請參閱
 - [VSIX 封裝的剖析](../extensibility/anatomy-of-a-vsix-package.md)

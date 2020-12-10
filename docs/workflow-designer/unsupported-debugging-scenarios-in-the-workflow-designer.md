@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具中不支援的偵錯情況
+title: 不支援的偵錯案例
 description: 瞭解工作流程設計工具中不支援的偵錯工具案例，例如「在編輯程式碼後無法繼續執行」。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: d9ce8d15e44fecca673fdaa9fccd70ff13eb6783
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4e98e2a75905f4c0a4c007691a99961dbcf1477c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433514"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996262"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>工作流程設計工具中不支援的偵錯情況
 
@@ -39,7 +39,7 @@ ms.locfileid: "94433514"
 
 - 呼叫堆疊視窗中無法設定工作流程中斷點。
 
-- 在設計工具中建立中斷點時，不會使用 [ **新增中斷點** ] 對話方塊中的 [ **行** ] 和 [ **字元** ] 設定。
+- 在設計工具中建立中斷點時，不會使用 [**新增中斷點**] 對話方塊中的 [**行**] 和 [**字元**] 設定。
 
 - 中斷點視窗或捷徑功能表不支援以下資料行或工作流程偵錯的選項：
 

@@ -1,5 +1,7 @@
 ---
 title: UnInit | Microsoft Docs
+description: '使用 VsgDbg 的 UnInit ( # A1 方法來完成和關閉圖形記錄檔，並釋放記錄資源。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4cd4fc0b-974a-4e61-9ea8-0aaa1a0c52ea
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef809b646a0af58e46b8c68dc5a8cf7633692bcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f79b39ced4f3285815412b9b231692868e5e00f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72734824"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996054"
 ---
 # <a name="uninit"></a>UnInit
 完成圖形記錄檔、將其關閉，並釋放應用程式主動記錄圖形資訊時所使用的資源。

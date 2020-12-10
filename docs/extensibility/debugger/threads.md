@@ -1,5 +1,7 @@
 ---
 title: 執行緒 |Microsoft Docs
+description: 本文說明 Visual Studio 中偵錯工具架構中線程的定義和角色。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +13,14 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed5c06e0c42dac1f0539cc2c7c5886d95b23ae1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b259ffd7814b42145489ee5990cee6da891a9d10
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712484"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995950"
 ---
-# <a name="threads"></a>Threads
+# <a name="threads"></a>執行緒
 在偵錯工具架構中， *執行緒*：
 
 - 這是計算的基礎單位。 執行緒會依序在單一呼叫堆疊的內容中執行其指示，並從一個程式碼內容移至下一個。

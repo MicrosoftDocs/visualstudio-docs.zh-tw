@@ -1,5 +1,5 @@
 ---
-title: 在 XML 架構瀏覽器中排序、篩選和分組
+title: 排序、篩選和分組
 description: 透過 XML 架構瀏覽器工具列上的 [排序]、[篩選] 和 [群組選項] 功能表，瞭解可用的選項。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,36 +10,36 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172226334622b830db79b79f7eaae2c5fe7efc79
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 41f0aff39350b0307db6b02a148fb70022fb51ca
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351488"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996249"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、篩選和分組 (XML 架構瀏覽器) 
 
-本主題說明可透過 **XML 架構瀏覽器** 工具列上的 [ **排序]、[篩選] 和 [群組選項** ] 功能表使用的選項。
+本主題說明可透過 **XML 架構瀏覽器** 工具列上的 [**排序]、[篩選] 和 [群組選項**] 功能表使用的選項。
 
 ## <a name="filter-options"></a>篩選選項
 
 以下是可用的篩選選項。 預設會選取 [ **顯示命名空間** ] 和 [ **顯示架構** 檔案] 選項。
 
-- **顯示命名空間** 。
+- **顯示命名空間**。
 
 - **顯示架構** 檔案。
 
-- **顯示撰寫 (sequence/choice/all)** 。
+- **顯示撰寫 (sequence/choice/all)**。
 
 ## <a name="sorting-options"></a>排序選項
 
-以下是可用的排序選項。 預設值是 **依類型排序** 。 [ **排序依據** ] 選項不適用於檔案和命名空間。
+以下是可用的排序選項。 預設值是 **依類型排序**。 [**排序依據**] 選項不適用於檔案和命名空間。
 
-- **依類型排序** 。
+- **依類型排序**。
 
-- **依名稱排序** 。
+- **依名稱排序**。
 
-- **檔順序** 。
+- **檔順序**。
 
 ### <a name="sort-by-type"></a>依類型排序
 
@@ -77,7 +77,7 @@ ms.locfileid: "94351488"
 
 ### <a name="document-order"></a>文件順序
 
-選取 [ **顯示架構** 檔案] 選項時，可以使用 [ **檔順序** ] 選項。 選取 [ **檔順序** ] 時，全域節點會依照它們出現在架構檔案中的順序顯示。
+選取 [**顯示架構** 檔案] 選項時，可以使用 [**檔順序**] 選項。 選取 [ **檔順序** ] 時，全域節點會依照它們出現在架構檔案中的順序顯示。
 
 ## <a name="persisting-sortfilter-options"></a>保存排序/篩選選項
 

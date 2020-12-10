@@ -1,5 +1,7 @@
 ---
 title: 型別視覺化程式和自訂檢視器 |Microsoft Docs
+description: 深入瞭解型別視覺化元件和自訂檢視器，其會以特定格式顯示資料，以及兩者之間的差異。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b8def9d28279f601ff488fca457982806629c0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac759dd245da8d803cb943dd6398d9ae642aaf23
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712471"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995937"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>型別視覺化器和自訂檢視器
 型別視覺化程式是以特定格式顯示一段資料的元件。 此格式完全由執行視覺化程式的人員所組成，也就是使用者或協力廠商的視覺化檢視。

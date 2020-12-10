@@ -1,7 +1,7 @@
 ---
 title: 圖形診斷總覽 |Microsoft Docs
-description: Visual Studio 圖形診斷的高階總覽
-ms.custom: seodec18
+description: Visual Studio 圖形診斷是一組用來記錄 Direct3D 活動的工具，並會分析記錄以針對轉譯和效能問題進行疑難排解。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/09/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9193555ef3c9c69f494a78ac779a3724417f63
-ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
+ms.openlocfilehash: 1ccf3b77c9b1f4dee7183aac32e8810417ba69c5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91671402"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996132"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷概觀
-Visual Studio 圖形診斷** 是一組工具，用來記錄並分析 Direct3D 應用程式中的轉譯和效能問題。 圖形診斷可用於在 Windows 電腦本機或遠端電腦或裝置上執行的應用程式。
+Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應用程式中的轉譯和效能問題。 圖形診斷可用於在 Windows 電腦本機或遠端電腦或裝置上執行的應用程式。
 
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>使用圖形診斷偵錯轉譯問題
- 在具有豐富圖形的應用程式中偵錯轉譯問題，並不像啟動偵錯工具和逐步執行某些程式碼一樣簡單。 在每個框架中會根據狀態、資料、參數和程式碼的複雜來產生數十個唯一的像素，其中可能只有一些像素會出現您嘗試診斷的問題。 讓問題更複雜的情況是，產生各個像素的程式碼是在平行處理數百個像素的特殊硬體上執行。 傳統偵錯工具和技術 (即使在輕量的執行緒程式碼中也難以充分利用) 在面臨大量資料時的效果不佳。
+ 在圖形化的應用程式中偵測轉譯問題，並不像開始偵錯工具和逐步執行一些程式碼一樣簡單。 在每個框架中會根據狀態、資料、參數和程式碼的複雜來產生數十個唯一的像素，其中可能只有一些像素會出現您嘗試診斷的問題。 讓問題更複雜的情況是，產生各個像素的程式碼是在平行處理數百個像素的特殊硬體上執行。 傳統偵錯工具和技術 (即使在輕量的執行緒程式碼中也難以充分利用) 在面臨大量資料時的效果不佳。
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的圖形診斷工具的目的是要協助您尋找轉譯問題，方式是開始使用可以識別問題的視覺成品，然後透過專注在相關的著色器程式碼、管線階段、繪製呼叫、資源和裝置狀態，在應用程式本身的原始程式碼中向後追蹤。
 
@@ -45,7 +45,7 @@ Visual Studio 圖形診斷** 是一組工具，用來記錄並分析 Direct3D �
 ### <a name="the-graphics-toolbar-visual-studio"></a>圖形工具列 (Visual Studio)
  [圖形] 工具列可快速存取圖形診斷命令。
 
- [開始診斷]**** 按鈕會在 [圖形診斷] 下執行應用程式。 在 [圖形診斷] 下執行應用程式時，會啟用 [擷取下一個呈現的畫面格]**** 按鈕。
+ [開始診斷] 按鈕會在 [圖形診斷] 下執行應用程式。 在 [圖形診斷] 下執行應用程式時，會啟用 [擷取下一個呈現的畫面格] 按鈕。
 
 ### <a name="diagnostics-capture-interface"></a>診斷擷取介面
  使用圖形診斷執行應用程式時，Visual Studio 會顯示一個診斷工作階段介面，可用來擷取畫面格，同時顯示目前的 CPU 和 GPU 負載。 會顯示 CPU 和 GPU 負載，以協助您識別因其效能特性 (非轉譯錯誤) 而想要擷取的畫面格。
@@ -64,7 +64,7 @@ Visual Studio 圖形診斷** 是一組工具，用來記錄並分析 Direct3D �
 
 #### <a name="to-open-the-directx-control-panel"></a>開啟 DirectX 控制台
 
-- 在功能表列上，選擇 [偵錯]****、[圖形]****、[DirectX 控制台]****。
+- 在功能表列上，選擇 [偵錯]、[圖形]、[DirectX 控制台]。
 
 ## <a name="graphics-analyzer"></a>圖形分析器
  Visual Studio 圖形分析器是一個專用介面，用於檢查已擷取畫面格中的轉譯和效能問題。 在圖形分析器內，有數個工具可協助您探索和了解應用程式的轉譯行為。 每個工具都會公開正在檢查之畫面格的不同種類的資訊，而且工具設計成與直覺式縮小轉譯問題來源搭配使用，並從其在畫面格緩衝區中的外觀開始。

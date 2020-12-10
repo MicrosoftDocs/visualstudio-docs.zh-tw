@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95e35037ba07dcba1f51da7b47b7fca40a447dfb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: e3633f3084b875974adac17fc27e7ec7a695ed91
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850022"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996379"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -182,11 +182,11 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：
 
-|特徵|說明|
+|特徵|描述|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|擁有者分類是由單元測試架構所定義，會要求您提供擁有者的字串值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|優先權分類是由單元測試架構所定義，會要求您提供優先權的整數值。|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory 屬性可讓您提供沒有值的分類。|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory 屬性可讓您指定單元測試的類別。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|TestProperty 屬性可讓您定義特性分類/值組。|
 
 
@@ -368,7 +368,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 > [!NOTE]
 > 您不能在抽象類別中執行測試，因為測試只定義於抽象類別，而不會具現化。 若要在抽象類別執行測試，請建立衍生自抽象類別的類別。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)
 - [使用測試總管進行偵錯單元測試](../test/debug-unit-tests-with-test-explorer.md)

@@ -1,5 +1,7 @@
 ---
 title: ToggleHUD | Microsoft Docs
+description: '使用 VsgDbg 的 ToggleHUD ( # A1 方法來切換應用程式執行時，是否顯示圖形診斷的顯示 (抬頭顯示器) 。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7261e01d-3c72-46ce-9fb3-5f33b2ddb901
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb05bb6a424b5639e0ee98e96c80315c51081ace
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60bee5a89be0fc1503595a36cfc48a692711d40a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62848470"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996067"
 ---
 # <a name="togglehud"></a>ToggleHUD
 切換 [圖形診斷] *抬頭顯示器* (上層顯示) 重迭顯示或關閉。

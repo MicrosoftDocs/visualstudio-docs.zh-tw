@@ -1,5 +1,7 @@
 ---
 title: 撰寫 Common Language Runtime 運算式評估工具 |Microsoft Docs
+description: 瞭解如何撰寫 common language runtime 的運算式評估工具，以評估正在進行程式碼語言中的運算式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e46eaef395a7c66792662b3c5d4b9fbad419dfb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1674ae8345873ede5d1b4afb04774d6ed0469b4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712316"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996314"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>撰寫 common language runtime 運算式評估工具
 > [!IMPORTANT]

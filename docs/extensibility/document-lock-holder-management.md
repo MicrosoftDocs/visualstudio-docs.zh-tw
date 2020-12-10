@@ -1,5 +1,7 @@
 ---
 title: 檔鎖定持有者管理 |Microsoft Docs
+description: 瞭解如何在執行檔資料表中的檔上放置編輯鎖定，而使用者在文件視窗中看不到開啟的檔。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9dd520f8ad5cab1f0cfee890c4bcc388c204bb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c15696d81be92f0549069bad354e65356f7b2e7c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712129"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995898"
 ---
 # <a name="document-lock-holder-management"></a>檔鎖定持有者管理
 
@@ -37,7 +39,7 @@ ms.locfileid: "80712129"
 
 ## <a name="additional-document-edit-lock-considerations"></a>其他檔編輯鎖定考慮
 
-如果編輯器「A」是唯一的編輯器，而且只有在檔案 "b" 上有檔編輯鎖定，而且編輯器 "B" 也持有檔案 "b" 的檔編輯鎖定，您就會看到不同的行為。 在中 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ， **類別設計工具** 是未在相關聯的程式碼檔案上保存編輯鎖定的視覺化設計工具範例。 也就是說，如果使用者在設計檢視中開啟類別圖表，並同時開啟相關聯的程式碼檔案，而且使用者修改了程式碼檔案但未儲存變更，則在類別圖表 ( 的) 檔案中也會遺失變更。 如果 **類別設計工具** 只有程式碼檔案的檔編輯鎖定，則在關閉程式碼檔案時，不會要求使用者儲存變更。 IDE 會要求使用者在關閉 **類別設計工具**之後，才儲存變更。 儲存的變更會反映在這兩個檔案中。 如果 **類別設計工具** 和程式碼檔案編輯器都持有程式碼檔案的檔編輯鎖定，則在關閉程式碼檔案或表單時，系統會提示使用者進行儲存。 屆時，儲存的變更會反映在表單和程式碼檔案中。 如需類別圖的詳細資訊，請參閱使用 [類別圖表 (類別設計工具) ](../ide/class-designer/designing-and-viewing-classes-and-types.md)。
+如果編輯器「A」是唯一的編輯器，而且只有在檔案 "b" 上有檔編輯鎖定，而且編輯器 "B" 也持有檔案 "b" 的檔編輯鎖定，您就會看到不同的行為。 在中 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ， **類別設計工具** 是未在相關聯的程式碼檔案上保存編輯鎖定的視覺化設計工具範例。 也就是說，如果使用者在設計檢視中開啟類別圖表，並同時開啟相關聯的程式碼檔案，而且使用者修改了程式碼檔案但未儲存變更，則在類別圖表 ( 的) 檔案中也會遺失變更。 如果 **類別設計工具** 只有程式碼檔案的檔編輯鎖定，則在關閉程式碼檔案時，不會要求使用者儲存變更。 IDE 會要求使用者在關閉 **類別設計工具** 之後，才儲存變更。 儲存的變更會反映在這兩個檔案中。 如果 **類別設計工具** 和程式碼檔案編輯器都持有程式碼檔案的檔編輯鎖定，則在關閉程式碼檔案或表單時，系統會提示使用者進行儲存。 屆時，儲存的變更會反映在表單和程式碼檔案中。 如需類別圖的詳細資訊，請參閱使用 [類別圖表 (類別設計工具) ](../ide/class-designer/designing-and-viewing-classes-and-types.md)。
 
 請注意，如果您需要在非編輯器的檔上放置編輯鎖定，就必須執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> 介面。
 

@@ -1,5 +1,7 @@
 ---
 title: Hello World 擴充功能教學課程 |Microsoft Docs
+description: 瞭解如何將新的命令新增為 Visual Studio 的擴充功能，包括建立專案、新增命令，以及修改原始程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 03/14/2019
 ms.topic: tutorial
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 796cb53ea5124662c695cce55241794802f042c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ba4d6cbca8d55cdaceb04a1a773fde376a8670a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905934"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995716"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>教學課程-建立您的第一個延伸模組： Hello World
 
@@ -33,7 +35,7 @@ ms.locfileid: "85905934"
 > [!NOTE]
 > 本文適用于 Windows 上的 Visual Studio。 如 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中](/visualstudio/mac/extending-visual-studio-mac-walkthrough)的擴充性逐步解說。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 開始之前，請確定您已安裝 **Visual Studio 延伸模組開發** 工作負載，其中包括您需要的 VSIX 範本和範例程式碼。
 
@@ -44,7 +46,7 @@ ms.locfileid: "85905934"
 
 ::: moniker range="vs-2017"
 
-步驟 1： 從 [檔案]**** 功能表選取 [新增]**** > [專案]****。
+步驟 1： 從 [檔案]  功能表選取 [新增]   > [專案]  。
 
 步驟 2： 在右上方的搜尋方塊中，輸入 "vsix"，然後選取 Visual c # **Vsix 專案**。 在對話方塊底部輸入 "HelloWorld" 作為 **名稱** ，然後選取 **[確定]**。
 
@@ -58,13 +60,13 @@ ms.locfileid: "85905934"
 
 ::: moniker range=">=vs-2019"
 
-步驟 1： 從 [檔案]**** 功能表選取 [新增]**** > [專案]****。 搜尋 "vsix" 並選取 Visual c # **Vsix 專案** ，然後選取 [ **下一步]**。
+步驟 1： 從 [檔案]  功能表選取 [新增]   > [專案]  。 搜尋 "vsix" 並選取 Visual c # **Vsix 專案** ，然後選取 [ **下一步]**。
 
 步驟 2： 輸入 "HelloWorld" 作為 **專案名稱** ，然後選取 [ **建立**]。
 
 ![新增專案](media/hello-world-new-project-2019.png)
 
-您現在應該會在 **方案總管**中看到 HelloWorld 專案。
+您現在應該會在 **方案總管** 中看到 HelloWorld 專案。
 
 ::: moniker-end
 
@@ -76,11 +78,11 @@ ms.locfileid: "85905934"
 
 步驟 3： 選取 [擴充性 **] 區段，然後選擇 [** **命令**]。
 
-步驟 4： 在底部的 [ **名稱** ] 欄位中，輸入 *Command.cs*這類的檔案名。
+步驟 4： 在底部的 [ **名稱** ] 欄位中，輸入 *Command.cs* 這類的檔案名。
 
 ![自訂命令](media/hello-world-vsix-command.png)
 
-您可以在 **方案總管**中看到新的命令檔。 在 [ **資源** ] 節點底下，您會找到與命令相關的其他檔案。 例如，如果您想要修改影像，則 PNG 檔案位於此處。
+您可以在 **方案總管** 中看到新的命令檔。 在 [ **資源** ] 節點底下，您會找到與命令相關的其他檔案。 例如，如果您想要修改影像，則 PNG 檔案位於此處。
 
 ## <a name="modify-the-source-code"></a>修改原始程式碼
 
@@ -92,7 +94,7 @@ ms.locfileid: "85905934"
 
 ::: moniker range="vs-2017"
 
-步驟 1： 在 **方案總管**中，尋找新命令的 .vsct 檔案。 在此情況下，它會被稱為 *CommandPackage .vsct*。
+步驟 1： 在 **方案總管** 中，尋找新命令的 .vsct 檔案。 在此情況下，它會被稱為 *CommandPackage .vsct*。
 
 ![命令套件 .vsct](media/hello-world-command-package-vsct.png)
 
@@ -100,7 +102,7 @@ ms.locfileid: "85905934"
 
 ::: moniker range=">=vs-2019"
 
-步驟 1： 在 **方案總管**中，尋找您的延伸模組與套件的 .vsct 檔案。 在此情況下，它會被稱為 *HelloWorldPackage .vsct*。
+步驟 1： 在 **方案總管** 中，尋找您的延伸模組與套件的 .vsct 檔案。 在此情況下，它會被稱為 *HelloWorldPackage .vsct*。
 
 ::: moniker-end
 
@@ -156,11 +158,11 @@ ms.locfileid: "85905934"
 
 ::: moniker-end
 
-步驟 2： 在**實驗實例**的 [**工具**] 功能表上，按一下 [**說 Hello World！**]。
+步驟 2： 在 **實驗實例** 的 [**工具**] 功能表上，按一下 [**說 Hello World！**]。
 
 ![最終結果](media/hello-world-final-result.png)
 
-您應該會看到新自訂命令的輸出，在此案例中為您提供**Hello World**的畫面中央對話方塊。 回應。
+您應該會看到新自訂命令的輸出，在此案例中為您提供 **Hello World** 的畫面中央對話方塊。 回應。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -1,5 +1,7 @@
 ---
 title: 擴充狀態列 |Microsoft Docs
+description: 瞭解如何在 IDE 底部擴充 Visual Studio 狀態列，以顯示資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa62326d82d81f7ee4d10a838209364355cc488e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddce0cdf62d803dac1a5981442424a45d6550193
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711548"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995690"
 ---
 # <a name="extend-the-status-bar"></a>擴充狀態列
 您可以使用 IDE 底部的 Visual Studio 狀態列來顯示資訊。
@@ -32,9 +34,9 @@ ms.locfileid: "80711548"
 
 ### <a name="read-and-write-to-the-status-bar"></a>讀取及寫入狀態列
 
-1. 建立名為 **TestStatusBarExtension** 的 VSIX 專案，並新增名為 **TestStatusBarCommand**的功能表命令。
+1. 建立名為 **TestStatusBarExtension** 的 VSIX 專案，並新增名為 **TestStatusBarCommand** 的功能表命令。
 
-2. 在 *TestStatusBarCommand.cs*中，以下列程式碼取代命令處理常式方法程式碼 (`MenuItemCallback`) ：
+2. 在 *TestStatusBarCommand.cs* 中，以下列程式碼取代命令處理常式方法程式碼 (`MenuItemCallback`) ：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -72,7 +74,7 @@ ms.locfileid: "80711548"
 
 4. 在 Visual Studio 的實驗實例中開啟 [ **工具** ] 功能表。 按一下 [叫用 **TestStatusBarCommand** ] 按鈕。
 
-     您應該會看到狀態列中的文字現在會讀取**我們剛剛寫入狀態列**中的內容。 出現的訊息方塊具有相同的文字。
+     您應該會看到狀態列中的文字現在會讀取 **我們剛剛寫入狀態列** 中的內容。 出現的訊息方塊具有相同的文字。
 
 ### <a name="update-the-progress-bar"></a>更新進度列
 
@@ -110,7 +112,7 @@ ms.locfileid: "80711548"
 
 ### <a name="display-an-animation"></a>顯示動畫
 
-1. 狀態列會顯示一個迴圈動畫，表示長時間執行的作業 (例如，在方案中建立多個專案) 。 如果看不到此動畫，請確定您有正確的**工具**  >  **選項**設定：
+1. 狀態列會顯示一個迴圈動畫，表示長時間執行的作業 (例如，在方案中建立多個專案) 。 如果看不到此動畫，請確定您有正確的 **工具**  >  **選項** 設定：
 
      移至 [**工具**  >  **選項**  >  **一般**] 索引標籤，並取消核取 [**根據用戶端效能自動調整視覺效果**]。 然後檢查子選項是否 **啟用豐富型用戶端視覺體驗**。 當您在 Visual Studio 的實驗實例中建立專案時，您現在應該可以看到動畫。
 

@@ -1,5 +1,7 @@
 ---
 title: 擴充 Visual Studio 的其他部分 |Microsoft Docs
+description: 瞭解您可以擴充的 Visual Studio UI 部分。 您可以建立 VSPackage、寫入活動記錄檔，以及擴充 [工具箱] 和 [狀態列]。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c9076fbba822a1dfcff1ef13294ebd4dcafd9e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7cc9a471b141cfd3302814844d63a2ce8d5b74c6
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711757"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995833"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>延伸 Visual Studio 的其他部分
 

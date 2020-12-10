@@ -1,5 +1,7 @@
 ---
 title: 擴充編輯器和語言服務 |Microsoft Docs
+description: 您可以將語言服務功能加入編輯器，並擴充 Visual Studio 程式碼編輯器的功能。 瞭解 Managed Extensibility Framework。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321bd82eb83ef37dc3981e38cc23d1d4b5685802
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 49d4b76fe7feadb4458ef68acb351b81c6fa494c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413940"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995742"
 ---
 # <a name="extend-the-editor-and-language-services"></a>擴充編輯器和語言服務
 您可以將語言服務功能 (例如 IntelliSense) 加入您自己的編輯器，並擴充 Visual Studio 程式碼編輯器的大部分功能。  如需可延伸之內容的完整清單，請參閱 [語言服務和編輯器延伸點](../extensibility/language-service-and-editor-extension-points.md)。
@@ -28,7 +30,7 @@ ms.locfileid: "93413940"
 
 ## <a name="related-topics"></a>相關主題
 
-|Title|描述|
+|標題|描述|
 |-----------|-----------------|
 |[開始使用語言服務及編輯器擴充功能](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|說明如何建立編輯器的延伸模組。|
 |[在編輯器內](../extensibility/inside-the-editor.md)|描述編輯器的一般結構，並列出其部分功能。|

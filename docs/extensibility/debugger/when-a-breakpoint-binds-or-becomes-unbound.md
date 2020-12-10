@@ -1,5 +1,7 @@
 ---
 title: 當中斷點系結或變成未系結時 |Microsoft Docs
+description: 瞭解未系結的中斷點。 當呼叫完成時，中斷點無法系結時，中斷點的系結時間和建立時間會有所不同。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3253841778fe5a07e00b644423495b8ceee1a335
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a48bd7ff011b6e8de6e9321a00b6bc20d54f0f0b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712337"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995911"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>當中斷點系結或變成未系結時
 當呼叫 [IDebugPendingBreakpoint2：： CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) 方法時無法系結中斷點時，中斷點的系結時間和建立時間會有所不同。

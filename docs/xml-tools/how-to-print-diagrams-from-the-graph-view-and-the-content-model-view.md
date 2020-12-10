@@ -1,5 +1,5 @@
 ---
-title: XML 架構：在圖形視圖中列印圖表 & 內容模型視圖
+title: 列印圖表
 description: 瞭解如何從圖形視圖或 XML 架構設計工具的內容模型視圖列印圖表。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b9e837af5a1112d03740cc67b5d91f24d186a5
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 4ecf1c9cf062dec8dd1d83a5b99bb8c498667e0f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399155"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996327"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>如何：從圖表視圖和內容模型視圖列印圖表
 
@@ -31,7 +31,7 @@ ms.locfileid: "93399155"
 
 3. 使用 XPS 檢視器列印儲存在 XPS 檔中的影像。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [圖形檢視](../xml-tools/graph-view.md)
 - [內容模型檢視](../xml-tools/content-model-view.md)

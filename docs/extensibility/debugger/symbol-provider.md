@@ -1,5 +1,7 @@
 ---
 title: 符號提供者 |Microsoft Docs
+description: 瞭解 Visual Studio 提供的符號提供者，以便讓運算式評估工具評估變數和運算式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31b90846d9494ee046cf9dc4a3e5de9ff033ea3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 043014ebababd990c9cae03f28cb1b642d576071
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712813"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996041"
 ---
 # <a name="symbol-provider"></a>符號提供者
 運算式評估工具的執行必須存取語言編譯器所產生的符號 debug 資訊，才能評估變數和運算式。 其運作方式是使用符號提供者的介面 (SP) ，也稱為符號處理常式。

@@ -1,5 +1,7 @@
 ---
 title: 擴充和自訂工具視窗 |Microsoft Docs
+description: 瞭解如何擴充和自訂 Visual Studio 提供的工具視窗，包括屬性視窗、[輸出] 視窗和 [工作清單] 視窗。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76c094ec73a69baa46a5e8313dd26febd57e5887
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f6aa0c029cd3d85ba569aa93d6ae2087afd52
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711809"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995859"
 ---
 # <a name="extend-and-customize-tool-windows"></a>擴充和自訂工具視窗
 Visual Studio 提供數種不同類型的 windows，例如工具視窗、文件視窗和對話方塊視窗。 其他視窗（例如 [ **屬性** ] 視窗、[ **輸出** ] 視窗和 [ **工作清單** ] 視窗）都是工具視窗的類型。
 
 ## <a name="tool-windows"></a>工具視窗
- Visual Studio 工具視窗通常是唯讀的視窗，不是以檔案為基礎。 在這種情況下，它們與文件視窗不同，而文件視窗會以讀寫模式顯示檔案。 [工具箱] ****、 **方案總管**、[屬性] **** 視窗和 [網頁瀏覽器] **** 是工具視窗範例。
+ Visual Studio 工具視窗通常是唯讀的視窗，不是以檔案為基礎。 在這種情況下，它們與文件視窗不同，而文件視窗會以讀寫模式顯示檔案。 [工具箱] 、 **方案總管**、[屬性]  視窗和 [網頁瀏覽器]  是工具視窗範例。
 
  若要瞭解如何建立簡單的工具視窗，請參閱 [加入工具視窗](../extensibility/adding-a-tool-window.md)。
 
@@ -30,7 +32,7 @@ Visual Studio 提供數種不同類型的 windows，例如工具視窗、文件�
 
  工具視窗預設是單一執行個體，這表示一次只能開啟工具視窗的一個執行個體。 單一執行個體工具視窗在開啟之後，除非關閉 IDE，否則仍然會持續開啟。 當您關閉單一實例工具視窗時，只會變更其可見度。 您也可以建立多執行個體工具視窗，這樣即可同時開啟視窗的多個執行個體。 如需詳細資訊，請參閱 [建立多實例工具視窗](../extensibility/creating-a-multi-instance-tool-window.md) 。
 
- 工具視窗可以是 *動態*的，也就是說，只要套用其相關的 UI 內容，就會顯示這些視窗。 使用自動顯示可以減少 IDE 中視窗的雜亂。 如需詳細資訊，請參閱 [開啟動態工具視窗](../extensibility/opening-a-dynamic-tool-window.md)。
+ 工具視窗可以是 *動態* 的，也就是說，只要套用其相關的 UI 內容，就會顯示這些視窗。 使用自動顯示可以減少 IDE 中視窗的雜亂。 如需詳細資訊，請參閱 [開啟動態工具視窗](../extensibility/opening-a-dynamic-tool-window.md)。
 
  在文件框架中，可以停駐、浮動或標籤工具視窗。 工具視窗框架是由 IDE 所提供，並可用來控制大小、位置、停駐狀態和其他持續性屬性。 工具視窗窗格會顯示內容。 只有在第一次開啟工具視窗時，才會套用預設大小和位置；之後，就會持續保存工具視窗狀態。
 

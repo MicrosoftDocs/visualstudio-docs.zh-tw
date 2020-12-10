@@ -1,5 +1,7 @@
 ---
-title: 適用于 VSPackage 開發的 Devenv 命令列參數 |Microsoft Docs
+title: VSPackage 開發的 Devenv Command-Line 參數 |Microsoft Docs
+description: 瞭解在執行 devenv.exe （啟動 Visual Studio IDE 的檔案）時，開發人員如何從命令列自動執行工作。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad3a5125a730b9230959bbf9342b4c0a4823c4d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6e2784066c98f8fac696306e455e7cf26b65907
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712198"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996145"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>適用于 VSPackage 開發的 Devenv 命令列參數
 

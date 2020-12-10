@@ -1,5 +1,7 @@
 ---
 title: 參考 (程式設計捕獲) |Microsoft Docs
+description: 使用程式設計捕獲 API，以程式設計方式控制圖形診斷的捕捉功能。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a462d22df9768d2ffc8b344933e9f5c1f556575a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30cf44d6d16da46e9d6f08ffae4971d35136db58
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62895517"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996106"
 ---
 # <a name="reference-programmatic-capture"></a>參考 (程式設計擷取)
 透過程式設計擷取應用程式開發介面，圖形診斷支援以程式設計方式控制其擷取功能。 您可以使用這個應用程式開發介面，在圖形診斷抬頭顯示器 (HUD) 切換並加入訊息、初始化和建立圖形記錄檔，以及擷取圖形資訊。
@@ -22,13 +24,13 @@ ms.locfileid: "62895517"
 
 ### <a name="classes"></a>類別
 
-|Name|描述|
+|名稱|描述|
 |----------|-----------------|
 |[VsgDbg 類別](vsgdbg-class.md)|表示以程式設計方式控制圖形診斷應用程式內部元件的介面。|
 
 ### <a name="preprocessor-symbols"></a>前置處理器符號
 
-|Name|描述|
+|名稱|描述|
 |----------|-----------------|
 |[DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)|出現時，定義圖形記錄檔是否儲存到使用者的暫存檔目錄。|
 |[VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)|定義圖形記錄檔的預設檔案名稱。|
