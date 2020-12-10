@@ -1,6 +1,6 @@
 ---
-title: XML 架構設計工具：使用圖形視圖取得架構集總覽
-description: 瞭解如何使用 XML 架構瀏覽器中的圖表視圖，查看架構集中節點的高階觀點，以及節點之間的關聯性。
+title: 取得結構描述集的概觀
+description: XML 架構設計工具：瞭解如何使用 XML 架構瀏覽器中的圖表視圖，查看架構集中節點的高階觀點，以及節點之間的關聯性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 553b9f2d84f70c75ebcee40cdffe044237c23a5f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 699167f8fe3662bbb162706f3f9fc6e5d53d82dc
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398484"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995287"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>如何：使用圖形視圖取得架構集的總覽
+# <a name="how-to-get-an-overview-of-a-schema-set-by-using-the-graph-view"></a>如何：使用圖形視圖取得架構集的總覽
 
 本主題說明如何使用 [圖形視圖](../xml-tools/graph-view.md) 來查看架構集中節點的高階觀點，以及節點之間的關聯性。
 
@@ -33,7 +33,7 @@ ms.locfileid: "93398484"
 
 5. 從 **XSD 工具列** 選取圖表視圖。
 
-6. 在 **XML 架構瀏覽器** 中選取 [ **架構集合** ] 節點，然後將節點拖曳至圖形視圖的設計介面。 您會看見所有的全域節點，以及連接具有關聯性之節點的箭號。
+6. 在 **XML 架構瀏覽器** 中選取 [**架構集合**] 節點，然後將節點拖曳至圖形視圖的設計介面。 您會看見所有的全域節點，以及連接具有關聯性之節點的箭號。
 
      ![圖形檢視](../xml-tools/media/relationshipingraphview.gif)
 

@@ -1,5 +1,7 @@
 ---
 title: 擴充解決方案 |Microsoft Docs
+description: 瞭解如何擴充解決方案。 方案是一或多個專案的群組，這些專案會一起運作來建立應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cb60183-2a87-4551-a19f-c7c4e65d60c0
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40a9591418dd3d2fb53bee29dfb8192a368e4047
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa8fe001c66f1c37ce9c823d485dcc60e88815a2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711730"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994585"
 ---
 # <a name="extend-solutions"></a>擴充解決方案
 方案是一或多個專案的群組，這些專案會一起運作來建立應用程式。

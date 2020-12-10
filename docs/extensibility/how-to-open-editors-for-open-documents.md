@@ -1,5 +1,7 @@
 ---
 title: 如何：開啟開啟檔的編輯器 |Microsoft Docs
+description: 瞭解如何在標準或專案特定的編輯器中開啟檔案。 當專案開啟文件視窗時，必須判斷檔案是否已開啟。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f67a7fad5944e82087f520508ef9f4a66b7109d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d329ce7b4f4b74b8ff77357393ffe9383a3977e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905814"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993844"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何：開啟開啟檔的編輯器
 專案必須先判斷檔案是否已經在其他編輯器的文件視窗中開啟，專案才會開啟文件視窗。 您可以在專案特定的編輯器中開啟檔案，或在其中一個已註冊的標準編輯器中開啟檔案 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。

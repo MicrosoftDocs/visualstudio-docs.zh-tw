@@ -1,5 +1,7 @@
 ---
 title: 如何：開啟標準編輯器 |Microsoft Docs
+description: 瞭解如何使用標準編輯器來執行 OpenItem 方法。 IDE 會針對指定的檔案類型決定標準編輯器。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c12e831654e7e138289d33b6e6f0409328e22c8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff03ed508fc11377861556bc27bdc33aaa1ec069
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905790"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993766"
 ---
 # <a name="how-to-open-standard-editors"></a>如何：開啟標準編輯器
 當您開啟標準編輯器時，您可以讓 IDE 為指定的檔案類型決定標準編輯器，而不是為檔案指定專案特定的編輯器。

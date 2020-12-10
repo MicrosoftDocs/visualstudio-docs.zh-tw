@@ -1,5 +1,7 @@
 ---
 title: 圖形狀態 |Microsoft Docs
+description: 查看每個繪製呼叫的圖形狀態，以針對轉譯問題進行疑難排解。 會反白顯示先前的呼叫所變更的狀態部分。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de8f3c356cfe05aade3e4f2197b3f7429967a259
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67823777"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994005"
 ---
 # <a name="graphics-state"></a>圖形狀態
 Visual Studio 圖形診斷中的 [狀態] 視窗可協助您了解在目前事件時作用的圖形狀態 (例如繪製呼叫)。
@@ -43,14 +45,14 @@ Visual Studio 圖形診斷中的 [狀態] 視窗可協助您了解在目前事�
   - **顯示釘選的狀態檢視**
 
 > [!IMPORTANT]
-> 您必須在 [顯示 API 輸入狀態]**** 或 [顯示邏輯狀態]**** 檢視中釘選狀態，它才會顯示在 [顯示釘選的狀態檢視]**** 中。
+> 您必須在 [顯示 API 輸入狀態] 或 [顯示邏輯狀態] 檢視中釘選狀態，它才會顯示在 [顯示釘選的狀態檢視] 中。
 
 ### <a name="state-table-format"></a>狀態資料表格式
  [狀態] 視窗會呈現數個資料行的資訊。
 
 |資料行|描述|
 |------------|-----------------|
-|Name|狀態項目的名稱。 如果此項目代表狀態的組合，則可以展開項目予以顯示。<br /><br /> 在 [API 輸入狀態檢視]**** 和 [邏輯狀態檢視]**** 狀態中，會縮排名稱，以顯示狀態之間的階層式關聯性。<br /><br /> 在 [釘選的狀態檢視]**** 狀態中，會在簡單列表顯示完整名稱。|
+|名稱|狀態項目的名稱。 如果此項目代表狀態的組合，則可以展開項目予以顯示。<br /><br /> 在 [API 輸入狀態檢視] 和 [邏輯狀態檢視] 狀態中，會縮排名稱，以顯示狀態之間的階層式關聯性。<br /><br /> 在 [釘選的狀態檢視] 狀態中，會在簡單列表顯示完整名稱。|
 |值|狀態項目的值。|
 |類型|狀態項目的類型。|
 

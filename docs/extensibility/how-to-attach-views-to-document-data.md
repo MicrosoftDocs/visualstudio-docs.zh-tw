@@ -1,5 +1,7 @@
 ---
 title: 如何：將視圖附加至檔資料 |Microsoft Docs
+description: 您可以將新的檔視圖附加至現有的檔資料物件。 使用這個程式來判斷您是否可以附加此視圖。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5437e3a5d4fb0d6d33d570eb4d8923245cb287b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e044ecbf2309d4d858c16afbdddc130b4661005
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905889"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994182"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>如何：將視圖附加至檔資料
 如果您有新的檔視圖，則可以將它附加到現有的檔資料物件。

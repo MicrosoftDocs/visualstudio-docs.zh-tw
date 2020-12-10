@@ -1,17 +1,19 @@
 ---
 title: 診斷 Visual Studio 中的擴充功能 UI 延遲 |Microsoft Docs
+description: 如果 UI 延遲可能是延伸模組造成的，Visual Studio 會通知您。 瞭解如何診斷延伸模組程式碼中造成 UI 延遲的情況。
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 965e96a7881e20eca035b61ed7fd6f29398e71c6
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75849154"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994260"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>如何：診斷延伸模組造成的 UI 延遲
 
@@ -71,7 +73,7 @@ Perfview.exe collect C:\trace.etl /BufferSizeMB=1024 -CircularMB:2048 -Merge:tru
 
 ## <a name="examine-the-activity-log-to-get-the-delay-id"></a>檢查活動記錄以取得延遲識別碼
 
-如先前所述，您可以在 *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml*找到活動記錄。 每次 Visual Studio 偵測到延伸模組 UI 延遲時，它就會將節點寫入至活動記錄以 `UIDelayNotifications` 做為來源。 此節點包含 UI 延遲的四項資訊：
+如先前所述，您可以在 *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml* 找到活動記錄。 每次 Visual Studio 偵測到延伸模組 UI 延遲時，它就會將節點寫入至活動記錄以 `UIDelayNotifications` 做為來源。 此節點包含 UI 延遲的四項資訊：
 
 - UI 延遲識別碼，這個序號可唯一識別 VS 會話中的 UI 延遲
 - 會話識別碼，可唯一識別從開始到關閉的 Visual Studio 會話
@@ -102,7 +104,7 @@ Perfview.exe collect C:\trace.etl /BufferSizeMB=1024 -CircularMB:2048 -Merge:tru
 然後，選取左窗格中的追蹤檔案，並從按一下滑鼠右鍵或操作功能表中選擇 [ **開啟** ] 來開啟它。
 
 > [!NOTE]
-> 依預設，PerfView 會輸出 Zip 封存。 當您開啟 *trace.zip*時，它會自動將封存解壓縮，並開啟追蹤。 您可以在追蹤收集期間取消核取 [ **Zip** ] 方塊，以略過這項工作。 但是，如果您打算在不同的電腦之間傳輸和使用追蹤，強烈建議您不要取消核取 [ **Zip** ] 方塊。 如果沒有這個選項，Ngen 元件的必要 Pdb 將不會伴隨追蹤，因此不會在目的地電腦上解析 Ngen 元件的符號。  (請參閱 [此 blog 文章](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) ，以取得 Ngen 元件之 pdb 的詳細資訊。 ) 
+> 依預設，PerfView 會輸出 Zip 封存。 當您開啟 *trace.zip* 時，它會自動將封存解壓縮，並開啟追蹤。 您可以在追蹤收集期間取消核取 [ **Zip** ] 方塊，以略過這項工作。 但是，如果您打算在不同的電腦之間傳輸和使用追蹤，強烈建議您不要取消核取 [ **Zip** ] 方塊。 如果沒有這個選項，Ngen 元件的必要 Pdb 將不會伴隨追蹤，因此不會在目的地電腦上解析 Ngen 元件的符號。  (請參閱 [此 blog 文章](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) ，以取得 Ngen 元件之 pdb 的詳細資訊。 ) 
 
 PerfView 可能需要幾分鐘的時間來處理並開啟追蹤。 開啟追蹤之後，會在其下顯示各種「views」清單。
 
@@ -110,7 +112,7 @@ PerfView 可能需要幾分鐘的時間來處理並開啟追蹤。 開啟追蹤�
 
 我們會先使用 [ **事件** ] 視圖來取得 UI 延遲的時間範圍：
 
-1. 選取追蹤**Events**底下的 `Events` 節點，然後從滑鼠右鍵功能表或操作功能表中選擇 [**開啟**]，以開啟 [事件] 視圖。
+1. 選取追蹤底下的 `Events` 節點，然後從滑鼠右鍵功能表或操作功能表中選擇 [**開啟**]，以開啟 [事件] 視圖。
 2. `Microsoft-VisualStudio/ExtensionUIUnresponsiveness`在左窗格中選取 []。
 3. 按 Enter
 
@@ -126,7 +128,7 @@ PerfView 可能需要幾分鐘的時間來處理並開啟追蹤。 開啟追蹤�
 * 延遲開始時間為 12125.679-6143.085 = 5982.594。
 * UI 延遲時間範圍是5982.594 到12125.679。
 
-有了時間範圍之後，我們就可以關閉 [ **事件** ] 視圖，並 **使用 StartStop 活動) 堆疊視圖開啟執行緒時間 (** 。 此視圖特別方便，因為封鎖 UI 執行緒的延伸模組通常只會在等候其他執行緒或 i/o 系結作業。 因此，在大部分情況下，[ **CPU 堆疊** ] 的 [移至] 選項可能不會捕捉執行緒花費在封鎖的時間，因為它不會在這段時間內使用 CPU。 **執行緒時間堆疊**會正確顯示封鎖的時間來解決此問題。
+有了時間範圍之後，我們就可以關閉 [ **事件** ] 視圖，並 **使用 StartStop 活動) 堆疊視圖開啟執行緒時間 (** 。 此視圖特別方便，因為封鎖 UI 執行緒的延伸模組通常只會在等候其他執行緒或 i/o 系結作業。 因此，在大部分情況下，[ **CPU 堆疊** ] 的 [移至] 選項可能不會捕捉執行緒花費在封鎖的時間，因為它不會在這段時間內使用 CPU。 **執行緒時間堆疊** 會正確顯示封鎖的時間來解決此問題。
 
 ![在 PerfView 摘要視圖中使用 StartStop 活動) 堆疊節點的執行緒時間 (](media/perfview-thread-time-with-startstop-activities-stacks.png)
 

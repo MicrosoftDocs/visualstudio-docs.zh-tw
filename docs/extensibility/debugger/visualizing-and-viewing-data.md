@@ -1,5 +1,7 @@
 ---
 title: 視覺化和查看資料 |Microsoft Docs
+description: 瞭解型別視覺化和自訂檢視器如何將資料呈現給開發人員。 運算式評估工具支援協力廠商型別視覺化檢視。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b5f984e6c6a3c1c8f3835dfa93a8679ae16680a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 856788546e10e69a8bb7e2787558505937f9effd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712369"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995443"
 ---
 # <a name="visualizing-and-viewing-data"></a>視覺化和查看資料
 鍵入視覺化程式和自訂檢視器，以對開發人員快速有意義的方式呈現資料。 運算式評估工具 (EE) 可以支援協力廠商類型的視覺化檢視，以及提供自己的自訂檢視器。

@@ -1,5 +1,7 @@
 ---
 title: 使用 VSIX 專案範本消費者入門 |Microsoft Docs
+description: 瞭解如何使用 VSIX 專案範本來建立擴充功能，或封裝現有的延伸模組以進行部署。
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ca9672b22120718f63638d8668812d0e42e41f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6c7c2e12f01b008be6937a8c974f2eea183d594
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905880"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994338"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>開始使用 VSIX 專案範本
 
@@ -33,9 +35,9 @@ ms.locfileid: "85905880"
 
     1. 開啟要從中建立範本的專案。 這個專案可以是任何專案類型。
 
-    2. 按一下 [專案]**** 功能表上的 [匯出範本]****。 完成 wizard 的步驟。
+    2. 按一下 [專案] 功能表上的 [匯出範本]。 完成 wizard 的步驟。
 
-         *%USERPROFILE%\My Documents\Visual Studio {version} \My 匯出的 \\ 範本*中會建立一個 *.zip*檔案。
+         *%USERPROFILE%\My Documents\Visual Studio {version} \My 匯出的 \\ 範本* 中會建立一個 *.zip* 檔案。
 
 2. 建立空的 VSIX 專案。
 
@@ -43,7 +45,7 @@ ms.locfileid: "85905880"
 
 3. 將 *.zip* 檔加入至專案。 將其 [ **複製到輸出目錄** ] 屬性設定為 `Copy Always` 。
 
-4. 在 **方案總管**中，按兩下 *extension.vsixmanifest* 檔案，在 **VSIX 資訊清單設計**工具中開啟檔案，然後進行下列變更：
+4. 在 **方案總管** 中，按兩下 *extension.vsixmanifest* 檔案，在 **VSIX 資訊清單設計** 工具中開啟檔案，然後進行下列變更：
 
     - 將 [ **產品名稱** ] 欄位設定為 [ **我的專案] 範本**。
 
@@ -61,7 +63,7 @@ ms.locfileid: "85905880"
 
 7. 在輸出目錄中，按兩下 *.vsix* 檔案。
 
-8. **VSIX 安裝程式**訊息方塊隨即出現。 遵循指示來安裝擴充功能。
+8. **VSIX 安裝程式** 訊息方塊隨即出現。 遵循指示來安裝擴充功能。
 
 9. 結束再重新開啟 Visual Studio。
 
@@ -73,7 +75,7 @@ ms.locfileid: "85905880"
 
 ::: moniker range=">=vs-2019"
 
-10. 選取 [**延伸**模組] 功能表上的 [**管理擴充**功能 (]) 然後選取 [**範本**] 類別。 其中一個可用的擴充功能應該是 **我的專案範本**。
+10. 選取 [**延伸** 模組] 功能表上的 [**管理擴充** 功能 (]) 然後選取 [**範本**] 類別。 其中一個可用的擴充功能應該是 **我的專案範本**。
 
 ::: moniker-end
 
@@ -95,4 +97,4 @@ ms.locfileid: "85905880"
 
 6. 開啟 VSIX 資訊清單。
 
-7. 在 VSIX 資訊清單中，更新範本的 **資產** 路徑，使其指向包含範本檔案之目錄樹狀結構的根目錄。 例如，如果範本是在 *\CSharp\Windows*中，則參考應指向 *\CSharp*。
+7. 在 VSIX 資訊清單中，更新範本的 **資產** 路徑，使其指向包含範本檔案之目錄樹狀結構的根目錄。 例如，如果範本是在 *\CSharp\Windows* 中，則參考應指向 *\CSharp*。

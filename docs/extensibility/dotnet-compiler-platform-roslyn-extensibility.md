@@ -1,5 +1,7 @@
 ---
 title: .NET Compiler Platform (&quot; Roslyn &quot;) 擴充性 |Microsoft Docs
+description: 瞭解 .NET Compiler Platform，讓工具和開發人員能夠在豐富的資訊編譯器中分享有關程式的資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62ceac6e2be8a0a84d82f6b86b685c7c8b20a182
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3bc0ecb6aad5b4da126d5a253a6c0b523444e2c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712070"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994819"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET Compiler Platform (&quot; Roslyn &quot;) 擴充性
 .NET Compiler Platform ( "Roslyn" ) 的核心任務是開啟 c # 和 Visual Basic 編譯器，並讓工具和開發人員在豐富的資訊編譯器中共用程式的相關資訊。 程式碼分析工具會改善程式碼品質，而程式碼產生器會協助應用程式結構。 當工具變得更聰明時，他們需要存取更多的深入程式碼知識，而且只有編譯器才擁有。 Roslyn 編譯器會提供 Api，讓您可以在工具和應用程式中用於程式碼相關工作，而不是不透明的轉譯程式 (中的原始程式碼和物件程式碼) 。

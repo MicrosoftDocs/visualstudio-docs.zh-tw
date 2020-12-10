@@ -1,5 +1,7 @@
 ---
-title: 如何：開啟專案特定的編輯器 |Microsoft Docs
+title: 如何：開啟 Project-Specific 編輯器 |Microsoft Docs
+description: 瞭解如何使用專案特定的編輯器來執行 OpenItem 方法，讓專案可以開啟系結至該專案之編輯器的檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22106ea09f86e3d61fe7aaa6e86e6e99c002f32d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4cbba1f4d6cf0a2a5a45dd2999afa5bbf3443fca
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905798"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993779"
 ---
 # <a name="how-to-open-project-specific-editors"></a>如何：開啟專案特定的編輯器
 如果專案開啟的專案檔本質上系結至該專案的特定編輯器，則專案必須使用專案特定的編輯器來開啟檔案。 無法將檔案委派給 IDE 用來選取編輯器的機制。 例如，您可以使用這個專案特定的編輯器選項來指定特定的點陣圖編輯器，以辨識專案中唯一的資訊，而不是使用標準點陣圖編輯器。

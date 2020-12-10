@@ -1,6 +1,7 @@
 ---
 title: 將擴充性專案移轉至 Visual Studio 2017
 titleSuffix: ''
+description: 瞭解如何將擴充性專案升級為 Visual Studio 2017，以及如何從擴充功能資訊清單第2版升級至第3版 VSIX 資訊清單。
 ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 58d802ad97018a3d84e2b6a9f5e759db3a7cb2e3
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352279"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993961"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何：將擴充性專案遷移至 Visual Studio 2017
 
@@ -49,7 +50,7 @@ ms.locfileid: "91352279"
 
 * 以滑鼠右鍵按一下方案，然後選擇 [ **管理方案的 NuGet 套件**]。
 * 流覽至 [ **更新** ] 索引標籤。
-* 選取 [ **VSSDK])  (最新版本 **。
+* 選取 [ **VSSDK])  (最新版本**。
 * 按下 [ **更新**]。
 
 ![VSSDK build tools](media/vssdk-build-tools.png)
@@ -109,7 +110,7 @@ ms.locfileid: "91352279"
 
 ## <a name="update-debug-settings-for-the-project"></a>更新專案的偵錯工具設定
 
-如果您想要在 Visual Studio 的實驗實例中，對您的擴充功能進行偵錯工具，請確定**debug**  >  **啟動動作**的專案設定具有 [**啟動外部程式：** 值] 設定為 Visual Studio 2017 安裝的*devenv.exe*檔案。
+如果您想要在 Visual Studio 的實驗實例中，對您的擴充功能進行偵錯工具，請確定 **debug**  >  **啟動動作** 的專案設定具有 [**啟動外部程式：** 值] 設定為 Visual Studio 2017 安裝的 *devenv.exe* 檔案。
 
 它可能看起來像： *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
@@ -193,12 +194,12 @@ Excel 工作表中有四個數據行： [元件名稱]、[**元件名稱** **]�
 
 範例：
 
-* 如果您有偵錯工具擴充功能，並且知道您的專案具有 *VSDebugEng.dll* 和 *VSDebug.dll*的參考，請按一下 [ **二進位檔/檔案名** ] 標頭中的 [篩選] 按鈕。  搜尋 "VSDebugEng.dll"，然後選取 *[確定]*。  接著再按一下 [ **二進位檔/檔案名** ] 標頭中的 [篩選] 按鈕，然後搜尋 "VSDebug.dll"。  選取 [ **加入目前選取範圍來篩選** ] 核取方塊，然後選取 **[確定]**。  現在查看 **元件名稱** ，以尋找與您的延伸模組類型最相關的元件。 在此範例中，您會選擇即時偵錯工具，並將它新增至您的 extension.vsixmanifest。
+* 如果您有偵錯工具擴充功能，並且知道您的專案具有 *VSDebugEng.dll* 和 *VSDebug.dll* 的參考，請按一下 [ **二進位檔/檔案名** ] 標頭中的 [篩選] 按鈕。  搜尋 "VSDebugEng.dll"，然後選取 *[確定]*。  接著再按一下 [ **二進位檔/檔案名** ] 標頭中的 [篩選] 按鈕，然後搜尋 "VSDebug.dll"。  選取 [ **加入目前選取範圍來篩選** ] 核取方塊，然後選取 **[確定]**。  現在查看 **元件名稱** ，以尋找與您的延伸模組類型最相關的元件。 在此範例中，您會選擇即時偵錯工具，並將它新增至您的 extension.vsixmanifest。
 * 如果您知道您的專案會處理偵錯工具元素，您可以在篩選搜尋方塊中搜尋「偵錯工具」，以查看其名稱中包含偵錯工具的元件。
 
 ## <a name="specify-a-visual-studio-2017-release"></a>指定 Visual Studio 2017 版本
 
-例如，如果您的延伸模組需要特定版本的 Visual Studio 2017 （例如，它取決於在15.3 中發行的功能），您必須在 VSIX **InstallationTarget**中指定組建編號。 例如，版本15.3 的組建編號為 ' 15.0.26730.3 '。 您可以在 [這裡](../install/visual-studio-build-numbers-and-release-dates.md)看到版本與組建編號的對應。 使用版本號碼 ' 15.3 ' 將無法正常運作。
+例如，如果您的延伸模組需要特定版本的 Visual Studio 2017 （例如，它取決於在15.3 中發行的功能），您必須在 VSIX **InstallationTarget** 中指定組建編號。 例如，版本15.3 的組建編號為 ' 15.0.26730.3 '。 您可以在 [這裡](../install/visual-studio-build-numbers-and-release-dates.md)看到版本與組建編號的對應。 使用版本號碼 ' 15.3 ' 將無法正常運作。
 
 如果您的延伸模組需要15.3 或更高版本，您會將 **InstallationTarget 版本** 宣告為 [15.0.26730.3，16.0) ：
 

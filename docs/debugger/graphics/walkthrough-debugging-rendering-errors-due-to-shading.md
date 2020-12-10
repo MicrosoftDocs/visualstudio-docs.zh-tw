@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：由於陰影而偵測轉譯錯誤 |Microsoft Docs
+description: 遵循尋找著色器 bug 的調查。 它會顯示使用 Visual Studio 圖形診斷，包括圖形圖元歷程記錄和 HLSL 偵錯工具。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b42aa5638b668d90fa44335c2d532c9bcddddc2b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849282"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995079"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：對因著色而產生的顯示錯誤進行偵錯
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷來調查因為著色器錯誤而不正確著色的物件。
@@ -22,9 +24,9 @@ ms.locfileid: "62849282"
 
 - 檢查圖形記錄文件來識別顯示問題的像素。
 
-- 使用 [圖形像素歷史記錄] **** 視窗更仔細地檢查像素狀態。
+- 使用 [圖形像素歷史記錄]  視窗更仔細地檢查像素狀態。
 
-- 使用 [HLSL 偵錯工具] **** 來檢查像素和端點著色器。
+- 使用 [HLSL 偵錯工具]  來檢查像素和端點著色器。
 
 ## <a name="scenario"></a>案例
  物件著色不正確通常是因為端點著色器將不正確或不完整的資訊傳遞給像素著色器。
@@ -38,23 +40,23 @@ ms.locfileid: "62849282"
 
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>檢查圖形記錄中的畫面格
 
-1. 在中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，載入圖形記錄檔，其框架會顯示遺漏的模型。 新的 [圖形記錄檔] 視窗隨即出現在中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 此視窗的上半部是所選取畫面格的轉譯目標輸出。 下半部是 [畫面格清單] ****，其以縮圖顯示每個擷取的畫面格。
+1. 在中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，載入圖形記錄檔，其框架會顯示遺漏的模型。 新的 [圖形記錄檔] 視窗隨即出現在中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 此視窗的上半部是所選取畫面格的轉譯目標輸出。 下半部是 [畫面格清單] ，其以縮圖顯示每個擷取的畫面格。
 
 2. 在 [ **畫面格清單**] 中，選取物件沒有正確外觀的畫面格。 轉譯目標會更新以反映選取的畫面格。 在此案例中，圖形記錄檔視窗看起來像這樣的影像：
 
     ![Visual Studio 中的圖形記錄文件。](media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")
 
-   選取示範問題的畫面格之後，即可使用 [圖形像素歷史記錄] **** 視窗進行診斷。 [圖形像素歷史記錄] **** 視窗會依時間先後順序顯示可能影響特定像素及其著色器的基本圖形，以及這些基本圖形對轉譯目標的影響。
+   選取示範問題的畫面格之後，即可使用 [圖形像素歷史記錄]  視窗進行診斷。 [圖形像素歷史記錄]  視窗會依時間先後順序顯示可能影響特定像素及其著色器的基本圖形，以及這些基本圖形對轉譯目標的影響。
 
 #### <a name="to-examine-a-pixel"></a>檢查像素
 
-1. 開啟 [圖形像素歷史記錄] **** 視窗。 在 [圖形診斷] **** 工具列上，選擇 [像素歷史記錄] ****。
+1. 開啟 [圖形像素歷史記錄]  視窗。 在 [圖形診斷]  工具列上，選擇 [像素歷史記錄] 。
 
 2. 選取要檢查的像素。 在圖形記錄文件視窗中，從著色不正確的物件選取其中一個像素：
 
     ![選取像素時會顯示關於其歷史記錄的資訊。](media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")
 
-    [圖形像素歷史記錄] **** 視窗隨即更新，以反映選取的像素。 在此情節中，[圖形像素歷史記錄] **** 視窗如下所示：
+    [圖形像素歷史記錄]  視窗隨即更新，以反映選取的像素。 在此情節中，[圖形像素歷史記錄]  視窗如下所示：
 
     ![像素歷史記錄顯示一個 DrawIndexed 事件。](media/gfx_diag_demo_render_error_shader_step_3.png "gfx_diag_demo_render_error_shader_step_3")
 
@@ -64,7 +66,7 @@ ms.locfileid: "62849282"
 
 #### <a name="to-examine-the-pixel-shader"></a>檢查像素著色器
 
-1. 開始偵錯像素著色器。 在 [圖形像素歷史記錄] **** 視窗中，於物件基本圖形下方的 [像素著色器] **** 旁，選擇 [開始偵錯] **** 按鈕。
+1. 開始偵錯像素著色器。 在 [圖形像素歷史記錄]  視窗中，於物件基本圖形下方的 [像素著色器] 旁，選擇 [開始偵錯]  按鈕。
 
 2. 在此情節中，由於像素著色器才從端點著色器傳遞色彩，因此很容易觀察到像素著色器不是問題的來源。
 
@@ -78,7 +80,7 @@ ms.locfileid: "62849282"
 
 #### <a name="to-examine-the-vertex-shader"></a>檢查端點著色器
 
-1. 開始偵錯端點著色器。 在 [圖形像素歷史記錄] **** 視窗中，於物件基本圖形下方的 [端點著色器] **** 旁，選擇 [開始偵錯] **** 按鈕。
+1. 開始偵錯端點著色器。 在 [圖形像素歷史記錄]  視窗中，於物件基本圖形下方的 [端點著色器] 旁，選擇 [開始偵錯]  按鈕。
 
 2. 找出端點著色器的輸出結構，這是像素著色器的輸入。 在此情節中，此結構的名稱是 `output`。 檢查端點著色器程式碼並發現 `color` 結構的 `output` 成員已明確設定為完全不透明的黑色，這可能是因為某人的偵錯工作所造成。
 
@@ -92,7 +94,7 @@ ms.locfileid: "62849282"
 output.color = float3(0.0f, 0.0f, 0.0f);
 ```
 
- 至
+ to
 
 ```hlsl
 output.color = input.color;

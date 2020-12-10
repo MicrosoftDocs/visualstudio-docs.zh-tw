@@ -1,5 +1,7 @@
 ---
 title: 自訂編輯器中的檔資料和檔查看 |Microsoft Docs
+description: 瞭解自訂編輯器的元件，也就是檔資料物件和檔視圖物件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d4b14558a435d6ad9da32726508d81185961410
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 576b195663f379b1f2fd327ce6a8806ddb43deda
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414460"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994871"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>自訂編輯器中的檔資料和檔查看
 自訂編輯器是由兩個部分所組成：檔資料物件和檔視圖物件。 顧名思義，檔資料物件代表要顯示的文字資料。 同樣地，[檔視圖] 物件 (或 [view] ) 代表要顯示檔資料物件的一或多個視窗。
@@ -36,7 +38,7 @@ ms.locfileid: "93414460"
 
  有兩個選項可用於建立自訂編輯器的視圖。 其中一個是就地啟動模型，在此模型中，會使用 ActiveX 控制項或檔資料物件將視圖託管于視窗中。 第二個是簡化的內嵌模型，其中的視圖由裝載， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 並且會實作為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 處理視窗命令。 如需就地啟用模型的相關資訊，請參閱就地 [啟用](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015)。 如需簡化內嵌模型的相關資訊，請參閱 [簡化](../extensibility/simplified-embedding.md)內嵌。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [支援多個檔視圖](../extensibility/supporting-multiple-document-views.md)
 - [簡化嵌入](../extensibility/simplified-embedding.md)

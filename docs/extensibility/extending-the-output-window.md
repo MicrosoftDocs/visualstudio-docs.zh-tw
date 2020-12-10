@@ -1,5 +1,7 @@
 ---
 title: 擴充輸出視窗 |Microsoft Docs
+description: 瞭解如何在 Visual Studio SDK 中擴充輸出視窗，以及如何建立和管理您自己的自訂窗格。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,22 +12,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 800b443b079111d1d09fffdd900b246a020578f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39ee69f934a9962d2beefb83b1ada08b920ce53d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711648"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994650"
 ---
 # <a name="extend-the-output-window"></a>擴充輸出視窗
-[ **輸出** ] 視窗是一組讀取/寫入文字窗格。 Visual Studio 具有下列內建窗格： **Build**，其中的專案會傳達有關組建的訊息，而 **一般**會傳達 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 有關 IDE 的訊息。 專案會透過介面方法自動取得 **組建** 窗格的參考 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> ，而 Visual Studio 可透過服務直接存取 [ **一般** ] 窗格 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 。 除了內建的窗格之外，您還可以建立和管理自己的自訂窗格。
+[ **輸出** ] 視窗是一組讀取/寫入文字窗格。 Visual Studio 具有下列內建窗格： **Build**，其中的專案會傳達有關組建的訊息，而 **一般** 會傳達 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 有關 IDE 的訊息。 專案會透過介面方法自動取得 **組建** 窗格的參考 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> ，而 Visual Studio 可透過服務直接存取 [ **一般** ] 窗格 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 。 除了內建的窗格之外，您還可以建立和管理自己的自訂窗格。
 
- 您可以直接透過和介面控制 **輸出** 視窗 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>服務所提供的介面 <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> ，會定義用來建立、取出和終結**輸出**視窗窗格的方法。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>介面會定義方法來顯示窗格、隱藏窗格，以及操作其文字。 控制 **輸出** 視窗的另一種方式是透過 <xref:EnvDTE.OutputWindow> <xref:EnvDTE.OutputWindowPane> Visual Studio Automation 物件模型中的和物件。 這些物件幾乎會封裝和介面的所有功能 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 。 此外， <xref:EnvDTE.OutputWindow> 和物件也 <xref:EnvDTE.OutputWindowPane> 會加入一些較高層級的功能，讓您更輕鬆地列舉 **輸出** 視窗窗格，以及從窗格中取出文字。
+ 您可以直接透過和介面控制 **輸出** 視窗 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>服務所提供的介面 <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> ，會定義用來建立、取出和終結 **輸出** 視窗窗格的方法。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>介面會定義方法來顯示窗格、隱藏窗格，以及操作其文字。 控制 **輸出** 視窗的另一種方式是透過 <xref:EnvDTE.OutputWindow> <xref:EnvDTE.OutputWindowPane> Visual Studio Automation 物件模型中的和物件。 這些物件幾乎會封裝和介面的所有功能 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 。 此外， <xref:EnvDTE.OutputWindow> 和物件也 <xref:EnvDTE.OutputWindowPane> 會加入一些較高層級的功能，讓您更輕鬆地列舉 **輸出** 視窗窗格，以及從窗格中取出文字。
 
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>建立使用 [輸出] 窗格的延伸模組
  您可以進行延伸，以執行輸出窗格的不同層面。
 
-1. `TestOutput`使用名為**為 testoutput.txt**的功能表命令來建立名為的 VSIX 專案。 如需詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
+1. `TestOutput`使用名為 **為 testoutput.txt** 的功能表命令來建立名為的 VSIX 專案。 如需詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
 
 2. 加入下列參考：
 
@@ -33,14 +35,14 @@ ms.locfileid: "80711648"
 
     2. EnvDTE80
 
-3. 在 *TestOutput.cs*中，新增下列 using 語句：
+3. 在 *TestOutput.cs* 中，新增下列 using 語句：
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4. 在 *TestOutput.cs*中刪除 `ShowMessageBox` 方法。 新增下列方法存根：
+4. 在 *TestOutput.cs* 中刪除 `ShowMessageBox` 方法。 新增下列方法存根：
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -150,7 +152,7 @@ void DeletePane(Guid paneGuid)
  如果您將此方法新增到上一節中提供的擴充功能，則當您按一下 [叫用 **為 testoutput.txt** ] 命令時，應該會看到 [輸出] 視窗，其中包含標頭 **顯示 [顯示輸出來源：新增] 窗格** ，而 [ **已建立** 的文字] 窗格會顯示在窗格中 如果您再次按一下 [叫用 **為 testoutput.txt** ] 命令，就會刪除窗格。
 
 ## <a name="get-the-general-pane-of-the-output-window"></a>取得輸出視窗的一般窗格
- 這個範例會示範如何取得**輸出**視窗的內建**一般**窗格。
+ 這個範例會示範如何取得 **輸出** 視窗的內建 **一般** 窗格。
 
 ```csharp
 IVsOutputWindowPane GetGeneralPane()

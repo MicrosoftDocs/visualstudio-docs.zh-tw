@@ -1,5 +1,7 @@
 ---
 title: 以動態方式加入功能表項目 |Microsoft Docs
+description: 瞭解如何使用 DynamicItemStart 命令旗標，在執行時間加入功能表項目。 本文說明如何在 Visual Studio 方案中設定啟始專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4387c1930e09e49c0ec5c36ccedc1bb83dc273f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81fd495c51eff456f66275f33876038d14e43203
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712059"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994806"
 ---
 # <a name="dynamically-add-menu-items"></a>以動態方式加入功能表項目
 您可以在執行時間加入功能表項目，方法是在 `DynamicItemStart` Visual Studio 命令 (*. .vsct*) 檔中的預留位置按鈕定義上指定命令旗標，然後在程式碼中定義 (，) 顯示和處理命令 () 的功能表項目數目。 載入 VSPackage 時，會將預留位置取代為動態功能表項目。
@@ -26,7 +28,7 @@ ms.locfileid: "80712059"
 
  本逐步解說將示範如何使用 **方案總管** 工具列上的命令，在 Visual Studio 方案中設定啟始專案。 它使用的功能表控制器具有作用中方案中專案的動態下拉式清單。 若要讓此命令不會在沒有開啟解決方案或開啟的方案只有一個專案時出現，則只有在方案有多個專案時，才會載入 VSPackage。
 
- 如需 *.vsct* 檔案的詳細資訊，請參閱 [Visual Studio 命令表格 (. .vsct) ](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔。
+ 如需 *.vsct* 檔案的詳細資訊，請參閱 [Visual Studio 命令表格 (. .vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔。
 
 ## <a name="create-an-extension-with-a-menu-command"></a>使用功能表命令建立擴充功能
 
@@ -43,7 +45,7 @@ ms.locfileid: "80712059"
 
 - 兩個按鈕，一個可作為功能表項目的預留位置，另一個則是在工具列上提供圖示和工具提示。
 
-1. 在 *DynamicMenuPackage. .vsct*中，定義命令識別碼。 移至 [符號] 區段，並取代 **guidDynamicMenuPackageCmdSet** GuidSymbol 區塊中的 IDSymbol 元素。 您必須為兩個群組、功能表控制器、預留位置命令和錨點命令定義 IDSymbol 元素。
+1. 在 *DynamicMenuPackage. .vsct* 中，定義命令識別碼。 移至 [符號] 區段，並取代 **guidDynamicMenuPackageCmdSet** GuidSymbol 區塊中的 IDSymbol 元素。 您必須為兩個群組、功能表控制器、預留位置命令和錨點命令定義 IDSymbol 元素。
 
     ```xml
     <GuidSymbol name="guidDynamicMenuPackageCmdSet" value="{ your GUID here }">
@@ -205,7 +207,7 @@ ms.locfileid: "80712059"
 ## <a name="add-the-command"></a>新增命令
  您可以在 DynamicMenu 的函式中設定功能表命令，包括動態功能表和功能表項目。
 
-1. 在 *DynamicMenuPackage.cs*中，新增命令集的 GUID 和命令識別碼：
+1. 在 *DynamicMenuPackage.cs* 中，新增命令集的 GUID 和命令識別碼：
 
     ```csharp
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file

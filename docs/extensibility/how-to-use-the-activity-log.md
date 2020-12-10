@@ -1,5 +1,7 @@
 ---
 title: 如何：使用活動記錄 |Microsoft Docs
+description: Vspackage 可以將訊息寫入至活動記錄。 瞭解如何使用活動記錄檔，在零售環境中進行 Vspackage 的偵錯工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2796b8537c0f94c02c91fddc73f6d913ba1b0c4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905577"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993571"
 ---
 # <a name="how-to-use-the-activity-log"></a>如何：使用活動記錄
 Vspackage 可以將訊息寫入至活動記錄。 這項功能特別適用于在零售環境中進行 Vspackage 的偵錯工具。

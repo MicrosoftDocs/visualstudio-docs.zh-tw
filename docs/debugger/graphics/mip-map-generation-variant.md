@@ -1,5 +1,7 @@
 ---
 title: Mip 對應產生變異數 |Microsoft Docs
+description: 如果 mip 對應產生顯示較大的效能提升，表示您使用紋理而不啟用 mip 對應，且不會從紋理快取中獲得最大效益。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d939fb537ac6aed75d9b0f7bda2970a85f9175ad
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72734895"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994963"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 產生變異
 在非呈現目標的紋理上啟用 MIP 對應。
@@ -43,7 +45,7 @@ MIP 對應主要用來透過預先計算較小版本的紋理，來去除處於�
   如果已自動產生紋理的 MIP 對應，則會在播放期間修改 `ID3D11Device::CreateShaderResourceView` 呼叫，以在紋理取樣期間使用 MIP 鏈結。
 
 ## <a name="example"></a>範例
-使用與下列類似的程式碼，即可重現 **Mip 對應產生**變異：
+使用與下列類似的程式碼，即可重現 **Mip 對應產生** 變異：
 
 ```cpp
 D3D11_TEXTURE2D_DESC texture_description;

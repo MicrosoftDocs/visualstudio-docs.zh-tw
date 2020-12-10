@@ -1,6 +1,6 @@
 ---
-title: 工作流程設計工具 CancellationScope 活動設計工具
-description: 瞭解如何使用 CancellationScope 活動設計工具來建立和設定 CancellationScope 活動。
+title: CancellationScope 活動設計工具
+description: 瞭解如何使用工作流程設計工具中的 [CancellationScope] 活動設計工具來建立和設定 CancellationScope 活動。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 746ed70d0a1a8ae4de2207ea1fdf15280bd44de9
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 175ca46645d55106f18c163c54135316d73ea3ec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434437"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993233"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope 活動設計工具
 
@@ -29,7 +29,7 @@ ms.locfileid: "94434437"
 
 ### <a name="using-the-cancellationscope-activity-designer"></a>使用 CancellationScope 活動設計工具
 
-[ **CancellationScope** ] 活動設計工具可在 [ **工具箱** ] 的 [ **交易** ] 類別中找到。 若要開啟 [ **工具箱** ]，請選取工作流程設計工具的 [ **工具箱** ] 索引標籤。 或者，從 [ **View** ] 功能表選取 [ **工具箱** ]，或按 **Ctrl** + **Alt** + **X** 。
+[ **CancellationScope** ] 活動設計工具可在 [**工具箱**] 的 [**交易**] 類別中找到。 若要開啟 [ **工具箱**]，請選取工作流程設計工具的 [ **工具箱** ] 索引標籤。 或者，從 [ **View** ] 功能表選取 [**工具箱**]，或按 **Ctrl** + **Alt** + **X**。
 
 [ **CancellationScope** ] 活動設計工具可以從 [ **工具箱** ] 拖曳出來，放到工作流程設計工具介面上放置活動的任一處，例如內部 <xref:System.Activities.Statements.Sequence> 。 卸載 **CancellationScope** 活動設計工具 <xref:System.Activities.Statements.CancellationScope> 時，會建立具有預設值 CancellationScope 的活動 <xref:System.Activities.Activity.DisplayName%2A> 。 <xref:System.Activities.Activity.DisplayName%2A>在 [ **CancellationScope** ] 活動設計工具的標頭中編輯值。 您也可以在屬性方格的 [ **DisplayName** ] 方塊中編輯它。
 
@@ -40,10 +40,10 @@ ms.locfileid: "94434437"
 |屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|否|<xref:System.Activities.Statements.CancellationScope> 活動可選用的易記名稱。 預設為 CancellationScope。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|對|指定提供取消邏輯的活動。 若要加入 <xref:System.Activities.Statements.CancellationScope.Body%2A> 活動，請從 [工具箱 **] 將** 活動拖放到 [ **CancellationScope** ] 活動設計 **工具** 的 [內文] 方塊中。 新增提示文字「在此放置活動」。|
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|對|如果有取消，則指定執行的活動。 若要加入 <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> 活動，請從 [工具箱] 將活動拖放到 [ **CancellationScope** ] 活動設計 **工具** 上的 [ **CancellationHandler** ] 方塊中。 新增提示文字「在此放置活動」。|
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|是|指定提供取消邏輯的活動。 若要加入 <xref:System.Activities.Statements.CancellationScope.Body%2A> 活動，請從 [工具箱 **] 將** 活動拖放到 [ **CancellationScope** ] 活動設計 **工具** 的 [內文] 方塊中。 新增提示文字「在此放置活動」。|
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|是|如果有取消，則指定執行的活動。 若要加入 <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> 活動，請從 [工具箱] 將活動拖放到 [ **CancellationScope** ] 活動設計 **工具** 上的 [ **CancellationHandler** ] 方塊中。 新增提示文字「在此放置活動」。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [交易](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)

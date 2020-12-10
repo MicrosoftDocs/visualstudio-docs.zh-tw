@@ -1,5 +1,7 @@
 ---
 title: 如何往返延伸模組
+description: 瞭解如何在 Visual Studio 2015 與 Visual Studio 2019 或 Visual Studio 2017 之間進行 Visual Studio 擴充性專案來回行程。
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2017
 ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
@@ -8,12 +10,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3db3264bf5226b5679452659928e451e7975b001
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387274"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993610"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>How to：使擴充功能與 Visual Studio 2019/2017 和 Visual Studio 2015 相容
 
@@ -29,7 +31,7 @@ ms.locfileid: "86387274"
 1. 匯入正確的 NuGet 套件。
 2. 更新擴充功能資訊清單：
     * 安裝目標
-    * 先決條件
+    * 必要條件
 3. 更新 .Csproj：
     * 更新 `<MinimumVisualStudioVersion>`。
     * 新增 `<VsixType>` 屬性。
@@ -51,17 +53,17 @@ ms.locfileid: "86387274"
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>確定沒有 project.js的參考
 
-稍後在本檔中，我們將在您的 **.csproj* 檔案中插入條件式匯入語句。 如果您的 NuGet 參考儲存在 *project.js*中，這將無法運作。 因此，建議您將所有 NuGet 參考移至 *packages.config* 檔案。
-如果您的專案包含檔案 * 上的project.js* ：
+稍後在本檔中，我們將在您的 **.csproj* 檔案中插入條件式匯入語句。 如果您的 NuGet 參考儲存在 *project.js* 中，這將無法運作。 因此，建議您將所有 NuGet 參考移至 *packages.config* 檔案。
+如果您的專案包含檔案 *上的project.js* ：
 
-* 記下 *project.js*的參考。
-* 從 **方案總管**中，刪除專案中的 *project.js* 檔案。 這會刪除檔案 * 上的project.js* ，並將它從專案中移除。
+* 記下 *project.js* 的參考。
+* 從 **方案總管** 中，刪除專案中的 *project.js* 檔案。 這會刪除檔案 *上的project.js* ，並將它從專案中移除。
 * 將 NuGet 參考新增回專案：
   * 以滑鼠右鍵按一下 **方案** ，然後選擇 [ **管理方案的 NuGet 套件**]。
   * Visual Studio 會自動為您建立 *packages.config* 檔。
 
 > [!NOTE]
-> 如果您的專案包含 EnvDTE 封裝，可能需要以滑鼠右鍵按一下 [**加入參考**]，然後加入適當**的參考，** 以加入這些封裝。 使用 NuGet 套件可能會在嘗試建立專案時產生錯誤。
+> 如果您的專案包含 EnvDTE 封裝，可能需要以滑鼠右鍵按一下 [**加入參考**]，然後加入適當 **的參考，** 以加入這些封裝。 使用 NuGet 套件可能會在嘗試建立專案時產生錯誤。
 
 ## <a name="add-appropriate-build-tools"></a>新增適當的組建工具
 
@@ -122,7 +124,7 @@ Visual Studio 2019 或2017 | VSSDK. BuildTool
 
 強烈建議您在執行此步驟時，參考已修改的 .csproj 開啟。 您可以在 [這裡](https://github.com/Microsoft/VSSDK-Extensibility-Samples)找到數個範例。 選取任何擴充性範例、尋找 *.csproj* 檔案以供參考，然後執行下列步驟：
 
-* 流覽至 **檔案總管**中的專案目錄。
+* 流覽至 **檔案總管** 中的專案目錄。
 * 使用文字編輯器開啟 *myproject .csproj* 檔案。
 
 ### <a name="1-update-the-minimumvisualstudioversion"></a>1. 更新 MinimumVisualStudioVersion
@@ -207,10 +209,10 @@ Visual Studio 2019 或2017 | VSSDK. BuildTool
 * 流覽至您的專案目錄。
 * 開啟 *\bin\Debug* 資料夾。
 * 按兩下 VSIX 檔案，然後在 Visual Studio 2015 和 Visual Studio 2019/2017 上安裝您的擴充功能。
-* 請確定您可以在**Tools**  >  [**已安裝**] 區段的 [工具**擴充功能和更新**] 中看到延伸模組。
+* 請確定您可以在  >  [**已安裝**] 區段的 [工具 **擴充功能和更新**] 中看到延伸模組。
 * 嘗試執行/使用延伸模組以檢查它是否正常運作。
 
 ![尋找 VSIX](media/finding-a-VSIX-example.png)
 
 > [!NOTE]
-> 如果您的專案停止回應 **開啟**檔案的訊息，請強制關閉 Visual Studio、流覽至您的專案目錄、顯示隱藏的資料夾，以及刪除 *vs* 資料夾。
+> 如果您的專案停止回應 **開啟** 檔案的訊息，請強制關閉 Visual Studio、流覽至您的專案目錄、顯示隱藏的資料夾，以及刪除 *vs* 資料夾。

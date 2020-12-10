@@ -1,5 +1,7 @@
 ---
 title: GuidSymbol 元素 |Microsoft Docs
+description: GuidSymbol 元素包含 GUID： ID 組的 GUID，代表功能表、群組或命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59068a9ac9f952b5370681b3684ce4234354afc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98fd802021f29365b6f338610754214352a996d7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711120"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994234"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol 元素
 `GuidSymbol`元素包含 guid： ID 組的 guid，代表功能表、群組或命令。 識別碼來自 `IDSymbol` 元素中的元素 `GuidSymbol` 。 專案 `GuidSymbol` 具有屬性， `name` 該屬性會提供 GUID 的易記名稱，該名稱包含在屬性中 `value` 。
@@ -38,19 +40,19 @@ ms.locfileid: "80711120"
 |屬性|描述|
 |---------------|-----------------|
 |NAME|必要。 GUID 符號的名稱。|
-|value|必要。 GUID 符號的 GUID。|
+|值|必要。 GUID 符號的 GUID。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[IDSymbol 元素](../extensibility/idsymbol-element.md)|包含代表功能表、群組或命令之 GUID： ID 組的識別碼。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[符號元素](../extensibility/symbols-element.md)|`GuidSymbol`將 *.vsct*檔案中的元素群組在一起。|
+|[符號元素](../extensibility/symbols-element.md)|`GuidSymbol`將 *.vsct* 檔案中的元素群組在一起。|
 
 ## <a name="remarks"></a>備註
  一般而言， *.vsct* 檔案 `GuidSymbol` 會在其區段中包含三個元素 `Symbols` ，一個用於封裝本身，一個用於命令集 (封裝提供的功能表、群組和命令的集合) ，另一個則用於提供按鈕和其他視覺效果元件圖示的點陣圖。 `IDSymbol`指定專案中的每個元素都 `GuidSymbol` 必須有唯一的 `value` 。不過， `IDSymbol` 具有相同值的專案可以存在於封裝中，前提是它們有不同的父系。

@@ -1,5 +1,7 @@
 ---
 title: Groups 元素 |Microsoft Docs
+description: Groups 元素包含定義 VSPackage 命令群組的專案。 本文包含範例。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6383c3c7a28f9aa7778fddcbfe36b237d21323f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31b5885ad6e08bd9e22049033d6191c97fdc857b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711180"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994286"
 ---
 # <a name="groups-element"></a>Groups 項目
 包含定義 VSPackage 之命令群組的專案。
@@ -41,14 +43,14 @@ ms.locfileid: "80711180"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[Group 元素](../extensibility/group-element.md)|表示單一命令群組。|
 |[Groups 元素](../extensibility/groups-element.md)|包含定義 VSPackage 之命令群組的專案。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[命令元素](../extensibility/commands-element.md)|代表 VSPackage 工具列上的命令集合。|
 

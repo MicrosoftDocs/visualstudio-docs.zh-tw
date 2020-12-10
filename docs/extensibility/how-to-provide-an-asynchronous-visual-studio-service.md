@@ -1,5 +1,7 @@
 ---
 title: 如何：提供非同步 Visual Studio 服務 |Microsoft Docs
+description: 瞭解如何提供非同步 Visual Studio 服務。 這種方法可讓您取得服務，而不會封鎖 UI 執行緒。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11639e178f93a1ebfe2fc5231ee2b35df1b63196
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905744"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993636"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>如何：提供非同步 Visual Studio 服務
 如果您想要取得服務而不封鎖 UI 執行緒，您應該建立異步服務，並在背景執行緒上載入封裝。 基於這個目的，您可以使用 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> 而不是 <xref:Microsoft.VisualStudio.Shell.Package> ，並使用非同步封裝的特殊非同步方法來加入服務。
@@ -22,11 +24,11 @@ ms.locfileid: "85905744"
 
 ## <a name="implement-an-asynchronous-service"></a>執行非同步服務
 
-1. 建立 vsix**專案 (將**  >  **新**  >  **專案**新增至  >  **Visual c #**  >  **Extensiblity**  >  **VSIX 專案**) 。 將專案命名為 **TestAsync**。
+1. 建立 vsix **專案 (將**  >  **新**  >  **專案** 新增至  >  **Visual c #**  >  **Extensiblity**  >  **VSIX 專案**) 。 將專案命名為 **TestAsync**。
 
-2. 將 VSPackage 新增至專案。 在**方案總管**中選取專案節點，然後按一下 [**加入**  >  **新專案**  >  **Visual c # 專案**擴充性  >  **Extensibility**  >  **Visual Studio 封裝**]。 將這個檔案命名為 *TestAsyncPackage.cs*。
+2. 將 VSPackage 新增至專案。 在 **方案總管** 中選取專案節點，然後按一下 [**加入**  >  **新專案**  >  **Visual c # 專案** 擴充性  >    >  **Visual Studio 封裝**]。 將這個檔案命名為 *TestAsyncPackage.cs*。
 
-3. 在 *TestAsyncPackage.cs*中，將封裝變更為繼承自， `AsyncPackage` 而不是 `Package` ：
+3. 在 *TestAsyncPackage.cs* 中，將封裝變更為繼承自， `AsyncPackage` 而不是 `Package` ：
 
     ```csharp
     public sealed class TestAsyncPackage : AsyncPackage
@@ -120,7 +122,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 ## <a name="add-a-service"></a>新增服務
 
-1. 在 *TestAsyncPackage.cs*中，移除 `Initialize()` 方法並覆寫 `InitializeAsync()` 方法。 新增服務，並新增回呼方法來建立服務。 以下是非同步初始化運算式新增服務的範例：
+1. 在 *TestAsyncPackage.cs* 中，移除 `Initialize()` 方法並覆寫 `InitializeAsync()` 方法。 新增服務，並新增回呼方法來建立服務。 以下是非同步初始化運算式新增服務的範例：
 
     ```csharp
     protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -132,7 +134,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     ```
     若要將此服務顯示在此封裝之外，請將 [升級旗標] 值設定為 [ *true* ] 作為最後一個參數：  `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
-2. 新增 *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*的參考。
+2. 新增 *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* 的參考。
 
 3. 將回呼方法實作為建立和傳回服務的非同步方法。
 
@@ -171,7 +173,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>在命令處理常式中使用非同步服務
  以下是如何在功能表命令中使用非同步服務的範例。 您可以使用此處所示的程式，在其他非非同步方法中使用此服務。
 
-1. 將功能表命令新增至您的專案。  (在**方案總管**中，選取專案節點，按一下滑鼠右鍵，然後選取 [**加入**  >  **新專案**擴充性  >  **Extensibility**  >  **自訂命令**]。 ) 將命令檔命名為*TestAsyncCommand.cs*。
+1. 將功能表命令新增至您的專案。  (在 **方案總管** 中，選取專案節點，按一下滑鼠右鍵，然後選取 [**加入**  >  **新專案** 擴充性  >    >  **自訂命令**]。 ) 將命令檔命名為 *TestAsyncCommand.cs*。
 
 2. 自訂命令範本會將方法重新新增 `Initialize()` 至 *TestAsyncPackage.cs* 檔案，以便初始化命令。 在 `Initialize()` 方法中，複製初始化命令的行。 其看起來應該如下：
 

@@ -1,5 +1,6 @@
 ---
 title: 關閉原始檔控制外掛程式的警告
+description: 在 Visual Studio 中使用原始檔控制時，使用者可能會看到數個相容性警告。 瞭解如何停用這些警告。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 406d063bd2df6dd1d831c3a8220d8d513596a79a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f5607f4a92a14b692f20d509e014991d461815bd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037181"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993545"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何：關閉原始檔控制外掛程式的相容性警告
 
@@ -27,7 +28,7 @@ ms.locfileid: "90037181"
 
 - 如有必要，請設定下列登錄專案 (新增值) ：
 
-   **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword：00000001**
+   **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword：00000001**
 
    所有非外掛程式都會顯示此警告 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] 。
 
@@ -35,9 +36,9 @@ ms.locfileid: "90037181"
 
 - 如有必要，請設定下列兩個登錄值 (新增值) ：
 
-     **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword：00000000**
+     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword：00000000**
 
-    **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = dword：00000001**
+    **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = dword：00000001**
 
      如果原始檔控制外掛程式未明確支援多個專案的重新進入，則會顯示此警告 (也就是，如果一次只能簽入一個檔案和專案) 。
 

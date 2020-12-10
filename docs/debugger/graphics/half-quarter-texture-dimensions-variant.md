@@ -1,5 +1,7 @@
 ---
-title: 半季紋理維度變異數 |Microsoft Docs
+title: Half-Quarter 材質維度變異數 |Microsoft Docs
+description: 如果較小的紋理顯示較大的效能提升，則建議使用 GPU 材質快取的記憶體頻寬壓力或效率不佳。 請考慮讓紋理大小變小。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4c82836f5a80fae421a30721d8c3ee4c3d6893d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd3cc5d5517818934a20c9064e718cf65f9d3a65
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735387"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995144"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>半/四分之一紋理維度變異
 減少非呈現目標的紋理上的紋理維度。

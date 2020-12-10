@@ -1,5 +1,7 @@
 ---
 title: Extern 元素 |Microsoft Docs
+description: Extern 元素會參考任何外部標頭 ( .h) 檔案，以便在編譯時期與 .vsct 檔案合併。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711492"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994520"
 ---
 # <a name="extern-element"></a>Extern 元素
 Extern 元素會參考任何外部標頭 (*.h*) 檔案，以便在編譯時期與 *.vsct* 檔案合併。 要合併的檔案必須位於提供給 .VSCT 編譯器的 Include 路徑上，或是由 [include 元素](../extensibility/include-element.md)所參考。 檔案可能是其他 *.vsct* 檔案或 c + + 標頭檔。
@@ -46,13 +48,13 @@ Extern 元素會參考任何外部標頭 (*.h*) 檔案，以便在編譯時期�
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |無。|無。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[CommandTable 元素](../extensibility/commandtable-element.md)|定義 VSPackage 為 IDE 提供的命令（即功能表項目、功能表、工具列和下拉式方塊）的所有元素。|
 

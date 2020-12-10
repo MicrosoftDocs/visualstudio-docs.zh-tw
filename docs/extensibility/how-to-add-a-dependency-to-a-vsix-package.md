@@ -1,5 +1,7 @@
 ---
 title: 如何：將相依性新增至 VSIX 套件 |Microsoft Docs
+description: 瞭解如何設定 VSIX 套件部署，以安裝任何尚未存在於目的電腦上的相依性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7ee7cbc4dee800351689386056389d274e07f4f
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d7ef19bafd0788ed15094979141679625e4e992f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012226"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993831"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>如何：將相依性新增至 VSIX 套件
 
@@ -26,7 +28,7 @@ ms.locfileid: "90012226"
 
 ## <a name="to-add-a-dependency"></a>新增相依性
 
-1. 在**設計**視圖中開啟*extension.vsixmanifest*檔案。 移 **至 [相依** 性] 索引標籤，然後按一下 [ **新增**]。
+1. 在 **設計** 視圖中開啟 *extension.vsixmanifest* 檔案。 移 **至 [相依** 性] 索引標籤，然後按一下 [ **新增**]。
 
 2. 若要加入已安裝的擴充功能：在 [ **加入新** 的相依性] 對話方塊中，選取 [ **已安裝的延伸** 模組]，然後在 [ **名稱**] 中選取清單上的延伸模組。
 
@@ -34,7 +36,7 @@ ms.locfileid: "90012226"
 
 ## <a name="require-a-specific-visual-studio-release"></a>需要特定的 Visual Studio 版本
 
-例如，如果您的延伸模組需要特定版本的 Visual Studio 2017，則取決於在15.3 中發行的功能，您可以在 VSIX **InstallationTarget**中指定組建編號。 例如，版本15.3 的組建編號為 ' 15.0.26730.3 '。 您可以在 [這裡](../install/visual-studio-build-numbers-and-release-dates.md)看到版本與組建編號的對應。 請注意，使用版本號碼 ' 15.3 ' 將無法正常運作。
+例如，如果您的延伸模組需要特定版本的 Visual Studio 2017，則取決於在15.3 中發行的功能，您可以在 VSIX **InstallationTarget** 中指定組建編號。 例如，版本15.3 的組建編號為 ' 15.0.26730.3 '。 您可以在 [這裡](../install/visual-studio-build-numbers-and-release-dates.md)看到版本與組建編號的對應。 請注意，使用版本號碼 ' 15.3 ' 將無法正常運作。
 
 如果您的延伸模組需要15.3 或更高版本，您會將 **InstallationTarget 版本** 宣告為 [15.0.26730.3，16.0) ：
 

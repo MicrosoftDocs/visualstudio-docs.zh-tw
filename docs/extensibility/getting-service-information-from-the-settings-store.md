@@ -1,5 +1,7 @@
 ---
 title: 從設定存放區取得服務資訊 |Microsoft Docs
+description: 瞭解如何使用設定存放區來尋找所有可用的服務，或判斷是否已安裝特定的服務。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b15d5c9f122ca66d21940b9998969b0d39d1a74d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15efb14d2cee36e5f2a8559c3ffa3844251aa982
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711379"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994429"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>從設定存放區取得服務資訊
 您可以使用 [設定] 存放區來尋找所有可用的服務，或判斷是否已安裝特定的服務。 您必須知道服務類別的型別。
@@ -22,7 +24,7 @@ ms.locfileid: "80711379"
 
 1. 建立名為的 VSIX 專案 `FindServicesExtension` ，然後新增名為的自訂命令 `FindServicesCommand` 。 如需有關如何建立自訂命令的詳細資訊，請參閱[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能
 
-2. 在 *FindServicesCommand.cs*中，新增下列 using 指示詞：
+2. 在 *FindServicesCommand.cs* 中，新增下列 using 指示詞：
 
     ```csharp
     using System.Collections.Generic;

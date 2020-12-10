@@ -1,5 +1,7 @@
 ---
 title: 將屬性公開至屬性視窗 |Microsoft Docs
+description: 深入瞭解物件的公用屬性。 您對這些屬性所做的變更會反映在屬性視窗中。
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +14,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f84962628ae550676e2c2eeb10c0f3baeca1bb58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f2668f8410b6e5f18b23c82202c1d33f8c67b4d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711834"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994689"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>將屬性公開給屬性視窗
 
 本逐步解說會將物件的公用屬性公開至 [ **屬性** ] 視窗。 您對這些屬性所做的變更會反映在 [ **屬性** ] 視窗中。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
@@ -35,7 +37,7 @@ ms.locfileid: "80711834"
 
 1. 每個 Visual Studio 擴充功能都會從 VSIX 部署專案開始，其中包含延伸模組資產。 建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名為的 VSIX 專案 `MyObjectPropertiesExtension` 。 您可以藉由搜尋 "vsix"，在 [ **新增專案** ] 對話方塊中找到 VSIX 專案範本。
 
-2. 加入名為的自訂工具視窗專案範本，以新增工具視窗 `MyToolWindow` 。 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案] 對話方塊**中，移至**Visual c # 專案**擴充性  >  **Extensibility** ，然後選取 [**自訂工具視窗]**。 在對話方塊底部的 [ **名稱** ] 欄位中，將檔案名變更為 *MyToolWindow.cs*。 如需有關如何建立自訂工具視窗的詳細資訊，請參閱 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。
+2. 加入名為的自訂工具視窗專案範本，以新增工具視窗 `MyToolWindow` 。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案] 對話方塊** 中，移至 **Visual c # 專案** 擴充性  >   ，然後選取 [**自訂工具視窗]**。 在對話方塊底部的 [ **名稱** ] 欄位中，將檔案名變更為 *MyToolWindow.cs*。 如需有關如何建立自訂工具視窗的詳細資訊，請參閱 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。
 
 3. 開啟 *MyToolWindow.cs* ，並新增下列 using 語句：
 
@@ -94,7 +96,7 @@ ms.locfileid: "80711834"
 
 6. 建置此專案並開始偵錯。 應該會出現 Visual Studio 的實驗實例。
 
-7. 如果看不到 [ **屬性** ] 視窗，請按 **F4**開啟。
+7. 如果看不到 [ **屬性** ] 視窗，請按 **F4** 開啟。
 
 8. 開啟 **mytoolwindow]** 視窗。 您可以在 [**查看**  >  **其他視窗**] 中找到它。
 
@@ -115,10 +117,10 @@ ms.locfileid: "80711834"
     ```csharp
     [Category("My Properties")]
     [Description("MyToolWindowControl properties")]
-    public bool IsChecked
+    public bool IsChecked
     {
         get {
-            if (base.Content == null)  return false;
+            if (base.Content == null)  return false;
             return (bool)(( MyToolWindowControl) base.Content).checkBox.IsChecked;
         }
         set {
@@ -143,7 +145,7 @@ ms.locfileid: "80711834"
 
      這會提供 `MyToolWindowControl` 窗格的存取權 `MyToolWindow` 。
 
-3. 在 *MyToolWindow.cs*中，變更此函式，如下所示 `MyToolWindow` ：
+3. 在 *MyToolWindow.cs* 中，變更此函式，如下所示 `MyToolWindow` ：
 
     ```csharp
     base.Content = new MyToolWindowControl(this);
@@ -176,7 +178,7 @@ ms.locfileid: "80711834"
 
      在 [ **屬性** ] 視窗中尋找視窗的屬性。 [ **IsChecked** ] 屬性會出現在視窗底部的 [我的 **屬性** ] 類別之下。
 
-10. 勾選 [ **mytoolwindow]** ] 視窗中的核取方塊。 [**屬性**] 視窗中的 [ **IsChecked** ] 變更為 [ **True**]。 清除 **mytoolwindow]** 視窗中的核取方塊。 [**屬性**] 視窗中的 [ **IsChecked** ] 變更為 [ **False**]。 在 [**屬性**] 視窗中變更**IsChecked**的值。 **Mytoolwindow]** 視窗中的核取方塊會變更以符合新的值。
+10. 勾選 [ **mytoolwindow]** ] 視窗中的核取方塊。 [**屬性**] 視窗中的 [ **IsChecked** ] 變更為 [ **True**]。 清除 **mytoolwindow]** 視窗中的核取方塊。 [**屬性**] 視窗中的 [ **IsChecked** ] 變更為 [ **False**]。 在 [**屬性**] 視窗中變更 **IsChecked** 的值。 **Mytoolwindow]** 視窗中的核取方塊會變更以符合新的值。
 
     > [!NOTE]
     > 如果您必須處置 [ **屬性** ] 視窗中顯示的物件，請 `OnSelectChange` `null` 先使用選取容器來呼叫。 處置屬性或物件之後，您可以變更為已更新和清單的選取容器 <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> 。
@@ -190,14 +192,14 @@ ms.locfileid: "80711834"
 1. 開啟 *MyToolWindow.cs* ，並新增名為的公用類別 `Simple` 。
 
     ```csharp
-    public class Simple
+    public class Simple
     {
-        private string someText = "";
+        private string someText = "";
 
         [Category("My Properties")]
         [Description("Simple Properties")]
         [DisplayName("My Text")]
-        public string SomeText
+        public string SomeText
         {
             get { return someText; }
             set { someText = value; }
@@ -240,7 +242,7 @@ ms.locfileid: "80711834"
     }
     ```
 
-3. 在 *MyToolWindowControl.cs*中，以下列程式程式碼取代核取方塊處理常式：
+3. 在 *MyToolWindowControl.cs* 中，以下列程式程式碼取代核取方塊處理常式：
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)

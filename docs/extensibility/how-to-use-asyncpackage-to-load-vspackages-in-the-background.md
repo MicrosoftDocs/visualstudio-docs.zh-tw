@@ -1,5 +1,6 @@
 ---
 title: 在背景中使用 AsyncPackage 載入 Vspackage
+description: 瞭解如何使用可在背景執行緒上進行封裝載入的 AsyncPackage 類別，這可以防止磁片 i/o 的回應性問題。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,18 +9,18 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef717ba7ec135038dcb35348eff870d9eeb3e33
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e8b5917a42e7083f7357ce76762bf8b51a1b60f9
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037285"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993480"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>如何：在背景中使用 AsyncPackage 載入 Vspackage
 載入和初始化 VS 封裝可能會導致磁片 i/o。 如果 UI 執行緒上發生這類 i/o，則可能會導致回應性問題。 為了解決這個情況，Visual Studio 2015 引進了  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> 可在背景執行緒上載入封裝的類別。
 
 ## <a name="create-an-asyncpackage"></a>建立 AsyncPackage
- 您可以從建立 VSIX 專案開始 **， (檔案**  >  **新增**  >  **專案**  >  **Visual c #** 擴充性  >  **Extensibility**  >  **VSIX 專案**) ，並將 VSPackage 新增至專案 (以滑鼠右鍵按一下專案，然後**加入**  >  **新的專案**  >  **c # 專案**擴充性  >  **Extensibility**  >  **Visual Studio 封裝**) 。 然後，您可以建立服務，並將這些服務新增至您的套件。
+ 您可以從建立 VSIX 專案開始 **， (檔案**  >  **新增**  >  **專案**  >  **Visual c #** 擴充性  >    >  **VSIX 專案**) ，並將 VSPackage 新增至專案 (以滑鼠右鍵按一下專案，然後 **加入**  >  **新的專案**  >  **c # 專案** 擴充性  >    >  **Visual Studio 封裝**) 。 然後，您可以建立服務，並將這些服務新增至您的套件。
 
 1. 從衍生封裝 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> 。
 
@@ -74,7 +75,7 @@ public sealed class TestPackage : AsyncPackage
 ```
 
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>將現有的 VSPackage 轉換為 AsyncPackage
- 大部分的工作都與建立新的 **AsyncPackage**相同。 遵循上述的步驟1到5。 您也需要特別注意下列建議：
+ 大部分的工作都與建立新的 **AsyncPackage** 相同。 遵循上述的步驟1到5。 您也需要特別注意下列建議：
 
 1. 請記得移除 `Initialize` 套件中的覆寫。
 
@@ -83,7 +84,7 @@ public sealed class TestPackage : AsyncPackage
 3. 請勿太頻繁地線上程之間切換。 請嘗試將背景執行緒中可能發生的工作當地語系化，以縮短載入時間。
 
 ## <a name="querying-services-from-asyncpackage"></a>從 AsyncPackage 查詢服務
- **AsyncPackage**可能會或可能不會以非同步方式載入，視呼叫端而定。 例如，
+ **AsyncPackage** 可能會或可能不會以非同步方式載入，視呼叫端而定。 例如，
 
 - 如果名為 **GetService** 或 **QueryService** 的呼叫端 (同步 api) 或
 

@@ -1,5 +1,7 @@
 ---
 title: How to：提供服務 |Microsoft Docs
+description: VSPackage 可以提供其他 Vspackage 可以使用的服務。 瞭解 VSPackage 如何向 Visual Studio 註冊服務，並新增服務。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac89984539b0870d3921918a5a96b821297c009f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905771"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993727"
 ---
 # <a name="how-to-provide-a-service"></a>How to：提供服務
 VSPackage 可以提供其他 Vspackage 可以使用的服務。 若要提供服務，VSPackage 必須向 Visual Studio 註冊服務，然後加入服務。
@@ -29,9 +31,9 @@ VSPackage 可以提供其他 Vspackage 可以使用的服務。 若要提供服�
 
 ## <a name="implement-a-service"></a>執行服務
 
-1. 建立 VSIX 專案 **， (將**  >  **新**  >  **專案**新增至  >  **Visual c #** 擴充性  >  **Extensibility**  >  **VSIX 專案**) 。
+1. 建立 VSIX 專案 **， (將**  >  **新**  >  **專案** 新增至  >  **Visual c #** 擴充性  >    >  **VSIX 專案**) 。
 
-2. 將 VSPackage 新增至專案。 在**方案總管**中選取專案節點，然後按一下 [**加入**  >  **新專案**  >  **Visual c # 專案**擴充性  >  **Extensibility**  >  **Visual Studio 封裝**]。
+2. 將 VSPackage 新增至專案。 在 **方案總管** 中選取專案節點，然後按一下 [**加入**  >  **新專案**  >  **Visual c # 專案** 擴充性  >    >  **Visual Studio 封裝**]。
 
 3. 若要執行服務，您必須建立三種類型：
 
@@ -76,7 +78,7 @@ VSPackage 可以提供其他 Vspackage 可以使用的服務。 若要提供服�
 
 ### <a name="register-a-service"></a>註冊服務
 
-1. 若要註冊服務，請將加入 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> 至提供服務的 VSPackage。 請看以下範例：
+1. 若要註冊服務，請將加入 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> 至提供服務的 VSPackage。 範例如下：
 
     ```csharp
     [ProvideService(typeof(SMyService))]

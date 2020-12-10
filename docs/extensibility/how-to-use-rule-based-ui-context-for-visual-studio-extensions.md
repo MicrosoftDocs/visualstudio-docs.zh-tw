@@ -1,6 +1,7 @@
 ---
 title: 針對 Visual Studio 擴充功能使用以規則為基礎的 UI 內容
 titleSuffix: ''
+description: 瞭解如何使用以規則為基礎的 UI 內容，可讓延伸模組作者定義啟用 UI 內容和載入 Vspackage 時的條件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc24fe3f5b27b3c92f0629ed378c1a97c820cd0a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 41b804d3f7697890773b4b6888bcffa108b7a11b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037103"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993454"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何：針對 Visual Studio 擴充功能使用以規則為基礎的 UI 內容
 
@@ -82,7 +83,7 @@ Visual Studio 可在啟用特定已知的時載入 Vspackage <xref:Microsoft.Vis
    <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    現在，只有在 [方案 explorer] 中選取的專案是 *.config*檔案，而且在選取其中一個命令之前，將不會載入* \* .config*檔案的內容功能表命令。
+    現在，只有在 [方案 explorer] 中選取的專案是 *.config* 檔案，而且在選取其中一個命令之前，將不會載入 *\* .config* 檔案的內容功能表命令。
 
    接下來，請使用偵錯工具來確認只有在預期的情況下才會載入封裝。 若要 debug TestPackage：
 
@@ -92,7 +93,7 @@ Visual Studio 可在啟用特定已知的時載入 Vspackage <xref:Microsoft.Vis
 
 7. 建立專案或開啟一個專案。
 
-8. 選取副檔名不是 *.config*的任何檔案。不應點擊中斷點。
+8. 選取副檔名不是 *.config* 的任何檔案。不應點擊中斷點。
 
 9. 選取 *App.Config* 檔案。
 

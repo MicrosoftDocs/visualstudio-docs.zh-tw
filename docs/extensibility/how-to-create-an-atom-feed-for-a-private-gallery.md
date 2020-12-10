@@ -1,5 +1,7 @@
 ---
 title: 如何：建立私用元件庫的 Atom 摘要 |Microsoft Docs
+description: 您可以建立 Atom (RSS) 摘要至包含擴充功能的內部網路位置，並將摘要新增至擴充功能和更新作為私用資源庫。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 269161e831fdb176dbfea844e951597efb467312
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 833d75d7dfd18e863664e6d3d17d65a4e08b4d77
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905855"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994143"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何：建立私用元件庫的 Atom 摘要
 您可以建立 Atom (RSS) 摘要至包含擴充功能的內部網路位置，並將摘要新增至 **擴充功能和更新** 作為私用資源庫。 如需詳細資訊，請參閱私用資源 [庫](../extensibility/private-galleries.md)。
@@ -24,9 +26,9 @@ ms.locfileid: "85905855"
 ## <a name="create-an-atom-feed"></a>建立 Atom 摘要
  若要建立 Atom 摘要做為私用資源庫，您必須先將擴充功能 (*.vsix* 檔) 至資料夾。 您可以視需要將它們組織成子資料夾。 您也將需要下列資源：
 
-- *atom.xml*檔案，讓擴充功能可作為私用資源庫。 如需有關如何將 *atom.xml* 檔案連接到 **擴充功能和更新**的詳細資訊，請參閱私用資源 [庫](../extensibility/private-galleries.md)。
+- *atom.xml* 檔案，讓擴充功能可作為私用資源庫。 如需有關如何將 *atom.xml* 檔案連接到 **擴充功能和更新** 的詳細資訊，請參閱私用資源 [庫](../extensibility/private-galleries.md)。
 
-- 包含從擴充功能解壓縮之任何影像檔案的資料夾 (例如，螢幕擷取畫面) 。 *atom.xml*檔案包含這些映射的相對連結，讓它們可用於擴充功能**和更新**。
+- 包含從擴充功能解壓縮之任何影像檔案的資料夾 (例如，螢幕擷取畫面) 。 *atom.xml* 檔案包含這些映射的相對連結，讓它們可用於擴充功能 **和更新**。
 
   例如，假設您已將下列兩個延伸模組收集到資料夾中：
 
@@ -34,7 +36,7 @@ ms.locfileid: "85905855"
 
 - *SelectionHighlight*，這是用來反白顯示所選單字之所有實例的工具。
 
-  *atom.xml*檔案的內容會類似下列範例：
+  *atom.xml* 檔案的內容會類似下列範例：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

@@ -1,5 +1,7 @@
 ---
 title: 部署自訂起始頁 |Microsoft Docs
+description: 瞭解如何使用 VSIX 部署來部署自訂起始頁，或將檔案複製到目的電腦上的正確位置。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 210b4589c0e2165af537c3fa9129affb06197e9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76c2fc23a2b76b48152a4d3d44d687f165abf106
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712233"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993883"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自訂起始頁
 
@@ -36,7 +38,7 @@ ms.locfileid: "80712233"
 您可以使用 [ **擴充管理員** ] 或從網站下載起始頁專案範本，來取得該範本。
 
 ## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>不使用起始頁專案範本進行 VSIX 部署
- 成功的 VSIX 部署需要將擴充功能安裝在 VSIX 登錄程式和 **延伸模組管理員**所能辨識的資料夾中。 由於起始頁專案範本已指定正確的資料夾，因此當您想要封裝 VSIX 部署的擴充功能時，建議您使用它。 但是，如果您無法使用範本，您可以在不使用範本的情況下建立 VSIX 部署。
+ 成功的 VSIX 部署需要將擴充功能安裝在 VSIX 登錄程式和 **延伸模組管理員** 所能辨識的資料夾中。 由於起始頁專案範本已指定正確的資料夾，因此當您想要封裝 VSIX 部署的擴充功能時，建議您使用它。 但是，如果您無法使用範本，您可以在不使用範本的情況下建立 VSIX 部署。
 
  若要在不使用起始頁專案範本的情況下建立 VSIX 部署，請先使用下列兩種方式之一來建立起始頁的 *.vsix* 檔案：
 
@@ -48,7 +50,7 @@ ms.locfileid: "80712233"
 
    2. 在 Windows 檔案總管中，以滑鼠右鍵按一下包含這兩個 XML 檔案的資料夾，按一下 [ **傳送到**]，然後按一下 [壓縮的 (壓縮) 資料夾]。 將產生的 *.zip* 檔案重新命名為 *檔案名 .Vsix*，其中 filename 是安裝套件之可轉散發檔案的名稱。
 
-為了讓 Visual Studio 辨識起始頁， `Content Element` VSIX 資訊清單的必須包含將 `CustomExtension Element` `Type` 屬性設為的 `"StartPage"` 。 使用 VSIX 部署安裝的起始頁延伸，會顯示在 [**啟動**選項] 頁面上的 [**自訂起始頁**] 清單中，顯示為 **[已安裝的延伸模組]** *延伸模組名稱*。
+為了讓 Visual Studio 辨識起始頁， `Content Element` VSIX 資訊清單的必須包含將 `CustomExtension Element` `Type` 屬性設為的 `"StartPage"` 。 使用 VSIX 部署安裝的起始頁延伸，會顯示在 [**啟動** 選項] 頁面上的 [**自訂起始頁**] 清單中，顯示為 **[已安裝的延伸模組]** *延伸模組名稱*。
 
 如果您的起始頁封裝包含元件，則必須新增系結路徑註冊，以便在 Visual Studio 啟動時可以使用這些元件。 若要這樣做，請確定您的套件包含具有下列資訊的 *.pkgdef* 檔案。
 
@@ -58,9 +60,9 @@ ms.locfileid: "80712233"
 ```
 
 ### <a name="vsix-deployment-for-all-users"></a>適用于所有使用者的 VSIX 部署
- 根據預設，部署在 VSIX 套件中的延伸模組只會針對目前的使用者進行安裝。 您可以藉由建立所有使用者部署，為目的電腦的所有使用者建立起始頁安裝。
+ 根據預設，部署在 VSIX 套件中的延伸模組只會針對目前的使用者進行安裝。 您可以建立 All-Users 部署，為目的電腦的所有使用者建立起始頁安裝。
 
-### <a name="to-create-an-all-users-deployment"></a>建立所有使用者部署
+### <a name="to-create-an-all-users-deployment"></a>建立 All-Users 部署
 
 1. 在程式碼視圖中開啟 *extension.vsixmanifest* 檔案。
 
@@ -74,7 +76,7 @@ ms.locfileid: "80712233"
 
 3. 開啟 *.pkgdef* 檔案。
 
-4. 藉由新增下列程式來修改 *.pkgdef* ，以設定 HKLM 底下的預設起始頁，其中*MyStartPage*是包含起始頁的 *.xaml 檔案名。*
+4. 藉由新增下列程式來修改 *.pkgdef* ，以設定 HKLM 底下的預設起始頁，其中 *MyStartPage* 是包含起始頁的 *.xaml 檔案名。*
 
      [$RootKey $ \StartPage\Default]
 
@@ -83,7 +85,7 @@ ms.locfileid: "80712233"
      這會告訴 Visual Studio 查看新的起始頁位置。
 
 ## <a name="file-copy-deployment"></a>檔案複製部署
- 您不需要建立 *.vsix* 檔案來部署自訂起始頁。 相反地，您可以將標記和支援檔案直接複製到使用者的<em>\StartPages \* 資料夾中。[啟動選項] 頁面上的 [*自訂起始頁</em>* ] 清單會列出該資料夾中的每個 *.xaml*檔案，以及路徑，例如 *%USERPROFILE%\My Documents\Visual Studio {version} \StartPages \\ {file Name} .xaml*. **Startup** 如果您的起始頁包含私用元件的參考，您必須複製這些元件，並將其貼到 * \PrivateAssemblies \* 資料夾中。
+ 您不需要建立 *.vsix* 檔案來部署自訂起始頁。 相反地，您可以將標記和支援檔案直接複製到使用者的 <em>\StartPages \* 資料夾中。[啟動選項] 頁面上的 [*自訂起始頁</em>* ] 清單會列出該資料夾中的每個 *.xaml* 檔案，以及路徑，例如 *%USERPROFILE%\My Documents\Visual Studio {version} \StartPages \\ {file Name} .xaml*.  如果您的起始頁包含私用元件的參考，您必須複製這些元件，並將其貼到 * \PrivateAssemblies \* 資料夾中。
 
  若要散發您所建立的起始頁，而不將它封裝在 *.vsix* 檔案中，建議您使用基本的檔案複寫原則，例如批次腳本，或任何其他可讓您將檔案放在必要目錄中的部署技術。
 
@@ -91,9 +93,9 @@ ms.locfileid: "80712233"
 
 1. 複製包含起始頁標記的 *.xaml* 檔案，連同元件以外的任何支援檔案，然後將它們貼到使用者的 * \StartPages \* 資料夾中。
 
-2. 如果起始頁需要元件，請複製並貼上 *。 \\{Visual Studio 安裝資料夾} \Common7\IDE\PrivateAssemblies \\ *。
+2. 如果起始頁需要元件，請複製並貼上 *。 \\{Visual Studio 安裝資料夾} \Common7\IDE\PrivateAssemblies \\*。
 
-3. 在 [**啟動**選項] 頁面的 [**自訂起始頁**] 清單中，選取新的起始頁。 如需詳細資訊，請參閱 [自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)。
+3. 在 [**啟動** 選項] 頁面的 [**自訂起始頁**] 清單中，選取新的起始頁。 如需詳細資訊，請參閱 [自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)。
 
 ## <a name="see-also"></a>另請參閱
 

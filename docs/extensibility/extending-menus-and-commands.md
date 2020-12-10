@@ -1,5 +1,7 @@
 ---
 title: 擴充功能表和命令 |Microsoft Docs
+description: 瞭解可將動作和程式新增至 Visual Studio 的命令。 VSPackage 專案範本會顯示如何執行非常基本的命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +14,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c344d996c70012ef1516fa2bebe52394739bea35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d99b1b0f5ba0f80af3aadcff0404357b57fbe265
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768586"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994598"
 ---
 # <a name="extend-menus-and-commands"></a>擴充功能表和命令
 命令是您將動作和進程新增至 Visual Studio 的方式。 在大部分的情況下，命令會顯示在功能表或工具列上。 VSPackage 專案範本會顯示如何執行非常基本的命令。 如果稍微長一點，但仍有基本的執行，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
 
  如需有關 Visual Studio 命令、功能表和工具列的詳細資訊，請參閱 [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。
 
- 命令、功能表和工具列是在 VSPackage 專案的 *.vsct* 檔案中定義的。 您可以在[vspackage 加入使用者介面元素的方式](../extensibility/internals/how-vspackages-add-user-interface-elements.md)中，找到 Visual Studio IDE 和 *.vsct*檔案的相關資訊。
+ 命令、功能表和工具列是在 VSPackage 專案的 *.vsct* 檔案中定義的。 您可以在 [vspackage 加入使用者介面元素的方式](../extensibility/internals/how-vspackages-add-user-interface-elements.md)中，找到 Visual Studio IDE 和 *.vsct* 檔案的相關資訊。
 
  下列主題說明如何新增不同類型的命令、功能表和工具列。
 

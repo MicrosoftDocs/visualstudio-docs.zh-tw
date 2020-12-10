@@ -1,5 +1,7 @@
 ---
 title: 擴充方案總管篩選準則 |Microsoft Docs
+description: 瞭解如何延伸方案總管篩選功能，以顯示或隱藏 Visual Studio SDK 中的不同檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,22 +13,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af0824edd4188481bec8c0703d71043354f5dbcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde3377582c3bac0c27371e25f28e5151d641db1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711564"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994559"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>擴充方案總管篩選
-您可以擴充 **方案總管** 篩選功能，以顯示或隱藏不同的檔案。 例如，您可以建立只在 **方案總管**中顯示 c # class factory 檔案的篩選準則，如本逐步解說所示範。
+您可以擴充 **方案總管** 篩選功能，以顯示或隱藏不同的檔案。 例如，您可以建立只在 **方案總管** 中顯示 c # class factory 檔案的篩選準則，如本逐步解說所示範。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ### <a name="create-a-visual-studio-package-project"></a>建立 Visual Studio 套件專案
 
-1. 建立名為的 VSIX 專案 `FileFilter` 。 加入名為 **FileFilter**的自訂命令專案範本。 如需詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
+1. 建立名為的 VSIX 專案 `FileFilter` 。 加入名為 **FileFilter** 的自訂命令專案範本。 如需詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
 
 2. 加入和的參考 `System.ComponentModel.Composition` `Microsoft.VisualStudio.Utilities` 。
 
@@ -65,13 +67,13 @@ ms.locfileid: "80711564"
     public const int FileFilterId = 0x100;
     ```
 
-2. 將類別檔案加入至名為 *FileNameFilter.cs*的 FileFilter 專案。
+2. 將類別檔案加入至名為 *FileNameFilter.cs* 的 FileFilter 專案。
 
 3. 將空的命名空間和空白類別取代為下列程式碼。
 
      `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)`方法會使用包含方案之根的集合 (`rootItems`) ，並傳回要包含在篩選中的專案集合。
 
-     `ShouldIncludeInFilter`方法會根據您指定的條件，篩選**方案總管**階層中的專案。
+     `ShouldIncludeInFilter`方法會根據您指定的條件，篩選 **方案總管** 階層中的專案。
 
     ```csharp
     using System;
@@ -158,7 +160,7 @@ ms.locfileid: "80711564"
 
     ```
 
-4. 在 *FileFilter.cs*中，從 FileFilter 的函式移除命令放置和處理常式代碼。 結果看起來應該像這樣：
+4. 在 *FileFilter.cs* 中，從 FileFilter 的函式移除命令放置和處理常式代碼。 結果看起來應該像這樣：
 
     ```csharp
     private FileFilter(Package package)
@@ -174,7 +176,7 @@ ms.locfileid: "80711564"
 
      也請移除 `ShowMessageBox()` 方法。
 
-5. 在 *FileFilterPackage.cs*中，將方法中的程式碼取代為下列程式碼 `Initialize()` ：
+5. 在 *FileFilterPackage.cs* 中，將方法中的程式碼取代為下列程式碼 `Initialize()` ：
 
     ```csharp
     protected override void Initialize()
@@ -192,4 +194,4 @@ ms.locfileid: "80711564"
 
 3. 尋找您在 **方案總管** 工具列上新增的按鈕。 它應該是左邊的第四個按鈕。
 
-4. 當您按一下按鈕時，應該篩選出所有檔案，而且您應該會看到 **所有的專案都已從 view 篩選出來。** 在 **方案總管**中。
+4. 當您按一下按鈕時，應該篩選出所有檔案，而且您應該會看到 **所有的專案都已從 view 篩選出來。** 在 **方案總管** 中。

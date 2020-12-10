@@ -1,5 +1,7 @@
 ---
 title: 如何：取得服務 |Microsoft Docs
+description: 瞭解如何取得 Visual Studio 服務來存取不同的功能。 您可以使用 VSPackage 取得大部分的服務。
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a401103112096a1089b59ba3733d19480f93e891
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a8f97900f1d400f3208a24ccc45ff9bbd774aeb
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905832"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994065"
 ---
 # <a name="how-to-get-a-service"></a>How to：取得服務
 
@@ -29,9 +31,9 @@ ms.locfileid: "85905832"
 
 1. 每個 Visual Studio 擴充功能都會從 VSIX 部署專案開始，其中包含延伸模組資產。 建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名為的 VSIX 專案 `GetServiceExtension` 。 您可以藉由搜尋 "vsix"，在 [ **新增專案** ] 對話方塊中找到 VSIX 專案範本。
 
-2. 現在，新增名為 **GetServiceCommand**的自訂命令專案範本。 在 [**加入新專案**] 對話方塊中，移至**Visual c #** 擴充性，  >  **Extensibility**然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *GetServiceCommand.cs*。 如需如何建立自訂命令的詳細資訊，請[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能
+2. 現在，新增名為 **GetServiceCommand** 的自訂命令專案範本。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *GetServiceCommand.cs*。 如需如何建立自訂命令的詳細資訊，請[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能
 
-3. 在 *GetServiceCommand.cs*中，移除方法的主體 `MenuItemCommand` 並加入下列程式碼：
+3. 在 *GetServiceCommand.cs* 中，移除方法的主體 `MenuItemCommand` 並加入下列程式碼：
 
    ```csharp
    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -70,7 +72,7 @@ DTE 物件 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> 會執行�
 以下是從 DTE 物件取得服務的方式。
 
 ```csharp
-// Start with the DTE object, for example: 
+// Start with the DTE object, for example: 
 // using EnvDTE;
 // DTE dte = (DTE)GetService(typeof(DTE));
 

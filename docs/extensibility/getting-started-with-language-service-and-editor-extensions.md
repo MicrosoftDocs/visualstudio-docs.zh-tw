@@ -1,5 +1,6 @@
 ---
 title: 開始使用語言服務及編輯器擴充功能
+description: 瞭解如何將語言服務功能加入至任何內容類型，以及自訂 Visual Studio 編輯器的外觀和行為。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55d9f018324c32a8b39c96037058593cebf52bc2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 471acaef0145b3bf1a73925b42e17a6343439ea2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037760"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994390"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>開始使用語言服務及編輯器擴充功能
 

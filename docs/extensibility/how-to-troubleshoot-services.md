@@ -1,5 +1,7 @@
 ---
 title: 如何：針對服務進行疑難排解 |Microsoft Docs
+description: 瞭解如何疑難排解當您嘗試在 Visual Studio SDK 中取得服務時可能發生的幾個常見問題。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe538a7efd884ef87ba815a6300dfa80a94dc3b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234948"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993688"
 ---
 # <a name="how-to-troubleshoot-services"></a>如何：針對服務進行疑難排解
 當您嘗試取得服務時，可能會發生幾個常見問題：

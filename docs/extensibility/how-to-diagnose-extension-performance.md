@@ -1,5 +1,7 @@
 ---
 title: 如何：診斷延伸模組效能 |Microsoft Docs
+description: Visual Studio 通知較慢擴充功能的使用者。 瞭解如何計算擴充功能的影響，以及如何在本機分析擴充功能的影響。
+ms.custom: SEO-VS-2020
 ms.date: 11/08/2016
 ms.topic: how-to
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
@@ -8,12 +10,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 542d8a6d6d90091aa7a800ef18f847fea6b1a81c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03721f2aedd231dd9d4c4edaadf5eeb3a89389c2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905913"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994195"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>測量擴充功能對啟動的影響
 
@@ -160,7 +162,7 @@ PerfView 有詳細的指引，說明如何在其自己的 [說明] 功能表下�
 1. 將 **GroupPats** 設定為空白文字，以移除依預設新增的任何群組。
 2. 將 **IncPats** 設定為包含部分元件名稱和啟動執行緒，以及現有的進程篩選。 在此情況下，它應該是 **devenv;啟動執行緒;MakeVsSlowExtension**。
 
-現在，此視圖只會顯示與延伸模組相關之元件的相關成本。 在此觀點中，啟動執行緒的 **Inc (內含成本) ** 資料行下所列的任何時間，都會與我們篩選的延伸模組相關，並會影響啟動。
+現在，此視圖只會顯示與延伸模組相關之元件的相關成本。 在此觀點中，啟動執行緒的 **Inc (內含成本)** 資料行下所列的任何時間，都會與我們篩選的延伸模組相關，並會影響啟動。
 
 在上述範例中，有一些有趣的呼叫堆疊會是：
 
