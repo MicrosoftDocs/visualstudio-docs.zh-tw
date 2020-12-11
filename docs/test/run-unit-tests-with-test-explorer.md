@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3633f3084b875974adac17fc27e7ec7a695ed91
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
+ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996379"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098523"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -234,7 +234,16 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 
 ![播放清單 xml 檔案](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 
-如果您想要建立特性的播放清單，請使用下列格式。 請確定您的名稱與之間有一個空格 `TestCategory` `[Value]` 。
+如果您想要建立特性的播放清單，請使用下列適用于 MSTest 的格式。
+```xml
+<Playlist Version="2.0">
+    <Rule Name="Includes" Match="Any">
+        <Property Name="Trait" Value="SchemaUpdateBasic" />
+    </Rule>
+</Playlist>
+```
+
+針對 xUnit，請使用下列格式。 請確定您的名稱與之間有一個空格 `TestCategory` `[Value]` 。
 ```xml
 <Playlist Version="2.0">
   <Rule Name="Includes" Match="Any">

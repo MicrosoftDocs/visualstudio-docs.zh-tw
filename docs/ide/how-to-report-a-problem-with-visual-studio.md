@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
+ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211171"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97050819"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>如何回報 Visual Studio 或 Visual Studio 安裝程式的問題
 
@@ -23,8 +23,8 @@ ms.locfileid: "91211171"
 
 您可以從 Visual Studio 或其安裝程式報告問題。 內建的意見反應工具可讓您輕鬆地新增診斷資訊，以協助 Visual Studio 小組診斷和修正問題。 以下是回報問題的步驟。
 
-1. **在 Visual Studio 中**，選取右上角的意見反應圖示，然後選取 [回報問題]。 您也可以從功能表中存取意見反應工具，**協助**  >  **傳送意見**反應回報  >  **問題**。
-![Visual Studio 開發人員社群上的回報問題彈出視窗](media/feedback-button.png) 如果您無法安裝 Visual Studio 或無法在 Visual Studio 中存取意見反應工具，您也可以改為在 **Visual Studio 安裝程式**中回報問題。  在安裝程式中，選取右上角的意見反應圖示，然後選取 [回報問題]。
+1. **在 Visual Studio 中**，選取右上角的意見反應圖示，然後選取 [回報問題]。 您也可以從功能表中存取意見反應工具，**協助**  >  **傳送意見** 反應回報  >  **問題**。
+![Visual Studio 開發人員社群上的回報問題彈出視窗](media/feedback-button.png) 如果您無法安裝 Visual Studio 或無法在 Visual Studio 中存取意見反應工具，您也可以改為在 **Visual Studio 安裝程式** 中回報問題。  在安裝程式中，選取右上角的意見反應圖示，然後選取 [回報問題]。
 ![Visual Studio Developer Community 上的回報問題快顯](media/installer.png)
 
 1. 按一下 [回報 **問題** ] 會開啟您的預設瀏覽器，並使用您用來登入的相同帳戶將您登入 Visual Studio
@@ -57,7 +57,7 @@ ms.locfileid: "91211171"
 
 5. 如果您認為附加的檔案可協助診斷問題，請檢查這些檔案並上傳其他檔案。
 
-    ![附加 ](../ide/media/feedback-attachments.png) *的檔案只有 Microsoft 工程師可以看到附加的*檔案
+    ![附加 ](../ide/media/feedback-attachments.png) *的檔案只有 Microsoft 工程師可以看到附加的* 檔案
 
 6. 最後一個步驟是按 [ **提交** ] 按鈕。 提交報表會將它直接傳送到內部 Visual Studio bug 報告系統，以等候分級。
 
@@ -65,7 +65,7 @@ ms.locfileid: "91211171"
 
 當問題遺失重要資訊時，我們會指派 **需要更多的資訊** 狀態。 我們會根據所需的特定資訊對問題進行批註，而您將會收到電子郵件通知。 如果我們未在七天內收到資訊，則會傳送提醒給您。 之後，我們會在閒置14天之後關閉票證。
 
-1. 遵循電子郵件中的連結至問題報告，或移至我的意見反應，以查看 [ **需要更多資訊** ] 狀態中的所有報表。
+1. 遵循電子郵件中的連結至問題報告，或移至首頁以查看 [ **需要更多資訊** ] 狀態中的所有報表。
 
     ![我的意見反應](../ide/media/feedback-my-feedback.png)
 
