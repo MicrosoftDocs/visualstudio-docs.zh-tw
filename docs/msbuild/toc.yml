@@ -1,7 +1,6 @@
 - name: MSBuild
+  href: msbuild.md
   items:
-    - name: MSBuild
-      href: msbuild.md
     - name: MSBuild 16.0 的新功能
       href: whats-new-msbuild-16-0.md
     - name: MSBuild 15.0 的新功能
