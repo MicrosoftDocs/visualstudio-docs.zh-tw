@@ -1,5 +1,7 @@
 ---
 title: 匯出和儲存 code map
+description: 瞭解如何將 code map 儲存為 Visual Studio 專案的一部分、映射或 XPS 檔案。
+ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7f72010623d20e79a327877a512f0b7352bac5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9898b720e51c2750b67054d1f095200372f426da
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542567"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363766"
 ---
 # <a name="share-code-maps"></a>共用 Code Map
 
@@ -20,11 +22,11 @@ ms.locfileid: "85542567"
 
 ## <a name="share-a-code-map-with-other-visual-studio-users"></a>與其他 Visual Studio 使用者共用 code map
 
-使用 [檔案] **** 功能表以儲存對應。
+使用 [檔案]  功能表以儲存對應。
 
 -或-
 
-若要將地圖儲存為特定專案的一部分，請在 [對應] 工具列上選擇 [**共用**Move]，然後  >  ** \<CodeMapName> **選擇您要儲存對應的專案。
+若要將地圖儲存為特定專案的一部分，請在 [對應] 工具列上選擇 [**共用** Move]，然後  >  **\<CodeMapName>** 選擇您要儲存對應的專案。
 
 ![將對應移至其他專案](../modeling/media/codemapsmovemapmenu.png)
 
@@ -43,7 +45,7 @@ Visual Studio 會將對應儲存為 *.dgml* 檔案，您可以與 Visual Studio 
 
 當您將 code map 匯出為影像時，您可以將它複製到其他應用程式，例如 Microsoft Word 或 PowerPoint。
 
-1. 在 code map 工具列上，選擇**Share**[  >  **以影像形式共用電子郵件**] 或 [**複製影像**]。
+1. 在 code map 工具列上，選擇[  >  **以影像形式共用電子郵件**] 或 [**複製影像**]。
 
 2. 將影像貼入另一個應用程式中。
 
@@ -51,12 +53,12 @@ Visual Studio 會將對應儲存為 *.dgml* 檔案，您可以與 Visual Studio 
 
 當您將 code map 匯出為 XPS 檔案時，您可以在 XML 或 XAML 檢視器（例如 Internet Explorer）中看到它。
 
-1. 在 code map 工具列上，選擇**Share**[  >  **以便攜 xps 形式共用電子郵件**] 或 [**另存為便攜 xps**]。
+1. 在 code map 工具列上，選擇[  >  **以便攜 xps 形式共用電子郵件**] 或 [**另存為便攜 xps**]。
 
 2. 瀏覽至儲存檔案的位置。
 
-3. 為 Code Map 命名。 確定 [檔 **類型** ] 方塊設定為 [xps 檔案 ** (.xps \*) **。 選擇 [儲存]  。
+3. 為 Code Map 命名。 確定 [檔 **類型** ] 方塊設定為 [xps 檔案 **(.xps \*)**。 選擇 [儲存]  。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 code map 對應相依性](../modeling/map-dependencies-across-your-solutions.md)

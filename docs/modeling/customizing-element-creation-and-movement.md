@@ -1,5 +1,7 @@
 ---
 title: 自訂項目的建立和移動
+description: 瞭解如何從 [工具箱] 或在 [貼上] 或 [移動] 作業中，允許將專案拖曳至另一個專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a94f1e3321d846578ea42c69e50d48713ff618fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547260"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363116"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 
@@ -50,13 +52,13 @@ EMD 的責任是決定物件或物件群組如何合併到模型中的特定位�
 
 ![DSL&#45;EMD&#95;詳細資料](../modeling/media/dsl-emd_details.png)
 
-**索引類別**是專案的網域類別，可以合併到接收類別的成員。 此 EMD 也會合並索引類別的子類別實例，除非您將 [ **套用至子類別** ] 設定為 [False]。
+**索引類別** 是專案的網域類別，可以合併到接收類別的成員。 此 EMD 也會合並索引類別的子類別實例，除非您將 [ **套用至子類別** ] 設定為 [False]。
 
 Merge 指示詞有兩種類型：
 
-- **Process Merge**指示詞會指定新元素應連結至樹狀結構的關聯性。
+- **Process Merge** 指示詞會指定新元素應連結至樹狀結構的關聯性。
 
-- **向前合併**指示詞會將新的專案重新導向至另一個接收元素，通常是父元素。
+- **向前合併** 指示詞會將新的專案重新導向至另一個接收元素，通常是父元素。
 
 您可以將自訂程式碼加入至 merge 指示詞：
 
@@ -87,7 +89,7 @@ Merge 指示詞有兩種類型：
 
 2. 若要讓使用者將元素合併到 `ExampleElement` 圖形上，請在網域類別中建立新的 EMD `ExampleElement` ：
 
-   1. 在 [ **DSL Explorer**] 中，展開 [ **網域類別**]。 以滑鼠右鍵按一下 `ExampleElement` ，然後按一下 [ **加入新元素合併**指示詞]。
+   1. 在 [ **DSL Explorer**] 中，展開 [ **網域類別**]。 以滑鼠右鍵按一下 `ExampleElement` ，然後按一下 [ **加入新元素合併** 指示詞]。
 
    2. 請確定 [ **DSL 詳細資料** ] 視窗已開啟，讓您可以查看新 EMD 的詳細資料。  (功能表： **查看**、 **其他視窗**、 **DSL 詳細資料**。 ) 
 
@@ -151,7 +153,7 @@ Merge 指示詞有兩種類型：
 
 1. 使用 **最基本的語言** 解決方案範本來建立 DSL。 開啟 DSL 定義圖表。
 
-2. 在 [DSL Explorer] 中，展開 [ **網域類別**]、[ `ExampleModel` **元素合併**指示詞]。 選取名為的 element merge 指示詞 `ExampleElement` 。
+2. 在 [DSL Explorer] 中，展開 [ **網域類別**]、[ `ExampleModel` **元素合併** 指示詞]。 選取名為的 element merge 指示詞 `ExampleElement` 。
 
      此 EMD 可控制使用者如何 `ExampleElement` 在模型中建立新的物件，例如從 [工具箱] 拖曳。
 
@@ -200,7 +202,7 @@ Merge 指示詞有兩種類型：
 
         - 從 [ **範例元素** ] 工具拖曳至圖表上。
 
-        - 在 **範例模型瀏覽器**中，以滑鼠右鍵按一下根節點，然後按一下 [ **加入新的範例元素**]。
+        - 在 **範例模型瀏覽器** 中，以滑鼠右鍵按一下根節點，然後按一下 [ **加入新的範例元素**]。
 
         - 複製並貼上圖表上的元素。
 
@@ -224,11 +226,11 @@ Merge 指示詞有兩種類型：
 
      例如，在以最基礎語言方案產生的 DSL 中，選取 `ExampleModel` 。
 
-3. 在 [**屬性**] 視窗中，Set 會產生衍生為**True**的**雙精度浮點數**。
+3. 在 [**屬性**] 視窗中，Set 會產生衍生為 **True** 的 **雙精度浮點數**。
 
 4. 重建方案。
 
-5. 檢查 **Dsl\Generated Files\DomainClasses.cs**的內容。 搜尋名為的方法 `MergeRelate` ，並檢查其內容。 這將協助您撰寫自己的版本。
+5. 檢查 **Dsl\Generated Files\DomainClasses.cs** 的內容。 搜尋名為的方法 `MergeRelate` ，並檢查其內容。 這將協助您撰寫自己的版本。
 
 6. 在新的程式碼檔案中，撰寫接收類別的部分類別，並覆寫 `MergeRelate` 方法。 請記得呼叫基底方法。 例如：
 
@@ -258,7 +260,7 @@ Merge 指示詞有兩種類型：
 
 ### <a name="to-write-custom-merge-code"></a>撰寫自訂的合併程式碼
 
-1. 在 **Dsl\Generated Code\DomainClasses.cs**中，檢查名為 `MergeRelate` 的方法。 這些方法會建立新元素與現有模型之間的連結。
+1. 在 **Dsl\Generated Code\DomainClasses.cs** 中，檢查名為 `MergeRelate` 的方法。 這些方法會建立新元素與現有模型之間的連結。
 
     此外，請檢查名為 `MergeDisconnect` 的方法。 這些方法會在刪除專案時，將其與模型取消連結。
 
@@ -268,7 +270,7 @@ Merge 指示詞有兩種類型：
 
 3. 重建方案。 因為產生的程式碼檔案將會從模型更新，所以需要比平常更長的時間。
 
-    將會出現錯誤訊息。 按兩下錯誤訊息，以查看產生的程式碼中的指示。 這些指示會要求您提供兩種方法： `MergeRelate` *YourDomainClass*和 `MergeDisconnect` *YourDomainClass*
+    將會出現錯誤訊息。 按兩下錯誤訊息，以查看產生的程式碼中的指示。 這些指示會要求您提供兩種方法： `MergeRelate` *YourDomainClass* 和 `MergeDisconnect` *YourDomainClass*
 
 4. 以個別的程式碼檔案，在部分類別定義中撰寫方法。 您先前檢查的範例應該會建議您需要的內容。
 
@@ -280,7 +282,7 @@ Merge 指示詞有兩種類型：
 
 例如，在使用「元件圖」範本建立的 DSL 中，埠會內嵌在元件中。 埠會顯示為元件圖形邊緣上的小圖形。 使用者藉由將 [埠] 工具拖曳至元件圖形來建立埠。 但是，使用者有時會錯誤地將埠工具拖曳到現有的埠，而不是元件，而作業會失敗。 當有數個現有的埠時，這是個很簡單的錯誤。 若要協助使用者避免這種麻煩，您可以允許將埠拖曳到現有的埠，但將動作重新導向至父元件。 此作業的運作方式就像是將目標元素設為元件一樣。
 
-您可以在元件模型方案中建立向前合併指示詞。 如果您編譯並執行原始解決方案，您應該會看到使用者可以從 [**工具箱**] 將任何數目的**輸入埠**或**輸出埠**專案拖曳至**元件**元素。 不過，他們無法將埠拖曳到現有的埠。 無法使用的指標會在未啟用這項移動時發出警示。 不過，您可以建立向前合併指示詞，讓在現有 **輸入埠** 上不小心卸載的埠轉送至 **元件** 專案。
+您可以在元件模型方案中建立向前合併指示詞。 如果您編譯並執行原始解決方案，您應該會看到使用者可以從 [**工具箱**] 將任何數目的 **輸入埠** 或 **輸出埠** 專案拖曳至 **元件** 元素。 不過，他們無法將埠拖曳到現有的埠。 無法使用的指標會在未啟用這項移動時發出警示。 不過，您可以建立向前合併指示詞，讓在現有 **輸入埠** 上不小心卸載的埠轉送至 **元件** 專案。
 
 ### <a name="to-create-a-forward-merge-directive"></a>若要建立向前合併指令詞
 
@@ -290,7 +292,7 @@ Merge 指示詞有兩種類型：
 
 3. 在 [ **DSL Explorer**] 中，展開 [ **網域類別**]。
 
-4. **ComponentPort**抽象網域類別是**InPort**和**OutPort**的基類。 以滑鼠右鍵按一下 [ **ComponentPort** ]，然後按一下 [ **加入新元素合併**指示詞]。
+4. **ComponentPort** 抽象網域類別是 **InPort** 和 **OutPort** 的基類。 以滑鼠右鍵按一下 [ **ComponentPort** ]，然後按一下 [ **加入新元素合併** 指示詞]。
 
     新的 [專案 **合併** 指示詞] 節點會出現在 [ **元素合併** 指示詞] 節點底下。
 
@@ -310,13 +312,13 @@ Merge 指示詞有兩種類型：
 
 10. 建置並執行解決方案。 Visual Studio 的新實例隨即出現。
 
-11. 在 **方案總管**中，開啟 mydsl。 [圖表] 和 [ **ComponentLanguage 工具箱** ] 隨即出現。
+11. 在 **方案總管** 中，開啟 mydsl。 [圖表] 和 [ **ComponentLanguage 工具箱** ] 隨即出現。
 
 12. 將 **輸入埠** 從 [ **工具箱** ] 拖曳到另一個 **輸入埠。** 接下來，將 **OutputPort** 拖曳至 **InputPort** ，然後拖曳到另一個 **OutputPort**。
 
-     您應該不會看到無法使用的指標，而且應該能夠將新的輸入埠放在現有的 **輸入埠** 上。 選取新的 **輸入埠** ，然後將它拖曳到 **元件**上的另一個點。
+     您應該不會看到無法使用的指標，而且應該能夠將新的輸入埠放在現有的 **輸入埠** 上。 選取新的 **輸入埠** ，然後將它拖曳到 **元件** 上的另一個點。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [自訂工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)

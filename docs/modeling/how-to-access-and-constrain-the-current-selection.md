@@ -1,5 +1,7 @@
 ---
 title: 如何：存取及限制目前的選取範圍
+description: 瞭解如何在您針對網域指定的語言撰寫命令或軌跡處理常式時，判斷使用者以滑鼠右鍵按一下的元素。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f5aaa106e00f9b10eb88892bcc978b92a01c79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ba656793b630dd55fc2ebc7242e5d45484b0f8e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545687"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363389"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>如何：存取及限制目前的選取範圍
 

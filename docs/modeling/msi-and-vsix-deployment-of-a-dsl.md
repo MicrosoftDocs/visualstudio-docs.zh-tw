@@ -1,5 +1,7 @@
 ---
 title: DSL 的 MSI 和 VSIX 部署
+description: 瞭解如何在您自己的電腦或其他電腦上安裝特定領域語言 (DSL) 。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d4de8d7560cb43115a30e29516e0e88b4d02d21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 623cbdcfaae6acd1889e265fecafec805e5a9440
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542612"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363129"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 您可以在自己的電腦或其他電腦上安裝特定領域語言。 必須已在目的電腦上安裝 Visual Studio。
@@ -33,19 +35,19 @@ ms.locfileid: "85542612"
 
 1. 找出您的 DSL 封裝專案所建立的 **.vsix** 檔案：
 
-   1. 在 **方案總管**中，以滑鼠右鍵按一下 **DslPackage** 專案，然後按一下 [ **開啟資料夾] 檔案總管**。
+   1. 在 **方案總管** 中，以滑鼠右鍵按一下 **DslPackage** 專案，然後按一下 [ **開啟資料夾] 檔案總管**。
 
-   2. 找出檔案**bin \\ \* \\ ** _yourproject。_**。DslPackage .vsix**
+   2. 找出檔案 **bin \\ \* \\** _yourproject。_**。DslPackage .vsix**
 
 2. 將 **.vsix** 檔複製到您要安裝 DSL 的目的電腦上。 這可以是您自己的電腦或其他電腦。
 
    - 目的電腦必須具有在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 執行時間支援 dsl 的其中一個版本。 如需詳細資訊，請參閱 [Visual Studio 的視覺效果 & 模型 SDK 支援版本](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)。
 
-   - 目的電腦必須具有 **DslPackage\source.extensions.manifest**中所指定的其中一個版本的 Visual Studio。
+   - 目的電腦必須具有 **DslPackage\source.extensions.manifest** 中所指定的其中一個版本的 Visual Studio。
 
 3. 在目的電腦上，按兩下 **.vsix** 檔案。
 
-    [Visual Studio 擴充功能安裝程式]**** 會隨即開啟並安裝擴充功能。
+    [Visual Studio 擴充功能安裝程式] 會隨即開啟並安裝擴充功能。
 
 4. 啟動或重新啟動 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]。
 
@@ -55,7 +57,7 @@ ms.locfileid: "85542612"
 
 1. 在 [ **工具** ] 功能表中選擇 [ **擴充功能和更新**]。
 
-2. 展開 [已安裝的擴充功能] ****。
+2. 展開 [已安裝的擴充功能] 。
 
 3. 選取用來定義 DSL 的延伸模組，然後按一下 [ **卸載**]。
 
@@ -92,21 +94,21 @@ ms.locfileid: "85542612"
 
        - 版本
 
-   - 按一下 [ **編輯器** ] 節點，然後在 [屬性視窗中，按一下 [ **圖示**]。 設定值以參考 **DslPackage\Resources**中的圖示檔，例如 **file .ico**
+   - 按一下 [ **編輯器** ] 節點，然後在 [屬性視窗中，按一下 [ **圖示**]。 設定值以參考 **DslPackage\Resources** 中的圖示檔，例如 **file .ico**
 
-   - 在 [ **組建** ] 功能表上，開啟 [ **Configuration Manager**]，然後選取您想要建立的設定，例如 [ **發行** ] 或 [ **調試**程式]。
+   - 在 [ **組建** ] 功能表上，開啟 [ **Configuration Manager**]，然後選取您想要建立的設定，例如 [ **發行** ] 或 [ **調試** 程式]。
 
 4. 移至 [視覺效果和模型 SDK 首頁](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)，然後從 [ **下載** ] 索引標籤下載 **CreateMsiSetupProject.tt**。
 
 5. 將 **CreateMsiSetupProject.tt** 新增至您的 Dsl 專案。
 
-    Visual Studio 將會建立名為 **CreateMsiSetupProject. vdproj**的檔案。
+    Visual Studio 將會建立名為 **CreateMsiSetupProject. vdproj** 的檔案。
 
 6. 在 Windows 檔案總管中，將 Dsl \\ *. vdproj 複製到名為 Setup 的新資料夾。
 
      (您想要的話，您現在可以從 Dsl 專案中排除 CreateMsiSetupProject.tt。 ) 
 
-7. 在**方案總管**中，**將 \\ \* vdproj**新增為現有的專案。
+7. 在 **方案總管** 中，**將 \\ \* vdproj** 新增為現有的專案。
 
 8. 在 [ **專案** ] 功能表上，按一下 [專案相依性 **]**。
 

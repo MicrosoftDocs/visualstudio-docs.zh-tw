@@ -1,5 +1,7 @@
 ---
 title: 開始使用網域指定的語言
+description: 瞭解定義和使用特定領域語言的基本概念 (DSL) 建立 Visual Studio 的模型 SDK。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4761703610a87818cd1512f96530a0f865faf0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaab198edae66fc334e854ae1f47dae313dce76b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238539"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363480"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>特定領域語言的使用者入門
 
@@ -23,7 +25,7 @@ ms.locfileid: "88238539"
 
 如果您不熟悉 Dsl，建議您逐步執行 **DSL 工具實驗室**，您可以在此網站中找到： [視覺化和模型 SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
-## <a name="what-can-you-do-with-a-domain-specific-language"></a>您可以使用特定領域語言來做什麼？
+## <a name="what-can-you-do-with-a-domain-specific-language"></a>您可以使用 Domain-Specific 語言來做什麼？
 
 特定領域語言是一種標記法，通常是圖形化的，其設計目的是要用於特定用途。 相較之下，UML 等語言是一般用途。 在 DSL 中，您可以定義模型專案和其關聯性的類型，以及它們在螢幕上的呈現方式。
 
@@ -37,7 +39,7 @@ Dsl 的其中一個主要應用程式是產生程式碼、設定檔及其他成�
 
 本總覽的其餘部分是逐步解說，介紹在 Visual Studio 中建立和使用特定領域語言的基本作業。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要定義 DSL，您必須已安裝下列元件：
 
@@ -51,7 +53,7 @@ Dsl 的其中一個主要應用程式是產生程式碼、設定檔及其他成�
 
 ## <a name="create-a-dsl-solution"></a>建立 DSL 解決方案
 
-若要建立新的特定領域語言，您可以使用特定領域語言專案範本來建立新的 Visual Studio 方案。
+若要建立新的特定領域語言，您可以使用 Domain-Specific 語言專案範本來建立新的 Visual Studio 方案。
 
 1. 在 **[檔案]** 功能表上，指向 **[開新檔案]** ，然後按一下 **[專案]** 。
 
@@ -61,9 +63,9 @@ Dsl 的其中一個主要應用程式是產生程式碼、設定檔及其他成�
 
      ![[建立 DSL] 對話方塊](../modeling/media/create_dsldialog.png)
 
-4. 在 [ **名稱** ] 方塊中，輸入 **FamilyTree**。 按一下 [確定]  。
+4. 在 [ **名稱** ] 方塊中，輸入 **FamilyTree**。 按一下 [確定]。
 
-     **網域指定的語言嚮導**隨即開啟，並顯示範本 DSL 解決方案的清單。
+     **網域指定的語言嚮導** 隨即開啟，並顯示範本 DSL 解決方案的清單。
 
      按一下每個範本以查看描述。
 
@@ -88,7 +90,7 @@ Dsl 的其中一個主要應用程式是產生程式碼、設定檔及其他成�
 
 ![dsl 設計工具](../modeling/media/dsl_designer.png)
 
-此方案定義網域指定的語言。 如需詳細資訊，請參閱 [特定領域語言工具消費者介面的總覽](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)。
+此方案定義網域指定的語言。 如需詳細資訊，請參閱 [Domain-Specific 語言工具消費者介面的總覽](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)。
 
 ## <a name="the-important-parts-of-the-dsl-solution"></a>DSL 解決方案的重要部分
 
@@ -106,18 +108,18 @@ Dsl 的其中一個主要應用程式是產生程式碼、設定檔及其他成�
 
 ### <a name="to-experiment-with-the-dsl"></a>若要試驗 DSL
 
-1. 在**方案總管**工具列中，按一下 [**轉換所有範本**]。 這會從 Dsldefinition.dsl 檔重新產生大部分的原始程式碼。
+1. 在 **方案總管** 工具列中，按一下 [**轉換所有範本**]。 這會從 Dsldefinition.dsl 檔重新產生大部分的原始程式碼。
 
     > [!NOTE]
-    > 每當您變更 *dsldefinition.dsl 檔*時，您必須先按一下 [ **轉換所有範本** ]，然後再重建解決方案。 您可以自動化此步驟。 如需詳細資訊，請參閱 [如何自動轉換所有範本](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))。
+    > 每當您變更 *dsldefinition.dsl 檔* 時，您必須先按一下 [ **轉換所有範本** ]，然後再重建解決方案。 您可以自動化此步驟。 如需詳細資訊，請參閱 [如何自動轉換所有範本](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))。
 
-2. 按 **F5**，或在 [偵錯] **** 功能表上，按一下 [開始偵錯] ****。
+2. 按 **F5**，或在 [偵錯]  功能表上，按一下 [開始偵錯] 。
 
      DSL 會建立並安裝在 Visual Studio 的實驗實例中。
 
      Visual Studio 的實驗實例隨即啟動。 實驗性實例會從登錄的個別子樹取得其設定，其中 Visual Studio 的擴充功能會針對偵錯工具進行註冊。 Visual Studio 的一般實例無法存取在該處註冊的擴充功能。
 
-3. 在 Visual Studio 的實驗實例中，從**方案總管**開啟名為**Test**的模型檔案。
+3. 在 Visual Studio 的實驗實例中，從 **方案總管** 開啟名為 **Test** 的模型檔案。
 
      \- 或 -
 
@@ -141,7 +143,7 @@ Dsl 的其中一個主要應用程式是產生程式碼、設定檔及其他成�
 
 ### <a name="the-content-of-a-model"></a>模型的內容
 
-作為 DSL 實例之檔案的內容稱為 *模型*。 此模型包含元素之間的*模型*<em>專案和</em>*連結*。 DSL 定義會指定模型中可存在的模型專案和連結類型。 例如，在以最基礎語言範本建立的 DSL 中，有一種類型的模型專案，以及一種類型的連結。
+作為 DSL 實例之檔案的內容稱為 *模型*。 此模型包含元素之間的 *模型*<em>專案和</em>*連結*。 DSL 定義會指定模型中可存在的模型專案和連結類型。 例如，在以最基礎語言範本建立的 DSL 中，有一種類型的模型專案，以及一種類型的連結。
 
 DSL 定義可以指定如何在圖表上顯示模型。 您可以從各種不同的圖形和連接器樣式中選擇。 您可以指定某些圖形出現在其他圖形內。
 
@@ -169,7 +171,7 @@ DSL 定義可以指定如何在圖表上顯示模型。 您可以從各種不同
 
 2. 請確定每個 tt 檔中的檔案名參數都參考您用於實驗的模型檔案。 儲存 tt 檔。
 
-3. 在**方案總管**的工具列中，按一下 [**轉換所有範本**]。
+3. 在 **方案總管** 的工具列中，按一下 [**轉換所有範本**]。
 
      \- 或 -
 
@@ -180,7 +182,7 @@ DSL 定義可以指定如何在圖表上顯示模型。 您可以從各種不同
 > [!NOTE]
 > 當您變更 DSL 定義時，範例文字模板程式碼將無法運作，除非您加以更新。
 
-如需詳細資訊，請參閱 [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md) 及 [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
+如需詳細資訊，請參閱 [從 Domain-Specific 語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md) ，以及 [撰寫程式碼以自訂 Domain-Specific 語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
 
 ## <a name="customizing-the-dsl"></a>自訂 DSL
 
@@ -199,7 +201,7 @@ DSL 定義可以指定如何在圖表上顯示模型。 您可以從各種不同
 
 #### <a name="to-rename-domain-classes-relationships-and-tools"></a>若要重新命名網域類別、關聯性和工具
 
-1. 在 Dsldefinition.dsl 檔圖中，將 **examplemodel.store.customer** 重新命名為 **FamilyTreeModel**、 **ExampleElement** 為 **Person**、將 **目標** 設為 **父代**，並將 **來源** 重新命名為 **子**系。 您可以按一下每個標籤來變更它。
+1. 在 Dsldefinition.dsl 檔圖中，將 **examplemodel.store.customer** 重新命名為 **FamilyTreeModel**、 **ExampleElement** 為 **Person**、將 **目標** 設為 **父代**，並將 **來源** 重新命名為 **子** 系。 您可以按一下每個標籤來變更它。
 
      ![DSL 定義圖 &#45; 系列樹狀結構模型](../modeling/media/familyt_person.png)
 
@@ -209,7 +211,7 @@ DSL 定義可以指定如何在圖表上顯示模型。 您可以從各種不同
 
     2. 開啟屬性視窗並定位，讓您可以同時查看 DSL Explorer 和屬性。
 
-    3. 在 [DSL Explorer] 中，依序展開 [**編輯器** **]、[工具箱]** 索引標籤、 *\<your DSL>* 和**工具**
+    3. 在 [DSL Explorer] 中，依序展開 [**編輯器** **]、[工具箱]** 索引標籤、 *\<your DSL>* 和 **工具**
 
     4. 按一下 [ **ExampleElement**]。 這是用來建立元素的 [工具箱] 專案。
 
@@ -225,7 +227,7 @@ DSL 定義可以指定如何在圖表上顯示模型。 您可以從各種不同
 
     2. 在方案總管的工具列中，按一下 [ **轉換所有範本** ]。
 
-    3. 按下 F5。 等到 Visual Studio 的實驗實例出現為止。
+    3. 按 F5。 等到 Visual Studio 的實驗實例出現為止。
 
 4. 在 Visual Studio 實驗實例的偵錯工具中，開啟測試模型檔案。 從 [工具箱] 將專案拖曳至其上。 請注意，[DSL Explorer] 中的工具字幕和類型名稱已變更。
 
@@ -254,7 +256,7 @@ DSL 定義可以指定如何在圖表上顯示模型。 您可以從各種不同
 
    1. 遵循從 Person 網域類別延伸至圖表另一端的灰色線。 這是圖表元素對應。 它會將網域類別連結至 shape 類別。
 
-   2. 以滑鼠右鍵按一下這個圖形類別，指向 [ **加入**]，然後按一下 [ **文字**裝飾專案]。
+   2. 以滑鼠右鍵按一下這個圖形類別，指向 [ **加入**]，然後按一下 [ **文字** 裝飾專案]。
 
    3. 新增具有名稱的兩個裝飾專案，例如 **BirthDecorator** 和 **DeathDecorator**。
 
@@ -319,7 +321,7 @@ DSL 定義可以指定如何在圖表上顯示模型。 您可以從各種不同
 
     1. 按一下 [ **圖表專案對應** ] 工具，然後按一下 [城鎮網域] 類別，然後按一下 [TownShape] 圖形類別。
 
-    2. 在已選取地圖連接器的 [ **DSL 詳細資料**] 視窗的 [裝飾專案**對應**] 索引標籤中，核取 [NameDecorator]，並將 [**顯示] 屬性**
+    2. 在已選取地圖連接器的 [ **DSL 詳細資料**] 視窗的 [裝飾專案 **對應**] 索引標籤中，核取 [NameDecorator]，並將 [**顯示] 屬性**
 
 5. 建立連接器以顯示 Person 與城鎮之間的關聯性。
 
@@ -345,7 +347,7 @@ DSL 定義可以指定如何在圖表上顯示模型。 您可以從各種不同
 
     2. 設定新工具的 [名稱] 屬性。
 
-    3. 在 [ **ConnectionBuilder** ] 屬性中，選取包含 Person/城鎮關聯性名稱的產生器。
+    3. 在 [ **ConnectionBuilder** ] 屬性中，選取包含 Person-Town 關聯性名稱的 builder。
 
     4. 設定 [ **工具箱] 圖示**。
 
@@ -378,10 +380,10 @@ DSL 定義可以指定如何在圖表上顯示模型。 您可以從各種不同
 
     ```
 
-     當您儲存 * tt 檔案時，它會建立一個附屬檔案，其中包含人員及其 residences 的清單。 如需詳細資訊，請參閱 [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
+     當您儲存 * tt 檔案時，它會建立一個附屬檔案，其中包含人員及其 residences 的清單。 如需詳細資訊，請參閱 [從 Domain-Specific 語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
 
 ## <a name="validation-and-commands"></a>驗證和命令
- 您可以藉由新增驗證條件約束來進一步開發此 DSL。 這些條件約束是您可以定義的方法，可確保模型處於正確的狀態。 例如，您可以定義條件約束，以確定子女的出生日期晚于其父代的出生日期。 如果 DSL 使用者嘗試儲存會中斷任何條件約束的模型，驗證功能就會顯示警告。 如需詳細資訊，請參閱 [以網域指定的語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。
+ 您可以藉由新增驗證條件約束來進一步開發此 DSL。 這些條件約束是您可以定義的方法，可確保模型處於正確的狀態。 例如，您可以定義條件約束，以確定子女的出生日期晚于其父代的出生日期。 如果 DSL 使用者嘗試儲存會中斷任何條件約束的模型，驗證功能就會顯示警告。 如需詳細資訊，請參閱 [以 Domain-Specific 語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。
 
  您也可以定義使用者可以叫用的功能表命令。 命令可以修改模型。 它們也可以與 Visual Studio 和外部資源的其他模型互動。 如需詳細資訊，請參閱 [如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
@@ -407,7 +409,7 @@ DSL 定義可以指定如何在圖表上顯示模型。 您可以從各種不同
 
 2. 重建任何您仍要使用的實驗性 Dsl 或其他實驗性 Visual Studio 延伸模組。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)

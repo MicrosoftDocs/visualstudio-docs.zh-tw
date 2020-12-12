@@ -1,5 +1,7 @@
 ---
 title: 建立自訂 T4 文字範本指示詞處理器
+description: 瞭解文字模板轉換流程，以及如何建立自訂 T4 文字模板指示詞處理器。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +11,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70aa1853701ef671b7057ad698a0fb63334a1ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 283f2122c05a91a5e677293f59e3f6e02d43f63a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597174"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363418"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器
 
-*文字模板轉換*程式會將*文字模板*檔案作為輸入，並產生文字檔作為輸出。 *文字模板轉換引擎*會控制進程，而引擎會與文字模板轉換主機和一或多個文字模板指示詞*處理器*互動，以完成進程。 如需詳細資訊，請參閱 [文字模板轉換流程](../modeling/the-text-template-transformation-process.md)。
+*文字模板轉換* 程式會將 *文字模板* 檔案作為輸入，並產生文字檔作為輸出。 *文字模板轉換引擎* 會控制進程，而引擎會與文字模板轉換主機和一或多個文字模板指示詞 *處理器* 互動，以完成進程。 如需詳細資訊，請參閱 [文字模板轉換流程](../modeling/the-text-template-transformation-process.md)。
 
 若要建立自訂指示詞處理器，您可以建立繼承 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 或 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 的類別。
 
@@ -64,7 +66,7 @@ ms.locfileid: "75597174"
 
 - 如需詳細資訊，請參閱 [逐步解說：建立自訂](../modeling/walkthrough-creating-a-custom-directive-processor.md)指示詞處理器。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [部署自訂](../modeling/deploying-a-custom-directive-processor.md) 指示詞處理器說明如何註冊自訂指示詞處理器。
 - [逐步解說：建立自訂](../modeling/walkthrough-creating-a-custom-directive-processor.md) 指示詞處理器說明如何建立自訂指示詞處理器、如何註冊和測試指示詞處理器，以及如何將輸出檔格式化為 HTML。

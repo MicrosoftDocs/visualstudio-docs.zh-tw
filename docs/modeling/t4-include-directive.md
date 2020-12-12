@@ -1,5 +1,7 @@
 ---
 title: T4 包含指示詞
+description: '瞭解在 Visual Studio 的文字模板中，您可以使用 < # # > 指示詞，來包含另一個檔案中的文字 @include 。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1ee58c29be3c4dfb5e2148c54464a7a511d1839
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 825beee156c3de0e29e561817663c0f7731840dc
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591849"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363649"
 ---
 # <a name="t4-include-directive"></a>T4 包含指示詞
 

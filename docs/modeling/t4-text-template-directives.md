@@ -1,5 +1,7 @@
 ---
 title: T4 文字範本指示詞
+description: 瞭解 T4 測試範本指示詞，以及它們如何提供文字模板轉換引擎的指示。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ceb5139ff133a0005efafd5dc96f20e22b73cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ddad0010413ebe8e0a53096bb4d90b52050d26a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591823"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363597"
 ---
 # <a name="t4-text-template-directives"></a>T4 文字範本指示詞
 

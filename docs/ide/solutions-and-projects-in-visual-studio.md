@@ -2,7 +2,7 @@
 title: 方案和專案
 description: 瞭解 Visual Studio 專案和方案，並瞭解如何使用方案總管工具建立新專案。
 ms.custom: SEO-VS-2020
-ms.date: 06/26/2020
+ms.date: 12/11/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 949da02ac074e9740038fef7917655ca552a12f6
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 42250d4b60cf272f041fea6f44abd24f99645b93
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480703"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363454"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
@@ -55,10 +55,14 @@ Visual Studio 使用 [msbuild](../msbuild/msbuild.md) 在方案中建立每個�
 
 Visual Studio 會使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存解決方案的設定：
 
-|分機|名稱|描述|
+|分機|名稱|說明|
 |---------------|----------|-----------------|
 |.sln|Visual Studio 方案|將專案、專案項目和方案項目組織到方案中。|
 |.suo|方案使用者選項|儲存使用者層級設定和自訂項目，例如中斷點。|
+
+### <a name="solution-folder"></a>方案資料夾
+
+在此內容中，「解決方案資料夾」是一個僅在 **方案總管** 的虛擬資料夾，您可以在其中使用它來將方案中的專案分組。 如果您想要找出電腦上儲存專案的位置，請移至 [**工具**  >  **選項**  >  **專案和方案**  >  **位置**]。
 
 ## <a name="create-new-projects"></a>建立新專案
 
@@ -83,7 +87,7 @@ Visual Studio 會使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存解決方
 
 而且，若要查看方案總管中出現之部分圖示的清單，請參閱 [類別檢視和物件瀏覽器圖示](class-view-and-object-browser-icons.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [移植、移轉及升級專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

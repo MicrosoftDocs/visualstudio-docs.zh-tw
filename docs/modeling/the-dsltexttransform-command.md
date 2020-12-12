@@ -1,5 +1,7 @@
 ---
 title: DslTextTransform 命令
+description: 瞭解 DslTextTransform 是用來呼叫 TextTransform.exe 的腳本，並使用一般選項來執行它。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c01401eda8fb1bbe2bdcfc2950a51b968e98b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74f87f735f5ad6864082046327bc852d5d43fdb6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114911"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362713"
 ---
 # <a name="the-dsltexttransform-command"></a>DslTextTransform 命令
 DslTextTransform 是呼叫 TextTransform.exe 的腳本，並使用一般選項來執行它。 您可以使用 DslTextTransformation 將專案的夜間組建自動化 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 。 如需詳細資訊，請參閱 [使用 TextTransform 公用程式產生](../modeling/generating-files-with-the-texttransform-utility.md)檔案。

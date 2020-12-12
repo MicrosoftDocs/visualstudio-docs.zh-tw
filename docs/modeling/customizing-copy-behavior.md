@@ -1,5 +1,7 @@
 ---
 title: 自訂複製行為
+description: 瞭解在使用 Visual Studio 視覺效果和模型 SDK 建立的 DSL 中，您可以改變當使用者複製和貼上專案時所發生的情況。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b189d3dbd5c1872094b0c1be2a64eb2c02bf1e2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8eee81440c0dda7f193d3e37eab700ada3ff259f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547338"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363103"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 在特定領域語言 (DSL) 使用 Visual Studio 的視覺效果和模型 SDK 所建立，您可以改變當使用者複製和貼上專案時所發生的情況。
 
 ## <a name="standard-copy-and-paste-behavior"></a>標準複製和貼上行為
- 若要啟用複製，請在 [DSL Explorer] 中設定**編輯器**節點的 [**啟用複製貼**上] 屬性。
+ 若要啟用複製，請在 [DSL Explorer] 中設定 **編輯器** 節點的 [**啟用複製貼** 上] 屬性。
 
  根據預設，當使用者將項目複製到 [剪貼簿] 時，也會複製下列項目：
 
@@ -40,13 +42,13 @@ ms.locfileid: "85547338"
  如需使用程式碼自訂模型的詳細資訊，請參閱 [在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
  **啟用或停用複製、剪下和貼上。**
-在 [DSL Explorer] 中，設定**編輯器**節點的 [**啟用複製貼**上] 屬性。
+在 [DSL Explorer] 中，設定 **編輯器** 節點的 [**啟用複製貼** 上] 屬性。
 
  **將連結複製到相同的目標。** 例如，將複製的註解方塊連結至相同的主旨項目。
 將角色的 [ **傳播複本** ] 屬性設定為 [ **只將複本傳播至連結**]。 如需詳細資訊，請參閱 [自訂連結複製行為](#customizeLinks)。
 
  複製連結的項目。 例如，當您複製新項目時，也會建立任何連結之註解方塊的複本。
-將角色的 [ **傳播複本** ] 屬性設定為 [將 **複本傳播至連結和相反角色扮演**者]。 如需詳細資訊，請參閱 [自訂連結複製行為](#customizeLinks)。
+將角色的 [ **傳播複本** ] 屬性設定為 [將 **複本傳播至連結和相反角色扮演** 者]。 如需詳細資訊，請參閱 [自訂連結複製行為](#customizeLinks)。
 
  **透過複製和貼上快速複製項目。** 一般而言，您剛複製的項目仍處於已選取狀態，因此您無法貼上相同類型的項目。
 將 Element Merge 指示詞加入至網域類別，並加以設定，以正向合併至父類別。 這對拖曳作業會造成相同的影響。 如需詳細資訊，請參閱 [自訂元素建立和移動](../modeling/customizing-element-creation-and-movement.md)。
@@ -80,10 +82,10 @@ partial class MyDslClipboardCommandSet
  覆寫 `ClipboardCommandSet.ProcessOnPasteCommand()` 可在呼叫基底方法之後建立其他連結。
 
  **自訂可將專案複製** 到外部應用程式的格式，例如，將框線加入點陣圖表單中。
-覆*MyDsl*寫 `ClipboardCommandSet.ProcessOnMenuCopyCommand()` DslPackage 專案中的 MyDsl。
+覆寫 `ClipboardCommandSet.ProcessOnMenuCopyCommand()` DslPackage 專案中的 MyDsl。
 
  **自訂以複製命令 (而不是拖曳作業) 將項目複製到 [剪貼簿] 的方式。**
-覆*MyDsl*寫 `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` DslPackage 專案中的 MyDsl。
+覆寫 `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` DslPackage 專案中的 MyDsl。
 
  **透過複製和貼上保留配置。**
 當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 [VMSDK：線路圖表範例](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)中的範例會示範這項技術。
@@ -242,7 +244,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 
 1. 在 DSL 專案的新檔案中，建立衍生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations> 的類別。
 
-2. 加入圖表類別的部分類別定義。 您可以在 **Dsl\GeneratedCode\Diagrams.cs**中找到這個類別的名稱。
+2. 加入圖表類別的部分類別定義。 您可以在 **Dsl\GeneratedCode\Diagrams.cs** 中找到這個類別的名稱。
 
     在圖表類別中，覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 以傳回 ElementOperations 子類別的執行個體。 每次呼叫都應該傳回相同的執行個體。
 
@@ -365,9 +367,9 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>標準複製行為
  本節的程式碼顯示您可以覆寫以變更複製行為的方法。 為了協助您了解如何達成您自己的自訂，本節顯示的程式碼會覆寫與複製相關的方法，但不會變更標準行為。
 
- 當使用者按下 CTRL+C 或使用 [複製] 功能表命令時，會呼叫 <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> 方法。 您可以在 **DslPackage\Generated Code\CommandSet.cs**中查看其設定方式。 如需有關如何設定命令的詳細資訊，請參閱 [如何：將命令新增至快捷方式功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
+ 當使用者按下 CTRL+C 或使用 [複製] 功能表命令時，會呼叫 <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> 方法。 您可以在 **DslPackage\Generated Code\CommandSet.cs** 中查看其設定方式。 如需有關如何設定命令的詳細資訊，請參閱 [如何：將命令新增至快捷方式功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
- 您可以藉由*MyDsl* `ClipboardCommandSet` 在 DslPackage 專案中加入 MyDsl 的部分類別定義來覆寫 ProcessOnMenuCopyCommand。
+ 您可以藉由 `ClipboardCommandSet` 在 DslPackage 專案中加入 MyDsl 的部分類別定義來覆寫 ProcessOnMenuCopyCommand。
 
 ```csharp
 using System.Collections.Generic;
@@ -552,7 +554,7 @@ namespace Company.MyDsl
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [自訂項目的建立和移動](../modeling/customizing-element-creation-and-movement.md)
 - [如何：加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)

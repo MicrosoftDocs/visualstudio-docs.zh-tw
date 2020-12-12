@@ -1,5 +1,7 @@
 ---
 title: 建置流程中的程式碼產生
+description: 瞭解如何在 Visual Studio 解決方案的組建流程中叫用文字轉換。
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af0039fb8c945062bc19fa647b477c40c44d5346
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: 3000a02621f7e2c274522a199cfe499e2335c4c2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92298209"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363558"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>在組建流程中叫用文字轉換
 
@@ -57,7 +59,7 @@ ms.locfileid: "92298209"
 
 編輯您的專案檔，以設定 MSBuild 中的某些功能，例如，匯入文字轉換目標。
 
-在 **方案總管**中，從專案的滑鼠右鍵功能表中選擇 **[** 卸載]。 如此可讓您在 XML 編輯器中編輯 .csproj 或 .vbproj 檔案。 當您完成編輯時，請選擇 [ **重載**]。
+在 **方案總管** 中，從專案的滑鼠右鍵功能表中選擇 **[** 卸載]。 如此可讓您在 XML 編輯器中編輯 .csproj 或 .vbproj 檔案。 當您完成編輯時，請選擇 [ **重載**]。
 
 ## <a name="import-the-text-transformation-targets"></a>匯入文字轉換目標
 
@@ -256,9 +258,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 ## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> 在 assembly 和 include 指示詞中使用專案屬性
 
-Visual Studio 的宏（例如 **$ (SolutionDir) ** 無法在 MSBuild 中運作）。 您可以改用專案屬性。
+Visual Studio 的宏（例如 **$ (SolutionDir)** 無法在 MSBuild 中運作）。 您可以改用專案屬性。
 
-編輯您的 *.csproj* 或 *vbproj* 檔案，以定義專案屬性。 這個範例會定義名為 **myLibFolder**的屬性：
+編輯您的 *.csproj* 或 *vbproj* 檔案，以定義專案屬性。 這個範例會定義名為 **myLibFolder** 的屬性：
 
 ```xml
 <!-- Define a project property, myLibFolder: -->
@@ -299,7 +301,7 @@ Visual Studio 的宏（例如 **$ (SolutionDir) ** 無法在 MSBuild 中運作�
 
 - [執行時間文字模板](../modeling/run-time-text-generation-with-t4-text-templates.md) 會在執行時間轉換成您的應用程式。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 ::: moniker range="vs-2017"
 

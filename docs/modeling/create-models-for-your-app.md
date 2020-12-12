@@ -1,5 +1,7 @@
 ---
 title: 建立應用程式模型
+description: 瞭解模型圖如何協助您瞭解、解釋及傳達您的程式碼和軟體系統必須支援的使用者需求等相關概念。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 452832785db879e75825b1c862e8e9b1b6e69f1d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b79496e6762d798db14d7341e71129d5e510c1b0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810805"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363467"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 

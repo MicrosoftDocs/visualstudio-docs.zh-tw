@@ -1,5 +1,7 @@
 ---
 title: 如何：攔截圖案或 Decorator 上的點選
+description: 瞭解如何攔截圖形或圖示裝飾專案的點擊，以及如何攔截點擊、按兩下、拖曳和其他筆勢。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58d447526d83fec406b6fc20a08edcec37de89ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff49c1950e81098633fab92ffbbdf25020945a1e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532518"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363896"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：攔截圖案或 Decorator 上的點選
 下列程式示範如何攔截圖形或圖示裝飾專案的點擊。 您可以攔截點擊、按兩下、拖曳和其他手勢，然後讓元素回應。
@@ -227,7 +229,7 @@ namespace Company.CompartmentDrag
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
+ /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
  /// </summary>
  public partial class ClassShape
  {
@@ -393,7 +395,7 @@ namespace Company.CompartmentDrag
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)
 - [Decorator 的屬性](../modeling/properties-of-decorators.md)

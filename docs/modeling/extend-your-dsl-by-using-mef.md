@@ -1,5 +1,7 @@
 ---
 title: 使用 MEF 擴充您的 DSL
+description: 瞭解如何使用 Managed Extensibility Framework (MEF) ，來擴充特定領域語言 (DSL) 。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20dc9b6ac1bd4e565fd10793889c611f9b039778
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547637"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363168"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
 
@@ -24,7 +26,7 @@ ms.locfileid: "85547637"
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>啟用 MEF 擴充您的 DSL
 
-1. 在**DslPackage**專案內建立名為**MefExtension**的新資料夾。 在其中新增下列檔案：
+1. 在 **DslPackage** 專案內建立名為 **MefExtension** 的新資料夾。 在其中新增下列檔案：
 
      檔案名： `CommandExtensionVSCT.tt`
 
@@ -72,7 +74,7 @@ ms.locfileid: "85547637"
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>
     ```
 
-2. 在**Dsl**專案內建立名為**MefExtension**的新資料夾。 在其中新增下列檔案：
+2. 在 **Dsl** 專案內建立名為 **MefExtension** 的新資料夾。 在其中新增下列檔案：
 
      檔案名： `DesignerExtensionMetaDataAttribute.tt`
 
@@ -95,7 +97,7 @@ ms.locfileid: "85547637"
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3. 將下列程式程式碼新增至名為 **DslPackage\Commands.vsct**的現有檔案：
+3. 將下列程式程式碼新增至名為 **DslPackage\Commands.vsct** 的現有檔案：
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
@@ -103,7 +105,7 @@ ms.locfileid: "85547637"
 
     在現有指示詞之後插入該行 `<Include>` 。
 
-4. 開啟*dsldefinition.dsl 檔。*
+4. 開啟 *dsldefinition.dsl 檔。*
 
 5. 在 [DSL Explorer] 中，選取 [ **Editor\Validation**]。
 
@@ -123,13 +125,13 @@ ms.locfileid: "85547637"
 
 ### <a name="to-create-a-dsl-extension-vsix"></a>建立 DSL 延伸模組 VSIX
 
-1. 建立新的**類別庫**專案。
+1. 建立新的 **類別庫** 專案。
 
 2. 在新專案中，加入 DSL 元件的參考。
 
    - 這個元件的名稱通常會以 ".Dsl.dll" 結尾。
 
-   - 如果您有 DSL 專案的存取權，您可以在目錄**DSL \\ bin \\ \* **下找到元件檔案。
+   - 如果您有 DSL 專案的存取權，您可以在 [*dsl \\ bin \\ \**] 目錄下找到元件檔案。
 
    - 如果您可以存取 DSL VSIX 檔案，您可以藉由將 VSIX 檔案的副檔名變更為 ".zip" 來尋找元件。 將 .zip 檔案解壓縮。
 
@@ -145,9 +147,9 @@ ms.locfileid: "85547637"
 
    - System.Windows.Forms.dll
 
-4. 建立新的 **VSIX 專案** 專案。
+4. 建立新的 _ *VSIX 專案** 專案。
 
-5. 在 **方案總管**中，以滑鼠右鍵按一下 VSIX 專案，然後選擇 [ **設定為啟始專案**]。
+5. 在 **方案總管** 中，以滑鼠右鍵按一下 VSIX 專案，然後選擇 [ **設定為啟始專案**]。
 
 6. 在新的專案中，開啟 **extension.vsixmanifest**。
 
@@ -155,13 +157,13 @@ ms.locfileid: "85547637"
 
 8. 將 VSIX 參考新增至 DSL。
 
-   1. 在**extension.vsixmanifest**中，按一下 [**加入參考**]
+   1. 在 **extension.vsixmanifest** 中，按一下 [**加入參考**]
 
-   2. 在對話方塊中，按一下 [ **新增** 內容]，然後找出 DSL 的 VSIX 檔案。 VSIX 檔案內建于 DSL 解決方案的**DslPackage \\ bin \\ \* **中。
+   2. 在對話方塊中，按一下 [ **新增** 內容]，然後找出 DSL 的 VSIX 檔案。 VSIX 檔案內建于 DSL 解決方案的 **DslPackage \\ bin \\ \** _ 中。
 
        這可讓使用者同時安裝 DSL 和您的延伸模組。 如果使用者已安裝 DSL，則只會安裝您的延伸模組。
 
-9. 檢查並更新 **extension.vsixmanifest**的其他欄位。 按一下 [ **選取版本** ]，並確認已設定正確的 Visual Studio 版本。
+9. 檢查並更新 _ * extension.vsixmanifest * * 的其他欄位。 按一下 [ **選取版本** ]，並確認已設定正確的 Visual Studio 版本。
 
 10. 將程式碼加入至類別庫專案。 使用下一節中的範例做為指南。
 
@@ -175,7 +177,7 @@ ms.locfileid: "85547637"
 
 ### <a name="menu-commands"></a>功能表命令
 
-若要撰寫功能表命令，請 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> 使用您的 DSL 中定義的屬性（名稱為*dsl*），來定義可執行和前置類別的類別 `CommandExtension` 。 您可以撰寫一個以上的功能表命令類別。
+若要撰寫功能表命令，請 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> 使用您的 DSL 中定義的屬性（名稱為 *dsl*），來定義可執行和前置類別的類別 `CommandExtension` 。 您可以撰寫一個以上的功能表命令類別。
 
 `QueryStatus()` 只要使用者以滑鼠右鍵按一下圖表，就會呼叫。 它應該會檢查目前的選取範圍，並設定 `command.Enabled` 來指出命令的適用時機。
 
@@ -323,7 +325,7 @@ namespace MefExtension
 
 驗證方法是由 DSL 所 `ValidationExtension` 產生的屬性標記，也會由所產生 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> 。 方法可以出現在未以屬性標記的任何類別中。
 
-如需詳細資訊，請參閱 [以網域指定的語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。
+如需詳細資訊，請參閱 [以 Domain-Specific 語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。
 
 ```csharp
 using Company.MyDsl;
@@ -372,7 +374,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)

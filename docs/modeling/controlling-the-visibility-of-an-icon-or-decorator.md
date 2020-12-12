@@ -1,5 +1,7 @@
 ---
 title: 控制圖示或 Decorator 的可見度
+description: 瞭解如何根據模型中屬性的狀態，來控制圖示或裝飾專案的可見度。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf97cc10543f066665506d3e238386dc39f0d4f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546637"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363493"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 裝飾 *專案是在* 特定領域語言的圖形中出現的圖示或文字行 (DSL) 。 您可以根據模型中的屬性狀態，使裝飾專案出現並消失。 例如，在代表人的圖形上，您可能會有不同的圖示，這些圖示會根據人的性別、子女數目等而出現。
 
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或裝飾專案的可見度
- 下列程式假設您已定義圖形及其對應到網域類別。 如需詳細資訊，請參閱 [如何定義網域指定的語言](../modeling/how-to-define-a-domain-specific-language.md)。
+ 下列程式假設您已定義圖形及其對應到網域類別。 如需詳細資訊，請參閱 [如何定義 Domain-Specific 語言](../modeling/how-to-define-a-domain-specific-language.md)。
 
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>控制圖示或文字裝飾專案的可見度
 
@@ -62,7 +64,7 @@ ms.locfileid: "85546637"
 
      **Kind =** `Calculated`**-這表示您將提供會計算其值的程式碼**    
 
-     範例**DecoratorControl**的**名稱**
+     範例 **DecoratorControl** 的 **名稱**
 
      **類型** = `Boolean`
 
@@ -74,11 +76,11 @@ ms.locfileid: "85546637"
 
     2. 檢查 **可見度篩選** 方塊。
 
-    3. 在 [ **篩選] 屬性**中，選取控制項屬性 **DecoratorControl**。
+    3. 在 [ **篩選] 屬性** 中，選取控制項屬性 **DecoratorControl**。
 
     4. 在 [ **可見度專案**] 下輸入 `True` 。
 
-3. 在**方案總管**工具列中，按一下 [**轉換所有範本**]。
+3. 在 **方案總管** 工具列中，按一下 [**轉換所有範本**]。
 
 4. 按一下 [**組建**] 功能表上的 [**建立方案**]。
 
@@ -103,7 +105,7 @@ ms.locfileid: "85546637"
 
 8. 重建並執行方案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [定義圖案和連接器](../modeling/defining-shapes-and-connectors.md)
 - [設定圖表上的背景影像](../modeling/setting-a-background-image-on-a-diagram.md)

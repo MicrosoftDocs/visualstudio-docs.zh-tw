@@ -1,5 +1,7 @@
 ---
 title: T4 CleanUpBehavior 指示詞
+description: 瞭解 CleanUpBehavior 指示詞，以及如何在處理文字模板之後刪除 appDomain。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5883cd8a1e30e007db41d5aa73f882e1d7edd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c07d0bf714d42cc605d76d593ed48a70b925483
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591875"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363675"
 ---
 # <a name="t4-cleanupbehavior-directive"></a>T4 CleanUpBehavior 指示詞
 

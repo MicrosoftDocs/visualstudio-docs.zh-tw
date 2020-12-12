@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: de5027024956c03341ac3e2d851bf85430f48f18
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 69fb3d8b5e8af13ec8781e65e60bd060ad69d365
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878292"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362388"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -136,9 +136,9 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 
 ### <a name="git-productivity"></a>Git 生產力
 
-**16.8 的新** 功能Git 現在是 Visual Studio 2019 中的預設版本控制體驗。 我們已根據您在過去兩個版本中的意見反應，建立功能集並逐一查看。 所有人現在都已預設開啟新的體驗。 您可以從新的 Git 功能表複製、建立或開啟存放庫。 使用整合式 Git 工具視窗來認可和推送程式碼的變更、管理分支、隨時掌握遠端存放庫的最新狀態，以及解決合併衝突。
+**16.8** 中的新功能： Git 現在是 Visual Studio 2019 中的預設版本控制體驗。 我們已根據您在過去兩個版本中的意見反應，建立功能集並逐一查看。 所有人現在都已預設開啟新的體驗。 您可以從新的 Git 功能表複製、建立或開啟存放庫。 使用整合式 Git 工具視窗來認可和推送程式碼的變更、管理分支、隨時掌握遠端存放庫的最新狀態，以及解決合併衝突。
 
-如需詳細資訊，請參閱 [Visual Studio 頁面中的 Git 生產力](git-with-visual-studio.md) 。
+如需詳細資訊，請參閱 [Visual Studio 頁面中的 Git 體驗](git-with-visual-studio.md) 。
 
 ### <a name="live-share"></a>Live Share
 
@@ -226,7 +226,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
    雖然新的 Git 版本控制體驗現已在 Visual Studio 2019 [16.8 版](/visualstudio/releases/2019/release-notes/)中預設為開啟，但我們仍會繼續新增功能，以增強最新預覽版本的體驗。
 
-   如需詳細資訊，請參閱 [Visual Studio 頁面中的 Git 生產力](git-with-visual-studio.md) 。
+   如需詳細資訊，請參閱 [Visual Studio 頁面中的 Git 體驗](git-with-visual-studio.md) 。
 
 如需預覽版本的詳細資訊 &mdash; 和下載連結，如果您想要試用， &mdash; 請參閱 **[Visual Studio 預覽](https://aka.ms/vspreview/)** 頁面。
 
@@ -240,6 +240,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ## <a name="see-also"></a>請參閱
 
+* [Visual Studio 檔中的新功能](whats-new-visual-studio-docs.md)
 * [Visual Studio 2019 版本資訊](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 for Mac 版本資訊](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Visual Studio 2019 SDK 的新功能](../extensibility/whats-new-visual-studio-2019-sdk.md)

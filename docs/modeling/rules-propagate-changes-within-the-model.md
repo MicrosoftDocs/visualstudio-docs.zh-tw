@@ -1,5 +1,7 @@
 ---
 title: 規則傳播模型內的變更
+description: 瞭解如何建立儲存規則，以在視覺效果和模型 SDK (VMSDK) 中，將變更傳播到另一個元素。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2050fe0ea2d1a9bb0bf278c13c2beb587412c643
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4ff2273c8c71582c3ef634eeb398b12e29401d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542554"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363948"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則傳播模型內的變更
 您可以建立存放區規則，以視覺效果和模型 SDK (VMSDK) ，將變更傳播到另一個元素。 當存放區中的任何專案發生變更時，系統會排定要執行的規則，通常是在認可最外層的交易時執行。 不同類型的事件有不同類型的規則，例如新增專案或刪除專案。 您可以將規則附加至特定類型的元素、圖形或圖表。 許多內建功能都是由規則所定義：例如，當模型變更時，規則會確保圖表會更新。 您可以新增自己的規則來自訂特定領域語言。
@@ -207,6 +209,6 @@ namespace Company.TaskRuleExample
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)

@@ -1,5 +1,7 @@
 ---
 title: Customize code maps by editing the DGML files
+description: 瞭解如何藉由編輯程式碼對應的有向圖形標記語言 ( .dgml) 檔案來自訂。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,18 +22,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24afbfcfe31de52ac51329bb67df41cc59dd6f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e9b1126b258e36c0aeffd18b9319b15da2b4639
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547273"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363417"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 
 若要自訂 code map，您可以編輯其有向圖形標記語言 ( .dgml) 檔。 例如，您可以編輯項目來指定自訂樣式、指派節點和連結的屬性與分類，或將文件或 URL 連結至程式碼項目或連結。 如需 DGML 專案的詳細資訊，請參閱 [導向圖形標記語言 (dgml) 參考](../modeling/directed-graph-markup-language-dgml-reference.md)。
 
-在文字或 XML 編輯器中編輯 Code Map 的 .dgml 檔案。 如果地圖是 Visual Studio 解決方案的一部分，請在 **方案總管**中加以選取、開啟快捷方式功能表，然後選擇 [ **開啟方式**]、[ **XML (文字) 編輯器**]。
+在文字或 XML 編輯器中編輯 Code Map 的 .dgml 檔案。 如果地圖是 Visual Studio 解決方案的一部分，請在 **方案總管** 中加以選取、開啟快捷方式功能表，然後選擇 [ **開啟方式**]、[ **XML (文字) 編輯器**]。
 
 > [!NOTE]
 > 若要建立 code map，您必須有 Visual Studio Enterprise 版。 當您在 Visual Studio 中編輯 Code Map 時，它會在您儲存此 .dgml 檔案時刪除任何未使用的 DGML 項目和屬性，藉此予以清除。 它也會在您手動加入新的連結時自動建立程式碼項目。 當您儲存 .dgml 檔案時，任何加入至項目的屬性可能會自行按照字母順序重新排列。
@@ -638,7 +640,7 @@ ms.locfileid: "85547273"
 
 5. 若要檢視參考的程式碼項目或來自此對應的程式碼項目，請開啟該程式碼項目或連結的捷徑功能表。 選擇 [ **移至參考** ]，然後選擇 [程式碼] 元素。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)

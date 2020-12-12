@@ -1,5 +1,7 @@
 ---
 title: 網域指定的語言中的驗證
+description: 瞭解如何定義驗證條件約束，以確認使用者所建立的模型有意義。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a37dbb4d9754641b4bcca826ff0ec77c7298d9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb9baced0a4cc38ae175146d3f3779c5b9c28dd2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594002"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362531"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 身為網域指定的語言 (DSL) 的作者，您可以定義驗證條件約束，以驗證使用者建立的模型是否有意義。 例如，如果您的 DSL 允許使用者繪製人們與其祖先的家譜，您可以撰寫條件約束，確保孩子的出生日期晚於父母的出生日期。
@@ -60,7 +62,7 @@ ms.locfileid: "75594002"
 
    3. 在屬性視窗中，將 [ **使用**  屬性] 設定為 `true` 。 最方便的做法是設定所有屬性。
 
-   4. 在**方案總管**工具列中，按一下 [**轉換所有範本**]。
+   4. 在 **方案總管** 工具列中，按一下 [**轉換所有範本**]。
 
 2. 撰寫一個或多個網域類別或網域關聯性的部分類別定義。 在 **Dsl** 專案的新程式碼檔案中撰寫這些定義。
 
@@ -125,7 +127,7 @@ public partial class ParentsHaveChildren
 
  請注意有關這個程式碼的下列重點：
 
-- 您可以將驗證方法加入至網域類別或網域關聯性。 這些類型的程式碼位於 **Dsl\Generated Code\Domain \* .cs**中。
+- 您可以將驗證方法加入至網域類別或網域關聯性。 這些類型的程式碼位於 **Dsl\Generated Code\Domain \* .cs** 中。
 
 - 每個驗證方法會套用至其類別和子類別的每一個執行個體。 在網域關聯性的案例中，每個執行個體是兩個模型項目之間的連結。
 
@@ -193,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  如果將網域關聯性角色的多重性設定為 1..* 或 1..1，但使用者未建立此關聯性的連結，則會出現驗證錯誤訊息。
 
- 例如，如果您的 DSL 具有類別 Person 和城鎮，以及關聯性1的關聯性 PersonLivesInTown **。 \\ *** 在城鎮角色中，針對沒有城鎮的每個人，將會出現錯誤訊息。
+ 例如，如果您的 DSL 具有類別 Person 和城鎮，以及關聯性1的關聯性 PersonLivesInTown **。 \\** _ 在城鎮角色，然後針對沒有城鎮的每個人，將會出現一則錯誤訊息。
 
 ## <a name="running-validation-from-program-code"></a>從程式碼執行驗證
  您可以存取或建立 ValidationController 來執行驗證。 如果您想要在錯誤視窗中向使用者顯示錯誤，請使用附加至圖表 DocData 的 ValidationController。 例如，如果您要撰寫功能表命令，可以使用命令集類別中的 `CurrentDocData.ValidationController`：
@@ -233,7 +235,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>發生變更時執行驗證
  如果您要確保在模型無效時立即警告使用者，您可以定義執行驗證的存放區事件。 如需有關儲存事件的詳細資訊，請參閱 [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
- 除了驗證碼之外，也將自訂程式碼檔案新增至您的 **DslPackage** 專案，其中包含與下列範例類似的內容。 這個程式碼使用連結至文件的 `ValidationController`。 此控制器會在 Visual Studio 錯誤清單中顯示驗證錯誤。
+ 除了驗證程式代碼，請將自訂程式碼檔案新增至您的 _ *DslPackage** 專案，其內容與下列範例類似。 這個程式碼使用連結至文件的 `ValidationController`。 此控制器會在 Visual Studio 錯誤清單中顯示驗證錯誤。
 
 ```csharp
 using System;
@@ -329,12 +331,12 @@ validationController.ValidateCustom
 
  **調整變更，以恢復成有效的模型。** 例如，如果使用者將屬性設得超過允許的上限，您可以將屬性重設為最大值。 若要達成目標，請定義規則。 如需詳細資訊，請參閱 [規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。
 
- **如果嘗試無效的變更，則復原異動。** 您也可以定義此用途的規則，但在某些情況下，您可以覆寫 **OnValueChanging ( # B1 **的屬性處理常式，或覆寫方法（例如 `OnDeleted().` 回復交易）。如需 `this.Store.TransactionManager.CurrentTransaction.Rollback().` 詳細資訊，請參閱 [定義域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。
+ **如果嘗試無效的變更，則復原異動。** 您也可以定義此用途的規則，但在某些情況下，您可以覆寫 **OnValueChanging ( # B1** 的屬性處理常式，或覆寫方法（例如 `OnDeleted().` 回復交易）。如需 `this.Store.TransactionManager.CurrentTransaction.Rollback().` 詳細資訊，請參閱 [定義域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。
 
 > [!WARNING]
 > 確定使用者知道已調整或已復原變更。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)

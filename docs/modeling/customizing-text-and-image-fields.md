@@ -1,5 +1,7 @@
 ---
 title: 自訂文字和影像欄位
+description: 瞭解如何自訂文字和影像檔案。 此外，也請瞭解當您在圖形中定義文字裝飾專案時，它是以欄位表示。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29210ec667bffd6b632bcfbee0b87c0cbb2d5f38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6effda90580a184bb8ebfb8c4f4830dc6cb844d5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542710"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362853"
 ---
 # <a name="customizing-text-and-image-fields"></a>自訂文字和影像欄位
 當您在圖形中定義文字裝飾專案時，它會以文字欄位表示。 如需 TextFields 和其他 ShapeFields 初始化的範例，請檢查 DSL 解決方案中的 Dsl\GeneratedCode\Shapes.cs。
@@ -261,7 +263,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [定義圖案和連接器](../modeling/defining-shapes-and-connectors.md)
 - [設定圖表上的背景影像](../modeling/setting-a-background-image-on-a-diagram.md)

@@ -1,5 +1,7 @@
 ---
 title: 如何：將命令新增至快捷方式功能表
+description: 瞭解如何將功能表命令新增至您的特定領域語言 (DSL) ，讓您的使用者可以執行 DSL 專屬的工作。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dc51de28162471262d8c4bd35ddd09bc156896e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545713"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363337"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：將命令新增至快捷方式功能表
 
@@ -57,9 +59,9 @@ Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命�
 
 ### <a name="to-add-the-command"></a>加入命令
 
-1. 在 **方案總管**的 **DslPackage** 專案下，開啟 .vsct。
+1. 在 **方案總管** 的 **DslPackage** 專案下，開啟 .vsct。
 
-2. 在 `Commands` 項目中，定義一或多個按鈕和群組。 *按鈕*是功能表上的專案。 *群組*是功能表中的區段。 若要定義這些項目，請加入下列項目：
+2. 在 `Commands` 項目中，定義一或多個按鈕和群組。 *按鈕* 是功能表上的專案。 *群組* 是功能表中的區段。 若要定義這些項目，請加入下列項目：
 
     ```xml
     <!-- Define a group - a section in the menu -->
@@ -135,7 +137,7 @@ Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命�
 
 ### <a name="to-update-the-packagett-file"></a>更新 Package.tt 檔
 
-1. 在 **方案總管**的 [ **DslPackage** ] 專案中，開啟 [ **GeneratedCode** ] 資料夾中的 Package.tt 檔案。
+1. 在 **方案總管** 的 [ **DslPackage** ] 專案中，開啟 [ **GeneratedCode** ] 資料夾中的 Package.tt 檔案。
 
 2. 找出 `ProvideMenuResource` 屬性。
 
@@ -157,7 +159,7 @@ Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命�
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. 在 **DslPackage**中，建立名為 **自訂程式碼**的資料夾。 在此資料夾中，建立名為的新類別檔案 `CommandSet.cs` 。
+2. 在 **DslPackage** 中，建立名為 **自訂程式碼** 的資料夾。 在此資料夾中，建立名為的新類別檔案 `CommandSet.cs` 。
 
 3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：
 
@@ -292,7 +294,7 @@ private const int grpidMyMenuGroup = 0x01001;
 private const int cmdidMyContextMenuCommand = 1;
 ```
 
- 使用與您在 **.vsct**中插入的相同 GUID 值。
+ 使用與您在 **.vsct** 中插入的相同 GUID 值。
 
 > [!NOTE]
 > 如果您變更 VSCT 檔的 Symbols 區段，您必須也將這些宣告變更為相符。 您也應在 Package.tt 中遞增版本號碼
@@ -357,7 +359,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 確定已解除安裝舊版套件。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

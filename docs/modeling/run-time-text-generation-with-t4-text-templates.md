@@ -1,5 +1,7 @@
 ---
 title: 使用 T4 文字範本在執行階段產生文字
+description: 瞭解如何在執行時間使用 Visual Studio 執行時間文字模板，在應用程式中產生文字字串。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520831"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363935"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 
@@ -49,20 +51,20 @@ This report is Company Confidential.
 
 在您的應用程式中使用範本，可讓您更輕鬆地查看輸出的最終形式，而不是您在中的輸出形式，例如，一系列的寫入語句。 對輸出的形式進行變更更為簡單且更可靠。
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>在任何應用程式中建立執行時間文字模板
+## <a name="creating-a-run-time-text-template-in-any-application"></a>在任何應用程式中建立 Run-Time 文字模板
 
 ### <a name="to-create-a-run-time-text-template"></a>若要建立執行時間文字模板
 
 1. 在方案總管中，在專案的快捷方式功能表上，選擇 [**加入**  >  **新專案**]。
 
-2. 在 [ **加入新專案** ] 對話方塊中，選取 [ **執行時間文字模板**]。 Visual Basic 中的 (查看**Common Items**  >  **一般**專案。 ) 
+2. 在 [ **加入新專案** ] 對話方塊中，選取 [ **執行時間文字模板**]。 Visual Basic 中的 (查看  >  **一般** 專案。 ) 
 
 3. 輸入範本檔案的名稱。
 
     > [!NOTE]
     > 範本檔案名將用來作為產生的程式碼中的類別名稱。 因此，它不應該有空格或標點符號。
 
-4. 選擇 [ **新增**]。
+4. 選擇 [新增]  。
 
     建立的新檔案副檔名為 **tt**。 其 **自訂工具** 屬性會設定為 **TextTemplatingFilePreprocessor**。 它包含下列幾行：
 
@@ -74,7 +76,7 @@ This report is Company Confidential.
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>將現有檔案轉換成執行時間範本
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>將現有檔案轉換為 Run-Time 範本
 
 建立範本的好方法是轉換現有的輸出範例。 例如，如果您的應用程式將產生 HTML 檔案，您可以從建立純 HTML 檔案開始。 請確定它能正常運作，而且其外觀正確。 然後將它包含在您的 Visual Studio 專案中，並將其轉換為範本。
 
@@ -85,7 +87,7 @@ This report is Company Confidential.
 2. 將檔案的 [ **自訂工具** ] 屬性設定為 [ **TextTemplatingFilePreprocessor**]。 在方案總管中，在檔案的快捷方式功能表上，選擇 [ **屬性**]。
 
     > [!NOTE]
-    > 如果屬性已設定，請確定它是 **TextTemplatingFilePreprocessor** 且未 **TextTemplatingFileGenerator**。 如果您包含副檔名為 **tt**的檔案，就會發生這種情況。
+    > 如果屬性已設定，請確定它是 **TextTemplatingFilePreprocessor** 且未 **TextTemplatingFileGenerator**。 如果您包含副檔名為 **tt** 的檔案，就會發生這種情況。
 
 3. 將副檔名變更為 **tt**。 雖然這個步驟是選擇性的，但它可協助您避免在不正確的編輯器中開啟檔案。
 
@@ -95,7 +97,7 @@ This report is Company Confidential.
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>執行時間範本的內容
+## <a name="the-content-of-the-run-time-template"></a>Run-Time 範本的內容
 
 ### <a name="template-directive"></a>Template 指示詞
 
@@ -150,7 +152,7 @@ This report is Company Confidential.
 
 ### <a name="the-code-built-from-the-template"></a>從範本建立的程式碼
 
-當您儲存 **tt** 檔案時，會產生一個 **.cs** 或 **.vb** 檔案。 若要在 **方案總管**中查看這個檔案，請展開 [ **tt** 檔] 節點。 在 Visual Basic 專案中，請先選擇 [**方案總管**] 工具列中的 [**顯示所有**檔案]。
+當您儲存 **tt** 檔案時，會產生一個 **.cs** 或 **.vb** 檔案。 若要在 **方案總管** 中查看這個檔案，請展開 [ **tt** 檔] 節點。 在 Visual Basic 專案中，請先選擇 [**方案總管**] 工具列中的 [**顯示所有** 檔案]。
 
 請注意，子公司檔案包含部分類別，其中包含名為的方法 `TransformText()` 。 您可以從應用程式呼叫這個方法。
 
@@ -191,7 +193,7 @@ partial class MyWebPage
     public MyWebPage(MyData data) { this.m_data = data; }}
 ```
 
-在您的範本檔案 **MyWebPage.tt**中，您可以撰寫：
+在您的範本檔案 **MyWebPage.tt** 中，您可以撰寫：
 
 ```html
 <h2>Sales figures</h2>
@@ -294,7 +296,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 Include 指示詞可以在範本檔案的文字或包含的檔案中的任何位置使用。
 
-### <a name="inheritance-between-run-time-text-templates"></a>執行時間文字模板之間的繼承
+### <a name="inheritance-between-run-time-text-templates"></a>Run-Time 文字模板之間的繼承
 
 您可以撰寫可為抽象的基類範本，以在執行時間範本間共用內容。 使用指示詞的 `inherits` 參數 `<@#template#>` 參考另一個執行時間範本類別。
 
@@ -427,13 +429,13 @@ End of common template.
 End material for DerivedTemplate1.
 ```
 
-## <a name="related-topics"></a>[相關主題]
+## <a name="related-topics"></a>相關主題
 
 設計階段範本：如果您想要使用範本來產生會成為應用程式一部分的程式碼，請參閱 [使用 T4 文字模板產生設計階段程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
 執行時間範本可以在任何應用程式中使用，其中範本和其內容會在編譯時期決定。 但是，如果您想要撰寫 Visual Studio 的延伸模組，以便在執行時間變更的範本產生文字，請參閱 [在 VS 延伸模組中叫用文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)
 - [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)

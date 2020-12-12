@@ -1,5 +1,7 @@
 ---
 title: 自訂檔案儲存體和 XML 序列化
+description: 瞭解當您在 Visual Studio 中將特定領域語言的實例或模型儲存 (DSL) 時，所建立或更新的 XML 檔案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,29 +13,29 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07592247e0afb870f3c4774c6f2023a6e8141cd1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e889bb81b4c13d003beb15f733d053ef159b197f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542736"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362934"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 
-當使用者將特定領域語言的實例或 *模型*儲存 (DSL) Visual Studio 中，就會建立或更新 XML 檔案。 您可以重載該檔案，以在存放區中重新建立模型。
+當使用者將特定領域語言的實例或 *模型* 儲存 (DSL) Visual Studio 中，就會建立或更新 XML 檔案。 您可以重載該檔案，以在存放區中重新建立模型。
 
 您可以在 [DSL Explorer] 中，藉由調整 **Xml 序列化行為** 底下的設定來自訂序列化配置。 每個網域類別、屬性和關聯性的 **Xml 序列化行為** 底下都有一個節點。 關聯性位於其來源類別之下。 也有對應到圖形、連接器和圖表類別的節點。
 
 您也可以撰寫程式碼來進行更先進的自訂。
 
 > [!NOTE]
-> 如果您想要以特定格式儲存模型，但不需要從該表單重載，請考慮使用文字模板來產生模型的輸出，而不是自訂序列化配置。 如需詳細資訊，請參閱 [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
+> 如果您想要以特定格式儲存模型，但不需要從該表單重載，請考慮使用文字模板來產生模型的輸出，而不是自訂序列化配置。 如需詳細資訊，請參閱 [從 Domain-Specific 語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
 
 ## <a name="model-and-diagram-files"></a>模型和圖表檔案
 
 每個模型通常會儲存在兩個檔案中：
 
-- 模型檔案的名稱如 **Model1. mydsl**。 它會儲存模型專案和關聯性及其屬性。 副檔名（ **mydsl** ）是由 DSL 定義中**編輯器**節點的**FileExtension**屬性所決定。
+- 模型檔案的名稱如 **Model1. mydsl**。 它會儲存模型專案和關聯性及其屬性。 副檔名（ **mydsl** ）是由 DSL 定義中 **編輯器** 節點的 **FileExtension** 屬性所決定。
 
 - 圖表檔案的名稱如 **Model1. mydsl**。 它會儲存圖形、連接器及其位置、色彩、線條粗細，以及圖表外觀的其他詳細資料。 如果使用者刪除了 **圖表** 檔，則不會遺失模型中的基本資訊。 只有圖表的版面配置會遺失。 當模型檔案開啟時，將會建立一組預設的圖形和連接器。
 
@@ -43,7 +45,7 @@ ms.locfileid: "85542736"
 
 2. 在屬性視窗中，編輯 **FileExtension** 屬性。 請勿包含副檔名的初始 "."。
 
-3. 在方案總管中，變更 **DslPackage\ProjectItemTemplates**中兩個專案範本檔案的名稱。 這些檔案的名稱會遵循此格式：
+3. 在方案總管中，變更 **DslPackage\ProjectItemTemplates** 中兩個專案範本檔案的名稱。 這些檔案的名稱會遵循此格式：
 
      `myDsl.diagram`
 
@@ -79,7 +81,7 @@ ms.locfileid: "85542736"
 
 請注意下列有關序列化模型的重點：
 
-- 每個 XML 節點的名稱與網域類別名稱相同，不同之處在于初始字母是小寫。 例如 `familyTreeModel` 和 `person`。
+- 每個 XML 節點的名稱與網域類別名稱相同，不同之處在于初始字母是小寫。 例如，`familyTreeModel` 與 `person`。
 
 - 網域屬性（例如 Name 和 BirthYear）會序列化為 XML 節點中的屬性。 同樣地，會將屬性名稱的初始字元轉換成小寫。
 
@@ -116,13 +118,13 @@ ms.locfileid: "85542736"
     <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />
     ```
 
-     如果目標類別具有網域屬性，而該屬性的選項為 [ **Is Moniker Key** `true` **Xml 序列化行為**]，則會使用合格的索引鍵標記。 在此範例中，會針對網域類別 "專輯" 和 "Song" 中名為 "Title" 的網域屬性設定此選項。
+     如果目標類別具有網域屬性，而該屬性的選項為 [  `true` **Xml 序列化行為**]，則會使用合格的索引鍵標記。 在此範例中，會針對網域類別 "專輯" 和 "Song" 中名為 "Title" 的網域屬性設定此選項。
 
 限定的索引鍵標記比識別碼名字更容易讀取。 如果您想要讓人員讀取模型檔案的 XML，請考慮使用限定索引鍵的名字。 不過，使用者可以將多個元素設定為具有相同的標記索引鍵。 重複的索引鍵可能會導致檔案無法正確重載。 因此，如果您定義了使用限定金鑰標記所參考的網域類別，您應該考慮防止使用者儲存具有重複的標記之檔案的方式。
 
 ### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>若要將網域類別設定為由識別碼名字組所參考
 
-1. 請確定**Is Moniker Key** `false` 類別和其基類中的每個網域屬性都是 [是] 索引鍵。
+1. 請確定 `false` 類別和其基類中的每個網域屬性都是 [是] 索引鍵。
 
     1. 在 [DSL Explorer] 中，展開 [ **Xml 序列化 Behavior\Class 資料 \\ \<the domain class> \Element 資料**]。
 
@@ -130,9 +132,9 @@ ms.locfileid: "85542736"
 
     3. 如果網域類別具有基類，請在該類別中重複此程式。
 
-2. 設定**Serialize Id**  =  `true` 網域類別的序列化識別碼。
+2. 設定  =  `true` 網域類別的序列化識別碼。
 
-     這個屬性可以在 **Xml 序列化行為**下找到。
+     這個屬性可以在 **Xml 序列化行為** 下找到。
 
 ### <a name="to-set-a-domain-class-to-be-referenced-by-qualified-key-monikers"></a>若要將網域類別設定為由合格的索引鍵標記所參考
 
@@ -146,7 +148,7 @@ ms.locfileid: "85542736"
 
      使用 **命名網域類別** 工具來建立新的網域類別。
 
-     此工具會建立新的類別，該類別具有名為 Name 的網域屬性。 **是元素名稱**，而且這個網域屬性的 [標記] 索引**鍵**屬性會初始化為 `true` 。
+     此工具會建立新的類別，該類別具有名為 Name 的網域屬性。 **是元素名稱**，而且這個網域屬性的 [標記] 索引 **鍵** 屬性會初始化為 `true` 。
 
 - \- 或 -
 
@@ -158,7 +160,7 @@ ms.locfileid: "85542736"
 
 有數種方法可協助您避免這種情況：
 
-- Set**為**  =  `true` key 網域屬性的元素名稱。 在 DSL 定義圖上選取 [網域] 屬性，然後在屬性視窗中設定值。
+- Set **為**  =  `true` key 網域屬性的元素名稱。 在 DSL 定義圖上選取 [網域] 屬性，然後在屬性視窗中設定值。
 
      當使用者建立類別的新實例時，這個值會讓網域屬性自動指派不同的值。 預設行為會在類別名稱的結尾加上一個數位。 這並不會防止使用者將名稱變更為重複的名稱，但在使用者未于儲存模型之前設定值的情況下，這會有所説明。
 
@@ -166,7 +168,7 @@ ms.locfileid: "85542736"
 
      自動產生的驗證方法會檢查是否有歧義。 方法位於 `Load` 驗證分類中。 這可確保使用者會收到警告，指出可能無法重新開啟檔案。
 
-     如需詳細資訊，請參閱 [以網域指定的語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。
+     如需詳細資訊，請參閱 [以 Domain-Specific 語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。
 
 ### <a name="moniker-paths-and-qualifiers"></a>標記路徑和限定詞
 
@@ -230,7 +232,7 @@ ms.locfileid: "85542736"
     </familyTreeModel>
     ```
 
-- 將 [**標記法**]  =  **元素**設定為將 [網域] 屬性儲存為專案，而不是屬性值。
+- 將 [**標記法**]  =  **元素** 設定為將 [網域] 屬性儲存為專案，而不是屬性值。
 
     ```xml
     <person name="Elizabeth I" birthYear="1533">
@@ -244,11 +246,11 @@ ms.locfileid: "85542736"
 
 您可以取代部分或所有序列化演算法。
 
-我們建議您研究 **Dsl\Generated Code\Serializer.cs** 和 **SerializationHelper.cs**中的程式碼。
+我們建議您研究 **Dsl\Generated Code\Serializer.cs** 和 **SerializationHelper.cs** 中的程式碼。
 
 ### <a name="to-customize-the-serialization-of-a-particular-class"></a>自訂特定類別的序列化
 
-1. 在**Xml 序列化行為**下，Set 在該類別的節點中**是自訂**的。
+1. 在 **Xml 序列化行為** 下，Set 在該類別的節點中 **是自訂** 的。
 
 2. 轉換所有範本、建立方案，以及調查產生的編譯錯誤。 每個錯誤附近的批註會說明您必須提供的程式碼。
 
@@ -264,9 +266,9 @@ ms.locfileid: "85542736"
 
 ### <a name="xml-class-data"></a>Xml 類別資料
 
-這些元素可在 [DSL Explorer] 中的 **Xml 序列化 Behavior\Class 資料**下找到。
+這些元素可在 [DSL Explorer] 中的 **Xml 序列化 Behavior\Class 資料** 下找到。
 
-|屬性|描述|
+|屬性|說明|
 |-|-|
 |具有自訂元素架構|若為 True，表示網域類別具有自訂元素架構|
 |為自訂|如果您想要為此網域類別撰寫自己的序列化和還原序列化程式碼，請將此值設定為 **True** 。<br /><br /> 建立解決方案並調查錯誤，以探索詳細的指示。|
@@ -274,7 +276,7 @@ ms.locfileid: "85542736"
 |元素名稱|這個類別之元素的 Xml 節點名稱。 預設值是網域類別名稱的小寫版本。|
 |標記屬性名稱|要包含參考之「標記」元素中使用的屬性名稱。 如果空白，則會使用索引鍵屬性或識別碼的名稱。<br /><br /> 在此範例中為 "name"：  `<personMoniker name="/Mike Nash"/>`|
 |標記元素名稱|Xml 專案的名稱，此專案是用來參考這個類別的專案的名字標記。<br /><br /> 預設值是以 "名字" 尾碼的類別名稱的小寫版本。 例如 `personMoniker`。|
-|標記類型名稱|為此類別的專案產生的 xsd 型別名稱。 XSD 位於 Dsl\Generated 程式**代碼 \\ \* 架構 .xsd**中|
+|標記類型名稱|為此類別的專案產生的 xsd 型別名稱。 XSD 位於 Dsl\Generated 程式 **代碼 \\ \* 架構 .xsd** 中|
 |序列化識別碼|若為 True，則表示專案 GUID 包含在檔案中。 如果沒有標示 **為「標記為** 」的屬性，而且 DSL 定義此類別的參考關聯性，則必須為 true。|
 |類型名稱|在 xsd 中，從指定的網域類別產生的 xml 型別名稱。|
 |附註|與此元素相關的非正式附注|
@@ -283,7 +285,7 @@ ms.locfileid: "85542736"
 
 Xml 屬性節點可在類別節點下找到。
 
-|屬性|描述|
+|屬性|說明|
 |-|-|
 |網域屬性|套用 xml 序列化設定資料的屬性。 唯讀。|
 |是標記索引鍵|若為 True，則會使用屬性做為索引鍵，以建立參考這個網域類別之實例的名字標記。|
@@ -296,7 +298,7 @@ Xml 屬性節點可在類別節點下找到。
 
 角色資料節點可在來源類別節點下找到。
 
-|屬性|描述|
+|屬性|說明|
 |-|-|
 |具有自訂的標記|如果您想要提供自己的程式碼來產生及解析可跨越此關聯性的名字組，請將此設為 true。<br /><br /> 如需詳細指示，請建立解決方案，然後按兩下錯誤訊息。|
 |領域關聯|指定套用這些選項的關聯性。 唯讀。|
@@ -304,7 +306,7 @@ Xml 屬性節點可在類別節點下找到。
 |角色元素名稱|指定衍生自來源角色之 XML 元素的名稱。 預設值為角色屬性名稱。|
 |使用完整格式|若為 true，則會在代表關聯性的 XML 節點中包含每個目標元素或標記。 如果關聯性有自己的網域屬性，則應該設定為 true。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)

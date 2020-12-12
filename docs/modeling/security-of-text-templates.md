@@ -1,5 +1,7 @@
 ---
 title: 文字範本的安全性
+description: 深入瞭解安全性和文字模板，包括任意程式碼和惡意指示詞處理器等主題。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25815bcb7f027501fb849dcd29d14b040c24d7fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d54421ea4df9c54fd4ec8c1804a1a292061996ab
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591966"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363792"
 ---
 # <a name="security-of-text-templates"></a>文字範本的安全性
 文字模板有下列安全性考慮：

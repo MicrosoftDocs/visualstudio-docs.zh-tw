@@ -1,5 +1,7 @@
 ---
 title: 如何：加入拖放處理常式
+description: 瞭解如何將拖放事件的處理常式加入至您的 DSL，讓使用者可以從其他圖表將專案拖曳到圖表上。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,16 +9,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 337fd73dbe46a97b6f154dfba1714ede834f1e69
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545661"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363324"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：加入拖放處理常式
 
-您可以將拖放事件的處理常式加入至您的 DSL，讓使用者可以從其他圖表或 Visual Studio 的其他部分，將專案拖曳到您的圖表上。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式稱為軌跡 *處理*程式。
+您可以將拖放事件的處理常式加入至您的 DSL，讓使用者可以從其他圖表或 Visual Studio 的其他部分，將專案拖曳到您的圖表上。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式稱為軌跡 *處理* 程式。
 
 本主題討論源自其他圖表的拖放軌跡。 若為單一圖表內的移動和複製事件，請考慮改為定義 `ElementOperations` 的子類別。 如需詳細資訊，請參閱 [自訂複製行為](../modeling/customizing-copy-behavior.md)。 您也可以自訂 DSL 定義。
 
@@ -80,7 +82,7 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
 
 ### <a name="to-define-a-mef-gesture-handler"></a>定義 MEF 軌跡處理常式
 
-1. 新增至您的**dsl**和**DslPackage**專案：[使用 MEF 擴充您的 Dsl](../modeling/extend-your-dsl-by-using-mef.md)中所述的**MefExtension**檔案。
+1. 新增至您的 **dsl** 和 **DslPackage** 專案：[使用 MEF 擴充您的 Dsl](../modeling/extend-your-dsl-by-using-mef.md)中所述的 **MefExtension** 檔案。
 
 2. 您現在可以將軌跡處理常式定義為 MEF 元件：
 
@@ -160,7 +162,7 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
 
 Visual Studio 模型匯流排，使來源 DSL 可供存取：
 
-1. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [ **啟用 Modelbus**]。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定]  。 新專案 "ModelBus" 會隨即加入至 DSL 方案。
+1. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [ **啟用 Modelbus**]。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定]。 新專案 "ModelBus" 會隨即加入至 DSL 方案。
 
 2. 按一下 [ **轉換所有範本** ]，然後重建方案。
 
@@ -405,7 +407,7 @@ namespace Company.CompartmentDrag  // EDIT.
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
+ /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
  /// </summary>
  public partial class ClassShape
  {
@@ -569,7 +571,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [自訂複製行為](../modeling/customizing-copy-behavior.md)
 - [部署網域指定的語言方案](msi-and-vsix-deployment-of-a-dsl.md)

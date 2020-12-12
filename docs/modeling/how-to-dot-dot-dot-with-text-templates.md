@@ -1,5 +1,7 @@
 ---
 title: 如何 ... 使用文字範本
+description: 深入瞭解使用文字模板產生文字時所遇到的常見問題的解答。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50844ce8c6943fcf6b2a0b91c7fd2cfcb6184094
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594652"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363181"
 ---
 # <a name="how-to--with-text-templates"></a>如何 ... 使用文字範本
 Visual Studio 中的文字模板提供了一種實用的方法來產生任何種類的文字。 您可以使用文字模板在執行時間產生文字，做為應用程式的一部分，並在設計階段產生您的部分專案程式碼。 本主題摘要說明最常被詢問的「如何? ...」 問題。
@@ -75,7 +77,7 @@ Visual Studio 中的文字模板提供了一種實用的方法來產生任何種
 
      `foreach (Book book in this.Library) { ... }`
 
-     如需詳細資訊，請參閱 [使用特定領域語言消費者入門](../modeling/getting-started-with-domain-specific-languages.md) ，以及 [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
+     如需詳細資訊，請參閱 [使用 Domain-Specific 語言消費者入門](../modeling/getting-started-with-domain-specific-languages.md) ，以及 [從 Domain-Specific 語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
 
 ### <a name="get-data-from-visual-studio"></a>從 Visual Studio 取得資料
  若要使用 Visual Studio 中提供的服務，請設定 `hostSpecific` 屬性並載入 `EnvDTE` 元件。 例如：

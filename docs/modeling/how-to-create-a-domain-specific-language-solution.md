@@ -1,5 +1,7 @@
 ---
 title: 如何：建立網域指定的語言方案
+description: 瞭解如何使用特製化的 Visual Studio 解決方案， (DSL) 建立特定領域語言。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,17 +15,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c47b16bbb9fe5eb352171e6e1cf4c13890890265
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c913f3015c56f7872dfe5ef3471578de7075b7d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298659"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363272"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：建立網域指定的語言方案
 特定領域語言 (DSL) 是使用特製化的 Visual Studio 解決方案所建立。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 開始此程式之前，請先安裝下列元件：
 
@@ -52,7 +54,7 @@ ms.locfileid: "92298659"
 
     如需解決方案範本的詳細資訊，請參閱 [選擇 Domain-Specific 語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。
 
-3. 在 [ **副檔名** ] 頁面上輸入副檔名。 在您的電腦中，以及您想要安裝 DSL 的任何電腦中，它應該是唯一的。 您應該會看到 **沒有任何應用程式或 Visual Studio 編輯器使用此延伸**模組的訊息。
+3. 在 [ **副檔名** ] 頁面上輸入副檔名。 在您的電腦中，以及您想要安裝 DSL 的任何電腦中，它應該是唯一的。 您應該會看到 **沒有任何應用程式或 Visual Studio 編輯器使用此延伸** 模組的訊息。
 
    - 如果您在先前的實驗性 Dsl 中使用了尚未完整安裝的副檔名，則可以使用 [ **重設實驗實例** ] 工具（可在 Visual Studio SDK 功能表中找到）來清除它們。
 
@@ -60,7 +62,7 @@ ms.locfileid: "92298659"
 
 4. 檢查並視需要調整嚮導其餘頁面中的欄位。 當您對設定感到滿意後，請按一下 **[完成]**。 如需設定的詳細資訊，請參閱 [DSL 設計工具 Wizard 頁面](#settings)。
 
-    此 wizard 會建立一個方案，其中包含兩個名為 **Dsl** 和 **DslPackage**的專案。
+    此 wizard 會建立一個方案，其中包含兩個名為 **Dsl** 和 **DslPackage** 的專案。
 
    > [!NOTE]
    > 如果您看到一則訊息，提醒您不要從不受信任的來源執行文字模板，請按一下 **[確定]**。 您可以將此訊息設定為不會再次出現。
@@ -81,7 +83,7 @@ ms.locfileid: "92298659"
 
  確認此副檔名尚未在這部電腦上註冊使用，如下所示：
 
- 查看 **已註冊的其他工具和應用程式，以處理此延伸**模組。 如果您看到 [ **沒有應用程式] 或 Visual Studio 編輯器使用此延伸**模組，則可以使用此副檔名。
+ 查看 **已註冊的其他工具和應用程式，以處理此延伸** 模組。 如果您看到 [ **沒有應用程式] 或 Visual Studio 編輯器使用此延伸** 模組，則可以使用此副檔名。
 
  如果您看到工具或封裝的清單，則應該執行下列其中一項：
 
@@ -116,7 +118,7 @@ ms.locfileid: "92298659"
 
  如需強式命名的詳細資訊，請參閱 [建立和使用 Strong-Named 元件](/dotnet/standard/assembly/create-use-strong-named)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

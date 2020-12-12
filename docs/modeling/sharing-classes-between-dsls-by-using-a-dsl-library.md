@@ -1,5 +1,7 @@
 ---
 title: 使用 DSL 程式庫共用 DSL 之間的類別
+description: 瞭解在 Visual Studio 的視覺效果和模型 SDK 中，您可以建立不完整的 DSL 定義，以將其匯入至另一個 DSL。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38496141d6fcdd33f3bf5185c3f50b1bf961d832
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1685fe4fc7db6728ebc1ca6a12e27bb6f42589b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542541"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363753"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 程式庫共用 DSL 之間的類別
 在 Visual Studio 的視覺效果和模型 SDK 中，您可以建立不完整的 DSL 定義，以將其匯入至另一個 DSL。 這可讓您考慮類似模型的一般部分。
@@ -61,7 +63,7 @@ ms.locfileid: "85542541"
 
    DSL 程式庫可以匯入其他程式庫。 當您匯入程式庫時，其匯入也會自動出現在 [DSL Explorer] 中。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
 

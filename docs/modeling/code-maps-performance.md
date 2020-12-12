@@ -1,5 +1,7 @@
 ---
 title: Code map 很慢
+description: 瞭解如何改善 code map 效能，以及如何將完成轉譯所需的時間減至最少。
+ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28cb2c4fd74716aa876c57517bb440fda513de5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edcc12b5bd2cb741374acfe44f05c1f9043ebcaa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590536"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363506"
 ---
 # <a name="improve-performance-for-code-maps"></a>改善 code map 的效能
 
@@ -30,6 +32,6 @@ ms.locfileid: "75590536"
 
 - 編輯 Code Map，直接移除您不需要的節點和連結。 變更對應不會影響基礎程式碼。 請參閱 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。
 
-當專案專案的 [**複製到輸出目錄**] 屬性設定為 [**永遠複製**] 時，從**方案總管**建立對應或將專案加入至地圖可能需要更多時間。 若要增加效能，請將這個屬性變更為 **有更新時才複製** 或 `PreserveNewest`。 請參閱累加 [組建](../msbuild/incremental-builds.md)。
+當專案專案的 [**複製到輸出目錄**] 屬性設定為 [**永遠複製**] 時，從 **方案總管** 建立對應或將專案加入至地圖可能需要更多時間。 若要增加效能，請將這個屬性變更為 **有更新時才複製** 或 `PreserveNewest`。 請參閱累加 [組建](../msbuild/incremental-builds.md)。
 
 完成的對應只會顯示已成功建立程式碼的相依性。 如果某些元件發生建置錯誤，則對應上會出現這些錯誤。 在根據對應進行架構決策前，請確定元件可實際建置且具有相依性。

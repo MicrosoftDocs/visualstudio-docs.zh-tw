@@ -1,5 +1,7 @@
 ---
 title: 如何：在程式碼中開啟檔案的模型
+description: 瞭解 ModelBus 提供標準機制來參考模型中的模型或元素，以及尋找已移動的模型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f854edc45724f0e1f3db5bda22cb6aa006d77e60
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532479"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363870"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程式碼中開啟檔案的模型
 
@@ -26,14 +28,14 @@ ms.locfileid: "85532479"
 
 1. 開啟您要在其中讀取 DSL 模型的應用程式 Visual Studio 專案。
 
-2. 在 **方案總管**中，以滑鼠右鍵按一下專案，然後按一下 [ **屬性**]。
+2. 在 **方案總管** 中，以滑鼠右鍵按一下專案，然後按一下 [ **屬性**]。
 
 3. 在 [專案屬性] 視窗的 [ **應用程式** ] 索引標籤上，將 [ **目標 framework** ] 欄位設定為 **.NET Framework 4** (或更新版本) 。
 
 > [!NOTE]
 > 目標 framework 不應 **.NET Framework 4 用戶端設定檔**。
 
-## <a name="references"></a>參考資料
+## <a name="references"></a>參考
 
 將這些參考新增至您的 Visual Studio 應用程式專案：
 
@@ -45,7 +47,7 @@ ms.locfileid: "85532479"
 
 ## <a name="important-classes-in-the-dsl"></a>DSL 中的重要類別
 
-在撰寫可讀取 DSL 的程式碼之前，您應該知道 DSL 所產生的一些類別名稱。 在您的 DSL 解決方案中，開啟 **dsl** 專案，然後查看 [ **GeneratedCode** ] 資料夾。 或者，按兩下專案 **參考**中的 dsl 元件，並在 [ **物件瀏覽器**] 中開啟 dsl 命名空間。
+在撰寫可讀取 DSL 的程式碼之前，您應該知道 DSL 所產生的一些類別名稱。 在您的 DSL 解決方案中，開啟 **dsl** 專案，然後查看 [ **GeneratedCode** ] 資料夾。 或者，按兩下專案 **參考** 中的 dsl 元件，並在 [ **物件瀏覽器**] 中開啟 dsl 命名空間。
 
 以下是您應該識別的類別：
 

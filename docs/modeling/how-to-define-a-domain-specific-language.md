@@ -1,5 +1,7 @@
 ---
 title: 如何定義網域指定的語言
+description: 瞭解如何從範本建立 Visual Studio 的解決方案，以定義 (DSL) 的特定領域語言。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca9cc6b853ea95cedcb0ce109b9618fc0eb455ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40dcba1cb83e695f2b02468bdd83a5faa8c25a38
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542749"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363311"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要 (DSL) 定義特定領域語言，您可以從範本建立 Visual Studio 解決方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
@@ -38,7 +40,7 @@ ms.locfileid: "85542749"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-若要建立新的特定領域語言，您可以使用特定領域語言專案範本來建立新的 Visual Studio 方案。
+若要建立新的特定領域語言，您可以使用 Domain-Specific 語言專案範本來建立新的 Visual Studio 方案。
 
 ### <a name="to-create-a-dsl-solution"></a>建立 DSL 方案
 
@@ -50,7 +52,7 @@ ms.locfileid: "85542749"
 
    ::: moniker-end
 
-    **網域指定的語言嚮導**會開啟並顯示範本 DSL 解決方案的清單。
+    **網域指定的語言嚮導** 會開啟並顯示範本 DSL 解決方案的清單。
 
 2. 按一下每一個範本可查看說明。 選擇與您要建立的方案最相似的方案。
 
@@ -80,7 +82,7 @@ ms.locfileid: "85542749"
 
 4. 您可以調整其他頁面上的設定，或是保留預設值。
 
-5. 按一下 [完成]  。
+5. 按一下 [完成] 。
 
     精靈會建立包含兩個或三個專案的方案，並從 DSL 定義產生程式碼。
 
@@ -88,7 +90,7 @@ ms.locfileid: "85542749"
 
    ![dsl 設計工具](../modeling/media/dsl_designer.png)
 
-   此方案定義網域指定的語言。 如需詳細資訊，請參閱 [特定領域語言工具消費者介面的總覽](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)。
+   此方案定義網域指定的語言。 如需詳細資訊，請參閱 [Domain-Specific 語言工具消費者介面的總覽](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)。
 
 ### <a name="test-the-solution"></a>測試方案
  範本方案提供一個工作 DSL，可以加以修改或依現狀使用它。
@@ -113,7 +115,7 @@ ms.locfileid: "85542749"
 
  保留這些類別特別有用：
 
-- 根類別會出現在 DSL 定義圖左上角的 [ **類別和關聯**性] 下。 將它重新命名為 DSL 以外的名稱。 例如，名為 **MusicLibrary** 的 DSL 可能具有名為「 **音樂**」的根類別。
+- 根類別會出現在 DSL 定義圖左上角的 [ **類別和關聯** 性] 下。 將它重新命名為 DSL 以外的名稱。 例如，名為 **MusicLibrary** 的 DSL 可能具有名為「 **音樂**」的根類別。
 
 - 圖表類別會出現在 [ **圖表** 專案] 資料行中 DSL 定義圖的右下角。 您可能必須捲動到右側才能看到它。 它通常稱為 _dsl_**圖**。
 
@@ -149,7 +151,7 @@ ms.locfileid: "85542749"
 > 「模型」是指使用者建立的 DSL 執行個體，通常會顯示為圖表。 本主題同時討論 DSL 定義圖以及使用 DSL 時出現的模型圖表。
 
 ## <a name="defining-domain-classes"></a><a name="classes"></a> 定義網域類別
- 網域類別代表 DSL 的概念。 這些實例是 *模型元素*。 例如，在 **MusicLibrary** DSL 中，您可能會有名為 **專輯** 和 **歌曲**的網域類別。
+ 網域類別代表 DSL 的概念。 這些實例是 *模型元素*。 例如，在 **MusicLibrary** DSL 中，您可能會有名為 **專輯** 和 **歌曲** 的網域類別。
 
  若要建立網域類別，您可以從 [ **命名網域類別** ] 工具拖曳至圖表，然後重新命名類別。
 
@@ -188,7 +190,7 @@ ms.locfileid: "85542749"
 ### <a name="add-domain-properties-to-each-domain-class"></a>將網域屬性加入每一個網域類別
  網域屬性會儲存值。 範例為：「名稱」、「標題」、「發佈日期」。
 
- 按一下類別中的 [ **網域屬性** ]，按下 enter 鍵，然後輸入屬性的名稱。 網域屬性的預設類型為字串。 如果您想要變更類型，請選取 [網域] 屬性，然後在 [**屬性**] 視窗中設定**類型**。 如果下拉式清單中沒有您想要的類型，請參閱 [加入屬性類型](#addTypes)。
+ 按一下類別中的 [ **網域屬性** ]，按下 enter 鍵，然後輸入屬性的名稱。 網域屬性的預設類型為字串。 如果您想要變更類型，請選取 [網域] 屬性，然後在 [**屬性**] 視窗中設定 **類型**。 如果下拉式清單中沒有您想要的類型，請參閱 [加入屬性類型](#addTypes)。
 
  **設定項目名稱屬性。**  選取可用來識別語言總管中的項目之網域屬性。 例如，在可以選取 Title 網域屬性的 Song 網域類別中。 在 [ **屬性** ] 視窗中，將 [ **是元素名稱** ] 設定為 `true` 。
 
@@ -220,7 +222,7 @@ ms.locfileid: "85542749"
 
      您的總管隨即呈現模型的樹狀檢視。
 
-4. **建立新項目。** 以滑鼠右鍵按一下頂端的根節點，然後按一下 [**加入新**的_YourClass_]。
+4. **建立新項目。** 以滑鼠右鍵按一下頂端的根節點，然後按一下 [**加入新** 的 _YourClass_]。
 
      您的語言總管中隨即出現類別的新執行個體。
 
@@ -228,7 +230,7 @@ ms.locfileid: "85542749"
 
 6. **檢查網域屬性。當您選取了類別的實例時，請** 檢查屬性視窗。 它應顯示您在此網域類別上所定義的網域屬性。
 
-7. 儲存檔案，將它**關閉，然後再重新開啟**。 在展開節點之後，總管中應該會看到您所建立的所有執行個體。
+7. 儲存檔案，將它 **關閉，然後再重新開啟**。 在展開節點之後，總管中應該會看到您所建立的所有執行個體。
 
 ## <a name="defining-shapes-on-the-diagram"></a><a name="shapes"></a> 在圖表上定義圖形
  您可以將圖表上顯示的項目類別定義為矩形、橢圓形或圖示。
@@ -247,7 +249,7 @@ ms.locfileid: "85542749"
 
    - **影像圖形** ：顯示您提供的影像。
 
-   - 區間**圖形**是包含一或多個專案清單的矩形。
+   - 區間 **圖形** 是包含一或多個專案清單的矩形。
 
      將圖形類別重新命名，該類別將出現在 DSL 定義圖右側的圖形與連接器之下。
 
@@ -267,7 +269,7 @@ ms.locfileid: "85542749"
 
     若要顯示模型項目的名稱或標題，您可能需要至少一個文字裝飾項目。
 
-    以滑鼠右鍵按一下圖形類別的標頭，指向 [ **加入**]，然後按一下 [ **文字**裝飾專案]。 設定裝飾專案的名稱，並在屬性視窗設定其 **位置**。
+    以滑鼠右鍵按一下圖形類別的標頭，指向 [ **加入**]，然後按一下 [ **文字** 裝飾專案]。 設定裝飾專案的名稱，並在屬性視窗設定其 **位置**。
 
 5. **將每個圖形與圖表元素對應連接到它應該顯示的網域類別**。
 
@@ -302,9 +304,9 @@ ms.locfileid: "85542749"
 
    5. 將 [ **工具箱] 圖示** 設定為將會出現在 [工具箱] 中的圖示。 您可以將它設定為新圖示或已用於另一個工具的圖示。
 
-        若要建立新的圖示，請在 **方案總管**中開啟 Dsl\Resources。 複製並貼上其中一個現有的項目工具 BMP 檔案。 將貼上的複本重新命名，然後按兩下加以編輯。
+        若要建立新的圖示，請在 **方案總管** 中開啟 Dsl\Resources。 複製並貼上其中一個現有的項目工具 BMP 檔案。 將貼上的複本重新命名，然後按兩下加以編輯。
 
-        返回 DSL 定義圖，選取工具，然後在屬性視窗按一下 [**工具箱] 圖示**中的 **[...]** 。 在 [ **選取點陣圖** ] 對話方塊中，選取您的。從下拉式功能表中的 BMP 檔。
+        返回 DSL 定義圖，選取工具，然後在屬性視窗按一下 [**工具箱] 圖示** 中的 **[...]** 。 在 [ **選取點陣圖** ] 對話方塊中，選取您的。從下拉式功能表中的 BMP 檔。
 
    如需詳細資訊，請參閱 [幾何圖形的屬性](../modeling/properties-of-geometry-shapes.md) 和 [影像圖形的屬性](../modeling/properties-of-image-shapes.md)。
 
@@ -316,7 +318,7 @@ ms.locfileid: "85542749"
 
 3. **確認項目工具出現在工具箱上。**
 
-4. 從工具拖曳至模型圖來**建立圖形**。
+4. 從工具拖曳至模型圖來 **建立圖形**。
 
 5. **確認每個文字裝飾專案都會出現，** 而且：
 
@@ -324,7 +326,7 @@ ms.locfileid: "85542749"
 
    2. 當您在 [屬性] 視窗或裝飾項目中編輯屬性時，會更新其他檢視。
 
-   先測試圖形之後，您可能想要調整其部分屬性以及加入一些其他的進階功能。 如需詳細資訊，請參閱 [自訂和擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
+   先測試圖形之後，您可能想要調整其部分屬性以及加入一些其他的進階功能。 如需詳細資訊，請參閱 [自訂和擴充 Domain-Specific 語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
 ## <a name="defining-reference-relationships"></a><a name="references"></a> 定義參考關聯性
  您可以在任何來源網域類別與任何目標網域類別之間定義參考關聯性。 參考關聯性通常在圖表上顯示為連接器，做為圖形之間的線條。
@@ -346,7 +348,7 @@ ms.locfileid: "85542749"
 
  **將網域屬性加入關聯性。**  在此圖中，Artist-Album 關聯性具有角色屬性。
 
- 如果相同類別的一個以上的連結可以存在於相同的模型專案**組之間，請設定關聯性的 [允許重複專案] 屬性**。 例如，您可以允許老師向同一位學生教授多個科目。
+ 如果相同類別的一個以上的連結可以存在於相同的模型專案 **組之間，請設定關聯性的 [允許重複專案] 屬性**。 例如，您可以允許老師向同一位學生教授多個科目。
 
  ![接點的圖案對應](../modeling/media/music_connector.png)
 
@@ -380,9 +382,9 @@ ms.locfileid: "85542749"
 
 - 將 [ **工具箱] 圖示** 設定為您想要出現在 [工具箱] 中的圖示。 您可以將它設定為新圖示或已用於另一個工具的圖示。
 
-     若要建立新的圖示，請在 **方案總管**中開啟 Dsl\Resources。 複製並貼上其中一個現有的項目工具 BMP 檔案。 將貼上的複本重新命名，然後按兩下加以編輯。
+     若要建立新的圖示，請在 **方案總管** 中開啟 Dsl\Resources。 複製並貼上其中一個現有的項目工具 BMP 檔案。 將貼上的複本重新命名，然後按兩下加以編輯。
 
-     返回 DSL 定義圖，選取工具，然後在屬性視窗按一下 [**工具箱] 圖示**中的 **[...]** 。 在 [ **選取點陣圖** ] 對話方塊中，選取您的。從下拉式功能表中的 BMP 檔。
+     返回 DSL 定義圖，選取工具，然後在屬性視窗按一下 [**工具箱] 圖示** 中的 **[...]** 。 在 [ **選取點陣圖** ] 對話方塊中，選取您的。從下拉式功能表中的 BMP 檔。
 
 ##### <a name="to-test-a-reference-relationship-and-connector"></a>測試參考關聯性和連接器
 
@@ -392,7 +394,7 @@ ms.locfileid: "85542749"
 
 3. **確認連接工具出現在工具箱上。**
 
-4. 從工具拖曳至模型圖來**建立圖形**。
+4. 從工具拖曳至模型圖來 **建立圖形**。
 
 5. **建立** 圖形之間的連接。 按一下連接器工具，按一下圖形，然後按一下另一個圖形。
 
@@ -406,7 +408,7 @@ ms.locfileid: "85542749"
 
    2. 當您在 [屬性] 視窗或裝飾項目中編輯屬性時，會更新其他檢視。
 
-   先測試連接器之後，您可能想要調整其部分屬性以及加入一些其他的進階功能。 如需詳細資訊，請參閱 [自訂和擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
+   先測試連接器之後，您可能想要調整其部分屬性以及加入一些其他的進階功能。 如需詳細資訊，請參閱 [自訂和擴充 Domain-Specific 語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
 ## <a name="defining-shapes-that-contain-lists-compartment-shapes"></a><a name="compartments"></a> 定義包含清單的圖形：區間圖形
  區間圖形包含一或多個項目清單。 例如，在音樂庫 DSL 中，您可以使用區間圖形來代表音樂 Album。 在每一個 Album 中都有一份 Song 清單。
@@ -435,7 +437,7 @@ ms.locfileid: "85542749"
 
      為您要顯示的每一份清單加入另一個清單項目。
 
-3. **若要在清單中混用數種類型的專案**，請建立繼承自 list 類別的類別。 藉由設定其 **繼承修飾**詞，將清單類別設為抽象。
+3. **若要在清單中混用數種類型的專案**，請建立繼承自 list 類別的類別。 藉由設定其 **繼承修飾** 詞，將清單類別設為抽象。
 
      例如，如果您要依作者 (而非演奏者) 排序古典音樂，您可以建立 Song 的兩個子類別 (ClassicalSong 和 NonClassicalSong)。
 
@@ -481,9 +483,9 @@ ms.locfileid: "85542749"
 
 6. 將 [ **工具箱] 圖示** 設定為將會出現在 [工具箱] 中的圖示。 您可以將它設定為新圖示或已用於另一個工具的圖示。
 
-     若要建立新的圖示，請在 **方案總管**中開啟 Dsl\Resources。 複製並貼上其中一個現有的項目工具 .BMP 檔案。 將貼上的複本重新命名，然後按兩下加以編輯。
+     若要建立新的圖示，請在 **方案總管** 中開啟 Dsl\Resources。 複製並貼上其中一個現有的項目工具 .BMP 檔案。 將貼上的複本重新命名，然後按兩下加以編輯。
 
-     返回 DSL 定義圖，選取工具，然後在屬性視窗按一下 [**工具箱] 圖示**中的 **[...]** 。 在 [ **選取點陣圖** ] 對話方塊中，從下拉式功能表中選取您的 BMP 檔案。
+     返回 DSL 定義圖，選取工具，然後在屬性視窗按一下 [**工具箱] 圖示** 中的 **[...]** 。 在 [ **選取點陣圖** ] 對話方塊中，從下拉式功能表中選取您的 BMP 檔案。
 
 #### <a name="to-test-a-compartment-shape"></a>測試區間圖形
 
@@ -507,7 +509,7 @@ ms.locfileid: "85542749"
 
    ![已產生的 DSL 總管](../modeling/media/music_explorer.png)
 
-   先測試區間圖形之後，您可能想要調整其部分屬性以及加入一些其他的進階功能。 如需詳細資訊，請參閱 [自訂和擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
+   先測試區間圖形之後，您可能想要調整其部分屬性以及加入一些其他的進階功能。 如需詳細資訊，請參閱 [自訂和擴充 Domain-Specific 語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
 ### <a name="displaying-a-reference-link-in-a-compartment"></a>在區間中顯示參考連結
  您在區間中顯示的項目通常是以區間圖形所代表的項目之子系。 但是您有時會想要顯示以參考關聯性連結到它的項目。
@@ -577,7 +579,7 @@ ms.locfileid: "85542749"
 
  若要加入網域列舉，請以滑鼠右鍵按一下 [ **DSL Explorer** ] 中模型的根，然後按一下 [ **加入新的網域列舉**]。 專案將會出現在 [**網欄位型別**] 節點下的 [ **DSL Explorer** ] 中。 此項目不會出現在圖形上。
 
- 若要將列舉常值加入至網域列舉，請以滑鼠右鍵按一下 [ **DSL Explorer** ] 中的網域列舉，然後按一下 [ **加入新的列舉常**值]。
+ 若要將列舉常值加入至網域列舉，請以滑鼠右鍵按一下 [ **DSL Explorer** ] 中的網域列舉，然後按一下 [ **加入新的列舉常** 值]。
 
  根據預設，具有列舉類型的屬性一次只能設定為一個列舉值。 如果您想要讓使用者和程式設計師能夠設定任何值的組合（一個「位欄位」），請設定列舉的 **IsFlags** 屬性。
 
@@ -593,9 +595,9 @@ ms.locfileid: "85542749"
 
 1. 使用 DSL 定義的更多功能來微調 DSL。 例如，您可以製作可建立數種類型連接器的單一連接器工具，並且可以控制規則，透過該規則，刪除一個項目也會刪除相關項目。 這些技巧大部分是透過設定 DSL 定義中的值來達成，而某些技巧則需要幾行程式碼。
 
-     如需詳細資訊，請參閱 [自訂和擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
+     如需詳細資訊，請參閱 [自訂和擴充 Domain-Specific 語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
-2. 使用程式碼來達成更進階的效果，即可擴充模型工具。 例如，您可以建立可變更模型的功能表命令，並建立能整合兩個或多個 DSL 的工具。 VMSDK 是為了能讓您輕鬆整合擴充功能與從 DSL 定義產生的程式碼而專門設計的。  如需詳細資訊，請參閱 [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
+2. 使用程式碼來達成更進階的效果，即可擴充模型工具。 例如，您可以建立可變更模型的功能表命令，並建立能整合兩個或多個 DSL 的工具。 VMSDK 是為了能讓您輕鬆整合擴充功能與從 DSL 定義產生的程式碼而專門設計的。  如需詳細資訊，請參閱 [撰寫程式碼以自訂 Domain-Specific 語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
 
 ### <a name="changing-the-dsl-definition"></a>變更 DSL 定義
  當您在 DSL 定義中建立任何項目時，會自動設定許多預設值。 設定預設值之後，您就可以加以變更。 這樣可簡化 DSL 開發，同時仍然可以進行強大的自訂。
@@ -604,7 +606,7 @@ ms.locfileid: "85542749"
 
  因此，您應了解當您在 DSL 定義中變更某些關聯性時，儲存定義或轉換所有範本時，回報錯誤的情形並非不尋常。 其中大部分的錯誤都很容易修正。 按兩下錯誤報告可查看錯誤的位置。
 
- 另請參閱 [如何：變更特定領域語言的命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。
+ 另請參閱 [如何：變更 Domain-Specific 語言的命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。
 
 ## <a name="troubleshooting"></a><a name="trouble"></a> 疑難排解
  下表列出在設計 DSL 時會遇到的一些最常見的問題，以及對其方案的建議事項。 [視覺效果工具](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)擴充性論壇有更多建議。
@@ -616,11 +618,11 @@ ms.locfileid: "85542749"
 | 在 [DSL Explorer] 中，我無法加入集合。 例如，當我以滑鼠右鍵按一下 [工具] 時，功能表中沒有 [加入工具] 命令。<br /><br /> 在我的 DSL 總管中，我無法將項目加入清單。 | 以滑鼠右鍵按一下您正在嘗試之節點上方的項目。 當您想要加入清單時，[加入] 命令不在清單節點中，而是在其擁有者中。 |
 | 我建立了網域類別，但是無法在語言總管中建立執行個體。 | 每個網域類別 (根類別除外) 都必須是一個內嵌關聯性的目標。 |
 | 在我的 DSL 總管中，項目只會與其類型名稱一起顯示。 | 在 DSL 定義中，選取類別的網域屬性，然後在屬性視窗中，將 [ **是元素名稱** ] 設定為 true。 |
-| My DSL 一律在 XML 編輯器中開啟。 | 這種情況的發生原因是在讀取檔案時所發生的錯誤。 然而，即使在修正該錯誤之後，您都必須明確地將編輯器重設為 DSL 設計工具。<br /><br /> 以滑鼠右鍵按一下專案專案，再按一下 [ **開啟方式** ]，然後選取 [YourLanguage ***設計工具 (預設) **。 |
-| 變更組件名稱之後未出現 DSL 的工具箱。 | 檢查及更新 **DslPackage\GeneratedCode\Package.tt** 如需詳細資訊，請參閱 [如何：變更特定領域語言的命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。 |
+| My DSL 一律在 XML 編輯器中開啟。 | 這種情況的發生原因是在讀取檔案時所發生的錯誤。 然而，即使在修正該錯誤之後，您都必須明確地將編輯器重設為 DSL 設計工具。<br /><br /> 以滑鼠右鍵按一下專案專案，再按一下 [ **開啟方式** ]，然後選取 [YourLanguage ***設計工具 (預設)**。 |
+| 變更組件名稱之後未出現 DSL 的工具箱。 | 檢查及更新 **DslPackage\GeneratedCode\Package.tt** 如需詳細資訊，請參閱 [如何：變更 Domain-Specific 語言的命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。 |
 | DSL 的工具箱未出現，但是我未變更組件名稱。<br /><br /> 或者，出現一個訊息方塊，回報載入擴充功能失敗。 | 重設實驗執行個體，然後重建方案。<br /><br /> 1. 在 Windows [開始] 功能表的 [ **所有程式**] 底下，依序展開 [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] [] 和 [ **工具**]，然後按一下 **[重設 Microsoft Visual Studio 實驗實例**]。<br />2. 在 [ **組建** ] 功能表上，按一下 [ **重建方案**]。 |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [開始使用網域指定的語言](../modeling/getting-started-with-domain-specific-languages.md)
 - [建立 Windows Form 架構之網域指定的語言](../modeling/creating-a-windows-forms-based-domain-specific-language.md)

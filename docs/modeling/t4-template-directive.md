@@ -1,5 +1,7 @@
 ---
 title: T4 範本指示詞
+description: 瞭解 Visual Studio T4 文字模板通常會以範本指示詞開頭，此指示詞會指定如何處理範本。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2763ca540a6b0518eed8bf757412716616d3ae3e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 75001da1829f6dafdac68359d1b0f6c7c14ed266
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808060"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363662"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 
@@ -156,7 +158,7 @@ Squares of numbers:
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>執行階段 (前置處理過的) 文字範本中的繼承
 
-您可以在執行階段文字範本之間使用繼承，以建立基本範本，此範本會擁有數個衍生的變體。 執行時間範本是將 **自訂工具** 屬性設定為 **TextTemplatingFilePreprocessor**的範本。 執行階段範本會產生您可以在應用程式中呼叫的程式碼，用以建立範本中定義的文字。 如需詳細資訊，請參閱 [使用 T4 文字模板的執行時間文字產生](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+您可以在執行階段文字範本之間使用繼承，以建立基本範本，此範本會擁有數個衍生的變體。 執行時間範本是將 **自訂工具** 屬性設定為 **TextTemplatingFilePreprocessor** 的範本。 執行階段範本會產生您可以在應用程式中呼叫的程式碼，用以建立範本中定義的文字。 如需詳細資訊，請參閱 [使用 T4 文字模板的執行時間文字產生](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
 如果沒有指定 `inherits` 屬性，則會從文字範本產生基底類別和衍生類別。 指定 `inherits` 屬性時，只會產生衍生類別。 您可以手動撰寫基底類別，但是它必須提供衍生類別所用的方法。
 
@@ -231,7 +233,7 @@ This is the common footer.
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>設計階段文字範本中的繼承
 
-設計階段文字模板是 **自訂工具** 設定為 **TextTemplatingFileGenerator**的檔案。 範本會產生程式碼或文字的輸出檔，其會形成 Visual Studio 專案的一部分。 為產生輸出檔，會先將範本轉譯為中繼程式碼檔，後者通常不會顯示出來。 `inherits` 屬性會為這個中繼程式碼指定基底類別。
+設計階段文字模板是 **自訂工具** 設定為 **TextTemplatingFileGenerator** 的檔案。 範本會產生程式碼或文字的輸出檔，其會形成 Visual Studio 專案的一部分。 為產生輸出檔，會先將範本轉譯為中繼程式碼檔，後者通常不會顯示出來。 `inherits` 屬性會為這個中繼程式碼指定基底類別。
 
 如果是設計階段文字範本，您可指定任何衍生自 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> 的基底類別。 使用 `<#@assembly#>` 指示詞，可以載入包含基底類別的組件或專案。
 

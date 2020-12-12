@@ -1,5 +1,7 @@
 ---
 title: 相依性圖表︰方針
+description: 瞭解如何在 Visual Studio 中建立相依性圖表，以在高層級描述您的應用程式架構。
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f8ec90d045259cd5d10533db6096154376d48fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bfef2f9397fbe8dfeceaa8789cf8d118315b26d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594626"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363961"
 ---
 # <a name="dependency-diagrams-guidelines"></a>相依性圖表：指導方針
 
@@ -41,7 +43,7 @@ ms.locfileid: "75594626"
 
 1. 為整個應用程式或其中的圖層建立相依性[圖表](#Create)。
 
-2. [定義圖層以代表應用程式的主要功能區域或元件](#CreateLayers) 。 根據這些圖層的功能，例如「簡報」或「服務」來為圖層命名。 如果您有 Visual Studio 的解決方案，您可以將每個圖層與成品集合（例如專案、命名空間、檔案 *等）產生*關聯。
+2. [定義圖層以代表應用程式的主要功能區域或元件](#CreateLayers) 。 根據這些圖層的功能，例如「簡報」或「服務」來為圖層命名。 如果您有 Visual Studio 的解決方案，您可以將每個圖層與成品集合（例如專案、命名空間、檔案 *等）產生* 關聯。
 
 3. 探索各層之間[的現有](#Generate)相依性。
 
@@ -68,7 +70,7 @@ ms.locfileid: "75594626"
 
 ## <a name="define-layers-to-represent-functional-areas-or-components"></a><a name="CreateLayers"></a> 定義圖層以代表功能區域或元件
 
-圖層代表 *構件*的邏輯群組，例如專案、程式碼檔案、命名空間、類別和方法。 您可以從 Visual c # 和 Visual Basic 專案的成品建立圖層，也可以連結檔（例如 Word 檔案或 PowerPoint 簡報），將規格或計畫附加至圖層。 每個圖層都會顯示為圖表上的矩形，並顯示連結到圖層的成品數目。 圖層可以包含巢狀圖層以描述更特定的工作。
+圖層代表 *構件* 的邏輯群組，例如專案、程式碼檔案、命名空間、類別和方法。 您可以從 Visual c # 和 Visual Basic 專案的成品建立圖層，也可以連結檔（例如 Word 檔案或 PowerPoint 簡報），將規格或計畫附加至圖層。 每個圖層都會顯示為圖表上的矩形，並顯示連結到圖層的成品數目。 圖層可以包含巢狀圖層以描述更特定的工作。
 
 一般來說，會根據圖層的函式 (例如，「簡報」或「服務」) 來為圖層命名。 如果成品具有密切相依性，請將它們放在同一圖層。 如果成品可以個別更新或用於個別應用程式，請將它們放在不同的圖層中。 若要深入瞭解如何分層模式，請造訪 & 實務的模式網站 [http://go.microsoft.com/fwlink/?LinkId=145794](https://archive.codeplex.com/?p=apparch) 。
 
@@ -90,7 +92,7 @@ ms.locfileid: "75594626"
 只要與某個圖層關聯的成品參考到與另一個圖層關聯的成品，相依性便會存在。 例如，某個圖層中的類別會宣告在另一個圖層中具有類別的變數。 您可以讓相依性進行反向工程以找出現有的相依性。
 
 > [!NOTE]
-> 您無法針對特定種類的成品進行其相依性的反向工程。 例如，對連結到文字檔的圖層進行反向工程時，無法找出與該圖層之間的任何相依性。 若要查看哪些成品具有您可以進行反向工程的相依性，請在一或多個圖層上按一下滑鼠右鍵，然後按一下 [ **View Links**]。 在 [ **圖層瀏覽器**] 中，檢查 [ **支援驗證** ] 資料行。 相依性不會針對此資料行顯示為 **False**的成品進行反向工程。
+> 您無法針對特定種類的成品進行其相依性的反向工程。 例如，對連結到文字檔的圖層進行反向工程時，無法找出與該圖層之間的任何相依性。 若要查看哪些成品具有您可以進行反向工程的相依性，請在一或多個圖層上按一下滑鼠右鍵，然後按一下 [ **View Links**]。 在 [ **圖層瀏覽器**] 中，檢查 [ **支援驗證** ] 資料行。 相依性不會針對此資料行顯示為 **False** 的成品進行反向工程。
 
 ### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>在圖層之間對現有相依性進行反向工程
 
@@ -123,7 +125,7 @@ ms.locfileid: "75594626"
 
 當您著手開發新專案或新專案的新區域時，可以繪製圖層與相依性，以便有助您先識別主要元件，再著手開發程式碼。
 
-- 可能的話，請在相依性圖表中**顯示可識別的架構模式**。 例如，描述桌面應用程式的相依性圖表可能包括簡報、網域邏輯和資料存放區等圖層。 涵蓋應用程式內單一功能的相依性圖表可能具有模型、視圖和控制器等層級。 如需這類模式的詳細資訊，請參閱 [模式 & 實務：應用程式架構](https://archive.codeplex.com/?p=apparch)。
+- 可能的話，請在相依性圖表中 **顯示可識別的架構模式**。 例如，描述桌面應用程式的相依性圖表可能包括簡報、網域邏輯和資料存放區等圖層。 涵蓋應用程式內單一功能的相依性圖表可能具有模型、視圖和控制器等層級。 如需這類模式的詳細資訊，請參閱 [模式 & 實務：應用程式架構](https://archive.codeplex.com/?p=apparch)。
 
 - **為每個圖層** （例如命名空間、類別或元件）建立程式碼成品。 這可讓您更容易地遵循程式碼，並將程式碼成品連結至圖層。 一旦建立每個成品後，請將它連結至適當的圖層。
 
@@ -172,7 +174,7 @@ ms.locfileid: "75594626"
 
 為了確保程式碼中的未來變更符合相依性圖表，請將圖層驗證封裝含在解決方案的標準組建流程中。 每當有其他小組成員建立方案時，程式碼和相依性圖表中的相依性之間的任何差異都會回報為組建錯誤。 如需在組建流程中包含圖層驗證的詳細資訊，請參閱使用相依性 [圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [相依性圖表︰參考](../modeling/layer-diagrams-reference.md)
 - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)

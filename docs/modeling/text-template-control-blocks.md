@@ -1,5 +1,7 @@
 ---
 title: 文字範本控制區塊
+description: 深入瞭解文字模板控制區塊，以及控制項區塊如何讓您在文字模板中撰寫程式碼，以因應不同的輸出。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef39e82ea1abe95b3bea799545ed7fbf5b766fd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11cc289f668a674707c584396998ea7abb9e7ea9
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591784"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363584"
 ---
 # <a name="text-template-control-blocks"></a>文字範本控制區塊
 控制區塊可讓您在文字範本撰寫程式碼，以便產生不同的輸出。 有三種類型的控制區塊，是使用左括號來區別：

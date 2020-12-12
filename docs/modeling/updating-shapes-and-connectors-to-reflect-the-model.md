@@ -1,5 +1,7 @@
 ---
 title: 更新圖案和接點來反映模型
+description: 瞭解 Visual Studio 中的特定領域語言，您可以讓圖形的外觀反映基礎模型的狀態。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3d16cbc35c468c0101db479799215bcccf64ef6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115020"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362596"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>更新圖形和接點來反映模型
 
@@ -27,7 +29,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>設定圖形地圖屬性以控制裝飾專案的可見度
 
-您可以在 DSL 定義中設定圖形與網域類別之間的對應，而不需撰寫程式碼，即可控制裝飾專案的可見度。 如需詳細資訊，請參閱 [如何定義網域指定的語言](../modeling/how-to-define-a-domain-specific-language.md)。
+您可以在 DSL 定義中設定圖形與網域類別之間的對應，而不需撰寫程式碼，即可控制裝飾專案的可見度。 如需詳細資訊，請參閱 [如何定義 Domain-Specific 語言](../modeling/how-to-define-a-domain-specific-language.md)。
 
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>將圖形的色彩和樣式公開為屬性
 
@@ -84,7 +86,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>使用 OnChildConfigured 初始化圖形的屬性
 
-若要在第一次建立圖形時設定其屬性，請 `OnChildConfigured()` 在圖表類別的部分定義中覆寫。 圖類別是在您的 DSL 定義中指定，而產生的程式碼則是在 **Dsl\Generated Code\Diagram.cs**中。 例如：
+若要在第一次建立圖形時設定其屬性，請 `OnChildConfigured()` 在圖表類別的部分定義中覆寫。 圖類別是在您的 DSL 定義中指定，而產生的程式碼則是在 **Dsl\Generated Code\Diagram.cs** 中。 例如：
 
 ```csharp
 partial class MyLanguageDiagram

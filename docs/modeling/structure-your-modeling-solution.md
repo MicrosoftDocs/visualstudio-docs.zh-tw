@@ -1,5 +1,7 @@
 ---
 title: 建構模型方案
+description: 瞭解將應用程式分割成與整體分層圖中各層對應之不同部分的模型化配置。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc4eba7dc4d185cbd8eb4f1b073fce8b0c9fb07e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d2f865cf66da0bb4496a3d754a49d1f4dcc70ff
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545037"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363727"
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 
@@ -52,7 +54,7 @@ ms.locfileid: "85545037"
 
    現在每個圖層都有一個模型，再加上一個應用程式架構模型。 每個模型都包含在自己的方案中。 這可讓小組成員同時在圖層上工作。
 
-2. 請在架構方案中，加入每個圖層方案的模型專案。 若要執行此工作，請開啟架構方案。 在 **方案總管**中，以滑鼠右鍵按一下方案節點，指向 [新增]，然後按一下 [ **現有專案**]。 巡覽至某個圖層方案的模型專案 (.modelproj)。
+2. 請在架構方案中，加入每個圖層方案的模型專案。 若要執行此工作，請開啟架構方案。 在 **方案總管** 中，以滑鼠右鍵按一下方案節點，指向 [新增]，然後按一下 [ **現有專案**]。 巡覽至某個圖層方案的模型專案 (.modelproj)。
 
    現在每個模型都會顯示在兩個方案中：其「主」方案和架構方案。
 
@@ -72,9 +74,9 @@ ms.locfileid: "85545037"
 
 #### <a name="use-a-separate-package-for-each-layer"></a>針對每個圖層使用個別的套件
 
-1. 在每個圖層的方案中，加入架構模型專案。 在 **方案總管**中，以滑鼠右鍵按一下方案節點，指向 [ **新增**]，然後按一下 [ **現有專案**]。 現在從每個方案都可以存取單一模型專案：架構專案及每個圖層的開發專案。
+1. 在每個圖層的方案中，加入架構模型專案。 在 **方案總管** 中，以滑鼠右鍵按一下方案節點，指向 [ **新增**]，然後按一下 [ **現有專案**]。 現在從每個方案都可以存取單一模型專案：架構專案及每個圖層的開發專案。
 
-2. 在共用模型中，為每個圖層建立一個封裝：在 **方案總管**中，選取模型專案。 在 [ **UML 模型瀏覽器**] 中，以滑鼠右鍵按一下模型根節點，指向 [ **加入**]，然後按一下 [ **封裝**]。
+2. 在共用模型中，為每個圖層建立一個封裝：在 **方案總管** 中，選取模型專案。 在 [ **UML 模型瀏覽器**] 中，以滑鼠右鍵按一下模型根節點，指向 [ **加入**]，然後按一下 [ **封裝**]。
 
    每個套件都會包含描述對應圖層的需求和設計的圖表。
 
@@ -96,7 +98,7 @@ ms.locfileid: "85545037"
 
 2. 建立要用做未來專案起點的方案結構。
 
-3. 按一下 [檔案] **** 功能表上的 [匯出範本為 VSIX] ****。
+3. 按一下 [檔案]  功能表上的 [匯出範本為 VSIX] 。
 
    [ **匯出範本 AS VSIX Wizard]** 隨即開啟。
 
@@ -106,7 +108,7 @@ ms.locfileid: "85545037"
 
 [組織及管理您的模型](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)
 - [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)

@@ -1,5 +1,7 @@
 ---
 title: 一個方案中有多個 DSL
+description: 瞭解如何將數個特定領域的語言封裝 (Dsl) 成為單一解決方案的一部分，以便將它們一起安裝。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fbadc93f6245427284ea10c1cdd7cf99c5a7f68
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542593"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363088"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>一個方案中有多個 DSL
 
@@ -32,7 +34,7 @@ ms.locfileid: "85542593"
 
    - 變更 **Dsl** 和 **DslPackage** 專案的名稱，使其全部不同。 例如：`Dsl1`、`DslPackage1`、`Dsl2`、`DslPackage2`。
 
-   - 在每個 **DslPackage \* \ source.extension.tt**中，將這一行更新為正確的 Dsl 專案名稱：
+   - 在每個 **DslPackage \* \ source.extension.tt** 中，將這一行更新為正確的 Dsl 專案名稱：
 
       `string dslProjectName = "Dsl2";`
 
@@ -44,17 +46,17 @@ ms.locfileid: "85542593"
 
    2. 針對每個 DSL，選擇 [ **新增內容** ]，然後新增：
 
-       - `Dsl*`作為**MEF 元件**的專案
+       - `Dsl*`作為 **MEF 元件** 的專案
 
-       - `DslPackage*`作為**MEF 元件**的專案
+       - `DslPackage*`作為 **MEF 元件** 的專案
 
        - `DslPackage*` 專案為 **VS 封裝**
 
 3. 建置方案。
 
-   產生的 VSIX 會同時安裝這兩個 DSL。 您可以使用 F5 來測試它們，或部署_您 vsix 專案_**\bin\Debug \\ \* .vsix**。
+   產生的 VSIX 會同時安裝這兩個 DSL。 您可以使用 F5 來測試它們，或部署 _您 vsix 專案_**\bin\Debug \\ \* .vsix**。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [如何：加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)

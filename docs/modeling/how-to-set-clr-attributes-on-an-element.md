@@ -1,5 +1,7 @@
 ---
 title: 如何：在項目上設定 CLR 屬性
+description: 瞭解如何新增任何繼承自 System.object 類別的屬性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49551a5e96e3c354b54b6b2ba7cedf1ba2ab4470
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: df9f8b16edcbe575ebac67f4acde9111a9511b85
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811197"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363844"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>如何：在項目上設定 CLR 屬性
 自訂屬性是可以加入至網域元素、圖形、連接器和圖表的特殊屬性。 您可以新增任何繼承自類別的屬性 `System.Attribute` 。
@@ -41,6 +43,6 @@ ms.locfileid: "90811197"
 
      `[`*AttributeName* `(`*ParameterName* `=`*類型*`)]`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

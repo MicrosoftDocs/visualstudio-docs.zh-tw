@@ -1,5 +1,7 @@
 ---
 title: 撰寫 T4 文字範本的方針
+description: 瞭解當您在 Visual Studio 中產生程式碼或其他應用程式資源時，會很有説明的一般方針。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f7be4ce9b8beb7699844397de3e1fc206d017c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596537"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363402"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>撰寫 T4 文字範本的方針
 
 如果您要在 Visual Studio 中產生程式碼或其他應用程式資源，這些一般指導方針可能會很有説明。 它們不是固定規則。
 
-## <a name="guidelines-for-design-time-t4-templates"></a>設計階段 T4 範本的指導方針
+## <a name="guidelines-for-design-time-t4-templates"></a>Design-Time T4 範本的指導方針
 
 設計階段 T4 範本是在設計階段于 Visual Studio 專案中產生程式碼的範本。 如需詳細資訊，請參閱 [使用 T4 文字模板的設計階段程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
@@ -76,7 +78,7 @@ ms.locfileid: "75596537"
 
 使用產生的程式碼資料夾。
 
-將範本和產生的檔案放在名為 [產生的程式 **代碼**] 的專案資料夾中，以清楚指出這些檔案不應該直接編輯。 如果您建立自訂程式碼來覆寫或新增至產生的類別，請將這些類別放在名為 **自訂程式碼**的資料夾中。 一般專案的結構如下所示：
+將範本和產生的檔案放在名為 [產生的程式 **代碼**] 的專案資料夾中，以清楚指出這些檔案不應該直接編輯。 如果您建立自訂程式碼來覆寫或新增至產生的類別，請將這些類別放在名為 **自訂程式碼** 的資料夾中。 一般專案的結構如下所示：
 
 ```
 MyProject
@@ -91,7 +93,7 @@ MyProject
    AnotherClass.cs
 ```
 
-## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>執行時間 (前置處理) T4 範本的指導方針
+## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Run-Time (前置處理) T4 範本的指導方針
 
 將一般材質移至繼承的範本。
 
@@ -105,11 +107,11 @@ MyProject
 
 這樣做的優點是可以更容易撰寫程式碼，因為 IntelliSense 可供使用。 此外，您可以在簡報和基礎邏輯之間取得更好的分隔。
 
-例如，在 **MyReportText.tt**中：
+例如，在 **MyReportText.tt** 中：
 
 `The total is: <#= ComputeTotal() #>`
 
-在 **MyReportText-Methods.cs**中：
+在 **MyReportText-Methods.cs** 中：
 
 `private string ComputeTotal() { ... }`
 
@@ -169,7 +171,7 @@ Team Members:
 
 您也可以將自己的圖表類型設計為 (DSL) 的特定領域語言。 您可以從 UML 和 Dsl 產生程式碼。 如需詳細資訊，請參閱 [分析和模型化架構](../modeling/analyze-and-model-your-architecture.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [使用 T4 文字範本在執行階段產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)

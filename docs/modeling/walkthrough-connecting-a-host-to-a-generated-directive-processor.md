@@ -1,5 +1,7 @@
 ---
 title: 將主機連線至產生的指示詞處理器
+description: 瞭解如何擴充您的自訂主機，使其支援可呼叫指示詞處理器的文字模板。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a98e432c7eb9508d32f52e51acc1447035b9058b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237993"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362492"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連線至產生的指示詞處理器
 
@@ -37,7 +39,7 @@ ms.locfileid: "88237993"
 
 - 使用產生的指示詞處理器來測試自訂主機。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要定義 DSL，您必須已安裝下列元件：
 
@@ -51,9 +53,9 @@ ms.locfileid: "88237993"
 
 此外，您必須在 [逐步解說：建立自訂文字模板主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)中建立自訂文字模板轉換。
 
-## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>使用特定領域語言工具來產生指示詞處理器
+## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>使用 Domain-Specific 語言工具來產生指示詞處理器
 
-在這個逐步解說中，您會使用特定領域語言設計工具 Wizard 為方案 DSLMinimalTest 建立特定領域語言。
+在這個逐步解說中，您會使用 Domain-Specific 的語言設計工具，為 [方案 DSLMinimalTest] 建立特定領域的語言。
 
 1. 建立具有下列特性的特定領域語言方案：
 
@@ -65,7 +67,7 @@ ms.locfileid: "88237993"
 
    - 公司名稱： Fabrikam
 
-   如需有關建立特定領域語言解決方案的詳細資訊，請參閱 [如何：建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+   如需有關建立特定領域語言解決方案的詳細資訊，請參閱 [如何：建立 Domain-Specific 語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 2. 在 [建置] 功能表上，按一下 [建置方案]。
 
@@ -76,13 +78,13 @@ ms.locfileid: "88237993"
 
     Visual Studio 的第二個實例隨即開啟。
 
-4. 在實驗組建的**方案總管**中，按兩下檔案**範例。**
+4. 在實驗組建的 **方案總管** 中，按兩下檔案 **範例。**
 
     檔案隨即在設計工具中開啟。 請注意，此模型有兩個元素： ExampleElement1 和 ExampleElement2，以及兩者之間的連結。
 
 5. 關閉 Visual Studio 的第二個實例。
 
-6. 儲存方案，然後關閉特定領域語言設計工具。
+6. 儲存方案，然後關閉 Domain-Specific 語言設計工具。
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>將自訂文字模板主機連接至指示詞處理器
 
@@ -327,7 +329,7 @@ ms.locfileid: "88237993"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > 您可以流覽至 **Windows 檔案總管**中的檔案 CustomHost.exe，然後將檔案拖曳到 [命令提示字元] 視窗中，而不是輸入位址。
+    > 您可以流覽至 **Windows 檔案總管** 中的檔案 CustomHost.exe，然後將檔案拖曳到 [命令提示字元] 視窗中，而不是輸入位址。
 
 3. 輸入空格。
 
@@ -338,11 +340,11 @@ ms.locfileid: "88237993"
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > 您可以流覽至 **Windows 檔案總管**中的檔案 TestTemplateWithDP.txt，然後將檔案拖曳到 [命令提示字元] 視窗中，而不是輸入位址。
+    > 您可以流覽至 **Windows 檔案總管** 中的檔案 TestTemplateWithDP.txt，然後將檔案拖曳到 [命令提示字元] 視窗中，而不是輸入位址。
 
      自訂主應用程式會執行並啟動文字模板轉換流程。
 
-5. 在 **Windows 檔案總管**中，流覽至包含檔案 TestTemplateWithDP.txt 的資料夾。
+5. 在 **Windows 檔案總管** 中，流覽至包含檔案 TestTemplateWithDP.txt 的資料夾。
 
      此資料夾也包含 TestTemplateWithDP1.txt 的檔案。
 
@@ -360,6 +362,6 @@ ms.locfileid: "88237993"
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)

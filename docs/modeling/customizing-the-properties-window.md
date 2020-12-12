@@ -1,5 +1,7 @@
 ---
 title: 自訂屬性視窗
+description: 瞭解如何在 Visual Studio 中自訂特定領域語言 (DSL) 的 [屬性] 視窗的外觀和行為。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7d4ac76b8b10fde0c193e3eda73cec611c1441
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548274"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362870"
 ---
 # <a name="customize-the-properties-window"></a>自訂屬性視窗
 
@@ -40,7 +42,7 @@ ms.locfileid: "85548274"
 
 以滑鼠右鍵按一下 DSL 定義中的圖形類別，指向 [ **加入**]，然後選擇功能。
 
-在圖形上，您可以公開 **FillColor**、 **OutlineColor**、 **TextColor**、 **OutlineDashStyle**、 **OutlineThickness** 和 **FillGradientMode** 屬性。 在連接器上，您可以公開**色彩** `,` **TextColor**、 **DashStyle**和**粗細**屬性。 在圖表中，您可以公開 **FillColor** 和 **TextColor** 屬性。
+在圖形上，您可以公開 **FillColor**、 **OutlineColor**、 **TextColor**、 **OutlineDashStyle**、 **OutlineThickness** 和 **FillGradientMode** 屬性。 在連接器上，您可以公開 **色彩** `,` **TextColor**、 **DashStyle** 和 **粗細** 屬性。 在圖表中，您可以公開 **FillColor** 和 **TextColor** 屬性。
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>轉送：顯示相關元素的屬性
 
@@ -62,7 +64,7 @@ ms.locfileid: "85548274"
 
 ### <a name="add-property-forwarding"></a>新增屬性轉送
 
-若要轉送屬性，您必須定義網欄位型別描述元。 如果您在兩個網域類別之間有網域關聯性，您可以使用網欄位型別描述元，將第一個類別中的網域屬性設定為第二個網域類別中的網域屬性值。 例如，如果您在**書籍**網域類別和**作者**網域類別之間有關聯性，則可以使用定義欄位型別描述項，讓書籍**作者**的**名稱**屬性在使用者選取書籍時出現在屬性視窗中。
+若要轉送屬性，您必須定義網欄位型別描述元。 如果您在兩個網域類別之間有網域關聯性，您可以使用網欄位型別描述元，將第一個類別中的網域屬性設定為第二個網域類別中的網域屬性值。 例如，如果您在 **書籍** 網域類別和 **作者** 網域類別之間有關聯性，則可以使用定義欄位型別描述項，讓書籍 **作者** 的 **名稱** 屬性在使用者選取書籍時出現在屬性視窗中。
 
 > [!NOTE]
 > 屬性轉送只會影響使用者編輯模型時的屬性視窗。 它不會在接收的類別上定義網域屬性。 如果您想要在 DSL 定義的其他部分或在程式碼中存取轉送的網域屬性，您必須存取轉送元素。
@@ -71,13 +73,13 @@ ms.locfileid: "85548274"
 
 #### <a name="forward-a-property-from-another-element"></a>從另一個元素轉寄屬性
 
-1. 建立 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 包含至少兩個類別的方案，在此範例中稱為 **Book** 和 **Author**。 **書籍**與**作者**之間應該有兩種類型的關聯性。
+1. 建立 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 包含至少兩個類別的方案，在此範例中稱為 **Book** 和 **Author**。 **書籍** 與 **作者** 之間應該有兩種類型的關聯性。
 
     「來源」角色的多重性 (**書** 中的角色) 應為 0 ..1 或 1 ..1，如此一來，每 **本書** 都有一 **位作者**。
 
 2. 在 [ **DSL Explorer**] 中，以滑鼠右鍵按一下 [ **Book** 網域] 類別，然後按一下 [ **加入新的 {0} domaintypedescriptor**]。
 
-    自**定義類型描述**項節點下會出現名為 [**自訂屬性描述項的路徑**] 的節點。
+    自 **定義類型描述** 項節點下會出現名為 [**自訂屬性描述項的路徑**] 的節點。
 
 3. 以滑鼠右鍵按一下 [ **自訂類型描述** 項] 節點，然後按一下 [ **加入新的 PropertyPath**]。
 
@@ -87,7 +89,7 @@ ms.locfileid: "85548274"
 
     您可以按一下此屬性右邊的向下箭號，以編輯樹狀檢視中的路徑。 如需網域路徑的詳細資訊，請參閱 [網域路徑語法](../modeling/domain-path-syntax.md)。 當您編輯它時，路徑應該類似 **BookReferencesAuthor。 Author/！作者**。
 
-5. 將**屬性**設為**Author**的**Name**網域屬性。
+5. 將 **屬性** 設為 **Author** 的 **Name** 網域屬性。
 
 6. 將 [ **顯示名稱** ] 設定為 [ **作者名稱**]。
 
@@ -113,7 +115,7 @@ ms.locfileid: "85548274"
 
 ### <a name="define-a-domain-property-that-has-an-external-type"></a>定義具有外部類型的網域屬性
 
-1. 在 **方案總管**中，將參考加入至 **Dsl** 專案中包含外部類型的元件 (DLL) 。
+1. 在 **方案總管** 中，將參考加入至 **Dsl** 專案中包含外部類型的元件 (DLL) 。
 
     元件可以是 .NET 元件，也可以是您所提供的元件。
 

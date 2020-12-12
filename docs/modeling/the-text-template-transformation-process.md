@@ -1,5 +1,7 @@
 ---
 title: 文字範本轉換流程
+description: 瞭解文字模板轉換程式會將文字模板檔案作為輸入，並產生新的文字檔作為輸出。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0caadfe9abf38b2d83995da7efa32d618b4bfe0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565860"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362648"
 ---
 # <a name="the-text-template-transformation-process"></a>文字範本轉換流程
 文字模板轉換程式會將文字模板檔案作為輸入，並產生新的文字檔作為輸出。 例如，您可以使用文字模板來產生 Visual Basic 或 c # 程式碼，也可以產生 HTML 報表。
@@ -23,7 +25,7 @@ ms.locfileid: "75565860"
 
  文字模板轉換進程會以兩個步驟執行。 首先，引擎會建立一個暫時性類別，也就是產生的轉換類別。 這個類別包含指示詞和控制區塊所產生的程式碼。 之後，引擎會編譯並執行產生的轉換類別，以產生輸出檔。
 
-## <a name="components"></a>元件
+## <a name="components"></a>單元
 
 |元件|說明|可自訂 (是/否) |
 |-|-|-|

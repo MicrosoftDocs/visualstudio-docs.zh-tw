@@ -1,5 +1,7 @@
 ---
 title: DslDefinition.dsl 檔
+description: 瞭解 DSL 工具解決方案 Dsl 專案中 Dsldefinition.dsl 檔的結構，其會定義網域特定語言。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893f39149a9000f3672c5b3043551bcbd53e6b87
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808951"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362778"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔
 
@@ -22,7 +24,7 @@ ms.locfileid: "90808951"
 
 一般而言，您會使用 *特定領域語言設計工具* 來編輯 dsldefinition.dsl 檔的 dsl 檔案。 不過，其未經處理格式為 XML，因此可以在 XML 編輯器中開啟 DslDefinition.dsl 檔。 了解該檔案包含什麼資訊以及它如何編排以進行偵錯和擴充，可能會對您非常有用。
 
-本主題中的範例取自「元件圖」方案範本。 若要查看範例，請根據「元件模型」方案範本建立網域指定的語言方案。 建立方案後，DslDefinition.dsl 檔會出現在網域指定的語言設計工具中。 關閉檔案，在 **方案總管**中以滑鼠右鍵按一下檔案，指向 [ **開啟方式**]，按一下 [ **XML 編輯器**]，然後按一下 **[確定]**。
+本主題中的範例取自「元件圖」方案範本。 若要查看範例，請根據「元件模型」方案範本建立網域指定的語言方案。 建立方案後，DslDefinition.dsl 檔會出現在網域指定的語言設計工具中。 關閉檔案，在 **方案總管** 中以滑鼠右鍵按一下檔案，指向 [ **開啟方式**]，按一下 [ **XML 編輯器**]，然後按一下 **[確定]**。
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔的區段
 
@@ -267,7 +269,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 ## <a name="designer-and-toolbox-tabs"></a>設計工具和工具箱索引標籤
 
-Dsldefinition.dsl 檔的 **設計** 工具區段主要部分是 **ToolboxTab** 元素。 其中一個設計工具可以有數個專案，每個專案都代表所產生之設計 **工具工具箱**中的一個標題區段。 每個 **ToolboxTab** 專案都可以包含一個或多個 **ElementTool** 元素、 **ConnectionTool** 元素或兩者。
+Dsldefinition.dsl 檔的 **設計** 工具區段主要部分是 **ToolboxTab** 元素。 其中一個設計工具可以有數個專案，每個專案都代表所產生之設計 **工具工具箱** 中的一個標題區段。 每個 **ToolboxTab** 專案都可以包含一個或多個 **ElementTool** 元素、 **ConnectionTool** 元素或兩者。
 
 項目工具可以建立特定網域類別的執行個體。 當使用者將項目工具拖曳到圖表上時，結果取決於本主題稍後關於項目合併指示詞的章節中所說明的項目合併指示詞。
 
@@ -296,7 +298,7 @@ Dsldefinition.dsl 檔的 **設計** 工具區段主要部分是 **ToolboxTab** �
 針對此模型撰寫 C# 時，您可以在一個步驟中跳躍過一個連結，方法為使用關聯性在與它相關的每個類別上所產生的屬性：
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 不過，您必須在「路徑語法」中明確地執行兩個躍點。 由於此要求，您可以更輕鬆地存取中繼連結。 下列程式碼完成從連結到 Component 的躍點：
@@ -364,7 +366,7 @@ ComponentModel 是語言的根類別，具有元件和註解的項目合併指�
 
 - Moniker 節點，此節點參考資料套用到的類別。
 
-- 針對類別上定義的每個屬性**XmlPropertyData** 。
+- 針對類別上定義的每個屬性 **XmlPropertyData** 。
 
 - **XmlRelationshipData** 屬於類別的每個關聯性。 (關聯性也有它們自己的 XmlClassData 節點。)
 
@@ -376,7 +378,7 @@ ComponentModel 是語言的根類別，具有元件和註解的項目合併指�
     <componentModel ...
     ```
 
-- 在使用者的序列化模型檔案中**MonikerElementName** 。 此屬性引進一個參考此類別的 Moniker。
+- 在使用者的序列化模型檔案中 **MonikerElementName** 。 此屬性引進一個參考此類別的 Moniker。
 
 - **MonikerAttributeName**，可識別標記中 XML 屬性的名稱。 在使用者的序列化檔案的這個片段中，網域專屬語言的作者定義 **MonikerElementName** 為 "inPortMoniker"，而 **MonikerAttributeName** 為 "path"：
 
@@ -390,13 +392,13 @@ ComponentModel 是語言的根類別，具有元件和註解的項目合併指�
 
 ### <a name="xmlpropertydata"></a>XmlPropertyData
 
-**DomainPropertyMoniker**屬性會識別資料所參考的屬性。 此屬性 (attribute) 必須是封入的 ClassData 類別之屬性 (property)。
+**DomainPropertyMoniker** 屬性會識別資料所參考的屬性。 此屬性 (attribute) 必須是封入的 ClassData 類別之屬性 (property)。
 
-**XmlName**屬性會提供應出現在 XML 中的對應屬性名稱。 依照慣例，此字串與屬性名稱相同，但是例外情形為第一個字母是小寫。
+**XmlName** 屬性會提供應出現在 XML 中的對應屬性名稱。 依照慣例，此字串與屬性名稱相同，但是例外情形為第一個字母是小寫。
 
 根據預設， **表示** 屬性會設定為 attribute。 如果 **標記法** 設定為 Element，就會在 XML 中建立子節點。 如果 **標記法** 設定為 [略過]，就不會序列化屬性。
 
-**IsMonikerKey**和**IsMonikerQualifier**屬性會為屬性提供一個角色，以識別父類別的實例。 您可以針對在類別中定義或繼承的一個屬性，將 **IsMonikerKey** 設定為 true。 此屬性會識別父類別的個別執行個體。 您設為 `IsMonikerKey` 的屬性通常是名稱或其他索引鍵識別項。 例如，`Name` 字串屬性是 NamedElement 及其衍生類別的 Moniker 索引鍵。 當使用者將模型儲存到檔案時，此屬性必須包含每個執行個體的唯一值 (在內嵌關聯性之樹狀結構中的同層級之間)。
+**IsMonikerKey** 和 **IsMonikerQualifier** 屬性會為屬性提供一個角色，以識別父類別的實例。 您可以針對在類別中定義或繼承的一個屬性，將 **IsMonikerKey** 設定為 true。 此屬性會識別父類別的個別執行個體。 您設為 `IsMonikerKey` 的屬性通常是名稱或其他索引鍵識別項。 例如，`Name` 字串屬性是 NamedElement 及其衍生類別的 Moniker 索引鍵。 當使用者將模型儲存到檔案時，此屬性必須包含每個執行個體的唯一值 (在內嵌關聯性之樹狀結構中的同層級之間)。
 
 在序列化的模型檔案中，項目的完整 Moniker 是從模型根向下到內嵌關聯性之樹狀結構的路徑，引用每一個點上的 Moniker 索引鍵。 例如，InPorts 內嵌於元件內，而元件又內嵌於模型根。 因此，有效的 Moniker 為：
 
@@ -410,11 +412,11 @@ ComponentModel 是語言的根類別，具有元件和註解的項目合併指�
 
 在序列化的模型檔案內，連結 (屬於內嵌和參考關聯性兩者) 是由關聯性之來源端的子節點代表。 如果是內嵌關聯性，子節點包含子樹狀結構。 如果是參考關聯性，子節點包含參考樹狀結構之另一個部分的 Moniker。
 
-**XmlClassData**屬性中的**XmlRelationshipData**屬性會明確定義子節點在來源元素內的嵌套方式。 每個屬於網域類別之來源的關聯性都有一個 **XmlRelationshipData** 屬性。
+**XmlClassData** 屬性中的 **XmlRelationshipData** 屬性會明確定義子節點在來源元素內的嵌套方式。 每個屬於網域類別之來源的關聯性都有一個 **XmlRelationshipData** 屬性。
 
-**DomainRelationshipMoniker**屬性會識別其中一個源自于類別的關聯性。
+**DomainRelationshipMoniker** 屬性會識別其中一個源自于類別的關聯性。
 
-**RoleElementName**屬性會提供在序列化資料中括住子節點的 XML 標記名稱。
+**RoleElementName** 屬性會提供在序列化資料中括住子節點的 XML 標記名稱。
 
 例如，DslDefinition.dsl 檔包含：
 
@@ -480,7 +482,7 @@ DslDefinition.dsl 檔本身是序列化的檔案，符合網域指定的語言�
 
 - **Dsl** 是 RootClass 節點和圖表的類別。 DomainClass、DomainRelationship 和其他項目內嵌於 `Dsl` 之下。
 
-- **類別** 是網域特定語言與 DomainClass 之間的關聯性 **RoleElementName** 。
+- **類別** 是 Domain-Specific Language 與 DomainClass 之間的關聯性 **RoleElementName** 。
 
 ```xml
 <Dsl Name="CmptDsl5" ...>
@@ -488,7 +490,7 @@ DslDefinition.dsl 檔本身是序列化的檔案，符合網域指定的語言�
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
 ```
 
-- **XmlSerializationBehavior**屬性內嵌于 `Dsl` 屬性下，但是已在內嵌關聯性上設定**OmitElement**屬性。 因此，沒有任何 `RoleElementName` 屬性介於其間。 相反地， **ClassData** 屬性是 `RoleElementName` **XmlSerializationBehavior** 屬性與 **XmlClassData** 屬性之間的內嵌關聯性屬性。
+- **XmlSerializationBehavior** 屬性內嵌于 `Dsl` 屬性下，但是已在內嵌關聯性上設定 **OmitElement** 屬性。 因此，沒有任何 `RoleElementName` 屬性介於其間。 相反地， **ClassData** 屬性是 `RoleElementName` **XmlSerializationBehavior** 屬性與 **XmlClassData** 屬性之間的內嵌關聯性屬性。
 
 ```xml
 <Dsl Name="CmptDsl5" ...> ...
@@ -577,7 +579,7 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 連接器對應也可以包含裝飾項目對應。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)

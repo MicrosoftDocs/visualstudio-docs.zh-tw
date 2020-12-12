@@ -1,5 +1,7 @@
 ---
 title: 設定圖表上的背景影像
+description: 瞭解在 Visual Studio 的視覺效果和模型 SDK 中，您可以使用自訂程式碼來設定產生之設計工具的背景影像。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f99ce329d4b88037901db2336076bb1d12d411f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542580"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363779"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>設定圖表上的背景影像
 在 Visual Studio 視覺效果和模型 SDK 中，您可以使用自訂程式碼，為產生的設計工具設定背景影像。
@@ -23,7 +25,7 @@ ms.locfileid: "85542580"
 
 1. 將您要用來做為圖表背景的影像檔複製到目前專案的 Dsl\Resources 目錄中。
 
-2. 在 **方案總管**中，以滑鼠右鍵按一下 [Dsl\Resources] 資料夾，指向 [ **加入**]，然後按一下 [ **現有專案**]。
+2. 在 **方案總管** 中，以滑鼠右鍵按一下 [Dsl\Resources] 資料夾，指向 [ **加入**]，然後按一下 [ **現有專案**]。
 
 3. 在 [ **加入現有專案** ] 對話方塊中，流覽至 [Dsl\Resources] 資料夾。
 
@@ -41,17 +43,17 @@ ms.locfileid: "85542580"
 
 10. 確認檔案 Dsl\Properties\Resources.resx 存在且其下有檔案 Resources.Designer.cs。
 
-11. 如果 Resources.Designer.cs 遺失，請按一下 **方案總管**中的檔案資源 .resx。
+11. 如果 Resources.Designer.cs 遺失，請按一下 **方案總管** 中的檔案資源 .resx。
 
-12. 在 [屬性] **** 視窗中，將 `Custom Tool` 屬性設定為 `ResXFileCodeGenerator`。
+12. 在 [屬性]  視窗中，將 `Custom Tool` 屬性設定為 `ResXFileCodeGenerator`。
 
-13. 在 **方案總管**中，以滑鼠右鍵按一下 Dsl 專案，指向 [ **加入**]，然後按一下 [ **新增資料夾**]。
+13. 在 **方案總管** 中，以滑鼠右鍵按一下 Dsl 專案，指向 [ **加入**]，然後按一下 [ **新增資料夾**]。
 
 14. 將資料夾命名為 **Custom**。
 
 15. 在 [自訂] 資料夾上按一下滑鼠右鍵，指向 [ **加入**]，然後按一下 [ **新增專案**]。
 
-16. 在 [ **加入新專案** ] 對話方塊的 [ **範本** ] 清單中，按一下 [程式 **代碼**檔案]。
+16. 在 [ **加入新專案** ] 對話方塊的 [ **範本** ] 清單中，按一下 [程式 **代碼** 檔案]。
 
 17. 在 [ **名稱** ] 方塊中，輸入 `BackgroundImage.cs` ，然後按一下 [ **新增**]。
 
@@ -100,7 +102,7 @@ ms.locfileid: "85542580"
 
      如需使用程式碼自訂模型的詳細資訊，請參閱 [在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [定義圖案和連接器](../modeling/defining-shapes-and-connectors.md)
 - [自訂文字和影像欄位](../modeling/customizing-text-and-image-fields.md)

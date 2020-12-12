@@ -1,5 +1,7 @@
 ---
 title: 部署自訂指示詞處理器
+description: 瞭解可用來在 Visual Studio 或任何電腦上部署自訂指示詞處理器的方法。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 638367f2c3a1238edc257a255280c5197e11d3f0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536015"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363922"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自訂指示詞處理器
 
@@ -48,7 +50,7 @@ ms.locfileid: "85536015"
 
 1. 建立新的 **VSIX 專案** 專案。
 
-2. 在 **extension.vsixmanifest**中，設定內容類型和支援的版本。
+2. 在 **extension.vsixmanifest** 中，設定內容類型和支援的版本。
 
     1. 在 VSIX 資訊清單編輯器的 [ **資產** ] 索引標籤上，選擇 [ **新增** ] 並設定新專案的屬性：
 
@@ -115,7 +117,7 @@ ms.locfileid: "85536015"
 
 1. 在 [Visual Studio **工具** ] 功能表中，按一下 [ **擴充管理員**]。
 
-2. 選取包含指示詞處理器的 VSIX，然後按一下 [ **卸載** ] 或 [ **停**用]。
+2. 選取包含指示詞處理器的 VSIX，然後按一下 [ **卸載** ] 或 [ **停** 用]。
 
 ### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>VSIX 中的指示詞處理器疑難排解
  如果指示詞處理器無法運作，下列建議可能會有幫助：
@@ -124,7 +126,7 @@ ms.locfileid: "85536015"
 
 - 將 `IsDirectiveSupported` 的名稱傳遞給 `true` 方法時，此方法必須傳回 `CustomDirective`。
 
-- 如果您在 [擴充管理員] 中看不到延伸模組，但系統不允許您安裝它，請從 **%localappdata%\Microsoft\VisualStudio \\ \* .0 \ 延伸 \\ **模組刪除擴充功能。
+- 如果您在 [擴充管理員] 中看不到延伸模組，但系統不允許您安裝它，請從 **%localappdata%\Microsoft\VisualStudio \\ \* .0 \ 延伸 \\** 模組刪除擴充功能。
 
 - 開啟 .vsix 檔並檢查其內容。 若要開啟它，請將副檔名變更為 .zip。 確認其中是否包含 .dll、.pkgdef 和 extension.vsixmanifest 檔案。 extension.vsixmanifest 檔案在 SupportedProducts 節點中應包含適當清單，而在 Content 節點底下也應包含 VsPackage 節點。
 
@@ -164,7 +166,7 @@ ms.locfileid: "85536015"
 
 2. 在 regedit 中巡覽至
 
-    **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ \* 。 0 \ TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
     如果您想要在實驗版的 Visual Studio 中安裝指示詞處理器，請在 "11.0" 後插入 "Exp"。
 
@@ -196,6 +198,6 @@ ms.locfileid: "85536015"
 |類別|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |組件|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)

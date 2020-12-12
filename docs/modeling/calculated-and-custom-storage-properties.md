@@ -1,5 +1,7 @@
 ---
 title: 計算及自訂的儲存區屬性
+description: 瞭解特定領域語言中的所有網域屬性 (DSL) 如何顯示給使用者在圖表和您的 language explorer 中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c50d205745917b3af7de638a17921f4bcdca509
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115193"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363545"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算及自訂的儲存區屬性
 特定領域語言中的所有網域屬性 (DSL) 可在圖表和您的 language explorer 中顯示給使用者，並且可透過程式碼存取。 但是，屬性的值儲存方式會有所不同。
@@ -22,9 +24,9 @@ ms.locfileid: "76115193"
 ## <a name="kinds-of-domain-properties"></a>網域屬性的種類
  在 DSL 定義中，您可以設定網域屬性的 **種類** ，如下表所示：
 
-|網域屬性種類|描述|
+|網域屬性種類|說明|
 |-|-|
-|**標準** (預設) |*儲存在存放區*中並序列化為檔案的網域屬性。|
+|**標準** (預設) |*儲存在存放區* 中並序列化為檔案的網域屬性。|
 |**導出**|唯讀網域屬性，不會儲存在存放區中，而是從其他值計算而來。<br /><br /> 例如， `Person.Age` 可以從計算 `Person.BirthDate` 。<br /><br /> 您必須提供執行計算的程式碼。 一般而言，您會從其他定義域屬性計算值。 不過，您也可以使用外部資源。|
 |**自訂儲存體**|未直接儲存在存放區中，但可以是 get 和 set 的網域屬性。<br /><br /> 您必須提供取得和設定值的方法。<br /><br /> 例如， `Person.FullAddress` 可以儲存在 `Person.StreetAddress` 、和中 `Person.City` `Person.PostalCode` 。<br /><br /> 您也可以存取外部資源，例如，從資料庫取得和設定值。<br /><br /> 當為 true 時，您的程式碼不應設定存放區中的值 `Store.InUndoRedoOrRollback` 。 請參閱 [交易和自訂 setter](#setters)。|
 
@@ -39,15 +41,15 @@ ms.locfileid: "76115193"
 
      請確定您也已將其類型設定為您想要的 **類型** 。
 
-3. 在**方案總管**的工具列中，按一下 [**轉換所有範本**]。
+3. 在 **方案總管** 的工具列中，按一下 [**轉換所有範本**]。
 
 4. 在 [建置] 功能表上，按一下 [建置方案]。
 
-     您會收到下列錯誤訊息：「*YourClass* 不包含 Get*YourProperty*的定義」。
+     您會收到下列錯誤訊息：「*YourClass* 不包含 Get *YourProperty* 的定義」。
 
 5. 按兩下錯誤訊息。
 
-     Dsl\GeneratedCode\DomainClasses.cs 或 DomainRelationships.cs 隨即開啟。 在反白顯示的方法呼叫上方，批註會提示您提供 Get*YourProperty* 的實 ( # A1。
+     Dsl\GeneratedCode\DomainClasses.cs 或 DomainRelationships.cs 隨即開啟。 在反白顯示的方法呼叫上方，批註會提示您提供 Get *YourProperty* 的實 ( # A1。
 
     > [!NOTE]
     > 這個檔案是從 Dsldefinition.dsl 檔產生。 如果您編輯這個檔案，下次按一下 [ **轉換所有範本**] 時，您的變更將會遺失。 相反地，請在個別的檔案中新增必要的方法。
@@ -107,7 +109,7 @@ void SetAgeValue(int value)
 
  如需交易的詳細資訊，請參閱 [在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [網域屬性的屬性](../modeling/properties-of-domain-properties.md)

@@ -1,5 +1,7 @@
 ---
 title: 共用模型及匯出圖表
+description: 瞭解如何使用 Visual Studio 來建立和編輯模型、相依性圖表和引導式圖形。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2347ad9f01634fe7fee243a7d5e1a24a6d9ba3b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecf972974ff2c84cb47cd93d944aced4758d1cb7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591914"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363740"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>共用模型及匯出圖表
 在 Visual Studio 中，有多種方式可與同事共用模型和圖表。
@@ -41,14 +43,14 @@ ms.locfileid: "75591914"
 
  如需詳細資訊，請參閱將 [圖表匯出為影像](../modeling/export-diagrams-as-images.md)。
 
-## <a name="related-topics"></a>[相關主題]
+## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-|-|
 |[建構模型方案](../modeling/structure-your-modeling-solution.md)|共用大型或中型專案中的模型。|
 |[將圖表匯出為影像](../modeling/export-diagrams-as-images.md)|您可以將部分圖表複製到應用程式，例如 PowerPoint 或 Word，或將圖表列印到 XPS 檔案。|
 |[分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)|模型和圖表概觀。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)

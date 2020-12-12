@@ -1,5 +1,7 @@
 ---
 title: T4 匯入指示詞
+description: 瞭解在 Visual Studio T4 文字模板中，匯入指示詞可讓您參考另一個命名空間中的元素，而不需要提供完整名稱。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a28bedd01e3a4f6a7a87b025ac9a9a6184da9b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2dbd42f42213e475452185475a69b1dd9fe5f8e0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591862"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363688"
 ---
 # <a name="t4-import-directive"></a>T4 匯入指示詞
 
@@ -49,6 +51,6 @@ The file contains: <#=  fileContent #>
 
 - DSL 的命名空間
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [T4 組件指示詞](../modeling/t4-assembly-directive.md)

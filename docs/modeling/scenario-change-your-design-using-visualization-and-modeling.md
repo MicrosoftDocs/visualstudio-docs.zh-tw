@@ -1,6 +1,6 @@
 ---
 title: 使用視覺化和模型製作工具變更設計
-description: Visual Studio 中的視覺效果和模型工具總覽。
+description: 瞭解 Visual Studio 中的視覺效果和模型工具，以及如何使用這些工具來變更您的設計。
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 91b62716c87fafd965652452b6494fe255530e7b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189119"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363857"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 
@@ -86,7 +86,7 @@ Lucerne 則維持一個相當大型且複雜的系統集合，其中有些系統
 |領域特定語言 (DSL) 圖表|是|是|是|||
 |相依性圖表，圖層驗證|||是|是|是|
 |Code Map|||是|是|是|
-|類別設計工具 (以程式碼為基礎)||||Yes||
+|類別設計工具 (以程式碼為基礎)||||是||
 
 若要繪製相依性圖表，您必須建立模型專案作為現有方案的一部分，或建立一個新的方案。 這些圖表必須在模型專案中建立。
 相依性圖表上的專案位於模型專案中，但不會儲存在一般模型中。 由程式碼建立的 Code Map 與 .NET 類別圖表則位在模型專案之外。
@@ -398,7 +398,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 #### <a name="relationship-to-other-diagrams"></a>與其他圖表的關聯性
 
-|**圖表**|**描述**|
+|**圖表**|**說明**|
 |-|-|
 |相依性圖表|定義與類別相關的系統邏輯架構。<br /><br /> 使用相依性驗證可確保程式碼與設計保持一致。<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表：參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表：指導方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|
 |Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要識別類別、其關聯性及方法，請建立會顯示這些項目的 Code Map。<br /><br /> 請參閱：<br /><br /> - [將相依性對應到您的解決方案](../modeling/map-dependencies-across-your-solutions.md)|
@@ -472,7 +472,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 #### <a name="relationship-to-other-diagrams"></a>與其他圖表的關聯性
 
-|**圖表**|**描述**|
+|**圖表**|**說明**|
 |-|-|
 |Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要建立圖層，請產生 Code Map，然後在地圖上將項目分組為可能的圖層。 將群組從地圖拖曳至相依性圖表。<br /><br /> 請參閱：<br /><br /> - [將相依性對應到您的解決方案](../modeling/map-dependencies-across-your-solutions.md)<br />- [流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)|
 
@@ -482,7 +482,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 |-|-|
 |**論壇**|- [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [視覺化程式碼](../modeling/visualize-code.md)
 - [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)

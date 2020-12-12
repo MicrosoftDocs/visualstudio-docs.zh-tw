@@ -1,5 +1,7 @@
 ---
 title: 進行偵錯時對應呼叫堆疊上的方法
+description: 瞭解如何建立 code map，以在進行偵錯工具時以視覺化方式追蹤呼叫堆疊。 此外，也請瞭解您可以在地圖上做筆記，以追蹤程式碼的執行狀況。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b3d5c531400ddd88cea17b9172f19bf9711105d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532700"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362427"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 
@@ -45,13 +47,13 @@ ms.locfileid: "85532700"
 
  ::: moniker range="vs-2017"
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+- [Visual Studio 企業版](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads)
+- [Visual Studio 企業版](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -166,9 +168,9 @@ ms.locfileid: "85532700"
 
   - 變更預設的版面配置。
 
-  - 若要停止自動重新排列對應，請 **在調試時關閉自動**配置。
+  - 若要停止自動重新排列對應，請 **在調試時關閉自動** 配置。
 
-  - 若要在加入專案時盡可能地重新排列地圖，請關閉 [累加 **式版面**配置]。
+  - 若要在加入專案時盡可能地重新排列地圖，請關閉 [累加 **式版面** 配置]。
 
 - **我是否可以和其他人共用對應圖？**
 
@@ -178,7 +180,7 @@ ms.locfileid: "85532700"
 
 - **如何讓對應圖停止自動加入新的呼叫堆疊？**
 
-   選擇 ![ [按鈕] &#45; 在地圖工具列上自動顯示 code map 上的呼叫堆疊 ](../debugger/media/debuggermap_automaticupdateicon.gif) 。 若要將目前的呼叫堆疊手動加入至地圖，請按下**Ctrl**  +  **Shift**  +  **`** 。
+   選擇 ![ [按鈕] &#45; 在地圖工具列上自動顯示 code map 上的呼叫堆疊 ](../debugger/media/debuggermap_automaticupdateicon.gif) 。 若要將目前的呼叫堆疊手動加入至地圖，請按下 **Ctrl**  +  **Shift**  +  **`** 。
 
    當您正在進行調試時，對應會繼續反白顯示對應上的現有呼叫堆疊。
 
@@ -200,7 +202,7 @@ ms.locfileid: "85532700"
 
 - [使用地圖尋找 bug](#FindBugs)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)

@@ -1,5 +1,7 @@
 ---
 title: 在 DSL 中修改標準功能表命令
+description: 瞭解如何修改您的 DSL 中自動定義之一些標準命令的行為。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e04d3d2c5572c0d0b3dbaa25912b7ec59a3bc0fa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532492"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363883"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用網域指定的語言修改標準功能表命令
 
@@ -53,7 +55,7 @@ ms.locfileid: "85532492"
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. 在 **DslPackage**中，建立名為 **自訂程式碼**的資料夾。 在此資料夾中，建立名為的新類別檔案 `CommandSet.cs` 。
+2. 在 **DslPackage** 中，建立名為 **自訂程式碼** 的資料夾。 在此資料夾中，建立名為的新類別檔案 `CommandSet.cs` 。
 
 3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：
 
@@ -143,7 +145,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 如需如何從專案流覽至專案，以及如何建立物件和連結的詳細資訊，請參閱 [在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

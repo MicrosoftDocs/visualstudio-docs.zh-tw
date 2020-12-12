@@ -1,5 +1,7 @@
 ---
 title: 定義圖案和連接器
+description: 深入瞭解您可以用來在特定領域語言的圖表上顯示資訊的幾個基本圖形類型 (DSL) 。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd95c467f0cfcc997fe419abacb1811e02b468b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd98e449f674d2841dd41aa88e320468698f4736
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589665"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363818"
 ---
 # <a name="define-shapes-and-connectors"></a>定義圖形與連接器
 
@@ -20,7 +22,7 @@ ms.locfileid: "75589665"
 
 ## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> 圖形和連接器的基本類型
 
-DSL 圖表會顯示依*線條或接點*interlinked 的*圖形*集合。 一般而言 (但並非絕對)：
+DSL 圖表會顯示依 *線條或接點* interlinked 的 *圖形* 集合。 一般而言 (但並非絕對)：
 
 - 圖形是模型項目的視覺表示。
 
@@ -34,7 +36,7 @@ DSL 圖表會顯示依*線條或接點*interlinked 的*圖形*集合。 一般�
 
 下列為可用的圖形類型：
 
-|圖形類型|描述|
+|圖形類型|說明|
 |-|-|
 |幾何圖形|一般用途的矩形或橢圓形。 您可以在相對於圖形邊界的特定位置，顯示文字和圖示裝飾項目。 您也可以將圖形嵌入幾何圖形內。|
 |區間圖形|內含標頭和區間的矩形，例如 UML 類別。 每個區間都包含文字列清單。<br /><br /> 這些列通常表示以圖形表示之項目底下的內嵌項目。 例如，從「類別圖表」方案範本中建立 DSL。|

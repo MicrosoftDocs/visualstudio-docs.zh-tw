@@ -1,5 +1,7 @@
 ---
 title: 使用 TextTransform 公用程式產生檔案
+description: 瞭解 TextTransform 公用程式是一種命令列工具，可讓您用來轉換文字模板。
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec659bfee9253dfb198c2747e1b5d7fb6b78f2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d849439f3c7b8af310f1f82fc0af8f086139d12b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596550"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363909"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>使用 TextTransform 公用程式產生檔案
 
@@ -64,13 +66,13 @@ TextTransform [<options>] <templateName>
 
 ### <a name="parameters"></a>參數
 
-|**Argument**|**描述**|
+|**Argument**|**說明**|
 |-|-|
 |`templateName`|識別您要轉換的範本檔案名。|
 
 |**選項**|**說明**|
 |-|-|
-|**-out** \<filename>|寫入轉換輸出的檔案。|
+|**-out**\<filename>|寫入轉換輸出的檔案。|
 |**-r**\<assembly>|用來編譯和執行文字模板的元件。|
 |**-u**\<namespace>|用來編譯範本的命名空間。|
 |**-I**\<includedirectory>|包含指定文字模板中所包含文字模板的目錄。|
