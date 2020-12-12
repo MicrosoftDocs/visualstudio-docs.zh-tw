@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：建立自訂指示詞處理器
+description: 瞭解如何使用 Visual Studio 來撰寫自訂指示詞處理器，以自訂您的文字模板。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe32db6f8d5aadb815d845bdc9f06be36ec06c9
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532232"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361881"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>逐步解說：建立自訂指示詞處理器
 
-指示詞*處理器*的運作方式是將程式碼加入至*產生的轉換類別*。 如果您從*文字模板*呼叫指示詞，您在文字*範本中撰寫*的其餘程式碼可以依賴指示詞提供的功能。
+指示詞 *處理器* 的運作方式是將程式碼加入至 *產生的轉換類別*。 如果您從 *文字模板* 呼叫指示詞，您在文字 *範本中撰寫* 的其餘程式碼可以依賴指示詞提供的功能。
 
 您可以撰寫專屬自訂指示詞處理器。 這可讓您自訂文字範本。 若要建立自訂指示詞處理器，您可以建立繼承 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 或 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 的類別。
 
@@ -637,9 +639,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 1. `regedit`使用 [開始] 功能表或命令列執行命令。
 
-2. 流覽至**HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ \* .0 \ TextTemplating\DirectiveProcessors**的位置，然後按一下節點。
+2. 流覽至 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ \* .0 \ TextTemplating\DirectiveProcessors** 的位置，然後按一下節點。
 
-   在64位系統上，請使用**HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
+   在64位系統上，請使用 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
 3. 加入名為 CustomDirectiveProcessor 的新機碼。
 
@@ -830,11 +832,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-test-the-directive-processor"></a>若要測試指示詞處理器
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 TestDP.tt，然後按一下 [ **執行自訂工具**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 TestDP.tt，然後按一下 [ **執行自訂工具**]。
 
-   針對 Visual Basic 使用者，根據預設，TestDP.txt 可能不會出現在 [ **方案總管** ] 中。 若要顯示所有指派給專案的檔案，請開啟 [ **專案** ] 功能表，然後按一下 [ **顯示所有**檔案]。
+   針對 Visual Basic 使用者，根據預設，TestDP.txt 可能不會出現在 [ **方案總管** ] 中。 若要顯示所有指派給專案的檔案，請開啟 [ **專案** ] 功能表，然後按一下 [ **顯示所有** 檔案]。
 
-2. 在 **方案總管**中，展開 [TestDP.txt] 節點，然後按兩下 [TestDP.txt]，在編輯器中開啟它。
+2. 在 **方案總管** 中，展開 [TestDP.txt] 節點，然後按兩下 [TestDP.txt]，在編輯器中開啟它。
 
     產生的文字輸出隨即出現。 輸出應該看起來如下所示：
 
@@ -961,6 +963,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 2. **在 [檔案**] 功能表上，按一下 [**儲存 TestDP.txt**。
 
-3. 若要在瀏覽器中查看輸出，請在 [ **方案總管**中，以滑鼠右鍵按一下 TestDP.htm，然後按一下 [ **在瀏覽器中查看**]。
+3. 若要在瀏覽器中查看輸出，請在 [ **方案總管** 中，以滑鼠右鍵按一下 TestDP.htm，然後按一下 [ **在瀏覽器中查看**]。
 
    除了已套用 HTML 格式之外，您的輸出應該與原始文字相同。 每個專案名稱會以粗體顯示。

@@ -1,5 +1,7 @@
 ---
 title: 在其他 Visual Studio 版本中讀取模型和圖表
+description: 瞭解如何在 Visual Studio 中讀取模型和圖表，以及使用不支援模型建立之 Visual Studio 版本的唯讀行為。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe4cdcefb7b823090cca8976055de5a3ebb9b1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffbf39421f507338d14a6b05a667ec4301375067
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595406"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360685"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中讀取模型和圖表
 
@@ -34,10 +36,10 @@ ms.locfileid: "75595406"
 
 若要讀取相依性圖表，您需要的最小檔案集如下所示：
 
-- 您想要讀取之圖表的兩個圖表檔案，例如 **MyDiagram. classdiagram 和 MyDiagram. classdiagram. 版面**配置。
+- 您想要讀取之圖表的兩個圖表檔案，例如 **MyDiagram. classdiagram 和 MyDiagram. classdiagram. 版面** 配置。
 
     > [!NOTE]
-    > 針對相依性圖表，您也應該擁有名為 _MyDiagram_**. .layerdiagram**的檔案。
+    > 針對相依性圖表，您也應該擁有名為 _MyDiagram_**. .layerdiagram** 的檔案。
 
 - 模型專案檔 (**mymodel> modelingprojectfilenameandpath.modelproj**) 
 
@@ -55,7 +57,7 @@ ms.locfileid: "75595406"
 
 您可以儲存這些變更。 如果您想要讓其他使用者看到您的變更，您必須至少傳送更新的 **. 版面** 配置檔案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [相依性圖表︰參考](../modeling/layer-diagrams-reference.md)
 - [建立應用程式模型](../modeling/create-models-for-your-app.md)

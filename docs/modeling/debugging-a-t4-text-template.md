@@ -1,5 +1,7 @@
 ---
 title: 偵錯 T4 文字範本
+description: 若要在設計階段文字模板中進行程式設計，請儲存文字模板檔案，然後在方案總管中，于檔案的快捷方式功能表上選擇 [Debug T4 範本]。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570061feb5da034e2e8fab7168658577f6f990d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26ad1545918a02fbcf530b439e801a656a425864
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589678"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361465"
 ---
 # <a name="debugging-a-t4-text-template"></a>偵錯 T4 文字範本
 您可以在文字模板中設定中斷點。 若要在設計階段文字模板中進行程式設計，請儲存文字模板檔案，然後在方案總管中，于檔案的快捷方式功能表上選擇 [ **Debug T4 範本** ]。 若要對執行時間文字模板進行偵錯工具，只需將它所屬的應用程式進行調試。

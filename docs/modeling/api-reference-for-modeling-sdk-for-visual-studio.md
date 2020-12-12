@@ -1,5 +1,7 @@
 ---
 title: 模型 SDK 的 API 參考
+description: 瞭解 Visual Studio 的視覺效果和模型 SDK 如何提供 (Dsl) 工具建立所在的特定平臺。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e4be65a94892aa87dbc7f146ce3671336a37558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 721527b71e12b2c6143fa952d663cccc2786b34f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76113728"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361075"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Modeling SDK for Visual Studio 的 API 參考
 
@@ -42,6 +44,6 @@ Visual Studio 的視覺效果和模型 SDK 會提供您的網域特定語言 (DS
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|可讓您定義快捷方式 (內容) 功能表命令。|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|可讓您定義驗證條件約束。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)

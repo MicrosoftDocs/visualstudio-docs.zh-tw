@@ -1,5 +1,7 @@
 ---
 title: 了解 DSL 程式碼
+description: 瞭解 Domain-Specific Language (DSL) 解決方案如何產生 API，您可以在 Visual Studio 中用來讀取和更新 DSL 的實例。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +11,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd739a7780a2a2c858efc14aa72205e9be161900
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565938"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361452"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 
-特定領域語言 (DSL) 解決方案會產生一個 API，您可以用它來讀取和更新 Visual Studio 中的 DSL 實例。 這個應用程式開發介面是以從 DSL 定義產生的程式碼來定義。 本主題說明產生的應用程式開發介面。
+Domain-Specific 語言 (DSL) 解決方案會產生一個 API，讓您可以用來讀取和更新 Visual Studio 中的 DSL 實例。 這個應用程式開發介面是以從 DSL 定義產生的程式碼來定義。 本主題說明產生的應用程式開發介面。
 
 ## <a name="the-example-solution-component-diagrams"></a>範例方案：元件圖表
 
@@ -32,14 +34,14 @@ ms.locfileid: "75565938"
 ![元件和相互連接的通訊埠](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>DSL 方案的結構
- **Dsl**專案會定義您 DSL 的 API。 **DslPackage**專案會定義它與 Visual Studio 整合的方式。 您也可以加入自己的專案，這些專案也可以包含從模型產生的程式碼。
+ **Dsl** 專案會定義您 DSL 的 API。 **DslPackage** 專案會定義它與 Visual Studio 整合的方式。 您也可以加入自己的專案，這些專案也可以包含從模型產生的程式碼。
 
 ### <a name="the-code-directories"></a>程式碼目錄
- 這些專案中的大部分程式碼都是從 **Dsl\DslDefinition.dsl**產生。 產生的程式碼會在 **產生** 的程式碼資料夾中。 若要查看產生的檔案，請按一下產生的**tt**檔案旁的 **[+]** 。
+ 這些專案中的大部分程式碼都是從 **Dsl\DslDefinition.dsl** 產生。 產生的程式碼會在 **產生** 的程式碼資料夾中。 若要查看產生的檔案，請按一下產生的 **tt** 檔案旁的 **[+]** 。
 
  建議您檢查產生的程式碼，以協助您了解 DSL。 若要查看產生的檔案，請展開 [方案總管] 中的 *.tt 檔。
 
- \*Tt 檔案包含很少產生的程式碼。 相反地，這些檔案使用 `<#include>` 指示詞來包含共用範本檔案。 您可以在**\Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**中找到共用檔案。
+ \*Tt 檔案包含很少產生的程式碼。 相反地，這些檔案使用 `<#include>` 指示詞來包含共用範本檔案。 您可以在 **\Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates** 中找到共用檔案。
 
  當您將自己的程式碼加入至 DSL 方案時，請將此程式碼加入至 Generated Code 資料夾外部的其他檔案中。 您可能會想要建立 **自訂程式碼** 資料夾。 (當您將新的程式碼檔案加入至自訂資料夾時，請記得修正初始程式碼基本架構中的命名空間)。
 
@@ -66,11 +68,11 @@ ms.locfileid: "75565938"
 
  `ConnectionBuilders.cs`
 
- 連接產生器是建立關聯性的類別。 它是連接工具的後置程式碼。 這個檔案針對每個連接工具各包含一組類別。 它們的名稱衍生自網域關聯性和連接工具的名稱： *關聯*性產生器和 *ConnectorTool*ConnectAction。
+ 連接產生器是建立關聯性的類別。 它是連接工具的後置程式碼。 這個檔案針對每個連接工具各包含一組類別。 它們的名稱衍生自網域關聯性和連接工具的名稱： *關聯* 性產生器和 *ConnectorTool* ConnectAction。
 
  (在元件方案範例中，其中一個連接產生器稱為 ConnectionBuilder，這是巧合，因為網域關聯性的名稱剛好是 Connection。)
 
- 關聯性會建立于*關聯*性 `Builder.Connect()` 方法中。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如：
+ 關聯性會建立于 *關聯* 性 `Builder.Connect()` 方法中。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如：
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -102,7 +104,7 @@ ms.locfileid: "75565938"
 
  這個指示詞處理器可協助您的使用者撰寫文字範本，以讀取您的 DSL 執行個體。 這個指示詞處理器會載入 DSL 的組件 (DLL)，並有效地插入命名空間的 `using` 陳述式。 如此一來，文字範本中的程式碼便能夠使用您在 DSL 中定義的類別和關聯性。
 
- 如需詳細資訊，請參閱 [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md) ，以及 [建立自訂 T4 文字模板](../modeling/creating-custom-t4-text-template-directive-processors.md)指示詞處理器。
+ 如需詳細資訊，請參閱 [從 Domain-Specific 語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md) ，以及 [建立自訂 T4 文字模板](../modeling/creating-custom-t4-text-template-directive-processors.md)指示詞處理器。
 
  `DomainClasses.cs`
 
@@ -122,7 +124,7 @@ ms.locfileid: "75565938"
 
 - 項目群組原型 (EGP) 處理常式方法。 如果使用者可以 *合併* (將) 其他專案新增至這個類別的實例，則需要這些專案。 使用者通常會透過從項目工具或另一個圖形拖曳，或透過貼上作業，來執行這項操作。
 
-   在範例 DSL 中，「輸入通訊埠」或「輸出通訊埠」可合併為一個「元件」。 此外，「元件」和「註解」可合併為模型。 此
+   在範例 DSL 中，「輸入通訊埠」或「輸出通訊埠」可合併為一個「元件」。 此外，「元件」和「註解」可合併為模型。 必須提供
 
    「元件」類別中的 EGP 處理常式方法允許「元件」接受「通訊埠」，但不接受「註解」。 根模型類別中的 EGP 處理常式接受「元件」和「註解」，但不接受「通訊埠」。
 
@@ -153,7 +155,7 @@ ms.locfileid: "75565938"
 
  在您指定 1..1 或 1..* 之多重性的關聯性角色中，應警告使用者至少需要一個關聯性執行個體。 這個檔案提供實作這些警告的驗證條件約束。 系統不會驗證內嵌父項的 1..1 連結。
 
- 若要執行這些條件約束，您必須在 [DSL Explorer] 的 [ **Editor\Validation** ] 節點中設定其中一個 [**使用 ...** ] 選項。 如需詳細資訊，請參閱 [以網域指定的語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。
+ 若要執行這些條件約束，您必須在 [DSL Explorer] 的 [ **Editor\Validation** ] 節點中設定其中一個 [**使用 ...** ] 選項。 如需詳細資訊，請參閱 [以 Domain-Specific 語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。
 
  `PropertiesGrid.cs`
 
@@ -169,13 +171,13 @@ ms.locfileid: "75565938"
 
   每個網域類別、關聯性、圖形、連接線、圖表和模型的序列化程式類別。
 
-  這些類別的許多功能都可以透過 [DSL Explorer] 中的設定，以 **Xml 序列化行為**來控制。
+  這些類別的許多功能都可以透過 [DSL Explorer] 中的設定，以 **Xml 序列化行為** 來控制。
 
   `Shapes.cs`
 
   代表 DSL 定義中每一個圖形類別的類別。 這些圖形衍生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>。 如需詳細資訊，請參閱 [自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
-  若要在部分類別中使用您自己的方法來覆寫產生的方法，請設定為 DSL 定義中的連接器 **產生雙重衍生** 。 若要使用您自己的程式碼來取代函式，請設定 **具有自訂的**函式。
+  若要在部分類別中使用您自己的方法來覆寫產生的方法，請設定為 DSL 定義中的連接器 **產生雙重衍生** 。 若要使用您自己的程式碼來取代函式，請設定 **具有自訂的** 函式。
 
   若要在執行時間建立色彩和其他樣式功能變數，請以滑鼠右鍵按一下 DSL 定義圖上的類別，並指向 [ **加入**]。
 
@@ -344,9 +346,9 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  這個檔案控制如何將 DSL 封裝成 Visual Studio 整合擴充功能 (VSIX)。 如需詳細資訊，請參閱[部署特定領域語言方案](msi-and-vsix-deployment-of-a-dsl.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
 - [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)
 - [自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [撰寫程式碼以自訂 Domain-Specific 語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

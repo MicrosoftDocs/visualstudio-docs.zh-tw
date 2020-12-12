@@ -1,5 +1,7 @@
 ---
 title: 在開發程序中使用模型
+description: 瞭解在 Visual Studio 中，您可以使用模型來協助您瞭解及變更系統、應用程式或元件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a15a6cd0d38ca06b1a0ae25be69a24d42ba8cb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dbc817ca7bdf08c4e5ceee79a1e1113b4dd26e0c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298099"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361426"
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 
@@ -136,7 +138,7 @@ ms.locfileid: "92298099"
 |**部落格**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**技術文件和日誌**|[MSDN 架構中心](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在 Agile 開發中使用模型](/previous-versions/ff398061(v=vs.140))
 - [建立應用程式模型](../modeling/create-models-for-your-app.md)

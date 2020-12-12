@@ -1,5 +1,7 @@
 ---
 title: 從文字範本存取模型
+description: 瞭解如何使用文字模板來建立報表檔案、原始程式碼檔，以及其他以定義域特定語言模型為基礎的文字檔。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,19 +11,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64d937f9a63207e16664bbd9254ae60470caeb41
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531465"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362284"
 ---
 # <a name="access-models-from-text-templates"></a>從文字模板存取模型
 
 藉由使用文字模板，您可以建立報表檔案、原始程式碼檔，以及其他以特定領域語言模型為基礎的文字檔。 如需文字模板的基本資訊，請參閱程式 [代碼產生和 T4 文字模板](../modeling/code-generation-and-t4-text-templates.md)。 當您正在進行 DSL 的偵錯工具時，文字模板將可在實驗模式下運作，而且也可以在已部署 DSL 的電腦上運作。
 
 > [!NOTE]
-> 當您建立 DSL 方案時，會在調試專案中產生範例文字模板** \* tt**檔。 當您變更網域類別的名稱時，這些範本將無法再運作。 不過，它們包含您所需的基本指示詞，並提供可讓您更新以符合 DSL 的範例。
+> 當您建立 DSL 方案時，會在調試專案中產生範例文字模板 **\* tt** 檔。 當您變更網域類別的名稱時，這些範本將無法再運作。 不過，它們包含您所需的基本指示詞，並提供可讓您更新以符合 DSL 的範例。
 
  若要從文字模板存取模型：
 
@@ -72,7 +74,7 @@ Here is a list of elements in the model:
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>
 ```
 
- 指示詞 ( 的名稱 `MyLanguage` ，在此範例中) 衍生自 DSL 的名稱。 它會叫用作為 DSL 一部分產生的指示詞 *處理器* 。 您可以在 **Dsl\GeneratedCode\DirectiveProcessor.cs**中找到其原始程式碼。
+ 指示詞 ( 的名稱 `MyLanguage` ，在此範例中) 衍生自 DSL 的名稱。 它會叫用作為 DSL 一部分產生的指示詞 *處理器* 。 您可以在 **Dsl\GeneratedCode\DirectiveProcessor.cs** 中找到其原始程式碼。
 
  DSL 指示詞處理器會執行兩個主要工作：
 

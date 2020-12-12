@@ -1,5 +1,7 @@
 ---
 title: 文字範本公用程式方法
+description: 瞭解當您在 Visual Studio 中撰寫程式碼時，可供您使用的各種文字模板公用程式方法。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55da4d58b717bc4d42b6fafdd084067b7e21a31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b0015e68f7d78c2b33eaeb9e0bfb404acaed834
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591758"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362011"
 ---
 # <a name="text-template-utility-methods"></a>文字範本公用程式方法
 

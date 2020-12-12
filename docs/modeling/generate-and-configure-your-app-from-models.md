@@ -1,5 +1,7 @@
 ---
 title: 透過模型產生和設定應用程式
+description: 瞭解模型所代表的內容，以及如何從模型產生或設定應用程式的元件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea3fe0027827396a49eec4c6b245a9ea59652b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25a0b83d3ac7be95c42ca0c4e53a188569bb5770
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114894"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361868"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>透過模型產生和設定應用程式
 您可以透過模型產生或設定應用程式的各部分。
@@ -20,7 +22,7 @@ ms.locfileid: "76114894"
  模型在呈現需求方面比程式碼更為直接。 直接從模型中衍生應用程式的行為，會比更新程式碼更能快速並可靠地回應變更的需求。 雖然需要進行一些初始工作才能設定衍生，但是如果您預期需求會變更，或打算進行產品的數個變化，則會傳回這項投資。
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>透過模型產生應用程式碼
- 產生程式碼的最簡單方式是使用文字範本。 您可以在保留模型的相同 Visual Studio 方案中產生程式碼。 如需詳細資訊，請參閱：
+ 產生程式碼的最簡單方式是使用文字範本。 您可以在保留模型的相同 Visual Studio 方案中產生程式碼。 如需詳細資訊，請參閱
 
 - [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -35,7 +37,7 @@ ms.locfileid: "76114894"
   不過，如果您從現有應用程式開始進行，則可能會發現需要進行許多重構，才能區隔模型所控管的不同行為，讓它們各自不同。 建議您在預估專案成本時評估應用程式的這個層面。
 
 ## <a name="configuring-your-application-from-a-model"></a>透過模型設定應用程式
- 如果您想要改變應用程式在執行階段的行為，則無法使用程式碼產生，而程式碼產生會在編譯應用程式之前產生原始程式碼。 相反地，您可以設計應用程式以讀取模型，並據此改變其行為。 如需詳細資訊，請參閱：
+ 如果您想要改變應用程式在執行階段的行為，則無法使用程式碼產生，而程式碼產生會在編譯應用程式之前產生原始程式碼。 相反地，您可以設計應用程式以讀取模型，並據此改變其行為。 如需詳細資訊，請參閱
 
 - [如何：在程式碼中開啟檔案的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
@@ -70,7 +72,7 @@ ms.locfileid: "76114894"
 
      例如，UML 類別圖是方塊與箭號的集合；運用這個標記法，您理論上可以定義任何項目。 但是，不建議您使用類別圖，而事實上描述一組類型的位置除外。 例如，您可以調整類別圖來描述不同類型的網頁。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)
 - [如何：在程式碼中開啟檔案的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)

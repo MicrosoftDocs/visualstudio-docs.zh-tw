@@ -1,5 +1,7 @@
 ---
 title: 有向圖形標記語言 (DGML) 參考
+description: 瞭解有向圖形標記語言 (DGML) 描述用於視覺效果的資訊，以及執行複雜分析。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bef53e9288f04c9ed7fce6ff7e5ddd69020798f
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 0812cee6555ecc576f7fb78f3069a0ae69f5a16c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099280"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361790"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>有向圖形標記語言 (DGML) 參考
 
@@ -321,7 +323,7 @@ ms.locfileid: "92099280"
 </Properties>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)

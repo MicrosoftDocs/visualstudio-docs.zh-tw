@@ -1,5 +1,7 @@
 ---
 title: 圖表的屬性
+description: 瞭解圖表以及如何設定屬性，以指定在產生的設計工具中會顯示圖表的方式。
+ms.custom: SEO-VS-2020
 ms.date: 10/31/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fd1ab781fd838c8e5379e38fdcb3a6fddd65230
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fe27eb7dcfb8a984fceaee0700e1df44b6de4ef1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810037"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361946"
 ---
 # <a name="properties-of-diagrams"></a>圖表的屬性
 您可以設定屬性，以指定要在產生的設計工具中顯示圖表的方式。 例如，您可以在圖表中指定文字的預設色彩。
@@ -35,16 +37,16 @@ ms.locfileid: "90810037"
 |具有自訂的函式|如果為 `True` ，則會在原始程式碼中提供自訂的函式。 如需詳細資訊，請參閱覆 [寫和擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|否|
 |繼承修飾詞|描述從圖表產生之原始程式碼類別的繼承類型 (`none` 、 `abstract` 或 `sealed`) 。|無|
 |基底圖表|此圖表的基底類別。|(無)|
-|[屬性]|此圖表的名稱。|目前的名稱|
+|名稱|此圖表的名稱。|目前的名稱|
 |命名空間|與此圖表關聯的命名空間。|目前的命名空間|
 |表示的類別|此圖表所代表的根域類別。|目前的根類別（如果適用）|
-|備註|與此元素相關聯的非正式附注。|\<none>|
+|附註|與此元素相關聯的非正式附注。|\<none>|
 |將填滿色彩公開為屬性|如果為 `True` ，則使用者可以設定產生之設計工具的圖表填滿色彩。 若要設定此屬性，請以滑鼠右鍵按一下 [圖表] 圖形，然後按一下 [ **新增公開**]。|否|
 |將文字色彩公開為屬性|如果為 `True` ，則使用者可以在產生的設計工具中設定圖表的文字色彩。 若要設定此屬性，請以滑鼠右鍵按一下 [圖表] 圖形，然後按一下 [ **新增公開**]。|否|
-|描述|用來記錄所產生之設計工具的描述。|\<none>|
+|說明|用來記錄所產生之設計工具的描述。|\<none>|
 |顯示名稱|將在此圖表產生的設計工具中顯示的名稱。|\<none>|
 |說明關鍵字|用來為此圖表的 F1 說明編制索引的關鍵字。|\<none>|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [特定領域語言工具詞彙](/previous-versions/bb126564(v=vs.100))

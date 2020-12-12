@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：使用文字範本產生程式碼
+description: 瞭解程式碼產生可讓您產生強型別的程式碼，但在來源模型變更時，也可以輕鬆地變更程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a39630f8a12ad2c1d7d2bc89f6830fc694e89087
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532056"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360984"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 
@@ -85,7 +87,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 1. 在 [檔案] 功能表 **上，按一下** [ **新增** ]，然後按一下 [ **專案**]。
 
-2. 按一下 [] **** 節點，然後按一下 [範本] **** 窗格中的 [主控台應用程式] ****
+2. 按一下 []  節點，然後按一下 [範本]  窗格中的 [主控台應用程式] 
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>將原型 XML 檔案新增至專案
 
@@ -93,9 +95,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 此檔案應該是專案的一部分，讓範本可以讀取它，但它不會內建到編譯的應用程式中。
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下專案，按一下 [ **加入** ]，然後按一下 [ **新增專案**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下專案，按一下 [ **加入** ]，然後按一下 [ **新增專案**]。
 
-2. 在 [加入新項目] **** 對話方塊中，從 [範本] **** 窗格中選取 [XML 檔案] **** 。
+2. 在 [加入新項目]  對話方塊中，從 [範本]  窗格中選取 [XML 檔案]  。
 
 3. 將範例內容新增至檔案。
 
@@ -131,9 +133,9 @@ namespace MyProject
 
 新增文字模板檔案，並將輸出延伸模組設定為 *.cs*。
 
-1. 在方案總管 **** 中，以滑鼠右鍵按一下專案，並按一下 [加入] ****，然後按一下 [新項目] ****。
+1. 在方案總管 中，以滑鼠右鍵按一下專案，並按一下 [加入] ，然後按一下 [新項目] 。
 
-2. 在 [加入新項目] **** 對話方塊中，從 [範本] **** 窗格中選取 [文字範本] **** 。
+2. 在 [加入新項目]  對話方塊中，從 [範本]  窗格中選取 [文字範本]  。
 
     > [!NOTE]
     > 請確定您新增的是「文字範本」，而非「前置處理過的文字範本」。
@@ -426,9 +428,9 @@ XML 結構描述變更時，可以輕鬆地產生新的類別。 編譯器會告
 
 ## <a name="troubleshoot-the-text-template"></a>對文字模板進行疑難排解
 
-如果您在 [錯誤清單]**** 中看到範本轉換或編譯錯誤，或未正確地產生輸出檔案，則可以使用[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技術對文字範本進行疑難排解。
+如果您在 [錯誤清單] 中看到範本轉換或編譯錯誤，或未正確地產生輸出檔案，則可以使用[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技術對文字範本進行疑難排解。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)

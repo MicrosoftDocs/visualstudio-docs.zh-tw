@@ -1,5 +1,6 @@
 ---
 title: 在文字模板中使用 ModelBus
+description: 如果您要撰寫可讀取包含 Visual Studio ModelBus 參考之模型的文字模板，請瞭解如何解析參考以存取目標模型。
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +8,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1025e7d35c20dc18c87942e23cf71b598d85637a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535937"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361361"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>使用文字範本中的 Visual Studio ModelBus
 
@@ -41,7 +42,7 @@ ms.locfileid: "85535937"
 
     3. 在對話方塊中，選取 [ **我要將這個 DSL 公開給 ModelBus**]。 如果您想要讓此 DSL 公開其模型並取用其他 Dsl 的參考，您可以選取兩個選項。
 
-    4. 按一下 [確定]  。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
+    4. 按一下 [確定]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
 
     5. 按一下 [ **轉換所有範本**]。
 
@@ -49,11 +50,11 @@ ms.locfileid: "85535937"
 
 2. 如果您想要從文字模板和其他程式碼（例如命令）存取 DSL，請複製 **ModelBusAdapter** 專案：
 
-    1. 在 Windows 檔案總管中，複製並貼上包含 **ModelBusAdapter**的資料夾。
+    1. 在 Windows 檔案總管中，複製並貼上包含 **ModelBusAdapter** 的資料夾。
 
     2. 重新命名專案檔 (例如，將專案檔案重新命名為 **T4ModelBusAdapter .csproj**) 。
 
-    3. 在 **方案總管**中，以滑鼠右鍵按一下方案節點，指向 [ **新增**]，然後按一下 [ **現有專案**]。 找出新的介面卡專案**T4ModelBusAdapter。**
+    3. 在 **方案總管** 中，以滑鼠右鍵按一下方案節點，指向 [ **新增**]，然後按一下 [ **現有專案**]。 找出新的介面卡專案 **T4ModelBusAdapter。**
 
     4. 在新專案的每個檔案中 `*.tt` ，變更命名空間。
 
@@ -189,7 +190,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 ### <a name="create-a-modelbus-adapter-that-is-configured-for-text-templates"></a>建立為文字模板設定的 ModelBus 介面卡
 
-1. 在檔案總管中，複製並貼上包含 *ModelBusAdapter*的資料夾。
+1. 在檔案總管中，複製並貼上包含 *ModelBusAdapter* 的資料夾。
 
     將資料夾命名為 **T4ModelBusAdapter**。
 
@@ -287,7 +288,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
    1. 以滑鼠右鍵按一下 [調試] 專案，指向 [ **加入**]，然後按一下 [ **現有專案**]。
 
-   2. 在 [ **加入專案** ] 對話方塊中，將 [篩選] 設定為 [所有檔案] ** (\* \*) **。
+   2. 在 [ **加入專案** ] 對話方塊中，將 [篩選] 設定為 [所有檔案] **(\* \*)**。
 
    3. 流覽至 `MBProvider\Debugging\Sample.provide` ，然後按一下 [ **新增**]。
 
@@ -388,7 +389,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
     }
     ```
 
-3. 按下**Ctrl** + **F5**。
+3. 按下 **Ctrl** + **F5**。
 
 4. 在 Visual Studio 的實驗實例中，開啟 `Debugging\Sample.consume` 。
 
@@ -396,7 +397,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     如果您已在該元素上設定 MBR，則會開啟參考的模型，並選取參考的元素。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)

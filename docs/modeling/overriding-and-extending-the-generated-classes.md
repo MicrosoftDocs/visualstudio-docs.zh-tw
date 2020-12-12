@@ -1,5 +1,7 @@
 ---
 title: 覆寫及擴充產生的類別
+description: 瞭解 DSL 定義是一個平臺，您可以在其中建立一組功能強大的工具，這些工具是以網域特定語言為基礎。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1b36a7524530df7f9a18ce9abe1de2d430156d6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595887"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362089"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>覆寫及擴充產生的類別
 
@@ -46,7 +48,7 @@ public partial class Book
 
 若要探索您可以覆寫的方法，請在類別中輸入覆 **寫** ，後面接著空格。 IntelliSense 工具提示會告訴您哪些方法可以覆寫。
 
-### <a name="double-derived-classes"></a>雙重衍生類別
+### <a name="double-derived-classes"></a>Double-Derived 類別
 
 在產生的類別中，大部分的方法都是繼承自模型命名空間中一組固定的類別。 不過，某些方法是在產生的程式碼中定義。 一般來說，這表示您無法覆寫它們;您無法在一個部分類別中覆寫在相同類別的另一個部分定義中所定義的方法。
 

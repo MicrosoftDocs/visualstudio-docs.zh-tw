@@ -1,5 +1,7 @@
 ---
 title: 網域屬性值變更處理常式
+description: 瞭解可用於 Visual Studio 網域特定語言的網域屬性值變更處理常式。
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f7dcf97498895f841f2a68fd3bc1abac224824
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594704"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361725"
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 
@@ -22,7 +24,7 @@ ms.locfileid: "75594704"
 
 ## <a name="override-the-property-handler-methods"></a>覆寫屬性處理常式方法
 
-網域指定的語言的每個網域屬性會由巢狀於父網域類別內的類別來處理。 其名稱會遵循 *PropertyName*PropertyHandler 格式。 您可以在檔案 **Dsl\Generated Code\DomainClasses.cs**中檢查這個屬性處理常式類別。 在這個類別中，會在值變更前立即呼叫 `OnValueChanging()`，並在值變更後立即呼叫 `OnValueChanged()`。
+網域指定的語言的每個網域屬性會由巢狀於父網域類別內的類別來處理。 其名稱會遵循 *PropertyName* PropertyHandler 格式。 您可以在檔案 **Dsl\Generated Code\DomainClasses.cs** 中檢查這個屬性處理常式類別。 在這個類別中，會在值變更前立即呼叫 `OnValueChanging()`，並在值變更後立即呼叫 `OnValueChanged()`。
 
 例如，假設您有一個名為的網域類別，其名為 `Comment` 的字串網域屬性 `Text` 和名為的整數屬性 `TextLengthCount` 。 若要使 `TextLengthCount` 永遠包含字串的長度 `Text` ，您可以在 Dsl 專案的個別檔案中撰寫下列程式碼：
 
@@ -99,7 +101,7 @@ if (newValue > 10)
 
 相反地，您可以考慮將衍生屬性定義為計算屬性。 在此情況下，屬性不會有自己的儲存值，因此每當需要屬性值時，都會評估定義的函式。 如需詳細資訊，請參閱 [計算和自訂儲存體屬性](../modeling/calculated-and-custom-storage-properties.md)。
 
-您可以設定**Kind** `TextLengthCount` 在 DSL 定義中**計算**的種類欄位，而不是上述範例。 您可以為此網域屬性提供自己的 **Get** 方法。 **Get**方法會傳回字串的目前長度 `Text` 。
+您可以設定 `TextLengthCount` 在 DSL 定義中 **計算** 的種類欄位，而不是上述範例。 您可以為此網域屬性提供自己的 **Get** 方法。 **Get** 方法會傳回字串的目前長度 `Text` 。
 
 不過，計算屬性的潛在缺點是每次使用值都會評估運算式，因此可能呈現效能問題。 此外，計算屬性沒有 OnValueChanging() 和 OnValueChanged()。
 

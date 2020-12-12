@@ -1,5 +1,7 @@
 ---
 title: T4 文字範本 API 參考
+description: 瞭解文字模板化 API 如何讓您叫用及自訂文字模板的轉換。
+ms.custom: SEO-VS-20200
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b857770ac793e7df7f75ecee03cb089df1eeb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85e2a21002919fcccca40bf481200e368bd16ed5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597210"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361036"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>T4 文字範本 API 參考
 

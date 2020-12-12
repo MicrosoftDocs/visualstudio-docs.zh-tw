@@ -1,5 +1,7 @@
 ---
 title: 將圖表匯出為影像
+description: 瞭解您可以將模型圖表儲存為唯讀格式，讓您可以與不使用相同版本 Visual Studio 的人員共用。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12e0036377ed5b67e092ff0cf4588acc39c23525
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547598"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361634"
 ---
 # <a name="export-diagrams-as-images"></a>將圖表匯出為影像
 
@@ -38,9 +40,9 @@ ms.locfileid: "85547598"
 
 2. 在 [ **名稱** ] 清單中，選取 [ **Microsoft XPS Document Writer**]，然後按一下 **[確定]**。
 
-3. 在 [ **另存** 新檔] 對話方塊中，將檔案儲存為 **xps 檔 (\* .xps) ** 檔。
+3. 在 [ **另存** 新檔] 對話方塊中，將檔案儲存為 **xps 檔 (\* .xps)** 檔。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立應用程式模型](../modeling/create-models-for-your-app.md)
 - [共用模型及匯出圖表](../modeling/share-models-and-exporting-diagrams.md)

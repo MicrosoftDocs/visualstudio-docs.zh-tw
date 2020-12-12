@@ -1,5 +1,7 @@
 ---
 title: 建立應用程式 &apos; 架構模型
+description: 瞭解如何在 Visual Studio 中建立模型，做為您的軟體系統或應用程式整體結構和行為描述的一部分。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 449f528264f2101a45bc809a5002ce4e88659d05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c284532a1e7f6407ebea987873665edb4e940019
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711725"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361023"
 ---
 # <a name="model-your-app39s-architecture"></a>將您的應用程式模型&#39;s 架構
 若要協助確保您的軟體系統或應用程式符合使用者的需求，您可以在 Visual Studio 中建立模型，做為軟體系統或應用程式之整體結構和行為的描述之一部分。 您也可以使用模型來描述整個設計所使用的模式。 這些模型可協助您了解現有架構、討論變更，並清楚地傳達您的意圖。
@@ -102,7 +104,7 @@ ms.locfileid: "88711725"
 
 - 開發人員能夠採用之變化的描述。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [視覺化程式碼](../modeling/visualize-code.md)
 - [模型使用者需求](../modeling/model-user-requirements.md)

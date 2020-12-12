@@ -1,5 +1,7 @@
 ---
 title: 關於網域指定的語言
+description: 瞭解特定領域語言 (DSL) 如何設計來表達特定問題空間或網域中的語句。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a1e9b1f853ad540f65101bffabea922f8fdcef1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597265"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360882"
 ---
 # <a name="about-domain-specific-languages"></a>關於網域指定的語言
 
@@ -54,11 +56,11 @@ DSL 的一般應用是產生程式碼或其他成品。 當您定義 DSL 時，�
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 可讓您建立特定領域的語言，此語言具有您自己的圖形設計工具和您自己的圖表標記法，然後使用該語言為每個專案產生適當的原始程式碼。
 
-## <a name="domain-specific-development"></a>特定領域開發
+## <a name="domain-specific-development"></a>Domain-Specific 開發
 
 特定領域開發是識別應用程式元件的程式，這些元件可以使用特定領域語言來建立模型，然後再建立語言並將其部署至應用程式開發人員。 開發人員會使用特定領域語言來建立其應用程式專屬的模型、使用模型來產生原始程式碼，然後使用原始程式碼來開發應用程式。
 
-## <a name="aspects-of-graphical-domain-specific-development"></a>圖形網域特定開發的層面
+## <a name="aspects-of-graphical-domain-specific-development"></a>圖形化 Domain-Specific 開發的層面
 
 圖形網域特定語言必須包含下列功能：
 
@@ -94,7 +96,7 @@ DSL 的一般應用是產生程式碼或其他成品。 當您定義 DSL 時，�
 
 您也可以為特定領域語言建立模型匯流排介面卡。 此介面卡可讓您參考模型內的模型和元素，並可讓您撰寫可存取及更新 DSL 實例的程式碼。 藉由使用強大的模型匯流排機制，您可以撰寫適用于多個模型的 Visual Studio 延伸模組。 您也可以撰寫適用于模型的獨立應用程式。 如需詳細資訊，請參閱 [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
 
-## <a name="benefits-of-domain-specific-development"></a>網域特定開發的優點
+## <a name="benefits-of-domain-specific-development"></a>Domain-Specific 開發的優點
 
 特定領域語言可以提供下列優點：
 
@@ -110,7 +112,7 @@ DSL 的一般應用是產生程式碼或其他成品。 當您定義 DSL 時，�
 
      開發人員可以使用其模型所產生的程式碼，建立可向用戶端顯示的原型應用程式。
 
-## <a name="the-process-of-domain-specific-development"></a>網域特定開發的程式
+## <a name="the-process-of-domain-specific-development"></a>Domain-Specific 開發的流程
 
 大部分使用網域專屬語言的軟體發展小組都遵循下列步驟來建立及使用其模型：
 

@@ -1,5 +1,7 @@
 ---
 title: 在 Visual Studio 2017 中設計的新功能
+description: 瞭解 Visual Studio 2017 提供的程式碼設計新功能，例如即時相依性驗證。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 6f81cc32604abe6d90ac0d263574e97df35c63bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf622d9762e86bcb75a08c60085a15abb6fdca91
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92299520"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360971"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>在 Visual Studio 2017 中設計的新功能
 
@@ -73,5 +75,5 @@ Visual Studio 可以在數個版本中使用。 並非所有這些都提供架�
 |-|-|-|-|
 |**Code Map**|是|只支援讀取 code map、篩選 code map、加入新的泛型節點，以及從選取專案建立新的有向圖形。|-|
 |**相依性圖表**|是|只支援讀取相依性圖表。|只支援讀取相依性圖表。|
-| (DGML 圖表的**導向圖形**) |是|是|是|
+| (DGML 圖表的 **導向圖形**) |是|是|是|
 |**程式碼複製**|是|-|-|

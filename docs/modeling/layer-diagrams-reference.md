@@ -1,5 +1,7 @@
 ---
 title: 相依性圖表參考
+description: 瞭解在 Visual Studio 中，您可以使用相依性圖表來視覺化系統的高階邏輯架構。
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 774716dff6562b7792c6fa885c40db2a0a133136
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 265bb31dd95aa3a84bdb497a3306278acfd8838e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594561"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360568"
 ---
 # <a name="dependency-diagrams-reference"></a>相依性圖表：參考
 
@@ -56,7 +58,7 @@ ms.locfileid: "75594561"
 
 下表描述您可以在相依性圖表上使用的元素。
 
-|**形狀**|**Element**|**描述**|
+|**形狀**|**Element**|**說明**|
 |-|-|-|
 |1|**層**|您系統中之實體成品的邏輯群組。 這些成品可以是命名空間、專案、類別、方法等等。<br /><br /> 若要查看連結到圖層的成品，請開啟圖層的快捷方式功能表，然後選擇 [ **View Links** ] 以開啟 [ **圖層瀏覽器**]。<br /><br /> 如需詳細資訊，請參閱 [Layer Explorer](#Explorer)。<br /><br /> -   **禁止的命名空間** 相依性-指定與此圖層相關聯的成品不能相依于指定的命名空間。<br />-   **禁止的命名空間** -指定與此圖層相關聯的成品不能屬於指定的命名空間。<br />-   **必要的命名空間** -指定與此圖層相關聯的成品必須屬於其中一個指定的命名空間。|
 |2|**相依性**|表示一個圖層可以使用另一個圖層的功能，但反之則不然。<br /><br /> -   **方向** -指定相依性的方向。|
@@ -89,13 +91,13 @@ ms.locfileid: "75594561"
 > [!NOTE]
 > 如果您看不到所有這些屬性，請展開 [ **圖層瀏覽器** ] 視窗。
 
-|**圖層總管中的資料行**|**描述**|
+|**圖層總管中的資料行**|**說明**|
 |-|-|
 |**類別**|成品的類型，例如類別、命名空間、原始程式檔等等|
 |**層**|連結到成品的圖層|
 |**支援驗證**|若 **為 True**，則圖層驗證程式可以驗證專案是否符合此元素的相依性。<br /><br /> 如果 **為 False**，則連結不會參與圖層驗證流程。<br /><br /> 如需詳細資訊，請參閱相依性 [圖表：指導方針](../modeling/layer-diagrams-guidelines.md)。|
 |**識別碼**|連結成品的參考|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立應用程式模型](../modeling/create-models-for-your-app.md)

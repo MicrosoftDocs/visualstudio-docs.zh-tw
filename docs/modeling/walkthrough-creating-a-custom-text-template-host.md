@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：建立自訂文字範本主機
+description: 如果您想要從外部 Visual Studio 使用文字模板轉換功能，請瞭解如何撰寫自訂主機。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cc1681d7c761aca123217cbf28cc33b0dbb584c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532219"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361049"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
 
-*文字模板主機*提供可讓*文字模板轉換引擎*執行的環境。 這個主應用程式負責管理引擎與檔案系統之間的互動。 需要檔案或元件的引擎或指示詞 *處理器* 可以從主機要求資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱 [文字模板轉換流程](../modeling/the-text-template-transformation-process.md)。
+*文字模板主機* 提供可讓 *文字模板轉換引擎* 執行的環境。 這個主應用程式負責管理引擎與檔案系統之間的互動。 需要檔案或元件的引擎或指示詞 *處理器* 可以從主機要求資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱 [文字模板轉換流程](../modeling/the-text-template-transformation-process.md)。
 
 如果您想要從外部 Visual Studio 使用 *文字模板轉換* 功能，或想要將該功能整合至自訂工具，您可以撰寫自訂主機。 若要建立自訂主機，您必須建立繼承自 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))的類別。 如需個別方法的檔，請參閱 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。
 
@@ -35,7 +37,7 @@ ms.locfileid: "85532219"
 
 - 測試自訂主應用程式。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要完成這個逐步解說，您必須具有下列各項：
 
@@ -801,7 +803,7 @@ ms.locfileid: "85532219"
 
      自訂主應用程式隨即執行並完成文字範本轉換流程。
 
-5. 在 **Windows 檔案總管**中，流覽至包含 TestTemplate.tt 檔案的資料夾。
+5. 在 **Windows 檔案總管** 中，流覽至包含 TestTemplate.tt 檔案的資料夾。
 
      該資料夾也會包含 TestTemplate1.txt 檔。
 
@@ -821,6 +823,6 @@ ms.locfileid: "85532219"
 
 在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱 [逐步解說：將主機連接至產生的](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)指示詞處理器。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

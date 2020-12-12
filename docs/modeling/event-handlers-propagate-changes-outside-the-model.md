@@ -1,5 +1,7 @@
 ---
 title: 事件處理常式傳播模型外的變更
+description: 瞭解在視覺效果和模型 SDK 中，您可以定義存放區事件處理常式，以將變更傳播到存放區以外的資源。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b0780007361115aa485b91db70cc413029a6f8f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114600"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361673"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件處理常式傳播模型外的變更
 
@@ -35,7 +37,7 @@ ms.locfileid: "76114600"
 
     - `ElementDeleted` -已刪除模型專案、關聯性、圖形或連接器之後觸發。 您仍然可以存取專案的屬性值，但它與其他元素沒有任何關聯性。
 
-2. 在**DslPackage**專案的個別程式碼檔案中，新增_dsl_**DocData**的部分類別定義。
+2. 在 **DslPackage** 專案的個別程式碼檔案中，新增 _dsl_**DocData** 的部分類別定義。
 
 3. 以方法撰寫事件的程式碼，如下列範例所示。 `static`除非您想要存取，否則可以是 `DocData` 。
 
@@ -184,7 +186,7 @@ private static void AlbumTitleAdjuster(object sender,
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)
 - [範例程式碼：電路圖](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

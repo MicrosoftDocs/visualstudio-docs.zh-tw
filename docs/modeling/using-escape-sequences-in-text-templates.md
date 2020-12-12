@@ -1,5 +1,7 @@
 ---
 title: 使用文字範本中的逸出序列
+description: '瞭解如何使用文字模板中的 escape 序列來產生文字模板標記，以及僅在 c # 程式碼中將控制字元和引號換用。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e6e5cf163037077d0517e5f7ea460f9124f27c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b007a9b5ccf41a27cda7d9833064eb60394c4dc
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594041"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361322"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>在文字模板中使用 escape 序列
 
@@ -36,6 +38,6 @@ ms.locfileid: "75594041"
 
 - 如果 escape (\\) 字元會出現在其他任何順序中，而 (不是以 c # 中的任何順序（僅限 c #）進行) ，則會直接輸出該字元。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：使用逸出序列從範本產生範本](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

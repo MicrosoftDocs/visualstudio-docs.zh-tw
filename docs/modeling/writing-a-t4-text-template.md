@@ -1,5 +1,7 @@
 ---
 title: 撰寫 T4 文字範本
+description: 瞭解 T4 文字模板以及如何撰寫包含指示詞、文字區塊和控制區塊的文字模板。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,21 +13,21 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 086e7ecf568d043142cdc80f020897ed1793b86c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593482"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361218"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
-文字範本包含將透過它產生的文字。 例如，建立網頁的範本將會包含 " \<html> ..."以及 HTML 網頁的所有其他標準部分。 插入範本中的 *控制項區塊*是程式碼的片段。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。
+文字範本包含將透過它產生的文字。 例如，建立網頁的範本將會包含 " \<html> ..."以及 HTML 網頁的所有其他標準部分。 插入範本中的 *控制項區塊* 是程式碼的片段。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。
 
  此結構讓範本容易開發，因為您可以從所產生檔案的原型開始，並以累加方式插入讓結果不同的控制區塊。
 
  文字範本是由下列部分組成：
 
-- 指示詞-控制範本處理**方式的元素**。
+- 指示詞-控制範本處理 **方式的元素**。
 
 - **文字區塊** -直接複製到輸出的內容。
 
@@ -229,7 +231,7 @@ private void WriteSquareLine(int i)
 
  有數種方式可以讀取原始程式檔。
 
- **讀取文字模板中的**檔案。 這是取得資料以放入範本的最簡單方式：
+ **讀取文字模板中的** 檔案。 這是取得資料以放入範本的最簡單方式：
 
 ```
 <#@ import namespace="System.IO" #>
@@ -238,7 +240,7 @@ private void WriteSquareLine(int i)
 
  **將檔案載入為可導覽的模型**。 功能較強大的方法是將資料讀取為您文字範本程式碼可以巡覽的模型。 例如，您可以載入 XML 檔案，並使用 XPath 運算式對其進行巡覽。 您也可以使用 [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) 來建立一組可供您用來讀取 XML 資料的類別。
 
- **編輯圖表或表單中的模型檔案。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 提供的工具可讓您以圖表或 Windows form 形式來編輯模型。 這樣可以更輕鬆地與所產生應用程式的使用者討論此模型。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 也會建立一組強型別類別，以反映模型的結構。 如需詳細資訊，請參閱 [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
+ **編輯圖表或表單中的模型檔案。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 提供的工具可讓您以圖表或 Windows form 形式來編輯模型。 這樣可以更輕鬆地與所產生應用程式的使用者討論此模型。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 也會建立一組強型別類別，以反映模型的結構。 如需詳細資訊，請參閱 [從 Domain-Specific 語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>設計階段範本中的相對檔案路徑
  在 [設計階段文字模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)中，如果您想要參考與文字模板相對之位置中的檔案，請使用 `this.Host.ResolvePath()` 。 您也必須在 `hostspecific="true"` 指示詞中設定 `template`：

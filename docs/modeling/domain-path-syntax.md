@@ -1,5 +1,7 @@
 ---
 title: 網域路徑語法
+description: 瞭解網域路徑語法，以及 DSL 定義如何使用類似 XPath 的語法來尋找模型中的特定元素。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d7ab5f080328338e40bed080ec8a4c7a85eabdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24e2c9bcbecb095282c0914fa09f93e5c21e699
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114634"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361739"
 ---
 # <a name="domain-path-syntax"></a>網域路徑語法
 DSL 定義使用類似 XPath 的語法來尋找模型中的特定項目。
@@ -27,7 +29,7 @@ DSL 定義使用類似 XPath 的語法來尋找模型中的特定項目。
 
  ![CommentReferencesSubjects 參考關聯性](../modeling/media/dsl_reference.png)
 
- 這個語法會周遊模型的樹狀結構。 例如，上圖中的網域關聯性**CommentReferencesSubjects**具有**主旨角色。** 路徑區段 **/！Subjectt** 指定路徑在透過 **主旨角色存取的元素** 上完成。
+ 這個語法會周遊模型的樹狀結構。 例如，上圖中的網域關聯性 **CommentReferencesSubjects** 具有 **主旨角色。** 路徑區段 **/！Subjectt** 指定路徑在透過 **主旨角色存取的元素** 上完成。
 
  每個區段以網域關聯性的名稱開頭。 如果是從某個專案到關聯性，則路徑區段會顯示為 *PropertyName*。 如果躍點來自專案的連結，則路徑區段會顯示為關聯性 */！* 擁有
 
@@ -35,6 +37,6 @@ DSL 定義使用類似 XPath 的語法來尋找模型中的特定項目。
 
  用於表示項目到連結之躍點的名稱是角色的 [`Property Name`] 值。 用於表示連結到項目之躍點的名稱是目標角色名稱。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)

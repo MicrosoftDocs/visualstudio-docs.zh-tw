@@ -1,5 +1,7 @@
 ---
 title: 在 Windows Form 中內嵌圖表
+description: 瞭解如何將 DSL 圖表內嵌在 Windows 控制項中，這會出現在 Visual Studio 視窗中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4338bfa824b511ee0be40516e1396a75901188a1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547624"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361699"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>在 Windows Form 中內嵌圖表
 
@@ -67,7 +69,7 @@ ms.locfileid: "85547624"
 
 ## <a name="update-the-form-using-store-events"></a>使用 store 事件更新表單
 
-1. 在表單設計工具中，加入名為的 **ListBox** `listBox1` 。 這會顯示模型中的元素清單。 它會使用 *存放區事件*與模型進行同步處理。 如需詳細資訊，請參閱 [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
+1. 在表單設計工具中，加入名為的 **ListBox** `listBox1` 。 這會顯示模型中的元素清單。 它會使用 *存放區事件* 與模型進行同步處理。 如需詳細資訊，請參閱 [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
 2. 在自訂程式碼檔案中，覆寫 DocView 類別的其他方法：
 
@@ -141,7 +143,7 @@ ms.locfileid: "85547624"
 
      請注意，清單方塊會顯示模型中的專案清單，並且在任何新增或刪除之後，以及復原和重做之後都是正確的。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

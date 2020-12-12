@@ -1,5 +1,7 @@
 ---
 title: 模型使用者需求
+description: 瞭解 Visual Studio 如何藉由繪製活動圖表來協助您瞭解、討論和溝通使用者的需求。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40418b2d188ac5482a12dd4ffdddd221bf5d2f97
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590237"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361959"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 
@@ -96,7 +98,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 請參閱 [模型應用程式架構](../modeling/model-your-app-s-architecture.md) ，以瞭解如何開發符合服務需求品質的程式碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)
 - [建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)

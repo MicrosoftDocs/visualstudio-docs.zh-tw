@@ -1,5 +1,7 @@
 ---
 title: 將自訂屬性新增至相依性圖表
+description: 瞭解當您撰寫相依性圖表的延伸模組程式碼時，如何將值與相依性圖表上的任何專案儲存在一起。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3073a42faf0dcc6fbf586847382ba3a83d88ed4
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546910"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360763"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>將自訂屬性新增至相依性圖表
 
@@ -22,7 +24,7 @@ ms.locfileid: "85546910"
 
 ## <a name="non-visible-properties"></a>非可見屬性
 
-如果您只想要讓程式碼將值附加至相依性圖表中的任何專案，則不需要定義 MEF 元件。 ILayerElement 中有一個名為的字典 `Properties` 。 [ILayerElement](/previous-versions/ff644511(v=vs.140)) 只要將可封送處理的值加入至任何圖層項目的字典中即可。 它們會儲存為相依性圖表的一部分。
+如果您只想要讓程式碼將值附加至相依性圖表中的任何專案，則不需要定義 MEF 元件。 ILayerElement 中有一個名為的字典 `Properties` 。 [](/previous-versions/ff644511(v=vs.140)) 只要將可封送處理的值加入至任何圖層項目的字典中即可。 它們會儲存為相依性圖表的一部分。
 
 ## <a name="editable-properties"></a>可編輯的屬性
 
@@ -160,6 +162,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [擴充相依性圖表](../modeling/extend-layer-diagrams.md)

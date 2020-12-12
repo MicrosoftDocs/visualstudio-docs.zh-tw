@@ -1,5 +1,7 @@
 ---
 title: Modeling SDK for Visual Studio - 網域指定的語言
+description: 您可以使用模型化 SDK 進行 Visual Studio，以建立功能強大的模型型開發工具，讓您可以整合到 Visual Studio。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2abb209943ff14969f71ebdca6982020f30a5d47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a032e5f6b3f9eda302f65a4d04b196ef55a225f6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590198"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360776"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - 網域指定的語言
 

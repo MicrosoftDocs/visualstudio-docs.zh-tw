@@ -1,5 +1,7 @@
 ---
 title: 分析架構並製作架構模型
+description: 瞭解如何使用 Visual Studio 架構和模型工具來設計和建立應用程式模型，以確定您的應用程式符合架構需求。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +19,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1db28867ea47752aa74b7898c44e797c0704594
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71296b9ccb2e442d1bd9bc13865e0086821bf030
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544218"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361153"
 ---
 # <a name="analyze-and-model-your-architecture"></a>分析架構並製作架構模型
 
@@ -38,12 +40,12 @@ ms.locfileid: "85544218"
 
 ## <a name="article-reference"></a>文章參考
 
-|案例|發行項|
+|案例|文章|
 |-|-|
 |**視覺化程式碼**：<br /><br />-藉由建立 code map 來查看程式碼的組織和關聯性。 將組件、命名空間、類別、方法等之間的相依性視覺化。<br />-從程式碼建立類別圖表，以查看特定專案的類別結構和成員。<br />-藉由建立相依性圖表來驗證程式代碼，尋找您的程式碼與其設計之間的衝突。|- [視覺化程式碼](../modeling/visualize-code.md)<br />- [使用類別和其他類型 (類別設計工具) ](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />- [影片：利用 Visual Studio 2015 code map 瞭解程式碼的設計](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />- [影片：即時驗證您的架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
 |**定義架構**：<br /><br />-藉由建立相依性圖表來定義和強制執行程式碼元件之間的相依性條件約束。|- [影片：使用 Visual Studio (Channel 9 驗證架構相依性) ](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**根據需求和預定設計驗證您的系統**<br /><br />-使用描述預期架構的相依性圖表驗證程式代碼相依性，並防止可能與設計發生衝突的變更。|- [影片：使用 Visual Studio (Channel 9 驗證架構相依性) ](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**自訂模型和圖表**：<br /><br />-建立您自己的特定領域語言。|- [適用于 Visual Studio 的模型 SDK-網域特定語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
+|**自訂模型和圖表**：<br /><br />-建立您自己的特定領域語言。|- [Visual Studio Domain-Specific 語言的模型 SDK](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
 |**使用 T4 範本產生文字**：<br /><br />-在範本內使用文字區塊和控制邏輯來產生以文字為基礎的檔案。<br /> -Visual Studio 中包含 MSBuild 的 T4 範本組建|- [程式碼產生和 T4 文字模板](../modeling/code-generation-and-t4-text-templates.md)|
 |**使用 Team Foundation 版本控制，共用模型、圖表和 Code Map**：<br /><br />-在 Team Foundation 版本控制下放置 code map、專案和相依性圖表，讓您可以共用這些專案。| |
 
@@ -93,7 +95,7 @@ DSL 是您為特定目的所設計的標記法。 在 Visual Studio 中，它通
 
 - [Modeling SDK for Visual Studio - 特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 2017 中模型化的新功能](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps 與應用程式生命週期管理](/azure/devops/user-guide/devops-alm-overview)

@@ -1,5 +1,7 @@
 ---
 title: 巡覽及更新程式碼中的模型
+description: 瞭解如何撰寫程式碼來建立和刪除模型元素、設定其屬性，以及建立和刪除專案之間的連結。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566172"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362206"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 
@@ -55,7 +57,7 @@ ms.locfileid: "75566172"
 
  `henry.Name = "Henry VIII";`
 
- 如果在 DSL 定義中，會**計算**屬性的**種類**，所以您無法設定它。 如需詳細資訊，請參閱 [計算和自訂儲存體屬性](../modeling/calculated-and-custom-storage-properties.md)。
+ 如果在 DSL 定義中，會 **計算** 屬性的 **種類**，所以您無法設定它。 如需詳細資訊，請參閱 [計算和自訂儲存體屬性](../modeling/calculated-and-custom-storage-properties.md)。
 
 ### <a name="relationships"></a>關聯性
  您在 DSL 定義中定義的網域關聯性會變成成對的屬性，每個關聯性端的類別都有一個。 屬性的名稱會顯示在 Dsldefinition.dsl 檔圖中，做為關聯性每一端角色上的標籤。 根據角色的多重性，屬性的類型是位於關聯性另一端的類別，或是該類別的集合。
@@ -70,7 +72,7 @@ ms.locfileid: "75566172"
 
  `&& p.Parents.All(parent => parent.Children.Contains(p));`
 
- **ElementLinks**。 關聯性也會以稱為 *連結*的模型專案表示，這是網域關聯性類型的實例。 連結一律會有一個來源元素和一個目標元素。 來源元素和目標元素可以相同。
+ **ElementLinks**。 關聯性也會以稱為 *連結* 的模型專案表示，這是網域關聯性類型的實例。 連結一律會有一個來源元素和一個目標元素。 來源元素和目標元素可以相同。
 
  您可以存取連結和其屬性：
 
@@ -288,7 +290,7 @@ using (Transaction t =
 ## <a name="locks"></a><a name="locks"></a> 鎖
  鎖定可能會妨礙您的變更。 鎖定可以針對個別元素、分割區和存放區設定。 如果其中任何一個層級的鎖定防止您想要進行的變更類型，則在您嘗試時可能會擲回例外狀況。 您可以使用元素來探索鎖定是否已設定。GetLocks ( # A1，這是在命名空間中定義的擴充方法 <xref:Microsoft.VisualStudio.Modeling.Immutability> 。
 
- 如需詳細資訊，請參閱 [定義鎖定原則以建立唯讀區段](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)。
+ 如需詳細資訊，請參閱 [定義鎖定原則以建立 Read-Only 區段](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)。
 
 ## <a name="copy-and-paste"></a><a name="copy"></a> 複製並貼上
  您可以將元素或專案群組複製到 <xref:System.Windows.Forms.IDataObject> ：
@@ -381,7 +383,7 @@ FamilyTreeDiagram diagram =
 
  `connector.FromShape, connector.ToShape`
 
- 許多圖形都是複合的;它們是由父圖形以及一或多個子系的層級所組成。 相對於另一個圖形的位置，則*稱為其子系。* 當父圖形移動時，子系會隨之移動。
+ 許多圖形都是複合的;它們是由父圖形以及一或多個子系的層級所組成。 相對於另一個圖形的位置，則 *稱為其子系。* 當父圖形移動時，子系會隨之移動。
 
  *相對子* 系可出現在父圖形的周框方塊之外。 *內嵌* 的子系會嚴格地出現在父系的界限內。
 
@@ -482,7 +484,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>儲存磁碟分割
  載入模型時，會同時載入隨附的圖表。 通常會將模型載入 DefaultPartition 中，並將圖表內容載入至另一個分割區。 通常會載入每個分割區的內容，並將其儲存至不同的檔案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [特定領域語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)

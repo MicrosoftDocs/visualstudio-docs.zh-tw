@@ -1,5 +1,7 @@
 ---
 title: 回應及傳播變更
+description: 瞭解當元素建立、刪除或更新時，您可以撰寫程式碼，將變更傳播至模型的其他部分或外部資源。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,18 +11,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c51aeea4a1637e5b1b9d2de0d8b92920334e2fc
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 9e44def032854e46b00638cff77c8bea91eb0f09
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414512"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360608"
 ---
 # <a name="respond-to-and-propagate-changes"></a>回應及傳播變更
 
 當元素建立、刪除或更新時，您可以撰寫程式碼，將變更傳播到模型的其他部分，或寫入外部資源（例如檔案、資料庫或其他元件）。
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 
 作為指導方針，請以下列順序考慮這些技術：
 
