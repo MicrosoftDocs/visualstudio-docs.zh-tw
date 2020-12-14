@@ -1,7 +1,8 @@
 ---
 title: 針對不屬於 Visual Studio 解決方案的應用程式進行 Debug 錯
 titleSuffix: ''
-ms.custom: ''
+Description: 瞭解如何對不屬於 Visual Studio 解決方案的應用程式進行 debug 錯。 您可能可以附加 Visual Studio 偵錯工具。
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2020
 ms.topic: how-to
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8cb71acb9c1c332f269f77129fa2d11a9a874f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd4d5497a4c29502fe4d7e4825b1767991c79298
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350143"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398658"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>在 c + +、c #、Visual Basic、F # (的 c + +、c #、、F ) # Visual Studio 的應用程式
 
@@ -50,27 +51,27 @@ ms.locfileid: "85350143"
 
 1. 在 Visual Studio 中，**選取 [** 檔案  >  **開啟**  >  **專案**]。
 
-1. 在 [**開啟專案**] 對話方塊的 [**檔案名**] 旁的下拉式清單中，選取 [**所有專案**檔] （若尚未選取）。
+1. 在 [**開啟專案**] 對話方塊的 [**檔案名**] 旁的下拉式清單中，選取 [**所有專案** 檔] （若尚未選取）。
 
 1. 流覽至 *.exe* 檔案，選取該檔案，然後選取 [ **開啟**]。
 
    檔案會出現在新的暫時 Visual Studio 方案中。
 
-1. 從 [**調試**程式] 功能表中選取執行命令，例如**開始調試**程式，開始對應用程式進行偵錯工具。
+1. 從 [**調試** 程式] 功能表中選取執行命令，例如 **開始調試** 程式，開始對應用程式進行偵錯工具。
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>將應用程式匯入至現有的 Visual Studio 解決方案
 
 1. 在 Visual Studio 中開啟 c + +、c # 或 Visual Basic 方案，**然後選取 [** 檔案  >  **加入**  >  **現有專案**]。
 
-1. 在 [**開啟專案**] 對話方塊的 [**檔案名**] 旁的下拉式清單中，選取 [**所有專案**檔] （若尚未選取）。
+1. 在 [**開啟專案**] 對話方塊的 [**檔案名**] 旁的下拉式清單中，選取 [**所有專案** 檔] （若尚未選取）。
 
 1. 流覽至 *.exe* 檔案，選取該檔案，然後選取 [ **開啟**]。
 
    檔案會在目前的方案下顯示為新專案。
 
-1. 選取新檔案之後，請從 [**調試**程式] 功能表中選取 [執行] 命令（例如 [**開始調試**程式]），開始對應用程式進行偵錯工具。
+1. 選取新檔案之後，請從 [**調試** 程式] 功能表中選取 [執行] 命令（例如 [**開始調試** 程式]），開始對應用程式進行偵錯工具。
 
 ### <a name="see-also"></a>另請參閱
-- [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)
+- [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [DBG 檔案](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))

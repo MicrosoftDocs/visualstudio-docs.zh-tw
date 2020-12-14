@@ -1,5 +1,7 @@
 ---
 title: 從 DLL 專案進行 Debug |Microsoft Docs
+Description: 您可以在專案屬性中指定呼叫應用程式，以開始從專案本身進行 DLL 專案的偵錯工具。 如需詳細資訊，請參閱本文。
+ms.custom: SEO-VS-2020
 ms.date: 10/10/2018
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1102eb61f6cfda42f6e4e879f5c592c0c064ce0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 723f35142ec125c016caa3653be450b61fb05d02
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852135"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398554"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>如何：在 Visual Studio (c #、c + +、Visual Basic、F # 中的 DLL 專案進行 Debug ) 
 
@@ -35,11 +37,11 @@ ms.locfileid: "90852135"
 
 ## <a name="specify-a-calling-app-in-a-native-dll-project"></a>在原生 DLL 專案中指定呼叫應用程式
 
-1. 在 **方案總管**中選取 c + + DLL 專案。 選取 [**屬性**] 圖示，按下**Alt** + **鍵**，或按一下滑鼠右鍵並選擇 [**屬性**]。
+1. 在 **方案總管** 中選取 c + + DLL 專案。 選取 [**屬性**] 圖示，按下 **Alt** + **鍵**，或按一下滑鼠右鍵並選擇 [**屬性**]。
 
-1. 在 [ ** \<Project> 屬性頁**] 對話方塊中，請確定視窗頂端**的 [設定**] 欄位設定為 [ **Debug**]。
+1. 在 [ **\<Project> 屬性頁**] 對話方塊中，請確定視窗頂端 **的 [設定**] 欄位設定為 [ **Debug**]。
 
-1. 選取設定**屬性**  >  的**調試**。
+1. 選取設定 **屬性**  >  的 **調試**。
 
 1. 在 [ **要啟動的偵錯工具** ] 清單中，選擇 [ **本機 windows 偵錯工具** ] 或 [ **遠端 windows 偵錯工具**]。
 
@@ -47,15 +49,15 @@ ms.locfileid: "90852135"
 
    ![Debug 屬性視窗](../debugger/media/dbg-debugging-properties-dll.png "Debug 屬性視窗")
 
-1. 在 [命令引數]**** 方塊中，新增必要的程式引數。
+1. 在 [命令引數] 方塊中，新增必要的程式引數。
 
 1. 選取 [確定]。
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>在 managed DLL 專案中指定呼叫應用程式
 
-1. 選取 **方案總管**中的 c # 或 Visual Basic DLL 專案。 選取 [**屬性**] 圖示，按下**Alt** + **鍵**，或按一下滑鼠右鍵並選擇 [**屬性**]。
+1. 選取 **方案總管** 中的 c # 或 Visual Basic DLL 專案。 選取 [**屬性**] 圖示，按下 **Alt** + **鍵**，或按一下滑鼠右鍵並選擇 [**屬性**]。
 
-1. 請確定視窗頂端的 [組態]**** 欄位已設定為 [偵錯]****。
+1. 請確定視窗頂端的 [組態] 欄位已設定為 [偵錯]。
 
 1. 在 [ **起始動作**] 底下：
 
@@ -77,12 +79,12 @@ ms.locfileid: "90852135"
 
 1. 以滑鼠右鍵按一下 DLL 專案，然後選擇 [ **設定為啟始專案**]。
 
-1. 請確定 [ **方案** 設定] 欄位設定為 [ **Debug**]。 按下**F5**鍵，按一下綠色的 [**開始**] 箭號，或選取 [ **Debug**  >  **開始調試**]。
+1. 請確定 [ **方案** 設定] 欄位設定為 [ **Debug**]。 按下 **F5** 鍵，按一下綠色的 [**開始**] 箭號，或選取 [ **Debug**  >  **開始調試**]。
 
-如果偵錯工具未叫用中斷點，請確定您的 DLL 輸出 (預設， * \<project> \Debug*資料夾) 是呼叫應用程式呼叫的位置。
+如果偵錯工具未叫用中斷點，請確定您的 DLL 輸出 (預設， *\<project> \Debug* 資料夾) 是呼叫應用程式呼叫的位置。
 
 ## <a name="see-also"></a>另請參閱
 - [調試 DLL 專案](../debugger/debugging-dll-projects.md)
-- [C # debug 設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Visual Basic debug 設定的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [C + + 偵錯工具設定的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [C# 偵錯組態的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)

@@ -1,6 +1,7 @@
 ---
 title: 找出我的指標是否損毀記憶體位址 |Microsoft Docs
-ms.custom: seodec18
+Description: 若要判斷指標是否會損毀記憶體，您可以尋找堆積損毀，而且可以設定資料中斷點，以找出值的修改方式。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -21,18 +22,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 075569815d55ea30f688c5ce86c56990fca03cd1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 310ec0b881c3b4a299a3d933511e54db0e288ddf
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350351"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398360"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何發覺我的指標是否損毀記憶體位址？
 ## <a name="problem-description"></a>問題說明
  我認為我的其中一個指標可能損毀在 0x00408000 位址的記憶體。 我該如何確定那裡的狀況？
 
-## <a name="solution"></a>解決方法
+## <a name="solution"></a>解決方案
 
 #### <a name="check-for-heap-corruption"></a>檢查堆積損毀
 
@@ -42,8 +43,8 @@ ms.locfileid: "85350351"
 
 1. 在 0x00408000 設定資料中斷點。 請參閱[設定資料變更中斷點 (僅限原生 C++)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)。
 
-2. 當您遇到中斷點時，使用 [記憶體]**** 視窗來檢視從 0x00408000 開始的記憶體內容。 如需詳細資訊，請參閱 [記憶體視窗](../debugger/memory-windows.md)。
+2. 當您遇到中斷點時，使用 [記憶體] 視窗來檢視從 0x00408000 開始的記憶體內容。 如需詳細資訊，請參閱 [記憶體視窗](../debugger/memory-windows.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [機器碼偵錯 FAQ](../debugger/debugging-native-code-faqs.md)
+- [原生程式碼的偵錯工具常見問題](../debugger/debugging-native-code-faqs.md)
 - [偵錯機器碼](../debugger/debugging-native-code.md)

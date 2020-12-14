@@ -1,5 +1,7 @@
 ---
 title: 對 ActiveX 控制項進行 Debug |Microsoft Docs
+Description: 瞭解如何對 ActiveX 控制項進行調試。 您必須指定包含可執行檔，您可以在專案屬性頁中執行此動作，或在開始進行偵錯工具時執行此動作。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc15d42aa2984a7257687eeb051ce754bace9e81
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a0458fb4981642d3f8386edd4c3605ae7b902a14
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852161"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398671"
 ---
 # <a name="how-to-debug-an-activex-control"></a>如何：偵錯 ActiveX 控制項
 
@@ -44,22 +46,22 @@ ms.locfileid: "90852161"
 
 2. 從 [ **View** ] 功能表選擇 [ **屬性頁**]。
 
-3. 在 [專案屬性頁]**** 對話方塊中，開啟 [組態屬性]**** 資料夾，並選取 [偵錯]****。
+3. 在 [專案屬性頁] 對話方塊中，開啟 [組態屬性] 資料夾，並選取 [偵錯]。
 
-4. 在 [偵錯]**** 類別下方，找出 [命令]**** 屬性。
+4. 在 [偵錯] 類別下方，找出 [命令] 屬性。
 
 5. 指定該容器的路徑名稱。 例如，C:\Program Files\Internet Explorer\IEXPLORE.EXE。
 
-6. 如果您指定 Internet Explorer 作為容器，而且您正使用 Active Desktop，請在 [命令引數]**** 方塊中鍵入 `/new`。
+6. 如果您指定 Internet Explorer 作為容器，而且您正使用 Active Desktop，請在 [命令引數] 方塊中鍵入 `/new`。
 
 7. 按一下 [確定]。
 
-     若您未在 [專案屬性頁]**** 對話方塊中指定容器，您也可以在開始偵錯時指定容器。 當您選取執行命令以開始偵錯時，將會出現[偵錯工作階段的可執行檔對話方塊](../debugger/executable-for-debugging-session-dialog-box.md)。 在對話方塊中指定容器的路徑名稱。
+     若您未在 [專案屬性頁] 對話方塊中指定容器，您也可以在開始偵錯時指定容器。 當您選取執行命令以開始偵錯時，將會出現[偵錯工作階段的可執行檔對話方塊](../debugger/executable-for-debugging-session-dialog-box.md)。 在對話方塊中指定容器的路徑名稱。
 
 ## <a name="see-also"></a>另請參閱
 
 - [ActiveX 控制項](/cpp/mfc/activex-controls)
 - [使用測試容器測試屬性和事件](/cpp/mfc/testing-properties-and-events-with-test-container)
-- [偵錯 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)
+- [COM 和 ActiveX 調試](../debugger/com-and-activex-debugging.md)
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

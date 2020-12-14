@@ -1,5 +1,7 @@
 ---
-title: 對自我裝載的 WCF 服務進行 Debug |Microsoft Docs
+title: Self-Hosted WCF 服務的 Debug |Microsoft Docs
+Description: 瞭解如何對自我裝載的 WCF 服務進行調試。  (但不一定能) 的最簡單方式，就是將 Visual Studio 設定為同時啟動用戶端和伺服器。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,15 +19,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac58c187e147040c5ef82320a3b44e86912ed5b8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 983c053ca6bd1370cf67cb04eeb2626c2b1217aa
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852187"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398723"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：偵錯自我裝載的 WCF 服務
-「自我裝載服務」** 是一項不會在 IIS、WCF 服務主機或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 程式開發伺服器內部執行的 WCF 服務。 若要將自我裝載的 WCF 錯用，最簡單的方式是將設定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 為在您選擇 [**調試**程式] 功能表上的 [**開始調試**程式] 時同時啟動用戶端和伺服器。
+「自我裝載服務」是一項不會在 IIS、WCF 服務主機或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 程式開發伺服器內部執行的 WCF 服務。 若要將自我裝載的 WCF 錯用，最簡單的方式是將設定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 為在您選擇 [**調試** 程式] 功能表上的 [**開始調試** 程式] 時同時啟動用戶端和伺服器。
 
  如果 WCF 服務是自我裝載，或無法以這種方式啟動的進程（例如 NT 服務），您就無法使用這個方法。 相反地，您可以執行下列其中一項：
 
@@ -39,9 +41,9 @@ ms.locfileid: "90852187"
 
 1. 建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 包含用戶端和伺服器專案的方案。
 
-2. 當您在 [**調試**程式] 功能表上選擇 [**啟動**] 時，請將方案設定為啟動用戶端和伺服器進程。
+2. 當您在 [**調試** 程式] 功能表上選擇 [**啟動**] 時，請將方案設定為啟動用戶端和伺服器進程。
 
-   1. 在 **方案總管**中，以滑鼠右鍵按一下方案名稱。
+   1. 在 **方案總管** 中，以滑鼠右鍵按一下方案名稱。
 
    2. 按一下 [ **設定啟始專案**]。
 
@@ -55,5 +57,5 @@ ms.locfileid: "90852187"
 
 ## <a name="see-also"></a>另請參閱
 - [偵錯 WCF 服務](../debugger/debugging-wcf-services.md)
-- [WCF 偵錯的限制](../debugger/limitations-on-wcf-debugging.md)
+- [WCF 調試的限制](../debugger/limitations-on-wcf-debugging.md)
 - [如何：逐步執行 WCF 服務](../debugger/how-to-step-into-wcf-services.md)

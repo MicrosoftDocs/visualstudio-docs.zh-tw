@@ -1,6 +1,7 @@
 ---
 title: 找出誰傳遞錯誤的參數值 |Microsoft Docs
-ms.custom: seodec18
+Description: 您可以找出呼叫函式的程式碼，並傳遞不正確的參數值。 瞭解如何使用條件式中斷點來執行此動作。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd6aaa912a384acbb41c42bfa4785eda52ae78a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: de87da994dfab59d5df618671737003beea9678b
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599877"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398307"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>如何發現誰傳錯參數值？
 ## <a name="problem-description"></a>問題說明
@@ -39,19 +40,19 @@ ms.locfileid: "89599877"
 
 1. 在函式的開頭設定位置中斷點。
 
-2. 以滑鼠右鍵按一下中斷點並選取 [條件]****。
+2. 以滑鼠右鍵按一下中斷點並選取 [條件]。
 
-3. 在 [中斷點條件]**** 對話方塊中，按一下 [條件]**** 核取方塊。 請參閱 [Advanced 中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)。
+3. 在 [中斷點條件] 對話方塊中，按一下 [條件] 核取方塊。 請參閱 [Advanced 中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)。
 
 4. 在文字方塊中輸入運算式，例如 `Var==3`；其中 `Var` 是含有錯誤值的參數名稱，而 `3` 則是傳入的錯誤值。
 
-5. 選取 [為 True]**** 選項按鈕，然後按一下 [確定]**** 按鈕。
+5. 選取 [為 True] 選項按鈕，然後按一下 [確定] 按鈕。
 
 6. 現在再次執行程式。 當 `Var` 參數的值是 `3` 時，中斷點會造成程式暫止在函式的開頭。
 
 7. 然後您可以使用 [呼叫堆疊] 視窗來找出呼叫函式並且巡覽原始程式碼。 如需詳細資訊，請參閱 [如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [機器碼偵錯 FAQ](../debugger/debugging-native-code-faqs.md)
+- [原生程式碼的偵錯工具常見問題](../debugger/debugging-native-code-faqs.md)
 - [[中斷點]](/previous-versions/ktf38f66(v=vs.100))
 - [偵錯機器碼](../debugger/debugging-native-code.md)

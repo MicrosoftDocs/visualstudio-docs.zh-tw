@@ -1,6 +1,7 @@
 ---
 title: 以編輯後繼續在中斷模式中套用編輯 |Microsoft Docs
-ms.custom: seodec18
+Description: 瞭解如何使用 [編輯後繼續] 在中斷模式中編輯您的 Visual Basic 程式碼。 有多種方式可進入中斷模式。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acdd5b85c77b177dfb5f6d8129594967e902337c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b8e6ef8c41fbaf5aafa6b1fc9ef4216c773e75e
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350295"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398684"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何：使用編輯後繼續在中斷模式中套用編輯 (Visual Basic) 
 您可以在中斷模式中使用 [編輯後繼續] 編輯程式碼，並繼續進行而不需停止及重新啟動執行。
@@ -39,15 +40,15 @@ ms.locfileid: "85350295"
 
 1. 執行下列其中一種方法進入中斷模式
 
-    - 在程式碼中設定中斷點，然後從 [偵錯]**** 功能表中選擇 [開始偵錯]****，並等待應用程式叫用中斷點。
+    - 在程式碼中設定中斷點，然後從 [偵錯] 功能表中選擇 [開始偵錯]，並等待應用程式叫用中斷點。
 
          -或-
 
-    - 開始偵錯，然後從 [偵錯]**** 功能表中選取 [全部中斷]****。
+    - 開始偵錯，然後從 [偵錯] 功能表中選取 [全部中斷]。
 
          -或-
 
-    - 發生例外狀況時，請在 [例外狀況**助理**] 上選擇 [**啟用編輯**]。
+    - 發生例外狀況時，請在 [例外狀況 **助理**] 上選擇 [**啟用編輯**]。
 
 2. 進行任何想要和支援的程式碼變更。
 
@@ -56,7 +57,7 @@ ms.locfileid: "85350295"
     > [!NOTE]
     > 如果您嘗試進行 [編輯後繼續] 不允許的程式碼變更，您的編輯會被加上紫色波浪線，而且 [工作清單] 中會出現工作。 除非您復原不合法的程式碼變更，否則將無法繼續執行程式碼。
 
-3. 在 [偵錯]**** 功能表上，按一下 [繼續]**** 以恢復執行。
+3. 在 [偵錯] 功能表上，按一下 [繼續] 以恢復執行。
 
      這時程式碼便會一併執行您套用至專案的編輯。
 

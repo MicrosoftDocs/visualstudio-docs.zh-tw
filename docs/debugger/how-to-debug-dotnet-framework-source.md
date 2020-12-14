@@ -1,5 +1,7 @@
 ---
 title: Debug .NET Framework source |Microsoft Docs
+Description: 瞭解如何 .NET Framework 來源進行調試。 您必須為其設定，並下載偵錯工具符號。
+ms.custom: SEO-VS-2020
 ms.date: 11/19/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f054564ff36c538b18525ec9d8adf9b6f3d060b9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 13a575ec2e77f1b715ec5f17324a6933d8cf0805
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852122"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398619"
 ---
 # <a name="how-to-debug-net-framework-source"></a>How to: Debug .NET Framework source (如何：對 .NET Framework 來源進行偵錯)
 
@@ -29,7 +31,7 @@ ms.locfileid: "90852122"
 
 ### <a name="to-enable-stepping-into-net-framework-source"></a>若要啟用逐步執行 .NET Framework 來源
 
-1. 在 [**工具**] (或 [ **Debug** ]) >**選項**  >  **Debugging**  >  的 **[一般**] 調試，選取 [**啟用 .NET Framework 來源逐步執行**]
+1. 在 [**工具**] (或 [ **Debug** ]) >**選項**  >    >  的 **[一般**] 調試，選取 [**啟用 .NET Framework 來源逐步執行**]
 
    - 如果您已啟用 Just My Code，將會出現警告對話方塊，通知您 Just My Code 現在已停用。 選取 [確定]。
 
@@ -39,11 +41,11 @@ ms.locfileid: "90852122"
 
 ### <a name="to-set-or-change-symbol-source-locations-and-loading-behavior"></a>若要設定或變更符號來源位置和載入行為
 
-1. 在 [**工具** (] 或 [ **Debug** ]) >**選項**] 下選取 [**符號**] 類別  >  ** **。
+1. 在 [**工具** (] 或 [ **Debug** ]) >**選項**] 下選取 [**符號**] 類別  >  ****。
 
 1. 在 [ **符號** ] 頁面的 [ **符號檔 ( .pdb) 位置**] 底下，選取 [ **Microsoft 符號伺服器** ] 以存取公用 Microsoft 符號伺服器的符號。 選取工具列按鈕以新增其他符號位置，並變更載入順序。
 
-1. 若要變更您的本機符號快取，請 **在此目錄中**的 [快取符號] 下編輯或流覽至不同的位置。
+1. 若要變更您的本機符號快取，請 **在此目錄中** 的 [快取符號] 下編輯或流覽至不同的位置。
 
 1. 若要立即下載符號，請選取 [ **載入所有符號**]。 只有在進行偵錯工具時，才能使用此按鈕。
 
@@ -53,7 +55,7 @@ ms.locfileid: "90852122"
 
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>從模組或呼叫堆疊視窗載入符號
 
-1. 在偵錯工具期間，藉由選取 [ **Debug**  >  **Windows**  >  **模組**] (，或按**ctrl + alt + U**) 或 [ **Debug**  >  **Windows**  >  **Call Stack** (**ctrl + alt + C**) 的偵錯工具] 來開啟視窗。
+1. 在偵錯工具期間，藉由選取 [ **Debug**  >  **Windows**  >  **模組**] (，或按 **ctrl + alt + U**) 或 [   >    >   (**ctrl + alt + C**) 的偵錯工具] 來開啟視窗。
 
 1. 以滑鼠右鍵按一下未載入符號的模組。 在 [ **模組** ] 視窗中，符號載入狀態是在 [ **符號狀態** ] 欄中。 在 [ **呼叫堆疊** ] 視窗中，[狀態] 是在 [ **框架狀態** ] 資料行中，而框架則呈現灰色。
 

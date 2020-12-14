@@ -1,6 +1,7 @@
 ---
 title: Debug Windows API 函式 |Microsoft Docs
-ms.custom: seodec18
+Description: 瞭解如何對已載入 NT 符號的 Windows API 函式進行偵錯工具。 在32位程式碼中，您可以使用函式名稱的裝飾形式來設定中斷點。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/03/2020
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f7b293270facbbfa0d2174121ff6a3ac736b75a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 7ab50205d1ade2447b85ad7eee2ffb6aaf38363d
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599889"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398386"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>如何偵錯 Windows API 函式？
 如果要偵錯已載入 NT 符號的 Windows API 函式，必須進行下列步驟。
@@ -42,7 +43,7 @@ ms.locfileid: "89599889"
 
      若要取得裝飾名稱，請參閱 [觀看裝飾名稱](/previous-versions/5x49w699(v=vs.140))。
 
-     您可以測試裝飾名稱，並在反組譯程式碼中加以查看。 在 Visual Studio 偵錯工具的函式暫停時，以滑鼠右鍵按一下 [程式碼編輯器] 或 [呼叫堆疊] 視窗中的函數，然後選擇 [ **移至**反組解碼]。
+     您可以測試裝飾名稱，並在反組譯程式碼中加以查看。 在 Visual Studio 偵錯工具的函式暫停時，以滑鼠右鍵按一下 [程式碼編輯器] 或 [呼叫堆疊] 視窗中的函數，然後選擇 [ **移至** 反組解碼]。
 
 - 在64位程式碼中，您可以使用未修飾的名稱。
 
@@ -51,5 +52,5 @@ ms.locfileid: "89599889"
     ```
 
 ## <a name="see-also"></a>另請參閱
-- [機器碼偵錯 FAQ](../debugger/debugging-native-code-faqs.md)
+- [原生程式碼的偵錯工具常見問題](../debugger/debugging-native-code-faqs.md)
 - [偵錯機器碼](../debugger/debugging-native-code.md)
