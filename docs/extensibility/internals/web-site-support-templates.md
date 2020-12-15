@@ -1,5 +1,7 @@
 ---
 title: 網站支援範本 |Microsoft Docs
+description: 深入瞭解網站支援範本。 Visual Studio 的網站專案和專案範本提供可重複使用且可自訂的網站專案和專案存根。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3c139ae6f2f9ec618e6382a1551a9e35eee7ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7bb3d669dadf7c33fa81231adf26ae30e999c51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703458"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487851"
 ---
 # <a name="web-site-support-templates"></a>網站支援範本
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 網站專案和專案範本提供可重複使用且可自訂的網站專案和專案存根，可讓您從頭開始建立新的網站專案和專案的需求，以加速開發流程。 如需範本的詳細資訊 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，請參閱 [建立專案和專案範本](../../ide/creating-project-and-item-templates.md)。
@@ -31,7 +33,7 @@ ms.locfileid: "80703458"
  如果字串不存在，Web 專案系統會根據專案範本新增至 Web 專案之頁面的語言屬性和副檔名，來決定預設語言。
 
 ## <a name="project-templates"></a>專案範本
- 網站專案範本可用來建立新的**網站，以**回應 [檔案] 功能表上的 [**新網站**] 命令。 目前支援的網站專案類型有三種：
+ 網站專案範本可用來建立新的 **網站，以** 回應 [檔案] 功能表上的 [**新網站**] 命令。 目前支援的網站專案類型有三種：
 
 - 空白網站專案
 
@@ -40,7 +42,7 @@ ms.locfileid: "80703458"
 - Web 服務專案
 
 ### <a name="empty-web-site-projects"></a>空白網站專案
- 這些檔案會建立新的空白網站，以回應 [**空白網站**] 命令（**在選擇 [** 檔案新網站] 之後可用）  >  ** **：
+ 這些檔案會建立新的空白網站，以回應 [**空白網站**] 命令（**在選擇 [** 檔案新網站] 之後可用）  >  ****：
 
 - EmptyWeb .vstemplate
 
@@ -57,7 +59,7 @@ ms.locfileid: "80703458"
 
      新網站的預設首頁。 Language 屬性會指定程式碼後置語言，而 CodeFile 屬性則會指定相依檔案，其中包含與此頁面相關聯的程式碼後置程式碼。
 
-- Default.aspx。*延伸*模組
+- Default.aspx。*延伸* 模組
 
      相依檔案，其中包含預設首頁的程式碼後置程式碼。 程式碼後置語言會決定這個檔案的 *副檔名* 。
 
@@ -74,7 +76,7 @@ ms.locfileid: "80703458"
      這個檔案是專案範本系統的成品。 它滿足 WebApplication .vstemplate 檔案中的專案檔參考。
 
 ### <a name="web-service-projects"></a>Web 服務專案
- 這些檔案會**建立新的**網站，以回應**ASP.NET Web 服務**命令，在選擇 [檔案  >  **新網站**] 之後可用：
+ 這些檔案會 **建立新的** 網站，以回應 **ASP.NET Web 服務** 命令，在選擇 [檔案  >  **新網站**] 之後可用：
 
 - .Asmx
 
@@ -135,7 +137,7 @@ ms.locfileid: "80703458"
 ### <a name="new-webform"></a>新 WebForm
  此範本會建立新的智慧型網頁，以回應 [ **加入新的 Web 表單** ] 命令。
 
- 若要建立相依的程式碼後置原始程式檔，請選取 [ **將程式碼放在個別**檔案 否則，會建立具有空白腳本區塊的單一網頁，而不會有指示詞 \<% Page %> 來連結相依的檔案。
+ 若要建立相依的程式碼後置原始程式檔，請選取 [ **將程式碼放在個別** 檔案 否則，會建立具有空白腳本區塊的單一網頁，而不會有指示詞 \<% Page %> 來連結相依的檔案。
 
  若要為選取的主版頁面建立內容頁面，請選取 [ **選取主版頁面**]。
 
@@ -166,7 +168,7 @@ ms.locfileid: "80703458"
 ### <a name="new-master-page"></a>新增主版頁面
  此範本會建立新的主版頁面，以回應 [新增 **主版頁面** ] 命令。
 
- 若要建立相依的程式碼後置原始程式檔，請選取 [ **將程式碼放在個別**檔案 否則，會建立具有空白腳本區塊的單一網頁，而不會有指示詞 \<% Page %> 來連結相依的檔案。
+ 若要建立相依的程式碼後置原始程式檔，請選取 [ **將程式碼放在個別** 檔案 否則，會建立具有空白腳本區塊的單一網頁，而不會有指示詞 \<% Page %> 來連結相依的檔案。
 
 - MasterPage master
 
@@ -176,7 +178,7 @@ ms.locfileid: "80703458"
 
      主版頁面的開始內容。 此主版頁面有相關聯的程式碼後置相依檔案。
 
-- Codebehind.*延伸*模組
+- Codebehind.*延伸* 模組
 
      執行主版頁面類別的相依檔案。 程式碼後置語言會決定這個檔案的 *副檔名* 。
 

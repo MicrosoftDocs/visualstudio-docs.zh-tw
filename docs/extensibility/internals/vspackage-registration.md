@@ -1,5 +1,7 @@
 ---
 title: VSPackage 註冊 |Microsoft Docs
+description: 深入瞭解 VSPackage 註冊，其中套件建議 Visual Studio 安裝這些套件，並在登錄中寫入資訊以載入這些套件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012122"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487981"
 ---
 # <a name="vspackage-registration"></a>VSPackage 註冊
 Vspackage 必須建議 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 它們已安裝且應該載入。 這項程式的完成方式是在登錄中寫入資訊。 這是安裝程式的一般作業。
@@ -40,7 +42,7 @@ Vspackage 必須建議 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.m
 > [!NOTE]
 > RegPkg 工具無法轉散發，且無法用來在使用者的系統上註冊 VSPackage。
 
-## <a name="why-vspackages-should-not-self-register-at-install-time"></a>為什麼 Vspackage 不應在安裝時自行註冊
+## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Vspackage 在安裝時不應 Self-Register 的原因
  您的 VSPackage 安裝程式不應依賴自我註冊。 乍看之下，只在 VSPackage 本身保留 VSPackage 的登錄值似乎是個好主意。 由於開發人員需要可用的登錄值來進行例行工作和測試，因此避免在安裝程式中維護個別的登錄資料複本，是合理的。 安裝程式可以依賴 VSPackage 本身來寫入登錄值。
 
  在理論上，自我註冊有幾個缺點，讓它不適合用于 VSPackage 安裝：

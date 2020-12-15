@@ -1,5 +1,6 @@
 ---
 title: '&apos;原始檔控制外掛程式 API 1.2 中的新功能'
+description: 瞭解原始檔控制外掛程式 API 版本1.2 中 advanced source code 控制項功能的新功能。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5deb43b3b5d1a654fee82b043f06ec8219530a2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eca5afe8ea9bb1404acf342cc7edbe1100888c6e
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037617"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487799"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>原始檔控制外掛程式 API 版本1.2 的新功能&#39;
 本節強調原始檔控制外掛程式 API 版本1.2 中的 advanced source code 控制項功能。 以下列出1.2 版中的新功能：

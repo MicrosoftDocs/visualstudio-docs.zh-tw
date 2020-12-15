@@ -1,5 +1,7 @@
 ---
 title: VSPackage 結構 (原始檔控制 VSPackage) |Microsoft Docs
+description: 深入瞭解原始檔控制封裝 SDK，此 SDK 提供 VSPackage 與原始檔控制實施者整合，以與 Visual Studio 整合的指導方針。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3f09b189e1e4b47187586e66c74315ee32495c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5850dfb2448364124c8f1778eac48ac9c653269
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703813"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487955"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 結構 (原始檔控制 VSPackage)
 

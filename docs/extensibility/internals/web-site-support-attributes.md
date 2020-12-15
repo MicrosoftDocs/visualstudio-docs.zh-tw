@@ -1,5 +1,7 @@
 ---
 title: 網站支援屬性 |Microsoft Docs
+description: 瞭解網站支援使用網站專案擴充 Visual Studio 功能的必要屬性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef75f99480145475278357a552f3ac74c0289800
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9beee39ca6968b0922bc134fa21e0cde3d6dd3b6
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703490"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487864"
 ---
 # <a name="web-site-support-attributes"></a>網站支援屬性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 您可以擴充網站專案，以提供 Web 程式設計語言的支援。 語言必須自行註冊， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 以便在選取語言時，專案範本可以出現在 [ **新網站** ] 對話方塊中。
@@ -33,7 +35,7 @@ public class PythonProjectPackage : ProjectPackage
  這個屬性也會設定範本路徑以指向 [範本] 資料夾。 如需 [範本] 資料夾位置的詳細資訊，請參閱 [網站支援範本](../../extensibility/internals/web-site-support-templates.md)。
 
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute
- 這個屬性會置於語言專案上。 它可讓網站專案在 **方案總管**中 (主要) 的另一個檔案類型下，將一種檔案類型 (相關的) 。
+ 這個屬性會置於語言專案上。 它可讓網站專案在 **方案總管** 中 (主要) 的另一個檔案類型下，將一種檔案類型 (相關的) 。
 
  例如，下列程式碼會指定 IronPython 程式碼後置檔案與 .aspx 檔案相關。 在 IronPython 網站方案中建立新的 .aspx 網頁時，會產生新的 .py 原始程式檔，並顯示為 .aspx 頁面的子節點。
 

@@ -1,5 +1,7 @@
 ---
 title: Vspackage |Microsoft Docs
+description: 瞭解 Vspackage，這是藉由提供 UI 元素、服務、專案、編輯器和設計工具來擴充 Visual Studio IDE 的軟體模組。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24dec363d261b8dbfa2135dec34e28c247c47251
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 440e2517a0138ca84be87090d9636288a7a5d9af
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703817"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487942"
 ---
 # <a name="vspackages"></a>VSPackages
 Vspackage 是藉 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 由提供 UI 元素、服務、專案、編輯器和設計工具來擴充整合式開發環境 (IDE) 的軟體模組。

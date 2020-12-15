@@ -1,5 +1,7 @@
 ---
 title: 使用 Windows Installer 卸載 VSPackage |Microsoft Docs
+description: Windows Installer 可以藉由反向安裝來卸載您的 VSPackage。 瞭解如何在 Windows Installer 套件中處理自訂動作。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cdf9023512f4225e2a8edcadcf589cb61547e24
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f78f27a3b2b2607f04a61352b543774f8b59e88c
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011810"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488150"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>使用 Windows Installer 解除安裝 VSPackage
 在大部分的情況下，Windows Installer 可以卸載 VSPackage，只要「復原」安裝 VSPackage 就可以了。 在安裝之後必須執行的 [命令](../../extensibility/internals/commands-that-must-be-run-after-installation.md) 中所討論的自訂動作也必須在卸載之後執行。 因為對 devenv.exe 的呼叫會在安裝和卸載的 InstallFinalize 標準動作之前發生，所以 CustomAction 和 InstallExecuteSequence 資料表專案會提供這兩種情況。

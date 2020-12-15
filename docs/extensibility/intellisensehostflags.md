@@ -1,5 +1,7 @@
 ---
 title: IntelliSenseHostFlags |Microsoft Docs
+description: IntelliSenseHostFlags 列舉會指定 IntelliSense 主機旗標。 本文描述列舉值。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b206cc4aa7c1ff388d6868fa8a0533d15da094ff
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710262"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487500"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 指定 IntelliSense 主機旗標。
@@ -46,7 +48,7 @@ enum IntellisenseHostFlags
 |`IHF_FORCECOMMITTOCONTEXT`|與 `CanCommitIntoReadOnlyBuffer` 相同。|
 |`IHF_OVERTYPE`|在 [主體] 或 [內容]) 中編輯 (應該在 [改寫] 模式中完成。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  SingleFileeditor .idl
 
 ## <a name="see-also"></a>另請參閱

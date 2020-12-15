@@ -1,5 +1,7 @@
 ---
 title: 在舊版語言服務中驗證中斷點 |Microsoft Docs
+description: 瞭解如何在舊版語言服務中覆寫 ValidateBreakpointLocation 方法，以在偵錯工具啟動前驗證中斷點。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af09e4f8f2156100bea9267c92ffebeb64ce1aa3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d48db7397e2f9a5921315036bea15551fb7baa9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704087"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488020"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>在舊版語言服務中驗證中斷點
 中斷點表示程式執行在偵錯工具中執行時，應該會在特定的時間點停止。 使用者可以在原始程式檔中的任何一行上放置中斷點，因為編輯器不知道組成中斷點的有效位置。 當偵錯工具啟動時，所有標示的中斷點 (稱為暫止中斷點) 都會系結至執行程式中的適當位置。 同時驗證中斷點，以確保它們會標示有效的程式碼位置。 例如，批註上的中斷點無效，因為原始程式碼中的位置沒有任何程式碼。 偵錯工具會停用不正確中斷點。

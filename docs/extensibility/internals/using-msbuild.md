@@ -1,5 +1,7 @@
 ---
 title: 使用 MSBuild | Microsoft Docs
+description: MSBuild 提供可延伸的 XML 格式，以建立可完整描述要建立之專案專案、組建工作和組建設定的專案檔。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f961249ff584f7767dc2505bb20b1fb0961b7dd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d5168d739e49ebfc78054ea695f8b73a3e06fbc
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704294"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487669"
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
 MSBuild 提供定義完善、可擴充的 XML 格式，可建立專案檔，以完整描述要建立的專案專案、組建工作和組建設定。

@@ -1,5 +1,7 @@
 ---
 title: 嚮導 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 中列出您的 wizard 和範本，以及您的 wizard 在 IDE 中必須符合的需求。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d65cf2dcc10380b0ac750c8e1b0e7fd56eab95b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f367723a3c819635f2d7cf20ed812a36cda12830
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703215"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487747"
 ---
 # <a name="wizards"></a>精靈
-建立嚮導之後，您通常會想要將它加入至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) ，讓其他人可以使用它。 加入的 wizard 接著會出現在 [ **加入新專案** ] 或 [ **加入新** 專案] 對話方塊中。 若要查看 [ **加入新專案** ] 或 [ **加入新** 專案] 對話方塊，請以滑鼠右鍵按一下 **方案總管**中開啟的方案，指向 [ **加入**]，然後按一下 [ **新增專案** ] 或 [ **新增專案**]。
+建立嚮導之後，您通常會想要將它加入至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) ，讓其他人可以使用它。 加入的 wizard 接著會出現在 [ **加入新專案** ] 或 [ **加入新** 專案] 對話方塊中。 若要查看 [ **加入新專案** ] 或 [ **加入新** 專案] 對話方塊，請以滑鼠右鍵按一下 **方案總管** 中開啟的方案，指向 [ **加入**]，然後按一下 [ **新增專案** ] 或 [ **新增專案**]。
 
- 您可以在中執行嚮導 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，讓使用者在開啟 [ **加入新專案** ] 對話方塊或 [ **加入新** 專案] 對話方塊，或在 **方案總管**中的專案上按一下滑鼠右鍵時，從可用值的樹狀檢視中進行選取。
+ 您可以在中執行嚮導 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，讓使用者在開啟 [ **加入新專案** ] 對話方塊或 [ **加入新** 專案] 對話方塊，或在 **方案總管** 中的專案上按一下滑鼠右鍵時，從可用值的樹狀檢視中進行選取。
 
  在您的 wizard 中，您可以提供將新專案或 ites 的名稱當地語系化的選項，也可以決定使用者在選取嚮導時會看到的圖示。 您也可以控制新專案相對於其他可用專案的顯示順序;專案不需要依字母順序組織。
 

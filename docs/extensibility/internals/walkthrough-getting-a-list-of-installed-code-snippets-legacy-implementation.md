@@ -1,5 +1,7 @@
 ---
 title: 取得已安裝的程式碼片段清單 (舊版) |Microsoft Docs
+description: 瞭解如何取得特定語言 GUID 的所有程式碼片段。 這些程式碼片段的快捷方式可以插入 IntelliSense 完成清單中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3d5ef857973555c4b2d201f98957bd2c39328b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 390f8e7030d0e758eb27fce4e83a30e30fbf64af
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703645"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487890"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>逐步解說：取得已安裝的程式碼片段 (舊版實作) 清單
 程式碼片段是一段程式碼，可以使用功能表命令 (可插入來源緩衝區，讓您可以選擇) 的已安裝程式碼片段清單，或從 IntelliSense 完成清單中選取程式碼片段快捷方式。

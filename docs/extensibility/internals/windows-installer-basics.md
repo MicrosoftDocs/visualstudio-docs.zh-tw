@@ -1,5 +1,7 @@
 ---
 title: Windows Installer 基本概念 |Microsoft Docs
+description: 瞭解 Windows Installer 在安裝 VSPackage 時使用，包括將 VSPackage 功能組織成 Windows Installer 元件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeea0b17a3c234bb7670642fb9ae0a442c9d60cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f4ca1908fbd54c0e8d12212bed19fc77e1dff51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703422"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487773"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本概念
 Windows Installer 在使用者的電腦上安裝和卸載應用程式或軟體產品，以稱為 Windows Installer 元件的單位來執行這些工作 (有時候稱為 WICs 或只是) 的元件。 GUID 會識別每個 WIC，也就是使用 Windows Installer 進行安裝的基本安裝單位和參考計數。
@@ -55,13 +57,13 @@ Windows Installer 在使用者的電腦上安裝和卸載應用程式或軟體�
 > [!NOTE]
 > 只有當您執行 .msi 檔案的驗證時，才會強制執行 Windows Installer 規則。 不過，您匯將這些規則視為最佳做法。 如需詳細資訊，請參閱 [驗證安裝資料庫](/windows/desktop/Msi/validating-an-installation-database) 和 [封裝驗證](/windows/desktop/Msi/package-validation)。
 
-#### <a name="installer-enforced-rules"></a>安裝程式強制執行的規則
+#### <a name="installer-enforced-rules"></a>Installer-Enforced 規則
 
 - 指定元件中的所有檔案都必須安裝在相同的目錄中。 相反地，安裝至個別資料夾的檔案必須屬於個別的元件。
 
 - 每個元件只能有一個金鑰路徑。 金鑰路徑只是代表整個元件的檔案或登錄機碼。
 
-#### <a name="component-provider-responsibilities"></a>元件提供者責任
+#### <a name="component-provider-responsibilities"></a>Component-Provider 責任
 
 - 可能在後續版本中個別傳送的任何兩個資源，都應該存在於不同的元件中。 只有在您確定這些資源永遠不會個別運送時，才應該將資源群組至相同的元件。 事實上，建議所有的主要資源 (Dll，例如) 一律存在於不同的 WICs 中。 如需詳細資訊，請參閱 [定義安裝程式元件](/windows/desktop/Msi/defining-installer-components)。
 

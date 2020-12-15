@@ -2,19 +2,19 @@
 title: 改善效能的祕訣
 description: 瞭解如何優化某些 Visual Studio 可能不會用來協助改善效能的功能。
 ms.custom: SEO-VS-2020
-ms.date: 08/13/2020
+ms.date: 12/14/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4c36987e198be576d843b984be14ddea824919
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b3655407ce94395f74ebe5362e7006075ef1e790
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479611"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488176"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
@@ -71,7 +71,7 @@ Visual Studio 會在自動文件還原導致解決方案載入時間明顯變慢
 
     建議您在使用之後停用 CPU 分析。 這項功能可能會耗用大量資源。 啟用 CPU 分析之後，會在後續偵錯工作階段之間持續保存此狀態，因此完成時適合明確地關閉它。 如果您不需要提供的功能，則在偵錯時停用診斷工具，即可節省一些資源。
 
-    若要停用 **診斷工具**，請啟動偵錯工作階段，並選擇 [工具] > [選項] > [啟用診斷工具]，然後取消選取此選項。
+    若要停用 **診斷工具**，請啟動調試過程、選取 [**工具**  >  **選項**]  >    >  **[一般**]，然後取消選取 [在 **調試時啟用診斷工具**] 選項。
 
     如需詳細資訊，請參閱 [Profiling Tools](../profiling/profiling-feature-tour.md) (分析工具)。
 
@@ -131,7 +131,7 @@ Visual Studio 會在自動文件還原導致解決方案載入時間明顯變慢
 
     若要針對目前正在處理的專案停用自動換行，請移至 [**編輯**  >  **自動換**  >  **行**]。  (您可以使用相同的功能表命令來切換此設定。 ) 
 
-    若要停用所有專案的自動換行，請移至 [**工具**  >  **選項**  >  **一般**  >  **文字編輯器**  >  **所有語言**]，  >  **General** 然後在 [**設定**] 區段中，取消選取 [**自動換行**] 選項。
+    若要停用所有專案的自動換行，請移至 [**工具**  >  **選項**  >  **一般**  >  **文字編輯器**  >  **所有語言**]，  >  然後在 [**設定**] 區段中，取消選取 [**自動換行**] 選項。
 
 - **停用 XAML 設計工具**
 

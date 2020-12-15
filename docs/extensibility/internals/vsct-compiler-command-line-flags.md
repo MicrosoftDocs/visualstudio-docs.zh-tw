@@ -1,5 +1,7 @@
 ---
-title: .VSCT 編譯器命令列旗標 |Microsoft Docs
+title: .VSCT 編譯器 Command-Line 旗標 |Microsoft Docs
+description: Visual Studio 命令資料表編譯器會提供命令列選項，以確保 .vsct 檔案的編譯成功。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4ee29710049453c3163c366eccf96e257b6028d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d60b248a4941d176ac6ba4e808a94dbc67efbe7
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703961"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488007"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 編譯器命令列旗標
 Visual Studio 命令表格 (.VSCT) 編譯器提供命令列參數，以確保 .vsct 檔的編譯成功。
 
 ## <a name="command-line-parameters"></a>命令列參數
- 若要從命令視窗中查看基本的 .VSCT 說明 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Command** ，請流覽至 [ *Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Tools\Bin\] 資料夾，然後輸入：
+ 若要從命令視窗中查看基本的 .VSCT 說明 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]  ，請流覽至 [ *Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Tools\Bin\] 資料夾，然後輸入：
 
 ```
 vsct /?

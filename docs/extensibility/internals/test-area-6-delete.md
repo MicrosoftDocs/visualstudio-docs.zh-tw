@@ -1,5 +1,7 @@
 ---
 title: 測試區域6：刪除 |Microsoft Docs
+description: 此原始檔控制測試區域涵蓋方案總管中 Visual Studio 原始檔控制外掛程式的刪除動作。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,32 +13,32 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9902ab9d1cb9c28ddf67b83590a4cccd5f6562f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1371472a4dec265b5e476d96a32cb725e91ce7fe
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704515"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487552"
 ---
 # <a name="test-area-6-delete"></a>測試區域 6：刪除
 此原始檔控制外掛程式測試區域涵蓋刪除動作。
 
- 原始檔控制會回應 **方案總管**中的刪除動作。
+ 原始檔控制會回應 **方案總管** 中的刪除動作。
 
  以下是可刪除的專案清單：
 
-- 檔案儲存體
+- 檔案
 
 - 資料夾
 
-- 專案
+- Project
 
-  視專案類型而定，您可以選擇 **移除** 專案， (將檔案保留在磁片上) 或 **刪除** 專案 (移除磁片) 上的檔案。 任一個動作會從 **方案總管**移除專案或專案。
+  視專案類型而定，您可以選擇 **移除** 專案， (將檔案保留在磁片上) 或 **刪除** 專案 (移除磁片) 上的檔案。 任一個動作會從 **方案總管** 移除專案或專案。
 
 ## <a name="expected-behavior"></a>預期行為
  刪除測試區域中測試案例的預期行為如下：
 
-- **方案總管**中不再顯示已刪除的專案。
+- **方案總管** 中不再顯示已刪除的專案。
 
 - 視需要簽出已刪除專案或專案的父系 (可能出現提示。 ) 
 

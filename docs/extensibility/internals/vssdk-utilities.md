@@ -1,5 +1,7 @@
 ---
 title: VSSDK 公用程式 |Microsoft Docs
+description: 這些文章說明 VSSDK 隨附的工具，包括 RegPkg、CreatePkgDef、CreateExpInstance、色彩主題工具和影像服務工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3faf0dad9d935fcc62637d387e41d599b7ec874
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3da6df6aab6d64d9ca589959a0d0227026983dfe
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703739"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487903"
 ---
 # <a name="vssdk-utilities"></a>VSSDK 公用程式
 本節中的主題描述 VSSDK 隨附的工具。

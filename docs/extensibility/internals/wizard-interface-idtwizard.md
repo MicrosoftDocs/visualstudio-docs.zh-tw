@@ -1,5 +1,7 @@
 ---
 title: Wizard 介面 (IDTWizard) |Microsoft Docs
+description: IDE 會使用 IDTWizard 介面來與嚮導進行通訊。 您必須將此介面實作為安裝在 IDE 中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1c8d728a76097321e4e1f16640cab97599d6ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e87759a979d0c680018d99a1e18a12e645f430c6
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703269"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487760"
 ---
 # <a name="wizard-interface-idtwizard"></a>精靈介面 (IDTWizard)
 整合式開發環境 (IDE) 會使用 <xref:EnvDTE.IDTWizard> 介面來與嚮導進行通訊。 您必須執行這個介面，才能將它安裝在 IDE 中。
@@ -34,7 +36,7 @@ STDMETHOD(Execute)(THIS_
    );
 ```
 
- **新專案**和 [**加入新**專案] 嚮導的啟動機制很類似。 若要啟動，您可以呼叫 <xref:EnvDTE.IDTWizard> Dteinternal 中定義的介面。 唯一的差別在於呼叫介面時，會傳遞給介面的內容和自訂參數的集合。
+ **新專案** 和 [**加入新** 專案] 嚮導的啟動機制很類似。 若要啟動，您可以呼叫 <xref:EnvDTE.IDTWizard> Dteinternal 中定義的介面。 唯一的差別在於呼叫介面時，會傳遞給介面的內容和自訂參數的集合。
 
  下列資訊說明 <xref:EnvDTE.IDTWizard> 嚮導必須在 IDE 中執行才能運作的介面 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 IDE <xref:EnvDTE.IDTWizard.Execute%2A> 會在嚮導上呼叫方法，並將下列內容傳遞給它：
 

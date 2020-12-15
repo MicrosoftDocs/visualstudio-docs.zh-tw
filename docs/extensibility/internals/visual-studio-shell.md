@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Shell |Microsoft Docs
+description: Visual Studio shell 是 Visual Studio 中整合的主要代理程式，並提供基本功能，並支援 Vspackage 之間的交叉通訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb89fc3b82dc7f142714608d8a669e368216c729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 546a76d1533efaef28ddafb14b04514f64e9d4f9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704007"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488046"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Shell 是中整合的主要代理程式 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 Shell 提供必要的功能，讓 Vspackage 共用一般服務。 由於的架構目標 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 是要在 vspackage 中背心主要功能，因此 shell 是一個架構，可提供基本功能，並支援其元件 vspackage 之間的交叉通訊。
@@ -66,7 +68,7 @@ ms.locfileid: "80704007"
 
 - **尋找** 和 **取代**
 
-- **開啟 [專案**]，然後在 [**新增**] 功能表上**開啟**[檔案] 對話方塊
+- **開啟 [專案**]，然後在 [**新增**] 功能表上 **開啟**[檔案] 對話方塊
 
 - [**工具**] 功能表上的 [**選項**] 對話方塊
 

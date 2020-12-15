@@ -1,5 +1,7 @@
 ---
 title: VSPackage 安裝案例 |Microsoft Docs
+description: 深入瞭解使用 VSPackage 的共用或並存安裝來支援 Visual Studio 並存安裝的最佳作法。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2095087451ded8858382323aabc4048582a6db43
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 97538be6c174f76072a6ca006db6443aa3fcdb57
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012109"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487968"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 安裝案例
 

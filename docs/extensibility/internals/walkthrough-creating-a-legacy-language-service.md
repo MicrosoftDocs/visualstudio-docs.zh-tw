@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：建立舊版語言服務 |Microsoft Docs
+description: '瞭解如何使用 managed package framework 語言類別，在 Visual c # 中執行語言服務。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbdad85dd1c0f62b22bb33b5ed6ab2c597e62164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fcc4004542f9a566d6c6bfa820cbb8c2e1846fa
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905984"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487929"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>逐步解說：建立舊版語言服務
 使用 managed package framework (MPF) 語言類別在中執行語言服務 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 相當簡單。 您需要 VSPackage 來裝載語言服務、語言服務本身，以及適用于您語言的剖析器。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 [VISUAL STUDIO SDK](../../extensibility/visual-studio-sdk.md)。
 
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio Package 專案範本位置
@@ -42,27 +44,27 @@ ms.locfileid: "85905984"
 
     您可以使用任何您想要的名稱。 此處詳述的這些程式會假設 MyLanguagePackage 為名稱。
 
-3. 選取 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 作為 [語言] 和 [選項]，以產生新的金鑰檔案。 按一下 [下一步]  。
+3. 選取 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 作為 [語言] 和 [選項]，以產生新的金鑰檔案。 按一下 [下一步] 。
 
-4. 輸入適當的公司和套件資訊。 按一下 [下一步]  。
+4. 輸入適當的公司和套件資訊。 按一下 [下一步] 。
 
-5. 選取 [ **功能表命令**]。 按一下 [下一步]  。
+5. 選取 [ **功能表命令**]。 按一下 [下一步] 。
 
     如果您不想要支援程式碼片段，您可以直接按一下 [完成] 並忽略下一個步驟。
 
-6. 輸入 **Insert 程式碼片段** 作為 **命令名稱** 和 `cmdidInsertSnippet` **命令識別碼**。 按一下 [完成]  。
+6. 輸入 **Insert 程式碼片段** 作為 **命令名稱** 和 `cmdidInsertSnippet` **命令識別碼**。 按一下 [完成] 。
 
-    **命令名稱**和**命令識別碼**可以是您想要的任何內容，這些只是範例。
+    **命令名稱** 和 **命令識別碼** 可以是您想要的任何內容，這些只是範例。
 
 ### <a name="create-the-language-service-class"></a>建立語言服務類別
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 MyLanguagePackage 專案，選擇 [ **加入**]、[ **參考**]，然後選擇 [ **加入新參考** ] 按鈕。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 MyLanguagePackage 專案，選擇 [ **加入**]、[ **參考**]，然後選擇 [ **加入新參考** ] 按鈕。
 
 2. 在 [**加入參考**] 對話方塊中，選取 [ **.net** ] 索引標籤中的 [ **VisualStudio] LanguageService** ，然後按一下 **[確定]**。
 
      這只需要針對語言套件專案進行一次。
 
-3. 在 **方案總管**中，以滑鼠右鍵按一下 VSPackage 專案，然後選取 [ **新增**]、[ **類別**]。
+3. 在 **方案總管** 中，以滑鼠右鍵按一下 VSPackage 專案，然後選取 [ **新增**]、[ **類別**]。
 
 4. 請確定已在範本清單中選取 [ **類別** ]。
 
@@ -104,7 +106,7 @@ ms.locfileid: "85905984"
 
 #### <a name="deriving-from-an-mpf-class"></a>從 MPF 類別衍生
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 VSPackage 專案，然後選取 [ **新增**]、[ **類別**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 VSPackage 專案，然後選取 [ **新增**]、[ **類別**]。
 
 2. 請確定已在範本清單中選取 [ **類別** ]。
 

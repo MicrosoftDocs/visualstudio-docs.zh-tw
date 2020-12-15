@@ -1,5 +1,7 @@
 ---
 title: 安裝 Visual Studio SDK |Microsoft Docs
+description: 瞭解安裝 Visual Studio 軟體發展工具組的選項，包括 Visual Studio 安裝期間。
+ms.custom: SEO-VS-2020
 ms.date: 07/12/2018
 ms.topic: overview
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31df92b011336320d759461ed16ce2a3c8f61017
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edab24396f5a3ae5527b76a58db90c19796c4240
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905540"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487565"
 ---
 # <a name="install-the-visual-studio-sdk"></a>安裝 Visual Studio IDE
 
@@ -21,7 +23,7 @@ Visual Studio SDK (軟體發展工具組) 是 Visual Studio 安裝程式中的�
 
 ## <a name="install-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>在 Visual Studio 安裝過程中安裝 Visual Studio SDK
 
-若要在 Visual Studio 安裝中包含 VS SDK，請在**其他工具**組下安裝**Visual Studio 延伸模組開發**工作負載。 此工作負載會安裝 Visual Studio SDK 和必要必要條件。 您可以選取或取消選取 **摘要** 視圖中的元件，以進一步調整安裝。
+若要在 Visual Studio 安裝中包含 VS SDK，請在 **其他工具** 組下安裝 **Visual Studio 延伸模組開發** 工作負載。 此工作負載會安裝 Visual Studio SDK 和必要必要條件。 您可以選取或取消選取 **摘要** 視圖中的元件，以進一步調整安裝。
 
 ## <a name="install-the-visual-studio-sdk-after-installing-visual-studio"></a>在安裝 Visual Studio 之後安裝 Visual Studio SDK
 

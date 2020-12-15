@@ -1,5 +1,7 @@
 ---
 title: 使用 Automation 模型 |Microsoft Docs
+description: 瞭解如何在連接到 automation 模型之後，取得 VSPackage 的屬性和方法。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d014627161666473d3b674f72cfec339a66fdc05
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ad8c02f846a946933ac07d4aa546ad3ce3a2a82f
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012486"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488163"
 ---
 # <a name="using-the-automation-model"></a>使用 Automation 模型
 將 VSPackage 連接至自動化之後，您可以在物件上呼叫方法來取得屬性和方法 <xref:EnvDTE.DTEClass.GetObject%2A> <xref:EnvDTE._DTE> ，並傳遞代表您要抓取之物件的字串。
@@ -58,7 +60,7 @@ objMyObject = MyPrj.Object 'You call .Object to get to special Project
 objMyObject.MySpecialMethodOrProperty
 ```
 
- 下列程式碼會在 [ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **工具**] 功能表上的 [環境**一般**] 選項中，列出所有屬性的名稱：
+ 下列程式碼會在 [ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **工具**] 功能表上的 [環境 **一般**] 選項中，列出所有屬性的名稱：
 
 ```vb
 dim objDTE

@@ -1,5 +1,7 @@
 ---
 title: 深入探索編輯器
+description: 瞭解編輯器的子系統和功能。 您可以擴充 Visual Studio 編輯器的功能。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bba0b5192df53b6ec837b0030c7b236bf8e08dea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710319"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487526"
 ---
 # <a name="inside-the-editor"></a>在編輯器內
 
@@ -35,7 +37,7 @@ ms.locfileid: "80710319"
 
 - [裝飾品](../extensibility/inside-the-editor.md#adornments)
 
-- [Projection](../extensibility/inside-the-editor.md#projection)
+- [投影](../extensibility/inside-the-editor.md#projection)
 
 - [大綱](../extensibility/inside-the-editor.md#outlining)
 
@@ -59,13 +61,13 @@ ms.locfileid: "80710319"
 
 文字模型子系統是 (UI) 概念的免費使用者介面。 例如，它不負責文字格式設定或文字版面配置，也不知道可能與文字相關聯的視覺效果裝飾。
 
-文字模型子系統的公用類型包含在 *Microsoft.VisualStudio.Text.Data.dll* 和 *Microsoft.VisualStudio.CoreUtility.dll*中，而這些類型只相依于 .NET Framework 基類庫和 Managed Extensibility Framework (MEF) 。
+文字模型子系統的公用類型包含在 *Microsoft.VisualStudio.Text.Data.dll* 和 *Microsoft.VisualStudio.CoreUtility.dll* 中，而這些類型只相依于 .NET Framework 基類庫和 Managed Extensibility Framework (MEF) 。
 
 ### <a name="text-view-subsystem"></a>文字視圖子系統
 
 文字視圖子系統負責格式化和顯示文字。 此子系統中的型別會分割成兩個層級，取決於型別是否依賴 Windows Presentation Foundation (WPF) 。 最重要的型別是 <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 和 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> ，它會控制要顯示的一組文字行，還有插入號、選取專案，以及使用 WPF UI 元素來裝飾文字的功能。 此子系統也提供文字顯示區域周圍的邊界。 這些邊界可以擴充，而且可以包含不同類型的內容和視覺效果。 邊界的範例包括行號顯示和捲軸。
 
-文字視圖子系統的公用類型包含在 *Microsoft.VisualStudio.Text.UI.dll* 和 *Microsoft.VisualStudio.Text.UI.Wpf.dll*中。 第一個元件包含與平臺無關的元素，而第二個元件包含 WPF 特定的元素。
+文字視圖子系統的公用類型包含在 *Microsoft.VisualStudio.Text.UI.dll* 和 *Microsoft.VisualStudio.Text.UI.Wpf.dll* 中。 第一個元件包含與平臺無關的元素，而第二個元件包含 WPF 特定的元素。
 
 ### <a name="classification-subsystem"></a>分類子系統
 
@@ -206,7 +208,7 @@ abXefYj
 
 - 裝飾品
 
-- Projection
+- 投影
 
 - 大綱
 
