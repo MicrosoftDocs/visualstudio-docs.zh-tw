@@ -1,5 +1,6 @@
 ---
 title: '使用 Managed Package Framework 作為專案類型 (c # ) '
+description: 深入瞭解 Managed Package Framework，它會提供您可以使用或繼承自的 .NET 類別，以執行您自己的專案類型。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca3f95780d548b4482c502f5b3eaa44005fd2e2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4b425962ed0f664b8255b6489ac8f0d38be7c13c
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038643"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487539"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>使用受控套件架構實作專案類型 (C#)
 Managed Package Framework (MPF) 提供可供您使用或繼承的 c # 類別，以執行您自己的專案類型。 MPF 會實 Visual Studio 預期要提供專案類型的許多介面，讓您可以自由地專注于實現專案類型的各項細節。
@@ -84,7 +85,7 @@ Managed Package Framework (MPF) 提供可供您使用或繼承的 c # 類別，�
 |`Microsoft.VisualStudio.Package.AssemblyReferenceNode`|
 |`Microsoft.VisualStudio.Package.BuildDependency`|
 
-## <a name="document-handling-classes"></a>檔處理類別
+## <a name="document-handling-classes"></a>Document-Handling 類別
  下表列出支援檔處理的 MPF 中的類別。 如需詳細資訊，請參閱 [開啟和儲存專案專案](../../extensibility/internals/opening-and-saving-project-items.md)。
 
 |類別名稱|
@@ -103,7 +104,7 @@ Managed Package Framework (MPF) 提供可供您使用或繼承的 c # 類別，�
 |`Microsoft.VisualStudio.Package.OutputGroup`|
 |`Microsoft.VisualStudio.Package.ProjectElement`|
 
-## <a name="automation-support-classes"></a>自動化-支援類別
+## <a name="automation-support-classes"></a>Automation-Support 類別
  下表列出支援自動化的 MPF 中的類別，讓您專案類型的使用者可以撰寫增益集。
 
 |類別名稱|
