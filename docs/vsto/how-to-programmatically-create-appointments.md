@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式建立約會
+description: 瞭解如何以程式設計方式建立約會，然後將收件者新增至 Microsoft Outlook 中的約會會議要求。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99d0dace71555c06288f1c85f92b2c12c2015d18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35d52ffa360d2cf348842319705a237049db4435
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545999"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523977"
 ---
 # <a name="how-to-programmatically-create-appointments"></a>如何：以程式設計方式建立約會
   此範例會建立約會，並將收件者新增至約會會議要求。

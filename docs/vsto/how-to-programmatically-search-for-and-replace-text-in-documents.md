@@ -1,5 +1,7 @@
 ---
 title: 以程式設計方式尋找和取代檔中的文字
+description: 瞭解如何使用 Visual Studio 以程式設計方式搜尋及取代 Microsoft Word 檔中的文字。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18a50d6d4ef52a0c50be0b72b4cab5706da4e2db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad77da419f70a8e513bf152ced41cccdd0474a8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547039"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524593"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>如何：以程式設計方式搜尋和取代檔中的文字
   <xref:Microsoft.Office.Interop.Word.Find> 物件是 <xref:Microsoft.Office.Interop.Word.Selection> 和 <xref:Microsoft.Office.Interop.Word.Range> 物件共有的成員，您可以使用這個成員在 Microsoft Office Word 文件中搜尋文字。 取代命令是尋找命令的擴充功能。
@@ -58,7 +60,7 @@ ms.locfileid: "85547039"
    [!code-csharp[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#67)]
 
 ## <a name="use-a-range-object"></a>使用 Range 物件
- 使用 <xref:Microsoft.Office.Interop.Word.Range> 物件可讓您搜尋文字，而不必在使用者介面中顯示任何資訊。 <xref:Microsoft.Office.Interop.Word.Find>如果找到符合搜尋準則的文字，則物件會傳回**True** ，否則傳回**False** 。 如果找到文字，該方法還會重新定義 <xref:Microsoft.Office.Interop.Word.Range> 物件以符合搜尋準則。
+ 使用 <xref:Microsoft.Office.Interop.Word.Range> 物件可讓您搜尋文字，而不必在使用者介面中顯示任何資訊。 <xref:Microsoft.Office.Interop.Word.Find>如果找到符合搜尋準則的文字，則物件會傳回 **True** ，否則傳回 **False** 。 如果找到文字，該方法還會重新定義 <xref:Microsoft.Office.Interop.Word.Range> 物件以符合搜尋準則。
 
 ### <a name="to-find-text-using-a-range-object"></a>使用 Range 物件尋找文字
 
@@ -97,7 +99,7 @@ ms.locfileid: "85547039"
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#71)]
 
 ## <a name="search-for-and-replace-text-in-documents"></a>搜尋和取代檔中的文字
- 下列程式碼會搜尋目前的選取範圍，並以**找到**的字串取代所有出現的字串**find me** 。
+ 下列程式碼會搜尋目前的選取範圍，並以 **找到** 的字串取代所有出現的字串 **find me** 。
 
 ### <a name="to-search-for-and-replace-text-in-documents"></a>搜尋和取代文件中的文字
 

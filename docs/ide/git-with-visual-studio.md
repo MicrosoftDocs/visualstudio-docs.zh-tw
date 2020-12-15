@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e640d19659861a03d0f97abc799344bebb14b936
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878305"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524086"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 體驗
 
@@ -39,7 +39,7 @@ Git 現在是 Visual Studio 2019 中的預設版本控制體驗。 自 [16.6 版
 
 ## <a name="create-a-new-git-repository"></a>建立新的 Git 存放庫
 
-如果您的程式碼未與 Git 相關聯，您可以從建立新的 Git 存放庫開始。 若要這樣做， **Git** 請  >  從功能表列選取 [git **建立 git 存放庫**]。 然後，在 [ **建立 Git 存放庫** ] 對話方塊中，輸入您的資訊。
+如果您的程式碼未與 Git 相關聯，您可以從建立新的 Git 存放庫開始。 若要這樣做， 請  >  從功能表列選取 [git **建立 git 存放庫**]。 然後，在 [ **建立 Git 存放庫** ] 對話方塊中，輸入您的資訊。
 
 :::image type="content" source="media/git-create-repository.png" alt-text="Visual Studio 中的 [建立 Git 存放庫] 對話方塊。":::
 
@@ -90,7 +90,7 @@ Visual Studio 會根據您在方案總管中載入的視圖檔案來調整其觀
 
 :::image type="content" source="media/git-changes-window.png" alt-text="Visual Studio 中的 [Git 變更] 視窗。":::
 
-當您準備好要暫存變更時，請按一下 **+** 您要預備的每個檔案上的 (加號) 按鈕，或是以滑鼠右鍵按一下檔案，然後選取 [ **階段**]。 您也可以按一下 [變更] 區段頂端的 [全部] **+** (加) 按鈕，來暫存所有修改過的檔案 **Changes** 。
+當您準備好要暫存變更時，請按一下 **+** 您要預備的每個檔案上的 (加號) 按鈕，或是以滑鼠右鍵按一下檔案，然後選取 [ **階段**]。 您也可以按一下 [變更] 區段頂端的 [全部] **+** (加) 按鈕，來暫存所有修改過的檔案 。
 
 當您暫存變更時，Visual Studio 會建立 **分段的變更** 區段。 只有 [ **暫存變更** ] 區段中的變更會新增至下一個認可，您可以選取 [ **認可暫存**] 來完成此動作。 您也可以按一下 **–** (減號) 按鈕，來取消暫存變更。 此動作的對等命令為 `git commit -m "Your commit message"` 。
 
@@ -183,13 +183,13 @@ Visual Studio 中的「合併編輯器」是三向合併工具，可顯示內送
 
 ## <a name="personalize-your-git-settings"></a>將您的 Git 設定個人化
 
-若要在存放庫層級以及全域層級進行個人化和自訂 git 設定，請移 **Git** 至  >  功能表列上的 [git **設定**]，或移至功能表列上的 [**工具**  >  **選項**  >  **原始檔控制**]。 然後，選擇您想要的選項。
+若要在存放庫層級以及全域層級進行個人化和自訂 git 設定，請移至  >  功能表列上的 [git **設定**]，或移至功能表列上的 [**工具**  >  **選項**  >  **原始檔控制**]。 然後，選擇您想要的選項。
 
 :::image type="content" source="media/git-options-settings.png" alt-text="您可以在 Visual Studio IDE 中選擇個人化和自訂設定的 [選項] 對話方塊 ":::
 
-## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>如何在 Visual Studio 中使用舊版 Team Explorer 體驗
+## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>如何使用 Visual Studio 的完整 Team Explorer 體驗
 
-新的 Git 體驗是從 [16.8 版](/visualstudio/releases/2019/release-notes/) 開始 Visual Studio 2019 的預設版本控制系統。 但是，如果您想要關閉它，可以。 移至 [**工具**  >  **選項**  >  **環境**  >  **預覽功能**]，然後切換 [**新的 Git 使用者體驗**] 核取方塊，這會將您切換回舊版 Team Explorer 體驗。
+新的 Git 體驗是從 [16.8 版](/visualstudio/releases/2019/release-notes/) 開始 Visual Studio 2019 的預設版本控制系統。 但是，如果您想要關閉它，可以。 移至 [**工具**  >  **選項**  >  **環境**  >  **預覽功能**]，然後切換 [**新的 git 使用者體驗**] 核取方塊，這會將您切換回 git 的 Team Explorer。
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Visual Studio 中 [選項] 對話方塊的 [預覽功能] 區段 ":::
 
@@ -200,7 +200,7 @@ Visual Studio 中的「合併編輯器」是三向合併工具，可顯示內送
 > [!IMPORTANT]
 > 如果您對我們有任何建議，請讓我們知道！ 我們很感謝您透過 [**開發人員社群**](https://aka.ms/vs-suggest) 入口網站，在設計決策方面與您互動的機會。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [宣佈推出 Visual Studio blog 文章中的 Git 體驗版本](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)
 - 在 YouTube 上[推出新的 Git 體驗](https://www.youtube.com/watch?v=UHrAg3iKoe0&t)

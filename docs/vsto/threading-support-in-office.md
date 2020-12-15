@@ -1,5 +1,7 @@
 ---
 title: Office 中的執行緒支援
+description: Microsoft Office 物件模型中支援執行緒。 Office 物件模型不具備執行緒安全，但可以在 Office 方案中使用多個執行緒。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d44c86e17b5df79c44f85cd555b3036e925ae61
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978763"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524194"
 ---
 # <a name="threading-support-in-office"></a>Office 中的執行緒支援
   本文提供 Microsoft Office 物件模型中如何支援執行緒的相關資訊。 Office 物件模型並非安全線程，但可以在 Office 方案中使用多個執行緒。 Office 應用程式是 COM) 伺服器 (元件物件模型。 COM 可讓用戶端呼叫任意執行緒上的 COM 伺服器。 若為不安全線程的 COM 伺服器，COM 會提供一種機制來序列化並行呼叫，如此一來，伺服器上一次只會執行一個邏輯執行緒。 這項機制稱為單一執行緒的單元 (STA) 模型。 由於呼叫是序列化的，因此呼叫端可能會在伺服器忙碌或處理背景執行緒上的其他呼叫時封鎖一段時間。
@@ -36,7 +38,7 @@ ms.locfileid: "62978763"
 
 - 並行
 
-- Synchronization
+- 同步處理
 
 - 封送處理
 

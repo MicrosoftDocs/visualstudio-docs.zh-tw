@@ -1,5 +1,7 @@
 ---
 title: 處理檔中的文字
+description: 深入瞭解使用 Microsoft Word 物件模型處理 Office 專案中文字的逐步程式和程式碼範例。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cdb38bcb8a86900cae7eb596c48b5765bc247eac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8314752b5d1be6d1d86dcf35cf78851bcb45cb3c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815082"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523380"
 ---
 # <a name="work-with-text-in-documents"></a>處理檔中的文字
   本節中的主題針對在 Office 專案中使用 Microsoft Office Word 物件模型處理文字，提供逐步程序和程式碼範例。

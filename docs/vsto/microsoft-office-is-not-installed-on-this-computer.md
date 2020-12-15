@@ -1,5 +1,7 @@
 ---
 title: 這部電腦未安裝 Microsoft Office
+description: 瞭解當 Visual Studio 找不到對應至您專案類型的 Microsoft Office 應用程式時，該怎麼辦。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: error-reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16f312f9b9d15cbdacbb1fa3e0628903254aeaea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f09c7c454836c0eb957b9ecc459b75b7fba868db
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543139"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523509"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>電腦上未安裝 Microsoft Office
   Visual Studio 找不到對應至這種專案類型的 Microsoft Office 應用程式。 如果您要開發 VSTO 增益集專案，這表示您無法進行此專案的偵錯工具或執行。 如果您嘗試建立文件層級專案，這表示您無法建立專案。

@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：從執行窗格將文字插入檔
+description: 在 Microsoft Word 檔中建立執行窗格。 瞭解 [執行] 窗格包含兩個可收集輸入，然後將文字傳送至檔的控制項。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584959"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524167"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>逐步解說：從執行窗格將文字插入檔
   本逐步解說示範如何在 Microsoft Office Word 檔中建立執行窗格。 [動作] 窗格包含兩個可收集輸入的控制項，然後將文字傳送至檔。
@@ -49,7 +51,7 @@ ms.locfileid: "91584959"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 使用 [ **我的基本動作] 窗格**建立 Word 檔專案。 在嚮導中，選取 [ **建立新檔**]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 使用 [ **我的基本動作] 窗格** 建立 Word 檔專案。 在嚮導中，選取 [ **建立新檔**]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 會在設計工具中開啟新的 Word 檔，並將 [ **我的基本動作] 窗格** 專案加入 **方案總管**。
 
@@ -81,22 +83,22 @@ ms.locfileid: "91584959"
     > [!NOTE]
     > 段落標記應該在書簽之外。 如果檔中沒有顯示段落標記，請按一下 [ **工具** ] 功能表，指向 [ **Microsoft Office Word 工具** ]，然後按一下 [ **選項**]。 按一下 [**流覽**] 索引標籤，然後在 [**選項**] 對話方塊的 [**格式化標示**] 區段中，選取 [**段落標記**] 核取方塊。
 
-3. 在 [**屬性**] 視窗中，將**Bookmark1**的**Name**屬性變更為**showName**。
+3. 在 [**屬性**] 視窗中，將 **Bookmark1** 的 **Name** 屬性變更為 **showName**。
 
 4. 選取 [單字 **位址**]，而不選取段落標記。
 
 5. 在功能區的 [ **插入** ] 索引標籤上，按一下 [ **連結** ] 群組中的 [ **書簽**]。
 
-6. 在 [**書簽**] 對話方塊中，于 [**書簽名稱**] 方塊中輸入**ShowAddress** ，然後按一下 [**新增**]。
+6. 在 [**書簽**] 對話方塊中，于 [**書簽名稱**] 方塊中輸入 **ShowAddress** ，然後按一下 [**新增**]。
 
 ## <a name="add-controls-to-the-actions-pane"></a>將控制項新增至 [動作] 窗格
  若要設計執行窗格介面，請在專案中加入 [執行] 窗格控制項，然後將 Windows Forms 控制項加入至 [動作] 窗格控制項。
 
 ### <a name="to-add-an-actions-pane-control"></a>若要加入執行窗格控制項
 
-1. 在**方案總管**中選取 [**我的基本動作] 窗格**專案。
+1. 在 **方案總管** 中選取 [**我的基本動作] 窗格** 專案。
 
-2. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
+2. 在 [專案] 功能表上，按一下 [加入新項目]。
 
 3. 在 [ **加入新專案** ] 對話方塊中，按一下 [ **動作] 窗格控制項**，將控制項命名為 **InsertTextControl，** 然後按一下 [ **加入**]。
 

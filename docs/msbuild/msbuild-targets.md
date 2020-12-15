@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a257299d22b5ba5050ee9027e6bbb97bbaf3a75
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 19d6a95ceeab9af2b6a6f874ae4f889dd2180ba6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049094"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524017"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
 
@@ -33,7 +33,7 @@ ms.locfileid: "93049094"
 </Target>
 ```
 
- 與 MSBuild 屬性相同，可以重新定義目標。 例如，套用至物件的
+ 與 MSBuild 屬性相同，可以重新定義目標。 例如，
 
 ```xml
 <Target Name="AfterBuild" >
@@ -70,7 +70,7 @@ ms.locfileid: "93049094"
 
 ## <a name="target-batching"></a>目標批次處理
 
-目標專案可能有屬性， `Outputs` 其以% () 形式指定中繼資料 \<Metadata> 。 如果是這樣，MSBuild 會為每個唯一的中繼資料值執行一次目標，並分組或「批次處理」具有該中繼資料值的項目。 例如，套用至物件的
+目標專案可能有屬性， `Outputs` 其以% () 形式指定中繼資料 \<Metadata> 。 如果是這樣，MSBuild 會為每個唯一的中繼資料值執行一次目標，並分組或「批次處理」具有該中繼資料值的項目。 例如，
 
 ```xml
 <ItemGroup>
@@ -100,7 +100,7 @@ Reference: 4.0
 
  目標批次處理很少用於真實的組建。 工作批次處理較為常見。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。
 
-## <a name="incremental-builds"></a>累加建置
+## <a name="incremental-builds"></a>累加組建
 
  累加組建是已最佳化的建置，因此不會執行輸出檔案與其相關對應輸入檔案為最新的目標。 目標項目可能有 `Inputs` 和 `Outputs` 屬性，並指出目標預期作為輸入的項目，以及它產生作為輸出的項目。
 
@@ -419,7 +419,7 @@ $(TargetFileName) -          The file name of the build target.
 ===================================================
 GenerateBindingRedirectsUpdateAppConfig
 Updates the project to use the generated app.config content.  This needs to run regardless of 
-inputs/outputs so it is seperate from GenerateBindingRedirects.
+inputs/outputs so it is separate from GenerateBindingRedirects.
 ===================================================
 <Target Name="GenerateBindingRedirectsUpdateAppConfig"
         AfterTargets="GenerateBindingRedirects"
@@ -1014,7 +1014,7 @@ This target gathers the Redist folders from the SDKs which have been resolved.
         DependsOnTargets="$(SDKRedistOutputGroupDependsOn)"/>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [如何：使用多個專案檔內相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

@@ -1,5 +1,7 @@
 ---
 title: Office 方案的特定安全性考慮
+description: 瞭解 Microsoft .NET Framework 和 Microsoft Office 所提供的安全性功能如何協助保護您的 Office 解決方案免于安全性威脅。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 571b604b87fb7fac4e78c83a791c265d910fae94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0da77067931d35ee63a9ccc9b0de85752157772b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985586"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524299"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office 方案的特定安全性考慮
   Microsoft .NET Framework 和 Microsoft Office 所提供的安全性功能，可協助保護您的 Office 解決方案免於可能的安全性威脅。 本主題說明一些這類威脅，並提供建議協助您免於威脅。 本主題也包含 Microsoft Office 安全性設定如何影響 Office 方案的相關資訊。
@@ -63,7 +65,7 @@ ms.locfileid: "72985586"
 
  只有從這個物件取得之 Outlook 物件，可受到物件模型保護信任。 相反地，從新的 `Microsoft.Office.Interop.Outlook.Application` 物件取得之物件不受信任，而且如果物件模型保護已啟用，則受限制的屬性和方法將會引發安全性警告。
 
- 如果物件模型保護已啟用，則下列程式碼範例會顯示安全性警告。 `Microsoft.Office.Interop.Outlook.MailItem` 類別的 `To` 屬性受物件模型保護限制。 `Microsoft.Office.Interop.Outlook.MailItem`物件不受信任 `Microsoft.Office.Interop.Outlook.Application` ，因為程式碼會從使用**new**運算子所建立的來取得它，而不是從欄位取得它 `Application` 。
+ 如果物件模型保護已啟用，則下列程式碼範例會顯示安全性警告。 `Microsoft.Office.Interop.Outlook.MailItem` 類別的 `To` 屬性受物件模型保護限制。 `Microsoft.Office.Interop.Outlook.MailItem`物件不受信任 `Microsoft.Office.Interop.Outlook.Application` ，因為程式碼會從使用 **new** 運算子所建立的來取得它，而不是從欄位取得它 `Application` 。
 
  [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
  [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]
@@ -87,9 +89,9 @@ ms.locfileid: "72985586"
  裝載 Microsoft Office 應用程式的其他應用程式，也可以防止新的權限付諸執行。 當變更安全性原則時，使用者應結束所有已裝載 Office 或獨立使用 Office 的應用程式。
 
 ## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Microsoft Office 系統中的 [信任中心] 設定不會影響增益集或檔層級自訂
- 使用者可以防止 VSTO 增益集載入，方法是設定 [信任中心] **** 的選項。 不過，這些信任設定不會影響使用 Visual Studio 中 Office 方案建立的 VSTO 增益集和文件層級自訂。
+ 使用者可以防止 VSTO 增益集載入，方法是設定 [信任中心] 的選項。 不過，這些信任設定不會影響使用 Visual Studio 中 Office 方案建立的 VSTO 增益集和文件層級自訂。
 
- 如果使用者使用 [信任中心] **** 防止載入 VSTO 增益集，將不會載入下列類型的 VSTO 增益集：
+ 如果使用者使用 [信任中心] 防止載入 VSTO 增益集，將不會載入下列類型的 VSTO 增益集：
 
 - Managed 和 Unmanaged COM VSTO 增益集。
 
@@ -99,21 +101,21 @@ ms.locfileid: "72985586"
 
 - Managed 和 Unmanaged 即時資料元件。
 
-  下列程序描述使用者如何使用 [信任中心] **** 來限制 VSTO 增益集無法載入 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 和 Microsoft Office 2010。 這些程序不會影響 Visual Studio 中使用 Office 開發工具所建立的 VSTO 增益集或自訂。
+  下列程序描述使用者如何使用 [信任中心]  來限制 VSTO 增益集無法載入 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 和 Microsoft Office 2010。 這些程序不會影響 Visual Studio 中使用 Office 開發工具所建立的 VSTO 增益集或自訂。
 
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-office_15_short-applications"></a>在 Microsoft Office 2010 和 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 應用程式停用 VSTO 增益集
 
-1. 選擇 [檔案] **** 索引標籤。
+1. 選擇 [檔案]  索引標籤。
 
-2. 選擇 [應用程式名稱選項] ** **** 按鈕。
+2. 選擇 [應用程式名稱選項]   按鈕。
 
-3. 在分類窗格中，選擇 [信任中心] ****。
+3. 在分類窗格中，選擇 [信任中心] 。
 
-4. 在詳細資料窗格中，選擇 [信任中心設定] ****。
+4. 在詳細資料窗格中，選擇 [信任中心設定] 。
 
-5. 在分類窗格中，選擇 [增益集] ****。
+5. 在分類窗格中，選擇 [增益集] 。
 
-6. 在 [詳細資料] 窗格中，選取 [要求應用程式增益集由受信任的發行者簽署] **** 或 [停用所有應用程式增益集] ****。
+6. 在 [詳細資料] 窗格中，選取 [要求應用程式增益集由受信任的發行者簽署]  或 [停用所有應用程式增益集] 。
 
 ## <a name="see-also"></a>另請參閱
 - [保護 Office 方案](../vsto/securing-office-solutions.md)

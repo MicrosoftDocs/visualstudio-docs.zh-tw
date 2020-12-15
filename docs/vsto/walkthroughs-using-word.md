@@ -1,5 +1,7 @@
 ---
 title: 使用 Word 的逐步解說
+description: 瞭解如何使用檔層級自訂和 VSTO 增益集來自動化 Microsoft Word，以及自訂使用者介面 (UI) 。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6d3b4ece92bf278ef8d43dca7e449272982381c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd2685b7fee0534e56c55e2c865d1d7f16423de5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254985"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522585"
 ---
 # <a name="walkthroughs-using-word"></a>使用 Word 的逐步解說
   下列逐步解說示範您可以使用文件層級自訂和 VSTO 增益集來自動化 Microsoft Office Word 以及自訂使用者介面 (UI) 的方式。

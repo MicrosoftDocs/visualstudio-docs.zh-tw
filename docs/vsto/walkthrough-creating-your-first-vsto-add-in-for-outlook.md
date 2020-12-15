@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：建立 Outlook 的第一個 VSTO 增益集
+description: 建立適用于 Microsoft Outlook 的應用層級增益集。 這項功能適用于應用程式本身，不論開啟的是哪一種 Outlook 專案。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7950858d3205cf910eb09e5b0a99b5f67c71c4bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69547984"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524236"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>逐步解說：建立 Outlook 的第一個 VSTO 增益集
   本逐步解說將示範如何建立 Microsoft Office Outlook 的 VSTO 增益集。 無論開啟的 Outlook 項目為何，您在這類解決方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱 [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -56,15 +58,15 @@ ms.locfileid: "69547984"
 
 2. 在 **[檔案]** 功能表上，指向 **[開新檔案]** ，然後按一下 **[專案]** 。
 
-3. 在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ****，然後展開 [Office/SharePoint] ****。
+3. 在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ，然後展開 [Office/SharePoint] 。
 
-4. 在展開的 [Office/SharePoint] **** 節點下，選取 [Office 增益集] **** 節點。
+4. 在展開的 [Office/SharePoint]  節點下，選取 [Office 增益集]  節點。
 
 5. 在專案範本清單中，選取 Outlook VSTO 增益集專案。
 
-6. 在 [名稱] **** 方塊中輸入 **FirstOutlookAddIn**。
+6. 在 [名稱]  方塊中輸入 **FirstOutlookAddIn**。
 
-7. 按一下 [確定]  。
+7. 按一下 [確定]。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立 **FirstOutlookAddIn** 專案，並在編輯器中開啟 **ThisAddIn** 程式碼檔案。
 
@@ -122,7 +124,7 @@ ms.locfileid: "69547984"
 
 ### <a name="to-clean-up-your-project"></a>清除專案
 
-1. 在 Visual Studio 中，按一下 [建置] **** 功能表上的 [清除方案] ****。
+1. 在 Visual Studio 中，按一下 [建置]  功能表上的 [清除方案] 。
 
 ## <a name="next-steps"></a>後續步驟
  現在您已經建立 Outlook 的基本 VSTO 增益集，可以從下列主題進一步了解如何開發 VSTO 增益集：

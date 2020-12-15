@@ -1,5 +1,7 @@
 ---
 title: 針對 Office 方案進行疑難排解
+description: 瞭解使用 Visual Studio 中的 Office 開發工具來建立方案時可能遇到的常見問題的一些秘訣。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82fbb41bb1bf0d7ba3da046eb7d22eb8606a7529
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ee25ea397af3805ac88b51d12a862bffdb20a00
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234714"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522831"
 ---
 # <a name="troubleshoot-office-solutions"></a>針對 Office 方案進行疑難排解
   本節所包含的秘訣，可解決使用 Visual Studio 中的 Office 開發工具建立方案時可能遇到的常見問題。

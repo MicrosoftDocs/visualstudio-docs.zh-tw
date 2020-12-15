@@ -1,5 +1,7 @@
 ---
 title: 使用 Visio 檔
+description: 瞭解如何使用 Microsoft Visio 的物件模型來處理 Office 專案中的檔，以瞭解逐步程式和程式碼範例。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82dbf0858266fe2f07d4ae51c8171e0e8a900861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8835e3ef668e060798c515a89868d800ca737f34
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815046"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523336"
 ---
 # <a name="work-with-visio-documents"></a>使用 Visio 檔
   本節中的主題提供使用 Microsoft Office Visio 的物件模型來處理 Office 專案中檔的逐步程式和程式碼範例。

@@ -1,5 +1,7 @@
 ---
 title: 使用連絡人項目
+description: 瞭解 ContactItem 類別包含您用來執行連絡人工作的方法和屬性。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 325f6b1b7ee489102d1ed4d2ef72350b3a6f5f3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b84d91f2a89a5cf648aaa13f18e404dab2ec138c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008634"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524779"
 ---
 # <a name="work-with-contact-items"></a>使用連絡人項目
   <xref:Microsoft.Office.Interop.Outlook.ContactItem> 類別包含您用來執行連絡人工作的方法和屬性。

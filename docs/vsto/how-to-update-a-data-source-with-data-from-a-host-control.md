@@ -1,5 +1,7 @@
 ---
 title: 如何：使用主控制項的資料更新資料來源
+description: 瞭解如何將主控制項系結至資料來源，並使用對控制項中資料所做的變更來更新資料來源。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52540f0cf94a12efda891657ec4aae9452ad6f86
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2f79b8ae8716631a7adc68446b0c5fe267a30a88
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585115"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523609"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何：使用主控制項的資料更新資料來源
   您可以將主控制項繫結至資料來源，並以在控制項中對資料所做的變更來更新資料來源。 這個程序包含兩個主要步驟：
@@ -75,20 +77,20 @@ ms.locfileid: "91585115"
 
 2. 按一下您要自動更新資料來源的控制項。
 
-3. 在 [屬性] **** 視窗中，展開 [(DataBindings)] **** 屬性。
+3. 在 [屬性]  視窗中，展開 [(DataBindings)]  屬性。
 
-4. 在 ** (Advanced) ** ] 屬性旁邊，按一下省略號按鈕 (![VisualStudioEllipsesButton 螢幕擷取畫面](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 螢幕擷取畫面")) 。
+4. 在 **(Advanced)** ] 屬性旁邊，按一下省略號按鈕 (![VisualStudioEllipsesButton 螢幕擷取畫面](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 螢幕擷取畫面")) 。
 
-5. 在 [格式化與進階繫結] **** 對話方塊中，按一下 [資料來源更新模式] **** 下拉式清單，然後選取下列其中一個值：
+5. 在 [格式化與進階繫結]  對話方塊中，按一下 [資料來源更新模式]  下拉式清單，然後選取下列其中一個值：
 
-    - 若要在驗證控制項時更新資料來源，請選取 [OnValidation] ****。
+    - 若要在驗證控制項時更新資料來源，請選取 [OnValidation] 。
 
-    - 若要在控制項的資料繫結屬性值變更時更新資料來源，請選取 [OnPropertyChanged] ****。
+    - 若要在控制項的資料繫結屬性值變更時更新資料來源，請選取 [OnPropertyChanged] 。
 
         > [!NOTE]
-        > [OnPropertyChanged] **** 選項不適用於 Word 主控制項，因為 Word 不提供文件變更或控制項變更通知。 不過，這個選項可用於 Word 文件上的 Windows Form 控制項。
+        > [OnPropertyChanged]  選項不適用於 Word 主控制項，因為 Word 不提供文件變更或控制項變更通知。 不過，這個選項可用於 Word 文件上的 Windows Form 控制項。
 
-6. 關閉 [格式化與進階繫結] **** 對話方塊。
+6. 關閉 [格式化與進階繫結]  對話方塊。
 
 ## <a name="update-the-database"></a>更新資料庫
  如果資料庫與記憶體內部資料來源相關聯，您必須以對資料來源所做的變更來更新資料庫。 如需更新資料庫的詳細資訊，請參閱 [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)  ，並 [使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md) 。

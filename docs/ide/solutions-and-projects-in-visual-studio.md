@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2889729ae539d640bb9d43c64956edc04b74f26
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 7a24f56d94d470ca5ff04a99f524af3c76df3a15
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488189"
+ms.locfileid: "97524067"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
@@ -62,7 +62,7 @@ Visual Studio 會使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存解決方
 
 ### <a name="solution-folder"></a>方案資料夾
 
-在此內容中，「解決方案資料夾」是一個僅在 **方案總管** 的虛擬資料夾，您可以在其中使用它來將方案中的專案分組。 如果您想要在電腦上尋找方案檔，請移至 [**工具**  >  **選項**  >  **專案和方案**  >  **位置**]。 如需詳細資訊，請參閱 [選項對話方塊：專案和方案 > 位置](./reference/projects-solutions-locations-options.md)
+在此內容中，「解決方案資料夾」是一個僅在 **方案總管** 的虛擬資料夾，您可以在其中使用它來將方案中的專案分組。 如果您想要在電腦上尋找方案檔，請移至 [**工具**  >  **選項**  >  **專案和方案**  >  **位置**]。 如需詳細資訊，請參閱 [選項對話方塊：專案和方案 > 位置](./reference/projects-solutions-locations-options.md)。
 
 ## <a name="create-new-projects"></a>建立新專案
 

@@ -1,5 +1,7 @@
 ---
 title: 瞭解共同撰寫和增益集
+description: 瞭解「共同撰寫」以及它是適用于 Windows desktop 的 Excel 功能，可讓您同時編輯雲端中裝載的活頁簿和其他使用者。
+ms.custom: SEO-VS-2020
 ms.date: 07/20/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c0d4c513da403b02454055dadf6d0fd70eef81c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978181"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522842"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>瞭解共同撰寫和增益集
 

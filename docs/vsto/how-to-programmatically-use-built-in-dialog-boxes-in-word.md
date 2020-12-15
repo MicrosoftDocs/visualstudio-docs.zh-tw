@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式使用 Word 中的內建對話方塊
+description: 瞭解如何使用 Visual Studio，以程式設計方式使用 Microsoft Word 內建的對話方塊。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6edba0b1fe9f06dbf7dba8dd1a3d01c4041ba8fe
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b2c1a748d38c2b649705fa1ad2de21553b710634
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585650"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523624"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>如何：以程式設計方式使用 Word 中的內建對話方塊
   使用 Microsoft Office Word 時，有時您需要顯示使用者輸入的對話方塊。 雖然您可以建立自己的，但您也可能想要使用 Word 中的內建對話方塊，這是在物件的集合中公開的 <xref:Microsoft.Office.Interop.Word.Dialogs> <xref:Microsoft.Office.Interop.Word.Application> 。 這可讓您存取200以上的內建對話方塊（以列舉表示）。
@@ -42,7 +44,7 @@ ms.locfileid: "91585650"
  [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
  [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]
 
- 下列程式碼範例示範如何在**Option Strict**為 on 的 Visual Basic 專案中，使用反映來存取 [**開啟**檔案] 對話方塊的 [**名稱**] 屬性。 若要使用此範例，請從 `ThisDocument` 專案的或 `ThisAddIn` 類別中執行它。
+ 下列程式碼範例示範如何在 **Option Strict** 為 on 的 Visual Basic 專案中，使用反映來存取 [**開啟** 檔案] 對話方塊的 [**名稱**] 屬性。 若要使用此範例，請從 `ThisDocument` 專案的或 `ThisAddIn` 類別中執行它。
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 

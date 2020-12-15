@@ -1,5 +1,7 @@
 ---
 title: 使用按鈕在檔的文字方塊中顯示文字
+description: 瞭解如何在 Microsoft Word 的檔層級自訂中使用按鈕和文字方塊。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f3c467abcee8fb4faafd2da06ba261e7f3039fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cda1fe3e7430ff30dcc3b3921eb2bcd4d31b699
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328745"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522749"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>逐步解說：使用按鈕在檔的文字方塊中顯示文字
   本逐步解說示範如何在 Microsoft Office Word 的文件層級自訂中使用按鈕和文字方塊。
@@ -44,7 +46,7 @@ ms.locfileid: "67328745"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 使用 [ **我的單字**名稱] 按鈕建立 word 檔專案。 在嚮導中，選取 [ **建立新檔**]。
+1. 使用 [ **我的單字** 名稱] 按鈕建立 word 檔專案。 在嚮導中，選取 [ **建立新檔**]。
 
      如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
@@ -64,7 +66,7 @@ ms.locfileid: "67328745"
 
 3. 在 [檢視]  功能表上，按一下 [屬性視窗]  。
 
-4. 在 [**屬性**] 視窗下拉式方塊中尋找**TextBox1** ，並將文字方塊的 [**名稱**] 屬性變更**為 [文字記錄**]。
+4. 在 [**屬性**] 視窗下拉式方塊中尋找 **TextBox1** ，並將文字方塊的 [**名稱**] 屬性變更 **為 [文字記錄**]。
 
 5. 將 **按鈕** 控制項拖曳至檔，並變更下列屬性。
 
@@ -80,7 +82,7 @@ ms.locfileid: "67328745"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>在按一下按鈕時寫入至文字方塊
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **ThisDocument**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **ThisDocument**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
 
 2. 將下列程式碼新增至按鈕的 <xref:System.Windows.Forms.Control.Click> 事件處理常式。
 

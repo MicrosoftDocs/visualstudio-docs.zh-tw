@@ -1,5 +1,7 @@
 ---
 title: 安全性和部署逐步解說
+description: 瞭解如何設定安全性原則，讓您的解決方案能夠執行，以及您可以如何部署 Office 方案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 014b59efb945f6390877a2e9764e24b6c4cd639b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0a750aa97c371ce25c7b6797ee773e82d8ab8eb6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810937"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524372"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>安全性和部署逐步解說
   下列主題將示範如何設定安全性原則以允許您的解決方案執行，以及如何部署 Office 方案。

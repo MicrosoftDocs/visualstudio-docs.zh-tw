@@ -1,5 +1,7 @@
 ---
 title: SetWefProcessId 方法
+description: 瞭解 SetWefProcessId 方法如何提供處理序識別碼，以 (WEF) 內容來執行 Web Extensions Framework。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13a6748e2e3b66f581a3c72c1f847e0329189e64
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 523279d70215af90ea070ea8272a5221d9947582
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537328"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524318"
 ---
 # <a name="setwefprocessid-method"></a>SetWefProcessId 方法
   提供將執行 Web Extensions Framework (WEF) 內容的處理序識別碼。
@@ -30,7 +32,7 @@ HRESULT SetWefProcessId(
 
 #### <a name="parameters"></a>參數
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |*dwProcessId*|將用來執行 WEF 內容的處理序識別碼。|
 

@@ -1,5 +1,7 @@
 ---
 title: 改善 VSTO 增益集的效能
+description: 瞭解如何將您為 Office 應用程式建立的 VSTO 增益集優化，使其快速啟動、關閉、開啟專案及執行其他工作。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 83ba2e9cc2cd55b3e3f6362250ffc1e9489b1626
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298516"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524441"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>改善 VSTO 增益集的效能
   最佳化您為 Office 應用程式建立的 VSTO 增益集，您可以提供使用者更好的體驗，讓他們快速地啟動、關閉、開啟項目及執行其他工作。 如果是 Outlook 適用的 VSTO 增益集，您還可以減少 VSTO 增益集因為效能不佳而停用的機率。 實作下列策略可以提升 VSTO 增益集的效能：
@@ -37,7 +39,7 @@ ms.locfileid: "92298516"
 
 - 啟動應用程式後的任何時間點，使用者與 VSTO 增益集的第一次互動。
 
-  例如，當使用者選擇標示為 [ **取得我的資料**] 的自訂按鈕時，VSTO 增益集可能會在工作表中填入資料。 應用程式至少必須載入您的 VSTO 增益集一次，才能讓 [ **取得我的資料** ] 按鈕出現在功能區中。 不過，當使用者下一次啟動應用程式時，不會再次載入 VSTO 增益集。 VSTO 增益集只會在使用者選擇 [取得我的資料] **** 按鈕時載入。
+  例如，當使用者選擇標示為 [ **取得我的資料**] 的自訂按鈕時，VSTO 增益集可能會在工作表中填入資料。 應用程式至少必須載入您的 VSTO 增益集一次，才能讓 [ **取得我的資料** ] 按鈕出現在功能區中。 不過，當使用者下一次啟動應用程式時，不會再次載入 VSTO 增益集。 VSTO 增益集只會在使用者選擇 [取得我的資料]  按鈕時載入。
 
 ### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>設定 ClickOnce 方案視需要載入 VSTO 增益集
 
@@ -45,19 +47,19 @@ ms.locfileid: "92298516"
 
 2. 在功能表列上，選擇 [ **View**  >  **Property Pages**]。
 
-3. 在 [發行] **** 索引標籤上，選擇 [選項] **** 按鈕。
+3. 在 [發行]  索引標籤上，選擇 [選項]  按鈕。
 
-4. 在 [發行選項] **** 對話方塊中，依序選擇 [Office 設定] **** 清單項目、[視需要載入] **** 選項，然後再選擇 [確定] **** 按鈕。
+4. 在 [發行選項]  對話方塊中，依序選擇 [Office 設定]  清單項目、[視需要載入]  選項，然後再選擇 [確定]  按鈕。
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>設定 Windows Installer 方案視需要載入 VSTO 增益集
 
-1. 在登錄中，將 `LoadBehavior` **_根_\Software\Microsoft\Office \\ _ApplicationName_\Addins \\ _增益集識別碼_** 索引鍵的專案設定為**0x10**。
+1. 在登錄中，將 `LoadBehavior` **_根_\Software\Microsoft\Office \\ _ApplicationName_\Addins \\ _增益集識別碼_** 索引鍵的專案設定為 **0x10**。
 
      如需詳細資訊，請參閱 [VSTO 增益集的登錄專案](../vsto/registry-entries-for-vsto-add-ins.md)。
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>設定方案，在偵錯方案時視需要載入 VSTO 增益集
 
-1. 建立腳本，將 `LoadBehavior` **_根_\Software\Microsoft\Office \\ _ApplicationName_\Addins \\ _增益集識別碼_** 索引鍵的專案設定為**0x10**。
+1. 建立腳本，將 `LoadBehavior` **_根_\Software\Microsoft\Office \\ _ApplicationName_\Addins \\ _增益集識別碼_** 索引鍵的專案設定為 **0x10**。
 
      下列程式碼顯示此指令碼範例。
 

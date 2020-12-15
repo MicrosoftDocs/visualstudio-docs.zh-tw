@@ -1,5 +1,7 @@
 ---
 title: 針對 Office 方案中的錯誤進行疑難排解
+description: 瞭解如何針對您在 Visual Studio 中開發 Microsoft Office 解決方案時可能發生的錯誤進行疑難排解。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd12c3dd9cd3c90564351dd1c64cebfe5df6e99d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234688"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523041"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>針對 Office 方案中的錯誤進行疑難排解
   當您使用 Visual Studio 開發 Office 方案時，如果於過程中執行下列工作，則可能會遇到一些問題：
@@ -100,7 +102,7 @@ ms.locfileid: "87234688"
  如果您將文件或工作表上的控制項設為群組，Visual Studio 就不再能夠辨認此控制項。 群組控制項無法在 [ **屬性** ] 視窗中存取，而且在檔或工作表上會顯示為黑色矩形。 您必須將這些控制項取消群組才能還原其功能。
 
 ### <a name="controls-on-a-word-template-are-not-visible-in-visual-studio"></a>Word 範本上的控制項在 Visual Studio 中看不到
- 如果您在 [Visual Studio 設計工具] 中開啟 Word 範本，就有可能看不到該範本上未與文字排列的控制項。 這是因為 Visual Studio 會在 **一般** 的視圖中開啟 Word 範本。 若要查看控制項，請按一下 [ **流覽** ] 功能表，指向 **Microsoft Office Word 視圖** ]，然後按一下 [ **列印版面**配置]。
+ 如果您在 [Visual Studio 設計工具] 中開啟 Word 範本，就有可能看不到該範本上未與文字排列的控制項。 這是因為 Visual Studio 會在 **一般** 的視圖中開啟 Word 範本。 若要查看控制項，請按一下 [ **流覽** ] 功能表，指向 **Microsoft Office Word 視圖** ]，然後按一下 [ **列印版面** 配置]。
 
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>插入美工圖案命令不會在 Visual Studio 設計工具中執行任何動作
  當 Excel 或 Word 在 Visual Studio 設計工具中開啟時，按一下功能區中 [**圖例**] 索引標籤上的 [**美工圖案**] 按鈕並不會開啟 [**美工圖案**] 工作窗格。 若要加入美工圖案，您必須開啟主要專案資料夾中的活頁簿或檔的複本，而不是在 Visual Studio 之外的 [ *\bin* ] 資料夾中) 的副本 (，請新增美工圖案，然後儲存活頁簿或檔。
@@ -115,7 +117,7 @@ ms.locfileid: "87234688"
 
  這個錯誤表示您嘗試存取的事件具有與該物件之其他屬性或方法相同的名稱。 若要存取事件，您必須將物件轉換成其 *事件介面*。
 
- 具有事件的 Office PIA 類型會實作兩個介面：一個是包含所有屬性和方法的核心介面，一個是包含物件所公開之事件的事件介面。 這些事件介面會使用命名慣例 *objectname*事件*n*_Event，例如 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> 和 <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> 。 如果您無法存取預期會在物件上找到的事件，請將該物件轉換成其事件介面。
+ 具有事件的 Office PIA 類型會實作兩個介面：一個是包含所有屬性和方法的核心介面，一個是包含物件所公開之事件的事件介面。 這些事件介面會使用命名慣例 *objectname* 事件 *n* _Event，例如 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> 和 <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> 。 如果您無法存取預期會在物件上找到的事件，請將該物件轉換成其事件介面。
 
  例如，<xref:Microsoft.Office.Interop.Excel.Application> 物件具有 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> 事件和 <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A> 屬性。 若要處理 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> 事件，請將 <xref:Microsoft.Office.Interop.Excel.Application> 轉換成 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> 介面。 下列程式碼範例示範如何在 Excel 的文件層級專案中執行這項作業。
 
@@ -124,7 +126,7 @@ ms.locfileid: "87234688"
  如需 Office Pia 中事件介面的詳細資訊，請參閱 [office 主要 interop 元件中的類別和介面總覽](/previous-versions/office/office-12//ms247299(v=office.12))。
 
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>無法參考目標為或的專案中的 Office PIA 類別 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)][!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
- 根據預設，在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 為目標的專案中，不會編譯參考 Office PIA 中所定義類別的程式碼。 Pia 中的類別會使用命名慣例 *objectname*類別，例如 <xref:Microsoft.Office.Interop.Word.DocumentClass> 和 <xref:Microsoft.Office.Interop.Excel.WorkbookClass> 。 例如，將不會編譯 Word VSTO 增益集專案中的下列程式碼。
+ 根據預設，在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 為目標的專案中，不會編譯參考 Office PIA 中所定義類別的程式碼。 Pia 中的類別會使用命名慣例 *objectname* 類別，例如 <xref:Microsoft.Office.Interop.Word.DocumentClass> 和 <xref:Microsoft.Office.Interop.Excel.WorkbookClass> 。 例如，將不會編譯 Word VSTO 增益集專案中的下列程式碼。
 
 ```vb
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument
@@ -153,12 +155,12 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  根據預設，以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 為目標的專案會自動內嵌 Office PIA 的所有 Interop 類型。 之所以會發生這個編譯錯誤，是因為內嵌的 Interop 類型功能僅適用於介面，而不適用於類別。 如需 Office Pia 中介面和類別的詳細資訊，請參閱 [office 主要 interop 元件中的類別和介面總覽](/previous-versions/office/office-12/ms247299(v=office.12))。 如需 Office 專案中內嵌 interop 類型功能的詳細資訊，請參閱 [設計和建立 office 方案](../vsto/designing-and-creating-office-solutions.md)。
 
 ### <a name="references-to-office-classes-are-not-recognized"></a>無法辨認 Office 類別的參考
- 某些類別名稱（例如應用程式）位於多個命名空間，例如 <xref:Microsoft.Office.Interop.Word> 和 <xref:System.Windows.Forms> 。 基於這個理由，在**Imports** / 專案範本頂端**使用**語句的 Imports 包含速記限定常數，例如：
+ 某些類別名稱（例如應用程式）位於多個命名空間，例如 <xref:Microsoft.Office.Interop.Word> 和 <xref:System.Windows.Forms> 。 基於這個理由，在 / 專案範本頂端 **使用** 語句的 Imports 包含速記限定常數，例如：
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]
 
- 使用**Imports**using 語句的這種用法， / **using**需要您區分 Office 類別的參考與 Word 或 Excel 限定詞，例如：
+ 使用 **Imports** using 語句的這種用法， / 需要您區分 Office 類別的參考與 Word 或 Excel 限定詞，例如：
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#3)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#3)]
@@ -197,7 +199,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  如果您在 UNC 網路位置建立 Excel 或 Word 文件層級專案，則必須將文件位置加入 Excel 或 Word 的信任位置清單。 否則，當您嘗試在 Visual Studio 中執行或偵錯專案時，將不會載入自訂。 如需信任位置的詳細資訊，請參閱 [授與信任給檔](../vsto/granting-trust-to-documents.md)。
 
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>錯錯之後，執行緒未正確停止
- Visual Studio 中的 Office 專案會遵循執行緒命名慣例，該慣例可讓偵錯工具正確關閉程式。 如果您在方案中建立執行緒，則應在每個執行緒名稱加上前置詞 VSTA_，確保停止偵錯時能正確處理這些執行緒。 例如，您可以設定 `Name` 等候網路事件 **VSTA_NetworkListener**的執行緒屬性。
+ Visual Studio 中的 Office 專案會遵循執行緒命名慣例，該慣例可讓偵錯工具正確關閉程式。 如果您在方案中建立執行緒，則應在每個執行緒名稱加上前置詞 VSTA_，確保停止偵錯時能正確處理這些執行緒。 例如，您可以設定 `Name` 等候網路事件 **VSTA_NetworkListener** 的執行緒屬性。
 
 ### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>無法在開發電腦上執行或偵測任何 Office 方案
  如果無法在開發電腦上執行或開發 Office 專案，您可能會看到下列錯誤訊息。

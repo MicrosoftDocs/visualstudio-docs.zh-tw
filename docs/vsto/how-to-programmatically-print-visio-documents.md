@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式列印 Visio 檔
+description: 瞭解如何列印完整的 Microsoft Visio 檔，或只列印該檔中的特定頁面。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e31a55e49d42311b5ec5fff82769584cc55ce09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46babb5c989f647706bcbe87412adcdeeb0476d7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537796"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523774"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>如何：以程式設計方式列印 Visio 檔
   您可以列印整份 Microsoft Office Visio 文件，或僅列印特定頁面。

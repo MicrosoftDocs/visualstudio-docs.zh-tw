@@ -1,5 +1,7 @@
 ---
 title: 針對 Office 方案部署進行疑難排解
+description: 瞭解如何解決部署 Office 方案時可能遇到的常見問題。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b70b03e8342564de828059d1a335f6347c19b5a3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90806729"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522964"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>針對 Office 方案部署進行疑難排解
   本主題包含如何解決部署 Office 解決方案常見問題的相關資訊。
@@ -30,7 +32,7 @@ ms.locfileid: "90806729"
  在安裝或解除安裝 Office 解決方案時，您可以使用 Windows 的事件檢視器查看 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 擷取的錯誤訊息。 您可以使用事件記錄器的這些訊息，解決安裝和部署問題。 如需詳細資訊，請參閱 [Office 方案的事件記錄](../vsto/event-logging-for-office-solutions.md)。
 
 ## <a name="change-the-assembly-name-causes-conflicts"></a>變更元件名稱導致衝突
- 如果您在部署方案之後，變更 [**專案設計**工具] 之 [**應用程式**] 頁面中的 [**元件名稱**] 值，發行工具將會修改安裝套件，使其具有一個*Setup.exe*檔案和兩個部署資訊清單。 如果您部署兩個資訊清單檔案，就可能發生下列狀況：
+ 如果您在部署方案之後，變更 [**專案設計** 工具] 之 [**應用程式**] 頁面中的 [**元件名稱**] 值，發行工具將會修改安裝套件，使其具有一個 *Setup.exe* 檔案和兩個部署資訊清單。 如果您部署兩個資訊清單檔案，就可能發生下列狀況：
 
 - 如果使用者兩個版本都安裝，應用程式就會載入兩個 VSTO 增益集。
 
@@ -71,9 +73,9 @@ ms.locfileid: "90806729"
 
 1. 在功能表列上，選擇 [專案]、[**專案**_名稱_]**屬性**。
 
-2. 在 [應用程式] **** 頁面上選擇 [組件資訊] ****。
+2. 在 [應用程式]  頁面上選擇 [組件資訊] 。
 
-3. 將 **元件版本**的修訂編號（第三個欄位）設定為萬用字元 (\*) 。 例如，"1.0. *"。  然後選擇 [ **確定]** 按鈕。
+3. 將 **元件版本** 的修訂編號（第三個欄位）設定為萬用字元 (\*) 。 例如，"1.0. *"。  然後選擇 [ **確定]** 按鈕。
 
    變更組件版本之後，您可以繼續以強式名稱簽署組件，Fusion 會載入最新的自訂版本。
 
@@ -102,7 +104,7 @@ ms.locfileid: "90806729"
   當您安裝解決方案卻沒有執行安裝程式時，安裝程式不會檢查或安裝必要條件。 安裝程式會檢查必要條件的正確版本，並視需要加以安裝。
 
 ## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>增益集的資訊清單登錄機碼會在建立 InstallShield 限量版專案之後變更
- 當您建立 InstallShield 限量版專案時，VSTO 增益集安裝程式中的資訊清單登錄機碼有時會從*vsto*變更為 *.dll。*
+ 當您建立 InstallShield 限量版專案時，VSTO 增益集安裝程式中的資訊清單登錄機碼有時會從 *vsto* 變更為 *.dll。*
 
  若要解決這個問題，請在不同的解決方案中建立 InstallShield 限量版專案，或使用 CompanyName.AddinName 當做包含 VSTO 增益集名稱的登錄機碼值。
 

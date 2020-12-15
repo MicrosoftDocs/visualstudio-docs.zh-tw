@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：從自訂工作窗格自動化應用程式
+description: 建立自訂工作窗格，以在使用者按一下自訂工作窗格上的 MonthCalendar 控制項時，將日期插入投影片，以自動化 Microsoft PowerPoint。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52474aeebfbc03fba2a2e119e1b3366c30cf6959
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7bb53d56a83c74a0ab1719f62377e2da426a83fd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585076"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522800"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>逐步解說：從自訂工作窗格自動化應用程式
   此逐步解說示範如何建立會自動化 PowerPoint 的自訂工作窗格。 自訂工作窗格會在使用者按一下自訂工作窗格上的 <xref:System.Windows.Forms.MonthCalendar> 控制項時，將日期插入投影片。
@@ -55,22 +57,22 @@ ms.locfileid: "91585076"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 使用 [PowerPoint 增益集] 專案範本建立名為 **MyAddIn**的 PowerPoint VSTO 增益集專案。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 使用 [PowerPoint 增益集] 專案範本建立名為 **MyAddIn** 的 PowerPoint VSTO 增益集專案。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 **ThisAddIn.cs** 或 **ThisAddIn.vb** 程式碼檔案，並將 **MyAddIn** 專案加入 [方案總管] ****。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 **ThisAddIn.cs** 或 **ThisAddIn.vb** 程式碼檔案，並將 **MyAddIn** 專案加入 [方案總管] 。
 
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面
  自訂工作窗格沒有視覺化的設計工具，但是您可以根據需要設計使用者控制項的版面配置。 稍後在本逐步解說中，您會將使用者控制項加入自訂工作窗格。
 
 #### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面
 
-1. 在 [專案] **** 功能表上，按一下 [加入使用者控制項] ****。
+1. 在 [專案]  功能表上，按一下 [加入使用者控制項] 。
 
-2. 在 [加入新項目] **** 對話方塊中，將使用者控制項的名稱變更為 **MyUserControl**，然後按一下 [加入] ****。
+2. 在 [加入新項目]  對話方塊中，將使用者控制項的名稱變更為 **MyUserControl**，然後按一下 [加入] 。
 
      使用者控制項隨即在設計工具中開啟。
 
-3. 從 [工具箱] **** 的 [通用控制項] **** 索引標籤，將 **MonthCalendar** 控制項拖曳至使用者控制項。
+3. 從 [工具箱]  的 [通用控制項] 索引標籤，將 **MonthCalendar** 控制項拖曳至使用者控制項。
 
      如果 **MonthCalendar** 控制項大於使用者控制項的設計介面，請配合 **MonthCalendar** 控制項調整使用者控制項的大小。
 
@@ -98,16 +100,16 @@ ms.locfileid: "91585076"
      [!code-csharp[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#3)]
      [!code-vb[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#3)]
 
-5. 在 [方案總管] **** 中，以滑鼠右鍵按一下 **MyAddIn** 專案，然後按一下 [建置] ****。 確認專案建置無誤。
+5. 在 [方案總管] 中，以滑鼠右鍵按一下 **MyAddIn** 專案，然後按一下 [建置] 。 確認專案建置無誤。
 
 ## <a name="display-the-custom-task-pane"></a>顯示自訂工作窗格
  若要在 VSTO 增益集啟動時顯示自訂工作窗格，請在 VSTO 增益集的 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件處理常式中，將使用者控制項加入工作窗格。
 
 ### <a name="to-display-the-custom-task-pane"></a>若要顯示自訂工作窗格
 
-1. 展開 [方案總管] **** 中的 [PowerPoint] ****。
+1. 展開 [方案總管] 中的 [PowerPoint] 。
 
-2. 以滑鼠右鍵按一下 **ThisAddIn.cs** 或 **ThisAddIn.vb** ，然後按一下 [檢視程式碼] ****。
+2. 以滑鼠右鍵按一下 **ThisAddIn.cs** 或 **ThisAddIn.vb** ，然後按一下 [檢視程式碼] 。
 
 3. 將下列程式碼新增至 `ThisAddIn` 類別。 此程式碼會將 `MyUserControl` 和 <xref:Microsoft.Office.Tools.CustomTaskPane> 的執行個體宣告為 `ThisAddIn` 類別的成員。
 

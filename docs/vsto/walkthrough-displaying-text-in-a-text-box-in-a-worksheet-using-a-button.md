@@ -1,5 +1,7 @@
 ---
 title: 使用按鈕在工作表的文字方塊中顯示文字
+description: 瞭解在 Microsoft Excel 工作表上使用按鈕和文字方塊的基本概念。 也可以使用 Visual Studio 中的 Office 開發工具來建立 Excel 專案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328711"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522644"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>逐步解說：使用按鈕在工作表的文字方塊中顯示文字
   本逐步解說會示範在 Microsoft Office Excel 工作表上使用按鈕和文字方塊的基本概念，以及如何在 Visual Studio 中使用 Office 開發工具建立 Excel 專案。 若要以完整範例的形式查看結果，請參閱 [Office 開發範例和](../vsto/office-development-samples-and-walkthroughs.md)逐步解說中的 Excel 控制項範例。
@@ -50,7 +52,7 @@ ms.locfileid: "67328711"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 使用 [ **我的 excel**名稱] 按鈕建立 Excel 活頁簿專案。 確定已選取 [ **建立新檔** ]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 使用 [ **我的 excel** 名稱] 按鈕建立 Excel 活頁簿專案。 確定已選取 [ **建立新檔** ]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 [ **我的 Excel] 按鈕** 專案加入 **方案總管**。
 
@@ -65,7 +67,7 @@ ms.locfileid: "67328711"
 
 3. 從 [ **View** ] 功能表選取 [ **屬性視窗]**。
 
-4. 在 [**屬性**視窗] 下拉式清單方塊中，確定**TextBox1**可以看見，並將文字方塊的 [**名稱**] 屬性變更**為 [顯示文字]**。
+4. 在 [**屬性** 視窗] 下拉式清單方塊中，確定 **TextBox1** 可以看見，並將文字方塊的 [**名稱**] 屬性變更 **為 [顯示文字]**。
 
 5. 將 **按鈕** 控制項拖曳至 `Sheet1` ，並變更下列屬性：
 
@@ -81,7 +83,7 @@ ms.locfileid: "67328711"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>在按一下按鈕時寫入至文字方塊
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **Sheet1**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **Sheet1**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
 
 2. 將下列程式碼加入至 <xref:System.Windows.Forms.Control.Click> 按鈕的事件處理常式：
 

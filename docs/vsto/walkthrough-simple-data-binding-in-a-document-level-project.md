@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：檔層級專案中的簡單資料系結
+description: 瞭解檔層級專案中資料系結的基本概念，以及 SQL Server 資料庫中的單一資料欄位系結至 Microsoft Excel 中的命名範圍。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584920"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524098"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說：檔層級專案中的簡單資料系結
   本逐步解說示範檔層級專案中資料系結的基本概念。 SQL Server 資料庫中的單一資料欄位會系結至 Microsoft Office Excel 中的已命名範圍。 本逐步解說也會示範如何加入控制項，讓您可以在資料表中的所有記錄之間進行滾動。
@@ -55,7 +57,7 @@ ms.locfileid: "91584920"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 使用 Visual Basic 或 c #，建立名稱為 **My Simple Data Binding**的 Excel 活頁簿專案。 確定已選取 [ **建立新檔** ]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 使用 Visual Basic 或 c #，建立名稱為 **My Simple Data Binding** 的 Excel 活頁簿專案。 確定已選取 [ **建立新檔** ]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
    Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 [ **我的簡單資料** 系結] 專案加入 **方案總管**。
 
@@ -82,7 +84,7 @@ ms.locfileid: "91584920"
 
 9. 按一下 [完成] 。
 
-   Wizard 會將 **Customers** 資料表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管**中可見的專案。
+   Wizard 會將 **Customers** 資料表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管** 中可見的專案。
 
 ## <a name="add-controls-to-the-worksheet"></a>將控制項新增至工作表
  針對這個逐步解說，您需要在第一個工作表上有兩個命名範圍和四個按鈕。 首先，從 [ **資料來源** ] 視窗加入兩個命名範圍，讓它們自動系結至資料來源。 接下來，從 [ **工具箱**] 加入按鈕。
@@ -97,17 +99,17 @@ ms.locfileid: "91584920"
 
 4. 在下拉式清單中選取 [ **NamedRange** ]，然後將 [ **公司名稱** ] 資料行拖曳至儲存格 **A1**。
 
-     <xref:Microsoft.Office.Tools.Excel.NamedRange> `companyNameNamedRange` 在儲存格**A1**中會建立名為的控制項。 同時， <xref:System.Windows.Forms.BindingSource> 已命名的 `customersBindingSource` 、資料表介面卡和 <xref:System.Data.DataSet> 實例會加入至專案。 控制項系結至 <xref:System.Windows.Forms.BindingSource> ，後者接著會系結至 <xref:System.Data.DataSet> 實例。
+     <xref:Microsoft.Office.Tools.Excel.NamedRange> `companyNameNamedRange` 在儲存格 **A1** 中會建立名為的控制項。 同時， <xref:System.Windows.Forms.BindingSource> 已命名的 `customersBindingSource` 、資料表介面卡和 <xref:System.Data.DataSet> 實例會加入至專案。 控制項系結至 <xref:System.Windows.Forms.BindingSource> ，後者接著會系結至 <xref:System.Data.DataSet> 實例。
 
 5. 在 [**資料來源**] 視窗中選取 [ **CustomerID** ] 資料行，然後按一下出現的下拉箭號。
 
 6. 按一下下拉式清單中的 [ **NamedRange** ]，然後將 [ **CustomerID** ] 資料行拖曳至儲存格 **B1**。
 
-7. 另一個名為的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項 `customerIDNamedRange` 是在資料格 **B1**中建立，並系結至 <xref:System.Windows.Forms.BindingSource> 。
+7. 另一個名為的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項 `customerIDNamedRange` 是在資料格 **B1** 中建立，並系結至 <xref:System.Windows.Forms.BindingSource> 。
 
 ### <a name="to-add-four-buttons"></a>新增四個按鈕
 
-1. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將 <xref:System.Windows.Forms.Button> 控制項加入工作表的儲存格**A3** 。
+1. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將 <xref:System.Windows.Forms.Button> 控制項加入工作表的儲存格 **A3** 。
 
     此按鈕的名稱為 `Button1` 。
 
@@ -126,7 +128,7 @@ ms.locfileid: "91584920"
 
 ### <a name="to-initialize-the-controls"></a>若要初始化控制項
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
 
 2. 將下列程式碼加入至 `Sheet1_Startup` 方法，以設定每個按鈕的文字。
 
@@ -177,9 +179,9 @@ ms.locfileid: "91584920"
 
 1. 按 **F5** 執行您的專案。
 
-2. 確認第一個記錄出現在 **A1** 和 **B1**儲存格。
+2. 確認第一個記錄出現在 **A1** 和 **B1** 儲存格。
 
-3. 按一下 [ **>** (`Button3`) ] 按鈕，並確認下一個記錄出現在儲存格 **A1** 和 **B1**中。
+3. 按一下 [ **>** (`Button3`) ] 按鈕，並確認下一個記錄出現在儲存格 **A1** 和 **B1** 中。
 
 4. 按一下 [其他] 滾動按鈕以確認記錄會如預期般變更。
 

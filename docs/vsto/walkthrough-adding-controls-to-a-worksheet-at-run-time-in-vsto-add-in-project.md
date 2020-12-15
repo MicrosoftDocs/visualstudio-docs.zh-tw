@@ -1,5 +1,7 @@
 ---
 title: 在執行時間于 VSTO 增益集專案中，將控制項加入工作表
+description: 瞭解如何使用功能區，讓使用者將按鈕、NamedRange 和 ListObject 新增至工作表。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9987e9427c0fe982cf3ddcb88ce8071caab04b0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584343"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522769"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>逐步解說：在執行時間于 VSTO 增益集專案中，將控制項加入工作表
   您可以使用 Excel VSTO 增益集，將控制項加入任何開啟的工作表中。 本逐步解說將示範如何使用功能區，讓使用者將 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 及 <xref:Microsoft.Office.Tools.Excel.ListObject> 加入工作表。 如需詳細資訊，請參閱 [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)。
@@ -50,7 +52,7 @@ ms.locfileid: "91584343"
 
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>若要建立新的 Excel VSTO 增益集專案
 
-1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，建立名稱為 **名為 exceldynamiccontrols**的 Excel VSTO 增益集專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，建立名稱為 **名為 exceldynamiccontrols** 的 Excel VSTO 增益集專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
 2. 加入 **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** 元件的參考。 本逐步解說稍後會需要用到此參考，以透過程式設計的方式將 Windows Form 控制項加入工作表。
 
@@ -59,24 +61,24 @@ ms.locfileid: "91584343"
 
 #### <a name="to-provide-a-ui-to-add-controls-to-a-worksheet"></a>若要提供可將控制項加入工作表的 UI
 
-1. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
+1. 在 [專案] 功能表上，按一下 [加入新項目]。
 
-2. 在 [ **加入新專案** ] 對話方塊中，選取 [ **功能區 (的視覺化設計工具) **]，然後按一下 [ **加入**]。
+2. 在 [ **加入新專案** ] 對話方塊中，選取 [ **功能區 (的視覺化設計工具)**]，然後按一下 [ **加入**]。
 
      名為 **Ribbon1.cs** 或 **Ribbon1** 的檔案會在功能區設計工具中開啟，並顯示預設索引標籤和群組。
 
-3. 從 [工具箱] **** 的 [Office 功能區控制項] **** 索引標籤，將 CheckBox 控制項拖曳至 [group1] ****。
+3. 從 [工具箱]  的 [Office 功能區控制項] 索引標籤，將 CheckBox 控制項拖曳至 [group1] 。
 
-4. 按一下 [CheckBox1] **** 予以選取。
+4. 按一下 [CheckBox1]  予以選取。
 
-5. 在 [屬性] **** 視窗中變更下列屬性。
+5. 在 [屬性]  視窗中變更下列屬性。
 
     |屬性|值|
     |--------------|-----------|
-    |**名稱**|**Button**|
-    |**標籤**|**Button**|
+    |**名稱**|**按鈕**|
+    |**標籤**|**按鈕**|
 
-6. 將第二個核取方塊加入 [group1] ****，然後變更下列屬性。
+6. 將第二個核取方塊加入 [group1] ，然後變更下列屬性。
 
     |屬性|值|
     |--------------|-----------|
@@ -106,9 +108,9 @@ ms.locfileid: "91584343"
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
 
-3. 在 **方案總管**中，選取 [ *Ribbon1.cs* ] 或 [ *Ribbon1*]。
+3. 在 **方案總管** 中，選取 [ *Ribbon1.cs* ] 或 [ *Ribbon1*]。
 
-4. 在 [ **View** ] 功能表上，按一下 [ **設計**工具]。
+4. 在 [ **View** ] 功能表上，按一下 [ **設計** 工具]。
 
 5. 在功能區設計工具中，按兩下 [ **NamedRange**]。
 
@@ -138,9 +140,9 @@ ms.locfileid: "91584343"
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>若要移除工作表的控制項
 
-1. 在 **方案總管**中，選取 [ *ThisAddIn.cs* ] 或 [ *ThisAddIn*]。
+1. 在 **方案總管** 中，選取 [ *ThisAddIn.cs* ] 或 [ *ThisAddIn*]。
 
-2. 在 [檢視]**** 功能表中，按一下 [程式碼]****。
+2. 在 [檢視] 功能表中，按一下 [程式碼]。
 
 3. 將下列方法新增至 `ThisAddIn` 類別。 此程式碼會取得活頁簿中的第一個工作表，然後使用 `HasVstoObject` 方法檢查工作表是否具有產生的工作表物件。 如果產生的工作表物件具有控制項，程式碼便會取得該工作表物件，並逐一查看控制項集合，同時移除控制項。
 
@@ -160,7 +162,7 @@ ms.locfileid: "91584343"
 
 2. 選取 Sheet1 中的任何儲存格。
 
-3. 按一下 [增益集] **** 索引標籤。
+3. 按一下 [增益集]  索引標籤。
 
 4. 在 [ **group1** ] 群組中，按一下 [ **按鈕**]。
 

@@ -1,5 +1,7 @@
 ---
 title: 活頁簿包含無法載入的 ActiveX 控制項
+description: 瞭解如何解決活頁簿包含無法載入的 ActiveX 控制項時所發生的錯誤。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: error-reference
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09182fb354ad3ae8937b66952a0acd376d54fe0a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7257e3940af72f344906642adc51a1dd98cb3f25
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584447"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524173"
 ---
 # <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>活頁簿包含無法載入的 ActiveX 控制項
 

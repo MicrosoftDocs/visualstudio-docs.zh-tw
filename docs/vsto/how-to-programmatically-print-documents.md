@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式列印檔案
+description: 瞭解如何將整份 Microsoft Word 檔或檔的一部分列印到預設印表機。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 413d0e4f56aeb897af4f16a0dc6c43b4f04eace7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e17976c86a519db3c5edcd60c426b5d20e84b526
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537822"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523918"
 ---
 # <a name="how-to-programmatically-print-documents"></a>如何：以程式設計方式列印檔案
   您可以將整個 Microsoft Office Word 文件，或文件的一部分，列印到預設印表機。

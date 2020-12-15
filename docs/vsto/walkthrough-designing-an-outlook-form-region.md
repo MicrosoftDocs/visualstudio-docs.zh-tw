@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：設計 Outlook 表單區域
+description: 瞭解如何在連絡人項目的 [偵測器] 視窗中，設計會顯示為新頁面的自訂 Microsoft Outlook 表單區域。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e306814512c6cab2d331a26128f22bb94d7dbbf4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985461"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524208"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>逐步解說：設計 Outlook 表單區域
   自訂的表單區域會擴充標準或自訂的 Microsoft Office Outlook 表單。 在此逐步解說中，您要設計自訂的表單區域，它在連絡人項目的 [偵測器] 視窗中會顯示為新頁面。 這個表單區域會將地址資訊傳送至 Windows Live 當地搜尋網站，顯示連絡人清單中每個地址的對應。 如需表單區域的詳細資訊，請參閱 [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
@@ -53,9 +55,9 @@ ms.locfileid: "72985461"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>建立新的 Outlook VSTO 增益集專案
 
-1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，建立名稱為 **MapItAddIn**的 Outlook VSTO 增益集專案。
+1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，建立名稱為 **MapItAddIn** 的 Outlook VSTO 增益集專案。
 
-2. 在 [新增專案] **** 對話方塊中，選取 [為方案建立目錄] ****。
+2. 在 [新增專案]  對話方塊中，選取 [為方案建立目錄] 。
 
 3. 將專案儲存至任一目錄。
 
@@ -66,9 +68,9 @@ ms.locfileid: "72985461"
 
 ### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>在 Outlook VSTO 增益集專案中加入表單區域
 
-1. 在 **方案總管**中，選取 **MapItAddIn** 專案。
+1. 在 **方案總管** 中，選取 **MapItAddIn** 專案。
 
-2. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
+2. 在 [專案] 功能表上，按一下 [加入新項目]。
 
 3. 在 [ **加入新專案** ] 對話方塊中，選取 [ **Outlook 表單區域**]，將檔案命名為 **Mapit.vb**，然後按一下 [ **新增**]。
 
@@ -78,24 +80,24 @@ ms.locfileid: "72985461"
 
 5. 在 [ **選取您要建立的表單區欄位型別** ] 頁面上，按一下 [ **獨立**]，然後按 **[下一步]**。
 
-     *不同*的表單區域會將新頁面新增至 Outlook 表單。 如需表單區欄位型別的詳細資訊，請參閱 [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
+     *不同* 的表單區域會將新頁面新增至 Outlook 表單。 如需表單區欄位型別的詳細資訊，請參閱 [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
 
-6. 在 [**提供描述文字] 並選取 [顯示喜好**設定] 頁面上，在 [**名稱**] 方塊中輸入**Map** 。
+6. 在 [**提供描述文字] 並選取 [顯示喜好** 設定] 頁面上，在 [**名稱**] 方塊中輸入 **Map** 。
 
      開啟連絡人項目時，這個名稱會出現在 [偵測器] 視窗的功能區上。
 
-7. 選取處於 **撰寫模式** 的偵測器以及處於 **讀取模式**的偵測器，然後按 **[下一步]**。
+7. 選取處於 **撰寫模式** 的偵測器以及處於 **讀取模式** 的偵測器，然後按 **[下一步]**。
 
 8. 在 [ **識別將顯示此表單區域的訊息類別** ] 頁面上，清除 [ **郵件訊息**]，選取 [ **連絡人**]，然後按一下 **[完成]**。
 
      系統會將 *MapIt.cs* 或 *mapit.vb .vb* 檔案新增至您的專案。
 
 ## <a name="design-the-layout-of-the-form-region"></a>設計表單區域的版面配置
- 使用 [ *表單區域設計*工具] 以視覺化方式開發表單區域。 您可以將 Managed 控制項拖曳至表單區域設計工具介面。 使用設計工具和 [ **屬性** ] 視窗來調整控制項版面配置和外觀。
+ 使用 [ *表單區域設計* 工具] 以視覺化方式開發表單區域。 您可以將 Managed 控制項拖曳至表單區域設計工具介面。 使用設計工具和 [ **屬性** ] 視窗來調整控制項版面配置和外觀。
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>設計表單區域的版面配置
 
-1. 在 **方案總管**中，展開 [ **MapItAddIn** ] 專案，然後按兩下 [ *MapIt.cs* ] 或 [ *Mapit.vb* ] 以開啟 [表單區域設計工具]。
+1. 在 **方案總管** 中，展開 [ **MapItAddIn** ] 專案，然後按兩下 [ *MapIt.cs* ] 或 [ *Mapit.vb* ] 以開啟 [表單區域設計工具]。
 
 2. 以滑鼠右鍵按一下設計工具，然後按一下 [ **屬性**]。
 
@@ -103,18 +105,18 @@ ms.locfileid: "72985461"
 
      這可確保表單區域大到足以顯示地圖。
 
-4. 在 [檢視]**** 功能表上，按一下 [工具箱]****。
+4. 在 [檢視] 功能表上，按一下 [工具箱]。
 
-5. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤中，將**WebBrowser**新增至表單區域。
+5. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤中，將 **WebBrowser** 新增至表單區域。
 
-     **WebBrowser**會顯示為連絡人列出的每個位址的對應。
+     **WebBrowser** 會顯示為連絡人列出的每個位址的對應。
 
 ## <a name="customize-the-behavior-of-the-form-region"></a>自訂表單區域的行為
  在表單區域事件處理常式中加入程式碼，以自訂表單區域在執行階段的行為方式。 程式碼會檢查此表單區域的 Outlook 項目屬性，並決定是否要顯示 Map It 表單區域。 如果它顯示表單區域，程式碼會瀏覽至 Windows Live 當地搜尋，並載入 Outlook 連絡人項目中所列的每個地址的對應。
 
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>自訂表單區域的行為
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ *MapIt.cs* ] 或 [ *mapit.vb*]，然後按一下 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ *MapIt.cs* ] 或 [ *mapit.vb*]，然後按一下 [ **視圖程式碼**]。
 
     *MapIt.cs* 或 *mapit.vb* 會在程式碼編輯器中開啟。
 
@@ -161,7 +163,7 @@ ms.locfileid: "72985461"
 
 5. 重新開啟 [ **王王美美** contact] 專案。
 
-    在 Outlook 中，可以在 [ **尋找** ] 群組中開啟連絡人的通訊錄，或將 [王王美美] 輸入 **搜尋人員**來完成這項操作。
+    在 Outlook 中，可以在 [ **尋找** ] 群組中開啟連絡人的通訊錄，或將 [王王美美] 輸入 **搜尋人員** 來完成這項操作。
 
 6. 在專案功能區的 [ **顯示** ] 群組中，按一下 [ **對應** ] 以開啟地圖 it 表單區域。
 

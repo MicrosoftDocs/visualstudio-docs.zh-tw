@@ -1,5 +1,7 @@
 ---
 title: Office 檔上 Windows Forms 控制項的限制
+description: 瞭解 Microsoft Office 檔上 Windows Forms 控制方法和屬性的限制。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ade7da21a8d07fbd429a88303ad2be375877c1ec
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 63459f4daf1f9fe717946491a997ba47510fbab8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583732"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524446"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office 檔上 Windows Forms 控制項的限制
 
@@ -101,7 +103,7 @@ Windows Forms 控制項在 Office 檔上的行為通常與 Windows Form 上的�
 > [!NOTE]
 > 協力廠商控制項必須將 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 屬性設定為 **true** ，才能在 Office 方案中使用。
 
-**工具箱**中無法使用下列控制項和元件：
+**工具箱** 中無法使用下列控制項和元件：
 
 - <xref:System.Windows.Forms.BindingNavigator>
 

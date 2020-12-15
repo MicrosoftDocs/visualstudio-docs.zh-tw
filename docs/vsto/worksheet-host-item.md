@@ -1,5 +1,7 @@
 ---
 title: 工作表主專案
+description: 瞭解工作表主專案是一種類型，可延伸 Excel 的主要 interop 元件的工作表類型。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 301b0a62efae4674432b1051451e5d982899c1b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b25b921d29bee832ef37b943fd57edc38b7518db
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254875"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523211"
 ---
 # <a name="worksheet-host-item"></a>工作表主專案
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目是可從 Excel 的主要 Interop 組件擴充 <xref:Microsoft.Office.Interop.Excel.Worksheet> 類型的一種類型。 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目除了提供與 <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件相同的所有屬性、方法和事件之外，也會公開其他事件，並做為主控制項和 Windows Forms 控制項的容器。
@@ -44,7 +46,7 @@ ms.locfileid: "71254875"
  在文件層級專案中，您可以在設計階段將其他 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目加入專案，方法是在設計工具中將新的工作表加入活頁簿。
 
 ### <a name="rename-worksheets"></a>重新命名工作表
- 在文件層級專案中，您可以於 Visual Studio 設計工具中為工作表重新命名，但這樣做只會變更工作表的顯示名稱。 程式設計名稱仍是工作表的預設名稱。 如果您在 [屬性] **** 視窗中為工作表重新命名，則只會變更程式設計名稱。
+ 在文件層級專案中，您可以於 Visual Studio 設計工具中為工作表重新命名，但這樣做只會變更工作表的顯示名稱。 程式設計名稱仍是工作表的預設名稱。 如果您在 [屬性]  視窗中為工作表重新命名，則只會變更程式設計名稱。
 
 ### <a name="limitations-of-the-worksheet-host-item-in-document-level-projects"></a>檔層級專案中工作表主專案的限制
  您無法在文件層級專案的執行階段建立新的 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。 如果您在執行階段建立新的 Excel 工作表，該工作表會是 <xref:Microsoft.Office.Interop.Excel.Worksheet>類型。 由於這不是主項目，因此無法包含任何主控制項或 Windows Forms 控制項。 如需在執行時間建立檔的詳細資訊，請參閱 [如何：以程式設計方式在活頁簿中加入新的工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)。

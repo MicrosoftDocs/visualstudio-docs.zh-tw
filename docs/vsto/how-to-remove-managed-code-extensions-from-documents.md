@@ -1,5 +1,7 @@
 ---
 title: 如何：從檔中移除 managed 程式碼延伸模組
+description: 以程式設計方式從 Microsoft Word 或 Excel 檔層級自訂一部分的檔或活頁簿中移除自訂群組件。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b4f5cb3098289463cea7e650332583ec7b12258
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be32109e2a34df8605c0dbe5ba9f1df4e32cfc55
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541306"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524464"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>如何：從檔中移除 managed 程式碼延伸模組
   您可以用程式設計的方式，從檔或活頁簿（Microsoft Office Word 或 Microsoft Office Excel 的檔層級自訂中）移除自訂群組件。 使用者接著可以開啟檔並查看內容，但您新增至檔的任何自訂使用者介面 (UI) 不會出現，而且您的程式碼將不會執行。

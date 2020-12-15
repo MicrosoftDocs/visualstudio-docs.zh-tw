@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式搜尋特定的連絡人
+description: 瞭解如何使用 Visual Studio 以程式設計方式在 Microsoft Outlook 中搜尋特定的連絡人。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d8b2302586fc09fcfec6420d97374197eae7e67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6813a137558a245c66d4b24deac07b1a6a77796a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547065"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524602"
 ---
 # <a name="how-to-programmatically-search-for-a-specific-contact"></a>如何：以程式設計方式搜尋特定的連絡人
   下列範例會在 Outlook 的 [連絡人] 資料夾中，先依名字再依姓氏來搜尋特定連絡人。 該範例假設 [連絡人] 資料夾中有名為 **John Evans** 的連絡人。

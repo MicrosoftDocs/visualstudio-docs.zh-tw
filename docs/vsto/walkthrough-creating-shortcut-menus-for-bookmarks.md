@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：建立書簽的快捷方式功能表
+description: 瞭解如何在 Microsoft Word 的檔層級自訂中建立書簽控制項的快捷方式功能表。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "91146917"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524222"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>逐步解說：建立書簽的快捷方式功能表
   本逐步解說示範如何 <xref:Microsoft.Office.Tools.Word.Bookmark> 在 Word 的檔層級自訂中建立控制項的快捷方式功能表。 當使用者以滑鼠右鍵按一下書簽中的文字時，會出現快捷方式功能表，並提供使用者選項來格式化文字。
@@ -51,7 +53,7 @@ ms.locfileid: "91146917"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-- 建立具有 [我的書簽名稱] **快捷方式功能表**的 Word 檔專案。 在嚮導中，選取 [ **建立新檔**]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+- 建立具有 [我的書簽名稱] **快捷方式功能表** 的 Word 檔專案。 在嚮導中，選取 [ **建立新檔**]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 會在設計工具中開啟新的 Word 檔，並將 [ **我的書簽] 快顯功能表** 專案加入 **方案總管**。
 
@@ -90,20 +92,20 @@ ms.locfileid: "91146917"
 
 1. 將 **功能區 XML** 專案加入至專案。 如需詳細資訊，請參閱 [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。
 
-2. 在 **方案總管**中，選取 [ **ThisDocument.cs** ] 或 [ **ThisDocument**]。
+2. 在 **方案總管** 中，選取 [ **ThisDocument.cs** ] 或 [ **ThisDocument**]。
 
-3. 在功能表列上，選擇 [**視圖**程式  >  **代碼**]。
+3. 在功能表列上，選擇 [**視圖** 程式  >  **代碼**]。
 
-     **ThisDocument**類別檔案隨即在程式碼編輯器中開啟。
+     **ThisDocument** 類別檔案隨即在程式碼編輯器中開啟。
 
 4. 將下列程式碼加入至 **ThisDocument** 類別。 此程式碼會覆寫 CreateRibbonExtensibilityObject 方法，並將功能區 XML 類別傳回至 Office 應用程式。
 
      [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
      [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
 
-5. 在方案總管 **** 中選取功能區 XML 檔案。 根據預設，功能區 XML 檔名為 Ribbon1.xml。
+5. 在方案總管 中選取功能區 XML 檔案。 根據預設，功能區 XML 檔名為 Ribbon1.xml。
 
-6. 在功能表列上，選擇 [**視圖**程式  >  **代碼**]。
+6. 在功能表列上，選擇 [**視圖** 程式  >  **代碼**]。
 
      功能區 XML 檔案隨即在程式碼編輯器中開啟。
 
@@ -125,16 +127,16 @@ ms.locfileid: "91146917"
 
      當您以滑鼠右鍵按一下檔時，此程式碼會將兩個按鈕新增至顯示的快捷方式功能表。
 
-8. 在 **方案總管**中，以滑鼠右鍵按一下 `ThisDocument` ，然後按一下 [視圖程式 **代碼**]。
+8. 在 **方案總管** 中，以滑鼠右鍵按一下 `ThisDocument` ，然後按一下 [視圖程式 **代碼**]。
 
 9. 在類別層級宣告下列變數和書簽變數。
 
      [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
      [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
 
-10. 在 **方案總管**中，選取功能區程式碼檔案。 依預設，功能區程式碼檔的名稱為**Ribbon1.cs**或**Ribbon1。**
+10. 在 **方案總管** 中，選取功能區程式碼檔案。 依預設，功能區程式碼檔的名稱為 **Ribbon1.cs** 或 **Ribbon1。**
 
-11. 在功能表列上，選擇 [**視圖**程式  >  **代碼**]。
+11. 在功能表列上，選擇 [**視圖** 程式  >  **代碼**]。
 
      功能區程式碼檔案隨即在程式碼編輯器中開啟。
 
@@ -154,9 +156,9 @@ ms.locfileid: "91146917"
 
 2. **方案總管**，請選取 [ **ThisDocument.cs** ] 或 [ **ThisDocument**]。
 
-3. 在功能表列上，選擇 [**視圖**程式  >  **代碼**]。
+3. 在功能表列上，選擇 [**視圖** 程式  >  **代碼**]。
 
-     **ThisDocument**類別檔案隨即在程式碼編輯器中開啟。
+     **ThisDocument** 類別檔案隨即在程式碼編輯器中開啟。
 
 4. 將下列程式碼加入至 **ThisDocument** 類別。
 

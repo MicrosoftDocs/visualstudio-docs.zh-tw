@@ -1,5 +1,7 @@
 ---
 title: Office 方案中的晚期繫結
+description: 瞭解 Microsoft Office 應用程式內物件模型中的某些類型如何提供可透過晚期繫結功能取得的功能。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62583936"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523569"
 ---
 # <a name="late-binding-in-office-solutions"></a>Office 方案中的晚期繫結
   Office 應用程式物件模型中的某些類型會提供透過晚期繫結功能提供的功能。 例如，某些方法和屬性可以根據 Office 應用程式的內容傳回不同類型的物件，而某些類型可能會在不同的內容中公開不同的方法或屬性。
@@ -52,7 +54,7 @@ ms.locfileid: "62583936"
  Office Pia 中的部分屬性和方法只能透過晚期繫結來使用。 在 Visual Basic 專案中， **Option Strict** 為 off 或在以或為目標的 Visual c # 專案中 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ，您可以使用這些語言中的晚期繫結功能來存取晚期繫結成員。 在 **Option Strict** 為 on Visual Basic 專案中，您必須使用反映來存取這些成員。
 
 ### <a name="examples"></a>範例
- 下列程式碼範例示範如何存取 Visual Basic 專案中的晚期繫結成員，其中 **Option Strict** 為 off，或在以為目標的 Visual c # 專案中 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 。 這個範例會存取 Word 中 [**開啟**檔案] 對話方塊的 [晚期繫結**名稱**] 屬性。 若要使用此範例，請從 `ThisDocument` `ThisAddIn` Word 專案的或類別中執行它。
+ 下列程式碼範例示範如何存取 Visual Basic 專案中的晚期繫結成員，其中 **Option Strict** 為 off，或在以為目標的 Visual c # 專案中 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 。 這個範例會存取 Word 中 [**開啟** 檔案] 對話方塊的 [晚期繫結 **名稱**] 屬性。 若要使用此範例，請從 `ThisDocument` `ThisAddIn` Word 專案的或類別中執行它。
 
  [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
  [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]
