@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式刪除約會
+description: 瞭解如何在 Microsoft Outlook 中以程式設計方式刪除 apppointments。 本範例會刪除一個週期性約會執行個體。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ddd3d65202ad0e6673ed436203b253e691372f7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56bd9876fa24610412d66e71800a24b413dac576
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545960"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526800"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>如何：以程式設計方式刪除約會
   本範例會刪除一個週期性約會執行個體。 本範例假設有個週期性約會執行個體發生於 2006 年 6 月 28 日 08:00。

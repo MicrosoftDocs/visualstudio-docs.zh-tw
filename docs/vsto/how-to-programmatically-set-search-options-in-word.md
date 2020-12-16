@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式在 Word 中設定搜尋選項
+description: 瞭解如何使用 Visual Studio，以程式設計方式為 Microsoft Word 中的選取專案設定搜尋選項。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 434dfc85ed6c4e03c7c610a497bd063ce1826c62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45af6a801a146838919402c31be502cf4825e718
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546987"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528561"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>如何：以程式設計方式在 Word 中設定搜尋選項
   有兩種方式可以在 Microsoft Office Word 檔中設定選項的搜尋選項：
@@ -38,7 +40,7 @@ ms.locfileid: "85546987"
 
 ### <a name="to-set-search-options-using-a-find-object"></a>使用尋找物件設定搜尋選項
 
-1. 設定物件的屬性 <xref:Microsoft.Office.Interop.Word.Find> ，以便在 [ **尋找我**的文字] 的選取範圍內向前搜尋。
+1. 設定物件的屬性 <xref:Microsoft.Office.Interop.Word.Find> ，以便在 [ **尋找我** 的文字] 的選取範圍內向前搜尋。
 
      [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
 
@@ -47,7 +49,7 @@ ms.locfileid: "85546987"
 
 ### <a name="to-set-search-options-using-execute-method-arguments"></a>使用 Execute 方法引數設定搜尋選項
 
-1. 將搜尋準則傳遞為方法的參數 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> ，以便向前搜尋文字 **尋找**的選項。
+1. 將搜尋準則傳遞為方法的參數 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> ，以便向前搜尋文字 **尋找** 的選項。
 
      [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]

@@ -1,5 +1,7 @@
 ---
 title: Ribbon XML
+description: 如果您想要以功能區 (視覺化設計工具) 專案不支援的方式自訂功能區，請瞭解如何使用功能區 (XML) 專案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838870"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528417"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   功能區 (XML) 專案可讓您使用 XML 自訂功能區。 如果您想要以功能區 (視覺化設計工具) 專案不支援的方式自訂功能區，請使用功能區 (XML) 專案。 如需如何使用每個專案的比較，請參閱 [功能區總覽](../vsto/Ribbon-overview.md)。
@@ -45,7 +47,7 @@ ms.locfileid: "90838870"
   根據預設，這些檔案會將自訂群組新增至功能區的 [ **增益集** ] 索引標籤。
 
 ## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>在 Microsoft Office 應用程式中顯示自訂功能區
- 將 **功能區 (XML) ** 專案加入至專案之後，您必須將程式碼加入至 **ThisAddin**、 **ThisWorkbook**或 **ThisDocument** 類別，以覆寫 `CreateRibbonExtensibilityObject` 方法並將功能區 XML 類別傳回至 Office 應用程式。
+ 將 **功能區 (XML)** 專案加入至專案之後，您必須將程式碼加入至 **ThisAddin**、 **ThisWorkbook** 或 **ThisDocument** 類別，以覆寫 `CreateRibbonExtensibilityObject` 方法並將功能區 XML 類別傳回至 Office 應用程式。
 
  下列程式碼範例將覆寫 `CreateRibbonExtensibilityObject` 方法並傳回名為 MyRibbon 的功能區 XML 類別。
 
@@ -71,7 +73,7 @@ ms.locfileid: "90838870"
 <toggleButton id="toggleButton1" onAction="OnToggleButton1" />
 ```
 
- 當使用者執行與特定控制項相關聯的主要工作時，便會呼叫**GetCustomUI** 。 例如，當使用者按一下切換按鈕時，便會呼叫該按鈕的 **GetCustomUI** 回呼方法。
+ 當使用者執行與特定控制項相關聯的主要工作時，便會呼叫 **GetCustomUI** 。 例如，當使用者按一下切換按鈕時，便會呼叫該按鈕的 **GetCustomUI** 回呼方法。
 
  您在屬性中指定的方法可以具有任何名稱。 但必須符合您在功能區程式碼檔案中定義之方法的名稱。
 
@@ -113,7 +115,7 @@ ms.locfileid: "90838870"
 
  下表描述功能區 XML 檔中的預設項目。
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |**customUI**|表示 VSTO 增益集專案中的自訂功能區。|
 |**絲帶**|代表功能區。|
@@ -133,7 +135,7 @@ ms.locfileid: "90838870"
  功能區 XML 檔案中的預設項目和屬性是可用項目和屬性的小型子集。 如需可用專案和屬性的完整清單，請參閱技術檔 [自訂適用于開發人員的 Office (2007) 功能區使用者介面 (第2部) ](/previous-versions/office/developer/office-2007/aa338199(v=office.12))。
 
 ## <a name="ribbon-class-reference"></a><a name="RibbonExtensionClass"></a> 功能區類別參考
- Visual Studio 會在功能區程式碼檔中產生功能區類別。 將功能區上控制項的回呼方法加入至此類別。 此類別會實作 <xref:Microsoft.Office.Core.IRibbonExtensibility> 介面。
+ Visual Studio 會在功能區程式碼檔中產生功能區類別。 將功能區上控制項的回呼方法加入至此類別。 這個類別會實作 <xref:Microsoft.Office.Core.IRibbonExtensibility> 介面。
 
  下表描述此類別中的預設方法。
 

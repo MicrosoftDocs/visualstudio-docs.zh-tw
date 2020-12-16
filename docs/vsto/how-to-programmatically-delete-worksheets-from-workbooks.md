@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式從活頁簿中刪除工作表
+description: 您可以使用工作表主專案，瞭解如何以程式設計的方式刪除 Microsoft Excel 活頁簿中的任何工作表。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5fbcffdf56ea2168974658477579428ef546f061
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9d1330c454e0b9b9f5ad4624c18e4ed1055343d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585245"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527779"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>如何：以程式設計方式從活頁簿中刪除工作表
   您可以刪除活頁簿中的任何工作表。 若要刪除工作表，請使用工作表主項目，或使用活頁簿的工作表集合存取工作表。

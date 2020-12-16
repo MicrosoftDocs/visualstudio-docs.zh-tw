@@ -1,5 +1,7 @@
 ---
 title: 如何：顯示增益集使用者介面錯誤
+description: 瞭解如何使用 Visual Studio 以程式設計方式顯示 Microsoft Office 應用程式中的 VTSO 增益集使用者介面錯誤。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49985589c021192454bf0dd58929c9ef5646aec9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e74d60fe6386575417114fe1ad4823704cf09d46
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545778"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528134"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>如何：顯示增益集使用者介面錯誤
   根據預設，如果 VSTO 增益集嘗試操作 Microsoft Office 使用者介面 (UI) 且失敗，則不會顯示任何錯誤訊息。 不過，您可以設定 Microsoft Office 應用程式，顯示與 UI 相關的錯誤訊息。 您可以使用這些訊息來協助判斷自訂功能區未出現的原因，或為什麼會出現功能區但不會顯示任何控制項。
@@ -31,16 +33,16 @@ ms.locfileid: "85545778"
 
 1. 啟動應用程式。
 
-2. 按一下 [檔案] **** 索引標籤。
+2. 按一下 [檔案]  索引標籤。
 
 3. 按一下 [選項]。
 
-4. 在分類窗格中，按一下 [進階] ****。
+4. 在分類窗格中，按一下 [進階] 。
 
-5. 在詳細資料窗格中，選取 [顯示 VSTO 增益集使用者介面錯誤] ****，然後按一下 [確定] ****。
+5. 在詳細資料窗格中，選取 [顯示 VSTO 增益集使用者介面錯誤] ，然後按一下 [確定] 。
 
     > [!NOTE]
-    > 對於 Outlook，[顯示 VSTO 增益集使用者介面錯誤] **** 核取方塊位於詳細資料窗格的 [開發人員] **** 區段。 對於其他應用程式，此核取方塊位於詳細資料窗格的 [一般] **** 區段。
+    > 對於 Outlook，[顯示 VSTO 增益集使用者介面錯誤]  核取方塊位於詳細資料窗格的 [開發人員]  區段。 對於其他應用程式，此核取方塊位於詳細資料窗格的 [一般]  區段。
 
 ## <a name="see-also"></a>另請參閱
 - [Office UI 自訂](../vsto/office-ui-customization.md)

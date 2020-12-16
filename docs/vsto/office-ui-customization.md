@@ -1,5 +1,7 @@
 ---
 title: Office UI 自訂
+description: 瞭解如何使用 Visual Studio 中的 Office developer tools，自訂 Microsoft Office 應用程式的使用者介面 (UI) 。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 257f87aedf5d4337e81fb6f251cc8df07f4e577c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 289b055ab84dd9c2c440b55f3d64fe1fe39b8e1b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88041060"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527586"
 ---
 # <a name="office-ui-customization"></a>Office UI 自訂
   您可以使用 Visual Studio 中的 Office 程式開發人員工具，自訂 Microsoft Office 應用程式的使用者介面 (UI)。 本主題在下列各節中描述您可以自訂的 UI 功能：
@@ -74,7 +76,7 @@ ms.locfileid: "88041060"
 ## <a name="backstage-view"></a><a name="Backstage"></a> Backstage 檢視
  在 Office 應用程式中，按一下 [ **檔案] 索引** 標籤會開啟 Backstage 檢視。 Backstage 檢視提供 UI，它會合併檔案層級工作和動作，並取代可從  2007 Microsoft Office system 的 Microsoft Office 按鈕使用的類似功能。 Backstage 檢視完全可使用 XML 延伸。
 
- Visual Studio 不提供設計工具或 API 來自訂 Backstage 檢視。 但是，如果您將 **功能區 (XML) ** 專案加入 Office 專案，可以將 Xml 加入功能區 xml 檔案，以自訂 Backstage 檢視。 如需 **功能區 (XML) ** 專案的詳細資訊，請參閱 [功能區 xml](../vsto/ribbon-xml.md)。
+ Visual Studio 不提供設計工具或 API 來自訂 Backstage 檢視。 但是，如果您將 **功能區 (XML)** 專案加入 Office 專案，可以將 Xml 加入功能區 xml 檔案，以自訂 Backstage 檢視。 如需 **功能區 (XML)** 專案的詳細資訊，請參閱 [功能區 xml](../vsto/ribbon-xml.md)。
 
  如需自訂 Backstage 檢視的詳細資訊，請參閱 [適用于開發人員的 office 2010 Backstage 檢視簡介](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) 和 [自訂開發人員適用的 office 2010 backstage 視圖](/previous-versions/office/developer/office-2010/ee815851(v=office.14))。
 
@@ -93,7 +95,7 @@ ms.locfileid: "88041060"
  如需詳細資訊，請參閱 [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md) 和 [Office 檔上的 Windows forms 控制項總覽](../vsto/windows-forms-controls-on-office-documents-overview.md)。
 
 ## <a name="shortcut-menus"></a><a name="Shortcut"></a> 快速鍵功能表
- 在文件或應用程式視窗上按一下滑鼠右鍵時，會出現快顯功能表。 您可以設定快顯功能表在事件發生之後出現，例如使用者以滑鼠右鍵按一下文件、活頁簿或主控制項之後。 您可以將多個不同的功能表命令或控制項加入快顯功能表。 使用 XML 建立快顯功能表。 如果您將 **功能區 (XML) ** 專案加入 Office 專案，可以將 Xml 加入功能區 xml 檔案以建立快捷方式功能表。 如需有關使用 XML 建立快捷方式功能表的詳細資訊，請參閱 [如何：將命令新增至快捷方式功能表](../vsto/how-to-add-commands-to-shortcut-menus.md)。
+ 在文件或應用程式視窗上按一下滑鼠右鍵時，會出現快顯功能表。 您可以設定快顯功能表在事件發生之後出現，例如使用者以滑鼠右鍵按一下文件、活頁簿或主控制項之後。 您可以將多個不同的功能表命令或控制項加入快顯功能表。 使用 XML 建立快顯功能表。 如果您將 **功能區 (XML)** 專案加入 Office 專案，可以將 Xml 加入功能區 xml 檔案以建立快捷方式功能表。 如需有關使用 XML 建立快捷方式功能表的詳細資訊，請參閱 [如何：將命令新增至快捷方式功能表](../vsto/how-to-add-commands-to-shortcut-menus.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [功能區總覽](../vsto/ribbon-overview.md)

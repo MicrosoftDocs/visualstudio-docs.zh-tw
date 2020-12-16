@@ -1,5 +1,7 @@
 ---
 title: 在 Office 檔中保存動態控制項
+description: 瞭解如何將程式碼加入方案中，以便在使用者重新開啟已關閉的檔時，重新建立持續性動態控制項。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6efb00571a9f594de6045860621fb840076e8f5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71256010"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527539"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>在 Office 檔中保存動態控制項
 

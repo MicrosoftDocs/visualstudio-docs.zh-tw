@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：檔層級專案中的複雜資料系結
+description: 瞭解如何將 Microsoft Excel 工作表中的多個資料格系結至 Northwind SQL Server 資料庫中的欄位。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584317"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527116"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>逐步解說：檔層級專案中的複雜資料系結
   本逐步解說示範檔層級專案中的複雜資料系結的基本概念。 您可以將 Microsoft Office Excel 工作表中的多個資料格系結至 Northwind SQL Server 資料庫中的欄位。
@@ -54,7 +56,7 @@ ms.locfileid: "91584317"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 建立具有「 **我的複雜資料**系結」名稱的 Excel 活頁簿專案。 在嚮導中，選取 [ **建立新檔**]。
+1. 建立具有「 **我的複雜資料** 系結」名稱的 Excel 活頁簿專案。 在嚮導中，選取 [ **建立新檔**]。
 
      如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
@@ -83,7 +85,7 @@ ms.locfileid: "91584317"
 
 9. 按一下 [完成] 。
 
-   Wizard 會將 **Employees** 資料表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管**中可見的專案。
+   Wizard 會將 **Employees** 資料表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管** 中可見的專案。
 
 ## <a name="add-controls-to-the-worksheet"></a>將控制項新增至工作表
  開啟活頁簿時，工作表會顯示 [ **員工** ] 資料表。 使用者可以對資料進行變更，然後按一下按鈕將這些變更儲存回資料庫。
@@ -102,11 +104,11 @@ ms.locfileid: "91584317"
 
 5. 將 **Employees** 資料表拖曳至資料格 **A6**。
 
-     <xref:Microsoft.Office.Tools.Excel.ListObject>名為的控制項 `EmployeesListObject` 會在資料格**A6**中建立。 同時， <xref:System.Windows.Forms.BindingSource> 已命名的 `EmployeesBindingSource` 、資料表介面卡和 <xref:System.Data.DataSet> 實例會加入至專案。 控制項系結至 <xref:System.Windows.Forms.BindingSource> ，後者接著會系結至 <xref:System.Data.DataSet> 實例。
+     <xref:Microsoft.Office.Tools.Excel.ListObject>名為的控制項 `EmployeesListObject` 會在資料格 **A6** 中建立。 同時， <xref:System.Windows.Forms.BindingSource> 已命名的 `EmployeesBindingSource` 、資料表介面卡和 <xref:System.Data.DataSet> 實例會加入至專案。 控制項系結至 <xref:System.Windows.Forms.BindingSource> ，後者接著會系結至 <xref:System.Data.DataSet> 實例。
 
 ### <a name="to-add-a-button"></a>若要加入按鈕
 
-1. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將 <xref:System.Windows.Forms.Button> 控制項加入工作表的資料格**A4** 。
+1. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將 <xref:System.Windows.Forms.Button> 控制項加入工作表的資料格 **A4** 。
 
    下一步是在工作表開啟時，將文字加入按鈕。
 
@@ -115,7 +117,7 @@ ms.locfileid: "91584317"
 
 ### <a name="to-initialize-the-control"></a>若要初始化控制項
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
 
 2. 將下列程式碼加入至 `Sheet1_Startup` 方法，以設定 b 的文字 `utton` 。
 
@@ -155,7 +157,7 @@ ms.locfileid: "91584317"
 
 ### <a name="to-modify-a-column-header"></a>若要修改資料行標題
 
-1. 按一下包含資料行標題 **LastName**的資料格。
+1. 按一下包含資料行標題 **LastName** 的資料格。
 
 2. 輸入 [ **姓氏**]，包括兩個單字之間的空格，然後按 **enter**。
 
@@ -175,7 +177,7 @@ ms.locfileid: "91584317"
 
 1. 選取清單物件內的儲存格。
 
-    新資料列會出現在清單底部，並 **\*** 在新資料列的第一個資料格中使用星號 () 。
+    新資料列會出現在清單底部，並在新資料列的第一個資料格中有星號 ( * *\** _) 。
 
 2. 在空白資料列中加入下列資訊。
 
@@ -185,7 +187,7 @@ ms.locfileid: "91584317"
 
 ### <a name="to-delete-rows"></a>刪除資料列
 
-- 以滑鼠右鍵按一下工作表最左邊的數位 16 (資料列 16) ，然後按一下 [ **刪除**]。
+- 以滑鼠右鍵按一下工作表最左邊的 16 (資料列 16) ，然後按一下 [_ * 刪除 * *]。
 
 ### <a name="to-sort-the-rows-in-the-list"></a>若要排序清單中的資料列
 
@@ -207,11 +209,11 @@ ms.locfileid: "91584317"
 
 3. 按一下 [ **銷售代表**]。
 
-     清單中只會顯示 [**標題**] 資料行中有**銷售代表**的資料列。
+     清單中只會顯示 [**標題**] 資料行中有 **銷售代表** 的資料列。
 
 4. 再按一下 **標題** 欄標題中的箭號按鈕。
 
-5. 按一下 [ ** (所有) **。
+5. 按一下 [ **(所有)**。
 
      篩選會被移除，並顯示所有資料列。
 

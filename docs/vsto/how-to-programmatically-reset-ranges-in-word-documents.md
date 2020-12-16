@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式在 Word 檔中重設範圍
+description: 瞭解如何使用 Visual Studio 以程式設計方式調整 Microsoft Word 檔中現有範圍的大小。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1fb36f825f4170a89a78bc4522d3a872bd9e5033
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b87d157344f1302d4b1ee910ee2dda449bbea5a1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584790"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527759"
 ---
 # <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>如何：以程式設計方式在 Word 檔中重設範圍
   使用 <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> 方法，可以調整 Microsoft Office Word 文件中現有範圍的大小。

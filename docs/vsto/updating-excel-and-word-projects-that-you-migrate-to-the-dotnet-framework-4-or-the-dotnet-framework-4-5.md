@@ -1,5 +1,7 @@
 ---
 title: 將已遷移的 Excel 或 Word 專案更新為 .NET Framework 4。5
+description: 當您擁有使用特定功能的 Excel 或 Word 專案時，如果目標 framework 變更為 .NET Framework 4 或更新版本，您就必須修改程式碼。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 06f4742317e3702273c5fe7c91ccc76a153c1b3e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7bc79a53b62cf9fb0ca0ba533a2ce0d542b08c72
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584408"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528425"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-45"></a>更新您遷移至 .NET Framework 4.5 的 Excel 和 Word 專案
   如果您有使用下列任何功能的 Excel 或 Word 專案，當目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本時，即必須修改程式碼：
@@ -44,12 +46,12 @@ ms.locfileid: "91584408"
 
 ### <a name="to-remove-the-excellocale1033attribute"></a>移除 ExcelLocale1033Attribute
 
-1. 請使用在 Visual Studio 中開啟的專案，開啟 [方案總管] ****。
+1. 請使用在 Visual Studio 中開啟的專案，開啟 [方案總管] 。
 
-2. 在 [屬性] **** 節點 (C#) 或 [我的專案] **** 節點 (Visual Basic) 下，按兩下 AssemblyInfo 程式碼檔，以在程式碼編輯器中加以開啟。
+2. 在 [屬性]  節點 (C#) 或 [我的專案]  節點 (Visual Basic) 下，按兩下 AssemblyInfo 程式碼檔，以在程式碼編輯器中加以開啟。
 
     > [!NOTE]
-    > 在 Visual Basic 專案中，您必須按一下 [方案總管] **** 中的 [顯示所有檔案] **** 按鈕，才能查看 AssemblyInfo 程式碼檔。
+    > 在 Visual Basic 專案中，您必須按一下 [方案總管]  中的 [顯示所有檔案]  按鈕，才能查看 AssemblyInfo 程式碼檔。
 
 3. 找出 `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute`，並將它從檔案移除或加上註解。
 
@@ -66,9 +68,9 @@ ms.locfileid: "91584408"
 
 ### <a name="to-remove-the-reference-to-the-excellocal1033proxy-class"></a>移除 ExcelLocal1033Proxy 類別的參考
 
-1. 請在 Visual Studio 中開啟專案，再開啟 [方案總管] ****。
+1. 請在 Visual Studio 中開啟專案，再開啟 [方案總管] 。
 
-2. 在 **方案總管**中，開啟 c # ) 的 *ThisAddin.cs* (的快捷方式功能表，或針對 Visual Basic) 開啟 [ *ThisAddin* ] (，然後選擇 [ **視圖程式碼**]。
+2. 在 **方案總管** 中，開啟 c # ) 的 *ThisAddin.cs* (的快捷方式功能表，或針對 Visual Basic) 開啟 [ *ThisAddin* ] (，然後選擇 [ **視圖程式碼**]。
 
 3. 在程式碼編輯器的 `VSTO generated code` 區域中，移除或註解化下列程式碼行。
 
@@ -202,7 +204,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  下表列出在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，與它們相關聯的 Word 內容控制項事件和委派。
 
-|Event - 事件|在 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 及更新版本的專案中要使用的委派|
+|事件|在 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 及更新版本的專案中要使用的委派|
 |-----------| - |
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Added>|<xref:Microsoft.Office.Tools.Word.ContentControlAddedEventHandler>|
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlContentUpdatingEventHandler>|

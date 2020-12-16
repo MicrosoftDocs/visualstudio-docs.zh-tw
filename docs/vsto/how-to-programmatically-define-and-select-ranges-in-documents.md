@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式定義和選取檔中的範圍
+description: 瞭解如何使用 Range 物件，以程式設計方式定義和選取 Microsoft Word 檔中的範圍。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5af4ceeb37574fef6eb55d80f3c173b71ac090e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1cc0475f7b25550b85018477d7c842f012445e2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545947"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528322"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>如何：以程式設計方式定義和選取檔中的範圍
   您也可以使用 <xref:Microsoft.Office.Interop.Word.Range> 物件定義 Microsoft Office Word 文件中的範圍。 您可以使用數種方式來選取整份檔，例如，使用 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 物件的方法 <xref:Microsoft.Office.Interop.Word.Range> ，或使用 <xref:Microsoft.Office.Tools.Word.Document> 檔層級自訂) 中 (類別的 Content 屬性，或在 <xref:Microsoft.Office.Interop.Word.Document> VSTO 增益集) 中使用類別 (。

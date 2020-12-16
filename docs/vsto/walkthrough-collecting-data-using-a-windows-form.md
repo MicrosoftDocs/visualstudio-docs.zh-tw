@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：使用 Windows Form 收集資料
+description: 從 Microsoft Excel 的檔層級自訂中開啟 Windows Form、從使用者收集資訊，然後將該資訊寫入工作表儲存格。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838853"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527172"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>逐步解說：使用 Windows Form 收集資料
   本逐步解說示範如何從 Microsoft Office Excel 的文件層級自訂開啟 Windows Form、向使用者收集資訊，以及將該資訊寫入工作表儲存格。
@@ -44,9 +46,9 @@ ms.locfileid: "90838853"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 建立名為 **WinFormInput**的 Excel 活頁簿專案，然後選取精靈中的 [建立新文件] **** 。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 建立名為 **WinFormInput** 的 Excel 活頁簿專案，然後選取精靈中的 [建立新文件]  。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 **WinFormInput** 專案加入方案總管 ****。
+     Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 **WinFormInput** 專案加入方案總管 。
 
 ## <a name="add-a-namedrange-control-to-the-worksheet"></a>將 NamedRange 控制項新增至工作表
 
@@ -54,30 +56,30 @@ ms.locfileid: "90838853"
 
 1. 選取 **上的儲存格** A1 `Sheet1`。
 
-2. 在 [名稱] **** 方塊中，輸入 **formInput**。
+2. 在 [名稱]  方塊中，輸入 **formInput**。
 
-     [名稱] **** 方塊位於工作表 **A** 欄正上方的公式列左側。
+     [名稱]  方塊位於工作表 **A** 欄正上方的公式列左側。
 
 3. 按 **Enter**。
 
-     <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項會加入儲存格 **A1**。 工作表上不會明顯表示，不過當選取儲存格 **A1** 時， **formInput** 會出現在 [名稱] **** 方塊 (工作表左上方) 和 [屬性] **** 視窗中。
+     <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項會加入儲存格 **A1**。 工作表上不會明顯表示，不過當選取儲存格 **A1** 時， **formInput** 會出現在 [名稱]  方塊 (工作表左上方) 和 [屬性]  視窗中。
 
 ## <a name="add-a-windows-form-to-the-project"></a>將 Windows Form 加入至專案
  建立 Windows Form 以提示使用者輸入資訊。
 
 ### <a name="to-add-a-windows-form"></a>加入 Windows Form
 
-1. 在方案總管 **** 中，選取專案 **WinFormInput**。
+1. 在方案總管  中，選取專案 **WinFormInput**。
 
-2. 在 [專案] **** 功能表上，按一下 [加入 Windows Form] ****。
+2. 在 [專案]  功能表上，按一下 [加入 Windows Form] 。
 
-3. 將表單命名 **GetInputString.vb** 或 **GetInputString.cs**，然後按一下 [加入] ****。
+3. 將表單命名 **GetInputString.vb** 或 **GetInputString.cs**，然後按一下 [加入] 。
 
     新表單隨即在設計工具中開啟。
 
 4. 將 <xref:System.Windows.Forms.TextBox> 和 <xref:System.Windows.Forms.Button> 加入表單。
 
-5. 選取按鈕，在 [屬性] **** 視窗中找到 [文字] **** 屬性，然後將文字變更為 [確定] ****。
+5. 選取按鈕，在 [屬性]  視窗中找到 [文字]  屬性，然後將文字變更為 [確定] 。
 
    接下來，將程式碼加入 `ThisWorkbook.vb` 或 `ThisWorkbook.cs` ，以收集使用者的資訊。
 
@@ -86,7 +88,7 @@ ms.locfileid: "90838853"
 
 #### <a name="to-display-the-form-and-collect-information"></a>顯示表單並收集資訊
 
-1. 以滑鼠右鍵按一下方案總管 **** 中的 **ThisWorkbook.vb** 或 **ThisWorkbook.cs**，然後按一下 [檢視程式碼] ****。
+1. 以滑鼠右鍵按一下方案總管  中的 **ThisWorkbook.vb** 或 **ThisWorkbook.cs**，然後按一下 [檢視程式碼] 。
 
 2. 在 <xref:Microsoft.Office.Tools.Excel.Workbook.Open> 的 `ThisWorkbook`事件處理常式，加入下列程式碼以宣告表單 `GetInputString` 的變數，然後顯示表單。
 
@@ -107,7 +109,7 @@ ms.locfileid: "90838853"
 
 ### <a name="to-send-information-to-the-worksheet"></a>將資訊傳送至工作表
 
-1. 以滑鼠右鍵按一下方案總管 **** 中的 **GetInputString**，然後按一下 [檢視設計工具] ****。
+1. 以滑鼠右鍵按一下方案總管  中的 **GetInputString**，然後按一下 [檢視設計工具] 。
 
 2. 按兩下這個按鈕，開啟已加入按鈕之 <xref:System.Windows.Forms.Control.Click> 事件處理常式的程式碼檔案。
 
@@ -125,7 +127,7 @@ ms.locfileid: "90838853"
 
 2. 確認 Windows Form 隨即出現。
 
-3. 在文字方塊中輸入 **Hello World** ，然後按一下 [確定] ****。
+3. 在文字方塊中輸入 **Hello World** ，然後按一下 [確定] 。
 
 4. 確認 **Hello World** 出現在工作表的儲存格 **A1** 中。
 

@@ -1,5 +1,7 @@
 ---
 title: Office 檔上的 Windows Forms 控制項總覽
+description: 瞭解 Windows Forms 控制項是使用者可以與之互動的物件，以輸入或運算元據。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -27,12 +29,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a101f22bccb3624eccff1edcea502c9350991392
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0309ea22444062b117d3684e32b56960585aa184
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254907"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527054"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Office 檔上的 Windows Forms 控制項總覽
   Windows Forms 控制項是使用者可以互動，輸入或操作資料的物件。 在 Microsoft Office Excel 和 Microsoft Office Word 的文件層級專案中，您可以在設計階段將 Windows Forms 控制項加入文件或活頁簿，或是用程式設計方式在執行階段中加入這些控制項。 您可以在執行時間，以程式設計的方式，將這些控制項加入任何開啟的檔或工作表中，以用於 Excel 或 Word 的 VSTO 增益集。
@@ -79,7 +81,7 @@ ms.locfileid: "71254907"
  在文件上使用 Windows Forms 控制項，某些層面對於文件層級專案而言是唯一的，這可讓您使用 Visual Studio 設計工具來設計文件的 UI。
 
 ### <a name="create-custom-user-controls"></a>建立自訂使用者控制項
- 您可以將使用者控制項加入您的專案，並再將它加入工具箱 ****。 接著可以直接將使用者控制項拖曳到文件，就像您將 Windows Forms 控制項加入文件的方式一樣。 建立使用者控制項時，有一些事項要謹記在心：
+ 您可以將使用者控制項加入您的專案，並再將它加入工具箱 。 接著可以直接將使用者控制項拖曳到文件，就像您將 Windows Forms 控制項加入文件的方式一樣。 建立使用者控制項時，有一些事項要謹記在心：
 
 - 請勿建立 **sealed** 使用者控制項。 當您將控制項拖曳至文件時，Visual Studio 會產生衍生自使用者控制項的包裝函式類別，以便擴充它並支援其在文件上的使用。 如果使用者控制項為 **sealed**，則 Visual Studio 無法產生包裝函式類別。
 
@@ -125,10 +127,10 @@ ms.locfileid: "71254907"
  您可以將想要在所有工作表之間共用的元件，例如 <xref:System.Data.DataSet>，加入活頁簿設計工具，而不是加入工作表。 元件會出現在元件匣中。
 
 ### <a name="formula-for-embedding-controls-on-an-excel-worksheet"></a>在 Excel 工作表上內嵌控制項的公式
- 在 Excel 中選取控制項時，您會在 [資料編輯列] **** 看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。
+ 在 Excel 中選取控制項時，您會在 [資料編輯列]  看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。
 
 ### <a name="layout-style-of-controls-on-a-word-document"></a>Word 檔上控制項的版面配置樣式
- 當您使用 Visual Studio 設計工具將控制項加入文件層級專案中的 Word 文件時，控制項會加入與文字對齊。 若要變更控制項的配置樣式，請以滑鼠右鍵按一下控制項，再按一下 [控制項格式] ****。 在 [物件格式] **** 對話方塊的 [配置] **** 頁面選取文繞圖樣式。
+ 當您使用 Visual Studio 設計工具將控制項加入文件層級專案中的 Word 文件時，控制項會加入與文字對齊。 若要變更控制項的配置樣式，請以滑鼠右鍵按一下控制項，再按一下 [控制項格式] 。 在 [物件格式]  對話方塊的 [配置]  頁面選取文繞圖樣式。
 
  當您在執行時間將控制項加入 Word 檔時，可以使用類別的不同方法多載，指定新控制項的配置樣式 `Add` \<*control class*> <xref:Microsoft.Office.Tools.Word.ControlCollection> ：
 
@@ -138,7 +140,7 @@ ms.locfileid: "71254907"
 
   如需詳細資訊，請參閱 [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
-  如果您在 Visual Studio 設計工具中開啟 Word 範本，可能看不到範本上的非內嵌控制項，因為 Visual Studio 會在 [一般] **** 檢視中開啟範本。 若要檢視控制項，請將檢視變更為 [整頁模式] ****。
+  如果您在 Visual Studio 設計工具中開啟 Word 範本，可能看不到範本上的非內嵌控制項，因為 Visual Studio 會在 [一般]  檢視中開啟範本。 若要檢視控制項，請將檢視變更為 [整頁模式] 。
 
 ### <a name="controls-outside-the-main-document-body"></a>主文件主體外部的控制項
  在頁首或頁尾內，或在子文件內，不支援 Windows Forms 控制項。

@@ -1,5 +1,6 @@
 ---
 title: 建立 Word 的第一個檔層級自訂
+description: 建立 Microsoft Word 的檔層級自訂。 只有在特定的文件開啟時，才能使用您在這種解決方案中建立的功能。
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1f5d1d6d373a5bbcd3f10d600175a88e88823ad
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c1f827346c30720cefd781dade3039416504b9c0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584985"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527075"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>逐步解說：建立 Word 的第一個檔層級自訂
 
@@ -58,7 +59,7 @@ ms.locfileid: "91584985"
 
 2. 在 **[檔案]** 功能表上，指向 **[開新檔案]** ，然後按一下 **[專案]** 。
 ::: moniker range="vs-2017"
-3. 在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ****，然後展開 [Office/SharePoint] ****。
+3. 在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ，然後展開 [Office/SharePoint] 。
 
 4. 在展開的 [ **Office/SharePoint** ] 節點下，選取 [ **VSTO 增益集** ] 節點。
 
@@ -66,9 +67,9 @@ ms.locfileid: "91584985"
 
 6. 在 [ **名稱** ] 方塊中，輸入 **FirstDocumentCustomization**。
 
-7. 按一下 [確定]  。
+7. 按一下 [確定]。
 
-8. 從 [ **Visual Studio Tools for Office 專案] Wizard**中選取 [**建立新檔**]，然後按一下 **[確定]**。
+8. 從 [ **Visual Studio Tools for Office 專案] Wizard** 中選取 [**建立新檔**]，然後按一下 **[確定]**。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. 在 [ **建立新專案** ] 對話方塊中，選取 [ **Word VSTO 檔** 專案]。
@@ -77,11 +78,11 @@ ms.locfileid: "91584985"
 
 4. 按 [下一步]  。
 
-5. 在 [**設定您的新專案**] 對話方塊的 [**名稱**] 方塊中輸入**FirstWorkbookCustomization** ，然後按一下 [**建立**]。
+5. 在 [**設定您的新專案**] 對話方塊的 [**名稱**] 方塊中輸入 **FirstWorkbookCustomization** ，然後按一下 [**建立**]。
 
-6. 從 [ **Visual Studio Tools for Office 專案] Wizard**中選取 [**建立新檔**]，然後按一下 **[確定]**。
+6. 從 [ **Visual Studio Tools for Office 專案] Wizard** 中選取 [**建立新檔**]，然後按一下 **[確定]**。
 ::: moniker-end
-   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立 **FirstDocumentCustomization** 專案，並將 **FirstDocumentCustomization** 檔和 ThisDocument 程式碼檔案加入至專案。 **FirstDocumentCustomization**檔會在設計工具中自動開啟。
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立 **FirstDocumentCustomization** 專案，並將 **FirstDocumentCustomization** 檔和 ThisDocument 程式碼檔案加入至專案。 **FirstDocumentCustomization** 檔會在設計工具中自動開啟。
 
 ## <a name="close-and-reopen-the-document-in-the-designer"></a>在設計工具中關閉並重新開啟檔
 
@@ -91,11 +92,11 @@ ms.locfileid: "91584985"
 
 1. 按一下設計工具視窗的 [ **關閉** ] 按鈕 (X) ，以關閉檔。
 
-2. 在 **方案總管**中，以滑鼠右鍵按一下 **ThisDocument** 程式碼檔案，然後按一下 [ **視圖設計**工具]。
+2. 在 **方案總管** 中，以滑鼠右鍵按一下 **ThisDocument** 程式碼檔案，然後按一下 [ **視圖設計** 工具]。
 
      \- 或 -
 
-     在 **方案總管**中，按兩下 **ThisDocument** 程式碼檔。
+     在 **方案總管** 中，按兩下 **ThisDocument** 程式碼檔。
 
 ## <a name="add-text-to-the-document-in-the-designer"></a>在設計工具中將文字加入檔
 
@@ -117,7 +118,7 @@ ms.locfileid: "91584985"
 
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>使用程式碼將第二段文字加入文件
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **ThisDocument**]，然後按一下 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **ThisDocument**]，然後按一下 [ **視圖程式碼**]。
 
      程式碼檔案隨即在 Visual Studio 中開啟。
 
@@ -151,7 +152,7 @@ ms.locfileid: "91584985"
 
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>清除開發電腦上已完成的專案
 
-1. 在 Visual Studio 中，按一下 [建置] **** 功能表上的 [清除方案] ****。
+1. 在 Visual Studio 中，按一下 [建置]  功能表上的 [清除方案] 。
 
 ## <a name="next-steps"></a>後續步驟
 

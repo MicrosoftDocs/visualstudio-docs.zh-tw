@@ -1,5 +1,7 @@
 ---
 title: 更新已遷移至 .NET Framework 4.5 的功能區自訂
+description: 瞭解如果目標 framework 變更為 .NET Framework 4 或更新版本，您必須對專案程式碼進行變更。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,16 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8024d6fba419dfe437ca8492010c7e4786861862
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a831bced793f13394a89d278a6be1cda959c775a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298607"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527935"
 ---
 # <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>更新已遷移至 .NET Framework 4.5 的功能區自訂
 
-  如果您的專案包含使用 **功能區 (視覺化設計工具) ** 專案專案所建立的功能區自訂，則您必須在目標 framework 變更為或更新版本時，對專案程式碼進行下列變更 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 。
+  如果您的專案包含使用 **功能區 (視覺化設計工具)** 專案專案所建立的功能區自訂，則您必須在目標 framework 變更為或更新版本時，對專案程式碼進行下列變更 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 。
 
 - 修改產生的功能區程式碼。
 
@@ -31,7 +33,7 @@ ms.locfileid: "92298607"
 ## <a name="update-the-generated-ribbon-code"></a>更新產生的功能區程式碼
  如果專案的目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，您必須執行下列步驟變更功能區項目產生的程式碼。 您需要更新的程式碼檔是根據程式語言和您建立專案的方式而定：
 
-- 在 Visual Basic 專案中，或您在中建立的 Visual c # 專案中，或 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] 執行功能區程式碼後端檔案中的所有步驟 (*yourribbonitem.designer.vb*。Designer.cs 或 *yourribbonitem.designer.vb*。設計工具 .vb) 。 若要查看 Visual Basic 專案中的程式碼後端檔案，請按一下**方案總管**中的 [**顯示所有**檔案] 按鈕。
+- 在 Visual Basic 專案中，或您在中建立的 Visual c # 專案中，或 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] 執行功能區程式碼後端檔案中的所有步驟 (*yourribbonitem.designer.vb*。Designer.cs 或 *yourribbonitem.designer.vb*。設計工具 .vb) 。 若要查看 Visual Basic 專案中的程式碼後端檔案，請按一下 **方案總管** 中的 [**顯示所有** 檔案] 按鈕。
 
 - 在您于 Visual Studio 2008 中建立然後升級至的 Visual c # 專案中 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ，執行功能區程式碼檔案中的前兩個步驟 (*yourribbonitem.designer.vb*.cs 或 *yourribbonitem.designer.vb*.Vb) ，然後執行功能區程式碼後端檔案中的其餘步驟。
 
@@ -150,7 +152,7 @@ ms.locfileid: "92298607"
 
  下表列出目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本專案中的功能區事件以及它們的相關委派。
 
-|Event - 事件|在 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 及更新版本的專案中要使用的委派|
+|事件|在 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 及更新版本的專案中要使用的委派|
 |-----------| - |
 |產生的功能區類別中的 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> 事件|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|

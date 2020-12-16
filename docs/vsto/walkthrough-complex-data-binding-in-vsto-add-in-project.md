@@ -1,5 +1,7 @@
 ---
 title: 逐步解說： VSTO 增益集專案中的複雜資料系結
+description: 瞭解如何將控制項加入 Microsoft Excel 工作表，並在執行時間將控制項系結至資料。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0d65bd96a3860070addc6dc05a791d71959f5ea
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 573f15001dcbd678c576512349c36ae9594e10e8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585037"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527085"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>逐步解說： VSTO 增益集專案中的複雜資料系結
   您可以將資料繫結至 VSTO 增益集專案中的主控制項和 Windows Form 控制項。 本逐步解說示範如何在執行階段將控制項加入 Microsoft Office Excel 工作表，以及將控制項繫結至資料。
@@ -53,11 +55,11 @@ ms.locfileid: "91585037"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 使用 Visual Basic 或 C#，建立名稱為「從資料庫填入工作表」 **** 的 Excel VSTO 增益集專案。
+1. 使用 Visual Basic 或 C#，建立名稱為「從資料庫填入工作表」 的 Excel VSTO 增益集專案。
 
      如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     Visual Studio 會開啟 `ThisAddIn.vb` 或 `ThisAddIn.cs` 檔案，然後將 [從資料庫填入工作表] **** 專案加入方案總管 ****。
+     Visual Studio 會開啟 `ThisAddIn.vb` 或 `ThisAddIn.cs` 檔案，然後將 [從資料庫填入工作表]  專案加入方案總管 。
 
 ## <a name="create-a-data-source"></a>建立資料來源
  使用 [ **資料來源** ] 視窗將型別資料集加入專案。
@@ -72,17 +74,17 @@ ms.locfileid: "91585037"
 
 4. 如果您有 `AdventureWorksLT` 資料庫的現有連接，請選擇這個連接，然後按 [ **下一步**]。
 
-    否則，請按一下 [新增連接] ****，然後使用 [加入連接] **** 對話方塊建立新的連接。 如需詳細資訊，請參閱 [加入新的連接](../data-tools/add-new-connections.md)。
+    否則，請按一下 [新增連接] ，然後使用 [加入連接]  對話方塊建立新的連接。 如需詳細資訊，請參閱 [加入新的連接](../data-tools/add-new-connections.md)。
 
-5. 在 [將連接字串儲存到應用程式組態檔] **** 頁面上，按 [下一步] ****。
+5. 在 [將連接字串儲存到應用程式組態檔]  頁面上，按 [下一步] 。
 
-6. 在 [選擇您的資料庫物件] **** 頁面中，展開 [資料表] **** ，然後選取 [Address (SalesLT)] ****。
+6. 在 [選擇您的資料庫物件]  頁面中，展開 [資料表]  ，然後選取 [Address (SalesLT)] 。
 
 7. 按一下 [完成] 。
 
-    *Adventureworksltdataset.xsd .xsd*檔案會新增至**方案總管**。 這個檔案會定義下列項目：
+    *Adventureworksltdataset.xsd .xsd* 檔案會新增至 **方案總管**。 這個檔案會定義下列項目：
 
-   - 具類型資料集，名稱為 `AdventureWorksLTDataSet`。 這個資料集代表 AdventureWorksLT 資料庫中 [Address (SalesLT)] **** 資料表的內容。
+   - 具類型資料集，名稱為 `AdventureWorksLTDataSet`。 這個資料集代表 AdventureWorksLT 資料庫中 [Address (SalesLT)]  資料表的內容。
 
    - 名為的 TableAdapter `AddressTableAdapter` 。 此 TableAdapter 可以用來讀取和寫入中的資料 `AdventureWorksLTDataSet` 。 如需詳細資訊，請參閱 [TableAdapter 總覽](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
 

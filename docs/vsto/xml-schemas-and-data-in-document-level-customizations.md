@@ -1,5 +1,7 @@
 ---
 title: 檔層級自訂中的 XML 架構和資料
+description: Microsoft Excel 和 Word 提供將架構對應至檔的功能，並可簡化在檔中匯入和匯出 XML 資料的功能。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb8bc9b9d3149112517d893cd3a704826b6d92d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57fad7982f762c4837399e12552cd109c9a9086c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839015"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527857"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>檔層級自訂中的 XML 架構和資料
   **重要** 本主題中有關 Microsoft Word 的資訊，只會提供給位於美國以外的個人和組織，或使用或正在開發的 microsoft word 產品（在2010年1月之前由 Microsoft 授權的 microsoft Word 產品），而 Microsoft 已從 Microsoft Word 移除與自訂 XML 相關的特定功能。 這項有關 Microsoft Word 的資訊，可能無法由美國的個人或組織、在2010年1月10日之後由 Microsoft 授權的 Microsoft Word 產品所使用的 microsoft word 產品或開發人員所使用;這些產品的行為不像在該日期之前授權的產品，或購買並授權在美國以外地區使用。
@@ -40,9 +42,9 @@ ms.locfileid: "90839015"
 
  有兩個主要物件：
 
-- XML 架構 (XSD 檔案) 。 針對活頁簿中的每個架構，Visual Studio 將架構新增至專案。 這會顯示為 **方案總管**中具有 XSD 擴充功能的專案專案。
+- XML 架構 (XSD 檔案) 。 針對活頁簿中的每個架構，Visual Studio 將架構新增至專案。 這會顯示為 **方案總管** 中具有 XSD 擴充功能的專案專案。
 
-- 具型別 <xref:System.Data.DataSet> 類別。 這個類別是根據架構建立的。 這個資料集類別在 **類別檢視**中是可見的。
+- 具型別 <xref:System.Data.DataSet> 類別。 這個類別是根據架構建立的。 這個資料集類別在 **類別檢視** 中是可見的。
 
 ## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>架構元素對應到 Excel 工作表時建立的物件
  當您將 [ **XML 來源** ] 工作窗格中的架構專案對應至工作表時，Visual Studio 會自動建立數個物件，並將其新增至您的專案：

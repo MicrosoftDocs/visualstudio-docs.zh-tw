@@ -1,5 +1,7 @@
 ---
 title: 如何：簽署 Office 方案
+description: 瞭解如何使用憑證做為辨識項，將信任授與您的 Microsoft Office 解決方案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7451630570e6d557dc5d2b635d149ebc07cfb388
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545752"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528122"
 ---
 # <a name="how-to-sign-office-solutions"></a>如何：簽署 Office 方案
   如果您簽署解決方案，則可以使用憑證做為辨識項，將信任授與解決方案。 您可以將相同的憑證用於多個解決方案，而且所有解決方案都將受信任，而不需要額外的安全性原則更新。

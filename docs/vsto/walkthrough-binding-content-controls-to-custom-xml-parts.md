@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：將內容控制項系結至自訂 XML 元件
+description: 瞭解如何將 Word 檔層級自訂中的內容控制項系結至儲存在檔中的 XML 資料。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a82a8fd98bbf1a735661f3e1cf01e2452eb7ee58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544439"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527956"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>逐步解說：將內容控制項系結至自訂 XML 元件
   本逐步解說示範如何將 Word 之文件層級自訂中的內容控制項繫結至文件中所儲存的 XML 資料。
@@ -59,7 +61,7 @@ ms.locfileid: "85544439"
 
 ### <a name="to-create-a-new-word-document-project"></a>建立新的 Word 文件專案
 
-1. 建立名稱為 **employeecontrols.docx**的 Word 檔專案。 建立方案的新文件。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 建立名稱為 **employeecontrols.docx** 的 Word 檔專案。 建立方案的新文件。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在設計工具中開啟新的 Word 檔，並將 **employeecontrols.docx** 專案新增至 **方案總管**。
 
@@ -85,7 +87,7 @@ ms.locfileid: "85544439"
 5. 在功能區上，選擇 [ **開發人員** ] 索引標籤。
 
    > [!NOTE]
-   > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
+   > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
 
 6. 在 [ **控制項** ] 群組中，選擇 [ **文字** ] 按鈕 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") ，將加入 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> 至第一個儲存格。
 
@@ -108,11 +110,11 @@ ms.locfileid: "85544439"
 
      [加入新項目]  對話方塊隨即出現。
 
-2. 在 [ **範本** ] 窗格中，選取 [ **XML**檔案]。
+2. 在 [ **範本** ] 窗格中，選取 [ **XML** 檔案]。
 
 3. 將檔案命名為 **employees.xml**，然後選擇 [ **加入** ] 按鈕。
 
-     **employees.xml**檔案隨即在程式碼編輯器中開啟。
+     **employees.xml** 檔案隨即在程式碼編輯器中開啟。
 
 4. 以下列文字取代 **employees.xml** 檔案的內容。
 
@@ -127,7 +129,7 @@ ms.locfileid: "85544439"
     </employees>
     ```
 
-5. 在 **方案總管**中，選擇 **employees.xml** 檔案。
+5. 在 **方案總管** 中，選擇 **employees.xml** 檔案。
 
 6. 在 [ **屬性** ] 視窗中，選取 [ **組建動作** ] 屬性，然後將值變更為 [ **內嵌資源**]。
 
@@ -148,7 +150,7 @@ ms.locfileid: "85544439"
 
      結構描述設計工具隨即開啟。
 
-4. 在 **方案總管**中，開啟 [  **employees**] 的快捷方式功能表，然後選擇 [  **View Code**]。
+4. 在 **方案總管** 中，開啟 [  **employees**] 的快捷方式功能表，然後選擇 [  **View Code**]。
 
 5. 以下列架構取代 **員工 .xsd** 檔案的內容。
 
@@ -181,7 +183,7 @@ ms.locfileid: "85544439"
     </xs:schema>
     ```
 
-6. **在 [檔案] 功能表上**，按一下 [**全部儲存**]，將您的變更儲存至**employees.xml**和 employee**檔。**
+6. **在 [檔案] 功能表上**，按一下 [**全部儲存**]，將您的變更儲存至 **employees.xml** 和 employee **檔。**
 
 ## <a name="attach-the-xml-schema-to-the-document"></a>將 XML 架構附加至檔
  您必須將 XML 結構描述附加至文件，以將 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 繫結至 `title` 項目的有效值。
@@ -225,7 +227,7 @@ ms.locfileid: "85544439"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>將自訂 XML 組件新增至文件
 
-1. 在 **方案總管**中，開啟 [  **ThisDocument.cs** ] 或 [ **ThisDocument**] 的快捷方式功能表，然後選擇 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，開啟 [  **ThisDocument.cs** ] 或 [ **ThisDocument**] 的快捷方式功能表，然後選擇 [ **視圖程式碼**]。
 
 2. 將下列宣告新增至 `ThisDocument` 類別： 此程式碼會宣告數個物件，以用來將自訂 XML 組件新增至文件。
 
@@ -293,7 +295,7 @@ ms.locfileid: "85544439"
 
 9. 將檔案命名為 **EmployeeControls.docx.zip**。
 
-     **EmployeeControls.docx**檔會以 Open XML 格式儲存。 藉由使用 *.zip* 副檔名來重新命名此檔，您就可以檢查檔的內容。 如需 Open XML 的詳細資訊，請參閱 [Office (2007) OPEN xml 檔案格式簡介](/previous-versions/office/developer/office-2007/aa338205(v=office.12))的技術檔。
+     **EmployeeControls.docx** 檔會以 Open XML 格式儲存。 藉由使用 *.zip* 副檔名來重新命名此檔，您就可以檢查檔的內容。 如需 Open XML 的詳細資訊，請參閱 [Office (2007) OPEN xml 檔案格式簡介](/previous-versions/office/developer/office-2007/aa338205(v=office.12))的技術檔。
 
 10. 開啟 **EmployeeControls.docx.zip** 檔案。
 

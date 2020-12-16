@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：使用選項按鈕更新檔中的圖表
+description: 瞭解如何在 Microsoft Word 的檔層級自訂中使用選項按鈕，讓使用者可以選擇在檔上選取圖表樣式。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4b39949deb3bcbf3d9330ca8d820a5841b0f4c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: df2996d99e752fbe0f7f36bcab537ee8c19d4f06
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584291"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528396"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>逐步解說：使用選項按鈕更新檔中的圖表
   本逐步解說示範如何在 Microsoft Office Word 的文件層級自訂中使用選項按鈕，讓使用者可以在文件上選取圖表樣式。
@@ -50,7 +52,7 @@ ms.locfileid: "91584291"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 建立具有 **My Chart 選項**名稱的 Word 檔專案。 在嚮導中，選取 [ **建立新檔**]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 建立具有 **My Chart 選項** 名稱的 Word 檔專案。 在嚮導中，選取 [ **建立新檔**]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 會在設計工具中開啟新的 Word 檔，並將 [ **我的圖表選項** ] 專案加入 **方案總管**。
 
@@ -64,7 +66,7 @@ ms.locfileid: "91584291"
 
      [ **物件** ] 對話方塊隨即開啟。
 
-3. 在 [**建立新**索引標籤] 的 [**物件類型**] 清單中，選取 [ **Microsoft Graph 圖表**]，然後按一下 **[確定]**。
+3. 在 [**建立新** 索引標籤] 的 [**物件類型**] 清單中，選取 [ **Microsoft Graph 圖表**]，然後按一下 **[確定]**。
 
      在插入點將圖表加入至檔，[資料工作 **表** ] 視窗隨即出現，其中包含一些預設資料。
 
@@ -72,24 +74,24 @@ ms.locfileid: "91584291"
 
 5. 以滑鼠右鍵按一下圖表，然後按一下 [ **格式化物件**]。
 
-6. 在 [**格式物件**]**對話方塊的 [配置] 索引**標籤上，選取 [**正方形**]，然後按一下 **[確定]**。
+6. 在 [**格式物件**]**對話方塊的 [配置] 索引** 標籤上，選取 [**正方形**]，然後按一下 **[確定]**。
 
 ## <a name="add-a-user-control-to-the-project"></a>將使用者控制項新增至專案
  文件上的選項按鈕預設並不會互斥。 若要讓選項按鈕正常運作，您可以將選項按鈕加入至使用者控制項，再撰寫程式碼以控制選取範圖。
 
 ### <a name="to-add-a-user-control"></a>若要加入使用者控制項
 
-1. 在**方案總管**中選取 [**我的圖表選項**] 專案。
+1. 在 **方案總管** 中選取 [**我的圖表選項**] 專案。
 
-2. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
+2. 在 [專案] 功能表上，按一下 [加入新項目]。
 
 3. 在 [ **加入新專案** ] 對話方塊中，按一下 [ **使用者控制項**]，將控制項命名為 **ChartOptions，** 然後按一下 [ **加入**]。
 
 ### <a name="to-add-windows-form-controls-to-the-user-control"></a>將 Windows Form 控制項加入至使用者控制項
 
-1. 如果在設計工具中看不到使用者控制項，請按兩下**方案總管**中的 [ **ChartOptions** ]。
+1. 如果在設計工具中看不到使用者控制項，請按兩下 **方案總管** 中的 [ **ChartOptions** ]。
 
-2. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將第一個**選項按鈕**控制項拖曳至使用者控制項，並變更下列屬性。
+2. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將第一個 **選項按鈕** 控制項拖曳至使用者控制項，並變更下列屬性。
 
     |屬性|值|
     |--------------|-----------|
@@ -133,7 +135,7 @@ ms.locfileid: "91584291"
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>在使用者控制項上建立事件和屬性
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下使用者控制項，然後按一下 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下使用者控制項，然後按一下 [ **視圖程式碼**]。
 
 2. 將用於建立 `SelectionChanged` 事件和 `Selection` 屬性的程式碼加入至 `ChartOptions` 類別。
 
@@ -173,9 +175,9 @@ ms.locfileid: "91584291"
 
 1. 在 [建置] 功能表上，按一下 [建置方案]。
 
-     **ChartOptions**使用者控制項就會加入至 [**工具箱**]。
+     **ChartOptions** 使用者控制項就會加入至 [**工具箱**]。
 
-2. 在 **方案總管**中，以滑鼠右鍵按一下 [ **ThisDocument** ] 或 [ **ThisDocument.cs**]，然後按一下 [ **視圖設計**工具]。
+2. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **ThisDocument** ] 或 [ **ThisDocument.cs**]，然後按一下 [ **視圖設計** 工具]。
 
 3. 將 `ChartOptions` 控制項從 [ **工具箱** ] 拖曳至檔。
 
@@ -186,7 +188,7 @@ ms.locfileid: "91584291"
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-document"></a>變更顯示在文件中的圖表類型
 
-1. 將下列事件處理常式加入至 `ThisDocument` 類別。
+1. 將以下事件處理常式新增至 `ThisDocument` 類別。
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#15)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#15)]

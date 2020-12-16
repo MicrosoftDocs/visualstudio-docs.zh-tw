@@ -1,5 +1,7 @@
 ---
 title: Word 方案
+description: 瞭解如何使用 Visual Studio 的解決方案來自動化 Word、擴充 Word 功能，以及自訂 Word 使用者介面 (UI) 。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d3b9ea3257db11eed766079b169a7bc81fe28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55ffb54e00af0291a33bd635ea81d3d865cc4c9a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985372"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528368"
 ---
 # <a name="word-solutions"></a>Word 方案
   Visual Studio 提供的專案範本，可用以建立 Microsoft Office Word 的文件層級自訂和 VSTO 增益集。 您可以使用這些解決方案自動化 Word、擴充 Word 功能和自訂 Word 使用者介面 (UI)。 如需檔層級自訂和 VSTO 增益集之間差異的詳細資訊，請參閱 [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -58,7 +60,7 @@ ms.locfileid: "72985372"
 ## <a name="develop-document-level-customizations-for-word"></a><a name="doclevel"></a> 開發 Word 的檔層級自訂
  Microsoft Office Word 文件層級自訂是由與特定文件相關聯的組件所組成。 組件通常是透過自訂 UI 及自動化 Word 來擴充文件。 不同於與 Word 本身相關聯的 VSTO 增益集，您在自訂中實作的功能只有在 Word 中開啟相關聯的文件時才能使用。
 
- 若要建立 Word 的文件層級自訂專案，請使用 Visual Studio [新增專案] **** 對話方塊中的 Word 文件或 Word 範本專案範本。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+ 若要建立 Word 的文件層級自訂專案，請使用 Visual Studio [新增專案]  對話方塊中的 Word 文件或 Word 範本專案範本。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
  如需檔層級自訂運作方式的詳細資訊，請說明 [檔層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)。
 
@@ -70,7 +72,7 @@ ms.locfileid: "72985372"
 ## <a name="develop-vsto-add-ins-for-word"></a><a name="applevel"></a> 開發 Word 的 VSTO 增益集
  Microsoft Office Word 的 VSTO 增益集是由 Word 載入的組件所組成。 組件通常是透過自訂 UI 及自動化 Word 來擴充 Word。 不同于與特定檔相關聯的檔層級自訂，您在 VSTO 增益集中所執行的功能不受限於任何單一檔。
 
- 若要建立 Word 的 VSTO 增益集專案，請使用 Visual Studio [新增專案] **** 對話方塊中的 Word 增益集專案範本。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+ 若要建立 Word 的 VSTO 增益集專案，請使用 Visual Studio [新增專案]  對話方塊中的 Word 增益集專案範本。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
  如需 VSTO 增益集運作方式的一般資訊，請參閱 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。
 
@@ -107,7 +109,7 @@ ms.locfileid: "72985372"
 
 ### <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[Word 物件模型總覽](../vsto/word-object-model-overview.md)|提供 Word 物件模型所提供的主要類型的概觀。|
 |[使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)|提供可以用在 Word 方案中之擴充物件 (由 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]所提供) 的相關資訊。|

@@ -1,5 +1,7 @@
 ---
 title: InfoPath 方案
+description: 瞭解如何使用 Visual Studio 建立適用于 Microsoft InfoPath 2013 和 InfoPath 2010 的 VSTO 增益集。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf3223b5c8211719ad04b2ea7af8079932f6631e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8d5e26614c7f06c803093cd7e19b7e9842b397fb
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808798"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527735"
 ---
 # <a name="infopath-solutions"></a>InfoPath 方案
   Visual Studio 提供的專案範本，可用來建立 Microsoft Office InfoPath 2013 與 InfoPath 2010 的 VSTO 增益集。 Office 2016 不提供 InfoPath。
@@ -48,7 +50,7 @@ ms.locfileid: "90808798"
 ## <a name="customize-the-user-interface-of-infopath-by-using-an-add-in"></a>使用增益集自訂 InfoPath 的使用者介面
  當您建立 InfoPath 的 VSTO 增益集時，您會有數個不同的 UI 自訂選項。 下表列出其中一些選項。
 
-|Task|取得詳細資訊|
+|工作|取得詳細資訊|
 |----------|--------------------------|
 |建立自訂工作窗格。|[自訂工作窗格](../vsto/custom-task-panes.md)|
 |在 InfoPath 的功能區中加入自訂索引標籤。|[自訂 InfoPath 的功能區](../vsto/customizing-a-ribbon-for-infopath.md)|

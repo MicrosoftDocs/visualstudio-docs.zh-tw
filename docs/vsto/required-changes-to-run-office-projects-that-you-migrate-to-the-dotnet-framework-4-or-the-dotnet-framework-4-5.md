@@ -1,5 +1,7 @@
 ---
 title: 遷移至 .NET 4.5 的 Office 專案所需的變更
+description: 如果目標 framework 從舊版 .NET Framework 變更為 .NET Framework 4 或更新版本，請瞭解您需要對專案進行的變更。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40db3cd629f2c3a2ced37a781dea3244a3f19957
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e92a7fc81f77244664be7285cc6fd414dc4409be
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584460"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527492"
 ---
 # <a name="changes-required-for-office-projects-migrated-to-net-45"></a>遷移至 .NET 4.5 的 Office 專案所需的變更
 
@@ -41,12 +43,12 @@ ms.locfileid: "91584460"
 
 #### <a name="to-remove-the-securitytransparentattribute"></a>移除 SecurityTransparentAttribute
 
-1. 請使用在 Visual Studio 中開啟的專案，開啟 [方案總管] ****。
+1. 請使用在 Visual Studio 中開啟的專案，開啟 [方案總管] 。
 
-2. 在 [屬性] **** 節點 (C#) 或 [我的專案] **** 節點 (Visual Basic) 下，按兩下 AssemblyInfo 程式碼檔，以在程式碼編輯器中加以開啟。
+2. 在 [屬性]  節點 (C#) 或 [我的專案]  節點 (Visual Basic) 下，按兩下 AssemblyInfo 程式碼檔，以在程式碼編輯器中加以開啟。
 
     > [!NOTE]
-    > 在 Visual Basic 專案中，您必須按一下 [方案總管] **** 中的 [顯示所有檔案] **** 按鈕，才能查看 AssemblyInfo 程式碼檔。
+    > 在 Visual Basic 專案中，您必須按一下 [方案總管]  中的 [顯示所有檔案]  按鈕，才能查看 AssemblyInfo 程式碼檔。
 
 3. 找出 <xref:System.Security.SecurityTransparentAttribute>，並將它從檔案移除或加上註解。
 

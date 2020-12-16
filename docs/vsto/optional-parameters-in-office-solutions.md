@@ -1,5 +1,7 @@
 ---
 title: Office 方案中的選擇性參數
+description: 瞭解如何不需要傳遞選擇性參數的值，因為每個遺漏的參數都會自動使用預設值。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,22 +20,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7567f43dfa79e6a1e5d92b9ecddbf7918a6edef3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839094"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527569"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office 方案中的選擇性參數
-  Microsoft Office 應用程式物件模型中的許多方法，都接受選擇性參數。 如果您使用 Visual Basic 在 Visual Studio 中開發 Office 方案，就不必傳遞選擇性參數的值，因為每個遺漏的參數都會自動使用預設值。 在大部分的情況下，也可以省略 Visual C# 專案中的選擇性參數。 不過，您無法**ref** `ThisDocument` 在檔層級 Word 專案中省略類別的選擇性 ref 參數。
+  Microsoft Office 應用程式物件模型中的許多方法，都接受選擇性參數。 如果您使用 Visual Basic 在 Visual Studio 中開發 Office 方案，就不必傳遞選擇性參數的值，因為每個遺漏的參數都會自動使用預設值。 在大部分的情況下，也可以省略 Visual C# 專案中的選擇性參數。 不過，您無法 `ThisDocument` 在檔層級 Word 專案中省略類別的選擇性 ref 參數。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
  如需在 Visual c # 和 Visual Basic 專案中使用選擇性參數的詳細資訊，請參閱 [&#40;C&#35; 程式設計指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) 和 [選擇性參數 &#40;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)Visual Basic&#41;的命名和選擇性引數。
 
 > [!NOTE]
-> 在舊版的 Visual Studio 中，您必須為 Visual C# 專案中的每一個選擇性參數傳遞值。 為方便起見，這些專案包含名為 `missing` 的全域變數，當您想要使用參數的預設值時，可以傳遞給選擇性參數。 適用于 Office Visual Studio 的 Visual c # 專案仍包含 `missing` 變數，但在中開發 office 方案時，您通常不需要使用它 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ，除非您在**ref** `ThisDocument` Word 檔層級專案的類別中，以選擇性 ref 參數呼叫方法。
+> 在舊版的 Visual Studio 中，您必須為 Visual C# 專案中的每一個選擇性參數傳遞值。 為方便起見，這些專案包含名為 `missing` 的全域變數，當您想要使用參數的預設值時，可以傳遞給選擇性參數。 適用于 Office Visual Studio 的 Visual c # 專案仍包含 `missing` 變數，但在中開發 office 方案時，您通常不需要使用它 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ，除非您在 `ThisDocument` Word 檔層級專案的類別中，以選擇性 ref 參數呼叫方法。
 
 ## <a name="example-in-excel"></a>Excel 範例
  <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> 方法有許多選擇性參數。 某些參數可以指定值，其他還可以接受預設值，如下列程式碼範例所示。 這個範例需要有名為 `Sheet1` 工作表類別的文件層級專案。
@@ -48,7 +50,7 @@ ms.locfileid: "90839094"
  [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]
 
 ## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>在 Word 的 Visual c # 檔層級專案中，于 ThisDocument 類別中使用方法的選擇性參數
- Word 物件模型包含許多具有可接受值之選擇性 **ref** 參數的方法 <xref:System.Object> 。 不過，您無法**ref** `ThisDocument` 在 Word 的 Visual c # 檔層級專案中，省略所產生類別之方法的選擇性 ref 參數。 Visual c # 可讓您只針對介面的方法（而非類別）省略選擇性的 **ref** 參數。 例如，下列程式碼範例不會進行編譯，因為您不能省略類別的方法的選擇性 **ref** 參數 <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> `ThisDocument` 。
+ Word 物件模型包含許多具有可接受值之選擇性 **ref** 參數的方法 <xref:System.Object> 。 不過，您無法 `ThisDocument` 在 Word 的 Visual c # 檔層級專案中，省略所產生類別之方法的選擇性 ref 參數。 Visual c # 可讓您只針對介面的方法（而非類別）省略選擇性的 **ref** 參數。 例如，下列程式碼範例不會進行編譯，因為您不能省略類別的方法的選擇性 **ref** 參數 <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> `ThisDocument` 。
 
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]
 

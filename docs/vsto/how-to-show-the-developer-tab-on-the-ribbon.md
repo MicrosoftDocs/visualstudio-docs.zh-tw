@@ -1,5 +1,7 @@
 ---
 title: 如何：在功能區顯示開發人員索引標籤
+description: 瞭解如何使用 Visual Studio，以程式設計方式在 Microsoft Word 檔的功能區上顯示 [開發人員] 索引標籤。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41070c92d0c27c1ee8fbf480f7461c22421b8fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545843"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528150"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>如何：在功能區顯示開發人員索引標籤
   若要存取 Office 應用程式功能區上的 [ **開發人員** ] 索引標籤，您必須將它設定為顯示該索引標籤，因為預設不會顯示此索引標籤。 例如，如果您要將 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 加入至 Word 文件層級自訂中，您必須顯示此索引標籤。
@@ -38,7 +40,7 @@ ms.locfileid: "85545843"
 
 1. 啟動本主題支援的任何 Office 應用程式。 請參閱本主題稍早的 **適用物件：** 附注。
 
-2. **在 [檔案] 索引**標籤上，選擇 [**選項**] 按鈕。
+2. **在 [檔案] 索引** 標籤上，選擇 [**選項**] 按鈕。
 
      下圖顯示 Office 2010 **中的 [** 檔案] 索引標籤和 [ **選項** ] 按鈕。
 

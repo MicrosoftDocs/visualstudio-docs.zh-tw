@@ -1,5 +1,7 @@
 ---
 title: NamedRange 控制項
+description: 瞭解 NamedRange 控制項是具有唯一名稱、公開事件及可系結至資料的範圍。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2b5b5d246e1033148bc199da6e7d2bdfb7aa9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1881afb0dd718eec3815ab9de3becbeaf070f5d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254720"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528086"
 ---
 # <a name="namedrange-control"></a>NamedRange 控制項
   <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項是具有唯一名稱、可公開事件及繫結至資料的範圍。 如需詳細資訊，請參閱 [Excel 物件模型總覽](../vsto/excel-object-model-overview.md)。
@@ -50,7 +52,7 @@ ms.locfileid: "71254720"
  可套用至 <xref:Microsoft.Office.Interop.Excel.Range> 的格式，也可套用至 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項。 這包括框線、字型、數位格式和樣式。
 
 ## <a name="rename-the-control"></a>重新命名控制項
- 當您將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項從 [工具箱] **** 加入工作表時，Visual Studio 會自動產生該控制項的名稱。 您可以在 [屬性] **** 視窗中變更該名稱。
+ 當您將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項從 [工具箱] 加入工作表時，Visual Studio 會自動產生該控制項的名稱。 您可以在 [屬性]  視窗中變更該名稱。
 
 ## <a name="events"></a>事件
  下列事件適用於 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項：

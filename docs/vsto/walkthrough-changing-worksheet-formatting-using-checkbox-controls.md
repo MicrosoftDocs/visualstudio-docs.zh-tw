@@ -1,5 +1,7 @@
 ---
 title: 使用 CheckBox 控制項變更工作表格式
+description: 瞭解如何使用 Visual Studio 中的 Office 程式開發工具建立程式碼，並將其加入至您的專案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328695"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527218"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>逐步解說：使用 CheckBox 控制項變更工作表格式
   本逐步解說會示範在 Microsoft Office Excel 工作表上使用核取方塊來變更格式的基本概念。 您將在 Visual Studio 中使用 Office 開發工具來建立程式碼，並將其新增至您的專案。 若要以完整範例的形式查看結果，請參閱 [Office 開發範例和](../vsto/office-development-samples-and-walkthroughs.md)逐步解說中的 Excel 控制項範例。
@@ -49,7 +51,7 @@ ms.locfileid: "67328695"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 建立名稱為 **My Excel 格式**的 Excel 活頁簿專案。 確定已選取 [ **建立新檔** ]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 建立名稱為 **My Excel 格式** 的 Excel 活頁簿專案。 確定已選取 [ **建立新檔** ]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 [ **我的 Excel 格式** ] 專案加入 **方案總管**。
 
@@ -60,7 +62,7 @@ ms.locfileid: "67328695"
 
 1. 確認活頁簿已在 Visual Studio 表設計工具中開啟，而且 `Sheet1` 已開啟。
 
-2. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將 <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> 控制項拖曳至**Sheet1**中的或接近資料格**B2** 。
+2. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將 <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> 控制項拖曳至 **Sheet1** 中的或接近資料格 **B2** 。
 
 3. 從 [ **View** ] 功能表選取 [ **屬性** 視窗]。
 
@@ -83,7 +85,7 @@ ms.locfileid: "67328695"
     |屬性|值|
     |--------------|-----------|
     |**名稱**|**applyUnderlineFont**|
-    |**Text**|**強調**|
+    |**Text**|**Underline**|
 
 7. 按住 **Ctrl** 鍵同時選取全部三個核取方塊控制項。
 
@@ -94,7 +96,7 @@ ms.locfileid: "67328695"
      接下來，您要將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項拖曳至工作表。
 
     > [!NOTE]
-    > 您也可以在 <xref:Microsoft.Office.Tools.Excel.NamedRange> [**名稱**] 方塊中輸入**textFont**來新增控制項。
+    > 您也可以在 <xref:Microsoft.Office.Tools.Excel.NamedRange> [**名稱**] 方塊中輸入 **textFont** 來新增控制項。
 
 #### <a name="to-add-text-to-a-namedrange-control"></a>將文字加入至 NamedRange 控制項
 
@@ -102,11 +104,11 @@ ms.locfileid: "67328695"
 
 2. 確認 **$B $9** 出現在 [可編輯] 文字方塊中，且已選取 [ **B9** ] 儲存格。 如果不是，請按一下 [ **資料格]，然後** 選取它。
 
-3. 按一下 [確定]  。
+3. 按一下 [確定]。
 
 4. 資料格 **B9** 會成為名為的範圍 `NamedRange1` 。
 
-    工作表上沒有可見的指示，但 `NamedRange1` 會出現在 [**名稱**] 方塊中， (在選取 [資料格] 時， **B9**) 左邊的工作表的正上方。
+    工作表上沒有可見的指示，但 `NamedRange1` 會出現在 [**名稱**] 方塊中， (在選取 [資料格] 時， ) 左邊的工作表的正上方。
 
 5. 確定 **NamedRange1** 顯示在 [ **屬性** ] 視窗的 [物件名稱] 清單方塊中，然後變更下列屬性：
 

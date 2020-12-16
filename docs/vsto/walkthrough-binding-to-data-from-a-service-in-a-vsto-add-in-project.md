@@ -1,5 +1,7 @@
 ---
 title: 在 VSTO 增益集專案中系結至服務的資料
+description: 瞭解如何將控制項新增至 Microsoft Word 檔、將控制項系結至從 MSDN Content Service 取出的資料，以及在執行時間回應事件。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b65308cfc0ba4dee33dd6b20d3fd4028e9ea22e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72381323"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527483"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>逐步解說：在 VSTO 增益集專案中系結至服務的資料
   您可以將資料繫結至 VSTO 增益集專案中的主控制項。 本逐步解說示範如何將控制項加入 Microsoft Office Word 文件、將控制項繫結至從 MSDN 內容服務擷取的資料，以及在執行階段回應事件。
@@ -48,7 +50,7 @@ ms.locfileid: "72381323"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 使用 Visual Basic 或 C#，建立名稱為 [MTPS 內容服務] **** 的 Word VSTO 增益集專案。
+1. 使用 Visual Basic 或 C#，建立名稱為 [MTPS 內容服務] 的 Word VSTO 增益集專案。
 
      如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
@@ -61,17 +63,17 @@ ms.locfileid: "72381323"
 
 1. 在 [ **資料** ] 功能表上，請按一下 [ **加入新資料來源**]。
 
-2. 在 [資料來源組態精靈] **** 中，按一下 [服務] ****，然後按 [下一步] ****。
+2. 在 [資料來源組態精靈] 中，按一下 [服務] ，然後按 [下一步] 。
 
-3. 在 [位址] **** 欄位中，輸入下列 URL：
+3. 在 [位址]  欄位中，輸入下列 URL：
 
    `http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
 
 4. 按一下 **[移至]**。
 
-5. 在 [命名空間] **** 欄位中，輸入 **ContentService**，然後按一下 [確定] ****。
+5. 在 [命名空間]  欄位中，輸入 **ContentService**，然後按一下 [確定] 。
 
-6. 在 [加入參考精靈] **** 對話方塊中，按一下 [完成] ****。
+6. 在 [加入參考精靈]  對話方塊中，按一下 [完成] 。
 
 ## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>在執行時間加入內容控制項並系結至資料
  在 VSTO 增益集專案中，您會在執行階段加入及繫結控制項。 針對此逐步解說，請設定內容控制項，以便在使用者按一下控制項內部時，從 web 服務中取出資料。

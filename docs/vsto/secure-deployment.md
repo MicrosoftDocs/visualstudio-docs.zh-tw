@@ -1,5 +1,7 @@
 ---
 title: 安全部署
+description: 瞭解如何使用憑證來簽署解決方案，或使用 ClickOnce 信任提示索引鍵，以提供信任決策作為基礎的辨識項。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c838eddea5b3118c28fb33411a8c58a19d7b4a2d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b47a18aa3e791d446abc2a57b6aad1f139924ebf
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810950"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528472"
 ---
 # <a name="secure-deployment"></a>安全部署
   當您建立 Office 方案時，會自動更新您的開發電腦，以允許專案中的程式碼執行。 不過，當您部署方案時，您必須使用憑證來簽署解決方案，或使用信任提示金鑰，以提供信任決策作為基礎的辨識 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 項。 如需詳細資訊，請參閱 [授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)。
@@ -32,9 +34,9 @@ ms.locfileid: "90810950"
 ## <a name="prevent-office-solutions-from-running-code"></a>防止 Office 解決方案執行程式碼
  系統管理員可以使用登錄來防止所有 Office 方案在電腦上執行。 當開啟具有 managed 程式碼擴充功能的 Office 方案時，Visual Studio Tools for Office 執行時間會檢查 `Disabled` 電腦上下列其中一個登錄機碼下是否有名稱的專案：
 
-- **HKEY_CURRENT_USER \Software\Microsoft\VSTO**
+- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**
 
-- **HKEY_LOCAL_MACHINE \Software\Microsoft\VSTO**
+- **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**
 
   若要防止 Office 方案執行程式碼，請 `Disabled` 在其中一個或兩個登錄機碼底下建立一個專案，並指定下列其中一種資料類型和值 `Disabled` ：
 

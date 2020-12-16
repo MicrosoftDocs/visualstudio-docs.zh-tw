@@ -1,5 +1,7 @@
 ---
 title: '逐步解說：在 Visual c # 專案中呼叫 VBA 的程式碼'
+description: 瞭解如何從活頁簿中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Excel 檔層級自訂中的方法。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92297954"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527303"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>逐步解說：在 Visual c # 專案中呼叫 VBA 的程式碼
   本逐步解說示範如何從活頁簿中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Office Excel 文件層級自訂中的方法。 這個程序和三個基本步驟相關：將方法加入 `Sheet1` 主項目類別、將方法公開至活頁簿中的 VBA 程式碼，然後從活頁簿中的 VBA 程式碼呼叫此方法。
@@ -66,18 +68,18 @@ ms.locfileid: "92297954"
 
 1. 啟動 Excel。
 
-2. 將使用中的檔儲存為 **Excel Macro-Enabled 活頁簿 (\* . xlsm) ** 的名稱為 **WorkbookWithVBA**。 將它儲存至方便取用的位置，例如桌面。
+2. 將使用中的檔儲存為 **Excel Macro-Enabled 活頁簿 (\* . xlsm)** 的名稱為 **WorkbookWithVBA**。 將它儲存至方便取用的位置，例如桌面。
 
-3. 按一下 [功能區] 上的 [開發人員] **** 索引標籤。
+3. 按一下 [功能區] 上的 [開發人員]  索引標籤。
 
     > [!NOTE]
-    > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
+    > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
 
-4. 在 [程式碼] **** 群組中，按一下 [Visual Basic] ****。
+4. 在 [程式碼]  群組中，按一下 [Visual Basic] 。
 
      [Visual Basic 編輯器] 隨即開啟。
 
-5. 按兩下 [專案] **** 視窗中的 [ThisWorkbook] ****。
+5. 按兩下 [專案]  視窗中的 [ThisWorkbook] 。
 
      `ThisWorkbook` 物件的程式碼檔隨即開啟。
 
@@ -99,52 +101,52 @@ ms.locfileid: "92297954"
 
 2. 在 **[檔案]** 功能表上，指向 **[開新檔案]** ，然後按一下 **[專案]** 。
 
-3. 在範本窗格中，展開 [Visual C#] ****，然後展開 [Office/SharePoint] ****。
+3. 在範本窗格中，展開 [Visual C#] ，然後展開 [Office/SharePoint] 。
 
-4. 選取 [Office 增益集] **** 節點。
+4. 選取 [Office 增益集]  節點。
 
-5. 在專案範本清單中，選取 [Excel 2010 活頁簿] **** 或 [Excel 2013 活頁簿] **** 專案。
+5. 在專案範本清單中，選取 [Excel 2010 活頁簿]  或 [Excel 2013 活頁簿]  專案。
 
-6. 在 [名稱] **** 方塊中，輸入 **CallingCodeFromVBA**。
+6. 在 [名稱]  方塊中，輸入 **CallingCodeFromVBA**。
 
-7. 按一下 [確定]  。
+7. 按一下 [確定]。
 
-     隨即開啟 [Visual Studio Tools for Office 專案精靈] **** 。
+     隨即開啟 [Visual Studio Tools for Office 專案精靈]  。
 
-8. 選取 [複製現有文件] ****，然後在 [現有文件的完整路徑] **** 方塊中，指定您先前建立之 **WorkbookWithVBA** 活頁簿的位置。 如果您使用已啟用巨集的自有活頁簿，則改為指定該活頁簿的位置。
+8. 選取 [複製現有文件] ，然後在 [現有文件的完整路徑]  方塊中，指定您先前建立之 **WorkbookWithVBA** 活頁簿的位置。 如果您使用已啟用巨集的自有活頁簿，則改為指定該活頁簿的位置。
 
-9. 按一下 [完成]  。
+9. 按一下 [完成] 。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會在設計工具中開啟 **WorkbookWithVBA** 活頁簿，並將 [CallingCodeFromVBA] **** 專案加入 [方案總管] ****。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會在設計工具中開啟 **WorkbookWithVBA** 活頁簿，並將 [CallingCodeFromVBA]  專案加入 [方案總管] 。
 
 ## <a name="trust-the-location-of-the-workbook"></a>信任活頁簿的位置
- 您必須先信任活頁簿中要執行的 VBA，才能將方案中的程式碼公開至活頁簿中的 VBA 程式碼。 有數種方法能完成這項操作。 在本逐步解說中，您會藉由在 Excel 的 [信任中心] **** 中信任活頁簿的位置來完成這項工作。
+ 您必須先信任活頁簿中要執行的 VBA，才能將方案中的程式碼公開至活頁簿中的 VBA 程式碼。 有數種方法能完成這項操作。 在本逐步解說中，您會藉由在 Excel 的 [信任中心]  中信任活頁簿的位置來完成這項工作。
 
 ### <a name="to-trust-the-location-of-the-workbook"></a>信任活頁簿的位置
 
 1. 啟動 Excel。
 
-2. 按一下 [檔案] **** 索引標籤。
+2. 按一下 [檔案]  索引標籤。
 
-3. 按一下 [Excel 選項] **** 按鈕。
+3. 按一下 [Excel 選項]  按鈕。
 
-4. 在分類窗格中，按一下 [信任中心] ****。
+4. 在分類窗格中，按一下 [信任中心] 。
 
-5. 在詳細資料窗格中，按一下 [信任中心設定] ****。
+5. 在詳細資料窗格中，按一下 [信任中心設定] 。
 
-6. 在分類窗格中，按一下 [信任位置] ****。
+6. 在分類窗格中，按一下 [信任位置] 。
 
-7. 在詳細資料窗格中，按一下 [新增位置] ****。
+7. 在詳細資料窗格中，按一下 [新增位置] 。
 
-8. 在 [Microsoft Office 信任位置] **** 對話方塊中，瀏覽至包含 [CallingCodeFromVBA] **** 專案的資料夾。
+8. 在 [Microsoft Office 信任位置]  對話方塊中，瀏覽至包含 [CallingCodeFromVBA]  專案的資料夾。
 
-9. 選取 [同時信任此位置的子資料夾] ****。
+9. 選取 [同時信任此位置的子資料夾] 。
 
-10. 按一下 [Microsoft Office 信任位置] **** 對話方塊中的 [確定] ****。
+10. 按一下 [Microsoft Office 信任位置]  對話方塊中的 [確定] 。
 
-11. 按一下 [信任中心] **** 對話方塊中的 [確定] ****。
+11. 按一下 [信任中心]  對話方塊中的 [確定] 。
 
-12. 按一下 [Excel 選項] **** 對話方塊中的 [確定] ****。
+12. 按一下 [Excel 選項]  對話方塊中的 [確定] 。
 
 13. 結束 **Excel**。
 
@@ -153,7 +155,7 @@ ms.locfileid: "92297954"
 
 ### <a name="to-add-a-method-to-the-sheet1-class"></a>將方法加入 Sheet1 類別
 
-1. 在 [方案總管] **** 中，以滑鼠右鍵按一下 [Sheet1.cs] ****，然後按一下 [檢視程式碼] ****。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下 [Sheet1.cs] ，然後按一下 [檢視程式碼] 。
 
      **Sheet1.cs** 檔案隨即在 [程式碼編輯器] 中開啟。
 
@@ -176,11 +178,11 @@ ms.locfileid: "92297954"
 
 1. 在 **Sheet1.cs** 程式碼檔案中，按一下 `Sheet1` 類別中的任意處。
 
-2. 按一下 [重構] **** 功能表上的 [擷取介面] ****。
+2. 按一下 [重構]  功能表上的 [擷取介面] 。
 
-3. 在 [擷取介面] **** 對話方塊的 [選取 Public 成員以形成介面] **** 方塊中，按一下 `CreateVstoNamedRange` 方法的項目。
+3. 在 [擷取介面]  對話方塊的 [選取 Public 成員以形成介面]  方塊中，按一下 `CreateVstoNamedRange` 方法的項目。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定]。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會產生名稱為 `ISheet1`的新介面，而且會修改 `Sheet1` 類別的定義，以便實作 `ISheet1` 介面。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 也會在 [程式碼編輯器] 中開啟 **ISheet1.cs** 檔案。
 
@@ -191,17 +193,17 @@ ms.locfileid: "92297954"
 6. 建置專案。
 
 ## <a name="expose-the-method-to-vba-code"></a>將方法公開至 VBA 程式碼
- 若要將 `CreateVstoNamedRange` 方法公開至活頁簿中的 VBA 程式碼，請將 **主項目的** ReferenceAssemblyFromVbaProject `Sheet1` 屬性設定為 [True] ****。
+ 若要將 `CreateVstoNamedRange` 方法公開至活頁簿中的 VBA 程式碼，請將 **主項目的** ReferenceAssemblyFromVbaProject `Sheet1` 屬性設定為 [True] 。
 
 ### <a name="to-expose-the-method-to-vba-code"></a>將方法公開至 VBA 程式碼
 
-1. 按兩下 [方案總管] **** 中的 **Sheet1.cs**。
+1. 按兩下 [方案總管] 中的 **Sheet1.cs**。
 
      **WorkbookWithVBA** 檔案隨即在設計工具中開啟，並顯示 Sheet1。
 
-2. 在 [屬性] **** 視窗中，選取 **ReferenceAssemblyFromVbaProject** 屬性，然後將值變更為 [True] ****。
+2. 在 [屬性]  視窗中，選取 **ReferenceAssemblyFromVbaProject** 屬性，然後將值變更為 [True] 。
 
-3. 按一下訊息中顯示的 [確定] **** 。
+3. 按一下訊息中顯示的 [確定]  。
 
 4. 建置專案。
 
@@ -215,11 +217,11 @@ ms.locfileid: "92297954"
 
 1. 按 **F5** 執行您的專案。
 
-2. 在 [開發人員] **** 索引標籤上的 [程式碼] **** 群組中，按一下 [Visual Basic] ****。
+2. 在 [開發人員]  索引標籤上的 [程式碼]  群組中，按一下 [Visual Basic] 。
 
      [Visual Basic 編輯器] 隨即開啟。
 
-3. 按一下 [插入] **** 功能表上的 [模組] ****。
+3. 按一下 [插入]  功能表上的 [模組] 。
 
 4. 將下列程式碼加入新模組。
 
@@ -235,7 +237,7 @@ ms.locfileid: "92297954"
 
 5. 按 **F5**。
 
-6. 在開啟的活頁簿中，按一下 [Sheet1] **** 上的儲存格 [A1] ****。 確認訊息方塊是否出現。
+6. 在開啟的活頁簿中，按一下 [Sheet1]  上的儲存格 [A1] 。 確認訊息方塊是否出現。
 
 7. 結束 Excel 但不儲存變更。
 

@@ -1,5 +1,7 @@
 ---
 title: 功能區總覽
+description: 瞭解功能區如何組織相關的命令，以便更容易尋找，以及命令如何以控制項的形式出現在功能區上。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985604"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527978"
 ---
 # <a name="ribbon-overview"></a>功能區總覽
   功能區是一種組織相關命令的方式，可讓您更輕鬆地找到它們。 命令會以控制項形式出現在功能區上。 在應用程式視窗的上邊緣，會將控制群組織成 *群組* 和水準帶狀。 相關的群組會組織在索引標籤上。
@@ -37,12 +39,12 @@ ms.locfileid: "72985604"
 
 - **功能區 (視覺化設計工具)**
 
-- **功能區 (XML) **
+- **功能區 (XML)**
 
   例如，若要自訂 Excel 功能區，請將功能區項目加入 Excel VSTO 增益集專案。
 
 ### <a name="ribbon-visual-designer-item"></a>功能區 (視覺化設計工具) 專案
- **功能區 (的視覺化設計工具) **專案提供了先進的工具，可讓您更輕鬆地設計及開發自訂功能區。 使用 **功能區 (的視覺化設計工具) ** 專案，以下列方式自訂功能區：
+ **功能區 (的視覺化設計工具)** 專案提供了先進的工具，可讓您更輕鬆地設計及開發自訂功能區。 使用 **功能區 (的視覺化設計工具)** 專案，以下列方式自訂功能區：
 
 - 將自訂或內建索引標籤加入至功能區。
 
@@ -55,10 +57,10 @@ ms.locfileid: "72985604"
 
 - 將自訂控制項加入 Backstage 檢視。
 
-  如需如何使用 **功能區 (視覺化設計工具) ** 專案自訂功能區的詳細資訊，請參閱 [功能區設計](../vsto/ribbon-designer.md)工具。
+  如需如何使用 **功能區 (視覺化設計工具)** 專案自訂功能區的詳細資訊，請參閱 [功能區設計](../vsto/ribbon-designer.md)工具。
 
 ### <a name="ribbon-xml-item"></a>功能區 (XML) 專案
- 如果您想要以**功能區 (視覺化設計工具) **專案不支援的方式自訂功能區，請使用**功能區 (XML) **專案。 使用 **功能區 (XML) ** 專案以下列方式自訂功能區：
+ 如果您想要以 **功能區 (視覺化設計工具)** 專案不支援的方式自訂功能區，請使用 **功能區 (XML)** 專案。 使用 **功能區 (XML)** 專案以下列方式自訂功能區：
 
 - 將 *內建* 組新增至自訂索引標籤或內建索引標籤。
 
@@ -70,12 +72,12 @@ ms.locfileid: "72985604"
 
 - 使用限定 ID 在 VSTO 增益集之間共用功能區自訂。
 
-  如需如何使用 **功能區 (XML) ** 專案自訂功能區的詳細資訊，請參閱 [功能區 XML](../vsto/ribbon-xml.md)。
+  如需如何使用 **功能區 (XML)** 專案自訂功能區的詳細資訊，請參閱 [功能區 XML](../vsto/ribbon-xml.md)。
 
 ## <a name="export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>將功能區設計工具的功能區匯出至功能區 XML
- 如果您使用功能區設計工具建立功能區，然後決定要以 **功能區 (視覺化設計工具) ** 專案不支援的方式自訂功能區，您可以將功能區匯出至 XML。
+ 如果您使用功能區設計工具建立功能區，然後決定要以 **功能區 (視覺化設計工具)** 專案不支援的方式自訂功能區，您可以將功能區匯出至 XML。
 
- Visual Studio 會自動建立 **功能區 (XML) ** 專案，並在功能區 xml 檔案中填入功能區上每個控制項的元素和屬性。
+ Visual Studio 會自動建立 **功能區 (XML)** 專案，並在功能區 xml 檔案中填入功能區上每個控制項的元素和屬性。
 
  並非在功能區設計工具的 [ **屬性** ] 視窗中的所有屬性都會傳送到功能區 XML 檔案。  例如，Visual Studio 不會匯出 **Image** 或 **Text** 屬性的值。 這是因為您必須在已匯出專案的功能區程式碼檔中建立回呼方法，才能指派映像或設定控制項的文字。 Visual Studio 不會自動產生回呼方法作為匯出程序的一部分。
 
@@ -93,7 +95,7 @@ ms.locfileid: "72985604"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>在專案中加入多個功能區專案
  一個專案中可以加入多個功能區項目。 如果您想要執行下列兩項工作的其中之一，這會很有用：
 
-- 建立 Outlook *檢查*器的功能區。 如需詳細資訊，請參閱 [自訂 Outlook 功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
+- 建立 Outlook *檢查* 器的功能區。 如需詳細資訊，請參閱 [自訂 Outlook 功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
 
     > [!NOTE]
     > [偵測器] 是使用者執行特定工作時開啟的視窗，例如建立電子郵件訊息。
@@ -106,7 +108,7 @@ ms.locfileid: "72985604"
  若要選取要在執行時間顯示的功能區，請覆寫 `CreateRibbonExtensibilityObject` 專案的、或類別中的方法， `ThisAddin` 並傳回 `ThisWorkbook` `ThisDocument` 您要顯示的功能區。 下列範例會檢查名為的欄位值 `myCondition` ，並傳回適當的功能區。
 
 > [!NOTE]
-> 此範例中使用的語法會傳回使用 **功能區 (視覺化設計工具) ** 專案所建立的功能區。 使用 **功能區 (XML) ** 專案所建立之功能區的語法稍有不同。 如需 ** (XML) 專案傳回功能區 ** 的詳細資訊，請參閱 [功能區 XML](../vsto/ribbon-xml.md)。
+> 此範例中使用的語法會傳回使用 **功能區 (視覺化設計工具)** 專案所建立的功能區。 使用 **功能區 (XML)** 專案所建立之功能區的語法稍有不同。 如需 **(XML) 專案傳回功能區** 的詳細資訊，請參閱 [功能區 XML](../vsto/ribbon-xml.md)。
 
  新增下列程式碼：
 
@@ -117,7 +119,7 @@ ms.locfileid: "72985604"
 
 |標題|描述|
 |-----------|-----------------|
-|[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)|示範如何自訂 Microsoft Office 應用程式的功能區、將 **功能區 (視覺化設計工具) ** 或 **功能區 (XML) ** 專案加入 Office 專案。|
+|[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)|示範如何自訂 Microsoft Office 應用程式的功能區、將 **功能區 (視覺化設計工具)** 或 **功能區 (XML)** 專案加入 Office 專案。|
 |[功能區設計工具](../vsto/ribbon-designer.md)|描述如何使用功能區設計工具，將自訂索引標籤、群組和控制項新增至 Microsoft Office 應用程式的功能區。|
 |[逐步解說：使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|示範如何使用功能區設計工具建立自訂的功能區索引標籤。 您可以使用功能區設計工具，在自訂的索引標籤中加入和放置控制項。|
 |[功能區物件模型總覽](../vsto/ribbon-object-model-overview.md)|提供可在執行階段取得和設定功能區控制項屬性之強類型物件模型的概觀。|
@@ -127,8 +129,8 @@ ms.locfileid: "72985604"
 |[在執行時間存取功能區](../vsto/accessing-the-ribbon-at-run-time.md)|顯示如何顯示、隱藏和修改功能區，以及讓使用者從自訂工作窗格、執行窗格或 Outlook 表單區域中的控制項執行程式碼。|
 |[如何：變更功能區上的索引標籤位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|顯示如何變更功能區上的索引標籤順序。|
 |[如何：自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)|示範如何在內建索引標籤中加入群組和控制項。|
-|[如何：將控制項加入至 Backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)|顯示如何將控制項新增至按一下檔案時**開啟的功能表。**|
+|[如何：將控制項加入至 Backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)|顯示如何將控制項新增至按一下檔案時 **開啟的功能表。**|
 |[如何：在功能區群組中加入對話方塊啟動程式](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|顯示將對話方塊啟動器新增至功能區上的任何群組。|
 |[如何：將功能區設計工具的功能區匯出至功能區 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|示範如何從設計工具將功能區匯出至功能區 XML，以 advanced 的方式自訂功能區。|
 |[Ribbon XML](../vsto/ribbon-xml.md)|說明如何使用功能區 XML 來自訂功能區。|
-|[逐步解說：使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|示範如何使用 **功能區 (XML) ** 專案來建立自訂功能區索引標籤。|
+|[逐步解說：使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|示範如何使用 **功能區 (XML)** 專案來建立自訂功能區索引標籤。|

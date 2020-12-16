@@ -1,5 +1,7 @@
 ---
 title: 活頁簿主專案
+description: 瞭解活頁簿主專案是一種類型，可從 Microsoft Excel 的主要 interop 元件擴充活頁簿類型。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 797f1a55ec7632114e411bf0ba08e7f4e0cc146e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d3d5b7efadefd77be7ce25026c8f485ee0ef133
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255075"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528349"
 ---
 # <a name="workbook-host-item"></a>活頁簿主專案
   <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目是可從 Excel 的主要 Interop 組件擴充 <xref:Microsoft.Office.Interop.Excel.Workbook> 類型的一種類型。 <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目除了提供與 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件相同的所有屬性、方法和事件之外，也會提供其他功能。
@@ -39,14 +41,14 @@ ms.locfileid: "71255075"
 
  `ThisWorkbook` 類別提供了一個位置，供您開始在專案中撰寫程式碼。 由於該類別會提供與 Excel 之主要 Interop 組件中的 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件相同的所有屬性、方法和事件，因此您也可以使用 `ThisWorkbook` 存取 Excel 的物件模型。 如需詳細資訊，請參閱 [Excel 物件模型總覽](../vsto/excel-object-model-overview.md)。
 
- 按兩下 [方案總管] **** 中的 [ThisWorkbook] **** 專案項目以顯示活頁簿設計工具，並在 [屬性] **** 視窗中檢視活頁簿的屬性和事件。
+ 按兩下 [方案總管]  中的 [ThisWorkbook]  專案項目以顯示活頁簿設計工具，並在 [屬性]  視窗中檢視活頁簿的屬性和事件。
 
 ### <a name="limitations-of-the-workbook-host-item-in-document-level-projects"></a>檔層級專案中的活頁簿主專案限制
  文件層級專案只能包含一個 <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目 (也就是 `ThisWorkbook` 類別)。 您無法在設計階段將新的 <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目加入專案，也無法在執行階段從文件層級自訂建立新的 <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目。
 
  如果您在執行階段建立新的 Excel 活頁簿，該活頁簿會是 <xref:Microsoft.Office.Interop.Excel.Workbook>類型。 由於這不是主項目，因此無法包含任何主控制項或 Windows Forms 控制項。 如需在執行時間建立活頁簿的詳細資訊，請參閱 [如何：以程式設計方式建立新](../vsto/how-to-programmatically-create-new-workbooks.md)的活頁簿。
 
- <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目不能做為主控制項的容器。 因此，您無法將任何可見的控制項加入活頁簿，但您可以加入 <xref:System.Data.DataSet>等元件，讓所有工作表都能共用這些元件。 在文件層級專案中，您可以在 [工具箱] **** 的 [元件] **** 索引標籤、[資料] **** 索引標籤和 [所有 Windows Forms] **** 索引標籤上，找到活頁簿可用的元件。
+ <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目不能做為主控制項的容器。 因此，您無法將任何可見的控制項加入活頁簿，但您可以加入 <xref:System.Data.DataSet>等元件，讓所有工作表都能共用這些元件。 在文件層級專案中，您可以在 [工具箱]  的 [元件]  索引標籤、[資料]  索引標籤和 [所有 Windows Forms] 索引標籤上，找到活頁簿可用的元件。
 
 > [!NOTE]
 > Visual Studio 中的 Office 開發工具不支援共用活頁簿。

@@ -1,5 +1,7 @@
 ---
 title: 專案解決方案
+description: 瞭解如何使用 VSTO 增益集來自動化專案、擴充專案功能，或自訂專案使用者介面 (UI) 。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84dfe7cf86df2139b06a320d1c6441665a08a1b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c44e1208daaef11cb7fd9bd22e3e3ae574ca610d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985642"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527508"
 ---
 # <a name="project-solutions"></a>專案解決方案
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 提供的專案範本可用來建立 Microsoft Office Project 的 VSTO 增益集。 您可以使用 VSTO 增益集來自動化 Project、擴充 Project 功能，或自訂 Project 的使用者介面 (UI)。

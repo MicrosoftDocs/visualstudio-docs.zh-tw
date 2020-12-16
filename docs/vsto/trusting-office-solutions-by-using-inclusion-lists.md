@@ -1,5 +1,7 @@
 ---
 title: 使用包含清單來信任 Office 方案
+description: 瞭解包含清單如何讓使用者將信任授與以識別發行者的憑證簽署的 Office 方案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a4787831be31e2f91d668d4e3e7ca91496d7595a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bb5c111b4c75298ee55bc64dfbb2d0dd4b6c8b5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985540"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527462"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>使用包含清單來信任 Office 方案
   內含清單可讓使用者將信任授與使用可識別發行者的憑證所簽署的 Office 方案。 內含清單是使用者專屬的，可以用於文件層級自訂和 VSTO 增益集。

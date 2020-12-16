@@ -1,5 +1,7 @@
 ---
 title: 使用 CheckBox 控制項變更檔案格式
+description: 瞭解如何在 Microsoft Word 的檔層級自訂中使用 Windows Forms 控制項來變更文字格式。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24c3cb8d76551bb477f9c13cc56c313519f3b617
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328730"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527250"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>逐步解說：使用 CheckBox 控制項變更檔案格式
   本逐步解說示範如何在 Microsoft Office Word 的檔層級自訂中使用 Windows Forms 控制項，以變更文字格式。
@@ -65,7 +67,7 @@ ms.locfileid: "67328730"
 
 2. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將第一個 <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> 控制項拖曳至檔。
 
-3. 在 [屬性] **** 視窗中變更下列屬性。
+3. 在 [屬性]  視窗中變更下列屬性。
 
     |屬性|值|
     |--------------|-----------|
@@ -88,7 +90,7 @@ ms.locfileid: "67328730"
     |屬性|值|
     |--------------|-----------|
     |**名稱**|**applyUnderlineFont**|
-    |**Text**|**強調**|
+    |**Text**|**Underline**|
 
 ### <a name="add-text-and-a-bookmark-control"></a>新增文字和書簽控制項
 
@@ -102,9 +104,9 @@ ms.locfileid: "67328730"
 
 3. 選取您新增至檔的文字，然後按一下 **[確定]**。
 
-    <xref:Microsoft.Office.Tools.Word.Bookmark>名為**Bookmark1**的控制項會加入至檔中選取的文字。
+    <xref:Microsoft.Office.Tools.Word.Bookmark>名為 **Bookmark1** 的控制項會加入至檔中選取的文字。
 
-4. 在 [ **屬性** ] 視窗中，將 [ ** (名稱) ** ] 屬性的值變更為 **fontText。**
+4. 在 [ **屬性** ] 視窗中，將 [ **(名稱)** ] 屬性的值變更為 **fontText。**
 
    接下來，撰寫程式碼，以在核取或清除核取方塊時格式化文字。
 

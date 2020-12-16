@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式在搜尋後還原選取專案
+description: 瞭解如何在 Microsoft Word 檔中搜尋之後，使用 Visual Studio 以程式設計方式還原選項。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 452e483600f6da0eacd5337b42c728145bcfe8aa
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d396602a5d2bc0c3a90d32256bf226348abff3f3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584777"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528271"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>如何：以程式設計方式在搜尋後還原選取專案
   如果您找到並取代檔中的文字，您可能會想要在搜尋完成後還原使用者的原始選取範圍。

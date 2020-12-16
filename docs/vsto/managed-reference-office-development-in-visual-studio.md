@@ -1,5 +1,7 @@
 ---
 title: 在 Visual Studio) 中 (Office 開發的受控參考
+description: 深入瞭解以 .NET Framework 為目標的 Office 專案中所使用之命名空間和類型的 API 參考檔。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20ae614ceef76a0ab5789c04212a3facfa571662
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 044ba7e4858a87dea1894f647f110d62b840aa42
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583745"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528511"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>在 Visual Studio) 中 (Office 開發的受控參考
   本節包含命名空間的應用程式開發介面參考文件，和用在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](includes/net-v45-md.md)]之 Office 專案中的類型。 如需有關以 .NET Framework 3.5 為目標的 Office 專案所使用之命名空間和類型的 API 參考檔，請參閱 Visual Studio 檔中的下列參考章節： [Visual Studio) 中 (Office 開發的 Managed 參考 ](managed-reference-office-development-in-visual-studio.md)。

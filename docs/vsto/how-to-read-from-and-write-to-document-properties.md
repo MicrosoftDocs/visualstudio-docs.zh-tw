@@ -1,5 +1,7 @@
 ---
 title: 如何：讀取和寫入檔案屬性
+description: 瞭解如何使用 Visual Studio 來取得或設定 Microsoft Excel 和 Microsoft Word 中的檔案屬性。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adad9ec70290f426ce7c3c59ad13ff8636a69463
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60ee5ccebc9c6c38369ed707c9d2043ffc1995c9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541319"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528211"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>如何：讀取和寫入檔案屬性
   文件屬性可與文件一起儲存。 Office 應用程式提供許多內建屬性，例如作者、標題和主旨。 本主題說明如何設定 Microsoft Office Excel 和 Microsoft Office Word 的文件屬性。

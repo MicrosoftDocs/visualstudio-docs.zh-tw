@@ -1,5 +1,7 @@
 ---
 title: 如何：調整 ListObject 控制項的大小
+description: 瞭解如何使用 Visual Studio 以程式設計方式調整 Microsoft Excel 活頁簿中 ListObject 控制項的大小。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68a9841d8471189538959a311bf9349199d55f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c401f3938679c72cee3a07c4bff79a5777fcbc1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545830"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528528"
 ---
 # <a name="how-to-resize-listobject-controls"></a>如何：調整 ListObject 控制項的大小
   在將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入 Microsoft Office Excel 活頁簿時，會設定該控制項的大小，不過也可以稍後再進行調整。 例如，您可能想要將兩個資料行的清單變更為三個資料行。
@@ -38,7 +40,7 @@ ms.locfileid: "85545830"
   如需控制項的詳細資訊 <xref:Microsoft.Office.Tools.Excel.ListObject> ，請參閱 [ListObject 控制項](../vsto/listobject-control.md)。
 
 ## <a name="resize-a-listobject-control-at-design-time"></a><a name="designtime"></a> 在設計階段調整 ListObject 控制項的大小
- 若要調整清單的大小，您可以按一下並拖曳其中一個調整大小控點，或是在 [調整清單大小] **** 對話方塊中重新定義其大小。
+ 若要調整清單的大小，您可以按一下並拖曳其中一個調整大小控點，或是在 [調整清單大小]  對話方塊中重新定義其大小。
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>使用 [調整清單大小] 對話方塊調整清單的大小
 
@@ -50,7 +52,7 @@ ms.locfileid: "85545830"
 
 3. 選取資料表的新資料範圍。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定]。
 
 ## <a name="resize-a-listobject-control-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> 在檔層級專案中，于執行時間調整 ListObject 控制項的大小
  您可以使用 <xref:Microsoft.Office.Tools.Excel.ListObject> 方法在執行階段調整 <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> 控制項的大小。 您無法使用此方法將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項移至工作表上的新位置。 標頭必須留在相同的資料列，且已調整大小的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項必須與原始的清單物件重疊。 已調整大小的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項必須包含標頭資料列，和至少一個資料列。

@@ -22,7 +22,7 @@
       href: uninstall.md
 - name: 使用者帳戶
   items:
-    - name: 總覽
+    - name: 概觀
       href: user-accounts.md
     - name: 登入
       href: signing-in.md
@@ -202,6 +202,8 @@
       href: visual-studio-experience-improvement-program.md
     - name: 回報問題
       href: report-a-problem.md
+    - name: 疑難排解：如何發行現有延伸模組的新版本？
+      href: migrate-extensions.md
     - name: 疑難排解：Visual Studio for Mac 是否支援 Team Foundation 版本控制？
       href: tf-version-control.md
     - name: 疑難排解：為什麼我看不到所有範本？

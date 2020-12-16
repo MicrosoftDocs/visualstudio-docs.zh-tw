@@ -1,5 +1,7 @@
 ---
 title: Office 專案範本總覽
+description: 瞭解 Visual Studio 中的 Microsoft Office 開發人員工具如何包含用於建立不同類型 Office 方案的專案範本。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83b04795386cfec80a8a309a9a84da04f6df105
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e3203eb4bbd7339f5e59ecffea8436b02180b8b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926594"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528078"
 ---
 # <a name="office-project-templates-overview"></a>Office 專案範本總覽
   Visual Studio 中的 Microsoft Office 開發人員工具包含專案範本，用來建立下列類型的 Office 方案：
@@ -92,7 +94,7 @@ ms.locfileid: "68926594"
 - [逐步解說：建立 Excel 的第一個檔層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
 ## <a name="vsto-add-ins"></a><a name="AppLevel"></a> VSTO 增益集
- [新增專案] **** 對話方塊中的 [Office/SharePoint] **** 節點提供下列專案範本，讓您開始建立 VSTO 增益集。
+ [新增專案]  對話方塊中的 [Office/SharePoint]  節點提供下列專案範本，讓您開始建立 VSTO 增益集。
 
 - **Excel 2013 和 2016 VSTO 增益集**
 
@@ -164,7 +166,7 @@ ms.locfileid: "68926594"
  如果 Microsoft Office Word 範本具有 Managed 程式碼擴充，當範本是以全域範本的形式附加，或是從 Word 的 [啟動] 目錄載入時，便不會呼叫專案組件。 此外，文件也無法辨識屬於 Office 方案一部分的範本格式。
 
 ## <a name="excel-add-ins-xla-files"></a>Excel 增益集 ( bam.xla 檔案) 
- 沒有 Office 專案可用於建立 Excel VSTO 增益集 (*bam.xla* 檔案) 。 雖然可以將活頁簿存成 .xla 檔案，但這不是支援的作業，不建議這樣做。 如果您將具有 managed 程式碼延伸模組的活頁簿儲存為 **Microsoft Office Excel 增益集 (\* . bam.xla) ** 檔案，您可以在 [ **增益集** ] 對話方塊中選取該活頁簿，以套用至另一個活頁簿。 在某些情況下，套用 VSTO 增益集之後，您的程式碼會在目標活頁簿中執行，但是不支援這種 Office 方案的用途。
+ 沒有 Office 專案可用於建立 Excel VSTO 增益集 (*bam.xla* 檔案) 。 雖然可以將活頁簿存成 .xla 檔案，但這不是支援的作業，不建議這樣做。 如果您將具有 managed 程式碼延伸模組的活頁簿儲存為 **Microsoft Office Excel Add-In (\* . bam.xla)** 檔案，您可以在 [ **增益集** ] 對話方塊中加以選取，以套用至另一個活頁簿。 在某些情況下，套用 VSTO 增益集之後，您的程式碼會在目標活頁簿中執行，但是不支援這種 Office 方案的用途。
 
 ## <a name="see-also"></a>另請參閱
 - [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)

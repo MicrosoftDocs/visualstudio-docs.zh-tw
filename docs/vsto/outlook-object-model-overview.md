@@ -1,5 +1,7 @@
 ---
 title: Outlook 物件模型總覽
+description: 瞭解如何與 Outlook 物件模型提供的物件互動，以開發 Microsoft Outlook 的 VSTO 增益集。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6545815a0a24a3ba8579298151194fdd81edee77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83ada85ba346e83e5bc5ebc01e91b11be0e844e1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985685"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528054"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 物件模型總覽
   若要開發 Microsoft Office Outlook 的 VSTO 增益集，您可以與 Outlook 物件模型提供的物件進行互動。 Outlook 物件模型會提供表示使用者介面中各種項目的類別和介面。 例如， <xref:Microsoft.Office.Interop.Outlook.Application> 物件表示整個應用程式、 <xref:Microsoft.Office.Interop.Outlook.Folder> 物件表示含有電子郵件訊息或其他項目的資料夾，而 <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件則表示電子郵件訊息。
@@ -97,17 +99,17 @@ ms.locfileid: "72985685"
  如需示範如何存取預設 <xref:Microsoft.Office.Interop.Outlook.Folder> 並建立新的範例 <xref:Microsoft.Office.Interop.Outlook.Folder> ，請參閱 [如何：以程式設計方式建立自訂資料夾專案](../vsto/how-to-programmatically-create-custom-folder-items.md)。
 
 ### <a name="mailitem-object"></a>MailItem 物件
- <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件表示電子郵件訊息。 <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件通常是位於 [收件匣] ****、[寄件備份] **** 和 [寄件匣] **** 這類資料夾中。 <xref:Microsoft.Office.Interop.Outlook.MailItem> 會公開可用來建立和傳送電子郵件訊息的屬性和方法。
+ <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件表示電子郵件訊息。 <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件通常是位於 [收件匣] 、[寄件備份] 和 [寄件匣] 這類資料夾中。 <xref:Microsoft.Office.Interop.Outlook.MailItem> 會公開可用來建立和傳送電子郵件訊息的屬性和方法。
 
  如需示範如何建立電子郵件訊息的範例，請參閱 [如何：以程式設計方式建立電子郵件專案](../vsto/how-to-programmatically-create-an-e-mail-item.md)。
 
 ### <a name="appointmentitem-object"></a>AppointmentItem 物件
- <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 物件表示 [行事曆] **** 資料夾中的會議、一次性約會或是週期性約會或會議。 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 物件含有一些可執行回應或轉寄會議邀請等動作的方法，以及一些可指定地點和時間等會議細節的屬性。
+ <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 物件表示 [行事曆]  資料夾中的會議、一次性約會或是週期性約會或會議。 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 物件含有一些可執行回應或轉寄會議邀請等動作的方法，以及一些可指定地點和時間等會議細節的屬性。
 
  如需示範如何建立約會的範例，請參閱 [如何：以程式設計方式建立會議要求](../vsto/how-to-programmatically-create-a-meeting-request.md)。
 
 ### <a name="taskitem-object"></a>TaskItem 物件
- <xref:Microsoft.Office.Interop.Outlook.TaskItem> 物件表示要在指定的時間範圍內執行的工作。 <xref:Microsoft.Office.Interop.Outlook.TaskItem> 物件是位在 [工作] **** 資料夾中。
+ <xref:Microsoft.Office.Interop.Outlook.TaskItem> 物件表示要在指定的時間範圍內執行的工作。 <xref:Microsoft.Office.Interop.Outlook.TaskItem> 物件是位在 [工作]  資料夾中。
 
  若要建立工作，請使用 [物件的](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) CreateItem <xref:Microsoft.Office.Interop.Outlook.Application> 方法，並傳入 <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> 值做為參數。
 

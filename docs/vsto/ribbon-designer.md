@@ -1,5 +1,7 @@
 ---
 title: 功能區設計工具
+description: 瞭解如何使用功能區設計工具，將自訂索引標籤、群組和控制項新增至 Microsoft Office 應用程式的功能區。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -26,19 +28,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1c2941b0c088a832540fd3380c993fe2c380b44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985618"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528000"
 ---
 # <a name="ribbon-designer"></a>功能區設計工具
   功能區設計工具是一種視覺化設計畫布。 您可以使用功能區設計工具，將自訂索引標籤、群組和控制項新增至 Microsoft Office 應用程式的功能區。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
- 若要開啟功能區設計工具，請將 **功能區 (的視覺化設計工具) ** 專案加入至您的專案。 然後，您可以使用設計工具來執行下列工作：
+ 若要開啟功能區設計工具，請將 **功能區 (的視覺化設計工具)** 專案加入至您的專案。 然後，您可以使用設計工具來執行下列工作：
 
 - [設計功能區版面配置](#DesigningRibbonLayout)
 
@@ -50,26 +52,26 @@ ms.locfileid: "72985618"
 > 您可以使用功能區設計工具來完成一些工作。 如需這些工作以及如何完成這些工作的詳細資訊，請參閱 [功能區總覽](../vsto/ribbon-overview.md)。
 
 ## <a name="add-a-ribbon-visual-designer-item-to-a-project"></a>將功能區 (視覺化設計工具) 專案加入至專案
- 若要使用功能區設計工具，請在您的專案中加入新的 **功能區 (的視覺化設計工具) ** 專案。 如需詳細資訊，請參閱 [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。
+ 若要使用功能區設計工具，請在您的專案中加入新的 **功能區 (的視覺化設計工具)** 專案。 如需詳細資訊，請參閱 [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。
 
- 當您加入新的 **功能區 (視覺化設計工具) ** 專案時，Visual Studio 會自動將下列檔案加入至您的專案：
+ 當您加入新的 **功能區 (視覺化設計工具)** 專案時，Visual Studio 會自動將下列檔案加入至您的專案：
 
-- 功能區程式碼檔案。 這個檔案的名稱是您在 [**加入新專案**] 對話方塊中， ** (視覺化設計工具) 專案的功能區**所指定的名稱。 加入程式碼來處理這個檔案的功能區事件。
+- 功能區程式碼檔案。 這個檔案的名稱是您在 [**加入新專案**] 對話方塊中， **(視覺化設計工具) 專案的功能區** 所指定的名稱。 加入程式碼來處理這個檔案的功能區事件。
 
 - 功能區設計工具程式碼檔案。 這個檔案包含功能區設計工具所產生的程式碼，不應該直接編輯。
 
 - 資源檔。 這個檔案包含功能區上每個控制項的屬性值。
 
-  如果您已經有一個 **功能區 (視覺化設計工具) ** 專案來自另一個專案，則可以使用 [ **加入現有專案** ] 對話方塊在目前的專案中重複使用它。
+  如果您已經有一個 **功能區 (視覺化設計工具)** 專案來自另一個專案，則可以使用 [ **加入現有專案** ] 對話方塊在目前的專案中重複使用它。
 
 ## <a name="design-a-ribbon"></a><a name="DesigningRibbonLayout"></a> 設計功能區
  開啟功能區設計工具的方法有三種：
 
-- 在 **方案總管**中，按兩下功能區程式碼檔案。
+- 在 **方案總管** 中，按兩下功能區程式碼檔案。
 
-- 在 **方案總管**中，以滑鼠右鍵按一下功能區程式碼檔案，然後按一下 [ **視圖設計**工具]。
+- 在 **方案總管** 中，以滑鼠右鍵按一下功能區程式碼檔案，然後按一下 [ **視圖設計** 工具]。
 
-- 在**方案總管**中，選取功能區程式碼檔案，然後按一下 [ **View** ] 功能表上的 [**設計**工具]。
+- 在 **方案總管** 中，選取功能區程式碼檔案，然後按一下 [ **View** ] 功能表上的 [**設計** 工具]。
 
   [功能區設計工具] 包含預設索引標籤和群組。 您可以從功能區設計工具中移除預設索引標籤和群組。 若要移除預設群組，請以滑鼠右鍵按一下 [ **Group1**]，然後按一下 [ **刪除**]。 若要移除預設索引標籤，請在設計介面的空白區域上按一下滑鼠右鍵，然後按一下 [ **移除功能區]** 索引標籤。
 
@@ -139,16 +141,16 @@ ms.locfileid: "72985618"
 |控制|描述|
 |-------------|-----------------|
 |**Box**|在群組中組織控制項的容器。 除了分隔符號、群組或索引標籤之外，您還可以將任何控制項新增至方塊。方塊可以是水準或垂直。|
-|**Button**|啟動動作的按鈕。 您可以將按鈕加入至群組、按鈕群組、下拉式清單、資源庫、功能表或分割按鈕。|
+|**按鈕**|啟動動作的按鈕。 您可以將按鈕加入至群組、按鈕群組、下拉式清單、資源庫、功能表或分割按鈕。|
 |**ButtonGroup**|包含一或多個按鈕、切換按鈕、功能表、分割按鈕和圖庫的群組。 您可以將按鈕群組新增至群組或功能表。|
 |**CheckBox**|選取或清除以開啟或關閉選項的方塊。|
 |**ComboBox**|已附加清單方塊的編輯方塊。 使用者可以輸入或選取其選擇。 方塊會顯示目前的選取範圍。 在 <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> 功能區載入至 Office 應用程式之前或之後，使用屬性在執行時間加入和移除專案。|
-|**DropDown**|使用者可以選取的專案清單。 使用者無法在下拉式清單中輸入新專案。<br /><br /> 您 <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> 可以使用屬性將專案加入至清單。 您可以在執行時間加入和移除專案。<br /><br /> 您 <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> 可以使用屬性，將按鈕加入至清單。 不過，在功能區載入至 Office 應用程式之後，您無法在執行時間加入和移除按鈕。|
+|**拉**|使用者可以選取的專案清單。 使用者無法在下拉式清單中輸入新專案。<br /><br /> 您 <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> 可以使用屬性將專案加入至清單。 您可以在執行時間加入和移除專案。<br /><br /> 您 <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> 可以使用屬性，將按鈕加入至清單。 不過，在功能區載入至 Office 應用程式之後，您無法在執行時間加入和移除按鈕。|
 |**編輯方塊**|使用者可以在其中輸入文字的方塊。|
-|**庫**|此功能表會顯示使用者可以選取的視覺效果選擇的陣列或方格。 您可以控制功能表中選取專案的版面配置。 您 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> 可以使用和 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> 屬性，指定將顯示資源庫之專案和按鈕的資料列和資料行數目。|
+|**主機庫**|此功能表會顯示使用者可以選取的視覺效果選擇的陣列或方格。 您可以控制功能表中選取專案的版面配置。 您 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> 可以使用和 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> 屬性，指定將顯示資源庫之專案和按鈕的資料列和資料行數目。|
 |**標籤**|您可以用來識別功能區上控制項的文字。|
 |**功能表**|可以包含下列任何控制項的下拉式清單：<br /><br /> -按鈕<br />-核取方塊<br />-資源庫<br />-功能表<br />-分割按鈕<br />-切換按鈕<br />-分隔符號<br /><br /> 若要將控制項加入至功能區設計工具中的功能表，請按一下功能表中的向下箭號，以公開功能表設計介面。 然後，您可以將功能區控制項從 [ **工具箱** ] 拖曳到功能表上。 若要排列控制項，請將其拖曳至想要的位置。<br /><br /> 若要在 <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> 功能區載入至 Office 應用程式之後將控制項加入至，您必須在 <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> 載入功能區之前將屬性設定為 **true** 。 如需如何進行此作業的詳細資訊，請參閱 [功能區物件模型總覽](../vsto/ribbon-object-model-overview.md)。|
-|**分離**|用來分隔清單中專案的精簡型列。 當加入至群組時，橫條會垂直。 當加入至功能表時，橫條是水準的。|
+|**Separator**|用來分隔清單中專案的精簡型列。 當加入至群組時，橫條會垂直。 當加入至功能表時，橫條是水準的。|
 |**SplitButton**|已附加功能表的按鈕。 分割按鈕可以包含下列任何控制項：<br /><br /> -按鈕<br />-核取方塊<br />-資源庫<br />-功能表<br />-分割按鈕<br />-切換按鈕<br />-分隔符號<br /><br /> 如同功能表，[分割] 按鈕有自己的設計介面。 但是，與功能表不同的是，在功能區載入至 Office 應用程式之前，您只能在分割按鈕中更新專案。 如需如何更新分割按鈕中專案的詳細資訊，請參閱 [功能區物件模型總覽](../vsto/ribbon-object-model-overview.md)。|
 |**ToggleButton**|顯示為已按下或未按下的按鈕。|
 
@@ -157,14 +159,14 @@ ms.locfileid: "72985618"
 
  您可以按兩下設計工具上的任何控制項，以開啟控制項預設事件的事件處理常式。 您可以使用 [ **屬性** ] 視窗，為所有其他控制項事件建立事件處理常式。
 
- 功能區事件和屬性位於 <xref:Microsoft.Office.Tools.Ribbon> 命名空間中。 **功能區 (視覺化設計工具) **專案會自動將參考加入至專案中的這個元件，並在功能區程式碼檔案的頂端插入適當的**using**或**Imports**語句。
+ 功能區事件和屬性位於 <xref:Microsoft.Office.Tools.Ribbon> 命名空間中。 **功能區 (視覺化設計工具)** 專案會自動將參考加入至專案中的這個元件，並在功能區程式碼檔案的頂端插入適當的 **using** 或 **Imports** 語句。
 
  如需處理功能區事件，以及在執行時間設定功能區控制項屬性的詳細資訊，請參閱 [功能區物件模型總覽](../vsto/ribbon-object-model-overview.md)。
 
 ## <a name="customize-backstage-view"></a><a name="CustomizingMicrosoftOfficeButton"></a> 自訂 Backstage 檢視
  您可以使用功能區設計工具，將控制項加入至按一下 [檔案] 索引標籤時 **開啟的功能表** 。此功能表稱為 Backstage view。
 
- 您無法使用功能區設計工具，將控制項放在內建控制項之前或之後。 內建控制項是在 Backstage view 中已顯示的控制項。 如果您想要在內建控制項之前或之後放置控制項，您必須使用功能區 XML。 如需 **功能區 (XML) **的詳細資訊，請參閱 [功能區 xml](../vsto/ribbon-xml.md)。 如需自訂 Backstage 檢視的詳細資訊，請參閱 [適用于開發人員的 office 2010 Backstage 檢視簡介](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) 和 [自訂開發人員適用的 office 2010 backstage 視圖](/previous-versions/office/developer/office-2010/ee815851(v=office.14))。
+ 您無法使用功能區設計工具，將控制項放在內建控制項之前或之後。 內建控制項是在 Backstage view 中已顯示的控制項。 如果您想要在內建控制項之前或之後放置控制項，您必須使用功能區 XML。 如需 **功能區 (XML)** 的詳細資訊，請參閱 [功能區 xml](../vsto/ribbon-xml.md)。 如需自訂 Backstage 檢視的詳細資訊，請參閱 [適用于開發人員的 office 2010 Backstage 檢視簡介](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) 和 [自訂開發人員適用的 office 2010 backstage 視圖](/previous-versions/office/developer/office-2010/ee815851(v=office.14))。
 
  [!INCLUDE[appliesto_ribbon_2010](../vsto/includes/appliesto-ribbon-2010-md.md)]
 
@@ -180,7 +182,7 @@ ms.locfileid: "72985618"
 |將控制項移至清單中的上一個控制項之前。|**Ctrl** +**向上**<br /><br /> **Ctrl** +**左方**|
 |將控制項移到清單中的下一個控制項之後。|**Ctrl** +**向下**<br /><br /> **Ctrl** +**Right**|
 |將選取範圍從一個控制項移至相同群組中的另一個控制項。 針對下拉式面板，在父控制項和下拉式面板中的控制項之間移動。|**Up**<br /><br /> **向下**|
-|逐一查看所有控制項。|**索引標籤**|
+|逐一查看所有控制項。|**Tab**|
 |反復查看所有控制項的反向。|**Shift** +**Tab**|
 |刪除選取的控制項或控制項集。|**刪除**|
 |複製選取的控制項。|**Ctrl** +**C**|
@@ -193,10 +195,10 @@ ms.locfileid: "72985618"
 
 |動作|鍵盤快速鍵|
 |------------|-----------------------|
-|如果下拉式面板已開啟，並已在下拉式面板上選取控制項，請選取父控制項。|**離開**|
-|如果下拉式面板已開啟且已選取父控制項，請關閉下拉式面板。|**離開**|
-|開啟下拉式面板。|**對**|
-|如果下拉式面板已開啟，請選取下拉式面板上的第一個控制項。|**對**|
+|如果下拉式面板已開啟，並已在下拉式面板上選取控制項，請選取父控制項。|**Left**|
+|如果下拉式面板已開啟且已選取父控制項，請關閉下拉式面板。|**Left**|
+|開啟下拉式面板。|**Right**|
+|如果下拉式面板已開啟，請選取下拉式面板上的第一個控制項。|**Right**|
 |關閉下拉式面板。|**Esc**|
 
 ## <a name="see-also"></a>另請參閱

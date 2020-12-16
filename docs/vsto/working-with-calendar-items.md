@@ -1,5 +1,7 @@
 ---
 title: 使用行事曆專案
+description: 瞭解 AppointmentItem 類別包含您用來執行行事曆專案工作的方法和屬性。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d9c0f634ce95814ba746325e8efd67228653775
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38bf1aa02d72621bc1bcc7376a15ea975feb0860
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008725"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528314"
 ---
 # <a name="work-with-calendar-items"></a>使用行事曆專案
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 類別包含您用來執行行事曆項目工作的方法和屬性。

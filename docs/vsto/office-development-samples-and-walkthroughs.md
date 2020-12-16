@@ -1,5 +1,7 @@
 ---
 title: Office 開發範例和逐步解說
+description: 深入瞭解範例應用程式、範例程式碼和逐步解說，其中顯示用來建立 Office 方案的語法、結構和技術。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b5b1c34ef295558c42d181032dcf3dd7c456289
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551677"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527726"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 開發範例和逐步解說
   本節包含範例應用程式、範例程式碼和逐步解說，說明用來建立 Microsoft Office 解決方案的語法、結構和技術。

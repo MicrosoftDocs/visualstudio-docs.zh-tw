@@ -1,5 +1,7 @@
 ---
 title: Office 檔上的密碼保護
+description: 瞭解如何在 Microsoft Word 檔和 Excel 活頁簿上設定密碼，讓未經授權的使用者無法開啟。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,21 +18,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6beaf85000438846e5d440e48c9722b9660f9bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62977896"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528067"
 ---
 # <a name="password-protection-on-office-documents"></a>Office 檔上的密碼保護
-  您可以在 Microsoft Office Word 檔上設定密碼，並 Microsoft Office Excel 活頁簿，讓不知道密碼的人可以開啟這些活頁簿。 此選項 **在開啟**時稱為「密碼」。
+  您可以在 Microsoft Office Word 檔上設定密碼，並 Microsoft Office Excel 活頁簿，讓不知道密碼的人可以開啟這些活頁簿。 此選項 **在開啟** 時稱為「密碼」。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
  您可以使用已啟用「 **開啟」密碼** 的現有檔和活頁簿來建立檔層級專案。 在 [ **開啟] 開啟** 的 Word 和 Excel 檔中，Visual Studio 的行為不同。
 
- 如需在 **開啟時啟用密碼**的相關資訊，請參閱 Word 或 Excel 中的說明。
+ 如需在 **開啟時啟用密碼** 的相關資訊，請參閱 Word 或 Excel 中的說明。
 
 ## <a name="behavior-of-excel-and-word"></a>Excel 和 Word 的行為
  每次在 **開啟 [開啟** ] 的 Visual Studio 中開啟 excel 活頁簿時，excel 都會提示您輸入密碼。 當您建立方案時，系統會再次提示您輸入密碼，因為檔會在組建期間開啟。

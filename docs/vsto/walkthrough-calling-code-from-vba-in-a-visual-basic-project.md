@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：在 Visual Basic 專案中呼叫 VBA 的程式碼
+description: 瞭解如何從檔中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Word 檔層級自訂中的方法。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298266"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527381"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>逐步解說：在 Visual Basic 專案中呼叫 VBA 的程式碼
   本逐步解說示範如何從文件中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Office Word 文件層級自訂中的方法。 這個程序和三個基本步驟相關：將方法加入 `ThisDocument` 主項目類別、將方法公開至 VBA 程式碼，然後從文件中的 VBA 程式碼呼叫此方法。
@@ -65,18 +67,18 @@ ms.locfileid: "92298266"
 
 1. 啟動 Word。
 
-2. 將使用中的檔儲存為 **啟用巨集 Word 檔 (\* docm) ** 名稱為 **DocumentWithVBA**。 將它儲存在方便取用的位置，例如桌面。
+2. 將使用中的檔儲存為 **啟用巨集 Word 檔 (\* docm)** 名稱為 **DocumentWithVBA**。 將它儲存在方便取用的位置，例如桌面。
 
-3. 按一下 [功能區] 上的 [開發人員] **** 索引標籤。
+3. 按一下 [功能區] 上的 [開發人員]  索引標籤。
 
     > [!NOTE]
-    > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
+    > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
 
-4. 在 [程式碼] **** 群組中，按一下 [Visual Basic] ****。
+4. 在 [程式碼]  群組中，按一下 [Visual Basic] 。
 
      [Visual Basic 編輯器] 隨即開啟。
 
-5. 按兩下 [專案] **** 視窗中的 [ThisDocument] ****。
+5. 按兩下 [專案]  視窗中的 [ThisDocument] 。
 
      `ThisDocument` 物件的程式碼檔隨即開啟。
 
@@ -96,54 +98,54 @@ ms.locfileid: "92298266"
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **[檔案]** 功能表上，指向 **[開新檔案]** ，然後按一下 **[專案]** 。 如果您的 IDE 設定為使用 Visual Basic 開發設定，請按一下 [檔案] **** 功能表上的 [新增專案] ****。
+2. 在 **[檔案]** 功能表上，指向 **[開新檔案]** ，然後按一下 **[專案]** 。 如果您的 IDE 設定為使用 Visual Basic 開發設定，請按一下 [檔案]  功能表上的 [新增專案] 。
 
-3. 在範本窗格中，展開 [Visual Basic] ****，然後展開 [Office/SharePoint] ****。
+3. 在範本窗格中，展開 [Visual Basic] ，然後展開 [Office/SharePoint] 。
 
-4. 選取 [Office 增益集] **** 節點。
+4. 選取 [Office 增益集]  節點。
 
-5. 在專案範本清單中，選取 [Word 2010 文件] **** 或 [Word 2013 文件] **** 專案。
+5. 在專案範本清單中，選取 [Word 2010 文件]  或 [Word 2013 文件]  專案。
 
-6. 在 [名稱] **** 方塊中，輸入 **CallingCodeFromVBA**。
+6. 在 [名稱]  方塊中，輸入 **CallingCodeFromVBA**。
 
-7. 按一下 [確定]  。
+7. 按一下 [確定]。
 
-     隨即開啟 [Visual Studio Tools for Office 專案精靈] **** 。
+     隨即開啟 [Visual Studio Tools for Office 專案精靈]  。
 
-8. 選取 [複製現有文件] ****，然後在 [現有文件的完整路徑] **** 方塊中，指定您先前建立之 **DocumentWithVBA** 文件的位置。 如果您使用已啟用巨集的自有文件，則改為指定該文件的位置。
+8. 選取 [複製現有文件] ，然後在 [現有文件的完整路徑]  方塊中，指定您先前建立之 **DocumentWithVBA** 文件的位置。 如果您使用已啟用巨集的自有文件，則改為指定該文件的位置。
 
-9. 按一下 [完成]  。
+9. 按一下 [完成] 。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在設計工具中開啟 **DocumentWithVBA** 檔，並將 **CallingCodeFromVBA** 專案新增至 **方案總管**。
 
 ## <a name="trust-the-location-of-the-document"></a>信任檔的位置
- 您必須先信任文件中要執行的 VBA，才能將方案中的程式碼公開至文件中的 VBA 程式碼。 有數種方法能完成這項操作。 針對此逐步解說，是在 Word 中的 [信任中心] **** 信任文件的位置。
+ 您必須先信任文件中要執行的 VBA，才能將方案中的程式碼公開至文件中的 VBA 程式碼。 有數種方法能完成這項操作。 針對此逐步解說，是在 Word 中的 [信任中心]  信任文件的位置。
 
 ### <a name="to-trust-the-location-of-the-document"></a>信任文件的位置
 
 1. 啟動 Word。
 
-2. 按一下 [檔案] **** 索引標籤。
+2. 按一下 [檔案]  索引標籤。
 
-3. 按一下 [Word 選項] **** 按鈕。
+3. 按一下 [Word 選項]  按鈕。
 
-4. 在分類窗格中，按一下 [信任中心] ****。
+4. 在分類窗格中，按一下 [信任中心] 。
 
-5. 在詳細資料窗格中，按一下 [信任中心設定] ****。
+5. 在詳細資料窗格中，按一下 [信任中心設定] 。
 
-6. 在分類窗格中，按一下 [信任位置] ****。
+6. 在分類窗格中，按一下 [信任位置] 。
 
-7. 在詳細資料窗格中，按一下 [新增位置] ****。
+7. 在詳細資料窗格中，按一下 [新增位置] 。
 
-8. 在 [Microsoft Office 信任位置] **** 對話方塊中，瀏覽至包含 [CallingCodeFromVBA] **** 專案的資料夾。
+8. 在 [Microsoft Office 信任位置]  對話方塊中，瀏覽至包含 [CallingCodeFromVBA]  專案的資料夾。
 
-9. 選取 [同時信任此位置的子資料夾] ****。
+9. 選取 [同時信任此位置的子資料夾] 。
 
-10. 按一下 [Microsoft Office 信任位置] **** 對話方塊中的 [確定] ****。
+10. 按一下 [Microsoft Office 信任位置]  對話方塊中的 [確定] 。
 
-11. 按一下 [信任中心] **** 對話方塊中的 [確定] ****。
+11. 按一下 [信任中心]  對話方塊中的 [確定] 。
 
-12. 按一下 [Word 選項] **** 對話方塊中的 [確定] ****。
+12. 按一下 [Word 選項]  對話方塊中的 [確定] 。
 
 13. 結束 Word。
 
@@ -152,7 +154,7 @@ ms.locfileid: "92298266"
 
 ### <a name="to-add-a-method-to-the-thisdocument-class"></a>將方法加入 ThisDocument 類別
 
-1. 在 [方案總管] **** 中，以滑鼠右鍵按一下 [ThisDocument.vb] ****，然後按一下 [檢視程式碼] ****。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下 [ThisDocument.vb] ，然後按一下 [檢視程式碼] 。
 
      **ThisDocument.vb** 檔案隨即在 [程式碼編輯器] 中開啟。
 
@@ -163,17 +165,17 @@ ms.locfileid: "92298266"
 3. 建置專案。
 
 ## <a name="expose-the-method-to-vba-code"></a>將方法公開至 VBA 程式碼
- 若要將 `CreateTable` 方法公開至文件中的 VBA 程式碼，請將 **主項目的** EnableVbaCallers `ThisDocument` 屬性設定為 [True] ****。
+ 若要將 `CreateTable` 方法公開至文件中的 VBA 程式碼，請將 **主項目的** EnableVbaCallers `ThisDocument` 屬性設定為 [True] 。
 
 ### <a name="to-expose-the-method-to-vba-code"></a>將方法公開至 VBA 程式碼
 
-1. 按兩下 [方案總管] **** 中的 **ThisDocument.vb**。
+1. 按兩下 [方案總管] 中的 **ThisDocument.vb**。
 
      **DocumentWithVBA** 檔案隨即在設計工具中開啟。
 
-2. 在 [屬性] **** 視窗中，選取 **EnableVbaCallers** 屬性，然後將值變更為 [True] ****。
+2. 在 [屬性]  視窗中，選取 **EnableVbaCallers** 屬性，然後將值變更為 [True] 。
 
-3. 按一下訊息中顯示的 [確定] **** 。
+3. 按一下訊息中顯示的 [確定]  。
 
 4. 建置專案。
 
@@ -187,11 +189,11 @@ ms.locfileid: "92298266"
 
 1. 按 **F5** 執行您的專案。
 
-2. 在 [開發人員] **** 索引標籤上的 [程式碼] **** 群組中，按一下 [Visual Basic] ****。
+2. 在 [開發人員]  索引標籤上的 [程式碼]  群組中，按一下 [Visual Basic] 。
 
      [Visual Basic 編輯器] 隨即開啟。
 
-3. 按一下 [插入] **** 功能表上的 [模組] ****。
+3. 按一下 [插入]  功能表上的 [模組] 。
 
 4. 將下列程式碼加入新模組。
 

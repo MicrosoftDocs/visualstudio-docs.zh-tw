@@ -1,5 +1,7 @@
 ---
 title: 程式檔層級自訂
+description: 瞭解如何使用檔層級自訂來擴充 Microsoft Word 或 Excel，讓您可以執行各種工作。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -27,12 +29,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d1908f72bce01956bbb2eeb62bb9bbc30a64b0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58dd8e1803fc0bd06f5c2295b29e9586e1f8eb68
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254025"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527514"
 ---
 # <a name="program-document-level-customizations"></a>程式檔層級自訂
   當您使用文件層級自訂擴充 Microsoft Office Word 或 Microsoft Office Excel 時，可以執行下列工作：
@@ -96,7 +98,7 @@ Me.Save()
 this.Save();
 ```
 
- 若要從 `ThisDocument` 類別外執行相同的動作，請使用 `Globals` 物件存取 `ThisDocument` 類別。 例如，如果您要在執行窗格 UI 中包含 [儲存] **** 按鈕，可以將這個程式碼加入執行窗格程式碼檔案。
+ 若要從 `ThisDocument` 類別外執行相同的動作，請使用 `Globals` 物件存取 `ThisDocument` 類別。 例如，如果您要在執行窗格 UI 中包含 [儲存]  按鈕，可以將這個程式碼加入執行窗格程式碼檔案。
 
 ```vb
 Globals.ThisDocument.Save()

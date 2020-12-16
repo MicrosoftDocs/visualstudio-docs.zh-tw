@@ -1,5 +1,7 @@
 ---
 title: 建立 Excel 的第一個檔層級自訂
+description: 建立 Microsoft Excel 的檔層級自訂。 只有在特定的活頁簿開啟時，才能使用您在這種方案中建立的功能。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b75bf6894bff4e5fa8d6ac17ed537f15041b3ede
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4183e84a930957b7cf87a6cc1e6fabcb21420785
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584998"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527947"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>逐步解說：建立 Excel 的第一個檔層級自訂
 
@@ -58,7 +60,7 @@ ms.locfileid: "91584998"
 
 2. 在 **[檔案]** 功能表上，指向 **[開新檔案]** ，然後按一下 **[專案]** 。
 ::: moniker range="vs-2017"
-3. 在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ****，然後展開 [Office/SharePoint] ****。
+3. 在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ，然後展開 [Office/SharePoint] 。
 
 4. 在展開的 [ **Office/SharePoint** ] 節點下，選取 [ **VSTO 增益集** ] 節點。
 
@@ -66,9 +68,9 @@ ms.locfileid: "91584998"
 
 6. 在 [ **名稱** ] 方塊中，輸入 **FirstWorkbookCustomization**。
 
-7. 按一下 [確定]  。
+7. 按一下 [確定]。
 
-8. 從 [ **Visual Studio Tools for Office 專案] Wizard**中選取 [**建立新檔**]，然後按一下 **[確定]**。
+8. 從 [ **Visual Studio Tools for Office 專案] Wizard** 中選取 [**建立新檔**]，然後按一下 **[確定]**。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. 在 [ **建立新專案** ] 對話方塊中，選取 [ **Excel VSTO 活頁簿** ] 專案。
@@ -77,9 +79,9 @@ ms.locfileid: "91584998"
 
 4. 按 [下一步]  。
 
-5. 在 [**設定您的新專案**] 對話方塊的 [**名稱**] 方塊中輸入**FirstWorkbookCustomization** ，然後按一下 [**建立**]。
+5. 在 [**設定您的新專案**] 對話方塊的 [**名稱**] 方塊中輸入 **FirstWorkbookCustomization** ，然後按一下 [**建立**]。
 
-6. 從 [ **Visual Studio Tools for Office 專案] Wizard**中選取 [**建立新檔**]，然後按一下 **[確定]**。
+6. 從 [ **Visual Studio Tools for Office 專案] Wizard** 中選取 [**建立新檔**]，然後按一下 **[確定]**。
 ::: moniker-end
    - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立 **FirstWorkbookCustomization** 專案，並將下列檔案加入至專案。
 
@@ -89,7 +91,7 @@ ms.locfileid: "91584998"
 
    - Sheet2 (Visual Basic 的 *.vb* 檔案或 Visual c # 的 *.cs* 檔案 ) -此工作表提供活頁簿中第二個工作表的設計介面和程式碼。
 
-   - 適用于 Visual c # 的 Visual Basic 或 *.cs*檔案的 Sheet3 (*.vb*檔 ) -提供活頁簿中第三個工作表的設計介面和程式碼的工作表。
+   - 適用于 Visual c # 的 Visual Basic 或 *.cs* 檔案的 Sheet3 (*.vb* 檔 ) -提供活頁簿中第三個工作表的設計介面和程式碼的工作表。
 
    - 適用于 Visual Basic 的 ThisWorkbook (*.vb* 檔案或 Visual c # 的 *.cs* 檔案 ) -包含活頁簿層級自訂的設計介面和程式碼。 如需詳細資訊，請參閱活頁 [簿主專案](../vsto/workbook-host-item.md)。
 
@@ -103,11 +105,11 @@ ms.locfileid: "91584998"
 
 1. 按一下設計工具視窗的 [ **關閉** ] 按鈕 (X) ，關閉活頁簿。
 
-2. 在 **方案總管**中，以滑鼠右鍵按一下 **Sheet1** 程式碼檔案，然後按一下 [ **視圖設計**工具]。
+2. 在 **方案總管** 中，以滑鼠右鍵按一下 **Sheet1** 程式碼檔案，然後按一下 [ **視圖設計** 工具]。
 
      \- 或 -
 
-     在 **方案總管**中，按兩下 **Sheet1** 程式碼檔案。
+     在 **方案總管** 中，按兩下 **Sheet1** 程式碼檔案。
 
 ## <a name="add-text-to-a-worksheet-in-the-designer"></a>在設計工具中將文字加入工作表
 
@@ -132,7 +134,7 @@ ms.locfileid: "91584998"
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>使用程式碼將第二行文字加入工作表
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **Sheet1**]，然後按一下 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **Sheet1**]，然後按一下 [ **視圖程式碼**]。
 
      程式碼檔案隨即在 Visual Studio 中開啟。
 
@@ -163,7 +165,7 @@ ms.locfileid: "91584998"
 
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>清除開發電腦上已完成的專案
 
-1. 在 Visual Studio 中，按一下 [建置] **** 功能表上的 [清除方案] ****。
+1. 在 Visual Studio 中，按一下 [建置]  功能表上的 [清除方案] 。
 
 ## <a name="next-steps"></a>後續步驟
 

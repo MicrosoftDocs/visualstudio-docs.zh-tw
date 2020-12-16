@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式建立新的 Visio 檔
+description: 瞭解如何以程式設計方式建立新的 Microsoft Visio 繪圖檔案，並將它加入至 open Visio 檔的檔集合。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 171ad93caf6b5c13d000073a0d7f7e82282b9b4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59c1fe0264a294692bea04b05e5e143fa28be801
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541527"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526848"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>如何：以程式設計方式建立新的 Visio 檔
   當您建立新的 Microsoft Office Visio 繪圖文件時，您會將它加入已開啟 Visio 文件的 `Microsoft.Office.Interop.Visio.Documents` 集合。 因此，`Microsoft.Office.Interop.Visio.Documents.Add` 方法會建立新的 Visio 繪圖文件。 如需詳細資訊，請參閱 Microsoft.Office.Interop.Visio.Documents.Add [myTemplate.vst](/office/vba/api/Visio.Documents.Add) 方法的 VBA 參考文件。
@@ -53,7 +55,7 @@ ms.locfileid: "85541527"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]
 
 ## <a name="create-documents-based-on-existing-templates"></a>根據現有範本建立檔
- `Microsoft.Office.Interop.Visio.Documents.Add`方法可以建立新*檔*， (以現有的 Visio (範本為基礎的 *.vsd*檔案) ) 。 這個方法會複製屬於範本工作區一部分的樣板、樣式和設定。 您必須提供範本的檔案名稱和完整路徑。
+ `Microsoft.Office.Interop.Visio.Documents.Add`方法可以建立新 *檔*， (以現有的 Visio (範本為基礎的 *.vsd* 檔案) ) 。 這個方法會複製屬於範本工作區一部分的樣板、樣式和設定。 您必須提供範本的檔案名稱和完整路徑。
 
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>建立以現有範本為基礎的新文件
 

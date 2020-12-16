@@ -1,5 +1,7 @@
 ---
 title: 使用資料表
+description: 深入瞭解使用 Microsoft Word 物件模型處理 Office 專案中資料表的逐步程式和程式碼範例。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1102a996f06634396f8bec3a02400fa952810e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27fdc776589879af6757967b18a7cac47f9f66df
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815348"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526863"
 ---
 # <a name="work-with-tables"></a>使用資料表
   本節中的主題針對在 Office 專案中使用 Microsoft Office Word 物件模型處理資料表，提供逐步程序和程式碼範例。 在某些情況下，您在 VSTO 增益集中執行這些工作的方式，不同於您在文件層級自訂中的執行方式。

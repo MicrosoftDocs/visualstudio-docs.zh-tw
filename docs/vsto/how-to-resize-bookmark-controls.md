@@ -1,5 +1,7 @@
 ---
 title: 如何：調整書簽控制項的大小
+description: 瞭解當您將書簽控制項新增至 Microsoft Word 檔時，如何使用 Visual Studio 設定書簽控制項的大小。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cc7b26bb767c233ed8699519261d4b5b708306b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d577f825337862de4ef967bb4f92f61ebbb0b45
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545856"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528198"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>如何：調整書簽控制項的大小
   您可以在將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入 Microsoft Office Word 文件時，設定控制項的大小； 也可以稍後再調整大小。
@@ -47,7 +49,7 @@ ms.locfileid: "85545856"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>在文件層級專案中，於設計階段調整書籤大小
 
-1. 選取 [屬性] **** 視窗中的書籤。
+1. 選取 [屬性]  視窗中的書籤。
 
 2. 增加或減少 <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> 屬性的值。
 
@@ -83,9 +85,9 @@ ms.locfileid: "85545856"
 
 1. 選取要包含在新 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項的文字。
 
-2. 按一下 [插入] **** 功能表上的 [書籤] ****。
+2. 按一下 [插入]  功能表上的 [書籤] 。
 
-3. 在 [書籤] **** 對話方塊中，輸入您要調整大小的書籤名稱，然後按一下 [加入] ****。
+3. 在 [書籤]  對話方塊中，輸入您要調整大小的書籤名稱，然後按一下 [加入] 。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：將書簽控制項新增至 Word 檔](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

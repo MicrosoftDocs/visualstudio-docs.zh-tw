@@ -1,5 +1,7 @@
 ---
 title: 功能區物件模型總覽
+description: 瞭解 Visual Studio Tools for Office 執行時間如何公開強型別物件模型，您可以在執行時間用來取得和設定功能區控制項的屬性。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ca22704345fefb4944bda7dd9f71942fe8dfb50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71256023"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527982"
 ---
 # <a name="ribbon-object-model-overview"></a>功能區物件模型總覽
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]會公開強型別物件模型，您可以在執行時間用來取得和設定功能區控制項的屬性。 例如，您可以動態填入功能表控制項，或顯示和隱藏內容控制項。 您也可以將索引標籤、群組和控制項加入至功能區，但只有在 Office 應用程式載入功能區之前。 如需詳細資訊，請參閱 [設定變成隻讀的屬性](#SettingReadOnlyProperties)。
@@ -27,12 +29,12 @@ ms.locfileid: "71256023"
  這個功能區物件模型主要是由 [功能區類別](#RibbonClass)、 [功能區事件](#RibbonEvents)和 [功能區控制項類別](#RibbonControlClasses)所組成。
 
 ## <a name="ribbon-class"></a><a name="RibbonClass"></a> 功能區類別
- 當您將新的 **功能區 (視覺化設計工具) ** 專案加入至專案時，Visual Studio 會將 **功能區** 類別加入至專案。 **功能區**類別繼承自 <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> 類別。
+ 當您將新的 **功能區 (視覺化設計工具)** 專案加入至專案時，Visual Studio 會將 **功能區** 類別加入至專案。 **功能區** 類別繼承自 <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> 類別。
 
  這個類別會以部分類別的形式出現在功能區程式碼檔和功能區設計工具程式碼檔案中。
 
 ## <a name="ribbon-events"></a><a name="RibbonEvents"></a> 功能區事件
- **功能區**類別包含下列三個事件：
+ **功能區** 類別包含下列三個事件：
 
 |事件|描述|
 |-----------|-----------------|
@@ -48,19 +50,19 @@ ms.locfileid: "71256023"
 |控制項名稱|類別名稱|
 |------------------|----------------|
 |**Box**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|
-|**Button**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|
+|**按鈕**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
-|**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
+|**拉**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
 |**編輯方塊**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
-|**庫**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**主機庫**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**群組**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
 |**標籤**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**功能表**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
-|**分離**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
+|**Separator**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
-|**索引標籤**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
+|**Tab**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 
  <xref:Microsoft.Office.Tools.Ribbon>命名空間會針對這些類型使用 "功能區" 前置詞，以避免名稱與命名空間中的控制項類別名稱衝突 <xref:System.Windows.Forms> 。

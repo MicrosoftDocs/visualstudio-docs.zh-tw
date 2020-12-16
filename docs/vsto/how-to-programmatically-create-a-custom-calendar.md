@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式建立自訂行事曆
+description: 使用這個範例，以程式設計方式建立名為 PersonalCalendar 的新行事曆資料夾，然後建立新的約會專案並將它加入行事曆資料夾中。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aab9e14c7fa4b4c70b2e61eca382af2ce787148c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d0a76189e96a6551408abe49b6e08a26c91ffa8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546051"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527834"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>如何：以程式設計方式建立自訂行事曆
-  這個範例會建立名為 **PersonalCalendar**的新行事曆資料夾，然後建立新的約會專案並將它加入行事曆資料夾中。 然後，程式碼會顯示行事曆資料夾。
+  這個範例會建立名為 **PersonalCalendar** 的新行事曆資料夾，然後建立新的約會專案並將它加入行事曆資料夾中。 然後，程式碼會顯示行事曆資料夾。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

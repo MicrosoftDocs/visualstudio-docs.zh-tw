@@ -1,5 +1,7 @@
 ---
 title: Outlook 方案
+description: 瞭解如何使用 VSTO 增益集將 Outlook 自動化、擴充 Outlook 功能，或自訂 Outlook 使用者介面 (UI) 。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ded4652704a47252f0839aed151f0557ae5e6766
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985678"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527549"
 ---
 # <a name="outlook-solutions"></a>Outlook 方案
   Visual Studio 提供的專案範本可用來建立 Microsoft Office Outlook 的 VSTO 增益集。 您可以使用 VSTO 增益集來自動化 Outlook、擴充 Outlook 功能，或自訂 Outlook 的使用者介面 (UI)。 如需 VSTO 增益集的詳細資訊，請參閱 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。
@@ -33,7 +35,7 @@ ms.locfileid: "72985678"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="create-an-outlook-vsto-add-in-project"></a>建立 Outlook VSTO 增益集專案
- 使用 [新增專案] **** 對話方塊中的 [Outlook 增益集] **** 專案範本建立 Outlook 專案。 這個範本包含必要的組件參考和專案檔。
+ 使用 [新增專案]  對話方塊中的 [Outlook 增益集]  專案範本建立 Outlook 專案。 這個範本包含必要的組件參考和專案檔。
 
  如需如何建立 VSTO 增益集專案的詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。 如需專案範本的詳細資訊，請參閱 [Office 專案範本總覽](../vsto/office-project-templates-overview.md)。
 
@@ -70,5 +72,5 @@ ms.locfileid: "72985678"
 |-----------|-----------------|
 |[Outlook 物件模型總覽](../vsto/outlook-object-model-overview.md)|提供 Outlook 物件模型提供的物件概觀。|
 |[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)|說明 Visual Studio 提供的工具，它們可讓您更輕鬆地設計、開發及偵錯表單區域。|
-|[逐步解說：建立 Outlook 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|示範如何建立 Microsoft Office Outlook 的 VSTO 增益集。|
+|[逐步解說：建立 Outlook 的第一個 VSTO Add-In](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|示範如何建立 Microsoft Office Outlook 的 VSTO 增益集。|
 |[Office 開發中的 Outlook 2010](/previous-versions/office/developer/office-2010/ff458122(v=office.14))|您可以在 MSDN Library 中，找到有關開發 Outlook 方案 (不限於使用 Visual Studio 的 Office 程式開發) 之文章和參考文件的區域。|

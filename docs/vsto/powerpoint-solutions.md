@@ -1,5 +1,7 @@
 ---
 title: PowerPoint 方案
+description: 瞭解 Visual Studio 提供可讓您用來建立 Microsoft PowerPoint VSTO 增益集的專案範本。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c41b2942b53c97222abf7308b6706a7cdc734df1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e297b0d269d5ff0bff0deeadd6bd346de00a324
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985661"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528046"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 方案
   Visual Studio 提供您可用來建立 Microsoft Office PowerPoint VSTO 增益集的專案範本。 您可以使用 VSTO 增益集來自動化 PowerPoint、擴充 PowerPoint 功能，或自訂 PowerPoint 使用者介面 (UI)。

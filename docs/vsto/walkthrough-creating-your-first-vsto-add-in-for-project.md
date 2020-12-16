@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：建立 Project 的第一個 VSTO 增益集
+description: 建立 Microsoft Project 的應用層級增益集。 這項功能適用于應用程式本身，不論開啟了哪些專案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a84d295a47d3391f27e7101ad815dca0c910aa6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f4774b8f5ba55d54e05e3a9ef18f8ea13fd48fc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981387"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527900"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>逐步解說：建立 Project 的第一個 VSTO 增益集
   本逐步解說將說明如何建立 Microsoft Office 專案的 VSTO 增益集。 不論開啟哪一個專案，您在這類方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱 [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -54,15 +56,15 @@ ms.locfileid: "62981387"
 
 2. 在 **[檔案]** 功能表上，指向 **[開新檔案]** ，然後按一下 **[專案]** 。
 
-3. 在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ****，然後展開 [Office/SharePoint] ****。
+3. 在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ，然後展開 [Office/SharePoint] 。
 
-4. 在展開的 [Office/SharePoint] **** 節點下，選取 [Office 增益集] **** 節點。
+4. 在展開的 [Office/SharePoint]  節點下，選取 [Office 增益集]  節點。
 
-5. 在專案範本清單中，選取 [Project 2010 增益集] **** 或 [Project 2013 增益集] ****。
+5. 在專案範本清單中，選取 [Project 2010 增益集]  或 [Project 2013 增益集] 。
 
-6. 在 [名稱] **** 方塊中，輸入 **FirstProjectAddIn**。
+6. 在 [名稱]  方塊中，輸入 **FirstProjectAddIn**。
 
-7. 按一下 [確定]  。
+7. 按一下 [確定]。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會建立 **FirstProjectAddIn** 專案，並在編輯器中開啟 **ThisAddIn** 程式碼檔。
 
@@ -103,7 +105,7 @@ ms.locfileid: "62981387"
 
 2. 確認新工作已加入空白專案。
 
-3. 確認下列文字出現在工作的 [工作名稱] **** 欄位中。
+3. 確認下列文字出現在工作的 [工作名稱]  欄位中。
 
      **This text was added by using code.**
 
@@ -114,7 +116,7 @@ ms.locfileid: "62981387"
 
 ### <a name="to-clean-up-your-project"></a>清除專案
 
-1. 在 Visual Studio 中，按一下 [建置] **** 功能表上的 [清除方案] ****。
+1. 在 Visual Studio 中，按一下 [建置]  功能表上的 [清除方案] 。
 
 ## <a name="next-steps"></a>後續步驟
  現在您已經建立 Project 的基本 VSTO 增益集，可以從下列主題進一步了解如何開發 VSTO 增益集：

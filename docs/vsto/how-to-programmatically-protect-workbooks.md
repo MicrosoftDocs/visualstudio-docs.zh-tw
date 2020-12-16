@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式保護活頁簿
+description: 瞭解如何保護 Microsoft Excel 活頁簿，讓使用者無法新增或刪除工作表，也可以程式設計方式取消保護活頁簿。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee7444c63c2d774e9b22ea612049f09429729c79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b35b0fc234c3015275650ddb51e8ea3011c97a6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537627"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528282"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>如何：以程式設計方式保護活頁簿
   您可以保護 Microsoft Office Excel 活頁簿，讓使用者無法新增或刪除工作表，也可以程式設計的方式取消保護活頁簿。 您可以選擇性地指定密碼、指出您是否想要 (結構，讓使用者無法將工作表移至) ，並指出您是否要保護活頁簿的 windows。

@@ -1,5 +1,7 @@
 ---
 title: 設定 Office 方案的設定資訊
+description: 瞭解如何使用設定檔來設定 Microsoft Office 解決方案的特定設定。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e47ad00e3f9e90913784196894d514a755699864
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3cff5e6f559245e361eda0db6623312917891969
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581035"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528160"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>如何：設定 Office 方案的設定資訊
   您可以使用設定檔來設定 Office 方案的特定設定。 您可以指定設定，例如元件系結原則、遠端物件、偵錯工具和追蹤設定。
@@ -30,7 +32,7 @@ ms.locfileid: "91581035"
 
 ### <a name="to-add-a-configuration-file-to-your-office-project"></a>將設定檔新增至 Office 專案
 
-1. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
+1. 在 [專案] 功能表上，按一下 [加入新項目]。
 
 2. 在 [ **類別目錄** ] 窗格中，按一下 **[一般**]。
 

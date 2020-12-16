@@ -1,5 +1,7 @@
 ---
 title: 保護 Office 方案
+description: 瞭解 Office 解決方案的安全性模型如何牽涉到數種技術，包括 Visual Studio Tools for Office runtime 和 ClickOnce。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bedb49a6d5d17e3c9f79a652183c2b4cd748ff6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978580"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528486"
 ---
 # <a name="secure-office-solutions"></a>保護 Office 方案
   Office 方案的安全性模型牽涉到數種技術： [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 、 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 、Microsoft Office 中的信任中心，以及 Internet Explorer 限制的網站區域。 下列各節說明不同安全性功能的運作方式：
@@ -62,7 +64,7 @@ ms.locfileid: "62978580"
 ### <a name="document-level-solutions"></a>檔層級方案
  如果您正在開發下列類型的專案，文件的完整路徑必須加入至 Microsoft Office 應用程式中的信任位置清單：
 
-- 位於網路檔案共用（例如* \\ \servername\sharename*）上的檔層級方案。
+- 位於網路檔案共用（例如 *\\ \servername\sharename*）上的檔層級方案。
 
 - 使用 *.doc* 或 *Docm* 檔案之 Word 的檔層級方案。
 
@@ -71,7 +73,7 @@ ms.locfileid: "62978580"
 ### <a name="temporary-certificates"></a>暫時憑證
  如果簽章的憑證不存在，Visual Studio 會建立暫時憑證。 您應該只在開發期間使用這個暫時憑證，並購買正式憑證以進行部署。
 
- 第一次建置 Office 專案之後，會產生暫時憑證。 下一次按下 **F5**時，會重建專案，因為加入憑證時，專案會標示為已變更。
+ 第一次建置 Office 專案之後，會產生暫時憑證。 下一次按下 **F5** 時，會重建專案，因為加入憑證時，專案會標示為已變更。
 
  一段時間之後可能有許多的暫時憑證，因此您應該偶爾清除暫時憑證。
 

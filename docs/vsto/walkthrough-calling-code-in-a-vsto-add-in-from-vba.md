@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：從 VBA 呼叫 VSTO 增益集中的程式碼
+description: 瞭解如何將 VSTO 增益集中的物件公開給其他 Microsoft Office 方案，包括 Visual Basic for Applications (VBA) 和 COM VSTO 增益集。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cbf03ef234ea6cf4eab790d96082d23b7ed5199
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650778"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527280"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>逐步解說：從 VBA 呼叫 VSTO 增益集中的程式碼
   本逐步解說示範如何將 VSTO 增益集中的物件公開給其他 Microsoft Office 方案，包含 Visual Basic for Applications (VBA) 和 COM VSTO 增益集。
@@ -54,9 +56,9 @@ ms.locfileid: "72650778"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 使用 Excel VSTO 增益集專案範本建立名為 **ExcelImportData**的 Excel VSTO 增益集專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 使用 Excel VSTO 增益集專案範本建立名為 **ExcelImportData** 的 Excel VSTO 增益集專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 **ThisAddIn.cs** 或 **ThisAddIn.vb** 程式碼檔，並將 [ExcelImportData] **** 專案加入 [方案總管] ****。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 **ThisAddIn.cs** 或 **ThisAddIn.vb** 程式碼檔，並將 [ExcelImportData]  專案加入 [方案總管] 。
 
 ## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>定義可以公開給其他 Office 方案的類別
  本逐步解說的目的是為了從 VBA 程式碼在您的 VSTO 增益集中呼叫 `ImportData` 類別的 `AddInUtilities` 方法。 這個方法會將字串寫入至使用中工作表的儲存格 A1。
@@ -65,9 +67,9 @@ ms.locfileid: "72650778"
 
 ### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>定義可以公開給其他 Office 方案的類別
 
-1. 在 [專案] **** 功能表上，按一下 [加入類別] ****。
+1. 在 [專案]  功能表上，按一下 [加入類別] 。
 
-2. 在 [加入新項目] **** 對話方塊中，將新類別的名稱變更為 **AddInUtilities**，然後按一下 [加入] ****。
+2. 在 [加入新項目]  對話方塊中，將新類別的名稱變更為 **AddInUtilities**，然後按一下 [加入] 。
 
      **AddInUtilities.cs** 或 **AddInUtilities.vb** 檔案隨即在 [程式碼編輯器] 中開啟。
 
@@ -88,9 +90,9 @@ ms.locfileid: "72650778"
 
 ### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>將 AddInUtilities 類別公開給其他 Office 方案
 
-1. 展開 [方案總管] **** 中的 [Excel] ****。
+1. 展開 [方案總管] 中的 [Excel] 。
 
-2. 以滑鼠右鍵按一下 **ThisAddIn.cs** 或 **ThisAddIn.vb**，然後按一下 [檢視程式碼]。 ****
+2. 以滑鼠右鍵按一下 **ThisAddIn.cs** 或 **ThisAddIn.vb**，然後按一下 [檢視程式碼]。 
 
 3. 將下列程式碼新增至 `ThisAddIn` 類別。
 
@@ -110,16 +112,16 @@ ms.locfileid: "72650778"
 
 2. 在 Excel 中，將現用活頁簿儲存為「Excel 啟用巨集的活頁簿」 (*.xlsm)。 將它儲存在方便取用的位置，例如桌面。
 
-3. 按一下 [功能區] 上的 [開發人員] **** 索引標籤。
+3. 按一下 [功能區] 上的 [開發人員]  索引標籤。
 
     > [!NOTE]
-    > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
+    > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
 
-4. 在 [程式碼] **** 群組中，按一下 [Visual Basic] ****。
+4. 在 [程式碼]  群組中，按一下 [Visual Basic] 。
 
      [Visual Basic 編輯器] 隨即開啟。
 
-5. 按兩下 [專案] **** 視窗中的 [ThisWorkbook] ****。
+5. 按兩下 [專案]  視窗中的 [ThisWorkbook] 。
 
      `ThisWorkbook` 物件的程式碼檔隨即開啟。
 

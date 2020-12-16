@@ -1,5 +1,7 @@
 ---
 title: 使用檔
+description: 深入瞭解使用 Microsoft Word 物件模型處理 Office 專案中檔的逐步程式和程式碼範例。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b21f8c84082e19c1d9f43d6a2ae36d158a15c01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a8b994ed88c6499d17cc0cf241e60a17f235b97
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008686"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527020"
 ---
 # <a name="work-with-documents"></a>使用檔
   本節中的主題針對在 Office 專案中使用 Microsoft Office Word 物件模型處理文件，提供逐步程序和程式碼範例。

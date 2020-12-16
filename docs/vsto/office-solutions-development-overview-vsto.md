@@ -1,5 +1,7 @@
 ---
 title: 'Office 方案開發總覽 (VSTO) '
+description: 瞭解如何開發熟悉的 Microsoft Office 使用者介面和工具的自訂專案，例如 Word 中的文字處理功能以及 Excel 的資料分析功能。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1e9ce9ff2ab0a55de0a7e51325885d86c2fbf1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811015"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527713"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 方案開發總覽 (VSTO) 
   您可以使用 Microsoft Office 做為方案的前端，以善用熟悉的 Microsoft Office 使用者介面和工具 (例如 Word 的文書處理功能、Excel 的資料分析功能，以及 Outlook 的電子郵件管理功能)。 您可以使用 Visual Studio 來開發方案，以自訂 Office 應用程式，以及加入符合商務流程需求的特定功能。 例如，您可以將 Word 轉變成可將已存在的組件 (這些組件可設定為是否可編輯) 組合為合約的合約產生器。 藉由 Excel，您可以建立自動化的預算工作表，為不同的專案進行自訂。 如果您使用網頁式的架構，則您的使用者也可以離線使用 Office 方案，使複雜的方案比原本可能的更加實用。

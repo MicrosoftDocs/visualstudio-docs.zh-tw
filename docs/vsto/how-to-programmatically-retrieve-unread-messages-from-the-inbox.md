@@ -1,5 +1,7 @@
 ---
 title: 以程式設計方式從收件匣取得未讀取的訊息
+description: 瞭解如何使用 Visual Studio，以程式設計方式從 Microsoft Outlook 中的收件匣取出未讀取的訊息。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc913379546c80eef70671ea0ecbd441001e6ab5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6dae629c008c04f7ee9fb66b9dbc5f8f31e53d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537601"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528262"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>如何：以程式設計方式從收件匣取出未讀取的訊息
   此範例會從 Outlook **收件** 匣抓取未閱讀的電子郵件訊息，並顯示專案數。

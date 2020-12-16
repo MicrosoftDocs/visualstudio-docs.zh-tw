@@ -1,5 +1,7 @@
 ---
 title: 如何：調整 NamedRange 控制項的大小
+description: 瞭解如何使用 Visual Studio 以程式設計方式調整 Microsoft Excel 活頁簿中 NamedRange 控制項的大小。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7762e67b1676f72030cae8d958bef19c501660c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 043def019d30ee629e672a081cd5aea73bca4304
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545817"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528183"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>如何：調整 NamedRange 控制項的大小
   您可以在將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入 Microsoft Office Excel 文件時，設定該控制項的大小，也可以稍後再進行調整。
@@ -37,38 +39,38 @@ ms.locfileid: "85545817"
 - [在 VSTO 增益集專案中，于執行時間調整 NamedRange 控制項的大小](#runtimeaddin)
 
 ## <a name="resize-namedrange-controls-at-design-time"></a><a name="designtime"></a> 在設計階段調整 NamedRange 控制項的大小
- 您可以在 [定義名稱] **** 對話方塊中重新定義已命名範圍的大小，以調整其大小。
+ 您可以在 [定義名稱]  對話方塊中重新定義已命名範圍的大小，以調整其大小。
 
 ### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>若要使用 [定義名稱] 對話方塊調整已命名範圍的大小
 
 1. 以滑鼠右鍵按一下 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項。
 
-2. 按一下捷徑功能表上的 [管理已命名的範圍] **** 。
+2. 按一下捷徑功能表上的 [管理已命名的範圍]  。
 
-     [定義名稱] **** 對話方塊隨即出現。
+     [定義名稱]  對話方塊隨即出現。
 
 3. 選取您要調整大小的已命名範圍。
 
-4. 清除 [參考] **** 方塊。
+4. 清除 [參考]  方塊。
 
 5. 選取您要用於定義已命名範圍大小的儲存格。
 
-6. 按一下 [確定]  。
+6. 按一下 [確定]。
 
 ## <a name="resize-namedrange-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> 在檔層級專案中，于執行時間調整 NamedRange 控制項的大小
  您可以使用 <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> 屬性，以程式設計方式調整已命名範圍的大小。
 
 > [!NOTE]
-> 在 [屬性] **** 視窗中， <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> 屬性標記為唯讀。
+> 在 [屬性]  視窗中， <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> 屬性標記為唯讀。
 
 ### <a name="to-resize-a-named-range-programmatically"></a>若要以程式的方式調整已命名範圍的大小
 
-1. 在 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的儲存格 [A1] **** 上建立 `Sheet1`控制項。
+1. 在 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的儲存格 [A1]  上建立 `Sheet1`控制項。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#4)]
 
-2. 調整已命名範圍的大小，以包含儲存格 [B1] ****。
+2. 調整已命名範圍的大小，以包含儲存格 [B1] 。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]
@@ -78,12 +80,12 @@ ms.locfileid: "85545817"
 
 ### <a name="to-resize-a-named-range-programmatically"></a>若要以程式的方式調整已命名範圍的大小
 
-1. 在 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的儲存格 [A1] **** 上建立 `Sheet1`控制項。
+1. 在 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的儲存格 [A1]  上建立 `Sheet1`控制項。
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#10)]
      [!code-vb[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#10)]
 
-2. 調整已命名範圍的大小，以包含儲存格 [B1] ****。
+2. 調整已命名範圍的大小，以包含儲存格 [B1] 。
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#11)]
      [!code-vb[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#11)]

@@ -1,5 +1,7 @@
 ---
 title: 如何：使用內容控制項保護檔的元件
+description: 瞭解如何使用 Visual Studio 來保護 Microsoft Word 檔的元件，方法是使用內容控制項。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 813bb829e3be243a9812a8856bf4fcfa6de2fd22
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 83052ca3c61fe931c3360a1092ca23740ddcff3f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581074"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528239"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何：使用內容控制項保護檔的元件
   當您保護文件的某個部分時，使用者即無法變更或刪除文件中該部分的內容。 您可使用多種方法，透過內容控制項來保護 Microsoft Office Word 文件的下列部分：
@@ -50,7 +52,7 @@ ms.locfileid: "91581074"
 
     - 若要防止使用者刪除控制項，請將 **LockContentControl** 設定為 **True**。
 
-3. 按一下 [確定]  。
+3. 按一下 [確定]。
 
 ### <a name="to-protect-a-content-control-at-run-time"></a>若要在執行階段保護內容控制項
 
@@ -80,10 +82,10 @@ ms.locfileid: "91581074"
 
 1. 在裝載於 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 設計工具的文件中，選取想要保護的區域。
 
-2. 按一下 [功能區] 上的 [開發人員] **** 索引標籤。
+2. 按一下 [功能區] 上的 [開發人員]  索引標籤。
 
     > [!NOTE]
-    > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
+    > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
 
 3. 在 [ **控制項** ] 群組中，按一下 [ **群組** ] 下拉按鈕，然後按一下 [ **群組**]。
 
