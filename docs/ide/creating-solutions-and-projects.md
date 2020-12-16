@@ -1,5 +1,5 @@
 ---
-title: 建立方案和專案
+title: 使用解決方案與專案
 description: 瞭解方案和專案之間的差異，以及如何在 Visual Studio 中使用它們。
 ms.custom: SEO-VS-2020
 ms.date: 02/06/2018
@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd893c06da9bc2c2c8d95fc4c085affa815edd2
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 9bbfa16273dc323d2ad175e965a19a22ad0d17ce
+ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006441"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97599475"
 ---
-# <a name="create-solutions-and-projects"></a>建立方案和專案
+# <a name="work-with-solutions-and-projects"></a>使用解決方案與專案
 
 「專案」用以保存在 Visual Studio 中建置您應用程式所需的項目，例如原始程式碼檔、點陣圖、圖示，以及元件和服務參考。 當您建立新的專案時，Visual Studio 會建立一個包含該專案的「解決方案」。 接著可以視需要將新的或現有專案新增至解決方案。 解決方案也可以包含未連線至任何特定專案的檔案。
 
@@ -48,7 +48,7 @@ ms.locfileid: "95006441"
 
 如果您有程式碼來源檔案的集合，您可以輕鬆地將其新增至專案。
 
-1. 在功能表上 **，選擇 [**  >  **New**  >  **從現有程式碼** 檔案新增專案]。
+1. 在功能表上 **，選擇 [**  >    >  **從現有程式碼** 檔案新增專案]。
 
 1. 在 [從現有程式碼檔建立專案精靈] 的 [您要建立的專案類型為何?] 下拉式清單方塊中，選擇您想要的專案類型，然後選擇 [下一步] 按鈕。
 
