@@ -16,9 +16,9 @@
     - name: 建立您的第一個 C# 應用程式
       expanded: true
       items:
-        - name: 第 1 部份：建立 C# 主控台應用程式
+        - name: 建立 C# 主控台應用程式
           href: tutorial-console.md
-        - name: 第 2 部分：擴充您的 C# 主控台應用程式
+        - name: 擴充您的 C# 主控台應用程式
           href: tutorial-console-part-2.md
     - name: 建立 Web 應用程式
       href: tutorial-aspnet-core.md
