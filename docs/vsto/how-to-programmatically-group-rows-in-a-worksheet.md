@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式將工作表中的資料列分組
+description: 瞭解如何使用 NamedRange 控制項或原生 Excel 範圍物件，以程式設計方式將 Microsoft Excel 中的一或多個完整資料列分組。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 759ba8c6e0796b25a87e8bf0b08795aed5bade05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 203ea7d17a02a224c290e5dd3c6070c06a1d26e4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537874"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525709"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>如何：以程式設計方式將工作表中的資料列分組
   您可以將一或多個整個資料列分組。 若要在工作表中建立群組，請使用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件。

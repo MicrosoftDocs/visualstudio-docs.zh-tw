@@ -1,5 +1,7 @@
 ---
 title: 升級和遷移 Office 方案
+description: 如果您有在舊版 Visual Studio 中建立的 Offince 專案，您必須升級專案，才能在目前版本的 Visual Studio 中使用它。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13cbf08e5767ec548b9fdba9bd0892e0cf50a63d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b18b61ad6854be654582fe8a8a76da185ec9d89e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808785"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526609"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>升級和遷移 Office 方案
   如果您有使用舊版 Visual Studio 建立的 Microsoft Office 專案，則必須升級專案以便在目前的 Visual Studio 版本中使用。 若要升級 Microsoft Office 專案，請在包含 Microsoft Office 開發人員工具的 Visual Studio 版本中開啟。 如需包含 Microsoft Office 開發人員工具的 Visual Studio 版本的詳細資訊，請參閱 [設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。
@@ -67,7 +69,7 @@ ms.locfileid: "90808785"
 > [!NOTE]
 > 如果您將 VSTO 增益集專案升級至目標 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 或更新版本，請確定 `ThisAddIn_Startup` VSTO 增益集的事件處理常式不包含會存取應用程式中檔的程式碼。 如需詳細資訊，請參閱 [Office 應用程式啟動時存取檔](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。
 
- 針對檔層級自訂， [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] 會將具有二進位格式之專案中的檔（例如副檔名為 *.xls*或副檔名的檔 *.doc* ）轉換成 Office Open XML 格式。 如需 Open XML 的詳細資訊，請參閱 [新副檔名和 OPEN xml 格式簡介](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1)。
+ 針對檔層級自訂， [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] 會將具有二進位格式之專案中的檔（例如副檔名為 *.xls* 或副檔名的檔 ）轉換成 Office Open XML 格式。 如需 Open XML 的詳細資訊，請參閱 [新副檔名和 OPEN xml 格式簡介](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1)。
 
 > [!NOTE]
 > 智慧標籤在 Excel 2010 和 Word 2010 中已被取代。 因此，如果您的方案使用智慧標籤，必須先將其移除，然後才可於  Visual Studio 2013 或 Visual Studio 2015 中進行測試及偵錯。

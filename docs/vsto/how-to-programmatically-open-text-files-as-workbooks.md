@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式將文字檔開啟為活頁簿
+description: 瞭解如何使用 Visual Studio 以程式設計方式將文字檔開啟為 Microsoft Excel 活頁簿。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a0f1b384aafb491183a750f17653ab55f2003e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f471161a8563718f69f14ea341ab099fbf138d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519823"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525537"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>如何：以程式設計方式將文字檔開啟為活頁簿
   您可以將文字檔開啟為活頁簿。 您必須傳入要開啟之文字檔的名稱。 您可以指定數個選擇性參數，例如要開始剖析的資料列編號，以及檔案中資料的資料行格式。

@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式在 Word 檔中插入文字
+description: 瞭解如何使用 Visual Studio，以程式設計方式將文字插入 Microsoft Word 檔。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: how-to
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bbd73a60b05d48eea0252cec9881d6eefca6cdd2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9567ea197c9a181141aeb52db0cca56ad4776237
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585180"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525681"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>如何：以程式設計方式在 Word 檔中插入文字
   在 Microsoft Office Word 文件中插入文字的方式主要有三種：
@@ -79,7 +81,7 @@ ms.locfileid: "91585180"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]
 
-2. 以 **New Text**字串取代這些字元。
+2. 以 **New Text** 字串取代這些字元。
 
      [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
      [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]

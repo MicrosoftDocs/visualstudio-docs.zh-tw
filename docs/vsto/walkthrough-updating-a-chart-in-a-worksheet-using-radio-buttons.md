@@ -1,5 +1,7 @@
 ---
 title: 使用選項按鈕更新工作表中的圖表
+description: 瞭解在 Microsoft Excel 工作表上使用選項按鈕的基本概念，讓使用者能夠在選項之間快速切換。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238812"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526067"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>逐步解說：使用選項按鈕更新工作表中的圖表
   本逐步解說示範在 Microsoft Office Excel 工作表上使用選項按鈕的基本概念，讓使用者能夠在選項之間快速切換。 在此情況下，選項會變更圖表的樣式。
@@ -45,7 +47,7 @@ ms.locfileid: "88238812"
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
 ## <a name="add-a-chart-to-a-worksheet"></a>將圖表加入至工作表
- 您可以建立自訂現有活頁簿的 Excel 活頁簿專案。 在這個逐步解說中，您會將圖表加入至活頁簿，然後在新的 Excel 方案中使用此活頁簿。 本逐步解說中的資料來源是名為 **Chart 的資料**工作表。
+ 您可以建立自訂現有活頁簿的 Excel 活頁簿專案。 在這個逐步解說中，您會將圖表加入至活頁簿，然後在新的 Excel 方案中使用此活頁簿。 本逐步解說中的資料來源是名為 **Chart 的資料** 工作表。
 
 ### <a name="to-add-the-data"></a>若要加入資料
 
@@ -80,7 +82,7 @@ ms.locfileid: "88238812"
 
 6. 在 [ **選取資料來源** ] 對話方塊中，按一下 **[確定]**。
 
-7. 調整圖表的位置，讓右上角與儲存格 **E2**對齊。
+7. 調整圖表的位置，讓右上角與儲存格 **E2** 對齊。
 
 8. 將您的檔案儲存到 C 磁片磁碟機，並將它命名 **ExcelChart.xlsx**。
 
@@ -91,13 +93,13 @@ ms.locfileid: "88238812"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 建立名為 **My Excel Chart**的 Excel 活頁簿專案。 在嚮導中，選取 [ **複製現有檔**]。
+1. 建立名為 **My Excel Chart** 的 Excel 活頁簿專案。 在嚮導中，選取 [ **複製現有檔**]。
 
      如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
 2. 按一下 [ **流覽]** 按鈕，流覽至您稍早在本逐步解說中建立的活頁簿。
 
-3. 按一下 [確定]  。
+3. 按一下 [確定]。
 
      Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 [ **我的 Excel 圖表** ] 專案加入 **方案總管**。
 
@@ -120,17 +122,17 @@ ms.locfileid: "88238812"
 
 ### <a name="to-add-a-user-control"></a>若要加入使用者控制項
 
-1. 在**方案總管**中選取 [**我的 Excel 圖表**] 專案。
+1. 在 **方案總管** 中選取 [**我的 Excel 圖表**] 專案。
 
-2. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
+2. 在 [專案] 功能表上，按一下 [加入新項目]。
 
 3. 在 [ **加入新專案** ] 對話方塊中，按一下 [ **使用者控制項**]，將控制項命名為 **ChartOptions，** 然後按一下 [ **加入**]。
 
 ### <a name="to-add-radio-buttons-to-the-user-control"></a>將選項按鈕加入至使用者控制項
 
-1. 如果在設計工具中看不到使用者控制項，請按兩下**方案總管**中的 [ **ChartOptions** ]。
+1. 如果在設計工具中看不到使用者控制項，請按兩下 **方案總管** 中的 [ **ChartOptions** ]。
 
-2. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將**選項按鈕**控制項拖曳至使用者控制項，並變更下列屬性。
+2. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將 **選項按鈕** 控制項拖曳至使用者控制項，並變更下列屬性。
 
    | 屬性 | 值 |
    |----------|------------------|
@@ -165,7 +167,7 @@ ms.locfileid: "88238812"
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>在使用者控制項上建立事件和屬性
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下使用者控制項，然後按一下 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下使用者控制項，然後按一下 [ **視圖程式碼**]。
 
 2. 將程式碼加入至 `ChartOptions` 類別，以建立 `SelectionChanged` 事件和 `Selection` 屬性。
 
@@ -205,9 +207,9 @@ ms.locfileid: "88238812"
 
 1. 在 [建置] 功能表上，按一下 [建置方案]。
 
-     **ChartOptions**使用者控制項就會加入至 [**工具箱**]。
+     **ChartOptions** 使用者控制項就會加入至 [**工具箱**]。
 
-2. 在 **方案總管**中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs**]，然後按一下 [ **視圖設計**工具]。
+2. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs**]，然後按一下 [ **視圖設計** 工具]。
 
 3. 將 **ChartOptions** 控制項從 [ **工具箱** ] 拖曳至工作表。
 
@@ -220,7 +222,7 @@ ms.locfileid: "88238812"
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-worksheet"></a>變更工作表中顯示的圖表類型
 
-1. 將下列事件處理常式加入至 `Sheet1` 類別。
+1. 將以下事件處理常式新增至 `Sheet1` 類別。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]

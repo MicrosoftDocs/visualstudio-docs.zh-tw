@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：使用功能區設計工具建立自訂索引標籤
+description: 瞭解如何使用功能區設計工具建立自訂索引標籤，然後在其上新增控制項並放置控制項。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f311f35ba4a8c443f47941a905ee4cf4d3ebfb2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 539f75b7770abab75e912a28bc62ed51b7fb61d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585011"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524829"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>逐步解說：使用功能區設計工具建立自訂索引標籤
   您可以使用功能區設計工具，建立自訂索引標籤，然後在其上加入和放置控制項。
@@ -53,7 +55,7 @@ ms.locfileid: "91585011"
 
 ### <a name="to-create-an-excel-workbook-project"></a>建立 Excel 活頁簿專案
 
-- 使用名稱 **MyExcelRibbon**建立 Excel 活頁簿專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+- 使用名稱 **MyExcelRibbon** 建立 Excel 活頁簿專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 會在設計工具中開啟新的活頁簿，並將 **MyExcelRibbon** 專案加入 **方案總管**。
 
@@ -66,16 +68,16 @@ ms.locfileid: "91585011"
 
 2. 在 [ **加入新專案** ] 對話方塊中，選取 [ **ActionsPaneControl**]，然後選擇 [ **加入**]。
 
-     **ActionsPaneControl1.cs**或**ActionsPaneControl1 .vb**檔案會在設計工具中開啟。
+     **ActionsPaneControl1.cs** 或 **ActionsPaneControl1 .vb** 檔案會在設計工具中開啟。
 
-3. 從 [工具箱] 的 [ **通用控制項** ] 索引標籤中，將標籤加入至設計 **工具**介面。
+3. 從 [工具箱] 的 [ **通用控制項** ] 索引標籤中，將標籤加入至設計 **工具** 介面。
 
 4. 在 [ **屬性** ] 視窗中，將 [label1] 的 [ **Text** ] 屬性設定為 [ **動作窗格 1**]。
 
 5. 重複步驟 1 到 5，建立第二個執行窗格和標籤。 將第二個標籤的 [ **Text** ] 屬性設定為 [ **動作] 窗格 2**。
 
 ## <a name="create-a-custom-tab"></a><a name="BKMK_CreateCustomTab"></a> 建立自訂索引標籤
- 其中一個 Office 應用程式設計方針是使用者應一律具有 Office 應用程式 UI 的控制項。 若要為執行窗格加入這個功能，您可以加入顯示和隱藏功能區上自訂索引標籤的每個執行窗格的按鈕。 若要建立自訂索引標籤，請將 **功能區 (視覺化設計工具) ** 專案加入至專案。 設計工具可協助您加入及定位控制項、設定控制項屬性及處理控制項事件。
+ 其中一個 Office 應用程式設計方針是使用者應一律具有 Office 應用程式 UI 的控制項。 若要為執行窗格加入這個功能，您可以加入顯示和隱藏功能區上自訂索引標籤的每個執行窗格的按鈕。 若要建立自訂索引標籤，請將 **功能區 (視覺化設計工具)** 專案加入至專案。 設計工具可協助您加入及定位控制項、設定控制項屬性及處理控制項事件。
 
 ### <a name="to-create-a-custom-tab"></a>建立自訂索引標籤
 
@@ -105,7 +107,7 @@ ms.locfileid: "91585011"
 
 12. 將第二個按鈕加入 [ **Group1**]，並將 [ **標籤** ] 屬性設定為 **顯示動作窗格 2**。
 
-13. 從 [**工具箱**] 的 [ **Office 功能區控制項**] 索引標籤，將**切換按鈕**控制項拖曳至 [ **group1**]。
+13. 從 [**工具箱**] 的 [ **Office 功能區控制項**] 索引標籤，將 **切換按鈕** 控制項拖曳至 [ **group1**]。
 
 14. 將 [ **標籤** ] 屬性設定為 **隱藏 [動作] 窗格**。
 
@@ -114,7 +116,7 @@ ms.locfileid: "91585011"
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>使用自訂索引標籤中的按鈕隱藏和顯示執行窗格
 
-1. 在 **方案總管**中，開啟 [ *MyRibbon.cs* ] 或 [ *myribbon.vb*] 的快捷方式功能表，然後選擇 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，開啟 [ *MyRibbon.cs* ] 或 [ *myribbon.vb*] 的快捷方式功能表，然後選擇 [ **視圖程式碼**]。
 
 2. 將下列程式碼加入至 `MyRibbon` 類別的頂端。 這個程式碼會建立兩個執行窗格物件。
 

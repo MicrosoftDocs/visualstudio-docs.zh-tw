@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式隱藏工作表
+description: 瞭解如何使用工作表主專案，以程式設計方式顯示或隱藏 Microsoft Excel 活頁簿中的任何工作表。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83cf1f63a67525dca4cf9dbb5a4916da5d70b4ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a5ba61c7db0a62cf3e97fb8e4df5cb655e9f2dd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547403"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525676"
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>如何：以程式設計方式隱藏工作表
   您可以顯示或隱藏活頁簿中的任何工作表。 若要隱藏工作表，請使用工作表主項目，或使用活頁簿的工作表集合存取工作表。

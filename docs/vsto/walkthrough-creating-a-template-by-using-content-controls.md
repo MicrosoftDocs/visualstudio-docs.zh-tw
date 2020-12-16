@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：使用內容控制項建立範本
+description: 瞭解如何建立檔層級自訂，以使用內容控制項在 Microsoft Word 範本中建立結構化和可重複使用的內容。
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dd7e75048a84a4e235390b99d17d48dfad039ec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585024"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524979"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>逐步解說：使用內容控制項建立範本
   本逐步解說示範如何建立文件層級自訂，這個自訂會使用內容控制項在 Microsoft Office Word 範本中建立可重複使用的結構化內容。
@@ -57,7 +58,7 @@ ms.locfileid: "91585024"
 
 ### <a name="to-create-a-new-word-template-project"></a>建立新的 Word 範本專案
 
-1. 建立名稱為 **MyBuildingBlockTemplate**的單字模板專案。 在精靈中，於方案中建立新文件。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 建立名稱為 **MyBuildingBlockTemplate** 的單字模板專案。 在精靈中，於方案中建立新文件。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在設計工具中開啟新的 Word 範本，並將 **MyBuildingBlockTemplate** 專案新增至 **方案總管**。
 
@@ -81,10 +82,10 @@ ms.locfileid: "91585024"
 
 4. 按一下第二個數據行中的第一個資料格 ([ **員工名稱** ]) 旁。
 
-5. 按一下 [功能區] 上的 [開發人員] **** 索引標籤。
+5. 按一下 [功能區] 上的 [開發人員]  索引標籤。
 
    > [!NOTE]
-   > 如果 [開發人員] **** 索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
+   > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)索引標籤。
 
 6. 在 [ **控制項** ] 群組中，按一下 [ **文字** ] 按鈕 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") ，將加入 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> 至第一個儲存格。
 
@@ -121,7 +122,7 @@ ms.locfileid: "91585024"
 
 5. 在第二個數據行的第一個資料格中按一下 [ **客戶名稱** ]) 旁的 (。
 
-6. 按一下 [功能區] 上的 [開發人員] **** 索引標籤。
+6. 按一下 [功能區] 上的 [開發人員]  索引標籤。
 
 7. 在 [ **控制項** ] 群組中，按一下 [ **文字** ] 按鈕 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") ，將加入 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> 至第一個儲存格。
 
@@ -138,7 +139,7 @@ ms.locfileid: "91585024"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>以程式設計方式修改內容控制項的 UI
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **ThisDocument.cs** ] 或 [ **ThisDocument**]，然後按一下 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **ThisDocument.cs** ] 或 [ **ThisDocument**]，然後按一下 [ **視圖程式碼**]。
 
 2. 將下列程式碼新增至 `ThisDocument` 類別。 這個程式碼會宣告數個物件，您稍後於此逐步解說中會用到。
 
@@ -180,7 +181,7 @@ ms.locfileid: "91585024"
 
 ### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>建立會顯示建置組塊的內容控制項
 
-1. 請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會初始化您稍早宣告的 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 物件。 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>會顯示在類別目錄**員工和客戶資訊**中定義的所有組建區塊，以及具有建立區塊類型的組建區塊 `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` 。
+1. 請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會初始化您稍早宣告的 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 物件。 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>會顯示在類別目錄 **員工和客戶資訊** 中定義的所有組建區塊，以及具有建立區塊類型的組建區塊 `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` 。
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]

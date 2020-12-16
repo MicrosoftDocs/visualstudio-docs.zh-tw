@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式建立新檔
+description: 瞭解如何使用 Visual Studio，以程式設計方式在 Microsoft Word 中建立新檔。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e82c5ca62c407481b73de9394c584c3039a8f57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7168c6b80657fe0e5ba7c8ae8511c1e000db4cb
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545986"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525884"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>如何：以程式設計方式建立新檔
   當您以程式設計方式建立文件時，新的文件就是原生的 <xref:Microsoft.Office.Interop.Word.Document> 物件。 這個物件沒有 <xref:Microsoft.Office.Tools.Word.Document> 主項目的其他事件和資料繫結功能。 如需詳細資訊，請參閱 [主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
@@ -36,7 +38,7 @@ ms.locfileid: "85545986"
      [!code-csharp[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#1)]
 
 ## <a name="use-custom-templates"></a>使用自訂範本
- <xref:Microsoft.Office.Interop.Word.Documents.Add%2A>方法有選擇性的樣板*Template*引數，可根據一般範本以外的範本建立新檔。 您必須提供範本的檔案名稱和完整路徑。
+ <xref:Microsoft.Office.Interop.Word.Documents.Add%2A>方法有選擇性的樣板引數，可根據一般範本以外的範本建立新檔。 您必須提供範本的檔案名稱和完整路徑。
 
 ### <a name="to-create-a-new-document-based-on-a-custom-template"></a>根據自訂範本建立新文件
 

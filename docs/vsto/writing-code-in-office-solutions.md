@@ -1,5 +1,7 @@
 ---
 title: 在 Office 方案中撰寫程式碼
+description: 瞭解如何在 Microsoft Office 的方案中撰寫程式碼，並瞭解 Office 物件模型對 managed 程式碼的公開方式。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -33,12 +35,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cead0569ae067fcc503f7f2074807c609e6eed75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40ea589cb4406a383876b1f16721f18fc48ebadd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255036"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526027"
 ---
 # <a name="write-code-in-office-solutions"></a>在 Office 方案中撰寫程式碼
   在 Office 專案中撰寫程式碼，在某些方面不同於撰寫 Visual Studio 中其他類型專案的程式碼。 其中有許多差異的原因與將 Office 物件模型公開給 Managed 程式碼的方式相關。 其他差異則與 Office 專案的設計相關。
@@ -88,7 +90,7 @@ ms.locfileid: "71255036"
 ### <a name="change-the-namespace-of-host-item-classes-in-c-projects"></a>在 c # 專案中變更主專案類別的命名空間
  主項目類別 (例如 `ThisAddIn`、 `ThisWorkbook`或 `ThisDocument` 類別) 在 Visual C# Office 專案中有自己的命名空間。 根據預設，專案中主項目的命名空間會符合您在建立專案時指定的專案名稱。
 
- 若要變更 Visual C# Office 專案中的主項目命名空間，請使用 [主項目命名空間] **** 屬性。 如需詳細資訊，請參閱 [Office 專案中的屬性](../vsto/properties-in-office-projects.md)。
+ 若要變更 Visual C# Office 專案中的主項目命名空間，請使用 [主項目命名空間]  屬性。 如需詳細資訊，請參閱 [Office 專案中的屬性](../vsto/properties-in-office-projects.md)。
 
 ## <a name="supported-programming-languages-in-office-projects"></a>Office 專案中支援的程式設計語言
  Visual Studio 中的 Office 專案範本只支援 Visual Basic 和 Visual C# 程式設計語言。 因此，這些專案範本只位於 **中，[新增專案]****對話方塊的 [Visual Basic]****和 [Visual C#]**[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]節點。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
@@ -105,7 +107,7 @@ ms.locfileid: "71255036"
 
 下表顯示 Office 程式開發中的 Visual Basic 和 Visual C# 之間的主要差異。
 
-|功能|說明|Visual Basic 支援|Visual C# 支援|
+|功能|描述|Visual Basic 支援|Visual C# 支援|
 |-------------|-----------------|--------------------------|------------------------|
 |選擇性參數|許多 Microsoft Office 方法有在您呼叫方法時非必要的參數。 如果針對參數不傳遞任何值，會使用預設值。|Visual Basic 支援選擇性參數。|Visual C# 在大部分情況下支援選擇性參數。 如需詳細資訊，請參閱 [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)。|
 |以傳址方式傳遞參數|大部分的 Microsoft Office 主要 Interop 組件中的選擇性參數可以傳值方式傳遞。 不過，在某些主要 Interop 組件中，接受參考類型的選擇性參數必須以傳址方式傳遞。<br /><br /> 如需有關值和參考型別參數的詳細資訊，請參閱以 [傳值方式傳遞引數，並以傳址方式 &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic [C) 程式設計手冊 &#40;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)。|以傳址方式傳遞參數不需要額外工作。 Visual Basic 編譯器會在必要時自動以傳址方式傳遞這些參數。|在大部分情況下，Visual C# 編譯器會在必要時自動以傳址方式傳遞這些參數。 如需詳細資訊，請參閱 [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)。|
@@ -115,7 +117,7 @@ ms.locfileid: "71255036"
 ## <a name="key-differences-between-office-development-and-managed-code"></a>Office 程式開發和 managed 程式碼之間的主要差異
  下表顯示 Office 程式開發與以 Visual Basic 或 Visual C# 撰寫的 Managed 程式碼之間的主要差異。
 
-|功能|說明|Visual Basic 和 Visual C# 支援|
+|功能|描述|Visual Basic 和 Visual C# 支援|
 |-------------|-----------------|-----------------------------------------|
 |陣列索引|Microsoft Office 應用程式中的集合的較低陣列界限從 1 開始。 Visual Basic 和 Visual C# 使用以 0 為基礎的陣列。 如需詳細資訊，請參閱 [陣列 &#40;C&#35; 程式設計指南&#41;](/dotnet/csharp/programming-guide/arrays/index) 和 [Visual Basic 中的陣列](/dotnet/visual-basic/programming-guide/language-features/arrays/index)。|若要存取 Microsoft Office 應用程式物件模型中的集合的第一個項目，請使用索引 1，而不是 0。|
 

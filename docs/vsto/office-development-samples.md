@@ -1,5 +1,7 @@
 ---
 title: Office 開發範例
+description: 深入瞭解示範如何使用 Microsoft Office 開發人員工具建立 Office 方案的 Visual Studio 應用程式範例。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d80598033c834e8567ab58368da73350b3cd9ff3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985732"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525169"
 ---
 # <a name="office-development-samples"></a>Office 開發範例
   Visual Studio 包含範例應用程式，以示範如何使用 Microsoft Office 開發人員工具建立 Office 方案。 這些範例中的程式碼示範建置 Office 方案時使用的語法、結構和技術。

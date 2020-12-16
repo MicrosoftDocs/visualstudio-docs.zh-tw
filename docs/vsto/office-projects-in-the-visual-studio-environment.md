@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 環境中的 Office 專案
+description: 瞭解 Microsoft Office 專案的開發經驗如何與 Visual Studio 中的其他專案類型（例如 Windows Forms 專案）類似。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -41,12 +43,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e183d5aca3fa856f45f322c2b79a76524b28005
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978054"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525156"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Visual Studio 環境中的 Office 專案
   開發 Microsoft Office 專案的方式與在 Visual Studio 中開發其他類型的專案 (例如 Windows Forms 專案) 類似。 在您建立或開啟 Office 專案時，專案項目會顯示在 [ **方案總管**] 中。 就文件層級專案而言，文件 (亦即 Word 文件或 Excel 活頁簿) 會在 Visual Studio 中開啟，並以如同視覺化設計工具的方式運作。
@@ -62,19 +64,19 @@ ms.locfileid: "62978054"
 
 - 您不應該直接編輯的隱藏專案檔。 如需詳細資訊，請參閱 [隱藏的專案](#hiddenfiles)檔。
 
-  在 VSTO 增益集專案中，方案總管 **** 會顯示下列預設項目：
+  在 VSTO 增益集專案中，方案總管  會顯示下列預設項目：
 
-- 應用程式節點。 這個節點的名稱與主應用程式相同 (例如 **Word**、 **Excel**或 **Outlook**)。 應用程式節點包含 ThisAddIn 程式碼檔。 也會提供 [ **主項目命名空間** ] 屬性。 如需此屬性的詳細資訊，請參閱 [Office 專案中的屬性](../vsto/properties-in-office-projects.md)。
+- 應用程式節點。 這個節點的名稱與主應用程式相同 (例如 **Word**、 **Excel** 或 **Outlook**)。 應用程式節點包含 ThisAddIn 程式碼檔。 也會提供 [ **主項目命名空間** ] 屬性。 如需此屬性的詳細資訊，請參閱 [Office 專案中的屬性](../vsto/properties-in-office-projects.md)。
 
 - ThisAddIn 程式碼檔。 這個檔案包含針對您的 VSTO 增益集產生的 `ThisAddIn` 類別。 如需此類別的詳細資訊，請參閱 [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
 
 - 您不應該直接編輯的隱藏專案檔。 如需詳細資訊，請參閱 [隱藏的專案](#hiddenfiles)檔。
 
 ### <a name="temporary-certificates"></a>暫時憑證
- Office 專案也包含名稱為 *專案名稱*_TemporaryKey.pfx 的暫時憑證。 這個憑證是用來簽署開發期間之專案的應用程式和部署資訊清單。 如需詳細資訊，請參閱 [授與信任給 office 方案](../vsto/granting-trust-to-office-solutions.md) 和 [安全的 office 方案](../vsto/securing-office-solutions.md)。
+ Office 專案也包含名稱為 *專案名稱* _TemporaryKey.pfx 的暫時憑證。 這個憑證是用來簽署開發期間之專案的應用程式和部署資訊清單。 如需詳細資訊，請參閱 [授與信任給 office 方案](../vsto/granting-trust-to-office-solutions.md) 和 [安全的 office 方案](../vsto/securing-office-solutions.md)。
 
 ### <a name="hidden-project-files"></a><a name="hiddenfiles"></a> 隱藏的專案檔案
- 預設會隱藏數個專案檔。 這些檔案是由 Visual Studio 所產生，並且會因專案類型而異。 若要顯示隱藏檔，請按一下 [方案總管] **** 中的 [顯示所有檔案] ****。
+ 預設會隱藏數個專案檔。 這些檔案是由 Visual Studio 所產生，並且會因專案類型而異。 若要顯示隱藏檔，請按一下 [方案總管]  中的 [顯示所有檔案] 。
 
  請勿修改隱藏專案檔。 不支援直接變更這些檔案，因為這麼做可能會損毀您的專案。 只要在文件中發生某些變更，就會重新產生隱藏專案檔。 如果您手動變更隱藏專案檔，則這些變更會在檔案重新產生時遺失。
 
@@ -105,7 +107,7 @@ ms.locfileid: "62978054"
 ### <a name="design-mode-vs-runtime-mode"></a>設計模式與執行時間模式的比較
  在 Visual Studio 環境中開啟文件時，文件一律會處於「 *設計模式*」(Design Mode)。 有些工作 (例如將主控制項拖曳至文件介面) 只能在設計模式下執行。
 
- 若要在執行時間 *模式*中查看檔，您必須在 Visual Studio 外部開啟應用程式和檔。 您也可以建置並執行專案，使其自動在 Visual Studio 外部開啟文件和應用程式。
+ 若要在執行時間 *模式* 中查看檔，您必須在 Visual Studio 外部開啟應用程式和檔。 您也可以建置並執行專案，使其自動在 Visual Studio 外部開啟文件和應用程式。
 
 ## <a name="code-editor"></a>程式碼編輯器
  [程式碼編輯器] 可讓您檢視和修改方案中的可見程式碼檔。 這些檔案包含定義您方案行為的程式碼。

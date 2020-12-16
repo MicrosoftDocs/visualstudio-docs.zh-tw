@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Tools for Office 執行時間總覽
+description: 您必須在終端使用者電腦上安裝適用于 Office runtime 的 Visual Studio 2010 工具，才能執行使用 Microsoft Office 開發人員工具所建立的解決方案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31d2244796282aaad56011d5b9963232d3438ce9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16431a9ba2fe56b88f9f6b7f2c874c75bfad61c3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253991"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526276"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office 執行時間總覽
   若要執行使用 Visual Studio 中的 Microsoft Office 開發人員工具所建立的方案，必須在使用者電腦上安裝適用于 Office runtime 的 Visual Studio 2010 工具。 如需詳細資訊，請參閱 [如何：安裝 Visual Studio Tools for Office 執行時間可](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)轉散發套件。 適用于 Office 執行時間的 Visual Studio 2010 工具是由兩個主要元件所組成：
@@ -53,7 +55,7 @@ ms.locfileid: "71253991"
  在大部分情況下，不論您的方案是以 .NET Framework 3.5 還是 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]為目標，在 Office 方案中撰寫的程式碼都會相同。 不過，當您以不同版本的 .NET Framework 為目標時，某些功能會需要不同的程式碼。 如需詳細資訊，請參閱將 [Office 方案遷移至 .NET Framework 4 或更新版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)。
 
 ### <a name="interfaces-in-the-office-extensions-for-the-net-framework-4-or-later"></a>適用于 .NET Framework 4 或更新版本之 Office 擴充功能中的介面
- 在適用於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 和更新版本的 Office 擴充功能中，大部分介面無法供使用者程式碼實作。 您可以直接實作的介面，僅限名稱開頭為字母 **I**者，例如 <xref:Microsoft.Office.Tools.Excel.ISmartTagExtension>。
+ 在適用於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 和更新版本的 Office 擴充功能中，大部分介面無法供使用者程式碼實作。 您可以直接實作的介面，僅限名稱開頭為字母 **I** 者，例如 <xref:Microsoft.Office.Tools.Excel.ISmartTagExtension>。
 
  所有不是以字母 **I** 開頭的介面，都是由 Visual Studio 2010 Tools for Office runtime 在內部執行，而且這些介面在未來的版本中可能會變更。 若要建立實作這些介面的物件，請使用專案中 `Globals.Factory` 物件提供的方法。 例如，若要取得實作 <xref:Microsoft.Office.Tools.Excel.SmartTag> 介面的物件，請使用 `Globals.Factory.CreateSmartTag` 方法。 如需的詳細資訊 `Globals.Factory` ，請參閱 [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。
 
@@ -85,7 +87,7 @@ ms.locfileid: "71253991"
  *VSTOEE.dll* 確定 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 已針對方案和安裝的 Office 版本載入正確的版本。 雖然 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 可以在同一部電腦上安裝多個版本，但是一次只會安裝一個 *VSTOEE.dll* 實例。 這是安裝在電腦上的最新執行階段版本隨附的 *VSTOEE.dll* 。 如需可用於其他方案之不同版本的詳細資訊 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ，請參閱 [在不同版本的 Microsoft Office 中執行方案](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)。
 
 ### <a name="vstoloaderdll"></a>VSTOLoader.dll
- *VSTOEE.dll*載入適當的版本之後 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ， *VSTOLoader.dll*執行載入方案元件所需的大部分工作。 *VSTOLoader.dll* 會執行幾項作業：
+ *VSTOEE.dll* 載入適當的版本之後 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ， *VSTOLoader.dll* 執行載入方案元件所需的大部分工作。 *VSTOLoader.dll* 會執行幾項作業：
 
 - 為每個方案組件建立應用程式定義域。
 
@@ -113,7 +115,7 @@ ms.locfileid: "71253991"
  64 位元版本 Office 也能執行以 Visual Studio 2008 中 2007 Microsoft Office System 的專案範本所建立的 Office 方案， 但不能執行以 Visual Studio 2008 中 Microsoft Office 2003 適用之專案範本所建立的 Office 方案，或以 Visual Studio 2005 所建立的 Office 方案。 如需詳細資訊，請參閱 [在不同版本的 Microsoft Office 中執行方案](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)。
 
 ## <a name="repair-the-visual-studio-2010-tools-for-office-runtime"></a>修復適用于 Office 執行時間的 Visual Studio 2010 工具
- 如果您需要修復此執行階段，請在 [控制台] 開啟 [程式和功能] **** 或 [新增或移除程式] **** ，選取程式清單中的 [Microsoft Visual Studio 2010 Tools for Office Runtime] **** ，然後按一下 [解除安裝] ****。 執行的安裝程式可讓您修復此執行階段。 如果您按一下 [ **變更**]，則系統不會提供修復執行階段的選項。
+ 如果您需要修復此執行階段，請在 [控制台] 開啟 [程式和功能]  或 [新增或移除程式]  ，選取程式清單中的 [Microsoft Visual Studio 2010 Tools for Office Runtime]  ，然後按一下 [解除安裝] 。 執行的安裝程式可讓您修復此執行階段。 如果您按一下 [ **變更**]，則系統不會提供修復執行階段的選項。
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio Tools for Office 執行時間安裝案例](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)

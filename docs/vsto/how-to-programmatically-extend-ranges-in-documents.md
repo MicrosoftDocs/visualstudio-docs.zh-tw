@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式在檔中擴充範圍
+description: 瞭解如何以程式設計方式，在檔層級或應用層級上，以程式設計方式擴充 Microsoft Word 檔中的開始和結束點範圍。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35ef0ea0352141f18945632f996237c2d9d90204
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61ed056b5cebcebb6fe2dffd66dc374e4e1f9205
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547416"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525744"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>如何：以程式設計方式在檔中擴充範圍
-  在您定義 Microsoft Office Word 文件中的 <xref:Microsoft.Office.Interop.Word.Range> 物件之後，可以使用 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法來變更其起始點和結束點。 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法採用相同的兩個引數： *Unit*和*Count*。 *Count*引數是要移動的單位數目，而*Unit*引數可以是下列其中一個 <xref:Microsoft.Office.Interop.Word.WdUnits> 值：
+  在您定義 Microsoft Office Word 文件中的 <xref:Microsoft.Office.Interop.Word.Range> 物件之後，可以使用 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法來變更其起始點和結束點。 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法採用相同的兩個引數： *Unit* 和 *Count*。 *Count* 引數是要移動的單位數目，而 *Unit* 引數可以是下列其中一個 <xref:Microsoft.Office.Interop.Word.WdUnits> 值：
 
 - <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>
 

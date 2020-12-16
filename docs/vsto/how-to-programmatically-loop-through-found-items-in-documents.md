@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式在檔中找到的專案之間執行迴圈
+description: 瞭解如何使用 Visual Studio，以程式設計方式執行在 Microsoft Word 檔中找到的專案之間的迴圈。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e033b3d43f40736d7c77d11b489c0a6c2e91434e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 634012cae7f12f5346ec83bbd2b41c1019ef066d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585141"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525616"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>如何：以程式設計方式在檔中找到的專案之間執行迴圈
-  <xref:Microsoft.Office.Interop.Word.Find>類別具有 <xref:Microsoft.Office.Interop.Word.Find.Found%2A> 屬性，每當找到搜尋的專案時，它就會傳回**true** 。 您可以使用 <xref:Microsoft.Office.Interop.Word.Range> 方法在 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 中找到的所有執行個體間執行迴圈。
+  <xref:Microsoft.Office.Interop.Word.Find>類別具有 <xref:Microsoft.Office.Interop.Word.Find.Found%2A> 屬性，每當找到搜尋的專案時，它就會傳回 **true** 。 您可以使用 <xref:Microsoft.Office.Interop.Word.Range> 方法在 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 中找到的所有執行個體間執行迴圈。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

@@ -1,5 +1,7 @@
 ---
 title: Visual Studio) 中 (Office 開發的使用者介面參考
+description: 瞭解 Visual Studio 中的 Office 程式開發，以及哪些使用者介面元素是 Office 專案的一部分。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17366c4901c6fa28036d089f74402768721e1a8d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: dc58e106a24b857f4702876085a8ab986b6c5c92
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584382"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526532"
 ---
 # <a name="user-interface-reference-office-development-in-visual-studio"></a>Visual Studio) 中 (Office 開發的使用者介面參考
   下列使用者介面項目屬於 Visual Studio 中 Office 專案的一部分。

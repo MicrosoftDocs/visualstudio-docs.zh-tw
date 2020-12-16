@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式從檔中移除所有批註
+description: 瞭解如何使用 Visual Studio 以程式設計方式移除 Microsoft Word 檔中的所有批註。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee30cb7d4083adfff18261e3267dea1d8a96626f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: cdb2d7b61efc1e40bf08b6b38ea6564892a04a33
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584816"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526650"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>如何：以程式設計方式從檔中移除所有批註
   您可以使用 `DeleteAllComments` 方法，從 Microsoft Office Word 文件移除所有註解。

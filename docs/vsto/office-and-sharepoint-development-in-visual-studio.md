@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 中的 Office 和 SharePoint 開發
+description: 瞭解如何藉由建立使用者從 Office Store 下載的輕量應用程式或增益集，來擴充 Microsoft Office 和 SharePoint。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: abd9d3aac289df702554790673cb6561a6e2488d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811028"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525331"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 Office 和 SharePoint 開發
   若要擴充 Microsoft Office 和 SharePoint，您可以建立讓使用者從 [Office 市集](https://store.office.com/) 或組織目錄下載的輕量應用程式或增益集，或是建立以 .NET Framework 為基礎的解決方案，讓使用者可以安裝在電腦上。
@@ -90,7 +92,7 @@ ms.locfileid: "90811028"
 
  **深入了解**
 
-|以|讀取|
+|收件者|讀取|
 |--------|----------|
 |比較擴充 Office 的不同方式，並決定您應該要使用 VSTO 增益集或 Office 增益集。|[Office 增益集、VSTO 與 VBA 的藍圖](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 |建立 VSTO 增益集。|[使用 Visual Studio 來建置 VSTO 增益集](create-vsto-add-ins-for-office-by-using-visual-studio.md)|

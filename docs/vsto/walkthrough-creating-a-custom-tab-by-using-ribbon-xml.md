@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：使用功能區 XML 建立自訂索引標籤
+description: 瞭解如何將按鈕新增至 [Add-Ins] 索引標籤，並使用功能區 (XML) 將 Microsoft Word 自動化。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,15 +19,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e05bd9173b83ec3303a058dcf61ea48a7ef7675c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e81d20dc179df76b759223c1460ca13bfceb5706
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838819"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524886"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>逐步解說：使用功能區 XML 建立自訂索引標籤
-  本逐步解說示範如何使用 **功能區 (XML) ** 專案來建立自訂功能區索引標籤。
+  本逐步解說示範如何使用 **功能區 (XML)** 專案來建立自訂功能區索引標籤。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -50,40 +52,40 @@ ms.locfileid: "90838819"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 建立名稱為**MyRibbonAddIn**的**Word 增益集**專案。
+1. 建立名稱為 **MyRibbonAddIn** 的 **Word 增益集** 專案。
 
      如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 開啟 **ThisAddIn.cs** 或 **ThisAddIn .vb** 程式碼檔，並將 **MyRibbonAddIn** 專案新增至 **方案總管**。
 
 ## <a name="create-the-vsto-add-ins-tab"></a>[建立 VSTO 增益集] 索引標籤
- 若要建立 [ **增益集** ] 索引標籤，請將 **功能區 (XML) ** 專案加入至您的專案。 稍後在本逐步解說中，您將會加入一些按鈕到此索引標籤中。
+ 若要建立 [ **增益集** ] 索引標籤，請將 **功能區 (XML)** 專案加入至您的專案。 稍後在本逐步解說中，您將會加入一些按鈕到此索引標籤中。
 
 ### <a name="to-create-the-add-ins-tab"></a>若要建立增益集索引標籤
 
-1. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
+1. 在 [專案] 功能表上，按一下 [加入新項目]。
 
-2. 在 [ **加入新專案** ] 對話方塊中，選取 [ **功能區 (XML) **。
+2. 在 [ **加入新專案** ] 對話方塊中，選取 [ **功能區 (XML)**。
 
-3. 將新功能區的名稱變更為 **MyRibbon**，然後按一下 [加入] ****。
+3. 將新功能區的名稱變更為 **MyRibbon**，然後按一下 [加入] 。
 
-     **MyRibbon.cs**或**myribbon.vb .vb**檔案會在設計工具中開啟。 名為 **MyRibbon.xml** 的 XML 檔案也會加入至您的專案。
+     **MyRibbon.cs** 或 **myribbon.vb .vb** 檔案會在設計工具中開啟。 名為 **MyRibbon.xml** 的 XML 檔案也會加入至您的專案。
 
-4. 在 **方案總管**中，以滑鼠右鍵按一下 [ **ThisAddin.cs** ] 或 [ **ThisAddin**]，然後按一下 [ **視圖程式碼**]。
+4. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **ThisAddin.cs** ] 或 [ **ThisAddin**]，然後按一下 [ **視圖程式碼**]。
 
 5. 將下列程式碼加入 **ThisAddin** 類別中。 此程式碼會覆寫 `CreateRibbonExtensibilityObject` 方法，並將功能區 XML 類別傳回 Office 應用程式。
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
-6. 在 **方案總管**中，以滑鼠右鍵按一下 **MyRibbonAddIn** 專案，然後按一下 [ **建立**]。 確認專案建置無誤。
+6. 在 **方案總管** 中，以滑鼠右鍵按一下 **MyRibbonAddIn** 專案，然後按一下 [ **建立**]。 確認專案建置無誤。
 
 ## <a name="add-buttons-to-the-add-ins-tab"></a>將按鈕加入 [增益集] 索引標籤
  此 VSTO 增益集的目標在讓使用者能夠重複使用的文字與特定資料表，加入使用中的文件。 若要提供使用者介面，請修改功能區 XML 檔案，將兩個按鈕加入 [ **增益集** ] 索引標籤。 稍後在本逐步解說中，您將定義按鈕的回呼方法。 如需功能區 XML 檔案的詳細資訊，請參閱 [功能區 xml](../vsto/ribbon-xml.md)。
 
 ### <a name="to-add-buttons-to-the-add-ins-tab"></a>將按鈕加入 [增益集] 索引標籤
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 **MyRibbon.xml** ，然後按一下 [ **開啟**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 **MyRibbon.xml** ，然後按一下 [ **開啟**]。
 
 2. 以下列 XML 取代 **tab** 元素的內容。 這個 XML 會將預設控制項群組的標籤變更為 [ **內容**]，並加入兩個新的按鈕，內含標籤 **插入文字** 和 **插入資料表**。
 
@@ -105,7 +107,7 @@ ms.locfileid: "90838819"
 
 ### <a name="to-add-callback-methods-for-the-buttons"></a>加入按鈕的回呼方法
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **MyRibbon.cs** ] 或 [ **myribbon.vb**]，然後按一下 [ **開啟**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **MyRibbon.cs** ] 或 [ **myribbon.vb**]，然後按一下 [ **開啟**]。
 
 2. 將下列程式碼新增至 **MyRibbon.cs** 或 **myribbon.vb .vb** 檔案的頂端。 此程式碼會建立為 <xref:Microsoft.Office.Interop.Word> 命名空間建立別名。
 
@@ -131,7 +133,7 @@ ms.locfileid: "90838819"
 
 2. 確認 [ **增益集** ] 索引標籤顯示在功能區上。
 
-3. 按一下 [增益集] **** 索引標籤。
+3. 按一下 [增益集]  索引標籤。
 
 4. 確認可在功能區上看見 **內容** 群組。
 

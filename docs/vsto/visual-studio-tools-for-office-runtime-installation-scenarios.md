@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Tools for Office 執行時間安裝案例
+description: 瞭解如何安裝 Visual Studio 2010 Tools for Office runtime。 本文描述三種安裝案例。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95d183d2b767738156fc63f95d2a83ed6a1e5714
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 484627c01a5385a6da4b2b0a41a966ac31d0e6d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584369"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526405"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office 執行時間安裝案例
   您可以用三種方式安裝適用于 Office 執行時間的 Visual Studio 2010 工具：

@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式隱藏檔中的文字
+description: 瞭解如何藉由針對特定文字範圍設定字型的隱藏屬性，隱藏 Microsoft Word 檔中的文字。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dae19d196f830e5187fa395473c0a5482cb1d03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a375e8b844f82b5d310841d7b4cdc092b18ff6c3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543308"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525695"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>如何：以程式設計方式隱藏檔中的文字
   您可以針對文字的特定範圍設定 <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> 的 <xref:Microsoft.Office.Interop.Word.Range.Font%2A> 屬性，以隱藏文件中的文字。

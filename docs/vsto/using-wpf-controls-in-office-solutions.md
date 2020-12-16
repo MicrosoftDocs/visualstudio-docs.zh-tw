@@ -1,5 +1,7 @@
 ---
 title: 在 Office 方案中使用 WPF 控制項
+description: 瞭解如何使用 Windows Presentation Foundation (WPF) 控制項來設計 Visual Studio 中的使用者介面。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e041cda914cbf8aced4b19adfc80c601984c30e0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189758"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526435"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>在 Office 方案中使用 WPF 控制項
 
@@ -37,13 +39,13 @@ ms.locfileid: "73189758"
 
 ## <a name="add-wpf-controls-to-office-projects-at-design-time"></a>在設計階段將 WPF 控制項加入 Office 專案
 
-您無法在 Office 方案的 UI 元素中直接加入 WPF 控制項。 相反地，請將 **使用者控制項 (WPF) ** 專案加入至您的專案，並將其作為 WPF 控制項的設計介面。 然後，在專案的 UI 元素中加入 WPF 使用者控制項。
+您無法在 Office 方案的 UI 元素中直接加入 WPF 控制項。 相反地，請將 **使用者控制項 (WPF)** 專案加入至您的專案，並將其作為 WPF 控制項的設計介面。 然後，在專案的 UI 元素中加入 WPF 使用者控制項。
 
 ### <a name="to-add-wpf-controls-to-an-actions-pane-custom-task-pane-or-form-region"></a>在執行窗格、自訂工作窗格或表單區域加入 WPF 控制項
 
 1. 開啟要加入自訂工作窗格、執行窗格或表單區域的專案。
 
-2. 將 ** (WPF) 專案的使用者控制項 ** 新增至專案。
+2. 將 **(WPF) 專案的使用者控制項** 新增至專案。
 
 3. 在 [ **工具箱**] 中，將 wpf 控制項加入 wpf 使用者控制項設計介面。
 
@@ -59,7 +61,7 @@ ms.locfileid: "73189758"
 
     - 針對自訂工作窗格，將 [ **使用者控制項** ] 專案加入至專案。 如需詳細資訊，請參閱 [如何：將自訂工作窗格加入至應用程式](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。
 
-6. 從 [**工具箱**] 的*專案名稱*[ **wpf 使用者控制項**] 索引標籤中，將 WPF 使用者控制項拖曳至 [執行] 窗格、表單區域或自訂工作窗格的設計工具。
+6. 從 [**工具箱**] 的 *專案名稱*[ **wpf 使用者控制項**] 索引標籤中，將 WPF 使用者控制項拖曳至 [執行] 窗格、表單區域或自訂工作窗格的設計工具。
 
      Visual Studio 會自動建立在 UI 元素上裝載 WPF 使用者控制項的 <xref:System.Windows.Forms.Integration.ElementHost> 物件。
 
@@ -69,7 +71,7 @@ ms.locfileid: "73189758"
 
 1. 開啟 Word 或 Excel 的文件層級專案。
 
-2. 將 ** (WPF) 專案的使用者控制項 ** 新增至專案。
+2. 將 **(WPF) 專案的使用者控制項** 新增至專案。
 
 3. 在 [ **工具箱**] 中，將 wpf 控制項加入 wpf 使用者控制項設計介面。
 

@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式複製工作表
+description: 瞭解如何建立工作表的複本，並將該工作表插入活頁簿中現有的工作表之前或之後。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8226f337994c686d4d370e91831bc1262d3ef85e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4b2f16cfc8855f2adff3a4614c38eb70fbe7db5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546077"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524793"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>如何：以程式設計方式複製工作表
   您可以建立一份工作表，並將其插入活頁簿中現有工作表的前面或後面。 如不指定工作表的插入位置，Excel 會建立新的活頁簿以收納新的工作表。

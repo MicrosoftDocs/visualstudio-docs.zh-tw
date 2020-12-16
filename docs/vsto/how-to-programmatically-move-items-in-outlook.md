@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式在 Outlook 中移動專案
+description: 瞭解如何以程式設計方式在 Microsoft Outlook 中移動專案。 此範例會將未閱讀的電子郵件訊息從收件匣移至名為 Test 的資料夾。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97f686a47d18fa91909de489f12f9c7a8c1306d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b247df68827767a53d8d066f4750dfa9da52ac7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519908"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525570"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>如何：以程式設計方式在 Outlook 中移動專案
-  此範例會將未閱讀的電子郵件訊息從 **收件** 匣移至名為 **Test**的資料夾。 此範例只會在欄位中移動有文字 **測試** 的訊息 `Subject` 。
+  此範例會將未閱讀的電子郵件訊息從 **收件** 匣移至名為 **Test** 的資料夾。 此範例只會在欄位中移動有文字 **測試** 的訊息 `Subject` 。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -30,7 +32,7 @@ ms.locfileid: "85519908"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要：
 
-- 名為 **Test**的 Outlook 郵件資料夾。
+- 名為 **Test** 的 Outlook 郵件資料夾。
 
 - 在欄位中以文字 **測試** 送達的電子郵件訊息 `Subject` 。
 

@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式列出最近使用的活頁簿檔案
+description: 瞭解如何使用 Visual Studio，以程式設計方式列出最近使用過的 Microsoft Excel 活頁簿檔案。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e3d6b57251bb19cfb02849defb157c949f4ce35
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bbcad553ade6234d3a688c8f718a0dd6e6cda509
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585154"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525639"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>如何：以程式設計方式列出最近使用的活頁簿檔案
   <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>屬性會傳回集合，其中包含最近使用之檔案的 Microsoft Office Excel 清單中出現的所有檔案的名稱。 清單的長度會根據使用者選取要保留的檔案數目而有所不同。 您可以在範圍中顯示結果。

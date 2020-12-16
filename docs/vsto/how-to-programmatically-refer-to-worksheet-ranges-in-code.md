@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式在程式碼中參考工作表範圍
+description: 瞭解如何使用 Visual Studio，以程式設計方式參考 Microsoft Excel 工作表中 NamedRange 控制項或原生 Excel 範圍物件的內容。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319be5ad6c878e08a862d1e20e826c2800c33512
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9756123038de33e8f8e69bd9a824822c26e2dc00
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584829"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526669"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>如何：以程式設計方式在程式碼中參考工作表範圍
   您可以使用類似的進程來參考 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件的內容。

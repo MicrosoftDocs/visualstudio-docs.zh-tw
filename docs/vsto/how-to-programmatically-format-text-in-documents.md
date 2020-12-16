@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式格式化檔中的文字
+description: 瞭解如何使用 Range 物件以程式設計方式格式化 Microsoft Word 檔中的文字。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76af290b0e32126689dbe7b60f27889d9742ea7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931991529b160fedfe65a92e8243183792abf518
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519843"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525731"
 ---
 # <a name="how-to-programmatically-format-text-in-documents"></a>如何：以程式設計方式格式化檔中的文字
   您可以使用 <xref:Microsoft.Office.Interop.Word.Range> 物件格式化 Microsoft Office Word 文件中的文字。

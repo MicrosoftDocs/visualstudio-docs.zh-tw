@@ -1,5 +1,7 @@
 ---
 title: 使用快取資料集建立主要詳細資料關聯性
+description: 瞭解如何在工作表上建立主要/詳細資料關聯並快取資料，讓方案可以離線使用。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de7bf3ba34a2a7dd3e7db9ff549e4a839800d524
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328358"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524872"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>逐步解說：使用快取資料集建立主要詳細資料關聯
   本逐步解說將示範如何在工作表上建立主要/詳細資料關聯，以及如何快取資料，讓方案可以離線使用。
@@ -79,9 +81,9 @@ ms.locfileid: "67328358"
 
 8. 選取 [ **Orders** ] 資料表和 [ **Order Details** ] 資料表。
 
-9. 按一下 [完成]  。
+9. 按一下 [完成] 。
 
-   Wizard 會將這兩個數據表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管**中可見的專案。
+   Wizard 會將這兩個數據表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管** 中可見的專案。
 
 ## <a name="add-controls-to-the-worksheet"></a>將控制項新增至工作表
  在此步驟中，您將會在第一個工作表中加入一個命名範圍、清單物件和兩個按鈕。 首先，從 [ **資料來源** ] 視窗加入命名範圍和清單物件，讓它們自動系結至資料來源。 接下來，從 [ **工具箱**] 加入按鈕。
@@ -96,17 +98,17 @@ ms.locfileid: "67328358"
 
 4. 按一下下拉式清單中的 [ **NamedRange** ]，然後將 [ **訂單** ] 資料行拖曳至儲存格 **A2**。
 
-     <xref:Microsoft.Office.Tools.Excel.NamedRange> `OrderIDNamedRange` 在儲存格**A2**中會建立名為的控制項。 同時， <xref:System.Windows.Forms.BindingSource> 已命名的 `OrdersBindingSource` 、資料表介面卡和 <xref:System.Data.DataSet> 實例會加入至專案。 控制項系結至 <xref:System.Windows.Forms.BindingSource> ，後者接著會系結至 <xref:System.Data.DataSet> 實例。
+     <xref:Microsoft.Office.Tools.Excel.NamedRange> `OrderIDNamedRange` 在儲存格 **A2** 中會建立名為的控制項。 同時， <xref:System.Windows.Forms.BindingSource> 已命名的 `OrdersBindingSource` 、資料表介面卡和 <xref:System.Data.DataSet> 實例會加入至專案。 控制項系結至 <xref:System.Windows.Forms.BindingSource> ，後者接著會系結至 <xref:System.Data.DataSet> 實例。
 
 5. 將 [ **Orders** ] 資料表底下的資料行向下移動。 清單底部是 **訂單詳細資料** 表格;這是因為它是 **Orders** 資料表的子系。 選取此 **訂單詳細資料** 資料表，而不是與 **Orders** 資料表位於相同層級的資料表，然後按一下出現的下拉箭號。
 
 6. 按一下下拉式清單中的 [ **ListObject** ]，然後將 [ **OrderDetails** ] 資料表拖曳到 [資料格 **A6**]。
 
-7. <xref:Microsoft.Office.Tools.Excel.ListObject>名為**Order_DetailsListObject**的控制項會在儲存格**A6**中建立，並系結至 <xref:System.Windows.Forms.BindingSource> 。
+7. <xref:Microsoft.Office.Tools.Excel.ListObject>名為 **Order_DetailsListObject** 的控制項會在儲存格 **A6** 中建立，並系結至 <xref:System.Windows.Forms.BindingSource> 。
 
 ### <a name="to-add-two-buttons"></a>加入兩個按鈕
 
-1. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將 <xref:System.Windows.Forms.Button> 控制項加入工作表的儲存格**A3** 。
+1. 從 [**工具箱**] 的 [**通用控制項**] 索引標籤，將 <xref:System.Windows.Forms.Button> 控制項加入工作表的儲存格 **A3** 。
 
     此按鈕的名稱為 `Button1` 。
 
@@ -136,7 +138,7 @@ ms.locfileid: "67328358"
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>若要初始化資料和控制項
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
 
 2. 將下列程式碼加入至 `Sheet1_Startup` 方法，以設定按鈕的文字。
 
@@ -177,7 +179,7 @@ ms.locfileid: "67328358"
 
 5. 停用資料庫的連接。 如果資料庫位於伺服器上，請從電腦拔下網路纜線，或如果資料庫位於您的開發電腦上，請停止 SQL Server 服務。
 
-6. 開啟 Excel，然後從*\bin*目錄中開啟**我的 Master-Detail.xlsx** ， (*\My Master-Detail\bin*中的 Visual Basic 或*\My Master-Detail\bin\debug*中的 c # ) 。
+6. 開啟 Excel，然後從 *\bin* 目錄中開啟 **我的 Master-Detail.xlsx** ， (*\My Master-Detail\bin* 中的 Visual Basic 或 *\My Master-Detail\bin\debug* 中的 c # ) 。
 
 7. 滾動某些記錄，以查看工作表在中斷連接時正常運作。
 

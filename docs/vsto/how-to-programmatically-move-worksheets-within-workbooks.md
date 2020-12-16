@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式在活頁簿內移動工作表
+description: 瞭解如何以程式設計方式變更工作表相對於 Microsoft Excel 活頁簿中其他工作表的位置。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fca9d466f3af8a0dd3191f2845613fc9b43ec549
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 165ac8f440b33d68dc70530731a5528ae23726b0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584213"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525583"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>如何：以程式設計方式在活頁簿內移動工作表
   您可以透過程式設計方式變更工作表在活頁簿中相對於其他工作表的位置。 如果您不指定移動工作表的位置，Excel 會建立新的活頁簿來包含它。

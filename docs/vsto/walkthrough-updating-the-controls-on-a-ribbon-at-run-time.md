@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：在執行時間更新功能區上的控制項
+description: 瞭解如何使用功能區物件模型，在功能區載入至 Office 應用程式之後，更新功能區上的控制項。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2246dcdca1e754c885dd610f98986306a256228c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298055"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526046"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>逐步解說：在執行時間更新功能區上的控制項
 
@@ -31,7 +33,7 @@ ms.locfileid: "92298055"
 
 [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-此範例會提取 Northwind 範例資料庫的資料，填入 Microsoft Office Outlook 中的下拉式方塊和功能表。 您在這些控制項中選取的專案，會自動填入電子郵件**訊息中的**欄位，**例如和。**
+此範例會提取 Northwind 範例資料庫的資料，填入 Microsoft Office Outlook 中的下拉式方塊和功能表。 您在這些控制項中選取的專案，會自動填入電子郵件 **訊息中的** 欄位，**例如和。**
 
 本逐步解說將說明下列工作：
 
@@ -60,9 +62,9 @@ ms.locfileid: "92298055"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>建立新的 Outlook VSTO 增益集專案
 
-1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，建立名稱為 **Ribbon_Update_At_Runtime**的 Outlook VSTO 增益集專案。
+1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，建立名稱為 **Ribbon_Update_At_Runtime** 的 Outlook VSTO 增益集專案。
 
-2. 在 [新增專案] **** 對話方塊中，選取 [為方案建立目錄] ****。
+2. 在 [新增專案]  對話方塊中，選取 [為方案建立目錄] 。
 
 3. 將專案儲存至預設的專案目錄。
 
@@ -74,13 +76,13 @@ ms.locfileid: "92298055"
 
 ### <a name="to-design-a-custom-group"></a>設計自訂群組
 
-1. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
+1. 在 [專案] 功能表上，按一下 [加入新項目]。
 
 2. 選取 [ **加入新項目** ] 對話方塊中的 [ **功能區 (視覺化設計工具)**]。
 
 3. 將新功能區的名稱變更為 **CustomerRibbon**，然後按一下 [ **新增**]。
 
-     *CustomerRibbon.cs*或*CustomerRibbon .vb*檔會在功能區設計工具中開啟，並顯示預設索引標籤和群組。
+     *CustomerRibbon.cs* 或 *CustomerRibbon .vb* 檔會在功能區設計工具中開啟，並顯示預設索引標籤和群組。
 
 4. 按一下選取功能區設計工具。
 
@@ -92,13 +94,13 @@ ms.locfileid: "92298055"
 
 7. 在 [ **屬性** ] 視窗中，將 [ **標籤** ] 設定為 [ **客戶購買**]。
 
-8. 從 [**工具箱**] 的 [ **Office 功能區控制項**] 索引標籤，將**ComboBox**拖曳至 [**客戶購買**] 群組。
+8. 從 [**工具箱**] 的 [ **Office 功能區控制項**] 索引標籤，將 **ComboBox** 拖曳至 [**客戶購買**] 群組。
 
 9. 按一下 [ **ComboBox1** ] 加以選取。
 
 10. 在 [ **屬性** ] 視窗中，將 **標籤** 設定為 [ **客戶**]。
 
-11. 從 [**工具箱**] 的 [ **Office 功能區控制項**] 索引標籤中，將**功能表**拖曳至 [**客戶購買**] 群組。
+11. 從 [**工具箱**] 的 [ **Office 功能區控制項**] 索引標籤中，將 **功能表** 拖曳至 [**客戶購買**] 群組。
 
 12. 在 [ **屬性** ] 視窗中，將 [ **標籤** ] 設定為 **購買的產品**。
 
@@ -112,7 +114,7 @@ ms.locfileid: "92298055"
 
 ### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>將自訂群組加入內建索引標籤
 
-1. 按一下 **[tabaddins (內建的) ** ] 索引標籤加以選取。
+1. 按一下 **[tabaddins (內建的)** ] 索引標籤加以選取。
 
 2. 在 [ **屬性** ] 視窗中，展開 [ **ControlId** ] 屬性，然後將 [ **OfficeId** ] 設定為 [ **[tabnewmailmessage]**]。
 
@@ -124,7 +126,7 @@ ms.locfileid: "92298055"
 
 5. 將 **OfficeId** 屬性設定為 **GroupClipboard**。
 
-     這會將**客戶購買**的群組放置在 [**訊息**] 索引標籤的 [**剪貼**簿] 群組之前。
+     這會將 **客戶購買** 的群組放置在 [**訊息**] 索引標籤的 [**剪貼** 簿] 群組之前。
 
 ## <a name="create-the-data-source"></a>建立資料來源
 
@@ -158,7 +160,7 @@ ms.locfileid: "92298055"
 
     4. **產品**
 
-9. 按一下 [完成]  。
+9. 按一下 [完成] 。
 
 ## <a name="update-controls-in-the-custom-group-at-run-time"></a>在執行時間更新自訂群組中的控制項
 
@@ -178,9 +180,9 @@ ms.locfileid: "92298055"
 
     這個組件包含使用 Language-Integrated Queries (LINQ) 的類別。 您會使用 LINQ，以 Northwind 資料庫的資料填入自訂群組中的控制項。
 
-3. 在 **方案總管**中，按一下 [ **CustomerRibbon.cs** ] 或 [ **CustomerRibbon** ] 以選取它。
+3. 在 **方案總管** 中，按一下 [ **CustomerRibbon.cs** ] 或 [ **CustomerRibbon** ] 以選取它。
 
-4. 在 [檢視]**** 功能表中，按一下 [程式碼]****。
+4. 在 [檢視] 功能表中，按一下 [程式碼]。
 
     功能區程式碼檔案隨即在程式碼編輯器中開啟。
 
@@ -219,7 +221,7 @@ ms.locfileid: "92298055"
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]
 
-10. 在 **方案總管**中，按兩下功能區程式碼檔案。
+10. 在 **方案總管** 中，按兩下功能區程式碼檔案。
 
      螢幕設計工具隨即開啟。
 
@@ -252,9 +254,9 @@ ms.locfileid: "92298055"
 
 ## <a name="test-the-controls-in-the-custom-group"></a>測試自訂群組中的控制項
 
-當您在 Outlook 中開啟新的郵件表單時，會在功能區的 [**訊息**] 索引標籤上顯示名為**客戶購買**的自訂群組。
+當您在 Outlook 中開啟新的郵件表單時，會在功能區的 [**訊息**] 索引標籤上顯示名為 **客戶購買** 的自訂群組。
 
-若要建立客戶追蹤電子郵件訊息，請選取客戶，然後選取客戶所購買的產品。 **客戶購買**群組中的控制項會在執行時間使用 Northwind 資料庫的資料進行更新。
+若要建立客戶追蹤電子郵件訊息，請選取客戶，然後選取客戶所購買的產品。 **客戶購買** 群組中的控制項會在執行時間使用 Northwind 資料庫的資料進行更新。
 
 ### <a name="to-test-the-controls-in-the-custom-group"></a>測試自訂群組中的控制項
 

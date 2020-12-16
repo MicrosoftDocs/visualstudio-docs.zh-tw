@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式儲存 Visio 檔
+description: 瞭解如何使用 Visual Studio 以程式設計方式儲存尚未儲存的 Microsoft Visio 現有檔和新檔。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 891a5c44159d10aacbb767cbc5376ae1d62252b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29f8cbc8aa7b2ea796109a8143d348905df671f7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547052"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525386"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>如何：以程式設計方式儲存 Visio 檔
   儲存 Microsoft Office Visio 文件的方式有很多種：

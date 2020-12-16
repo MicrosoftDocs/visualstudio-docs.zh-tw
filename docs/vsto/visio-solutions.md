@@ -1,5 +1,7 @@
 ---
 title: Visio 方案
+description: 瞭解如何使用 VSTO 增益集來自動化 Visio、擴充 Visio 功能，或自訂 Visio 使用者介面 (UI) 。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a79b3c9964a24daf0a12ab90f47fb5903d89cdd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b4cbdfe6cceff279ae20518edf83b4f4ec8912
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985502"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526379"
 ---
 # <a name="visio-solutions"></a>Visio 方案
   Visual Studio 提供的專案範本可用來建立 Microsoft Office Visio 的 VSTO 增益集。 您可以使用 VSTO 增益集來自動化 Visio、擴充 Visio 功能，或自訂 Visio 的使用者介面 (UI)。

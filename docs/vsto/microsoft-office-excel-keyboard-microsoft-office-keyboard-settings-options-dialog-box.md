@@ -1,5 +1,7 @@
 ---
 title: 選項對話方塊、設定、Office Excel 鍵盤
+description: 瞭解如何在檔具有選取動態鍵盤配置的焦點時，讓 Microsoft Excel 接收快速鍵命令。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,15 +19,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b590f82d5f28c3a71e86e18dfe16b1c3e6c4c5a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b3422cb53fb454b3585e0b8ba936ce692dfc68a4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584512"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525312"
 ---
 # <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>選項對話方塊、設定、Microsoft Office Excel 鍵盤
-  Microsoft Office Excel 和 Visual Studio 都處理快速鍵。 相同的快速鍵組合可以用於 Excel 和 Visual Studio 中的不同命令。 當 Excel 在 Visual Studio 的檔層級專案中開啟時，一次只有一個應用程式會收到快速鍵命令。 根據預設，Visual Studio 會接收所有快速鍵命令，但是您可以在檔具有選取 **動態鍵盤**佈局的焦點時，讓 Excel 接收它們。
+  Microsoft Office Excel 和 Visual Studio 都處理快速鍵。 相同的快速鍵組合可以用於 Excel 和 Visual Studio 中的不同命令。 當 Excel 在 Visual Studio 的檔層級專案中開啟時，一次只有一個應用程式會收到快速鍵命令。 根據預設，Visual Studio 會接收所有快速鍵命令，但是您可以在檔具有選取 **動態鍵盤** 佈局的焦點時，讓 Excel 接收它們。
 
  如果您使用的快速鍵未指派給目前正在處理快速鍵的應用程式中的命令，則會將快速鍵傳遞給另一個應用程式。
 

@@ -1,5 +1,7 @@
 ---
 title: 在 Office 方案中使用本機資料庫檔案總覽
+description: 瞭解如何在 Office 方案中包含資料庫檔案，例如 SQL Server Express ( .mdf) 檔或 Microsoft Office 存取 ( .mdb) 檔案。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea260a6286c8a923d56ab7a5088b55de57004489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a3166a88080eaee1042187c171c4938d236058a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982242"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526553"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>在 Office 方案中使用本機資料庫檔案總覽
   您可以在 Office 方案中包含資料庫檔案，例如 SQL Server Express (*.mdf*) 檔或 Microsoft Office 存取 (*.mdb*) 檔案。 這可讓使用者在不需要維護集中式資料庫的情況下維護本機資料庫，例如，只在單一電腦上使用的本機清查解決方案。
@@ -30,7 +32,7 @@ ms.locfileid: "62982242"
  若要將資料庫檔案匯入到您的專案中，請使用 [ **資料來源設定] Wizard** 根據資料庫檔案建立資料來源。 Wizard 會將資料庫檔案和具類型的資料集加入至您的專案。
 
 ## <a name="deploy-the-database-file"></a>部署資料庫檔案
- **資料來源設定向導**會使用相對路徑來建立本機資料庫檔案的連接。 如果您維護檔案的相對位置，這可讓您將方案從一部電腦複製到另一部電腦。
+ **資料來源設定向導** 會使用相對路徑來建立本機資料庫檔案的連接。 如果您維護檔案的相對位置，這可讓您將方案從一部電腦複製到另一部電腦。
 
  如果您將方案部署至伺服器，然後將檔散發給每位使用者，您也必須手動散發資料庫檔案，並將它安裝在相對於檔的相同位置。 這表示使用者不能將檔移至電腦上的新位置，除非他或她也移動資料庫檔案。
 

@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：將資料系結至 Excel 執行窗格上的控制項
+description: 將資料系結至 Microsoft Excel 中執行窗格上的控制項。 這些控制項會顯示 SQL Server 資料庫中資料表之間的主要/詳細資料關聯。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6c53f4c1dfe9838fe4522dcc71b675a7f6b868d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585050"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524973"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>逐步解說：將資料系結至 Excel 執行窗格上的控制項
   本逐步解說示範如何將資料系結至 Microsoft Office Excel 中執行窗格上的控制項。 這些控制項會顯示 SQL Server 資料庫中資料表之間的主要/詳細資料關聯。
@@ -59,7 +61,7 @@ ms.locfileid: "91585050"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 使用 [ **我的 Excel 動作] 窗格**的 [名稱] 建立 Excel 活頁簿專案。 在嚮導中，選取 [ **建立新檔**]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 使用 [ **我的 Excel 動作] 窗格** 的 [名稱] 建立 Excel 活頁簿專案。 在嚮導中，選取 [ **建立新檔**]。 如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 [ **我的 Excel 動作] 窗格** 專案加入 **方案總管**。
 
@@ -83,11 +85,11 @@ ms.locfileid: "91585050"
 
 8. 選取 [ **供應商** ] 資料表旁的核取方塊。
 
-9. 展開 [ **Products** ] 資料表 **，然後選取**[ **ProductName**]、[已**供應商**]、[ **QuantityPerUnit**] 和 [
+9. 展開 [ **Products** ] 資料表 **，然後選取**[ **ProductName**]、[已 **供應商**]、[ **QuantityPerUnit**] 和 [
 
 10. 按一下 [完成] 。
 
-    Wizard 將 [ **供應商** 資料表] 和 [ **產品** ] 資料表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管**中可見的專案。
+    Wizard 將 [ **供應商** 資料表] 和 [ **產品** ] 資料表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管** 中可見的專案。
 
 ## <a name="add-controls-to-the-worksheet"></a>將控制項新增至工作表
  接下來，將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項和 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項新增至第一個工作表。
@@ -102,13 +104,13 @@ ms.locfileid: "91585050"
 
 4. 將 [ **公司名稱** ] 從 [ **資料來源** ] 視窗拖曳至的儲存格 **A2** `Sheet1` 。
 
-     隨即 <xref:Microsoft.Office.Tools.Excel.NamedRange> 建立名為的控制項 `CompanyNameNamedRange` ，且文字 \<CompanyName> 會出現在儲存格 **A2**中。 同時， <xref:System.Windows.Forms.BindingSource> 已命名的 `suppliersBindingSource` 、資料表介面卡和 a <xref:System.Data.DataSet> 會加入至專案。 控制項系結至 <xref:System.Windows.Forms.BindingSource> ，後者接著會系結至 <xref:System.Data.DataSet> 實例。
+     隨即 <xref:Microsoft.Office.Tools.Excel.NamedRange> 建立名為的控制項 `CompanyNameNamedRange` ，且文字 \<CompanyName> 會出現在儲存格 **A2** 中。 同時， <xref:System.Windows.Forms.BindingSource> 已命名的 `suppliersBindingSource` 、資料表介面卡和 a <xref:System.Data.DataSet> 會加入至專案。 控制項系結至 <xref:System.Windows.Forms.BindingSource> ，後者接著會系結至 <xref:System.Data.DataSet> 實例。
 
 5. 在 [ **資料來源** ] 視窗中，向下移動 [ **供應商** ] 資料表底下的資料行。 清單底部是 **Products** 資料表;這是因為它是 **供應商** 資料表的子系。 選取 [ **產品** ] 資料表，而不是與 [ **供應商** ] 資料表位於相同層級的資料表，然後按一下出現的下拉箭號。
 
 6. 按一下下拉式清單中的 [ **ListObject** ]，然後將 [ **Products** ] 資料表拖曳至 **中的 [儲存格** ] `Sheet1` 。
 
-     <xref:Microsoft.Office.Tools.Excel.ListObject>名為的控制項 `ProductNameListObject` 會在資料格**A6**中建立。 同時也 <xref:System.Windows.Forms.BindingSource> 會將名為 `productsBindingSource` 和資料表介面卡加入專案中。 控制項系結至 <xref:System.Windows.Forms.BindingSource> ，後者接著會系結至 <xref:System.Data.DataSet> 實例。
+     <xref:Microsoft.Office.Tools.Excel.ListObject>名為的控制項 `ProductNameListObject` 會在資料格 **A6** 中建立。 同時也 <xref:System.Windows.Forms.BindingSource> 會將名為 `productsBindingSource` 和資料表介面卡加入專案中。 控制項系結至 <xref:System.Windows.Forms.BindingSource> ，後者接著會系結至 <xref:System.Data.DataSet> 實例。
 
 7. 針對 c #，請選取元件匣上的 [ **suppliersBindingSource** ]，然後在 [**屬性**] 視窗中將 [修飾詞 **] 屬性變更為 [** **內部**]。
 
@@ -117,9 +119,9 @@ ms.locfileid: "91585050"
 
 ### <a name="to-add-an-actions-pane-control"></a>若要加入執行窗格控制項
 
-1. 在**方案總管**中選取 [**我的 Excel 動作] 窗格**專案。
+1. 在 **方案總管** 中選取 [**我的 Excel 動作] 窗格** 專案。
 
-2. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
+2. 在 [專案] 功能表上，按一下 [加入新項目]。
 
 3. 在 [ **加入新專案** ] 對話方塊中，選取 [ **動作] 窗格控制項**，將其命名為 **ActionsControl**，然後按一下 [ **加入**]。
 
@@ -152,7 +154,7 @@ ms.locfileid: "91585050"
 
 #### <a name="to-show-the-actions-pane"></a>顯示動作窗格
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ *ThisWorkbook* ] 或 [ *ThisWorkbook.cs*]，然後按一下 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ *ThisWorkbook* ] 或 [ *ThisWorkbook.cs*]，然後按一下 [ **視圖程式碼**]。
 
 2. 在類別中建立使用者控制項的新實例 `ThisWorkbook` 。
 

@@ -1,5 +1,7 @@
 ---
 title: 如何：以程式設計方式保護工作表
+description: 瞭解如何使用 Microsoft Excel 中的保護功能，防止使用者和程式碼修改工作表中的物件。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d51a6557b2204d7b6ff3d8865c82de091f5a59d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b4fe6d314763c7b0d6a8b4c1ed9e8e7198e508c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545895"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526755"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>如何：以程式設計方式保護工作表
   Microsoft Office Excel 中的保護功能有助於防止使用者和程式碼修改工作表中的物件。 根據預設，開啟保護之後所有的儲存格都會鎖定。

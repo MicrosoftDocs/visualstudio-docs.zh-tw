@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：將資料系結至 Word 執行窗格上的控制項
+description: 將資料系結至 Microsoft Word 執行窗格上的控制項。 這些控制項會顯示 SQL Server 資料庫中資料表之間的主要/詳細資料關聯。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 05df38bf6056b392c0b991617316ba2c1c657306
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585063"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526212"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>逐步解說：將資料系結至 Word 執行窗格上的控制項
   本逐步解說示範如何將資料系結至 Word 執行窗格上的控制項。 這些控制項會顯示 SQL Server 資料庫中資料表之間的主要/詳細資料關聯。
@@ -57,7 +59,7 @@ ms.locfileid: "91585063"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 使用 [ **我的單字動作] 窗格**建立 word 檔專案。 在嚮導中，選取 [ **建立新檔**]。
+1. 使用 [ **我的單字動作] 窗格** 建立 word 檔專案。 在嚮導中，選取 [ **建立新檔**]。
 
      如需詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
@@ -68,9 +70,9 @@ ms.locfileid: "91585063"
 
 ### <a name="to-add-an-actions-pane-control"></a>若要加入執行窗格控制項
 
-1. 在**方案總管**中選取 [**我的 Word 動作] 窗格**專案。
+1. 在 **方案總管** 中選取 [**我的 Word 動作] 窗格** 專案。
 
-2. 在 [專案]**** 功能表上，按一下 [加入新項目]****。
+2. 在 [專案] 功能表上，按一下 [加入新項目]。
 
 3. 在 [ **加入新專案** ] 對話方塊中，選取 [ **動作] 窗格控制項**，將其命名為 **ActionsControl**，然後按一下 [ **加入**]。
 
@@ -97,7 +99,7 @@ ms.locfileid: "91585063"
 
 9. 按一下 [完成] 。
 
-   Wizard 將 [ **供應商** 資料表] 和 [ **產品** ] 資料表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管**中可見的專案。
+   Wizard 將 [ **供應商** 資料表] 和 [ **產品** ] 資料表加入至 [ **資料來源** ] 視窗。 它也會將具類型的資料集加入至 **方案總管** 中可見的專案。
 
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>若要將資料系結 Windows Forms 控制項加入至執行窗格控制項
 
@@ -109,7 +111,7 @@ ms.locfileid: "91585063"
 
      <xref:System.Windows.Forms.ComboBox>控制項是在 [動作] 窗格控制項上建立的。 同時，會在元件匣 <xref:System.Windows.Forms.BindingSource> 中，將名為的 `SuppliersBindingSource` 、資料表介面卡和 a <xref:System.Data.DataSet> 加入至專案中。
 
-4. `SuppliersBindingNavigator`在**元件**匣中選取，然後按**Delete**鍵。 您將不會 `SuppliersBindingNavigator` 在此逐步解說中使用。
+4. `SuppliersBindingNavigator`在 **元件** 匣中選取，然後按 **Delete** 鍵。 您將不會 `SuppliersBindingNavigator` 在此逐步解說中使用。
 
     > [!NOTE]
     > 刪除 `SuppliersBindingNavigator` 並不會移除為它產生的所有程式碼。 您可以移除此程式碼。
@@ -167,7 +169,7 @@ ms.locfileid: "91585063"
 
 7. 按一下 [ **DisplayMember** ] 屬性右邊的按鈕，然後選取 [ **ProductName**]。
 
-8. 展開 [系結] 屬性，按一下 [ **SelectedValue** **] 屬性右邊**的按鈕，然後選取 [**無**]。
+8. 展開 [系結] 屬性，按一下 [ **SelectedValue** **] 屬性右邊** 的按鈕，然後選取 [**無**]。
 
 ## <a name="add-a-method-to-insert-data-into-a-table"></a>新增方法，以將資料插入資料表中
  下一項工作是從繫結控制項讀取資料，並在 Word 檔中填入資料表。 首先，建立設定資料表中標題格式的程式，然後新增 `AddData` 方法以建立 Word 資料表並設定其格式。
@@ -202,7 +204,7 @@ ms.locfileid: "91585063"
 
 ### <a name="to-show-the-actions-pane"></a>顯示動作窗格
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **ThisDocument** ] 或 [ **ThisDocument.cs**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **ThisDocument** ] 或 [ **ThisDocument.cs**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
 
 2. 在類別的頂端建立控制項的新實例， `ThisDocument` 使其看起來類似下列範例。
 

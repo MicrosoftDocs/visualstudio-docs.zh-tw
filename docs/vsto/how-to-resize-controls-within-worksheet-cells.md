@@ -1,5 +1,7 @@
 ---
 title: 如何：調整工作表儲存格內的控制項大小
+description: 瞭解如何在設計階段和執行時間，使用 Visual Studio 來調整 Microsoft Excel 工作表儲存格內控制項的大小。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2d22973e13ee77b66de303041f8b6a765b4b93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba2a77dc44618c0415e645718aff3ead542b4b48
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545869"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525346"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>如何：調整工作表儲存格內的控制項大小
   當您調整工作表上的資料行或資料列時，資料格內的任何主控制項都會自動調整大小，以調整大小的儲存格高度或寬度。 Windows Forms 控制項預設不會自動調整大小。

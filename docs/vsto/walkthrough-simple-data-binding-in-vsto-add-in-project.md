@@ -1,5 +1,7 @@
 ---
 title: 逐步解說： VSTO 增益集專案中的簡單資料系結
+description: 瞭解如何在 Microsoft Word 檔中加入控制項，並在執行時間將控制項系結至資料。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67264800fd2baa1ca685bcc578fb4d400e6538dd
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bc0b4f18e0f9a45f19148fde9e3d289ccad9e73f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584907"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526156"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>逐步解說： VSTO 增益集專案中的簡單資料系結
 
@@ -80,15 +82,15 @@ ms.locfileid: "91584907"
 
 4. 如果您有 `AdventureWorksLT` 資料庫的現有連接，請選擇這個連接，然後按 [ **下一步**]。
 
-    否則，請按一下 [新增連接] ****，然後使用 [加入連接] **** 對話方塊建立新的連接。 如需詳細資訊，請參閱 [加入新的連接](../data-tools/add-new-connections.md)。
+    否則，請按一下 [新增連接] ，然後使用 [加入連接]  對話方塊建立新的連接。 如需詳細資訊，請參閱 [加入新的連接](../data-tools/add-new-connections.md)。
 
-5. 在 [將連接字串儲存到應用程式組態檔] **** 頁面上，按 [下一步] ****。
+5. 在 [將連接字串儲存到應用程式組態檔]  頁面上，按 [下一步] 。
 
 6. 在 [ **選擇您的資料庫物件** ] 頁面中，展開 [ **資料表** ]，然後選取 [ **Customer (SalesLT)**]。
 
 7. 按一下 [完成] 。
 
-    *Adventureworksltdataset.xsd .xsd*檔案會新增至**方案總管**。 這個檔案會定義下列項目：
+    *Adventureworksltdataset.xsd .xsd* 檔案會新增至 **方案總管**。 這個檔案會定義下列項目：
 
    - 具類型資料集，名稱為 `AdventureWorksLTDataSet`。 此資料集代表 AdventureWorksLT 資料庫中 **Customer (SalesLT)** 資料表的內容。
 

@@ -1,5 +1,7 @@
 ---
 title: 在遷移至 .NET Framework 4.5 時更新 Outlook 表單區域
+description: 如果具有表單區域的 Outlook VSTO 增益集專案的目標 framework 變更為 .NET Framework 4 或更新版本，您就必須修改程式碼。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d8978703630e99ecb930e18e7d128eddff8792f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 507132a28526e4ce008957fa0b988c23c09d686f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584395"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526583"
 ---
 # <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>在遷移至 .NET Framework 4.5 時更新 Outlook 表單區域
 
@@ -29,7 +31,7 @@ ms.locfileid: "91584395"
 
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>若要更新您在 Visual Studio 中所設計之表單區域產生的程式碼
 
-1. 在程式碼編輯器中，開啟表單區域程式碼後置檔案。 此檔案的名稱為 *YourFormRegion*.Designer.cs 或 *YourFormRegion*.Designer.vb。 若要查看 Visual Basic 專案中的這個檔案，請按一下 [方案總管] **** 中的 [顯示所有檔案] **** 按鈕。
+1. 在程式碼編輯器中，開啟表單區域程式碼後置檔案。 此檔案的名稱為 *YourFormRegion*.Designer.cs 或 *YourFormRegion*.Designer.vb。 若要查看 Visual Basic 專案中的這個檔案，請按一下 [方案總管]  中的 [顯示所有檔案] 按鈕。
 
 2. 修改表單區域類別的宣告，使其衍生自 <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> 而不是 `Microsoft.Office.Tools.Outlook.FormRegionControl`。
 
@@ -105,17 +107,17 @@ ms.locfileid: "91584395"
     }
     ```
 
-5. 將新的 Outlook 表單區域項目加入專案。 開啟新表單區域的程式碼後置檔案，在檔案中尋找*YourNewFormRegion* `Factory` 和 `WindowFormRegionCollection` 類別，然後將這些類別複製到剪貼簿。
+5. 將新的 Outlook 表單區域項目加入專案。 開啟新表單區域的程式碼後置檔案，在檔案中尋找 *YourNewFormRegion* `Factory` 和 `WindowFormRegionCollection` 類別，然後將這些類別複製到剪貼簿。
 
 6. 刪除您加入專案的新表單區域。
 
-7. 在您要更新的表單區域的程式碼後置檔案中，以在重定目標的專案中工作，找出*YourOriginalFormRegion* `Factory` 和 `WindowFormRegionCollection` 類別，並將其取代為您從新的表單區域複製的程式碼。
+7. 在您要更新的表單區域的程式碼後置檔案中，以在重定目標的專案中工作，找出 *YourOriginalFormRegion* `Factory` 和 `WindowFormRegionCollection` 類別，並將其取代為您從新的表單區域複製的程式碼。
 
-8. 在 [ *YourNewFormRegion* ] 和 [類別] 中 `Factory` `WindowFormRegionCollection` ，搜尋*YourNewFormRegion*類別的所有參考，並改為變更*YourOriginalFormRegion*類別的每個參考。 例如，如果您要更新的表單區域名為 `SalesDataFormRegion` ，而您在步驟 5 中建立的新表單區域名為 `FormRegion1`，則將 `FormRegion1` 的所有參考變更為 `SalesDataFormRegion`。
+8. 在 [ *YourNewFormRegion* ] 和 [類別] 中 `Factory` `WindowFormRegionCollection` ，搜尋 *YourNewFormRegion* 類別的所有參考，並改為變更 *YourOriginalFormRegion* 類別的每個參考。 例如，如果您要更新的表單區域名為 `SalesDataFormRegion` ，而您在步驟 5 中建立的新表單區域名為 `FormRegion1`，則將 `FormRegion1` 的所有參考變更為 `SalesDataFormRegion`。
 
 #### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>若要更新您從 Outlook 匯入之表單區域產生的程式碼
 
-1. 在程式碼編輯器中，開啟表單區域程式碼後置檔案。 此檔案的名稱為 *YourFormRegion*.Designer.cs 或 *YourFormRegion*.Designer.vb。 若要查看 Visual Basic 專案中的這個檔案，請按一下 [方案總管] **** 中的 [顯示所有檔案] **** 按鈕。
+1. 在程式碼編輯器中，開啟表單區域程式碼後置檔案。 此檔案的名稱為 *YourFormRegion*.Designer.cs 或 *YourFormRegion*.Designer.vb。 若要查看 Visual Basic 專案中的這個檔案，請按一下 [方案總管]  中的 [顯示所有檔案] 按鈕。
 
 2. 修改表單區域類別的宣告，使其衍生自 <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> 而不是 `Microsoft.Office.Tools.Outlook.ImportedFormRegion`。
 
@@ -177,13 +179,13 @@ ms.locfileid: "91584395"
     this.olkTextBox1 = (Microsoft.Office.Interop.Outlook.OlkTextBox)GetFormRegionControl("OlkTextBox1");
     ```
 
-5. 將新的 Outlook 表單區域項目加入專案。 開啟新表單區域的程式碼後置檔案，在檔案中尋找*YourNewFormRegion* `Factory` 和 `WindowFormRegionCollection` 類別，然後將這些類別複製到剪貼簿。
+5. 將新的 Outlook 表單區域項目加入專案。 開啟新表單區域的程式碼後置檔案，在檔案中尋找 *YourNewFormRegion* `Factory` 和 `WindowFormRegionCollection` 類別，然後將這些類別複製到剪貼簿。
 
 6. 刪除您加入專案的新表單區域。
 
-7. 在您要更新的表單區域的程式碼後置檔案中，以在重定目標的專案中工作，找出*YourOriginalFormRegion* `Factory` 和 `WindowFormRegionCollection` 類別，並將其取代為您從新的表單區域複製的程式碼。
+7. 在您要更新的表單區域的程式碼後置檔案中，以在重定目標的專案中工作，找出 *YourOriginalFormRegion* `Factory` 和 `WindowFormRegionCollection` 類別，並將其取代為您從新的表單區域複製的程式碼。
 
-8. 在 [ *YourNewFormRegion* ] 和 [類別] 中 `Factory` `WindowFormRegionCollection` ，搜尋*YourNewFormRegion*類別的所有參考，並改為變更*YourOriginalFormRegion*類別的每個參考。 例如，如果您要更新的表單區域名為 `SalesDataFormRegion` ，而您在步驟 5 中建立的新表單區域名為 `FormRegion1`，則將 `FormRegion1` 的所有參考變更為 `SalesDataFormRegion`。
+8. 在 [ *YourNewFormRegion* ] 和 [類別] 中 `Factory` `WindowFormRegionCollection` ，搜尋 *YourNewFormRegion* 類別的所有參考，並改為變更 *YourOriginalFormRegion* 類別的每個參考。 例如，如果您要更新的表單區域名為 `SalesDataFormRegion` ，而您在步驟 5 中建立的新表單區域名為 `FormRegion1`，則將 `FormRegion1` 的所有參考變更為 `SalesDataFormRegion`。
 
 ## <a name="instantiate-form-region-classes"></a>具現化表單區域類別
  您必須修改可動態執行個體化特定表單區域類別的任何程式碼。 在目標為 .NET Framework 3.5 的專案中，您可以直接執行個體化表單區域類別，例如 `Microsoft.Office.Tools.Outlook.FormRegionManifest`。 在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本的專案中，這些類別是您無法直接執行個體化的介面。

@@ -1,5 +1,7 @@
 ---
 title: Office 主要 Interop 組件
+description: 瞭解如何使用主要 interop 元件 (PIA) ，從 Office 專案存取 Microsoft Office 應用程式的功能。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25dad2d4601974e70e80377e634d05b60523318e
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 190c5785be9d17ee0a25d16ad6342368b658f252
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830755"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525217"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主要 Interop 組件
 
@@ -83,7 +85,7 @@ Visual Studio 中的每一個 Office 專案範本設計成只能搭配一個 Mic
 
 在大部分的情況下，您應該在目錄底下新增 Visual Studio 所安裝之 Pia 的參考 `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` 。 這些版本的元件會出現在 [**參考管理員**] 對話方塊的 [**架構**] 索引標籤上。 如需詳細資訊，請參閱 [如何：透過主要 interop 元件以 Office 應用程式為目標](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。
 
-如果您已在全域組件快取中安裝及註冊 PIA，這些版本的組件會顯示在 [參考管理員] **** 對話方塊的 [COM] **** 索引標籤上。 您應該避免加入這些版本的組件參考，因為使用這些版本的組件參考可能會發生一些開發問題。 例如，如果您在全域組件快取中註冊了不同版本的 PIA，您的專案將會自動建置為最後註冊的組件版本 (即使在 [參考管理員] **** 對話方塊的 [COM] **** 索引標籤上指定了不同版本的組件亦然)。
+如果您已在全域組件快取中安裝及註冊 PIA，這些版本的組件會顯示在 [參考管理員]  對話方塊的 [COM]  索引標籤上。 您應該避免加入這些版本的組件參考，因為使用這些版本的組件參考可能會發生一些開發問題。 例如，如果您在全域組件快取中註冊了不同版本的 PIA，您的專案將會自動建置為最後註冊的組件版本 (即使在 [參考管理員]  對話方塊的 [COM]  索引標籤上指定了不同版本的組件亦然)。
 
 > [!NOTE]
 > 當您加入參考某些組件的單一組件時，系統會自動將這些組件加入至專案。 例如， `Office.dll` `Microsoft.Vbe.Interop.dll` 當您加入 Word、Excel、Outlook、Microsoft Forms 或 Graph 元件的參考時，會自動加入和元件的參考。
@@ -127,7 +129,7 @@ Visual Studio 中的每一個 Office 專案範本設計成只能搭配一個 Mic
 
 如需詳細資訊，請參閱 [如何：啟用和停用自動](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)系結重新導向。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：透過主要 interop 元件以 Office 應用程式為目標](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Excel 物件模型總覽](../vsto/excel-object-model-overview.md)

@@ -1,5 +1,7 @@
 ---
 title: XmlMappedRange 控制項
+description: 瞭解 XmlMappedRange 控制項是一個範圍，只有當非重複的架構元素對應到 Microsoft Excel 中的資料格時，才會建立這個範圍。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01417d9c08491edc882f7f758bb36e6184500e52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3b3fd140787d44cdd8364ce77d5292dfcd83f54
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985366"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525892"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange 控制項
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控制項是一個範圍，只有當非重複的架構專案對應到 Microsoft Office Excel 中的資料格時，才會建立這個範圍。 例如，當 `maxOccurs` 架構元素的屬性等於1時。 在 Visual Studio 建立 XML 對應範圍之後，您可以直接對其進行程式設計，而不需要遍歷 Excel 物件模型。 移除專案對應時，您只能在 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Excel 中刪除控制項。

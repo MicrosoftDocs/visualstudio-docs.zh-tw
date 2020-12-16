@@ -1,5 +1,7 @@
 ---
 title: 如何：以 Office 多語系使用者介面為目標
+description: 瞭解如何使用 Visual Studio 以程式設計方式將目標設為 Microsoft Office 多語系使用者介面。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5217f2d6cf67eced00c0c84b9bacda94573c5a09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b6771b202515148b757e811fdfc63fc0d5052e9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537497"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526628"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>如何：以 Office 多語系使用者介面為目標
   多語系消費者介面 (MUI) 是 Microsoft Office 功能，可讓終端使用者變更使用者介面 (UI) 的語言。 例如，使用英文 UI 的終端使用者可以將 UI 的語言變更為西班牙文。

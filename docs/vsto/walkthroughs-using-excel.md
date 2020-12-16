@@ -1,5 +1,7 @@
 ---
 title: 使用 Excel 的逐步解說
+description: 瞭解如何使用檔層級自訂和 VSTO 增益集來自動化 Microsoft Excel。 您也可以)  (UI 自訂使用者介面。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b802d61c4e30fa9dd13279c54c2a9bfa343f322f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba8a52e615a8e3d40b5c76be66f4b639aec6c07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255058"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525965"
 ---
 # <a name="walkthroughs-using-excel"></a>使用 Excel 的逐步解說
   下列逐步解說示範您可以使用文件層級自訂和 VSTO 增益集來自動化 Microsoft Office Excel 以及自訂使用者介面 (UI) 的方式。

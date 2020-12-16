@@ -1,5 +1,7 @@
 ---
 title: 在 Excel 工作表上使用 Windows Forms 控制項
+description: 瞭解如何以將控制項新增至 Windows Forms 的相同方式，將 Windows Forms 控制項新增至 Microsoft Excel 活頁簿。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 032ee551ff04590ccdb8744c1274b137dec0b756
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 015fffa51358c3a7a13d98950392d0749560c089
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982312"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526521"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>在 Excel 工作表上使用 Windows Forms 控制項
   您可以用將控制項新增至 Windows Forms 的相同方式，將 Windows Forms 控制項加入 Microsoft Office Excel 活頁簿中。 如需在檔上使用控制項的一般資訊，請參閱 [Office 檔的 Windows Forms 控制項總覽](../vsto/windows-forms-controls-on-office-documents-overview.md)。
@@ -36,7 +38,7 @@ ms.locfileid: "62982312"
  您可以將想要在所有工作表之間共用的元件，例如 <xref:System.Data.DataSet>，加入活頁簿設計工具，而不是加入工作表。 元件會出現在元件匣中。
 
 ### <a name="formula-for-embedding-controls"></a>內嵌控制項的公式
- 在 Excel 中選取控制項時，您會在 [資料編輯列] **** 看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。
+ 在 Excel 中選取控制項時，您會在 [資料編輯列]  看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：調整工作表儲存格內的控制項大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)

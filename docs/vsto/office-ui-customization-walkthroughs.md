@@ -1,5 +1,7 @@
 ---
 title: Office UI 自訂逐步解說
+description: 瞭解如何使用檔層級自訂和 VSTO 增益集來自訂 Microsoft Office 應用程式的使用者介面 (UI) 。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e961479fc500e53133c62337478368878bf26893
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e9cd19687e15cd30c8196183f43709d4ba5149d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254134"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525105"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Office UI 自訂逐步解說
   下列逐步解說示範使用文件層級自訂和 VSTO 增益集來自訂 Microsoft Office 應用程式使用者介面 (UI) 的方法。
