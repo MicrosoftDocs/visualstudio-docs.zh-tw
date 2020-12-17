@@ -1,5 +1,7 @@
 ---
 title: 語言服務及編輯器擴充點 |Microsoft Docs
+description: 瞭解您可以擴充的 Visual Studio 程式碼編輯器中的擴充點，包括大部分的語言服務功能。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28bb086eb99e4b8128c04f62f9b370eb2eab8fa3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06329fcfcefe3ea75b772495f6a7e0dd14ced087
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703050"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615547"
 ---
 # <a name="language-service-and-editor-extension-points"></a>語言服務及編輯器擴充點
 編輯器會提供擴充點，讓您可以擴充為 Managed Extensibility Framework (MEF) 元件元件，包括大部分的語言服務功能。 以下是主要的延伸點類別：
@@ -34,7 +36,7 @@ ms.locfileid: "80703050"
 
 - 捨棄處理常式
 
-- 選項。
+- 選項
 
 - IntelliSense
 
@@ -191,7 +193,7 @@ internal IClassificationTypeRegistryService ClassificationTypeRegistryService { 
 
 - <xref:Microsoft.VisualStudio.Utilities.DisplayNameAttribute>：格式的顯示名稱。
 
-- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>：指定格式是否出現在 [**選項**] 對話方塊的 [字型**和色彩**] 頁面上。
+- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>：指定格式是否出現在 [**選項**] 對話方塊的 [字型 **和色彩**] 頁面上。
 
 - <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>：格式的優先順序。 有效的值來自 <xref:Microsoft.VisualStudio.Text.Classification.Priority> 。
 
@@ -412,7 +414,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
   6. Dif
 
-  7. Locale
+  7. 地區設定
 
   8. 調色盤
 
@@ -444,7 +446,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
   22. OEMText
 
-  23. Text
+  23. 文字
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： drop 處理常式的名稱。
 

@@ -1,5 +1,7 @@
 ---
 title: Menu 元素 |Microsoft Docs
+description: Menu 元素會定義 VSPackage 所執行的所有功能表和工具列。 本文包含範例。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6382abed36aba66087066bf5664ae55682e39e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abc5621784579c295393d77c792013dd0c737871
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702582"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615573"
 ---
 # <a name="menus-element"></a>Menu 元素
 定義 VSPackage 所實行的所有功能表和工具列。
@@ -41,14 +43,14 @@ ms.locfileid: "80702582"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[Menu 元素](../extensibility/menus-element.md)|定義 VSPackage 所實行的所有功能表和工具列。|
 |[Menu 元素](../extensibility/menu-element.md)|表示單一功能表或工具列。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[命令元素](../extensibility/commands-element.md)|代表 VSPackage 中的命令集合。|
 

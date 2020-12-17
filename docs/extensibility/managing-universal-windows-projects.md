@@ -1,5 +1,7 @@
 ---
 title: 管理通用 Windows 專案 |Microsoft Docs
+description: 為了支援通用 Windows 應用程式，管理專案的 Visual Studio 延伸模組應留意到通用 Windows 應用程式專案結構。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
@@ -8,26 +10,26 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f86edd33e7719dc326aa2c5d252d11322509de64
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012304"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615560"
 ---
 # <a name="manage-universal-windows-projects"></a>管理通用 Windows 專案
 
 通用 Windows 應用程式是以 Windows 8.1 和 Windows Phone 8.1 為目標的應用程式，可讓開發人員在兩個平臺上使用程式碼和其他資產。 共用的程式碼和資源會保留在共用的專案中，而平臺特定的程式碼和資源會保留在不同的專案中，一個用於 Windows，另一個則用於 Windows Phone。 如需通用 Windows 應用程式的詳細資訊，請參閱 [通用 windows 應用程式](/windows/uwp/get-started/create-uwp-apps)。 管理專案的 Visual Studio 延伸模組應留意到通用 Windows 應用程式專案的結構與單一平臺應用程式不同。 本逐步解說會示範如何流覽共用的專案，以及管理共用的專案。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ### <a name="navigate-the-shared-project"></a>流覽共用的專案
 
-1. 建立名為 **TestUniversalProject**的 c # VSIX 專案。  (**檔案**  >  **新**  >  **專案**，然後**C#**  >  **Extensibility**  >  **Visual Studio 封裝**) 的 c # 擴充性。 在**方案總管**上加入**自訂命令**專案專案範本 (，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]， **Extensibility**然後移至 [擴充性]) 。 將檔案命名為 **TestUniversalProject**。
+1. 建立名為 **TestUniversalProject** 的 c # VSIX 專案。  (**檔案**  >  **新**  >  **專案**，然後  >    >  **Visual Studio 封裝**) 的 c # 擴充性。 在 **方案總管** 上加入 **自訂命令** 專案專案範本 (，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]， 然後移至 [擴充性]) 。 將檔案命名為 **TestUniversalProject**。
 
-2. 在 [**延伸**模組] 區段中新增*Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll*的參考，並*Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* () 。
+2. 在 [**延伸** 模組] 區段中新增 *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* 的參考，並 *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* () 。
 
 3. 開啟 *TestUniversalProject.cs* ，並新增下列指示詞 `using` ：
 
@@ -304,7 +306,7 @@ ms.locfileid: "90012304"
 
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>管理平臺專案中的共用專案
 
-1. 在平臺專案中尋找共用的專案。 共用專案中的專案會顯示在平臺專案中做為共用專案。 您在 **方案總管**中看不到它們，但您可以將專案階層引導至專案階層尋找。 下列方法會引導階層，並收集所有共用的專案。 它會選擇性地輸出每個專案的標題。 共用的專案是由新的屬性來識別 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem> 。
+1. 在平臺專案中尋找共用的專案。 共用專案中的專案會顯示在平臺專案中做為共用專案。 您在 **方案總管** 中看不到它們，但您可以將專案階層引導至專案階層尋找。 下列方法會引導階層，並收集所有共用的專案。 它會選擇性地輸出每個專案的標題。 共用的專案是由新的屬性來識別 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem> 。
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -353,7 +355,7 @@ ms.locfileid: "90012304"
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4. 現在就試試看。按 **F5** 來啟動實驗實例。 在實驗實例中建立 c # 通用中樞應用程式專案 (在 [**新增專案**] 對話方塊的 [ **Visual c #**  >  **Windows**  >  **Windows 8**  >  **通用**  >  **中樞應用程式**) 移至 [**工具**] 功能表，然後按一下 [叫用**TestUniversalProject**]，然後檢查 [**輸出**] 窗格中的文字。 您應該會看到如下的內容：
+4. 現在就試試看。按 **F5** 來啟動實驗實例。 在實驗實例中建立 c # 通用中樞應用程式專案 (在 [**新增專案**] 對話方塊的 [ **Visual c #**  >  **Windows**  >  **Windows 8**  >  **通用**  >  **中樞應用程式**) 移至 [**工具**] 功能表，然後按一下 [叫用 **TestUniversalProject**]，然後檢查 [**輸出**] 窗格中的文字。 您應該會看到如下的內容：
 
     ```
     Found shared project: HubApp.Shared
@@ -417,7 +419,7 @@ ms.locfileid: "90012304"
 
    2. 專案檔會更新以包含新的檔案名。
 
-      階層事件 (例如， <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) 通常會追蹤 UI 中顯示的變更，如 **方案總管**中所示。 階層事件會將檔案重新命名作業視為包含檔案刪除，然後新增檔案。 但是，如果變更了隱藏專案，階層事件系統就會引發 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 事件，但不會引發 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 事件。 因此，如果您在平臺專案中重新命名檔案，就會同時取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> ，但如果您重新命名共用專案中的檔案，則只會取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 。
+      階層事件 (例如， <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) 通常會追蹤 UI 中顯示的變更，如 **方案總管** 中所示。 階層事件會將檔案重新命名作業視為包含檔案刪除，然後新增檔案。 但是，如果變更了隱藏專案，階層事件系統就會引發 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 事件，但不會引發 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 事件。 因此，如果您在平臺專案中重新命名檔案，就會同時取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> ，但如果您重新命名共用專案中的檔案，則只會取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 。
 
       若要追蹤專案專案中的變更，您可以將 DTE 專案專案事件 (在) 中找到的事件來處理 <xref:EnvDTE.ProjectItemsEventsClass> 。 但是，如果您要處理大量的事件，您可以在中處理事件，以獲得更好的效能 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> 。 在這個逐步解說中，我們只會顯示階層事件和 DTE 事件。 在此程式中，您會將事件接聽程式新增至共用專案和平臺專案。 然後，當您重新命名共用專案中的一個檔案，以及平臺專案中的另一個檔案時，就會看到針對每個重新命名作業引發的事件。
 

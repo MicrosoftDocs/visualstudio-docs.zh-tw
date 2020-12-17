@@ -1,5 +1,7 @@
 ---
 title: Keybindings.json 元素 |Microsoft Docs
+description: Keybindings.json 元素會將 KeyBinding 元素和其他 Keybindings.json 群組分組。 本文包含範例。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 928637d8103a69eafd3bda4446a55bb7523f83a8
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703131"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616087"
 ---
 # <a name="keybindings-element"></a>Keybindings.json 元素
 Keybindings.json 元素會將 KeyBinding 元素和其他 Keybindings.json 群組分組。
@@ -37,20 +39,20 @@ Keybindings.json 元素會將 KeyBinding 元素和其他 Keybindings.json 群組
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[KeyBinding 元素](../extensibility/keybinding-element.md)|指定命令的鍵盤快速鍵。|
 |[Keybindings.json](../extensibility/keybindings-element.md)|群組 KeyBinding 元素和其他 Keybindings.json 群組。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表命令的所有元素。|
 

@@ -1,5 +1,7 @@
 ---
 title: 針對嵌套專案的 Wizard 支援 |Microsoft Docs
+description: 瞭解父專案可在 Visual Studio SDK 的 VSPackage 中針對嵌套專案執行的兩個確認。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7f37700d908167ebef8c071021558822bdce173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b3c6dee712f79648eba203650cc70f76fcea657
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703199"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615612"
 ---
 # <a name="wizard-support-for-nested-projects"></a>巢狀專案的精靈支援
 IDE 會執行兩個嚮導，讓嵌套專案的父專案可以執行： [ **新增專案** ] 和 [ **加入專案** ] wizard。
 
- 如果使用者在 [檔案] 功能表上選取 [**加入專案**]，然後按一下 [**新增**專案]，或在 [方案總管] 中選取 [**加入**] 和 [以滑鼠右鍵按一下**新專案**] 來啟動 [**新增**專案]，IDE 會執行**AddProject**命令，而**AddProject**命令的父專案執行會傳回範本專案檔，或包含一組內容參數的 wizard ( .vsz) 檔。
+ 如果使用者在 [檔案] 功能表上選取 [**加入專案**]，然後按一下 [**新增** 專案]，或在 [方案總管] 中選取 [**加入**] 和 [以滑鼠右鍵按一下 **新專案**] 來啟動 [**新增** 專案]，IDE 會執行 **AddProject** 命令，而 **AddProject** 命令的父專案執行會傳回範本專案檔，或包含一組內容參數的 wizard ( .vsz) 檔。
 
  同樣地，父專案的 **AddItem** 嚮導的執行會傳回具有不同內容參數集的 .vsz 檔案。
 

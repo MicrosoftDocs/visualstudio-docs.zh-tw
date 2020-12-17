@@ -1,5 +1,5 @@
 ---
-title: 方案和專案
+title: 方案和專案總覽
 description: 瞭解 Visual Studio 專案和方案、如何從範本建立新專案，以及如何在方案總管中查看 & 管理專案。
 ms.custom: SEO-VS-2020
 ms.date: 12/15/2020
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe6e5c7479ce4e3cda435c51a883c4d5db8cc45
-ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
+ms.openlocfilehash: 1981bc5c9d1c2589607f355528c332d01284917e
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97599495"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615749"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
@@ -68,11 +68,11 @@ Visual Studio 會使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存解決方
 
 ## <a name="create-new-projects"></a>建立新專案
 
-建立新專案的最簡單方式是從特定類型的應用程式或網站的專案範本開始。 專案範本是由一組基本預先產生的程式碼檔案、組態檔、資產和設定所組成。 您可以在建立新專案的對話方塊中，找到這些 **範本 ([**  >  **新增**  >  **專案**]) 。 如需詳細資訊，請參閱 [建立新專案](create-new-project.md) 和使用 [方案和專案](../ide/creating-solutions-and-projects.md)。
+建立新專案最簡單的方式，就是使用您想要的專案類型專案範本。 專案範本包含一組基本的預先產生程式碼檔案、設定檔、資產和設定。 使用 **[** 檔案  >  **新增**  >  **專案**] 選取專案範本。 如需詳細資訊，請參閱 [建立新專案](create-new-project.md)。
 
-如果您經常以某種方式自訂您的專案，您可以建立自訂專案範本，然後用它來建立新專案。 如需詳細資訊，請參閱[建立專案與項目範本](../ide/creating-project-and-item-templates.md)。
+您也可以建立自訂專案範本，讓您可以用來建立新專案。 如需詳細資訊，請參閱[建立專案與項目範本](../ide/creating-project-and-item-templates.md)。
 
-當您建立新專案時，根據預設它會儲存在 *%USERPROFILE%\source\repos*。 您可以在 [工具] > [選項] > [專案和方案] > [位置] 下的 [專案位置] 設定中變更此位置。 如需這個專案和其他專案和方案設定的詳細資訊，請參閱 [ [選項] 對話方塊中的 [專案和方案] 頁面](./reference/projects-and-solutions-options-dialog-box.md)。
+當您建立新專案時，Visual Studio 會將它儲存至其預設位置 *%USERPROFILE%\source\repos*。 若要變更這個位置，請移至 [**工具**  >  **選項**  >  **專案和方案**  >  **位置**]。 如需詳細資訊，請參閱 [選項對話方塊：專案和方案 > 位置](./reference/projects-solutions-locations-options.md)。
 
 ## <a name="solution-explorer"></a>方案總管
 
@@ -94,4 +94,3 @@ Visual Studio 會使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存解決方
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [移植、移轉及升級專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [專案和方案 (Visual Studio for Mac)](/visualstudio/mac/projects-and-solutions)
-- [新增和移除專案項目 (Visual Studio for Mac)](/visualstudio/mac/add-and-remove-project-items)

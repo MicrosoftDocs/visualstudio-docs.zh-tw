@@ -1,5 +1,7 @@
 ---
 title: 語言伺服器通訊協定總覽 |Microsoft Docs
+description: 瞭解語言伺服器通訊協定如何提供實用的架構，以將語言功能公開給各種不同的工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bd5dce3cfb7022a8abb6397dc87b418144cbe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d642d1168cbd2a8bd7abadbcdbd7c1e2851b00e
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703107"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616126"
 ---
 # <a name="language-server-protocol"></a>語言伺服器通訊協定
 
@@ -49,13 +51,13 @@ VS Code 團隊藉由執行數個 linter 語言伺服器來建立通訊協定的�
 
 ![lsp 流程圖表](media/lsp-flow-diagram.png)
 
-* **使用者會在工具中開啟 (稱為檔) **的檔案：此工具會通知語言伺服器 ( ' TextDocument/didOpen ' ) 的檔已開啟。 從現在開始，檔內容的真實事實已不再位於檔案系統上，而是由工具保留在記憶體中。
+* **使用者會在工具中開啟 (稱為檔)** 的檔案：此工具會通知語言伺服器 ( ' TextDocument/didOpen ' ) 的檔已開啟。 從現在開始，檔內容的真實事實已不再位於檔案系統上，而是由工具保留在記憶體中。
 
 * **使用者進行編輯**：此工具會通知伺服器有關檔變更 ( ' TextDocument/didChange ' ) ，而語言伺服器會更新程式的語義資訊。 發生這種情況時，語言伺服器會分析此資訊，並使用偵測到的錯誤和警告來通知工具 ( ' textDocument/publishDiagnostics ' ) 。
 
 * **使用者在編輯器中的符號上執行 [移至定義]**：此工具會傳送具有兩個參數的 ' textDocument/definition ' 要求： (1) 檔 URI，而 (2) 起始移至定義要求至伺服器的文字位置。 伺服器會回應檔 URI，以及檔內符號的定義位置。
 
-* **使用者關閉檔 (檔) **：系統會從工具傳送「TextDocument/didClose」通知，通知語言伺服器該檔已不再存在於記憶體中，而且目前的內容現在已在檔案系統上保持最新狀態。
+* **使用者關閉檔 (檔)**：系統會從工具傳送「TextDocument/didClose」通知，通知語言伺服器該檔已不再存在於記憶體中，而且目前的內容現在已在檔案系統上保持最新狀態。
 
 此範例說明如何在編輯器功能層級（例如「移至定義」、「尋找所有參考」）中，將通訊協定與語言伺服器通訊。 通訊協定所使用的資料類型為編輯器或 IDE 「資料類型」，例如目前開啟的文字檔和游標的位置。 資料類型不是程式設計語言領域模型的層級，通常會提供抽象語法樹狀結構和編譯器符號 (例如，已解析的類型、命名空間、... ) 。這可大幅簡化通訊協定。
 

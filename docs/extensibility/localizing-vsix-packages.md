@@ -1,5 +1,7 @@
 ---
 title: 當地語系化 VSIX 套件 |Microsoft Docs
+description: 瞭解如何為每個目的語言建立 vsixlangpack 檔案，然後將它們放在正確的資料夾中，以當地語系化 VSIX 套件。
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2d4222e45d56447951e86d558af9983a0d1cc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc9f7055145748e0625788e7487bb978911bae7f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702891"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615534"
 ---
 # <a name="localizing-vsix-packages"></a>將 VSIX 套件當地語系化
 
@@ -45,15 +47,15 @@ ms.locfileid: "80702891"
 
 ## <a name="the-extensionvsixlangpack-file"></a>Vsixlangpack 檔案
 
-*Vsixlangpack*檔案遵循[VSIX 語言套件架構 2.0](../extensibility/vsix-language-pack-schema-2-0-reference.md)。 此架構具有 `PackageLanguagePackManifest` ，其後緊接著 `Metadata` 子項目。 中繼資料元素最多可包含6個子項目、、、、、 `DisplayName` `Description` `MoreInfo` `License` `ReleaseNotes` 和 `Icon` 。 這些子項目會對應至 `DisplayName` extension.vsixmanifest 檔案之元素的、 `Description` 、 `MoreInfo` 、 `License` 、 `ReleaseNotes` 和 `Icon` 子項目 `Metadata` 。 *Extension.vsixmanifest*
+*Vsixlangpack* 檔案遵循 [VSIX 語言套件架構 2.0](../extensibility/vsix-language-pack-schema-2-0-reference.md)。 此架構具有 `PackageLanguagePackManifest` ，其後緊接著 `Metadata` 子項目。 中繼資料元素最多可包含6個子項目、、、、、 `DisplayName` `Description` `MoreInfo` `License` `ReleaseNotes` 和 `Icon` 。 這些子項目會對應至 `DisplayName` extension.vsixmanifest 檔案之元素的、 `Description` 、 `MoreInfo` 、 `License` 、 `ReleaseNotes` 和 `Icon` 子項目 `Metadata` 。 
 
 當您建立 vsixlangpack 檔案時，必須將屬性設定 `Include in Vsix` 為 `true` 。 否則，將會忽略當地語系化的安裝文字。
 
 ### <a name="to-set-the-include-in-vsix-property"></a>若要設定 Include in Vsix 屬性
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 vsixlangpack 檔案，然後按一下 [ **屬性**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 vsixlangpack 檔案，然後按一下 [ **屬性**]。
 
-2. 在 **屬性方格**中，按一下 [ **在 Vsix 中包含**]，並將其值設定為 `true` 。
+2. 在 **屬性方格** 中，按一下 [ **在 Vsix 中包含**]，並將其值設定為 `true` 。
 
 ## <a name="example"></a>範例
 

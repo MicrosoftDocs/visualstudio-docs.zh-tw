@@ -1,5 +1,7 @@
 ---
 title: 將功能表命令當地語系化 |Microsoft Docs
+description: 瞭解如何為您的 VSPackage 建立當地語系化的 .vsct 檔案和當地語系化的 .resx 檔案，以提供功能表和工具列命令的當地語系化文字。
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51f3692a4539eddbf35e24de8024eadd39031080
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904553"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615599"
 ---
 # <a name="localize-menu-commands"></a>當地語系化功能表命令
 
@@ -32,7 +34,7 @@ ms.locfileid: "85904553"
 
 在 Vspackage 中，會在 *.vsct* 檔案中定義功能表命令和工具列按鈕。
 
-1. 在 **方案總管**中，將 *.vsct* 檔案的名稱從 *.vsct* 變更為 *filename. .vsct*。
+1. 在 **方案總管** 中，將 *.vsct* 檔案的名稱從 *.vsct* 變更為 *filename. .vsct*。
 
 2. 為每個當地語系化語言建立檔案名的副本 *。 .vsct* 。
 
@@ -78,7 +80,7 @@ ms.locfileid: "85904553"
 
 命令名稱以外的文字資源會定義在資源 (*.resx*) 檔案中。
 
-1. 將*VSPackage*重新命名為*VSPackage。*
+1. 將 *VSPackage* 重新命名為 *VSPackage。*
 
 2. 針對每個當地語系化的語言，製作一份 *VSPackage 的 .resx* 檔案。
 
@@ -112,7 +114,7 @@ ms.locfileid: "85904553"
 
 您必須修改 *assemblyinfo.cs* 檔案和專案檔，以併入當地語系化的資源。
 
-1. 從**方案總管**中的 [**屬性**] 節點，在編輯器中開啟*assemblyinfo.cs*或*assemblyinfo。*
+1. 從 **方案總管** 中的 [**屬性**] 節點，在編輯器中開啟 *assemblyinfo.cs* 或 *assemblyinfo。*
 
 2. 新增下列專案。
 
@@ -138,7 +140,7 @@ ms.locfileid: "85904553"
 
 6. 找出 `ItemGroup` 包含元素的元素 `EmbeddedResource` 。
 
-7. 在呼叫 VSPackage 的專案中，將專案 `EmbeddedResource` 取代為*VSPackage.en-US.resx* `ManifestResourceName` 設定為的元素，如下所示 `LogicalName` `VSPackage.en-US.Resources` ：
+7. 在呼叫 VSPackage 的專案中，將專案 `EmbeddedResource` 取代為 `ManifestResourceName` 設定為的元素，如下所示 `LogicalName` `VSPackage.en-US.Resources` ：
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">

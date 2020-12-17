@@ -1,5 +1,7 @@
 ---
 title: LPTEXTOUTPROC |Microsoft Docs
+description: 深入瞭解 LPTEXTOUTPROC 函式指標。 Visual Studio IDE 會實作用來顯示錯誤和狀態的函式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +18,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38c3e8263b9a30058c2de019e5e92160b716aa71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a04f47a6500c0cd2174d0567029a4f5c86d9f62d
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702795"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615723"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
 當使用者從整合式開發環境內部執行原始檔控制作業時 (IDE) ，原始檔控制外掛程式可能會想要傳達與作業相關的錯誤或狀態訊息。 外掛程式可以針對此目的顯示自己的訊息方塊。 不過，若要進行更緊密的整合，外掛程式可以將字串傳遞至 IDE，然後以原生方式顯示狀態資訊。 這項機制是 `LPTEXTOUTPROC` 函數指標。 IDE 會 (更詳細地說明此函式，以顯示錯誤和狀態) 。
 
-在呼叫 SccOpenProject 時，IDE 會將函式指標傳遞給此函式的函式指標，作為 `lpTextOutProc` 參數。 [SccOpenProject](../extensibility/sccopenproject-function.md) 在 SCC 作業期間（例如，在呼叫涉及許多檔案的 [SccGet](../extensibility/sccget-function.md) 中間），外掛程式可以呼叫函式 `LPTEXTOUTPROC` ，定期傳遞要顯示的字串。 IDE 可以適當地在狀態列、輸出視窗或個別的訊息方塊中顯示這些字串。 IDE 可以選擇性地顯示具有 [ **取消** ] 按鈕的特定訊息。 這可讓使用者取消作業，並讓 IDE 能夠將這項資訊傳回外掛程式。
+在呼叫 SccOpenProject 時，IDE 會將函式指標傳遞給此函式的函式指標，作為 `lpTextOutProc` 參數。 [](../extensibility/sccopenproject-function.md) 在 SCC 作業期間（例如，在呼叫涉及許多檔案的 [SccGet](../extensibility/sccget-function.md) 中間），外掛程式可以呼叫函式 `LPTEXTOUTPROC` ，定期傳遞要顯示的字串。 IDE 可以適當地在狀態列、輸出視窗或個別的訊息方塊中顯示這些字串。 IDE 可以選擇性地顯示具有 [ **取消** ] 按鈕的特定訊息。 這可讓使用者取消作業，並讓 IDE 能夠將這項資訊傳回外掛程式。
 
 ## <a name="signature"></a>簽章
  IDE 的 output 函數具有下列簽章：

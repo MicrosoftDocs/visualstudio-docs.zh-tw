@@ -1,5 +1,7 @@
 ---
 title: 管理並存檔案關聯 |Microsoft Docs
+description: 如果您的 VSPackage 提供檔案關聯，請決定如何處理特定版本的 Visual Studio 開啟檔案的並存安裝。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c284fe7ef4c2d07051a8524860583cb634e13bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 477afbd5bc4586d8c46db11b036364f8058133b0
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702767"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616340"
 ---
 # <a name="manage-side-by-side-file-associations"></a>管理並存檔案關聯
 
@@ -65,7 +67,7 @@ ms.locfileid: "80702767"
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 而不是 DEVENV_EXE_2005|420|
   |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|
 
-   您可以使用 Windows Installer 封裝之登錄表中的 DEVENV_EXE_LATEST 屬性，來寫入 **HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand** 索引鍵的預設值 [DEVENV_EXE_LATEST] "%1"
+   您可以使用 Windows Installer 封裝之登錄表中的 DEVENV_EXE_LATEST 屬性，來寫入 **HKEY_CLASSES_ROOT *ProgId* ShellOpenCommand** 索引鍵的預設值 [DEVENV_EXE_LATEST] "%1"
 
 - 執行可讓您從可用的 VSPackage 版本中獲得最佳選擇的共用啟動器程式。
 

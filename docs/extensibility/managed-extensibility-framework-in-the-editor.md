@@ -1,5 +1,7 @@
 ---
 title: 編輯器中的 Managed Extensibility Framework |Microsoft Docs
+description: 瞭解 Managed Extensibility Framework，可讓您建立自己的元件，以擴充 Visual Studio SDK 中的編輯器。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 888c5206b87079cf9fa91cb68e9801cb3c4f8c1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd6ed0e495056bf2924e46bfdfcd074daf1faf87
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702873"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615586"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>編輯器中的 Managed Extensibility Framework
 編輯器是使用 Managed Extensibility Framework (MEF) 元件所建立。 您可以建立自己的 MEF 元件以延伸編輯器，而且您的程式碼也可以使用編輯器元件。
