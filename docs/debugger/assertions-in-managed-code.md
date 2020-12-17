@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 529c19753d09d6335e5c9fc5e839cdb7cd0c118c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 824c711fc0ebb26a78338a65808c6fdbed768919
+ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745782"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97646394"
 ---
 # <a name="assertions-in-managed-code"></a>Managed 程式碼中的判斷提示
 判斷提示 (或 `Assert` 陳述式) 可以測試條件，您可以將此條件指定為 `Assert` 陳述式的引數。 如果條件判斷值為 true，則不會執行任何動作。 如果條件判斷值為 false，則判斷提示會失敗。 如果您是以偵錯組建執行，則您的程式將進入中斷模式。
@@ -66,8 +66,10 @@ End Function
 
 ```csharp
 int IntegerDivide ( int dividend , int divisor )
-    { Debug.Assert ( divisor != 0 );
-        return ( dividend / divisor ); }
+{
+    Debug.Assert ( divisor != 0 );
+    return ( dividend / divisor );
+}
 ```
 
  您在偵錯工具下執行此程式碼時，將會評估判斷提示陳述式，但是在發行版本中則不會進行比較，因此不會有額外的負荷。
@@ -154,10 +156,10 @@ Debug.Assert ( temp != 0 );
 
   如果您需要在 C# 或 Visual Basic 的發行組建中使用 Debug 方法，則必須在發行組態中定義 DEBUG 符號。
 
-  C++ 不支援 <xref:System.Diagnostics.Debug> 類別方法。 您可以使用 <xref:System.Diagnostics.Trace> 類別搭配條件式編譯得到相同的效果，例如 `#ifdef DEBUG`... `#endif`。 您可以在 [ ** \<Project> 屬性頁**] 對話方塊中定義這些符號。 如需詳細資訊，請參閱[變更 Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或[變更 C 或 C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)。
+  C++ 不支援 <xref:System.Diagnostics.Debug> 類別方法。 您可以使用 <xref:System.Diagnostics.Trace> 類別搭配條件式編譯得到相同的效果，例如 `#ifdef DEBUG`... `#endif`。 您可以在 [ **\<Project> 屬性頁**] 對話方塊中定義這些符號。 如需詳細資訊，請參閱[變更 Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或[變更 C 或 C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)。
 
 ## <a name="assert-arguments"></a><a name="BKMK_Assert_arguments"></a> Assert 引數
- <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 最多可接受三個引數。 第一個引數是強制性的，代表您要檢查的條件。 如果您只使用一個引數呼叫 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> 或 <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>，`Assert` 方法將會檢查該條件，而如果結果為 false，則會將呼叫堆疊的內容輸出至 [輸出]**** 視窗。 下列範例將示範 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>：
+ <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 最多可接受三個引數。 第一個引數是強制性的，代表您要檢查的條件。 如果您只使用一個引數呼叫 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> 或 <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>，`Assert` 方法將會檢查該條件，而如果結果為 false，則會將呼叫堆疊的內容輸出至 [輸出] 視窗。 下列範例將示範 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>：
 
 ```VB
 Debug.Assert(stacksize > 0)
@@ -197,11 +199,11 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  [本主題內容](#BKMK_In_this_topic)
 
 ## <a name="customizing-assert-behavior"></a><a name="BKMK_Customizing_Assert_behavior"></a> 自訂 Assert 行為
- 如果您以使用者介面模式執行應用程式，`Assert` 方法將在條件失敗時顯示 [判斷提示失敗]**** 對話方塊。 判斷提示失敗時發生的動作是由 <xref:System.Diagnostics.Debug.Listeners%2A> 或 <xref:System.Diagnostics.Trace.Listeners%2A> 屬性所控制。
+ 如果您以使用者介面模式執行應用程式，`Assert` 方法將在條件失敗時顯示 [判斷提示失敗] 對話方塊。 判斷提示失敗時發生的動作是由 <xref:System.Diagnostics.Debug.Listeners%2A> 或 <xref:System.Diagnostics.Trace.Listeners%2A> 屬性所控制。
 
  自訂輸出行為的方法包括將 <xref:System.Diagnostics.TraceListener> 物件加入至 `Listeners` 集合內、從 <xref:System.Diagnostics.TraceListener> 集合內移除 `Listeners`，或覆寫現有 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 的 `TraceListener` 方法，讓它擁有不同的行為。
 
- 例如，您可以覆寫 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 方法以寫入事件記錄檔，而非顯示 [判斷提示失敗]**** 對話方塊。
+ 例如，您可以覆寫 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 方法以寫入事件記錄檔，而非顯示 [判斷提示失敗] 對話方塊。
 
  若要以這種方式自訂輸出，您的程式必須包含接聽程式，而且必須繼承自 <xref:System.Diagnostics.TraceListener>，並覆寫其 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 方法。
 

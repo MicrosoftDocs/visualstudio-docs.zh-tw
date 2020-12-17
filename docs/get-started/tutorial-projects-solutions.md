@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b22695dac3f75b9e90950ee5428bb906436d661
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 48fb0f1c22b2f7055005640baff2239a0ad4a32a
+ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903932"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97646407"
 ---
 # <a name="learn-about-projects-and-solutions"></a>了解專案與解決方案
 
@@ -163,7 +163,7 @@ ms.locfileid: "94903932"
    }
    ```
 
-   您不需要瞭解程式碼的作用，但如果想要的話，您可以按下 **Ctrl** F5 來執行程式， + **F5** 看看它會將今天的日期列印到主控台 (或標準輸出) 視窗。
+   您不需要瞭解程式碼的作用，但如果想要的話，您可以按下 **Ctrl** F5 來執行程式， + 看看它會將今天的日期列印到主控台 (或標準輸出) 視窗。
 
 ## <a name="add-a-second-project"></a>新增第二個專案
 
@@ -201,6 +201,8 @@ ms.locfileid: "94903932"
 
 我們將使用新的單元測試專案來測試 **QuickDate** 專案中的方法，因此必須新增該專案的參考。 這會建立兩個專案之間的「組建相依性」，表示在建置方案時會先建置 **QuickDate** 再建置 **QuickTest**。
 
+::: moniker range="vs-2017"
+
 1. 選擇 **QuickTest** 專案中的 [相依性] 節點，然後從右鍵功能表或操作功能表中選擇 [新增參考]。
 
    [參考管理員] 對話方塊隨即開啟。
@@ -210,6 +212,22 @@ ms.locfileid: "94903932"
    隨即新增 **QuickDate** 專案的參考。
 
    ![顯示專案參考的 Visual Studio 2019 [方案總管]](media/vs-2019/tutorial-projects-solution-explorer-reference.png "方案總管顯示 Visual Studio 中的專案參考。")
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 選擇 **QuickTest** 專案中的 [相依性] 節點，然後從滑鼠右鍵功能表或操作功能表中，選擇 [**加入專案參考**... **]** 。
+
+   [參考管理員] 對話方塊隨即開啟。
+
+1. 在左窗格中，展開 [專案]，然後選擇 [解決方案]。 在中間窗格中，選擇 [ **QuickDate**] 旁的核取方塊，然後選擇 **[確定]**。
+
+   隨即新增 **QuickDate** 專案的參考。
+
+   ![顯示專案參考的 Visual Studio 2019 [方案總管]](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   
+::: moniker-end
 
 ## <a name="add-test-code"></a>新增測試程式碼
 
