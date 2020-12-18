@@ -4,7 +4,7 @@ titleSuffix: ''
 description: 深入瞭解如何使用 [發佈] 工具發佈您應用程式的選項。
 ms.custom:
 - SEO-VS-2020
-- contperfq1
+- contperf-fy21q1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 86a771b1eae096227a46378c8146e6aa5d9e2a06
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434489"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683923"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>將您的應用程式部署到資料夾、IIS、Azure 或其他目的地
 
@@ -33,7 +33,7 @@ ms.locfileid: "94434489"
 - 不確定要選擇哪一個部署選項？ 查看 [哪些發佈選項適合我？](#what-publishing-options-are-right-for-me)
 - 如需 Azure App Service 或 IIS 部署問題的說明，請參閱 [Azure App Service 和 iis 上的 ASP.NET Core 疑難排解](/aspnet/core/test/troubleshoot-azure-iis)。
 - 如需設定 .NET 部署設定的說明，請參閱 [設定 .net 部署設定](#configure-net-deployment-settings)。
-- 若要部署到新的目標，如果您先前已建立發行設定檔，請從已設定設定檔的 [ **發行** ] 視窗中選取 [ **新增** ]。
+- 若要部署到新的目標，如果您先前已建立發行設定檔，請從已設定設定檔的 [**發行**] 視窗中選取 [**新增**]。
 
    ![建立新的發行設定檔](../deployment/media/create-a-new-publish-profile.png)
 
@@ -221,7 +221,7 @@ IIS 網頁伺服器可讓您將應用程式部署至 Azure 以外的 web 伺服�
 
 ## <a name="import-profile"></a>匯入設定檔
 
-您可以在發佈至 IIS 或 Azure App Service 時匯入設定檔。 您可以使用 *發佈設定檔* 案 ( *\* .publishsettings* ) 來設定部署。 發行設定檔案是由 IIS 或 Azure App Service 所建立，或者可以手動方式建立，並可匯入至 Visual Studio 中。
+您可以在發佈至 IIS 或 Azure App Service 時匯入設定檔。 您可以使用 *發佈設定檔* 案 (*\* .publishsettings*) 來設定部署。 發行設定檔案是由 IIS 或 Azure App Service 所建立，或者可以手動方式建立，並可匯入至 Visual Studio 中。
 
 使用發行設定檔案可以簡化部署設定，並在小組環境中更妥善地運作，而不是手動設定每個部署設定檔。
 

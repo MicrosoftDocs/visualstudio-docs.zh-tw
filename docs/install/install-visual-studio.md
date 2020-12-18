@@ -3,7 +3,7 @@ title: 安裝 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步安裝 Visual Studio。
 ms.date: 12/13/2019
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f0d17fcaf856799ded82ebe684d671b358cb8df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dee7965d1c98dbdb05f0edc83c6c8799047acde
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114267"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684057"
 ---
 # <a name="install-visual-studio"></a>安裝 Visual Studio
 
@@ -110,7 +110,7 @@ ms.locfileid: "88114267"
 
 ::: moniker range="vs-2019"
 
-若要這麼做，請依序選擇下列按鈕、您想要的 Visual Studio 版本、[儲存]**** 和 [開啟資料夾]****。
+若要這麼做，請依序選擇下列按鈕、您想要的 Visual Studio 版本、[儲存] 和 [開啟資料夾]。
 
  > [!div class="button"]
  > [下載 Visual Studio](https://visualstudio.microsoft.com/downloads)
@@ -121,15 +121,15 @@ ms.locfileid: "88114267"
 
 執行啟動載入器檔案以安裝 Visual Studio 安裝程式。 這個新輕量型安裝程式包含安裝及自訂 Visual Studio 所需的全部內容。
 
-1. 從您的 [下載]**** 資料夾中，按兩下符合或類似於下列其中一項檔案的啟動載入器：
+1. 從您的 [下載] 資料夾中，按兩下符合或類似於下列其中一項檔案的啟動載入器：
 
    * **vs_community.exe** (適用於 Visual Studiofor Community)
    * **vs_professional.exe** (適用於 Visual Studio Professional)
    * **vs_enterprise.exe** (適用於 Visual Studio Enterprise)
 
-   如果您收到使用者帳戶控制通知，請選擇 [是]****。
+   如果您收到使用者帳戶控制通知，請選擇 [是]。
 
-2. 我們將會要求您認可 Microsoft [授權條款](https://visualstudio.microsoft.com/license-terms/)和 Microsoft [隱私權聲明](https://privacy.microsoft.com/privacystatement)。 選擇 [繼續]****。
+2. 我們將會要求您認可 Microsoft [授權條款](https://visualstudio.microsoft.com/license-terms/)和 Microsoft [隱私權聲明](https://privacy.microsoft.com/privacystatement)。 選擇 [繼續]。
 
    ![授權條款和隱私權聲明](media/privacy-and-license-terms.png "Microsoft 授權條款和隱私權聲明")
 
@@ -139,13 +139,13 @@ ms.locfileid: "88114267"
 
  ::: moniker range="vs-2017"
 
-1. 在 **Visual Studio 安裝程式**中尋找您想要的工作負載。
+1. 在 **Visual Studio 安裝程式** 中尋找您想要的工作負載。
 
    ![Visual Studio 2017：安裝工作負載](../install/media/vs-installer-installing-workloads.png)
 
      例如，選擇「.NET 桌面開發」工作負載。 它隨附預設核心編輯器，其中包括超過 20 種語言的基本程式碼編輯支援、能夠從任何資料夾開啟及編輯程式碼而不需要專案，以及整合的原始程式碼控制。
 
-1. 選擇您想要的工作負載之後，再選擇 [安裝]****。
+1. 選擇您想要的工作負載之後，再選擇 [安裝]。
 
     接著會出現狀態畫面，顯示 Visual Studio 的安裝進度。
 
@@ -153,20 +153,20 @@ ms.locfileid: "88114267"
 
 ::: moniker range="vs-2019"
 
-1. 在 **Visual Studio 安裝程式**中尋找您想要的工作負載。
+1. 在 **Visual Studio 安裝程式** 中尋找您想要的工作負載。
 
    ![Visual Studio 2019：安裝工作負載](../install/media/vs-2019/vs-installer-workloads.png)
 
      例如，選擇 [ASP.NET 與網頁程式開發] 工作負載。 它隨附預設核心編輯器，其中包括超過 20 種語言的基本程式碼編輯支援、能夠從任何資料夾開啟及編輯程式碼而不需要專案，以及整合的原始程式碼控制。
 
-1. 選擇您想要的工作負載之後，再選擇 [安裝]****。
+1. 選擇您想要的工作負載之後，再選擇 [安裝]。
 
     接著會出現狀態畫面，顯示 Visual Studio 的安裝進度。
 
  ::: moniker-end
 
 > [!TIP]
-> 您可以在安裝後，隨時安裝一開始未安裝的工作負載或元件。 如果您已 Visual Studio 開啟，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 或者，從 [開始] 功能表開啟 [Microsoft Visual Studio 安裝程式]****。 您可以在此選擇想要安裝的工作負載或元件。 然後，選擇 [修改]****。
+> 您可以在安裝後，隨時安裝一開始未安裝的工作負載或元件。 如果您已 Visual Studio 開啟，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 或者，從 [開始] 功能表開啟 [Microsoft Visual Studio 安裝程式]。 您可以在此選擇想要安裝的工作負載或元件。 然後，選擇 [修改]。
 
 ## <a name="step-5---choose-individual-components-optional"></a>步驟 5：選取個別元件 (選擇性)
 
@@ -186,7 +186,7 @@ ms.locfileid: "88114267"
 
 ## <a name="step-6---install-language-packs-optional"></a>步驟 6：安裝語言套件 (選擇性)
 
-根據預設，安裝程式會在第一次執行時，嘗試比對作業系統的語言。 若要以您選擇的語言安裝 Visual Studio，請選擇 Visual Studio 安裝程式的 [語言套件]**** 索引標籤，然後遵循提示作業。
+根據預設，安裝程式會在第一次執行時，嘗試比對作業系統的語言。 若要以您選擇的語言安裝 Visual Studio，請選擇 Visual Studio 安裝程式的 [語言套件] 索引標籤，然後遵循提示作業。
 
 ::: moniker range="vs-2017"
 
@@ -231,27 +231,27 @@ ms.locfileid: "88114267"
 
 ::: moniker range="vs-2017"
 
-1. 在完成 Visual Studio 安裝後，請選擇 [啟動]**** 按鈕以開始使用 Visual Studio 來進行開發。
+1. 在完成 Visual Studio 安裝後，請選擇 [啟動] 按鈕以開始使用 Visual Studio 來進行開發。
 
-2. 選取 [檔案]****，然後選擇 [新增專案]****。
+2. 選取 [檔案]，然後選擇 [新增專案]。
 
 3. 選取專案類型。
 
-   例如，若要[建置 C++ 應用程式](/cpp/get-started/tutorial-console-cpp)，請選擇 [已安裝]****，展開 [Visual C++]****，然後選擇您要建置的 C++ 專案類型。
+   例如，若要[建置 C++ 應用程式](/cpp/get-started/tutorial-console-cpp)，請選擇 [已安裝]，展開 [Visual C++]，然後選擇您要建置的 C++ 專案類型。
 
-   若要[建置 C# 應用程式](../get-started/csharp/tutorial-console.md)，請選擇 [已安裝]****，展開 [Visual C#]****，然後選擇您要建置的 C# 專案類型。
+   若要[建置 C# 應用程式](../get-started/csharp/tutorial-console.md)，請選擇 [已安裝]，展開 [Visual C#]，然後選擇您要建置的 C# 專案類型。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. 在完成 Visual Studio 安裝後，請選擇 [啟動]**** 按鈕以開始使用 Visual Studio 來進行開發。
+1. 在完成 Visual Studio 安裝後，請選擇 [啟動] 按鈕以開始使用 Visual Studio 來進行開發。
 
 1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
 1. 在搜尋方塊中，輸入您想要建立的應用程式類型，以查看可用的範本清單。 範本清單取決於您在安裝期間所選擇的工作負載。 若要查看不同的範本，請選擇不同的工作負載。
 
-   您也可以使用 [語言]**** 下拉式清單來篩選搜尋特定的程式設計語言。 您也可以使用 [平台]**** 清單和 [專案類型]**** 清單來篩選。
+   您也可以使用 [語言] 下拉式清單來篩選搜尋特定的程式設計語言。 您也可以使用 [平台] 清單和 [專案類型] 清單來篩選。
 
 1. Visual Studio 會開啟您的新專案，而您已準備好撰寫程式碼！
 

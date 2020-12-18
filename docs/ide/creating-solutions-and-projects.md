@@ -1,7 +1,7 @@
 ---
 title: 使用解決方案與專案
 description: 瞭解方案和專案之間的差異，以及如何在 Visual Studio 中使用它們。
-ms.custom: SEO-VS-2020
+ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 02/06/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bbfa16273dc323d2ad175e965a19a22ad0d17ce
-ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
+ms.openlocfilehash: c6649b313d4ab03c1f096a6bcbc466cb338f427c
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97599475"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684035"
 ---
 # <a name="work-with-solutions-and-projects"></a>使用解決方案與專案
 
@@ -48,18 +48,18 @@ ms.locfileid: "97599475"
 
 如果您有程式碼來源檔案的集合，您可以輕鬆地將其新增至專案。
 
-1. 在功能表上 **，選擇 [**  >    >  **從現有程式碼** 檔案新增專案]。
+1. 在功能表上 **，選取 [**  >    >  **從現有程式碼** 檔案新增專案]。
 
-1. 在 [從現有程式碼檔建立專案精靈] 的 [您要建立的專案類型為何?] 下拉式清單方塊中，選擇您想要的專案類型，然後選擇 [下一步] 按鈕。
+1. 在 [ **從現有程式碼檔建立專案** ] 嚮導的 [ **您要建立哪一種類型的專案？** ] 下拉式清單方塊中，選取您要的專案類型，然後選取 [ **下一步]** 按鈕。
 
-1. 在精靈中，瀏覽至檔案的位置，然後在 [名稱] 方塊中輸入新專案的名稱。 當您完成時，選擇 [完成] 按鈕。
+1. 在精靈中，瀏覽至檔案的位置，然後在 [名稱] 方塊中輸入新專案的名稱。 當您完成時，請選取 [ **完成]** 按鈕。
 
 > [!NOTE]
 > 這個選項最適合用於相對簡單的檔案集合。 目前僅支援 c + +、Apache Cordova、Visual Basic 和 c # 專案類型。
 
 ## <a name="add-files-to-a-solution"></a>將檔案新增至方案
 
-如果您有一個套用至多個專案的檔案 (例如方案的讀我檔案)，或邏輯上位於方案層級而不是特定專案下的其他檔案，則可以將這些檔案新增至方案本身。 若要將項目新增至方案，請在 [方案總管] 中方案節點的操作 (滑鼠右鍵) 功能表上，選擇 [新增] > [新增項目] 或 [新增] > [現有的項目]。
+如果您有一個套用至多個專案的檔案 (例如方案的讀我檔案)，或邏輯上位於方案層級而不是特定專案下的其他檔案，則可以將這些檔案新增至方案本身。 若要將專案加入至方案，請在內容 (以滑鼠右鍵按一下 **方案總管** 中方案節點的) 功能表，然後選取 [**加入**  >  **新專案**] 或 [**加入**  >  **現有專案**]。
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>建立以特定 .NET Framework 版本為目標的 .NET 專案
 
@@ -67,7 +67,7 @@ ms.locfileid: "97599475"
 
 ::: moniker range="vs-2017"
 
-若要指定 .NET Framework 版本，請選擇 [**新增專案**] 對話方塊中的 [**架構**] 下拉式功能表。
+若要指定 .NET Framework 版本，請選取 [**新增專案**] 對話方塊中的 [**架構**] 下拉式功能表。
 
 ![[新增專案] 對話方塊中的 [Framework] 下拉式清單](./media/vside-newproject-framework.png)
 
@@ -78,7 +78,7 @@ ms.locfileid: "97599475"
 
 ::: moniker range=">=vs-2019"
 
-若要指定 .NET Framework 版本，請選擇 [**建立新專案**] 頁面上的 [**架構**] 下拉式功能表。
+若要指定 .NET Framework 版本，請選取 [**建立新專案**] 頁面上的 [**架構**] 下拉式功能表。
 
 ![[設定新專案] 中的 Framework 選取器](media/vs-2019/configure-new-project-framework.png)
 
@@ -90,15 +90,15 @@ ms.locfileid: "97599475"
 
 ### <a name="to-create-an-empty-solution"></a>建立空的方案
 
-1. 在功能表列上 **，選擇 [** 檔案  >  **新增**  >  **專案**]。
+1. 在功能表列上 **，選取 [** 檔案  >  **新增**  >  **專案**]。
 
 ::: moniker range="vs-2017"
 
-2. 在左窗格 ([範本]) 中，從展開的清單中選擇 [其他專案類型]**[Visual Studio 解決方案]** > 。
+2. 在左側 (**範本** ]) 窗格中，在展開的清單中選取 **其他專案類型** > **Visual Studio 方案** 。
 
-3. 在中間窗格選擇 [空白方案]。
+3. 在中間窗格選取 [空白方案] 。
 
-4. 輸入您解決方案的 [名稱] 和 [位置] 值，然後選擇 [確定]。
+4. 輸入解決方案的 **名稱** 和 **位置** 值，然後選取 **[確定]**。
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ ms.locfileid: "97599475"
 
 3. 選取 [空白方案] 範本，然後按一下 [下一步]。
 
-4. 輸入您解決方案的 [名稱] 和 [位置] 值，然後選擇 [建立]。
+4. 輸入方案的 **名稱** 和 **位置** 值，然後選取 [ **建立**]。
 
 ::: moniker-end
 
@@ -137,11 +137,11 @@ ms.locfileid: "97599475"
 
 ### <a name="permanently-delete-a-solution"></a>永久刪除解決方案
 
-1. 在 [方案總管] 中，於您要刪除之方案的右鍵功能表 (操作功能表) 上，選擇 [在檔案總管中開啟資料夾]。
+1. 在 **方案總管** 中，在您要刪除之方案的快顯功能表 (內容功能表) 上，選取 [ **開啟資料夾] 檔案總管**。
 
 1. 在 [檔案總管] 中，瀏覽上一層。
 
-1. 選擇包含解決方案的資料夾，然後按 **Delete** 鍵。
+1. 選取包含解決方案的資料夾，然後按下 **Delete** 鍵。
 
 ## <a name="see-also"></a>另請參閱
 

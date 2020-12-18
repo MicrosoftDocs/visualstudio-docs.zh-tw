@@ -2,7 +2,7 @@
 title: 登入 Visual Studio
 description: 瞭解如何登入 Visual Studio。
 titleSuffix: ''
-ms.custom: seodec18, contperfq1
+ms.custom: seodec18, contperf-fy21q1
 ms.date: 09/11/2020
 ms.topic: how-to
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
@@ -11,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7873d42e075619e23c14d4e2e1babc6898825a6b
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 87c0ad7517bb01aa68d98e0502e34af7c767e962
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672765"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683992"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
@@ -57,7 +57,7 @@ ms.locfileid: "94672765"
 
 您應該選擇 Microsoft 帳戶或最能代表您的工作或學校帳戶。 如果您沒有這些帳戶，您可以按一下 [登入] 按鈕下的連結，免費建立 Microsoft 帳戶。 如果您遇到問題，請參閱 [如何? 註冊 Microsoft 帳戶？](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
-接下來，選擇您在 Visual Studio 中要使用的 UI 設定和色彩佈景主題。 Visual Studio 會記住這些設定，並在您已登入的所有 Visual Studio 環境中同步處理這些設定。 如需已同步處理的設定清單，請參閱 [同步](../ide/synchronized-settings-in-visual-studio.md)處理的設定。 如果您在 Visual Studio 中開啟 [**工具** 選項] 功能表，您可以稍後再變更這些設定  >  **Options** 。
+接下來，選擇您在 Visual Studio 中要使用的 UI 設定和色彩佈景主題。 Visual Studio 會記住這些設定，並在您已登入的所有 Visual Studio 環境中同步處理這些設定。 如需已同步處理的設定清單，請參閱 [同步](../ide/synchronized-settings-in-visual-studio.md)處理的設定。 如果您在 Visual Studio 中開啟 [**工具** 選項] 功能表，您可以稍後再變更這些設定  >   。
 
 提供設定之後會啟動 Visual Studio，您也將完成登入並準備開始使用。 若要確認您是否已登入，請在 Visual Studio 環境的右上角尋找您的名稱。
 
@@ -71,7 +71,7 @@ ms.locfileid: "94672765"
 
 ## <a name="to-change-your-profile-information"></a>若要變更您的設定檔資訊
 
-1. 移至 **File**  >  [檔案 **帳戶設定**]，然後選擇 [**管理 Visual Studio 設定檔**] 連結。
+1. 移至  >  [檔案 **帳戶設定**]，然後選擇 [**管理 Visual Studio 設定檔**] 連結。
 
 1. 在瀏覽器視窗中，選取 [編輯設定檔] 並變更所要的設定。
 

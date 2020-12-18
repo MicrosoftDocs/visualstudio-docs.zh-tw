@@ -1,8 +1,8 @@
 ---
-title: 瞭解方案和專案
+title: 了解解決方案與專案
 description: 瞭解 Visual Studio 專案和方案、如何從範本建立新專案，以及如何在方案總管中查看 & 管理專案。
-ms.custom: SEO-VS-2020
-ms.date: 12/15/2020
+ms.custom: SEO-VS-2020, contperf-fy21q2
+ms.date: 12/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19d0d2fc862572fdf7226a78e0b34d0af0d57541
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 51a2f9683dd2285cc71dfff67020687f0c48afa4
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668088"
+ms.locfileid: "97683910"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
@@ -77,11 +77,14 @@ Visual Studio 會使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存解決方
 
 當您建立新專案時，Visual Studio 會將它儲存至其預設位置 *%USERPROFILE%\source\repos*。 若要變更這個位置，請移至 [**工具**  >  **選項**  >  **專案和方案**  >  **位置**]。 如需詳細資訊，請參閱 [選項對話方塊：專案和方案 > 位置](./reference/projects-solutions-locations-options.md)。
 
+> [!TIP]
+> 如需從頭開始建立的專案和解決方案範例，請參閱 [專案和方案簡介](../get-started/tutorial-projects-solutions.md)（請參閱）。
+
 ## <a name="solution-explorer"></a>方案總管
 
 建立新專案之後，您可以使用 **方案總管** 來查看和管理專案和方案與其相關聯的專案。 下圖顯示包含兩個專案的 c # 方案 **方案總管** ：
 
-![方案總管](../ide/media/vs2015_solution_explorer.png)
+![方案總管的螢幕擷取畫面。](../ide/media/vs2015_solution_explorer.png)
 
 許多功能表命令都是從 [方案總管] 中各種項目的快顯功能表取得。 這些命令包括建置專案、管理 NuGet 套件、新增參考、重新命名檔案，以及執行測試等等。 [方案總管] 頂端工具列上的按鈕可從方案檢視切換到資料夾檢視、顯示隱藏的檔案、摺疊所有節點等等。
 
