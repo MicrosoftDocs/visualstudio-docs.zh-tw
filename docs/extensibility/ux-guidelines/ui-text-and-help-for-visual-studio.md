@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 的 UI 文字和說明 |Microsoft Docs
+description: 瞭解 Visual Studio 的說明資訊中所使用的 UI 文字和術語。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3247aeaa702b59722471c7d28e98957f04f3e07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2795d766c43d6119fa50a12c4dcd1e2c72d79186
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698290"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668595"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>適用於 Visual Studio 的 UI 文字和說明
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> UI 文字和術語
@@ -60,11 +61,11 @@ ms.locfileid: "80698290"
 #### <a name="supplemental-instructions"></a>補充指示
  補充指示提供可協助使用者瞭解控制項或控制項群組的其他資訊。 這也可能包含必要的提示文字，以瞭解輸入控制項預期的格式。 請謹慎使用補充指示。 如果使用者可能無法完全瞭解所做選擇的後果，請將它們保留起來。
 
- ![Visual Studio 中的補充文字](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
+ ![顯示 [Internet Explorer 選項] 按鈕的螢幕擷取畫面，其中有補充文字，說明變更選項設定的影響。](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
 
  **Visual Studio 中的補充文字**
 
- ![Visual Studio 中的補充文字](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
+ ![[選擇原始檔控制] 對話方塊的螢幕擷取畫面，其中 Visual Studio 顯示描述每個原始檔控制系統選項的補充文字。](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
 
  **Visual Studio 中的補充文字**
 
@@ -123,7 +124,7 @@ ms.locfileid: "80698290"
 
 - 絕對不要連結 "here" 這個字。 這對某些螢幕讀取器而言是有問題的，因此只會以超連結的文字為語音。
 
-     不正確：「在 **此**尋找有關 Windows Azure Mobile Services 的資訊」
+     不正確：「在 **此** 尋找有關 Windows Azure Mobile Services 的資訊」
 
      正確：「Windows Azure 行動服務有哪些定價選項？」
 
@@ -136,15 +137,15 @@ ms.locfileid: "80698290"
 
 - 取代控制項標籤：
 
-     ![Visual Studio 中的提示文字](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
+     ![下拉式控制項的螢幕擷取畫面，其中包含 [搜尋方案總管 (Ctrl +; ) ] 控制項標籤的提示文字。](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
 
 - 使用動詞，提供指示：
 
-     ![Visual Studio 中的提示文字](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
+     ![在控制項中顯示「輸入您的名稱」之提示文字的文字方塊螢幕擷取畫面。](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
 
 - 具有指出必要專案的文字：
 
-     ![Visual Studio 中的提示文字](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
+     ![螢幕擷取畫面：控制項中的提示文字會顯示為「必要」 \< \> 。](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
 
 #### <a name="watermark-text"></a>浮水印文字
  在空白設計介面上，文字應該會指出要執行的動作，以及提供連結來開啟其他相關視窗（如果有的話）：
@@ -217,7 +218,7 @@ ms.locfileid: "80698290"
 ### <a name="components-of-a-well-written-error-message"></a>妥善撰寫的錯誤訊息的元件
 
 #### <a name="use-the-shell-dialog-service-for-error-messages"></a>使用 shell 對話服務來取得錯誤訊息。
- 使用 shell 對話服務可讓您控制訊息的外觀，特別是在沒有個別元素的重大變更的情況下使用字型。 使用 **IErrorInfo** 機制，並使用 **IVsUIShell：： SetErrorInfo/ReportErrorInfo**來報告這些機制。
+ 使用 shell 對話服務可讓您控制訊息的外觀，特別是在沒有個別元素的重大變更的情況下使用字型。 使用 **IErrorInfo** 機制，並使用 **IVsUIShell：： SetErrorInfo/ReportErrorInfo** 來報告這些機制。
 
 #### <a name="choose-an-effective-and-appropriate-notification-presentation"></a>選擇有效且適當的通知展示。
  如果需要立即動作以避免資料遺失 (同步通知) ，請使用具有重大警告的強制回應對話方塊。 重要圖示會保留在未讀取訊息的情況下，可能會造成負面的後果。 遺失資料是需要警示層級回應的重要情況。 過度利用重要圖示 desensitizes 使用者的重要性。 如果錯誤訊息的本質僅供參考，請考慮使用強制回應對話方塊的替代方案， (非同步通知) 。
@@ -302,7 +303,7 @@ ms.locfileid: "80698290"
 
  具體來說， **VBDialogBoxParam** 函式會查看識別碼為 **IDHELP** (9 之按鈕的對話方塊範本，) 或標籤 **是 [** 說明] 或 [ **&協助**]。 如果找到 [說明] 按鈕，就會隱藏它，並將 **WS_EX_CONTEXTHELP** 樣式新增至對話方塊，以放置 **？** 按鈕（在對話方塊的標題列中）。
 
- 建立對話方塊時，它會將對話程式推送至堆疊，並使用名為 **DialogPreProc**的前置處理對話方塊程式來叫用對話方塊。 當 **？** 按一下按鈕，就會將**SC_CONTEXTHELP**的**WM_SYSCOMMAND**傳送給對話方塊。 **DialogPreProc**會捕捉此命令，並將其變更為傳遞給原始對話程式的**WM_HELP**訊息。
+ 建立對話方塊時，它會將對話程式推送至堆疊，並使用名為 **DialogPreProc** 的前置處理對話方塊程式來叫用對話方塊。 當 **？** 按一下按鈕，就會將 **SC_CONTEXTHELP** 的 **WM_SYSCOMMAND** 傳送給對話方塊。 **DialogPreProc** 會捕捉此命令，並將其變更為傳遞給原始對話程式的 **WM_HELP** 訊息。
 
  大部分環境建立的對話方塊都有對話方塊的 [說明] 按鈕。 顯示對話方塊時，[說明] 按鈕會自動隱藏，而只有 **？** 按鈕運作。 如果 **？** 按鈕會在 Windows 中移除或變更，此解決方案可讓您快速移回原始的 [說明] 按鈕。
 

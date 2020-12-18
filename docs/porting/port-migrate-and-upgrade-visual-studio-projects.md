@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: f13500c4d65287dfbafdb681a3fc47ffcd2c397e
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ca13ff5263ab43fd6fbdf5764b506091dd9aa3bd
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414317"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667984"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio 的專案移轉與升級參考
 
@@ -32,7 +32,7 @@ ms.locfileid: "93414317"
 
 Visual Studio 的每個版本一般都支援大部分先前的專案、檔案及其他資產類型。 您可以 [像往常一樣](../ide/solutions-and-projects-in-visual-studio.md)地使用它們，而且如果您不依賴較新的功能，Visual Studio 會嘗試保留與舊版的回溯相容性，例如 Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012。 (請參閱[版本資訊](/visualstudio/releasenotes/vs2017-relnotes/)，以了解哪些功能專屬於哪一個版本)。
 
-有些專案類型的支援也會隨時間而改變。 新版的 Visual Studio 可能完全不再支援某些專案，或者需要更新專案，使它們不再具有回溯相容性。 如需移轉問題的目前狀態，請參閱 [Visual Studio Developer Community 網站](https://developercommunity.visualstudio.com)。
+有些專案類型的支援也會隨時間而改變。 新版的 Visual Studio 可能完全不再支援某些專案，或者需要更新專案，使它們不再具有回溯相容性。 如需移轉問題的目前狀態，請參閱 [Visual Studio Developer Community 網站](https://aka.ms/feedback/suggest?space=8)。
 
 本文僅提供 Visual Studio 2017 能移轉之專案類型的詳細資料。 文中不包含 Visual Studio 2017 中不再支援，因此無法移轉的專案類型。 文中也不包含沒有移轉問題的已支援專案類型；該清單位於 [Visual Studio 2017 平台目標及相容性](/visualstudio/productinfo/vs2017-compatibility-vs)中。
 
@@ -104,7 +104,7 @@ Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，
 - [ToolsVersion 指導方針](../msbuild/msbuild-toolset-toolsversion.md)
 - [Framework 目標指導方針](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 2019 的專案移轉與升級參考](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019&preserve-view=true)
 - [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)
@@ -118,7 +118,7 @@ Visual Studio 的每個新版本都支援大部分的專案、檔案及其他資
 我們會嘗試保留與舊版的回溯相容性，例如 Visual Studio 2017、Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012。 不過，對某些專案類型的支援會隨著時間而改變。 較新版本的 Visual Studio 可能完全不支援某些專案，或者，您可能需要更新專案，使其不再回溯相容。
 
 > [!NOTE]
-> 如需移轉問題的目前狀態，請參閱 [Visual Studio Developer Community](https://developercommunity.visualstudio.com)。 若要深入瞭解 Visual Studio 版本的特定功能，請參閱 [版本](/visualstudio/releases/2019/release-notes/)資訊。
+> 如需移轉問題的目前狀態，請參閱 [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8)。 若要深入瞭解 Visual Studio 版本的特定功能，請參閱 [版本](/visualstudio/releases/2019/release-notes/)資訊。
 
 > [!IMPORTANT]
 > 某些專案類型需要特定的工作負載。 如果您未安裝工作負載，Visual Studio 會回報未知或不相容的專案類型。 在此情況下，請檢查 [Visual Studio 安裝程式中的安裝選項](../install/modify-visual-studio.md) ，然後再試一次。 如需 Visual Studio 2019 中專案支援的詳細資訊，請參閱 [平臺目標與相容性](/visualstudio/releases/2019/compatibility) 頁面。
@@ -127,7 +127,7 @@ Visual Studio 的每個新版本都支援大部分的專案、檔案及其他資
 
 下列清單描述 Visual Studio 2019 對使用舊版建立之專案的支援。
 
-如果您在這裡看不到此處所列的專案或檔案類型，請參閱 [這篇文章的 Visual Studio 2017 版本](?view=vs-2017&preserve-view=true)。 您也可以使用此頁面底部的 [ **傳送關於**  >  **此頁面** 的意見反應] 按鈕，以提供專案的詳細資料。 (如果您使用匿名的「本頁對您有幫助嗎？」 控制項，我們將無法回應您的意見反應。)
+如果您在這裡看不到此處所列的專案或檔案類型，請參閱 [這篇文章的 Visual Studio 2017 版本](?view=vs-2017&preserve-view=true)。 您也可以使用此頁面底部的 [**傳送關於**  >  **此頁面** 的意見反應] 按鈕，以提供專案的詳細資料。 (如果您使用匿名的「本頁對您有幫助嗎？」 控制項，我們將無法回應您的意見反應。)
 
 | 專案類型 | 支援 |
 | --- | --- |
@@ -157,7 +157,7 @@ Visual Studio 的每個新版本都支援大部分的專案、檔案及其他資
 | SQL - Redgate | Visual Studio 安裝程式不再隨附 Redgate 的 SQL Change Automation Core (之前稱為 ReadyRoll Core)、SQL Prompt Core 和 SQL Search。<br/><br/>您可以繼續使用 Visual Studio 2017 來取得這些功能。 在 Visual Studio 2019 中，您可以升級為 Redgate SQL Toolbelt 中所提供的付費 SQL Change Automation 和 SQL Prompt 產品。|
 | SQL Server Reporting Services 和 SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | 這些專案類型的支援是透過 Visual Studio 組件庫中的兩個延伸模組來提供：[Microsoft Analysis Services 模型專案](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects)和 [Microsoft Reporting Services 專案](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 SSDT 支援也隨附於 Visual Studio 2019 中的資料儲存和處理工作負載。 如需詳細資訊，請參閱[下載並安裝 SQL Server Data Tools (SSDT) for Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt) 頁面。 |
 | SQL Server Integration Services (SSIS) | 可取得 Visual Studio 2019 的支援。 如需詳細資訊，請參閱[下載並安裝 SQL Server Data Tools (SSDT) for Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt) 頁面、[SQL Server Integration Services (SSIS) ](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) \(英文\) 小組部落格，以及 Marketplace 上的 [SQL Server 整合服務專案](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects&ssr=false#overview) \(英文\) 頁面。 |
-| 測試視窗延伸模組 | 在 Visual Studio 2019 中，會移除一些先前標記為公用，但從未正式記載的測試視窗 API。 許多 API 已在 Visual Studio 2017 中標示為已淘汰，可為延伸模組維護人員提供初期警告。 據我們所知，很少有延伸模組相依於這些 API。 如需詳細資訊和更新，請檢視[已淘汰之測試相關 API 的完整清單](https://github.com/Microsoft/vstest/issues/1830)。 如果這會影響您的案例，請在[開發人員社群](https://developercommunity.visualstudio.com)中讓我們知道。 |
+| 測試視窗延伸模組 | 在 Visual Studio 2019 中，會移除一些先前標記為公用，但從未正式記載的測試視窗 API。 許多 API 已在 Visual Studio 2017 中標示為已淘汰，可為延伸模組維護人員提供初期警告。 據我們所知，很少有延伸模組相依於這些 API。 如需詳細資訊和更新，請檢視[已淘汰之測試相關 API 的完整清單](https://github.com/Microsoft/vstest/issues/1830)。 如果這會影響您的案例，請在[開發人員社群](https://aka.ms/feedback/suggest?space=8)中讓我們知道。 |
 | Visual C++ | 您可以使用 Visual Studio 2019 來處理在 Visual Studio 更早版本 (自 Visual Studio 2010 起) 中建立的專案。 當您第一次開啟專案時，可以選擇要升級到最新的編譯器和工具組，或是繼續使用原本的編譯器和工具組。 如果您選擇繼續使用原本的編譯器和工具組，Visual Studio 2019 不會修改專案檔，且會使用 Visual Studio 更早所安裝工具組來建置您的專案。 保留原本的選項表示您仍然可以視需要在原始的 Visual Studio 版本中開啟該專案。 如需詳細資訊，請參閱[在 Visual Studio 中使用原生多目標來建置舊專案](/cpp/porting/use-native-multi-targeting)。 |
 | Visual Studio 擴充性/VSIX | 系統會更新含 MinimumVersion 14.0 或以下版本的專案，以宣告 MinimumVersion 15.0；如此一來，即無法在舊版的 Visual Studio 中開啟專案。 若要允許在舊版本中開啟專案，請將 MinimumVersion 設定為 `$(VisualStudioVersion)`。 另請參閱[如何︰將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |
 | Visual Studio Lab Management | 您可以使用 Microsoft Test Manager 或 Visual Studio 2010 SP1 和更新版本，開啟在這些版本中建立的環境。 不過，若是 Visual Studio 2010 SP1，Microsoft Test Manager 的版本必須符合 Team Foundation Server 的版本才能建立環境。 |
@@ -198,7 +198,7 @@ Visual Studio 的每個新版本都支援大部分的專案、檔案及其他資
 - [ToolsVersion 指導方針](../msbuild/msbuild-toolset-toolsversion.md)
 - [Framework 目標指導方針](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 2017 的專案移轉與升級參考](?view=vs-2017&preserve-view=true)
 - [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)

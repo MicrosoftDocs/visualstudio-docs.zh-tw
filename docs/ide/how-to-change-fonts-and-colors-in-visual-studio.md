@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfe2b73f7f2ba771875355279043558f3c4cf105
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801434"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667906"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>如何：在 Visual Studio 中變更字型、色彩和主題
 
@@ -32,7 +32,7 @@ ms.locfileid: "88801434"
 
 1. 在 [選項] 清單中，選擇 [**環境**  >  **一般**]。
 
-1. 在 [ **色彩主題** ] 清單中，選擇預設的 **藍色** 主題、 **淺色** 主題、 **深色** 主題或 **藍色 ([額外對比]) ** 主題。
+1. 在 [ **色彩主題** ] 清單中，選擇預設的 **藍色** 主題、 **淺色** 主題、 **深色** 主題或 **藍色 ([額外對比])** 主題。
 
    ![變更色彩主題之 [選項] 對話方塊的螢幕擷取畫面](media/fonts-colors-theme.png "您可以用來變更色彩主題之 [選項] 對話方塊的螢幕擷取畫面")
 
@@ -61,24 +61,24 @@ ms.locfileid: "88801434"
 
 1. 在功能表列上，選擇 [**工具**  >  **選項**]。
 
-1. 在 [選項] 清單中，選擇 [**環境**字型  >  **和色彩**]。
+1. 在 [選項] 清單中，選擇 [**環境** 字型  >  **和色彩**]。
 
 1. 在 [ **顯示設定** ] 清單中，選擇 [ **環境**]。
 
    ![在 IDE 中變更字型和色彩之 [選項] 對話方塊的螢幕擷取畫面](media/fonts-colors-environment.png "在 IDE 中變更字型和色彩之 [選項] 對話方塊的螢幕擷取畫面")
 
     > [!NOTE]
-    > 如果您想要只變更工具視窗的字型，請在 [顯示設定]**** 清單中選擇 [所有文字工具視窗]****。
+    > 如果您想要只變更工具視窗的字型，請在 [顯示設定] 清單中選擇 [所有文字工具視窗]。
 
 1. 修改 [ **字型** ] 和 [ **大小** ] 選項，以變更 IDE 的字型和文字大小。
 
-1. 選取 [顯示項目]**** 中的適當項目，然後修改 [項目前景]**** 和 [項目背景]**** 選項。
+1. 選取 [顯示項目] 中的適當項目，然後修改 [項目前景] 和 [項目背景] 選項。
 
 ### <a name="to-change-the-font-and-text-size-in-the-editor"></a>變更編輯器中的字型和文字大小
 
 1. 在功能表列上，選擇 [**工具**  >  **選項**]。
 
-1. 在 [選項] 清單中，選擇 [**環境**字型  >  **和色彩**]。
+1. 在 [選項] 清單中，選擇 [**環境** 字型  >  **和色彩**]。
 
 1. 在 [ **顯示設定** ] 清單中，選取 [ **文字編輯器**]。
 
@@ -86,7 +86,7 @@ ms.locfileid: "88801434"
 
 1. 修改 [ **字型** ] 和 [ **大小** ] 選項，以變更編輯器的字型和文字大小。
 
-1. 選取 [顯示項目]**** 中的適當項目，然後修改 [項目前景]**** 和 [項目背景]**** 選項。
+1. 選取 [顯示項目] 中的適當項目，然後修改 [項目前景] 和 [項目背景] 選項。
 
 如需詳細資訊，請參閱變更編輯器頁面的字型 [和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md) 。
 
@@ -98,7 +98,7 @@ ms.locfileid: "88801434"
 
 您可以使用下列其中一個程式來切換 Windows 高對比選項：
 
-- 在 Windows 或任何 Microsoft 應用程式中，按**左 Alt** + **左移** + **PrtScn**鍵。
+- 在 Windows 或任何 Microsoft 應用程式中，按 **左 Alt** + **左移** + **PrtScn** 鍵。
 
 - 在 Windows 中，選擇 [**開始**  >  **設定**  >  **輕鬆存取**  >  **高對比**]。
 
@@ -111,12 +111,12 @@ ms.locfileid: "88801434"
 
 1. 在 Visual Studio 的功能表列上，選擇 [**工具**  >  **選項**]，然後在 [選項] 清單中選擇 [**環境**  >  **一般**]。
 
-1. 在 [ **色彩主題** ] 下拉式清單中，選擇 **藍色 ([其他對比度) ** ] 主題，然後選擇 **[確定]**。
+1. 在 [ **色彩主題** ] 下拉式清單中，選擇 **藍色 ([其他對比度)** ] 主題，然後選擇 **[確定]**。
 
 若要深入瞭解您可以使用的其他 Visual Studio 協助工具選項，請參閱 Visual Studio 頁面的 [協助工具功能](../ide/reference/accessibility-features-of-visual-studio.md) 。
 
 > [!TIP]
-> 如果您認為可能有用，但目前無法在 Visual Studio 中使用的色彩或字型有協助工具選項，請在[Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)中選取 [**建議功能**] 讓我們知道。 如需此論壇和其運作方式的詳細資訊，請參閱 [建議功能](../ide/suggest-a-feature.md) 頁面。
+> 如果您認為可能有用，但目前無法在 Visual Studio 中使用的色彩或字型有協助工具選項，請在 [Visual Studio 開發人員社群](https://aka.ms/feedback/suggest?space=8)中選取 [**建議功能**] 讓我們知道。 如需此論壇和其運作方式的詳細資訊，請參閱 [建議功能](../ide/suggest-a-feature.md) 頁面。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eae7e4726f720b1c9974682525bbe2a28ee38d5f
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71693005"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667932"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客戶經驗改進計畫
 
@@ -29,9 +29,9 @@ VSCEIP 預設為開啟。 您可以遵循下列指示將它關閉，或重新開
 
 1. 在 Visual Studio 中，**選擇 [說明**  >  **傳送意見**]，然後選取 [**設定**]。
 
-   [Visual Studio 經驗改進計畫]**** 對話方塊隨即開啟。
+   [Visual Studio 經驗改進計畫] 對話方塊隨即開啟。
 
-1. 若要選擇退出，請選取 [否，我不願意參與]****，然後選取 [確定]****。 若要選擇加入，請選取 [是，我願意參與]****，然後選取 [確定]****。
+1. 若要選擇退出，請選取 [否，我不願意參與]，然後選取 [確定]。 若要選擇加入，請選取 [是，我願意參與]，然後選取 [確定]。
 
    ![[Visual Studio 經驗改進計畫] 對話方塊](media/experience-improvement-program.png)
 
@@ -45,7 +45,7 @@ VSCEIP 預設為開啟。 您可以遵循下列指示將它關閉，或重新開
 
 - 在 64 位元作業系統上，機碼 = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
 - 在 32 位元作業系統上，機碼 = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
-- 當群組原則啟用時，Key = **HKEY_LOCAL_MACHINE \software\policies\microsoft\visualstudio\sqm**
+- 當群組原則啟用時，機碼 = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ VSCEIP 預設為開啟。 您可以遵循下列指示將它關閉，或重新開
 
 - 在 64 位元作業系統上，機碼 = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
 - 在 32 位元作業系統上，機碼 = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
-- 當群組原則啟用時，Key = **HKEY_LOCAL_MACHINE \software\policies\microsoft\visualstudio\sqm**
+- 當群組原則啟用時，機碼 = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
 
 ::: moniker-end
 
@@ -74,5 +74,5 @@ Value = (DWORD)
 * [Visual Studio 所收集的診斷資訊](diagnostic-data-collection.md)
 * [Visual Studio 意見反應選項](../ide/feedback-options.md)
 * [如何回報 Visual Studio 的問題](../ide/how-to-report-a-problem-with-visual-studio.md)
-* [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)
+* [Visual Studio 開發人員社群](https://aka.ms/feedback/suggest?space=8)
 * [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)

@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
-ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
+ms.openlocfilehash: 5c6c09bbf74cca803156842d185b5bf86ff52439
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97050819"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668816"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>如何回報 Visual Studio 或 Visual Studio 安裝程式的問題
 
@@ -25,7 +25,7 @@ ms.locfileid: "97050819"
 
 1. **在 Visual Studio 中**，選取右上角的意見反應圖示，然後選取 [回報問題]。 您也可以從功能表中存取意見反應工具，**協助**  >  **傳送意見** 反應回報  >  **問題**。
 ![Visual Studio 開發人員社群上的回報問題彈出視窗](media/feedback-button.png) 如果您無法安裝 Visual Studio 或無法在 Visual Studio 中存取意見反應工具，您也可以改為在 **Visual Studio 安裝程式** 中回報問題。  在安裝程式中，選取右上角的意見反應圖示，然後選取 [回報問題]。
-![Visual Studio Developer Community 上的回報問題快顯](media/installer.png)
+![在安裝程式的 Visual Studio 開發人員社群報告問題快顯視窗](media/installer.png)
 
 1. 按一下 [回報 **問題** ] 會開啟您的預設瀏覽器，並使用您用來登入的相同帳戶將您登入 Visual Studio
 
@@ -71,7 +71,7 @@ ms.locfileid: "97050819"
 
 1. 選取問題報表上的 [提供詳細資訊] 連結，會將您流覽至新的畫面。 您可以從這裡查看所要求的資訊。
 
-   ![我的意見反應](../ide/media/feedback-need-more-info.png)
+   ![要傳送給 Microsoft 的資訊詳細資料](../ide/media/feedback-need-more-info.png)
 
 1. 您可以藉由新增留言、附件或錄製步驟，來提供更多資訊。 這個體驗類似於在對問題投票時，回報新問題或提供額外資訊。
 
@@ -81,9 +81,9 @@ ms.locfileid: "97050819"
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>搜尋解決方案或提供意見反應
 
-如果您不想要或無法使用 Visual Studio 來回報問題，有可能那個問題已經回報過，而且解決方案已張貼於 [Visual Studio 開發人員社群頁面](https://developercommunity.visualstudio.com/) \(英文\) 頁面。
+如果您不想要或無法使用 Visual Studio 來回報問題，有可能那個問題已經回報過，而且解決方案已張貼於 [Visual Studio 開發人員社群頁面](https://developercommunity2.visualstudio.com/search?space=8) \(英文\) 頁面。
 
-如果您沒有要回報的問題，但想要建議某項功能，也有一個地方可以這麼做。 如需詳細資訊，請參閱[提出功能建議](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)頁面。
+如果您沒有要回報的問題，但想要建議某項功能，也有一個地方可以這麼做。 如需詳細資訊，請參閱[提出功能建議](https://aka.ms/feedback/suggest?space=8)頁面。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -91,5 +91,5 @@ ms.locfileid: "97050819"
 * [Visual Studio 意見反應選項](../ide/feedback-options.md)
 * [報告 Visual Studio for Mac 的問題](/visualstudio/mac/report-a-problem)
 * [回報 C++ 的問題](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)
+* [Visual Studio 開發人員社群](https://aka.ms/feedback/suggest?space=8)
 * [開發人員社群資料隱私權](developer-community-privacy.md)

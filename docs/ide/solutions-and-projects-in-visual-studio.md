@@ -1,5 +1,5 @@
 ---
-title: 方案和專案總覽
+title: 瞭解方案和專案
 description: 瞭解 Visual Studio 專案和方案、如何從範本建立新專案，以及如何在方案總管中查看 & 管理專案。
 ms.custom: SEO-VS-2020
 ms.date: 12/15/2020
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1981bc5c9d1c2589607f355528c332d01284917e
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 19d0d2fc862572fdf7226a78e0b34d0af0d57541
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615749"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668088"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
@@ -51,7 +51,7 @@ Visual Studio 使用 [msbuild](../msbuild/msbuild.md) 在方案中建立每個�
 
 ## <a name="solutions"></a>方案
 
-「方案」內所含的專案。 儘管名稱為方案，但其並非「解答」。 方案僅是一或多個相關專案的容器、組建資訊、Visual Studio 視窗設定、任何未與特定專案建立關聯的其他檔案。 方案由具有自己獨特格式的文字檔 (副檔名為 *.sln*) 所描述，並不適合手動編輯。
+「方案」內所含的專案。 儘管名稱為方案，但其並非「解答」。 方案僅是一或多個相關專案的容器、組建資訊、Visual Studio 視窗設定、任何未與特定專案建立關聯的其他檔案。
 
 ### <a name="solution-file"></a>解決方案檔案
 
@@ -61,6 +61,9 @@ Visual Studio 會使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存解決方
 |---------------|----------|-----------------|
 |.sln|Visual Studio 方案|將專案、專案項目和方案項目組織到方案中。|
 |.suo|方案使用者選項|儲存使用者層級設定和自訂項目，例如中斷點。|
+
+> [!IMPORTANT]
+> 方案由具有自己獨特格式的文字檔 (副檔名為 *.sln*) 所描述，並不適合手動編輯。 相反地， *.suo* 檔案是隱藏檔案，不會顯示在預設的檔案總管設定下。 若要顯示隱藏的檔案，請在檔案總管的 [檢視] 功能表中，選取 [隱藏的項目] 核取方塊。
 
 ### <a name="solution-folder"></a>方案資料夾
 

@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 771fd167a2dc9fce8278ca53f730872a9f170eb7
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 62c06333af1e296c7e9745b70f33577d45ede68b
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329906"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668764"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 
@@ -133,8 +133,8 @@ IntelliTest 會嘗試將觸發相關程式行為所需的陣列和字串大小�
 
 ## <a name="got-feedback"></a>有人給您意見嗎？
 
-在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。
+在[開發人員社群](https://aka.ms/feedback/suggest?space=8)上張貼您的意見與功能建議。
 
-## <a name="further-reading"></a>進一步閱讀
+## <a name="further-reading"></a>進階閱讀
 
-* [運作方式](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
+* [它如何運作？](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

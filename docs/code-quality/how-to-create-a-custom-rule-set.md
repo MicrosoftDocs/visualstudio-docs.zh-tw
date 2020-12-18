@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6ad55d3d678a26489983bf276359f2141688272
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 69af1534740ddec2c804f0b7dafec61d985a4b24
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348810"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667880"
 ---
 # <a name="customize-a-rule-set"></a>自訂規則集
 
@@ -26,9 +26,9 @@ ms.locfileid: "94348810"
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>從現有的規則集建立自訂規則集
 
-若要建立自訂規則集，您可以在 [ **規則集編輯器** ] 中開啟內建的規則集。 從該處，您可以新增或移除特定規則，也可以變更違反規則時所發生的動作 &mdash; ，例如顯示警告或錯誤。
+若要建立自訂規則集，您可以在 [ **規則集編輯器**] 中開啟內建的規則集。 從該處，您可以新增或移除特定規則，也可以變更違反規則時所發生的動作 &mdash; ，例如顯示警告或錯誤。
 
-1. 在 **方案總管** 中，以滑鼠右鍵按一下專案，然後選取 [ **屬性** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下專案，然後選取 [ **屬性**]。
 
 2. 在 [ **屬性** ] 頁面上，選取 [程式 **代碼分析** ] 索引標籤。
 
@@ -53,32 +53,32 @@ ms.locfileid: "94348810"
 4. 選取 [ **開啟** ]，即可在規則集編輯器中顯示規則。
 
 > [!NOTE]
-> 如果您有 .NET Core 或 .NET Standard 專案，此程式會有些不同，因為沒有 [程式 **代碼分析** ] 屬性索引標籤。遵循下列步驟，將 [預先定義的規則集複製到您的專案，並將其設定為使用中的規則集](/dotnet/fundamentals/code-analysis/code-quality-rule-options)。 複製規則集之後，您可以 [在 Visual Studio 規則集編輯器中加以編輯](working-in-the-code-analysis-rule-set-editor.md) ，方法是從 **方案總管** 中開啟它。
+> 如果您有 .NET Core 或 .NET Standard 專案，此程式會有些不同，因為專案屬性中的 [程式 **代碼分析** ] 索引標籤不支援相同的選項。 遵循下列步驟，將 [預先定義的規則集複製到您的專案，並將其設定為使用中的規則集](/dotnet/fundamentals/code-analysis/code-quality-rule-options)。 複製規則集之後，您可以 [在 Visual Studio 規則集編輯器中加以編輯](working-in-the-code-analysis-rule-set-editor.md) ，方法是從 **方案總管** 中開啟它。
 
 ## <a name="create-a-new-rule-set"></a>建立新的規則集
 
 您可以從 [ **新增** 檔案] 對話方塊建立新的規則集檔案：
 
-1. 選取 **[** 檔案新增檔案]  >  **New**  >  **** ，或按 **Ctrl** + **N** 。
+1. 選取 **[** 檔案新增檔案]  >    >  ****，或按 **Ctrl** + **N**。
 
-2. 在 [ **新增** 檔案] 對話方塊中，選取左側的 **[一般** ] 類別，然後選取 [程式 **代碼分析規則集** ]。
+2. 在 [ **新增** 檔案] 對話方塊中，選取左側的 **[一般** ] 類別，然後選取 [程式 **代碼分析規則集**]。
 
-3. 選取 [開啟]  。
+3. 選取 [開啟]。
 
    新的 *. 規則* 集檔案會在規則集編輯器中開啟。
 
 ## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>從多個規則集建立自訂規則集
 
 > [!NOTE]
-> 下列程式不適用於沒有 [程式 **代碼分析** ] 屬性索引標籤的 .net Core 專案。
+> 下列程式不適用於 .NET Core 或 .NET Standard 專案，其在 [程式 **代碼分析** ] 屬性索引標籤中不支援相同的功能。
 
-1. 在 **方案總管** 中，以滑鼠右鍵按一下專案，然後選取 [ **屬性** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下專案，然後選取 [ **屬性**]。
 
 2. 在 [ **屬性** ] 頁面上，選取 [程式 **代碼分析** ] 索引標籤。
 
 ::: moniker range="vs-2017"
 
-3. 選取 **\<Choose multiple rule sets>** [ **執行此規則集** ]。
+3. 選取 **\<Choose multiple rule sets>** [ **執行此規則集**]。
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ ms.locfileid: "94348810"
 
    ![新增或移除規則集對話方塊](media/add-remove-rule-sets.png)
 
-5. 選取 [ **另存** 新檔]，輸入 *規則集* 檔案的名稱，然後選取 [ **儲存** ]。
+5. 選取 [ **另存** 新檔]，輸入 *規則集* 檔案的名稱，然後選取 [ **儲存**]。
 
    在 [ **執行此規則集** ] 清單中選取了新的規則集。
 
@@ -111,7 +111,7 @@ ms.locfileid: "94348810"
    </RuleSet>
    ```
 
-- 如果相同的規則在具有 *相同* 嚴重性的規則集中列出兩次以上，您可能會在 [ **錯誤清單** ] 中看到下列警告：
+- 如果相同的規則在具有 *相同* 嚴重性的規則集中列出兩次以上，您可能會在 [ **錯誤清單**] 中看到下列警告：
 
    **CA0063：無法載入規則集檔案 ' 您的 ' \[ . 規則集 ' 或其相依的規則集檔案之一。檔案不符合規則集架構。**
 
@@ -138,7 +138,7 @@ ms.locfileid: "94348810"
 
 ## <a name="name-and-description"></a>名稱和描述
 
-若要變更在編輯器中開啟之規則集的顯示名稱，請選取功能表列 **Properties** 上的 [ **視圖**  >  **屬性視窗]** 來開啟 [屬性] 視窗。 在 [ **名稱** ] 方塊中輸入顯示名稱。 您也可以輸入規則集的描述。
+若要變更在編輯器中開啟之規則集的顯示名稱，請選取功能表列上的 [**視圖**  >  **屬性視窗]** 來開啟 [屬性] 視窗。 在 [ **名稱** ] 方塊中輸入顯示名稱。 您也可以輸入規則集的描述。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -147,7 +147,7 @@ ms.locfileid: "94348810"
 > [!div class="nextstepaction"]
 > [修改規則集編輯器中的規則](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [程式碼分析規則集參考](../code-quality/rule-set-reference.md)

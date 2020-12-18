@@ -12,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c89f2f6ec2a1a9bc6c87a600c355226b2f3da4
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: dccf962aef39227388f86134a9dd1f8c96440a3c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95005934"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668543"
 ---
 # <a name="developer-community-data-privacy"></a>開發人員社群資料隱私權
 
-根據預設，[開發人員社群](https://developercommunity.visualstudio.com/)上問題報表中的所有資訊 (包括任何留言和回覆) 都會公開顯示。 這是一項優點，因為它可讓整個社群查看問題、解決方案和其他使用者找到的因應措施。 不過，如果您擔心資料或身分的隱私權，則有下列選項可供選擇。
+根據預設，[開發人員社群](https://aka.ms/feedback/suggest?space=8)上問題報表中的所有資訊 (包括任何留言和回覆) 都會公開顯示。 這是一項優點，因為它可讓整個社群查看問題、解決方案和其他使用者找到的因應措施。 不過，如果您擔心資料或身分的隱私權，則有下列選項可供選擇。
 
 ## <a name="identity-privacy"></a>身分隱私權
 

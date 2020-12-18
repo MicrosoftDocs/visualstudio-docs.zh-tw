@@ -11,12 +11,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 01fee6752bbbc5512e78f3daa313846300a77ca9
-  ms.sourcegitcommit: 62f91179f2c3a51c85dd7b0e6172a3a53393fb7e
-  ms.translationtype: HT
+  ms.openlocfilehash: d6683909bae824e10d37ab029a0a2d4110488ae8
+  ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+  ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 11/12/2020
-  ms.locfileid: "94567129"
+  ms.lasthandoff: 12/18/2020
+  ms.locfileid: "97668621"
 highlightedContent:
   items:
   - title: 設定與安裝
@@ -205,4 +205,4 @@ additionalContent:
     - title: 使用 Docker 容器開發
       summary: 使用 Docker 容器隔離模組化元件及改善延展性。
       url: ../containers/index.yml
-  footer: '[部落格](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [問題回報](../ide/feedback-options.md) - [開發人員社群](https://developercommunity.visualstudio.com/spaces/8/index.html) - [疑難排解](/troubleshoot/visualstudio/welcome-visual-studio)'
+  footer: '[部落格](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [問題回報](../ide/feedback-options.md) - [開發人員社群](https://aka.ms/feedback/suggest?space=8) - [疑難排解](/troubleshoot/visualstudio/welcome-visual-studio)'

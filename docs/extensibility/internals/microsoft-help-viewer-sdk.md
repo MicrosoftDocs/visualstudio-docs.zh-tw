@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 901a5a5eea7835720ab9d5963f0ab1be36df3685
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168732"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668855"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -302,7 +302,7 @@ F1 流程圖：
 
    - 若為64位作業系統：
 
-        HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
         "VendorContent" = dword：00000001
 
@@ -310,13 +310,13 @@ F1 流程圖：
 
    - 若為32位作業系統：
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Help\v2.3\Partner<em> \\<命名 \> 空間</em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em> \\<命名 \> 空間</em>
 
       「位置」 = 「離線」
 
    - 若為64位作業系統：
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em> \\<命名 \> 空間</em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em> \\<命名 \> 空間</em>
 
       「位置」 = 「離線」
 
@@ -324,7 +324,7 @@ F1 流程圖：
 
 若要開啟基底原生命名空間剖析，請在登錄中依名稱加入新的 DWORD： BaseNativeNamespaces，並將其值設定為 1 (其想要支援) 的目錄索引鍵下。  例如，如果您想要使用 Visual Studio 目錄，可以將機碼加入至路徑：
 
-HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
 當遇到格式標頭/方法中的 F1 關鍵字時，會剖析 '/' 字元，以產生下列結構：
 
@@ -342,13 +342,13 @@ HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStud
 
 ::: moniker range="vs-2017"
 
-**HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\15.0\Dynamic 說明**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\16.0\Dynamic 說明**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
 
 ::: moniker-end
 
@@ -445,7 +445,7 @@ Branding.xml 檔案包含的專案清單，會在主題包含時，用來在主�
 
 **Branding.xml**
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | 功能： | **CollapsibleArea** |
 | 使用︰ | 展開折迭內容控制項文字 |
@@ -462,14 +462,14 @@ Branding.xml 檔案包含的專案清單，會在主題包含時，用來在主�
 | VBUsage | 使用方式 |
 | 功能： | **意見反應、頁尾和標誌** |
 | 使用︰ | 提供意見反應控制項，讓客戶透過電子郵件提供目前主題的意見反應。  內容的著作權文字。  標誌定義。 |
-| **Element** | **值 (可以修改這些字串，以符合採用者需求。 ) ** |
+| **Element** | **值 (可以修改這些字串，以符合採用者需求。 )** |
 | 版權 | © 2013 Microsoft Corporation。 著作權所有，並保留一切權利。 |
 | SendFeedback | \<a href="{0}" {1}>將 \</a> 本主題的意見反應傳送給 Microsoft。 |
 | FeedbackLink | |
 | LogoTitle | [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] |
 | LogoFileName | vs_logo_bk.gif |
 | LogoFileNameHC | vs_logo_wh.gif |
-| 功能： | **免責聲明** |
+| 功能： | **免責 聲明** |
 | 使用︰ | 機器翻譯內容的一組案例特定免責聲明。 |
 | **Element** | **值** |
 | MT_Editable | 本文已轉譯機器翻譯。 如果您有網際網路連線，請選取 [線上查看此主題]，以同時使用原始英文內容來查看此頁面的可編輯模式。 |
@@ -698,7 +698,7 @@ Visual Studio 內容會顯示 Visual Studio 標誌以及其他圖形。  Visual 
 
 本逐步解說示範如何將說明內容併入 Visual Studio Shell 應用程式，然後加以部署。
 
-**需求**
+**Requirements**
 
 1. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
 
@@ -745,7 +745,7 @@ Visual Studio 內容會顯示 Visual Studio 標誌以及其他圖形。  Visual 
 
 2. 在方案總管的 ContosoHelpShellUI 專案中，開啟 [資源檔] 資料夾中的 [System.windows.input.applicationcommands.paste. .vsct]。 請確定此行已標記為批註 (搜尋 "No_Help" ) ： `<!-- <define name="No_HelpMenuCommands"/> -->`
 
-3. 選擇 F5 鍵來編譯和執行 **調試**。 在獨立 Shell IDE 的實驗實例中，選擇 [說明 **] 功能表。** 確定已顯示 [ **View**說明]、[ **新增] 和 [移除說明內容**]，並顯示 [設定說明 **喜好設定** ] 命令。
+3. 選擇 F5 鍵來編譯和執行 **調試**。 在獨立 Shell IDE 的實驗實例中，選擇 [說明 **] 功能表。** 確定已顯示 [ **View** 說明]、[ **新增] 和 [移除說明內容**]，並顯示 [設定說明 **喜好設定** ] 命令。
 
 4. 在方案總管的 ContosHelpShell 專案中，開啟 [Shell 自訂] 資料夾中的 ContosoHelpShell. .pkgdef。 若要定義 Contoso Help catalog，請新增下列幾行：
 
@@ -820,7 +820,7 @@ Visual Studio 內容會顯示 Visual Studio 標誌以及其他圖形。  Visual 
 
      "C:\Program Files (x86) \Microsoft Help Viewer\v2.3\HlpViewer.exe"/catalogName VisualStudio15/helpQuery method = "page&id = ContosoTopic0"/launchingApp Microsoft，VisualStudio，12。0
 
-10. 從 Contoso 應用程式根) 啟動 Contoso 應用程式 (。 在 [ISO Shell] 中，選擇 [說明 **] 功能表項目** ，然後將 [ **設定說明喜好設定** ] 變更為 [ **使用本機**說明]。
+10. 從 Contoso 應用程式根) 啟動 Contoso 應用程式 (。 在 [ISO Shell] 中，選擇 [說明 **] 功能表項目** ，然後將 [ **設定說明喜好設定** ] 變更為 [ **使用本機** 說明]。
 
 11. 在 shell 中，選擇 [說明 **] 功能表項目** ，然後 **查看**[說明]。 本機說明檢視器應該會啟動。 選擇 [ **管理內容** ] 索引標籤。在 [ **安裝來源**] 下，選擇 [ **磁片** ] 選項按鈕。 選擇 [ **...** ] 按鈕，然後流覽至包含 Contoso 內容的本機資料夾， (複製到上述步驟中的本機資料夾) 。 選擇 [Helpcontentsetup.msha] .msha。 Contoso 現在應該會顯示為書籍選取專案中的書。 選擇 [ **新增**]，然後選擇 [ **更新** ] 按鈕 (右下角) 。
 
@@ -832,4 +832,4 @@ Visual Studio 內容會顯示 Visual Studio 標誌以及其他圖形。  Visual 
 
 如需如何運用說明 API 的詳細資訊，請參閱說明 [檢視器程式碼範例](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)。
 
-您可以在 [開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)提交功能建議。
+您可以在 [開發人員社群](https://aka.ms/feedback/suggest?space=8)提交功能建議。

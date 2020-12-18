@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1fc40c826499b36d5d713d0842a2c0e8dae462d1
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398991"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668361"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
 如果您或組織使用防火牆或 Proxy 伺服器等安全性措施，建議您將部分網域 URL 新增至「允許清單」，並開啟某些連接埠和通訊協定，以在安裝及使用 Visual Studio 及 Azure 服務時取得最佳體驗。
 
-* **[安裝 Visual Studio](#install-visual-studio)** ：這些表格包含要新增至允許清單的網域 url，讓您可以存取所需的所有元件和工作負載。
+* **[安裝 Visual Studio](#install-visual-studio)**：這些表格包含要新增至允許清單的網域 url，讓您可以存取所需的所有元件和工作負載。
 
-* **[使用 Visual Studio 和 Azure 服務](#use-visual-studio-and-azure-services)** ：此表格包含要新增至允許清單的網域 url，以及要開啟的埠和通訊協定，讓您可以存取您想要的所有功能和服務。
+* **[使用 Visual Studio 和 Azure 服務](#use-visual-studio-and-azure-services)**：此表格包含要新增至允許清單的網域 url，以及要開啟的埠和通訊協定，讓您可以存取您想要的所有功能和服務。
 
 > [!NOTE]
 > 本文針對 Windows 上的 Visual Studio 撰寫，但特定資訊也適用於在防火牆或 Proxy 伺服器後方[安裝 Visual Studio for Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)。
@@ -155,10 +155,10 @@ ms.locfileid: "93398991"
 以下是一些支援選項：
 
 * 您可以透過 Visual Studio 安裝程式及 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio.md)工具回報產品的問題。
-* 在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/) \(英文\) 中建議功能、追蹤產品問題和尋找解答。
+* 在 [Visual Studio 開發人員社群](https://aka.ms/feedback/suggest?space=8) \(英文\) 中建議功能、追蹤產品問題和尋找解答。
 * 您可以使用您的 [GitHub](https://github.com/) 帳戶與我們連絡，以及參加 [Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與其他 Visual Studio 開發人員對話。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Live Share 的連線需求](/visualstudio/liveshare/reference/connectivity/)
 * [建立 Visual Studio 的網路安裝](create-a-network-installation-of-visual-studio.md)

@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f06b72673ea73e68f6c224ec9734568d70e25a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852253"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668777"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>針對資料中斷點錯誤進行疑難排解
 此頁面將逐步引導您解決在使用「值變更時中斷」時所看到的常見錯誤
@@ -40,11 +40,11 @@ ms.locfileid: "90852253"
 - *「在 managed 堆積上找不到值，因此無法追蹤。」*
   - 在堆疊上宣告的變數。
     - 我們不支援在堆疊上建立的變數設定資料中斷點，因為一旦函式結束之後，這個變數就會無效。
-    - 因應**措施：在**使用變數的程式列上設定中斷點。
+    - 因應 **措施：在** 使用變數的程式列上設定中斷點。
 
   - 不是從下拉式清單展開的變數上的「當值變更時中斷」。
     - 偵錯工具會在內部需要知道包含您要追蹤之欄位的物件。垃圾收集行程可能會在堆積中移動您的物件，讓偵錯工具必須知道持有您要追蹤之變數的物件。 
-    - 因應**措施：如果**您是在您想要設定資料中斷點的物件內的方法中，請移至一個框架，然後使用此 `locals/autos/watch` 視窗來展開物件，並將您想要的欄位設定為數據中斷點。
+    - 因應 **措施：如果** 您是在您想要設定資料中斷點的物件內的方法中，請移至一個框架，然後使用此 `locals/autos/watch` 視窗來展開物件，並將您想要的欄位設定為數據中斷點。
 
 - *「靜態欄位或靜態屬性不支援資料中斷點。」*
     
@@ -61,7 +61,7 @@ ms.locfileid: "90852253"
 - *「屬性相依于硬體所能追蹤的記憶體。」*
     
   - 每個架構都有一組可支援的位元組數和硬體資料中斷點，以及您想要設定資料中斷點的屬性已超過該限制。 請參閱 [資料中斷點硬體限制](#data-breakpoint-hardware-limitations) 表格，以瞭解有多少硬體支援的資料中斷點和位元組可供您使用的架構使用。 
-  - 因應**措施：在**可能會在屬性內變更的值上設定資料中斷點。
+  - 因應 **措施：在** 可能會在屬性內變更的值上設定資料中斷點。
 
 - *「使用舊版 c # 運算式評估工具時，不支援資料中斷點」。*
 
@@ -81,7 +81,7 @@ ms.locfileid: "90852253"
 
 ## <a name="provide-feedback"></a>提供意見反應
 
-對於這項功能的任何問題或建議，請透過 [說明] 讓我們知道 > 傳送意見反應 > 在 IDE 或[開發人員社群](https://developercommunity.visualstudio.com/)中回報[問題](../ide/how-to-report-a-problem-with-visual-studio.md)。
+對於這項功能的任何問題或建議，請透過 [說明] 讓我們知道 > 傳送意見反應 > 在 IDE 或[開發人員社群](https://aka.ms/feedback/suggest?space=8)中回報[問題](../ide/how-to-report-a-problem-with-visual-studio.md)。
 
 ## <a name="see-also"></a>另請參閱
 

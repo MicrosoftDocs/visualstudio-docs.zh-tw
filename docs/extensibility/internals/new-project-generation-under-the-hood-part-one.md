@@ -1,5 +1,6 @@
 ---
 title: 新專案產生：在幕後，第一個部分 |Microsoft Docs
+description: 您可以在建立自己的專案類型 (第1部（共 2) ）中，深入瞭解 Visual Studio 整合式開發環境 (IDE) 的狀況。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aca35e85e57a07a2b411a23d81b99cff9983b9c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec16895e71788f160e0ce6025f35b4dff02d7d2f
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707060"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668881"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新專案產生：一探究竟，第一部份
 您是否想要瞭解如何建立自己的專案類型？ 想知道當您建立新專案時實際發生什麼事？ 讓我們看看幕後的內容，並看看真正的進展。
@@ -34,9 +35,9 @@ ms.locfileid: "80707060"
 - 它會在目前的方案中產生專案專案和資料夾。
 
 ## <a name="the-new-project-dialog-box"></a>[新增專案] 對話方塊
- 當您選取新專案的專案類型時，就會開始。 讓我們從按一下 [檔案] 功能表上**的 [** **新增專案**] 開始。 [ **新增專案** ] 對話方塊隨即出現，並看起來像這樣：
+ 當您選取新專案的專案類型時，就會開始。 讓我們從按一下 [檔案] 功能表上 **的 [** **新增專案**] 開始。 [ **新增專案** ] 對話方塊隨即出現，並看起來像這樣：
 
- ![[新增專案] 對話方塊](../../extensibility/internals/media/newproject.gif "NewProject")
+ ![[新增專案] 對話方塊的螢幕擷取畫面。](../../extensibility/internals/media/newproject.gif)
 
  讓我們進一步了解。 [ **專案類型** ] 樹狀目錄會列出您可以建立的各種專案類型。 當您選取專案類型（如 **Visual c # Windows**）時，您會看到可讓您開始使用的應用程式範本清單。 **Visual Studio 安裝的範本** 是由 Visual Studio 安裝，且可供電腦的任何使用者使用。 您建立或收集的新範本可以新增至 **我的範本** ，而且只能供您使用。
 
@@ -60,10 +61,10 @@ devenv /installvstemplates
 ```
 
 ### <a name="project-types"></a>專案類型
- **專案類型**的位置和名稱（例如**Visual c #** 和**其他語言**）是由系統登錄機碼目所決定。 子節點（例如 **資料庫** 和 **智慧型裝置**）的組織會鏡像包含對應之 .vstemplate 檔案的資料夾階層。 讓我們先看看根節點。
+ **專案類型** 的位置和名稱（例如 **Visual c #** 和 **其他語言**）是由系統登錄機碼目所決定。 子節點（例如 **資料庫** 和 **智慧型裝置**）的組織會鏡像包含對應之 .vstemplate 檔案的資料夾階層。 讓我們先看看根節點。
 
 #### <a name="project-type-root-nodes"></a>專案類型根節點
- 當 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 初始化時，它會將系統登錄機碼的子機碼 HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0\newprojecttemplates\templatedirs，以建立並命名 **專案類型** 樹狀結構的根節點。 這項資訊會快取以供稍後使用。 查看 TemplateDirs \\ {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1 鍵。 每個專案都是 VSPackage 的 GUID。 子機碼 (/1) 的名稱會被忽略，但其存在表示這是 **專案類型** 的根節點。 根節點可能會有數個子機碼可控制其在 **專案類型** 樹狀結構中的外觀。 讓我們來看看其中的部分。
+ 當 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 初始化時，它會遍歷系統登錄機碼 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs 的子機碼，以建立並命名 **專案類型** 樹狀結構的根節點。 這項資訊會快取以供稍後使用。 查看 TemplateDirs \\ {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1 鍵。 每個專案都是 VSPackage 的 GUID。 子機碼 (/1) 的名稱會被忽略，但其存在表示這是 **專案類型** 的根節點。 根節點可能會有數個子機碼可控制其在 **專案類型** 樹狀結構中的外觀。 讓我們來看看其中的部分。
 
 ##### <a name="default"></a>(預設值)
  這是命名根節點之當地語系化字串的資源識別碼。 字串資源位於 VSPackage GUID 所選取的附屬 DLL 中。
@@ -92,29 +93,29 @@ devenv /installvstemplates
 
  DeveloperActivity REG_SZ VC#
 
- 指出如果已針對開發設定 Visual Studio，則 Visual c # 會是根節點 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 。 否則，它會是 **其他語言**的子節點。
+ 指出如果已針對開發設定 Visual Studio，則 Visual c # 會是根節點 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 。 否則，它會是 **其他語言** 的子節點。
 
 ##### <a name="folder"></a>資料夾
  如果有這個子機碼，根節點就會變成指定之資料夾的子節點。 可能的資料夾清單會出現在機碼底下
 
- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
 
- 例如，資料庫專案專案的資料夾索引鍵符合 PseudoFolders 中的其他專案類型專案。 因此，在 **專案類型** 樹狀結構中， **資料庫專案** 將會是 **其他專案類型**的子節點。
+ 例如，資料庫專案專案的資料夾索引鍵符合 PseudoFolders 中的其他專案類型專案。 因此，在 **專案類型** 樹狀結構中， **資料庫專案** 將會是 **其他專案類型** 的子節點。
 
 #### <a name="project-type-child-nodes-and-vstdir-files"></a>專案類型的子節點和 vstdir 檔案
- **專案類型**樹狀結構中的子節點位置會遵循 >\templates\projecttemplates\csharp\helloworld\ 資料夾中的資料夾階層。 針對 (**Visual Studio 安裝的範本**) 的電腦範本，一般位置是 \Program Files\Microsoft Visual Studio 14.0 \ Common7\IDE\ProjectTemplates\，而針對 (**範本**) 的使用者範本，一般位置是 \My Documents\Visual Studio 14.0 \ Templates\ProjectTemplates \\ 。 這兩個位置的資料夾階層會合並以建立 **專案類型** 樹狀結構。
+ **專案類型** 樹狀結構中的子節點位置會遵循 >\templates\projecttemplates\csharp\helloworld\ 資料夾中的資料夾階層。 針對 (**Visual Studio 安裝的範本**) 的電腦範本，一般位置是 \Program Files\Microsoft Visual Studio 14.0 \ Common7\IDE\ProjectTemplates\，而針對 (**範本**) 的使用者範本，一般位置是 \My Documents\Visual Studio 14.0 \ Templates\ProjectTemplates \\ 。 這兩個位置的資料夾階層會合並以建立 **專案類型** 樹狀結構。
 
  針對使用 c # 開發人員設定的 Visual Studio， **專案類型** 樹狀結構看起來像這樣：
 
- ![專案類型](../../extensibility/internals/media/projecttypes.png "ProjectTypes")
+ ![使用 c # 開發人員設定 Visual Studio 中的專案類型資料夾樹狀結構的螢幕擷取畫面。](../../extensibility/internals/media/projecttypes.png)
 
  對應的 >\templates\projecttemplates\csharp\helloworld\ 資料夾看起來像這樣：
 
- ![專案範本](../../extensibility/internals/media/projecttemplates.png ">\templates\projecttemplates\csharp\helloworld\")
+ ![使用 c # 開發人員設定 Visual Studio 中 [專案範本] 資料夾樹狀結構的螢幕擷取畫面。](../../extensibility/internals/media/projecttemplates.png)
 
  當 [ **新增專案** ] 對話方塊開啟時，會 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 在 >\templates\projecttemplates\csharp\helloworld\ 資料夾中進行，並在 **專案類型** 樹狀結構中重新建立其結構，但有一些變更：
 
-- **專案類型**樹狀結構中的根節點是由應用程式範本所決定。
+- **專案類型** 樹狀結構中的根節點是由應用程式範本所決定。
 
 - 節點名稱可以當地語系化，而且可以包含特殊字元。
 
@@ -159,7 +160,7 @@ devenv /installvstemplates
 <SortOrder>5000</SortOrder>
 ```
 
- 標記中的數位愈低 \<SortOrder> ，樹狀結構中的位置愈大，因此**Windows**節點出現在 [**專案類型**] 樹狀結構中的 [**資料庫**] 節點上方。
+ 標記中的數位愈低 \<SortOrder> ，樹狀結構中的位置愈大，因此 **Windows** 節點出現在 [**專案類型**] 樹狀結構中的 [**資料庫**] 節點上方。
 
  如果未 \<SortOrder> 指定任何專案類型的標記，則會依包含規格的任何專案類型，依字母順序顯示 \<SortOrder> 。
 
@@ -208,7 +209,7 @@ devenv /installvstemplates
 
 10. 開啟 [ **新增專案** ] 對話方塊，然後展開 **Visual c #** 專案節點。
 
-    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")
+    ![[新增專案] 對話方塊中的 [專案類型] 資料夾樹狀結構的螢幕擷取畫面，其中已展開 Visual c # 專案節點下的 MyProjectNode。](../../extensibility/internals/media/myprojectnode.png)
 
     **MyProjectNode** 會顯示為 Visual c # 的子節點，就在 Windows 節點下。
 

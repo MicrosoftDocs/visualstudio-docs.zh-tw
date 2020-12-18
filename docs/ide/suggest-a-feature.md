@@ -8,28 +8,28 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a17f196f48b053f8b834b8fd25b8c0295e42b547
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114202"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668894"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>提出 Visual Studio 功能建議
 
-除了 [Visual Studio Developer Community](https://developercommunity.visualstudio.com) (Visual Studio 開發人員社群) 目前回報問題的功能之外，我們也推出了建議功能的新體驗。 這是您可以直接與 Visual Studio 的工程工作流程互動的新方式。
+除了 [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8) (Visual Studio 開發人員社群) 目前回報問題的功能之外，我們也推出了建議功能的新體驗。 這是您可以直接與 Visual Studio 的工程工作流程互動的新方式。
 
 ![開發人員社群上的 [Suggest a Feature] \(建議功能\) 按鈕](media/suggest-a-feature/suggest-feature-button.png)
 
-您也可以直接從 Visual Studio 開始建議功能，方法是從 Visual Studio 主視窗右上方附近的**提供意見反應**圖示選擇 [提供建議]****：
+您也可以直接從 Visual Studio 開始建議功能，方法是從 Visual Studio 主視窗右上方附近的 **提供意見反應** 圖示選擇 [提供建議]：
 
 ![Visual Studio 中的 [提供建議] 功能表](media/suggest-a-feature/provide-suggestion.png)
 
-選擇 [提供建議]**** 會帶您前往 [Developer Community](https://developercommunity.visualstudio.com) (開發人員社群)，您可以在此輸入您的建議。
+選擇 [提供建議] 會帶您前往 [Developer Community](https://aka.ms/feedback/suggest?space=8) (開發人員社群)，您可以在此輸入您的建議。
 
 ## <a name="user-voice"></a>使用者心聲
 
-到目前為止，Visual Studio 使用者在 User Voice 上建議了新功能構想。 藉由新增「建議功能」** 功能給開發人員社群，您對於 Visual Studio 產品小組的所有意見反應現在全都在同一個地方。
+到目前為止，Visual Studio 使用者在 User Voice 上建議了新功能構想。 藉由新增「建議功能」功能給開發人員社群，您對於 Visual Studio 產品小組的所有意見反應現在全都在同一個地方。
 
 User Voice 網站已經成為唯讀狀態。 您可以在需要時回頭查看內容，但所有的新功能建議都應該在開發人員社群上提交。
 
@@ -45,13 +45,13 @@ User Voice 網站已經成為唯讀狀態。 您可以在需要時回頭查看�
 
 ![適用於開發人員社群上建議的 [New] \(新增\) 狀態](../ide/media/SuggestStates/New.jpg)
 
-[New]**** \(新增\) 代表該建議剛由您或其他人所回報。 目前尚未對其採取任何動作。 前線人員會做一些初步檢查，以確保我們可以繼續進行。 我們會在大約五個工作天內回覆所決定的後續步驟。
+[New] \(新增\) 代表該建議剛由您或其他人所回報。 目前尚未對其採取任何動作。 前線人員會做一些初步檢查，以確保我們可以繼續進行。 我們會在大約五個工作天內回覆所決定的後續步驟。
 
 - - -
 
 ![適用於開發人員社群上建議的 [Under Review] \(檢閱中\) 狀態](../ide/media/SuggestStates/UnderReview.jpg)
 
-[Under Review]**** \(檢閱中\) 代表該功能建議已排入佇列中以決定優先順序。 我們會優先處理能為廣大的開發人員社群帶來最佳價值的功能，同時也會將產品藍圖納入考量。
+[Under Review] \(檢閱中\) 代表該功能建議已排入佇列中以決定優先順序。 我們會優先處理能為廣大的開發人員社群帶來最佳價值的功能，同時也會將產品藍圖納入考量。
 
 不過，即使我們無法立即處理您的新功能建議，我們仍會在未來大約 90 天的時間內持續監視您的想法，使社群有機會對其發表意見，再決定接下來的步驟。
 
@@ -59,25 +59,25 @@ User Voice 網站已經成為唯讀狀態。 您可以在需要時回頭查看�
 
 ![適用於開發人員社群上建議的 [On Roadmap] \(位於藍圖上\) 狀態](../ide/media/SuggestStates/OnRoadmap.jpg)
 
-[On Roadmap]**** \(位於藍圖上\) 代表您的功能建議能對廣大社群產生影響，且能協助改善產品體驗。 我們已在藍圖上為其配置時間。 我們將會向您更新它的進度。
+[On Roadmap] \(位於藍圖上\) 代表您的功能建議能對廣大社群產生影響，且能協助改善產品體驗。 我們已在藍圖上為其配置時間。 我們將會向您更新它的進度。
 
 - - -
 
 ![適用於開發人員社群上建議的 [Need More Info] \(需要更多資訊\) 狀態](../ide/media/SuggestStates/NeedMoreInfo.jpg)
 
-標記為 [Need More Info]**** \(需要更多資訊\) 的功能建議，代表我們需要更多詳細資料以深入了解您的建議。 請檢查留言，因為我們會在其中要求額外的資訊，以進一步了解您的想法。
+標記為 [Need More Info] \(需要更多資訊\) 的功能建議，代表我們需要更多詳細資料以深入了解您的建議。 請檢查留言，因為我們會在其中要求額外的資訊，以進一步了解您的想法。
 
 - - -
 
 ![適用於開發人員社群上建議的 [Closed - Other Product] \(已關閉 - 其他產品\) 狀態](../ide/media/SuggestStates/ClosedOtherProduct.jpg)
 
-[已關閉 - 其他產品]**** 代表我們目前無法處理您的功能建議，因為它並不適用於所回報的目標產品。 不過，我們將會提供您可以在哪裡針對適當的產品分享該功能建議的詳細資料。
+[已關閉 - 其他產品] 代表我們目前無法處理您的功能建議，因為它並不適用於所回報的目標產品。 不過，我們將會提供您可以在哪裡針對適當的產品分享該功能建議的詳細資料。
 
 - - -
 
 ![適用於開發人員社群上建議的 [Closed - Duplicate] \(關閉 - 重複\) 狀態](../ide/media/SuggestStates/ClosedDuplicate.jpg)
 
-[Closed - Duplicate]**** \(已關閉 - 重複\) 代表已經有人建議相同的功能。 請檢閱留言以找到已經存在之功能建議的連結。 您功能建議的投票和註解已經與原始的建議合併。 請追蹤原始的建議。
+[Closed - Duplicate] \(已關閉 - 重複\) 代表已經有人建議相同的功能。 請檢閱留言以找到已經存在之功能建議的連結。 您功能建議的投票和註解已經與原始的建議合併。 請追蹤原始的建議。
 
 - - -
 
@@ -98,13 +98,13 @@ User Voice 網站已經成為唯讀狀態。 您可以在需要時回頭查看�
 
 ![適用於開發人員社群上建議的 [Completed - Preview] \(已完成 - 預覽\) 狀態](../ide/media/SuggestStates/CompletedPreview.jpg)
 
-[Completed - Preview]**** \(已完成 - 預覽\) 表示我們已實作您所建議的功能。 您可以使用在註解中提供的連結下載包含您建議的 Visual Studio 預覽版本。
+[Completed - Preview] \(已完成 - 預覽\) 表示我們已實作您所建議的功能。 您可以使用在註解中提供的連結下載包含您建議的 Visual Studio 預覽版本。
 
 - - -
 
 ![適用於開發人員社群上建議的 [Completed - Release] \(已完成 - 發佈\) 狀態](../ide/media/SuggestStates/CompletedRelease.jpg)
 
-[Completed - Release]**** \(已完成 - 發佈\) 表示您的功能建議已經在最新的產品更新中發佈。 您可以使用在註解中提供的連結下載該 Visual Studio 更新。
+[Completed - Release] \(已完成 - 發佈\) 表示您的功能建議已經在最新的產品更新中發佈。 您可以使用在註解中提供的連結下載該 Visual Studio 更新。
 
 - - -
 

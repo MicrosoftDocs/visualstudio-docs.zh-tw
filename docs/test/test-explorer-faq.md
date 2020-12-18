@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: ef6c6bf3cedcccd156e7ae9ae02c2e5f70805521
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b69274058ea939251a772dfb30ddf7b42861542c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330169"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668582"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
 
@@ -97,13 +97,13 @@ ms.locfileid: "96330169"
 
 **在 [測試總管] 搜尋方塊中，已無「檔案路徑」篩選條件。**
 
-Visual Studio 2017 15.7 版已移除 [測試總管] 搜尋方塊中的檔案路徑篩選條件。 此功能的使用率很低，且排除這項功能可讓 [測試總管] 更快速地擷取測試方法。 如果此變更中斷您的開發流程，請在[開發人員社群](https://developercommunity.visualstudio.com/)提交意見反應來告訴我們。
+Visual Studio 2017 15.7 版已移除 [測試總管] 搜尋方塊中的檔案路徑篩選條件。 此功能的使用率很低，且排除這項功能可讓 [測試總管] 更快速地擷取測試方法。 如果此變更中斷您的開發流程，請在[開發人員社群](https://aka.ms/feedback/suggest?space=8)提交意見反應來告訴我們。
 
 ## <a name="remove-undocumented-interfaces"></a>移除未記載的介面
 
 **有些測試相關的 Api 不再存在於 Visual Studio 2019 中。有哪些變更？**
 
-在 Visual Studio 2019 中，會移除一些先前標記為公用，但從未正式記載的測試視窗 API。 它們在 Visual Studio 2017 中標示為「已淘汰」，可為延伸模組維護人員提供初期警告。 據我們所知，很少有延伸模組發現及依存於這些 API。 這些包括 `IGroupByProvider`、`IGroupByProvider<T>`、`KeyComparer`、`ISearchFilter`、`ISearchFilterToken`、`ISearchToken` 和 `SearchFilterTokenType`。 如果這項變更會影響您的延伸模組，請在 [Developer Community](https://developercommunity.visualstudio.com) (開發人員社群) 提出 Bug 讓我們知道。
+在 Visual Studio 2019 中，會移除一些先前標記為公用，但從未正式記載的測試視窗 API。 它們在 Visual Studio 2017 中標示為「已淘汰」，可為延伸模組維護人員提供初期警告。 據我們所知，很少有延伸模組發現及依存於這些 API。 這些包括 `IGroupByProvider`、`IGroupByProvider<T>`、`KeyComparer`、`ISearchFilter`、`ISearchFilterToken`、`ISearchToken` 和 `SearchFilterTokenType`。 如果這項變更會影響您的延伸模組，請在 [Developer Community](https://aka.ms/feedback/suggest?space=8) (開發人員社群) 提出 Bug 讓我們知道。
 
 ## <a name="test-adapter-nuget-reference"></a>測試配接器 NuGet 參考
 

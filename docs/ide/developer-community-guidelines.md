@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: 3e30dcb6a9d65cb562851ed90e350530759975d2
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116146"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668556"
 ---
 # <a name="developer-community-guidelines"></a>開發人員社群指導方針
 
@@ -21,13 +21,13 @@ ms.locfileid: "92116146"
 
 ## <a name="submitting-problems-and-suggestions"></a>提交問題和建議
 
-[Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)會追蹤 Visual Studio 的問題和功能建議。
+[Visual Studio 開發人員社群](https://aka.ms/feedback/suggest?space=8)會追蹤 Visual Studio 的問題和功能建議。
 
 ### <a name="before-submitting-an-issue"></a>提交問題之前
 
 請在 Visual Studio 開發人員社群上搜尋您的問題，以確定它還不存在。 如果您發現您的問題已存在，請建立相關的批註並轉換投票。
 
-如果您的問題是問題，請使用_visual studio_的標記要求[Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest)的社區。 我們有客戶支援人員監視該標籤，並可協助回答問題。
+如果您的問題是問題，請使用 _visual studio_ 的標記要求 [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest)的社區。 我們有客戶支援人員監視該標籤，並可協助回答問題。
 
 如果您找不到描述 bug 或功能的現有問題，請使用下列指導方針來提交問題。
 
@@ -36,7 +36,7 @@ ms.locfileid: "92116146"
 - 只針對每個問題提出一個問題或功能要求。
 
   - 將多個問題或功能要求合併成單一問題，讓我們更難進行診斷，並讓其他使用者更難針對您的問題進行投票。
-  - 請勿將您的問題新增為現有問題的批註，除非它是針對相同的輸入。 許多問題看起來很類似，但有不同的原因，這會讓我們難以診斷您的問題。
+  - 除非您的問題來自相同的輸入，否則不要將該問題當成現有問題的註解來新增。 許多問題看起來很類似，但有不同的原因，這會讓我們難以診斷您的問題。
 
 - 您可以提供更多的資訊，讓我們能夠更輕鬆地重現並修正您的問題。
 - 每個問題都包含下列步驟。
@@ -49,7 +49,7 @@ ms.locfileid: "92116146"
 
   - 搜尋以查看是否有重複的。 如果是的話，請將現有的問題投票，視需要提供其他批註或說明。
   - 停用所有擴充功能之後，請重新建立問題。 如果您發現問題是您已安裝的擴充功能所造成，請分別在擴充功能上提出問題。
-  - 簡化問題周圍的程式碼，以便更妥善地找出問題。
+  - 簡化靠近問題的程式碼，以便讓問題能夠浮現出來。
 
 即使有包括豐富詳細資料的問題，我們也可能無法重現問題，並可能會詢問詳細資訊！
 
@@ -117,4 +117,4 @@ ms.locfileid: "92116146"
 
 ## <a name="next-steps"></a>後續步驟
 
-請前往 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/) 來回報問題、建議功能，或流覽現有的票證。 盡情享受！
+請前往 [Visual Studio 開發人員社群](https://aka.ms/feedback/suggest?space=8) 來回報問題、建議功能，或流覽現有的票證。 盡情享受！

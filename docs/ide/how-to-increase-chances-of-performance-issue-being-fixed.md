@@ -7,12 +7,12 @@ ms.author: madsk
 manager: jillfra
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 1567e75d5e0a6f27aee68cd783b9ebd4a70815f4
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 57009326857672ea648bdf8f531f9509cf8487ff
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211184"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668440"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何提高修正效能問題的機會
 
@@ -96,7 +96,7 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\L
 > [!NOTE]
 > 這個方法所產生的每個傾印檔案大小上限為 4 GB。 請務必將 DumpFolder 設定為具有適當磁片磁碟機空間的位置，或適當地調整 DumpCount。
 
-每次 Visual Studio 損毀時，就會devenv.exe 建立傾印檔案 ** 。number]** 在設定的位置中的 dmp 檔案。
+每次 Visual Studio 損毀時，就會devenv.exe 建立傾印檔案 **。number]** 在設定的位置中的 dmp 檔案。
 
 然後，使用 Visual Studio 的「回報問題 ...」特徵。 它可讓您附加適當的傾印。
 
@@ -152,7 +152,7 @@ VS 會有一段很長的時間沒有回應。
 
     - [步驟錄製器] 應用程式隨即出現，並開始錄製。
 
-    - 在**錄製期間，請**在 Visual Studio 的第一個複本中執行有問題的動作。 如果沒有出現在錄製的時間內，我們很難更正特定效能問題。
+    - 在 **錄製期間，請** 在 Visual Studio 的第一個複本中執行有問題的動作。 如果沒有出現在錄製的時間內，我們很難更正特定效能問題。
 
     - 如果動作少於30秒，而且可以輕鬆地重複，請重複執行此動作以進一步展示問題。
 
@@ -198,5 +198,5 @@ VS 會有一段很長的時間沒有回應。
 * [Visual Studio 意見反應選項](../ide/feedback-options.md)
 * [報告 Visual Studio for Mac 的問題](/visualstudio/mac/report-a-problem)
 * [回報 C++ 的問題](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)
+* [Visual Studio 開發人員社群](https://aka.ms/feedback/suggest?space=8)
 * [開發人員社群資料隱私權](developer-community-privacy.md)

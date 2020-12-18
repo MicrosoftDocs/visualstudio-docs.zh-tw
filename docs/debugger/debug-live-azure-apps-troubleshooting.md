@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64ea7f1ea1f665f5180851e42814ad4e8c12c8c5
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84182868"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668517"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中快照集偵錯的疑難排解和已知問題
 
-如果本文中所述的步驟無法解決您的問題，請在[開發人員社群](https://developercommunity.visualstudio.com/spaces/8/index.html)中搜尋問題，**或是選擇 [** 說明  >  **傳送意見**反應回報  >  Visual Studio 中的**問題**] 來回報新的問題。
+如果本文中所述的步驟無法解決您的問題，請在 [開發人員社群](https://aka.ms/feedback/suggest?space=8)中搜尋問題，**或是選擇 [** 說明  >  **傳送意見** 反應回報  >  Visual Studio 中的 **問題**] 來回報新的問題。
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>問題：「附加快照偵錯工具」遇到 HTTP 狀態碼錯誤
 
@@ -34,10 +34,10 @@ ms.locfileid: "84182868"
 
 請執行下列步驟：
 
-* 請確定您的 Visual Studio 個人化帳戶具有您要附加之 Azure 訂用帳戶和資源的許可權。 若要判斷這一點，快速的方法就是在對話方塊中檢查資源是否可從**Debug**  >  **Attach 快照偵錯工具 ...**  > **Azure 資源**  > **選取 [現有**] 或 Cloud Explorer 中的。
+* 請確定您的 Visual Studio 個人化帳戶具有您要附加之 Azure 訂用帳戶和資源的許可權。 若要判斷這一點，快速的方法就是在對話方塊中檢查資源是否可從 **Debug**  >  **Attach 快照偵錯工具 ...**  > **Azure 資源**  > **選取 [現有**] 或 Cloud Explorer 中的。
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
-如果您已在 App Service 上啟用驗證/授權 (EasyAuth) ，您可能會在呼叫堆疊錯誤訊息中遇到 LaunchAgentAsync 的401錯誤。 請確定 **當要求未通過驗證時，所要採取的動作** 是設定為 **允許匿名要求， (在 Azure 入口網站中不) 動作 ** ，並改為在 D:\Home\sites\wwwroot 中提供下列內容的 authorization.js。 
+如果您已在 App Service 上啟用驗證/授權 (EasyAuth) ，您可能會在呼叫堆疊錯誤訊息中遇到 LaunchAgentAsync 的401錯誤。 請確定 **當要求未通過驗證時，所要採取的動作** 是設定為 **允許匿名要求， (在 Azure 入口網站中不) 動作** ，並改為在 D:\Home\sites\wwwroot 中提供下列內容的 authorization.js。 
 
 ```
 {
@@ -67,7 +67,7 @@ ms.locfileid: "84182868"
 
 請執行下列步驟：
 
-* 確認您的 Visual Studio 帳戶具有有效的 Azure 訂用帳戶，且具備必要的角色型存取控制 (RBAC) 資源的許可權。 針對 AppService，請檢查您是否有許可權可 [查詢](/rest/api/appservice/appserviceplans/get) 裝載您應用程式的 App Service 方案。
+* 確認您的 Visual Studio 帳戶具有有效的 Azure 訂用帳戶，且具有必要的 Role-Based 存取控制 (RBAC) 資源的許可權。 針對 AppService，請檢查您是否有許可權可 [查詢](/rest/api/appservice/appserviceplans/get) 裝載您應用程式的 App Service 方案。
 * 確認用戶端電腦的時間戳記是否正確且為最新狀態。 時間戳記超過15分鐘要求時間戳記的伺服器通常會產生此錯誤。
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
@@ -131,7 +131,7 @@ ms.locfileid: "84182868"
 
 請執行下列步驟：
 
-1. 請確定您擁有用來建立和部署應用程式的相同版本原始程式碼。 請確定您正在載入適用於部署的正確符號。 若要這樣做，請在進行快照集偵錯時檢視 [模組]**** 視窗，並確認 [符號檔案] 資料行顯示針對正在偵錯的組載入的 .pdb 檔案。 快照偵錯工具將嘗試自動為部署下載及使用符號。
+1. 請確定您擁有用來建立和部署應用程式的相同版本原始程式碼。 請確定您正在載入適用於部署的正確符號。 若要這樣做，請在進行快照集偵錯時檢視 [模組] 視窗，並確認 [符號檔案] 資料行顯示針對正在偵錯的組載入的 .pdb 檔案。 快照偵錯工具將嘗試自動為部署下載及使用符號。
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題：開啟快照集時沒有載入符號
 
@@ -141,7 +141,7 @@ ms.locfileid: "84182868"
 
 請執行下列步驟：
 
-- 按一下此頁面上的 [變更符號設定...]**** 連結。 在 [偵錯] > [符號]**** 設定中，新增一個符號快取目錄。 在設定符號路徑之後，重新啟動快照集偵錯。
+- 按一下此頁面上的 [變更符號設定...] 連結。 在 [偵錯] > [符號] 設定中，新增一個符號快取目錄。 在設定符號路徑之後，重新啟動快照集偵錯。
 
    專案中可用的符號或 .pdb 檔案都必須與您的 App Service 部署相符。 大部分的部署 (透過 Visual Studio、搭配 Azure Pipelines 或 Kudu 的 CI/CD 進行的部署) 將會和 App Service 一起發行您的符號檔案。 設定符號快取目錄讓 Visual Studio 能夠使用這些符號。
 
@@ -153,7 +153,7 @@ ms.locfileid: "84182868"
 
 請執行下列步驟：
 
-- 請確定已安裝的快照偵錯工具元件。 開啟 Visual Studio 安裝程式，並勾選 Azure 工作負載中的 [快照偵錯工具]**** 元件。
+- 請確定已安裝的快照偵錯工具元件。 開啟 Visual Studio 安裝程式，並勾選 Azure 工作負載中的 [快照偵錯工具] 元件。
 ::: moniker range="< vs-2019"
 - 確定您的應用程式受到支援。 目前僅支援部署至 Azure App Service 的 ASP.NET (4.6.1+) 和 ASP.NET Core (2.0 +) 應用程式。
 ::: moniker-end
@@ -197,7 +197,7 @@ Visual Studio 2019 需要您 Azure App Service 上的較新版本快照偵錯工
 
 ### <a name="enable-agent-logs"></a>啟用代理程式記錄
 
-若要啟用和停用代理程式記錄，請開啟的 Visual Studio，瀏覽至 [工具] > [選項] > [快照集偵錯工具] > [啟用代理程式記錄]**。 請注意，如果也已經啟用*在工作階段開始時刪除舊的代理程式記錄*，每個成功的 Visual Studio 附加都將會刪除先前的代理程式記錄。
+若要啟用和停用代理程式記錄，請開啟的 Visual Studio，瀏覽至 [工具] > [選項] > [快照集偵錯工具] > [啟用代理程式記錄]。 請注意，如果也已經啟用 *在工作階段開始時刪除舊的代理程式記錄*，每個成功的 Visual Studio 附加都將會刪除先前的代理程式記錄。
 
 您可以在下列位置找到代理程式記錄：
 
@@ -217,8 +217,8 @@ Visual Studio 2019 需要您 Azure App Service 上的較新版本快照偵錯工
   - 錯誤記錄會自動傳送至 D:\Home\LogFiles\eventlog.xml，事件會標示為「 `<Provider Name="Instrumentation Engine" />` 生產中斷點」或「生產中斷點」
 - VM/VMSS：
   - 登入您的 VM 並開啟事件檢視器。
-  - 開啟下列檢視：[Windows 記錄] > [應用程式]**。
-  - 使用*生產中斷點*或*檢測引擎*，依據*事件來源**篩選目前的記錄*。
+  - 開啟下列檢視：[Windows 記錄] > [應用程式]。
+  - 使用 *生產中斷點* 或 *檢測引擎*，依據 *事件來源**篩選目前的記錄*。
 - AKS
   - 檢測引擎記錄位於 /tmp/diag/log.txt (在DockerFile 中設定 MicrosoftInstrumentationEngine_FileLogPath)
   - ProductionBreakpoint logging at /tmp/diag/shLog.txt
@@ -238,7 +238,7 @@ Visual Studio 2019 需要您 Azure App Service 上的較新版本快照偵錯工
 - 在您的 App Service 內建立[部署位置](/azure/app-service/web-sites-staged-publishing)，並將網站部署至位置。
 - 從 Visual Studio 的 [Cloud Explorer] 或從 Azure 入口網站交換位置與生產環境。
 - 停止位置網站。 這需要幾秒鐘來關閉所有執行個體中的網站 w3wp.exe 處理序。
-- 從 Kudu 網站或 Azure 入口網站升級位置網站延伸模組 ([App Service 刀鋒視窗] > [開發工具] > [擴充功能] > [更新]**)。
+- 從 Kudu 網站或 Azure 入口網站升級位置網站延伸模組 ([App Service 刀鋒視窗] > [開發工具] > [擴充功能] > [更新])。
 - 啟動位置網站。 我們建議您造訪網站以再次使用它。
 - 交換位置與生產環境。
 

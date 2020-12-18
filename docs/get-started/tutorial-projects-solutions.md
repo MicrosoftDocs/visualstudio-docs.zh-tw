@@ -12,14 +12,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48fb0f1c22b2f7055005640baff2239a0ad4a32a
-ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
+ms.openlocfilehash: 8cdc30b34c85a799827519af3cd2bba2c9f1735a
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97646407"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668803"
 ---
-# <a name="learn-about-projects-and-solutions"></a>了解專案與解決方案
+# <a name="introduction-to-projects-and-solutions"></a>專案和解決方案簡介
 
 在這篇簡介文章中，我們將探討在 Visual Studio 中建立「解決方案」和「專案」的意義。 解決方案是用來組織一或多個相關程式碼專案的容器，例如類別庫專案和對應的測試專案。 我們會查看專案的屬性以及它可包含的一些檔案。 我們也會建立兩個專案之間的參考。
 
@@ -52,11 +52,11 @@ ms.locfileid: "97646407"
 
 1. 開啟 Visual Studio。
 
-1. 在頂端功能表列上，選擇 [檔案]**[新增]** > **[專案]** > 。
+1. 在頂端功能表列上 **，選取 [** 檔案 > **新增** > **專案**]。
 
    此時會開啟 [新增專案] 對話方塊。
 
-1. 在左窗格中，展開 [其他專案類型]，然後選擇 [Visual Studio 解決方案]。 在中央窗格中，選擇 [空白方案] 範本。 將方案命名為 **QuickSolution**，然後選擇 [確定] 按鈕。
+1. 在左窗格中，展開 [ **其他專案類型**]，然後選取 [ **Visual Studio 方案**]。 在中間窗格中，選取 [ **空白方案** ] 範本。 為您的方案 **QuickSolution** 命名，然後選取 [ **確定]** 按鈕。
 
    ![Visual Studio 2017 中的空白解決方案範本](media/tutorial-projects-new-solution.png "Visual Studio 2017 中的空白方案範本。")
 
@@ -68,16 +68,16 @@ ms.locfileid: "97646407"
 
 1. 開啟 Visual Studio。
 
-2. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
+2. 在 [開始] 視窗中，選取 [ **建立新專案**]。
 
-3. 在 [建立新專案] 頁面上，於搜尋方塊中輸入 **空白的解決方案**、選取 [空白的解決方案] 範本，然後選擇 [下一步]。
+3. 在 [ **建立新專案** ] 頁面的 [搜尋] 方塊中，輸入 **空白的方案** ，並選取 [ **空白方案** ] 範本，然後選取 **[下一步]**。
 
    ![Visual Studio 2019 中的空白方案範本](media/vs-2019/tutorial-projects-blank-solution-template.png "Visual Studio 2019 中的空白方案範本。")
 
     > [!TIP]
     > 如果您已安裝數個工作負載，則 **空白的解決方案** 範本可能不會出現在搜尋結果清單的頂端。 嘗試根據清單的搜尋區段來滾動至 **其他結果** 。 它應該會出現在該處。
 
-4. 將解決方案命名為 **QuickSolution**，然後選擇 [建立]。
+4. 將方案命名為 **QuickSolution**，然後選取 [ **建立**]。
 
    解決方案隨即會出現在 Visual Studio 視窗右側的 [方案總管] 中。 您可能會經常使用方案總管來瀏覽專案的內容。
 
@@ -89,16 +89,16 @@ ms.locfileid: "97646407"
 
 ::: moniker range="vs-2017"
 
-1. 在 [方案總管] 中，從 [方案 'QuickSolution'] 的右鍵功能表或操作功能表中，選擇 [新增]**[新增專案]** > 。
+1. 在 **方案總管** 的 **方案 ' QuickSolution '** 的滑鼠右鍵功能表或內容功能表中，選取 [**加入** > **新專案**]。
 
    [ **加入新的專案** ] 對話方塊隨即開啟。
 
-1. 在左窗格中，展開 [Visual C#]，然後選擇 [Windows 桌面]。 然後，在中間窗格中，選擇 [空白專案 (.NET Framework)] 範本。 將專案命名為 **QuickDate**，然後選擇 [確定]。
+1. 在左窗格中，展開 [ **Visual c #** ]，然後選取 [ **Windows 桌面**]。 然後，在中間窗格中，選取 **空的專案 ( .NET Framework)** 範本。 將專案命名為 **QuickDate**，然後選取 **[確定]**。
 
    名為 QuickDate 的專案會出現在 **方案總管** 的方案下方。 它目前包含稱為 *App.config* 的單一檔案。
 
    > [!NOTE]
-   > 如果您在對話方塊的左窗格中看不到 **Visual c #** ，則必須安裝 **.net 桌面開發** Visual Studio 工作負載。 Visual Studio 使用以工作負載為基礎的安裝，只安裝您所需的開發類型所需的元件。 安裝新工作負載的簡單方式是選擇 [新增專案] 對話方塊左下角的 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio Installer 啟動之後，選擇 [.NET 桌面開發] 工作負載，然後選取 [修改] 按鈕。
+   > 如果您在對話方塊的左窗格中看不到 **Visual c #** ，則必須安裝 **.net 桌面開發** Visual Studio 工作負載。 Visual Studio 使用以工作負載為基礎的安裝，只安裝您所需的開發類型所需的元件。 安裝新工作負載的簡單方式，就是在 [**加入新專案**] 對話方塊的左下角選取 **開啟的 Visual Studio 安裝程式** 連結。 Visual Studio 安裝程式啟動之後，請選取 **.net 桌面開發** 工作負載，然後選取 [ **修改** ] 按鈕。
    >
    > ![開啟 Visual Studio 安裝程式連結](media/tutorial-projects-open-installer.png "Visual Studio 2017 中 [加入新的專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結。")
 
@@ -106,22 +106,22 @@ ms.locfileid: "97646407"
 
 ::: moniker range=">=vs-2019"
 
-1. 在 [方案總管] 中，從 [方案 'QuickSolution'] 的右鍵功能表或操作功能表中，選擇 [新增]**[新增專案]** > 。
+1. 在 **方案總管** 的 **方案 ' QuickSolution '** 的滑鼠右鍵功能表或內容功能表中，選取 [**加入** > **新專案**]。
 
    隨即開啟一個對話方塊，表示要 [新增專案]。
 
 1. 在頂端的搜尋方塊中輸入文字 **空白**，然後在 [語言] 底下選取 [C#]。
 
-1. 選取 [空白專案 (.NET Framework)] 範本，然後選擇 [下一步]。
+1. 選取 **( .NET Framework) 範本的空白專案** ，然後選取 **[下一步]**。
 
-1. 將專案命名為 **QuickDate**，然後選擇 [建立]。
+1. 將專案命名為 **QuickDate**，然後選取 [ **建立**]。
 
    名為 QuickDate 的專案會出現在 **方案總管** 的方案下方。 它目前包含稱為 *App.config* 的單一檔案。
 
    > [!NOTE]
    > 如果您沒有看到 **空白專案 ( .NET Framework)** 範本，則必須安裝 **.net 桌面開發** Visual Studio 工作負載。 Visual Studio 使用以工作負載為基礎的安裝，只安裝您所需的開發類型所需的元件。
    >
-   >建立新專案時安裝新工作負載的簡單方式，就是在顯示 [找不到您要尋找的項目嗎？] 文字底下，選擇 [安裝更多工具與功能] 連結。 Visual Studio Installer 啟動之後，選擇 [.NET 桌面開發] 工作負載，然後選取 [修改] 按鈕。
+   >當您建立新專案時，安裝新工作負載的簡單方式，就是在顯示 **未找到您要尋找** 之專案的文字下，選取 [**安裝更多工具和功能**] 連結。 Visual Studio 安裝程式啟動之後，請選取 **.net 桌面開發** 工作負載，然後選取 [ **修改** ] 按鈕。
    >
    > ![開啟 Visual Studio 安裝程式連結](media/vs-2019/tutorial-projects-open-installer.png "在 Visual Studio 的 [建立新專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結。")
 
@@ -131,11 +131,11 @@ ms.locfileid: "97646407"
 
 我們有空白專案。 請新增程式碼檔案。
 
-1. 在 [方案總管] 中，從 [QuickDate] 的右鍵功能表或操作功能表中，選擇 [新增] > [新增項目]。
+1. 在 **方案總管** 中，從 **QuickDate** 專案的滑鼠右鍵功能表或操作功能表中，選取 [**加入**  >  **新專案**]。
 
    [ **加入新專案** ] 對話方塊隨即開啟。
 
-1. 展開 [Visual C# 項目]，然後選擇 [程式碼]。 在中間窗格中，選擇 [ **類別** 專案] 範本。 將類別命名為行事 **曆**，然後選擇 [ **加入** ] 按鈕。
+1. 展開 [ **Visual c # 專案**]，然後選取 [程式 **代碼**]。 在中間窗格中，選取 [ **類別** 專案] 範本。 將類別命名為行事 **曆**，然後選取 [ **加入** ] 按鈕。
 
    名為 *Calendar.cs* 的檔案會加入至專案。 一端的 *.cs* 是提供給 C# 程式碼檔案的副檔名。 此檔案會出現在方案總管的視覺效果專案階層中，並在編輯器中開啟其內容。
 
@@ -171,11 +171,11 @@ ms.locfileid: "97646407"
 
 請將單元測試專案新增至解決方案。 現在我們先從專案範本開始，因此不需要將額外程式碼檔案新增至專案。
 
-1. 在 [方案總管] 中，從 [方案 'QuickSolution'] 的右鍵功能表或操作功能表中，選擇 [新增] > [新增專案]。
+1. 在 **方案總管** 的 **方案 ' QuickSolution '** 的滑鼠右鍵功能表或內容功能表中，選取 [**加入**  >  **新專案**]。
 
 ::: moniker range="vs-2017"
 
-2. 在左窗格中，展開 [Visual C#]，然後選擇 [測試] 類別。 在中間窗格中，選擇 [MSTest 測試專案 (.NET Core)] 專案範本。 將專案命名為 **QuickTest**，然後選擇 [確定]。
+2. 在左窗格中，展開 [ **Visual c #** ]，然後選取 [ **測試** ] 類別。 在中間窗格中，選取 [ **( .Net Core) 專案範本的 MSTest 測試專案** ]。 將專案命名為 **QuickTest**，然後選取 **[確定]**。
 
    第二個專案會新增至 [方案總管]，並在編輯器中開啟名為 *UnitTest1.cs* 的檔案。
 
@@ -187,9 +187,9 @@ ms.locfileid: "97646407"
 
 2. 在 [新增專案] 對話方塊的頂端搜尋方塊中輸入文字 **單元測試**，然後在 [語言] 底下選取 [C#]。
 
-3. 選擇 [MSTest 測試專案 (.NET Core)] 專案範本，然後選擇 [下一步]。
+3. 選取 [ **MSTest 測試專案] ( .Net Core)** 專案範本，然後選取 **[下一步]**。
 
-4. 將專案命名為 **QuickTest**，然後選擇 [建立]。
+4. 將專案命名為 **QuickTest**，然後選取 [ **建立**]。
 
    第二個專案會新增至 [方案總管]，並在編輯器中開啟名為 *UnitTest1.cs* 的檔案。
 
@@ -203,30 +203,30 @@ ms.locfileid: "97646407"
 
 ::: moniker range="vs-2017"
 
-1. 選擇 **QuickTest** 專案中的 [相依性] 節點，然後從右鍵功能表或操作功能表中選擇 [新增參考]。
+1. 選取 **QuickTest** 專案中的 [相依性] 節點，然後從滑鼠右鍵功能表或操作功能表中，選取 [**加入參考** **]** 。
 
    [參考管理員] 對話方塊隨即開啟。
 
-1. 在左窗格中，展開 [專案]，然後選擇 [解決方案]。 在中間窗格中，選擇 [ **QuickDate**] 旁的核取方塊，然後選擇 **[確定]**。
+1. 在左窗格中，展開 [ **專案** ]，然後選取 [ **方案**]。 在中間窗格中，選取 [ **QuickDate**] 旁邊的核取方塊，然後選取 **[確定]**。
 
    隨即新增 **QuickDate** 專案的參考。
 
-   ![顯示專案參考的 Visual Studio 2019 [方案總管]](media/vs-2019/tutorial-projects-solution-explorer-reference.png "方案總管顯示 Visual Studio 中的專案參考。")
+   ![方案總管的螢幕擷取畫面，其中顯示 Visual Studio 中的專案參考](media/vs-2019/tutorial-projects-solution-explorer-reference.png "方案總管的螢幕擷取畫面，其中顯示 Visual Studio 中的專案參考。")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. 選擇 **QuickTest** 專案中的 [相依性] 節點，然後從滑鼠右鍵功能表或操作功能表中，選擇 [**加入專案參考**... **]** 。
+1. 選取 **QuickTest** 專案中的 [相依性] 節點，然後從滑鼠右鍵按一下或操作功能表中，選取 [**加入專案參考**... **]** 。
 
    [參考管理員] 對話方塊隨即開啟。
 
-1. 在左窗格中，展開 [專案]，然後選擇 [解決方案]。 在中間窗格中，選擇 [ **QuickDate**] 旁的核取方塊，然後選擇 **[確定]**。
+1. 展開左窗格中的 [ **專案**]，然後選取 [ **方案**]。 在中間窗格中，選取 [ **QuickDate**] 旁邊的核取方塊，然後選取 **[確定]**。
 
    隨即新增 **QuickDate** 專案的參考。
 
-   ![顯示專案參考的 Visual Studio 2019 [方案總管]](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
-   
+   ![顯示 Visual Studio 2019 中專案參考方案總管的螢幕擷取畫面](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+
 ::: moniker-end
 
 ## <a name="add-test-code"></a>新增測試程式碼
@@ -279,7 +279,7 @@ ms.locfileid: "97646407"
 
 ## <a name="next-steps"></a>後續步驟
 
-如果您想要檢查單元測試是否正常運作，請從功能表列選擇 [**測試**  >  **執行**  >  **所有測試**]。 稱為 [測試總管] 的視窗隨即開啟，而且您應該會看到 **TestGetCurrentDate** 測試通過。
+如果您想要檢查單元測試是否正常運作，請選取  >    >  功能表列上的 [測試執行 **所有測試**]。 稱為 [測試總管] 的視窗隨即開啟，而且您應該會看到 **TestGetCurrentDate** 測試通過。
 
 ![Visual Studio 的 [測試總管] 顯示已通過測試](media/tutorial-projects-test-explorer.png "Visual Studio 中的 test Explorer 顯示通過的測試。")
 
@@ -299,7 +299,7 @@ ms.locfileid: "97646407"
 
 ## <a name="see-also"></a>另請參閱
 
-- [建立專案和解決方案](../ide/creating-solutions-and-projects.md)
+- [使用專案和方案](../ide/creating-solutions-and-projects.md)
 - [管理專案和解決方案屬性](../ide/managing-project-and-solution-properties.md)
 - [管理專案中的參考](../ide/managing-references-in-a-project.md)
 - [在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

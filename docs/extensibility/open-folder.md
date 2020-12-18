@@ -8,12 +8,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: d213a7add358c46f7088f504d8c54352cda44a1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 964b360806f6f834aa57c475d2117c124f2cf8af
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905969"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668634"
 ---
 # <a name="open-folder-extensibility"></a>開啟資料夾擴充性
 
@@ -51,7 +51,7 @@ ms.locfileid: "85905969"
 
 ## <a name="feedback-comments-issues"></a>意見反應、留言、問題
 
-開啟資料夾與 `Microsoft.VisualStudio.Workspace.*` api 正在進行開發。 如果您看到非預期的行為，請查看您感興趣之發行的已知問題。 [開發人員社群](https://developercommunity.visualstudio.com) 是投票和建立任何問題的建議位置。 針對每個意見反應，我們強烈建議您解決問題的詳細描述。 包含您要開發的 Visual Studio 版本、您所使用的 Api (您所執行的工作，以及您與) 、預期的結果和實際結果之間的互動。 可能的話，請包含 devenv.exe 進程的傾印。 使用 GitHub 的問題追蹤，以提供有關此和相關檔的意見反應。
+開啟資料夾與 `Microsoft.VisualStudio.Workspace.*` api 正在進行開發。 如果您看到非預期的行為，請查看您感興趣之發行的已知問題。 [開發人員社群](https://aka.ms/feedback/suggest?space=8) 是投票和建立任何問題的建議位置。 針對每個意見反應，我們強烈建議您解決問題的詳細描述。 包含您要開發的 Visual Studio 版本、您所使用的 Api (您所執行的工作，以及您與) 、預期的結果和實際結果之間的互動。 可能的話，請包含 devenv.exe 進程的傾印。 使用 GitHub 的問題追蹤，以提供有關此和相關檔的意見反應。
 
 ## <a name="next-steps"></a>後續步驟
 

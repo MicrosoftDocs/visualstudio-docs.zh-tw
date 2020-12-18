@@ -9,12 +9,12 @@ metadata:
   ms.author: dominicn
   ms.date: 09/18/2019
   ms.topic: hub-page
-  ms.openlocfilehash: 3e04aa6b83fed4ae331ff101011dd88646d6a40d
-  ms.sourcegitcommit: 62f91179f2c3a51c85dd7b0e6172a3a53393fb7e
-  ms.translationtype: HT
+  ms.openlocfilehash: cfd6fff8d0d1b8346494ad54cf9e767b802a84f4
+  ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+  ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 11/12/2020
-  ms.locfileid: "94567155"
+  ms.lasthandoff: 12/18/2020
+  ms.locfileid: "97668504"
 highlightedContent:
   items:
   - title: 安裝 Visual Studio for Mac
@@ -158,4 +158,4 @@ additionalContent:
     - title: 版本控制
       summary: 使用 Git 和 Subversion 等版本控制技術來共用程式碼。
       url: ~/version-control.md
-  footer: '[部落格](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/visualstudiomac) - [問題回報](~/report-a-problem.md) - [開發人員社群](https://developercommunity.visualstudio.com/content/problem/post.html?space=41)'
+  footer: '[部落格](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/visualstudiomac) - [問題回報](~/report-a-problem.md) - [開發人員社群](https://aka.ms/feedback/vsm-home)'

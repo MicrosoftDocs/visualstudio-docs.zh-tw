@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 639b68c4d999a5e491f6e52a2cf3a7960563ed17
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: d72ee803389c692233478d742dadbcf514a3a036
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329428"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668062"
 ---
 # <a name="warnings-and-errors"></a>警告和錯誤
 
@@ -346,4 +346,4 @@ IntelliTest 不知道未經檢測的中繼方法做了什麼，因此它可能�
 
 ## <a name="got-feedback"></a>有人給您意見嗎？
 
-在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。
+在[開發人員社群](https://aka.ms/feedback/suggest?space=8)上張貼您的意見與功能建議。

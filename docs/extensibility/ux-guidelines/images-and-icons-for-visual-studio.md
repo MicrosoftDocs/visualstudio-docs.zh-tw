@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 的影像和圖示 |Microsoft Docs
+description: 瞭解用來建立 Visual Studio 影像和圖示的設計概念。
 ms.date: 04/26/2017
 ms.topic: overview
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f29fd0a69ceafa33c00593b67f6775a723780c26
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906118"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668647"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>適用於 Visual Studio 的影像和圖示
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio 中使用的影像
@@ -177,7 +178,7 @@ ms.locfileid: "85906118"
 
  ![樹狀檢視消除項圖示的範例](../../extensibility/ux-guidelines/media/0404-40_treeviewicons.png "0404-40_TreeViewIcons")<br />樹狀檢視消除項圖示的範例
 
- 以**狀態為基礎的值分類法**圖示存在於下列狀態：作用中、已停用、已停用且停用狀態。
+ 以 **狀態為基礎的值分類法** 圖示存在於下列狀態：作用中、已停用、已停用且停用狀態。
 
  ![以狀態為基礎的值分類圖示範例](../../extensibility/ux-guidelines/media/0404-41_statebasedtaxonomy.png "0404-41_StateBasedTaxonomy")<br />以狀態為基礎的值分類圖示範例
 
@@ -258,7 +259,7 @@ ms.locfileid: "85906118"
 ### <a name="base-palette"></a>基底調色板
  所有標準圖示都包含三種基本色彩。 圖示不包含任何漸層或陰影，而3D 工具圖示有一或兩個例外狀況。
 
-|使用方式|Name|值 (淺色主題) |樣本|範例|
+|使用方式|名稱|值 (淺色主題) |樣本|範例|
 |-----------|----------|---------------------------|------------|-------------|
 |背景/深色|VS BG|424242/66、66、66|![樣本 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![基礎調色盤範例](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |前景/淺色|VS FG|F0EFF1/240239241|![樣本 F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -271,7 +272,7 @@ ms.locfileid: "85906118"
 #### <a name="action-modifiers"></a>動作修飾詞
  以下四種色彩指出動作修飾詞所需的動作類型：
 
-|使用方式|Name|所有主題的值 () |樣本|
+|使用方式|名稱|所有主題的值 () |樣本|
 |-----------|----------|--------------------------|------------|
 |正|VS Action 綠|388A34/56138、52|![樣本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |負|VS Action 紅色|A1260D/161、38、13|![樣本 A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -293,7 +294,7 @@ ms.locfileid: "85906118"
 
  藍色會套用至最常以箭號表示的中性動作修飾詞，例如「開啟」、「下一步」、「上一步」、「匯入」和「匯出」。
 
-|移至欄位|批次簽入|位址編輯器|關聯編輯器|
+|移至欄位|批次處理 Check-In|位址編輯器|關聯編輯器|
 |-|-|-|-|
 |![移至欄位圖示](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405-11_GoToField")|![批次處理檢查&#45;in 圖示](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405-12_BatchedCheckIn")|![地址編輯器圖示](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405-13_AddressEditor")|![關聯編輯器圖示](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405-14_AssociationEditor")|
 
@@ -306,22 +307,22 @@ ms.locfileid: "85906118"
 #### <a name="special-cases"></a>特殊案例
  在特殊情況下，彩色的動作修飾詞可以獨立的圖示單獨使用。 用於圖示的色彩會反映與圖示相關聯的動作。 這項用途僅限於一小部分的圖示，包括：
 
-|執行|Stop|刪除|儲存|往回導覽|
+|執行|停止|刪除|儲存|往回導覽|
 |-|-|-|-|-|
-|![執行圖示](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![停止圖示](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![刪除圖示](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![[儲存] 圖示](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![向後巡覽圖示](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
+|![執行圖示](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![停止圖示-純紅色方形。](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![刪除圖示](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![[儲存] 圖示](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![向後巡覽圖示](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
 
 ### <a name="code-hierarchy-palette"></a>程式碼階層選項區
 
 #### <a name="folder"></a>資料夾
 
-|使用方式|Name|所有主題的值 () |樣本|範例|
+|使用方式|名稱|所有主題的值 () |樣本|範例|
 |-----------|----------|--------------------------|------------|-------------|
 |資料夾|資料夾|DCB67A/220182122|![樣本 DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![資料夾色彩圖示](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio 語言
  Visual Studio 中提供的每個通用語言或平臺都有相關聯的色彩。 這些色彩會用在基底圖示上，或是出現在複合圖示右上角的語言修飾詞上。
 
-|使用方式|Name|所有主題的值 () |樣本|
+|使用方式|名稱|所有主題的值 () |樣本|
 |-----------|----------|--------------------------|------------|
 |ASP、HTML、WPF|ASP HTML WPF Blue|0095D7/0149215|![樣本 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|.CPP 紫色|9B4F96/155、79150|![樣本 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -346,7 +347,7 @@ ms.locfileid: "85906118"
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense 圖示使用專屬色調色板。 這些色彩可用來協助使用者快速分辨 IntelliSense 快顯視窗清單中不同的專案。
 
-|使用方式|Name|所有主題的值 () |樣本|
+|使用方式|名稱|所有主題的值 () |樣本|
 |-----------|----------|--------------------------|------------|
 |類別、事件|VS Action 橙色|C27D1A/194125、26|![樣本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |擴充方法、方法、模組、委派|VS 動作紫色|652D90/101、45144|![樣本 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -360,14 +361,14 @@ ms.locfileid: "85906118"
 |-|-|-|-|-|
 |![IntelliSense 類別圖示](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405-36_IntelliSenseClass")|![IntelliSense 私用事件圖示](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")|![IntelliSense 委派圖示](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405-38_IntelliSenseDelegate")|![IntelliSense 方法 Friend 圖示](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")|![欄位圖示](../../extensibility/ux-guidelines/media/0405-40_field.png "0405-40_Field")|
 
-|受保護的列舉專案|Object|[範本]|例外狀況快速鍵|
+|受保護的列舉專案|Object|範本|例外狀況快速鍵|
 |-|-|-|-|
 |![IntelliSense 受保護的列舉項目圖示](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405-41_IntelliSenseProtectedEnumItem")|![IntelliSense 物件圖示](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405-42_IntelliSenseObject")|![IntelliSense 範本圖示](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405-43_IntelliSenseTemplate")|![IntelliSense 例外狀況捷徑圖示](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405-44_IntelliSenseExceptionShortcut")|
 
 ### <a name="notifications"></a>通知
  Visual Studio 中的通知是用來表示狀態。 通知選擇區使用下列四種色彩，以及黑色或白色前景填滿選項，來定義具有下列狀態層級的通知。
 
-|使用方式|Name|所有主題的值 () |樣本|
+|使用方式|名稱|所有主題的值 () |樣本|
 |-----------|----------|--------------------------|------------|
 |狀態：中性|通知 Blue (與 Blue) |1BA1E2/27161226|![樣本 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |狀態：正面|通知綠色 (與綠色) |339933/51153、51|![樣本 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
@@ -378,6 +379,6 @@ ms.locfileid: "85906118"
 
 #### <a name="examples-of-notification-icons"></a>通知圖示的範例
 
-|警示|警告|完成|Stop|
+|警示|警告|完成|停止|
 |-|-|-|-|
-|![警示圖示](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")|![警告圖示](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")|![完成圖示](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")|![停止圖示](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")|
+|![警示圖示](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")|![警告圖示](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")|![完成圖示](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")|![使用中間的白色方形來停止圖示-純紅色圓圈。](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")|

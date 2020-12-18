@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 790146e3014765224f22bd247732c7ac3f062269
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: a2ccb54995107bbd22e961f14ff3755b4a6f543a
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329441"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668075"
 ---
 # <a name="test-generation"></a>測試產生
 
@@ -237,11 +237,11 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>進一步閱讀
+## <a name="further-reading"></a>進階閱讀
 
 * [程式碼繫結測試](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [一項掌控全場的測試](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 
 ## <a name="got-feedback"></a>有人給您意見嗎？
 
-在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。
+在[開發人員社群](https://aka.ms/feedback/suggest?space=8)上張貼您的意見與功能建議。

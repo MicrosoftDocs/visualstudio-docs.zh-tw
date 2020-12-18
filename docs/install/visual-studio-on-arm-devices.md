@@ -10,12 +10,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6aacd4639e440998a5123dae8c38a64c84ebb948
-ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
+ms.openlocfilehash: 367b3681d2ff8a828ee45f59359043b5fede3d26
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90026286"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668101"
 ---
 # <a name="visual-studio-on-arm-powered-devices"></a>ARM 驅動裝置上的 Visual Studio
 
@@ -42,4 +42,4 @@ Visual Studio 是根據 x86 架構的目標處理器來建立的，而且 ARM �
 並非所有 Visual Studio 專案都會設定為在您從 ARM 裝置啟動 (**F5**) 的偵錯工具時，在本機啟動專案。 即使您的應用程式是在本機執行，您可能還是需要設定遠端偵錯程式的 Visual Studio。 如需詳細資訊，請參閱 [遠端偵錯](../debugger/remote-debugging.md)程式。
 
 ## <a name="we-need-your-help"></a>我們需要您的協助！
-如果您想要 Visual Studio 在 ARM 裝置上以原生方式執行，我們很樂意知道所需的案例和支援。 您可以藉由在 [開發人員群體](https://developercommunity.visualstudio.com/idea/1161018/native-arm-support-for-visual-studio.html)上張貼來聯繫我們。 
+如果您想要 Visual Studio 在 ARM 裝置上以原生方式執行，我們很樂意知道所需的案例和支援。 您可以藉由在 [開發人員群體](https://developercommunity.visualstudio.com/idea/1161018/native-arm-support-for-visual-studio.html)上張貼來聯繫我們。

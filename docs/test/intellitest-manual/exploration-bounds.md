@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 713ccf139e4110923f45073308da2c249305eb18
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 075eaa4613a1afe6bdeb83a9e46e639b073a200a
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328895"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667919"
 ---
 # <a name="exploration-bounds"></a>探索界限
 
@@ -188,4 +188,4 @@ IntelliTest 在探索期間將考慮使用的唯一路徑數目上限。
 
 ## <a name="got-feedback"></a>有人給您意見嗎？
 
-在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。
+在[開發人員社群](https://aka.ms/feedback/suggest?space=8)上張貼您的意見與功能建議。

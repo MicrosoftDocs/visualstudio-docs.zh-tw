@@ -1,5 +1,6 @@
 ---
 title: 新專案產生：在幕後，第二部分 |Microsoft Docs
+description: 您可以在建立自己的專案類型時，查看 Visual Studio 整合式開發環境 (IDE) 的詳細資訊， (第2部) 。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8692f2012e5f2733982f04e35a7fed415e49c636
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e45c9643a1fd2e6dcf9d5520fbb2982736b5109
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707014"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668842"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新專案產生：一探究竟，第二部份
 
@@ -68,7 +69,7 @@ namespace Simple
  基本 .vstemplate 檔案具有此格式
 
 ```xml
-<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
+<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
     <TemplateData>
     </TemplateData>
     <TemplateContent>
@@ -90,13 +91,13 @@ namespace Simple
     <ProjectItem TargetFileName="Properties\Resources.resx">
       Resources.resx
     </ProjectItem>
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">
       Resources.Designer.cs
     </ProjectItem>
     <ProjectItem TargetFileName="Properties\Settings.settings">
       Settings.settings
     </ProjectItem>
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">
       Settings.Designer.cs
     </ProjectItem>
     <ProjectItem ReplaceParameters="true" OpenInEditor="true">
@@ -118,7 +119,7 @@ namespace Simple
 
  產生的 Windows 應用程式資料夾結構如下所示：
 
- ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")
+ ![Visual Studio 方案總管中 [簡單] 解決方案的 Windows 應用程式資料夾結構的螢幕擷取畫面。](../../extensibility/internals/media/simplesolution.png)
 
  範本中的第一個和唯一一個 \<Project> 標記會讀取：
 
@@ -157,4 +158,4 @@ namespace Simple
 ## <a name="see-also"></a>另請參閱
 
 - [新專案產生：一探究竟，第一部份](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
-- [Msbuild](../../msbuild/msbuild.md)
+- [MSBuild](../../msbuild/msbuild.md)

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 11caf55a8412477ac94d290add667b9393435fb6
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807881"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668738"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 意見反應選項
 
@@ -30,21 +30,21 @@ ms.locfileid: "90807881"
 
 ::: moniker range="vs-2019"
 
-如果您使用 Visual Studio 時遇到問題&mdash;如當機、效能緩慢或非預期行為&mdash;請使用 [回報問題]**** 工具讓我們知道。 在 Visual Studio 中 **，選擇右上**角的意見反應圖示，或  >  從功能表列選擇 [說明**傳送意見**反應回報  >  **問題**]。
+如果您使用 Visual Studio 時遇到問題&mdash;如當機、效能緩慢或非預期行為&mdash;請使用 [回報問題] 工具讓我們知道。 在 Visual Studio 中 **，選擇右上** 角的意見反應圖示，或  >  從功能表列選擇 [說明 **傳送意見** 反應回報  >  **問題**]。
 
 ![Visual Studio 2019 IDE 中的傳送意見反應圖示](./media/vs-2019/send-feedback-icon.png)
 
-接著，Visual Studio 會開啟 [開發人員社群](https://developercommunity.visualstudio.com) 介面，您可以在其中登入以回報問題。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)。
+接著，Visual Studio 會開啟 [開發人員社群](https://aka.ms/feedback/suggest?space=8) 介面，您可以在其中登入以回報問題。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)。
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-如果您使用 Visual Studio 時遇到問題&mdash;如當機、效能緩慢或非預期行為&mdash;請使用 [回報問題]**** 工具讓我們知道。 在 Visual Studio 中 **，選擇搜尋**方塊旁的意見反應圖示，或  >  從功能表列選擇 [說明**傳送意見**反應回報  >  **問題**]。
+如果您使用 Visual Studio 時遇到問題&mdash;如當機、效能緩慢或非預期行為&mdash;請使用 [回報問題] 工具讓我們知道。 在 Visual Studio 中 **，選擇搜尋** 方塊旁的意見反應圖示，或  >  從功能表列選擇 [說明 **傳送意見** 反應回報  >  **問題**]。
 
 ![Visual Studio 2019 IDE 中的傳送意見反應圖示](./media/send-feedback-icon.png)
 
-接著，Visual Studio 會開啟 [開發人員社群](https://developercommunity.visualstudio.com) 介面，您可以在其中登入以回報問題。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)。
+接著，Visual Studio 會開啟 [開發人員社群](https://aka.ms/feedback/suggest?space=8) 介面，您可以在其中登入以回報問題。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)。
 
 ::: moniker-end
 
@@ -52,17 +52,17 @@ ms.locfileid: "90807881"
 
 ::: moniker range="vs-2019"
 
-如果您有想要讓 Visual Studio 更好的想法或建議，請使用 [ **建議功能** ] 工具讓我們知道。 在 Visual Studio 中，選擇右上角的意見反應圖示，或從功能表列**選擇 [** 說明  >  **傳送意見**反應]  >  **建議功能**。
+如果您有想要讓 Visual Studio 更好的想法或建議，請使用 [ **建議功能** ] 工具讓我們知道。 在 Visual Studio 中，選擇右上角的意見反應圖示，或從功能表列 **選擇 [** 說明  >  **傳送意見** 反應]  >  **建議功能**。
 
-接著，Visual Studio 會開啟 [開發人員社群](https://developercommunity.visualstudio.com) 介面，您可以在其中登入以分享您的想法。 如需詳細資訊，請參閱[提出 Visual Studio 功能建議](suggest-a-feature.md)。
+接著，Visual Studio 會開啟 [開發人員社群](https://aka.ms/feedback/suggest?space=8) 介面，您可以在其中登入以分享您的想法。 如需詳細資訊，請參閱[提出 Visual Studio 功能建議](suggest-a-feature.md)。
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-如果您有想要讓 Visual Studio 更好的想法或建議，請使用 [ **提供建議** ] 工具讓我們知道。 在 Visual Studio 中 **，選擇搜尋**方塊旁的意見反應圖示，或從功能表列選擇 [說明  >  **傳送意見**反應]  >  **提供建議**。
+如果您有想要讓 Visual Studio 更好的想法或建議，請使用 [ **提供建議** ] 工具讓我們知道。 在 Visual Studio 中 **，選擇搜尋** 方塊旁的意見反應圖示，或從功能表列選擇 [說明  >  **傳送意見** 反應]  >  **提供建議**。
 
-接下來，Visual Studio 開啟 [ [開發人員社群](https://developercommunity.visualstudio.com) ] 頁面，您可以在其中登入以分享您的想法。 如需詳細資訊，請參閱[提出 Visual Studio 功能建議](suggest-a-feature.md)。
+接下來，Visual Studio 開啟 [ [開發人員社群](https://aka.ms/feedback/suggest?space=8) ] 頁面，您可以在其中登入以分享您的想法。 如需詳細資訊，請參閱[提出 Visual Studio 功能建議](suggest-a-feature.md)。
 
 ::: moniker-end
 
@@ -71,9 +71,9 @@ ms.locfileid: "90807881"
 您有兩種方式可以協助我們改善文件：
 
 * 您可以使用任何檔頁面右上方的 [ **此頁面有説明嗎？** 回應工具]。
-* 使用您的 GitHub 帳戶，在 [docs.microsoft.com](../index.yml) 上針對任何 Visual Studio 頁面提供意見反應。 若要這樣做，請選擇任何檔頁面底部的 [**傳送關於**  >  **此頁面**的意見反應] 按鈕。
+* 使用您的 GitHub 帳戶，在 [docs.microsoft.com](../index.yml) 上針對任何 Visual Studio 頁面提供意見反應。 若要這樣做，請選擇任何檔頁面底部的 [**傳送關於**  >  **此頁面** 的意見反應] 按鈕。
 
-## <a name="contact-microsoft-support"></a>連絡 Microsoft 支援
+## <a name="contact-microsoft-support"></a>連絡 Microsoft 支援服務
 
 如需 Visual Studio 的支援資訊，請參閱[產品生命週期和服務](/visualstudio/releases/2019/servicing/)頁面。 如需其他 Microsoft 產品和服務，請參閱 [Microsoft 支援](https://support.microsoft.com/)以取得線上說明。
 

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54bd53f5c63a2f126f4aeae264c4dff745633cf6
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350806"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668309"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>針對 Visual Studio 安裝和升級問題進行疑難排解
 
@@ -53,7 +53,7 @@ Visual Studio 安裝程式有一些已知問題，Microsoft 正在努力修正�
 
 ### <a name="step-3---check-with-the-developer-community"></a>步驟 3-查看開發人員社區
 
-在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/spaces/8/index.html)\(英文\) 中搜尋您的錯誤訊息。 社群的其他成員可能已記錄您問題的解決方式。
+在 [Visual Studio 開發人員社群](https://aka.ms/feedback/suggest?space=8)\(英文\) 中搜尋您的錯誤訊息。 社群的其他成員可能已記錄您問題的解決方式。
 
 ### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>步驟 4-刪除 Visual Studio 安裝程式目錄以修正升級問題
 
@@ -87,20 +87,20 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 ::: moniker range="vs-2017"
 
 1. 收集您的安裝記錄檔。 如需詳細資訊，請參閱[如何取得 Visual Studio 安裝記錄檔](#installation-logs)。
-2. 開啟 Visual Studio 安裝程式，然後按一下 [回報問題]**** 以開啟「Visual Studio 意見反應」工具。
+2. 開啟 Visual Studio 安裝程式，然後按一下 [回報問題] 以開啟「Visual Studio 意見反應」工具。
 ![您可以使用 Tab 鍵移至 [提供意見反應] 按鈕以開啟意見反應工具](media/report-a-problem.png)
-3. 提供問題報告標題，並提供相關詳細資料。 按一下 [下一步]**** 以移至 [附件]**** 區段，然後附加產生的記錄檔 (一般而言，該檔案位於 `%TEMP%\vslogs.zip`)。
-4. 按一下 [下一步]**** 以檢閱您的問題報告，然後按一下 [提交]****。
+3. 提供問題報告標題，並提供相關詳細資料。 按一下 [下一步] 以移至 [附件] 區段，然後附加產生的記錄檔 (一般而言，該檔案位於 `%TEMP%\vslogs.zip`)。
+4. 按一下 [下一步] 以檢閱您的問題報告，然後按一下 [提交]。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 1. 收集您的安裝記錄檔。 如需詳細資訊，請參閱[如何取得 Visual Studio 安裝記錄檔](#installation-logs)。
-2. 開啟 Visual Studio 安裝程式，然後按一下 [回報問題]**** 以開啟「Visual Studio 意見反應」工具。
+2. 開啟 Visual Studio 安裝程式，然後按一下 [回報問題] 以開啟「Visual Studio 意見反應」工具。
 ![您可以使用 Tab 鍵移至 [提供意見反應] 按鈕以開啟意見反應工具](media/vs-2019/vs-installer-report-problem.png)
-3. 提供問題報告標題，並提供相關詳細資料。 按一下 [下一步]**** 以移至 [附件]**** 區段，然後附加產生的記錄檔 (一般而言，該檔案位於 `%TEMP%\vslogs.zip`)。
-4. 按一下 [下一步]**** 以檢閱您的問題報告，然後按一下 [提交]****。
+3. 提供問題報告標題，並提供相關詳細資料。 按一下 [下一步] 以移至 [附件] 區段，然後附加產生的記錄檔 (一般而言，該檔案位於 `%TEMP%\vslogs.zip`)。
+4. 按一下 [下一步] 以檢閱您的問題報告，然後按一下 [提交]。
 
 ::: moniker-end
 
@@ -114,13 +114,13 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 ### <a name="step-7---contact-us-optional"></a>步驟 7-聯繫我們 (選擇性) 
 
-若上述步驟都無法協助您成功地安裝或升級 Visual Studio，請使用我們的[**即時聊天**](https://visualstudio.microsoft.com/vs/support/#talktous)支援選項 (僅限英文) 與我們連絡以取得進一步的協助。
+若上述步驟都無法協助您成功地安裝或升級 Visual Studio，請使用我們的 [**即時聊天**](https://visualstudio.microsoft.com/vs/support/#talktous)支援選項 (僅限英文) 與我們連絡以取得進一步的協助。
 
 ## <a name="offline-installations"></a>離線安裝
 
 以下是已知問題的表格，以及一些可協助您建立 [離線安裝](create-an-offline-installation-of-visual-studio.md) ，然後從本機配置進行安裝的因應措施。
 
-| 問題       | 項目                   | 解決方法 |
+| 問題       | Item                   | 解決方案 |
 | ----------- | ---------------------- | -------- |
 | 使用者沒有檔案的存取權。 | 權限 (ACL) | 請務必調整 (Acl) 的許可權，以便在您共用離線安裝  *之前* ，授與其他使用者的讀取權限。 |
 | 無法安裝新的工作負載、元件或語言。  | `--layout`  | 如果是以部分配置來安裝，並選取該部分配置中先前未下載的工作負載、元件或語言，請確定可以存取網際網路。 |
@@ -145,7 +145,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 ## <a name="live-help"></a>即時說明
 
-若此疑難排解指南中所列的解決方式無法協助您成功地安裝或升級 Visual Studio，請使用我們的[**即時聊天**](https://visualstudio.microsoft.com/vs/support/#talktous)支援選項 (僅限英文) 以取得進一步的協助。
+若此疑難排解指南中所列的解決方式無法協助您成功地安裝或升級 Visual Studio，請使用我們的 [**即時聊天**](https://visualstudio.microsoft.com/vs/support/#talktous)支援選項 (僅限英文) 以取得進一步的協助。
 
 ## <a name="see-also"></a>另請參閱
 

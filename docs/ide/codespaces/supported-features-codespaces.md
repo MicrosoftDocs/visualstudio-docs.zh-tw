@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: f253ba9b7e46f809bc107aa2b3e26f635d778770
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 84be6698c62e3a2a205ceb9d404673ee1d0c6f64
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928550"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668608"
 ---
 # <a name="supported-visual-studio-features-preview"></a>支援 (Preview 的 Visual Studio 功能) 
 
@@ -27,7 +27,7 @@ Visual Studio 在連接至 codespace 時，提供豐富的開發體驗。 您可
 這 **不是一份詳盡的清單**，但為了說明 Visual Studio 連接到 codespace 時的一般功能。
 
 > [!NOTE]
-> 如果您在使用 codespaces 搭配 Visual Studio 時遺漏了功能，請在上開啟問題讓我們知道 https://developercommunity.visualstudio.com/ 。 這可協助我們排列最需要的功能。
+> 如果您在使用 codespaces 搭配 Visual Studio 時遺漏了功能，請在 [Visual Studio 開發人員社群](https://aka.ms/feedback/suggest?space=8)上開啟問題讓我們知道。 這可協助我們排列最需要的功能。
 
 > [!NOTE]
 > 以下所述的功能適用于 Visual Studio，而不是其他兩個 GitHub Codespaces 用戶端;Visual Studio Code 和瀏覽器內編輯器。
@@ -104,12 +104,12 @@ Visual Studio 在連接至 codespace 時，提供豐富的開發體驗。 您可
 * 執行緒功能-不支援凍結/解除凍結執行緒、重新命名執行緒，以及顯示來源中的執行緒。
 * 其他逐步執行功能-不支援在屬性和運算子 ( .NET Core) 和逐步執行特定的自動步驟。 
 
-## <a name="features"></a>特性
+## <a name="features"></a>功能
 
 使用連接至 codespace 的 Visual Studio 時，您會取得與在本機工作時相同的協助工具功能。
 
 * 原始檔控制-透過新的 [git 視窗](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)的完整 git 支援。
-* 協助工具-有一個已知的輔助技術問題，無法存取已進行偵錯工具的 appcasting。 除了這項限制，我們不認為本機 Visual Studio 體驗中還沒有任何其他相容性問題。 如果您在 [開發人員群體](https://developercommunity.visualstudio.com/)上提出問題，請讓我們知道您是否偵測到 bug。
+* 協助工具-有一個已知的輔助技術問題，無法存取已進行偵錯工具的 appcasting。 除了這項限制，我們不認為本機 Visual Studio 體驗中還沒有任何其他相容性問題。 如果您在 [開發人員群體](https://aka.ms/feedback/suggest?space=8)上提出問題，請讓我們知道您是否偵測到 bug。
 * 支援透過 GitHub Actions 發佈到 Azure。
 * 已連線的服務-已部分支援 App Insights、KeyVault、儲存體、SQL、Redis、Cosmos、openAPI 和 gRPC。
 * 測試瀏覽器 *-主要支援。
