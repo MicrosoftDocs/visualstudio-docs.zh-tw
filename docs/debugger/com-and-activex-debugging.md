@@ -1,5 +1,7 @@
 ---
 title: COM 和 ActiveX 調試 |Microsoft Docs
+description: 探索 Visual Studio 中的 COM 應用程式和 ActiveX 控制項的調試秘訣。 瞭解 COM 伺服器和容器的調試。 尋找 COM 調試工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a818cfde2996b26bd9d5f31b128e41f2a9fe2e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1df80e8486cb8f8667494137392fadb0a9754e8b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188691"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728998"
 ---
 # <a name="com-and-activex-debugging"></a>偵錯 COM 和 ActiveX
 本章節提供有關偵錯 COM 應用程式和 ActiveX 控制項的秘訣。
@@ -41,7 +43,7 @@ ms.locfileid: "73188691"
 ## <a name="related-sections"></a>相關章節
  [開始查看偵錯工具](../debugger/debugger-feature-tour.md) 提供偵錯工具檔較大區段的連結。 資訊包括：偵錯工具的新功能、設定和準備、中斷點、處理例外狀況、編輯後繼續、偵測 managed 程式碼、偵錯工具 c + + 專案、偵測 COM 和 ActiveX、偵錯工具 Dll、偵錯工具，以及使用者介面參考。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [COM 簡介](/cpp/atl/introduction-to-com)

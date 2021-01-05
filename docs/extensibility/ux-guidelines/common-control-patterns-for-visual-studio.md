@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 的通用控制項模式 |Microsoft Docs
+description: 瞭解 Visual Studio 通用控制項如何遵循 Windows 桌面互動指導方針，以及加強這些指導方針的特殊情況。
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b5a1904c01f5688a00e45de7feed7ae326d9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698706"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715882"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>適用於 Visual Studio 的通用控制項模式
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> 通用控制項
@@ -185,7 +187,7 @@ ms.locfileid: "80698706"
 
 - 空白的工具視窗或對話方塊中的浮水印文字，說明為何沒有顯示任何內容。
 
-- 描述窗格，例如 **屬性視窗**底部。
+- 描述窗格，例如 **屬性視窗** 底部。
 
 - 空白編輯器中的浮水印文字，以說明使用者開始執行的動作。
 
@@ -274,7 +276,7 @@ Visual Studio 中的大部分按鈕會出現在公用程式對話方塊中，不
 
 使用僅限省略號的簡短按鈕：
 
-- 如果對話方塊中有一個以上的長 **[流覽 ...]** 按鈕，例如當有數個欄位允許流覽時。 針對每個使用 **[...]** 按鈕，以避免此情況所建立的令人困惑的存取金鑰 (在相同對話方塊) 中 **&流覽** 和 **B&流覽) ** 。
+- 如果對話方塊中有一個以上的長 **[流覽 ...]** 按鈕，例如當有數個欄位允許流覽時。 針對每個使用 **[...]** 按鈕，以避免此情況所建立的令人困惑的存取金鑰 (在相同對話方塊) 中 **&流覽** 和 **B&流覽)** 。
 
 - 在嚴密的對話中，或沒有適當的位置來放置長按鈕時。
 
@@ -299,7 +301,7 @@ Visual Studio 中的大部分按鈕會出現在公用程式對話方塊中，不
 > [!NOTE]
 > 使用者必須索引標籤至這些按鈕 (沒有) 的存取金鑰，因此請以合理的順序放置它們。 將 `name` 按鈕的屬性對應至它所採取的動作，讓畫面讀取器正確地解讀按鈕動作。
 
-| 函式 | 按鈕 |
+| 函數 | 按鈕 |
 | --- | --- |
 | 加 | ![圖形 [加入] 按鈕](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
 | 移除 | ![圖形 [移動] 按鈕](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
@@ -341,7 +343,7 @@ Visual Studio 中的大部分按鈕會出現在公用程式對話方塊中，不
 
 ![不正確：樹狀檢視節點的不適當樣式](../../extensibility/ux-guidelines/media/070705-2_treeviewincorrect1.png "070705-2_TreeViewIncorrect1")<br />不正確：樹狀檢視節點的不適當樣式
 
-#### <a name="selection"></a>選取
+#### <a name="selection"></a>選項
 當您在樹狀檢視內選取節點時，反白顯示應該會擴充至樹狀檢視控制項的全形。 這可協助使用者清楚地識別他們所選取的專案。 選取色彩應該會反映目前的 Visual Studio 主題。
 
 ![正確：反白顯示選取的節點符合整個樹狀檢視控制項的寬度。](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />正確：反白顯示選取的節點符合整個樹狀檢視控制項的寬度。

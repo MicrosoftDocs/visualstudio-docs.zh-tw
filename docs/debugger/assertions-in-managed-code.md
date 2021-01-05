@@ -1,5 +1,7 @@
 ---
 title: Managed 程式碼中的判斷提示 |Microsoft Docs
+description: '瞭解判斷提示做為 Visual Studio 中 c #、Visual Basic 或 F # managed 程式碼的偵錯工具。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 824c711fc0ebb26a78338a65808c6fdbed768919
-ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
+ms.openlocfilehash: 2d546beb45be7f1473992ab9c2afc5f02ced1a1b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97646394"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729089"
 ---
 # <a name="assertions-in-managed-code"></a>Managed 程式碼中的判斷提示
 判斷提示 (或 `Assert` 陳述式) 可以測試條件，您可以將此條件指定為 `Assert` 陳述式的引數。 如果條件判斷值為 true，則不會執行任何動作。 如果條件判斷值為 false，則判斷提示會失敗。 如果您是以偵錯組建執行，則您的程式將進入中斷模式。
@@ -214,7 +216,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
 ## <a name="setting-assertions-in-configuration-files"></a><a name="BKMK_Setting_assertions_in_configuration_files"></a> 設定設定檔中的判斷提示
  您可以在程式組態檔中設定判斷提示，就像在程式碼中一樣。 如需詳細資訊，請參閱 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>或 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>
 - <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>

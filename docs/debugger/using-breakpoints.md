@@ -34,19 +34,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae9ba7618416ae6db71861eebbff41d32035eb0
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 52c95749d5d7e2909fbff6da0a3a45bc36cd73c6
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102580"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729323"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中使用中斷點
 
 中斷點是您開發人員工具箱中最重要的偵錯工具之一。 您可以在想要暫停偵錯工具執行的任何位置設定中斷點。 例如，您可能想要查看程式碼變數的狀態，或查看特定中斷點的呼叫堆疊。  如果您嘗試在使用中斷點時解決警告或問題，請參閱 [Visual Studio 偵錯工具中的中斷點疑難排解](../debugger/troubleshooting-breakpoints.md)。
 
 > [!NOTE]
-> 如果您知道您想要解決的工作或問題，但需要知道要使用哪種中斷點，請參閱 [尋找您的偵錯工具](../debugger/find-your-debugging-task.md#pause-running-code)。
+> 如果您知道您想要解決的工作或問題，但需要知道要使用哪種中斷點，請參閱 [常見問題-尋找您的偵錯工具](../debugger/find-your-debugging-task.md#pause-running-code)。
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a> 在原始程式碼中設定中斷點
 
@@ -99,9 +99,9 @@ ms.locfileid: "93102580"
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="create-a-conditional-expression"></a>建立條件運算式
 
-當您選取 [ **條件運算式**] 時，可以選擇兩個條件： [ **為 true** ] 或 [ **變更時**]。 選擇 [ **true] 會** 在滿足運算式時中斷，或是在運算式的值變更時中斷。 **When changed**
+當您選取 [ **條件運算式**] 時，可以選擇兩個條件： [ **為 true** ] 或 [ **變更時**]。 選擇 [ **true] 會** 在滿足運算式時中斷，或是在運算式的值變更時中斷。 
 
-在下列範例中，只有當的值為4時，才會叫用中斷點 `testInt` ： **4**
+在下列範例中，只有當的值為4時，才會叫用中斷點 `testInt` ： 
 
 ![中斷點條件為 true](../debugger/media/breakpointconditionistrue.png "中斷點為 true")
 
@@ -170,7 +170,7 @@ ms.locfileid: "93102580"
 
 1. 選取 [ **Debug**  >  **New 中斷點**  >  **函數中斷點**]，或按 **Alt** + **F9**  >  **Ctrl** + **B**。
 
-   您也可以 **New**  >  在 [**中斷點**] 視窗中選取 [新增 **函數中斷點**]。
+   您也可以  >  在 [**中斷點**] 視窗中選取 [新增 **函數中斷點**]。
 
 1. 在 [ **新增** 函式中斷點] 對話方塊中，于 [函式 **名稱** ] 方塊中輸入函數名稱。
 
@@ -244,7 +244,7 @@ ms.locfileid: "93102580"
 
 1. 在 c + + 專案中，啟動偵錯工具，並等候直到到達中斷點為止。 在 [**調試**] 功能表上，選擇 [**新增中斷點**  >  **資料中斷點**]。
 
-    您也可以 **New**  >  在 [**中斷點**] 視窗中選取 [新增 **資料中斷點**]，或 **在 [自動** 變數]、 **[監看** 式] 或 [**區域變數**] 視窗中的專案上按一下滑鼠右鍵，然後在內容功能表中選取 [**值變更**
+    您也可以  >  在 [**中斷點**] 視窗中選取 [新增 **資料中斷點**]，或 **在 [自動** 變數]、 **[監看** 式] 或 [**區域變數**] 視窗中的專案上按一下滑鼠右鍵，然後在內容功能表中選取 [**值變更**
 
 2. 在 [ **位址** ] 方塊中，輸入記憶體位址或評估為記憶體位址的運算式。 例如，輸入當變數 `&avar` 的內容變更時要中斷的 `avar` 。
 
@@ -313,7 +313,7 @@ ms.locfileid: "93102580"
 
 ### <a name="set-a-breakpoint-in-the-disassembly-window"></a>在 [反組解碼] 視窗中設定中斷點
 
-1. 若要開啟 **[反** 組解碼] 視窗，您必須在進行調試時暫停。 選取 [ **Debug** Windows 反組解碼]  >  **Windows**  >  ****，或按 **Alt** + **8**。
+1. 若要開啟 **[反** 組解碼] 視窗，您必須在進行調試時暫停。 選取 [ **Debug** Windows 反組解碼]  >    >  ****，或按 **Alt** + **8**。
 
 2. 在 [反組 **解碼] 視窗** 中，按一下您要中斷之指令的左邊界。 您也可以選取它，然後按 **F9** 鍵，或按一下滑鼠右鍵並選取 [**中斷點**  >  **插入中斷點**]。
 

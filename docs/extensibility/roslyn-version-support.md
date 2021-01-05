@@ -1,5 +1,7 @@
 ---
 title: 支援的 Roslyn 套件版本對應
+description: 本文說明 Visual Studio 的不同版本支援哪些 .NET 編譯器平臺 (Roslyn) 封裝版本。
+ms.custom: SEO-VS-2020
 ms.date: 04/29/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd268dadd03ee5d648075ccea1763e949719c90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c787188fa727692bf11035c00562f7a6e26e81b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701327"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715739"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET 編譯器平臺套件版本參考
 
@@ -43,7 +45,7 @@ ms.locfileid: "80701327"
 > [!TIP]
 > 針對支援的最低 Visual Studio 版本為 Visual Studio 2017 版本的 Roslyn 套件，也支援 Visual Studio 2019 的所有版本，因為稍後會提供這些版本。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)
 - [開始使用 Roslyn 分析器](getting-started-with-roslyn-analyzers.md)

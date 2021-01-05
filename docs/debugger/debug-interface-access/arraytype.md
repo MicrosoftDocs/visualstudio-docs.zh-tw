@@ -1,5 +1,7 @@
 ---
 title: ArrayType | Microsoft Docs
+description: 在 Visual Studio debug interface access SDK 中尋找 ArrayType 符號類型 (SymTagArray) 的參考資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cc60a27e220620fa4e3e222e1ef9bf0aa00be63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca89747bc2c3826df4ac2893d4d2edf92449379e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462369"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728892"
 ---
 # <a name="arraytype"></a>ArrayType
 陣列是以符號來識別 `SymTagArray` 。
@@ -42,6 +44,6 @@ ms.locfileid: "85462369"
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` 如果陣列未對齊|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果陣列標示為 volatile。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [維度](../../debugger/debug-interface-access/dimension.md)

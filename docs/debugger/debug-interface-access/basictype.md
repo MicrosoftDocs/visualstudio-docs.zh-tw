@@ -1,5 +1,7 @@
 ---
 title: BasicType | Microsoft Docs
+description: 尋找 BasicType 列舉的參考資訊，此列舉會在 Visual Studio debug interface access SDK 中指定符號的基本類型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7d9df59d5a3075bf63d619a03e8fe31da6991a1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27fd166b094f74cfbf9b6a37a87804031dedcbc7
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462278"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728872"
 ---
 # <a name="basictype"></a>BasicType
 指定符號的基本類型。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```C++
 enum BasicType {
@@ -89,10 +91,10 @@ btHresult 基本類型為 `HRESULT` 。
 ## <a name="remarks"></a>備註
 [IDiaSymbol：： get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)方法會傳回這個列舉中的值。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： cvconst。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
 - [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

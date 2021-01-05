@@ -1,5 +1,7 @@
 ---
 title: 圖形畫面格驗證 |Microsoft Docs
+description: 瞭解 Visual Studio 中圖形的畫面格驗證工具。 此工具會顯示與事件清單相關聯的錯誤和警告。
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49248c6209f9e56e51551f6cd3d4af66ecac8b56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe9b1ed3acbe588b342ba6550bc45558a2070d2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735490"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727641"
 ---
 # <a name="graphics-frame-validation"></a>圖形畫面格驗證
 <!-- VERSIONLESS -->
@@ -33,6 +35,6 @@ Visual Studio 2017 及更高版本的支援 **畫面格驗證** 工具。  [畫�
 | 訊息 | 與事件關聯的訊息。 |
 | 事件 | 與錯誤或警告相關聯的事件。 |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [圖形診斷 (對 DirectX 圖形進行偵錯)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

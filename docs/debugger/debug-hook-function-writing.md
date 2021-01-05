@@ -1,5 +1,7 @@
 ---
 title: 調試攔截函式寫入 |Microsoft Docs
+description: 深入瞭解您可以撰寫的許多自訂偵錯工具攔截函式，讓您將程式碼插入偵錯工具正常處理內的預先定義點。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 038c976380ff1e1f0a1a7c4c150fc462f6b1d1db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e2f05005d0b43d526936bfbc8018739cb1ed88
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350715"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728933"
 ---
 # <a name="debug-hook-function-writing"></a>撰寫偵錯攔截函式
 本節將說明一些您可以撰寫的自訂偵錯攔截函式，這些函式可讓您將程式碼插入偵錯工具正常處理中的某些預先定義點。
@@ -42,4 +44,4 @@ ms.locfileid: "85350715"
 
 ## <a name="related-sections"></a>相關章節
 
-- [CRT 偵錯工具技術](../debugger/crt-debugging-techniques.md) ： C 執行時間程式庫之偵錯工具的連結，包括使用 CRT Debug 程式庫、用於報告的宏、和之間的差異 `malloc` 、撰寫 Debug 攔截函式 `_malloc_dbg` ，以及 CRT Debug 堆積。
+- [CRT 偵錯工具技術](../debugger/crt-debugging-techniques.md) -C Run-Time 程式庫的偵錯工具的連結，包括使用 CRT Debug 程式庫、用於報告的宏、和之間的差異 `malloc` 、撰寫 Debug 攔截函式 `_malloc_dbg` ，以及 CRT Debug 堆積。

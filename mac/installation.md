@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5155c37a89f566841fc342bbd8213f5a38eb399d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583953"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727563"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安裝 Visual Studio 2019 for Mac
 
@@ -22,7 +22,7 @@ ms.locfileid: "91583953"
  > [!div class="button"]
  > [下載 Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 - 具有 macOS High Sierra 10.13 或以上版本的 Mac。
 
@@ -43,31 +43,31 @@ ms.locfileid: "91583953"
 
     [![安裝程式會檢查您的系統是否有安裝的元件](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
-5. 系統會出現要求您確認隱私權和授權條款的警示。 請前往連結並加以閱讀；如果您同意即可按 [繼續]****：
+5. 系統會出現要求您確認隱私權和授權條款的警示。 請前往連結並加以閱讀；如果您同意即可按 [繼續]：
 
     [![遵循隱私權和條款的連結，如果您同意，請繼續進行](media/install-privacy.png)](media/install-privacy.png#lightbox)
 
 6. 即會顯示可用工作負載的清單。 選取您想要使用的元件：
 
-    [![選擇您想要安裝的選擇性工作負載功能](media/install-selection.png)](media/install-selection.png#lightbox)
+    [![螢幕擷取畫面： Visual Studio Mac 安裝程式中的 [您要安裝什麼？] 畫面，其中顯示可供安裝的元件清單。](media/install-selection.png)](media/install-selection.png#lightbox)
 
    如果您不想要安裝所有平台，請使用以下指南以協助您決定要安裝的平台：
 
-   |應用程式類型  |目標  |選取  |注意  |
+   |應用程式類型  |目標  |選項  |附註  |
    |---------|---------|---------|---------|
-   |**使用 Xamarin 的應用程式**| Xamarin.Forms|選取 **Android** 和 **iOS** 平臺 |您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/) |
-   ||僅限 iOS|選取 **iOS** 平臺|您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/)|
+   |**使用 Xamarin 的應用程式**| Xamarin.Forms|選取 **Android** 和 **iOS** 平臺 |您將需要安裝 [ **Xcode**](https://developer.apple.com/xcode/) |
+   ||僅限 iOS|選取 **iOS** 平臺|您將需要安裝 [ **Xcode**](https://developer.apple.com/xcode/)|
    ||僅 Android|選取 **Android** 平臺|請注意，您也應該選取相關的相依性|
-   ||僅限 Mac|選取 **macOS (Cocoa) ** platform|您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/)|
+   ||僅限 Mac|選取 **macOS (Cocoa)** platform|您將需要安裝 [ **Xcode**](https://developer.apple.com/xcode/)|
    |**.NET Core 應用程式**|         |選取 [ **.Net Core** 平臺]。|         |
    |**ASP.NET Core Web 應用程式**|         |選取 [ **.Net Core** 平臺]。|         |
    |**Azure Functions**|         |選取 [ **.Net Core** 平臺]。|         |
    |**跨平台 Unity 遊戲開發**|         |除了 Visual Studio for Mac 之外，不需要安裝其他平臺。| 如需安裝 Unity 延伸模組的詳細資訊，請參閱 [Unity 安裝指南](./setup-vsmac-tools-unity.md)。|
 
-7. 選取完成之後，請按 [安裝]**** 按鈕。
+7. 選取完成之後，請按 [安裝] 按鈕。
 8. 安裝程式會顯示下載和安裝 Visual Studio for Mac 的進度，並顯示選取的工作負載。 系統會提示您輸入密碼，以授與安裝所需的許可權。：
 
-    [![選擇您想要安裝的選擇性工作負載功能](media/installation-progress.png)](media/installation-progress.png#lightbox)
+    [![Visual Studio Mac 安裝程式的螢幕擷取畫面，其中顯示適用于 Mac 的 .NET 開發人員工具組的安裝進度畫面。](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
 9. 安裝之後，Visual Studio for Mac 將會提示您登入並選取您想要使用的金鑰系結，以個人化您的安裝：
 
@@ -113,6 +113,6 @@ ms.locfileid: "91583953"
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [安裝 Visual Studio (在 Windows 上)](/visualstudio/install/install-visual-studio)

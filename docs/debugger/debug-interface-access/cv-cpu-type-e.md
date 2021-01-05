@@ -1,5 +1,7 @@
 ---
 title: CV_CPU_TYPE_e | Microsoft Docs
+description: 取得 CV_CPU_TYPE_e 列舉類型的參考資訊，此類型會在 debug interface access SDK 中指定目標處理器。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82a482b570d3ed22d1b9dfe2ca3c8248a0185911
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44b076caffe4bc92bb62b63aa9d5d5e3dc464786
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462111"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728566"
 ---
 # <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 指定目標處理器。
@@ -98,9 +100,9 @@ typedef enum CV_CPU_TYPE_e {
 ## <a name="remarks"></a>備註
 呼叫 [IDiaSymbol：： get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) 方法時，會傳回此列舉中的值。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： cvconst。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

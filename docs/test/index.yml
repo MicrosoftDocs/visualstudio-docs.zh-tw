@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 03/23/2020
-  ms.openlocfilehash: b2b60b7208fe06aa7e2c2e327174e7536941f204
-  ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
-  ms.translationtype: HT
+  ms.openlocfilehash: 8967405f3b743b2449a90817a700fec092319245
+  ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+  ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/08/2020
-  ms.locfileid: "91830697"
+  ms.lasthandoff: 12/23/2020
+  ms.locfileid: "97756574"
 landingContent:
 - title: 關於測試工具
   linkLists:
@@ -23,36 +23,44 @@ landingContent:
     links:
     - text: 初步認識測試工具
       url: improve-code-quality.md
-    - text: 單元測試工具概觀
+    - text: '& 工作的單元測試工具'
       url: unit-test-your-code.md
-    - text: 即時單元測試概觀
+    - text: 'Live Unit Testing 總覽 ( .NET) '
       url: live-unit-testing-intro.md
-- title: 單元測試
+- title: 開始使用
   linkLists:
   - linkListType: tutorial
     links:
     - text: 開始使用單元測試
       url: getting-started-with-unit-testing.md
-    - text: 針對受控碼建立和執行單元測試
-      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: 使用測試總管執行單元測試
       url: run-unit-tests-with-test-explorer.md
+  - linkListType: how-to-guide
+    links:
+    - text: 單元測試基本概念
+      url: unit-test-basics.md
+    - text: 程式碼涵蓋範圍 - 決定所測試的程式碼數量
+      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+- title: .NET 單元測試
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 針對受控碼建立和執行單元測試
+      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: Live Unit Testing 的使用者入門
       url: live-unit-testing-start.md
     - text: 產生單元測試 (IntelliTest)
       url: generate-unit-tests-for-your-code-with-intellitest.md
-- title: 更多測試工具
-  linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 程式碼涵蓋範圍 - 決定所測試的程式碼數量
-      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
     - text: Microsoft Fakes - 隔離受測程式碼
       url: isolating-code-under-test-with-microsoft-fakes.md
-    - text: 自動程式化 UI (已淘汰)
-      url: use-ui-automation-to-test-your-code.md
-    - text: 負載測試 (已淘汰)
-      url: quickstart-create-a-load-test-project.md
+- title: C + + 單元測試
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 撰寫 C/C++ 的單元測試
+      url: writing-unit-tests-for-c-cpp.md
 - title: 相關工具 (Azure DevOps)
   linkLists:
   - linkListType: how-to-guide
@@ -63,3 +71,11 @@ landingContent:
       url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops&preserve-view=true
     - text: 持續測試 (Azure Pipelines)
       url: /azure/devops/pipelines/?view=azure-devops&preserve-view=true
+- title: 更多測試工具
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 自動程式化 UI (已淘汰)
+      url: use-ui-automation-to-test-your-code.md
+    - text: 負載測試 (已淘汰)
+      url: quickstart-create-a-load-test-project.md

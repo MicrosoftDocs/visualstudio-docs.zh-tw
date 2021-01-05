@@ -1,5 +1,7 @@
 ---
 title: " (Debug 介面存取 SDK) 的常數 |Microsoft Docs"
+description: 查看字串常數的清單，這些字串常數可用來透過 (DIA) SDK 的 debug 介面存取，來識別程式偵測資料庫的各種區段 (PDB) 檔。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fa6037253141df1111ef3bc57fac9c718d826dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 806eb9207fa60b7147d1e0d7df75871b23f8850d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462236"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728751"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>常數 (偵錯介面存取 SDK)
 這些字串常數可以用來識別程式的各個區段， (PDB 透過 DIA SDK) 檔。
@@ -52,10 +54,10 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 }
 ```
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： dia2。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [參考](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

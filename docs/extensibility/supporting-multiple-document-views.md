@@ -1,5 +1,7 @@
 ---
 title: 支援多個檔視圖 |Microsoft Docs
+description: 瞭解如何在 Visual Studio SDK 中，針對自訂編輯器使用個別的檔資料和檔視圖物件，以提供多個檔的觀點。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a952414fa7156d80675564e519e556ccedd524a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c1d99f4beb000d4b48435b9215a01f31ef8e936
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699544"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716090"
 ---
 # <a name="supporting-multiple-document-views"></a>支援多個文件檢視
 您可以為編輯器建立個別的檔資料和檔視圖物件，以提供多個檔的觀點。 有些情況下，其他檔視圖會很有用：

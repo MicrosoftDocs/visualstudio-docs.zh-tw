@@ -1,5 +1,7 @@
 ---
 title: 更新消費者介面 |Microsoft Docs
+description: 瞭解如何在您的 VSPackage 中執行新命令之後，新增程式碼以更新使用者介面。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c51ae790eb35645fbe9aec5d9c422e1051aaa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698879"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716025"
 ---
 # <a name="updating-the-user-interface"></a>更新使用者介面
 在您執行命令之後，您可以新增程式碼，以使用新命令的狀態來更新使用者介面。
@@ -50,6 +52,6 @@ ms.locfileid: "80698879"
 
          請注意，您可以 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> `QueryInterface` 在物件上呼叫方法， <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> 或從服務取得介面，以取得介面 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [實作](../extensibility/internals/command-implementation.md)

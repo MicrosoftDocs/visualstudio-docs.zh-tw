@@ -1,5 +1,7 @@
 ---
 title: C/c + + 判斷提示 |Microsoft Docs
+description: 瞭解 C/c + + 判斷提示如何在 Visual Studio 的調試中運作。 判斷提示會指定您在程式中的某個點預期會是 true 的條件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abea0f45609c74e02cd95d6c21bbe8879d46eea1
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 0b585ce001692ab5b4451acc8d2938741bfacd78
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600215"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729063"
 ---
 # <a name="cc-assertions"></a>C/C++ 判斷提示
 判斷提示語句會指定您在程式中的某個點預期會是 true 的條件。 如果該條件不是 true，判斷提示失敗，程式的執行會中斷，而且出現 [判斷提示 [失敗] 對話方塊](../debugger/assertion-failed-dialog-box.md) 。
@@ -74,7 +76,7 @@ Visual Studio 支援以下列結構為基礎的 c + + 判斷提示語句：
 - [尋找未處理的錯誤](#BKMK_Testing_error_conditions_)
 
 ## <a name="how-assertions-work"></a><a name="BKMK_How_assertions_work"></a> 判斷提示的運作方式
-當偵錯工具因為 MFC 或 C 執行時間程式庫判斷提示而停止時，如果來源可供使用，則偵錯工具會流覽至原始程式檔中發生判斷提示的位置。 判斷提示訊息會出現在 [ [輸出] 視窗](../ide/reference/output-window.md) 和 [判斷提示 **失敗** ] 對話方塊中。 如果您想要儲存判斷提示訊息以供日後參考，可以將它從 [ **輸出** ] 視窗複製到文字視窗。 **輸出**視窗也可能包含其他錯誤訊息。 請仔細檢查這些訊息，因為它們會提供判斷提示失敗原因的線索。
+當偵錯工具因為 MFC 或 C 執行時間程式庫判斷提示而停止時，如果來源可供使用，則偵錯工具會流覽至原始程式檔中發生判斷提示的位置。 判斷提示訊息會出現在 [ [輸出] 視窗](../ide/reference/output-window.md) 和 [判斷提示 **失敗** ] 對話方塊中。 如果您想要儲存判斷提示訊息以供日後參考，可以將它從 [ **輸出** ] 視窗複製到文字視窗。 **輸出** 視窗也可能包含其他錯誤訊息。 請仔細檢查這些訊息，因為它們會提供判斷提示失敗原因的線索。
 
 使用判斷提示來偵測開發期間的錯誤。 作為規則，請針對每個假設使用一個判斷提示。 例如，如果您假設引數不是 Null，請使用判斷提示來測試該假設。
 
@@ -337,7 +339,7 @@ _ASSERT(!myErr); // Don't do this, either!
 
 [本主題內容](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯機器碼](../debugger/debugging-native-code.md)

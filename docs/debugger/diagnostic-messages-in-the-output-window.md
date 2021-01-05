@@ -1,5 +1,7 @@
 ---
 title: 將訊息傳送至 [輸出] 視窗 |Microsoft Docs
+description: 使用 Debug 類別或 Trace 類別（屬於 System.object 類別庫的一部分），將執行時間訊息寫入 Visual Studio 中的輸出視窗。
+ms.custom: SEO-VS-2020
 ms.date: 11/08/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -21,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d3c146775ac06b3118186738ee74932a4c452a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 345efabedca63187fd9f16b4ed9622de8e320e89
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350468"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728079"
 ---
 # <a name="send-messages-to-the-output-window"></a>傳送訊息至 [輸出] 視窗
 
-您可以使用類別**Output** <xref:System.Diagnostics.Debug> 或 <xref:System.Diagnostics.Trace> 類別（屬於類別庫的一部分），將執行時間訊息寫入至輸出視窗 <xref:System.Diagnostics> 。 <xref:System.Diagnostics.Debug>如果您只想要在程式的*Debug*版本中輸出，請使用類別。 <xref:System.Diagnostics.Trace>如果您想要在*Debug*和*Release*版本中都有輸出，請使用類別。
+您可以使用類別 <xref:System.Diagnostics.Debug> 或 <xref:System.Diagnostics.Trace> 類別（屬於類別庫的一部分），將執行時間訊息寫入至輸出視窗 <xref:System.Diagnostics> 。 <xref:System.Diagnostics.Debug>如果您只想要在程式的 *Debug* 版本中輸出，請使用類別。 <xref:System.Diagnostics.Trace>如果您想要在 *Debug* 和 *Release* 版本中都有輸出，請使用類別。
 
 ## <a name="output-methods"></a>輸出方法
  <xref:System.Diagnostics.Trace> 和 <xref:System.Diagnostics.Debug> 類別會提供下列輸出方法：
@@ -51,7 +53,7 @@ ms.locfileid: "85350468"
 
 - 已結束的執行序。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [輸出視窗](../ide/reference/output-window.md)
 - [追蹤和檢測應用程式](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications) (機器翻譯)

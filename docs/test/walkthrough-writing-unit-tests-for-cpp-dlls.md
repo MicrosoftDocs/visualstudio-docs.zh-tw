@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 178fef548bc52346a78c7f9e4607aad7b1c56f65
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 2d145e1383e8f6c0d7c25ae72232fdbe2a8d703d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598402"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727537"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：撰寫 C++ DLL 的單元測試
 
@@ -328,7 +328,7 @@ ms.locfileid: "95598402"
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
+> 如果個別測試沒有任何相依性可防止它們依任何循序執行，請使用 ![ [測試瀏覽器] 工具列上 [平行測試執行] 切換按鈕的螢幕擷取畫面，開啟平行測試執行。 選取此按鈕時，將會以平行方式執行測試。](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
 ::: moniker-end
 
@@ -368,7 +368,7 @@ ms.locfileid: "95598402"
 
    您也可以強制規定程式碼涵蓋範圍的最低層級。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將單元測試新增至現有的 C++ 應用程式](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)

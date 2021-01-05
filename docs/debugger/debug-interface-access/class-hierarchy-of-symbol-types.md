@@ -1,5 +1,7 @@
 ---
 title: 符號類型的類別階層 |Microsoft Docs
+description: 在 Visual Studio debug interface access SDK 的類別階層中，檢查符號類型的清單。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed6817c5c01b66143739b2f81899f2b58886d8e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36f97702f41f72efab970617da2a40a70f339e2a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462270"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728792"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>符號類型的類別階層架構
 下表描述類別階層架構中的符號類型。
@@ -45,7 +47,7 @@ ms.locfileid: "85462270"
 > [!NOTE]
 > 每個符號都可以有屬性（property），其中包含符號的相關資訊，以及其他符號的參考。 這些屬性會列在個別的符號主題中。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [符號和符號標記](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

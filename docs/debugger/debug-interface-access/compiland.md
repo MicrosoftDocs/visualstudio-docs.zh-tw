@@ -1,5 +1,7 @@
 ---
 title: 編譯單位 |Microsoft Docs
+description: 在 Visual Studio debug interface access SDK 中尋找編譯單位符號類型 (SymTagCompiland) 的參考資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c6a9460415112f9d86af6d5cf8766ad7d55f97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 537b915269a6b7bcf345caf2545d38ca21337ecf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462257"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728785"
 ---
 # <a name="compiland"></a>編譯模組
 `SymTagCompiland`連結到 .exe 檔案的每個編譯單位都有一個符號。 編譯單位資訊會在具有標記的符號之間進行分割 `SymTagCompiland` ，您可以在不載入額外的編譯單位符號的情況下抓取符號，也可以使用 `SymTagCompilandDetails` 標記來標記符號，而這可能需要載入其他符號。
@@ -37,7 +39,7 @@ ms.locfileid: "85462257"
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|符號的索引識別碼。|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|傳回 `SymTagCompiland` (其中一個) 的 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 值。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)
 - [CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

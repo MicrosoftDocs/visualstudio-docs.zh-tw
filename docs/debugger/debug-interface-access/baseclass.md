@@ -1,5 +1,7 @@
 ---
 title: BaseClass |Microsoft Docs
+description: 尋找 BaseClass 符號類型的參考資訊。 使用者定義型別 (UDT) 符號的基類是由具有 SymTagBaseClass 標記的子系所識別。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48fcf4e7db87ecf8f0b1041dd013e4b1d8571533
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d813955c8b61965b41cd252aaa35cb7ca323234
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462299"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728885"
 ---
 # <a name="baseclass"></a>BaseClass
 使用者定義型別 (UDT) 符號的每個基類都是由具有標記的子系所識別 `SymTagBaseClass` 。 [IDiaSymbol：： get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)屬性包含基礎 udt 的符號，而基礎 udt 的所有屬性都可作為這個 BaseClass 符號的一部分。
@@ -61,6 +63,6 @@ ms.locfileid: "85462299"
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|虛擬資料表圖形符號的識別碼。|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果基底類別標示為 volatile。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [UDT](../../debugger/debug-interface-access/udt.md)

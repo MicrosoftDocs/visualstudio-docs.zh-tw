@@ -1,5 +1,7 @@
 ---
 title: Web 應用程式的偵錯工具 |Microsoft Docs
+description: 尋找可協助您針對不同類型的 web 應用程式進行偵錯工具的連結，例如 ASP.NET apps、JavaScript 和 TypeScript 應用程式，或 AJAX 腳本應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f54e80059896345abb00e955a827a00b5a35a5
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 63c5409f14fde2805e80f35f498cb57d68b1f58b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600128"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728131"
 ---
 # <a name="debugging-web-applications"></a>偵錯 Web 應用程式
 
@@ -38,14 +40,14 @@ ms.locfileid: "89600128"
 
 - 檢視指令碼文件
 
-  您可以在 [方案總管]**** 查看伺服器端與用戶端指令碼文件清單並加以檢視。 您可以從 [ **方案總管**] 開啟任何指令碼文件。 如需詳細資訊，請參閱 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。
+  您可以在 [方案總管] 查看伺服器端與用戶端指令碼文件清單並加以檢視。 您可以從 [ **方案總管**] 開啟任何指令碼文件。 如需詳細資訊，請參閱 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。
 
 - 偵錯 AJAX 指令碼應用程式
 
   啟用 AJAX 功能的 Web 應用程式會使用大量指令碼，在偵錯時特別困難。 如需 AJAX 偵錯工具技術的詳細資訊，請參閱 [偵錯工具和追蹤 Ajax 應用程式總覽](/previous-versions/bb398817(v=vs.140))。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [偵錯設定及準備](../debugger/debugger-settings-and-preparation.md)
+- [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [Visual Studio 偵錯](../debugger/index.yml)

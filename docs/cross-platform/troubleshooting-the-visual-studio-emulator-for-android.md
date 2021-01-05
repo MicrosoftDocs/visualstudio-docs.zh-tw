@@ -13,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 24af3c279115322b0592faa3b9fa6049bc0c0b62
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 62c2b69edf6868d1559df2a861a85e286f8ffa15
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878913"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729206"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>針對 Visual Studio 的 Android 模擬器進行疑難排解
 本主題所包含的資訊，可協助您解決使用 Visual Studio 的 Android 模擬器時可能遇到的問題。
@@ -70,7 +70,7 @@ ms.locfileid: "91878913"
 ## <a name="emulator-fails-to-install"></a><a name="NoInstall"></a> 無法安裝模擬器
  若您沒有安裝 Hyper-V，在嘗試安裝模擬器時，會看到下列訊息。 您必須有支援 HyperV 的電腦，並已加以啟用。
 
- ![Android&#95;Emu&#95;安裝&#95;問題](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
+ ![Visual Studio 訊息的螢幕擷取畫面，指出因為電腦未 suppert Hyper-v 而封鎖安裝程式 Microsoft Visual Studio 的 Android 模擬器。](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
 > 此訊息對 Visual Studio Emulator for Android 及 Windows Phone 模擬器皆適用。 Windows 8.1 和 Windows 10 都支援模擬器。
@@ -135,7 +135,7 @@ ms.locfileid: "91878913"
 
 - 在 Hyper-V 管理員中開啟虛擬交換器管理員，並檢查您是否有兩個網路交換器；確認第一個為內部交換器，而第二個為外部交換器。
 
-     ![Android&#95;Emu&#95;V&#95;切換&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "ndroid_Emu_V_Switch_Man")
+     ![Hyper-v 管理員中虛擬交換器管理員的螢幕擷取畫面。新的虛擬交換器會反白顯示，而且其屬性會顯示它是外部網路交換器。](../cross-platform/media/android_emu_v_switch_man.png "ndroid_Emu_V_Switch_Man")
 
      若設定不正確，且您正使用 Windows 10，您可以嘗試[使用 netcfg -d 命令重新安裝網路裝置](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (第 6 節)。
 
@@ -182,7 +182,7 @@ ms.locfileid: "91878913"
 
   6. 確定您執行的是 Windows 8 Professional (含) 以後版本 (不支援 Windows Server 2008)。 支援 Windows Server 2012，但您必須啟用 [桌面體驗]。
 
-     您可以檢查事件檢視器，以查看是否有任何 Hypervisor 錯誤。 若要這樣做，請開啟事件檢視器 (**開始鍵** + **R**]，然後輸入 `eventvwr`) 然後選取 [ **Windows 記錄**檔]、[**系統**]。 然後依事件來源篩選記錄，並將來源設定為 [Hyper-V-Hypervisor] ****。 請查看錯誤，以協助找出根本原因。
+     您可以檢查事件檢視器，以查看是否有任何 Hypervisor 錯誤。 若要這樣做，請開啟事件檢視器 (**開始鍵** + **R**]，然後輸入 `eventvwr`) 然後選取 [ **Windows 記錄** 檔]、[**系統**]。 然後依事件來源篩選記錄，並將來源設定為 [Hyper-V-Hypervisor] 。 請查看錯誤，以協助找出根本原因。
 
      如果您的處理器符合最低需求，但 Hypervisor 仍然失敗，建議您了解電腦是否有可用的 BIOS 升級。 如果有，而且您選擇升級，則當您升級 BIOS 時，請務必遵守製造商的所有注意事項 (例如，確保 BIOS 韌體升級不會因電源中斷而中斷，這可能會永久損毀 BIOS)。
 
@@ -196,7 +196,7 @@ ms.locfileid: "91878913"
 
    下列產品可能需要升級，才能與 Windows 8 相容：VirtualBox、Virtual PC 7、VMWare、某些 VPN 用戶端、軟體防火牆、某些 Cisco VPN 用戶端版本，以及其他虛擬化系統。 請與有問題之虛擬化軟體的開發人員合作，並建議他們升級軟體，以與 Windows 8 和 Hyper-V 相容。
 
-   因應措施是，您可以停用所有協力廠商驅動程式和應用 *程式，這些*驅動程式和應用程式可能會干擾模擬器用來與 Visual Studio 進行通訊的虛擬網路。 這類應用程式可能包含：
+   因應措施是，您可以停用所有協力廠商驅動程式和應用 *程式，這些* 驅動程式和應用程式可能會干擾模擬器用來與 Visual Studio 進行通訊的虛擬網路。 這類應用程式可能包含：
 
   - 防毒應用程式 (連接到網路堆疊)
 
@@ -210,7 +210,7 @@ ms.locfileid: "91878913"
 
   1. 啟動網路連線管理員 (從 [開始] 畫面輸入 `View Network Connections` ，然後選取這個選項以檢視網路連線)。
 
-  2. 針對虛擬乙太網路 (內部乙太網路連接埠 Windows Phone 模擬器內部交換器) 介面卡，從內容功能表選擇 [內容] **** 。
+  2. 針對虛擬乙太網路 (內部乙太網路連接埠 Windows Phone 模擬器內部交換器) 介面卡，從內容功能表選擇 [內容]  。
 
       ![超&#45;V 使用的虛擬配接器](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
 
@@ -218,7 +218,7 @@ ms.locfileid: "91878913"
 
       ![虛擬介面卡屬性](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")
 
-  3. 針對這張介面卡，您只需要在 [這個連線使用下列項目] **** 下選取下列選項：
+  3. 針對這張介面卡，您只需要在 [這個連線使用下列項目]  下選取下列選項：
 
      - Client for Microsoft Networks
 
@@ -242,7 +242,7 @@ ms.locfileid: "91878913"
 
      解除安裝協力廠商產品之後，您可能需要還原 Windows Phone 模擬器內部交換器。 若要這樣做：
 
-  - 開啟 Hyper V 並移至虛擬交換器管理員。 建立名為「Windows Phone 模擬器內部交換器」的虛擬交換器，然後將其連線類型設定為 [內部網路] ****。
+  - 開啟 Hyper V 並移至虛擬交換器管理員。 建立名為「Windows Phone 模擬器內部交換器」的虛擬交換器，然後將其連線類型設定為 [內部網路] 。
 
      ![虛擬交換器管理員](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")
 
@@ -262,11 +262,11 @@ ms.locfileid: "91878913"
 ## <a name="visual-studio-gets-stuck-trying-to-deploy-the-app-to-the-emulator-or-the-emulator-does-not-appear-as-a-debug-target-in-other-ides"></a><a name="ADB"></a> Visual Studio 在嘗試將應用程式部署至模擬器時停滯，或模擬器未顯示為其他 Ide 中的 debug 目標
  若模擬器正在執行，但似乎未連接到 ADB (Android Debug Bridge) 或未顯示在使用 ADB (例如 Android Studio 或 Eclipse) 的 Android 工具 中，則您可能需要調整模擬器尋找 ADB 的位置。 模擬器使用登錄機碼來識別您的 Android SDK 的基礎位置，並尋找該目錄下的 \platform-tools\adb.exe 檔案。 若要修改模擬器所使用的 Android SDK 路徑：
 
-- 從 [開始] 按鈕內容功能選取 [執行] **** ，在對話方塊中輸入 `regedit` ，然後選擇 [確定] ****，以開啟登錄編輯程式。
+- 從 [開始] 按鈕內容功能選取 [執行]  ，在對話方塊中輸入 `regedit` ，然後選擇 [確定] ，以開啟登錄編輯程式。
 
 - 在左側的資料夾樹狀結構中，流覽至 *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* 。
 
-- 修改 [路徑] **** 登錄變數，以符合您的 Android SDK 路徑。
+- 修改 [路徑]  登錄變數，以符合您的 Android SDK 路徑。
 
   重新啟動模擬器，您現在應該可以看到模擬器連接到 ADB 和關聯的 Android 工具。
 
@@ -286,15 +286,15 @@ ms.locfileid: "91878913"
 
 1. 開啟 [HYPER-V 管理員]，然後選取 VM 以供您使用的模擬器設定檔使用。
 
-2. 選取 [刪除儲存狀態]\****(右下方)。
+2. 選取 [刪除儲存狀態]\(右下方)。
 
 3. 選擇 **設定 ...**
 
-4. 展開處理器節點，然後選擇 [相容性]****。
+4. 展開處理器節點，然後選擇 [相容性]。
 
-5. 啟用 [移轉至使用不同處理器版本的實體電腦]****。
+5. 啟用 [移轉至使用不同處理器版本的實體電腦]。
 
-6. 重新啟動服務 (位於 [動作]**** 下方)，然後再試一次。
+6. 重新啟動服務 (位於 [動作] 下方)，然後再試一次。
 
 ## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a> 模擬器無法執行使用 Google Play Services 的應用程式
  Google Play 服務的程式庫未隨附模擬器。 但模擬器支援可刷新之 zip 檔案的拖放安裝。
@@ -303,13 +303,13 @@ ms.locfileid: "91878913"
  當您將檔案拖放到畫面上時，模擬器會使用 ADB.exe 來協助傳輸檔案。 如果您在嘗試拖放檔案時發生錯誤，可能表示模擬器並未連接到 ADB.exe。 若要解決，請遵循 [Visual Studio 在嘗試將應用程式部署至模擬器時遇遭困難，或模擬器未作為偵錯目標出現在其他 IDE 中](#ADB)取得。
 
 ## <a name="resolution-of-screenshot-is-incorrect"></a><a name="Resolution"></a> 螢幕擷取畫面的解析度不正確
- 如果您使用 [其他工具] **** 視窗中的 [螢幕擷取畫面] 索引標籤取得螢幕擷取畫面，但所產生的影像不是預期的大小，您可能需要調整螢幕的縮放比例，再選擇 [擷取] ****。 模擬器會以您主機電腦螢幕的螢幕解析度，來取得螢幕擷取畫面。
+ 如果您使用 [其他工具]  視窗中的 [螢幕擷取畫面] 索引標籤取得螢幕擷取畫面，但所產生的影像不是預期的大小，您可能需要調整螢幕的縮放比例，再選擇 [擷取] 。 模擬器會以您主機電腦螢幕的螢幕解析度，來取得螢幕擷取畫面。
 
 ## <a name="emulator-fails-to-render-opengl-content"></a><a name="OpenGL"></a> 模擬器無法轉譯 OpenGL 內容
  模擬器使用您主機電腦的 GPU 來轉譯 OpenGL 內容，並使用 ANGLE 專案將這些呼叫轉換成 DirectX，或從 DirectX 轉換成這些呼叫。 如果您的應用程式在裝置上正確地呈現，但在模擬器上卻不正確地呈現，可能是裝置正在緩和不正確的 OpenGL 呼叫 (例如使用不相符的著色器變數)。
 
 ## <a name="emulator-does-not-respond-to-multi-touch-gestures"></a><a name="Multitouch"></a> 模擬器未回應多點觸控筆勢
- 在某些情況下，模擬器會啟動，但無法透過具備觸控功能之顯示器的直接互動，或使用模擬器工具列上的多點觸控工具，來回應多點觸控。 如果發生這種情況，請選擇模擬器工具列上的 [旋轉] **** 按鈕，然後再次嘗試使用多點觸控。 如果此問題持續發生，請閱讀 [模擬器無法轉譯 OpenGL 內容](#OpenGL) 問題。
+ 在某些情況下，模擬器會啟動，但無法透過具備觸控功能之顯示器的直接互動，或使用模擬器工具列上的多點觸控工具，來回應多點觸控。 如果發生這種情況，請選擇模擬器工具列上的 [旋轉]  按鈕，然後再次嘗試使用多點觸控。 如果此問題持續發生，請閱讀 [模擬器無法轉譯 OpenGL 內容](#OpenGL) 問題。
 
 ## <a name="support-resources"></a><a name="Support"></a> 支援資源
  若您的主機電腦符合系統需求，但發生了此疑難排解指南未涵蓋的問題：

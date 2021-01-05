@@ -1,5 +1,7 @@
 ---
 title: EndCapture | Microsoft Docs
+description: 使用 VsgDbg 類別的 EndCapture 方法，以結束以 BeginCapture 啟動的捕捉間隔。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 06084c3b-e065-49b6-968e-d578762fb871
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c54e8b12f4d3b924b363f42cb098a1d528a8108b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bbdc8f2dc4fa3ad25be8674b9a46bf02179aa1d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735971"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727827"
 ---
 # <a name="endcapture"></a>EndCapture
 結束以啟動的捕獲間隔 `BeginCapture` 。
@@ -29,6 +31,6 @@ void EndCapture();
 
  若要取得間隔，您必須準備您的應用程式來捕獲和記錄圖形資訊，也就是說，您必須先透過類別的實例呼叫 [Init](init.md) ， `VsgDbg` 才能呼叫 `BeginCapture` 或 `EndCapture` 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [BeginCapture](begincapture.md)
 - [CaptureCurrentFrame](capturecurrentframe.md)

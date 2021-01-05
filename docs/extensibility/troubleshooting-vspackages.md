@@ -1,5 +1,7 @@
 ---
 title: 疑難排解 Vspackage |Microsoft Docs
+description: 瞭解您在 VSPackage 時可能遇到的常見問題，以及解決問題的疑難排解秘訣。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c1e85c59d49f4079172cfb098701b09d461bdf3
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235026"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716038"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 以下是您可能會遇到的 VSPackage 問題，以及解決問題的秘訣。
@@ -52,7 +54,7 @@ ms.locfileid: "87235026"
 
     如需詳細資訊，請參閱 [如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。
 
-6. 如需 IDE 擲回之例外狀況的詳細資訊，請按一下 [**調試**程式] 功能表上的 [**例外**狀況] 來啟用例外狀況。 在 [ **例外** 狀況] 對話方塊中，選取您需要詳細資訊的例外狀況類型。
+6. 如需 IDE 擲回之例外狀況的詳細資訊，請按一下 [**調試** 程式] 功能表上的 [**例外** 狀況] 來啟用例外狀況。 在 [ **例外** 狀況] 對話方塊中，選取您需要詳細資訊的例外狀況類型。
 
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>針對未註冊的 VSPackage 進行疑難排解
 
@@ -76,7 +78,7 @@ ms.locfileid: "87235026"
 
      偵測函式和初始化方法是很好的切入點。 您也可以在想要評估的區域（例如功能表命令）中設定中斷點。 若要啟用中斷點，您必須在偵錯工具下執行。
 
-    1. 按一下 [專案] 功能表上的 [屬性]。
+    1. 按一下 [專案]  功能表上的 [屬性]  。
 
     2. 在 [ **屬性頁** ] 對話方塊中，選取 [ **Debug** ] 索引標籤。
 
@@ -111,7 +113,7 @@ ms.locfileid: "87235026"
 
 1. 針對 managed 程式碼，請確定參考路徑是否正確。
 
-   1. 按一下 [專案] 功能表上的 [屬性]。
+   1. 按一下 [專案]  功能表上的 [屬性]  。
 
    2. 選取 [**屬性頁**] 對話方塊中的 [**參考**] 索引標籤，並確定所有路徑都是正確的。 或者，您也可以使用 **物件瀏覽器** 來流覽參考的物件。
 
@@ -123,6 +125,6 @@ ms.locfileid: "87235026"
 
    請確定 InprocServer32 專案具有正確的 VSPackage dll 路徑。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPackages](../extensibility/internals/vspackages.md)
 - [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)

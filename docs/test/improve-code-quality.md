@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f5eff2257988a4210e7f4cd8a8a37c66c57c185d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 0029321ddfc3ff12bb9c40dac9de64a9eb067a95
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328687"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756639"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>先查看 Visual Studio 中的測試控管
 
@@ -51,11 +51,17 @@ Visual Studio 亦為可延伸，並且會開啟 NUnit 和 xUnit.net 這類協力
 
 [Live Unit Testing](../test/live-unit-testing.md) 會自動在背景執行單元測試，並在 Visual Studio 程式碼編輯器中以圖形方式顯示程式碼涵蓋範圍和測試結果。
 
+> [!NOTE]
+> Live unit 測試僅適用于 Enterprise edition，且僅支援 .NET 程式碼。
+
 ## <a name="intellitest"></a>IntelliTest
 
 IntelliTest 會自動產生受控碼的單元測試和測試資料。 IntelliTest 能改善涵蓋範圍，並可大幅節省為新的或現有程式碼建立與維護單元測試的精力。
 
 ![IntelliTest 作用中](media/devtest-intellitest.png)
+
+> [!NOTE]
+> IntelliTest 僅適用于 Enterprise edition。 以 .NET Framework 為目標的 c # 程式碼支援。 目前不支援 .NET Core 和 .NET Standard。
 
 * [使用 IntelliTest 為程式碼產生單元測試](generate-unit-tests-for-your-code-with-intellitest.md)
 * [IntelliTest –一個測試以將它們全部加以規則](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
@@ -64,6 +70,9 @@ IntelliTest 會自動產生受控碼的單元測試和測試資料。 IntelliTes
 ## <a name="code-coverage"></a>程式碼涵蓋範圍
 
 [程式碼涵蓋範圍](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)會判斷單元測試這類自動程式化測試所實際測試的專案程式碼比例。 為有效防範 Bug，您的測試應使用或「涵蓋」大部分程式碼。
+
+> [!NOTE]
+> 只有在 Enterprise edition 中才可以使用程式碼涵蓋範圍。
 
 程式碼涵蓋範圍分析適用於受控碼和未受控碼 (機器碼)。
 
@@ -77,9 +86,15 @@ IntelliTest 會自動產生受控碼的單元測試和測試資料。 IntelliTes
 
 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) 會以虛設常式或填充碼取代應用程式的其他部分，協助您隔離要測試的程式碼。
 
+> [!NOTE]
+> Microsoft Fakes 僅適用于 Enterprise edition，且僅支援 .NET 程式碼。
+
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>使用自動程式碼 UI 和 Selenium 執行使用者介面測試
 
 自動程式碼 UI 測試提供一種方式，可建立完全自動化的測試來驗證您應用程式之使用者介面的功能和行為。 它們可以跨各種技術 (包括以 XAML 為基礎的 UWP 應用程式、瀏覽器應用程式和 SharePoint 應用程式) 將 UI 測試自動化。
+
+> [!NOTE]
+> 自動程式碼 UI 是已淘汰的功能。
 
 不論您選擇最佳品種自動程式化 UI 測試還是 Selenium 的一般瀏覽器 UI 測試，Visual Studio 都會提供您需要的所有工具。
 
@@ -89,10 +104,6 @@ IntelliTest 會自動產生受控碼的單元測試和測試資料。 IntelliTes
 * [開始建立、編輯和維護自動程式碼 UI 測試](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [使用自動程式碼 UI 測試來測試 UWP 應用程式](test-uwp-app-with-coded-ui-test.md)
 * [使用 Visual Studio Enterprise (Lab) 的自動程式碼 UI 測試簡介 ](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
-
-## <a name="load-testing"></a>負載測試
-
-[負載測試](../test/quickstart-create-a-load-test-project.md) 會執行單元測試和 web 效能測試，模擬伺服器應用程式的負載。
 
 ## <a name="related-scenarios"></a>相關案例
 

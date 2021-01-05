@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363116"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729336"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 
@@ -40,7 +40,7 @@ ms.locfileid: "97363116"
 
 EMD 的責任是決定物件或物件群組如何合併到模型中的特定位置。 尤其是，它會決定應該具現化哪些關聯性，以將合併的群組連結到模型。 您也可以自訂它來設定屬性，以及建立其他物件。
 
-![DSL&#45;EMD&#95;合併](../modeling/media/dsl-emd_merge.png)
+![當 E M D 決定新專案的加入方式時，圖表會顯示專案的樹狀結構和其參考關聯性。](../modeling/media/dsl-emd_merge.png)
 
 當您定義內嵌關聯性時，會自動產生 EMD。 當使用者將新的子實例加入至父系時，此預設 EMD 會建立關聯性的實例。 您可以修改這些預設 EMDs，例如藉由新增自訂程式碼。
 
@@ -50,7 +50,7 @@ EMD 的責任是決定物件或物件群組如何合併到模型中的特定位�
 
 您可以將專案合併指示詞加入至網域類別、網域關聯性、圖形、連接器和圖表。 您可以在 [DSL Explorer] 中的 [接收網域] 類別底下新增或尋找它們。 接收類別是已在模型中之專案的網域類別，而新的或複製的元素將會合並到該類別。
 
-![DSL&#45;EMD&#95;詳細資料](../modeling/media/dsl-emd_details.png)
+![[DSL Explorer] 的螢幕擷取畫面，其中顯示已選取 [ExampleElement] 做為索引類別且已核取 [套用至子類別] 選項的 E M D。](../modeling/media/dsl-emd_details.png)
 
 **索引類別** 是專案的網域類別，可以合併到接收類別的成員。 此 EMD 也會合並索引類別的子類別實例，除非您將 [ **套用至子類別** ] 設定為 [False]。
 

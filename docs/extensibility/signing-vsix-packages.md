@@ -1,5 +1,7 @@
 ---
 title: 簽署 VSIX 套件 |Microsoft Docs
+description: 瞭解如何簽署延伸模組元件。 VSIX 安裝程式會顯示 VSIX 簽署的訊息，以及簽章本身的相關資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17179c35496fc19322c5bb951f4d04bc28e5d7bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9152e45b402294dfd0bbb41bfda2c685588f01e
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700094"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716077"
 ---
 # <a name="signing-vsix-packages"></a>簽署 VSIX 套件
 擴充功能元件不需要經過簽署，就可以在 Visual Studio 中執行，但這是很好的作法。
@@ -46,5 +48,5 @@ ms.locfileid: "80700094"
 
    VSIXSignTool.exe sign/f \<certfile> /p \<password>\<VSIXfile>
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)

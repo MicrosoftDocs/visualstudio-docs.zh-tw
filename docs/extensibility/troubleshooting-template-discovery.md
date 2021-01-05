@@ -1,5 +1,7 @@
 ---
 title: 針對 Visual Studio 中的範本探索進行疑難排解 |Microsoft Docs
+description: 瞭解如何啟用診斷記錄，以針對在 Visual Studio SDK 中部署自訂專案和範本進行疑難排解。
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
 author: acangialosi
@@ -7,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff864e1a244d058b2c5ec1de33d116cfdcfe22db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235039"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716042"
 ---
 # <a name="troubleshooting-template-installation"></a>針對範本安裝進行疑難排解
 
@@ -70,7 +72,7 @@ ms.locfileid: "87235039"
 > [!NOTE]
 > 若要停用記錄，請移除 .pkgdef 檔案，或將的值變更 `EnableTemplateDiscoveryLog` 為 `dword:00000000` ，然後 `devenv /updateConfiguration` 再次執行。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立自訂專案和專案範本](creating-custom-project-and-item-templates.md)
 - [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)

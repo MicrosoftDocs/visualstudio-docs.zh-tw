@@ -1,5 +1,7 @@
 ---
 title: 自訂編輯器中的語法著色 |Microsoft Docs
+description: 瞭解 Visual Studio 環境 SDK 自訂編輯器中的語法著色，以顯示指定檔視圖的指定色彩。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72749d3a58b4adae149baefff9e9ae77f6b05f18
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 8aac72cbc26ff5e6abf96259fd161cba63b3b2af
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414174"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716064"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>自訂編輯器中的語法著色
 Visual Studio 環境 SDK 編輯器，包括核心編輯器，請使用語言服務來識別特定的語法專案，並以指定的檔查看色彩來顯示這些專案。

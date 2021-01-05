@@ -1,5 +1,7 @@
 ---
 title: 判斷提示失敗對話方塊 |Microsoft Docs
+description: 瞭解 [判斷提示失敗] 對話方塊，這是您可能會在 Visual Studio 的偵錯工具使用者介面中遇到的對話方塊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb42067bb4c88777a6c25ace71f53b9d9b3aa36b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acc8f5abaa0c839232bbcedc63d24387444bd749
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745773"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729076"
 ---
 # <a name="assertion-failed-dialog-box"></a>判斷提示已失敗對話方塊
 判斷提示 (Assertion) 陳述式會指定您希望在程式的某個特定點維持為 true 的條件。 如果該條件並未維持 true，表示判斷提示失敗，程式執行將會中斷，並出現這個對話方塊。
@@ -36,6 +38,6 @@ ms.locfileid: "72745773"
 |忽略|忽略判斷提示並且繼續執行程式。|
 |中止|停止程式執行並且結束偵錯工作階段。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [C/C++ 判斷提示](../debugger/c-cpp-assertions.md)
+- [C/c + + 判斷提示](../debugger/c-cpp-assertions.md)

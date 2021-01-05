@@ -1,5 +1,7 @@
 ---
 title: 註釋 | Microsoft Docs
+description: 在 Visual Studio debug interface access SDK 中尋找注釋符號類型 (SymTagAnnotation) 的參考資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1adc922021d1e2bcc9b55de0b5986ee0c1766d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cadd93b935e102cee2108be5c6fd6274f5a29e15
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462376"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728899"
 ---
 # <a name="annotation"></a>Annotation
 您可以使用符號來標注位置程式碼 `SymTagAnnotation` 。
@@ -37,7 +39,7 @@ ms.locfileid: "85462376"
 |[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|`VARIANT`|常數資料的值。|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|此批註在可執行映射中的位置。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)
 - [符號位置](../../debugger/debug-interface-access/symbol-locations.md)

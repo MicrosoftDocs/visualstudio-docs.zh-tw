@@ -1,5 +1,7 @@
 ---
 title: 16bpp 呈現目標格式變異 |Microsoft Docs
+description: 將每個圖元的16位套用 (bpp) 轉譯目標格式變異，方法是將所有呈現目標和背景緩衝區的像素格式設定為 DXGI_FORMAT_B5G6R5_UNORM。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
@@ -8,17 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a63261a4ef8a6304bec8c2bdde1d9ec9113405e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa73637244469d781ac77acba362886b5656f8d8
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74188584"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728040"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp 轉譯目標格式變異
 將所有呈現目標和背景緩衝區的像素格式設定為 DXGI_FORMAT_B5G6R5_UNORM。
 
-## <a name="interpretation"></a>解譯
+## <a name="interpretation"></a>解讀
  轉譯目標或背景緩衝區通常會使用 32 bpp (32 位的每圖元) 格式，例如 B8G8R8A8_UNORM。 32-bpp 格式可能會耗用大量的記憶體頻寬。 因為 B5G6R5_UNORM 格式是 16 bpp 的格式，其大小為 32-bpp 格式的一半，所以使用它可以減輕記憶體頻寬的壓力，但會降低色彩精確度的成本。
 
  如果此變異顯示大量的效能提高，則可能表示您的應用程式耗用太多記憶體頻寬。 您可以大幅提升效能，特別是當分析的框架有大量的過度繪製或 Alpha 混合時。

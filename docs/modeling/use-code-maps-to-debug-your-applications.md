@@ -18,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d935ee5c4341a2d625c6f85226cc649d696d6e6e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361647"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729388"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用 Code Map 偵錯您的應用程式
 
@@ -62,9 +62,9 @@ Code Map 有助於避免在大型程式碼基底、不熟悉的程式碼或舊�
 ## <a name="navigate-and-examine-code-from-the-map"></a>從地圖中巡覽和檢查程式碼
  若要查看每個欄位的程式碼定義，請按兩下地圖上的欄位或選取欄位，然後按下 **F12**。 綠色箭頭會在對應中的項目之間移動。 您在程式碼編輯器中的游標也會自動移動。
 
- ![Code map &#45; 檢查欄位定義](../modeling/media/codemapstoryboardpaint5.png)
+ ![已選取歷程記錄欄位之 code map 視窗的螢幕擷取畫面，以及反白顯示所有歷程記錄實例的程式碼編輯器視窗。](../modeling/media/codemapstoryboardpaint5.png)
 
- ![Code map &#45; 檢查欄位定義](../modeling/media/codemapstoryboardpaint5a.png)
+ ![已選取 [paintObjects] 欄位的 code map 視窗的螢幕擷取畫面，以及反白顯示 paintObjects 所有實例的程式碼編輯器視窗。](../modeling/media/codemapstoryboardpaint5a.png)
 
 > [!TIP]
 > 您也可以在程式碼編輯器中移動游標來移動對應上的綠色箭頭。
@@ -81,24 +81,24 @@ Code Map 有助於避免在大型程式碼基底、不熟悉的程式碼或舊�
 
  變更配置以重新排列關聯性流程，使對應更容易閱讀。 您也可以透過拖曳的方式將項目在對應間移動。
 
- ![Code map &#45; 變更版面配置](../modeling/media/codemapstoryboardpaint7a.png)
+ ![[Code map] 視窗的螢幕擷取畫面，其中已開啟 [版面配置] 功能表，並已選取 [左方至 Rgiht] 命令。](../modeling/media/codemapstoryboardpaint7a.png)
 
 > [!TIP]
 > 依預設，會開啟 [累加 **式版面** 配置]。 當您加入新項目時，這會盡可能減少重新排列對應。 若要在每次加入新專案時重新排列整個對應，請關閉 [累加 **式版面** 配置]。
 
- ![Code map &#45; 變更版面配置](../modeling/media/codemapstoryboardpaint7.png)
+ ![Code map 視窗的螢幕擷取畫面，其中欄位之間的 relationshiop 箭號是由左至右。](../modeling/media/codemapstoryboardpaint7.png)
 
  我們來檢查這些方法。 在對應上，按兩下 [ **PaintCanvas** ] 方法，或選取此方法並按下 **F12**。 您了解這個方法會將 `history` 和 `paintObjects` 建立為空白清單。
 
- ![Code map &#45; 檢查方法定義](../modeling/media/codemapstoryboardpaint8.png)
+ ![已選取 PaintCanvas 方法之 code map 視窗的螢幕擷取畫面，以及顯示反白顯示 PainCanvas 方法名稱的程式碼片段影像。](../modeling/media/codemapstoryboardpaint8.png)
 
  現在重複相同步驟來檢查 `clear` 方法定義。 您了解 `clear` 會對 `paintObjects` 和 `history` 執行某些工作。 然後呼叫 `Repaint` 方法。
 
- ![Code map &#45; 檢查方法定義](../modeling/media/codemapstoryboardpaint9.png)
+ ![已選取 Clear 方法的 code map 視窗的螢幕擷取畫面，以及顯示 Clear 方法程式碼的程式碼片段影像。](../modeling/media/codemapstoryboardpaint9.png)
 
  現在檢查 `addPaintObject` 方法定義。 它也會對 `history` 和 `paintObjects` 執行某些工作。 它也會呼叫 `Repaint`。
 
- ![Code map &#45; 檢查方法定義](../modeling/media/codemapstoryboardpaint10.png)
+ ![已選取 addPaintObject 方法之 code map 視窗的螢幕擷取畫面，以及顯示 addPaintObject 方法程式碼的程式碼片段影像。](../modeling/media/codemapstoryboardpaint10.png)
 
 ## <a name="find-the-problem-by-examining-the-map"></a>檢查地圖找出問題
  似乎所有修改 `history` 和 `paintObjects` 的方法都會呼叫 `Repaint`。 但 `undo` 方法不會呼叫 `Repaint`，即使 `undo` 會修改相同的欄位。 因此您認為可以從 `Repaint` 呼叫 `undo` 解決這個問題。

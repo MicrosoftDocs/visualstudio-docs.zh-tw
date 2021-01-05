@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 31b9d8649abed0f9901aa872ff3939c25e3025b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9535a7d88cb375d97867092eddf969095c327329
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235104"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729238"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>對使用 Docker 進行的 Visual Studio 開發進行疑難排解
 
@@ -24,22 +24,15 @@ ms.locfileid: "87235104"
 
 ## <a name="volume-sharing-is-not-enabled-enable-volume-sharing-in-the-docker-ce-for-windows-settings--linux-containers-only"></a>未啟用磁碟區共用。 在 Docker CE for Windows 設定中啟用磁碟區共用 (僅限 Linux 容器)
 
-若要解決此問題：
+如果您搭配使用 Hyper-v 與 Docker，則只需要管理檔案共用。 如果您使用的是 WSL 2，則不需要執行下列步驟，而且將不會顯示檔案共用選項。 若要解決此問題：
 
-1. 以滑鼠右鍵按一下通知區域中的 [適用於 Windows 的 Docker]****，然後選取 [設定]****。
-1. 選取 [共用磁碟機]**** 並共用系統磁碟機以及專案所在的磁碟機。
+1. 以滑鼠右鍵按一下通知區域中的 [適用於 Windows 的 Docker]，然後選取 [設定]。
+1. 選取 **資源**  >  **檔共用**，並共用需要存取的資料夾。 您可以共用整個系統磁片磁碟機，但不建議這麼做。
 
-> [!NOTE]
-> 如果檔案似乎已共用，您仍可能需要按一下對話方塊下的 [重設認證...] 連結，以重新啟用磁碟區共用。 若要在重設認證後繼續，您可能必須重新啟動 Visual Studio。
-
-![共用的磁碟機](media/troubleshooting-docker-errors/shareddrives.png)
+    ![共用的磁碟機](media/troubleshooting-docker-errors/docker-settings-image.png)
 
 > [!TIP]
-> 當未設定 **共用磁片磁碟機** 時，Visual Studio Visual Studio 2017 15.6 版以後版本的提示。
-
-### <a name="container-type"></a>容器類型
-
-將 Docker 支援新增至專案時，您可以選擇 Windows 或 Linux 容器。 Docker 主機必須執行相同的容器類型。 若要變更執行中 Docker 執行個體中的容器類型，請以滑鼠右鍵按一下系統匣的 Docker 圖示，然後選擇 [Switch to Windows containers...] (切換至 Windows 容器...)**** 或 [Switch to Linux containers] (切換至 Linux 容器...)****。
+> 當未設定 **共用磁片磁碟機** 時，Visual Studio Visual Studio 2017 15.6 版以後的版本將會提示。
 
 ## <a name="unable-to-start-debugging"></a>無法開始偵錯
 
@@ -54,7 +47,7 @@ ms.locfileid: "87235104"
 
 ## <a name="mounts-denied"></a>拒絕掛接
 
-使用 macOS 適用的 Docker 時，您可能會遇到參考 /usr/local/share/dotnet/sdk/NuGetFallbackFolder 資料夾的錯誤。 將此資料夾新增至 Docker 中的 [檔案共用] 索引標籤
+使用 macOS 適用的 Docker 時，您可能會遇到參考 /usr/local/share/dotnet/sdk/NuGetFallbackFolder 資料夾的錯誤。 將此資料夾新增至 Docker 中的 [檔案共用] 索引標籤。
 
 ## <a name="docker-users-group"></a>Docker 使用者群組
 
@@ -83,20 +76,34 @@ net localgroup docker-users DOMAIN\username /add
 
 ## <a name="low-disk-space"></a>磁碟空間不足
 
-根據預設，Docker 會將影像儲存在 *% ProgramData%/Docker/* 資料夾中，此資料夾通常位於系統磁片磁碟機 * C:\ProgramData\Docker \* 。 若要防止映射佔用系統磁片磁碟機上的寶貴空間，您可以變更映射資料夾位置。  從工作列上的 Docker 圖示，開啟 Docker 設定，選擇 [ **Daemon**]，然後從 [ **基本** ] 切換為 [ **Advanced**]。 在編輯窗格中，新增 `graph` 具有您所需 Docker 映射位置值的屬性設定：
+根據預設，Docker 會將影像儲存在 *% ProgramData%/Docker/* 資料夾中，此資料夾通常位於系統磁片磁碟機 * C:\ProgramData\Docker \* 。 若要防止映射佔用系統磁片磁碟機上的寶貴空間，您可以變更映射資料夾位置。 操作方法：
+
+ 1. 以滑鼠右鍵按一下工作列上的 Docker 圖示，然後選取 [ **設定**]。
+ 1. 選取 [ **Docker 引擎**]。 
+ 1. 在編輯窗格中，新增 `graph` 具有您所需 Docker 映射位置值的屬性設定：
 
 ```json
     "graph": "D:\\mypath\\images"
 ```
 
-![Docker 映射位置設定的螢幕擷取畫面](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+![Docker 檔案共用的螢幕擷取畫面](media/troubleshooting-docker-errors/docker-daemon-settings.png)
 
-按一下 **[** 套用] 以重新開機 Docker。 這些步驟會修改 *% ProgramData% \docker\config\daemon.js上*的設定檔。 先前建立的映射不會移動。
+按一下 [套用 **& 重新開機**]。 這些步驟會修改 *% ProgramData% \docker\config\daemon.js上* 的設定檔。 先前建立的映射不會移動。
+
+## <a name="container-type-mismatch"></a>容器類型不符
+
+將 Docker 支援新增至專案時，您可以選擇 Windows 或 Linux 容器。 如果 Docker Server 主機未設定為與專案目標執行相同的容器類型，您可能會看到類似下面的錯誤：
+
+![Docker 主機和專案不符的螢幕擷取畫面](media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png)
+
+若要解決此問題：
+
+- 以滑鼠右鍵按一下系統匣中的適用於 Windows 的 Docker 圖示，然後選擇 [ **切換到 Windows 容器 ...** ] 或 [ **切換至 Linux 容器**...]。
 
 ## <a name="microsoftdockertools-github-repo"></a>Microsoft/DockerTools GitHub 存放庫
 
 對於您遇到的其他任何問題，請參閱 [Microsoft/DockerTools](https://github.com/microsoft/dockertools/issues) 問題。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)

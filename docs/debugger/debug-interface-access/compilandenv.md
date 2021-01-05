@@ -1,5 +1,7 @@
 ---
 title: CompilandEnv |Microsoft Docs
+description: 在 Visual Studio debug interface access SDK 中尋找 CompilandEnv 符號類型 (SymTagCompilandEnv) 的參考資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a27ada5f56d4525824335faebf1e19426241ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e71dd47c75b7cfcef9580119563a7c8f2227268a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462243"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728759"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 編譯器可能會包含具有符號的其他環境變數。 `SymTagCompilandEnv`每個變數都有一個符號。
@@ -34,6 +36,6 @@ ms.locfileid: "85462243"
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|傳回 `SymTagCompilandEnv` (其中一個) 的 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 值。|
 |[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|`VARIANT`|變數的字串值內容 (`VT_BSTR`) 。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [編譯模組](../../debugger/debug-interface-access/compiland.md)
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

@@ -1,5 +1,7 @@
 ---
 title: 設定遠端偵錯程式的防火牆對話方塊 |Microsoft Docs
+description: 閱讀 [設定防火牆進行遠端偵錯程式] 對話方塊，這會在 Windows 防火牆停止偵錯工具從網路接收資料時出現。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2511fc2adfa63ff28f8459f48cbdf4b4623ff5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86a0cac2e42e1271e689f2b1880eef8ca6d14644
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745668"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728959"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>設定遠端偵錯防火牆對話方塊
 當 Windows 防火牆封鎖偵錯工具，使其無法透過網路接收資訊時，這個對話方塊就會出現。 若要繼續進行遠端偵錯，您必須在防火牆中開啟出入口，讓偵錯工具可以接收資訊。
@@ -36,11 +38,11 @@ ms.locfileid: "72745668"
 ## <a name="uielement-list"></a>UIElement 清單
  **取消遠端偵錯** 取消遠端偵錯嘗試。 電腦的安全性設定維持不變。
 
- **從區域網路上的電腦 (子網進行遠端偵錯解除封鎖) ** 啟用本機子網上電腦的遠端偵測。 這樣會造成區域子網路上的電腦暴露出弱點，但防火牆會繼續封鎖來自子網路外的資訊。
+ **從區域網路上的電腦 (子網進行遠端偵錯解除封鎖)** 啟用本機子網上電腦的遠端偵測。 這樣會造成區域子網路上的電腦暴露出弱點，但防火牆會繼續封鎖來自子網路外的資訊。
 
  **解除封鎖來自任何電腦的遠端偵錯** 可讓您在網路上的任何位置對電腦進行遠端偵錯。 這個設定最不安全。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [遠端偵錯](../debugger/remote-debugging.md)

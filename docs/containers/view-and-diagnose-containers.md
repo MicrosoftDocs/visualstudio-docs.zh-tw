@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: fd876e86cefcd0ce50aab02de8e7f4cf37d3ab51
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742791"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729219"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>如何在 Visual Studio 中查看及診斷容器和映射
 
@@ -25,11 +25,11 @@ ms.locfileid: "89742791"
 
 ## <a name="view-information-about-your-containers"></a>查看容器的相關資訊
 
-當您啟動容器化 .NET 專案時，[ **容器** ] 視窗會自動開啟。 若要隨時在 Visual Studio 中查看您的容器，請使用**Ctrl** + **Q**啟動 Visual Studio 搜尋方塊，然後輸入 `Containers` 並選擇第一個專案。 您也可以從主功能表開啟 [ **容器** ] 視窗。 使用功能表路徑**視圖**  >  **其他 Windows**  >  **容器**。  
+當您啟動容器化 .NET 專案時，[ **容器** ] 視窗會自動開啟。 若要隨時在 Visual Studio 中查看您的容器，請使用 **Ctrl** + **Q** 啟動 Visual Studio 搜尋方塊，然後輸入 `Containers` 並選擇第一個專案。 您也可以從主功能表開啟 [ **容器** ] 視窗。 使用功能表路徑 **視圖**  >  **其他 Windows**  >  **容器**。  
 
-![[容器] 視窗中 [環境] 索引標籤的螢幕擷取畫面](media/view-and-diagnose-containers/container-window.png)
+![[容器 Visual Studio] 視窗的螢幕擷取畫面，其中已選取左窗格中的容器，並在右窗格中選取 [環境] 索引標籤。](media/view-and-diagnose-containers/container-window.png)
 
-在左側，您會看到本機電腦上的容器清單。 與解決方案相關聯的容器會顯示在 [ **方案容器**] 下。 在右側，您會看到一個包含**環境**、**埠**、**記錄**檔和檔案索引標籤的**窗格。**
+在左側，您會看到本機電腦上的容器清單。 與解決方案相關聯的容器會顯示在 [ **方案容器**] 下。 在右側，您會看到一個包含 **環境**、**埠**、**記錄** 檔和檔案索引標籤的 **窗格。**
 
 > [!TIP]
 > 您可以輕鬆自訂 **容器** 工具視窗在 Visual Studio 中的固定位置。 請參閱 [Visual Studio 中的自訂視窗版面](../ide/customizing-window-layouts-in-visual-studio.md)配置。 依預設，當偵錯工具正在執行時，[ **容器** ] 視窗會停駐在 [ **監看** 式] 視窗中。
@@ -38,7 +38,7 @@ ms.locfileid: "89742791"
 
 [ **環境** ] 索引標籤會顯示容器中的環境變數。 針對您的應用程式容器，您可以使用許多方式來設定這些變數，例如，在 Dockerfile、env 檔案中，或使用 Docker 命令啟動容器時，使用-e 選項。
 
-![[容器] 視窗中 [環境] 索引標籤的螢幕擷取畫面](media/view-and-diagnose-containers/containers-environment-vars.png)
+![Visual Studio 中 [容器] 視窗的螢幕擷取畫面，其中顯示容器 WebApplication11 的環境變數。](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > 對環境變數所做的任何變更都不會即時反映出來。 此外，此索引標籤中的環境變數是容器上的系統內容變數，且不會反映應用程式本機的使用者環境變數。
@@ -60,11 +60,11 @@ ms.locfileid: "89742791"
 若要清除記錄檔，請使用 [**記錄**] 索引標籤上的 [**清除**] 按鈕。 若要取得所有記錄檔，請使用 [重新整理 **] 按鈕。**
 
 > [!NOTE]
-> 當您執行時，Visual Studio 會自動將 stdout 和 stderr 重新導向至 [**輸出**] 視窗，因此使用**Ctrl**F5 從 Visual Studio 啟動的 Windows 容器 + **F5**將不會顯示此索引標籤中的記錄，而是改用 [**輸出**視窗]。
+> 當您執行時，Visual Studio 會自動將 stdout 和 stderr 重新導向至 [**輸出**] 視窗，因此使用 **Ctrl** F5 從 Visual Studio 啟動的 Windows 容器 + 將不會顯示此索引標籤中的記錄，而是改用 [**輸出** 視窗]。
 
 ## <a name="view-the-filesystem"></a>查看檔案系統
 
-**在 [檔案] 索引**標籤上，您可以查看容器的檔案系統，包括包含您專案的應用程式資料夾。
+**在 [檔案] 索引** 標籤上，您可以查看容器的檔案系統，包括包含您專案的應用程式資料夾。
 
 ![[容器] 視窗中 [檔案] 索引標籤的螢幕擷取畫面](media/view-and-diagnose-containers/container-filesystem.png)
 
@@ -108,7 +108,7 @@ ms.locfileid: "89742791"
 
 閱讀 [容器工具總覽](overview.md)，以深入瞭解 Visual Studio 中提供的容器工具。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Visual Studio 中的容器開發](./index.yml)
 

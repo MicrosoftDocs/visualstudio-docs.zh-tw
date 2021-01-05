@@ -1,5 +1,7 @@
 ---
 title: 圖形畫面格分析 |Microsoft Docs
+description: 使用 Visual Studio 圖形分析器中的圖形畫面格分析，分析和最佳化 Direct3D 遊戲或應用程式的轉譯效能。
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 943436a64f50523905a03ed2a87e91508d1b7471
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f87686290842e0bbc3c575b5c72e3d1eeb24f351
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911474"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727719"
 ---
 # <a name="graphics-frame-analysis"></a>圖形框架分析
 使用 Visual Studio 圖形分析器中的圖形畫面格分析，分析和最佳化 Direct3D 遊戲或應用程式的轉譯效能。
@@ -35,7 +37,7 @@ ms.locfileid: "72911474"
   若要查看畫面格分析針對您的應用程式所能做的示範，您可以觀看 Channel 9 上的 [Visual Studio 圖形畫面格分析](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) 影片。
 
 ## <a name="using-frame-analysis"></a>使用畫面格分析
- 在您使用畫面格分析之前，必須從執行中的應用程式擷取圖形資訊，就像使用任何其他圖形分析器工具一樣。 然後，在圖形記錄文件 (.vsglog) 視窗中，選擇 [畫面格分析]**** 索引標籤。
+ 在您使用畫面格分析之前，必須從執行中的應用程式擷取圖形資訊，就像使用任何其他圖形分析器工具一樣。 然後，在圖形記錄文件 (.vsglog) 視窗中，選擇 [畫面格分析] 索引標籤。
 
  ![選取 [畫面格分析] 索引標籤。](media/pix_frame_analysis_select_tab.png "pix_frame_analysis_select_tab")
 
@@ -62,7 +64,7 @@ ms.locfileid: "72911474"
 
 - 如果二分之一/四分之一紋理維度變異顯示重大效能提高，則您的紋理可能佔用太多記憶體、耗用太多頻寬，或無效率地使用紋理快取。 如果此變異未顯示效能變更，則您可能使用較大且較精細的紋理，而且沒有花費效能成本。
 
-  硬體計數器可用時，您可以使用它們來收集應用程式的呈現效能為何不佳的極詳細資訊。 所有功能層級 9.2 及以上的裝置都可支援深度阻擋查詢 ([pixels occluded]**** 計數器) 和時間戳記。 可能還有其他硬體計數器可用，視 GPU 製造商是否在其驅動程式中實作硬體計數器並將其公開而定。 您可以使用這些計數器，確認摘要表格中所顯示結果的精確原因，例如，您可以檢查深度測試所阻擋像素的百分比，判斷過度繪製是否為因素。
+  硬體計數器可用時，您可以使用它們來收集應用程式的呈現效能為何不佳的極詳細資訊。 所有功能層級 9.2 及以上的裝置都可支援深度阻擋查詢 ([pixels occluded] 計數器) 和時間戳記。 可能還有其他硬體計數器可用，視 GPU 製造商是否在其驅動程式中實作硬體計數器並將其公開而定。 您可以使用這些計數器，確認摘要表格中所顯示結果的精確原因，例如，您可以檢查深度測試所阻擋像素的百分比，判斷過度繪製是否為因素。
 
 ### <a name="timeline-and-summary-table"></a>時間軸和摘要表格
  預設會顯示 [時間軸] 和 [摘要] 表格，並摺疊其他區段。
@@ -173,7 +175,7 @@ ms.locfileid: "72911474"
 ## <a name="variants"></a><a name="Variants"></a> 變異
  畫面格分析對畫面格在播放期間的呈現方式，所進行的每項變更稱為「變異」(*variant*)。 畫面格分析所檢查的變異，會對應至常見且相當簡單的變更，而您使用這些變更就可以改善應用程式的呈現效能或視覺品質，例如，減少紋理大小、使用紋理壓縮，或啟用不同類型的消除鋸齒。 變異會覆寫您應用程式的一般呈現內容和參數。 摘要如下：
 
-|變數|說明|
+|Variant|描述|
 |-------------|-----------------|
 |**1x1 檢視區大小**|將所有呈現目標上的檢視區維度減少為 1x1 個像素。<br /><br /> 如需詳細資訊，請參閱 [1x1 檢視區大小變異](1x1-viewport-size-variant.md)|
 |**0x MSAA**|停用所有呈現目標上的多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱 [0x/2x/4x MSAA 變異](0x-2x-4x-msaa-variants.md)|

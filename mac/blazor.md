@@ -10,20 +10,20 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 3280e63ae92a99cfa076b79e499a7b18952285c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 30e9a62e8bf0364a76cbd43995cbb77c1a5bd0c4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584031"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729414"
 ---
 # <a name="create-no-locblazor-web-apps"></a>建立 Blazor web 應用程式
 
 本指南提供建立第一個 Blazor web 應用程式的簡介。 如需更深入的指引，請參閱[ASP.NET Core Blazor 簡介](/aspnet/core/blazor/index)。
 
-ASP.NET Core Blazor 支援兩種不同的裝載選項; Blazor WebAssembly (WASM) 或 Blazor 伺服器。 Visual Studio for Mac 支援這兩種裝載模型。 Visual Studio for Mac 8.4 + 支援 Blazor Server 和 Visual Studio for Mac 8.6 + 兩者都支援。 如需裝載模型的詳細資訊， Blazor 請參閱 [ASP.NET Core Blazor 裝載模型 ](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1)。 您可以在 Blazor WebAssembly Visual Studio for Mac 的預覽 (版本中，透過 **Visual Studio > 檢查更新 ...** 功能表) 中的預覽更新通道，取得在中偵錯工具的支援。
+ASP.NET Core Blazor 支援兩種不同的裝載選項; Blazor WebAssembly (WASM) 或 Blazor 伺服器。 Visual Studio for Mac 支援這兩種裝載模型。 Visual Studio for Mac 8.4 + 支援 Blazor Server 和 Visual Studio for Mac 8.6 + 兩者都支援。 如需裝載模型的詳細資訊， Blazor 請參閱 [ASP.NET Core Blazor 裝載模型 ](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1&preserve-view=true)。 您可以在 Blazor WebAssembly Visual Studio for Mac 的預覽 (版本中，透過 **Visual Studio > 檢查更新 ...** 功能表) 中的預覽更新通道，取得在中偵錯工具的支援。
 
-什麼是 Blazor ？ Blazor 是使用 .NET 建立互動式用戶端 web UI 的架構，可為 網頁程式開發人員提供下列優點：
+什麼是 Blazor？ Blazor 是使用 .NET 建立互動式用戶端 web UI 的架構，可為 網頁程式開發人員提供下列優點：
 
 * 以 C# 撰寫而不是 JavaScript。
 * 利用 .NET 程式庫的現有 .NET 生態系統。
@@ -33,11 +33,11 @@ ASP.NET Core Blazor 支援兩種不同的裝載選項; Blazor WebAssembly (WASM)
 * 以常用的語言、架構和工具建置，不僅穩定、功能豐富，而且容易使用。
 
 ## <a name="create-a-new-no-locblazor-webassembly-project"></a>建立新 Blazor WebAssembly 專案
-1. 在 [ **開始] 視窗**中，選取 [ **新增** ] 以建立新的專案：
+1. 在 [ **開始] 視窗** 中，選取 [ **新增** ] 以建立新的專案：
 
    ![醒目提示新選項的 Visual Studio for Mac 開始視窗](media/blazor-new-project.png)
 
-1. 在 [**新增專案**] 對話方塊中，選取 [ **.net Core** > **應用** > ** Blazor WebAssembly 程式應用程式**]，然後選取 **[下一步**： ![ 選擇新專案的範本] 對話方塊，並選取下列專案：：： no-loc (Blazor) ：：： Server 應用程式範本](media/blazor-wasm-project-template.png)
+1. 在 [**新增專案**] 對話方塊中，選取 [ **.net Core** > **應用** > **Blazor WebAssembly 程式**]，然後選取 [**下一步**]： [ ![ 新增專案] 對話方塊的螢幕擷取畫面，其中會在 [應用程式] 窗格的 [ASP.NET Core] 和 [下一個] 按鈕下反白顯示 [新增專案] 對話方塊 (：： Blazor WebAssembly) ：：](media/blazor-wasm-project-template.png)
 
 1. 選取 [.NET Core 3.1] 作為目標 framework，然後選取 **[下一步]**。 
    ![設定您的新：：：非 loc (Blazor WebAssembly) ：：：應用程式對話方塊，該對話方塊會顯示為已選取為 .NET Core 3.1 的目標 Framework](media/blazor-wasm-select-target-framework.png)
@@ -47,7 +47,7 @@ ASP.NET Core Blazor 支援兩種不同的裝載選項; Blazor WebAssembly (WASM)
 
    Visual Studio for Mac 會在程式碼配置視窗中開啟您的專案。
 
-1. 選取 [**執行**  >  **啟動但不進行調試**程式] 以執行應用程式。
+1. 選取 [**執行**  >  **啟動但不進行調試** 程式] 以執行應用程式。
 
    Visual Studio 開始 [Kestrel](/aspnet/core/fundamentals/servers/kestrel)、將瀏覽器開啟至 `https://localhost:5001` ，並顯示您的 Blazor web 應用程式。
 
@@ -55,10 +55,10 @@ ASP.NET Core Blazor 支援兩種不同的裝載選項; Blazor WebAssembly (WASM)
 
 ## <a name="creating-a-new-no-locblazor-server-project"></a>建立新的 Blazor 伺服器專案
 
-1. 在 [ **開始] 視窗**中，選取 [ **新增** ] 以建立新的專案：
+1. 在 [ **開始] 視窗** 中，選取 [ **新增** ] 以建立新的專案：
 
    ![醒目提示新選項的 Visual Studio for Mac 開始視窗](media/blazor-new-project.png)
-1. 在 [**新增專案**] 對話方塊中，選取 [ **.net Core** > **應用**程式 > ** Blazor 伺服器應用程式**]，然後選取 **[下一步**： ![ 選擇新專案的範本] 對話方塊，並選取下列專案：：： no-loc (Blazor) ：：： Server 應用程式範本](media/blazor-project-template.png)
+1. 在 [**新增專案**] 對話方塊中，選取 [ **.net Core** > **應用** > **Blazor 程式伺服器應用程式**]，然後選取 [**下一步**]： [ ![ 新增專案] 對話方塊的螢幕擷取畫面，並在 [應用程式] 窗格的 [ASP.NET Core] 和 [下一個] 按鈕下反白顯示 [新增專案)  (] 對話方塊。](media/blazor-project-template.png)
 
 1. 選取 [.NET Core 3.1] 作為目標 framework，然後選取 **[下一步]**。 
    ![設定您的新：：：非 loc (Blazor) ：：： Server 應用程式對話方塊，此對話方塊會顯示為已選取為 .NET Core 3.1 的目標 Framework](media/blazor-select-target-framework.png)
@@ -67,7 +67,7 @@ ASP.NET Core Blazor 支援兩種不同的裝載選項; Blazor WebAssembly (WASM)
    ![當輸入專案名稱時，會顯示新的：：： no-loc (Blazor) ：：： Server 應用程式對話方塊](media/blazor-name-project.png)
 
    Visual Studio for Mac 會在程式碼配置視窗中開啟您的專案。
-1. 選取 [**執行**  >  **啟動但不進行調試**程式] 以執行應用程式。
+1. 選取 [**執行**  >  **啟動但不進行調試** 程式] 以執行應用程式。
 
    Visual Studio 開始 [Kestrel](/aspnet/core/fundamentals/servers/kestrel)、將瀏覽器開啟至 `https://localhost:5001` ，並顯示您的 Blazor web 應用程式。
 
@@ -79,7 +79,7 @@ ASP.NET Core Blazor 支援兩種不同的裝載選項; Blazor WebAssembly (WASM)
 
 在上述的逐步解說中，我們看到 [ Blazor 伺服器應用程式] 專案範本如何協助您建立新的 Blazor 伺服器應用程式或 Blazor WebAssembly 應用程式專案。 讓我們看看 Visual Studio for Mac 中的一些額外功能，以支援 Blazor 專案開發。
 
-### <a name="editor-support-for-razor-files"></a>*Razor*檔案的編輯器支援
+### <a name="editor-support-for-razor-files"></a>*Razor* 檔案的編輯器支援
 Visual Studio for Mac 包含編輯 razor 檔案的支援，也就是您在建立應用程式時將使用的大部分檔案。 Blazor Visual Studio for Mac 針對您的 razor 檔案（包括專案中所宣告的 Razor 元件的完成）提供完整的顏色標示和完成支援。
 
 ![顯示 Intellisense for：：：非 loc (Blazor) ：：：的 Visual Studio for Mac 編輯器視窗](media/blazor-intellisense.png)
@@ -126,9 +126,9 @@ Blazor web 應用程式預設會包含幾個目錄和檔案。 當您開始使�
 
 此檔案包含設定應用程式行為的程式碼，例如應用程式是否需要對 cookie 的同意。 如需詳細資訊，請參閱 [ASP.NET Core 中的應用程式啟動](/aspnet/core/fundamentals/startup)。
 
-## <a name="summary"></a>摘要
+## <a name="summary"></a>總結
 在本教學課程中，您已瞭解如何 Blazor 在 Visual Studio for Mac 中建立新的伺服器應用程式或 Blazor WebAssembly 應用程式，並瞭解一些 Visual Studio for Mac 提供來協助您建立 Blazor 應用程式的功能。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 如需建立 Blazor web 應用程式的完整指南，請參閱[ASP.NET Core Blazor 簡介](/aspnet/core/blazor/index)。

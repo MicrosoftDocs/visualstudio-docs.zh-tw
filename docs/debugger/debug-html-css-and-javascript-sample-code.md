@@ -1,5 +1,7 @@
 ---
 title: Debug HTML 和 CSS 範例程式碼 |Microsoft Docs
+description: 尋找搭配快速入門偵錯工具使用的 HTML 和 CSS 範例程式碼。 本文章中已修正設計快速入門中出現的錯誤。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 245676d084485ee46647112f5409cdb1854d6913
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745552"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728907"
 ---
 # <a name="debug-html-and-css-sample-code"></a>對 HTML 和 CSS 範例程式碼進行偵錯
 
@@ -101,5 +103,5 @@ ms.locfileid: "72745552"
 })();
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -1,5 +1,7 @@
 ---
 title: 區塊 | Microsoft Docs
+description: 尋找區塊符號類型 (SymTagBlock) 的相關資訊，這會在 Visual Studio debug interface access SDK 的函式中識別嵌套的範圍。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45e1d97c694806857d9ee7920e6d4fd640db4582
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3b7e4430c2bbfb6e1372a750608d4105b3d3e18
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462264"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728864"
 ---
 # <a name="block"></a>封鎖
 每個程式碼區塊都會以 `SymTagBlock` 符號識別。 區塊符號用來識別函式內的嵌套範圍。
@@ -41,7 +43,7 @@ ms.locfileid: "85462264"
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|傳回 `SymTagBlock` (其中一個) 的 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 值。|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|傳回此區塊在可執行檔中的虛擬位址。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)
 - [符號位置](../../debugger/debug-interface-access/symbol-locations.md)

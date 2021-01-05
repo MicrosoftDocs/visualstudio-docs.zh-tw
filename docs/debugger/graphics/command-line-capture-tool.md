@@ -1,5 +1,7 @@
 ---
-title: 命令列捕獲工具 |Microsoft Docs
+title: Command-Line Capture 工具 |Microsoft Docs
+description: 深入瞭解 DXCap.exe，這是一種命令列工具，適用于圖形診斷的捕獲和播放，可跨所有功能層級支援 Direct3D 10 到 Direct3D 12。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3618c1d6e929d40108abd5fd0b0cc3a3361964bf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64808467"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727873"
 ---
 # <a name="command-line-capture-tool"></a>命令列擷取工具
 DXCap.exe 是圖形診斷擷取及播放的命令列工具。 它支援 Direct3D 10 到 Direct3D 12 的所有功能層級。
@@ -137,7 +139,7 @@ DXCap.exe -e map
 
  上述命令會列舉符合 "map" 的 UWP 應用程式;輸出如下：
 
- **Package "BingMaps"：** **InstallDirectory： C:\Program files\windowsapps\microsoft. BingMaps_2. .1.2914. 1734_X64__8wekyb3d8bbwe** **FullName： Microsoft. BingMaps_2. .1.2914. 1734_x64__8wekyb3d8bbwe** **UserSID： S-1-5-21-2127521184-1604012920-1887927527-5603533** **Name： Microsoft. BingMaps** **Publisher： CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond，S = 華盛頓，C = US** **Version： 2.1.2914.1734** **可啟動 Applications：** **Id： AppexMaps** **Exe： C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA： No** **AppSpec (to 啟動) ： DXCap.exe-C BingMaps_2。1734_x64__8wekyb3d8bbwe，.1.2914** 每個列舉應用程式的輸出的最後一行會顯示您可用來從中捕獲圖形資訊的命令。
+ **封裝 "Microsoft. BingMaps"：** **InstallDirectory： C： \ Program Files \ WindowsApps \ BingMaps_2. 1. 2914. 1734_x64__8wekyb3d8bbwe** **FullName：** BingMaps_2. 2914. 1734 _x64__8wekyb3d8bbwe **UserSID： S-1-5-21-2127521184-1604012920-1887927527-5603533** **Name： Microsoft. BingMaps** **Publisher： CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond，S = 華盛頓州，C = US** **Version： 2914. 1734** **可啟動 Applications：** **Id： AppexMaps** **Exe： C： \ Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA： No** **AppSpec (to 啟動) ： DXCap.exe-C BingMaps_2，2914 1734，_x64__8wekyb3d8bbwe** 每個列舉應用程式的輸出最後一行會顯示您可用來從中捕獲圖形資訊的命令。
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>擷取特定框架或特定時間之間的框架。
  使用 `-frame` 指定您要使用逗號和範圍來捕捉的框架：
@@ -259,4 +261,4 @@ DXCap.exe -p regression_test_12.vsglog -toXML temp.xml
 </Method>
 ```
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求

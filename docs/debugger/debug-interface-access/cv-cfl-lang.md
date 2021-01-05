@@ -1,5 +1,7 @@
 ---
 title: CV_CFL_LANG | Microsoft Docs
+description: 取得 CV_CFL_LANG 列舉型別的相關資訊，這個型別會在 debug interface access SDK 中指定應用程式或連結模組的程式碼語言。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8910ebe012e1edbaa6c26695027214db4e66c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07fff0b927fcc271c7671ab98683571adfa9830f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462131"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728586"
 ---
 # <a name="cv_cfl_lang"></a>CV_CFL_LANG
 指定應用程式或連結模組的原始程式碼語言。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```C++
 typedef enum CV_CFL_LANG {
@@ -84,9 +86,9 @@ CV_CFL_HLSL 應用程式語言為高階著色器語言。
 ## <a name="remarks"></a>備註
 呼叫 [IDiaSymbol：： get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) 方法時，會傳回此列舉中的值。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： cvconst。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

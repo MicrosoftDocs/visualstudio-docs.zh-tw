@@ -1,5 +1,7 @@
 ---
 title: CV_access_e | Microsoft Docs
+description: 取得 CV_access_e 列舉型) 別的相關資訊，其可指定 debug interface access SDK 中成員 (存取層級的可見度範圍。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00be9f52b8cac067e1d8482fe0378737c68909c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39b2cfea273d0b98c178c3cf9bcf3894042f760f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462145"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728692"
 ---
 # <a name="cv_access_e"></a>CV_access_e
 指定成員函式和變數的可視性範圍 (存取層級) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```C++
 typedef enum CV_access_e {
@@ -42,10 +44,10 @@ CV_public 成員具有公用存取權。
 ## <a name="remarks"></a>備註
 此 `friend` 存取規範不包含在此，因為可以存取類別的私用和受保護專案的非成員函式通常會使用它。 使用 [IDiaSymbol：： get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) 方法來尋找具有 `SymTagFriend` 存取權的符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： cvconst。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)
 - [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

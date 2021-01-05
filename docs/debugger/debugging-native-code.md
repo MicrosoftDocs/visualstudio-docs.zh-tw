@@ -1,5 +1,7 @@
 ---
 title: 原生程式碼的偵錯工具 |Microsoft Docs
+description: 瞭解 Visual Studio 中原生應用程式的常見偵錯工具問題和高階技術。
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f98b99a31d9215d661879aa7fa52d4b671024496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fee3044e4eaa1e7dd3549923082f9b843951b28
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738159"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728313"
 ---
 # <a name="debugging-native-code"></a>偵錯機器碼
 本章節內容涵蓋原生應用程式一些常見的偵錯問題和技術。 本章節所涵蓋的技術屬高階技術。 如需使用 Visual Studio 偵錯工具的機制，請參閱 [偵錯工具) 的第一次查看](../debugger/debugger-feature-tour.md) 。
@@ -41,7 +43,7 @@ ms.locfileid: "72738159"
 
  [MFC 調試技術](../debugger/mfc-debugging-techniques.md) 連結至 MFC 程式的調試技術，包括： afxDebugBreak、追蹤宏、偵測 MFC 中的記憶體流失、MFC 判斷提示，以及減少 MFC 偵錯工具的大小。
 
- [CRT 調試技術](../debugger/crt-debugging-techniques.md) 連結到 C 執行時間程式庫的偵錯工具技術，包括使用 CRT Debug 程式庫、用於報告的宏、malloc 和 _malloc_dbg 之間的差異、寫入偵錯工具攔截函式，以及 CRT Debug 堆積。
+ [CRT 調試技術](../debugger/crt-debugging-techniques.md) 連結到 C Run-Time 程式庫的調試技術，包括使用 CRT Debug 程式庫、用於報告的宏、malloc 和 _malloc_dbg 之間的差異、寫入偵錯工具攔截函式，以及 CRT Debug 堆積。
 
  [原生程式碼的偵錯工具常見問題](../debugger/debugging-native-code-faqs.md) 提供有關偵錯工具 c + + 程式之常見問題的解答
 
@@ -58,7 +60,7 @@ ms.locfileid: "72738159"
 
  [開始查看偵錯工具](../debugger/debugger-feature-tour.md) 提供偵錯工具檔較大區段的連結。 這些資訊包括：偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、偵錯 Managed 程式碼、偵錯機器碼、偵錯 SQL，以及使用者介面的參考。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [Visual Studio 偵錯](../debugger/index.yml)

@@ -1,5 +1,7 @@
 ---
 title: 用戶端區塊攔截函式 |Microsoft Docs
+description: 撰寫用戶端區塊攔截函式，以驗證或報告儲存在 _CLIENT_BLOCK 區塊中之資料的內容。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881809dda7e8254f9d337b68f0c317eccfd9093d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 720087e3c109c6dec4db06d993d0357dc1eddcd4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600198"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729011"
 ---
 # <a name="client-block-hook-functions"></a>用戶端區塊攔截函式
 如果您要驗證或報告儲存在 `_CLIENT_BLOCK` 區塊裡的資料內容，您可以撰寫符合這個目的的函式。 您所撰寫的函式，必須與下列在 CRTDBG.H 裡定義的原型類似：
@@ -46,8 +48,8 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
    (void *, size_t);
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [撰寫偵錯攔截函式](../debugger/debug-hook-function-writing.md)
+- [調試攔截函式寫入](../debugger/debug-hook-function-writing.md)
 - [crt_dbg2 範例](/previous-versions/b31tft51(v=vs.100))
 - [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

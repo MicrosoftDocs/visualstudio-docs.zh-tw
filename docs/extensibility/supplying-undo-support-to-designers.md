@@ -1,5 +1,7 @@
 ---
 title: 為設計工具提供復原支援 |Microsoft Docs
+description: 瞭解如何使用 Visual Studio SDK 中的功能，在設計工具中自動提供復原支援。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0580f974c362a71c3e400946f2ad34f565ad1232
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4108e259fb0a2e60c2719df8a7fb76f273634799
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699667"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715571"
 ---
 # <a name="supply-undo-support-to-designers"></a>為設計工具提供復原支援
 
@@ -29,7 +31,7 @@ ms.locfileid: "80699667"
 
 - 藉由執行和類別來提供持續性和 CodeDOM 支援 <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  <xref:System.ComponentModel.Design.IComponentChangeService> 。
 
-如需使用 .NET Framework 撰寫設計工具的詳細資訊，請參閱 [擴充設計階段支援](/previous-versions/37899azc(v=vs.140))。
+如需使用 .NET Framework 撰寫設計工具的詳細資訊，請參閱 [擴充 Design-Time 支援](/previous-versions/37899azc(v=vs.140))。
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]提供預設的復原基礎結構，方式如下：
 
@@ -99,8 +101,8 @@ ms.locfileid: "80699667"
 
 - 設計工具選擇使用的執行所提供的標準復原單位 <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> 或衍生自的 Visual Studio 特定的實作為來明確建立復原單位 <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> ，而且 <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> 也提供和的實作為 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>
-- [擴充設計階段支援](/previous-versions/37899azc(v=vs.140))
+- [擴充 Design-Time 支援](/previous-versions/37899azc(v=vs.140))

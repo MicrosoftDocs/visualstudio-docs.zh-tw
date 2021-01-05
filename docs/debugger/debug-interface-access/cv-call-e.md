@@ -1,5 +1,7 @@
 ---
 title: CV_call_e | Microsoft Docs
+description: 取得 CV_call_e 列舉型別的參考資訊，其可指定 debug interface access SDK 中函式的呼叫慣例。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afab1aef58616bfa925fd9f37aacf195eb569c96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 521d5640f001fa0bc190e1869a6568328e864f5a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462138"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728619"
 ---
 # <a name="cv_call_e"></a>CV_call_e
 指定函數的呼叫慣例。
@@ -25,7 +27,7 @@ ms.locfileid: "85462138"
 > [!NOTE]
 > 這裡只會記錄最常見的列舉值。 完整列舉可在 cvconst .h 標頭檔中取得。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```C++
 typedef enum CV_call_e {
@@ -54,9 +56,9 @@ CV_CALL_CLRCALL 指定 Common Language Runtime (CLR) 所使用的函式呼叫慣
 ## <a name="remarks"></a>備註
 呼叫 [IDiaSymbol：： get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) 方法時，會傳回此列舉中的值。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： cvconst。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

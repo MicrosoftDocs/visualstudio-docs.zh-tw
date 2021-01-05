@@ -1,5 +1,7 @@
 ---
 title: 設定 Windows 防火牆進行遠端偵錯 |Microsoft Docs
+description: 設定 Windows 防火牆進行遠端偵錯。 設定遠端偵錯程式的埠。 疑難排解遠端偵錯連接。
+ms.custom: SEO-VS-2020
 ms.date: 10/31/2018
 ms.topic: how-to
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: be73b8392f6b92bf48bd9150197be9bf8fe380dd
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970081"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728946"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆以進行遠端偵錯
 
@@ -72,7 +74,7 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
 
 ::: moniker-end
 
-如果您選取 [**工具** 選項偵錯工具] 下的 [**使用 Managed 相容性模式]**  >  **Options**  >  ****，請開啟這些額外的遠端偵錯程式埠 偵錯工具管理的相容性模式會啟用舊版的 Visual Studio 2010 版本的偵錯工具。
+如果您選取 [**工具** 選項偵錯工具] 下的 [**使用 Managed 相容性模式]**  >    >  ****，請開啟這些額外的遠端偵錯程式埠 偵錯工具管理的相容性模式會啟用舊版的 Visual Studio 2010 版本的偵錯工具。
 
 |**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|
 |-|-|-|-|
@@ -121,7 +123,7 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
   - 若要查看或變更規則設定，請在清單中的 **遠端偵錯** 程式應用程式上按一下滑鼠右鍵，然後選取 [ **屬性**]。 您可以使用 [ **屬性** ] 索引標籤來啟用或停用規則，或變更埠號碼、通訊協定或網路類型。
   - 如果「遠端偵錯程式」應用程式未出現在 [規則] 清單中，請 [新增並設定正確的埠](#configure-ports-for-remote-debugging)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [遠端偵錯](../debugger/remote-debugging.md)
 - [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)

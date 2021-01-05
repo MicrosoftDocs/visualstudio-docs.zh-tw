@@ -1,5 +1,7 @@
 ---
 title: 圖形診斷範例 |Microsoft Docs
+description: 請參閱如何使用 Visual Studio 圖形診斷，以 DirectX 應用程式中的呈現問題的範例。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45dd86b2-801e-4b07-a8c4-7bd25641d7f8
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df2fafb523d04a8ec222b10e1ac9ed3aa95454d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ab1c01ef0f0b82f80a521929f90e90c6a4e4bc7
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187926"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727800"
 ---
 # <a name="graphics-diagnostics-examples"></a>圖形診斷範例
 這些範例示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷，偵錯 DirectX 應用程式中的呈現問題。

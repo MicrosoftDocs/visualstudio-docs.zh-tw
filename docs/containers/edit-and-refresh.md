@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 32f6535e92f41d8030b6e060960940339da91fc9
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: de7065ebdf5426077418e50d2c03118de9f9d68f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92298223"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729297"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本機 Docker 容器中偵錯工具
 
@@ -25,7 +25,7 @@ Visual Studio 可提供一致的方式來開發 Docker 容器，並在本機驗�
 
 如果您已經有受支援類型的專案，Visual Studio 可以建立 Dockerfile，並將您的專案設定為在容器中執行。 請參閱 [Visual Studio 中的容器工具](overview.md)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要在本機 Docker 容器中對應用程式進行偵錯工具，必須安裝下列工具：
 
@@ -62,7 +62,7 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 
 1. 請確定 Docker 已設定為使用您所使用 (Linux 或 Windows) 的容器類型。 以滑鼠右鍵按一下工作列上的 Docker 圖示，然後選擇 [ **切換至 Linux 容器** ] 或 [適當 **地切換到 Windows 容器** ]。
 
-1.  ( .NET Core 3 和更新版本僅) 編輯您的程式碼，以及重新整理執行中的網站，如本節中的預設範本未在 .NET Core >= 3.0 中啟用。 若要啟用它，請新增 NuGet 套件 [AspNetCore >microsoft.aspnetcore.mvc.razor.runtimecompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/)。 在 *Startup.cs*中，將擴充方法的呼叫新增 `IMvcBuilder.AddRazorRuntimeCompilation` 至方法中的程式碼 `ConfigureServices` 。 您只需要在「偵錯工具」模式中啟用此功能，因此請依照下列程式碼：
+1.  ( .NET Core 3 和更新版本僅) 編輯您的程式碼，以及重新整理執行中的網站，如本節中的預設範本未在 .NET Core >= 3.0 中啟用。 若要啟用它，請新增 NuGet 套件 [AspNetCore >microsoft.aspnetcore.mvc.razor.runtimecompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/)。 在 *Startup.cs* 中，將擴充方法的呼叫新增 `IMvcBuilder.AddRazorRuntimeCompilation` 至方法中的程式碼 `ConfigureServices` 。 您只需要在「偵錯工具」模式中啟用此功能，因此請依照下列程式碼：
 
     ```csharp
     public IWebHostEnvironment Env { get; set; }
@@ -94,7 +94,7 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 
    如需詳細資訊，請參閱 [ASP.NET Core 中的 Razor 檔案編譯](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1&preserve-view=true)。
 
-1. 將 **解決方案** 設定設定為 **Debug**。 然後，按下**Ctrl** + **F5**以建立您的 Docker 映射，並在本機執行它。
+1. 將 **解決方案** 設定設定為 **Debug**。 然後，按下 **Ctrl** + **F5** 以建立您的 Docker 映射，並在本機執行它。
 
     在 Docker 容器中建立並執行容器映射時，Visual Studio 會在預設瀏覽器中啟動 web 應用程式。
 
@@ -120,7 +120,7 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 變更通常需要進一步檢查。 您可以針對這項工作使用 Visual Studio 的偵錯工具功能。
 
 1. 在 Visual Studio 中，開啟 *Index.cshtml.cs*。
-2. `OnGet`以下列程式碼取代方法的內容：
+2. 使用下列程式碼來取代 `OnGet` 方法的內容：
 
    ```csharp
        ViewData["Message"] = "Your application description page from within a container";
@@ -130,7 +130,7 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 4. 若要啟動調試和點擊中斷點，請按 F5。
 5. 切換至 Visual Studio 以查看中斷點。 檢查值。
 
-   ![中斷點](media/edit-and-refresh/breakpoint.png)
+   ![顯示 Visual Studio 中的部分程式碼的螢幕擷取畫面，其中中斷點會設定為以黃色反白顯示的程式程式碼左邊。](media/edit-and-refresh/breakpoint.png)
 
 ## <a name="create-a-net-framework-console-app"></a>建立.NET Framework 主控台應用程式
 
@@ -142,7 +142,7 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 ### <a name="debug-with-breakpoints"></a>使用中斷點進行偵錯
 
 1. 在方案總管中，開啟 *Program.cs*。
-2. `Main`以下列程式碼取代方法的內容：
+2. 使用下列程式碼來取代 `Main` 方法的內容：
 
    ```csharp
        System.Console.WriteLine("Hello, world!");
@@ -152,7 +152,7 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 4. 按 F5 開始調試，並點擊中斷點。
 5. 切換至 Visual Studio 以查看中斷點並檢查值。
 
-   ![中斷點](media/edit-and-refresh/breakpoint-console.png)
+   ![Visual Studio 中的 [程式碼] 視窗的螢幕擷取畫面，其中中斷點設定為以黃色反白顯示的程式程式碼左邊。](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="container-reuse"></a>容器重複使用
 

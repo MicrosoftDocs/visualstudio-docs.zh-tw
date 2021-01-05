@@ -1,5 +1,7 @@
 ---
 title: 關於 Microsoft Spy + + |Microsoft Docs
+description: 在 Visual Studio 中查看 [About Microsoft Spy + +] 對話方塊，以顯示有關 Spy + + 偵錯工具的著作權、版本、擁有權及其他資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54877dfd5164cae2c256f21fc2886d779ecf64a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d3488e3eb21cdd564c17040e7d29868473575ac
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62564264"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729128"
 ---
 # <a name="about-microsoft-spy"></a>關於 Microsoft Spy++
 使用此對話方塊來顯示著作權、版本、擁有權，以及 Spy + + 的其他相關資訊。

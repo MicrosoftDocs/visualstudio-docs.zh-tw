@@ -1,5 +1,7 @@
 ---
 title: 圖形 API 和記憶體統計資料 |Microsoft Docs
+description: 請參閱「圖形 API 統計資料」和「記憶體統計資料工具」，其中顯示各種資源的 Direct3D API 使用量和 GPU 記憶體耗用量資訊。
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa808e76e6655c5d57108c923b19794d0398b80c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e0ad2bc48e1e15e1b061cdb600ce65773523e70
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735580"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727886"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>圖形 API 和記憶體統計資料
 <!-- VERSIONLESS -->
@@ -40,7 +42,7 @@ Visual Studio 圖形診斷中的圖形 API 統計資料可讓您查看所有已�
 
 如同 API 統計資料工具，您可以在視窗中按一下滑鼠右鍵，將所有資料複製為 CSV，然後將其貼入 Excel 之類的資料，以供進一步分析。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [圖形診斷 (對 DirectX 圖形進行偵錯)](visual-studio-graphics-diagnostics.md)
 - [資源歷程記錄](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

@@ -7,12 +7,12 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: d2ba7f5d044b82c44d719b251a7d803212cf7b07
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b9aa9b718ad4618502a58185c27333d689c74300
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860562"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729375"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>連線到 Team Foundation 版本控制
 
@@ -21,7 +21,7 @@ ms.locfileid: "91860562"
 >
 > 如果您之前使用的是 Visual Studio for Mac 的 TFVC 延伸模組預覽版本，當您升級至 Visual Studio 2019 for Mac 後即不再支援。
 
-Azure Repos 提供兩種版本控制模型： [Git](/azure/devops/repos/git/?view=azure-devops)、分散式版本控制系統，以及 [Team Foundation 版本控制](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC) ，也就是集中式版本控制系統。
+Azure Repos 提供兩種版本控制模型： [Git](/azure/devops/repos/git/?view=azure-devops&preserve-view=true)、分散式版本控制系統，以及 [Team Foundation 版本控制](/azure/devops/repos/tfvc/index?view=azure-devops&preserve-view=true) (TFVC) ，也就是集中式版本控制系統。
 
 Visual Studio for Mac 提供對 Git 存放庫的完整支援，但需要一些的因應措施才能使用 TFVC。 如果您今天使用 TFVC 進行版本控制，可以使用以下解決方案來存取 TFVC 中裝載的原始程式碼：
 
@@ -31,7 +31,7 @@ Visual Studio for Mac 提供對 Git 存放庫的完整支援，但需要一些�
 
 本文的其餘部分會向您逐步介紹以上所列的選項。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 * Visual Studio Community、Professional 或 Enterprise for Mac 7.8 版及更新版本。
 * Azure DevOps Services、Team Foundation Server 2013 及更新版本，或 Azure DevOps Server 2018 及更新版本。
@@ -54,7 +54,7 @@ Visual Studio for Mac 提供對 Git 存放庫的完整支援，但需要一些�
 * 使用 Homebrew 安裝用戶端，或
 * 下載並手動安裝用戶端
 
-最簡單的解決方案是**使用 HomeBrew**，這是適用於 macOS 的套件管理員。 若要使用此方法進行安裝：
+最簡單的解決方案是 **使用 HomeBrew**，這是適用於 macOS 的套件管理員。 若要使用此方法進行安裝：
 
 1. 啟動 macOS 終端機應用程式。
 1. 使用終端機和 [Homebrew 首頁](https://brew.sh/)上的說明安裝 Homebrew。
@@ -69,7 +69,7 @@ Visual Studio for Mac 提供對 Git 存放庫的完整支援，但需要一些�
 
 安裝 TEE-CLC 之後，您可以執行命令 `tf eula` 來檢視並接受用戶端的授權合約。
 
-最後，若要使用 TFS/Azure DevOps 環境進行驗證，您需要在伺服器上建立個人存取權杖。 深入了解[使用個人存取權杖進行驗證](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)。 建立用於 TFVC 的個人存取權杖時，請確保在設定權杖時提供完整的存取權。
+最後，若要使用 TFS/Azure DevOps 環境進行驗證，您需要在伺服器上建立個人存取權杖。 深入了解[使用個人存取權杖進行驗證](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true)。 建立用於 TFVC 的個人存取權杖時，請確保在設定權杖時提供完整的存取權。
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>使用 TEE-CLC 連線到您的存放庫
 
@@ -117,7 +117,7 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 在 Visual Studio for Mac 延伸模組資源庫中，有一個 Team Foundation 版本控制延伸模組，為連線到 TFVC 提供有限的支援。 不支援該延伸模組且存在數個已知的問題，因此使用時您的體驗可能會有所不同。
 
-若要安裝延伸模組，請啟動 Visual Studio for Mac 並選擇 [Visual Studio] > [延伸模組]**** 功能表。 在 [資源庫]**** 索引標籤中，選取 [版本控制] > [適用於 TFS 和 Azure DevOps 的 Team Foundation 版本控制]****，然後按一下 [安裝]****：
+若要安裝延伸模組，請啟動 Visual Studio for Mac 並選擇 [Visual Studio] > [延伸模組] 功能表。 在 [資源庫] 索引標籤中，選取 [版本控制] > [適用於 TFS 和 Azure DevOps 的 Team Foundation 版本控制]，然後按一下 [安裝]：
 
 ![延伸模組管理員](media/tfvc-install.png)
 
@@ -127,15 +127,15 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 TFVC 延伸模組的更新會定期進行。 若要存取更新，請從功能表中選擇 [ **Visual Studio > 擴充功能 ...** ]，然後選取 [ **更新** ] 索引標籤。選取清單中的延伸模組，然後按下 [ **更新** ] 按鈕：
 
-在下一個對話方塊上按 [安裝]****，以解除安裝舊套件並安裝新套件。
+在下一個對話方塊上按 [安裝]，以解除安裝舊套件並安裝新套件。
 
 ### <a name="using-the-extension"></a>使用延伸模組
 
-安裝延伸模組之後，選取 [版本控制] > [TFS/Azure DevOps] > [從遠端存放庫開啟]**** 功能表項目。
+安裝延伸模組之後，選取 [版本控制] > [TFS/Azure DevOps] > [從遠端存放庫開啟] 功能表項目。
 
 ![開啟延伸模組的功能表項目](media/tfvc-source-control-explorer-devops.png)
 
-請選擇 VSTS 或 Team Foundation Server 其中之一來開始，並按 [繼續]****：
+請選擇 VSTS 或 Team Foundation Server 其中之一來開始，並按 [繼續]：
 
 ![與伺服器連線](media/tfvc-choose-server-type-devops.png)
 
@@ -147,13 +147,13 @@ TFVC 延伸模組的更新會定期進行。 若要存取更新，請從功能�
 
 #### <a name="tfs-authentication"></a>TFS 驗證
 
-若要連線至 TFS，請輸入伺服器詳細資料和您的帳戶認證。 輸入要使用 NTLM 驗證的網域，否則請保留空白以使用基本驗證。 選取 [新增伺服器]****：
+若要連線至 TFS，請輸入伺服器詳細資料和您的帳戶認證。 輸入要使用 NTLM 驗證的網域，否則請保留空白以使用基本驗證。 選取 [新增伺服器]：
 
 ![登入 TFS 伺服器](media/tfvc-login.png)
 
 ### <a name="selecting-a-project"></a>選取專案
 
-成功驗證之後，您可以在 [從原始檔控制開啟]**** 對話方塊中看到與帳戶建立關聯的存放庫清單：
+成功驗證之後，您可以在 [從原始檔控制開啟] 對話方塊中看到與帳戶建立關聯的存放庫清單：
 
 ![已顯示專案的 [從原始檔控制開始] 對話方塊](media/tfvc-vsts-projects.png)
 
@@ -166,7 +166,7 @@ TFVC 延伸模組的更新會定期進行。 若要存取更新，請從功能�
 
 #### <a name="adding-a-new-server"></a>新增伺服器
 
-若要將新的伺服器新增至清單中，請按 [從原始檔控制開啟]**** 對話方塊中的 [新增主機]**** 按鈕：
+若要將新的伺服器新增至清單中，請按 [從原始檔控制開啟] 對話方塊中的 [新增主機] 按鈕：
 
 ![醒目提示新增按鈕，將新的伺服器新增至清單](media/tfvc-add-new-server.png)
 
@@ -176,19 +176,19 @@ TFVC 延伸模組的更新會定期進行。 若要存取更新，請從功能�
 
 ### <a name="creating-a-new-workspace"></a>新增新的工作區
 
-若要開始使用專案，您必須具備「工作區」__。 如果您還沒有工作區，則可以從 [從原始檔控制開啟]**** 對話方塊的 [工作區]**** 下拉式方塊中建立一個工作區：
+若要開始使用專案，您必須具備「工作區」。 如果您還沒有工作區，則可以從 [從原始檔控制開啟] 對話方塊的 [工作區] 下拉式方塊中建立一個工作區：
 
 ![建立新的工作區下拉式方塊選項](media/tfvc-create-new-workspace.png)
 
-設定新工作區的名稱和本機路徑，並選取 [建立工作區]****：
+設定新工作區的名稱和本機路徑，並選取 [建立工作區]：
 
 ![輸入新工作區的名稱和本機路徑](media/tfvc-local-workspace.png)
 
 ### <a name="using-the-source-code-explorer"></a>使用 [原始程式碼總管]
 
-建立工作區並對應專案之後，您可以開始使用「原始程式碼總管」__。
+建立工作區並對應專案之後，您可以開始使用「原始程式碼總管」。
 
-若要開啟 [原始程式碼總管]，請選取 [版本控制] > [TFS/Azure DevOps] > [原始檔控制總管]**** 功能表項目。
+若要開啟 [原始程式碼總管]，請選取 [版本控制] > [TFS/Azure DevOps] > [原始檔控制總管] 功能表項目。
 
 [原始程式碼總管] 可讓您巡覽所有對應的專案、其檔案及資料夾。 它也可讓您執行所有基本原始檔控制動作，例如：
 
@@ -212,22 +212,22 @@ TFVC 延伸模組的更新會定期進行。 若要存取更新，請從功能�
 
 若要設定使用本機工作區的遠端專案，請使用下列步驟：
 
-1. 從下拉式方塊中選取 [伺服器]****。
-1. 請注意，目前「沒有工作區」，且本機路徑是「未對應」。 選取 [未對應]**** 連結，以顯示 [建立新的工作區]**** 對話方塊。
-1. 提供工作區的名稱，然後按一下 [新增工作資料夾]**** 將專案對應至您電腦上的本機資料夾：
+1. 從下拉式方塊中選取 [伺服器]。
+1. 請注意，目前「沒有工作區」，且本機路徑是「未對應」。 選取 [未對應] 連結，以顯示 [建立新的工作區] 對話方塊。
+1. 提供工作區的名稱，然後按一下 [新增工作資料夾] 將專案對應至您電腦上的本機資料夾：
 
     ![顯示預設選項的 [建立新的工作區] 對話方塊](media/tfvc-workspace1.png)
 
-1. 選取 "$" 資料夾，將您伺服器上所有專案都對應至相同的工作區，或選取個別的專案，然後按一下 [確定]****：
+1. 選取 "$" 資料夾，將您伺服器上所有專案都對應至相同的工作區，或選取個別的專案，然後按一下 [確定]：
 
     ![瀏覽顯示所有專案的資料夾對話方塊](media/tfvc-workspace2.png)
 
-1. 選取本機電腦上專案對應目標的位置，然後按一下 [選取資料夾]****。
-1. 按 [確定]**** 以確認新工作區的詳細資料
+1. 選取本機電腦上專案對應目標的位置，然後按一下 [選取資料夾]。
+1. 按 [確定] 以確認新工作區的詳細資料
 
     ![已新增工作資料夾的 [建立新的工作區] 對話方塊](media/tfvc-workspace3.png)
 
-設定您的工作區之後，透過按一下 [原始程式碼總管] 中的 [管理工作區]**** 按鈕，即可加以變更或移除。
+設定您的工作區之後，透過按一下 [原始程式碼總管] 中的 [管理工作區] 按鈕，即可加以變更或移除。
 
 ![管理工作區](media/tfvc-workspace4.png)
 
@@ -238,26 +238,26 @@ TFVC 延伸模組的更新會定期進行。 若要存取更新，請從功能�
 下列選項可用來向伺服器進行驗證：
 
 - OAuth
-- 基本
+- Basic
 - Ntlm
 
-為了使用基本驗證，您必須遵循下列步驟以在 Azure DevOps Services 中啟用**替代驗證認證**：
+為了使用基本驗證，您必須遵循下列步驟以在 Azure DevOps Services 中啟用 **替代驗證認證**：
 
 1. 以擁有者的身分，登入您的 Azure DevOps 組織 (https:\//dev.azure.com/{organization}/{project})。
 
-2. 從您的組織工具列選取齒輪圖示，然後選取 [原則]****：
+2. 從您的組織工具列選取齒輪圖示，然後選取 [原則]：
 
-    ![已選取 [原則] 設定選項](media/tfvc-auth2.png)
+    ![已選取齒輪圖示的 Azure DevOps 組織工具列的螢幕擷取畫面，以及在下拉式功能表中選取的原則。](media/tfvc-auth2.png)
 
 3. 檢閱您的應用程式連線設定。 根據您的安全性原則來變更這些設定：
 
-    ![已選取 [原則] 設定選項](media/tfvc-auth.png)
+    ![[Azure DevOps Services] 中 [原則] 畫面的螢幕擷取畫面，其中顯示應用程式連接原則的設定。](media/tfvc-auth.png)
 
 #### <a name="i-do-not-see-anything-in-tfvc"></a>我在 TFVC 中看不到任何項目
 
-若要在您的開發電腦上設定 Team Foundation 版本控制 (TFVC)，您**必須**建立工作區，如[管理工作區](#managing-workspaces)一節中所述。
+若要在您的開發電腦上設定 Team Foundation 版本控制 (TFVC)，您 **必須** 建立工作區，如 [管理工作區](#managing-workspaces)一節中所述。
 
-在 [原始檔控制總管] 中，按下 [管理工作區]**** 按鈕。 請遵循步驟，將專案對應至開發電腦上的資料夾。
+在 [原始檔控制總管] 中，按下 [管理工作區] 按鈕。 請遵循步驟，將專案對應至開發電腦上的資料夾。
 
 #### <a name="i-do-not-see-any--all-of-my-projects"></a>我看不到自己的任何/所有專案
 

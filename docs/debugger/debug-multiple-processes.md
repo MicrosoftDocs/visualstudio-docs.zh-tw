@@ -1,5 +1,7 @@
 ---
 title: Debug 多重進程 |Microsoft Docs
+description: 在 Visual Studio 中進行多個進程的偵錯工具。 在進程、中斷、繼續、逐步執行來源，以及結束或卸離個別進程之間啟動和切換。
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a61e0083b17fa095b419a2066a4f8b9c39dfb7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 214025c2d128443223594fdb00fcf730e5a8091a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350598"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728627"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a> (c #、Visual Basic、c + +) 進行多個進程的偵錯工具
 
@@ -32,11 +34,11 @@ Visual Studio 可以將有數個進程的方案進行 debug 錯。 您可以啟�
 
 ## <a name="start-debugging-with-multiple-processes"></a>使用多個進程開始偵錯工具
 
-當 Visual Studio 方案中有多個專案可以獨立執行時，您可以選取偵錯工具啟動的專案。 目前的啟始專案會在 **方案總管**以粗體顯示。
+當 Visual Studio 方案中有多個專案可以獨立執行時，您可以選取偵錯工具啟動的專案。 目前的啟始專案會在 **方案總管** 以粗體顯示。
 
-若要變更啟始專案，請在 [ **方案總管**中，以滑鼠右鍵按一下不同的專案，然後選取 [ **設定為啟始專案**]。
+若要變更啟始專案，請在 [ **方案總管** 中，以滑鼠右鍵按一下不同的專案，然後選取 [ **設定為啟始專案**]。
 
-若要從**方案總管**開始對專案進行錯錯，而不讓它成為啟始專案，請以滑鼠右鍵按一下專案，然後選取 [ **Debug**  >  **開始新實例**] 或 [**逐步執行新實例**]。
+若要從 **方案總管** 開始對專案進行錯錯，而不讓它成為啟始專案，請以滑鼠右鍵按一下專案，然後選取 [ **Debug**  >  **開始新實例**] 或 [**逐步執行新實例**]。
 
 **若要從 [方案屬性] 設定啟始專案或多個專案：**
 
@@ -46,11 +48,11 @@ Visual Studio 可以將有數個進程的方案進行 debug 錯。 您可以啟�
 
    ![變更專案的啟動類型](../debugger/media/dbg_execution_startmultipleprojects.png "DBG_Execution_StartMultipleProjects")
 
-1. 選取**目前選取****專案、單一啟始專案**和專案檔，或**多個啟始專案**。
+1. 選取 **目前選取****專案、單一啟始專案** 和專案檔，或 **多個啟始專案**。
 
-   如果您選取 **多個啟始專案**，可以變更每個專案所要採取的啟動順序和動作： [ **啟動**]、[ **不進行調試**程式] 或 [ **無**]。
+   如果您選取 **多個啟始專案**，可以變更每個專案所要採取的啟動順序和動作： [ **啟動**]、[ **不進行調試** 程式] 或 [ **無**]。
 
-1. 選取**Apply**[套用]，或選取 **[確定**] 以套用並關閉對話方塊。
+1. 選取[套用]，或選取 **[確定**] 以套用並關閉對話方塊。
 
 ### <a name="attach-to-a-process"></a><a name="BKMK_Attach_to_a_process"></a> 附加至處理序
 
@@ -73,9 +75,9 @@ Visual Studio 可以將有數個進程的方案進行 debug 錯。 您可以啟�
 
 有時，您可能需要針對由另一個進程啟動的應用程式，來進行啟動程式碼的偵錯工具。 這類範例包括了服務和自訂安裝動作。 您可以讓偵錯工具啟動並自動附加至應用程式。
 
-1. 執行 *regedit.exe*來啟動 Windows 登錄編輯程式。
+1. 執行 *regedit.exe* 來啟動 Windows 登錄編輯程式。
 
-1. 在 [登錄編輯程式] 中，流覽至 **HKEY_LOCAL_MACHINE \Software\microsoft\windows nt\currentversion\image file execution 檔執行選項**。
+1. 在 [登錄編輯程式] 中，流覽至 **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options**。
 
 1. 選取要在偵錯工具中啟動之應用程式的資料夾。
 
@@ -100,7 +102,7 @@ Visual Studio 可以將有數個進程的方案進行 debug 錯。 您可以啟�
 
 **若要變更一個進程中斷時是否暫停所有進程：**
 
-- 在 [**工具**] (或 [**調試**程式]) >**選項**偵錯工具] 下  >  **Debugging**  >  ** **，選取或清除 [**當一個進程中斷時中斷所有進程**] 核取方塊。
+- 在 [**工具**] (或 [**調試** 程式]) >**選項** 偵錯工具] 下  >    >  ****，選取或清除 [**當一個進程中斷時中斷所有進程**] 核取方塊。
 
 ### <a name="break-step-and-continue-commands"></a><a name="BKMK_Break__step__and_continue_commands"></a> 中斷、逐步執行和繼續命令
 
@@ -110,8 +112,8 @@ Visual Studio 可以將有數個進程的方案進行 debug 錯。 您可以啟�
 |-|-|-|
 |**Debug**   > **全部中斷**|所有處理序都會中斷。|所有處理序都會中斷。|
 |**Debug**  > **繼續**|所有處理序都會繼續執行。|所有暫止的處理序都會繼續執行。|
-|**Debug**  > **逐步****執行、不**進入或**跳出**|當目前處理序逐步執行時，所有處理序仍會執行。 <br />然後所有處理序都會中斷。|目前處理序會逐步執行。 <br />暫止的處理序會繼續執行。 <br />執行中的處理序會繼續執行。|
-|**Debug**  > **逐步執行目前**的程式、不進入**目前的進程**，或**跳出目前的進程**|N/A|目前處理序會逐步執行。<br />其他處理序維持其現有的狀態 (已暫止或執行中)。|
+|**Debug**  > **逐步****執行、不** 進入或 **跳出**|當目前處理序逐步執行時，所有處理序仍會執行。 <br />然後所有處理序都會中斷。|目前處理序會逐步執行。 <br />暫止的處理序會繼續執行。 <br />執行中的處理序會繼續執行。|
+|**Debug**  > **逐步執行目前** 的程式、不進入 **目前的進程**，或 **跳出目前的進程**|N/A|目前處理序會逐步執行。<br />其他處理序維持其現有的狀態 (已暫止或執行中)。|
 |來源視窗 **中斷點**|所有處理序都會中斷。|只要來源視窗處理序會中斷。|
 |來源視窗 **執行至游標處**<br />來源視窗必須在目前處理序中。|當來源視窗處理序執行至游標處然後中斷時，所有處理序仍會執行。<br />然後所有其他處理序都會中斷。|來源視窗處理序會執行至游標處。<br />其他處理序維持其現有的狀態 (已暫止或執行中)。|
 |**進程** 視窗 > **中斷進程**|N/A|選取的處理序會中斷。<br />其他處理序維持其現有的狀態 (已暫止或執行中)。|
@@ -124,7 +126,7 @@ Visual Studio 可以將有數個進程的方案進行 debug 錯。 您可以啟�
 
 ### <a name="switch-between-processes"></a><a name="BKMK_Switch_between_processes"></a> 在處理序之間切換
 
-當您正在進行偵錯工具時，您可以附加至多個進程，但是在任何指定時間，偵錯工具中只會有一個作用中的進程。 您可以在 [偵錯位置]**** 工具列或 [處理序]**** 視窗中設定使用中或「目前的」** 處理序。 若要在處理序之間切換，兩個處理序必須處於中斷模式。
+當您正在進行偵錯工具時，您可以附加至多個進程，但是在任何指定時間，偵錯工具中只會有一個作用中的進程。 您可以在 [偵錯位置] 工具列或 [處理序] 視窗中設定使用中或「目前的」處理序。 若要在處理序之間切換，兩個處理序必須處於中斷模式。
 
 **若要從 [偵錯工具位置] 工具列設定目前的進程：**
 
@@ -146,7 +148,7 @@ Visual Studio 可以將有數個進程的方案進行 debug 錯。 您可以啟�
 
 ## <a name="stop-debugging-with-multiple-processes"></a>停止多個進程的偵錯工具
 
-依預設，當您選取 [ **Debug**  >  **停止**錯] 時，偵錯工具會結束或卸離所有進程。
+依預設，當您選取 [ **Debug**  >  **停止** 錯] 時，偵錯工具會結束或卸離所有進程。
 
 - 如果在偵錯工具中啟動目前的進程，則會結束進程。
 
@@ -170,12 +172,12 @@ Visual Studio 可以將有數個進程的方案進行 debug 錯。 您可以啟�
 |**Debug**  > **全部卸離**|偵錯工具會從所有處理序中斷連結。|
 |**進程** 視窗 > 卸 **離進程**|偵錯工具會從選取的處理序中斷連結。<br />其他處理序維持其現有的狀態 (已暫止或執行中)。|
 |**進程** 視窗 > **終止進程**|選取的進程已結束。<br />其他處理序維持其現有的狀態 (已暫止或執行中)。|
-|**停止偵錯工具時**，**進程**視窗 > 卸離|如果選取此**Debug**選項，則會  >  從選取的進程**中斷**偵錯工具的偵錯工具。 <br />如果未選取此選項， **Debug**  >  **Stop 調試**程式會結束選取的進程。 |
+|**停止偵錯工具時**，**進程** 視窗 > 卸離|如果選取此選項，則會  >  從選取的進程 **中斷** 偵錯工具的偵錯工具。 <br />如果未選取此選項， **Debug**  >  **Stop 調試** 程式會結束選取的進程。 |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [指定符號 ( .pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [附加至正在執行的進程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [使用偵錯工具流覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)
 - [即時調試](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Debug 多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)

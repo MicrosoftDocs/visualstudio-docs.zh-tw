@@ -1,5 +1,7 @@
 ---
 title: 指定副檔名的檔案處理常式 |Microsoft Docs
+description: 瞭解如何使用 OpenWithList 和 OpenWithProgids，判斷哪一個應用程式處理 Visual Studio SDK 中的副檔名。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af195aea09c91696843c6be42c20053bb8c095a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699759"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715596"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定適用於副檔名的檔案處理常式
 有幾種方式可以決定處理具有特定副檔名之檔案的應用程式。 OpenWithList 和 OpenWithProgids 動詞是在副檔名的登錄專案底下指定檔案處理常式的兩種方式。
@@ -23,7 +25,7 @@ ms.locfileid: "80699759"
 ## <a name="openwithlist-verb"></a>OpenWithList 動詞
  當您以滑鼠右鍵按一下 Windows 檔案總管中的檔案時，您會看到 [ **開啟** ] 命令。 如果有一個以上的產品與某個擴充功能相關聯，您會看到 [ **開啟** ] 子功能表。
 
- 您可以在 HKEY_CLASSES_ROOT 中設定副檔名的 OpenWithList 機碼，以註冊不同的應用程式來開啟擴充功能。 在 [**開啟**檔案] 對話方塊中的 [**建議的程式**] 標題下，會出現列在此機碼底下的應用程式。 下列範例會顯示已註冊以開啟 vcproj 副檔名的應用程式。
+ 您可以在 HKEY_CLASSES_ROOT 中設定副檔名的 OpenWithList 機碼，以註冊不同的應用程式來開啟擴充功能。 在 [**開啟** 檔案] 對話方塊中的 [**建議的程式**] 標題下，會出現列在此機碼底下的應用程式。 下列範例會顯示已註冊以開啟 vcproj 副檔名的應用程式。
 
 ```
 HKEY_CLASSES_ROOT\
@@ -34,7 +36,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
-> 指定應用程式的索引鍵位於 HKEY_CLASSES_ROOT 的清單中 \Applications。
+> 指定應用程式的索引鍵是來自 HKEY_CLASSES_ROOT\Applications 下的清單。
 
  藉由新增 OpenWithList 機碼，您可以宣告應用程式支援副檔名，即使另一個應用程式取得延伸模組的擁有權也一樣。 這可能是應用程式或其他應用程式的未來版本。
 
@@ -77,6 +79,6 @@ HKEY_CLASSES_ROOT\
 
  如果舊的 ProgID 有相關聯的動詞，則這些動詞命令也會出現在快捷方式功能表中的 [開啟檔案] **和**[ *產品名稱* ] 底下。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [關於副檔名](../extensibility/about-file-name-extensions.md)
 - [註冊適用於副檔名的動詞命令](../extensibility/registering-verbs-for-file-name-extensions.md)

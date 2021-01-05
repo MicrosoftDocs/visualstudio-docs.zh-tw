@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0fa7d186623b69fd83c3ed7e4ab9cc12128847d2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037207"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729284"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教學課程：使用 Docker Compose 建立多容器應用程式
 
@@ -22,12 +22,12 @@ ms.locfileid: "90037207"
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* 已安裝**Web 開發**、 **Azure Tools**工作負載或 **.net Core 跨平臺開發**工作負載的[Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+* 已安裝 **Web 開發**、 **Azure Tools** 工作負載或 **.net Core 跨平臺開發** 工作負載的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* 已安裝**網頁程式開發**、**Azure Tools** 工作負載及(或) **.NET Core 跨平台開發** 工作負載的 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+* 已安裝 **網頁程式開發**、**Azure Tools** 工作負載及(或) **.NET Core 跨平台開發** 工作負載的 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * 適用於 .NET Core 2.2 開發的 [.NET Core 2.2 開發工具](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 * .Net [core 3 開發工具](https://dotnet.microsoft.com/download/dotnet-core/3.1)，可供使用 .net core 3.1 進行開發。
 ::: moniker-end
@@ -38,7 +38,7 @@ ms.locfileid: "90037207"
   
 ::: moniker range="vs-2017"
 
-請勿選取 [Enable Docker Support] (啟用 Docker 支援)****。 您稍後將會新增 Docker 支援。
+請勿選取 [Enable Docker Support] (啟用 Docker 支援)。 您稍後將會新增 Docker 支援。
 
 ![建立 Web 專案的螢幕擷取畫面](./media/tutorial-multicontainer/docker-tutorial-enable-docker-support.png)
 
@@ -46,11 +46,11 @@ ms.locfileid: "90037207"
 
 ::: moniker range="vs-2019"
 
-![建立 Web 專案的螢幕擷取畫面](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![[設定您的新專案] 畫面的螢幕擷取畫面，其中 ASP.NET Core 的 Web 應用程式，[專案名稱] 和 [方案名稱] 欄位會設為 "WebFrontEnd"。](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
 
-請勿選取 [Enable Docker Support] (啟用 Docker 支援)****。 您稍後將會新增 Docker 支援。
+請勿選取 [Enable Docker Support] (啟用 Docker 支援)。 您稍後將會新增 Docker 支援。
 
-![建立 Web 專案的螢幕擷取畫面](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![[建立新的 ASP.NET Core Web 應用程式] 畫面的螢幕擷取畫面，其中已選取 Web 應用程式。 未選取啟用 Docker 支援的選項。](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
 
 ::: moniker-end
 
@@ -91,7 +91,7 @@ ms.locfileid: "90037207"
 
    針對 Visual Studio 2019 或更新版本中的 .NET Core 3.1，Web API 範本會使用 WeatherForecast API，因此請將該行取消批註，並將 ASP.NET 2.x 的行加上批註。
 
-1. 在 [Index.cshtml]** 檔案中，新增一行以顯示 `ViewData["Message"]`，讓檔案看起來像下列程式碼：
+1. 在 [Index.cshtml] 檔案中，新增一行以顯示 `ViewData["Message"]`，讓檔案看起來像下列程式碼：
     
       ```cshtml
       @page
@@ -107,7 +107,7 @@ ms.locfileid: "90037207"
       </div>
       ```
 
-1.  (ASP.NET 2.x 只) 在 Web API 專案中，請將程式碼加入至值控制器，以針對您從 *webfrontend*新增的呼叫自訂 API 所傳回的訊息。
+1.  (ASP.NET 2.x 只) 在 Web API 專案中，請將程式碼加入至值控制器，以針對您從 *webfrontend* 新增的呼叫自訂 API 所傳回的訊息。
     
       ```csharp
         // GET api/values/5
@@ -118,7 +118,7 @@ ms.locfileid: "90037207"
         }
       ```
 
-    使用 .NET Core 3.1 時，您不需要這麼做，因為您可以使用已經存在的 WeatherForecast API。 不過，您需要在 Startup.cs 的方法中將呼叫批註為 <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> `Configure` ， *Startup.cs*因為此程式碼會使用 HTTP 而非 HTTPS 來呼叫 Web API。
+    使用 .NET Core 3.1 時，您不需要這麼做，因為您可以使用已經存在的 WeatherForecast API。 不過，您需要在 Startup.cs 的方法中將呼叫批註為 <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> `Configure` ， 因為此程式碼會使用 HTTP 而非 HTTPS 來呼叫 Web API。
 
     ```csharp
                 //app.UseHttpsRedirection();
@@ -132,11 +132,11 @@ ms.locfileid: "90037207"
 
    ![選擇目標 OS 的螢幕擷取畫面](media/tutorial-multicontainer/docker-tutorial-docker-support-options.PNG)
 
-   Visual Studio 會在解決方案的**docker 撰寫**節點中建立 *>docker-compose.yml yml*檔案和 *>.dockerignore*檔案，而該專案會顯示為粗體字型，其顯示為啟始專案。
+   Visual Studio 會在解決方案的 **docker 撰寫** 節點中建立 *>docker-compose.yml yml* 檔案和 *>.dockerignore* 檔案，而該專案會顯示為粗體字型，其顯示為啟始專案。
 
    ![已新增 docker 撰寫專案方案總管的螢幕擷取畫面](media/tutorial-multicontainer/multicontainer-solution-explorer.png)
 
-   *>docker-compose.yml*會如下所示：
+   *>docker-compose.yml* 會如下所示：
 
    ```yaml
    version: '3.4'
@@ -149,7 +149,7 @@ ms.locfileid: "90037207"
           dockerfile: WebFrontEnd/Dockerfile
    ```
 
-   *>.dockerignore*檔案包含您不希望 Docker 包含在容器中的檔案類型和延伸模組。 這些檔案通常會與開發環境和原始檔控制相關聯，而不是您正在開發的應用程式或服務的一部分。
+   *>.dockerignore* 檔案包含您不希望 Docker 包含在容器中的檔案類型和延伸模組。 這些檔案通常會與開發環境和原始檔控制相關聯，而不是您正在開發的應用程式或服務的一部分。
 
    查看 [輸出] 窗格的 [ **容器工具** ] 區段，以取得執行中命令的詳細資料。  您可以看到使用 docker 撰寫的命令列工具來設定和建立執行時間容器。
 
@@ -189,11 +189,11 @@ ms.locfileid: "90037207"
 
    適用于 .NET 3.1 的 web 應用程式會顯示 JSON 格式的氣象資料。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 查看將 [容器部署至 Azure](/azure/containers)的選項。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
   
 [Docker Compose](https://docs.docker.com/compose/)  
 [容器工具](./index.yml)

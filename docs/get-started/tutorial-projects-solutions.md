@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cdc30b34c85a799827519af3cd2bba2c9f1735a
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 3aa347b7f789e24e7cdd3baa19a6267f0ecdf2e5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668803"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727511"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>專案和解決方案簡介
 
@@ -279,7 +279,17 @@ ms.locfileid: "97668803"
 
 ## <a name="next-steps"></a>後續步驟
 
-如果您想要檢查單元測試是否正常運作，請選取  >    >  功能表列上的 [測試執行 **所有測試**]。 稱為 [測試總管] 的視窗隨即開啟，而且您應該會看到 **TestGetCurrentDate** 測試通過。
+::: moniker range="vs-2017"
+
+如果您想要檢查單元測試是否正常運作，請從功能表列選擇 [**測試**  >  **執行**  >  **所有測試**]。 稱為 [測試總管] 的視窗隨即開啟，而且您應該會看到 **TestGetCurrentDate** 測試通過。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果您想要檢查單元測試是否正常運作，請從功能表列選擇 [**測試**  >  **執行所有測試**]。 稱為 [測試總管] 的視窗隨即開啟，而且您應該會看到 **TestGetCurrentDate** 測試通過。
+
+::: moniker-end
 
 ![Visual Studio 的 [測試總管] 顯示已通過測試](media/tutorial-projects-test-explorer.png "Visual Studio 中的 test Explorer 顯示通過的測試。")
 
@@ -297,7 +307,7 @@ ms.locfileid: "97668803"
 
 ::: moniker-end
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用專案和方案](../ide/creating-solutions-and-projects.md)
 - [管理專案和解決方案屬性](../ide/managing-project-and-solution-properties.md)

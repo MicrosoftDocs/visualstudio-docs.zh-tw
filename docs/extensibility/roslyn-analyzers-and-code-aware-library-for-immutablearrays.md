@@ -1,7 +1,8 @@
 ---
 title: 適用于適用于 immutablearray 的 Roslyn 分析器和程式碼感知程式庫
-titleSuffix: ''
+description: 瞭解如何建立真實世界 Roslyn 分析器，以在使用 system.string NuGet 套件時攔截常見的錯誤。
 ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db3ebbd289feb227506d8c188ade9261dfb53da2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 04b65ae8c81f381ee996da5f20ec15588b9180de
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037643"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715765"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>適用于適用于 immutablearray 的 Roslyn 分析器和程式碼感知程式庫
 
@@ -26,8 +27,8 @@ ms.locfileid: "90037643"
 您需要下列各項才能建立此範例：
 
 * Visual Studio 2015 (不是 Express Edition) 或更新版本。 您可以使用免費的 [Visual Studio Community 版](https://visualstudio.microsoft.com/vs/community/)
-* [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 您也可以在安裝 Visual Studio 時，檢查 [**一般工具**] 底下的**Visual Studio 擴充性工具**，同時安裝 SDK。 如果您已經安裝 Visual Studio，也可以移至**主要功能表檔**[  >  **新增**  >  **專案**]，在左側流覽窗格中選擇 **[** **c #** ]，然後選擇 [擴充性]，來安裝此 SDK。 當您選擇 [**安裝 Visual Studio 擴充性工具**] 階層連結專案範本時，它會提示您下載並安裝 SDK。
-* [.NET Compiler Platform ( "Roslyn" ) SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK)。 您也可以安裝此 SDK，方法是移至主要**功能表檔**的 [  >  **新增**  >  **專案**]，在左側流覽窗格中選擇 [ **Extensibility** **c #** ]，然後選擇 [擴充性]。 當您選擇 [**下載 .NET COMPILER PLATFORM sdk**] 階層連結專案範本時，它會提示您下載並安裝 sdk。 此 SDK 包含 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md)。 這項實用的工具可協助您找出您應該在分析器中尋找的程式碼模型類型。 分析器基礎結構會針對特定程式碼模型類型呼叫您的程式碼，因此您的程式碼只會在必要時執行，而且只能專注于分析相關的程式碼。
+* [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 您也可以在安裝 Visual Studio 時，檢查 [**一般工具**] 底下的 **Visual Studio 擴充性工具**，同時安裝 SDK。 如果您已經安裝 Visual Studio，也可以移至 **主要功能表檔**[  >  **新增**  >  **專案**]，在左側流覽窗格中選擇 **[** **c #** ]，然後選擇 [擴充性]，來安裝此 SDK。 當您選擇 [**安裝 Visual Studio 擴充性工具**] 階層連結專案範本時，它會提示您下載並安裝 SDK。
+* [.NET Compiler Platform ( "Roslyn" ) SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK)。 您也可以安裝此 SDK，方法是移至主要 **功能表檔** 的 [  >  **新增**  >  **專案**]，在左側流覽窗格中選擇 [  **c #** ]，然後選擇 [擴充性]。 當您選擇 [**下載 .NET COMPILER PLATFORM sdk**] 階層連結專案範本時，它會提示您下載並安裝 sdk。 此 SDK 包含 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md)。 這項實用的工具可協助您找出您應該在分析器中尋找的程式碼模型類型。 分析器基礎結構會針對特定程式碼模型類型呼叫您的程式碼，因此您的程式碼只會在必要時執行，而且只能專注于分析相關的程式碼。
 
 ## <a name="whats-the-problem"></a>怎麼了？
 
@@ -57,13 +58,13 @@ Console.WriteLine("b2.Length = { 0}", b2.Length);
 
 ## <a name="find-relevant-syntax-node-types-to-trigger-your-analyzer"></a>尋找相關的語法節點類型來觸發您的分析器
 
- 若要開始建立分析器，請先找出您需要尋找何種類型的 SyntaxNode。 從功能表**視圖**的 [ **Syntax Visualizer**  >  **其他 Windows**  >  **Roslyn] Syntax Visualizer**啟動 Syntax Visualizer。
+ 若要開始建立分析器，請先找出您需要尋找何種類型的 SyntaxNode。 從功能表 **視圖** 的 [   >  **其他 Windows**  >  **Roslyn] Syntax Visualizer** 啟動 Syntax Visualizer。
 
 將編輯器的插入號放在宣告的行上 `b1` 。 您會看到 Syntax Visualizer 顯示在 `LocalDeclarationStatement` 語法樹狀結構的節點中。 此節點具有，後者接著具有， `VariableDeclaration` `VariableDeclarator` `EqualsValueClause` 而最後會有一個 `ObjectCreationExpression` 。 當您在節點的 Syntax Visualizer 樹狀結構中按一下時，編輯器視窗中的語法會反白顯示，以顯示該節點所代表的程式碼。 SyntaxNode 子類型的名稱符合 c # 文法中使用的名稱。
 
 ## <a name="create-the-analyzer-project"></a>建立分析器專案
 
-從主功能表選擇 [檔案**File**  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊中，于左側導覽列中的 [ **c #** 專案] 下 **選擇 [擴充**性]，然後在右窗格中選擇 [ **具有程式碼修正的分析器** ] 專案範本。 輸入名稱，並確認對話方塊。
+從主功能表選擇 [檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊中，于左側導覽列中的 [ **c #** 專案] 下 **選擇 [擴充** 性]，然後在右窗格中選擇 [ **具有程式碼修正的分析器** ] 專案範本。 輸入名稱，並確認對話方塊。
 
 範本會開啟 *DiagnosticAnalyzer.cs* 檔案。 選擇 [編輯器緩衝區] 索引標籤。這個檔案的分析器類別 (由您提供的專案) 衍生自 `DiagnosticAnalyzer` (ROSLYN API 類型) 的名稱所組成。 您的新類別 `DiagnosticAnalyzerAttribute` 會宣告您的分析器與 c # 語言相關，以便編譯器探索和載入您的分析器。
 
@@ -106,7 +107,7 @@ internal const string Category = "Naming";
 
 將 `"Naming"` 變更為 `"API Guidance"`。
 
-接下來，使用**方案總管**尋找並開啟專案中的 *.resources 檔案。* 您可以針對分析器、標題等放入描述。您現在可以將所有這些值的值變更為 `"Don't use ImmutableArray<T> constructor"` 。 您可以在字串中放入字串格式引數 ({0} 、等等 {1} ) ，而且稍後當您呼叫時 `Diagnostic.Create()` ，可以提供 `params` 要傳遞的引數陣列。
+接下來，使用 **方案總管** 尋找並開啟專案中的 *.resources 檔案。* 您可以針對分析器、標題等放入描述。您現在可以將所有這些值的值變更為 `"Don't use ImmutableArray<T> constructor"` 。 您可以在字串中放入字串格式引數 ({0} 、等等 {1} ) ，而且稍後當您呼叫時 `Diagnostic.Create()` ，可以提供 `params` 要傳遞的引數陣列。
 
 ## <a name="analyze-an-object-creation-expression"></a>分析物件建立運算式
 
@@ -133,7 +134,7 @@ Console.WriteLine("b2.Length = {0}", b2.Length);
 
 的程式程式碼 `ImmutableArray` 具有波浪線，因為您需要取得不可變的 NuGet 套件，並將 `using` 語句新增至您的程式碼。 在 **方案總管** 的專案節點上按右指標按鈕，然後選擇 [ **管理 NuGet 套件**]。 在 [NuGet 管理員] 中，于 [搜尋] 方塊中輸入「不可變的」，然後選擇 **[ (]** ，不要選擇左窗格中的 **[) ]** ，然後按右窗格中的 [ **安裝** ] 按鈕。 安裝套件會將參考加入至您的專案參考。
 
-您仍然會在底下看到紅色波浪線 `ImmutableArray` ，所以請將插入號放在該識別碼中，然後按下**Ctrl** + **。**  (期間) 以顯示建議的修正功能表，並選擇新增適當的 `using` 語句。
+您仍然會在底下看到紅色波浪線 `ImmutableArray` ，所以請將插入號放在該識別碼中，然後按下 **Ctrl** + **。**  (期間) 以顯示建議的修正功能表，並選擇新增適當的 `using` 語句。
 
 **全部儲存並關閉** Visual Studio 的第二個實例，讓您進入乾淨狀態以繼續。
 
@@ -141,11 +142,11 @@ Console.WriteLine("b2.Length = {0}", b2.Length);
 
 在 Visual Studio 的第一個實例中，在方法的開頭設定中斷點， `AnalyzeObjectCreation` 方法是在第一行的插入點按 **F9** 。
 
-使用 **F5**再次啟動您的分析器，然後在 Visual Studio 的第二個實例中，重新開啟您上次建立的主控台應用程式。
+使用 **F5** 再次啟動您的分析器，然後在 Visual Studio 的第二個實例中，重新開啟您上次建立的主控台應用程式。
 
 您會在中斷點返回 Visual Studio 的第一個實例，因為 Roslyn 編譯器會看到物件建立運算式，並將它呼叫至您的分析器。
 
-**取得物件建立節點。** `objectCreation`按**F10**鍵，然後在 [即時運算 **] 視窗**中評估運算式，以逐步執行設定變數的程式列 `"objectCreation.ToString()"` 。 您會看到變數所指向的語法節點，就是程式碼 `"new ImmutableArray<int>()"` ，就是您要尋找的內容。
+**取得物件建立節點。** `objectCreation`按 **F10** 鍵，然後在 [即時運算 **] 視窗** 中評估運算式，以逐步執行設定變數的程式列 `"objectCreation.ToString()"` 。 您會看到變數所指向的語法節點，就是程式碼 `"new ImmutableArray<int>()"` ，就是您要尋找的內容。
 
 **取得 ImmutableArray<T \> 類型物件。** 您需要檢查所建立的類型是否為 ImmutableArray。 首先，您會取得代表此類型的物件。 您可以使用語義模型檢查型別，以確保您有正確的型別，而且您不會比較中的字串 `ToString()` 。 在函式的結尾輸入下列程式程式碼：
 
@@ -160,7 +161,7 @@ var immutableArrayOfTType =
 
 此語義模型有許多有用的專案，可讓您詢問有關符號、資料流程、變數存留期等問題。Roslyn 會將語法節點與語義模型分開，以因應各種不同的工程理由 (效能、模型化錯誤程式碼等 ) 。 您希望編譯模型查閱參考中包含的資訊，以進行精確的比較。
 
-您可以將黃色執行指標拖曳到編輯器視窗的左側。 將它拖曳至設定變數的程式程式碼， `objectCreation` 並使用 **F10**不進入新的程式程式碼。 如果您將滑鼠指標暫留在變數上 `immutableArrayOfType` ，您會看到在語義模型中找到確切的型別。
+您可以將黃色執行指標拖曳到編輯器視窗的左側。 將它拖曳至設定變數的程式程式碼， `objectCreation` 並使用 **F10** 不進入新的程式程式碼。 如果您將滑鼠指標暫留在變數上 `immutableArrayOfType` ，您會看到在語義模型中找到確切的型別。
 
 **取得物件建立運算式的類型。** 在本文中，有幾種方式可使用「類型」，但這表示如果您有「新的 Foo」運算式，您需要取得 Foo 的模型。 您需要取得物件建立運算式的類型，以查看它是否為 ImmutableArray \<T> 類型。 再次使用語義模型，在物件建立運算式中取得類型符號 (ImmutableArray) 的符號資訊。 在函式的結尾輸入下列程式程式碼：
 
@@ -212,7 +213,7 @@ private void AnalyzeObjectCreation(SyntaxNodeAnalysisContext context)
 
 開始之前，請先關閉 Visual Studio 的第二個實例，然後在您要開發分析器) Visual Studio (的第一個實例中停止偵錯工具。
 
-**新增類別。** 在 **方案總管** 的專案節點上，使用快捷方式功能表 (右指標按鈕) ，然後加入宣告新專案。 加入名為的類別 `BuildCodeFixProvider` 。 此類別必須衍生自 `CodeFixProvider` ，而且您必須使用**Ctrl** + **。**  (期間) ，以叫用加入正確語句的程式碼修正 `using` 。 這個類別也需要以 `ExportCodeFixProvider` 屬性標注，而且您必須加入 `using` 語句來解析 `LanguageNames` 列舉。 您應該會有一個類別檔案，其中包含下列程式碼：
+**新增類別。** 在 **方案總管** 的專案節點上，使用快捷方式功能表 (右指標按鈕) ，然後加入宣告新專案。 加入名為的類別 `BuildCodeFixProvider` 。 此類別必須衍生自 `CodeFixProvider` ，而且您必須使用 **Ctrl** + **。**  (期間) ，以叫用加入正確語句的程式碼修正 `using` 。 這個類別也需要以 `ExportCodeFixProvider` 屬性標注，而且您必須加入 `using` 語句來解析 `LanguageNames` 列舉。 您應該會有一個類別檔案，其中包含下列程式碼：
 
 ```csharp
 using Microsoft.CodeAnalysis;
@@ -225,7 +226,7 @@ namespace ImmutableArrayAnalyzer
     {}
 ```
 
-**存根衍生的成員。** 現在，將編輯器的插入號放在識別碼中， `CodeFixProvider` 然後按下**Ctrl** + **。**  (期間) 以將這個抽象基類的實作為存根。 這會為您產生屬性和方法。
+**存根衍生的成員。** 現在，將編輯器的插入號放在識別碼中， `CodeFixProvider` 然後按下 **Ctrl** + **。**  (期間) 以將這個抽象基類的實作為存根。 這會為您產生屬性和方法。
 
 **執行屬性。** `FixableDiagnosticIds`使用下列程式碼填入屬性的 `get` 主體：
 
@@ -246,14 +247,14 @@ var root = await context.Document
                         .GetSyntaxRootAsync(context.CancellationToken);
 ```
 
-**找出有問題的節點。** 您會傳入內容約制，但您發現的節點可能不是您必須變更的程式碼。 報告的診斷只提供類型識別碼的範圍 (其中的波浪線所屬) ，但您需要取代整個物件建立運算式，包括 `new` 開頭的關鍵字和結尾的括弧。 將下列程式碼新增至您的方法 (並使用**Ctrl** + **。** 若要加入 `using`) 的語句 `ObjectCreationExpressionSyntax` ：
+**找出有問題的節點。** 您會傳入內容約制，但您發現的節點可能不是您必須變更的程式碼。 報告的診斷只提供類型識別碼的範圍 (其中的波浪線所屬) ，但您需要取代整個物件建立運算式，包括 `new` 開頭的關鍵字和結尾的括弧。 將下列程式碼新增至您的方法 (並使用 **Ctrl** + **。** 若要加入 `using`) 的語句 `ObjectCreationExpressionSyntax` ：
 
 ```csharp
 var objectCreation = root.FindNode(context.Span)
                          .FirstAncestorOrSelf<ObjectCreationExpressionSyntax>();
 ```
 
-**註冊適用于燈泡 UI 的程式碼修正。** 當您註冊程式碼修正程式時，Roslyn 會自動插入 Visual Studio 燈泡 UI 中。 終端使用者會看到他們可以使用**Ctrl** + **。** 當您的分析器波浪線不正確的函式時，)  (期間 `ImmutableArray<T>` 。 因為您的程式碼修正提供者只會在發生問題時執行，所以您可以假設您有要尋找的物件建立運算式。 從內容參數，您可以將下列程式碼加入至方法的結尾，以註冊新的程式碼修正 `RegisterCodeFixAsync` ：
+**註冊適用于燈泡 UI 的程式碼修正。** 當您註冊程式碼修正程式時，Roslyn 會自動插入 Visual Studio 燈泡 UI 中。 終端使用者會看到他們可以使用 **Ctrl** + **。** 當您的分析器波浪線不正確的函式時，)  (期間 `ImmutableArray<T>` 。 因為您的程式碼修正提供者只會在發生問題時執行，所以您可以假設您有要尋找的物件建立運算式。 從內容參數，您可以將下列程式碼加入至方法的結尾，以註冊新的程式碼修正 `RegisterCodeFixAsync` ：
 
 ```csharp
 context.RegisterCodeFix(
@@ -264,9 +265,9 @@ context.RegisterCodeFix(
             context.Diagnostics[0]);
 ```
 
-您必須將編輯器的插入號放在識別碼中， `CodeAction` 然後使用**Ctrl** + **。**  (期間) 加入 `using` 此類型的適當語句。
+您必須將編輯器的插入號放在識別碼中， `CodeAction` 然後使用 **Ctrl** + **。**  (期間) 加入 `using` 此類型的適當語句。
 
-然後將編輯器的插入號放在 `ChangeToImmutableArrayEmpty` 識別碼中，然後使用**Ctrl** + **。** 再次為您產生這個方法 stub。
+然後將編輯器的插入號放在 `ChangeToImmutableArrayEmpty` 識別碼中，然後使用 **Ctrl** + **。** 再次為您產生這個方法 stub。
 
 您新增的最後一個程式碼片段會藉由傳遞所 `CodeAction` 找到的問題種類的和診斷識別碼，來註冊程式碼修正。 在此範例中，只有一個診斷識別碼可供此程式碼提供修正程式，因此您可以直接傳遞診斷識別碼陣列的第一個元素。 當您建立時 `CodeAction` ，會傳入燈泡 UI 應用來作為程式碼修正描述的文字。 您也可以傳入接受 CancellationToken 的函式，並傳回新的檔。 新檔有一個新的語法樹狀結構，其中包含您所呼叫的修補程式碼 `ImmutableArray.Empty` 。 此程式碼片段會使用 lambda，讓它可以在 objectCreation 節點和內容檔上關閉。
 
@@ -290,7 +291,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 }
 ```
 
-您必須將編輯器的插入號放在識別碼中 `SyntaxGenerator` ，並使用**Ctrl** + **。**  (期間) 加入 `using` 此類型的適當語句。
+您必須將編輯器的插入號放在識別碼中 `SyntaxGenerator` ，並使用 **Ctrl** + **。**  (期間) 加入 `using` 此類型的適當語句。
 
 此程式碼 `SyntaxGenerator` 會使用，這是用來建立新程式碼的實用型別。 取得具有程式碼問題的檔產生器之後， `ChangeToImmutableArrayEmpty` 呼叫 `MemberAccessExpression` ，傳遞具有要存取之成員的型別，並以字串形式傳遞成員的名稱。
 
@@ -298,17 +299,17 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 ## <a name="try-your-code-fix"></a>試用您的程式碼修正
 
-您現在可以按 **F5** ，在 Visual Studio 的第二個實例中執行分析器。 開啟您先前使用的主控台專案。 現在您應該會看到燈泡出現在新的物件建立運算式的位置 `ImmutableArray<int>` 。 如果您按下**Ctrl** + **。**  (期間) ，您將會看到您的程式碼修正，且您會在燈泡 UI 中看到自動產生的程式碼差異預覽。 Roslyn 會為您建立此程式。
+您現在可以按 **F5** ，在 Visual Studio 的第二個實例中執行分析器。 開啟您先前使用的主控台專案。 現在您應該會看到燈泡出現在新的物件建立運算式的位置 `ImmutableArray<int>` 。 如果您按下 **Ctrl** + **。**  (期間) ，您將會看到您的程式碼修正，且您會在燈泡 UI 中看到自動產生的程式碼差異預覽。 Roslyn 會為您建立此程式。
 
-**Pro 提示：** 如果您啟動 Visual Studio 的第二個實例，而且沒有看到程式碼修正的燈泡，您可能需要清除 Visual Studio 元件快取。 清除快取會強制 Visual Studio 重新檢查元件，因此 Visual Studio 接著應挑選最新的元件。 首先，關閉 Visual Studio 的第二個實例。 然後，在**Windows 檔案總管**中，流覽*至 \\ %LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn*。  ("16.0" 從版本變更為具有 Visual Studio 的版本。 ) 刪除子目錄 *ComponentModelCache*。
+**Pro 提示：** 如果您啟動 Visual Studio 的第二個實例，而且沒有看到程式碼修正的燈泡，您可能需要清除 Visual Studio 元件快取。 清除快取會強制 Visual Studio 重新檢查元件，因此 Visual Studio 接著應挑選最新的元件。 首先，關閉 Visual Studio 的第二個實例。 然後，在 **Windows 檔案總管** 中，流覽 *至 \\ %LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn*。  ("16.0" 從版本變更為具有 Visual Studio 的版本。 ) 刪除子目錄 *ComponentModelCache*。
 
 ## <a name="talk-video-and-finish-code-project"></a>討論影片和完成程式碼專案
 
 您可以在 [此討論](https://channel9.msdn.com/events/Build/2015/3-725)中看到此範例的開發和討論。 這段演講將示範可運作的分析器，並逐步引導您進行建立。
 
-您可以在 [這裡](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)看到所有完成的程式碼。 *DoNotUseImmutableArrayCollectionInitializer*和*DoNotUseImmutableArrayCtor*的子資料夾都有一個 c # 檔案，可用於尋找問題和一個 c # 檔案，該檔案會執行顯示在 Visual Studio 燈泡 UI 中的程式碼修正程式。 請注意，完成的程式碼有更多的抽象概念，可避免過度提取 ImmutableArray \<T> 型別物件。 它會使用嵌套註冊的動作，將類型物件儲存在可使用的內容中，只要子動作 (分析物件建立，並分析) 執行的集合初始化。
+您可以在 [這裡](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)看到所有完成的程式碼。 *DoNotUseImmutableArrayCollectionInitializer* 和 *DoNotUseImmutableArrayCtor* 的子資料夾都有一個 c # 檔案，可用於尋找問題和一個 c # 檔案，該檔案會執行顯示在 Visual Studio 燈泡 UI 中的程式碼修正程式。 請注意，完成的程式碼有更多的抽象概念，可避免過度提取 ImmutableArray \<T> 型別物件。 它會使用嵌套註冊的動作，將類型物件儲存在可使用的內容中，只要子動作 (分析物件建立，並分析) 執行的集合初始化。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [\\\Build 2015 談](https://channel9.msdn.com/events/Build/2015/3-725)
 * [GitHub 上已完成的程式碼](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
