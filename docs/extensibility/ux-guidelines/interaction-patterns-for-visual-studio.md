@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 的互動模式 |Microsoft Docs
+description: 瞭解您在建立 Visual Studio 的新功能時，可以使用的常見互動模式程式庫。
+ms.custom: SEO-VS-2020
 ms.date: 05/13/2020
 ms.topic: conceptual
 ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5376c1edf2c87ece78d966bede05b60cc0b6bab
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 1cd618b66eed900c2436704d40de5325c1205e85
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467644"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863489"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>適用於 Visual Studio 的互動模式
 ## <a name="overview"></a>概觀

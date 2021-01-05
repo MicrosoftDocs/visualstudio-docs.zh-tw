@@ -1,5 +1,7 @@
 ---
 title: 舊版語言服務中的快速諮詢 |Microsoft Docs
+description: 深入瞭解 IntelliSense 快速諮詢作業的支援，以便顯示識別碼的相關資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d070c607313b406f036a5b6f071eaa371070408
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 255022c2722104d3790d1c417eee644730ddc1e8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705936"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875072"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>舊版語言服務中的快速諮詢
-當使用者將插入號放在識別碼中，並從**IntelliSense**功能表中選取 [**快速**諮詢] 或將滑鼠游標停留在識別碼上時，IntelliSense 快速諮詢會顯示來源識別碼的相關資訊。 這會導致工具提示出現，並顯示識別碼的相關資訊。 這項資訊通常包含識別碼類型。 當偵錯工具引擎為使用中時，這項資訊可能會包含目前的值。 Debug engine 提供運算式值，而語言服務只會處理識別碼。
+當使用者將插入號放在識別碼中，並從 **IntelliSense** 功能表中選取 [**快速** 諮詢] 或將滑鼠游標停留在識別碼上時，IntelliSense 快速諮詢會顯示來源識別碼的相關資訊。 這會導致工具提示出現，並顯示識別碼的相關資訊。 這項資訊通常包含識別碼類型。 當偵錯工具引擎為使用中時，這項資訊可能會包含目前的值。 Debug engine 提供運算式值，而語言服務只會處理識別碼。
 
  舊版語言服務會實作為 VSPackage 的一部分，但是執行語言服務功能的較新方法是使用 MEF 延伸模組。 若要深入瞭解，請參閱 [逐步解說：顯示 QuickInfo 工具提示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)。
 

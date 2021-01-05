@@ -1,5 +1,7 @@
 ---
 title: VisibilityItem 元素 |Microsoft Docs
+description: VisibilityItem 元素決定命令和工具列的靜態可見度。 專案會識別命令或功能表，以及相關聯的命令 UI 內容。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9129d64e430d661bbdd8f7682e64c93650570211
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 637fea7d203e58c59f85794eeb0f8894eb62e777
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698155"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863884"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 元素
 `VisibilityItem`元素會決定命令和工具列的靜態可見度。 每個專案都會識別命令或功能表，以及相關聯的命令 UI 內容。 Visual Studio 會偵測命令、功能表和工具列，以及它們的可見度，而不會載入定義它們的 Vspackage。 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 會使用方法來判斷命令 UI 內容是否為作用中。
@@ -27,7 +29,7 @@ ms.locfileid: "80698155"
 
  `VisibilityItem`元素只適用于命令、功能表和工具列，而不會套用至群組。 只要專案的 `VisibilityItem` 父功能表為使用中，就會顯示沒有相關專案的元素。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <VisibilityItem
@@ -53,7 +55,7 @@ ms.locfileid: "80698155"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints`元素會決定命令和工具列群組的靜態可見度。|
 
@@ -64,7 +66,7 @@ ms.locfileid: "80698155"
 
 ```xml
 <VisibilityConstraints>
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
     context="guidNotViewSourceMode"/>
 </VisibilityConstraints>
 ```

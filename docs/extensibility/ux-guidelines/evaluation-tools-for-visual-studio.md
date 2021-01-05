@@ -1,5 +1,7 @@
 ---
 title: 適用于 Visual Studio 的評估工具 |Microsoft Docs
+description: 使用此檢查清單來評估視覺效果的使用者體驗品質，以及您針對 Visual Studio 所設計之新功能的互動詳細資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ae5ae2d3be49a797ff1d594aab4517efab53330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42c8ef3033d1c9f897f891310c4ddea89ab0074e
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698423"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863455"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>適用於 Visual Studio 的評估工具
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Visual Studio 的熱情技術檢查清單
@@ -42,8 +44,8 @@ ms.locfileid: "80698423"
     ||正確|不正確|
     |-|-------------|---------------|
     |**所有) 的命令文字 (**|句子案例：<br /><br /> **目錄名稱：**|目錄名稱：|
-    |** (用戶端) 的按鈕文字 **|標題案例：<br /><br /> **[設為預設值]**|設定為預設值|
-    |**按鈕文字 (線上) **|句子案例：<br /><br /> **[設為預設值]**||
+    |**(用戶端) 的按鈕文字**|標題案例：<br /><br /> **[設為預設值]**|設定為預設值|
+    |**按鈕文字 (線上)**|句子案例：<br /><br /> **[設為預設值]**||
 
 - 確認 [群組標頭] 和 [按鈕] 以外的所有標籤都以冒號結尾，然後在與它們配對的控制項之前。
 
@@ -215,8 +217,8 @@ ms.locfileid: "80698423"
 
 ### <a name="touch-enabled-ui"></a>啟用觸控的 UI
 
-- 確認互動式控制項夠大，可輕鬆地可觸式-大小下限**23x23 圖元**
+- 確認互動式控制項夠大，可輕鬆地可觸式-大小下限 **23x23 圖元**
 
 - 確認最常使用的控制項大小至少為 **40x40 圖元** 。
 
-- 確認互動式控制項之間至少有**5 圖元的間距**
+- 確認互動式控制項之間至少有 **5 圖元的間距**

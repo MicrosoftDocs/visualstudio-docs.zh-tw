@@ -1,5 +1,7 @@
 ---
 title: 測試區域4：簽入 |Microsoft Docs
+description: 此原始檔控制外掛程式測試區域包含使用 [簽入] 命令將更新的專案傳送至版本存放區。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2386a217de228c5c47b467e6e083d978702927f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe0e7838c3bde048df2514c54e534cf7a9b3475
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704580"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875212"
 ---
 # <a name="test-area-4-check-in"></a>測試區域 4：簽入
 此原始檔控制外掛程式測試區域包含透過 [ **簽入** ] 命令將更新的專案傳送至版本存放區。
@@ -25,9 +27,9 @@ ms.locfileid: "80704580"
  下列 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境功能表路徑用於測試案例中。
 
 ##### <a name="check-in"></a>[存回]：
- **File**檔案、**原始檔控制**、**簽入**。
+ 檔案、**原始檔控制**、**簽入**。
 
- **File**檔案，**簽入**。
+ 檔案，**簽入**。
 
  快速鍵功能表， **簽入**。
 
@@ -55,7 +57,7 @@ ms.locfileid: "80704580"
 
 |動作|測試步驟|要驗證的預期結果|
 |------------|----------------|--------------------------------|
-|在對話方塊中加入文字檔並簽入所有專案 (**簽入** ] 對話方塊) |1. 建立新專案。<br />2. 將方案加入至原始檔控制。<br />3. 將文字檔新增至專案。<br />4. 如果出現提示，請接受簽出項目。<br />5. 選取 **方案總管**中的方案。<br />6. 從 [ **簽入** ] 對話方塊中簽入。|常見的預期行為。|
+|在對話方塊中加入文字檔並簽入所有專案 (**簽入** ] 對話方塊) |1. 建立新專案。<br />2. 將方案加入至原始檔控制。<br />3. 將文字檔新增至專案。<br />4. 如果出現提示，請接受簽出項目。<br />5. 選取 **方案總管** 中的方案。<br />6. 從 [ **簽入** ] 對話方塊中簽入。|常見的預期行為。|
 |加入文字檔，並簽入所有 ([ **暫止簽入** ] 視窗) |1. 建立新專案。<br />2. 將方案加入至原始檔控制。<br />3. 將文字檔新增至專案。<br />4. 如果出現提示，請接受簽出項目。<br />5. 從 [暫止 **簽入** ] 視窗簽入方案。|常見的預期行為|
 
 ### <a name="case-4c-adding-projects"></a>案例4c：加入專案
@@ -66,5 +68,5 @@ ms.locfileid: "80704580"
 |將專案加入至原始檔控制下的空白方案 (**簽入** 對話方塊) |1. 建立空白的方案。<br />2. 將方案加入至原始檔控制。<br />3. 新增專案。<br />4. 如果出現提示，請接受簽出解決方案。<br />5. 從 [ **簽入** ] 對話方塊中簽入。|常見的預期行為。|
 |將專案加入至原始檔控制下的空白方案， ([ **暫止簽入** ] 視窗) |1. 建立空白的方案。<br />2. 將方案加入至原始檔控制。<br />3. 新增專案。<br />4. 如果出現提示，請接受簽出解決方案。<br />5. 從 [暫止 **簽入** ] 視窗簽入方案。|常見的預期行為。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

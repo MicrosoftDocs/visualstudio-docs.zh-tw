@@ -1,5 +1,7 @@
 ---
 title: 物件 |Microsoft Docs
+description: 本節中的文章提供物件的相關參考資訊，這些物件是用來在 Visual Studio SDK 中建立核心文字編輯器的實例。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 774a93e1accf67a9d97f00ce3a6dd3339f095d26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bff2b16684c41d18f997e6aab7950aa19a7d1db1
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702275"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863692"
 ---
 # <a name="objects"></a>物件
 下列參考資訊說明用來建立核心文字編輯器實例的物件。

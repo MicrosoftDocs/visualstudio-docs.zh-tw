@@ -1,5 +1,7 @@
 ---
 title: 註冊舊版語言 Service2 |Microsoft Docs
+description: 本文列出 Visual Studio 中可用之各種語言服務選項的登錄專案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,39 +14,39 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a41f3f507579cbd2649e33e81d1368fb5404799
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08b9e88440fcb7b488e479e4188279d82a526e4c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238838"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875162"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>註冊舊版語言服務2
 下列各節提供中可用之各種語言服務選項的登錄專案清單 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
- 在下列登錄專案清單中， *VS Reg 根目錄*等於 HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *x.* y，其中， *x. y*是 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 版本號碼。
+ 在下列登錄專案清單中， *VS Reg 根目錄* 等於 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x.* y，其中， *x. y* 是 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 版本號碼。
 
 ## <a name="registry-entries-for-language-service-options"></a>語言服務選項的登錄專案
- *VS Reg Root*\Languages\Language Services \\ *語言名稱*索引鍵可以包含下列值。
+ *VS Reg Root*\Languages\Language Services \\ *語言名稱* 索引鍵可以包含下列值。
 
 |名稱|類型|範圍|描述|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ|*\<GUID>*|語言服務的 GUID。|
 |LangResID|REG_DWORD|0x0-0xffff|字串資源識別碼 (ResID 語言的當地語系化文字名稱) 。|
 |套件|REG_SZ|*\<GUID>*|VSPackage 的 GUID。|
-|ShowCompletion|REG_DWORD|0-1|指定是否啟用 [**選項**] 對話方塊中的**語句完成**選項。|
-|ShowSmartIndent|REG_DWORD|0-1|指定是否已啟用 [**選項**] 對話方塊中的 [選取**智慧**縮排] 選項。|
+|ShowCompletion|REG_DWORD|0-1|指定是否啟用 [**選項**] 對話方塊中的 **語句完成** 選項。|
+|ShowSmartIndent|REG_DWORD|0-1|指定是否已啟用 [**選項**] 對話方塊中的 [選取 **智慧** 縮排] 選項。|
 |RequestStockColors|REG_DWORD|0-1|指定是否使用自訂或預設色彩來色彩關鍵字。|
 |ShowHotURLs|REG_DWORD|0-1|指定使用者是否可以按一下 Url。|
-|預設為非經常性存取 Url|REG_DWORD|0-1|在 [**選項**] 對話方塊中，指定 [**啟用單鍵 URL] 流覽**選項的初始設定。|
+|預設為非經常性存取 Url|REG_DWORD|0-1|在 [**選項**] 對話方塊中，指定 [**啟用單鍵 URL] 流覽** 選項的初始設定。|
 |DefaultToInsertSpaces|REG_DWORD|0-1|指定語言服務是否以「插入空格」作為預設索引標籤選項。|
-|ShowDropdownBarOption|REG_DWORD|0-1|在顯示或隱藏**巡覽列**的 [**選項**] 對話方塊中，啟用或停用**巡覽列**選項。|
-|僅限單一程式碼視窗|REG_DWORD|0-1|在語言服務的 [**視窗]** 功能表中，啟用或停用**新的視窗**選擇。|
+|ShowDropdownBarOption|REG_DWORD|0-1|在顯示或隱藏 **巡覽列** 的 [**選項**] 對話方塊中，啟用或停用 **巡覽列** 選項。|
+|僅限單一程式碼視窗|REG_DWORD|0-1|在語言服務的 [**視窗]** 功能表中，啟用或停用 **新的視窗** 選擇。|
 |EnableAdvancedMembersOption|REG_DWORD|0-1|啟用或停用 [**隱藏 Advanced Members**] 的 [**選項**] 對話方塊設定。|
 |支援 CF_HTML|REG_DWORD|0-1|指定編輯器是否啟用 HTML 資料的複製和貼上。|
 |EnableLineNumbersOption|REG_DWORD|0-1|指定語言服務是否啟用 [**選項**] 對話方塊中的 [**行號**] 選項。|
 |HideAdvancedMembersByDefault|REG_DWORD|0-1|指定在完成清單中是否隱藏私用欄位等 advanced 成員。|
-|ShowBraceCompletion|REG_DWORD|0-1|指定是否啟用 [**選項**] 對話方塊中的**大括弧完成**選項。|
+|ShowBraceCompletion|REG_DWORD|0-1|指定是否啟用 [**選項**] 對話方塊中的 **大括弧完成** 選項。|
 
 ### <a name="example"></a>範例
 
@@ -66,7 +68,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 
 |名稱|類型|範圍|描述|
 |----------|----------|-----------|-----------------|
-|(預設值)|REG_SZ|文字|預設值可以用來記錄語言的名稱。 此索引鍵的名稱是運算式評估工具的 GUID，在 \AD7Metrics\Expression 評估工具中具有對應的專案 *\<VS Reg Root>* 。|
+|(預設值)|REG_SZ|text|預設值可以用來記錄語言的名稱。 此索引鍵的名稱是運算式評估工具的 GUID，在 \AD7Metrics\Expression 評估工具中具有對應的專案 *\<VS Reg Root>* 。|
 
 ### <a name="example"></a>範例
 
@@ -186,7 +188,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |(預設值)|REG_SZ||未使用的。|
 |*\<ext>*|REG_DWORD|0-0xffffffff|延伸的相對優先權。 如果有兩個以上的語言共用相同的副檔名，則會選擇較高優先順序的語言。|
 
- 此外，目前使用者的編輯器預設選項會儲存在 HKEY_Current_User \Software\Microsoft\VisualStudio \\ *X. Y*\Default 編輯器 \\ *ext*中。所選語言服務的 GUID 位於自訂專案中。 這會優先使用目前的使用者。
+ 此外，目前使用者的編輯器預設選項會儲存在 HKEY_Current_User \Software\Microsoft\VisualStudio \\ *X. Y*\Default 編輯器 \\ *ext* 中。所選語言服務的 GUID 位於自訂專案中。 這會優先使用目前的使用者。
 
 ### <a name="example"></a>範例
 
@@ -237,5 +239,5 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         MaxRegions            = reg_dword:0x0000000a
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)

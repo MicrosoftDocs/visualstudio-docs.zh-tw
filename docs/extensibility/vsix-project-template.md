@@ -1,5 +1,7 @@
 ---
 title: VSIX 專案範本 |Microsoft Docs
+description: 瞭解如何使用 VSIX 專案範本將 Visual Studio 擴充功能包裝在 VSIX 專案中，然後在 Visual Studio Marketplace 上發佈封裝。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74791a77ee1c720fb60876a1efa6bd58fa94f68b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76e4301843cc318b60940948fee4b618860e7bae
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697927"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863879"
 ---
 # <a name="vsix-project-template"></a>VSIX 專案範本
 
@@ -52,7 +54,7 @@ VSIX 專案範本有兩個主要用途：
 
 2. 使用 **Vsix 專案** 範本建立 vsix 專案。
 
-    *Extension.vsixmanifest* 會在 **資訊清單設計**工具中開啟。
+    *Extension.vsixmanifest* 會在 **資訊清單設計** 工具中開啟。
 
 3. 在 [ **資產** ] 索引標籤上，選擇 [ **新增** ] 按鈕。
 
@@ -70,7 +72,7 @@ VSIX 專案範本有兩個主要用途：
 
 6. 若要加入目前解決方案中未包含的延伸模組或內容元素，請執行下列步驟：
 
-   1. 在 [ **來源** ] 清單方塊中，選擇 **檔案系統上**的 [檔案]。
+   1. 在 [ **來源** ] 清單方塊中，選擇 **檔案系統上** 的 [檔案]。
 
    2. 在 [ **路徑** ] 欄位中，輸入已編譯或壓縮的延伸模組檔案的完整路徑，或使用 [ **流覽]** 按鈕流覽至該檔案。
 
@@ -82,7 +84,7 @@ VSIX 專案範本有兩個主要用途：
 
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建立包含 VSIX 資訊清單檔的 *.vsix* 檔案、[Content_Types]*.xml* 檔案，以及您新增至專案的所有延伸模組資產。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [VSIX 延伸架構2.0 參考](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)

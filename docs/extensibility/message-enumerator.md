@@ -1,5 +1,7 @@
 ---
 title: 訊息列舉值 |Microsoft Docs
+description: 此列舉值的成員會用於 TEXTOUTPROC 函式，此函式是 IDE 在呼叫 SccOpenProject 時所提供的回呼函數。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e09b72bd228839268cffc228dd0dc503cc82bd9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7d4607afd9b46d35db416baed73007c67a7832
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702512"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863736"
 ---
 # <a name="message-enumerator"></a>訊息列舉值
 下列旗標用於函式 `TEXTOUTPROC` ，這是 IDE 在呼叫 [SccOpenProject](../extensibility/sccopenproject-function.md) 時所提供的回呼函式 (如需回呼函式) 的詳細資訊，請參閱 [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) 。
@@ -26,16 +28,16 @@ ms.locfileid: "80702512"
 ## <a name="syntax"></a>語法
 
 ```
-enum { 
-   SCC_MSG_RTN_CANCEL = -1, 
-   SCC_MSG_RTN_OK = 0, 
-   SCC_MSG_INFO = 1 
-   SCC_MSG_WARNING, 
-   SCC_MSG_ERROR, 
-   SCC_MSG_STATUS, 
-   SCC_MSG_DOCANCEL, 
-   SCC_MSG_STARTCANCEL, 
-   SCC_MSG_STOPCANCEL 
+enum { 
+   SCC_MSG_RTN_CANCEL = -1, 
+   SCC_MSG_RTN_OK = 0, 
+   SCC_MSG_INFO = 1 
+   SCC_MSG_WARNING, 
+   SCC_MSG_ERROR, 
+   SCC_MSG_STATUS, 
+   SCC_MSG_DOCANCEL, 
+   SCC_MSG_STARTCANCEL, 
+   SCC_MSG_STOPCANCEL 
 };
 ```
 
@@ -58,6 +60,6 @@ enum { 
 
  SCC_MSG_STOPCANCEL 停止取消迴圈。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

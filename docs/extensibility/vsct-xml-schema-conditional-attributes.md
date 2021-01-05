@@ -1,5 +1,7 @@
 ---
 title: .VSCT XML 架構條件式屬性 |Microsoft Docs
+description: 瞭解如何將條件式屬性套用至 .VSCT XML 架構清單和專案。 屬性評估為 true 或 false，可控制產生的輸出。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5f9f51e9380585d4191c5969d96fbb3a93ea42a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697939"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863725"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>.VSCT XML 架構條件式屬性
 您可以將條件屬性套用至所有清單和專案。 邏輯運算子和符號展開運算式的評估結果為 true 或 false。 若為 true，則產生的輸出中會包含相關聯的清單或專案。
@@ -27,12 +29,12 @@ ms.locfileid: "80697939"
 
  值1、' 1 ' 和 ' true ' 會評估為 true，而0、' 0 ' 和 ' false ' 會評估為 false。
 
-## <a name="operators"></a>操作員
+## <a name="operators"></a>運算子
  使用下列運算子來評估條件運算式。
 
 |運算子|定義|
 |--------------|----------------|
-|(,)|群組|
+|(,)|分組|
 |!|邏輯 NOT|
 |\<, >, \<=, >=, ==, !=|關係與相等|
 |及|Boolean|

@@ -1,5 +1,7 @@
 ---
 title: 專案設定物件 |Microsoft Docs
+description: 瞭解專案設定物件如何管理將設定資訊顯示到 UI 的方式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 001509b56e3bac6a8fd585eb0efe0bd57018acea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d91f640abc4fd91b68341e825b312b8bfb0d6f6
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706648"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875488"
 ---
 # <a name="project-configuration-object"></a>專案組態物件
 專案設定物件可管理對 UI 的設定資訊顯示。
@@ -47,9 +49,9 @@ ms.locfileid: "80706648"
 
  `ISpecifyPropertyPages` 和 `IDispatch` 會搭配屬性頁使用，以抓取和顯示與設定相關的資訊給使用者。 如需詳細資訊，請參閱 [屬性頁](../../extensibility/internals/property-pages.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 - [建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)
 - [輸出的專案組態](../../extensibility/internals/project-configuration-for-output.md)
 - [屬性頁](../../extensibility/internals/property-pages.md)
-- [方案組態](../../extensibility/internals/solution-configuration.md)
+- [解決方案設定](../../extensibility/internals/solution-configuration.md)

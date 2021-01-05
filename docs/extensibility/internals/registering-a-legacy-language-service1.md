@@ -1,5 +1,7 @@
 ---
 title: 註冊舊版語言 Service1 |Microsoft Docs
+description: 瞭解如何藉由新增登錄機碼和專案，從具有 Visual Studio 的 VSPackage 註冊舊版語言服務。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0076eeee0ebcb0a80925efdde212097a3ec3e7e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e92c831ad3d2f4d75d57c48cfc7ba666d19b7a5e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238877"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875196"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>註冊舊版語言服務1
 在受控封裝架構 (MPF) 中，語言服務會由 VSPackage 推出 (請參閱 [vspackage](../../extensibility/internals/vspackages.md)) ，並藉 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 由新增登錄機碼和專案向註冊。 這項註冊程式是在安裝期間，部分于執行時間完成。
@@ -128,7 +130,7 @@ namespace TestLanguagePackage
  這個屬性會註冊屬性頁，以顯示在 [**文字編輯器**] 類別下的 [**選項**] 對話方塊中。 針對您的語言服務，使用下列其中一個屬性來顯示每個頁面。 如果您需要在樹狀結構中組織您的頁面，請使用其他屬性來定義樹狀結構的每個節點。
 
 ### <a name="example"></a>範例
- 此範例顯示兩個屬性頁、 **選項** 和 **縮**排，以及一個包含第二個屬性頁的節點。
+ 此範例顯示兩個屬性頁、 **選項** 和 **縮** 排，以及一個包含第二個屬性頁的節點。
 
 ```csharp
 using Microsoft.VisualStudio.Shell;

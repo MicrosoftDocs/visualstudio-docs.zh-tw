@@ -1,5 +1,7 @@
 ---
 title: MSSCCPRJ.SCC.SCC 檔案 |Microsoft Docs
+description: 深入瞭解 MSSCCPRJ.SCC。SCC 檔，這是原始檔控制外掛程式所使用的本機用戶端檔案，可搭配 Visual Studio SDK 使用。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89511b7c8b69c5793eceef7d58153dde253a4f47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 253482f840350ae1d3cf7ee83e03a88ace15a6cd
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702473"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863477"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC.SCC 檔案
 當您使用 IDE 在原始檔控制下放置 Visual Studio 的方案或專案時，IDE 會收到兩個重要的資訊片段。 此資訊來自原始檔控制外掛程式的字串格式。 這些字串 "AuxPath" 和 "ProjName" 對 IDE 而言是不透明的，但外掛程式會使用它們來尋找版本控制中的方案或專案。 IDE 通常會藉由呼叫 [SccGetProjPath](../extensibility/sccgetprojpath-function.md)來取得這些字串，然後將它們儲存在方案或專案檔中，以供未來對 [SccOpenProject](../extensibility/sccopenproject-function.md)的呼叫使用。 內嵌在方案和專案檔中時，當使用者分支、派生或複製版本控制中的方案和專案檔時，不會自動更新 "AuxPath" 和 "ProjName" 字串。 為了確保方案和專案檔指向版本控制中的正確位置，使用者必須手動更新字串。 因為這些字串是不透明的，不一定會清楚應如何更新。
@@ -27,7 +29,7 @@ ms.locfileid: "80702473"
 
 - 每個目錄只能有一個 *mssccprj.scc 的 SCC* 檔。
 
-- *Mssccprj.scc 的 SCC*檔案可以包含在指定目錄內的原始檔控制下的多個檔案的 "AuxPath" 和 "ProjName"。
+- *Mssccprj.scc 的 SCC* 檔案可以包含在指定目錄內的原始檔控制下的多個檔案的 "AuxPath" 和 "ProjName"。
 
 - "AuxPath" 字串中不能有引號。 您可以用引號括住它作為分隔符號 (例如，可以使用成對的雙引號來表示) 的空字串。 從 *mssccprj.scc* 檔案讀取時，IDE 會從 "AuxPath" 字串中去除所有引號。
 
@@ -37,7 +39,7 @@ ms.locfileid: "80702473"
 
 - 如果 *mssccprj.scc 的 SCC* 檔案遭到刪除，則提供者應該在下次執行與該目錄有關的原始檔控制作業時，重新產生此檔案。
 
-- *Mssccprj.scc 的 SCC*檔必須嚴格遵循定義的格式。
+- *Mssccprj.scc 的 SCC* 檔必須嚴格遵循定義的格式。
 
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ.SCC 的圖例。SCC 檔案格式
  以下是 *mssccprj.scc* 的範例檔案格式 (行號只提供作為指南，不應該包含在檔案主體) 中：
@@ -72,6 +74,6 @@ ms.locfileid: "80702473"
 
  此區段沒有結尾分隔符號。 檔案的名稱以及出現在檔案中的所有常值，都是在 scc 標頭檔中定義。 如需詳細資訊，請參閱 [用來尋找原始檔控制外掛程式之索引鍵的字串](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
 - [用來作為用來尋找原始檔控制外掛程式之索引鍵的字串](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

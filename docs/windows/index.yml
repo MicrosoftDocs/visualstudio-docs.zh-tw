@@ -7,16 +7,16 @@ metadata:
   titleSuffix: ''
   description: 了解如何使用 Visual Studio，以您選擇的語言，為任何平台或裝置開發應用程式、服務及工具。
   ms.topic: hub-page
-  ms.custom: contperfq1
+  ms.custom: contperf-fy21q1
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: d6683909bae824e10d37ab029a0a2d4110488ae8
-  ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+  ms.openlocfilehash: 8a3ac01afabe75cf714c9e8ef595b66b347e831a
+  ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/18/2020
-  ms.locfileid: "97668621"
+  ms.lasthandoff: 01/05/2021
+  ms.locfileid: "97875137"
 highlightedContent:
   items:
   - title: 設定與安裝

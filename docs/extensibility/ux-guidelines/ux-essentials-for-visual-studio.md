@@ -1,5 +1,7 @@
 ---
 title: 適用于 Visual Studio 的 UX 基本知識 |Microsoft Docs
+description: 針對您針對 Visual Studio 開發的新功能，請參閱這些使用者經驗的最佳作法，包括瞭解螢幕解析度。
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6c329eda477d77ab73be2ad913ac18d67ff3c08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 616837c358c804198818df659cb7b7ee76716305
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698336"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864045"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>適用於 Visual Studio 的 UX 基本項目
 
@@ -120,7 +122,7 @@ ms.locfileid: "80698336"
 
 ![圖 A：命令列反模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-pattern-FigureA")<br />圖 A：命令列反模式
 
-這種類型的設定會稍微更好，但還是不太希望，如 **圖 B**所示。雖然分割按鈕需要較少的空間，因此改善了下拉式清單，但是這兩種設計仍會使用工具列來提升非命令的內容。
+這種類型的設定會稍微更好，但還是不太希望，如 **圖 B** 所示。雖然分割按鈕需要較少的空間，因此改善了下拉式清單，但是這兩種設計仍會使用工具列來提升非命令的內容。
 
 ![圖 B：更好，但仍然是命令列反模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-pattern-FigureB")<br />圖 B：更好，但仍然是命令列反模式
 

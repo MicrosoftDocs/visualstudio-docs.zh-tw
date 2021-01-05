@@ -1,5 +1,7 @@
 ---
 title: 儲存標準檔 |Microsoft Docs
+description: 深入瞭解您新增至 Visual Studio IDE 之專案類型的標準檔所發生的處理常式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8d50a9e62e69f925564717020a51f88620f5f3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81c79ece83bc8aaaf7ca4dd28642de5973ad94c1
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705543"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875662"
 ---
 # <a name="saving-a-standard-document"></a>儲存標準文件
-環境會處理 [儲存]、[另存新檔] 和 [儲存所有] 命令。 當使用者選取 [ **儲存**]、[ **另存**新檔] 或 [ **全部儲存** ]，或從 [檔案] 功能表中選取 [全部儲存] **或 [** 全部儲存] **之後，就**會發生下列進程。
+環境會處理 [儲存]、[另存新檔] 和 [儲存所有] 命令。 當使用者選取 [ **儲存**]、[ **另存** 新檔] 或 [ **全部儲存** ]，或從 [檔案] 功能表中選取 [全部儲存] **或 [** 全部儲存] **之後，就** 會發生下列進程。
 
- ![標準編輯器](../../extensibility/internals/media/public.gif "公用") 儲存、另存新檔，並儲存標準編輯器的所有命令處理
+ ![標準編輯器](../../extensibility/internals/media/public.gif "公開") 儲存、另存新檔，並儲存標準編輯器的所有命令處理
 
  下列步驟會詳細說明此程式：
 
@@ -56,6 +58,6 @@ ms.locfileid: "80705543"
 
 2. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew` ， `punkWindowFrame`) 方法，將檔傳送至新的階層。 執行 [另存新檔] 命令的階層會呼叫這個方法。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)

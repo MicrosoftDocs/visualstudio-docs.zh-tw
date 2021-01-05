@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 使用者體驗指導方針 |Microsoft Docs
+description: Visual Studio 的使用者經驗指導方針包含一般使用者模型和互動模式，可協助為新功能建立一致的使用者體驗。
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994d0029e7dfdc3559adae0e1c022acd38d7f5a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8200d5d0dbb18240f67214abecca4d066ce6270
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698210"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863944"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 使用者體驗方針
 如果您設計 Visual Studio 的新功能，請遵循 Visual Studio 的使用者經驗指導方針。 這些指導方針包含一般使用者模型和互動模式的相關資訊，讓新使用者介面的設計工具 (UI) 可以在開發環境中建立順暢且一致的使用者體驗。

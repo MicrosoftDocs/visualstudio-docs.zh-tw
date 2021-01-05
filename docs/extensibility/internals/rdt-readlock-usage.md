@@ -1,5 +1,7 @@
 ---
 title: RDT_ReadLock 使用量 |Microsoft Docs
+description: 瞭解 _VSRDTFLAGS。RDT_ReadLock 旗標，其提供在執行中的檔資料表中鎖定檔的邏輯。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb897fab61e1e14b52863b5853748c685200d5ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c946d69cf1aded072d27e7c6ccbdf28f1122571
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705922"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875384"
 ---
 # <a name="rdt_readlock-usage"></a>RDT_ReadLock 使用方式
 
@@ -36,7 +38,7 @@ ms.locfileid: "80705922"
 
 ## <a name="rdt_editlock-and-document-modification"></a>RDT_EditLock 與檔修改
 
-上述的旗標指出 `RDT_EditLock` 當使用者將檔開啟至可見的 **DocumentWindow**時，不可見的檔開啟。 發生這種情況時，當可見的**DocumentWindow**關閉時，使用者會看到**儲存**提示。 `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` 使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> 服務的執行一開始僅適用 `RDT_ReadLock` 于 (，亦即，當檔以非程式方式開啟以剖析資訊) 時。 稍後，如果必須修改檔，則鎖定會升級為弱式 **RDT_EditLock**。 如果使用者接著在可見的 **DocumentWindow**中開啟檔，就 `CodeModel` `RDT_EditLock` 會發行弱式。
+上述的旗標指出 `RDT_EditLock` 當使用者將檔開啟至可見的 **DocumentWindow** 時，不可見的檔開啟。 發生這種情況時，當可見的 **DocumentWindow** 關閉時，使用者會看到 **儲存** 提示。 `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` 使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> 服務的執行一開始僅適用 `RDT_ReadLock` 于 (，亦即，當檔以非程式方式開啟以剖析資訊) 時。 稍後，如果必須修改檔，則鎖定會升級為弱式 **RDT_EditLock**。 如果使用者接著在可見的 **DocumentWindow** 中開啟檔，就 `CodeModel` `RDT_EditLock` 會發行弱式。
 
 如果使用者接著關閉 **DocumentWindow** ，並在系統提示您儲存開啟的檔時選擇 [ **否** ]，則該 `CodeModel` 執行會處置檔中的所有資訊，並在下一次檔需要更多資訊時，以不可見的方式從磁片重新開啟檔。 此行為的奧妙是使用者開啟隱藏的已開啟檔的 **DocumentWindow** 、加以修改、關閉，然後在系統提示您儲存檔時選擇 [ **否** ] 的實例。 在此情況下，如果檔具有 `RDT_ReadLock` ，則檔將不會實際關閉，且修改過的檔將會在記憶體中以不可見的方式保持開啟，即使使用者選擇不儲存檔也是一樣。
 

@@ -1,5 +1,7 @@
 ---
 title: QUERYCHANGESFUNC |Microsoft Docs
+description: QUERYCHANGESFUNC 回呼函式是用來列舉檔案名的集合，並決定每個檔案的狀態。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30864cae95672f4026084a94c5474d165b124cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7ce5d9fa8e1c3cfc3eaedb55d69ca382e937e45
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701638"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864022"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 這是 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 作業用來列舉檔案名集合，並決定每個檔案狀態的回呼函數。
@@ -96,7 +98,7 @@ struct QUERYCHANGESDATA_W
 
  lpLatestName 這個專案的目前檔案名。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDE 所執行的回呼函數](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccQueryChanges](../extensibility/sccquerychanges-function.md)
 - [錯誤碼](../extensibility/error-codes.md)

@@ -1,5 +1,7 @@
 ---
 title: 為 Vspackage 提供自動化 |Microsoft Docs
+description: 瞭解如何藉由執行 VSPackage 專屬的物件和執行標準 automation 物件，為您的 Vspackage 提供自動化功能。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6364f9cbaf3409e076eeb77365e5d793c7be96cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939de72d672b750d2f2fc61a6c412368df5523d8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705955"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875397"
 ---
 # <a name="providing-automation-for-vspackages"></a>為 VSPackage 提供自動化
 有兩種主要的方式可為您的 Vspackage 提供自動化：藉由執行 VSPackage 專屬的物件和執行標準 automation 物件。 一般而言，這些會一起用來擴充環境的自動化模型。
 
-## <a name="vspackage-specific-objects"></a>VSPackage 特定物件
+## <a name="vspackage-specific-objects"></a>VSPackage-Specific 物件
  Automation 模型內的特定位置需要您提供 VSPackage 專屬的自動化物件。 比方說，新的專案需要只有您的 VSPackage 提供的不同物件。 這些物件的名稱會在登錄中輸入，並透過呼叫環境物件來取得 `DTE` 。
 
  當自動化取用者使用透過標準物件的 Object 屬性提供的物件時，也可以取得 VSPackage 特定的物件。 例如，標準 `Window` 物件有一個 `Object` 屬性，通常稱為屬性（property） `Windows.Object` 。 當取用者在 `Window.Object` VSPackage 中執行的視窗上呼叫時，您會傳回您自己設計的特定 automation 物件。

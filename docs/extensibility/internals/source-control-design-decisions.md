@@ -1,5 +1,7 @@
 ---
 title: 原始檔控制設計決策 |Microsoft Docs
+description: 瞭解在執行原始檔控制時，針對專案考慮的幾個重要設計決策。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c36bb2b50a72a52aeaeb7712f4ed711845b5e6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e84167bc9cbbcad41b897c2de69115c6827ca5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705250"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875514"
 ---
 # <a name="source-control-design-decisions"></a>原始檔控制的設計決策
 執行原始檔控制時，應考慮專案的下列設計決策。
@@ -34,7 +36,7 @@ ms.locfileid: "80705250"
 
 3. 當您的專案或編輯器呼叫檔案時 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> ，不會自動簽出與該檔案相關聯的特殊檔案。將特殊檔案連同父檔案一起傳遞。 環境會偵測傳入的所有檔案之間的關聯性，並適當地隱藏簽出 UI 中的特殊檔案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>

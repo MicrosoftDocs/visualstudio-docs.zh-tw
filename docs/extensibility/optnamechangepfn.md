@@ -1,5 +1,7 @@
 ---
 title: OPTNAMECHANGEPFN |Microsoft Docs
+description: 深入瞭解 OPTNAMECHANGEPFN 回呼函式，此函式會將名稱變更從原始檔控制外掛程式傳達給 Visual Studio IDE。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 603bd08c1ec3832bf732e0b33101076738d009e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e18a3e5004a86bb96ad77112f4c81ebca3e59cbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702241"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863440"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 這是在 [SccSetOption](../extensibility/sccsetoption-function.md) (中指定的回呼函式，其使用選項 `SCC_OPT_NAMECHANGEPFN`) ，並且用來將原始檔控制外掛程式所做的名稱變更傳遞回 IDE。
@@ -53,6 +55,6 @@ typedef void (*OPTNAMECHANGEPFN)(
 
  如果 IDE 不支援此回呼，則不會呼叫 [SccSetOption](../extensibility/sccsetoption-function.md) 來指定它。 如果外掛程式不支援此回呼，則 `SCC_E_OPNOTSUPPORTED` `SccSetOption` 當 IDE 嘗試設定回呼時，它會從函式傳回。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDE 所執行的回呼函數](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

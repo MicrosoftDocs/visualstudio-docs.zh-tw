@@ -1,5 +1,7 @@
 ---
 title: 註冊 Interop 元件命令處理常式 |Microsoft Docs
+description: 深入瞭解使用 Interop 元件的所有 Vspackage 執行命令所使用的基本命令合約。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: b45fe06722b190569e067dccd325ba4acac4fb0f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012044"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875150"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>註冊 Interop 組件命令處理常式
 VSPackage 必須註冊，才能 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 讓整合式開發環境 (IDE) 適當地路由命令。
@@ -28,10 +30,10 @@ VSPackage 必須註冊，才能 [!INCLUDE[vsprvs](../../code-quality/includes/vs
 - [命令表格格式參考](/previous-versions/bb164647(v=vs.100)) 資源位於非受控附屬 UI dll 中。
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage 的命令處理常式註冊
- VSPackage 做為使用者介面 (UI) 型命令的處理常式，需要在 VSPackage 後命名的登錄專案 `GUID` 。 此登錄專案會指定 VSPackage 之 UI 資源檔的位置，以及該檔案內的功能表資源。 登錄專案本身位於 HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \Menus，其中 *\<Version>* 是的版本 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，例如9.0。
+ VSPackage 做為使用者介面 (UI) 型命令的處理常式，需要在 VSPackage 後命名的登錄專案 `GUID` 。 此登錄專案會指定 VSPackage 之 UI 資源檔的位置，以及該檔案內的功能表資源。 登錄專案本身位於 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<Version>* \Menus 下，其中是的 *\<Version>* 版本 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，例如9.0。
 
 > [!NOTE]
-> \\ *\<Version>* 當 shell 初始化時，可使用替代的根目錄覆寫 HKEY_LOCAL_MACHINE \software\microsoft\visualstudio 的根路徑 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 如需根路徑的詳細資訊，請參閱 [使用 Windows Installer 安裝 vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。
+> \\ *\<Version>* 當 shell 初始化時，可使用替代的根目錄覆寫 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio的根路徑 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 如需根路徑的詳細資訊，請參閱 [使用 Windows Installer 安裝 vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU 資源登錄專案
  登錄專案的結構如下：
@@ -50,7 +52,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
 
  下表描述的欄位 \<*Resource Information*> 。
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 |---------------------------| - |
 | \<*Path to Resource DLL*> | 這是包含功能表資源之資源 DLL 的完整路徑，也就是空白，表示 VSPackage 的資源 DLL 會在 VSPackage 本身註冊) 的封裝子機碼中指定使用 (。<br /><br /> 建議您將這個欄位保留空白。 |
 | \<*Menu Resource ID*> | 這是資源的資源識別碼 `CTMENU` ，其中包含 VSPackage 的所有 UI 元素（從 [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) 檔案編譯）。 |
@@ -66,6 +68,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [使用 Interop 組件的命令和功能表](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

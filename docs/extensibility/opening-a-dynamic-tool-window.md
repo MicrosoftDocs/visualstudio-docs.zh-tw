@@ -1,5 +1,7 @@
 ---
 title: 開啟動態工具視窗 |Microsoft Docs
+description: 瞭解動態工具視窗，此視窗會在 UI 內容不再適用時，每次有特定 UI 內容套用並關閉時開啟。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a06cea6d9de4271572457dc9fe6473b5c969b66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12b08f676e02a9023374c709aa18edfc0e8815db
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903706"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863515"
 ---
 # <a name="open-a-dynamic-tool-window"></a>開啟動態工具視窗
 通常會從功能表上的命令或對等的鍵盤快速鍵開啟工具視窗。 但有時候，您可能需要在每次套用特定 UI 內容時開啟的工具視窗，並在不再套用 UI 內容時關閉。 這些類型的工具視窗稱為 *動態* 或 *自動顯示*。
@@ -32,7 +34,7 @@ ms.locfileid: "85903706"
 
 ## <a name="to-open-a-dynamic-tool-window"></a>開啟動態工具視窗
 
-1. 建立名為 **DynamicToolWindow** 的 VSIX 專案，並加入名為 *DynamicWindowPane.cs*的工具視窗專案範本。 如需詳細資訊，請參閱 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。
+1. 建立名為 **DynamicToolWindow** 的 VSIX 專案，並加入名為 *DynamicWindowPane.cs* 的工具視窗專案範本。 如需詳細資訊，請參閱 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。
 
 2. 在 *DynamicWindowPanePackage.cs* 檔案中，尋找 DynamicWindowPanePackage 宣告。 新增 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 和 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> 屬性以註冊工具視窗。
 

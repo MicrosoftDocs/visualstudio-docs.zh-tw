@@ -1,5 +1,7 @@
 ---
 title: 原始檔控制設定詳細資料 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 中執行專案類型的原始檔控制，其中牽涉到設定您的專案系統或編輯器來要求許可權。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cf4a5c55e8093e5dcd6406cde1c60f642188495
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efed4592bfa0b697d66f377430cc5998d3e9e5d3
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705287"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875501"
 ---
 # <a name="source-control-configuration-details"></a>原始檔控制組態的詳細資料
 若要執行原始檔控制，您需要適當地設定您的專案系統或編輯器，以執行下列動作：
@@ -50,7 +52,7 @@ ms.locfileid: "80705287"
 
  針對每個新增、重新命名和移除動作，都有 `OnQuery*` 方法和 `OnAfter*` 方法。 呼叫 `OnQuery*` 方法，以要求新增、重新命名或移除檔案或目錄的許可權。 在 `OnAfter*` 新增、重新命名或移除檔案或目錄之後，以及專案狀態反映新狀態之後，呼叫方法。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>

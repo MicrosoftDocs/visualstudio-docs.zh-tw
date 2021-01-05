@@ -1,5 +1,7 @@
 ---
 title: VSIX 延伸架構2.0 參考 |Microsoft Docs
+description: VSIX 延伸架構2.0 會定義 VSIX 部署資訊清單檔的檔案格式，以描述 VSIX 封裝的內容。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78e260c62d67afc10fea25d52169c48b64c82f72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2edd0349555380f6d98d24f7a40c22e48797d12
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697920"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863762"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸架構2.0 參考
 VSIX 部署資訊清單檔案會描述 VSIX 封裝的內容。 檔案格式是由架構所控管。 此架構的版本2.0 支援新增自訂類型和屬性。  資訊清單的架構是可擴充的。 資訊清單載入器會忽略其不了解的 XML 元素和屬性。
@@ -219,6 +221,6 @@ VSIX 部署資訊清單檔案會描述 VSIX 封裝的內容。 檔案格式是�
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [寄送 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)

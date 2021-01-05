@@ -1,5 +1,7 @@
 ---
 title: 私用資源庫 |Microsoft Docs
+description: 瞭解如何將您在 Visual Studio SDK 中開發的控制項、範本和工具張貼至私用資源庫，以共用這些控制項、範本和工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444644"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863498"
 ---
 # <a name="private-galleries"></a>私用資源庫
 您可以藉由將控制項、範本和工具張貼到組織內部網路上的私用資源 *庫* ，來共用您所開發的控制項、範本和工具，如下所示：
@@ -51,7 +53,7 @@ ms.locfileid: "81444644"
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom|Sharepoint (REG_SZ)
@@ -72,7 +74,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 1. 在功能表列上，選擇 [**工具**  >  **擴充功能和更新**]。
 
-2. 在左窗格中，選取 [ **線上擴充**功能]，然後選取 [我的資源 **庫**]。
+2. 在左窗格中，選取 [ **線上擴充** 功能]，然後選取 [我的資源 **庫**]。
 
 3. 選取右窗格中的延伸模組，然後選擇 [ **下載** ] 按鈕。
 
@@ -89,6 +91,6 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 3. 選取右窗格中的擴充功能，然後選擇 [ **更新** ] 按鈕。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)
 - [寄送 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)

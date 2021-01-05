@@ -1,5 +1,7 @@
 ---
 title: 註冊專案類型 |Microsoft Docs
+description: 瞭解如何建立登錄專案，讓 Visual Studio 辨識和使用您的新專案類型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7267060f2207b0842885dc3001c3926874be30a9
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 9a34f5c7f1ae3a214a0a72932ae80dbc44845a45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407727"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875187"
 ---
 # <a name="registering-a-project-type"></a>註冊專案類型
 當您建立新的專案類型時，您必須建立登錄專案，讓 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 能夠辨識和使用您的專案類型。 您通常會使用登入指令檔 ( .rgs) 檔案來建立這些登錄專案。
@@ -264,7 +266,7 @@ ms.locfileid: "94407727"
 
  這表示，如果您在 .vsz 檔案中包含 PROJECT_TYPE = EF 專案，環境會在先前指定的 ProductDir 目錄中尋找您的 .vsz 檔。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)
 - [使用專案 Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

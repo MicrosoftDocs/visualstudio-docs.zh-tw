@@ -1,5 +1,7 @@
 ---
 title: 在舊版語言服務中重新格式化程式碼 |Microsoft Docs
+description: 瞭解如何啟用 Visual Studio 舊版語言服務的原始程式碼重新格式化支援。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3e83c7299298b16a6fb3178b189479a80e1728
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fcd9871cb0eeec69b98ada83af15f0daa624cb4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705916"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875346"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>在舊版語言服務中將程式碼重新格式化
 
@@ -183,6 +185,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [舊版語言服務功能](legacy-language-service-features1.md)

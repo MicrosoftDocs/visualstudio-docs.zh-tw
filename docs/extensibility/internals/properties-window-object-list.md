@@ -1,5 +1,7 @@
 ---
 title: 屬性視窗物件清單 |Microsoft Docs
+description: 瞭解在 Visual Studio IDE 的屬性視窗中，用來與物件清單互動的介面。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe11ae6ebb4e692686c884b663a4f93d1466535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92fcce4dc62cdc84d15ca6dc51420791d4460340
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706142"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875423"
 ---
 # <a name="properties-window-object-list"></a>屬性視窗的物件清單
 [ **屬性** ] 視窗中的 [物件清單] 是一個下拉式清單，可讓您將選取範圍變更為一或多個選取視窗內可用的其他物件。 從這份清單中選取不同的物件會觸發呼叫， <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> 以通知環境已選取新的物件。 接著會變更 [ **屬性** ] 視窗中顯示的資訊，顯示與新選取之物件相關聯的屬性。
@@ -29,5 +31,5 @@ ms.locfileid: "80706142"
 
  如果 COM 物件未執行 <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> ，[ **屬性** ] 視窗就會顯示介面名稱，取代清單左邊的物件名稱。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [擴充屬性](../../extensibility/internals/extending-properties.md)

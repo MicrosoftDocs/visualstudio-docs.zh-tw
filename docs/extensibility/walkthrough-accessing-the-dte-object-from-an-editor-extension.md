@@ -1,5 +1,7 @@
 ---
 title: 從編輯器延伸模組存取 DTE 物件
+description: 瞭解如何使用本逐步解說中的程式碼範例，從編輯器延伸模組存取 DTE 物件。
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e37bdb21b7c8132f0dfb166d19e03d36e838245d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a0ee789590bd411fe7955cf739683d016164f49
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697655"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863708"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>逐步解說：從編輯器延伸模組存取 DTE 物件
 
 在 Vspackage 中，您可以 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 使用 dte 物件的型別來呼叫方法，以取得 dte 物件。 在 Managed Extensibility Framework (MEF) 擴充功能的情況下，您可以匯入， <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> 然後 <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> 使用的類型來呼叫方法 <xref:EnvDTE.DTE> 。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 [VISUAL STUDIO SDK](../extensibility/visual-studio-sdk.md)。
 
@@ -90,7 +92,7 @@ ms.locfileid: "80697655"
 
 ::: moniker-end
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)
 - [使用 DTE 啟動 Visual Studio](launch-visual-studio-dte.md)

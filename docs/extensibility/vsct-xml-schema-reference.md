@@ -1,5 +1,7 @@
 ---
 title: .VSCT XML 架構參考 |Microsoft Docs
+description: .VSCT XML 架構參考文章會說明命令資料表編譯器架構元素，其中每個專案都有允許的子項目和屬性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 923a0c4b64fcae3a409a2298d6d481f6e1bb14db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56d6c1309dc5b9a52de0bc0b54a764eceaf37d96
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697911"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863975"
 ---
 # <a name="vsct-xml-schema-reference"></a>.VSCT XML 架構參考
 提供命令資料表編譯器架構元素的表格，其中每個專案都有允許的子項目和屬性。
@@ -72,6 +74,6 @@ ms.locfileid: "80697911"
 
 - [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Vspackage 如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Vspackage 中的命令路由](../extensibility/internals/command-routing-in-vspackages.md)

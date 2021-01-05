@@ -1,5 +1,7 @@
 ---
 title: VSIX 語言套件架構2.0 參考 |Microsoft Docs
+description: VSIX 語言套件架構會提供 VSIX 封裝的當地語系化安裝資訊。 版本2.0 支援其他當地語系化元素。
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 author: acangialosi
 ms.author: anthc
 manager: jillfra
-ms.openlocfilehash: f0eee51c0654c6e517209e23baf43c6b262d8f73
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: fc9c3c1aa7f8cf77ebf165a3e10a67ccbd5887f7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830712"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863820"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 語言套件架構2.0 參考
 

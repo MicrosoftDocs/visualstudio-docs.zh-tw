@@ -1,5 +1,7 @@
 ---
 title: 屬性頁 |Microsoft Docs
+description: 瞭解如何在 Visual Studio SDK 中使用新專案類型的屬性頁面，讓使用者能夠查看和變更專案屬性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac788f51bcdc52cd39469a272909890333c5016b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d446e731c08b85c2c903c2414528ac2a7370c26
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706061"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875527"
 ---
 # <a name="property-pages"></a>屬性頁
 使用者可使用屬性頁來查看和變更專案設定相依且獨立的屬性。 在 [**屬性**] 視窗或 [方案總管] 工具列上，會針對提供所選取物件之屬性頁視圖的物件啟用 [**屬性頁**] 按鈕。 屬性頁是由環境所建立，而且適用于方案和專案。 不過，它們也可以提供給利用設定相依屬性的專案專案使用。 當專案中的檔案需要不同的編譯器切換設定才能正確建立時，可能會使用這項功能。
@@ -77,7 +79,7 @@ ms.locfileid: "80706061"
 
    執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> 方法，以抓取專案階層和專案專案，或選取的專案。 您可以從 DTE 使用 `SelectedItems.SelectedItem.Project` 和 `SelectedItems.SelectedItem.ProjectItem` 方法。 核心檔中的這些標題底下有範例程式碼 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 - [專案組態物件](../../extensibility/internals/project-configuration-object.md)

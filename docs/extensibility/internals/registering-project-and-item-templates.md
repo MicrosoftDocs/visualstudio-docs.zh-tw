@@ -1,5 +1,7 @@
 ---
 title: 註冊專案和專案範本 |Microsoft Docs
+description: 瞭解 Visual Studio 如何針對您的專案類型使用註冊資訊，以判斷要在 [加入新專案] 和 [加入新專案] 對話方塊中顯示的內容。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64504c39b1fc3c4a82530b265cfd0e96832b4f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705816"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875267"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 專案類型必須註冊其專案和專案專案範本所在的目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用與您的專案類型相關聯的註冊資訊，來決定要在 [ **加入新專案** ] 和 [ **加入新** 專案] 對話方塊中顯示的內容。
@@ -27,7 +29,7 @@ ms.locfileid: "80705816"
  如需範本的詳細資訊，請參閱 [加入專案和專案專案範本](../../extensibility/internals/adding-project-and-project-item-templates.md)。
 
 ## <a name="registry-entries-for-projects"></a>專案的登錄專案
- 下列範例會顯示 HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ < *版本*> 下的登錄專案。 隨附的表格說明範例中使用的元素。
+ 下列範例會顯示 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *版本*> 下的登錄專案。 隨附的表格說明範例中使用的元素。
 
 ```
 [Projects\{ProjectGUID}]
@@ -42,7 +44,7 @@ ms.locfileid: "80705816"
 |@|REG_SZ|這種專案的預設名稱。|
 |DisplayName|REG_SZ|要從在封裝下註冊的附屬 DLL 中取出之名稱的資源識別碼。|
 |套件|REG_SZ|封裝下註冊之封裝的類別識別碼。|
-|ProjectTemplatesDir|REG_SZ|專案範本檔案的預設路徑。 **新的專案**範本會顯示專案範本檔案。|
+|ProjectTemplatesDir|REG_SZ|專案範本檔案的預設路徑。 **新的專案** 範本會顯示專案範本檔案。|
 
 ### <a name="registering-item-templates"></a>註冊專案範本
  您必須註冊儲存專案範本的目錄。
@@ -65,9 +67,9 @@ ms.locfileid: "80705816"
 ### <a name="registering-file-filters"></a>註冊檔案篩選
  （選擇性）您可以 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 在提示輸入檔案名時，註冊使用的篩選準則。 例如，[ [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] **開啟** 檔案] 對話方塊的篩選準則為：
 
- **Visual c # 檔案 (\* .cs、 \* .resx、 \* . settings、 \* .xsd、 \* .wsdl) ; \* 。cs、 \* .resx、 \* . settings、 \* .xsd、 \* .wsdl) **
+ **Visual c # 檔案 (\* .cs、 \* .resx、 \* . settings、 \* .xsd、 \* .wsdl) ; \* 。cs、 \* .resx、 \* . settings、 \* .xsd、 \* .wsdl)**
 
- 為了支援註冊多個篩選準則，會在 HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ < *Version*> \projects \\ { \<*ProjectGUID*> } \Filters \\ < *Subkey*子機碼> 下，在它自己的子機碼中註冊每個篩選準則。 子機碼名稱為任意;忽略子機碼 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的名稱，並只使用其值。
+ 為了支援註冊多個篩選，每個篩選器會在 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *版本*> \projects \\ { \<*ProjectGUID*> } \Filters \\ < 子機碼> 的子機碼中註冊。 子機碼名稱為任意;忽略子機碼 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的名稱，並只使用其值。
 
  您可以藉由設定旗標（如下表所示）來控制用來篩選篩選器的內容。 如果篩選沒有設定任何旗標，則會在 [ **加入現有專案** ] 對話方塊和 [ **開啟** 檔案] 對話方塊中的一般篩選準則之後列出，但不會在 [檔案中 **尋找** ] 對話方塊中使用。
 
@@ -116,7 +118,7 @@ ms.locfileid: "80705816"
 
  \WizardFiles
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [精靈](../../extensibility/internals/wizards.md)

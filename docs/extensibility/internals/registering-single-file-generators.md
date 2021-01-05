@@ -1,5 +1,7 @@
 ---
 title: 註冊單一檔案產生器 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 中註冊自訂工具以將它具現化，並將它與特定的專案類型產生關聯。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7a0ce4afeddebdec8519467e1f4249095ce98f6b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012031"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875254"
 ---
 # <a name="registering-single-file-generators"></a>註冊單一檔案產生器
 若要在中提供自訂工具 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，您必須註冊它，以便將它 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 具現化，並使其與特定的專案類型產生關聯。
@@ -36,7 +38,7 @@ ms.locfileid: "90012031"
    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
    ```
 
-2. 在所需的 hive guid 下建立登錄機碼 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \\ *GUID* ，其中*guid*是特定語言的專案系統或服務所定義的 guid。 金鑰名稱會變成自訂工具的程式設計名稱。 自訂工具索引鍵具有下列值：
+2. 在所需的 hive guid 下建立登錄機碼 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \\  ，其中 *guid* 是特定語言的專案系統或服務所定義的 guid。 金鑰名稱會變成自訂工具的程式設計名稱。 自訂工具索引鍵具有下列值：
 
    - (預設值)
 
@@ -67,7 +69,7 @@ ms.locfileid: "90012031"
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [實作單一檔案產生器](../../extensibility/internals/implementing-single-file-generators.md)
 - [將類型公開至視覺化設計工具](../../extensibility/internals/exposing-types-to-visual-designers.md)

@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 的版面配置 |Microsoft Docs
+description: 瞭解 Visual Studio 對話方塊的版面配置，包括 unthemed 對話方塊及具有主題外觀的新對話方塊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4eb8eb7468751d46b922c15530389c554a8d3e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e6c90831c39f0e378dd9060397c68592ec73384
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698399"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863672"
 ---
 # <a name="layout-for-visual-studio"></a>適用於 Visual Studio 的配置
 大部分的 Visual Studio 對話方塊都是 [公用程式對話](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)配置，其為遵循標準 [Windows 桌面對話版面配置原則](/windows/desktop/uxguide/win-dialog-box)的 unthemed 對話方塊。 當 Visual Studio 移動以重新整理其 UI 時，某些較重要的對話會有新的設計，可將其建立為產品定義體驗。 這些 [主題的對話版面](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) 配置具有主題的外觀。
@@ -154,7 +156,7 @@ ms.locfileid: "80698399"
 
  **圖 08.01-k：主題對話方塊-色彩**
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [適用於 Visual Studio 的應用程式模式](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)
 - [ (Windows) 的控制項 ](/windows/desktop/uxguide/controls)
 - [ (Windows) 的對話方塊 ](/windows/desktop/uxguide/win-dialog-box)

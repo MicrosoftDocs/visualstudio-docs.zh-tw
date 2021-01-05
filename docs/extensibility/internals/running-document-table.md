@@ -1,5 +1,7 @@
 ---
 title: 正在執行檔資料表 |Microsoft Docs
+description: 瞭解 Visual Studio IDE 如何維護執行中的檔資料表，包括記憶體中所有開啟的檔。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e6aa882921786b1592922372581beae8c4c2443
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd166626d6043da4ac94658bdd35219efc7a37c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705559"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875644"
 ---
 # <a name="running-document-table"></a>執行中的文件資料表
 IDE 會在名為執行檔資料表 (RDT) 的內部結構中，維護所有目前開啟的檔案清單。 這份清單包含記憶體中所有開啟的檔，不論目前是否正在編輯這些檔。 檔是保存的任何專案，包括專案或主要專案檔中的檔案 (例如，.vcxproj 檔案) 。
@@ -27,7 +29,7 @@ IDE 會在名為執行檔資料表 (RDT) 的內部結構中，維護所有目前
 ## <a name="elements-of-the-running-document-table"></a>正在執行之檔資料表的元素
  執行中的檔資料表包含下列專案。
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |檔的名字|可唯一識別檔資料物件的字串。 這會是管理檔案 (之專案系統的絕對檔案路徑，例如 C:\MyProject\MyFile) 。 這個字串也適用于儲存在檔案系統以外之存放區中的專案，例如資料庫中的預存程式。 在此情況下，專案系統可以建立一個可辨識的唯一字串，並可能剖析以判斷如何儲存檔。|
 |階層擁有者|擁有檔的階層物件，以 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 介面表示。|
@@ -40,7 +42,7 @@ IDE 會在名為執行檔資料表 (RDT) 的內部結構中，維護所有目前
 
  RDT 中的每個專案都有與其相關聯的唯一階層或專案識別碼，通常會對應到專案中的一個節點。 所有可供編輯的檔通常都是由階層所擁有。 在 RDT 中所做的專案，可讓您更精確地控制要編輯的檔資料物件。 使用 RDT 中的資訊，IDE 可以防止一次超過一個專案開啟檔。
 
- 階層也會控制資料的持續性，並使用 RDT 中的資訊來更新 [ **儲存** ] 和 [ **另存** 新檔] 對話方塊。 當使用者修改**檔**，然後從 [檔案] 功能表中選擇 [結束 **] 命令時**，IDE 會以 [**儲存變更**] 對話方塊提示他們，以顯示目前修改過的所有專案和專案專案。 這可讓使用者選擇要儲存的檔。 要儲存 (的檔案清單，這些檔具有變更) 是從 RDT 產生。 在結束應用程式時，您預期會在 [ **儲存變更** ] 對話方塊中看到的任何專案，都應該在 RDT 中有記錄。 RDT 會協調儲存的檔，以及是否會使用每份檔的旗標專案中指定的值，提示使用者有關儲存作業的提示。 如需 RDT 旗標的詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 列舉。
+ 階層也會控制資料的持續性，並使用 RDT 中的資訊來更新 [ **儲存** ] 和 [ **另存** 新檔] 對話方塊。 當使用者修改 **檔**，然後從 [檔案] 功能表中選擇 [結束 **] 命令時**，IDE 會以 [**儲存變更**] 對話方塊提示他們，以顯示目前修改過的所有專案和專案專案。 這可讓使用者選擇要儲存的檔。 要儲存 (的檔案清單，這些檔具有變更) 是從 RDT 產生。 在結束應用程式時，您預期會在 [ **儲存變更** ] 對話方塊中看到的任何專案，都應該在 RDT 中有記錄。 RDT 會協調儲存的檔，以及是否會使用每份檔的旗標專案中指定的值，提示使用者有關儲存作業的提示。 如需 RDT 旗標的詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 列舉。
 
 ## <a name="edit-locks-and-read-locks"></a>編輯鎖定和讀取鎖定
  編輯鎖定和讀取鎖定位於 RDT 中。 文件視窗會遞增和遞減編輯鎖定。 因此，當使用者開啟新的文件視窗時，編輯鎖定計數會遞增一。 當編輯鎖定的數目達到零時，會發出階層的信號以保存或儲存相關聯檔的資料。 然後階層可以使用任何方式來保存資料，包括保存為檔案或儲存機制中的專案。 您可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.LockDocument%2A> 介面中的方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> 來加入編輯鎖定和讀取鎖定，以及使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnlockDocument%2A> 方法來移除這些鎖定。
@@ -56,6 +58,6 @@ IDE 會在名為執行檔資料表 (RDT) 的內部結構中，維護所有目前
 
 - 使用階層或專案識別碼來要求專案系統提供完整的檔路徑，然後在 RDT 中查閱專案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [RDT_ReadLock 使用方式](../../extensibility/internals/rdt-readlock-usage.md)
 - [持續性與執行中的文件資料表](../../extensibility/internals/persistence-and-the-running-document-table.md)

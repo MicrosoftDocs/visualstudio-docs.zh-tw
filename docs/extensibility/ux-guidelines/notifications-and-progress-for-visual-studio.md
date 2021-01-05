@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 的通知和進度 |Microsoft Docs
+description: 深入瞭解有幾種方式可通知使用者有關其軟體發展工作 Visual Studio 中發生的狀況。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f6a7ddd5d1a5a7257617b03098722e1341017b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56acfd96f8d9be575f6e13c727a294f28301bef4
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699875"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863786"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>適用於 Visual Studio 的通知和進度
 ## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a> 通知系統
@@ -152,8 +154,8 @@ ms.locfileid: "80699875"
 |進度類型|時機和使用方式|附註|
 |-------------------|-------------------------|-----------|
 |進度列 (確定) |預期的 >持續期間（5秒）。<br /><br /> 可能包含流程詳細資料的文字描述。|**不要** 將文字內嵌至動畫。|
-|資訊列|與內容相關 UI 相關聯的訊息。 請參閱 [資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)。<br /><br /> 可能包含流程詳細資料的文字描述。|當您需要指出多個進程時，**請勿**使用多個資訊列。 請改用堆疊進度列。|
-|輸出視窗|暫時性通知：使用者想要在完成後 **檢查** 詳細資料的應用層級進程。|當使用者稍後需要參考資料時，**請勿**使用。|
+|資訊列|與內容相關 UI 相關聯的訊息。 請參閱 [資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)。<br /><br /> 可能包含流程詳細資料的文字描述。|當您需要指出多個進程時，**請勿** 使用多個資訊列。 請改用堆疊進度列。|
+|輸出視窗|暫時性通知：使用者想要在完成後 **檢查** 詳細資料的應用層級進程。|當使用者稍後需要參考資料時，**請勿** 使用。|
 |記錄檔|在完成後 **儲存** 詳細資料的重要情況下，與 intransient 通知配對。||
 |狀態列|暫時性通知：使用者在完成後將 **不需要** 詳細資料的應用層級進程。<br /><br /> 包含內嵌的進度列。<br /><br /> 可能包含流程詳細資料的文字描述。||
 
@@ -162,9 +164,9 @@ ms.locfileid: "80699875"
 |進度類型|時機和使用方式|附註|
 |-------------------|-------------------------|-----------|
 |進度列 (不定) |預期的 >持續期間（5秒）。<br /><br /> 可能包含流程詳細資料的文字描述。|**不要** 將文字內嵌至動畫。|
-|Ants (動畫水準點) |來回行程至伺服器。<br /><br /> 在上層容器的上層放置接近的內容點。|如果不是整個容器的父代，**請勿**使用。|
+|Ants (動畫水準點) |來回行程至伺服器。<br /><br /> 在上層容器的上層放置接近的內容點。|如果不是整個容器的父代，**請勿** 使用。|
 |微調 (進度環形) |與內容相關 UI 相關聯的進程，或空間是考慮的地方。<br /><br /> 可能包含流程詳細資料的文字描述。||
-|資訊列|與內容相關 UI 相關聯的訊息。 請參閱 [資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)。|當您需要指出多個進程時，**請勿**使用多個資訊列。 請改用堆疊進度列。|
+|資訊列|與內容相關 UI 相關聯的訊息。 請參閱 [資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)。|當您需要指出多個進程時，**請勿** 使用多個資訊列。 請改用堆疊進度列。|
 |輸出視窗|暫時性通知：使用者會想要在完成後 **檢查** 詳細資料的應用層級進程。|**請勿** 使用需要跨會話保存的資訊。|
 |記錄檔|在完成後 **儲存** 詳細資料的重要情況下，與 intransient 通知配對。||
 |狀態列|暫時性通知：使用者在完成後將 **不需要** 詳細資料的應用層級進程。<br /><br /> 包含內嵌的進度列。<br /><br /> 可能包含流程詳細資料的文字描述。||
@@ -174,16 +176,16 @@ ms.locfileid: "80699875"
 #### <a name="progress-bars"></a>進度列
 
 ##### <a name="indeterminate"></a>定
- ![不確定的進度列](../../extensibility/ux-guidelines/media/0901-04_indeterminate.png "0901-04_Indeterminate")
+ ![不定的進度列](../../extensibility/ux-guidelines/media/0901-04_indeterminate.png "0901-04_Indeterminate")
 
- **不確定的進度列**
+ **不定的進度列**
 
  「不定」表示無法判斷操作或進程的整體進度。 針對需要無限制時間或存取未知物件數目的作業，請使用不定的進度列。 使用文字描述來伴隨發生的情況。 使用超時來提供以時間為基礎之作業的界限。 不定的進度列會使用動畫來顯示正在進行的進度，但不提供任何其他資訊。 請勿只根據可能缺少的精確度來選擇不定的進度列。
 
 ##### <a name="determinate"></a>確定
- ![確定的進度列](../../extensibility/ux-guidelines/media/0901-05_determinate.png "0901-05_Determinate")
+ ![確定進度列](../../extensibility/ux-guidelines/media/0901-05_determinate.png "0901-05_Determinate")
 
- **確定的進度列**
+ **確定進度列**
 
  「確定」表示作業或進程需要限定的時間量，即使該時間量無法準確預測也一樣。 明確指出完成。 除非作業已完成，否則不要讓進度列移至100%。 確定進度列動畫從0往右移動至100%。
 
@@ -286,7 +288,7 @@ ms.locfileid: "80699875"
 ### <a name="overview"></a>概觀
  資訊列可為使用者提供接近關注點的指標，並使用共用的資訊列控制項確保視覺外觀和互動中的一致性。
 
- ![資訊列](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
+ ![靠近](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
 
  **Visual Studio 中的資訊列**
 

@@ -1,5 +1,7 @@
 ---
 title: IDE 中的選取專案和貨幣 |Microsoft Docs
+description: 瞭解 Vspackage 如何參與貨幣追蹤。 Visual Studio IDE 會使用選取內容來維護目前所選物件的相關資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f580b7c8e1651dcbcd053476ae756399a0ac3482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2d745619be8bff77503bc14a1d7a87d84cc7864
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705574"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875592"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE 中的選取項目和貨幣
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 使用選取內容來維護使用者目前選取之物件的相關*context*資訊。 透過選取內容，Vspackage 可以透過兩種方式參與貨幣追蹤：
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 使用選取內容來維護使用者目前選取之物件的相關資訊。 透過選取內容，Vspackage 可以透過兩種方式參與貨幣追蹤：
 
 - 將 Vspackage 的相關貨幣資訊傳播至 IDE。
 
@@ -30,7 +32,7 @@ ms.locfileid: "80705574"
 ## <a name="selection-context"></a>選取內容
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Ide 會在其專屬的全域選取內容物件中，全域追蹤 ide 的貨幣。 下表顯示組成選取內容的元素。
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |目前的階層|通常是目前的專案;Null 目前階層表示整個方案都是最新的。|
 |目前的 ItemID|目前階層中選取的專案;當專案視窗中有多個選取專案時，可能會有多個目前的專案。|
@@ -62,6 +64,6 @@ ms.locfileid: "80705574"
 
 - 變更在視窗框架選取內容中追蹤之元素的事件。 範例包括在 DocObject 中變更選取範圍，或變更專案類型視窗中的選取範圍。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [選取項目內容物件](../../extensibility/internals/selection-context-objects.md)
 - [使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)

@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 範本資訊清單架構參考 |Microsoft Docs
+description: 此架構參考描述針對 Visual Studio 專案或專案範本所產生 Visual Studio 範本資訊清單檔的格式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbe46851d9df85569be796b4147217bd7db450ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d712f2cb95b2df9680c4476805e9dfb6809cf038
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697977"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863843"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 範本資訊清單架構參考
 此架構描述為 Visual Studio 專案或專案範本產生的 Visual Studio 範本資訊清單 (*vstman*) 檔案的格式。 此架構也會描述範本的位置和其他相關資訊。
@@ -30,7 +32,7 @@ ms.locfileid: "80697977"
 
 - **Version**：代表範本資訊清單版本的字串。 必要。
 
-- **地區**設定：代表範本資訊清單地區設定或地區設定的字串。 地區設定值會套用至所有範本。 您必須針對每個地區設定使用不同的資訊清單。 選擇性。
+- **地區** 設定：代表範本資訊清單地區設定或地區設定的字串。 地區設定值會套用至所有範本。 您必須針對每個地區設定使用不同的資訊清單。 選擇性。
 
 ### <a name="child-elements"></a>子元素
 

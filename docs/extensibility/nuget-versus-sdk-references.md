@@ -1,5 +1,7 @@
 ---
 title: 使用 NuGet 和擴充功能 SDK 兩種方式新增參考
+description: 瞭解在 Visual Studio 專案中參考封裝軟體作為 NuGet 套件或軟體發展工具組之間的差異。
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: conceptual
 author: acangialosi
@@ -7,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad7fc9132647988aee46a2bb07e992505109d33c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50197eeda1828156113fbbfa507447484618861a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702423"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863770"
 ---
 # <a name="nuget-versus-sdk-as-a-project-reference"></a>NuGet 與 SDK 做為專案參考
 
@@ -28,20 +30,20 @@ ms.locfileid: "80702423"
 
 | 功能 | SDK 支援 | SDK 資訊 | NuGet 支援 | NuGet 資訊 |
 | - | - | - |---------------| - |
-| 機制會參考一個實體，然後即可使用所有檔案和功能。 | Y | 使用 [參考管理員]**** 對話方塊新增 SDK，即可在開發工作流程期間使用所有檔案和功能。 | Y | |
+| 機制會參考一個實體，然後即可使用所有檔案和功能。 | Y | 使用 [參考管理員] 對話方塊新增 SDK，即可在開發工作流程期間使用所有檔案和功能。 | Y | |
 | MSBuild 會自動使用元件和 Windows 中繼資料 (*winmd*) 檔。 | Y | SDK 中的參考會自動傳遞給編譯器。 | Y | |
 | MSBuild 會自動使用 .h 或 .lib 檔案。 | Y | *SDKName.props* 檔案會指示 Visual Studio 如何設定 Visual C++ 目錄等等，以自動使用 *.h* 或 *.lib* 檔案。 | N | |
-| MSBuild 會自動使用  *.js* 或 *.css* 檔案。 | Y | 在 [方案總管] 中****，您可以展開 JavaScript SDK 參考節點以顯示個別的 *.js* 或 *.css* 檔案，然後將這些檔案拖曳至來源檔案以產生 `<source include/>` 標記。 SDK 支援 F5 及自動套件設定。 | Y | |
-| MSBuild 會自動在 [工具箱]**** 中新增控制項。 | Y | [工具箱]**** 可以使用 SDK，並在您指定的索引標籤中顯示控制項。 | N | |
+| MSBuild 會自動使用  *.js* 或 *.css* 檔案。 | Y | 在 [方案總管] 中，您可以展開 JavaScript SDK 參考節點以顯示個別的 *.js* 或 *.css* 檔案，然後將這些檔案拖曳至來源檔案以產生 `<source include/>` 標記。 SDK 支援 F5 及自動套件設定。 | Y | |
+| MSBuild 會自動在 [工具箱] 中新增控制項。 | Y | [工具箱] 可以使用 SDK，並在您指定的索引標籤中顯示控制項。 | N | |
 | 機制會支援 Visual Studio 延伸模組安裝程式 (VSIX)。 | Y | VSIX 有用以建立 SDK 套件的特殊資訊清單和邏輯 | Y | VSIX 可以內嵌在另一個安裝程式中。 |
-| [物件瀏覽器]**** 會列舉參考。 | Y | [物件瀏覽器]**** 會自動取得 SDK 中的參考清單，並列舉它們。 | N | |
-| 檔案和連結會自動新增至 [參考管理員]**** 對話方塊 (說明連結等會自動填入) | Y | [參考管理員]**** 對話方塊會自動列舉 SDK、說明連結和 SDK 相依性的清單。 | N | NuGet 提供它自己的 [管理 NuGet 套件]**** 對話方塊。 |
+| [物件瀏覽器] 會列舉參考。 | Y | [物件瀏覽器] 會自動取得 SDK 中的參考清單，並列舉它們。 | N | |
+| 檔案和連結會自動新增至 [參考管理員] 對話方塊 (說明連結等會自動填入) | Y | [參考管理員] 對話方塊會自動列舉 SDK、說明連結和 SDK 相依性的清單。 | N | NuGet 提供它自己的 [管理 NuGet 套件] 對話方塊。 |
 | 機制支援多個架構。 | Y | SDK 可以運送多個組態。 MSBuild 會針對每個專案組態使用適當的檔案。 | N | |
 | 機制支援多個組態。 | Y | SDK 可以運送多個組態。 根據專案的架構，MSBuild 會針對每個專案架構使用適當的檔案。 | N | |
 | 機制可以指定「不複製」。 | Y | 根據檔案放在 *\redist* 或 *\designtime* 資料夾而定，您可以控制要將哪些檔案複製到取用應用程式的套件中。 | N | 您在套件資訊清單中宣告要複製的檔案。 |
 | 內容會出現在已當地語系化的檔案中。 | Y | SDK 中的當地語系化 XML 文件會自動包含以獲得更佳的設計階段體驗。 | N | |
 | MSBuild 支援同時使用多個版本的 SDK。 | Y | SDK 支援同時使用多個版本。 | N | 這不參考。 同一時間內，您不能在專案中有多個版本的 NuGet 檔案。 |
-| 機制支援指定適用的目標 Framework、Visual Studio 版本和專案類型。 | Y | [參考管理員]**** 對話方塊和 [工具箱]**** 只會顯示適用於專案的 SDK，讓使用者可以更輕鬆地選擇適當的 SDK。 | Y (部分) | 樞紐分析是目標 Framework。 使用者介面上沒有任何篩選。 在安裝時，它可能會傳回錯誤。 |
+| 機制支援指定適用的目標 Framework、Visual Studio 版本和專案類型。 | Y | [參考管理員] 對話方塊和 [工具箱] 只會顯示適用於專案的 SDK，讓使用者可以更輕鬆地選擇適當的 SDK。 | Y (部分) | 樞紐分析是目標 Framework。 使用者介面上沒有任何篩選。 在安裝時，它可能會傳回錯誤。 |
 | 機制支援指定原生 WinMD 的註冊資訊。 | Y | 您可以在 *SDKManifest.xml* 中指定 .winmd 檔案和 .dll 檔案之間的關聯性。 | N | |
 | 機制支援指定對其他 SDK 的相依性。 | Y | SDK 只會通知使用者。使用者仍必須手動安裝它們並加以參考。 | Y | NuGet 會自動提取它們，且不會通知使用者。 |
 | 機制與應用程式資訊清單和 Framework 識別碼等 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)] 概念整合。 | Y | SDK 必須傳遞 [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] 的特定概念，以便封裝和 F5 能正確地搭配 [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] 中可用的 SDK 使用。 | N | |
@@ -64,7 +66,7 @@ ms.locfileid: "80702423"
 | 機制支援輕量的資訊清單格式。 | Y | *SDKManifest.xml* 支援許多屬性，但通常只有一小部分為必要。 | Y | |
 | 機制可供所有 Visual Studio 版本使用。 | Y | SDK 支援所有 Visual Studio 版本。 | Y | NuGet 支援所有 Visual Studio 版本。 |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [管理專案中的參考](../ide/managing-references-in-a-project.md)
 - [管理專案中的參考 (Visual Studio for Mac)](/visualstudio/mac/managing-references-in-a-project)
