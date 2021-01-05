@@ -1,5 +1,7 @@
 ---
 title: 簡化嵌入 |Microsoft Docs
+description: 瞭解簡化的內嵌，當其檔視圖物件是 Visual Studio 的子系時，可以在編輯器中啟用。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9bc9619ae1ed75aed3656ff014296f7c7d88fa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99aaf5070646bbbb95c6be98eb8ac2f7a5948ff2
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700079"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715271"
 ---
 # <a name="simplified-embedding"></a>簡化嵌入
 當編輯器的檔視圖物件是父代（ (也就是) 的子系 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，而 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 介面會實作為處理其視窗命令）時，就會在編輯器中啟用簡化嵌入。 簡化的內嵌編輯器無法裝載活動控制項。 下圖顯示用來建立具有簡化內嵌之編輯器的物件。
@@ -27,7 +29,7 @@ ms.locfileid: "80700079"
 
  物件中包含的所有介面都是以簡化的內嵌來建立編輯器 `CYourEditorDocument` 。 不過，若要支援多個檔資料檢視，請將介面分割成不同的資料，並依下表所示的方式來查看物件。
 
-|介面|介面的位置|用途|
+|介面|介面的位置|使用|
 |---------------|---------------------------|---------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|檢視|提供父視窗的連接。|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|檢視|處理命令。|

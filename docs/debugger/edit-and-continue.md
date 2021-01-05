@@ -1,6 +1,7 @@
 ---
 title: 編輯程式碼並繼續進行偵錯工具 |Microsoft Docs
-ms.custom: seodec18
+description: 在 Visual Studio 中進行偵錯工具時，使用 [編輯後繼續] 命令，讓您可以在程式處於中斷模式時，對原始程式碼進行變更。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/31/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,15 +22,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3da21a833764745a7b6fc7dd001eeb4995f44d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: c335ce5a394454daacd86338a96ba51d04c88c0e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599646"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726536"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>在 Visual Studio (c #、VB、c + +) 中編輯程式碼並繼續進行偵錯工具
-[編輯後繼續] 功能可以在您的程式處於中斷模式時，讓您對原始程式碼進行變更以節省時間。 當您選擇 [ **繼續** ] 或 [ **逐步**執行] 之類的執行命令繼續執行程式時，[編輯後繼續] 會自動套用程式碼變更，但有一些限制。 這可以讓您在偵錯工作階段期間變更程式碼而不需要停止、重新編譯整個程式並重新啟動偵錯工作階段。
+[編輯後繼續] 功能可以在您的程式處於中斷模式時，讓您對原始程式碼進行變更以節省時間。 當您選擇 [ **繼續** ] 或 [ **逐步** 執行] 之類的執行命令繼續執行程式時，[編輯後繼續] 會自動套用程式碼變更，但有一些限制。 這可以讓您在偵錯工作階段期間變更程式碼而不需要停止、重新編譯整個程式並重新啟動偵錯工作階段。
 
  本節包含下列主題：
 
@@ -43,8 +44,8 @@ ms.locfileid: "89599646"
 
  [編輯後繼續 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
 
- [F# 不支援編輯後繼續](../debugger/edit-and-continue-not-supported-for-f-hash.md)
+ [F 不支援編輯後繼續#](../debugger/edit-and-continue-not-supported-for-f-hash.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

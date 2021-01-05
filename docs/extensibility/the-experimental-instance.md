@@ -1,5 +1,7 @@
 ---
 title: 實驗實例 |Microsoft Docs
+description: 瞭解 Visual Studio SDK 如何提供實驗性空間，以在「偵測模式」中執行未測試的應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e2284767a0aa6be58c0f7e38c912783728914cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4786f450b108c8a6c1eaefc6f86f7adf57e9269e
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699032"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715856"
 ---
 # <a name="the-experimental-instance"></a>實驗執行個體
 為了保護您的 Visual Studio 開發環境免于可能變更的未測試應用程式，VSSDK 提供了實驗性的空間，讓您可以用來進行實驗。 您可以像往常一樣使用 Visual Studio 來開發新的應用程式，但您可以使用此實驗性實例來執行這些應用程式。

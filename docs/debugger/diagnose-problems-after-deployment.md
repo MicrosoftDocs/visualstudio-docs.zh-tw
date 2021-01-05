@@ -1,5 +1,7 @@
 ---
 title: 於部署後診斷問題 | Microsoft Docs
+description: 使用 Visual Studio 中的 IntelliTrace 在部署之後診斷問題。 包含組建資訊與您的版本。 釋放並監視您的應用程式以找出問題。
+ms.custom: SEO-VS-2020
 ms.date: 04/10/2018
 ms.topic: how-to
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97499a88a04b2ae7b61b847c4aec133d297e613a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 9be00d1ad040f6daca52417e4ab6dfa93f0f44cf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928052"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726822"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>使用 IntelliTrace (C#、Visual Basic) 於部署後診斷問題
 
@@ -44,7 +46,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
 * 若要部署至 Azure，請使用 [Application Insights](/azure/application-insights/)。
 
-* 如果需要使用 IntelliTrace，請在 Visual Studio 中開啟專案，並從相符的組建載入符號檔。 您可以從 [模組]**** 視窗，或藉由設定 [工具]**** > [選項]**** > [偵錯]**** > [符號]**** 載入符號檔。
+* 如果需要使用 IntelliTrace，請在 Visual Studio 中開啟專案，並從相符的組建載入符號檔。 您可以從 [模組] 視窗，或藉由設定 [工具] > [選項] > [偵錯] > [符號] 載入符號檔。
 
 #### <a name="team-foundation-server-2013"></a><a name="TFS2013"></a> Team Foundation Server 2013
  設定建置管線，將原始檔、組建和符號的位置加入至建置資訊清單 (BuildInfo.config 檔案)。 Team Foundation Build 會自動建立此檔案並放在專案的輸出資料夾中。
@@ -119,7 +121,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 ### <a name="create-the-build-manifest-for-a-manual-build-using-visual-studio"></a><a name="ManualBuild"></a> 建立建置資訊清單，以使用 Visual Studio 進行手動組建
  遵循下列步驟自動建立專案的建置資訊清單 (BuildInfo.config 檔案)，並將檔案放在專案的輸出資料夾中。 此檔案在輸出資料夾中會顯示為 "*ProjectName*.BuildInfo.config"，但在發行 App 之後，部署資料夾中的相同檔案會重新命名為 "BuildInfo.config"。
 
-1. 在 [方案總管] **** 中上傳您的 Web 專案。
+1. 在 [方案總管] 中上傳您的 Web 專案。
 
 2. 開啟專案檔 (.csproj、.vbproj)。 加入下列程式碼行：
 
@@ -167,9 +169,9 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
 1. 在 Visual Studio Enterprise 2013 中開啟 IntelliTrace 記錄檔 (.iTrace 檔案)。 如果同一部電腦上也安裝了 Visual Studio Enterprise，則只需按兩下該檔案。
 
-2. 如果專案不是在方案中建置的，請選擇 [開啟方案] **** ，讓 Visual Studio 自動開啟相符的方案或專案。 [問： IntelliTrace 記錄檔缺少我所部署應用程式的相關資訊。為什麼會發生這種情況？我該怎麼辦？](#InvalidConfigFile)
+2. 如果專案不是在方案中建置的，請選擇 [開啟方案]  ，讓 Visual Studio 自動開啟相符的方案或專案。 [問： IntelliTrace 記錄檔缺少我所部署應用程式的相關資訊。為什麼會發生這種情況？我該怎麼辦？](#InvalidConfigFile)
 
-     在開啟相符的方案或專案時，Visual Studio 會自動擱置所有暫止的變更。 如需關於這個擱置集的詳細資料，請查看 [輸出] **** 視窗或 [Team Explorer] ****。
+     在開啟相符的方案或專案時，Visual Studio 會自動擱置所有暫止的變更。 如需關於這個擱置集的詳細資料，請查看 [輸出]  視窗或 [Team Explorer] 。
 
      進行任何變更之前，請確認您的原始檔是否正確無誤。 如果您使用分支，您可能會在與 Visual Studio 找到相符原始檔所在的分支 (例如發行分支) 不同的分支工作。
 
@@ -183,15 +185,15 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
      ![從原始檔控制開啟 &#45; 建立新的工作區](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
 
-     若您要建立的工作區具有特定對應或其名稱並非您的電腦名稱，請選擇 [管理] ****。
+     若您要建立的工作區具有特定對應或其名稱並非您的電腦名稱，請選擇 [管理] 。
 
      [問：Visual Studio 為何會顯示我選取的工作區不適合？](#IneligibleWorkspace)
 
-     [問：在我選擇 team 集合或另一個集合之前，為何無法繼續？](#ChooseTeamProject)
+     [問：在我選擇 Team 集合或另一個集合之前，為何無法繼續執行？](#ChooseTeamProject)
 
 ### <a name="diagnose-a-performance-problem"></a>診斷效能問題
 
-1. 在 [效能違規] **** 下，檢閱所記錄的效能事件、它們的總執行時間和其他事件資訊。 然後更深入發掘在特定的效能事件期間所呼叫的方法。
+1. 在 [效能違規] 下，檢閱所記錄的效能事件、它們的總執行時間和其他事件資訊。 然後更深入發掘在特定的效能事件期間所呼叫的方法。
 
      ![檢視效能事件詳細資料](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
@@ -211,7 +213,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
      ![從效能事件移至應用程式程式碼](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
 
-     現在您可以檢閱其他記錄值、呼叫堆疊、逐步執行程式碼，或使用 [IntelliTrace] **** 視窗 [在「時間」中向後或向前移動至其他方法](../debugger/intellitrace.md) (這些方法是在此效能事件期間呼叫的)。
+     現在您可以檢閱其他記錄值、呼叫堆疊、逐步執行程式碼，或使用 [IntelliTrace]  視窗 [在「時間」中向後或向前移動至其他方法](../debugger/intellitrace.md) (這些方法是在此效能事件期間呼叫的)。
 
     - [IntelliTrace 記錄檔中的其他所有事件和資訊為何？](../debugger/using-saved-intellitrace-data.md)
     - [我還能如何處理？](#WhatElse)
@@ -219,7 +221,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
 ### <a name="diagnose-an-exception"></a>診斷例外狀況
 
-1. 在 [例外狀況資料] **** 下，檢閱記錄的例外狀況事件、其類型、訊息，以及發生例外狀況的時間。 若要更深入發掘程式碼，請從例外狀況群組中最近發生的事件開始偵錯。
+1. 在 [例外狀況資料] 下，檢閱記錄的例外狀況事件、其類型、訊息，以及發生例外狀況的時間。 若要更深入發掘程式碼，請從例外狀況群組中最近發生的事件開始偵錯。
 
      ![從例外狀況事件開始偵錯](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
@@ -229,7 +231,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
 
      ![從例外狀況事件移至應用程式程式碼](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")
 
-     現在您可以檢閱其他記錄值、呼叫堆疊，或使用 [IntelliTrace] **** 視窗 [在「時間」中向後或向前移動至其他記錄的事件](../debugger/intellitrace.md)、相關程式碼以及在這些時間點上記錄的值。
+     現在您可以檢閱其他記錄值、呼叫堆疊，或使用 [IntelliTrace]  視窗 [在「時間」中向後或向前移動至其他記錄的事件](../debugger/intellitrace.md)、相關程式碼以及在這些時間點上記錄的值。
 
      [IntelliTrace 記錄檔中的其他所有事件和資訊為何？](../debugger/using-saved-intellitrace-data.md)
 
@@ -357,7 +359,7 @@ Visual Studio 2017 及更新版本中並未包含 *BuildInfo.config* 檔案，�
     ```
 
 #### <a name="q-why-does-visual-studio-say-my-selected-workspace-is-ineligible"></a><a name="IneligibleWorkspace"></a> 問：為什麼 Visual Studio 說我選取的工作區不符合資格？
- **答：** 所選取的工作區在原始檔控制資料夾和本機資料夾之間沒有任何對應。 若要建立此工作區的對應，請選擇 [管理] ****。 否則，請選擇已對應的工作區或建立新的工作區。
+ **答：** 所選取的工作區在原始檔控制資料夾和本機資料夾之間沒有任何對應。 若要建立此工作區的對應，請選擇 [管理] 。 否則，請選擇已對應的工作區或建立新的工作區。
 
  ![在沒有已對應之工作區的情況下從原始檔控制開啟](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 

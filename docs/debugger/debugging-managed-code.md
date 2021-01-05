@@ -1,5 +1,7 @@
 ---
 title: Managed 程式碼的偵錯工具 |Microsoft Docs
+description: 查看 managed 應用程式 Visual Studio 中常見的偵測問題和技巧，或是以 common language runtime 為目標的語言撰寫的應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7dadfbc6a02382165b623aeff9d866e9edc975a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188407"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727017"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debug Managed 程式碼 (c #、Visual Basic、F #、c + +/CLI) 
 
@@ -30,7 +32,7 @@ ms.locfileid: "73188407"
 ## <a name="in-this-section"></a>本節內容
 
 [輸出視窗中的診斷訊息](../debugger/diagnostic-messages-in-the-output-window.md)\
-描述 <xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 類別，您可以使用它們將執行階段訊息寫入 [輸出]**** 視窗。 這兩個類別包括能夠讓資訊輸出的方法，有些資訊輸出不會中斷執行，有些則會在指定條件失敗時中斷執行。
+描述 <xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 類別，您可以使用它們將執行階段訊息寫入 [輸出] 視窗。 這兩個類別包括能夠讓資訊輸出的方法，有些資訊輸出不會中斷執行，有些則會在指定條件失敗時中斷執行。
 
 [Managed 程式碼中的判斷提示](../debugger/assertions-in-managed-code.md)\
 描述 Managed 程式碼中的判斷提示，此段程式碼會測試指定為 `Assert` 方法引數的條件。 此外，本主題也會提供範例程式碼、<xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 類別方法的使用資訊、偵錯版本和發行版本程式碼的種種考量、副作用、判斷提示引數、自訂判斷提示行為以及組態檔。
@@ -57,7 +59,7 @@ ms.locfileid: "73188407"
 討論對 LINQ 查詢進行偵錯的技術。
 
 [逐步解說：進行平行應用程式的偵錯工具](../debugger/walkthrough-debugging-a-parallel-application.md)\
-描述如何使用 [平行工作]**** 和 [平行堆疊]**** 工具視窗來偵錯平行應用程式。
+描述如何使用 [平行工作] 和 [平行堆疊] 工具視窗來偵錯平行應用程式。
 
 ## <a name="related-sections"></a>相關章節
 
@@ -79,7 +81,7 @@ ms.locfileid: "73188407"
 [偵錯工具腳本和 Web 應用程式](how-to-enable-debugging-for-aspnet-applications.md)\
 描述您在偵錯指令碼和 Web 應用程式時會遇到的一般偵錯問題和技術。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [逐步解說：在設計階段 Debug 自訂 Windows Forms 控制項](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [偵錯工具安全性](../debugger/debugger-security.md)

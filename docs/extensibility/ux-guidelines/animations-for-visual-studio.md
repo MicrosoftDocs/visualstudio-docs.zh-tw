@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 的動畫 |Microsoft Docs
+description: 瞭解可協助確保 Visual Studio IDE 之間一致且方便使用之動畫樣式的規則。
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc11eb7bab69728be5ceaa55143f56e93cd1fca4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698613"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715947"
 ---
 # <a name="animations-for-visual-studio"></a>適用於 Visual Studio 的動畫
 ## <a name="animation-fundamentals"></a>動畫基礎
@@ -33,19 +35,19 @@ ms.locfileid: "80698613"
 
   - 使用可變時機來強調重要性。 例如，流覽類別圖上的一連串專案時，加速專案之間的轉換，然後將焦點放在重要的專案上。
 
-- 使用從某個狀態到另一個狀態的**漸進式非線性簡化**，讓平靜和自然移動更加合理。
+- 使用從某個狀態到另一個狀態的 **漸進式非線性簡化**，讓平靜和自然移動更加合理。
 
 - 可能的話，請 **在滑鼠停留時使用微妙動畫** 來表示滑鼠下的互動式元素。
 
 - 如果您高度依賴您的功能中的動畫，請 **提供一個方法，將** 您的所有功能的本機關閉 (，) 作為 [ **工具 > 選項** ] 對話方塊中的選項。
 
-- 一**次只能有一個動畫**，而且只會傳達一項資訊。 有一個以上的物件移動或嘗試傳遞多個專案可能會造成混淆。
+- 一 **次只能有一個動畫**，而且只會傳達一項資訊。 有一個以上的物件移動或嘗試傳遞多個專案可能會造成混淆。
 
 - **奧妙很重要。** 在大部分的情況下，動畫不需要要求使用者注意來提供其用途。 時間、順序和行為的微妙變更可能會大幅影響感知，而且可以在有效和沒有效率的動畫之間產生差異。
 
-- 當您使用動畫來強調某個事物時， **請務必中斷使用者**的想法訓練。
+- 當您使用動畫來強調某個事物時， **請務必中斷使用者** 的想法訓練。
 
-- 透過動畫**顯示進度或狀態時**：
+- 透過動畫 **顯示進度或狀態時**：
 
   - 當基礎進程未前進時，停止顯示進度移動。
 
@@ -118,7 +120,7 @@ ms.locfileid: "80698613"
 
 - 一個元素行動網卡至另一個專案
 
-##### <a name="state"></a>State
+##### <a name="state"></a>州
 
 - 內容更新
 
@@ -142,7 +144,7 @@ ms.locfileid: "80698613"
 
 - 翻轉圖片
 
-##### <a name="time"></a>時間
+##### <a name="time"></a>Time
 
 - 顯示隨時間、時間間隔和螢幕錄製影片的變更
 
@@ -330,7 +332,7 @@ UI 出現的情況突然出現，使用者就不知道發生什麼事，而新�
 ##### <a name="example"></a>範例
 Tab 重新排列
 
-#### <a name="rotate"></a>旋轉
+#### <a name="rotate"></a>Rotate
 使用這個模式時，UI 元素會旋轉。
 
 ![UI 元素旋轉動畫](../../extensibility/ux-guidelines/media/1202-g_rotate.png "1202-g_Rotate")<br />UI 元素旋轉動畫

@@ -1,5 +1,7 @@
 ---
 title: 0x-2x-4x MSAA Variant |Microsoft Docs
+description: 瞭解如何使用0x、2x 或 4x MSAA 變異，覆寫所有呈現目標和交換鏈上的多重取樣消除鋸齒 (MSAA) 設定。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -8,17 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e77c0d7b5cbba2faf73fcca85ffcd0db063d618e
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 1d4de52fb135e465e7adc938bb29c571bfcc1973
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407545"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726549"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 變異
 覆寫所有呈現目標和交換鏈結上的多重取樣消除鋸齒 (MSAA) 設定。
 
-## <a name="interpretation"></a>解譯
+## <a name="interpretation"></a>解讀
  多重取樣消除鋸齒會增加視覺品質，方式是在每個像素中取得多個位置的樣本；MSAA 層級愈大，採用的樣本就愈多，而且如果沒有 MSAA，則只會從像素中心取得一個樣本。 如果在應用程式中啟用 MSAA，則在呈現效能上通常會有適度但顯著的成本，但是在特定工作量下，或在特定 GPU 上，幾乎沒有任何影響。
 
  如果您的應用程式已啟用 MSAA，則較少的 MSAA 變異指出現有且較高層級 MSAA 所造成的相對效能成本。 特別是 0x MSAA 變異指出應用程式在沒有 MSAA 之情況下的相對效能。

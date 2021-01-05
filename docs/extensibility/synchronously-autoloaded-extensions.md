@@ -1,5 +1,7 @@
 ---
 title: 非同步自動載入延伸模組
+description: 瞭解從 Visual Studio 2019 開始的預設行為，這會封鎖從任何擴充功能同步自動載入封裝。
+ms.custom: SEO-VS-2020
 ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab62d235fd6ed4e47e765fc23868acd5c56efcb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 506c098f1f385ddf39c5d000f4571a8ee92c09fc
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699376"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715440"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>非同步自動載入延伸模組
 
@@ -42,7 +44,7 @@ ms.locfileid: "80699376"
 
 系統管理員可以啟用群組原則以允許同步自動載入。 若要這樣做，請在下列機碼上設定以登錄為基礎的原則：
 
-**HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
 
 專案 = **允許**
 
@@ -53,5 +55,5 @@ Value = (DWORD)
 ## <a name="extension-authors"></a>延伸模組作者
 延伸模組作者可以找到在 [遷移至 AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration)時，將封裝遷移至非同步自動載入的指示。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 如需 Visual Studio 2019 中同步自動載入設定的詳細資訊，請參閱 [同步自動載入行為](https://devblogs.microsoft.com/visualstudio/updates-to-synchronous-autoload-of-extensions-in-visual-studio-2019/) 頁面。

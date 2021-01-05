@@ -1,8 +1,8 @@
 ---
-title: 針對錯誤進行疑難排解的資源
+title: IDE 錯誤疑難排解資源
 description: 瞭解如何使用知識庫文章、論壇或產品支援來針對沒有足夠資訊的 IDE 錯誤進行疑難排解，以協助您解決問題。
 ms.custom: SEO-VS-2020
-ms.date: 07/23/2020
+ms.date: 12/18/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -95,16 +95,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fdf18c67be8188bd03c498778fe8e6ad9409ee
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 081b36767388da4f78e1fd8f1e0f279d7ca201c9
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616575"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696550"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於針對整合式開發環境錯誤進行疑難排解的資源
+# <a name="resources-for-troubleshooting-ide-errors"></a>IDE 錯誤疑難排解資源
 
-並非所有錯誤訊息都有特定的相關說明主題。 如果錯誤訊息中的資訊無法協助您解決問題，則可以參閱知識庫文章、論壇或產品支援這類其他資源。
+並非所有錯誤訊息都有特定的相關說明主題。 如果錯誤訊息中的資訊無法協助您解決問題，您可以參考其他資源，例如知識庫文章、論壇或產品支援。
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [針對 Visual Studio for Mac 進行疑難排解](/visualstudio/mac/troubleshooting)。
@@ -115,15 +115,20 @@ ms.locfileid: "96616575"
 
 ## <a name="developer-forums"></a>開發人員論壇
 
-論壇也可讓您與其他開發人員和 Microsoft 員工互動。 如果您遇到找不到解決方案的錯誤，則可以在論壇張貼有關問題的疑問。 您也可以搜尋新聞群組，以查看是否有其他人已經張貼相同的問題。
+論壇也可讓您與其他開發人員和 Microsoft 員工互動。 如果您遇到找不到解決方案的錯誤，則可以在論壇張貼有關問題的疑問。 您也可以搜尋論壇，查看其他人是否已張貼相同的問題。
 
-您可以在 [Microsoft 技術社群](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities)網站存取論壇、部落格、聊天室和其他資源。
+以下是一份論壇資源清單：
+
+- [Q&A 上的 Visual Studio](/answers/products/vs/)
+- [Visual Studio MSDN 論壇](https://social.msdn.microsoft.com/Forums/vstudio)
+- [Stack Overflow](https://stackoverflow.com/search?q=%22visual+studio%22)
+- [Reddit](https://www.reddit.com/r/VisualStudio)
 
 ## <a name="product-support"></a>產品支援
 
 如果您在嘗試其他資源之後仍有疑問，則可以前往 [Microsoft 支援服務](https://support.microsoft.com/en-us)網站，連絡 Microsoft 支援服務。 如需您所在地區中可用產品支援的相關資訊，請參閱 [Visual Studio 意見反應選項](../../ide/feedback-options.md) 頁面。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [對網路相關錯誤或 Proxy 錯誤進行疑難排解](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [針對 Windows) 的 (Visual Studio 進行疑難排解 ](/troubleshoot/visualstudio/welcome-visual-studio/)

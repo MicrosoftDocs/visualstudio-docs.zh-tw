@@ -1,6 +1,7 @@
 ---
 title: Web 應用程式的偵錯工具-錯誤和疑難排解
-ms.custom: seodec18
+description: 尋找參考頁面的連結，以協助您進行 web 應用程式的偵錯工具，例如疑難排解頁面，以及描述您可能會遇到的每個錯誤的頁面。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -27,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4cb60f4d378daab829713cb4bbbb670ef8ed25a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f827dd2bb8081787a4883b2d67ee41d8b6d43876
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188344"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726783"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>偵錯 Web 應用程式：錯誤和疑難排解
 當您嘗試對 Web 應用程式進行偵錯時，可能會遇到下列錯誤。
@@ -55,6 +56,6 @@ ms.locfileid: "73188344"
 
 - [錯誤：無法在 Web 服務器上啟動調試](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯 Web 應用程式和指令碼](how-to-enable-debugging-for-aspnet-applications.md)

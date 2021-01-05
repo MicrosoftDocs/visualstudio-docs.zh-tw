@@ -1,5 +1,7 @@
 ---
 title: 快照集偵錯的常見問題集 | Microsoft Docs
+description: 查看使用 Visual Studio 中的快照偵錯工具來對即時 Azure 應用程式進行偵錯工具時，可能會出現的常見問題)  (常見問題的清單。
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8afc67b92a943dd571847bb1a00fb7e4db4514b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5276127f0d6755b9fdabdfa965b5c1b8c4d94823
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851095"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727199"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中快照集偵錯的常見問題集
 
@@ -50,7 +52,7 @@ ms.locfileid: "90851095"
 可透過下列步驟，在 App Service 上解除安裝快照偵錯工具網站延伸模組：
 
 1. 您可以透過 Visual Studio 或 Azure 入口網站中的 Cloud Explorer 來關閉 App Service。
-1. 瀏覽至您 App Service 的 Kudu 網站 (也就是 yourappservice.**scm**.azurewebsites.net)，並瀏覽至 [網站延伸模組]****。
+1. 瀏覽至您 App Service 的 Kudu 網站 (也就是 yourappservice.**scm**.azurewebsites.net)，並瀏覽至 [網站延伸模組]。
 1. 按一下快照偵錯工具網站延伸模組上的 X 即可將它移除。
 
 #### <a name="why-are-ports-opened-during-a-snapshot-debugger-session"></a>為什麼會在快照偵錯工具工作階段期間開啟連接埠？
@@ -62,7 +64,7 @@ ms.locfileid: "90851095"
 針對應用程式服務：
 1. 透過 App Service 的 Azure 入口網站停用遠端偵錯程式擴充功能。
 2. Azure 入口網站 > 應用程式服務資源 blade > *應用程式設定*
-3. 流覽至 [ *調試* 程式] 區段，然後按一下 [ *關閉* ] 按鈕以進行 *遠端偵錯*程式。
+3. 流覽至 [ *調試* 程式] 區段，然後按一下 [ *關閉* ] 按鈕以進行 *遠端偵錯* 程式。
 
 針對 AKS：
 1. 更新您的 Dockerfile，以移除與 [Docker 映射上的 Visual Studio 快照偵錯工具](https://github.com/Microsoft/vssnapshotdebugger-docker)對應的區段。
@@ -196,7 +198,7 @@ ms.locfileid: "90851095"
       Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
    ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [使用快照偵錯工具針對即時 ASP.NET 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)

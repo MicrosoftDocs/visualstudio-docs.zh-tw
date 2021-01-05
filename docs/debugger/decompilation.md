@@ -1,5 +1,7 @@
 ---
 title: 在偵錯工具時，將 .NET 程式碼進行編譯 |Microsoft Docs
+description: 在 Visual Studio 中進行偵錯工具時，從 .NET 元件產生和內嵌原始程式碼。 解壓縮並查看內嵌的原始程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 2/2/2020
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 8ad919b14642dff98746c194ad8c05bbb3aea529
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600103"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726731"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>在偵錯工具時，從 .NET 元件產生原始程式碼
 
@@ -57,11 +59,11 @@ ms.locfileid: "89600103"
 
 ![[模組] 視窗中具有 [解壓縮來源] 命令的元件內容功能表螢幕擷取畫面。](media/decompilation-extract-source-code.png)
 
-已解壓縮的來源檔案會以 [其他](../ide/reference/miscellaneous-files.md)檔案的形式加入至方案。 在 Visual Studio 中，[其他檔案] 功能預設為關閉。 您可以從 [**工具**  >  **選項**  >  **環境**  >  **檔**  >  **在方案總管中顯示其他**檔案] 核取方塊啟用這項功能。 若未啟用此功能，您將無法開啟已解壓縮的原始程式碼。
+已解壓縮的來源檔案會以 [其他](../ide/reference/miscellaneous-files.md)檔案的形式加入至方案。 在 Visual Studio 中，[其他檔案] 功能預設為關閉。 您可以從 [**工具**  >  **選項**  >  **環境**  >  **檔**  >  **在方案總管中顯示其他** 檔案] 核取方塊啟用這項功能。 若未啟用此功能，您將無法開啟已解壓縮的原始程式碼。
 
 ![啟用 [其他檔案] 選項之 [工具選項] 頁面的螢幕擷取畫面。](media/decompilation-tools-options-misc-files.png)
 
-解壓縮的原始檔會出現在 **方案總管**的其他檔案中。
+解壓縮的原始檔會出現在 **方案總管** 的其他檔案中。
 
 ![包含其他檔案的方案瀏覽器螢幕擷取畫面。](media/decompilation-solution-explorer.png)
 
@@ -101,7 +103,7 @@ ms.locfileid: "89600103"
 
 [Just My Code (JMC) ](./just-my-code.md)設定可讓 Visual Studio 不進入系統、架構、程式庫及其他非使用者呼叫。 在偵錯工具中，[ **模組** ] 視窗會顯示偵錯工具視為 My Code (使用者程式碼) 的程式碼模組。
 
-優化或發行模組的反向組譯會產生非使用者程式碼。 例如，如果偵錯工具在您反向組譯的非使用者程式碼中中斷，則不會出現 **任何來源** 視窗。 若要停用 Just My Code，請流覽至 [**工具**  >  **選項**] (或 [**調試**  >  **選項**]) > **Debugging**  >  **[一般**]，然後取消選取 [**啟用 Just My Code**]。
+優化或發行模組的反向組譯會產生非使用者程式碼。 例如，如果偵錯工具在您反向組譯的非使用者程式碼中中斷，則不會出現 **任何來源** 視窗。 若要停用 Just My Code，請流覽至 [**工具**  >  **選項**] (或 [**調試**  >  **選項**]) >   >  **[一般**]，然後取消選取 [**啟用 Just My Code**]。
 
 ### <a name="extracted-sources"></a>已解壓縮來源
 

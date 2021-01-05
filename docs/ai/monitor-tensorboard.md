@@ -10,21 +10,21 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: a9242cdd4a09b7d0cb1cae1904800696dc9c3d82
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 650189c4418355ae06b296bac7e16eece0ea88ad
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099176"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727251"
 ---
 # <a name="monitor-with-tensorboard"></a>使用 TensorBoard 監視
 
 您可以使用 TensorBoard 視覺化您的模型定型。
 
-1. 以滑鼠右鍵按一下您的專案，按一下 [Run TensorBoard] \(執行 TensorBoard\)****，然後選取您輸出 TensorBoard 記錄檔的目錄。
+1. 以滑鼠右鍵按一下您的專案，按一下 [Run TensorBoard] \(執行 TensorBoard\)，然後選取您輸出 TensorBoard 記錄檔的目錄。
 
-    ![執行 TensorBoard](media/monitor-tensorboard/run-tensorboard.png)
+    ![已選取 MNIST 專案 Visual Studio 方案總管的螢幕擷取畫面。 開啟內容功能表，然後選取 [執行 TensorBoard] 命令。](media/monitor-tensorboard/run-tensorboard.png)
 
 2. 請注意，錯誤已隨著時間遞減，表示品質正在改善。
 
-    ![執行 TensorBoard](media/monitor-tensorboard/tensorboard.png)
+    ![[主要 TensorBoard] 視窗的螢幕擷取畫面，其中顯示 TensorBoard 記錄中資料的圖形視覺效果。](media/monitor-tensorboard/tensorboard.png)

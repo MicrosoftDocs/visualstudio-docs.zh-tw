@@ -1,5 +1,7 @@
 ---
 title: 運送 Visual Studio 延伸模組 |Microsoft Docs
+description: 瞭解如何發佈和維護您的 Visual Studio SDK 擴充功能，包括使用 .vsix 檔案、發行、當地語系化和更新。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767bb24bb5cb47f1af1452aa04ebdc91c778e284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700116"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715999"
 ---
 # <a name="shipping-visual-studio-extensions"></a>推出 Visual Studio 延伸模組
 在您完成擴充功能的開發之後，您可以將它安裝在其他電腦上、與您的朋友和同事共用，或將它發佈到 Visual Studio Marketplace 上。 在本節中，我們將說明發行和維護您的延伸模組所需執行的所有作業：使用 .vsix 檔案、發行、當地語系化和更新。
@@ -30,7 +32,7 @@ ms.locfileid: "80700116"
  VSIX 格式不支援安裝程式碼片段。 它也不支援某些其他案例，例如寫入全域組件快取 (GAC) 或系統登錄。 如果您需要在安裝中寫入 GAC 或登錄，則必須使用 Windows Installer。 如需詳細資訊，請參閱 [準備 Windows Installer 部署的擴充](../extensibility/preparing-extensions-for-windows-installer-deployment.md)功能。
 
 ## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>將您的延伸模組發佈至 Visual Studio Marketplace
- 您可以將延伸模組散發給其他人，只要將 .vsix 檔案郵寄或放在伺服器上即可。 但是讓您的程式碼在許多人手上的最佳方式，就是把它放在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。 Visual Studio Marketplace 擴充功能可透過 **擴充功能和更新**Visual Studio 使用者使用。 如需詳細資訊，請參閱[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)。
+ 您可以將延伸模組散發給其他人，只要將 .vsix 檔案郵寄或放在伺服器上即可。 但是讓您的程式碼在許多人手上的最佳方式，就是把它放在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。 Visual Studio Marketplace 擴充功能可透過 **擴充功能和更新** Visual Studio 使用者使用。 如需詳細資訊，請參閱[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)。
 
  如需示範如何將延伸模組上傳至 Visual Studio Marketplace 的完整範例，請參閱 [逐步解說：發行 Visual Studio 擴充](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)功能。
 
@@ -57,6 +59,6 @@ ms.locfileid: "80700116"
 |[如何︰將相依性加入至 VSIX 封裝](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|說明如何加入 VSIX 部署封裝的參考。|
 |[準備適用於 Windows Installer 部署的延伸模組](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|說明如何使用 Windows Installer 部署擴充功能。|
 |[簽署 VSIX 封裝](../extensibility/signing-vsix-packages.md)|說明如何簽署 VSIX 套件。|
-|[私用組件庫](../extensibility/private-galleries.md)|說明如何建立擴充功能的私用資源庫。|
+|[私用資源庫](../extensibility/private-galleries.md)|說明如何建立擴充功能的私用資源庫。|
 |[支援多個 Visual Studio 版本](../extensibility/supporting-multiple-versions-of-visual-studio.md)|說明如何讓您的延伸模組支援多個版本的 Visual Studio。|
 |[尋找 Visual Studio](locating-visual-studio.md)|說明如何尋找自訂延伸模組部署的 Visual Studio 實例。|

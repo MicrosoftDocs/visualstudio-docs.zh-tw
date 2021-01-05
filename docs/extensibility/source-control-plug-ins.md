@@ -1,5 +1,7 @@
 ---
 title: 原始檔控制外掛程式 |Microsoft Docs
+description: 本節中的文章描述可讓原始檔控制系統與 Visual Studio 整合的完整介面規格。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc5f092e0ae93109d071af0b1a67999947e73e90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 617b06e46bb150026f49af3e23761dfd6cb4e902
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699896"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715830"
 ---
 # <a name="source-control-plug-ins"></a>原始檔控制外掛程式
 原始檔控制外掛程式 SDK 參考區段包含可讓原始檔控制系統與整合的完整介面規格 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 它會指定原始檔控制外掛程式必須執行的各種函式和資料類型的語法和語義，以 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (IDE) 的整合式開發環境進行介面。

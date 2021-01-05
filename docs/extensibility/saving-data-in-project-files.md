@@ -1,5 +1,7 @@
 ---
 title: 將資料儲存在專案檔中 |Microsoft Docs
+description: 瞭解 Managed Package Framework 提供的介面，以儲存及取出專案檔中的子類型特定資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fd6cfaa450bc268665ae0f58109c99002da6152
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4746ebb4a92d5c2688063336cb3772de8d72ee1b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701347"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715687"
 ---
 # <a name="save-data-in-project-files"></a>將資料儲存在專案檔案中
 專案子類型可以儲存和取出專案檔中的子類型特定資料。 受控封裝架構 (MPF) 提供兩個介面來完成這項工作：
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>介面可讓您從專案檔的**MSBuild**區段存取屬性值。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>只要使用者需要載入或儲存組建相關的資料，就可以由任何使用者呼叫提供的方法。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>介面可讓您從專案檔的 **MSBuild** 區段存取屬性值。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>只要使用者需要載入或儲存組建相關的資料，就可以由任何使用者呼叫提供的方法。
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>用來以自由格式的 XML 保存非組建的相關資料。 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 只要 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 需要在專案檔中保存非組建相關的資料，就會呼叫所提供的方法。
 
@@ -208,5 +210,5 @@ ms.locfileid: "80701347"
 > [!NOTE]
 > 本主題所提供的所有程式碼範例都是 [VSSDK 範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)中較大範例的一部分。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [在 MSBuild 專案檔中保存資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

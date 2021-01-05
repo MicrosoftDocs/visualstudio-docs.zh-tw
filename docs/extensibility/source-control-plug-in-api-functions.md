@@ -1,5 +1,7 @@
 ---
 title: 原始檔控制外掛程式 API 函式 |Microsoft Docs
+description: 瞭解原始檔控制外掛程式 API 提供的函式，這些函式必須由原始檔控制外掛程式來執行。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce685729dda8750d772e244398b736cff4951b72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 114862bb3358cc2a5400d6f40031deb030e4e4df
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699914"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715986"
 ---
 # <a name="source-control-plug-in-api-functions"></a>原始檔控制外掛程式 API 函式
 原始檔控制外掛程式 API 提供下列函式，這些函式必須由原始檔控制外掛程式根據此 API 來執行。 這項參考會詳細說明每個函式的簽章，以及與位旗標和其他參數相關聯的語法。
@@ -80,11 +82,11 @@ ms.locfileid: "80699914"
 |[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|檢查位於原始檔控制下的專案或專案中的目錄和檔案清單。 每個找到的目錄和檔案名都會傳遞至回呼函式。|
 |[SccQueryChanges](../extensibility/sccquerychanges-function.md)|檢查對檔案清單所做的名稱變更。 每個檔案名都會傳遞至具有其變更狀態的回撥函數。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： scc。h
 
  依預設，環境 SDK common include 資料夾中提供的 (*[磁片磁碟機]* \Program Files\VSIP 8.0 \ EnvSDK\common\inc;此外，也會在具有 MSSCCI 範例的 VSIP 資料夾中提供 *[磁片磁碟機]* \Program Files\VSIP 8.0 \ MSSCCI) 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
 - [建立原始檔控制外掛程式](../extensibility/internals/creating-a-source-control-plug-in.md)

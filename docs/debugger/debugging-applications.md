@@ -1,5 +1,7 @@
 ---
 title: 偵錯工具 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 中針對不同類型的應用程式（例如 UWP 應用程式、managed 程式碼、機器碼、GPU 程式碼及 Web 應用程式）使用偵錯工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfe7bb45d2979a62d07e34b2ee44076394ff936c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535157"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727004"
 ---
 # <a name="debugging-applications"></a>對應用程式進行偵錯
 下列各節將說明特定類型應用程式的偵錯。 不同的應用程式類型與不同的語言，需要不同的設定及技術，其呈現出來需要偵錯的問題也不相同。
@@ -35,5 +37,5 @@ ms.locfileid: "85535157"
 |[對 ASP.NET 應用程式進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|說明如何將 ASP.NET 應用程式的偵錯工具。|
 |[針對 Python 程式碼進行偵錯](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|說明如何將 Python 程式碼進行偵錯工具|
 |[對 JavaScript 和 TypeScript 應用程式進行偵錯工具](../javascript/debug-nodejs.md)|說明如何進行 JavaScript、TypeScript 和 Node.js 應用程式的偵錯工具|
-|[偵錯工具 Web 應用程式](../debugger/debugging-web-applications.md)|說明如何進行 Web 應用程式和腳本的偵錯工具。|
+|[對 Web 應用程式進行偵錯](../debugger/debugging-web-applications.md)|說明如何進行 Web 應用程式和腳本的偵錯工具。|
 |[對 WCF 服務進行偵錯](../debugger/debugging-wcf-services.md)|說明如何對 Windows Communication Foundation 服務進行偵錯。|

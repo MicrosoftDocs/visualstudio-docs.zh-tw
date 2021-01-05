@@ -1,6 +1,7 @@
 ---
 title: Debug 多執行緒應用程式 |Microsoft Docs
-ms.custom: seodec18
+description: 在 Visual Studio 中調試多執行緒應用程式。 檢查多執行緒應用程式的相關工具和其他文章。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/06/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 4fed6580219964ab71f5a5010060c1af193375df
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600336"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727134"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中對多執行緒應用程式進行偵錯
 執行緒是作業系統授權處理器時間的一連串指令。 在作業系統中執行的每個處理序都包含至少一個執行緒。 具有一個以上執行緒的處理序就稱為多執行緒。
@@ -42,7 +43,7 @@ Visual Studio 提供不同的工具，可用於調試多執行緒應用程式。
 
 - 針對執行緒，偵測執行緒的主要工具是 [ **執行緒** ] 視窗、來源視窗中的執行緒標記、[ **平行堆疊** ] 視窗、[ **平行監看** 式] 視窗和 [ **偵錯工具位置** ] 工具列。 若要瞭解 [ **執行緒** ] 視窗和 [ **調試位置** ] 工具列，請參閱 [逐步解說：使用執行緒視窗進行 debug](../debugger/how-to-use-the-threads-window.md)。 若要瞭解如何使用 [ **平行堆疊** ] 和 [ **平行監看式]** 視窗，請參閱 [開始對多執行緒應用程式進行偵錯工具](../debugger/get-started-debugging-multithreaded-apps.md)。 這兩個主題都會示範如何使用執行緒標記。
 
-- 針對使用工作平行連結[庫 (TPL) ](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime/)的程式碼，偵錯工具的主要工具是 [**平行堆疊**] 視窗、[**平行監看****式] 視窗和 [工作]** 視窗，也支援 JavaScript。 若要開始使用，請參閱 [逐步解說：進行平行應用程式的偵錯工具](../debugger/walkthrough-debugging-a-parallel-application.md) 和 [逐步解說： C++ AMP 應用程式的偵錯工具](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)。
+- 針對使用工作平行連結 [庫 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或 [並行執行階段](/cpp/parallel/concrt/concurrency-runtime/)的程式碼，偵錯工具的主要工具是 [**平行堆疊**] 視窗、[**平行監看****式] 視窗和 [工作]** 視窗，也支援 JavaScript。 若要開始使用，請參閱 [逐步解說：進行平行應用程式的偵錯工具](../debugger/walkthrough-debugging-a-parallel-application.md) 和 [逐步解說： C++ AMP 應用程式的偵錯工具](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)。
 
 - 若要在 GPU 上進行執行緒的偵錯工具，主要工具是 [ **GPU 執行緒** ] 視窗。 請參閱 [如何：使用 GPU 執行緒視窗](../debugger/how-to-use-the-gpu-threads-window.md)。
 
@@ -62,7 +63,7 @@ Visual Studio 也提供功能強大的中斷點和追蹤點，當您在調試多
 
 列出用來偵測執行緒和進程之工具的功能。
 
- [多進程的偵錯工具](../debugger/debug-multiple-processes.md)
+ [對多重處理序進行偵錯](../debugger/debug-multiple-processes.md)
 
 說明如何偵錯多重處理序
 
@@ -86,23 +87,23 @@ Visual Studio 也提供功能強大的中斷點和追蹤點，當您在調試多
 
 偵錯在高效能叢集上執行的應用程式的相關技巧。
 
- [在機器碼中對執行緒進行偵錯工具的秘訣](../debugger/tips-for-debugging-threads-in-native-code.md)
+ [在機器碼中對執行緒進行偵錯的祕訣](../debugger/tips-for-debugging-threads-in-native-code.md)
 
 在偵錯原生執行緒時非常好用的簡單技巧。
 
  [如何：在機器碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-native-code.md)
 
-為執行緒命名以方便在 [執行緒]**** 視窗中檢視。
+為執行緒命名以方便在 [執行緒] 視窗中檢視。
 
  [如何：在 Managed 程式碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-managed-code.md)
 
-為執行緒命名以方便在 [執行緒]**** 視窗中檢視。
+為執行緒命名以方便在 [執行緒] 視窗中檢視。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用中斷點](../debugger/using-breakpoints.md)
 - [執行緒](/dotnet/standard/threading/index)
 - [元件中的多執行緒](/previous-versions/3es4b6yy(v=vs.140))
 - [舊版程式碼的多執行緒支援](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
-- [偵錯工具執行緒和進程](../debugger/debug-threads-and-processes.md)
+- [對執行緒和處理序進行偵錯](../debugger/debug-threads-and-processes.md)
 - [遠端偵錯](../debugger/remote-debugging.md)

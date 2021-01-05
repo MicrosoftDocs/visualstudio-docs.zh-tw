@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 84be6698c62e3a2a205ceb9d404673ee1d0c6f64
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668608"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696534"
 ---
 # <a name="supported-visual-studio-features-preview"></a>支援 (Preview 的 Visual Studio 功能) 
 
@@ -108,8 +108,8 @@ Visual Studio 在連接至 codespace 時，提供豐富的開發體驗。 您可
 
 使用連接至 codespace 的 Visual Studio 時，您會取得與在本機工作時相同的協助工具功能。
 
-* 原始檔控制-透過新的 [git 視窗](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)的完整 git 支援。
-* 協助工具-有一個已知的輔助技術問題，無法存取已進行偵錯工具的 appcasting。 除了這項限制，我們不認為本機 Visual Studio 體驗中還沒有任何其他相容性問題。 如果您在 [開發人員群體](https://aka.ms/feedback/suggest?space=8)上提出問題，請讓我們知道您是否偵測到 bug。
+* 原始檔控制-透過新的整合式 [git 體驗](../git-with-visual-studio.md)的完整 Git 支援。
+* 協助工具-有一個已知的輔助技術問題，無法存取已進行偵錯工具的 appcasting。 除了這項限制，我們不認為本機 Visual Studio 體驗中還沒有任何其他相容性問題。 如果您在 [開發人員群體](https://aka.ms/feedback/report?space=8)上提出問題，請讓我們知道您是否偵測到 bug。
 * 支援透過 GitHub Actions 發佈到 Azure。
 * 已連線的服務-已部分支援 App Insights、KeyVault、儲存體、SQL、Redis、Cosmos、openAPI 和 gRPC。
 * 測試瀏覽器 *-主要支援。
@@ -121,7 +121,7 @@ Visual Studio 在連接至 codespace 時，提供豐富的開發體驗。 您可
 * 企業測試功能-不支援 Live Unit Testing、Microsoft Fakes、程式碼涵蓋範圍和 IntelliTest。
 * Advanced 發行案例-選擇性發佈、FTP 發佈、預覽變更、快速發佈工具列等。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [什麼是 GitHub Codespaces？](codespaces-overview.md)
 * [如何搭配 codespace 使用 Visual Studio](use-visual-studio-with-codespaces.md)

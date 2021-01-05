@@ -1,5 +1,7 @@
 ---
 title: 單一和多重索引標籤的視圖 |Microsoft Docs
+description: 瞭解如何在編輯器（例如程式碼編輯器視窗和表單設計工具）中執行多個索引標籤的查看。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c308b4d6c7b90456255019ef57c6b9d544aefc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94081af0bfdb85793c092f76d28758f220f4628b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699982"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715206"
 ---
 # <a name="single-and-multi-tab-views"></a>單一和多重索引標籤檢視
 編輯器可以建立不同類型的視圖。 其中一個範例是 [程式碼編輯器] 視窗，另一個則是表單設計工具。
@@ -112,7 +114,7 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)
 - [如何︰將檢視附加至文件資料](../extensibility/how-to-attach-views-to-document-data.md)
 - [建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)

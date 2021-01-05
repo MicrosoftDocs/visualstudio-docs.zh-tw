@@ -1,5 +1,7 @@
 ---
 title: BC 紋理壓縮變異 |Microsoft Docs
+description: 使用 BC 紋理壓縮變異來允許區塊壓縮 (BC) 具有 B8G8R8X8、B8G8R8A8 或 R8G8B8A8 變化的像素格式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
@@ -8,17 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5faf19632d746105deed3a36af6943627594175
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e767268073f896de590386854a0d2c9ce2803073
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72736153"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726445"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 紋理壓縮變異
 在具有 B8G8R8X8、B8G8R8A8 或 R8G8B8A8 像素格式變異的紋理上啟用區塊壓縮。
 
-## <a name="interpretation"></a>解譯
+## <a name="interpretation"></a>解讀
  區塊壓縮格式 (如 BC1、BC2 和 BC3) 佔用的記憶體遠低於未壓縮的影像格式，因此耗用極少的記憶體頻寬。 與使用每像素 32 位元數的未壓縮格式相較之下，BC1 (過去稱為 DXT1) 可達到 8:1 壓縮，而 BC3 (過去稱為 DXT5) 可達到 4:1。 BC1 與 BC3 之間的差異是 BC1 不支援 Alpha 色板，而 BC3 支援區塊壓縮 Alpha 色板。 雖然具有高壓縮率，但是一般紋理只會降低極少的影像品質。 不過，特定類型的紋理 (例如，在小區域內有大量色彩變化的紋理) 的區塊壓縮，可能會有無法接受的結果。
 
  如果您的紋理適合進行區塊壓縮，而且不需要有完美的色彩逼真度，請考慮使用區塊壓縮格式來減少記憶體使用量，而且會耗用較少的頻寬。
@@ -60,5 +62,5 @@ ms.locfileid: "72736153"
 ## <a name="example"></a>範例
  此變異會先在執行階段對紋理進行區塊壓縮，再呼叫 `CreateTexture2D`。 建議您不要對實際執行程式碼使用此方式，因為未壓縮的紋理會耗用較多的磁碟空間，而且因為額外步驟可能會大幅增加應用程式中的載入時間，畢竟區塊壓縮需要大量計算資源來進行編碼。 建議您改用屬於您組建管線的影像編輯器或影像處理器，來離線壓縮紋理。 這些方式會減少磁碟空間需求、去除應用程式中的執行階段額外負荷，以及提供更多的處理時間，讓您可以保留最佳影像品質。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [半/季材質維度變異](half-quarter-texture-dimensions-variant.md)

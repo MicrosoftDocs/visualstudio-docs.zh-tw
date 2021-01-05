@@ -1,5 +1,7 @@
 ---
 title: 使用設定存放區 |Microsoft Docs
+description: 瞭解如何從設定設定存放區讀取資料，這是唯讀的 Visual Studio 和 VSPackage 設定。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3bbc09586f883e067e32f525a0331c1a9e253f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aeb147c245f7dc09cf91db8a1b810a7c5f30b46b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698522"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715908"
 ---
 # <a name="using-the-settings-store"></a>使用設定存放區
 有兩種設定存放區：
@@ -31,7 +33,7 @@ ms.locfileid: "80698522"
 
 1. 每個 Visual Studio 擴充功能都會以 VSIX 部署專案開始，其中將包含延伸模組資產。 建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名為的 VSIX 專案 `SettingsStoreExtension` 。 您可以在 [ **新增專案** ] 對話方塊中的 **Visual c #/** 擴充性下找到 VSIX 專案範本。
 
-2. 現在，新增名為 **SettingsStoreCommand**的自訂命令專案範本。 在 [ **加入新專案** ] 對話方塊中，移至 **Visual c #/** 擴充性，然後選取 [ **自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 **SettingsStoreCommand.cs**。 如需如何建立自訂命令的詳細資訊，請參閱[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能
+2. 現在，新增名為 **SettingsStoreCommand** 的自訂命令專案範本。 在 [ **加入新專案** ] 對話方塊中，移至 **Visual c #/** 擴充性，然後選取 [ **自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 **SettingsStoreCommand.cs**。 如需如何建立自訂命令的詳細資訊，請參閱[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能
 
 ## <a name="using-the-configuration-settings-store"></a>使用設定存放區
  本節說明如何偵測和顯示設定。
@@ -79,9 +81,9 @@ ms.locfileid: "80698522"
 
 1. 開啟 Regedit.exe。
 
-2. 流覽至 HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14. 0Exp_Config \InstalledProducts \\ 。
+2. 流覽至 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\ 。
 
     > [!NOTE]
-    > 確定您正在查看包含 \ 14. 0Exp_Config \ 而不是 \ 14 \\ . 0_Config 的索引鍵。 當您執行 Visual Studio 的實驗實例時，configuration 設定會位於登錄 hive "14. 0Exp_Config" 中。
+    > 確定您正在查看包含 \ 14.0Exp_Config \ 而非 \ 14.0_Config 的索引鍵 \\ 。 當您執行 Visual Studio 的實驗實例時，設定會位於登錄 hive "14.0Exp_Config"。
 
 3. 展開 [\Installed Products] 節點。 如果先前步驟中的訊息是 **已安裝 Microsoft Windows Phone Developer tools： True**，則 \Installed Products \ 應該包含 Microsoft Windows Phone developer tools 節點。 如果訊息是 **Microsoft Windows Phone 開發人員工具已安裝： False**，則 [\Installed 產品] 不應包含 [Microsoft Windows Phone 開發人員工具] 節點。

@@ -1,5 +1,7 @@
 ---
 title: 支援 Visual Studio SDK |Microsoft Docs
+description: 深入瞭解如何延伸 Visual Studio IDE 的客戶可使用的支援選項。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddcdf62fbfe6d683159cccce24280bdb08cedc2a
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 40e2ceb39931ce7779a7e13de6d0f13ee68f32b7
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099371"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715284"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>支援 Visual Studio SDK
 有幾個支援選項可供有關于如何擴充 Visual Studio 整合式開發環境 (IDE) 的客戶使用。
@@ -62,6 +64,6 @@ ms.locfileid: "92099371"
 
 個別支援要求的相關資訊可在 [個別支援要求](https://support.microsoft.com/supportforbusiness/productselection)中找到。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [與我們交談](../ide/feedback-options.md)

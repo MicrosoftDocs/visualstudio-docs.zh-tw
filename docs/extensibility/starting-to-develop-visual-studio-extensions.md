@@ -1,5 +1,7 @@
 ---
 title: 開始開發 Visual Studio 擴充功能 |Microsoft Docs
+description: 瞭解您首次開始撰寫 Visual Studio 擴充功能時，可能會遇到的一些常見問題。
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: da8bd850413d32e5453b7dc312e863832e5f5218
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099384"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715258"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>開始開發 Visual Studio 擴充功能
 
@@ -49,7 +51,7 @@ ms.locfileid: "92099384"
 
 - [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)：將您自己的專案加入 Visual Studio 功能表和工具列。 您可以使用它們來啟動新的 Visual Studio 功能或您自己的外部 helper 應用程式。 您也可以提供功能表項目的自訂快捷方式。
 
-- [擴充和自訂工具視窗](../extensibility/extending-and-customizing-tool-windows.md)：擴充現有的工具視窗，或建立您自己的工具視窗。 例如，您可以將新的屬性加入至 **屬性**中，也可以建立新的工具視窗來加入其他功能。
+- [擴充和自訂工具視窗](../extensibility/extending-and-customizing-tool-windows.md)：擴充現有的工具視窗，或建立您自己的工具視窗。 例如，您可以將新的屬性加入至 **屬性** 中，也可以建立新的工具視窗來加入其他功能。
 
 - [編輯器和語言服務延伸](../extensibility/editor-and-language-service-extensions.md)模組：將您自己的自訂加入至為 Visual Studio 語言提供的 IntelliSense，或建立新程式設計語言的支援。 您可以建立新的語句完成、建議和新的 QuickInfo 工具提示。 使用 light 燈泡，您可以新增重構建議和程式碼修正，以支援新的程式設計語言。
 
@@ -93,7 +95,7 @@ ms.locfileid: "92099384"
 
  您也可以在 Visual Studio Marketplace 上發佈您的延伸模組，讓大量的 Visual Studio 客戶看得到。 如需將擴充功能封裝至 Marketplace 的範例，請參閱 [逐步解說：發行 Visual Studio 延伸](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)模組。 如需在 Marketplace 上發佈的詳細資訊，請參閱 [Visual Studio 的產品和延伸](/azure/devops/extend/overview?view=vsts&preserve-view=true)模組。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [擴充 Visual Studio for Mac](/visualstudio/mac/extending-visual-studio-mac)
 - [擴充 Visual Studio Code](https://code.visualstudio.com/api)

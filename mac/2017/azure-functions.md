@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 63793548bd3ea1098cc1113724cd9a3b513adbf5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189793"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727459"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 簡介
 
 Azure 函式是一種不必明確佈建或管理基礎結構，就能在雲端建立和執行事件驅動程式碼片段 (函式) 的方法。 如需 Azure Functions 的詳細資訊，請參閱 [Azure Functions 文件](/azure/azure-functions/)。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 Azure 函式工具隨附於 **Visual Studio for Mac 7.5**。
 
@@ -91,10 +91,10 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
 
 ## <a name="publish-to-azure"></a>發佈至 Azure
 
-1. 以滑鼠右鍵按一下專案名稱，然後選取 [ **發行 > 發佈到 azure**：  ![ 發佈至 azure] 功能表選項](media/azure-functions-image5.png)
+1. 以滑鼠右鍵按一下專案名稱，然後選取 [ **發行] > 發佈至 Azure**：  ![ Azure Functions 的螢幕擷取畫面，其中顯示已選取的 AF HTTPtrigger 專案，以及在內容功能表中反白顯示的 [發佈和發佈至 azure] 命令。](media/azure-functions-image5.png)
 2. 如果您已將 Azure 帳戶連線至 Visual  Studio for Mac，則會顯示可用的應用程式服務清單。 如果您尚未登入，則系統會提示您這麼做。
 3. 從 [Publish to Azure App Service] \(發行至 Azure App Service\) 對話方塊中，您可以選取現有應用程式服務，或按一下 [新增] 來建立新的應用程式服務。
-4. 在 [建立新的 App Service] 對話方塊中，輸入您的設定：![[發行至 Azure] 功能表選項](media/azure-functions-image7.png)
+4. 在 [ **建立新的 App Service** ] 對話方塊中，輸入您的設定：  ![ Azure Functions 中新的 App Service 視窗的螢幕擷取畫面，其中顯示在 Azure 上建立新 App Service 的設定。](media/azure-functions-image7.png)
 
     |設定  |描述  |
     |---------|---------|
@@ -108,13 +108,13 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
 
 5. 按 [下一步] 來建立儲存體帳戶。 Functions 執行階段需要 Azure 儲存體帳戶。 按一下 [自訂] 來建立一般用途儲存體帳戶，或使用現有儲存體帳戶：
 
-    ![[發行至 Azure] 功能表選項](media/azure-functions-image8.png)
+    ![Azure Functions 中 [設定儲存體帳戶] 畫面的螢幕擷取畫面。 系統會為儲存體帳戶選取 [自訂]，並填入 [帳戶名稱] 和 [帳戶類型]。](media/azure-functions-image8.png)
 
 6. 按一下 [建立] 以在 Azure 中使用這些設定建立函式應用程式和相關資源，並且部署函式專案程式碼。
 
 7. 系統可能會在發行期間使用對話方塊提示您，通知您「更新 Azure 上的函數版本」。 按一下 **[是]**：
 
-    ![[發行至 Azure] 功能表選項](media/azure-functions-image12.png)
+    ![Azure 對話方塊提示字元之更新函式版本的螢幕擷取畫面，要求您「更新 Azure 應用程式設定以符合區域功能版本」。](media/azure-functions-image12.png)
 
 > [!CAUTION]
 > Visual Studio for Mac 7.6 版中有 `FUNCTIONS_EXTENSION_VERSION` 未正確設定為 "beta" 的 Bug，表示您的函數可能未執行。 若要修正此問題，請前往您的[函數應用程式設定](#function-app-settings)，並將 `FUNCTIONS_EXTENSION_VERSION` 從 "-1" 設定為 "beta"。

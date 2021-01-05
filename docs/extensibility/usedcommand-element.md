@@ -1,5 +1,7 @@
 ---
 title: UsedCommand 元素 |Microsoft Docs
+description: UsedCommand 元素可讓 VSPackage 存取另一個 .vsct 檔中定義的命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65030c3fe24c3456b0c4c99a667362d2a4c67703
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d1dcef25413bddbb1eb5c35a47a9dc0d30f4a8f
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698830"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715960"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 項目
 讓 VSPackage 存取另一個 .vsct 檔案中定義的命令。 例如，如果您的 VSPackage 使用由 shell 定義的標準 **複製** 命令， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 您可以將命令新增至功能表或工具列，而不需要重新執行它。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <UsedCommand guid="guidMyCommandGroup" id="MyCommand" />
@@ -32,7 +34,7 @@ ms.locfileid: "80698830"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |guid|必要。 識別命令之 GUID 識別碼組的 GUID。|
 |id|必要。 識別命令之 GUID 識別碼組的識別碼。|
@@ -40,13 +42,13 @@ ms.locfileid: "80698830"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |無||
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[UsedCommands 元素](../extensibility/usedcommands-element.md)|群組 UsedCommand 元素和其他 UsedCommands 群組。|
 

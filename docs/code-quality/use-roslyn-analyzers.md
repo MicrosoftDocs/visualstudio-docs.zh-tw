@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5ca27d44e611ab3b541dfb5992ef37d230513c3
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fc74a556fe6baf21b6270b21951018fc246aa962
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040637"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696625"
 ---
 # <a name="overview"></a>概觀
 
@@ -46,7 +46,7 @@ ms.locfileid: "96040637"
 | 警告 | `warning` | 違規在錯誤清單和命令列組建輸出中會顯示為 *警告* ，但不會造成組建失敗。 | 有問題的程式碼會以綠色波浪線加上底線，並在捲軸中以小綠色方塊標記。 |
 | Info | `suggestion` | 違規會以 *訊息* 形式出現在錯誤清單中，而不是在命令列組建輸出中。 | 有問題的程式碼會以灰色波浪線加上底線，並在捲軸中以小灰色方塊標記。 |
 | Hidden | `silent` | 使用者看不到。 | 使用者看不到。 不過，診斷會回報給 IDE 診斷引擎。 |
-| None | `none` | 已完全隱藏。 | 已完全隱藏。 |
+| 無 | `none` | 已完全隱藏。 | 已完全隱藏。 |
 | 預設 | `default` | 對應于規則的預設嚴重性。 若要判斷規則的預設值為何，請查看屬性視窗。 | 對應于規則的預設嚴重性。 |
 
 如果分析器發現規則違規，就會在 [程式碼編輯器] 中回報它們， (在違規程序代碼) 和 [錯誤清單] 視窗中的 *波浪* 線。
@@ -361,7 +361,7 @@ dotnet_diagnostic.CA2231.severity = warning
 
 - 從 **錯誤清單**
 
-  選取您要隱藏的規則，然後以滑鼠右鍵按一下並選取 [ **Suppress**  >  **在來源/隱藏隱藏** 專案檔中隱藏]。
+  選取您要隱藏的規則，然後以滑鼠右鍵按一下並選取 [   >  **在來源/隱藏隱藏** 專案檔中隱藏]。
 
   - 如果您 **在 [來源] 中** 隱藏，[ **預覽變更** ] 對話方塊隨即開啟，並顯示已新增至原始程式碼的 c # [#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) 或 Visual Basic [#Disable 警告](/dotnet/visual-basic/language-reference/directives/directives) 指示詞的預覽。
 
@@ -382,7 +382,9 @@ dotnet_diagnostic.CA2231.severity = warning
 
 當您在命令列中建立專案時，如果符合下列條件，則會在組建輸出中出現規則違規：
 
-- 分析器會安裝為 NuGet 套件，而不是 VSIX 擴充功能。
+- 您可以使用 .NET SDK 或 NuGet 套件來安裝分析器，而不是以 VSIX 擴充功能來安裝。
+
+  針對使用 .NET SDK 安裝的分析器，您可能需要 [啟用分析器](../code-quality/install-net-analyzers.md)。 針對程式碼樣式，您也可以藉由設定 MSBuild 屬性來 [強制執行組建的程式碼樣式](/dotnet/fundamentals/code-analysis/overview#code-style-analysis) 。
 
 - 專案的程式碼中違反了一或多個規則。
 
@@ -411,7 +413,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的程式碼分析器總覽](../code-quality/roslyn-analyzers-overview.md)
 - [提交程式碼分析器 bug](https://github.com/dotnet/roslyn-analyzers/issues)

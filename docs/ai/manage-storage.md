@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: ae419c67b493ef03b08f6fcf627ad0fbe42ca6d0
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: b145c4acf4047356b8996d09d746679900314f1b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099202"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726562"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>瀏覽儲存體以上傳資料或下載模型和記錄檔
 
@@ -23,16 +23,16 @@ ms.locfileid: "92099202"
 
 ## <a name="to-access-all-data-on-the-remote-machine-or-file-share"></a>若要存取位於遠端電腦或檔案共用的所有資料
 
-1. 開啟 [伺服器總管]****。
+1. 開啟 [伺服器總管]。
 2. 展開遠端電腦或批次 AI 計算內容。
-3. 以滑鼠右鍵按一下 [儲存體]****，然後按一下 [瀏覽]****。
+3. 以滑鼠右鍵按一下 [儲存體]，然後按一下 [瀏覽]。
 
-    ![儲存](media/manage-storage/browse-storage.png)
+    ![展開 [遠端電腦] 資料夾之伺服器總管的螢幕擷取畫面。 資料夾樹狀目錄中會反白顯示儲存體，並在內容功能表上選取 [流覽]。](media/manage-storage/browse-storage.png)
 
 ## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>若要存取位於遠端電腦或檔案共用上的特定作業資料
 
 1. 請開啟[作業歷程記錄](job-details.md)
 2. 選取工作。
-3. 按一下 [工作資料夾]**** 或按一下 [StdOut / Stderr]**** 以快速存取這些重要記錄檔。
+3. 按一下 [工作資料夾] 或按一下 [StdOut / Stderr] 以快速存取這些重要記錄檔。
 
-    ![儲存](media/manage-storage/job-workingfolder.png)
+    ![伺服器總管中 [作業瀏覽器] 視窗的螢幕擷取畫面。 已選取 [train_mnist] 作業，並在 [工作詳細資料] 底下選取 [工作資料夾] 連結。](media/manage-storage/job-workingfolder.png)

@@ -1,5 +1,7 @@
 ---
 title: 堆積配置函式的 Debug 版本 |Microsoft Docs
+description: 使用 C 執行時間程式庫中堆積配置函式的偵錯工具版本。 這些函式的名稱與發行版本相同，並附加 _dbg。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0fde776e9f2bd48aca92c7ba6d7f1fe1e23f01a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4be03c96f9c6ffdf8745ab8890e524ca98b4f4f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738365"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727069"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>堆積配置函式的偵錯版本
 C 執行階段程式庫包含堆積配置 (Heap Allocation) 函式的特殊偵錯版本。 這些函式的名稱與發行版本相同，再加上「_dbg」。 本主題以 `malloc` 和 `_malloc_dbg` 為例，說明 CRT 函式發行版本和 _dbg 版本之間的差異。
@@ -47,6 +49,6 @@ C 執行階段程式庫包含堆積配置 (Heap Allocation) 函式的特殊偵�
 
   未定義 _DEBUG 時，不 `malloc` 會干擾的呼叫，呼叫 `_malloc_dbg` 會解析為，系統會 `malloc` 忽略 [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) 的定義，而且不會提供與配置要求有關的原始程式檔資訊。 因為 `malloc` 沒有區塊型別參數，`_CLIENT_BLOCK` 類型的要求會被當成標準配置處理。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)
+- [CRT 調試技術](../debugger/crt-debugging-techniques.md)

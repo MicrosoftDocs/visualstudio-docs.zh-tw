@@ -1,6 +1,7 @@
 ---
 title: '準備進行 c #、F # 和 VB 專案的調試 |Microsoft Docs'
-ms.custom: seodec18
+description: '取得有關準備對 Visual Studio 專案範本所建立之 c #、F # 和 Visual Basic 專案類型進行偵錯工具的資訊。'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 90e108ddd64a9b520c8ae1d0c86e416dea64e5be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1536c00f68232bb9e4aa92102b605b59ec58b196
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738123"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726848"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>偵錯準備：C#、F# 和 Visual Basic 專案類型
 本章節內的主題說明如何偵錯由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案範本所建立的 C#、F# 和 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案類型。
@@ -47,5 +48,5 @@ ms.locfileid: "72738123"
 
  [Managed 程式碼的調試](../debugger/debugging-managed-code.md) 程式涵蓋以 managed 程式碼撰寫之應用程式的常見偵錯工具問題和技術。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)

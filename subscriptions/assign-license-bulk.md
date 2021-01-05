@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 10/22/2020
 ms.topic: how-to
 description: 瞭解系統管理員如何使用「大量新增」功能或 Microsoft Azure Active Directory 群組，將授權指派給多個「訂閱者」
-ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: e9d4cd5c7e73cdc3b71768a498a7c02546d3e1fc
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467540"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696614"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
@@ -35,7 +35,7 @@ ms.locfileid: "92467540"
    > [!NOTE]
    > 請一律下載這個範本的最新版本。 如果您使用舊版本，則大量上傳可能會失敗。
 
-1. 在 Excel 試算表中，請將您想要指派訂用帳戶之個人的資訊填入欄位中。  ( *參考* 是選擇性欄位。在完成之後，) 將檔案儲存在本機。
+1. 在 Excel 試算表中，請將您想要指派訂用帳戶之個人的資訊填入欄位中。  (*參考* 是選擇性欄位。在完成之後，) 將檔案儲存在本機。
 
     > [!NOTE]
     > 範本中的其中一個欄位可讓系統管理員啟用或停用訂閱者下載軟體的能力。  停用下載也會停用其產品金鑰的存取權。
@@ -48,11 +48,11 @@ ms.locfileid: "92467540"
     - 請確定所有必要的欄位都已完成。 
     - 檢查 **錯誤訊息** 資料行。  如果列出任何錯誤，請先解決這些錯誤，然後再嘗試上傳檔案。 
 
-1. 回到 Visual Studio 訂閱管理入口網站。 在 [ **上傳多個訂閱者** ] 對話方塊中，選取 **[流覽]** 。
+1. 回到 Visual Studio 訂閱管理入口網站。 在 [ **上傳多個訂閱者** ] 對話方塊中，選取 **[流覽]**。
    > [!div class="mx-imgBorder"]
    > ![瀏覽至先前儲存的範本，以上傳多位訂閱者](media/bulk-add-browse-saved-template.png "您可以流覽至檔案位置，或將它拖放到此對話方塊中。")
 
-1. 流覽至您儲存的 Excel 檔案，然後選取 **[確定]** 。
+1. 流覽至您儲存的 Excel 檔案，然後選取 **[確定]**。
    > [!div class="mx-imgBorder"]
    > ![上傳 Excel 範本，以上傳多位訂閱者](media/bulk-upload-subscribers.png "包含您資料的範本會出現在這裡。 選取 [確定] 以開始上傳。")
 
@@ -66,9 +66,9 @@ ms.locfileid: "92467540"
    1. 開啟您所建立的 Excel 檔案，更正問題，然後儲存檔案。
    0. 返回系統管理入口網站並關閉錯誤訊息。
    0. 選擇 [新增]  。
-   0. 選取 [ **大量新增** ]。
-   0. 因為您已經儲存 Excel 檔案，所以不需要下載範本。  選取 **[流覽]** ，找出您剛剛儲存的檔案，然後選取 [ **開啟** ]。
-   0. 選取 [確定]  。
+   0. 選取 [ **大量新增**]。
+   0. 因為您已經儲存 Excel 檔案，所以不需要下載範本。  選取 **[流覽]**，找出您剛剛儲存的檔案，然後選取 [ **開啟**]。
+   0. 選取 [確定]。
 
 
     上傳成功時，您會看到訂閱者清單和確認訊息。
@@ -86,7 +86,7 @@ ms.locfileid: "92467540"
 > - 群組至少必須包含一個成員。  不支援空白群組。
 > - 群組的使用者必須少於1000個。 
 > - 所有使用者都必須在群組的最上層。  「不支援」巢狀群組。
-> - 僅支援信任的協定。
+> - 僅支援信任的協定。  (只能信任可 ' overallocate ' 訂用帳戶的協定。 ) 
 > - 群組的所有成員都必須有與其 Azure AD 帳戶相關聯的電子郵件地址。
 > - 使用 Azure AD 群組新增的訂閱不支援通知的個別電子郵件地址。  
 
@@ -111,7 +111,7 @@ ms.locfileid: "92467540"
    > [!div class="mx-imgBorder"]
    > ![選擇您的 Azure AD 群組](_img/assign-license-bulk/bulk-add-aad-details.png "選擇您的 Azure AD 組名，以從該群組新增訂閱者。")
 
-6. 選取 [ **新增** ]，然後 **確認** 。 
+6. 選取 [ **新增** ]，然後 **確認**。 
 
 7. 若要查看已新增的群組，請滾動至使用者清單的底部。  
 
@@ -130,15 +130,21 @@ ms.locfileid: "92467540"
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>問：我可以編輯 Azure AD 群組中新增的個人訂閱者詳細資料嗎？  
 答：否--若要修改個別訂閱者的資訊，您必須將其從 Azure AD 安全性群組中移除，並個別指派訂用帳戶給他們。  
 
+### <a name="q-why-cant-i-see-the-option-to-use-azure-active-directory-groups-to-add-subscribers"></a>問：為什麼看不到使用 Azure Active Directory 群組來加入訂閱者的選項？
+答：這項功能目前僅適用于具有信任協定的組織。  選取 [ **詳細資料** ] 按鈕，以顯示您的合約資訊。
+
+   > [!div class="mx-imgBorder"]
+   > ![按一下 [詳細資料] 按鈕](_img/assign-license-bulk/bulk-add-agreement.png "按一下 [詳細資料] 按鈕，以查看您擁有的合約類型")
+
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>問：我已將某人新增至我的 Azure AD 安全性群組，但我在訂用帳戶管理入口網站中看不到他們新增的帳戶，且他們沒有訂用帳戶。 為什麼不用？  
 答：根據組織設定 Azure AD 的方式，您可能會在新增使用者之前看到最多24小時的延遲。 如果超過24小時，請 [聯絡支援人員](https://visualstudio.microsoft.com/support/support-overview-vs)。  
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 - 只有一或兩個訂閱者要新增嗎？  參閱[新增單一使用者](assign-license.md)
 - 需要協助嗎？ 請聯絡 [Visual Studio 管理和訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)。

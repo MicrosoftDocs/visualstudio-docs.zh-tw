@@ -1,5 +1,7 @@
 ---
 title: 原始檔控制外掛程式詞彙 |Microsoft Docs
+description: 本文包含適用于原始檔控制外掛程式 SDK 檔的實用術語和定義。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3835561eb63fa2a4a71174732c07ecd73f1df5d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5b878efd9d937f532526ed3b49ad41228749b47
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699902"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715401"
 ---
 # <a name="source-control-plug-in-glossary"></a>原始檔控制外掛程式字彙表
 下列有用的詞彙和定義適用于原始檔控制外掛程式 SDK 檔。
@@ -50,5 +52,5 @@ ms.locfileid: "80699902"
 
  修訂檔案或一組檔案的歷程記錄中已認可的變更。 修訂是持續變更專案中的一個快照集。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)

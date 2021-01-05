@@ -1,5 +1,7 @@
 ---
 title: 訂閱事件 |Microsoft Docs
+description: 瞭解如何建立工具視窗，以回應 Visual Studio SDK 中執行中檔資料表內的事件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,24 +13,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aefe2efce897aefc26f63835844b0cc705fb5b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c739dad7be8d2a000662eca478bc117699694c8a
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699692"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715869"
 ---
 # <a name="subscribing-to-an-event"></a>訂閱事件
 本逐步解說將說明如何建立工具視窗，以回應執行中的檔資料表中的事件 (RDT) 。 工具視窗會裝載可執行檔使用者控制項 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> 。 方法會將 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> 介面連接到事件。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="subscribing-to-rdt-events"></a>訂閱 RDT 事件
 
 #### <a name="to-create-an-extension-with-a-tool-window"></a>使用工具視窗建立擴充功能
 
-1. 使用 VSIX 範本來建立名為 **RDTExplorer** 的專案，並新增名為 **RDTExplorerWindow**的自訂工具視窗專案範本。
+1. 使用 VSIX 範本來建立名為 **RDTExplorer** 的專案，並新增名為 **RDTExplorerWindow** 的自訂工具視窗專案範本。
 
      如需使用工具視窗建立延伸模組的詳細資訊，請參閱 [使用工具視窗建立擴充](../extensibility/creating-an-extension-with-a-tool-window.md)功能。
 
