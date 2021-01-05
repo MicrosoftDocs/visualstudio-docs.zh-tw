@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Enterprise 工作負載和元件識別碼
 titleSuffix: ''
-description: 使用工作負載和元件識別碼透過命令列安裝 Visual Studio，或是在 VSIX 資訊清單中指定為相依性
+description: 使用 Visual Studio Enterprise 工作負載和元件識別碼從命令列安裝 Visual Studio，或在 VSIX 資訊清單中指定相依性。
 keywords: ''
 author: ornellaalt
 ms.author: ornella
@@ -16,12 +16,12 @@ ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 4e8b3c03caa55cd309623d5191925a0d13360999
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: aa5e9ea62d02d900eab91d68e4df008431303007
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437439"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846886"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Visual Studio Enterprise 元件目錄
 

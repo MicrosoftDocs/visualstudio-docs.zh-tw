@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b32b402e2bbf85cf5c028ec2dc94821ec463644
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94674774"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761260"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>附加至在 Docker 容器上執行的進程 
 
@@ -34,7 +34,7 @@ ms.locfileid: "94674774"
 
 1. 在 Visual Studio 中，選取 [ **Debug > 附加至進程 (CTRL + ALT + P)** 以開啟 [ **附加至進程** ] 對話方塊。
 
-![附加至進程功能表](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
+![[附加至進程] Visual Studio 對話方塊的螢幕擷取畫面，其中顯示 Docker (Linux 容器) 的連線類型。](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
 
 2. 將連線 **類型** 設定為 **Docker (Linux 容器)**。
 3. 選取 [**尋找**]，以透過 [**選取 Docker 容器**] 對話方塊設定 **連接目標**。
@@ -63,7 +63,7 @@ ms.locfileid: "94674774"
 
 4. 從 **可用** 的程式清單中選擇對應的容器進程，然後選取 [ **附加** ] 以開始在 Visual Studio 中進行 c # 容器進程的偵錯工具！
 
-    ![完成的 Docker 附加功能表](../debugger/media/docker-attach-complete.png "完成的 Linux Docker 附加功能表")
+    ![Visual Studio 中 [附加至進程] 對話方塊的螢幕擷取畫面。連線類型設定為 [Docker (Linux 容器) ]，並已選取 [dotnet] 進程。](../debugger/media/docker-attach-complete.png "完成的 Linux Docker 附加功能表")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a>附加至在 Windows Docker 容器上執行的進程
 
@@ -76,7 +76,7 @@ ms.locfileid: "94674774"
 
 1. 在 Visual Studio 中，選取 [ **Debug] > [附加至進程** ] (或 **CTRL + ALT + P**) 開啟 [ **附加至進程** ] 對話方塊。
 
-   ![附加至進程功能表](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
+   ![[附加至進程] Visual Studio 對話方塊的螢幕擷取畫面，其中顯示 Docker (Windows 容器) 的連線類型。](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
 
 2. 將連線 **類型** 設定為 **Docker (Windows 容器)**。
 3. 選取 [**尋找**]，以使用 [**選取 Docker 容器**] 對話方塊設定 **連接目標**。
@@ -93,6 +93,6 @@ ms.locfileid: "94674774"
 
 4. 從 **可用的進程** 清單中選擇對應的容器進程，然後選取 [ **附加** ] 開始對 c # 容器進程進行偵錯工具。
 
-    ![完成的 Docker 附加功能表](../debugger/media/docker-attach-complete-windows.png "完成的 Windows Docker 附加功能表")
+    ![Visual Studio 中 [附加至進程] 對話方塊的螢幕擷取畫面。連線類型設定為 [Docker (Windows 容器) ]，並已選取 dotnet.exe 進程。](../debugger/media/docker-attach-complete-windows.png "完成的 Windows Docker 附加功能表")
 
-5.  從可用的進程清單中選擇對應的容器進程，然後選擇 [ **附加** ] 開始對 c # 容器進程進行偵錯工具。
+5. 從可用的進程清單中選擇對應的容器進程，然後選擇 [ **附加** ] 開始對 c # 容器進程進行偵錯工具。

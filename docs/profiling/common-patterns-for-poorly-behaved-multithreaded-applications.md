@@ -1,5 +1,6 @@
 ---
 title: 效能不良之多執行緒應用程式的常見模式
+description: 瞭解 Visual Studio 平行存取視覺化檢視中所含效能不良之多執行緒應用程式的常見模式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f45c22684ef737de7235caebd4ad0b1b4189155
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808938"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815785"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>行為錯誤之多執行緒應用程式的一般模式
 
@@ -37,17 +38,17 @@ ms.locfileid: "90808938"
 
 ## <a name="uneven-workload-distribution"></a>工作負載分佈不均
 
-![工作負載不平均](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![並行視覺化中平行線程的工作負載圖形螢幕擷取畫面。 執行緒會在不同的時間結束，顯示階梯模式。](../profiling/media/unevenworkload_1.png)
 
 當應用程式中數個平行執行緒之間出現不規則的工作分佈時，隨著每個執行緒完成其工作，便會顯示典型的階梯模式，如上圖所示。 並行視覺化檢視所顯示每個並行執行緒的開始時間通常非常接近。 不過，這些執行緒通常會以不規則的方式，而不是同時結束的方式結束。 此模式表示一組平行執行緒之間的工作分佈不規則，而這可能會導致效能降低。 這類問題的最佳方法是重新評估演算法如何在平行執行緒之間分割工作。
 
 如下圖所示，並行視覺化檢視也可以在 [CPU 使用率檢視] 中逐步降低的 CPU 使用率顯示出此徵兆。
 
-![工作負載不平均](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
+![並行視覺化程式中 CPU 使用率視圖的螢幕擷取畫面，其中顯示 CPU 使用率圖形結尾的階梯模式。](../profiling/media/unevenworkload_2.png)
 
 ## <a name="oversubscription"></a>過度訂閱
 
-![過度訂閱](../profiling/media/oversubscription.png "過度訂閱")
+![並行視覺化中所有使用中線程的工作負載圖形螢幕擷取畫面。 圖例會顯示花費在執行和搶佔的時間量。](../profiling/media/oversubscription.png)
 
 在過度訂閱的案例中，處理序中的作用中執行緒數目大於系統上可用的邏輯核心數目。 上圖顯示過度訂閱的結果，在所有作用中的執行緒中都有顯著的先佔級區。 此外，圖例顯示大部分的時間都花費在先佔 (在本例中為 84%)。 這可能表示處理序正要求系統執行比邏輯核心數還多的並行執行緒。 不過，這也可能表示系統上的其他處理序正使用認定為此處理序可用的資源。
 
@@ -69,6 +70,6 @@ ms.locfileid: "90808938"
 
 當應用程式以先到先服務的順序取得鎖定時，以及當鎖定的抵達速率高於取得速率時，就會發生鎖定護送。 這兩項條件的組合會導致鎖定的要求開始堵塞。 解決這個問題的一個方法是使用「不公平」的鎖定，或使用能提供第一個執行緒存取權以找出處於未鎖定狀態之鎖定的鎖定。 上圖顯示這個護送行為。 若要解決這個問題，請嘗試減少同步處理物件的爭用，並嘗試使用不公平的鎖定。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [執行緒檢視](../profiling/threads-view-parallel-performance.md)

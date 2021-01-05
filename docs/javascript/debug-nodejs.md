@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 369fa3c080705f552aed25ecef6bd87a3db43a64
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285188"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815616"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行偵錯
 
@@ -29,13 +29,13 @@ ms.locfileid: "85285188"
 
 1. 當您的專案在 Visual Studio 中開啟時，開啟伺服器端 JavaScript 檔案 (例如 *server.js*)，然後按一下左側的裝訂邊以設定中斷點：
 
-    ![設定中斷點](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![顯示 JavaScript 程式碼 Visual Studio 程式碼視窗的螢幕擷取畫面。 左邊裝訂邊中的紅色點表示已設定中斷點。](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。
 
-1. 若要執行您的應用程式，請按 **F5** ([偵錯]**** > [開始偵錯]****)。
+1. 若要執行您的應用程式，請按 **F5** ([偵錯] > [開始偵錯])。
 
-    偵錯工具會在您設定的中斷點處暫停 (目前的陳述式以黃色標示)。 現在，您可以將滑鼠指標停留在目前位於範圍內的變數上，並使用偵錯工具視窗 (如 [區域變數]**** 和 [監看式]**** 視窗)，藉以檢查應用程式狀態。
+    偵錯工具會在您設定的中斷點處暫停 (目前的陳述式以黃色標示)。 現在，您可以將滑鼠指標停留在目前位於範圍內的變數上，並使用偵錯工具視窗 (如 [區域變數] 和 [監看式] 視窗)，藉以檢查應用程式狀態。
 
 1. 按 **F5** 繼續執行應用程式。
 
@@ -78,7 +78,7 @@ Visual Studio 僅提供適用于 Chrome 和 Internet Explorer 的用戶端偵錯
 2. 在啟用偵錯工具的情況下啟動您的瀏覽器。
 
     ::: moniker range=">=vs-2019"
-    從 Visual Studio 2019 開始，您可以 `--remote-debugging-port=9222` 在瀏覽器啟動時設定旗標，方法是從 [**調試**程式] 工具列中選取 **[流覽 ...]** >，然後選擇 [**加入**]，然後在 [**引數**] 欄位中設定旗標。 針對瀏覽器使用不同的易記名稱，例如 **具有** 偵錯工具的邊緣和 **具有調試**程式的 Chrome。 如需詳細資訊，請參閱[版本資訊](/visualstudio/releases/2019/release-notes-v16.2)。
+    從 Visual Studio 2019 開始，您可以 `--remote-debugging-port=9222` 在瀏覽器啟動時設定旗標，方法是從 [**調試** 程式] 工具列中選取 **[流覽 ...]** >，然後選擇 [**加入**]，然後在 [**引數**] 欄位中設定旗標。 針對瀏覽器使用不同的易記名稱，例如 **具有** 偵錯工具的邊緣和 **具有調試** 程式的 Chrome。 如需詳細資訊，請參閱[版本資訊](/visualstudio/releases/2019/release-notes-v16.2)。
 
     ![將您的瀏覽器設定為在啟用偵錯工具的情況下開啟](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
@@ -92,7 +92,7 @@ Visual Studio 僅提供適用于 Chrome 和 Internet Explorer 的用戶端偵錯
     ::: moniker-end
 
     ::: moniker range="vs-2017"
-    從 Windows [開始]**** 按鈕開啟 [執行]**** 命令 (按一下滑鼠右鍵，並選擇 [執行]****)，然後輸入下列命令：
+    從 Windows [開始] 按鈕開啟 [執行] 命令 (按一下滑鼠右鍵，並選擇 [執行])，然後輸入下列命令：
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -107,13 +107,13 @@ Visual Studio 僅提供適用于 Chrome 和 Internet Explorer 的用戶端偵錯
 
 1. 切換至 Visual Studio，然後在原始程式碼中設定中斷點，其可能是 JavaScript 檔案、TypeScript 檔案或 JSX 檔案。  (在允許中斷點的程式程式碼中設定中斷點，例如 return 語句或 var 宣告。 ) 
 
-    ![設定中斷點](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Visual Studio 程式碼視窗的螢幕擷取畫面。 選取 [return] 語句，左邊裝訂邊中的紅色點表示已設定中斷點。](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    若要在轉換檔中尋找特定的程式碼，請使用**Ctrl** + **F** (**編輯**  >  **尋找和取代**  >  **快速尋找**) 。
+    若要在轉換檔中尋找特定的程式碼，請使用 **Ctrl** + **F** (**編輯**  >  **尋找和取代**  >  **快速尋找**) 。
 
-    針對用戶端程式代碼，若要在 TypeScript 檔案、 *vue*或 JSX 檔案中叫用中斷點，通常需要使用 [來源對應](#generate_source_maps)。 必須正確設定來源對應，以支援 Visual Studio 中的調試。
+    針對用戶端程式代碼，若要在 TypeScript 檔案、 *vue* 或 JSX 檔案中叫用中斷點，通常需要使用 [來源對應](#generate_source_maps)。 必須正確設定來源對應，以支援 Visual Studio 中的調試。
 
-2. 在 Visual Studio 中選取您的目標瀏覽器做為偵錯工具目標，然後按下**Ctrl** + **F5** (**debug**  >  **啟動但不) 調試**程式，以在瀏覽器中執行應用程式。
+2. 在 Visual Studio 中選取您的目標瀏覽器做為偵錯工具目標，然後按下 **Ctrl** + **F5** (**debug**  >  **啟動但不) 調試** 程式，以在瀏覽器中執行應用程式。
 
     ::: moniker range=">=vs-2019"
     如果您建立了具有易記名稱的瀏覽器設定，請選擇該設定做為您的 debug 目標。
@@ -124,14 +124,14 @@ Visual Studio 僅提供適用于 Chrome 和 Internet Explorer 的用戶端偵錯
 3. 選擇 [ **Debug**  >  **附加至進程**]。
 
     > [!TIP]
-    > 從 Visual Studio 2017 開始，當您第一次依照下列步驟附加至進程之後，您可以選擇 [ **Debug**重新  >  **附加至進程**]，快速地重新附加至相同的進程。
+    > 從 Visual Studio 2017 開始，當您第一次依照下列步驟附加至進程之後，您可以選擇 [ **Debug** 重新  >  **附加至進程**]，快速地重新附加至相同的進程。
 
 4. 在 [ **附加至進程** ] 對話方塊中，取得您可以附加之瀏覽器實例的篩選清單。
     ::: moniker range=">=vs-2019"
-    在 Visual Studio 2019 中，為您的目標瀏覽器選擇正確的偵錯工具、 **javascript (Chrome) ** 或 **javascript (Microsoft Edge-Chromium) ** 在 [ **附加至** ] 欄位中，在 [篩選] 方塊中輸入 **Chrome** 或 **Edge** 以篩選搜尋結果。
+    在 Visual Studio 2019 中，為您的目標瀏覽器選擇正確的偵錯工具、 **javascript (Chrome)** 或 **javascript (Microsoft Edge-Chromium)** 在 [ **附加至** ] 欄位中，在 [篩選] 方塊中輸入 **Chrome** 或 **Edge** 以篩選搜尋結果。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在 Visual Studio 2017 中，選擇 [**附加至**] 欄位中的 [ **Webkit 程式碼**]，在 [篩選] 方塊中輸入**chrome**以篩選搜尋結果。
+    在 Visual Studio 2017 中，選擇 [**附加至**] 欄位中的 [ **Webkit 程式碼**]，在 [篩選] 方塊中輸入 **chrome** 以篩選搜尋結果。
     ::: moniker-end
 
 5. 在此範例中，選取具有正確主機埠 (localhost 的瀏覽器進程) ，然後選取 [ **附加**]。
@@ -180,16 +180,16 @@ Visual Studio 能夠在 JavaScript 來源檔案上使用及產生來源對應。
 
 * Visual Studio 中的 TypeScript 專案預設會為您產生來源對應。 如需詳細資訊，請參閱 [使用檔案上的 tsconfig.js設定來源對應](#configure_source_maps)。
 
-* 在 JavaScript 專案中，您可以使用搭配程式（例如 webpack）和編譯器（例如 TypeScript 編譯器 (或 Babel) ）來產生來源對應，以將其新增至您的專案。 針對 TypeScript 編譯器，您也必須 * 在檔案上加入tsconfig.js* ，並設定 `sourceMap` 編譯器選項。 如需示範如何使用基本 webpack 組態來執行這項作業的範例，請參閱[使用 React 建立 Node.js 應用程式](../javascript/tutorial-nodejs-with-react-and-jsx.md)。
+* 在 JavaScript 專案中，您可以使用搭配程式（例如 webpack）和編譯器（例如 TypeScript 編譯器 (或 Babel) ）來產生來源對應，以將其新增至您的專案。 針對 TypeScript 編譯器，您也必須 *在檔案上加入tsconfig.js* ，並設定 `sourceMap` 編譯器選項。 如需示範如何使用基本 webpack 組態來執行這項作業的範例，請參閱[使用 React 建立 Node.js 應用程式](../javascript/tutorial-nodejs-with-react-and-jsx.md)。
 
 > [!NOTE]
 > 如果您不熟悉來源對應，請閱讀 [Introduction to JavaScript Source Maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) (JavaScript 來源對應簡介) 再繼續進行。 
 
 若要設定來源對應的進階設定，請使用 *tsconfig.json* 或 TypeScript 專案的專案設定，但不要同時使用這兩者。
 
-若要使用 Visual Studio 來啟用偵錯工具，您必須確定在所產生的來源對應中，) 至來源檔案的參考 (s 正確 (這可能需要測試) 。 例如，如果您使用 webpack，則來源對應檔案中的參考會包含 *webpack:///* 前置詞，以防止 Visual Studio 尋找 TYPESCRIPT 或 JSX 原始程式檔。 具體而言，當您更正此錯誤以進行調試時，必須將 (來源檔案的參考從*webpack:///./app.tsx*之類的東西（例如，/app.tsx）變更為 *./app.tsx*，如此就能 (路徑相對於您的原始程式檔) ，來進行的調試) *程式*。 下列範例示範如何在 webpack 中設定來源對應，這是最常見的 browserify 之一，因此可搭配 Visual Studio 使用。
+若要使用 Visual Studio 來啟用偵錯工具，您必須確定在所產生的來源對應中，) 至來源檔案的參考 (s 正確 (這可能需要測試) 。 例如，如果您使用 webpack，則來源對應檔案中的參考會包含 *webpack:///* 前置詞，以防止 Visual Studio 尋找 TYPESCRIPT 或 JSX 原始程式檔。 具體而言，當您更正此錯誤以進行調試時，必須將 (來源檔案的參考從 *webpack:///./app.tsx* 之類的東西（例如，/app.tsx）變更為，如此就能 (路徑相對於您的原始程式檔) ，來進行的調試) *程式*。 下列範例示範如何在 webpack 中設定來源對應，這是最常見的 browserify 之一，因此可搭配 Visual Studio 使用。
 
- (僅限 Webpack) 如果您要在 JSX 檔的 TypeScript 中設定中斷點 (而不是轉換 JavaScript 檔案) ，則必須更新 Webpack 設定。 例如，在 *webpack-config.js*中，您可能需要取代下列程式碼：
+ (僅限 Webpack) 如果您要在 JSX 檔的 TypeScript 中設定中斷點 (而不是轉換 JavaScript 檔案) ，則必須更新 Webpack 設定。 例如，在 *webpack-config.js* 中，您可能需要取代下列程式碼：
 
 ```javascript
   output: {
@@ -197,7 +197,7 @@ Visual Studio 能夠在 JavaScript 來源檔案上使用及產生來源對應。
   },
 ```
 
-取代為此程式碼：
+使用此程式碼取代：
 
 ```javascript
   output: {
@@ -242,13 +242,13 @@ Visual Studio 能夠在 JavaScript 來源檔案上使用及產生來源對應。
 
 ### <a name="configure-source-maps-using-project-settings-typescript-project"></a>使用專案設定 (TypeScript 專案) 設定來源對應
 
-您也可以使用專案屬性來設定來源對應設定，方法是以滑鼠右鍵按一下專案，然後選擇 [專案] > [屬性] > [TypeScript 建置] > [偵錯]****。
+您也可以使用專案屬性來設定來源對應設定，方法是以滑鼠右鍵按一下專案，然後選擇 [專案] > [屬性] > [TypeScript 建置] > [偵錯]。
 
 您可以使用下列專案設定。
 
-* **產生來源**對應 (等同于) *上tsconfig.js*中的**sourceMap** ：產生對應*的*對應檔案。
-* **指定來源對應的根目錄** (相當於) 中*tsconfig.js*的**mapRoot** ：指定偵錯工具應尋找對應檔案的位置，而不是所產生的位置。 如果執行階段 *.map* 檔案必須與 .js 檔案位於不同的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至對應檔案所在的位置。
-* **指定 typescript 檔案的根目錄** (相當於) 中*tsconfig.js*的**sourceRoot** ：指定偵錯工具應尋找 TypeScript 檔案的位置，而不是來源位置。 如果執行階段原始檔所在位置必須不同於設計階段時的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至原始檔所在的位置。
+* **產生來源** 對應 (等同于) *上tsconfig.js* 中的 **sourceMap** ：產生對應 *的* 對應檔案。
+* **指定來源對應的根目錄** (相當於) 中 *tsconfig.js* 的 **mapRoot** ：指定偵錯工具應尋找對應檔案的位置，而不是所產生的位置。 如果執行階段 *.map* 檔案必須與 .js 檔案位於不同的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至對應檔案所在的位置。
+* **指定 typescript 檔案的根目錄** (相當於) 中 *tsconfig.js* 的 **sourceRoot** ：指定偵錯工具應尋找 TypeScript 檔案的位置，而不是來源位置。 如果執行階段原始檔所在位置必須不同於設計階段時的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至原始檔所在的位置。
 
 ## <a name="debug-javascript-in-dynamic-files-using-razor-aspnet"></a>使用 Razor (ASP.NET) 偵錯動態檔案中的 JavaScript
 
@@ -262,19 +262,19 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的偵錯支援。
 不過，您無法在使用 Razor 語法 (cshtml，vbhtml) 產生的檔案上自動叫用中斷點。 偵錯這類檔案時有兩種方法可供使用：
 
 * **將語句放在 `debugger;` 您要中斷的位置**：這會導致動態腳本停止執行，並在建立時立即開始偵錯工具。
-* **載入頁面，並在 Visual Studio 上開啟動態**檔：您必須在偵錯工具時開啟動態檔案、設定中斷點，然後重新整理頁面，才能使用此方法。 您可以根據使用的是 Chrome 或 Internet Explorer，利用下列其中一個策略來尋找檔案：
+* **載入頁面，並在 Visual Studio 上開啟動態** 檔：您必須在偵錯工具時開啟動態檔案、設定中斷點，然後重新整理頁面，才能使用此方法。 您可以根據使用的是 Chrome 或 Internet Explorer，利用下列其中一個策略來尋找檔案：
 
-   針對 Chrome，請移至 [方案總管] > [指令碼文件] > [您的頁面名稱]****。
+   針對 Chrome，請移至 [方案總管] > [指令碼文件] > [您的頁面名稱]。
 
     > [!NOTE]
-    > 使用 Chrome 時，您可能會收到訊息， ** \<script> 標記之間沒有任何來源可供**使用。 這是正常的，您可以繼續偵錯。
+    > 使用 Chrome 時，您可能會收到訊息， **\<script> 標記之間沒有任何來源可供** 使用。 這是正常的，您可以繼續偵錯。
 
    ::: moniker range=">=vs-2019"
    針對 Microsoft Edge (Chromium) ，請使用與 Chrome 相同的程式。
    ::: moniker-end
 
    ::: moniker range="vs-2017"
-   針對 Internet Explorer，請移至 [方案總管] > [指令碼文件] > [Windows Internet Explorer] > [您的頁面名稱]****。
+   針對 Internet Explorer，請移至 [方案總管] > [指令碼文件] > [Windows Internet Explorer] > [您的頁面名稱]。
    ::: moniker-end
 
 如需詳細資訊，請參閱 [Client-side debugging of ASP.NET projects in Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/) (Google Chrome 中 ASP.NET 專案的用戶端偵錯)。

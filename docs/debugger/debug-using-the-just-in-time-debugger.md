@@ -1,5 +1,7 @@
 ---
 title: 使用即時偵錯工具進行偵錯工具 |Microsoft Docs
+description: 使用 Visual Studio 中的即時偵錯工具來進行 Debug 錯。 即時偵錯工具可以在應用程式錯誤或損毀時自動啟動 Visual Studio。
+ms.custom: SEO-VS-2020
 ms.date: 09/24/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a03afa64d19e3ccd0efbb170b4305049f6bfee30
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350572"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761338"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>使用 Visual Studio 中的即時偵錯工具進行偵錯工具
 
@@ -35,13 +37,13 @@ ms.locfileid: "85350572"
 
 **若要啟用或停用即時調試：**
 
-1. 在 [**工具**] 或 [**調試**] 功能表上，選取 [立即偵測**選項**]  >  **Debugging**  >  ** **。
+1. 在 [**工具**] 或 [**調試**] 功能表上，選取 [立即偵測 **選項**]  >    >  ****。
 
    ![啟用或停用 JIT 偵錯](../debugger/media/dbg-jit-enable-or-disable.png "啟用或停用 JIT 偵錯")
 
-1. 在 [ **為這些類型的程式碼啟用即時調試** 程式] 方塊中，選取您要對其進行即時偵錯工具的程式碼類型： **Managed**、 **Native**和/或 **腳本**。
+1. 在 [ **為這些類型的程式碼啟用即時調試** 程式] 方塊中，選取您要對其進行即時偵錯工具的程式碼類型： **Managed**、 **Native** 和/或 **腳本**。
 
-1. 選取 [確定]  。
+1. 選取 [確定]。
 
 如果您啟用即時偵錯工具，但不會在應用程式損毀或發生錯誤時開啟，請參閱 [疑難排解及時](#jit_errors)偵測。
 
@@ -69,7 +71,7 @@ ms.locfileid: "85350572"
 
     請確定不要刪除或變更任何其他的登錄機碼。
 
-5. 關閉 [登錄編輯程式]**** 視窗。
+5. 關閉 [登錄編輯程式] 視窗。
 
 ## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>啟用 Windows Form 的即時偵錯工具
 
@@ -79,7 +81,7 @@ ms.locfileid: "85350572"
 
 若要啟用即時偵錯工具，而不是標準的 Windows Form 錯誤處理，請新增下列設定：
 
-- 在 `system.windows.forms` *machine.config*或* \<app name>.exe.config*檔案的區段中，將值設定 `jitDebugging` 為 `true` ：
+- 在 `system.windows.forms` *machine.config* 或 *\<app name>.exe.config* 檔案的區段中，將值設定 `jitDebugging` 為 `true` ：
 
     ```xml
     <configuration>
@@ -93,18 +95,18 @@ ms.locfileid: "85350572"
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
    ```
 
-   如需詳細資訊，請參閱<xref:System.Diagnostics.DebuggableAttribute>。
+   如需詳細資訊，請參閱 <xref:System.Diagnostics.DebuggableAttribute> 。
 
 ## <a name="use-just-in-time-debugging"></a><a name="BKMK_Using_JIT"></a>使用即時調試
 這個範例會逐步引導您在應用程式擲回錯誤時進行即時的偵錯工具。
 
 - 您必須安裝 Visual Studio，才能遵循這些步驟。 如果您沒有 Visual Studio，可以下載免費的 [Visual Studio Community 版本](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)。
 
-- 請確定已在 [**工具**選項] 中即時偵錯工具[啟用](#BKMK_Enabling)即時偵測  >  **Options**  >  **Debugging**  >  ** **。
+- 請確定已在 [**工具** 選項] 中即時偵錯工具 [啟用](#BKMK_Enabling)即時偵測  >    >    >  ****。
 
 在此範例中，您會在擲回 [NullReferenceException](/dotnet/api/system.nullreferenceexception)的 Visual Studio 中建立 c # 主控台應用程式。
 
-1. 在 Visual Studio 中，建立 c # 主控台應用程式 **， (**  >  **New**  >  **Project**  >  名為 ThrowsNullException 的新專案**Visual c #**  >  **主控台應用程式**) 。 *ThrowsNullException* 如需在 Visual Studio 中建立專案的詳細資訊，請參閱 [逐步解說：建立簡單的應用程式](../get-started/csharp/tutorial-wpf.md)。
+1. 在 Visual Studio 中，建立 c # 主控台應用程式 **， (**  >    >    >  名為 ThrowsNullException 的新專案 **Visual c #**  >  **主控台應用程式**) 。  如需在 Visual Studio 中建立專案的詳細資訊，請參閱 [逐步解說：建立簡單的應用程式](../get-started/csharp/tutorial-wpf.md)。
 
 1. 當專案在 Visual Studio 中開啟時，開啟 *Program.cs* 檔案。 以下列程式碼取代主要 ( # A1 方法，它會將一行列印到主控台，然後擲回 NullReferenceException：
 
@@ -116,7 +118,7 @@ ms.locfileid: "85350572"
    }
    ```
 
-1. 若要建立方案，請選擇 [ **Debug** (預設) 或**發行**設定]，然後選取 [**組建**  >  **重建方案**]。
+1. 若要建立方案，請選擇 [ **Debug** (預設) 或 **發行** 設定]，然後選取 [**組建**  >  **重建方案**]。
 
    > [!NOTE]
    > - 選擇 [ **Debug** configuration] 以取得完整的偵錯工具。
@@ -128,24 +130,24 @@ ms.locfileid: "85350572"
 
    您應該會看到下列命令視窗：
 
-   ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
+   ![ThrowsNullException.exe 的主控台螢幕擷取畫面，其會擲回未處理的 null 參考例外狀況 (NullReferenceException) 。](../debugger/media/throwsnullexceptionconsole.png)
 
 1. [ **選擇即時偵錯工具** ] 對話方塊隨即開啟。
 
-   ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
+   ![[選擇即時偵錯工具] 對話方塊的螢幕擷取畫面，此對話方塊會在例外狀況出現在 ThrowsNullException.exe 主控台視窗中時出現。](../debugger/media/justintimedialog.png)
 
-   在 [**可用的調試**程式] 底下，選取 [**新增 \<your preferred Visual Studio version/edition> 實例**] （如果尚未選取）。
+   在 [**可用的調試** 程式] 底下，選取 [**新增 \<your preferred Visual Studio version/edition> 實例**] （如果尚未選取）。
 
-1. 選取 [確定]  。
+1. 選取 [確定]。
 
    ThrowsNullException 專案會在 Visual Studio 的新實例中開啟，並在擲回例外狀況的那一行停止執行：
 
-   ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
+   ![Visual Studio 中 ThrowsNullException 專案的螢幕擷取畫面，其中顯示擲回例外狀況的原始程式程式碼。](../debugger/media/nullreferencesecondinstance.png)
 
 您可以在此開始進行調試。 如果您正在進行實際應用程式的偵錯工具，就必須找出程式碼擲回例外狀況的原因。
 
 > [!CAUTION]
-> 如果您的應用程式包含未受信任的程式碼，則會出現 [安全性警告] 對話方塊，讓您決定是否要繼續進行偵錯工具。 繼續進行偵錯工具之前，請先決定您是否信任程式碼。 這是您自行撰寫的程式碼嗎？ 如果應用程式在遠端電腦上執行，您認得它的處理序名稱嗎？ 如果應用程式是在本機執行，請考慮在您的電腦上執行惡意程式碼的可能性。 如果您決定程式碼值得信任，請選取 **[確定]**。 否則，請選取 [取消]****。
+> 如果您的應用程式包含未受信任的程式碼，則會出現 [安全性警告] 對話方塊，讓您決定是否要繼續進行偵錯工具。 繼續進行偵錯工具之前，請先決定您是否信任程式碼。 這是您自行撰寫的程式碼嗎？ 如果應用程式在遠端電腦上執行，您認得它的處理序名稱嗎？ 如果應用程式是在本機執行，請考慮在您的電腦上執行惡意程式碼的可能性。 如果您決定程式碼值得信任，請選取 **[確定]**。 否則，請選取 [取消]。
 
 ## <a name="troubleshoot-just-in-time-debugging"></a><a name="jit_errors"></a> 針對即時調試進行疑難排解
 
@@ -153,21 +155,21 @@ ms.locfileid: "85350572"
 
 - Windows 錯誤報告可能會接管您電腦上的錯誤處理。
 
-  若要修正此問題，請使用登錄編輯程式，將**值資料**為**1****的** **DWORD 值**新增至下列登錄機碼：
+  若要修正此問題，請使用登錄編輯程式，將 **值資料** 為 **1****的** **DWORD 值** 新增至下列登錄機碼：
 
-  - **HKEY_LOCAL_MACHINE \Software\Microsoft\Windows\Windows 錯誤報告**
+  - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows Error Reporting**
 
-  - 64位電腦的 () ： **HKEY_LOCAL_MACHINE \Software\wow6432node\microsoft\windows\windows 錯誤報表**
+  - 64位電腦的 () ： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows Error Reporting**
 
   如需詳細資訊，請參閱 [。WER 設定](/windows/desktop/wer/wer-settings)。
 
 - 已知的 Windows 問題可能會導致即時偵錯工具失敗。
 
-  修正方法是將**Auto**的**DWORD 值**（**值資料**為**1**）新增至下列登錄機碼：
+  修正方法是將 **Auto** 的 **DWORD 值**（**值資料** 為 **1**）新增至下列登錄機碼：
 
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
-  - 64位電腦的 () ： **HKEY_LOCAL_MACHINE \Software\wow6432node\microsoft\windows NT\CurrentVersion\AeDebug**
+  - 64位電腦的 () ： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 您可能會在即時調試過程中看到下列錯誤訊息：
 
@@ -189,7 +191,7 @@ ms.locfileid: "85350572"
 
     若要修正此問題，請使用 Visual Studio 安裝程式重新安裝或修復您的 Visual Studio 安裝。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：將功能新增至自訂編輯器 |Microsoft Docs
+description: 瞭解如何在使用本逐步解說建立編輯器之後，將其他功能加入至自訂編輯器。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12f585a3e7dd4a8182d7ed80cf65a20d0a82da83
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414018"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863195"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>逐步解說：將功能新增至自訂編輯器
 建立自訂編輯器之後，您可以在其中加入更多功能。
@@ -51,7 +53,7 @@ ms.locfileid: "93414018"
         > [!NOTE]
         > 呼叫 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> 以取得的指標 `IVsFileChangeEx` 。
 
-7. 使用原始程式碼控制協調檔編輯事件。 請遵循這些步驟：
+7. 使用原始程式碼控制協調檔編輯事件。 依照下列步驟執行：
 
     1. 藉由呼叫來取得的指標 `IVsQueryEditQuerySave2` `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> 。
 
@@ -63,21 +65,21 @@ ms.locfileid: "93414018"
 
          如果檔案尚未儲存或自上次儲存後已變更，則此方法會提示使用者儲存檔案。
 
-8. 啟用 [ **屬性** ] 視窗，即可顯示在編輯器中選取之文字的屬性。 請遵循這些步驟：
+8. 啟用 [ **屬性** ] 視窗，即可顯示在編輯器中選取之文字的屬性。 依照下列步驟執行：
 
     1. <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>每次文字選取變更時呼叫，並傳入您的實作為 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 。
 
     2. 呼叫 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 服務以取得的指標 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 。
 
-9. 讓使用者在編輯器和 **工具箱** 之間，或在外部編輯器 (（例如 Microsoft Word) 和 **工具箱** ）之間，拖放專案。 請遵循這些步驟：
+9. 讓使用者在編輯器和 **工具箱** 之間，或在外部編輯器 (（例如 Microsoft Word) 和 **工具箱**）之間，拖放專案。 依照下列步驟執行：
 
     1. `IDropTarget`在編輯器上執行，以警示 IDE 編輯器是放置目標。
 
-    2. 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> 視圖上執行介面，讓您的編輯器可以在 [ **工具箱** ] 中啟用和停用專案。
+    2. 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> 視圖上執行介面，讓您的編輯器可以在 [ **工具箱**] 中啟用和停用專案。
 
     3. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A>在服務上執行和呼叫， `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> 以取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 和介面的指標 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> 。
 
-         這些步驟可讓您的 VSPackage 將新專案新增至 [ **工具箱** ]。
+         這些步驟可讓您的 VSPackage 將新專案新增至 [ **工具箱**]。
 
 10. 決定您是否想要編輯器的任何其他選用功能。
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 83446ab87af07e3ac46594beeecec781f596ecff
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cf32e0aa1f19bb4398bc5600ae7fc9fbf151c76c
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349577"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815590"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至 Azure App Service
 
@@ -33,17 +33,17 @@ ms.locfileid: "94349577"
 
 ## <a name="publish-to-azure-app-service-on-windows"></a>發行至 Windows 上的 Azure App Service
 
-1. 在方案總管中，以滑鼠右鍵按一下專案節點，然後選擇 [ **發行** ] (或使用 [ **組建**  >  **發行** ] 功能表項目) 。
+1. 在方案總管中，以滑鼠右鍵按一下專案節點，然後選擇 [**發行**] (或使用 [**組建**  >  **發行**] 功能表項目) 。
 
     ![方案總管的專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
-1. 如果您先前已設定任何發行設定檔，[ **發行** ] 視窗隨即出現。 選取 [新增]。
+1. 如果您先前已設定任何發行設定檔，[ **發行** ] 視窗隨即出現。 選取 [ **新增**]。
 
-1. 在 [ **發佈** ] 視窗中，選取 [ **Azure** ]。
+1. 在 [ **發佈** ] 視窗中，選取 [ **Azure**]。
 
     ![選擇發佈目標](../deployment/media/quickstart-publish-azure-new.png)
 
-1. 選取 **Azure App Service (Windows)** **] 和 [下一步]** 。
+1. 選取 **Azure App Service (Windows)** **] 和 [下一步]**。
 
     ![選擇 Linux 上的 Azure App Service](../deployment/media/quickstart-publish-windows-select-azure-service.png)
 
@@ -51,13 +51,13 @@ ms.locfileid: "94349577"
 
     ![Azure App Service 建立新實例的連結](../deployment/media/quickstart-publish-windows-create-new-link.png)
 
-1. 在 [ **建立 Azure App Service (Windows)** ] 對話方塊中，會填入 [ **應用程式名稱** ]、[ **資源群組** ] 和 [ **App Service 方案** ] 專案欄位。 您可以保留這些名稱，或變更它們。 準備好時，請選取 [ **建立** ]。
+1. 在 [ **建立 Azure App Service (Windows)** ] 對話方塊中，會填入 [ **應用程式名稱**]、[ **資源群組**] 和 [ **App Service 方案** ] 專案欄位。 您可以保留這些名稱，或變更它們。 準備好時，請選取 [ **建立**]。
 
-    ![選擇 Azure App Service](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
+    ![[建立 Azure App Service (Windows) ] 對話方塊的螢幕擷取畫面，其中已填入名稱、訂用帳戶、資源群組和主控方案欄位。](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
-1. 在 [ **發行** ] 對話方塊中，會自動選取新建立的實例。 準備好時，請選取 **[完成]** 。
+1. 在 [ **發行** ] 對話方塊中，會自動選取新建立的實例。 準備好時，請選取 **[完成]**。
 
-    ![選擇 Azure App Service](../deployment/media/quickstart-publish-windows-select-instance.png)
+    ![從 Visual Studio 方案總管存取的 [發行] 視窗螢幕擷取畫面。 選取 Azure 作為發佈目標。](../deployment/media/quickstart-publish-windows-select-instance.png)
 
 1. 選取 [發佈]  。 Visual Studio 會將應用程式部署至 Azure App Service，並在瀏覽器中載入 Web 應用程式。 專案屬性 [發行] 窗格會顯示網站 URL 和其他詳細資料。
 
@@ -68,7 +68,7 @@ ms.locfileid: "94349577"
 在前述步驟中，您在資源群組中建立了 Azure 資源。 如果您認為未來不需要這些資源，可以用刪除資源群組的方式將它們刪除。
 從 Azure 入口網站的左側功能表中，依序選取 [資源群組] 和 [myResourceGroup]。
 在 [資源群組] 頁面上，確定所列出的資源是您想要刪除的項目。
-選取 [刪除]，在文字方塊中輸入 **myResourceGroup** ，然後再選取 [刪除]。
+選取 [刪除]，在文字方塊中輸入 **myResourceGroup**，然後再選取 [刪除]。
 
 ## <a name="next-steps"></a>後續步驟
 

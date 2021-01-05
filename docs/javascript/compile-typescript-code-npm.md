@@ -1,6 +1,6 @@
 ---
 title: 使用 npm 編譯及建立 TypeScript 程式碼
-description: 瞭解如何在 Visual Studio 中編譯和建立 TypeScript。
+description: 瞭解如何使用 Node 封裝管理員 (npm) ，將 Typescript 支援新增至您的 Visual Studio 專案。
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: add67535c0c3c9e4a48b95c2b9d5fe0717511797
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: be7bc30f260a492fbc783a8e730b1e550fcb4671
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414369"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846795"
 ---
 # <a name="compile-typescript-code-nodejs"></a>編譯 TypeScript 程式碼 ( # A0) 
 
@@ -35,11 +35,11 @@ ms.locfileid: "93414369"
 
    從方案總管] (右窗格) ，開啟專案根目錄中的 *package.js* 。 列出的封裝會對應至方案總管中 npm-節點下的封裝。 如需詳細資訊，請參閱 [管理 npm 封裝](../javascript/npm-package-management.md)。
 
-   針對 Node.js 專案，您可以使用命令列或 IDE 安裝 TypeScript npm 封裝。 若要使用 IDE 進行安裝，請在方案總管中的 [npm] 節點上按一下滑鼠右鍵，選擇 [ **安裝新的 npm 封裝** ]、搜尋 **TypeScript** ，然後安裝套件。
+   針對 Node.js 專案，您可以使用命令列或 IDE 安裝 TypeScript npm 封裝。 若要使用 IDE 進行安裝，請在方案總管中的 [npm] 節點上按一下滑鼠右鍵，選擇 [ **安裝新的 npm 封裝**]、搜尋 **TypeScript**，然後安裝套件。
 
-   檢查 [ **輸出** ] 視窗中的 [ **npm** ] 選項，以查看套件安裝進度。 已安裝的套件會顯示在方案總管的 [ **npm** ] 節點底下。
+   檢查 [**輸出**] 視窗中的 [ **npm** ] 選項，以查看套件安裝進度。 已安裝的套件會顯示在方案總管的 [ **npm** ] 節點底下。
 
-1. 如果您的專案尚未包含它，請將 *tsconfig* 檔案新增至您的專案根目錄。 若要加入檔案，請以滑鼠右鍵按一下專案節點，然後選擇 [ **加入 > 新專案** ]。 選擇 **TYPESCRIPT JSON 設定檔** ，然後按一下 [ **新增** ]。
+1. 如果您的專案尚未包含它，請將 *tsconfig* 檔案新增至您的專案根目錄。 若要加入檔案，請以滑鼠右鍵按一下專案節點，然後選擇 [ **加入 > 新專案**]。 選擇 **TYPESCRIPT JSON 設定檔**，然後按一下 [ **新增**]。
 
    Visual Studio 將檔案 *tsconfig.js* 加入至專案根目錄。 您可以使用這個檔案來 [設定](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) TypeScript 編譯器的選項。
 
@@ -72,14 +72,14 @@ ms.locfileid: "93414369"
 
 ## <a name="build-the-application"></a>建置應用程式
 
-1. 在您的專案中新增 *typescript (、* ) 或 typescript JSX ( *tsx* ) 檔案，然後加入 typescript 程式碼。 如需 TypeScript 的簡單範例，請使用下列程式：
+1. 在您的專案中新增 *typescript (、*) 或 typescript JSX (*tsx*) 檔案，然後加入 typescript 程式碼。 如需 TypeScript 的簡單範例，請使用下列程式：
 
    ```typescript
    let message: string = 'Hello World';
    console.log(message);
    ```
 
-1. 在 *package.js開啟時* ，請使用下列腳本新增 Visual Studio 組建和清除命令的支援。
+1. 在 *package.js開啟時*，請使用下列腳本新增 Visual Studio 組建和清除命令的支援。
 
    ```json
    "scripts": {
@@ -100,12 +100,12 @@ ms.locfileid: "93414369"
 
    如需搭配使用 Vue.js 與 TypeScript 的範例，請參閱 [建立 Vue.js 應用程式](/javascript/create-application-with-vuejs)。
 
-1. 如果您需要設定選項，例如 [啟動] 頁面、Node.js 執行時間、應用程式埠或執行時間引數的路徑，請在方案總管的專案節點上按一下滑鼠右鍵，然後選擇 [ **屬性** ]。
+1. 如果您需要設定選項，例如 [啟動] 頁面、Node.js 執行時間、應用程式埠或執行時間引數的路徑，請在方案總管的專案節點上按一下滑鼠右鍵，然後選擇 [ **屬性**]。
 
    >[!NOTE]
-   > 設定協力廠商工具時，Node.js 專案不會使用 [ **工具**  >  **選項**  >  **專案和方案**  >  **Web 套件管理**  >  **外部 Web 工具** ] 下設定的路徑。 這些設定會用於其他專案類型。
+   > 設定協力廠商工具時，Node.js 專案不會使用 [**工具**  >  **選項**  >  **專案和方案**  >  **Web 套件管理**  >  **外部 Web 工具**] 下設定的路徑。 這些設定會用於其他專案類型。
 
-1. 選擇 [ **組建 > 組建方案** ]。
+1. 選擇 [ **組建 > 組建方案**]。
 
    雖然應用程式會在您執行時自動建立，但我們想要查看在建立程式期間所發生的問題：
 

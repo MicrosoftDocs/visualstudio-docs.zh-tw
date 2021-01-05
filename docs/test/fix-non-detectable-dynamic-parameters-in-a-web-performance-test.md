@@ -12,12 +12,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 713d711847d798c617074d2d620e09f914c1a147
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 9f670c9cf543ae209ebed63ce185fadfbbe253d0
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190225"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815720"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>在 Web 效能測試中修正無法偵測的動態參數
 
@@ -190,13 +190,13 @@ ms.locfileid: "96190225"
 
 3. 返回 [Web 效能測試結果檢視器]，並選取失敗的 *JScriptQuery.aspx* 頁面。 然後，選取要求索引標籤，確認已清除 [顯示未經處理資料] 核取方塊，向下捲動並對 CustomQueryString 選取快速尋找。
 
-     ![使用快速尋找隔離動態參數](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
+     ![Web 效能文字結果檢視器中 [要求] 索引標籤的螢幕擷取畫面。 選取 QueryString 參數，QuickFind 會在內容功能表上反白顯示。](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4. 我們從查看 [測試編輯器] 得知， *jscriptquery.aspx .aspx* 要求的 CustomQueryString 被指派值： `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` ，而且可疑的動態部分為 "1v0yhyiyr0raa2w4j4pwf5zl"。 在 [尋找目標] 下拉式清單中，移除搜尋字串的可疑部分。 字串應該是 "CustomQueryString=jScriptQueryString___"。
 
      動態參數的值會在有錯誤之要求前面的其中一個要求中指派。 因此，選取 [向上搜尋] 核取方塊並選擇 [找下一個]，直到您在 [要求] 面板中看見反白顯示之 *Querystring.aspx* 的先前要求。 這應該會在選擇三次 [找下一個] 之後出現。
 
-     ![使用快速尋找隔離動態參數](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
+     ![Web 效能文字結果檢視器的螢幕擷取畫面。 選取查詢字串，[尋找] 對話方塊會顯示 [SearchUp]，並尋找下一個選取的對話方塊。](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
 
      如 [回應] 索引標籤以及稍早實作的 JavaScript 中所示，指派給查詢字串參數 CustomQueryString 的值為 " jScriptQueryString___"，而且會與 var sessionId 傳回的值串連。
 

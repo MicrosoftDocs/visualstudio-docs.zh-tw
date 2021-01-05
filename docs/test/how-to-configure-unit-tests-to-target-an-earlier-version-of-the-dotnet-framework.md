@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3f90a3d42eb1390adbb242242172aea152a0a54f
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441244"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833230"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：設定以舊版 .NET Framework 為目標的單元測試
 
@@ -62,7 +62,7 @@ ms.locfileid: "95441244"
 
 4. 使用 [目標 Framework (所有組態)] 下拉式清單將目標架構變更為 [.NET Framework 3.5] 或是更新版本，如下圖的圖說文字 B 所示。 您不應指定用戶端版本。
 
-     ![目標 Framework 下拉式清單](../test/media/howtoconfigureunitest35frameworkstepb.png)
+     ![[Advanced 編譯器設定] 對話方塊的螢幕擷取畫面。 [目標 framework] 下拉式清單會反白顯示，並將值設定為 [.NET Frameowrk 3.5]。](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>為 C# 單元測試專案重定目標
 
@@ -74,7 +74,7 @@ ms.locfileid: "95441244"
 
 3. 在 [應用程式] 索引標籤上，選擇 [目標 Framework]。 從下拉式清單中，選擇 [.NET Framework 3.5] 或更新版本，如下圖所示。 您不應指定用戶端版本。
 
-   ![目標 Framework 下拉式清單](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   ![[方案總管屬性] 窗格中的 [應用程式] 索引標籤的圖例，會反白顯示 [目標 framework] 下拉式清單的位置。](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="retargeting-for-ccli-unit-test-projects"></a>為 C++/CLI 單元測試專案重定目標
 
@@ -106,7 +106,7 @@ ms.locfileid: "95441244"
 
 6. 在 [方案總管] 中，從新的 C++ 測試專案右鍵功能表選取 [重新載入專案]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立 SharePoint 方案](../sharepoint/create-sharepoint-solutions.md)
 - [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)

@@ -8,20 +8,20 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d049bc8b74b83028e04fe92e7ce96f45907d042
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89325860"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97762592"
 ---
-1. 在 [ **方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [ **發佈** (以進行 Web Form、 **發佈 Web 應用程式**) 。
+1. 在 [ **方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [ **發佈** (以進行 Web Form、 **發佈 Web 應用程式**) 。
 
-    如果您之前已設定任何發行設定檔，[發行]**** 窗格會隨即出現。 按一下 [ **新增設定檔**]。
+    如果您之前已設定任何發行設定檔，[發行] 窗格會隨即出現。 按一下 [ **新增設定檔**]。
 
 1. 在 [ **發行** ] 對話方塊中，選取 [ **資料夾**]、按一下 **[流覽]**，然後建立新的資料夾 **C:\Publish**。
 
-    ![RemoteDBG_Publish_Local](../media/remotedbg_publish_local.png "RemoteDBG_Publish_Local")
+    ![[挑選發佈目標] 對話方塊的螢幕擷取畫面，其中已選取 [bin\Release\Publish Visual Studio] 資料夾做為發佈目標。](../media/remotedbg_publish_local.png)
 
     針對 Web Form 應用程式，請在 [發行] 對話方塊中選擇 [ **自訂** ]，輸入設定檔名稱，然後選擇 **[確定]**。
 
@@ -29,14 +29,14 @@ ms.locfileid: "89325860"
 
 1. 在 [ **發行** ] 對話方塊中，按一下 [ **設定** ] 連結，然後選取 [ **設定** ] 索引標籤。
 
-1. 將設定設為 [ **Debug**]，選取 [ **發行前刪除所有現有**的檔案]，然後按一下 [ **儲存**]。
+1. 將設定設為 [ **Debug**]，選取 [ **發行前刪除所有現有** 的檔案]，然後按一下 [ **儲存**]。
 
     > [!NOTE]
     > 如果您使用發行組建，您可以在發行時停用 web.config 檔案中的調試。
 
 1. 按一下 [發佈] 。
 
-    ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
+    ![[發行] 對話方塊中 [設定] 索引標籤的螢幕擷取畫面。 [設定] 設定為 [Debug]，並選取 [發行] 按鈕。](../media/remotedbg_publish_debug_config.png)
 
     應用程式會將專案的 **Debug** 設定發行至本機資料夾。 進度會顯示在 [輸出] 視窗中。
 

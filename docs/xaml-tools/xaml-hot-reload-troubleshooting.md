@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5dca96b4e20e36bc6c69b907423f27ac4af71
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328470"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833217"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>對 XAML 熱重新載入進行疑難排解
 
@@ -34,17 +34,17 @@ WPF 和 UWP 應用程式支援 XAML 熱重新載入。 如需作業系統和工�
 
 ![XAML 熱重新載入可用](../debugger/media/xaml-hot-reload-available.png)
 
-如果您看不到應用程式內工具列，請開啟**Debug**  >  **Options**  >  **[一般**] 偵錯工具選項。 請確定已選取 [ **啟用 XAML 的 UI 偵錯工具** ] 和 [ **啟用 XAML 熱重新載入** 的兩個選項。
+如果您看不到應用程式內工具列，請開啟  >    >  **[一般**] 偵錯工具選項。 請確定已選取 [ **啟用 XAML 的 UI 偵錯工具** ] 和 [ **啟用 XAML 熱重新載入** 的兩個選項。
 
-![啟用 XAML 熱重新載入](../debugger/media/xaml-hot-reload-enable.png)
+![[Visual Studio 偵錯工具選項] 視窗的螢幕擷取畫面。 選取 [一般偵錯工具] 選項，並勾選 [啟用 XAML 熱重新載入] 選項。](../debugger/media/xaml-hot-reload-enable.png)
 
-如果選取這些選項，請移至 [即時視覺化樹狀] (**Debug**  >  **Windows**  >  **Live 視覺化樹狀結構**) 並確定已選取) [在**應用程式中顯示執行時間工具**] 工具列按鈕 (。
+如果選取這些選項，請移至 [即時視覺化樹狀] (**Debug**  >  **Windows**  >  **Live 視覺化樹狀結構**) 並確定已選取) [在 **應用程式中顯示執行時間工具**] 工具列按鈕 (。
 
-![啟用 XAML 熱重新載入](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
+![在 [即時視覺化樹狀結構] 視窗頂端的工具列螢幕擷取畫面，其中已選取 [在應用程式中顯示執行時間工具] 按鈕。](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
 
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>確認您使用開始偵錯工具，而不是附加至進程
 
-XAML 熱重新載入要求在 `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` 應用程式啟動時，環境變數設為1。 Visual Studio 在「**調試**程式  >  **啟動調試**程式 (或**F5**) 命令中自動設定此項。 如果您想要改用 XAML 熱重新載入搭配**Debug**  >  **Attach to Process**命令，請自行設定環境變數。
+XAML 熱重新載入要求在 `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` 應用程式啟動時，環境變數設為1。 Visual Studio 在「**調試** 程式  >  **啟動調試** 程式 (或 **F5**) 命令中自動設定此項。 如果您想要改用 XAML 熱重新載入搭配 **Debug**  >  **Attach to Process** 命令，請自行設定環境變數。
 
 > [!NOTE]
 > 若要設定環境變數，請使用 [開始] 按鈕來搜尋「環境變數」，然後選擇 [ **編輯系統內容變數**]。 在開啟的對話方塊中，選擇 [ **環境變數**]，然後將它新增為使用者變數，並將值設定為 `1` 。 若要清除，請在完成調試時移除變數。
@@ -67,8 +67,8 @@ UWP
 
 ## <a name="verify-that-your-xaml-file-has-no-errors"></a>確認您的 XAML 檔案沒有任何錯誤
 
-如果您的 XAML 檔案顯示 **錯誤清單**中的錯誤，XAML 熱重新載入可能無法運作。
+如果您的 XAML 檔案顯示 **錯誤清單** 中的錯誤，XAML 熱重新載入可能無法運作。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [使用 XAML 熱重新載入撰寫和偵測執行中的 XAML 程式碼](xaml-hot-reload.md)

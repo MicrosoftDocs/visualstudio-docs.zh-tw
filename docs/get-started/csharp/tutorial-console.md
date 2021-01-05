@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527923"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833334"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立簡單的 c # 主控台應用程式
 
@@ -282,7 +282,7 @@ ms.locfileid: "97527923"
 
 當您嘗試將數位零除時，主控台應用程式可能會凍結，然後顯示程式碼編輯器中的錯誤。
 
-   ![Visual Studio 程式碼編輯器顯示「除以零」錯誤](./media/csharp-console-calculator-dividebyzero-error.png)
+   ![Visual Studio 程式碼編輯器的螢幕擷取畫面，其中顯示以黃色醒目提示的行，以及「嘗試零除的例外狀況未處理錯誤」。](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
 > 有時候，應用程式不會凍結，偵錯工具不會顯示零除的錯誤。 相反地，應用程式可能會傳回非預期的非數值結果，例如無限符號。 下列程式碼修正仍適用。
@@ -311,7 +311,7 @@ ms.locfileid: "97527923"
 
 現在，當您將任何數字除以零時，應用程式會要求輸入其他數字。 更好的：它不會停止詢問，直到您提供零以外的數位為止。
 
-   ![修正零除的錯誤](./media/csharp-console-calculator-dividebyzero.png)
+   ![Visual Studio 程式碼編輯器的螢幕擷取畫面，其中顯示 switch 語句的程式碼，並檢查是否已加入非零除數的專案。](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>修正「格式」錯誤
 
@@ -327,7 +327,7 @@ ms.locfileid: "97527923"
 
 `Calculator` 類別會處理大量計算工作，`Program` 類別會處理使用者介面和錯誤擷取工作。
 
-讓我們開始這次的教學。
+現在就開始吧。
 
 1. 刪除 `Calculator` 命名空間中左右大括弧之間的所有內容：
 
@@ -620,7 +620,7 @@ namespace Calculator
 > [繼續進行第2部分](tutorial-console-part-2.md)
 :::moniker-end
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [了解如何在 Visual Studio 中偵錯 C# 程式碼](tutorial-debugger.md)

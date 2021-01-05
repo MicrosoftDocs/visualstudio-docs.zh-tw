@@ -1,17 +1,17 @@
 ---
 title: Visual Studio 容器工具組建屬性
 author: ghogen
-description: 容器工具組建流程的總覽
+description: 瞭解如何編輯容器工具組建屬性，以自訂 Visual Studio 組建和執行容器專案的方式。
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e8675bd0ea12b30ce678ce454bcedee457ddacd
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283199"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846730"
 ---
 # <a name="container-tools-build-properties"></a>容器工具組建屬性
 
@@ -39,7 +39,7 @@ ms.locfileid: "85283199"
 | DockerDebuggeeWorkingDirectory | 進行偵錯工具時，會指示偵錯工具使用此路徑做為工作目錄。 | C:\app (Windows) 或/app (Linux)  |1.7.8 或更新版本|
 | DockerDefaultTargetOS | 建立 Docker 映射時所使用的預設目標作業系統。 | 依 Visual Studio 設定。 |1.0.1985401 或更新版本|
 | DockerImageLabels | 套用至 Docker 映射的預設標籤集合。 | MSBuildProjectName 的建立方式 = visual studio、.com-studio. 專案名稱 = $ ()  |1.5.4 或更新版本|
-| DockerFastModeProjectMountDirectory|在 **快速模式**中，此屬性會控制專案輸出目錄在執行中容器中的磁片區載入位置。|C:\app (Windows) 或/app (Linux) |1.9.2 或更新版本|
+| DockerFastModeProjectMountDirectory|在 **快速模式** 中，此屬性會控制專案輸出目錄在執行中容器中的磁片區載入位置。|C:\app (Windows) 或/app (Linux) |1.9.2 或更新版本|
 | DockerfileBuildArguments | 傳遞至 [Docker build](https://docs.docker.com/engine/reference/commandline/build/) 命令的其他引數。 | 不適用。 |1.0.1872750 或更新版本|
 | DockerfileCoNtext | 建立 Docker 映射時所使用的預設內容，做為相對於 Dockerfile 的路徑。 | 依 Visual Studio 設定。 |1.0.1872750 或更新版本|
 | DockerfileFastModeStage | Dockerfile 階段 (也就是在「偵錯工具」模式中建立映射時，要使用的目標) 。 | 在 Dockerfile (基底) 中找到的第一個階段 |
@@ -80,7 +80,7 @@ ms.locfileid: "85283199"
 
 如需 MSBuild 屬性的一般資訊，請參閱 [Msbuild 屬性](../msbuild/msbuild-properties.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Docker Compose 組建屬性](docker-compose-properties.md)
 

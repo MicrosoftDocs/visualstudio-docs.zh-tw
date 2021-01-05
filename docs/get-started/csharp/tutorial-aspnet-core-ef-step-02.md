@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 21052d59205c7ddc14247f180348fea3b8d5652a
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780993"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833243"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>步驟2：建立您的第一個 ASP.NET Core web 應用程式
 
@@ -33,7 +33,7 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>啟動 Visual Studio 2019 並建立新專案
 
-啟動 Visual Studio 2019 並按一下 [建立新專案]****。 選擇 [ASP.NET Core Web 應用程式]****。 選擇 [Web 應用程式]**** 範本，保留預設的專案名稱和位置。 在具有 ASP.NET Core 版本的下拉式清單中，選擇 **ASP.NET Core 2.1** 或 **ASP.NET Core 2.2**。 按一下 [建立]。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
+啟動 Visual Studio 2019 並按一下 [建立新專案]。 選擇 [ASP.NET Core Web 應用程式]。 選擇 [Web 應用程式] 範本，保留預設的專案名稱和位置。 在具有 ASP.NET Core 版本的下拉式清單中，選擇 **ASP.NET Core 2.1** 或 **ASP.NET Core 2.2**。 按一下 [建立]。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
 
 ![Visual Studio 2019 選擇 ASP.NET Core 專案選項](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -64,15 +64,15 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ### <a name="startupcs"></a>Startup.cs
 
-在 *Program.cs* 中建立的 Web 主機會參考啟動類別，並呼叫其方法以設定應用程式。 ConfigureServices 方法負責設定應用程式要使用的任何服務。 `Configure` 方法會設定應用程式的 HTTP 要求管線。 每個要求都會經由此管線，在如此做時與「中介軟體」** 的每個片段互動。
+在 *Program.cs* 中建立的 Web 主機會參考啟動類別，並呼叫其方法以設定應用程式。 ConfigureServices 方法負責設定應用程式要使用的任何服務。 `Configure` 方法會設定應用程式的 HTTP 要求管線。 每個要求都會經由此管線，在如此做時與「中介軟體」的每個片段互動。
 
 ### <a name="indexcshtml"></a>Index.cshtml
 
-網站首頁包含一些 HTML 標記和一些伺服器端的 Razor 程式碼。 它使用 Razor 來指定頁面模型 `IndexModel`，其位於相關聯的 *Index.cshtml.cs* 檔案中。 它也會在 ViewData 中設定值來設定頁面標題。 這個 ViewData 值是在配置* \_ . cshtml*檔案中讀取，該檔案位於 Pages 資料夾內的共用資料夾中。 Layout 檔案為許多 Razor 頁面共用，並為應用程式提供共同的外觀與風格。 每個頁面內容都會在 Layout 檔案的 HTML 中轉譯。
+網站首頁包含一些 HTML 標記和一些伺服器端的 Razor 程式碼。 它使用 Razor 來指定頁面模型 `IndexModel`，其位於相關聯的 *Index.cshtml.cs* 檔案中。 它也會在 ViewData 中設定值來設定頁面標題。 這個 ViewData 值是在配置 *\_ . cshtml* 檔案中讀取，該檔案位於 Pages 資料夾內的共用資料夾中。 Layout 檔案為許多 Razor 頁面共用，並為應用程式提供共同的外觀與風格。 每個頁面內容都會在 Layout 檔案的 HTML 中轉譯。
 
 ## <a name="run-the-application"></a>執行應用程式
 
-現在執行應用程式，並在瀏覽器中檢視它。 您可以使用**Ctrl**F5 來執行應用程式， + **F5**或**Debug**  >  從 Visual Studio 的功能表中選擇 [Debug**啟動但不進行調試**程式]。
+現在執行應用程式，並在瀏覽器中檢視它。 您可以使用 **Ctrl** F5 來執行應用程式， + 或  >  從 Visual Studio 的功能表中選擇 [Debug **啟動但不進行調試** 程式]。
 
 ## <a name="customize-the-application"></a>自訂應用程式
 
@@ -94,7 +94,7 @@ public void OnGet()
 
 再次執行應用程式。 您現在應該會看到頁面顯示目前的時間，但一律為午夜！ 這樣不對。
 
-![瀏覽器中的 Visual Studio 2019 ASP.NET Core 專案](media/vs-2019/vs2019-app-in-browser.png)
+![瀏覽器視窗中應用程式首頁的螢幕擷取畫面。 頁面的內容會顯示：「目前正于伺服器上的 12:00 AM！」。](media/vs-2019/vs2019-app-in-browser.png)
 
 ## <a name="debug-the-application"></a>偵錯應用程式
 
@@ -102,7 +102,7 @@ public void OnGet()
 
 執行會在此行停止，您可以看到 `DateTime.Today` 包含日期，但時間一直停留在午夜，因為它不包含時間資料。
 
-![瀏覽器中的 Visual Studio 2019 ASP.NET Core 專案](media/vs-2019/vs2019-breakpoint.png)
+![顯示 Visual Studio 中 Index.cshtml.cs 程式碼的螢幕擷取畫面。 中斷點設定在行 ' Time = DateTime. ToShortTimeString ( # A1; '。](media/vs-2019/vs2019-breakpoint.png)
 
 將它變更為使用 `DateTime.Now` 並繼續執行。 `OnGet` 的新程式碼應該是：
 
@@ -118,7 +118,7 @@ public void OnGet()
 > [!NOTE]
 > 您的輸出可能會與圖片不同，因為 ToShortDateTimeString 的輸出格式取決於目前的文化特性設定。 請參閱 <xref:System.DateTime.ToShortTimeString>。
 
-![瀏覽器中的 Visual Studio 2019 ASP.NET Core 專案](media/vs-2019/vs2019-app-fixed-in-browser.png)
+![瀏覽器視窗中應用程式首頁的螢幕擷取畫面。 頁面的內容會顯示：「目前正于伺服器上的 1:46 AM！」。](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -126,6 +126,6 @@ public void OnGet()
 
 [教學課程：使用 ASP.NET Core 應用程式中的資料](tutorial-aspnet-core-ef-step-03.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [教學課程：使用 ASP.NET Core 建立 Razor Pages web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

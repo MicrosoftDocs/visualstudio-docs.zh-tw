@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Professional 工作負載和元件識別碼
 titleSuffix: ''
-description: 使用工作負載和元件識別碼透過命令列安裝 Visual Studio，或是在 VSIX 資訊清單中指定為相依性
+description: 使用 Visual Studio Professional 工作負載和元件識別碼從命令列安裝 Visual Studio，或在 VSIX 資訊清單中指定相依性。
 keywords: ''
 author: ornellaalt
 ms.author: ornella
@@ -16,12 +16,12 @@ ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 6ac189de45248d277969be3f38e60daba2985ebc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6274396d35756682ad929b051d155897bcafb8e7
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184325"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846999"
 ---
 # <a name="visual-studio-professional-component-directory"></a>Visual Studio Professional 元件目錄
 
@@ -45,7 +45,7 @@ ms.locfileid: "84184325"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

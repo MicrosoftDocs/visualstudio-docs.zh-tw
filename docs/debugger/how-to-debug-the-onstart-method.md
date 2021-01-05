@@ -1,5 +1,6 @@
 ---
 title: Debug OnStart 方法 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 中，從方法內啟動偵錯工具，以在中進行 Windows 服務的 OnStart 方法的偵錯工具。
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d695e4d22c728eb256aeb0e1350819ba23b93385
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 27cb5a870166e1d8909c80dc617ca16690bf6619
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852370"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761403"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>如何：偵錯 OnStart 方法
 您可以藉由啟動服務並將偵錯工具附加到服務處理序，對 Windows 服務進行偵錯。 如需詳細資訊，請參閱[如何：偵錯 Windows 服務應用程式](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)。 但是若要對 Windows 服務的 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 方法進行偵錯，您必須從方法內啟動偵錯工具。
@@ -38,20 +39,20 @@ ms.locfileid: "90852370"
     }
     ```
 
-2. 啟動服務 (您可以使用 `net start`，或在 [服務] **** 視窗中加以啟動)。
+2. 啟動服務 (您可以使用 `net start`，或在 [服務]  視窗中加以啟動)。
 
     您應該會看到如下所示的對話方塊：
 
-    ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")
+    ![Visual Studio 即時偵錯工具] 對話方塊的螢幕擷取畫面，其中顯示 WindowsService-Asis.exe 中發生未處理的 .NET Framework 例外狀況。](../debugger/media/onstartdebug.png)
 
 3. 選取 **[是，Debug] \<service name> 。**
 
 4. 在 [Just-In-Time 偵錯工具] 視窗中，選取您要用來偵錯的 Visual Studio 版本。
 
-    ![JustInTimeDebugger](../debugger/media/justintimedebugger.png "JustInTimeDebugger")
+    ![Visual Studio 即時偵錯工具視窗的螢幕擷取畫面，其中已在可能的偵錯工具清單中選取 [Microsoft Visual Studio 2015 的新實例]。](../debugger/media/justintimedebugger.png)
 
 5. Visual Studio 的新執行個體隨即啟動，並在 `Debugger.Launch()` 方法停止執行。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

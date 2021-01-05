@@ -11,16 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6317f7a1f81e6eb6916c10b2f8ce0df91f57a7de
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
-ms.translationtype: HT
+ms.openlocfilehash: 6853ef6040df943ac3050621a5b3a2528d599d9f
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329948"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756613"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 的概觀
 
 IntelliTest 可讓您及早發現錯誤，並降低測試維護成本。 使用自動化和透明的測試方法，IntelliTest 可為 .NET 程式碼產生候選的測試套件。 通過您所指定的「正確性屬性」  ，可進一步指引測試套件產生作業。 IntelliTest 甚至會隨著受測程式碼發展自動進化測試套件。
+
+> [!NOTE]
+> IntelliTest 僅適用于 Enterprise edition。 以 .NET Framework 為目標的 c # 程式碼支援。 目前不支援 .NET Core 和 .NET Standard。
 
 **特徵測試** IntelliTest 可讓您根據一套傳統的單元測試來判斷程式碼的行為。
 這類測試套件可當作迴歸套件，針對處理與重構舊版或不熟悉程式碼建立關聯的複雜性確立其基礎。

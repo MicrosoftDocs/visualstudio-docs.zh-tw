@@ -1,5 +1,7 @@
 ---
 title: 準備 Windows Installer 部署的擴充功能 |Microsoft Docs
+description: 瞭解如何準備專案，其預設輸出為要包含在安裝專案中的 VSIX 套件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0084cfc6c08db1c1d15013362a186fec175b4ee4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ba494af91d3d40720493b27e7381660ece3fba69
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012213"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862906"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>準備 Windows Installer 部署的擴充功能
 您無法使用 Windows Installer 套件 (MSI) 來部署 VSIX 套件。 不過，您可以解壓縮適用于 MSI 部署的 VSIX 套件內容。 本檔將說明如何準備專案，其預設輸出為 VSIX 封裝，以包含在安裝專案中。
@@ -44,7 +46,7 @@ ms.locfileid: "90012213"
 
 ### <a name="to-extract-files-from-an-existing-vsix-package"></a>從現有的 VSIX 封裝解壓縮檔案
 
-1. 重新命名 *。VSIX* 檔案，其中包含從 *檔案名 .vsix* 到 *filename.zip*的副檔名。
+1. 重新命名 *。VSIX* 檔案，其中包含從 *檔案名 .vsix* 到 *filename.zip* 的副檔名。
 
 2. 將 *.zip* 檔的內容複寫到目錄中。
 
@@ -54,6 +56,6 @@ ms.locfileid: "90012213"
 
 5. 將其餘的檔案新增至您的安裝專案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 安裝程式部署](/previous-versions/2kt85ked(v=vs.120))
 - [逐步解說：建立自訂動作](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

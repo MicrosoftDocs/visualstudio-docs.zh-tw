@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 564ba133074af3749bd909f1b0a7fe32822f5d75
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568811"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833256"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引進區域變數
 
@@ -44,17 +44,17 @@ ms.locfileid: "75568811"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+      - 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
-      - 以滑鼠右鍵按一下並選取 [快速動作與重構]**** 功能表。
-      - 按一下 ![螺絲起子](media/screwdriver.png) 圖示，如果文字游標已經在含有醒目提示運算式的行上，此圖示就會出現在左邊界上。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
+      - 按一下 [裝置] ![顯示在 [快速動作] 和 [重構] 功能表左邊界中的螺絲起子圖示螢幕擷取畫面。](media/screwdriver.png) 圖示，如果文字游標已經在含有醒目提示運算式的行上，此圖示就會出現在左邊界上。
 
    ![「引進區域」預覽](media/local-preview-cs.png)
 
 3. 從下拉式功能表中，選取 [ **為 (的所有出現位置]) [引進本機** ]。
 
    > [!TIP]
-   > 請使用位於預覽視窗底部的 [預覽變更]**** 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
+   > 請使用位於預覽視窗底部的 [預覽變更] 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
 
    區域變數隨即建立，而類型會從使用方式推斷。 為新區域變數提供新名稱。
 
@@ -67,9 +67,9 @@ ms.locfileid: "75568811"
        ![實作介面結果 VB](media/local-result-vb.png)
 
    > [!NOTE]
-   > 您可以使用 [...所有出現之處...]**** 功能表選項來取代每個所選運算式，而不只是您已明確醒目提示的運算式。
+   > 您可以使用 [...所有出現之處...] 功能表選項來取代每個所選運算式，而不只是您已明確醒目提示的運算式。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼產生](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

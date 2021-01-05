@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
-ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
+ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098523"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833360"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -62,7 +62,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 ### <a name="run-tests"></a>執行測試
 
 ::: moniker range="vs-2017"
-您可以執行方案中的所有測試、群組中的所有測試，或是您選取的一組測試。 請執行下列其中一項：
+您可以執行方案中的所有測試、群組中的所有測試，或是您選取的一組測試。 執行下列其中一個動作：
 
 - 若要執行方案中的所有測試，請選擇 [全部執行] 。
 
@@ -70,12 +70,12 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 - 選取您要執行的個別測試、開啟所選取之測試的右鍵功能表，然後選擇 [執行選取的測試]。
 
-- 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
+- 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![Visual Studio Test Explorer 工具列上 [平行測試執行] 切換按鈕的螢幕擷取畫面。 選取此按鈕時，將會以平行方式執行測試。](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
 執行測試時，[測試總管] 視窗頂端會動畫呈現 **成功/失敗列**。 測試回合結束時，如果所有測試皆成功，**成功/失敗列** 會變成綠色；如果有任何一個測試失敗，則會變成紅色。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-您可以執行方案中的所有測試、群組中的所有測試，或是您選取的一組測試。 請執行下列其中一項：
+您可以執行方案中的所有測試、群組中的所有測試，或是您選取的一組測試。 執行下列其中一個動作：
 
 - 若要執行方案中的所有測試，請選擇 [全部執行]  圖示。
 
@@ -150,7 +150,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 您可以定義自己的階層層級，然後依您偏好的順序選取 [分組依據] 選項，例如先依 [狀態] 再依 [類別] 進行分組。
 
-![先依 [狀態] 再依 [類別] 進行分組](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
+![[Visual Studio Test Explorer] 的螢幕擷取畫面，其中顯示一個窗格中的測試階層，以及另一個窗格中的 [群組依據] 功能表，並選取 [類別] 和 [狀態] 選項。](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
 ::: moniker-end
 
 ### <a name="test-explorer-groups"></a>測試總管群組
@@ -207,7 +207,7 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 
 **若要開啟播放清單**，請選擇 Visual Studio 功能表上的 [測試]**[播放清單]** > ，然後從最近使用過的播放清單的清單中選擇，或選擇 [開啟播放清單] 指定播放清單的名稱和位置。
 
-如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
+如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![Visual Studio Test Explorer 工具列上 [平行測試執行] 切換按鈕的螢幕擷取畫面。](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 您可以建立和儲存想要執行或檢視為群組的測試清單。 當您選取播放清單時，清單中的測試會顯示在新的 [測試瀏覽器] 索引標籤中。您可以將測試新增至多個播放清單。
@@ -264,7 +264,7 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 
 [群組](#test-explorer-groups) 在 [測試總管] 中也與 [特性]、[堆疊追蹤]、[錯誤訊息] 及 [完整名稱] 一起可供作為資料行。 大多數資料行預設並不可見，而您可以自訂要看見的資料行及其顯示順序。
 
-![先依 [狀態] 再依 [類別] 進行分組](../test/media/vs-2019/test-explorer-columns-16-2.png)
+![[Visual Studio Test Explorer] 的螢幕擷取畫面，其中顯示已選取資料行的功能表，以及已選取 [持續時間]、[特性] 和 [錯誤訊息] 的子功能表。](../test/media/vs-2019/test-explorer-columns-16-2.png)
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>篩選、排序及重新排列測試資料行
 
@@ -377,7 +377,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 > [!NOTE]
 > 您不能在抽象類別中執行測試，因為測試只定義於抽象類別，而不會具現化。 若要在抽象類別執行測試，請建立衍生自抽象類別的類別。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)
 - [使用測試總管進行偵錯單元測試](../test/debug-unit-tests-with-test-explorer.md)

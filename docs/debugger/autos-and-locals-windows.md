@@ -1,6 +1,7 @@
 ---
 title: 檢查變數-自動變數和區域變數視窗 |Microsoft Docs
-ms.custom: seodec18
+description: 在 Visual Studio 中進行調試時，檢查 [自動變數] 和 [區域變數] 視窗中的變數。 當您進行調試時，[自動變數] 和 [區域變數] 視窗會顯示變數值。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/18/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,22 +16,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b57c27d038193a5c73bee48814a2aa457a94b6a6
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350741"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760909"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>在 [自動變數] 和 [區域變數] 視窗中檢查變數
 
-當您進行調試時 **，[自動** 變數] 和 [ **區域變數** ] 視窗會顯示變數值。 只有在進行調試過程時，才可以使用 windows。 [自動變數] 視窗會顯示目前中斷點周圍 **使用的變數** 。 [ **區域變數** ] 視窗會顯示在區域範圍中定義的變數，這通常是目前的函式或方法。 如果這是您第一次嘗試進行程式碼的偵錯工具，您可能會想要在進行這篇文章之前，先閱讀絕對初學者和[調試](../debugger/write-better-code-with-visual-studio.md)[程式的偵錯工具](../debugger/debugging-absolute-beginners.md)。
+當您進行調試時 **，[自動** 變數] 和 [ **區域變數** ] 視窗會顯示變數值。 只有在進行調試過程時，才可以使用 windows。 [自動變數] 視窗會顯示目前中斷點周圍 **使用的變數** 。 [ **區域變數** ] 視窗會顯示在區域範圍中定義的變數，這通常是目前的函式或方法。
+
+> [!NOTE]
+> 如果這是您第一次嘗試進行程式碼的偵錯工具，您可能會想要在進行這篇文章之前，先閱讀絕對初學者和[調試](../debugger/write-better-code-with-visual-studio.md)[程式的偵錯工具](../debugger/debugging-absolute-beginners.md)。
 
  [自動變數] 視窗 **適用于 c** #、Visual Basic、c + + 和 Python 程式碼，但不適用於 JavaScript 或 F #。
 
-若**要在進行**調試時開啟 [自動變數] 視窗，請選取 [ **Debug**Windows 自動變數]  >  **Windows**  >  ** **，或按**Ctrl** + **Alt** + **V**  >  **A**。
+若 **要在進行** 調試時開啟 [自動變數] 視窗，請選取 [ **Debug** Windows 自動變數]  >    >  ****，或按 **Ctrl** + **Alt** + **V**  >  **A**。
 
-若要開啟 [**區域變數**] 視窗，請在 [調試] 中選取 [ **Debug**  >  **Windows**  >  **區域變數**]，或按**Alt** + **4**。
+若要開啟 [**區域變數**] 視窗，請在 [調試] 中選取 [ **Debug**  >  **Windows**  >  **區域變數**]，或按 **Alt** + **4**。
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 如 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中的資料視覺效果](/visualstudio/mac/data-visualizations)。
@@ -39,11 +43,11 @@ ms.locfileid: "85350741"
 
 陣列 **和物件會在 [自動** 變數] 和 [ **區域變數** ] 視窗中顯示為樹狀目錄控制項。 選取變數名稱左邊的箭號來展開視圖，以顯示欄位和屬性。 以下是 <xref:System.IO.FileStream?displayProperty=fullName> [ **區域變數** ] 視窗中的物件範例：
 
-![區域變數 - FileStream](../debugger/media/locals-filestream.png "區域變數 - FileStream")
+![[區域變數] 視窗的螢幕擷取畫面，其中檔案設定為 system.string 值。](../debugger/media/locals-filestream.png)
 
-[區域變數 **] 或**[自動**變數**] 視窗中的紅色值表示自上次評估之後的值已變更。 變更可能來自先前的調試會話，或是因為您已變更視窗中的值。
+[區域變數 **] 或**[自動 **變數**] 視窗中的紅色值表示自上次評估之後的值已變更。 變更可能來自先前的調試會話，或是因為您已變更視窗中的值。
 
-偵錯工具視窗中的預設數值格式為 decimal。 若要將它變更為十六進位，請以滑鼠右鍵按一下 [區域變數 **] 或**[自動**變數**] 視窗並選取 [**十六進位顯示**]。 此變更會影響所有偵錯工具視窗。
+偵錯工具視窗中的預設數值格式為 decimal。 若要將它變更為十六進位，請以滑鼠右鍵按一下 [區域變數 **] 或**[自動 **變數**] 視窗並選取 [**十六進位顯示**]。 此變更會影響所有偵錯工具視窗。
 
 ## <a name="edit-variable-values-in-the-autos-or-locals-window"></a>編輯 [自動變數] 或 [區域變數] 視窗中的變數值
 
@@ -91,7 +95,7 @@ ms.locfileid: "85350741"
 
 您可以使用 [ **偵錯工具位置** ] 工具列來選取所 **需的函** 式、執行緒或進程，以變更 [自動變數] 和 [ **區域變數** ] 視窗的內容。
 
-若要啟用 [**偵錯工具位置**] 工具列，請按一下工具列區域的空白部分，然後從下拉式清單中選取 [偵錯工具**位置**]，或選取 [**查看**  >  **工具列**的  >  **偵錯工具位置**]。
+若要啟用 [**偵錯工具位置**] 工具列，請按一下工具列區域的空白部分，然後從下拉式清單中選取 [偵錯工具 **位置**]，或選取 [**查看**  >  **工具列** 的  >  **偵錯工具位置**]。
 
 設定中斷點，並開始偵錯。 當叫用中斷點時，會暫停執行，而且您可以在 [ **偵錯工具位置** ] 工具列中看到位置。
 
@@ -101,7 +105,7 @@ ms.locfileid: "85350741"
 
 不同的程式碼語言會 **在 [自動** 變數] 視窗中顯示不同的變數。
 
-- 在 C# 和 Visual Basic 中，[自動變數]**** 視窗會顯示目前或前一行使用的任何變數。 例如，在 c # 或 Visual Basic 程式碼中，宣告下列四個變數：
+- 在 C# 和 Visual Basic 中，[自動變數] 視窗會顯示目前或前一行使用的任何變數。 例如，在 c # 或 Visual Basic 程式碼中，宣告下列四個變數：
 
    ```csharp
        public static void Main()
@@ -116,7 +120,7 @@ ms.locfileid: "85350741"
 
    在該行設定中斷點 `c = 3;` ，然後啟動偵錯工具。 當執行暫停時， **[自動** 變數] 視窗將會顯示：
 
-   ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
+   ![[自動變數] 視窗的螢幕擷取畫面，將 c 的值設定為0。](../debugger/media/autos-csharp.png)
 
    的值 `c` 為0，因為行尚未 `c = 3` 執行。
 
@@ -136,7 +140,7 @@ ms.locfileid: "85350741"
 
     在行上設定中斷點 `e = 5;` 並執行偵錯工具。 當停止執行時， **[自動** 變數] 視窗將會顯示：
 
-    ![自動變數-C + +](../debugger/media/autos-cplus.png "自動變數-C + +")
+    ![[自動變數] 視窗的螢幕擷取畫面，其中已醒目提示顯示值為3的 int c 的行。](../debugger/media/autos-cplus.png)
 
     變數 `e` 未初始化，因為該行尚未 `e = 5` 執行。
 
@@ -175,7 +179,7 @@ private static int subtractVars(int i, int j)
 
   ![自動變數傳回值 C#](../debugger/media/autosreturnvaluecsharp2.png "自動變數傳回值 C#")
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [什麼是偵錯？](../debugger/what-is-debugging.md)
 - [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)

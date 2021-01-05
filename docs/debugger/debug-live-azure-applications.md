@@ -1,7 +1,7 @@
 ---
 title: 針對即時 ASP.NET Azure 應用程式進行偵錯
 titleSuffix: Visual Studio Enterprise
-description: 了解如何設定快照集，以及使用快照偵錯工具檢視快照集。
+description: 瞭解如何使用 Visual Studio 中的快照偵錯工具來設定快照點，並在 ASP.NET Azure 應用程式的即時偵測時取得快照集。
 ms.custom: ''
 ms.date: 03/16/2018
 ms.topic: how-to
@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 526f7b7cc1af3dd5a370c74baa09cbab50b3d866
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 3393328999793a7e34fb3af9f7abea7430838f76
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879082"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846985"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>使用快照偵錯工具針對即時 ASP.NET Azure 應用程式進行偵錯
 
@@ -35,13 +35,13 @@ ms.locfileid: "91879082"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 快照偵錯工具只能從 Visual Studio 2017 Enterprise 15.5 版或更高版本的 **Azure 開發工作負載**開始使用。 (您可以在 [個別元件]**** 索引標籤下的 [偵錯和測試]**** > [快照偵錯工具]**** 底下找到它。)
+* 快照偵錯工具只能從 Visual Studio 2017 Enterprise 15.5 版或更高版本的 **Azure 開發工作負載** 開始使用。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具]底下找到它。)
 
    ::: moniker range=">=vs-2019"
-   如果尚未安裝，請安裝 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)。 如果您要從先前的 Visual Studio 安裝進行更新，請執行 Visual Studio 安裝程式，並檢查 **ASP.NET 和 網頁程式開發工作負載**中的快照偵錯工具元件。
+   如果尚未安裝，請安裝 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)。 如果您要從先前的 Visual Studio 安裝進行更新，請執行 Visual Studio 安裝程式，並檢查 **ASP.NET 和 網頁程式開發工作負載** 中的快照偵錯工具元件。
    ::: moniker-end
    ::: moniker range="<=vs-2017"
-   如果尚未安裝，請安裝 [Visual Studio 2017 Enterprise 15.5 版](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 或更新版本。 如果您要從先前的 Visual Studio 2017 安裝更新，請執行 Visual Studio 安裝程式，並檢查 **ASP.NET 和 網頁程式開發工作負載**中的快照偵錯工具元件。
+   如果尚未安裝，請安裝 [Visual Studio 2017 Enterprise 15.5 版](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 或更新版本。 如果您要從先前的 Visual Studio 2017 安裝更新，請執行 Visual Studio 安裝程式，並檢查 **ASP.NET 和 網頁程式開發工作負載** 中的快照偵錯工具元件。
    ::: moniker-end
 
 * 基本或更高級的 Azure App Service 方案。
@@ -55,11 +55,11 @@ ms.locfileid: "91879082"
 1. 開啟想要行快照集偵錯的專案。
 
    > [!IMPORTANT]
-   > 若要進行快照集偵錯，需開啟發行至您 Azure App Service 的*相同版本原始程式碼*。
+   > 若要進行快照集偵錯，需開啟發行至您 Azure App Service 的 *相同版本原始程式碼*。
 
 ::: moniker range="<=vs-2017"
 
-2. 在 [Cloud Explorer] ([檢視] > [Cloud Explorer]****) 中，以滑鼠右鍵按一下專案部署所在的 Azure App Service，然後選取 [附加快照偵錯工具]****。
+2. 在 [Cloud Explorer] ([檢視] > [Cloud Explorer]) 中，以滑鼠右鍵按一下專案部署所在的 Azure App Service，然後選取 [附加快照偵錯工具]。
 
    ![啟動快照偵錯工具](../debugger/media/snapshot-launch.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "91879082"
 ::: moniker-end
 
    > [!IMPORTANT]
-   > 第一次選取 [附加快照偵錯工具]**** 時，系統會提示您在 Azure App Service 上安裝快照偵錯工具網站延伸模組。 此安裝需要重新啟動 Azure App Service。
+   > 第一次選取 [附加快照偵錯工具] 時，系統會提示您在 Azure App Service 上安裝快照偵錯工具網站延伸模組。 此安裝需要重新啟動 Azure App Service。
 
    ::: moniker range="<=vs-2017"
    > [!NOTE]
@@ -90,7 +90,7 @@ ms.locfileid: "91879082"
    Visual Studio 現在已經處於快照集偵錯模式。
    ![快照偵測模式](../debugger/media/snapshot-message.png)
 
-   載入 Azure App Service 的所有模組時，[模組]**** 視窗會向您顯示 (選擇 [偵錯] > [Windows] > [模組]**** 以開啟此視窗)。
+   載入 Azure App Service 的所有模組時，[模組]視窗會向您顯示 (選擇 [偵錯] > [Windows] > [模組] 以開啟此視窗)。
 
    ![檢查 [模組] 視窗](../debugger/media/snapshot-modules.png)
 
@@ -100,7 +100,7 @@ ms.locfileid: "91879082"
 
    ![設定快照點](../debugger/media/snapshot-set-snappoint.png)
 
-2. 按一下 [開始收集]**** 以開啟快照點。
+2. 按一下 [開始收集] 以開啟快照點。
 
    ![開啟快照點](../debugger/media/snapshot-start-collection.png)
 
@@ -113,7 +113,7 @@ ms.locfileid: "91879082"
 
 ## <a name="inspect-snapshot-data"></a>檢查快照集資料
 
-1. 叫用快照點時，[診斷工具] 視窗中會顯示快照點。 若要開啟此視窗，請選擇 [偵錯] > [Windows] > [顯示診斷工具]****。
+1. 叫用快照點時，[診斷工具] 視窗中會顯示快照點。 若要開啟此視窗，請選擇 [偵錯] > [Windows] > [顯示診斷工具]。
 
    ![開啟快照點](../debugger/media/snapshot-diagsession-window.png)
 
@@ -121,11 +121,11 @@ ms.locfileid: "91879082"
 
    ![檢查快照集資料](../debugger/media/snapshot-inspect-data.png)
 
-   您可以從這個檢視，將滑鼠移至變數上方以檢視 DataTips、使用 [區域]****、[監看式]****，以及 [呼叫堆疊]**** 視窗，也可以評估運算式。
+   您可以從這個檢視，將滑鼠移至變數上方以檢視 DataTips、使用 [區域]、[監看式]，以及 [呼叫堆疊] 視窗，也可以評估運算式。
 
-   網站本身仍在運作中，使用者也不會受到影響。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合]**** 以重新開啟快照點。
+   網站本身仍在運作中，使用者也不會受到影響。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合] 以重新開啟快照點。
 
-您也可以將更多快照點新增至應用程式，並使用 [更新集合]**** 按鈕將它們開啟。
+您也可以將更多快照點新增至應用程式，並使用 [更新集合] 按鈕將它們開啟。
 
 **需要協助嗎？** 請參閱[疑難排解和已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)與[快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)頁面。
 
@@ -135,7 +135,7 @@ ms.locfileid: "91879082"
 
 #### <a name="to-create-a-conditional-snappoint"></a>建立條件式快照點
 
-1. 以滑鼠右鍵按一下快照點圖示 (空心球) 並選擇 [設定]****。
+1. 以滑鼠右鍵按一下快照點圖示 (空心球) 並選擇 [設定]。
 
    ![選擇設定](../debugger/media/snapshot-snappoint-settings.png)
 
@@ -151,19 +151,19 @@ ms.locfileid: "91879082"
 
 #### <a name="to-create-a-logpoint"></a>建立記錄點
 
-1. 以滑鼠右鍵按一下快照點圖示 (藍色六邊形) 並選擇 [設定]****。
+1. 以滑鼠右鍵按一下快照點圖示 (藍色六邊形) 並選擇 [設定]。
 
-1. 在快照點設定視窗中選取 [動作]****。
+1. 在快照點設定視窗中選取 [動作]。
 
    ![建立記錄點](../debugger/media/snapshot-logpoint.png)
 
-1. 您可以在 [訊息]**** 欄位中輸入想要記錄的新記錄訊息。 也可以在記錄訊息中變數的前後加上大括號，以評估它們。
+1. 您可以在 [訊息] 欄位中輸入想要記錄的新記錄訊息。 也可以在記錄訊息中變數的前後加上大括號，以評估它們。
 
-   如果您選擇 [傳送到輸出視窗]****，當叫用記錄點時，訊息會出現在 [診斷工具] 視窗中。
+   如果您選擇 [傳送到輸出視窗]，當叫用記錄點時，訊息會出現在 [診斷工具] 視窗中。
 
    ![[診斷工具] 視窗中的記錄點資料](../debugger/media/snapshot-logpoint-output.png)
 
-   如果您選擇 [傳送到應用程式記錄檔]****，當叫用記錄點時，只要可以看到來自 `System.Diagnostics.Trace` (或在 .NET Core 中為 `ILogger`) (例如[應用程式深入解析](/azure/application-insights/app-insights-asp-net-trace-logs)) 之訊息的位置，就會顯示訊息。
+   如果您選擇 [傳送到應用程式記錄檔]，當叫用記錄點時，只要可以看到來自 `System.Diagnostics.Trace` (或在 .NET Core 中為 `ILogger`) (例如[應用程式深入解析](/azure/application-insights/app-insights-asp-net-trace-logs)) 之訊息的位置，就會顯示訊息。
 
 ## <a name="next-steps"></a>後續步驟
 

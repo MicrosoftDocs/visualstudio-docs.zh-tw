@@ -1,6 +1,7 @@
 ---
 title: 使用偵錯工具附加至執行中處理序
-ms.custom: seodec18
+description: 探索如何將 Visual Studio 偵錯工具附加到本機或遠端電腦上執行中的進程。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/12/2020
 ms.topic: conceptual
 f1_keywords:
@@ -28,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33af839406497a2a30fba2f5103a64a1da36ed7
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671455"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760922"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具附加至執行中處理序
 
@@ -58,7 +59,7 @@ ms.locfileid: "94671455"
 
 1. 將 **連接目標** 設定為本機電腦名稱稱。
 
-   ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process")
+   ![[附加至進程] 對話方塊的螢幕擷取畫面，其中的連接目標設定為本機電腦名稱稱。](../debugger/media/DBG_Basics_Attach_To_Process.png)
 
 1. 在 [ **可使用的進程** ] 清單中，尋找並選取您想要附加的進程。
 
@@ -190,14 +191,14 @@ ms.locfileid: "94671455"
 
 若要快速選取要附加的執行中進程，請在 [Visual Studio 中輸入 **Ctrl** + **Alt** + **P**，然後輸入進程名稱的第一個字母。
 
-|狀況|Debug 方法|程序名稱|附注和連結|
+|案例|Debug 方法|程序名稱|附注和連結|
 |-|-|-|-|
 |IIS 伺服器上的遠端偵錯程式 ASP.NET 4 或4。5|使用遠端工具並 **附加至進程**|*w3wp.exe*|請參閱遠端 [IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |IIS 伺服器上的遠端 debug ASP.NET Core|使用遠端工具並 **附加至進程**|*w3wp.exe* 或 *dotnet.exe*|從 .NET Core 3 開始， *w3wp.exe* 進程會用於預設的 [應用程式內裝載模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)。 如需應用程式部署，請參閱 [發行至 IIS](/aspnet/core/host-and-deploy/iis/)。 如需詳細資訊，請參閱 [遠端 IIS 電腦上的遠端偵錯程式 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
 |針對支援的應用程式類型在本機 IIS 伺服器上進行用戶端腳本的偵錯工具 |使用 **附加至進程**|*chrome.exe*、 *MicrosoftEdgeCP.exe* 或 *iexplore.exe*|必須啟用腳本調試。 若是 Chrome，您也必須從命令列執行 Chrome in debug 模式 (類型 `chrome.exe --remote-debugging-port=9222`) ，然後在 [**附加至**] 欄位中選取 [ **JavaScript (Chrome)** ]。|
 |在本機電腦上進行 c #、Visual Basic 或 c + + 應用程式的偵錯工具|使用標準的偵錯工具 (**F5**) 或 **附加至進程**|*\<appname>.exe*|在大部分的情況下，請使用標準的偵錯工具，而不是 **附加至進程**。|
 |遠端偵錯 Windows 傳統型應用程式|遠端工具|N/A| 請參閱 [遠端偵測 c # 或 Visual Basic 應用程式](../debugger/remote-debugging-csharp.md) 或 [遠端偵錯程式 c + + 應用程式](../debugger/remote-debugging-cpp.md)|
-|在 Linux 上對 .NET Core 進行調試|使用 **附加至進程**|*dotnet.exe* 或唯一的進程名稱|若要使用 SSH，請參閱 [使用 ssh 在 Linux 上執行的遠端偵錯 .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)。 針對容器化應用程式，請參閱 [附加至在 Docker 容器中執行的進程](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container)。|
+|在 Linux 上對 .NET Core 偵錯|使用 **附加至進程**|*dotnet.exe* 或唯一的進程名稱|若要使用 SSH，請參閱 [使用 ssh 在 Linux 上執行的遠端偵錯 .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)。 針對容器化應用程式，請參閱 [附加至在 Docker 容器中執行的進程](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container)。|
 |對容器化應用程式進行 Debug|*dotnet.exe* 或唯一的進程名稱|請參閱 [附加至在 Docker 容器中執行的進程](../debugger/attach-to-process-running-in-docker-container.md)|
 |Linux 上的遠端 debug Python|使用 **附加至進程**|*debugpy*|請參閱 [從 Python 工具遠端附加](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
 |在沒有偵錯工具的情況下啟動應用程式之後，在本機電腦上進行 ASP.NET 應用程式的偵錯工具|使用 **附加至進程**|*iiexpress.exe*|這有助於讓您的應用程式載入更快，例如在分析時 (例如) 。 |
@@ -248,8 +249,8 @@ ms.locfileid: "94671455"
 
     這時，該附加將完全失敗，您將取得特定的錯誤訊息。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [多進程的偵錯工具](../debugger/debug-multiple-processes.md)
+- [對多重處理序進行偵錯](../debugger/debug-multiple-processes.md)
 - [即時調試](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [遠端偵錯](../debugger/remote-debugging.md)

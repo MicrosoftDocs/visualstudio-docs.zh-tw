@@ -1,5 +1,6 @@
 ---
 title: 遠端偵錯 c + + 專案 |Microsoft Docs
+description: 瞭解如何依照下列逐步指示，從遠端電腦進行 Visual Studio c + + 應用程式的偵錯工具。
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8d3b578e62b917a7553b42a04e53062c406c4fd
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298733"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815798"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Visual Studio 中的遠端偵錯 c + + 專案
 若要在不同的電腦上進行 Visual Studio 應用程式的偵錯工具，請在您要部署應用程式的電腦上安裝並執行遠端工具、將專案設定為從 Visual Studio 連線到遠端電腦，然後部署和執行您的應用程式。
@@ -31,7 +32,7 @@ ms.locfileid: "92298733"
 
 如需有關將通用 Windows 應用程式遠端偵錯 (UWP) 的詳細資訊，請參閱 [Debug 已安裝的應用程式套件](debug-installed-app-package.md)。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 Windows 7 和更新版本上支援遠端偵錯程式， (不是從 Windows Server 2008 Service Pack 2 開始) 和 Windows Server 版本。 如需完整的需求清單，請參閱 [需求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
@@ -59,11 +60,11 @@ Windows 7 和更新版本上支援遠端偵錯程式， (不是從 Windows Serve
 
 2. 在應用程式某處設定容易達到的中斷點，例如在 **MainFrm.cpp** 其中 `CMainFrame::OnCreate` 的開頭。
 
-3. 在方案總管中，以滑鼠右鍵按一下專案，然後選取 [ **屬性**]。 開啟 [偵錯]**** 索引標籤。
+3. 在方案總管中，以滑鼠右鍵按一下專案，然後選取 [ **屬性**]。 開啟 [偵錯] 索引標籤。
 
-4. 將 [要啟動的偵錯工具]**** 設為 [遠端 Windows 偵錯工具]****。
+4. 將 [要啟動的偵錯工具] 設為 [遠端 Windows 偵錯工具]。
 
-    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")
+    ![Visual Studio 方案總管屬性中 [偵錯工具] 索引標籤的螢幕擷取畫面。 [要啟動的偵錯工具] 屬性設定為 [遠端 Windows 偵錯工具]。](../debugger/media/remotedebuggingcplus.png)
 
 5. 對屬性進行下列變更：
 
@@ -81,11 +82,11 @@ Windows 7 和更新版本上支援遠端偵錯程式， (不是從 Windows Serve
 
 6. 在方案總管中，以滑鼠右鍵按一下方案，然後選擇 [ **Configuration Manager**]。
 
-7. 在 [偵錯]**** 組態中，選取 [部署]**** 核取方塊。
+7. 在 [偵錯] 組態中，選取 [部署] 核取方塊。
 
-    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")
+    ![Visual Studio 方案總管中 Configuration Manager 的螢幕擷取畫面。 已選取 [偵錯工具] 設定，並已核取 [部署]。](../debugger/media/remotedebugcplusdeploy.png)
 
-8. 開始偵錯 ([偵錯] > [開始偵錯]****，或 **F5**)。
+8. 開始偵錯 ([偵錯] > [開始偵錯]，或 **F5**)。
 
 9. 可執行檔會自動部署到遠端電腦。
 
@@ -96,20 +97,20 @@ Windows 7 和更新版本上支援遠端偵錯程式， (不是從 Windows Serve
 11. 在 Visual Studio 的電腦上，您應該會看到執行過程在中斷點停止。
 
     > [!TIP]
-    > 或者，您可以另外執行一個步驟來部署檔案。 在 [方案總管]**** 中，以滑鼠右鍵按一下 [mymfc]**** 節點，然後選擇 [部署]****。
+    > 或者，您可以另外執行一個步驟來部署檔案。 在 [方案總管] 中，以滑鼠右鍵按一下 [mymfc] 節點，然後選擇 [部署]。
 
-    如果您有應用程式所需的非程式碼檔案，您可以在 [**遠端 Windows 偵錯工具**] 頁面上，于**其他要部署**的檔案中指定它們。
+    如果您有應用程式所需的非程式碼檔案，您可以在 [**遠端 Windows 偵錯工具**] 頁面上，于 **其他要部署** 的檔案中指定它們。
 
-    或者，您可以將檔案包含在您的專案中，並在每個檔案的 [**屬性**] 頁面中，將 [**內容**] 屬性設定為 **[是]** 。 這些檔案會複製到 [**遠端 Windows 偵錯工具**] 頁面上指定的**部署目錄**。 如果您需要將檔案複製到**部署目錄**的子資料夾，您也可以變更**專案類型**來**複製**檔案，並在該處指定其他屬性。
+    或者，您可以將檔案包含在您的專案中，並在每個檔案的 [**屬性**] 頁面中，將 [**內容**] 屬性設定為 **[是]** 。 這些檔案會複製到 [**遠端 Windows 偵錯工具**] 頁面上指定的 **部署目錄**。 如果您需要將檔案複製到 **部署目錄** 的子資料夾，您也可以變更 **專案類型** 來 **複製** 檔案，並在該處指定其他屬性。
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>設定遠端符號偵錯
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
-- [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)
+- [設定 Windows 防火牆以進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+- [遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)
 - [在遠端 IIS 電腦上對 ASP.NET 進行遠端偵錯](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)

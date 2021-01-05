@@ -9,35 +9,35 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 76224ce191354e05c2220af23aabe010403b35cb
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441400"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815759"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式化 UI 測試功能
 
 請實作自動程式化 UI 測試架構的支援，讓您的控制項能夠進行測試。 您可以用累加方式加入不斷增加的支援層級。 請從支援錄製和播放以及屬性驗證開始。 然後，以此為建置基礎，讓自動程式化的 UI 測試產生器能夠辨識控制項的自訂屬性。 請提供自訂類別，以從產生的程式碼存取那些屬性。 您也可以協助自動程式化 UI 測試產生器，以較接近所錄製動作之意圖的方式來擷取動作。
 
-![CUIT&#95;Full](../test/media/cuit_full.png)
+!此圖顯示如何透過 CreateAccessabilityInstance 類別，將 ChartControl 中的類別延伸至 ChartControlExtensionPackage 中的類別。] (。/test/media/cuit_full.png) 
 
-[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+[!INCLUDE[coded-ui-test-deprecation](../test/includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>藉由實作協助工具，支援錄製和播放以及屬性驗證
 
 自動程式化 UI 測試產生器會擷取它在錄製期間遇到之控制項的相關資訊，然後產生程式碼，以重新執行該工作階段。 如果您的控制項不支援協助工具，自動程式化 UI 測試產生器則會使用螢幕座標來擷取動作 (例如滑鼠點按)。 播放測試時，所產生的程式碼就會在相同的螢幕座標中發出這些動作。 如果在播放測試時，您的控制項出現在螢幕上的不同位置，所產生的程式碼將無法執行該動作。 若未實作控制項的協助工具，如果在不同螢幕組態、不同環境中或 UI 配置變更時播放測試，您可能會看到測試失敗。
 
-![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
+![自動程式碼 UI 測試產生器中錄製視窗的螢幕擷取畫面。 [暫停] 按鈕會反白顯示，然後按一下 [ChartControl] 用戶端會出現在工具提示中。](../test/media/cuit_recordnosupport.png)
 
 不過，如果您實作協助工具，當自動程式化 UI 測試產生器錄製測試時，會使用該協助工具來擷取控制項的相關資訊。 然後，當您執行測試時，即使控制項是在使用者介面中的其他地方，所產生的程式碼還是會對您的控制項重新執行這些事件。 測試作者也可以使用控制項的基本屬性來建立判斷提示。
 
-![CUIT&#95;Record](../test/media/cuit_record.png)
+![自動程式碼 UI 測試產生器中錄製視窗的螢幕擷取畫面。 [暫停] 按鈕會反白顯示，然後按一下 [A] 標籤會出現在工具提示中。](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>支援錄製和播放、屬性驗證，以及巡覽 Windows 表單控制項
 依照下列程序的概述，以及 <xref:System.Windows.Forms.AccessibleObject> 的詳細說明，為您的控制項實作協助工具。
 
-![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
+![ChartControl 中類別的圖表，其中顯示 CreateAccessabilityInstance 和 ChartControl. CurveLegend 類別之間的關聯性。](../test/media/cuit_accessible.png)
 
 1. 實作衍生自 <xref:System.Windows.Forms.Control.ControlAccessibleObject> 的類別，並覆寫 <xref:System.Windows.Forms.Control.AccessibilityObject%2A> 屬性，以傳回您的類別物件。
 
@@ -77,11 +77,11 @@ ms.locfileid: "95441400"
 
 為記錄和播放以及屬性驗證實作基本支援之後，就可以藉由實作 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> 外掛程式，讓自動程式化 UI 測試能夠使用控制項的自訂屬性。 例如，下列程序所建立的屬性提供者，能夠讓自動程式化 UI 測試存取圖表控制項的 CurveLegend 子控制項的狀態屬性：
 
-![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
+![[自動程式碼 UI 測試產生器] 主視窗的螢幕擷取畫面，部分是由已選取文字控制項的 [狀態] 屬性的 [加入判斷提示] 視窗所涵蓋。](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>支援自訂屬性驗證
 
-![CUIT&#95;Props](../test/media/cuit_props.png)
+![ChartControl 和 ChartControlExtension 中已醒目提示 ChartControlExtensionPackage 和 ChartControlIPropertyProvider 類別的類別圖表。](../test/media/cuit_props.png)
 
 1. 覆寫曲線圖例可存取物件的 <xref:System.Windows.Forms.AccessibleObject.Description%2A> 屬性，以描述字串來傳遞豐富的屬性值。 以分號 (;) 分隔多個值。
 
@@ -149,7 +149,7 @@ ms.locfileid: "95441400"
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>加入用來存取控制項的特定類別
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
+![ChartControl 和 ChartControlExtension 中類別的圖表，並在 ChartControlExtensionPackage 下反白顯示 CurveLegend 類別。](../test/media/cuit_codegen.png)
 
 1. 實作衍生自 <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> 的類別，並將控制項的類型新增至建構函式中的搜尋屬性集合。
 
@@ -165,7 +165,7 @@ ms.locfileid: "95441400"
 
 ### <a name="to-support-intent-aware-actions"></a>支援意圖感知動作
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png)
+![ChartControl 和 ChartControlExtensionPackage 類別的圖表，並在 ChartControlExtensionPackage 下反白顯示 ChartControlActionFilter 類別。](../test/media/cuit_actions.png)
 
 1. 實作衍生自 [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) 的動作篩選類別，並覆寫 [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29)、[Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110))、[Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110))、[FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110))、[Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) 和 [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)) 等屬性。
 
@@ -198,7 +198,7 @@ ms.locfileid: "95441400"
 
 6. 在自動程式碼 UI 測試產生器中，建立判斷提示來運作您的屬性提供者，並錄製動作來運作您的動作篩選。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.Windows.Forms.AccessibleObject>
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)

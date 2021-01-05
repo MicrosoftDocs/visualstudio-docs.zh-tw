@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f563d37e6456ec775b2e70d59e07b0627c82994b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330195"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833308"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -24,17 +24,17 @@ ms.locfileid: "96330195"
 
 當單元測試是軟體開發工作流程中不可或缺的一部分時，就能對您的程式碼品質發揮最大的作用。 一旦您撰寫函式或其他應用程式程式碼區塊，就會建立單元測試，以便驗證該程式碼的行為是否對應於輸入資料的標準、界限和不正確情況，並檢查程式碼所做的任何明確或隱含假設。 藉由 *「測試驅動式開發」*(test driven development)，您可在撰寫程式碼之前先建立單元測試，以便將單元測試做為設計文件和功能規格。
 
-您可以從您的程式碼快速產生測試專案和測試方法，或在您需要的時候以手動方式建立此測試。 當您使用 IntelliTest 來探索 .NET 程式碼時，可以產生測試資料和單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 了解如何 [產生程式碼的單元測試](generate-unit-tests-for-your-code-with-intellitest.md)。
-
 [測試總管] 也可以執行在其中已實作 [測試總管] 附加元件介面的協力廠商和開放原始碼的單元測試架構。 您可以透過 Visual Studio 擴充功能管理員和 Visual Studio 組件庫加入多個這些架構。 如需詳細資訊，請參閱 [安裝協力廠商單元測試](../test/install-third-party-unit-test-frameworks.md)架構。
+
+您可以從您的程式碼快速產生測試專案和測試方法，或在您需要的時候以手動方式建立此測試。 當您使用 IntelliTest 來探索 .NET 程式碼時，可以產生測試資料和單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 瞭解如何 [產生 .net 程式碼的單元測試](generate-unit-tests-for-your-code-with-intellitest.md)。
 
 ## <a name="get-started"></a>開始使用
 
 如需單元測試的簡介以便直接參考編碼，請參閱下列其中一個主題：
 
-- [逐步解說：針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [逐步解說：針對 .NET 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [逐步解說：使用 Test Explorer 測試驅動開發](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [在 Visual Studio 中撰寫 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -85,7 +85,7 @@ public void Withdraw(double amount)
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>建立單元測試專案和測試方法
 
-從您的程式碼中產生單元測試專案和單元測試虛設常式通常較快。 或者您可以視您的需求而定，選擇以手動方式建立單元測試專案和測試。 如果您想要使用協力廠商架構來建立單元測試，您將需要安裝下列其中一個延伸模組： [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) 或 [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)。
+針對 c #，從程式碼產生單元測試專案和單元測試存根通常會更快。 或者您可以視您的需求而定，選擇以手動方式建立單元測試專案和測試。 如果您想要使用協力廠商架構從程式碼建立單元測試，您將需要安裝下列其中一個延伸模組： [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) 或 [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)。 如果您不是使用 c #，請略過本節，並 [手動建立單元測試專案和單元測試](#create-the-unit-test-project-and-unit-tests-manually)。
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>產生單元測試專案和單元測試虛設常式
 
@@ -101,7 +101,7 @@ public void Withdraw(double amount)
    ![從編輯器視窗，檢視內容功能表](../test/media/vs-2019/basics-create-unit-tests.png)
 
    > [!NOTE]
-   > [ **建立單元測試** ] 功能表命令僅適用于 managed 程式碼。
+   > [ **建立單元測試** ] 功能表命令僅適用于 c # 程式碼。
    ::: moniker-end
 
 2. 按一下 [確定] 接受預設值來建立單元測試，或變更過去用來建立和命名單元測試專案和單元測試的值。 您可以選取預設加入此單元測試方法的程式碼。
@@ -264,7 +264,7 @@ public void My_Test ()
 
 ::: moniker range="vs-2017"
 
-如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
+如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![Visual Studio Test Explorer 工具列上 [平行測試執行] 切換按鈕的螢幕擷取畫面。](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
 ::: moniker-end
 

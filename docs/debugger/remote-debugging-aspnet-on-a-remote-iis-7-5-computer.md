@@ -1,5 +1,6 @@
 ---
 title: 在 IIS 電腦上對 ASP.NET 進行遠端偵錯
+description: 瞭解如何安裝和設定 Visual Studio ASP.NET MVC 4.5.2 應用程式、將其部署至 IIS，以及從 Visual Studio 附加遠端偵錯程式。
 ms.custom:
 - remotedebugging
 - seodec18
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a3520220da15ef771c8cecbd7962e4448727910
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173911"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815707"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>在執行 IIS 的遠端電腦上對 ASP.NET 進行遠端偵錯
 若要對已部署至 IIS 的 ASP.NET 應用程式進行 debug 錯，請在您部署應用程式的電腦上安裝並執行遠端工具，然後從 Visual Studio 連接到您的執行中應用程式。
@@ -28,7 +29,7 @@ ms.locfileid: "84173911"
 > [!NOTE]
 > 若要改為遠端偵錯程式 ASP.NET Core，請參閱 [IIS 電腦上的遠端偵錯程式 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)。 針對 Azure App Service，您可以使用 [快照偵錯工具](../debugger/debug-live-azure-applications.md) ( .net 4.6.1 所需) 或 [從伺服器總管附加偵錯工具](../debugger/remote-debugging-azure.md)，輕鬆地在預先設定的 IIS 實例上進行部署和偵錯工具。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 ::: moniker range=">=vs-2019"
 需要 Visual Studio 2019，才能遵循本文中所示的步驟。
@@ -60,10 +61,10 @@ ms.locfileid: "84173911"
 1. 建立新的 MVC ASP.NET 應用程式。
 
     ::: moniker range=">=vs-2019"
-    在 Visual Studio 2019 中，輸入 **Ctrl + Q** 開啟 [搜尋] 方塊，輸入 **asp.net**，選擇 [ **範本**]，然後選擇 [ **建立新的 ASP.NET Web 應用程式] ( .NET Framework) **。 在出現的對話方塊中，將專案命名為 **MyASPApp**，然後選擇 [ **建立**]。 選取 [ **MVC** ]，然後選擇 [ **建立**]。
+    在 Visual Studio 2019 中，輸入 **Ctrl + Q** 開啟 [搜尋] 方塊，輸入 **asp.net**，選擇 [ **範本**]，然後選擇 [ **建立新的 ASP.NET Web 應用程式] ( .NET Framework)**。 在出現的對話方塊中，將專案命名為 **MyASPApp**，然後選擇 [ **建立**]。 選取 [ **MVC** ]，然後選擇 [ **建立**]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    若要在 Visual Studio 2017 中這麼做，請選擇 [檔案] **> [新的 > 專案**]，然後選取 [ **Visual c # > Web > ASP.NET web 應用程式** 在 [ASP.NET 4.5.2] **** 範本區段中選取 [MVC] ****。 請確定未選取 [ **啟用 Docker 支援** ]，並將 [ **驗證** ] 設定為 [ **無驗證**]。 將專案命名為 **MyASPApp**。 ) 
+    若要在 Visual Studio 2017 中這麼做，請選擇 [檔案] **> [新的 > 專案**]，然後選取 [ **Visual c # > Web > ASP.NET web 應用程式** 在 [ASP.NET 4.5.2]  範本區段中選取 [MVC] 。 請確定未選取 [ **啟用 Docker 支援** ]，並將 [ **驗證** ] 設定為 [ **無驗證**]。 將專案命名為 **MyASPApp**。 ) 
     ::: moniker-end
 
 2. 開啟  *HomeController.cs* 檔案，並在方法中設定中斷點 `About()` 。
@@ -91,7 +92,7 @@ ms.locfileid: "84173911"
 
 1. 使用 Web Platform Installer (WebPI) 從 Windows Server 2012 R2 的伺服器節點安裝 ASP.NET 4.5 (、選擇 [ **取得新的 Web 平臺元件** ]，然後搜尋 ASP.NET) 
 
-    ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg_iis_aspnet_45.png "RemoteDBG_IIS_AspNet_45")
+    ![Web Platform Installer 5.0 的螢幕擷取畫面，其中顯示與 Web 平臺元件 IIS： ASP.NET 4.5 （以紅色圓圈）進行 asp.net 的搜尋結果。](../debugger/media/remotedbg_iis_aspnet_45.png)
 
     > [!NOTE]
     > 如果您使用的是 Windows Server 2008 R2，請使用下列命令來安裝 ASP.NET 4：
@@ -129,7 +130,7 @@ ms.locfileid: "84173911"
 
 應用程式部署成功之後，它應該會自動啟動。 如果應用程式不是從 Visual Studio 啟動，請在 IIS 中啟動應用程式。
 
-1. 在 [**設定**] 對話方塊中，按一下 [**下一步]** 來啟用偵錯工具，選擇**調試**程式設定，然後選擇 [檔案**發行**選項] 下的 [**移除目的地的其他**檔案]。
+1. 在 [**設定**] 對話方塊中，按一下 [**下一步]** 來啟用偵錯工具，選擇 **調試** 程式設定，然後選擇 [檔案 **發行** 選項] 下的 [**移除目的地的其他** 檔案]。
 
     > [!IMPORTANT]
     > 如果您選擇發行設定，就會在發行時停用 *web.config* 檔案中的調試。
@@ -144,17 +145,17 @@ ms.locfileid: "84173911"
 
 1. 開啟 Windows 檔案總管，然後建立新的資料夾 **C:\Publish**，您稍後將在其中部署 ASP.NET 專案。
 
-2. 如果尚未開啟，請開啟 **Internet Information Services (IIS) 管理員**。  (在 [伺服器管理員] 的左窗格中，選取 [ **IIS**]。 以滑鼠右鍵按一下伺服器，然後選取 [Internet Information Services (IIS) 管理員]****。)
+2. 如果尚未開啟，請開啟 **Internet Information Services (IIS) 管理員**。  (在 [伺服器管理員] 的左窗格中，選取 [ **IIS**]。 以滑鼠右鍵按一下伺服器，然後選取 [Internet Information Services (IIS) 管理員]。)
 
 3. 在左窗格的 [ **連接** ] 底下，移至 [ **網站**]。
 
 4. 選取 [ **預設的網站**]，選擇 [ **基本設定**]，並將 [ **實體路徑** ] 設定為 [ **C:\Publish**]。
 
-5. 以滑鼠右鍵按一下 [預設的網站] **** 節點，並選取 [加入應用程式] ****。
+5. 以滑鼠右鍵按一下 [預設的網站]  節點，並選取 [加入應用程式] 。
 
 6. 將 [ **別名** ] 欄位設定為 **MyASPApp**、接受預設的應用程式集區 (**DefaultAppPool**) ，然後將 **實體路徑** 設定為 **C:\Publish**。
 
-7. 在 [ **連接**] 底下，選取 [ **應用程式**集區]。 開啟 **DefaultAppPool** ，並將 [應用程式集區] 欄位設定為 **ASP.NET v4.0** (ASP.NET 4.5 不是應用程式集區) 的選項。
+7. 在 [ **連接**] 底下，選取 [ **應用程式** 集區]。 開啟 **DefaultAppPool** ，並將 [應用程式集區] 欄位設定為 **ASP.NET v4.0** (ASP.NET 4.5 不是應用程式集區) 的選項。
 
 8. 在 [IIS 管理員] 中選取網站後，選擇 [ **編輯許可權**]，並確定 [使用者] 應用程式集區所設定的 [IUSR]、[IIS_IUSRS] 或 [使用者] 是具有讀取 & 執行許可權的授權使用者。 如果這些使用者都不存在，請以具有 Read & Execute 許可權的使用者的身份新增 IUSR。
 
@@ -202,24 +203,24 @@ ms.locfileid: "84173911"
     > [!TIP]
     > 在 Visual Studio 2017 和更新版本中，您可以使用 **Debug > 重新附加至進程 ...** (Shift + Alt + P) ，重新附加至您先前附加的相同進程。
 
-3. 將 [辨識符號] 欄位設定為 **\<remote computer name>** ，然後按 **enter**鍵。
+3. 將 [辨識符號] 欄位設定為 **\<remote computer name>** ，然後按 **enter** 鍵。
 
-    確認 Visual Studio 將必要的埠新增至電腦名稱稱，其格式如下： ** \<remote computer name> :p 從排序 o**
+    確認 Visual Studio 將必要的埠新增至電腦名稱稱，其格式如下： **\<remote computer name> :p 從排序 o**
 
     ::: moniker range=">=vs-2019"
-    在 Visual Studio 2019 上，您應該會看到** \<remote computer name> ： 4024**
+    在 Visual Studio 2019 上，您應該會看到 **\<remote computer name> ： 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在 Visual Studio 2017 上，您應該會看到** \<remote computer name> ： 4022**
+    在 Visual Studio 2017 上，您應該會看到 **\<remote computer name> ： 4022**
     ::: moniker-end
     需要端口。 如果您沒有看到埠號碼，請以手動方式新增。
 
-4. 按一下 [重新整理]****。
-    您應該會看到有些處理程序會出現在 [可使用的處理序] **** 視窗。
+4. 按一下 [重新整理]。
+    您應該會看到有些處理程序會出現在 [可使用的處理序]  視窗。
 
     如果您看不到任何進程，請嘗試使用 IP 位址，而不是遠端電腦名稱稱 (需要) 埠。 您可以 `ipconfig` 在命令列中使用，以取得 IPv4 位址。
 
-5. 核取 [顯示所有使用者的處理序]  ****。
+5. 核取 [顯示所有使用者的處理序]  。
 
 6. 輸入進程名稱的第一個字母，以快速找出 ASP.NET 4.5 **w3wp.exe** 。
 
@@ -234,7 +235,7 @@ ms.locfileid: "84173911"
 
 7. 按一下 [**附加**]
 
-8. 開啟遠端電腦的網站。 在瀏覽器中，移**至 \<remote computer name> HTTP://**。
+8. 開啟遠端電腦的網站。 在瀏覽器中，移 **至 \<remote computer name> HTTP://**。
 
     您應該會看到 ASP.NET 網頁。
 9. 在正在執行的 ASP.NET 應用程式中，按一下 [ **關於** ] 頁面的連結。
@@ -261,7 +262,7 @@ ms.locfileid: "84173911"
 
 1. 若要在 Windows Server 上開啟埠，請開啟 [ **開始** ] 功能表，搜尋 [ **具有 Advanced Security 的 Windows 防火牆**]。
 
-2. 然後選擇 [ **輸入規則] > 新規則 > 埠**]。 選擇 **[下一步]** ，然後在 [**特定本機埠**] 底下輸入埠號碼，再按 [**下一步]**，再按 **[** 下一步]，然後再按 [下一步]，並為輸入規則新增 (**IIS**、 **Web Deploy**或) **msvsmon**
+2. 然後選擇 [ **輸入規則] > 新規則 > 埠**]。 選擇 **[下一步]** ，然後在 [**特定本機埠**] 底下輸入埠號碼，再按 [**下一步]**，再按 **[** 下一步]，然後再按 [下一步]，並為輸入規則新增 (**IIS**、 **Web Deploy** 或) **msvsmon**
 
     如果您想要設定 Windows 防火牆的詳細資訊，請參閱 [設定 Windows 防火牆以進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。
 

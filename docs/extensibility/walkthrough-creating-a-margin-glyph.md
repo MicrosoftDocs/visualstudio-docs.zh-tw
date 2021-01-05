@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：建立邊界字型 |Microsoft Docs
+description: 瞭解如何使用自訂編輯器延伸模組，透過此逐步解說自訂編輯器邊界的外觀。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a2ac481ebf76fc2b34be841cd20d15b97fcfa9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905052"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863089"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>逐步解說：建立邊界字元
 您可以使用自訂編輯器延伸自訂編輯器邊界的外觀。 本逐步解說會在程式碼批註中出現 "todo" 一字時，將自訂圖像放在指標邊界上。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-mef-project"></a>建立 MEF 專案
@@ -132,7 +134,7 @@ ms.locfileid: "85905052"
 
 1. 建置方案。
 
-2. 按下 **F5**來執行專案。 Visual Studio 的第二個實例會啟動。
+2. 按下 **F5** 來執行專案。 Visual Studio 的第二個實例會啟動。
 
 3. 請確定顯示的是指標邊界。  (在 [ **工具** ] 功能表上，按一下 [ **選項**]。 在 [ **文字編輯器** ] 頁面上，確認已選取 [ **指標邊界** ]。 ) 
 

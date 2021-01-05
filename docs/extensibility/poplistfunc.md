@@ -1,5 +1,7 @@
 ---
 title: POPLISTFUNC |Microsoft Docs
+description: 深入瞭解 POPLISTFUNC 回呼函式，此函式是由原始檔控制外掛程式用來更新檔案或目錄清單。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c5f8c1683a993915476ff23f1f5d5f2c2aba462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 239f1aa5a55c3a5ce3a0f2a3ec9145f3cdb0630e
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702068"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863165"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 此回呼會由 IDE 提供給 [SccPopulateList](../extensibility/sccpopulatelist-function.md) ，並且由原始檔控制外掛程式用來更新檔案或目錄的清單， (也提供給 `SccPopulateList` 函數) 。
 
- 當使用者在 IDE 中選擇 **Get** 命令時，ide 會顯示使用者可取得之所有檔案的清單方塊。 可惜的是，IDE 不知道使用者可能取得的所有檔案的確切清單，只有外掛程式具有這份清單。 如果其他使用者已將檔案新增至原始程式碼控制專案，這些檔案應該會出現在清單中，但 IDE 不知道它們。 IDE 會建立其認為使用者可以取得的檔案清單。 它會在向使用者顯示此清單之前呼叫 SccPopulateList， [SccPopulateList](../extensibility/sccpopulatelist-function.md) `,` 讓原始檔控制外掛程式有機會從清單中新增及刪除檔案。
+ 當使用者在 IDE 中選擇 **Get** 命令時，ide 會顯示使用者可取得之所有檔案的清單方塊。 可惜的是，IDE 不知道使用者可能取得的所有檔案的確切清單，只有外掛程式具有這份清單。 如果其他使用者已將檔案新增至原始程式碼控制專案，這些檔案應該會出現在清單中，但 IDE 不知道它們。 IDE 會建立其認為使用者可以取得的檔案清單。 它會在向使用者顯示此清單之前呼叫 SccPopulateList， [](../extensibility/sccpopulatelist-function.md) `,` 讓原始檔控制外掛程式有機會從清單中新增及刪除檔案。
 
 ## <a name="signature"></a>簽章
  原始檔控制外掛程式會使用下列原型來呼叫 IDE 執行的函式，以修改清單：
@@ -58,7 +60,7 @@ typedef BOOL (*POPLISTFUNC) (
 > [!NOTE]
 > `SCC_CAP_POPULATELIST`Visual Studio 需要功能位。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDE 所執行的回呼函數](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

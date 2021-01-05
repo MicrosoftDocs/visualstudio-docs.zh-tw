@@ -1,5 +1,7 @@
 ---
 title: 註冊檔案名副檔名的動詞 |Microsoft Docs
+description: 瞭解如何使用 Shell 索引鍵，註冊與副檔名的程式設計識別碼相關聯的動詞命令。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701538"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863051"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>註冊副檔名的動詞
 副檔名與應用程式的關聯通常會有使用者按兩下檔案時所發生的慣用動作。 這個慣用的動作會連結至對應至動作的動詞，例如 open。
 
- 您可以使用位於 **HKEY_CLASSES_ROOT \{ ProgID} \Shell**的 Shell 索引鍵，向擴充功能 (ProgID) 的程式設計相關聯的動詞命令。 如需詳細資訊，請參閱 [檔案類型](/windows/desktop/shell/fa-file-types)。
+ 您可以使用位於 **HKEY_CLASSES_ROOT \{ ProgID} \Shell** 的 Shell 索引鍵，向擴充功能 (ProgID) 的程式設計相關聯的動詞命令。 如需詳細資訊，請參閱 [檔案類型](/windows/desktop/shell/fa-file-types)。
 
 ## <a name="register-standard-verbs"></a>註冊標準動詞
  作業系統會辨識下列標準動詞：
@@ -29,7 +31,7 @@ ms.locfileid: "80701538"
 
 - 編輯
 
-- 播放
+- Play
 
 - 列印
 
@@ -71,7 +73,7 @@ ms.locfileid: "80701538"
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""
 ```
 
- 若要在現有的實例中開啟檔案 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，請註冊 DDEEXEC 金鑰。 下列範例說明適用于 .cs 檔案的標準動詞註冊 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *.cs* 。
+ 若要在現有的實例中開啟檔案 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，請註冊 DDEEXEC 金鑰。 下列範例說明適用于 .cs 檔案的標準動詞註冊 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]  。
 
 ```
 [HKEY_CLASSES_ROOT\.cs]
@@ -106,10 +108,10 @@ ms.locfileid: "80701538"
 ```
 
 ## <a name="set-the-default-verb"></a>設定預設動詞
- 預設動詞命令是使用者按兩下 Windows 檔案總管中的檔案時，所執行的動作。 預設動詞是指定為**HKEY_CLASSES_ROOT \\ *progid*\Shell**索引鍵之預設值的動詞。 如果未指定任何值，預設動詞是**HKEY_CLASSES_ROOT \\ *progid*\Shell**索引鍵清單中指定的第一個動詞。
+ 預設動詞命令是使用者按兩下 Windows 檔案總管中的檔案時，所執行的動作。 預設動詞是指定為 **HKEY_CLASSES_ROOT \\ *progid*\Shell** 索引鍵之預設值的動詞。 如果未指定任何值，預設動詞是 **HKEY_CLASSES_ROOT \\ *progid*\Shell** 索引鍵清單中指定的第一個動詞。
 
 > [!NOTE]
 > 如果您打算在並存部署中變更擴充功能的預設動詞，請考慮安裝和移除的影響。 在安裝期間，會覆寫原始預設值。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [管理並存檔案關聯](../extensibility/managing-side-by-side-file-associations.md)

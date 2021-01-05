@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：自訂文字視圖 |Microsoft Docs
+description: 瞭解如何使用這個逐步解說，藉由在編輯器的格式對應中修改任何數個屬性，以自訂文字視圖。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 057e2a68e1d9a130f69441d8aec4b6a7fe0249e9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904937"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862962"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>逐步解說：自訂文字視圖
 您可以在編輯器格式對應中修改下列任何屬性，以自訂文字視圖：
@@ -32,7 +34,7 @@ ms.locfileid: "85904937"
 
 - 可見空白
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-mef-project"></a>建立 MEF 專案
@@ -91,5 +93,5 @@ ms.locfileid: "85904937"
 
 5. 開啟可見的空白。  (在 [ **編輯** ] 功能表上，指向 [ **Advanced** ]，然後按一下 [ **View** 空白字元]) 。 在文字中輸入一些索引標籤。 應該會顯示代表索引標籤的紅色箭號。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

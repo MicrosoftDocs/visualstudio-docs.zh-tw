@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 68d6d2823a4944ec74aaa477fb7b3913943a7296
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330104"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833269"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>使用自動程式化 UI 測試來測試您的程式碼
 
@@ -217,7 +217,7 @@ ms.locfileid: "96330104"
 
 有時，新增控制項並驗證其屬性時，您可能需要使用鍵盤。 例如，如果您嘗試錄製使用右鍵功能表控制項的自動程式化 UI 測試，則在嘗試從 [自動程式化 UI 測試產生器] 中選取 [新增判斷提示] 工具時，控制項中的功能表項目清單將會失去焦點並消失。 下圖示範了這一點，如果您嘗試使用 [加入判斷提示] 工具選取 Internet Explorer 中的右鍵功能表，則該右鍵功能表會失去焦點並消失。
 
-![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
+![螢幕擷取畫面：顯示自動程式碼 UI 測試產生器中的 [加入判斷提示] 工具，與 Internet Explorer 中的滑鼠右鍵功能表重迭。](../test/media/codeduitest_selectcontrolkeyboard.png)
 
 若要使用鍵盤選取 UI 控制項，請使用滑鼠將滑鼠指標移至控制項上方。 然後同時按住 **Ctrl** 鍵和 **I** 鍵。 放開按鍵。 此控制項是透過 [自動程式碼 UI 測試產生器] 所錄製。
 
@@ -229,7 +229,7 @@ ms.locfileid: "96330104"
 
 當您執行自動程式化 UI 測試時，請將滑鼠指標移至控制項上方。 然後按住 **Ctrl** 鍵，同時按住鍵盤上的 **Shift** 和 **R** 鍵。 放開按鍵。 滑鼠停留事件是透過 [自動程式化 UI 測試產生器] 所錄製。
 
-![CodedUI&#95;Hover](../test/media/codedui_hover.png)
+![自動程式碼 UI 測試產生器命令列的螢幕擷取畫面，其中已選取暫停圖示。 工具提示視窗會顯示滑鼠停留事件的位置。](../test/media/codedui_hover.png)
 
 在您產生測試方法之後，會在 *UIMap.Designer.cs* 檔案中加入與下列範例類似的程式碼：
 
@@ -242,7 +242,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 如果在我環境的其他位置中正在使用用於擷取滑鼠停留事件的按鍵指派：
 
-如有必要， **Ctrl** + **Shift** + 您可以將用來在自動程式化 UI 測試中套用滑鼠停留事件的預設鍵盤指派（Ctrl Shift **R** ）設定為使用不同的索引鍵。
+如有必要，  +  + 您可以將用來在自動程式化 UI 測試中套用滑鼠停留事件的預設鍵盤指派（Ctrl Shift **R** ）設定為使用不同的索引鍵。
 
 > [!WARNING]
 > 在一般情況下，您應該不需要變更滑鼠停留事件的鍵盤指派。 重新指派鍵盤指派時請小心。 您的選擇可能已在 Visual Studio 或正在測試之應用程式的其他位置中使用。
@@ -458,7 +458,7 @@ myWinCheckBox.Checked = true;
 
 自動程式化 UI 測試經常用於將手動測試自動化。 如需自動化測試的詳細資訊，請參閱 [Visual Studio 中的測試工具](../test/improve-code-quality.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [記錄和播放手動測試](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts&preserve-view=true)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)

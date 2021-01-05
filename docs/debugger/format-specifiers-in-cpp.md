@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 74b6b6b6a8f7a9f5f234a9b46c799e6e0580536f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863032"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761325"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中 c + + 的格式規範
 您可以使用格式規範變更在 [**監看式]、[** 自動變數]**和 [****區域變數**] 視窗中顯示值的格式。
@@ -52,9 +52,9 @@ int main() {
 }
 ```
 
-將 `my_var1` 變數加入至 [**監看** 式] 視窗（在進行調試時），並將它設為 [ **Debug**  >  ****]  >  **Watch**  >  **Watch 1** 接下來，以滑鼠右鍵按一下變數，然後選取 [ **十六進位顯示**]。 現在 [ **監看** 式] 視窗會顯示值0x0065。 若要查看以字元而非整數表示的此值，請先以滑鼠右鍵按一下並取消選取 [ **十六進位顯示**]。 然後在 **名稱** 資料行中 **，** 將字元格式規範 c 加入變數名稱後面。 **值** 資料行現在會顯示 **101 ' e '**。
+將 `my_var1` 變數加入至 [**監看** 式] 視窗（在進行調試時），並將它設為 [ **Debug**  >  ****]  >    >   接下來，以滑鼠右鍵按一下變數，然後選取 [ **十六進位顯示**]。 現在 [ **監看** 式] 視窗會顯示值0x0065。 若要查看以字元而非整數表示的此值，請先以滑鼠右鍵按一下並取消選取 [ **十六進位顯示**]。 然後在 **名稱** 資料行中 **，** 將字元格式規範 c 加入變數名稱後面。 **值** 資料行現在會顯示 **101 ' e '**。
 
-![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
+![Visual Studio 監看式視窗的螢幕擷取畫面，其中有一個選取的線條顯示 my_var1 的值為 101 ' e ' 和 int 類型。](../debugger/media/watchformatcplus1.png)
 
 ::: moniker range=">= vs-2019" 
 您可以在 [ **監看** 式] 視窗中附加逗號 (，) ，以從可用的格式規範清單中查看並選取。 

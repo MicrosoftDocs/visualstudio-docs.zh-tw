@@ -1,6 +1,6 @@
 ---
 title: 偵錯工具中的運算式 |Microsoft Docs
-description: 'Visual c # 專案可使用 [編輯後繼續]。 瞭解哪些是支援的編輯，以及如何控制是否以及何時套用您的編輯。'
+description: 瞭解 Visual Studio 偵錯工具中的運算式評估工具不支援哪些語言運算式。
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2020
 ms.topic: conceptual
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d04ce836316024eb4aef9f1b4a9955d98dbba8
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 5b05af635ba7774cdb31291ad7c2b7eb52686bcf
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862863"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846726"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的運算式
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。
@@ -206,7 +206,7 @@ int main()
 
 - 命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [C + + 中的格式規範](../debugger/format-specifiers-in-cpp.md)
 - [ (c + +) 的內容運算子 ](../debugger/context-operator-cpp.md)
 - [C 中的格式規範#](../debugger/format-specifiers-in-csharp.md)

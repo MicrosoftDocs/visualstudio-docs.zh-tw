@@ -1,5 +1,7 @@
 ---
 title: 保存專案專案的屬性 |Microsoft Docs
+description: 瞭解如何將屬性儲存在擴充專案類型的專案檔中，以保存您新增至專案專案的屬性。
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 224a1e4f5f5d56022ae7c1e0572ca648b9a5aa6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72de98e08581b105322b07390d85b95c06b1083c
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906196"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862693"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>保存專案專案的屬性
 您可能會想要保存新增至專案專案的屬性，例如原始程式檔的作者。 您可以藉由將屬性儲存在專案檔中，來完成這項作業。
 
  將屬性保存在專案檔中的第一個步驟是取得專案的階層作為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 介面。 您可以使用自動化或使用來取得這個介面 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> 。 取得介面之後，您可以使用它來判斷目前選取的專案專案。 擁有專案專案識別碼之後，您就可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 加入屬性。
 
- 在下列程式中，您會*VsPkg.cs* `Author` 使用專案檔中的值來保存 VsPkg.cs 屬性 `Tom` 。
+ 在下列程式中，您會 `Author` 使用專案檔中的值來保存 VsPkg.cs 屬性 `Tom` 。
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>取得具有 DTE 物件的專案階層
 
@@ -67,7 +69,7 @@ ms.locfileid: "85906196"
     uint itemid;
 
     // Retrieve shell interface in order to get current selection
-    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
+    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
     if (monitorSelection == null)
         throw new InvalidOperationException();
 
@@ -117,7 +119,7 @@ ms.locfileid: "85906196"
 
 1. 啟動 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 然後開啟或建立解決方案。
 
-2. 選取 **方案總管**中的專案專案 VsPkg.cs。
+2. 選取 **方案總管** 中的專案專案 VsPkg.cs。
 
 3. 使用中斷點，或判斷是否已載入您的 VSPackage 並執行 SetItemAttribute。
 
@@ -132,6 +134,6 @@ ms.locfileid: "85906196"
    </Compile>
    ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [自訂工具](../extensibility/internals/custom-tools.md)

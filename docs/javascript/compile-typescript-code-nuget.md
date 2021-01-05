@@ -1,6 +1,6 @@
 ---
 title: 使用 NuGet 編譯和建立 TypeScript 程式碼
-description: 瞭解如何在 Visual Studio 中編譯和建立 TypeScript。
+description: 瞭解如何使用 NuGet 套件將 Typescript 支援新增至您的 Visual Studio 專案。
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 16ff335fdf8ca76889562cfd94807ec1adc516d2
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 929c17c9cbd2a0987bebca02c70b3b751c19fc9a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927922"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846833"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>編譯 TypeScript 程式碼 (ASP.NET Core) 
 
@@ -123,15 +123,15 @@ ms.locfileid: "91927922"
 
     1. *Microsoft TypeScript*
 
-        此檔案會設定變數，以指定執行時間平臺，例如*TypeScript.Tasks.dll*的路徑，然後再從 [*工具*] 資料夾匯入*Microsoft 的 TypeScript。*
+        此檔案會設定變數，以指定執行時間平臺，例如 *TypeScript.Tasks.dll* 的路徑，然後再從 [*工具*] 資料夾匯入 *Microsoft 的 TypeScript。*
 
     2. *.Props。*
 
-        此檔案會從*tools*資料夾匯入 *.props* ，並設定屬性，指出已透過 NuGet 起始組建。
+        此檔案會從 *tools* 資料夾匯入 *.props* ，並設定屬性，指出已透過 NuGet 起始組建。
 
 - *工具* 資料夾
 
-    2.3 之前的套件版本僅包含一個 tsc 資料夾。 您可以在根層級上找到*Microsoft 的 TypeScript. 目標*和*TypeScript.Tasks.dll* 。
+    2.3 之前的套件版本僅包含一個 tsc 資料夾。 您可以在根層級上找到 *Microsoft 的 TypeScript. 目標* 和 *TypeScript.Tasks.dll* 。
 
     在封裝2.3 版和更新版本中，根層級包含 `Microsoft.TypeScript.targets` 和 `Microsoft.TypeScript.Default.props` 。 如需這些檔案的詳細資訊，請參閱 [MSBuild](https://www.typescriptlang.org/docs/handbook/compiler-options-in-msbuild.html)設定。
 
@@ -163,7 +163,7 @@ ms.locfileid: "91927922"
 
 1. 以滑鼠右鍵按一下專案，然後選擇 **[卸載專案**]。
 
-1. 以滑鼠右鍵按一下專案，然後選擇 [**編輯 \<*project file name*\> **]。
+1. 以滑鼠右鍵按一下專案，然後選擇 [**編輯 \<*project file name*\>**]。
 
    專案檔案隨即開啟。
 

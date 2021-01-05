@@ -1,6 +1,6 @@
 ---
 title: 針對即時 ASP.NET Azure Kubernetes 服務進行偵錯
-description: 了解如何設定快照集，以及使用快照偵錯工具檢視快照集。
+description: 瞭解如何使用 Visual Studio 中的快照偵錯工具來設定快照點，並在 ASP.NET Azure Kubernetes Services 的即時偵測時取得快照集。
 ms.custom: ''
 ms.date: 02/11/2019
 ms.topic: how-to
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: e0f062108f19b38c6bf6514eda78098f493b3f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 823da6da0a842766739cb50c700bb723a47d0309
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350650"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846975"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>使用快照偵錯工具針對即時 ASP.NET Azure Kubernetes 服務進行偵錯
 
@@ -33,9 +33,9 @@ ms.locfileid: "85350650"
 > * 設定快照點及檢視快照
 > * 設定記錄點
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
-* 適用于 Azure Kubernetes Services 的快照偵錯工具僅適用于 Visual Studio 2019 Enterprise 或更高版本的 **azure 開發工作負載**。 (您可以在 [個別元件]**** 索引標籤下的 [偵錯和測試]**** > [快照偵錯工具]**** 底下找到它。)
+* 適用于 Azure Kubernetes Services 的快照偵錯工具僅適用于 Visual Studio 2019 Enterprise 或更高版本的 **azure 開發工作負載**。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具]底下找到它。)
 
     如果尚未安裝，請安裝 [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
 
@@ -52,7 +52,7 @@ ms.locfileid: "85350650"
 1. 開啟想要行快照集偵錯的專案。
 
     > [!IMPORTANT]
-    > 若要進行快照集偵錯，需開啟發行至您 Azure Kubernetes 服務的*相同版本原始程式碼*。
+    > 若要進行快照集偵錯，需開啟發行至您 Azure Kubernetes 服務的 *相同版本原始程式碼*。
 
 1. 選擇 **Debug > 附加快照偵錯工具**.。。選取您的 web 應用程式部署所在的 AKS 資源和 Azure 儲存體帳戶，然後按一下 [ **附加**]。 快照偵錯工具也支援 [Azure App Service](debug-live-azure-applications.md) 和 [Azure 虛擬機器 (VM) & 虛擬機器擴展集](debug-live-azure-virtual-machines.md)。
 
@@ -67,7 +67,7 @@ Visual Studio 現在已經處於快照集偵錯模式。
 
    ![快照集偵錯模式](../debugger/media/snapshot-message.png)
 
-   載入 Azure App Service 的所有模組時，[模組]**** 視窗會向您顯示 (選擇 [偵錯] > [Windows] > [模組]**** 以開啟此視窗)。
+   載入 Azure App Service 的所有模組時，[模組]視窗會向您顯示 (選擇 [偵錯] > [Windows] > [模組] 以開啟此視窗)。
 
    ![檢查 [模組] 視窗](../debugger/media/snapshot-modules.png)
 
@@ -77,7 +77,7 @@ Visual Studio 現在已經處於快照集偵錯模式。
 
    ![設定快照點](../debugger/media/snapshot-set-snappoint.png)
 
-1. 按一下 [開始收集]**** 以開啟快照點。
+1. 按一下 [開始收集] 以開啟快照點。
 
    ![開啟快照點](../debugger/media/snapshot-start-collection.png)
 
@@ -90,7 +90,7 @@ Visual Studio 現在已經處於快照集偵錯模式。
 
 ## <a name="inspect-snapshot-data"></a>檢查快照集資料
 
-1. 叫用快照點時，[診斷工具] 視窗中會顯示快照點。 若要開啟此視窗，請選擇 [偵錯] > [Windows] > [顯示診斷工具]****。
+1. 叫用快照點時，[診斷工具] 視窗中會顯示快照點。 若要開啟此視窗，請選擇 [偵錯] > [Windows] > [顯示診斷工具]。
 
     ![開啟快照點](../debugger/media/snapshot-diagsession-window.png)
 
@@ -98,11 +98,11 @@ Visual Studio 現在已經處於快照集偵錯模式。
 
     ![檢查快照集資料](../debugger/media/snapshot-inspect-data.png)
 
-    您可以從這個檢視，將滑鼠移至變數上方以檢視 DataTips、使用 [區域]****、[監看式]****，以及 [呼叫堆疊]**** 視窗，也可以評估運算式。
+    您可以從這個檢視，將滑鼠移至變數上方以檢視 DataTips、使用 [區域]、[監看式]，以及 [呼叫堆疊] 視窗，也可以評估運算式。
 
-    網站本身仍在運作中，使用者也不會受到影響。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合]**** 以重新開啟快照點。
+    網站本身仍在運作中，使用者也不會受到影響。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合] 以重新開啟快照點。
 
-您也可以將更多快照點新增至應用程式，並使用 [更新集合]**** 按鈕將它們開啟。
+您也可以將更多快照點新增至應用程式，並使用 [更新集合] 按鈕將它們開啟。
 
 **需要協助嗎？** 請參閱[疑難排解和已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)與[快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)頁面。
 
@@ -112,7 +112,7 @@ Visual Studio 現在已經處於快照集偵錯模式。
 
 #### <a name="to-create-a-conditional-snappoint"></a>建立條件式快照點
 
-1. 以滑鼠右鍵按一下快照點圖示 (空心球) 並選擇 [設定]****。
+1. 以滑鼠右鍵按一下快照點圖示 (空心球) 並選擇 [設定]。
 
    ![選擇設定](../debugger/media/snapshot-snappoint-settings.png)
 
@@ -128,19 +128,19 @@ Visual Studio 現在已經處於快照集偵錯模式。
 
 #### <a name="to-create-a-logpoint"></a>建立記錄點
 
-1. 以滑鼠右鍵按一下快照點圖示 (藍色六邊形) 並選擇 [設定]****。
+1. 以滑鼠右鍵按一下快照點圖示 (藍色六邊形) 並選擇 [設定]。
 
-1. 在快照點設定視窗中選取 [動作]****。
+1. 在快照點設定視窗中選取 [動作]。
 
     ![建立記錄點](../debugger/media/snapshot-logpoint.png)
 
-1. 您可以在 [訊息]**** 欄位中輸入想要記錄的新記錄訊息。 也可以在記錄訊息中變數的前後加上大括號，以評估它們。
+1. 您可以在 [訊息] 欄位中輸入想要記錄的新記錄訊息。 也可以在記錄訊息中變數的前後加上大括號，以評估它們。
 
-    如果您選擇 [傳送到輸出視窗]****，當叫用記錄點時，訊息會出現在 [診斷工具] 視窗中。
+    如果您選擇 [傳送到輸出視窗]，當叫用記錄點時，訊息會出現在 [診斷工具] 視窗中。
 
     ![[診斷工具] 視窗中的記錄點資料](../debugger/media/snapshot-logpoint-output.png)
 
-    如果您選擇 [傳送到應用程式記錄檔]****，當叫用記錄點時，只要可以看到來自 `System.Diagnostics.Trace` (或在 .NET Core 中為 `ILogger`) (例如[應用程式深入解析](/azure/application-insights/app-insights-asp-net-trace-logs)) 之訊息的位置，就會顯示訊息。
+    如果您選擇 [傳送到應用程式記錄檔]，當叫用記錄點時，只要可以看到來自 `System.Diagnostics.Trace` (或在 .NET Core 中為 `ILogger`) (例如[應用程式深入解析](/azure/application-insights/app-insights-asp-net-trace-logs)) 之訊息的位置，就會顯示訊息。
 
 ## <a name="next-steps"></a>後續步驟
 

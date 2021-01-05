@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: a832bcee3f722cabaedcb3ac0672dbe09a4e77c4
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862785"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761208"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中 c # 的格式規範
 您可以使用格式規範變更在 [ **監看** 式] 視窗中顯示值的格式。 您也可以 **在 [即時** 運算] 視窗、 **命令** 視窗、追蹤 [點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)和來源視窗中使用格式規範。 如果您在這些視窗中的運算式上暫停，結果會以指定的格式顯示顯示在  [資料提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) 中。
@@ -50,9 +50,9 @@ ms.locfileid: "96862785"
 }
 ```
 
-將 `my_var1` 變數加入至 [**監看** 式] 視窗（在進行調試時），並將它設為 [ **Debug**  >  ****]  >  **Watch**  >  **Watch 1** 接下來，以滑鼠右鍵按一下變數，然後選取 [ **十六進位顯示**]。 現在 [ **監看** 式] 視窗會顯示值0x0065。 若要以十進位整數而非十六進位整數來查看此值，請在變數名稱後面的 **名稱** 資料行中，加入十進位格式規範 **d** 。 **值** 資料行現在會顯示 **101**。
+將 `my_var1` 變數加入至 [**監看** 式] 視窗（在進行調試時），並將它設為 [ **Debug**  >  ****]  >    >   接下來，以滑鼠右鍵按一下變數，然後選取 [ **十六進位顯示**]。 現在 [ **監看** 式] 視窗會顯示值0x0065。 若要以十進位整數而非十六進位整數來查看此值，請在變數名稱後面的 **名稱** 資料行中，加入十進位格式規範 **d** 。 **值** 資料行現在會顯示 **101**。
 
-![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+![Visual Studio 監看式視窗的螢幕擷取畫面，其中有一行顯示 my_var1、d 的值為101和 int 類型。](../debugger/media/watchformatcsharp.png)
 
 ::: moniker range=">= vs-2019" 
 
@@ -77,6 +77,6 @@ ms.locfileid: "96862785"
 |raw|以項目在原始項目節點中出現的形式顯示該項目。 只有在 Proxy 物件上有效。|字典\<T>|字典的原始觀點\<T>|
 |results|與實作為 IEnumerable 或 IEnumerable 之型別的變數搭配使用 \<T> ，通常是查詢運算式的結果。 只顯示包含查詢結果的成員。|顯示所有成員|顯示符合查詢條件的成員|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [觀賞和快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)
 - [自動變數和區域變數視窗](../debugger/autos-and-locals-windows.md)

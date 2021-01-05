@@ -1,9 +1,9 @@
 ---
 title: 開始使用單元測試
-description: 使用 Visual Studio 來定義和執行單元測試，藉以維護程式碼的健康狀態、確定程式碼涵蓋範圍，以及在客戶遭遇問題之前找出錯誤和失敗。
+description: 使用 Visual Studio 來定義及執行單元測試，以維護程式碼健全狀況，並在客戶執行之前尋找錯誤和錯誤。
 ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
-ms.topic: conceptual
+ms.topic: tutorial
 helpviewer_keywords:
 - unit testing, create unit test plans
 author: mikejo5000
@@ -11,16 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3daff1a7b7c2e62b4ca4a508c5c8dd31261a40dd
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 31314a669815d38ed408a28e033e4943df0f75d3
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441777"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756652"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
 使用 Visual Studio 來定義和執行單元測試，藉以維護程式碼的健康狀態、確定程式碼涵蓋範圍，以及在客戶遭遇問題之前找出錯誤和失敗。 經常執行單元測試，以確定您的程式碼運作正常。
+
+在本文中，程式碼和圖例使用 c #，但概念和功能適用于 .NET 語言、c + +、Python、JavaScript 和 TypeScript。
 
 ## <a name="create-unit-tests"></a>建立單元測試
 
@@ -28,7 +30,7 @@ ms.locfileid: "95441777"
 
 1. 在 Visual Studio 中開啟您要測試的專案。
 
-   為了示範範例單元測試的目的，本文會測試名為 **helloworld** 的簡單 "Hello World" 專案。 此類專案的範例程式碼如下所示：
+   為了示範範例單元測試的目的，本文會測試一個簡單的 "Hello World" c # 專案，名為 **helloworld**。 此類專案的範例程式碼如下所示：
 
    ```csharp
    namespace HelloWorldCore
@@ -42,9 +44,16 @@ ms.locfileid: "95441777"
       }
    ```
 
-1. 在 [方案總管] 中，選取解決方案節點。 然後，從頂端功能表列選取 [檔案 **File**  >  **加入**  >  **新專案**]。
+1. 在 [方案總管] 中，選取解決方案節點。 然後，從頂端功能表列選取 [檔案  >  **加入**  >  **新專案**]。
 
-1. 在新的專案對話方塊中，尋找並選取您希望使用之測試架構的單元測試專案範本。
+1. 在 [新增專案] 對話方塊中，尋找您想要使用之測試架構的單元測試專案範本，例如 MSTest，然後選取它。
+
+   從 Visual Studio 2017 14.8 版開始，.NET 語言包含 NUnit 和 xUnit 的內建範本。 針對 c + +，您必須選取語言所支援的測試架構。 針對 Python，請參閱 [設定 python 程式碼中的單元測試](../python/unit-testing-python-in-visual-studio.md) ，以設定您的測試專案。
+
+   > [!TIP]
+   > 針對 c #，您可以使用更快速的方法，從程式碼建立單元測試專案。 如需詳細資訊，請參閱 [建立單元測試專案和測試方法](../test/unit-test-basics.md#create-unit-test-projects-and-test-methods)。 若要搭配 .NET Core 或 .NET Standard 使用此方法，則需要 Visual Studio 2019。
+
+   下圖顯示的是在 .NET 中支援的 MSTest 單元測試。
 
    ::: moniker range=">=vs-2019"
 
@@ -58,7 +67,7 @@ ms.locfileid: "95441777"
 
    ![Visual Studio 2019 的單元測試專案範本](media/mstest-test-project-template.png)
 
-   選擇測試專案的名稱，然後按一下 [確定]。
+   選擇測試專案的名稱，例如 HelloWorldTests，然後按一下 **[確定]**。
 
    ::: moniker-end
 
@@ -74,7 +83,9 @@ ms.locfileid: "95441777"
 
 1. 將程式碼新增至單元測試方法。
 
-   例如，您可以使用下列程式碼，針對 MSTest 專案使用下列程式碼。
+   例如，您可以選取符合測試架構的正確檔索引標籤，以使用下列程式碼：僅限 .NET) 上支援 MSTest、NUnit 或 xUnit (。
+
+   # <a name="mstest"></a>[MSTest](#tab/mstest)
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -103,7 +114,7 @@ ms.locfileid: "95441777"
    }
    ```
 
-   或者，若為 NUnit 專案，您可以使用下列程式碼。
+   # <a name="nunit"></a>[NUnit](#tab/nunit)
 
    ```csharp
    using NUnit.Framework;
@@ -136,18 +147,43 @@ ms.locfileid: "95441777"
    }
    ```
 
-> [!TIP]
-> 如需有關建立單元測試的詳細資訊，請參閱 [針對 managed 程式碼建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
+    # <a name="xunit"></a>[xUnit](#tab/xunit)
+
+    ```csharp
+    using System;
+    using Xunit;
+    using System.IO;
+    
+    namespace HelloWorldTests
+    {
+        public class UnitTest1
+        {
+            private const string Expected = "Hello World!";
+            [Fact]
+            public void Test1()
+            {
+                using (var sw = new StringWriter())
+                {
+                    Console.SetOut(sw);
+                    HelloWorldCore.Program.Main();
+    
+                    var result = sw.ToString().Trim();
+                    Assert.Equal(Expected, result);
+                }
+            }
+        }
+    }
+    ```
 
 ## <a name="run-unit-tests"></a>執行單元測試
 
 1. 開啟 [ [測試瀏覽器](../test/run-unit-tests-with-test-explorer.md)]。
 
    ::: moniker range=">=vs-2019"
-   若要開啟 [測試流覽 **Test** 器]，請 > 從頂端功能表列中選擇 [測試 **測試瀏覽器**]。
+   若要開啟 [測試流覽器]，請 > 從頂端功能表列中選擇 [測試 **測試瀏覽器**]。
    ::: moniker-end
    ::: moniker range="vs-2017"
-   若要開啟 test explorer， **Test** 請 > **Windows** > 從頂端功能表列中選擇 [測試 Windows **test explorer** ]。
+   若要開啟 test explorer， 請 >  > 從頂端功能表列中選擇 [測試 Windows **test explorer** ]。
    ::: moniker-end
 
 1. 按一下 [全部執行] 執行您的單元測試。
@@ -161,12 +197,12 @@ ms.locfileid: "95441777"
 > [!TIP]
 > 您可以使用 [[測試總管]](../test/run-unit-tests-with-test-explorer.md) 從內建的測試架構 (MSTest) 或從協力廠商測試架構執行單元測試。 您也可以將測試分組成分類、篩選測試清單，以及建立、儲存和執行測試播放清單。 您也可以偵錯測試和分析測試效能和程式碼涵蓋範圍。
 
-## <a name="view-live-unit-test-results"></a>檢視即時單元測試結果
+## <a name="view-live-unit-test-results-visual-studio-enterprise"></a>查看即時單元測試結果 (Visual Studio Enterprise) 
 
 如果您在 Visual Studio 2017 或更新版本中使用 MSTest、xUnit 或 NUnit 測試架構，則可以查看單元測試的即時結果。
 
 > [!NOTE]
-> 只有 Enterprise Edition 才能使用 Live Unit Testing。
+> 若要遵循這些步驟，需要 Visual Studio Enterprise。
 
 1. 從 [測試] 功能表中選擇 [測試] > [Live Unit Testing] > [啟動] 來開啟 Live Unit Testing。
 
@@ -192,30 +228,25 @@ ms.locfileid: "95441777"
 
 如需 Live Unit Testing 的詳細資訊，請參閱 [Live Unit Testing](../test/live-unit-testing-intro.md)。
 
-## <a name="generate-unit-tests-with-intellitest"></a>使用 IntelliTest 產生單元測試
-
-當您執行 IntelliTest 時，您可以看到失敗的測試，並新增任何必要的程式碼來修正它們。 您可以選取產生的測試，將其儲存到測試專案中做為迴歸套件。 當您變更程式碼時，請重新執行 IntelliTest，如此所產生的測試才能與您的程式碼變更保持同步。 若要了解做法，請參閱[使用 IntelliTest 為程式碼產生單元測試](../test/generate-unit-tests-for-your-code-with-intellitest.md)。
-
-> [!TIP]
-> IntelliTest 僅供以 .NET Framework 為目標的受控程式碼使用。
-
-![使用 IntelliTest 產生單元測試](media/intellitest.png)
-
-## <a name="analyze-code-coverage"></a>分析程式碼涵蓋範圍
-
-若要判斷單元測試等自動程式碼測試實際測試的專案程式碼比例，您可以使用 Visual Studio 程式碼涵蓋範圍功能。 為有效防範錯誤 (bug)，您的測試應該要使用大部分的程式碼。 若要瞭解作法，請參閱 [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
-
 ## <a name="use-a-third-party-test-framework"></a>使用協力廠商測試架構
 
-您可以使用協力廠商測試架構 (例如 Boost、Google 與 NUnit)，在 Visual Studio 中執行單元測試。 使用 **NuGet 套件管理員** 安裝您選擇的架構 NuGet 套件。 或者，針對 NUnit 和 xUnit 測試架構，Visual Studio 包含預先設定的測試專案範本，這些範本包含必要的 NuGet 套件。
+您可以使用協力廠商測試架構（例如提升、Google 和 NUnit），根據您的程式設計語言，在 Visual Studio 中執行單元測試。 若要使用協力廠商架構：
 
-建立使用 [NUnit](https://nunit.org/) 的單元測試：
+- 使用 **NuGet 套件管理員** 安裝您選擇的架構 NuGet 套件。
+
+- 從 Visual Studio 2017 14.6 版開始 ( .NET) ，Visual Studio 包含 NUnit 和 xUnit 測試架構的預先設定測試專案範本。 範本也包含必要的 NuGet 套件，以啟用支援。
+
+-  (Visual Studio 2017 和更新版本中的 c + +) ，某些架構（例如提升）已包含在內。 如需詳細資訊，請參閱 [Visual Studio 中的 C/c + + 撰寫單元測試](../test/writing-unit-tests-for-c-cpp.md)。
+
+若要加入單元測試專案：
 
 1. 開啟包含您要測試之程式碼的解決方案。
 
 2. 以滑鼠右鍵按一下 [方案總管] 中的解決方案，然後選擇 [新增] > [新增專案]。
 
-3. 選取 [NUnit 測試專案] 專案範本。
+3. 選取單元測試專案範本。
+
+   在此範例中，選取 [NUnit](https://nunit.org/)
 
    ::: moniker range=">=vs-2019"
 
@@ -245,10 +276,10 @@ ms.locfileid: "95441777"
 
 6. 從 [測試總管] 執行測試，或在測試程式碼上按一下滑鼠右鍵，然後選擇 [執行測試]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="next-steps"></a>後續步驟
 
-* [逐步解說：針對受控碼建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-* [建立單元測試命令](create-unit-tests-menu.md)
-* [使用 IntelliTest 產生測試](generate-unit-tests-for-your-code-with-intellitest.md)
-* [使用 [測試總管] 執行測試](run-unit-tests-with-test-explorer.md)
-* [分析程式碼涵蓋範圍](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+> [!div class="nextstepaction"]
+> [單元測試基本概念](../test/unit-test-basics.md)
+
+> [!div class="nextstepaction"]
+> [針對受控碼建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)

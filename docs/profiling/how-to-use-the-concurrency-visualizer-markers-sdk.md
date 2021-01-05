@@ -1,5 +1,6 @@
 ---
 title: 使用並行視覺化檢視標記 SDK | Microsoft Docs
+description: 瞭解如何在 Visual Studio 中使用並行視覺化標記 SDK 來建立範圍和寫入旗標、訊息和警示。
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf33ad094716ee0f8f4c8cc4bb06220db1237e5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 24659a101da59ed3a8ca6389debfde6c08a038ed
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851576"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815603"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>如何：使用並行視覺化檢視標記 SDK
 本主題說明如何使用並行視覺化檢視 SDK 建立範圍和寫入旗標、訊息和警示。
@@ -46,7 +47,7 @@ ms.locfileid: "90851576"
     delete alertSpan;
     ```
 
-4. 在功能表列上選擇 [分析]****、[並行視覺化檢視]****、[從目前專案開始]****，以執行應用程式並顯示 [並行視覺化檢視]。 下圖顯示 [並行視覺化檢視] 中的三個範圍和三個標記。
+4. 在功能表列上選擇 [分析]、[並行視覺化檢視]、[從目前專案開始]，以執行應用程式並顯示 [並行視覺化檢視]。 下圖顯示 [並行視覺化檢視] 中的三個範圍和三個標記。
 
      ![包含 3 個標記和警示的 [並行視覺化檢視]](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
@@ -70,7 +71,7 @@ ms.locfileid: "90851576"
 
 6. 啟動目前的專案以顯示 [並行視覺化檢視]。 兩個標記序列會出現在 [執行緒] 檢視中其所屬的行。 下圖顯示兩個新範圍。
 
-     ![包含 3 個自訂標記系列的 [並行視覺化檢視]](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![並行視覺化中 [執行緒] 視圖的螢幕擷取畫面，其中顯示具有旗標範圍和訊息範圍的標記、旗標和訊息序列。](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>使用 Visual Basic 或 C\#
 
@@ -124,7 +125,7 @@ ms.locfileid: "90851576"
     alertSpan.Leave();
     ```
 
-4. 在功能表列上選擇 [分析]****、[並行視覺化檢視]****、[從目前專案開始]****，以執行應用程式並顯示 [並行視覺化檢視]。 下圖顯示 [並行視覺化檢視] 的 [執行緒] 檢視中的三個範圍和三個標記。
+4. 在功能表列上選擇 [分析]、[並行視覺化檢視]、[從目前專案開始]，以執行應用程式並顯示 [並行視覺化檢視]。 下圖顯示 [並行視覺化檢視] 的 [執行緒] 檢視中的三個範圍和三個標記。
 
      ![包含標記和警示的 [並行視覺化檢視]](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
@@ -164,7 +165,7 @@ ms.locfileid: "90851576"
 
 6. 啟動目前的專案以顯示 [並行視覺化檢視]。 三個標記序列會出現在 [執行緒] 檢視中其所屬的行。 下圖顯示三個新範圍。
 
-     ![包含 3 個自訂標記系列的 [並行視覺化檢視]](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![並行視覺化中 [執行緒] 視圖的螢幕擷取畫面，其中顯示具有訊息、警示和旗標範圍的標記、旗標和訊息序列。](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)
