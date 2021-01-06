@@ -1,5 +1,7 @@
 ---
 title: 適用于報表的宏 |Microsoft Docs
+description: 瞭解 CRTDBG.H 裡中所提供的調試宏 _RPTn 和 _RPTFn。H，以及建立您自己的偵錯工具宏。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,20 +24,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731394"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903788"
 ---
 # <a name="macros-for-reporting"></a>報告巨集
-若要進行偵錯工具，您可以使用 CRTDBG.H 裡中定義的 **_RPTn** 和 **_RPTFn** 宏。H，取代語句的使用 `printf` 。 您不需要在 **#ifdef**中 inclose 它們，因為 **_DEBUG** 未定義時，它們會自動在您的發行組建中消失。
+若要進行偵錯工具，您可以使用 CRTDBG.H 裡中定義的 **_RPTn** 和 **_RPTFn** 宏。H，取代語句的使用 `printf` 。 您不需要在 **#ifdef** 中 inclose 它們，因為 **_DEBUG** 未定義時，它們會自動在您的發行組建中消失。
 
 |巨集|描述|
 |-----------|-----------------|
-|**_RPT0**、**_RPT1**、**_RPT2**、**_RPT3**、**_RPT4**|輸出訊息字串和零至四個引數。 從 _RPT1 到 **_RPT4**，訊息字串作為引數的 printf 樣式格式字串。|
-|**_RPTF0**、**_RPTF1**、**_RPTF2**、**_RPTF4**|與 **_RPTn** 相同，但是這些巨集也會輸出巨集所在位置的檔案名稱和行號。|
+|**_RPT0**、**_RPT1**、**_RPT2**、**_RPT3**、**_RPT4**|輸出訊息字串和零至四個引數。 針對 **_RPT1** 至 **_RPT4**，訊息字串可作為引數的 printf 樣式格式字串。|
+|**_RPTF0**、 **_RPTF1**、 **_RPTF2**、 **_RPTF3**、 **_RPTF4**|與 **_RPTn** 相同，但是這些巨集也會輸出巨集所在位置的檔案名稱和行號。|
 
  請考慮下列範例：
 
@@ -70,7 +72,7 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif
 ```
 
- **ALERT_IF2**的一個呼叫可以執行**printf**程式碼的所有功能：
+ **ALERT_IF2** 的一個呼叫可以執行 **printf** 程式碼的所有功能：
 
 ```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),
@@ -80,4 +82,4 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
  您可以輕鬆地變更自訂宏，將更多或更少的資訊報告至不同的目的地。 當您的偵錯工具需求演進時，此方法特別有用。
 
 ## <a name="see-also"></a>另請參閱
-- [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)
+- [CRT 調試技術](../debugger/crt-debugging-techniques.md)

@@ -1,5 +1,7 @@
 ---
 title: 專案類型設計決策 |Microsoft Docs
+description: 藉由建立新的專案類型，瞭解您在擴充 Visual Studio 之前所要進行的專案、專案檔持續性和承諾用量技師修理設計決策。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e33ac1c4168593b881f799dfdfb94005fb55fc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab29fbe79b474aa7b640faf81de812b7571de861
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706365"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877793"
 ---
 # <a name="project-type-design-decisions"></a>專案類型的設計決策
 建立新的專案類型之前，您必須針對您的專案類型進行數個設計決策。 您必須決定專案將包含哪些類型的專案、專案檔的保存方式，以及您將使用的承諾用量模型。
@@ -56,7 +58,7 @@ ms.locfileid: "80706365"
 
  使用交易模式開啟資料物件時，變更會儲存到記憶體中的暫存位置，而且在使用者手動選擇儲存檔案之前，不會認可這些變更。 屆時，所有變更都必須一起進行，否則也不會進行任何變更。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)
 - [專案持續性](../../extensibility/internals/project-persistence.md)

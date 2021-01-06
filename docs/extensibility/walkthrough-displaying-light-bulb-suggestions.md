@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：顯示燈泡建議 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 編輯器中建立出現在目前字組上的燈泡，並使用本逐步解說有兩項建議的動作。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
@@ -8,17 +10,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 8d8d498c1d9a5e5142672bcd561ac0749bbf8d75
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508947"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877958"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>逐步解說：顯示燈泡建議
 Light 燈泡是 Visual Studio 編輯器中的圖示，會展開以顯示一組動作，例如修正內建程式碼分析器或程式碼重構所識別的問題。
 
- 在 Visual c # 和 Visual Basic 編輯器中，您也可以使用 .NET Compiler Platform ( "Roslyn" ) 撰寫和封裝您自己的程式碼分析器，並顯示自動顯示燈泡的動作。 如需詳細資訊，請參閱：
+ 在 Visual c # 和 Visual Basic 編輯器中，您也可以使用 .NET Compiler Platform ( "Roslyn" ) 撰寫和封裝您自己的程式碼分析器，並顯示自動顯示燈泡的動作。 如需詳細資訊，請參閱
 
 - [如何：撰寫 c # 診斷和程式碼修正](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
@@ -222,8 +224,8 @@ Light 燈泡是 Visual Studio 編輯器中的圖示，會展開以顯示一組�
 2. 建立兩個類別：第一個命名為 `UpperCaseSuggestedAction` ，第二個則命名為 `LowerCaseSuggestedAction`。 這兩個類別都會實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>。
 
     ```csharp
-    internal class UpperCaseSuggestedAction : ISuggestedAction
-    internal class LowerCaseSuggestedAction : ISuggestedAction
+    internal class UpperCaseSuggestedAction : ISuggestedAction
+    internal class LowerCaseSuggestedAction : ISuggestedAction
     ```
 
      這兩個類別相同，差別在於其中一個會呼叫 <xref:System.String.ToUpper%2A>，另一個會呼叫 <xref:System.String.ToLower%2A>。 下列步驟僅涵蓋大寫動作類別，但您必須實作這兩個類別。 使用實作大寫動作的步驟，作為實作小寫動作的模式。
@@ -243,8 +245,8 @@ Light 燈泡是 Visual Studio 編輯器中的圖示，會展開以顯示一組�
 
     ```csharp
     private ITrackingSpan m_span;
-    private string m_upper;
-    private string m_display;
+    private string m_upper;
+    private string m_display;
     private ITextSnapshot m_snapshot;
     ```
 
@@ -288,7 +290,7 @@ Light 燈泡是 Visual Studio 編輯器中的圖示，會展開以顯示一組�
     {
         get { return false; }
     }
-    public string DisplayText
+    public string DisplayText
     {
         get { return m_display; }
     }
@@ -319,14 +321,14 @@ Light 燈泡是 Visual Studio 編輯器中的圖示，會展開以顯示一組�
 9. 將範圍中的文字取代為其大寫對等項目，以實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> 方法。
 
     ```csharp
-    public void Invoke(CancellationToken cancellationToken)
+    public void Invoke(CancellationToken cancellationToken)
     {
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);
     }
     ```
 
     > [!WARNING]
-    > 燈泡 **動作叫** 用方法不應該顯示 UI。 如果您的動作會顯示新的 UI (例如預覽或選取對話方塊) ，請勿直接從叫 **用方法內** 顯示 ui，而是在從 **invoke**傳回之後，改為顯示您的 ui。
+    > 燈泡 **動作叫** 用方法不應該顯示 UI。 如果您的動作會顯示新的 UI (例如預覽或選取對話方塊) ，請勿直接從叫 **用方法內** 顯示 ui，而是在從 **invoke** 傳回之後，改為顯示您的 ui。
 
 10. 若要完成此執行，請新增 `Dispose()` 和 `TryGetTelemetryId()` 方法。
 

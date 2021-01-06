@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：顯示成對的大括弧 |Microsoft Docs
+description: 瞭解如何使用這個逐步解說，在語言的內容中定義大括弧，並將大括弧比對標記套用至文字內容類型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a0bc2c53d5d6e970b4aaa956170bc06c24e7c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904845"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877945"
 ---
 # <a name="walkthrough-display-matching-braces"></a>逐步解說：顯示成對的大括弧
 藉由定義您想要比對的大括弧來執行以語言為基礎的功能（例如，大括弧比對），並在插入點位於其中一個大括弧時，將文字標記標記新增至相符的大括弧。 您可以在語言的內容中定義大括弧、定義您自己的副檔名和內容類型，並將標記套用至現有的內容類型， (例如「文字」 ) 。 下列逐步解說示範如何將大括弧比對標記套用至 "text" 內容類型。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>建立 Managed Extensibility Framework (MEF) 專案
@@ -122,5 +124,5 @@ ms.locfileid: "85904845"
 
 4. 當您將插入點放在左大括弧之前時，應該反白顯示該括弧和相符的右大括弧。 當您將游標放在右大括弧之後，則應該反白顯示該大括弧和相符的左大括弧。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

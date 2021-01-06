@@ -1,5 +1,7 @@
 ---
 title: 組建的專案設定 |Microsoft Docs
+description: 瞭解特定方案的解決方案設定清單如何由新專案類型中的 [方案設定] 對話方塊管理。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd084053e06206a99298b234b4d51c8504119a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7768de1b57142e201c4108f5ef0c0768c57a8639
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706735"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877997"
 ---
 # <a name="project-configuration-for-building"></a>建置的專案組態
 給定解決方案的解決方案設定清單是由 [方案設定] 對話方塊所管理。
@@ -55,7 +57,7 @@ ms.locfileid: "80706735"
 
  此外，您可以在 [專案相依性] 視窗中提供方格。 如需詳細資訊，請參閱 [屬性顯示方格](../../extensibility/internals/properties-display-grid.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 - [管理部署的專案組態](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 - [輸出的專案組態](../../extensibility/internals/project-configuration-for-output.md)

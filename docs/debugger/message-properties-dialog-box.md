@@ -1,5 +1,7 @@
 ---
 title: 訊息屬性對話方塊 |Microsoft Docs
+description: 請參閱訊息屬性，以找出訊息的詳細資訊，而不是訊息查看中顯示的訊息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f58ad7344c7de9a9486fcb3ccefbf263688926f
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62846111"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903060"
 ---
 # <a name="message-properties-dialog-box"></a>訊息屬性對話方塊
 使用此對話方塊可深入瞭解特定的訊息。 若要顯示此對話方塊，請將焦點移至 [ [訊息] 視圖](../debugger/messages-view.md) 視窗。 選取樹狀結構中的任何訊息節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。
@@ -29,11 +31,11 @@ ms.locfileid: "62846111"
 
  **訊息** 所選 windows 訊息的數目、狀態和名稱。
 
- **lResult***LResult*參數的值（如果有的話）。
+ **lResult***LResult* 參數的值（如果有的話）。
 
- **wParam***WParam*參數的值（如果有的話）。
+ **wParam***WParam* 參數的值（如果有的話）。
 
- **lParam***LParam*參數的值（如果有的話）。 如果這個值是字串或結構的指標，則會將其解碼。
+ **lParam***LParam* 參數的值（如果有的話）。 如果這個值是字串或結構的指標，則會將其解碼。
 
 ## <a name="related-sections"></a>相關章節
  [[訊息選項] 對話方塊](../debugger/message-options-dialog-box.md)用來選取要在使用中的訊息查看中列出的訊息。

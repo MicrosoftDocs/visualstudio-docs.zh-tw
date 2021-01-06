@@ -1,5 +1,7 @@
 ---
 title: 偵錯工具插入的程式碼 |Microsoft Docs
+description: 瞭解 Visual Studio 提供來查看插入程式碼的兩種方式： 1) 在 [反組解碼] 視窗中;2) 原始程式檔中同時有插入程式碼和原始程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2dfcd81def9b3662f410120f370566354726498
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5bce49eebf430ccaca9919c74966fb9efd00b09b
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852096"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903944"
 ---
 # <a name="how-to-debug-injected-code"></a>如何：偵錯插入程式碼
 
@@ -38,17 +40,17 @@ ms.locfileid: "90852096"
 
 使用屬性可以大幅簡化 C++ 程式設計。 如需詳細資訊，請參閱 [概念](/cpp/windows/attributed-programming-concepts)。 有些屬性 (Attribute) 可以直接由編譯器 (Compiler) 解譯。 其他屬性 (Attribute) 會將程式碼插入到編譯器將編譯的程式來源中。 這種插入的程式碼可藉著減少必須由您撰寫的程式碼數量，使程式設計更為容易。 然而，有時一個錯誤便可能會造成應用程式在執行插入程式碼時失敗。 當這種情況發生時，您可能要查看插入程式碼。 Visual Studio 提供兩種讓您查看插入程式碼的方法：
 
-- 您可以在 [反組譯碼]**** 視窗中檢視插入程式碼。
+- 您可以在 [反組譯碼] 視窗中檢視插入程式碼。
 
 - 使用 [/Fx](/cpp/build/reference/fx-merge-injected-code)，您可以建立包含原始和插入程式碼的合併來源檔案。
 
-[反組譯碼]**** 視窗會顯示與原始程式碼和由屬性插入之程式碼對應的組合語言指令。 此外，[反組譯碼]**** 視窗可以顯示原始程式碼註釋。
+[反組譯碼] 視窗會顯示與原始程式碼和由屬性插入之程式碼對應的組合語言指令。 此外，[反組譯碼] 視窗可以顯示原始程式碼註釋。
 
 ## <a name="to-turn-on-source-annotation"></a>若要開啟來源附註
 
-- 以滑鼠右鍵按一下 [反組譯碼]**** 視窗，並從捷徑功能表選擇 [顯示原始程式碼]****。
+- 以滑鼠右鍵按一下 [反組譯碼] 視窗，並從捷徑功能表選擇 [顯示原始程式碼]。
 
-     如果您知道屬性在來源視窗的位置，您就可以使用捷徑功能表在 [反組譯碼]**** 視窗裡尋找插入程式碼。
+     如果您知道屬性在來源視窗的位置，您就可以使用捷徑功能表在 [反組譯碼] 視窗裡尋找插入程式碼。
 
 ## <a name="to-view-injected-code"></a>若要檢視插入程式碼
 
@@ -56,15 +58,15 @@ ms.locfileid: "90852096"
 
 2. 在原始程式碼視窗裡，將游標放置在您要檢視的插入程式碼的屬性之前。
 
-3. 以滑鼠右鍵按一下，並從捷徑功能表選取 [前往反組譯碼]****。
+3. 以滑鼠右鍵按一下，並從捷徑功能表選取 [前往反組譯碼]。
 
-     如果屬性位置距離目前執行點很近，您只要從 [偵錯]**** 功能表選取 [反組譯碼]**** 視窗即可。
+     如果屬性位置距離目前執行點很近，您只要從 [偵錯] 功能表選取 [反組譯碼] 視窗即可。
 
 ## <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>若要檢視目前執行點的反組譯程式碼
 
 1. 偵錯工具必須處於中斷模式。
 
-2. 請在 [偵錯]**** 功能表中選擇 [視窗]****，然後按一下 [反組譯碼]****。
+2. 請在 [偵錯] 功能表中選擇 [視窗]，然後按一下 [反組譯碼]。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,5 +1,7 @@
 ---
 title: " (HTML 和 JavaScript) 的鍵盤快速鍵 |Microsoft Docs"
+description: 請參閱用來對使用 HTML 和 JavaScript 的 UWP 應用程式進行偵錯工具的鍵盤快速鍵。 [JavaScript 主控台] 視窗和 DOM 總管有快速鍵。
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a3dcc48e34cc3ecc429f7f2b4ca62221263fe0
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: a65cf7eea0541464a013a72377f439dd53ebf685
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211335"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903814"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>鍵盤快速鍵 (HTML 和 JavaScript)
 
@@ -52,9 +54,9 @@ Visual Studio 中的鍵盤快速鍵，可使用 HTML 和 JavaScript 來對 UWP �
 |動作|快速鍵|
 |------------|--------------|
 |選取項目|CTRL+B|
-|使用 [選取元素]**** 時切換顯示和隱藏網頁醒目提示方塊|Ctrl+Shift+I|
-|使用 [以 HTML 方式編輯]**** 認可變更|Ctrl+Enter|
-|使用 [以 HTML 方式編輯]**** 捨棄變更|Esc|
+|使用 [選取元素] 時切換顯示和隱藏網頁醒目提示方塊|Ctrl+Shift+I|
+|使用 [以 HTML 方式編輯] 認可變更|Ctrl+Enter|
+|使用 [以 HTML 方式編輯] 捨棄變更|Esc|
 |將選取的 CSS 值加 1|向上箭號|
 |將選取的 CSS 值減 1|向下箭號|
 

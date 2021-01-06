@@ -1,5 +1,7 @@
 ---
 title: 屬性視窗按鈕 |Microsoft Docs
+description: 針對屬性視窗的工具列上預設顯示的按鈕，以及如何執行按鈕的相關資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaa4db159ccb0ecf3d0e9c9243e23fcd0dacc455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e99c362904bc40a2937c030f1ee2bb1c4d32a113
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706179"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878010"
 ---
 # <a name="properties-window-buttons"></a>屬性視窗的按鈕
 依開發語言和產品類型而定，預設會在 [ **屬性** ] 視窗的工具列上顯示特定按鈕。 在所有情況下，會顯示 [ **分類**]、[ **字母順序**]、[ **屬性**] 和 [ **屬性頁** ] 按鈕。 在 Visual c # 和 Visual Basic 中，也會顯示 [ **事件** ] 按鈕。 在某些 Visual C++ 專案中，會顯示 [ **vc + + 訊息** ] 和 [ **vc 覆寫** ] 按鈕。 其他專案類型可能會顯示其他按鈕。 如需 [ **屬性** ] 視窗中之按鈕的詳細資訊，請參閱 [屬性視窗](../../ide/reference/properties-window.md)。
@@ -36,5 +38,5 @@ ms.locfileid: "80706179"
 > [!NOTE]
 > 您無法使用非受控碼將工具列按鈕新增至 [ **屬性** ] 視窗。 若要加入工具列按鈕，您必須建立一個衍生自的 managed 物件 <xref:System.Windows.Forms.Design.PropertyTab> 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [擴充屬性](../../extensibility/internals/extending-properties.md)

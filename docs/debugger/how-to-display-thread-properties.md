@@ -1,5 +1,7 @@
 ---
 title: 顯示執行緒屬性 |Microsoft Docs
+description: '[執行緒] 視圖會顯示您系統上所有作用中線程的樹狀結構。 瞭解如何顯示出現在 [執行緒] 視圖中的執行緒屬性。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acc57df5258675be42473c502a8d31d1a73e8c00
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 531b76511d4456f8491e1498c93a9d62ebf0b026
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852305"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903242"
 ---
 # <a name="how-to-display-thread-properties"></a>如何：顯示執行緒屬性
 若要深入瞭解 [ [執行緒視圖](../debugger/threads-view.md)] 中所列的執行緒，請使用 [ [執行緒屬性] 對話方塊](../debugger/thread-properties-dialog-box.md)。

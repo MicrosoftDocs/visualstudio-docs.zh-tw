@@ -1,6 +1,7 @@
 ---
 title: JavaScript 主控台命令 |Microsoft Docs
-ms.custom: ''
+description: 在 [JavaScript 主控台] 視窗中，使用命令來傳送訊息及執行其他工作。 本文適用于 Node.js apps、UWP 應用程式和 Apache Cordova 應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 301461caa15321b5a77f42872c93f52f3ec2c9c1
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2877b3ca9fb644ae4dae1af27e79e6ee52423b97
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211270"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903905"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 主控台命令
 
@@ -28,7 +29,7 @@ ms.locfileid: "91211270"
 如果 [JavaScript 主控台] 視窗已關閉，您可以在 Visual Studio 中，藉由選擇 [ **Debug**  >  **Windows**  >  **JavaScript 主控台**] 來開啟它。
 
 > [!NOTE]
-> 如果在偵錯工作階段期間無法使用該視窗，請確定在專案的 [偵錯] 屬性中的偵錯工具類型已設為 [指令碼] **** 。
+> 如果在偵錯工作階段期間無法使用該視窗，請確定在專案的 [偵錯] 屬性中的偵錯工具類型已設為 [指令碼]  。
 
 如需在 Microsoft Edge 開發人員工具中使用主控台的詳細資訊，請參閱 [本主題](/microsoft-edge/devtools-guide)。
 
@@ -41,7 +42,7 @@ ms.locfileid: "91211270"
 > [!TIP]
 > 舊版的 Visual Studio 不支援完整的命令集。 請使用主控台物件中的 IntelliSense，取得支援命令的快速資訊。
 
-|Command|描述|範例|
+|命令|描述|範例|
 |-------------|-----------------|-------------|
 |`assert(expression, message)`|如果 `expression` 評估為 **false**，則會傳送訊息。|`console.assert((x == 1), "assert message: x != 1");`|
 |`clear()`|清除主控台視窗中的訊息 (包括指令碼錯誤訊息) 和顯示的指令碼， 但是不會清除您在主控台輸入提示中輸入的指令碼。|`console.clear();`|
@@ -67,7 +68,7 @@ ms.locfileid: "91211270"
 ## <a name="miscellaneous-commands"></a>其他命令
 在 [JavaScript 主控台] 視窗中也可以使用這些命令 (程式碼不提供)。
 
-|Command|描述|範例|
+|命令|描述|範例|
 |-------------|-----------------|-------------|
 |`$0`, `$1`, `$2`, `$3`, `$4`|將指定的項目傳回主控台視窗。 `$0` 會傳回目前在 [DOM 總管] 中選取的項目，`$1` 則會傳回前次在 [DOM 總管] 中選取的項目，依此類推，最多可回推至前四次選取的項目。|美金 $3 元|
 |`$(id)`|依 ID 傳回項目。 這是 `document.getElementById(id)`的捷徑命令，其中 `id` 是代表項目 ID 的字串。|`$("contenthost")`|

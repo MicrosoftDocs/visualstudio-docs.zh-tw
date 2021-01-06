@@ -1,5 +1,7 @@
 ---
 title: 遷移舊版語言服務 |Microsoft Docs
+description: 瞭解如何更新專案並新增 extension.vsixmanifest 檔案，以將語言服務更新為最新版本的 Visual Studio。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e2eff3f3a27b7d8a276c8ed776c1e11d5ce332e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707104"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877828"
 ---
 # <a name="migrating-a-legacy-language-service"></a>移轉舊版語言服務
 您可以藉由更新專案並將 extension.vsixmanifest 檔案新增至專案，將舊版語言服務遷移至更新版的 Visual Studio。 語言服務本身將會繼續如之前一樣運作，因為 Visual Studio 編輯器會調整它。
@@ -51,13 +53,13 @@ ms.locfileid: "80707104"
 
 4. 開啟 RegExLangServ .sln 方案。
 
-5. [ **單向升級** ] 視窗隨即出現。 按一下 [確定]  。
+5. [ **單向升級** ] 視窗隨即出現。 按一下 [確定]。
 
-6. 更新專案屬性。 選取 [**方案總管**中的專案節點，按一下滑鼠右鍵，然後選取 [**屬性**]，開啟 [**專案屬性**] 視窗。
+6. 更新專案屬性。 選取 [**方案總管** 中的專案節點，按一下滑鼠右鍵，然後選取 [**屬性**]，開啟 [**專案屬性**] 視窗。
 
     - 在 [ **應用程式** ] 索引標籤上，將 [ **目標 framework** ] 變更為 **4.6.1**。
 
-    - 在 [**調試**程式] 索引標籤的 [**啟動外部程式**] 方塊中，輸入** \<Visual Studio installation path>\Common7\IDE\devenv.exe。**
+    - 在 [**調試** 程式] 索引標籤的 [**啟動外部程式**] 方塊中，輸入 **\<Visual Studio installation path>\Common7\IDE\devenv.exe。**
 
          在 [ **命令列引數** ] 方塊中，輸入/**rootsuffix Exp**。
 
@@ -83,13 +85,13 @@ ms.locfileid: "80707104"
 
 10. 您必須新增 extension.vsixmanifest 檔案。
 
-    - 將此檔案從現有的延伸模組複製到您的專案目錄。  (取得此檔案的方法之一是在 [檔案 **] 下建立**VSIX 專案 (，按一下 [ **新增**]，然後按一下 [ **專案**]。 在 Visual Basic 或 c # **中，** 按一下 [擴充性]，然後選取 [ **VSIX 專案**]。 ) 
+    - 將此檔案從現有的延伸模組複製到您的專案目錄。  (取得此檔案的方法之一是在 [檔案 **] 下建立** VSIX 專案 (，按一下 [ **新增**]，然後按一下 [ **專案**]。 在 Visual Basic 或 c # **中，** 按一下 [擴充性]，然後選取 [ **VSIX 專案**]。 ) 
 
     - 將檔案加入專案中。
 
     - 在檔案的 [ **屬性**] 中，將 [ **組建動作** ] 設定為 [ **無**]。
 
-    - 使用 **VSIX 資訊清單編輯器**開啟檔案。
+    - 使用 **VSIX 資訊清單編輯器** 開啟檔案。
 
     - 變更下欄欄位：
 
@@ -99,13 +101,13 @@ ms.locfileid: "80707104"
 
     - **描述**：正則運算式語言服務。
 
-    - 在 [**資產**] 底下，按一下 [**新增**]，選取**VisualStudio VsPackage**的**類型**，將 [**來源**] 設定為 [**目前方案中的專案**]，然後將**專案**設定為 [ **RegExLangServ**]。
+    - 在 [**資產**] 底下，按一下 [**新增**]，選取 **VisualStudio VsPackage** 的 **類型**，將 [**來源**] 設定為 [**目前方案中的專案**]，然後將 **專案** 設定為 [ **RegExLangServ**]。
 
     - 儲存並關閉檔案。
 
-11. 建置方案。 建立的檔案會部署至 **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\ **。
+11. 建置方案。 建立的檔案會部署至 **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\**。
 
 12. 開始偵錯。 Visual Studio 開啟的第二個實例。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [舊版語言服務的擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)

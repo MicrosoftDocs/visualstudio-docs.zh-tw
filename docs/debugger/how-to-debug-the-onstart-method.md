@@ -1,6 +1,7 @@
 ---
 title: Debug OnStart 方法 |Microsoft Docs
-description: 瞭解如何在 Visual Studio 中，從方法內啟動偵錯工具，以在中進行 Windows 服務的 OnStart 方法的偵錯工具。
+description: 瞭解如何在方法內啟動偵錯工具，以在 Visual Studio 中進行 Windows 服務的 OnStart 方法的偵錯工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27cb5a870166e1d8909c80dc617ca16690bf6619
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 488fe471552256e8fad62bb6f831448811ca343f
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761403"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903138"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>如何：偵錯 OnStart 方法
 您可以藉由啟動服務並將偵錯工具附加到服務處理序，對 Windows 服務進行偵錯。 如需詳細資訊，請參閱[如何：偵錯 Windows 服務應用程式](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)。 但是若要對 Windows 服務的 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 方法進行偵錯，您必須從方法內啟動偵錯工具。
@@ -53,6 +54,6 @@ ms.locfileid: "97761403"
 
 5. Visual Studio 的新執行個體隨即啟動，並在 `Debugger.Launch()` 方法停止執行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

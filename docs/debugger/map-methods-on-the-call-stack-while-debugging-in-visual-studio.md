@@ -1,5 +1,7 @@
 ---
 title: 建立呼叫堆疊的視覺地圖 |Microsoft Docs
+description: 建立 code map，以在您進行偵錯工具時以視覺化方式追蹤呼叫堆疊。 在地圖上製作附注來追蹤程式碼的執行內容，讓您可以專注于尋找 bug。
+ms.custom: SEO-VS-2020
 ms.date: 11/26/2018
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf0cda942241ca77aa750624b6de25b5ae39391
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 965232f56fcd2bf0d459910e983fb10dcca7f96d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348531"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903827"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>在 (c #、Visual Basic、c + +、JavaScript 的偵錯工具時，建立呼叫堆疊的視覺對應) 
 
@@ -53,9 +55,9 @@ ms.locfileid: "85348531"
 
 ## <a name="map-the-call-stack"></a><a name="MapStack"></a> 對應呼叫堆疊
 
-1. 在 Visual Studio Enterprise c #、Visual Basic、c + + 或 JavaScript 專案中，選取 [ **Debug**  >  **開始調試**程式] 或按**F5**來開始偵錯工具。
+1. 在 Visual Studio Enterprise c #、Visual Basic、c + + 或 JavaScript 專案中，選取 [ **Debug**  >  **開始調試** 程式] 或按 **F5** 來開始偵錯工具。
 
-1. 當您的應用程式進入中斷模式或您逐步執行函式之後，請選取 [ **Debug**  >  **Code Map**]，或按**Ctrl** + **Shift** + **`** 。
+1. 當您的應用程式進入中斷模式或您逐步執行函式之後，請選取 [ **Debug**  >  **Code Map**]，或按 **Ctrl** + **Shift** + **`** 。
 
    目前的呼叫堆疊會在新的 Code Map 上顯示為橙色：
 
@@ -77,7 +79,7 @@ Code map 會在您繼續進行偵錯工具時自動更新。 變更對應專案�
 - 在 [ **呼叫堆疊** ] 視窗中按一下滑鼠右鍵，然後選取 [ **顯示外部程式碼**]：
 
   ![使用 [呼叫堆疊] 視窗來顯示外部程式碼](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
-- 或者，取消選取 [在 Visual Studio**工具**中**啟用 Just My Code** ] (或 [ **Debug** ]) >**選項**的  >  **調試**：
+- 或者，取消選取 [在 Visual Studio **工具** 中 **啟用 Just My Code** ] (或 [ **Debug** ]) >**選項** 的  >  **調試**：
 
   ![使用 [選項] 對話方塊來顯示外部程式碼](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
@@ -90,8 +92,8 @@ Code map 會在您繼續進行偵錯工具時自動更新。 變更對應專案�
 在 [ **版面** 配置] 功能表中，您可以：
 
 - 變更預設的版面配置。
-- 停止重新排列對應，方法是在偵錯工具取消停用 **自動版面**配置。
-- 當您加入專案時，重新整理地圖越少越好，方法是取消選擇 **增量**配置。
+- 停止重新排列對應，方法是在偵錯工具取消停用 **自動版面** 配置。
+- 當您加入專案時，重新整理地圖越少越好，方法是取消選擇 **增量** 配置。
 
 ## <a name="make-notes-about-the-code"></a><a name="MakeNotes"></a> 製作程式碼的筆記
 
@@ -99,7 +101,7 @@ Code map 會在您繼續進行偵錯工具時自動更新。 變更對應專案�
 
 若要加入批註，請以滑鼠右鍵按一下 code map，然後選取 [**編輯**  >  **新批註**]，再輸入批註。
 
-若要在批註中加入新的一行，請按**Shift** + **鍵**。
+若要在批註中加入新的一行，請按 **Shift** + **鍵**。
 
  ![為 Code Map 上的堆疊呼叫加入註解](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
 
@@ -109,13 +111,13 @@ Code map 會在您繼續進行偵錯工具時自動更新。 變更對應專案�
 
 ![使用下一個堆疊呼叫來更新 Code Map](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-若要停止對應以自動加入新的呼叫堆疊，請選取 [在 code map 工具列上 ![自動顯示 code map 上的呼叫堆疊](../debugger/media/debuggermap_automaticupdateicon.gif "自動在 code map 上顯示呼叫堆疊") ]。 對應會繼續醒目提示現有的呼叫堆疊。 若要將目前的呼叫堆疊手動加入至地圖，請按下**Ctrl** + **Shift** + **`** 。
+若要停止對應以自動加入新的呼叫堆疊，請選取 [在 code map 工具列上 ![自動顯示 code map 上的呼叫堆疊](../debugger/media/debuggermap_automaticupdateicon.gif "自動在 code map 上顯示呼叫堆疊") ]。 對應會繼續醒目提示現有的呼叫堆疊。 若要將目前的呼叫堆疊手動加入至地圖，請按下 **Ctrl** + **Shift** + **`** 。
 
 ## <a name="add-related-code-to-the-map"></a><a name="AddRelatedCode"></a> 將相關程式碼新增至地圖
 
 現在您已經有一個地圖，您可以在 c # 或 Visual Basic 中加入欄位、屬性和其他方法等專案，以追蹤程式碼中發生的狀況。
 
-若要移至程式碼中方法的定義，請按兩下對應中的方法，或選取該方法並按下 **F12**鍵，或以滑鼠右鍵按一下它，然後選取 [ **移至定義**]。
+若要移至程式碼中方法的定義，請按兩下對應中的方法，或選取該方法並按下 **F12** 鍵，或以滑鼠右鍵按一下它，然後選取 [ **移至定義**]。
 
 ![移至 Code Map 上方法的程式碼定義](../debugger/media/debuggermap_gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
 

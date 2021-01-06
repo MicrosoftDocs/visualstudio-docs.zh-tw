@@ -1,5 +1,7 @@
 ---
 title: 在 MSBuild 專案檔中保存資料 |Microsoft Docs
+description: 瞭解如何將資料保存在專案檔中，並使用 IPersistXMLFragment 來維護專案檔中專案子類型匯總層級的資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e83526007f676ae94ddce57936b627bcb4308c2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c6d79e6ea59b4993b4d6bfc5e165bdd952a3f9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706689"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878075"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>在 MSBuild 專案檔中保存資料
 專案子類型可能需要將子類型專屬的資料保存到專案檔中，以供稍後使用。 專案子類型會使用專案檔持續性來符合下列需求：
@@ -36,7 +38,7 @@ ms.locfileid: "80706689"
 
     2. 與設定相依的資料。
 
-## <a name="persisting-build-related-information"></a>保存組建相關資訊
+## <a name="persisting-build-related-information"></a>保存 Build-Related 資訊
  用來建立專案的資料持續性，是透過 MSBuild 來處理。 MSBuild 系統會維護組建相關資訊的主表。 專案子類型負責存取此資料，以取得和設定屬性值。 專案子類型也可以增強與組建相關的資料表，方法是新增要保存的其他屬性，並移除屬性，使其不會保存。
 
  若要修改 MSBuild 資料，專案子類型會負責從基底專案系統透過來取得 MSBuild 屬性物件 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 是在核心專案系統上執行的介面，並藉由執行來為其匯總專案子類型查詢 `QueryInterface` 。
@@ -76,5 +78,5 @@ ms.locfileid: "80706689"
       </ProjectExtensions>
     ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [專案子類型](../../extensibility/internals/project-subtypes.md)

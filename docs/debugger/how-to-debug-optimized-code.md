@@ -1,5 +1,7 @@
 ---
 title: 偵錯工具優化程式碼 |Microsoft Docs
+description: 可能的話，在您的程式進行調試之前，請勿建立 Win32 發行目標，因為優化可能會讓偵錯工具變得複雜。 請參閱本文中的詳細資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da0a9c40a2c4887b2798e908ad0c12d6c9a85b32
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 971ceb59a17788076a1188e42d834f7b4bd704cc
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852383"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903177"
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：偵錯最佳化程式碼
 
@@ -58,13 +60,13 @@ ms.locfileid: "90852383"
 
 ## <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>若要啟動偵錯組建組態的最佳化
 
-1. 當您建立新專案時，選取 `Win32 Debug` 目標。 在您完成程式的偵錯，並準備好建置 `Win32 Release` 目標以前，請使用 `Win32``Debug` 目標。 編譯器不會最佳化 `Win32 Debug` 目標。
+1. 當您建立新專案時，選取 `Win32 Debug` 目標。 在您完成程式的偵錯，並準備好建置 `Win32 Release` 目標以前，請使用 `Win32 Debug` 目標。 編譯器不會最佳化 `Win32 Debug` 目標。
 
 2. 在 [方案總管] 中選取專案。
 
-3. 在 [檢視]**** 功能表上按一下 [屬性頁]****。
+3. 在 [檢視] 功能表上按一下 [屬性頁]。
 
-4. 請確認在 [屬性頁]**** 對話方塊的 [組態]**** 下拉式清單中，選取 `Debug`。
+4. 請確認在 [屬性頁] 對話方塊的 [組態] 下拉式清單中，選取 `Debug`。
 
 5. 在左邊的資料夾檢視中，選取 **C/C++** 資料夾。
 
@@ -81,13 +83,13 @@ ms.locfileid: "90852383"
     >
     >  新增 `/Zo` 將會停用 [編輯後繼續](../debugger/edit-and-continue-visual-csharp.md)。
 
-   偵錯最佳化程式碼時，使用 [反組譯碼]**** 視窗來查看哪些指令已經確實建立和執行。 設定中斷點時，您必須了解中斷點可能會隨著指令移動。 例如，請參考下列程式碼：
+   偵錯最佳化程式碼時，使用 [反組譯碼] 視窗來查看哪些指令已經確實建立和執行。 設定中斷點時，您必須了解中斷點可能會隨著指令移動。 例如，請參考下列程式碼：
 
 ```cpp
 for (x=0; x<10; x++)
 ```
 
- 假設您在這行設定中斷點。 您可以預期會叫用 10 次中斷點，但是如果程式碼已完成最佳化，便只會叫用中斷點一次。 原因是第一個指令會將 `x` 值設為 0。 編譯器會辨識這個動作只需做一次，並且將它移出迴圈外。 中斷點會隨著移動。 迴圈內部則仍保留比較和累加 `x` 的指令。 當您檢視 [反組譯碼]**** 視窗時，為取得更佳控制，[步驟單位](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100))會自動設為指令，這在逐步執行最佳化程式碼時非常有用。
+ 假設您在這行設定中斷點。 您可以預期會叫用 10 次中斷點，但是如果程式碼已完成最佳化，便只會叫用中斷點一次。 原因是第一個指令會將 `x` 值設為 0。 編譯器會辨識這個動作只需做一次，並且將它移出迴圈外。 中斷點會隨著移動。 迴圈內部則仍保留比較和累加 `x` 的指令。 當您檢視 [反組譯碼] 視窗時，為取得更佳控制，[步驟單位](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100))會自動設為指令，這在逐步執行最佳化程式碼時非常有用。
 
 ## <a name="see-also"></a>另請參閱
 

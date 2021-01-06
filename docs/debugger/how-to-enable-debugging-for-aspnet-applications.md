@@ -1,7 +1,7 @@
 ---
 title: 啟用 ASP.NET apps 的偵錯工具 |Microsoft Docs
-description: 瞭解如何在 Visual Studio 中啟用 ASP.NET 和 ASP.NET Core 應用程式的偵錯工具，然後在 IIS Express 伺服器或本機 IIS 伺服器上執行處理常式。
-ms.custom: ''
+description: 瞭解如何在 Visual Studio 中啟用 ASP.NET 和 ASP.NET Core 應用程式的偵錯工具。 您可以在 IIS Express 伺服器或本機 IIS 伺服器上執行此處理程式。
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2020
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c5256def84f15fae535ac409349ce21cdd5c80ba
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 28f74c449e196d5eb0b3380d0ff1392db17e0b23
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761377"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903593"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>在 Visual Studio 中對 ASP.NET 或 ASP.NET Core 進行偵錯
 
@@ -180,14 +180,14 @@ ASP.NET projects 預設有 *web.config* 檔案，其中包含應用程式設定�
 
 1. 在 [ **發行** ] 對話方塊中，確定 **CustomProfile** (或您剛才建立的設定檔名稱) 出現，並將 **LastUsedBuildConfiguration** 設定為 **Debug**。
 
-1. 選取 [發佈]  。
+1. 選取 [發佈]。
 
     ![[發行] 對話方塊的螢幕擷取畫面，其中已選取 CustomProfile 應用程式、反白顯示 [發佈] 按鈕，並將 LastBuildConfiguration 設定為 Debug。](media/dbg-aspnet-local-iis-select-site.png)
 
 > [!IMPORTANT]
 > Debug 模式可大幅降低應用程式的效能。 為了達到最佳效能，請 `debug="false"` 在 *web.config* 中設定，並在部署生產應用程式或進行效能測量時，指定發行組建。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [ASP.NET 偵錯：系統需求](aspnet-debugging-system-requirements.md)
 - [如何：在使用者帳戶下執行背景工作處理序](how-to-run-the-worker-process-under-a-user-account.md)
 - [如何：尋找 ASP.NET 處理序的名稱](how-to-find-the-name-of-the-aspnet-process.md)

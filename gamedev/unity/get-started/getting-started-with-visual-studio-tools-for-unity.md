@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: ba95e15be083e0bb1274e01a986f4139d9443240
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341541"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903749"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>開始使用 Visual Studio 和 Unity
 
@@ -34,7 +34,7 @@ Visual Studio Tools for Unity 是免費的延伸模組，可支援撰寫和偵�
 > [!NOTE]
 > 本安裝指南適用于 Visual Studio。 如果您是使用 Visual Studio Code，請流覽 [Unity 開發與 VS Code 檔](https://code.visualstudio.com/docs/other/unity)。
 
-1. [下載 Visual Studio 安裝程式](/docs/install/install-visual-studio.md)，或在已安裝的情況下執行。
+1. [下載 Visual Studio 安裝程式](/visualstudio/docs/install/install-visual-studio.md)，或在已安裝的情況下執行。
 2. 針對您想要的 Visual Studio 版本按一下 (若已安裝) 或 [安裝] (針對新安裝)。
 3. 在 [ **工作負載** ] 索引標籤上，選取 [ **遊戲** ] 區段，然後選取 [ **使用 Unity 工作負載進行遊戲開發** ]。
 
@@ -46,7 +46,7 @@ Visual Studio Tools for Unity 是免費的延伸模組，可支援撰寫和偵�
 > [!NOTE]
 > 本安裝指南適用于 Visual Studio for Mac。 如果您是使用 Visual Studio Code，請流覽 [Unity 開發與 VS Code 檔](https://code.visualstudio.com/docs/other/unity)。
 
-適用于 Unity 的工具隨附于安裝 Visual Studio for Mac，且不需要個別的安裝步驟。 您可以在 **Visual Studio for Mac > 擴充功能 > 遊戲開發** 功能表中確認這項功能。 應啟用 **適用于 Unity 的 Visual Studio for Mac 工具** 。
+適用于 Unity 的工具隨附于安裝 Visual Studio for Mac，且不需要個別的安裝步驟。 您可以在 **Visual Studio for Mac > 擴充功能 > 遊戲開發** 功能表中確認這項功能。 應啟用 **適用于 Unity 的 Visual Studio for Mac 工具**。
 
 ![顯示已啟用 Visual Studio for Mac Tools for Unity 的 [擴充管理員] 視圖](../media/vsm/unity-workload.png)
 
@@ -84,7 +84,7 @@ Visual Studio Tools for Unity 是免費的延伸模組，可支援撰寫和偵�
 
     ![Windows 上 Unity 編輯器中的 [外部工具喜好設定] 功能表](../media/vs/preferences-external-tools.png)
 
-4. 若已選取 [瀏覽]，請瀏覽到您 Visual Studio 安裝目錄中的 **Common7/IDE** 目錄，然後選取 [devenv.exe]。 然後按一下 [ **開啟** ]。
+4. 若已選取 [瀏覽]，請瀏覽到您 Visual Studio 安裝目錄中的 **Common7/IDE** 目錄，然後選取 [devenv.exe]。 然後按一下 [ **開啟**]。
 5. 在 [External Script Editor] \(外部指令碼編輯器\) 清單中選取 Visual Studio 之後，請確認已選取 [Editor Attaching] \(編輯器附加\) 核取方塊。
 6. 關閉 [喜好設定] 對話方塊以完成設定程序。
 

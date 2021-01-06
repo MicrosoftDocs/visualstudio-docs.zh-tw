@@ -1,6 +1,7 @@
 ---
 title: 使用偵錯工具管理例外狀況 |Microsoft Docs
-ms.custom: seodec18
+description: 瞭解如何指定偵錯工具中斷的例外狀況，此時您會想要偵錯工具中斷，以及如何處理中斷點。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/09/2018
 ms.topic: how-to
 f1_keywords:
@@ -33,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff28944a36d338230a17cd533a4832452e42885b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 210f2b2fc3e037f58fed19031d7ae9762185a640
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348453"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903843"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>在 Visual Studio 中使用偵錯工具管理例外狀況
 
@@ -64,12 +65,12 @@ ms.locfileid: "85348453"
 
 偵錯工具可能會在擲回例外狀況的位置中斷執行，因此您可以在叫用處理程式之前檢查例外狀況。
 
-在 [ **例外狀況設定** ] 視窗中 (**Debug > Windows > 例外狀況設定**) ，展開例外狀況分類的節點，例如 **Common Language Runtime 例外**狀況。 然後選取該分類中特定例外狀況的核取方塊，例如 [ **了 [accessviolationexception**]。 您也可以選取例外狀況的整個類別。
+在 [ **例外狀況設定** ] 視窗中 (**Debug > Windows > 例外狀況設定**) ，展開例外狀況分類的節點，例如 **Common Language Runtime 例外** 狀況。 然後選取該分類中特定例外狀況的核取方塊，例如 [ **了 [accessviolationexception**]。 您也可以選取例外狀況的整個類別。
 
 ![已檢查的 AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
 
 > [!TIP]
-> 您可以使用 [**例外狀況設定**] 工具列中的 [**搜尋**] 視窗來尋找特定的例外狀況，或使用搜尋來篩選特定命名空間 (例如**System.IO**) 。
+> 您可以使用 [**例外狀況設定**] 工具列中的 [**搜尋**] 視窗來尋找特定的例外狀況，或使用搜尋來篩選特定命名空間 (例如 **System.IO**) 。
 
 如果您在 [ **例外狀況設定** ] 視窗中選取例外狀況，偵錯工具執行將會在擲回例外狀況的任何位置中斷，不論是否已處理。 現在例外狀況稱為第一個可能發生的例外狀況。 例如，以下是幾個情節：
 
@@ -91,7 +92,7 @@ ms.locfileid: "85348453"
   }
   ```
 
-  如果您已在 [**例外狀況設定**] 中檢查**了 [accessviolationexception** ， `throw` 當您在偵錯工具中執行此程式碼時，執行將會在該行上中斷。 然後，您可以繼續執行。 主控台應該會顯示這兩行：
+  如果您已在 [**例外狀況設定**] 中檢查 **了 [accessviolationexception** ， `throw` 當您在偵錯工具中執行此程式碼時，執行將會在該行上中斷。 然後，您可以繼續執行。 主控台應該會顯示這兩行：
 
   ```cmd
   caught exception
@@ -135,7 +136,7 @@ ms.locfileid: "85348453"
   }
   ```
 
-  如果您已在 [例外狀況]**設定**中簽**了 [accessviolationexception** ， `throw` 則當您在偵錯工具中執行此程式碼時，執行會在**ThrowHandledException ( # B1**和**ThrowUnhandledException ( # B3**的那一行中斷。
+  如果您已在 [例外狀況]**設定** 中簽 **了 [accessviolationexception** ， `throw` 則當您在偵錯工具中執行此程式碼時，執行會在 **ThrowHandledException ( # B1** 和 **ThrowUnhandledException ( # B3** 的那一行中斷。
 
 若要將例外狀況設定還原為預設值，請選擇 [將 **清單還原至預設設定** ] 按鈕：
 
@@ -161,7 +162,7 @@ ms.locfileid: "85348453"
 
 ## <a name="add-and-delete-exceptions"></a>新增及刪除例外狀況
 
-您可以新增及刪除例外狀況。 若要從類別中刪除例外狀況類型，請選取例外狀況，然後從 [**例外狀況設定**] 工具列上的 [減號])  (，選擇 [**從清單中刪除選取的例外**狀況] 按鈕。 或者，您可以在例外狀況上按一下滑鼠右鍵，然後從快捷方式功能表選取 [ **刪除** ]。 刪除例外狀況與取消核取例外狀況的效果相同，也就是偵錯工具在擲回時不會中斷。
+您可以新增及刪除例外狀況。 若要從類別中刪除例外狀況類型，請選取例外狀況，然後從 [**例外狀況設定**] 工具列上的 [減號])  (，選擇 [**從清單中刪除選取的例外** 狀況] 按鈕。 或者，您可以在例外狀況上按一下滑鼠右鍵，然後從快捷方式功能表選取 [ **刪除** ]。 刪除例外狀況與取消核取例外狀況的效果相同，也就是偵錯工具在擲回時不會中斷。
 
 若要加入例外狀況：
 
@@ -184,7 +185,7 @@ ms.locfileid: "85348453"
 
 例外狀況設定會保存在此方案的 .suo 檔案中，因此可套用至特定的方案中。 您無法在不同方案間重複使用特定的例外狀況設定。 現在只會保存已新增的例外狀況;刪除的例外狀況不是。 您可以新增例外狀況、關閉並重新開啟方案，但例外狀況仍會存在。 但是，如果您刪除例外狀況，然後關閉/重新開啟此方案，則該例外狀況會重新出現。
 
-[例外狀況設定] **** 視窗在 C# 中支援泛型例外狀況類型，但在 Visual Basic 中不支援。 若要中斷類似 `MyNamespace.GenericException<T>`的例外狀況，您必須新增例外狀況為 [MyNamespace.GenericException'1] ****。 也就是說，如果您已建立類似下列程式碼的例外狀況：
+[例外狀況設定]  視窗在 C# 中支援泛型例外狀況類型，但在 Visual Basic 中不支援。 若要中斷類似 `MyNamespace.GenericException<T>`的例外狀況，您必須新增例外狀況為 [MyNamespace.GenericException'1] 。 也就是說，如果您已建立類似下列程式碼的例外狀況：
 
 ```csharp
 public class GenericException<T> : Exception
@@ -216,9 +217,9 @@ public class GenericException<T> : Exception
 
    ![例外狀況的額外條件](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. 針對每個條件行，輸入模組的名稱，並將比較運算子清單變更為 **等於** 或 **不等於**。 您可以 **\\\*** 在名稱中指定萬用字元 () ，以指定一個以上的模組。
+3. 針對每個條件行，輸入模組的名稱，並將比較運算子清單變更為 **等於** 或 **不等於**。 您可以在名稱中指定萬用字元 ( * *\\\** _) 來指定一個以上的模組。
 
-4. 如果您需要刪除條件，請選擇條件線結尾的 **X** 。
+4. 如果您需要刪除條件，請選擇條件行結尾的 _ *X**。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,5 +1,7 @@
 ---
 title: 專案 |Microsoft Docs
+description: 瞭解 Vspackage 可以擴充 Visual Studio 專案系統的方式，包括專案類型、專案子類型和自訂工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,20 +16,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b7a9299321d2aa80eebb564bf9b926f07ab0108
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffc2dc28ed3d45194ba7738da58fa36dd022c79f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706206"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878049"
 ---
 # <a name="projects"></a>專案
-在 Visual Studio 中，專案是開發人員用來組織原始程式碼檔的容器，以及顯示在 **方案總管**中的其他資源。 專案通常是檔案 (例如，c #) 專案的 .csproj 檔案，會儲存原始程式碼檔和點陣圖檔案等資源的參考。 專案可讓您組織、建立、偵測和部署原始程式碼、Web 服務和資料庫的參考，以及其他資源。 Vspackage 可透過三種主要方式擴充 Visual Studio 專案系統： *專案類型*、 *專案子類型*和 *自訂工具*。
+在 Visual Studio 中，專案是開發人員用來組織原始程式碼檔的容器，以及顯示在 **方案總管** 中的其他資源。 專案通常是檔案 (例如，c #) 專案的 .csproj 檔案，會儲存原始程式碼檔和點陣圖檔案等資源的參考。 專案可讓您組織、建立、偵測和部署原始程式碼、Web 服務和資料庫的參考，以及其他資源。 Vspackage 可透過三種主要方式擴充 Visual Studio 專案系統： *專案類型*、 *專案子類型* 和 *自訂工具*。
 
 ## <a name="in-this-section"></a>本節內容
 - [專案類型](../../extensibility/internals/project-types.md)
 
- *專案類型* 可新增對新專案類型的支援，例如程式設計語言。 例如，Visual Studio 支援的每一種語言都有自己的專案類型，而 IronPython 整合範例則包含 IronPython 語言的專案類型。 您必須為 c # 或 Visual Basic 以外的語言建立專案類型，以自訂在 **方案總管**中建立、調試、部署和顯示專案的方式。 如需詳細資訊，請參閱 [專案類型](../../extensibility/internals/project-types.md)。
+ *專案類型* 可新增對新專案類型的支援，例如程式設計語言。 例如，Visual Studio 支援的每一種語言都有自己的專案類型，而 IronPython 整合範例則包含 IronPython 語言的專案類型。 您必須為 c # 或 Visual Basic 以外的語言建立專案類型，以自訂在 **方案總管** 中建立、調試、部署和顯示專案的方式。 如需詳細資訊，請參閱 [專案類型](../../extensibility/internals/project-types.md)。
 
 - [專案子類型](../../extensibility/internals/project-subtypes.md)
 

@@ -1,5 +1,7 @@
 ---
 title: 訊息功能表命令 |Microsoft Docs
+description: 查看 [訊息] 功能表上可用的命令清單，其中包含每個命令的簡短描述。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13afea6033138fcca2542821893bce5a06826b53
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62845886"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903203"
 ---
 # <a name="messages-menu-commands"></a>訊息功能表命令
 [ **訊息** ] 功能表提供用來控制訊息查看的命令。

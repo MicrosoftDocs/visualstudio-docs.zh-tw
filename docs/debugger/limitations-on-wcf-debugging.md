@@ -1,5 +1,7 @@
 ---
 title: WCF 調試的限制 |Microsoft Docs
+description: 瞭解開始偵測 WCF 服務的方式、所需的條件，以及調試限制。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8612bd2423849c61f21a5c184a3e1d39da0302b
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 30ca43483c352a4f102ab196dc5ea8e8650cdf81
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407740"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903840"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 偵錯的限制
 您可以使用三種方式開始對 WCF 服務進行偵錯：
@@ -32,7 +34,7 @@ ms.locfileid: "94407740"
 
 - 使用 [附加至處理序] 即可附加至目前正在執行的服務。 偵錯會從服務內部開始進行。
 
-  本主題將描述這些情節的限制。
+本主題將描述這些情節的限制。
 
 ## <a name="limitations-on-stepping-into-a-service"></a>逐步執行服務的限制
  若要從您要進行偵錯的用戶端應用程式逐步執行服務，則必須符合下列條件：
@@ -76,7 +78,7 @@ ms.locfileid: "94407740"
 ## <a name="self-hosting"></a>自我裝載
  「自我裝載服務」是一項不會在 IIS、WCF 服務主機或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 程式開發伺服器內部執行的 WCF 服務。 如需有關如何偵測自我裝載服務的詳細資訊，請參閱 [如何： Self-Hosted WCF 服務的調試](../debugger/how-to-debug-a-self-hosted-wcf-service.md)程式。
 
- 若要啟用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5 應用程式的偵錯功能，則必須先安裝 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5，再安裝 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]。 如果先安裝 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 再安裝 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5，當您嘗試對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5 應用程式進行偵錯時，就會發生錯誤。 錯誤訊息為「無法自動逐步執行伺服器」。 若要修正此問題，請使用 Windows **主控台** 的 [  >  **程式和功能** ] 來修復 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 安裝。
+ 若要啟用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5 應用程式的偵錯功能，則必須先安裝 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5，再安裝 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]。 如果先安裝 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 再安裝 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5，當您嘗試對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5 應用程式進行偵錯時，就會發生錯誤。 錯誤訊息為「無法自動逐步執行伺服器」。 若要修正此問題，請使用 Windows **主控台** 的 [  >  **程式和功能**] 來修復 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 安裝。
 
 ## <a name="see-also"></a>另請參閱
 - [偵錯 WCF 服務](../debugger/debugging-wcf-services.md)

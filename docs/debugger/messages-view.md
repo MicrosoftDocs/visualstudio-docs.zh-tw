@@ -1,5 +1,7 @@
 ---
 title: 訊息視圖 |Microsoft Docs
+description: 每個視窗、執行緒和進程都有相關聯的訊息資料流程，可在 [訊息] 視窗中看到。 瞭解如何開啟和控制訊息的查看。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62845844"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903399"
 ---
 # <a name="messages-view"></a>訊息檢視
 每個視窗都有相關聯的訊息資料流程。 [訊息] 視圖視窗會顯示此訊息資料流程。 系統會顯示視窗控制碼、訊息程式碼和訊息。 您也可以建立執行緒或進程的訊息查看。 這可讓您查看傳送至特定進程或執行緒所擁有之所有 windows 的訊息，這在捕獲視窗初始化訊息時特別有用。

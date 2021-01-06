@@ -1,5 +1,7 @@
 ---
 title: 編輯暫存器值 |Microsoft Docs
+description: 瞭解如何藉由在 [暫存器] 視窗中編輯其值來修改暫存器的內容， (只有在已啟用) 的位址層級偵錯工具才能使用。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,20 +21,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ccbfbc0ede95fe93974474f4917e1b141797e6
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4f83f67f57e67080f97a6df434f8dfc008e36892
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851641"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903541"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>如何：編輯暫存器值 (c #、c + +、Visual Basic、F # ) 
 
-只有在透過 [選項]**** 對話方塊的 [偵錯]**** 節點啟用位址層級偵錯時，才可以使用 [暫存器] 視窗。
+只有在透過 [選項] 對話方塊的 [偵錯] 節點啟用位址層級偵錯時，才可以使用 [暫存器] 視窗。
 
 ### <a name="to-change-the-value-of-a-register"></a>若要變更暫存器值
 
-1. 在 [暫存器]**** 視窗中使用 TAB 鍵或滑鼠，將插入點移至要變更的值上。 輸入時，游標必須放在要覆寫的值的前面。
+1. 在 [暫存器] 視窗中使用 TAB 鍵或滑鼠，將插入點移至要變更的值上。 輸入時，游標必須放在要覆寫的值的前面。
 
 2. 輸入新值。
 

@@ -1,5 +1,6 @@
 ---
 title: 將內容類型連結至副檔名
+description: 瞭解如何在此逐步解說中使用編輯器 Managed Extensibility Framework 延伸模組，將您自己的內容類型連結至副檔名。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d59ae0b5eb2411ff9e41466e8b87dbe20b835ba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034659"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877906"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>逐步解說：將內容類型連結至副檔名
 您可以定義自己的內容類型，並使用編輯器 Managed Extensibility Framework (MEF) 擴充功能來連結副檔名。 在某些情況下，副檔名已由語言服務定義。 但是，若要搭配 MEF 使用它，您仍然必須將它連結至內容類型。
@@ -72,7 +73,7 @@ ms.locfileid: "90034659"
 
 ## <a name="link-a-file-name-extension-to-a-content-type"></a>將副檔名連結至內容類型
 
-- 若要將這個內容類型對應至副檔名，請匯出副檔名為的， <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 且 *.hid*內容類型為 "hid" 的。
+- 若要將這個內容類型對應至副檔名，請匯出副檔名為的， <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 且內容類型為 "hid" 的。
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -102,5 +103,5 @@ ms.locfileid: "90034659"
     [ContentType("hid")]
     ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

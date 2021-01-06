@@ -1,5 +1,7 @@
 ---
 title: 在混合模式中進行 Debug |Microsoft Docs
+description: 瞭解如何在呼叫端應用程式專案的屬性頁中， (managed 和機器碼) 啟用混合模式的偵錯工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2018
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb563b260175d3385288c4cb6f046af8526069cf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 123fb61cb223d8db3c447f5925639df33a2b3e11
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852109"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903983"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>如何：在混合模式中進行調試 (c #、c + +、Visual Basic) 
 
@@ -37,15 +39,15 @@ ms.locfileid: "90852109"
 如果您無法存取呼叫應用程式的專案，您可以從 DLL 專案進行 DLL 的偵錯工具。 您不需要混合模式就能只進行 DLL 專案的調試。 如需詳細資訊，請參閱 [如何：從 DLL 專案進行 Debug](../debugger/how-to-debug-from-a-dll-project.md)。
 
 > [!NOTE]
-> 根據您的 Visual Studio 設定或版本，您所看到的對話方塊和命令可能會與本文中的不同。 若要變更您的設定，請選擇 [**工具**匯  >  **入和匯出設定**]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
+> 根據您的 Visual Studio 設定或版本，您所看到的對話方塊和命令可能會與本文中的不同。 若要變更您的設定，請選擇 [**工具** 匯  >  **入和匯出設定**]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
 ## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>啟用原生呼叫應用程式的混合模式偵錯工具
 
-1. 在**方案總管**中選取 c + + 專案，然後按一下 [**屬性**] 圖示，按下**Alt** + **鍵**，或按一下滑鼠右鍵並選擇 [**屬性**]。
+1. 在 **方案總管** 中選取 c + + 專案，然後按一下 [**屬性**] 圖示，按下 **Alt** + **鍵**，或按一下滑鼠右鍵並選擇 [**屬性**]。
 
-1. 在 [ ** \<Project> 屬性頁**] 對話方塊中，展開 [設定**屬性**]，然後選取 [**調試**]。
+1. 在 [ **\<Project> 屬性頁**] 對話方塊中，展開 [設定 **屬性**]，然後選取 [**調試**]。
 
-1. 將**偵錯工具類型**設定為**混合**或**自動**。
+1. 將 **偵錯工具類型** 設定為 **混合** 或 **自動**。
 
 1. 選取 [確定]。
 
@@ -53,9 +55,9 @@ ms.locfileid: "90852109"
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>針對 managed 呼叫應用程式啟用混合模式的偵錯工具
 
-1. 選取**方案總管**中的 c # 或 Visual Basic 專案，然後選取 [**屬性**] 圖示，按下**Alt** + **鍵**，或按一下滑鼠右鍵並選擇 [**屬性**]。
+1. 選取 **方案總管** 中的 c # 或 Visual Basic 專案，然後選取 [**屬性**] 圖示，按下 **Alt** + **鍵**，或按一下滑鼠右鍵並選擇 [**屬性**]。
 
-1. 選取 [ **調試** 程式] 索引標籤，然後選取 [ **啟用原生程式碼調試**程式]。
+1. 選取 [ **調試** 程式] 索引標籤，然後選取 [ **啟用原生程式碼調試** 程式]。
 
 1. 關閉 [屬性] 頁面以儲存變更。
 

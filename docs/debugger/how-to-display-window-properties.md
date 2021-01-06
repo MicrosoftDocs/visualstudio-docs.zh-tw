@@ -1,5 +1,7 @@
 ---
 title: 顯示視窗屬性 |Microsoft Docs
+description: Windows View 會顯示您系統上所有作用中視窗的樹狀結構。 瞭解如何顯示出現在 Windows View 中的視窗屬性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2eed4d85d01711fedd6235a45f5e8ea3a3340ca
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 55b4a40f1dae76f2fc0aa807b7099fdd7ac928f0
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852279"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903957"
 ---
 # <a name="how-to-display-window-properties"></a>如何：顯示視窗屬性
 若要深入瞭解 [Windows View](../debugger/windows-view.md)中所列的視窗，請使用 [ [視窗屬性] 對話方塊](../debugger/window-properties-dialog-box.md)。

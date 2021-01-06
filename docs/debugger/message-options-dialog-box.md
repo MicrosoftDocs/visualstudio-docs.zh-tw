@@ -1,5 +1,6 @@
 ---
 title: '[訊息選項] 對話方塊 |Microsoft Docs'
+description: 在訊息選項中指定哪些訊息會列在 [訊息] 視圖中，以及要顯示的訊息資料。
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f066dd687f4bfbb6b286667abe0bb67224a7b763
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62931317"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903580"
 ---
 # <a name="message-options-dialog-box"></a>訊息選項對話方塊
-使用此對話方塊來選取要在 [ [訊息] 視圖](../debugger/messages-view.md)中列出的訊息。 若要顯示此對話方塊，請從**Spy**功能表選擇 [**記錄訊息**]。
+使用此對話方塊來選取要在 [ [訊息] 視圖](../debugger/messages-view.md)中列出的訊息。 若要顯示此對話方塊，請從 **Spy** 功能表選擇 [**記錄訊息**]。
 
 ## <a name="in-this-section"></a>本節內容
  [訊息選項對話方塊、視窗](../debugger/windows-tab-message-options-dialog-box.md) 索引標籤用來選取要列出的訊息類型。 包含 Finder 工具。

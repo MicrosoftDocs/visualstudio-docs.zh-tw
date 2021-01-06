@@ -1,6 +1,7 @@
 ---
 title: 啟用和停用編輯後繼續 |Microsoft Docs
-ms.custom: seodec18
+description: 瞭解如何在設計階段停用和啟用 Visual Studio 選項中的 [編輯後繼續]。 [編輯後繼續] 只能用於偵錯組建中。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,34 +27,34 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: ce531a0f7f9d6e26db38b5cf041f06d42209261a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 02356a407acc97b60f05641359c32305323f162e
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851394"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903528"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何：啟用和停用編輯後繼續 (c #、VB、c + +) 
 
-您可以在設計階段于 [Visual Studio**選項**] 對話方塊中停用或啟用 [**編輯後繼續**]。 [**編輯後繼續**] 只適用于 debug 組建。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。
+您可以在設計階段于 [Visual Studio **選項**] 對話方塊中停用或啟用 [**編輯後繼續**]。 [**編輯後繼續**] 只適用于 debug 組建。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。
 
 在原生 c + + 中，[ **編輯後繼續** ] 需要使用 `/INCREMENTAL` 選項。 如需有關 c + + 功能需求的詳細資訊，請參閱這 [篇 blog 文章](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/) 和 [編輯後繼續 (c + +) ](../debugger/edit-and-continue-visual-cpp.md)。
 
 **若要啟用或停用 [編輯後繼續]：**
 
-1. 如果您是在調試進程中，請停止調試 (**Debug**  >  **停止調試**或**Shift** + **F5**) 。
+1. 如果您是在調試進程中，請停止調試 (**Debug**  >  **停止調試** 或 **Shift** + **F5**) 。
 
-1. 在 [**工具**  >  **選項**] > (] 或 [**調試**  >  **選項**]) > **Debugging**  >  **[一般] 的 [一般**] 窗格中，選取 [**編輯後繼續**]。
+1. 在 [**工具**  >  **選項**] > (] 或 [**調試**  >  **選項**]) >   >  **[一般] 的 [一般**] 窗格中，選取 [**編輯後繼續**]。
 
     > [!NOTE]
     > 如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 [編輯後繼續]。 如需詳細資訊，請參閱 [IntelliTrace](../debugger/intellitrace.md)。
 
 1. 針對 c + + 程式碼，請確定已選取 [ **啟用原生編輯後繼續** ]，並設定其他選項：
-    - **在 [繼續 (僅限原生) 上套用變更 **
+    - **在 [繼續 (僅限原生) 上套用變更**
 
-      如果選取此選項，當您繼續從中斷狀態進行偵錯工具時，Visual Studio 會自動編譯並套用程式碼變更。 否則，您可以選擇使用**Debug**apply 套用程式  >  **代碼變更**來套用變更。
+      如果選取此選項，當您繼續從中斷狀態進行偵錯工具時，Visual Studio 會自動編譯並套用程式碼變更。 否則，您可以選擇使用 **Debug** apply 套用程式  >  **代碼變更** 來套用變更。
 
-    - **警告過時的程式碼 (僅限原生) **
+    - **警告過時的程式碼 (僅限原生)**
 
       如果選取此選項，則會提供有關過時程式碼的警告。
 

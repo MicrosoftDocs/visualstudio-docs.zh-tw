@@ -1,5 +1,7 @@
 ---
 title: 舊版語言服務中的語法標示 |Microsoft Docs
+description: 瞭解如何藉由提供可識別詞法元素或標記類型的剖析器或掃描器，來支援舊版語言服務中的語法顏色標示。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02723a09254255b98291cb921ae5ec091d8b9859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704699"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877750"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>舊版語言服務中的語法上色
 語法顏色標示是一種功能，可在不同的色彩和樣式的原始程式檔中顯示不同的程式設計語言元素。 若要支援這項功能，您必須提供剖析器或掃描器，以識別檔案中的詞法元素或標記類型。 許多語言會區分關鍵字、分隔符號 (例如括弧或大括弧) 和批註，方法是以不同方式標示它們。
@@ -34,7 +36,7 @@ ms.locfileid: "80704699"
  傳回給編輯器的色彩資訊是可設定色彩專案清單中的索引。 每個可設定色彩專案都會指定一個色彩值和一組字型屬性，例如粗體或刪除線。 編輯器會提供一組可供您的語言服務使用的預設可設定色彩專案。 您只需要為每個權杖類型指定適當的色彩索引。 不過，您可以提供一組自訂的可設定色彩專案和您為權杖提供的索引，並參考您自己的可設定色彩專案清單，而不是預設清單。 您也必須將登錄 `RequestStockColors` 專案設定為 0 (或不指定 `RequestStockColors` 所有) 的專案，以支援自訂色彩。 您可以使用使用者定義屬性的具名引數來設定此登錄專案 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 。 如需註冊語言服務和設定其選項的詳細資訊，請參閱 [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)。
 
 ## <a name="custom-colorable-items"></a>自訂可設定色彩的項目
- 若要提供您自己的自訂可設定色彩專案，您必須覆寫 <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> 類別上的和方法 <xref:Microsoft.VisualStudio.Package.LanguageService> 。 第一個方法會傳回語言服務支援的自訂可設定色彩專案數目，而第二個方法會依索引取得自訂可設定色彩專案。 您可以建立自訂可設定色彩專案的預設清單。 在您的語言服務的函式中，您只需要為每個可設定色彩專案提供名稱。 Visual Studio 會自動處理使用者選取一組不同可設定色彩專案的情況。 這個名稱會顯示在 [**選項**] 對話方塊的 [字型**和色彩**] 屬性頁中， (可從 Visual Studio [**工具**] 功能表) ，而此名稱會決定使用者已覆寫的色彩。 使用者的選擇會儲存在登錄中的快取中，並以色彩名稱進行存取。 [字型 **和色彩** ] 屬性頁會依字母順序列出所有色彩名稱，因此您可以在每個色彩名稱之前加上您的語言名稱來分組自訂色彩;例如，"**TestLanguage-Comment**" 和 "**TestLanguage" 關鍵字**。 或者，您可以依類型、"**Comment (TestLanguage) **" 和 "**關鍵字 (TestLanguage) **" 來分組您的可設定色彩專案。 偏好依語言名稱分組。
+ 若要提供您自己的自訂可設定色彩專案，您必須覆寫 <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> 類別上的和方法 <xref:Microsoft.VisualStudio.Package.LanguageService> 。 第一個方法會傳回語言服務支援的自訂可設定色彩專案數目，而第二個方法會依索引取得自訂可設定色彩專案。 您可以建立自訂可設定色彩專案的預設清單。 在您的語言服務的函式中，您只需要為每個可設定色彩專案提供名稱。 Visual Studio 會自動處理使用者選取一組不同可設定色彩專案的情況。 這個名稱會顯示在 [**選項**] 對話方塊的 [字型 **和色彩**] 屬性頁中， (可從 Visual Studio [**工具**] 功能表) ，而此名稱會決定使用者已覆寫的色彩。 使用者的選擇會儲存在登錄中的快取中，並以色彩名稱進行存取。 [字型 **和色彩** ] 屬性頁會依字母順序列出所有色彩名稱，因此您可以在每個色彩名稱之前加上您的語言名稱來分組自訂色彩;例如，"**TestLanguage-Comment**" 和 "**TestLanguage" 關鍵字**。 或者，您可以依類型、"**Comment (TestLanguage)**" 和 "**關鍵字 (TestLanguage)**" 來分組您的可設定色彩專案。 偏好依語言名稱分組。
 
 > [!CAUTION]
 > 強烈建議您在可設定色彩專案名稱中包含語言名稱，以避免與現有的可設定色彩專案名稱發生衝突。
@@ -144,7 +146,7 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)
 - [舊版語言服務的剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 - [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)
