@@ -1,5 +1,7 @@
 ---
 title: 專案子類型 |Microsoft Docs
+description: 瞭解專案子類型如何讓您自訂 Visual Studio 的專案系統行為。 Vspackage 使用 COM 匯總來執行專案子類型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c528486db99ddf07b2a2d1e18dcee4fc46e8713b
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 05240ee72aef85e50d07c7a39df1c819f04933a2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426972"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876294"
 ---
 # <a name="project-subtypes"></a>專案子類型
 專案子類型可讓您自訂或類別的專案系統行為 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 自訂包括將其他資料儲存在專案檔中、在 [ **加入新專案** ] 對話方塊中新增或篩選項目、控制元件的調試和部署方式，以及擴充 [專案 **屬性頁** ] 對話方塊。 Vspackage 使用 COM 匯總來執行專案子類型。

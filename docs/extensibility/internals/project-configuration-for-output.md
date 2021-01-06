@@ -1,5 +1,7 @@
 ---
 title: 輸出的專案設定 |Microsoft Docs
+description: 瞭解每個設定可支援的組建程式，以及可供使用輸出專案的介面和方法。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78b95457af4c5d806fdfcc20f49ac4e82df36488
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe5cb6477808f892b8d36aa5fd616a5a0ea7969
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706662"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876320"
 ---
 # <a name="project-configuration-for-output"></a>輸出的專案組態
 每個設定都可以支援一組產生輸出專案的組建處理常式，例如可執行檔或資源檔。 這些輸出專案是使用者私用的，而且可以放在連結相關輸出類型的群組中，例如可執行檔 ( .exe、.dll、.lib) 和來源檔案 ( .idl、.h 檔) 。
@@ -43,8 +45,8 @@ ms.locfileid: "80706662"
 
  如需詳細資訊，請參閱 `IVsOutputGroup` 在 [適用于專案的 MPF](https://github.com/tunnelvisionlabs/MPFProj10)上自訂專案範例中的實作為。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 - [建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)
 - [專案組態物件](../../extensibility/internals/project-configuration-object.md)
-- [方案組態](../../extensibility/internals/solution-configuration.md)
+- [解決方案設定](../../extensibility/internals/solution-configuration.md)

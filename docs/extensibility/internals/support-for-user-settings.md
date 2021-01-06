@@ -1,5 +1,7 @@
 ---
 title: 支援使用者設定 |Microsoft Docs
+description: 瞭解如何使用 Visual Studio SDK 中的設定 Api 來啟用設定類別的持續性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02bb2450196de76917e9cffc2f5f5acc6c8ee7b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9f6ee52e9ba87eb2f570a6e388dc98c050989c9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704782"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876515"
 ---
 # <a name="support-for-user-settings"></a>支援使用者設定
-VSPackage 可定義一或多個設定類別，這是當使用者選擇 [**工具**] 功能表上的 [匯**入/匯出設定**] 命令時保存的狀態變數群組。 若要啟用此持續性，您可以在中使用設定 Api [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 。
+VSPackage 可定義一或多個設定類別，這是當使用者選擇 [**工具**] 功能表上的 [匯 **入/匯出設定**] 命令時保存的狀態變數群組。 若要啟用此持續性，您可以在中使用設定 Api [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 。
 
  稱為自訂設定點的登錄專案，以及 GUID 定義了 VSPackage 的設定類別。 VSPackage 可以支援多個設定類別，每個都是由自訂設定點所定義。
 
@@ -34,7 +36,7 @@ VSPackage 可定義一或多個設定類別，這是當使用者選擇 [**工具
  自訂設定點會建立在下列位置的登錄專案中： HKLM\Software\Microsoft\VisualStudio \\ *\<Version>* \UserSettings \\ `<CSPName>` ，其中 `<CSPName>` 是 VSPackage 支援的自訂設定點名稱，而 *\<Version>* 則是的版本 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，例如8.0。
 
 > [!NOTE]
-> \\ *\<Version>* 當 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 初始化整合式開發環境 (IDE) 時，可使用替代根目錄覆寫 HKEY_LOCAL_MACHINE \software\microsoft\visualstudio 的根路徑。 如需詳細資訊，請參閱 [命令列參數](../../extensibility/command-line-switches-visual-studio-sdk.md)。
+> \\ *\<Version>* 當 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 初始化整合式開發環境 (IDE) 時，可使用替代根目錄覆寫 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio的根路徑。 如需詳細資訊，請參閱 [命令列參數](../../extensibility/command-line-switches-visual-studio-sdk.md)。
 
  登錄專案的結構如下所示：
 

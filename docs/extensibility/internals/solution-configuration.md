@@ -1,5 +1,7 @@
 ---
 title: 解決方案設定 |Microsoft Docs
+description: 瞭解如何執行您的專案類型所支援的解決方案設定，這些設定會指示 Start (F5) 機碼和組建命令的行為。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c96b73747ef8b136a74a7256cde7fef8d1c42de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad298a44eedea0681a554add74bd67ed22cad41
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705383"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876024"
 ---
 # <a name="solution-configuration"></a>方案組態
 解決方案設定會儲存解決方案層級的屬性。 他們會導向 **Start** (F5) Key 和 **Build** 命令的行為。 根據預設，這些命令會建立並啟動偵錯工具設定。 這兩個命令都會在解決方案設定的內容中執行。 這表示使用者可以預期 F5 啟動，並建立任何使用中解決方案設定的設定。 環境是設計來針對解決方案進行優化，而不是在建立和執行時進行專案。
@@ -23,15 +25,15 @@ ms.locfileid: "80705383"
  標準 Visual Studio 工具列包含 [開始] 按鈕右邊的 [開始] 按鈕和方案設定下拉式清單。 這份清單可讓使用者在按下 F5 時，選擇要啟動的設定，建立自己的解決方案設定，或編輯現有的設定。
 
 > [!NOTE]
-> 沒有可建立或編輯解決方案設定的擴充性介面。 您必須使用 `DTE.SolutionBuild`。 不過，有一些擴充性 Api 可用於管理解決方案組建。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。
+> 沒有可建立或編輯解決方案設定的擴充性介面。 您必須使用 `DTE.SolutionBuild`。 不過，有一些擴充性 Api 可用於管理解決方案組建。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2> 。
 
  以下是您可以如何執行您的專案類型所支援的解決方案設定：
 
-- 專案
+- Project
 
    顯示在目前方案中找到的專案名稱。
 
-- 設定
+- 組態
 
    若要提供專案類型所支援並顯示在屬性頁中的設定清單，請執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> 。
 
@@ -55,7 +57,7 @@ ms.locfileid: "80705383"
 
   新增方案設定之後，使用者可以從 [標準] 工具列上的 [方案設定] 下拉式清單方塊中選取該設定，以建立及/或啟動該設定。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 - [建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)
 - [專案組態物件](../../extensibility/internals/project-configuration-object.md)

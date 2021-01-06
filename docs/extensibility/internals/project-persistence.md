@@ -1,5 +1,7 @@
 ---
 title: 專案持續性 |Microsoft Docs
+description: 瞭解專案設計中的持續性，包括使用 IPersistFileFormat 來保存檔案和非檔案型專案物件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10a9cde91c0181fbfefbaa353c7c3702f4b36819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706465"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877438"
 ---
 # <a name="project-persistence"></a>專案持續性
 持續性是您專案的重要設計考慮。 大部分的專案都會使用代表檔案的專案專案; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 也支援以非檔案為基礎之資料的專案。 專案和專案檔案所擁有的兩個檔案都必須保存。 IDE 會指示專案儲存本身或專案專案。
 
- 專案的範本會傳遞至專案 factory。 範本應該根據特定專案類型的需求，支援所有專案專案的初始化。 這些範本之後可以儲存為專案檔，然後由 IDE 透過解決方案來管理。 如需詳細資訊，請參閱[使用專案工廠和方案建立專案實例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)。 [Solutions](../../extensibility/internals/solutions-overview.md)
+ 專案的範本會傳遞至專案 factory。 範本應該根據特定專案類型的需求，支援所有專案專案的初始化。 這些範本之後可以儲存為專案檔，然後由 IDE 透過解決方案來管理。 如需詳細資訊，請參閱[使用專案工廠和方案建立專案實例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)。 [](../../extensibility/internals/solutions-overview.md)
 
  專案專案可以是以檔案為基礎或非檔案型的：
 
@@ -42,6 +44,6 @@ ms.locfileid: "80706465"
 
  介面上的方法 `IVsPersistHierarchyItem2` 是用來判斷專案是否可以重載，而且如果專案可以的話，也可以重載。 此外，您 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> 可以執行方法來使變更的專案在不儲存的情況下捨棄。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [使用專案 Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

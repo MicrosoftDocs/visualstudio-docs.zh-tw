@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 中的工作區索引 |Microsoft Docs
+description: 深入瞭解工作區編制索引，這是資料的集合和持續性儲存，可針對開啟的資料夾工作區支援豐富的 IDE 功能。
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf7df777d27003fa5763debc772a8804ec28ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b5c069ce3ae993f2d2371bffae3ac58b286fa70
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952692"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877048"
 ---
 # <a name="workspace-indexing"></a>工作區索引
 
@@ -24,7 +26,7 @@ ms.locfileid: "62952692"
 
 |資料|檔案掃描器類型|索引查詢結果類型|相關類型|
 |--|--|--|--|
-|參考|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfo>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfoType>|
+|參考資料|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfo>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfoType>|
 |符號|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinition>|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinitionSearchResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.ISymbolService> 應該用來取代 `IIndexWorkspaceService` 查詢|
 |資料值|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataValue>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataResult`1>||
 

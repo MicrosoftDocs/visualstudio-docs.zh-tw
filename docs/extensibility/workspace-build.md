@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 中的工作區組建 |Microsoft Docs
+description: 瞭解為工作區提供索引和檔案內容資料以支援開啟資料夾案例的擴充項。
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e44c2398b873bbca95c971ae1b44ac3de831b2ae
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553324"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877100"
 ---
 # <a name="workspace-build"></a>工作區組建
 
@@ -88,7 +90,7 @@ private static void OutputBuildMessage(IWorkspace workspace)
 }
 ```
 
-`BuildMessage.Type` 以及 `BuildMessage.LogMessage` 控制將資訊呈現給使用者的行為。 以外 `BuildMessage.TaskType` 的任何值 `None` 都會產生具有指定詳細資料的 **錯誤清單** 專案。 `LogMessage`一律會在**輸出**工具視窗的 [**組建**] 窗格中輸出。
+`BuildMessage.Type` 以及 `BuildMessage.LogMessage` 控制將資訊呈現給使用者的行為。 以外 `BuildMessage.TaskType` 的任何值 `None` 都會產生具有指定詳細資料的 **錯誤清單** 專案。 `LogMessage`一律會在 **輸出** 工具視窗的 [**組建**] 窗格中輸出。
 
 或者，擴充功能可以直接與 [ **錯誤清單** ] 或 [ **組建** ] 窗格互動。 Bug 存在於 Visual Studio 2017 15.7 版之前的版本中，其中的 `pszProjectUniqueName` 引數 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane2.OutputTaskItemStringEx2*> 會被忽略。
 

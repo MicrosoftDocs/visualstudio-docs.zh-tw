@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：顯示簽章說明 |Microsoft Docs
+description: 瞭解如何使用本逐步解說來顯示文字內容類型的簽章說明。 簽章說明會在工具提示中顯示方法的簽章。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b88c8555904bb31c2804579459ad3096d640b0c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be324ab48d42e859678ccf01d8c75faae6cea381
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904814"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876242"
 ---
 # <a name="walkthrough-display-signature-help"></a>逐步解說：顯示簽章說明
 簽章說明 (也稱為 *參數資訊*) 當使用者輸入參數清單開始字元 (通常是左括弧) 時，就會在工具提示中顯示方法的簽章。 作為參數和參數分隔符號 (通常會輸入逗點) ，工具提示會更新以顯示下一個參數（以粗體顯示）。 您可以用下列方式定義簽章說明：在語言服務的內容中，定義您自己的副檔名和內容類型，以及只顯示該類型的簽章說明，或針對現有的內容類型顯示簽章說明 (例如 "text" ) 。 本逐步解說會示範如何顯示「文字」內容類型的簽章說明。
@@ -24,7 +26,7 @@ ms.locfileid: "85904814"
 
  本逐步解說會示範如何為一組硬式編碼的識別碼設定簽章說明。 在完整的執行中，語言會負責提供該內容。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="creating-a-mef-project"></a>建立 MEF 專案
@@ -244,5 +246,5 @@ ms.locfileid: "85904814"
 
 4. 輸入左括弧之後，您應該會看到工具提示，顯示該方法的兩個簽章清單 `add()` 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

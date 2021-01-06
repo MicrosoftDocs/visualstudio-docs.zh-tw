@@ -1,5 +1,7 @@
 ---
 title: 支援原始檔控制 |Microsoft Docs
+description: 瞭解 Visual Studio 如何針對您的專案或編輯器支援檔案簽出、簽入和其他原始檔控制作業。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84de3120783528d209b1475477aee5087edac42b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e722770ad1db4b85dbc2a5a8754d9158b6ee436
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704735"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876450"
 ---
 # <a name="supporting-source-control"></a>支援原始檔控制
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援專案或編輯器的檔案簽出、簽入和其他原始檔控制作業。 作為原始檔控制用戶端， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 是設計來與原始檔控制套件互動，例如 [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ，可為動態定義的檔案集提供封存、版本控制及控制功能。
@@ -41,7 +43,7 @@ ms.locfileid: "80704735"
 
  描述如何在使用者將專案新增至原始檔控制系統時註冊專案。
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 向環境或原始檔控制封裝指出檔案即將在記憶體中變更或儲存。
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> 允許專案和階層向原始檔控制註冊自己，並取得原始檔控制狀態的相關資訊。

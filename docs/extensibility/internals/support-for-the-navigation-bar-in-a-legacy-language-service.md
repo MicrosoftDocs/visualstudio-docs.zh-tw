@@ -1,5 +1,6 @@
 ---
 title: 舊版語言服務中的支援巡覽列
+description: 瞭解如何在舊版語言服務中支援巡覽列。 編輯器視圖中的導覽列會顯示檔案中的類型和成員。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0011e9dac5438715571d1df76ba379fb9ed122df
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 325789c3b7210c87d5c1b0414434af27c266c31c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036557"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876538"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>舊版語言服務中對巡覽列的支援
 編輯器視圖頂端的巡覽列會顯示檔案中的類型和成員。 類型會顯示在左側下拉式清單中，而成員會顯示在右邊的下拉式清單中。 當使用者選取型別時，會將插入號放在型別的第一行。 當使用者選取成員時，會將插入號放在成員的定義上。 下拉式方塊會更新，以反映插入號的目前位置。

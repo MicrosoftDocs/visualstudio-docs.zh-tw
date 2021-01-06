@@ -1,5 +1,7 @@
 ---
 title: 舊版語言服務中的大綱和隱藏文字 |Microsoft Docs
+description: 本文將連結至在舊版語言服務中執行大綱和隱藏文字的資源。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1f05d42de0201a7556046d19baf55830fa62c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bd0b48292a448d70b266e598df561fdff2e8ab4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706818"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877399"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>舊版語言服務中的大綱和隱藏文字
 大綱可將一連串的文字行折迭成單一行。 例如，在 c + + 中，所有方法都可以折迭成單一行，只顯示方法簽章。 隱藏文字是可以顯示或隱藏的文字行序列。

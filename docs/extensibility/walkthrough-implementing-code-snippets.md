@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：執行程式碼片段 |Microsoft Docs
+description: 您可以建立程式碼片段，並將它們包含在編輯器延伸模組中。 瞭解如何使用本逐步解說來建立/註冊程式碼片段。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
@@ -11,17 +13,17 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: e06e97acc77b4701e02b0ca54de589830a768669
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a36590c0e56f1e1a2c01f8e084f0b95442607a5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904709"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877113"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>逐步解說：執行程式碼片段
 您可以建立程式碼片段，並將它們包含在編輯器延伸中，讓擴充功能的使用者可以將這些程式碼片段新增至自己的程式碼。
 
- 程式碼片段是可併入檔案中的程式碼片段或其他文字。 若要查看已針對特定程式設計語言註冊的所有程式碼片段，請按一下 [ **工具** ] 功能表上的 [ **程式碼片段管理員**]。 若要將程式碼片段插入檔案中，請以滑鼠右鍵按一下您想要的程式碼片段、按一下 [插入程式碼片段] 或 [ **環繞**]，找出您想要的程式碼片段，然後按兩下它。 按**tab**或**Shift**索引標籤， + **Tab**以修改程式碼片段的相關部分，然後按**enter**或**Esc**接受它。 如需詳細資訊，請參閱 [程式碼片段](../ide/code-snippets.md)。
+ 程式碼片段是可併入檔案中的程式碼片段或其他文字。 若要查看已針對特定程式設計語言註冊的所有程式碼片段，請按一下 [ **工具** ] 功能表上的 [ **程式碼片段管理員**]。 若要將程式碼片段插入檔案中，請以滑鼠右鍵按一下您想要的程式碼片段、按一下 [插入程式碼片段] 或 [ **環繞**]，找出您想要的程式碼片段，然後按兩下它。 按 **tab** 或 **Shift** 索引標籤， + 以修改程式碼片段的相關部分，然後按 **enter** 或 **Esc** 接受它。 如需詳細資訊，請參閱 [程式碼片段](../ide/code-snippets.md)。
 
  程式碼片段包含在副檔名為程式碼片段的 XML 檔案中。 程式碼片段可以包含欄位，這些欄位會在插入程式碼片段之後反白顯示，讓使用者可以找到並變更它們。 程式碼片段檔案也會提供 **程式碼片段管理員** 的資訊，讓它可以在正確的類別目錄中顯示程式碼片段名稱。 如需程式碼片段架構的詳細資訊，請參閱 [程式碼片段架構參考](../ide/code-snippets-schema-reference.md)。
 
@@ -35,7 +37,7 @@ ms.locfileid: "85904709"
 
    本逐步解說是根據 [逐步解說：顯示語句完成](../extensibility/walkthrough-displaying-statement-completion.md)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-and-register-code-snippets"></a>建立並註冊程式碼片段
@@ -66,7 +68,7 @@ ms.locfileid: "85904709"
    </SnippetCollection>
    ```
 
-3. 在程式碼片段資料夾中建立檔案，將它命名為**test** `.snippet` ，然後新增下列文字：
+3. 在程式碼片段資料夾中建立檔案，將它命名為 **test** `.snippet` ，然後新增下列文字：
 
    ```xml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -143,7 +145,7 @@ ms.locfileid: "85904709"
      [!code-csharp[VSSDKCompletionTest#24](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_3.cs)]
      [!code-vb[VSSDKCompletionTest#24](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_3.vb)]
 
-9. 建置並執行專案。 在執行專案時，Visual Studio 的實驗實例中，您剛剛註冊的程式碼片段應該會以**TestSnippets**語言顯示在**程式碼片段管理員**中。
+9. 建置並執行專案。 在執行專案時，Visual Studio 的實驗實例中，您剛剛註冊的程式碼片段應該會以 **TestSnippets** 語言顯示在 **程式碼片段管理員** 中。
 
 ## <a name="add-the-insert-snippet-command-to-the-shortcut-menu"></a>將 [插入程式碼片段] 命令新增至快捷方式功能表
  文字檔的快捷方式功能表上不包含 [ **插入程式碼片段** ] 命令。 因此，您必須啟用此命令。
@@ -160,7 +162,7 @@ ms.locfileid: "85904709"
 2. 建置並執行專案。 在實驗實例中，開啟副檔名為 *zzz* 的檔案，然後以滑鼠右鍵按一下其中的任何位置。 [ **插入程式碼片段** ] 命令應該會出現在快捷方式功能表上。
 
 ## <a name="implement-snippet-expansion-in-the-snippet-picker-ui"></a>在程式碼片段選擇器 UI 中執行程式碼片段展開
- 本節說明如何執行程式碼片段展開，以便在快捷方式功能表上按一下 [ **插入程式碼片段** ] 時，顯示程式碼片段選擇器 UI。 當使用者輸入程式碼片段快捷方式，然後按 **Tab 鍵**時，也會展開程式碼片段。
+ 本節說明如何執行程式碼片段展開，以便在快捷方式功能表上按一下 [ **插入程式碼片段** ] 時，顯示程式碼片段選擇器 UI。 當使用者輸入程式碼片段快捷方式，然後按 **Tab 鍵** 時，也會展開程式碼片段。
 
  若要顯示程式碼片段選擇器 UI，以及啟用流覽和插入後代碼段，請使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法。 插入本身會由 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> 方法處理。
 
@@ -198,12 +200,12 @@ ms.locfileid: "85904709"
      [!code-csharp[VSSDKCompletionTest#31](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_10.cs)]
      [!code-vb[VSSDKCompletionTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_10.vb)]
 
-7. 如果程式碼片段具有可流覽的欄位，展開會話會保持開啟，直到明確接受擴充為止;如果程式碼片段沒有任何欄位，則會關閉會話，並以 `null` <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> 方法傳回。 在 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法中，于您在上一個步驟中新增的程式碼片段選擇器 UI 程式碼之後，新增下列程式碼來處理程式碼片段導覽 (當使用者在插入程式碼片段之後按下**tab**鍵或**Shift** + **鍵**時，) 。
+7. 如果程式碼片段具有可流覽的欄位，展開會話會保持開啟，直到明確接受擴充為止;如果程式碼片段沒有任何欄位，則會關閉會話，並以 `null` <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> 方法傳回。 在 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法中，于您在上一個步驟中新增的程式碼片段選擇器 UI 程式碼之後，新增下列程式碼來處理程式碼片段導覽 (當使用者在插入程式碼片段之後按下 **tab** 鍵或 **Shift** + **鍵** 時，) 。
 
      [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
      [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]
 
-8. 若要在使用者輸入對應的快捷方式，然後按 **Tab 鍵**時插入程式碼片段，請將程式碼加入至 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法。 插入程式碼片段的私用方法會在稍後的步驟中顯示。 在您于上一個步驟中新增的導覽程式碼之後，新增下列程式碼。
+8. 若要在使用者輸入對應的快捷方式，然後按 **Tab 鍵** 時插入程式碼片段，請將程式碼加入至 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法。 插入程式碼片段的私用方法會在稍後的步驟中顯示。 在您于上一個步驟中新增的導覽程式碼之後，新增下列程式碼。
 
      [!code-csharp[VSSDKCompletionTest#33](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_12.cs)]
      [!code-vb[VSSDKCompletionTest#33](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_12.vb)]
@@ -243,10 +245,10 @@ ms.locfileid: "85904709"
 
      請勿按 **enter** 或 **Esc 鍵**。
 
-5. 按**tab**和**Shift**索引標籤， + **Tab**以在 "first" 和 "second" 之間切換。
+5. 按 **tab** 和 **Shift** 索引標籤， + 以在 "first" 和 "second" 之間切換。
 
-6. 按 **enter** 或 **Esc**接受插入。
+6. 按 **enter** 或 **Esc** 接受插入。
 
-7. 在文字的不同部分中，輸入 "test"，然後按 **tab**鍵。因為「測試」是程式碼片段快捷方式，所以應該再次插入程式碼片段。
+7. 在文字的不同部分中，輸入 "test"，然後按 **tab** 鍵。因為「測試」是程式碼片段快捷方式，所以應該再次插入程式碼片段。
 
 ## <a name="next-steps"></a>後續步驟

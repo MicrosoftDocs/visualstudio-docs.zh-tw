@@ -1,5 +1,7 @@
 ---
 title: 原始檔控制整合基本概念 |Microsoft Docs
+description: 瞭解 Visual Studio 支援的兩種原始檔控制整合類型：原始檔控制外掛程式和以 VSPackage 為基礎的原始檔控制解決方案。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e56658d644720f1563d71d3d08bf35268119112f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4dd5186b20dfac4ad5a027e4519700ff8ac1f77
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705243"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876021"
 ---
 # <a name="source-control-integration-essentials"></a>原始檔控制整合的基本資訊
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援兩種類型的原始檔控制整合：提供基本功能的原始檔控制外掛程式，以及使用原始檔控制外掛程式 API 建立的 (先前稱為 MSSCCI API) ，以及以 VSPackage 為基礎的原始檔控制整合解決方案，可提供更強大的功能。
@@ -50,7 +52,7 @@ ms.locfileid: "80705243"
 
    如需詳細資訊，請參閱 [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [概觀](../../extensibility/internals/source-control-integration-overview.md)
 - [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)

@@ -1,5 +1,7 @@
 ---
 title: 舊版語言服務中的程式碼片段支援 |Microsoft Docs
+description: 瞭解舊版語言服務如何支援程式碼片段。 程式碼片段是插入原始程式檔中的一段程式碼。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad871eb73341f6ab87229687e2a6df898ffda32d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 781633a995027ee9938a0c579af32373c06207c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704918"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876606"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>舊版語言服務中對程式碼片段的支援
 程式碼片段是插入原始程式檔中的一段程式碼。 程式碼片段本身是以 XML 為基礎的範本，其中包含一組欄位。 這些欄位會在插入程式碼片段之後反白顯示，而且可以有不同的值，視插入程式碼片段的內容而定。 緊接在插入程式碼片段之後，語言服務可以格式化程式碼片段。
@@ -83,7 +85,7 @@ ms.locfileid: "80704918"
 
  下列替代專案可以放在索引檔的標記所儲存的路徑中 \<DirPath> 。
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |LCID|地區設定識別碼。|
 |%InstallRoot%|Visual Studio 的根安裝資料夾，例如 C:\Program Files\Microsoft Visual Studio 8。|
@@ -92,7 +94,7 @@ ms.locfileid: "80704918"
 |%TestDocs%|使用者的 [設定] 資料夾中的資料夾，例如 C:\documents and 和 Settings \\ *[username]* \My Documents\Visual Studio\8。|
 
 ### <a name="enabling-code-snippets-for-your-language-service"></a>啟用語言服務的程式碼片段
- 您可以將屬性新增至 VSPackage，以啟用語言服務的程式碼片段 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> (如需詳細資料，請參閱 [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)) 。 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A>和 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> 參數是選擇性的，但您應該包含 `SearchPaths` 具名引數，以便通知**程式碼片段管理員**您的程式碼片段位置。
+ 您可以將屬性新增至 VSPackage，以啟用語言服務的程式碼片段 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> (如需詳細資料，請參閱 [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)) 。 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A>和 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> 參數是選擇性的，但您應該包含 `SearchPaths` 具名引數，以便通知 **程式碼片段管理員** 您的程式碼片段位置。
 
  以下是如何使用此屬性的範例：
 
@@ -388,7 +390,7 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)
 - [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)
 - [程式碼片段](../../ide/code-snippets.md)

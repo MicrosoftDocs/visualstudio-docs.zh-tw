@@ -1,5 +1,7 @@
 ---
 title: 解決方案 (。.Sln) 檔案
+description: 瞭解 .sln 檔案，這是在 Visual Studio 中維護專案之狀態資訊的其中一個檔案。
+ms.custom: SEO-VS-2020
 ms.date: 03/15/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f4eee1f0a5e8371d239b3c33d10e1d9d7998095
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 903b33d72d3a97eb4ed3f7ad0bc865999bee54cf
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705322"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877503"
 ---
 # <a name="solution-sln-file"></a>方案 ( .sln) 檔
 
@@ -160,7 +162,7 @@ EndGlobal
 
 只有 .sln 檔案包含和區段中的專案 `preSolution` `postSolution` 。 .Suo 檔案中沒有類似的區段，因為解決方案需要此資訊才能正確載入。 .Suo 檔案包含使用者特定的選項（例如私用備註），不適合在原始程式碼控制之下共用或放置。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>
 - [方案使用者選項檔 (.Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)

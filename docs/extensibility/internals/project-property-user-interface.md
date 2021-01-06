@@ -1,5 +1,7 @@
 ---
 title: 專案屬性消費者介面 |Microsoft Docs
+description: 瞭解專案子類型如何修改基底專案所提供的 [專案屬性頁] 對話方塊。
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15895a7dab5c57d8312787b1276acac89c28796
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 2c9bba8b163b7fd21cfa829bb26e06cf37b887bd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011849"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877386"
 ---
 # <a name="project-property-user-interface"></a>專案屬性使用者介面
 
@@ -57,7 +59,7 @@ ms.locfileid: "90011849"
 
 專案子類型所加入的新屬性頁面，會從基底專案執行中，傳遞專案設定流覽物件。 此專案設定流覽物件支援 Automation 擴充項。 如需 AutomationExtenders 的詳細資訊，請參閱 [執行和使用 Automation](/previous-versions/0y92k2w2(v=vs.140))擴充項。 專案子類型所實的屬性頁面 <xref:EnvDTE.Project.Extender%2A> 會呼叫，以抓取其自己的專案子類型設定流覽物件，此物件會擴充基底專案的設定流覽物件。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:EnvDTE.IFilterProperties>
 - [[屬性頁] 對話方塊](/previous-versions/visualstudio/visual-studio-2010/as5chysf(v=vs.100))

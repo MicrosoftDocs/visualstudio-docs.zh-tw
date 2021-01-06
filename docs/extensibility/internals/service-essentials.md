@@ -1,5 +1,7 @@
 ---
 title: 服務基本 |Microsoft Docs
+description: 深入瞭解服務，這是另一個 VSPackage 要使用的介面。 VSPackage 中的服務可以覆寫內建或其他服務。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2947cb4cd6a347d8e010340f8689eb1907a28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54d785d665122fd5c5fa1709aa9348777e3c730b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705493"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875800"
 ---
 # <a name="service-essentials"></a>服務的基本資訊
 服務是兩個 Vspackage 之間的合約。 其中一個 VSPackage 會提供一組特定的介面，供另一個要取用的 VSPackage 使用。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 本身是提供服務給其他 Vspackage 的 Vspackage 集合。
@@ -92,7 +94,7 @@ ms.locfileid: "80705493"
 
     此程式碼會取得 SVsActivityLog 服務，並將其轉換為 IVsActivityLog 介面，可用來寫入活動記錄。 如需範例，請參閱 [如何：使用活動記錄](../../extensibility/how-to-use-the-activity-log.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [可用服務清單](../../extensibility/internals/list-of-available-services.md)
 - [使用和提供服務](../../extensibility/using-and-providing-services.md)

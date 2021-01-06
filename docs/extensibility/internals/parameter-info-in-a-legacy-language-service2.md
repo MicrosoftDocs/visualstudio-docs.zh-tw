@@ -1,5 +1,7 @@
 ---
 title: 舊版語言中的參數資訊 Service2 |Microsoft Docs
+description: 瞭解如何支援 IntelliSense 參數資訊作業，以便在舊版語言服務中輸入方法時，顯示方法簽章。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff6e871320d0727ed2fbec4188e8f7af2e5c5fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc239d5b0d580d420683c6940ac2bbd5198335d7
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237954"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875943"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-2"></a>舊版語言服務2中的參數資訊
 IntelliSense 參數資訊是一種工具提示，可在使用者輸入參數清單開始字元時，顯示方法的簽章， (通常是方法參數清單的左括弧) 。 輸入每個參數，而且參數分隔符號 (通常會輸入逗點) ，工具提示會更新以顯示下一個參數（以粗體顯示）。

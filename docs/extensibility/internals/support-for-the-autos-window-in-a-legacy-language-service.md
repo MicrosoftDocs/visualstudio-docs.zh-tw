@@ -1,5 +1,6 @@
 ---
 title: 支援舊版語言服務中的 [自動變數] 視窗
+description: 瞭解如何執行 [自動變數] 視窗的支援，它會顯示在正在進行程式設計的程式暫停時，範圍內的運算式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5eb4a7201888dc52dfe2f801ebc446786ec3274
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c97ab4db9b71c91689abe0afb85230e5b0242962
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038292"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876502"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>舊版語言服務中的 [自動變數] 視窗支援
 
-[自動變數] 視窗會顯示如中斷點或例外狀況) 而暫停 ** (的變數** 和參數等運算式。 運算式可以包含變數、本機或全域，以及已在區域範圍中變更的參數。 [自動變數] 視窗也可以包含類別、結構或其他 **類型的具** 現化。 運算式評估工具可以評估的任何作業都可能會顯示在 **[自動** 變數] 視窗中。
+[自動變數] 視窗會顯示如中斷點或例外狀況) 而暫停 **(的變數** 和參數等運算式。 運算式可以包含變數、本機或全域，以及已在區域範圍中變更的參數。 [自動變數] 視窗也可以包含類別、結構或其他 **類型的具** 現化。 運算式評估工具可以評估的任何作業都可能會顯示在 **[自動** 變數] 視窗中。
 
- 受控封裝架構 (MPF) 不會提供自動 **變數視窗的** 直接支援。 但是，如果您覆寫 <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> 方法，您可以傳回要在 [自動變數] 視窗中顯示**Autos**的運算式清單。
+ 受控封裝架構 (MPF) 不會提供自動 **變數視窗的** 直接支援。 但是，如果您覆寫 <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> 方法，您可以傳回要在 [自動變數] 視窗中顯示的運算式清單。
 
 ## <a name="implementing-support-for-the-autos-window"></a>執行自動變數視窗的支援
 

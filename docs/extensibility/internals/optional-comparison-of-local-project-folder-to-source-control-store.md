@@ -1,5 +1,7 @@
 ---
 title: 比較專案資料夾與原始檔控制存放區 |Microsoft Docs
+description: 在原始檔控制外掛程式 API 中，會使用 SccDirQueryInfo 和 SccDirDiff 來完成本機專案資料夾與原始檔控制之間的比較。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: facb3b656e0ac50b50fdb0291307aa2fe98b1df4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed69c6e503614cd1b2ed8e21716a5edcb4babd2b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706870"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877581"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>本機專案資料夾與原始檔控制存放區的選擇性比較
 在原始檔控制外掛程式 API 1.2 中，本機專案資料夾與原始檔控制之間的比較會使用 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) 和 [SccDirDiff](../../extensibility/sccdirdiff-function.md)函數來完成。
 
- 在 **方案總管**中，如果選取資料夾而不是個別檔案，則 **比較版本** 的快捷方式功能表會在原始檔控制外掛程式中叫用新的 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) 和 [SccDirDiff](../../extensibility/sccdirdiff-function.md) 。
+ 在 **方案總管** 中，如果選取資料夾而不是個別檔案，則 **比較版本** 的快捷方式功能表會在原始檔控制外掛程式中叫用新的 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) 和 [SccDirDiff](../../extensibility/sccdirdiff-function.md) 。
 
 ## <a name="new-capability-flags"></a>新功能旗標
  `SCC_CAP_DIRECTORYDIFF`
@@ -38,5 +40,5 @@ ms.locfileid: "80706870"
 > [!NOTE]
 > 此函數會使用與 [SccDiff](../../extensibility/sccdiff-function.md)相同的命令旗標。 作為原始檔控制外掛程式提供者，您可以選擇不支援目錄的「快速差異」作業。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [原始檔控制外掛程式 API 1.2 版的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

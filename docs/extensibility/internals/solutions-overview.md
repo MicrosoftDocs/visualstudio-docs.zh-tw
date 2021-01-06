@@ -1,5 +1,7 @@
 ---
 title: 解決方案概觀
+description: 瞭解解決方案的內部，適用于想要使用 Visual Studio 擴充功能中解決方案的延伸模組開發人員。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767db749d953855cd5c6f81f356a195c830aa838
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2888f2fd0b2c9b7bfb530cc3fd46708ca13422f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705303"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876723"
 ---
 # <a name="solutions-overview"></a>解決方案概觀
 

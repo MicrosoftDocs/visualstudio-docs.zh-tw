@@ -1,5 +1,6 @@
 ---
 title: 使用快速鍵搭配編輯器延伸模組
+description: 瞭解如何使用快速鍵將視圖修飾加入至文字視圖。 本逐步解說是以「區裝飾編輯器」範本為基礎。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78bbf84f6b11451c8b1a09e6883ba76b19cec757
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4c939328e1ef8e517821db8622e7383cab90c384
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037454"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875839"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>逐步解說：搭配編輯器延伸模組使用快速鍵
 您可以在編輯器延伸模組中回應快速鍵。 下列逐步解說示範如何使用快速鍵，將視圖修飾加入至文字視圖。 本逐步解說是以「視口裝飾編輯器」範本為基礎，可讓您使用 + 字元來新增裝飾。
@@ -78,7 +79,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 3. 名為 KeyBindingCommandFilter 的類別應該繼承自 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 。
 
     ```csharp
-    internal class KeyBindingCommandFilter : IOleCommandTarget
+    internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
 4. 新增文字視圖的私用欄位、命令鏈中的下一個命令，以及表示是否已新增命令篩選器的旗標。
@@ -86,8 +87,8 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     ```csharp
     private IWpfTextView m_textView;
     internal IOleCommandTarget m_nextTarget;
-    internal bool m_added;
-    internal bool m_adorned;
+    internal bool m_added;
+    internal bool m_adorned;
     ```
 
 5. 加入設定文字視圖的函式。
@@ -198,7 +199,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
 1. 以滑鼠右鍵按一下專案，然後選取 [ **管理 Nuget 套件**]。
 
-2. 在 **Nuget 封裝管理員**中，選取 [ **更新** ] 索引標籤，選取 [ **選取所有封裝** ] 核取方塊，然後選取 [ **更新**]。
+2. 在 **Nuget 封裝管理員** 中，選取 [ **更新** ] 索引標籤，選取 [ **選取所有封裝** ] 核取方塊，然後選取 [ **更新**]。
 
 命令處理常式是的實，它會藉由具現 <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601> 化裝飾來處理命令。
 

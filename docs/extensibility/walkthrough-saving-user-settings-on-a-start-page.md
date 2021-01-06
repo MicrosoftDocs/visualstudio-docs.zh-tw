@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：在起始頁儲存使用者設定 |Microsoft Docs
+description: 您可以使用此逐步解說將設定儲存至登錄，以瞭解如何保存起始頁的使用者設定。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
@@ -9,24 +11,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8dd20513defd1db8848cf6a80a29e04c127c9dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17dfb844733a15b1607d2daa2ce24a8f6e0be420
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903168"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876177"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>逐步解說：在起始頁儲存使用者設定
 
 您可以保存起始頁的使用者設定。 依照本逐步解說的指示，您可以建立一個控制項，在使用者按一下按鈕時將設定儲存至登錄，然後在每次載入起始頁時抓取該設定。 由於起始頁專案範本包含可自訂的使用者控制項，而預設起始頁 XAML 會呼叫該控制項，因此您不需要修改起始頁本身。
 
-在此逐步解說中具現化的設定存放區是介面的實例，其會 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> 在呼叫時讀取和寫入至下列登錄位置： **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName> **
+在此逐步解說中具現化的設定存放區是介面的實例，其會 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> 在呼叫時讀取和寫入至下列登錄位置： **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName>**
 
-當 Visual Studio 的實驗實例中執行時，這些設定會將讀取和寫入儲存至**HKCU\Software\Microsoft\VisualStudio\14.0Exp \\ \<CollectionName> 。**
+當 Visual Studio 的實驗實例中執行時，這些設定會將讀取和寫入儲存至 **HKCU\Software\Microsoft\VisualStudio\14.0Exp \\ \<CollectionName> 。**
 
 如需有關如何保存設定的詳細資訊，請參閱 [擴充使用者設定和選項](../extensibility/extending-user-settings-and-options.md)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 > [!NOTE]
 > 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 [VISUAL STUDIO SDK](../extensibility/visual-studio-sdk.md)。
@@ -37,7 +39,7 @@ ms.locfileid: "85903168"
 
 1. 依照 [建立自訂起始頁](creating-a-custom-start-page.md)中所述，建立起始頁專案。 將專案命名為 **SaveMySettings**。
 
-2. 在 **方案總管**中，將下列元件參考新增至 StartPageControl 專案：
+2. 在 **方案總管** 中，將下列元件參考新增至 StartPageControl 專案：
 
     - EnvDTE
 
@@ -47,7 +49,7 @@ ms.locfileid: "85903168"
 
     - VisualStudio <. a. 11。0
 
-3. 開啟*mycontrol.xaml。*
+3. 開啟 *mycontrol.xaml。*
 
 4. 從 [XAML] 窗格的最上層專案 <xref:System.Windows.Controls.UserControl> 定義中，將下列事件宣告加入命名空間宣告之後。
 
@@ -150,7 +152,7 @@ ms.locfileid: "85903168"
 
 6. 建立使用者控制項。
 
-7. 在 **方案總管**中，開啟 *extension.vsixmanifest*。
+7. 在 **方案總管** 中，開啟 *extension.vsixmanifest*。
 
 8. 在資訊清單編輯器中，設定 **產品名稱** 以 **儲存我的設定開始頁面**。
 
@@ -168,7 +170,7 @@ ms.locfileid: "85903168"
 
 3. 在 [ **環境** ] 節點中，按一下 [ **啟動**]，然後在 [ **自訂起始頁** ] 清單中，選取 **[已安裝的延伸模組] 儲存我的設定開始頁面**。
 
-     按一下 [確定]  。
+     按一下 [確定]。
 
 4. 如果開啟，請關閉起始頁，然後在 [ **視圖** ] 功能表上，按一下 [ **起始頁**]。
 
@@ -196,7 +198,7 @@ ms.locfileid: "85903168"
 
 您可以使用不同的事件處理常式來取得和設定屬性，以修改此使用者控制項，以儲存並取出任意數目的自訂設定 `SettingsStore` 。 只要您 `propertyName` 針對的每個呼叫使用不同的參數 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> ，這些值就不會在登錄中互相覆寫。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:EnvDTE80.DTE2?displayProperty=fullName>
 - [將 Visual Studio 命令新增至起始頁](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

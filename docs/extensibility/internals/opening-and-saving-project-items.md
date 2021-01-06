@@ -1,5 +1,7 @@
 ---
 title: 開啟和儲存專案專案 |Microsoft Docs
+description: 瞭解在 Visual Studio IDE 中為您的新專案類型開啟和儲存檔案的不同方法。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbb89d99e401be6bae7d8ee9be8ee33fa7574723
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 971fef7939c91bdcdea9098da530c7ecb2daf9ec
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706960"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877620"
 ---
 # <a name="opening-and-saving-project-items"></a>開啟和儲存專案項目
 當您加入新的專案類型時，您必須在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中，管理專案檔案的開啟和儲存。 下列主題討論開啟和儲存檔案的不同方法。
@@ -45,11 +47,11 @@ ms.locfileid: "80706960"
 
 - [儲存標準文件](../../extensibility/internals/saving-a-standard-document.md)
 
- 提供 IDE 如何處理在標準編輯器中開啟之檔的 [ **儲存**]、[ **另存**新檔] 和 [ **儲存所有** ] 命令的詳細說明。
+ 提供 IDE 如何處理在標準編輯器中開啟之檔的 [ **儲存**]、[ **另存** 新檔] 和 [ **儲存所有** ] 命令的詳細說明。
 
 - [儲存自訂文件](../../extensibility/internals/saving-a-custom-document.md)
 
- 提供圖表和詳細說明，說明 IDE 如何處理在自訂編輯器中開啟之檔的 **儲存**、 **另存**新檔和 **儲存所有** 命令。
+ 提供圖表和詳細說明，說明 IDE 如何處理在自訂編輯器中開啟之檔的 **儲存**、 **另存** 新檔和 **儲存所有** 命令。
 
 - [決定要開啟專案中檔案的編輯器](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
 

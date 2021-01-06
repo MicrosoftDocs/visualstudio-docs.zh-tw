@@ -1,5 +1,7 @@
 ---
 title: Vspackage 中的資源 |Microsoft Docs
+description: 瞭解哪些類型的當地語系化資源可以內嵌在 Vspackage 中。 您也可以將資源內嵌在原生附屬 UI Dll 或 managed 附屬 Dll 中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 493e9834e3d7cf6d82cebb8dd93d5369678c7be0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2693d25e0b175a075bcc644077895076b75b7578
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705607"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875722"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage 中的資源
 您可以在原生附屬 UI Dll、managed 附屬 Dll 或 managed VSPackage 本身中內嵌當地語系化的資源。
@@ -85,6 +87,6 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 
  在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 安裝之後從 VSPackage 要求資源時，該封裝可能已載入並初始化，因此效能損失最短。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [管理 VSPackage](../../extensibility/managing-vspackages.md)
 - [MFC 應用程式中的當地語系化資源：附屬 Dll](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

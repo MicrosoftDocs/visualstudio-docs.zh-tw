@@ -1,16 +1,18 @@
 ---
 title: 擴充 Visual Studio for Mac 逐步解說
+description: 瞭解如何建立 Visual Studio for Mac 的簡單擴充套件，以在 [編輯] 功能表中建立新的命令。
+ms.custom: SEO-VS-2020
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9274f86e8ade5b49b5db0c7f4773cf6fd57ea353
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74985034"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876190"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>擴充 Visual Studio for Mac 逐步解說
 
@@ -22,7 +24,7 @@ ms.locfileid: "74985034"
 
    ![Visual Studio for Mac 螢幕擷取畫面](media/extending-visual-studio-mac-addin3.png)
 
-2. 使用延伸模組管理員安裝_增益集製作程式延伸模組套件_。 從 Visual Studio 功能表，選擇 [延伸模組]****：
+2. 使用延伸模組管理員安裝 _增益集製作程式延伸模組套件_。 從 Visual Studio 功能表，選擇 [延伸模組]：
 
    ![[增益集管理員] 索引標籤](media/extending-visual-studio-mac-addin4.png)
 
@@ -32,7 +34,7 @@ ms.locfileid: "74985034"
 
 4. 現在已安裝增益集製作程式，您可以開始建置延伸模組套件。 開始建立新的解決方案。
 
-5. 從 [新增解決方案] 對話方塊****，選擇 [其他] > [其他] > [一般] > [Xamarin Studio 增益集] > [C#]**** 範本，並在接下來的螢幕為新的解決方案命令為 `DateInserter`：
+5. 從 [新增解決方案] 對話方塊，選擇 [其他] > [其他] > [一般] > [Xamarin Studio 增益集] > [C#] 範本，並在接下來的螢幕為新的解決方案命令為 `DateInserter`：
 
    ![建立新的解決方案](media/extending-visual-studio-mac-addin7New.png)
 
@@ -57,7 +59,7 @@ ms.locfileid: "74985034"
       </ExtensionModel>
    ```
 
-8. 現在您需要設定最終將處理在文字編輯器中插入日期和時間的檔案。 以滑鼠右鍵按一下專案節點，然後新增檔案。 選取 [一般] > [空類別]**** 並將新檔案命名為 *InsertDateHandler*：
+8. 現在您需要設定最終將處理在文字編輯器中插入日期和時間的檔案。 以滑鼠右鍵按一下專案節點，然後新增檔案。 選取 [一般] > [空類別] 並將新檔案命名為 *InsertDateHandler*：
 
    ![插入日期處理常式](media/extending-visual-studio-mac-addin9.png)
 
@@ -88,7 +90,7 @@ ms.locfileid: "74985034"
 
    我們稍後會展開這兩個預留位置方法。
 
-10. 以滑鼠右鍵按一下 **DateInserter** 專案並選取 [新增] > [新增檔案]****。 選取 [一般] > [列舉是空的]****，然後將新檔案命名為 *DateInserterCommands*：
+10. 以滑鼠右鍵按一下 **DateInserter** 專案並選取 [新增] > [新增檔案]。 選取 [一般] > [列舉是空的]，然後將新檔案命名為 *DateInserterCommands*：
 
     ![DateInserterCommands](media/extending-visual-studio-mac-addin10.png)
 
@@ -106,13 +108,13 @@ ms.locfileid: "74985034"
     }
     ```
 
-12. 此時，您應該有能使用的延伸模組套件。 您可以儲存工作並執行應用程式來測試它。 IDE 就會啟動 Visual Studio for Mac 的新執行個體，並安裝新的延伸模組套件。 如果您巡覽至 [編輯] 功能表****，您會看到 Visual Studio for Mac 有新的選項，稱為**插入日期**，如以下螢幕擷取畫面所示：
+12. 此時，您應該有能使用的延伸模組套件。 您可以儲存工作並執行應用程式來測試它。 IDE 就會啟動 Visual Studio for Mac 的新執行個體，並安裝新的延伸模組套件。 如果您巡覽至 [編輯] 功能表，您會看到 Visual Studio for Mac 有新的選項，稱為 **插入日期**，如以下螢幕擷取畫面所示：
 
     ![插入日期命令](media/extending-visual-studio-mac-addin11.png)
 
     請注意，從功能表中選取 [插入日期] 不會有任何效果，因為目前的實作只有預留位置方法。
 
-13. 架構已針對延伸模組套件準備就緒，可以撰寫程式碼啟用插入日期。 首先，請確定 [插入日期命令]**** 只有在使用者開啟文字檔案時啟用，方法是將 `InsertDateHandler.cs` 中的 `Update` 方法取代為下列程式碼：
+13. 架構已針對延伸模組套件準備就緒，可以撰寫程式碼啟用插入日期。 首先，請確定 [插入日期命令] 只有在使用者開啟文字檔案時啟用，方法是將 `InsertDateHandler.cs` 中的 `Update` 方法取代為下列程式碼：
 
     ```cs
     protected override void Update(CommandInfo info)
@@ -132,10 +134,10 @@ ms.locfileid: "74985034"
     }
     ```
 
-15. 最後，讓我們執行延伸模組套件來進行測試。 在 Visual Studio for Mac 的新執行個體中，選取 [編輯] > [插入日期]****。 目前的日期和時間會插入在我們的插入號，如以下螢幕擷取畫面所示：
+15. 最後，讓我們執行延伸模組套件來進行測試。 在 Visual Studio for Mac 的新執行個體中，選取 [編輯] > [插入日期]。 目前的日期和時間會插入在我們的插入號，如以下螢幕擷取畫面所示：
 
     ![插入日期螢幕擷取畫面](media/extending-visual-studio-mac-addin12.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立您的第一個延伸模組 (Windows 上的 Visual Studio)](/visualstudio/extensibility/extensibility-hello-world)

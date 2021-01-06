@@ -1,5 +1,7 @@
 ---
 title: 屬性視窗欄位和介面 |Microsoft Docs
+description: 根據焦點在 Visual Studio IDE 中的視窗，深入瞭解決定要在屬性視窗中顯示哪些資訊的選項。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9529708c781e7fdb04c3b4c5ee143b7605857e84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21bc3a7f1d46a1afe579a67afa09097fd04458ff
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706154"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875761"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 用來決定要在 [ **屬性** ] 視窗中顯示哪些資訊的模型是根據焦點在 IDE 中的視窗。 在選取的視窗內，每個視窗和物件都可以將其選取內容物件推送至全域選取內容。 當視窗具有焦點時，環境會以視窗框架中的值來更新全域選取內容。 當焦點變更時，就會進行選取內容。
 
 ## <a name="tracking-selection-in-the-ide"></a>在 IDE 中追蹤選取專案
- IDE 所擁有的視窗框架或網站有一個稱為的服務 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 。 下列步驟顯示如何將焦點變更為另一個開啟的視窗，或在 **方案總管**中選取不同的專案專案，以變更 [ **屬性** ] 視窗中顯示的內容。
+ IDE 所擁有的視窗框架或網站有一個稱為的服務 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 。 下列步驟顯示如何將焦點變更為另一個開啟的視窗，或在 **方案總管** 中選取不同的專案專案，以變更 [ **屬性** ] 視窗中顯示的內容。
 
 1. 由您的 VSPackage 所建立的物件，該物件位於所選視窗呼叫中，並 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> 具有 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> invoke <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 。
 
@@ -44,7 +46,7 @@ ms.locfileid: "80706154"
    最後，[ **屬性** ] 視窗的底部也包含 [ **屬性** ] 視窗方格中所選取之欄位的描述。 如需詳細資訊，請參閱 [從屬性視窗取得欄位描述](#getting-field-descriptions-from-the-properties-window)。
 
 ## <a name="updating-property-values-in-the-properties-window"></a><a name="updating-property-values-in-the-properties-window"></a> 更新屬性視窗中的屬性值
-有兩種方法可以讓 [屬性] **** 視窗與屬性值變更同步。 第一種方法是呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 介面，此介面可存取基本視窗化功能 (包括存取和建立環境所提供的工具和文件視窗)。 下列步驟說明這項同步處理程序。
+有兩種方法可以讓 [屬性]  視窗與屬性值變更同步。 第一種方法是呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 介面，此介面可存取基本視窗化功能 (包括存取和建立環境所提供的工具和文件視窗)。 下列步驟說明這項同步處理程序。
 
 ### <a name="updating-property-values-using-ivsuishell"></a>使用 IVsUIShell 更新屬性值
 
@@ -52,18 +54,18 @@ ms.locfileid: "80706154"
 
 1. 隨時呼叫 VSPackage、專案或編輯器建立或列舉工具或文件視窗時所需的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (透過 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> 服務)。
 
-2. [執行] <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> 可**Properties**讓 [屬性] 視窗與專案 (的屬性變更或 [**屬性**] 視窗所流覽的任何其他選取物件保持同步，) 不會執行 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> 和引發 <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> 事件。
+2. [執行] <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> 可讓 [屬性] 視窗與專案 (的屬性變更或 [**屬性**] 視窗所流覽的任何其他選取物件保持同步，) 不會執行 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> 和引發 <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> 事件。
 
 3. 實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A>，分別建立和停用用戶端階層事件通知，而不需要階層實作 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>。
 
 ### <a name="updating-property-values-using-iconnection"></a>使用 IConnection 更新屬性值
- 第二種讓 [屬性] **** 視窗與屬性值變更同步的方法是在可連接物件上實作 `IConnection` ，表示輸出介面是否存在。 如果您想要當地語系化屬性名稱，請從 <xref:System.ComponentModel.ICustomTypeDescriptor> 衍生您的物件。 <xref:System.ComponentModel.ICustomTypeDescriptor> 實作可以修改它所傳回的屬性描述元，以及變更屬性的名稱。 若要當地語系化描述，請建立衍生自 <xref:System.ComponentModel.DescriptionAttribute> 的屬性，並覆寫 [描述] 屬性。
+ 第二種讓 [屬性]  視窗與屬性值變更同步的方法是在可連接物件上實作 `IConnection` ，表示輸出介面是否存在。 如果您想要當地語系化屬性名稱，請從 <xref:System.ComponentModel.ICustomTypeDescriptor> 衍生您的物件。 <xref:System.ComponentModel.ICustomTypeDescriptor> 實作可以修改它所傳回的屬性描述元，以及變更屬性的名稱。 若要當地語系化描述，請建立衍生自 <xref:System.ComponentModel.DescriptionAttribute> 的屬性，並覆寫 [描述] 屬性。
 
 #### <a name="considerations-in-implementing-the-iconnection-interface"></a>實作 IConnection 介面的考量
 
 1. `IConnection` 可使用 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> 介面來存取列舉值子物件。 它也可存取所有連接點子物件，而所有連接點子物件都實作 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 介面。
 
-2. 所有瀏覽物件都負責實作 <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> 事件。 [屬性] **** 視窗將建議透過 `IConnection`所設定的事件。
+2. 所有瀏覽物件都負責實作 <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> 事件。 [屬性]  視窗將建議透過 `IConnection`所設定的事件。
 
 3. 連接點可控制其 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A> 實作中所允許的連線數目 (一個或多個)。 僅允許一個介面的連接點可以從 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> 方法傳回 <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>。
 
@@ -72,7 +74,7 @@ ms.locfileid: "80706154"
 5. 也可以呼叫 `IConnection`，以使用 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 介面來存取每個輸出 IID 的連接點子物件。 透過 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 介面，用戶端會使用可連線物件和用戶端自己的同步處理來啟動或終止諮詢迴圈。用戶端也可以呼叫 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 介面，取得具有介面的列舉值物件， <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> 以列舉其知道的連接。
 
 ## <a name="getting-field-descriptions-from-the-properties-window"></a><a name="getting-field-descriptions-from-the-properties-window"></a> 從 [屬性] 視窗中取得欄位描述
-在 [屬性] **** 視窗底部的描述區域會顯示選取的屬性欄位相關資訊。 這項功能預設為開啟。 如果想要隱藏描述欄位，請以滑鼠右鍵按一下 [屬性] **** 視窗，然後按一下 [描述] ****。 這樣也會移除功能表視窗之 [描述] **** 標題旁的核取記號。 只要依照相同的步驟切換 [描述] **** ，就可以再次顯示欄位。
+在 [屬性]  視窗底部的描述區域會顯示選取的屬性欄位相關資訊。 這項功能預設為開啟。 如果想要隱藏描述欄位，請以滑鼠右鍵按一下 [屬性]  視窗，然後按一下 [描述] 。 這樣也會移除功能表視窗之 [描述]  標題旁的核取記號。 只要依照相同的步驟切換 [描述]  ，就可以再次顯示欄位。
 
  描述欄位中的資訊出自 <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>。 每個方法、介面、coclass 等在類型程式庫中都可以有未當地語系化的 `helpstring` 屬性。 [ **屬性** ] 視窗會從抓取字串 <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A> 。
 
@@ -108,12 +110,12 @@ STDAPI DLLGetDocumentation
 
  如果是 .olb 檔案， `helpstringdll` 屬性即是選擇性的，因為它是包含了 .tlb 檔案本身的同一個檔案。
 
- 若要取得在 [描述] **** 窗格中顯示的字串，您至少要在類型程式庫中指定 `helpstring` 屬性。 如果希望當地語系化這些字串，您必須指定 `helpstringdll` (選擇性) 屬性和 `helpstringcontext` (必要) 屬性並實作 `DLLGetDocumentation`。
+ 若要取得在 [描述]  窗格中顯示的字串，您至少要在類型程式庫中指定 `helpstring` 屬性。 如果希望當地語系化這些字串，您必須指定 `helpstringdll` (選擇性) 屬性和 `helpstringcontext` (必要) 屬性並實作 `DLLGetDocumentation`。
 
  透過 idl 的 `helpstringcontext` 屬性和 `DLLGetDocumentation`取得當地語系化資訊時，不必實作其他介面。
 
  取得屬性的當地語系化名稱和說明的另一個方式，是實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>。 如需實作這個方法的詳細資訊，請參閱 [Properties Window Fields and Interfaces](../../extensibility/internals/properties-window-fields-and-interfaces.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [擴充屬性](../../extensibility/internals/extending-properties.md)

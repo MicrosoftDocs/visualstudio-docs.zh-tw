@@ -1,5 +1,7 @@
 ---
-title: 支援符號流覽工具 |Microsoft Docs
+title: 支援 Symbol-Browsing 工具 |Microsoft Docs
+description: Visual Studio 在 Visual Studio 中提供符號流覽功能。 瞭解如何使用元件的程式庫擴充這些功能，以取得元件中的符號。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,17 +20,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4998e47ccd6f99df2710833c18975d57e3bb92f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0adf586831e21c2448931215d4ef4a89d16a63f8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704772"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876437"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支援符號瀏覽工具
 **物件瀏覽器**、 **類別檢視**、 **呼叫瀏覽器** 和 **尋找符號結果** 工具提供 Visual Studio 中的符號流覽功能。 這些工具會顯示符號的階層式樹狀檢視，並顯示樹狀結構中符號之間的關聯性。 這些符號可能表示命名空間、物件、類別、類別成員，以及各種元件中所含的其他語言元素。 元件包含 Visual Studio 專案、外部 .NET Framework 元件和類型 ( .tlb) 程式庫。 如需詳細資訊，請參閱 [查看程式碼的結構](../../ide/viewing-the-structure-of-code.md)。
 
-## <a name="symbol-browsing-libraries"></a>符號流覽程式庫
+## <a name="symbol-browsing-libraries"></a>Symbol-Browsing 程式庫
  您可以藉由建立可追蹤元件中符號的程式庫，並透過一組介面將符號清單提供給 Visual Studio 物件管理員，來擴充 Visual Studio 的符號流覽功能。 程式庫是由介面描述 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> 。 Visual Studio 物件管理員會從程式庫取得資料並加以組織，以回應來自符號流覽工具的新資料要求。 接著，它會以要求的資料填入或更新工具。 若要取得 Visual Studio 物件管理員的參考， <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> 請將 <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> 服務識別碼傳遞給 `GetService` 方法。
 
  每個程式庫都必須向 Visual Studio 物件管理員註冊，這會收集所有程式庫的資訊。 若要註冊程式庫，請呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> 方法。 根據啟動要求的工具而定，Visual Studio 物件管理員會尋找適當的程式庫並要求資料。 資料在程式庫和物件管理員之間，會 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 在介面所描述的符號清單中移動 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 。
@@ -48,7 +50,7 @@ ms.locfileid: "80704772"
 > [!NOTE]
 > 若要執行原生程式碼符號提供者，請使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> 介面。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何︰使用物件管理員註冊程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [如何︰將程式庫提供的符號清單公開至物件管理員](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
 - [如何︰識別程式庫中的符號](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

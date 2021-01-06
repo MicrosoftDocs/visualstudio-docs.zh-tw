@@ -1,5 +1,7 @@
 ---
 title: 原始檔控制整合總覽 |Microsoft Docs
+description: 瞭解將原始檔控制整合至 Visual Studio 的兩種方式之間的差異：原始檔控制外掛程式和 VSPackage。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d80363286f5f0cac9a5ceb2e8ac9d20345df9e6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bbd385c7089504949d2437091b0a2ea002fafdd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705116"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876008"
 ---
 # <a name="source-control-integration-overview"></a>原始檔控制整合概觀
 本節將比較兩種整合至 Visual Studio 原始檔控制的方式;原始檔控制外掛程式和提供原始檔控制解決方案的 VSPackage，並強調新的原始檔控制功能。 Visual Studio 可讓您在原始檔控制 Vspackage 和原始檔控制外掛程式，以及自動以方案為基礎的切換之間進行手動切換。
@@ -73,7 +75,7 @@ ms.locfileid: "80705116"
 
 - VSPackage 不限於特定的原始檔控制模型。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [原始檔控制](../../extensibility/internals/source-control.md)
 - [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)

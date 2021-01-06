@@ -1,5 +1,7 @@
 ---
 title: 註冊和選取 (原始檔控制 VSPackage) |Microsoft Docs
+description: 瞭解如何使用 Visual Studio 註冊原始檔控制 VSPackage，以及如何從多個已註冊的原始檔控制封裝中選取要載入的封裝。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 973eb19916a737dfa775fe79ee62cb3d11fe0123
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705712"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877347"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>註冊和選取 (原始檔控制 VSPackage)
 原始檔控制 VSPackage 必須註冊，才能將它公開至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 如果有一個以上的原始檔控制 VSPackage 註冊，使用者可以選取要在適當時間載入的 VSPackage。 如需 Vspackage 的詳細資訊以及如何註冊的詳細資訊，請參閱 [vspackage](../../extensibility/internals/vspackages.md) 。
@@ -24,7 +26,7 @@ ms.locfileid: "80705712"
 ## <a name="registering-a-source-control-package"></a>註冊原始檔控制封裝
  原始檔控制封裝會註冊，讓 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 環境可以找到它並查詢其支援的功能。 這是根據延遲載入配置，在此配置中，只有在需要或明確要求其功能或命令時，才會建立封裝的實例。
 
- Vspackage 將資訊放在特定版本的登錄機碼中，HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. y*，其中*X*是主要版本號碼，而*Y*是次要版本號碼。 這種做法提供支援多個版本之並存安裝的功能 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
+ Vspackage 將資訊放在特定版本的登錄機碼中，HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. y*，其中 *x* 是主要版本號碼，而 *Y* 是次要版本號碼。 這種做法提供支援多個版本之並存安裝的功能 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用者介面 (UI) 可透過原始檔控制介面卡套件) 以及原始檔控制 vspackage，支援從多個已安裝的原始檔控制外掛程式 (中選取專案。 一次只能有一個作用中的原始檔控制外掛程式或 VSPackage。 不過，如以下所述，IDE 允許在原始檔控制外掛程式和 Vspackage 之間，透過自動解決方案型套件交換器制進行切換。 原始檔控制 VSPackage 的部分有一些需求，可啟用此選取機制。
 
@@ -79,7 +81,7 @@ ms.locfileid: "80705712"
 
   與舊版不同的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 是，重新開機 IDE 不再是切換原始檔控制 vspackage 的唯一方法。 VSPackage 選取專案是自動的。 切換封裝需要 Windows 使用者權限 (非系統管理員或 Power 使用者) 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>
 - [功能](../../extensibility/internals/source-control-vspackage-features.md)
 - [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -1,5 +1,7 @@
 ---
 title: 專案模型核心元件 |Microsoft Docs
+description: 本文包含專案模型核心中所識別之介面和服務的描述，以及與物件相關聯的介面和服務。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e29a9d40531b32f127054fe02f61c72738e508e
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c6aeb24b2aee5b0abb3e5d803004ba97725bb707
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012408"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876892"
 ---
 # <a name="project-model-core-components"></a>專案模型的核心元件
 下表會在專案模型上展開。 這些表格會顯示模型中所識別之介面和服務的簡短描述，以及與特定物件相關聯的介面和服務。 此外，根據特定專案類型的需求，資料表會詳細說明專案建立和維護中的其他介面。
 
- 如需詳細資訊，請參閱 [支援符號流覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)。
+ 如需詳細資訊，請參閱 [支援 Symbol-Browsing 工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)。
 
 ### <a name="package-object"></a>Package 物件
 
@@ -99,7 +101,7 @@ ms.locfileid: "90012408"
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|用來執行 automation 模型。 在您的專案模型中，您將會傳回可讓您建立該物件之實例的屬性物件。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|用來在階層中的專案物件上執行剪貼簿事件。 `SVsUIHierWinClipboardHelper` 可讓您正確處理剪下、複製和貼上作業。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [不在組建中：使用 HierUtil7 專案類別來執行專案類型 (c + +) ](/previous-versions/bb166212(v=vs.100))

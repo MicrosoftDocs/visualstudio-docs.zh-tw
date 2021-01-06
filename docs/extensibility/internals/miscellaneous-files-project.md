@@ -1,5 +1,7 @@
 ---
 title: 其他檔案專案 |Microsoft Docs
+description: 瞭解可用來在 Visual Studio 專案中開啟檔案的兩種編輯器類型，以及決定要使用哪個編輯器的專案角色。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +15,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95cc1312fb7b381e1e20df834698480295fadcc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a963b4d452a5d8ea9e0556b232f488e93dc0a29c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707090"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876775"
 ---
 # <a name="miscellaneous-files-project"></a>其他檔案專案
 當使用者開啟專案專案時，IDE 會將任何不是方案中專案成員的專案指派給其他檔案專案。
 
  當使用者開啟專案專案時，專案會扮演重要的角色來決定使用哪一種編輯器。 您可以使用專案特定的編輯器或標準編輯器，將專案設計成開啟特定檔案。
 
- 專案特定的編輯器通常會要求使用者必須有特殊的知識，或使用專案中的特殊介面。 如需詳細資訊，請參閱 how [to：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)。
+ 專案特定的編輯器通常會要求使用者必須有特殊的知識，或使用專案中的特殊介面。 如需詳細資訊，請參閱 [如何：開啟 Project-Specific 編輯器](../../extensibility/how-to-open-project-specific-editors.md)。
 
  標準編輯器可以在任何專案中開啟特定擴充功能的任何檔案。 使用者可以為專案自訂一些標準編輯器，例如 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 文字編輯器，但仍然保留其公用字元。 標準編輯器是使用方法建立的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 。
 
@@ -35,7 +37,7 @@ ms.locfileid: "80707090"
 
  [其他檔案] 專案不需要使用者使用 [ **新增專案** ] 對話方塊來明確建立。 此外，[其他檔案] 專案也不會永久管理專案成員的清單。 它會使用選擇性功能來記錄每個使用者最近使用過的檔案清單。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>

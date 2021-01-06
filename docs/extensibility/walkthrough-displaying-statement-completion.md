@@ -1,5 +1,7 @@
 ---
 title: 逐步解說：顯示語句完成 |Microsoft Docs
+description: 瞭解如何使用本逐步解說，為純文字內容執行以語言為基礎的語句完成。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,21 +15,21 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472ff8c10e1346f25e7bc72ed5fd4ee9f31bbafa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d05d33074f48e59e365792fda63897b1d38cd585
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904792"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877152"
 ---
 # <a name="walkthrough-display-statement-completion"></a>逐步解說：顯示陳述式完成
 您可以藉由定義要提供完成的識別碼，然後觸發完成會話，來執行以語言為基礎的語句完成。 您可以在語言服務的內容中定義語句完成、定義您自己的副檔名和內容類型，然後只顯示該類型的完成。 或者，您可以觸發現有內容類型的完成，例如「純文字」。 本逐步解說會示範如何針對 "純文字" 內容類型（也就是文字檔的內容類型）觸發語句完成。 "Text" 內容類型是所有其他內容類型（包括程式碼和 XML 檔案）的上階。
 
- 語句完成通常是藉由輸入特定字元來觸發，例如，輸入識別碼的開頭，例如「使用」。 通常會藉由按 **空格鍵**、 **Tab**或 **enter** 鍵來認可選取專案來關閉。 您可以使用命令處理常式 (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面) 的按鍵，以及處理介面的處理常式提供者，來執行在輸入字元時觸發的 IntelliSense 功能 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> 。 若要建立完成來源（即參與完成的識別碼清單），請將 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> 介面和完成來源提供者 (<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> 介面) 。 提供者 Managed Extensibility Framework (MEF) 元件部分。 它們負責匯出來源和控制器類別，以及匯入服務和訊息代理程式（例如，可 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 在文字緩衝區中進行導覽的，以及會 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> 觸發完成會話的）。
+ 語句完成通常是藉由輸入特定字元來觸發，例如，輸入識別碼的開頭，例如「使用」。 通常會藉由按 **空格鍵**、 **Tab** 或 **enter** 鍵來認可選取專案來關閉。 您可以使用命令處理常式 (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面) 的按鍵，以及處理介面的處理常式提供者，來執行在輸入字元時觸發的 IntelliSense 功能 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> 。 若要建立完成來源（即參與完成的識別碼清單），請將 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> 介面和完成來源提供者 (<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> 介面) 。 提供者 Managed Extensibility Framework (MEF) 元件部分。 它們負責匯出來源和控制器類別，以及匯入服務和訊息代理程式（例如，可 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 在文字緩衝區中進行導覽的，以及會 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> 觸發完成會話的）。
 
  本逐步解說會示範如何針對硬式編碼的識別碼集來執行語句完成。 在完整的執行中，語言服務和語言檔會負責提供該內容。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-mef-project"></a>建立 MEF 專案
@@ -202,7 +204,7 @@ ms.locfileid: "85904792"
 
 3. 建立文字檔，並輸入包含 "add" 這個字的一些文字。
 
-4. 當您輸入第一個 "a" 和 "d" 時，應該會出現包含「新增」和「調整」的清單。 請注意，已選取 [新增]。 當您輸入另一個 "d" 時，清單只應包含 "加法"，這現在已選取。 您可以按下 **空格鍵**、 **Tab**或 **Enter** 鍵來認可「加法」，或是輸入 Esc 或任何其他按鍵來解除清單。
+4. 當您輸入第一個 "a" 和 "d" 時，應該會出現包含「新增」和「調整」的清單。 請注意，已選取 [新增]。 當您輸入另一個 "d" 時，清單只應包含 "加法"，這現在已選取。 您可以按下 **空格鍵**、 **Tab** 或 **Enter** 鍵來認可「加法」，或是輸入 Esc 或任何其他按鍵來解除清單。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

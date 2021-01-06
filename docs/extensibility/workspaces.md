@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 中的工作區 |Microsoft Docs
+description: 瞭解 Visual Studio 如何使用工作區來代表開啟資料夾中的檔案集合，包括工作區提供者和服務。
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ed660a5f52aba548d087b28f7caea4d1966fe45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952759"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876944"
 ---
 # <a name="workspaces"></a>工作區
 
@@ -76,7 +78,7 @@ ms.locfileid: "62952759"
 }
 ```
 
-假設這些設定是在使用者的 _VSWorkspaceSettings.js_中，則可以將資料存取為：
+假設這些設定是在使用者的 _VSWorkspaceSettings.js_ 中，則可以將資料存取為：
 
 ```csharp
 using System.Collections.Generic;
@@ -179,13 +181,13 @@ UI 內容可以用來自動載入您的封裝。 值為 `4646B819-1AE0-4E79-97F4
 
 ::: moniker range="vs-2017"
 
-您可以在 _%localappdata%\microsoft\visualstudio\15. 0_id \componentmodelcache\microsoft.visualstudio.default.err_中找到錯誤詳細資料。 針對您的延伸模組所實的類型解決任何錯誤。
+您可以在 _%localappdata%\microsoft\visualstudio\ 15.0_Id \componentmodelcache\microsoft.visualstudio.default.err_ 中找到錯誤詳細資料。 針對您的延伸模組所實的類型解決任何錯誤。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-您可以在 _%localappdata%\microsoft\visualstudio\16. 0_id \componentmodelcache\microsoft.visualstudio.default.err_中找到錯誤詳細資料。 針對您的延伸模組所實的類型解決任何錯誤。
+您可以在 _%localappdata%\microsoft\visualstudio\ 16.0_Id \componentmodelcache\microsoft.visualstudio.default.err_ 中找到錯誤詳細資料。 針對您的延伸模組所實的類型解決任何錯誤。
 
 ::: moniker-end
 

@@ -1,5 +1,7 @@
 ---
 title: 專案類型 |Microsoft Docs
+description: 'Visual Studio 包含多種語言的專案類型，例如 Visual c # 和 Visual Basic。 Visual Studio 也可讓您建立自己的專案類型。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b343eeeee0912a6e9cad57ca6d35c33845e4dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35e38649f825e0dfa554d9fbc90c57f63370b31f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706269"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877191"
 ---
 # <a name="project-types"></a>專案類型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包含多種語言的專案類型，例如 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 和 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 也可讓您建立自己的專案類型。
@@ -32,7 +34,7 @@ ms.locfileid: "80706269"
 
 - [將命令加入至方案總管工具列](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 
- 詳細說明將按鈕新增至方案總管工具列時必須遵循的步驟 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Solution Explorer** 。
+ 詳細說明將按鈕新增至方案總管工具列時必須遵循的步驟 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]  。
 
 - [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
@@ -52,7 +54,7 @@ ms.locfileid: "80706269"
 
 - [巢狀專案](../../extensibility/internals/nesting-projects.md)
 
- 說明專案類型如何支援 *嵌套*，讓專案可以在 **方案總管**中群組在一起。
+ 說明專案類型如何支援 *嵌套*，讓專案可以在 **方案總管** 中群組在一起。
 
 - [升級專案](../../extensibility/internals/upgrading-projects.md)
 

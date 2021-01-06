@@ -1,5 +1,7 @@
 ---
 title: 解決方案使用者選項 (。.Suo) 檔案 |Microsoft Docs
+description: 深入瞭解解決方案使用者選項 ( .suo) 檔案，其中包含以二進位格式儲存的結構化儲存體檔案中的每個使用者方案選項。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9469663d3ac258e1c568778894d8584c68c13632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b2a5386e8329bb3ca51ca88a2449e223bb8d73d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705310"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876750"
 ---
 # <a name="solution-user-options-suo-file"></a>方案使用者選項檔 (.Suo)
 方案使用者選項 ( .suo) 檔案包含每個使用者的方案選項。 此檔案不應簽入原始程式碼控制。
@@ -36,6 +38,6 @@ ms.locfileid: "80705310"
 
  這兩個方法（ `SaveUserOptions` 和 `WriteUserOptions` ）會以遞迴方式呼叫每個要儲存至 .suo 檔案的資料流程，並將指標傳入 `IVsSolutionPersistence` 。 它們是以遞迴方式呼叫，以允許將多個資料流程寫入 .suo 檔案。 如此一來，使用者資訊會與方案一起保存，並保證在下一次開啟方案時，會有此資訊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
 - [方案](../../extensibility/internals/solutions-overview.md)
