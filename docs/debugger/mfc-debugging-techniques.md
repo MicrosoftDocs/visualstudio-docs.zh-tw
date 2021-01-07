@@ -1,5 +1,7 @@
 ---
 title: MFC 調試技術 |Microsoft Docs
+description: 學慣用于調試 MFC 程式的技術，包括：編碼中斷點、追蹤、記憶體流失偵測、物件記憶體傾印和程式大小減少。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5cf00191aff408b1133c281e10eea17e3a923215
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600238"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975117"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 如果您正在偵錯 MFC 程式，這些偵錯技術可能很有幫助。
@@ -117,7 +119,7 @@ MFC 提供類別和函式來偵測已配置但從未解除配置的記憶體。
 ### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> 追蹤記憶體配置
 在 MFC 裡，您可以使用 [DEBUG_NEW](/previous-versions/tz7sxz99(v=vs.140)) 巨集取代 **new** 運算子來幫助尋找記憶體流失。 在程式的偵錯版本裡， `DEBUG_NEW` 追蹤每個物件所配置的檔案名稱和行號。 當您編譯程式的發行版本時， `DEBUG_NEW` 解析成簡單而不具檔名和行號資訊的 **new** 操作。 因此，在程式的發行版本中不會有速度負擔。
 
-如果您不要以 `DEBUG_NEW` 取代 **new**來重新編寫整個程式，您可以在原始程式檔裡定義這個巨集：
+如果您不要以 `DEBUG_NEW` 取代 **new** 來重新編寫整個程式，您可以在原始程式檔裡定義這個巨集：
 
 ```cpp
 #define new DEBUG_NEW
@@ -138,9 +140,9 @@ MFC 架構的偵錯版本會自動使用 `DEBUG_NEW` ，但是您的程式碼不
 
   **若要選取具 afxMemDF 的特定記憶體診斷功能**
 
-- 如果您要更準確地控制記憶體診斷功能，您可以設定 MFC 全域變數 [afxMemDF](/previous-versions/ahe4a83t(v=vs.140))值，選擇性地開啟和關閉各個記憶體診斷功能。 這個變數可以有下列的值，如同列舉類型 **afxMemDF**所指定。
+- 如果您要更準確地控制記憶體診斷功能，您可以設定 MFC 全域變數 [afxMemDF](/previous-versions/ahe4a83t(v=vs.140))值，選擇性地開啟和關閉各個記憶體診斷功能。 這個變數可以有下列的值，如同列舉類型 **afxMemDF** 所指定。
 
-  |值|說明|
+  |值|描述|
   |-----------|-----------------|
   |**allocMemDF**|開啟診斷記憶體配置器 (預設)。|
   |**delayFreeMemDF**|呼叫 `delete` 或 `free` 時會延遲釋放記憶體，直到程式結束。 這會造成程式配置可能的最大記憶體量。|
@@ -413,7 +415,7 @@ pMyPerson->Dump( afxDump );
 ## <a name="reducing-the-size-of-an-mfc-debug-build"></a><a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> 減少 MFC Debug 組建的大小
 大型 MFC 應用程式的偵錯資訊可能需要大量的磁碟空間。 您可以使用下列其中一項程序縮減大小：
 
-1. 使用 [/Z7、/zi、/zi (Debug 資訊格式) ](/cpp/build/reference/z7-zi-zi-debug-information-format) 選項來重建 MFC 程式庫，而不是 **/Z7**。 這些選項會建置包含整個程式庫的偵錯資訊，以降低重複性並且節省空間的單一程式資料庫 (PDB) 檔。
+1. 使用 [/Z7、/zi、/zi (Debug 資訊格式)](/cpp/build/reference/z7-zi-zi-debug-information-format) 選項來重建 MFC 程式庫，而不是 **/Z7**。 這些選項會建置包含整個程式庫的偵錯資訊，以降低重複性並且節省空間的單一程式資料庫 (PDB) 檔。
 
 2. 重建 MFC 程式庫，但不含 debug 資訊 (沒有 [/Z7、/zi、/zi (Debug 資訊格式) ](/cpp/build/reference/z7-zi-zi-debug-information-format) 選項) 。 在這個範例裡，缺乏偵錯資訊讓您無法在 MFC 程式庫程式碼裡使用大多數的偵錯工具設施，然而由於 MFC 程式庫已經充分偵錯過了，所以這不是問題。
 
@@ -430,7 +432,7 @@ pMyPerson->Dump( afxDump );
 
 3. 首先，您要建立新專案組態。
 
-   1. 在 [ ** \<Project> 屬性頁**] 對話方塊中，按一下 [ **Configuration Manager** ] 按鈕。
+   1. 在 [ **\<Project> 屬性頁**] 對話方塊中，按一下 [ **Configuration Manager** ] 按鈕。
 
    2. 在 [組態管理員對話方塊](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))裡，在方格中尋找專案。 **在 [設定**] 欄中，選取 **\<New...>** 。
 
@@ -468,11 +470,11 @@ pMyPerson->Dump( afxDump );
 
    4. 在 [ **屬性頁** ] 對話方塊的 [ **組態設定** ] 資料夾底下，開啟 [ **C/C++** ] 資料夾，然後選取 [ **一般** ] 分類。
 
-   5. 在屬性方格中，尋找 [偵錯資訊格式]。****
+   5. 在屬性方格中，尋找 [偵錯資訊格式]。
 
    6. 按一下 [ **偵錯資訊格式** ] 設定並且選取偵錯資訊需要的選項 (通常是 [ **/ZI**])。
 
-   7. 如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 您可以藉由變更 [ ** \<Project> 屬性**] 對話方塊中的 [**建立/使用先行編譯頭**檔]， (設定**屬性**資料夾、 **C/c + +** 子資料夾、先行**編譯標頭**類別) 來關閉先行編譯標頭檔。
+   7. 如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 您可以藉由變更 [ **\<Project> 屬性**] 對話方塊中的 [**建立/使用先行編譯頭** 檔]， (設定 **屬性** 資料夾、 **C/c + +** 子資料夾、先行 **編譯標頭** 類別) 來關閉先行編譯標頭檔。
 
 7. 從 [ **建置** ] 功能表，選取 [ **建置** ] 來重建過期的專案檔案。
 
@@ -480,5 +482,5 @@ pMyPerson->Dump( afxDump );
 
    [本主題內容](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [偵錯機器碼](../debugger/debugging-native-code.md)

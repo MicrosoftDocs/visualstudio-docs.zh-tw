@@ -1,5 +1,7 @@
 ---
 title: 進程視圖 |Microsoft Docs
+description: '[進程] view 會顯示您系統上所有使用中進程的樹狀結構。 深入瞭解其內容並使用，並遵循其他資訊的連結。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a52da28d01eac4f04081497888fbbfccaf4495e2
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904221"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975130"
 ---
 # <a name="processes-view"></a>處理序檢視
 [進程] 視圖會顯示您系統上所有使用中進程的樹狀結構。 系統會顯示處理序識別碼和模組名稱。 如果您想要檢查特定的系統進程（通常會對應至執行中的程式），請使用 [進程]。 系統會以模組名稱來識別處理常式，或將它們指定為「系統進程」。

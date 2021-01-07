@@ -1,5 +1,7 @@
 ---
 title: 進程搜尋對話方塊 |Microsoft Docs
+description: 使用 [進程搜尋]，即可在 [進程] View 中尋找並選取特定進程的節點。 您可以指定處理序識別碼、模組字串和搜尋方向。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62903765"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975091"
 ---
 # <a name="process-search-dialog-box"></a>處理序搜尋對話方塊
 使用這個對話方塊，即可在 [ [進程] View](../debugger/processes-view.md)中尋找並選取特定進程的節點。 若要顯示此對話方塊，請將焦點移至 [ **進程** ] 視圖視窗。 然後選擇 [**搜尋**] 功能表中的 [**尋找進程**]。

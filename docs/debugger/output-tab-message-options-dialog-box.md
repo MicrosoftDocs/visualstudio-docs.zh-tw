@@ -1,5 +1,7 @@
 ---
 title: 訊息選項對話方塊、輸出索引標籤 |Microsoft Docs
+description: 使用 [訊息選項] 的 [輸出] 索引標籤，即可指定訊息中顯示的訊息資料。 本文描述可用的設定。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63268fdbc320e78a697c181112dbeaaf8ad161ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4d965b92a30d8d8a5b998a27bea9651f8669c8f
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62905071"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975078"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>訊息選項對話方塊、輸出索引標籤
 使用 [ **輸出** ] 索引標籤，即可指定要在 [訊息視圖](../debugger/messages-view.md)中列出的每個訊息的資料。 若要顯示 [[訊息選項] 對話方塊](../debugger/message-options-dialog-box.md)，請從 [ **Spy** ] 功能表選擇 [**記錄訊息**]。

@@ -1,5 +1,7 @@
 ---
 title: 不支援 IA64 處理序的混合模式偵錯
+description: Visual Studio 不支援 IA64 (Itanium) 進程中 managed 和機器碼的混合模式偵錯工具。 請參閱這篇文章以瞭解因應措施。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63a083bd9299570ba2b04a0879d5c9acde24ec4e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 65969e354a5d1ed2dc1cf54ca31e6088cc19de7a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810675"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975247"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>不支援 IA64 處理序的混合模式偵錯。
 Visual Studio 不支援對 IA64 處理序中的 Managed 程式碼和機器碼進行混合模式偵錯。 這表示在偵錯時，您無法從 Managed 程式碼逐步執行到機器碼，或從機器碼逐步執行到 Managed 程式碼。
@@ -35,19 +37,19 @@ Visual Studio 不支援對 IA64 處理序中的 Managed 程式碼和機器碼進
 
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>若要將平台變更為 32 位元 (Visual Basic 或 C#)
 
-1. 在**方案總管** 中，以滑鼠右鍵按一下您的專案，然後按一下捷徑功能表中的 [屬性]****。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下您的專案，然後按一下捷徑功能表中的 [屬性]。
 
-2. 在屬性頁中，按一下 [編譯]**** 或 [偵錯]**** 索引標籤。
+2. 在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。
 
-3. 按一下 [平台]****，並從平台清單中選取 [x86]。
+3. 按一下 [平台]，並從平台清單中選取 [x86]。
 
-     根據預設，Visual Basic 和 C# 編譯器會產生可在任何 CPU 上執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]****，而非 [AnyCPU]****。
+     根據預設，Visual Basic 和 C# 編譯器會產生可在任何 CPU 上執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]，而非 [AnyCPU]。
 
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>若要將平台變更為 32 位元 (C/C++)
 
-1. 在**方案總管** 中，以滑鼠右鍵按一下您的專案，然後按一下捷徑功能表中的 [屬性]****。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下您的專案，然後按一下捷徑功能表中的 [屬性]。
 
-2. 在屬性頁中，按一下 [平台]****，並從平台清單中選取 [Win32]。
+2. 在屬性頁中，按一下 [平台]，並從平台清單中選取 [Win32]。
 
-## <a name="see-also"></a>另請參閱
-- [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)
+## <a name="see-also"></a>請參閱
+- [Debug 64 位應用程式](../debugger/debug-64-bit-applications.md)

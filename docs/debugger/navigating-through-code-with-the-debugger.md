@@ -1,6 +1,7 @@
 ---
 title: 使用偵錯工具流覽程式碼 |Microsoft Docs
-ms.custom: seodec18
+description: 瞭解如何使用 Visual Studio 偵錯工具來針對程式碼進行疑難排解。 主題包括：進入中斷模式、逐步執行程式碼，以及執行至目標。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/12/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd7bb050204d65bb78a597c1ae3c7eea36ac184
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 0ffe163ab567de98161f185ba2f3d2522c505095
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729349"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975208"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具流覽程式碼
 

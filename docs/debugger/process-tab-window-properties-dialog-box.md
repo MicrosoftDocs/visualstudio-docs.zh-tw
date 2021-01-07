@@ -1,5 +1,7 @@
 ---
 title: 視窗屬性對話方塊、進程索引標籤 |Microsoft Docs
+description: 使用 [視窗屬性] 的 [流程] 索引標籤，即可查看建立所選視窗之執行緒的識別碼，以及擁有該執行緒之進程的識別碼。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecd6bc2c5612424b91a9b2cd121de780848be8bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4056308f033ef61aa41456d287e7088c8bc6348b
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62903739"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975065"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、處理序索引標籤
 使用 [ **流程** ] 索引標籤來識別所選視窗的進程。 若要顯示 [ [視窗屬性] 對話方塊](../debugger/window-properties-dialog-box.md)，請將焦點移至 [ [Windows View](../debugger/windows-view.md) ] 視窗。 選取樹狀結構中的任何視窗節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。

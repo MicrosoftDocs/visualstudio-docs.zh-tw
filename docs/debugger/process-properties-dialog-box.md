@@ -1,5 +1,7 @@
 ---
 title: 進程屬性對話方塊 |Microsoft Docs
+description: 使用流程屬性可深入瞭解您在 [進程] 視圖中選取的進程。 有四個索引標籤：一般、記憶體、分頁檔和空間。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2448659a8725c7e284e12a99d52478144ebec1b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abf4e8c6d1e61441459b0b48adfda4fa8728f44a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62903752"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975104"
 ---
 # <a name="process-properties-dialog-box"></a>處理序屬性對話方塊
 使用此對話方塊可深入瞭解特定的進程。 若要顯示此對話方塊，請將焦點移至 [ [進程] 視圖](../debugger/processes-view.md) 視窗。 選取樹狀結構中的任何進程節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。

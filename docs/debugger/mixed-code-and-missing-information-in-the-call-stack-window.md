@@ -1,5 +1,6 @@
 ---
 title: '[呼叫堆疊] 視窗中的混合程式碼 & 遺漏資訊'
+description: 在混合模式程式 (原生和 managed) 偵錯工具不一定會顯示完整的呼叫堆疊。 瞭解機器碼呼叫 managed 程式碼時的可能差異。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -24,21 +25,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32fe52b31daa384718eae629d3051bade93959d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: da8d3a469b957444935150f91567636aef0fb38a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808151"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975260"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>呼叫堆疊視窗內的混合程式碼和遺失的資訊
-因為 Managed 和機器碼呼叫堆疊之間的差異，當程式碼類型混合時，偵錯工具則無法永遠顯示完整的呼叫堆疊。 當機器碼呼叫受控碼時，您會在 [呼叫堆疊]**** 視窗內看到下列差異：
+因為 Managed 和機器碼呼叫堆疊之間的差異，當程式碼類型混合時，偵錯工具則無法永遠顯示完整的呼叫堆疊。 當機器碼呼叫受控碼時，您會在 [呼叫堆疊] 視窗內看到下列差異：
 
-- 受控碼正上方的原生框架可能會從 [呼叫堆疊]**** 視窗遺失。 如需詳細資訊，請參閱 [如何：從 [呼叫堆疊] 視窗中遺漏原生框架時跳出 Managed 程式碼](how-to-use-the-call-stack-window.md)。
+- 受控碼正上方的原生框架可能會從 [呼叫堆疊] 視窗遺失。 如需詳細資訊，請參閱 [如何：從 [呼叫堆疊] 視窗中遺漏原生框架時跳出 Managed 程式碼](how-to-use-the-call-stack-window.md)。
 
-- 針對啟動於偵錯工具外部的混合模式應用程式，[呼叫堆疊]**** 視窗只會顯示受控碼，並且看不到任一個原生框架。
+- 針對啟動於偵錯工具外部的混合模式應用程式，[呼叫堆疊] 視窗只會顯示受控碼，並且看不到任一個原生框架。
 
   這兩個狀況都相當少見。 在大多數呼叫 Managed 程式碼的原生呼叫中，呼叫堆疊看起來都是正確的。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)

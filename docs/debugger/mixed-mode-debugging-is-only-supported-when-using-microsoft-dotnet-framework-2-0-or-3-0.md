@@ -1,5 +1,7 @@
 ---
 title: 只有使用 Microsoft .NET Framework 2.0 或3.0 時，才支援混合模式的偵錯工具 |Microsoft Docs
+description: 在 2.0 版之前的 Microsoft .NET Framework 沒有提供 64 位元處理序的混合模式偵錯支援。 請參閱這篇文章以瞭解因應措施。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b20ef6b81e4d7162fd230d9d0c3437fe1b5232c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa257db5059930d16685daee5aea2b6660300292
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72730922"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975234"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>只有使用 Microsoft .NET Framework 2.0 或 3.0 版本時才支援混合模式偵錯
 在 2.0 版之前的 Microsoft .NET Framework 沒有提供 64 位元處理序的混合模式偵錯支援。 這表示在偵錯時，您無法從 Managed 程式碼逐步執行到機器碼，或從機器碼逐步執行到 Managed 程式碼。
@@ -35,23 +37,23 @@ ms.locfileid: "72730922"
 
 ### <a name="to-change-the-operating-system-to-32-bit-visual-basic-or-c"></a>若要將作業系統變更為 32 位元 (Visual Basic 或 C#)
 
-1. 在 [方案總管]**** 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]****。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]。
 
-2. 在屬性頁中，按一下 [編譯]**** 或 [偵錯]**** 索引標籤。
+2. 在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。
 
-3. 按一下 [平台]****，然後從平台清單選取 [x86]****。
+3. 按一下 [平台]，然後從平台清單選取 [x86]。
 
-     根據預設，Visual Basic 和 C# 編譯器會產生可針對任何 CPU 執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]****，而非 [AnyCPU]****。
+     根據預設，Visual Basic 和 C# 編譯器會產生可針對任何 CPU 執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]，而非 [AnyCPU]。
 
 ### <a name="to-change-the-operating-system-to-32-bit-cc"></a>若要將作業系統變更為 32 位元 (C/C++)
 
-1. 在 [方案總管]**** 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]****。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]。
 
-     在屬性頁中，按一下 [平台]****，然後從平台清單選取 [Win32]****。
+     在屬性頁中，按一下 [平台]，然後從平台清單選取 [Win32]。
 
 ### <a name="to-correct-this-error"></a>更正這個錯誤
 
 - 請參閱 [設定 SQL 調試](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))。
 
-## <a name="see-also"></a>另請參閱
-- [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)
+## <a name="see-also"></a>請參閱
+- [Debug 64 位應用程式](../debugger/debug-64-bit-applications.md)
