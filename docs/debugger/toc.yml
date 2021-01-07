@@ -6,8 +6,6 @@
       href: what-is-debugging.md
     - name: 偵錯技術和工具
       href: write-better-code-with-visual-studio.md
-    - name: 尋找您的偵錯工作
-      href: find-your-debugging-task.md
 - name: 快速入門
   items:
     - name: 偵錯工具簡介
@@ -944,5 +942,7 @@
                   href: copyright-notice-for-spy-increment-help.md
 - name: 資源
   items:
+    - name: 常見問題集 - 尋找您的偵錯功能
+      href: find-your-debugging-task.md
     - name: Visual Studio 中偵錯工具的新功能
       href: what-s-new-for-the-debugger-in-visual-studio.md

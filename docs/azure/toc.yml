@@ -33,6 +33,8 @@
       href: azure-sql-database-add-connected-service.md
     - name: 新增 Azure 儲存體
       href: vs-azure-tools-connected-services-storage.md
+    - name: 新增 Azure 應用程式組態
+      href: vs-azure-tools-connected-services-app-configuration.md
 - name: Azure 雲端服務部署
   expanded: false
   items:

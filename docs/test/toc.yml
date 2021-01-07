@@ -4,17 +4,19 @@
   items:
     - name: 初步認識測試工具
       href: improve-code-quality.md
-- name: 單元測試
-  items:
-    - name: 單元測試工具概觀
+    - name: 單元測試工具和工作
       href: unit-test-your-code.md
+- name: 教學課程
+  items:
     - name: 開始使用
       href: getting-started-with-unit-testing.md
+- name: 單元測試
+  items:
     - name: 單元測試基本概念
       href: unit-test-basics.md
     - name: 建立單元測試專案
       href: create-a-unit-test-project.md
-    - name: 建立單元測試命令
+    - name: 從程式碼建立單元測試
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
