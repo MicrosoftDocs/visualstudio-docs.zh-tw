@@ -9,13 +9,13 @@ ms.date: 08/14/2020
 user.type: subscriber
 tags: portal-error
 subscription.type: vl, cloud, retail, partner
-sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: 7bf2f920e1186635bd9c15110bf6c06681f41a7f
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+sap.id: 8250612f-7446-20c5-7473-16d089f2280d
+ms.openlocfilehash: cce93705509278c62db011db1f8cab60d6207b21
+ms.sourcegitcommit: cfc984316ded3396db6722ad90f9378dfb7661ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915880"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98024219"
 ---
 ## <a name="were-sorry-to-hear-that-youre-experiencing-an-issue-with-a-page-not-being-displayed-while-using-the-visual-studio-subscriptions-portal"></a>很抱歉，您在使用 Visual Studio 訂用帳戶入口網站時，遇到未顯示頁面的問題。 
 

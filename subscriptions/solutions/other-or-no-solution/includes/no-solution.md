@@ -9,13 +9,13 @@ ms.date: 08/25/2020
 user.type: subscriber, admin
 tags: no-solution
 subscription.type: vl, cloud, retail, partner
-sap.id: d03b45f3-ac17-15a1-e7b5-8515c6ec8d91
-ms.openlocfilehash: d903521677335e4763c12e9fa7b7f62b0baa38a6
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+sap.id: 34fccc61-0a31-cc35-22dd-016a1ebf1134
+ms.openlocfilehash: a0193c8aa2e764c2cefb8650ba1bed91a711b93b
+ms.sourcegitcommit: cfc984316ded3396db6722ad90f9378dfb7661ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915884"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98024265"
 ---
 ## <a name="sorry-we-couldnt-find-a-solution-for-you"></a>抱歉，我們找不到您的解決方案。 
 

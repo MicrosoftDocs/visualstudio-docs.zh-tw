@@ -9,13 +9,13 @@ ms.date: 08/14/2020
 user.type: subscriber
 tags: portal-error
 subscription.type: vl, cloud, retail, partner
-sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: 2d05d23cfbae162dcf102e1063ede3bab794f5ee
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+sap.id: 8250612f-7446-20c5-7473-16d089f2280d
+ms.openlocfilehash: 138c19896629c813c558c66d5d12c294a0380db6
+ms.sourcegitcommit: cfc984316ded3396db6722ad90f9378dfb7661ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915881"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98024287"
 ---
 ## <a name="were-sorry-to-hear-that-youre-experiencing-an-issue-with-the-visual-studio-subscriptions-portal"></a>很抱歉，您遇到 Visual Studio 訂用帳戶入口網站的問題。 
 
