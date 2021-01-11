@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660fc893eb22d0c40805a8bf7b2efc86fd83c3b1
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cf02fda50678d9de4eb01dc28b4825844e33063e
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350864"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069496"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;啟動載入器 &gt;)  (InstallChecks 元素
 `InstallChecks`元素支援針對本機電腦啟動各種測試，以確保已安裝應用程式的所有適當必要條件。
@@ -80,8 +80,8 @@ ms.locfileid: "94350864"
 |`Name`|必要。 要檢查之元件的完整名稱。|
 |`PublicKeyToken`|必要。 與此強式名稱元件相關聯之公開金鑰的縮寫形式。 儲存在 GAC 中的所有元件都必須具有名稱、版本和公開金鑰。|
 |`Version`|必要。 組件的版本。<br /><br /> 版本號碼的格式 ...。 \<*major version*> \<*minor version*> \<*build version*> \<*revision version*>|
-|`Language`|選擇性。 當地語系化元件的語言。 預設值為 `neutral`。|
-|`ProcessorArchitecture`|選擇性。 此安裝的目的電腦處理器。 預設值為 `msil`。|
+|`Language`|選擇性。 當地語系化元件的語言。 預設為 `neutral`。|
+|`ProcessorArchitecture`|選擇性。 此安裝的目的電腦處理器。 預設為 `msil`。|
 
 ## <a name="externalcheck"></a>ExternalCheck
  這個元素是的選擇性子項目 `InstallChecks` 。 針對的每個實例，啟動載入器 `ExternalCheck` 會在個別的進程中執行命名的外部程式，並將它的結束代碼儲存在所指示的屬性中 `Property` 。 `ExternalCheck` 適用于執行複雜的相依性檢查，或檢查元件是否存在的唯一方法是將它具現化。
@@ -105,7 +105,7 @@ ms.locfileid: "94350864"
 | `FileName` | 必要。 要尋找的檔案名。 |
 | `SearchPath` | 必要。 要在其中尋找檔案的磁片或資料夾。 如果已指派，這必須是相對路徑 `SpecialFolder` ; 否則，它必須是絕對路徑。 |
 | `SpecialFolder` | 選擇性。 對 Windows 或而言具有特殊意義的資料夾 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 預設值是解讀為 `SearchPath` 絕對路徑。 有效值如下：<br /><br /> `AppDataFolder`. 此應用程式的應用程式資料夾，專 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 屬於目前的使用者。<br /><br /> `CommonAppDataFolder`. 所有使用者所使用的應用程式資料檔案夾。<br /><br /> `CommonFilesFolder`. 目前使用者的 Common Files 資料夾。<br /><br /> `LocalDataAppFolder`. 非漫遊應用程式的 [資料] 資料夾。<br /><br /> `ProgramFilesFolder`. 32位應用程式的標準 [Program Files] 資料夾。<br /><br /> `StartUpFolder`. 此資料夾包含在系統啟動時啟動的所有應用程式。<br /><br /> `SystemFolder`. 包含32位系統 Dll 的資料夾。<br /><br /> `WindowsFolder`. 包含 Windows 系統安裝的資料夾。<br /><br /> `WindowsVolume`. 包含 Windows 系統安裝的磁片磁碟機或磁碟分割。 |
-| `SearchDepth` | 選擇性。 要在其中搜尋指定檔案之子資料夾的深度。 搜尋是深度優先。 預設值為0，這會將搜尋限制為由和 SearchPath 指定的最上層資料夾 `SpecialFolder` 。 **SearchPath** |
+| `SearchDepth` | 選擇性。 要在其中搜尋指定檔案之子資料夾的深度。 搜尋是深度優先。 預設值為0，這會將搜尋限制為由和 SearchPath 指定的最上層資料夾 `SpecialFolder` 。  |
 
 ## <a name="msiproductcheck"></a>MsiProductCheck
  這個元素是的選擇性子項目 `InstallChecks` 。 針對的每個實例，啟動載入器 `MsiProductCheck` 會先檢查指定的 Microsoft Windows Installer 安裝是否已執行，直到完成為止。 屬性值會根據所安裝產品的狀態進行設定。 正值表示已安裝產品，0或-1 表示未安裝。  (如需詳細資訊，請參閱 Windows Installer SDK 函數 MsiQueryFeatureState。 ) 。 如果電腦上未安裝 Windows Installer， `Property` 則不會設定。
@@ -158,7 +158,7 @@ ms.locfileid: "94350864"
 ## <a name="installconditions"></a>InstallConditions
  當 `InstallChecks` 評估時，它們會產生屬性。 然後，會使用屬性 `InstallConditions` 來判斷封裝是否應該安裝、略過或失敗。 下表列出 `InstallConditions` ：
 
-|條件|說明|
+|條件|描述|
 |-|-|
 |`FailIf`|如果任何 `FailIf` 條件評估為 true，則封裝會失敗。 其餘的條件將不會進行評估。|
 |`BypassIf`|如果有任何 `BypassIf` 條件評估為 true，則會略過封裝。 其餘的條件將不會進行評估。|
@@ -166,7 +166,7 @@ ms.locfileid: "94350864"
 ## <a name="predefined-properties"></a>預先定義的屬性
  下表列出 `BypassIf` 和 `FailIf` 元素：
 
-|屬性|備註|可能的值|
+|屬性|注意|可能的值|
 |--------------|-----------|---------------------|
 |`Version9X`|Windows 9X 作業系統的版本號碼。|4.10 = Windows 98|
 |`VersionNT`|以 Windows NT 為基礎之作業系統的版本號碼。|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|
@@ -177,10 +177,20 @@ ms.locfileid: "94350864"
  例如，若要在執行 Windows 95 的電腦上封鎖安裝，請使用如下所示的程式碼：
 
 ```xml
-<!-- Block install on Windows 95 -->
+    <!-- Block install on Windows 95 -->
     <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>
 ```
 
-## <a name="see-also"></a>請參閱
+ 若要在符合 FailIf 或 BypassIf 條件時跳過執行安裝檢查，請使用 BeforeInstallChecks 屬性。  例如：
+
+```xml
+    <!-- Block install and do not evaluate install checks if user does not have admin privileges -->
+    <FailIf Property="AdminUser" Compare="ValueEqualTo" Value="false" String="AdminRequired" BeforeInstallChecks="true"/>
+```
+
+>[!NOTE]
+>`BeforeInstallChecks`從 Visual Studio 2019 Update 9 版本開始支援此屬性。
+
+## <a name="see-also"></a>另請參閱
 - [\<Commands> 元素](../deployment/commands-element-bootstrapper.md)
 - [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)

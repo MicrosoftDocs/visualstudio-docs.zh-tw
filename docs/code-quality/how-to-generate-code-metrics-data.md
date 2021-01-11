@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c72e53266eae11fb060ac117c4a6dc0a1c37e2e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 631ce51df5d985e02e8ccabca258c0ef1c1318f4
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434788"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069470"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>How to：產生程式碼度量資料
 
@@ -39,22 +39,17 @@ ms.locfileid: "94434788"
 - [CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)
 - [CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)
 
-這些規則預設為停用，但您可以從 [**方案總管**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) 或在 [規則集](using-rule-sets-to-group-code-analysis-rules.md) 檔案中啟用它們。 例如，若要以警告的形式啟用規則 CA1502，您的規則集檔案將包含下列專案：
+這些規則預設為停用，但您可以從 [**方案總管**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) 或 [EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) 檔案中加以啟用。 例如，若要以警告的形式啟用規則 CA1502，您的 EditorConfig 檔會包含下列專案：
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
-  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
-    <Rule Id="CA1502" Action="Warning" />
-  </Rules>
-</RuleSet>
+```cs
+dotnet_diagnostic.CA1502.severity = warning
 ```
 
 ### <a name="configuration"></a>設定
 
 您可以設定程式碼計量規則引發的臨界值。
 
-1. 建立文字檔 例如，您可以將它命名為 *CodeMetricsConfig.txt* 。
+1. 建立文字檔 例如，您可以將它命名為 *CodeMetricsConfig.txt*。
 
 2. 以下列格式將所需的臨界值新增至文字檔：
 
@@ -74,15 +69,15 @@ ms.locfileid: "94434788"
 
 ## <a name="calculate-code-metrics-menu-command"></a>計算程式碼度量功能表命令
 
-使用 [ **分析**  >  **計算程式碼度量** ] 功能表，為 IDE 中的一個或所有開啟的專案產生程式碼度量。
+使用 [**分析**  >  **計算程式碼度量**] 功能表，為 IDE 中的一個或所有開啟的專案產生程式碼度量。
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>產生整個解決方案的程式碼度量結果
 
 您可以使用下列任何一種方式產生整個解決方案的程式碼度量結果：
 
-- 從功能表列中，選取 [ **分析**  >  **計算**  >  **方案的程式** 代碼度量]。
+- 從功能表列中，選取 [**分析**  >  **計算**  >  **方案的程式** 代碼度量]。
 
-- 在 **方案總管** 中，以滑鼠右鍵按一下方案，然後選取 [ **計算程式碼度量** ]。
+- 在 **方案總管** 中，以滑鼠右鍵按一下方案，然後選取 [ **計算程式碼度量**]。
 
 - 在 [程式 **代碼計量結果** ] 視窗中，選取 [ **計算方案的程式碼度量** ] 按鈕。
 
@@ -92,9 +87,9 @@ ms.locfileid: "94434788"
 
 1. 在 **方案總管** 中，選取一或多個專案。
 
-1. 從功能表列中，選取 [ **分析**  >  **計算**  >  **所選取專案的程式** 代碼度量])  (。
+1. 從功能表列中，選取 [**分析**  >  **計算**  >  **所選取專案的程式** 代碼度量])  (。
 
-結果會產生並顯示 [程式 **代碼度量結果** ] 視窗。 若要查看結果詳細資料，請展開階層中的樹狀 **結構** 。
+結果會產生並顯示 [程式 **代碼度量結果** ] 視窗。 若要查看結果詳細資料，請展開階層中的樹狀 **結構**。
 
 ::: moniker range="vs-2017"
 
@@ -284,7 +279,7 @@ Build succeeded.
 1. 複製 [dotnet/roslyn-分析器](https://github.com/dotnet/roslyn-analyzers) 存放庫。
 2. 以系統管理員身分開啟 Visual Studio 的開發人員命令提示字元。
 3. 從 **roslyn 分析器** 存放庫的根目錄中，執行下列命令： `Restore.cmd`
-4. 將目錄變更為 *src\Tools* 。
+4. 將目錄變更為 *src\Tools*。
 5. 執行下列命令以建立 **計量 .csproj** 專案：
 
    ```shell
@@ -295,7 +290,7 @@ Build succeeded.
 
 #### <a name="metricsexe-usage"></a>Metrics.exe 使用方式
 
-若要執行 *Metrics.exe* ，請提供專案或方案和輸出 XML 檔案做為引數。 例如：
+若要執行 *Metrics.exe*，請提供專案或方案和輸出 XML 檔案做為引數。 例如：
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -318,11 +313,11 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 ### <a name="previous-versions"></a>舊版
 
 ::: moniker range=">=vs-2019"
-Visual Studio 2015 包含的命令列程式碼度量工具也稱為 *Metrics.exe* 。 這個舊版的工具會進行二進位分析，也就是以元件為基礎的分析。 較新版本的 *Metrics.exe* 工具會改為分析原始程式碼。 因為較新的 *Metrics.exe* 工具是以程式碼為基礎，所以命令列程式碼度量結果可能與 Visual Studio IDE 和舊版 *Metrics.exe* 所產生的不同。 從 Visual Studio 2019 開始，Visual Studio IDE 會分析原始程式碼（例如命令列工具），且結果應該相同。
+Visual Studio 2015 包含的命令列程式碼度量工具也稱為 *Metrics.exe*。 這個舊版的工具會進行二進位分析，也就是以元件為基礎的分析。 較新版本的 *Metrics.exe* 工具會改為分析原始程式碼。 因為較新的 *Metrics.exe* 工具是以程式碼為基礎，所以命令列程式碼度量結果可能與 Visual Studio IDE 和舊版 *Metrics.exe* 所產生的不同。 從 Visual Studio 2019 開始，Visual Studio IDE 會分析原始程式碼（例如命令列工具），且結果應該相同。
 
 ::: moniker-end
 ::: moniker range="vs-2017"
-Visual Studio 2015 包含的命令列程式碼度量工具也稱為 *Metrics.exe* 。 這個舊版的工具會進行二進位分析，也就是以元件為基礎的分析。 新的 *Metrics.exe* 工具會改為分析原始程式碼。 因為新的 *Metrics.exe* 工具是以程式碼為基礎，所以命令列程式碼度量結果與 Visual Studio IDE 和舊版 *Metrics.exe* 所產生的不同。
+Visual Studio 2015 包含的命令列程式碼度量工具也稱為 *Metrics.exe*。 這個舊版的工具會進行二進位分析，也就是以元件為基礎的分析。 新的 *Metrics.exe* 工具會改為分析原始程式碼。 因為新的 *Metrics.exe* 工具是以程式碼為基礎，所以命令列程式碼度量結果與 Visual Studio IDE 和舊版 *Metrics.exe* 所產生的不同。
 ::: moniker-end
 
 只要方案和專案可以載入，新的命令列程式碼度量工具就會計算計量（即使存在原始程式碼錯誤）。
@@ -338,7 +333,7 @@ Visual Studio 2015 包含的命令列程式碼度量工具也稱為 *Metrics.exe
 
 其他的度量（例如和）會 `CyclomaticComplexity` `MaintainabilityIndex` 使用與舊版 *Metrics.exe* 相同的公式，但新的工具會計算 `IOperations` (邏輯來源指令的數目，) 而非中繼語言 (IL) 指令。 這些數位將與 Visual Studio IDE 和舊版 *Metrics.exe* 所產生的數位稍有不同。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用程式碼度量結果視窗](../code-quality/working-with-code-metrics-data.md)
 - [程式碼度量值](../code-quality/code-metrics-values.md)
