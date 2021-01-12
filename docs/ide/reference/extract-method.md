@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21f6ac868268c40ea6df837596546f86fd9a3a44
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569695"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129467"
 ---
 # <a name="extract-a-method-refactoring"></a>擷取方法重構
 
@@ -34,42 +34,42 @@ ms.locfileid: "75569695"
 
 **原因：** 您可以複製/貼上該程式碼，但那樣會造成重複。 較好的解決方案是將該片段重構成它自己的且可由任何其他方法自由呼叫的方法。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 醒目標示的擷取的程式碼：
 
    - C#：
 
-       ![醒目提示的程式碼 - C#](media/extractmethod-highlight-cs.png)
+       !顯示 Program 類別 c # 程式碼的螢幕擷取畫面。 在該類別的 Main 函式中，會反白顯示程式程式碼。] (媒體/extractmethod-highlight-cs.png) 
 
    - Visual Basic：
 
-       ![醒目提示的程式碼 - Visual Basic](media/extractmethod-highlight-vb.png)
+       ![顯示主要 Sub Visual Basic 程式碼的螢幕擷取畫面。 在該子中，會反白顯示一行程式碼。](media/extractmethod-highlight-vb.png)
 
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
       - 按 **CTRL+R**，再按 **CTRL+M**。 (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
-      - 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]****。
+      - 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]。
    - **滑鼠**
-      - 選取 [編輯] > [重構] > [擷取方法]****。
-      - 在程式碼上按一下滑鼠右鍵，然後選取 [重構] > [擷取] > [擷取方法]****。
-      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]****。
+      - 選取 [編輯] > [重構] > [擷取方法]。
+      - 在程式碼上按一下滑鼠右鍵，然後選取 [重構] > [擷取] > [擷取方法]。
+      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]。
 
    系統將會立即建立方法。 從這裡，您現在即可輸入新名稱來為方法重新命名。
 
    > [!TIP]
-   > 您也可以使用出現在 IDE 右上角 [重新命名]**** 方塊中的核取方塊，以更新註解和其他字串來使用這個新名稱，以及在儲存前先[預覽變更](../../ide/preview-changes.md)。
+   > 您也可以使用出現在 IDE 右上角 [重新命名] 方塊中的核取方塊，以更新註解和其他字串來使用這個新名稱，以及在儲存前先[預覽變更](../../ide/preview-changes.md)。
 
    - C#：
 
-      ![重新命名方法 - C#](media/extractmethod-rename-cs.png)
+      ![顯示 Program 類別 c # 程式碼的螢幕擷取畫面。 方法名稱會反白顯示，並開啟 [重新命名] 快顯視窗。](media/extractmethod-rename-cs.png)
 
    - Visual Basic：
 
-      ![重新命名方法 - Visual Basic](media/extractmethod-rename-vb.png)
+      ![顯示主要 Sub Visual Basic 程式碼的螢幕擷取畫面。 方法名稱會反白顯示，並開啟 [重新命名] 快顯視窗。](media/extractmethod-rename-vb.png)
 
-3. 當您對變更感到滿意時，請選擇 [套用]**** 按鈕或按 **ENTER**，便會認可變更。
+3. 當您對變更感到滿意時，請選擇 [套用] 按鈕或按 **ENTER**，便會認可變更。
 
 ## <a name="see-also"></a>另請參閱
 
