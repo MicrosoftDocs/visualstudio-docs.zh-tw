@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: f12da1b45520de87bfd94f5b4597d10820968a11
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 48f52f1381bb890942e6f5ed3f1772c0735b1fb8
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915886"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147536"
 ---
 ## <a name="im-unable-to-see-my-azure-monthly-credit-in-the-azure-portal"></a>我在 Azure 入口網站中看不到我的 Azure 每月點數。
 
@@ -29,10 +29,12 @@ ms.locfileid: "96915886"
 
 您將需要使用您用來設定帳戶的電子郵件來登入 [Azure 入口網站](https://portal.azure.com/) 。 例如，如果您使用其他帳戶來啟用每月點數，則必須一律使用該電子郵件登入 Azure 訂用帳戶。 
 
-## <a name="azure-directories"></a>Azure 目錄 
+## <a name="azure-directories"></a>Azure 目錄
+ 
 您可以有多個目錄作為 Azure 訂用帳戶的一部分。 請確定您使用的是設定 Azure 訂用帳戶的目錄。 您可以在 Azure 入口網站中，按一下右上角的帳戶圖示來查看和切換目錄。 
 
-## <a name="how-to-activate"></a>啟用方式
+## <a name="how-to-activate-your-azure-monthly-credit"></a>如何啟用您的 Azure 每月點數
+
 1. 登入訂用帳戶 [入口網站](https://my.visualstudio.com/benefits)  
 1. 在 [權益] 頁面的 [工具] 區段中，找出 [Azure 開發/測試個人點數] 磚，然後按一下權益磚底部的 [啟用] 連結。 如果您找不到 Azure 每月信用額度磚，請使用 [ [權益比較] 頁面](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription) ，確認您的訂用帳戶包含每月信用額度。 
 1. 如果您沒有現有的 Azure 訂用帳戶，系統會要求您填寫所需的個人資訊，以建立一個訂用帳戶。  
@@ -42,7 +44,7 @@ ms.locfileid: "96915886"
 
 透過 Visual Studio 訂閱權益建立的 Azure 訂用帳戶，可能會受到未強加于付費訂用帳戶的限制所影響。 某些地理位置可能無法建立 VM 和 Azure 服務，且某些服務類型可能無法使用。 可能會有比付費訂用帳戶還要低的預設配額。 
 
-## <a name="more-information"></a>詳細資訊 
+## <a name="more-information-about-azure-monthly-credits"></a>Azure 每月信用額度的詳細資訊
 
 [閱讀](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure) 有關啟用、資格和其他支援資源的詳細資訊。  
 

@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, ems
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: df582df95932ae82e9be319f347f79745e1ad277
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 065527c86384e6eef46149ecc7d9606268bc1695
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915887"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147559"
 ---
 ## <a name="im-unable-to-activate-my-enterprise-mobility--security-ems-benefit"></a>我無法啟用我的 Enterprise Mobility + Security (EMS) 權益。
 
@@ -40,6 +40,6 @@ Visual Studio 訂閱者現在可以將 Office 365 E3 developer 沙箱訂閱遷�
 
 在您刪除 Office 365 E3 訂用帳戶並建立取代 Microsoft 365 E5 訂用帳戶之後，您的 Office 365 E3 租使用者將可供使用60天，讓您可以遷移資料。 
 
-## <a name="more-information"></a>詳細資訊 
+## <a name="more-information-about-office-365-e3-subscriptions"></a>Office 365 E3 訂閱的詳細資訊
 
 [閱讀](https://docs.microsoft.com/visualstudio/subscriptions/vs-m365) 有關資格、如何從 Office 365 E3 遷移至 Microsoft 365 以及常見問題的詳細資訊。  

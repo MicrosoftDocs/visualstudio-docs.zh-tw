@@ -10,12 +10,12 @@ user.type: subscriber
 tags: billing
 subscription.type: vl, cloud, retail, partner
 sap.id: 2db8f927-5814-835b-cc9d-daab30a7a09e
-ms.openlocfilehash: a7121ac942b074b0414c00ee791ccf37bf8320bd
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: fa95610b98d8731b486392d927452b8d42576f28
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915894"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147352"
 ---
 ## <a name="how-do-i-view-my-bill"></a>如何? 查看我的帳單？
 
@@ -34,5 +34,5 @@ Azure 中的「消費限制」功能可讓您設定服務將關閉的消費限�
 
 如果您已將 Azure 訂用帳戶上的消費上限移除（轉換為隨用隨付），以利用 Visual Studio 訂閱者的 enterprise 開發/測試定價，或想要在每月信用額度所涵蓋之開發和測試所用的以外的服務使用這些服務，您將每月向您收取服務的費用。  
 
-## <a name="more-information"></a>詳細資訊 
+## <a name="more-information-about-billing"></a>帳單的詳細資訊
 取得您的使用量和費用的常見問題解答。 造訪 [帳單常見問題](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started)。 

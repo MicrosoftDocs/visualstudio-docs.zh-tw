@@ -10,18 +10,18 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: 21555c11df2671a86d97d6f6c855756cd7e2d3b4
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 2cb74dda511efbed7a204ef11a163097efc2f54b
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915915"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147593"
 ---
 ## <a name="purchase-monthly-subscriptions-through-visual-studio-marketplace"></a>透過 Visual Studio Marketplace 購買每月訂閱 
 
 使用每月雲端訂用帳戶，您可以租借 Visual Studio，並在不需要長期合約的情況下 Azure DevOps。 您可以透過 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)購買這些訂閱。  
 
-## <a name="visual-studio-marketplace"></a>Visual Studio Marketplace 
+## <a name="billing-in-the-visual-studio-marketplace"></a>Visual Studio Marketplace 中的帳單 
 
 計費則是透過 Microsoft Azure 訂用帳戶處理。 若還沒有 Azure 訂閱，您可以在第一次購買時免費設定。  
 
@@ -30,7 +30,7 @@ ms.locfileid: "96915915"
 
 [深入](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) 瞭解每月 Visual Studio 訂閱 Azure 計費。 
 
-## <a name="more-information"></a>詳細資訊 
+## <a name="more-information-about-subscription-benefits"></a>訂用帳戶權益的詳細資訊
 
 [比較訂閱權益與定價](https://visualstudio.microsoft.com/vs/pricing/) ，了解每種 Visual Studio 訂閱的權益。 
 

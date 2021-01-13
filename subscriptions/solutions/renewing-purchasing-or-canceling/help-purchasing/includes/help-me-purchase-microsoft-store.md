@@ -10,12 +10,12 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: b16123ef691036c027ac6046616699624e53b10a
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 90c56d7be8e4f3e687ff602619b5eda80807b030
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915914"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147520"
 ---
 ## <a name="purchase-subscriptions-through-microsoft-store"></a>透過 Microsoft Store 購買訂閱 
 
@@ -37,7 +37,7 @@ ms.locfileid: "96915914"
 1. 按一下 [下載-新增] 並新增至購物車。 注意：有時商店會預設為顯示續約價格，請確定您購買的是新的訂用帳戶。 存放區將不會驗證您是否有目前的訂用帳戶，同時購買續約價格。 您將無法在沒有目前相符訂用帳戶的情況下啟用更新。
 1. 退房。在 [確認] 頁面上，您將會獲得啟用訂用帳戶所需的產品金鑰。 請參閱下列指示。 
 
-## <a name="how-to-activate"></a>啟用方式  
+## <a name="how-to-activate-your-subscription"></a>如何啟用您的訂用帳戶 
 
 透過 Microsoft Store 購買 Visual Studio 訂用帳戶之後，您可以從付款確認頁面或在購買後收到的確認電子郵件開始啟用程式。 
 
@@ -47,7 +47,7 @@ ms.locfileid: "96915914"
 
 訂用帳戶現在應該會顯示在 [訂用帳戶] [頁面](https://my.visualstudio.com/subscriptions) 上，而且您應該可以存取您的所有訂用帳戶權益。 
 
-## <a name="more-information"></a>詳細資訊 
+## <a name="compare-subscription-benefits"></a>比較訂閱權益
 
 [比較訂閱權益與定價](https://visualstudio.microsoft.com/vs/pricing/) ，了解每種 Visual Studio 訂閱的權益。 
 

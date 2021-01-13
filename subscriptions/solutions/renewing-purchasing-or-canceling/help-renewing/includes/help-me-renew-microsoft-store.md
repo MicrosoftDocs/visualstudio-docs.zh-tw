@@ -10,12 +10,12 @@ user.type: subscriber
 tags: renewing
 subscription.type: retail
 sap.id: b324c31f-5d44-4cc2-537a-9c354bc5fbfc
-ms.openlocfilehash: c888f89c7fa6a02a18539493e2fda5afc5298712
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: f518f4458181d39a140ee5652b08ea861f2130ee
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915910"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147448"
 ---
 ## <a name="renewing-subscriptions-through-microsoft-store"></a>透過 Microsoft Store 更新訂閱 
 
@@ -23,7 +23,7 @@ ms.locfileid: "96915910"
 
 如果您的訂用帳戶尚未過期，您會在訂用帳戶 [入口網站](https://my.visualstudio.com/subscriptions)中查看您的訂用帳戶，以找出到期日。 
 
-## <a name="subscriptions-available"></a>可用的訂閱 
+## <a name="subscriptions-available-for-renewal"></a>可續訂的訂閱
 
 零售 Visual Studio 可透過 Microsoft Store 續訂的訂閱包括： 
 
@@ -51,7 +51,7 @@ ms.locfileid: "96915910"
 
 訂用帳戶現在應該會顯示在 [訂用帳戶] [頁面](https://my.visualstudio.com/subscriptions) 上，而且您應該可以存取您的所有訂用帳戶權益。 
 
-## <a name="more-information"></a>詳細資訊 
+## <a name="more-information"></a>更多資訊 
 
 [比較訂閱權益與定價](https://visualstudio.microsoft.com/vs/pricing/) ，了解每種 Visual Studio 訂閱的權益。 
 

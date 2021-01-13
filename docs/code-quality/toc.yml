@@ -453,6 +453,12 @@
           href: how-to-generate-code-metrics-data.md
         - name: 使用程式碼度量資料
           href: working-with-code-metrics-data.md
+        - name: 資源
+          items:
+            - name: 可維護性索引範圍與意義
+              href: code-metrics-maintainability-index-range-and-meaning.md
+            - name: 類別結合程度
+              href: code-metrics-class-coupling.md
 - name: C++ 程式碼分析
   items:
     - name: 分析 C 和 C++ 程式碼
