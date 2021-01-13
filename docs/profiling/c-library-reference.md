@@ -1,5 +1,7 @@
 ---
 title: C 程式庫參考 | Microsoft Docs
+description: 請參閱 Visual Studio 中並行視覺化檢視 SDK 的 C 程式庫參考資訊簡介。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9271cce475959e79004fba384d72228f569ad2c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21bc1af4ff62fb9c0b8054898bf724616bbf2921
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331979"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150427"
 ---
 # <a name="c-library-reference"></a>C 程式庫參考
 本節包含並行視覺化檢視 SDK 的參考資訊。

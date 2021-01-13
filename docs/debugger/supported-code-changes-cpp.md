@@ -1,5 +1,7 @@
 ---
 title: " (c + +) 支援的程式碼變更 |Microsoft Docs"
+description: 瞭解當您在 Visual Studio 中進行 c + + 專案的偵錯工具時，使用 [編輯後繼續] 功能時，支援的程式碼變更。
+ms.custom: SEO-VS-2020
 ms.date: 02/18/2020
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6c0d88dd230bee768641905e200f1f47749d77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d693753cbcc9844ff602ab4d20e90fdc6de7dae5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77629582"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150492"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C++)
 C + + 專案的 [編輯後繼續] 可處理大部分類型的程式碼變更。 不過，有些變更無法在程式執行期間套用。 若要套用這些變更，您必須停止執行，並建置新版的程式碼。
@@ -39,13 +41,13 @@ C + + 專案的 [編輯後繼續] 可處理大部分類型的程式碼變更。 
   3. **連結器 > 一般 > 啟用增量連結**：是 (`/INCREMENTAL`) 
 
      任何不相容的連結器設定 (例如 `/SAFESEH` 或 `/OPT:` ... ) 應該會在組建期間造成警告 _LNK4075_ 。  
-     範例：`LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification`
+     範例： `LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification`
 
 ### <a name="debugger-settings-debug--options--general"></a>偵錯工具設定 (Debug > 選項 > 一般) ：
   - 啟用原生編輯後繼續
 
      任何不相容的編譯器或連結器設定都會在 [編輯後繼續] 期間造成錯誤。  
-     範例：`Edit and Continue : error  : ‘file.cpp’ in ‘MyApp.exe’ was not compiled with Edit and Continue enabled. Ensure that the file is compiled with the Program Database for Edit and Continue (/ZI) option.`
+     範例： `Edit and Continue : error  : ‘file.cpp’ in ‘MyApp.exe’ was not compiled with Edit and Continue enabled. Ensure that the file is compiled with the Program Database for Edit and Continue (/ZI) option.`
 
 ## <a name="unsupported-changes"></a><a name="BKMK_Unsupported_changes"></a> 不支援的變更
  下列 C/c + + 變更無法在調試會話期間套用。 如果您進行上述其中一項變更，然後嘗試套用程式碼變更，則 [ **輸出** ] 視窗中會出現錯誤或警告訊息。
@@ -99,7 +101,7 @@ C + + 專案的 [編輯後繼續] 可處理大部分類型的程式碼變更。 
 
 - 在未選取 [ **發生未處理的例外狀況時回溯呼叫堆疊** ] 選項的情況下，於發生未處理的例外狀況後編輯程式碼。
 
-- 使用 [附加至] **** 來進行應用程式偵錯，而不要選擇 [偵錯] **** 功能表上的 [啟動] **** 來執行應用程式。
+- 使用 [附加至]  來進行應用程式偵錯，而不要選擇 [偵錯]  功能表上的 [啟動]  來執行應用程式。
 
 - 偵錯最佳化程式碼
 
@@ -119,7 +121,7 @@ C + + 專案的 [編輯後繼續] 可處理大部分類型的程式碼變更。 
 - 設定 **/OPT:REF**、 **/OPT:ICF**，或 **/INCREMENTAL:NO** 會停用 [編輯後繼續]，並且產生下列警告：  
      `LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /OPT specification`
 
-- 設定 **/order**、 **/RELEASE**或 **/Force** 會停用 [編輯後繼續]，並出現下列警告：  
+- 設定 **/order**、 **/RELEASE** 或 **/Force** 會停用 [編輯後繼續]，並出現下列警告：  
      `LINK : warning LNK4075: ignoring /INCREMENTAL due to /option specification`
 
 - 設定任何能夠防止建立程式資料庫 (.PDB) 檔的選項，即可停用 [編輯後繼續] 並且不顯示任何特定警告。
@@ -137,7 +139,7 @@ C + + 專案的 [編輯後繼續] 可處理大部分類型的程式碼變更。 
 
 1. 在 [ **偵錯** ] 功能表上選擇 [ **選項和設定**]。
 
-2. 在 [選項] **** 對話方塊的 [偵錯] **** 節點下，選取 [編輯後繼續] **** 節點。
+2. 在 [選項]  對話方塊的 [偵錯]  節點下，選取 [編輯後繼續]  節點。
 
 3. 清除 [ **偵錯後重新連結程式碼變更** ] 核取方塊。
 
@@ -148,7 +150,7 @@ C + + 專案的 [編輯後繼續] 可處理大部分類型的程式碼變更。 
 
 1. 在 [ **偵錯** ] 功能表上選擇 [ **選項和設定**]。
 
-2. 在 [選項] **** 對話方塊的 [偵錯] **** 節點下，選取 [編輯後繼續] **** 節點。
+2. 在 [選項]  對話方塊的 [偵錯]  節點下，選取 [編輯後繼續]  節點。
 
 3. 清除 [ **允許先行編譯** ] 核取方塊。
 
@@ -158,10 +160,10 @@ C + + 專案的 [編輯後繼續] 可處理大部分類型的程式碼變更。 
 ## <a name="diagnosing-issues"></a><a name="BKMK_Diagnosing_issues"></a> 診斷問題
  如果您的案例不符合上述任何條件，您可以藉由設定下列 DWORD 登錄值來收集更多詳細資料：
  1. 開啟開發人員命令提示字元。
- 2. 執行下列命令：  
+ 2. 執行以下命令：  
      `VsRegEdit.exe set “C:\Program Files (x86)\Microsoft Visual Studio\[Version]\[YOUR EDITION]” HKCU Debugger NativeEncDiagnosticLoggingLevel DWORD 1`
 
- 在 debug 會話開始時設定此值，會導致 [編輯後繼續] 的各種元件 go-spew 詳細資訊記錄到**輸出視窗**的 [  >  **調試**程式] 窗格。
+ 在 debug 會話開始時設定此值，會導致 [編輯後繼續] 的各種元件 go-spew 詳細資訊記錄到 **輸出視窗** 的 [  >  **調試** 程式] 窗格。
 
 ## <a name="see-also"></a>另請參閱
 - [編輯後繼續 (C++)](../debugger/edit-and-continue-visual-cpp.md)

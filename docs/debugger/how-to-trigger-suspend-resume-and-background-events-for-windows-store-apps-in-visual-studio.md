@@ -1,5 +1,7 @@
 ---
 title: 在偵錯工具時觸發暫止/繼續/背景事件
+description: 瞭解如何在 Visual Studio 中通用 Windows 平臺 (UWP) 應用程式的偵錯工具時，觸發暫止、繼續和背景事件。
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2018
 ms.topic: how-to
 f1_keywords:
@@ -14,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 5cbdfb443d07b01f4de6f43fb98103339566cde2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 87b2718b6cd9db5b66635ca165253bd1e93f17d5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808190"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150674"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何在 Visual Studio 中偵測 UWP 應用程式時觸發暫止、繼續和背景事件
 
 不在偵錯模式時，由 Windows **處理程序生命週期管理** (PLM) 控制您應用程式的執行狀態：啟動、暫停、繼續和終止應用程式，以便回應使用者動作和裝置的狀態。 而處於偵錯模式時，Windows 會停用這些啟用事件。 本主題說明如何在偵錯工具中引發這些事件。
 
-本主題也將說明如何對 **背景工作**偵錯。 背景工作可讓您在背景進程中執行某些作業，即使您的應用程式不在執行中也一樣。 您可以使用偵錯工具，將您的應用程式置於偵錯模式，接著無須啟動 UI，就能啟動背景工作並對其偵錯。
+本主題也將說明如何對 **背景工作** 偵錯。 背景工作可讓您在背景進程中執行某些作業，即使您的應用程式不在執行中也一樣。 您可以使用偵錯工具，將您的應用程式置於偵錯模式，接著無須啟動 UI，就能啟動背景工作並對其偵錯。
 
 如需處理程式生命週期管理和背景工作的詳細資訊，請參閱 [啟動、繼續和多](/windows/uwp/launch-resume/index)任務。
 
@@ -72,7 +74,7 @@ ms.locfileid: "90808190"
 
 2. 開啟啟始專案的偵錯屬性頁。 在 [方案總管] 中選取專案。 在 [ **偵錯** ] 功能表上，選擇 [ **屬性**]。
 
-     針對 c + + 專案，展開 [設定 **屬性** ]，然後選擇 [ **調試**程式]。
+     針對 c + + 專案，展開 [設定 **屬性** ]，然後選擇 [ **調試** 程式]。
 
 3. 執行下列其中一個動作：
 
@@ -104,7 +106,7 @@ ms.locfileid: "90808190"
 
 2. 在 [ **動作** ] 窗格中，選擇 [ **檢視** ]，並確定已勾選 [ **顯示分析與偵錯記錄檔** ]。
 
-3. 在 [ **事件檢視器 (本機)** ] 樹狀目錄中，依序展開 [ **應用程式及服務記錄檔** > **Microsoft** > **Windows** > **BackgroundTasksInfrastructure**偵錯。
+3. 在 [ **事件檢視器 (本機)** ] 樹狀目錄中，依序展開 [ **應用程式及服務記錄檔** > **Microsoft** > **Windows** > **BackgroundTasksInfrastructure** 偵錯。
 
 4. 選擇 [ **診斷** ] 記錄檔。
 

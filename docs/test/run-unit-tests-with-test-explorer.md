@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb738e0e12598fd31c51c6b3cf2fa684badae40
-ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
+ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98113592"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150505"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -377,6 +377,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 > [!NOTE]
 > 您不能在抽象類別中執行測試，因為測試只定義於抽象類別，而不會具現化。 若要在抽象類別執行測試，請建立衍生自抽象類別的類別。
 
+::: moniker range=">=vs-2019"
 ## <a name="test-audio-cue"></a>測試音訊提示
 測試執行完成時，測試瀏覽器可以播放音效。 有兩個音效：一個音效表示測試回合成功完成所有通過的測試，而第二個音效表示測試回合已完成，而且至少有一個失敗的測試。 您可以在預設的 Windows 10 音效對話方塊中設定這些音效。 這項功能從 Visual Studio 2019 Update 16.9 Preview 3 開始提供。
 
@@ -385,7 +386,8 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 3. 尋找 **Microsoft Visual Studio** 分類。 選擇 [ **測試回合成功** ] 或 [ **測試回合失敗** ] 音效，以選取預設音效或流覽至您自己的音訊檔案。  
 ![Windows 10 音效對話方塊](../test/media/default-windows-10-sound-dialog.png)
 
-## <a name="see-also"></a>請參閱
+::: moniker-end
+## <a name="see-also"></a>另請參閱
 
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)
 - [使用測試總管進行偵錯單元測試](../test/debug-unit-tests-with-test-explorer.md)

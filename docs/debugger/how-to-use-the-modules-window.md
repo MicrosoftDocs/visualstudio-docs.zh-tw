@@ -1,7 +1,8 @@
 ---
 title: 查看 Dll 和可執行檔
+description: 查看 Dll 和可執行檔 ( .exe 檔) 您的應用程式在 Visual Studio 的偵錯工具期間，在 [模組] 視窗中使用這些檔案。
+ms.custom: SEO-VS-2020, seodec18
 titleSuffix: Visual Studio Modules window
-ms.custom: seodec18
 ms.date: 11/04/2018
 ms.topic: how-to
 f1_keywords:
@@ -25,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa284a44f75503a2890a15981d2b4f9947be2fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0471aa25b14111271e6f9219e8e849eed49f113f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348674"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150557"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在 [模組] 視窗中查看 Dll 和可執行檔 (c #、c + +、Visual Basic、F # ) 
 
@@ -41,13 +42,13 @@ ms.locfileid: "85348674"
 
 ## <a name="use-the-modules-window"></a>使用 [模組] 視窗
 
-若要在您進行調試時開啟 [模組] 視窗，請選取 [ **Debug**  >  **Windows**  >  **模組** (]，或按**Ctrl + Alt + U**) 。
+若要在您進行調試時開啟 [模組] 視窗，請選取 [ **Debug**  >  **Windows**  >  **模組** (]，或按 **Ctrl + Alt + U**) 。
 
-根據預設，[模組]**** 視窗會依載入順序來排序模組。 若要依任何視窗資料行排序，請選取資料行頂端的標頭。
+根據預設，[模組] 視窗會依載入順序來排序模組。 若要依任何視窗資料行排序，請選取資料行頂端的標頭。
 
 ## <a name="load-symbols"></a>載入符號
 
-[**模組**] 視窗中的 [**符號狀態**] 欄會顯示已載入調試符號的模組。 如果已 **略過載入符號**的狀態、找 **不到或無法開啟 PDB**檔案，或 **包含/排除設定已停用載入**，您可以手動載入符號。 如需載入和使用符號的詳細資訊，請參閱 [指定符號 ( .pdb) 和原始](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)程式檔。
+[**模組**] 視窗中的 [**符號狀態**] 欄會顯示已載入調試符號的模組。 如果已 **略過載入符號** 的狀態、找 **不到或無法開啟 PDB** 檔案，或 **包含/排除設定已停用載入**，您可以手動載入符號。 如需載入和使用符號的詳細資訊，請參閱 [指定符號 ( .pdb) 和原始](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)程式檔。
 
 **手動載入符號：**
 
@@ -63,17 +64,17 @@ ms.locfileid: "85348674"
 
 **若要變更符號載入行為設定：**
 
-1. 在 [模組]**** 視窗中，以滑鼠右鍵按一下任一模組。
+1. 在 [模組] 視窗中，以滑鼠右鍵按一下任一模組。
 
 1. 選取 [ **符號設定**]。
 
 1. 選取 [ **載入所有符號**]，或選取要包含或排除的模組。
 
-1. 選取 [確定]  。 變更會在下一個調試會話中生效。
+1. 選取 [確定]。 變更會在下一個調試會話中生效。
 
 **若要變更特定模組的符號載入行為：**
 
-1. 在 [模組]**** 視窗中，以滑鼠右鍵按一下模組。
+1. 在 [模組] 視窗中，以滑鼠右鍵按一下模組。
 
 1. 在快顯功能表中，選取或取消選取 [ **一律自動載入**]。 變更會在下一個調試會話中生效。
 

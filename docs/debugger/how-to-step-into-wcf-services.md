@@ -1,5 +1,7 @@
 ---
 title: 逐步執行 WCF 服務 |Microsoft Docs
+description: 逐步執行 Windows Communication Foundation (WCF) 服務。 如果它位於與用戶端相同的 Visual Studio 方案中，請在 WCF 服務內叫用中斷點。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ca1e4d2b7e0349ea5a41c6fc66726226ecab4f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 428f5576b595797605abff2ebc5f4669e2927389
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851888"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150726"
 ---
 # <a name="how-to-step-into-wcf-services"></a>如何：逐步執行 WCF 服務
 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中，您可以逐步執行 WCF 服務。 如果 WCF 服務與用戶端都位於相同的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案，您就可以執行到達 WCF 服務內部的中斷點。
@@ -32,7 +34,7 @@ ms.locfileid: "90851888"
 
 1. 建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案，其中包含 WCF 用戶端和 WCF 服務專案。
 
-2. 在 [方案總管] 中，以滑鼠右鍵按一下 WCF 用戶端專案，然後按一下 [設定為啟始專案]****。
+2. 在 [方案總管] 中，以滑鼠右鍵按一下 WCF 用戶端專案，然後按一下 [設定為啟始專案]。
 
 3. 在 app.config 或 web.config 檔案內啟用偵錯。 如需詳細資訊，請參閱 [WCF 調試](../debugger/limitations-on-wcf-debugging.md)程式的限制。
 
@@ -42,5 +44,5 @@ ms.locfileid: "90851888"
 
 ## <a name="see-also"></a>另請參閱
 - [偵錯 WCF 服務](../debugger/debugging-wcf-services.md)
-- [WCF 偵錯的限制](../debugger/limitations-on-wcf-debugging.md)
-- [如何：將自我裝載的 WCF 服務進行調試](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [WCF 調試的限制](../debugger/limitations-on-wcf-debugging.md)
+- [如何： Self-Hosted WCF 服務的調試](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

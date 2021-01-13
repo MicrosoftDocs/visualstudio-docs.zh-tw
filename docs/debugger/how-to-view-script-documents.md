@@ -1,5 +1,7 @@
 ---
 title: 查看指令檔 |Microsoft Docs
+description: 瞭解如何使用方案總管在 Visual Studio 中查看 JavaScript 伺服器端指令檔。
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2019
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f6d60d11737cde2beebdaeeccae8e547df78853
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 91c2e1c0438ebf8fad69f985f62a976ff6710a81
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851030"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150479"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>如何： (JavaScript 查看指令檔) 
 
@@ -33,7 +35,7 @@ ms.locfileid: "90851030"
 
 ### <a name="to-view-a-server-side-script-document"></a>若要檢視伺服器端指令碼文件
 
-1. 在 **方案總管**中，開啟 **\<Website Pathname>** 節點。
+1. 在 **方案總管** 中，開啟 **\<Website Pathname>** 節點。
 
 2. 按兩下您想要檢視的指令碼檔。
 
@@ -41,7 +43,7 @@ ms.locfileid: "90851030"
 
 ### <a name="to-view-a-client-side-script-document"></a>若要檢視用戶端指令碼文件
 
-1. 在 [方案總管]**** 中，開啟 [指令碼文件]**** 節點。
+1. 在 [方案總管] 中，開啟 [指令碼文件] 節點。
 
 2. 按兩下您想要檢視的指令碼檔。
 

@@ -1,5 +1,7 @@
 ---
 title: 使用 DebuggerTypeProxy 顯示自訂類型 |Microsoft Docs
+description: 使用 DebuggerTypeProxyAttribute 的實例來指定類型的 proxy (的) ，以變更在偵錯工具視窗中顯示類型的方式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b98481cb1727ecad9289f63136291d500c0d577e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94551605581890692f8a1366fa2235811ccdc5f2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85347959"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150375"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>使用 DebuggerTypeProxy 屬性告訴偵錯工具要顯示的類型 (c #、Visual Basic、c + +/CLI) 
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute> 會指定類型的 Proxy (或替代)，並且變更在偵錯工具視窗中顯示類型的方式。 當您檢視有 Proxy 的變數時，Proxy 會替代 [顯示]**** 中的原始類型。 偵錯工具變數視窗只會顯示 proxy 型別的 Public 成員。 私用成員不會顯示。
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> 會指定類型的 Proxy (或替代)，並且變更在偵錯工具視窗中顯示類型的方式。 當您檢視有 Proxy 的變數時，Proxy 會替代 [顯示] 中的原始類型。 偵錯工具變數視窗只會顯示 proxy 型別的 Public 成員。 私用成員不會顯示。
 
 這個屬性可以套用至：
 
@@ -68,5 +70,5 @@ Visual Basic 沒有開放類型語法，因此無法在 Visual Basic 中執行�
 ## <a name="see-also"></a>另請參閱
 
 - [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)
-- [建立受控物件的自訂視圖](../debugger/create-custom-views-of-managed-objects.md)
+- [建立受控物件的自訂檢視](../debugger/create-custom-views-of-managed-objects.md)
 - [使用偵錯工具顯示屬性增強偵錯功能](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

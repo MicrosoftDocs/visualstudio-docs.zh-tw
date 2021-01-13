@@ -1,5 +1,7 @@
 ---
 title: 使用 Finder 工具 |Microsoft Docs
+description: 使用 [Spy + +] 工具的 [尋找視窗] 對話方塊中的 [Finder] 工具，在偵測會話期間顯示視窗屬性或訊息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e92223359c6bc78b2a98c234c03ee139c052f86
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 41ca277962f81b3cd1c35ebcf8a940e8168a6803
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851836"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150596"
 ---
 # <a name="how-to-use-the-finder-tool"></a>如何：使用搜尋工具
 您可以使用 [ **尋找視窗** ] 對話方塊中的 [Finder] 工具來顯示視窗屬性或訊息。 Finder 工具也可以找出已停用的子視窗，並辨別停用的子視窗是否重迭時要醒目提示哪個視窗。

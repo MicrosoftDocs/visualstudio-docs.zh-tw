@@ -1,6 +1,7 @@
 ---
 title: 在偵錯工具中使用傾印檔案 |Microsoft Docs
-ms.custom: seodec18
+description: 傾印檔案是執行中應用程式和已載入模組的快照。 如果您沒有應用程式的 debug 存取權，請考慮建立傾印檔案。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/05/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 8bcd225bb64096d8a8e58e3cffd15e7bc94bf5cc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970621"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150869"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中傾印檔案
 

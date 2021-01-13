@@ -1,5 +1,7 @@
 ---
 title: 使用 DebuggerDisplay 顯示自訂資訊 |Microsoft Docs
+description: 使用 DebuggerDisplayAttribute 的實例來控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。
+ms.custom: SEO-VS-2020
 ms.date: 01/09/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d846fd5e423ed17f7754260f169e32dbef5486b
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418778"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150752"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 屬性告訴偵錯工具要顯示的內容 (c #、Visual Basic、F #、c + +/CLI) 
 
@@ -30,7 +32,7 @@ ms.locfileid: "85418778"
 偵錯工具是否評估這個隱含 `ToString()` 呼叫取決於 [工具]/[ **選項]/[調試** 程式] 對話方塊中的使用者設定。
 
 > [!IMPORTANT]
-> 如果已在 [**工具]/[選項]/[調試**程式] 對話方塊中選取 [**在變數視窗中顯示物件的原始結構**] 核取方塊，則會 `DebuggerDisplay` 忽略屬性。
+> 如果已在 [**工具]/[選項]/[調試** 程式] 對話方塊中選取 [**在變數視窗中顯示物件的原始結構**] 核取方塊，則會 `DebuggerDisplay` 忽略屬性。
 
 > [!NOTE]
 > 若為機器碼，只有在 c + +/CLI 程式碼中才支援此屬性。
@@ -96,9 +98,9 @@ public sealed class MyClass
 ## <a name="example"></a>範例
 下列程式碼範例將示範如何使用 `DebuggerDisplay`搭配 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在偵錯工具變數視窗中檢視時 (例如 [ **監看式** ] 視窗)，它會產生類似下面所示的展開：
 
-|**名稱**|**ReplTest1**|**類型**|
+|**名稱**|**ReplTest1**|**型別**|
 |--------------|---------------|--------------|
-|Key|"three"|object {string}|
+|答案|"three"|object {string}|
 |值|3|object {int}|
 
 ```csharp
@@ -182,6 +184,6 @@ class MyHashtable
 ## <a name="see-also"></a>另請參閱
 
 - [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)
-- [建立受控物件的自訂視圖](../debugger/create-custom-views-of-managed-objects.md)
-- [C 中的格式規範#](../debugger/format-specifiers-in-csharp.md)
+- [建立受控物件的自訂檢視](../debugger/create-custom-views-of-managed-objects.md)
+- [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)
 - [使用偵錯工具顯示屬性增強偵錯功能](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

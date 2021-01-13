@@ -1,5 +1,7 @@
 ---
 title: 收集其他效能資料 | Microsoft Docs
+description: 當您想要在 Visual Studio 分析工具中收集其他效能資料時，請參閱一般工作的連結。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -8,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4201895fd93d3fa3a9ccb9072382432d6f6e02be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8dd95a9fbf4cba0841488132e3c2ab84f4f6385
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779697"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150401"
 ---
 # <a name="collect-additional-performance-data"></a>收集其他效能資料
 

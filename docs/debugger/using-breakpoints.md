@@ -1,6 +1,7 @@
 ---
 title: 在偵錯工具中使用中斷點 |Microsoft Docs
-ms.custom: ''
+description: 瞭解中斷點，這是其中一個最重要的調試技術。 本文涵蓋中斷點動作、追蹤點、條件及其他更多專案。
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2020
 ms.topic: how-to
 f1_keywords:
@@ -34,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c95749d5d7e2909fbff6da0a3a45bc36cd73c6
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c8487482b1d87ba87dfc3a8b1e07be1360227a2f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729323"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150440"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中使用中斷點
 
@@ -317,7 +318,7 @@ ms.locfileid: "97729323"
 
 2. 在 [反組 **解碼] 視窗** 中，按一下您要中斷之指令的左邊界。 您也可以選取它，然後按 **F9** 鍵，或按一下滑鼠右鍵並選取 [**中斷點**  >  **插入中斷點**]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [什麼是偵錯？](../debugger/what-is-debugging.md)
 - [使用 Visual Studio 撰寫更好的 c # 程式碼](../debugger/write-better-code-with-visual-studio.md)

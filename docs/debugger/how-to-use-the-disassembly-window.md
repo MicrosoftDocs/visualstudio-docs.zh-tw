@@ -1,6 +1,7 @@
 ---
 title: 在偵錯工具中查看反組解碼程式碼 |Microsoft Docs
-ms.custom: seodec18
+description: 使用 Visual Studio 中的 [反組解碼] 視窗，顯示對應于編譯器所建立之指令的元件程式碼。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/30/2018
 ms.topic: how-to
 f1_keywords:
@@ -22,23 +23,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23f297aa3fc549714a9b6327232a8a0b69c6138f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 733eb439808d6cab2d290615751cf44ccd711022
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808164"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150609"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 偵錯工具中查看反組解碼程式碼 (c #、c + +、Visual Basic、F # ) 
 
-[反組譯碼]**** 視窗會顯示對應到編譯器所建立之指令的組譯程式碼。 如果您要對 managed 程式碼進行偵錯工具，這些元件指令會對應至即時 (JIT) 編譯器所建立的機器碼，而不是由 Visual Studio 編譯器所建立的 Microsoft 中繼語言 (MSIL) 。
+[反組譯碼] 視窗會顯示對應到編譯器所建立之指令的組譯程式碼。 如果您要對 managed 程式碼進行偵錯工具，這些元件指令會對應至即時 (JIT) 編譯器所建立的機器碼，而不是由 Visual Studio 編譯器所建立的 Microsoft 中繼語言 (MSIL) 。
 
 > [!NOTE]
 > 若要充分 **利用 [反** 組解碼] 視窗，請瞭解或學習 [元件語言程式設計](https://wikipedia.org/wiki/Assembly_language)的基本概念。
 
 只有在啟用位址層級的偵錯工具時，才能使用這項功能。 它不適用於腳本或 SQL 的偵錯工具。
 
-除了反組譯碼指令外，[反組譯碼]**** 視窗也可以顯示下列選擇性資訊：
+除了反組譯碼指令外，[反組譯碼] 視窗也可以顯示下列選擇性資訊：
 
 - 每一指令所在的記憶體位址。 針對原生應用程式，它是實際的記憶體位址。 針對 Visual Basic 或 c #，它是從函式開頭算起的位移。
 
@@ -52,18 +53,18 @@ ms.locfileid: "90808164"
 
 組合語言指令包含 *助憶鍵*，其為指令名稱的縮寫，以及變數、暫存器和常數的 *符號* 。 每個機器語言指令都是以一個組合語言助憶鍵表示，並在後面加上一或多個符號。
 
-元件程式碼高度依賴處理器暫存器，或適用于 managed 程式碼的 common language runtime 註冊。 您可以**使用 [反**組解碼] 視窗和 [暫存器 **] 視窗，** 讓您檢查暫存器內容。
+元件程式碼高度依賴處理器暫存器，或適用于 managed 程式碼的 common language runtime 註冊。 您可以 **使用 [反** 組解碼] 視窗和 [暫存器 **] 視窗，** 讓您檢查暫存器內容。
 
-若要以原始數值形式來查看電腦程式代碼指令，而不是使用組合語言，請使用 [**記憶體**] 視窗，或從 [反組解碼 **] 視窗**的快捷方式功能表中選取 [程式**代碼位元組**]。
+若要以原始數值形式來查看電腦程式代碼指令，而不是使用組合語言，請使用 [**記憶體**] 視窗，或從 [反組解碼 **] 視窗** 的快捷方式功能表中選取 [程式 **代碼位元組**]。
 
 ## <a name="use-the-disassembly-window"></a>使用反組譯碼視窗
 
-若要啟用 **[反**組解碼] 視窗，請在 [**工具**  >  **選項**  >  **調試**] 底下，選取 [**啟用位址層級的調試**
+若要啟用 **[反** 組解碼] 視窗，請在 [**工具**  >  **選項**  >  **調試**] 底下，選取 [**啟用位址層級的調試**
 
-若**要在調試期間開啟 [反**組解碼] 視窗，請選取 [ **Windows**反組解碼]  >  **Disassembly**或按**Alt** + **8**
+若 **要在調試期間開啟 [反** 組解碼] 視窗，請選取 [ **Windows** 反組解碼]  >  或按 **Alt** + **8**
 
 > [!NOTE]
-> 您看到的對話方塊與功能表命令，可能會因您所使用的設定或版本，而與說明中所述不同。 若要變更您的設定，請在 [工具]**** 功能表上選擇 [匯入和匯出設定]****。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
+> 您看到的對話方塊與功能表命令，可能會因您所使用的設定或版本，而與說明中所述不同。 若要變更您的設定，請在 [工具] 功能表上選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
 若要開啟或關閉選擇性資訊，請在 [反組 **解碼] 視窗** 上按一下滑鼠右鍵，然後在快捷方式功能表中設定或清除所需的選項。
 

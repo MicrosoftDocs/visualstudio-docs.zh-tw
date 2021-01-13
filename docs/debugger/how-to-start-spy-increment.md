@@ -1,5 +1,7 @@
 ---
 title: 啟動 Spy + + |Microsoft Docs
+description: 瞭解如何從 Visual Studio 啟動 Spy + + 工具，或在您想要將方案進行偵測時，于命令提示字元上啟動。
+ms.custom: SEO-VS-2020
 ms.date: 12/16/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7743d36671e1c651b9bcfa89b315399c0696e26d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 79796ec8984f9baee1d6b3e6c760d41297d70701
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851901"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150687"
 ---
 # <a name="how-to-start-spy"></a>如何：啟動 Spy++
 

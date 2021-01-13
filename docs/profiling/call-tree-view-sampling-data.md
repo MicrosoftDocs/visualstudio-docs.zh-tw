@@ -1,5 +1,7 @@
 ---
 title: 呼叫樹狀圖檢視 - 取樣資料 | Microsoft Docs
+description: 閱讀 [呼叫樹狀檢視] 如何顯示效能總管中已分析之應用程式中所執行之函式執行路徑的取樣資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 558cef408ceca48a55563ae31f2399da0e951b8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fc7493d20d09ebd606e3a6ec8e5271981fb6f62
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779749"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150518"
 ---
 # <a name="call-tree-view---sampling-data"></a>呼叫樹狀圖檢視 - 取樣資料
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。
@@ -33,11 +35,11 @@ ms.locfileid: "74779749"
  [呼叫樹狀圖] 檢視可以展開並反白顯示最常取樣的處理序或函式的執行路徑。 若要顯示最常使用的路徑，請以滑鼠右鍵按一下進程或函式，然後按一下 [展開最忙碌 **路徑**]。
 
 ## <a name="set-the-call-tree-root-node"></a>設定呼叫樹狀圖根節點
- 分析執行中的每個處理序都會顯示為根節點。 若要設定 [呼叫樹狀圖] 檢視的開始節點，請以滑鼠右鍵按一下您想要設定為開始節點的節點，然後選取 [設定根目錄]****。
+ 分析執行中的每個處理序都會顯示為根節點。 若要設定 [呼叫樹狀圖] 檢視的開始節點，請以滑鼠右鍵按一下您想要設定為開始節點的節點，然後選取 [設定根目錄]。
 
- 設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 若要將根節點重設回原始節點，請在 [呼叫樹狀圖檢視] 視窗上按一下滑鼠右鍵，然後選取 [重設根目錄]****。
+ 設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 若要將根節點重設回原始節點，請在 [呼叫樹狀圖檢視] 視窗上按一下滑鼠右鍵，然後選取 [重設根目錄]。
 
-|資料行|描述|
+|Column|描述|
 |------------|-----------------|
 |**處理序識別碼**|分析執行的處理序 ID (PID)。|
 |**進程名稱**|處理序的名稱。|

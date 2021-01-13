@@ -1,5 +1,7 @@
 ---
 title: 測試和偵測視覺化檢視 |Microsoft Docs
+description: 藉由從測試驅動程式 (視覺化程式開發主機) 或在 Visual Studio 中安裝並從偵錯工具視窗呼叫，來測試和偵測視覺化檢視。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,19 +19,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df45b1f81430e733d6116768bf7c8823911ead59
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1326fe9731a9d938678eb9397b106ab9e71b4fd5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851862"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150661"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>如何：測試和偵錯視覺化檢視
 當您撰寫完視覺化檢視之後，必須對其進行偵錯和測試。
 
 測試視覺化檢視的其中一種方法，是將它安裝在 Visual Studio，並從偵錯工具視窗中呼叫它   (請參閱 [如何：安裝視覺化](../debugger/how-to-install-a-visualizer.md)程式。 ) 如果這樣做，您將需要使用 Visual Studio 的第二個實例來附加和偵測在偵錯工具的第一個實例中執行的視覺化檢視。
 
-對視覺化檢視進行偵錯的簡單方法，是從測試驅動程式中執行該視覺化檢視。 視覺化檢視的 API 能夠輕易建立這種驅動程式，也就是所謂的「視覺化檢視開發主應用程式」**。
+對視覺化檢視進行偵錯的簡單方法，是從測試驅動程式中執行該視覺化檢視。 視覺化檢視的 API 能夠輕易建立這種驅動程式，也就是所謂的「視覺化檢視開發主應用程式」。
 
 ### <a name="to-create-a-visualizer-development-host"></a>若要建立視覺化檢視開發主應用程式
 

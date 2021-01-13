@@ -1,5 +1,7 @@
 ---
 title: '使用 [編輯後繼續] (c # ) |Microsoft Docs'
+description: 在進行偵錯工具時，您可以使用 [編輯後繼續] 來進行程式碼的變更，並將變更套用到中斷模式，而不需在 Visual Studio 中停止再重新開機。
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18d11f552d486fd9ebd7a95323e327324de14108
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a0f8126689c0874c984a679da9b6debcb66a3075
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851849"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150648"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>如何：使用編輯後繼續 (C#)
 您可以使用 [編輯後繼續]，在進行偵錯工具時，對程式碼進行變更並套用變更，而不需要停止和重新開機偵錯工具會話。
 
-當您在中斷模式中進行程式碼變更時，c # 的 [編輯後繼續] 會自動發生，然後使用 **continue**、 **Step**或 **Set Next 語句**繼續進行偵錯工具，或在偵錯工具視窗中評估函數。
+當您在中斷模式中進行程式碼變更時，c # 的 [編輯後繼續] 會自動發生，然後使用 **continue**、 **Step** 或 **Set Next 語句** 繼續進行偵錯工具，或在偵錯工具視窗中評估函數。
 
 如需詳細資訊，請參閱 [ (Visual c # ) ](../debugger/edit-and-continue-visual-csharp.md)的 [編輯後繼續]。
 
@@ -34,9 +36,9 @@ ms.locfileid: "90851849"
 
 **若要啟用或停用 [編輯後繼續]：**
 
-1. 如果您是在調試進程中，請停止調試 (**Debug**  >  **停止調試**或**Shift** + **F5**) 。
+1. 如果您是在調試進程中，請停止調試 (**Debug**  >  **停止調試** 或 **Shift** + **F5**) 。
 
-1. 在 [**工具**  >  **選項**] (或 [**調試**  >  **選項**]) > 的**Debugging**  >  **[一般**] 檢查，請選取或清除 [**啟用編輯後繼續**] 核取方塊。
+1. 在 [**工具**  >  **選項**] (或 [**調試**  >  **選項**]) > 的  >  **[一般**] 檢查，請選取或清除 [**啟用編輯後繼續**] 核取方塊。
 
 當您啟動或重新開機調試過程時，此設定就會生效。
 

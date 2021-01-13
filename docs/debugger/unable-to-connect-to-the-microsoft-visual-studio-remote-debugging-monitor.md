@@ -1,5 +1,7 @@
 ---
 title: Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
+description: 瞭解「無法連線至 Microsoft Visual Studio 遠端偵錯監視」的意義、可能的原因和解決方案。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/14/2020
 ms.topic: reference
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1863caeaa3d3b0457d89913186337fa74ad5d8de
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: dc34a5f58f8bc3c47526cc8ba8516311e94f0631
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852240"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150830"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 此訊息可能是因為遠端電腦上的遠端偵錯程式未正確設定，或遠端電腦因為網路問題或防火牆的存在而無法存取而發生。
@@ -52,7 +54,7 @@ ms.locfileid: "90852240"
     `computername:port`
 
     > [!NOTE]
-    > 埠號碼必須符合*必須*在目的電腦上執行之[遠端偵錯程式的埠號碼](../debugger/remote-debugger-port-assignments.md)。
+    > 埠號碼必須符合 *必須* 在目的電腦上執行之 [遠端偵錯程式的埠號碼](../debugger/remote-debugger-port-assignments.md)。
 
 2. 如果電腦名稱稱無法運作，請改為嘗試 IP 位址和埠號碼。
 
@@ -71,7 +73,7 @@ ms.locfileid: "90852240"
 
 ## <a name="connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a> 已終止與遠端端點的連接
 
-如果您正在進行 Azure App Service 應用程式的偵錯工具，請嘗試從 Cloud Explorer 或伺服器總管（而不是**附加至進程**）使用 [[附加偵錯工具](../debugger/remote-debugging-azure.md#remote_debug_azure_app_service)] 命令。
+如果您正在進行 Azure App Service 應用程式的偵錯工具，請嘗試從 Cloud Explorer 或伺服器總管（而不是 **附加至進程**）使用 [[附加偵錯工具](../debugger/remote-debugging-azure.md#remote_debug_azure_app_service)] 命令。
 
 如果您使用 **附加至進程** 以進行偵錯工具：
 
@@ -153,9 +155,9 @@ Visual Studio 無法連接到遠端偵錯程式。 此訊息可能有數種原�
     > [!NOTE]
     > 如果您是在遠端伺服器上執行遠端偵錯程式，請在遠端偵錯程式應用程式上按一下滑鼠右鍵，然後選擇 [ **以系統管理員身分執行** ] (或，您可以) 的服務執行遠端偵錯程式。 如果您不是在遠端伺服器上執行，只要正常啟動即可。
 
-- 您可以從命令列使用 **/allow \<username> **參數啟動遠端偵錯程式： `msvsmon /allow <username@computer>` 。
+- 您可以從命令列使用 **/allow \<username>** 參數啟動遠端偵錯程式： `msvsmon /allow <username@computer>` 。
 
-- 或者，您可以允許任何使用者進行遠端偵錯。 在遠端偵錯工具視窗中，移至 [工具] > [選項]**** 對話方塊。 當您選取 [無驗證]   **** 時，可以接著選取 [允許任何使用者執行偵錯] ****。 不過，您應該只在其他選項失敗或在私人網路上時，才嘗試此選項。
+- 或者，您可以允許任何使用者進行遠端偵錯。 在遠端偵錯工具視窗中，移至 [工具] > [選項] 對話方塊。 當您選取 [無驗證]   時，可以接著選取 [允許任何使用者執行偵錯] 。 不過，您應該只在其他選項失敗或在私人網路上時，才嘗試此選項。
 
 ### <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a><a name="firewall"></a> 遠端電腦上的防火牆不允許連入遠端偵錯程式的連接
  Visual Studio 電腦上的防火牆和遠端電腦上的防火牆必須設定為允許 Visual Studio 和遠端偵錯工具之間的通訊。 如需遠端偵錯工具所用連接埠的相關資訊，請參閱 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。 如需設定 Windows 防火牆的相關資訊，請參閱 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。
