@@ -1,5 +1,7 @@
 ---
 title: Spy + + 說明 |Microsoft Docs
+description: 使用 Spy + + 和 Spy + + views 來查看連結。 請參閱參考連結，以提供每個可用的 Spy + + 功能表命令和對話方塊的詳細資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118096d536b9a4db50568ab138cd4695e1f3dcbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f5e9caecb6d5ae2023bce9c1ef2ea0d73c66be3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929795"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148022"
 ---
 # <a name="spy-help"></a>Spy++ 說明
 Spy + + 公用程式的檔包含兩組有關使用 Spy + + 和 Spy + + Views 的一般主題。 這些後面接著 Spy + + 參考，可在每個可用的功能表命令和對話方塊中提供進一步的詳細資料。

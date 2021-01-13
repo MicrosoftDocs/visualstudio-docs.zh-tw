@@ -1,6 +1,7 @@
 ---
 title: 在變數上設定監看式 |Microsoft Docs
-ms.custom: seodec18
+description: 當您進行調試時，請參閱 Watch 和快速監看式中的變數和運算式。 Watch 可以顯示數個變數、只快速監看式，而且只在中斷時才顯示。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/11/2018
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e2a05fe84b023a60ef75f0cb262a08fc02587a
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: d13ee6163ebe8cf0f706cbe95e7451c2ebc7c411
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727420"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149478"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>使用監看式視窗和快速監看變數
 
@@ -69,7 +70,7 @@ int main()
 
 1. 在 [ **監看** 式] 視窗中，選取空白資料列，然後輸入 variable `a` 。 對和進行相同的動作 `b` `c` 。
 
-   ![監看變數](../debugger/media/watchvariables.png "WatchVariables")
+   ![監看式變數](../debugger/media/watchvariables.png "WatchVariables")
 
 1. 依需要選取 [ **Debug**  >  **Step** ] 或按 **F11** 鍵來繼續進行偵錯工具。 當您逐一查看迴圈時，[ **監看** 式] 視窗中的變數值會變更 `for` 。
 
@@ -303,7 +304,7 @@ static void Main(string[] args)
 
 1. 繼續偵錯。 您可以觀察 [ **監看** 式] 視窗中的變數。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [什麼是偵錯？](../debugger/what-is-debugging.md)
 - [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)
 - [先查看調試](../debugger/debugger-feature-tour.md)

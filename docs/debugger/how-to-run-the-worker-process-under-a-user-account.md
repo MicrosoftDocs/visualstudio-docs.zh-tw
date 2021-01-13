@@ -1,6 +1,7 @@
 ---
 title: 在使用者帳戶下執行背景工作進程 |Microsoft Docs
-ms.custom: seodec18
+description: '設定您的電腦，讓您可以在 Visual Studio 中的使用者帳戶下執行 ASP.NET worker 進程 ( # A0 或 w3wp.exe) 。'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac5bee0ffa05aa275782c57fc9b7b1c369bf65d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24dc3be78534610492dfada954f74a883808b40b
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349402"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148685"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在使用者帳戶下執行背景工作處理序
 若要設定電腦以便在某個使用者帳戶下執行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序 (aspnet_wp.exe 或 w3wp.exe)，請依照下列步驟執行。
@@ -68,7 +69,7 @@ ms.locfileid: "85349402"
    net start w3svc
    ```
 
-6. 找出 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 資料夾，它應該與 CONFIG 資料夾位於相同的路徑中。 以滑鼠右鍵按一下 [Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files] 資料夾，然後選擇捷徑功能表上的 [屬性] **** 。
+6. 找出 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 資料夾，它應該與 CONFIG 資料夾位於相同的路徑中。 以滑鼠右鍵按一下 [Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files] 資料夾，然後選擇捷徑功能表上的 [屬性]  。
 
 7. 在 [ **暫存 ASP.NET 檔案屬性** ] 對話方塊內，按一下 [ **安全性** ] 索引標籤。
 

@@ -1,5 +1,7 @@
 ---
 title: 設定 debug 和 release 設定 |Microsoft Docs
+description: 在 Visual Studio 中設定 debug 和 release 設定。 您會建立偵錯工具的偵錯工具版本，以及最終發行版本散發的發行版本。
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: how-to
 f1_keywords:
@@ -31,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 51237a9b73825620c77c7f2a10ad1efe367cdd37
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599903"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149543"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>在 Visual Studio 中設定偵錯和發行組態
 
@@ -48,7 +50,7 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 
 如需組建組態的詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)。
 
-您可以從 [建置]**** 功能表、從工具列，或在專案的屬性頁中變更組建組態。 專案屬性頁因語言而異。 下列程序示範如何從功能表和工具列變更組建組態。 如需有關如何以不同語言變更專案中之組建設定的詳細資訊，請參閱下面的「另 [請參閱](#see-also) 」一節。
+您可以從 [建置] 功能表、從工具列，或在專案的屬性頁中變更組建組態。 專案屬性頁因語言而異。 下列程序示範如何從功能表和工具列變更組建組態。 如需有關如何以不同語言變更專案中之組建設定的詳細資訊，請參閱下面的「另 [請參閱](#see-also) 」一節。
 
 ## <a name="change-the-build-configuration"></a>變更組建設定
 
@@ -58,7 +60,7 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 
 或
 
-* 在工具列的 [解決方案組態]**** 清單中，選擇 [偵錯]**** 或 [發行]****。
+* 在工具列的 [解決方案組態] 清單中，選擇 [偵錯] 或 [發行]。
 
   ![工具列組建設定](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
@@ -103,11 +105,11 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 
 3. 在 [設定 **] 清單中，選擇 [** **Debug** ] 或 [ **發行**]。
 
-4. 在側邊窗格中，選擇 [ **連結器 > 的調試**程式]，然後選取 [ **產生偵錯工具資訊**的選項]。
+4. 在側邊窗格中，選擇 [ **連結器 > 的調試** 程式]，然後選取 [ **產生偵錯工具資訊** 的選項]。
 
    如需 c + + 中的 debug 設定之專案設定的詳細資訊，請參閱 [c + + 偵錯工具的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)。
 
-5. 設定 **產生程式資料庫**檔案的選項。
+5. 設定 **產生程式資料庫** 檔案的選項。
 
    在大部分的 c + + 專案中，預設值是 `$(OutDir)$(TargetName).pdb` ，它會在輸出檔案夾中產生 .pdb 檔。
 
@@ -120,8 +122,8 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 ## <a name="see-also"></a><a name="see-also"></a>另請參閱
 
 - [在 Visual Studio 偵錯工具中指定 ( .pdb) 檔案和原始程式檔的符號](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
-- [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)<br/>
-- [C + + 偵錯工具設定的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
+- [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)<br/>
+- [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
 - [C # 偵錯工具設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
-- [Visual Basic debug 設定的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
+- [Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
 - [如何：建立和編輯設定](../ide/how-to-create-and-edit-configurations.md)

@@ -1,5 +1,7 @@
 ---
 title: 在字串視覺化中查看字串 |Microsoft Docs
+description: 使用 Visual Studio 偵錯工具中的字串視覺化程式來查看文字字串、XML、HTML 和 JSON。 您可以查看其他物件類型，包括資料集和 DataTable。
+ms.custom: SEO-VS-2020
 ms.date: 04/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33e1cbd4b1c754498d7e2bd6c354e874ae8cdad5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d13e5f5c3ee5a82a56dd8c98fa37e3e13e5169d5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72450390"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149933"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>在 Visual Studio 的字串視覺化中查看字串
 
 當您在 Visual Studio 中進行調試時，您可以使用內建的字串視覺化檢視來查看字串。 字串視覺化檢視會顯示對資料提示或偵錯工具視窗而言太長的字串。 它也可以協助您識別格式錯誤的字串。
 
-內建的字串視覺化檢視包含純文字、XML、HTML 和 JSON 選項。 您也可以從自動變數或其他偵錯工具視窗，開啟一些其他**類型的內**建視覺化檢視，例如[資料集、DataTable 和 DataView](../debugger/dataset-visualizer-dialog-box.md)物件。
+內建的字串視覺化檢視包含純文字、XML、HTML 和 JSON 選項。 您也可以從自動變數或其他偵錯工具視窗，開啟一些其他 **類型的內** 建視覺化檢視，例如 [資料集、DataTable 和 DataView](../debugger/dataset-visualizer-dialog-box.md)物件。
 
 > [!NOTE]
 > 如果您需要在視覺化檢視中檢查 XAML 或 WPF UI 元素，請參閱或在 [調試過程中檢查 xaml 屬性](../xaml-tools/inspect-xaml-properties-while-debugging.md) ，或是 [如何使用 WPF 樹狀結構視覺化檢視](../debugger/how-to-use-the-wpf-tree-visualizer.md)。
@@ -44,7 +46,7 @@ ms.locfileid: "72450390"
 
 空白 **值** 表示選擇的視覺化程式無法辨識字串。 例如， **Xml 視覺化檢視** 會顯示沒有 XML 標記之文字字串的空白 **值** ，或 JSON 字串。
 
-若要查看所選的視覺化程式無法辨識的字串，請選擇 **文字視覺化檢視**。 **文字視覺化檢視**會顯示純文字。
+若要查看所選的視覺化程式無法辨識的字串，請選擇 **文字視覺化檢視**。 **文字視覺化檢視** 會顯示純文字。
 
 ### <a name="view-json-string-data"></a>查看 JSON 字串資料
 

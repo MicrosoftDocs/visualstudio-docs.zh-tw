@@ -1,5 +1,6 @@
 ---
 title: Profiler 命令列-取得服務的並行資料
+description: 使用 Visual Studio 分析工具的並行方法收集資源爭用資料和執行緒活動資料。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e2a12afd4374eef4607edef3854e96ac0fdcdf7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3b4d65490c0ae75c7ab17fd7764d499cb39824f7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811158"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148308"
 ---
 # <a name="collect-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>使用分析工具命令列收集服務的並行資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的並行方法可讓您收集資源爭用資料和執行緒活動資料，顯示 CPU 使用率、執行緒爭用、執行緒移轉、同步處理延遲、重疊 IO 區域 和其他系統事件。
@@ -25,7 +26,7 @@ ms.locfileid: "90811158"
 
 ## <a name="common-tasks"></a>常見工作
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**附加至執行中的 .NET 服務**|-   [如何：將分析工具附加至 .NET 服務以收集並行資料](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)|
 |**新增階層互動資料**|-   [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
@@ -35,7 +36,7 @@ ms.locfileid: "90811158"
 
 ### <a name="profile-windows-services"></a>分析 Windows 服務
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**使用取樣方法進行分析**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|
 |**使用檢測方法進行分析**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
@@ -43,7 +44,7 @@ ms.locfileid: "90811158"
 
 ### <a name="profile-concurrency-data"></a>分析並行資料
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**分析獨立應用程式**|-   [收集並行資料](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 |**分析 ASP.NET Web 應用程式**|-   [收集並行資料](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
@@ -53,5 +54,5 @@ ms.locfileid: "90811158"
 
 - [並行視覺化檢視](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>參考
+## <a name="reference"></a>參考資料
 - [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)

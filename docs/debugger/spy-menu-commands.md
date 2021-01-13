@@ -1,5 +1,7 @@
 ---
 title: Spy 功能表命令 |Microsoft Docs
+description: 探索 Spy 功能表，此功能表提供使用 Spy + + 視窗和 views 的命令。 可用的命令包括 Windows、進程、執行緒、記錄訊息和尋找視窗。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 036a99fc0f25f2302c82d043fa20cf6e35687668
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c737bef539e541d1dc1e130eb0c9dedb3e00f2c4
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929748"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148126"
 ---
 # <a name="spy-menu-commands"></a>Spy 功能表命令
-**Spy**功能表提供使用 spy + + 視窗和 views 的命令。
+**Spy** 功能表提供使用 spy + + 視窗和 views 的命令。
 
  **Windows** 開啟新的 Windows view。
 
@@ -30,4 +32,4 @@ ms.locfileid: "62929748"
 
  **尋找視窗** 顯示 [ **FindWindow** ] 對話方塊，以使用滑鼠來選取視窗。
 
- **Exit**結束關閉 Spy + + 公用程式。
+ 結束關閉 Spy + + 公用程式。

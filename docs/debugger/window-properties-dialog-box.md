@@ -1,5 +1,7 @@
 ---
 title: 視窗屬性對話方塊 |Microsoft Docs
+description: 瞭解如何顯示 Windows View 中所列視窗的屬性。 本文提供記錄屬性之其他文章的連結。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bd6c8a7f3b07cdd0667ae8d2c33aeb96d6d7679
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929219"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149218"
 ---
 # <a name="window-properties-dialog-box"></a>視窗屬性對話方塊
 使用此對話方塊可深入瞭解特定視窗。 若要顯示此對話方塊，請將焦點移至 [Windows View](../debugger/windows-view.md) 視窗。 選取樹狀結構中的任何視窗節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。

@@ -1,5 +1,7 @@
 ---
 title: 視覺化檢視安全性考慮 |Microsoft Docs
+description: Visual Studio 偵錯工具的視覺化程式必須以完全信任的方式執行。 當您撰寫自己的時，請留意可能的安全性威脅，並採取適當的預防措施。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2db18a1443b0c4faaa288a887a22d935d243f678
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187155"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149738"
 ---
 # <a name="visualizer-security-considerations"></a>視覺化檢視安全性考量
 撰寫視覺化檢視必須承擔可能的安全性威脅。 這些潛在的威脅目前沒有已知的傷害行為，但開發人員仍應暸解這些威脅，並採取本節中所說明的適當安全性考量，以對抗未來的威脅傷害。
@@ -38,7 +40,7 @@ ms.locfileid: "73187155"
  若要減輕這項弱點，請留意視覺化檢視所公開的介面。
 
 ## <a name="see-also"></a>另請參閱
-- [視覺化檢視架構](../debugger/visualizer-architecture.md)
+- [視覺化架構](../debugger/visualizer-architecture.md)
 - [如何：撰寫視覺化檢視](create-custom-visualizers-of-data.md)
 - [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)
 - [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

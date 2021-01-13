@@ -1,5 +1,7 @@
 ---
 title: 符號載入資訊對話方塊 |Microsoft Docs
+description: 查看 [符號載入資訊] 對話方塊，當您以滑鼠右鍵按一下 [模組] 視窗並選擇 [符號載入資訊] 時，就會在 Visual Studio 偵錯工具中開啟此對話方塊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bc7a795d45caf712b837f7d59e3ce6a0f9c8aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2412aeade894b32ce3c42855ecf3f3dacf9bc16
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729003"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149140"
 ---
 # <a name="symbol-load-information-dialog-box"></a>符號載入資訊對話方塊
-當您以滑鼠右鍵按一下 [模組]**** 視窗並選擇 [符號載入資訊]**** 時，[符號載入資訊]**** 對話方塊隨即開啟。
+當您以滑鼠右鍵按一下 [模組] 視窗並選擇 [符號載入資訊] 時，[符號載入資訊] 對話方塊隨即開啟。
 
 ## <a name="uielement-list"></a>UIElement 清單
  **資訊** 根據您在 [ **選項** ] 對話方塊中對符號設定所做的 Visual Studio 安裝設定和變更，顯示針對符號檔 (PDB 檔搜尋的目錄) 。

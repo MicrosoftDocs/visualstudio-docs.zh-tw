@@ -1,5 +1,7 @@
 ---
 title: 執行緒視圖 |Microsoft Docs
+description: 瞭解 Spy + + 調試工具中的執行緒。 [執行緒] 視圖是與您系統上的 windows 相關聯之所有線程的一般清單。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 356db0f3ad8308edae2910e060b5b08731f9aabb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929951"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150206"
 ---
 # <a name="threads-view"></a>執行緒檢視
 [執行緒] 視圖是與您系統上的 windows 相關聯之所有線程的一般清單。 會顯示每個執行緒的執行緒識別碼和模組名稱。 進程不包含在內，但您可以輕鬆地找到擁有所選執行緒的進程。

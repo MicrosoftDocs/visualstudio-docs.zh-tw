@@ -1,6 +1,7 @@
 ---
 title: Windows Form 的調試 |Microsoft Docs
-ms.custom: seodec18
+description: '遵循逐步解說來瞭解如何建立和偵測 Windows Form （一般受控應用程式）。 您可以使用 c #、Visual Basic、c + + 或 F #。'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cec7b9bc2c56e16d1a5d59701d0953797ae00f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 31c1bc9e65eb63877d8f8a42902d8ec47a61fd22
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599476"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148087"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>逐步解說：偵錯 Windows Form
 Windows Form 是其中一個最常見的 managed 應用程式。 Windows Form 會建立標準的 Windows 應用程式。 您可以使用 Visual Basic、c # 或 c + + 來完成此逐步解說。
@@ -56,7 +57,7 @@ Windows Form 是其中一個最常見的 managed 應用程式。 Windows Form �
 
 3. 在 [ **名稱** ] 方塊中，為專案指定唯一的名稱 (例如 Walkthrough_SimpleDebug) 。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定]。
 
      Visual Studio 會建立新的專案，並在 Windows Forms 設計工具中顯示新的表單。 如需詳細資訊，請參閱 [Windows Form 設計工具](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\))。
 
@@ -86,7 +87,7 @@ Windows Form 是其中一個最常見的 managed 應用程式。 Windows Form �
     textBox1->Text = "Button was clicked!";
     ```
 
-11. 在 [建置]**** 功能表上，選取 [建置方案]****。
+11. 在 [建置] 功能表上，選取 [建置方案]。
 
      專案應該會建置而無錯誤。
 
@@ -130,7 +131,7 @@ Windows Form 是其中一個最常見的 managed 應用程式。 Windows Form �
 
     `""`
 
-6. 在 [偵錯]**** 功能表上，選擇 [逐步執行]****。
+6. 在 [偵錯] 功能表上，選擇 [逐步執行]。
 
      TextBox1 的值。 **Watch1** 視窗中的 Text 變更為：
 
@@ -146,7 +147,7 @@ Windows Form 是其中一個最常見的 managed 應用程式。 Windows Form �
 
      這會從您的程式碼中移除中斷點。
 
-10. 在 [偵錯]**** 功能表中，選擇 [停止偵錯]****。
+10. 在 [偵錯] 功能表中，選擇 [停止偵錯]。
 
 ## <a name="attach-to-your-windows-form-application-for-debugging"></a>附加至 Windows Form 應用程式以進行偵錯工具
  在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 中，您可以將偵錯工具附加至執行中的處理序。 如果您使用 Express Edition，則不支援此功能。
@@ -173,7 +174,7 @@ Windows Form 是其中一個最常見的 managed 應用程式。 Windows Form �
 
 3. 在 [ **調試** 程式] 功能表上，選取 [ **附加至進程**]。  (此命令也可在 [ **工具** ] 功能表上使用。 ) 
 
-     [附加至處理序] **** 對話方塊隨即出現。
+     [附加至處理序]  對話方塊隨即出現。
 
 4. 在 [ **可用的進程** ] 窗格中，于 [ **處理** ] 資料行中尋找 ( # A0) 的進程名稱，然後按一下它。
 

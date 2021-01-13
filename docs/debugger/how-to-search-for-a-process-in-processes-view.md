@@ -1,5 +1,7 @@
 ---
 title: 在進程視圖中搜尋進程 |Microsoft Docs
+description: 在 [Spy + +] 工具的 [進程] 視圖中搜尋特定進程，方法是在 Visual Studio 中的偵錯工具時，使用其處理序識別碼或模組字串做為搜尋準則。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b94a052f7cb50df676140b45a43f49b92283903
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2f6c51276bea76fe77455d13e011aa85efa8f6fd
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851992"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148555"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在處理序檢視中搜尋處理序
 您可以使用處理序識別碼或模組字串做為搜尋準則，在進程視圖中搜尋特定的進程。 您也可以指定搜尋的初始方向。 對話方塊中的欄位會在進程樹狀結構中顯示所選進程的屬性。

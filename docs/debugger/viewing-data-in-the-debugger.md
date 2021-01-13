@@ -1,5 +1,7 @@
 ---
 title: 在偵錯工具中建立資料的自訂視圖 |Microsoft Docs
+description: 瞭解在 Visual Studio 偵錯工具中檢查和修改程式狀態的各種方式。 這些包括自動變數和監看式視窗、資料提示和視覺化檢視。
+ms.custom: SEO-VS-2020
 ms.date: 01/09/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63dc11736e92013719fcda2bae0ba9599a8835aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5acac83a6d461f6b7301ff2bfe89d92dc78d00ee
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72568998"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149907"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>在 Visual Studio 偵錯工具中建立資料的自訂資料檢視 (c #、Visual Basic、c + +) 
 
@@ -36,7 +38,7 @@ ms.locfileid: "72568998"
 
 ## <a name="create-custom-visualizers"></a>建立自訂視覺化檢視
 
- 視覺化程式可讓您以有意義的方式來查看物件或變數的內容。 在 Visual Studio 偵錯工具中，視覺化程式是指您可以使用放大鏡 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示") 圖示來開啟的不同視窗。 例如，HTML 視覺化程式會顯示 HTML 字串在瀏覽器中的解讀和顯示方式。 您可以從 [資料**提示]、** [**監看**式] 視窗、[自動**變數**] 視窗和 [區域變數] 視窗存取視覺化檢視。 [ **快速** 監看式] 對話方塊也會提供視覺化。 如需詳細資訊，請參閱[建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)。
+ 視覺化程式可讓您以有意義的方式來查看物件或變數的內容。 在 Visual Studio 偵錯工具中，視覺化程式是指您可以使用放大鏡 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示") 圖示來開啟的不同視窗。 例如，HTML 視覺化程式會顯示 HTML 字串在瀏覽器中的解讀和顯示方式。 您可以從 [資料 **提示]、** [**監看** 式] 視窗、[自動 **變數**] 視窗和 [區域變數] 視窗存取視覺化檢視。 [ **快速** 監看式] 對話方塊也會提供視覺化。 如需詳細資訊，請參閱[建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)。
 
 ## <a name="see-also"></a>另請參閱
 

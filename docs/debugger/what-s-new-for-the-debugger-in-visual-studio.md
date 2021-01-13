@@ -1,6 +1,8 @@
 ---
 title: Visual Studio 2017 中偵錯工具的新功能 |Microsoft Docs
 titleSuffix: ''
+description: 請參閱偵錯工具15.5 版中的新功能。 包含：已選取之生產環境應用程式的程式碼快照，以及 Intellitrace 回溯。
+ms.custom: SEO-VS-2020
 ms.date: 01/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 986ebf20cd49569bfcaf471b9bef994dfe774437
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75944221"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149400"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Visual Studio 2017 中偵錯工具的新功能
 
@@ -42,13 +44,13 @@ ms.locfileid: "75944221"
 
 - 在 Visual Studio Enterprise 中，版本15.5 的新 **功能，IntelliTrace 回溯** 會在每個中斷點和偵錯工具步驟事件自動建立應用程式的快照集。 記錄的快照集可讓您回溯到先前的中斷點或步驟，以檢視應用程式過去的狀態。 如果您想要查看先前的應用程式狀態，但不想要重新啟動偵錯或重新建立所需的應用程式狀態，IntelliTrace 回溯可節省您的時間。
 
-    您可以使用[偵錯] 工具列的 [逐步返回]**** 和 [逐步前進]**** 按鈕，來巡覽及檢視快照集。 這些按鈕可巡覽出現在 [診斷工具]**** 視窗之 [事件]**** 索引標籤中的事件。
+    您可以使用[偵錯] 工具列的 [逐步返回] 和 [逐步前進] 按鈕，來巡覽及檢視快照集。 這些按鈕可巡覽出現在 [診斷工具] 視窗之 [事件] 索引標籤中的事件。
 
     ![逐步執行和向前按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "逐步執行和向前按鈕")
 
     如需詳細資訊，請參閱[使用 IntelliTrace 檢查先前的應用程式狀態](view-historical-application-state.md)頁面。
 
-- 例外狀況協助程式會取代例外狀況小 **幫手** ，並顯示在發生錯誤的非強制回應對話方塊中。 **例外**狀況協助程式可讓您更快速地存取任何內部例外狀況、偵錯工具的額外分析 (如果可用) ，以及立即存取例外狀況的**例外狀況設定**。 如果例外狀況協助程式封鎖您需要查看的內容，也可以將它拖曳至浮動視圖。
+- 例外狀況協助程式會取代例外狀況小 **幫手** ，並顯示在發生錯誤的非強制回應對話方塊中。 **例外** 狀況協助程式可讓您更快速地存取任何內部例外狀況、偵錯工具的額外分析 (如果可用) ，以及立即存取例外狀況的 **例外狀況設定**。 如果例外狀況協助程式封鎖您需要查看的內容，也可以將它拖曳至浮動視圖。
 
     例如， **NullReferenceException** 現在會顯示具有 null 參考的變數 (額外的資訊) 。
 

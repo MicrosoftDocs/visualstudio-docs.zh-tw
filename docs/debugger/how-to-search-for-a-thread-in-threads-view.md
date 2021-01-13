@@ -1,5 +1,7 @@
 ---
 title: 線上程視圖中搜尋執行緒 |Microsoft Docs
+description: 在 Visual Studio 中進行偵錯工具時，使用執行緒識別碼或模組字串做為搜尋準則，在 Spy + + 工具的執行緒視圖中搜尋特定的執行緒。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a2b4fe491939b6cf4224c211dcd03ec609be27
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92864c9d3c66a7547ef52a2694f6307d57a43304
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851979"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148529"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>如何：在執行緒檢視中搜尋執行緒
 您可以使用執行緒識別碼或模組字串做為搜尋準則，線上程視圖中搜尋特定的執行緒。 您也可以指定搜尋的初始方向。 對話方塊中的欄位會線上程樹狀結構中顯示所選執行緒的屬性。

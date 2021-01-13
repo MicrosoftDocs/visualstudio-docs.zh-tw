@@ -1,6 +1,7 @@
 ---
 title: '以 c # 撰寫視覺化檢視 |Microsoft Docs'
-ms.custom: seodec18
+description: '遵循逐步解說，以 c # 建立簡單的視覺化檢視。 它會顯示使用和不使用視覺化檢視專案範本時所需的步驟。'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8caf1be3c10c0d89ce8780213c0914944ae87842
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286298"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149712"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C\# 中撰寫視覺化檢視
 
@@ -39,10 +40,10 @@ ms.locfileid: "85286298"
 1. 建立新的類別庫專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 輸入 **Ctrl + Q** 以開啟 [搜尋] 方塊，輸入 **類別庫**，選擇 [ **範本**]，然後選擇 [ **建立新的類別庫 ( .NET Framework) **。 在出現的對話方塊中選擇 [建立]****。
+    按 **Esc** 關閉開始視窗。 輸入 **Ctrl + Q** 以開啟 [搜尋] 方塊，輸入 **類別庫**，選擇 [ **範本**]，然後選擇 [ **建立新的類別庫 ( .NET Framework)**。 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇 [ **Visual c #**] 底下的 [ **.NET Framework**]，然後在中間窗格中選擇 [ **類別庫] ( .NET Framework) **。
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇 [ **Visual c #**] 底下的 [ **.NET Framework**]，然後在中間窗格中選擇 [ **類別庫] ( .NET Framework)**。
     ::: moniker-end
 
 2. 輸入類別庫的適當名稱（例如），然後 `MyFirstVisualizer` 按一下 [ **建立** **] 或 [確定]**。
@@ -51,20 +52,20 @@ ms.locfileid: "85286298"
 
 ### <a name="to-rename-class1cs-and-add-microsoftvisualstudiodebuggervisualizers"></a>重新命名 Class1.cs 並新增 VisualStudio. Microsoft.visualstudio.debuggervisualizers.dll
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 Class1.cs，然後在快捷方式功能表上選擇 [ **重新命名** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 Class1.cs，然後在快捷方式功能表上選擇 [ **重新命名** ]。
 
 2. 將名稱從 Class1.cs 變更為有意義的內容，例如 DebuggerSide.cs。
 
    > [!NOTE]
    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 自動變更 DebuggerSide.cs 中的類別宣告，以符合新的檔案名。
 
-3. 在 **方案總管**中，以滑鼠右鍵按一下 [ **參考** ]，然後在快捷方式功能表上選擇 [ **加入參考** ]。
+3. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **參考** ]，然後在快捷方式功能表上選擇 [ **加入參考** ]。
 
 4. 在 [ **加入參考** ] 對話方塊的 [ **流覽** ] 索引標籤上，選取 **[流覽** ] 並尋找 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
 
-    您可以在 Visual Studio 的安裝目錄的* \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies*子目錄中找到 DLL。
+    您可以在 Visual Studio 的安裝目錄的 *\<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies* 子目錄中找到 DLL。
 
-5. 按一下 [確定]  。
+5. 按一下 [確定]。
 
 6. 在 DebuggerSide.cs 中，將下列內容新增至指示詞 `using` ：
 
@@ -104,13 +105,13 @@ ms.locfileid: "85286298"
 
 ### <a name="to-add-systemwindowsforms"></a>若要加入 System.Windows.Forms
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [ **參考** ]，然後在快捷方式功能表上選擇 [ **加入參考** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **參考** ]，然後在快捷方式功能表上選擇 [ **加入參考** ]。
 
 2. 在 [ **加入參考** ] 對話方塊的 [ **流覽** ] 索引標籤上，選取 **[流覽**]，然後尋找 System.Windows.Forms.DLL。
 
-    您可以在 *C:\Windows\Microsoft.NET\Framework\v4.0.30319*中找到 DLL。
+    您可以在 *C:\Windows\Microsoft.NET\Framework\v4.0.30319* 中找到 DLL。
 
-3. 按一下 [確定]  。
+3. 按一下 [確定]。
 
 4. 在 DebuggerSide.cs 中，將下列內容新增至指示詞 `using` ：
 
@@ -173,10 +174,10 @@ ms.locfileid: "85286298"
 1. 在方案總管中，以滑鼠右鍵按一下方案，選擇 [ **加入**]，然後按一下 [ **新增專案**]。
 
     ::: moniker range=">=vs-2019"
-    在 [搜尋] 方塊中，輸入 **主控台應用程式**，選擇 [ **範本**]，然後選擇 [ **建立新的主控台應用程式 ( .NET Framework) **。 在出現的對話方塊中選擇 [建立]****。
+    在 [搜尋] 方塊中，輸入 **主控台應用程式**，選擇 [ **範本**]，然後選擇 [ **建立新的主控台應用程式 ( .NET Framework)**。 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新增專案]**** 對話方塊左窗格的 [Visual C#]**** 下，選擇 [Windows Desktop]****，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]****。
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新增專案] 對話方塊左窗格的 [Visual C#] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。
     ::: moniker-end
 
 2. 輸入類別庫的適當名稱（例如），然後 `MyTestConsole` 按一下 [ **建立** **] 或 [確定]**。
@@ -185,23 +186,23 @@ ms.locfileid: "85286298"
 
 ### <a name="to-add-necessary-references-to-mytestconsole"></a>若要將必要參考加入至 MyTestConsole
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 **MyTestConsole** ，然後選擇快捷方式功能表上的 [ **加入參考** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 **MyTestConsole** ，然後選擇快捷方式功能表上的 [ **加入參考** ]。
 
 2. 在 [ **加入參考** ] 對話方塊的 **[流覽** ] 索引標籤中，選擇 [Microsoft.VisualStudio.DebuggerVisualizers.DLL]。
 
-3. 按一下 [確定]  。
+3. 按一下 [確定]。
 
 4. 以滑鼠右鍵按一下 **MyTestConsole** ，然後選擇 [ **加入參考** ]。
 
 5. 在 [ **加入參考** ] 對話方塊中，按一下 [ **專案** ] 索引標籤，然後按一下 [MyFirstVisualizer]。
 
-6. 按一下 [確定]  。
+6. 按一下 [確定]。
 
    現在，您就可以加入程式碼來完成測試載入器。
 
 ### <a name="to-add-code-to-mytestconsole"></a>若要將程式碼加入至 MyTestConsole
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 Program.cs，然後在快捷方式功能表上選擇 [ **重新命名** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 Program.cs，然後在快捷方式功能表上選擇 [ **重新命名** ]。
 
 2. 將名稱從 Program.cs 編輯為更有意義的名稱，例如 TestConsole.cs。
 
@@ -225,9 +226,9 @@ ms.locfileid: "85286298"
 
 ### <a name="to-test-the-visualizer"></a>若要測試視覺化檢視
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 **MyTestConsole** ，然後在快捷方式功能表上選擇 [ **設定為啟始專案** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 **MyTestConsole** ，然後在快捷方式功能表上選擇 [ **設定為啟始專案** ]。
 
-2. 在 [偵錯]**** 功能表上選擇 [啟動]****。
+2. 在 [偵錯] 功能表上選擇 [啟動]。
 
     主控台應用程式隨即啟動，並出現視覺化檢視，並顯示 "Hello，World" 字串。
 
@@ -245,7 +246,7 @@ ms.locfileid: "85286298"
 
 ### <a name="to-create-a-new-class-library"></a>若要建立新的類別庫
 
-1. 在 [檔案]**** 功能表上，選擇 [新增] > [專案]****。
+1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
 
 2. 在 [ **新增專案** ] 對話方塊的 [ **Visual c #**] 底下，選取 [ **.NET Framework**]。
 
@@ -253,13 +254,13 @@ ms.locfileid: "85286298"
 
 4. 在 [ **名稱** ] 方塊中，為類別庫輸入適當的名稱，例如 MySecondVisualizer。
 
-5. 按一下 [確定]  。
+5. 按一下 [確定]。
 
    現在，您可以在其中新增視覺化檢視專案：
 
 ### <a name="to-add-a-visualizer-item"></a>新增視覺化專案
 
-1. 在 **方案總管**中，以滑鼠右鍵按一下 [MySecondVisualizer]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [MySecondVisualizer]。
 
 2. 在快捷方式功能表上，選擇 [ **加入** ]，然後按一下 [ **新增專案**]。
 
@@ -274,6 +275,6 @@ ms.locfileid: "85286298"
 
 ## <a name="see-also"></a>另請參閱
 
-- [視覺化檢視架構](../debugger/visualizer-architecture.md)
+- [視覺化架構](../debugger/visualizer-architecture.md)
 - [如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)
 - [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)

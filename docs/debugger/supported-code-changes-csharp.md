@@ -1,5 +1,7 @@
 ---
 title: " (c # 和 Visual Basic) 支援的程式碼變更 |Microsoft Docs"
+description: '瞭解當您在 Visual Studio 中進行 c # 或 Visual Basic 專案的偵錯工具時，使用 [編輯後繼續] 功能時，支援的程式碼變更。'
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 267d9097ebe53b4074bed6c5caf4077006c946eb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509415"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149205"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a> (c # 和 Visual Basic 支援的程式碼變更) 
 [編輯後繼續] 會處理方法主體內大多數程式碼的變更。 但是在偵錯期間，無法套用方法主體外的變更和方法主體內的某些變更。 若要套用這些不支援的變更，您必須停止偵錯，然後使用新版程式碼重新啟動偵錯。
@@ -49,14 +51,14 @@ ms.locfileid: "89509415"
 
      使用中陳述式包含了在呼叫堆疊的函式中，為了取得目前陳述式而呼叫的任何陳述式。
 
-     目前的陳述式在來源視窗中會以黃色背景標示。 其他使用中陳述式會以灰色背景標示，而且是唯讀的。 這些預設色彩可以在 [選項]**** 對話方塊中進行變更。
+     目前的陳述式在來源視窗中會以黃色背景標示。 其他使用中陳述式會以灰色背景標示，而且是唯讀的。 這些預設色彩可以在 [選項] 對話方塊中進行變更。
 
 - 下表顯示不支援的程式碼變更（依語言元素）。
 
 |Language 元素/功能|不支援的編輯作業|
 |-|-|
 |所有程式碼元素|重新命名|
-|命名空間|加|
+|命名空間|新增|
 |命名空間、類型、成員|刪除|
 |泛型|新增或修改|
 |介面|修改|
@@ -74,7 +76,7 @@ ms.locfileid: "89509415"
 |運算子或索引子|修改類型參數、基底類型、委派類型或傳回類型 |
 |catch 區塊|在包含使用中語句時修改|
 |try-catch-finally 區塊|在包含使用中語句時修改|
-|Using 陳述式|加|
+|Using 陳述式|新增|
 |async 方法/lambda|修改以 .NET Framework 4 和更低版本為目標之專案中的非同步方法/lambda (查看 [詳細資料](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)) |
 |迭代器|在以 .NET Framework 4 和更低版本為目標的專案中修改反覆運算器， (查看 [詳細資料](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)) |
 
@@ -99,7 +101,7 @@ ms.locfileid: "89509415"
 
 - 偵錯內嵌的執行階段應用程式。
 
-- 使用附加至進程偵錯工具 (**Debug > 附加至進程**) 而不是藉由從 [**調試**程式] 功能表選擇 [**啟動**] 來執行應用程式。
+- 使用附加至進程偵錯工具 (**Debug > 附加至進程**) 而不是藉由從 [**調試** 程式] 功能表選擇 [**啟動**] 來執行應用程式。
 
 - 偵錯最佳化程式碼
 

@@ -1,6 +1,7 @@
 ---
 title: 指定要用於偵錯工具的 .NET Framework 版本 |Microsoft Docs
-ms.custom: seodec18
+description: 指定用於偵錯工具的舊版 .NET Framework 版本。 Visual Studio 偵錯工具支援 .NET Framework 的舊版本和目前版本的偵錯工具。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ae48670fceb78ff85f395852f0a31414f37e8cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6b536cbfbd1019fc9b55a0113525f37030493f8
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349064"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149413"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>指定舊版的 .NET Framework 版本以進行偵錯工具 (c #、Visual Basic、F # ) 
 
@@ -42,27 +43,27 @@ The debugger has made an incorrect assumption about the .NET Framework version y
 
     識別正確的版本編號然後記下來。
 
-2. 啟動 [登錄編輯程式]**** (regedit)。
+2. 啟動 [登錄編輯程式] (regedit)。
 
-3. 在 [登錄編輯程式]**** 中開啟 HKEY_LOCAL_MACHINE 資料夾。
+3. 在 [登錄編輯程式] 中開啟 HKEY_LOCAL_MACHINE 資料夾。
 
 4. 巡覽至：HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
 
-    如果此機碼不存在，請以滑鼠右鍵按一下 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine，然後按一下 [新增機碼]****。 命名新的金鑰 `{449EC4CC-30D2-4032-9256-EE18EB41B62B}` 。
+    如果此機碼不存在，請以滑鼠右鍵按一下 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine，然後按一下 [新增機碼]。 命名新的金鑰 `{449EC4CC-30D2-4032-9256-EE18EB41B62B}` 。
 
-5. 在巡覽至 {449EC4CC-30D2-4032-9256-EE18EB41B62B} 後，查詢 [名稱]**** 欄位然後尋找 CLRVersionForDebugging 機碼。
+5. 在巡覽至 {449EC4CC-30D2-4032-9256-EE18EB41B62B} 後，查詢 [名稱] 欄位然後尋找 CLRVersionForDebugging 機碼。
 
-   1. 如果機碼不存在，請以滑鼠右鍵按一下 {449EC4CC-30D2-4032-9256-EE18EB41B62B}，然後按一下 [新增字串值]****。 然後以滑鼠右鍵按一下新的字串值，按一下 [ **重新命名**]，然後輸入 `CLRVersionForDebugging` 。
+   1. 如果機碼不存在，請以滑鼠右鍵按一下 {449EC4CC-30D2-4032-9256-EE18EB41B62B}，然後按一下 [新增字串值]。 然後以滑鼠右鍵按一下新的字串值，按一下 [ **重新命名**]，然後輸入 `CLRVersionForDebugging` 。
 
-6. 按兩下 [CLRVersionForDebugging]****。
+6. 按兩下 [CLRVersionForDebugging]。
 
-7. 在 [編輯字串]**** 方塊的 [值]**** 方塊中鍵入 .NET Framework 版本號碼。 例如：V1.1.4322。
+7. 在 [編輯字串] 方塊的 [值] 方塊中鍵入 .NET Framework 版本號碼。 例如：V1.1.4322。
 
-8. 按一下 [確定]  。
+8. 按一下 [確定]。
 
 9. 關閉 **登錄編輯程式**。
 
      如果在開始偵錯時仍然出現錯誤訊息，請確認已經在登錄中正確輸入版本編號。 也請確認您使用的是 Visual Studio 支援的 .NET Framework 版本。 偵錯工具與 .NET Framework 的最新版本和舊版相容，但是不一定與未來的版本相容。
 
 ## <a name="see-also"></a>另請參閱
-- [偵錯設定及準備](../debugger/debugger-settings-and-preparation.md)
+- [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)

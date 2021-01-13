@@ -1,5 +1,7 @@
 ---
 title: Spy + + 簡介 |Microsoft Docs
+description: 瞭解 Spy + + 調試工具。 顯示系統物件關聯性的圖形樹狀結構。 取得選定視窗、執行緒、進程或訊息的屬性。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d04b2e9e04e1f2b952baadbdf0cca32cc3b301b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb8debef874dd32f52994d0edd4a27d81b340834
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731811"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148789"
 ---
 # <a name="introducing-spy"></a>Spy++ 簡介
 Spy++ 可讓您執行下列工作︰
@@ -32,15 +34,15 @@ Spy++ 可讓您執行下列工作︰
 
 - 使用複雜的訊息記錄檔選取參數來設定 [message 選項](../debugger/how-to-open-messages-view-from-find-window.md) 。
 
-  Spy++ 提供工具列和超連結，有助您加快作業。 它也提供 [重新整理] **** 命令來更新使用中的檢視，[視窗搜尋工具] **** 讓您更輕鬆地監視，而 [字型] **** 對話方塊，則可自訂檢視視窗。 此外，Spy++ 可讓您儲存和還原使用者偏好設定。
+  Spy++ 提供工具列和超連結，有助您加快作業。 它也提供 [重新整理]  命令來更新使用中的檢視，[視窗搜尋工具]  讓您更輕鬆地監視，而 [字型]  對話方塊，則可自訂檢視視窗。 此外，Spy++ 可讓您儲存和還原使用者偏好設定。
 
-  您可以在各種 Spy++ 視窗中，按一下滑鼠右鍵顯示常用命令的捷徑功能表。 指標位置可決定要顯示哪些命令。 例如，如果您在 [視窗] 檢視的項目上按一下滑鼠右鍵，會顯示選取的視窗，然後按一下捷徑功能表上的 [反白顯示] **** ，則選取視窗的框線就會閃爍，以便更輕鬆地找到該視窗。
+  您可以在各種 Spy++ 視窗中，按一下滑鼠右鍵顯示常用命令的捷徑功能表。 指標位置可決定要顯示哪些命令。 例如，如果您在 [視窗] 檢視的項目上按一下滑鼠右鍵，會顯示選取的視窗，然後按一下捷徑功能表上的 [反白顯示]  ，則選取視窗的框線就會閃爍，以便更輕鬆地找到該視窗。
 
 > [!NOTE]
 > 下列兩個其他公用程式跟 Spy++ 相似：PView，會顯示處理序和執行緒的詳細資料；DDESPY.EXE，可讓您監視動態資料交換 (DDE) 訊息。
 
 ## <a name="64-bit-operating-systems"></a>64 位元作業系統
- Spy++ 有兩個版本。 第一個版本名為 Spy++ (spyxx.exe)。如果視窗是在 32 位元處理序中執行，就非常適合用這個版本來顯示傳送至視窗的訊息。 例如，Visual Studio 會在 32 位元處理序中執行。 因此，您可以使用 Spy++ 來顯示傳送至方案總管 **** 的訊息。 由於 Visual Studio 中大多陣列建的預設設定是在32位進程中執行，因此第一版的 Spy + + 就是在 Visual Studio 的 [ **工具** ] 功能表上可用的元件（如果 [已安裝必要元件](../debugger/how-to-start-spy-increment.md)的話）。
+ Spy++ 有兩個版本。 第一個版本名為 Spy++ (spyxx.exe)。如果視窗是在 32 位元處理序中執行，就非常適合用這個版本來顯示傳送至視窗的訊息。 例如，Visual Studio 會在 32 位元處理序中執行。 因此，您可以使用 Spy++ 來顯示傳送至方案總管 的訊息。 由於 Visual Studio 中大多陣列建的預設設定是在32位進程中執行，因此第一版的 Spy + + 就是在 Visual Studio 的 [ **工具** ] 功能表上可用的元件（如果 [已安裝必要元件](../debugger/how-to-start-spy-increment.md)的話）。
 
  第二個版本名為 Spy++ (64 位元) (spyxx_amd64.exe)。如果視窗是在 64 位元處理序中執行，就非常適合用這個版本來顯示傳送至視窗的訊息。 比方說，在 64 位元作業系統中，[記事本] 會在 64 位元處理序中執行。 因此，您可以使用 Spy++ (64 位元) 來顯示傳送至 [記事本] 的訊息。 Spy++ (64 位元) 通常位於
 

@@ -1,5 +1,7 @@
 ---
 title: Spy + + 參考 |Microsoft Docs
+description: 請參閱 Spy + + 偵錯工具中，描述每個功能表命令和對話方塊之文章的參考連結清單。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b28c737f0a1c17d302cc2924b5d2c3ddc9c1dbb6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1738b073c8f271e599c1e14bd852b4ebc654dee
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902552"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98147970"
 ---
 # <a name="spy-reference"></a>Spy++ 參考
 請參閱下列各節，以取得每個 Spy + + 功能表和對話方塊的說明：

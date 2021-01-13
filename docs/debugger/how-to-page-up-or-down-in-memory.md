@@ -1,5 +1,7 @@
 ---
 title: 在記憶體中向上或向下翻頁 |Microsoft Docs
+description: 瞭解如何在記憶體中向上或向下翻頁，以在 Visual Studio 中的調試功能時，于記憶體視窗或 [反組解碼] 視窗中查看記憶體內容。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,16 +21,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4e4e2037e39df7ce343143ff64235f1de0364f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1fc586603caf18261654e5ec8ee437c0875616a7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852044"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148880"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>如何：在記憶體中向上或向下翻頁
 
-當您在 [記憶體]**** 視窗或 [反組譯碼]**** 視窗中檢視記憶體內容時，可以使用垂直捲軸在記憶體空間中上下移動。
+當您在 [記憶體] 視窗或 [反組譯碼] 視窗中檢視記憶體內容時，可以使用垂直捲軸在記憶體空間中上下移動。
 
 ### <a name="to-page-up-or-down-in-memory"></a>若要在記憶體中向上或向下翻頁
 

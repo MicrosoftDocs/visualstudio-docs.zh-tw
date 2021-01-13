@@ -1,5 +1,7 @@
 ---
 title: 通道 (執行緒檢視) | Microsoft Docs
+description: 當您在 Visual Studio 並行視覺化中使用通道時，請閱讀執行緒的相關資訊。 查看執行緒通道、磁片通道、標記通道和 GPU 通道。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f18a636d83210b2329d103b1babdf47e697fd5c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a4ed0a82ad7ddb67cacde2a09f595d0c9250710
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537081"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148607"
 ---
 # <a name="channels-threads-view"></a>通道 (執行緒檢視)
 並行視覺化檢視會顯示四種通道︰執行緒通道、磁碟通道、標記通道和 GPU 通道。
@@ -25,7 +27,7 @@ ms.locfileid: "85537081"
 ## <a name="thread-channels"></a>執行緒通道
  執行緒通道以不同色彩為每種執行緒顯示執行緒的狀態。 當您暫停在通道名稱時，會顯示指定執行緒的開始函式。 並行視覺化檢視會偵測幾種執行緒。 下表顯示最常見的種類。
 
-|Thread|說明|
+|Thread|描述|
 |-|-|
 |主執行緒|啟動應用程式的執行緒。|
 |背景工作執行緒|應用程式主執行緒所建立的執行緒。|

@@ -1,5 +1,7 @@
 ---
 title: 執行緒屬性對話方塊 |Microsoft Docs
+description: 瞭解 Spy + + 調試工具中的 [執行緒屬性] 對話方塊。 使用此對話方塊可深入瞭解特定執行緒。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371314bff934fdceeb301f61e976224034333559
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 377357345516d210b30dd4db278dd672a8b6b469
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929720"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149127"
 ---
 # <a name="thread-properties-dialog-box"></a>執行緒屬性對話方塊
 使用此對話方塊以深入瞭解特定的執行緒。 若要顯示此對話方塊，請將焦點移至 [ [執行緒] 視圖](../debugger/threads-view.md) 視窗，或開啟 [訊息] [視圖](../debugger/messages-view.md) 並展開訊息。 選取樹狀結構中的任何執行緒節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。

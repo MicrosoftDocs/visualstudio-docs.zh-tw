@@ -1,5 +1,7 @@
 ---
 title: 點擊中斷點時對話方塊 |Microsoft Docs
+description: 當叫用中斷點時使用，以指定中斷的動作。 您可以指定要列印的訊息，並在之後繼續執行。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b19f4dd0d4b0cb97bb33e4895f36c4dc8f670c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a528709769f599219a7b3df2b8157b0ee3a605b1
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728137"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149309"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>叫用中斷點時對話方塊
 您可以使用此對話方塊來自訂叫用中斷點時所發生的動作。

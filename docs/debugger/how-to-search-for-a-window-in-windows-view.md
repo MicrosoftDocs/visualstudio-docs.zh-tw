@@ -1,5 +1,7 @@
 ---
 title: 在 Windows View 中搜尋視窗 |Microsoft Docs
+description: 使用 Visual Studio 中的控制碼、標題、類別或其標題和類別的組合，在 Spy + + 工具的 Windows view 中搜尋特定視窗。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880f6ec3ea0882d92f5376859ed629e23781f5f9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3449abf5ff1b9bdb4d4873a0cf3beb0b184734fc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851966"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148503"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>如何：在視窗檢視中搜尋視窗
 您可以使用其控制碼、標題、類別或其標題和類別的組合作為搜尋準則，在 Windows view 中搜尋特定視窗。 您也可以指定搜尋的初始方向。 對話方塊中的欄位會在視窗樹狀結構中顯示所選視窗的屬性。

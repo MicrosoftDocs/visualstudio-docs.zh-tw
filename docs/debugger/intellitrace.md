@@ -1,5 +1,7 @@
 ---
 title: IntelliTrace | Microsoft Docs
+description: 使用 IntelliTrace 在 Visual Studio 中記錄和追蹤程式碼的執行歷程記錄。 記錄特定事件、檢查相關的程式碼和偵錯工具錯誤。
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2018
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 878c2481164bc87d4af5e79a0a978e822e7baafe
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 518043a38f3a0f6945840a36a1f7fcade5a313d7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600248"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148997"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>適用于 Visual Studio Enterprise (c #、Visual Basic、c + +) 的 IntelliTrace
 
@@ -31,7 +33,7 @@ ms.locfileid: "89600248"
 
 - 記錄特定事件
 
-- 請檢查相關的程式碼、發生偵錯工具事件時出現在 [區域變數]**** 視窗中的資料，以及函式呼叫資訊
+- 請檢查相關的程式碼、發生偵錯工具事件時出現在 [區域變數] 視窗中的資料，以及函式呼叫資訊
 
 - 偵錯難以重現或在部署中所發生的錯誤
 
@@ -39,7 +41,7 @@ ms.locfileid: "89600248"
 
 ## <a name="what-do-you-want-to-do"></a>您想要做什麼事？
 
-|狀況|Title|
+|案例|標題|
 |-|-|
 |**使用 IntelliTrace 偵錯我的應用程式：**<br /><br /> - 顯示過去的事件。<br />- 顯示過去事件的呼叫資訊。<br />- 儲存 IntelliTrace 工作階段。<br />- 控制 IntelliTrace 收集的資料。|- [使用 IntelliTrace 檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)<br />- [逐步解說：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [歷程記錄調試](../debugger/historical-debugging.md)|
 |**從部署的應用程式中收集 IntelliTrace 資料**|- [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|
@@ -58,7 +60,7 @@ ms.locfileid: "89600248"
 
 ## <a name="why-debug-with-intellitrace"></a><a name="IntelliTraceVSTraditional"></a> 為什麼要使用 IntelliTrace 進行偵錯？
 
-傳統或「即時」**(Live) 偵錯只會顯示應用程式的目前狀態，並只包含有關過去事件的有限資料。 您必須根據應用程式的目前狀態來推斷這些事件，或者必須透過重新執行應用程式來重新建立這些事件。
+傳統或「即時」(Live) 偵錯只會顯示應用程式的目前狀態，並只包含有關過去事件的有限資料。 您必須根據應用程式的目前狀態來推斷這些事件，或者必須透過重新執行應用程式來重新建立這些事件。
 
 IntelliTrace 透過記錄在這些時間點的特定事件和資料，擴展了這個傳統的偵錯經驗。 這可讓您查看應用程式中發生的事件，而不需要重新啟動它，特別是如果您已逐步執行超過 Bug 的位置時。 在傳統偵錯期間，IntelliTrace 預設會開啟並以隱藏的方式自動收集資料。 這可讓您輕易地切換傳統偵錯和 IntelliTrace 偵錯，以查看所記錄的資訊。 請參閱 [Intellitrace 功能](../debugger/intellitrace-features.md) 和 [intellitrace 收集哪些資料？](#WhatData)
 
@@ -96,17 +98,17 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 
 - **偵錯工具事件**
 
-  IntelliTrace 一律會記錄在 Visual Studio Debugger 中發生的事件。 例如，啟動您的應用程式就是一個偵錯工具事件。 其他偵錯工具事件包括停止事件，也就是導致應用程式中斷執行的事件。 例如，您的程式遇到了中斷點、遇到了追蹤點或執行 [逐步執行]**** 命令時。
+  IntelliTrace 一律會記錄在 Visual Studio Debugger 中發生的事件。 例如，啟動您的應用程式就是一個偵錯工具事件。 其他偵錯工具事件包括停止事件，也就是導致應用程式中斷執行的事件。 例如，您的程式遇到了中斷點、遇到了追蹤點或執行 [逐步執行] 命令時。
 
   根據預設，若要協助效能，IntelliTrace 不會記錄偵錯工具事件的每個可能值。 相反地，它會記錄下面這些值：
 
-  - [區域變數]**** 視窗中的值。 讓 [區域變數]**** 視窗保持開啟來查看這些值。
+  - [區域變數] 視窗中的值。 讓 [區域變數] 視窗保持開啟來查看這些值。
 
-  - [自動變數]**** 視窗中的值 (只有當 [自動變數]**** 視窗開啟時)
+  - [自動變數] 視窗中的值 (只有當 [自動變數] 視窗開啟時)
 
   - 在您將滑鼠指標放置在來源視窗中的變數上方以查看它的值時，所出現的 DataTips 中的值。 IntelliTrace 不會收集固定的 DataTips 中的值。
 
-    當 IntelliTrace 事件和快照模式啟用時，IntelliTrace 會在每個偵錯工具 **中斷點** 和 **步驟** 事件中取得應用程式進程的快照集。 這會記錄 [區域變數]、[自動**變數**] 和 [**監看式]** 視窗中的值，而不論視窗是否開啟。 **Autos** 也會收集任何釘選資料提示中的值。
+    當 IntelliTrace 事件和快照模式啟用時，IntelliTrace 會在每個偵錯工具 **中斷點** 和 **步驟** 事件中取得應用程式進程的快照集。 這會記錄 [區域變數]、[自動 **變數**] 和 [**監看式]** 視窗中的值，而不論視窗是否開啟。  也會收集任何釘選資料提示中的值。
 
 - **例外狀況**
 
@@ -122,7 +124,7 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 
 - **SharePoint 2010 和 SharePoint 2013 應用程式事件**
 
-  您可以記錄在 Visual Studio 外部執行之 SharePoint 2010 和 2013 應用程式的使用者設定檔事件以及統一登入系統 (ULS) 事件的子集。 您可以將這些事件儲存成 .iTrace 檔案。 需要 Visual Studio Enterprise 2015 或更新版本、舊版 Visual Studio Ultimate，或在**追蹤**模式下執行[Microsoft Monitoring Agent](https://www.microsoft.com/download/details.aspx?id=40316) 。
+  您可以記錄在 Visual Studio 外部執行之 SharePoint 2010 和 2013 應用程式的使用者設定檔事件以及統一登入系統 (ULS) 事件的子集。 您可以將這些事件儲存成 .iTrace 檔案。 需要 Visual Studio Enterprise 2015 或更新版本、舊版 Visual Studio Ultimate，或在 **追蹤** 模式下執行 [Microsoft Monitoring Agent](https://www.microsoft.com/download/details.aspx?id=40316) 。
 
   當您開啟 .iTrace 檔案時，請輸入 SharePoint 相互關聯識別碼以尋找其相符的 Web 要求、檢視記錄的事件，並從特定事件開始偵錯。 如果檔案包含未處理的例外狀況，您可以選擇某個相互關聯識別碼，開始偵錯例外狀況。
 
@@ -165,7 +167,7 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 
 根據預設，IntelliTrace 只會針對選取的 IntelliTrace 事件收集資料。 根據程式碼的結構和組織，這不一定會讓您的應用程式變慢。 例如，如果 IntelliTrace 時常記錄某個事件，這可能會讓應用程式變慢。 它也可能會讓您考慮重構應用程式。
 
-收集呼叫資訊可能會使應用程式明顯變慢， 也可能會增加要儲存至磁碟之任何 IntelliTrace 記錄檔 (.iTrace 檔案) 的大小。 若要將這些影響降至最低，請只針對您關注的那些模組收集呼叫資訊。  若要變更 .iTrace 檔案的大小上限，請移至 [工具]****、[選項]****、[IntelliTrace]****、[進階]****。
+收集呼叫資訊可能會使應用程式明顯變慢， 也可能會增加要儲存至磁碟之任何 IntelliTrace 記錄檔 (.iTrace 檔案) 的大小。 若要將這些影響降至最低，請只針對您關注的那些模組收集呼叫資訊。  若要變更 .iTrace 檔案的大小上限，請移至 [工具]、[選項]、[IntelliTrace]、[進階]。
 
 ### <a name="blogs"></a>部落格
 

@@ -1,5 +1,7 @@
 ---
 title: Spy + + Views |Microsoft Docs
+description: 瞭解 Spy + + 調試工具中的 views。 Spy + + 會顯示您電腦上可用的 windows、訊息、進程和執行緒的樹狀檢視。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d60f497db60e08094eb881f6766f95279b85456
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: caf275443f01ade5914b85dee8ef7105b3f6c9ac
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902565"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148061"
 ---
 # <a name="spy-views"></a>Spy++ 檢視
 Spy + + 會顯示您電腦上可用的 windows、訊息、進程和執行緒的樹狀檢視。

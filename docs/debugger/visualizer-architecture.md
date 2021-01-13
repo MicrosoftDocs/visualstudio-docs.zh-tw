@@ -1,5 +1,7 @@
 ---
 title: 視覺化架構 |Microsoft Docs
+description: 視覺化檢視會顯示特定類型的資料元素，而且可能也會允許編輯。 瞭解視覺化檢視的架構。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,29 +15,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6dfbc8c57ff2e78bf0c6ebbd4e9899c372d7084
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9166cc3c98f72e43042a26c0787d1cbf45223a74
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187167"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149751"
 ---
 # <a name="visualizer-architecture"></a>視覺化檢視架構
 偵錯工具視覺化檢視的架構分為兩部分：
 
 - 「偵錯工具端」(*debugger side*) 會在 Visual Studio 偵錯工具中執行。 偵錯工具端的程式碼會建立並顯示視覺化檢視的使用者介面。
 
-- 「偵錯項目端」** 會在 Visual Studio 正在偵錯的處理序 (亦即「偵錯項目」**) 中執行。
+- 「偵錯項目端」會在 Visual Studio 正在偵錯的處理序 (亦即「偵錯項目」) 中執行。
 
   視覺化檢視是偵錯工具的一個元件，它讓偵錯工具可以用有意義、容易了解的形式，顯示 (「視覺化」(*visualize*)) 資料物件的內容。 有些視覺化檢視也支援編輯資料物件。 您可以撰寫自訂的視覺化檢視，來將偵錯工具擴充成可以處理自己的自訂資料型別。
 
-  要視覺化的資料物件位於所偵錯的處理序 (「偵錯項目」** 處理序) 內。 即將顯示資料的使用者介面則在 Visual Studio 偵錯工具處理序內建立：
+  要視覺化的資料物件位於所偵錯的處理序 (「偵錯項目」處理序) 內。 即將顯示資料的使用者介面則在 Visual Studio 偵錯工具處理序內建立：
 
 |偵錯工具處理序|偵錯項目處理序|
 |----------------------|----------------------|
 |偵錯工具使用者介面 (資料提示方塊、監看式視窗、快速監看式)|要視覺化的資料物件|
 
- 若要在偵錯工具介面中將資料物件視覺化，您必須編寫兩個處理序之間的通訊程式碼。 因此，視覺化檢視架構分為兩部分：「偵錯工具端」** 程式碼和「偵錯項目端」** 程式碼。
+ 若要在偵錯工具介面中將資料物件視覺化，您必須編寫兩個處理序之間的通訊程式碼。 因此，視覺化檢視架構分為兩部分：「偵錯工具端」程式碼和「偵錯項目端」程式碼。
 
  偵錯工具端程式碼會建立自己的使用者介面，供您從偵錯工具介面 (例如，資料提示方塊、監看式視窗或快速監看式) 中叫用。 建立視覺化檢視介面是使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 類別和 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> 介面。 DialogDebuggerVisualizer 和 IDialogVisualizerService 跟所有視覺化檢視 API 一樣位於 <xref:Microsoft.VisualStudio.DebuggerVisualizers> 命名空間中。
 
@@ -90,4 +92,4 @@ ms.locfileid: "73187167"
 - [逐步解說：以 C 撰寫視覺化#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [逐步解說：在 Visual Basic 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [逐步解說：在 Visual Basic 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
-- [視覺化檢視安全性考量](../debugger/visualizer-security-considerations.md)
+- [視覺化檢視安全性考慮](../debugger/visualizer-security-considerations.md)

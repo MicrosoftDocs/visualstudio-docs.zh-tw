@@ -1,5 +1,6 @@
 ---
 title: Profiler 命令列-取得 ASP.NET 並行資料
+description: 請參閱 Visual Studio 分析工具並行方法的參考資訊，此方法可讓您收集資源爭用資料。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,30 +14,30 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7a28e9cea6db337cbe114c7e51c387315879ccd5
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: e12288471bed62014f9a307d609ef3d588e0026a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407701"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148316"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>使用分析工具命令列收集 ASP.NET Web 應用程式的並行資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的並行方法可讓您收集資源爭用資料。
 
 ## <a name="common-tasks"></a>常見工作
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |將分析工具附加至執行中的 ASP.NET 應用程式|-   [如何：將分析工具附加至 ASP.NET 應用程式以收集並行資料](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
 
-## <a name="reference"></a>參考
+## <a name="reference"></a>參考資料
 - [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)
 
 ## <a name="related-tasks"></a>相關工作
 
 ### <a name="profile-aspnet-applications"></a>分析 ASP.NET 應用程式
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**使用取樣方法進行分析**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**使用檢測方法進行分析**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
@@ -44,7 +45,7 @@ ms.locfileid: "94407701"
 
 ### <a name="profile-concurrency-issues"></a>分析並行問題
 
-|Task|相關內容|
+|工作|相關內容|
 |----------|---------------------|
 |**分析獨立 (用戶端) 應用程式**|-   [收集並行資料](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 |**分析服務**|-   [收集並行資料](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|

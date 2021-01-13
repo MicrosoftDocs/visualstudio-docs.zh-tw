@@ -1,5 +1,7 @@
 ---
 title: 在 [平行堆疊] 視窗中查看執行緒 |Microsoft Docs
+description: 使用平行堆疊來協助您進行多執行緒應用程式的偵錯工具。 您可以查看所有線程的堆疊資訊，以及以工作為中心的呼叫堆疊資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55a004e65a39f4a2b7bbf972cec36d689bf88d97
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902277"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150167"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>在 [平行堆疊] 視窗中查看執行緒和工作 (c #、Visual Basic、c + +) 
 
@@ -48,11 +50,11 @@ ms.locfileid: "62902277"
 
 |圖示|控制|描述|
 |-|-|-|
-|![執行緒/工作下拉式方塊](media/parallel_toolbar1.png "執行緒/工作下拉式方塊")|**執行緒** /工作**下拉式方塊**|切換執行緒呼叫堆疊檢閱和工作呼叫堆疊檢閱。 如需詳細資訊，請參閱[工作檢視](#tasks-view)和[執行緒檢視](#threads-view)。|
+|![執行緒/工作下拉式方塊](media/parallel_toolbar1.png "執行緒/工作下拉式方塊")|**執行緒** /工作 **下拉式方塊**|切換執行緒呼叫堆疊檢閱和工作呼叫堆疊檢閱。 如需詳細資訊，請參閱[工作檢視](#tasks-view)和[執行緒檢視](#threads-view)。|
 |![僅顯示已加上旗標的圖示](media/parallel_toolbar2.png "僅顯示已加上旗標的圖示")|僅顯示有旗標的項目|只顯示在其他偵錯工具視窗（例如 [ **GPU 執行緒** ] 視窗和 [ **平行監看** 式] 視窗）中加上旗標之執行緒的呼叫堆疊。|
-|![切換方法視圖圖示](media/parallel_toolbar3.png "切換方法視圖圖示")|切換**方法檢視**|在呼叫堆疊視圖和 **方法視圖**之間切換。 如需詳細資訊，請參閱[方法檢視](#method-view)。|
+|![切換方法視圖圖示](media/parallel_toolbar3.png "切換方法視圖圖示")|切換 **方法檢視**|在呼叫堆疊視圖和 **方法視圖** 之間切換。 如需詳細資訊，請參閱[方法檢視](#method-view)。|
 |![自動滾動至目前的圖示](media/parallel_toolbar4.png "自動滾動至目前的圖示")|自動捲動到目前堆疊框架|自動捲動圖形，讓目前的堆疊框架處於視野中。 當您從其他視窗變更目前的堆疊框架，或當您在大型圖形中叫用新的中斷點時，這項功能就很有用。|
-|![切換縮放圖示](media/parallel_toolbar5.png "切換縮放圖示")|切換縮放控制|顯示或隱藏視窗左邊的縮放控制項。 <br /><br />無論縮放控制項的可見度是否可見，您也可以按**ctrl**鍵並開啟滑鼠滾輪，或按**ctrl** + **shift**鍵放大 + **+** 和**ctrl** + **shift** + **-** 以縮小。 |
+|![切換縮放圖示](media/parallel_toolbar5.png "切換縮放圖示")|切換縮放控制|顯示或隱藏視窗左邊的縮放控制項。 <br /><br />無論縮放控制項的可見度是否可見，您也可以按 **ctrl** 鍵並開啟滑鼠滾輪，或按 **ctrl** + **shift** 鍵放大 + **+** 和 **ctrl** + **shift** + **-** 以縮小。 |
 
 ### <a name="stack-frame-icons"></a>堆疊框架圖示
 下列圖示提供所有視圖中作用中和目前堆疊框架的相關資訊：
@@ -70,7 +72,7 @@ ms.locfileid: "62902277"
 
 |功能表項目|描述|
 |-|-|
-|**國旗**|將選取的項目加上旗標。|
+|**旗標**|將選取的項目加上旗標。|
 |**取消旗標**|取消所選取項目的旗標。|
 |**凍結**|將選取的項目凍結。|
 |**解凍**|將選取的項目解除凍結。|
@@ -108,7 +110,7 @@ ms.locfileid: "62902277"
 |6|方法上的工具提示|當您將滑鼠停留在方法上時顯示。 在 [ **執行緒** ] 視圖中，工具提示會在類似于 [ **執行緒** ] 視窗的資料表中顯示所有線程。 |
 
 ## <a name="tasks-view"></a>工作檢視
-如果您的應用程式使用 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 物件 (managed 程式碼) 或 `task_handle` 物件 (機器碼) 以表示平行處理原則**Tasks** ，您可以使用 [工作視圖]。 [工作]**** 檢視會顯示工作 (而非執行緒) 的呼叫堆疊。
+如果您的應用程式使用 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 物件 (managed 程式碼) 或 `task_handle` 物件 (機器碼) 以表示平行處理原則 ，您可以使用 [工作視圖]。 [工作] 檢視會顯示工作 (而非執行緒) 的呼叫堆疊。
 
 在 **[** 工作] 視圖中：
 
@@ -116,7 +118,7 @@ ms.locfileid: "62902277"
 - 正在執行工作之執行緒的呼叫堆疊會在頂端和底部以視覺化方式修剪，以顯示工作最相關的畫面格。
 - 當有數個工作在一個執行緒上時，這些工作的呼叫堆疊會顯示在不同的節點中。
 
-若要查看整個呼叫堆疊，請以滑鼠右鍵按一下堆疊框架，然後選取 [**移至執行緒**]，切換回**執行緒**的觀點。
+若要查看整個呼叫堆疊，請以滑鼠右鍵按一下堆疊框架，然後選取 [**移至執行緒**]，切換回 **執行緒** 的觀點。
 
 下圖顯示頂端的 [ **執行緒** ] 視圖，以及底部的 **對應工作** 視圖。
 
@@ -129,7 +131,7 @@ ms.locfileid: "62902277"
 ![執行緒和工作工具提示](../debugger/media/parallel_threads-tasks-tooltips.png "執行緒和工作工具提示")
 
 ## <a name="method-view"></a>方法檢視
-從 [ **執行緒** **] 或 [** 工作] 視圖中，您可以選取工具列上的 [ **切換方法視圖** ] 圖示，以在目前的方法上旋轉圖表。 [方法檢視]**** 會顯示所有執行緒上所有呼叫目前方法，或由目前方法呼叫的方法。 下圖顯示相同資訊在右側的 [ **執行緒** ] 和 [ **方法] 視圖** 中的外觀。
+從 [ **執行緒** **] 或 [** 工作] 視圖中，您可以選取工具列上的 [ **切換方法視圖** ] 圖示，以在目前的方法上旋轉圖表。 [方法檢視] 會顯示所有執行緒上所有呼叫目前方法，或由目前方法呼叫的方法。 下圖顯示相同資訊在右側的 [ **執行緒** ] 和 [ **方法] 視圖** 中的外觀。
 
 ![執行緒視圖和方法視圖](../debugger/media/parallel_methodview.png "執行緒視圖和方法視圖")
 

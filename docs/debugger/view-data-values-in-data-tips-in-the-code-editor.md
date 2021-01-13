@@ -1,6 +1,7 @@
 ---
 title: 在資料提示中查看變數值 |Microsoft Docs
-ms.custom: seodec18
+description: 您可以使用資料提示來輕鬆地查看變數的相關資訊，包括陣列和結構，同時進行調試。 您也可以修改值。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 432fd50d30347972d7b1fc8222a430fc90a9e590
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75404272"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149959"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在程式碼編輯器的資料提示中查看資料值
 
@@ -35,7 +36,7 @@ ms.locfileid: "75404272"
 
 ### <a name="display-a-datatip"></a>顯示資料提示
 
-1. 在您的程式碼中設定中斷點，然後按**F5**或選取 [ **Debug**  >  **開始調試**程式] 開始進行偵錯工具。
+1. 在您的程式碼中設定中斷點，然後按 **F5** 或選取 [ **Debug**  >  **開始調試** 程式] 開始進行偵錯工具。
 
 1. 在中斷點暫停時，將滑鼠停留在目前範圍中的任何變數上。 資料提示隨即出現，並顯示變數的名稱和目前值。
 
@@ -75,7 +76,7 @@ ms.locfileid: "75404272"
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>關閉特定檔案的所有資料提示
 
-若要關閉特定檔案的所有資料提示，請在 [**調試**程式] 功能表上選取 [**清除所有 \<Filename> 釘選的資料提示**]。
+若要關閉特定檔案的所有資料提示，請在 [**調試** 程式] 功能表上選取 [**清除所有 \<Filename> 釘選的資料提示**]。
 
 ## <a name="expand-and-edit-information"></a>展開和編輯資訊
 您可以使用資料提示方塊展開陣列、結構或物件，以便檢視其成員。 也可以從資料提示方塊編輯變數值。

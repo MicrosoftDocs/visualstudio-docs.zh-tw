@@ -1,6 +1,7 @@
 ---
 title: 針對偵錯工具中的中斷點進行疑難排解 |Microsoft Docs
-ms.custom: seodec18
+description: 如果中斷點已停用或無法設定，則會顯示為空心圓。 請在這裡尋找設定中斷點時可能發生之問題的相關資訊。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/23/2018
 ms.topic: troubleshooting
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c11741cb9bb9a0b0c64b9452b54daa6ac226b92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a07f92eccd7884ea3cc3871d04285a82cb5cb62e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72535936"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148048"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>針對 Visual Studio 偵錯工具中的中斷點進行疑難排解
 
@@ -45,7 +46,7 @@ ms.locfileid: "72535936"
 
 若要停用這些安全檢查，請執行下列其中一項：
 * 若要修改單一中斷點，請將滑鼠停留在編輯器中的中斷點圖示上方，然後按一下 [設定] (齒輪) 圖示。 [查看] 視窗就會加入編輯器中。 在 [查看] 視窗的頂端，有一個超連結指出中斷點的位置。 按一下超連結以允許修改中斷點位置，然後選取 [ **允許原始程式碼與原始程式碼不同**]。
-* 若要修改所有中斷點的這個設定，請移至 [ **Debug**  >  **選項和設定**]。 在 [偵錯] / [一般] **** 頁面上，清除 [原始程式檔必須完全符合原始版本] **** 選項。 當您完成調試時，請務必重新啟用此選項。
+* 若要修改所有中斷點的這個設定，請移至 [ **Debug**  >  **選項和設定**]。 在 [偵錯] / [一般]  頁面上，清除 [原始程式檔必須完全符合原始版本]  選項。 當您完成調試時，請務必重新啟用此選項。
 
 ## <a name="the-breakpoint-was-successfully-set-no-warning-but-didnt-hit"></a>已成功將中斷點設定 (沒有警告) ，但未達到
 
@@ -58,4 +59,4 @@ ms.locfileid: "72535936"
 
 ## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>我刪除了中斷點，但再次啟動偵錯時繼續叫用此中斷點
 
-如果您在進行調試時刪除了中斷點，您可能會在下一次開始進行調試時再次到達中斷點。 若要停止叫用此中斷點，請確定所有中斷點的執行個體都已從 [中斷點] **** 視窗中移除。
+如果您在進行調試時刪除了中斷點，您可能會在下一次開始進行調試時再次到達中斷點。 若要停止叫用此中斷點，請確定所有中斷點的執行個體都已從 [中斷點]  視窗中移除。

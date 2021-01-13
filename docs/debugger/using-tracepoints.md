@@ -1,5 +1,7 @@
 ---
 title: 使用追蹤點的記錄資訊 |Microsoft Docs
+description: 設定追蹤點以將資訊記錄到輸出，而不需要修改或停止您的程式碼。 只需在 [中斷點設定] 的 [動作] 核取方塊下指定輸出字串。
+ms.custom: SEO-VS-2020
 ms.date: 10/28/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 144f83b1be0c3a21aa5cb244f8498f61e3ef380a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "89561334"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150089"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>使用 Visual Studio 中的追蹤點將資訊記錄到輸出視窗
 
@@ -28,7 +30,7 @@ ms.locfileid: "89561334"
 
 ## <a name="set-tracepoints-in-source-code"></a>在原始程式碼中設定追蹤點
 
-您可以在 [ **中斷點設定** ] 視窗中的 [ **動作** ] 核取方塊底下指定輸出字串，以設定追蹤點。
+您可以在 [**中斷點設定**] 視窗中的 [**動作**] 核取方塊底下指定輸出字串，以設定追蹤點。
 
 1. 若要初始化追蹤點，請先按一下您要設定追蹤點之行號左邊的裝訂邊。
 
@@ -53,7 +55,7 @@ ms.locfileid: "89561334"
 
    ![核取條件方塊](../debugger/media/checkedconditionsbox.png "核取條件方塊")
 
-   您有三個條件選項： **條件運算式** 、 **篩選** 和 **計數** 。
+   您有三個條件選項： **條件運算式**、 **篩選** 和 **計數**。
 
 ## <a name="actions-menu"></a>[動作] 功能表
 
@@ -63,7 +65,7 @@ ms.locfileid: "89561334"
 
 ![計數器輸出訊息](../debugger/media/counteroutputmessage.png "計數器輸出訊息")
 
-如果您按一下 [ **關閉** ]，然後將程式調試 ( **F5** ) ，您會在 [輸出] 視窗中看到下列輸出。
+如果您按一下 [ **關閉** ]，然後將程式調試 (**F5**) ，您會在 [輸出] 視窗中看到下列輸出。
 
 ![輸出視窗中的動作訊息](../debugger/media/actionsmessageinoutputwindow.png "輸出視窗中的動作訊息")
 

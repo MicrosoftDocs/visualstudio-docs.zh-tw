@@ -1,5 +1,7 @@
 ---
 title: 執行緒搜尋對話方塊 |Microsoft Docs
+description: 瞭解 Spy + + 調試工具中的 [執行緒搜尋] 對話方塊。 使用這個對話方塊，即可在 [執行緒] 視圖中尋找並選取特定執行緒的節點。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fddbb589a6978f72dc5926a78c9eb13f21b3a4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 895241a99131c31e2fab73b9799f6203db7259e0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901858"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148750"
 ---
 # <a name="thread-search-dialog-box"></a>執行緒搜尋對話方塊
 使用這個對話方塊，即可在 [ [執行緒] 視圖](../debugger/threads-view.md)中尋找並選取特定執行緒的節點。 若要顯示此對話方塊，請將焦點移至 [ **執行緒** ] 視圖視窗。 然後選擇 [**搜尋**] 功能表中的 [**尋找執行緒**]。

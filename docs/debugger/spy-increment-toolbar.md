@@ -1,5 +1,7 @@
 ---
 title: Spy + + 工具列 |Microsoft Docs
+description: 瞭解 Spy + + 工具列中出現在功能表列底下的使用者介面元素。 若要顯示或隱藏工具列，請按一下 [View] 功能表上的 [工具列]。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa1dfe0917fece3c814678295c5abd6013b426b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dc2564a69c291055d53e358c084e7dd9c4d0506
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729743"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148191"
 ---
 # <a name="spy-toolbar"></a>Spy++ 工具列
 工具列會出現在 Spy + + 的功能表列下方。 若要顯示或隱藏工具列，請按一下 [ **View** ] 功能表上的 [ **工具列**]。

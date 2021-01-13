@@ -1,5 +1,7 @@
 ---
 title: 在訊息視圖中搜尋訊息 |Microsoft Docs
+description: 在 [Spy + +] 工具的 [訊息] 視圖中搜尋特定訊息，方法是在 Visual Studio 中的偵錯工具時，使用其控制碼、類型或訊息識別碼作為搜尋準則。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4b597870d7a87b396b4c6e828da814c49f9bfb
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c351eacc6fc3793065bcd11eb5456eebdc1864f3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852005"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148581"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>如何：在訊息檢視中搜尋訊息
 您可以使用控制碼、類型或訊息識別碼作為搜尋準則，在 [訊息] 視圖中搜尋特定的訊息。 其中任何一個（或組合）都是有效的搜尋準則。 您也可以指定搜尋的初始方向。 對話方塊中的欄位會預先載入目前選取的訊息屬性。
