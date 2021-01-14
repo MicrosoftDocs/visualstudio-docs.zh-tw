@@ -7,17 +7,19 @@ ms.custom:
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
+f1_keywords:
+- project.addnewitem
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa347b7f789e24e7cdd3baa19a6267f0ecdf2e5
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 3e27eb0cc102740f7ca344099486b73be41c5412
+ms.sourcegitcommit: 208f75ad89ad91b994701bb5cbc0a251fbaa3604
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727511"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98166832"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>專案和解決方案簡介
 
@@ -277,7 +279,7 @@ ms.locfileid: "97727511"
 
 1. 探索專案屬性頁的一些其他索引標籤 (例如 [建置] 和 [偵錯])。 不同專案類型的這些索引標籤不同。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 ::: moniker range="vs-2017"
 
@@ -307,7 +309,7 @@ ms.locfileid: "97727511"
 
 ::: moniker-end
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用專案和方案](../ide/creating-solutions-and-projects.md)
 - [管理專案和解決方案屬性](../ide/managing-project-and-solution-properties.md)
