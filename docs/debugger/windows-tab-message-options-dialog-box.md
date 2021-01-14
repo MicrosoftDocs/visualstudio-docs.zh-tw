@@ -1,5 +1,7 @@
 ---
 title: 訊息選項對話方塊、視窗索引標籤 |Microsoft Docs
+description: 使用訊息選項的 [Windows] 索引標籤，即可指定要顯示其訊息的視窗。 請參閱這篇文章，以取得設定的說明。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 320a31afcbe4d99518ce92002e8e2733fded9164
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929176"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205407"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>訊息選項對話方塊、視窗索引標籤
 您可以使用 [ **Windows** ] 索引標籤來設定 [ [訊息] 視圖](../debugger/messages-view.md)中列出的訊息範圍。 若要顯示 [[訊息選項] 對話方塊](../debugger/message-options-dialog-box.md)，請從 [ **Spy** ] 功能表選擇 [**記錄訊息**]。

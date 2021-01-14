@@ -1,5 +1,7 @@
 ---
 title: 專案設計工具、偵錯頁
+description: '使用 [專案設計工具] 的 [偵錯工具] 頁面，即可設定 Visual Basic 或 c # 專案中的偵錯工具屬性。 請參閱這篇文章，以取得設定的說明。'
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -14,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8567b762e9858205e3ca8d6aafa8a3dba17a90fe
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418739"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205771"
 ---
 # <a name="debug-page-project-designer"></a>專案設計工具、偵錯頁
 
-使用專案設計工具**** 的 [偵錯頁面]**** 設定在 Visual Basic 或 C# 專案中的偵錯行為屬性。
+使用專案設計工具的 [偵錯頁面] 設定在 Visual Basic 或 C# 專案中的偵錯行為屬性。
 
-若要存取 [偵錯]**** 頁面，請選取方案總管**** 中的專案節點。 在 [**專案**] 功能表上，選擇 [ ** \<ProjectName> 屬性**]。 當專案設計工具**** 出現時，請按一下 [偵錯]**** 索引標籤。
+若要存取 [偵錯] 頁面，請選取方案總管中的專案節點。 在 [**專案**] 功能表上，選擇 [ **\<ProjectName> 屬性**]。 當專案設計工具出現時，請按一下 [偵錯] 索引標籤。
 
 > [!NOTE]
 > 本主題不適用於 UWP 應用程式。 若為 UWP 應用程式，請參閱[啟動偵錯工作階段 (VB、C#、C++ 和 XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
@@ -36,15 +38,15 @@ ms.locfileid: "85418739"
 
 **設定**
 
-指定要顯示或修改的組態設定。 設定可以是 [偵錯]**** (預設)、[發行]**** 或 [所有設定]****。
+指定要顯示或修改的組態設定。 設定可以是 [偵錯] (預設)、[發行] 或 [所有設定]。
 
 **平台**
 
-指定要顯示或修改的平台設定。 選項可以包括 [任何 CPU]**** (預設)、[x64]**** 和 [x86]****。
+指定要顯示或修改的平台設定。 選項可以包括 [任何 CPU] (預設)、[x64]和 [x86]。
 
 ## <a name="start-action"></a>起始動作
 
-**起始動作**指出在對應用程式進行偵錯時要啟動的項目：專案、自訂程式、URL 或不啟動任何項目。 根據預設，這個選項會設為 [起始專案]****。 [偵錯]**** 頁面上的 [起始動作]**** 設定會決定 `StartAction` 屬性的值。
+**起始動作** 指出在對應用程式進行偵錯時要啟動的項目：專案、自訂程式、URL 或不啟動任何項目。 根據預設，這個選項會設為 [起始專案]。 [偵錯] 頁面上的 [起始動作] 設定會決定 `StartAction` 屬性的值。
 
 **起始專案**
 
@@ -82,10 +84,10 @@ ms.locfileid: "85418739"
 
 選取或清除此核取方塊，可啟用或停用從 Visual Basic 應用程式進行 SQL 程序的偵錯。 依預設，不會勾選此核取方塊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯工具簡介](../../debugger/debugger-feature-tour.md)
-- [C# 偵錯組態的專案設定](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Project Settings for a Visual Basic Debug Configuration](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [C # Debug 設定的專案設定](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Visual Basic Debug 設定的專案設定](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [保護 ClickOnce 應用程式](../../deployment/securing-clickonce-applications.md)
 - [如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)

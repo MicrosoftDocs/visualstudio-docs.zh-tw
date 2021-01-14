@@ -1,5 +1,7 @@
 ---
 title: 使用主控台來調試 JavaScript |Microsoft Docs
+description: 使用 Visual Studio 中的 [JavaScript 主控台] 視窗，與使用 JavaScript 建立的通用 Windows 平臺 (UWP) 應用程式進行互動和偵錯工具。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 8a2b2e82e664abea1a53112776dc0ec3ec5f1259
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211072"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205004"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用主控台來調試 JavaScript
 
@@ -58,7 +60,7 @@ ms.locfileid: "91211072"
 
 2. 選擇 [ **JavaScript**  >  **Windows 通用**]，然後選擇 [ **WinJS 應用程式**]。
 
-3. 輸入專案的名稱，例如 `FlipViewApp`，然後選擇 [確定] **** 建立應用程式。
+3. 輸入專案的名稱，例如 `FlipViewApp`，然後選擇 [確定]  建立應用程式。
 
 4. 在 index.html 的 BODY 元素中，以下列程式碼取代現有的 HTML 程式碼：
 
@@ -188,7 +190,7 @@ ms.locfileid: "91211072"
 
 17. 在 [DOM 總管] 中，您可以看到更新的 DIV 項目，而且您可以巡覽至樹狀子目錄，以尋找預期的 IMG 項目。
 
-18. 選擇 [ **Debug**  >  **停止調試**程式] 或按 Shift + F5 來停止偵錯工具，然後修正原始程式碼。
+18. 選擇 [ **Debug**  >  **停止調試** 程式] 或按 Shift + F5 來停止偵錯工具，然後修正原始程式碼。
 
     如需包含已更正範例程式碼的完整 default.html 頁面，請參閱[對 HTML、CSS 和 JavaScript 範例程式碼進行偵錯](../debugger/debug-html-css-and-javascript-sample-code.md)。
 
@@ -241,15 +243,15 @@ ms.locfileid: "91211072"
 當您執行指令碼時，多行模式不會清除輸入提示。 當您從多行模式切換至單行模式時，可以按下 [ **清除輸入** ] (紅色的 "X" ) 來清除輸入行。 若要在多行模式下執行指令碼，請按 Ctrl+Enter 或選擇視窗右下角的箭頭符號。
 
 ## <a name="switching-the-script-execution-context"></a><a name="Switching"></a> 切換腳本執行內容
-[JavaScript 主控台] 視窗可讓您一次與一個單一執行內容 (表示 Web 平台主機 (WWAHost.exe) 的單一執行個體) 互動。 在某些情況下，您的 App 可能會啟動主機的另一個執行個體，例如當您使用 `iframe`、共用合約、Web 背景工作或 `WebView` 控制項時。 如果主機的另一個執行個體正在執行，您可以在 [目標] **** 清單中選取執行內容，以便在執行 App 的同時，選取不同的執行內容。
+[JavaScript 主控台] 視窗可讓您一次與一個單一執行內容 (表示 Web 平台主機 (WWAHost.exe) 的單一執行個體) 互動。 在某些情況下，您的 App 可能會啟動主機的另一個執行個體，例如當您使用 `iframe`、共用合約、Web 背景工作或 `WebView` 控制項時。 如果主機的另一個執行個體正在執行，您可以在 [目標]  清單中選取執行內容，以便在執行 App 的同時，選取不同的執行內容。
 
 下圖顯示 [JavaScript 主控台] 視窗中的 [目標] 清單。
 
 ![JavaScript 主控台視窗中的目標選項](../debugger/media/js_console_target.png "JS_Console_Target")
 
-您也可以使用 `cd` 命令來切換執行內容，但是必須知道另一個執行內容的名稱，而且您使用的參考必須在範圍內。 [目標] **** 清單提供更好的方式讓您存取其他執行內容。
+您也可以使用 `cd` 命令來切換執行內容，但是必須知道另一個執行內容的名稱，而且您使用的參考必須在範圍內。 [目標]  清單提供更好的方式讓您存取其他執行內容。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Debug apps in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)

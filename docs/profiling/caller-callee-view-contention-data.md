@@ -1,6 +1,6 @@
 ---
 title: 呼叫端 - 被呼叫端檢視 - 爭用資料 | Microsoft Docs
-description: 深入瞭解呼叫端/被呼叫端的視圖如何顯示所選函式的爭用資訊，以及其在效能總管中的父系和子函數。
+description: 深入瞭解呼叫端/被呼叫端的視圖如何在效能總管中顯示所選函式的爭用資訊，以及其父系和子函數。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b51504d029c1e723321c8c92df28a2ecad1fd1a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: ab622ffda91e6ea9020fb8caa6af2fb460128f17
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150908"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204796"
 ---
 # <a name="callercallee-view----contention-data"></a>呼叫端/被呼叫端檢視 - 爭用資料
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的爭用資訊。 [呼叫端/被呼叫端] 檢視包含三個方格。
@@ -29,7 +29,7 @@ ms.locfileid: "98150908"
 
  **目前的函式所呼叫的函式** 會顯示在下方方格中，並顯示所選取函式之被呼叫端 (子) 函式 (由目前函式所呼叫) 的爭用資訊。
 
-|Column|描述|
+|資料行|描述|
 |------------|-----------------|
 |**型別**|函式的內容︰<br /><br /> -   **0** -目前的函式<br />-   **1** -呼叫目前函式的函式<br />-   **2** -目前的函式所呼叫的函式<br /><br /> 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
 |**專有封鎖時間**|- 如果是目前的函式，即為此函式已遭封鎖而無法執行函式主體中之程式碼的時間。 不包括函式所呼叫之函式的封鎖時間。<br />- 如果是呼叫端函式，即為目前函式專有封鎖時間的部分，這會發生在此函式呼叫目前的函式時。<br />- 如果是被呼叫端函式，即為此函式已遭封鎖，而無法在目前函式呼叫此函式時執行本身程式碼的時間。 不包括被呼叫端函式所呼叫之子函式的封鎖時間。|
@@ -50,7 +50,7 @@ ms.locfileid: "98150908"
 |**根函式名稱**|目前函數的名稱。 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
 |**來源檔案**|含有這個函式定義的原始程式檔。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
 - [呼叫端/被呼叫者視圖](../profiling/caller-callee-view.md)
 - [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)

@@ -1,5 +1,7 @@
 ---
 title: 分析效能工具資料 | Microsoft Docs
+description: 瞭解 Visual Studio 分析工具提供來分析效能問題的效能報告和觀點。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 90752fd8e34769530f1b95dd439a46c71fe985a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f11873a3e101c0c37d327d6869ee63fe48f5f42
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779827"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205342"
 ---
 # <a name="analyze-performance-tools-data"></a>分析效能工具資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的效能報表可讓您檢視並分析應用程式效能問題。 本節提供可用來檢查效能資料的效能報告和檢視概觀。
@@ -40,7 +42,7 @@ ms.locfileid: "74779827"
 
 - [儲存和匯出效能工具資料](../profiling/saving-and-exporting-performance-tools-data.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [效能總管](../profiling/performance-explorer.md)
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

@@ -1,5 +1,7 @@
 ---
 title: 使用 Windows Installer 安裝 Vspackage |Microsoft Docs
+description: 瞭解如何使用 Microsoft Windows Installer 安裝 VSPackage 及其相依的檔案，並將它們登錄並整合到 Visual Studio。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a7ace9203cd8f21a9e9ab5dc525bf604aeff678
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ec49e5184071e0640d671ba0baaad8ac049fea25
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012200"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205226"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>使用 Windows Installer 安裝 VSPackage
 將您的 VSPackage 整合到 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 需要的不只是將檔案複製到使用者的電腦。 VSPackage 的安裝程式必須安裝 VSPackage 和其相依的檔案，並將其註冊並整合到中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 您的 VSPackage 可以利用整合功能，例如在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 啟動顯示畫面和 [關於] 對話方塊中顯示圖示。

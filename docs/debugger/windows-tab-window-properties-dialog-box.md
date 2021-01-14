@@ -1,5 +1,7 @@
 ---
 title: 視窗屬性對話方塊、視窗索引標籤 |Microsoft Docs
+description: 使用 Windows [屬性] 的 [Windows] 索引標籤，即可顯示與所選取視窗相關的視窗資訊。 請參閱這篇文章以取得這些設定。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1015741b2a1e7ba1608eea7f198b726e808f7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03cbcee265855c0e3ee26f75d5937315d64661a2
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900779"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205394"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、視窗索引標籤
 使用 [ **Windows** ] 索引標籤，即可顯示與所選取視窗相關之視窗的資訊。 若要顯示 [ [視窗屬性] 對話方塊](../debugger/window-properties-dialog-box.md)，請將焦點移至 [ [Windows View](../debugger/windows-view.md) ] 視窗。 選取樹狀結構中的任何視窗節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。

@@ -1,6 +1,7 @@
 ---
 title: 遠端偵錯 ASP.NET Core 在遠端 IIS 電腦上 |Microsoft Docs
-ms.custom: remotedebugging
+description: 使用 Visual Studio 遠端偵錯程式，來對已部署至遠端 Internet Information Services 的 ASP.NET Core 應用程式進行 (IIS) 電腦的偵錯工具。
+ms.custom: remotedebugging, SEO-VS-2020
 ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: bc746d5139b897d51d4d038f077906f56aa5d552
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298763"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205810"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>遠端偵錯 ASP.NET Core 在 Visual Studio 的遠端 IIS 電腦上
 
@@ -56,10 +57,10 @@ ms.locfileid: "92298763"
 1. 建立新的 ASP.NET Core Web 應用程式。
 
     ::: moniker range=">=vs-2019"
-    在 Visual Studio 2019 中，輸入 **Ctrl + Q** 以開啟 [搜尋] 方塊，輸入 **asp.net**，選擇 [ **範本**]，然後選擇 [ **建立新的 ASP.NET Core Web 應用程式**]。 在出現的對話方塊中，將專案命名為 **MyASPApp**，然後選擇 [ **建立**]。 接著，選擇 [ **Web 應用程式] (模型-視圖控制器) **]，然後選擇 [ **建立**]。
+    在 Visual Studio 2019 中，輸入 **Ctrl + Q** 以開啟 [搜尋] 方塊，輸入 **asp.net**，選擇 [ **範本**]，然後選擇 [ **建立新的 ASP.NET Core Web 應用程式**]。 在出現的對話方塊中，將專案命名為 **MyASPApp**，然後選擇 [ **建立**]。 接著，選擇 [ **Web 應用程式] (模型-視圖控制器)**]，然後選擇 [ **建立**]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在 Visual Studio 2017 中，選擇 [檔案] **> [新的 > 專案**]，然後選取 [ **Visual c # > Web > ASP.NET Core web 應用程式**]。 在 [ASP.NET Core 範本] 區段中，選取 [ **Web 應用程式] ([模型-視圖控制器]) **。 確定已選取 [ASP.NET Core 2.1]，但未選取 [ **啟用 Docker 支援** ]，並將 [ **驗證** ] 設定為 [ **無驗證**]。 將專案命名為 **MyASPApp**。
+    在 Visual Studio 2017 中，選擇 [檔案] **> [新的 > 專案**]，然後選取 [ **Visual c # > Web > ASP.NET Core web 應用程式**]。 在 [ASP.NET Core 範本] 區段中，選取 [ **Web 應用程式] ([模型-視圖控制器])**。 確定已選取 [ASP.NET Core 2.1]，但未選取 [ **啟用 Docker 支援** ]，並將 [ **驗證** ] 設定為 [ **無驗證**]。 將專案命名為 **MyASPApp**。
     ::: moniker-end
 
 4. 開啟 About.cshtml.cs 檔案，並在 `OnGet` 舊版範本的方法 (中設定中斷點，改為開啟 HomeController.cs，然後在方法) 中設定中斷點 `About()` 。
@@ -108,7 +109,7 @@ ms.locfileid: "92298763"
 
 ### <a name="configure-the-aspnet-core-web-site"></a>設定 ASP.NET Core 網站
 
-1. 在 [IIS 管理員] 的左窗格中，選取 [ **連接**] 底下的 [ **應用程式**集區]。 開啟 **DefaultAppPool** ，並將 **.net CLR 版本** 設為 [ **沒有 Managed 程式碼**]。 這是 ASP.NET Core 的必要項。 預設的網站會使用 DefaultAppPool。
+1. 在 [IIS 管理員] 的左窗格中，選取 [ **連接**] 底下的 [ **應用程式** 集區]。 開啟 **DefaultAppPool** ，並將 **.net CLR 版本** 設為 [ **沒有 Managed 程式碼**]。 這是 ASP.NET Core 的必要項。 預設的網站會使用 DefaultAppPool。
 
 2. 停止並重新啟動 DefaultAppPool。
 
@@ -126,7 +127,7 @@ ms.locfileid: "92298763"
 
 應用程式部署成功之後，它應該會自動啟動。 如果應用程式不是從 Visual Studio 啟動，請在 IIS 中啟動應用程式，以確認它是否正確執行。 針對 ASP.NET Core，您也必須確定 **DefaultAppPool** 的 [應用程式集區] 欄位設定為 [ **沒有 Managed 程式碼**]。
 
-1. 在 [**設定**] 對話方塊中，按一下 [**下一步]** 來啟用偵錯工具，選擇**調試**程式設定，然後選擇 [檔案**發行**選項] 下的 [**移除目的地的其他**檔案]。
+1. 在 [**設定**] 對話方塊中，按一下 [**下一步]** 來啟用偵錯工具，選擇 **調試** 程式設定，然後選擇 [檔案 **發行** 選項] 下的 [**移除目的地的其他** 檔案]。
 
     > [!IMPORTANT]
     > 如果您選擇發行設定，就會在發行時停用 *web.config* 檔案中的調試。
@@ -141,17 +142,17 @@ ms.locfileid: "92298763"
 
 1. 開啟 Windows 檔案總管，然後建立新的資料夾 **C:\Publish**，您稍後將在其中部署 ASP.NET Core 專案。
 
-2. 如果尚未開啟，請開啟 **Internet Information Services (IIS) 管理員**。  (在 [伺服器管理員] 的左窗格中，選取 [ **IIS**]。 以滑鼠右鍵按一下伺服器，然後選取 [Internet Information Services (IIS) 管理員]****。)
+2. 如果尚未開啟，請開啟 **Internet Information Services (IIS) 管理員**。  (在 [伺服器管理員] 的左窗格中，選取 [ **IIS**]。 以滑鼠右鍵按一下伺服器，然後選取 [Internet Information Services (IIS) 管理員]。)
 
 3. 在左窗格的 [ **連接** ] 底下，移至 [ **網站**]。
 
 4. 選取 [ **預設的網站**]，選擇 [ **基本設定**]，並將 [ **實體路徑** ] 設定為 [ **C:\Publish**]。
 
-4. 以滑鼠右鍵按一下 [預設的網站] **** 節點，並選取 [加入應用程式] ****。
+4. 以滑鼠右鍵按一下 [預設的網站]  節點，並選取 [加入應用程式] 。
 
 5. 將 [ **別名** ] 欄位設定為 **MyASPApp**、接受預設的應用程式集區 (**DefaultAppPool**) ，然後將 **實體路徑** 設定為 **C:\Publish**。
 
-6. 在 [ **連接**] 底下，選取 [ **應用程式**集區]。 開啟 **DefaultAppPool** ，並將 [應用程式集區] 欄位設定為 [ **沒有 Managed 程式碼**]。
+6. 在 [ **連接**] 底下，選取 [ **應用程式** 集區]。 開啟 **DefaultAppPool** ，並將 [應用程式集區] 欄位設定為 [ **沒有 Managed 程式碼**]。
 
 7. 在 [IIS 管理員] 中的新網站上按一下滑鼠右鍵，選擇 [ **編輯許可權**]，並確定 [IUSR]、[IIS_IUSRS] 或設定為存取 web 應用程式的使用者，都是具有 [讀取] & [執行] 許可權的授權使用者。
 
@@ -186,26 +187,26 @@ ms.locfileid: "92298763"
     > [!TIP]
     > 在 Visual Studio 2017 和更新版本中，您可以使用 **Debug > 重新附加至進程 ...** (Shift + Alt + P) ，重新附加至您先前附加的相同進程。
 
-3. 將 [辨識符號] 欄位設定為 **\<remote computer name>** ，然後按 **enter**鍵。
+3. 將 [辨識符號] 欄位設定為 **\<remote computer name>** ，然後按 **enter** 鍵。
 
-    確認 Visual Studio 將必要的埠新增至電腦名稱稱，其格式如下： ** \<remote computer name> :p 從排序 o**
+    確認 Visual Studio 將必要的埠新增至電腦名稱稱，其格式如下： **\<remote computer name> :p 從排序 o**
 
     ::: moniker range=">=vs-2019"
-    在 Visual Studio 2019 上，您應該會看到** \<remote computer name> ： 4024**
+    在 Visual Studio 2019 上，您應該會看到 **\<remote computer name> ： 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在 Visual Studio 2017 上，您應該會看到** \<remote computer name> ： 4022**
+    在 Visual Studio 2017 上，您應該會看到 **\<remote computer name> ： 4022**
     ::: moniker-end
     需要端口。 如果您沒有看到埠號碼，請以手動方式新增。
 
-4. 按一下 [重新整理]****。
-    您應該會看到有些處理程序會出現在 [可使用的處理序] **** 視窗。
+4. 按一下 [重新整理]。
+    您應該會看到有些處理程序會出現在 [可使用的處理序]  視窗。
 
     如果您看不到任何進程，請嘗試使用 IP 位址，而不是遠端電腦名稱稱 (需要) 埠。 您可以 `ipconfig` 在命令列中使用，以取得 IPv4 位址。
 
     如果您想要使用 [ **尋找** ] 按鈕，您可能需要在伺服器上 [開啟 UDP 埠 3702](#bkmk_openports) 。
 
-5. 核取 [顯示所有使用者的處理序]  ****。
+5. 核取 [顯示所有使用者的處理序]  。
 
 6. 輸入您的進程名稱的第一個字母，以快速尋找您的應用程式。
 
@@ -222,9 +223,9 @@ ms.locfileid: "92298763"
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
     ::: moniker-end
 
-7. 按一下 [附加] ****。
+7. 按一下 [附加] 。
 
-8. 開啟遠端電腦的網站。 在瀏覽器中，移**至 \<remote computer name> HTTP://**。
+8. 開啟遠端電腦的網站。 在瀏覽器中，移 **至 \<remote computer name> HTTP://**。
 
     您應該會看到 ASP.NET 網頁。
 
@@ -261,7 +262,7 @@ ms.locfileid: "92298763"
 5. 選取要為埠啟用的一或多個網路類型，然後按 **[下一步]**。
 
     您選取的類型必須包括遠端電腦連線的網路。
-6. 針對輸入規則新增 (的名稱，例如 **IIS**、 **Web Deploy**或 **Msvsmon**) ，然後按一下 **[完成]**。
+6. 針對輸入規則新增 (的名稱，例如 **IIS**、 **Web Deploy** 或 **Msvsmon**) ，然後按一下 **[完成]**。
 
     您應該會在 [輸入規則] 或 [輸出規則] 清單中看到您的新規則。
 

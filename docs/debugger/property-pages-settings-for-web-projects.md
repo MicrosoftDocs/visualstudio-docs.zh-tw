@@ -1,6 +1,7 @@
 ---
 title: Web 專案的屬性設定 |Microsoft Docs
-ms.custom: seodec18
+description: 瞭解如何在 Visual Studio 的 [屬性頁] 對話方塊中，變更網站偵錯工具的屬性設定。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,15 +22,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7daa58004b118d46a8248428e9a9d242dfccef8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86f15a6fa622bf7938740111705a295e09f3e443
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72730601"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205550"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 專案的屬性頁設定
-您可以在 [屬性頁]**** 對話方塊中使用[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)中所討論的方法，變更網站偵錯組態的屬性設定。 下表顯示 [屬性頁]**** 對話方塊中與偵錯工具相關的設定位置。
+您可以在 [屬性頁] 對話方塊中使用[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)中所討論的方法，變更網站偵錯組態的屬性設定。 下表顯示 [屬性頁] 對話方塊中與偵錯工具相關的設定位置。
 
 ### <a name="start-options-category"></a>開始選項分類
 
@@ -43,14 +44,14 @@ ms.locfileid: "72730601"
 | **工作目錄：** | 指定為程式偵錯時的工作目錄。 在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 中，工作目錄預設為啟動應用程式的來源目錄：\bin\debug。 |
 | **起始 URL** | 指定您要偵錯的 Web 應用程式之位置。 |
 | **不要開啟頁面。等候來自外部應用程式的要求** | 等候來自外部應用程式的要求。 這個選項不會啟動 Internet Explorer 或其他應用程式。 只會在應用程式呼叫時準備進行偵錯。 |
-| **Server** | 標題，用以分類與使用的伺服器相關的選項。 |
+| **伺服器** | 標題，用以分類與使用的伺服器相關的選項。 |
 | **使用預設網頁伺服器** | 使用預設的 Web 伺服器。 |
 | **使用自訂伺服器** | 允許您輸入基礎 URL 用以做為伺服器。 |
 | **偵錯工具** | 標題，用以分類與要進行之偵錯類型相關的選項。 |
-| **ASP.NET 偵錯** | 啟用為 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 開發平台所撰寫的伺服器頁面偵錯。 您必須在 [起始 URL]**** 中指定 URL。 |
+| **ASP.NET 偵錯** | 啟用為 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 開發平台所撰寫的伺服器頁面偵錯。 您必須在 [起始 URL] 中指定 URL。 |
 | **機器碼偵錯** | 讓您可以從 Managed 應用程式偵錯原生 (Unmanaged) Win32 程式碼的呼叫。 |
 | **SQL Server 偵錯** | 允許 SQL Server 資料庫物件偵錯。 |
 | **Silverlight 調試** | 允許偵錯 Silverlight 元件。 |
 
-## <a name="see-also"></a>另請參閱
-- [偵錯設定及準備](../debugger/debugger-settings-and-preparation.md)
+## <a name="see-also"></a>請參閱
+- [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)

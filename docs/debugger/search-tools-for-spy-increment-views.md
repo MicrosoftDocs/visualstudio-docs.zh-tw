@@ -1,5 +1,7 @@
 ---
 title: Spy + + Views 的搜尋工具 |Microsoft Docs
+description: 請參閱指定 Spy + + Views 視窗將顯示哪些資料的對話方塊。 對話方塊包括尋找視窗、視窗搜尋、訊息搜尋、進程搜尋和執行緒搜尋。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df3b27164eab0b78cdce72a8f938cb6e9743bcf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e302e9d5e9cc90a03afa5b7f0f6cc6e800287c7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902644"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204842"
 ---
 # <a name="search-tools-for-spy-views"></a>Spy++ 檢視的搜尋工具
 使用這些對話方塊來指定 Spy + + Views 視窗將顯示的資料：

@@ -1,5 +1,7 @@
 ---
 title: 分析 .NET 非同步程式碼的效能 |Microsoft Docs
+description: 使用 .NET Async 工具來分析非同步程式碼的效能。 列出每個工作的時間。 若要查看程式碼，請使用 [移至原始程式檔]。
+ms.custom: SEO-VS-2020
 ms.date: 5/5/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,19 +11,19 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f690b77b7e573fdf1c54fdaeca6237c6bbc146
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 86575cd71c41ac8ac874e9b62f8273ee46e02c57
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037539"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205485"
 ---
 # <a name="analyze-performance-of-net-asynchronous-code"></a>分析 .NET 非同步程式碼的效能
 
 使用 .NET Async 工具來分析應用程式中非同步程式碼的效能。
 
 > [!NOTE]
-> .NET Async 工具需要 Visual Studio 2019 16.7 版或更新版本，以及使用 **Async** 和 **await**的 .net 專案。
+> .NET Async 工具需要 Visual Studio 2019 16.7 版或更新版本，以及使用 **Async** 和 **await** 的 .net 專案。
 
 ## <a name="setup"></a>安裝程式
 
@@ -41,12 +43,12 @@ ms.locfileid: "90037539"
 
 非同步事件會依時間順序組織成活動。 每個都會顯示其開始時間、結束時間和持續時間。
 
-對應至工作的每個資料 [列都會標示](/dotnet/api/system.threading.tasks) 于 [ **名稱** ] 資料行中。 針對無法解析的任何工作名稱，會顯示 [標籤] **中** 的工作。 後面接著工作發生的方法名稱。 如果非同步活動未在收集會話內完成，則 [**結束時間**] 資料行中會出現**不完整**的標籤。
+對應至工作的每個資料 [列都會標示](/dotnet/api/system.threading.tasks) 于 [ **名稱** ] 資料行中。 針對無法解析的任何工作名稱，會顯示 [標籤] **中** 的工作。 後面接著工作發生的方法名稱。 如果非同步活動未在收集會話內完成，則 [**結束時間**] 資料行中會出現 **不完整** 的標籤。
 
 若要進一步調查特定的工作或活動，請在資料列上按一下滑鼠右鍵。 然後選取 [ **移至原始** 程式檔]，以查看程式碼中活動發生的位置。
 
 ![.NET Async 已選取 [移至原始檔] 檔案的工具](../profiling/media/async-tool-gotosource.png ".NET Async 已選取 [移至原始檔] 檔案的工具")
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [優化 Profiler 設定](../profiling/optimize-profiler-settings.md)

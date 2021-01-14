@@ -1,5 +1,7 @@
 ---
 title: 讓命令可供使用 |Microsoft Docs
+description: 瞭解如何使用延遲的載入、內容和可見度，來控制在 Vspackage 中新增至 Visual Studio IDE 之命令的可用性。
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d64df85516e0a1ac326f8d40558755718c4644c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707326"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204531"
 ---
 # <a name="making-commands-available"></a>讓命令可供使用
 
@@ -51,11 +53,11 @@ ms.locfileid: "80707326"
 
 ## <a name="current-context-and-the-visibility-of-commands"></a>目前的內容和命令的可見度
 
-您可以根據目前的 VSPackage 資料狀態或目前相關的動作，將 VSPackage 命令程式設計為可見或隱藏。 您可以啟用 VSPackage 來設定其命令的狀態（通常是藉由使用介面的方法實作為 <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ），但這需要先載入 VSPackage，才能執行程式碼。 相反地，我們建議您啟用 IDE 來管理命令的可見度，而不需要載入封裝。 若要這樣做，請在 .vsct 檔案中，將命令與一或多個特殊的 UI 內容產生關聯。 這些 UI 內容是由稱為 *命令內容 guid*的 guid 所識別。
+您可以根據目前的 VSPackage 資料狀態或目前相關的動作，將 VSPackage 命令程式設計為可見或隱藏。 您可以啟用 VSPackage 來設定其命令的狀態（通常是藉由使用介面的方法實作為 <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ），但這需要先載入 VSPackage，才能執行程式碼。 相反地，我們建議您啟用 IDE 來管理命令的可見度，而不需要載入封裝。 若要這樣做，請在 .vsct 檔案中，將命令與一或多個特殊的 UI 內容產生關聯。 這些 UI 內容是由稱為 *命令內容 guid* 的 guid 所識別。
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 監視使用者動作所產生的變更，例如載入專案或從編輯到建立。 發生變更時，會自動修改 IDE 的外觀。 下表顯示監視之 IDE 變更的四個主要內容 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-| 內容類型 | 說明 |
+| 內容類型 | 描述 |
 |-------------------------| - |
 | 作用中的專案類型 | 針對大部分的專案類型，這個值與執行 `GUID` 專案之 VSPackage 的 GUID 相同。 不過， [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 專案會使用專案類型 `GUID` 作為值。 |
 | 使用中視窗 | 通常，這是最後一個使用中的文件視窗，可建立目前的 UI 內容以進行索引鍵系結。 不過，它也可能是具有類似于內部網頁瀏覽器之按鍵系結表的工具視窗。 針對多索引標籤式文件視窗（例如 HTML 編輯器），每個索引標籤都有不同的命令內容 `GUID` 。 |
@@ -147,7 +149,7 @@ ms.locfileid: "80707326"
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將命令新增至方案總管的工具列](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 - [VSPackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

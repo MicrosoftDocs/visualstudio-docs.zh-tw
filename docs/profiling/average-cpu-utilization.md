@@ -1,5 +1,7 @@
 ---
 title: 平均 CPU 使用率 | Microsoft Docs
+description: 使用量視圖的平均 CPU 使用率是分析的進程在進程持續期間內，系統邏輯核心的平均使用率。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +14,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01557fb378f03ffd033495ca42024c1143e67187
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4028dc413bd6ae6b9e9861c339faddf1550d4530
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62776994"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205680"
 ---
 # <a name="average-cpu-utilization"></a>平均 CPU 使用率
 針對已進行過程式碼剖析的處理序持續期間，顯示該處理序對系統邏輯核心的平均使用率。 圖形不會顯示哪一個特定核心在任何指定時間內呈現作用中狀態。 例如，如果有兩個核心在某個指定期間各以 50% 的產能執行，則此檢視將顯示使用了一個邏輯核心。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [核心檢視](../profiling/cores-view.md)
 - [CPU 使用率圖形](../profiling/cpu-utilization-graph.md)

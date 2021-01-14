@@ -1,5 +1,7 @@
 ---
 title: 專案子類型的初始化順序 |Microsoft Docs
+description: 瞭解 Visual Studio 環境中，以多個專案子類型匯總的專案系統的初始化順序。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05a3c312f61dd2b2c63c3f38ef8bac2203b326db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea784eae808cbab3a5991651961d3b150b641c04
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707624"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204705"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>專案子類型的初始化順序
 環境會呼叫的基底專案 factory，以建立專案 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> 。 當環境判斷專案檔延伸的專案類型 GUID 清單不是空的時，就會啟動專案子類型的結構。 專案檔延伸和專案 GUID 會指定專案為 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案類型。 例如，vbproj 副檔名和 {F184B08F-C81C-45F6-A57F-5ABD9991F28F} 會識別 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 專案。
@@ -131,7 +133,7 @@ HRESULT HrCreateInnerProj
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.Shell.Flavor>
 - [專案子類型](../../extensibility/internals/project-subtypes.md)

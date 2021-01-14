@@ -1,5 +1,7 @@
 ---
 title: Windows View |Microsoft Docs
+description: Windows View 會顯示所有視窗和控制項的樹狀結構。 您可以使用它做為起點來取得感興趣之 windows 的相關資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900851"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205368"
 ---
 # <a name="windows-view"></a>視窗檢視
 當您第一次開啟 Spy + + 時，Windows view 會顯示系統中所有視窗和控制項的樹狀結構。 系統會顯示視窗控制碼和類別名稱。 目前的桌面視窗位於樹狀結構的頂端。 所有其他視窗都是桌面的子系，並根據標準視窗階層列出。 Expansible 清單會以縮排方式顯示在其父代下方的 [同輩] 視窗。

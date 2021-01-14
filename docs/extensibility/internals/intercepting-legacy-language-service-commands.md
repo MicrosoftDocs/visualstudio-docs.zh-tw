@@ -1,5 +1,7 @@
 ---
 title: 攔截舊版語言服務命令 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 中使用命令篩選器來攔截舊版語言服務命令，並新增語言特定的行為。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5206bced8b4bfae32498434765e5c3f61801b386
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b67ffab5935b0e52ee6c403f2e38e7bbafab2d06
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707444"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205186"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>攔截舊版語言服務命令
 使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，您可以讓語言服務攔截文字視圖原本會處理的命令。 這適用于文字視圖無法管理的語言特定行為。 您可以從語言服務將一或多個命令篩選器新增至文字視圖，以攔截這些命令。

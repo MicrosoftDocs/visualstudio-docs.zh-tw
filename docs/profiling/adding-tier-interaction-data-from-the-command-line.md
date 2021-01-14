@@ -1,5 +1,7 @@
 ---
 title: 從命令列加入階層互動資料 | Microsoft Docs
+description: 對於與一或多個資料庫通訊的多層式應用程式，請使用階層互動分析來取得同步呼叫的執行時間資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5e3dc7fc3ebbb3d06e85f7322237ecb72b22b0e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779866"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205537"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>從命令列新增階層互動資料
 
 在與一或多個資料庫通訊的多階層應用程式函式中，階層互動分析提供會同步 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 呼叫執行時間的額外資訊。
 
-**Windows 8 和 Windows Server 2012**
+**Windows 8 與 Windows Server 2012**
 
 若要在 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式上收集階層互動資料，您必須使用檢測方法。 不支援收集 UWP 應用程式上的階層互動資料。
 
@@ -32,7 +34,7 @@ ms.locfileid: "74779866"
 
 **在遠端電腦上收集 TIP 資料**
 
-若要在遠端電腦上收集階層互動資料， ** \_ **您必須 _\<Platform>_ **\_** _\<Language>_ 從 Visual Studio 機的 _% VSInstallDir%_**\Team Tools\Performance Tools\Setups**資料夾中，將 vs_profiler **.exe**檔案複製到遠端電腦，並加以安裝。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
+若要在遠端電腦上收集階層互動資料， **\_** 您必須 _\<Platform>_ **\_** _\<Language>_ 從 Visual Studio 機的 _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** 資料夾中，將 vs_profiler **.exe** 檔案複製到遠端電腦，並加以安裝。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
 
 **TIP 報告**
 
@@ -50,7 +52,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 ### <a name="profile-a-windows-desktop-application-example"></a>對 Windows 傳統型應用程式進行分析的範例
 
-1. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]****，然後依序指向 [所有程式]**** 和 [附屬應用程式]****。 以滑鼠右鍵按一下 [ **命令提示**字元]，然後按一下 [以 **系統管理員身分執行**]。
+1. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]，然後依序指向 [所有程式] 和 [附屬應用程式]。 以滑鼠右鍵按一下 [ **命令提示** 字元]，然後按一下 [以 **系統管理員身分執行**]。
 
 2. 初始化 .NET 程式碼剖析和 TIP 環境變數。 輸入下列命令：
 
@@ -93,7 +95,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 1. 如有必要，請安裝服務。
 
-2. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]****，然後依序指向 [所有程式]**** 和 [附屬應用程式]****。 以滑鼠右鍵按一下 [ **命令提示**字元]，然後按一下 [以 **系統管理員身分執行**]。
+2. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]，然後依序指向 [所有程式] 和 [附屬應用程式]。 以滑鼠右鍵按一下 [ **命令提示** 字元]，然後按一下 [以 **系統管理員身分執行**]。
 
 3. 初始化 .NET 程式碼剖析環境變數。 輸入以下命令：
 

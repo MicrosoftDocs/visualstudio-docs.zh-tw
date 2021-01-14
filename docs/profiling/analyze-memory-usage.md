@@ -1,6 +1,7 @@
 ---
 title: 分析記憶體使用量
-ms.custom: seodec18
+description: 瞭解您可以用來找出記憶體流失和沒有效率的記憶體使用量的工具，例如記憶體使用量工具和 .NET 物件組態工具。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/12/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53d8e33555530eacf482f3f99752ea4c42f8d827
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 675636b7abca10fb2f9f1898d753155235830f86
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918093"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205719"
 ---
 # <a name="analyze-memory-usage"></a>分析記憶體使用量
 
@@ -31,7 +32,7 @@ C + + 開發人員可以使用偵錯工具整合式或非偵錯工具記憶體�
 - [使用偵錯工具分析記憶體使用量](../profiling/memory-usage.md)
 - [分析記憶體使用量 (不使用偵錯工具)](../profiling/memory-usage-without-debugging2.md)
 
-您可以在 Windows 7 及更新版本使用不具偵錯工具的分析工具。 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具]  視窗)。
+您可以在 Windows 7 及更新版本使用不具偵錯工具的分析工具。 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具] 視窗)。
 
 ## <a name="blogs-and-videos"></a>部落格和影片
 
@@ -39,7 +40,7 @@ C + + 開發人員可以使用偵錯工具整合式或非偵錯工具記憶體�
 
 [Visual C++ blog： Visual C++ 2015 中的記憶體分析](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

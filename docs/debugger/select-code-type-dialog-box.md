@@ -1,5 +1,7 @@
 ---
 title: 選取程式碼類型對話方塊 |Microsoft Docs
+description: 瞭解 Visual Studio 中的 [選取程式碼類型] 對話方塊。 若要開啟這個對話方塊，請開啟 [附加至處理序] 對話方塊，然後按一下 [選取] 按鈕。
+ms.custom: SEO-VS-2020
 ms.date: 06/12/2020
 ms.topic: reference
 f1_keywords:
@@ -23,20 +25,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6fefcea57b97ad3b31e4d10330756565c005184
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f73f2f56a4e60d0030d897d64662ad438027d41
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248774"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205511"
 ---
 # <a name="select-code-type-dialog-box"></a>選取程式碼類型對話方塊
 
-若要開啟這個對話方塊，請開啟 [附加至處理序]**** 對話方塊，然後按一下 [選取]**** 按鈕。
+若要開啟這個對話方塊，請開啟 [附加至處理序] 對話方塊，然後按一下 [選取] 按鈕。
 
 **自動判斷要進行偵錯工具的程式碼類型** 系統會根據正在執行的程式碼類型，選取適當的偵錯工具。
 
-將**這些程式碼類型進行偵錯工具：** 從提供的清單中，選擇您要進行偵錯工具代碼)  (s 類型。 當您針對 [附加失敗進行疑難排解](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md#BKMK_Troubleshoot_attach_errors)時，這會很有説明。 此選項會將偵測限制為只有您想要進行偵錯工具代碼的類型。
+將 **這些程式碼類型進行偵錯工具：** 從提供的清單中，選擇您要進行偵錯工具代碼)  (s 類型。 當您針對 [附加失敗進行疑難排解](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md#BKMK_Troubleshoot_attach_errors)時，這會很有説明。 此選項會將偵測限制為只有您想要進行偵錯工具代碼的類型。
 
 ::: moniker range=">=vs-2019"
 - Blazor WebAssembly -用戶端 Blazor WebAssembly
@@ -59,6 +61,6 @@ ms.locfileid: "88248774"
 
 在大部分的情況下，不支援在相同的偵錯工具會話中附加多個偵錯工具。 您可以使用 Visual Studio 的第二個實例來進行這項作業。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [附加到正在執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

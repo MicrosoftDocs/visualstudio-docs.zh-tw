@@ -1,5 +1,7 @@
 ---
 title: 執行語法著色 |Microsoft Docs
+description: 瞭解如何使用 managed package framework (MPF) 的 language service 功能，在 Visual Studio 中執行語法著色。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 195cf7a26b1615b7c56f3f0d06cfd9e0d44a4384
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905200"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204666"
 ---
 # <a name="implementing-syntax-coloring"></a>實作語法著色
 當語言服務提供語法顏色標示時，剖析器會將文字行轉換成可設定色彩專案的陣列，並傳回對應于這些可設定色彩專案的標記類型。 剖析器應該傳回屬於可設定色彩專案清單的 token 類型。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根據著色器物件指派給適當標記類型的屬性，顯示程式碼視窗中的每個可設定色彩專案。
@@ -62,7 +64,7 @@ ms.locfileid: "85905200"
 ## <a name="managed-package-framework-colorizer"></a>Managed 封裝架構著色器
  受控封裝架構 (MPF) 提供執行著色器所需的所有類別。 您的語言服務類別應該繼承 <xref:Microsoft.VisualStudio.Package.LanguageService> 類別，並執行必要的方法。 您必須藉由執行介面來提供掃描器和剖析器 <xref:Microsoft.VisualStudio.Package.IScanner> ，並從方法傳回該介面的實例， <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> (必須在類別) 中執行的其中一個方法 <xref:Microsoft.VisualStudio.Package.LanguageService> 。 如需詳細資訊，請參閱 [舊版語言服務中的語法標示](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何︰使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [自訂可設定色彩的項目](../../extensibility/internals/custom-colorable-items.md)
 - [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)

@@ -1,5 +1,7 @@
 ---
 title: 舊版語言服務總覽 |Microsoft Docs
+description: 瞭解 Visual Studio 中的舊版語言服務，以及受管理套件架構 (MPF) 語言服務類別所支援的功能。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aed653ec200063e72434fc758c7920e6caabafe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1ec349e38acbdb0271ecfb0c081b4f1aadadcd9
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707352"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204939"
 ---
 # <a name="legacy-language-service-overview"></a>舊版語言服務概觀
 語言服務提供編輯器支援，可讓您執行特定 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 功能。 受管理的封裝架構 (MPF) 語言服務類別可提供對常用功能的完整支援，以及其他功能的部分支援。
@@ -89,6 +91,6 @@ ms.locfileid: "80707352"
 
 - [在舊版語言服務中驗證中斷點](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [實作舊版語言服務](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [舊版語言服務的擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)

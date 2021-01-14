@@ -1,5 +1,7 @@
 ---
 title: 舊版語言服務功能 1 |Microsoft Docs
+description: 瞭解受管理套件架構 (的 Visual Studio 功能) 語言服務。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f2a4010529d3d9727ceb76d6a34f2cbc41b959
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e099798ff5fcc96e798742b16ba88e522a4bc0b
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238475"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205056"
 ---
 # <a name="legacy-language-service-features-1"></a>舊版語言服務功能1
 受控封裝架構 (MPF) 語言服務可支援一或多個 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 功能，例如語法醒目提示、IntelliSense 和中斷點驗證。 每項功能都可以獨立執行，但除了語法醒目提示以外，只需要掃描器，但全部都需要剖析器和掃描器。

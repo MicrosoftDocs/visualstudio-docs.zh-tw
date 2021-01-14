@@ -1,5 +1,7 @@
 ---
 title: 管理設定選項 |Microsoft Docs
+description: 瞭解如何在 Visual Studio 中管理專案和解決方案設定，以控制您的專案的建立、封裝、部署和執行方式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e18c308d74f8c20267c286c47d0e89bf82cd2850
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34f772b780cda825861e11e6816d1d88405f74e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707302"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204523"
 ---
 # <a name="managing-configuration-options"></a>管理組態選項
 當您建立新的專案類型時，您必須管理專案和方案設定，以決定如何建立、封裝、部署和執行您的專案。 下列主題討論專案和方案設定。
@@ -29,7 +31,7 @@ ms.locfileid: "80707302"
 
  說明使用者可使用屬性頁來查看和變更專案設定相依屬性和獨立屬性。
 
-- [方案組態](../../extensibility/internals/solution-configuration.md)
+- [解決方案設定](../../extensibility/internals/solution-configuration.md)
 
  提供儲存在解決方案設定中的資訊，以及解決方案設定如何指示 **Start** 和 **Build** 命令的行為。
 

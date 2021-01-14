@@ -1,5 +1,7 @@
 ---
 title: 舊版語言服務剖析器和掃描器 |Microsoft Docs
+description: 深入瞭解舊版語言服務剖析器和掃描器，以選取要顯示之程式碼的相關資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87f447a4b8bca804d27aae4967f4adaf389c627
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707319"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204601"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>舊版語言服務的剖析器和掃描器
 剖析器是語言服務的核心。 受管理的封裝架構 (MPF) 語言類別需要語言剖析器來選取要顯示之程式碼的相關資訊。 剖析器會將文字分隔為詞法標記，然後根據類型和功能來識別這些權杖。
@@ -42,13 +44,13 @@ namespace MyNamespace
 |權杖名稱|權杖類型|
 |----------------|----------------|
 |namespace、class、public、void、int|關鍵字 (keyword)|
-|=|! 運算子之後|
+|=|運算子|
 |{ } ( ) ;|分隔符號|
 |MyNamespace、MyClass、MyFunction、arg1、var1|識別碼 (identifier)|
-|MyNamespace|namespace|
+|MyNamespace|命名空間|
 |MyClass|Class - 類別|
 |MyFunction|method|
-|arg1|參數 (parameter)|
+|arg1|參數|
 |var1|區域變數 (local variable)|
 
  剖析器的角色是用來識別標記。 某些權杖可以有一種以上的類型。 剖析器識別出標記之後，語言服務可以使用此資訊來提供有用的功能，例如語法醒目提示、括弧對稱和 IntelliSense 作業。
@@ -68,7 +70,7 @@ namespace MyNamespace
 > [!CAUTION]
 > <xref:Microsoft.VisualStudio.Package.ParseRequest>結構包含物件的參考 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 。 這個 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 物件不能用在背景執行緒中。 事實上，許多基礎紙器類別都不能用在背景執行緒中。 其中包括 <xref:Microsoft.VisualStudio.Package.Source> 、 <xref:Microsoft.VisualStudio.Package.ViewFilter> 、 <xref:Microsoft.VisualStudio.Package.CodeWindowManager> 類別，以及直接或間接與視圖通訊的其他任何類別。
 
- 此剖析器通常會在第一次呼叫時剖析整個來源檔案，或在指定的剖析原因值時剖析 <xref:Microsoft.VisualStudio.Package.ParseReason> 。 後續的方法呼叫 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 會處理剖析程式碼的一小部分，而且可以使用先前的完整剖析作業結果更快速地執行。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法會透過和物件來傳達剖析作業的結果 <xref:Microsoft.VisualStudio.Package.AuthoringSink> <xref:Microsoft.VisualStudio.Package.AuthoringScope> 。 <xref:Microsoft.VisualStudio.Package.AuthoringSink>物件是用來收集特定剖析原因的資訊，例如，具有參數清單的相符大括弧或方法簽章範圍的相關資訊。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>提供宣告和方法簽章的集合，也支援 [移至 advanced] 編輯選項 (**移至 [定義**]、[**移至**宣告]、[**移至參考**]) 。
+ 此剖析器通常會在第一次呼叫時剖析整個來源檔案，或在指定的剖析原因值時剖析 <xref:Microsoft.VisualStudio.Package.ParseReason> 。 後續的方法呼叫 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 會處理剖析程式碼的一小部分，而且可以使用先前的完整剖析作業結果更快速地執行。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法會透過和物件來傳達剖析作業的結果 <xref:Microsoft.VisualStudio.Package.AuthoringSink> <xref:Microsoft.VisualStudio.Package.AuthoringScope> 。 <xref:Microsoft.VisualStudio.Package.AuthoringSink>物件是用來收集特定剖析原因的資訊，例如，具有參數清單的相符大括弧或方法簽章範圍的相關資訊。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>提供宣告和方法簽章的集合，也支援 [移至 advanced] 編輯選項 (**移至 [定義**]、[**移至** 宣告]、[**移至參考**]) 。
 
 ### <a name="the-iscanner-scanner"></a>IScanner 掃描器
  您也必須執行可執行檔掃描器 <xref:Microsoft.VisualStudio.Package.IScanner> 。 不過，因為此掃描器會透過類別逐行執行 <xref:Microsoft.VisualStudio.Package.Colorizer> ，所以通常更容易執行。 在每一行的開頭，MPF 會為類別提供 <xref:Microsoft.VisualStudio.Package.Colorizer> 一個值，以作為傳遞給掃描器的狀態變數使用。 在每一行的結尾，掃描器會傳回更新的狀態變數。 MPF 會快取每一行的這項狀態資訊，讓掃描器可以從任何一行開始剖析，而不需要從原始程式檔的開頭開始剖析。 這一行快速掃描，可讓編輯器為使用者提供快速的意見反應。
@@ -131,7 +133,7 @@ namespace MyNamespace
 
  <xref:Microsoft.VisualStudio.Package.AuthoringSink>物件會傳遞至剖析器作為物件的一部分 <xref:Microsoft.VisualStudio.Package.ParseRequest> ，並在 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 每次建立新物件時建立新的物件 <xref:Microsoft.VisualStudio.Package.ParseRequest> 。 此外，此 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 方法必須傳回 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 用來處理各種 IntelliSense 作業的物件。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>物件會維護宣告的清單，以及方法的清單，這些方法會根據剖析的原因來填入。 必須實作為 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 類別。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [實作舊版語言服務](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [舊版語言服務概觀](../../extensibility/internals/legacy-language-service-overview.md)
 - [舊版語言服務中的語法上色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

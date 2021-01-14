@@ -1,5 +1,7 @@
 ---
 title: 重新整理 UWP 應用程式 |Microsoft Docs
+description: 當您在進行偵錯工具時，對程式碼進行變更，然後在 Visual Studio 中使用 JavaScript 重新整理通用 Windows 平臺 (UWP) 應用程式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,16 +21,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: dd38a758a69b2e19079a2bc2511e7edf5cbfb0ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bce07008d285c6446d3fa8c79ce45c222c34bae
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348154"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204900"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>在 Visual Studio 中重新整理 UWP 應用程式
 
- 您可以在進行偵錯工具時對程式碼進行變更，然後選擇**調試**程式工具列上的 [重新整理**Windows 應用程式**] 按鈕，以使用 JavaScript 重新整理 UWP 應用程式。 選擇此按鈕隨即會重新載入應用程式，而不需要停止並重新開始偵錯工具。 重新整理功能可讓您修改 HTML、CSS 和 JavaScript 程式碼，並且快速查看結果。 UWP 應用程式支援這項功能。
+ 您可以在進行偵錯工具時對程式碼進行變更，然後選擇 **調試** 程式工具列上的 [重新整理 **Windows 應用程式**] 按鈕，以使用 JavaScript 重新整理 UWP 應用程式。 選擇此按鈕隨即會重新載入應用程式，而不需要停止並重新開始偵錯工具。 重新整理功能可讓您修改 HTML、CSS 和 JavaScript 程式碼，並且快速查看結果。 UWP 應用程式支援這項功能。
 
  重新整理不會維護您的應用程式狀態，也不會將下列變更反映給應用程式：
 
@@ -61,5 +63,5 @@ ms.locfileid: "85348154"
 
 8. 切換至應用程式。 應用程式會重載，並使用更新的 HTML 來呈現應用程式。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -1,5 +1,7 @@
 ---
 title: 可用的服務清單 |Microsoft Docs
+description: 查看 Visual Studio 和 Visual Studio SDK 支援的可用服務清單，包括用來取得每個服務介面的服務 Guid。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302d4bcff647a74acc973c47e0b62e66c86e5859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53ab3531e67be540f7c66da52b7e5152a510fa27
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707349"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204640"
 ---
 # <a name="list-of-available-services"></a>可用服務清單
 
@@ -58,7 +60,7 @@ ms.locfileid: "80707349"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeShareHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeShareHandler> | 是 | 是 | 內部服務。 請勿使用。 |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindow> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> | 是 | 是 | 提供可包含一或多個檔之程式碼視窗的存取權。 |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindowManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> | 是 | 是 | 讓 VSPackage 將變更新增至程式碼視窗，例如下拉清單欄。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCommandWindow> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow2> | 是 | 是 | 讓 VSPackage 透過 **命令視窗** 執行命令，並與 **命令視窗**互動。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCommandWindow> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow2> | 是 | 是 | 讓 VSPackage 透過 **命令視窗** 執行命令，並與 **命令視窗** 互動。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCommandWindowsCollection> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindowsCollection> | 否 | 是 | 讓 VSPackage 操作所維護的 **命令** 視窗清單 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsComplusLibrary> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibraryReferenceManager> | 是 | 是 | 讓 VSPackage 能夠將流覽資訊提供給 **物件瀏覽器**。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsComponentSelectorDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsComponentSelectorDlg> | 否 | 是 | 讓 VSPackage 支援 [ **加入參考** ] 選項，讓使用者選取要加入至專案的外部元件。 |
@@ -93,7 +95,7 @@ ms.locfileid: "80707349"
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsLinkedUndoTransactionManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> | 是 | 是 | 提供對連結的復原管理員的存取。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsMenuEditor> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsMenuEditorFactory> | 是 | 是 | 讓表單設計工具存取共用功能表編輯器。 可以查詢 IVsMenuEditorFactory <xref:Microsoft.VisualStudio.Shell.Interop.IVsMenuEditor> 。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext> | 是 | 是 | 讓 VSPackage 建立「內容包」，用來建立特定內容的說明關鍵字。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjBrowser> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjBrowser> | 是 | 是 | 讓 VSPackage 導覽至 **物件瀏覽器**中的特定物件。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjBrowser> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjBrowser> | 是 | 是 | 讓 VSPackage 導覽至 **物件瀏覽器** 中的特定物件。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager> | 是 | 是 | 讓 VSPackage 註冊其程式庫管理員，以 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 管理物件，例如命名空間、類別和列舉。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectSearch> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectSearch> | 是 | 是 | 讓 VSPackage 搜尋特定物件。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsOpenProjectOrSolutionDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsOpenProjectOrSolutionDlg> | 否 | 是 | 讓 VSPackage 使用 [標準 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ] 對話方塊來開啟專案或方案。 |
@@ -140,9 +142,9 @@ ms.locfileid: "80707349"
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextSpanSet> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextSpanSet> | 是 | 是 | 提供文字影像或緩衝區中文字範圍清單的存取權。 這項服務通常會在檔的容器上執行，並參考目前的檔。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadedWaitDialog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadedWaitDialog> | 否 | 是 | 讓 VSPackage 顯示一個對話方塊，該對話方塊會等候不同的執行緒 (用來等候背景工作) 。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadPool> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadPool> | 否 | 是 | 讓 VSPackage 起始背景工作，然後由維護 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | 是 | 是 | 提供 IDE **工具箱**的存取權。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | 是 | 是 | 提供 IDE **工具箱** 的存取權。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxActiveXDataProvider> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> | 是 | 是 | 讓 VSPackage 從 **工具箱** 專案中取得資訊。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | 否 | 是 | 讓 VSPackage 註冊 [工具箱] 資料提供者，而不會產生預先載入整個 **工具箱**的效能成本。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | 否 | 是 | 讓 VSPackage 註冊 [工具箱] 資料提供者，而不會產生預先載入整個 **工具箱** 的效能成本。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolsOptions> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolsOptions> | 否 | 是 | 讓 VSPackage 判斷 [ **選項** ] 對話方塊是否已開啟，以及重新整理 [所有選項] 頁面的可見度。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | 否 | 是 | 讓 VSPackage 監視專案檔案中的變更，並提供對原始檔控制提供者的批次控制。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> | 是 | 是 | 讓 VSPackage 通知 IDE 對選取專案的變更可能會影響目前選取的專案專案。 |
@@ -158,6 +160,6 @@ ms.locfileid: "80707349"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | 是 | 是 | 可讓 VSPackage 取得封裝或部分封裝所在的視窗框架。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | 是 | 是 | 提供與特定中繼資料檔案相關聯之 XML 格式檔檔案的存取權。 |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用和提供服務](../../extensibility/using-and-providing-services.md)

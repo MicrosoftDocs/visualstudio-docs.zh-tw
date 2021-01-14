@@ -1,5 +1,7 @@
 ---
 title: AutoMark | Microsoft Docs
+description: 您可以使用 AutoMark 選項來指定 Windows 效能計數器資料收集事件之間的時間間隔。 將它與 WinCounter 選項搭配使用。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: c4de965e-0364-4f78-9936-1f509e85df74
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aaa1e7f39a9dcaedec51eb6a40ed3a2d06bcfb0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94578571a9cfe6a170fd94019615eeec3071356a
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330602"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205758"
 ---
 # <a name="automark"></a>AutoMark
 **AutoMark** 選項指定收集 Windows 軟體效能計數器事件之間的毫秒數。 Windows 效能計數器指定於 **WinCounter** 選項中。
@@ -41,7 +43,7 @@ VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /WinCounter:"\Process(*)\% Pr
 VSPerfCmd.exe /Launch:TestApp.exe
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [分析 ASP.NET web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)

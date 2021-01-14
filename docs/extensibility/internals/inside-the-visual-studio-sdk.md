@@ -1,5 +1,7 @@
 ---
 title: 在 Visual Studio SDK 內 |Microsoft Docs
+description: 瞭解 Visual Studio SDK 中的擴充功能，包括 Visual Studio 架構、元件、服務、架構和公用程式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e72020795bc3181e11f0f90eff580a2365d4000
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73bbb1beb30677711b8b517262b48465e7529585
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707578"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205329"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 
@@ -87,7 +89,7 @@ ms.locfileid: "80707578"
 
 在 Visual Studio 中，專案是開發人員用來組織和建立原始程式碼和其他資源的容器。 專案可讓您組織、建立、偵測和部署原始程式碼、Web 服務和資料庫的參考，以及其他資源。 Vspackage 可以藉由提供專案類型、專案子類型和自訂工具來延伸 Visual Studio 的專案系統。
 
-專案也可以一起收集在一個 *方案*中，也就是一或多個專案的群組，這些專案會一起運作來建立應用程式。 與解決方案相關的專案和狀態資訊會儲存在兩個方案檔中，以文字為基礎的 [方案 ( .sln) ](solution-dot-sln-file.md) 檔和二進位 [方案使用者選項 ( .suo) ](solution-user-options-dot-suo-file.md)檔。 這些檔案類似于舊版 Visual Basic 所使用的 ( vbg) 檔案，以及工作區 (. dsw) 和 [使用者選項] () 在舊版 c + + 中使用的檔案。
+專案也可以一起收集在一個 *方案* 中，也就是一或多個專案的群組，這些專案會一起運作來建立應用程式。 與解決方案相關的專案和狀態資訊會儲存在兩個方案檔中，以文字為基礎的 [方案 ( .sln) ](solution-dot-sln-file.md) 檔和二進位 [方案使用者選項 ( .suo) ](solution-user-options-dot-suo-file.md)檔。 這些檔案類似于舊版 Visual Basic 所使用的 ( vbg) 檔案，以及工作區 (. dsw) 和 [使用者選項] () 在舊版 c + + 中使用的檔案。
 
 如需詳細資訊，請參閱 [專案](../../extensibility/internals/projects.md) 和 [方案](../../extensibility/internals/solutions-overview.md)。
 
