@@ -39,12 +39,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e46e2253c5664fff9cf456250d375993a0a0c9a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 70f047fa84513821812a13f7dee3136d2d431d9a
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150635"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240240"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>如何：使用原生執行階段檢查
 在 Visual Studio c + + 專案中，您可以使用原生 [runtime_checks](/cpp/preprocessor/runtime-checks) 來攔截常見的執行階段錯誤，例如：
@@ -68,8 +68,6 @@ ms.locfileid: "98150635"
   本節的其他主題提供下列資訊：
 
 - [自訂使用 C 語言執行階段程式庫的執行階段檢查](../debugger/native-run-time-checks-customization.md)
-
-- [使用 Run-Time 不含 C Run-Time 程式庫的檢查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>在偵錯組建中啟用原生的執行階段檢查
 

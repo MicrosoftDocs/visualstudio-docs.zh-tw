@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 210f2b2fc3e037f58fed19031d7ae9762185a640
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 58a701e6297cb81ce84c164b3b6791a6e73c76f8
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903843"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240266"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>在 Visual Studio 中使用偵錯工具管理例外狀況
 
@@ -226,5 +226,4 @@ public class GenericException<T> : Exception
 - [於例外狀況之後繼續執行](../debugger/continuing-execution-after-an-exception.md)<br/>
 - [如何：在發生例外狀況後檢查系統程式碼](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
 - [如何：使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)<br/>
-- [不使用 C 執行時間程式庫的執行時間檢查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

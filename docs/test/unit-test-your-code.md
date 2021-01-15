@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ba3db5b74a415d3736c37f54fdb708fde3436d92
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: dc82d72d7c0a333fc28146746a473ed359857490
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756587"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240279"
 ---
 # <a name="unit-test-tools-and-tasks"></a>單元測試工具和工作
 
@@ -36,7 +36,7 @@ ms.locfileid: "97756587"
 
 * **Microsoft Fakes 隔離架構** &mdash;Microsoft Fakes 隔離架構可以針對生產和系統 .NET 程式碼建立替代類別和方法，以在受測程式碼中建立相依性。 藉由實作函式的偽造委派，您可以控制相依性物件的行為和輸出。
 
-您也可以使用 [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) 來探索 .NET 程式碼，以產生測試資料和單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 程式碼的每個條件分支都會執行大小寫分析。
+針對 .NET，您也可以使用 [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) 探索您的程式碼，並產生測試資料和單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 程式碼的每個條件分支都會執行大小寫分析。
 
 ## <a name="key-tasks"></a>主要工作
 
@@ -58,6 +58,6 @@ ms.locfileid: "97756587"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 描述 UnitTesting 命名空間，此命名空間可提供屬性、例外狀況、判斷提示和其他支援單元測試的類別。
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> 描述 UnitTesting.Web 命名空間，此命名空間可藉由提供對 ASP.NET 和 Web 服務單元測試的支援，延伸 UnitTesting 命名空間。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [改善程式碼品質](../test/improve-code-quality.md)

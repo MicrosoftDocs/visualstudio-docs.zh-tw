@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9a5fbd9f396dfe0ed92c0590712f9fddb84c27a0
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329974"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240305"
 ---
 # <a name="install-unit-test-frameworks"></a>安裝單元測試架構
 
@@ -23,7 +23,7 @@ Visual Studio 測試總管可以從任何已針對其開發配接器介面的單
 Visual Studio 方案可包含多個單元測試專案，這些專案使用不同的架構並提供不同的語言版本。
 
 ::: moniker range=">=vs-2019"
-若是 .NET、 [MSTest、NUnit 和 xUnit，](getting-started-with-unit-testing.md) 則是預設安裝的 Visual Studio 所提供的測試架構。
+若是 .NET、 [MSTest、NUnit 和 xUnit，](getting-started-with-unit-testing.md) 則是預設安裝的 Visual Studio 所提供的測試架構。 針對 c + +，會提供一組不同的測試架構，例如 CTest。
 ::: moniker-end
 ::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) 是 Visual Studio 提供的預設安裝測試架構。
