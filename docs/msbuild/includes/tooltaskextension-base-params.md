@@ -3,12 +3,12 @@ author: ghogen
 ms.author: ghogen
 ms.topic: include
 ms.date: 4/23/2020
-ms.openlocfilehash: 6fd0fc6fd4f2e54c0d15f649139b649797f8336f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7d4027c53f599b4a17d267d5ebf72eee1ed296b
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89042905"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98535301"
 ---
 ### <a name="tooltaskextension-parameters"></a>ToolTaskExtension 參數
 
@@ -19,9 +19,8 @@ ms.locfileid: "89042905"
 | 參數 | 說明 |
 | - | - |
 | <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | 選擇性的 `bool` 參數。<br /><br /> 當設定為時 `true` ，此工作會將 **/q** 傳遞到 *cmd.exe* 命令列，讓命令列不會複製到 stdout。 |
-| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | 選擇性 `String` 陣列參數。<br /><br /> 環境變數定義的陣列，以分號分隔。 每個定義都應該指定以等號分隔的環境變數名稱和值。 這些變數是在規則環境區塊以外傳遞至繁衍的可執行檔，或選擇性地覆寫。 例如 `Variable1=Value1;Variable2=Value2`。 |
+| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | 選擇性 `String` 陣列參數。<br /><br /> 環境變數定義的陣列，以分號分隔。 每個定義都應該指定以等號分隔的環境變數名稱和值。 這些變數是在規則環境區塊以外傳遞至繁衍的可執行檔，或選擇性地覆寫。 例如： `Variable1=Value1;Variable2=Value2` 。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A> | 選擇性 `Int32` 輸出唯讀參數。<br /><br /> 指定已執行命令提供的結束代碼。 如果工作已記錄任何錯誤，但是此程序具有結束代碼 0 (成功)，這會設為 -1。 |
-| <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | 選項 `bool` 參數。<br /><br /> 如果為 `true`，則標準錯誤資料流上收到的所有訊息都會記錄為錯誤。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | 選擇性的 `bool` 參數。<br /><br /> 如果為 `true`，則標準錯誤資料流上收到的所有訊息都會記錄為錯誤。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardErrorImportance%2A> | 選擇性的 `String` 參數。<br /><br /> 用來從標準輸出資料流記錄文字的重要性。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | 選擇性的 `String` 參數。<br /><br /> 用來從標準輸出資料流記錄文字的重要性。 |
