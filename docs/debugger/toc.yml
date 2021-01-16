@@ -180,8 +180,6 @@
                   href: native-run-time-checks-customization.md
                 - name: 撰寫執行階段錯誤報告函式
                   href: how-to-write-a-run-time-error-reporting-function.md
-                - name: 不使用 C 執行階段程式庫進行執行階段檢查
-                  href: using-run-time-checks-without-the-c-run-time-library.md
         - name: 在偵錯工具中指定符號 (.pdb) 與來源檔案
           href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
         - name: 對使用者程式碼進行偵錯
