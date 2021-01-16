@@ -1,5 +1,7 @@
 ---
 title: 服務的命令列分析 | Microsoft Docs
+description: 瞭解如何從命令列流量分析工具來收集 Windows 服務的效能資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b20835eaf8b81bd64bd90aa75d2efb32975a7c53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f05ca0a11060e2a9009b38b0caf7ce9172773f36
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772827"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533650"
 ---
 # <a name="command-line-profiling-of-services"></a>服務的命令列分析
 本節說明從命令列使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集 Windows 服務之效能資料的程序和選項。

@@ -1,8 +1,8 @@
 ---
-title: 逐步解說：發行 Visual Studio 延伸模組 |Microsoft Docs
+title: 逐步解說：發佈 Visual Studio 延伸模組 |Microsoft Docs
 description: 瞭解如何將 Visual Studio 延伸模組發佈至 Visual Studio Marketplace，讓開發人員能夠流覽新的和更新的延伸模組。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 01/15/2021
 ms.topic: how-to
 helpviewer_keywords:
 - publishing web controls
@@ -13,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbdd283c5d147c53e7d82843207b48d0dbf6e6e9
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 01a46f54bfbce6126c16fa418d5c4bef53afd09b
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877880"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533895"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>逐步解說：發佈 Visual Studio 擴充功能
 
-本逐步解說會示範如何將 Visual Studio 擴充功能發佈到 Visual Studio Marketplace。 當您將延伸模組新增至 Marketplace 時，開發人員可以使用 **擴充功能和更新** 來流覽新的和更新的延伸模組。
+本逐步解說會示範如何將 Visual Studio 擴充功能發佈到 Visual Studio Marketplace。 當您將延伸模組新增至 Visual Studio Marketplace 時，開發人員可以使用 **擴充功能和更新** 來流覽新的和更新的延伸模組。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -32,7 +32,7 @@ ms.locfileid: "97877880"
 
 本文使用預設的 VSPackage 延伸模組，但這些步驟適用于每種擴充功能。
 
-1. 使用 `TestPublish` 具有功能表命令的 c # 來建立名為的 VSPackage。 如需詳細資訊，請參閱 [建立您的第一個延伸模組： Hello World](../extensibility/extensibility-hello-world.md)。
+- 使用 `TestPublish` 具有功能表命令的 c # 來建立名為的 VSPackage。 如需詳細資訊，請參閱 [建立您的第一個延伸模組： Hello World](../extensibility/extensibility-hello-world.md)。
 
 ## <a name="package-your-extension"></a>封裝您的延伸模組
 
@@ -54,17 +54,17 @@ ms.locfileid: "97877880"
 
 3. 在 [ **工具** ] 功能表上，確認您看到 [測試] 命令。
 
-## <a name="publish-the-extension-to-the-visual-studio-marketplace"></a>將延伸模組發佈至 Visual Studio Marketplace
+## <a name="publish-the-extension-to-visual-studio-marketplace"></a>將延伸模組發佈至 Visual Studio Marketplace
 
-1. 確定您已建立擴充功能的發行版本，而且是最新的。
+1. 確定您已建立擴充功能的發行版本，而且是最新的版本。
 
-2. 在網頁瀏覽器中，開啟 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) 網站。
+2. 在網頁瀏覽器中，移至 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。
 
 3. 在右上角按一下 [登 **入**]。
 
 4. 使用您的 Microsoft 帳戶登入。 如果您沒有 Microsoft 帳戶，此時可以建立一個。
 
-5. 按一下 [ **發行延伸** 模組]。  此選項會將您流覽至所有延伸模組的 [管理] 頁面。 如果您沒有發行者帳戶，此時會提示您建立一個。
+5. 按一下 [ **發行延伸** 模組]。 此選項會將您流覽至所有延伸模組的 [管理] 頁面。 如果您沒有發行者帳戶，此時會提示您建立一個。
 
    ![上傳至 Marketplace](media/upload-to-marketplace.png)
 
@@ -90,13 +90,13 @@ ms.locfileid: "97877880"
 
     * **支援的 Visual Studio 版本** 可讓您選擇您的延伸模組將使用的 Visual Studio 版本。 您的延伸模組只會安裝到這些版本。
 
-    * * * 支援的 Visual Studio 版可讓您選擇您的延伸模組將使用的 Visual Studio 版本。 您的延伸模組只會安裝到這些版本。
+    * **支援的 Visual Studio 版** 可讓您選擇您的延伸模組將使用的 Visual Studio 版本。 您的延伸模組只會安裝到這些版本。
 
-    * **類型**。 最常見的延伸模組類型為 **工具**。
+    * **類型**。 最常見的延伸模組類型是 **工具**。
 
     * **類別目錄**。 最多挑選三個最適合您的延伸模組。
 
-    * **標記** 是可協助使用者找到您的延伸模組的關鍵字。 標記可協助增加您在 Marketplace 中的擴充功能搜尋相關性。
+    * **標記** 是可協助使用者找到您的延伸模組的關鍵字。 標籤有助於提高 Visual Studio Marketplace 中擴充功能的搜尋相關性。
 
     * **定價類別** 是您的延伸模組成本。
 
@@ -104,15 +104,83 @@ ms.locfileid: "97877880"
 
     * **針對您的延伸模組允許 Q&** ，可讓使用者在您的延伸模組專案頁面上留下問題。
 
-9. 按一下 **[儲存 & 上傳**]。 此選項會將您帶回發行者的 [管理] 頁面。 尚未發行您的延伸模組。 若要發佈您的延伸模組，請以滑鼠右鍵按一下您的延伸模組，然後選取 [ **設為公用**] 您可以藉由選取 [ **視圖延伸**]，來查看您的延伸模組在 Marketplace 上的外觀。 若為取得編號，請按一下 [ **報表**]。 若要變更您的延伸模組，請按一下 [ **編輯**]。
+9. 按一下 **[儲存 & 上傳**]。 此選項會將您帶回發行者的 [管理] 頁面。 尚未發行您的延伸模組。
 
-   ![擴充功能專案功能表](media/extension-entry-menu.png)
+10. 若要發佈您的延伸模組，請以滑鼠右鍵按一下您的延伸模組，然後選取 [ **設為公用**] 若要查看您的延伸模組在 Visual Studio Marketplace 中的外觀，請選取 [ **視圖擴充** 功能]。 若為取得編號，請按一下 [ **報表**]。 若要變更您的延伸模組，請按一下 [ **編輯**]。
 
-10. 在按一下 [ **設為公用**] 之後，您的延伸模組現在是公用的。 搜尋您的延伸模組 Visual Studio Marketplace。
+    ![擴充功能專案功能表](media/extension-entry-menu.png)
+
+11. 按一下 [ **設為公用**]，您的延伸模組現在是公用的。 搜尋您的延伸模組 Visual Studio Marketplace。
+
+## <a name="update-a-published-extension-in-visual-studio-marketplace"></a>更新 Visual Studio Marketplace 中已發佈的延伸模組
+
+開始之前，請確定您已建立擴充功能的新發行版本，而且是最新的版本。
+
+1.  在網頁瀏覽器中，移至 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。
+
+1.  在右上角按一下 [登 **入**]，然後使用您的 Microsoft 帳戶登入。
+
+    :::image type="content" source="media/marketplace-upload-extension.png" alt-text="顯示在檔案總管中選取上傳擴充檔案的螢幕擷取畫面。":::
+
+1.  按一下 [ **發行延伸** 模組]，然後選擇您想要用來上傳更新的延伸模組的發行者。
+
+    :::image type="content" source="media/marketplace-select-extension-version.png" alt-text="醒目提示 [發行延伸模組] 連結之 Visual Studio Marketplace 的螢幕擷取畫面。":::
+
+1.  在您想要更新的延伸模組旁，將滑鼠停留在三個水準點上，然後選擇 [ **編輯**]。
+
+    :::image type="content" source="media/marketplace-select-extension.png" alt-text="顯示選擇要編輯之延伸模組的螢幕擷取畫面。":::
+
+1.  在 **[1：上傳延伸** 模組] 中，在您的 VSIX 檔案名之後，按一下鉛筆圖示以編輯已發佈的延伸模組。
+
+     :::image type="content" source="media/marketplace-edit-extension-details.png" alt-text="顯示按一下鉛筆圖示以編輯擴充功能的螢幕擷取畫面。":::
+
+1.  流覽至更新的延伸模組 VSIX 檔案。 按一下該檔案，然後按一下 [ **開啟**]。
+
+    更新的延伸模組上傳。
+
+    :::image type="content" source="media/marketplace-upload-extension-notification.png" alt-text="上傳已編輯的延伸模組之後，上傳檔案通知的螢幕擷取畫面。":::
+
+1. 在 **2：提供擴充功能詳細資料** 時，某些詳細資料是延伸模組更新的唯讀，或從您的延伸模組中的 *extension.vsixmanifest* 檔案自動填入。 以下是擴充功能詳細資料的詳細資訊：
+
+    - **內部名稱** \*用於延伸模組詳細資料頁面的 URL 中。 例如，發佈發行者名稱為 "myname" 的延伸模組，並將內部名稱指定為「我的延伸模組」，會產生 "marketplace.visualstudio.com/items?itemName=myname.myextension" 的 URL 做為您延伸模組詳細資料頁面的 URL。
+
+    - **顯示名稱** \*的延伸模組。 此名稱會自動填入 *extension.vsixmanifest* 檔案。
+
+    - **版本** \*您正在上傳的擴充功能編號。 此版本會自動填入 *extension.vsixmanifest* 檔案。
+
+    - **VSIX 識別碼** \*這是 Visual Studio 針對您的延伸模組使用的唯一識別碼。 如果您想要自動更新您的延伸模組，則需要此識別碼。 此識別碼會自動填入 *extension.vsixmanifest* 檔案。
+
+    - **標誌** \*用於您的延伸模組。 如果有提供 *extension.vsixmanifest* 檔案，則會自動填入此標誌。
+
+    - **簡短描述** \*擴充功能的功能。 *Extension.vsixmanifest* 檔案會自動填入此描述。
+
+    - 您可以使用 **總覽** 來包含有關延伸模組功能的螢幕擷取畫面和詳細資訊。
+
+    - **支援的 Visual Studio 版本** \*可讓您選擇您的延伸模組將使用的 Visual Studio 版本。 您的延伸模組只會安裝到這些版本。
+
+    - **支援的 Visual Studio 版本** \*可讓您選擇您的延伸模組將使用的 Visual Studio 版本。 您的延伸模組只會安裝在這些版本上。
+
+    - **類型**。 最常見的延伸模組類型是 **工具**。
+
+    - **類別目錄**。 最多挑選三個最適合您的延伸模組。
+
+    - **標記** 是可協助使用者找到您的延伸模組的關鍵字。 標籤有助於提高 Visual Studio Marketplace 中擴充功能的搜尋相關性。
+
+    - **定價類別** 是您的延伸模組成本。
+
+    - **原始程式碼存放庫** 可讓您與社區共用原始程式碼的連結。
+
+    - **針對您的延伸模組允許 Q&** ，可讓使用者在您的延伸模組專案頁面上留下問題。
+
+       \* 此詳細資料無法針對延伸模組更新進行變更。
+
+1. 按一下 **[儲存 & 上傳**]。 此選項會將您帶回發行者的 [管理] 頁面。 尚未發行您的延伸模組。
+
+1. 若要發佈您的延伸模組，請以滑鼠右鍵按一下您的延伸模組，然後選取 [ **設** 為 若要查看您的延伸模組在 Visual Studio Marketplace 中的外觀，請選取 [ **視圖擴充** 功能]。 若為取得編號，請按一下 [ **報告**]。 若要變更您的延伸模組，請按一下 [ **編輯**]。
 
 ## <a name="add-additional-users-to-manage-your-publisher-account"></a>新增其他使用者來管理您的發行者帳戶
 
-Marketplace 支援授與其他使用者存取和管理發行者帳戶的許可權。
+Visual Studio Marketplace 支援授與其他使用者存取和管理發行者帳戶的許可權。
 
 1. 流覽至您想要新增其他使用者的發行者帳戶。
 
@@ -130,7 +198,7 @@ Marketplace 支援授與其他使用者存取和管理發行者帳戶的許可�
 
    * **擁有** 者：使用者可以發佈和管理延伸模組、編輯發行者設定，以及管理存取權。
 
-## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>從 Visual Studio Marketplace 安裝擴充功能
+## <a name="install-the-extension-from-visual-studio-marketplace"></a>從 Visual Studio Marketplace 安裝擴充功能
 
 現在擴充功能已發佈，請將它安裝在 Visual Studio 中，並在該處進行測試。
 
@@ -138,7 +206,7 @@ Marketplace 支援授與其他使用者存取和管理發行者帳戶的許可�
 
 2. 按一下 [ **線上** ]，然後搜尋 **TestPublish**。
 
-3. 按一下 [下載]  。 接著會排定要安裝的延伸模組。
+3. 按一下 [下載] 。 接著會排定要安裝的延伸模組。
 
 4. 若要完成安裝，請關閉 Visual Studio 的所有實例。
 
@@ -146,9 +214,9 @@ Marketplace 支援授與其他使用者存取和管理發行者帳戶的許可�
 
 您可以從 Visual Studio Marketplace 和您的電腦移除擴充功能。
 
-### <a name="to-remove-the-extension-from-the-visual-studio-marketplace"></a>若要從 Visual Studio Marketplace 移除擴充功能
+### <a name="to-remove-the-extension-from-visual-studio-marketplace"></a>若要從 Visual Studio Marketplace 移除擴充功能
 
-1. 開啟 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) 網站。
+1. 移至 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。
 
 2. 在右上角按一下 [ **發行** 延伸模組]。 選擇您用來發行 **TestPublish** 的發行者。 **TestPublish** 的清單隨即出現。
 

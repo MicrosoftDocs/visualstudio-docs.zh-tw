@@ -1,5 +1,7 @@
 ---
 title: 一般資料檢視 | Microsoft Docs
+description: 請參閱這一節，以取得所有程式碼剖析方法通用的分析工具資料檔案之視圖和報表的參考資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69f68bec998108869676946e2995e45b2f662169
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777825"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533533"
 ---
 # <a name="common-data-views"></a>一般資料檢視
 本節包含所有分析方法常見分析工具資料檔案之檢視與報表的相關參考資訊。

@@ -1,5 +1,7 @@
 ---
 title: 命令列程式碼剖析工具參考 | Microsoft Docs
+description: 命令列效能工具可讓程式設計人員在命令提示字元中分析其應用程式。 查看工具的總覽，以及詳細資料的連結。
+ms.custom: SEO-VS-2020.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a34ba40e-01b1-4386-90b1-c8e628a8c527
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 65eabb7a95afa04542bc4f2202b71ccc5aa71648
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c0bffb825b06b6fd807f08542e2c591aa87ad07
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772749"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533507"
 ---
 # <a name="command-line-profiling-tools-reference"></a>命令列分析工具參考
 命令列效能工具可讓程式設計人員在命令提示字元上剖析他們的應用程式。 下列命令列程式碼剖析工具可讓您在命令提示字元上剖析程式碼。

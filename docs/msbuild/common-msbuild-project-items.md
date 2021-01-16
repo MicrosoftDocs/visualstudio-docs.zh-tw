@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
-ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
+ms.openlocfilehash: ea072cf3e9a236fdc6a4ad66b1c0cf7ddcda1550
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93238619"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533441"
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
 
@@ -36,20 +36,20 @@ ms.locfileid: "93238619"
 
 代表專案中的組件 (受管理) 參考。
 
-|項目中繼資料名稱|Description|
+|項目中繼資料名稱|說明|
 |---------------|-----------------|
 |提示路徑|選擇性字串。 組件的相對或絕對路徑。|
 |Name|選擇性字串。 組件的顯示名稱，例如，"System.Windows.Forms"。|
 |融合名稱|選擇性字串。 指定項目的簡單或強式融合名稱。<br /><br /> 當這個屬性存在時，就可以節省時間，因為不需要開啟組件檔案就能取得融合名稱。|
 |特定版本|選擇性布林值。 指定是否應僅參考融合名稱中的版本。|
 |別名|選擇性字串。 參考的任何別名。|
-|私人|選擇性布林值。 指定是否應將參考複製到輸出資料夾。 此屬性與 Visual Studio IDE 中參考的 [複製到本機]  屬性相符。|
+|私人|選擇性布林值。 指定是否應將參考複製到輸出資料夾。 此屬性與 Visual Studio IDE 中參考的 [複製到本機] 屬性相符。|
 
 ### <a name="comreference"></a>COM 參考
 
 代表專案中的 COM (未受管理) 元件參考。 此項目僅適用於 .NET 專案。
 
-|項目中繼資料名稱|描述|
+|項目中繼資料名稱|說明|
 |---------------|-----------------|
 |Name|選擇性字串。 元件的顯示名稱。|
 |Guid|必要字串。 元件的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|
@@ -63,7 +63,7 @@ ms.locfileid: "93238619"
 
 代表傳遞給 [ResolveComReference](resolvecomreference-task.md) 目標之 `TypeLibFiles` 參數的類型程式庫清單。 此項目僅適用於 .NET 專案。
 
-|項目中繼資料名稱|Description|
+|項目中繼資料名稱|說明|
 |---------------|-----------------|
 |包裝函式工具|選擇性字串。 用於元件的包裝函式工具名稱，例如 "tlbimp"。|
 
@@ -71,7 +71,7 @@ ms.locfileid: "93238619"
 
 代表原生的資訊清單檔案或是這類檔案的參考。
 
-|項目中繼資料名稱|描述|
+|項目中繼資料名稱|說明|
 |---------------|-----------------|
 |Name|必要字串。 資訊清單檔案的基底名稱。|
 |提示路徑|必要字串。 資訊清單檔案的相對路徑。|
@@ -80,24 +80,24 @@ ms.locfileid: "93238619"
 
 代表另一個專案的參考。 `ProjectReference` 專案會依目標轉換成 [參考](#reference) 專案 `ResolveProjectReferences` ，因此 `ProjectReference` ，如果轉換程式未覆寫，則參考上任何有效的中繼資料都可能有效。
 
-|項目中繼資料名稱|描述|
+|項目中繼資料名稱|說明|
 |---------------|-----------------|
 |Name|選擇性字串。 參考的顯示名稱。|
 |GlobalPropertiesToRemove|選擇性的 `string[]`。 建立參考專案時要移除的屬性名稱，例如 `RuntimeIdentifier;PackOnBuild` 。 預設為空白。|
 |Project|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|
 |OutputItemType|選擇性字串。 要發出目標輸出的專案類型。 預設值為空白。 如果參考中繼資料設定為 "true" (預設值) 則目標輸出會成為編譯器的參考。|
-|ReferenceOutputAssembly|選擇性布林值。 如果設定為 `false`，則不會將參考之專案的輸出，以[參考](#reference)的方式包含在此專案中，但仍然可確保其他專案會在此專案之前建置。 預設值為 `true`。|
+|ReferenceOutputAssembly|選擇性布林值。 如果設定為 `false`，則不會將參考之專案的輸出，以[參考](#reference)的方式包含在此專案中，但仍然可確保其他專案會在此專案之前建置。 預設為 `true`。|
 |SetConfiguration|選擇性字串。 設定參考專案的全域屬性 `Configuration` ，例如 `Configuration=Release` 。|
 |SetPlatform|選擇性字串。 設定參考專案的全域屬性 `Platform` ，例如 `Platform=AnyCPU` 。|
 |SetTargetFramework|選擇性字串。 設定參考專案的全域屬性 `TargetFramework` ，例如 `TargetFramework=netstandard2.0` 。|
-|SkipGetTargetFrameworkProperties|選擇性布林值。 如果 `true` 為，則會建立參考的專案，而不會協調最相容的 `TargetFramework` 值。 預設值為 `false`。|
+|SkipGetTargetFrameworkProperties|選擇性布林值。 如果 `true` 為，則會建立參考的專案，而不會協調最相容的 `TargetFramework` 值。 預設為 `false`。|
 |目標|選擇性的 `string[]`。 應建立之參考專案中的目標清單（以分號分隔）。 預設值是預設值 `$(ProjectReferenceBuildTargets)` 為空白，表示預設目標。|
 
 ### <a name="compile"></a>編譯
 
 代表編譯器的原始程式檔。
 
-| 項目中繼資料名稱 | Description |
+| 項目中繼資料名稱 | 說明 |
 |-----------------------| - |
 | 相依依據 | 選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。 |
 | 自動產生 | 選擇性布林值。 指出 Visual Studio 整合式開發環境中是否為專案產生檔案 (IDE) 。 |
@@ -109,7 +109,7 @@ ms.locfileid: "93238619"
 
 代表要內嵌於所產生組件中的資源。
 
-| 項目中繼資料名稱 | Description |
+| 項目中繼資料名稱 | 說明 |
 |-----------------------| - |
 | 相依依據 | 選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案 |
 | Generator | 必要字串。 在此項目上執行的任何檔案產生器名稱。 |
@@ -124,7 +124,7 @@ ms.locfileid: "93238619"
 
 代表不會編譯到專案中，但可能內嵌或一起發行的檔案。
 
-| 項目中繼資料名稱 | Description |
+| 項目中繼資料名稱 | 說明 |
 |-----------------------| - |
 | 相依依據 | 選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。 |
 | Generator | 必要字串。 在此項目上執行的任何檔案產生器名稱。 |
@@ -140,7 +140,7 @@ ms.locfileid: "93238619"
 
 代表在建置流程中應該沒有任何角色的檔案。
 
-| 項目中繼資料名稱 | Description |
+| 項目中繼資料名稱 | 說明 |
 |-----------------------| - |
 | 相依依據 | 選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。 |
 | Generator | 必要字串。 在此項目上執行的任何檔案產生器名稱。 |
@@ -189,5 +189,4 @@ ms.locfileid: "93238619"
 ## <a name="see-also"></a>另請參閱
 
 - [一般 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)
-- [.NET Core SDK 專案的 MSBuild 屬性](/dotnet/core/project-sdk/msbuild-props)
 - [一般 MSBuild 項目中繼資料](common-msbuild-item-metadata.md)

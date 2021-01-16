@@ -1,6 +1,6 @@
 ---
 title: 效能不良之多執行緒應用程式的常見模式
-description: 瞭解 Visual Studio 平行存取視覺化檢視中所含效能不良之多執行緒應用程式的常見模式。
+description: 並行視覺化視覺化提供多執行緒應用程式的圖表，以及效能不良之一般模式的資源庫。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: f6d5139a0327af05f67c2a7429b1055fa80c2175
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815785"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533546"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>行為錯誤之多執行緒應用程式的一般模式
 
@@ -70,6 +70,6 @@ ms.locfileid: "97815785"
 
 當應用程式以先到先服務的順序取得鎖定時，以及當鎖定的抵達速率高於取得速率時，就會發生鎖定護送。 這兩項條件的組合會導致鎖定的要求開始堵塞。 解決這個問題的一個方法是使用「不公平」的鎖定，或使用能提供第一個執行緒存取權以找出處於未鎖定狀態之鎖定的鎖定。 上圖顯示這個護送行為。 若要解決這個問題，請嘗試減少同步處理物件的爭用，並嘗試使用不公平的鎖定。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [執行緒檢視](../profiling/threads-view-parallel-performance.md)

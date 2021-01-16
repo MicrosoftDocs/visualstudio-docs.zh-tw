@@ -1,5 +1,7 @@
 ---
 title: 比較效能資料檔案 | Microsoft Docs
+description: 流量分析工具來比較兩個報告檔案 ( .vsp 或 .vsps) 。 比較會顯示差異、效能衰退和改進。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d1c57c6c3dd8d7d01e37eae374c547e074d62e6
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777851"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533494"
 ---
 # <a name="compare-performance-data-files"></a>比較效能資料檔案
 
-分析工具資料檔案比較功能可讓您選取兩個 ( 的報表檔案。*.vsp* /或。*.vsps*) 的檔案，並產生報表，以顯示某個程式碼剖析會話所發生的差異、效能衰退和改進。
+分析工具資料檔案比較功能可讓您選取兩個 ( 的報表檔案。*.vsp* 或。*.vsps*) 的檔案，並產生報表，以顯示某個程式碼剖析會話所發生的差異、效能衰退和改進。
 
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的資料檔案比較報表會比較一個分析資料檔案的分析結果和另一個資料檔案的基準分析結果。 必須使用相同的分析方法產生這兩個資料檔案。 已分析的比較報表會另存為。*.vsps* 檔案。
 

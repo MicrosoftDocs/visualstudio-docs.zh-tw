@@ -1,5 +1,7 @@
 ---
 title: CommentMarkProfile | Microsoft Docs
+description: 您可以使用 CommentMarkProfile 函數，將數值標記和文字字串插入 *.vsp* 檔案中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2972f9d470bebe3a65b7d525aa2b358d68ad5f1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e943be08ffd586347ab5de54cb803bcedc8c24d7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546584"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533585"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-`CommentMarkProfile` 函式會在 .*vsp* 檔中插入數字標記和文字字串。 針對要插入的標記和註解，包含 `CommentMarkProfile` 函式之執行緒的分析必須是 ON。
+此 `CommentMarkProfile` 函數會將數值標記和文字字串插入 *.vsp* 檔案中。 針對要插入的標記和註解，包含 `CommentMarkProfile` 函式之執行緒的分析必須是 ON。
 
 ## <a name="syntax"></a>語法
 
@@ -55,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>備註
  使用 VSInstr Mark 命令或函式 (CommentMarkAtProfile、CommentMarkProfile 或 MarkProfile) 來插入標記和註解時，包含標記分析函式之執行緒的分析狀態必須設定為開啟。
 
- 分析標記屬於全域範圍。 例如，在一個執行緒中插入的分析標記，可用來標記 .*vsp* 檔案中任何執行緒之資料區段的開頭或結尾。
+ 分析標記屬於全域範圍。 例如，在一個執行緒中插入的設定檔標記可以用來標示 *.vsp* 檔案中任何執行緒之資料區段的開頭或結尾。
 
 > [!IMPORTANT]
 > CommentMarkProfile 方法只能和檢測一起使用。

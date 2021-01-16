@@ -1,5 +1,7 @@
 ---
 title: 程式碼剖析工具命令列-獨立應用程式的計時資料詳細資料
+description: 瞭解如何從命令列使用檢測方法來收集獨立元件的詳細效能資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f088a0da0e8525189e4e2addf1464b30e1e98d06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d93673080acd36f4195fb9b19382c9f0152f51f5
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331826"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533832"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>使用分析工具命令列收集獨立應用程式的詳細計時資料
 本節說明從命令列使用檢測方法收集用戶端 (獨立) 元件之詳細效能資料的程序和選項。
@@ -50,5 +52,5 @@ ms.locfileid: "85331826"
 ### <a name="analyze-instrumentation-data-views-and-reports"></a>分析檢測資料檢視和報表
 - [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 - [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)

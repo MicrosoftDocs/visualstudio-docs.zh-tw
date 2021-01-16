@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d817c3600eaa82eb7f67489d5dadadaba3932f
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248057"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533962"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>使用 Natvis 架構在偵錯工具中建立 c + + 物件的自訂視圖
 
-Visual Studio *Natvis* 架構會自訂原生類型在偵錯工具變數視窗中的顯示方式，例如 [ **區域變數** **] 和 [監看式]** 視窗，以及在 **資料提示**中。 Natvis 視覺效果可協助您在調試過程中更容易看到您所建立的類型。
+Visual Studio *Natvis* 架構會自訂原生類型在偵錯工具變數視窗中的顯示方式，例如 [ **區域變數** **] 和 [監看式]** 視窗，以及在 **資料提示** 中。 Natvis 視覺效果可協助您在調試過程中更容易看到您所建立的類型。
 
 Natvis 會以 XML 語法取代舊版 Visual Studio 中的 *autoexp.dat .dat* 檔案、更佳的診斷、版本設定和多個檔案支援。
 
@@ -45,9 +45,9 @@ Natvis 會以 XML 語法取代舊版 Visual Studio 中的 *autoexp.dat .dat* 檔
 
 ## <a name="use-natvis-files-in-c-projects"></a><a name="BKMK_Using_Natvis_files"></a>在 c + + 專案中使用 natvis 檔案
 
-Natvis 會使用 *Natvis* 檔案來指定視覺化規則。 *Natvis*檔案是副檔名為*natvis*的 XML 檔。 Natvis 架構定義于 *%VSINSTALLDIR%\Xml\Schemas\natvis.xsd*中。
+Natvis 會使用 *Natvis* 檔案來指定視覺化規則。 *Natvis* 檔案是副檔名為 *natvis* 的 XML 檔。 Natvis 架構定義于 *%VSINSTALLDIR%\Xml\Schemas\natvis.xsd* 中。
 
-*Natvis*檔案的基本結構是代表視覺效果專案的一或多個 `Type` 元素。 每個元素的完整名稱 `Type` 是在其屬性中指定 `Name` 。
+*Natvis* 檔案的基本結構是代表視覺效果專案的一或多個 `Type` 元素。 每個元素的完整名稱 `Type` 是在其屬性中指定 `Name` 。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -64,7 +64,7 @@ Natvis 會使用 *Natvis* 檔案來指定視覺化規則。 *Natvis*檔案是副
 </AutoVisualizer>
 ```
 
-Visual Studio 會在 *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*資料夾中提供*natvis*檔案。 這些檔案具有許多常見類型的視覺化規則，可作為撰寫新類型視覺效果的範例。
+Visual Studio 會在 *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers* 資料夾中提供 *natvis* 檔案。 這些檔案具有許多常見類型的視覺化規則，可作為撰寫新類型視覺效果的範例。
 
 ### <a name="add-a-natvis-file-to-a-c-project"></a>將 natvis 檔案新增至 c + + 專案
 
@@ -72,27 +72,27 @@ Visual Studio 會在 *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*資�
 
 **若要加入新的 *natvis* 檔案：**
 
-1. 在**方案總管**中選取 c + + 專案節點，並選取 [**專案**  >  **加入新專案**]，或以滑鼠右鍵按一下專案，然後選取 [**加入**  >  **新專案**]。
+1. 在 **方案總管** 中選取 c + + 專案節點，並選取 [**專案**  >  **加入新專案**]，或以滑鼠右鍵按一下專案，然後選取 [**加入**  >  **新專案**]。
 
-1. 在 [**加入新專案**] 對話方塊中，選取**Visual C++**  >  **公用**程式  >  **偵錯工具視覺效果檔案 (. natvis) **。
+1. 在 [**加入新專案**] 對話方塊中，選取 **Visual C++**  >  **公用** 程式  >  **偵錯工具視覺效果檔案 (. natvis)**。
 
 1. 為檔案命名，然後選取 [ **新增**]。
 
    新檔案會新增至 **方案總管**，並在 Visual Studio 檔窗格中開啟。
 
-Visual Studio 偵錯工具會自動載入 c + + 專案中的 *natvis* 檔案，而且在專案建立時，預設也會將這些檔案包含在 *.pdb* 檔案中。 如果您在建立應用程式時，偵錯工具會從 *.pdb*檔案載入*natvis*檔案，即使您沒有開啟專案也一樣。 如果您不想要包含在 *.pdb*中的*natvis*檔案，您可以將它從建立的 *.pdb*檔案中排除。
+Visual Studio 偵錯工具會自動載入 c + + 專案中的 *natvis* 檔案，而且在專案建立時，預設也會將這些檔案包含在 *.pdb* 檔案中。 如果您在建立應用程式時，偵錯工具會從 *.pdb* 檔案載入 *natvis* 檔案，即使您沒有開啟專案也一樣。 如果您不想要包含在 *.pdb* 中的 *natvis* 檔案，您可以將它從建立的 *.pdb* 檔案中排除。
 
-**若要從 *.pdb*排除*natvis*檔案：**
+**若要從 *.pdb* 排除 *natvis* 檔案：**
 
-1. 選取**方案總管**中的*natvis*檔案，然後選取 [**屬性**] 圖示，或以滑鼠右鍵按一下檔案，然後選取 [**屬性**]。
+1. 選取 **方案總管** 中的 *natvis* 檔案，然後選取 [**屬性**] 圖示，或以滑鼠右鍵按一下檔案，然後選取 [**屬性**]。
 
 1. 下拉 [ **從組建排除** ] 旁邊的箭號，然後選取 [ **是**]，再選取 **[確定]**。
 
 >[!NOTE]
->針對可執行檔的偵錯工具，請使用方案專案加入任何不在 *.pdb*中的*natvis*檔案，因為沒有任何 c + + 專案可供使用。
+>針對可執行檔的偵錯工具，請使用方案專案加入任何不在 *.pdb* 中的 *natvis* 檔案，因為沒有任何 c + + 專案可供使用。
 
 >[!NOTE]
->從 *.pdb* 載入的 Natvis 規則只適用于 *.pdb* 所參考模組中的類型。 例如 *，如果 Natvis* 專案是針對名為的型別 `Test` ，則它只會套用至 `Test` *Module1.dll*中的類別。 如果另一個模組也會定義名為的類別 `Test` ，則 Natvis 專案不會套用至該類別。 *Module1.pdb*
+>從 *.pdb* 載入的 Natvis 規則只適用于 *.pdb* 所參考模組中的類型。 例如 *，如果 Natvis* 專案是針對名為的型別 `Test` ，則它只會套用至 `Test` *Module1.dll* 中的類別。 如果另一個模組也會定義名為的類別 `Test` ，則 Natvis 專案不會套用至該類別。 
 
 **若要透過 VSIX 套件安裝和註冊 *natvis* 檔案：**
 
@@ -109,7 +109,7 @@ VSIX 封裝可以安裝和註冊 *natvis* 檔案。 無論在何處安裝，都�
    </Project>
    ```
 
-2. 在*extension.vsixmanifest*檔案中註冊*natvis*檔案：
+2. 在 *extension.vsixmanifest* 檔案中註冊 *natvis* 檔案：
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
@@ -124,11 +124,11 @@ VSIX 封裝可以安裝和註冊 *natvis* 檔案。 無論在何處安裝，都�
 
 如果您想要將 *natvis* 檔案套用至多個專案，可以將這些檔案新增至您的使用者目錄或系統目錄。
 
-*Natvis*檔案會以下列順序進行評估：
+*Natvis* 檔案會以下列順序進行評估：
 
-1. 內嵌在您要進行偵錯工具之 *.pdb*中的任何*natvis*檔案，除非已載入的專案中有相同名稱的檔案。
+1. 內嵌在您要進行偵錯工具之 *.pdb* 中的任何 *natvis* 檔案，除非已載入的專案中有相同名稱的檔案。
 
-2. 載入的 c + + 專案或最上層方案中的*natvis 檔案。* 這個群組包含所有載入的 c + + 專案（包括類別庫），但不包含其他語言的專案。
+2. 載入的 c + + 專案或最上層方案中的 *natvis 檔案。* 這個群組包含所有載入的 c + + 專案（包括類別庫），但不包含其他語言的專案。
 
 3. 透過 VSIX 套件安裝和註冊的任何 *natvis* 檔。
 
@@ -148,13 +148,13 @@ VSIX 封裝可以安裝和註冊 *natvis* 檔案。 無論在何處安裝，都�
 
 ## <a name="modify-natvis-files-while-debugging"></a>在調試時修改 natvis 檔案
 
-您可以在調試專案時，修改 IDE 中的*natvis 檔案。* 在您要進行偵錯工具的相同 Visual Studio 實例中開啟檔案、加以修改，然後儲存該檔案。 儲存檔案後，[ **監看式]** 和 [ **區域變數** ] 視窗會更新以反映變更。
+您可以在調試專案時，修改 IDE 中的 *natvis 檔案。* 在您要進行偵錯工具的相同 Visual Studio 實例中開啟檔案、加以修改，然後儲存該檔案。 儲存檔案後，[ **監看式]** 和 [ **區域變數** ] 視窗會更新以反映變更。
 
 您也可以在要進行偵錯工具的方案中新增或刪除 *natvis* 檔案，Visual Studio 加入或移除相關的視覺效果。
 
-當您正在進行偵錯工具時，您無法更新在 *.pdb*檔案中內嵌的*natvis 檔案。*
+當您正在進行偵錯工具時，您無法更新在 *.pdb* 檔案中內嵌的 *natvis 檔案。*
 
-如果您修改 Visual Studio 之外的 *natvis* 檔案，則變更不會自動生效。 若要更新偵錯工具視窗，您**可以在 [即時運算] 視窗**中重新評估 .natvisreload 命令 **。** 然後變更才會生效，而不需要重新開機調試會話。
+如果您修改 Visual Studio 之外的 *natvis* 檔案，則變更不會自動生效。 若要更新偵錯工具視窗，您 **可以在 [即時運算] 視窗** 中重新評估 .natvisreload 命令 **。** 然後變更才會生效，而不需要重新開機調試會話。
 
 此外，也可以使用 **.natvisreload** 命令將 *natvis* 檔案升級至較新的版本。 例如，可能會將 *natvis* 檔案簽入原始檔控制，而您想要挑選其他人所做的最新變更。
 
@@ -166,6 +166,12 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 - Natvis 運算式不允許函數評估或副作用。 函式呼叫和指派運算子都會被忽略。 由於 [偵錯工具內建函式](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) 沒有副作用，因此可自由地從任何 Natvis 運算式加以呼叫，即使不允許其他函式呼叫亦然。
 
 - 若要控制運算式的顯示方式，您可以使用 [c + + 中格式](format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers)規範中所述的任何格式規範。 在 Natvis 內部使用專案時，會忽略格式規範，例如 `Size` [ArrayItems 擴充](../debugger/create-custom-views-of-native-objects.md#BKMK_ArrayItems_expansion)中的運算式。
+
+>[!NOTE]
+> 因為 natvis 檔是 XML，所以您的運算式不能直接使用連字號、大於、小於或移位運算子。 您必須在專案主體和條件陳述式中都將這些字元都換用。 例如：<br>
+> \<Item Name="HiByte"\> (位元組) # A2_flags \& gt; \&gt24) 、x\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) == 0"\>以上\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) != 0"\>段\</Item\>
 
 ## <a name="natvis-views"></a>Natvis 檢視
 
@@ -185,7 +191,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-在 [ **監看** 式] 視窗中，使用 **、view** 格式規範來指定替代的視圖。 簡單的視圖會顯示為 [ **vec]、[view (simple) **：
+在 [ **監看** 式] 視窗中，使用 **、view** 格式規範來指定替代的視圖。 簡單的視圖會顯示為 [ **vec]、[view (simple)**：
 
 ![簡單檢視的監看式視窗](../debugger/media/watch-simpleview.png "簡單檢視的監看式視窗")
 
@@ -195,14 +201,14 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 **開啟 Natvis 診斷：**
 
-- 在 [**工具**  >  **選項**] (或 [**調試**程式  >  **選項**] 下) > **Debugging**  >  **輸出視窗**偵錯工具，將**Natvis 診斷訊息設定為 (c + + 僅) ** **錯誤**、**警告**或**詳細**資訊，然後選取 **[確定]**。
+- 在 [**工具**  >  **選項**] (或 [**調試** 程式  >  **選項**] 下) >   >  **輸出視窗** 偵錯工具，將 **Natvis 診斷訊息設定為 (c + + 僅)** **錯誤**、**警告** 或 **詳細** 資訊，然後選取 **[確定]**。
 
 錯誤會出現在 [ **輸出** ] 視窗中。
 
 ## <a name="natvis-syntax-reference"></a><a name="BKMK_Syntax_reference"></a> Natvis 語法參考
 
 ### <a name="autovisualizer-element"></a><a name="BKMK_AutoVisualizer"></a> AutoVisualizer 項目
-`AutoVisualizer`元素是*natvis*檔案的根節點，並且包含命名空間 `xmlns:` 屬性。
+`AutoVisualizer`元素是 *natvis* 檔案的根節點，並且包含命名空間 `xmlns:` 屬性。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -353,7 +359,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 您不需要 `Min` 和 `Max` 。 它們是選擇性屬性。 不支援萬用字元。
 
-`Name`屬性的格式為*filename*，例如*hello.exe*或*some.dll*。 不允許任何路徑名稱。
+`Name`屬性的格式為 *filename*，例如 *hello.exe* 或 *some.dll*。 不允許任何路徑名稱。
 
 ### <a name="displaystring-element"></a><a name="BKMK_DisplayString"></a> DisplayString 元素
 `DisplayString`元素會指定要顯示為變數值的字串。 它接受與運算式混合的任意字串。 大括號內的所有項目都會解譯為運算式。 例如，下列 `DisplayString` 專案：
@@ -654,7 +660,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
  ![Concurrency：：具有綜合元素展開的陣列](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency：：具有綜合元素展開的陣列")
 
 ### <a name="hresult-element"></a><a name="BKMK_HResult"></a> HResult 元素
- `HResult`元素可讓您自訂偵錯工具視窗中的**HRESULT**所顯示的資訊。 `HRValue`元素必須包含要自訂之**HRESULT**的32位值。 `HRDescription`元素包含要顯示在偵錯工具視窗中的資訊。
+ `HResult`元素可讓您自訂偵錯工具視窗中的 **HRESULT** 所顯示的資訊。 `HRValue`元素必須包含要自訂之 **HRESULT** 的32位值。 `HRDescription`元素包含要顯示在偵錯工具視窗中的資訊。
 
 ```xml
 
@@ -665,7 +671,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 ```
 
 ### <a name="uivisualizer-element"></a><a name="BKMK_UIVisualizer"></a> 看到 uivisualizer 元素
-`UIVisualizer` 項目會向偵錯工具註冊圖形視覺化檢視外掛程式。 圖形化視覺化程式會建立一個對話方塊或其他介面，以與資料類型一致的方式來顯示變數或物件。 視覺化檢視外掛程式必須撰寫為 [VSPackage](../extensibility/internals/vspackages.md)，而且必須公開偵錯工具可以使用的服務。 *Natvis*檔案包含外掛程式的註冊資訊，例如其名稱、公開之服務的 GUID，以及可哥視化的類型。
+`UIVisualizer` 項目會向偵錯工具註冊圖形視覺化檢視外掛程式。 圖形化視覺化程式會建立一個對話方塊或其他介面，以與資料類型一致的方式來顯示變數或物件。 視覺化檢視外掛程式必須撰寫為 [VSPackage](../extensibility/internals/vspackages.md)，而且必須公開偵錯工具可以使用的服務。 *Natvis* 檔案包含外掛程式的註冊資訊，例如其名稱、公開之服務的 GUID，以及可哥視化的類型。
 
 以下是 UIVisualizer 項目的範例：
 
@@ -687,7 +693,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
   ![UIVisualizer 功能表捷徑功能表](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer 功能表捷徑功能表")
 
-*Natvis*檔案中定義的每個類型都必須明確列出可顯示它的任何 UI 視覺化檢視。 偵錯工具會將類型專案中的視覺化程式參考與已註冊的視覺化程式相符。 例如，下列的型別專案會 `std::vector` 參考 `UIVisualizer` 上述範例中的。
+*Natvis* 檔案中定義的每個類型都必須明確列出可顯示它的任何 UI 視覺化檢視。 偵錯工具會將類型專案中的視覺化程式參考與已註冊的視覺化程式相符。 例如，下列的型別專案會 `std::vector` 參考 `UIVisualizer` 上述範例中的。
 
 ```xml
 <Type Name="std::vector&lt;int,*&gt;">

@@ -1,5 +1,7 @@
 ---
 title: 獨立應用程式的命令列分析 | Microsoft Docs
+description: 瞭解如何從命令列流量分析工具，收集用戶端 (獨立) 應用程式的效能資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f80f3e65969973202af08299b07ebfa420f3bd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 876c2a72f0929cffa3613026fa56a17d82786854
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77557863"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533637"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>獨立應用程式的命令列分析
 本節說明從命令列使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集獨立 (用戶端) 應用程式之效能資料的程序和選項。
