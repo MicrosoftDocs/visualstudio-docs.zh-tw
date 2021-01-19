@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6092b02f5f8f94b3c87b68afe344fffba96c1a7d
+ms.sourcegitcommit: 987ed5f5adf85771d77c0efafc36d939fb9a356f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524086"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98571982"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 體驗
 
@@ -92,7 +92,7 @@ Visual Studio 會根據您在方案總管中載入的視圖檔案來調整其觀
 
 當您準備好要暫存變更時，請按一下 **+** 您要預備的每個檔案上的 (加號) 按鈕，或是以滑鼠右鍵按一下檔案，然後選取 [ **階段**]。 您也可以按一下 [變更] 區段頂端的 [全部] **+** (加) 按鈕，來暫存所有修改過的檔案 。
 
-當您暫存變更時，Visual Studio 會建立 **分段的變更** 區段。 只有 [ **暫存變更** ] 區段中的變更會新增至下一個認可，您可以選取 [ **認可暫存**] 來完成此動作。 您也可以按一下 **–** (減號) 按鈕，來取消暫存變更。 此動作的對等命令為 `git commit -m "Your commit message"` 。
+當您暫存變更時，Visual Studio 會建立 **分段的變更** 區段。 只有 [ **暫存變更** ] 區段中的變更會新增至下一個認可，您可以選取 [ **認可暫存**] 來完成此動作。 此動作的對等命令為 `git commit -m "Your commit message"` 。 您也可以按一下 **–** (減號) 按鈕，來取消暫存變更。 此動作的對等命令是 `git reset <file_path>` 取消暫存單一檔案或 `git reset <directory_path>` 取消臨時目錄中的所有檔案。
 
 您也可以跳過臨時區域，選擇不要暫存修改過的檔案。 在此情況下，Visual Studio 可讓您直接認可變更，而不需要進行暫存。 只需輸入認可訊息，然後選取 [ **全部認可**]。 此動作的對等命令為 `git commit -a` 。
 
