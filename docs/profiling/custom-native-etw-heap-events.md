@@ -1,5 +1,7 @@
 ---
 title: 自訂原生 ETW 堆積事件 | Microsoft Docs
+description: 瞭解如何使用自訂堆積來減少配置額外負荷，但仍會提供配置資訊給記憶體分析工具，以進行配置分析。
+ms.custom: SEO-VS-2020
 ms.date: 02/24/2017
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -10,12 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61005bf108d0dab16ec419e942e3da97e02cdc7f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62552933"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686320"
 ---
 # <a name="custom-native-etw-heap-events"></a>自訂原生 ETW 堆積事件
 
@@ -49,7 +51,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 
 ![Windows 堆積配置](media/heap-example-windows-heap.png)
 
-藉由執行下列步驟，我們可以使用這個相同工具來追蹤自訂堆積中的記憶體使用量。
+藉由執行下列步驟，我們可以使用相同的工具來追蹤自訂堆積中的記憶體使用量。
 
 ## <a name="how-to-use"></a>如何使用
 
@@ -136,24 +138,24 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    ```
 
 ## <a name="track-memory-usage"></a>追蹤記憶體使用量
-這些呼叫就緒時，您即可使用 Visual Studio 中的標準 [記憶體使用量]**** 工具，追蹤自訂堆積的使用量。  如需如何使用這項工具的詳細資訊，請參閱[記憶體使用量](../profiling/memory-usage.md)文件。 請確定您已啟用堆積分析快照，否則不會顯示您的自訂堆積使用量。
+這些呼叫就緒時，您即可使用 Visual Studio 中的標準 [記憶體使用量] 工具，追蹤自訂堆積的使用量。  如需如何使用這項工具的詳細資訊，請參閱[記憶體使用量](../profiling/memory-usage.md)文件。 請確定您已啟用堆積分析快照，否則不會顯示您的自訂堆積使用量。
 
 ![啟用堆積分析](media/heap-enable-heap.png)
 
-若要檢視自訂堆積追蹤，請使用位於 [快照]**** 視窗右上角的 [堆積]**** 下拉式清單，將 [NT 堆積]** 檢視變更為您已命名的堆積。
+若要檢視自訂堆積追蹤，請使用位於 [快照] 視窗右上角的 [堆積] 下拉式清單，將 [NT 堆積] 檢視變更為您已命名的堆積。
 
 ![堆積選取範圍](media/heap-example-custom-heap.png)
 
 以上述的程式碼範例來看，當我們使用 `MemoryPool` 建立 `VSHeapTracker::CHeapTracker` 物件，並使用我們自己的 `allocate` 方法呼叫 `AllocateEvent` 方法時，您即可看到該自訂配置結果顯示 3 個執行個體，共計有 24 個位元組，且均為 `Foo` 類型。
 
-預設的「NT 堆積」** 堆積看起來和之前相同，只是新增了我們的 `CHeapTracker` 物件。
+預設的「NT 堆積」堆積看起來和之前相同，只是新增了我們的 `CHeapTracker` 物件。
 
 ![NT 堆積與追蹤程式](media/heap-example-windows-heap.png)
 
 如同使用標準 Windows 堆積一樣，您也可以使用這項工具來比較快照，並在自訂堆積中尋找流失或損毀情況。請參閱主要的[記憶體使用量](../profiling/memory-usage.md)文件，以了解相關說明。
 
 > [!TIP]
-> Visual Studio 的 [效能分析]**** 工具集中也包含 [記憶體使用量]**** 工具，您可從 [偵錯]**** > [效能分析工具]**** 功能表選項或 **Alt**+**F2** 鍵盤組合，加以啟用。  這項功能不包含堆積追蹤，亦不會顯示此處所述的自訂堆積。  只有 [診斷工具]**** 視窗才包含這項功能 (您可以透過 [偵錯]**** > [視窗]**** > [顯示診斷工具]**** 功能表，或 **Ctrl**+**Alt**+**F2** 鍵盤組合，加以啟用)。
+> Visual Studio 的 [效能分析] 工具集中也包含 [記憶體使用量] 工具，您可從 [偵錯] > [效能分析工具] 功能表選項或 **Alt**+**F2** 鍵盤組合，加以啟用。  這項功能不包含堆積追蹤，亦不會顯示此處所述的自訂堆積。  只有 [診斷工具] 視窗才包含這項功能 (您可以透過 [偵錯] > [視窗] > [顯示診斷工具] 功能表，或 **Ctrl**+**Alt**+**F2** 鍵盤組合，加以啟用)。
 
 ## <a name="see-also"></a>另請參閱
 [深入瞭解程式碼剖析工具](../profiling/profiling-feature-tour.md) 

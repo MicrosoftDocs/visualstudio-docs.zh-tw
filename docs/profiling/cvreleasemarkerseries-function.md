@@ -1,5 +1,7 @@
 ---
 title: CvReleaseMarkerSeries 函式 | Microsoft Docs
+description: 請參閱並行視覺化檢視 SDK 函式 CvReleaseMarkerSeries (C 程式庫) 的參考資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84db5dac77fbbc51c9f1c0e24173dcc8ca1d68c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a69f60a991b9d88e6969992edbfe8eabdb7bd116
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332191"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686450"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries 函式
 釋放標記系列。 不要在釋放之後使用標記系列物件，否則應用程式可能會當機。 釋放標記系列失敗會造成記憶體流失。
@@ -36,7 +38,7 @@ HRESULT CvReleaseMarkerSeries(
 ## <a name="return-value"></a>傳回值
  成功釋放標記系列時傳回 S_OK，發生任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  **標頭︰** *cvmarkers.h*
 
 ## <a name="see-also"></a>另請參閱

@@ -1,5 +1,7 @@
 ---
 title: 自訂效能工具報表檢視 | Microsoft Docs
+description: 請參閱這一節，以瞭解自訂使用 Visual Studio 分析工具產生之報表的方式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +14,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9479c0dc2af592271bc7f21db1cec0c71cc7e71d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57a3dddbefcf0b5a0220da282674fa781f102030
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777760"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686190"
 ---
 # <a name="customize-performance-tools-report-views"></a>自訂效能工具報表檢視
 本節說明如何自訂使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具產生的報表。
 
 ## <a name="common-tasks"></a>常見工作
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**新增、移除和排序報表檢視中的欄︰** 您可以指定您要在表格型檢視中顯示的欄，而且可以指定欄出現的順序。 您也可以依欄值排序報表表格的列。|-   [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)|
 |**刪除報表中的小型函式︰** 您可以從報表刪除小於指定閾值的函式。|-   [如何：在報表檢視中設定減少雜訊](../profiling/how-to-configure-noise-reduction-in-report-views.md)|

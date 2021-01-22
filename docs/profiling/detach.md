@@ -1,5 +1,7 @@
 ---
 title: Detach | Microsoft Docs
+description: 使用 VSPerfCmd.exe 的卸離選項，將分析工具與指定的進程中斷連接，或從所有進程中斷連結分析工具（如果沒有指定的話）。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
@@ -9,17 +11,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3251836959f41a4349851716f58f917943f10b09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45225e4478b0a1a3cddc7f74ae223c437bf4226e
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330240"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686593"
 ---
 # <a name="detach"></a>中斷連結
 VSPerfCmd.exe **Detach** 選項會中斷分析工具與指定處理序的連線，如果沒有指定任何處理序則會中斷與所有處理序的連線。 必須已使用取樣方法初始化分析。
 
- 使用 **Detach**可以中斷使用 **Launch** 或 **Attach** 選項所啟動的分析。 使用後續的 **Attach** 命令，可以重新附加分析工具。
+ 使用 **Detach** 可以中斷使用 **Launch** 或 **Attach** 選項所啟動的分析。 您可以使用後續的 **附加** 命令重新附加 profiler。
 
  **Detach** 不會關閉分析資料檔案。 使用 **Shutdown** 選項結束分析，並關閉資料檔案。
 

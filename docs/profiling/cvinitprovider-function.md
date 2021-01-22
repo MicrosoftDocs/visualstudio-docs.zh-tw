@@ -1,5 +1,7 @@
 ---
 title: CvInitProvider 函式 | Microsoft Docs
+description: 請參閱並行視覺化檢視 SDK 函式 CvInitProvider (C 程式庫) 的參考資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b06190568454977bfcb54d65db9011fc979f7591
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d1b41d9d62bbf5a159ec3a9d60f4e2edf5cc115
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329571"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686502"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 函式
 初始化標記提供者。 必須在任何其他並行視覺化檢視 SDK 函式之前呼叫。
@@ -39,7 +41,7 @@ HRESULT CvInitProvider(
 ## <a name="return-value"></a>傳回值
  成功初始化提供者時傳回 S_OK，發生任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  **標頭︰** *cvmarkers.h*
 
 ## <a name="see-also"></a>另請參閱

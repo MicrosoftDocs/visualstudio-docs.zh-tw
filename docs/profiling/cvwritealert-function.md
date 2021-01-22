@@ -1,5 +1,7 @@
 ---
 title: CvWriteAlert 函式 | Microsoft Docs
+description: 請參閱並行視覺化檢視 SDK 函式 CvWriteAlert (C 程式庫) 的參考資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56af9515fb9c066e56dd45a0fb91a95530f09799
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb2cc6f7408fc5d9af0215dbccf166477876ac23
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332169"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686437"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert 函式
 將警示寫入並行視覺化檢視追蹤檔。
@@ -64,7 +66,7 @@ HRESULT CvWriteAlertVA(
 ## <a name="return-value"></a>傳回值
  當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  **標頭︰** *cvmarkers.h*
 
  **Unicode：** CvWriteAlertW、CvWriteAlertVW

@@ -1,5 +1,6 @@
 ---
 title: 分析命令列-建立報表
+description: 瞭解如何使用 VSPerfReport 命令列工具來建立 .xml 或 .csv (以逗號分隔的值，) 分析資料檔中的報表。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,15 +11,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eb0f1fa0f9bbe760b1ea89074d02044cf26ab7d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1f57e372ec4fa3215a9f553403f513dc91b43016
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808821"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686242"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>從命令列建立分析工具報告
-**VSPerfReport**命令列工具可讓您建立。 ( 的*xml*或逗點分隔值。*csv*) 分析資料 ( 的報表。*.vsp*) 檔案。 VSPerfReport 報表類型極符合 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之介面的資料表檢視。 您可以篩選報表只顯示您的程式碼，以及只顯示分析資料檔案的區段。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。
+**VSPerfReport** 命令列工具可讓您建立。 ( 的 *xml* 或逗點分隔值。*csv*) 分析資料 ( 的報表。*.vsp*) 檔案。 VSPerfReport 報表類型極符合 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之介面的資料表檢視。 您可以篩選報表只顯示您的程式碼，以及只顯示分析資料檔案的區段。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。
 
  您也可以在中嵌入符號，讓分析資料檔更容易共用。*.vsp* 檔案，以及藉由建立預先分析的報表 (。) 更小且更快速開啟的 *.vsps* 。
 

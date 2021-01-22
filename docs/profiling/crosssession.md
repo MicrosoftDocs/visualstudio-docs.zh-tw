@@ -1,5 +1,7 @@
 ---
 title: CrossSession | Microsoft Docs
+description: 瞭解如何使用 VSPerfCmd.exe CrossSession 選項，讓分析工具從任何主控台會話收集資料。 您也必須指定 Start 選項。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 019a7b74deb70176f214aefdcec4db86cec86829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a20ada8a7ca8d0ca8c34c2c6d730c37cdca09b7
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331167"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686204"
 ---
 # <a name="crosssession"></a>CrossSession
 *VSPerfCmd.exe* **CrossSession** 選項可讓分析工具從任何主控台工作階段中收集資料。 **CrossSession** 選項必須與 **Start** 選項搭配使用。
@@ -28,12 +30,12 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```
 
 #### <a name="parameters"></a>參數
- 無
+ None
 
 ## <a name="valid-options"></a>有效選項
  若要啟用另一個工作階段中的分析，必須指定含 **Start** 選項的 **CrossSession** 選項。 **CrossSession** 也必須指定於任何後續的 **VSPerfCmd Attach** 和 **Detach** 命令中。
 
- **開始：** `Method`**Start**選項會將分析工具初始化為指定的程式碼剖析方法。
+ **開始：** `Method`**Start** 選項會將分析工具初始化為指定的程式碼剖析方法。
 
  **Attach：** _PID_[**，**_pid_] 開始分析指定的進程。
 

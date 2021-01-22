@@ -1,5 +1,7 @@
 ---
 title: CvWriteFlag 函式 | Microsoft Docs
+description: 請參閱並行視覺化檢視 SDK 函式 CvWriteFlag (C 程式庫) 的參考資訊。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 396edc736f61ae76aab7263bcd15bb0bfad13204
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b3c82a84e9a6523a0a969639f26b28d64cdfc9e
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332151"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686463"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag 函式
 將旗標寫入並行視覺化檢視追蹤檔。
@@ -76,7 +78,7 @@ HRESULT CvWriteFlagExVA(
 ## <a name="return-value"></a>傳回值
  當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  **標頭︰** *cvmarkers.h*
 
  **Unicode：** CvWriteFlagExW、CvWriteFlagExVW
