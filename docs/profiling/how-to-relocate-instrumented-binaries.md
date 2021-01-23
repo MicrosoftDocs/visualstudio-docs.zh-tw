@@ -1,5 +1,6 @@
 ---
 title: 重新配置所檢測的二進位檔 | Microsoft Docs
+description: 瞭解如何在二進位檔中插入探查，以在檢測期間測量應用程式效能。
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 13fa5c3413e620e43a695e205a0523dce23e90b4
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ee94737f59f5c29aac47d686f68ade06131d0379
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851342"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720614"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>如何：重新配置所檢測的二進位檔
 
@@ -28,11 +29,11 @@ ms.locfileid: "90851342"
 
 ## <a name="to-relocate-instrumented-binary"></a>重新配置所檢測的二進位檔
 
-1. 在 [效能總管] **** 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性] ****。
+1. 在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性] 。
 
-2. 在 [屬性頁] **** 中，按一下 [二進位檔] **** 屬性。
+2. 在 [屬性頁] 中，按一下 [二進位檔]  屬性。
 
-3. 選取 [重新配置所檢測的二進位檔] **** 核取方塊。
+3. 選取 [重新配置所檢測的二進位檔]  核取方塊。
 
 4. 指定所檢測之二進位檔的位置。
 

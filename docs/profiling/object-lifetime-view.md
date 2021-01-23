@@ -1,5 +1,6 @@
 ---
 title: 物件存留期檢視 | Microsoft Docs
+description: 瞭解如何在 [效能會話] 屬性頁上核取 [同時收集 .NET 物件存留期資料] 時，使用 [物件存留期] view。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9405b66c7412d65402a5572dcb5c71b232341b22
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772620"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722863"
 ---
 # <a name="object-lifetime-view"></a>物件存留期檢視
 當您在 [**效能會話**] 屬性頁上核取 [**收集 .net 物件存留期資料**] 時，就可以使用 [物件存留期] view。

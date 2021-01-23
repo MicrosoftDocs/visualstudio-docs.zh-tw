@@ -1,5 +1,6 @@
 ---
 title: 同步處理時間 | Microsoft Docs
+description: 瞭解時間軸中的區段如何與分類為同步處理的封鎖時間相關聯。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae73f7b9a9838a006dce47bf44b0ed46aa0b84fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0e8c2243d01a5801b6846445995bbdfdcff78c9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62965306"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719821"
 ---
 # <a name="synchronization-time"></a>同步處理時間
 時間軸中的這些區段會與歸類為同步處理的封鎖時間建立關聯。 當執行緒在同步處理中標記為已封鎖時，就會隱含這些項目的其中一個：

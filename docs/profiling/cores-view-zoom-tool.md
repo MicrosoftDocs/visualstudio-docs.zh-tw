@@ -1,5 +1,7 @@
 ---
 title: 核心檢視縮放工具 | Microsoft Docs
+description: 深入瞭解核心視圖縮放控制項，可讓您在時間軸上放大和縮小，也可以瞭解其他縮放方法。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6862493de844ad8108009a2103752122114ae6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df2ffebee150ae106003ed5113e4c7354458143c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553041"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720718"
 ---
 # <a name="cores-view-zoom-tool"></a>核心檢視縮放工具
 [縮放] 控制項是可讓您放大和縮小時間軸的滑桿，以專注在特別感興趣的區域。 此控制項會放大目前檢視的中心，以在放大之前調整檢視。

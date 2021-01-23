@@ -1,5 +1,6 @@
 ---
 title: 程式行檢視 - 取樣資料 | Microsoft Docs
+description: 瞭解取樣資料的線條視圖如何針對在分析執行中收集樣本時執行的語句，列出效能資料。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ff4d851937111400002de531696b9b69aec20ba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38ae3e9c40204082ea8791ddea4e92d77a0d311e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778579"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721316"
 ---
 # <a name="lines-view---sampling-data"></a>程式行檢視 - 取樣資料
 取樣資料的 [程式行] 檢視會針對在執行分析期間收集樣本時執行的陳述式，列出效能資料。

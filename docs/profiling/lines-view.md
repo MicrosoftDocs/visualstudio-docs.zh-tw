@@ -1,5 +1,6 @@
 ---
 title: 程式行檢視 | Microsoft Docs
+description: 瞭解線條視圖只適用于使用取樣方法所收集的分析工具資料。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac0d7785071e5f2928e7eabb4a29b1655b42c5ad
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773977"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721290"
 ---
 # <a name="lines-view"></a>程式行檢視
 [程式行] 檢視僅適用於使用取樣方法收集的分析工具資料。 此檢視不適用於使用檢測收集的資料。

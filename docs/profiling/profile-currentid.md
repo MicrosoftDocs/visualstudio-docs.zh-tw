@@ -1,5 +1,6 @@
 ---
 title: PROFILE_CURRENTID | Microsoft Docs
+description: 瞭解如何使用 PROFILE_CURRENTID，讓函數在目前的執行緒或進程上運作，而不是特別指出。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5639726762359bb8ba2fb374ee8ddc5c78e2f4da
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 5171753ff8ea6722cf1d97e155352e3899fb5562
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407571"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719483"
 ---
 # <a name="profile_currentid"></a>PROFILE_CURRENTID
 PROFILE_CURRENTID 在對 NameProfile、StartProfile、StopProfile、SuspendProfile 和 ResumeProfile 函式的呼叫中，會傳回執行緒識別碼或處理序識別碼的虛擬語彙基元。 使用它會讓函式在目前的執行緒或處理序上作業，而不是特別指定的執行緒或處理序。

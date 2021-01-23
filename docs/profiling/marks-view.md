@@ -1,5 +1,6 @@
 ---
 title: 標記檢視 | Microsoft Docs
+description: 瞭解標記視圖如何顯示插入應用程式的取樣和 ETW 事件。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d7483f309a3d7edb92d25c34e9665a6212c8038
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 969bf0debfc1da9f7ca1763d8c9c001d565ce64a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037513"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718976"
 ---
 # <a name="marks-view"></a>標記檢視
 [標記] 檢視會顯示插入應用程式中的取樣和 ETW 事件。
@@ -28,7 +29,7 @@ ms.locfileid: "90037513"
 
  此檢視也會顯示來自自動產生之標記的 Windows 計數器資料。 如需詳細資訊，請參閱 [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)。
 
- 若要在兩個標記之間建立篩選，請選取標記，按一下滑鼠右鍵，然後按一下 [依標記加入篩選條件]**** 或 [依時間戳記加入篩選條件]****。
+ 若要在兩個標記之間建立篩選，請選取標記，按一下滑鼠右鍵，然後按一下 [依標記加入篩選條件] 或 [依時間戳記加入篩選條件]。
 
  下表提供 [標記] 檢視中可用資料行的定義。
 

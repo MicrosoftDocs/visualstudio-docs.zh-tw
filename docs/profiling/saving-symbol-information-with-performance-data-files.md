@@ -1,5 +1,6 @@
 ---
 title: 使用效能資料檔案儲存符號資訊 | Microsoft Docs
+description: 瞭解如何設定效能專案設定，以儲存或序列化報表檔案中的符號。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 142e73a65fa9ffd2210719d84f18a25068762acb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778293"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720211"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用效能資料檔案儲存符號資訊
 
-如果您使用 Visual Studio IDE 分析檔案，且打算將 VSP 檔移至不同的電腦，則必須將效能專案設定設為儲存或「序列化」** 報告檔中的符號。 這樣會增加報告檔的大小。 必須將符號序列化的原因有兩個︰
+如果您使用 Visual Studio IDE 分析檔案，且打算將 VSP 檔移至不同的電腦，則必須將效能專案設定設為儲存或「序列化」報告檔中的符號。 這樣會增加報告檔的大小。 必須將符號序列化的原因有兩個︰
 
 - 在目標組件從其暫時儲存區的位置遺失之前，將程式碼符號內嵌到效能報表。
 
@@ -28,7 +29,7 @@ ms.locfileid: "74778293"
 
 您可以從 Visual Studio IDE 或命令列將符號序列化：
 
-- 若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中將符號序列化，請指向功能表列上的 [工具]****，然後按一下 [選項]****。 在 [選項]**** 視窗中，選取 [效能工具]****，然後選取 [自動序列化符號資訊]**** 核取方塊。
+- 若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中將符號序列化，請指向功能表列上的 [工具]，然後按一下 [選項]。 在 [選項] 視窗中，選取 [效能工具]，然後選取 [自動序列化符號資訊] 核取方塊。
 
 - 當您儲存報告檔時，PACKSYMBOLS 等同於命令列選項。 若要將符號序列化，輸入 **vsperfreport /summary:all /packsymbols filename.vsp**。
 

@@ -1,5 +1,7 @@
 ---
 title: 並行視覺化檢視 | Microsoft Docs
+description: 使用並行視覺化程式來查看在多執行緒應用程式中顯示執行緒計時的圖表，以協助您解決效能問題。
+ms.custom: SEO-VS-2020
 ms.date: 07/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a955304e1a0939bbe7398b48a5e9ff30461d8745
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 5e6f36568568a59980316f3070f902027898e39e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037337"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720952"
 ---
 # <a name="concurrency-visualizer"></a>並行視覺化檢視
 
@@ -43,7 +45,7 @@ ms.locfileid: "90037337"
 
 ## <a name="related-topics"></a>[相關主題]
 
-|Title|描述|
+|標題|描述|
 |-----------|-----------------|
 |[使用率檢視](../profiling/utilization-view.md)|說明如何跨所有處理器檢視和分析系統活動。|
 |[執行緒檢視](../profiling/threads-view-parallel-performance.md)|說明如何分析程式中執行緒之間的互動。|

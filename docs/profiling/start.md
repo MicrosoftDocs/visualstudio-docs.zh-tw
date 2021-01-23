@@ -1,5 +1,6 @@
 ---
 title: Start | Microsoft Docs
+description: 瞭解啟動選項是將分析工具初始化為指定之程式碼剖析方法的 VSPerfCmd.exe 選項。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aea1032f709d2f8cebf105bce14dc081fe3b74da
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778267"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719990"
 ---
-# <a name="start"></a>Start
-**Start**選項是一個*VSPerfCmd.exe*選項，可將分析工具初始化為指定的程式碼剖析方法。
+# <a name="start"></a>開始
+**Start** 選項是一個 *VSPerfCmd.exe* 選項，可將分析工具初始化為指定的程式碼剖析方法。
 
 ## <a name="syntax"></a>語法
 

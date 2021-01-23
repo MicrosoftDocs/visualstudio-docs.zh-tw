@@ -1,5 +1,6 @@
 ---
 title: ProcessOn 和 ProcessOff | Microsoft Docs
+description: 瞭解 VSPerfCmd.exe ProcessOff 和 ProcessOn 子命令如何在命令列分析會話中，針對指定的進程暫停和繼續程式碼剖析。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae4b5e95636894ddc2d0c4799308afb057145747
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778384"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719444"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 和 ProcessOff
 VSPerfCmd.exe 的 **ProcessOff** 和 **ProcessOn** 子命令會暫停和繼續分析命令列分析工作階段中指定的處理序。 **ProcessOff** 會停止分析處理序，**ProcessOn** 則開始分析處理序。

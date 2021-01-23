@@ -1,5 +1,6 @@
 ---
 title: UI 處理時間 | Microsoft Docs
+description: 瞭解時間軸中的區段與分類為 UI 處理的封鎖時間相關聯。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 391b4582d03e32e738f0eade823326e72a662a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63462aedfb1d7a2c03fe6ff5d59495358c52194e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63004463"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722382"
 ---
 # <a name="ui-processing-time"></a>UI 處理時間
 時間軸中的這些區段與歸類為 UI 處理的封鎖時間建立關聯。 這表示執行緒會提取 Windows 訊息或執行其他使用者介面 (UI) 工作。 在這段期間內，會在並行視覺化檢視當作 UI 處理計數的 API 中封鎖執行緒。 `GetMessage()` 和 `MsgWaitForMultipleObjects()` 這類 API 屬於這個群組。

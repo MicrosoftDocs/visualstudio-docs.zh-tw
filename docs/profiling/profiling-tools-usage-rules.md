@@ -1,5 +1,6 @@
 ---
 title: 程式碼剖析工具使用規則 | Microsoft Docs
+description: 瞭解 [分析工具使用量] 類別中的效能規則如何提供流量分析工具以最有效率的方式收集資料的指引。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aeeb7e0a9061d72a07b718acde70b00dfcbba89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8eba05a40e108d2fd1ba5107160088c5c30da299
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144671"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720471"
 ---
 # <a name="profiling-tools-usage-rules"></a>程式碼剖析工具使用規則
 程式碼剖析工具使用分類中的效能規則提供的指引，可最有效地使用分析工具來收集資料。

@@ -1,5 +1,6 @@
 ---
 title: 執行緒詳細資料檢視 - 爭用資料 | Microsoft Docs
+description: 瞭解 [執行緒詳細資料] view 如何在分析執行的選取執行緒中，顯示封鎖事件的時間軸圖形。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,17 +14,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 679fd9fd039fa903f5df5a479fa4f0e119bb7a9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1cf1d9d7afeef8962026739116f75d4289d6283
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778163"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718794"
 ---
 # <a name="thread-details-view---contention-data"></a>執行緒詳細資料檢視 - 爭用資料
 執行緒詳細資料檢視會在時間軸圖形顯示因爭用資源，而在程式碼剖析執行選取的執行緒中造成的封鎖事件。 因為另一個執行緒已鎖定資源的存取權時，所以會強制該執行緒暫停執行而發生封鎖事件。
 
- 此檢視會在執行緒的水平時間軸上，以橫條表示執行緒的執行時間軸，並以直條表示封鎖事件。 如有必要，您可以放大時間軸的某區段來檢視個別事件。 若要檢視造成該事件的函式執行路徑，請按一下事件列。 該函式隨即出現在 [呼叫堆疊]**** 視窗中。 當函式的原始程式碼可供使用時，您可以按一下函式名稱，在 Visual Studio IDE 中編輯原始程式檔。
+ 此檢視會在執行緒的水平時間軸上，以橫條表示執行緒的執行時間軸，並以直條表示封鎖事件。 如有必要，您可以放大時間軸的某區段來檢視個別事件。 若要檢視造成該事件的函式執行路徑，請按一下事件列。 該函式隨即出現在 [呼叫堆疊] 視窗中。 當函式的原始程式碼可供使用時，您可以按一下函式名稱，在 Visual Studio IDE 中編輯原始程式檔。
 
 ## <a name="navigate-the-timeline"></a>巡覽時間軸
 
@@ -35,9 +36,9 @@ ms.locfileid: "74778163"
 
 #### <a name="to-zoom-out-on-a-timeline"></a>在時間軸上縮小
 
-- 按一下 [縮小]**** 以返回上一個縮放層級。
+- 按一下 [縮小] 以返回上一個縮放層級。
 
-- 按一下 [顯示比例重設]****，在檢視中顯示整個時間軸。
+- 按一下 [顯示比例重設]，在檢視中顯示整個時間軸。
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>檢視事件的呼叫堆疊
 
@@ -45,7 +46,7 @@ ms.locfileid: "74778163"
 
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>檢視或編輯呼叫堆疊中函式的原始程式碼
 
-- 在 [呼叫堆疊]**** 視窗中，按一下該函式名稱。
+- 在 [呼叫堆疊] 視窗中，按一下該函式名稱。
 
   該函式的原始程式碼必須是目前專案的一部分。
 
@@ -57,6 +58,6 @@ ms.locfileid: "74778163"
 
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>在 [處理序] 視窗中檢視執行緒爭用資料
 
-- 在時間軸圖形中，按一下 [總計]****。
+- 在時間軸圖形中，按一下 [總計]。
 
      [處理序檢視](../profiling/process-view-contention-data.md)隨即顯示，並選取該執行緒。

@@ -1,5 +1,6 @@
 ---
 title: 效能總管 | Microsoft Docs
+description: 瞭解 Visual Studio 分析工具如何讓開發人員測量、評估及鎖定程式碼中與效能相關的問題。
 ms.date: 06/19/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 89399d49909e1c9067723e75a1adbaa123865758
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a796ee0791fd96edf1e54954df47f2983df3ee4
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778475"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722772"
 ---
 # <a name="performance-explorer"></a>效能總管
 
@@ -32,11 +33,11 @@ Visual Studio 程式碼剖析工具可讓開發人員測量、評估和標定程
 
 ## <a name="common-tasks"></a>常見工作
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**Windows 8 和更新版本的技術**|[Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|
 |**了解分析概念：** 了解使用 [程式碼剖析工具] 收集、檢視及分析程式碼效能時所採用的概念和字彙。|[概觀](../profiling/overviews-performance-tools.md)|
-|**一頭栽入並執行：** 了解使用 [程式碼剖析工具] 收集、檢視及分析程式碼效能時所採用的基本程序。 請依照實習的逐步解說動手嘗試。|[快速入門](../profiling/getting-started-with-performance-tools.md)|
+|**一頭栽入並執行：** 了解使用 [程式碼剖析工具] 收集、檢視及分析程式碼效能時所採用的基本程序。 請依照實習的逐步解說動手嘗試。|[開始使用](../profiling/getting-started-with-performance-tools.md)|
 |**設定程式碼分析工作階段：** 了解如何指定要進行分析的專案或二進位檔、選取分析方法、選擇要收集的效能資料，以及如何設定其他分析工作階段選項等進階方法。|[設定效能工作階段](../profiling/configuring-performance-sessions.md)|
 |**控制程式碼分析工具收集的資料：** 了解如何使用效能工作階段屬性和互動程序來開始和停止分析，以及如何將收集的效能資料限制在您所要的資訊。|[控制資料收集](../profiling/controlling-data-collection.md)|
 |**找出效能問題：** 了解如何在 [程式碼剖析工具報表] 檢視視窗中檢視和分析收集到的效能資料。|[分析效能工具資料](../profiling/analyzing-performance-tools-data.md)|

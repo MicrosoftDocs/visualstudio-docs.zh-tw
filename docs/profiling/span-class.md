@@ -1,5 +1,6 @@
 ---
 title: span 類別 | Microsoft Docs
+description: 瞭解 span 類別，以及它如何定義應用程式的階段。 同時瞭解範圍類別公用的函式和繼承階層。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ca1e674b13877ff8a8864c3b7447f15fd0307d7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62979753"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720042"
 ---
 # <a name="span-class"></a>span 類別
 定義應用程式階段。

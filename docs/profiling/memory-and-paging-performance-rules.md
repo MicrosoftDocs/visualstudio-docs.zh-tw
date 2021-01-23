@@ -1,5 +1,6 @@
 ---
 title: 記憶體和分頁效能規則 | Microsoft Docs
+description: 瞭解記憶體和分頁類別中的效能規則如何在執行分析時，識別可能會影響應用程式效能和回應性的分頁活動。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f37972b2-efe4-4a1c-a5d1-a246ccd76817
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 716bc771310b73c8a0b11a97080184d9868fe91b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1cddda12fbb67f9b604186e754146558cdd62ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535131"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720601"
 ---
 # <a name="memory-and-paging-performance-rules"></a>記憶體和分頁效能規則
 記憶體和分頁分類中的效能規則，會在執行的分析中找出可能影響應用程式效能和回應性的分頁活動。

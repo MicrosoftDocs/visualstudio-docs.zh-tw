@@ -1,5 +1,6 @@
 ---
 title: 分析和 Windows Vista 安全性 | Microsoft Docs
+description: 根據可用的使用者存取權限設定，個別使用者可能具有安全性許可權來分析該電腦上的處理常式。
 ms.date: 11/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0bfd12808a4639f44a3a5075a4b474012ab2c2fa
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778371"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719405"
 ---
 # <a name="profiling-and-windows-vista-security"></a>分析和 Windows Vista 安全性
 
@@ -33,9 +34,9 @@ ms.locfileid: "74778371"
 
 ## <a name="cross-session-profiling"></a>跨工作階段進行程式碼剖析
 
-「跨工作階段進行程式碼剖析」** 是指能夠分析在不同登入工作階段中執行的處理序。 例如，大部分服務是在工作階段 0 中執行，而使用者無法直接在工作階段 0 中執行。 使用 [效能總管] 工具列上的 [附加至處理序]**** 按鈕或 VSPerfCmd 命令列工具的 `/attach` 選項，您就可以分析不同使用者工作階段中的大部分處理序。
+「跨工作階段進行程式碼剖析」是指能夠分析在不同登入工作階段中執行的處理序。 例如，大部分服務是在工作階段 0 中執行，而使用者無法直接在工作階段 0 中執行。 使用 [效能總管] 工具列上的 [附加至處理序] 按鈕或 VSPerfCmd 命令列工具的 `/attach` 選項，您就可以分析不同使用者工作階段中的大部分處理序。
 
-您透過設定跨處理序進行程式碼剖析可見性選項，就可以看到處理序清單。 當您選取 [附加至處理序]**** 後，隨即顯示的 [附加至處理序]**** 視窗中會提供這些選項：
+您透過設定跨處理序進行程式碼剖析可見性選項，就可以看到處理序清單。 當您選取 [附加至處理序] 後，隨即顯示的 [附加至處理序] 視窗中會提供這些選項：
 
 - **顯示所有使用者的處理序**
 

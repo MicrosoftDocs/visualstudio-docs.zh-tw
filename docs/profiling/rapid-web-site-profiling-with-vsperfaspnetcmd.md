@@ -1,5 +1,6 @@
 ---
 title: 使用 VSPerfASPNETCmd 快速進行網站程式碼剖析 | Microsoft Docs
+description: 瞭解 VSPerfASPNETCmd 命令列工具如何讓您輕鬆地分析 ASP.NET 的 web 應用程式。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a08604b95f49f55a5fea254447046d305d8feff9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771688"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720419"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 快速進行網站分析
 
@@ -50,7 +51,7 @@ ms.locfileid: "74771688"
 
 **vsperfaspnetcmd /trace**  *websiteUrl*
 
-如果您想要分析靜態編譯的。在 web 應用程式中的*dll* 檔案，您必須使用 [VSInstr](../profiling/vsinstr.md) 命令列工具來檢測檔案。 vsperfaspnetcmd /trace 命令會包含已檢測檔案中的資料。
+如果您想要分析靜態編譯的。在 web 應用程式中的 *dll* 檔案，您必須使用 [VSInstr](../profiling/vsinstr.md) 命令列工具來檢測檔案。 vsperfaspnetcmd /trace 命令會包含已檢測檔案中的資料。
 
 ## <a name="to-collect-net-memory-data"></a>收集 .NET 記憶體資料
 

@@ -1,5 +1,6 @@
 ---
 title: 標記報告 |Microsoft 文件
+description: 瞭解標記報表如何列出所顯示時間範圍內的標記，以及移動或縮放可能會導致標記出現或消失。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9502d2cf0081985cfbee2283af820c06d681ad9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e95cf3b14f804c481ff03ec6fbf72b360efedc7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64808267"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722109"
 ---
 # <a name="markers-report"></a>標記報告
 標記報告會列出所顯示時間範圍內的標記。  移動瀏覽、縮放或隱藏通道可能會造成標記顯示或消失。 報表包含每個標記的下列資訊：
@@ -38,7 +39,7 @@ ms.locfileid: "64808267"
 
 - 標記所表示意義的高階描述
 
-  選擇 [匯出]**** 按鈕來將標記報表儲存為 CSV 檔案。 您可以搭配其他 App 或工具使用 CSV 檔案中的資料。
+  選擇 [匯出] 按鈕來將標記報表儲存為 CSV 檔案。 您可以搭配其他 App 或工具使用 CSV 檔案中的資料。
 
 > [!NOTE]
 > 標記報表可以顯示 1,000 個標記。 若要查看所有標記，請將完整的報表匯出成 CSV 檔案。

@@ -1,5 +1,6 @@
 ---
 title: 瞭解 profiler 效能收集方法
+description: 瞭解 Visual Studio 效能分析工具中的工具所使用的資料收集方法。
 ms.date: 4/30/2020
 ms.topic: conceptual
 f1_keywords: ''
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: '>= vs-2017'
 ms.workload:
 - multiple
-ms.openlocfilehash: f0e24f3fc33ea456ad02bf9797b934a1a56d4492
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e34fd78d7ff44aeffc4ca4d61c84a0a9af6747a5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238578"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722265"
 ---
 # <a name="understand-profiler-performance-collection-methods"></a>瞭解 profiler 效能收集方法
 

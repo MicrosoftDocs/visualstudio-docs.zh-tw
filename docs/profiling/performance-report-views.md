@@ -1,5 +1,6 @@
 ---
 title: 效能報告檢視 | Microsoft Docs
+description: 瞭解如何在 Visual Studio 整合式開發 environmentIDE 中顯示程式碼剖析資料檔案的視圖。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb0d9ae2d677b1cc9dc828ffaecd5c0f71bfd5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 611c31027bd725d8a1a98e6cb2e76d544743c811
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772284"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722746"
 ---
 # <a name="performance-report-views"></a>效能報告檢視
 本節提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具報表和檢視的參考資訊。 程式碼剖析資料檔案的檢視會顯示在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境 (IDE) 中， 報表則由 [VSPerfReport](../profiling/vsperfreport.md) 命令列工具產生。

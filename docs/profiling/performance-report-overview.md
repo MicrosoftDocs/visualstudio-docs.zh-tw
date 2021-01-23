@@ -1,5 +1,6 @@
 ---
 title: 效能報告概觀 | Microsoft Docs
+description: 在 Visual Studio Team System 開發版整合式開發環境的 [效能報告] 視窗中，查看程式碼剖析資料。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +14,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95fbb51cbcc4d2467b9d1636c7e9f61232791d62
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772228"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722759"
 ---
 # <a name="performance-report-overview"></a>效能報表概觀
-您可以在 Visual Studio Team System Development Edition 整合式開發環境 (IDE) 的 [效能報告]**** 視窗中檢視效能工作階段的程式碼剖析資料。 程式碼剖析資料儲存在 .vsp 和 .vsps 檔案中。 [報表檢視] 視窗可讓您檢視和分析應用程式效能問題。
+您可以在 Visual Studio Team System Development Edition 整合式開發環境 (IDE) 的 [效能報告] 視窗中檢視效能工作階段的程式碼剖析資料。 程式碼剖析資料儲存在 .vsp 和 .vsps 檔案中。 [報表檢視] 視窗可讓您檢視和分析應用程式效能問題。
 
 > [!CAUTION]
 > 程式碼剖析資料檔案包含機密資訊，例如電腦名稱、作業系統版本、檔案路徑、記憶體資訊和其他電腦設定資訊。 您應該在其原生中維持對資料散發的嚴格控制。*.vsp* 格式以及將它匯出至時。*csv* 或。*xml* 檔案。
@@ -31,7 +32,7 @@ ms.locfileid: "74772228"
 ## <a name="performance-report-window"></a>效能報表視窗
  [效能報告] 視窗是用來檢視、管理及篩選效能資料的工具視窗，並包含可自訂的查詢控制項。
 
- 您可以在 [效能報告] 視窗的主要工具列上存取每個檢視。 按一下 [目前檢視]**** 清單旁的箭號，以顯示和選取可用的個別檢視。
+ 您可以在 [效能報告] 視窗的主要工具列上存取每個檢視。 按一下 [目前檢視] 清單旁的箭號，以顯示和選取可用的個別檢視。
 
  [效能報告] 視窗提供下列資料檢視︰
 
@@ -52,7 +53,7 @@ ms.locfileid: "74772228"
 ### <a name="call-tree-view"></a>呼叫樹狀圖檢閱
  [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點會列出它所呼叫的所有函式，以及這些函式呼叫的相關效能資料。
 
- [呼叫樹狀圖] 檢視也可展開並反白顯示花最多時間或最常取樣的函式的執行路徑。 若要顯示最常使用的路徑，請以滑鼠右鍵按一下函式，然後按一下 [展開最忙碌路徑]****。 如需詳細資訊，請參閱[呼叫樹狀圖檢視](../profiling/call-tree-view.md)。
+ [呼叫樹狀圖] 檢視也可展開並反白顯示花最多時間或最常取樣的函式的執行路徑。 若要顯示最常使用的路徑，請以滑鼠右鍵按一下函式，然後按一下 [展開最忙碌路徑]。 如需詳細資訊，請參閱[呼叫樹狀圖檢視](../profiling/call-tree-view.md)。
 
 ### <a name="process-view"></a>處理序檢視
  [處理序] 檢視顯示已剖析的每個處理序和執行緒的效能資料。 如需詳細資訊，請參閱[處理序檢視](../profiling/process-view.md)。
@@ -70,10 +71,10 @@ ms.locfileid: "74772228"
  [指令指標] 檢視可讓您檢視取樣程式碼剖析期間所執行的特定指標。 如需詳細資訊，請參閱[指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view.md)。
 
 ### <a name="allocation-view"></a>配置檢視
- 如果在 [效能工作階段]**** 屬性對話方塊的 [一般]**** 頁面上選取 [收集 .NET 物件配置]****，則會顯示 [配置] 檢視。 請參閱[效能工作階段概觀](../profiling/performance-session-overview.md)。 [配置] 檢視列出應用程式或元件所配置的 .NET 物件。 展開物件資料列時，會顯示呼叫樹狀圖。 呼叫樹狀圖會顯示導致物件建立的執行路徑。 也會顯示有關呼叫樹狀圖中每個函式的內含和專有配置數目的資訊。 [配置] 檢視也可展開並反白顯示配置最大物件數目的函式的執行路徑。 若要顯示最常使用的路徑，請以滑鼠右鍵按一下函式，然後按一下 [展開最忙碌路徑]****。 如需詳細資訊，請參閱[收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)和[配置檢視](../profiling/dotnet-memory-allocations-view.md)。
+ 如果在 [效能工作階段] 屬性對話方塊的 [一般] 頁面上選取 [收集 .NET 物件配置]，則會顯示 [配置] 檢視。 請參閱[效能工作階段概觀](../profiling/performance-session-overview.md)。 [配置] 檢視列出應用程式或元件所配置的 .NET 物件。 展開物件資料列時，會顯示呼叫樹狀圖。 呼叫樹狀圖會顯示導致物件建立的執行路徑。 也會顯示有關呼叫樹狀圖中每個函式的內含和專有配置數目的資訊。 [配置] 檢視也可展開並反白顯示配置最大物件數目的函式的執行路徑。 若要顯示最常使用的路徑，請以滑鼠右鍵按一下函式，然後按一下 [展開最忙碌路徑]。 如需詳細資訊，請參閱[收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)和[配置檢視](../profiling/dotnet-memory-allocations-view.md)。
 
 ### <a name="objects-lifetime-view"></a>物件存留期檢視
- 如果在 [效能工作階段]**** 屬性對話方塊的 [一般]**** 頁面上選取 [收集 .NET 物件配置資訊]**** 和 [同時收集 .NET 物件存留期的資訊]****，則會顯示 [物件存留期] 檢視。
+ 如果在 [效能工作階段] 屬性對話方塊的 [一般] 頁面上選取 [收集 .NET 物件配置資訊] 和 [同時收集 .NET 物件存留期的資訊]，則會顯示 [物件存留期] 檢視。
 
  [物件存留期] 檢視顯示每個型別的執行個體總數和每個記憶體回收層代中所收集的物件數目。 如需詳細資訊，請參閱[物件存留期檢視](../profiling/object-lifetime-view.md)。
 
@@ -90,7 +91,7 @@ ms.locfileid: "74772228"
 
 - **顯示查詢** - 顯示或隱藏自訂查詢控制項。
 
-- **** - 將報告連同其目前的分析儲存成 .vsps 檔案。
+-  - 將報告連同其目前的分析儲存成 .vsps 檔案。
 
 - **匯出** - 將目前的報告儲存在 .CVS 格式或 .XML 格式檔案，提供選項以儲存不同的檢視。
 

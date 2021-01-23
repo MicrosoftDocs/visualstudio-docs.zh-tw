@@ -1,5 +1,7 @@
 ---
 title: 核心檢視圖例 | Microsoft Docs
+description: 深入瞭解核心視圖圖例，其提供表格式內容切換資料和執行緒選擇。 同時瞭解內容切換和效能。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea3184fbcd3561b88521f7dbdf4bf44c925150d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 043f056587856b5c5774a3a15b3542437e0d4eb7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553159"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720822"
 ---
 # <a name="cores-view-legend"></a>核心檢視圖例
 核心檢視圖例依色彩和名稱識別每個執行緒。 當中包含顯示跨核心內容切換計數、內容切換總數，以及跨核心之內容切換百分比的欄。 圖例中的列以遞減順序，依跨核心內容切換的次數排序。
@@ -28,7 +30,7 @@ ms.locfileid: "62553159"
 
  下表描述圖例項目。
 
-|項目|定義|
+|元素|定義|
 |-------------|----------------|
 |執行緒名稱|顯示前一個核心時間軸中執行緒的名稱和執行緒的色彩。|
 |跨核心內容切換|執行緒也從一個邏輯核心切換到另一個的內容切換次數。 它不會區分從一個處理器晶粒跨越到另一個的跨核心內容切換，與留在相同晶粒上的跨核心內容切換。|

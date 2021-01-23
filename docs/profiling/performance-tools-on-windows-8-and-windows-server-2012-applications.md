@@ -1,5 +1,6 @@
 ---
 title: Windows 8 & WS 2012 應用程式的效能工具
+description: 瞭解 Windows 8 和 Windows Server 2012 中的增強式安全性功能，是否需要大幅變更 Visual Studio 效能工具收集資料的方式。
 ms.custom: SEO-VS-2020
 ms.date: 06/19/2017
 ms.topic: conceptual
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc44eddc2af2e2d85f7c4bb9c876d336ccd1b546
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ce83684b77d4546915cdcf5980e68be0b6c6a125
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807829"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719587"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
 
@@ -97,7 +98,7 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 階層互動分析資料可以使用任何版本的 Visual Studio 來收集。 不過，階層互動分析資料只能在 Visual Studio Enterprise 中檢視。
 
-**Windows 8 和 Windows Server 2012**
+**Windows 8 與 Windows Server 2012**
 
 1. 若要從 Windows 8 桌面程式或 Windows Server 2012 中執行的應用程式收集階層互動資料，您必須使用檢測方法。
 
@@ -111,7 +112,7 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 **在遠端電腦上收集 TIP 資料**
 
-若要在遠端電腦上收集階層互動資料，您必須將** \_ \_ ** _\<Platform>_ **\_** _\<Language>_ Visual Studio 電腦的 *%VSInstallDir%\Team Tools\Performance Tools\Setups*資料夾中的 vs profiler **.exe**檔案複製到遠端電腦，並加以安裝。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
+若要在遠端電腦上收集階層互動資料，您必須將 **\_ \_** _\<Platform>_ **\_** _\<Language>_ Visual Studio 電腦的 *%VSInstallDir%\Team Tools\Performance Tools\Setups* 資料夾中的 vs profiler **.exe** 檔案複製到遠端電腦，並加以安裝。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
 
 您可以使用 [VSPerfCmd](../profiling/vsperfcmd.md) 或 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 收集程式碼剖析資料。
 

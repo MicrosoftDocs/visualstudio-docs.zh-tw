@@ -1,5 +1,6 @@
 ---
 title: PF | Microsoft Docs
+description: 瞭解 VSPerfCmd.exe PF 選項如何設定取樣為分頁錯誤的分析事件，以及變更取樣間隔中的分頁錯誤數目。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
@@ -9,24 +10,24 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ec6d636ec087386fdc9462ae09db55400957a9
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: b920b641a7bfc4583af7b0ec5a9692a25c19adb5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "74778410"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719548"
 ---
 # <a name="pf"></a>PF
-*VSPerfCmd.exe 的 * **PF** 選項會將取樣的分析事件設定為分頁錯誤，並且選擇性地變更取樣間隔的分頁錯誤數目，預設值為 10。
+*VSPerfCmd.exe 的* **PF** 選項會將取樣的分析事件設定為分頁錯誤，並且選擇性地變更取樣間隔的分頁錯誤數目，預設值為 10。
 
 > [!NOTE]
 > **PF** 不能在 64 位元系統上使用。
 
-**PF** 只能用於也包含 [啟動]**** 或 [連結]**** 選項的命令列。
+**PF** 只能用於也包含 [啟動] 或 [連結] 選項的命令列。
 
- 預設會將取樣事件設定為未暫止處理器時脈週期，並將取樣間隔設定為 10,000,000。 [計時器]****、[PF]****、[Sys]**** 和 [計數器]**** 選項可讓您設定取樣事件和取樣間隔。 **GC** 選項會在每個配置和記憶體回收事件發生時，收集 .NET 記憶體資料。 您只能在命令列上指定上述其中一個選項。
+ 預設會將取樣事件設定為未暫止處理器時脈週期，並將取樣間隔設定為 10,000,000。 [計時器]、[PF]、[Sys] 和 [計數器] 選項可讓您設定取樣事件和取樣間隔。 **GC** 選項會在每個配置和記憶體回收事件發生時，收集 .NET 記憶體資料。 您只能在命令列上指定上述其中一個選項。
 
- 取樣事件和取樣間隔只能在包含 [啟動]**** 或 [附加]**** 選項的第一個命令列中設定。
+ 取樣事件和取樣間隔只能在包含 [啟動] 或 [附加] 選項的第一個命令列中設定。
 
 ## <a name="syntax"></a>語法
 

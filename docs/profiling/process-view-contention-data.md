@@ -1,5 +1,6 @@
 ---
 title: 處理序檢視 - 爭用資料 | Microsoft Docs
+description: 瞭解 [進程] 視圖如何顯示程式碼剖析執行期間所執行之進程和執行緒的爭用資料。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 30c938088538bcecc71e3a7e37d5ae403dd476e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3eb95c5ba8bb9f519623d4b43bc80d37919305d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778397"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719463"
 ---
 # <a name="process-view---contention-data"></a>處理序檢視 - 爭用資料
 處理序檢視顯示程式碼剖析執行期間所執行處理序和執行緒的爭用資料。
@@ -35,7 +36,7 @@ ms.locfileid: "74778397"
 |**結束時間**|從程式碼剖析開始到處理序或執行緒結束的毫秒數或處理器週期數。|
 |**識別碼**|系統產生的處理序或執行緒識別碼。|
 |**存留時間**|從處理序或執行緒開始到處理序或執行緒結束，或到程式碼剖析結束的毫秒數或處理器週期數。|
-|**類型**|處理序或執行緒資料列的類型。<br /><br /> 僅在 **>vsreport** 命令列報表中。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。|
+|**型別**|處理序或執行緒資料列的類型。<br /><br /> 僅在 **>vsreport** 命令列報表中。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。|
 |**名稱**|處理序或執行緒的名稱。|
 |**唯一 ID**|分析工具產生的唯一處理程序或執行緒識別碼。|
 

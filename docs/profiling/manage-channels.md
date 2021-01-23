@@ -1,5 +1,6 @@
 ---
 title: 管理通道 | Microsoft Docs
+description: 瞭解如何為您的流程組織通道，讓您可以在並行視覺化程式的 [執行緒] 視圖中檢查特定模式。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0dd8643f63a7a3e67400f09f00b999fff33f09e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64779249"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721264"
 ---
 # <a name="manage-channels"></a>管理通道
-在並行視覺化檢視的 [執行緒檢視]**** 中，您可以針對處理序組織通道，以檢查特定模式。 您可以排序、上下移動及隱藏或顯示通道。
+在並行視覺化檢視的 [執行緒檢視] 中，您可以針對處理序組織通道，以檢查特定模式。 您可以排序、上下移動及隱藏或顯示通道。
 
 ## <a name="sort-by"></a>排序依據
  您可以就目前的縮放層級，使用 [排序依據] 控制項來依據不同準則排序執行緒。 此方法對於尋找特定模式非常有幫助。 您可以根據這些準則來排序：
@@ -30,7 +31,7 @@ ms.locfileid: "64779249"
 |開始時間|依據開始時間來排序執行緒。 這是預設的排序順序。|
 |結束時間|依據結束時間來排序執行緒。|
 |執行|依據執行時間花費百分比來排序執行緒。|
-|Synchronization|依據同步時間花費百分比來排序執行緒。|
+|同步處理|依據同步時間花費百分比來排序執行緒。|
 |I/O|依據 I/O 時間花費百分比來排序執行緒。|
 |睡眠|依據睡眠時間花費百分比來排序執行緒。|
 |Paging|依據分頁時間花費百分比來排序執行緒。|

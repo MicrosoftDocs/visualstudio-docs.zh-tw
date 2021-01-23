@@ -1,5 +1,6 @@
 ---
 title: StopProfile | Microsoft Docs
+description: 瞭解 StopProfile 函式，以及它如何將指定的分析層級的計數器設定為 0 (off) 。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a5492d2bbd33e6b250b564532c929234d748506c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2cfffe78264f5721bbf3f3434199a542ec1ce14
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778228"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722681"
 ---
 # <a name="stopprofile"></a>StopProfile
 `StopProfile` 函式會將所指定分析層級的計數器設定為 0 (關閉)。

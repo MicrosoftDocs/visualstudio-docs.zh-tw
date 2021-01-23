@@ -1,5 +1,6 @@
 ---
 title: 以可見時間範圍為基礎的報表 | Microsoft Docs
+description: 瞭解設定檔視圖如何根據目前可見的時間範圍和通道來顯示報表。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02dc0e009702b25c2204f0a1302931fe941b5f59
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63002342"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720367"
 ---
 # <a name="report-based-on-visible-time-range"></a>以可見時間範圍為基礎的報表
 [設定檔] 檢視顯示的報表是以目前可見的時間範圍和通道為基礎。 若要查看資料不同子集的詳細資訊，請按一下圖例中的項目。

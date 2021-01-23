@@ -1,5 +1,6 @@
 ---
 title: 個別執行緒摘要報表 | Microsoft Docs
+description: 視圖橫條圖顯示在目前可見的時間範圍內，每個未隱藏的執行緒在每個活動類別中花費的時間比例。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03797190097d3495a315fd0e0343fa9999100147
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62794322"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722785"
 ---
 # <a name="per-thread-summary-report"></a>個別執行緒摘要報表
 此橫條圖會顯示目前可見的時間範圍內，每個未隱藏執行緒在每個活動類別所花費的時間比例。 「執行」表示執行緒正在執行；所有其他分類則表示執行緒正在等待某個項目。

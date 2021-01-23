@@ -1,5 +1,6 @@
 ---
 title: 資源爭用資料檢視 | Microsoft Docs
+description: 瞭解包含執行緒爭用分析資料之分析工具資料檔案的視圖和報表的參考資訊。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25dc334819c4b32bf74822e46dd3251919f621bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771526"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720328"
 ---
 # <a name="resource-contention-data-views"></a>資源爭用資料檢視
 本節包含程式碼剖析工具資料檔案的檢視與報告，而此檔案含有執行緒爭用分析資料。
@@ -67,7 +68,7 @@ ms.locfileid: "74771526"
 
  按處理序和執行緒列出資源爭用。
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 - [函式詳細資料檢視](../profiling/function-details-view.md)
 
  顯示選取的函式及所呼叫函式 (由該所選函式呼叫的函式) 之間關聯性的圖形化圖表。

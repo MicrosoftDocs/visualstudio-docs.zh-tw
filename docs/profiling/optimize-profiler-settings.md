@@ -1,5 +1,6 @@
 ---
 title: 優化 Profiler 設定 |Microsoft Docs
+description: 瞭解 Visual Studio 中的 [效能分析工具] 和 [診斷工具] 視窗有許多不同的設定，這些設定會影響工具的整體效能。
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f0629228c2fcad1f8ea36db2e4d0c67a68715e4
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 482ee640f4b84348e00f2f3da42a4dbe13f73460
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400307"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722837"
 ---
 # <a name="optimizing-profiler-settings"></a>優化 Profiler 設定
 
@@ -22,7 +23,7 @@ Visual Studio 中的 [效能分析工具] 和 [診斷工具] 視窗有許多不�
 
 ## <a name="symbol-settings"></a>符號設定
 
-偵錯工具選項中所找到的符號設定 ( **Debug > 選項 > 符號** 或 **工具 > 選項 > 錯 > 符號** ，) 在工具中產生結果所需的時間會有很大的影響。 啟用符號伺服器或使用 **_NT_SYMBOL_PATH** ，會讓分析工具為報表中的每個載入的模組要求符號。 目前，分析工具一律會自動載入所有符號，不論自動符號載入喜好設定為何。
+偵錯工具選項中所找到的符號設定 (**Debug > 選項 > 符號** 或 **工具 > 選項 > 錯 > 符號** ，) 在工具中產生結果所需的時間會有很大的影響。 啟用符號伺服器或使用 **_NT_SYMBOL_PATH** ，會讓分析工具為報表中的每個載入的模組要求符號。 目前，分析工具一律會自動載入所有符號，不論自動符號載入喜好設定為何。
 
 ![符號載入頁面](../profiling/media/symbolloading.png "符號載入")
 
@@ -46,7 +47,7 @@ Visual Studio 中的 [效能分析工具] 和 [診斷工具] 視窗有許多不�
 
 ![診斷中樞屬性頁面](../profiling/media/diaghubpropertiespage.png "診斷中樞屬性頁面")
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [同時使用多個分析工具](../profiling/use-multiple-profiler-tools-simultaneously.md)

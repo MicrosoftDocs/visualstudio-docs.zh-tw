@@ -1,5 +1,6 @@
 ---
 title: 將 EventSource 事件顯示為標記 | Microsoft Docs
+description: 瞭解平行存取視覺化程式可以將 EventSource 事件顯示為標記，而您可以控制標記的顯示方式。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f8fadf9ef97717983c96226d81d43efada65e89
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64811542"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723136"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>將 EventSource 事件顯示為標記
 並行視覺化檢視可以將 EventSource 事件顯示為標記，而您可以控制顯示標記的方式。 若要檢視 EventSource 標記，請使用 [進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 對話方塊，註冊 ETW 提供者 GUID。 並行視覺化檢視表示 EventSource 事件的預設慣例為[旗標標記](../profiling/flag-markers.md)、[延伸標記](../profiling/span-markers.md)及[訊息標記](../profiling/message-markers.md)。 您可以將自訂欄位加入至事件，來自訂 EventSource 事件的顯示方式 。 如需標記的詳細資訊，請參閱[並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)。 如需 EventSource 事件的詳細資訊，請參閱 <xref:System.Diagnostics.Tracing>。
@@ -35,8 +36,8 @@ ms.locfileid: "64811542"
 |ETW 層級|並行視覺化檢視重要性|
 |---------------|---------------------------------------|
 |win:LogAlways|正常|
-|win:Critical|重要|
-|win:Error|重要|
+|win:Critical|重大|
+|win:Error|重大|
 |win:Warning|高|
 |win:Informational|正常|
 |win:Verbose|低|
@@ -71,7 +72,7 @@ ms.locfileid: "64811542"
 |cvImportance 值|並行視覺化檢視重要性|
 |------------------------|---------------------------------------|
 |0|正常|
-|1|重要|
+|1|重大|
 |2|高|
 |3|高|
 |4|正常|

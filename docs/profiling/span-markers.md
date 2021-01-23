@@ -1,5 +1,6 @@
 ---
 title: 延伸標記 | Microsoft Docs
+description: 瞭解範圍標記如何代表有意義的應用程式階段，並查看在並行視覺化中顯示範圍的範例。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69b48a5b1b551e2e29b9aa10e7f68ff0df0e379
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28fb9da2e838a17f5b014c3b1af4fc9ee5ab46d7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62980953"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720107"
 ---
 # <a name="span-markers"></a>延伸標記
 延伸標記表示有意義的應用程式階段。 例如，您可以使用延伸範圍，表示其間正在處理特定工作項目的時間間隔。 其長度代表對應的應用程式階段持續時間。 下圖顯示並行視覺化檢視中的延伸範圍︰
@@ -28,7 +29,7 @@ ms.locfileid: "62980953"
  ![不同類別的五個範圍](../profiling/media/cvmarkerspancategory.png ">cvmarkerspancategory") 前五個範圍類別的色彩
 
 ## <a name="span-aggregation-markers"></a>延伸彙總標記
- 有時延伸標記發生的位置太靠近並行視覺化檢視中的另一個標記，以至於無法個別繪製。 發生這種情況時，會顯示一個表示基礎延伸範圍的灰色「延伸彙總標記」**。 當您將指標放在這些圖示的其中一個時，工具提示會顯示所代表基礎延伸範圍的數目。 若要檢視延伸範圍，請予以放大。 如果您縮放到最大後仍然出現延伸彙總標記，您可以在[標記報告](../profiling/markers-report.md)中檢視基礎延伸標記。 下圖顯示延伸彙總標記︰
+ 有時延伸標記發生的位置太靠近並行視覺化檢視中的另一個標記，以至於無法個別繪製。 發生這種情況時，會顯示一個表示基礎延伸範圍的灰色「延伸彙總標記」。 當您將指標放在這些圖示的其中一個時，工具提示會顯示所代表基礎延伸範圍的數目。 若要檢視延伸範圍，請予以放大。 如果您縮放到最大後仍然出現延伸彙總標記，您可以在[標記報告](../profiling/markers-report.md)中檢視基礎延伸標記。 下圖顯示延伸彙總標記︰
 
  ![並行視覺化中的匯總範圍標記](../profiling/media/cvmarkerspanaggregate.png ">cvmarkerspanaggregate") 範圍匯總標記
 

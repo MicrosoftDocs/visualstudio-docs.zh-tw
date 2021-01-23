@@ -1,5 +1,6 @@
 ---
 title: 效能工具問題疑難排解 | Microsoft Docs
+description: 瞭解當您針對效能工具問題進行疑難排解時，可能會遇到的各種問題，例如，程式碼剖析工具未收集資料時。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 514b910f2c19822dc821b8c9a52ae96b8aac80f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d079c2fbd41f6a3eff881a544e8b88c50938e3bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778098"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722408"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>針對效能工具問題進行疑難排解
 當您使用程式碼剖析工具時，可能會遇到下列其中一個問題：
@@ -24,7 +25,7 @@ ms.locfileid: "74778098"
 - [效能檢視和報表將函式名稱顯示為數字](#performance-views-and-reports-display-numbers-for-function-names)
 
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>程式碼剖析工具沒有收集到任何資料
- 在您分析應用程式之後，並未建立程式碼剖析資料 (.*vsp*) 檔案，而且您在 [輸出]**** 視窗或命令視窗中收到下列警告：
+ 在您分析應用程式之後，並未建立程式碼剖析資料 (.*vsp*) 檔案，而且您在 [輸出] 視窗或命令視窗中收到下列警告：
 
  PRF0025: 未收集任何資料。
 

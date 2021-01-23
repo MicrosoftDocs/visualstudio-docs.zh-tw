@@ -1,5 +1,6 @@
 ---
 title: 指定其他的檢測選項 | Microsoft Docs
+description: 瞭解如何使用 Visual Studio IDE 或使用命令列工具來檢測二進位檔。
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 42c5500d03e815bad1666da7b52918479715e861
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: aaa6a222ca320ff9e8e3d117c2218e170d67d683
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851810"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721849"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>如何：指定其他的檢測選項
 
@@ -30,11 +31,11 @@ ms.locfileid: "90851810"
 
 ## <a name="to-specify-additional-instrumentation-option"></a>指定其他的檢測選項
 
-1. 在 [效能總管]**** 中，選取 [效能工作階段]****，然後以滑鼠右鍵按一下並選取 [屬性]****。
+1. 在 [效能總管] 中，選取 [效能工作階段]，然後以滑鼠右鍵按一下並選取 [屬性]。
 
-2. 在 [屬性頁]**** 中，按一下 [進階]**** 屬性。
+2. 在 [屬性頁] 中，按一下 [進階] 屬性。
 
-3. 在 [其他檢測選項]**** 方塊中輸入選項。
+3. 在 [其他檢測選項] 方塊中輸入選項。
 
      例如，使用 /CONTROL:THREAD 以指定程式碼剖析層級。 如需選項的完整清單，請參閱 [VSInstr](../profiling/vsinstr.md)。
 

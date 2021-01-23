@@ -1,5 +1,6 @@
 ---
 title: 分析工具取樣方法資料檢視 | Microsoft Docs
+description: 深入瞭解使用取樣方法所產生的分析工具資料檔案的視圖和報表。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b88abc935ca9eaef0a22230d427817756629bcb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772154"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719431"
 ---
 # <a name="profiler-sampling-method-data-views"></a>分析工具取樣方法資料檢視
 本節包含使用取樣方法所產生的分析工具資料檔案之檢視和報告的參考資訊。

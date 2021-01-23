@@ -1,5 +1,6 @@
 ---
 title: ThreadOn 和 ThreadOff | Microsoft Docs
+description: 瞭解如何在使用檢測方法的命令列分析會話中使用 VSPerfCmd.exe ThreadOff 和 >threadon 子命令。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8b2e51857fc799c7b60f7650b823b77c9c6a283
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778150"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718768"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 和 ThreadOff
 只有在使用檢測方法的命令列分析工作階段中，才能使用 *VSPerfCmd.exe* **ThreadOff** 和 **ThreadOn** 子命令。 **ThreadOff** 和 **ThreadOn** 會暫停和繼續分析指定的執行緒。 **ThreadOff** 會停止分析執行緒，而 **ThreadOn** 會開始分析執行緒。

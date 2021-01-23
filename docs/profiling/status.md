@@ -1,5 +1,6 @@
 ---
 title: Status | Microsoft Docs
+description: 瞭解 VSPerfCmd.exe Status 選項如何顯示程式碼剖析工具狀態的相關資訊，以及目前正在分析的任何處理程式。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c77c78258b5ddef486dc35ed6a620003864254cc
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778241"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722707"
 ---
 # <a name="status"></a>狀態
 *VSPerfCmd.exe* **Status** 選項會顯示分析工具和任何目前已分析處理序的狀態資訊。
@@ -55,7 +56,7 @@ VSPerfCmd.exe /Status
 
  **開始/停止計數** 主要內部分析工具計數，用來控制此處理序的資料收集。 計數必須等於一，才能收集資料。 分析工具 API 以及 VSPerfCmd 選項 **GlobalOn**、**GlobalOff**、**ProcessOn**、**ProcessOff**、**ThreadOn** 和 **ThreadOff** 都可以操控開始/停止計數。
 
- **暫停/繼續計數** 主要內部分析工具計數，用來控制此處理序的資料收集。 計數必須小於或等於零，才能收集資料。 只有分析工具 API 才能操控**暫止/繼續**計數。
+ **暫停/繼續計數** 主要內部分析工具計數，用來控制此處理序的資料收集。 計數必須小於或等於零，才能收集資料。 只有分析工具 API 才能操控 **暫止/繼續** 計數。
 
  **具有監視存取權的使用者** 列出可存取分析工具的使用者名稱。 使用 VSPerfCmd.exe **Admin** 選項，其他使用者就可以獲授與存取權
 

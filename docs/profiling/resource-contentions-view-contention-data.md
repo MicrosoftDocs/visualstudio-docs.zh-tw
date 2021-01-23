@@ -1,5 +1,6 @@
 ---
 title: 資源爭用檢視 - 爭用資料 | Microsoft Docs
+description: 瞭解資源爭用視圖如何列出爭用事件來源的資源爭用資料。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1607e594b6456d4da4396069d589160230b39680
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc8e6c39efea24ac8a4a493099f3bcdb39dc4fe6
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778332"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720341"
 ---
 # <a name="resource-contentions-view---contention-data"></a>資源爭用檢視 - 爭用資料
 資源爭用檢視列出爭用事件來源的資源爭用資料。 因為另一個執行緒中的函式已取得資源的獨佔存取權，所以會強制執行緒中的函式等候存取資源，而發生爭用事件。 每項資源都是呼叫樹狀圖的根節點，會顯示導致爭用事件的函式執行路徑。

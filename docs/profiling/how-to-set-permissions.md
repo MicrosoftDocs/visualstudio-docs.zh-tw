@@ -1,5 +1,6 @@
 ---
 title: 設定權限 | Microsoft Docs
+description: 瞭解電腦的系統管理員如何將程式碼剖析所需的安全性許可權，授與沒有系統管理員許可權的使用者或群組。
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f0a55e5e18829856b913ad01df6f831a2df42863
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2ab51b317164b8f2e828e0327021fb595574583c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851823"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721992"
 ---
 # <a name="how-to-set-permissions"></a>如何：設定權限
 
@@ -42,9 +43,9 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
 
 2. 展開 **[本機使用者和群組]**。
 
-3. 以滑鼠右鍵按一下 [使用者]**** 資料夾，然後按一下 [新增使用者]****。
+3. 以滑鼠右鍵按一下 [使用者] 資料夾，然後按一下 [新增使用者]。
 
-     [新增使用者]**** 對話方塊隨即出現。
+     [新增使用者] 對話方塊隨即出現。
 
 4. 將您要建立之使用者帳戶的資訊填入這個對話方塊中的欄位。 指定密碼。 或者，選取要求使用者必須在下次登入時變更密碼的核取方塊。
 
@@ -62,15 +63,15 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
     D:\ourProject
     ```
 
-2. 以滑鼠右鍵按一下此資料夾，然後按一下 [屬性]****。
+2. 以滑鼠右鍵按一下此資料夾，然後按一下 [屬性]。
 
-     [ ** \<folder name> 屬性**] 對話方塊隨即出現。
+     [ **\<folder name> 屬性**] 對話方塊隨即出現。
 
-3. 按一下 [安全性] 索引標籤。
+3. 按一下 [安全性]  索引標籤。
 
-4. 按一下 [群組或使用者名稱]**** 方塊中的使用者帳號名稱。
+4. 按一下 [群組或使用者名稱] 方塊中的使用者帳號名稱。
 
-5. 在 [**許可權 \<user name> ** ] 方塊中，選取 [**完全控制**] 的核取方塊。
+5. 在 [**許可權 \<user name>** ] 方塊中，選取 [**完全控制**] 的核取方塊。
 
 6. 按一下 [確定]。
 

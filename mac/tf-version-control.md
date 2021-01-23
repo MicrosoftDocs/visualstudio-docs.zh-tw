@@ -7,12 +7,12 @@ ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: 0808f86f8571210a9048faf2e825b483120e73ca
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 11b0788317cd0a20dd27159aa241db32e3818daf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584200"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722122"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Visual Studio for Mac 是否支援 Team Foundation 版本控制？
 
@@ -53,7 +53,7 @@ Visual Studio for Mac 支援 Git，它是 Team Foundation Server (TFS)/Azure Dev
 * 使用 Homebrew 安裝用戶端，或
 * 下載並手動安裝用戶端
 
-最簡單的解決方案是**使用 HomeBrew**，這是適用於 macOS 的套件管理員。 若要使用此方法進行安裝：
+最簡單的解決方案是 **使用 HomeBrew**，這是適用於 macOS 的套件管理員。 若要使用此方法進行安裝：
 
 1. 啟動 macOS 終端機應用程式。
 1. 使用終端機和 [Homebrew 首頁](https://brew.sh/)上的說明安裝 Homebrew。
@@ -68,7 +68,7 @@ Visual Studio for Mac 支援 Git，它是 Team Foundation Server (TFS)/Azure Dev
 
 安裝 TEE-CLC 之後，您可以執行命令 `tf eula` 來檢視並接受用戶端的授權合約。
 
-最後，若要使用 TFS/Azure DevOps 環境進行驗證，您需要在伺服器上建立個人存取權杖。 深入了解[使用個人存取權杖進行驗證](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)。 建立用於 TFVC 的個人存取權杖時，請確保在設定權杖時提供完整的存取權。
+最後，若要使用 TFS/Azure DevOps 環境進行驗證，您需要在伺服器上建立個人存取權杖。 深入了解[使用個人存取權杖進行驗證](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true)。 建立用於 TFVC 的個人存取權杖時，請確保在設定權杖時提供完整的存取權。
 
 #### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>使用 TEE-CLC 連線到您的存放庫
 

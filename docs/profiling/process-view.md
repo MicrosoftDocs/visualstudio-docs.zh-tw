@@ -1,5 +1,6 @@
 ---
 title: 處理序檢視 | Microsoft Docs
+description: 瞭解 [進程] 視圖如何顯示程式碼剖析執行期間所執行之進程和執行緒的程式碼剖析資料。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,19 +18,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: da3097c276557238e6f5b521f6f7d3231434cd10
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd4dfd4657d6ca2f42c234f576e362ffacb9e693
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772172"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719458"
 ---
 # <a name="process-view"></a>處理序檢視
 處理序檢視顯示程式碼剖析執行期間所執行處理序和執行緒的程式碼剖析資料。
 
  依名稱列出處理序。 處理序建立的執行緒會當成其子節點列出。 執行緒是由開始該執行緒的函式命名，或在沒有符號可以使用時，由標籤 **[ntdll.dll]** 命名。
 
- 若要新增或移除資料行，請在檢視中按一下滑鼠右鍵，然後選取 [新增/移除資料行]****。 此外，您可以按一下資料行名稱來排序資料。 如需詳細資訊，請參閱 [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)。
+ 若要新增或移除資料行，請在檢視中按一下滑鼠右鍵，然後選取 [新增/移除資料行]。 此外，您可以按一下資料行名稱來排序資料。 如需詳細資訊，請參閱 [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)。
 
  使用取樣和檢測方法所產生的資料和包括.NET 記憶體資料在內的資料，其處理序檢視的資料行都相同。 下表說明資料行的值。
 

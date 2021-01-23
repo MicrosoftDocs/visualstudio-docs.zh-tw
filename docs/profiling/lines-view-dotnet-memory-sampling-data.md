@@ -1,5 +1,6 @@
 ---
 title: 程式行檢視 - .NET 記憶體取樣資料 | Microsoft Docs
+description: 瞭解 .NET 記憶體配置分析資料的線條視圖如何列出在執行分析期間配置記憶體的語句。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0033b3d50531bebe087f43930324db0431dee03f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774076"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721329"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>程式行檢視 - .NET 記憶體取樣資料
 使用取樣方法之 .NET 記憶體配置分析資料的 [程式行] 檢視，會列出在執行分析期間配置記憶體的陳述式。 資料行也包含配置的大小和數量。

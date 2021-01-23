@@ -1,5 +1,6 @@
 ---
 title: 使用率檢視 | Microsoft Docs
+description: 瞭解 [使用率] 視圖會顯示目前進程所使用的 CPU、GPU 和其他系統資源的相關資訊。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 926c67261f91aa8787d9be4a33dadbd3a890c568
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 047c9ef9d5bb03546eb88372ae43a51c7c8e4d32
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62823516"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723201"
 ---
 # <a name="utilization-view"></a>使用率檢視
-[使用率檢視]**** 顯示目前處理序使用的 CPU、GPU 和其他系統資源的相關資訊 (選擇 [分析]**** > [並行視覺化檢視]**** 來啟動並行視覺化檢視)。 顯示一段時間內在系統上執行的分析處理序、閒置處理序、系統處理序及其他處理序的平均核心使用率。 不會顯示在任何指定時間作用中的特定核心。 例如，如果兩個核心在指定期間各以 50% 的產量執行，然後此檢視會顯示共使用一個邏輯核心。 此檢視是將程式碼剖析時間分成數個區段而產生。 對於每個區段，圖形都會繪製在該間隔期間於邏輯核心上執行的處理序執行緒平均數目。
+[使用率檢視] 顯示目前處理序使用的 CPU、GPU 和其他系統資源的相關資訊 (選擇 [分析] > [並行視覺化檢視] 來啟動並行視覺化檢視)。 顯示一段時間內在系統上執行的分析處理序、閒置處理序、系統處理序及其他處理序的平均核心使用率。 不會顯示在任何指定時間作用中的特定核心。 例如，如果兩個核心在指定期間各以 50% 的產量執行，然後此檢視會顯示共使用一個邏輯核心。 此檢視是將程式碼剖析時間分成數個區段而產生。 對於每個區段，圖形都會繪製在該間隔期間於邏輯核心上執行的處理序執行緒平均數目。
 
  ![CPU 使用率檢視](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")
 
@@ -46,7 +47,7 @@ ms.locfileid: "62823516"
  如果您使用 C++ AMP 或 DirectX 來使用 GPU，您可能會想要識別使用中的 GPU 引擎數或意外閒置 GPU 的區域。
 
 ## <a name="zoom"></a>Zoom
- 若要放大 CPU 使用率圖形或 GPU 活動圖，請選取一個區段或使用圖形上方的 [縮放] 滑桿工具。 當您切換至其他檢視時，縮放設定會保持不變。 若要再次縮小，請使用 [縮放] 滑桿工具。 您也可以使用**Ctrl** + **滾輪**來縮放。
+ 若要放大 CPU 使用率圖形或 GPU 活動圖，請選取一個區段或使用圖形上方的 [縮放] 滑桿工具。 當您切換至其他檢視時，縮放設定會保持不變。 若要再次縮小，請使用 [縮放] 滑桿工具。 您也可以使用 **Ctrl** + **滾輪** 來縮放。
 
 ## <a name="see-also"></a>另請參閱
 - [並行視覺化檢視](../profiling/concurrency-visualizer.md)

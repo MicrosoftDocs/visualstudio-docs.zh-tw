@@ -1,5 +1,6 @@
 ---
 title: 瞭解效能收集方法 |Microsoft Docs
+description: 瞭解使用特定方法收集資料可能適用的不同案例。
 ms.date: 4/30/2020
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbabae86b762c9143dba6be5aa0e4683a92b0dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3bbbef2c6f7bb2ab02731bfbac0dc60d75a3437
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250771"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722330"
 ---
 # <a name="understand-performance-collection-methods"></a>了解效能收集方法
 

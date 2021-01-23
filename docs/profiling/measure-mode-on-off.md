@@ -1,5 +1,6 @@
 ---
 title: 開關測量模式 | Microsoft Docs
+description: 瞭解如何使用 [測量模式] 工具，精確測量時間軸中的時間長度。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbe8ea27f16dc8b120380989c15b1838ea9260d0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62830820"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718989"
 ---
 # <a name="measure-mode-onoff"></a>開啟/關閉測量模式
 您可以使用此工具精確地測量時間軸中的時間長度。 若要啟用測量模式，請按一下 [量值] 按鈕 (有尺規圖示)，然後拖曳到時間軸中。 拖曳時請注意，指標下方的區域會以黃色反白顯示，而測量的時間會出現在工具列按鈕的右邊。 您拖曳時會動態計算此值，讓您立即看到特定事件所花的時間長短。 當您放開滑鼠按鈕時，時間值仍保持可見狀態。

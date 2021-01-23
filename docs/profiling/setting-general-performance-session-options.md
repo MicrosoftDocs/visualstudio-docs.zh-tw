@@ -1,5 +1,6 @@
 ---
 title: 設定一般效能工作階段選項 | Microsoft Docs
+description: 瞭解如何設定分析工具效能會話的收集方法和分析資料命名慣例。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,28 +11,28 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 698905f5e924bd8ddd424207a508ceaa4562ec57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2691d9d8868343291f3be4d9f5b3002e24605b85
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544465"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720185"
 ---
 # <a name="set-general-performance-session-options"></a>設定一般效能工作階段選項
 
-您可以在效能工作階段屬性對話方塊的 [一般]**** 頁面上設定 Visual Studio 分析工具效能工作階段的收集方法和分析資料命名慣例。 若要從 [效能總管]**** 中開啟此對話方塊，請以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]****。
+您可以在效能工作階段屬性對話方塊的 [一般] 頁面上設定 Visual Studio 分析工具效能工作階段的收集方法和分析資料命名慣例。 若要從 [效能總管] 中開啟此對話方塊，請以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。
 
 ## <a name="choosing-data-collection-methods"></a>選擇資料收集方法
 
-您可以選取 [分析集合]**** 下的其中一個選項來設定基底收集方法。 下表說明這些選項：
+您可以選取 [分析集合] 下的其中一個選項來設定基底收集方法。 下表說明這些選項：
 
 |選項|發行項|
 |-|-|
 |**取樣**。 取樣方法會依固定間隔收集分析資訊。 此方法可用來尋找處理器使用率問題，建議用來調查大多數效能問題。|- [使用取樣收集效能統計資料](../profiling/collecting-performance-statistics-by-using-sampling.md)|
 |**檢測**。 檢測方法會插入至模組分析程式碼的複本，以記錄分析回合期間模組中函式的每個進入、結束和函式呼叫。 這個方法適合用來收集關於您的程式碼的某個區段的詳細時間資訊，以及了解輸入和輸出作業對應用程式效能的影響。|- [使用檢測收集詳細計時資料](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|
-|**並行**存取。 並行方法會收集封鎖您的程式碼執行的每個事件的資料，例如當執行緒等候對應用程式資源的鎖定存取被釋放。 這個方法對於分析多執行緒應用程式很實用。|- [收集執行緒和進程並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)|
+|**並行** 存取。 並行方法會收集封鎖您的程式碼執行的每個事件的資料，例如當執行緒等候對應用程式資源的鎖定存取被釋放。 這個方法對於分析多執行緒應用程式很實用。|- [收集執行緒和進程並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)|
 
- 您可以使用取樣或檢測方法來收集 .NET 記憶體資料。 您可以在 [.NET 記憶體分析]**** 下選取資料類型。
+ 您可以使用取樣或檢測方法來收集 .NET 記憶體資料。 您可以在 [.NET 記憶體分析] 下選取資料類型。
 
 |選項|發行項|
 |-|-|

@@ -1,5 +1,6 @@
 ---
 title: SuspendProfile | Microsoft Docs
+description: 瞭解 SuspendProfile 方法如何針對指定的分析層級，遞增暫停/繼續計數器。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eb0d0f41b17c4f23c3898b044ad49182d47aae0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 728aa7c858f8321e3289f2d17e612284f8739f17
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778189"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719262"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile` 方法會遞增所指定分析層級的暫止/繼續計數器。

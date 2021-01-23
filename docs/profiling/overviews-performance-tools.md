@@ -1,5 +1,6 @@
 ---
 title: 概觀 (效能工具) | Microsoft Docs
+description: 瞭解 Visual Studio 分析工具的概念和術語。 您可以使用此資訊來測量開發中應用程式的效能特性。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d27f777b660b2ffc94c4b9b6f0b6ba55816d626b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772663"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722824"
 ---
 # <a name="overviews-performance-tools"></a>概觀 (效能工具)
 本節提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的概念與術語概觀；您可以使用這套工具來測量開發中應用程式的效能特性。
@@ -58,5 +59,5 @@ ms.locfileid: "74772663"
 
 ## <a name="see-also"></a>另請參閱
 
-- [快速入門](../profiling/getting-started-with-performance-tools.md)
+- [開始使用](../profiling/getting-started-with-performance-tools.md)
 - [效能總管](../profiling/performance-explorer.md)

@@ -1,5 +1,6 @@
 ---
 title: 了解檢測資料值 | Microsoft Docs
+description: 瞭解檢測程式碼剖析方法如何記錄所分析應用程式中函式呼叫、程式列和指令的詳細計時資訊。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dace7b13816c63664ccb4dabfed52d1c5fb7523
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2f049ccb40d2d34c22fddbf841e36bd513db80f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778072"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722343"
 ---
 # <a name="understand-instrumentation-data-values"></a>了解檢測資料值
 
-Visual Studio 的「檢測」** 分析方法會記錄所分析應用程式中函式呼叫、程式碼行及指示的詳細計時資訊
+Visual Studio 的「檢測」分析方法會記錄所分析應用程式中函式呼叫、程式碼行及指示的詳細計時資訊
 
 檢測方法會在已進行程式碼剖析的二進位檔中目標函式的開始和結束處，以及在那些函式每次呼叫其他函式的前後插入程式碼。 插入程式碼會記錄下列資訊︰
 
@@ -32,11 +33,11 @@ Visual Studio 的「檢測」** 分析方法會記錄所分析應用程式中函
 
 對於呼叫堆疊上的每個函式，在記錄間隔時，分析工具分析會將間隔加入至函式的四個資料值之一或多個值。 分析會根據兩項準則將間隔加入至函式的資料值：
 
-- 函式程式碼或「子函式」** (由該函式呼叫的函式) 中是否發生間隔。
+- 函式程式碼或「子函式」 (由該函式呼叫的函式) 中是否發生間隔。
 
 - 間隔中是否發生作業系統事件。
 
-函式間隔的資料值或資料範圍稱為「功能內含耗用」**、「功能專屬耗用」**、「應用程式內含」** 及「應用程式專屬」**：
+函式間隔的資料值或資料範圍稱為「功能內含耗用」、「功能專屬耗用」、「應用程式內含」及「應用程式專屬」：
 
 - 函式的所有間隔都會加入至功能內含耗用資料值。
 

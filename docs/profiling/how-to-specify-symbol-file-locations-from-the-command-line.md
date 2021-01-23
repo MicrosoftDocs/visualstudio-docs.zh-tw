@@ -1,5 +1,6 @@
 ---
 title: 從命令列指定符號檔位置
+description: 瞭解 VSPerfReport 命令列工具如何需要存取符號 ( .pdb) 檔案來顯示符號資訊，例如函式名稱和行號。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f06bf9482bf719eb2025a8ee6c496b6b679046
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a9a801ccf7493675e49a3cde6ef91675e5f1189
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809579"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721914"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：從命令列指定符號檔位置
 若要顯示符號資訊 (例如函式名稱和行號)，VSPerfReport 命令列工具需要存取已進行程式碼剖析之元件的符號 (.*pdb*) 檔案和 Windows 系統檔。 符號檔是在元件編譯時建立。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。 VSPerfReport 會自動搜尋下列位置中是否有符號檔：
