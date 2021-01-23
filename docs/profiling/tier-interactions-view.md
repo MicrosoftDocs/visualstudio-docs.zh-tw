@@ -1,5 +1,6 @@
 ---
 title: 階層互動檢視 | Microsoft Docs
+description: 瞭解階層互動分析如何在與資料庫通訊的多層式應用程式函式中，提供執行時間的相關資訊。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,18 +13,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9021f814f093151c6d65beaececc0fa99a662d44
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778137"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722512"
 ---
 # <a name="tier-interactions-view"></a>階層互動檢視
 
 階層互動分析提供透過 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 與資料庫通訊的多介層應用程式函式執行時間的其他資訊。 只針對同步函式呼叫收集資料。
 
-**需求**
+**Requirements**
 
 - Visual Studio Enterprise
 
@@ -33,14 +34,14 @@ ms.locfileid: "74778137"
 
 - 當您按一下主要窗格中的資料庫呼叫節點時，該資料庫呼叫的執行個體資料隨即會顯示在詳細資料窗格中。
 
-  時間會以毫秒數或 CPU 時脈週期數來顯示。 若要變更顯示的時間單位，請按一下 [工具]**** 功能表，按一下 [選項]****，然後選擇其中一項 [時間值顯示為]**** 選項。
+  時間會以毫秒數或 CPU 時脈週期數來顯示。 若要變更顯示的時間單位，請按一下 [工具] 功能表，按一下 [選項]，然後選擇其中一項 [時間值顯示為] 選項。
 
 ## <a name="master-pane"></a>主要窗格
 
 |資料行|描述|
 |------------|-----------------|
 |**名稱**|- 對於最上層資料列，為已進行分析的處理序或網頁名稱。<br />- 對於資料庫連接資料列，為裝載資料庫的伺服器名稱。|
-|**Database**|資料庫的名稱 (僅資料庫連接資料列)。|
+|**資料庫**|資料庫的名稱 (僅資料庫連接資料列)。|
 |**Count**|處理序、網頁或資料庫連接產生的要求總數。|
 |**總耗用時間**|執行處理序、網頁或資料庫連接的任何一個要求所花費的總時間。|
 |**最大耗用時間**|執行處理序、網頁或資料庫連接的任何一個要求所花費的最大時間。|

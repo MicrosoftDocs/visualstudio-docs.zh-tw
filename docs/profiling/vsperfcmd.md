@@ -1,5 +1,6 @@
 ---
 title: VSPerfCmd | Microsoft Docs
+description: 瞭解如何使用 VSPerfCmd.exe 工具來啟動和停止效能資料收集。 同時瞭解各種 >vsperfcmd 工具選項。
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: caf145213c41215d518cf42d0a69975c8580e817
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 90d263052c543cbf7e0f3207d9980bd04c13e990
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330004"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719184"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* 工具的用途是啟動及停止效能資料收集。 其使用下列語法：
@@ -31,7 +32,7 @@ VSPerfCmd [/U] [/options]
 
  下表說明 *VSPerfCmd.exe* 工具選項。
 
-|選項|說明|
+|選項|描述|
 |------------|-----------------|
 |**U**|以 Unicode 撰寫重新導向的主控台輸出。 務必優先指定此選項。|
 |[開始](../profiling/start.md) **：**`mode`|以指定的模式啟動分析服務。|
@@ -39,7 +40,7 @@ VSPerfCmd [/U] [/options]
 |[CrossSession&#124;CS](../profiling/crosssession.md)|允許在 Windows 工作階段中進行分析。 只能與 **Start**、**Attach** 或 **Launch** 搭配使用。|
 |[使用者](../profiling/user-vsperfcmd.md) **：**[ `domain\` ]`username`|允許指定的帳戶存取分析工具服務。 只能與 **Start** 搭配使用。|
 |[WaitStart](../profiling/waitstart.md)[**：** `n` ]|等候資料收集記錄器初始化。 如有指定 `n`，**VSPerfCmd** 最多會等候 `n` 秒。 若未指定 `n`，**VSPerfCmd** 會無限期等候。 這減輕了 **VSPerfCmd** 在批次程序中的使用。|
-|[計數器](../profiling/counter.md) **：**`cfg`|使用樣本分析方法時，會指定要用作取樣間隔的 CPU 計數器及事件數。 您可以只取樣一個計數器值。<br /><br /> 使用檢測分析方法時，會指定在每個檢測點要收集的 CPU 計數器。 只能搭配**Start：** `Trace` 、 **Attach**或**啟動**使用。|
+|[計數器](../profiling/counter.md) **：**`cfg`|使用樣本分析方法時，會指定要用作取樣間隔的 CPU 計數器及事件數。 您可以只取樣一個計數器值。<br /><br /> 使用檢測分析方法時，會指定在每個檢測點要收集的 CPU 計數器。 只能搭配 **Start：** `Trace` 、 **Attach** 或 **啟動** 使用。|
 |[QueryCounters](../profiling/querycounters.md)|顯示目前電腦的有效 CPU 計數器清單。|
 |[WinCounter](../profiling/wincounter.md) **：** *path*|指定要加入設定檔標記資料的 Windows 效能計數器事件。 只能與 **Start** 搭配使用。|
 |[AutoMark](../profiling/automark.md) **：** *n*|指定 Windows 效能計數器資料收集事件之間的時間間隔 (毫秒)。 搭配 **WinCounter** 使用。|
@@ -57,7 +58,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="sample-method-options"></a>取樣方法選項
  只有在使用取樣分析方法時，才能使用下列選項。
 
-|選項|說明|
+|選項|描述|
 |------------|-----------------|
 |[啟動](../profiling/launch.md) **：** *可執行檔*|啟動指定的應用程式並開始分析。|
 |[Args](../profiling/args.md) **：** *引數*|指定要傳遞給啟動應用程式的命令列引數。|
@@ -69,7 +70,7 @@ VSPerfCmd [/U] [/options]
 ### <a name="sample-interval-options"></a>取樣間隔選項
  下列選項會指定取樣間隔的類型和持續時間。 預設為 **Timer**。 您也可以使用 **Counter** 選項，將 CPU 計數器指定為間隔。 這些選項只能搭配 **Launch** 或分析工作階段的第一個 **Attach** 指定。
 
-|選項|說明|
+|選項|描述|
 |------------|-----------------|
 |[PF](../profiling/pf.md)[**:**_n_]|在遇到每第 n 個分頁錯誤時取樣 (預設=10)。|
 |[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|在遇到每第 n 個系統呼叫時取樣 (預設=10)。|
@@ -80,7 +81,7 @@ VSPerfCmd [/U] [/options]
 
  Admin 選項必須在使用系統管理認證執行的命令提示字元執行。
 
-|選項|說明|
+|選項|描述|
 |------------|-----------------|
 |**Admin： Security**， \<**ALLOW&#124;DENY**> ， *right*[ *right*]， \<*User*&#124;*Group*>|允許或拒絕指定的使用者或群組存取分析服務。<br /><br /> `Right` 可以是：<br /><br /> CrossSession - 將服務存取權提供給使用者，以進行交叉工作階段分析。<br /><br /> SampleProfiling - 將驅動程式存取權提供給使用者，以進行取樣分析。 也可用來在追蹤分析期間存取核心轉換資訊。<br /><br /> FullAccess - 將 CrossSession 和 SampleProfiling 存取權都提供給使用者。|
 |**Admin:Security, List**|列出分析服務的目前狀態，並列出使用者權限。|

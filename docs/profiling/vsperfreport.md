@@ -1,5 +1,6 @@
 ---
 title: VSPerfReport | Microsoft Docs
+description: 瞭解 VSPerfReport 命令列工具是用來建立使用 Visual Studio 分析工具程式碼剖析資料檔案的報表。
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 54d5de2395c0ce95bc0c20c3ae7810b2762122fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed3ba5453976e3f3976aba43bc296c040a86b7a5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329957"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719769"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport 命令列工具可用來建立使用「[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具」分析資料檔案的報告。 預設報告格式為 .*csv* 檔案。

@@ -1,5 +1,6 @@
 ---
 title: 模組檢視 - 取樣資料 | Microsoft Docs
+description: 瞭解取樣資料的模組視圖如何顯示依分析資料中取樣的模組分組的效能資料。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ead219ddf482af5917842118d386c6fefe67973
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0de246e5ecdc51ff6471eeed242d638fee261c8c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772710"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722954"
 ---
 # <a name="modules-view---sampling-data"></a>模組檢視 - 取樣資料
 取樣資料的模組檢視，依據分析資料中取樣的模組來分組顯示效能資料。 每個模組都是階層式樹狀結構的根。 模組的取樣函式列在模組節點之下。

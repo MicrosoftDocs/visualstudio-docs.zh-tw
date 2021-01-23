@@ -1,5 +1,6 @@
 ---
 title: Just My Code (執行緒檢視) | Microsoft Docs
+description: 瞭解如何篩選呼叫堆疊，以只顯示您的程式碼，再加上一層呼叫的函式（如果您選取 Just My Code 選項）。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3924211d5ec42660357cef45714f672b0bef063
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62995350"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721472"
 ---
 # <a name="just-my-code-threads-view"></a>Just My Code (執行緒檢視)
 如果選取此選項，即會篩選呼叫堆疊只顯示您的程式碼，加上一個層級的已呼叫函式。

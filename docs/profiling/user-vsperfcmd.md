@@ -1,5 +1,6 @@
 ---
 title: User (VSPerfCmd) | Microsoft Docs
+description: 瞭解使用者選項如何指定擁有已分析進程之帳戶的網域和使用者名稱。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ee1a478e-374d-4f30-ae28-d260b9d4723a
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dbb1a155e8e0ffd2690b5850299b8075a63ea3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbb5490ff9281a7379d74209da15a3a39595bc09
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779957"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721160"
 ---
 # <a name="user-vsperfcmd"></a>User (VSPerfCmd)
 **User** 選項指定擁有已分析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 進程擁有者會列在 Windows 工作管理員的 [ **進程** ] 索引標籤上的 [使用者名稱] 欄中。

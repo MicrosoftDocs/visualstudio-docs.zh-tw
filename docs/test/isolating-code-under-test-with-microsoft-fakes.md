@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329532"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719652"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 隔離測試中的程式碼
 
@@ -255,11 +255,11 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ## <a name="using-microsoft-fakes-in-the-ci"></a>在 CI 中使用 Microsoft Fakes
 
 ### <a name="microsoft-fakes-assembly-generation"></a>產生元件 Microsoft Fakes
-因為 Microsoft Fakes 需要 Visual Studio Enterprise，所以 Fakes 元件的產生需要您使用 [Visual Studio 組建](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops)工作來建立您的專案。
+因為 Microsoft Fakes 需要 Visual Studio Enterprise，所以 Fakes 元件的產生需要您使用 [Visual Studio 組建](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops&preserve-view=true)工作來建立您的專案。
 
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> 另一個方法是將您的 Fakes 元件簽入 CI，並使用 [MSBuild](../msbuild/msbuild-task.md?view=vs-2019)工作。 當您這樣做時，您必須確定您的測試專案中有產生之 Fakes 元件的元件參考，如下列程式碼片段所示：
+> 另一個方法是將您的 Fakes 元件簽入 CI，並使用 [MSBuild](../msbuild/msbuild-task.md?view=vs-2019&preserve-view=true)工作。 當您這樣做時，您必須確定您的測試專案中有產生之 Fakes 元件的元件參考，如下列程式碼片段所示：
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -273,10 +273,10 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>正在執行 Microsoft Fakes 測試
-只要 Microsoft Fakes 的元件存在於設定的目錄中 `FakesAssemblies` (預設 `$(ProjectDir)FakesAssemblies`) ，您就可以使用 [vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops)工作執行測試。
+只要 Microsoft Fakes 的元件存在於設定的目錄中 `FakesAssemblies` (預設 `$(ProjectDir)FakesAssemblies`) ，您就可以使用 [vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)工作執行測試。
 
 ::: moniker range=">=vs-2019"
-使用 Microsoft Fakes 以 [vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) 工作 .net Core 專案進行分散式測試需要 Visual Studio 2019 Update 9 Preview `20201020-06` 和更新版本。
+使用 Microsoft Fakes 以 [vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) 工作 .net Core 專案進行分散式測試需要 Visual Studio 2019 Update 9 Preview `20201020-06` 和更新版本。
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"

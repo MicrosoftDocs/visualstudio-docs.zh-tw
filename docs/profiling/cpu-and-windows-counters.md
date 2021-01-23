@@ -1,5 +1,7 @@
 ---
 title: CPU 和 Windows 計數器 | Microsoft Docs
+description: CPU (硬體) 和 Windows (軟體) 計數器會提供效能資料。 瞭解如何加以查看，以及如何從中收集資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c3657f3558a688232424b868d0e93b8c056467c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779545"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719158"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 計數器
 
@@ -53,27 +55,27 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 
 **一般事件**
 
-|事件名稱|事件描述|
+|活動名稱|事件描述|
 |----------------|-----------------------|
 |Instructions Retired|表示直到事件完成已執行的指令數目。|
 |Non Halted Cycles|表示處理器只在這些循環未停止 (例如正在等候 I/O)。|
 
 **前端事件**
 
-|事件名稱|事件描述|
+|活動名稱|事件描述|
 |----------------|-----------------------|
 |ITLB Misses|表示導致遺漏的指令轉譯旁觀緩衝區查閱數。|
 
 **分支事件**
 
-|事件名稱|事件描述|
+|活動名稱|事件描述|
 |----------------|-----------------------|
 |Branches Retired|表示直到事件完成已執行的分支指令數目。|
 |Mis-predicted Branches|表示因為處理器預測不正確的路徑而錯估的分支。 錯估的分支會影響效能，因為處理器必須捨棄所有完成的工作，然後要在正確的路徑上重新啟動。|
 
 **記憶體事件︰**
 
-|事件名稱|事件描述|
+|活動名稱|事件描述|
 |----------------|-----------------------|
 |L2 Cache Read Misses|表示第二個層級快取讀取遺漏的數目。|
 |L2 Cache Read References|表示第二個層級快取讀取參考的數目。 包括載入遺漏和讀取擁有權 (RFO) 的遺漏和叫用。|
@@ -92,13 +94,13 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 
 2. 執行下列其中一個動作：
 
-   - 按一下 [取樣]****，然後從 [樣本]**** 事件清單選取 [效能計數器]****。 CPU 計數器會列在 [可用的效能計數器]**** 中。
+   - 按一下 [取樣]，然後從 [樣本] 事件清單選取 [效能計數器]。 CPU 計數器會列在 [可用的效能計數器] 中。
 
-      **注意** 按一下 [取消]**** 可回到前一個取樣組態。
+      **注意** 按一下 [取消] 可回到前一個取樣組態。
 
      -或-
 
-   - 選取 [CPU 計數器]****，然後選取 [收集 CPU 計數器]****。 CPU 計數器會列在 [可用的計數器]**** 中。
+   - 選取 [CPU 計數器]，然後選取 [收集 CPU 計數器]。 CPU 計數器會列在 [可用的計數器] 中。
 
       **注意** 按一下 [ **取消** ] 以返回先前的計數器集合設定。
 
@@ -106,13 +108,13 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 
 1. 在效能總管中，以滑鼠右鍵按一下效能會話，然後按一下 [ **屬性**]。
 
-2. 按一下 [Windows 計數器]****。
+2. 按一下 [Windows 計數器]。
 
-3. 選取 [收集 Windows 計數器]****。
+3. 選取 [收集 Windows 計數器]。
 
-4. 從 [計數器分類]**** 清單中，選取計數器群組。 群組的 Windows 計數器會顯示在清單方塊中。
+4. 從 [計數器分類] 清單中，選取計數器群組。 群組的 Windows 計數器會顯示在清單方塊中。
 
-     **注意：** 按一下 [取消]**** 可回到前一個計數器收集組態。
+     **注意：** 按一下 [取消] 可回到前一個計數器收集組態。
 
 ### <a name="command-line"></a>命令列
 
@@ -130,7 +132,7 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 
 ## <a name="see-also"></a>另請參閱
 
-[概覽](../profiling/overviews-performance-tools.md) 
-[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md) 
-[如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md) 
-[如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)
+- [概觀](../profiling/overviews-performance-tools.md)
+- [如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)
+- [如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)
+- [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)

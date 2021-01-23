@@ -1,5 +1,6 @@
 ---
 title: 指令指標 (IP) 檢視| Microsoft Docs
+description: 瞭解 [指令指標] 視圖如何讓您查看取樣分析期間所執行的特定指示。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c90d070a3b7125143eda5fd8666b1a4f64312b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d00742b1832aebcfff0e008455da98e744a485f7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778631"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721563"
 ---
 # <a name="instruction-pointers-ips-view"></a>指令指標 (IP) 檢視
 [指令指標] 檢視可讓您查看取樣程式碼剖析期間所執行的特定指標。

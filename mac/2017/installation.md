@@ -8,17 +8,17 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: c494f8d8543e0aa51b0c2be0ee52c0cb80aba982
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: be799764c3d6913cd2a13c6d631fc3450f8875a0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862439"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719912"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>安裝 Visual Studio 2017 for Mac
 
 > [!NOTE]
-> 適用于 Mac 的 Visual Studio 2019 [現在已可供使用](installation.md?view=vsmac-2019)。 針對舊版的 Visual Studio for Mac，請參閱 Visual Studio [下載頁面](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)。
+> 適用于 Mac 的 Visual Studio 2019 [現在已可供使用](installation.md?view=vsmac-2019&preserve-view=true)。 針對舊版的 Visual Studio for Mac，請參閱 Visual Studio [下載頁面](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)。
 
 ## <a name="downgrading-from-visual-studio-2019-for-mac"></a>從 Visual Studio 2019 for Mac 降級嗎？
 
@@ -42,7 +42,7 @@ ms.locfileid: "91862439"
 
    ![[安裝程式] 對話方塊](media/installer-image1.png)
 
-3. 您可能會看到類似下圖的警示對話方塊提示。 在此情況下，按一下 [開啟]****：
+3. 您可能會看到類似下圖的警示對話方塊提示。 在此情況下，按一下 [開啟]：
 
    ![[警示] 對話方塊](media/installer-image2.png)
 
@@ -50,7 +50,7 @@ ms.locfileid: "91862439"
 
    ![評估您的系統](media/installer-image3.png)
 
-5. 您接著會看到 [警示] 對話方塊，要求您確認隱私權和授權條款。 按 [繼續]**** 按鈕以確認條款：
+5. 您接著會看到 [警示] 對話方塊，要求您確認隱私權和授權條款。 按 [繼續] 按鈕以確認條款：
 
    ![[授權] 對話方塊](media/installer-image4.png)
 
@@ -61,20 +61,20 @@ ms.locfileid: "91862439"
    如果您不想要安裝所有平台，請使用以下指南以協助您決定要安裝的平台：
 
    * **使用 Xamarin 的應用程式**：
-      - Xamarin.Forms – 選取 [Android]**** 與 [iOS]**** 平台。
-      - 僅 iOS – 選取 [iOS]**** 平台 (請注意，您必須安裝 [**Xcode**](https://developer.apple.com/xcode/))。
-      - 僅 Android – 選取 [Android]**** 平台 (請注意，您也必須選取相關聯的相依性)。
-      - 僅 Mac – 選取 [macOS]**** 平台 (請注意，您必須安裝 [**Xcode**](https://developer.apple.com/xcode/))。
-      - 完整跨平台的 Xamarin 應用程式 – 選取 [Android]****、[iOS]**** 與 [macOS]**** 平台。
-   * **.NET Core 應用程式** – 選取 [.NET Core]**** 平台。
-   * **ASP.NET Core Web 應用程式** – 選取 [.NET Core]**** 平台。
+      - Xamarin.Forms – 選取 [Android] 與 [iOS] 平台。
+      - 僅 iOS – 選取 [iOS] 平台 (請注意，您必須安裝 [**Xcode**](https://developer.apple.com/xcode/))。
+      - 僅 Android – 選取 [Android] 平台 (請注意，您也必須選取相關聯的相依性)。
+      - 僅 Mac – 選取 [macOS] 平台 (請注意，您必須安裝 [**Xcode**](https://developer.apple.com/xcode/))。
+      - 完整跨平台的 Xamarin 應用程式 – 選取 [Android]、[iOS] 與 [macOS] 平台。
+   * **.NET Core 應用程式** – 選取 [.NET Core] 平台。
+   * **ASP.NET Core Web 應用程式** – 選取 [.NET Core] 平台。
    * **跨平台 Unity 遊戲開發** – 除了 Visual Studio for Mac 以外，不需要安裝其他平台。 如需安裝 Unity 延伸模組的詳細資訊，請參閱 [Unity 安裝指南](./setup-vsmac-tools-unity.md)。
 
    此安裝畫面顯示每個個別的元件的版本和大小。 您可以按一下每個元件，顯示該元件的相依性清單 (適用於 Android)，查看它下載的其他套件 (適用於.NET Core)，或檢視所需的任何其他應用程式 (適用於 iOS 和 macOS)：
 
    ![Android 其他相依性](media/installer-image6.png)
 
-7. 一旦您滿意您的選擇之後，選取 [安裝及更新]**** 按鈕以啟動安裝程序。
+7. 一旦您滿意您的選擇之後，選取 [安裝及更新] 按鈕以啟動安裝程序。
 
 8. 安裝程式會開始所選取項目的下載與安裝程序：
 
@@ -88,7 +88,7 @@ ms.locfileid: "91862439"
 
    ![輸入權限以繼續安裝程式](media/installer-image10.png)
 
-10. 安裝成功之後，您可以按 [開始]****，開始在 Visual Studio 中開發應用程式：
+10. 安裝成功之後，您可以按 [開始]，開始在 Visual Studio 中開發應用程式：
 
     ![開啟 Visual Studio](media/installer-image11.png)
 
@@ -126,6 +126,6 @@ ms.locfileid: "91862439"
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [安裝 Visual Studio 2017 (在 Windows 上)](/visualstudio/install/install-visual-studio)

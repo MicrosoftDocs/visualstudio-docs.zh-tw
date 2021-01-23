@@ -1,5 +1,6 @@
 ---
 title: 對 ASP.NET 負載測試進行程式碼剖析 | Microsoft Docs
+description: 瞭解如何從您在 ASP.NET 網站專案上執行的自動化 Microsoft Test Manager web 測試收集分析資料。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 455ca0d2032e1f30fc5f70eaac9518b2774b03c7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 7ade0fc4b83832145132d925fe43feb6b3b0ef10
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038396"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723253"
 ---
 # <a name="profile-aspnet-load-tests"></a>對 ASP.NET 負載測試進行分析
 您可以從針對 ASP.NET 網站專案執行的自動化 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 網路測試來收集程式碼剖析資料。 您可以收集取樣和階層互動資料。 如需詳細資訊，請參閱下列主題：

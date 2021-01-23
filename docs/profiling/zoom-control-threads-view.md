@@ -1,5 +1,6 @@
 ---
 title: 縮放控制 (執行緒檢視) | Microsoft Docs
+description: 瞭解縮放控制項是一個滑杆，可協助您在時間軸上放大和縮小，讓您可以專注于特定興趣的區域。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00cf79b23de47c1ac808b9287f387a16b51e5c3e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62960156"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719119"
 ---
 # <a name="zoom-control-threads-view"></a>縮放控制 (執行緒檢視)
 縮放控制是可以放大和縮小時間軸的滑桿，讓您能專注在特別感興趣的區域。 此控制項會從時間軸檢視的中央放大，因此請先將感興趣的區域置中再放大。

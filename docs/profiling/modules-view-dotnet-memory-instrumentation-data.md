@@ -1,5 +1,6 @@
 ---
 title: 模組檢視 - .NET 記憶體檢測資料 | Microsoft Docs
+description: 瞭解使用檢測方法所收集之 .NET 記憶體配置資料的模組視圖如何依模組將記憶體和計時資料分組。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 521c884a0a25d7fa975a4039e6ec3e36ff4dc020
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a0a42fdc83891b96bb3fe036ebf7515e3d6a42
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778540"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723305"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>模組檢視 - .NET 記憶體檢測資料
 使用檢測方法收集的 .NET 記憶體檢測資料 [模組] 檢視，會將記憶體和計時資料依據分析執行中所執行的模組來分類。 模組函式的分析資料會列在模組節點下。

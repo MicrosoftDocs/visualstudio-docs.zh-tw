@@ -1,5 +1,6 @@
 ---
 title: VSPerfMon | Microsoft Docs
+description: 瞭解如何使用 VSPerfMon 工具來收集應用程式的效能資料。 這項工具通常是由 VSPerfCmd.exe 啟動。
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee2423f552c6931b0c8b62181dc44186053c9460
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 919153699299c2f39ad0353ed484a9f9c9f46846
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329973"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719171"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 您可以使用 VSPerfMon 工具來收集應用程式的效能資料，而這項工具通常是由 *VSPerfCmd.exe* 啟動。 VSPerfMon 會顯示有關附加或中斷連結處理序的其他資訊，其在使用 VSPerfCmd 工具時無法使用。 若要檢視這項資訊，請以個別的視窗來啟動 VSPerfMon。 若要叫用 VSPerfMon，請使用下列語法︰

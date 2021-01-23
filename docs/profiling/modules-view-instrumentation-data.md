@@ -1,5 +1,6 @@
 ---
 title: 模組檢視 - 檢測資料 | Microsoft Docs
+description: 瞭解模組視圖如何顯示依程式碼剖析資料中的模組分組的效能資料。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f6449ad30edf11d3d315532cc33db2a79c14f90b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7012f2deffa2e01057fd79f52ec2fcac3674f7eb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778527"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722967"
 ---
 # <a name="modules-view---instrumentation-data"></a>模組檢視 - 檢測資料
 模組檢視顯示依據分析資料中模組來分組的效能資料。 模組的函式列在模組節點之下。

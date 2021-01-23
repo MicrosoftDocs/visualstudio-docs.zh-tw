@@ -1,5 +1,6 @@
 ---
 title: 沒有磁碟活動可顯示 (執行緒檢視) | Microsoft Docs
+description: 瞭解無法顯示磁片 i/o 通道中目前時間範圍的磁片活動。 如果您縮小範圍或加以捲動，可能就會顯示磁碟活動。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a88679d5423fc0ed2340638e5e1634bb3c81a20c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25ef8fd7d149a489458f28a7e276476c8fa09776
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62794450"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722889"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>沒有磁碟活動可顯示 (執行緒檢視)
 無法顯示磁碟 I/O 通道中位於目前時間範圍內的磁碟活動。 如果您縮小範圍或加以捲動，可能就會顯示磁碟活動。 此外，請確定並未隱藏任何磁碟通道。

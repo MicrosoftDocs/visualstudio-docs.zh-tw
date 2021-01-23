@@ -1,5 +1,6 @@
 ---
 title: 分析命令列-建立基礎報表
+description: 瞭解 VSPerfReport.exe 的 [摘要] 和 [CallTrace] 選項，它會建立 .csv (以逗號分隔的值) 從 .vsp 或 .vsps 分析資料檔中的報表。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ee74732c917ee4267e08f7ff1c60715971ed71
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 86c72f0281f459852b878f17687411ce87eb6978
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808847"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718937"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>從命令列建立基本的分析報表
 本文描述基本的 VSPerfReport 命令，它們會從 .*vsp* 或 .*vsps* 分析資料檔案產生逗號分隔值 (.*csv*) 的報表。 如需所有報表選項的說明，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。
@@ -39,7 +40,7 @@ ms.locfileid: "90808847"
 |**呼叫樹狀結構**|表示執行路徑以及分析執行中的函式分析資料。|-   [檢測資料](../profiling/call-tree-view-instrumentation-data.md)<br />-   [取樣資料](../profiling/call-tree-view-sampling-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [.NET 記憶體檢測資料](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [爭用資料](../profiling/call-tree-view-contention-data.md)|
 |**計數器**|列出分析執行期間所收集的分析標記以及 Windows 效能計數器值。|-   [標記視圖](../profiling/marks-view.md)|
 |**Ip**|依指令列出分析資料。|-   [取樣資料](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [爭用資料](../profiling/instruction-pointers-ips-view-contention-data.md)|
-|**存留期**|列出配置物件的存留期。|-   [物件存留期視圖](../profiling/object-lifetime-view.md)|
+|**生活**|列出配置物件的存留期。|-   [物件存留期視圖](../profiling/object-lifetime-view.md)|
 |**線條**|按原始程式碼列出分析資料。|-   [取樣資料](../profiling/lines-view-sampling-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [爭用資料](../profiling/lines-view-contention-data.md)|
 |**標頭**|分析資料檔案標頭資訊。|檔案專用。|
 |**標記**|在分析執行中收集的分析標記。|-   [標記視圖](../profiling/marks-view.md)|

@@ -1,5 +1,6 @@
 ---
 title: 分析 UWP App 中 HTML UI 的回應性 | Microsoft Docs
+description: 瞭解如何使用 UI 回應性分析工具隔離應用程式中的效能問題，這是適用于通用 Windows 應用程式的效能工具。
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6545fb206096c7b74a7016b506ae3bcade7f136c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331414"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721875"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析通用 Windows App 中 HTML UI 的回應性
 本主題描述如何使用 UI 回應性分析工具隔離應用程式中的效能問題；該效能工具可供通用 Windows App 使用。
@@ -38,11 +39,11 @@ ms.locfileid: "85331414"
 ## <a name="run-the-html-ui-responsiveness-tool"></a>執行 HTML UI 回應性工具
  在 Visual Studio 中開啟您開發的 UWP 應用程式時，就可以使用 HTML UI 回應性工具。
 
-1. 如果您是從 Visual Studio 執行應用程式，請在 [標準]**** 工具列上的 [開始偵錯]**** 清單中選擇部署目標，例如 [本機電腦]**** 或 [裝置]****。
+1. 如果您是從 Visual Studio 執行應用程式，請在 [標準] 工具列上的 [開始偵錯] 清單中選擇部署目標，例如 [本機電腦] 或 [裝置]。
 
 2. 在 [ **調試** ] 功能表上，選擇 [ **效能分析工具**]。
 
-     如果您要變更分析工具的分析目標，請選擇 [變更目標]****。
+     如果您要變更分析工具的分析目標，請選擇 [變更目標]。
 
      ![變更分析目標](../profiling/media/js_tools_target.png "JS_Tools_Target")
 
@@ -76,11 +77,11 @@ ms.locfileid: "85331414"
 
 1. 在 Visual Studio 中開啟應用程式。
 
-2. 測試您的應用程式是否存在 UI 回應性問題  (按下**Ctrl** + **F5**以啟動您的應用程式，而不進行偵錯工具。 ) 
+2. 測試您的應用程式是否存在 UI 回應性問題  (按下 **Ctrl** + **F5** 以啟動您的應用程式，而不進行偵錯工具。 ) 
 
      如果您發現問題，請繼續測試以嘗試縮小發生問題的時間範圍，或者嘗試找出造成行為的觸發程序。
 
-3. 切換至 Visual Studio (按下**Alt** + **Tab**) 並停止應用程式 (**Shift** + **F5**) 。
+3. 切換至 Visual Studio (按下 **Alt** + **Tab**) 並停止應用程式 (**Shift** + **F5**) 。
 
 4. 選擇性地將使用者標記加入程式碼，請使用 [標記程式碼以供分析](#ProfileMark)]。
 
@@ -165,7 +166,7 @@ if (performance.mark && performance.measure) {
 
  如果沒有指定第二個使用者標記， `performance.measure` 就會使用時間戳記做為第二個使用者標記。 第一個使用者標記是必要項目。
 
- 在時間軸詳細資料檢視中，持續時間測量會顯示成 [使用者測量] **** 事件，選取時會顯示詳細資訊。
+ 在時間軸詳細資料檢視中，持續時間測量會顯示成 [使用者測量]  事件，選取時會顯示詳細資訊。
 
  ![時間軸詳細資料檢視中的使用者測量事件](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")
 
@@ -279,21 +280,21 @@ if (performance.mark && performance.measure) {
 ### <a name="filter-events"></a><a name="FilterEvents"></a> 篩選事件
  您可以從時間軸詳細資料圖表篩選掉一些事件以精煉資料，或是排除對效能方案而言不必要的資料。 您可以依事件名稱或事件持續時間進行篩選，或是依此處所說明的特定篩選條件進行篩選。
 
- 若要篩選掉影像解碼、理論式下載和 GC 事件，請從下方窗格中的篩選圖示取消選取 [背景活動] **** 選項。 由於這些事件幾乎都不必採取動作，因此預設並不會顯示。
+ 若要篩選掉影像解碼、理論式下載和 GC 事件，請從下方窗格中的篩選圖示取消選取 [背景活動]  選項。 由於這些事件幾乎都不必採取動作，因此預設並不會顯示。
 
  ![在時間軸上篩選事件](../profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")
 
- 若要篩選掉 HTTP 要求事件，請從下方窗格中的篩選圖示取消選取 [網路流量] **** 選項。 這些事件預設會在時間軸詳細資料圖表中顯示。
+ 若要篩選掉 HTTP 要求事件，請從下方窗格中的篩選圖示取消選取 [網路流量]  選項。 這些事件預設會在時間軸詳細資料圖表中顯示。
 
- 若要篩選掉 UI 執行緒活動，請取消選取 [UI 活動] **** 選項。
+ 若要篩選掉 UI 執行緒活動，請取消選取 [UI 活動]  選項。
 
 > [!TIP]
 > 清除此選項並選取 [網路流量] 選項，以調查與網路延遲相關的問題。
 
- 若要篩選掉使用者測量，請清除 [使用者測量] **** 選項。 使用者測量是最上層事件，不含子系。
+ 若要篩選掉使用者測量，請清除 [使用者測量]  選項。 使用者測量是最上層事件，不含子系。
 
 ### <a name="group-events-by-frame"></a><a name="GroupFrames"></a> 依畫面格分組事件
- 您可以將出現在時間軸詳細資料檢視中的事件，分組成個別畫面格。 這些畫面格事件是工具產生的事件，代表繪畫事件之間所發生之所有 UI 執行緒工作最上層的事件容器。 若要啟用此檢視，請選取 [依畫面格分組最上層事件] ****。
+ 您可以將出現在時間軸詳細資料檢視中的事件，分組成個別畫面格。 這些畫面格事件是工具產生的事件，代表繪畫事件之間所發生之所有 UI 執行緒工作最上層的事件容器。 若要啟用此檢視，請選取 [依畫面格分組最上層事件] 。
 
  ![依時段將最上層事件分組](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")
 

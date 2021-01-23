@@ -1,5 +1,7 @@
 ---
 title: 並行視覺化檢視 SDK | Microsoft Docs
+description: 瞭解如何使用並行視覺化 SDK 來檢測您的程式碼，以顯示標記。 標記是顯示在並行視覺化中以標記事件的圖示。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1732d62fa20e170825cba5e133a9a44f11a59a34
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f07dbfb0ca193f7bacbf2408fc26e622ffb037e1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037350"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720978"
 ---
 # <a name="concurrency-visualizer-sdk"></a>並行視覺化檢視 SDK
-您可以使用並行視覺化檢視 SDK 檢測原始程式碼，以便在並行視覺化檢視中顯示其他資訊。 您可以在程式碼中將其他資料與階段和事件關聯。 這些額外的視覺效果稱為*標記*。  如需入門逐步解說，請參閱[並行視覺化檢視 SDK 簡介](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk)。
+您可以使用並行視覺化檢視 SDK 檢測原始程式碼，以便在並行視覺化檢視中顯示其他資訊。 您可以在程式碼中將其他資料與階段和事件關聯。 這些額外的視覺效果稱為 *標記*。  如需入門逐步解說，請參閱[並行視覺化檢視 SDK 簡介](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk)。
 
 ## <a name="properties"></a>屬性
  旗標、範圍和訊息各有兩個屬性︰分類和重要性。 在 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中，您可以使用這些屬性來篩選顯示的標記集。 此外，這些屬性會影響標記的視覺化表示。 例如，旗標的大小用來表示重要性。 此外，色彩用來表示分類。
@@ -31,9 +33,9 @@ ms.locfileid: "90037350"
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 專案中加入 SDK 支援
 
-1. 在功能表列上依序選擇 [分析]****、[並行視覺化檢視]****、[將 SDK 加入專案]****。
+1. 在功能表列上依序選擇 [分析]、[並行視覺化檢視]、[將 SDK 加入專案]。
 
-2. 選取您要存取 SDK 的專案，然後選擇 [將 SDK 加入選取的專案]**** 按鈕。
+2. 選取您要存取 SDK 的專案，然後選擇 [將 SDK 加入選取的專案] 按鈕。
 
 3. 在程式碼中加入 imports 或 using 陳述式。
 
@@ -50,9 +52,9 @@ ms.locfileid: "90037350"
 
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>在 C++ 或 C 專案中加入 SDK 支援
 
-1. 在功能表列上依序選擇 [分析]****、[並行視覺化檢視]****、[將 SDK 加入專案]****。
+1. 在功能表列上依序選擇 [分析]、[並行視覺化檢視]、[將 SDK 加入專案]。
 
-2. 選取您要存取 SDK 的專案，然後選擇 [將 SDK 加入選取的專案]**** 按鈕。
+2. 選取您要存取 SDK 的專案，然後選擇 [將 SDK 加入選取的專案] 按鈕。
 
 3. 對於 C++，請包含 `cvmarkersobj.h`。 對於 C，請包含 `cvmarkers.h`。
 
@@ -78,13 +80,13 @@ ms.locfileid: "90037350"
 
 1. 建立 [MarkerWriter](/previous-versions/hh694138(v=vs.140)) 物件。  建構函式取用 GUID。
 
-2. 若要註冊提供者，請開啟並行視覺化檢視的 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。  選取 [標記]**** 索引標籤，然後選擇 [加入新提供者]**** 按鈕。 在 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。
+2. 若要註冊提供者，請開啟並行視覺化檢視的 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。  選取 [標記] 索引標籤，然後選擇 [加入新提供者] 按鈕。 在 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>在 C++ 或 C 專案中使用新的標記提供者
 
 1. 使用 `CvInitProvider` 函式來初始化 PCV_PROVIDER。  建構函式取用 GUID* 和 PCV_PROVIDER\*。
 
-2. 若要註冊提供者，請開啟 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。  選取 [標記]**** 索引標籤，然後選擇 [加入新提供者]**** 按鈕。 在此對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。
+2. 若要註冊提供者，請開啟 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。  選取 [標記] 索引標籤，然後選擇 [加入新提供者] 按鈕。 在此對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 專案中使用標記系列
 
@@ -121,7 +123,7 @@ ms.locfileid: "90037350"
 
 ## <a name="see-also"></a>另請參閱
 
-|Title|描述|
+|標題|描述|
 |-----------|-----------------|
 |[C + + 程式庫參考](../profiling/cpp-library-reference.md)|描述 C++ 的並行視覺化檢視 API。|
 |[C 程式庫參考](../profiling/c-library-reference.md)|描述 C 的並行視覺化檢視 API。|

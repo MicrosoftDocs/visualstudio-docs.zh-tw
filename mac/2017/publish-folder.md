@@ -9,39 +9,39 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: a1855b272a774f7c4bd36866555f463525075e2d
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 98831768dac9f7e57c1bd5f19f0dc088951a6af4
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862013"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719782"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 將 Web 應用程式發佈到資料夾
 
 您可以使用 [發佈] 工具，將 ASP.NET Core 應用程式發佈到資料夾。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 - 已安裝 [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) 並啟用 ASP.NET Core。
-- ASP.NET Core 專案。 如果您還沒有專案，可以[建立新的專案](./create-new-projects.md?view=vsmac-2017)。
+- ASP.NET Core 專案。 如果您還沒有專案，可以[建立新的專案](./create-new-projects.md?view=vsmac-2017&preserve-view=true)。
 
 ## <a name="publish-to-folder"></a>發佈到資料夾
 
 使用 Visual Studio for Mac 時，您可以透過 [發佈] 工具將 ASP.NET Core 專案發佈到資料夾。 發佈到資料夾之後，您就可以將檔案傳輸到網頁伺服器，以便匯入不同的環境。 若要發佈到資料夾，請執行下列步驟。
 
- 1. 在 Solution Pad 中，以滑鼠右鍵按一下專案，然後選擇 [發佈]****。
+ 1. 在 Solution Pad 中，以滑鼠右鍵按一下專案，然後選擇 [發佈]。
 
     ![[發佈] 操作功能表](media/publish-context-menu.png)
 
  2. 如果您之前已發佈此專案，您將會在功能表中看到發行設定檔。 選取該發行設定檔即可啟動發佈程序。
 
- 3. 若是第一次將此專案發佈到資料夾，請選取 [發佈到資料夾]****
+ 3. 若是第一次將此專案發佈到資料夾，請選取 [發佈到資料夾]
 
     ![[發佈到資料夾] 操作功能表](media/publish-to-folder-context-menu.png)
 
- 4. [發佈到資料夾]**** 對話方塊會隨即出現。 在此對話方塊中，您可以自訂要發佈專案的資料夾。 您可以使用 [瀏覽]**** 按鈕來執行這項作業，或貼至路徑。
+ 4. [發佈到資料夾] 對話方塊會隨即出現。 在此對話方塊中，您可以自訂要發佈專案的資料夾。 您可以使用 [瀏覽] 按鈕來執行這項作業，或貼至路徑。
 
- 5. 按一下 [發佈]**** 之後，會發生幾件事。 首先會建立發行設定檔。 發行設定檔是發佈程序期間匯入專案的 MSBuild 檔。 其中包含發佈程序期間所使用的屬性。 這些檔案會儲存在 `Properties/PublishProfiles` 中並具有副檔名 `.pubxml`。 接著會啟動發佈程序。 您可以在 Visual Studio for Mac 中監看狀態列來監視進度。
+ 5. 按一下 [發佈] 之後，會發生幾件事。 首先會建立發行設定檔。 發行設定檔是發佈程序期間匯入專案的 MSBuild 檔。 其中包含發佈程序期間所使用的屬性。 這些檔案會儲存在 `Properties/PublishProfiles` 中並具有副檔名 `.pubxml`。 接著會啟動發佈程序。 您可以在 Visual Studio for Mac 中監看狀態列來監視進度。
 
     ![具有發佈狀態的 IDE 狀態列](media/publish-to-folder-status-bar.png)
 

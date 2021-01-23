@@ -1,5 +1,6 @@
 ---
 title: NameProfile | Microsoft Docs
+description: 瞭解 NameProfile 函數如何將字串指派給指定的進程或執行緒。 此外，NameProfile API 僅適用于檢測分析。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc887c6bcef9f8b7307d9d6aa570d6458d87f377
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bd210f1d92245889be8d18156c43e0cad7ee3db
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541696"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722915"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 函式會將字串指派給指定的處理序或執行緒。
@@ -50,7 +51,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
   指出可套用效能資料收集的分析層級。 下列 **PROFILE_CONTROL_LEVEL** 值可以用來指出可套用效能資料收集的三種層級的其中一種：
 
-|列舉值|說明|
+|列舉值|描述|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|全域層級設定會影響分析執行中的所有處理序和執行緒。|
 |PROFILE_PROCESSLEVEL|處理序層級設定會影響屬於所指定處理序的所有執行緒。|
@@ -63,7 +64,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值
  此函式會使用 **PROFILE_COMMAND_STATUS** 列舉來指出成功或失敗。 傳回值可以是下列其中一個：
 
-|列舉值|說明|
+|列舉值|描述|
 |----------------|-----------------|
 |NAME_ERROR_ID_NOEXIST|指定的分析項目不存在。|
 |NAME_ERROR_INVALID_NAME|名稱無效。|

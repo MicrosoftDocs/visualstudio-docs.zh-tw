@@ -1,5 +1,6 @@
 ---
 title: 階層互動檢視 | Microsoft Docs
+description: 瞭解階層互動分析如何提供與資料庫通訊的多層式應用程式中，函數執行時間的相關資訊。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b5fed31238fbc0e46d9982080b3acb1082e9f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b358409b83a924672880cef5972ffbd3bd9a17f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778124"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722538"
 ---
 # <a name="tier-interaction-views"></a>階層互動檢視
 

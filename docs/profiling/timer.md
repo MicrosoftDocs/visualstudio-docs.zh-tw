@@ -1,5 +1,6 @@
 ---
 title: Timer | Microsoft Docs
+description: 瞭解 VSPerfCmd.exe 計時器選項如何設定取樣為處理器頻率週期的分析事件。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e1bed2715421948385a5b7eb1ddbbac064f3288b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 908685b49a08b3084c31e768675e64bc087bc727
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778111"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722434"
 ---
 # <a name="timer"></a>計時器
 *VSPerfCmd.exe* **Timer** 選項會將取樣的分析事件設定為處理器時脈週期，並且選擇性變更取樣間隔中預設為 10,000,000 的週期數目。 在 1GH (1 GHz) 處理器上，10,000,000 個時脈週期約為每秒 100 個樣本。 可指定的最小週期數目為 50,000。

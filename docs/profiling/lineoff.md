@@ -1,5 +1,6 @@
 ---
 title: LineOff | Microsoft Docs
+description: 瞭解當 >vsperfcmd 用來啟動應用程式時，>vsperfcmd LineOff 選項如何停用行號資料收集。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
@@ -9,17 +10,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac671c3b0ba40c462403b2afa850c3936156d6d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45ec3592049e00d6a492c489e8fb60254003ac6d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774122"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721407"
 ---
 # <a name="lineoff"></a>LineOff
-根據預設，分析工具會在您使用取樣分析方法時，收集原始程式碼行號和位移資料行號。 VSPerfCmd 的 **LineOff** 選項在使用 VSPerfCmd 啟動應用程式時，會停用行號資料收集。 指定 [LineOff]**** 時，分析資料會收集至函式層級。
+根據預設，分析工具會在您使用取樣分析方法時，收集原始程式碼行號和位移資料行號。 VSPerfCmd 的 **LineOff** 選項在使用 VSPerfCmd 啟動應用程式時，會停用行號資料收集。 指定 [LineOff] 時，分析資料會收集至函式層級。
 
- **LineOff** 只能搭配 [啟動]**** 選項，而且只能在已初始化分析工具，使用 [啟動]****：[取樣]**** 選項進行取樣時。
+ **LineOff** 只能搭配 [啟動] 選項，而且只能在已初始化分析工具，使用 [啟動]：[取樣] 選項進行取樣時。
 
 ## <a name="syntax"></a>語法
 
@@ -28,10 +29,10 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ```
 
 #### <a name="parameters"></a>參數
- 無
+ None
 
 ## <a name="required-options"></a>必要選項
- **LineOff** 選項只能用在包含 [啟動]**** 選項的命令列中。
+ **LineOff** 選項只能用在包含 [啟動] 選項的命令列中。
 
  **啟動：** `AppName` 啟動指定的應用程式，並開始使用取樣方法進行程式碼剖析。
 

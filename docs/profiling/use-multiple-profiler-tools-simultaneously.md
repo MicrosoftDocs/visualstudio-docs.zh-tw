@@ -1,5 +1,6 @@
 ---
 title: 同時使用多個分析工具 |Microsoft Docs
+description: 瞭解效能分析工具如何設計為可在相同的會話中使用多個工具，以協助瞭解效能問題。
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: f72757d46496c3990c0a0d4205753d185078eac7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a4c4658282f15b6b34562e51be94d9f2be195a8
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332044"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721173"
 ---
 # <a name="using-multiple-profiler-tools-simultaneously"></a>同時使用多個分析工具
 

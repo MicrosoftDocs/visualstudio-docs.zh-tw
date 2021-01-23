@@ -1,5 +1,6 @@
 ---
 title: Launch | Microsoft Docs
+description: 瞭解啟動選項如何使用取樣方法來啟動分析工具，而且它也會啟動指定的應用程式。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9834c10c58fb343de0707fa0b805586a6cdebcb3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bec7ebd26cc0522852276627d2c59161b51c809b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778605"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721420"
 ---
 # <a name="launch"></a>啟動
 **Launch** 選項會使用取樣方法來啟動分析工具，也會啟動指定的應用程式。

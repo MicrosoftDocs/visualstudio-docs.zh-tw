@@ -1,5 +1,6 @@
 ---
 title: VSPerf | Microsoft Docs
+description: 瞭解如何使用 Vsperf.exe 命令列工具，在裝置上未安裝 Visual Studio 時，從命令列分析 UWP 應用程式。
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c58033e89742650dc097a7469cbf62d7b6168509
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b3d95422d3b4232d7a628f2054c7db2aa94dd6b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520363"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723071"
 ---
 # <a name="vsperf"></a>VSPerf
 使用 **VsPerf** 命令列工具，可以︰
@@ -28,7 +29,7 @@ ms.locfileid: "85520363"
 ## <a name="uwp-apps-only"></a>僅限 UWP 應用程式
  這些選項僅適用於 UWP 應用程式。
 
-|選項|說明|
+|選項|描述|
 |-|-|
 |**/app:{AppName}**|從 [開始] 功能表啟動分析工具，並等候指定的應用程式啟動。<br /><br /> 執行 `vsperf /listapps` 來檢視已安裝應用程式的 AppName 和 PackageFullName。|
 |**/package:{PackageFullName}**|從 [開始] 功能表啟動分析工具，並等候指定的應用程式啟動。<br /><br /> 執行 `vsperf /listapps` 來檢視已安裝應用程式的 AppName 和 PackageFullName。|
@@ -39,7 +40,7 @@ ms.locfileid: "85520363"
 ## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>僅限 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式
  這些選項無法在 UWP 應用程式上運作。
 
-|選項|說明|
+|選項|描述|
 |-|-|
 |**/launch:{Executable}**|啟動並開始對指定的可執行檔進行程式碼剖析。|
 |**/args:{ExecutableArguments}**|指定要傳遞給 **/launch** 目標的命令列引數。|
@@ -48,7 +49,7 @@ ms.locfileid: "85520363"
 ## <a name="all-applications"></a>所有應用程式
  這些選項適用於任何 Windows 8 或 Windows Server 2012 應用程式。
 
-|選項|說明|
+|選項|描述|
 |-|-|
 |**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|從指定的處理序收集資料。<br /><br /> 使用 [工作管理員] 來檢視執行中應用程式的處理序識別碼 (PID) 和處理序名稱。|
 |**/file:{ReportName}**|選擇性。 指定輸出檔案 (覆寫現有的檔案)。<br /><br /> 只能搭配 /package 或 /attach 一起使用。|

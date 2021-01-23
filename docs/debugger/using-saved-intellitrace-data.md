@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 070bcc04d79231d074e30d1e87d3ad512ce5dca1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150934"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723032"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用儲存的 IntelliTrace 資料 (c #、Visual Basic、c + +) 
 
@@ -36,7 +36,7 @@ ms.locfileid: "98150934"
 
 - 來自下列其中一個來源的 .iTrace 檔案：
 
-    |**來源**|**看到**|
+    |**來源**|**請參閱**|
     |----------------|-------------|
     |在 Visual Studio Enterprise (但不是 Professional 或 Community 版本) 中的 IntelliTrace 工作階段|[IntelliTrace 功能](../debugger/intellitrace-features.md)|
     |如果是在部署中執行的 ASP.NET Web App 和 SharePoint 應用程式，則來源為 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 R2 Operations Manager 運作)|-   [在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新功能](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
@@ -193,7 +193,7 @@ ms.locfileid: "98150934"
     |**類別目錄識別碼**|**類別目錄識別碼**|
     |**類別**|**類別**|
     |**領域**|**產品**|
-    |**輸出**|**Message**|
+    |**輸出**|**訊息**|
     |**相互關連識別碼**|**相互關連識別碼**|
 
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>從未處理的例外狀況開始偵錯
@@ -261,7 +261,7 @@ ms.locfileid: "98150934"
 
  [IntelliTrace 功能](../debugger/intellitrace-features.md)
 
- [在手動測試中收集更多診斷資料](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+ [在手動測試中收集更多診斷資料](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 
  [IntelliTrace](../debugger/intellitrace.md)
 

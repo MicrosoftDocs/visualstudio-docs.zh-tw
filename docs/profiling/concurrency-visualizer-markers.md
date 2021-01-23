@@ -1,5 +1,7 @@
 ---
 title: 並行視覺化檢視中的標記 | Microsoft Docs
+description: 深入瞭解並行視覺化中的標記。 標記是代表應用程式所產生之事件的圖示。 有三種類型：旗標、訊息和範圍。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fab8108e15f3cbaf81130c2ce8533d00f2a23c7e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63001060"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720991"
 ---
 # <a name="concurrency-visualizer-markers"></a>並行視覺化檢視標記
 在並行視覺化檢視中，標記是代表應用程式中事件的圖示。  一般而言，應用程式會產生這些事件，以指定應用程式中的階段或發生次數。  應用程式或程式庫和應用程式使用的執行階段，可以產生事件。
@@ -23,11 +25,11 @@ ms.locfileid: "63001060"
 ## <a name="kinds-of-markers"></a>標記類型
  並行視覺化檢視使用三種類型的標記來表示應用程式事件︰旗標、訊息和範圍。
 
-1. 使用*旗標*可指出應用程式中有趣的時間點。  例如，您可以使用旗標來表示變數值已達到特定的閾值或表示擲回例外狀況。
+1. 使用 *旗標* 可指出應用程式中有趣的時間點。  例如，您可以使用旗標來表示變數值已達到特定的閾值或表示擲回例外狀況。
 
-2. *訊息*也可標記時間點，但是您可以使用它追蹤記錄檔樣式。  例如，您現在可以在訊息呼叫中包裝傾印到記錄檔的內容以便追蹤，並在並行視覺化檢視中檢視。 您也可以使用並行視覺化檢視將此資料匯出至 CSV 檔案。
+2. *訊息* 也可標記時間點，但是您可以使用它追蹤記錄檔樣式。  例如，您現在可以在訊息呼叫中包裝傾印到記錄檔的內容以便追蹤，並在並行視覺化檢視中檢視。 您也可以使用並行視覺化檢視將此資料匯出至 CSV 檔案。
 
-3. *範圍*代表應用程式中一個時間間隔，例如其中一個階段。
+3. *範圍* 代表應用程式中一個時間間隔，例如其中一個階段。
 
 ## <a name="marker-linkage-to-threads"></a>執行緒標記連結
  產生標記的每個執行緒都有不同的時間軸通道。  負責產生標記事件的執行緒識別碼會顯示在標記通道的描述旁邊。  標記通道左邊顯示的識別碼符合目前處理序中另一個執行緒的 ID。

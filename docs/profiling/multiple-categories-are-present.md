@@ -1,5 +1,6 @@
 ---
 title: 存在多個分類 | Microsoft Docs
+description: 瞭解在指定的時間範圍內包含一個以上活動類型的區段時，會顯示兩個色彩，一個垂直堆疊在另一個。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69b3de3a7f1554bc3ad95874a58b75b809d610a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36b120d4433bafb5f248a268b140d940b3c6e2da
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62794658"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722928"
 ---
 # <a name="multiple-categories-are-present"></a>存在多個分類
 已選取包含指定時間範圍內多種活動的區段。 請注意，會顯示兩種色彩，一個垂直堆疊在另一個上。 這些色彩只代表指定時間範圍內頻率最高的前兩項活動。 這兩項活動的頻率顯示彼此相關，不是各佔直條的三分之一和三分之二就是各佔對半。 若要查看詳細資訊，請嘗試放大執行緒檢視的這個區段。

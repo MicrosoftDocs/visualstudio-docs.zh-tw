@@ -1,5 +1,6 @@
 ---
 title: 逐步解說：使用分析工具 API | Microsoft Docs
+description: 瞭解如何使用 profiler Api 來限制檢測分析期間所收集的資料量。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94276e294bfcf342cfc81b14005205a8f1e97949
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779879"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723084"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
 
@@ -35,9 +36,9 @@ ms.locfileid: "74779879"
  針對機器碼，Visual Studio 分析工具 API 位在 *VSPerf.dll* 中。 標頭檔 (*VSPerf.h*) 和匯入程式庫 (*VSPerf.lib*) 位在 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 目錄中。  針對 64 位元應用程式，資料夾為 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
  ::: moniker-end
 
- 針對 managed 程式碼，profiler Api 位於 *Microsoft.VisualStudio.Profiler.dll*中。 這個 DLL 位於 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄。 針對 64 位元應用程式，資料夾為 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*。 如需詳細資訊，請參閱[分析工具](/previous-versions/ms242704(v=vs.140))。
+ 針對 managed 程式碼，profiler Api 位於 *Microsoft.VisualStudio.Profiler.dll* 中。 這個 DLL 位於 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄。 針對 64 位元應用程式，資料夾為 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*。 如需詳細資訊，請參閱[分析工具](/previous-versions/ms242704(v=vs.140))。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
  本逐步解說假設您所選擇的開發環境設定成支援偵錯和取樣。 下列主題概述這些必要條件：
 
 - [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
@@ -126,13 +127,13 @@ DataCollection.CurrentId);
 
 1. 開啟 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。 在 [ **分析** ] 功能表上，指向 [ **Profiler**]，然後選取 [ **新增效能會話**]。
 
-2. 在 [效能總管]**** 視窗中，將已編譯的二進位檔新增至 [目標]**** 清單。 以滑鼠右鍵按一下 [目標]****，然後選取 [新增目標二進位檔]****。 在 [新增目標二進位檔]**** 對話方塊中，找到二進位檔，然後按一下 [開啟]****。
+2. 在 [效能總管] 視窗中，將已編譯的二進位檔新增至 [目標] 清單。 以滑鼠右鍵按一下 [目標]，然後選取 [新增目標二進位檔]。 在 [新增目標二進位檔] 對話方塊中，找到二進位檔，然後按一下 [開啟]。
 
-3. 在 [效能總管]**** 工具列的 [方法]**** 清單中，選取 [檢測]****。
+3. 在 [效能總管] 工具列的 [方法] 清單中，選取 [檢測]。
 
-4. 按一下 [啟動並啟用分析]****。
+4. 按一下 [啟動並啟用分析]。
 
-    分析工具會檢測和執行二進位檔，並建立效能報表檔案。 效能報表檔案會出現在 [效能總管]**** 的 [報表]**** 節點中。
+    分析工具會檢測和執行二進位檔，並建立效能報表檔案。 效能報表檔案會出現在 [效能總管] 的 [報表] 節點中。
 
 5. 開啟產生的效能報表檔案。
 
@@ -164,11 +165,11 @@ DataCollection.CurrentId);
 
 8. 輸入下列命令： **VSPerfReport/calltrace： \<filename> .vsp**
 
-     的.使用產生的效能資料，在目前的目錄中建立*csv* 檔案。
+     的.使用產生的效能資料，在目前的目錄中建立 *csv* 檔案。
 
 ## <a name="see-also"></a>另請參閱
 
 - [程式碼剖析工具](/previous-versions/ms242704(v=vs.140))
 - [Visual Studio profiler API 參考 (原生) ](../profiling/visual-studio-profiler-api-reference-native.md)
-- [快速入門](../profiling/getting-started-with-performance-tools.md)
+- [開始使用](../profiling/getting-started-with-performance-tools.md)
 - [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

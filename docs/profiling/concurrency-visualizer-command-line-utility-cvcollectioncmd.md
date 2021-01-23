@@ -1,5 +1,6 @@
 ---
 title: 平行存取視覺化命令列公用程式
+description: 使用命令列公用程式 CVCollectionCmd.exe 來收集可在平行存取視覺化程式中查看的追蹤。 您不需要安裝 Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 762a3563e64a3437c34b9e12e372f5d578e0c7ac
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6970c582b6f3ac254f5bbb60f0324128dac63cfe
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808899"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721043"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>並行視覺化檢視命令列公用程式 (CVCollectionCmd)
 您可以使用並行視覺化檢視命令列公用程式 (*CVCollectionCmd.exe*) 從命令列收集追蹤，以便在 Visual Studio 的並行視覺化檢視中進行檢視。 此工具可在未安裝 Visual Studio 的電腦上使用。
@@ -28,7 +29,7 @@ ms.locfileid: "90808899"
  若要下載及安裝此命令列公用程式，請移至 Microsoft 下載中心網站上的 [Visual Studio 2015 的並行視覺化檢視收集工具](https://www.microsoft.com/download/details.aspx?id=49103) ，並遵循指示進行。 根據預設， *CVCollectionCmd.exe* 安裝在 x64 電腦上的%ProgramFiles%\Microsoft 並行視覺化收集工具 \ (% ProgramFiles (x86) % \ Microsoft 並行視覺效果集合工具 \) 。
 
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>使用 CVCollectionCmd 收集追蹤
- 您可以使用 CVCollectionCmd 啟動應用程式，或將 CVCollectionCmd 附加至應用程式，來收集追蹤。 請參閱下列與選項相關的命令參考。 例如
+ 您可以使用 CVCollectionCmd 啟動應用程式，或將 CVCollectionCmd 附加至應用程式，來收集追蹤。 請參閱下列與選項相關的命令參考。 例如：
 
 ```cmd
 <Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data
@@ -43,12 +44,12 @@ ms.locfileid: "90808899"
 |------------|-----------------|----------------|-------------------|
 |查詢|傳回是否可以開始收集。|無|0，表示準備開始收集。<br /><br /> 1，表示收集已在進行中。<br /><br /> 2，表示收集不在進行中，但已啟用一或多個所需的 [ETW](/dotnet/framework/wcf/samples/etw-tracing) 工作階段。|
 |啟動|在並行視覺化檢視下執行指定的處理序。|可執行檔的路徑。|0，表示執行成功。<br /><br /> 1，表示執行失敗，因為無法啟動目標應用程式。<br /><br /> 13，表示執行失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|
-|附加|開始收集系統範圍追蹤；如果指定處理序，則附加至該處理序。|無。|0，表示附加成功。<br /><br /> 1，表示附加失敗，因為指定的處理序無效或模稜兩可。<br /><br /> 13，表示附加失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|
+|Attach|開始收集系統範圍追蹤；如果指定處理序，則附加至該處理序。|無。|0，表示附加成功。<br /><br /> 1，表示附加失敗，因為指定的處理序無效或模稜兩可。<br /><br /> 13，表示附加失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|
 |中斷連結|停止收集。|無。|0，表示中斷連結成功。<br /><br /> 1，表示中斷連結失敗，因為目前正在收集。<br /><br /> 2，表示中斷連結失敗，因為無法停止收集。|
 |分析|分析指定的追蹤。|CVTrace 檔案的完整路徑。|0，表示分析成功。<br /><br /> 1，表示無法開始分析，因為指定的追蹤是系統範圍追蹤，但未指定目標處理序。<br /><br /> 2，表示無法開始分析，因為追蹤不是系統範圍追蹤，但已指定處理序。<br /><br /> 3，表示分析失敗，因為指定的處理序無效。<br /><br /> 4，表示分析失敗，因為指定的 CVTrace 檔案無效。|
 |LaunchArgs|指定目標可執行檔引數。 這個選項僅適用於 Launch 命令。|傳遞給應用程式的命令列引數。|無。|
 |Outdir|指定要在其中儲存追蹤檔案的目錄。 適用於 Launch 和 Attach 命令。|目錄路徑或相對路徑。|無。|
-|Process|指定執行 Attach 命令時要附加的處理序，或執行 Analyze 命令時要在追蹤中分析的處理序。 適用於 Attach 和 Analyze 命令。|處理序的 PID 或名稱。|無。|
+|處理序|指定執行 Attach 命令時要附加的處理序，或執行 Analyze 命令時要在追蹤中分析的處理序。 適用於 Attach 和 Analyze 命令。|處理序的 PID 或名稱。|無。|
 |Config|指定組態檔的路徑 (如果需要預設值以外的收集設定)。   適用於 Launch、Attach 和 Analyze 命令。|XML 組態檔的目錄路徑或相對路徑。|無。|
 
 ## <a name="customize-configuration-settings"></a>自訂組態設定
@@ -62,7 +63,7 @@ ms.locfileid: "90808899"
 ### <a name="configuration-file-tags"></a>組態檔標記
  組態檔採用 XML 格式。 以下是有效的標記和值：
 
-| Tag | 描述 | 值 |
+| 標籤 | 描述 | 值 |
 |-------------------------| - | - |
 | Config | 標示整個組態檔。 | 必須包含下列項目：<br /><br /> -   MinorVersion<br />-   MajorVersion |
 | MajorVersion | 指定組態檔的主要版本。 | [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 專案必須是 1。 如果不是 1，公用程式將無法運作。 |
@@ -74,7 +75,7 @@ ms.locfileid: "90808899"
 | MarkerProvider | 指定單一標記提供者。 | 必須包含下列項目：<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 可包含下列項目：<br /><br /> -   Categories<br />-   IsEnabled |
 | 層級 | 設定 MarkerProvider 的重要性層級。 | -   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything |
 | Guid | ETW 標記提供者的全域唯一識別項。 | GUID。 |
-| [屬性] | 指定標記提供者的描述。 | 字串。 |
+| Name | 指定標記提供者的描述。 | 字串。 |
 | 類別 | 指定標記提供者所收集的分類。 | 以逗號分隔字串表示多個數字或多個範圍的數字。 |
 | IsEnabled | 設定值，決定是否啟用標記提供者進行收集。 | -   True<br />-   False |
 | FilterConfig | 指定從收集篩選之 ETW 事件的組態選項清單。 | 可包含下列項目：<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO |

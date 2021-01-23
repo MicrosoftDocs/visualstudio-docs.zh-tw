@@ -1,5 +1,6 @@
 ---
 title: 檢測方法資料檢視 | Microsoft Docs
+description: 深入瞭解使用檢測方法所產生的分析工具資料檔案之視圖和報表的參考資訊。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18d7d2266ec21a3eee983474e433d72245658c43
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774159"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721537"
 ---
 # <a name="instrumentation-method-data-views"></a>檢測方法資料檢視
 本節包含使用檢測方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。
@@ -43,14 +44,14 @@ ms.locfileid: "74774159"
 
  依函式列出程式碼剖析資料。
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 - [函式詳細資料檢視](../profiling/function-details-view.md)
 
  顯示選取的函式及所呼叫函式 (由該所選函式呼叫的函式) 之間關聯性的圖形化圖表。
 
 - [處理序檢視](../profiling/process-view.md)
 
- 針對所有剖析過的處理序列出開始、結束和存留期時間。
+ 列出所有已分析進程的進程開始、結束和存留期時間。
 
 ## <a name="related-sections"></a>相關章節
 - [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
