@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 9e0348c1f6c51f0a82328814be671d8f44e3d4a7
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903997"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773344"
 ---
 # <a name="class-view-and-object-browser-icons"></a>類別檢視和物件瀏覽器圖示
 
@@ -32,7 +32,7 @@ ms.locfileid: "94903997"
 |圖示|描述|圖示|描述|
 |----------|-----------------|----------|-----------------|
 |![命名空間符號](../ide/media/vxnamespace_icon.gif)|命名空間|![宣告符號](../ide/media/vxmethod_icon.gif)|方法或函式|
-|![類別圖示](../ide/media/vxclass_icon.gif)|執行個體|![運算子符號](../ide/media/vxoperator_icon.gif)|運算子|
+|![類別圖示](../ide/media/vxclass_icon.gif)|類別|![運算子符號](../ide/media/vxoperator_icon.gif)|運算子|
 |![棒棒糖介面符號](../ide/media/vxinterface_icon.gif)|介面|![屬性符號](../ide/media/vxproperty_icon.gif)|屬性|
 |![結構符號](../ide/media/vxstruct_icon.gif)|結構|![欄位圖示](../ide/media/vxfield_icon.gif)|欄位或變數|
 |![等位符號](../ide/media/vxunion_icon.gif)|Union|![事件符號](../ide/media/vxevent_icon.gif)|事件|
@@ -42,7 +42,7 @@ ms.locfileid: "94903997"
 |![擴充方法符號](../ide/media/extensionmethod.gif)|擴充方法|![宣告符號](../ide/media/vxmethod_icon.gif)|外部宣告|
 |![委派符號](../ide/media/vxdelegate_icon.gif)|代理人|![[類別檢視] 和 [物件瀏覽器] 的錯誤圖示](../ide/media/erroricon.gif)|錯誤|
 |![例外狀況符號](../ide/media/vxexception_icon.gif)|例外狀況|![範本符號](../ide/media/vxtemplate_icon.gif)|範本|
-|![對應符號](../ide/media/vxmap_icon.gif)|對應|![錯誤驚嘆號符號](../ide/media/vxerror_icon.gif)|未知|
+|![對應符號](../ide/media/vxmap_icon.gif)|地圖|![錯誤驚嘆號符號](../ide/media/vxerror_icon.gif)|Unknown|
 |![類型轉送符號](../ide/media/ob_type_forward.gif)|類型轉送|||
 
 > [!TIP]
@@ -65,6 +65,9 @@ ms.locfileid: "94903997"
 
 > [!NOTE]
 > 如果您的專案包含在原始檔控制資料庫中，則可能會顯示其他訊號圖示以指出原始檔控制狀態 (例如存回或取出)。
+
+> [!TIP]
+> 若要查看 Visual Studio 中顯示的應用程式影像和圖示，請下載 [**Visual Studio 映射庫**](https://www.microsoft.com/download/details.aspx?id=35825)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: a2a64b613ca19632a7827686ab0552e6e23620c1
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847029"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773336"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
@@ -102,12 +102,15 @@ Visual Studio 會使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存解決方
 
 在 **方案總管** 中，您可以從滑鼠右鍵的內容功能表中，取得許多功能表命令。 這些命令包括建置專案、管理 NuGet 套件、新增參考、重新命名檔案，以及執行測試等等。
 
-> [!TIP]
-> 如果您已關閉方案總管，而您想要再次開啟它，請從功能表列選擇 [**視窗**  >  **重設視窗** 配置]。
-
 對於 ASP.NET Core 專案，您可以自訂 [方案總管] 中檔案巢狀的方式。 如需詳細資訊，請參閱[自訂 [方案總管] 中的檔案巢狀](file-nesting-solution-explorer.md)。
 
-## <a name="see-also"></a>請參閱
+> [!TIP]
+> 如果您已關閉方案總管，並且想要再次開啟它，請從功能表列選擇 [ **View**  >  **方案總管**]，或按 **Ctrl** + **Alt** + **L**。 而且，如果您已關閉側邊索引標籤，而且想要將它們還原至其預設位置，請從功能表列選擇 [**視窗**  >  **重設視窗** 配置]。
+
+> [!NOTE]
+> 若要查看 Visual Studio 中顯示的應用程式影像和圖示，請下載 [**Visual Studio 映射庫**](https://www.microsoft.com/download/details.aspx?id=35825)。
+
+## <a name="see-also"></a>另請參閱
 
 - [專案和解決方案簡介](../get-started/tutorial-projects-solutions.md)
 - [管理專案和解決方案屬性](managing-project-and-solution-properties.md)
