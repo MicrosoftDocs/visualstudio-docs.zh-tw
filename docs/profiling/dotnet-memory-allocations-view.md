@@ -1,5 +1,7 @@
 ---
 title: .NET 記憶體配置檢視 | Microsoft Docs
+description: 深入瞭解 .NET 記憶體配置視圖，它會列出在執行分析期間所建立的類型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ce16f65947fd69b5a54e564ba6bec061bc68e328
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f52a30eef50c783ea96d403c25837f9bf2515a52
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777373"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801289"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 記憶體配置檢視
 [配置] 檢視會列出在分析回合期間建立的類型。 每種類型都是呼叫樹狀圖的根節點，可顯示導致類型配置的函式執行路徑。
@@ -37,7 +39,7 @@ ms.locfileid: "74777373"
 ## <a name="highlight-the-execution-hot-path"></a>反白顯示執行最忙碌路徑
  您可以找到建立父類型大部分物件之呼叫樹狀圖的執行路徑。
 
-- 若要顯示最常使用的路徑，請以滑鼠右鍵按一下類型或函式，然後按一下 [展開最忙碌路徑]****。
+- 若要顯示最常使用的路徑，請以滑鼠右鍵按一下類型或函式，然後按一下 [展開最忙碌路徑]。
 
 |資料行|描述|
 |------------|-----------------|

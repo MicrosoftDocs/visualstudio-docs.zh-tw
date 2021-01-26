@@ -1,5 +1,7 @@
 ---
 title: 收集 CPU 計數器資料 | Microsoft Docs
+description: 瞭解如何使用 CPU (硬體) 事件計數器收集硬體特定的效能資料。 本文列出各種類型的事件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96934250bc00b02630b60e83d50ed4b274db0323
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e59214640ab3048f94b2801ad6b6b2d7e12d2e25
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851277"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801567"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 計數器資料
 
@@ -30,9 +32,9 @@ CPU 事件計數器可用來收集硬體特定的效能資料。 本文說明當
 
 - Platform Events - 結合到特定 CPU 的 CPU 事件。
 
-  Portable Events 包含一般事件，例如停用的指令、未暫止時脈週期、CPU 緩衝區事件、分支事件及 L2 快取事件。 可用的 Portable Events 計數器是由處理器製造商決定。
+Portable Events 包含一般事件，例如停用的指令、未暫止時脈週期、CPU 緩衝區事件、分支事件及 L2 快取事件。 可用的 Portable Events 計數器是由處理器製造商決定。
 
-  Portable 和 Platform 計數器之間可共用的事件類別。 例如，下列類別的資料是經常通用於這兩種類型︰
+Portable 和 Platform 計數器之間可共用的事件類別。 例如，下列類別的資料是經常通用於這兩種類型︰
 
 - 記憶體事件。
 
@@ -40,7 +42,7 @@ CPU 事件計數器可用來收集硬體特定的效能資料。 本文說明當
 
 - 分支事件。
 
-  在分析工具中，收集效能計數器資料的方式有兩種：
+在分析工具中，收集效能計數器資料的方式有兩種：
 
 - 透過檢測分析時，從一或多個計數器收集資料。
 
@@ -48,16 +50,16 @@ CPU 事件計數器可用來收集硬體特定的效能資料。 本文說明當
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>透過檢測分析時收集 CPU 效能計數器資料
 
-1. 在效能工作階段 [屬性頁]**** 上，按一下 [CPU 計數器]****。
+1. 在效能工作階段 [屬性頁] 上，按一下 [CPU 計數器]。
 
-2. 選取 [收集 CPU 計數器]**** 核取方塊。
+2. 選取 [收集 CPU 計數器] 核取方塊。
 
-3. 展開 [可用的效能計數器]**** 樹狀結構，直到您找到想要收集的取樣事件為止。
+3. 展開 [可用的效能計數器] 樹狀結構，直到您找到想要收集的取樣事件為止。
 
-4. 針對每個您想收集的事件，選取事件，然後按一下向右鍵以將事件加入至 [選取的計數器]**** 清單。
+4. 針對每個您想收集的事件，選取事件，然後按一下向右鍵以將事件加入至 [選取的計數器] 清單。
 
     > [!NOTE]
-    > 只有在您選取 [收集 CPU 計數器]**** 核取方塊時，才會啟用 [可用的效能計數器]****。
+    > 只有在您選取 [收集 CPU 計數器] 核取方塊時，才會啟用 [可用的效能計數器]。
 
 ## <a name="see-also"></a>另請參閱
 

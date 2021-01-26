@@ -1,5 +1,7 @@
 ---
 title: 空白時間表區段 | Microsoft Docs
+description: 在 Visual Studio 並行視覺化檢視器中，瞭解時間軸區段可能是空的， (具有某種通道的白色背景) 。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a96cdc7ae4edc7ea7193d5b95dfc73fa1747c1fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15dc4526ce101e21c00fe083b85f81db92bcd609
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62970105"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801425"
 ---
 # <a name="empty-timeline-segment"></a>空白時間表區段
 在並行視覺化檢視中，時間表區段空白 (具有白色背景) 的原因取決於通道的類型。

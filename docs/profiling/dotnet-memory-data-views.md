@@ -1,5 +1,7 @@
 ---
 title: .NET 記憶體資料檢視 | Microsoft Docs
+description: 請參閱包含 .NET 記憶體程式碼剖析資料的程式碼剖析工具資料檔案之視圖和報表的參考資訊連結。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a4a6143127a2e55bf5c13cf6606bfe00de5cd9e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779268"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801270"
 ---
 # <a name="net-memory-data-views"></a>.NET 記憶體資料檢視
 本節包含程式碼剖析工具資料檔案的檢視與報告，而此檔案含有 .NET 記憶體程式碼剖析資料。
@@ -75,7 +77,7 @@ ms.locfileid: "74779268"
 
  列出程式碼剖析執行中檢測的函式的記憶體配置資料。
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 - [函式詳細資料檢視](../profiling/function-details-view.md)
 
  顯示選取的函式及所呼叫函式 (由該所選函式呼叫的函式) 之間關聯性的圖形化圖表。

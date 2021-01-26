@@ -1,5 +1,7 @@
 ---
 title: 函式檢視 - 檢測資料 | Microsoft Docs
+description: 閱讀函數報表檢視中分析資料行的描述，以依函式名稱列出分析資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 423b6d61af93c37e6fa83549ed3fa5d422128165
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b12fc05f9eeb9b77e982c62ae52bfbbe784f5e6
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779216"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801367"
 ---
 # <a name="functions-view---instrumentation-data"></a>函式檢視 - 檢測資料
 函式報表檢視會依函式名稱列出程式碼剖析資料。

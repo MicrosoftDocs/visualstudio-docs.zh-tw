@@ -1,5 +1,7 @@
 ---
 title: 收集 Windows 事件追蹤 (ETW) 資料 | Microsoft Docs
+description: 瞭解如何使用 Windows 事件追蹤 (ETW) 來判斷應用程式中發生效能問題的位置。 您可以使用 VSPerfReport.exe 來查看資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5f1877ff6530dbe0bbc888824a6ae60215eca1
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 853e27c51b626ef63a7e0924d4c0164a6386cda2
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851264"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801545"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>如何：收集 Windows 事件追蹤 (ETW) 資料
 
@@ -30,11 +32,11 @@ Windows 事件追蹤 (ETW) 是高效率的核心層級追蹤功能，可讓程�
 
 ## <a name="to-enable-event-trace-providers"></a>啟用事件追蹤提供者
 
-1. 在 [效能總管] **** 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性] ****。
+1. 在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性] 。
 
-2. 在 [屬性頁]**** 中，按一下 [Windows 事件] **** 屬性。
+2. 在 [屬性頁] 中，按一下 [Windows 事件]  屬性。
 
-3. 在 [選取要從中收集資料的事件追蹤提供者]**** 清單中，選取要用來對應用程式進行程式碼剖析的事件提供者。
+3. 在 [選取要從中收集資料的事件追蹤提供者] 清單中，選取要用來對應用程式進行程式碼剖析的事件提供者。
 
 ## <a name="see-also"></a>另請參閱
 

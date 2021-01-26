@@ -1,5 +1,7 @@
 ---
 title: 自訂報表檢視資料行 | Microsoft Docs
+description: 您可以在 [效能工具]、[進程視圖] 和 [呼叫者/被呼叫者] 視圖中加入、移除和重新排列 Visual Studio 效能工具的資料行。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: edc58c74daf3cdd1e80256f9915936f4cef6d3fa
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 23b12ca396a91fad440dc057b67e258194732236
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851173"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800449"
 ---
 # <a name="how-to-customize-report-view-columns"></a>如何：自訂報表檢視資料行
 Visual Studio Team System Development 版的效能工具已完全整合至整合式開發環境 (Integrated Development Environment，IDE)，可提供流暢的使用者經驗。 下列清單是可透過新增、移除及重新排列資料行來自訂的代表性檢視︰
@@ -48,9 +50,9 @@ Visual Studio Team System Development 版的效能工具已完全整合至整合
 
 1. 開啟報表檢視。
 
-2. 以滑鼠右鍵按一下報表檢視介面，然後按一下 [新增/移除資料行]****。
+2. 以滑鼠右鍵按一下報表檢視介面，然後按一下 [新增/移除資料行]。
 
-     [新增/移除欄位]**** 對話方塊隨即出現。
+     [新增/移除欄位] 對話方塊隨即出現。
 
 3. 選取您要新增的資料行。
 

@@ -1,5 +1,7 @@
 ---
 title: 分析 .NET 物件的記憶體使用量 |Microsoft Docs
+description: 查看您的應用程式所使用的記憶體數量，以及使用 .NET 物件組態工具配置最多記憶體的程式碼路徑。
+ms.custom: SEO-VS-2020
 ms.date: 12/9/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 4c0d8b02f867797317ff762e7a23bec042f93318
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970232"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801498"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>使用 .NET 物件組態工具來分析記憶體使用量
 

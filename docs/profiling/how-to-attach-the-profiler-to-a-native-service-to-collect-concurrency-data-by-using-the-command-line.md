@@ -1,5 +1,6 @@
 ---
 title: 將分析工具附加至原生服務以取得並行資料
+description: 從命令列使用 Visual Studio 分析工具，從原生 (C/c + +) 服務收集進程和執行緒並行資料。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55398d2ab914ea03b431557775e1bd1064969590
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 233d6d77fad3997fead9126065b2f867ac8ffd2e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807998"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801086"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line-vsperfcmd"></a>如何：使用命令列將分析工具附加至原生服務以收集並行資料 (>vsperfcmd) 
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至原生 (C/C++) 服務，並使用取樣方法收集處理序和執行緒並行資料。
@@ -29,7 +30,7 @@ ms.locfileid: "90807998"
  程式碼剖析工具附加至服務時，您可以暫停和繼續收集資料。 若要結束分析工作階段，分析工具不得再附加至服務，而且必須明確地關閉分析工具。
 
 ## <a name="attach-the-profiler"></a>附加分析工具
- 若要將程式碼剖析工具附加至原生服務，您可以使用 **VSPerfCmd/start** 和 **/attach**選項初始化程式碼剖析工具，並將它附加至目標應用程式。 您可以在單一命令列上指定 **/start** 和 **/attach** 及其個別選項。 您也可以加入 **/globaloff** 選項以在目標應用程式啟動時暫停資料收集。 然後使用 **/globalon** 開始收集資料。
+ 若要將程式碼剖析工具附加至原生服務，您可以使用 **VSPerfCmd/start** 和 **/attach** 選項初始化程式碼剖析工具，並將它附加至目標應用程式。 您可以在單一命令列上指定 **/start** 和 **/attach** 及其個別選項。 您也可以加入 **/globaloff** 選項以在目標應用程式啟動時暫停資料收集。 然後使用 **/globalon** 開始收集資料。
 
 #### <a name="to-attach-the-profiler-to-a-native-service"></a>將分析工具附加至原生服務
 
@@ -39,7 +40,7 @@ ms.locfileid: "90807998"
 
     [>vsperfcmd](../profiling/vsperfcmd.md) **/start： concurrency/output：** `OutputFile` [ `Options` ]
 
-   - /Start 需要[/output](../profiling/output.md)**：** `OutputFile` 選項。 **/start** `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。
+   - /Start 需要 [/output](../profiling/output.md)**：** `OutputFile` 選項。  `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。
 
      您可以使用下表中的任一選項搭配 **/start** 選項。
 

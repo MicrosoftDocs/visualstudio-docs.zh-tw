@@ -1,5 +1,7 @@
 ---
 title: 事件檢視器 |Microsoft Docs
+description: 深入瞭解一般事件檢視器，可協助您更妥善地診斷您的應用程式在 Visual Studio profiler 內的執行狀況。
+ms.custom: SEO-VS-2020
 ms.date: 4/30/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 0be00f2333a2e732d9ba4472004c383b132c0bf2
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 6aef8e72f416923aa647a8b3a412ee701ece18dd
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075061"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801399"
 ---
 # <a name="events-viewer"></a>事件檢視器
 
@@ -56,7 +58,7 @@ ms.locfileid: "90075061"
 
 ![將資料行加入至事件檢視器](../profiling/media/eventvieweraddcolumns.png "將資料行加入至事件檢視器")
 
-當您選取事件時，[ **其他屬性** ] 視窗隨即出現。 [**通用屬性**] 會顯示將針對任何事件顯示的屬性清單。 承載**屬性**會顯示事件的特定屬性。 針對某些事件，您也可以查看 **堆疊**。
+當您選取事件時，[ **其他屬性** ] 視窗隨即出現。 [**通用屬性**] 會顯示將針對任何事件顯示的屬性清單。 承載 **屬性** 會顯示事件的特定屬性。 針對某些事件，您也可以查看 **堆疊**。
 
 ![顯示堆疊的事件檢視器](../profiling/media/eventviewerstacks.png "顯示堆疊的事件檢視器")
 

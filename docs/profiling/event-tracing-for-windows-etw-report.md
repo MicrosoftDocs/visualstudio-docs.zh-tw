@@ -1,5 +1,7 @@
 ---
 title: Windows 事件追蹤 (ETW) 報表 | Microsoft Docs
+description: 閱讀 Windows 事件追蹤 (ETW) 報告，其中列出 Visual Studio 分析工具的效能會話中記錄的 ETW 事件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 19412d184377637c29f34b2fe3ffd033f176b97c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7167f2fb5c78a6fa8c3d83fb56c2c2eba217516
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779294"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801420"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Windows 事件追蹤 (ETW) 報表
 Windows 事件追蹤 (ETW) 報表會列出 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具之效能工作階段中所記錄的 ETW 事件。 ETW 資料會收集在二進位 (.*etl*) 檔案中。
@@ -36,6 +38,6 @@ Windows 事件追蹤 (ETW) 報表會列出 [!INCLUDE[vsprvs](../code-quality/inc
 |**Timestamp**|識別事件發生的時間。|
 |**處理序識別碼**|識別已產生事件的處理序。|
 |**執行緒識別碼**|識別已產生事件的執行緒。|
-|**描述**|識別事件提供者。|
-|**類型**|識別事件類型。|
+|**說明**|識別事件提供者。|
+|**型別**|識別事件類型。|
 |**屬性**|事件的屬性。 每個事件都是以中括弧括住的名稱/值組 (以逗點分隔)。|

@@ -1,5 +1,7 @@
 ---
 title: GlobalOn 和 GlobalOff | Microsoft Docs
+description: 請參閱 VSPerfCmd.exe 中的 GlobalOn 和 GlobalOff 選項。 這些選項會暫停和繼續分析命令列分析會話中的進程和執行緒。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaeac096c6bdff77368508bd34276d66530fa739
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74776962"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801338"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 和 GlobalOff
 *VSPerfCmd.exe* **GlobalOff** 和 **GlobalOn** 選項可暫停和繼續對命令列分析工作階段中的所有處理序和執行緒進行分析。
@@ -44,7 +46,7 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```
 
 #### <a name="parameters"></a>參數
- 無
+ None
 
 ## <a name="valid-options"></a>有效選項
  您可以在也包含下列選項的命令列上指定 **GlobalOn** 和 **GlobalOff**。

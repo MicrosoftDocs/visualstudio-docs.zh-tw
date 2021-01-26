@@ -1,5 +1,7 @@
 ---
 title: 旗標標記 | Microsoft Docs
+description: 深入瞭解旗標標記會在 Visual Studio 平行存取視覺化檢視中進行。 旗標標記表示在應用程式時間中的某個時刻發生的項目。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc7b128915b7fc961b44aa7d70a24a813d432ddf
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969935"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801468"
 ---
 # <a name="flag-markers"></a>旗標標記
 旗標標記表示在應用程式時間中的某個時刻發生的項目。 旗標可代表許多種類的應用程式事件。 比方說，當特定工作項目已排程或擲回例外狀況時，可以顯示旗標。 工作平行程式庫等的執行階段也可以產生旗標。
@@ -36,7 +38,7 @@ ms.locfileid: "62969935"
  ![平行存取視覺化警示標記](../profiling/media/cvmarkeralert.png ">cvmarkeralert") 警示標記
 
 ## <a name="aggregation-flags"></a>彙總旗標
- 有時旗標發生的位置太靠近並行視覺化檢視中的另一個旗標，以至於無法個別繪製。 發生這種情況時，會顯示一個表示基礎旗標的灰色*彙總旗標*。 當您將指標放在這些圖示的其中一個時，工具提示會顯示所代表基礎旗標的數目。 若要檢視旗標，請將它放大。 如果您縮放到最大後仍然出現彙總旗標，可以在[標記報表](../profiling/markers-report.md)中檢視基礎旗標。
+ 有時旗標發生的位置太靠近並行視覺化檢視中的另一個旗標，以至於無法個別繪製。 發生這種情況時，會顯示一個表示基礎旗標的灰色 *彙總旗標*。 當您將指標放在這些圖示的其中一個時，工具提示會顯示所代表基礎旗標的數目。 若要檢視旗標，請將它放大。 如果您縮放到最大後仍然出現彙總旗標，可以在[標記報表](../profiling/markers-report.md)中檢視基礎旗標。
 
  彙總旗標以不同大小繪製。 大小取決於最重要的旗標在彙總中的重要性層級。 下圖顯示以遞增的重要性順序排序的彙總旗標。
 
