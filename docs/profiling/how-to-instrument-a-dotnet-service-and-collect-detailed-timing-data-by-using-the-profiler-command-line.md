@@ -1,5 +1,7 @@
 ---
 title: Profiler 命令列檢測 .NET 服務，取得計時詳細資料
+description: 瞭解如何使用 Visual Studio 分析工具命令列工具來收集 .NET Framework 服務的詳細計時資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62303ab2ea7296ca5093636efcf97ea7a3c540c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6002af64474c6ed15aa9807b804c588f20f1443b
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331483"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883601"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用分析工具命令列檢測 .NET 服務並收集詳細計時資料
 
@@ -36,7 +38,7 @@ ms.locfileid: "85331483"
 
 1. 開啟 [命令提示字元] 視窗。
 
-2. 使用 [VSInstr]**** 工具產生服務二進位檔的已檢測版本。
+2. 使用 [VSInstr] 工具產生服務二進位檔的已檢測版本。
 
 3. 以檢測過的版本取代原始二進位檔。 在 Windows 服務控制管理員中，確定服務的啟動類型設定為 [手動]。
 
@@ -44,7 +46,7 @@ ms.locfileid: "85331483"
 
      **VSPerfClrEnv /globaltraceon**
 
-5. 將電腦重新開機。
+5. 重新啟動電腦。
 
 6. 開啟 [命令提示字元] 視窗。
 
@@ -54,7 +56,7 @@ ms.locfileid: "85331483"
 
    - [/start](../profiling/start.md)**:trace** 選項會初始化程式碼剖析工具。
 
-   - /Start 需要[/output](../profiling/output.md)**：** `OutputFile` 選項。 **/start** `OutputFile` 指定分析資料 ( 的名稱和位置。*.vsp*) 檔。
+   - /Start 需要 [/output](../profiling/output.md)**：** `OutputFile` 選項。  `OutputFile` 指定分析資料 ( 的名稱和位置。*.vsp*) 檔。
 
      您可以使用下列任一選項搭配 **/start:trace** 選項。
 
@@ -64,7 +66,7 @@ ms.locfileid: "85331483"
      | 選項 | 描述 |
      | - | - |
      | [/user](../profiling/user-vsperfcmd.md) **：**[ `Domain` **\\** ]`UserName` | 指定擁有程式碼剖析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 進程擁有者會列在 Windows 工作管理員的 [**進程**] 索引標籤上的 [**使用者名稱**] 欄中。 |
-     | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 會話識別碼會列在 Windows 工作管理員的 [**處理**程式] 索引標籤上的 [**會話識別碼**] 欄中。 **/crosssession** 可縮寫成 **/CS**。 |
+     | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 會話識別碼會列在 Windows 工作管理員的 [**處理** 程式] 索引標籤上的 [**會話識別碼**] 欄中。 **/crosssession** 可縮寫成 **/CS**。 |
      | [/waitstart](../profiling/waitstart.md)[**：** `Interval` ] | 指定在分析工具傳回錯誤之前，等候它初始化的秒數。 如果未指定 `Interval`，分析工具會無限期等候。 根據預設，**/start** 會立即傳回。 |
      | [/globaloff](../profiling/globalon-and-globaloff.md) | 若要啟動暫停資料收集的程式碼剖析工具，請將 **/globaloff** 選項新增到 **/start** 命令列。 使用 **/globalon** 以繼續程式碼剖析。 |
      | [/counter](../profiling/counter.md) **：**`Config` | 從 Config 中指定的處理器效能計數器收集資訊。計數器資訊會新增至每個程式碼剖析事件所收集的資料。 |
@@ -104,7 +106,7 @@ ms.locfileid: "85331483"
 
 4. 以原始模組取代檢測過的模組。 如有必要，請重新設定服務的啟動類型。
 
-5. 將電腦重新開機。
+5. 重新啟動電腦。
 
 ## <a name="see-also"></a>另請參閱
 

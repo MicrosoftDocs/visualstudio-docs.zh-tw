@@ -1,5 +1,7 @@
 ---
 title: Profiler 命令列檢測 .NET 服務，取得記憶體資料
+description: 瞭解如何使用 Visual Studio 分析工具命令列工具來收集 .NET Framework 服務的記憶體配置和物件存留期資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ff00f9a8a79dadc0cc037b707db057610b904e8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 28d17a80a04ad7ecd8e7dcb35226b3b1815db4bb
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809605"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883653"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用分析工具命令列以檢測 .NET Framework 服務並收集記憶體資料
 
@@ -41,7 +43,7 @@ ms.locfileid: "90809605"
 
 1. 開啟 [命令提示字元] 視窗。
 
-2. 使用 [VSInstr]**** 工具產生服務二進位檔的已檢測版本。
+2. 使用 [VSInstr] 工具產生服務二進位檔的已檢測版本。
 
 3. 使用 [服務控制管理員] 將原始二進位檔取代成已檢測版本。 確定服務的 [啟動類型] 設定為 [手動]。
 
@@ -56,7 +58,7 @@ ms.locfileid: "90809605"
        |**/globaltracegc**|僅收集記憶體配置資料。|
        |**/globaltracegclife**|收集記憶體配置和物件存留期資料。|
 
-5. 將電腦重新開機。
+5. 重新啟動電腦。
 
 6. 開啟 [命令提示字元] 視窗。
 
@@ -66,7 +68,7 @@ ms.locfileid: "90809605"
 
    - **/start: contention** 選項會將分析工具初始化。
 
-   - /Start 需要 **/output：** `OutputFile` 選項。 **/start** `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。
+   - /Start 需要 **/output：** `OutputFile` 選項。  `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。
 
      您可以使用下列任一選項搭配 **/start:sample** 選項。
 
@@ -76,7 +78,7 @@ ms.locfileid: "90809605"
    | 選項 | 描述 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **：**[ `Domain` **\\** ]`UserName` | 指定擁有 ASP.NET 背景工作處理序之帳戶的網域和使用者名稱。 如果以登入的使用者之外的使用者身分執行處理序，就需要這個選項。 處理序擁有者會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [使用者名稱] 欄。 |
-   | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 如果 ASP.NET 應用程式在不同的工作階段中執行，則需要這個選項。 會話識別碼會列在 Windows 工作管理員的 [**處理**程式] 索引標籤上的 [**會話識別碼**] 欄中。 **/crosssession** 可縮寫成 **/CS**。 |
+   | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 如果 ASP.NET 應用程式在不同的工作階段中執行，則需要這個選項。 會話識別碼會列在 Windows 工作管理員的 [**處理** 程式] 索引標籤上的 [**會話識別碼**] 欄中。 **/crosssession** 可縮寫成 **/CS**。 |
    | [/waitstart](../profiling/waitstart.md)[**：** `Interval` ] | 指定在分析工具傳回錯誤之前，等候它初始化的秒數。 如果未指定 `Interval`，分析工具會無限期等候。 根據預設，**/start** 會立即傳回。 |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | 若要啟動暫停資料收集的程式碼剖析工具，請將 **/globaloff** 選項新增到 **/start** 命令列。 使用 **/globalon** 以繼續程式碼剖析。 |
    | [/counter](../profiling/counter.md) **：**`Config` | 從 Config 中指定的處理器效能計數器收集資訊。計數器資訊會新增至每個程式碼剖析事件所收集的資料。 |
@@ -122,7 +124,7 @@ ms.locfileid: "90809605"
 
      以原始模組取代檢測過的模組。 如有必要，請重新設定服務的啟動類型。
 
-4. 將電腦重新開機。
+4. 重新啟動電腦。
 
 ## <a name="see-also"></a>另請參閱
 - [分析服務](../profiling/command-line-profiling-of-services.md)

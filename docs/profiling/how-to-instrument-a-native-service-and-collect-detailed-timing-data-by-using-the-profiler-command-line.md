@@ -1,5 +1,7 @@
 ---
 title: Profiler 命令列檢測原生服務，取得計時資料
+description: 瞭解如何使用 Visual Studio 分析工具命令列工具來收集原生 C/c + + 服務的詳細計時資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: dfe58b39-63f8-4a87-ab3a-2b5b14faa8d0
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 123c9af48d93e23d4f582575848d981f57abd2f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a4209db8856dd81ad6e74112b2907422826fe1c
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327893"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883562"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用分析工具命令列以檢測原生服務並收集詳細計時資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具來檢測原生 (C/C++) 服務，並收集詳細的計時資料。
@@ -36,7 +38,7 @@ ms.locfileid: "85327893"
 
 1. 開啟 [命令提示字元] 視窗。
 
-2. 使用 [VSInstr]**** 工具產生服務二進位檔的已檢測版本。
+2. 使用 [VSInstr] 工具產生服務二進位檔的已檢測版本。
 
 3. 以檢測過的版本取代原始二進位檔。 在 Windows 服務控制管理員中，確定服務的啟動類型設定為 [手動]。
 
@@ -44,9 +46,9 @@ ms.locfileid: "85327893"
 
     **>vsperfcmd** [/start](../profiling/start.md) **： trace**  [/output](../profiling/output.md) **：** `OutputFile` [ `Options` ]
 
-   - **/Start： trace**選項會初始化 profiler。
+   - **/Start： trace** 選項會初始化 profiler。
 
-   - /Start 需要 **/output：** `OutputFile` 選項。 **/start** `OutputFile` 指定分析資料 ( 的名稱和位置。*.vsp*) 檔。
+   - /Start 需要 **/output：** `OutputFile` 選項。  `OutputFile` 指定分析資料 ( 的名稱和位置。*.vsp*) 檔。
 
      您可以使用下列任一選項搭配 **/start:trace** 選項。
 

@@ -1,5 +1,7 @@
 ---
-title: 分析工具命令列檢測獨立的 .NET 元件，取得記憶體資料
+title: Profiler 命令列檢測獨立的 .NET 元件，取得記憶體資料
+description: 瞭解如何使用 Visual Studio 分析工具命令列工具來收集獨立應用程式 .NET Framework 元件的記憶體資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d09cc46a-70f5-48f9-aa24-89913e67b359
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57ee3a8d3c94fcd5f3c4b77bddc2fab9710a3caa
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c82f6306dbcfd462862c4d68b9a6fa142ff069a0
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809618"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883679"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>如何：使用命令列以分析工具檢測獨立的 .NET Framework 元件並收集記憶體資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具來檢測獨立應用程式的 .NET Framework 元件 (例如 .exe 或 .dll 檔案)，並使用分析工具來收集記憶體資訊。
@@ -34,7 +36,7 @@ ms.locfileid: "90809618"
 
 1. 開啟命令提示字元視窗。
 
-2. 使用 [VSInstr]**** 工具產生已檢測版的目標應用程式。
+2. 使用 [VSInstr] 工具產生已檢測版的目標應用程式。
 
 3. 初始化 .NET Framework 程式碼剖析環境變數。 輸入：
 
@@ -53,14 +55,14 @@ ms.locfileid: "90809618"
 
    - [/start](../profiling/start.md)**:trace** 選項會初始化程式碼剖析工具。
 
-   - /Start 需要[/output](../profiling/output.md)**：** `OutputFile` 選項。 **/start** `OutputFile` 指定分析資料 ( 的名稱和位置。*.vsp*) 檔。
+   - /Start 需要 [/output](../profiling/output.md)**：** `OutputFile` 選項。  `OutputFile` 指定分析資料 ( 的名稱和位置。*.vsp*) 檔。
 
      您可以使用下列任一選項搭配 **/start:trace** 選項。
 
    | 選項 | 描述 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **：**[ `Domain` **\\** ]`UserName` | 指定擁有程式碼剖析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 進程擁有者會列在 Windows 工作管理員的 [ **進程** ] 索引標籤上的 [使用者名稱] 欄中。 |
-   | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 之 [處理程序]**** 索引標籤上的 [工作階段識別碼]**** 資料行中。 **/crosssession** 可縮寫成 **/CS**。 |
+   | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 會話識別碼會列在 Windows 工作管理員的 [**處理** 程式] 索引標籤上的 [**會話** 識別碼] 欄中。 **/crosssession** 可縮寫成 **/CS**。 |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | 若要啟動暫停資料收集的程式碼剖析工具，請將 **/globaloff** 選項新增到 **/start** 命令列。 使用 **/globalon** 以繼續程式碼剖析。 |
    | [/wincounter](../profiling/wincounter.md) **：**`WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
    | [/automark](../profiling/automark.md) **：**`Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |

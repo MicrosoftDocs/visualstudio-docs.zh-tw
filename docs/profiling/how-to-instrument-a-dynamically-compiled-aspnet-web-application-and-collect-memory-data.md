@@ -1,5 +1,7 @@
 ---
 title: Profiler 命令列檢測動態 ASP.NET 應用程式，取得記憶體資料
+description: 瞭解如何使用 Visual Studio 分析工具命令列工具來收集動態編譯之 ASP.NET 應用程式的詳細記憶體活動資料。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7c1fafd3b21dd40da1215e7864c6d66090589d03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c26342fb956aa5043f316015f05e18ef70d20559
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328071"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883588"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用分析工具命令列檢測動態編譯的 ASP.NET Web 應用程式並收集記憶體資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具，利用檢測分析方法來收集動態編譯之 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的詳細 .NET 記憶體配置和物件存留期資料。
@@ -48,7 +50,7 @@ ms.locfileid: "85328071"
 
     - **/globaltracegclife** 啟用記憶體配置資料和物件存留期資料的收集。
 
-4. 將電腦重新開機。
+4. 重新啟動電腦。
 
 ## <a name="run-the-profiling-session"></a>執行分析工作階段
 
@@ -58,9 +60,9 @@ ms.locfileid: "85328071"
 
     **>vsperfcmd** [/start](../profiling/start.md) **： trace** [/output](../profiling/output.md) **：** `OutputFile` [ `Options` ]
 
-   - **/Start： trace**選項會初始化 profiler。
+   - **/Start： trace** 選項會初始化 profiler。
 
-   - /Start 需要 **/output：** `OutputFile` 選項。 **/start** `OutputFile` 指定分析資料 ( 的名稱和位置。*.vsp*) 檔。
+   - /Start 需要 **/output：** `OutputFile` 選項。  `OutputFile` 指定分析資料 ( 的名稱和位置。*.vsp*) 檔。
 
      您可以使用下列任一選項搭配 **/start:trace** 選項。
 
@@ -70,7 +72,7 @@ ms.locfileid: "85328071"
    | 選項 | 描述 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **：**[ `Domain` **\\** ]`UserName` | 指定擁有 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序之帳戶的選用網域和使用者名稱。 如果以登入的使用者之外的使用者身分執行處理序，就需要這個選項。 名稱會列在 Windows 工作管理員的 [**進程**] 索引標籤上的 [**使用者名稱**] 欄中。 |
-   | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 會話識別碼會列在 Windows 工作管理員的 [**處理**程式] 索引標籤上的 [**會話識別碼**] 欄中。 **/crosssession** 可縮寫成 **/CS**。 |
+   | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 會話識別碼會列在 Windows 工作管理員的 [**處理** 程式] 索引標籤上的 [**會話識別碼**] 欄中。 **/crosssession** 可縮寫成 **/CS**。 |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | 啟動分析工具，但暫停資料收集。 使用 [/globalon](../profiling/globalon-and-globaloff.md) 以繼續程式碼剖析。 |
    | [/counter](../profiling/counter.md) **：**`Config` | 從 `Config` 中指定的處理器效能計數器收集資訊。 計數器資訊會新增至在每個分析事件收集的資料。 |
    | [/wincounter](../profiling/wincounter.md) **：**`WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
@@ -124,7 +126,7 @@ ms.locfileid: "85328071"
 
      **VSPerfCmd /globaloff**
 
-3. 將電腦重新開機。
+3. 重新啟動電腦。
 
 ## <a name="see-also"></a>另請參閱
 - [分析 ASP.NET web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
