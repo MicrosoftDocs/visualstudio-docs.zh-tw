@@ -40,8 +40,8 @@
   items:
     - name: 使用雲端服務專案
       items:
-        - name: 存取私人 Azure 雲端
-          href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
+        - name: '使用雲端服務 (延伸支援)  (Preview) '
+          href: cloud-services-extended-support.md
         - name: 建立 Azure 雲端服務專案
           href: vs-azure-tools-azure-project-create.md
         - name: 管理 Azure 雲端服務中的角色
@@ -60,6 +60,8 @@
           href: vs-azure-tools-multiple-services-project-configurations.md
         - name: 如何將專案升級到最新的 Azure 工具版本
           href: vs-azure-tools-upgrade-projects-to-the-current-version-of-the-azure-tools.md
+        - name: 存取私人 Azure 雲端
+          href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
     - name: 測試雲端服務及針對其進行偵錯
       items:
         - name: 在 Visual Studio 中針對 Azure 雲端服務或虛擬機器進行偵錯
