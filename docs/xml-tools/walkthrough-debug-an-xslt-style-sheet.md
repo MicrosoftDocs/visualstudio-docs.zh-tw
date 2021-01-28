@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3a6f1efc85366bc74206dc8637c992f249c4eb44
+ms.sourcegitcommit: e443866e3468f838bc3655ad56a83a552013ceed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351332"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925889"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>逐步解說：偵錯 XSLT 樣式表
 
@@ -24,19 +24,19 @@ ms.locfileid: "94351332"
 若要準備此逐步解說，請先將兩個 [範例](#sample-files) 檔案複製到本機電腦。 其中一個是樣式表單，而另一個是用來做為樣式表單輸入的 XML 檔。 在這個逐步解說中，我們使用的樣式表單會尋找其成本低於平均書籍價格的所有書籍。
 
 > [!NOTE]
-> XSLT 偵錯工具僅適用于 Enterprise edition 的 Visual Studio。
+> XSLT 偵錯工具僅適用于 Visual Studio 的 Professional 和 Enterprise 版本。
 
 ## <a name="start-debugging"></a>開始偵錯
 
-1. 選擇 [檔案 **] 功能表中的 [** **開啟** 檔案]  >  **** 。
+1. 選擇 [檔案 **] 功能表中的 [** **開啟** 檔案]  >  ****。
 
-2. 找到 *below-average .xsl* 檔案，然後選擇 [ **開啟** ]。
+2. 找到 *below-average .xsl* 檔案，然後選擇 [ **開啟**]。
 
    樣式表單會在 XML 編輯器中開啟。
 
-3. 按一下 [檔案屬性] 視窗中 [ **輸入** ] 欄位上的 [流覽] 按鈕 ( **...** ) 。  (如果看不到 [ **屬性** ] 視窗，請在編輯器中開啟之檔案的任何位置上按一下滑鼠右鍵，然後選擇 [ **屬性** ]。 ) 
+3. 按一下 [檔案屬性] 視窗中 [**輸入**] 欄位上的 [流覽] 按鈕 (**...**) 。  (如果看不到 [ **屬性** ] 視窗，請在編輯器中開啟之檔案的任何位置上按一下滑鼠右鍵，然後選擇 [ **屬性**]。 ) 
 
-4. 找出 *books.xml* 檔案，然後選擇 [ **開啟** ]。
+4. 找出 *books.xml* 檔案，然後選擇 [ **開啟**]。
 
    這會設定用於 XSLT 轉換的來源文件檔。
 
@@ -44,33 +44,33 @@ ms.locfileid: "94351332"
 
    - 在第12行的編輯器邊界中按一下。
 
-   - 按一下第12行的任何位置，然後按 **F9** 。
+   - 按一下第12行的任何位置，然後按 **F9**。
 
-   - 以滑鼠右鍵按一下 [ `xsl:if` 開始] 標記，然後選擇 [ **中斷點**  >  **插入中斷點** ]。
+   - 以滑鼠右鍵按一下 [ `xsl:if` 開始] 標記，然後選擇 [**中斷點**  >  **插入中斷點**]。
 
       ![在 Visual Studio 中的 XSL 檔案插入中斷點](media/insert-breakpoint.PNG)
 
-6. 在功能表列上，選擇 [ **XML**  >  **啟動 XSLT 調試** (]，或按下 **Alt** + **F5** ) 。
+6. 在功能表列上，選擇 [ **XML**  >  **啟動 XSLT 調試** (]，或按下 **Alt** + **F5**) 。
 
    偵錯工具隨即啟動。
 
    在編輯器中，偵錯工具位於 `xsl:if` 樣式表單的元素上。 另一個名為 *below-average.xml* 的檔案會在編輯器中開啟;這是在處理輸入檔 *books.xml* 中的每個節點時，將填入的輸出檔。
 
-   [自動變數]、[ **區域變數** ] **和 [****監看式 1]** 視窗會出現在 Visual Studio 視窗的底部。 [ **區域變數** ] 視窗會顯示所有區域變數和其目前的值。 其中包括在樣式表中定義的變數，及偵錯工具用來追蹤目前內容中之節點的變數。
+   [自動變數]、[**區域變數**]**和 [****監看式 1]** 視窗會出現在 Visual Studio 視窗的底部。 [ **區域變數** ] 視窗會顯示所有區域變數和其目前的值。 其中包括在樣式表中定義的變數，及偵錯工具用來追蹤目前內容中之節點的變數。
 
 ## <a name="watch-window"></a>監看式視窗
 
 我們會將兩個變數新增至 [ **監看式 1** ] 視窗，讓我們可以在處理輸入檔時檢查其值。  (如果您要監看的變數已經存在，您也可以使用 [ **區域變數** ] 視窗檢查值。 ) 
 
-1. 在 [ **調試** ] 功能表中，選擇 [ **Windows**  >  **watch**  >  **watch 1]** 。
+1. 在 [**調試**] 功能表中，選擇 [ **Windows**  >  **watch**  >  **watch 1]**。
 
    [ **監** 看式 1] 視窗隨即顯示。
 
-2. `$bookAverage`在 [ **名稱** ] 欄位中輸入，然後按 **enter** 。
+2. `$bookAverage`在 [**名稱**] 欄位中輸入，然後按 **enter**。
 
    變數的值會 `$bookAverage` 顯示在 [ **值** ] 欄位中。
 
-3. 在下一行中，輸入 `self::node()` [ **名稱** ] 欄位，然後按 **enter** 。
+3. 在下一行中，輸入 `self::node()` [ **名稱** ] 欄位，然後按 **enter**。
 
    `self::node()` 這是評估為目前內容節點的 XPath 運算式。 `self::node()` XPath 運算式的值為第一個書籍節點。 它會隨著轉換的進行而變更。
 
@@ -90,7 +90,7 @@ ms.locfileid: "94351332"
 
 2. 按 **F5** 繼續。
 
-   因為第二個書籍節點不符合 `xsl:if` 條件，所以不會將 [書籍] 節點新增至 *below-average.xml* 輸出檔。 偵錯工具會繼續執行，直到它再次放置於 `xsl:if` 樣式表單中的元素上為止。 偵錯工具現在位於books.xml檔案的第三個 `book` 節點 *books.xml* 上。
+   因為第二個書籍節點不符合 `xsl:if` 條件，所以不會將 [書籍] 節點新增至 *below-average.xml* 輸出檔。 偵錯工具會繼續執行，直到它再次放置於 `xsl:if` 樣式表單中的元素上為止。 偵錯工具現在位於books.xml檔案的第三個 `book` 節點上。
 
    在 [ **監看式 1** ] 視窗中， `self::node()` 值會變更為第三個書籍節點。 藉由檢查項目的值 `price` ，您可以判斷價格低於平均值。 `xsl:if`條件應該會成功。
 
@@ -157,6 +157,6 @@ ms.locfileid: "94351332"
 </bookstore>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯 XSLT](../xml-tools/debugging-xslt.md)
