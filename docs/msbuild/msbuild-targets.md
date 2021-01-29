@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19d6a95ceeab9af2b6a6f874ae4f889dd2180ba6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f9276fa25651d3f453302a1fc87d10b37e4d49e4
+ms.sourcegitcommit: 52742b678233eed1de7a249cf990d072f9758149
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524017"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99049463"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
 
@@ -254,7 +254,7 @@ assemblies from the various directories, and to support multi-targeting
 
 ===================================================
 AssignLinkMetadata
-For items of a certain set of whitelisted types, make sure that
+For items of a certain set of allowed types, make sure that
 if they are defined in a file other than the project file, that 
 they have "Link" metadata set to an appropriate default. 
 ===================================================

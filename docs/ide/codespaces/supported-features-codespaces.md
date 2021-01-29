@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 20d42b45cc98a64d86306b81f14d781becb8b7a6
+ms.sourcegitcommit: 52742b678233eed1de7a249cf990d072f9758149
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696534"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99049476"
 ---
 # <a name="supported-visual-studio-features-preview"></a>支援 (Preview 的 Visual Studio 功能) 
 
@@ -73,6 +73,7 @@ Visual Studio 在連接至 codespace 時，提供豐富的開發體驗。 您可
 尚未提供：
 
 * UI 設計工具-WinForms、WPF 和資源設計工具
+* WinForms 和 WPF 專案應用程式轉換僅適用于功能旗標
 * Visual Basic 和 F # 專案
 * .NET Framework 目標專案
 * Docker Compose 專案
@@ -121,7 +122,7 @@ Visual Studio 在連接至 codespace 時，提供豐富的開發體驗。 您可
 * 企業測試功能-不支援 Live Unit Testing、Microsoft Fakes、程式碼涵蓋範圍和 IntelliTest。
 * Advanced 發行案例-選擇性發佈、FTP 發佈、預覽變更、快速發佈工具列等。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [什麼是 GitHub Codespaces？](codespaces-overview.md)
 * [如何搭配 codespace 使用 Visual Studio](use-visual-studio-with-codespaces.md)
