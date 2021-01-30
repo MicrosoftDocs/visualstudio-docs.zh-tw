@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfec7d31e6fc2c120ef42dc9de2a5a7eea4132e0
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 909e15a3acdc6725556c8d5121a363d1754a74be
+ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597089"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99104275"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>如何：以編碼方式儲存及開啟檔案
 
@@ -39,6 +39,9 @@ ms.locfileid: "95597089"
      如果您想要與不同作業系統的使用者交換檔案，這個選項相當實用。
 
      如果您知道要使用的檔案是以何種方式編碼，即可在開啟檔案時告知 Visual Studio 使用該種編碼方式。 依據檔案是否為專案的一部分而定，您需使用不同的方法。
+
+> [!NOTE]
+> 如果您想要以編碼方式儲存專案檔，則在卸載專案之前，不會啟用 [ **另存** 新檔] 選項。
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>若要開啟的編碼檔案為專案的一部分
 

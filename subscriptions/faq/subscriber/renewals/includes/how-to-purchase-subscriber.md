@@ -1,20 +1,21 @@
 ---
 title: 如何購買 Visual Studio 訂閱？
-description: 了解各種購買 Visual Studio 訂閱的方式
-ms.faqid: group4_1
+description: 瞭解購買 Visual Studio 訂閱的各種方式
+ms.faqid: q4_1
 ms.topic: include
-ms.assetid: c8dd39de-bf7f-40a2-a203-f2be21b87f5c
+ms.assetid: 5b27454c-f036-4f4d-9d67-54d1fc775f72
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/27/2021
-ms.openlocfilehash: a2dca00b1a7ebea80a883825783785c84c2352cc
+ms.date: 01/12/2021
+ms.openlocfilehash: bb436cfdff0f6783d041858430b4fd9864ceb569
 ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104408"
+ms.locfileid: "99104493"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>如何購買 Visual Studio 訂閱？
+
 您可以透過各種通路購買 Visual Studio 訂閱，包括 [大量授權](https://www.microsoft.com/licensing/default)、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) 及 [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio)。  
 
 [比較訂閱權益與定價](https://visualstudio.microsoft.com/vs/pricing/) ，了解每種 Visual Studio 訂閱的權益。 您可以查看[訂閱權益頁面](https://visualstudio.microsoft.com/vs/benefits/)深入了解，從而決定適合您的訂閱。   
@@ -35,4 +36,4 @@ ms.locfileid: "99104408"
 [深入了解](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) Visual Studio 月租方案的計費。 
 
 ### <a name="volume-licensing"></a>大量授權 
-當組織需要購買大量的訂用帳戶時，就可以使用大量授權訂閱。 [深入瞭解如何透過](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) 大量授權購買。  
+當組織需要購買大量的訂用帳戶時，就可以使用大量授權訂閱。 [深入瞭解如何透過](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) 大量授權購買。

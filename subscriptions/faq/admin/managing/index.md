@@ -6,13 +6,13 @@ ms.topic: conceptual
 ms.assetid: 933c7f9e-dce9-46e7-939e-68682c65d972
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 11/30/2020
-ms.openlocfilehash: 472ede945e5fe245baaf820f01889da2d1071ded
-ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
-ms.translationtype: HT
+ms.date: 01/27/2021
+ms.openlocfilehash: 61f6f6987aaf570edd1eac6b77eafdffeb37b430
+ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96329610"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99105398"
 ---
 # <a name="managing-visual-studio-subscriptions"></a>管理 Visual Studio 訂用帳戶
 

@@ -188,7 +188,9 @@
           href: ide/create-new-project.md
         - name: 使用解決方案與專案
           href: ide/creating-solutions-and-projects.md
-        - name: 從存放庫開啟專案
+        - name: 在 Visual Studio 2017 的存放庫中開啟專案
+          href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
+        - name: 從 Visual Studio 中的存放庫開啟專案
           href: get-started/tutorial-open-project-from-repo.md
         - name: 移植、移轉及升級專案
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
@@ -619,7 +621,7 @@
           href: ide/class-designer/additional-information-about-errors.md
     - name: 改善您的程式碼
       href: ide/find-and-fix-code-errors.md
-    - name: 秘訣和訣竅
+    - name: 秘訣與技巧
       items:
         - name: 生產力功能
           href: ide/productivity-features.md
@@ -966,7 +968,7 @@
           href: ide/optimize-visual-studio-startup-time.md
         - name: 載入已篩選的解決方案
           href: ide/filtered-solutions.md
-        - name: 秘訣和訣竅
+        - name: 秘訣與技巧
           href: ide/visual-studio-performance-tips-and-tricks.md
 - name: 協助工具選項
   items:
