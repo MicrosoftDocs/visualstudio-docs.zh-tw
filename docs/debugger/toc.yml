@@ -338,8 +338,6 @@
       items:
         - name: 使用偵錯工具附加至執行中處理序
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
-        - name: 在 Linux 上對 .NET Core 偵錯
-          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: 附加至在 Docker 容器中執行的處理序
           href: attach-to-process-running-in-docker-container.md
     - name: 多執行緒應用程式偵錯
@@ -422,6 +420,14 @@
           href: debug-live-azure-apps-troubleshooting.md
         - name: 時間移動偵錯即時 Azure 虛擬機器應用程式
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
+    - name: Linux 調試
+      items:
+        - name: 在 WSL 2 中偵錯工具 .NET Core 應用程式
+          href: debug-dotnet-core-in-wsl-2.md
+        - name: 使用 SSH 在 Linux 上進行 .NET Core 的調試
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
+        - name: 使用容器工具進行 Debug >>
+          href: ../containers/edit-and-refresh.md
     - name: 應用程式類型
       items:
         - name: 對特定應用程式類型進行偵錯

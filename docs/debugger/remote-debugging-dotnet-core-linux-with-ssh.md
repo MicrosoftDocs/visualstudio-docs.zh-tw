@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bde5bb8722e0f95a10991019bdc9cba9c8a48ec3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 599ebe86867e78d17029b2787b9f35b6755c3040
+ms.sourcegitcommit: 586369f5aa61d4a0330802f718f0ceaa55d7e9c7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204887"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99224349"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>藉由附加至進程，使用 SSH 在 Linux 上進行 .NET Core 的偵錯工具
 
-從 Visual Studio 2017 開始，您可以透過 SSH 附加至在本機或遠端 Linux 部署上執行的 .NET Core 進程。 本文說明如何設定偵測和如何進行調試。 如需使用 Docker 容器的偵錯工具案例，請參閱 [附加至在 docker 容器上](../debugger/attach-to-process-running-in-docker-container.md) 執行的進程。
+從 Visual Studio 2017 開始，您可以透過 SSH 附加至在本機或遠端 Linux 部署上執行的 .NET Core 進程。 本文說明如何設定偵測和如何進行調試。 如需使用 Docker 容器的偵錯工具案例，請參閱 [附加至在 docker 容器上](../debugger/attach-to-process-running-in-docker-container.md) 執行的進程和 [容器工具](../containers/edit-and-refresh.md) 文章。 若要從 Visual Studio 在 WSL 2 上的 Linux (不附加至進程) ，請參閱 [使用 Visual Studio 在 WSL 2 中偵錯工具 .Net Core 應用程式](../debugger/debug-dotnet-core-in-wsl-2.md)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 - 在 Visual Studio 電腦上，您必須安裝 **ASP.NET 和 網頁程式開發** 工作負載，或是 **.net Core 跨平臺開發** 工作負載。
 
