@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: 深入瞭解超級管理員和系統管理員角色，以及如何指派系統管理員。
-ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 2d9abf5a3079320011cb979a8109278c878321e3
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467371"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511328"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Visual Studio 訂用帳戶協定的超級管理員和系統管理員
 
@@ -28,8 +28,8 @@ ms.locfileid: "92467371"
 ## <a name="assigning-admins"></a>指派系統管理員
 若要指派新的系統管理員 (系統管理員) ：
 1. 使用指派為用於購買訂用帳戶的合約上超級管理員電子郵件地址登入 https://manage.visualstudio.com。
-2. 按一下標示為 [管理系統管理員]  的索引標籤。
-3. 按一下 [新增]  。
+2. 按一下標示為 [管理系統管理員] 的索引標籤。
+3. 按一下 **[新增]** 。
    > [!div class="mx-imgBorder"]
    > ![新增管理員](_img/admin-roles/add-admins.png "按一下 [管理系統管理員] 分頁，然後按一下 [新增] 以指派新的系統管理員。")
 4. 使用新系統管理員的資訊來完成表單。  
@@ -37,18 +37,19 @@ ms.locfileid: "92467371"
    > ![新增系統管理員表單](_img/admin-roles/add-form.png "輸入新系統管理員的登入資訊，並選擇是否要讓他們成為超級系統管理員。 然後按一下 [新增]。")
 
    > [!NOTE]
-   > 如果您想要讓此系統管理員能夠指派其他系統管理員，請記得核取 [超級管理員]  方塊。
+   > 如果您想要讓此系統管理員能夠指派其他系統管理員，請記得核取 [超級管理員] 方塊。
 
-5. 當您按一下 [新增]  指派新的系統管理員之後，他們會收到一封電子郵件，邀請他們登入入口網站。  
+5. 當您按一下 [新增] 指派新的系統管理員之後，他們會收到一封電子郵件，邀請他們登入入口網站。  
 
 ## <a name="resources"></a>資源
-- [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio 管理與訂閱支援](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
+
 
 
 ## <a name="next-steps"></a>下一步

@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: 了解如何在管理入口網站中設定語言、連絡人、訂用帳戶層級及其他喜好設定
-ms.openlocfilehash: e044db92a318114cd2f159b859843db354fac6c7
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: bdb6a5bc1160c75830fe9f1473222155d8fad781
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467436"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511341"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>在管理入口網站中設定您合約的喜好設定
 超級管理員可以在系統管理員入口網站中設定特定的喜好設定 (系統管理員入口網站) 將會針對每個合約全域套用。  這些喜好設定將會在新增訂閱者時自動填入您系統管理員的訂用帳戶詳細資料，而且只能由超級管理員進行全域修改。  
@@ -26,7 +26,7 @@ ms.locfileid: "92467436"
    > [!div class="mx-imgBorder"]
    > ![管理員喜好設定按鈕](_img/admin-prefs/admin-prefs-button.png "按一下 [管理管理員]，然後按一下 [協定喜好設定] 以顯示喜好設定")
 
-3. 按一下 [Agreement Preferences] \(合約喜好設定\)****。
+3. 按一下 [Agreement Preferences] \(合約喜好設定\)。
 面板會在左側開啟，並顯示您的可用喜好設定。 
 
    > [!div class="mx-imgBorder"]
@@ -41,7 +41,7 @@ ms.locfileid: "92467436"
 如果只有一個合約與您用來登入的電子郵件地址相關聯，它就會顯示在展開的 [設定] 面板右邊，而下拉式清單將會停用。 
 
 ### <a name="contact-email-address"></a>連絡人電子郵件地址
-此喜好設定可讓您的訂閱者透過在訂閱者入口網站的 [訂用帳戶][頁面](https://my.visualstudio.com/subscriptions)上，使用 [**連絡人我**的系統管理員] 按鈕來與系統管理員聯繫。  如果此喜好設定保留空白，則會將訂閱者訊息轉寄給合約上的所有系統管理員和超級管理員。  建議使用群組電子郵件別名或安全性群組來量身打造此連絡人電子郵件的對象。 如果您想要的話，也可以選擇輸入個人的電子郵件地址。
+此喜好設定可讓您的訂閱者透過在訂閱者入口網站的 [訂用帳戶][頁面](https://my.visualstudio.com/subscriptions)上，使用 [**連絡人我** 的系統管理員] 按鈕來與系統管理員聯繫。  如果此喜好設定保留空白，則會將訂閱者訊息轉寄給合約上的所有系統管理員和超級管理員。  建議使用群組電子郵件別名或安全性群組來量身打造此連絡人電子郵件的對象。 如果您想要的話，也可以選擇輸入個人的電子郵件地址。
 
 > [!NOTE]
 > 您在此處列出的電子郵件地址「不會」提供給訂閱者。  當訂閱者在訂閱者入口網站中提交「我的系統 **管理員** 」要求時，會將訊息轉送至該別名，而不會將其公開給「訂閱者」。 
@@ -73,15 +73,15 @@ ms.locfileid: "92467436"
 答：如果 **連絡人電子郵件地址** 喜好設定中未設定特定的電子郵件地址，則合約上的所有系統管理員都會收到要求。 
 
 ## <a name="resources"></a>資源
-- [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio 管理與訂閱支援](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 深入瞭解如何管理 Visual Studio 的訂閱。
 - [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)

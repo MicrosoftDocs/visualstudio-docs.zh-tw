@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: 瞭解訂用帳戶管理員的責任。
-ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 9d2c724fafb41ee44e531a1eec41d76d7e888686
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467462"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511289"
 ---
 # <a name="overview-of-admin-responsibilities"></a>系統管理員責任概觀
 以系統管理員身分，您可以管理組織的訂用帳戶。  系統管理員角色也會負責確保訂用帳戶會根據授權條款來管理。 本文概述系統管理員角色的職責、優點和限制。
@@ -38,11 +38,12 @@ Visual Studio 訂閱可讓開發人員安裝和使用軟體，以設計、開發
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
+- [Visual Studio 管理與訂閱支援](https://my.visualstudio.com/gethelp)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 深入瞭解系統管理員的責任：
 - [清查生產前環境](admin-inventory.md)
 - [管理大型小組及外部承攬人](manage-teams.md)

@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: 瞭解如何在 Visual Studio 訂用帳戶中存取 GitHub Enterprise
-ms.openlocfilehash: 59b665b1da7d46732f1f4e967ae2a98ec54875ff
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 7ad60b1c1a177353cad13e3dbcbc50c67b5500ac
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537899"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511354"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>使用 GitHub Enterprise Visual Studio 訂閱 
 
@@ -83,17 +83,17 @@ GitHub Enterprise 是由 GitHub 系統管理員與 Visual Studio 訂用帳戶分
 ## <a name="support-resources"></a>支援資源
 - 深入[瞭解 github 檔的 github](https://docs.github.com/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)指派
 - 在 [github](https://help.github.com)說明的廣泛 github 主題中尋找問題的答案。
-- 需要其他協助嗎？  聯絡 [GitHub 支援](https://support.github.com/)
+- 需要其他協助？  聯絡 [GitHub 支援](https://support.github.com/)
 - 在 [GitHub Community Forum](https://github.community/) (GitHub 社群論壇) 可以獲得其他 GitHub 使用者的協助。
-- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 [Visual Studio 訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請造訪我們的 [取得協助](https://my.visualstudio.com/GetHelp) 頁面。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 - 取得 GitHub Enterprise 的[技術支援](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 文件](https://docs.microsoft.com/azure/devops/) \(英文\)
 - [Azure 檔](https://docs.microsoft.com/azure/)
 - [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 如果您還不熟悉 GitHub，請前往 [GitHub Learning Lab](https://lab.github.com/) (GitHub 學習實驗室)，這裡會帶您了解一系列有趣又實用的專案，並在過程中提供實用的回饋。

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: how-to
 description: 瞭解系統管理員如何使用「大量新增」功能或 Microsoft Azure Active Directory 群組，將授權指派給多個「訂閱者」
-ms.openlocfilehash: e9d4cd5c7e73cdc3b71768a498a7c02546d3e1fc
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 995859dce259b3a4edf968fac98723e226cf59d5
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696614"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511367"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
@@ -137,14 +137,14 @@ ms.locfileid: "97696614"
    > ![按一下 [詳細資料] 按鈕](_img/assign-license-bulk/bulk-add-agreement.png "按一下 [詳細資料] 按鈕，以查看您擁有的合約類型")
 
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>問：我已將某人新增至我的 Azure AD 安全性群組，但我在訂用帳戶管理入口網站中看不到他們新增的帳戶，且他們沒有訂用帳戶。 為什麼不用？  
-答：根據組織設定 Azure AD 的方式，您可能會在新增使用者之前看到最多24小時的延遲。 如果超過24小時，請 [聯絡支援人員](https://visualstudio.microsoft.com/support/support-overview-vs)。  
+答：根據組織設定 Azure AD 的方式，您可能會在新增使用者之前看到最多24小時的延遲。 如果超過24小時，請造訪 [Visual Studio 管理和訂閱支援](https://my.visualstudio.com/gethelp)。  
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - 只有一或兩個訂閱者要新增嗎？  參閱[新增單一使用者](assign-license.md)
 - 需要協助嗎？ 請聯絡 [Visual Studio 管理和訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)。
