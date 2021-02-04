@@ -1,5 +1,5 @@
 ---
-title: 我在 Azure 入口網站中看不到我的 Azure 每月點數。
+title: 在 Azure 入口網站中看不到我的 Azure 每月點數
 description: 我在登入 Azure 入口網站之後，看不到我的 Azure 每月點數
 ms.topic: include
 ms.assetid: 48420a4c-11b4-4bbd-a509-2c939d24e81a
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 48f52f1381bb890942e6f5ed3f1772c0735b1fb8
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 5a5322563be438c734b03c9d834ffd545cb6da43
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147536"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541135"
 ---
 ## <a name="im-unable-to-see-my-azure-monthly-credit-in-the-azure-portal"></a>我在 Azure 入口網站中看不到我的 Azure 每月點數。
 
@@ -46,6 +46,6 @@ ms.locfileid: "98147536"
 
 ## <a name="more-information-about-azure-monthly-credits"></a>Azure 每月信用額度的詳細資訊
 
-[閱讀](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure) 有關啟用、資格和其他支援資源的詳細資訊。  
+閱讀有關 [啟用、資格和其他支援資源的詳細資訊](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure)。  
 
-[瞭解如何](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits) 使用 Visual Studio 訂用帳戶中包含的 Azure 點數。 
+[瞭解如何使用](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits) Visual Studio 訂用帳戶中包含的 Azure 點數。 

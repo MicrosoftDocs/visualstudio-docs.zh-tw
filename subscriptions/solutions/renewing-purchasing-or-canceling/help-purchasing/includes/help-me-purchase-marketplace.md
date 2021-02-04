@@ -10,12 +10,12 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: 2cb74dda511efbed7a204ef11a163097efc2f54b
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 6a4758508c478612b75f51acef6136fde0fab9d3
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147593"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541039"
 ---
 ## <a name="purchase-monthly-subscriptions-through-visual-studio-marketplace"></a>透過 Visual Studio Marketplace 購買每月訂閱 
 
@@ -28,7 +28,7 @@ ms.locfileid: "98147593"
 * [Visual Studio Professional-每月訂閱](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly) 
 * [Visual Studio Enterprise-每月訂閱](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly) 
 
-[深入](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) 瞭解每月 Visual Studio 訂閱 Azure 計費。 
+深入瞭解 [每月 Visual Studio 訂閱 Azure 計費](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)。 
 
 ## <a name="more-information-about-subscription-benefits"></a>訂用帳戶權益的詳細資訊
 

@@ -1,5 +1,5 @@
 ---
-title: '我無法下載或啟用 Visual Studio 系列以外的軟體 () '
+title: 無法下載或啟動不含 Visual Studio 系列) 的軟體 (
 description: 我無法下載或啟用 Visual Studio 訂用帳戶隨附 Visual Studio 系列) 的軟體 (。
 ms.topic: include
 ms.assetid: 4e67a935-40f9-4c26-b836-e06aa8582bad
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: 81c9013c59ffa8fc503e71202941b044f90b139a
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 477753ab93205aa838389313a0ad2c96487aacc3
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147608"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541192"
 ---
 ## <a name="im-unable-to-download-or-activate-software-excluding-visual-studio-family"></a>我無法下載或啟用 Visual Studio 系列以外的軟體 () 
 
@@ -34,4 +34,4 @@ ms.locfileid: "98147608"
 您也可以流覽 [[產品金鑰](https://my.visualstudio.com/productkeys)]   頁面，其中所有索引鍵都可在匯總中使用。 您可以編輯 [附注] 資料行，以識別您索取金鑰的時機和原因。 
 
 ## <a name="more-information-about-downloads"></a>有關下載的詳細資訊 
-[深入瞭解](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) 尋找和索取產品金鑰和下載。  
+深入瞭解 [尋找和索取產品金鑰和下載](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)。  

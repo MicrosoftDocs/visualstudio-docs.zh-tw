@@ -1,5 +1,5 @@
 ---
-title: 協助我透過 Microsoft store 續訂。
+title: 透過 Microsoft store 協助我續約
 description: 協助我更新從 Microsoft store 購買的 Visual Studio 訂閱。
 ms.topic: include
 ms.assetid: 3b36270b-aa3b-4c05-b12e-4df8d6f823c1
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: renewing
 subscription.type: retail
 sap.id: b324c31f-5d44-4cc2-537a-9c354bc5fbfc
-ms.openlocfilehash: f518f4458181d39a140ee5652b08ea861f2130ee
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: e337fc3df5b930dc09f9d3b13be3f64efc7dd749
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147448"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541141"
 ---
 ## <a name="renewing-subscriptions-through-microsoft-store"></a>透過 Microsoft Store 更新訂閱 
 
@@ -51,7 +51,7 @@ ms.locfileid: "98147448"
 
 訂用帳戶現在應該會顯示在 [訂用帳戶] [頁面](https://my.visualstudio.com/subscriptions) 上，而且您應該可以存取您的所有訂用帳戶權益。 
 
-## <a name="more-information"></a>更多資訊 
+## <a name="more-information"></a>詳細資訊 
 
 [比較訂閱權益與定價](https://visualstudio.microsoft.com/vs/pricing/) ，了解每種 Visual Studio 訂閱的權益。 
 

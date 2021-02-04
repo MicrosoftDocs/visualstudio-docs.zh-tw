@@ -1,5 +1,5 @@
 ---
-title: 我找不到產品
+title: 找不到產品
 description: 我的 Visual Studio 訂用帳戶找不到要下載的產品。
 ms.topic: include
 ms.assetid: a3635d25-8f9d-4cf8-a9c3-db41d155f989
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: e4d24412ab4e3aee22a9184d23ddbefb6ceb35fa
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 03ffd1e9a80b69652040653d2cacfdfd2ebb4e2d
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147691"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541204"
 ---
 ## <a name="im-unable-to-locate-the-product-i-need-to-download"></a>我找不到需要下載的產品。
 
@@ -34,4 +34,4 @@ ms.locfileid: "98147691"
 您也可以流覽 [[產品金鑰](https://my.visualstudio.com/productkeys)]   頁面，其中所有索引鍵都可在匯總中使用。 您可以編輯 [附注] 資料行，以識別您索取金鑰的時機和原因。 
 
 ## <a name="more-information-about-product-keys"></a>產品金鑰的詳細資訊
-[深入瞭解](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) 尋找和索取產品金鑰和下載。  
+深入瞭解 [尋找和索取產品金鑰和下載](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)。  

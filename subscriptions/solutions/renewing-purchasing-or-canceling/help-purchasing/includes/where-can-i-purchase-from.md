@@ -10,12 +10,12 @@ user.type: subscriber
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: e79c8a818b4e2bf787225342c9ad2c344cfbc74c
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: be2c22f6ea8bb9b6b98823b8adbe763137fdec1a
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915911"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541250"
 ---
 ## <a name="where-to-purchase-subscriptions"></a>購買訂閱的位置 
 
@@ -42,8 +42,8 @@ ms.locfileid: "96915911"
 * [Visual Studio Professional-每月訂閱](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly) 
 * [Visual Studio Enterprise-每月訂閱](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly) 
 
-[深入了解](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) Visual Studio 月租方案的計費。 
+深入瞭解 [每月 Visual Studio 訂閱計費](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)。 
 
 ## <a name="volume-licensing"></a>大量授權 
 
-當組織需要購買大量的訂用帳戶時，就可以使用大量授權訂閱。 [深入瞭解如何透過](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) 大量授權購買。
+當組織需要購買大量的訂用帳戶時，就可以使用大量授權訂閱。 深入瞭解如何 [透過大量授權購買](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)。

@@ -1,5 +1,5 @@
 ---
-title: 我在嘗試啟用 Azure 每月點數時收到錯誤。
+title: 嘗試啟用我的 Azure 每月信用額度時收到錯誤
 description: 當我嘗試啟用我的 Visual Studio 訂用帳戶隨附的 Azure 每月點數時，我收到錯誤。
 ms.topic: include
 ms.assetid: eed8114a-651a-47e2-bb24-130acd2a76d0
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 5670ff0fd3ac14a2b7b26f3098c9ed1060a4efac
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 91014bf9e942d874316cf74b9631d23426a61ea1
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915890"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541210"
 ---
 ## <a name="im-getting-an-error-while-trying-to-activate-my-azure-monthly-credit"></a>我在嘗試啟用 Azure 每月點數時收到錯誤。
 

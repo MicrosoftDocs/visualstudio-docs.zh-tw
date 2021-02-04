@@ -1,5 +1,5 @@
 ---
-title: 我無法啟用 Azure 開發/測試隨用隨付訂用帳戶。
+title: 無法啟用我的 Azure 開發/測試隨用隨付訂用帳戶
 description: 我無法啟用我的 Visual Studio 訂用帳戶隨附的 Azure 開發/測試隨用隨付訂用帳戶嗎？
 ms.topic: include
 ms.assetid: 6ad8bb6e-e571-450e-860b-acf1e78921d7
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure, dev-test
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 2a6e02721512d9780cd94d2d9601fe7099eac956
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 83907b80a67193230a31d9bad155ce72bd02a373
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147574"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541146"
 ---
 ## <a name="im-unable-to-activate-my-azure-dev--test-pay-as-you-go-subscription"></a>我無法啟用 Azure 開發/測試隨用隨付訂用帳戶。
 
@@ -29,4 +29,4 @@ ms.locfileid: "98147574"
 
 ## <a name="more-information-about-subscriptions"></a>訂閱的詳細資訊
  
-[閱讀有關 Azure 開發/測試隨用隨付訂用帳戶的詳細資訊](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-payg)。
+閱讀 [有關 Azure 開發/測試隨用隨付訂用](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-payg)帳戶的詳細資訊。
