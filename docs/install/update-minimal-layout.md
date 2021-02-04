@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27a9c0de35bb6f9944015391c5f933bef28f4b9d
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168745"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99533561"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>使用最小離線版面配置來更新 Visual Studio
 
@@ -56,7 +56,7 @@ ms.locfileid: "88168745"
 #### <a name="commands"></a>命令
 * **預覽**：使用此命令可預覽要下載的套件數目，以及用來建立此配置的總空間。 
 * **產生**：使用此命令來產生更新 Visual Studio 的最基本版面配置。
-* **重新**產生：使用此命令可使用現有的基本版面配置回應檔來重新產生配置。 每個最基本的版面配置都會產生一個 `MinimalLayout.json` 回應檔案，其中包含原始的最基本版面配置輸入參數。 您可以使用 [ **重新** 產生] 命令和 `MinimalLayout.json` 回應檔來重新產生最基本的版面配置。 如果您想要根據先前最基本的版面配置回應檔，建立新 Visual Studio 更新的最基本配置，這會很有用。
+* **重新** 產生：使用此命令可使用現有的基本版面配置回應檔來重新產生配置。 每個最基本的版面配置都會產生一個 `MinimalLayout.json` 回應檔案，其中包含原始的最基本版面配置輸入參數。 您可以使用 [ **重新** 產生] 命令和 `MinimalLayout.json` 回應檔來重新產生最基本的版面配置。 如果您想要根據先前最基本的版面配置回應檔，建立新 Visual Studio 更新的最基本配置，這會很有用。
 
    此命令 `MinimalLayout.json` 需要已產生之配置的檔案路徑。 
 
@@ -67,7 +67,7 @@ ms.locfileid: "88168745"
 * **確認**：使用此命令來判斷版面配置資料夾是否已損毀。
 * **修正**：使用此命令來修正損毀的版面配置資料夾，包括從版面配置資料夾取代任何遺漏的封裝。
 
-#### <a name="options"></a>選項。 
+#### <a name="options"></a>選項 
 
 |選項。    |描述    |必要/選用 |範例 |
 |:----------|:-----------|:------------|:--------------|
@@ -91,6 +91,8 @@ ms.locfileid: "88168745"
 建立版面配置之前，您可以找出下載的總大小，以及使用 [ **預覽** ] 命令所包含的套件數目。 此命令會使用與 [ **產生** ] 命令相同的選項，並將詳細資料寫入主控台。
 
 讓我們逐步解說一些範例，說明如何預覽、產生和重新產生最基本的版面配置：
+
+::: moniker range="vs-2019"
 
 - 首先，我們將示範如何預覽16.4.0 版至僅16.4.4 版英文版的 Visual Studio Enterprise 版本版面配置。
 
@@ -124,9 +126,47 @@ ms.locfileid: "88168745"
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
     ```
 
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- 首先，我們將示範如何預覽15.0.0 版至僅15.9.31 英文版的 Visual Studio Enterprise 版本版面配置。
+
+    ```cmd
+    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+    ```
+
+- 以下說明如何使用一個工作負載來產生相同的版面配置。
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+    ```
+
+- 以下說明如何使用現有的回應檔重新產生最基本的離線配置。 
+
+    ```cmd
+    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+    ```
+
+使用 [ **產生** ] 命令的其他幾個範例：
+
+- 以下說明如何新增額外的工作負載，並只包含建議的封裝。 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    ```
+
+- 最後，以下是您在最基本的版面配置中包含多種語言的方式。 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+    ```
+
+::: moniker-end
+
 ### <a name="how-to-maintain-a-minimal-layout"></a>如何維持基本的版面配置
 
-在建立之後，請使用 [ **驗證** ] 和 [ **修正** ] 命令來維持最基本的版面配置。 **Verify**命令可判斷最基本配置中是否有任何損毀或遺漏的套件。 如果您在執行 [ **驗證** ] 命令之後遇到任何問題，請使用 [ **修正** ] 命令來更正遺失或損毀的封裝。
+在建立之後，請使用 [ **驗證** ] 和 [ **修正** ] 命令來維持最基本的版面配置。 **Verify** 命令可判斷最基本配置中是否有任何損毀或遺漏的套件。 如果您在執行 [ **驗證** ] 命令之後遇到任何問題，請使用 [ **修正** ] 命令來更正遺失或損毀的封裝。
 
 - 以下是如何驗證配置是否損毀或遺失套件： 
 
