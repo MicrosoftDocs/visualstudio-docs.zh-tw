@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 10/21/2020
+ms.date: 02/04/2021
 ms.topic: conceptual
 description: 雲端訂用帳戶帳單問題。
-ms.openlocfilehash: 0140a6250f2c04ad33fec962283e035393a03aae
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353417"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572872"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 雲端訂閱帳單常見問題集
 請務必[比較雲端訂閱權益和定價](https://visualstudio.microsoft.com/vs/pricing/)，利用雲端與標準 Visual Studio 訂閱之間的比較、訂閱者權益的詳細資料以及其他更多，了解每個 Visual Studio 訂用帳戶的權益。
@@ -29,6 +29,9 @@ ms.locfileid: "92353417"
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>問：我必須購買其他 Azure 服務嗎？
 答：完全不用。 如果您只想要透過 Azure 購買 Visual Studio 雲端訂閱，您可以就這麼做。
 
+### <a name="q-where-can-i-view-my-billing-and-usage-data"></a>問：我可以在哪裡查看帳單和使用量資料？
+答：取得有關 [查看發票和使用量](https://docs.microsoft.com/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date)的資訊。
+
 ## <a name="enterprise-agreement-ea-customers"></a>Enterprise 合約 (EA) 客戶
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>問：是否可以使用 Enterprise 合約購買 Visual Studio 雲端訂閱？
 答：可以。 針對您的 EA 所建立的 Azure 訂用帳戶，您必須是參與者或更高的角色。 請確定您是直接在 Visual Studio Marketplace 購買 Visual Studio 雲端訂閱。 您不可以使用訂單購買 Visual Studio 雲端訂閱？
@@ -44,13 +47,13 @@ ms.locfileid: "92353417"
 答：不行，預付金不適合購買 Visual Studio 雲端訂閱。 當您選擇用為您的 EA 建立的 Azure 訂用帳戶購買 Visual Studio 雲端訂閱時，費用會出現在您下一次的「超額」發票上。 通常是每月一次，但因部分 EA 客戶的歷程記錄規則，超額發票可能幾個月都不會發出。 請洽詢您的 EA 授權專家，您是否需要知道哪些額外購買數量 (即不適合使用 Azure 預付金購買的項目) 會觸發超額發票。
 
 ## <a name="how-charges-are-processed"></a>收費方式
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>問：雲端訂閱的**月租方案**如何收費？
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>問：雲端訂閱的 **月租方案** 如何收費？
 答：第一期帳單中，我們會依當月的剩餘天數按 比例分配數量。 例如，如果在 4 月 15 日購買了 10 個 Visual Studio Professional 雲端訂閱月租方案，我們會收取 5 個單位的費用，因為該月只剩 50% 的費用 (4 月有 30 天，還剩下 15 天)。
 自 5 月 1 日起至您取消前的每個月，會依完整的 10 個單位計費。
 
 稍後當您增加付費數量時，我們也會將增加的單位按比例分配至當月的剩餘天數。 因此，如果您在 5 月 10 日購買 1 個以上的 Visual Studio Professional 雲端訂閱月租方案，我們大約收取 0.677 個單位的費用 (5 月有 31 天，還有 21 天)。
 
-### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>問：雲端訂閱的**年度訂閱**如何收費？
+### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>問：雲端訂閱的 **年度訂閱** 如何收費？
 答：每單購買都是立即按購買的完整數量計價。 費用不會分散到一整年，也不會按比例分配。 如果您在一年的不同時間分次購買年度的雲端訂閱，您必須在不同的月份續約訂閱。 我們不會將客戶所有的年度雲端訂閱連在一起，雖然這在 Microsoft 大量授權合約購買中很常見。
 
 ### <a name="q-how-do-cancelations-work"></a>問：取消如何運作？
@@ -62,7 +65,7 @@ ms.locfileid: "92353417"
 至於年度雲端訂閱，取消要到原購買起算 12 個月後的該月一日才會生效，或自上次年度續約收費起算 12 個月後生效。 例如，如果您在 2018 年 1 月 3 日購買了 Visual Studio Professional 年度雲端訂用帳戶，當此訂用帳戶自動續訂一年時，就會一直保持有效到 2019 年 2 月 1 日。 如果您這個日期和 2020 年 2 月 1 日之間的任何時間取消訂閱，則此訂閱會在 2020 年 2 月 1 日到期。 取消方在年度雲端訂閱的訂閱年度中不會有任何退款。
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>問：Visual Studio 訂閱有哪些大量採購折扣？
-答：「每種類型」** 的訂用帳戶，自第 6 個開始，所有後續訂用帳戶都會獲得 5% 的折扣：
+答：「每種類型」的訂用帳戶，自第 6 個開始，所有後續訂用帳戶都會獲得 5% 的折扣：
 
 * Visual Studio Professional 每月
 * Visual Studio Professional 年度
@@ -96,13 +99,13 @@ ms.locfileid: "92353417"
 - [Visual Studio 訂用帳戶支援](https://visualstudio.microsoft.com/vs/support/)
 - [適合 CSP 購買的 Visual Studio 雲端訂閱](vscloud-csp.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 立即購買雲端訂閱
 - [每月 Visual Studio Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
 - [每月 Visual Studio Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)

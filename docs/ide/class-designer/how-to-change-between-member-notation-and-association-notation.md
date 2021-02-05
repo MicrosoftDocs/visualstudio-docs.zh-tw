@@ -15,19 +15,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f96fe04ee84be50bd241db6bf9f73280c40dec02
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 8b95325cd1819dc881ab516656dbf14a5001db88
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96933566"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572976"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>如何：在類別設計工具中變更為成員標記法或關聯標記法
 
 使用 [類別設計工具] 時，您可以在成員標記法與關聯標記法之間切換，以變更兩種類型在類別圖表中的關聯性代表方式。 將成員顯示為關聯線時，通常可提供類型關聯方式的實用視覺效果。
 
 > [!NOTE]
-> 您可以用成員屬性或欄位來代表關聯性。 若要將成員標記法變更為關聯標記法，某種類型必須具有其他類型的成員。 若要將關聯標記法變更為成員標記法，您必須使用關聯線來連接兩種類型。 如需詳細資訊，請參閱[如何：建立類型之間的關聯](how-to-create-associations-between-types.md)。 如果專案包含多個類別圖表，在您變更某個圖表的關聯性顯示方式時，這些變更只會對該圖表產生影響。 若要變更其他圖表的關聯性顯示方式，請開啟或顯示該圖表，並執行下列步驟。
+> 您可以用成員屬性或欄位來代表關聯性。 若要將成員標記法變更為關聯標記法，某種類型必須具有其他類型的成員。 若要將關聯標記法變更為成員標記法，您必須使用關聯線來連接兩種類型。 如需詳細資訊，請參閱 [如何：建立類型之間的關聯](how-to-create-associations-between-types.md)。 如果專案包含多個類別圖表，在您變更某個圖表的關聯性顯示方式時，這些變更只會對該圖表產生影響。 若要變更其他圖表的關聯性顯示方式，請開啟或顯示該圖表，並執行下列步驟。
 
 ## <a name="to-change-member-notation-to-association-notation"></a>若要將成員標記法變更為關聯標記法
 

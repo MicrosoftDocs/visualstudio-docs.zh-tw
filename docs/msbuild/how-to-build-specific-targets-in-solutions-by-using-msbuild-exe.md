@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a8d774ace7744c90d0cf092faa2786110ed7309
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 94fcd9e1ed16b86caf65b9c7fab44ba4f93b7a7a
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436430"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572898"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>如何：使用 MSBuild.exe 在方案中建置特定目標
 
@@ -33,7 +33,7 @@ ms.locfileid: "92436430"
 
 ## <a name="example"></a>範例
 
- 下列範例會執行 `NotInSlnFolder` 專案的 `Rebuild` 目標，然後執行 `InSolutionFolder` 專案的 `Clean` 目標，其位於 NewFolder** 方案資料夾中。
+ 下列範例會執行 `NotInSlnFolder` 專案的 `Rebuild` 目標，然後執行 `InSolutionFolder` 專案的 `Clean` 目標，其位於 NewFolder 方案資料夾中。
 
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
@@ -41,13 +41,13 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 ## <a name="troubleshooting"></a>疑難排解
 
-如果您想要檢視可用的選項，可以使用 MSBuild 所提供的偵錯選項。 設定環境變數 `MSBUILDEMITSOLUTION=1` 及建置解決方案。 這會產生一個名為* \<SolutionName> .sln. Metaproj*的 msbuild 檔案，它會在組建階段顯示 msbuild 的解決方案內部觀點。 您可以檢查此檢視來判斷哪些目標可用來建置。
+如果您想要檢視可用的選項，可以使用 MSBuild 所提供的偵錯選項。 設定環境變數 `MSBUILDEMITSOLUTION=1` 及建置解決方案。 這會產生一個名為 *\<SolutionName> .sln. Metaproj* 的 msbuild 檔案，它會在組建階段顯示 msbuild 的解決方案內部觀點。 您可以檢查此檢視來判斷哪些目標可用來建置。
 
-除非您需要這個內部檢視，否則請勿以此環境變數設定來建置。 此設定可能會在解決方案中建置專案時造成問題。
+除非您需要這個內部檢視，否則請勿以此環境變數設定來建置。 此設定可能會在解決方案中建置專案時造成問題。 請改為查看 [二進位檔記錄](obtaining-build-logs-with-msbuild.md#save-a-binary-log) 檔。
 
 ## <a name="see-also"></a>另請參閱
 
 - [命令列參考](../msbuild/msbuild-command-line-reference.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
-- [Msbuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

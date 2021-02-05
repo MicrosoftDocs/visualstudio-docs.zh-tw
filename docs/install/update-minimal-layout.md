@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 27a9c0de35bb6f9944015391c5f933bef28f4b9d
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: bd2e8c94bbfc24b731a40b2d4d4c298a528c622d
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99533561"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572950"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>使用最小離線版面配置來更新 Visual Studio
 
@@ -67,6 +67,8 @@ ms.locfileid: "99533561"
 * **確認**：使用此命令來判斷版面配置資料夾是否已損毀。
 * **修正**：使用此命令來修正損毀的版面配置資料夾，包括從版面配置資料夾取代任何遺漏的封裝。
 
+::: moniker range="vs-2019"
+
 #### <a name="options"></a>選項 
 
 |選項。    |描述    |必要/選用 |範例 |
@@ -80,6 +82,26 @@ ms.locfileid: "99533561"
 |--新增 &lt; 一或多個工作負載或元件識別碼&gt;    |指定要新增的一或多個工作負載或元件識別碼。 您可以使用--includeRecommended 和/或，全域新增其他元件 <br> –-includeOptional。 您可以指定多個工作負載或元件識別碼，並以空格分隔。    |選擇性    |--新增 VisualStudio ManagedDesktop VisualStudio. NetWeb 元件。元件。 VisualStudio |
 |--includeRecommended    |包含所安裝任何工作負載的建議元件，但不包含選擇性元件。    |選擇性    |針對特定工作負載： <br> --新增 VisualStudio 工作負載。 ManagedDesktop; includeRecommended <br><br> 適用于所有工作負載：--includeRecommended |
 |--includeOptional |針對任何已安裝的工作負載（包括建議的元件），包含選用的元件。    |選擇性    |針對特定工作負載： <br>--新增 VisualStudio 工作負載。 ManagedDesktop; includeOptional <br><br> 適用于所有工作負載：--includeOptional |
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+#### <a name="options"></a>選項 
+
+|選項。    |描述    |必要/選用 |範例 |
+|:----------|:-----------|:------------|:--------------|
+|--targetLocation &lt; dir&gt; |指定要在其中建立基本離線版面配置的目錄。       |必要        |--targetLocation c:\VSLayout\ |
+|--baseVersion &lt; 版本&gt;|從這個版本開始，將會產生最基本的離線版面配置。   |必要|--baseVersion 15.0.0 版 |
+|--targetVersion &lt; 版本&gt;|將會產生最基本的離線配置，包括此版本。|必要|--targetVersion 15.9.31|
+|--語言    |指定要包含在最基本離線配置中的語言。 您可以指定多個值，並以空格分隔。    |必要    |--語言 en-us fr-fr |
+|--productId &lt; 識別碼&gt;    |將從中產生最基本離線配置之產品的識別碼。 <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|必要|--productId VisualStudio Enterprise |
+|--filePath    |從已建立的版面配置，檔案 MinimalLayout.js檔案路徑。 此選項只適用于重新產生命令。     |重新產生命令的必要參數    |--filePath C:\VSLayout\minimalLayout.js開啟 <br><br> **請注意，[重新產生] 命令只會採用--filePath 作為選項。** |
+|--新增 &lt; 一或多個工作負載或元件識別碼&gt;    |指定要新增的一或多個工作負載或元件識別碼。 您可以使用--includeRecommended 和/或，全域新增其他元件 <br> –-includeOptional。 您可以指定多個工作負載或元件識別碼，並以空格分隔。    |選擇性    |--新增 VisualStudio ManagedDesktop VisualStudio. NetWeb 元件。元件。 VisualStudio |
+|--includeRecommended    |包含所安裝任何工作負載的建議元件，但不包含選擇性元件。    |選擇性    |針對特定工作負載： <br> --新增 VisualStudio 工作負載。 ManagedDesktop; includeRecommended <br><br> 適用于所有工作負載：--includeRecommended |
+|--includeOptional |針對任何已安裝的工作負載（包括建議的元件），包含選用的元件。    |選擇性    |針對特定工作負載： <br>--新增 VisualStudio 工作負載。 ManagedDesktop; includeOptional <br><br> 適用于所有工作負載：--includeOptional |
+
+::: moniker-end
 
 ### <a name="generating-a-minimal-layout"></a>產生基本版面配置
 

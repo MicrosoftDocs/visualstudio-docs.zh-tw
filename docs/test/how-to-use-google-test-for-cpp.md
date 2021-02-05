@@ -8,16 +8,16 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bf4db1c01fc79d32f7e498c265b74dec34f67e48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cf29d16432b677c6e83ba4cbaedb39f0a8d1ed2
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287242"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572989"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 Google Test
 
-在 Visual Studio 2017 及更新版本中，Google Test 已作為 [使用 C++ 進行桌面開發]**** 工作負載的預設元件，與 Visual Studio IDE 整合。 若要確認已安裝在您的電腦上，請開啟 Visual Studio 安裝程式，並在工作負載元件清單下尋找 Google Test：
+在 Visual Studio 2017 及更新版本中，Google Test 已作為 [使用 C++ 進行桌面開發] 工作負載的預設元件，與 Visual Studio IDE 整合。 若要確認已安裝在您的電腦上，請開啟 Visual Studio 安裝程式，並在工作負載元件清單下尋找 Google Test：
 
 ![安裝 Google Test](media/cpp-google-component.png)
 
@@ -25,9 +25,9 @@ ms.locfileid: "85287242"
 
 ## <a name="add-a-google-test-project-in-visual-studio-2019"></a>在 Visual Studio 2019 中新增 Google Test 專案
 
-1. 在 [方案總管]**** 中，以滑鼠右鍵按一下解決方案節點，然後選擇 [新增]** [新增專案]** > ****。
-2. 將 [語言]**** 設為 [C++]****，然後在搜尋方塊中鍵入 **test**。 從結果清單中，選擇 **Google Test 專案**。
-3. 提供測試專案名稱，然後按一下 [確定]****。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下解決方案節點，然後選擇 [新增]**[新增專案]** > 。
+2. 將 [語言] 設為 [C++]，然後在搜尋方塊中鍵入 **test**。 從結果清單中，選擇 **Google Test 專案**。
+3. 提供測試專案名稱，然後按一下 [確定]。
 
 ![新增 Google Test 專案](media/vs-2019/cpp-gtest-new-project-vs2019.png)
 
@@ -37,9 +37,9 @@ ms.locfileid: "85287242"
 
 ## <a name="add-a-google-test-project-in-visual-studio-2017"></a>在 Visual Studio 2017 中新增 Google Test 專案
 
-1. 在 [方案總管]**** 中，以滑鼠右鍵按一下解決方案節點，然後選擇 [新增]** [新增專案]** > ****。
-2. 在左窗格中選擇 [Visual C++]**[測試]** > ****，然後在中間窗格中選擇 [Google Test 專案]****。
-3. 提供測試專案名稱，然後按一下 [確定]****。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下解決方案節點，然後選擇 [新增]**[新增專案]** > 。
+2. 在左窗格中選擇 [Visual C++]**[測試]** > ，然後在中間窗格中選擇 [Google Test 專案]。
+3. 提供測試專案名稱，然後按一下 [確定]。
 
 ![新增 Google Test 專案](media/cpp-gtest-new-project.png)
 
@@ -47,13 +47,13 @@ ms.locfileid: "85287242"
 
 ## <a name="configure-the-test-project"></a>設定測試專案
 
-在出現的 [測試專案組態]**** 對話方塊中，您可以選擇要測試的專案。 當您選擇專案時，Visual Studio 會加入所選專案的參考。 如果您未選擇任何專案，則需要以手動方式加入要測試之專案的參考。 在 Google Test 二進位檔的靜態和動態連結之間選擇時，所有 C++ 程式的考量都相同。 如需詳細資訊，請參閱 [Visual C++ 中的 DLL](/cpp/build/dlls-in-visual-cpp)。
+在出現的 [測試專案組態] 對話方塊中，您可以選擇要測試的專案。 當您選擇專案時，Visual Studio 會加入所選專案的參考。 如果您未選擇任何專案，則需要以手動方式加入要測試之專案的參考。 在 Google Test 二進位檔的靜態和動態連結之間選擇時，所有 C++ 程式的考量都相同。 如需詳細資訊，請參閱 [Visual C++ 中的 DLL](/cpp/build/dlls-in-visual-cpp)。
 
 ![設定 Google Test 專案](media/cpp-gtest-config.png)
 
 ## <a name="set-additional-options"></a>設定其他選項
 
-從主功能表中，選擇 [**工具**  >  **選項**]  >  **適用於 Google Test 的測試配接器**以設定其他選項。 如需這些設定的詳細資訊，請參閱 Google Test 文件。
+從主功能表中，選擇 [**工具**  >  **選項**]  >  **適用於 Google Test 的測試配接器** 以設定其他選項。 如需這些設定的詳細資訊，請參閱 Google Test 文件。
 
 ![Google Test 專案設定](media/cpp-gtest-settings.png)
 
@@ -65,7 +65,7 @@ ms.locfileid: "85287242"
 
 ## <a name="write-and-run-tests"></a>撰寫及執行測試
 
-您現在準備好撰寫及執行 Google Test。 如需測試宏的相關資訊，請參閱 [Google Test 入門](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) 。 如需使用**測試總管**探索、執行及分組測試的資訊，請參閱[使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)。
+您現在準備好撰寫及執行 Google Test。 如需測試宏的相關資訊，請參閱 [Google Test 入門](https://github.com/google/googletest/blob/master/docs/primer.md) 。 如需使用 **測試總管** 探索、執行及分組測試的資訊，請參閱 [使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)。
 
 ## <a name="see-also"></a>另請參閱
 
