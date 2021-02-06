@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 0e136339ae5f34a7e65c19cf14c9ff840c620b25
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761429"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628054"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio 偵錯工具初探
 
@@ -93,7 +93,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 ## <a name="run-to-cursor"></a>執行至游標處
 
-當您在偵錯工具) 中編輯程式碼 (而不是暫停時，請以滑鼠右鍵按一下應用程式中的程式程式碼，然後選擇 [ **執行至游標處**]。 此命令會開始偵錯，並在目前這一行程式碼上設定暫時中斷點。
+當您在偵錯工具) 中編輯程式碼 (而不是暫停時，請以滑鼠右鍵按一下應用程式中的程式程式碼，然後選擇 [**執行至游標處**] (或按 **Ctrl** **鍵) 。** 此命令會開始偵錯，並在目前這一行程式碼上設定暫時中斷點。
 
 ![執行至游標處](../debugger/media/dbg-tour-run-to-cursor.png "執行至游標處")
 
@@ -108,7 +108,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 ## <a name="restart-your-app-quickly"></a>快速重新啟動您的應用程式
 
-按一下偵錯工具列中的 [ **重新** 啟動 ![重新開機應用程式](../debugger/media/dbg-tour-restart.png "重新開機應用程式") ] 按鈕， (**Ctrl + Shift + F5**) 。
+按一下 [偵錯工具] 工具列中的 [ **重新** 啟動 ![重新開機應用程式](../debugger/media/dbg-tour-restart.png "重新開機應用程式") ] 按鈕 (或按 **Ctrl + Shift + F5**) 。
 
 相對於停止應用程式並重新啟動偵錯工具，按下 [重新啟動] 可讓您節省時間。 偵錯工具會在執行程式碼叫用的第一個中斷點處暫停。
 
@@ -232,7 +232,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 如果您的應用程式執行速度太慢或使用過多的記憶體，您可能需要提早流量分析工具測試您的應用程式。 如需分析工具的詳細資訊（例如 CPU 使用量工具和記憶體分析器），請參閱程式碼 [剖析工具的第一看](../profiling/profiling-feature-tour.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在本教學課程中，您已快速瀏覽過許多偵錯工具功能。 建議您深入了解這些功能，例如中斷點。
 

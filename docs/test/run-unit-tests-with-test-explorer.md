@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 52a910bddd2f75c631f130dddee22f8b2e05510b
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150505"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628041"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -34,7 +34,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ## <a name="run-tests-in-test-explorer"></a>在 [測試總管] 中執行測試
 
-在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果看不到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]，並選擇 [Windows]，然後選擇 [測試總管]。
+在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果看不到 Test Explorer，請選擇 [Visual Studio] 功能表上的 [**測試**]，選擇 [**視窗**]，然後選擇 [ **test Explorer** ] (或按 **Ctrl**  +  **E**， **T**) 。
 
 ::: moniker range="vs-2017"
 ![單元測試總管](../test/media/ute_failedpassednotrunsummary.png)
@@ -64,11 +64,11 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 ::: moniker range="vs-2017"
 您可以執行方案中的所有測試、群組中的所有測試，或是您選取的一組測試。 執行下列其中一個動作：
 
-- 若要執行方案中的所有測試，請選擇 [全部執行] 。
+- 若要執行方案中的所有測試，請選擇 [ **執行所有** (]，或按 **Ctrl** + **R**、 **V**) 。
 
 - 若要執行預設群組中的所有測試，請選擇 [ **執行** ]，然後選擇功能表上的群組。
 
-- 選取您要執行的個別測試、開啟所選取之測試的右鍵功能表，然後選擇 [執行選取的測試]。
+- 選取您要執行的個別測試，開啟所選測試的右鍵功能表，然後選擇 [ **執行選取的測試** ] (或按下 **Ctrl** + **R**、 **T**) 。
 
 - 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![Visual Studio Test Explorer 工具列上 [平行測試執行] 切換按鈕的螢幕擷取畫面。 選取此按鈕時，將會以平行方式執行測試。](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
@@ -77,11 +77,11 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 ::: moniker range=">=vs-2019"
 您可以執行方案中的所有測試、群組中的所有測試，或是您選取的一組測試。 執行下列其中一個動作：
 
-- 若要執行方案中的所有測試，請選擇 [全部執行]  圖示。
+- 若要執行方案中的所有測試，請選擇 [ **全部執行** ] 圖示 (或按 **Ctrl** + **R**、 **V**) 。
 
 - 若要執行預設群組中的所有測試，請選擇 [執行] 圖示，然後在功能表上選擇該群組。
 
-- 選取您要執行的個別測試、開啟所選取之測試的右鍵功能表，然後選擇 [執行選取的測試]。
+- 選取您要執行的個別測試，開啟所選測試的右鍵功能表，然後選擇 [ **執行選取的測試** ] (或按下 **Ctrl** + **R**、 **T**) 。
 
 - 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列的設定功能表開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 ::: moniker-end
@@ -130,7 +130,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="view-the-source-code-of-a-test-method"></a>檢視測試方法的原始程式碼
 
-若要在 Visual Studio 編輯器中顯示測試方法的原始程式碼，請選取測試，然後選擇右鍵功能表上的 [ **開啟測試** ] (鍵盤： **F12**) 。
+若要在 Visual Studio 編輯器中顯示測試方法的原始程式碼，請選取測試，然後選擇右鍵功能表上的 [ **開啟測試** ] (或按 **F12**) 。
 
 ## <a name="group-and-filter-the-test-list"></a>群組和篩選測試清單
 
@@ -182,7 +182,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：
 
-|特徵|描述|
+|特徵|Description|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|擁有者分類是由單元測試架構所定義，會要求您提供擁有者的字串值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|優先權分類是由單元測試架構所定義，會要求您提供優先權的整數值。|

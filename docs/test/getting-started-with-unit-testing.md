@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31314a669815d38ed408a28e033e4943df0f75d3
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: 328f7540846f923fe186a76c4dcc03347f9c3214
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756652"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628015"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -180,13 +180,13 @@ ms.locfileid: "97756652"
 1. 開啟 [ [測試瀏覽器](../test/run-unit-tests-with-test-explorer.md)]。
 
    ::: moniker range=">=vs-2019"
-   若要開啟 [測試流覽器]，請 > 從頂端功能表列中選擇 [測試 **測試瀏覽器**]。
+   若要開啟 test explorer， 請 > 從頂端功能表列中選擇 [test **test explorer** ] (或按下 **Ctrl** + **E**， **T**) 。
    ::: moniker-end
    ::: moniker range="vs-2017"
    若要開啟 test explorer， 請 >  > 從頂端功能表列中選擇 [測試 Windows **test explorer** ]。
    ::: moniker-end
 
-1. 按一下 [全部執行] 執行您的單元測試。
+1. 按一下 [**執行所有** (]，或按 **Ctrl**  +  **R**、 **V**) 來執行單元測試。
 
    ![在測試總管中執行單元測試](media/vs-2019/test-explorer-run-all.png)
 
@@ -274,9 +274,9 @@ ms.locfileid: "97756652"
 
    ![將程式碼新增至您的單元測試程式碼檔案](media/vs-2019/unit-test-method.png)
 
-6. 從 [測試總管] 執行測試，或在測試程式碼上按一下滑鼠右鍵，然後選擇 [執行測試]。
+6. 從 **test Explorer** 執行測試，或以滑鼠右鍵按一下測試程式碼，然後選擇 [**執行測試 (s])** (或 **Ctrl**  +  **R**、 **T**) 。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [單元測試基本概念](../test/unit-test-basics.md)

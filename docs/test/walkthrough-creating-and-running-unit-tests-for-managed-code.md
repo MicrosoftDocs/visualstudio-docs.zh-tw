@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f734435f93c60ab0b66bd258417d90541575e398
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598545"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627976"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：針對受控碼建立和執行單元測試
 
@@ -138,7 +138,7 @@ ms.locfileid: "95598545"
 
 6. 按一下滑鼠右鍵，選擇 [方案總管] 中的 [重新命名]，將檔案重新命名為 *BankAccount.cs*。
 
-7. 在 [建置] 功能表上，按一下 [建置方案]。
+7. 在 [**組建**] 功能表上，按一下 [**建立方案** (]，或按 **Ctrl**  +  **SHIFT**  +  **B**) 。
 
 您現在已擁有具備測試方法的專案。 本文中的測試著重於 `Debit` 方法。 從帳戶中提領貨幣時，會呼叫 `Debit` 方法。
 
@@ -167,7 +167,7 @@ ms.locfileid: "95598545"
 
 3. 將專案命名為 **BankTests**。
 
-4. 按一下 [建立]。
+4. 按一下頁面底部的 [新增]  。
 
    **BankTests** 專案就會新增至 **Bank** 方案中。
 
@@ -187,7 +187,7 @@ ms.locfileid: "95598545"
 
 ### <a name="rename-a-file-and-class"></a>重新命名檔案和類別
 
-1. 若要重新命名檔案，請在 [方案總管] 中選取 BankTests 專案中的 *UnitTest1.cs* 檔案。 從右鍵功能表中，選擇 [重新命名]，然後將檔案重新命名為 *BankAccountTests.cs*。
+1. 若要重新命名檔案，請在 [方案總管] 中選取 BankTests 專案中的 *UnitTest1.cs* 檔案。 從滑鼠右鍵功能表中，選擇 [ **重新命名** (或按 **F2**) ，然後將檔案重新命名為 *BankAccountTests.cs*。
 
 ::: moniker range="vs-2017"
 
@@ -197,7 +197,7 @@ ms.locfileid: "95598545"
 
 ::: moniker range=">=vs-2019"
 
-2. 若要重新命名類別，請將游標放在程式碼編輯器中的 `UnitTest1`、按一下滑鼠右鍵，然後選擇 [重新命名]。 鍵入 **BankAccountTests**，然後按下 **Enter**。
+2. 若要重新命名類別，請將游標放在程式 `UnitTest1` 代碼編輯器中，按一下滑鼠右鍵，然後選擇 [ **重新命名** (或按 **F2**) 。 鍵入 **BankAccountTests**，然後按下 **Enter**。
 
 ::: moniker-end
 
@@ -289,11 +289,11 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 ## <a name="build-and-run-the-test"></a>建置並執行測試
 
-1. 在 [ **建置** ] 功能表上，選擇 [ **建置方案**]。
+1. 在 [**組建**] 功能表上，選擇 [**組建方案** (]，或按 **Ctrl**  +  **SHIFT**  +  **B**) 。
 
-2. 如果 [測試總管] 未開啟，請從頂端功能表列選擇 [測試] > [Windows] > [測試總管] 來開啟。
+2. 如果 [ **test explorer** ] 未開啟，請  >  從頂端功能表列中選擇 [測試 **Windows**  >  **test explorer** ] 來開啟它 (或按下 **Ctrl**  +  **E**、 **T**) 。
 
-3. 選擇 [ **全部執行** ] 以執行測試。
+3. 選擇 [**全部執行**] 以執行測試 (或按 **Ctrl**  +  **R**、 **V**) 。
 
    執行測試時，[測試總管] 視窗頂端的狀態列會顯示動畫效果。 在測試回合結束時，如果所有的測試方法都成功，狀態列會變成綠色，如果有任何測試失敗則變成紅色。
 
@@ -323,7 +323,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>重新執行測試
 
-在 [ **測試瀏覽器**] 中，選擇 [ **全部執行** ] 以重新執行測試。 紅色/綠色狀態列會變成綠色，表示測試已通過。
+在 [**測試瀏覽器**] 中，選擇 [**全部執行**] 以重新執行測試 (或按 **Ctrl**  +  **R**、 **V**) 。 紅色/綠色狀態列會變成綠色，表示測試已通過。
 
 ![Visual Studio 2019 的 [測試總管] 顯示已通過測試](media/test-explorer-banktests-passed.png)
 

@@ -29,16 +29,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
-ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
+ms.openlocfilehash: 3250eff2b5691ab344e2fedde80054415ec8ffcd
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031038"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627963"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具附加至執行中處理序
 
-您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 在程式執行之後，選取 [ **Debug**  >  **附加至進程**] 或在 Visual Studio 中按下 **Ctrl** + **Alt** + **P** ，然後使用 [**附加至進程**] 對話方塊，將偵錯工具附加至進程。
+您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 在程式執行之後，選取 [ **Debug**  >  **附加至進程**] 或在 Visual Studio 中按下 **Ctrl** + **Alt** + **p** ，然後使用 [**附加至進程**] 對話方塊，將偵錯工具附加至進程。
 
 您可以使用 [ **附加至進程** ]，在本機或遠端電腦上偵測執行中的應用程式、同時調試多個進程、將未在 Visual Studio 中建立的應用程式進行偵錯工具，或將您未從 Visual Studio 啟動的任何應用程式進行偵錯工具。 例如，如果您在沒有偵錯工具的情況下執行應用程式，並遇到例外狀況，您可以將偵錯工具附加至執行應用程式的進程，並開始進行偵錯工具。
 
@@ -191,7 +191,7 @@ ms.locfileid: "98031038"
 
 若要快速選取要附加的執行中進程，請在 [Visual Studio 中輸入 **Ctrl** + **Alt** + **P**，然後輸入進程名稱的第一個字母。
 
-|案例|Debug 方法|程序名稱|附注和連結|
+|狀況|Debug 方法|程序名稱|附注和連結|
 |-|-|-|-|
 |IIS 伺服器上的遠端偵錯程式 ASP.NET 4 或4。5|使用遠端工具並 **附加至進程**|*w3wp.exe*|請參閱遠端 [IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |IIS 伺服器上的遠端 debug ASP.NET Core|使用遠端工具並 **附加至進程**|*w3wp.exe* 或 *dotnet.exe*|從 .NET Core 3 開始， *w3wp.exe* 進程會用於預設的 [應用程式內裝載模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)。 如需應用程式部署，請參閱 [發行至 IIS](/aspnet/core/host-and-deploy/iis/)。 如需詳細資訊，請參閱 [遠端 IIS 電腦上的遠端偵錯程式 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|

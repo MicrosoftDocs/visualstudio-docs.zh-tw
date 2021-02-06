@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 5efed99b9934ed91b2194b5a38c99134d6d4b5e5
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833308"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628028"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -236,7 +236,7 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>在 [測試總管] 中執行測試
 
-在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果看不到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]，並選擇 [Windows]，然後選擇 [測試總管]。
+在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果看不到 **Test Explorer** ，請選擇 [Visual Studio] 功能表上的 [**測試**]，選擇 [**視窗**]，然後選擇 [ **test Explorer** ] (或按 **Ctrl**  +  **E**， **T**) 。
 
 ::: moniker range="vs-2017"
 ![單元測試總管](../test/media/ute_failedpassednotrunsummary.png)
@@ -260,7 +260,7 @@ public void My_Test ()
 ![從 [測試總管] 的工具列執行測試](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 選取測試來在測試詳細資料窗格中檢視該測試的詳細資料。 從滑鼠右鍵功能表中選擇 [ **開啟測試** ] (鍵盤： **F12**) 以顯示所選測試的原始程式碼。
+您可以選擇 **[全部執行**] 以執行所有測試 (或按 **ctrl**  +  **r**、 **V**) ，或選擇 [**執行**] 以選擇要執行的測試子集 (**Ctrl**  +  **R**、 **T**) 。 選取測試來在測試詳細資料窗格中檢視該測試的詳細資料。 從滑鼠右鍵功能表中選擇 [ **開啟測試** ] (鍵盤： **F12**) 以顯示所選測試的原始程式碼。
 
 ::: moniker range="vs-2017"
 
