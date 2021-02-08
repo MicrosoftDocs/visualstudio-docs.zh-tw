@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddce454e6634d8cc177019e9d30b0ffcc7e7f1cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf9cd3cb82e2b14811a8ec52a651248e2990ae27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724481"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840362"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 這個介面會提供埠給會話 debug manager (SDM) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplier2 : IUnknown
@@ -73,7 +73,7 @@ Debug engine 通常不會與埠供應商互動。
 ## <a name="remarks"></a>備註
 埠供應商可以依名稱和識別碼來識別本身、新增和移除埠，以及列舉埠供應商所提供的所有埠。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

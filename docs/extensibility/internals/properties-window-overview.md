@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 712c3c5b5c0b94932abba602a841977e0601d3b3
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6a33d393cfd904bdae890f4ead9a4c25a6451460
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837290"
 ---
 # <a name="properties-window-overview"></a>屬性視窗概觀
 [ **屬性** ] 視窗是用來顯示在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 所提供的兩個主要 windows 類型中所選取物件的屬性。 這兩種類型的 windows 為：
@@ -50,6 +50,6 @@ ms.locfileid: "97875891"
 
  如需有關的詳細資訊 `IDispatch` ，請參閱 MSDN library。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [擴充屬性](../../extensibility/internals/extending-properties.md)
 - [Properties Window Fields and Interfaces](../../extensibility/internals/properties-window-fields-and-interfaces.md)

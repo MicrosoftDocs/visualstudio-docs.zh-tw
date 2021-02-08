@@ -5,18 +5,18 @@ ms.date: 12/06/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 3c756f3d9a89294ecce054650037be3f7b26c291
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40411f47e7deda48b04ac4efb9bb9bc18688989a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540929"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839106"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>為 IIS 設定 Python Web 應用程式
 
@@ -86,7 +86,7 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
     </system.webServer>
     ```
 
-1. 在 `<appSettings>` *web.config*的區段內，新增的索引鍵 `WSGI_HANDLER` 、 `WSGI_LOG` (選擇性的) 以及 `PYTHONPATH` ：
+1. 在 `<appSettings>` *web.config* 的區段內，新增的索引鍵 `WSGI_HANDLER` 、 `WSGI_LOG` (選擇性的) 以及 `PYTHONPATH` ：
 
     ```xml
     <appSettings>
@@ -145,4 +145,4 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
 
 ## <a name="deploy-to-iis-or-a-windows-vm"></a>部署至 IIS 或 Windows VM
 
-如果在專案中使用正確的 *web.config* 檔案，您就可以在 [方案總管]**** 中，使用專案操作功能表上的 [發佈]**** 命令，然後選取選項 **IIS、FTP 等**，發佈至執行 IIS 的電腦。 在此案例中，Visual Studio 只會將專案檔案複製到伺服器，您要負責所有伺服器端設定。
+如果在專案中使用正確的 *web.config* 檔案，您就可以在 [方案總管]中，使用專案操作功能表上的 [發佈] 命令，然後選取選項 **IIS、FTP 等**，發佈至執行 IIS 的電腦。 在此案例中，Visual Studio 只會將專案檔案複製到伺服器，您要負責所有伺服器端設定。

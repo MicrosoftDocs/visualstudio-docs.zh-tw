@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ec349e38acbdb0271ecfb0c081b4f1aadadcd9
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 5226f9a3464786f85ad9d5348226e82e070cf57e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839582"
 ---
 # <a name="legacy-language-service-overview"></a>舊版語言服務概觀
 語言服務提供編輯器支援，可讓您執行特定 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 功能。 受管理的封裝架構 (MPF) 語言服務類別可提供對常用功能的完整支援，以及其他功能的部分支援。
@@ -91,6 +91,6 @@ ms.locfileid: "98204939"
 
 - [在舊版語言服務中驗證中斷點](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [實作舊版語言服務](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [舊版語言服務的擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)

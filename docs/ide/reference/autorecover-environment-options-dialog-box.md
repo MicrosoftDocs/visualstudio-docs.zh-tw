@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b578e914c6fa099528008090646372c7d9ef26b1
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e9a90198ce4cf3dc54eedbf80bbf4ffbad634cbc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871349"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836484"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>選項對話方塊、環境、自動回復
 
@@ -38,10 +38,10 @@ ms.locfileid: "95871349"
 
 ::: moniker range="vs-2019"
 
-使用此選項，可自訂在編輯器中自動儲存檔案的頻率。 針對先前儲存的檔案，Visual Studio 2019 16.2 版和更新版本會在 **_%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [專案名稱]_* _ 中儲存檔案的複本。 如果檔案是新檔案，但尚未儲存，Visual Studio 使用隨機產生的檔案名來 autosaves 它。
+使用此選項，可自訂在編輯器中自動儲存檔案的頻率。 針對先前儲存的檔案，Visual Studio 2019 16.2 版和更新版本會在 ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [專案名稱]*** 中儲存檔案的複本。 如果檔案是新檔案，但尚未儲存，Visual Studio 使用隨機產生的檔案名來 autosaves 它。
 
 > [!NOTE]
-> 如果您使用 Visual Studio 2019 16.1 版或更早版本，檔案位置為 _% USERPROFILE% \ Documents \ Visual Studio [version] \Backup Files \\ [專案名稱] *。 如需詳細資訊，請參閱 [Visual Studio 2019 版本資訊歷程記錄](/visualstudio/releases/2019/release-notes-history/) 頁面。
+> 如果您使用 Visual Studio 2019 16.1 版或更早版本，檔案位置是 *%USERPROFILE%\Documents\Visual Studio [version] \Backup Files \\ [專案名稱]*。 如需詳細資訊，請參閱 [Visual Studio 2019 版本資訊歷程記錄](/visualstudio/releases/2019/release-notes-history/) 頁面。
 
 ::: moniker-end
 

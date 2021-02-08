@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Profiling Tools,.NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a9321ce83f65d5a7cac95d793d5f635651bef0e7
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 00a8b7c7e92153fcbc323349f30adc458cf973fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839279"
 ---
 # <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>收集 .NET Framework 記憶體配置和存留期資料
 
@@ -60,7 +60,7 @@ Visual Studio 分析工具支援 .NET Framework 記憶體配置和物件存留�
 
 下表中的工作說明當您收集 .NET 記憶體資料時，可以在 [效能工作階段屬性頁] 對話方塊中指定的選項。
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |在 [一般] 頁面上，指定產生的分析資料 (.vsp) 檔案的命名詳細資料。|- [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [如何：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)|
 |在 [啟動] 頁面上，如果您的程式碼方案中有多個 .exe 專案，請選擇要啟動的應用程式。|- [收集階層互動資料](../profiling/collecting-tier-interaction-data.md)|
@@ -73,7 +73,7 @@ Visual Studio 分析工具支援 .NET Framework 記憶體配置和物件存留�
 
 下表中的工作是 [屬性頁] 對話方塊中使用檢測方法進行分析的特定選項。
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |在 [二進位檔]  頁面上，請指定此模組已檢測複本的位置。 根據預設，會將原始二進位碼檔案移到備份資料夾中。|- [如何：重新放置檢測的二進位檔](../profiling/how-to-relocate-instrumented-binaries.md)|
 |在 [檢測]  頁面上，從程式碼剖析排除小型函式，以減少程式碼剖析額外負荷，而且排除在 ASP.NET 網頁的設定檔 JavaScript 程式碼，並指定要在檢測程序之前和之後於命令提示字元執行的命令。|- [如何：從檢測排除或包含精簡函式](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [如何：指定檢測前置和檢測後續命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|

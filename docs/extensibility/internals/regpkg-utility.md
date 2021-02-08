@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad66f963250dfc272506096f8932442a35d11dc7
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 2f0ddf9c707de0b30b18761ba5af1ef42e198231
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837225"
 ---
 # <a name="regpkg-utility"></a>RegPkg 公用程式
 > [!NOTE]
@@ -56,6 +56,6 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
 
  使用/regfile 或/vrgfile 或/rgsfile 或/wixfile。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSPackages](../../extensibility/internals/vspackages.md)
 - [針對 RegPkg 套件註冊進行疑難排解](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)

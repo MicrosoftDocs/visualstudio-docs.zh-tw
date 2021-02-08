@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da8eaa4405a83ff349fd3d7486909a9281962126
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: c8bc59fd1d47a04b2f4c6ec2be9b9adb035f11e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383257"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837810"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 應用程式中存取本機和遠端資料
 大部分應用程式都會取用或產生資料。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供您許多選項，以進行本機和遠端的資料讀取及寫入。
@@ -39,7 +39,7 @@ ms.locfileid: "94383257"
 ### <a name="clickonce-data-directory"></a>ClickOnce 資料目錄
  在本機電腦安裝的每個 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，都有資料目錄儲存在使用者的 [Documents and Settings] 資料夾中。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式所含並標記為「資料」檔案的任何檔案，都會在安裝應用程式時複製到這個目錄。 資料檔案可以是任何檔案類型，最常使用的是文字、XML 和資料庫檔案 (例如 Microsoft Access.mdb 檔案)。
 
- 資料目錄的用途是要保存應用程式 Managed 資料，也就是應用程式所明確儲存和維護的資料。 應用程式資訊清單中所有不是標記為「資料」的靜態、非相依檔案都是位於應用程式目錄中， 這個目錄是應用程式可執行檔 ( *.exe* ) 以及組件所在的位置。
+ 資料目錄的用途是要保存應用程式 Managed 資料，也就是應用程式所明確儲存和維護的資料。 應用程式資訊清單中所有不是標記為「資料」的靜態、非相依檔案都是位於應用程式目錄中， 這個目錄是應用程式可執行檔 (*.exe*) 以及組件所在的位置。
 
 > [!NOTE]
 > 在解除安裝 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，也會移除其資料目錄。 請絕對不要使用資料目錄來儲存由終端使用者所管理的資料 (例如文件)。
@@ -62,7 +62,7 @@ ms.locfileid: "94383257"
 
  您也可以使用 <xref:System.Windows.Forms.Application> 類別上的相關變數 (例如 <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>)，來取得資料目錄路徑。
 
- 要管理其他檔案類型可能需要其他權限。 例如，如果您想要使用 Access 資料庫 ( *.mdb* ) 檔案，則您的應用程式必須判斷提示完全信任，才能使用相關的 \<xref:System.Data> 類別。
+ 要管理其他檔案類型可能需要其他權限。 例如，如果您想要使用 Access 資料庫 (*.mdb*) 檔案，則您的應用程式必須判斷提示完全信任，才能使用相關的 \<xref:System.Data> 類別。
 
 #### <a name="data-directory-and-application-versions"></a>資料目錄和應用程式版本
  應用程式的每個版本都有自己的資料目錄，並與其他版本隔離。 不論在部署中是否包含任何資料檔，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 都會建立此目錄，以便讓應用程式在執行階段有位置建立新的資料檔。 在安裝應用程式的新版本時， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 將會從上一版的資料目錄中，將所有的現有資料檔都複製到新版的資料目錄。不論這些資料包含在原始部署中，或是由應用程式建立都是如此。

@@ -4,19 +4,19 @@ description: 在適用於 Visual Studio 的 AI 工具本機執行 TensorFlow 模
 keywords: AI, Visual Studio, TensorFlow, 本機
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: eca02b74154eab5468adeabdb84efdf2839fc92e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ceb21701958630c8b783d5b6850c5e0a0ab229a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80638749"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841376"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本機定型 TensorFlow 模型
 
@@ -24,7 +24,7 @@ ms.locfileid: "80638749"
 
 MNIST 資料庫具有 60,000 個範例的定型集，以及 10,000 個手寫數字範例的測試集。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 開始之前，請確定您已安裝下列項目：
 
@@ -44,15 +44,15 @@ C:\>pip.exe install tensorflow
 
 ## <a name="open-solution-and-train-model"></a>開啟方案並定型模型
 
-- 啟動 Visual Studio，然後選取 [檔案] > [開啟] > [專案/方案]****。
+- 啟動 Visual Studio，然後選取 [檔案] > [開啟] > [專案/方案]。
 
-- 從下載的範例存放庫中選取 **TensorFlow 範例**資料夾，然後開啟 **TensorflowExamples.sln** 檔案。
+- 從下載的範例存放庫中選取 **TensorFlow 範例** 資料夾，然後開啟 **TensorflowExamples.sln** 檔案。
 
    ![開啟專案](media/tensorflow-local/open-project.png)
 
    ![開啟方案](media/tensorflow-local/open-solution.png)
 
-- 在 [方案總管]**** 中，找到 MNIST 專案並按一下滑鼠右鍵，然後選取 [設定為啟始專案]****。
+- 在 [方案總管] 中，找到 MNIST 專案並按一下滑鼠右鍵，然後選取 [設定為啟始專案]。
 
 - 按一下 [啟動]。
 

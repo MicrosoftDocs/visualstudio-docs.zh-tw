@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f015c21f71f064f2302660ebc75ef00a245348c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d45d8d93f26ef01fb184811a87b4f4fcc4483340
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724434"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840232"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 此介面可讓呼叫者藉由在偵錯工具的調用間寫入磁片) ，來決定埠供應商是否可以保留埠 (，然後取得這些保留的埠清單。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplier3 : IDebugPortSupplier2
@@ -47,7 +47,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 
  Debug engine 通常不會與埠供應商互動，而且不會使用此介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

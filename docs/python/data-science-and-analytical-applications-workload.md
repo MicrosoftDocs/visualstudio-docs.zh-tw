@@ -5,16 +5,16 @@ ms.date: 02/28/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de86c2021a2abf3cd5346c684199e8f59e2d314e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70154884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839184"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>在 Visual Studio 中安裝資料科學支援
 
@@ -86,15 +86,15 @@ SQL Server 支援使用 Python，以直接在 SQL Server 內執行進階分析�
 
 - **企業級效能和規模**：您可以使用 SQL Server 的 advanced 功能，例如記憶體內部資料表和資料行存放區索引，以及 RevoScale 套件中高效能可擴充的 api。 不需要移動資料也表示在您的資料成長或您想要增加應用程式效能時，避免用戶端記憶體條件約束。
 
-- **豐富**的擴充性：您可以在 SQL Server 中安裝並執行任何最新的開放原始碼套件，以在 SQL Server 的大量資料上建立深度學習和 AI 應用程式。 在 SQL Server 中安裝套件，就像在本機電腦上安裝套件一樣簡單。
+- **豐富** 的擴充性：您可以在 SQL Server 中安裝並執行任何最新的開放原始碼套件，以在 SQL Server 的大量資料上建立深度學習和 AI 應用程式。 在 SQL Server 中安裝套件，就像在本機電腦上安裝套件一樣簡單。
 
-- 完全免費且**不需額外費用**：語言整合適用于所有版本的 SQL Server 2017 和更新版本（包括 Express edition）。
+- 完全免費且 **不需額外費用**：語言整合適用于所有版本的 SQL Server 2017 和更新版本（包括 Express edition）。
 
-若要完整利用 SQL Server 整合，請使用 Visual Studio 安裝程式，透過 [SQL Server Data Tools]**** 選項來安裝 [資料儲存和處理]**** 工作負載。 後述選項可啟用 SQL IntelliSense、語法醒目提示和部署。
+若要完整利用 SQL Server 整合，請使用 Visual Studio 安裝程式，透過 [SQL Server Data Tools] 選項來安裝 [資料儲存和處理] 工作負載。 後述選項可啟用 SQL IntelliSense、語法醒目提示和部署。
 
 ![資料儲存和處理工作負載](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![資料儲存和處理工作負載選項](media/workload/data-storage-workload-options.png)
 
-如需詳細資訊：
+其他資訊：
 
 ::: moniker range="vs-2017"
 - [使用 SQL Server 和 R](../rtvs/integrating-sql-server-with-r.md)

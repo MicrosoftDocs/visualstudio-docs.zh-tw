@@ -4,17 +4,17 @@ description: 將 docker 應用程式部署至雲端服務以進行裝載。
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 661f9f6833b5ac5d42aacde7f228b042bef00bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3167dd58a593a426644c3658fbd660f517e10b39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178264"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837979"
 ---
 # <a name="deploy-to-the-cloud"></a>部署至雲端
 
@@ -83,7 +83,7 @@ ms.locfileid: "89178264"
 
 很棒的是，您現在已完成工作負載，並在第一次成功部署至雲端。 您也可以從命令列使用，也可以使用執行 `docker run` `docker compose up` 多容器應用程式，在您的 ACI 內容中執行所有這項作業。 若要深入瞭解如何在雲端中執行容器，請閱讀 [有關使用 ACI](https://docs.docker.com/engine/context/aci-integration/)的擴充檔。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 繼續進行本教學課程！
 

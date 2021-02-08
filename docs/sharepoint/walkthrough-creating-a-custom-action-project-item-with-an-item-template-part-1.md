@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d9d1d2cca8f8ffaec67c92b44e7a621d08ad673
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e7427c0866806c705ed28a049b33024771631c0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839119"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說：使用專案範本建立自訂動作專案專案（第1部分）
   您可以藉由建立自己的專案專案類型，在 Visual Studio 中擴充 SharePoint 專案系統。 在這個逐步解說中，您將建立可加入至 SharePoint 專案的專案專案，以在 SharePoint 網站上建立自訂動作。 自訂動作會將功能表項目加入至 SharePoint 網站的 [ **網站動作** ] 功能表。
@@ -449,7 +449,7 @@ ms.locfileid: "96915267"
 
 5. 關閉 Visual Studio 的實驗性實例，以及開啟 CustomActionProjectItem 方案的實例。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  完成此逐步解說之後，您可以將嚮導加入至專案範本。 當使用者將自訂動作專案專案加入至 SharePoint 專案時，此 wizard 會收集動作 (的相關資訊，例如其位置和在選擇動作時流覽至的 URL) ，並將這項資訊新增至新專案專案中 *Elements.xml* 的檔案。 如需詳細資訊，請參閱 [逐步解說：使用專案範本建立自訂動作專案專案（第2部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。
 
 ## <a name="see-also"></a>另請參閱

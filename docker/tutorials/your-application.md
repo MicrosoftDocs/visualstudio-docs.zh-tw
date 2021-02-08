@@ -4,17 +4,17 @@ description: 在 Node.js 中執行之 todo 清單範例應用程式的總覽。
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: a66b747eda633d666518bf2d8a48328a25e038d2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f5f5fdd51e4aa13df66470534303f7fba19e44ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841662"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>建立並執行待辦事項範例應用程式
 
@@ -99,7 +99,7 @@ ms.locfileid: "93046187"
 
 接下來，您將修改應用程式，並瞭解如何使用新的映射來更新執行中的應用程式。 在過程中，您將會瞭解一些其他有用的命令。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 繼續進行本教學課程！
 

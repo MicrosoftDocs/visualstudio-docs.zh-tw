@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 32685ab2-6c5b-41fc-b429-29260caef585
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c99f0db1686a9f1dd8dcb13949eb6fe47f3fdc
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 674498ff86f3ea3d44d5d9b49ec97789fa5a1205
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398632"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837771"
 ---
 # <a name="how-to-control-messages-view"></a>如何：控制訊息檢視
 有了 Spy + +，您就可以大幅掌控 [訊息查看](../debugger/messages-view.md) 視窗的內容。 您可以隨時 [啟動和停止](../debugger/how-to-start-and-stop-the-message-log-display.md) 顯示訊息，也可以指定：

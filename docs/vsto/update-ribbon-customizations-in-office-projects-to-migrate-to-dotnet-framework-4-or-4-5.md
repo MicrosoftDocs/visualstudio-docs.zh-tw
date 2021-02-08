@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a831bced793f13394a89d278a6be1cda959c775a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 684ec027f5e7615832a942edc93336bf91944b09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527935"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838304"
 ---
 # <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>更新已遷移至 .NET Framework 4.5 的功能區自訂
 

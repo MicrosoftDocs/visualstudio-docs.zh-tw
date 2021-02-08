@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5919ac657d828e87e48b8cfb3f4f643e1187f701
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 04a480daae7f5883cad9fa74e9d51d4df0f4485f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840960"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>如何：使用 GPU 執行緒視窗 (c + +) 
 在 [GPU 執行緒] 視窗中，您可以檢查和處理正在偵錯的應用程式中，於 GPU 上執行的執行緒。 如需在 GPU 上執行之應用程式的詳細資訊，請參閱 [C++ AMP 總覽](/cpp/parallel/amp/cpp-amp-overview)。

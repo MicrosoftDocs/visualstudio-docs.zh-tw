@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb694389bbf6f913db084dca29f7787c6283d3ad
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 8f6010ffdf6873073eded63c75475115391a3964
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839595"
 ---
 # <a name="legacy-language-service-interfaces"></a>舊版語言服務介面
 針對任何特定的程式設計語言，一次只能有一個語言服務的實例。 不過，單一語言服務可以提供一個以上的編輯器。
@@ -52,6 +52,6 @@ ms.locfileid: "98205017"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|允許使用命令處理常式來修改文字視圖。 您在其中執行介面的類別 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> 也必須執行 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面。 文字視圖 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> 會藉由查詢 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 傳遞至方法的物件來抓取物件 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> 。 每個視圖應該都有一個 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> 物件。|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|攔截使用者在程式碼視窗中輸入的命令。 監視您的實作為的輸出 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ，以提供自訂完成資訊和修改視圖<br /><br /> 若要將 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 物件傳遞給文字視圖，請呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> 。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [檢查清單：建立舊版語言服務](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

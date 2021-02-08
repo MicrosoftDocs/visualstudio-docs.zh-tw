@@ -4,18 +4,18 @@ description: 瞭解 Visual Studio Tools for AI 是整合式開發環境 (IDE) �
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b660881b18efca4ec81b3f8f31e8dd64870d4d0
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 683eba117e78d5e21e1bc2022a68505f35aa35ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099163"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841363"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Visual Studio Tools for AI 總覽
 
@@ -37,7 +37,7 @@ Visual Studio Tools for AI 是一種整合式開發環境，可用來建立、�
 
 流覽 [範例存放庫](https://github.com/Microsoft/samples-for-ai) 和 Machine Learning 資源 [庫](https://gallery.cortanaintelligence.com/projects)中的範例。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要深入瞭解 Visual Studio Tools for AI 的詳細資訊，包括系統需求和支援選項，請參閱 [ [關於 Visual Studio Tools for AI](about-ai-tools.md) ] 頁面。
 

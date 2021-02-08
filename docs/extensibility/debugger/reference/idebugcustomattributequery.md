@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: b804b619-70eb-4c38-80d9-c8b32b65ed3e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 598db5ad711c8b61339e188311c1a437a24d013c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52549ac36ef8bdbf36d8f28c8864a874fc71fb6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840467"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
 表示方法或型別上的自訂屬性查詢。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCustomAttributeQuery : IUnknown
@@ -34,7 +34,7 @@ IDebugCustomAttributeQuery : IUnknown
 |[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|取得自訂屬性的名稱。|
 |[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|在指定的自訂屬性中判斷。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Sh. h
 
  命名空間： VisualStudio

@@ -15,23 +15,23 @@ helpviewer_keywords:
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 51b430a18a3d0934c16de19cbde82177a5f21f12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836458"
 ---
 # <a name="build-events-page-project-designer-c"></a>專案設計工具、建置事件 (C#)
 
-使用 [專案設計工具]**** 的 [建置事件]**** 頁面，以指定組建組態指示。 您也可以指定執行任何建置後事件的條件。 如需詳細資訊，請參閱 [如何：指定組建事件 (c # ) ](../../ide/how-to-specify-build-events-csharp.md) 和 [如何：指定組建事件 (Visual Basic) ](../../ide/how-to-specify-build-events-visual-basic.md)。
+使用 [專案設計工具] 的 [建置事件] 頁面，以指定組建組態指示。 您也可以指定執行任何建置後事件的條件。 如需詳細資訊，請參閱 [如何：指定組建事件 (c # ) ](../../ide/how-to-specify-build-events-csharp.md) 和 [如何：指定組建事件 (Visual Basic) ](../../ide/how-to-specify-build-events-visual-basic.md)。
 
 ## <a name="uielement-list"></a>UIElement 清單
 
-**設定**
+**Configuration**
 
 無法在此頁面中編輯這個控制項。 如需此控制項的描述，請參閱[專案設計工具、建置頁面 (C#)](../../ide/reference/build-page-project-designer-csharp.md)。
 
@@ -41,14 +41,14 @@ ms.locfileid: "92136845"
 
 **建置前事件命令列**
 
-指定要在建置開始前執行的任何命令。 若要鍵入長命令，請按一下 [建置前進行編輯]**** 顯示[建置前事件/建置後事件命令列對話方塊](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)。
+指定要在建置開始前執行的任何命令。 若要鍵入長命令，請按一下 [建置前進行編輯] 顯示[建置前事件/建置後事件命令列對話方塊](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)。
 
 > [!NOTE]
 > 如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。
 
 **建置後事件命令列**
 
-指定要在建置結束後執行的任何命令。 若要鍵入長命令，請按一下 [建置後進行編輯]**** 顯示 [建置前事件/建置後事件命令列]**** 對話方塊。
+指定要在建置結束後執行的任何命令。 若要鍵入長命令，請按一下 [建置後進行編輯] 顯示 [建置前事件/建置後事件命令列] 對話方塊。
 
 > [!NOTE]
 > 在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。
@@ -59,7 +59,7 @@ ms.locfileid: "92136845"
 
 |選項|結果|
 |------------|------------|
-|**永遠**|不論建置是否成功，都會執行建置後事件。|
+|**Always**|不論建置是否成功，都會執行建置後事件。|
 |**建置成功時**|如果建置成功，則會執行建置後事件。 因此，即使專案是最新狀態，但只要建置成功，就會執行事件。|
 |**當組建更新專案輸出時**|只有在編譯器的輸出檔 (.exe 或 .dll) 與先前的編譯器輸出檔不同時，才會執行建置後事件。 因此，如果專案是最新狀態，就不會執行建置後事件。|
 

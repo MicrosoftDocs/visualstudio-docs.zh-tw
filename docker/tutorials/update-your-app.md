@@ -4,17 +4,17 @@ description: 說明如何更新 Docker 應用程式。
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: e8f17047902ccf6c7fad164e788e64fe0b17cf14
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: df2102c38250aa5c1bda52b4324cba808501db3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841740"
 ---
 # <a name="update-the-app"></a>更新應用程式
 
@@ -115,7 +115,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 
 在瞭解持續性之前，您將快速瞭解如何與其他人共用這些映射。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 繼續進行本教學課程！
 

@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 keywords: AI, Visual Studio, 定型模型, 雲端
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 72f5fa5aab9f9afa6268f8acd737430af0568928
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e1bb1d0bde1b564fe9a35f3527c7b3803c7e9d78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841298"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>在 Azure Batch AI 中定型 AI 模型
 

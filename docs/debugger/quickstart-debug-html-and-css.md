@@ -15,16 +15,16 @@ helpviewer_keywords:
 - DOM Explorer [UWP apps]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: fafab7a2cbf660987de0365549aaa823a4e3445d
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 8132e3f26352bada4d06910e40a7ca662dae874e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840973"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中進行 HTML 和 CSS 的偵錯工具
 
@@ -256,7 +256,7 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 > [!NOTE]
 > Windows Phone 模擬器僅部分支援藉由滑鼠游標停留來醒目提示示項目。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Debug apps in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)

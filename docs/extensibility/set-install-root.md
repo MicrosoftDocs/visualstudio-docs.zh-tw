@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73bfb963122762c3185a964826a11dca5e771717
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: d0a6e955d2ceb4ef8f4f2d4edcd8221badee8caf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836653"
 ---
 # <a name="install-outside-the-extensions-folder"></a>在延伸模組資料夾之外進行安裝
 

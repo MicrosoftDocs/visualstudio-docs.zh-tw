@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b67ffab5935b0e52ee6c403f2e38e7bbafab2d06
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c6a759f0cef7329d14d7d1472d38f662c0206448
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839790"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>攔截舊版語言服務命令
 使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，您可以讓語言服務攔截文字視圖原本會處理的命令。 這適用于文字視圖無法管理的語言特定行為。 您可以從語言服務將一或多個命令篩選器新增至文字視圖，以攔截這些命令。

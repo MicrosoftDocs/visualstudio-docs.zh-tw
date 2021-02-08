@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ad32d814b67cae9a9a0a538d6c131aecba9c0b8
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 665b1e42a089bc79f878c55b1be4dbf0b551f017
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838579"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>如何：在 Visual Studio 中變更編輯器的字型和色彩
 
@@ -51,9 +51,9 @@ ms.locfileid: "96617119"
     > [!TIP]
     > 按一下 [ **使用預設值** ] 以重設為預設設定。
 
-1. 按一下 [確定]。
+1. 按一下 [確定]  。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要深入瞭解您可以使用 [ **選項** ] 對話方塊對 IDE 進行的字型和色彩變更，請參閱 [字型 [和色彩]、[環境]、[選項] 對話方塊](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 頁面。
 

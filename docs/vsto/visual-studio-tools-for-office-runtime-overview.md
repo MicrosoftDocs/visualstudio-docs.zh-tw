@@ -25,15 +25,15 @@ helpviewer_keywords:
 - runtime [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16431a9ba2fe56b88f9f6b7f2c874c75bfad61c3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e5d02d7840f1b16098509a6549816746c0a5bfbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838057"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office 執行時間總覽
   若要執行使用 Visual Studio 中的 Microsoft Office 開發人員工具所建立的方案，必須在使用者電腦上安裝適用于 Office runtime 的 Visual Studio 2010 工具。 如需詳細資訊，請參閱 [如何：安裝 Visual Studio Tools for Office 執行時間可](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)轉散發套件。 適用于 Office 執行時間的 Visual Studio 2010 工具是由兩個主要元件所組成：

@@ -2,19 +2,19 @@
 title: '使用雲端服務 (延伸支援)  (Preview) '
 description: '立即瞭解如何使用 Azure Resource Manager 搭配 Visual Studio，建立及部署雲端服務 (延伸支援) '
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: ff45cf05a6811c02881c26f76193d4c1f5a5e735
-ms.sourcegitcommit: 7d34ab111614ae6bde5fb3c2bb91dd79e29a0a78
+ms.openlocfilehash: 39a76f4c76afb2ed0c738adfc477807eebfdbc61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98750277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841129"
 ---
 # <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio-preview"></a>在 Visual Studio (Preview 中建立並部署至雲端服務 (延伸支援) ) 
 
@@ -80,7 +80,7 @@ ms.locfileid: "98750277"
 
 1. 選擇 [ **下一步]** 以移至 [ **摘要** ] 頁面。
 
-   ![[摘要]](./media/cloud-services-extended-support/publish-summary.png)
+   ![摘要](./media/cloud-services-extended-support/publish-summary.png)
 
 1. **目標設定檔** - 您可以選擇從您所選擇的設定建立發行設定檔。 例如，您可能會建立一個設定檔用於測試環境，並建立另一個用於生產。 若要儲存這個設定檔，請選擇 [**儲存**] 圖示。 此精靈會建立設定檔並將它儲存在 Visual Studio 專案。 若要修改設定檔名稱，請開啟 [目標設定檔] 清單，然後選擇 [**管理...]**。
 
@@ -95,6 +95,6 @@ ms.locfileid: "98750277"
 
 若要清除您遵循本教學課程所建立的 Azure 資源，請移至 [Azure 入口網站](https://portal.azure.com)，選擇 [ **資源群組**]，然後尋找並開啟您用來建立雲端服務的資源群組 (延伸支援) ，然後選擇 [ **刪除資源群組**]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 使用 [**發佈**] 畫面上的 [設定 **] 按鈕，** 設定 (CI) 的持續整合。 如需詳細資訊，請參閱 [Azure Pipelines 檔](/azure/devops/pipelines/?view=azure-devops&preserve-view=true)。

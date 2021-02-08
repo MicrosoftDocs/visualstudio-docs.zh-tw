@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839556"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>舊版語言服務的剖析器和掃描器
 剖析器是語言服務的核心。 受管理的封裝架構 (MPF) 語言類別需要語言剖析器來選取要顯示之程式碼的相關資訊。 剖析器會將文字分隔為詞法標記，然後根據類型和功能來識別這些權杖。
@@ -114,7 +114,7 @@ namespace MyNamespace
 
 12. 大功告成。
 
-### <a name="summary"></a>總結
+### <a name="summary"></a>摘要
  相符的大括弧運算通常僅限於一組簡單的語言專案。 更複雜的元素（例如，比對三 ( ""、""、" `if(...)` `{` "、"" `}` `else` 、" `{` " 和 " `}` " ) ）可以反白顯示為字完成作業的一部分。 例如，當 "else" 單字完成時，可以反白顯示相符的 " `if` " 語句。 如果有一系列的 `if` / `else if` 語句，則可以使用相同的機制來反白顯示所有的語句。 <xref:Microsoft.VisualStudio.Package.Source>基類已支援這項功能，如下所示：掃描器必須傳回 token 觸發程式值， <xref:Microsoft.VisualStudio.Package.TokenTriggers> 並與 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 游標位置之前的標記觸發值結合。
 
  如需詳細資訊，請參閱 [舊版語言服務中的括弧](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)比對。
@@ -133,7 +133,7 @@ namespace MyNamespace
 
  <xref:Microsoft.VisualStudio.Package.AuthoringSink>物件會傳遞至剖析器作為物件的一部分 <xref:Microsoft.VisualStudio.Package.ParseRequest> ，並在 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 每次建立新物件時建立新的物件 <xref:Microsoft.VisualStudio.Package.ParseRequest> 。 此外，此 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 方法必須傳回 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 用來處理各種 IntelliSense 作業的物件。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>物件會維護宣告的清單，以及方法的清單，這些方法會根據剖析的原因來填入。 必須實作為 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 類別。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [實作舊版語言服務](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [舊版語言服務概觀](../../extensibility/internals/legacy-language-service-overview.md)
 - [舊版語言服務中的語法上色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

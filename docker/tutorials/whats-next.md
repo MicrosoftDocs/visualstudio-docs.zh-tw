@@ -4,17 +4,17 @@ description: 描述使用雲端原生運算基礎專案來擴充 Docker 應用�
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f93185641a0814797b66eae90714e04cac83f7e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ca68b2eba710037535b4bd76c744e7c029a53e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178189"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841649"
 ---
 # <a name="whats-next"></a>後續步驟
 

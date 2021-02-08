@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13014d61450897897029750b012833cf93a57729
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 4eaa85eab9d9691125afce28d51c61d464e56cb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839829"
 ---
 # <a name="important-commands-for-language-service-filters"></a>語言服務篩選的重要命令
 如果您想要建立功能完整的語言服務篩選器，請考慮處理下列命令。 命令識別碼的完整清單定義于 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> managed 程式碼的列舉和非受控碼的 Stdidcmd .h 標頭檔中 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 。 您可以在 *VISUAL STUDIO SDK 安裝路徑*\VisualStudioIntegration\Common\Inc. 中找到 Stdidcmd .h 檔案。
@@ -40,5 +40,5 @@ ms.locfileid: "98204614"
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|通常會在使用者輸入 CTRL + 空格鍵時傳送。 此命令會指示語言服務 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> 在上呼叫方法 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 。|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|從功能表傳送，通常 **會在 [** **編輯**] 功能表中 **批註選取** 或 **取消批註選取專案**。 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 表示使用者想要將選取的文字加上批註; <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 表示使用者想要取消選取的文字。 這些命令只能由語言服務來執行。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)

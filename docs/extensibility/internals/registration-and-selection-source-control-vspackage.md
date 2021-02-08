@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0784b16acd00e354c8ecf36f34d6b05c750f6bec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877347"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837199"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>註冊和選取 (原始檔控制 VSPackage)
 原始檔控制 VSPackage 必須註冊，才能將它公開至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 如果有一個以上的原始檔控制 VSPackage 註冊，使用者可以選取要在適當時間載入的 VSPackage。 如需 Vspackage 的詳細資訊以及如何註冊的詳細資訊，請參閱 [vspackage](../../extensibility/internals/vspackages.md) 。
@@ -81,7 +81,7 @@ ms.locfileid: "97877347"
 
   與舊版不同的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 是，重新開機 IDE 不再是切換原始檔控制 vspackage 的唯一方法。 VSPackage 選取專案是自動的。 切換封裝需要 Windows 使用者權限 (非系統管理員或 Power 使用者) 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>
 - [功能](../../extensibility/internals/source-control-vspackage-features.md)
 - [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)

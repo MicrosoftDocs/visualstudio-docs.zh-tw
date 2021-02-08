@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cbdd7e948aaafff8e90aa8e67907c9a53471b05c
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 251b15edc838a1231e017d8f23b04f8bbb773692
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150076"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840869"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 獨立收集器 (c #、Visual Basic) 
 
@@ -33,7 +33,7 @@ ms.locfileid: "98150076"
 > 您可以透過 **Monitor** 模式執行代理程式，即可在 IntelliTrace 資料中收集效能相關事件。 **Monitor** 模式的效能影響低於 **Trace** 模式或 **IntelliTrace 獨立收集器**。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。 請參閱 [使用 Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md)。
 > IntelliTrace 獨立收集器不支援處理快照集。
 
- **Requirements**
+ **需求**
 
 - .NET Framework 3.5 或更高版本
 

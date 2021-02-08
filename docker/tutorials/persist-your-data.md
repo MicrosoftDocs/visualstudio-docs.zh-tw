@@ -4,17 +4,17 @@ description: 瞭解如何藉由裝載磁片區，將資料保存在資料庫中�
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 9a4eb5062f8f1b01e8ad5e5165d7ec9ede636124
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 9ee4109c888888d2dee36804a178f7db8d41753f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841766"
 ---
 # <a name="persist-your-data"></a> 保存您的資料
 
@@ -70,7 +70,7 @@ ms.locfileid: "89485582"
 
 [磁片](https://docs.docker.com/storage/volumes/) 區可讓您將容器的特定檔案系統路徑連接回主機電腦。 如果裝載容器中的目錄，該目錄中的變更也會顯示在主機電腦上。 如果您跨容器重新開機裝載相同的目錄，您會看到相同的檔案。
 
-磁片區有兩種主要類型。 您最終會使用這兩種方式，但您將從 **命名磁片**區開始。
+磁片區有兩種主要類型。 您最終會使用這兩種方式，但您將從 **命名磁片** 區開始。
 
 ## <a name="persist-your-todo-data"></a>保存您的 Todo 資料
 
@@ -78,7 +78,7 @@ ms.locfileid: "89485582"
 
 當資料庫是單一檔案時，如果您可以將該檔案保存在主機上，並將它提供給下一個容器使用，它應該就可以從最後一個容器中挑選最後一個。 藉由建立磁片區並將 (（通常稱為「掛接」） ) 至儲存資料的目錄，您就可以保存資料。 當容器寫入檔案時 `todo.db` ，它會保存到磁片區中的主機。
 
-如前所述，您將使用 **命名磁片**區。 將命名磁片區視為只是資料的 bucket。 Docker 會維護磁片上的實體位置，而您只需要記住磁片區的名稱。 每次使用磁片區時，Docker 都會確保提供正確的資料。
+如前所述，您將使用 **命名磁片** 區。 將命名磁片區視為只是資料的 bucket。 Docker 會維護磁片上的實體位置，而您只需要記住磁片區的名稱。 每次使用磁片區時，Docker 都會確保提供正確的資料。
 
 1. 使用命令建立磁片區 `docker volume create` 。
 
@@ -141,7 +141,7 @@ docker volume inspect todo-db
 
 不過，您稍早看到針對每項變更重建映射需要相當長的時間。 有更好的方式可以進行變更，對吧？ 使用系結裝載 (我們在稍早) 提示的情況下，有更好的方法！ 現在就來看看這是什麼！
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 繼續進行本教學課程！
 

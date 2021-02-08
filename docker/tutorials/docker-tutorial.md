@@ -4,18 +4,18 @@ description: 本教學課程涵蓋使用 Docker 搭配 Visual Studio Code 的基
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
 next_page: app.md
-ms.openlocfilehash: 9961810ad408a384db46439235b0b7acab325062
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 554badf01122b6c41d89c00b740574d28185e35e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837966"
 ---
 # <a name="tutorial-get-started-with-docker"></a>教學課程：開始使用 Docker
 
@@ -62,14 +62,14 @@ docker run -d -p 80:80 docker/getting-started
 
 ## <a name="what-is-a-container-image"></a>什麼是容器映射
 
-執行容器時，它會使用隔離檔案系統。 此自訂檔案系統是由 **容器映射**提供。 因為映射包含容器的檔案系統，所以它必須包含執行應用程式所需的所有專案，包括所有相依性、設定、腳本、二進位檔等等。 映射也包含容器的其他設定，例如環境變數、要執行的預設命令，以及其他中繼資料。
+執行容器時，它會使用隔離檔案系統。 此自訂檔案系統是由 **容器映射** 提供。 因為映射包含容器的檔案系統，所以它必須包含執行應用程式所需的所有專案，包括所有相依性、設定、腳本、二進位檔等等。 映射也包含容器的其他設定，例如環境變數、要執行的預設命令，以及其他中繼資料。
 
 我們稍後會深入探討影像，其中涵蓋了分層、最佳作法等主題。
 
 > [!NOTE]
 > 如果您很熟悉 `chroot` ，請將容器視為的擴充版本 `chroot` 。 檔案系統只是來自映射。 但是，當您只使用 chroot 時，容器會新增額外的隔離。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 繼續進行本教學課程！
 

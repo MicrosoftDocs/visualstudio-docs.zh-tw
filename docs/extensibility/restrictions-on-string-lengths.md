@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5412e930937d029f803f5c6c2b4ddc9d396d9485
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: bd1720553592b0cfbac8be412002ef1b39bfd5bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836952"
 ---
 # <a name="restrictions-on-string-lengths"></a>字串長度的限制
 原始檔控制外掛程式 API 會限制不同函式中所使用的字串長度。
@@ -41,5 +41,5 @@ ms.locfileid: "97715518"
 |SCC_USER_SIZE|32|
 |SCC_PRJPATH_SIZE|301|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)

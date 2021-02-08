@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 506c098f1f385ddf39c5d000f4571a8ee92c09fc
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 460227b1eb5a1e12ca698f649700586b53bc7254
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839331"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>非同步自動載入延伸模組
 
@@ -55,5 +55,5 @@ Value = (DWORD)
 ## <a name="extension-authors"></a>延伸模組作者
 延伸模組作者可以找到在 [遷移至 AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration)時，將封裝遷移至非同步自動載入的指示。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 如需 Visual Studio 2019 中同步自動載入設定的詳細資訊，請參閱 [同步自動載入行為](https://devblogs.microsoft.com/visualstudio/updates-to-synchronous-autoload-of-extensions-in-visual-studio-2019/) 頁面。

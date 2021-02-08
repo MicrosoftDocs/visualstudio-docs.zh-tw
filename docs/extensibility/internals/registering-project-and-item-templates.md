@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: cc268236a10ab3f6be660b0e69a82a8f656f8910
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837236"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 專案類型必須註冊其專案和專案專案範本所在的目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用與您的專案類型相關聯的註冊資訊，來決定要在 [ **加入新專案** ] 和 [ **加入新** 專案] 對話方塊中顯示的內容。
@@ -39,7 +39,7 @@ ms.locfileid: "97875267"
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|名稱|類型|描述|
+|名稱|類型|Description|
 |----------|----------|-----------------|
 |@|REG_SZ|這種專案的預設名稱。|
 |DisplayName|REG_SZ|要從在封裝下註冊的附屬 DLL 中取出之名稱的資源識別碼。|
@@ -57,7 +57,7 @@ ms.locfileid: "97875267"
 "SortPriority"=dword:00000064
 ```
 
-| 名稱 | 類型 | 描述 |
+| 名稱 | 類型 | Description |
 |--------------------------|-----------| - |
 | @ | REG_SZ | 新增專案範本的資源識別碼。 |
 | TemplatesDir | REG_SZ | 在 [ **加入新專案** ] 嚮導的對話方塊中顯示之專案專案的路徑。 |
@@ -84,7 +84,7 @@ ms.locfileid: "97875267"
 "SortPriority"=dword:00000064
 ```
 
-|名稱|類型|描述|
+|名稱|類型|Description|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|在 [檔案 **中尋找** ] 對話方塊中，篩選出其中一個常見的篩選準則。 一般篩選準則會在篩選器清單中列出，然後才會將篩選標記為通用。|
 |CommonOpenFilesFilter|REG_DWORD|在 [ **開啟** 檔案] 對話方塊中，讓篩選準則成為其中一個常見的篩選準則。 一般篩選準則會在篩選器清單中列出，然後才會將篩選標記為通用。|
@@ -118,7 +118,7 @@ ms.locfileid: "97875267"
 
  \WizardFiles
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [精靈](../../extensibility/internals/wizards.md)

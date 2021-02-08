@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f518413adba1546bcff4f7cf2e62b4563cf1bcc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2deb30b606de686269e095fffe369a7d56adb453
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836926"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函式
 此函式會更新特定原始檔控制命令的檔案清單，並在所有指定的檔案上提供原始檔控制狀態。

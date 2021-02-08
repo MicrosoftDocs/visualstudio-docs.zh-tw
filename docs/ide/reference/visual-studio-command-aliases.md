@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dda564939652a09b64fec65747ca14d1315b3f1
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 54a33d56542065311b2614bad72593132b7908cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836198"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 

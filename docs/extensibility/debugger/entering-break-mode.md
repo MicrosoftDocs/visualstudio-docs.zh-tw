@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e73c64d17aee48cdb67a110e93aa556f112a1014
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d3ec09994f6998f87daafc690b1908b31e54706b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915228"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840648"
 ---
 # <a name="enter-break-mode"></a>進入中斷模式
 下列資訊描述在逐步執行函式之後遇到中斷點時所發生的程式，執行至具有游標所在的源程式碼，或執行至中斷點。

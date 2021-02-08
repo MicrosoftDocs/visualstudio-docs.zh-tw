@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db22378477daffd4562a9d60c6b30bc7b96e58e2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f31556e64ee93a73fb09c27edd095bcd2653dfdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847867"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836159"
 ---
 # <a name="cache-data"></a>快取資料
   您可以快取檔層級自訂中的資料物件，讓資料可以離線存取，或不開啟 Microsoft Office Word 或 Microsoft Office Excel。 若要快取物件，物件的資料類型必須符合特定需求。 .NET Framework 中的許多常見資料類型都符合這些需求，包括 <xref:System.String> 、 <xref:System.Data.DataSet> 和 <xref:System.Data.DataTable> 。

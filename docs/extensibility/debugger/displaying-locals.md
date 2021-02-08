@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 62264cec-845b-4233-aed7-0b038fa79250
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddc7bc564e4e294144eeb3fa34db8bdf73971053
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 31e0ebeb4155fef551f98a81f93e02ecdf2ecb9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915540"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840765"
 ---
 # <a name="display-locals"></a>顯示區域變數
 > [!IMPORTANT]

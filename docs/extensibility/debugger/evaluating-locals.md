@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5d9c25c9b7b32b69983aeec4a1e533cbb927a11
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 291c77568f17cfb0aed9d0d5b55e5ca193a6a702
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915631"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840635"
 ---
 # <a name="evaluate-locals"></a>評估區域變數
 > [!IMPORTANT]

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 69e81439-1238-4f18-9028-6fd1c1ba5e4a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 362ee6b98699a32a3bfd6219d11ccf4c80d2a4be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8de85f157995db77653b71f7b25f3106caffb9ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719766"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837500"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 取得這個堆疊框架的檔內容。
@@ -28,13 +28,13 @@ ms.locfileid: "80719766"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetDocumentContext ( 
+HRESULT GetDocumentContext ( 
    IDebugDocumentContext2** ppCxt
 );
 ```
 
 ```csharp
-int GetDocumentContext ( 
+int GetDocumentContext ( 
    out IDebugDocumentContext2 ppCxt
 );
 ```

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac9a43a0ec539dd978710c23c9b44f27eac81799
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 9dd31a9ff81493d0a315efc0ce0b607af0c6e422
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840661"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>啟用要進行調試的程式
 在您的 debug engine (DE) 可以對程式進行偵錯工具之前，您必須先將它取消或附加至現有的程式。

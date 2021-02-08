@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27b9963db54d939b3d509da451478c20dbe0e7d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 052b1dd454ca091b0d83becbd02909c7cd92d00e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837459"
 ---
 # <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN 欄位
 工作已完成執行它的委派，並隱含地等候附加的子工作完成。

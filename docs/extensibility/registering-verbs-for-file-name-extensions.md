@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 10e1b158ab62cfedfb6171a0a3874cfe14e89caf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836999"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>註冊副檔名的動詞
 副檔名與應用程式的關聯通常會有使用者按兩下檔案時所發生的慣用動作。 這個慣用的動作會連結至對應至動作的動詞，例如 open。
@@ -31,7 +31,7 @@ ms.locfileid: "97863051"
 
 - 編輯
 
-- Play
+- 播放
 
 - 列印
 
@@ -113,5 +113,5 @@ ms.locfileid: "97863051"
 > [!NOTE]
 > 如果您打算在並存部署中變更擴充功能的預設動詞，請考慮安裝和移除的影響。 在安裝期間，會覆寫原始預設值。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [管理並存檔案關聯](../extensibility/managing-side-by-side-file-associations.md)

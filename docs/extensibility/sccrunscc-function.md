@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d012908e59be8b82e34ff68cdab1945c5bd2de8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10c04daf8ffea8266c874dfb0fb805e551942bc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700400"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836757"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函式
 此函式會叫用原始檔控制管理工具。
@@ -68,7 +68,7 @@ SCCRTN SccRunScc(
 
  這個函式會使用計數和檔案名陣列來呼叫，以供目前選取的檔案使用。 如果管理工具支援此功能，則可以使用檔案清單來預先設置管理介面中的檔案;否則，可以忽略清單。
 
- 此函式通常會在使用者**從 [檔案**原始檔控制] 功能表選取 [ ** \<Source Control Server> 啟動**] 時叫用  ->  **Source Control** 。 您可以藉由設定登錄專案，一律停用或甚至隱藏這個 **啟動** 功能表選項。 如需詳細資訊，請參閱 [如何：安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md) 。 只有當 [SccInitialize](../extensibility/sccinitialize-function.md) 傳回功能位時，才會呼叫此函式 `SCC_CAP_RUNSCC` (請參閱 [功能旗標](../extensibility/capability-flags.md) ，以取得此功能和其他功能位) 的詳細資料。
+ 此函式通常會在使用者 **從 [檔案** 原始檔控制] 功能表選取 [ **\<Source Control Server> 啟動**] 時叫用  ->   。 您可以藉由設定登錄專案，一律停用或甚至隱藏這個 **啟動** 功能表選項。 如需詳細資訊，請參閱 [如何：安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md) 。 只有當 [SccInitialize](../extensibility/sccinitialize-function.md) 傳回功能位時，才會呼叫此函式 `SCC_CAP_RUNSCC` (請參閱 [功能旗標](../extensibility/capability-flags.md) ，以取得此功能和其他功能位) 的詳細資料。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

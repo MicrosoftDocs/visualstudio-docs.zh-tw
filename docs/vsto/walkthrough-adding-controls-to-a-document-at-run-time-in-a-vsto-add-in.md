@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding controls at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3cc88b5ee48241a15a66144c992936b55fb2acf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526279"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838083"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>逐步解說：在 VSTO 增益集中，于執行時間將控制項加入至檔
   您可以使用 VSTO 增益集，將控制項加入任何開啟的 Microsoft Office Word 檔中。 本逐步解說示範如何使用功能區，讓使用者在 <xref:Microsoft.Office.Tools.Word.Controls.Button> 檔中加入或 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。
@@ -177,7 +177,7 @@ ms.locfileid: "97526279"
 
      按鈕會從文件中移除。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  您可以從下列主題進一步了解 VSTO 增益集的控制項：
 
 - 如需示範如何在執行時間將許多其他類型的控制項加入檔，並在重新開啟檔時重新建立控制項的範例，請參閱 Word Add-In 動態控制項範例中的 [Office 程式開發範例和](../vsto/office-development-samples-and-walkthroughs.md)逐步解說。

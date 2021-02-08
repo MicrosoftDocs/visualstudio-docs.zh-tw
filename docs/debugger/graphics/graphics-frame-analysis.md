@@ -8,15 +8,15 @@ f1_keywords:
 - vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f87686290842e0bbc3c575b5c72e3d1eeb24f351
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 4e97d0c840f6dfd49a0fb94f8f881ed690ef57c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841116"
 ---
 # <a name="graphics-frame-analysis"></a>圖形框架分析
 使用 Visual Studio 圖形分析器中的圖形畫面格分析，分析和最佳化 Direct3D 遊戲或應用程式的轉譯效能。
@@ -76,7 +76,7 @@ ms.locfileid: "97727719"
 
  您可以將指標放在某個長條上方，以查看該長條所對應的繪製呼叫事件。 選取長條時，會讓事件清單與該事件同步。
 
-#### <a name="table"></a>Table
+#### <a name="table"></a>資料表
  時間軸下方數字的表格，會針對與應用程式的預設呈現相關的每個繪製呼叫，顯示每個呈現變異的相對效能。 每個資料行都會顯示不同的呈現變異，而且每個資料列都代表可以在最左邊資料行中識別的不同繪製呼叫；您可以從這裡取得 [圖形事件清單] 視窗中事件的連結。
 
  ![摘要資料表會顯示不同的變體。](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")
@@ -175,7 +175,7 @@ ms.locfileid: "97727719"
 ## <a name="variants"></a><a name="Variants"></a> 變異
  畫面格分析對畫面格在播放期間的呈現方式，所進行的每項變更稱為「變異」(*variant*)。 畫面格分析所檢查的變異，會對應至常見且相當簡單的變更，而您使用這些變更就可以改善應用程式的呈現效能或視覺品質，例如，減少紋理大小、使用紋理壓縮，或啟用不同類型的消除鋸齒。 變異會覆寫您應用程式的一般呈現內容和參數。 摘要如下：
 
-|Variant|描述|
+|Variant|Description|
 |-------------|-----------------|
 |**1x1 檢視區大小**|將所有呈現目標上的檢視區維度減少為 1x1 個像素。<br /><br /> 如需詳細資訊，請參閱 [1x1 檢視區大小變異](1x1-viewport-size-variant.md)|
 |**0x MSAA**|停用所有呈現目標上的多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱 [0x/2x/4x MSAA 變異](0x-2x-4x-msaa-variants.md)|

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552efae54a3c8346c7a259fb36e0ed0f8084be3e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 211393ea65f7ca31f80134c48863b0092478b3f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836978"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a> (Visual Studio 範本的 RequiredFrameworkVersion 元素) 
 
@@ -31,7 +31,7 @@ ms.locfileid: "90037721"
  \<VSTemplate> \<TemplateData>
  \<RequiredFrameworkVersion>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <RequiredFrameworkVersion> .... </RequiredFrameworkVersion>
@@ -48,7 +48,7 @@ ms.locfileid: "90037721"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [ **新增專案** ] 或 [ **加入新** 專案] 對話方塊中顯示的方式。|
 

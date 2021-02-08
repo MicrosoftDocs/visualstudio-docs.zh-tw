@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b43fc91de129407f2fd01e12951cffee4028186f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 4a9b8db832207eff93e08f123db57b4beef4eb7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840596"
 ---
 # <a name="evaluate-expressions"></a>評估運算式
-運算式是 **從 [自動** 變數 **]、[監看式]、[快速監看式] 或 [** 即時運算] 視窗中傳遞 **QuickWatch** **Immediate** 評估運算式時，它會產生可列印的字串，其中包含變數或引數的名稱和類型，以及其值。 這個字串會顯示在對應的 IDE 視窗中。
+運算式是 **從 [自動** 變數 **]、[監看式]、[快速監看式] 或 [** 即時運算] 視窗中傳遞  評估運算式時，它會產生可列印的字串，其中包含變數或引數的名稱和類型，以及其值。 這個字串會顯示在對應的 IDE 視窗中。
 
 ## <a name="implementation"></a>實作
  當程式在中斷點停止時，就會評估運算式。 運算式本身是以 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 介面表示，它代表已剖析的運算式，可在給定的運算式評估內容中進行系結和評估。 堆疊框架會決定運算式評估內容，讓 debug engine (藉由實 [IDebugExpressionCoNtext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) 介面來解除) 提供。

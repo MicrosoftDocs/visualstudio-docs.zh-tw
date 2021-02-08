@@ -9,15 +9,15 @@ f1_keywords:
 - fs.ProjectPropertiesDebug
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: c0ce6e68fa36f3b13474306ddd1d8304d640c0ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a97bd1010a9c739c253f9b5f0a536800fd1f8b69
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507972"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838613"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>在 Visual Studio 中使用 Visual F# 進行開發
 
@@ -25,7 +25,7 @@ ms.locfileid: "87507972"
 
 ## <a name="install-f-support"></a>安裝 F# 支援
 
-若要在 Visual Studio 中使用 F# 進行開發，請先安裝 **.NET 桌面開發**工作負載 (若尚未安裝的話)。 您可以透過 Visual Studio 安裝程式來安裝 Visual Studio 工作負載，您可以選取 [**工具**  >  **取得工具和功能**] 來開啟此功能。
+若要在 Visual Studio 中使用 F# 進行開發，請先安裝 **.NET 桌面開發** 工作負載 (若尚未安裝的話)。 您可以透過 Visual Studio 安裝程式來安裝 Visual Studio 工作負載，您可以選取 [**工具**  >  **取得工具和功能**] 來開啟此功能。
 
 ![Visual Studio 中的 .NET 桌面開發工作負載](media/dotnet-desktop-development-workload.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "87507972"
 
 下表摘要說明 F# 專案屬性中的功能：
 
-|專案設定|F# 支援？|附註|
+|專案設定|F# 支援？|備註|
 |---------------|----------------|-----|
 |資源檔|是||
 |建置、偵錯和參考設定|是||
@@ -58,12 +58,12 @@ ms.locfileid: "87507972"
 
 ## <a name="project-designer"></a>專案設計工具
 
-[專案設計工具]**** 包含依相關功能分組的數個專案屬性頁。 可用於 F# 專案的頁面大部分是可用於其他語言的頁面子集，下表將描述這些頁面。 還提供了對應至 C# [專案設計工具]**** 頁面的連結。
+[專案設計工具] 包含依相關功能分組的數個專案屬性頁。 可用於 F# 專案的頁面大部分是可用於其他語言的頁面子集，下表將描述這些頁面。 還提供了對應至 C# [專案設計工具] 頁面的連結。
 
 |[專案設計工具] 頁面|相關連結|描述|
 | - |-------------|-----------|
 |Application|[專案設計工具、應用程式頁面](reference/application-page-project-designer-csharp.md)|可讓您指定應用程式層級設定和屬性，例如您正在建立程式庫還是可執行檔、應用程式是以哪個 .NET 版本為目標，以及應用程式使用的資源檔儲存所在位置的相關資訊。|
-|Build|[專案設計工具、建置頁](reference/build-page-project-designer-csharp.md)|可讓您控制如何編譯程式碼。|
+|組建|[專案設計工具、建置頁](reference/build-page-project-designer-csharp.md)|可讓您控制如何編譯程式碼。|
 |建置事件|[專案設計工具、建置事件頁面](reference/build-events-page-project-designer-csharp.md)|可讓您指定要在編譯前後執行的命令。|
 |偵錯|[專案設計工具、偵錯頁](reference/debug-page-project-designer.md)|可讓您控制應用程式在偵錯期間執行的方式。 這包括要使用哪些命令與應用程式的啟動目錄為何，以及您要啟用的任何特殊偵錯模式，例如原生程式碼和 SQL。|
 |套件 (僅限 .NET SDK)|N/A|可讓您在以 NuGet 套件形式發佈時，定義 NuGet 套件的中繼資料。|
@@ -74,10 +74,10 @@ ms.locfileid: "87507972"
 
 下表摘要說明 F# 專用的設定：
 
-|[專案設計工具] 頁面|設定|描述|
+|[專案設計工具] 頁面|設定|Description|
 | - |-------|-----------|
-|Build|產生 tail 呼叫|如果選取此設定，則可讓您使用尾端 Microsoft Intermediate Language (MSIL) 指令。 這會導致堆疊框架重複用於尾端遞迴函式。 相當於 `--tailcalls` 編譯器選項。|
-|Build|其他旗標|可讓您指定其他編譯器命令列選項。|
+|組建|產生 tail 呼叫|如果選取此設定，則可讓您使用尾端 Microsoft Intermediate Language (MSIL) 指令。 這會導致堆疊框架重複用於尾端遞迴函式。 相當於 `--tailcalls` 編譯器選項。|
+|組建|其他旗標|可讓您指定其他編譯器命令列選項。|
 
 ## <a name="code-and-text-editor-features"></a>程式碼和文字編輯器功能
 
@@ -100,9 +100,9 @@ F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 |定位點化|將空格轉換為定位點。|是|
 |輸入顏色標示|以特殊的色彩顯示定義的類型名稱。|是|
 |快速尋找。 請參閱 [尋找] 和 [尋找及取代] 視窗。|可讓您在檔案或專案中搜尋。|是|
-|**Ctrl** +**按一下**以移至定義|可讓您按住 **Ctrl** 並按一下 F# 符號，以叫用 [移至定義]。|是|
+|**Ctrl** +**按一下** 以移至定義|可讓您按住 **Ctrl** 並按一下 F# 符號，以叫用 [移至定義]。|是|
 |從 QuickInfo 移至定義|工具提示內可叫用 [移至定義] 的可按式符號。|是|
-|移至全部|透過**Ctrl**T 啟用所有 F # 結構的全域、模糊比對導覽 + ** **。|是|
+|移至全部|透過 **Ctrl** T 啟用所有 F # 結構的全域、模糊比對導覽 + ****。|是|
 |內嵌重新命名|重新命名符號內嵌的所有項目。|是|
 |尋找所有參考|在程式碼基底中尋找符號的所有項目。|是|
 |簡化名稱程式碼修正|移除 F# 符號不必要的限定詞。|是|
@@ -120,7 +120,7 @@ F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 |自動實作介面|產生介面方法的程式碼虛設常式。|是|
 |程式碼片段|將來自常見程式碼建構程式庫的程式碼插入主題中。|否|
 |自動完成文字|在您鍵入時完成單字和名稱，藉以省去鍵入工作。|是|
-|自動完成|啟用時，會在您輸入時讓字組自動完成選取第一個相符項，而不是等待您選取其中一個相符項或按**Ctrl** + **空格鍵**。|是|
+|自動完成|啟用時，會在您輸入時讓字組自動完成選取第一個相符項，而不是等待您選取其中一個相符項或按 **Ctrl** + **空格鍵**。|是|
 |為未開啟命名空間中的符號提供自動完成|利用自動完成，建議使用位於未開啟之命名空間中的相符符號，提供以在選取時使用對應的 `open` 陳述式完成。|是|
 |產生程式碼項目|可讓您產生各種建構的虛設常式程式碼。|否|
 |列出成員|當您鍵入成員存取運算子 (.) 時，顯示類型的成員。|是|

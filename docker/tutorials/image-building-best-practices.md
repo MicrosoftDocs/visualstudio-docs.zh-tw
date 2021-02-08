@@ -4,17 +4,17 @@ description: 如何檢查及管理 Docker 映射中的映射層。
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: eae21a729f30a0c77fa52e5774a2f5157286dab1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8913c558c2860599fbfaaba03fa466d11931a528
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178199"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837953"
 ---
 # <a name="image-layering"></a>影像分層
 
@@ -159,7 +159,7 @@ CMD ["node", "/app/src/index.js"]
 雖然我們不會在本教學課程中深入探討，但多階段組建是相當強大的工具，可協助您使用多個階段來建立映射。 有幾個優點：
 
 - 從執行時間相依性分隔組建時間相依性
-- *只*傳送您的應用程式需要執行的內容，以減少整體映射大小
+- *只* 傳送您的應用程式需要執行的內容，以減少整體映射大小
 
 ### <a name="maventomcat-example"></a>Maven/Tomcat 範例
 
@@ -201,7 +201,7 @@ COPY --from=build /app/build /usr/share/nginx/html
 
 藉由深入瞭解影像的結構，您可以更快速地建立映射並提供較少的變更。 多階段組建也有助於減少整體映射大小，並藉由分隔組建時間相依性與執行時間相依性來提高最終的容器安全性。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 繼續進行本教學課程！
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a0ce4afeddebdec8519467e1f4249095ce98f6b
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6b2cb27baaca465096a14c836b0dfc7ebc43d42e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837234"
 ---
 # <a name="registering-single-file-generators"></a>註冊單一檔案產生器
 若要在中提供自訂工具 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，您必須註冊它，以便將它 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 具現化，並使其與特定的專案類型產生關聯。
@@ -69,7 +69,7 @@ ms.locfileid: "97875254"
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [實作單一檔案產生器](../../extensibility/internals/implementing-single-file-generators.md)
 - [將類型公開至視覺化設計工具](../../extensibility/internals/exposing-types-to-visual-designers.md)

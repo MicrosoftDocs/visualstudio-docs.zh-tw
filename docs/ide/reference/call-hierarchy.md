@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Call Hierarchy
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c330855d3fca1187f88171adb893c3f77c4ccd
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e7384376b604f2097d68bf8bac06b2af0158e09b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871401"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836471"
 ---
 # <a name="view-call-hierarchy"></a>檢視呼叫階層
 
@@ -65,7 +65,7 @@ ms.locfileid: "95871401"
 
 下表描述幾個當您以滑鼠右鍵按一下樹狀檢視窗格中的節點時，可以使用的捷徑功能表選項。
 
-|操作功能表項目|描述|
+|操作功能表項目|Description|
 | - |-----------------|
 |**新增為新的根目錄**|將選取的節點新增至樹狀檢視窗格作為新的根節點。 這可讓您將注意力放在特定樹狀子目錄。|
 |**移除根目錄**|從樹狀檢閱窗格移除所選根節點。 這個選項只能從根節點使用。<br /><br /> 您也可以使用 [移除根目錄] 工具列按鈕來移除選取的根節點。|

@@ -4,17 +4,17 @@ description: 說明如何使用 Docker Hub 登錄共用 Docker 映射。
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 46f91b3bf163f3847492a7727fa72a39908d441c
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 676668b1247377597bed55b293efb8ad8b5cd253
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841701"
 ---
 # <a name="share-your-app"></a>共用您的應用程式
 
@@ -32,11 +32,11 @@ ms.locfileid: "89485531"
 
 1. 按一下 [ **建立** ] 按鈕！
 
-如果您查看頁面的右側，您會看到名為 **Docker 命令**的區段。 這會提供一個範例命令，您需要執行此命令才能推送至此存放庫。
+如果您查看頁面的右側，您會看到名為 **Docker 命令** 的區段。 這會提供一個範例命令，您需要執行此命令才能推送至此存放庫。
 
 ![具有推送範例的 Docker 命令](media/push-command.png)
 
-## <a name="push-the-image"></a>推送映射
+## <a name="push-the-image"></a>推送映像
 
 1. 在命令列中，嘗試執行您在 Docker Hub 上看到的 push 命令。 請注意，您的命令將會使用您的命名空間，而不是 "docker"。
 
@@ -94,7 +94,7 @@ ms.locfileid: "89485531"
 
 既然您已經知道，在上一節的結尾，當您重新開機應用程式時，就會遺失所有的 todo 清單專案。 這顯然不是絕佳的使用者體驗，因此您將會瞭解如何在重新開機時保存資料！
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 繼續進行本教學課程！
 

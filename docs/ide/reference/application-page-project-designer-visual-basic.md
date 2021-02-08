@@ -12,21 +12,21 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 675c3fbaaf1a3e49648befebca4927299649b057
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 986179e66335403cda85ba48d1652ac95b9f8171
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871414"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836523"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
 使用 [專案設計工具] 的 [應用程式] 頁面來指定專案的應用程式設定和屬性。
 
-若要存取 [應用程式] 頁面，請在方案總管中選擇專案節點 (而不是 [方案] 節點)。 然後選擇 **Project**  >  功能表列上的 [專案 **屬性**]。 當 [ **專案設計** 工具] 出現時，請選取 [ **應用程式** ] 索引標籤。
+若要存取 [應用程式] 頁面，請在方案總管中選擇專案節點 (而不是 [方案] 節點)。 然後選擇  >  功能表列上的 [專案 **屬性**]。 當 [ **專案設計** 工具] 出現時，請選取 [ **應用程式** ] 索引標籤。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -112,7 +112,7 @@ ms.locfileid: "95871414"
 
 ### <a name="view-windows-settings"></a>檢視 Windows 設定
 
-按一下這個按鈕，以產生並開啟 *應用程式資訊清單* 檔。 Visual Studio 會使用此檔案，來產生應用程式的資訊清單資料。 然後藉由修改 app.config 中的標記，來設定 UAC 要求的執行層級，如下所示 `<requestedExecutionLevel>` ： *app.manifest*
+按一下這個按鈕，以產生並開啟 *應用程式資訊清單* 檔。 Visual Studio 會使用此檔案，來產生應用程式的資訊清單資料。 然後藉由修改 app.config 中的標記，來設定 UAC 要求的執行層級，如下所示 `<requestedExecutionLevel>` ： 
 
 `<requestedExecutionLevel level="asInvoker" />`
 

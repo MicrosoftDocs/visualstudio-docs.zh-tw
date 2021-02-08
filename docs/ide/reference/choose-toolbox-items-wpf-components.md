@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Choose Toolbox Items dialog box, WPF Components tab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b9727d335607f15101222e40be193de2315b7dc
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: d23418cd784b9e0b7c916c1e5629a6da012b9d0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836393"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>選擇工具箱項目、WPF 元件
 
@@ -37,7 +37,7 @@ ms.locfileid: "95871323"
 
 [WPF 元件] 索引標籤中的欄位包含下列資訊：
 
-**Name**
+**名稱**
 
 列出您電腦登錄中項目之 WPF 控制項的名稱。
 
@@ -67,7 +67,7 @@ ms.locfileid: "95871323"
 
 開啟 [開啟舊檔] 對話方塊，該對話方塊可讓您巡覽至包含 WPF 控制項的組件。 請使用此選項載入不在全域組件快取中的組件。
 
-**語言**
+**Language**
 
 顯示包含所選 WPF 控制項之組件的當地語系化語言。
 

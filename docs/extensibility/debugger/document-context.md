@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8e8b5702-5c16-4988-953d-69dd807d8b84
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d19830346ea09731dde608e019109f61011cd60
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: be2e5e168b232f120a22e7e4b39352008fee7418
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840752"
 ---
 # <a name="document-context"></a>檔內容
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 調試中， *檔內容*：
