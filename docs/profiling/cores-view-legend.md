@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e160384c-fcfe-49b3-86b7-229adb736c51
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 043f056587856b5c5774a3a15b3542437e0d4eb7
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: e4486bc20caf580c9a2c1038002693bd92fe616a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720822"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882917"
 ---
 # <a name="cores-view-legend"></a>核心檢視圖例
 核心檢視圖例依色彩和名稱識別每個執行緒。 當中包含顯示跨核心內容切換計數、內容切換總數，以及跨核心之內容切換百分比的欄。 圖例中的列以遞減順序，依跨核心內容切換的次數排序。

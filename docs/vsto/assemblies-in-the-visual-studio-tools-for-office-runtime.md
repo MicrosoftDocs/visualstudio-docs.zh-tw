@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 86c3c2b77b6bbea1e609bbea092b44bd1dee1dd4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 600408231e5085009e5edc546535ca8e5110fc6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882553"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Visual Studio Tools for Office 執行時間中的元件
   當您建立 Office 專案時，Visual Studio 會自動針對專案類型和專案的目標 .NET Framework，加入適用 [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] 組件的參考。 適用於 .NET Framework 3.5、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]和 [!INCLUDE[net_v45](includes/net-v45-md.md)]的 Office 擴充功能包含不同的組件。 如需 Office 擴充功能的詳細資訊，請參閱 [Visual Studio Tools for Office 執行時間總覽](visual-studio-tools-for-office-runtime-overview.md)。
@@ -28,7 +28,7 @@ ms.locfileid: "96848291"
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-4-and-the-net_v45"></a>適用于 .NET Framework 4 和的 Office 擴充功能中的元件 [!INCLUDE[net_v45](includes/net-v45-md.md)]
  下表列出適用於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 和 [!INCLUDE[net_v45](includes/net-v45-md.md)]的 Office 擴充功能隨附的組件。 如需這些元件中之命名空間和類型的相關檔，請參閱 [Visual Studio&#41;中的 Managed reference &#40;Office 程式開發 ](managed-reference-office-development-in-visual-studio.md)。
 
-|組件名稱|描述|
+|組件名稱|Description|
 |-------------------|-----------------|
 |Microsoft.Office.Tools.Common.dll|提供下列類型：<br /><br /> -用來建立功能區自訂和智慧標籤的類型。 **注意：**      和中的智慧標籤已被取代 [!INCLUDE[Excel_14_short](includes/excel-14-short-md.md)] [!INCLUDE[Word_14_short](includes/word-14-short-md.md)] 。<br />-在檔層級自訂中建立執行窗格，以及 VSTO 增益集的自訂工作窗格中的類型。|
 |Microsoft.Office.Tools.Excel.dll|提供代表 Excel 專案之主項目和主控制項的介面，以及支援類型。 如需詳細資訊，請參閱 [使用擴充物件自動化 Excel](automating-excel-by-using-extended-objects.md)。|
@@ -41,7 +41,7 @@ ms.locfileid: "96848291"
 
  以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](includes/net-v45-md.md)] 為目標的專案還會參考下列組件。 這些組件不是 [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] 可轉散發套件的一部分， 而是必須隨方案一起部署的相依組件。 根據預設，這些組件會複製到專案的組建輸出資料夾 (當這些組件的 [複製到本機]  屬性設定為 [True] 時)。 如果使用 ClickOnce 部署專案，這些組件會包含在產生的套件中。
 
-|組件名稱|描述|
+|組件名稱|Description|
 |-------------------|-----------------|
 |Microsoft.Office.Tools.Common.v4.0.Utilities.dll|提供 VSTO 增益集專案中產生之 `ThisAddIn` 類別的基底類別，以及所有專案中產生之功能區類別的基底類別。|
 |Microsoft.Office.Tools.Excel.v4.0.Utilities.dll|提供下列類型：<br /><br /> - `ThisWorkbook` `Sheet` Excel 的檔層級專案中產生之和類別的基類。<br />-Windows Forms 可在 Excel 專案中的工作表上使用的控制項。|
@@ -51,7 +51,7 @@ ms.locfileid: "96848291"
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-35"></a>適用于 .NET Framework 3.5 的 Office 擴充功能中的元件
  下表列出適用於 .NET Framework 3.5 的 Office 擴充功能隨附的組件。 如需這些元件中的命名空間和類別的相關檔，請參閱 Visual Studio 2008 檔中的下列參考章節： [http://go.microsoft.com/fwlink/?LinkId=160658](managed-reference-office-development-in-visual-studio.md) 。
 
-|組件名稱|描述|
+|組件名稱|Description|
 |-------------------|-----------------|
 |Microsoft.Office.Tools.Common.v9.0.dll|提供下列類型：<br /><br /> -VSTO 增益集的 Microsoft .ins 增益集基類。<br />-用來建立功能區自訂和智慧標籤的類別。 **注意：**      和中的智慧標籤已被取代 [!INCLUDE[Excel_14_short](includes/excel-14-short-md.md)] [!INCLUDE[Word_14_short](includes/word-14-short-md.md)] 。<br />-在檔層級自訂中建立執行窗格和 VSTO 增益集自訂工作窗格的類別。|
 |Microsoft.Office.Tools.Excel.v9.0.dll|提供 Excel 方案的主項目和主控制項。 如需詳細資訊，請參閱 [使用擴充物件自動化 Excel](automating-excel-by-using-extended-objects.md)。|

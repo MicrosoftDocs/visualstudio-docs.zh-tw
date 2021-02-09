@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28b419981e8fe1224cef5c25e112d58924a8301b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c3a6e3c7460beb95ad410cead8bd644c37489e16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883229"
 ---
 # <a name="ide-constants"></a>IDE 常數
 

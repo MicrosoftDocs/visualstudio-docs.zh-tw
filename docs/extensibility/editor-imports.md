@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e3a128f0f2873ad1946788b34761aadd1e7021
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: aef66be9797967b8c551ad4d1674c0b7be7aad81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883476"
 ---
 # <a name="editor-imports"></a>編輯器匯入
 您可以匯入一些編輯器服務、factory 和訊息代理程式，以提供您的擴充功能與核心編輯器的不同存取類型。 例如，您可以匯入， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 以提供 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> 指定之內容類型的。  (此導覽器可讓您在文字緩衝區上執行不同種類的搜尋。 ) 

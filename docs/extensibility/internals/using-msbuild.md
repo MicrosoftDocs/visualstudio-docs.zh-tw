@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d5168d739e49ebfc78054ea695f8b73a3e06fbc
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 92c423254c2e2e0a605ab3f7ff2238db41f4b45a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883125"
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
 MSBuild 提供定義完善、可擴充的 XML 格式，可建立專案檔，以完整描述要建立的專案專案、組建工作和組建設定。
@@ -57,5 +57,5 @@ MSBuild 提供定義完善、可擴充的 XML 格式，可建立專案檔，以�
 
 ## <a name="see-also"></a>另請參閱
 - [MSBuild 參考](../../msbuild/msbuild-reference.md)
-- [Msbuild](../../msbuild/msbuild.md)
+- [MSBuild](../../msbuild/msbuild.md)
 - [自訂工具](../../extensibility/internals/custom-tools.md)

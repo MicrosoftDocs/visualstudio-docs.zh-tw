@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ca28446377c2e04766f70c9146e09dc47b8f089
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62430000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882774"
 ---
 # <a name="step-2-write-and-run-code"></a>步驟 2：撰寫和執行程式碼
 
@@ -45,9 +45,9 @@ ms.locfileid: "62430000"
     ![IntelliSense 語法著色和錯誤醒目提示](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > 由於某個人的開發環境是非常私人的事情，因此 Visual Studio 可讓您擁有 Visual Studio 外觀和行為的完整控制權。 選取 [**工具**  >  **選項**] 功能表命令，並流覽 [**環境**] 和 [**文字編輯器**] 索引標籤底下的設定。 根據預設，您會看到有限數目的選項。若要查看每種程式設計語言的每個選項，請選取對話方塊底部的 [顯示所有設定]****。
+    > 由於某個人的開發環境是非常私人的事情，因此 Visual Studio 可讓您擁有 Visual Studio 外觀和行為的完整控制權。 選取 [**工具**  >  **選項**] 功能表命令，並流覽 [**環境**] 和 [**文字編輯器**] 索引標籤底下的設定。 根據預設，您會看到有限數目的選項。若要查看每種程式設計語言的每個選項，請選取對話方塊底部的 [顯示所有設定]。
 
-1. 執行您已撰寫的程式碼，方法是按**Ctrl** + **F5** ，或**Debug**選取 [不使用偵錯工具來  >  **啟動**] 功能表項目。 如果程式碼仍然發生錯誤，Visual Studio 會向您發出警告。
+1. 執行您已撰寫的程式碼，方法是按 **Ctrl** + **F5** ，或選取 [不使用偵錯工具來  >  **啟動**] 功能表項目。 如果程式碼仍然發生錯誤，Visual Studio 會向您發出警告。
 
 1. 當您執行程式時，隨即出現顯示結果的主控台視窗，就如同您從命令列搭配 *PythonApplication1.py* 執行 Python 解譯器。 按某個按鍵來關閉視窗，並返回到 Visual Studio 編輯器。
 
@@ -84,7 +84,7 @@ ms.locfileid: "62430000"
         print(cos(radians(i)))
     ```
 
-1. 使用**Ctrl** + **F5**或**Debug**Start 來重新執行程式，  >  **而不進行調試**程式。 當您完成時，請關閉輸出視窗。
+1. 使用 **Ctrl** + **F5** 或 **Debug** Start 來重新執行程式，  >  **而不進行調試** 程式。 當您完成時，請關閉輸出視窗。
 
 ## <a name="next-step"></a>後續步驟
 

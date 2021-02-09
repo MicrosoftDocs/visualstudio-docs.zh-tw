@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, transformation process
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f0caadfe9abf38b2d83995da7efa32d618b4bfe0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4bf2d8e7d8fc45a45dcb271d867f8f6a39564bab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362648"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882943"
 ---
 # <a name="the-text-template-transformation-process"></a>文字範本轉換流程
 文字模板轉換程式會將文字模板檔案作為輸入，並產生新的文字檔作為輸出。 例如，您可以使用文字模板來產生 Visual Basic 或 c # 程式碼，也可以產生 HTML 報表。
@@ -27,9 +27,9 @@ ms.locfileid: "97362648"
 
 ## <a name="components"></a>單元
 
-|元件|說明|可自訂 (是/否) |
+|元件|描述|可自訂 (是/否) |
 |-|-|-|
-|引擎|引擎元件控制文字模板轉換進程|否。|
+|引擎|引擎元件控制文字模板轉換進程|不會。|
 |主機|主機是引擎和使用者環境之間的介面。 Visual Studio 是文字轉換進程的主控制項。|是。 您可以撰寫自訂主機。|
 |指示詞處理器|指示詞處理器是可處理文字模板中指示詞的類別。 您可以使用指示詞，從輸入來源提供資料給文字模板。|是。 您可以撰寫自訂指示詞處理器|
 

@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d410fd7575b6f71f272f6924d15249f89aa6ebcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97336bf028a02c6c1f90262754dc0c89aa81e1cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540097"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882800"
 ---
 # <a name="use-pylint-to-check-python-code"></a>使用 PyLint 檢查 Python 程式碼
 
@@ -23,7 +23,7 @@ ms.locfileid: "85540097"
 
 ## <a name="run-pylint"></a>執行 PyLint
 
-只要在 [方案總管]**** 中以滑鼠右鍵按一下 Python 專案，並選取 [Python]**** > [執行 PyLint]****：
+只要在 [方案總管] 中以滑鼠右鍵按一下 Python 專案，並選取 [Python] > [執行 PyLint]：
 
 ![操作功能表上 Python 專案的 PyLint 命令](media/code-pylint-command.png)
 
@@ -50,11 +50,11 @@ PyLint 文件的 [command-line options](https://pylint.readthedocs.io/en/latest/
    pylint --generate-rcfile > .pylintrc
    ```
 
-1. 在 Visual Studio 方案總管中，以滑鼠右鍵按一下您的專案，選取 [**加入**  >  **現有專案**]，流覽至 *>.pylintrc*檔案並選取它，然後選取 [**新增**]。
+1. 在 Visual Studio 方案總管中，以滑鼠右鍵按一下您的專案，選取 [**加入**  >  **現有專案**]，流覽至 *>.pylintrc* 檔案並選取它，然後選取 [**新增**]。
 
 1. 開啟檔案進行編輯，它包含您可以使用的各種設定。 若要停用警告，請找出 `[MESSAGES CONTROL]` 區段，然後找出該區段的 `disable` 設定。 您會看到一長串的特定訊息，可以在其中附加您想要的任何警告。 在此範例中，請附加 `,missing-docstring` (包括其中的逗號)。
 
 1. 儲存 *.pylintrc* 檔案，再次執行 PyLint，您會發現警告現在已經隱藏。
 
 > [!Tip]
-> 若要使用網路共用中的 *.pylintrc* 檔案，請利用使用 UNC 路徑或對應磁碟機代號之網路共用上的檔案名稱值來建立名為 `PYLINTRC` 的環境變數。 例如 `PYLINTRC=\\myshare\python\.pylintrc`。
+> 若要使用網路共用中的 *.pylintrc* 檔案，請利用使用 UNC 路徑或對應磁碟機代號之網路共用上的檔案名稱值來建立名為 `PYLINTRC` 的環境變數。 例如： `PYLINTRC=\\myshare\python\.pylintrc` 。

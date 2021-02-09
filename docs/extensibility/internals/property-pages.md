@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d446e731c08b85c2c903c2414528ac2a7370c26
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: dd7d1ce463377daa2800d5c3e635adc71935d9d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883164"
 ---
 # <a name="property-pages"></a>屬性頁
 使用者可使用屬性頁來查看和變更專案設定相依且獨立的屬性。 在 [**屬性**] 視窗或 [方案總管] 工具列上，會針對提供所選取物件之屬性頁視圖的物件啟用 [**屬性頁**] 按鈕。 屬性頁是由環境所建立，而且適用于方案和專案。 不過，它們也可以提供給利用設定相依屬性的專案專案使用。 當專案中的檔案需要不同的編譯器切換設定才能正確建立時，可能會使用這項功能。
@@ -39,7 +39,7 @@ ms.locfileid: "97875527"
 
  屬性頁只有兩個最上層類別可用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ：
 
-- 一般屬性，會顯示所選物件的與設定無關的資訊。 如此一來，當選取其中一個 [通用屬性] 子類別時，就無法使用對話方塊頂端的 [設定]、[平臺] 和 [Configuration Manager 選項。
+- 一般屬性，會顯示所選物件的與設定無關的資訊。 如此一來，當選取其中一個 [通用屬性] 子類別時，就無法使用對話方塊頂端的 [設定]、[平臺] 和 [設定管理員選項。
 
 - 設定屬性，其中包含與解決方案或專案的偵錯工具、優化和組建參數相關的設定相關資訊。
 
@@ -79,7 +79,7 @@ ms.locfileid: "97875527"
 
    執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> 方法，以抓取專案階層和專案專案，或選取的專案。 您可以從 DTE 使用 `SelectedItems.SelectedItem.Project` 和 `SelectedItems.SelectedItem.ProjectItem` 方法。 核心檔中的這些標題底下有範例程式碼 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 - [專案組態物件](../../extensibility/internals/project-configuration-object.md)

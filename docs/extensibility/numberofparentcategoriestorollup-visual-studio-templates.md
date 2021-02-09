@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58c702a70392f4a0330ea51b563570362f51df35
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 1bcf11552ecd137f63f1f3ccca2b1d869f003b3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672407"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883073"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a> (Visual Studio 範本的 NumberOfParentCategoriesToRollUp 元素) 
 指定將在 [ **新增專案** ] 對話方塊中顯示範本的父類別目錄數目。
@@ -29,7 +29,7 @@ ms.locfileid: "94672407"
  \<VSTemplate> \<TemplateData>
  \<NumberOfParentCategoriesToRollUp>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <NumberOfParentCategoriesToRollUp>
@@ -48,7 +48,7 @@ ms.locfileid: "94672407"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 

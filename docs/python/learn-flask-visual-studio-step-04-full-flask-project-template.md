@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa59197e584c6c8062c13354178f883b60b36442
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef9154a34ddd08e7e0a4b9434f7f748b2603aef4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882865"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步驟 4：使用完整的 Flask Web 專案範本
 
@@ -35,11 +35,11 @@ ms.locfileid: "88250559"
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>步驟 4-1：從範本建立專案
 
-1. 在 Visual Studio 中，移至**方案總管**，以滑鼠右鍵按一下本教學課程稍早建立的**LearningFlask**方案，然後選取 [**加入**  >  **新專案**]。  (或者，如果您想要使用新的方案，請**選取 [** 檔案  >  **新增**  >  **專案**]。 ) 
+1. 在 Visual Studio 中，移至 **方案總管**，以滑鼠右鍵按一下本教學課程稍早建立的 **LearningFlask** 方案，然後選取 [**加入**  >  **新專案**]。  (或者，如果您想要使用新的方案，請 **選取 [** 檔案  >  **新增**  >  **專案**]。 ) 
 
 1. 在 [新增專案] 對話方塊中，搜尋並選取 [ **Flask Web 專案** ] 範本，呼叫 "FlaskWeb" 專案，然後選取 **[確定]**。
 
-1. 由於該範本再次包含 *requirements.txt* 檔案，因此 Visual Studio 會詢問要在何處安裝這些相依性。 選擇 [安裝至虛擬環境]**** 選項，然後在 [新增虛擬環境]**** 對話方塊中，選取 [建立]**** 並接受預設值。
+1. 由於該範本再次包含 *requirements.txt* 檔案，因此 Visual Studio 會詢問要在何處安裝這些相依性。 選擇 [安裝至虛擬環境] 選項，然後在 [新增虛擬環境] 對話方塊中，選取 [建立] 並接受預設值。
 
 1. 一旦 Visual Studio 完成虛擬環境的設定之後，請將 **FlaskWeb** 專案設定為 Visual Studio 方案的預設專案，方法是以滑鼠右鍵按一下 **方案總管** 中的專案，然後選取 [ **設定為啟始專案**]。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 
@@ -49,7 +49,7 @@ ms.locfileid: "88250559"
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/flask/run-web-server-toolbar-button.png)
 
-1. 範本建立的應用程式有三個頁面，分別是 Home (首頁)、About (關於) 和 Contact (連絡)，您可以使用瀏覽列在它們之間來回瀏覽。 請花一兩分鐘的時間檢查應用程式的不同組件。 若要透過 [登入]**** 命令來驗證應用程式，請使用先前建立的進階使用者認證。
+1. 範本建立的應用程式有三個頁面，分別是 Home (首頁)、About (關於) 和 Contact (連絡)，您可以使用瀏覽列在它們之間來回瀏覽。 請花一兩分鐘的時間檢查應用程式的不同組件。 若要透過 [登入] 命令來驗證應用程式，請使用先前建立的進階使用者認證。
 
     ![Flask Web 專案應用程式的完整瀏覽器檢視](media/flask/step04-full-app-desktop-view.png)
 
@@ -59,7 +59,7 @@ ms.locfileid: "88250559"
 
 1. 您可以讓這個應用程式繼續執行，在接下來的各節中都會用到它。
 
-    如果您想停止應用程式並[認可對原始檔控制所做的變更](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)，請先開啟 [Team Explorer]**** 中的 [變更]**** 頁面，接著在虛擬環境的資料夾 (可能是 **env**) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]****。
+    如果您想停止應用程式並 [認可對原始檔控制所做的變更](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)，請先開啟 [Team Explorer] 中的 [變更] 頁面，接著在虛擬環境的資料夾 (可能是 **env**) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]。
 
 ### <a name="examine-what-the-template-creates"></a>檢查範本建立的項目
 
@@ -69,7 +69,7 @@ ms.locfileid: "88250559"
   - *runserver.py*：可在開發伺服器上執行應用程式的指令碼。
   - *requirements.txt*：包含 Flask 0.x 的相依性。
 - *FlaskWeb* 資料夾包含所有應用程式檔案：
-  - init.py 會將應用程式程式碼標示為 Python 模組、建立 Flask 物件，以及匯入應用程式的視圖。 * \_ \_ \_ \_ *
+  - init.py 會將應用程式程式碼標示為 Python 模組、建立 Flask 物件，以及匯入應用程式的視圖。 *\_ \_ \_ \_*
   - *views.py* 包含用以轉譯頁面的程式碼。
   - *static* 資料夾包含名為 *content* (CSS 檔案)、*fonts* (字型檔案) 及 *scripts* (JavaScript 檔案) 的子資料夾。
   - *templates* 資料夾針對每個擴充 *layout.html* 的特定頁面，包含 *layout.html* 基底範本，以及 *about.html*、*contact.html* 和 *index.html*。
@@ -80,9 +80,9 @@ ms.locfileid: "88250559"
 
 不過，若要使用現有的虛擬環境，請執行下列作業：
 
-1. 在 Visual Studio 中提示安裝相依性時，請選取 [我將自行安裝]**** 選項。
-1. 在 [方案總管]**** 中的 [Python 環境]**** 節點上按一下滑鼠右鍵，然後選取 [新增現有虛擬環境]****。
-1. 瀏覽並選取包含虛擬環境的資料夾，然後選取 [確定]****。
+1. 在 Visual Studio 中提示安裝相依性時，請選取 [我將自行安裝] 選項。
+1. 在 [方案總管] 中的 [Python 環境] 節點上按一下滑鼠右鍵，然後選取 [新增現有虛擬環境]。
+1. 瀏覽並選取包含虛擬環境的資料夾，然後選取 [確定]。
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>步驟 4-2：了解專案範本所建立的檢視和頁面範本
 
@@ -164,7 +164,7 @@ def about():
 
 為了啟用 Jade，專案範本會先在 *requirements.txt* 中包含 pyjade 套件。
 
-應用程式的* \_ \_ init \_ \_ . .py*檔案包含一行
+應用程式的 *\_ \_ init \_ \_ . .py* 檔案包含一行
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
@@ -227,7 +227,7 @@ block content
 
 請隨意進行 Jinja 和 Jade 語法實驗，以了解哪個語法最適合您。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [投票 Flask Web 專案範本](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)

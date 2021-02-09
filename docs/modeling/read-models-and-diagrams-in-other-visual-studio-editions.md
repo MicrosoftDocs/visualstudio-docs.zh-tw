@@ -9,15 +9,15 @@ helpviewer_keywords:
 - models, versions of Visual Studio
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ffbf39421f507338d14a6b05a667ec4301375067
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a8049471e9e172496381df016c6155410f3bc244
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882930"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中讀取模型和圖表
 
@@ -57,7 +57,7 @@ ms.locfileid: "97360685"
 
 您可以儲存這些變更。 如果您想要讓其他使用者看到您的變更，您必須至少傳送更新的 **. 版面** 配置檔案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [相依性圖表︰參考](../modeling/layer-diagrams-reference.md)
 - [建立應用程式模型](../modeling/create-models-for-your-app.md)

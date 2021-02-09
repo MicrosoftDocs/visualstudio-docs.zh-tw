@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66a79a24225fe2abbb27611e041295711e6e3b38
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 76aa9f7d922e206225080b8f8793239f77764133
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993467"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883216"
 ---
 # <a name="ide-guids"></a>IDE GUID
 

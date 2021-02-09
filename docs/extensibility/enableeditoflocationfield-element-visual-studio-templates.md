@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46af48bf8bf9f128103767be1aa5fa64968e68f5
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 59eee84503ed2017c12dfcca3b7acd12c54e59db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671294"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883437"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a> (Visual Studio 範本的 EnableEditOfLocationField 元素) 
 指定使用者是否可以編輯 [位置] 欄位。
@@ -27,7 +27,7 @@ ms.locfileid: "94671294"
  \<VSTemplate> \<TemplateData>
  \<EnableEditOfLocationField>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <EnableEditOfLocationField> true/false </EnableEditOfLocationField>
@@ -37,14 +37,14 @@ ms.locfileid: "94671294"
  下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
- None
+ 無
 
 ### <a name="child-elements"></a>子元素
- None
+ 無
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 

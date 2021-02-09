@@ -5,18 +5,18 @@ ms.date: 01/07/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f96e9123f613cf50eebbedd393f5bce9cfa633d2
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: b76bc008c30efdee0185e6f122abaff8457acef6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882787"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure App Service 上設定 Python 環境 (Windows)
 
@@ -25,7 +25,7 @@ ms.locfileid: "91830685"
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) 是一種適用於 Web 應用程式的平台即服務供應項目，不論它們是否為透過瀏覽器、您自己的用戶端所使用的 REST API 或是事件觸發處理所存取的網站。 App Service 完全支援使用 Python 來實作應用程式。
 
-Azure App Service 是以一組 App Service「網站延伸模組」** 的形式來支援可自訂的 Python，且每個延伸模組都包含特定版本的 Python 執行階段。 如此一來，您即可將任何所需的套件直接安裝到該環境中，如本文章所述。 您可以在 App Service 當中自訂環境，即不需要維護 Web 應用程式專案中的套件，或使用應用程式程式碼來上傳套件。
+Azure App Service 是以一組 App Service「網站延伸模組」的形式來支援可自訂的 Python，且每個延伸模組都包含特定版本的 Python 執行階段。 如此一來，您即可將任何所需的套件直接安裝到該環境中，如本文章所述。 您可以在 App Service 當中自訂環境，即不需要維護 Web 應用程式專案中的套件，或使用應用程式程式碼來上傳套件。
 
 > [!Tip]
 > 雖然 App Service 預設已在伺服器根資料夾中安裝 Python 2.7 和 Python 3.4，但您無法在這些環境中自訂或安裝套件，因此也不應該依賴這些套件。 反之，您應該倚賴自己所控制的網站延伸模組，如本文章所述。
@@ -33,7 +33,7 @@ Azure App Service 是以一組 App Service「網站延伸模組」** 的形式�
 ## <a name="choose-a-python-version-through-the-azure-portal"></a>透過 Azure 入口網站選擇 Python 版本
 
 1. 在 Azure 入口網站中，為您的 Web 應用程式建立 App Service。
-1. 在 App Service 頁面中，捲動到 [開發工具]**** 區段，再依序選取 [延伸模組]**** 和 [+ 新增]****。
+1. 在 App Service 頁面中，捲動到 [開發工具] 區段，再依序選取 [延伸模組] 和 [+ 新增]。
 1. 向下捲動至含有所需 Python 版本的延伸模組清單中：
 
     ![顯示 Python 延伸模組的 Azure 入口網站](media/python-on-azure-extensions.png)
@@ -41,7 +41,7 @@ Azure App Service 是以一組 App Service「網站延伸模組」** 的形式�
     > [!Tip]
     > 如果您需要較舊的 Python 版本，但網站延伸模組並未列出這個版本，您仍然可以透過 Azure Resource Manager 進行安裝，如下一節所述。
 
-1. 選取延伸模組，並接受法律條款，然後選取 [確定]****。
+1. 選取延伸模組，並接受法律條款，然後選取 [確定]。
 1. 安裝完成時，入口網站即會顯示通知。
 
 ## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>透過 Azure Resource Manager 選擇 Python 版本
@@ -84,7 +84,7 @@ Azure App Service 是以一組 App Service「網站延伸模組」** 的形式�
 
 Python 網站延伸模組會安裝在伺服器的 *d:\home* 下方，適當的 Python 版本和架構資料夾中 (少數較舊版本例外)。 例如，Python 3.6.1 x64 會安裝在 *d:\home\python361x64* 中。 因此，Python 解譯器的完整路徑即為 *d:\home\python361x64\python.exe*。
 
-若要查看 App Service 上的特定路徑，請選取 App Service 頁面的 [延伸模組]****，然後選取清單中的延伸模組。
+若要查看 App Service 上的特定路徑，請選取 App Service 頁面的 [延伸模組]，然後選取清單中的延伸模組。
 
 ![Azure App Service 上的延伸模組清單](media/python-on-azure-extension-list.png)
 
@@ -154,7 +154,7 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
 - `WSGI_HANDLER` 必須指向可從應用程式匯入的 WSGI 應用程式。
 - `WSGI_LOG` 是選擇性的，但建議用於偵錯應用程式。
 
-如需 Bottle、Flask 與 Django Web 應用程式的 *web.config* 內容詳細資料，請參閱[發行至 Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)。
+如需 Bottle、Flask 與 Django Web 應用程式的 *web.config* 內容詳細資料，請參閱 [發行至 Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 ## <a name="install-packages"></a>安裝套件
 
@@ -162,7 +162,7 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
 
 若要直接在伺服器環境中安裝套件，請使用下列方法之一：
 
-| 方法 | 使用量 |
+| 方法 | 使用方式 |
 | --- | --- |
 | [Azure App Service 的 Kudu 主控台](#azure-app-service-kudu-console) | 可透過互動方式安裝套件。 套件必須是純 Python 套件，或必須發行 Wheel。 |
 | [Kudu REST API](#kudu-rest-api) | 可用來自動化安裝套件。  套件必須是純 Python 套件，或必須發行 Wheel。 |

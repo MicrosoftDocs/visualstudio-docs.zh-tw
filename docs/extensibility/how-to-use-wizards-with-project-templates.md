@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21e0e35b43fc3b94a8d029c97f56bd573ebac95f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: eb70931f2c26c248b2e2d41348fa26958d5348b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996366"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883307"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>如何：搭配專案範本使用嚮導
 
@@ -70,7 +70,7 @@ Visual Studio 提供的 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 介
 
 3. 將元件做為資產新增至 VSIX 專案。 開啟 *extension.vsixmanifest* 檔案，然後選取 [**資產**] 索引標籤。在 [**加入新資產**] 視窗的 [ **VisualStudio**]**類型** 中，針對 [**來源**] 選取 [**目前方案中的專案**]，然後針對 [**專案**] 選取 [ **MyProjectWizard**]。
 
-4. 將下列參考加入至 VSIX 專案。  (在 **方案總管** 的 [VSIX 專案] 節點底下，選取 [ **參考**]、按一下滑鼠右鍵，然後選取 [ **加入參考**]。 ) 在 [ **加入參考** ] 對話方塊的 [ **架構** ] 索引標籤中，尋找 [ **System. Windows Forms** 元件]，然後選取它。 也請尋找並選取 **系統** 和 **system。繪圖** 元件。 現在請選取 [ **擴充** 功能] 索引標籤。尋找 **EnvDTE** 元件，然後選取它。 也請尋找並選取 **VisualStudio TemplateWizardInterface** 元件。 按一下 [確定]。
+4. 將下列參考加入至 VSIX 專案。  (在 **方案總管** 的 [VSIX 專案] 節點底下，選取 [ **參考**]、按一下滑鼠右鍵，然後選取 [ **加入參考**]。 ) 在 [ **加入參考** ] 對話方塊的 [ **架構** ] 索引標籤中，尋找 [ **System. Windows Forms** 元件]，然後選取它。 也請尋找並選取 **系統** 和 **system。繪圖** 元件。 現在請選取 [ **擴充** 功能] 索引標籤。尋找 **EnvDTE** 元件，然後選取它。 也請尋找並選取 **VisualStudio TemplateWizardInterface** 元件。 按一下 [確定]  。
 
 5. 將 wizard 執行的類別加入至 VSIX 專案。  (在 **方案總管** 中，以滑鼠右鍵按一下 VSIX 專案節點，然後依序選取 [ **加入**]、[ **新增專案**] 和 [ **類別**]。 ) 將類別命名為 **WizardImplementation**。
 

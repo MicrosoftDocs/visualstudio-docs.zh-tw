@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application page [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d07b5272a31a0c649e12f353aefaa7c63c335eb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882657"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>逐步解說：將應用程式頁面加入至工作流程
   本逐步解說將示範如何新增應用程式頁面，以將衍生自工作流程的資料顯示至工作流程專案。 它是以「 [逐步解說：使用關聯與初始表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)」主題中所述的專案為基礎。
@@ -340,7 +340,7 @@ ms.locfileid: "96915657"
 
      [費用報表摘要] 頁面會列出超過配置金額的所有費用報表、其超過的金額，以及所有報表的總金額。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  如需 SharePoint 應用程式頁面的詳細資訊，請參閱 [建立 sharepoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)。
 
  您可以在下列主題中，使用 Visual Studio 中的 Visual Web Designer，進一步瞭解如何設計 SharePoint 頁面內容：
