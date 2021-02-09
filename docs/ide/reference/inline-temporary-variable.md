@@ -6,18 +6,18 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d24c63bdc1908ecc15c206faeda3e9de511f8f9b
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: ebe062d5dd569ae1d2162ea7334f91d8b82decdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617405"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852371"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>內嵌暫存變數重構
 
@@ -33,7 +33,7 @@ ms.locfileid: "96617405"
 
 **原因：** 移除暫存變數可讓程式碼變得較容易閱讀。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 醒目標示要內嵌的暫存變數，或將文字游標放在要內嵌的暫存變數內：
 

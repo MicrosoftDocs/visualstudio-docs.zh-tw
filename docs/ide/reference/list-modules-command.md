@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0c3f6445a22ee80457e8a7f9f24fb7008f77ed
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 4a38a5423568528d267fd92894b8b06b4e5667c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852059"
 ---
 # <a name="list-modules-command"></a>列出模組命令
 列出目前處理序的模組。

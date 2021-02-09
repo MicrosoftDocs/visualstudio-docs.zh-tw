@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 62aee7c3-d314-4272-a32b-b2818f32fab8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 902a3d361eb06288a0e50e9f384b67a2a8c61aa1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 234bfa31c79fa2c9ef60afd29d655cfc6e585aed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853258"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>介面 (偵錯介面存取 SDK)
 方法會依字母順序列在目錄中的每個介面下，以及在介面頁面上以 Vtable 順序列出。

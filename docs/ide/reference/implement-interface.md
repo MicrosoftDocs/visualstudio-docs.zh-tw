@@ -6,15 +6,15 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0484ed5f63cd4651669a8e3c1f94f5aad96fcc03
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 37adee082f5356180b4e1d58007db48a7f9bb60e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617106"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852488"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>在 Visual Studio 中實作介面
 
@@ -30,7 +30,7 @@ ms.locfileid: "96617106"
 
 **原因：** 您可以手動逐一實作所有介面，不過，此功能將可自動產生所有方法簽章。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將游標放在有紅色曲線的行上，該曲線代表您已參考介面，但尚未實作所有必要的成員。
 

@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b67b28c61624b73787dabe9fd24c4c39ff9b3c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853048"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
 指定中斷點的錯誤類型。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_ERROR_TYPE {
@@ -99,7 +99,7 @@ public enum enum_BP_ERROR_TYPE {
 
 中斷點錯誤類型是由型別和嚴重性所組成。 這表示，中斷點錯誤類型絕不只是類型 (例如， `BPET_TYPE_ERROR` ) 或嚴重性 (例如， `BPET_SEV_GENERAL`) 本身。 `BPET_GENERAL_WARNING` 並 `BPET_GENERAL_ERROR` 為一般警告和錯誤中斷點提供預先定義的值。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

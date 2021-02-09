@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b003fcbd1b38eb5dc919b7f4f361e0b56b585f08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1c9284637be43ab30d35d3e0cb4aea937c0a224
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853251"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>符號類型的語彙階層架構
 下表顯示 [詞彙] 階層中的符號類型。
 
 ## <a name="symbol-types"></a>符號類型
 
-|符號類型|說明|
+|符號類型|Description|
 |-----------------|-----------------|
 |[註釋](../../debugger/debug-interface-access/annotation.md)|在程式碼中指定已標注的位置。|
 |[封鎖](../../debugger/debug-interface-access/block.md)|在函數中指定嵌套的範圍。|

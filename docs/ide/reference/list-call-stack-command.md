@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 845d48f6a0fcc2b844777870bd7c9551f4a4d471
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: ccb55b1c00621f6e97c8f1297e2cedf2abebe73b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852098"
 ---
 # <a name="list-call-stack-command"></a>列出呼叫堆疊命令
 顯示目前的呼叫堆疊。

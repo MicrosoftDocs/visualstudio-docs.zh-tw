@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: c51b5128-848e-4d8e-b2e9-1161339763c3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b2551f8554d96186b90a1eed97a5a48ec5f0405
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e54a2bf7cd37b411dbc2d18d23a3466a4b47ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851201"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 以比較旗標所指定的方式，將記憶體內容與指定陣列中的每個內容進行比較，並傳回符合之第一個內容的索引。
@@ -29,7 +29,7 @@ ms.locfileid: "80727499"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT Compare( 
+HRESULT Compare( 
    CONTEXT_COMPARE        compare,
    IDebugMemoryContext2** rgpMemoryContextSet,
    DWORD                  dwMemoryContextSetLen,

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eda3a4d9242655af1b018664273ceb693c7e775c
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 3e5aad581babafe882fccc13e8594aa60437d9df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96043981"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852137"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 

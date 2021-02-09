@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 09b237704a5b42f75c2239bd6d159e3d58e3025e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 14f6add337ecfae3ab0dc5aa77a72962f2a0a915
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851591"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>如何：使用設計工具建立 SharePoint Web 元件
   您可以藉由將 **視覺 Web 元件** 專案加入至任何 SharePoint 專案，來建立網頁元件。 這會開啟 [Visual Studio 中的 Visual Web Developer designer，您可以在其中將控制項和程式碼新增至網頁元件。 視覺網頁元件的運作方式與 web 元件相同。 唯一的差別在於，您可以在 Visual Web Developer 設計工具中設計視覺化網頁元件。

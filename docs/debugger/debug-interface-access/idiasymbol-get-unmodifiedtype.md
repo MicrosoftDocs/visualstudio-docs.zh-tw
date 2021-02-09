@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bf914dc0-ff84-4f5d-9f75-1733b17f3be0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee138fd361d883fb465711e679d09e6c96ddac4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38ca5d1d1612b0a51dd817c3edc8c3e8d3f9d8fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853405"
 ---
 # <a name="idiasymbolget_unmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 抓取此符號的原始型別。 當 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 設定為類型時使用。
@@ -25,7 +25,7 @@ ms.locfileid: "85461578"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_unmodifiedType( 
+HRESULT get_unmodifiedType( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -44,7 +44,7 @@ HRESULT get_unmodifiedType( 
 ## <a name="remarks"></a>備註
  目前的類型是所傳回之原始類型的修改。 您可以先取得符號的型別，然後詢問原始型別的傳回型別，藉以判斷符號的原始型別。 請注意，某些符號可能不會有原始類型的修改類型。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Dia2。h
 
  程式庫： diaguids .lib

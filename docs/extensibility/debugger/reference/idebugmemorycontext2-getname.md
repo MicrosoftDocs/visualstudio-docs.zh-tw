@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 8c212556-7d9e-4d68-b2a9-8212f50d0287
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8a13c078340eafcff9440e41afd468ba95f9849
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9076e9a1edbc80a1387e83078b97671c3013fe27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727460"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851175"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
 取得此內容的使用者可顯示名稱。
@@ -29,7 +29,7 @@ ms.locfileid: "80727460"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetName( 
+HRESULT GetName( 
    BSTR* pbstrName
 );
 ```

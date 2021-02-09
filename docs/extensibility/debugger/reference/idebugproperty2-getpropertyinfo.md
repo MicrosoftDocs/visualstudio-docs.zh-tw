@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 39d6e942-df72-4c84-a5d9-a386d112714c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ec1c3e29e0dbb6ca069dec696e6645a159ec7e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bcaa016e51b98c165a3c3b0a4872d5def6224819
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850877"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 取得描述屬性的 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 結構。
@@ -28,7 +28,7 @@ ms.locfileid: "80721374"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetPropertyInfo ( 
+HRESULT GetPropertyInfo ( 
    DEBUGPROP_INFO_FLAGS dwFields,
    DWORD                nRadix,
    DWORD                dwTimeout,
@@ -39,7 +39,7 @@ HRESULT GetPropertyInfo ( 
 ```
 
 ```cpp
-int GetPropertyInfo ( 
+int GetPropertyInfo ( 
    enum_DEBUGPROP_INFO_FLAGS dwFields,
    uint                      nRadix,
    uint                      dwTimeout,

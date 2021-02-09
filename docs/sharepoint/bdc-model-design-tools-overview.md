@@ -22,15 +22,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6e78b6809d3136c0db1f558d175706dc0ecd75b
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b398d9c00caf3a4fa2ca58bafa3273673a305859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850308"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851682"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型設計工具總覽
   您可以使用 [BDC 設計工具]、[ **Bdc 方法詳細資料** ] 視窗和 [ **bdc Explorer**]，來設計 (Bdc) 模型的商務資料連線。
@@ -75,7 +75,7 @@ ms.locfileid: "94850308"
 
  如需詳細資訊，請參閱 [如何：定義參數的類型描述](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)元。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：建立 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)
 - [如何：將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [如何：加入搜尋工具方法](../sharepoint/how-to-add-a-finder-method.md)

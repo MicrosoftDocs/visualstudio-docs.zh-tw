@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff3730d3903b71db78c8ecbc025bfe44d6e37f7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738056"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853028"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
 提供選擇性旗標，可在設定中斷點時用來指定其他資訊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_FLAGS {
@@ -59,7 +59,7 @@ public enum enum_BP_FLAGS {
 
 這些值可能會與位結合 `OR` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

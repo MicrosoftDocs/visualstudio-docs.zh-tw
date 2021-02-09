@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 587cabb19105041b73c4767e26ab20fd074d148f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852449"
 ---
 # <a name="import-and-export-settings-command"></a>匯入和匯出設定命令
 
 匯入、匯出或重設 Visual Studio 設定。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cmd
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
@@ -46,7 +46,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 ## <a name="remarks"></a>備註
 
-執行此命令而不使用切換參數，會開啟 [匯入和匯出設定精靈]****。 如需詳細資訊，請參閱[同步處理您的設定](../synchronized-settings-in-visual-studio.md)和[環境設定](../environment-settings.md)。
+執行此命令而不使用切換參數，會開啟 [匯入和匯出設定精靈]。 如需詳細資訊，請參閱[同步處理您的設定](../synchronized-settings-in-visual-studio.md)和[環境設定](../environment-settings.md)。
 
 ## <a name="example"></a>範例
 

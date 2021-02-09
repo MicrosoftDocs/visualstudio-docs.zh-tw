@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 548116fc3c9b360a866f14e32074111dfdc872d9
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 2622c5e86a22b4dc7ef9bf1fa3c426a588f40bab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851994"
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性
 
@@ -35,7 +35,7 @@ ms.locfileid: "98533871"
 
 ## <a name="list-of-common-properties-and-parameters"></a>通用屬性和參數的清單
 
-| 屬性或參數名稱 | 專案類型 | 說明 |
+| 屬性或參數名稱 | 專案類型 | Description |
 |------------------------------------| - | - |
 | AdditionalLibPaths | .NET | 指定其他資料夾，編譯器會在這些資料夾中尋找參考組件。 |
 | AddModules | .NET | 讓編譯器將所指定檔案的類型資訊全部提供給您正在編譯的專案。 這個屬性相當於 `/addModules` 編譯器參數。 |

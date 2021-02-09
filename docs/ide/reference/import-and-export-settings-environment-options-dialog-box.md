@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4e69f97b-2bd2-4619-a5f9-92ca2e814de3
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e2ef878ec548baed476205cbc3dcaddce67355a
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 0d53c5a553a93f6de032709a3c8d91303cad26d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616951"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852345"
 ---
 # <a name="options-dialog-box-environment--import-and-export-settings"></a>選項對話方塊：環境匯 \> 入和匯出設定
 

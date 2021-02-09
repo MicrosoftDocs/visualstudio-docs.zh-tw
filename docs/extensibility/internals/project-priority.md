@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1389668bbcd1239fbb1ae0e865478bf0e0f6a7e8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 75ea6485e2ae613ca03fb3900e3e2ba9d415af95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852592"
 ---
 # <a name="project-priority"></a>專案優先順序
 專案專案通常是方案中唯一一個專案的成員。 因此，IDE 可以輕鬆地判斷要使用哪個專案來開啟專案。 但是，如果專案是多個專案的成員，則 IDE 會使用優先順序配置來判斷開啟專案的最佳專案。
@@ -34,7 +34,7 @@ ms.locfileid: "97877373"
 
 - 指定最高優先順序的專案會提供開啟檔的內容。 如果兩個專案傳回相等的優先順序值，則偏好使用中的專案。 如果方案中沒有任何專案回應可以開啟檔，則 IDE 會將檔放在其他檔案專案中。 如需詳細資訊，請參閱 [其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)
 - [如何︰針對開啟的文件開啟編輯器](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)

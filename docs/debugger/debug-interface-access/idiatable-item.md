@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eae11b26-4807-400c-be25-e85bbc0c6b20
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 18efd1113d66d36b99dd33eb3e79cb0cc7e8bb05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db3baeaf7c30e0fa381c1d99d7a53e1eac5e2862
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853265"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 抓取資料表中所指定專案的參考。
@@ -25,7 +25,7 @@ ms.locfileid: "85461298"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD      index,
    IUnknown** element
 );

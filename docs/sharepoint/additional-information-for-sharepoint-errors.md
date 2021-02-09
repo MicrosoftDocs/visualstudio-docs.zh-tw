@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 240913e93dc1945846613ac1ecc8d0141368f7b3
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 5ce41bdf53ee55bfcbcec0cc2a2271ba9914aed8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851734"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint 錯誤的其他資訊
   您可以在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 疑難排解主題和公用論壇中，找到疑難排解 SharePoint 工具錯誤和警告的協助。
@@ -48,5 +48,5 @@ ms.locfileid: "94850425"
 
  如果您仍然找不到您需要的答案，可以存取線上支援選項，例如聯絡 Microsoft 產品支援服務或搜尋知識庫文章。 如需詳細資訊，請參閱 [Microsoft 說明及支援](https://support.microsoft.com/) 頁面。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)

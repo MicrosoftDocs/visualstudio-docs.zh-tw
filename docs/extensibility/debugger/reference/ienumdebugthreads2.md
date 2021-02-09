@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbbe047c08f8e91264163d028c1b40d94cde97fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e3771545d4a5fe545382344d17ed5ea929999d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852774"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 這個介面會列舉在目前的 debug 會話中執行的執行緒。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugThreads2 : IUnknown
@@ -39,7 +39,7 @@ IEnumDebugThreads2 : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|抓取列舉序列中指定數目的執行緒。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|抓取列舉序列中指定數目的執行緒。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|略過列舉序列中指定數目的執行緒。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|將列舉順序重設為開頭。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|建立列舉值，其中包含與目前相同的列舉狀態。|
@@ -48,7 +48,7 @@ IEnumDebugThreads2 : IUnknown
 ## <a name="remarks"></a>備註
  Visual Studio 通常會取得此介面來更新 [ **執行緒** ] 視窗，以及取得清單的第一個執行緒，以便呼叫 [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)、 [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)和 [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0214d3e8d097efa31b3f8b02e67f419226a093a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da51eda00bd2c80152029e503cfb33089e608683
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853307"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 描述項號實例的屬性。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDiaSymbol : IUnknown
+IDiaSymbol : IUnknown
 ```
 
 ## <a name="methods-in-alphabetical-order"></a>依字母順序排列的方法
@@ -34,7 +34,7 @@ IDiaSymbol : IUnknown
 > [!NOTE]
 > 根據符號的類型而定，符號只會傳回其中一些方法的有意義的資料。 如果方法 `S_OK` 傳回，則該方法會傳回有意義的資料。
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)|抓取符號的所有子系。|
 |[IDiaSymbol::findChildrenEx](../../debugger/debug-interface-access/idiasymbol-findchildrenex.md)|抓取符號的子系。 這個方法是 [IDiaSymbol：： findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)的擴充版本。|
@@ -335,7 +335,7 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 }
 ```
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 `Header:` Dia2。h
 
 程式庫： diaguids .lib

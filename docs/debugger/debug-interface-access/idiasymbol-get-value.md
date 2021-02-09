@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2e40174a-2a61-4e5f-bb32-9e0ceec2178a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a36da3feecfe1af664e35fa50d616d2a94fb0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e04a21f5f0a8273975f0a0437f28808696de2da
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853391"
 ---
 # <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
 捕獲常數的值。

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 37be8d3e5a652bb55b1d71f66c0e9c8ca4cc2f16
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: d9dc19c69bf99ba6f66648f396468ff36444eb3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617366"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852267"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>選項對話方塊：環境 \> 國際設定
 

@@ -6,18 +6,18 @@ ms.date: 07/27/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d2ac806b4a83b23a783c59eeee5df801c9237685
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2b73b4d73c36215b70b7551298492e39b69e179f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94900916"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852332"
 ---
 # <a name="intellisense-completion-for-unimported-types-and-extension-methods"></a>未匯入類型和擴充方法的 IntelliSense 完成
 
@@ -33,7 +33,7 @@ ms.locfileid: "94900916"
 
 **原因：** 您不需要手動將 using 語句新增至您的檔案。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 當您開始輸入在專案中具有相依性之類型或擴充方法的名稱時，IntelliSense 會提供建議。 未匯入命名空間中的專案會將其包含的命名空間顯示為尾碼。
 
@@ -48,5 +48,5 @@ ms.locfileid: "94900916"
 
 ## <a name="see-also"></a>另請參閱
 
-- [IntelliSense](../using-intellisense.md)
+- [智慧](../using-intellisense.md)
 - [重構](../refactoring-in-visual-studio.md)

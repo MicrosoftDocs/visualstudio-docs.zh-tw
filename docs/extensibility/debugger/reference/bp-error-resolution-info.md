@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a6b83242-5728-4716-80f3-840c96d59c6c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d48c4bc888db0ad8be6a0d6e98eeea2223a27e8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 489d1f8738d5f6d9655bf7978f617ca2c2a37c8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853061"
 ---
 # <a name="bp_error_resolution_info"></a>BP_ERROR_RESOLUTION_INFO
 描述錯誤中斷點的解決方式，包括位置、程式和執行緒。
@@ -71,7 +71,7 @@ public struct BP_ERROR_RESOLUTION_INFO {
 ## <a name="remarks"></a>備註
 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)方法會傳回這個結構。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

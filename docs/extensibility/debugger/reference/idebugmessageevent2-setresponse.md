@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 2a5e318d-3225-4abd-83f1-28323baff6c0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cc0ca743deac3e7e635d378f8172ddb4c7e39c72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6271566ce701e27164026fdce4ef6ea1455693e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727387"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851019"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
 從訊息方塊設定回應（如果有的話）。
@@ -29,13 +29,13 @@ ms.locfileid: "80727387"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT SetResponse( 
+HRESULT SetResponse( 
    DWORD dwResponse
 );
 ```
 
 ```csharp
-int SetResponse( 
+int SetResponse( 
    uint dwResponse
 );
 ```

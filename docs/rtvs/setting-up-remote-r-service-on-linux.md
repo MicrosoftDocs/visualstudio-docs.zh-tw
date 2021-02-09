@@ -6,15 +6,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 586f3038ff4bb091fb99160d7965ad927eda070a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62809553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851812"
 ---
 # <a name="remote-r-service-for-linux"></a>適用於 Linux 的遠端 R 服務
 
@@ -88,18 +88,18 @@ ms.locfileid: "62809553"
 #### <a name="create-a-vm"></a>建立 VM
 
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-1. 巡覽至 [虛擬機器]，然後選取 [新增]****。
+1. 巡覽至 [虛擬機器]，然後選取 [新增]。
 1. 在可用的 VM 映像清單中，搜尋它並選取下列項目中的其中一個：
     - Ubuntu Server：`Ubuntu Server 16.04 LTS`
     - 資料科學 VM：`Linux Data Science` (請參閱[資料科學虛擬機器](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/)以取得詳細資料)
-1. 將部署模型設為 `Resource manager`，然後選取 [建立]****。
+1. 將部署模型設為 `Resource manager`，然後選取 [建立]。
 1. 為 VM 選擇一個名稱，提供使用者名稱及密碼 (由於系統不支援 SSH 公開金鑰登入，因此需要密碼)。
 1. 對 VM 設定進行任何其他想要的變更。
-1. 選擇 VM 大小、驗證設定，然後選取 [建立]****。 建立 VM 之後，請繼續下一節。
+1. 選擇 VM 大小、驗證設定，然後選取 [建立]。 建立 VM 之後，請繼續下一節。
 
 #### <a name="configure-the-vm"></a>設定 VM
 
-1. 在 VM 的 [網路]**** 區段中，新增 5444 作為允許的輸入連接埠。 若要使用不同的連接埠，請在 RTVS 精靈設定檔案 (*/etc/rtvs/rtvsd.config.json*) 中變更設定。
+1. 在 VM 的 [網路] 區段中，新增 5444 作為允許的輸入連接埠。 若要使用不同的連接埠，請在 RTVS 精靈設定檔案 (*/etc/rtvs/rtvsd.config.json*) 中變更設定。
 1. (選擇性) 設定 DNS 名稱；您也可以使用 IP 位址。
 1. 使用 SSH 用戶端 (例如適用於 Windows 的 PuTTY) 連線到 VM。
 1. 遵循上述適用於[實體 Ubuntu 電腦](#physical-ubuntu-computer)的指示。

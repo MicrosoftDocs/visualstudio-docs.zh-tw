@@ -19,15 +19,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], resource strings
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ecc2bfab37e534e4edc005273ab5fc826b771228
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 49546d11dbf4f19bb2fd826ace2850468f780d13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304357"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851552"
 ---
 # <a name="how-to-use-a-resource-file-in-a-sharepoint-project"></a>如何使用 SharePoint 專案中的資源檔
 

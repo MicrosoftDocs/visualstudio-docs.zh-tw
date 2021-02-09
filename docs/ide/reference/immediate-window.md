@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 342a2a34528134ed1174058b6701c77c9217fc63
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 73d3d2cc42e958c59ef058a1f69921145ea18475
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617015"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852475"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 

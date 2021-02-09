@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a4f2649c-6702-491c-90a1-d6d669258c51
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f18ac0aa983c36ec52cac22962d9639a30027c28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9fa72582bccd0193ab16375e04b8196275203531
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853356"
 ---
 # <a name="idiasymbolget_virtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
 捕獲虛擬基底指標的位移。
@@ -25,7 +25,7 @@ ms.locfileid: "85461445"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_virtualBasePointerOffset ( 
+HRESULT get_virtualBasePointerOffset ( 
    LONG* pRetVal
 );
 ```

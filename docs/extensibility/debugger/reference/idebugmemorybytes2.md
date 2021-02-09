@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: d7647575-0e06-4190-88f5-ca40b82209a4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56cb234e2295c5c9c08c2a2e9271e1c173524875
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9d4ee145d900a79a48db44f95a125e87bd10f67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851240"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
 此介面代表位元組的記憶體。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugMemoryBytes2 : IUnknown
@@ -48,7 +48,7 @@ IDebugMemoryBytes2 : IUnknown
 
  Visual Studio 的 **記憶體 View** 呼叫 [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) 來取得 `IDebugMemoryBytes2` 存取系統記憶體的介面。 要存取的位址是藉由將輸入為位址的運算式剖析至記憶體視圖，然後使用 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 來取得介面來評估剖析的運算式而取得 `IDebugProperty2` 。 呼叫 [GetMemoryCoNtext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) 會傳回描述記憶體位址的 [IDebugMemoryCoNtext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 。 此記憶體內容接著會傳遞至 [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) 和 [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

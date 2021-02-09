@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2590387b-5d36-4116-9a75-737957b8898e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 162a64c9118bdcde23208082350005e607a237b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df4eb1278a0fe436899c1da989c4c63cfa98cac3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853008"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 傳回結構，描述物件與其在其範圍或容器內的位置。

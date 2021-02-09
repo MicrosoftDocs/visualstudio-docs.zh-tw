@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 08c7f091-1816-4d64-8834-f9ecaac5c58d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c190710afc9231662fa12c5552d6f73e0268b643
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec9531d05c7009bcdd0998cb44146bf3f00c2e18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727471"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851188"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
 抓取描述內容的 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 結構。
@@ -29,7 +29,7 @@ ms.locfileid: "80727471"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetInfo( 
+HRESULT GetInfo( 
    CONTEXT_INFO_FIELDS dwFields,
    CONTEXT_INFO*       pInfo
 );

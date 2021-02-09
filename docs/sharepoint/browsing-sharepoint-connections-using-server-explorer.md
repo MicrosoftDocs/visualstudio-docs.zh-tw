@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 79e8d3dbc1dab865b2ab9048cea8d13c478f2a12
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b188d95e6478e488fc896b0622fb8d145ef2a741
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851604"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>使用伺服器總管流覽 SharePoint 連接
   您現在可以流覽 **伺服器總管** 中的本機 SharePoint 連接。 使用這項技術就可以巡覽系統中的 SharePoint 網站元件。 SharePoint 網站元件（例如清單定義和內容類型）會出現在 **伺服器總管** 樹狀檢視中名為 [ **SharePoint 連接**] 的節點中。 若要顯示 **伺服器總管**，請在功能表列上選擇 [ **View**  >  **伺服器總管**]。 除了顯示 SharePoint 網站元件之外，您還可以使用捷徑功能表的命令移除項目、檢視其屬性或重新整理樹狀檢視。
@@ -37,7 +37,7 @@ ms.locfileid: "94849827"
 ## <a name="node-shortcut-menu-commands"></a>節點快捷方式功能表命令
  每個節點都有快捷方式功能表，您可以用滑鼠右鍵按一下節點或選擇它，然後選擇 **Shift** + **F10** 鍵來存取。 節點命令可能包含下列各項：
 
-|命令名稱：|說明|
+|命令名稱：|Description|
 |------------------|-----------------|
 |重新整理|更新樹狀檢視，以反映自從上一次顯示節點之後可能發生的任何變更。|
 |刪除|從樹狀檢視中移除選取的節點。 **注意：**  此命令只會在 [ **Sharepoint 連接** ] 節點下所列的 sharepoint 連接上啟用。|
@@ -47,9 +47,9 @@ ms.locfileid: "94849827"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[如何：加入或移除 SharePoint 連接](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|描述將新的 SharePoint 網站加入至 **伺服器總管** 中 [ **sharepoint 連接**] 節點所需的步驟。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

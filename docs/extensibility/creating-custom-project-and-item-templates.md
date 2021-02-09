@@ -7,15 +7,15 @@ ms.topic: overview
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78770c74e5b866ad6791db01a448d46231edfd2a
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 2dc5f347e3f5823613d11c8c217fcb2d29635867
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851344"
 ---
 # <a name="create-custom-project-and-item-templates"></a>建立自訂專案和專案範本
 
@@ -40,7 +40,7 @@ Visual Studio SDK 包含專案範本，可建立自訂專案範本和自訂專�
 
 2. 視專案的需要，在專案中加入和移除專案。 請勿移除可編輯的專案檔、 *AssemblyInfo* 檔或 *.vstemplate* 檔案。
 
-3. 更新 *.vstemplate* 檔案，以反映任何新增和刪除動作。 [專案專案](../extensibility/project-element-visual-studio-templates.md)必須包含範本中[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)要包含之每個檔案的專案專案專案。
+3. 更新 *.vstemplate* 檔案，以反映任何新增和刪除動作。 [專案專案](../extensibility/project-element-visual-studio-templates.md)必須包含範本中[](../extensibility/projectitem-element-visual-studio-item-templates.md)要包含之每個檔案的專案專案專案。
 
 4. 修改您的程式碼檔案和其他使用者對應內容，並新增適當的參數替代。
 
@@ -58,7 +58,7 @@ Visual Studio SDK 包含專案範本，可建立自訂專案範本和自訂專�
 
 2. 視專案的需要，在專案中加入和移除專案。
 
-3. 更新 *.vstemplate* 檔案，以反映任何新增和刪除動作。 [專案專案](../extensibility/project-element-visual-studio-templates.md)必須包含範本中[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)要包含之每個檔案的專案專案專案。
+3. 更新 *.vstemplate* 檔案，以反映任何新增和刪除動作。 [專案專案](../extensibility/project-element-visual-studio-templates.md)必須包含範本中[](../extensibility/projectitem-element-visual-studio-item-templates.md)要包含之每個檔案的專案專案專案。
 
 4. 修改您的程式碼檔案和其他使用者對應內容，並新增適當的參數替代。
 

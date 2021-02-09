@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db32c05b4a1f4536e71b4ef233758f747a958327
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1b4722f04ae46f85d7cc70dadf6127330e8f6616
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850399"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851709"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>將自訂資料與 SharePoint 工具延伸模組產生關聯
   您可以將自訂資料新增至 SharePoint 工具延伸模組中的特定物件。 當您的延伸模組中有您想要稍後從擴充功能的其他程式碼存取的資料時，這非常有用。 您可以將資料與延伸模組中的物件建立關聯，然後再從相同的物件取得資料，而不是執行自訂方式來儲存及存取資料。
@@ -82,7 +82,7 @@ ms.locfileid: "94850399"
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [SharePoint 工具擴充功能的程式設計概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
 - [逐步解說：使用專案範本建立自訂動作專案專案（第1部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [逐步解說：擴充伺服器總管以顯示 web 元件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
