@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce84fec7a0d9223575828da105e46f43cc6cab09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4803698aba910bc910fa36bf5c4f7e23ab82d247
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912711"
 ---
 # <a name="program_node_array"></a>PROGRAM_NODE_ARRAY
 包含物件的陣列，這些物件會描述感興趣的程式。
@@ -28,16 +28,16 @@ ms.locfileid: "80713806"
 ## <a name="syntax"></a>語法
 
 ```cpp
-typedef struct tagPROGRAM_NODE_ARRAY {
-   DWORD                dwCount;
-   IDebugProgramNode2** Members;
-} PROGRAM_NODE_ARRAY;
+typedef struct tagPROGRAM_NODE_ARRAY {
+   DWORD                dwCount;
+   IDebugProgramNode2** Members;
+} PROGRAM_NODE_ARRAY;
 ```
 
 ```csharp
-public struct tagPROGRAM_NODE_ARRAY {
-   public uint                 dwCount;
-   public IDebugProgramNode2[] Members;
+public struct tagPROGRAM_NODE_ARRAY {
+   public uint                 dwCount;
+   public IDebugProgramNode2[] Members;
 }
 ```
 
@@ -51,7 +51,7 @@ public struct tagPROGRAM_NODE_ARRAY {
 ## <a name="remarks"></a>備註
  此結構是 [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) 結構的一部分，而該結構接著會透過呼叫 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 方法來填入。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

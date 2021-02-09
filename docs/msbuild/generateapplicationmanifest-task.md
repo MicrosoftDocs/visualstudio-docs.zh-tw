@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 2af490f27ab1cdecfe57da9253aff6c4247c7223
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914887"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 工作
 
@@ -36,7 +36,7 @@ ms.locfileid: "92436554"
 
 下表說明 `GenerateApplicationManifest` 工作的參數。
 
-| 參數 | 描述 |
+| 參數 | Description |
 |---------------------------------| - |
 | `AssemblyName` | 選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Name` 欄位。 如果未指定此參數，會從 `EntryPoint` 或 `InputManifest` 參數來推斷名稱。 如果無法建立名稱，工作便會擲回錯誤。 |
 | `AssemblyVersion` | 選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Version` 欄位。 如果未指定此參數，就會使用 "1.0.0.0" 的預設值。 |
@@ -57,8 +57,8 @@ ms.locfileid: "92436554"
 | `OSVersion` | 選擇性的 `String` 參數。<br /><br /> 指定應用程式所需的最小必要作業系統 (OS) 版本。 例如，"5.1.2600.0" 的值表示作業系統是 Windows XP。 如果未指定此參數，便會使用表示 Windows 98 Second Edition 的值 "4.10.0.0"，也就是 .NET Framework 支援的最小 OS 版本。 如果工作是要產生原生資訊清單，則會忽略這項輸入。 |
 | `OutputManifest` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 輸出參數。<br /><br /> 指定所產生的輸出資訊清單檔名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷輸出檔的名稱。 |
 | `Platform` | 選擇性的 `String` 參數。<br /><br /> 指定應用程式的目標平台。 此參數的值如下：<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> 如果未指定此參數，工作會預設為 `AnyCPU`。 |
-| `Product` | 選擇性的 `String` 參數。<br /><br /> 指定應用程式的名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷名稱。 此名稱可用來作為 [開始]**** 功能表上的捷徑名稱，而且是出現在 [新增或移除程式]**** 對話方塊中名稱的一部分。 |
-| `Publisher` | 選擇性的 `String` 參數。<br /><br /> 指定應用程式的發行者。 如果未指定此參數，會從已註冊使用者或產生的資訊清單識別來推斷名稱。 此名稱可用來作為 [開始]**** 功能表上的資料夾名稱，而且是出現在 [新增或移除程式]**** 對話方塊中名稱的一部分。 |
+| `Product` | 選擇性的 `String` 參數。<br /><br /> 指定應用程式的名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷名稱。 此名稱可用來作為 [開始] 功能表上的捷徑名稱，而且是出現在 [新增或移除程式] 對話方塊中名稱的一部分。 |
+| `Publisher` | 選擇性的 `String` 參數。<br /><br /> 指定應用程式的發行者。 如果未指定此參數，會從已註冊使用者或產生的資訊清單識別來推斷名稱。 此名稱可用來作為 [開始] 功能表上的資料夾名稱，而且是出現在 [新增或移除程式] 對話方塊中名稱的一部分。 |
 | `RequiresMinimumFramework35SP1` | 選擇性的 `Boolean` 參數。<br /><br /> 如果為 true，則應用程式需要 .NET Framework 3.5 SP1 或更新版本。 |
 | `TargetCulture` | 選擇性的 `String` 參數。<br /><br /> 識別應用程式的文化特性，並為產生的資訊清單指定組件身分識別的 `Language` 欄位。 如果未指定此參數，則會假設應用程式不因文化特性而異。 |
 | `TargetFrameworkMoniker` | 選擇性的 `String` 參數。<br /><br /> 指定目標 Framework Moniker。 |
@@ -78,7 +78,7 @@ ms.locfileid: "92436554"
 
 ## <a name="item-metadata"></a>項目中繼資料
 
-|中繼資料名稱|描述|
+|中繼資料名稱|Description|
 |-------------------|-----------------|
 |`DependencyType`|指出相依性是以應用程式或必要條件進行發行和安裝。 這項中繼資料可用於所有相依性，但不能用於檔案。 此中繼資料可用的值如下：<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Install 是預設值。|
 |`AssemblyType`|指出相依性為 Managed 或原生組件。 這項中繼資料可用於所有相依性，但不能用於檔案。 此中繼資料可用的值如下：<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` 是預設值，表示資訊清單產生器將會自動決定組件類型。|
@@ -322,9 +322,9 @@ ms.locfileid: "92436554"
 
 ## <a name="example-4"></a>範例 4
 
-此範例使用 `GenerateApplicationManifest` 工作來產生應用程式 Test.exe** 的原生資訊清單，並參考原生元件 Alpha.dll** 和隔離的 COM 元件 Bravo.dll**。
+此範例使用 `GenerateApplicationManifest` 工作來產生應用程式 Test.exe 的原生資訊清單，並參考原生元件 Alpha.dll 和隔離的 COM 元件 Bravo.dll。
 
-此範例會產生 Test.exe.manifest**，讓應用程式 XCOPY 可部署並利用「免註冊的 COM」。
+此範例會產生 Test.exe.manifest，讓應用程式 XCOPY 可部署並利用「免註冊的 COM」。
 
 > [!NOTE]
 > 在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 此範例會產生完整運作的 ClickOnce 部署。

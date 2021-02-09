@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 76a365fe-6439-49db-8603-34058b78e5a8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b5f5aa55ac9d8c13da605a09986569c534a30bf
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 33c3da5387c67e14ced99918273800709b3b67b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913114"
 ---
 # <a name="native-run-time-checks-customization"></a>自訂原生執行階段檢查
 當您使用 **/rtc** 進行編譯時 (執行時間檢查) 或使用 `runtime_checks` Pragma 時，C 執行時間程式庫會提供原生執行時間檢查。 有時候，您可能想要自訂執行階段檢查：
@@ -56,7 +56,7 @@ ms.locfileid: "97975195"
 ## <a name="query-for-information-about-run-time-checks"></a>查詢執行階段檢查的相關資訊
  `_RTC_NumErrors` 會傳回由執行階段錯誤檢查偵測到的錯誤類型數目。 若要取得每個錯誤的簡短說明，您可以從 0 迴圈至 `_RTC_NumErrors` 傳回值，並將重複值傳給每一個迴圈上的 `_RTC_GetErrDesc`。 如需詳細資訊，請參閱 [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) 和 [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：使用原生 Run-Time 檢查](../debugger/how-to-use-native-run-time-checks.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [_CrtDbgReport、_CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

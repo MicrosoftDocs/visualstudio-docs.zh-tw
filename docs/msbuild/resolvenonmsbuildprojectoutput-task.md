@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a0b8fcec-8c8d-4867-85ac-5304c5108e5e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3486788331574aa70874c0deeefa3c553404c166
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 98d8e483b8ad03f02283620f65ec0351d9d64051
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912455"
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput 工作
 
@@ -33,7 +33,7 @@ ms.locfileid: "93048518"
 
  下表說明 `ResolveNonMSBuildProjectOutput` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`PreresolvedProjectOutputs`|選擇性的 `String` 參數。<br /><br /> 指定 XML 字串，其中包含已解析的專案輸出。|
 |`ProjectReferences`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定專案參考。|
@@ -44,7 +44,7 @@ ms.locfileid: "93048518"
 
  除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

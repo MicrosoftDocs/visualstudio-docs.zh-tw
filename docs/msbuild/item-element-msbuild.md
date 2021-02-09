@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51ecf68cacf0edca90893931642cd7fb6064f972
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 59a0660bb78e966150a6ef8d17dc24512a901a26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913942"
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
 
@@ -101,7 +101,7 @@ ms.locfileid: "92904647"
 
 使用標記法 @ (\<myType>) 可將型別的專案集合 \<myType> ，展開為以分號分隔的字串清單，並傳遞至參數。 如果參數的類型是 `string`，則參數的值會是以分號分隔的項目清單。 如果參數是字串陣列 (`string[]`)，則每個項目都會根據分號的位置，插入到陣列中。 如果工作參數的類型是 <xref:Microsoft.Build.Framework.ITaskItem>`[]`，則值就是項目集合的內容再加上任何附加的中繼資料。 若要使用分號以外的字元來分隔每個項目，請使用語法 @(\<myType>, '\<separator>')。
 
-MSBuild 引擎可以評估萬用字元（例如 `*` 和） `?` 以及遞迴萬用字元（例如 */ \* \* / \* .cs* ）。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
+MSBuild 引擎可以評估萬用字元（例如 `*` 和） `?` 以及遞迴萬用字元（例如 */ \* \* / \* .cs*）。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
 ## <a name="examples"></a>範例
 
@@ -126,7 +126,7 @@ MSBuild 引擎可以評估萬用字元（例如 `*` 和） `?` 以及遞迴萬�
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [項目](../msbuild/msbuild-items.md)
 - [一般 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)

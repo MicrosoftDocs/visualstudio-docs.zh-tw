@@ -6,15 +6,15 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ebce688317a04bdc223659fb0c085b2f0223119d
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 57e6490b9375e3f59e0d214ae3f5300f2276964d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914891"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>在 Visual Studio 中產生欄位、屬性或區域變數
 
@@ -30,7 +30,7 @@ ms.locfileid: "96617496"
 
 **原因：** 您可以在使用欄位、屬性或區域變數之前先宣告這些項目，不過，此功能將可自動產生宣告和類型。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將游標放在有紅色曲線的行上。 紅色波浪線表示欄位、本機或尚不存在的屬性。
 

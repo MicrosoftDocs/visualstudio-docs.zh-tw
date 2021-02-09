@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee73ea3a9b65635cf14d4d345bf22de4e9593989
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07e48a59f044f8f3ccc94576210a51e7d70d9b66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387079"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912952"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 從停止狀態繼續執行此程式。 任何先前的執行狀態 (（例如步驟) ）都會保留，且程式會再次開始執行。
@@ -31,13 +31,13 @@ ms.locfileid: "86387079"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT Continue( 
+HRESULT Continue( 
    IDebugThread2* pThread
 );
 ```
 
 ```csharp
-int Continue( 
+int Continue( 
    IDebugThread2 pThread
 );
 ```

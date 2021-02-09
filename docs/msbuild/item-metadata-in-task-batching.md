@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1d67f740857dc93b997e206c43dd52d9887f3e9
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 28451b9bf317c33e1aff52a62247374ea2b6871e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913882"
 ---
 # <a name="item-metadata-in-task-batching"></a>工作批次處理中的項目中繼資料
 
@@ -224,7 +224,7 @@ Identity: 'Item6' -- Items in ExampColl: Item6
 Items in ExampColl: Item2;Item5
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [已知的專案中繼資料](../msbuild/msbuild-well-known-item-metadata.md)
 - [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)

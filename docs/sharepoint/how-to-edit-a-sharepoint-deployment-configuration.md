@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 59354537f0c1f22534395da1e0ed3db3929a14a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913654"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>如何：編輯 SharePoint 部署設定
   您可以建立部署設定，或修改現有的部署設定。 例如，您可以執行單一步驟或變更部署程式中的步驟順序。 您可能會想要建立或修改部署設定，因為無法變更內建和以程式設計方式新增的設定。

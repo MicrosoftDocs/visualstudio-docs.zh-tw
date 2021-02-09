@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 490c0e19-ff4b-4673-bd06-cdee996ac226
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2392c25513b53137e5cdca332bc133ab998be999
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d94343bd008139b0d1932e3ae0c94e0c9b6eb926
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912871"
 ---
 # <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
 將列舉重設為第一個元素。

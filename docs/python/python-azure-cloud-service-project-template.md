@@ -5,35 +5,35 @@ ms.date: 11/12/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4d205ee2bbc0a6e9c44c34f3b0487abb4f22283e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a40745b19bde57f7f0ca52e04a11a89ad1ca69ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72983668"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912432"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>適用於 Python 的 Azure 雲端服務專案
 
 Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端服務。
 
-[雲端服務](/azure/cloud-services/)是由任意數目的「背景工作角色」** 和「Web 角色」** 所組成，它們會分別執行不同概念的工作，但可以視需求跨虛擬機器分別進行複寫來做出調整。 Web 角色提供前端 Web 應用程式的裝載。 在 Python 的考慮下，任何支援 WSGI 的 web 架構都可用來撰寫 () [Web 專案範本](python-web-application-project-templates.md) 所支援的應用程式。 背景工作角色適用於長時間執行，且不會直接與使用者互動的程序。 它們通常會使用隨一起安裝的「azure」套件內的套件 [`pip install azure`](https://pypi.org/project/azure) 。
+[雲端服務](/azure/cloud-services/)是由任意數目的「背景工作角色」和「Web 角色」所組成，它們會分別執行不同概念的工作，但可以視需求跨虛擬機器分別進行複寫來做出調整。 Web 角色提供前端 Web 應用程式的裝載。 在 Python 的考慮下，任何支援 WSGI 的 web 架構都可用來撰寫 () [Web 專案範本](python-web-application-project-templates.md) 所支援的應用程式。 背景工作角色適用於長時間執行，且不會直接與使用者互動的程序。 它們通常會使用隨一起安裝的「azure」套件內的套件 [`pip install azure`](https://pypi.org/project/azure) 。
 
 本文包含 Visual Studio 2017 及更新版本中專案範本和其他支援 (與舊版類似，但有一些差異) 的詳細資料。 如需搭配 Python 使用 Azure 的詳細資訊，請瀏覽 [Azure Python 開發人員中心](/azure/python/)。
 
 ## <a name="create-a-project"></a>建立專案
 
 1. 安裝 [適用于 Visual Studio 的 Azure .NET SDK](https://visualstudio.microsoft.com/vs/azure-tools/)，這是使用雲端服務範本的必要項。
-1. 在 Visual Studio 中，**選取**  >  [檔案**新**  >  **專案**]，然後搜尋「azure Python」，並從清單中選取**Azure 雲端服務**：
+1. 在 Visual Studio 中，**選取**  >  [檔案 **新**  >  **專案**]，然後搜尋「azure Python」，並從清單中選取 **Azure 雲端服務**：
 
     ![適用於 Python 的 Azure 雲端專案範本](media/template-azure-cloud-project.png)
 
-1. 選取要包含的一或多個角色。 雲端專案可以結合以不同語言撰寫的角色，因此您可以輕鬆地以最適合的語言撰寫應用程式的每個部分。 若要在完成此對話方塊後將新角色新增至專案，請以滑鼠右鍵按一下**方案總管**中的 [**角色**]，然後選取 [**加入**] 下的其中一個專案。
+1. 選取要包含的一或多個角色。 雲端專案可以結合以不同語言撰寫的角色，因此您可以輕鬆地以最適合的語言撰寫應用程式的每個部分。 若要在完成此對話方塊後將新角色新增至專案，請以滑鼠右鍵按一下 **方案總管** 中的 [**角色**]，然後選取 [**加入**] 下的其中一個專案。
 
     ![在 Azure 雲端專案範本中新增角色](media/template-azure-cloud-service-project-wizard.png)
 
@@ -45,7 +45,7 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 
     ![背景工作角色支援檔案](media/template-azure-cloud-service-worker-role-support-files.png)
 
-    若要將這些設定腳本新增至新的專案，請以滑鼠右鍵按一下專案、選取 [**加入**  >  **新專案**]，然後選取 [ **Web 角色支援**檔案] 或 [背景**工作角色支援**檔案]。
+    若要將這些設定腳本新增至新的專案，請以滑鼠右鍵按一下專案、選取 [**加入**  >  **新專案**]，然後選取 [ **Web 角色支援** 檔案] 或 [背景 **工作角色支援** 檔案]。
 
 ## <a name="configure-role-deployment"></a>設定角色部署
 
@@ -67,13 +67,13 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 
 撰寫角色時，您可以使用雲端服務模擬器在本機上測試雲端專案。 該模擬器隨附於 Azure SDK 工具，而且是您的雲端服務發行至 Azure 時使用之環境的精簡版本。
 
-若要啟動模擬器，請先確定您的雲端專案在方案中是啟始專案，方法是以滑鼠右鍵按一下並選取 [設定為啟始專案]****。 然後選取 [ **debug**  >  **開始調試**] (**F5**) 或 [啟動時不**進行調試]**  >  **Start without Debugging** (**Ctrl** + **F5**) 。
+若要啟動模擬器，請先確定您的雲端專案在方案中是啟始專案，方法是以滑鼠右鍵按一下並選取 [設定為啟始專案]。 然後選取 [ **debug**  >  **開始調試**] (**F5**) 或 [啟動時不 **進行調試]**  >   (**Ctrl** + **F5**) 。
 
 請注意，由於模擬器的限制，您將無法針對 Python 程式碼進行偵錯。 因此建議您獨立地執行角色來對角色進行偵錯，然後在發佈前使用模擬器進行整合測試。
 
 ## <a name="deploy-a-role"></a>部署角色
 
-若要開啟 [發佈]**** 精靈，請在 [方案總管]**** 中選取角色專案，然後從主功能表選取 [建置]**** > [發佈]****，或是以滑鼠右鍵按一下專案並選取 [發佈]****。
+若要開啟 [發佈] 精靈，請在 [方案總管] 中選取角色專案，然後從主功能表選取 [建置] > [發佈]，或是以滑鼠右鍵按一下專案並選取 [發佈]。
 
 發佈程序牽涉到兩個階段。 首先，Visual Studio 會建立包含雲端服務之所有角色的單一封裝。 此套件是要部署至 Azure 的項目，它會為每個角色初始化一或多部虛擬機器並部署來源。
 
@@ -87,13 +87,13 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 
 請注意，雲端服務執行個體不包括 C 編譯器，因此含有 C 延伸模組的所有程式庫都必須提供預先編譯的二進位檔。
 
-PIP 與其相依性，以及 *requirements.txt* 中的所有套件都會自動下載，且可能會被視為需付費的頻寬使用量。 請參閱[管理必要套件](managing-required-packages-with-requirements-txt.md)，以取得管理 *requirements.txt* 檔案的詳細資料。
+PIP 與其相依性，以及 *requirements.txt* 中的所有套件都會自動下載，且可能會被視為需付費的頻寬使用量。 請參閱 [管理必要套件](managing-required-packages-with-requirements-txt.md)，以取得管理 *requirements.txt* 檔案的詳細資料。
 
 ## <a name="troubleshooting"></a>疑難排解
 
 如果您的 Web 或背景工作角色在部署後無法正確運作，請檢查下列各項：
 
-- 您的 Python 專案包含 (至少) 的*bin \\ *資料夾：
+- 您的 Python 專案包含 (至少) 的 *bin \\* 資料夾：
 
   - *ConfigureCloudService.ps1*
   - *LaunchWorker.ps1* (適用於背景工作角色)

@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: bbc02cf7-a7e6-44fe-99af-87a43e1d7251
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a0458fb4981642d3f8386edd4c3605ae7b902a14
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 83522eb13350d86ef0531d90b3db844ece8f6655
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398671"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913414"
 ---
 # <a name="how-to-debug-an-activex-control"></a>如何：偵錯 ActiveX 控制項
 
@@ -54,7 +54,7 @@ ms.locfileid: "97398671"
 
 6. 如果您指定 Internet Explorer 作為容器，而且您正使用 Active Desktop，請在 [命令引數] 方塊中鍵入 `/new`。
 
-7. 按一下 [確定]。
+7. 按一下 [確定]  。
 
      若您未在 [專案屬性頁] 對話方塊中指定容器，您也可以在開始偵錯時指定容器。 當您選取執行命令以開始偵錯時，將會出現[偵錯工作階段的可執行檔對話方塊](../debugger/executable-for-debugging-session-dialog-box.md)。 在對話方塊中指定容器的路徑名稱。
 

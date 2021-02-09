@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e1e14f67-9b69-433f-94d4-a783a68676b2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ca5b74b32faba4937a821503af3665d1ec1d72c9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b67483c82e19c51da776d6ec40066ba5223a238a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048561"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912518"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles 工作
 
@@ -33,7 +33,7 @@ ms.locfileid: "93048561"
 
  下表說明 `ResolveManifestFiles` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`DeploymentManifestEntryPoint`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定部署資訊清單的名稱。|
 |`EntryPoint`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定 Managed 組件或 ClickOnce 資訊清單參考，此為資訊清單的進入點。|
@@ -54,7 +54,7 @@ ms.locfileid: "93048561"
 
  除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

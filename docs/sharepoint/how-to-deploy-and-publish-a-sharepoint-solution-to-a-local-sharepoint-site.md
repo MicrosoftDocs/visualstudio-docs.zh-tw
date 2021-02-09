@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 65683544f345a2378fdec559f582985ffec7bc43
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 22fe46e2876b14551637dd97712e1728816b020e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913703"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>如何：將 SharePoint 方案部署和發行至本機 SharePoint 網站
   您可以將 SharePoint 方案部署或發佈至開發電腦上的本機 SharePoint 伺服器。 部署程式會將 *.wsp* 檔案複製到 SharePoint 伺服器、安裝方案，然後啟動這些功能。 發佈程式只會將 *.wsp* 檔案複製到 SharePoint 伺服器，並加以安裝。 您必須手動啟用它，才能在 SharePoint 中啟用它。

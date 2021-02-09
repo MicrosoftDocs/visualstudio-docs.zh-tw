@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 92b6539c-6897-45e0-8989-0c234bbfe782
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a100ad8a3be57288e49a858d6f87851269df303
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: f4a41a5cbecea69d4843cbd70479a604f91b2218
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914746"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 工作
 
@@ -33,7 +33,7 @@ ms.locfileid: "92436753"
 
 ## <a name="task-parameters"></a>工作參數
 
-| 參數 | 描述 |
+| 參數 | Description |
 |--------------------------| - |
 | `AssemblyName` | 必要的 **String** 參數。<br /><br /> 指定為專案所產生之組件的簡短名稱，它也是暫時產生之目標組件的名稱。 例如，如果專案產生的 Windows 可執行檔的名稱為 *WinExeAssembly.exe*， **AssemblyName** 參數的值會是 **>winexeassembly**。 |
 | `CompileTargetName` | 必要的 **String** 參數。<br /><br /> 指定用來從原始程式碼檔產生元件的 MSBuild 目標名稱。 一般的 **CompileTargetName** 值為 **CoreCompile**。 |
@@ -53,7 +53,7 @@ ms.locfileid: "92436753"
 
 ## <a name="example"></a>範例
 
-下列範例會產生暫存組件，因為 Page1.xaml** 包含相同專案中類型的參考。
+下列範例會產生暫存組件，因為 Page1.xaml 包含相同專案中類型的參考。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

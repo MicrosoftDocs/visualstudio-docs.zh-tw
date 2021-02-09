@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 71189a00-34eb-4c71-b96e-8bd6e70c6966
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f163f2733f237b30b668c2c46473e152718dd6fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46b7c7ba36ac6d54c10d38b17154d77be88247fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912694"
 ---
 # <a name="ienumdebugaddressesclone"></a>IEnumDebugAddresses::Clone
 這個方法會傳回目前列舉的複本，做為個別的物件。

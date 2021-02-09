@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4838df34c14b936af15b8a7a582a6d30ea12bee1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a95808383d4d75810f17b4da121a11025b6f894
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912992"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
 此結構描述記憶體內容或程式碼內容。
@@ -78,7 +78,7 @@ public struct CONTEXT_INFO {
 
 此結構的一般用途是支援 **記憶體** 偵錯工具視窗。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc356e1859f447db1ac18a437b8fc2317925b0f
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: c6527a4f54abf147d54e73c8f887b57b70ff4243
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914188"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
 
@@ -97,5 +97,5 @@ ms.locfileid: "92436337"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Msbuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)

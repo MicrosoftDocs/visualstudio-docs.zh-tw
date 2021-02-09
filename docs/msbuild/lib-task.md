@@ -24,25 +24,25 @@ helpviewer_keywords:
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf1029d42ce40d33e6eea1fcbe5e6434ff85a36
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 2141818c13a187b8afddf337aa11677097940f23
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904453"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913734"
 ---
 # <a name="lib-task"></a>LIB 工作
 
-包裝 Microsoft 32 位程式庫管理員工具 *lib.exe* 。 程式庫管理員會建立並管理通用物件檔案格式 (COFF) 物件檔的程式庫。 程式庫管理員也可以建立匯出檔和匯入程式庫，以參考匯出的定義。 如需詳細資訊，請參閱 [lib 參考](/cpp/build/reference/lib-reference) 和執行 [lib](/cpp/build/reference/running-lib)。
+包裝 Microsoft 32 位程式庫管理員工具 *lib.exe*。 程式庫管理員會建立並管理通用物件檔案格式 (COFF) 物件檔的程式庫。 程式庫管理員也可以建立匯出檔和匯入程式庫，以參考匯出的定義。 如需詳細資訊，請參閱 [lib 參考](/cpp/build/reference/lib-reference) 和執行 [lib](/cpp/build/reference/running-lib)。
 
 ## <a name="parameters"></a>參數
 
  下表描述 **LIB** 工作的參數。 大部分的工作參數會對應至命令列選項。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |**AdditionalDependencies**|選擇性的 **String []** 參數。<br /><br /> 指定要加入至命令列的其他項目。|
 |**AdditionalLibraryDirectories**|選擇性的 **String []** 參數。<br /><br /> 覆寫環境程式庫路徑。 指定目錄名稱。<br /><br /> 如需詳細資訊，請參閱 [/LIBPATH (其他 Libpath)](/cpp/build/reference/libpath-additional-libpath)。|
@@ -56,7 +56,7 @@ ms.locfileid: "92904453"
 |**LinkLibraryDependencies**|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，會指定要自動連結專案相依性的程式庫輸出。|
 |**LinkTimeCodeGeneration**|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，會指定在連結時產生程式碼。<br /><br /> 此參數對應于 *lib.exe* 的 **/LCTG** 選項。|
 |**MinimumRequiredVersion**|選擇性的 **字串** 參數。<br /><br /> 指定子系統的最小必要版本。 在 0 到 65535 的範圍中指定以逗號分隔的十進位數字清單。|
-|**ModuleDefinitionFile**|選擇性的 **字串** 參數。<br /><br /> 指定模組定義檔 ( *.def* ) 的名稱。<br /><br /> 此參數會對應至採用引數之 *lib.exe* 的 **/DEF** 選項 `filename` 。|
+|**ModuleDefinitionFile**|選擇性的 **字串** 參數。<br /><br /> 指定模組定義檔 (*.def*) 的名稱。<br /><br /> 此參數會對應至採用引數之 *lib.exe* 的 **/DEF** 選項 `filename` 。|
 |**名稱**|選擇性的 **字串** 參數。<br /><br /> 在建置匯入程式庫時，指定正在建置之匯入程式庫的 DLL 名稱。<br /><br /> 此參數會對應至採用引數之 *lib.exe* 的 **/NAME** 選項 `filename` 。|
 |**OutputFile**|選擇性的 **字串** 參數。<br /><br /> 覆寫 *lib.exe* 建立之程式的預設名稱和位置。<br /><br /> 此參數會對應至採用引數之 *lib.exe* 的 **/out** 選項 `filename` 。|
 |**RemoveObjects**|選擇性的 **String []** 參數。<br /><br /> 省略輸出程式庫中的指定物件。 *Lib.exe* 建立輸出程式庫，方法是將所有物件 () 的物件檔案或程式庫中，然後刪除此選項所指定的任何物件。<br /><br /> 此參數會對應至採用引數之 *lib.exe* 的 **/remove** 選項 `membername` 。|
@@ -69,6 +69,6 @@ ms.locfileid: "92904453"
 |**UseUnicodeResponseFiles**|選擇性的 **布林值** 參數。<br /><br /> 如果是 `true`，會指示專案系統在管理員繁衍時產生 UNICODE 回應檔。 在專案中的檔案具有 UNICODE 路徑時指定 `true`。|
 |**詳細資訊**|選擇性的 **布林值** 參數。<br /><br /> 如果 `true` 為，則會顯示會話進度的詳細資料，這包括所加入之 *.obj* 檔案的名稱。 資訊會傳送至標準輸出，並且可重新導向至檔案。<br /><br /> 如需詳細資訊，請參閱 [執行 LIB](/cpp/build/reference/running-lib) 中的 **/VERBOSE** 選項。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)

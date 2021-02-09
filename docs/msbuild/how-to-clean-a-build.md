@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 989bcd560c2c5cd9a7d8c571208bfab84adbd493
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: e6c0beb70379d8b79a3e1826ba74f34202eea19f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436725"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914453"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清除組建
 

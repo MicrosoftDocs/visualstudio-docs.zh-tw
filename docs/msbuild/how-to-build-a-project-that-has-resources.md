@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d07ac73f-2c2d-4e9a-812a-6dcb632bafe2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a71a34b4ce208b093f7982ba3516b0229c8644
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 195ef17e4770d7050bc3b10f11ca5530e5ca49cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914479"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>如何：建置包含資源的專案
 
@@ -42,7 +42,7 @@ MSBuild 隨附的一般工作程式庫包含一 `GenerateResource` 項工作，�
 
 ## <a name="example-1"></a>範例 1
 
-下列程式碼範例示範 `Output` 項目如何指定 `GenerateResource` 工作的 `OutputResources` 屬性將包含已編譯的資源檔 *alpha.resources*和 *beta.resources*，而這兩個檔案會置於 `Resources` 項目清單中。 藉由將這些 *.resources* 檔案識別為相同名稱的專案集合，您可以輕鬆地使用它們做為另一項工作的輸入，例如 [Csc](../msbuild/csc-task.md) 工作。
+下列程式碼範例示範 `Output` 項目如何指定 `GenerateResource` 工作的 `OutputResources` 屬性將包含已編譯的資源檔 *alpha.resources* 和 *beta.resources*，而這兩個檔案會置於 `Resources` 項目清單中。 藉由將這些 *.resources* 檔案識別為相同名稱的專案集合，您可以輕鬆地使用它們做為另一項工作的輸入，例如 [Csc](../msbuild/csc-task.md) 工作。
 
 此工作相當於使用 [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) 的 **/compile** 參數：
 
@@ -84,7 +84,7 @@ MSBuild 隨附的一般工作程式庫包含一 `GenerateResource` 項工作，�
 
 ## <a name="see-also"></a>另請參閱
 
-- [Msbuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [GenerateResource 工作](../msbuild/generateresource-task.md)
 - [Csc 工作](../msbuild/csc-task.md)
 - [ 資源檔產生器Resgen.exe () ](/dotnet/framework/tools/resgen-exe-resource-file-generator)

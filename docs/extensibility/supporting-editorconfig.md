@@ -9,15 +9,15 @@ helpviewer_keywords:
 - editorconfig, supporting in a language service
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c635df2301822fc1bb982df44912527d53c9ef6
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 8ddd7e0c7c1e2655f08b7b7113f43e14bbb37584
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716103"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914960"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>支援您語言服務的 EditorConfig
 
@@ -45,7 +45,7 @@ Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize<br/>Micro
 -------|--------
 Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize|textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId)<br/>textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 EditorConfig 建立可移植的編輯器設定](../ide/create-portable-custom-editor-options.md)
 - [擴充編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)

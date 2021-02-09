@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83bb6b44713ba61d14c508c0db2a51391a350015
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 93dbe9d3bf49118328cb53dcd6602bb5fda77b13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914869"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
 
@@ -88,7 +88,7 @@ ms.locfileid: "92436473"
 
    選擇性的 `String` 輸出參數。
 
-   指定*setup.exe*的建立位置
+   指定 *setup.exe* 的建立位置
 
 - `ComponentsLocation`
 

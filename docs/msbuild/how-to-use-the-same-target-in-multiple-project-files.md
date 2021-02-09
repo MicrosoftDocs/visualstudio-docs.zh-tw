@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d81328ecf17117500a5f686a45f934e451bb5809
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 5c351b7f676dec678bd4f070a1f8fb9af97c5d28
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436057"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914116"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：在多個專案檔中使用相同的目標
 
@@ -73,7 +73,7 @@ ms.locfileid: "92436057"
 
  `Name="MyCommon"`
 
- 因為專案是在 Myapp 中定義屬性之後匯入 `Name` ， *MyApp.proj*所以 >mycommon.targets 中的定義會 `Name` 覆寫*MyCommon.targets* *myapp*中的定義。 如果是在定義 Name 屬性之前就匯入專案，組建就會顯示下列訊息：
+ 因為專案是在 Myapp 中定義屬性之後匯入 `Name` ， 所以 >mycommon.targets 中的定義會 `Name` 覆寫 *myapp* 中的定義。 如果是在定義 Name 屬性之前就匯入專案，組建就會顯示下列訊息：
 
  `Name="MyApp"`
 
@@ -87,7 +87,7 @@ ms.locfileid: "92436057"
 
 ## <a name="example-1"></a>範例 1
 
- 下列程式碼範例顯示第二個程式碼範例匯入的 *>mycommon.targets .targets* 檔案。 *.Targets*檔案會評估來自匯入專案的屬性以設定組建。
+ 下列程式碼範例顯示第二個程式碼範例匯入的 *>mycommon.targets .targets* 檔案。 *.Targets* 檔案會評估來自匯入專案的屬性以設定組建。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 852772ea-c324-42e9-8c8a-6d565414a109
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcb713a62ebc9a0c3e4daf5aa16f36779b1a1fdc
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5c000a8d11f958daa1c7c8717dc4f18365e0a147
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914989"
 ---
 # <a name="reference-element-visual-studio-templates"></a> (Visual Studio 範本的參考元素) 
 指定項目加入專案時要加入的組件參考。
@@ -30,7 +30,7 @@ ms.locfileid: "94903763"
  \<References>
  \<Reference>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Reference>
@@ -46,20 +46,20 @@ ms.locfileid: "94903763"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[組件](../extensibility/assembly-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定元件的相關資訊，範本會使用此元件將該元件的參考加入至專案。 `Assembly`每個元素中都必須有一個元素 `Reference` 。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[參考](../extensibility/references-element-visual-studio-templates.md)|將範本加入至專案的元件參考組成群組。|
 
 ## <a name="remarks"></a>備註
  `Reference` 是 `References` 的必要子項目。
 
- `Reference`和 `References` 元素只能用在具有屬性值 *.vstemplate* 的 .vstemplate 檔案中。 `Type` `Item`
+ `Reference`和 `References` 元素只能用在具有屬性值的 .vstemplate 檔案中。 `Type` `Item`
 
 ## <a name="example"></a>範例
  下列範例說明 `TemplateContent` 專案範本的元素。 這個 XML 會將參考加入 *System.dll* 和 *System.Data.dll* 元件。

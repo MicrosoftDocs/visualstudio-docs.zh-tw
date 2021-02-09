@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5b7bcdd7-d4a0-442d-af29-8aadb3b10598
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d54a1029805066f5477cb552f5fcf3f2e09598b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: dea1b70335f7a1cc98bc1ee111ff58d69023c18a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436831"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914665"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath 工作
 
@@ -36,7 +36,7 @@ ms.locfileid: "92436831"
 
 下表說明 `GetFrameworkPath` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`FrameworkVersion11Path`|選擇性的 `String` 輸出參數。<br /><br /> 包含 Framework 1.1 版組件的路徑 (如果有的話)。 否則傳回 `null`。|
 |`FrameworkVersion20Path`|選擇性的 `String` 輸出參數。<br /><br /> 包含 Framework 2.0 版組件的路徑 (如果有的話)。 否則傳回 `null`。|

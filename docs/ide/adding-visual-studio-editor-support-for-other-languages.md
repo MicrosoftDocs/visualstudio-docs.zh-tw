@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf84f4e48b9f070b3cebed4c2e17e5fc07992e3
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d5e78f632cdfe3e207e7ce71530d06c2a3b3fc6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914980"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
 
@@ -105,7 +105,7 @@ Visual Studio 藉由使用 [TextMate 文法](https://manual.macromates.com/en/la
 
 如果適用於您的情況，在此基底路徑下，新增下列資料夾︰
 
-|資料夾名稱|說明|
+|資料夾名稱|Description|
 |-----------------|-----------------|
 |\\*\<language name>*|語言資料夾。 取代 *\<language name>* 為語言的名稱。 例如 *\Matlab*。|
 |*\Syntaxes*|文法資料夾。 包含語言的 *文法檔案* ，例如 *Matlab.json*。|

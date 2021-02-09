@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3ee22eb9-978f-4efd-a5e0-f071745496ce
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a3a0c536e9f3cfc13d2372038651c0765149cf
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 109ca82378fc7d59869b26cd02fcf2e803e5715f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398399"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913440"
 ---
 # <a name="how-to-change-fonts"></a>如何：變更字型
 您可以變更 Spy + + 視窗的字型、字型樣式和字型大小。
@@ -28,7 +28,7 @@ ms.locfileid: "97398399"
 
 2. 選擇字型、字型樣式和字型大小。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
    選取 [ **將字型儲存為預設值** ] 會導致所有未來的 Spy + + 視窗使用此字型。
 

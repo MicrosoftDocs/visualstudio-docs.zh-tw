@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31537ea44e5c49a4fd98229a5886ca99a1464409
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 22dcb7a209b8a62aaeb3c036b1013e7ad3d21597
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435776"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914447"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>如何：設定目標和工作
 
@@ -112,7 +112,7 @@ MSBuild 會在執行工作之前，先檢查看看它是否是指定為在目前
 `MSBuildRuntime` 和 `MSBuildArchitecture` 參數提供最具彈性的方式，來設定目標內容，但是範圍也最受限制。 一方面，因為它們是設定在工作執行個體本身，並且在即將執行工作之前才會評估，所以它們可以從評估時間和建置階段可用屬性的完整範圍衍生其值。 在另一方面，這些參數僅適用於特定目標中工作的特定執行個體。
 
 > [!NOTE]
-> 工作參數是在父節點的內容中評估，不是工作主機的內容。 執行階段或架構相依的環境變數 (例如「程式檔案」** 位置) 將評估為符合父節點的值。 不過，如果工作直接讀取相同的環境變數，它會正確地在工作主機的內容中進行評估。
+> 工作參數是在父節點的內容中評估，不是工作主機的內容。 執行階段或架構相依的環境變數 (例如「程式檔案」位置) 將評估為符合父節點的值。 不過，如果工作直接讀取相同的環境變數，它會正確地在工作主機的內容中進行評估。
 
 ## <a name="see-also"></a>另請參閱
 

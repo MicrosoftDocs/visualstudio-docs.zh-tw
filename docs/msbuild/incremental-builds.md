@@ -9,24 +9,24 @@ helpviewer_keywords:
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beb6c676fbd66d7e0d11e4ca1fe2a3fa8188bfe
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: f1237128852cec39ff49204e1c269f10153b42ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904595"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914080"
 ---
-# <a name="incremental-builds"></a>累加建置
+# <a name="incremental-builds"></a>累加組建
 
 累加組建是已最佳化的組置，因此不會執行輸出檔案與其相關對應輸入檔案為最新的目標。 目標項目可能有 `Inputs` 屬性可指出目標預期作為輸入的項目，以及 `Outputs` 屬性可指出它產生作為輸出的項目。 MSBuild 嘗試尋找這些屬性值之間的 1 對 1 對應。 如果具有 1 對 1 對應，MSBuild 會比較每個輸入項目的時間戳記與其對應輸出項目的時間戳記。 沒有 1 對 1 對應的輸出檔案會與所有輸入檔案進行比較。 如果項目的輸出檔與輸入檔同齡或是前者較新，該項目則可視為最新狀態。
 
 > [!NOTE]
 > 當 MSBuild 評估輸入檔時，只會考慮目前執行中清單的內容。 最後一個組建清單中的變更不會自動將目標設為過期。
 
-如果所有輸出項目都是最新的，則 MSBuild 會跳過目標。 目標的這個「累加組建」  可以大幅改善建置速度。 如果只有某些檔案是最新的，則 MSBuild 會執行目標，但跳過最新項目，進而讓所有項目都具有最新狀態。 此程序稱為「部分累加組建」  。
+如果所有輸出項目都是最新的，則 MSBuild 會跳過目標。 目標的這個「累加組建」可以大幅改善建置速度。 如果只有某些檔案是最新的，則 MSBuild 會執行目標，但跳過最新項目，進而讓所有項目都具有最新狀態。 此程序稱為「部分累加組建」。
 
 1 對 1 對應通常是透過項目轉換所產生。 如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。
 
@@ -40,11 +40,11 @@ ms.locfileid: "92904595"
 </Target>
 ```
 
-`Compile` 項目類型所代表的檔案集會複製至備份目錄。 備份檔案的副檔名為 *.bak* 。 如果在執行備份目標之後未刪除或修改 `Compile` 項目類型所代表的檔案或對應的備份檔案，則會在後續組建中跳過備份目標。
+`Compile` 項目類型所代表的檔案集會複製至備份目錄。 備份檔案的副檔名為 *.bak*。 如果在執行備份目標之後未刪除或修改 `Compile` 項目類型所代表的檔案或對應的備份檔案，則會在後續組建中跳過備份目標。
 
 ## <a name="output-inference"></a>輸出推斷
 
-MSBuild 會比較目標的 `Inputs` 和 `Outputs` 屬性，以判斷是否必須執行目標。 在理想情況下，不論是否執行相關聯的目標，累加組建完成之後存在的檔案集應該都會維持不變。 因為工作所建立或改變的屬性和項目可能會影響組建，所以 MSBuild 必須推斷其值，即使跳過影響它們的目標也是一樣。 此程序稱為「輸出推斷」  。
+MSBuild 會比較目標的 `Inputs` 和 `Outputs` 屬性，以判斷是否必須執行目標。 在理想情況下，不論是否執行相關聯的目標，累加組建完成之後存在的檔案集應該都會維持不變。 因為工作所建立或改變的屬性和項目可能會影響組建，所以 MSBuild 必須推斷其值，即使跳過影響它們的目標也是一樣。 此程序稱為「輸出推斷」。
 
 有三種情況：
 
@@ -80,6 +80,6 @@ MSBuild 會比較目標的 `Inputs` 和 `Outputs` 屬性，以判斷是否必須
 
 此程式碼會建立 CompileRan 屬性，並為其提供 `true` 值，唯一前提是已執行目標。 如果跳過目標，則不會建立 CompileRan。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [目標](../msbuild/msbuild-targets.md)

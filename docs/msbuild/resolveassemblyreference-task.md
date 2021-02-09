@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bccdc376079c4d9e0efb2a2724831e0fd2d0ae14
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9209fcffed9a15ce51e1aa079bd3efd5ff0bb384
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912649"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 工作
 
@@ -38,12 +38,12 @@ ms.locfileid: "93048660"
 
  下表說明 `ResolveAssemblyReference` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
-|`AllowedAssemblyExtensions`|選擇性的 `String[]` 參數。<br /><br /> 在解析參考時所使用的組件副檔名。 預設副檔名為 *.exe* 和 *.dll* 。|
-|`AllowedRelatedFileExtensions`|選擇性的 `String[]` 參數。<br /><br /> 搜尋彼此相關檔案時所使用的副檔名。 預設副檔名為 *.pdb* 和 *.xml* 。|
+|`AllowedAssemblyExtensions`|選擇性的 `String[]` 參數。<br /><br /> 在解析參考時所使用的組件副檔名。 預設副檔名為 *.exe* 和 *.dll*。|
+|`AllowedRelatedFileExtensions`|選擇性的 `String[]` 參數。<br /><br /> 搜尋彼此相關檔案時所使用的副檔名。 預設副檔名為 *.pdb* 和 *.xml*。|
 |`AppConfigFile`|選擇性的 `String` 參數。<br /><br /> 指定要從中剖析和擷取 bindingRedirect 對應的 *app.config* 檔案。 若指定此參數， `AutoUnify` 參數必須是 `false`。|
-|`Assemblies`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定完整路徑和相依性必須受到識別的項目。 這些項目可以具有像是 "System" 的簡單名稱，或是類似 "System, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" 的強式名稱。<br /><br /> 傳遞至這個參數的項目可以選擇性地擁有下列項目中繼資料：<br /><br /> -   `Private`： `Boolean` 值。 如果為 `true`，則在本機複製項目。 預設值是 `true`。<br />-   `HintPath`： `String` 值。 指定要作為參考的路徑和檔案名稱。 當在 `SearchPaths` 參數中指定 {HintPathFromItem} 時，就會使用此中繼資料。 預設值為空字串。<br />-   `SpecificVersion`： `Boolean` 值。 如果為 `true`，則在 `Include` 屬性中指定的確切名稱必須相符合。 如果為 `false`，則具有相同簡單名稱的任何組件都適用。 若未指定 `SpecificVersion` ，則工作會檢視項目 `Include` 屬性中的值。 若屬性是簡單名稱，則其行為會如同 `SpecificVersion` 為 `false`。 若屬性是強式名稱，則其行為會如同 `SpecificVersion` 為 `true`。<br />     搭配參考項目類型使用時， `Include` 屬性必須是組件的完整融合名稱才能受解析。 只有在融合完全符合 `Include` 屬性時，才會解析組件。<br />     當專案以 .NET Framework 版本作為目標，並以針對較高的 .NET Framework 版本所編譯的組件時作為參考時，只有將 `SpecificVersion` 設定為 `true`。<br />     當專案以設定檔作為目標，且以不在設定檔中的組件作為參考時，只有將 `SpecificVersion` 設定為 `true`。<br />-   `ExecutableExtension`： `String` 值。 如果有，則所解析的組件必須具有這個副檔名。 如果沒有，就會針對每個檢查過的目錄，將 *.dll* 視為第一個要採用的副檔名，接著是 *.exe* 。<br />-   `SubType`： `String` 值。 只有含有空白 SubType 中繼資料的項目才會解析成完整的組件路徑。 含有非空白 SubType 中繼資料的項目都會被忽略。<br />-   `AssemblyFolderKey`： `String` 值。 舊版用途支援此中繼資料。 它會指定使用者定義的登錄機碼（例如 **hklm \\ \<VendorFolder>** ），以便 `Assemblies` 用來解析元件參考。|
+|`Assemblies`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定完整路徑和相依性必須受到識別的項目。 這些項目可以具有像是 "System" 的簡單名稱，或是類似 "System, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" 的強式名稱。<br /><br /> 傳遞至這個參數的項目可以選擇性地擁有下列項目中繼資料：<br /><br /> -   `Private`： `Boolean` 值。 如果為 `true`，則在本機複製項目。 預設值是 `true`。<br />-   `HintPath`： `String` 值。 指定要作為參考的路徑和檔案名稱。 當在 `SearchPaths` 參數中指定 {HintPathFromItem} 時，就會使用此中繼資料。 預設值為空字串。<br />-   `SpecificVersion`： `Boolean` 值。 如果為 `true`，則在 `Include` 屬性中指定的確切名稱必須相符合。 如果為 `false`，則具有相同簡單名稱的任何組件都適用。 若未指定 `SpecificVersion` ，則工作會檢視項目 `Include` 屬性中的值。 若屬性是簡單名稱，則其行為會如同 `SpecificVersion` 為 `false`。 若屬性是強式名稱，則其行為會如同 `SpecificVersion` 為 `true`。<br />     搭配參考項目類型使用時， `Include` 屬性必須是組件的完整融合名稱才能受解析。 只有在融合完全符合 `Include` 屬性時，才會解析組件。<br />     當專案以 .NET Framework 版本作為目標，並以針對較高的 .NET Framework 版本所編譯的組件時作為參考時，只有將 `SpecificVersion` 設定為 `true`。<br />     當專案以設定檔作為目標，且以不在設定檔中的組件作為參考時，只有將 `SpecificVersion` 設定為 `true`。<br />-   `ExecutableExtension`： `String` 值。 如果有，則所解析的組件必須具有這個副檔名。 如果沒有，就會針對每個檢查過的目錄，將 *.dll* 視為第一個要採用的副檔名，接著是 *.exe*。<br />-   `SubType`： `String` 值。 只有含有空白 SubType 中繼資料的項目才會解析成完整的組件路徑。 含有非空白 SubType 中繼資料的項目都會被忽略。<br />-   `AssemblyFolderKey`： `String` 值。 舊版用途支援此中繼資料。 它會指定使用者定義的登錄機碼（例如 **hklm \\ \<VendorFolder>**），以便 `Assemblies` 用來解析元件參考。|
 |`AssemblyFiles`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要尋找相依性的完整組件清單。<br /><br /> 傳遞至這個參數的項目可以選擇性地擁有下列項目中繼資料：<br /><br /> -   `Private`：選擇性的 `Boolean` 值。 如果為 true，則在本機複製項目。<br />-   `FusionName`：選擇性的 `String` 中繼資料。 指定此項目的簡單或強式名稱。 若此屬性存在，便可以節省時間，原因是不需要開啟組件檔案就能取得名稱。|
 |`AutoUnify`|選擇性的 `Boolean` 參數。<br /><br /> 此參數會用於建置不能有一般 *App.Config* 檔案的組件，例如 DLL。<br /><br /> 當為 `true` 時，會自動將產生的相依性圖形視為有 *App.Config* 檔案傳遞至 AppConfigFile 參數。 此虛擬 *App.Config* 檔案的每個衝突元件集合都有 bindingRedirect 專案，因此會選擇最高版本的元件。 因此，將不會出現有關衝突組件的警告，因為每個衝突都已經獲得解決。<br /><br /> 如果為 `true`，每個不同的重新對應都將致使高優先權註解顯示新舊版本，且 `AutoUnify` 為 `true`。<br /><br /> 當為 `true` 時，則 AppConfigFile 參數必須為空白。<br /><br /> 如果為 `false`，則不會自動發生組件版本重新對應。 當有兩個版本的組件時，會發出警告。<br /><br /> 如果為 `false`，不同版本相同組件間的每個衝突都會致使高優先順序的註解。 這些註解後面都會接著單一警告。 此警告具有唯一的錯誤碼，且包含以下文字「找到不同版本的參考和相依組件之間的衝突」。<br /><br /> 預設值是 `false`。|
 |`CandidateAssemblyFiles`|選擇性的 `String[]` 參數。<br /><br /> 指定要用於搜尋和解析處理序的組件清單。 傳遞至此參數的值必須是絕對檔案名稱或專案相關的檔案名稱。<br /><br /> 當 `SearchPaths` 參數將 {CandidateAssemblyFiles} 包含作為要考量的其中一個路徑時，就會考慮這個清單中的組件。|
@@ -55,7 +55,7 @@ ms.locfileid: "93048660"
 |`FindSatellites`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會找到附屬組件。 預設值為 `true.`|
 |`FindSerializationAssemblies`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，工作會搜尋序列化組件。 預設值是 `true`。|
 |`FullFrameworkAssemblyTables`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定具有 "FrameworkDirectory" 中繼資料的項目，以建立可轉散發清單與特定架構目錄的關聯。 如果未建立關聯，則將記錄錯誤。 若未設定 FrameworkDirectory，解析組件參考 (RAR) 邏輯會使用目標 Framework 目錄。|
-|`FullFrameworkFolders`|選擇性 <xref:System.String?displayProperty=fullName>`[]` 參數。<br /><br /> 指定包含 RedistList 目錄的資料夾。 此目錄代表指定用戶端設定檔的完整架構，例如： *%programfiles%\reference assemblies\microsoft\framework\v4.0* 。|
+|`FullFrameworkFolders`|選擇性 <xref:System.String?displayProperty=fullName>`[]` 參數。<br /><br /> 指定包含 RedistList 目錄的資料夾。 此目錄代表指定用戶端設定檔的完整架構，例如：*%programfiles%\reference assemblies\microsoft\framework\v4.0*。|
 |`FullTargetFrameworkSubsetNames`|選擇性的 `String[]` 參數。<br /><br /> 包含目標 Framework 子集的名稱清單。 若清單中的子集名稱符合 `TargetFrameworkSubset` 命名屬性中的其中一個名稱，則系統會在建置階段排除特定的目標 Framework 子集。|
 |`IgnoreDefaultInstalledAssemblyTables`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，則工作會搜尋並使用在 `TargetFrameworkDirectories`下的 *\RedistList* 目錄中找到的其他已安裝組件表格 (或「可轉散發清單」)。 預設值為 `false.`|
 |`IgnoreDefaultInstalledAssemblySubsetTables`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，則工作會搜尋並使用在 `TargetFrameworkDirectories`下的 *\SubsetList* 目錄中找到的其他已安裝組件子集表格 (或「子集清單」)。 預設值為 `false.`|
@@ -109,7 +109,7 @@ ms.locfileid: "93048660"
 
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

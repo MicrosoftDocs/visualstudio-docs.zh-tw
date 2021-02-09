@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MSBuild, SDKs, SDK
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bddf5e46fe066a79beb64570d6bf6ec1fedda68c
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: e6303efce016a9e678e4c9e8aa62c91aa116e44f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914224"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 專案 SDK
 
@@ -123,7 +123,7 @@ MSBuild 15.0 引進了「專案 SDK」的概念，可簡化使用需要匯入屬
 }
 ```
 
-在建置期間每個專案 SDK 都只能使用一個版本。 如果您參考相同專案 SDK 的兩個不同版本，MSBuild 會發出警告。 如果在檔案的*global.js*中指定了版本，建議您**不要**在專案中指定版本。
+在建置期間每個專案 SDK 都只能使用一個版本。 如果您參考相同專案 SDK 的兩個不同版本，MSBuild 會發出警告。 如果在檔案的 *global.js* 中指定了版本，建議您 **不要** 在專案中指定版本。
 
 ## <a name="see-also"></a>另請參閱
 

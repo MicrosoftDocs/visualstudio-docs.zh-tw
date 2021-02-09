@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 4e9fb04b-5148-4ae5-a394-42861dd62371
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c3fff9848ac82cd56d1052d135646954527debd5
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 466c753f986eeda233a7ff32bd51fa3e42b3f796
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913900"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 元素 (MSBuild)
 
@@ -87,7 +87,7 @@ ms.locfileid: "92903708"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

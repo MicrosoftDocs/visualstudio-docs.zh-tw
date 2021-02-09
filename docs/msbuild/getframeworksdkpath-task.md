@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2ef82b98-02b6-40cf-a9b5-f0e882fb5064
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4061dbe96c84648aacf136c0d59b92a2af037e2
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: c0fe468f593d085c10f8d077246af6858d0571fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914637"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "92436813"
 下表說明 `GetFrameworkSdkPath` 工作的參數。
 下表說明 `GetFrameworkSdkPath` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`FrameworkSdkVersion20Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 2.0 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|
 |`FrameworkSdkVersion35Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 3.5 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|

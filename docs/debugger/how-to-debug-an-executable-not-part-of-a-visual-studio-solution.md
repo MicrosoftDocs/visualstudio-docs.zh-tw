@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4d5497a4c29502fe4d7e4825b1767991c79298
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 3bbe6cac5d74d3767948f0c117539b95cbba570f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913430"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>在 c + +、c #、Visual Basic、F # (的 c + +、c #、、F ) # Visual Studio 的應用程式
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db476af4a9d3be9cab2109fb3489d0767765075f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: ab301f11ffdae03564f05388dfbba55a90d12391
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913682"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何：在遠端伺服器上部署、發行和升級 SharePoint 方案
   除了將 SharePoint 方案部署到本機系統之外，您還可以將沙箱化 SharePoint 方案發行至遠端網站或本機 SharePoint 網站。 遠端發佈程式會將 *.wsp* 檔案複製到 SharePoint 伺服器、安裝方案，然後讓您啟用方案。 您也可以在變更遠端 SharePoint 方案後進行升級。

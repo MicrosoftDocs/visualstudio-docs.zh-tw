@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 56acd101-de77-4eec-92c6-f5c6d2187579
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ad9f5c85a3a295971a5f80fcb994c382346d9af3
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7cb987ec458e91c4190e2e0c264a80592f8133e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912460"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "93048550"
 
  下表說明 `ResolveNativeReference` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`AdditionalSearchPaths`|必要的 <xref:System.String?displayProperty=fullName>`[]` 參數。<br /><br /> 取得或設定搜尋路徑，以解析原生參考的組件識別碼。|
 |`ContainedComComponents`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 取得或設定原生組譯碼的 COM 元件。|
@@ -50,7 +50,7 @@ ms.locfileid: "93048550"
 
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

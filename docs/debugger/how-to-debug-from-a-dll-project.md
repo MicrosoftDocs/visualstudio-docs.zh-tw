@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 723f35142ec125c016caa3653be450b61fb05d02
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 3b819a5cdbd09ced66fddec91574c1d03718518f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913266"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>如何：在 Visual Studio (c #、c + +、Visual Basic、F # 中的 DLL 專案進行 Debug ) 
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c7a8fe97-2abc-4cee-8aef-64f1daa93b5c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e126fc916360d0cc992da5f17edecda7cb2ef41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f082a1318132623e1aaab738d99e700d30c913c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912882"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 傳回列舉中的下一組元素。

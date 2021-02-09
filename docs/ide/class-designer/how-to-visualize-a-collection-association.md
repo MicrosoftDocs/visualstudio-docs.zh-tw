@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eaec7d97cd92e65671dedca14c2dbae056b1af10
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 0e4e446925b2ee46bc846a3edfbf09fb2eb695ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96933579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912634"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>如何：在類別設計工具中將集合關聯視覺化
 

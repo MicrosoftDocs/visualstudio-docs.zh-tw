@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 449f06c2-e9aa-4236-ab1e-c45c25452b2e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ed7bf0e831153d1120789d97b2a27aa77822a6b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c06e012f84f1f18805ca458289c023679d0593d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912542"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "93048578"
 
  下表說明 `ResolveKeySource` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`AutoClosePasswordPromptShow`|選擇性的 `Int32` 參數。<br /><br /> 取得或設定顯示倒數計時訊息的時間 (以秒為單位)。|
 |`AutoClosePasswordPromptTimeout`|選擇性的 `Int32` 參數。<br /><br /> 取得或設定關閉密碼提示對話方塊前的等候時間，以秒為單位。|
@@ -52,7 +52,7 @@ ms.locfileid: "93048578"
 
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

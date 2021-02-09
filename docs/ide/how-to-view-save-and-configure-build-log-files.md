@@ -8,15 +8,15 @@ ms.topic: how-to
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02d26416357ec13b61232f2adb0bc3e5e3c67818
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 8bca2ae08037a63cfbf8647808c7b1c7329ad2aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914926"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：檢視、儲存和設定組建記錄檔
 
@@ -54,7 +54,7 @@ ms.locfileid: "95970206"
 
 3. 在 [MSBuild 專案建置輸出詳細資訊層級] 清單中，選擇下列其中一個值，然後選擇 [確定] 按鈕。
 
-    |詳細資訊層級|描述|
+    |詳細資訊層級|Description|
     | - |-----------------|
     |**Quiet**|只顯示組建摘要。|
     |**最低限度**|顯示組建的摘要，及已分類為高重要性的錯誤、警告和訊息。|

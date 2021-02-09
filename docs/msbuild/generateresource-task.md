@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 124e5dcc3666698dd71927e15c3686038233c317
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 810cbd4987277416b5be545603908d9818bff890
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914759"
 ---
 # <a name="generateresource-task"></a>GenerateResource 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "92436873"
 
 下表說明 `GenerateResource` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`AdditionalInputs`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 包含此工作所執行相依性檢查的其他輸入。 例如，專案與目標檔案通常應為輸入，如有所更新時，就會重新產生所有資源。|
 |`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 指定環境變數的名稱/值組陣列，這些變數應該傳遞至衍生的 *resgen.exe*，除了 (或選擇性地覆寫一般環境區塊) 。|
@@ -48,7 +48,7 @@ ms.locfileid: "92436873"
 |`PublicClass`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會建立強型別資源類別做為公用類別。|
 |`References`|選擇性的 `String[]` 參數。<br /><br /> 要從中載入 *.resx* 檔案類型的參考。 *.resx* 檔案資料元素可能具有 .net 類型。 當讀取 *.resx* 檔案時，必須加以解析。 一般而言，使用標準型別載入規則即可順利解析。 如果您提供 `References` 中的組件，則會優先使用它們。<br /><br /> 強型別資源不需要此參數。|
 |`SdkToolsPath`|選擇性的 `String` 參數。<br /><br /> 指定 SDK 工具（例如 *resgen.exe*）的路徑。|
-|`Sources`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要轉換的項目。 傳遞給此參數的項目必須具有下列其中一個副檔名︰<br /><br /> -   .txt**︰指定文字檔的副檔名以進行轉換。 文字檔只能包含字串資源。<br />-   .resx**︰指定 XML 資源檔的副檔名以進行轉換。<br />-   .restext**︰指定和 *.txt* 相同的格式。 如果您想要清楚地區分包含資源的原始程式檔和建置流程中的其他原始程式檔，這個不同的副檔名會很有用。<br />-   .resources**︰指定資源檔的副檔名以進行轉換。|
+|`Sources`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要轉換的項目。 傳遞給此參數的項目必須具有下列其中一個副檔名︰<br /><br /> -   .txt︰指定文字檔的副檔名以進行轉換。 文字檔只能包含字串資源。<br />-   .resx︰指定 XML 資源檔的副檔名以進行轉換。<br />-   .restext︰指定和 *.txt* 相同的格式。 如果您想要清楚地區分包含資源的原始程式檔和建置流程中的其他原始程式檔，這個不同的副檔名會很有用。<br />-   .resources︰指定資源檔的副檔名以進行轉換。|
 |`StateFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定選擇性快取檔案的路徑，這個檔案可用來加速 *.resx* 輸入檔中連結的相依性檢查。|
 |`StronglyTypedClassName`|選擇性的 `String` 參數。<br /><br /> 指定強型別資源類別的類別名稱。 如果未指定此參數，則會使用資源檔的基底名稱。|
 |`StronglyTypedFilename`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定原始程式檔的檔案名稱。 如果未指定此參數，則會使用類別名稱做為基底檔案名稱，副檔名則依語言而定。 例如：*MyClass.cs*。|
@@ -98,7 +98,7 @@ ms.locfileid: "92436873"
 </ItemGroup>
 ```
 
-如果沒有 \<LogicalName> 中繼資料，資源將會命名為*MyAssembly. myResource。*  此範例僅適用於 Visual Basic 和 Visual C# 建置流程。
+如果沒有 \<LogicalName> 中繼資料，資源將會命名為 *MyAssembly. myResource。*  此範例僅適用於 Visual Basic 和 Visual C# 建置流程。
 
 ## <a name="see-also"></a>另請參閱
 

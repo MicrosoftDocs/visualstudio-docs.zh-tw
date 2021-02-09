@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f4397415e684b9603dd662e409590e88e86034b
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: eff27467aeea5068f3ec086b490ca9c735861549
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903621"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913849"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 項目 (MSBuild)
 
@@ -95,7 +95,7 @@ ItemGroups 可以使用屬性來套用條件 `Condition` 。 在此情況下，�
 
 在 `Label` 某些組建系統中，屬性是用來控制組建行為的方式。 您只能在宣告中使用它，以建立更容易理解的 MSBuild 腳本，或做為控制設定以影響組建動作。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

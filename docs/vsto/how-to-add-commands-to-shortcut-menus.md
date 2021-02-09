@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, context menus
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 95cc6a9dc773c9a0cb07eff518566af9dcc49e96
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 2f5c244d78ab5a6b5d98550b11c280159f285db7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913454"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>如何：將命令新增至快捷方式功能表
   本主題示範如何使用 VSTO 增益集，將命令加入 Office 應用程式中的快捷方式功能表。

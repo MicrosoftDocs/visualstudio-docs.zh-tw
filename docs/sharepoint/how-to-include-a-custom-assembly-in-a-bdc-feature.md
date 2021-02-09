@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], add reference
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e7a2a0109faca4da5406b45b4d606ae8a5cd0685
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7a5bce649a0bd9411c064c463defa0946b47e81f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903464"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913608"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>如何：在 BDC 功能中包含自訂群組件
   您的專案可以參考相同方案中其他專案的元件。 不過，您必須使用 [ **指派參考的元件至 lobsystem** ] 對話方塊，將這些元件加入至專案的功能檔。

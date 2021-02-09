@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dadf3d8965d36719282e0ae98f56e61679f97e4
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 448c87bfff021db3df8f72f2f5a42c78cd6ef197
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913104"
 ---
 # <a name="com-constants-in-managed-code"></a>Managed 程式碼中的 COM 常數
 Managed Package Framework (MPF) 會讓 managed 程式碼可以使用一些標準的 COM 常數。 以下列出這些常數以供您參考。

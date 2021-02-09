@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 02550141fb1857214d5bfd80d5dd86969bec9fba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d01485a6044122baf460eede90470c5cc1478323
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913001"
 ---
 # <a name="bp_type"></a>BP_TYPE
 指定中斷點位於程式碼位置、是否為數據位置，或是另一種類型的中斷點。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_TYPE {
@@ -62,7 +62,7 @@ public enum enum_BP_TYPE {
 ## <a name="remarks"></a>備註
 以參數形式傳遞至 [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) 和 [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) 方法。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

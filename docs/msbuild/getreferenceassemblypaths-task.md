@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 178ef49c-5dee-405b-a14b-a37f41dc0609
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bbe9366e9b4b2c795b21ba46bd8320599c9e572
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: d3e0afdc7486e4337a92e3639c23c404050a84c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914617"
 ---
 # <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths 工作
 
@@ -30,7 +30,7 @@ ms.locfileid: "92436795"
 
  下表說明 `GetReferenceAssemblyPaths` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`ReferenceAssemblyPaths`|選擇性的 `String[]` 輸出參數。<br /><br /> 根據 `TargetFrameworkMoniker` 參數傳回路徑。 如果 `TargetFrameworkMoniker` 是 Null 或空白，則此路徑為 `String.Empty`。|
 |`FullFrameworkReferenceAssemblyPaths`|選擇性的 `String[]` 輸出參數。<br /><br /> 根據 `TargetFrameworkMoniker` 參數傳回路徑，而不考慮 Moniker 的設定檔部分。 如果 `TargetFrameworkMoniker` 是 Null 或空白，則此路徑為 `String.Empty`。|

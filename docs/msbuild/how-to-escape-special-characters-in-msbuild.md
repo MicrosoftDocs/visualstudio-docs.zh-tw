@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1aa3669c-1647-4960-b770-752e2532102f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 923c517653c42dd0362b398c420c99454ccf4034
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 44e4e713bf8f796f31fcca69a9451a77d120bcfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436413"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914351"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>如何：在 MSBuild 中逸出特殊字元
 
@@ -54,5 +54,5 @@ ms.locfileid: "92436413"
 
 ## <a name="see-also"></a>另請參閱
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
-- [Msbuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [項目](../msbuild/msbuild-items.md)

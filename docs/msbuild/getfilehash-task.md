@@ -14,15 +14,15 @@ helpviewer_keywords:
 - MSBuild, GetFileHash task
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e9e6e30cf8a224bfdfbde2c728545092bd1494b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 163fbfd9c2bf0ca56b5b9b6bc11dc48420cfc270
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436846"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914703"
 ---
 # <a name="getfilehash-task"></a>GetFileHash 工作
 
@@ -34,7 +34,7 @@ ms.locfileid: "92436846"
 
  下表說明 `GetFileHash` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`Files`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br />要進行雜湊的檔案。|
 |`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br />`Files` 輸入含設定至檔案雜湊的其他中繼資料。|

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b7d54db50b4f28277a81d149b4c0c5140b002b0
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: fa0f03869f61ef55e5a2346135c32dc0a5d7bbf0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436003"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914509"
 ---
 # <a name="how-to-build-incrementally"></a>如何：累加建置
 
@@ -52,7 +52,7 @@ MSBuild 可以比較輸入檔案的時間戳記與輸出檔案的時間戳記，
 </Target>
 ```
 
-當目標中指定輸入和輸出時，可能每個輸出對應到唯一的一個輸入，或者是輸出和輸入之間不能有直接對應。 例如，在先前的 [Csc](../msbuild/csc-task.md)工作中，輸出 *hello.exe*不能對應至任何單一輸入，這取決於所有的輸入。
+當目標中指定輸入和輸出時，可能每個輸出對應到唯一的一個輸入，或者是輸出和輸入之間不能有直接對應。 例如，在先前的 [Csc](../msbuild/csc-task.md)工作中，輸出 *hello.exe* 不能對應至任何單一輸入，這取決於所有的輸入。
 
 > [!NOTE]
 > 輸入和輸出之間沒有直接對應的目標，一律會比每個輸出只能對應到一個輸入的目標更頻繁地建立，因為 MSBuild 無法判斷某些輸入變更時需要重建的輸出。
@@ -65,7 +65,7 @@ MSBuild 可以比較輸入檔案的時間戳記與輸出檔案的時間戳記，
 
 - `GenerateContentFiles`：將 *.txt* 檔案轉換成 *content-type* 檔。
 
-- `BuildHelp`：結合 *. 內容*檔案和 XML 中繼資料檔案來*建立最終的說明檔。*
+- `BuildHelp`：結合 *. 內容* 檔案和 XML 中繼資料檔案來 *建立最終的說明檔。*
 
 專案會使用轉換來為 `GenerateContentFiles` 工作建立輸入與輸出之間的一對一對應。 如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。 此外，`Output` 項目設定為自動使用來自 `GenerateContentFiles` 工作的輸出，作為 `BuildHelp` 工作的輸入。
 

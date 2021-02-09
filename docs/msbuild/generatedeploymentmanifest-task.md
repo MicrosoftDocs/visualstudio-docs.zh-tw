@@ -16,15 +16,15 @@ helpviewer_keywords:
 - GenerateDeploymentManifest task [MSBuild]
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a35804a1523b3387061b4666cd483a9c3b0476
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 436aeb1b318aaa98d8a8cc9d8dac6baf4dd3c6c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914772"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 工作
 
@@ -34,7 +34,7 @@ ms.locfileid: "92436463"
 
 下表說明 `GenerateDeploymentManifest` 工作的參數。
 
-| 參數 | 描述 |
+| 參數 | Description |
 |--------------------------| - |
 | `AssemblyName` | 選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Name` 欄位。 如果未指定此參數，會從 `EntryPoint` 或 `InputManifest` 參數來推斷名稱。 如果無法推斷名稱，工作就會擲回錯誤。 |
 | `AssemblyVersion` | 選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Version` 欄位。 如果未指定此參數，工作會使用 "1.0.0.0" 的值。 |
@@ -51,8 +51,8 @@ ms.locfileid: "92436463"
 | `MinimumRequiredVersion` | 選擇性的 `String` 參數。<br /><br /> 指定使用者是否可以略過更新。 如果使用者的版本低於最小必要版本，則無法選擇略過更新。 當 `Install` 參數的值是 `true` 時，此輸入才適用。 |
 | `OutputManifest` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定所產生的輸出資訊清單檔名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷輸出檔的名稱。 |
 | `Platform` | 選擇性的 `String` 參數。<br /><br /> 指定應用程式的目標平台。 此參數的值如下：<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> 預設值是 `AnyCPU`。 |
-| `Product` | 選擇性的 `String` 參數。<br /><br /> 指定應用程式的名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷名稱。 此名稱可用來作為 [開始]**** 功能表上的捷徑名稱，而且是出現在 [新增或移除程式]**** 對話方塊中名稱的一部分。 |
-| `Publisher` | 選擇性的 `String` 參數。<br /><br /> 指定應用程式的發行者。 如果未指定此參數，會從已註冊使用者或產生的資訊清單識別來推斷名稱。 此名稱可用來作為 [開始]**** 功能表上的資料夾名稱，而且是出現在 [新增或移除程式]**** 對話方塊中名稱的一部分。 |
+| `Product` | 選擇性的 `String` 參數。<br /><br /> 指定應用程式的名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷名稱。 此名稱可用來作為 [開始] 功能表上的捷徑名稱，而且是出現在 [新增或移除程式] 對話方塊中名稱的一部分。 |
+| `Publisher` | 選擇性的 `String` 參數。<br /><br /> 指定應用程式的發行者。 如果未指定此參數，會從已註冊使用者或產生的資訊清單識別來推斷名稱。 此名稱可用來作為 [開始] 功能表上的資料夾名稱，而且是出現在 [新增或移除程式] 對話方塊中名稱的一部分。 |
 | `SuiteNamel` | 選擇性的 `String` 參數。<br /><br /> 指定 [ **開始** ] 功能表上的資料夾名稱，此為應用程式在 ClickOnce 部署之後所在的位置。 |
 | `SupportUrl` | 選擇性的 `String` 參數。<br /><br /> 指定出現在應用程式的 [ **新增或移除程式** ] 對話方塊中的連結。 指定的值應該是完整 URL 或 UNC 路徑。 |
 | `TargetCulture` | 選擇性的 `String` 參數。<br /><br /> 識別應用程式的文化特性，並為產生的資訊清單指定組件識別的 `Language` 欄位。 如果未指定此參數，則會假設應用程式會因文化特性而異。 |

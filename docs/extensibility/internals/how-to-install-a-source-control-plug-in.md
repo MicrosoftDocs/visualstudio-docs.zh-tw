@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2496de5d1139d66e4ae9072b551ada990cf856dd
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: ad5b77176d05c28b3ba938a1255de6e10fcd7094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912757"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何：安裝原始檔控制外掛程式
 建立原始檔控制外掛程式包含三個步驟：
@@ -55,7 +55,7 @@ ms.locfileid: "96761214"
 
       **HideInVisualStudio** 是 DWORD 值，且設定為 *1* 以隱藏外掛程式或 *0* 以顯示外掛程式。 如果登錄專案未出現，則預設行為是顯示外掛程式。
 
-   - **DisableSccManager** 登錄專案可以用來停用或隱藏通常會出現在 [檔案原始檔控制] 子功能表 **底下的 [****啟動 \<Source Control Server>** ] 功能表選項  >  **Source Control** 。 選取此功能表選項會呼叫 [SccRunScc](../../extensibility/sccrunscc-function.md) 函數。 您的原始檔控制外掛程式可能不支援外部程式，因此您可能會想要停用或甚至隱藏 [ **啟動** ] 功能表選項。
+   - **DisableSccManager** 登錄專案可以用來停用或隱藏通常會出現在 [檔案原始檔控制] 子功能表 **底下的 [****啟動 \<Source Control Server>** ] 功能表選項  >   。 選取此功能表選項會呼叫 [SccRunScc](../../extensibility/sccrunscc-function.md) 函數。 您的原始檔控制外掛程式可能不支援外部程式，因此您可能會想要停用或甚至隱藏 [ **啟動** ] 功能表選項。
 
       **DisableSccManager** 是一個 DWORD 值，且設定為 *0* ，以啟用 **[ \<Source Control Server> 啟動**] 功能表選項、設定為 [ *1* ] 以停用功能表選項，並設定為 [ *2* ] 以隱藏功能表選項。 如果未出現這個登錄專案，預設行為是顯示功能表選項。
 

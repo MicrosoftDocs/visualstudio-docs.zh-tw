@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c946d69cf1aded072d27e7c6ccbdf28f1122571
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 7a2165bf6d605384e52dbc3cb90b5485d8022ee7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915237"
 ---
 # <a name="rdt_readlock-usage"></a>RDT_ReadLock 使用方式
 

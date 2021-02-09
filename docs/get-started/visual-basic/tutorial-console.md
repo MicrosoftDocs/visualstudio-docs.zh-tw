@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.devlang: vb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a08e955d8446ebcd376f81773b5996146241486e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915030"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 
@@ -45,31 +45,31 @@ ms.locfileid: "77579943"
 
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列中，選擇 [檔案]** [新增]** > ** [專案]** > ****。
+2. 從頂端功能表列中，選擇 [檔案]**[新增]** > **[專案]** > 。
 
-3. 在 [新增專案]**** 對話方塊的左窗格中，展開 [Visual Basic]****，然後選擇 [.NET Core]****。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]****。 然後將專案命名為 *>whatisyourname*。
+3. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將專案命名為 *>whatisyourname*。
 
    ![Visual Studio IDE 的 [新增專案] 對話方塊中的主控台應用程式 (.NET Core) 專案範本](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>新增工作負載 (選擇性)
 
-如果您看不到 [主控台應用程式]**** 專案範本，則其取得方式是新增 [.NET Core 跨平台開發]**** 工作負載。 您可以使用下列兩種方式的其中一種來新增此工作負載，視電腦上安裝的 Visual Studio 2017 更新而定。
+如果您看不到 [主控台應用程式] 專案範本，則其取得方式是新增 [.NET Core 跨平台開發] 工作負載。 您可以使用下列兩種方式的其中一種來新增此工作負載，視電腦上安裝的 Visual Studio 2017 更新而定。
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>選項 1：使用 [新增專案] 對話方塊
 
-1. 按一下 [新增專案]**** 對話方塊的左窗格中的 [開啟 Visual Studio 安裝程式]**** 連結。
+1. 按一下 [新增專案] 對話方塊的左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
 
    ![按一下 [新增專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結](../media/vs-open-visual-studio-installer-generic.png)
 
-1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發]**** 工作負載，然後選擇 [修改]****。
+1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
    ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../media/tutorial-aspnet-workload.png)
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
 
-1. 請取消 [新增專案]**** 對話方塊，然後從頂端功能表列中選擇 [工具]**[取得工具和功能]** > ****。
+1. 請取消 [新增專案] 對話方塊，然後從頂端功能表列中選擇 [工具]**[取得工具和功能]** > 。
 
-1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發]**** 工作負載，然後選擇 [修改]****。
+1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
 ::: moniker-end
 
@@ -84,24 +84,24 @@ ms.locfileid: "77579943"
 
    ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在 [建立新專案]**** 視窗的搜尋方塊中輸入或鍵入 ASP.NET**。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。 
+1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。 
 
-   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)]**** 範本，然後選擇 [下一步]****。
+   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
 
    ![選擇主控台應用程式 (.NET Framework) 的 Visual Basic 專案範本](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
-   > 如果您未看到 [主控台應用程式 (.NET Core)]**** 範本，您可以從 [建立新專案]**** 視窗中安裝。 在 [找不到您要找的資料嗎?]**** 訊息中，選擇 [安裝更多工具和功能]**** 連結。
+   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
    >
    > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
-   > 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發**工作負載。
+   > 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發** 工作負載。
    >
    > ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > 接下來，選擇 Visual Studio 安裝程式中的 [修改]**** 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續]**** 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+   > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定您的新專案]**** 視窗的 [專案名稱]**** 方塊中鍵入或輸入 *WhatIsYourName*。 然後，選擇 [ **建立**]。
+1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *WhatIsYourName*。 然後，選擇 [ **建立**]。
 
    ![在 [設定您的新專案] 視窗中，以 'WhatIsYourName' 命名您的專案](./media/vs-2019/vb-name-your-project-whatname.png)
 
@@ -175,7 +175,7 @@ ms.locfileid: "77579943"
 
 1. 開啟 Visual Studio 2017]，然後從頂端功能表列 **中選擇 [** 檔案 > **新增** > **專案**]。
 
-1. 在 [新增專案]**** 對話方塊的左窗格中，展開 [Visual Basic]****，然後選擇 [.NET Core]****。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]****。 然後將檔案命名為 *CalculateThis*。
+1. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將檔案命名為 *CalculateThis*。
 
 1. 在 `Module Program` 行與 `End Module` 行之間輸入下列程式碼：
 
@@ -208,11 +208,11 @@ ms.locfileid: "77579943"
 
 1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。 
 
-1. 在 [建立新專案]**** 視窗的搜尋方塊中輸入或鍵入 ASP.NET**。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。 
+1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。 
 
-1. 在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)]**** 範本，然後選擇 [下一步]****。
+1. 在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
 
-   然後，在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中輸入或輸入*CalculateThis* 。 接下來，選擇 [ **建立**]。
+   然後，在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中輸入或輸入 *CalculateThis* 。 接下來，選擇 [ **建立**]。
 
 1. 在 `Module Program` 行與 `End Module` 行之間輸入下列程式碼：
 
@@ -261,7 +261,7 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 
 .NET Core 是 .NET Framework 的下一個進化步驟。 如果 .NET Framework 可讓您跨程式設計語言來共用程式碼，則 .NET Core 會新增跨平台共用程式碼的能力。 更好的是，它是開放原始碼  (.NET Framework 和 .NET Core 包含預先建置功能的程式庫以及 Common Language Runtime (CLR)，而後者作為在其中執行程式碼的虛擬機器)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 恭喜您完成此教學課程！ 若要更深入了解，請參閱下列教學課程。
 

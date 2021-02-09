@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3ca60816-4bb0-4fef-ae43-ca0bfb63def3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a90188244e32b6f593affd2c29a227a2810227d
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 831f6fa76ba3d6cfdebbb6b850862155ad280641
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914730"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo 工作
 
@@ -33,7 +33,7 @@ ms.locfileid: "92436445"
 
  下表說明 `GenerateTrustInfo` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`ApplicationDependencies`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定相依組件。|
 |`BaseManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要從中產生應用程式信任的基底資訊清單。|

@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: ghogen
 ms.author: ghogen
-manager: jillfra
-ms.openlocfilehash: 97a2666b32ad7e6bc93865fa36529377652b6453
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+manager: jmartens
+ms.openlocfilehash: f2c0b070868b8dc9fc10c4f493fbb75948485a5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914243"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略工作中的錯誤
 
@@ -68,6 +68,6 @@ ms.locfileid: "92436252"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Msbuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

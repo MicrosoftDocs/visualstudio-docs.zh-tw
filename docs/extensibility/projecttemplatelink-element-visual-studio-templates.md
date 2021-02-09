@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51098553d0b4b969b600f6e6e55cf62871cb44bf
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: dba5063080fb45c366e7a1b76461b0a0d8978f7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915160"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 元素 (Visual Studio 範本)
 指定多專案範本中某一個專案的 *.vstemplate* 檔路徑。
@@ -35,7 +35,7 @@ ms.locfileid: "94903841"
  \<SolutionFolder>
  \<ProjectTemplateLink>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ProjectTemplateLink ProjectName="Name">
@@ -48,7 +48,7 @@ ms.locfileid: "94903841"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`ProjectName`|選擇性屬性。<br /><br /> 指定多專案範本中每一個別專案的名稱。 [ **新增專案** ] 對話方塊無法將名稱指派給個別專案。|
 |`CopyParameters`|可將主群組範本中的所有變數複製到每一個連結的範本。<br /><br /> 在連結之範本中的參數會有前置詞 `"$ext_*$"`。 例如，如果在父群組範本中，參數 `$projectname$` 具有值 **ExampleProject1**，則當連結的範本取得要執行的回合時，它會取得參數 `$ext_projectname$` ，也就是 `$projectname$` 父群組範本中參數的複本。<br /><br /> 這樣可讓連結的範本共用某些只有在父群組範本中才方便建立的通用參數。<br /><br /> 這個屬性是選擇性的，如果未包含，則它會自動預設為 `false`。<br /><br /> 已在 Visual Studio 2013 Update 2 中引入。 若要參考正確的產品版本，請參閱 [VISUAL STUDIO 2013 SDK Update 2 中提供的參考元件](/previous-versions/dn632168(v=vs.120))。|
@@ -58,7 +58,7 @@ ms.locfileid: "94903841"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|指定多專案範本的組織和內容。|
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|將多專案範本中的專案分組。|

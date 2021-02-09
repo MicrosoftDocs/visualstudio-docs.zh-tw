@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5a5650402655f4a5a2a0388ac0e57a0b903bc2e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: c3a0d22019a0c7722b135392c53c7f9bfbcaab69
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903962"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914103"
 ---
 # <a name="import-element-msbuild"></a>Import 項目 (MSBuild)
 
@@ -82,7 +82,7 @@ ms.locfileid: "92903962"
 
  在 .NET Framework 4 中，MSBuild 允許在 Project 屬性中使用萬用字元。 有萬用字元時，會排序所有找到的相符項目 (適用於重現性)，然後依該順序進行匯入，就像已明確設定順序一樣。
 
- 如果您想要提供擴充點，讓其他人可以匯入檔案，而不需要您將檔案名稱明確地新增至匯入檔案，則這非常好用。 基於此目的， *Microsoft.Common.Targets* 會在檔案頂端包含下行。
+ 如果您想要提供擴充點，讓其他人可以匯入檔案，而不需要您將檔案名稱明確地新增至匯入檔案，則這非常好用。 基於此目的，*Microsoft.Common.Targets* 會在檔案頂端包含下行。
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore\*" Condition="'$(ImportByWildcardBeforeMicrosoftCommonTargets)' == 'true' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore')"/>
@@ -115,7 +115,7 @@ ms.locfileid: "92903962"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [如何：使用多個專案檔內相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
