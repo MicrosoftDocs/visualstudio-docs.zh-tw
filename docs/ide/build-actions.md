@@ -7,15 +7,15 @@ ms.technology: vs-ide-compile
 ms.topic: reference
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8884eaa459fa3a2a7dd8d10f0ffeca5003398afd
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 86df6673608359dcc7158762c3ef9d86c184fff6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850477"
 ---
 # <a name="build-actions"></a>建置動作
 
@@ -34,7 +34,7 @@ Visual Studio 專案中的所有檔案都有一個建置動作。 建置動作�
 
 C# 和 Visual Basic 專案檔的一些較常見的建置動作如下：
 
-|建置動作 | 專案類型 | 描述 |
+|建置動作 | 專案類型 | Description |
 |-|-|
 | **AdditionalFiles** | C#、Visual Basic | 作為輸入傳遞至 C# 或 Visual Basic 編譯器的非來源文字檔。 此建置動作主要用來提供輸入給專案參考的[分析器](../code-quality/roslyn-analyzers-overview.md)，以便驗證程式碼品質。 如需詳細資訊，請參閱[使用其他檔案](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md)。|
 | **ApplicationDefinition** | WPF | 定義您應用程式的檔案。 當您第一次建立專案時，這會是 *App.xaml*。 |
@@ -46,7 +46,7 @@ C# 和 Visual Basic 專案檔的一些較常見的建置動作如下：
 | **Embedded Resource** | .NET | 該檔案會作為要內嵌至組件的資源傳遞至編譯器。 您可以呼叫 <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> 從組件讀取檔案。|
 | **EntityDeploy** | .NET | 適用於指定 EF 成品之部署的 Entity Framework (EF) .edmx 檔案。 |
 | **Fakes** | .NET | 用於 Microsoft Fakes 測試架構。 請參閱[使用 Microsoft Fakes 隔離測試中的程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md) |
-| **無** | 任意 | 該檔案在任何方面都不是組建的一部分。 這個值可以用於文件檔，例如「讀我」檔案。|
+| **None** | 任意 | 該檔案在任何方面都不是組建的一部分。 這個值可以用於文件檔，例如「讀我」檔案。|
 | **頁面** | WPF | 將 XAML 檔案編譯為二進位 baml 檔案，以便在執行時間更快載入。 |
 | **Resource** | WPF | 指定要將檔案內嵌到副檔名為 *.g.resources* 的組件資訊清單資源檔中。 |
 | **Shadow** | .NET | 用於包含已建置組件檔案名稱清單的 .accessor 檔案，每行一個。 針對清單上的每個組件，使用與原始檔案相同的名稱 `ClassName_Accessor` 來產生公用類別，但使用的是公用方法而不是私人方法。 用於單元測試。 |

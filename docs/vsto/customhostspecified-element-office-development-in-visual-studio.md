@@ -14,20 +14,20 @@ helpviewer_keywords:
 - customHostSpecified element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e8327c6e154f051f5ce79d41ceaa696e330c794f
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ba5ce54e862862c1e6750c78416fec4d5cf51cdd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849979"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 開發的 d 元素
   `customHostSpecified`元素表示此方案不是獨立的應用程式。 Office 方案包含在 Microsoft Office 應用程式中裝載的元件。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <customHostSpecified />

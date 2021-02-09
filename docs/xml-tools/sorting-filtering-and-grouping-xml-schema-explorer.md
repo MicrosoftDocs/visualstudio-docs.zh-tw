@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41f0aff39350b0307db6b02a148fb70022fb51ca
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 98ead8b2f0ddc7edc84449c3f80deeb7598fdfab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996249"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849758"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、篩選和分組 (XML 架構瀏覽器) 
 

@@ -12,13 +12,13 @@ dev_langs:
 - CPP
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: c2c7bcb270184bcc140dbadef63af1315df765dc
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: c74a39c81de2612bca5c3fc39286a4432916eb11
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330052"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850070"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 

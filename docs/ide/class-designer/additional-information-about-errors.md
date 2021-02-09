@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 575f9b74c7931ecc752f4c2e56866534aaa1e3d5
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5bf6f7f9fc01e1c1a047edaf1102fe6a23b35239
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903100"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850343"
 ---
 # <a name="class-designer-errors"></a>類別設計工具錯誤
 

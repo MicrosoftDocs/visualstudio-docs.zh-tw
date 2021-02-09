@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customization> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f50b441393e9d07dcd0b409248f199484022654
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e63b93728f41dcff360da8ee9d14e2830d216be5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844110"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849940"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 開發的自訂元素
   `customization` 命名空間的 `vstov4` 項目描述特定的 Office 方案。 文件層級自訂與 VSTO 增益集的子項目不同。
@@ -76,7 +76,7 @@ ms.locfileid: "96844110"
 
 ## <a name="example-of-a-document-level-customization"></a>檔層級自訂的範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>Description
  下列程式碼範例可說明文件層級自訂的 `customization` 項目。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
@@ -90,7 +90,7 @@ ms.locfileid: "96844110"
 
 ## <a name="example-of-a-vsto-add-in"></a>VSTO 增益集範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>Description
  下列程式碼範例說明 `customization` VSTO 增益集的元素。 這是包含表單區域的 Outlook VSTO 增益集。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼

@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c5d78196a64ca0ab2067d0df73410c41cbeca35
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 2c26bd749fac3d458a5983380fc09bd40a2a645a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849771"
 ---
 # <a name="context-menus-xml-schema-explorer"></a> (XML 架構瀏覽器的內容功能表) 
 
@@ -25,7 +25,7 @@ ms.locfileid: "93049162"
 
 下表描述結構描述集節點可用的選項。
 
-|選項|描述|
+|選項|Description|
 |-|-----------------|
 |**顯示最可能的根項目**|尋找並反白顯示除了本身以外沒有其他全域項目參考的所有全域項目。|
 |**顯示全域型別**|尋找並反白顯示結構描述集中的所有全域型別。|
@@ -35,7 +35,7 @@ ms.locfileid: "93049162"
 ## <a name="node-type-namespace"></a>節點類型：命名空間
 下表描述命名空間節點可用的選項。
 
-|選項|描述|
+|選項|Description|
 |-|-----------------|
 |**顯示所有對內參考**|尋找並反白顯示匯入選取之命名空間的檔案。|
 |**顯示所有對外參考**|針對選取之命名空間內的每個檔案，尋找並反白顯示下列項目：<br /><br /> -Import 語句中參考的所有命名空間，但沒有 `schemaLocation` 屬性。<br />-命名空間中的所有檔案，但在匯 `schemaLocation` 入和包含語句的屬性中所指定的檔案除外。|
@@ -46,7 +46,7 @@ ms.locfileid: "93049162"
 ## <a name="node-type-file"></a>節點類型： File
 下表描述檔案節點可用的選項。
 
-|選項|描述|
+|選項|Description|
 |-|-----------------|
 |**顯示所有對內參考**|尋找並反白顯示在 include 和 import 陳述式之 `schemaLocation` 屬性中指定選取檔案的所有檔案。|
 |**顯示所有對外參考**|尋找並反白顯示下列項目：<br /><br /> -所有 import 語句的 namespace 屬性中指定的所有命名空間都沒有 `schemaLocation` 屬性。<br />- `schemaLocation` 所有 import 和 include 語句之屬性中指定的所有檔案。|
@@ -58,7 +58,7 @@ ms.locfileid: "93049162"
 ## <a name="all-global-node-types"></a>所有全域節點類型
 下表描述所有全域節點可用的選項。
 
-|選項|描述|
+|選項|Description|
 |-|-----------------|
 |**在圖表檢視中顯示**|開啟圖表檢視。 如果所選的節點不在工作空間中，請將其加入至工作空間並選取該節點。|
 |**顯示在內容模型檢視中**|開啟內容模型檢視。 如果所選的節點不在工作空間中，請將其加入至工作空間並選取該節點。|
@@ -68,7 +68,7 @@ ms.locfileid: "93049162"
 ## <a name="node-type-element"></a>節點類型：元素
 除了上述的全域節點選項外，項目節點的操作功能表還包含下列選項：
 
-|選項|描述|
+|選項|Description|
 |-|-----------------|
 |**移至類型定義**|瀏覽至選取之項目的型別定義。 當用於此項目的型別是全域型別時，這個選項就會適用。|
 |**移至原始項目**|針對項目參考，瀏覽至此項目的實際定義。|
@@ -80,7 +80,7 @@ ms.locfileid: "93049162"
 ## <a name="node-type-global-types"></a>節點類型：全域類型
 除了上述的全域節點選項外，全域型別節點的操作功能表還有下列選項：
 
-|選項|描述|
+|選項|Description|
 |-|-----------------|
 |**顯示基底型別**|如果選取的型別衍生自全域型別，就會瀏覽至選取之型別的基底型別。|
 |**顯示所有參考**|尋找並反白顯示選取之型別的所有參考。 這包括選取的型別以及衍生自選取型別之型別的項目和屬性。|
@@ -90,7 +90,7 @@ ms.locfileid: "93049162"
 ## <a name="node-type-attribute"></a>節點類型：屬性
 除了上述的全域節點選項外，屬性節點的內容功能表還有下列選項：
 
-|選項|描述|
+|選項|Description|
 |-|-----------------|
 |**移至類型定義**|當用於屬性的型別是全域型別時，就會瀏覽至選取之屬性的型別定義。|
 |**移至原始屬性**|針對屬性參考，瀏覽至此屬性的實際定義。|
@@ -99,7 +99,7 @@ ms.locfileid: "93049162"
 ## <a name="node-type-attribute-group"></a>節點類型：屬性群組
 除了上述的全域節點選項外，屬性群組節點的操作功能表還包含下列選項：
 
-|選項|描述|
+|選項|Description|
 |-|-----------------|
 |**移至定義**|針對參考，瀏覽至此屬性的實際定義。|
 |**顯示所有成員**|尋找並反白顯示屬性群組的所有成員。|
@@ -108,13 +108,13 @@ ms.locfileid: "93049162"
 ## <a name="node-type-named-group"></a>節點類型：命名群組
 除了上述的全域節點選項外，具名群組節點的操作功能表還包含下列選項：
 
-|選項|描述|
+|選項|Description|
 |-|-----------------|
 |**移至定義**|針對參考，瀏覽至此屬性的實際定義。|
 |**顯示所有成員**|尋找並反白顯示具名群組的所有成員。|
 |**顯示所有參考**|尋找並反白顯示所選群組的所有參考 (具有 `ref="selectedGroup"` 的群組)。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)
 - [搜尋架構集合](../xml-tools/searching-the-schema-set.md)

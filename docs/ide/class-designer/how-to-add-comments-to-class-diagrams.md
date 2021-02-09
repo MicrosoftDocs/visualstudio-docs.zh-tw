@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aa001c301174f2f7b45fb69265eeb24454a6626f
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 5e86c1dae7716c59e235005867cd9b09c67f8af2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96933540"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850317"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>如何：將註解新增至類別圖表
 

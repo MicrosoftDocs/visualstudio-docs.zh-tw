@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0b48f35a9467e1f69a0055ac0859083078f9cf3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b572a6854d505704accd79cc4da2ac4e52c193d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88992351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850164"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
-一般而言，企業系統管理員會建立網路安裝點，以部署至用戶端工作站。 Visual Studio 設計為能讓您快取初始安裝之檔案以及單一資料夾的所有產品更新。 (這個程序也稱為「建立配置」__)。
+一般而言，企業系統管理員會建立網路安裝點，以部署至用戶端工作站。 Visual Studio 設計為能讓您快取初始安裝之檔案以及單一資料夾的所有產品更新。 (這個程序也稱為「建立配置」)。
 
 我們已完成這項作業，因此，用戶端工作站可以使用相同的網路位置來管理其安裝，即使它們尚未更新為最新的服務更新也是一樣。
 
@@ -47,7 +47,7 @@ ms.locfileid: "88992351"
 |Visual Studio Professional | **vs_professional.exe** |
 |Visual Studio Build Tools   | **vs_buildtools.exe** |
 
-其他支援的啟動載入器包括 **vs_feedbackclient.exe**、 **vs_teamexplorer.exe**、 **vs_testagent.exe**、 **vs_testcontroller.exe**和 **vs_testprofessional.exe**。
+其他支援的啟動載入器包括 **vs_feedbackclient.exe**、 **vs_teamexplorer.exe**、 **vs_testagent.exe**、 **vs_testcontroller.exe** 和 **vs_testprofessional.exe**。
 
 ::: moniker-end
 
@@ -260,9 +260,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > [!NOTE]
 > [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 所提供 Visual Studio 啟動載入器，會下載並安裝執行時可用的最新版 Visual Studio。
 >
-> 因此，如果您今天下載 Visual Studio「啟動載入器」**，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
+> 因此，如果您今天下載 Visual Studio「啟動載入器」，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
 >
-> 但是，如果您建立「配置」** 並從該配置進行安裝，則會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
+> 但是，如果您建立「配置」並從該配置進行安裝，則會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
 
 ::: moniker-end
 
@@ -271,9 +271,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > [!NOTE]
 > [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads) 所提供 Visual Studio 啟動載入器，會下載並安裝執行時可用的最新版 Visual Studio。
 >
-> 因此，如果您今天下載 Visual Studio「啟動載入器」**，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
+> 因此，如果您今天下載 Visual Studio「啟動載入器」，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
 >
-> 但是，如果您建立「配置」** 並從該配置進行安裝，則會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
+> 但是，如果您建立「配置」並從該配置進行安裝，則會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
 
 ::: moniker-end
 
@@ -283,7 +283,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 如果您的離線安裝發生問題，我們會想要進行了解。 告訴我們的最簡單方式就是使用[回報問題](../ide/how-to-report-a-problem-with-visual-studio.md)工具。 使用此工具時，您可以將我們所需的遙測和記錄檔傳送給我們，來協助我們診斷及修正問題。
 
-我們也提供[**安裝聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (僅限英文) 支援選項，可回答安裝的相關問題。
+我們也提供 [**安裝聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (僅限英文) 支援選項，可回答安裝的相關問題。
 
 我們也提供其他支援選項。 如需清單，請參閱我們的[意見反應](../ide/feedback-options.md)頁面。
 

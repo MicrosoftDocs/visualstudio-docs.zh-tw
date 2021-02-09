@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: abf11966f029d6c4ec66ce295332889a9d74c359
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: bde7081f69a4f92092ac6f3c5b0e8b8059e17a1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348401"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849745"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本設計方針規則規則集
 
@@ -25,7 +25,7 @@ ms.locfileid: "94348401"
 
 下表說明 Microsoft 基本設計指導方針規則規則集中的所有規則。
 
-|規則|說明|
+|規則|Description|
 |----------|-----------------|
 |[CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000)|不要在泛型類型上宣告靜態成員|
 |[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可處置欄位的類型應該為可處置|

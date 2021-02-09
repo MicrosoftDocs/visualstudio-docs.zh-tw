@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d329ce7b4f4b74b8ff77357393ffe9383a3977e
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 45cd616a58f51a532883eeba37f06c4eb73bd72d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993844"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850670"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何：開啟開啟檔的編輯器
 專案必須先判斷檔案是否已經在其他編輯器的文件視窗中開啟，專案才會開啟文件視窗。 您可以在專案特定的編輯器中開啟檔案，或在其中一個已註冊的標準編輯器中開啟檔案 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。

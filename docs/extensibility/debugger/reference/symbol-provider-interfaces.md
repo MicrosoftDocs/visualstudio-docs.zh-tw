@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f5c2204a1f8c4bef17256e98ed04dcf4b195c3aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850817"
 ---
 # <a name="symbol-provider-interfaces"></a>Symbol Provider Interfaces
 以下是的符號處理介面 [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] 。
@@ -27,7 +27,7 @@ ms.locfileid: "96845787"
 ## <a name="discussion"></a>討論
  在中斷模式期間，這些介面是用來評估呼叫堆疊中的變數。 它們只會在 (SP) 的 common language runtime 符號提供者上執行。
 
-|介面|實作為|描述|
+|介面|實作為|Description|
 |---------------|--------------------|-----------------|
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|表示專案的位址。|
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|代表專案的位址，提供處理序識別碼的存取權。|

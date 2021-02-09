@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fbde07ec9825f094777f7e9b962e8394595e180
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a27f5ae8320e942d5167fcc8260179f8cec96e37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850278"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>如何：將類別圖表新增到專案
 
@@ -48,7 +48,7 @@ ms.locfileid: "94902996"
 
    [ **加入新專案** ] 對話方塊隨即開啟。
 
-2. 展開 **Common Items**  >  **[一般一般** 專案]，然後從 [範本] 清單中選取 [**類別圖表**]。 若是 Visual C++ 專案，請在 [公用程式] 分類中尋找 **類別圖表** 範本。
+2. 展開  >  **[一般一般** 專案]，然後從 [範本] 清單中選取 [**類別圖表**]。 若是 Visual C++ 專案，請在 [公用程式] 分類中尋找 **類別圖表** 範本。
 
    > [!NOTE]
    > 若您沒有看到 **類別圖表** 範本，請 [遵循這些步驟](#install-the-class-designer-component)安裝 Visual Studio 的 **類別設計工具** 元件。

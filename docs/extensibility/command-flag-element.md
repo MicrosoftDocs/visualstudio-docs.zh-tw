@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15dbf960aebc543b71ff282e525476583bdeba3d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: f328f2112073c082e276683d32d6ca06276b9829
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848191"
 ---
 # <a name="command-flag-eelement"></a>命令旗標 Eelement
 修改其父元素。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <CommandFlag>DynamicVisibility</CommandFlag>
@@ -71,7 +71,7 @@ ms.locfileid: "94974193"
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[按鈕元素](../extensibility/buttons-element.md)|提供 [按鈕元素](../extensibility/button-element.md) 元素的群組。|
 |[Menu 元素](../extensibility/menus-element.md)|定義 VSPackage 所實行的所有功能表。|

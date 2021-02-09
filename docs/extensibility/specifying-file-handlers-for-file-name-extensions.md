@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: d897cb9bb4697a687bd06eeb02c779e133090e33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715596"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848093"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定適用於副檔名的檔案處理常式
 有幾種方式可以決定處理具有特定副檔名之檔案的應用程式。 OpenWithList 和 OpenWithProgids 動詞是在副檔名的登錄專案底下指定檔案處理常式的兩種方式。
@@ -79,6 +79,6 @@ HKEY_CLASSES_ROOT\
 
  如果舊的 ProgID 有相關聯的動詞，則這些動詞命令也會出現在快捷方式功能表中的 [開啟檔案] **和**[ *產品名稱* ] 底下。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [關於副檔名](../extensibility/about-file-name-extensions.md)
 - [註冊適用於副檔名的動詞命令](../extensibility/registering-verbs-for-file-name-extensions.md)

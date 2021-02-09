@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 60e4689c-c899-4c14-9d18-96393b741e1f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ec3d8ed15786b2a39a04b63cfd09a749097ac661
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 791ed47d09d44713f4586d79ac2a1655ea0bb94b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848178"
 ---
 # <a name="idebugdocumenttextevents2ondestroy"></a>IDebugDocumentTextEvents2::onDestroy
 表示整份檔已損毀。
@@ -28,8 +28,8 @@ ms.locfileid: "80731503"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT onDestroy( 
-   void 
+HRESULT onDestroy( 
+   void 
 );
 ```
 

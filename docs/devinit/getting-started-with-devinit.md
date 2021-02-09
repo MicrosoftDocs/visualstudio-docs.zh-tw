@@ -1,24 +1,24 @@
 ---
-title: 使用 devinit 消費者入門
+title: 使用 devinit 開始使用
 description: Devinit 的使用者入門指南。
 ms.date: 11/18/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d071a49c9996c9f7f161faf676117704fbcbbdcd
-ms.sourcegitcommit: 3b9a8aec34c7e835069f4db5c133dd002028180c
+ms.openlocfilehash: 99daeeff40091bb3600b82b1f25cc9cf44c52cf9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94937692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848236"
 ---
-# <a name="getting-started-with-devinit"></a>使用 devinit 消費者入門
+# <a name="getting-started-with-devinit"></a>使用 devinit 開始使用
 
 devinit 是一種工具，您可以藉由執行簡單的命令，讓任何人都能取得程式碼，並在您的存放庫中提高生產力。 您可以使用 devinit 來定義存放庫所需的所有全系統相依性，例如 SQL server、Node.js、Docker 或 IIS。 Devinit 可以叫用其他工具和套件管理員，以安裝您的存放庫所需的內容。 您可以在名為 [.devinit.js](devinit-json.md) 的 JSON 檔案中定義這些相依性，然後使用您的存放庫的下一個人必須執行 [`devinit init`](devinit-commands.md#init) ，才能安裝所有這些相依性。 因此，您可以在短短幾分鐘內完成這項工作，而不需要花上半天的時間登入新的存放庫。
 
