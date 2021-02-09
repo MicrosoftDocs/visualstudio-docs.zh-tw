@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ece2a7df1aeb2ec44f7b21075d2945a93d51838
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 958465fc927464c46befb2422eb1286cda156916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895657"
 ---
 # <a name="model-for-source-control-packages"></a>原始檔控制套件的模型
 下列模型代表原始檔控制執行的範例。 在模型中，您會看到必須執行的介面，以及您必須呼叫的環境服務。 就像所有的服務一樣，您實際上會呼叫透過服務所取得之特定介面的方法。 系統會識別類別的名稱，讓您更輕鬆地查看如何執行原始檔控制。
@@ -35,7 +35,7 @@ ms.locfileid: "97876685"
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|由專案呼叫，以向原始檔控制封裝註冊，以及取得原始檔控制狀態的資訊。 您可以使用服務來存取這個介面 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> 。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|由專案執行以回應原始檔控制要求，以取得檔案的相關資訊，並取得專案檔所需的原始檔控制設定。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>

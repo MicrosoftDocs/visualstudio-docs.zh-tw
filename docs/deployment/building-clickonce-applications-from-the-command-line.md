@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b719f9609dfb2feb432f4692b31e820d806ff92
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 13b057f0a688c3a1ae855215ac226a4d31993ea1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895150"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>從命令列建置 ClickOnce 應用程式
 
@@ -33,7 +33,7 @@ ms.locfileid: "94437719"
 
  當您在命令列上叫用 msbuild/target： publish 時，它會告知 MSBuild 系統建立專案，並 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在 [發行] 資料夾中建立應用程式。 這相當於在 IDE 中選取 [ **發行** ] 命令。
 
- 此命令會執行 *msbuild.exe* ，在 Visual Studio 命令提示字元環境中的路徑上。
+ 此命令會執行 *msbuild.exe*，在 Visual Studio 命令提示字元環境中的路徑上。
 
  「目標」是 MSBuild 的指標，可處理此命令。 主要目標是 "build" 目標和 "publish" 目標。 組建目標相當於選取組建命令 (或在 IDE 中按 F5) 。 如果您只想要建立您的專案，您可以鍵入來達成 `msbuild` 。 此命令的運作方式是因為組建目標是所產生之所有專案的預設目標 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 。 這表示您不需要明確地指定組建目標。 因此，輸入 `msbuild` 的操作與輸入的作業相同 `msbuild /target:build` 。
 
@@ -55,9 +55,9 @@ ms.locfileid: "94437719"
 
     [發行精靈] 隨即出現。
 
-1. 在 [發行] 嚮導中，按一下 **[完成]** 。
+1. 在 [發行] 嚮導中，按一下 **[完成]**。
 
-    Visual Studio 會產生並顯示預設的網頁，稱為 *Publish.htm* 。
+    Visual Studio 會產生並顯示預設的網頁，稱為 *Publish.htm*。
 
 1. 儲存您的專案，並記下儲存的資料夾位置。
 
@@ -67,7 +67,7 @@ ms.locfileid: "94437719"
 
 1. 結束 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]。
 
-2. 在 Windows [ **開始** ] 功能表中，依序按一下 [ **所有程式** ] 和 [ **Microsoft Visual Studio** ]，然後 **Visual Studio Tools** ，然後 **Visual Studio 命令提示** 字元]。 這應該會在目前使用者的根資料夾中開啟命令提示字元。
+2. 在 Windows [ **開始** ] 功能表中，依序按一下 [ **所有程式**] 和 [ **Microsoft Visual Studio**]，然後 **Visual Studio Tools**，然後 **Visual Studio 命令提示** 字元]。 這應該會在目前使用者的根資料夾中開啟命令提示字元。
 
 3. 在 **Visual Studio 命令提示** 字元中，將目前的目錄變更為您剛剛建立之專案的位置。 例如，輸入 `chdir My Documents\Visual Studio\Projects\CmdLineDemo`。
 
@@ -99,7 +99,7 @@ ms.locfileid: "94437719"
 
  當您在上述程式中發佈應用程式時，[發佈嚮導] 或 .NET Core 3.1 或更新版本專案的發行設定檔中，會將下列屬性插入至您的專案檔。 這些屬性會直接影響 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的產生方式。
 
- 在 *CmdLineDemo 中 vbproj*  /  *CmdLineDemo .csproj* ：
+ 在 *CmdLineDemo 中 vbproj*  /  *CmdLineDemo .csproj*：
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -130,13 +130,13 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ::: moniker range=">=vs-2019"
 若為 .NET Core 3.1 或更新版本，則會在 .pubxml 檔案中提供這些設定專案。
 
- 您可以 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 從 [ **專案設計** 工具] 的 [ **發行** ]、[ **安全性** ] 和 [ **簽署** ] 屬性頁，來控制發行屬性。 以下是發行屬性的描述，以及如何在應用程式設計工具的各種屬性頁面上設定每個屬性的指示：
+ 您可以 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 從 [**專案設計** 工具] 的 [**發行**]、[**安全性**] 和 [**簽署**] 屬性頁，來控制發行屬性。 以下是發行屬性的描述，以及如何在應用程式設計工具的各種屬性頁面上設定每個屬性的指示：
 
 > [!NOTE]
 > 針對 .NET Windows 桌面專案，現在可以在 [發佈嚮導] 中找到這些設定。
 ::: moniker-end
 
-- `AssemblyOriginatorKeyFile` 決定用來簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單的金鑰檔。 您也可以使用這個相同的金鑰，將強式名稱指派給您的元件。 這個屬性是在 [ **專案設計** 工具] 的 [ **簽署** ] 頁面上設定。
+- `AssemblyOriginatorKeyFile` 決定用來簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單的金鑰檔。 您也可以使用這個相同的金鑰，將強式名稱指派給您的元件。 這個屬性是在 [**專案設計** 工具] 的 [**簽署**] 頁面上設定。
 ::: moniker range=">=vs-2019"
 針對 .NET windows 應用程式，此設定會保留在專案檔中
 ::: moniker-end
@@ -202,14 +202,14 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 
  下表顯示 ClickOnce 部署的四個 URL 選項。
 
-|URL 選項|說明|
+|URL 選項|Description|
 |----------------|-----------------|
 |`PublishURL`|如果您要將 ClickOnce 應用程式發佈至網站，則為必要。|
 |`InstallURL`|選擇性。 如果安裝網站與不同，請設定此 URL 選項 `PublishURL` 。 例如，您可以將設定 `PublishURL` 為 FTP 路徑，並將設定 `InstallURL` 為 Web URL。|
 |`SupportURL`|選擇性。 如果支援網站與不同，請設定此 URL 選項 `PublishURL` 。 例如，您可以將設定 `SupportURL` 為公司的客戶支援網站。|
 |`UpdateURL`|選擇性。 如果更新位置與不同，請設定此 URL 選項 `InstallURL` 。 例如，您可以將設定 `PublishURL` 為 FTP 路徑，並將設定 `UpdateURL` 為 Web URL。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.Build.Tasks.GenerateBootstrapper>
 - <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>

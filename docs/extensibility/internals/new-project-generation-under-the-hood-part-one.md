@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec16895e71788f160e0ce6025f35b4dff02d7d2f
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 98a305e4e3188131b2ee3c6e2ecb82dc8d4537b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895774"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新專案產生：一探究竟，第一部份
 您是否想要瞭解如何建立自己的專案類型？ 想知道當您建立新專案時實際發生什麼事？ 讓我們看看幕後的內容，並看看真正的進展。

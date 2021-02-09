@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f83469d6bd97e493a704282aa1fca1fbec96962d
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 96936a2c60a1ea8ebb91417607061b74d538095a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148984"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896471"
 ---
 # <a name="window-search-dialog-box"></a>視窗搜尋對話方塊
 使用這個對話方塊，即可在 [Windows View](../debugger/windows-view.md)中尋找並選取特定視窗的節點。 若要顯示此對話方塊，請將焦點移至 Windows view 視窗。 然後選擇 [**搜尋**] 功能表中的 [**尋找視窗]** 。

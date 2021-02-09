@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1534c6ba029cf47cb637e958422efeecb970f35
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 815b47a700e87852596d7a65e341953f65b66cf9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894825"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>舊版語言服務中的陳述式完成
 語句完成是語言服務協助使用者完成其在核心編輯器中開始輸入的語言關鍵字或元素的程式。 本主題討論語句完成的運作方式，以及如何在您的語言服務中加以執行。
@@ -38,5 +38,5 @@ ms.locfileid: "97877763"
 
  在編輯器中輸入觸發程式（尤其是文字緩衝區）時，您的語言服務就會呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> 方法。 這會導致編輯器顯示 UI，讓使用者可以從語句完成候選項目中選擇。 這個方法會要求您將 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> 和 <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> 旗標作為參數來執行。 完成專案的清單會出現在滾動清單方塊中。 當使用者繼續鍵入時，清單方塊內的選取專案會更新，以反映最接近輸入最新字元的相符專案。 核心編輯器會執行語句完成的 UI，但語言服務必須執行 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> 介面，以定義語句的一組候選完成專案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [攔截舊版語言服務命令](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

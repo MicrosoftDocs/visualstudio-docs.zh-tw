@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03cbcee265855c0e3ee26f75d5937315d64661a2
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: ffc7f8a80e86779f2cc419f841a3b80280f39c9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205394"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896399"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、視窗索引標籤
 使用 [ **Windows** ] 索引標籤，即可顯示與所選取視窗相關之視窗的資訊。 若要顯示 [ [視窗屬性] 對話方塊](../debugger/window-properties-dialog-box.md)，請將焦點移至 [ [Windows View](../debugger/windows-view.md) ] 視窗。 選取樹狀結構中的任何視窗節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。
 
  [ **Windows** ] 索引標籤上提供下列設定：
 
-|進入|描述|
+|進入|Description|
 |-----------|-----------------|
 |**下一個視窗**|如果沒有下一個視窗) ，則視窗樹狀檢視中顯示的下一個同級視窗的控制碼 (迭置順序)  ( [無]。 選擇這個專案，以查看下一個視窗的屬性。|
 |**上一個視窗**|如果沒有上一個視窗) ，則視窗樹狀檢視中顯示的相同序列 (迭置順序) 的控制碼會 ( [無]。 選擇此專案以查看上一個視窗的屬性。|

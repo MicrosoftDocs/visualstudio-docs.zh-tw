@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9e72a50c-bb0a-4eaa-9ac1-d00930b68d38
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a63a15340c597a7b62735dfb3f6f14d3707262ac
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 4aebf3b4a5a7556b2e2a3f6fdff7554539812d8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150700"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896570"
 ---
 # <a name="how-to-stop-code-changes"></a>如何：停止程式碼變更
 當 [編輯後繼續] 正在套用程式碼變更時，您可以停止該作業。

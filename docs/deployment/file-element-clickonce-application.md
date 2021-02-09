@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a4d09d4a0e141359b066f2af31c158f36c96522
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 8ad19de19176b7c8ee1d2c2872126a19abb93b67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895085"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;&gt;ClickOnce 應用程式) 的 file 元素 (
 識別應用程式下載並使用的所有 nonassembly 檔案。

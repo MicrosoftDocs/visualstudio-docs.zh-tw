@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 268c1e51-6363-45d1-964c-1ab99bdfa4f9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74ef32708374dd3fea4c181e85b9f67a239198ba
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f6ac3e8517ee99dcd52261eb87b6cee3954793d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895891"
 ---
 # <a name="termination-and-detaching"></a>終止和卸離
 下一節說明正常終止。

@@ -12,20 +12,20 @@ helpviewer_keywords:
 - <addin> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cf922799301aef67ee70c480dd9e0823382cbd47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71fa31122432f4894bfca59929ee5eb127b7cad2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896727"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 程式開發的增益集元素
   命名空間的 **載入** `vstav3` 宏元素包含 Microsoft Office VSTO 增益集和使用 Visual Studio 開發之檔層級自訂的特定資訊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <addIn>
@@ -57,20 +57,20 @@ ms.locfileid: "85543763"
  `addin` 項目具有下列子項目。
 
 ### <a name="entrypoints"></a>entryPoints
- 必要。 **E**元素會在[Visual Studio&#41;中的&#60;e&#62; 專案 &#40;Office 程式開發](../vsto/entrypoints-element-office-development-in-visual-studio.md)中加以描述。
+ 必要。 **E** 元素會在 [Visual Studio&#41;中的&#60;e&#62; 專案 &#40;Office 程式開發](../vsto/entrypoints-element-office-development-in-visual-studio.md)中加以描述。
 
 ### <a name="update"></a>update
- 必要。 **Update**元素會在[Visual Studio&#41;中的&#60;update&#62; 專案 &#40;Office 程式開發](../vsto/update-element-office-development-in-visual-studio.md)中加以描述。
+ 必要。 **Update** 元素會在 [Visual Studio&#41;中的&#60;update&#62; 專案 &#40;Office 程式開發](../vsto/update-element-office-development-in-visual-studio.md)中加以描述。
 
 ### <a name="postactions"></a>postActions
- 選擇性。 **P s**元素會在[Visual Studio&#41;中的&#60;p s&#62; 專案 &#40;Office 程式開發](../vsto/postactions-element-office-development-in-visual-studio.md)中加以描述。
+ 選擇性。 **P s** 元素會在 [Visual Studio&#41;中的&#60;p s&#62; 專案 &#40;Office 程式開發](../vsto/postactions-element-office-development-in-visual-studio.md)中加以描述。
 
 ### <a name="application"></a>應用程式
- 必要。 **應用程式**元素會在[Visual Studio&#41;中的&#60;應用程式&#62; 專案 &#40;Office 程式開發](../vsto/application-element-office-development-in-visual-studio.md)中加以描述。
+ 必要。 **應用程式** 元素會在 [Visual Studio&#41;中的&#60;應用程式&#62; 專案 &#40;Office 程式開發](../vsto/application-element-office-development-in-visual-studio.md)中加以描述。
 
 ## <a name="document-level-customization-example"></a>檔層級自訂範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>Description
  下列程式碼範例說明使用部署之檔層級 Office 方案中的 **載入** 宏專案 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
@@ -134,7 +134,7 @@ ms.locfileid: "85543763"
 
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>Description
  下列程式碼範例說明使用部署之應用層級 Office 方案中的 **載入** 宏專案 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼

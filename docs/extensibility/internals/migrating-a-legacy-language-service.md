@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 7a0e20c77a1c8a81a29691079ace1e4751135560
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895683"
 ---
 # <a name="migrating-a-legacy-language-service"></a>移轉舊版語言服務
 您可以藉由更新專案並將 extension.vsixmanifest 檔案新增至專案，將舊版語言服務遷移至更新版的 Visual Studio。 語言服務本身將會繼續如之前一樣運作，因為 Visual Studio 編輯器會調整它。
@@ -53,7 +53,7 @@ ms.locfileid: "97877828"
 
 4. 開啟 RegExLangServ .sln 方案。
 
-5. [ **單向升級** ] 視窗隨即出現。 按一下 [確定]。
+5. [ **單向升級** ] 視窗隨即出現。 按一下 [確定]  。
 
 6. 更新專案屬性。 選取 [**方案總管** 中的專案節點，按一下滑鼠右鍵，然後選取 [**屬性**]，開啟 [**專案屬性**] 視窗。
 
@@ -109,5 +109,5 @@ ms.locfileid: "97877828"
 
 12. 開始偵錯。 Visual Studio 開啟的第二個實例。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [舊版語言服務的擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)

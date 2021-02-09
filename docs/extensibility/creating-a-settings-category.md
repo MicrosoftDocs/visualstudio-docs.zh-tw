@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974540"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896256"
 ---
 # <a name="create-a-settings-category"></a>建立設定分類
 
@@ -27,7 +27,7 @@ ms.locfileid: "94974540"
 
 若要開始這個逐步解說，您必須先完成 [ [建立選項] 頁面](../extensibility/creating-an-options-page.md)的第一個區段。 [產生的選項] 屬性方格可讓您檢查及變更類別目錄中的屬性。 在設定檔案中儲存屬性類別目錄之後，您會檢查檔案以查看屬性值的儲存方式。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-settings-category"></a>建立設定分類
@@ -98,7 +98,7 @@ ms.locfileid: "94974540"
 
 3. 在左窗格的樹狀檢視中，展開 [ **我的類別** ]，然後按一下 [ **我的格線頁**]。
 
-4. 將 **OptionFloat** 的值變更為3.1416，並將 **OptionInteger** 變更為12。 按一下 [確定]。
+4. 將 **OptionFloat** 的值變更為3.1416，並將 **OptionInteger** 變更為12。 按一下 [確定]  。
 
 5. 按一下 [工具] 功能表上的 [匯入和匯出設定]。
 
@@ -139,7 +139,7 @@ ms.locfileid: "94974540"
 
 11. 關閉設定檔，而不加以變更。
 
-12. 在 [ **工具** ] 功能表上，依序按一下 [ **選項**]、[ **我的類別**]、[ **格線頁** ]，然後將 **OptionFloat** 的值變更為1.0，並將 **OptionInteger** 變更為1。 按一下 [確定]。
+12. 在 [ **工具** ] 功能表上，依序按一下 [ **選項**]、[ **我的類別**]、[ **格線頁** ]，然後將 **OptionFloat** 的值變更為1.0，並將 **OptionInteger** 變更為1。 按一下 [確定]  。
 
 13. 按一下 [**工具**] 功能表上的 [匯 **入和匯出設定**]，選取 [匯 **入選取的環境設定**]，然後按 **[下一步]**
 
@@ -149,7 +149,7 @@ ms.locfileid: "94974540"
 
      [ **選擇要匯入的設定集合** ] 頁面隨即出現。
 
-15. 在樹狀檢視的 [**我的設定**] 節點中，選取 [ *MySettings] .vssettings* 檔案。 如果檔案未出現在樹狀檢視中，請按一下 **[流覽]** 並尋找它。 按 [下一步] 。
+15. 在樹狀檢視的 [**我的設定**] 節點中，選取 [ *MySettings] .vssettings* 檔案。 如果檔案未出現在樹狀檢視中，請按一下 **[流覽]** 並尋找它。 按一下 [下一步] 。
 
      [ **選擇要匯入的設定** ] 對話方塊隨即出現。
 

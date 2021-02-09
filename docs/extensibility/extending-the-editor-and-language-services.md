@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49d4b76fe7feadb4458ef68acb351b81c6fa494c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 81b1e46db4f38f37296798a645d6547cdd6f017f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895722"
 ---
 # <a name="extend-the-editor-and-language-services"></a>擴充編輯器和語言服務
 您可以將語言服務功能 (例如 IntelliSense) 加入您自己的編輯器，並擴充 Visual Studio 程式碼編輯器的大部分功能。  如需可延伸之內容的完整清單，請參閱 [語言服務和編輯器延伸點](../extensibility/language-service-and-editor-extension-points.md)。
@@ -28,7 +28,7 @@ ms.locfileid: "96995742"
 
  Visual Studio SDK 提供稱為 *填充* 碼的介面卡，以支援針對較早版本所撰寫的 vspackage。 儘管如此，如果您有現有的 VSPackage，我們建議您將其更新為新的技術，以取得更佳的效能和可靠性。
 
-## <a name="related-topics"></a>相關主題
+## <a name="related-topics"></a>[相關主題]
 
 |標題|描述|
 |-----------|-----------------|
@@ -55,7 +55,7 @@ ms.locfileid: "96995742"
 |[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|提供 Managed Extensibility Framework (MEF) 的相關資訊。|
 |[Windows Presentation Foundation](/dotnet/framework/wpf/index)|提供 Windows Presentation Foundation (WPF) 的相關資訊。|
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
  Visual Studio 編輯器包含下列命名空間。
 
  <xref:Microsoft.VisualStudio.Language.Intellisense>

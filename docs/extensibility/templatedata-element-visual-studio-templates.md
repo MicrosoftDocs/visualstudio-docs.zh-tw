@@ -12,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 423bcc7b3d902488f268b2d0706cb5126125f37d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903256"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895384"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 項目 (Visual Studio 範本)
 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。
 
  \<VSTemplate> \<TemplateData>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <TemplateData>
@@ -47,10 +47,10 @@ ms.locfileid: "94903256"
 
 ### <a name="child-elements"></a>子元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [名稱](../extensibility/name-element-visual-studio-templates.md) | 必要元素。<br /><br /> 指定範本出現在 [ **新增專案** ] 或 [ **加入新專案** ] 對話方塊中的名稱。 |
-| [描述](../extensibility/description-element-visual-studio-templates.md) | 必要元素。<br /><br /> 指定範本出現在 [ **新增專案** ] 或 [ **加入新專案** ] 對話方塊中的描述。 |
+| [說明](../extensibility/description-element-visual-studio-templates.md) | 必要元素。<br /><br /> 指定範本出現在 [ **新增專案** ] 或 [ **加入新專案** ] 對話方塊中的描述。 |
 | [圖示](../extensibility/icon-element-visual-studio-templates.md) | 必要元素。<br /><br /> 指定影像檔案的路徑和檔案名，此圖示會顯示在範本的 [ **新增專案** ] 或 [ **加入新專案** ] 對話方塊中。 |
 | [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | 必要元素。<br /><br /> 將專案範本分類，使其出現在 [ **新增專案** ] 對話方塊的指定群組中。 |
 | [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 將專案範本分類，使其出現在 [ **新增專案** ] 對話方塊的指定子類別下。 |
@@ -74,7 +74,7 @@ ms.locfileid: "94903256"
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要元素。<br /><br /> 包含專案範本、專案範本或入門套件的所有中繼資料。|
 

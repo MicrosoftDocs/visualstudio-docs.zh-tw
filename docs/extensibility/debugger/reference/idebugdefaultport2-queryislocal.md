@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1a42e774-c6ed-419a-a0e3-cab5778652ca
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c06230f7bbd1825fe73a22f9b1fdc35aea35c499
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a4c4f5d8e9810f0828ac5ffb85173ef9ed77626
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732334"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896223"
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
 這個方法會判斷這個埠是否在本機電腦上。
@@ -25,13 +25,13 @@ ms.locfileid: "80732334"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT QueryIsLocal(
+HRESULT QueryIsLocal(
    void
 );
 ```
 
 ```csharp
-int QueryIsLocal();
+int QueryIsLocal();
 ```
 
 ## <a name="return-value"></a>傳回值

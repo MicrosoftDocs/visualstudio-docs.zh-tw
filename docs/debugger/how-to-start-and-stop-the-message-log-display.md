@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3036611c-acf3-42b6-b5d7-1a0c653f6af9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec53c87314b5ba8ebb6f88496189e0ec8c2d4b04
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: c7655a2cea41ee77cdcc3e99d5ba7bbc5fd3a3ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896669"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>如何：啟動與停止訊息記錄顯示
 當 [[訊息] 視圖](../debugger/messages-view.md)視窗處於作用中狀態時，[Spy + +**訊息**] 功能表上會出現 [**開始記錄**] 或 [**停止] 記錄** 選擇，而對應的 [**開始記錄**] 或 [**停止記錄**] 工具列按鈕則會變成

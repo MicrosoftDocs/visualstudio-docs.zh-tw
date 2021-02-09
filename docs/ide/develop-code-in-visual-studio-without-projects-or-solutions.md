@@ -10,15 +10,15 @@ helpviewer_keywords:
 - projects and solutions, develop code without
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d706ccdc07abcc91e956878e1bc180be9c542223
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: fcff44b64045e85a06fdc7a8f15f8780c8453713
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95005999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894747"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 
@@ -50,7 +50,7 @@ ms.locfileid: "95005999"
 
 ::: moniker-end
 
-- 如果您是鍵盤使用者，請按 **Ctrl** + **Shift** + Visual Studio 中的 Ctrl Shift **Alt** + **O** 。
+- 如果您是鍵盤使用者，請按 +  + Visual Studio 中的 Ctrl Shift **Alt** + **O** 。
 
 - 從複製的 GitHub 存放庫開啟程式碼。
 

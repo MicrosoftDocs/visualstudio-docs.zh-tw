@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 512302f1-12b1-4107-8a6e-c5bc878ce1c3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 440afc26688522da5cc8b6c20b2712872b4ce6b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25570442402db11c4f8eb499ecf33ea3ae82b54b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732231"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896210"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
 傳回代表目前程式碼位置的程式碼位置識別碼。
@@ -28,13 +28,13 @@ ms.locfileid: "80732231"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetCurrentLocation( 
+HRESULT GetCurrentLocation( 
    UINT64* puCodeLocationId
 );
 ```
 
 ```csharp
-int GetCurrentLocation( 
+int GetCurrentLocation( 
    out ulong puCodeLocationId
 );
 ```

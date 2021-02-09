@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8567b762e9858205e3ca8d6aafa8a3dba17a90fe
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 643fd4c68be4059b2c5ca558d777c34bb4add500
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894630"
 ---
 # <a name="debug-page-project-designer"></a>專案設計工具、偵錯頁
 
@@ -36,7 +36,7 @@ ms.locfileid: "98205771"
 
 下列選項可讓您選取要顯示或修改的設定和平台。
 
-**設定**
+**Configuration**
 
 指定要顯示或修改的組態設定。 設定可以是 [偵錯] (預設)、[發行] 或 [所有設定]。
 
@@ -84,7 +84,7 @@ ms.locfileid: "98205771"
 
 選取或清除此核取方塊，可啟用或停用從 Visual Basic 應用程式進行 SQL 程序的偵錯。 依預設，不會勾選此核取方塊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯工具簡介](../../debugger/debugger-feature-tour.md)
 - [C # Debug 設定的專案設定](../../debugger/project-settings-for-csharp-debug-configurations.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1d36813a-dc2a-4fda-9b3d-a38928a62ced
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 79796ec8984f9baee1d6b3e6c760d41297d70701
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 0e8b1125534e52c810f97c91bd00ea53dfd3d6de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150687"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896623"
 ---
 # <a name="how-to-start-spy"></a>如何：啟動 Spy++
 
@@ -28,7 +28,7 @@ ms.locfileid: "98150687"
 > [!NOTE]
 > 您只能執行一個 Spy + + 實例。 如果您嘗試啟動第二個實例，它只會讓目前執行中的實例取得焦點。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 Spy + + 需要下列元件。 您可以選取 [ **個別元件** ] 索引標籤，然後選取下列元件，從 Visual Studio 安裝程式選取這些元件。
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f231f3426821b7f3148d3e6c268234f125f88f0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d546b48ffbbb4d44fb5f2ced11f41826370403e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895072"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>選擇 ClickOnce 更新策略
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可提供自動應用程式更新。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式會定期讀取它的部署資訊清單檔，以查看是否有此應用程式的更新可用。 如果有，就會下載及執行應用程式的新版本。 為了提高效率，只有已變更的檔案才會下載。
@@ -36,7 +36,7 @@ ms.locfileid: "94437600"
 > 應用程式更新會需要網路連接。 如果沒有網路連接，不論您所選擇的更新策略為何，應用程式將會執行但不檢查更新。
 
 > [!NOTE]
-> 在 .NET Framework 2.0 和 .NET Framework 3.0 中，不論應用程式是隨時檢查更新、在啟動之前或之後檢查更新，或者使用 \<xref:System.Deployment.Application> API 檢查更新，您都必須設定部署資訊清單中的 `deploymentProvider`。 專案會 `deploymentProvider` 在 [ **發行** ] 索引標籤的 [ **更新** ] 對話方塊中，對應至 [ **更新位置** ] 欄位的 Visual Studio。這項規則會在 .NET Framework 3.5 中放寬。 如需詳細資訊，請參閱 [部署 ClickOnce 應用程式以進行測試和實際執行伺服器，而不需](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)進行簽署。
+> 在 .NET Framework 2.0 和 .NET Framework 3.0 中，不論應用程式是隨時檢查更新、在啟動之前或之後檢查更新，或者使用 \<xref:System.Deployment.Application> API 檢查更新，您都必須設定部署資訊清單中的 `deploymentProvider`。 專案會 `deploymentProvider` 在 [**發行**] 索引標籤的 [**更新**] 對話方塊中，對應至 [**更新位置**] 欄位的 Visual Studio。這項規則會在 .NET Framework 3.5 中放寬。 如需詳細資訊，請參閱 [部署 ClickOnce 應用程式以進行測試和實際執行伺服器，而不需](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)進行簽署。
 
 ## <a name="check-for-updates-after-application-startup"></a>在應用程式啟動後檢查更新
  使用此策略時，應用程式會在執行中時，嘗試在背景中尋找及讀取部署資訊清單檔。 如果有可用的更新，下次使用者執行應用程式時，就會收到下載並安裝更新的提示。
@@ -82,7 +82,7 @@ ms.locfileid: "94437600"
 > [!NOTE]
 > 雖然您可以使用其他更新策略來要求更新，不過選取 [在應用程式啟動前] 選項是保證不會執行舊版的唯一方式。 在啟動時若偵測到強制更新，使用者就必須接受更新或關閉應用程式。
 
- 若要將更新標記為必要項，請在 [應用程式更新] 對話方塊中按一下 [指定此應用程式的最小必要版本]，然後指定發行版本 ( **主要** 、 **次要** 、 **建置** 、 **修訂** )，這樣會指定可安裝應用程式的最低版本號碼。
+ 若要將更新標記為必要項，請在 [應用程式更新] 對話方塊中按一下 [指定此應用程式的最小必要版本]，然後指定發行版本 (**主要**、**次要**、**建置**、**修訂**)，這樣會指定可安裝應用程式的最低版本號碼。
 
  這項設定與在部署資訊清單中設定 [Deployment] 元素的 **minimumRequiredVersion** 屬性相同，例如：
 
@@ -120,7 +120,7 @@ ms.locfileid: "94437600"
 
  如果您使用受信任的應用程式部署，就不會出現授與信任層級的提示。 如需詳細資訊，請參閱 [受信任的應用程式部署總覽](../deployment/trusted-application-deployment-overview.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:System.Deployment.Application>
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)

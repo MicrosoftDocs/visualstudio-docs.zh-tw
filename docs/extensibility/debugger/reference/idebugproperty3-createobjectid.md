@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d3993d674f029260dbe32d16c576cb239ff8d6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9d555d7b0480d910a5cb88397db5bfd7e734fd1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896119"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 建立這個屬性的唯一識別碼，以確保它在所有其他屬性中都是唯一的。
@@ -28,13 +28,13 @@ ms.locfileid: "80721169"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT CreateObjectID(
+HRESULT CreateObjectID(
    void
 );
 ```
 
 ```csharp
-int CreateObjectID();
+int CreateObjectID();
 ```
 
 ## <a name="return-value"></a>傳回值

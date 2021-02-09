@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a963b4d452a5d8ea9e0556b232f488e93dc0a29c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e22ff1c0f95c78e7e19f8e309d1c37f85c7b9aa5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895696"
 ---
 # <a name="miscellaneous-files-project"></a>其他檔案專案
 當使用者開啟專案專案時，IDE 會將任何不是方案中專案成員的專案指派給其他檔案專案。
@@ -37,7 +37,7 @@ ms.locfileid: "97876775"
 
  [其他檔案] 專案不需要使用者使用 [ **新增專案** ] 對話方塊來明確建立。 此外，[其他檔案] 專案也不會永久管理專案成員的清單。 它會使用選擇性功能來記錄每個使用者最近使用過的檔案清單。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>

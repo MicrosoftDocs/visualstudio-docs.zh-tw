@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab29fbe79b474aa7b640faf81de812b7571de861
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d1b051abfede6ec90350878f669ed32e7e26b299
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896753"
 ---
 # <a name="project-type-design-decisions"></a>專案類型的設計決策
 建立新的專案類型之前，您必須針對您的專案類型進行數個設計決策。 您必須決定專案將包含哪些類型的專案、專案檔的保存方式，以及您將使用的承諾用量模型。
@@ -58,7 +58,7 @@ ms.locfileid: "97877793"
 
  使用交易模式開啟資料物件時，變更會儲存到記憶體中的暫存位置，而且在使用者手動選擇儲存檔案之前，不會認可這些變更。 屆時，所有變更都必須一起進行，否則也不會進行任何變更。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)
 - [專案持續性](../../extensibility/internals/project-persistence.md)

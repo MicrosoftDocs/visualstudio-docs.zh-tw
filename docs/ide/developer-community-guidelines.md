@@ -5,15 +5,15 @@ ms.date: 6/30/2020
 ms.topic: conceptual
 author: madskristensen
 ms.author: madsk
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e30dcb6a9d65cb562851ed90e350530759975d2
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 0722716b086877d5522b9ef8fae79976fbdb0805
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894669"
 ---
 # <a name="developer-community-guidelines"></a>開發人員社群指導方針
 
@@ -115,6 +115,6 @@ ms.locfileid: "97668556"
 
 批註和回復都是公開可見的，但任何附加的檔案都只會與 Microsoft 私下共用。 此可見度很有説明，因為它可讓整個團體查看其他使用者所找到的問題和解決方案。 如果您擔心資料或身分識別的隱私權，則有選項。 深入瞭解 [開發人員社群資料隱私權](./developer-community-privacy.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 請前往 [Visual Studio 開發人員社群](https://aka.ms/feedback/suggest?space=8) 來回報問題、建議功能，或流覽現有的票證。 盡情享受！

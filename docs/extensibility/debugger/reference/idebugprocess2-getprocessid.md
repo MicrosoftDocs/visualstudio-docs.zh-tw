@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d5b6f03c-d49d-4b83-b072-016ac3124f5f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12e575979e5bd1527dfa0d8e15b290d6b78e36ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df7b90d4096f651e0f055f9c92343df2a2712fe9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894890"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
 取得此進程的 GUID。
@@ -28,14 +28,14 @@ ms.locfileid: "80723900"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetProcessId(
-   GUID* pguidProcessId
+HRESULT GetProcessId(
+   GUID* pguidProcessId
 );
 ```
 
 ```csharp
-int GetProcessId(
-   out Guid pguidProcessId
+int GetProcessId(
+   out Guid pguidProcessId
 );
 ```
 

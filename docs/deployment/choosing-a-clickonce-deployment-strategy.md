@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 98bcab65-ab8b-4ed1-9adc-fdacf92b8106
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d623c47960a3c1a44c184df52488682659d5238d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: f4c20689c79529edf4a34edca857dedf1420b03f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895111"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>選擇 ClickOnce 部署策略
 有三種不同的策略可用來部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。您所選擇的策略主要是取決於您要部署的應用程式類型。 這三種部署策略說明如下：
@@ -57,7 +57,7 @@ ms.locfileid: "94383166"
 
  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中啟用這項部署策略，請按一下 [發佈精靈] 之 [從 Web 安裝或執行] 頁面上的 [不要安裝應用程式]。
 
- 若要手動啟用這項部署策略，請變更部署資訊清單中的 [安裝] 標籤。 (這個標籤的值可以是 **true** 或 **false** 。 在 *Mage.exe* 中，請使用 [應用程式類型] 清單中的 [僅限線上] 選項。)
+ 若要手動啟用這項部署策略，請變更部署資訊清單中的 [安裝] 標籤。 (這個標籤的值可以是 **true** 或 **false**。 在 *Mage.exe* 中，請使用 [應用程式類型] 清單中的 [僅限線上] 選項。)
 
 ## <a name="install-from-a-cd"></a>從 CD 安裝
  使用這項策略時，您的應用程式就會部署至卸除式媒體，例如 CD-ROM 或 DVD。 如同上一個選項，當使用者選擇安裝應用程式時，就會安裝並啟動應用程式，而且 [開始] 功能表和 [控制台] 的 [新增或移除程式] 中會新增一些項目。

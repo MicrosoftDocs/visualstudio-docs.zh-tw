@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cc9a471b141cfd3302814844d63a2ce8d5b74c6
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: e21c5b8a3570b4da0cb0286d3c0d6d7c84c2f704
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895839"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>延伸 Visual Studio 的其他部分
 

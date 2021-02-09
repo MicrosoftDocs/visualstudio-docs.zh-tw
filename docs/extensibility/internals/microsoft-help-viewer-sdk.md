@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e77d06900a17aca4c2630587a45a9b144accde2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 2e7b2c8d5f194287f0b654184ddd8716f248ca36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895748"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -362,7 +362,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 在下表中，在括弧之間出現的任何字串都是必須以可辨識值取代的預留位置。 例如，在中 \<meta name="Microsoft.Help.Locale" content="[language code]" /> ，必須將 "[language code]" 取代為 "en-us" 之類的值。
 
-|  (HTML 標記法的屬性)  | 描述 |
+|  (HTML 標記法的屬性)  | Description |
 | - | - |
 | \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | 設定本主題的地區設定。 如果主題中使用此標籤，則只能使用一次，而且必須插入任何其他 Microsoft 說明標記的上方。 如果未使用此標籤，則會使用與產品地區設定相關聯的斷詞工具（如果有指定的話）來編制主題的主體文字。否則，會使用 en-us 斷詞工具。 此標記符合 ISOC RFC 4646。 為確保 Microsoft 說明正常運作，請使用這個屬性，而不是一般語言屬性。 |
 | \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | 如果也使用其他地區設定，則設定本主題的地區設定。 如果在主題中使用此標籤，則只能使用一次。 當目錄包含多種語言的內容時，請使用此標記。 目錄中的多個主題可以有相同的識別碼，但每個主題都必須指定唯一的 TopicLocale。 指定符合目錄地區設定之 TopicLocale 的主題，是顯示在目錄中的主題。 不過，主題的所有語言版本都會顯示在搜尋結果中。 |
@@ -529,7 +529,7 @@ Branding.xml 檔案包含的專案清單，會在主題包含時，用來在主�
 
 branding.js 檔案包含 Visual Studio 說明檢視器商標元素所使用的 JavaScript。  以下是商標元素和支援的 JavaScript 函式清單。  要針對此檔案當地語系化的所有字串都會定義在此檔案頂端的「可當地語系化的字串」區段中。  已針對 branding.js 檔案內的 loc 字串建立 ICL 檔案。
 
-|**商標功能**|**JavaScript 函數**|**描述**|
+|**商標功能**|**JavaScript 函數**|**說明**|
 |-|-|-|
 |無 功。。。||定義變數|
 |取得使用者程式碼語言|setUserPreferenceLang|將索引編號對應至程式碼語言|
@@ -700,7 +700,7 @@ Visual Studio 內容會顯示 Visual Studio 標誌以及其他圖形。  Visual 
 
 本逐步解說示範如何將說明內容併入 Visual Studio Shell 應用程式，然後加以部署。
 
-**Requirements**
+**需求**
 
 1. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
 
@@ -775,7 +775,7 @@ Visual Studio 內容會顯示 Visual Studio 標誌以及其他圖形。  Visual 
     @="{4A791146-19E4-11D3-B86B-00C04F79F802}"
     ```
 
-6. 在方案總管的 ContosoHelpShell 方案內容功能表上，選擇 [ **屬性** ] 功能表項目。 在 [設定 **屬性**] 下，選取 [ **Configuration Manager**]。 在 [設定] **資料行中** ，將每個 "Debug" 值變更為 "Release"。
+6. 在方案總管的 ContosoHelpShell 方案內容功能表上，選擇 [ **屬性** ] 功能表項目。 在 [設定 **屬性**] 下，選取 [ **設定管理員**]。 在 [設定] **資料行中** ，將每個 "Debug" 值變更為 "Release"。
 
 7. 建置方案。 這會在發行資料夾中建立一組檔案，將在下一節中使用。
 

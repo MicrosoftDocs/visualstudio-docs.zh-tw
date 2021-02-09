@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08b9e88440fcb7b488e479e4188279d82a526e4c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d08552683ce61892b0ee233173466a79326e4c6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894851"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>註冊舊版語言服務2
 下列各節提供中可用之各種語言服務選項的登錄專案清單 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
@@ -29,7 +29,7 @@ ms.locfileid: "97875162"
 ## <a name="registry-entries-for-language-service-options"></a>語言服務選項的登錄專案
  *VS Reg Root*\Languages\Language Services \\ *語言名稱* 索引鍵可以包含下列值。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|範圍|Description|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ|*\<GUID>*|語言服務的 GUID。|
 |LangResID|REG_DWORD|0x0-0xffff|字串資源識別碼 (ResID 語言的當地語系化文字名稱) 。|
@@ -66,7 +66,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>偵錯工具語言選項的登錄專案
  *VS Reg Root*\Languages\Language Services \\ *Language Name \Debugger Language* \\ *GUID*\ key 可以包含下列值。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|範圍|Description|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ|text|預設值可以用來記錄語言的名稱。 此索引鍵的名稱是運算式評估工具的 GUID，在 \AD7Metrics\Expression 評估工具中具有對應的專案 *\<VS Reg Root>* 。|
 
@@ -85,7 +85,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>編輯器工具選項的登錄專案
  您可以在 [屬性頁] 和 [屬性] 節點的 EditorToolsOptions 機碼下新增登錄機碼。 這些索引鍵和其值會識別 [ **選項** ] 對話方塊中的屬性頁， (在用來設定語言服務的 [ **工具** ] 功能表上) 。 在下列範例中，[ *頁面名稱* ] 是屬性頁的名稱，而 [ *節點名稱* ] 是 [ **選項** ] 對話方塊上樹狀結構中的節點名稱。 頁面輸入和節點專案必須另外指定。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|範圍|Description|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ|渣 油|此選項頁面的當地語系化顯示名稱。 名稱可以是常值文字或 # `nnn` ，其中 `nnn` 是指定之 VSPackage 的附屬 DLL 中的字串資源識別碼。|
 |套件|REG_SZ|*GUID*|執行此選項頁面的 VSPackage GUID。|
@@ -119,7 +119,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>檔案名延伸模組選項的登錄專案
  副檔名的專案應該包含前置句點，例如 "myext"。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|範圍|Description|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ|*GUID*|此副檔名類型之預設語言服務的服務 GUID。|
 
@@ -136,7 +136,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>編輯器選項的登錄專案
  *VS Reg Root*\Editors 索引鍵可以包含下列值：
 
-|名稱|類型|範圍|描述|
+|名稱|類型|範圍|Description|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ|""|尚未您可以將您的名稱放在這裡以取得檔。|
 |DefaultToolboxTab|REG_SZ|""|當編輯器為使用中時，要設為預設值的 [工具箱] 索引標籤名稱。|
@@ -161,7 +161,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>邏輯 View 選項的登錄專案
  *VS Reg Root*\EDITORS \\ *Editor GUI>* \LogicalViews 索引鍵可以包含下列值。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|範圍|Description|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ||未使用的。|
 |*\<GUID>*|REG_SZ|""|支援的邏輯視圖鍵。 您可以根據自己的需求擁有許多這些。 登錄專案的名稱是重要的，而不是值，它一律是空字串。|
@@ -183,7 +183,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>編輯器擴充功能選項的登錄專案
  *VS Reg Root*\EDITORS \\ *Editor GUID*\Extensions 索引鍵可以包含下列值。 副檔名不包含前置句點。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|範圍|Description|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ||未使用的。|
 |*\<ext>*|REG_DWORD|0-0xffffffff|延伸的相對優先權。 如果有兩個以上的語言共用相同的副檔名，則會選擇較高優先順序的語言。|
@@ -209,7 +209,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 
  這些登錄專案是透過類別來存取 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|範圍|Description|
 |----------|----------|-----------|-----------------|
 |CodeSense|REG_DWORD|0-1|IntelliSense 作業的支援。|
 |MatchBraces|REG_DWORD|0-1|支援比對語言組（例如大括弧、括弧和方括弧）。|
@@ -239,5 +239,5 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         MaxRegions            = reg_dword:0x0000000a
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)

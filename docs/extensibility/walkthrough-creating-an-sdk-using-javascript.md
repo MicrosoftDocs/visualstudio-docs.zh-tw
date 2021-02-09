@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd138638a1f8bb4c0fe8dc73504059f0c9dd4023
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: db722d945ceb4b3d2cab92b9a11b1e689cd7a9bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862912"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895189"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>逐步解說：使用 JavaScript 建立 SDK
 本逐步解說將說明如何使用 JavaScript 來建立簡單的數學 SDK，作為 (VSIX) 的 Visual Studio 延伸模組。  本逐步解說分成下列幾個部分：
@@ -315,5 +315,5 @@ ms.locfileid: "97862912"
 
 12. 在應用程式 UI 中，輸入任何兩個數字，選取一個作業，然後選擇該 **=** 按鈕。 正確的結果隨即出現。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 971fef7939c91bdcdea9098da530c7ecb2daf9ec
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: df851f304cd6c62e1447f791a23618a6de5cb0bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877620"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895592"
 ---
 # <a name="opening-and-saving-project-items"></a>開啟和儲存專案項目
 當您加入新的專案類型時，您必須在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中，管理專案檔案的開啟和儲存。 下列主題討論開啟和儲存檔案的不同方法。

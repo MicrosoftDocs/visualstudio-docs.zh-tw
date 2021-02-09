@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b425962ed0f664b8255b6489ac8f0d38be7c13c
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: c563d127e66b00b3f4358abe0ea86e2384bf371f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895371"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>使用受控套件架構實作專案類型 (C#)
 Managed Package Framework (MPF) 提供可供您使用或繼承的 c # 類別，以執行您自己的專案類型。 MPF 會實 Visual Studio 預期要提供專案類型的許多介面，讓您可以自由地專注于實現專案類型的各項細節。

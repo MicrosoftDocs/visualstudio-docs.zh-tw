@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 8dfde12f58161dfcf86eeda2b9714f705685d39a
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 9b177d63ceabd8162c5ddd77e87c68d4a820b00a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440419"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896235"
 ---
 # <a name="msi-install"></a>msi-install
 
@@ -44,7 +44,7 @@ ms.locfileid: "95440419"
 
 Msi 安裝工具會設定一些 `msiexec` 命令列引數，以確保 msi 可以執行無周邊。 以下列出這些引數，您可以在檔中找到這些引數的相關檔 `msiexec` [ ](https://docs.microsoft.com/windows-server/administration/windows-commands/msiexec)。
 
-| Name          | 描述                                                                                                                                                                                   |
+| 名稱          | 描述                                                                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | /i            | 執行正常安裝                                                                                                                                                                    |
 | /quiet        | 指定無需使用者互動的無訊息模式                                                                                                                                        |

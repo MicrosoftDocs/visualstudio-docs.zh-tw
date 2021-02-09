@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f81709e7146bbdef13daa3564bb784fd9c08d58e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 451a6ea5334006bb23e8961595f4de85c985b8ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895943"
 ---
 # <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
 指定要為進程取出的資訊種類。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
-enum enum_PROCESS_INFO_FIELDS { 
+enum enum_PROCESS_INFO_FIELDS { 
    PIF_FILE_NAME             = 0x00000001,
    PIF_BASE_NAME             = 0x00000002,
    PIF_TITLE                 = 0x00000004,
@@ -43,7 +43,7 @@ typedef DWORD PROCESS_INFO_FIELDS;
 ```
 
 ```csharp
-public enum enum_PROCESS_INFO_FIELDS { 
+public enum enum_PROCESS_INFO_FIELDS { 
    PIF_FILE_NAME             = 0x00000001,
    PIF_BASE_NAME             = 0x00000002,
    PIF_TITLE                 = 0x00000004,
@@ -91,7 +91,7 @@ public enum enum_PROCESS_INFO_FIELDS { 
 
  這些旗標可以與位結合 `OR` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

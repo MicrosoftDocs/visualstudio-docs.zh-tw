@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: cd700006-1648-418f-924b-4b1e5c1412ab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e60c3fb8a72caa44bcf70ac36850748ce240d42
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 5cdf770446b78b1a1bb4b55d61f4c3e9f50c4035
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039467"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894604"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 

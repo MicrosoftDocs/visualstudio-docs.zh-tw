@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dd887488adc5813ad51c9fa2a25648e25ab4876
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6a29b1b3af1e92ee6f247ba07e3b4e468401415e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895423"
 ---
 # <a name="source-control-vspackage-features"></a>原始檔控制 VSPackage 功能
 本節說明原始檔控制 VSPackage 的各種功能。 它概述這類 VSPackage 的註冊和選取詳細資料，並討論三個主要原始檔控制相關的功能：處理 Query-Edit Query-Save (QEQS) 事件、圖像取代，以及自訂使用者介面 (原始檔控制函式) UI。

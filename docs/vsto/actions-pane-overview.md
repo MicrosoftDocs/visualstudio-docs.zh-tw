@@ -14,15 +14,15 @@ helpviewer_keywords:
 - user controls [Office development in Visual Studio], actions panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9579de6712b742dde1f9b399ca8a1e4598783679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844825"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896769"
 ---
 # <a name="actions-pane-overview"></a>動作窗格總覽
   [動作] 窗格是附加至特定 Microsoft Office Word 檔或 Microsoft Office Excel 活頁簿的可自訂 **檔動作** 工作窗格。 [動作] 窗格會與其他內建工作窗格一起裝載在 Office 工作窗格內，例如 Excel 的 [ **XML 來源** ] 工作窗格或 Word 中的 [ **樣式與格式** ] 工作窗格。 您可以使用 Windows Form 控制項或 WPF 控制項，設計執行窗格使用者介面。

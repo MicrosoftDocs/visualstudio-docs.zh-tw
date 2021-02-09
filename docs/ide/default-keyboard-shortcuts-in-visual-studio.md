@@ -12,15 +12,15 @@ helpviewer_keywords:
 - keyboard shortcuts
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06bbbb0124984530e92b0066044c71bfbe80ad2b
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 8a4901cecf36208f3ed2141e5baef15ecbe43a6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894734"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
@@ -204,11 +204,11 @@ ms.locfileid: "95006363"
 |Edit.MoveControlDown|**Ctrl + 向下鍵**|
 |Edit.MoveControlDownGrid|**向下箭號**|
 |Edit.MoveControlLeft|**Ctrl+向左鍵**|
-|Edit.MoveControlLeftGrid|**向左箭號**|
+|Edit.MoveControlLeftGrid|**向左鍵**|
 |Edit.MoveControlRight|**Ctrl+向右鍵**|
-|Edit.MoveControlRightGrid|**向右箭號**|
+|Edit.MoveControlRightGrid|**向右鍵**|
 |Edit.MoveControlUp|**Ctrl + 向上鍵**|
-|Edit.MoveControlUpGrid|**向上鍵**|
+|Edit.MoveControlUpGrid|**向上箭號**|
 |Edit.NextBookmark|**Ctrl + K、Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K、Ctrl + Shift + N**|
 |Edit.OpenFile|**Ctrl+Shift+G** (開啟資料指標底下的檔案名稱)|
@@ -221,9 +221,9 @@ ms.locfileid: "95006363"
 |Edit.Replace|**Ctrl + H**|
 |Edit.ReplaceinFiles|**Ctrl + Shift + H**|
 |Edit.SelectAll|**Ctrl + A**|
-|Edit.SelectNextControl|**索引標籤**|
+|Edit.SelectNextControl|**Tab**|
 |Edit.SelectPreviousControl|**Shift + Tab**|
-|Edit.ShowTileGrid|**進入**|
+|Edit.ShowTileGrid|**Enter**|
 |Edit.SizeControlDown|**Ctrl+Shift+向下鍵**|
 |Edit.SizeControlDownGrid|**Shift + 向下鍵**|
 |Edit.SizeControlLeft|**Ctrl+Shift+向左鍵**|
@@ -488,7 +488,7 @@ ms.locfileid: "95006363"
 |Edit.ExpandCollapseBaseTypeList|**Shift+Alt+B**|
 |Edit.NavigateToLollipop|**Shift+Alt+L**|
 |Edit.RemovefromDiagram|**刪除**|
-|View.ViewCode|**進入**|
+|View.ViewCode|**Enter**|
 
 ## <a name="coded-ui-test-editor"></a>自動程式碼 UI 測試編輯器
 
@@ -554,7 +554,7 @@ ms.locfileid: "95006363"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|None|
+|Debug.Graphics.CaptureFrame|無|
 |Graphics.MovePixelSelectionDown|**Shift + Alt + 向下鍵**|
 |Graphics.MovePixelSelectionLeft|**Shift + Alt + 向左鍵**|
 |Graphics.MovePixelSelectionRight|**Shift + Alt + 向右鍵**|
@@ -721,15 +721,15 @@ ms.locfileid: "95006363"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|Edit.BreakLine|**進入**|
-|Edit.CharLeft|**向左箭號**|
+|Edit.BreakLine|**Enter**|
+|Edit.CharLeft|**向左鍵**|
 |Edit.CharLeftExtend|**Shift + 向左鍵**|
-|Edit.CharRight|**向右箭號**|
+|Edit.CharRight|**向右鍵**|
 |Edit.CharRightExtend|**Shift + 向右鍵**|
-|Edit.InsertTab|**索引標籤**|
+|Edit.InsertTab|**Tab**|
 |Edit.LineDown|**向下箭號**|
 |Edit.LineDownExtend|**Shift + 向下鍵**|
-|Edit.LineUp|**向上鍵**|
+|Edit.LineUp|**向上箭號**|
 |Edit.LineUpExtend|**Shift + 向上鍵**|
 |Edit.MoveControlDown|**Ctrl + 向下鍵**|
 |Edit.MoveControlLeft|**Ctrl+向左鍵**|
@@ -800,11 +800,11 @@ ms.locfileid: "95006363"
 
 | 命令 | 鍵盤快速鍵 |
 | - | - |
-| Edit.BreakLine | **進入**<br /><br /> 或<br /><br /> **Shift+Enter** |
-| Edit.CharLeft | **向左箭號** |
+| Edit.BreakLine | **Enter**<br /><br /> 或<br /><br /> **Shift+Enter** |
+| Edit.CharLeft | **向左鍵** |
 | Edit.CharLeftExtend | **Shift + 向左鍵** |
 | Edit.CharLeftExtendColumn | **Shift + Alt + 向左鍵** |
-| Edit.CharRight | **向右箭號** |
+| Edit.CharRight | **向右鍵** |
 | Edit.CharRightExtend | **Shift + 向右鍵** |
 | Edit.CharRightExtendColumn | **Shift + Alt + 向右鍵** |
 | Edit.ClearBookmarks | **Ctrl + K、Ctrl + L** |
@@ -840,7 +840,7 @@ ms.locfileid: "95006363"
 | Edit.IncrementalSearch | **Ctrl+I** |
 | Edit.InsertCaretsatAllMatching | **Shift + Alt +;** |
 | Edit.InsertNextMatchingCaret | **Shift + Alt +。** |
-| Edit.InsertTab | **索引標籤** |
+| Edit.InsertTab | **Tab** |
 | Edit.LineCut | **Ctrl + L** |
 | Edit.LineDelete | **Ctrl + Shift + L** |
 | Edit.LineDown | **向下箭號** |
@@ -855,7 +855,7 @@ ms.locfileid: "95006363"
 | Edit.LineStartExtend | **Shift+Home** |
 | Edit.LineStartExtendColumn | **Shift + Alt + Home** |
 | Edit.LineTranspose | **Shift + Alt + T** |
-| Edit.LineUp | **向上鍵** |
+| Edit.LineUp | **向上箭號** |
 | Edit.LineUpExtend | **Shift + 向上鍵** |
 | Edit.LineUpExtendColumn | **Shift+Alt+向上鍵** |
 | Edit.ListMembers | **Ctrl + J** |
@@ -951,9 +951,9 @@ ms.locfileid: "95006363"
 |命令|鍵盤快速鍵|
 |--------------| - |
 |Edit.MoveControlDown|**向下箭號**|
-|Edit.MoveControlLeft|**向左箭號**|
-|Edit.MoveControlRight|**向右箭號**|
-|Edit.MoveControlUp|**向上鍵**|
+|Edit.MoveControlLeft|**向左鍵**|
+|Edit.MoveControlRight|**向右鍵**|
+|Edit.MoveControlUp|**向上箭號**|
 |Edit.ScrollColumnLeft|**Ctrl+向左鍵**|
 |Edit.ScrollColumnRight|**Ctrl+向右鍵**|
 |Edit.ScrollLineDown|**Ctrl + 向下鍵**|
@@ -1051,19 +1051,19 @@ ms.locfileid: "95006363"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|Edit.BreakLine|**進入**|
-|Edit.CharLeft|**向左箭號**|
+|Edit.BreakLine|**Enter**|
+|Edit.CharLeft|**向左鍵**|
 |Edit.CharLeftExtend|**Shift + 向左鍵**|
-|Edit.CharRight|**向右箭號**|
+|Edit.CharRight|**向右鍵**|
 |Edit.CharRightExtend|**Shift + 向右鍵**|
 |Edit.DocumentEnd|**結束**|
 |Edit.DocumentEndExtend|**Shift+End**|
 |Edit.DocumentStart|**首頁**|
 |Edit.DocumentStartExtend|**Shift+Home**|
-|Edit.InsertTab|**索引標籤**|
+|Edit.InsertTab|**Tab**|
 |Edit.LineDown|**向下箭號**|
 |Edit.LineDownExtend|**Shift + 向上鍵**|
-|Edit.LineUp|**向上鍵**|
+|Edit.LineUp|**向上箭號**|
 |Edit.LineUpExtend|**Shift + 向下鍵**|
 |Edit.MoveControlDown|**Ctrl + 向下鍵**|
 |Edit.MoveControlLeft|**Ctrl+向左鍵**|
