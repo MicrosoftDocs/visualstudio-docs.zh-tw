@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: deca5b39701fd073b3191cf7a24d83ccf1e08794
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884724"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必須在安裝後執行的命令
 如果您透過 *.msi* 檔案部署擴充功能，您必須在安裝過程中執行 **devenv/setup** ，才能讓 Visual Studio 探索您的擴充功能。
@@ -30,7 +30,7 @@ ms.locfileid: "96305040"
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator 資料表資料列，以找出不同版本 Visual Studio 的 devenv.exe
 
-|簽章|Root|按鍵|名稱|類型|
+|簽名|Root|按鍵|名稱|類型|
 |-----------------|----------|---------|----------|----------|
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|
@@ -39,7 +39,7 @@ ms.locfileid: "96305040"
 
 ### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>AppSearch 對應 RegLocator 資料表資料列的資料表資料列
 
-|屬性|簽章|
+|屬性|簽名|
 |--------------|-----------------|
 |DEVENV_EXE_2002|RL_DevenvExe_2002|
 |DEVENV_EXE_2003|RL_DevenvExe_2003|

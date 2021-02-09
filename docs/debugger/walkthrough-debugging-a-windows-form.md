@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c1bc9e65eb63877d8f8a42902d8ec47a61fd22
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: e9293956e2ca47e68ff5bf22502251b22115a827
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148087"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884126"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>逐步解說：偵錯 Windows Form
 Windows Form 是其中一個最常見的 managed 應用程式。 Windows Form 會建立標準的 Windows 應用程式。 您可以使用 Visual Basic、c # 或 c + + 來完成此逐步解說。
@@ -57,7 +57,7 @@ Windows Form 是其中一個最常見的 managed 應用程式。 Windows Form �
 
 3. 在 [ **名稱** ] 方塊中，為專案指定唯一的名稱 (例如 Walkthrough_SimpleDebug) 。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
      Visual Studio 會建立新的專案，並在 Windows Forms 設計工具中顯示新的表單。 如需詳細資訊，請參閱 [Windows Form 設計工具](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\))。
 

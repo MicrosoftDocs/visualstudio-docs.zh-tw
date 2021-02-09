@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c959c018dd4da0ff088c4fb52c0420de83b4eac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e611f6a4daf878042640697dca862015285078d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731985"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884867"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 此介面代表來源文件。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocument2 : IUnknown
@@ -45,7 +45,7 @@ IDebugDocument2 : IUnknown
 ## <a name="remarks"></a>備註
  只有在取消提供原始程式碼時，才會執行這個介面。 例如，當您在 HTML 網頁上對腳本進行偵錯工具時，會因為來源是以動態方式下載或產生，而不是以磁片檔案的形式存在，所以會提供原始程式碼。 在對傳統語言（例如 c + +）進行偵測時，不需要執行這個介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

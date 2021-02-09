@@ -8,15 +8,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 975fa69a503f5e2acd3e90defd9fa9895c70db00
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7c163aa10bdcb3ee28de6d6950dd15f85df876bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885608"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>如何：處理部署衝突
   您可以提供自己的程式碼來處理 SharePoint 專案專案的部署衝突。 例如，您可以判斷目前專案專案中的任何檔案是否已存在於部署位置中，然後在部署目前的專案專案之前，先刪除已部署的檔案。 如需部署衝突的詳細資訊，請參閱 [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。

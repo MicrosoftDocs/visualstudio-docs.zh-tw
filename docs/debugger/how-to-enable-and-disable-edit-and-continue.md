@@ -23,16 +23,16 @@ helpviewer_keywords:
 ms.assetid: fd961a1c-76fa-420d-ad8f-c1a6c003b0db
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 02356a407acc97b60f05641359c32305323f162e
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 51ff58b02e4ea0a197b6a13f12487226269413ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884373"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何：啟用和停用編輯後繼續 (c #、VB、c + +) 
 

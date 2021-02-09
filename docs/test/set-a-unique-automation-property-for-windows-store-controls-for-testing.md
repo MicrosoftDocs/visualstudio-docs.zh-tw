@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 5af4f9c70696144e0efb420ab27860a1969bddc6
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 1befcb77e0ade11a9a3be51a2750564fd316efcd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328324"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884490"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>為 UWP 控制項設定唯一自動化屬性以進行測試
 

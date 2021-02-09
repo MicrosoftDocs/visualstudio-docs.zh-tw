@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 35bfdd2c-6f60-4be1-ba9d-55fce70ee4d8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f127c630cec0e0b64ab5602e81f2b314a3896b16
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 2701542921bae4bb878bc48a3e16eda14416cdf5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148843"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884100"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>在設計階段的 Visual Studio (c #、c + +/CLI、Visual Basic、F # ) 中進行調試
 

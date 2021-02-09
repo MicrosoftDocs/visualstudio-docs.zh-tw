@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55a004e65a39f4a2b7bbf972cec36d689bf88d97
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 7b92f4e2faf2043c26c7119b6f9754edd3bdc990
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884386"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>在 [平行堆疊] 視窗中查看執行緒和工作 (c #、Visual Basic、c + +) 
 
@@ -59,7 +59,7 @@ ms.locfileid: "98150167"
 ### <a name="stack-frame-icons"></a>堆疊框架圖示
 下列圖示提供所有視圖中作用中和目前堆疊框架的相關資訊：
 
-|圖示|描述|
+|圖示|Description|
 |-|-|
 |![黃色箭號](media/icon_parallelyellowarrow.gif)|指出目前的位置 (現用堆疊框架) 目前的執行緒。|
 |![執行緒圖示](media/icon_parallelthreads.gif)|指出目前位置 (非目前線程的作用中堆疊框架) 。|
@@ -70,7 +70,7 @@ ms.locfileid: "98150167"
 
 ![[平行堆疊] 視窗中的捷徑功能表](../debugger/media/parallel_contmenu.png "[平行堆疊] 視窗中的捷徑功能表")
 
-|功能表項目|描述|
+|功能表項目|Description|
 |-|-|
 |**旗標**|將選取的項目加上旗標。|
 |**取消旗標**|取消所選取項目的旗標。|

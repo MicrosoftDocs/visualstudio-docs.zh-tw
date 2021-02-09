@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ac088d52b4e7a288965bb75e1bc6a00da40f7b
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: c81bcb029499b77b2f5b25c598437f1fcbf70854
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886155"
 ---
 # <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>在效能分析工具中分析記憶體使用量，而不進行調試
 
@@ -215,7 +215,7 @@ ms.locfileid: "97815811"
 |**內含大小差異 (位元組)**|針對類型，此為主要快照與上一個快照之間，類型的所有執行個體大小差異，包括物件中的物件大小。|
 |**模組**|包含物件的模組。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [JavaScript 記憶體](../profiling/javascript-memory.md)
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

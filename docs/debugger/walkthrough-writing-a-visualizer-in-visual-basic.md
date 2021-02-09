@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4354a226503ef11b8e596cff609912afa7fd34f0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 49d730fe6fef116577f26acabd72440950a6e192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149621"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884048"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>逐步解說：在 Visual Basic 中撰寫視覺化檢視
 
@@ -66,7 +66,7 @@ ms.locfileid: "98149621"
 
     您可以在 Visual Studio 的安裝目錄的 *\<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies* 子目錄中找到 DLL。
 
-5. 按一下 [確定]。
+5. 按一下 [確定]  。
 
 6. 在 DebuggerSide.vb 中，將下列陳述式加入至 `Imports` 陳述式：
 
@@ -114,7 +114,7 @@ ms.locfileid: "98149621"
 
     您可以在 *C:\Windows\Microsoft.NET\Framework\v4.0.30319* 中找到 DLL。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
 4. 在 DebuggerSide.cs 中，將下列陳述式加入至 `Imports` 陳述式：
 
@@ -191,13 +191,13 @@ ms.locfileid: "98149621"
 
 2. 在 [ **加入參考** ] 對話方塊的 [ **流覽** ] 索引標籤上，按一下 [VisualStudio. microsoft.visualstudio.debuggervisualizers.dll]。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
 4. 以滑鼠右鍵按一下 [MyTestConsole]，然後再次按一下 [新增參考]。
 
 5. 在 [新增參考] 對話方塊中，按一下 [專案] 索引標籤，然後選取 [MyFirstVisualizer]。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>完成 Test Harness 並測試視覺化檢閱
  現在，您就可以加入程式碼來完成測試載入器。

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - columns [Office development in Visual Studio], ungrouping
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 203ea7d17a02a224c290e5dd3c6070c06a1d26e4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: eaa0bbcc2c26a36e43e862cbe5a8f117c2a1fb26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885413"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>如何：以程式設計方式將工作表中的資料列分組
   您可以將一或多個整個資料列分組。 若要在工作表中建立群組，請使用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件。

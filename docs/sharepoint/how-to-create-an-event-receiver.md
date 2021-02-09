@@ -16,15 +16,15 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1943bd8a652a88d218912ab0fc0f6227bf83bc95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849879"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885699"
 ---
 # <a name="how-to-create-an-event-receiver"></a>如何：建立事件接收器
   藉由建立 *事件接收器*，您可以在使用者與 SharePoint 專案（例如清單或清單專案）互動時回應。 例如，當使用者變更行事曆或刪除連絡人清單中的名稱時，就會觸發事件接收器中的程式碼。 藉由遵循本主題，您可以瞭解如何將事件接收器新增至清單實例。
@@ -71,6 +71,6 @@ ms.locfileid: "94849879"
 
      選擇 [ **儲存** ] 按鈕之後，[ **患者名稱** ] 欄會自動更新為 Scott 棕色的名稱。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

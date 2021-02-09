@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: dd628427-e8d6-4fc2-b524-9d6393ea5376
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da8d3a469b957444935150f91567636aef0fb38a
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 793d60c9bc550b0f29ac48e50a95dab601750ad4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975260"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885101"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>呼叫堆疊視窗內的混合程式碼和遺失的資訊
 因為 Managed 和機器碼呼叫堆疊之間的差異，當程式碼類型混合時，偵錯工具則無法永遠顯示完整的呼叫堆疊。 當機器碼呼叫受控碼時，您會在 [呼叫堆疊] 視窗內看到下列差異：
@@ -41,5 +41,5 @@ ms.locfileid: "97975260"
 
   這兩個狀況都相當少見。 在大多數呼叫 Managed 程式碼的原生呼叫中，呼叫堆疊看起來都是正確的。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)

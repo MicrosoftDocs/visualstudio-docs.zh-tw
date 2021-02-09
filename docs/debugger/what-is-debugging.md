@@ -8,23 +8,23 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3435b7a270d89dc38f5ff10a1350418a24f91c0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883931"
 ---
 # <a name="what-is-debugging"></a>什麼是偵錯？
 
-Visual Studio 偵錯工具是一項功能強大的工具。 在示範如何使用它之前，我們想要先討論一些詞彙，例如調試 *程式*、 *調試*程式和 *偵錯工具模式*。 如此一來，當我們稍後討論尋找和修正 bug 時，我們就會討論相同的事情。
+Visual Studio 偵錯工具是一項功能強大的工具。 在示範如何使用它之前，我們想要先討論一些詞彙，例如調試 *程式*、 *調試* 程式和 *偵錯工具模式*。 如此一來，當我們稍後討論尋找和修正 bug 時，我們就會討論相同的事情。
 
 ## <a name="debugger-vs-debugging"></a>偵錯工具與偵錯工具
 
-錯錯 *詞彙可以* 表示許多不同的專案，但實際上，這表示從您的程式碼中移除 bug。 現在有很多方法可以這麼做。 例如，您可能會藉由掃描您的程式碼來尋找錯誤，或使用程式碼分析器來進行 debug。 您可以使用效能分析工具來進行程式碼的偵錯工具。 或者，您可以使用調試 *程式*來進行 debug。
+錯錯 *詞彙可以* 表示許多不同的專案，但實際上，這表示從您的程式碼中移除 bug。 現在有很多方法可以這麼做。 例如，您可能會藉由掃描您的程式碼來尋找錯誤，或使用程式碼分析器來進行 debug。 您可以使用效能分析工具來進行程式碼的偵錯工具。 或者，您可以使用調試 *程式* 來進行 debug。
 
 偵錯工具是一種非常特製化的開發人員工具，可附加到執行中的應用程式，並可讓您檢查程式碼。 在 Visual Studio 的偵錯工具檔中，這通常是我們說「偵錯工具」時所指的意思。
 
@@ -34,7 +34,7 @@ Visual Studio 偵錯工具是一項功能強大的工具。 在示範如何使�
 
 ![選取 Debug build](../debugger/media/what-is-debugging-debug-build.png)
 
-**Debug**值表示 debug 設定。 當您啟動應用程式 (在偵錯工具中按下綠色箭號或 **F5**) 時，您會在「偵錯工具」 *模式*中啟動應用程式，這表示您正在執行應用程式並附加偵錯工具。 這會啟用一組完整的偵錯工具，可讓您用來協助找出應用程式中的 bug。
+**Debug** 值表示 debug 設定。 當您啟動應用程式 (在偵錯工具中按下綠色箭號或 **F5**) 時，您會在「偵錯工具」 *模式* 中啟動應用程式，這表示您正在執行應用程式並附加偵錯工具。 這會啟用一組完整的偵錯工具，可讓您用來協助找出應用程式中的 bug。
 
 如果您已開啟專案，請選擇下拉式清單選取器，其中會顯示 **Debug** ，並改為選擇 [ **發行** ]。
 
@@ -46,7 +46,7 @@ Visual Studio 偵錯工具是一項功能強大的工具。 在示範如何使�
 
 偵錯工具是在您的應用程式中尋找和修正 bug 的基本工具。 不過，內容是最重要的，而且請務必利用您可處置的所有工具，以協助您快速排除錯誤或錯誤。 有時候，適當的「工具」可能是更好的編碼作法。 藉由學習何時使用偵錯工具和其他工具，您也將瞭解如何更有效地使用偵錯工具。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在本文中，您已了解幾個一般偵錯概念。 接下來，您可以開始瞭解如何使用 Visual Studio 進行偵錯工具，以及如何撰寫程式碼較少的 bug。 下列文章說明 c # 程式碼範例，但這些概念適用于 Visual Studio 支援的所有語言。
 

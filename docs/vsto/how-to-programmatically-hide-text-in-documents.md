@@ -12,15 +12,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], hiding in documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a375e8b844f82b5d310841d7b4cdc092b18ff6c3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e74a7a48effafefdc945b0e86dbec6d9692dabd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525695"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885374"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>如何：以程式設計方式隱藏檔中的文字
   您可以針對文字的特定範圍設定 <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> 的 <xref:Microsoft.Office.Interop.Word.Range.Font%2A> 屬性，以隱藏文件中的文字。

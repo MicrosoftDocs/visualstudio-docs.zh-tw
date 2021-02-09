@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6264cb35e404d69900094513875fc7b79310a4d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: c8bfdcd854cf35c392578d9851a7421bacc8cbfe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973745"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884984"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>使用編輯器專案範本建立擴充功能
 您可以使用 Visual Studio SDK 中包含的專案範本，來建立可將分類器、裝飾和邊界新增至編輯器的基本編輯器延伸模組。 編輯器專案範本適用于 Visual c # 或 Visual Basic VSIX 專案。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-classifier-extension"></a>建立分類器擴充功能
  編輯器分類專案範本會建立編輯器分類器，以在此案例中為適當的文字進行色彩， (在任何文字檔中) 的所有專案。
 
-1. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ]， **然後按一下 [** 擴充性]。 在 [ **範本** ] 窗格中，選取 [ **VSIX 專案**]。 在 [名稱]  方塊中，輸入 `TestClassifier`。 按一下 [確定]。
+1. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ]， **然後按一下 [** 擴充性]。 在 [ **範本** ] 窗格中，選取 [ **VSIX 專案**]。 在 [名稱]  方塊中，輸入 `TestClassifier`。 按一下 [確定]  。
 
 2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [Visual c **# 擴充** 性] 節點，然後選取 [ **編輯器分類器**]。 將預設的檔案名保留 (*EditorClassifier1.cs*) 。
 
@@ -49,7 +49,7 @@ ms.locfileid: "94973745"
 ## <a name="create-a-text-relative-adornment-extension"></a>建立文字相對裝飾擴充功能
  編輯器文字裝飾範本會建立文字相對裝飾，以使用具有紅色外框和藍色背景的方塊裝飾文字字元 ' a ' 的所有實例。 它是文字相關的，因為 box 一律會覆迭 ' a ' 字元，即使它們是移動或重新格式化。
 
-1. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ]， **然後按一下 [** 擴充性]。 在 [ **範本** ] 窗格中，選取 [ **VSIX 專案**]。 在 [名稱]  方塊中，輸入 `TestAdornment`。 按一下 [確定]。
+1. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ]， **然後按一下 [** 擴充性]。 在 [ **範本** ] 窗格中，選取 [ **VSIX 專案**]。 在 [名稱]  方塊中，輸入 `TestAdornment`。 按一下 [確定]  。
 
 2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [ **編輯器文字裝飾**]。 將預設的檔案名保留 (*TextAdornment1.cs/vb*) 。
 
@@ -69,7 +69,7 @@ ms.locfileid: "94973745"
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>使用編輯器區裝飾範本建立視口裝飾擴充功能
 
-1. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ]， **然後按一下 [** 擴充性]。 在 [ **範本** ] 窗格中，選取 [ **VSIX 專案**]。 在 [名稱]  方塊中，輸入 `ViewportAdornment`。 按一下 [確定]。
+1. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ]， **然後按一下 [** 擴充性]。 在 [ **範本** ] 窗格中，選取 [ **VSIX 專案**]。 在 [名稱]  方塊中，輸入 `ViewportAdornment`。 按一下 [確定]  。
 
 2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [ **編輯器區裝飾**]。 將預設的檔案名保留 (*ViewportAdornment1.cs/vb*) 。
 
@@ -86,7 +86,7 @@ ms.locfileid: "94973745"
 
 ### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>使用編輯器邊界範本建立邊界延伸模組
 
-1. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ]， **然後按一下 [** 擴充性]。 在 [ **範本** ] 窗格中，選取 [ **VSIX 專案**]。 在 [名稱]  方塊中，輸入 `MarginExtension`。 按一下 [確定]。
+1. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ]， **然後按一下 [** 擴充性]。 在 [ **範本** ] 窗格中，選取 [ **VSIX 專案**]。 在 [名稱]  方塊中，輸入 `MarginExtension`。 按一下 [確定]  。
 
 2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [ **編輯器邊界**]。 將預設的檔案名保留 (EditorMargin1.cs/vb) 。
 

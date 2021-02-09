@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c95f03ee71a827380539404a90cd79d50232e488
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 949f136913a30848ba13185bc699fa0bc51ac456
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884971"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>建立和管理模式對話方塊
 當您在 Visual Studio 內建立強制回應對話方塊時，您必須確定對話方塊的父視窗在對話方塊顯示時已停用，然後在對話方塊關閉之後重新啟用父視窗。 如果您沒有這麼做，可能會收到錯誤： *Microsoft Visual Studio 無法關機，因為強制回應對話方塊正在使用中。關閉作用中的對話方塊，然後再試一次。*

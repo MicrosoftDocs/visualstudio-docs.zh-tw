@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a1ba70336b54ce2ce4c4df6678984db9de8bf8
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 49fd3ca9b625b9dec179ec37603e875cfdd296c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349915"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885127"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>How to: Retrieve query string information in an online ClickOnce application (如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊)
 *「查詢字串」* (query string) 是開頭為句號 (?) 之 URL 的部分，內含 *name=value* 格式的任意資訊。 假設您有裝載於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 且名為 `WindowsApp1` 的 `servername`應用程式，而且想要在啟動應用程式時傳入變數 `username` 的值。 URL 可能如下所示：
@@ -80,5 +80,5 @@ ms.locfileid: "94349915"
 ## <a name="net-framework-security"></a>.NET Framework 安全性
  只有在使用之前想要清理任何惡意字元的輸入時，才允許將 URL 參數傳入 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 例如，如果在資料庫的 SQL 查詢中未進行篩選，則內嵌引號、斜線或分號的字串可能會執行任意資料作業。 如需查詢字串安全性的詳細資訊，請參閱 [腳本攻擊總覽](/previous-versions/w1sw53ds(v=vs.140))。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)

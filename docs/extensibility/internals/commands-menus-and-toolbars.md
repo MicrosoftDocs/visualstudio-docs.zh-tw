@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad763e748fc20a9704df48b17a5d3d8d40c3883c
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 49ae9c27b27a1b3e32338521315007903d9e6825
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884763"
 ---
 # <a name="commands-menus-and-toolbars"></a>命令、功能表和工具列
 功能表和工具列是使用者存取 VSPackage 命令的方式。 命令是完成工作 (例如，列印文件、重新整理檢視，或建立新檔案) 的功能。 功能表和工具列是一種圖形方式，方便向使用者呈現您的命令。 通常，相關的命令會一起聚集在相同的功能表或工具列上。

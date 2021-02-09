@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8caf1be3c10c0d89ce8780213c0914944ae87842
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: f127d178a8103cfaa01c43970848f5772827440f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884061"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C\# 中撰寫視覺化檢視
 
@@ -65,7 +65,7 @@ ms.locfileid: "98149712"
 
     您可以在 Visual Studio 的安裝目錄的 *\<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies* 子目錄中找到 DLL。
 
-5. 按一下 [確定]。
+5. 按一下 [確定]  。
 
 6. 在 DebuggerSide.cs 中，將下列內容新增至指示詞 `using` ：
 
@@ -111,7 +111,7 @@ ms.locfileid: "98149712"
 
     您可以在 *C:\Windows\Microsoft.NET\Framework\v4.0.30319* 中找到 DLL。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
 4. 在 DebuggerSide.cs 中，將下列內容新增至指示詞 `using` ：
 
@@ -190,13 +190,13 @@ ms.locfileid: "98149712"
 
 2. 在 [ **加入參考** ] 對話方塊的 **[流覽** ] 索引標籤中，選擇 [Microsoft.VisualStudio.DebuggerVisualizers.DLL]。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
 4. 以滑鼠右鍵按一下 **MyTestConsole** ，然後選擇 [ **加入參考** ]。
 
 5. 在 [ **加入參考** ] 對話方塊中，按一下 [ **專案** ] 索引標籤，然後按一下 [MyFirstVisualizer]。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
    現在，您就可以加入程式碼來完成測試載入器。
 
@@ -254,7 +254,7 @@ ms.locfileid: "98149712"
 
 4. 在 [ **名稱** ] 方塊中，為類別庫輸入適當的名稱，例如 MySecondVisualizer。
 
-5. 按一下 [確定]。
+5. 按一下 [確定]  。
 
    現在，您可以在其中新增視覺化檢視專案：
 
@@ -268,7 +268,7 @@ ms.locfileid: "98149712"
 
 4. 在 [ **名稱** ] 方塊中，輸入適當的名稱，例如 SecondVisualizer.cs。
 
-5. 按一下 [新增] 。
+5. 按一下 **[新增]** 。
 
    這就是這樣的。 查看檔案 SecondVisualizer.cs，並查看範本為您新增的程式碼。 請繼續進行，並使用程式碼進行實驗。 既然您已經瞭解基本概念，就可以開始建立更複雜且有用的視覺化檢視。
 ::: moniker-end

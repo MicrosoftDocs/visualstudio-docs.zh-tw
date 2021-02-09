@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 070bcc04d79231d074e30d1e87d3ad512ce5dca1
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2c81020b7c1933075f2faee026be17dd0fec4319
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884438"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用儲存的 IntelliTrace 資料 (c #、Visual Basic、c + +) 
 

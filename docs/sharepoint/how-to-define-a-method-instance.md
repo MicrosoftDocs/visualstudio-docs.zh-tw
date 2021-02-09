@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 751683873d98e6c7aedc7228e0a91fb59117993b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 055193123f99825027238166d762ce54b288d716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903620"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885660"
 ---
 # <a name="how-to-define-a-method-instance"></a>如何：定義方法實例
   您至少必須針對模型中的每個方法定義一個方法實例。

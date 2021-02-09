@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 31dfa975cea519d4d064856090a265b844f265f6
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: ca2bc533f26843dcfc22eb1129a66020cd8a5a03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189104"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885803"
 ---
 # <a name="code-snippets-for-r"></a>R 程式碼片段
 

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: cd0a73dc-dd25-46fd-8c4f-5b011501afeb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: de0bfc5b387df9b347e4a58d97601a5e1e70f1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edff2cad101a6a6f0f19a4b384b8f2398b98b2e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883736"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 此介面會列舉埠供應商。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugPortSuppliers2 : IUnknown
@@ -39,7 +39,7 @@ IEnumDebugPortSuppliers2 : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|以列舉順序抓取指定的埠供應商數目。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|以列舉順序抓取指定的埠供應商數目。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|略過列舉序列中指定的埠供應商數目。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-reset.md)|將列舉順序重設為開頭。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
@@ -48,7 +48,7 @@ IEnumDebugPortSuppliers2 : IUnknown
 ## <a name="remarks"></a>備註
  Debug engine 通常不需要取得這個介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

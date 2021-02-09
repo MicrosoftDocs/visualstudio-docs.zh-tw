@@ -5,15 +5,15 @@ ms.date: 12/04/2017
 ms.topic: reference
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 8c89f1d59405fb7475e827cac9624c6623d7041e
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: ecb64f12783b99cd0f26c59ee4ee298c5fabde72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885751"
 ---
 # <a name="frequently-asked-questions"></a>常見問題集
 

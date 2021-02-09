@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 6593fa82-181e-4009-a0ed-02aa24c2c063
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d6e159e28a1401548f0cda7b795a5bbe70a257b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6cfb8f26486c731d3900522d72ac62ff6997005e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885946"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>從命令列使用分析工具
 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的命令列工具，在命令提示字元分析應用程式，並使用批次檔和指令碼將程式碼剖析自動化。 您也可以在命令提示字元產生報告檔。 您可以使用輕量型獨立分析工具，在未安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的的電腦上收集資料。

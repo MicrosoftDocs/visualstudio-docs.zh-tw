@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: e2b4fa14-8f5b-444d-a903-54070b784bd4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 007a63ea16ab044292f451d8d9c427f4358e3f13
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 476d36a8ea303f2dd6062eaf0a597c47df580ff7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884165"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>逐步解說：偵錯 Web 表單
 這個逐步解說中的步驟將示範如何偵錯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式 (也稱為 Web Form)。 會向您示範如何啟動及停止執行、設定中斷點，以及在 [監看式] 視窗中檢查變數。
@@ -53,7 +53,7 @@ ms.locfileid: "98148217"
 
 5. 在 [語言] 清單中，按一下 **Visual C#** 或 **Visual Basic**。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建立新的專案，並顯示預設的 HTML 原始程式碼。 其也會在 IIS 中 [預設的網站] 下方，建立名為 [網站] 的新虛擬目錄。
 

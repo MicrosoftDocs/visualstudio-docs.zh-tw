@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6beaf85000438846e5d440e48c9722b9660f9bd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2cc320baf310af0ec2b4cdd84fabff951b2a9cb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885283"
 ---
 # <a name="password-protection-on-office-documents"></a>Office 檔上的密碼保護
   您可以在 Microsoft Office Word 檔上設定密碼，並 Microsoft Office Excel 活頁簿，讓不知道密碼的人可以開啟這些活頁簿。 此選項 **在開啟** 時稱為「密碼」。

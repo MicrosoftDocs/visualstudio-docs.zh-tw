@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07205a8e15cd338fa1acf0d3b081301a083bba5d
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: d53117456318039837a371f68745b4688cbbd087
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884698"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>舊版語言服務中的批註碼
 程式設計語言通常會提供批註或批註程式碼的方法。 批註是一段文字，可提供程式碼的其他相關資訊，但會在編譯或轉譯期間遭到忽略。
@@ -34,7 +34,7 @@ ms.locfileid: "96305000"
 
 行批註通常會有起始字元 (或字元) ，同時封鎖批註同時具有開頭和結尾字元。 例如，在 c # 中，行批註的開頭為 `//` ，而且區塊批註的開頭為， `/*` 結尾為 `*/` 。
 
-當使用者從 [**編輯**] 功能表中選取命令 **批註選取專案** 時  >  **Advanced** ，此命令會路由至 <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> 類別上的方法 <xref:Microsoft.VisualStudio.Package.Source> 。 當使用者選取 **取消選取** 命令的命令時，會將命令路由傳送至 <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> 方法。
+當使用者從 [**編輯**] 功能表中選取命令 **批註選取專案** 時  >   ，此命令會路由至 <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> 類別上的方法 <xref:Microsoft.VisualStudio.Package.Source> 。 當使用者選取 **取消選取** 命令的命令時，會將命令路由傳送至 <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> 方法。
 
 ## <a name="support-code-comments"></a>支援程式碼批註
  您可以透過的具名引數，讓您的語言服務支援程式碼批註 `EnableCommenting` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 。 這會設定 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> 類別的屬性 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 。 如需設定 language service 功能的詳細資訊，請參閱 [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)。

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62cb611e927b878b82e1b5a1025331e1a443560e
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: ed91ac56929682205937122a4521ad7233af675f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884646"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>卸載和重載嵌套專案的考慮
 

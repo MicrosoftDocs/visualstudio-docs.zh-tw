@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: ee1a478e-374d-4f30-ae28-d260b9d4723a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dbb5490ff9281a7379d74209da15a3a39595bc09
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b0240a4dcf0830dca6667bcbd055d677ef7bc204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885998"
 ---
 # <a name="user-vsperfcmd"></a>User (VSPerfCmd)
 **User** 選項指定擁有已分析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 進程擁有者會列在 Windows 工作管理員的 [ **進程** ] 索引標籤上的 [使用者名稱] 欄中。

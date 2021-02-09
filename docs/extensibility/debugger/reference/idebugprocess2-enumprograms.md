@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f5b7295d-487d-464f-a4c6-d54175b07705
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 56b1c939802406394bdf09e3cfa8c76f5103d974
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da4e2b03e6b16c69296daf4de35f9d381f7e4e93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724092"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884750"
 ---
 # <a name="idebugprocess2enumprograms"></a>IDebugProcess2::EnumPrograms
 抓取此進程所包含的所有程式清單。
@@ -28,14 +28,14 @@ ms.locfileid: "80724092"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT EnumPrograms( 
-   IEnumDebugPrograms2** ppEnum
+HRESULT EnumPrograms( 
+   IEnumDebugPrograms2** ppEnum
 );
 ```
 
 ```csharp
-int EnumPrograms( 
-   out IEnumDebugPrograms2 ppEnum
+int EnumPrograms( 
+   out IEnumDebugPrograms2 ppEnum
 );
 ```
 

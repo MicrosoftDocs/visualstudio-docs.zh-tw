@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9a838879e7c1eb590bb16cd12a6bf345de8031a
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: d1fdf09859c8b943eb71a403f49b29dc8b315503
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606615"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884906"
 ---
 # <a name="notify-the-port"></a>通知埠
 啟動程式之後，必須通知埠，如下所示：

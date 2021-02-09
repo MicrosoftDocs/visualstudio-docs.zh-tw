@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: cd11e722886b77e9faaace768cc30a74c759903f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149699"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884204"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>使用 [執行緒] 視窗 (c #、Visual Basic、c + +) ，在 Visual Studio 偵錯工具中查看執行緒
 在 [ **執行緒** ] 視窗中，您可以檢查並使用您要進行偵錯工具中的執行緒。 如需有關如何使用 [ **執行緒** ] 視窗的逐步指引，請參閱逐步解說 [：使用執行緒視窗進行 Debug](../debugger/how-to-use-the-threads-window.md)。

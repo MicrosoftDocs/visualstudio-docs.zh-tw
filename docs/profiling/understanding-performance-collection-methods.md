@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Profiling tools, profiling methods
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b3bbbef2c6f7bb2ab02731bfbac0dc60d75a3437
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 8126d2331e126cf9162a0334b59be239684754c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722330"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886089"
 ---
 # <a name="understand-performance-collection-methods"></a>了解效能收集方法
 

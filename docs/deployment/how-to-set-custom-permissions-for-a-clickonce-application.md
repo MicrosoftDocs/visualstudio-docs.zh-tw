@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 660459ca-ef73-44a8-b323-610001f63b93
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5d0348b882a3327c02fca6db0628822c0deffeb
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2050f3534caba8aba12fa8550eb6e573a3d0db08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885036"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>How to: Set custom permissions for a ClickOnce application (如何：設定 ClickOnce 應用程式的自訂權限)
 您可以部署對網際網路或近端內部網路區域使用預設權限的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 或者，您可以建立應用程式所需特定權限的自訂區域。 做法是在 [專案設計工具]  的 [安全性] 頁面上自訂安全性權限。
@@ -50,6 +50,6 @@ ms.locfileid: "94350994"
     > [!NOTE]
     > 您可以使用權限集的 `ToXml` 方法，產生應用程式資訊清單的 XML 程式碼。 例如，若要產生 <xref:System.Security.Permissions.EnvironmentPermission> 權限集的 XML，請呼叫 <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> 方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)

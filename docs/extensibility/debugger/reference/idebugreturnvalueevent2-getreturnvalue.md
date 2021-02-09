@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 86c50d5a-6df6-4798-818a-c587a8741f90
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da81b293055325c949387cb8584e18c6034f14f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a11b3af2f0580f91c61eb0476b5b4d7564f4b2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883775"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
 取得在函式執行時傳回的值。
@@ -28,13 +28,13 @@ ms.locfileid: "80720272"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetReturnValue ( 
+HRESULT GetReturnValue ( 
    IDebugProperty2** ppReturnValue
 );
 ```
 
 ```csharp
-int GetReturnValue ( 
+int GetReturnValue ( 
    out IDebugProperty2 ppReturnValue
 );
 ```

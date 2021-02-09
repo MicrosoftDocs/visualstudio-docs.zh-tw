@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, validation rules
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8f76abeee6ace851025a29ce6d85b894bf479dfa
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 8c6514487ff791948787a4f9d319ff0fba9f1e02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885686"
 ---
 # <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>建立 SharePoint 方案的功能和套件驗證
 
