@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 2bf5c12e-2a00-401c-8163-4e373d08ad3f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 150c61e271e7951332848a601aaddc619a1c37e5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 61cc2737fbe6bdbcb331da4e1d27a77d356735aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888650"
 ---
 # <a name="graphics-pipeline-stages"></a>圖形管線階段
 [圖形管線階段] 視窗可協助您了解如何透過 Direct3D 圖形管線各階段轉換個別繪製呼叫。

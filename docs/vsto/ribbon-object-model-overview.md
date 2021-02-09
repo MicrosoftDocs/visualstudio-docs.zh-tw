@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888689"
 ---
 # <a name="ribbon-object-model-overview"></a>功能區物件模型總覽
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]會公開強型別物件模型，您可以在執行時間用來取得和設定功能區控制項的屬性。 例如，您可以動態填入功能表控制項，或顯示和隱藏內容控制項。 您也可以將索引標籤、群組和控制項加入至功能區，但只有在 Office 應用程式載入功能區之前。 如需詳細資訊，請參閱 [設定變成隻讀的屬性](#SettingReadOnlyProperties)。
@@ -181,7 +181,7 @@ ms.locfileid: "97527982"
 
  這些事件的事件處理常式有下列兩個參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |*發送*|<xref:System.Object>，表示引發事件的控制項。|
 |*pci-e*|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs>，其包含 <xref:Microsoft.Office.Core.IRibbonControl>。 您可以使用這個控制項來存取所提供的功能區物件模型中無法使用的任何屬性 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。|

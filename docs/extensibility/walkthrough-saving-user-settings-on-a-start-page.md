@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 17dfb844733a15b1607d2daa2ce24a8f6e0be420
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e32db6c2aecde61598036b8ba2ed21141e41a4af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876177"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888936"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>逐步解說：在起始頁儲存使用者設定
 
@@ -170,7 +170,7 @@ ms.locfileid: "97876177"
 
 3. 在 [ **環境** ] 節點中，按一下 [ **啟動**]，然後在 [ **自訂起始頁** ] 清單中，選取 **[已安裝的延伸模組] 儲存我的設定開始頁面**。
 
-     按一下 [確定]。
+     按一下 [確定]  。
 
 4. 如果開啟，請關閉起始頁，然後在 [ **視圖** ] 功能表上，按一下 [ **起始頁**]。
 
@@ -194,11 +194,11 @@ ms.locfileid: "97876177"
 
 12. 文字方塊中應該會顯示 "貓" 這個字。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 您可以使用不同的事件處理常式來取得和設定屬性，以修改此使用者控制項，以儲存並取出任意數目的自訂設定 `SettingsStore` 。 只要您 `propertyName` 針對的每個呼叫使用不同的參數 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> ，這些值就不會在登錄中互相覆寫。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:EnvDTE80.DTE2?displayProperty=fullName>
 - [將 Visual Studio 命令新增至起始頁](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ac15302e81a68d8866c69a30a8368d36648ef1d9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1a65e99712658567996598d2190447ff09cf9b05
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888884"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>如何：允許程式碼在具有限制許可權的檔背後執行
   您可以使用 Microsoft Office 的資訊 Rights Management (IRM) 功能來限制檔或活頁簿的許可權。 根據預設，不允許執行受限制 Microsoft Office Word 檔或 Microsoft Office Excel 活頁簿中的程式碼。 您可以變更預設值，讓您的 managed 程式碼延伸模組可以存取物件模型，而且您的解決方案將會運作。

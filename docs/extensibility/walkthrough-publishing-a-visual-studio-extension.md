@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01a46f54bfbce6126c16fa418d5c4bef53afd09b
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: bda44c0c3f6c4b1986fc45a7c9cbf5c4ffa83043
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889001"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>逐步解說：發佈 Visual Studio 擴充功能
 
@@ -220,7 +220,7 @@ Visual Studio Marketplace 支援授與其他使用者存取和管理發行者帳
 
 2. 在右上角按一下 [ **發行** 延伸模組]。 選擇您用來發行 **TestPublish** 的發行者。 **TestPublish** 的清單隨即出現。
 
-3. 以滑鼠右鍵按一下擴充功能專案，然後按一下 [ **移除**]。 系統會要求您確認是否要移除此延伸模組。 按一下 [確定]。
+3. 以滑鼠右鍵按一下擴充功能專案，然後按一下 [ **移除**]。 系統會要求您確認是否要移除此延伸模組。 按一下 [確定]  。
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>從電腦移除擴充功能
 

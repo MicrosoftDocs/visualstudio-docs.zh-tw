@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7379038d1c2bf203f7787e69408ddd9b2e30f372
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 9554cad786669ae4aa3b9aa84ecd6b996ee196f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888468"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>建立 ClickOnce 應用程式供其他人部署
 並非所有建立 ClickOnce 部署的開發人員都計畫自行部署應用程式。 其中有許多是使用 ClickOnce 來封裝應用程式，然後將檔案交給客戶，例如大型公司。 客戶會成為負責在其網路上裝載應用程式的人。 本主題將討論在3.5 版之前的 .NET Framework 版本中，這類部署中固有的一些問題。 接著，它會描述在 .NET Framework 3.5 中使用新的「使用資訊清單進行信任」功能所提供的新解決方案。 最後，它會針對仍在使用舊版 .NET Framework 的客戶建立 ClickOnce 部署的建議策略。
@@ -52,7 +52,7 @@ ms.locfileid: "94382997"
  即使開發人員和客戶同意客戶應該簽署應用程式資訊清單，這也會引發其他問題，這些問題會在應用程式的身分識別範圍外，特別是當它適用于受信任的應用程式部署時。  (如需這項功能的詳細資訊，請參閱 [信任的應用程式部署總覽](../deployment/trusted-application-deployment-overview.md)。 ) 說，「艾德作品」想要設定其用戶端電腦，讓 Microsoft Corporation 以完全信任的方式執行提供的任何應用程式。 如果「艾德作品」會簽署部署資訊清單，則 ClickOnce 會使用「艾德公司」的安全性簽章來判斷應用程式的信任層級。
 
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>使用應用程式資訊清單進行信任以建立客戶部署
- .NET Framework 3.5 中的 ClickOnce 包含新的功能，可為開發人員和客戶提供新的解決方案，以瞭解如何簽署資訊清單的案例。 ClickOnce 應用程式資訊清單支援名為的新專案 `<useManifestForTrust>` ，可讓開發人員表示應用程式資訊清單的數位簽章是應該用來進行信任決策的專案。 開發人員使用 ClickOnce 封裝工具（例如 *Mage.exe* 、 *MageUI.exe* 和 Visual Studio）將此專案包含在應用程式資訊清單中，以及在資訊清單中內嵌其發行者名稱和應用程式名稱。
+ .NET Framework 3.5 中的 ClickOnce 包含新的功能，可為開發人員和客戶提供新的解決方案，以瞭解如何簽署資訊清單的案例。 ClickOnce 應用程式資訊清單支援名為的新專案 `<useManifestForTrust>` ，可讓開發人員表示應用程式資訊清單的數位簽章是應該用來進行信任決策的專案。 開發人員使用 ClickOnce 封裝工具（例如 *Mage.exe*、 *MageUI.exe* 和 Visual Studio）將此專案包含在應用程式資訊清單中，以及在資訊清單中內嵌其發行者名稱和應用程式名稱。
 
  使用時 `<useManifestForTrust>` ，不需要使用憑證授權單位單位所發行的 Authenticode 憑證來簽署部署資訊清單。 相反地，您可以使用所謂的自我簽署憑證來簽署。 自我簽署的憑證是由客戶或開發人員使用標準 .NET Framework SDK 工具產生，然後使用標準 ClickOnce 部署工具套用至部署資訊清單。 如需詳細資訊，請參閱 [MakeCert](/windows/desktop/SecCrypto/makecert)。
 
@@ -75,7 +75,7 @@ ms.locfileid: "94382997"
 
  這種方法有一個缺點，就是執行此方法所需的時間和費用。 雖然這類服務可以使用 .NET Framework SDK 中提供的工具來建立，但它會在產品生命週期中增加更多開發時間。
 
- 如本主題稍早所述，另一個缺點是每個客戶的應用程式版本都有相同的應用程式身分識別，這可能會導致衝突。 如果這是一項考慮，開發人員可以變更產生部署資訊清單時所使用的名稱欄位，為每個應用程式提供唯一的名稱。 這會為每個版本的應用程式建立個別的身分識別，並消除任何可能的身分識別衝突。 這個欄位會對應至 `-Name` Mage.exe 的引數，以及 MageUI.exe 之 [ **名稱** ] 索引標籤上的 [ **名稱** ] 欄位。
+ 如本主題稍早所述，另一個缺點是每個客戶的應用程式版本都有相同的應用程式身分識別，這可能會導致衝突。 如果這是一項考慮，開發人員可以變更產生部署資訊清單時所使用的名稱欄位，為每個應用程式提供唯一的名稱。 這會為每個版本的應用程式建立個別的身分識別，並消除任何可能的身分識別衝突。 這個欄位會對應至 `-Name` Mage.exe 的引數，以及 MageUI.exe 之 [**名稱**] 索引標籤上的 [**名稱**] 欄位。
 
  例如，假設開發人員已建立名為 Application1 的應用程式。 開發人員可以使用此名稱的客戶專屬變化來建立數個部署，例如 Application1 CustomerA、Application1 CustomerB 等，而不是建立名稱欄位設定為 Application1 的單一部署。
 

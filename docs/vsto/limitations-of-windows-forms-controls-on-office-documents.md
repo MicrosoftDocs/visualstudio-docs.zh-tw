@@ -20,15 +20,15 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], Toolbox
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 63459f4daf1f9fe717946491a997ba47510fbab8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cc507d31f791a3f3d7addbcffc0b9b87963d443f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888715"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office 檔上 Windows Forms 控制項的限制
 
@@ -73,7 +73,7 @@ Windows Forms 控制項有許多方法和屬性在檔上的運作方式，與在
 
 Windows Forms 控制項在 Office 檔上的行為通常與 Windows Form 上的行為相同，但是有一些差異存在。 下表描述 Office 檔上 Windows Forms 控制項的存在差異。
 
-|功能|差數|
+|功能|差異|
 |-------------------|----------------|
 |控制項定位順序|您無法透過定位於 Excel 工作表或 Word 檔上的控制項來定位。|
 |控制項群組|您無法使用 <xref:System.Windows.Forms.GroupBox> 控制項來包含 Office 檔上的其他控制項。 當您將多個選項按鈕直接新增至檔時，選項按鈕不會互斥。 您可以撰寫程式碼來使選項按鈕彼此互斥;不過，慣用的方法是將選項按鈕加入至使用者控制項，然後將使用者控制項加入檔。 如需詳細資訊，請參閱 [Office 程式開發範例和](../vsto/office-development-samples-and-walkthroughs.md)逐步解說中的 Word 控制項範例或 Excel 控制項範例。|

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b6ae19fde7397b97ebe087557d71a52303605ec
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: a0689238bf30947fa36ff58b969afa35a55003b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995066"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889196"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>作法：變更圖形診斷播放電腦
 您可以使用本機電腦，或使用遠端電腦或裝置來播放圖形資訊。

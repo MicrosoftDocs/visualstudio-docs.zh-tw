@@ -7,20 +7,20 @@ ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3cc5d5517818934a20c9064e718cf65f9d3a65
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 87add3c771fdc79e4b41658a68ef7e77e2c18b21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995144"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888520"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>半/四分之一紋理維度變異
 減少非呈現目標的紋理上的紋理維度。
 
-## <a name="interpretation"></a>解譯
+## <a name="interpretation"></a>解讀
  較少的紋理會佔用較少的記憶體，因此會耗用較小的記憶體頻寬，並減少 GPU 紋理快取的壓力。 不過，細節較少可能會導致影像品質下降，特別是在 3-D 場景中靠近檢視或放大檢視時。
 
  如果此變異顯示大量的效能提高，可能表示您的應用程式耗用太多記憶體頻寬，或是無效率地使用紋理快取，或兩者皆是。 也可能表示紋理所佔用的 GPU 記憶體高於可用的 GPU 記憶體，這樣會造成將紋理分頁至系統記憶體。

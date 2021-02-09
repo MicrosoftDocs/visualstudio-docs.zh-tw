@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 512ab2a4-7987-4912-8f40-8804bf66f829
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a22e397a4c55ae23241e6fc89fb7d896fffa78f4
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 518a9d53b0bf03a1c57046789452ed007e6188f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761292"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888975"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>如何：為 windows 提供自動化
 
