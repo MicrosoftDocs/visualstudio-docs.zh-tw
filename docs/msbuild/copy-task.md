@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: a46ba9da-3e4e-4890-b4ea-09a099b6bc40
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00544b6d1e797a1fd8a7a197197480cae5620f10
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: b83541a98e995a55a38a5d736c97620f15076ead
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901501"
 ---
 # <a name="copy-task"></a>Copy 工作
 
@@ -38,7 +38,7 @@ ms.locfileid: "92796221"
 
 下表說明 `Copy` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`CopiedFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含已成功複製的專案， *包括* 未實際複製的專案，但因為已是最新狀態且已略過，所以已略過這些專案 `SkipUnchangedFiles` `true` 。|
 |`DestinationFiles`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要將來源檔案複製到其中的檔案清單。 此清單與 `SourceFiles` 參數中指定的清單應該是一對一對應。 也就是，會將 `SourceFiles` 中指定的第一個檔案複製到 `DestinationFiles` 中指定的第一個位置，依此類推。|
@@ -78,7 +78,7 @@ ms.locfileid: "92796221"
 
 ## <a name="example-1"></a>範例 1
 
-下列範例會將 `MySourceFiles` 項目集合中的項目複製到資料夾 *c:\MyProject\Destination* 。
+下列範例會將 `MySourceFiles` 項目集合中的項目複製到資料夾 *c:\MyProject\Destination*。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -99,7 +99,7 @@ ms.locfileid: "92796221"
 
 ## <a name="example-2"></a>範例 2
 
-下列範例示範如何進行遞迴複製。 此專案會以遞迴方式將所有檔案從 *c:\MySourceTree* 中複製到 *c:\MyDestinationTree* ，同時保有目錄結構。
+下列範例示範如何進行遞迴複製。 此專案會以遞迴方式將所有檔案從 *c:\MySourceTree* 中複製到 *c:\MyDestinationTree*，同時保有目錄結構。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -118,7 +118,7 @@ ms.locfileid: "92796221"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

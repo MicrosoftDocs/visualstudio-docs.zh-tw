@@ -7,7 +7,7 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: ca13ff5263ab43fd6fbdf5764b506091dd9aa3bd
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 8182f8982734bd0089d483c9acefc230c9baaa91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667984"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901325"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio 的專案移轉與升級參考
 
@@ -97,7 +97,7 @@ Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，
 
 在此情況下，自然會產生下列問題：您是否應該嘗試以手動方式更新，或將專案移轉至較新的 `ToolsVersion` 值。 進行這類變更是不必要的作業，而且可能會產生許多錯誤和警告，您必須修正這些問題才能重新建置專案。 此外，如果 Visual Studio 日後移除對特定 `ToolsVersion` 的支援，則開啟專案將會明確地觸發專案移轉處理序，因為 `ToolsVersion` 值必須進行變更。 在這種情況下，該特定專案類型的子系統會確切知道需要變更哪些項目，而且會遵循本文稍早所述自動進行這些變更。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 請參閱下列文章以了解進一步的討論內容：
 
@@ -191,7 +191,7 @@ Visual Studio 的每個新版本都支援大部分的專案、檔案及其他資
 
 您可能會想要以手動方式將專案更新或遷移至較新的 `ToolsVersion` 值。 不需要進行這項變更，而且可能會產生許多錯誤和警告，您必須修正這些錯誤和警告，才能讓專案再次建立。 此外，如果 Visual Studio 不支援未來的特定 `ToolsVersion` ，則當您開啟專案時，專案就會觸發專案遷移程式，因為它的 `ToolsVersion` 值必須變更。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 請參閱下列文章以了解進一步的討論內容：
 

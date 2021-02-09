@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: bb3d90aa-5f08-4953-9be0-be6cea11633d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fc7d3464fd05b1fe99fcbfa8773e64bca4cb95e7
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: a0b58dfec2d0dd04f146c3a473736fa6911f194c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901252"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>進階設定對話方塊 (並行視覺化檢視)
 使用並行視覺化檢視中的 [進階設定] 對話方塊，您可以控制收集追蹤的方式。  此對話方塊提供適用於符號、Just My Code、緩衝處理、篩選、CLR 事件、標記、提供者及檔案的索引標籤。
@@ -33,7 +33,7 @@ ms.locfileid: "98205498"
 ## <a name="buffering"></a>緩衝
  並行視覺化檢視會在收集追蹤時，使用Windows 事件追蹤 (ETW)。  ETW 會在儲存事件時使用各種緩衝區。  預設的 ETW 緩衝區設定並非適用所有案例，在某些情況下，可能會導致像是遺失事件等問題。  您可以使用 [緩衝] 索引標籤來設定 ETW 緩衝區設定。 如需詳細資訊，請參閱[事件追蹤](/windows/win32/etw/event-tracing-portal)和 [EVENT_TRACE_PROPERTIES 結構 (英文)](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties)。
 
-## <a name="filter"></a>Filter
+## <a name="filter"></a>篩選
  在 [篩選] 索引標籤上，您可以選取並行視覺化檢視所收集的事件集合。 選取事件子集會限制要在報表中顯示的資料類型、縮減每個追蹤的大小，並減少處理追蹤所需的時間。
 
 ### <a name="clr-events"></a>CLR 事件
@@ -72,7 +72,7 @@ ms.locfileid: "98205498"
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>篩選出並行視覺化檢視報表的標記資料
  如果您不想要讓特定提供者的資料出現在未來的追蹤中，請清除您想要移除之提供者旁邊的核取方塊。
 
-## <a name="files"></a>檔案儲存體
+## <a name="files"></a>檔案
  在 [檔案] 索引標籤上，您可以指定每次收集追蹤時要儲存追蹤檔的目錄。  並行視覺化檢視會針對它所收集的每個追蹤產生四個檔案：
 
 - 核心模式的事件追蹤記錄 (ETL) 檔案 (<em>.</em>kernel.etl*)
@@ -85,6 +85,6 @@ ms.locfileid: "98205498"
 
   這兩個 ETL 檔案會儲存原始追蹤資料，而這兩個並行視覺化檢視檔案會儲存已處理的資料。  在處理追蹤之後，通常不會用到原始的 ETL 檔案。  選取 [分析後刪除事件追蹤記錄 (ETL) 檔案] 核取方塊，可減少儲存在磁碟上的追蹤資料量。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [僅自己的程式碼](../profiling/just-my-code-threads-view.md)
 - [並行視覺化標記](../profiling/concurrency-visualizer-markers.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: fbc31a88-62d4-43d2-b739-68ef3fac38f5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d7dd8d7f5a50998832a8fac6f47bf66e9a6bbe9
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 6ea412f67629998eab035b8cca79111659ab8a0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796183"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901367"
 ---
 # <a name="createproperty-task"></a>CreateProperty 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "92796183"
 
 下表說明 `CreateProperty` 工作的參數。
 
-| 參數 | 描述 |
+| 參數 | Description |
 |------------------| - |
 | `Value` | 選擇性的 `String` 輸出參數。<br /><br /> 指定要複製至新屬性的值。 |
 | `ValueSetByTask` | 選擇性的 `String` 輸出參數。<br /><br /> 包含與 `Value` 參數相同的值。 只有當您想要避免 MSBuild 在因為輸出是最新狀態時，由 MSBuild 設定 output 屬性時，才使用此參數。 |
@@ -70,9 +70,9 @@ ms.locfileid: "92796183"
 </Project>
 ```
 
-執行專案之後，`NewFile` 屬性的值是 *Module1.vb* 。
+執行專案之後，`NewFile` 屬性的值是 *Module1.vb*。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

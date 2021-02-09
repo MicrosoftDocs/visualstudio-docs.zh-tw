@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2ace88c1-d757-40a7-8158-c1d3f5ff0511
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f13293a6967456b153d14464b65182153eca2549
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 3406a5f61c9a4aa1c9e2a3c6388741c3ae0fa0f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901448"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName 工作
 
@@ -33,7 +33,7 @@ ms.locfileid: "92796039"
 
  下表描述 [CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md)工作的參數。
 
-| 參數 | 描述 |
+| 參數 | Description |
 | - | - |
 | `ManifestResourceNames` | <xref:Microsoft.Build.Framework.ITaskItem>`[]`輸出唯讀參數。<br /><br /> 產生的資訊清單名稱。 |
 | `ResourceFiles` | 必要的 `String` 參數。<br /><br /> 建立 C# 資訊清單名稱的來源資源檔名稱。 |
@@ -47,7 +47,7 @@ ms.locfileid: "92796039"
 
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)
