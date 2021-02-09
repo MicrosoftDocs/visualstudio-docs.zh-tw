@@ -21,15 +21,15 @@ helpviewer_keywords:
 - dependency graphs, browsing
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ace2095e98bc7d7425f518249a754fcbed07a02
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e579f62c24795ad99939fe10f68c42acaaa89b60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363610"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861930"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>瀏覽和重新排列 Code Map
 
@@ -37,7 +37,7 @@ ms.locfileid: "97363610"
 
 您可以自訂 Code Map，卻不影響方案的基礎程式碼。 這在您想專注在主要程式碼項目或交換關於程式碼的想法時會很有用。 例如，若要反白顯示感興趣的區域，您可以選取對應上的程式碼項目並加以篩選，變更程式碼項目和連結的樣式，隱藏或刪除程式碼項目，以及使用屬性、分類或群組來組織程式碼項目。
 
- **Requirements**
+ **需求**
 
 - 若要建立 Code Map，您必須擁有 Visual Studio Enterprise。
 
@@ -328,7 +328,7 @@ Code map 會顯示下列連結：
 
 或者，您可以將該資料夾的這些組件或二進位檔拖曳至相同的對應。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)

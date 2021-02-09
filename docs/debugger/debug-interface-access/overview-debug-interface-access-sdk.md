@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 720b4479-a8bc-4fec-860e-80c1a0780405
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a403a8d3ddec82ce7e051e545687511c2421fa9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3fb8d56ca4df9912862346e5b096b2bb5414881
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461165"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862315"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>概觀 (偵錯介面存取 SDK)
 使用 DIA SDK 來存取 Microsoft debug 資訊。 DIA SDK 提供以 COM 為基礎的 API 集，可讓您在 Microsoft 變更偵錯工具的格式時，不必重寫程式碼。 DIA SDK 也可讓您從一組選取的舊版偵錯工具資訊（位於 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 版本5.0 和更新版本中所產生的 .pdb 和 dbg 檔案）讀取。

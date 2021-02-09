@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: fa69c550-62a7-41b5-bb1f-7eb04af1a6e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b5a8eed74c4ce216e35c391833dcae80fc7efa
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 679b9464ef10f121bbe38f486291b135872fb36b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861487"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷
 >[!NOTE]
@@ -38,7 +38,7 @@ Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應�
 ## <a name="in-this-section"></a>本節內容
  [總覽](overview-of-visual-studio-graphics-diagnostics.md) 介紹圖形診斷的工作流程和工具。
 
- [消費者入門](getting-started-with-visual-studio-graphics-diagnostics.md) 在本節中，您將瞭解如何安裝 Visual Studio 圖形診斷，以及如何開始搭配使用圖形診斷與 Direct3D 應用程式。
+ [開始使用](getting-started-with-visual-studio-graphics-diagnostics.md) 在本節中，您將瞭解如何安裝 Visual Studio 圖形診斷，以及如何開始搭配使用圖形診斷與 Direct3D 應用程式。
 
  [捕獲圖形資訊](capturing-graphics-information.md) 若要使用圖形診斷檢查應用程式中的轉譯問題，您必須先記錄應用程式如何使用 DirectX 的相關資訊。 在記錄工作階段期間，如果您的應用程式正常地執行，請「擷取」(亦即選取) 感興趣的畫面格。 擷取包含如何呈現畫面格的詳細資訊。 您可以將擷取到的資訊儲存為圖形記錄文件，以供稍後再檢查，或與您小組的其他成員共用。
 

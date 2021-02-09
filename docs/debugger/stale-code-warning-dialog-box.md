@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 594b894c-e652-4e13-a980-9909473d5712
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bb2666b3b57c8f84c81e181355f096674543445
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: f4ea2004680a60fcd2c90a57b19f719c0412ee53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861240"
 ---
 # <a name="stale-code-warning-dialog-box"></a>過時程式碼警告對話方塊
 

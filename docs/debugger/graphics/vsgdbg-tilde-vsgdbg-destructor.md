@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 7a3b97fb-d344-4df7-b195-9347d1edfcf7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc518e649732f6774259efed0965a9898e0fb2d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53d969e6be772b446598c9c3644582684be488a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72734789"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861344"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg (解構函式)
 終結類別的實例 `VsgDbg` 。 如果正在記錄圖形資訊，圖形記錄檔將會完成並關閉，而在主動捕獲圖形資訊時使用的資源則會放開。

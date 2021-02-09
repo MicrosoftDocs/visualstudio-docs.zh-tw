@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8b621e53-4508-4b4a-9995-70995b0b9ac8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c2e1c0438ebf8fad69f985f62a976ff6710a81
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: cfaa4e2558d8d1f102b0e442e9c509313f860e4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853094"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>如何： (JavaScript 查看指令檔) 
 

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40e781e08bba5e01b5e453e4545b5dd19e5a4d16
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4a90ae2a1d5460cd62ff1ccae1542f21c4002433
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360867"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860889"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>叫用 Visual Studio 延伸模組中的文字轉換
 

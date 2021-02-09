@@ -14,15 +14,15 @@ helpviewer_keywords:
 - generating code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 871aa20fe4fc95ea1641b7f478cb9b01d71284aa
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 262ab0638a128fe94561debabe35e20723fb6615
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861812"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>程式碼產生和 T4 文字範本
 
@@ -96,6 +96,6 @@ namespace Fabrikam.FirstJob
 
 文字範本轉換功能的名稱為 *T4*。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)

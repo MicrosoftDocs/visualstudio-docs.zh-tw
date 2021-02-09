@@ -5,17 +5,17 @@ ms.date: 02/19/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e007246b85671a0f4606bbdb3d1e9c4e0dc83541
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 80ac8f23b5404d70b70166915cd791f2c0d7ed07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98129454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860967"
 ---
 # <a name="extract-local-function-refactoring"></a>解壓縮區域函數重構
 

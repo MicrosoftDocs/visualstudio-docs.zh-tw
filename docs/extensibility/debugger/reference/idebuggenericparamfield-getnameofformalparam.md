@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 05032a83-49ce-4007-b5d6-7b56945b956c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03fb76b96804df900e21b0f91b9c5ba599449cf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94976f45ebb8d6d757507c2cf3b02dc909aa2729
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727967"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838973"
 ---
 # <a name="idebuggenericparamfieldgetnameofformalparam"></a>IDebugGenericParamField::GetNameOfFormalParam
 抓取這個泛型參數的名稱。
@@ -46,7 +46,7 @@ int GetNameOfFormalParam (
 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面的**CDebugGenericParamFieldType**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面的 **CDebugGenericParamFieldType** 物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetNameOfFormalParam(BSTR *pbstrName)

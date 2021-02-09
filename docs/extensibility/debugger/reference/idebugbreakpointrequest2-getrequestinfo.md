@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 995272ccfd7a2bcac5c7c934413d6be0197de17d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a327207f5fde99aac482cf0b77d29af04b082524
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734945"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862138"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 取得描述此中斷點要求的中斷點要求資訊。
@@ -28,14 +28,14 @@ ms.locfileid: "80734945"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetRequestInfo( 
+HRESULT GetRequestInfo( 
    BPREQI_FIELDS    dwFields,
    BP_REQUEST_INFO* pBPRequestInfo
 );
 ```
 
 ```csharp
-int GetRequestInfo( 
+int GetRequestInfo( 
    eunm_BPREQI_FIELDS  dwFields,
    BP_REQUEST_INFO[]   pBPRequestInfo
 );

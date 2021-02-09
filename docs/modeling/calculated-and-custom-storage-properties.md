@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c50d205745917b3af7de638a17921f4bcdca509
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3c0874302a7cae4b7a2a3c02edade3ef88fd402a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861838"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算及自訂的儲存區屬性
 特定領域語言中的所有網域屬性 (DSL) 可在圖表和您的 language explorer 中顯示給使用者，並且可透過程式碼存取。 但是，屬性的值儲存方式會有所不同。
@@ -24,7 +24,7 @@ ms.locfileid: "97363545"
 ## <a name="kinds-of-domain-properties"></a>網域屬性的種類
  在 DSL 定義中，您可以設定網域屬性的 **種類** ，如下表所示：
 
-|網域屬性種類|說明|
+|網域屬性種類|Description|
 |-|-|
 |**標準** (預設) |*儲存在存放區* 中並序列化為檔案的網域屬性。|
 |**導出**|唯讀網域屬性，不會儲存在存放區中，而是從其他值計算而來。<br /><br /> 例如， `Person.Age` 可以從計算 `Person.BirthDate` 。<br /><br /> 您必須提供執行計算的程式碼。 一般而言，您會從其他定義域屬性計算值。 不過，您也可以使用外部資源。|
@@ -109,7 +109,7 @@ void SetAgeValue(int value)
 
  如需交易的詳細資訊，請參閱 [在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [網域屬性的屬性](../modeling/properties-of-domain-properties.md)

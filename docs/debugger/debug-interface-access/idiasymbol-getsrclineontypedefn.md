@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: ad554d18-9988-4b64-ad71-e7594c266e94
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e19ce48a8716952f53a1caa6a44fd5ba3d817f4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a242138d6a616de449193f574f7f867cf26a5d37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461347"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862420"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
 抓取原始程式檔和行號，指出指定的使用者定義型別定義所在的位置。

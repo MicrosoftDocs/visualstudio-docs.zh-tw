@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5db99e2a-4f2e-4796-89b7-b401b151826f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: c53bcac98629d2dfbd1537ff4486b0a0162b4d9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8488c912b502fccbc91ef3a61d0e3d635f925e04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853237"
 ---
 # <a name="managedtype"></a>ManagedType
 Managed 類型 (中繼資料所定義的任何符號，或原生至 c # ) 語言的記憶體和資源管理功能，是以符號來識別 `SymTagManagedType` 。

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 8892de377d2383e5aed3ec7824616d626bc5164f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862092"
 ---
 # <a name="extern-element"></a>Extern 元素
 Extern 元素會參考任何外部標頭 (*.h*) 檔案，以便在編譯時期與 *.vsct* 檔案合併。 要合併的檔案必須位於提供給 .VSCT 編譯器的 Include 路徑上，或是由 [include 元素](../extensibility/include-element.md)所參考。 檔案可能是其他 *.vsct* 檔案或 c + + 標頭檔。
@@ -29,7 +29,7 @@ Extern 元素會參考任何外部標頭 (*.h*) 檔案，以便在編譯時期�
 
  CommandTable 元素 Extern 元素
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Extern href="stdidcmd.h" />

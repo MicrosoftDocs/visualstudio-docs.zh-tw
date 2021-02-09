@@ -6,15 +6,15 @@ ms.date: 05/16/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: edcc12b5bd2cb741374acfe44f05c1f9043ebcaa
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c37f07d309551ae0f8aa0062b7847722f33671be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861682"
 ---
 # <a name="improve-performance-for-code-maps"></a>改善 code map 的效能
 

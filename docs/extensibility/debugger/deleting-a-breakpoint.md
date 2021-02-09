@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 061175326a19af1866262421b381eb14267c7efd
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 8ebd2922f48a53c371f4930e5de1fd86ed6852a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862171"
 ---
 # <a name="deleting-a-breakpoint"></a>刪除中斷點
 以下說明刪除暫止中斷點時的程式：

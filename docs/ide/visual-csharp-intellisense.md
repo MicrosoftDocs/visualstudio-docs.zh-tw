@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IntelliSense [C#]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e725a06a2bc90c91cff11b05ad32b20a0db8e4fc
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b7e67c3a00a427a9f3cd6167af494484a02cc3f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479780"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862059"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -146,7 +146,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 在程式碼編輯器中，IntelliSense 可協助您將方法 (事件處理常式) 連結到事件欄位。
 
-當您在 .cs 檔案的 `+=` 事件欄位後面輸入運算子 *.cs* 時，IntelliSense 會提示您按下 **tab** 鍵的選項。 這會插入委派的新執行個體，指向處理事件的方法。
+當您在 .cs 檔案的 `+=` 事件欄位後面輸入運算子時，IntelliSense 會提示您按下 **tab** 鍵的選項。 這會插入委派的新執行個體，指向處理事件的方法。
 
 ![按鈕自動連結](../ide/media/vxautohookup.gif)
 

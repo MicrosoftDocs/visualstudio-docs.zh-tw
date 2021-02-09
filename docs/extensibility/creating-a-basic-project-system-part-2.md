@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 564d975a60c54a074d830742eb0ab6133fdbfe4e
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: ceef95f90d2f54ad7b527ccc8c00322c77491fb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853148"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>建立基本的專案系統，第2部分
 本系列的第一個逐步解說會 [建立基本的專案系統，第1部分](../extensibility/creating-a-basic-project-system-part-1.md)顯示如何建立基本的專案系統。 本逐步解說會透過新增 Visual Studio 範本、屬性頁及其他功能，以基本專案系統為基礎。 您必須先完成第一個逐步解說，然後再開始這一項。
@@ -158,7 +158,7 @@ ms.locfileid: "94974613"
 
 2. 展開 [ **專案和方案** ] 節點，然後選取 [ **建立並執行**]。
 
-3. 將 **MSBuild 專案組建輸出詳細** 資訊設定為 [ **一般**]。 按一下 [確定]。
+3. 將 **MSBuild 專案組建輸出詳細** 資訊設定為 [ **一般**]。 按一下 [確定]  。
 
 4. 重建 SimpleProject 專案。
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cde3377582c3bac0c27371e25f28e5151d641db1
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: dfe2947d60ad5dde6e2f23b9bed59b09e6abe8ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862118"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>擴充方案總管篩選
 您可以擴充 **方案總管** 篩選功能，以顯示或隱藏不同的檔案。 例如，您可以建立只在 **方案總管** 中顯示 c # class factory 檔案的篩選準則，如本逐步解說所示範。

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 61e40163-eee0-4c1f-af47-cef3771bdc41
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f83cdb163881366a1a0bede95a07e1dae1fc50a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 707b22693afe83f82a30055f0c59ff89272b5bc3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862287"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 指定堆疊框架類型。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```C++
 enum StackFrameTypeEnum {
@@ -51,7 +51,7 @@ enum StackFrameTypeEnum {
 ## <a name="remarks"></a>備註
 呼叫 [IDiaStackFrame：： get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) 方法時，會傳回此列舉中的值。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： cvconst。h
 
 ## <a name="see-also"></a>另請參閱

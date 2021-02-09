@@ -6,21 +6,21 @@ ms.topic: conceptual
 ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eba05a40e108d2fd1ba5107160088c5c30da299
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2514d6893c205a1c48c76983c859528be6ad938b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720471"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861617"
 ---
 # <a name="profiling-tools-usage-rules"></a>程式碼剖析工具使用規則
 程式碼剖析工具使用分類中的效能規則提供的指引，可最有效地使用分析工具來收集資料。
 
-| 規則 | 描述 |
+| 規則 | Description |
 | - | - |
 | [DA0002：遺漏 VSPerfCorProf.dll](../profiling/da0002-vsperfcorprof-dll-is-missing.md) | 命令列分析可能包含不完整的 .NET Framework 二進位檔資料。 這可能是因為沒有設定正確的環境變數所造成。 |
 | [DA0003：許多核心樣本](../profiling/da0003-many-kernel-samples.md) | 記錄到許多不在目標二進位檔執行時發生的程式碼剖析樣本。 請考慮使用檢測方法，以收集更精確的資料。 |

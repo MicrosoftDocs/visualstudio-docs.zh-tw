@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 835230c8-3177-440f-85e3-e40f1d8b4f9d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 21f6923185dbfa79fbe18b7b5c6a5d824a5a2cfe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4b74e20d21ad2c67eed36add90051119c7b8b56e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861162"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>How to: Create file associations for a ClickOnce application (如何：建立 ClickOnce 應用程式的檔案關聯)
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式可與一個或多個副檔名相關聯，如此一來，當使用者開啟這些類型的檔案時，就會自動啟動應用程式。 將副檔名支援新增至 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式很簡單。
@@ -55,7 +55,7 @@ ms.locfileid: "94350032"
 
     如需詳細資訊，請參閱 [Mage.exe (資訊清單產生和編輯工具) ](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [\<fileAssociation> 元素](../deployment/fileassociation-element-clickonce-application.md)
 - [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (資訊清單產生和編輯工具) ](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

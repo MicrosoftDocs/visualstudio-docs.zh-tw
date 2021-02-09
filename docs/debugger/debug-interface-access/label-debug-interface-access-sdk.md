@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8cef7620-5bc8-4500-8bd0-e9e638bccb24
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de9f99f26de3bbd075c00af33b844ed65f4154ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 254be1bd88151b962cf563de3ff8aa26a983bc1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461242"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862364"
 ---
 # <a name="label-debug-interface-access-sdk"></a>標籤 (偵錯介面存取 SDK)
 程式碼中的位置是以符號來識別 `SymTagLabel` 。

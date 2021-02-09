@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 1b8e0528-95bc-48fa-9653-2cea66c8dc3a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d7c93c1e5811ec3aed5d44f3c306de1c09cced9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c194ef3585a8ba3f0a0ab90e5ea39f4ad3a04622
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861097"
 ---
 # <a name="idebugprocessdestroyevent2"></a>IDebugProcessDestroyEvent2
 此介面會在進程終止、異常離開或從卸離時傳送。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDebugProcessDestroyEvent2 : IUnknown
+IDebugProcessDestroyEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
@@ -34,7 +34,7 @@ IDebugProcessDestroyEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  取消或自訂埠供應商會建立並傳送此事件物件，以報告進程終止。 當它附加至正在進行偵錯工具的程式時，會使用由 SDM 提供的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送此事件。 自訂埠供應商會使用 [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) 介面傳送此事件。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

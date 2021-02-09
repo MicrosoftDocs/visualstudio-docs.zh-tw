@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b7bb9287f26825ad1a90c3f339d7308fd6def1
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 611060e018307eb55d6d575d5cd008bed6f0a2be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860876"
 ---
 # <a name="msbuild-reference"></a>MSBuild 參考
 
@@ -72,7 +72,7 @@ MSBuild 是 Visual Studio 的建置系統。 下列連結會引導至包含 MSBu
 - [要 escape 的特殊字元](../msbuild/special-characters-to-escape.md)\
  列出可能必須「逸出」才能正確解譯的字元。 逸出序列是一系列的字元，表示隨之而來的是替代的解譯。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 概觀](../msbuild/msbuild.md)
 - [Microsoft.Build.Evaluation](/dotnet/api/microsoft.build.evaluation)

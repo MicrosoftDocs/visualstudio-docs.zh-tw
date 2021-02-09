@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 67228681-7345-4537-8af3-93806803ee96
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f5e2dab699b166cd448e73d3f3d84aea156a1b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f0099fd7cb3b07bbcea5561762909207a48bddb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461137"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853216"
 ---
 # <a name="pointertype"></a>PointerType
 每個指標都會以 `SymTagPointerType` 符號識別。

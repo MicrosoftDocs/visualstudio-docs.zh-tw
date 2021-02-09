@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7c8cd8fe-169e-4161-9cff-5e9015984add
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 125245f38be5588f2661b45162ffde24e5930ad7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74f7e5d9a02a8c928b64bcb6abd8054d8fa76f0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853188"
 ---
 # <a name="symbol-locations"></a>符號位置
 大部分的符號在影像檔案中都有一個已定義的位置。 符號的位置會以 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 列舉的值來指定。 符號可能會根據其位置支援其他屬性。

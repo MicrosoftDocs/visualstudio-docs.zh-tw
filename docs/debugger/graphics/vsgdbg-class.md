@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 6722263c-ccef-40c7-a0ae-87a863fbab00
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4051a02de6a046621e62c21b4d2399b5a2703cb8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67bce62612a85e0bcff5e51cd07d4c374e13b01e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62895188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861396"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg 類別
 表示介面，可讓您以程式設計方式控制圖形診斷的應用程式內元件。
@@ -29,14 +29,14 @@ class VsgDbg;
 
 ### <a name="public-constructors"></a>公用建構函式
 
-|Name|描述|
+|名稱|描述|
 |----------|-----------------|
 |[VsgDbg::VsgDbg (建構函式)](vsgdbg-vsgdbg-constructor.md)|會建立類別的實例 `VsgDbg` ，並選擇性地準備圖形診斷的應用程式內元件，以主動捕捉和記錄圖形資訊。|
 |[VsgDbg::~VsgDbg (解構函式)](vsgdbg-tilde-vsgdbg-destructor.md)|終結類別的實例 `VsgDbg` 。|
 
 ### <a name="public-methods"></a>公用方法
 
-|Name|描述|
+|名稱|描述|
 |----------|-----------------|
 |[AddMessage](addmessage.md)|將自訂訊息新增至 [圖形診斷] 抬頭顯示器 (上層顯示) 。|
 |[BeginCapture](begincapture.md)|開始將結束的捕獲間隔 `EndCapture` 。|

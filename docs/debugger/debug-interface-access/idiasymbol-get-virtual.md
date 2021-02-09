@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97e3ad51-8ef3-4446-ab33-3cb34a21b7a0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c3b5d4ce0a0c738f902b1e82a8633cc025f60e70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8f65e41883c6854c3514040a8eb20dba2f139b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862483"
 ---
 # <a name="idiasymbolget_virtual"></a>IDiaSymbol::get_virtual
 抓取指定函數是否為虛擬的旗標。
@@ -25,7 +25,7 @@ ms.locfileid: "85461501"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_virtual ( 
+HRESULT get_virtual ( 
    BOOL* pRetVal
 );
 ```

@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: c660439d-8b23-4dbb-923e-ebb5e1d7edf5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfc9b0bbdebde01af48ab1436dbfd17ac0c3241b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f41d483d51c96cb7a5273f89f691639fd40dcaea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861123"
 ---
 # <a name="idebugprocesscreateevent2"></a>IDebugProcessCreateEvent2
 此介面會在進程啟動時傳送。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDebugProcessCreateEvent2 : IUnknown
+IDebugProcessCreateEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
@@ -34,7 +34,7 @@ IDebugProcessCreateEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  取消或自訂埠供應商會建立並傳送此事件物件，以報告進程的建立。 當它附加至正在進行偵錯工具的程式時，會使用由 SDM 提供的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送此事件。 自訂埠供應商會使用 [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) 介面傳送此事件。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

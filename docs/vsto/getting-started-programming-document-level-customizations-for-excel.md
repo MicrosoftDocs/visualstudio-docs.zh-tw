@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Excel projects [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1fb048fd015126e5438a007be1950cddffbac9e1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: de5d7529e0bd8bc99eb4f375a31dab9ea9520234
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860720"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>開始程式設計 Excel 的檔層級自訂
   如果您剛開始使用 Visual Studio 來建立 Microsoft Office Excel 的檔層級自訂，以下是您需要知道的專案。
@@ -61,7 +61,7 @@ ms.locfileid: "96846034"
 ## <a name="use-data-binding"></a>使用資料系結
  主控制項也會在您可以從 [ **資料來源** ] 視窗拖曳的控制項清單中。 以這種方式加入主控制項時，會自動將這些控制項系結至您使用視窗所設定的資料來源。 若未撰寫任何程式碼，您可以顯示資料庫、web 服務和商務物件的資料。 如需詳細資訊，請參閱 [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  若要瞭解如何建立 Excel 的檔層級自訂，請參閱 [逐步解說：建立 excel 的第一個檔層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)。 本逐步解說將為您介紹 Visual Studio 中的 Office 程式開發工具，以及適用于 Excel 檔層級自訂的程式設計模型。
 
  如需逐步解說 Excel 專案中一些常見工作的主題清單，請參閱 [Office 程式設計的一般](../vsto/common-tasks-in-office-programming.md)工作。

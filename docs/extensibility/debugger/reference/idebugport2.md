@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62912be9fdfecc98a264a58c9713cc12ccaf28f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d50266e792d58be3824e5c14e4936f3af381f0fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725225"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861136"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 此介面代表機器上的 debug 埠。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPort2 : IUnknown
@@ -51,7 +51,7 @@ IDebugPort2 : IUnknown
 ## <a name="remarks"></a>備註
  本機埠可讓您存取在本機電腦上執行的所有處理常式和程式。 其他埠可能代表連至 Windows CE 型裝置的序列纜線連線，或是連至非 DCOM 電腦的網路連線。 `IDebugPort2`介面是用來尋找埠的名稱和識別碼，並列舉在埠上執行的所有處理常式。 在埠上啟動和終止進程的功能會在介面中執行 `IDebugPortEx2` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

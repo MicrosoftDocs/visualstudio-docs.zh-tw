@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab7156635914d46dfc1849717d29ac0416e2d9fa
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 40a620023dad754e3de4fedb9bc4fdbe7b7835a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861227"
 ---
 # <a name="how-to-create-a-product-manifest"></a>How to: Create a product manifest (如何：建立產品資訊清單)
 若要部署應用程式的必要條件，您可以建立啟動載入器套件。 啟動載入器套件包含單一產品資訊清單檔案，但每個地區設定都有套件資訊清單。 封裝資訊清單包含封裝的當地語系化特定層面。 這包括字串、使用者授權合約和語言套件。
@@ -56,7 +56,7 @@ ms.locfileid: "94351215"
       </RelatedProducts>
     ```
 
-5. 加入 XML 以列出啟動載入器套件中的所有檔案。 此範例會使用套件檔案名 *CorePackage.msi* 。
+5. 加入 XML 以列出啟動載入器套件中的所有檔案。 此範例會使用套件檔案名 *CorePackage.msi*。
 
     ```xml
     <PackageFiles>
@@ -66,7 +66,7 @@ ms.locfileid: "94351215"
 
 6. 將 *CorePackage.msi* 檔案複製或移動至 *C:\package* 資料夾。
 
-7. 使用啟動載入器命令新增 XML 來安裝封裝。 啟動載入器會自動將 **/qn** 旗標新增至 *.msi* 檔案，該檔案將會以無訊息方式安裝。 如果檔案是 *.exe* ，啟動載入器會使用 shell 來執行 *.exe* 檔案。 下列 XML 不會顯示 *CorePackage.msi* 的引數，但您可以將命令列引數放入 `Arguments` 屬性中。
+7. 使用啟動載入器命令新增 XML 來安裝封裝。 啟動載入器會自動將 **/qn** 旗標新增至 *.msi* 檔案，該檔案將會以無訊息方式安裝。 如果檔案是 *.exe*，啟動載入器會使用 shell 來執行 *.exe* 檔案。 下列 XML 不會顯示 *CorePackage.msi* 的引數，但您可以將命令列引數放入 `Arguments` 屬性中。
 
     ```xml
     <Commands>
@@ -160,5 +160,5 @@ ms.locfileid: "94351215"
 </Product>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)
