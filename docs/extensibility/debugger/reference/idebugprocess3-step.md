@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 054cfc305400e3916ed7ba796a74370dfc2c77a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69f7c1736f786b2c59678826b71f7f9349629057
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926247"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 使進程逐步執行一個指令或語句。

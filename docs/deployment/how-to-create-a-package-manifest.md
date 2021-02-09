@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cef6cd23a1e5ff1e00e2d4d93313ee1e9355ece2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927557"
 ---
 # <a name="how-to-create-a-package-manifest"></a>How to: Create a package manifest (如何：建立封裝資訊清單)
 若要部署應用程式的必要條件，您可以使用啟動載入器套件。 啟動載入器套件包含單一產品資訊清單檔案，但每個地區設定都有套件資訊清單。 不同當地語系化版本之間的共用功能應該進入產品資訊清單。
@@ -36,7 +36,7 @@ ms.locfileid: "94350045"
 
 #### <a name="to-create-the-package-manifest"></a>若要建立封裝資訊清單
 
-1. 建立啟動載入器套件的目錄。 此範例使用 *C:\package* 。
+1. 建立啟動載入器套件的目錄。 此範例使用 *C:\package*。
 
 2. 使用地區設定的名稱來建立子目錄，例如英文的 *en* 。
 
@@ -100,5 +100,5 @@ installing this package.</String>
 </Package>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)

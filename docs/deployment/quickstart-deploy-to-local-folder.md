@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a96ea0fe4b4bbbebfc29cde7258273ea4f4b21e2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2b16c10d13f63be43ad2e8c3e16d24c0f9fd5e38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927427"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>使用 Visual Studio 將應用程式部署到資料夾
 
@@ -42,15 +42,15 @@ ms.locfileid: "94437682"
 
     ![方案總管的專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
-1. 如果您先前已設定任何發行設定檔，[ **發行** ] 視窗隨即出現。 選取 [新增]。
+1. 如果您先前已設定任何發行設定檔，[ **發行** ] 視窗隨即出現。 選取 [ **新增**]。
 
-1. 在 [ **發行** ] 視窗中，選取 [ **資料夾** ]。
+1. 在 [ **發行** ] 視窗中，選取 [ **資料夾**]。
 
     ![選擇資料夾做為發佈目標](../deployment/media/quickstart-publish-folder-new.png "選擇資料夾")
 
 ::: moniker range=">=vs-2019"
 
-4. 如果您要部署 .NET Core 3.1 或更新版本的 Windows 應用程式，您可能需要在 **特定目標** 視窗中選取 **資料夾** 。
+4. 如果您要部署 .NET Core 3.1 或更新版本的 Windows 應用程式，您可能需要在 **特定目標** 視窗中選取 **資料夾**。
 
 ![選擇資料夾作為特定目標](../deployment/media/quickstart-publish-folder-targets.png "選擇特定目標")
 
@@ -84,7 +84,7 @@ ms.locfileid: "94437682"
 
 請使用任何您想要的方式，部署已發行的檔案。 例如，您可以使用簡單的 copy 命令將它們封裝在 *.zip* 檔案中，或與您選擇的任何安裝套件一起部署。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 針對 .NET 應用程式：
 

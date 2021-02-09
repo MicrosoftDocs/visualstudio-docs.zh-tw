@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 8bdf4bb7-3b5d-4991-8981-772d4f6bb656
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7026156eac7f60e7435e32244c3cc03ae5f08e1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a985acc5a949ead841239d56c8b067967531fb1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927050"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 表示單一的 debug engine (DE) ，可控制一或多個模組的偵錯工具。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngine3 : IDebugEngine2
@@ -45,7 +45,7 @@ IDebugEngine3 : IDebugEngine2
 |[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|從計量設定取消 GUID。|
 |[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|將目前未完成的所有例外狀況設定為指定的狀態。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

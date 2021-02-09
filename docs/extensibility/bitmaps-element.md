@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd3222e24c6e90380ec9c5836bed583ba95eaa68
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: e71e16f5104423c5cd7301055c9c471b5bf51262
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927388"
 ---
 # <a name="bitmaps-element"></a>點陣圖元素
 群組 [點陣圖元素](../extensibility/bitmap-element.md) 元素。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <Bitmaps>
@@ -43,14 +43,14 @@ ms.locfileid: "94974566"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[點陣圖元素](../extensibility/bitmaps-element.md)|群組點陣圖元素。|
 |[Bitmap 元素](../extensibility/bitmap-element.md)|定義點陣圖。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[命令元素](../extensibility/commands-element.md)|代表 VSPackage 工具列上的命令集合。|
 

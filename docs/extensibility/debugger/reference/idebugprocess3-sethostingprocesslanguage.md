@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a16f2c39fa2d53ffc4d113666ef7630557e61861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b65d8a3171de6ac33526bafadbe04254ce58855
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723561"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926255"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 這個方法會設定將裝載進程的語言。 然後，偵錯工具引擎可以使用此語言 (DE) 載入適當的運算式評估工具。
@@ -28,8 +28,8 @@ ms.locfileid: "80723561"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT SetHostingProcessLanguage(
-   REFGUID guidLang
+HRESULT SetHostingProcessLanguage(
+   REFGUID guidLang
 );
 ```
 

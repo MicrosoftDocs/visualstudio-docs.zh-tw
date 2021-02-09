@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], multiple columns
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927661"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>逐步解說：檔層級專案中的複雜資料系結
   本逐步解說示範檔層級專案中的複雜資料系結的基本概念。 您可以將 Microsoft Office Excel 工作表中的多個資料格系結至 Northwind SQL Server 資料庫中的欄位。
@@ -177,7 +177,7 @@ ms.locfileid: "97527116"
 
 1. 選取清單物件內的儲存格。
 
-    新資料列會出現在清單底部，並在新資料列的第一個資料格中有星號 ( * *\** _) 。
+    新資料列會出現在清單底部，並 **\*** 在新資料列的第一個資料格中使用星號 () 。
 
 2. 在空白資料列中加入下列資訊。
 
@@ -187,7 +187,7 @@ ms.locfileid: "97527116"
 
 ### <a name="to-delete-rows"></a>刪除資料列
 
-- 以滑鼠右鍵按一下工作表最左邊的 16 (資料列 16) ，然後按一下 [_ * 刪除 * *]。
+- 以滑鼠右鍵按一下工作表最左邊的數位 16 (資料列 16) ，然後按一下 [ **刪除**]。
 
 ### <a name="to-sort-the-rows-in-the-list"></a>若要排序清單中的資料列
 
@@ -217,7 +217,7 @@ ms.locfileid: "97527116"
 
      篩選會被移除，並顯示所有資料列。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  本逐步解說說明將資料庫中的資料表系結至清單物件的基本概念。 接著可以執行下列一些工作：
 
 - 快取資料，讓它可以離線使用。 如需詳細資訊，請參閱 [如何：快取資料供離線使用或在伺服器上使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。

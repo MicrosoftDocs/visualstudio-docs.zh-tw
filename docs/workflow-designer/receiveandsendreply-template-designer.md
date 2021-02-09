@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: d1d9a058-df7e-48f5-a2e7-3caeeba7eaa6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f11caa831ca3de0684dd49e46a37620eaa6e435
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 6bc86aed1e135f369d771a9ac47513c4eb28ce25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926529"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 樣板設計工具
 
@@ -44,7 +44,7 @@ ms.locfileid: "96996210"
 
 下表顯示 <xref:System.ServiceModel.Activities.SendReply> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在 [屬性] 方格中編輯，有些可以在工作流程設計工具介面上編輯。
 
-| 屬性名稱 | 必要 | 使用量 |
+| 屬性名稱 | 必要 | 使用方式 |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | 否 | <xref:System.ServiceModel.Activities.SendReply> 活動可選用的易記名稱。 預設為 SendReplyToReceive。<br /><br /> 雖然不是絕對需要使用非預設的易記值 <xref:System.Activities.Activity.DisplayName%2A> ，但最好是使用這類值。 |
 | <xref:System.ServiceModel.Activities.SendReply.Request%2A> | 是 | 參考到與這個 <xref:System.ServiceModel.Activities.Receive> 活動成對的 <xref:System.ServiceModel.Activities.SendReply> 活動。 這個屬性不得為 **null**。 <xref:System.ServiceModel.Activities.Receive> 和 <xref:System.ServiceModel.Activities.SendReply> 活動會一起用於伺服器上，以建立要求/回應訊息模式的模型。 這個屬性會指定哪個 <xref:System.ServiceModel.Activities.Send> 活動為成對的活動。 在設計工具中，您無法編輯這個屬性，因為它會自動系結至 <xref:System.ServiceModel.Activities.Send> 您用來建立 <xref:System.ServiceModel.Activities.SendReply> 活動的活動。 |
@@ -58,6 +58,6 @@ ms.locfileid: "96996210"
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [收到](../workflow-designer/receive-activity-designer.md)
-- [Send](../workflow-designer/send-activity-designer.md)
+- [發送](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

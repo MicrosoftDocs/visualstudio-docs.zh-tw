@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 692f2f13d861d9688ba349fbc80cb1ca426582c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10f42ca10496d89955032bd531651186d0aecf37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736304"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926349"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 取得陣列的順位或維度數目。
@@ -28,7 +28,7 @@ ms.locfileid: "80736304"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetRank( 
+HRESULT GetRank( 
    DWORD* pdwRank
 );
 ```

@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 0d95eee8dd4e49e74b9bafd048e3f672fe560c68
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 2ef6844c76638b46e43556eb9294cce04a7d1fcf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926777"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>編輯測試混合模型以指定虛擬使用者執行測試的可能性
 

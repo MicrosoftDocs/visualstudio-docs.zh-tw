@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: cf3efc91-1532-4022-bbb8-a18658424fee
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c78c8a038df33d9b548229966402d0058f53144
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: a899790890bd299dcb77558d31499b0a61bcefe4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671475"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927128"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a> (Visual Studio 範本的 CustomParameters 元素) 
 當 wizard 進行參數取代時，將要傳遞給範本嚮導的自訂參數分組。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <CustomParameters>
@@ -42,13 +42,13 @@ ms.locfileid: "94671475"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 包含從範本建立專案或專案時所要使用的自訂參數名稱和值。 `CustomParameter` 元素中可能有零個或多個 `CustomParameters` 元素。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|指定範本的內容。|
 

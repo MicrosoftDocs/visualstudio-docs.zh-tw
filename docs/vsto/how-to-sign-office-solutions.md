@@ -13,15 +13,15 @@ helpviewer_keywords:
 - signing manifests [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7451630570e6d557dc5d2b635d149ebc07cfb388
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3135962c8476fdb6970fc137e689c638299f8f81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927635"
 ---
 # <a name="how-to-sign-office-solutions"></a>如何：簽署 Office 方案
   如果您簽署解決方案，則可以使用憑證做為辨識項，將信任授與解決方案。 您可以將相同的憑證用於多個解決方案，而且所有解決方案都將受信任，而不需要額外的安全性原則更新。

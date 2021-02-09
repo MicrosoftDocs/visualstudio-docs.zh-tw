@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 907fdaa928b3f84f6ff37490d5c54a9d48515053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9411bc7c3963636c8ad80e5a2bf94dd49bf3e5b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926269"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 讓運算式評估工具 (EE) 指定偵錯工具引擎 (DE) 將用來讀取度量設定的回呼介面。
@@ -49,7 +49,7 @@ int SetCallback (
 這個方法會提供一個介面給會話偵錯工具，讓運算式評估工具用來讀取計量設定。 它很適合用來在遠端偵錯程式中讀取電腦上的度量 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
 
 ## <a name="example"></a>範例
-下列範例顯示如何針對公開[IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)介面的**產生 cee**物件，執行這個方法。
+下列範例顯示如何針對公開 [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)介面的 **產生 cee** 物件，執行這個方法。
 
 ```cpp
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)

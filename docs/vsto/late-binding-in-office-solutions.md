@@ -14,15 +14,15 @@ helpviewer_keywords:
 - casting, object to specific type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 455816b2e23a25ad5ef83c726b2a78e4245ed99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927648"
 ---
 # <a name="late-binding-in-office-solutions"></a>Office 方案中的晚期繫結
   Office 應用程式物件模型中的某些類型會提供透過晚期繫結功能提供的功能。 例如，某些方法和屬性可以根據 Office 應用程式的內容傳回不同類型的物件，而某些類型可能會在不同的內容中公開不同的方法或屬性。

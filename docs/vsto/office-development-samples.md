@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, samples
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d80598033c834e8567ab58368da73350b3cd9ff3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: caf3178355697b8dba997dbcb66dfa8ef5569e36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926569"
 ---
 # <a name="office-development-samples"></a>Office 開發範例
   Visual Studio 包含範例應用程式，以示範如何使用 Microsoft Office 開發人員工具建立 Office 方案。 這些範例中的程式碼示範建置 Office 方案時使用的語法、結構和技術。

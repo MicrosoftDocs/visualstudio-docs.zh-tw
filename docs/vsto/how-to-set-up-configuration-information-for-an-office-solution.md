@@ -13,15 +13,15 @@ helpviewer_keywords:
 - configuration files [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3cff5e6f559245e361eda0db6623312917891969
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: da3a08ad9b3f6c78a10891e7d8ef2093ab46305d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927700"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>如何：設定 Office 方案的設定資訊
   您可以使用設定檔來設定 Office 方案的特定設定。 您可以指定設定，例如元件系結原則、遠端物件、偵錯工具和追蹤設定。
@@ -40,7 +40,7 @@ ms.locfileid: "97528160"
 
 4. 在 [ **名稱** ] 方塊中，輸入與元件 *和副檔名相同的名稱。* 例如，名為 *ExcelWorkbook1.dll* 的 Excel 專案元件的設定檔會命名為 *ExcelWorkbook1.dll.config*。
 
-5. 按一下 [新增] 。
+5. 按一下 **[新增]** 。
 
 6. 根據應用程式佈建檔架構建立設定檔。 如需詳細資訊，請參閱 [.NET Framework 的設定檔架構](/dotnet/framework/configure-apps/file-schema/index)。
 

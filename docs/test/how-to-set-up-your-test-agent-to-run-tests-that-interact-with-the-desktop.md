@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 13949465677301a336f0a4738e903657dbfe2b7f
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 830469525429d298f1c9bf03b845a1132021373a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926634"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>如何：將您的測試代理程式設定為執行與桌面互動的測試
 
@@ -51,7 +51,7 @@ ms.locfileid: "95441009"
 
    ![設定適用於 Visual Studio 的測試代理程式](media/configure-test-agent.png)
 
-2. 選取 [互動式處理序]。 測試代理程式會做為處理序 (而非服務) 啟動。 選擇 [下一步]  。
+2. 選取 [互動式處理序]。 測試代理程式會做為處理序 (而非服務) 啟動。 選擇 [下一步]。
 
 3. 輸入要執行測試代理程式處理序之使用者的使用者名稱和密碼。
 

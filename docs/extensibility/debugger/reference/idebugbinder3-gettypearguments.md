@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7667b06348c5e1b2865b24ab49095772808d6c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b5c0e89909f06da9d65d15bc6098e636d36a2de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735697"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927141"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 這個方法會抓取與這個物件相關聯的引數類型清單。
@@ -28,20 +28,20 @@ ms.locfileid: "80735697"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetTypeArguments(
-   UINT          skip,
-   UINT          count,
-   IDebugField** ppFields,
-   UINT*         pFetched
+HRESULT GetTypeArguments(
+   UINT          skip,
+   UINT          count,
+   IDebugField** ppFields,
+   UINT*         pFetched
 );
 ```
 
 ```csharp
 int GetTypeArguments(
-   uint          skip,
-   uint          count,
-   IDebugField[] ppFields,
-   out uint      pFetched
+   uint          skip,
+   uint          count,
+   IDebugField[] ppFields,
+   out uint      pFetched
 );
 ```
 

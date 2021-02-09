@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - azure
-ms.openlocfilehash: cf32e0aa1f19bb4398bc5600ae7fc9fbf151c76c
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 11e655adcfecb9ab63479275b64873fa4c9e6d0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815590"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927440"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至 Azure App Service
 
@@ -59,7 +59,7 @@ ms.locfileid: "97815590"
 
     ![從 Visual Studio 方案總管存取的 [發行] 視窗螢幕擷取畫面。 選取 Azure 作為發佈目標。](../deployment/media/quickstart-publish-windows-select-instance.png)
 
-1. 選取 [發佈]  。 Visual Studio 會將應用程式部署至 Azure App Service，並在瀏覽器中載入 Web 應用程式。 專案屬性 [發行] 窗格會顯示網站 URL 和其他詳細資料。
+1. 選取 [發佈]。 Visual Studio 會將應用程式部署至 Azure App Service，並在瀏覽器中載入 Web 應用程式。 專案屬性 [發行] 窗格會顯示網站 URL 和其他詳細資料。
 
     ![顯示設定檔摘要的 [發行] 屬性窗格](../deployment/media/quickstart-publish-windows-summary-page.png)
 
@@ -70,7 +70,7 @@ ms.locfileid: "97815590"
 在 [資源群組] 頁面上，確定所列出的資源是您想要刪除的項目。
 選取 [刪除]，在文字方塊中輸入 **myResourceGroup**，然後再選取 [刪除]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在本快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔，以部署至 Azure。 您也可以從 Azure App Service 匯入發行設定來設定發行設定檔。
 

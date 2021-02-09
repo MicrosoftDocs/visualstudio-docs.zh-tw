@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], user interface errors
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e74d60fe6386575417114fe1ad4823704cf09d46
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 29e07e49d901b44b534d9d274e5535be663e97ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927674"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>如何：顯示增益集使用者介面錯誤
   根據預設，如果 VSTO 增益集嘗試操作 Microsoft Office 使用者介面 (UI) 且失敗，則不會顯示任何錯誤訊息。 不過，您可以設定 Microsoft Office 應用程式，顯示與 UI 相關的錯誤訊息。 您可以使用這些訊息來協助判斷自訂功能區未出現的原因，或為什麼會出現功能區但不會顯示任何控制項。

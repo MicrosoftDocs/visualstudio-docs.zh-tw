@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 76f8aec5cec1d06b3c6162524e02ae1bb2faefc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350487"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927401"
 ---
 # <a name="trusted-application-deployment-overview"></a>信任的應用程式部署概觀
 本主題提供如何部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的概觀，使用受信任的應用程式部署技術可提高此應用程式的權限。
@@ -36,7 +36,7 @@ ms.locfileid: "94350487"
 ## <a name="trusted-application-deployment-basics"></a>信任的應用程式部署基本概念
  下表顯示信任的應用程式部署所涉及的物件和角色。
 
-|物件或角色|說明|
+|物件或角色|Description|
 |--------------------|-----------------|
 |administrator|負責更新和維護用戶端電腦的組織實體|
 |測試管理員|在 Common Language Runtime (CLR) 內負責強制執行用戶端應用程式安全性的子系統。|
@@ -79,7 +79,7 @@ ms.locfileid: "94350487"
 
 - <xref:System.Security.Cryptography?displayProperty=fullName> 命名空間。
 
-- *CertMgr.exe* ，這是 Internet Explorer 的元件，因此存在於 Windows 98 和所有更新版本上。 如需詳細資訊，請參閱 [Certmgr.exe (憑證管理員工具) ](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)。
+- *CertMgr.exe*，這是 Internet Explorer 的元件，因此存在於 Windows 98 和所有更新版本上。 如需詳細資訊，請參閱 [Certmgr.exe (憑證管理員工具) ](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)。
 
 ### <a name="create-a-clickonce-application"></a>建立 ClickOnce 應用程式
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式是一種 .NET Framework 用戶端應用程式，結合資訊清單檔案來描述應用程式並提供安裝參數。 您可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 中的 [發行]  命令 ，將程式變成 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應用程式。 或者，您可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 隨附的工具，產生 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]部署所需的所有檔案。 如需詳細步驟[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
@@ -103,6 +103,6 @@ ms.locfileid: "94350487"
 ## <a name="limitations-of-trusted-application-deployment"></a>信任的應用程式部署的限制
  您可以使用信任的應用程式部署，授與提高的信任給透過 Web 或企業共用部署的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 您不必針對在 CD 上散發的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式使用信任的應用程式部署，因為依預設，這些應用程式便已被授與完全信任。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Mage.exe (資訊清單產生和編輯工具) ](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

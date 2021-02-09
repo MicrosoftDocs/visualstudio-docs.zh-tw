@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4858a9efdad747293a94563196108d895c40880b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 9eb06c54caceb2e9329347fb1dd0114749975e7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927583"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：建立當地語系化啟動載入器套件
-建立啟動載入器套件之後，您可以為每一個地區設定建立另外兩個檔案，藉此建立當地語系化版本的啟動載入器套件：軟體授權條款檔案 (例如 *eula.rtf* ) 和套件資訊清單 ( *package.xml* )。
+建立啟動載入器套件之後，您可以為每一個地區設定建立另外兩個檔案，藉此建立當地語系化版本的啟動載入器套件：軟體授權條款檔案 (例如 *eula.rtf*) 和套件資訊清單 (*package.xml*)。
 
  根據預設，Visual Studio 2010 只包含 .NET Framework 4、.NET Framework 4 Client Profile、F# Runtime 2.0 和 F# Runtime 4.0 的當地語系化啟動載入器套件。 您只要完成三個步驟，就能為其他啟動載入器建立當地語系化套件。
 
@@ -47,7 +47,7 @@ ms.locfileid: "94351241"
 
      下表顯示可用來比對地區設定的資料夾名稱。
 
-    |地區設定|資料夾名稱|
+    |Locale|資料夾名稱|
     |------------|-----------------|
     |簡體中文|zh-Hans|
     |繁體中文|zh-Hant|
@@ -88,11 +88,11 @@ ms.locfileid: "94351241"
 
 4. 更新套件資訊清單的 `<Strings>` 區段，讓錯誤字串以法文顯示。
 
-5. 將 `<String Name="Culture">` 值變更為 *fr* 。
+5. 將 `<String Name="Culture">` 值變更為 *fr*。
 
 6. 儲存 *package.xml* 檔案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)
 - [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)
 - [How to: Create a package manifest (如何：建立封裝資訊清單)](../deployment/how-to-create-a-package-manifest.md)

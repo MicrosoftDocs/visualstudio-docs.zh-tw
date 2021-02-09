@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8da92f721f0f4333ffb32ac5cb080d87e4fc0543
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 51b202db9210fa5c1f3d5b26b5177cc0b5e1e0a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974491"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927310"
 ---
 # <a name="button-element"></a>Button 元素
 定義使用者可以與之互動的元素。 按鈕可以是不同的類型： Button、MenuButton 和 SplitDropDown。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <Button guid="guidMyCommandSet" id="MyCommand" priority="0x102" type="button">
@@ -49,7 +49,7 @@ ms.locfileid: "94974491"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[父元素](../extensibility/parent-element.md)|選擇性。 按鈕的父元素。|
 |[Icon 元素](../extensibility/icon-element.md)|選擇性。 與按鈕相關聯的圖示。|
@@ -59,7 +59,7 @@ ms.locfileid: "94974491"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[按鈕元素](../extensibility/buttons-element.md)|群組按鈕元素。|
 
