@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 63a28f23-0ca0-44a7-b11b-ca0206d642a0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f66d2ca43cba50d40bc7c8fc09b85bf252d352f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c753811378ee81deb5d0deacb8035c1768e80c50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468145"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856471"
 ---
 # <a name="idiaenumsectioncontribsitem"></a>IDiaEnumSectionContribs::Item
 藉由索引來抓取章節投稿。
@@ -25,7 +25,7 @@ ms.locfileid: "85468145"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD                index,
    IDiaSectionContrib** section
 );

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 87a9a9b6-3927-4131-927c-ad95f8f098b9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f5e18d9ba518580d21874b49a7c910268aab36d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a8c87a0dd4606396249409984cb0589991cc6c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856317"
 ---
 # <a name="idiaenumsourcefilesclone"></a>IDiaEnumSourceFiles::Clone
 建立包含與目前列舉值相同列舉狀態的列舉值。
@@ -25,7 +25,7 @@ ms.locfileid: "85467936"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Clone ( 
+HRESULT Clone ( 
    IDiaEnumSourceFiles** ppenum
 );
 ```

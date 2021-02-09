@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0b6f5a68-8402-4f29-8219-20576fda8166
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9750c57bc9a6cacc8d945b0acdd7723769e74e53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9453cb9cd703fd22d9dcff0f1606449dd0fe2cac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856059"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
 藉由依影像區段號和位移來執行查閱，以放置列舉值。
@@ -25,7 +25,7 @@ ms.locfileid: "85467628"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT symbolByAddr ( 
+HRESULT symbolByAddr ( 
    DWORD**      isect,
    DWORD**      offsect,
    IDiaSymbol** ppsymbol

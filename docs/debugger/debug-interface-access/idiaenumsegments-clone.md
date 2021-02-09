@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 93deaac6-72ab-4408-ba14-66174a618757
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9d0ff6739487ee34cfb1eb216e6f0509ab19f3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59cfde0b935ec43f6b439d2d2cf58b39d2ac9aa7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856408"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
 建立包含與目前列舉值相同列舉狀態的列舉值。
@@ -25,7 +25,7 @@ ms.locfileid: "85468062"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Clone ( 
+HRESULT Clone ( 
    IDiaEnumSegments** ppenum
 );
 ```

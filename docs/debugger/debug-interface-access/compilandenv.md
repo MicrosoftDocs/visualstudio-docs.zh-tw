@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 808404bb-ece1-47f1-b9ea-c76d4d86ddd9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e71dd47c75b7cfcef9580119563a7c8f2227268a
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 151a03be24bacddb4ab5b06421267dcf52effcc7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728759"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857434"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 編譯器可能會包含具有符號的其他環境變數。 `SymTagCompilandEnv`每個變數都有一個符號。
@@ -36,6 +36,6 @@ ms.locfileid: "97728759"
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|傳回 `SymTagCompilandEnv` (其中一個) 的 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 值。|
 |[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|`VARIANT`|變數的字串值內容 (`VT_BSTR`) 。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [編譯模組](../../debugger/debug-interface-access/compiland.md)
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

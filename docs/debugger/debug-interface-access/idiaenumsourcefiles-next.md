@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 83bf6317-ff39-4c5c-8987-cba34e7a6983
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7081c85d64e76900d6f310cfc8ff6cde51087fc3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e33abf7a38c5acab799b8a9f9342b2002d62a21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467908"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856233"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 抓取列舉序列中指定的原始程式檔數目。
@@ -25,7 +25,7 @@ ms.locfileid: "85467908"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG            celt,
    IDiaSourceFile** rgelt,
    ULONG*           pceltFetched

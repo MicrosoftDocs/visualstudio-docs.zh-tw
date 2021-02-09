@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2bd1ec04-e677-4e32-8e32-33334f1eed77
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e00d55a26f3aaf771eed01135c62b607794876
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3ee009805fba0d3a0d8a36477072121e594c4ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467754"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856135"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
 藉由索引來抓取符號。
@@ -25,7 +25,7 @@ ms.locfileid: "85467754"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD        index,
    IDiaSymbol** symbol
 );

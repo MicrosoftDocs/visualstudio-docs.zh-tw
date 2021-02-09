@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 761e61a5-44a6-4d5d-a98e-c2e9b89d2343
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4696d8fdab9720796db1c6b5dff25b7bcfe49e01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9c094d389b26424ef8b9fbeec9aeaf8de054441
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857052"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 抓取指定的記錄。
@@ -25,7 +25,7 @@ ms.locfileid: "85468452"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD  index,
    DWORD  cbData,
    DWORD* pcbData,

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 106ae1d3-a379-4077-babf-2665e697b0c4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1df1f15e87275da05467de76221d9de2ac6bf237
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38cfb559f79567bced9adb501f38220f33a44692
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468431"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857024"
 ---
 # <a name="idiaenumdebugstreamdataskip"></a>IDiaEnumDebugStreamData::Skip
 略過列舉序列中指定數目的記錄。
@@ -25,7 +25,7 @@ ms.locfileid: "85468431"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Skip ( 
+HRESULT Skip ( 
    ULONG celt
 );
 ```

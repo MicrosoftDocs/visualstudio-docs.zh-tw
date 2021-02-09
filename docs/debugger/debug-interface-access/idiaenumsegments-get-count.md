@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c62a0fda-17b8-4cf6-b321-6014ce581096
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74597d8e5deab9fc572500bef0b4175fd5722d96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69c1ac1f9f955099d3c99da07784aa20054e80f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856387"
 ---
 # <a name="idiaenumsegmentsget_count"></a>IDiaEnumSegments::get_Count
 捕獲區段的數目。
@@ -25,7 +25,7 @@ ms.locfileid: "85468055"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_Count ( 
+HRESULT get_Count ( 
    LONG* pRetVal
 );
 ```

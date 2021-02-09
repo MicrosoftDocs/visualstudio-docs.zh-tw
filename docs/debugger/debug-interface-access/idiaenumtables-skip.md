@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c9db956-0654-4f1a-8775-530aa980d8ec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 27daf70a3cc5f155bfbe6b2678cce42b50801153
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 739c8e0684e435d4b6747a7127907ec424d90c4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467460"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856016"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
 略過列舉序列中指定數目的資料表。
@@ -25,7 +25,7 @@ ms.locfileid: "85467460"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Skip ( 
+HRESULT Skip ( 
    ULONG celt
 );
 ```

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f80a2e24-5744-4fec-bab0-3ed51aef6e58
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b188ec5067efed410d934b98559505d48ab6585a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab1459100d773e0f887c09f06d03cdfa8e578e35
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466487"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855540"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
 讀取 `ULONGLONG` 屬性集中的值。
@@ -25,7 +25,7 @@ ms.locfileid: "85466487"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT ReadULONGLONG ( 
+HRESULT ReadULONGLONG ( 
    PROPID     id,
    ULONGLONG* pValue
 );

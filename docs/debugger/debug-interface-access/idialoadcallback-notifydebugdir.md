@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bd04e2f6-0dbf-4742-a556-96f2cd99aa19
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 032e628512b7c601a6409f6f70ba0b0c3cabb37c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5844cc235d604e8433940920eb9244044732d54
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855645"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 當在 .exe 檔中找到 debug 目錄時呼叫。
@@ -25,7 +25,7 @@ ms.locfileid: "85466753"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT NotifyDebugDir ( 
+HRESULT NotifyDebugDir ( 
    BOOL  fExecutable,
    DWORD cbData,
    BYTE  data[]

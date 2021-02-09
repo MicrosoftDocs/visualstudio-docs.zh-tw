@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3c1e965f-8f05-41a8-86d8-01830b2377c9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a417669c381036fffac87b4d7e56c66fa31f728
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 798a3af92a58cde7504db6232ce62c6e2aa292cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466459"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855498"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
 從可執行檔 (RVA) 中，讀取指定的相對虛擬位址開始的指定位元組數目。
@@ -25,7 +25,7 @@ ms.locfileid: "85466459"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT ReadExecutableAtRVA ( 
+HRESULT ReadExecutableAtRVA ( 
    DWORD  relativeVirtualAddress,
    DWORD  cbData,
    DWORD* pcbData,

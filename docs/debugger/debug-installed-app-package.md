@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 04ed043dbcb09c862fcdfc5f34d77fd938bd24dc
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e77d74e0d7d0094918ecbd4e86cdfe5d15e511bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857515"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>在 Visual Studio 中將已安裝的 UWP 應用程式套件進行 Debug 錯
 
@@ -95,7 +95,7 @@ Visual Studio 可以在 Windows 10 電腦、Xbox、HoloLens 和 IoT 裝置上，
 
 如需 UWP 應用程式遠端部署的詳細資訊，請參閱在遠端電腦上 [部署和偵測 uwp 應用](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) 程式，以及 [對 uwp 應用程式進行偵錯工具](run-windows-store-apps-on-a-remote-machine.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

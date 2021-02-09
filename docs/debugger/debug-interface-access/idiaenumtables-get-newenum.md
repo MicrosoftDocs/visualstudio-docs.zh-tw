@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7b1159c7-a5f0-4baa-861a-dc11437d8b93
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ebe751e43a41f2d8f77c0aea67435b9a2908317
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 129767dd3f9d56427bae26c377707a99390479fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856037"
 ---
 # <a name="idiaenumtablesget__newenum"></a>IDiaEnumTables::get__NewEnum
 抓取 <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> 此列舉值的版本。
@@ -25,7 +25,7 @@ ms.locfileid: "85467537"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get__NewEnum ( 
+HRESULT get__NewEnum ( 
    IUnknown** pRetVal
 );
 ```

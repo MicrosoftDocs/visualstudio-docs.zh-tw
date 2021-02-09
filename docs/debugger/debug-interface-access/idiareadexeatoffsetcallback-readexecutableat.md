@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30b1cef0-b366-4712-8e89-d21f640964f8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 741fd417fa6ce8e8a2faf714038aaa3d0f798233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d70ca331d56fd423e7bfbfc4596b8f3ef5954b03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855512"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 從可執行檔中的指定位移開始讀取指定的位元組數目。
@@ -25,7 +25,7 @@ ms.locfileid: "85466473"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT ReadExecutableAt ( 
+HRESULT ReadExecutableAt ( 
    DWORDLONG fileOffset,
    DWORD     cbData,
    DWORD*    pcbData,

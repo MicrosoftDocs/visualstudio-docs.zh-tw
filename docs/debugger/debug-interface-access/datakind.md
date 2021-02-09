@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: b64be708-22d6-4360-99e7-8f4e6b196de7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2423646976744da17d3e904246ac74f8b2e75f41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bab3bc1c79b6444e75ab75e3d25e8bc395c1be86
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857318"
 ---
 # <a name="datakind"></a>DataKind
 表示資料值的特定範圍。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```C++
-enum DataKind {
+enum DataKind {
     DataIsUnknown,
     DataIsLocal,
     DataIsStaticLocal,
@@ -63,7 +63,7 @@ DataIsConstant 資料項目是常數值。
 ## <a name="remarks"></a>備註
 [IDiaSymbol：： get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)方法會傳回這個列舉中的值。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： cvconst。h
 
 ## <a name="see-also"></a>另請參閱

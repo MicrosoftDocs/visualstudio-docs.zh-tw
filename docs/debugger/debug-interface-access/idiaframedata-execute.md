@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7a6c7d03-1ff1-4059-bd54-5f407eeebc26
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2587d10b613200b1bf850636f613abbb497e04de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00cc4ba3f7ba3f54df4dd8687996fa72d27e91fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855995"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 執行堆疊回溯，並且在堆疊引導框架介面中傳回結果。
@@ -25,7 +25,7 @@ ms.locfileid: "85467446"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT execute ( 
+HRESULT execute ( 
    IDiaStackWalkFrame* frame
 );
 ```

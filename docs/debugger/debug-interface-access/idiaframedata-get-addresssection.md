@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e4eedede-4a1c-4da2-a812-b92df328fd8d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ddd497bf3a1f2e7fa418751b287566482b8ac4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c7bbb19e132487c8b3a210001beb7e3573437f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855967"
 ---
 # <a name="idiaframedataget_addresssection"></a>IDiaFrameData::get_addressSection
 抓取框架的程式碼位址區段部分。
@@ -25,7 +25,7 @@ ms.locfileid: "85467432"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_addressSection ( 
+HRESULT get_addressSection ( 
    DWORD* pRetVal
 );
 ```

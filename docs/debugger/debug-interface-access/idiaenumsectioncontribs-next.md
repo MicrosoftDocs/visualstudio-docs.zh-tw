@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a6bb2adb-ee6d-4f3c-ab5b-e89361c8880e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09622b1b152a8d1efd105b9b18a3c1fa74835378
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55c4dcef489c56688321497c93448d83ce342b1b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468111"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856457"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 抓取列舉序列中指定的區段貢獻數目。
@@ -25,7 +25,7 @@ ms.locfileid: "85468111"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Next( 
+HRESULT Next( 
    ULONG                celt,
    IDiaSectionContrib** rgelt,
    ULONG*               pceltFetched

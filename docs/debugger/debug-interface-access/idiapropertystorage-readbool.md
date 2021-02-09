@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad1822db-4572-48f7-9919-f8137f6701f2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d94e38ade7b44d7458a0918080214d00e0000aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d985851b1d547eed4306762c453bdd480bb1a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466606"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855589"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 讀取 `BOOL` 屬性集中的值。
@@ -25,7 +25,7 @@ ms.locfileid: "85466606"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT ReadBOOL ( 
+HRESULT ReadBOOL ( 
    PROPID id,
    BOOL*  pValue
 );

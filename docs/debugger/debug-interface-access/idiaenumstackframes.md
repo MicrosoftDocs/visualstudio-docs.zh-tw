@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3d1e8403-c9fc-42ff-ae35-0ab9a5ed2ad7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c9322af6bf04e21430ed49be8e631f3a7dc63643
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 155e46e5f11a04047d5eef314203ac920abd6ce4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856173"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 列舉各種可用的堆疊框架。
@@ -62,7 +62,7 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 }
 ```
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： Dia2。h
 
 程式庫： diaguids .lib

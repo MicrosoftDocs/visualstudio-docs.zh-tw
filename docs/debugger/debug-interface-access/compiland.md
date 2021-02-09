@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c798eb2b-664a-41ec-ae90-5e9d292507ca
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 537b915269a6b7bcf345caf2545d38ca21337ecf
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 50000a6cab9981d9450d1aa2b99b86649df04e6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857414"
 ---
 # <a name="compiland"></a>編譯模組
 `SymTagCompiland`連結到 .exe 檔案的每個編譯單位都有一個符號。 編譯單位資訊會在具有標記的符號之間進行分割 `SymTagCompiland` ，您可以在不載入額外的編譯單位符號的情況下抓取符號，也可以使用 `SymTagCompilandDetails` 標記來標記符號，而這可能需要載入其他符號。
@@ -39,7 +39,7 @@ ms.locfileid: "97728785"
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|符號的索引識別碼。|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|傳回 `SymTagCompiland` (其中一個) 的 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 值。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)
 - [CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f24476bc00293f204dfa28d57ca2d961c2d55d9d
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 9cbc24e8abe378a1a6c61680a797a6014efc5a91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857339"
 ---
 # <a name="cv_hreg_e"></a>CV_HREG_e
 指定目標注冊。
@@ -451,7 +451,7 @@ CV_M32R_ * Mitsubishi M32R 處理器所使用的註冊。
 ## <a name="requirements"></a>需求：
 標頭： cvconst。h
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
 - [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)

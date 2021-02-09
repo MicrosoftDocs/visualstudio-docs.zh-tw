@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e6cf2bed-ee2b-4122-886d-c20d93df7ff2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 37cd52af7326454b0b684ad97f9cde088a8a5679
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2dcec8380ebdc869c093a840d76347cd31c244b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468466"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857094"
 ---
 # <a name="idiaenumdebugstreamdataget_name"></a>IDiaEnumDebugStreamData::get_name
 抓取 debug 資料流程的名稱。
@@ -25,7 +25,7 @@ ms.locfileid: "85468466"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_Name ( 
+HRESULT get_Name ( 
    BSTR * pRetVal
 )
 ```

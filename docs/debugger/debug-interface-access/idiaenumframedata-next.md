@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 546e2e23-efb2-425a-96a1-808c67c519fb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2755ce3f48e22d239622dd49800e98ce49c496c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a0d7a98884d217bb8172d53768917e8e8f7453d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468319"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856793"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
 抓取列舉序列中指定的框架資料元素數目。
@@ -25,7 +25,7 @@ ms.locfileid: "85468319"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG           celt,
    IDiaFrameData** rgelt,
    ULONG*          pceltFetched

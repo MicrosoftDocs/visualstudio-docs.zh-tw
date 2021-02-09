@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 659c415b-9f7b-470d-90e2-b4c0087f8dd3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f332a7427431f5cd481530030e18d9a10368f67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aac9347ea54eff8660eb8eb3550d8a1d9d053c5b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468284"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856737"
 ---
 # <a name="idiaenuminjectedsourcesget_count"></a>IDiaEnumInjectedSources::get_Count
 抓取插入的來源數目。
@@ -25,7 +25,7 @@ ms.locfileid: "85468284"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_Count ( 
+HRESULT get_Count ( 
    LONG* pRetVal
 );
 ```

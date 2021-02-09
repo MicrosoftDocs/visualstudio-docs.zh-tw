@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 9a44277d-cbed-4811-9bad-5a2aa0f09323
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 248e73d9a17ed8baab1bcaf583e71cf02f821bfe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d58a109c3eb63bd3a1f59fb0009ba01809eca1a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855624"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 從 DIA 符號尋找程式接收回呼，以允許在尋找進程上加諸限制。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDiaLoadCallback2 : IDiaLoadCallback
@@ -41,7 +41,7 @@ IDiaLoadCallback2 : IDiaLoadCallback
 ## <a name="remarks"></a>備註
  用戶端應用程式會執行這個介面，並在 [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法的呼叫中提供它的參考。 也請記得在 [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) 介面中執行所有方法。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Dia2。h
 
  程式庫： diaguids .lib

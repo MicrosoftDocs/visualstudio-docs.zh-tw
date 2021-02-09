@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1d973a3a-2bde-46df-8625-85d519bb3cc9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ca89747bc2c3826df4ac2893d4d2edf92449379e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: add93feca133b72a49a72a734fb5c439a3ae8199
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728892"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857481"
 ---
 # <a name="arraytype"></a>ArrayType
 陣列是以符號來識別 `SymTagArray` 。
@@ -44,6 +44,6 @@ ms.locfileid: "97728892"
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` 如果陣列未對齊|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果陣列標示為 volatile。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [維度](../../debugger/debug-interface-access/dimension.md)

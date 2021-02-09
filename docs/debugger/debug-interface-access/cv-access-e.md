@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 33c05d65-abb4-4800-a382-54a3805ea7b0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b2cfea273d0b98c178c3cf9bcf3894042f760f
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 68dc8ca76e9250cd06009a990c0136912b0d31e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857374"
 ---
 # <a name="cv_access_e"></a>CV_access_e
 指定成員函式和變數的可視性範圍 (存取層級) 。
@@ -47,7 +47,7 @@ CV_public 成員具有公用存取權。
 ## <a name="requirements"></a>規格需求
 標頭： cvconst。h
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)
 - [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

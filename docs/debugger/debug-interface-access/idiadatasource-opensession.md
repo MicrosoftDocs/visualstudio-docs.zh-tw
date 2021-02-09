@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a3319ed0-3979-483b-9852-c0af96852c48
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b49c90374975865edcac8a94c504e1fa991d711a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1221bac37b51d9aa55e31a07f2a301defa3af16e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857122"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 開啟用於查詢符號的會話。
@@ -25,7 +25,7 @@ ms.locfileid: "85468501"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT openSession ( 
+HRESULT openSession ( 
    IDiaSession** ppSession
 );
 ```

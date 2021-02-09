@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4e8e0613-ad02-4de9-9f46-e4753c5b0251
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 07fff0b927fcc271c7671ab98683571adfa9830f
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 46c20fbe0c46a6c964a05b92ccd3a8bcf73cd1f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728586"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857367"
 ---
 # <a name="cv_cfl_lang"></a>CV_CFL_LANG
 指定應用程式或連結模組的原始程式碼語言。
@@ -89,6 +89,6 @@ CV_CFL_HLSL 應用程式語言為高階著色器語言。
 ## <a name="requirements"></a>規格需求
 標頭： cvconst。h
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

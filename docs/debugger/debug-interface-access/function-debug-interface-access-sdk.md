@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 458dc91c-b78b-4427-84f4-615d89e26760
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c35ce4a58978cd14e274dd2b49c2bbc1bab4844
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: a294444cf03760ef83fb02ae012bcbf609a2982a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857248"
 ---
 # <a name="function-debug-interface-access-sdk"></a>函式 (偵錯介面存取 SDK)
 每個函式都是以符號來識別 `SymTagFunction` 。

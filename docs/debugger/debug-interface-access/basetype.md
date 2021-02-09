@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2f9e22e6-8360-496a-ac6b-17a5a56b0c46
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ecbcc24e1558039490a17838cdef4d72e7e95e0
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 38ef0b8d8172bfba915da752526098144c2e40b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857474"
 ---
 # <a name="basetype"></a>BaseType
 基底類型是以 `SymTagBaseType` 符號來識別。
@@ -39,6 +39,6 @@ ms.locfileid: "97728873"
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` 如果基底類型為未對齊。|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果基底類型標示為 volatile。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [BasicType 列舉](../../debugger/debug-interface-access/basictype.md)
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

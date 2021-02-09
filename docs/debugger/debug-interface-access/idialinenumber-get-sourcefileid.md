@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4f482a1e-e85f-4173-98de-8e5f7622554b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f5a0151a8cd5bcc10fb306b34762ad5d1bb698f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82f3da87f0c307a4af6ff0fb54f4cfa1437ac371
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466851"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855687"
 ---
 # <a name="idialinenumberget_sourcefileid"></a>IDiaLineNumber::get_sourceFileId
 抓取提供此行之原始程式檔的唯一來源檔案識別碼。
@@ -25,7 +25,7 @@ ms.locfileid: "85466851"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_sourceFileId ( 
+HRESULT get_sourceFileId ( 
    DWORD* pRetVal
 );
 ```

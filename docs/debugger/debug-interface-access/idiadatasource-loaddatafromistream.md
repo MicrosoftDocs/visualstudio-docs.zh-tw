@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8fe33eea-1457-4b8c-ae19-f1ede5578483
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6a19d926ead4c2c38ff69544311caa1f726b3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adf9d25f2ba6afac0510c95790dc8608b22243c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857136"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 準備程式資料庫中儲存的 debug 資料 ( .pdb) 透過記憶體中資料流程存取的檔案。
@@ -25,7 +25,7 @@ ms.locfileid: "85468508"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT loadDataFromIStream ( 
+HRESULT loadDataFromIStream ( 
    IStream* pIStream
 );
 ```

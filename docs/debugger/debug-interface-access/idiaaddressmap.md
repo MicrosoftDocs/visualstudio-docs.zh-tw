@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: e6467529-508c-4328-85d7-89444ae4d1c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf4b1c2a6a22170fb52da200bbd53c2b6b96e62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 975321d9710e9b448fa0b6b860f76c2f0b84d52e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857157"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 提供控制 DIA SDK 如何計算 debug 物件的虛擬和相對虛擬位址。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDiaAddressMap : IUnknown
+IDiaAddressMap : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
@@ -48,7 +48,7 @@ IDiaAddressMap : IUnknown
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  此介面可從 DIA 會話物件取得。 用戶端會 `QueryInterface` 在 DIA 會話物件介面（通常是 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)）上呼叫方法，以取得 `IDiaAddressMap` 介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Dia2。h
 
  程式庫： diaguids .lib

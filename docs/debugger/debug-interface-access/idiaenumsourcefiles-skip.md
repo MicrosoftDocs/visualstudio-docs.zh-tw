@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4821e6dd-d33f-403d-857d-e3ae81e4a9e3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6dd38782a7618259d802ae898c643d2a504c3fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8474899ac5f1a0617bc0adfc110dbb773d6b6b43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856198"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
 略過列舉序列中指定的原始程式檔數目。
@@ -25,7 +25,7 @@ ms.locfileid: "85467873"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Skip ( 
+HRESULT Skip ( 
    ULONG celt
 );
 ```

@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 2ca7fd5a-b2fa-4b3a-9492-0263eafc435b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c99d9587de85941721ae404fefdcac7586fb08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1f2483971b8bb9deb59174fab77bd2c5692f830
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856751"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 列舉資料來源中包含的各種框架資料元素。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDiaEnumFrameData : IUnknown
+IDiaEnumFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
@@ -100,10 +100,10 @@ void ShowFrameData(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 **標頭：** Dia2。h
 
-連結**庫：** diaguids .lib
+連結 **庫：** diaguids .lib
 
 **DLL：** msdia80.dll
 

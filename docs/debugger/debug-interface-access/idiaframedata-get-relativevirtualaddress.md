@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: de070ef4-6c9d-43ca-911c-5245cbcb8dbe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f78fdb1769cf9ea4cbc9c22792fed890601b2fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4803b095425d701cf82cf94bf30fb6d2ea3e3d51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855897"
 ---
 # <a name="idiaframedataget_relativevirtualaddress"></a>IDiaFrameData::get_relativeVirtualAddress
 抓取框架的程式碼 (RVA) 的相對虛擬位址。
@@ -25,7 +25,7 @@ ms.locfileid: "85467208"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_relativeVirtualAddress ( 
+HRESULT get_relativeVirtualAddress ( 
    DWORD* pRetVal
 );
 ```

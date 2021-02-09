@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 5d0ae226-981d-4541-a801-fc4993fe663b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cae8159c893229f02e9598e932d7bc19efc2f4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05475d2e6d48e7a8dacea834e5d7ca18c71d3260
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857304"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 描述位址對應中的專案。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```C++
 struct DiaAddressMapEntry {
@@ -49,7 +49,7 @@ struct DiaAddressMapEntry {
 
     結構的陣列 `DiaAddressMapEntry` 會傳遞至 [IDiaAddressMap：： set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) 方法。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： dia2。h
 
 ## <a name="see-also"></a>另請參閱

@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 2f1b4986-341b-4641-89a4-226e261e9d93
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee2f68066de6a41e6fd6a1cf4143613a7597d6f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f596cd67ce7d31440b40fb24ef3b1c141e98186
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855876"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 公開堆疊框架的詳細資料。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDiaFrameData : IUnknown
+IDiaFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
@@ -112,7 +112,7 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 }
 ```
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： Dia2。h
 
 程式庫： diaguids .lib

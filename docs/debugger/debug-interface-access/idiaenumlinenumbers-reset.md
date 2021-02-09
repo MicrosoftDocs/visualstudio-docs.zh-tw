@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d50e73aa-11a1-4813-ba23-d5861090ee12
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc2225a35f663a54f1c521364146b8b65f30be7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65e8c62bd1d07e947af22cdc845383d2b2671f8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468200"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856569"
 ---
 # <a name="idiaenumlinenumbersreset"></a>IDiaEnumLineNumbers::Reset
 將列舉順序重設為開頭。
