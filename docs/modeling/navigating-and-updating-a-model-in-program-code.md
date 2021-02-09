@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a7e3d7ba31778c5d5a94f77b52f13bfe8fff8473
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897862"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 
@@ -484,7 +484,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>儲存磁碟分割
  載入模型時，會同時載入隨附的圖表。 通常會將模型載入 DefaultPartition 中，並將圖表內容載入至另一個分割區。 通常會載入每個分割區的內容，並將其儲存至不同的檔案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [特定領域語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)

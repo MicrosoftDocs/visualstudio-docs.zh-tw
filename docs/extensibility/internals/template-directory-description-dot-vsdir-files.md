@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: edc4b4bcfe1ac1a85524517ba467e207a792e3cd
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0e2b56c061ce6e3124a7ed5a5dc00e41c3964204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898252"
 ---
 # <a name="template-directory-description-vsdir-files"></a>範本目錄描述檔 (.Vsdir)
 範本目錄描述檔 ( 的) 是一個文字檔，可讓整合式開發環境 (IDE) ，在對話方塊中顯示與專案相關聯的資料夾、wizard .vsz 檔案和範本檔案。 每個檔案或資料夾的內容都包含一筆記錄。 雖然通常只會提供一個 vsdir 檔案來描述多個資料夾、嚮導或範本檔案，但會合並參考位置中的所有 vsdir 檔案。
@@ -44,7 +44,7 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | {clsidPackage} | VSPackage 的 GUID，可在 VSPackage 的附屬動態連結程式庫中存取當地語系化的字串，例如 LocalizedName、Description、IconResourceId 和 SuggestedBaseName， (DLL) 資源。 如果未提供 DLLPath，則適用 IconResourceId。 **注意：**  除非先前的一或多個欄位是資源識別碼，否則這個欄位是選擇性欄位。 這個欄位通常是空白的，也就是與協力廠商的程式（不會當地語系化其文字）相對應的檔。 |
 | LocalizedName | 範本檔案或 wizard 的當地語系化名稱。 這個欄位可以是字串或 "#ResID" 格式的資源識別碼。 這個名稱會顯示在 [ **加入新專案** ] 對話方塊中。 **注意：**  如果 LocalizedName 是資源識別碼，則需要 {clsidPackage}。 |
 | SortPriority | 整數，代表這個範本檔或 wizard 的相對優先權。 例如，如果這個專案的值為1，則此專案會顯示在值為1的其他專案旁邊，以及排序值為2或更大的所有專案的前面。<br /><br /> 排序優先順序是相對於相同目錄中的專案。 相同的目錄中可能會有一個以上的 vsdir 檔案。 在這種情況下，就是來自所有的專案 <em>。</em>該目錄中的 vsdir 檔案會合並。 具有相同優先權的專案會以不區分大小寫的詞典編纂順序列出顯示的名稱。 `_wcsicmp`函數是用來排序專案。<br /><br /> 在 vsdir 檔中未描述的專案，其優先順序數位會大於在 vsdir 檔案中列出的最高優先順序號碼。 結果是這些專案在顯示清單的結尾，不論其名稱為何。 |
-| 描述 | 範本檔案或 wizard 的當地語系化描述。 這個欄位可以是字串或 "#ResID" 格式的資源識別碼。 選取專案時，這個字串會出現在 [ **新增專案** ] 或 [ **加入新專案** ] 對話方塊中。 |
+| Description | 範本檔案或 wizard 的當地語系化描述。 這個欄位可以是字串或 "#ResID" 格式的資源識別碼。 選取專案時，這個字串會出現在 [ **新增專案** ] 或 [ **加入新專案** ] 對話方塊中。 |
 | DLLPath 或 {clsidPackage} | 用來載入範本檔案或 wizard 的圖示。 此圖示會使用 IconResourceId，從 .dll 或 .exe 檔案載入為資源。 您可以使用完整路徑或使用 VSPackage 的 GUID 來識別這個 .dll 或 .exe 檔案。 VSPackage 的「執行」 DLL 可用來載入 (非附屬 DLL) 的圖示。 |
 | IconResourceId | DLL 或 VSPackage 執行 DLL 中的資源識別碼，可決定要顯示的圖示。 |
 | 旗標 (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>)  | 用來停用或啟用 [**加入新專案**] 對話方塊上的 [**名稱**] 和 [**位置**] 欄位。 [ **旗標** ] 欄位的值是必要位旗標組合的十進位對等專案。<br /><br /> 當使用者選取 [ **新增** ] 索引標籤上的專案時，專案會決定當第一次顯示 [ **加入新專案** ] 對話方塊時，是否顯示 [名稱] 欄位和 [位置] 欄位。 專案（透過一個 vsdir 檔案）只能控制選取專案時是否啟用和停用欄位。 |
@@ -64,6 +64,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
 - 如果您刪除 .vsz 檔案、資料夾或範本檔案，您也必須從該 vsdir 檔中移除其相關聯的記錄。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [精靈](../../extensibility/internals/wizards.md)
 - [精靈檔 (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

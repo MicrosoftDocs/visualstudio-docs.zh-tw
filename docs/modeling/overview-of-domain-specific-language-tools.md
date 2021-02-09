@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e88a6157e5c9db7914ac6f7470d793be11dfdfc8
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: dbae3a1b36e6a948766c7dc31d4a8ea8af6d70c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362024"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897774"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Domain-Specific Language Tools 概觀
 Domain-Specific 語言工具 (DSL 工具) （裝載于 Visual Studio 中）可讓您設計特定領域語言，然後產生使用者必須擁有的所有專案，才能建立以該語言為基礎的模型。
@@ -76,7 +76,7 @@ Domain-Specific 語言工具 (DSL 工具) （裝載于 Visual Studio 中）可�
 
  當您在 Visual Studio 中建立並執行 DSL Tools 方案時，Visual Studio 的第二個實例會顯示您的特定領域語言對該語言使用者的外觀。 確認一切運作正常之後，您就可以散發在 DslPackage 專案組建資料夾中找到的 `.vsix` 檔案。 您可以使用這個檔案，在其他電腦上將 DSL 安裝為 Visual Studio 延伸模組。  如需詳細資訊，請參閱[部署特定領域語言方案](msi-and-vsix-deployment-of-a-dsl.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [實驗執行個體](../extensibility/the-experimental-instance.md)
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office project types in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 191de013c94bfede7d1ddac5f3dd0392143e08dc
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: df634a7c242819e4f41a6fddeae4099a3d25fae2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897639"
 ---
 # <a name="design-and-create-office-solutions"></a>設計和建立 Office 方案
 

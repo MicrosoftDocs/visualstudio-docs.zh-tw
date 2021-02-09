@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 6e9b140f-b44f-4a5c-bd65-d868ddc94023
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 968b02569c123326710482705146844ef393dfa6
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: dda6b89dcdfacc286417924c666b3ebd805f1cc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897718"
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>如何：從命令列篩選報表
 使用 **VSPerfReport** 命令的選項，即可將報表篩選到分析資料檔案的特定時間區段，或將資料限制到一或多個處理序或執行緒。 如需此命令的詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ecf1c9cf062dec8dd1d83a5b99bb8c498667e0f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 16366780d4f8d62cd139d22b09529e9602d9b3c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897411"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>如何：從圖表視圖和內容模型視圖列印圖表
 

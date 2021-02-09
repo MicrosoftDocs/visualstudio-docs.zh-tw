@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6292051e6ddf11e3ce4b56648574e0207bb5a41
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: bb59b0342d67ab9118ffcdba74c177106fcceea0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898125"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>測試區域 3：簽出/復原簽出
 此原始檔控制外掛程式測試區域涵蓋了透過 [ **簽出** ] 和 [ **復原簽出** ] 命令來編輯和還原版本存放區中的專案。
@@ -139,5 +139,5 @@ ms.locfileid: "97877685"
 |將檔案 () 新增至專案之後，復原簽出項目|1. 建立新的專案，並將它加入至原始檔控制。<br />2. 簽出項目。<br />3. 將檔案新增至專案。<br />4. 復原專案的簽出。|新增的檔案會從方案總管中的專案移除。<br /><br /> 不再簽出項目。|
 |從專案中刪除檔案 () 後，復原簽出項目|1. 建立新的專案，並將它加入至原始檔控制。<br />2. 簽出項目。<br />3. 從專案中刪除檔案。<br />4. 復原專案的簽出。|已刪除的檔案會出現在方案總管的專案下。<br /><br /> 不再簽出項目。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

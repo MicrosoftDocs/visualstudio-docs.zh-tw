@@ -6,18 +6,18 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 422e3f24b98fd1ddd155e5c3975833b4e4cb248c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: ee23429980accbbedaa2cf14aaf8a673864179a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897798"
 ---
 # <a name="simplify-string-interpolation-refactoring"></a>簡化字串插補重構
 
@@ -33,7 +33,7 @@ ms.locfileid: "96479936"
 
 **原因：** 簡化字串插補可提供更清楚且更簡潔的語法。 此重構工具將會自動執行工作，而不需要手動執行。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將插入號放在字串插補上：
 

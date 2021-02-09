@@ -14,15 +14,15 @@ helpviewer_keywords:
 - selections, restoring after a search
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d396602a5d2bc0c3a90d32256bf226348abff3f3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 493f736ce899a0d90332418ca37a5b2825dd2d7b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897503"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>如何：以程式設計方式在搜尋後還原選取專案
   如果您找到並取代檔中的文字，您可能會想要在搜尋完成後還原使用者的原始選取範圍。

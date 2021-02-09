@@ -6,21 +6,21 @@ helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da3eb33d76f55310e6428a34dd09cabbc271aa68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bee46a1f097d1bee98354acb792f75ea9431f301
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897215"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
 當程式停止時，debug engine (DE) 可以將這個選擇性事件傳送至會話 debug manager (SDM) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugStopCompleteEvent2 : IUnknown
@@ -34,7 +34,7 @@ IDebugStopCompleteEvent2 : IUnknown
 
 停止是用來以非同步方式通知 SDM 程式已停止。 通知 SDM 對解譯器的偵測引擎很有用，在這種情況下，在程式碼的程式碼中有時不會執行任何程式碼，所以無法同步完成 [停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) 。 如果「debug engine」想要採用此非同步通知，它必須 `S_ASYNC_STOP` 從「 [停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)」回來。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 標頭： msdbg。h
 

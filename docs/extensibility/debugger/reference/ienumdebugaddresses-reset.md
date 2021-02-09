@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3a9d7f20-5bc6-4e13-8e91-5af4092e092f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 48026ee5f359c80c2c807fa857f1ec749823e2b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a29620fe97079c865aa18d354a88cc6bd12e6893
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717632"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897090"
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
 這個方法會將列舉重設為第一個元素。
@@ -36,7 +36,7 @@ int Reset();
 ```
 
 ## <a name="parameters"></a>參數
- 無
+ None
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
@@ -46,4 +46,4 @@ int Reset();
 
 ## <a name="see-also"></a>另請參閱
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
-- [下一個](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)
+- [下一步](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c4b0f33f0c898d4b9992acad6ed4035e350df2b
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 88dcc8e86da43f330c50ea478aaee572c1c3a060
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876268"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898135"
 ---
 # <a name="test-area-5-change-source-control"></a>測試區域 5：變更原始檔控制
 此原始檔控制外掛程式測試區域包含透過 [ **變更原始檔控制** ] 命令變更原始檔控制。
@@ -74,5 +74,5 @@ ms.locfileid: "97876268"
 |只有在未關閉 **變更原始檔控制** 對話方塊的情況下重新系結方案|1. 建立專案。<br />2. **使用 (檔案**、原始檔 **控制** 將方案加入至原始檔控制， **並將選取的專案加入至原始檔控制**。<br />3. 開啟 [ **變更原始檔控制** ] 對話方塊。<br />4. 只解除系結方案 (不要關閉 [ **變更原始檔控制** ] 對話方塊。 ) <br />5. 只系結方案。<br />6. 按一下 **[確定** ] 關閉對話方塊。<br />7. 查看解決方案和方案專案 (如果有的話） ) |解決方案保持控制。<br /><br /> 專案仍保持未受控制狀態。|
 |只在相同目錄中重新系結解決方案/專案|1. 建立專案。<br />2. **使用 (檔案**、原始檔 **控制** 將專案加入至原始檔控制， **並將選取的專案加入至原始檔控制**。<br />3. 關閉方案。<br />4. 建立至少具有兩個專案的新方案。<br />5. 將方案加入至原始檔控制。<br />6. 將步驟1中建立的專案從原始檔控制加入。<br />7. 如果出現提示，請接受簽出解決方案。<br />8. 簽入整個方案。<br />9. 開啟 [ **變更原始檔控制** ] 對話方塊。<br />10. 從步驟 6) 選取加入的專案 (，然後按一下 [ **解除** 系結]。<br />11. 按一下 **[確定** ] 關閉對話方塊。<br />12. 如果出現提示，請接受簽出。<br />13. 重新開啟 **變更原始檔控制** 對話方塊。<br />14. 從步驟 6) 選取加入的專案 (**然後按一下 [** 系結]。<br />15. 選取原始位置。|方案和專案仍保持控制。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

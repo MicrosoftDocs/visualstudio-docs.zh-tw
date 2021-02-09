@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9810fc50-43c7-4916-9916-1cf333037b51
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d281ad2f7df73a42835d0f0670a96af07e036d72
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 5043da1d30a9066278455e9c4653f9a636a07926
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606459"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898303"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>參考 (Visual Studio 偵錯 API)
 

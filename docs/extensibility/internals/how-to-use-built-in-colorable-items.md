@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 926cb77fe9477b7dc78c35c2ab58f9b73530e4fa
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 64738bfe67ccc53970087100cd6c37a9881e6b2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898316"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>如何：使用內建的可設定色彩專案
 使用內建的可設定色彩專案之前，您必須先向整合式開發環境發出 (IDE) 您未提供自己的自訂可設定色彩專案，在此情況下會是 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 物件。 做法是設定語言服務的登錄專案。

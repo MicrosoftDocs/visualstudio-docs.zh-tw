@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c1b36a7524530df7f9a18ce9abe1de2d430156d6
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 78b570601ad273a948f46d95105fcd4054419c71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362089"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897778"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>覆寫及擴充產生的類別
 

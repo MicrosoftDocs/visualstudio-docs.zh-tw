@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1257bda23bcdfaceb58d1d087ae2848be8f969b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5dc11dbbe8845bac125942bc3825ecdf5dacdb00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722031"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898597"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 取得裝載程式之進程的系統處理序識別碼。
@@ -28,13 +28,13 @@ ms.locfileid: "80722031"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetHostPid ( 
+HRESULT GetHostPid ( 
    AD_PROCESS_ID * pdwHostPid
 );
 ```
 
 ```csharp
-int GetHostPid ( 
+int GetHostPid ( 
    out AD_PROCESS_ID pdwHostPid
 );
 ```
@@ -47,7 +47,7 @@ int GetHostPid ( 
  如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
- 下列範例示範如何針對實 IDebugProgramNode2 介面的簡單物件，執行這個方法 `CProgram` 。 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+ 下列範例示範如何針對實 IDebugProgramNode2 介面的簡單物件，執行這個方法 `CProgram` 。 [](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 
 ```cpp
 HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {

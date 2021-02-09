@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a8f53613c71a51ab2e5bd8441cb4605da795e8a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897755"
 ---
 # <a name="msbuild-properties"></a>MSBuild 屬性
 
@@ -66,7 +66,7 @@ ms.locfileid: "93046127"
 
 ## <a name="registry-properties"></a>登錄屬性
 
- 您可以使用下列語法來讀取系統登錄值，其中 `Hive` 是登錄 hive (例如 **HKEY_LOCAL_MACHINE** ) 、機碼名稱、子機 `MyKey` 碼名稱，以及子機碼的 `MySubKey` `Value` 值。
+ 您可以使用下列語法來讀取系統登錄值，其中 `Hive` 是登錄 hive (例如 **HKEY_LOCAL_MACHINE**) 、機碼名稱、子機 `MyKey` 碼名稱，以及子機碼的 `MySubKey` `Value` 值。
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -90,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>全域屬性
 
- MSBuild 可讓您使用 **-property** (或 **-p** ) 參數，在命令列上設定屬性。 這些全域屬性值會覆寫專案檔中所設定的屬性值。 這包括環境屬性，但不包含保留的屬性，您無法變更後者。
+ MSBuild 可讓您使用 **-property** (或 **-p**) 參數，在命令列上設定屬性。 這些全域屬性值會覆寫專案檔中所設定的屬性值。 這包括環境屬性，但不包含保留的屬性，您無法變更後者。
 
  下列範例會將全域 `Configuration` 屬性設定為 `DEBUG`。
 
@@ -146,7 +146,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 80e511d8-9b40-4a85-aa5d-952fa5ee6ae7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e6eac7c97b9d375f32e36a372d6f31175c79098
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e6460653795720f10dca7f304035c49e4d8e035
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898519"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 此介面代表可進行調試的程式。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramNode2 : IUnknown
@@ -50,7 +50,7 @@ IDebugProgramNode2 : IUnknown
 ## <a name="remarks"></a>備註
  會話 debug manager (SDM) 通常會呼叫 [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) 來取得這個介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Msdbg。h
 
  命名空間： VisualStudio

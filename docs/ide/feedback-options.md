@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 11caf55a8412477ac94d290add667b9393435fb6
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 38e5f612c6a9b39874c952560627e04c26fafc25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897976"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 意見反應選項
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 608d3489f657cf38d310e67a17bdd48a529de3e5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: dbcbc197a610f7caf2a1641a291db18fcea9dbda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898332"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>測試區域 1：新增至原始檔控制/從原始檔控制開啟
 此原始檔控制外掛程式測試區域涵蓋將方案或專案放置在原始檔控制之下，並從原始檔控制中進行抓取。
@@ -85,5 +85,5 @@ ms.locfileid: "97877737"
 |使用單一專案加入方案-單一專案|1. 建立具有單一專案的方案。<br />2. 將方案加入至原始檔控制。<br />3. 關閉方案。<br />4. 建立第二個空白的方案。<br />5. 從原始檔控制加入先前控制的方案 **(檔案**、 **原始** 檔控制、 **從原始檔控制加入專案**) 。|新增的專案會出現在 **方案總管** 中，並簽入。|
 |加入至方案-依選取專案加入至原始檔控制的方案|1. 建立具有專案的方案。<br />2. 將方案加入至原始檔控制做為選取專案。 如果此步驟成功，請繼續下一個步驟。<br />3. 關閉方案。<br />4. 建立新的方案。<br />5. 從原始檔控制加入先前控制的方案 **(檔案**、 **原始** 檔控制、 **從原始檔控制加入專案**) 。|`Result from Step 2:`<br /><br /> 專案不在原始檔控制之下。<br /><br /> `Result from Step 5:`<br /><br /> 如果第一個方案有方案專案，則無法從原始檔控制加入，因此不會出現這些專案。<br /><br /> 第一個解決方案的專案顯示為無法使用。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

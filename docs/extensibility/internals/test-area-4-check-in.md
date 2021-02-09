@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe0e7838c3bde048df2514c54e534cf7a9b3475
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: ef2baf2158403e8243632bc7ab77e58ea311b67b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898109"
 ---
 # <a name="test-area-4-check-in"></a>測試區域 4：簽入
 此原始檔控制外掛程式測試區域包含透過 [ **簽入** ] 命令將更新的專案傳送至版本存放區。
@@ -68,5 +68,5 @@ ms.locfileid: "97875212"
 |將專案加入至原始檔控制下的空白方案 (**簽入** 對話方塊) |1. 建立空白的方案。<br />2. 將方案加入至原始檔控制。<br />3. 新增專案。<br />4. 如果出現提示，請接受簽出解決方案。<br />5. 從 [ **簽入** ] 對話方塊中簽入。|常見的預期行為。|
 |將專案加入至原始檔控制下的空白方案， ([ **暫止簽入** ] 視窗) |1. 建立空白的方案。<br />2. 將方案加入至原始檔控制。<br />3. 新增專案。<br />4. 如果出現提示，請接受簽出解決方案。<br />5. 從 [暫止 **簽入** ] 視窗簽入方案。|常見的預期行為。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

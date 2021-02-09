@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64db456e0c438f8665f122c3cd1b079c2ad1cea1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0680e0a174716dc79a9819386901d8687422906
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722219"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898763"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 此介面提供主機 (程式) 程式的相關資訊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramHost2 : IUnknown
@@ -43,7 +43,7 @@ IDebugProgramHost2 : IUnknown
 |[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|取得此程式之裝載進程的處理序識別碼。|
 |[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|取得此程式的裝載進程正在其上執行的電腦名稱稱。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

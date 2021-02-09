@@ -6,15 +6,15 @@ ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 34765cc7ac303bd44c3c4ccca87ea7c00a36ccda
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 6ff233b959b4ad691646c5e47c659b398b283b5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598389"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898004"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>設定 Visual Studio 作為 WIP 豁免應用程式
 

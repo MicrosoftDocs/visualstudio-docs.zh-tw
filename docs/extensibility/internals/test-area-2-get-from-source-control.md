@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ed765f78a9e7330e5e1d3864c8a91b63239a3f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 83b869a91b823a2f14823ab65a745a3ef6c0d883
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898218"
 ---
 # <a name="test-area-2-get-from-source-control"></a>測試區域 2：從原始檔控制取得
 此測試區域涵蓋可透過 Get 命令從版本存放區中取得專案的測試案例。 這些測試案例可以同時套用至本機和 Web 專案。
@@ -55,5 +55,5 @@ ms.locfileid: "97877698"
 |取得存在於本機的檔案，與版本存放區中的最新版本相同|1. 建立新專案。<br />2. 將專案加入至專案。<br />3. 將專案放在原始檔控制之下。<br />4. **取得 (檔案**、原始檔 **控制**、 **取得** \<item>) 的專案。|本機檔案未變更。|
 |取得具有一個專案的解決方案|1. 建立具有一個專案的方案。<br />2. 將方案放置在原始檔控制之下。<br />3. 刪除本機上的所有專案檔。<br />4. 取得 **方案 (檔案**、 **原始檔控制**、 **取得**) 。|所有已刪除的檔案都會在本機還原。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

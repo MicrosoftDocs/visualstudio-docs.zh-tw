@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 289609c93cf0e58eb44500bff135282d01212bbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71e9089dc2f0e4f6eec78e904987fc1d865ed90f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719457"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897216"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 此介面是由 debug 引擎傳送 (當正在進行程式設計的程式在原始程式碼或語句或指令行中完成逐步執行、不進入一或多個步驟時，) 至會話 debug manager (SDM) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugStepCompleteEvent2 : IUnknown
@@ -37,7 +37,7 @@ IDebugStepCompleteEvent2 : IUnknown
 ## <a name="remarks"></a>備註
  完成此步驟之後，所要進行的程式開發程式就會暫停一次，而 IDE 會更新其所有視窗。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4e958900307f5f7915f58679709c88f80c2abfc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ce5bee4f2401e3895570f16a6de5567b5979d98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898290"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 從指定的進程抓取正在執行的程式清單。
@@ -28,22 +28,22 @@ ms.locfileid: "80721835"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetProviderProcessData(
-   PROVIDER_FLAGS         Flags,
-   IDebugDefaultPort2*    pPort,
-   AD_PROCESS_ID          processId,
-   CONST_GUID_ARRAY       EngineFilter,
-   PROVIDER_PROCESS_DATA* pProcess
+HRESULT GetProviderProcessData(
+   PROVIDER_FLAGS         Flags,
+   IDebugDefaultPort2*    pPort,
+   AD_PROCESS_ID          processId,
+   CONST_GUID_ARRAY       EngineFilter,
+   PROVIDER_PROCESS_DATA* pProcess
 );
 ```
 
 ```csharp
-int GetProviderProcessData(
-   enum_PROVIDER_FLAGS     Flags,
-   IDebugDefaultPort2      pPort,
-   AD_PROCESS_ID           ProcessId,
-   CONST_GUID_ARRAY        EngineFilter,
-   PROVIDER_PROCESS_DATA[] pProcess
+int GetProviderProcessData(
+   enum_PROVIDER_FLAGS     Flags,
+   IDebugDefaultPort2      pPort,
+   AD_PROCESS_ID           ProcessId,
+   CONST_GUID_ARRAY        EngineFilter,
+   PROVIDER_PROCESS_DATA[] pProcess
 );
 ```
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2819724c204631112fd1a3e827126c4bc176972
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f24e7ec1842866011bb4d3735104a043bc77e01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721050"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897264"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 此介面提供下列支援：
@@ -30,7 +30,7 @@ ms.locfileid: "80721050"
 
 - 設定屬性的值，使其能夠報告任何產生的錯誤
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProperty3 : IDebugProperty2
@@ -58,7 +58,7 @@ IDebugProperty3 : IDebugProperty2
 ## <a name="remarks"></a>備註
 - [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) 是會話 debug MANAGER (SDM) 設定屬性值的慣用方式。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

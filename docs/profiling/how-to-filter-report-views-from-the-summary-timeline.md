@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3719153794cb0439b226b8ba6dc2796d5af0d330
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 1b01f77a530f42b7834af8f16ddbbdda170467a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897734"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>如何：從摘要時間軸篩選報表檢視
 您可以在 [摘要] 檢視的時間軸圖形中指定一個時間區段，來篩選效能報告中顯示的資料。 當您篩選報告時，系統會對分析資料檔進行分析，以只包含您指定的時間區段。

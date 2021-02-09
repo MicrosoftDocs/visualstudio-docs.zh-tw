@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 17a02fb8c05c6f1720aa1b352e30c46e04a8b69d
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: ba8f9ff3bc0aca36aa42582e5c76504aae757c0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897866"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>透過新增或移除工作負載和元件來修改 Visual Studio
 

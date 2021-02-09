@@ -6,17 +6,17 @@ ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ff2ac7682eff1c3da0597a95945a6a0b016d9213
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: a4c243ab46858a4c8eb944d485900718b685bf5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617249"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897967"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>在 Visual Studio 中產生解構函式
 

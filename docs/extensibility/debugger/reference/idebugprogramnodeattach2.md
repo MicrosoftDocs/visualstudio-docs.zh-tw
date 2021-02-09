@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d527dfcfcd09e4d70adca86436aa56e1852bee70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74a25e4eefe260dd61dc951118cdb6390a61b52d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898501"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 允許程式節點在嘗試附加至相關聯的程式時收到通知。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramNodeAttach2 : IUnknown
@@ -48,7 +48,7 @@ IDebugProgramNodeAttach2 : IUnknown
 
  如果先前的 `IDebugProgramNode2::Attach_V7` 方法執行使用提供的回呼介面，則該功能必須移至 [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md) 方法的執行，而 `IDebugProgramNodeAttach2` 不需要執行介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Msdbg。h
 
  命名空間： VisualStudio

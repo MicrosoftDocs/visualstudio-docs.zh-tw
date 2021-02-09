@@ -6,7 +6,7 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vsl.GenerateFromUsage
 dev_langs:
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe38cacf9f33acfac6b1634b6be6a8a3e45de820
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 094dac3cea088bcede1ae251eec73c9741f6de6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897987"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>在 Visual Studio 中產生類別或類型
 
@@ -35,7 +35,7 @@ ms.locfileid: "96617535"
 
 **原因：** 您可以在使用類別或類型之前先宣告它，不過，此功能將可自動產生類別或類型。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將游標放在有紅色曲線的行上。 紅色波浪線表示尚不存在的類別。
 

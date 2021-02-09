@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 14fc4a44a85171d209ec227f20e47775b34be22d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898256"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>舊版語言服務中的語法上色
 語法顏色標示是一種功能，可在不同的色彩和樣式的原始程式檔中顯示不同的程式設計語言元素。 若要支援這項功能，您必須提供剖析器或掃描器，以識別檔案中的詞法元素或標記類型。 許多語言會區分關鍵字、分隔符號 (例如括弧或大括弧) 和批註，方法是以不同方式標示它們。
@@ -146,7 +146,7 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)
 - [舊版語言服務的剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 - [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)

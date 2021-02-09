@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: be1f1cd5-0b2f-435c-a052-dca28a7c978d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae58728601c3adbe6e37a00fd0694a5d71eef0b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0640fa06b821c6679bc52c9f92a757cee6f0a580
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898745"
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
 當程式的名稱變更時，從 debug engine 傳送 (DE) 至會話 debug manager (SDM) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramNameChangedEvent2 : IUnknown
@@ -32,7 +32,7 @@ IDebugProgramNameChangedEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  「取消」會建立並傳送此事件物件，以報告程式名稱變更。 當它附加至正在進行偵錯工具的程式時，會使用由 SDM 提供的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送此事件。 自訂埠供應商會使用 I 介面傳送此事件。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Msdbg。h
 
  命名空間： VisualStudio

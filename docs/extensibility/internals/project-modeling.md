@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a481e731f01230139ec4342231479606c49bd11
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e167a974dde1b98d43f7515581658f1ea549df9d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877412"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896836"
 ---
 # <a name="project-modeling"></a>將專案模型化
 為您的專案提供自動化的下一個步驟是執行標準專案物件： <xref:EnvDTE.Projects> 和集合、 `ProjectItems` `Project` 和 <xref:EnvDTE.ProjectItem> 物件，以及您的實作為唯一的其餘物件。 這些標準物件定義于 Dteinternal 檔中。 BscPrj 範例中提供標準物件的執行。 您可以使用這些類別作為模型來建立您自己的標準專案物件，這些物件與其他專案類型的專案物件並存。
@@ -54,7 +54,7 @@ Projects
 
  如果您未執行 `Project` 物件，則環境仍會傳回 `Project` 只包含專案名稱的泛型物件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:EnvDTE.Projects>
 - <xref:EnvDTE.ProjectItem>
 - <xref:EnvDTE.ProjectItems>

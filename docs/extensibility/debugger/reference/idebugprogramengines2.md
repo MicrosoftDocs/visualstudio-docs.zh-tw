@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 53d648f0-6c11-4337-badd-c43f3872b62c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94df9acc6a0478ba2cb36022bc8618c69be97b8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56c74b265331b67564856baa003632d8d778bfb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722395"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898903"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 程式節點會使用此介面來指定所有可能的偵錯工具引擎 (DE) 可將此程式進行偵錯工具。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramEngines2 : IUnknown
@@ -45,7 +45,7 @@ IDebugProgramEngines2 : IUnknown
 ## <a name="remarks"></a>備註
  一旦使用者選擇取消，該選項就會藉由呼叫 [SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)向程式節點註冊。 選取的引擎會成為 [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)所傳回的引擎。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

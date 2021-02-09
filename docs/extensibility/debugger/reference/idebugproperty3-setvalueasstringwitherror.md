@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb3441dabba1ff13600a9e505eeaec5ae93acd8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4139d3c254c6d824c28e7ceb7fd5fe29b47a3737
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721073"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897298"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 設定這個屬性的值，並視需要傳回錯誤訊息。
@@ -65,7 +65,7 @@ int SetValueAsStringWithError(
 傳入的值可能是要評估的運算式。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面的**CProperty**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面的 **CProperty** 物件，執行這個方法。
 
 ```cpp
 HRESULT CProperty::SetValueAsStringWithError(

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 56f7bb70-d55b-471c-8c65-09a9e7f4938e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 867b0e699ac1e4874a6ac3db12eb52daa27758d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ff426a16a9dec71f809202a9ba0a70e9f2c4965
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897007"
 ---
 # <a name="ienumdebugerrorbreakpoints2getcount"></a>IEnumDebugErrorBreakpoints2::GetCount
 傳回列舉中的元素數目。
