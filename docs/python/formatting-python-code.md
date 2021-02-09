@@ -5,36 +5,36 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b03e99a70edd587c9dfe2a43d326a64d14b9193
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62957527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887883"
 ---
 # <a name="format-python-code"></a>格式化 Python 程式碼
 
 Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的格式化選項。
 
-- 若要格式化選取專案：選取 [**編輯**高階  >  **Advanced**  >  **格式選取專案**] 或按**Ctrl** + **E**  >  **F**。
-- 若要格式化整個檔案：選取 [**編輯**  >  **先進**  >  的**格式**檔] 或按**Ctrl** + **E**  >  **D**。
+- 若要格式化選取專案：選取 [**編輯** 高階  >    >  **格式選取專案**] 或按 **Ctrl** + **E**  >  **F**。
+- 若要格式化整個檔案：選取 [**編輯**  >  **先進**  >  的 **格式** 檔] 或按 **Ctrl** + **E**  >  **D**。
 
-選項是透過 [**工具**  >  **選項**  >  **文字編輯器**  >  **Python**  >  ]、[Python**格式**] 和其嵌套索引標籤來設定。 您需要選取 [顯示所有設定]**** 來使這些選項出現：
+選項是透過 [**工具**  >  **選項**  >  **文字編輯器**  >    >  ]、[Python **格式**] 和其嵌套索引標籤來設定。 您需要選取 [顯示所有設定] 來使這些選項出現：
 
 ![Visual Studio 中的 Python 格式選項](media/options-editor-formatting.png)
 
-格式選項預設會設定成符合 [PEP 8 樣式指南](https://www.python.org/dev/peps/pep-0008/) \(英文\) 的超集合。 [一般]**** 索引標籤能決定何時套用格式；針對其他三個索引標籤的設定，會於本文章中說明。
+格式選項預設會設定成符合 [PEP 8 樣式指南](https://www.python.org/dev/peps/pep-0008/) \(英文\) 的超集合。 [一般] 索引標籤能決定何時套用格式；針對其他三個索引標籤的設定，會於本文章中說明。
 
-此外，[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)也會將實用的 [[填滿註解段落]****](#fill-comment-paragraph-command) 命令新增至 [編輯]**** > [進階]**** 功能表中，如後續小節中所述。
+此外，[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)也會將實用的 [[填滿註解段落]](#fill-comment-paragraph-command) 命令新增至 [編輯] > [進階] 功能表中，如後續小節中所述。
 
 ## <a name="spacing"></a>間距
 
-**間距**控制在各種語言建構前後插入或移除空格的位置。 每個選項有三個可能的值︰
+**間距** 控制在各種語言建構前後插入或移除空格的位置。 每個選項有三個可能的值︰
 
 - 已核取︰確保間距已套用。
 - 已清除︰移除任何間距。
@@ -84,7 +84,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 ## <a name="statements"></a>陳述式
 
-[陳述式]**** 選項控制以更多 Pythonic 格式自動重新撰寫各種陳述式。
+[陳述式] 選項控制以更多 Pythonic 格式自動重新撰寫各種陳述式。
 
 | 選項 | 格式之前 | 格式之後 |
 | --- | --- | --- |
@@ -94,7 +94,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 ## <a name="wrapping"></a>換行
 
-[包裝]**** 讓您設定 [註解寬度上限]**** (預設值為 80)。 如已設定 [將太寬的註解換行]**** 選項，Visual Studio 會重新格式化註解，使不超過寬度上限。
+[包裝] 讓您設定 [註解寬度上限] (預設值為 80)。 如已設定 [將太寬的註解換行] 選項，Visual Studio 會重新格式化註解，使不超過寬度上限。
 
 ```python
 # Wrapped to 40 columns

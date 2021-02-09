@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: ba5bba0b90acdfab932196ceda7dd8ad971efde1
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: e79d6e92df6f2b22fdced488b74f072b57fb8d84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441257"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887857"
 ---
 # <a name="test-mix-models-overview"></a>測試混合模型概觀
 

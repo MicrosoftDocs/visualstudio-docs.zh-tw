@@ -10,15 +10,15 @@ helpviewer_keywords:
 - application settings [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f62e03210e83f434bd32d08c3fe0f7b2b539155e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: acfaf1f74f856bb90bfc16cacef20579abdcf8c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886551"
 ---
 # <a name="manage-application-settings-net"></a>管理應用程式設定 (.NET)
 

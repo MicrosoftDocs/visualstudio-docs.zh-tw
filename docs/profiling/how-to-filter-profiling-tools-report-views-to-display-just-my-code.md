@@ -6,16 +6,16 @@ ms.date: 02/15/2018
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 983bba2f5b802addc1706b7e7d293173e3aaca31
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 8a2990a30295d59806d169baa71e574e5cb0eb65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886115"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>如何：篩選分析工具報表檢視以顯示 Just My Code
 

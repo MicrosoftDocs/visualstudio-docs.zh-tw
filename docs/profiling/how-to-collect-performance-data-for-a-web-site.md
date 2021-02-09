@@ -16,16 +16,16 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e70ff7c6d10ad060086230955c27b781dd73be
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: a8e42522967b39c381e834ea93ccb1965aeb97fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886219"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：收集網站的效能資料
 

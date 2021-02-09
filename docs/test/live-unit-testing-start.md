@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Live Unit Testing
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce2376f2dc3cb6abeb11b328452defb891949558
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ea87135b1f60c7ae65a8bc25399604151ab2fcee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887805"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Live Unit Testing 的使用者入門
 
@@ -36,7 +36,7 @@ Live Unit Testing 可以用來測試以 .NET Framework 或 .NET Core 為目標�
 
 方案只是一或多個專案的容器。 若要建立空白方案，請開啟 Visual Studio 並執行下列作業：
 
-1. **File**  >  **New**  >  從最上層的 Visual Studio 功能表中，選取 [檔案新 **專案**]。
+1.   >    >  從最上層的 Visual Studio 功能表中，選取 [檔案新 **專案**]。
 
 1. 在範本搜尋方塊中鍵入 [方案]，然後選取 [空白方案] 範本。 將專案命名為 **UtilityLibraries**。
 
@@ -69,7 +69,7 @@ Live Unit Testing 可以用來測試以 .NET Framework 或 .NET Core 為目標�
 
 ::: moniker range=">=vs-2019"
 
-2. 在範本的搜尋方塊中鍵入 **類別庫**，然後選取 [類別庫 (.NET Standard)] 範本。 按 [下一步]  。
+2. 在範本的搜尋方塊中鍵入 **類別庫**，然後選取 [類別庫 (.NET Standard)] 範本。 按一下 [下一步] 。
 
    > [!NOTE]
    > 由於程式庫的目標是 .NET Standard 而不是特定的 .NET 執行，因此可以從任何支援該版本 .NET Standard 的 .NET 執行呼叫。 如需詳細資訊，請參閱 [.NET Standard](/dotnet/standard/net-standard)。
@@ -92,7 +92,7 @@ Live Unit Testing 可以用來測試以 .NET Framework 或 .NET Core 為目標�
 
    - 如果字串包含內嵌空白字元，則 `HasEmbeddedSpaces` 會傳回 `true`；否則會傳回 `false`。
 
-6. **Build**  >  從頂層 Visual Studio 功能表中選取 [組建 **組建方案**]。 組建應該會成功。
+6.   >  從頂層 Visual Studio 功能表中選取 [組建 **組建方案**]。 組建應該會成功。
 
 ## <a name="create-the-test-project"></a>建立測試專案
 
@@ -117,7 +117,7 @@ Live Unit Testing 可以用來測試以 .NET Framework 或 .NET Core 為目標�
 
 ::: moniker range=">=vs-2019"
 
-2. 在 [範本搜尋] 方塊中輸入 **單元測試** ，然後選取 [ **( .net Core) 範本的 MSTest 測試專案** ]。 按 [下一步]  。
+2. 在 [範本搜尋] 方塊中輸入 **單元測試** ，然後選取 [ **( .net Core) 範本的 MSTest 測試專案** ]。 按一下 [下一步] 。
 
 3. 將專案命名為 **StringLibraryTests**。
 
@@ -148,7 +148,7 @@ Live Unit Testing 可以用來測試以 .NET Framework 或 .NET Core 為目標�
 
    ![選擇 UTF-8 編碼](media/lut-start/utf8-encoding.png)
 
-10. **Build**  >  從最上層的 Visual Studio 功能表中選取 [組建 **重建方案**]，以編譯單元測試專案。
+10.   >  從最上層的 Visual Studio 功能表中選取 [組建 **重建方案**]，以編譯單元測試專案。
 
 您已為其建立類別庫以及一些單元測試。 您現在已完成使用 Live Unit Testing 所需的準備工作。
 

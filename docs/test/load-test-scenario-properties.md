@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 263a3a1f928fe42d1f5b910f82d0d4a6ea24412e
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: 36c93d11e64b01820a3a31c73beccadb24ffa08c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887662"
 ---
 # <a name="load-test-scenario-properties"></a>負載測試情節屬性
 

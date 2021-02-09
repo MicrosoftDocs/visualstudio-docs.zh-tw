@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd32e31330cdce958e463a40a4d92f88b09afb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e35ae460d6ceb505bc7ad64a0e522bf2841260f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701240"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886609"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 函式
 這個函式可讓使用者流覽已在原始檔控制系統中的檔案，然後再將這些檔案設為目前專案的一部分。 例如，此函式可以在不復制檔案的情況下，取得目前專案的通用標頭檔。 傳回的檔案陣列， `lplpFileNames` 包含使用者想要新增至 IDE 專案的檔案清單。

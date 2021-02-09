@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 7d31816e-c692-46b5-9cc9-753284b3bcda
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576912fb428e15a6f8164e52d558e255e184fe3
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: b168b3bcb90ae758609698de306928eb7e13d909
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888481"
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (的 customerrorreporting> 元素) 
 指定要在錯誤發生時顯示的 URI。

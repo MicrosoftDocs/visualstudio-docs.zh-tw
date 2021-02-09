@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 150746197be4945b012717bef08e18ea57168177
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c262f123e56bf9ed9751ad8b9e7d91770cbd2df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887103"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 這個介面代表在進程中執行的程式。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgram2 : IUnknown
@@ -61,7 +61,7 @@ IDebugProgram2 : IUnknown
 |[EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)|列舉此程式的程式碼路徑。|
 |[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)|將傾印寫入檔案。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio
@@ -74,7 +74,7 @@ IDebugProgram2 : IUnknown
 ## <a name="see-also"></a>另請參閱
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)
-- [下一個](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)
+- [下一步](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)
 - [事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 - [DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)

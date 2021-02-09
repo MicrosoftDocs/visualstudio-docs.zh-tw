@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6c552700-dda3-49fe-af98-4717344fda07
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb659b2191e156aac303678374fe726856d9a77
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 50f3e5d8500e57dd336919a5da58af094db97169
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349590"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887415"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>How to: Specify where Visual Studio copies the files (如何：指定 Visual Studio 複製檔案的位置)
 當您使用 ClickOnce 發行應用程式時，`Publish Location`屬性會指定放置應用程式檔案和資訊清單的位置。 這可以是檔案路徑或 FTP 伺服器的路徑。
@@ -42,12 +42,12 @@ ms.locfileid: "94349590"
 
 3. 在 [發佈位置] 欄位中，使用下列其中一種格式輸入發佈位置：
 
-   - 若要發佈至檔案共用或磁片路徑，請使用 UNC 路徑 ( *\\ \Server\ApplicationName* ) 或 ( *C:\Deploy\ApplicationName* ) 的檔案路徑來輸入路徑。
+   - 若要發佈至檔案共用或磁片路徑，請使用 UNC 路徑 (*\\ \Server\ApplicationName*) 或 (*C:\Deploy\ApplicationName*) 的檔案路徑來輸入路徑。
 
    - 若要發佈至 FTP 伺服器，請使用<em>ftp://ftp.microsoft.com/ \<ApplicationName> </em>格式輸入路徑。
 
-     請注意，文字必須出現在 [ **發行位置** ] 方塊中，才能讓 [流覽 ( **...** ) 按鈕運作。
+     請注意，文字必須出現在 [ **發行位置** ] 方塊中，才能讓 [流覽 (**...**) 按鈕運作。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)
 - [如何：使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

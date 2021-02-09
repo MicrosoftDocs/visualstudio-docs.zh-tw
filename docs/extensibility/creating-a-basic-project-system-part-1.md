@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c202aa9e76f568db9394625485282345ea3222c1
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887363"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>建立基本的專案系統，第1部分
 在 Visual Studio 中，專案是開發人員用來組織原始程式碼檔和其他資產的容器。 專案在 **方案總管** 中會顯示為解決方案的子系。 專案可讓您組織、建立、偵測和部署原始程式碼，以及建立 Web 服務、資料庫和其他資源的參考。
@@ -57,13 +57,13 @@ ms.locfileid: "94974531"
 
 - 執行基本範本參數替代。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
  您也必須下載 [適用于專案的 Managed 封裝架構](https://github.com/tunnelvisionlabs/MPFProj10)原始程式碼。 將檔案解壓縮到您要建立的解決方案可存取的位置。
 
 ## <a name="create-a-basic-project-type"></a>建立基本的專案類型
- 建立名為 **SimpleProject** 的 c # VSIX 專案。  (**檔案**  >  **新增**  >  **專案**，然後 **Visual c #** 擴充性  >  **Extensibility**  >  **VSIX 專案**) 。 在 **方案總管** 上新增 Visual Studio 套件專案專案範本 (，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]，然後 **Extensibility** 移至 [擴充性]  >  **Visual Studio [封裝**]) 。 將檔案命名為 *SimpleProjectPackage*。
+ 建立名為 **SimpleProject** 的 c # VSIX 專案。  (**檔案**  >  **新增**  >  **專案**，然後 **Visual c #** 擴充性  >    >  **VSIX 專案**) 。 在 **方案總管** 上新增 Visual Studio 套件專案專案範本 (，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]，然後移至 [擴充性]  >  **Visual Studio [封裝**]) 。 將檔案命名為 *SimpleProjectPackage*。
 
 ## <a name="creating-a-basic-project-template"></a>建立基本專案範本
  現在，您可以修改此基本 VSPackage 來執行 *myproj.csproj* 專案類型。 若要建立以 *myproj.csproj* 專案類型為基礎的專案，Visual Studio 必須知道要加入至新專案的檔案、資源和參考。 若要提供這項資訊，請將專案檔放在專案範本資料夾中。 當使用者使用 *myproj.csproj* 專案建立專案時，會將檔案複製到新專案。

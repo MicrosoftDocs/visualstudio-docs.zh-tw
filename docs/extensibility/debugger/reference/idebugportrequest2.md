@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 163718fda344ba5f3f44ef630b4eba3e5613dc61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44e0bc66d9f385a41f0f43af7217738e40e69126
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724794"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887116"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 此介面描述埠。 此描述可用來將埠新增至埠供應商。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortRequest2 : IUnknown
@@ -44,7 +44,7 @@ IDebugPortRequest2 : IUnknown
 ## <a name="remarks"></a>備註
  Debug engine 通常不會與埠供應商互動，而且不會使用此介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

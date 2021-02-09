@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f00de870986cf020e91ff992dabb2681469ae5b
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 226b86d621de2faee5a71d9fdb3fea39f20b984e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888117"
 ---
 # <a name="compare-properties-and-items"></a>比較屬性和項目
 
@@ -29,7 +29,7 @@ MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以
 
 ## <a name="scalars-and-vectors"></a>純量和向量
 
-由於 MSBuild 屬性是只有一個字串值的名稱/值組，因此，通常會以「純量」  來描述它們。 因為 MSBuild 項目類型是項目清單，所以，通常會以「向量」  來描述它們。 不過，在實務上，屬性可以代表多個值，而項目類型可以有零個或一個項目。
+由於 MSBuild 屬性是只有一個字串值的名稱/值組，因此，通常會以「純量」來描述它們。 因為 MSBuild 項目類型是項目清單，所以，通常會以「向量」來描述它們。 不過，在實務上，屬性可以代表多個值，而項目類型可以有零個或一個項目。
 
 ### <a name="target-dependency-injection"></a>目標相依性插入
 
@@ -45,7 +45,7 @@ MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以
 </PropertyGroup>
 ```
 
-通常會使用 `BuildDependsOn` 屬性 (Property) 做為目標 `DependsOnTargets` 屬性 (Attribute) 的引數，以便有效地將它轉換至項目清單。 您可以覆寫這個屬性，以加入目標，或是變更目標執行順序。 例如，套用至物件的
+通常會使用 `BuildDependsOn` 屬性 (Property) 做為目標 `DependsOnTargets` 屬性 (Attribute) 的引數，以便有效地將它轉換至項目清單。 您可以覆寫這個屬性，以加入目標，或是變更目標執行順序。 例如，
 
 ```xml
 <PropertyGroup>
@@ -187,6 +187,6 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [進階概念](../msbuild/msbuild-advanced-concepts.md)

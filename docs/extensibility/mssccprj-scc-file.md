@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 253482f840350ae1d3cf7ee83e03a88ace15a6cd
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f55e99d9df10ef2f96761a9436597d227cf0cd93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886687"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC.SCC 檔案
 當您使用 IDE 在原始檔控制下放置 Visual Studio 的方案或專案時，IDE 會收到兩個重要的資訊片段。 此資訊來自原始檔控制外掛程式的字串格式。 這些字串 "AuxPath" 和 "ProjName" 對 IDE 而言是不透明的，但外掛程式會使用它們來尋找版本控制中的方案或專案。 IDE 通常會藉由呼叫 [SccGetProjPath](../extensibility/sccgetprojpath-function.md)來取得這些字串，然後將它們儲存在方案或專案檔中，以供未來對 [SccOpenProject](../extensibility/sccopenproject-function.md)的呼叫使用。 內嵌在方案和專案檔中時，當使用者分支、派生或複製版本控制中的方案和專案檔時，不會自動更新 "AuxPath" 和 "ProjName" 字串。 為了確保方案和專案檔指向版本控制中的正確位置，使用者必須手動更新字串。 因為這些字串是不透明的，不一定會清楚應如何更新。
@@ -74,6 +74,6 @@ ms.locfileid: "97863477"
 
  此區段沒有結尾分隔符號。 檔案的名稱以及出現在檔案中的所有常值，都是在 scc 標頭檔中定義。 如需詳細資訊，請參閱 [用來尋找原始檔控制外掛程式之索引鍵的字串](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
 - [用來作為用來尋找原始檔控制外掛程式之索引鍵的字串](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

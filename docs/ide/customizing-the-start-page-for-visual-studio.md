@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Visual Studio Start Page
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3928ab1cad67cac26865229cbe6d317083a0a4f1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 855218fb6ff2e90cb06e0f48695b64c75e7036b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598103"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886583"
 ---
 # <a name="customize-startup"></a>自訂啟動
 

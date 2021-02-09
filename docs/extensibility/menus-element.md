@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: abc5621784579c295393d77c792013dd0c737871
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: e45fa38b5c5709de34b70dc311421acf76ca92d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886778"
 ---
 # <a name="menus-element"></a>Menu 元素
 定義 VSPackage 所實行的所有功能表和工具列。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Menus>

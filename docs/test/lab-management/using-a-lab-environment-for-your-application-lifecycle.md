@@ -7,16 +7,16 @@ ms.topic: how-to
 helpviewer_keywords:
 - lab environment, test lab
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: cb25561f70882336a1143918d3cf78849b394065
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: a16b8df2539272f96f0211fdf08e32fe4e4eaac8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887818"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用實驗室環境進行開發
 
@@ -30,7 +30,7 @@ ms.locfileid: "96328921"
 
 以下是常見的實驗室環境拓撲的範例：
 
-| 拓撲 | 說明 |
+| 拓撲 | Description |
 |---|---|
 |![只有伺服器的拓撲](../media/topology_backend.png)| 此實驗室環境具有「伺服器拓撲」，這種拓撲經常用來在伺服器應用程式上執行手動測試，且允許測試者使用他們自己的用戶端電腦來確認環境中的 Bug。 在後端拓撲中，您的實驗室環境只包含伺服器。 當您使用這種拓撲類型時，通常會使用不屬於環境的用戶端電腦連接到實驗室環境中的伺服器。|
 |![雲端實驗室環境](../media/topology_cloud.png)| 此實驗室環境提供與 _伺服器拓樸_ 類似的功能和特性，但移除在本機環境中執行實體或虛擬機器的需求，這樣可減少安裝時間、簡化維護工作，並將成本降至最低。 在 Microsoft Azure 這樣的雲端環境中，設定多個網站和虛擬機器，加上自訂的網路，快速且容易。|

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd2570f94b0f5577c7c09a696906338245f77a4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 709a5a64164ed6c80c29a8e554d2b07050e18339
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886518"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 
@@ -40,13 +40,13 @@ ms.locfileid: "94351384"
 
 您可以簽署 .NET 組件和應用程式資訊清單：
 
-- 可執行檔 ( *.exe* )
+- 可執行檔 (*.exe*)
 
-- 應用程式資訊清單 ( *.exe.manifest* )
+- 應用程式資訊清單 (*.exe.manifest*)
 
-- 部署資訊清單 ( *.application* )
+- 部署資訊清單 (*.application*)
 
-- 共用的元件組件 ( *.dll* )
+- 共用的元件組件 (*.dll*)
 
 簽署下列資產類型：
 
@@ -73,7 +73,7 @@ ms.locfileid: "94351384"
 
 如需簽署資訊清單的資訊，請參閱[如何：簽署應用程式和部署資訊清單](../ide/how-to-sign-application-and-deployment-manifests.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [強式名稱組件](/dotnet/framework/app-domains/strong-named-assemblies)
 - [強式名稱組件 (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

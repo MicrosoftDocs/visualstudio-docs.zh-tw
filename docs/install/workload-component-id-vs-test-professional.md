@@ -4,7 +4,7 @@ titleSuffix: ''
 description: 使用 Visual Studio 工作負載和元件識別碼為通用測試人員提供整合式測試工具
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
-ms.openlocfilehash: 61a52d98f695a6420dd6081117b8c6c4e83ae0a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee8d3d91f5079e23d5a0342c58b2db5a70e45f64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81276210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886466"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Visual Studio Test Professional 元件目錄
 
@@ -30,7 +30,7 @@ ms.locfileid: "81276210"
 此外，也請注意此頁面的下列相關注意事項：
 
 * 每個工作負載都有自己的小節 (後面接著工作負載識別碼)，以及一張工作負載可用元件的表格。
-* 安裝工作負載時，預設會安裝「必要」**** 元件。
+* 安裝工作負載時，預設會安裝「必要」元件。
 * 如果您選擇，也可以安裝 **建議** 的和 **選用** 的元件。
 * 我們還新增了一個章節，當中列出不屬於任何工作負載的額外元件。
 

@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 651d3937e51be4ec1deeb748f2e4f32cfd08ee81
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: 44cc68a900475c77856053de41ef8b7c5c810d6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887675"
 ---
 # <a name="load-test-run-settings-properties"></a>負載測試回合設定屬性
 
@@ -31,7 +31,7 @@ ms.locfileid: "96329246"
 
 |屬性|定義|
 |-|----------------|
-|**描述**|回合設定的描述。|
+|**說明**|回合設定的描述。|
 |**每一類型的錯誤數目上限**|要為負載測試儲存的每一類型的錯誤數目上限。<br /><br /> 您可視需求增加此數目，但是這樣做將會增加負載測試結果的大小和處理時間。|
 |**回報的要求 URL 最大數目**|此負載測試中要回報結果之唯一 Web 效能測試要求 URL 的最大數目。<br /><br /> 您可視需求增加此數目，但是這樣做將會增加負載測試結果的大小和處理時間。|
 |**臨界值違規數目上限**|要為這個負載測試儲存的臨界值違規數目上限。<br /><br /> 您可視需求增加此數目，但是這樣做將會增加負載測試結果的大小和處理時間。|
@@ -53,7 +53,7 @@ ms.locfileid: "96329246"
 
 |屬性|定義|
 |-|----------------|
-|**儲存類型**|儲存負載測試取得之效能計數器的方式。 選項如下：<br /><br /> -   **資料庫** - 需要具有 [負載測試結果存放區] 的 SQL 資料庫。<br />-   **無**。|
+|**儲存體類型**|儲存負載測試取得之效能計數器的方式。 選項如下：<br /><br /> -   **資料庫** - 需要具有 [負載測試結果存放區] 的 SQL 資料庫。<br />-   **無**。|
 |**計時詳細資料儲存區**|用來判斷何種詳細資料會儲存至 [負載測試結果存放區] 中。 可用的值有三種：<br /><br /> -   **所有個別細節** - 在負載測試期間，為每項執行或發佈的測試、異動和頁面，將個別計時值收集和儲存在 [負載測試結果存放區] 中。 如果要在 [負載測試分析器] 中使用 [虛擬使用者活動圖]，這個值是必要的。<br />     如需詳細資訊，請參閱[在詳細資料檢視中分析虛擬使用者活動](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。<br />-   **無** - 不收集任何個別計時值。 這是 Visual Studio 2013 Update 4 和更新版本的預設值。<br />-   **僅限統計資料** - 在負載測試期間，並不會為每項執行或發佈的測試、異動和頁面，將個別計時值收集和儲存在 [負載測試結果存放區] 中，而是只在其中儲存統計資料。<br /><br /> 如需詳細資訊，請參閱 [如何：指定計時詳細資料儲存區屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。|
 
 ## <a name="sql-tracing-properties"></a>SQL 追蹤屬性
@@ -63,7 +63,7 @@ ms.locfileid: "96329246"
 |**追蹤的 SQL 作業的最小持續期間**|SQL 追蹤所要擷取之 SQL 作業的最小持續期間 (以毫秒為單位)。 例如，如果您嘗試在負載的情況下尋找慢速的 SQL 作業，這可讓您忽略快速完成的作業。|
 |**SQL 追蹤連接字串**|用來存取要追蹤之資料庫的連接字串 (Connection String)。|
 |**SQL 追蹤目錄**|SQL 追蹤檔案在追蹤結束時所放置的位置。 SQL Server 必須要具有這個目錄的寫入權限，而控制器則必須具有讀取權限。|
-|**SQL 追蹤已啟用**|此項會啟用 SQL 作業的追蹤， 預設值為 `False`。|
+|**SQL 追蹤已啟用**|此項會啟用 SQL 作業的追蹤， 預設值是 `False`。|
 
 ## <a name="test-iterations-properties"></a>測試反覆項目屬性
 

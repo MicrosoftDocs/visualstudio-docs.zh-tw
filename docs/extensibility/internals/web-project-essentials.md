@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf16582cdc9bba6529d237d74d56ebded299fb9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: b071631018ef398be481ccf514b33296e55fc2e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487916"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886869"
 ---
 # <a name="web-project-essentials"></a>Web 專案的基本資訊
 Web 專案會建立 Web 應用程式。 您可以使用 Web 專案建立具有智慧型網頁的 Web 應用程式。 智慧型網頁具有可隨選轉譯網頁的伺服器端程式碼。

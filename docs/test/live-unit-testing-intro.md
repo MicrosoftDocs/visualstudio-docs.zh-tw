@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Live Unit Testing
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8716e980581ffe1103adddbc3c776def1166ff94
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: 6c3e8220857a454dc7ab5c7cb6308650075f9577
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887740"
 ---
 # <a name="live-unit-testing-overview"></a>Live Unit Testing 總覽
 

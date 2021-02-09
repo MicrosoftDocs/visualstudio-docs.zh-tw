@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: fca3f603-9432-457b-9ddd-8b0ec17da046
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc250f485e5507a9b50bc5a8e1c5b4c3bea37ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d8c349ab867fda76ffbade0c92aa31489321061
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888182"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 此介面是由偵錯工具引擎傳送 (當執行緒已執行完成時，將) 還原為會話 debug manager (SDM) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugThreadDestroyEvent2 : IUnknown
@@ -44,7 +44,7 @@ IDebugThreadDestroyEvent2 : IUnknown
 ## <a name="remarks"></a>備註
  Visual Studio 使用此事件來更新 [ **執行緒** ] 視窗。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

@@ -8,19 +8,19 @@ ms.prod: visual-studio-windows
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2019
-ms.openlocfilehash: 3d78cf00230398b3ed059e68902af890144fde4a
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: b7197f9e21bb136f8444170dc8d62341b3b0c07d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886661"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教學課程：從存放庫開啟專案
 

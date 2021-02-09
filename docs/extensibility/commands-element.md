@@ -12,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59afdda5a9af3a779b65063c3c764ef4f284a265
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 90670188e3ce1aa621e53c69bad6f795ff30fd8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887428"
 ---
 # <a name="commands-element"></a>Commands 項目
 代表 VSPackage 工具列上的命令集合。 集合最多可有五個子區段，如下所示：功能表、群組、按鈕、combos 和點陣圖。
 
  例如，每個子項目 \<Menu> 都是由 GUID 和數位識別碼組的唯一命令識別碼所識別。 GUID 會識別「命令集」，用來將邏輯上相關的命令分組。 VSPackage 應該定義自己的命令集，以避免與其他 Vspackage 所定義的命令識別碼發生衝突。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Commands package="GuidMyPackage" >
@@ -44,13 +44,13 @@ ms.locfileid: "94974513"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |套件|GUID，可識別提供命令的 VSPackage。<br /><br /> 例如，package = "guidVsPackage1Pkg"。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[Menu 元素](../extensibility/menus-element.md)|定義 VSPackage 所實行的所有功能表。|
 |[Groups 元素](../extensibility/groups-element.md)|包含在 VSPackage 中定義命令群組的專案。|
@@ -60,7 +60,7 @@ ms.locfileid: "94974513"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表 VSPackage 提供給 IDE 之命令的所有元素。 可能的元素是功能表項目、功能表、工具列和下拉式方塊。|
 

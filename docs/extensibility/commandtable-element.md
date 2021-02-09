@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24e6792bb6199606f1d993492527d39c3f0f7f8b
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 79441880091088cf1d953c8925273e801dc0860d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887350"
 ---
 # <a name="commandtable-element"></a>CommandTable 元素
 CommandTable 是 *.vsct* 檔的根項目。 此檔案會定義 VSPackage 提供給 IDE 之命令的實際版面配置和類型。 命令可能包含功能表項目、功能表、工具列和下拉式方塊。 如需詳細資訊，請參閱 [Visual Studio 命令表格 (. .vsct) ](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
@@ -53,7 +53,7 @@ CommandTable 是 *.vsct* 檔的根項目。 此檔案會定義 VSPackage 提供�
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[Extern 元素](../extensibility/extern-element.md)|選擇性。 包含編譯器的預處理器指示詞。|
 |[Include 元素](../extensibility/include-element.md)|選擇性。 包含要包含在編譯中之任何檔案的路徑。|
@@ -67,9 +67,9 @@ CommandTable 是 *.vsct* 檔的根項目。 此檔案會定義 VSPackage 提供�
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|None||
+|無||
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 命令表格 (. .vsct) 檔](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
