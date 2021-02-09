@@ -5,17 +5,17 @@ ms.date: 02/25/2019
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6868b4c581674c8015d30bf81f64f2ab24ea2ee0
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 4c8a3727faa01b69962dd3dc456ac7b704f62882
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902443"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入門：從 Cookiecutter 範本建立專案
 
@@ -25,23 +25,23 @@ ms.locfileid: "90100731"
 
 1. 啟動 Visual Studio。
 
-1. **File**  >  **New**  >  **從 Cookiecutter**選取 [檔案新增]。 此命令會在 Visual Studio 中開啟視窗，而您可以在其中瀏覽範本。
+1.   >    >  **從 Cookiecutter** 選取 [檔案新增]。 此命令會在 Visual Studio 中開啟視窗，而您可以在其中瀏覽範本。
 
     ![從 Cookiecutter 範本新增專案](media/projects-from-cookiecutter1.png)
 
 1. 選取 [ **Microsoft/python-sklearn-分類器-Cookiecutter** ] 範本，然後選取 **[下一步]**。 (當您第一次使用特定範本時，Visual Studio 會安裝所需 Python 套件，程序可能需要花幾分鐘時間)。
 
-1. 在下一個步驟中，於 [建立位置]**** 欄位中設定新專案的位置，然後選取 [建立並開啟專案]****。
+1. 在下一個步驟中，於 [建立位置] 欄位中設定新專案的位置，然後選取 [建立並開啟專案]。
 
     ![使用 Cookiecutter 的第二個步驟，設定專案屬性](media/projects-from-cookiecutter2.png)
 
-1. 當程式完成時，您會看到「訊息 **已成功使用範本建立**檔案 ...」。專案會自動在方案總管中開啟。
+1. 當程式完成時，您會看到「訊息 **已成功使用範本建立** 檔案 ...」。專案會自動在方案總管中開啟。
 
-1. 按下**Ctrl** + **F5**或選取 [ **Debug**  >  **啟動但不進行調試**程式] 以執行程式。
+1. 按下 **Ctrl** + **F5** 或選取 [ **Debug**  >  **啟動但不進行調試** 程式] 以執行程式。
 
     ![python-sklearn-classifier-cookiecutter 範本專案的輸出](media/projects-from-cookiecutter4.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [教學課程：在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1965ff1b4cfa89e4584c194942dec7ae486473ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3eb4710e3073ee49aa9660aa322b4638c4c0d24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718589"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901612"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 這個介面代表在程式中執行的執行緒。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugThread2 : IUnknown
@@ -60,7 +60,7 @@ IDebugThread2 : IUnknown
 
  發生中斷點或例外狀況時，會呼叫 [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)來傳送事件。 這個方法的其中一個引數是 `IDebugThread2` 代表目前線程的介面。 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 是用來取得目前堆疊框架的 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

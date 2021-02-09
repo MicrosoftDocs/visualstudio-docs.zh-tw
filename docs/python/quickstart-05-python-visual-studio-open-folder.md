@@ -5,18 +5,18 @@ ms.date: 03/12/2019
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: d11ffcb2c43d2c519d75d43afad6383e0bfaa44a
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: bc47f2a91b0ce42c319651cad22dbe05fe32623f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902413"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>快速入門：開啟並執行資料夾中的 Python 程式碼
 
@@ -104,12 +104,12 @@ ms.locfileid: "97761273"
 
 1. 儲存檔案並再次啟動程式，它現在會在指定的資料夾中執行。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [教學課程：在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [快速入門：從現有程式碼建立 Python 專案](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 - [快速入門：從存放庫建立 Python 專案](quickstart-03-python-in-visual-studio-project-from-repository.md)

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1c87fd105d2dbdc18bd4689c4680f2825c9e3be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9717c16ba40cfb0b0d637f86da134a3864e2d05e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903249"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 取得自訂屬性的名稱。
@@ -56,7 +56,7 @@ int GetCustomAttributeByName(
 如果成功，則傳回 `S_OK`。 如果自訂屬性不存在，則會傳回 `S_FALSE` 。 否則會傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)介面的**CDebugClassFieldSymbol**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)介面的 **CDebugClassFieldSymbol** 物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(

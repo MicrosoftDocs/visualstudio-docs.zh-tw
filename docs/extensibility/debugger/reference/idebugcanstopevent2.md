@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0a3710756f02d7c622be94bab6c3056fb051827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87306e1373d746479ce59c96b6625fa41ef119fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903239"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 這個介面是用來要求會話 debug manager (SDM) 是否要在目前的程式碼位置停止。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCanStopEvent2 : IUknown
@@ -49,7 +49,7 @@ IDebugCanStopEvent2 : IUknown
 ## <a name="remarks"></a>備註
  如果使用者逐步執行至函式，並在該處找不到任何偵測資訊，或有偵測資訊存在，而 DE 不知道是否可以顯示該位置的原始程式碼，則會傳回此介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

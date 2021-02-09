@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], opening Visio documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ec46f4fd7be136d16e15e9fa366b7a4cb921b62e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cb24851562beec0b40a8e66a38db202745f4771e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903666"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>如何：以程式設計方式開啟 Visio 檔
   開啟現有 Microsoft Office Visio 檔的方法有兩種：開啟和 OpenEx。 OpenEx 方法與 Open 方法相同，不同之處在于它會提供引數，讓呼叫端指定檔的開啟方式。

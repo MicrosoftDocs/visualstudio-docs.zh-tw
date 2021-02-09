@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35a1202f4990f4f6370ad031c896ba85ebb6d816
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c806687b9948be693ca25868aaf7211d9ccf6b97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737892"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902018"
 ---
 # <a name="bp_request_info"></a>BP_REQUEST_INFO
 包含執行中斷點所需的資訊。
@@ -28,7 +28,7 @@ ms.locfileid: "80737892"
 ## <a name="syntax"></a>語法
 
 ```cpp
-typedef struct _BP_REQUEST_INFO {
+typedef struct _BP_REQUEST_INFO {
     BPREQI_FIELDS   dwFields;
     GUID            guidLanguage;
     BP_LOCATION     bpLocation;
@@ -39,11 +39,11 @@ typedef struct _BP_REQUEST_INFO {
     BP_CONDITION    bpCondition;
     BP_PASSCOUNT    bpPassCount;
     BP_FLAGS        dwFlags;
-} BP_REQUEST_INFO;
+} BP_REQUEST_INFO;
 ```
 
 ```csharp
-public struct BP_REQUEST_INFO {
+public struct BP_REQUEST_INFO {
     public uint           dwFields;
     public Guid           guidLanguage;
     public BP_LOCATION    bpLocation;
@@ -93,7 +93,7 @@ public struct BP_REQUEST_INFO {
 
 如果您需要取得 debug engine 廠商 GUID、中斷點條件約束或追蹤點，請參閱 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 結構。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

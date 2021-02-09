@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10430c6eba57c97dd46a706d0ec2f532cd08d4f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43d24d38fcb9ba07d4cc8c58d7b544256171b049
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902374"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜尋路徑
 
@@ -40,11 +40,11 @@ ms.locfileid: "88801161"
 
 此命令會顯示瀏覽器，然後您會在其中選取要包含的資料夾。
 
-如果您的 `PYTHONPATH` 環境變數已經包含您想要的資料夾，請使用 [將 PYTHONPATH 新增至搜尋路徑]**** 作為方便的捷徑。
+如果您的 `PYTHONPATH` 環境變數已經包含您想要的資料夾，請使用 [將 PYTHONPATH 新增至搜尋路徑] 作為方便的捷徑。
 
 一旦資料夾新增至搜尋路徑，Visual Studio 會將這些路徑用於與專案建立關聯的任何環境。 (如果是 Python 3 環境，且您嘗試將搜尋路徑新增至 Python 2.7 模組，則可能會出現錯誤)。
 
-您也可以新增副檔名為 *.zip* 或 *.egg* 的檔案作為搜尋路徑，方法是選取 [ 新增 ZIP 封存至搜尋路徑]**** 命令。 與使用資料夾時相同，系統會掃描這些檔案的內容並提供給 IntelliSense 使用。
+您也可以新增副檔名為 *.zip* 或 *.egg* 的檔案作為搜尋路徑，方法是選取 [ 新增 ZIP 封存至搜尋路徑] 命令。 與使用資料夾時相同，系統會掃描這些檔案的內容並提供給 IntelliSense 使用。
 
 ## <a name="see-also"></a>另請參閱
 

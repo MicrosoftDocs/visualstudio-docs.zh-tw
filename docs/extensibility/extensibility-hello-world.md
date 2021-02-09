@@ -7,15 +7,15 @@ ms.topic: tutorial
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ba4d6cbca8d55cdaceb04a1a773fde376a8670a
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 7e943da6745832cbe59cfe94013650a503265636
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995716"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903290"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>教學課程-建立您的第一個延伸模組： Hello World
 
@@ -52,7 +52,7 @@ ms.locfileid: "96995716"
 
 ![新增專案](media/hello-world-new-project.png)
 
-您現在應該會看到消費者入門頁面和一些範例資源。
+您現在應該會看到開始使用頁面和一些範例資源。
 
 如果您需要離開本教學課程並回到此教學課程，您可以在 [ **開始] 頁面** 的 [ **最近** ] 區段中找到新的 HelloWorld 專案。
 
@@ -164,7 +164,7 @@ ms.locfileid: "96995716"
 
 您應該會看到新自訂命令的輸出，在此案例中為您提供 **Hello World** 的畫面中央對話方塊。 回應。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 現在您已瞭解使用 Visual Studio 擴充性的基本概念，以下是您可以深入瞭解的地方：
 

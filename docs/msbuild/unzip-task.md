@@ -21,15 +21,15 @@ ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d701f70950bb5a5cb2338007db129ca15d194b77
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 213d37108e37b9002b2241e6c0806d6d7db7caf6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046905"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902487"
 ---
 # <a name="unzip-task"></a>Unzip 工作
 
@@ -42,7 +42,7 @@ ms.locfileid: "93046905"
 
  下表說明 `Unzip` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`DestinationFolder`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數<br /><br /> 指定要將檔案解壓縮檔到的目的地資料夾。|
 |`OverwriteReadOnlyFiles`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，則會覆寫唯讀檔案。 預設值為 `false`。|
@@ -71,7 +71,7 @@ ms.locfileid: "93046905"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

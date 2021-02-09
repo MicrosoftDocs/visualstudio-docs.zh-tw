@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 5f33f01d0c2b8465bbb417b56576118349234970
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8b6e022d14f663be24c92a7a8cce9a06959747b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902147"
 ---
 # <a name="bp_location_resolution"></a>BP_LOCATION_RESOLUTION
 描述中斷點在特定位置的解決方式。
@@ -39,7 +39,7 @@ typedef struct _BP_LOCATION_RESOLUTION {
 ## <a name="remarks"></a>備註
 此結構是 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 結構的成員，做為聯集的一部分。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

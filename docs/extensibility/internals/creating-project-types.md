@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4038a122c6d2ec5f6ed29df6e529b2bff2e2bb71
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 26e616ac9862f6a077115c23bef426a94ab3ecbf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903035"
 ---
 # <a name="create-project-types"></a>建立專案類型
 您可以藉 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 由建立新的專案類型來擴充。 若要建立新的專案類型，您必須瞭解數個概念並完成一些步驟。 下列主題提供如何建立專案類型的總覽。

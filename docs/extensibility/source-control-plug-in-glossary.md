@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5b878efd9d937f532526ed3b49ad41228749b47
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 6aaa8a1d88b946235863776c11fd805fecb0fd89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715401"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902873"
 ---
 # <a name="source-control-plug-in-glossary"></a>原始檔控制外掛程式字彙表
 下列有用的詞彙和定義適用于原始檔控制外掛程式 SDK 檔。
@@ -52,5 +52,5 @@ ms.locfileid: "97715401"
 
  修訂檔案或一組檔案的歷程記錄中已認可的變更。 修訂是持續變更專案中的一個快照集。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)

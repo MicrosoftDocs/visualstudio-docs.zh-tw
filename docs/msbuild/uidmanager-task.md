@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 852b910de742676e1fe7dd0c85129640eb37a9ae
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 6287abee811d406ef7aafa5ce3cc3dc62624b0d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902613"
 ---
 # <a name="uidmanager-task"></a>UidManager 工作
 
@@ -34,11 +34,11 @@ ms.locfileid: "93046926"
 
 ## <a name="task-parameters"></a>工作參數
 
-| 參數 | 描述 |
+| 參數 | Description |
 |-------------------------| - |
 | `IntermediateDirectory` | 選擇性的 **字串** 參數。<br /><br /> 指定用來備份 **MarkupFiles** 參數所指定之來源 XAML 檔案的目錄。 |
 | `MarkupFiles` | 必要的 **ITaskItem []** 參數。<br /><br /> 指定要針對 UID 檢查、更新或移除所包含的來源 XAML 檔案。 |
-| `Task` | 必要的 **String** 參數。<br /><br /> 指定您想要執行的 UID 管理工作。 有效的選項為 **Check** 、 **Update** 或 **Remove** 。 |
+| `Task` | 必要的 **String** 參數。<br /><br /> 指定您想要執行的 UID 管理工作。 有效的選項為 **Check**、**Update** 或 **Remove**。 |
 
 ## <a name="example"></a>範例
 
@@ -58,7 +58,7 @@ ms.locfileid: "93046926"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
 - [工作參考](../msbuild/wpf-msbuild-task-reference.md)

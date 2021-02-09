@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6489c819efe0fd29cd2d120c08414cf0532ad6f
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 80c12780b2177c6715af9dc047a5652633993127
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328388"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902908"
 ---
 # <a name="delayed-document-loading"></a>延遲的檔載入
 

@@ -22,15 +22,15 @@ no-loc:
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f73f2f56a4e60d0030d897d64662ad438027d41
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 7fb7b7625e8e08e291f4f27606d03f9066828e0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903486"
 ---
 # <a name="select-code-type-dialog-box"></a>選取程式碼類型對話方塊
 
@@ -61,6 +61,6 @@ ms.locfileid: "98205511"
 
 在大部分的情況下，不支援在相同的偵錯工具會話中附加多個偵錯工具。 您可以使用 Visual Studio 的第二個實例來進行這項作業。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [附加到正在執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ac103ec5-771c-4667-92de-b5abb53bbb52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fbfd16025d338b54bec8e2e4276de62c8d00477e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f888c5cbee5747562af070d310a9ca5d8eea913
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737854"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901968"
 ---
 # <a name="bp_resolution_code"></a>BP_RESOLUTION_CODE
 描述程式碼中斷點的位置。
@@ -46,7 +46,7 @@ public struct BP_RESOLUTION_CODE {
 ## <a name="remarks"></a>備註
 此結構是[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構的成員，它會接著[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法所傳回之[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構的成員。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

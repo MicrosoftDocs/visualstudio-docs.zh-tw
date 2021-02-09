@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50e6bdc0dba8f6bcbdd55c45132dff02735786d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 735acca4d4b2e2881c49a236dadae44aaa3cc1fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902141"
 ---
 # <a name="bp_location_type"></a>BP_LOCATION_TYPE
 指定中斷點要求之中斷點的位置類型。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_LOCATION_TYPE {
@@ -121,7 +121,7 @@ public enum enum_BP_LOCATION_TYPE {
 
 `BPT_CODE` 和 `BPT_DATA` 是 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 列舉的成員。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

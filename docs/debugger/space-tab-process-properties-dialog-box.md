@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: c4de1866-7447-48f7-aa88-28ad92c0b930
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe168f34baf65b00eab59e94afb30e07dfe89b50
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: cb1a33b1456e44b745b3b8992c0233634368952b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149075"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903506"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、空間索引標籤
 使用 [ **空間** ] 索引標籤來檢查進程的位址空間。 若要顯示 [ [處理常式屬性] 對話方塊](../debugger/process-properties-dialog-box.md)，請將焦點移至 [ [進程] 視圖](../debugger/processes-view.md) 視窗。 選取樹狀結構中的任何進程節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。
 
  [ **空間** ] 索引標籤上提供下列設定：
 
-|進入|描述|
+|進入|Description|
 |-----------|-----------------|
 |[顯示標記空間]|使用此清單方塊來選取空間 (影像、對應、保留或未指派) 的分類。|
 |[Executable 位元組]|針對選取的類別，這是此進程使用的所有位址空間的總和。 可執行檔記憶體是可由程式執行，但可能無法讀取或寫入的記憶體。|

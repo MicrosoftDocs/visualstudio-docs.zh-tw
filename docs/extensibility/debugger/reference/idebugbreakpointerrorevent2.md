@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09cb93f0f16420e56104f371d9caab262873390f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 033c997f3bd1038c2103a6c0ef3ad9ddbd74c249
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901870"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 此介面會告知會話 debug manager (SDM) 暫止的中斷點無法系結至載入的程式，可能是因為出現警告或錯誤。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointErrorEvent2 : IUnknown
@@ -46,7 +46,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 
  例如，當與暫止中斷點相關聯的條件無法剖析或評估時，就會傳送警告，指出目前無法系結暫止中斷點。 如果尚未載入中斷點的程式碼，就可能發生這種情況。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1633c5e9aa6ff251fedce83a0243664cd9e0e0a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0148a92ee37a4f9885c9c12a5076ff966051d20b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902110"
 ---
 # <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
 指定與引發中斷點之中斷點傳遞計數相關聯的條件。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_PASSCOUNT_STYLE {
@@ -62,7 +62,7 @@ public enum enum_BP_PASSCOUNT_STYLE {
 ## <a name="remarks"></a>備註
 用於 `stylePassCount` [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) 結構的成員，而該成員接著是 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 和 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 結構的成員。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

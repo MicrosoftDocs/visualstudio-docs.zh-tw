@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2fd2ba746f10094a79f1b37e57ba4ca90ff117b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 1b4927e63bec93fbe7b6730e131a0893372aa70d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902974"
 ---
 # <a name="custom-parameters"></a>自訂參數
 自訂參數會在啟動嚮導之後控制 wizard 的操作。 相關的 *.vsz* 檔案會提供由整合式開發環境 (IDE) 的使用者定義參數陣列，並在啟動嚮導時，將其當作字串陣列傳遞給 wizard。 接著，嚮導會剖析字串陣列，並使用此資訊來控制 wizard 的實際操作。 透過這種方式，嚮導可以根據 *.vsz* 檔案的內容來自訂功能。

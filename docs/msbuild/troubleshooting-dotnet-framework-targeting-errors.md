@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 98c3ba64454ca25b62dc5dbe0964db64b010a7ec
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7b4e6f14eb5ba771ff83b0aa5fedc8ae261ca69d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902637"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>針對 .NET Framework 目標錯誤進行疑難排解
 
@@ -59,7 +59,7 @@ ms.locfileid: "93046983"
 > [!NOTE]
 > 在關閉並重新開啟專案後，您也應該重建它，以確保能夠正確解析所有參考。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：將 .NET Framework 的某個版本設定為目標](../ide/visual-studio-multi-targeting-overview.md)
 - [.NET Framework 用戶端設定檔](/dotnet/framework/deployment/client-profile)

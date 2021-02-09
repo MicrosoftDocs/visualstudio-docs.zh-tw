@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3a793e3d7233eb1b6d0aaaa74fbe16d52cf6f43
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 74e31cb8fddb00e8a6771a6ad3065bce57cc8bc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902245"
 ---
 # <a name="create-a-software-development-kit"></a>建立軟體發展工具組
 
@@ -52,11 +52,11 @@ Sdk 有兩種類型：
                         \[arch]
 ```
 
-| 節點 | 描述 |
+| 節點 | Description |
 |------------------------| - |
 | *參考* 資料夾 | 包含二進位檔，其中包含可針對進行編碼的 Api。 這些可能包含 Windows 中繼資料 (WinMD) 檔案或元件。 |
 | *DesignTime* 資料夾 | 包含只有在執行前/調試時間才需要的檔案。 這些可能包括 XML 檔、文件庫、標頭、工具箱設計階段二進位檔、MSBuild 成品等等。<br /><br /> XML 檔最好是放在 *\DesignTime* 資料夾中，但是參考的 xml 檔會在 Visual Studio 的參考檔案中繼續放置在一起。 例如，參考 <em>\References \\ [config] \\ [架構] \sample.dll</em> 的 XML 檔將會是 *\References \\ [config] [架構 \\ ] \sample.xml*，而該檔的當地語系化版本將會是 *\References \\ [config] [架構 \\ ] \\ [locale] \sample.xml*。 |
-| *Configuration* 設定資料夾 | 只能有三個資料夾： *Debug*、 *Retail* 和 *CommonConfiguration*。 SDK 作者可以將檔案放在 *CommonConfiguration* 下，如果應該取用相同的 sdk 檔案集，不論 sdk 取用者的目標是什麼設定都一樣。 |
+| 設定資料夾 | 只能有三個資料夾： *Debug*、 *Retail* 和 *CommonConfiguration*。 SDK 作者可以將檔案放在 *CommonConfiguration* 下，如果應該取用相同的 sdk 檔案集，不論 sdk 取用者的目標是什麼設定都一樣。 |
 | *架構* 資料夾 | 任何支援的 *架構* 資料夾都可以存在。 Visual Studio 支援下列架構： x86、x64、ARM 和中性。 注意： Win32 會對應至 x86，而 AnyCPU 則對應至中性。<br /><br /> MSBuild 只會在平臺 Sdk 的 *\CommonConfiguration\neutral* 下尋找。 |
 | *SDKManifest.xml* | 此檔案描述 Visual Studio 應如何使用 SDK。 查看 SDK 資訊清單中的 [!INCLUDE[win81](../debugger/includes/win81_md.md)] ：<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName：** 物件瀏覽器在瀏覽清單中顯示的值。<br /><br /> **PlatformIdentity：** 這個屬性的存在會告訴 Visual Studio 和 MSBuild SDK 是 platform SDK，而從該 sdk 新增的參考不應在本機複製。<br /><br /> **TargetFramework：** Visual Studio 會使用這個屬性，以確保只有以這個屬性的值中指定的相同架構為目標的專案，才可以使用 SDK。<br /><br /> **MinVSVersion：** Visual Studio 使用這個屬性來只取用適用于它的 Sdk。<br /><br /> **參考：** 必須針對包含控制項的參考，指定這個屬性。 如需有關如何指定參考是否包含控制項的詳細資訊，請參閱下面的。 |
 

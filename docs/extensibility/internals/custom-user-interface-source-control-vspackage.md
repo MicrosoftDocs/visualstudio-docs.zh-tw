@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1426b271ea8db4d486043c9fbe885a0f428b514
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 97c82254516c78a3aff9884e91e44adc45b95981
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902986"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自訂使用者介面 (原始檔控制 VSPackage) 
 VSPackage 會透過 Visual Studio 的命令資料表 (*. .vsct*) 檔來宣告其功能表項目和其預設狀態。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 會顯示預設狀態下的功能表項目，直到載入 VSPackage 為止。 接著 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 會呼叫方法來啟用或停用功能表項目。
@@ -51,7 +51,7 @@ VSPackage 會透過 Visual Studio 的命令資料表 (*. .vsct*) 檔來宣告其
 
   下表說明 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 如何隱藏不同的 UI 專案的特定詳細資料。
 
-| UI 專案 | 說明 |
+| UI 專案 | Description |
 | - | - |
 | 功能表與工具列 | 原始檔控制封裝必須在 *.vsct* 檔案的 [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)區段中，將初始功能表和工具列可見度狀態設定為原始檔控制封裝識別碼。 這可讓 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 適當地設定功能表項目的狀態，而不需要載入 VSPackage 和呼叫方法的執行 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 。 |
 | 工具視窗 | 當它變成非使用中時，原始檔控制 VSPackage 會隱藏它所擁有的任何工具視窗。 |

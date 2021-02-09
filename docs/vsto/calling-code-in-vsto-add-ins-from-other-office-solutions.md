@@ -16,15 +16,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: deb8fec9212c686bce670df6bab23ed56e51741f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903808"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>從其他 Office 方案呼叫 VSTO 增益集的程式碼
   您可以將 VSTO 增益集中的物件公開給其他方案 (包括其他 Microsoft Office 方案)。 如果您想要讓其他方案也能使用 VSTO 增益集提供的服務，這就很有用。 例如，如果您有 Microsoft Office Excel 的 VSTO 增益集，該增益集會在 Web 服務的財務資料上執行計算，則其他方案可以在執行時間呼叫 Excel VSTO 增益集來執行這些計算。
@@ -84,7 +84,7 @@ ms.locfileid: "96847841"
 ### <a name="expose-classes-to-vba"></a>將類別公開給 VBA
  當您執行上述步驟時，VBA 程式碼只能呼叫您在介面中宣告的方法。 VBA 程式碼無法呼叫您類別中的其他任何方法，包括您的類別從 <xref:System.Object>等基底類別取得的方法。
 
- 您也可以將屬性[IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)設定 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 為列舉的 AutoDispatch 或 AutoDual 值，藉以公開 IDispatch 介面 <xref:System.Runtime.InteropServices.ClassInterfaceType> 。 如果您公開介面，則不需要在個別介面中宣告方法。 不過，VBA 程式碼可以呼叫您類別中的任何公用和非靜態方法，包括從 <xref:System.Object>等基底類別取得的方法。 此外，使用早期繫結的跨處理序用戶端無法呼叫您的類別。
+ 您也可以將屬性[](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)設定 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 為列舉的 AutoDispatch 或 AutoDual 值，藉以公開 IDispatch 介面 <xref:System.Runtime.InteropServices.ClassInterfaceType> 。 如果您公開介面，則不需要在個別介面中宣告方法。 不過，VBA 程式碼可以呼叫您類別中的任何公用和非靜態方法，包括從 <xref:System.Object>等基底類別取得的方法。 此外，使用早期繫結的跨處理序用戶端無法呼叫您的類別。
 
 ### <a name="expose-classes-to-out-of-process-clients"></a><a name="outofproc"></a> 將類別公開給跨進程用戶端
  如果您要將 VSTO 增益集中的類別公開給跨處理序用戶端，您應該從 <xref:System.Runtime.InteropServices.StandardOleMarshalObject> 衍生類別，以確保跨處理序用戶端可以呼叫所公開的 VSTO 增益集物件。 否則，當嘗試在跨處理序用戶端中取得所公開的物件執行個體時，可能會意外失敗。

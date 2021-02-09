@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4759b3590fcde116e6f106ac326ff875e9566c43
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b01133e1f7daada2d9e2778c3966ccd66a81fd94
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903160"
 ---
 # <a name="create-options-pages"></a>建立選項頁面
-在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] managed 封裝架構中，從 [工具] 功能表底下新增 [選項] 頁面，衍生自的類別會 <xref:Microsoft.VisualStudio.Shell.DialogPage> 延伸 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE。 **Options** **Tools**
+在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] managed 封裝架構中，從 [工具] 功能表底下新增 [選項] 頁面，衍生自的類別會 <xref:Microsoft.VisualStudio.Shell.DialogPage> 延伸 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE。  
 
  執行指定 **工具選項** 頁面的物件與物件的特定 vspackage 相關聯 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 。
 
@@ -61,7 +61,7 @@ ms.locfileid: "96328635"
 ## <a name="example"></a>範例
  接下來是簡單的「Hello world」選項頁面執行。 將下列程式碼新增至 Visual Studio 套件範本所建立的預設專案，並選取 [ **功能表命令** ] 選項，可充分示範選項頁面功能。
 
-### <a name="description"></a>說明
+### <a name="description"></a>Description
  下列類別會定義最短的 "Hello world" 選項頁面。 開啟時，使用者可以 `HelloWorld` 在屬性方格中設定公用屬性。
 
 ### <a name="code"></a>程式碼

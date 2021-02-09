@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8f512704-12d0-46d2-959a-4f8dffe117b5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75fa12b1e9e70601626667dd3707f1e230f5de0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6d97c41023f0bc8ca80c36a5bfaf33735f48d07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732110"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901703"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 取得此反組解碼資料流程的指示大小。
@@ -28,13 +28,13 @@ ms.locfileid: "80732110"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetSize( 
+HRESULT GetSize( 
    UINT64* pnSize
 );
 ```
 
 ```csharp
-int GetSize( 
+int GetSize( 
    out ulong pnSize
 );
 ```

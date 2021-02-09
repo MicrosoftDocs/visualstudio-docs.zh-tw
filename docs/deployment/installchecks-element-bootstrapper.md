@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf02fda50678d9de4eb01dc28b4825844e33063e
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: 550baf52347c1128ef50509e7787861355c9428f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903399"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;啟動載入器 &gt;)  (InstallChecks 元素
 `InstallChecks`元素支援針對本機電腦啟動各種測試，以確保已安裝應用程式的所有適當必要條件。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <InstallChecks>
@@ -166,7 +166,7 @@ ms.locfileid: "98069496"
 ## <a name="predefined-properties"></a>預先定義的屬性
  下表列出 `BypassIf` 和 `FailIf` 元素：
 
-|屬性|注意|可能的值|
+|屬性|備註|可能的值|
 |--------------|-----------|---------------------|
 |`Version9X`|Windows 9X 作業系統的版本號碼。|4.10 = Windows 98|
 |`VersionNT`|以 Windows NT 為基礎之作業系統的版本號碼。|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|

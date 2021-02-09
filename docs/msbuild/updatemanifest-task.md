@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1291fd33-b89e-4e15-8fb1-69f9625cf2d2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fab3844b21e12edceb83da310e9069199578ef6
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b8bb090b66a52e9c2931e8bf4afc878d87a0ae36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046853"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902503"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest 工作
 
@@ -33,7 +33,7 @@ ms.locfileid: "93046853"
 
  下表說明 `UpdateManifest` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`ApplicationManifest`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定應用程式資訊清單。|
 |`ApplicationPath`|必要的 `String` 參數。<br /><br /> 指定應用程式資訊清單的路徑。|
@@ -44,7 +44,7 @@ ms.locfileid: "93046853"
 
  除了具有表格中所列的參數之外，此工作會繼承 <xref:Microsoft.Build.Utilities.Task> 類別中的參數。 如需這些額外參數及其說明的清單，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

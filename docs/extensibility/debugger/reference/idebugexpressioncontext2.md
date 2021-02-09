@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 577fdaae-4b2d-4112-9839-ab899535fa6f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344ae287b3784ceca87fbbab09ad2b2e0a304205
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92e2561d28c3d4c7133208c78b9a492bc2614fd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901662"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 此介面代表運算式評估的內容
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugExpressionContext2 : IUnknown
@@ -45,9 +45,9 @@ IDebugExpressionContext2 : IUnknown
 ## <a name="remarks"></a>備註
  評估內容可以視為執行運算式評估的範圍。
 
- 當程式停止時，會話 debug manager (SDM) 從 EnumFrameInfo 取得堆疊框架，並呼叫[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)。 然後 SDM 會呼叫 [GetExpressionCoNtext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) 以取得 `IDebugExpressionContext2` 介面。 接下來就是呼叫 [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 來建立 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) 介面，此介面表示準備要評估的已剖析運算式。
+ 當程式停止時，會話 debug manager (SDM) 從 EnumFrameInfo 取得堆疊框架，並呼叫[](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)。 然後 SDM 會呼叫 [GetExpressionCoNtext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) 以取得 `IDebugExpressionContext2` 介面。 接下來就是呼叫 [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 來建立 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) 介面，此介面表示準備要評估的已剖析運算式。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 7df029be478fef3cf1e9b6138456986016465d5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903007"
 ---
 # <a name="custom-colorable-items"></a>自訂可設定色彩專案
 您可以藉由將自訂可設定色彩專案實作為語言服務的一部分，來覆寫標示的類型清單，例如關鍵字和批註。

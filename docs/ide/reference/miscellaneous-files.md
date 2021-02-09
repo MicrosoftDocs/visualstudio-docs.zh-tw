@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc797fe7676d24a80867cc318cbe02f94e90e7d0
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 7a8257dad083378c9e4454f0c048fea7ed06e2dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902764"
 ---
 # <a name="miscellaneous-files"></a>其他檔案
 

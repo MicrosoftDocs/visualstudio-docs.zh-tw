@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 8a978645-1393-4904-ae69-42afabd8c109
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dbd31edfa72368a85361032e9875b234585a07
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b31beb15ddfd1078d72c247535e2bc835b8c31e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047005"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902644"
 ---
 # <a name="touch-task"></a>Touch 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "93047005"
 
  下表說明 `Touch` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`AlwaysCreate`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，工作會建立任何不存在的檔案。|
 |`Files`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要碰觸的檔案集合。|
@@ -69,7 +69,7 @@ ms.locfileid: "93047005"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

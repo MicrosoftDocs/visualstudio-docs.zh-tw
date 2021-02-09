@@ -8,15 +8,15 @@ f1_keywords:
 - javascript_language_reference
 dev_langs:
 - JavaScript
-manager: jillfra
+manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: c2800bb697b75ff00b128cd58785b0bba6779060
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: ce0448b2080877e4a03d2e8fa358b943a7feeb9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98887319"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902754"
 ---
 # <a name="javascript-f1-help-for-visual-studio"></a>Visual Studio 的 JavaScript F1 說明
 
