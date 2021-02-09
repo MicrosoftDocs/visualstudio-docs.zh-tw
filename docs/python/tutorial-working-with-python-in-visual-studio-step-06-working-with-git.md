@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db5a8857a6b6610fdc60b05158379ef69995ddf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72289713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920754"
 ---
 # <a name="step-6-work-with-git"></a>步驟 6：使用 Git
 
@@ -26,25 +26,25 @@ Visual Studio 在 GitHub 和 Azure Repos 之類的服務上，提供與本機 Gi
 
 本文提供為現有專案建立本機 Git 存放庫的基本概觀，以及讓您熟悉一些 Visual Studio 的 Git 相關功能。
 
-1. 在 Visual Studio 中開啟專案之後 (例如[上一個步驟](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)中的專案)，以滑鼠右鍵按一下方案，然後選取 [將方案新增至原始檔控制]****。 Visual Studio 會建立包含您的專案程式碼的本機 Git 存放庫。
+1. 在 Visual Studio 中開啟專案之後 (例如[上一個步驟](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)中的專案)，以滑鼠右鍵按一下方案，然後選取 [將方案新增至原始檔控制]。 Visual Studio 會建立包含您的專案程式碼的本機 Git 存放庫。
 
 1. 當 Visual Studio 偵測到於 Git 存放庫管理的專案時，Git 相關的控制項會出現在 Visual Studio 視窗右下角。 這些控制項顯示擱置中認可、變更、存放庫名稱和分支。 將滑鼠指標停留在控制項上方，以查看其他資訊。
 
     ![將滑鼠指標停留在 Visual Studio 視窗的 Git 控制項上方時，會顯示其他資訊](media/working-with-git-01.png)
 
-1. 當您建立新的存放庫或選取任何 Git 控制項時，Visual Studio 會開啟 [Team Explorer]**** 視窗。  (您可以使用**View**  >  **Team Explorer** menu 命令隨時開啟視窗。 ) 視窗有三個主要窗格，您可以使用**Team Explorer**標頭上的下拉式清單來切換。 提供發行作業的 [ **同步** 處理] 窗格也會在您選取 **推送** 控制項 (向上箭號圖示) ：
+1. 當您建立新的存放庫或選取任何 Git 控制項時，Visual Studio 會開啟 [Team Explorer] 視窗。  (您可以使用 **View**  >  **Team Explorer** menu 命令隨時開啟視窗。 ) 視窗有三個主要窗格，您可以使用 **Team Explorer** 標頭上的下拉式清單來切換。 提供發行作業的 [ **同步** 處理] 窗格也會在您選取 **推送** 控制項 (向上箭號圖示) ：
 
     ![Visual Studio 中建立本機存放庫之後的 Team Explorer](media/working-with-git-02.png)
 
-1. 選取 [變更]**** (或具有鉛筆圖示的 Git 控制項) 檢閱未認可的變更，並在需要時進行認可。
+1. 選取 [變更] (或具有鉛筆圖示的 Git 控制項) 檢閱未認可的變更，並在需要時進行認可。
 
     ![Visual Studio 中顯示未認可變更的 Team Explorer](media/working-with-git-03.png)
 
-    按兩下 [變更]**** 清單中的檔案，以開啟該檔案的差異檢視：
+    按兩下 [變更] 清單中的檔案，以開啟該檔案的差異檢視：
 
     ![檔案的變更差異檢視](media/working-with-git-05.png)
 
-1. 選取 [分支]**** (或具有分支名稱的 Git 控制項) 以檢查分支，並執行合併和重訂基底作業：
+1. 選取 [分支] (或具有分支名稱的 Git 控制項) 以檢查分支，並執行合併和重訂基底作業：
 
     ![Visual Studio 中顯示分支的 Team Explorer](media/working-with-git-04.png)
 

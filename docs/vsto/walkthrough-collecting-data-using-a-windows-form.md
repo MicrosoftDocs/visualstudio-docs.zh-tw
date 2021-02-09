@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], collecting data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e8c88bbf529da8e07976c012d40ca59e5f1e5626
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527172"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920377"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>逐步解說：使用 Windows Form 收集資料
   本逐步解說示範如何從 Microsoft Office Excel 的文件層級自訂開啟 Windows Form、向使用者收集資訊，以及將該資訊寫入工作表儲存格。
@@ -131,7 +131,7 @@ ms.locfileid: "97527172"
 
 4. 確認 **Hello World** 出現在工作表的儲存格 **A1** 中。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  本逐步解說說明顯示 Windows Form 並將資料傳遞至工作表的基本概念。 您還可以執行下列其他工作：
 
 - 使用 Excel 活頁簿或 Word 文件上的 Windows Form 控制項。 如需詳細資訊，請參閱 [Office 檔的 Windows Forms 控制項總覽](../vsto/windows-forms-controls-on-office-documents-overview.md)。

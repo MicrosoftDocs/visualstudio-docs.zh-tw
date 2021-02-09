@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9a57dfcd-df8e-4be5-b1fe-bd853e3c6bb2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da059b6efe137092d46241977a98b22b1eb66c44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78485e209c93e0673aa32587b21bb074aac047e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731151"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921137"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 由會話 debug manager 所呼叫 (SDM) ，表示已接收並處理由 debug engine 所傳送的同步 debug 事件 (將) 解除至 SDM。
@@ -50,7 +50,7 @@ HRESULT ContinueFromSynchronousEvent(
 DE 必須確認它是參數所代表之事件的來源 `pEvent` 。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對實 IDebugEngine2 介面的簡單物件，執行這個方法 `CEngine` 。 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+下列範例示範如何針對實 IDebugEngine2 介面的簡單物件，執行這個方法 `CEngine` 。 [](../../../extensibility/debugger/reference/idebugengine2.md)
 
 ```cpp
 HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)

@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b5def7f6cc4ac5ced91ca0a273ce750003dca20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af72993a4a02ce7d25858bf3bd4f0690e0d30f5a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731557"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923100"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 此介面代表文字檔。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDebugDocumentText2 : IDebugDocument2
+IDebugDocumentText2 : IDebugDocument2
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
@@ -45,7 +45,7 @@ IDebugDocumentText2 : IDebugDocument2
 ## <a name="remarks"></a>備註
  實此介面的物件也必須執行 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> 介面，以提供 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) 物件的介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

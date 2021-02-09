@@ -8,15 +8,15 @@ helpviewer_keywords:
 - configure test agents, test lab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ffa3a1006057169d7e4f473922ff2eebbfe7bb
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 29f4951fbd64bd02c8f70b93ea319ab0d46f89e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328882"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920429"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>安裝測試代理程式和測試控制器
 

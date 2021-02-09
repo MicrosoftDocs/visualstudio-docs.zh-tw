@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6760a0d3-a898-4e81-b68f-c45c584b225b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16427685765c1471fba3993743efc204cb99c367
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2c7dbdace7c40ccba25cdce0306e6f0998489f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920781"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 取得表示物件值之位址的記憶體內容。
@@ -28,7 +28,7 @@ ms.locfileid: "80726664"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetMemoryContext( 
+HRESULT GetMemoryContext( 
    IDebugMemoryContext2** pContext
 );
 ```

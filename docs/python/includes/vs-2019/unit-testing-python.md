@@ -5,17 +5,17 @@ ms.date: 09/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b611657db104a4b74e784df8925627ff41f3c33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd63d927e41a8b360eb7d934693bb3c83a30ea4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920673"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>選取 Python 專案的測試架構
 
@@ -27,7 +27,7 @@ Visual Studio 支援兩種適用于 Python、 [unittest](https://docs.python.org
 當您儲存架構選取和設定之後，就會在測試瀏覽器中起始測試探索。 如果 [測試瀏覽器] 視窗尚未開啟，請流覽至工具列，然後選取 [**測試**  >  **測試瀏覽器**]。
 
 ## <a name="configure-testing-for-python-without-a-project"></a>在不使用專案的情況下設定 Python 測試
-Visual Studio 可讓您使用 Python 程式碼 [開啟資料夾](../../quickstart-05-python-visual-studio-open-folder.md) ，在沒有專案的情況下執行和測試現有的 Python 程式碼。 在這些情況下，您必須使用檔案 ** 上的PythonSettings.js** 來設定測試。 
+Visual Studio 可讓您使用 Python 程式碼 [開啟資料夾](../../quickstart-05-python-visual-studio-open-folder.md) ，在沒有專案的情況下執行和測試現有的 Python 程式碼。 在這些情況下，您必須使用檔案 **上的PythonSettings.js** 來設定測試。 
 1. 使用 [ **開啟本機資料夾** ] 選項開啟現有的 Python 程式碼。 
 
    ![Visual Studio 啟動畫面](../../media/quickstart-open-folder/01-open-local-folder.png)
@@ -36,7 +36,7 @@ Visual Studio 可讓您使用 Python 程式碼 [開啟資料夾](../../quickstar
 
    ![[顯示所有檔案] 按鈕](../../media/unit-test-show-files.png)
 
-1. 流覽至**本機設定**資料夾內的**PythonSettings.js**檔案。 如果您在 [ **本機設定** ] 資料夾中看不到這個檔案，請以手動方式建立。
+1. 流覽至 **本機設定** 資料夾內的 **PythonSettings.js** 檔案。 如果您在 [ **本機設定** ] 資料夾中看不到這個檔案，請以手動方式建立。
    
 1. 將 **TestFramework** 欄位新增至設定檔，並根據您要使用的測試架構，將其設定為 **pytest** 或 **unittest** 。
 
@@ -51,7 +51,7 @@ Visual Studio 可讓您使用 Python 程式碼 [開啟資料夾](../../quickstar
     > [!Note]
     > 針對 **unittest** 架構，如果在 PythonSettings.js檔案中未指定欄位 **UnitTestRootDirectory** 和 **UnitTestPattern** ，則會分別新增並指派 "." 和 "test *. .py" 的預設值。
 
-1. 如果您的資料夾包含**的 src**目錄與包含測試的資料夾不同，請使用**PythonSettings.js**檔案中的 [ **SearchPaths** ] 欄位，指定**src**資料夾的路徑。
+1. 如果您的資料夾包含 **的 src** 目錄與包含測試的資料夾不同，請使用 **PythonSettings.js** 檔案中的 [ **SearchPaths** ] 欄位，指定 **src** 資料夾的路徑。
 
     ```json
     {
@@ -64,7 +64,7 @@ Visual Studio 可讓您使用 Python 程式碼 [開啟資料夾](../../quickstar
 
 1. 將您的變更儲存至檔案上的 PythonSettings.js，以起始指定架構的測試探索。 
    > [!Note]
-   > 如果 [測試瀏覽器] 視窗已經開啟**CTRL**  +  **R，** 也會觸發探索。
+   > 如果 [測試瀏覽器] 視窗已經開啟 **CTRL**  +  **R，** 也會觸發探索。
 
 ## <a name="discover-and-view-tests"></a>探索及檢視測試
 
@@ -72,7 +72,7 @@ Visual Studio 可讓您使用 Python 程式碼 [開啟資料夾](../../quickstar
 
 1. 開啟 [Python 專案](../../managing-python-projects-in-visual-studio.md)。
 
-1. 在 Visual Studio 中載入專案之後，以滑鼠右鍵按一下方案總管中的專案，然後從 [屬性**測試**] 索引標籤選取**unittest**或**pytest**架構。
+1. 在 Visual Studio 中載入專案之後，以滑鼠右鍵按一下方案總管中的專案，然後從 [屬性 **測試**] 索引標籤選取 **unittest** 或 **pytest** 架構。
    > [!Note]
    > 如果您使用 pytest 架構，您可以使用標準 pytest .ini 設定檔來指定測試位置和檔案名模式。 依預設，會使用 [工作區]/[專案] 資料夾，其模式為 `test_*py` 和 `*_test.py` 。 如需詳細資訊，請參閱 [pytest 參考檔](https://docs.pytest.org/en/latest/reference.html#ini-options-ref) 。
 
@@ -91,7 +91,7 @@ Visual Studio 可讓您使用 Python 程式碼 [開啟資料夾](../../quickstar
         unittest.main()
     ```
 
-1. 如有必要，請儲存檔案，然後使用 [ **test**test explorer] 功能表命令開啟 [ **test explorer** ]  >  **Test Explorer** 。
+1. 如有必要，請儲存檔案，然後使用 [ **test** test explorer] 功能表命令開啟 [ **test explorer** ]  >   。
 
 1. **測試瀏覽器** 會在您的專案中搜尋測試，並顯示如下所示的專案。 按兩下測試會開啟其原始程式檔。
 
@@ -109,9 +109,9 @@ Visual Studio 可讓您使用 Python 程式碼 [開啟資料夾](../../quickstar
 
 在 **測試瀏覽器** 中，您可以透過各種不同的方式來執行測試：
 
-- [全部執行]**** 會執行所有顯示的測試 (視篩選條件而定)。
+- [全部執行] 會執行所有顯示的測試 (視篩選條件而定)。
 - [ **執行** ] 功能表可讓您以群組執行失敗、通過或不執行測試的命令。
-- 您可以選取一或多個測試，以滑鼠右鍵按一下，然後選取 [執行選取的測試]****。
+- 您可以選取一或多個測試，以滑鼠右鍵按一下，然後選取 [執行選取的測試]。
 
 測試會在背景執行，而且 **Test Explorer** 會在每個測試完成時更新其狀態：
 
@@ -119,7 +119,7 @@ Visual Studio 可讓您使用 Python 程式碼 [開啟資料夾](../../quickstar
 
     ![test_A 通過狀態](../../media/unit-test-A-pass.png)
 
-- 失敗的測試會顯示紅色十字，以及會顯示測試執行的主控台輸出和 `unittest` 輸出的 [輸出]**** 連結：
+- 失敗的測試會顯示紅色十字，以及會顯示測試執行的主控台輸出和 `unittest` 輸出的 [輸出] 連結：
 
     ![test_A 失敗狀態](../../media/unit-test-A-fail.png)
 
@@ -130,7 +130,7 @@ Visual Studio 可讓您使用 Python 程式碼 [開啟資料夾](../../quickstar
 因為單元測試是程式碼片段，所以它們和其他程式碼一樣會有錯誤，並在某些情況下需要以偵錯工具執行。 在偵錯工具中，您可以設定中斷點、檢視變數，以及逐步檢視程式碼。 Visual Studio 也提供診斷工具以進行單元測試。
 
 > [!Note]
-> 根據預設，測試偵錯工具會使用適用于 Visual Studio 2017 (15.8 版和更新版本的 ptvsd 4 偵錯工具) 以及 Visual Studio 2019 (16.5 版和更新版本) 版本的 debugpy。 如果您想要改為使用 ptvsd 3，您可以在 [**工具**選項] Python 偵錯工具上選取 [**使用舊版偵錯工具**] 選項  >  **Options**  >  **Python**  >  ** **。 
+> 根據預設，測試偵錯工具會使用適用于 Visual Studio 2017 (15.8 版和更新版本的 ptvsd 4 偵錯工具) 以及 Visual Studio 2019 (16.5 版和更新版本) 版本的 debugpy。 如果您想要改為使用 ptvsd 3，您可以在 [**工具** 選項] Python 偵錯工具上選取 [**使用舊版偵錯工具**] 選項  >    >    >  ****。 
 
 若要啟動偵錯工具，請在您的程式碼中設定初始中斷點，然後以滑鼠右鍵按一下 [ **Test Explorer** ] 中的測試 (或選取) ，然後選取 [ **偵錯工具選取的測試**]。 Visual Studio 會以與針對應用程式碼一樣的方式，啟動 Python 偵錯工具。
 

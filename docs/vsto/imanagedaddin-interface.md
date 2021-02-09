@@ -9,20 +9,20 @@ helpviewer_keywords:
 - IManagedAddin interface
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920439"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 介面
   執行 IManagedAddin 介面，以建立載入 managed VSTO 增益集的元件。此介面已新增至 2007 Microsoft Office 系統。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```csharp
 [
@@ -43,7 +43,7 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>方法
  下表列出 IManagedAddin 介面所定義的方法。
 
-|Name|說明|
+|名稱|描述|
 |----------|-----------------|
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|當 Microsoft Office 應用程式載入 Managed VSTO 增益集時呼叫。|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|只在 Microsoft Office 應用程式卸載 Managed VSTO 增益集之前呼叫。|
@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. 應用程式會在下列登錄機碼底下尋找項目，以探索 VSTO 增益集：
 
-    **HKEY_CURRENT_USER \Software\Microsoft\Office \\ *\<application name>* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<application name>* \Addins\\**
 
     這個登錄機碼下的每個項目都是 VSTO 增益集的唯一識別碼。 通常這會是 VSTO 增益集組件的名稱。
 
 2. 應用程式會在每個 VSTO 增益集的項目底下尋找 `Manifest` 項目。
 
-    Managed VSTO 增益集可以在 `Manifest` **HKEY_CURRENT_USER \software\microsoft\office \\ _\<application name>_ \Addins \\ _\<add-in ID>_ **的專案中儲存資訊清單的完整路徑。 資訊清單是一種檔案 (通常是 XML 檔案)，可提供協助載入 VSTO 增益集的資訊。
+    Managed VSTO 增益集可以在 `Manifest` **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \Addins \\ _\<add-in ID>_** 下的專案中儲存資訊清單的完整路徑。 資訊清單是一種檔案 (通常是 XML 檔案)，可提供協助載入 VSTO 增益集的資訊。
 
 3. 如果應用程式找到 `Manifest` 項目，則會嘗試載入 Managed VSTO 增益集載入器元件。 應用程式會藉由嘗試建立可執行 IManagedAddin 介面的 COM 物件來執行這項工作。
 

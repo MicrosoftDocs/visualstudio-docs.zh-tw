@@ -9,36 +9,36 @@ helpviewer_keywords:
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 37f64b455ab0331f9b8f08da1f29a3e2c1b82fdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25aa56244fa9cb981732718deb40b2ea7af90e89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922946"
 ---
 # <a name="provider_fields"></a>PROVIDER_FIELDS
 指定與程式提供者相關聯的屬性。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
-enum enum_PROVIDER_FIELDS {
-   PFIELD_PROGRAM_NODES       = 0x01,
-   PFIELD_IS_DEBUGGER_PRESENT = 0x02
+enum enum_PROVIDER_FIELDS {
+   PFIELD_PROGRAM_NODES       = 0x01,
+   PFIELD_IS_DEBUGGER_PRESENT = 0x02
 };
 typedef DWORD PROVIDER_FIELDS;
 ```
 
 ```csharp
-public enum enum_PROVIDER_FIELDS {
-   PFIELD_PROGRAM_NODES       = 0x01,
-   PFIELD_IS_DEBUGGER_PRESENT = 0x02
+public enum enum_PROVIDER_FIELDS {
+   PFIELD_PROGRAM_NODES       = 0x01,
+   PFIELD_IS_DEBUGGER_PRESENT = 0x02
 };
 ```
 
@@ -54,7 +54,7 @@ public enum enum_PROVIDER_FIELDS {
 
  這些值可以與位結合 `OR` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

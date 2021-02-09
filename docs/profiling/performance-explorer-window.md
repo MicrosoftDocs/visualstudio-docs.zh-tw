@@ -10,16 +10,16 @@ helpviewer_keywords:
 - performance tools, Performance Explorer
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 06d2b7e2ad5d5df4022dc78aa06315545d56c0ee
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 4533bcb59ebbd36f47ddf73f9b78429f041c357c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922326"
 ---
 # <a name="performance-explorer-window"></a>效能總管視窗
 

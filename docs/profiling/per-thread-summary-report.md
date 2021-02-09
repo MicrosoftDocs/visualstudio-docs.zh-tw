@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5a0aa339-03f5-4727-90b3-8950446bbdbe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03797190097d3495a315fd0e0343fa9999100147
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2dcdc05697b3c23a050ee975fd4395a6822db3b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922297"
 ---
 # <a name="per-thread-summary-report"></a>個別執行緒摘要報表
 此橫條圖會顯示目前可見的時間範圍內，每個未隱藏執行緒在每個活動類別所花費的時間比例。 「執行」表示執行緒正在執行；所有其他分類則表示執行緒正在等待某個項目。

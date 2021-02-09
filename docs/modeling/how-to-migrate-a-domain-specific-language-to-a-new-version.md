@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: dacb13ef14768f4f59a414f6159bbea8d24c4de8
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: bbefb1cd5ae546c5454660b6782f9c76f35a63f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "92298404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922700"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：將網域指定的語言移轉至新的版本
 您可以 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 從與一起散發的版本，將定義和使用特定領域語言的專案遷移至 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 。
@@ -61,15 +61,15 @@ ms.locfileid: "92298404"
 
    1. 按一下 [ **轉換**]。
 
-        轉換每**個專案檔之前，會將**一個_專案_的複本_儲存為_**vs2008 .csproj**
+        轉換每 **個專案檔之前，會將** 一個 _專案_ 的複本 _儲存為_**vs2008 .csproj**
 
-        每個方案的_solution_**複本都會儲存為** _ _ **vs2008 .sln**
+        每個方案的 **複本都會儲存為** __ **vs2008 .sln**
 
    2. 調查任何報告的失敗轉換。
 
         失敗會在文字視窗中報告。 此外，樹狀檢視會在每個無法轉換的節點上顯示紅色旗標。 您可以按一下節點以取得該失敗的詳細資訊。
 
-5. 轉換包含已成功轉換專案之方案中的**所有範本**。
+5. 轉換包含已成功轉換專案之方案中的 **所有範本**。
 
    1. 開啟解決方案。
 

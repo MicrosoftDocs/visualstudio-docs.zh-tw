@@ -1,5 +1,5 @@
 ---
-title: 使用偵錯工具擴充性的消費者入門 |Microsoft Docs
+title: 使用偵錯工具擴充性的開始使用 |Microsoft Docs
 description: 開始建立和自訂偵錯工具元件，以用於在 Visual Studio 環境內進行程式的偵錯工具。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6949b9b8a9168915c64bc6183f6b1391a1c79220
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 2c3861527a3b049f4c72803f9ef40fe7b4bf0778
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560031"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921244"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>開始使用偵錯工具擴充性
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]提供您建立和自訂偵錯工具元件時所需的資訊，這些元件是用來從環境內進行程式的偵錯工具 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。

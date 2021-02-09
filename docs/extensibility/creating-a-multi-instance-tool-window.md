@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10de60620bcd0b56f251955f478d4d06c984d021
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: d1d332e3c41a55de8f405f028070fa95f97f6717
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974002"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923264"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>建立多實例工具視窗
 您可以對工具視窗進行程式設計，讓它的多個實例可以同時開啟。 根據預設，工具視窗只能開啟一個實例。

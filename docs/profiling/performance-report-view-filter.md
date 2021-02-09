@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 79fb4b7cf7a5df4b2077a2145172d24acdbf86cb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: da6501602c9ffd12750643e50d230ef15c0f922c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922280"
 ---
 # <a name="performance-report-view-filter"></a>效能報告檢視篩選條件
 分析工具 **報表檢視篩選器** 視窗位於 [ **效能報告** ] 視窗的頂端。 如果您看不到這個視窗，請按一下 [顯示篩選條件] 按鈕。
 
  您可以修改每個篩選條件子句來限定結果。 篩選條件產生器中包含下列資料行。
 
-|篩選條件項目|描述|
+|篩選條件項目|Description|
 |-----------------|-----------------|
 |及/或|如果這個子句和下一個子句必須同時為 true，請選擇 **和** 以進行結果比對。 如果這個子句或下一個子句可以為 true，請選擇 **或** 以進行結果比對。|
 |欄位|從目前報告檔中可用的資料欄位清單中，選取要在篩選條件子句中使用的欄位。|

@@ -5,17 +5,17 @@ ms.date: 09/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2a621cd56f980c8a1404ba8855cdf3544e58d39d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aec13b3b35c75ecaad938cd3200f3af2a87d2441
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920675"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>設定 Python 程式碼的單元測試
 

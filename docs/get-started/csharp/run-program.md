@@ -9,22 +9,22 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ee28bde6de10006ccfdc5175cca629ad9d1590d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbebcec3f5b2de01bcbfa7839f68e6f7a3e2cc64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922835"
 ---
 # <a name="how-to-run-a-c-program-in-visual-studio"></a>如何：在 Visual Studio 中執行 c # 程式
 
-執行程式所需執行的動作，取決於您的起點、應用程式或服務的型別，以及您是否要在偵錯工具下執行它。 在最簡單的情況下，當您在 Visual Studio 中開啟專案時，請按下**Ctrl** + **F5** (**啟動但不) 調試**程式，或按**f5** (**開始進行調試**程式) ，或按下 [主要 (] 工具列上的綠色箭號) [**開始] 按鈕**Visual Studio，來建立並執行專案。
+執行程式所需執行的動作，取決於您的起點、應用程式或服務的型別，以及您是否要在偵錯工具下執行它。 在最簡單的情況下，當您在 Visual Studio 中開啟專案時，請按下 **Ctrl** + **F5** (**啟動但不) 調試** 程式，或按 **f5** (**開始進行調試** 程式) ，或按下 [主要 (] 工具列上的綠色箭號) [**開始] 按鈕** Visual Studio，來建立並執行專案。
 
 ![顯示 [開始] 按鈕的螢幕擷取畫面](media/vs-start-button.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "81649641"
 
 如果您在 Visual Studio 的專案中已經有程式碼，請開啟專案。 若要開啟專案，請從 Windows 檔案總管按兩下或按一下 *.csproj* ，或從 Visual Studio 中，選擇 [ **開啟專案**]，流覽以尋找專案 (*.csproj*) 檔，然後選擇專案檔。
 
-在 Visual Studio 中載入專案之後，請按下**Ctrl** + **F5** (**啟動但不) 調試**程式，或使用 Visual Studio 工具列上的綠色 [**開始**] 按鈕來執行程式。  如果有多個專案，則必須將使用 `Main` 方法的專案設定為啟始專案。 若要設定啟始專案，請以滑鼠右鍵按一下專案節點，然後選擇 [ **設定為啟始專案**]。
+在 Visual Studio 中載入專案之後，請按下 **Ctrl** + **F5** (**啟動但不) 調試** 程式，或使用 Visual Studio 工具列上的綠色 [**開始**] 按鈕來執行程式。  如果有多個專案，則必須將使用 `Main` 方法的專案設定為啟始專案。 若要設定啟始專案，請以滑鼠右鍵按一下專案節點，然後選擇 [ **設定為啟始專案**]。
 
 ![設定啟始專案](media/set-as-startup-project.png)
 
@@ -54,13 +54,13 @@ Visual Studio 嘗試建立並執行您的專案。  如果有組建錯誤，您�
 
 開始 Visual Studio，開啟空白的 c # 主控台專案，選取專案中已有的 .cs 檔案中的所有程式碼，然後將它刪除。 然後，將第一個程式碼檔案的內容貼到 .cs 檔案中。 重新命名檔案以符合原始程式碼。 
 
-若為第二個檔案，請以滑鼠右鍵按一下**方案總管**中的專案節點，開啟專案的快捷方式功能表，然後選擇 [**加入 > 現有專案**] (或使用按鍵組合**Shift** + **Alt** + **a**) ，然後選取程式碼檔案。
+若為第二個檔案，請以滑鼠右鍵按一下 **方案總管** 中的專案節點，開啟專案的快捷方式功能表，然後選擇 [**加入 > 現有專案**] (或使用按鍵組合 **Shift** + **Alt** + **a**) ，然後選取程式碼檔案。
 
 ### <a name="multiple-files-on-disk"></a>磁片上的多個檔案
 
 1. 如果您不確定) ，請建立適當類型的新專案 (使用 c # **主控台應用程式** 。
 
-2. 以滑鼠右鍵按一下專案節點， **Add**  >  然後選擇 [加入**現有專案**] 來選取檔案，並將它們匯入您的專案中。  
+2. 以滑鼠右鍵按一下專案節點，   >  然後選擇 [加入 **現有專案**] 來選取檔案，並將它們匯入您的專案中。  
 
 ### <a name="starting-from-a-folder"></a>從資料夾開始
 
@@ -74,7 +74,7 @@ Visual Studio 嘗試建立並執行您的專案。  如果有組建錯誤，您�
 
 ## <a name="run-the-program"></a>執行程式
 
-若要啟動程式，請按下主要 Visual Studio 工具列上的綠色箭號 ([**開始**] 按鈕) ，或按**f5**或**Ctrl** + **f5**來執行程式。 當您使用 [ **開始** ] 按鈕時，它會在偵錯工具下執行。  Visual Studio 嘗試在您的專案中建立程式碼並加以執行。  如果成功，很棒！ 但如果沒有，請繼續閱讀有關如何讓它成功建立的一些想法。
+若要啟動程式，請按下主要 Visual Studio 工具列上的綠色箭號 ([**開始**] 按鈕) ，或按 **f5** 或 **Ctrl** + **f5** 來執行程式。 當您使用 [ **開始** ] 按鈕時，它會在偵錯工具下執行。  Visual Studio 嘗試在您的專案中建立程式碼並加以執行。  如果成功，很棒！ 但如果沒有，請繼續閱讀有關如何讓它成功建立的一些想法。
 
 ## <a name="troubleshooting"></a>疑難排解
 
@@ -98,7 +98,7 @@ Visual Studio 會嘗試協助您找出遺漏的參考。 當名稱無法解析�
 
 #### <a name="missing-assembly-reference"></a>遺漏元件參考
 
-.NET 參考可以是元件或 NuGet 套件的形式。 通常，如果您找到原始程式碼，發行者或作者將會說明需要哪些元件，以及程式碼相依的套件。 若要手動加入專案的參考，請以滑鼠右鍵按一下**方案總管**中的 [**參考**] 節點，選擇 [**加入參考**]，然後找出必要的元件。
+.NET 參考可以是元件或 NuGet 套件的形式。 通常，如果您找到原始程式碼，發行者或作者將會說明需要哪些元件，以及程式碼相依的套件。 若要手動加入專案的參考，請以滑鼠右鍵按一下 **方案總管** 中的 [**參考**] 節點，選擇 [**加入參考**]，然後找出必要的元件。
 
 ![[新增參考] 功能表的螢幕擷取畫面](media/add-reference.png)
 
@@ -118,7 +118,7 @@ Visual Studio 會嘗試協助您找出遺漏的參考。 當名稱無法解析�
 
 若要變更目標 framework，請參閱 [變更目標 framework](../../ide/visual-studio-multi-targeting-overview.md#select-a-target-framework-version)。 如需詳細資訊，請參閱 [疑難排解 .NET Framework 目標錯誤](../../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 閱讀 [歡迎使用 VISUAL STUDIO IDE，以](../visual-studio-ide.md)探索 Visual Studio 開發環境。
 

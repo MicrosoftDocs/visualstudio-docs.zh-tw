@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Performance Profiler, profiling methods
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2017'
 ms.workload:
 - multiple
-ms.openlocfilehash: e34fd78d7ff44aeffc4ca4d61c84a0a9af6747a5
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: f9128700f6ad54f3d92108d92e25e13b9ee4266c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722265"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921863"
 ---
 # <a name="understand-profiler-performance-collection-methods"></a>瞭解 profiler 效能收集方法
 

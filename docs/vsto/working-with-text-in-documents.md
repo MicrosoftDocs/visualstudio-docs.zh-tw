@@ -14,22 +14,22 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], text
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8314752b5d1be6d1d86dcf35cf78851bcb45cb3c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 07b3ed9cc39e4eb23bec587516786cf28a940e40
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920226"
 ---
 # <a name="work-with-text-in-documents"></a>處理檔中的文字
   本節中的主題針對在 Office 專案中使用 Microsoft Office Word 物件模型處理文字，提供逐步程序和程式碼範例。
 
  在某些情況下，您在 VSTO 增益集中執行這些工作的方式，不同於您在文件層級自訂中的執行方式。
 
-|工作|程序|
+|Task|程序|
 |----------|---------------|
 |根據各種準則定義範圍並加以選取。|[如何：以程式設計方式定義和選取檔中的範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)|
 |取得範圍的開頭和結尾字元。|[如何：以程式設計方式取得範圍中的開始和結束字元](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)|

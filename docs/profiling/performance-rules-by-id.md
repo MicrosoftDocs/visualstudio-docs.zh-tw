@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 9a1c934c-4798-4df9-a8ef-eb17ef06b6a2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cbfde146586d8ab10b8ad44ee1294e36221493a
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c1d37686ff8bde7824fe27a3d2084dada9e758c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722096"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922128"
 ---
 # <a name="performance-rules-by-id"></a>依識別碼排序的效能規則
 

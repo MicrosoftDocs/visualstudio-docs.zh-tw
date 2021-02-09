@@ -23,13 +23,13 @@ description: 了解如何升級 Visual Studio 中隨附的免費 Dotfuscator Com
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 08492340022f772beadca8061a216de69fafc8af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+manager: jmartens
+ms.openlocfilehash: a0e3ad3e5f6afbd6675f8e65c918b4a5d7c66dd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922770"
 ---
 # <a name="upgrade-dotfuscator-community"></a>升級 Dotfuscator Community
 
@@ -45,16 +45,16 @@ Dotfuscator Community 的已註冊使用者可存取額外的功能，例如[命
 
 ## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
-Dotfuscator Community 提供基本層級的保護，而 ***PreEmptive Protection - Dotfuscator Professional *** 則包含增強的混淆轉換和保護功能，例如：
+Dotfuscator Community 提供基本層級的保護，而 ***PreEmptive Protection - Dotfuscator Professional*** 則包含增強的混淆轉換和保護功能，例如：
 
-* 智慧財產權保護**
+* 智慧財產權保護
   * 額外的重新命名選項，包括 Enhanced Overload Induction™ 和隨機化識別碼選取。
   * 存取企業級混淆轉換，包括[目標為防止自動程式碼反向組譯的轉換][control-flow]。
   * 能夠[混淆敏感性字串][string-encryption]，以防止執行反向組譯程式碼的簡單搜尋。
   * 能夠[以不顯眼的方式將擁有權和發佈字串嵌入您的組件][watermarking]，讓您判斷未經授權的軟體漏洞來源。
   * 能夠[將多個組件合併成一個組件][linking]，由於消除了關注點分離 (Separation of Concerns) 的問題，因此攻擊者更難判斷程式碼項目的角色。
   * 能夠[自動從您的應用程式移除未使用的程式碼][pruning]，以減少送出的敏感性程式碼數量。
-* 應用程式完整性保護**
+* 應用程式完整性保護
   * 額外的[應用程式防禦行為][check-actions]。
   * 能夠在應用程式生命週期結束期限之前提供一段警告期間。
   * 能夠在生命週期結束警告期間或在期限之後通知應用程式程式碼。

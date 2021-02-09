@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17b6d104f88999ba7dd8e115a752a78853af6603
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 51006d78e69f48fc423fb7d35ad876b2b16bc0d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921286"
 ---
 # <a name="get-local-properties"></a>取得區域屬性
 > [!IMPORTANT]

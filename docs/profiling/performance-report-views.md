@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 611c31027bd725d8a1a98e6cb2e76d544743c811
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: d40ce1ff5f66b2d04425d116d84dc7aa40571b08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922227"
 ---
 # <a name="performance-report-views"></a>效能報告檢視
 本節提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具報表和檢視的參考資訊。 程式碼剖析資料檔案的檢視會顯示在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境 (IDE) 中， 報表則由 [VSPerfReport](../profiling/vsperfreport.md) 命令列工具產生。

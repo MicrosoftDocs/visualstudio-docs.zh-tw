@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1f588feb-522e-488d-be92-7bc19b9e3688
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f208c52bd45953aaad9efab9b6b65b15b3b759c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e548f6c51372608b661ec85b80afeb535263cc6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735353"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921151"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 建立已系結至此事件之中斷點的列舉值。
@@ -28,13 +28,13 @@ ms.locfileid: "80735353"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT EnumBoundBreakpoints( 
+HRESULT EnumBoundBreakpoints( 
     IEnumDebugBoundBreakpoints2** ppEnum
 );
 ```
 
 ```csharp
-int EnumBoundBreakpoints( 
+int EnumBoundBreakpoints( 
     out IEnumDebugBoundBreakpoints2 ppEnum
 );
 ```
@@ -50,7 +50,7 @@ int EnumBoundBreakpoints( 
 系結中斷點的清單適用于系結至這個事件的中斷點，而且可能不是從暫止中斷點系結的整個中斷點清單。 若要取得系結至暫止中斷點的所有中斷點清單，請呼叫 [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) 方法以取得相關聯的 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 物件，然後呼叫 [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) 方法來取得 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 物件，其中包含暫止中斷點的所有系結中斷點。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)介面的**CBreakpointSetDebugEventBase**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)介面的 **CBreakpointSetDebugEventBase** 物件，執行這個方法。
 
 ```cpp
 STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(

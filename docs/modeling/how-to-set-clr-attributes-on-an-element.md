@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: df9f8b16edcbe575ebac67f4acde9111a9511b85
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 8e566eafce9b5763830c00659a860e6329671bcd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363844"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922662"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>如何：在項目上設定 CLR 屬性
 自訂屬性是可以加入至網域元素、圖形、連接器和圖表的特殊屬性。 您可以新增任何繼承自類別的屬性 `System.Attribute` 。
@@ -37,12 +37,12 @@ ms.locfileid: "97363844"
 
 5. 在 [ **名稱] 屬性** 欄中，輸入適當的名稱，例如 `MyString` 。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
      [ **自訂屬性** ] 屬性現在會以下列格式顯示內容：
 
      `[`*AttributeName* `(`*ParameterName* `=`*類型*`)]`
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

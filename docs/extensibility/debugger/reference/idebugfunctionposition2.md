@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c260b6316207b0079a2ca8893b851db8b1288ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e05cc09d2c252ddeaadc3cfa1b40e1a5797b6d79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920908"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 此介面表示函式在來源文件中的抽象位置。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugFunctionPosition2 : IUnknown
@@ -45,7 +45,7 @@ IDebugFunctionPosition2 : IUnknown
 ## <a name="remarks"></a>備註
  這個介面所表示的位置是以文字為基礎，特別是 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 結構。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

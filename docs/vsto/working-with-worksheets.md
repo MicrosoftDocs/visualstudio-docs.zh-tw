@@ -12,20 +12,20 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], common tasks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d58576c999d11441122bb0b2115d2367b7ce04ce
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 294ff749f338df12cc2ca9edeab28d07786c7018
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920179"
 ---
 # <a name="work-with-worksheets"></a>使用工作表
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Worksheet> 類別包含您用來執行工作表工作的方法和屬性。
 
-|工作|程序|
+|Task|程序|
 |----------|---------------|
 |在活頁簿中加入新的工作表。|[如何：以程式設計方式在活頁簿中加入新的工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)|
 |在活頁簿中的指定位置複製工作表。|[如何：以程式設計方式複製工作表](../vsto/how-to-programmatically-copy-worksheets.md)|

@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 35752f95-a57a-4def-b64d-cf4899669e99
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fcccf6a68afa26d8fe9ab5e5a4f40466822c689
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 8db336c38b330eb0702875b08078c1cac69ea7f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922207"
 ---
 # <a name="performance-session-overview"></a>效能工作階段概觀
 這個概觀說明程式碼剖析的基本概念。 接觸效能工作不久的開發人員將可見識 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 如何加速提升他們的生產力，並增進其程式碼的效能。 擁有豐富的程式碼剖析經驗的開發人員，則可獲得具體的程式碼剖析工具功能和處理程序的概觀。

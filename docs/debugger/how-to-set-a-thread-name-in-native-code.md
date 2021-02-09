@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c85d0968-9f22-4d69-87f4-acca2ae777b8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a713b6db074586898ff72cd8595c4cc0d20d99cf
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 024926123e8a9967947d11635558eb6ea06077cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921665"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在機器碼中設定執行緒名稱
 在所有 Visual Studio 版本中，都可以將執行緒命名。 執行緒命名適用于在偵測執行中的進程時，在 [ **執行緒** ] 視窗中找出感興趣的執行緒。 當您透過損毀傾印檢查，以及使用各種工具來分析效能捕捉時，具有 recognizably 命名的執行緒也會很有説明。

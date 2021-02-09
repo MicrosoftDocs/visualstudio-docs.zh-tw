@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 0fc0d9a053faf69fde500333ab0faafa0e8d3448
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98b85a1b27255902f4cfba9923beda4305ca03d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737978"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923223"
 ---
 # <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
 用來根據使用者可從整合式開發環境輸入的字串來設定程式碼中斷點 (IDE) 。
@@ -43,7 +43,7 @@ typedef struct _BP_LOCATION_CODE_STRING {
 ## <a name="remarks"></a>備註
 此結構是 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 結構的成員，做為聯集的一部分。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6de1a30a032919a90fbb3d760837d5eeca00feaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 424599d322c2c8dd4db8ff4e19bab60eceaefc08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728487"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920994"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 建立物件，該物件會使用指定的評估旗標設定和超時值的函式。

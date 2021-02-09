@@ -8,16 +8,16 @@ helpviewer_keywords:
 - instrumentation profiling method
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f049ccb40d2d34c22fddbf841e36bd513db80f
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ed42b4013d4edda1043cfc725e339f798f4064ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922003"
 ---
 # <a name="understand-instrumentation-data-values"></a>了解檢測資料值
 

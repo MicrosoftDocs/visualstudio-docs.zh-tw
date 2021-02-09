@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26705b32628a9bd9ecc79489e2552f2d7e537273
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 127746b06ef09496ef8f50aa874ff32e2f983f65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921540"
 ---
 # <a name="expression-evaluation-context"></a>運算式評估內容
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 偵錯工具中， **運算式評估** 內容：

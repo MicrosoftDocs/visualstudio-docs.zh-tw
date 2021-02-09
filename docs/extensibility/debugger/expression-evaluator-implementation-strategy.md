@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1bccaeb3-8109-4128-ae79-16fd8fbbaaa2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b936b465c3a7becbdcb3ea4f36a16b839260ad74
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d7527c361a889d5aa1f19ec7a211f8aeb8dcbd15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560144"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921379"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>運算式評估工具執行策略
 > [!IMPORTANT]

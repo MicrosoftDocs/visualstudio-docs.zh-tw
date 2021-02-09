@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cca030de-f853-4ed7-b2fb-395f08a6b884
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e06cae53251be02ee63650ce7723e5915565be4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad3b442382f26c1754689c005793c489b9cd5d3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923180"
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
 判斷伺服器是否為呼叫端的本機。
@@ -28,13 +28,13 @@ ms.locfileid: "80732828"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT QueryIsLocal(
+HRESULT QueryIsLocal(
    void
 );
 ```
 
 ```csharp
-int QueryIsLocal();
+int QueryIsLocal();
 ```
 
 ## <a name="return-value"></a>傳回值

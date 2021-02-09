@@ -7,23 +7,23 @@ helpviewer_keywords:
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5628af4a6e5c4deae3de02340e882bd2605e22d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95992d32df6b05c182b5b0ca505bc288294e282c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738054"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923236"
 ---
 # <a name="bp_flags90"></a>BP_FLAGS90
 列舉選擇性旗標的有效值。 當您設定中斷點時，可以使用選擇性旗標來指定其他資訊。 此列舉會擴充 [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) 列舉。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_FLAGS90
@@ -65,7 +65,7 @@ public enum enum_BP_FLAGS90
 `BP90_FLAG_TRACEPOINT_CONTINUE`\
 由原生偵錯工具引擎用來判斷是否應該清除逐步執行狀態。 它不同于 BP90_FLAG_DONT_STOP，因為如果追蹤點執行宏，則不會設定 BP90_FLAG_DONT_STOP。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： Msdbg90。h
 
 命名空間： VisualStudio

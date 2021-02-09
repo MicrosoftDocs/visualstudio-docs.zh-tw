@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad95f9273276830b59ebc77214f3920a687d41ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c47f51fb0ddc47218b11fe5673e0ede8362ff89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921092"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 建立沒有任何函式的物件。
@@ -28,7 +28,7 @@ ms.locfileid: "80728569"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT CreateObjectNoConstructor( 
+HRESULT CreateObjectNoConstructor( 
    IDebugField*   pClassObject,
    IDebugObject** ppObject
 );

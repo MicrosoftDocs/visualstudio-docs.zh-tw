@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d94e97c-a9d1-400c-8a98-a44b5385b33a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6433c1f2c540b040a3b3beccc264377e69592387
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab1462c30f1012eb1002f692672fc470cac3b39a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728497"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921002"
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 > [!IMPORTANT]
@@ -25,10 +25,10 @@ ms.locfileid: "80728497"
 
  此介面表示函式。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDebugFunctionObject : IDebugObject
+IDebugFunctionObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
@@ -52,7 +52,7 @@ IDebugFunctionObject : IDebugObject
 ## <a name="remarks"></a>備註
  此介面可讓運算式評估工具表示剖析樹狀結構中的函數。 `Create`這個介面中的方法是用來建立代表方法之輸入參數的物件。 然後藉由呼叫 [評估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) 方法來執行函式，此方法會傳回表示函式傳回值的物件。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： ee. h
 
  命名空間： VisualStudio

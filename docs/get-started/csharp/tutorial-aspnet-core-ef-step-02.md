@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 21052d59205c7ddc14247f180348fea3b8d5652a
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: e560d9028a7c2044964f5a2ec54e8daefea26372
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833243"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922818"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>步驟2：建立您的第一個 ASP.NET Core web 應用程式
 
@@ -33,7 +33,7 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>啟動 Visual Studio 2019 並建立新專案
 
-啟動 Visual Studio 2019 並按一下 [建立新專案]。 選擇 [ASP.NET Core Web 應用程式]。 選擇 [Web 應用程式] 範本，保留預設的專案名稱和位置。 在具有 ASP.NET Core 版本的下拉式清單中，選擇 **ASP.NET Core 2.1** 或 **ASP.NET Core 2.2**。 按一下 [建立]。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
+啟動 Visual Studio 2019 並按一下 [建立新專案]。 選擇 [ASP.NET Core Web 應用程式]。 選擇 [Web 應用程式] 範本，保留預設的專案名稱和位置。 在具有 ASP.NET Core 版本的下拉式清單中，選擇 **ASP.NET Core 2.1** 或 **ASP.NET Core 2.2**。 按一下頁面底部的 [新增]  。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
 
 ![Visual Studio 2019 選擇 ASP.NET Core 專案選項](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -120,12 +120,12 @@ public void OnGet()
 
 ![瀏覽器視窗中應用程式首頁的螢幕擷取畫面。 頁面的內容會顯示：「目前正于伺服器上的 1:46 AM！」。](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在下段影片中，您會了解如何將資料支援新增至您的應用程式。
 
 [教學課程：使用 ASP.NET Core 應用程式中的資料](tutorial-aspnet-core-ef-step-03.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [教學課程：使用 ASP.NET Core 建立 Razor Pages web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

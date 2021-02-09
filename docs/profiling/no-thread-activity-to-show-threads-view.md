@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: aa5ae9d0-561d-4ef8-b36b-258ce553d50a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 27298b03a03edf99a12a6d067a22ca8ba17faef0
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: dcc4cd3241c4d2fffdf2637790869dfc5ac524f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922435"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>沒有執行緒活動可顯示 (執行緒檢視)
 這個區域會顯示目前可見時間範圍內未隱藏的執行緒相關資料。

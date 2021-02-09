@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eb7a348e-a7f5-4f25-be68-80482d5482a8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 771dbe369154200805fb9d344dd5b457353e34dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d26574dd05f5f7dcdb7414df1ffb71f2ef2e4cd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728420"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921018"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
 取得這個位置所指向之函式的名稱。
@@ -28,7 +28,7 @@ ms.locfileid: "80728420"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetFunctionName( 
+HRESULT GetFunctionName( 
    BSTR* pbstrFunctionName
 );
 ```

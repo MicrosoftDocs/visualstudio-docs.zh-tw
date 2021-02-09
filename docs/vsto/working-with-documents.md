@@ -13,22 +13,22 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], document common tasks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8a8b994ed88c6499d17cc0cf241e60a17f235b97
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f04cdd246d95a4d5757ff64851a12cdede36f1b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527020"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920216"
 ---
 # <a name="work-with-documents"></a>使用檔
   本節中的主題針對在 Office 專案中使用 Microsoft Office Word 物件模型處理文件，提供逐步程序和程式碼範例。
 
  在某些情況下，您在 VSTO 增益集中執行這些工作的方式，不同於您在文件層級自訂中的執行方式。
 
-|工作|程序|
+|Task|程序|
 |----------|---------------|
 |根據一般範本或不同的範本建立文件。|[如何：以程式設計方式建立新檔](../vsto/how-to-programmatically-create-new-documents.md)|
 |開啟指定的文件為可讀寫或唯讀狀態。|[如何：以程式設計方式開啟現有檔](../vsto/how-to-programmatically-open-existing-documents.md)|

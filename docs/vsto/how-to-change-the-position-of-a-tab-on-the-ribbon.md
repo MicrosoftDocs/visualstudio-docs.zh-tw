@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 21fd7f17f7a990f95ce5c8b781e85807a10608c4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: dc0b4548ffa4e5efa75734b5528a7021cf122bfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921921"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>如何：變更功能區上的索引標籤位置
   您可以使用 [索引標籤 **集合編輯器]** 來變更功能區上的自訂索引標籤順序。 您可以在功能區上的內建索引標籤之前或之後放置自訂索引標籤。 內建索引標籤是已在 Microsoft Office 應用程式功能區上的索引標籤。 例如，[ **資料** ] 索引標籤是 Excel 中的內建索引標籤。

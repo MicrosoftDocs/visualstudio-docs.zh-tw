@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca6c8e92cd0b4755bd79b8e142a7e1d283f868d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 318e535d86dcd51f9c9bbfcfae8e228c8d7c20b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921345"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger 方法
 捕獲所有排程工作的陣列。

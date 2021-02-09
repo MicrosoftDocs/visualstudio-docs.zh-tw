@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 216bf2f19d528084685a2361a158e105e2284010
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: ac81d386f0e1104879701faba230d5384259fa25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560157"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921411"
 ---
 # <a name="expression-evaluator-architecture"></a>運算式評估工具架構
 > [!IMPORTANT]
@@ -37,7 +37,7 @@ ms.locfileid: "96560157"
  DE 會建立一個物件，該物件會執行 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 介面、將 `IDebugParsedExpression` 物件放入 `IDebugExpression2` 物件，並 `IDebugExpression2` 從傳回物件 `IDebugExpressionContext2::ParseText` 。
 
 ### <a name="evaluate-the-expression"></a>評估運算式
- Visual Studio 會呼叫 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 或 [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 來評估剖析的運算式。 這兩種方法都會[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)呼叫 EvaluateSync `IDebugExpression2::EvaluateSync` ， (立即呼叫方法，而 `IDebugExpression2::EvaluateAsync` 透過背景執行緒呼叫方法) 來評估剖析的運算式，並傳回代表已剖析運算式之值和類型的[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)介面。 `IDebugParsedExpression::EvaluateSync` 使用提供的 SH、address 和系結器，將剖析的運算式轉換為實際值（由介面表示） `IDebugProperty2` 。
+ Visual Studio 會呼叫 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 或 [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 來評估剖析的運算式。 這兩種方法都會[](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)呼叫 EvaluateSync `IDebugExpression2::EvaluateSync` ， (立即呼叫方法，而 `IDebugExpression2::EvaluateAsync` 透過背景執行緒呼叫方法) 來評估剖析的運算式，並傳回代表已剖析運算式之值和類型的[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)介面。 `IDebugParsedExpression::EvaluateSync` 使用提供的 SH、address 和系結器，將剖析的運算式轉換為實際值（由介面表示） `IDebugProperty2` 。
 
 ### <a name="for-example"></a>例如：
  在執行程式中叫用中斷點之後，使用者選擇在 [ **快速** 監看式] 對話方塊中查看變數。 此對話方塊會顯示變數的名稱、其值和類型。 使用者通常可以變更此值。

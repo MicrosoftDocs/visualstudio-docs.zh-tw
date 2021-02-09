@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Settings waterfall
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2ca1cdcc1da97f8fa0d5def89e4f437607b36dd9
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 283cb7b4a485389fa19e3756e79c35f1cec1041a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668751"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920501"
 ---
 # <a name="settings-waterfall"></a>設定瀑布圖
 

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e81d20dc179df76b759223c1460ca13bfceb5706
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 569a3bea98095afebb243c521db02410879b0b59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920361"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>逐步解說：使用功能區 XML 建立自訂索引標籤
   本逐步解說示範如何使用 **功能區 (XML)** 專案來建立自訂功能區索引標籤。
@@ -145,7 +145,7 @@ ms.locfileid: "97524886"
 
      這會在文件目前的游標位置上加入表格。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  您可以透過下列主題，進一步了解自訂 Office UI 的方式：
 
 - 自訂其他 Office 應用程式的功能區。 如需支援自訂功能區之應用程式的詳細資訊，請參閱 [功能區總覽](../vsto/ribbon-overview.md)。

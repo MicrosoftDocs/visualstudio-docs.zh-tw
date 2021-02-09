@@ -6,16 +6,16 @@ ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ce83684b77d4546915cdcf5980e68be0b6c6a125
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a6060b61f388b4db4e9284a96f5d924a84a76210
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922055"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
 
@@ -66,7 +66,7 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 您使用兩種命令列工具在 Windows 8 和 Windows Server 2012 的裝置上收集程式碼剖析資料，包括沒有安裝 Visual Studio 的裝置：
 
-|工具名稱|描述|
+|工具名稱|Description|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|從 UWP App 收集分析資料，以及從 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式收集樣本分析資料。|
 |[VSPerfCmd](../profiling/vsperfcmd.md)|從 Windows 8 桌面程式或 Windows Server 2012 中執行的應用程式，收集檢測、並行和階層互動分析資料。 從舊版 Windows 中收集所有類型的程式碼剖析資料。|

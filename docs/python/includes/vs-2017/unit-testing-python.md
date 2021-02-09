@@ -5,23 +5,23 @@ ms.date: 09/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 032732f19855b9ba5c97c2e5281e8385f9ace3be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 612d4bd7d66add8c3fe7c45e8f03ca3531b0b4c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535319"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920671"
 ---
 ## <a name="discover-and-view-tests"></a>探索及檢視測試
 
 依照慣例，Visual Studio 會將測試辨識為名稱以 `test` 開頭的方法。 若要查看此行為，請執行下列步驟：
 
-1. 開啟在 Visual Studio 中載入的 [Python 專案](../../managing-python-projects-in-visual-studio.md)，以滑鼠右鍵按一下專案，選取 [新增]**** > [新增項目]****，然後選取 [Python 單元測試]****，再選取 [新增]****。
+1. 開啟在 Visual Studio 中載入的 [Python 專案](../../managing-python-projects-in-visual-studio.md)，以滑鼠右鍵按一下專案，選取 [新增] > [新增項目]，然後選取 [Python 單元測試]，再選取 [新增]。
 
 1. 此動作會建立 *test1.py* 檔案，其中會具有會匯入標準 `unittest` 模組，從 `unittest.TestCase` 衍生測試類別，並在您直接執行指令碼的情況下叫用 `unittest.main()` 的程式碼：
 
@@ -37,7 +37,7 @@ ms.locfileid: "85535319"
         unittest.main()
     ```
 
-1. 視需要儲存檔案，然後使用 [測試]**** > [Windows]**** > [測試總管]**** 功能表命令，開啟 [測試總管]****。
+1. 視需要儲存檔案，然後使用 [測試] > [Windows] > [測試總管] 功能表命令，開啟 [測試總管]。
 
 1. **測試瀏覽器** 會在您的專案中搜尋測試，並顯示如下所示的專案。 按兩下測試會開啟其原始程式檔。
 
@@ -55,9 +55,9 @@ ms.locfileid: "85535319"
 
 在 **測試瀏覽器** 中，您可以透過各種不同的方式來執行測試：
 
-- [全部執行]**** 會執行所有顯示的測試 (視篩選條件而定)。
+- [全部執行] 會執行所有顯示的測試 (視篩選條件而定)。
 - [ **執行** ] 功能表可讓您以群組執行失敗、通過或不執行測試的命令。
-- 您可以選取一或多個測試，以滑鼠右鍵按一下，然後選取 [執行選取的測試]****。
+- 您可以選取一或多個測試，以滑鼠右鍵按一下，然後選取 [執行選取的測試]。
 
 測試會在背景執行，而且 **Test Explorer** 會在每個測試完成時更新其狀態：
 
@@ -65,7 +65,7 @@ ms.locfileid: "85535319"
 
     ![test_A 通過狀態](../../media/unit-test-A-pass.png)
 
-- 失敗的測試會顯示紅色十字，以及會顯示測試執行的主控台輸出和 `unittest` 輸出的 [輸出]**** 連結：
+- 失敗的測試會顯示紅色十字，以及會顯示測試執行的主控台輸出和 `unittest` 輸出的 [輸出] 連結：
 
     ![test_A 失敗狀態](../../media/unit-test-A-fail.png)
 

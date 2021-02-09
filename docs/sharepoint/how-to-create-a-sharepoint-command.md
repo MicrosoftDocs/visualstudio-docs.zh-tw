@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 51b80124f7cf550843ad346e9d1e1c0b21ccd0f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923350"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>如何：建立 SharePoint 命令
   如果您想要在 SharePoint 工具擴充功能中使用伺服器物件模型，您必須建立自訂 *SharePoint 命令* 以呼叫 API。 您可以在可以直接呼叫伺服器物件模型的元件中定義 SharePoint 命令。
@@ -79,7 +79,7 @@ ms.locfileid: "94850698"
 ## <a name="deploying-the-command"></a>部署命令
  若要部署命令，請將命令元件包含在相同的 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 延伸模組 (*Vsix*) 封裝和使用命令的延伸模組元件。 您也必須在 extension.vsixmanifest 檔案中加入命令元件的專案。 如需詳細資訊，請參閱 [Visual Studio 中的部署 SharePoint 工具的擴充](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)功能。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [How to：執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [逐步解說：擴充伺服器總管以顯示 web 元件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

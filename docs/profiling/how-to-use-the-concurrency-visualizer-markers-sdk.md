@@ -6,15 +6,15 @@ ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 24659a101da59ed3a8ca6389debfde6c08a038ed
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: fab15ce9d3782b2ef7e38d5cca0e2b71d77fbc46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920755"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>如何：使用並行視覺化檢視標記 SDK
 本主題說明如何使用並行視覺化檢視 SDK 建立範圍和寫入旗標、訊息和警示。
@@ -167,5 +167,5 @@ ms.locfileid: "97815603"
 
      ![並行視覺化中 [執行緒] 視圖的螢幕擷取畫面，其中顯示具有訊息、警示和旗標範圍的標記、旗標和訊息序列。](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)

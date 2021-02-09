@@ -8,27 +8,27 @@ helpviewer_keywords:
 - PROCESS_INFO_FLAGS enumeration
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 36c4cbbe17a109eacd69b76500e8c10d21d2d554
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd20b194623a02ff3852d0f0734f3dc7d7e1cfc6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713956"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923087"
 ---
 # <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 
 描述或指定進程的屬性。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
-enum enum_PROCESS_INFO_FLAGS { 
+enum enum_PROCESS_INFO_FLAGS { 
    PIFLAG_SYSTEM_PROCESS    = 0x00000001,
    PIFLAG_DEBUGGER_ATTACHED = 0x00000002,
    PIFLAG_PROCESS_STOPPED   = 0x00000004,
@@ -38,7 +38,7 @@ typedef DWORD PROCESS_INFO_FLAGS;
 ```
 
 ```csharp
-enum enum_PROCESS_INFO_FLAGS { 
+enum enum_PROCESS_INFO_FLAGS { 
    PIFLAG_SYSTEM_PROCESS    = 0x00000001,
    PIFLAG_DEBUGGER_ATTACHED = 0x00000002,
    PIFLAG_PROCESS_STOPPED   = 0x00000004,
@@ -66,7 +66,7 @@ enum enum_PROCESS_INFO_FLAGS { 
 
 這些旗標可以與位結合 `OR` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 標頭： msdbg。h
 

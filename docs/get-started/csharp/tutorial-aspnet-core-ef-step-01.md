@@ -11,18 +11,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f6d069bfa462b8aa75fc9247c08b3662c4a445fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6cf4429607f8ceb2a3ed4a5a1cb91274a201698
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922796"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>教學課程：使用 Entity Framework 搭配 Visual Studio 2019 來建立您的第一個 ASP.NET Core 應用程式
 
@@ -48,29 +48,29 @@ _觀看此影片並跟著操作，以安裝 Visual Studio 並建立您的第一�
 
 ## <a name="start-the-installer"></a>啟動安裝程式
 
-下載完成之後，按一下 [執行]**** 來啟動安裝程式。
+下載完成之後，按一下 [執行] 來啟動安裝程式。
 
 ![Visual Studio 2019 安裝程式](media/vs-2019/vs2019-installer.png)
 
 ## <a name="choose-workloads"></a>選擇工作負載
 
-Visual Studio 可以用於許多不同種類的開發，且工作負載讓您輕鬆就能下載您想要建置的應用程式類型所需的所有項目。 目前請選擇 [ASP.NET 與網頁程式開發]**** 和 [.NET Core 跨平台開發]**** 工作負載。 您稍後一律可重新啟動安裝程式，以安裝其他工作負載和元件。
+Visual Studio 可以用於許多不同種類的開發，且工作負載讓您輕鬆就能下載您想要建置的應用程式類型所需的所有項目。 目前請選擇 [ASP.NET 與網頁程式開發] 和 [.NET Core 跨平台開發] 工作負載。 您稍後一律可重新啟動安裝程式，以安裝其他工作負載和元件。
 
 ![Visual Studio 2019 選擇工作負載](media/vs-2019/vs2019-choose-workloads.png)
 
 ## <a name="install"></a>安裝
 
-按一下 [安裝]**** 並讓安裝程式下載並安裝 Visual Studio。
+按一下 [安裝] 並讓安裝程式下載並安裝 Visual Studio。
 
 ## <a name="run-visual-studio-for-the-first-time"></a>第一次執行 Visual Studio
 
-當安裝程式完成時，Visual Studio 應該會自動啟動。 系統可能會提示您登入，這樣提供一些很棒的相關功能，但目前您可以選擇稍後再登入。 接下來，您可以選擇佈景主題和開發設定。 設定這些選項之後，您就能啟動您的第一個專案。 按一下 [建立新專案]****，然後選擇 [ASP.NET Core Web 應用程式]****。
+當安裝程式完成時，Visual Studio 應該會自動啟動。 系統可能會提示您登入，這樣提供一些很棒的相關功能，但目前您可以選擇稍後再登入。 接下來，您可以選擇佈景主題和開發設定。 設定這些選項之後，您就能啟動您的第一個專案。 按一下 [建立新專案]，然後選擇 [ASP.NET Core Web 應用程式]。
 
 ![Visual Studio 2019 建立新的 ASP.NET Core Web 應用程式專案](media/vs-2019/vs2019-create-new-project.png)
 
 ## <a name="explore-aspnet-core-project-types"></a>探索 ASP.NET Core 專案類型
 
-您可以選擇您的專案名稱和位置，然後挑選 [建立]****。 現在，選擇您 ASP.NET Core 應用程式要使用的範本。 您可選擇下列選項：
+您可以選擇您的專案名稱和位置，然後挑選 [建立]。 現在，選擇您 ASP.NET Core 應用程式要使用的範本。 您可選擇下列選項：
 
 - 空白。 空白專案範本可讓您從最初開始。
 - API。 最適合 Web API。
@@ -92,7 +92,7 @@ Visual Studio 可以用於許多不同種類的開發，且工作負載讓您輕
 
 ![Visual Studio 2019 選擇 ASP.NET Core 專案選項](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在下一個影片中，您將會深入了解您的第一個 ASP.NET Core 專案。
 
