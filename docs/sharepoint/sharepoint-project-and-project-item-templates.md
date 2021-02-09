@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8482a6185f670ce1bb340ff40fe277b751a39c06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892329"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 專案和專案專案範本
   下列各節描述可用的 SharePoint 專案和專案專案範本，以及它們的使用方式。
@@ -104,7 +104,7 @@ ms.locfileid: "95970373"
 
   事件接收器專案專案會建立具有單一類別檔案的 **事件接收器** 資料夾，其中包含您在 [ **SharePoint 自訂嚮導]** 中建立專案時所指定之所有事件的事件處理常式。 當新增、更新、刪除或移除專案（例如檔案、欄位、專案、清單、附件、網頁元件和工作流程）時，事件接收器類別可以處理在 SharePoint 網站上發生的事件。 如需詳細資訊，請參閱 [如何：建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md) 和 [建立區塊：事件處理](/previous-versions/office/developer/sharepoint-2010/ee535057(v=office.14))。
 
-### <a name="list"></a>清單
+### <a name="list"></a>List
  清單是可重複使用之基底 SharePoint 清單定義的實例，例如行事曆或工作清單。 在您的方案中加入清單之後，清單設計工具可讓您將網站資料行加入至清單，並建立自訂清單資料行。 這包括來自內容類型的網站資料行。 您可以指定清單的 *視圖* ，以決定將出現在清單中的資料行。 如需詳細資訊，請參閱逐步解說：建立 SharePoint 和建立區塊的 [網站資料行、內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) [：清單和文件庫](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14))。
 
 ### <a name="module"></a>模組

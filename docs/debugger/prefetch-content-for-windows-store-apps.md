@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 33eb7aa0559fc7a6170da658ccc9f00653968bb6
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 8f7cffe7f1e6edc482d4fec68908449c901d4ca2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891536"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>在 Visual Studio 中使用預先提取的內容來將 UWP 應用程式偵錯工具
 
@@ -41,5 +41,5 @@ ms.locfileid: "97975026"
 > [!NOTE]
 > 當您新增或修改指定的 Web 內容時，請重複上述步驟。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Blog 文章：在 Visual Studio 2013 Update 2 中觸發 Windows Store 應用程式的預先提取](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

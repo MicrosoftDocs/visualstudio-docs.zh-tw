@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 88ad85af-3f56-4df1-98b6-fab34c1e5874
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f066dd687f4bfbb6b286667abe0bb67224a7b763
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 5963bcbfb74c6a7722c02b59459a6334d461b980
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891783"
 ---
 # <a name="message-options-dialog-box"></a>訊息選項對話方塊
 使用此對話方塊來選取要在 [ [訊息] 視圖](../debugger/messages-view.md)中列出的訊息。 若要顯示此對話方塊，請從 **Spy** 功能表選擇 [**記錄訊息**]。

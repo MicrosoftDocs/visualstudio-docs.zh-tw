@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: a8cd8c0b74dc06a72e7c20bd3af11fd91df07eb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891511"
 ---
 # <a name="process-search-dialog-box"></a>處理序搜尋對話方塊
 使用這個對話方塊，即可在 [ [進程] View](../debugger/processes-view.md)中尋找並選取特定進程的節點。 若要顯示此對話方塊，請將焦點移至 [ **進程** ] 視圖視窗。 然後選擇 [**搜尋**] 功能表中的 [**尋找進程**]。

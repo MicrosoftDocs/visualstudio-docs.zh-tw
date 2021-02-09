@@ -22,15 +22,15 @@ helpviewer_keywords:
 - ProjectItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 466bc68ca002914b64698d7cd87f98ff276bfc0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892277"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint 專案專案架構參考
   Visual Studio 使用 SharePoint 專案專案架構來驗證 *.spdata* 檔案的內容。 *.Spdata* 檔案會指定 SharePoint 專案專案的內容和行為。 如需 SharePoint 專案專案內容的詳細資訊，請參閱 [建立 sharepoint 專案專案的專案範本和專案範本](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
@@ -39,7 +39,7 @@ ms.locfileid: "95442543"
 
  根項目是「 [專案專案](../sharepoint/projectitem-element.md) 」元素。 下表描述架構定義的所有元素。
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|表示與 SharePoint 專案專案相關聯的自訂資料項目集合。|
 |[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|表示與 SharePoint 專案專案相關聯的自訂資料項目（以索引鍵/值格式表示）。 索引鍵和值都必須是字串。|

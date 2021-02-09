@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 03da1c8052140bbe23ce4d99c12d72baef18898f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891952"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 方案開發總覽 (VSTO) 
   您可以使用 Microsoft Office 做為方案的前端，以善用熟悉的 Microsoft Office 使用者介面和工具 (例如 Word 的文書處理功能、Excel 的資料分析功能，以及 Outlook 的電子郵件管理功能)。 您可以使用 Visual Studio 來開發方案，以自訂 Office 應用程式，以及加入符合商務流程需求的特定功能。 例如，您可以將 Word 轉變成可將已存在的組件 (這些組件可設定為是否可編輯) 組合為合約的合約產生器。 藉由 Excel，您可以建立自動化的預算工作表，為不同的專案進行自訂。 如果您使用網頁式的架構，則您的使用者也可以離線使用 Office 方案，使複雜的方案比原本可能的更加實用。

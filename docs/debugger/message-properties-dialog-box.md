@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 58e9dc24-baf6-4ab8-916c-aea28b72e3b0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f58ad7344c7de9a9486fcb3ccefbf263688926f
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: eee5d21e013dd43a361a229a3189cc44d6294e70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891744"
 ---
 # <a name="message-properties-dialog-box"></a>訊息屬性對話方塊
 使用此對話方塊可深入瞭解特定的訊息。 若要顯示此對話方塊，請將焦點移至 [ [訊息] 視圖](../debugger/messages-view.md) 視窗。 選取樹狀結構中的任何訊息節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。

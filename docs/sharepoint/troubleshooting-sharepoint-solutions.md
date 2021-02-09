@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6b0e031e96d2543ae0bb109f243824125f431a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892290"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>疑難排解 SharePoint 方案
   當您使用偵錯工具來進行 SharePoint 方案的偵錯工具時，可能會發生下列問題或警示 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 如需詳細資訊，請參閱 [SharePoint 2007 工作流程解決方案的調試](/previous-versions/bb386166(v=vs.100))程式。
@@ -49,7 +49,7 @@ ms.locfileid: "95970277"
 ### <a name="error-message"></a>錯誤訊息
  「不正確字元」錯誤訊息。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  SharePoint 專案和專案項目的名稱只能使用下列字元：
 
 - 英數位元 ASCII 字元
@@ -60,7 +60,7 @@ ms.locfileid: "95970277"
 
 - 逗號 (,)
 
-- 底線 (_) 
+- 底線 (_)
 
 - 虛線 (-) 
 
@@ -74,7 +74,7 @@ ms.locfileid: "95970277"
 ### <a name="error-message"></a>錯誤訊息
  封裝時出現「無效字元」的錯誤訊息。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  欄位定義的 ID 必須是以大括號括住的 GUID，如下列範例所示：
 
 ```xml
@@ -103,7 +103,7 @@ ms.locfileid: "95970277"
 ### <a name="error-message"></a>錯誤訊息
  無。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  因為 webtemp 網站定義設定檔的 **Path** 屬性值不正確，例如 *webtemp_SiteDefinitionProject1.xml*，所以會發生此問題。 在 webtemp 檔案的 [ **路徑** ] 屬性（位於 **部署位置** 底下），將1033變更為適當的地區設定 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] 。 例如，若要使用日文地區設定，請將值變更為1041。 如需詳細資訊，請參閱 [Microsoft 指派的地區設定識別碼](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c)。
 
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>在乾淨的系統上部署工作流程專案時，出現錯誤
@@ -112,7 +112,7 @@ ms.locfileid: "95970277"
 ### <a name="error-message"></a>錯誤訊息
  找不到 SharePoint 清單：工作流程歷程記錄。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  發生此錯誤的原因是遺失工作流程歷程記錄清單。 由於開發環境是乾淨的系統，因此不會部署任何工作流程，而且工作流程歷程記錄清單還不存在。 若要解決此問題，請重新開啟工作流程 wizard，這會導致建立工作流程歷程記錄清單。
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>重新輸入工作流程嚮導
@@ -131,7 +131,7 @@ ms.locfileid: "95970277"
 
 - SharePoint 網站位置無效。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
 
 - 安裝 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]。
 
@@ -143,7 +143,7 @@ ms.locfileid: "95970277"
 ### <a name="error-message"></a>錯誤訊息
  無。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  之所以發生此問題，是因為功能範圍必須是「網站」才能處理網站層級的事件，但事件接收器專案的預設功能範圍是「Web」。 受影響的 Web 事件如下：
 
 - 正在刪除網站 (WebDeleting) 
@@ -171,7 +171,7 @@ ms.locfileid: "95970277"
 
 - 名稱為 ' ' 的 IMetadataObject \<*model name*> 有重複的欄位 ' Name ' 中的值 .。。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  若要解決此問題，請手動刪除模型，然後重新部署方案。  您可以使用下列其中一種工具來刪除模型：
 
 - SharePoint 2010 管理中心。 如需詳細資訊，請參閱 Microsoft TechNet 網站上的 [BDC 模型管理](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14)#delete-a-bdc-model) 。
@@ -187,7 +187,7 @@ ms.locfileid: "95970277"
 
 - '/' 應用程式中有伺服器錯誤。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
 
 ##### <a name="to-resolve-this-issue"></a>若要解決此問題
 
@@ -205,7 +205,7 @@ ms.locfileid: "95970277"
 ### <a name="error-message"></a>錯誤訊息
  部署步驟「啟動功能」發生錯誤：在目前網站集合或子網站中找到功能 [*guid*] 中定義的欄位 *識別碼 [guid*]。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  此錯誤是因為中的 [匯入可重複使用的工作流程] 專案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 未變更工作表單域識別碼所發生的欄位識別碼衝突所造成。 如果您在包含原始工作流程的相同伺服器上部署匯入的工作流程，就會發生欄位識別碼衝突。
 
  若要解決這個問題，請使用 [尋找和取代] 功能，在所有匯入的工作流程檔案中變更 [欄位識別碼] 屬性的值。
@@ -216,7 +216,7 @@ ms.locfileid: "95970277"
 ### <a name="error-message"></a>錯誤訊息
  組建錯誤：部署步驟「啟動功能」發生錯誤：檔案 Template\Features [匯 \\ *入專案*<em>功能</em>*名稱*] \Files\Lists \\ [*舊* 的 <em>清單名稱</em>] \Schema.xml 不存在。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  當您匯入清單實例時，名為 CustomSchema 的屬性會加入至清單實例的 Elements.xml 檔案中。 Elements.xml 包含清單實例的自訂 schema.xml 路徑。 當您在中重新命名清單實例時 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，自訂 schema.xml 的部署路徑會變更，但 CustomSchema 屬性的路徑值不會更新。 因此，當此功能啟動時，清單實例無法在 CustomSchema 屬性所指定的舊路徑中找到 *schema.xml* 的檔案。
 
  若要解決此問題，請在 CustomSchema 屬性中更新 *schema.xml* 檔案的部署位置路徑。
@@ -227,7 +227,7 @@ ms.locfileid: "95970277"
 ### <a name="error-message"></a>錯誤訊息
  Internet Information Services (IIS) 終止正在進行調試的 Web 服務器進程。 您可以在 IIS 中設定應用程式集區 Ping 設定來避免這個問題發生。 如需詳細資訊，請參閱說明。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  根據預設，IIS 應用程式集區會等待90秒，讓應用程式在關閉應用程式之前回應。 此處理程式稱為「ping」應用程式。 若要解決此問題，您可以增加等候時間或完全停用應用程式 ping。
 
 ##### <a name="to-access-the-iis-app-pool-settings"></a>存取 IIS 應用程式集區設定
@@ -256,7 +256,7 @@ ms.locfileid: "95970277"
 ### <a name="error-message"></a>錯誤訊息
  '/' 應用程式中有伺服器錯誤。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  發生這種情況的原因是，當您關閉 SharePoint 方案的偵測會話之後，自動撤銷功能就會撤銷方案。 收回會從 SharePoint 刪除清單定義，但不會刪除清單的實例。 清單實例需要基礎清單定義。
 
  若要解決此問題，請在功能表列上選擇 [**組建** 部署] 來部署解決方案  >  ****。  (不要藉由選擇 **F5** 鍵來將方案進行偵錯工具。 ) 然後刪除 SharePoint 中的清單實例。
@@ -267,7 +267,7 @@ ms.locfileid: "95970277"
 ### <a name="error-message"></a>錯誤訊息
  無。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  若要避免覆寫匯出的來源網站上的方案，請變更 SolutionID 的 Guid，以及專案中所有匯入功能的功能識別碼 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
 ## <a name="error-appears-when-debugging-starts"></a>啟動調試時出現錯誤
@@ -276,7 +276,7 @@ ms.locfileid: "95970277"
 ### <a name="error-message"></a>錯誤訊息
  無法載入 Web.config 設定檔。 請檢查檔案中是否有任何格式不正確的 XML 元素，然後再試一次。 發生下列錯誤：指定的索引鍵不存在於字典中。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  若要解決此問題，請確定 Visual Studio 中 SharePoint 專案的 [網站 URL] 屬性值符合指派給 Web 應用程式之備用存取對應預設區域的 URL。 使用另一個區域 (例如內部網路) 做為 URL 無法解決此錯誤。 專案的網站 URL 和預設區域中的 URL 必須相符。 若要存取備用存取對應，請開啟 SharePoint 2010 管理中心公用程式，選擇 [ **應用程式管理** ] 連結，然後在 [ **Web 應用程式**] 下，選擇 [ **設定備用存取** 對應] 連結。 如需詳細資訊，請參閱 [建立 Web 應用程式的區域](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263087(v=office.12))。
 
 ## <a name="see-also"></a>另請參閱

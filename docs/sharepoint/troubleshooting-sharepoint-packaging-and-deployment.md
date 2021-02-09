@@ -22,15 +22,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f3ef56ba868700699eaaeb8ec88291fd6f8d8d32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95969948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892303"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>針對 SharePoint 封裝和部署進行疑難排解
   這個主題涵蓋您在封裝和部署 SharePoint 方案時可能會遇到的各種問題。
@@ -52,8 +52,8 @@ ms.locfileid: "95969948"
 |值|描述|
 |-----------|-----------------|
 |自動|偵測到衝突並自動解決衝突。|
-|Prompt|偵測到衝突，並在解決衝突之前將其報告給開發人員。|
-|None|未偵測到衝突。|
+|提示|偵測到衝突，並在解決衝突之前將其報告給開發人員。|
+|無|未偵測到衝突。|
 
 ## <a name="differences-between-f5-deployment"></a>F5 部署之間的差異
  當您使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 SharePoint 專案部署至本機 SharePoint 伺服器來進行測試和偵錯時，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 還會執行一些額外步驟。
@@ -72,7 +72,7 @@ ms.locfileid: "95969948"
 ### <a name="error-message"></a>錯誤訊息
  無。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  若要解決這個問題，請執行下列步驟：
 
 1. 如 Microsoft 支援服務文章修正中所述，安裝更新 KB967535 [：可修正在 Windows Vista 和 Windows Server 2008 的 IIS 7.0 上 ASP.NET 的兩個問題的修正程式](https://support.microsoft.com/help/967535)。
@@ -89,7 +89,7 @@ ms.locfileid: "95969948"
 ### <a name="error-message"></a>錯誤訊息
  部署步驟「加入方案」中發生錯誤：無法擷取方案中的封包檔。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  若要解決這個問題，請移除 SharePoint 專案項目名稱中的括號。
 
 ## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>在不同的 web 應用程式上將視覺 web 元件部署至網站時，出現錯誤
@@ -98,7 +98,7 @@ ms.locfileid: "95969948"
 ### <a name="error-message"></a>錯誤訊息
  部署步驟「加入方案」中發生錯誤：識別碼為 [#] 的功能已經安裝在此伺服器陣列中。 請使用強制屬性明確重新安裝功能。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  這個錯誤是由於在 SharePoint 中撤銷視覺 Web 組件功能的方式不當所致。 若要成功部署視覺網頁元件，請選擇 **F5** 鍵重新部署方案。
 
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>部署嵌套的使用者控制項時出現警告
@@ -107,7 +107,7 @@ ms.locfileid: "95969948"
 ### <a name="error-message"></a>錯誤訊息
  警告1元素 ' [*Control Name*] ' 不是已知的元素。 當網站中發生編譯錯誤或 web.config 檔案遺失時，就會發生這個狀況。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
  如果 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 專案系統不知道嵌套使用者控制項，它就無法提供 IntelliSense，而且會發出警告。 如果未建置專案而且設計工具並未關閉及重新開啟，或者已啟用自動撤銷選項 (這樣會在偵錯之後從 SharePoint 登錄區撤銷使用者控制項)，則專案系統不會感知巢狀使用者控制項。
 
  若要移除這項警告，請建置專案，然後關閉設計工具再重新開啟，或者停用專案的自動撤銷選項。 若要這樣做，請在 [專案屬性] 對話方塊的 [ **SharePoint** ] 索引標籤上，清除 [**在調試後自動** 撤銷] 核取方塊。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 46907a60-25e2-470d-a650-ae7349f868fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 21bc1af4ff62fb9c0b8054898bf724616bbf2921
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: daee4b0295d42607177031f5ea8a3a512ee9b68e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892420"
 ---
 # <a name="c-library-reference"></a>C 程式庫參考
 本節包含並行視覺化檢視 SDK 的參考資訊。

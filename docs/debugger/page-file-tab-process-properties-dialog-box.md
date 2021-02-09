@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: daf41a06-8a55-48f6-95f5-49a8416bd308
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 47f4a2e9215cb2e98fdfefecdf978cb4a442ad84
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: b762fc95d510d5b99a2d4f8f939ef1801b5e70cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975052"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891562"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、分頁檔索引標籤
 您可以使用 [ **分頁檔** ] 索引標籤來檢查進程的分頁檔案。 若要顯示 [ [處理常式屬性] 對話方塊](../debugger/process-properties-dialog-box.md)，請將焦點移至 [ [進程] 視圖](../debugger/processes-view.md) 視窗。 選取樹狀結構中的任何進程節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。
 
  [ **分頁檔** ] 索引標籤提供下列設定：
 
-|進入|描述|
+|進入|Description|
 |-----------|-----------------|
 |**分頁檔位元組**|此進程在分頁檔中使用的目前頁面數目。 分頁檔案會儲存進程所使用但不包含在其他檔案中的資料頁面。 分頁檔案是由所有進程使用，而且分頁檔案中缺少空間，可能會在其他進程正在執行時發生錯誤。|
 |**尖峰分頁檔位元組**|此進程在分頁檔案中使用的最大頁面數目。|

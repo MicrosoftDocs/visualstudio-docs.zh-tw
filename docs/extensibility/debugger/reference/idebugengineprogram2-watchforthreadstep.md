@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf0474d527b7c6f1d180201a463f52a0b17d18fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8168b0813eb99f4f70c8a5d8ffbdae4f6fce2094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730350"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892615"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 監看執行 (或停止監看執行) 發生在指定的執行緒上。
@@ -28,7 +28,7 @@ ms.locfileid: "80730350"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT WatchForThreadStep( 
+HRESULT WatchForThreadStep( 
    IDebugProgram2* pOriginatingProgram,
    DWORD           dwTid,
    BOOL            fWatch,
@@ -37,7 +37,7 @@ HRESULT WatchForThreadStep( 
 ```
 
 ```csharp
-int WatchForThreadStep( 
+int WatchForThreadStep( 
    IDebugProgram2 pOriginatingProgram,
    uint           dwTid,
    int            fWatch,

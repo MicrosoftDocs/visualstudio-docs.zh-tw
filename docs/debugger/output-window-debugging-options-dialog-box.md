@@ -16,15 +16,15 @@ dev_langs:
 ms.assetid: d67387c2-39e9-4790-93bc-e41bff12fb9c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f74b0e490cf8b2baaa8818fa8f8eebb7842a30
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 3c92bada0777c01cd8999b30597999e55f113a2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891549"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>選項對話方塊、偵錯、輸出視窗
 您可以指定要在 [輸出] 視窗中顯示哪些類型的偵錯資訊。 若要顯示這些選項，請開啟 [工具] 功能表、按一下 [選項]、展開 [偵錯] 節點，然後按一下 [輸出] 視窗。
@@ -37,6 +37,6 @@ ms.locfileid: "97975013"
 
 如果您需要還原預設設定，可以使用 [**工具** 匯  >  **入和匯出設定**]  >  **重設所有設定**。 如果您只想要重設設定子集，請先在 [匯 **入和匯出設定] 嚮導** 中儲存設定，然後再進行要測試的變更，然後稍後再匯入儲存的設定。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [選項對話方塊、調試](../debugger/debugging-options-dialog-box.md)
 - [輸出視窗](../ide/reference/output-window.md)

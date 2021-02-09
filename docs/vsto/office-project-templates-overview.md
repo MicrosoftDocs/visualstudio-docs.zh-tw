@@ -29,15 +29,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], project templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5e3203eb4bbd7339f5e59ecffea8436b02180b8b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: af01bf165c823ce34957e4a9eba38ef90c5344a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892030"
 ---
 # <a name="office-project-templates-overview"></a>Office 專案範本總覽
   Visual Studio 中的 Microsoft Office 開發人員工具包含專案範本，用來建立下列類型的 Office 方案：

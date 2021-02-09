@@ -6,15 +6,15 @@ ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 481113e9f5e2f5b66aec5f4dad29f581462165ca
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 73d6558264bb51f011d8f04b5a3096e95702c49b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892342"
 ---
 # <a name="perftips"></a>效能提示
 
@@ -60,7 +60,7 @@ Visual Studio 偵錯工具 *「效能提示」* (PerfTips) 和已整合偵錯工
 
 2. 核取或清除 [偵錯時啟用診斷工具] 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

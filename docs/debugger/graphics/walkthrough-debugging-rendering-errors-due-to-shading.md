@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b42aa5638b668d90fa44335c2d532c9bcddddc2b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 491a2c5ab0bcb923d9999bd55249150d33a650ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995079"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891861"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：對因著色而產生的顯示錯誤進行偵錯
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷來調查因為著色器錯誤而不正確著色的物件。
@@ -28,7 +28,7 @@ ms.locfileid: "96995079"
 
 - 使用 [HLSL 偵錯工具]  來檢查像素和端點著色器。
 
-## <a name="scenario"></a>案例
+## <a name="scenario"></a>狀況
  物件著色不正確通常是因為端點著色器將不正確或不完整的資訊傳遞給像素著色器。
 
  在此案例中，您最近將物件新增至您的應用程式。 您也加入了新的頂點和圖元著色器，以轉換物件並為其提供獨特的外觀。 但在測試期間執行應用程式時，該物件卻呈現為純黑色。 透過使用圖形診斷，您可擷取圖形記錄問題，以偵錯應用程式。 此問題在應用程式中看起來像這樣的影像：

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a52da28d01eac4f04081497888fbbfccaf4495e2
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: d48be382e222c9ca494237ae6b72bae54bb90d62
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975130"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891445"
 ---
 # <a name="processes-view"></a>處理序檢視
 [進程] 視圖會顯示您系統上所有使用中進程的樹狀結構。 系統會顯示處理序識別碼和模組名稱。 如果您想要檢查特定的系統進程（通常會對應至執行中的程式），請使用 [進程]。 系統會以模組名稱來識別處理常式，或將它們指定為「系統進程」。

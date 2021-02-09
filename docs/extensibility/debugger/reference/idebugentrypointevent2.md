@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 531ff846f2488193ed7f3d9f200a1a4ea04df6f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0373557b13ae6532a34235ff53e1dc38d2813597
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892576"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 當程式即將執行其第一個使用者程式碼指令時，debug engine (DE) 會將此介面傳送至會話 debug manager (SDM) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEntryPointEvent2 : IUnknown
@@ -39,7 +39,7 @@ IDebugEntryPointEvent2 : IUnknown
 
  當取消傳送時 `IDebugEntryPointEvent2` ，目前的程式碼位置應該在使用者程式碼的第一個指令中，例如 `main` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

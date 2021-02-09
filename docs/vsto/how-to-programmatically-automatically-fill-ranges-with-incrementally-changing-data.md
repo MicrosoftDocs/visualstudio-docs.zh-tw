@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks, filling ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dc80b4b589eb46aefa9ef6d75384ed17bb1b7c8c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 64af8ddfa0d3d086b661483e76cb9b2bd82ae5c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892069"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>如何：以程式設計方式自動以累加方式變更資料填滿範圍
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>物件的方法可 <xref:Microsoft.Office.Interop.Excel.Range> 讓您自動以值填滿工作表中的範圍。 最常見的 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 方法是在範圍內以累加方式儲存或減少值。 您可以藉由提供列舉中的選擇性常數來指定行為 <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> 。

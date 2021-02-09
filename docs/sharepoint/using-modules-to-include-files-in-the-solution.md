@@ -13,15 +13,15 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa0d6fe1855a1d60a0e1293e8422791f8148bd04
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 86aea9800d0eaad4c36d5598e52dd7a35f3a7534
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892173"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>使用模組來包含方案中的檔案
   有時候您可能會想要將檔案部署至 SharePoint 伺服器，而不考慮其檔案類型，例如新的主版頁面。 若要這樣做，您可以使用 *模組* (不會與) 的程式 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 代碼模組混淆。 模組是 SharePoint 方案中檔案的容器。 部署方案時，模組中的檔案會複製到 SharePoint 伺服器上的指定資料夾中。
@@ -50,7 +50,7 @@ ms.locfileid: "95442517"
 
  *Elements.xml* 檔案包含下列元素：
 
-|元素名稱|描述|
+|元素名稱|Description|
 |------------------|-----------------|
 |元素|包含模組中定義的所有元素。|
 |模組|Module 元素有單一屬性 *name*，可指定格式的模組名稱 `<Module Name="Module1">` 。<br /><br /> 請注意，如果您變更模組的名稱 (或其 *資料夾名稱* 屬性) ，您必須手動更新 module 元素中的名稱。<br /><br /> 如果您在 Module 元素中為檔案 (s) 指定子目錄， [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) 將會自動為其建立相符的目錄結構。|

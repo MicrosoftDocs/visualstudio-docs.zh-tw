@@ -20,22 +20,22 @@ helpviewer_keywords:
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e97fd8979235f8ea89b43c6466b3119debe5b3ca
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: f67035dc2f7a33fb436c0c51ba2214272ab2cf79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891419"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 您可以偵錯已部署在不同電腦的 Visual Studio 應用程式。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
 
 如需遠端偵錯程式的深入指示，請參閱下列主題。
 
-|案例|連結|
+|狀況|連結|
 |-|-|-|
 |Azure App Service|[Azure 上的遠端偵錯程式 ASP.NET](../debugger/remote-debugging-azure.md) ，或 Visual Studio Enterprise 的 [快照偵錯工具](../debugger/debug-live-azure-applications.md)|
 |Azure VM|[在 Azure 上對 ASP.NET 進行遠端偵錯](../debugger/remote-debugging-azure.md)|
@@ -117,9 +117,9 @@ ms.locfileid: "98205667"
 
 4. 加入使用者帳戶的名稱和密碼。
 
-    您可能需要將 [**以服務方式登** 入] 使用者權限新增至此帳戶 (在 [**開始**] 頁面或視窗中尋找 [**本機安全性原則**] ([secpol.msc])  (或在命令提示字元中輸入 **secpol.msc**) 。 視窗出現時，請按兩下 [使用者權限指派] ，然後在右窗格中尋找 [以服務方式登入]  。 對它按兩下。 將使用者帳戶新增至 [屬性] 視窗，然後按一下 [確定]。 按 [下一步]  。
+    您可能需要將 [**以服務方式登** 入] 使用者權限新增至此帳戶 (在 [**開始**] 頁面或視窗中尋找 [**本機安全性原則**] ([secpol.msc])  (或在命令提示字元中輸入 **secpol.msc**) 。 視窗出現時，請按兩下 [使用者權限指派] ，然後在右窗格中尋找 [以服務方式登入]  。 對它按兩下。 將使用者帳戶新增至 [屬性] 視窗，然後按一下 [確定]。 按一下 [下一步] 。
 
-5. 選取您要遠端工具與之通訊的網路類型。 必須至少選取一種網路類型。 如果此電腦經由網域連線，您就必須選擇第一個項目。 如果此電腦經由工作群組或家用群組連線，您就必須選擇第二個或第三個項目。 按 [下一步]  。
+5. 選取您要遠端工具與之通訊的網路類型。 必須至少選取一種網路類型。 如果此電腦經由網域連線，您就必須選擇第一個項目。 如果此電腦經由工作群組或家用群組連線，您就必須選擇第二個或第三個項目。 按一下 [下一步] 。
 
 6. 如果可以啟動服務，您就會看到 [您已順利完成 Visual Studio 遠端偵錯工具組態精靈] 。 如果無法啟動服務，您就會看到 [無法完成 Visual Studio 遠端偵錯工具組態精靈] 。 此頁面也會提供啟動服務所需遵循的一些祕訣。
 
@@ -133,7 +133,7 @@ ms.locfileid: "98205667"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [設定 Windows 防火牆以進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

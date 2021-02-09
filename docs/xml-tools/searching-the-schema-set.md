@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c73af4f40abddaaba15e3b2cc785ab412e8884e4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2f924e46fa4d32fbea9071bd8a19268f2ee1652e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891874"
 ---
 # <a name="search-the-schema-set"></a>搜尋結構描述集合
 
@@ -27,7 +27,7 @@ ms.locfileid: "94351514"
 
 ## <a name="keyword-search"></a>關鍵字搜尋
 
-您可以在 **XML 架構瀏覽器** 工具列的 [ **搜尋 SchemaSet** ] 文字方塊中輸入子字串，以執行關鍵字搜尋。
+您可以在 **XML 架構瀏覽器** 工具列的 [**搜尋 SchemaSet** ] 文字方塊中輸入子字串，以執行關鍵字搜尋。
 
 ![XML 結構描述總管關鍵字搜尋](../xml-tools/media/schemaexplorersearch.gif)
 
@@ -45,7 +45,7 @@ ms.locfileid: "94351514"
 
 ## <a name="display-and-navigate-search-results"></a>顯示和導覽搜尋結果
 
-搜尋完成後，摘要結果面板會加入含搜尋結果的工具列。 搜尋結果也會在 **XML 架構瀏覽器** 中反白顯示，並在垂直捲動條上以刻度標記。 您可以使用 **XML 架構瀏覽器** 工具列之 [摘要結果] 窗格中的 [ **移至下一個搜尋結果** ] 和 [ **移至上一個搜尋結果** ] 按鈕，來流覽搜尋結果。使用鍵盤按鍵 **F3** 和 **Shift** + **f3** ; 或按一下捲軸中的刻度標記。
+搜尋完成後，摘要結果面板會加入含搜尋結果的工具列。 搜尋結果也會在 **XML 架構瀏覽器** 中反白顯示，並在垂直捲動條上以刻度標記。 您可以使用 **XML 架構瀏覽器** 工具列之 [摘要結果] 窗格中的 [**移至下一個搜尋結果**] 和 [**移至上一個搜尋結果**] 按鈕，來流覽搜尋結果。使用鍵盤按鍵 **F3** 和 **Shift** + **f3**; 或按一下捲軸中的刻度標記。
 
 您可以按一下 [摘要結果] 窗格上的 [ **將反白顯示的節點加入工作區** ]，將搜尋結果新增至工作區。
 
@@ -55,6 +55,6 @@ ms.locfileid: "94351514"
 
 若要清除搜尋結果，請按一下 **XML Schema Explorer** 搜尋工具列之 [摘要結果] 窗格中的 [ **x** ] 按鈕。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)

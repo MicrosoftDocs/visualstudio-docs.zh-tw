@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 1854bca7-d7eb-4502-89bf-b1ee64cb50ef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dea558d2f125c1e64f46bb4fbf738434eda2394
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: bb1e6d2fcd3ec5a2e2c1d784724b17298f0b3e84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205615"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891328"
 ---
 # <a name="report-hook-functions"></a>報告攔截函式
 報告攔截函式，使用 [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook) 安裝，會在每次 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) 產生偵錯報告時呼叫。 除此之外，您可以使用它來篩選報告以專注於特定類型的配置。 報告攔截函式應該有像下列的原型：
@@ -49,6 +49,6 @@ typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
 
  如果攔截能完整處理該訊息，而不需要進一步的報告，應該就會傳回 **TRUE**。 如果傳回 **FALSE**， `_CrtDbgReport` 就會正常回報訊息。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [調試攔截函式寫入](../debugger/debug-hook-function-writing.md)
 - [crt_dbg2 範例](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)

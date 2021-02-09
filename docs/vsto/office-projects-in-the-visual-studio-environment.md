@@ -40,15 +40,15 @@ helpviewer_keywords:
 - VST.Designer.ExcelVST.Designer.Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0e183d5aca3fa856f45f322c2b79a76524b28005
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 88abd7294a96b4fe4989630753253b16f036ab7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892004"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Visual Studio 環境中的 Office 專案
   開發 Microsoft Office 專案的方式與在 Visual Studio 中開發其他類型的專案 (例如 Windows Forms 專案) 類似。 在您建立或開啟 Office 專案時，專案項目會顯示在 [ **方案總管**] 中。 就文件層級專案而言，文件 (亦即 Word 文件或 Excel 活頁簿) 會在 Visual Studio 中開啟，並以如同視覺化設計工具的方式運作。

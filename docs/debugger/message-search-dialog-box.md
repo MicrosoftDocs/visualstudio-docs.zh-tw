@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 44fb43b7-b006-46cc-a70c-036aac3cceec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d100b36ff706752f1855939d4c45b5b7793ccfa
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: f4fadb932078358b550e1d2c72bea292684a1954
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891692"
 ---
 # <a name="message-search-dialog-box"></a>訊息搜尋對話方塊
 使用這個對話方塊，即可在 [ [訊息] 視圖](../debugger/messages-view.md)中尋找並選取特定訊息的節點。 若要顯示此對話方塊，請將焦點移至 [訊息] 視圖視窗。 然後選擇 [**搜尋**] 功能表中的 [**尋找訊息**]。

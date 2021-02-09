@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d9bf88212ccc6e00dfbca14912eb15e17d106a49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863075"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892446"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說：建立視圖裝飾、命令和設定 (資料行指南) 
 您可以使用命令和視圖效果來延伸 Visual Studio 的 text/code 編輯器。 本文說明如何開始使用熱門擴充功能和資料行指南。 資料行輔助線是以視覺方式繪製在文字編輯器的視圖上，可協助您將程式碼管理為特定的資料行寬度。 具體而言，格式化程式碼對於您包含在檔、blog 文章或錯誤報表中的範例而言很重要。
@@ -1341,7 +1341,7 @@ Visual Studio 擴充性範例的 GitHub 專案即將推出，而已完成的專�
 
 您可以使用此 Visual Studio 資源庫[延伸](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)模組來試用資料行指南功能的版本。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [在編輯器內](../extensibility/inside-the-editor.md)
 - [擴充編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)
 - [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

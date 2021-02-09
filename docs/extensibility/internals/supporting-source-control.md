@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e722770ad1db4b85dbc2a5a8754d9158b6ee436
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6923eb7a534a4cacf8062883d073ddddc9395e17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876450"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892550"
 ---
 # <a name="supporting-source-control"></a>支援原始檔控制
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援專案或編輯器的檔案簽出、簽入和其他原始檔控制作業。 作為原始檔控制用戶端， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 是設計來與原始檔控制套件互動，例如 [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ，可為動態定義的檔案集提供封存、版本控制及控制功能。
