@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be4b07e322b5be148593c70136eb44ec7fcfdf7
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 050e873a26996221af2106714106cd37300ba4c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863857"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925885"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK 可協助您擴充 Visual Studio 功能，或將新功能整合到 Visual Studio。 您可以將延伸模組散發給其他使用者以及 Visual Studio Marketplace。 下列是一些可擴充 Visual Studio 的方法：
@@ -75,7 +75,7 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能，或將新功能整�
 
 - [擴充 Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用功能表命令建立擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [如何：將擴充性專案遷移至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)

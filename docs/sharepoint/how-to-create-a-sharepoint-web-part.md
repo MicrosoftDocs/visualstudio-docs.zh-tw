@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 13039520299d52e6f6a704567cf1cdc5ccfd66db
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f15cd788d19540bdea416b36ab0f8e8d8aa95e3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925600"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>如何：建立 SharePoint web 元件
   您可以建立和自訂網頁元件，方法是將 **網頁元件** 專案加入至任何 SharePoint 專案，然後編輯 web 元件的程式碼檔案，或使用設計工具。 如需詳細資訊，請參閱 [如何：使用設計工具建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。

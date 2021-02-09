@@ -15,15 +15,15 @@ helpviewer_keywords:
 - regular expressions
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8648eb48c68e0220b1d36a851619edec2b51ceb7
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: d62d35a296c70462aab75af5a8c6729179d5b34d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925768"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 
@@ -52,7 +52,7 @@ Visual Studio 會使用 [.NET 規則運算式](/dotnet/standard/base-types/regul
 |比對任何不在一組特定字元中的字元。 如需詳細資訊，請參閱[負字元群組](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-)。|[^abc]|`be[^n-t]` 比對 "before" 中的 "bef"、"後" 中的 "beh" 和 "below" 中的 ""，但在 "下方" 找不到相符專案|
 |比對符號之前或之後的運算式|&#124;|`(sponge|mud) bath` 符合「海綿的浴缸」和「mud 的浴缸」|
 |[逸出反斜線之後的字元](/dotnet/standard/base-types/character-escapes-in-regular-expressions)| \\ |`\^` 符合字元 ^|
-|指定前置字元或群組的出現次數。 如需詳細資訊，請參閱[比對 n 次](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n)。|{n}，其中 'n' 是發生次數|`x(ab){2}x` 符合 "對 xababx"<br/>`x(ab){2,3}x` 比對 "對 xababx" 和 "xabababx"，但不符合 "比對 xababababx"|
+|指定前置字元或群組的出現次數。 如需詳細資訊，請參閱[比對 n 次](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n)。|{n}，其中 'n' 是發生次數|`x(ab){2}x` 符合 "xababx"<br/>`x(ab){2,3}x` 符合 "xababx" 與 "xabababx"，但不符合 "xababababx"|
 |[比對 Unicode 類別中的文字](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p)。 如需 Unicode 字元類別的詳細資訊，請參閱 [Unicode Standard 5.2 字元屬性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}，其中 "X" 是 Unicode 數字。|`\p{Lu}` 符合 "Thomas Doe" 中的 "T" 和 "D"|
 |[符合單字界限](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (在字元類別之外 `\b` 會指定字邊界，在字元類別 `\b` 內則會指定退格鍵。)|`\bin` 符合 "in" in "in"，但在 "pinto" 中找不到相符專案|
 |比對分行符號 (即歸位字元後面接著新行)|\r?\n|`End\r?\nBegin` 只有在 "End" 是一行的最後一個字串，且 "Begin" 是下一行的第一個字串時，才會比對 "End" 和 "Begin"|

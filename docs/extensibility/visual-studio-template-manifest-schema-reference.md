@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d712f2cb95b2df9680c4476805e9dfb6809cf038
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 5f251b4511e2bff5bc20172e4018560205a378e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863843"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925833"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 範本資訊清單架構參考
 此架構描述為 Visual Studio 專案或專案範本產生的 Visual Studio 範本資訊清單 (*vstman*) 檔案的格式。 此架構也會描述範本的位置和其他相關資訊。

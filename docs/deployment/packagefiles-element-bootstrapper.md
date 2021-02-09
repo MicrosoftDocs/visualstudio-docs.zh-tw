@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60d6491101bef33f1d8c91d4f7640be9d7277da0
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0fbf76fec604819d7944a7b54fa4b2421e37c111
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925358"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;啟動載入器 &gt;)  (PackageFiles 元素
 `PackageFiles`元素包含 `PackageFile` 元素，這些元素會定義作為元素結果執行的安裝套件 `Command` 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <PackageFiles
@@ -75,7 +75,7 @@ ms.locfileid: "94349538"
 </PackageFiles>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [\<Product> 元素](../deployment/product-element-bootstrapper.md)
 - [\<Package> 元素](../deployment/package-element-bootstrapper.md)
 - [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9e4b827e-7c41-4fa3-b646-830aba2ec736
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c031d225010c6e1e6d8a7c681e47699efe56ed9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5603225ee768e1e79f27b5e06a86369d377f68af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925105"
 ---
 # <a name="m_taskid-field"></a>m_taskId 欄位
 屬性的支援欄位 <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> 。

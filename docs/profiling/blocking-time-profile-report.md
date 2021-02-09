@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74cfeb0b93b1819b4491b18b8e455b3c8d49be4d
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 7f5bdf15b220560562ccc2ae5c99100b5285b025
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925613"
 ---
 # <a name="blocking-time-profile-report"></a>封鎖時間分析報表
 分析報表提供每個封鎖類別 (例如 "I/O" 或「同步處理」) 特定之呼叫堆疊的彙總封鎖時間資料 。 先佔報表列出先佔用目前處理序的處理序，以及先佔執行個體的數目。 為建置封鎖分析報表，此工具會收集封鎖的 API 呼叫，並將它們累積成呼叫堆疊的樹狀目錄。 這些報表中所顯示的資料會依據目前的時間範圍、隱藏的執行緒以及下列兩個可套用的篩選而不同︰
@@ -60,5 +60,5 @@ ms.locfileid: "98204575"
 ### <a name="ui-processing"></a>UI 處理
  UI 處理報表顯示對封鎖 UI 處理區塊之區段負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 如需詳細資訊，請參閱 [UI 處理時間](../profiling/ui-processing-time.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [執行緒視圖](../profiling/threads-view-parallel-performance.md)

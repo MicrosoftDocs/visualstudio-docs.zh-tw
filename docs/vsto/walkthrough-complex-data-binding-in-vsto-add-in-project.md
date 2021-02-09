@@ -14,15 +14,15 @@ helpviewer_keywords:
 - complex data [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 573f15001dcbd678c576512349c36ae9594e10e8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b15343c69c3c656d42300e15aab4946860de8926
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527085"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925518"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>逐步解說： VSTO 增益集專案中的複雜資料系結
   您可以將資料繫結至 VSTO 增益集專案中的主控制項和 Windows Form 控制項。 本逐步解說示範如何在執行階段將控制項加入 Microsoft Office Excel 工作表，以及將控制項繫結至資料。

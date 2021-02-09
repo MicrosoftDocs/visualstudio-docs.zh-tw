@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a5c602a1cf46382e5a8b5c688501b2406e4a6d0
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: e353070c780f69ea05c1c67986f7a40f34d0659c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925846"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager 物件
 

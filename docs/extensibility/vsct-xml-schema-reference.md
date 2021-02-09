@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56d6c1309dc5b9a52de0bc0b54a764eceaf37d96
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 9cc50d3914f43be0da2f992f1074dc82cf5178ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863975"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925735"
 ---
 # <a name="vsct-xml-schema-reference"></a>.VSCT XML 架構參考
 提供命令資料表編譯器架構元素的表格，其中每個專案都有允許的子項目和屬性。
@@ -74,6 +74,6 @@ ms.locfileid: "97863975"
 
 - [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Vspackage 如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Vspackage 中的命令路由](../extensibility/internals/command-routing-in-vspackages.md)

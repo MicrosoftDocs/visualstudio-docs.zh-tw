@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 0a3b5653-7bc0-4a7a-8963-9020bc52b9cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07933fd4c9f359e72714600abdf8b4ee29268f84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12bf76c5c9b62184a74006ddf288c7e581215ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738421"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925281"
 ---
 # <a name="m_children-field"></a>m_children 欄位
 這項工作所註冊之子工作的清單。

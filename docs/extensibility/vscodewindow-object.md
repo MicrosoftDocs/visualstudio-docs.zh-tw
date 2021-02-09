@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: cf5fe926-e784-4098-bc01-cac49c7c55c6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a778cde66bc85a6f3cd8a13b5f2bb6fdb41844de
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 6b324c0b572f025b3733233d70cf36485f90524c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97864012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925855"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow 物件
 程式碼視窗是一個特製化的文件視窗，其中可包含一或多個文字視圖，通常是 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> 物件。
@@ -35,6 +35,6 @@ ms.locfileid: "97864012"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|表示多個檔介面 (MDI) 子系，其中包含一個或多個程式碼視圖。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|填滿視窗框架。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [編輯圖形](https://www.microsoft.com/download/details.aspx?id=55984)

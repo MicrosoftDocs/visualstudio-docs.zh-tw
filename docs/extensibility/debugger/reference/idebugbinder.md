@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcdec19c4667356edaf9e057c86ddc24baf747b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cf4f418cf02f08f95d0192e99c0b02d0f74e3ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735967"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925113"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80735967"
 
  這個介面會將符號欄位（通常由符號提供者傳回）系結至記憶體內容或包含符號目前值的物件。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBinder : IUnknown
@@ -42,7 +42,7 @@ IDebugBinder : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)|取得包含符號目前值的記憶體內容或物件。|
+|[綁定](../../../extensibility/debugger/reference/idebugbinder-bind.md)|取得包含符號目前值的記憶體內容或物件。|
 |[ResolveRuntimeType](../../../extensibility/debugger/reference/idebugbinder-resolveruntimetype.md)|判斷物件的執行時間類型。|
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugbinder-getmemorycontext.md)|將物件位置或記憶體位址轉換成記憶體內容。|
 |[GetFunctionObject](../../../extensibility/debugger/reference/idebugbinder-getfunctionobject.md)|取得用來建立函數參數的 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 物件。|
@@ -51,7 +51,7 @@ IDebugBinder : IUnknown
 ## <a name="remarks"></a>備註
  此介面會傳回剖析樹狀結構中運算式評估工具所使用的物件。 運算式評估工具會使用符號提供者來剖析運算式，將運算式中的符號轉換成 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)的實例，這會根據原始程式碼中的型別和位置來描述每個符號。 [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)方法會將 `IDebugField` 物件轉換成[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，以便將符號類型連接或系結至記憶體中的實際值。 這些 `IDebugObject` 物件接著會儲存在剖析樹狀結構中，以供稍後評估之用。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： ee. h
 
  命名空間： VisualStudio

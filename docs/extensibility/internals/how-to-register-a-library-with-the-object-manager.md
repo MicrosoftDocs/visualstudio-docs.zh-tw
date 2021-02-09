@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8036a0f4fe073473891805766ea8e3bb941951f8
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: a5f4e9805eec8fd5d0089f1b8348253523d9056f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925017"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>如何：使用物件管理員註冊程式庫
 符號流覽工具（例如 **類別檢視**、 **物件瀏覽器**、 **呼叫瀏覽器** 和 **尋找符號結果**）可讓您在專案或外部元件中查看符號。 這些符號包括命名空間、類別、介面、方法和其他語言元素。 這些程式庫會追蹤這些符號，並將它們公開給以 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 資料填入工具的物件管理員。

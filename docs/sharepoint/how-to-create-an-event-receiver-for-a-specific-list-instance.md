@@ -13,15 +13,15 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8bd76f2aafc5d0b3058dcaba68b6f3099f01ff8d
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 664a7ac4e763b2378cf30603c417aacde27c2e47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849892"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925488"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：為特定的清單實例建立事件接收器
   清單實例事件接收器會回應任何清單定義實例中發生的事件。 雖然事件接收器範本未啟用特定清單實例的目標，但您可以修改範圍為清單定義的事件接收器，以回應特定清單實例中的事件。
@@ -88,6 +88,6 @@ ms.locfileid: "94849892"
 
      請注意，因為接收者設定為只回應自訂公告清單實例 **TestAnnouncements** 中的事件，所以不會在新的公告上觸發事件接收器。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

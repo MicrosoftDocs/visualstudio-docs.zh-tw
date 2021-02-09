@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], Master/Detail Relation
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: de7bf3ba34a2a7dd3e7db9ff549e4a839800d524
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 843718ea49ae7df7d34775283ce8120f077b0a0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524872"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925506"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>逐步解說：使用快取資料集建立主要詳細資料關聯
   本逐步解說將示範如何在工作表上建立主要/詳細資料關聯，以及如何快取資料，讓方案可以離線使用。
@@ -185,7 +185,7 @@ ms.locfileid: "97524872"
 
 8. 重新連接至資料庫。 如果資料庫位於伺服器上，請再次將您的電腦連接到網路，如果資料庫是在您的開發電腦上，請啟動 SQL Server 服務。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  本逐步解說會示範如何在工作表上建立主/詳細資料關聯性，以及快取資料集的基本概念。 接著可以執行下列一些工作：
 
 - 部署該方案。 如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)。

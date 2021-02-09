@@ -5,18 +5,18 @@ ms.date: 12/02/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a8d8409cb6c959b8b2d1e9802a53775f2f360a44
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 1a90b66e38a09e0de0c7fd374938f55a93789295
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925330"
 ---
 # <a name="available-tools"></a>可用工具
 

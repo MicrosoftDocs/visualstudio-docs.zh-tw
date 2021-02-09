@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5f9f51e9380585d4191c5969d96fbb3a93ea42a
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 3d123cfbd37c254522fe52bbb941afeb363d3fbf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863725"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925760"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>.VSCT XML 架構條件式屬性
 您可以將條件屬性套用至所有清單和專案。 邏輯運算子和符號展開運算式的評估結果為 true 或 false。 若為 true，則產生的輸出中會包含相關聯的清單或專案。
@@ -34,7 +34,7 @@ ms.locfileid: "97863725"
 
 |運算子|定義|
 |--------------|----------------|
-|(,)|分組|
+|(,)|群組|
 |!|邏輯 NOT|
 |\<, >, \<=, >=, ==, !=|關係與相等|
 |及|Boolean|

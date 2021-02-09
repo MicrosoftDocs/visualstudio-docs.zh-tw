@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b423ee2cb95ad55296c452cfdc4b891ee4cd26a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6199c959a7186a1c10d6efdc30bb0763941c347a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926116"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 此介面代表執行中的進程及其程式。 這個介面是取代為 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 介面中的數個方法。 它可讓您控制進程中的所有程式。
@@ -25,7 +25,7 @@ ms.locfileid: "80723539"
 > [!NOTE]
 > [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)、 [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)和 [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md) 方法已被取代，不應該再使用。 請改為在介面上使用對應的方法 `IDebugProcess3` 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProcess3 : IDebugProcess2
@@ -54,7 +54,7 @@ IDebugProcess3 : IDebugProcess2
 |[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|取得此進程的 ENC 狀態。<br /><br /> 自訂埠供應商不會執行此方法 (它應該一律傳回 `E_NOTIMPL`) 。|
 |[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|抓取可用之偵錯工具引擎的唯一識別碼陣列。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Msdbg。h
 
  命名空間： VisualStudio

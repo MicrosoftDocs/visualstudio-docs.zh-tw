@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f50f23847da8f6d56da6763146efd147aebca8c6
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: bb6047c98031c484f6a0a51ab2a393a2a46bb2a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926090"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 元素
 VisibilityConstraints 元素決定了命令和工具列群組的靜態可見度。 可見度是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 不載入 VSPackage 的情況下，由整合式開發環境 (IDE) 所控制。
