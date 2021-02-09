@@ -7,15 +7,15 @@ ms.topic: overview
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: af394318d18244fc6e20e517d0ff985ca5e5ad1f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 20473125814b1ee0569579c7248b7b940cd31500
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436233"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858640"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Visual Studio 中的 LINQ to SQL 工具
 
@@ -23,9 +23,9 @@ LINQ to SQL 是 Microsoft 所發行的第一種物件關聯式對應技術。 �
 
 ## <a name="install-the-linq-to-sql-tools"></a>安裝 LINQ to SQL 工具
 
-在 Visual Studio 中，您可以使用 **物件關聯式設計工具** ( **O/R 設計** 工具) 來建立代表 SQL 資料表的 LINQ to SQL 類別。 O/R 設計工具是用來編輯 .dbml 檔案的 UI。 使用設計工具介面編輯 .dbml 檔需要 LINQ to SQL 的工具，這些工具預設不會安裝為 Visual Studio 的任何工作負載的一部分。
+在 Visual Studio 中，您可以使用 **物件關聯式設計工具** (**O/R 設計** 工具) 來建立代表 SQL 資料表的 LINQ to SQL 類別。 O/R 設計工具是用來編輯 .dbml 檔案的 UI。 使用設計工具介面編輯 .dbml 檔需要 LINQ to SQL 的工具，這些工具預設不會安裝為 Visual Studio 的任何工作負載的一部分。
 
-若要安裝 LINQ to SQL 工具，請啟動 Visual Studio 安裝程式，選擇 [ **修改** ]，然後選取 [ **個別元件** ] 索引標籤，再選取 [程式 **代碼工具** ] 類別下的 [ **LINQ to SQL 工具** ]。
+若要安裝 LINQ to SQL 工具，請啟動 Visual Studio 安裝程式，選擇 [**修改**]，然後選取 [**個別元件**] 索引標籤，再選取 [程式 **代碼工具**] 類別下的 [ **LINQ to SQL 工具**]。
 
 ## <a name="what-is-the-or-designer"></a>什麼是 O/R 設計工具
 
@@ -35,7 +35,7 @@ LINQ to SQL 是 Microsoft 所發行的第一種物件關聯式對應技術。 �
 
 ## <a name="open-the-or-designer"></a>開啟 O/R 設計工具
 
-若要將 LINQ to SQL 實體模型加入至您的專案，請選擇 [ **project**  >  **加入新專案** ]，然後從專案專案清單中選取 [ **LINQ to SQL 類別** ]：
+若要將 LINQ to SQL 實體模型加入至您的專案，請選擇 [ **project**  >  **加入新專案**]，然後從專案專案清單中選取 [ **LINQ to SQL 類別**]：
 
 ![LINQ to SQL 類別](../data-tools/media/raddata-linq-to-sql-classes.png)
 
@@ -43,12 +43,12 @@ Visual Studio 會建立 *.dbml* 檔，並將它新增至您的方案。 這是 X
 
 ![方案總管中的 LINQ to SQL 類別](../data-tools/media/raddata-linq-to-sql-classes-in-solution-explorer.png)
 
-當您選取 *.dbml* 檔案時，Visual Studio 會顯示 **O/R 設計** 工具介面，可讓您以視覺化方式建立模型。 下圖顯示從伺服器總管拖曳 Northwind 和資料表之後的設計工具 `Customers` `Orders` 。 **Server Explorer** 請注意資料表之間的關聯性。
+當您選取 *.dbml* 檔案時，Visual Studio 會顯示 **O/R 設計** 工具介面，可讓您以視覺化方式建立模型。 下圖顯示從伺服器總管拖曳 Northwind 和資料表之後的設計工具 `Customers` `Orders` 。  請注意資料表之間的關聯性。
 
 ![LINQ to SQL 設計工具](../data-tools/media/raddata-linq-to-sql-designer.png)
 
 > [!IMPORTANT]
-> **O/R 設計** 工具是簡單的物件關聯式對應程式，因為它只支援1:1 對應關聯性。 換句話說，實體類別與資料庫資料表或檢視之間只可以有一對一對應關聯性。 不支援複雜對應（例如，將實體類別對應至聯結的資料表）;使用 Entity Framework 進行複雜對應。 此外，這個設計工具是單向程式碼產生器。 這表示只有您對設計工具介面進行的變更才會反映在程式碼檔案中。 程式碼檔的手動變更不會反映在 **O/R 設計** 工具中。 儲存設計工具並重新產生程式碼時，會覆寫您在程式碼檔中進行的所有手動變更。 如需如何加入使用者程式碼及擴充產生之類別的詳細資訊 **O/R Designer** ，請參閱 [How to:擴充 O/R 設計工具產生的程式碼](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)。
+> **O/R 設計** 工具是簡單的物件關聯式對應程式，因為它只支援1:1 對應關聯性。 換句話說，實體類別與資料庫資料表或檢視之間只可以有一對一對應關聯性。 不支援複雜對應（例如，將實體類別對應至聯結的資料表）;使用 Entity Framework 進行複雜對應。 此外，這個設計工具是單向程式碼產生器。 這表示只有您對設計工具介面進行的變更才會反映在程式碼檔案中。 程式碼檔的手動變更不會反映在 **O/R 設計** 工具中。 儲存設計工具並重新產生程式碼時，會覆寫您在程式碼檔中進行的所有手動變更。 如需如何加入使用者程式碼及擴充產生之類別的詳細資訊 **O/R Designer**，請參閱 [How to:擴充 O/R 設計工具產生的程式碼](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)。
 
 ## <a name="create-and-configure-the-datacontext"></a>建立並設定 DataCoNtext
 
@@ -86,7 +86,7 @@ LINQ to SQL 類別與其他物件一樣，可以使用繼承，也可以衍生�
 - <xref:System.Linq>
 - <xref:System.Data.Linq>
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [LINQ to SQL ( .NET Framework) ](/dotnet/framework/data/adonet/sql/linq/index)
 - [常見問題 ( .NET Framework) ](/dotnet/framework/data/adonet/sql/linq/frequently-asked-questions)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b48c2e8b557a47c1ed795b6f9d3c3ced6247a43
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: a237d07af14cd6f31af300eff050c8952fd9840e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859342"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>將控制項繫結至 Visual Studio 中的資料
 
@@ -47,7 +47,7 @@ ms.locfileid: "94518618"
 
 ## <a name="data-sources-window"></a>資料來源視窗
 
-資料來源可在 [資料來源] 視窗中以項目形式用於專案。 當表單設計介面是您專案中的使用中視窗時，就可以看到這個視窗，或者，您可以藉由選擇 [ **View**  >  **Other Windows**  >  **資料來源** ]，在專案開啟)  (開啟此視窗。 您可以從這個視窗拖曳專案，以建立系結至基礎資料的控制項，而且您也可以用滑鼠右鍵按一下來設定資料來源。
+資料來源可在 [資料來源] 視窗中以項目形式用於專案。 當表單設計介面是您專案中的使用中視窗時，就可以看到這個視窗，或者，您可以藉由選擇 [ **View**  >  **Other Windows**  >  **資料來源**]，在專案開啟)  (開啟此視窗。 您可以從這個視窗拖曳專案，以建立系結至基礎資料的控制項，而且您也可以用滑鼠右鍵按一下來設定資料來源。
 
 ![資料來源視窗](../data-tools/media/raddata-data-sources-window.png)
 
@@ -59,7 +59,7 @@ ms.locfileid: "94518618"
 
 |Task|詳細資訊|
 |----------| - |
-|開啟 [資料來源] 視窗。|在編輯器中開啟設計介面，然後選擇 [ **視圖**  >  **資料來源** ]。|
+|開啟 [資料來源] 視窗。|在編輯器中開啟設計介面，然後選擇 [**視圖**  >  **資料來源**]。|
 |將資源來源新增至專案。|[新增新資料來源](../data-tools/add-new-data-sources.md)|
 |設定當您從 [資料來源] 視窗中將項目拖曳到設計工具時建立的控制項。|[設定從 [資料來源] 視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |修改與 [資料來源] 視窗中之項目相關聯的控制項清單。|[將自訂控制項加入 [資料來源] 視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)|

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - managed code, analyzing
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b9895dc8926f1bb5c7d33e792168ca46297c8196
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349018"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859602"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>逐步解說：使用靜態程式碼分析來尋找程式碼瑕疵
 
@@ -29,7 +29,7 @@ ms.locfileid: "94349018"
 
 1. 開啟 Visual Studio，並從 [ **類別庫] ( .NET Framework)** 範本建立新專案。
 
-1. 將專案命名為 **CodeAnalysisManagedDemo** 。
+1. 將專案命名為 **CodeAnalysisManagedDemo**。
 
 1. 建立專案之後，請開啟 *Class1.cs* 檔案。
 
@@ -65,29 +65,29 @@ ms.locfileid: "94349018"
 
 4. 確定已選取 [ **啟用組建的程式碼分析** ]。
 
-5. 從 [ **執行此規則集** ] 下拉式清單中，選取 [ **Microsoft 所有規則** ]。
+5. 從 [ **執行此規則集** ] 下拉式清單中，選取 [ **Microsoft 所有規則**]。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. 請確定已在 [ **二進位分析器** ] 區段中選取 [ **在組建上執行** ]。
+4. 請確定已在 [**二進位分析器**] 區段中選取 [**在組建上執行**]。
 
-5. 從 [作用中 **規則** ] 下拉式清單中，選取 [ **Microsoft 所有規則** ]。
+5. 從 [作用中 **規則** ] 下拉式清單中，選取 [ **Microsoft 所有規則**]。
 
 ::: moniker-end
 
-6. **在 [檔案** ] 功能表上，按一下 [ **儲存選取專案** ]，然後關閉 [屬性] 頁面。
+6. **在 [檔案**] 功能表上，按一下 [**儲存選取專案**]，然後關閉 [屬性] 頁面。
 
-7. 在 [ **組建** ] 功能表上，按一下 [ **組建 CodeAnalysisManagedDemo** ]。
+7. 在 [ **組建** ] 功能表上，按一下 [ **組建 CodeAnalysisManagedDemo**]。
 
     CodeAnalysisManagedDemo 專案組建警告會顯示在 [ **錯誤清單** ] 和 [ **輸出** ] 視窗中。
 
 ## <a name="correct-the-code-analysis-issues"></a>更正程式碼分析問題
 
-1. 在 [ **View** ] 功能表上，選擇 [ **錯誤清單** ]。
+1. 在 [ **View** ] 功能表上，選擇 [ **錯誤清單**]。
 
-    根據您選擇的開發人員設定檔，您可能必須指向 [ **View** ] 功能表上的 [ **其他視窗** ]，然後選擇 [ **錯誤清單** ]。
+    根據您選擇的開發人員設定檔，您可能必須指向 [ **View** ] 功能表上的 [**其他視窗**]，然後選擇 [**錯誤清單**]。
 
 1. 在 [方案總管] 中選擇 [顯示所有檔案]。
 
@@ -117,7 +117,7 @@ ms.locfileid: "94349018"
 
    [CA2210：元件應該具有有效的強式名稱](../code-quality/ca2210.md)：使用強式名稱金鑰簽署 ' CodeAnalysisManagedDemo '：
 
-   1. 在 [ **專案** ] 功能表上，選擇 [ **CodeAnalysisManagedDemo 屬性** ]。
+   1. 在 [ **專案** ] 功能表上，選擇 [ **CodeAnalysisManagedDemo 屬性**]。
 
       專案屬性隨即出現。
 
@@ -129,11 +129,11 @@ ms.locfileid: "94349018"
 
       [建立強式名稱金鑰] 對話方塊隨即出現。
 
-   1. 針對 [ **金鑰檔名稱** ]，輸入 **y** 。
+   1. 針對 [ **金鑰檔名稱**]，輸入 **y**。
 
-   1. 輸入密碼，然後選擇 **[確定]** 。
+   1. 輸入密碼，然後選擇 **[確定]**。
 
-   1. 在 [檔案 **] 功能表上，選擇 [** **儲存選取專案** ]，然後關閉屬性頁。
+   1. 在 [檔案 **] 功能表上，選擇 [** **儲存選取專案**]，然後關閉屬性頁。
 
    當您完成所有變更之後，Class1.cs 檔案看起來應該如下所示：
 
@@ -164,14 +164,14 @@ ms.locfileid: "94349018"
 
 1. 針對每個剩餘的警告，請執行下列動作：
 
-    1. 選取 [ **錯誤清單** ] 中的警告。
+    1. 選取 [ **錯誤清單**] 中的警告。
 
-    1. 從滑鼠右鍵功能表 (操作功能表) 中，選擇 [ **隱藏**  >  **在隱藏** 專案檔中]。
+    1. 從滑鼠右鍵功能表 (操作功能表) 中，選擇 [**隱藏**  >  **在隱藏** 專案檔中]。
 
 1. 請重建專案。
 
      專案建立時不會出現任何警告或錯誤。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [受控碼的程式碼分析](../code-quality/code-analysis-for-managed-code-overview.md)

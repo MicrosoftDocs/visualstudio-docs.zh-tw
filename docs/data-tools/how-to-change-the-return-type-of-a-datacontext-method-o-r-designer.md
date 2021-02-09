@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20ff0e4764acf4f2f0f8dea77ed815a9aa430abe
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4226be60f91fb1b9d55e279be2a697861c3f9566
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858796"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>如何：變更 DataContext 方法的傳回型別 (O/R 設計工具)
 根據 <xref:System.Data.Linq.DataContext> 預存程式或函數所建立 (方法的傳回型別，) 會根據您在 **O/R 設計** 工具中卸載預存程式或函數的位置而有所不同。 如果將項目直接放入現有的實體類別，且預存程序或函式所傳回資料的結構描述符合實體類別的型態，則建立的 <xref:System.Data.Linq.DataContext> 方法會具有該實體類別的傳回型別。 如果您將專案放到 **O/R 設計** 工具的空白區域， <xref:System.Data.Linq.DataContext> 則會建立傳回自動產生之類型的方法。 您可以在將 <xref:System.Data.Linq.DataContext> 方法加入至方法窗格後，變更方法的傳回型別。 若要檢查或變更 <xref:System.Data.Linq.DataContext> 方法的傳回型別，請選取該方法，然後按一下 [屬性] 視窗中的 [傳回型別] 屬性。
@@ -35,13 +35,13 @@ ms.locfileid: "94435048"
 
 ## <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>若要將 DataContext 方法的傳回型別從實體類別變更為自動產生的型別
 
-1. <xref:System.Data.Linq.DataContext>在 [ **方法** ] 窗格中選取方法，並將其刪除。
+1. <xref:System.Data.Linq.DataContext>在 [**方法**] 窗格中選取方法，並將其刪除。
 
 2. 從 **伺服器總管** 或 **資料庫總管** 將資料庫物件拖曳到 **O/R 設計** 工具的空白區域。
 
 3. 儲存 *.dbml* 檔。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

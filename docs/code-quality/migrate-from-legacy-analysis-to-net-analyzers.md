@@ -12,13 +12,13 @@ helpviewer_keywords:
 - source code analysis, migration
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 84acec58ed78884f0b037950fa25ce40f6adcbfc
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: 96a0c0b7fa1f2c703cefde31070ed98c5edddcb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859758"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-net-analyzers"></a>從舊版分析 (FxCop) 遷移至來源分析 ( .NET 分析器) 
 
@@ -39,7 +39,7 @@ ms.locfileid: "96112210"
 > [!NOTE]
 > 在 Visual Studio 2019 16.8 和 .NET 5.0 之前，這些分析器會以 `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet 套件](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)的形式傳送。 從 Visual Studio 2019 16.8 和 .NET 5.0 開始，這些分析器會 [隨附于 .NET SDK](/dotnet/fundamentals/code-analysis/overview)。 它們也可以作為 `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet 套件](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)。 如需詳細資訊，請參閱 [從 FxCop 分析器遷移至 .net 分析器](migrate-from-fxcop-analyzers-to-net-analyzers.md)。
 
-## <a name="configuration"></a>設定
+## <a name="configuration"></a>組態
 
 若要深入瞭解如何設定 .NET 分析器：
 
@@ -49,4 +49,4 @@ ms.locfileid: "96112210"
 
 ## <a name="see-also"></a>另請參閱
 
-- [從 FxCop 分析器遷移至 .NET 分析器](migrate-from-fxcop-analyzers-to-net-analyzers.md)
+- [從 FxCop 分析器移轉至 .NET 分析器](migrate-from-fxcop-analyzers-to-net-analyzers.md)

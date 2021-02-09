@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 4d25dfa1-8fa4-4529-9b90-973bc2ec2993
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 06e08f9a9c28698ae2ee2fecfbcec64c39666c8a
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 246559abc0d1cbc12754b708bbc5938e9e190ddd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858301"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>選取的連接使用不支援的資料提供者
 

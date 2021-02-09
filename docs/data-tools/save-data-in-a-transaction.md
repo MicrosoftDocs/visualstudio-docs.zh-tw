@@ -16,21 +16,21 @@ helpviewer_keywords:
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 62175e33949b2c6311fba8e9255b237cd8b43e01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858471"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>逐步解說：儲存異動中的資料
 
 本逐步解說示範如何使用命名空間來儲存交易中的資料 <xref:System.Transactions> 。 在這個逐步解說中，您將建立 Windows Forms 應用程式。 您將使用 [資料來源設定] 建立資料集，在 Northwind 範例資料庫中建立兩個數據表的資料集。 您會將資料繫結控制項加入至 Windows form，並修改 BindingNavigator 的 [儲存] 按鈕的程式碼，以更新 TransactionScope 內的資料庫。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -38,7 +38,7 @@ ms.locfileid: "94434541"
 
 2. 遵循下列步驟來安裝 Northwind 範例資料庫：
 
-    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 Visual Studio 安裝程式中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢** ]。
+    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 Visual Studio 安裝程式中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢**]。
 
        [查詢編輯器] 視窗隨即開啟。
 
@@ -50,15 +50,15 @@ ms.locfileid: "94434541"
 
 ## <a name="create-a-windows-forms-application"></a>建立 Windows Forms 應用程式
 
-第一個步驟是建立 **Windows Forms 應用程式** 。
+第一個步驟是建立 **Windows Forms 應用程式**。
 
 1. 在 Visual Studio 中，於 [檔案]  功能表上選取 [新增]   > [專案]  。
 
-2. 展開左側窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面** ]。
+2. 展開左側窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
 3. 在中間窗格中，選取 [ **Windows Forms 應用程式** ] 專案類型。
 
-4. 將專案命名為 **SavingDataInATransactionWalkthrough** ，然後選擇 **[確定]** 。
+4. 將專案命名為 **SavingDataInATransactionWalkthrough**，然後選擇 **[確定]**。
 
      隨即建立 **SavingDataInATransactionWalkthrough** 專案，並將其新增至 [方案總管]。
 
@@ -66,11 +66,11 @@ ms.locfileid: "94434541"
 
 此步驟會使用 [ **資料來源設定向導]** ，根據 `Customers` `Orders` Northwind 範例資料庫中的和資料表建立資料來源。
 
-1. 若要開啟 [ **資料來源** ] 視窗，請選取 [ **資料** ] 功能表上的 [ **顯示資料來源** ]。
+1. 若要開啟 [ **資料來源** ] 視窗，請選取 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
 
 2. 在 [資料來源] 視窗中，選取 [新增新資料來源]，以啟動 [資料來源組態精靈]。
 
-3. 在 [ **選擇資料來源類型** ] 畫面上，選取 [ **資料庫** ]，然後選取 **[下一步]** 。
+3. 在 [ **選擇資料來源類型** ] 畫面上，選取 [ **資料庫**]，然後選取 **[下一步]**。
 
 4. 在 [ **選擇您的資料連線** ] 畫面上，執行下列其中一項：
 
@@ -80,13 +80,13 @@ ms.locfileid: "94434541"
 
     - 選取 [新增連線] 以啟動 [新增/修改連線] 對話方塊，並建立 Northwind 資料庫的連線。
 
-5. 如果您的資料庫需要密碼，請選取包含機密資料的選項，然後選取 **[下一步]** 。
+5. 如果您的資料庫需要密碼，請選取包含機密資料的選項，然後選取 **[下一步]**。
 
-6. 在 [ **將連接字串儲存到應用程式佈建檔** ] 畫面上，選取 [ **下一步]** 。
+6. 在 [ **將連接字串儲存到應用程式佈建檔** ] 畫面上，選取 [ **下一步]**。
 
 7. 在 [ **選擇您的資料庫物件** ] 畫面上，展開 [ **資料表]** 節點。
 
-8. 選取 `Customers` 和 `Orders` 資料表，然後選取 **[完成]** 。
+8. 選取 `Customers` 和 `Orders` 資料表，然後選取 **[完成]**。
 
      **NorthwindDataSet** 會新增至您的專案中，且 `Customers` 和 `Orders` 資料表會出現在 [資料來源] 視窗中。
 
@@ -96,7 +96,7 @@ ms.locfileid: "94434541"
 
 1. 在 [ **資料來源** ] 視窗中，展開 [ **Customers** ] 節點。
 
-2. 從 [資料來源] 視窗，將 [客戶] 主節點拖曳至 **Form1** 。
+2. 從 [資料來源] 視窗，將 [客戶] 主節點拖曳至 **Form1**。
 
    <xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、、 `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator> 都會出現在元件匣中。
 
@@ -112,7 +112,7 @@ ms.locfileid: "94434541"
 
 1. 在 [專案] 功能表上，選取 [新增參考]。
 
-2. 選取 [ **.net** ] 索引標籤上的 [ (的 **交易** ]) ，然後選取 **[確定]** 。
+2. 選取 [ **.net** ] 索引標籤上的 [ (的 **交易**]) ，然後選取 **[確定]**。
 
      隨即會將 **System.Transactions** 的參考新增至專案。
 
@@ -122,7 +122,7 @@ ms.locfileid: "94434541"
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>修改自動產生的儲存程式碼
 
-1. 在 **CustomersBindingNavigator** 上選取 [ **儲存** ] 按鈕， (具有磁碟片圖示的按鈕) 。
+1. 在 **CustomersBindingNavigator** 上選取 [**儲存**] 按鈕， (具有磁碟片圖示的按鈕) 。
 
 2. 以下列程式碼取代 `CustomersBindingNavigatorSaveItem_Click` 方法：
 
@@ -141,28 +141,28 @@ ms.locfileid: "94434541"
 
 ### <a name="to-delete-existing-orders"></a>刪除現有訂單
 
-- 將下列 `DeleteOrders` 方法新增至 **Form1** ：
+- 將下列 `DeleteOrders` 方法新增至 **Form1**：
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>刪除現有客戶
 
-- 將下列 `DeleteCustomers` 方法新增至 **Form1** ：
+- 將下列 `DeleteCustomers` 方法新增至 **Form1**：
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>加入新客戶
 
-- 將下列 `AddNewCustomers` 方法新增至 **Form1** ：
+- 將下列 `AddNewCustomers` 方法新增至 **Form1**：
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>加入新訂單
 
-- 將下列 `AddNewOrders` 方法新增至 **Form1** ：
+- 將下列 `AddNewOrders` 方法新增至 **Form1**：
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
@@ -171,7 +171,7 @@ ms.locfileid: "94434541"
 
 按 **F5** 執行應用程式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：使用交易儲存資料](../data-tools/save-data-by-using-a-transaction.md)
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

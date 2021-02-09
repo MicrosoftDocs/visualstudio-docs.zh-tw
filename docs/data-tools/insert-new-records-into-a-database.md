@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8b5228d463bebf7ed57c68cbcf16a1d767d94917
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858666"
 ---
 # <a name="insert-new-records-into-a-database"></a>在資料庫中插入新的記錄
 
@@ -36,7 +36,7 @@ ms.locfileid: "94436272"
 
 如果您的應用程式使用物件來儲存資料，或如果您想要更精確地控制在資料庫中建立新記錄，請使用 `TableAdapter.Insert` 方法。
 
-如果您的 TableAdapter 沒有 `Insert` 方法，則表示 tableadapter 已設定為使用預存程式或其 `GenerateDBDirectMethods` 屬性設定為 `false` 。 嘗試 `GenerateDBDirectMethods` 從 DataSet 設計工具中將 TableAdapter 的屬性設定為 `true` ，然後儲存資料集。 **Dataset Designer** 這會重新產生 TableAdapter。 如果 TableAdapter 仍沒有 `Insert` 方法，資料表可能無法提供足夠的架構資訊來區別個別的資料列 (例如，資料表) 上可能沒有設定主鍵。
+如果您的 TableAdapter 沒有 `Insert` 方法，則表示 tableadapter 已設定為使用預存程式或其 `GenerateDBDirectMethods` 屬性設定為 `false` 。 嘗試 `GenerateDBDirectMethods` 從 DataSet 設計工具中將 TableAdapter 的屬性設定為 `true` ，然後儲存資料集。  這會重新產生 TableAdapter。 如果 TableAdapter 仍沒有 `Insert` 方法，資料表可能無法提供足夠的架構資訊來區別個別的資料列 (例如，資料表) 上可能沒有設定主鍵。
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>使用 Tableadapter 插入新的記錄
 
@@ -86,6 +86,6 @@ Tableadapter 會根據您的應用程式需求提供不同的方式，將新的�
 
 您必須能夠存取您嘗試連接的資料庫，以及在所需的資料表中執行插入的許可權。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

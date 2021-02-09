@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: d5e0c287565c001870f91f4912afad28864fe2ef
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9fb859d61ab31a554579f72121a18a541b2995a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858549"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>將 XML 資料讀入資料集
 
@@ -35,7 +35,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在這個逐步解說中，
 
 ## <a name="create-a-new-project"></a>建立新專案
 
-為 c # 或 Visual Basic 建立新的 **Windows Forms 應用程式** 專案。 將專案命名為 **ReadingXML** 。
+為 c # 或 Visual Basic 建立新的 **Windows Forms 應用程式** 專案。 將專案命名為 **ReadingXML**。
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>產生要讀入資料集的 XML 檔案
 
@@ -43,7 +43,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在這個逐步解說中，
 
 1. 在 [專案] 功能表上，選取 [新增項目]。
 
-2. 選取 [ **XML** 檔案]，將檔案命名為 **authors.xml** ，然後選取 [ **新增** ]。
+2. 選取 [ **XML** 檔案]，將檔案命名為 **authors.xml**，然後選取 [ **新增**]。
 
    XML 檔案會載入至設計工具中，並且可供編輯。
 
@@ -109,7 +109,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在這個逐步解說中，
    </Authors_Table>
    ```
 
-4. **在 [檔案** ] 功能表上，選取 [ **儲存 authors.xml** 。
+4. **在 [檔案**] 功能表上，選取 [**儲存 authors.xml**。
 
 ## <a name="create-the-user-interface"></a>建立使用者介面
 
@@ -129,7 +129,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在這個逐步解說中，
 
 1. `Form1`在設計檢視中開啟。
 
-2. 將下列控制項從 [ **工具箱** ] 拖曳至表單：
+2. 將下列控制項從 [ **工具箱**] 拖曳至表單：
 
     - 一個 <xref:System.Windows.Forms.DataGridView> 控制項
 
@@ -152,11 +152,11 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在這個逐步解說中，
 
 在此步驟中，您會建立名為的新資料集 `authors` 。 如需有關資料集的詳細資訊，請參閱 [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。
 
-1. 在 **方案總管** 中，選取 **Form1** 的原始程式檔，然後選取 **方案總管** 工具列上的 [ **視圖設計** 工具] 按鈕。
+1. 在 **方案總管** 中，選取 **Form1** 的原始程式檔，然後選取 **方案總管** 工具列上的 [**視圖設計** 工具] 按鈕。
 
-2. 從 [ [工具箱] 的 [資料]](../ide/reference/toolbox-data-tab.md)索引標籤，將 **資料集** 拖曳到 **Form1** 。
+2. 從 [ [工具箱] 的 [資料]](../ide/reference/toolbox-data-tab.md)索引標籤，將 **資料集** 拖曳到 **Form1**。
 
-3. 在 [ **加入資料集** ] 對話方塊中，選取 [不具 **類型的資料集** ]，然後選取 **[確定]** 。
+3. 在 [ **加入資料集** ] 對話方塊中，選取 [不具 **類型的資料集**]，然後選取 **[確定]**。
 
      **DataSet1** 會新增至元件匣。
 
@@ -166,7 +166,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在這個逐步解說中，
 
 [ **讀取 xml** ] 按鈕會將 XML 檔案讀取至資料集。 然後，它會在控制項上設定屬性 <xref:System.Windows.Forms.DataGridView> ，以將其系結至資料集。
 
-1. 在 **方案總管** 中，選取 [ **Form1** ]，然後選取 **方案總管** 工具列上的 [ **視圖設計** 工具] 按鈕。
+1. 在 **方案總管** 中，選取 [ **Form1**]，然後選取 **方案總管** 工具列上的 [**視圖設計** 工具] 按鈕。
 
 2. 選取 [ **讀取 XML** ] 按鈕。
 
@@ -183,7 +183,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在這個逐步解說中，
 
 [ **顯示架構** ] 按鈕 <xref:System.IO.StringWriter> 會建立填入架構的物件，並顯示在 <xref:System.Windows.Forms.TextBox> 控制項中。
 
-1. 在 **方案總管** 中，選取 [ **Form1** ]，然後選取 [ **視圖設計** 工具] 按鈕。
+1. 在 **方案總管** 中，選取 [ **Form1**]，然後選取 [ **視圖設計** 工具] 按鈕。
 
 2. 選取 [ **顯示架構** ] 按鈕。
 
@@ -208,7 +208,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在這個逐步解說中，
 
      此文字方塊會顯示 XML 檔案的 XML 架構。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 本逐步解說會教您如何將 XML 檔案讀入資料集，以及根據 XML 檔案的內容建立架構。 以下是您接下來可能會執行的一些工作：
 
@@ -216,7 +216,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在這個逐步解說中，
 
 - 編輯資料集中的資料，並將它寫出至資料庫。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 Visual Studio 存取資料](../data-tools/accessing-data-in-visual-studio.md)
 - [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

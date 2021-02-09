@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf37d9e5d672f0ecce262699fdd5d704cde9efe
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e1d7126fe795e269ee619e03daf2b81d6458f2e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729024"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857811"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、類別索引標籤
 您可以使用 [ **類別** ] 索引標籤來顯示所選視窗之類別的資訊。 若要顯示 [ [視窗屬性] 對話方塊](../debugger/window-properties-dialog-box.md)，請將焦點移至 [ [Windows View](../debugger/windows-view.md) ] 視窗。 選取樹狀結構中的任何視窗節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。
 
  [ **類別** ] 索引標籤提供下列設定：
 
-|進入|描述|
+|進入|Description|
 |-----------|-----------------|
 |**類別名稱**|此視窗類別的名稱 (或序數) 。|
 |[類別樣式]|類別樣式程式碼的組合。|

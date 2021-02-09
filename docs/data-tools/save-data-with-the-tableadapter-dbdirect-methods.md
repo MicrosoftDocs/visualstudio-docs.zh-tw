@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 00f508163dc039d5c29013538a78fa7dab6091fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858445"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>使用 TableAdapter DBDirect 方法儲存資料
 
@@ -31,7 +31,7 @@ ms.locfileid: "94434567"
 
 在這個逐步解說期間，您將了解如何：
 
-- 建立新的 **Windows Forms 應用程式** 。
+- 建立新的 **Windows Forms 應用程式**。
 
 - 使用 [ [資料來源設定] Wizard](../data-tools/media/data-source-configuration-wizard.png)建立及設定資料集。
 
@@ -41,7 +41,7 @@ ms.locfileid: "94434567"
 
 - 新增方法以直接存取資料庫，並執行插入、更新和刪除。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -49,7 +49,7 @@ ms.locfileid: "94434567"
 
 2. 遵循下列步驟來安裝 Northwind 範例資料庫：
 
-    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 Visual Studio 安裝程式中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢** ]。
+    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 Visual Studio 安裝程式中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢**]。
 
        [查詢編輯器] 視窗隨即開啟。
 
@@ -61,15 +61,15 @@ ms.locfileid: "94434567"
 
 ## <a name="create-a-windows-forms-application"></a>建立 Windows Forms 應用程式
 
-第一個步驟是建立 **Windows Forms 應用程式** 。
+第一個步驟是建立 **Windows Forms 應用程式**。
 
 1. 在 Visual Studio 中，於 [檔案]  功能表上選取 [新增]   > [專案]  。
 
-2. 展開左側窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面** ]。
+2. 展開左側窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
 3. 在中間窗格中，選取 [ **Windows Forms 應用程式** ] 專案類型。
 
-4. 將專案命名為 **TableAdapterDbDirectMethodsWalkthrough** ，然後選擇 **[確定]** 。
+4. 將專案命名為 **TableAdapterDbDirectMethodsWalkthrough**，然後選擇 **[確定]**。
 
      隨即建立 **TableAdapterDbDirectMethodsWalkthrough** 專案，並將其新增至 [方案總管]。
 
@@ -79,13 +79,13 @@ ms.locfileid: "94434567"
 
 ### <a name="to-create-the-data-source"></a>若要建立資料來源
 
-1. 在 [ **資料** ] 功能表上，選取 [ **顯示資料來源** ]。
+1. 在 [ **資料** ] 功能表上，選取 [ **顯示資料來源**]。
 
    [資料來源] 視窗隨即開啟。
 
 2. 在 [資料來源] 視窗中，選取 [新增新資料來源]，以啟動 [資料來源組態精靈]。
 
-3. 在 [ **選擇資料來源類型** ] 畫面上，選取 [ **資料庫** ]，然後選取 **[下一步]** 。
+3. 在 [ **選擇資料來源類型** ] 畫面上，選取 [ **資料庫**]，然後選取 **[下一步]**。
 
 4. 在 [ **選擇您的資料連線** ] 畫面上，執行下列其中一項：
 
@@ -95,13 +95,13 @@ ms.locfileid: "94434567"
 
     - 選取 [新增連線] 啟動 [新增/修改連線] 對話方塊。
 
-5. 如果您的資料庫需要密碼，請選取包含機密資料的選項，然後選取 **[下一步]** 。
+5. 如果您的資料庫需要密碼，請選取包含機密資料的選項，然後選取 **[下一步]**。
 
-6. 在 [ **將連接字串儲存到應用程式佈建檔** ] 畫面上，選取 [ **下一步]** 。
+6. 在 [ **將連接字串儲存到應用程式佈建檔** ] 畫面上，選取 [ **下一步]**。
 
 7. 在 [ **選擇您的資料庫物件** ] 畫面上，展開 [ **資料表]** 節點。
 
-8. 選取 `Region` 資料表，然後選取 **[完成]** 。
+8. 選取 `Region` 資料表，然後選取 **[完成]**。
 
      **NorthwindDataSet** 隨即會新增至您的專案，且 `Region` 資料表會出現在 [資料來源] 視窗中。
 
@@ -162,7 +162,7 @@ ms.locfileid: "94434567"
 
 - 選取 [ **刪除** ] 按鈕，並確認已從方格中移除該記錄。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 視您的應用程式需求而定，在建立資料系結表單之後，您可能會想要執行幾個步驟。 一些您可以加強這個逐步解說的部分包括：
 
@@ -170,6 +170,6 @@ ms.locfileid: "94434567"
 
 - 在 [資料來源] 視窗中選取 [使用精靈設定資料集]，將其他資料表新增至資料集。 您可以藉由將關聯節點拖曳至表單，加入顯示關聯資料的控制項。 如需詳細資訊，請參閱 [資料集中的關聯](relationships-in-datasets.md)性。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

@@ -9,13 +9,13 @@ keywords: 橋接至 Kubernetes、Azure Dev Spaces、Dev Spaces、Docker、Kubern
 monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
-manager: jillfra
-ms.openlocfilehash: 7bbeec2baab018ea770dbee60db507399ebeb745
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+manager: jmartens
+ms.openlocfilehash: 23d060489a13aa8e02316e253d9367e9e3372bbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859628"
 ---
 # <a name="use-bridge-to-kubernetes"></a>使用 Bridge Kubernetes
 
@@ -83,7 +83,7 @@ bikeapp.bikesharingweb.EXTERNAL_IP.nip.io
 az aks get-credentials --resource-group MyResourceGroup --name MyAKS
 ```
 
-從 GitHub 中的 [自行車共用範例應用程式][bike-sharing-github] 存放庫，使用 [綠色程式 **代碼** ] 按鈕上的下拉式清單，然後選擇 [ **在 Visual Studio 中開啟** ]，在本機複製存放庫，並在 Visual Studio 中開啟資料夾。 然後 **，使用**  >  [檔案**開啟專案**] 來開啟*samples/BikeSharingApp/ReservationEngine*資料夾中的**app.config**專案。
+從 GitHub 中的 [自行車共用範例應用程式][bike-sharing-github] 存放庫，使用 [綠色程式 **代碼** ] 按鈕上的下拉式清單，然後選擇 [ **在 Visual Studio 中開啟** ]，在本機複製存放庫，並在 Visual Studio 中開啟資料夾。 然後 **，使用**  >  [檔案 **開啟專案**] 來開啟 *samples/BikeSharingApp/ReservationEngine* 資料夾中的 **app.config** 專案。
 
 在您的專案中，選取 [啟動設定] 下拉式清單中的 [ **要 Kubernetes 的橋接器** ]，如下所示。
 
@@ -123,14 +123,14 @@ Kubernetes 叢集中的所有流量都會重新導向至您的開發電腦上執
 
 ## <a name="set-a-break-point"></a>設定中斷點
 
-開啟 [BikesHelper.cs][bikeshelper-cs-breakpoint] ，並在第26行的某處按一下，將游標放在該處。 按*F9*或選取 [ **Debug**  >  **切換中斷點**]，以設定中斷點。
+開啟 [BikesHelper.cs][bikeshelper-cs-breakpoint] ，並在第26行的某處按一下，將游標放在該處。 按 *F9* 或選取 [ **Debug**  >  **切換中斷點**]，以設定中斷點。
 
-開啟公用 URL 以流覽至範例應用程式。 選取 **Aurelia Briggs (客戶) ** 作為使用者，然後選取要租借的自行車。 選擇 **出租自行車**。 返回 Visual Studio，觀察行26已反白顯示。 您所設定的中斷點已在第26行暫停服務。 若要繼續服務，請按**F5**或按一下 [ **Debug**  >  **Continue**]。 返回您的瀏覽器，確認頁面顯示您出租了自行車。
+開啟公用 URL 以流覽至範例應用程式。 選取 **Aurelia Briggs (客戶)** 作為使用者，然後選取要租借的自行車。 選擇 **出租自行車**。 返回 Visual Studio，觀察行26已反白顯示。 您所設定的中斷點已在第26行暫停服務。 若要繼續服務，請按 **F5** 或按一下 [ **Debug**  >  **Continue**]。 返回您的瀏覽器，確認頁面顯示您出租了自行車。
 
 將游標放在第26行 `BikesHelper.cs` ，然後按 **F9 鍵**，以移除中斷點。
 
 > [!NOTE]
-> 根據預設，停止偵錯工具也會中斷您的開發電腦與 Kubernetes 叢集的連線。 您可以變更此行為，方法是在偵錯工具的 [Kubernetes 偵錯工具] 區段中，變更 [在偵錯工具**後中斷連接]** `false` 。 **Kubernetes Debugging Tools** 更新此設定之後，當您停止並開始進行偵錯工具時，您的開發電腦將保持連線。 若要中斷您的開發電腦與叢集的連線，請按一下工具列上的 [ **中斷連線]** 按鈕。
+> 根據預設，停止偵錯工具也會中斷您的開發電腦與 Kubernetes 叢集的連線。 您可以變更此行為，方法是在偵錯工具的 [Kubernetes 偵錯工具] 區段中，變更 [在偵錯工具 **後中斷連接]** `false` 。  更新此設定之後，當您停止並開始進行偵錯工具時，您的開發電腦將保持連線。 若要中斷您的開發電腦與叢集的連線，請按一下工具列上的 [ **中斷連線]** 按鈕。
 
 ## <a name="additional-configuration"></a>其他設定
 
@@ -148,7 +148,7 @@ Kubernetes 叢集中的所有流量都會重新導向至您的開發電腦上執
 ./bridge-quickstart.sh -c -g MyResourceGroup -n MyAKS
 ```
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解 Kubernetes 的橋樑如何運作。
 

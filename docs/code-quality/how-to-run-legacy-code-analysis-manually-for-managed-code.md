@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f61f0823c33478b4482f00541bbfe778fe72ed7e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 45f201e2c647a1b1074585d59c7618e1ddeb9084
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859992"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>如何：針對 managed 程式碼手動執行舊版程式碼分析
 
@@ -33,4 +33,4 @@ set EnableLegacyCodeAnalysis = true
 
 2. 在 **方案總管** 中，按一下專案。
 
-3. 在 [ **分析** ] 功能表上，按一下 [針對 *專案名稱***執行程式碼分析** ]。
+3. 在 [**分析**] 功能表上，按一下 [針對 *專案名稱***執行程式碼分析**]。

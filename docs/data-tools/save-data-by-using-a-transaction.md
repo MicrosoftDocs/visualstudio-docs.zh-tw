@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c633ed01821f500e958d3c7549febc23cf33c09d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858484"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>如何：使用交易儲存資料
 
@@ -41,7 +41,7 @@ ms.locfileid: "94434580"
 
 1. 在 [專案] 功能表上，選取 [新增參考]。
 
-2. 在 [ **.net** (] 索引標籤上，) SQL Server 專案的 **SQL Server** ] 索引標籤中，選取 [ **系統交易** ]，然後選取 **[確定]** 。
+2. 在 [ **.net** (] 索引標籤上，) SQL Server 專案的 **SQL Server** ] 索引標籤中，選取 [ **系統交易**]，然後選取 **[確定]**。
 
      *System.Transactions.dll* 的參考會加入至專案。
 
@@ -52,7 +52,7 @@ ms.locfileid: "94434580"
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
 - [逐步解說：儲存異動中的資料](../data-tools/save-data-in-a-transaction.md)

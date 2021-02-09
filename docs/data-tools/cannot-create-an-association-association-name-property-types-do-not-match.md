@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8413ffd8b5bf2af4c4d7272173a9cb4d0fbf6cbc
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 0a75d16d79359db7fa2db2e68db23d693d7f2721
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859225"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>無法建立關聯&lt;關聯名稱&gt;：屬性類型不符
 
@@ -31,9 +31,9 @@ ms.locfileid: "94518462"
 
 2. 按一下 [確定] 以關閉對話方塊。
 
-3. 檢查 **關聯屬性** ，並選取資料類型相同的屬性。
+3. 檢查 **關聯屬性**，並選取資料類型相同的屬性。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dc1d82b0267e5e0655f3ebef8eb08806ad319a8
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9ce4057378db357345869d10e933929ae31ee573
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859212"
 ---
 # <a name="configure-service-reference-dialog-box"></a>設定服務參考對話方塊
 
@@ -93,7 +93,7 @@ ms.locfileid: "94518722"
 
 **參考組件清單**
 
-包含專案或網站之參考元件的清單。 當您選取 [ **重複使用指定的參考元件中的類型** ] 時，可以選取或清除個別的元件。
+包含專案或網站之參考元件的清單。 當您選取 [ **重複使用指定的參考元件中的類型**] 時，可以選取或清除個別的元件。
 
 **新增 Web 參考**
 
@@ -103,7 +103,7 @@ ms.locfileid: "94518722"
 > 此選項只應用於目標為2.0 版 .NET Framework 的專案。
 >
 > [!NOTE]
-> 只有當 [ **設定服務參考** ] 對話方塊顯示于 [ **加入服務參考] 對話方塊** 時，才可以使用 [ **加入 Web 參考** ] 按鈕。
+> 只有當 [**設定服務參考**] 對話方塊顯示于 [**加入服務參考] 對話方塊** 時，才可以使用 [**加入 Web 參考**] 按鈕。
 
 ## <a name="see-also"></a>另請參閱
 

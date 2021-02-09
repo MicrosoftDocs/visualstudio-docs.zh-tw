@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6e1c594ab1f74cddb962cc2a6d4030ede1e53c8f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: bfc0f68f38f801d63367b1ee9150c723767ec667
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858874"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>擴充 TableAdapter 的功能
 
@@ -40,17 +40,17 @@ ms.locfileid: "94435074"
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>若要建立 TableAdapter 的部分類別
 
-1. 前往 [ **專案** ] 功能表，然後選取 [ **加入類別** ]，將新類別加入至您的專案。
+1. 前往 [ **專案** ] 功能表，然後選取 [ **加入類別**]，將新類別加入至您的專案。
 
 2. 將類別命名為 `CustomersTableAdapterExtended`。
 
-3. 選取 [新增]  。
+3. 選取 [新增]。
 
 4. 將程式碼取代為您專案的正確命名空間和部分類別名稱，如下所示：
 
      [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)

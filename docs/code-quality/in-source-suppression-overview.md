@@ -9,19 +9,19 @@ helpviewer_keywords:
 - code analysis, source suppression
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a0820404047d123350a27950c5aee254af306f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c61803c21832367ede01817029b8d0318ac741a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859901"
 ---
 # <a name="suppress-code-analysis-violations"></a>隱藏程式碼分析違規項目
 
@@ -37,7 +37,7 @@ ms.locfileid: "94348693"
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> 如果您將專案遷移至 Visual Studio 2017，可能突然遇到大量的程式碼分析警告。 如果您還沒準備好修正這些警告，您可以選取 [ **分析**  >  **執行程式碼分析] 並隱藏** 作用中的問題，來抑制所有警告。
+> 如果您將專案遷移至 Visual Studio 2017，可能突然遇到大量的程式碼分析警告。 如果您還沒準備好修正這些警告，您可以選取 [**分析**  >  **執行程式碼分析] 並隱藏** 作用中的問題，來抑制所有警告。
 >
 > ![在 Visual Studio 中執行程式碼分析和隱藏問題](media/suppress-active-issues.png)
 
@@ -46,13 +46,13 @@ ms.locfileid: "94348693"
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> 如果您將專案遷移至 Visual Studio 2019，可能突然遇到大量的程式碼分析警告。 如果您還沒準備好修正這些警告，您可以選取 [ **分析**  >  **組建] 並隱藏** 作用中的問題，來抑制這些警告。
+> 如果您將專案遷移至 Visual Studio 2019，可能突然遇到大量的程式碼分析警告。 如果您還沒準備好修正這些警告，您可以選取 [**分析**  >  **組建] 並隱藏** 作用中的問題，來抑制這些警告。
 
 ::: moniker-end
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 屬性
 
-當您從 [ **錯誤清單** ] 中的程式碼分析警告的內容或右鍵功能表中選取 [ **隱藏** ] 時， <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 會在您的程式碼或專案的全域隱藏專案檔中加入屬性。
+當您從 [**錯誤清單**] 中的程式碼分析警告的內容或右鍵功能表中選取 [**隱藏**] 時， <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 會在您的程式碼或專案的全域隱藏專案檔中加入屬性。
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性具有下列格式：
 
@@ -171,7 +171,7 @@ Managed 程式碼分析工具 `SuppressMessage` 會檢查元件、模組、類�
 
 ### <a name="global-suppression-file"></a>全域隱藏專案檔
 
-全域隱藏專案檔會維護不指定目標的全域層級隱藏專案或隱藏專案。 例如，元件層級違規的隱藏項會儲存在此檔案中。 此外，某些 ASP.NET 隱藏專案會儲存在此檔案中，因為表單背後的程式碼無法使用專案層級設定。 當您第一次在 [ **錯誤清單** ] 視窗中，于 [ **隱藏** ] 命令的 [ **專案隱藏** 檔] 選項中選取時，即會建立全域隱藏專案檔並將其新增至您的專案。
+全域隱藏專案檔會維護不指定目標的全域層級隱藏專案或隱藏專案。 例如，元件層級違規的隱藏項會儲存在此檔案中。 此外，某些 ASP.NET 隱藏專案會儲存在此檔案中，因為表單背後的程式碼無法使用專案層級設定。 當您第一次在 [**錯誤清單**] 視窗中，于 [**隱藏**] 命令的 [**專案隱藏** 檔] 選項中選取時，即會建立全域隱藏專案檔並將其新增至您的專案。
 
 ### <a name="module-suppression-scope"></a>模組隱藏範圍
 
@@ -192,7 +192,7 @@ Managed 程式碼編譯器和一些協力廠商工具會產生程式碼，以加
 > [!NOTE]
 > 當程式碼分析套用 `GeneratedCodeAttribute` 至整個元件或單一參數時，會忽略程式碼分析。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

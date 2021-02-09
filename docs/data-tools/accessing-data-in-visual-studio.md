@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5458ffca549026c99c8faedc8f47d3f3285a7ca
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b5e3d8b8cf0b2c74a5b5a862539bbf3b201b4ffd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859433"
 ---
 # <a name="work-with-data-in-visual-studio"></a>在 Visual Studio 中使用資料
 
@@ -72,13 +72,13 @@ ms.locfileid: "94518735"
 
 ::: moniker range="vs-2017"
 
-許多資料庫廠商和協力廠商都支援 NuGet 套件的 Visual Studio 整合。 您可以在 nuget.org 上探索這些供應專案，或透過 Visual Studio ( **工具**  >  **nuget 封裝管理員**  >  **管理方案) 的 nuget 套件** 中的 nuget 封裝管理員。 其他資料庫產品會以擴充功能與 Visual Studio 整合。 您可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)中流覽這些供應專案，也可以流覽至 [ **工具**  >  **擴充功能和更新** ]，然後在對話方塊的左窗格中選取 [ **線上** ]。 如需詳細資訊，請參閱 [Visual Studio 的相容資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
+許多資料庫廠商和協力廠商都支援 NuGet 套件的 Visual Studio 整合。 您可以在 nuget.org 上探索這些供應專案，或透過 Visual Studio (**工具**  >  **nuget 封裝管理員**  >  **管理方案) 的 nuget 套件** 中的 nuget 封裝管理員。 其他資料庫產品會以擴充功能與 Visual Studio 整合。 您可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)中流覽這些供應專案，也可以流覽至 [**工具**  >  **擴充功能和更新**]，然後在對話方塊的左窗格中選取 [**線上**]。 如需詳細資訊，請參閱 [Visual Studio 的相容資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-許多資料庫廠商和協力廠商都支援 NuGet 套件的 Visual Studio 整合。 您可以在 nuget.org 上探索這些供應專案，或透過 Visual Studio ( **工具**  >  **nuget 封裝管理員**  >  **管理方案) 的 nuget 套件** 中的 nuget 封裝管理員。 其他資料庫產品會以擴充功能與 Visual Studio 整合。 您可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)中流覽這些供應專案，或流覽至 [ **擴充** 功能  >  **管理延伸** 模組]，然後在對話方塊的左窗格中選取 [ **線上** ]。 如需詳細資訊，請參閱 [Visual Studio 的相容資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
+許多資料庫廠商和協力廠商都支援 NuGet 套件的 Visual Studio 整合。 您可以在 nuget.org 上探索這些供應專案，或透過 Visual Studio (**工具**  >  **nuget 封裝管理員**  >  **管理方案) 的 nuget 套件** 中的 nuget 封裝管理員。 其他資料庫產品會以擴充功能與 Visual Studio 整合。 您可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)中流覽這些供應專案，或流覽至 [**擴充** 功能  >  **管理延伸** 模組]，然後在對話方塊的左窗格中選取 [**線上**]。 如需詳細資訊，請參閱 [Visual Studio 的相容資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ::: moniker-end
 
@@ -89,7 +89,7 @@ ms.locfileid: "94518735"
 
 所有 .NET 資料存取（包括 .NET Core 中的 .NET 資料存取）是以 ADO.NET 為基礎，這是一組類別，可定義存取任何資料來源（關聯式和非關聯式）的介面。 Visual Studio 有數種工具和設計工具，可與 ADO.NET 搭配使用，協助您連接到資料庫、運算元據，以及向使用者呈現資料。 本節中的檔說明如何使用這些工具。 您也可以直接針對 ADO.NET 命令物件進行程式設計。 如需直接呼叫 ADO.NET Api 的詳細資訊，請參閱 [ADO.NET](/dotnet/framework/data/adonet/index)。
 
-如需與 ASP.NET 相關的資料存取檔，請參閱使用 ASP.NET 網站上的 [資料](https://www.asp.net/web-forms/overview/presenting-and-managing-data) 。 如需搭配使用 Entity Framework 與 ASP.NET MVC 的教學課程，請參閱使用 [mvc 5 的 Entity Framework 6 Code First 消費者入門](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
+如需與 ASP.NET 相關的資料存取檔，請參閱使用 ASP.NET 網站上的 [資料](https://www.asp.net/web-forms/overview/presenting-and-managing-data) 。 如需搭配使用 Entity Framework 與 ASP.NET MVC 的教學課程，請參閱使用 [mvc 5 的 Entity Framework 6 Code First 開始使用](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 
 通用 Windows 平臺 (以 c # 或 Visual Basic 使用的 UWP) 應用程式，可以使用 Microsoft Azure SDK for .NET 來存取 Azure 儲存體和其他 Azure 服務。 HttpClient 類別可讓您與任何 RESTful 服務進行通訊。 如需詳細資訊，請參閱 [如何使用 HTTP.sys 連接至 HTTP 伺服器](/previous-versions/windows/apps/dn469430(v=win.10))。
 

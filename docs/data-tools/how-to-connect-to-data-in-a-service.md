@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c565f7238edf9126dd651fa567de82aed7b8d21
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d8e3692f376a502a2cd924fa9604eddab445333f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858757"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>如何：連線至服務中的資料
 
-您可以執行 [ [資料來源設定向導](../data-tools/media/data-source-configuration-wizard.png)]，然後在 [ **選擇資料來源類型** ] 頁面上選取 [ **服務** ]，將應用程式連接到從服務傳回的資料。
+您可以執行 [[資料來源設定向導](../data-tools/media/data-source-configuration-wizard.png)]，然後在 [**選擇資料來源類型**] 頁面上選取 [**服務**]，將應用程式連接到從服務傳回的資料。
 
 完成嚮導之後，服務參考即會加入至您的專案，並且可立即在 [ [資料來源] 視窗](add-new-data-sources.md#data-sources-window)中使用。
 
@@ -38,11 +38,11 @@ ms.locfileid: "94435009"
 
 ## <a name="to-connect-your-application-to-a-service"></a>將您的應用程式連線至服務
 
-1. 在 [ **資料** ] 功能表上，請按一下 [ **加入新資料來源** ]。
+1. 在 [ **資料** ] 功能表上，請按一下 [ **加入新資料來源**]。
 
-2. 在 [ **選擇資料來源類型** ] 頁面上選取 [ **服務** ]，然後按 **[下一步]** 。
+2. 在 [**選擇資料來源類型**] 頁面上選取 [**服務**]，然後按 **[下一步]**。
 
-3. 輸入您想要使用之服務的位址，或按一下 [ **探索** ] 以找出目前解決方案中的服務，然後按一下 [ **移至** ]。
+3. 輸入您想要使用之服務的位址，或按一下 [ **探索** ] 以找出目前解決方案中的服務，然後按一下 [ **移至**]。
 
 4. （選擇性）您可以輸入新的 **命名空間** 來取代預設值。
 
@@ -55,11 +55,11 @@ ms.locfileid: "94435009"
 
      資料來源隨即新增至 [資料來源] 視窗。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要將功能加入至您的應用程式，請在 [ **資料來源** ] 視窗中選取專案，然後將它拖曳到表單上，以建立繫結控制項。 如需詳細資訊，請參閱 [將控制項系結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將 WPF 控制項繫結至 WCF 資料服務](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
 - [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

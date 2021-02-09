@@ -8,16 +8,16 @@ helpviewer_keywords:
 - debugging, Docker container
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 4f39d4ecd69b726c1d549d723fadd324b1edd722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761260"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857925"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>附加至在 Docker 容器上執行的進程 
 
@@ -52,13 +52,13 @@ ms.locfileid: "97761260"
     > [!NOTE]
     > 有兩個選項可讓您從遠端連線到 Docker 容器中的執行中進程。 如果您未在本機電腦上安裝 Docker 工具，第一個選項（使用 SSH）是理想的選擇。  如果您在本機安裝了 Docker tools，而且您有一個設定為接受遠端要求的 Docker daemon，請使用 Docker daemon 嘗試第二個選項。
 
-    1. *透過 *_SSH 連接到遠端電腦：_* _
-        1. 選取 _ *新增 ...** 連接至遠端系統。<br/>
+    1. ***若要透過 SSH 連接到遠端電腦：***
+        1. 選取 [ **新增** ] 以連接到遠端系統。<br/>
         ![連接至遠端系統](../debugger/media/connect-remote-system.png "連接至遠端系統")
         1. 在成功連線到 SSH 或背景程式之後，選取要附加的執行中容器，並按 **[確定]**。
 
-    1. **_若要將目標設定為透過 [Docker daemon](https://docs.docker.com/engine/reference/commandline/dockerd/)執行進程的遠端容器_* _
-        1. 指定背景程式位址 (例如透過 [TCP]、[IP]、[) ] 下的 [*Docker 主機 (選擇性)**]，然後按一下 [重新整理] 連結。
+    1. ***若要將目標設定為透過 [Docker daemon](https://docs.docker.com/engine/reference/commandline/dockerd/)執行進程的遠端容器***
+        1. 指定背景程式位址 (例如透過 [Docker 主機] 下的 [TCP]、[IP] 或 [) ] **(選擇性)** ，然後按一下 [重新整理] 連結。
         1. 在連接到 daemon 之後，選取要附加的執行中容器，並按 **[確定]**。
 
 4. 從 **可用** 的程式清單中選擇對應的容器進程，然後選取 [ **附加** ] 以開始在 Visual Studio 中進行 c # 容器進程的偵錯工具！
@@ -86,8 +86,8 @@ ms.locfileid: "97761260"
 
    透過 SSH 將目標設定為遠端容器目前無法使用，而且只能使用 Docker daemon 來完成。
 
-    **_若要將目標設定為透過 [Docker daemon](https://docs.docker.com/engine/reference/commandline/dockerd/)執行進程的遠端容器_* _
-    1. 指定背景程式位址 (例如透過 [TCP]、[IP]、[) ] 下的 [*Docker 主機 (選擇性)**]，然後按一下 [重新整理] 連結。
+    ***若要將目標設定為透過 [Docker daemon](https://docs.docker.com/engine/reference/commandline/dockerd/)執行進程的遠端容器***
+    1. 指定背景程式位址 (例如透過 [Docker 主機] 下的 [TCP]、[IP] 或 [) ] **(選擇性)** ，然後按一下 [重新整理] 連結。
 
     1. 在成功連接到背景程式之後，選取要附加的執行中容器，然後選擇 [確定]。
 

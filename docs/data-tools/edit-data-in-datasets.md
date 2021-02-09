@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e547d3a6a07a7881c34462138ffbe708b8d74080
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f212fbd1868ad873f0692a11bae975eade8778a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435087"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858913"
 ---
 # <a name="edit-data-in-datasets"></a>編輯資料集中的資料
 您可以編輯資料表中的資料，就像在任何資料庫中編輯資料表中的資料一樣。 此程式可以包含插入、更新和刪除資料表中的記錄。 在資料系結表單中，您可以指定哪些欄位可供使用者編輯。 在這些情況下，資料系結基礎結構會處理所有變更追蹤，讓您稍後可以將變更傳送回資料庫。 如果您以程式設計方式對資料進行編輯，而且想要將這些變更傳送回資料庫，則必須使用為您執行變更追蹤的物件和方法。
@@ -42,7 +42,7 @@ ms.locfileid: "94435087"
 [!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]
 
 ## <a name="to-insert-new-rows-into-a-dataset"></a>將新資料列插入資料集
-使用資料繫結控制項的應用程式通常會透過 [BindingNavigator 控制項](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)上的 [ **加入新** 的] 按鈕來加入新的記錄。
+使用資料繫結控制項的應用程式通常會透過 [BindingNavigator 控制項](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)上的 [**加入新** 的] 按鈕來加入新的記錄。
 
 若要以手動方式將新記錄加入至資料集，請在 DataTable 上呼叫方法來建立新的資料列。 然後，將資料列加入至 <xref:System.Data.DataRow> 集合 (的 <xref:System.Data.DataTable.Rows%2A>) <xref:System.Data.DataTable> ：
 
@@ -109,6 +109,6 @@ ms.locfileid: "94435087"
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)

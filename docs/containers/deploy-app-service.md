@@ -3,18 +3,18 @@ title: 將 ASP.NET Core 容器部署到 Azure App Service
 description: 瞭解如何使用 Visual Studio 容器工具將 ASP.NET Core web 應用程式部署至 Docker 容器，以 Azure App Service
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: c0f45f14bc8b363a0c7c4e298effa67c5fccde18
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2e23658cfde1154f5b4df7ae7dade71b1569e35c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859641"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET Core 容器部署到 Azure App Service
 
@@ -30,7 +30,7 @@ ms.locfileid: "90036336"
 - 安裝包含 "ASP.NET 和 Web 開發" 工作負載的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 最新版本
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)，其中包含 *ASP.NET 和 Web 部署*工作負載。
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)，其中包含 *ASP.NET 和 Web 部署* 工作負載。
 ::: moniker-end
 - 安裝 [Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
 
@@ -39,21 +39,21 @@ ms.locfileid: "90036336"
 下列步驟會逐步引導您建立將在本教學課程中使用的基本 ASP.NET Core 應用程式。
 
 ::: moniker range="vs-2017"
-1. 從 Visual Studio 功能表中，選取 [檔案] > [新增] > [專案]****。
-2. 在 [新增專案]**** 對話方塊的 [範本]**** 區段下，選取 [Visual C#] > [Web]****。
+1. 從 Visual Studio 功能表中，選取 [檔案] > [新增] > [專案]。
+2. 在 [新增專案] 對話方塊的 [範本] 區段下，選取 [Visual C#] > [Web]。
 3. 選取 **ASP.NET Core Web 應用程式**。
-4. 指定新應用程式的名稱 (或使用預設值)，然後選取 [確定] ****。
+4. 指定新應用程式的名稱 (或使用預設值)，然後選取 [確定] 。
 5. 選取 [ **Web 應用程式**]。
-6. 請勾選 [啟用 Docker 支援]**** 核取方塊。
+6. 請勾選 [啟用 Docker 支援] 核取方塊。
 7. 選取 **Linux** 容器類型，然後按一下 **[確定]**。 不支援將 Windows 容器部署至 Azure App Service 作為容器。
 ::: moniker-end
 ::: moniker range=">= vs-2019"
-1. 從 Visual Studio 的開始視窗中，選擇 [建立新專案]****。
-1. 依序選擇 [ASP.NET Core Web 應用程式]**** 和 [下一步]****。
-1. 指定新應用程式的名稱 (或使用預設)，然後選擇 [建立]****。
-1. 選擇 [Web 應用程式]****。
-1. 使用 [設定 HTTPS]**** 核取方塊，選擇您是否需要 SSL 支援。
-1. 請勾選 [啟用 Docker 支援]**** 核取方塊。
+1. 從 Visual Studio 的開始視窗中，選擇 [建立新專案]。
+1. 依序選擇 [ASP.NET Core Web 應用程式] 和 [下一步]。
+1. 指定新應用程式的名稱 (或使用預設)，然後選擇 [建立]。
+1. 選擇 [Web 應用程式]。
+1. 使用 [設定 HTTPS] 核取方塊，選擇您是否需要 SSL 支援。
+1. 請勾選 [啟用 Docker 支援] 核取方塊。
 1. 選取容器類型，然後按一下 [ **建立**]。
 ::: moniker-end
 
@@ -61,13 +61,13 @@ ms.locfileid: "90036336"
 
 ::: moniker range="vs-2017"
 
-1. 在**方案總管**中以滑鼠右鍵按一下專案，並選擇 [發佈]****。
+1. 在 **方案總管** 中以滑鼠右鍵按一下專案，並選擇 [發佈]。
 1. 在 [發佈目標] 對話方塊中，選擇 **App Service Linux** ] 或 [ **App Service**]。 這是將裝載 web 伺服器的作業系統。
 1. 您只能發行至 App Service，也可以同時發佈至 App Service 和 Azure Container Registry (ACR) 。 若要在 Azure Container Registry (ACR) 中發佈容器，請選擇 [ **建立容器的新 App Service**]，然後按一下 [ **發佈**]。
 
    ![[發佈] 對話方塊的螢幕擷取畫面](media/deploy-app-service/publish-app-service-linux.PNG)
 
-   若只要發行至 Azure App Service 而不使用 Azure Container Registry，請選擇 [ **建立新**的]，然後按一下 [ **發佈**]。
+   若只要發行至 Azure App Service 而不使用 Azure Container Registry，請選擇 [ **建立新** 的]，然後按一下 [ **發佈**]。
 
 1. 確認您已使用與 Azure 訂用帳戶相關聯的帳戶登入，然後選擇唯一的名稱、訂用帳戶、資源群組、主控方案和容器登錄 (如果適用) ，或接受預設值。
 
@@ -83,15 +83,15 @@ ms.locfileid: "90036336"
 
 1. 發行設定檔會與您選取的所有詳細資料（例如資源群組和容器登錄）一起儲存。
 
-1. 若要使用相同的發行設定檔再次部署，請使用 [**發行**] 按鈕、[ **Web 發行活動**] 視窗上的 [**發行**] 按鈕，或以滑鼠右鍵按一下**方案總管**中的專案，然後選擇內容功能表上的 [**發行**] 專案。
+1. 若要使用相同的發行設定檔再次部署，請使用 [**發行**] 按鈕、[ **Web 發行活動**] 視窗上的 [**發行**] 按鈕，或以滑鼠右鍵按一下 **方案總管** 中的專案，然後選擇內容功能表上的 [**發行**] 專案。
 :::moniker-end
 :::moniker range=">=vs-2019"
-1. 在**方案總管**中以滑鼠右鍵按一下專案，並選擇 [發佈]****。
+1. 在 **方案總管** 中以滑鼠右鍵按一下專案，並選擇 [發佈]。
 1. 在 [ **發行** ] 對話方塊中，選擇 [ **Azure** ] 目標。
 
    ![[發佈嚮導] 的螢幕擷取畫面](media/deploy-app-service/publish-choices.png)
 
-1. 在 [ **特定目標** ] 索引標籤上，根據您的容器類型選擇適當的部署目標，例如 **App Service (Windows) ** 或 **App Service (Linux) **。
+1. 在 [ **特定目標** ] 索引標籤上，根據您的容器類型選擇適當的部署目標，例如 **App Service (Windows)** 或 **App Service (Linux)**。
 
    ![[發佈嚮導] 中特定目標索引標籤的螢幕擷取畫面](media/deploy-app-service/publish-app-service-windows.png)
 
@@ -121,7 +121,7 @@ ms.locfileid: "90036336"
 
 1. 發行設定檔會隨您選取的所有詳細資料（例如資源群組和 app service）儲存。
 
-1. 若要使用相同的發行設定檔再次部署，請使用 [**發行**] 按鈕、[ **Web 發行活動**] 視窗上的 [**發行**] 按鈕，或以滑鼠右鍵按一下**方案總管**中的專案，然後選擇內容功能表上的 [**發行**] 專案。
+1. 若要使用相同的發行設定檔再次部署，請使用 [**發行**] 按鈕、[ **Web 發行活動**] 視窗上的 [**發行**] 按鈕，或以滑鼠右鍵按一下 **方案總管** 中的專案，然後選擇內容功能表上的 [**發行**] 專案。
 :::moniker-end
 
 ## <a name="view-container-settings"></a>查看容器設定
@@ -140,7 +140,7 @@ ms.locfileid: "90036336"
 
 在 [Azure 入口網站中，選擇 [ **資源群組**]，選取資源群組以開啟其詳細資料頁面。 確認這是正確的資源群組，然後選擇 [ **移除資源群組**]，輸入名稱，然後選擇 [ **刪除**]。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>下一步
 
 深入瞭解 [Azure App Service](/azure/app-service/overview)。
 

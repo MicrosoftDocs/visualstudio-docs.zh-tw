@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e462281686236f809fbd88588df5ad8fd832dbde
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a149511b447f1f21d180eaf526ebc3d991c95997
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859940"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>如何：隱藏所產生程式碼的程式碼分析警告
 
@@ -28,7 +28,7 @@ ms.locfileid: "94435543"
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>隱藏專案中產生之程式碼的警告
 
-1. 在 **方案總管** 中的專案上按一下滑鼠右鍵，然後按一下 [ **屬性** ]。
+1. 在 **方案總管** 中的專案上按一下滑鼠右鍵，然後按一下 [ **屬性**]。
 
 2. 選擇 [程式 **代碼分析** ] 索引標籤。
 

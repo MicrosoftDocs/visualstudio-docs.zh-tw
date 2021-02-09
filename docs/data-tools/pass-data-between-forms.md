@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e740483a855bbfd736810dd4d41e3f4d01b7dd60
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9aad1bff0b70f87ff271f6d09cc7f8d34179136d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434671"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858562"
 ---
 # <a name="pass-data-between-forms"></a>在表單之間傳遞資料
 
@@ -49,7 +49,7 @@ ms.locfileid: "94434671"
 
 - 在表單之間傳遞資料。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -57,7 +57,7 @@ ms.locfileid: "94434671"
 
 2. 遵循下列步驟來安裝 Northwind 範例資料庫：
 
-    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 Visual Studio 安裝程式中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢** ]。
+    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 Visual Studio 安裝程式中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢**]。
 
        [查詢編輯器] 視窗隨即開啟。
 
@@ -71,21 +71,21 @@ ms.locfileid: "94434671"
 
 1. 在 Visual Studio 中，於 [檔案]  功能表上選取 [新增]   > [專案]  。
 
-2. 展開左側窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面** ]。
+2. 展開左側窗格中的 [ **Visual c #** ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
 3. 在中間窗格中，選取 [ **Windows Forms 應用程式** ] 專案類型。
 
-4. 將專案命名為 **PassingDataBetweenForms** ，然後選擇 **[確定]** 。
+4. 將專案命名為 **PassingDataBetweenForms**，然後選擇 **[確定]**。
 
      隨即建立 **PassingDataBetweenForms** 專案，並將其新增至 [方案總管]。
 
 ## <a name="create-the-data-source"></a>建立資料來源
 
-1. 若要開啟 [ **資料來源** ] 視窗，請按一下 [ **資料** ] 功能表上的 [ **顯示資料來源** ]。
+1. 若要開啟 [ **資料來源** ] 視窗，請按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
 
 2. 在 [ **資料來源** ] 視窗中，選取 [ **加入新的資料來源** ] 以啟動 [ **資料來源** 設定向導]。
 
-3. 請選取 [ **選擇資料來源類型** ] 頁面上的 [ **資料庫** ]，再按 [ **下一步** ]。
+3. 請選取 [ **選擇資料來源類型** ] 頁面上的 [ **資料庫** ]，再按 [ **下一步**]。
 
 4. 在 [選擇資料庫模型] 頁面中，確認已指定 [資料集]，然後按一下 [下一步]。
 
@@ -97,7 +97,7 @@ ms.locfileid: "94434671"
 
 6. 若您的資料庫需要密碼，且可以使用包含敏感性資料的選項，則請選取此選項，然後按一下 [下一步]。
 
-7. 在 [ **將連接字串儲存到應用程式佈建檔** ] 頁面上，按 **[下一步]** 。
+7. 在 [ **將連接字串儲存到應用程式佈建檔** ] 頁面上，按 **[下一步]**。
 
 8. 展開 [選擇您的資料庫物件] 頁面上的 [資料表] 節點。
 
@@ -111,7 +111,7 @@ ms.locfileid: "94434671"
 
 ### <a name="to-create-a-data-bound-grid-on-the-form"></a>在表單上建立資料繫結資料格
 
-- 從 [資料來源] 視窗，將 [客戶] 主節點拖曳至 **Form1** 。
+- 從 [資料來源] 視窗，將 [客戶] 主節點拖曳至 **Form1**。
 
      <xref:System.Windows.Forms.DataGridView> 以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在 **Form1** 上。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource> 及 <xref:System.Windows.Forms.BindingNavigator> 會顯示在元件匣中。
 
@@ -123,11 +123,11 @@ ms.locfileid: "94434671"
 
 2. 保留 **Form2** 預設名稱，然後按一下 [新增]。
 
-3. 從 [資料來源] 視窗，將 [訂單] 主節點拖曳至 **Form2** 。
+3. 從 [資料來源] 視窗，將 [訂單] 主節點拖曳至 **Form2**。
 
      <xref:System.Windows.Forms.DataGridView> 以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在 **Form2** 上。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource> 及 <xref:System.Windows.Forms.BindingNavigator> 會顯示在元件匣中。
 
-4. 從元件匣刪除 **OrdersBindingNavigator** 。
+4. 從元件匣刪除 **OrdersBindingNavigator**。
 
      **OrdersBindingNavigator** 會從 **Form2** 中消失。
 
@@ -137,7 +137,7 @@ ms.locfileid: "94434671"
 
 1. 在 [方案總管] 中按兩下 **NorthwindDataSet.xsd** 檔案。
 
-2. 以滑鼠右鍵按一下 **OrdersTableAdapter** ，並選取 [新增查詢]。
+2. 以滑鼠右鍵按一下 **OrdersTableAdapter**，並選取 [新增查詢]。
 
 3. 保留 [使用 SQL 陳述式] 預設選項，然後按一下 [下一步]。
 
@@ -156,7 +156,7 @@ ms.locfileid: "94434671"
 
 6. 按一下 [下一步] 。
 
-7. 在 [ **填滿 DataTableMethod 名稱** ] 中，輸入 `FillByCustomerID` 。
+7. 在 [ **填滿 DataTableMethod 名稱**] 中，輸入 `FillByCustomerID` 。
 
 8. 清除 [傳回 DataTable] 選項，然後按一下 [下一步]。
 
@@ -164,9 +164,9 @@ ms.locfileid: "94434671"
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>在 Form2 上建立方法以將資料傳遞給
 
-1. 以滑鼠右鍵按一下 **Form2** ，並選取 [檢視程式碼]，以在 [程式碼編輯器] 中開啟 **Form2** 。
+1. 以滑鼠右鍵按一下 **Form2**，並選取 [檢視程式碼]，以在 [程式碼編輯器] 中開啟 **Form2**。
 
-2. 在 `Form2_Load` 方法之後，將下列程式碼新增至 **Form2** ：
+2. 在 `Form2_Load` 方法之後，將下列程式碼新增至 **Form2**：
 
      [!code-vb[VbRaddataDisplaying#1](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_1.vb)]
      [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
@@ -190,9 +190,9 @@ ms.locfileid: "94434671"
 
 - 按 **F5** 執行應用程式。
 
-- 按兩下 **Form1** 中的客戶記錄，以該客戶的訂單開啟 **Form2** 。
+- 按兩下 **Form1** 中的客戶記錄，以該客戶的訂單開啟 **Form2**。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 視應用程式的需求而定，在表單之間傳遞資料之後，您可能會有幾個想要執行的步驟。 一些您可以加強這個逐步解說的部分包括：
 
@@ -200,6 +200,6 @@ ms.locfileid: "94434671"
 
 - 加入將資料存回資料庫的功能。 如需詳細資訊，請參閱 [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

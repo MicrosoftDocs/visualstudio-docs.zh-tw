@@ -72,15 +72,15 @@ helpviewer_keywords:
 ms.assetid: bf78ace6-28e4-4a04-97c6-39e0cdd00ba4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 774c6c03d0485664eb01e1a7967003ef2f5bd2bc
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 984253f6c4ccb9d64fc1cefb34b2b5d7962e3eb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560612"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857658"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 偵錯堆積詳細資料
 本主題提供 CRT 偵錯堆積的詳細檢視。
@@ -180,7 +180,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 
 **_crtDbgFlag** 旗標包含下列位元欄位：
 
-|位元欄位|預設<br /><br /> value|描述|
+|位元欄位|預設<br /><br /> value|Description|
 |---------------|-----------------------|-----------------|
 |**_CRTDBG_ALLOC_MEM_DF**|開啟|開啟偵錯配置。 當這個位元關閉時，配置會繼續鏈結在一起，但是區塊類型是 **_IGNORE_BLOCK**。|
 |**_CRTDBG_DELAY_FREE_MEM_DF**|關閉|防止真的釋放記憶體，這是為了模擬低記憶體情況。 當這個位元開啟時，釋放區塊會保持在偵錯堆積的連結清單裡，但是會標記為 **_FREE_BLOCK** 並且會填入一個特殊位元組值。|

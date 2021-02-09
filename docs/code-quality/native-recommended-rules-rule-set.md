@@ -6,15 +6,15 @@ ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c0515a08d987d8892dd5f252d97ece8d138eb0b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f5bcbd32e54095eaf908620df803ea8a104c8d61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437027"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859745"
 ---
 # <a name="native-recommended-rules-rule-set"></a>原生建議規則規則集
 
@@ -22,7 +22,7 @@ ms.locfileid: "94437027"
 
 在您為原生專案建立的任何自訂規則集中包含此規則集。
 
-|規則|說明|
+|規則|Description|
 |----------|-----------------|
 |[C6001](/cpp/code-quality/c6001)|使用尚未初始化的記憶體|
 |[C6011](/cpp/code-quality/c6011)|取值的指標為 NULL|

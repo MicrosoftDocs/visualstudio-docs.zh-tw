@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de0a155d675f85e10cdf38969dd6eb59a3762770
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 2ebfc2071bdf9f9e9dc40b36744bb34d4a68ac04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859277"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>將 WPF 控制項繫結至資料集
 
@@ -62,13 +62,13 @@ ms.locfileid: "94518514"
 
 1. 開啟 Visual Studio。
 
-2. **在 [檔案** ] 功能表上選取 [ **新增** > **專案** ]。
+2. **在 [檔案**] 功能表上選取 [**新增** > **專案**]。
 
-3. 展開 [Visual Basic] 或 [Visual C#]，然後選取 **Windows** 。
+3. 展開 [Visual Basic] 或 [Visual C#]，然後選取 **Windows**。
 
 4. 選取 [ **WPF 應用程式** ] 專案範本。
 
-5. 在 [ **名稱** ] 方塊中，輸入 **AdventureWorksProductsEditor** ，然後選取 **[確定]** 。
+5. 在 [ **名稱** ] 方塊中，輸入 **AdventureWorksProductsEditor** ，然後選取 **[確定]**。
 
 ::: moniker-end
 
@@ -76,9 +76,9 @@ ms.locfileid: "94518514"
 
 1. 開啟 Visual Studio。
 
-2. 在 [開始] 視窗中，選擇 [ **建立新專案** ]。
+2. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
-3. 搜尋 c # **WPF 應用程式** 專案範本，並遵循步驟來建立專案，並將專案命名為 **AdventureWorksProductsEditor** 。
+3. 搜尋 c # **WPF 應用程式** 專案範本，並遵循步驟來建立專案，並將專案命名為 **AdventureWorksProductsEditor**。
 
 ::: moniker-end
 
@@ -88,11 +88,11 @@ ms.locfileid: "94518514"
 
 建立資料繫結控制項之前，您必須先定義應用程式的資料模型，並將其新增至 [資料來源] 視窗。 在此逐步解說中，您會建立資料集做為資料模型。
 
-1. 按一下 [ **資料** ] 功能表上的 [ **顯示資料來源** ]。
+1. 按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
 
    [資料來源] 視窗隨即開啟。
 
-2. 在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源** ]。
+2. 在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。
 
    [資料來源組態精靈] 隨即開啟。
 
@@ -124,7 +124,7 @@ ms.locfileid: "94518514"
 
      DataSet 設計工具隨即開啟。
 
-2. 在設計工具中，以滑鼠右鍵按一下 [填滿]、 **GetData()** 查詢，然後選取 [設定]。
+2. 在設計工具中，以滑鼠右鍵按一下 [填滿]、**GetData()** 查詢，然後選取 [設定]。
 
      [TableAdapter 組態精靈] 隨即開啟。
 
@@ -140,7 +140,7 @@ ms.locfileid: "94518514"
 
 透過在 WPF 設計工具中修改 XAML，將數個按鈕加入至視窗。 在此逐步解說稍後的內容中，您會加入程式碼，讓使用者使用這些按鈕捲動及儲存產品記錄的變更。
 
-1. 在 [方案總管] 中，按兩下 *MainWindow.xaml* 。
+1. 在 [方案總管] 中，按兩下 *MainWindow.xaml*。
 
     視窗會在 **WPF 設計** 工具中開啟。
 
@@ -160,7 +160,7 @@ ms.locfileid: "94518514"
 
 ## <a name="create-data-bound-controls"></a>建立資料繫結控制項
 
-`Product`從 [ **資料來源** ] 視窗將資料表拖曳至 WPF 設計工具，以建立顯示客戶記錄的控制項。
+`Product`從 [**資料來源**] 視窗將資料表拖曳至 WPF 設計工具，以建立顯示客戶記錄的控制項。
 
 1. 在 [資料來源] 視窗中，按一下 [產品] 節點的下拉式功能表，然後選取 [詳細資料]。
 
@@ -236,23 +236,23 @@ ms.locfileid: "94518514"
 
 建置並執行應用程式。 驗證您是否可以檢視及更新產品記錄。
 
-1. 按 **F5** 。
+1. 按 **F5**。
 
      隨即建置應用程式並執行。 驗證下列項目：
 
-    - 文字方塊會從具有相片的第一個產品記錄顯示資料。 此產品具有產品識別碼 713，以及名稱 **Long-Sleeve Logo Jersey, S** 。
+    - 文字方塊會從具有相片的第一個產品記錄顯示資料。 此產品具有產品識別碼 713，以及名稱 **Long-Sleeve Logo Jersey, S**。
 
     - 您可以按一下 **>** 或 **<** 按鈕，以流覽其他產品記錄。
 
 2. 在其中一個產品記錄中，變更 [大小] 值，然後按一下 [儲存變更]。
 
-3. 關閉應用程式，然後在 Visual Studio 中按 **F5** ，以重新啟動應用程式。
+3. 關閉應用程式，然後在 Visual Studio 中按 **F5**，以重新啟動應用程式。
 
 4. 巡覽至您剛變更的產品記錄，確認變更已保存。
 
 5. 關閉應用程式。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 完成此逐步解說之後，您可以嘗試下列相關工作：
 

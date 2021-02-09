@@ -6,19 +6,19 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32fbd3462f6a496d681f76480c3eb4451f325b35
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: ddcc5dd06a4e71d445c94c860b2a3ab92429ab2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859381"
 ---
 # <a name="add-new-connections"></a>新增連線
 
-您可以使用 **伺服器總管** 、 **Cloud Explorer** 或 **SQL Server 物件總管** ，測試與資料庫或服務的連接，以及探索資料庫內容和架構。 這些視窗的功能與某個程度重迭。 基本差異如下：
+您可以使用 **伺服器總管**、 **Cloud Explorer** 或 **SQL Server 物件總管**，測試與資料庫或服務的連接，以及探索資料庫內容和架構。 這些視窗的功能與某個程度重迭。 基本差異如下：
 
 - Server Explorer
 
@@ -34,7 +34,7 @@ ms.locfileid: "94518709"
 
 ## <a name="add-a-connection-in-server-explorer"></a>在伺服器總管中新增連接
 
-若要建立資料庫的連接，請按一下 **伺服器總管** 中的 [ **加入連接** ] 圖示，或以滑鼠右鍵按一下 [ **資料連線** ] 節點上的 **伺服器總管** ，然後選取 [ **加入連接** ]。 您也可以從這裡連接到另一部伺服器、SharePoint 服務或 Azure 服務上的資料庫。
+若要建立資料庫的連接，請按一下 **伺服器總管** 中的 [**加入連接**] 圖示，或以滑鼠右鍵按一下 [**資料連線**] 節點上的 **伺服器總管**，然後選取 [**加入連接**]。 您也可以從這裡連接到另一部伺服器、SharePoint 服務或 Azure 服務上的資料庫。
 
 ![伺服器總管新的連接圖示](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
@@ -50,11 +50,11 @@ ms.locfileid: "94518709"
 
 ## <a name="test-the-connection"></a>測試連線
 
-選擇資料來源之後，請按一下 [ **測試連接** ]。 如果不成功，您將需要根據廠商的檔進行疑難排解。
+選擇資料來源之後，請按一下 [ **測試連接**]。 如果不成功，您將需要根據廠商的檔進行疑難排解。
 
 ![[測試連接]](../data-tools/media/raddata-test-connection.png)
 
-如果測試成功，您就可以建立 *資料來源* ，這是一個 Visual Studio 詞彙，這是真正表示以基礎資料庫或服務為基礎的 *資料模型* 。
+如果測試成功，您就可以建立 *資料來源*，這是一個 Visual Studio 詞彙，這是真正表示以基礎資料庫或服務為基礎的 *資料模型* 。
 
 ## <a name="see-also"></a>另請參閱
 

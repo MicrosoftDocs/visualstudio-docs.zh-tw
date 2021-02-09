@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 049137d85429d720024fa9ce075f6a102f8d7c91
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 5d03a6dbe728d77fb9158ec02e1f59016e7c4a99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998287"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858276"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新資料
 
-當您資料集中的資料已修改並驗證之後，您可以藉由呼叫 TableAdapter 的方法，將更新的資料傳送回資料庫 `Update` 。 [TableAdapter](../data-tools/create-and-configure-tableadapters.md) `Update`方法會更新單一資料表，並根據 <xref:System.Data.DataRow.RowState%2A> 資料表中每個資料列的，執行正確的命令 (插入、更新或刪除) 。 當資料集有相關的資料表時，Visual Studio 會產生您用來執行更新的 TableAdapterManager 類別。 TableAdapterManager 類別可確保根據資料庫中定義的外鍵條件約束，以正確的順序進行更新。 當您使用資料繫結控制項時，資料系結架構會建立名為 tableAdapterManager 之 TableAdapterManager 類別的成員變數。
+當您資料集中的資料已修改並驗證之後，您可以藉由呼叫 TableAdapter 的方法，將更新的資料傳送回資料庫 `Update` 。 [](../data-tools/create-and-configure-tableadapters.md) `Update`方法會更新單一資料表，並根據 <xref:System.Data.DataRow.RowState%2A> 資料表中每個資料列的，執行正確的命令 (插入、更新或刪除) 。 當資料集有相關的資料表時，Visual Studio 會產生您用來執行更新的 TableAdapterManager 類別。 TableAdapterManager 類別可確保根據資料庫中定義的外鍵條件約束，以正確的順序進行更新。 當您使用資料繫結控制項時，資料系結架構會建立名為 tableAdapterManager 之 TableAdapterManager 類別的成員變數。
 
 > [!NOTE]
 > 當您嘗試以資料集的內容更新資料來源時，可能會收到錯誤。 若要避免錯誤，建議您將呼叫介面卡方法的程式碼放在 `Update` 區塊內 `try` / `catch` 。

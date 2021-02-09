@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30091a5bfd613ba9bd3738731e23153565ec4c8e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 64b5643704024ee689a011f5285b41be818dc5cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858965"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext 方法 (O/R 設計工具)
 
@@ -25,14 +25,14 @@ ms.locfileid: "94436585"
 
 ## <a name="methods-pane"></a>方法窗格
 
-<xref:System.Data.Linq.DataContext>對應至預存程式和函式的方法會顯示在 **O/R 設計** 工具的 [ **方法** ] 窗格中。 [方法] 窗格是與 [實體] 窗格 (主設計介面) 相鄰的窗格。 [ **方法** ] 窗格 <xref:System.Data.Linq.DataContext> 會列出您使用 **O/R 設計** 工具建立的所有方法。 依預設，[ **方法** ] 窗格是空的;將預存程式或函式從 **伺服器總管** 或 **資料庫總管** 拖曳至 **O/R 設計** 工具，以建立 <xref:System.Data.Linq.DataContext> 方法並填入 **方法** 窗格。 如需詳細資訊，請參閱 [如何：建立對應至預存程式和函式的 DataCoNtext 方法 (O/R 設計工具) ](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)。
+<xref:System.Data.Linq.DataContext>對應至預存程式和函式的方法會顯示在 **O/R 設計** 工具的 [**方法**] 窗格中。 [方法] 窗格是與 [實體] 窗格 (主設計介面) 相鄰的窗格。 [ **方法** ] 窗格 <xref:System.Data.Linq.DataContext> 會列出您使用 **O/R 設計** 工具建立的所有方法。 依預設，[ **方法** ] 窗格是空的;將預存程式或函式從 **伺服器總管** 或 **資料庫總管** 拖曳至 **O/R 設計** 工具，以建立 <xref:System.Data.Linq.DataContext> 方法並填入 **方法** 窗格。 如需詳細資訊，請參閱 [如何：建立對應至預存程式和函式的 DataCoNtext 方法 (O/R 設計工具) ](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)。
 
 > [!NOTE]
-> 開啟並關閉方法窗格，方法是以滑鼠右鍵按一下 **O/R 設計** 工具，然後按一下 [ **隱藏方法** 窗格] 或 [ **顯示方法窗格]** ，或使用鍵盤快速鍵 **CTRL** + **1** 。
+> 開啟並關閉方法窗格，方法是以滑鼠右鍵按一下 **O/R 設計** 工具，然後按一下 [**隱藏方法** 窗格] 或 [**顯示方法窗格]**，或使用鍵盤快速鍵 **CTRL** + **1**。
 
 ## <a name="two-types-of-datacontext-methods"></a>兩種 DataContext 方法
 
-DataContext 方法是指在資料庫中對應至預存程序和函式的方法。 您可以在 **O/R 設計** 工具的 [ **方法** ] 窗格中建立和加入 DataCoNtext 方法。 <xref:System.Data.Linq.DataContext> 方法有兩種不同的類型：傳回一個或多個結果集的方法，以及不會傳回結果集的方法：
+DataContext 方法是指在資料庫中對應至預存程序和函式的方法。 您可以在 **O/R 設計** 工具的 [**方法**] 窗格中建立和加入 DataCoNtext 方法。 <xref:System.Data.Linq.DataContext> 方法有兩種不同的類型：傳回一個或多個結果集的方法，以及不會傳回結果集的方法：
 
 - 傳回一個或多個結果集的 <xref:System.Data.Linq.DataContext> 方法：
 
@@ -51,7 +51,7 @@ DataContext 方法是指在資料庫中對應至預存程序和函式的方法�
 
 您從資料庫拖曳到 O/R 設計工具介面上的物件會根據資料庫中的物件名稱自動命名。 如果您將相同的物件拖曳一次以上，則會將數位新增至區分名稱的新名稱結尾。 當資料庫物件名稱包含空格或是 Visual Basic 或 C# 中不支援的字元時，系統就會使用底線來取代空格或無效字元。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
