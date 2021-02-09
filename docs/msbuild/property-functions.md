@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fa104ece39e20fbd00abcc2e1616a3dd52a5d4c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 5b4dce707d51d7a2840aeef78f4d70392c884275
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932006"
 ---
 # <a name="property-functions"></a>屬性函式
 
@@ -153,7 +153,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 
 以下是 MSBuild 屬性函式的清單：
 
-|函式簽章|說明|
+|函式簽章|Description|
 |------------------------|-----------------|
 |double Add(double a, double b)|將兩個雙精度浮點數相加。|
 |long Add(long a, long b)|將兩個長整數相加。|
@@ -346,7 +346,7 @@ Output:
 
 MSBuild 定義了數個函數來處理 [TargetFramework 和 TargetPlatform 屬性](msbuild-target-framework-and-target-platform.md)。
 
-|函式簽章|說明|
+|函式簽章|Description|
 |------------------------|-----------------|
 |GetTargetFrameworkIdentifier (字串 targetFramework) |從 TargetFramework 剖析 r。|
 |GetTargetFrameworkVersion (字串 targetFramework) |從 TargetFramework 剖析 TargetFrameworkVersion。|
@@ -389,7 +389,7 @@ Value5 = True
 
 函數 `Exists` 和 `HasTrailingSlash` 不是屬性函數。 它們可與屬性搭配使用 `Condition` 。 請參閱 [MSBuild 條件](msbuild-conditions.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)
 

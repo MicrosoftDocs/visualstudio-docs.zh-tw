@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1da4d48b41b4b42a3c3f049f64ca76e1d9eba6eb
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 38ad456c6c946964f3038a712274003bae5732fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932732"
 ---
 # <a name="command-availability"></a>命令可用性
 

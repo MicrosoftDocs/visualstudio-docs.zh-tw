@@ -12,19 +12,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Linting
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f56586843bd95585581f29fd44af16c1ef2c892f
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0458495920b603ebbfc2befb733bd8618cea5310
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932341"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>選項對話方塊：文字編輯器 \> JavaScript/TypeScript \> Linting
 
-使用 [選項]**** 對話方塊的 [Linting]**** 頁面，設定在程式碼編輯器中分析程式碼的選項。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **JavaScript/TypeScript**  >  **Linting**]。
+使用 [選項] 對話方塊的 [Linting] 頁面，設定在程式碼編輯器中分析程式碼的選項。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **JavaScript/TypeScript**  >  **Linting**]。
 
 ## <a name="eslint-settings"></a>ESLint 設定
 
@@ -32,7 +32,7 @@ ms.locfileid: "91947709"
 
 ### <a name="uielement-list"></a>UIElement 清單
 
-|選項|描述|
+|選項|Description|
 |------------|-----------------|
 |**啟用 ESLint**|選取此選項時，程式碼編輯器可讓您對程式碼進行靜態分析。|
 |**列出專案中的所有內含檔案，即使是關閉的檔案也列出**|選取此選項時，將分析已關閉的檔案，除非僅針對開啟的檔案報告診斷。|

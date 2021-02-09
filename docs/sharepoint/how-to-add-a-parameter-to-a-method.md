@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], method parameters
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 179109ff4c0def002dac45887fe9491196a70d3e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d568d5ca2025f1467fa96387493b1e8b4ed1ec6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915397"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931691"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>如何：將參數加入至方法
   使用參數將資訊傳遞至方法，或是從方法傳回信息。 所有方法都必須至少有一個參數。 如需如何設計參數以支援您想要建立的方法類型的詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。

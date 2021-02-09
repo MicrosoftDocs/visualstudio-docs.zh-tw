@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 46b7ccad-b07b-4ec0-b3ce-13981ffab7e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7b4041f0082bb4a2789c9b9d707ad129f52f1f61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 725095225c8bb04e309b23a44bd6067c4a3ef99d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932752"
 ---
 # <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
 傳回列舉中的下一組元素。

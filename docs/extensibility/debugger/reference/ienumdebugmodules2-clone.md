@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fd6d3abc-20d9-4f6f-9c8e-5bd29f68d47d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77dd68fadad5300a7a96787d91fbb17d9d456f60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f008cef55d45257ddd18dec69d6e72be8095ed57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932824"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 傳回目前列舉的複本作為個別的物件。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 832b42e62731a087048b4aa50e19b74c408343c5
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 7ef1aad17caae12b046ac483808f847a6e186792
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930703"
 ---
 # <a name="call-debugger-events"></a>呼叫偵錯工具事件
 調試會話中的事件會以特定順序發生。

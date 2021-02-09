@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c939328e1ef8e517821db8622e7383cab90c384
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d0f6cb0d3cc0bef03539428bafeff5ae3da64964
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931262"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>逐步解說：搭配編輯器延伸模組使用快速鍵
 您可以在編輯器延伸模組中回應快速鍵。 下列逐步解說示範如何使用快速鍵，將視圖修飾加入至文字視圖。 本逐步解說是以「視口裝飾編輯器」範本為基礎，可讓您使用 + 字元來新增裝飾。

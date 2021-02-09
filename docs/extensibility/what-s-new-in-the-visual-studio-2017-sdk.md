@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79e9df9a728ab9892694efa6489a8ea1fd675700
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 9ab9183eacfc82aa70c22dec551883561b021b58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931244"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Visual Studio 2017 SDK 的新功能&#39;
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 481cbab6-73ff-488c-aba5-2c09f9eb1e04
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 269499153c4be228503d6bd5b22e91e63dd5b5dd
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 5bb2a260f0b9903837b6f1bb8ce8a2e4a2fe691e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931782"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "93048674"
 
  下表說明 `RemoveDuplicates` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`Filtered`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含已移除所有重複項目的項目集合。 系統會保存輸入項目的順序，保留每個重複項目的第一個執行個體。|
 |`Inputs`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要從中移除重複項目的項目集合。|
@@ -72,7 +72,7 @@ ms.locfileid: "93048674"
 </Project>
 ```
 
- 下列範例顯示 `RemoveDuplicates` 工作會保留其輸入順序。 當工作完成時， `FilteredItems` 專案集合會以該順序包含 *MyFile2.cs* 、 *MyFile1.cs* 和 *MyFile3.cs* 專案。
+ 下列範例顯示 `RemoveDuplicates` 工作會保留其輸入順序。 當工作完成時， `FilteredItems` 專案集合會以該順序包含 *MyFile2.cs*、 *MyFile1.cs* 和 *MyFile3.cs* 專案。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -95,7 +95,7 @@ ms.locfileid: "93048674"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b3bc51c4-21ae-4913-800c-c2ca9dc18443
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4c08e9291d6aad2801ada8d427adc198d6bc5e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6cb65a0ba084f1c9003e8aebe406a77686edbb8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932778"
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
 這個方法會略過指定的元素數目。

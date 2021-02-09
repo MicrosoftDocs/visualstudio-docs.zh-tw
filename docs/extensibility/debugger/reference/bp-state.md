@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2721028c0635af274174574e4a264546c1909778
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2aad05751a1e8abe89caaf2c2f6627e01e4f825
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931470"
 ---
 # <a name="bp_state"></a>BP_STATE
 指定系結中斷點是否存在，並指定是否已啟用。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_STATE {
@@ -62,7 +62,7 @@ public enum enum_BP_STATE {
 ## <a name="remarks"></a>備註
 從 [>getstate](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) 方法傳回。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

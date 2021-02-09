@@ -9,13 +9,13 @@ f1_keywords:
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: a02a2a133031661ecbf9c3719f3b1993f3b20b5b
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: d3451a2a8d64edbf0f9000c9e58387704ed815ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932263"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>選項、文字編輯器、XML、其他
 
@@ -51,7 +51,7 @@ ms.locfileid: "96040116"
 
 檔案開啟時啟動大綱功能。 依預設，這個核取方塊為已選取。
 
-## <a name="caching"></a>Caching
+## <a name="caching"></a>快取
 
 **結構描述**
 

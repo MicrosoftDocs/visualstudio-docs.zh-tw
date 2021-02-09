@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 884cecdcbdbef3320516dd67c43cedd72bc25076
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: a310cd4428232338ed46a8a54502d9956e73be15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903851"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932005"
 ---
 # <a name="midl-task"></a>MIDL 工作
 
@@ -117,7 +117,7 @@ ms.locfileid: "92903851"
 
     |值|命令列選項|
     |-----------|--------------------------|
-    |**無**|**/error none**|
+    |**None**|**/error none**|
     |**EnableCustom**|**/error**|
     |**全部**|**/error all**|
 
@@ -173,7 +173,7 @@ ms.locfileid: "92903851"
 
     |值|命令列選項|
     |-----------|--------------------------|
-    |**無**|**/client none**|
+    |**None**|**/client none**|
     |**存根**|**/client stub**|
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/client** 選項。
@@ -188,7 +188,7 @@ ms.locfileid: "92903851"
 
     |值|命令列選項|
     |-----------|--------------------------|
-    |**無**|**/server none**|
+    |**None**|**/server none**|
     |**存根**|**/server stub**|
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/server** 選項。
@@ -419,6 +419,6 @@ ms.locfileid: "92903851"
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/W** 選項。 另請參閱此表格中的 **WarnAsError** 參數。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)

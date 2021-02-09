@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4115e999cc061be53ba437a090f207046f71ef8
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d7891687a76d0023b54be2c44c3b5fc09c97f010
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932791"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>元件元素 (Visual Studio 範本) 
 指定元件的相關資訊，範本會使用此元件將該元件的參考加入至專案。
@@ -32,7 +32,7 @@ ms.locfileid: "94671642"
  \<Reference>
  \<Assembly>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <Assembly> AssemblyName </Assembly>
@@ -49,7 +49,7 @@ ms.locfileid: "94671642"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[參考](../extensibility/reference-element-visual-studio-templates.md)|指定項目加入專案時要加入的組件參考。|
 

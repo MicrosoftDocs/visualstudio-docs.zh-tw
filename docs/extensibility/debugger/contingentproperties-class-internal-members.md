@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6441cafcc34a06464061b41691ea5faa32fc359
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f332c715c8a182b30191cd96c8f1d1438cbdefd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739108"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930482"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties 類別-內部成員
 包含物件的其他屬性 <xref:System.Threading.Tasks.Task> 。
@@ -38,7 +38,7 @@ ms.locfileid: "80739108"
 
 ### <a name="fields"></a>欄位
 
-|Name|描述|
+|名稱|描述|
 |----------|-----------------|
 |[m_children](../../extensibility/debugger/m-children-field.md)|這項工作所註冊之子工作的清單。|
 

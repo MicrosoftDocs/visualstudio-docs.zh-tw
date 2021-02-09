@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 65e4d37a-086b-426e-9394-a3534967fd59
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60eabaca8d39d40649e20e022b25ce1b02bd8faf
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 685650e0e97c3f9851f051fdaa78f86252597ff8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930716"
 ---
 # <a name="code-context"></a>程式碼內容
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 偵錯工具中，程式 **代碼** 內容：

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7c120ac1da59ab86e9419bcb031af46f1b3d900
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: cddf09eac5f887e0c5615af76e6956b590576786
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914253"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930664"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common language runtime 和運算式評估
 > [!IMPORTANT]

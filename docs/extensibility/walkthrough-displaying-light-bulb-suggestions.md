@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d8d498c1d9a5e5142672bcd561ac0749bbf8d75
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e1c906b96f3bd20b72cf2b5eca92190e0ad42916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877958"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931288"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>逐步解說：顯示燈泡建議
 Light 燈泡是 Visual Studio 編輯器中的圖示，會展開以顯示一組動作，例如修正內建程式碼分析器或程式碼重構所識別的問題。

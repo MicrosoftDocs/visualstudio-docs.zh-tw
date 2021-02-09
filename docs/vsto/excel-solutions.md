@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], Excel
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6ca4cfd45c1147d10ffaf8d3308b9adb09c689e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 3833ff549b2cceb3f783afc43a4f71dacc00ecb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848114"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931275"
 ---
 # <a name="excel-solutions"></a>Excel 方案
   Visual Studio 提供的專案範本，可用以建立 Microsoft Office Excel 的文件層級自訂和 VSTO 增益集。 您可以使用這些解決方案自動化 Excel、擴充 Excel 功能和自訂 Excel 使用者介面 (UI)。 如需檔層級自訂和 VSTO 增益集之間差異的詳細資訊，請參閱 [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。

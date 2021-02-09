@@ -12,19 +12,19 @@ f1_keywords:
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41256882433bc95db7af380d27cc8dc63fbcd387
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 051711a9d6dfe861f37e741ae9ecabfbf741012e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932354"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>選項對話方塊：文字編輯器 \> JavaScript \> IntelliSense
 
-使用 [ **選項** ] 對話方塊的 [ **IntelliSense** ] 頁面修改影響 JavaScript 之 IntelliSense 行為的設定。 您可以透過選擇功能表列上的 [工具]**** > [選項]****，並展開 [文字編輯器]**** > [JavaScript/TypeScript]**** > [IntelliSense]**** 來存取 [IntelliSense]**** 頁面。
+使用 [ **選項** ] 對話方塊的 [ **IntelliSense** ] 頁面修改影響 JavaScript 之 IntelliSense 行為的設定。 您可以透過選擇功能表列上的 [工具] > [選項]，並展開 [文字編輯器] > [JavaScript/TypeScript] > [IntelliSense] 來存取 [IntelliSense] 頁面。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "91947722"
 
 當您選取這個核取方塊時，JavaScript 程式碼編輯器只會在您選擇 **Tab** 或 **Enter** 鍵之後，才將完成清單中選取的項目附加至陳述式。 當您取消選取這個核取方塊時，其他字元像是句號、逗號、冒號、左括弧和左大括弧 ({) 也可以在陳述式中附加選取的項目。
 
-## <a name="references"></a>參考
+## <a name="references"></a>參考資料
 
 您可以使用這些選項指定不同 JavaScript 專案類型範圍中 IntelliSense .js 檔案的類型。 IntelliSense 參考通常是用來為全域物件提供 IntelliSense 支援。 您也可以使用這個頁面設定必須在執行階段載入之指令碼的載入順序，以及加入 IntelliSense 擴充檔案。
 

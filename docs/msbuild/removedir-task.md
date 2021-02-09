@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 7ab214be-26b2-4bcd-9de8-c1b2091c0b74
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 925e583582acad2492e9dbe9f4470924ac41d379
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 879cbe356f9da52ce0679ee63355d54aec0c9d1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931821"
 ---
 # <a name="removedir-task"></a>RemoveDir 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "93048743"
 
  下表說明 `RemoveDir` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`Directories`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要刪除的目錄。|
 |`RemovedDirectories`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含已成功刪除的目錄。|
@@ -64,7 +64,7 @@ ms.locfileid: "93048743"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

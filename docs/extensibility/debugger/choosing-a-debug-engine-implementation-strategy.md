@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b87d61586fb4acc360b5f5202b1219199c6a24b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e544e4cebaa4e2e1691f6c175dfa750a1f951abc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914292"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930690"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>選擇 debug engine 執行策略
 您可以使用執行時間架構來決定您的 debug engine (DE) 的執行策略。 您可以針對正在進行偵錯工具的程式建立同進程的 debug engine。 在 Visual Studio 會話 debug manager (SDM) 的同進程中建立 debug engine。 或者，為這兩個元件建立跨進程的偵錯工具引擎。 下列指導方針可協助您在這三種策略中做選擇。

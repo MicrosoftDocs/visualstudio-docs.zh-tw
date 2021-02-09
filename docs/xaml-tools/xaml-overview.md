@@ -6,13 +6,13 @@ ms.date: 06/23/2020
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 997a35414f38af16d028770044c28652e13149be
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 6f315573b24989e6ad3a3d451de372430b72f70f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931187"
 ---
 # <a name="overview-of-xaml"></a>XAML 概觀
 
@@ -46,7 +46,7 @@ Visual Studio 和 Blend for Visual Studio 提供的 [XAML 設計工具](creating
 - Visual Studio 2019 blog 文章中 **[XAML 開發人員工具的新功能](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/)**
 - YouTube **[Visual Studio video 中的新 XAML 功能](https://youtu.be/yI9OyA4ZM2E)**
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [WPF 應用程式中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [UWP 應用程式中的 XAML](/windows/uwp/xaml-platform/xaml-overview)

@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: 36e71603-ece7-4000-85fc-9da4eed61bf2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a5b15b481115a1ba8cab59d7839153bd0a611a1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c218965add570035e9396652cec46279fcebc4d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532154"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931743"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504：所分析之處理序的最大工作集 (以位元組為單位)
 

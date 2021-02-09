@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0fc63484-5fb6-4887-9ea4-1905b459ca9d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf7f59384d9317e4be173c93b6165d754a35ad8f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0fc7f8ba4d3939424e634f37ede78e92496c9eac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914240"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930495"
 ---
 # <a name="control-events"></a>控制事件
 您必須在受控制的程式執行期間傳送事件。 所有事件都是使用 [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) 介面傳送，而且具有需要您執行 [IDebugEvent2：： GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) 方法的屬性。

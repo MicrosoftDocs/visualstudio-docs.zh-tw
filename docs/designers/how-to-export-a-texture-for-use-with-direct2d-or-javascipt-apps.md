@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 502dcaec9aeb8fdb2f4b7a72b801f19d2d08dbc4
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 84fadd786e7a1bf978ec4df919b691031c316a4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134390"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930950"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>如何：匯出材質以搭配 Direct2D 或 JavaScript 應用程式使用
 
@@ -53,16 +53,16 @@ ms.locfileid: "93134390"
 
 1. 從基本材質著手。 載入現有的影像，或依照 [如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)中的說明，建立新的映射。 若要支援 *dds* 格式的區塊壓縮，請指定寬度和高度為四個大小倍數的材質，例如100x100、128x128 或 256x192) 材質。 由於不支援 Mipmap，因此材質不一定要是正方形，且大小不一定要是 2 的乘冪。
 
-2. 設定材質檔案，以便供「影像內容管線」處理。 在 [方案總管]  中，開啟您剛建立之材質檔案的捷徑功能表，然後選擇 [屬性]  。 在 [設定 **屬性** ] 的  >  **[一般** ] 頁面上，將 [ **專案類型** ] 屬性設定為 [ **影像內容管線** ]。 確定 [內容]  屬性是設定為 [是]  ，且 [從組建中排除]  是設定為 [否]  ，然後選擇 [套用]  按鈕。 此時會顯示 [影像內容管線]  組態屬性頁面。
+2. 設定材質檔案，以便供「影像內容管線」處理。 在 [方案總管] 中，開啟您剛建立之材質檔案的捷徑功能表，然後選擇 [屬性]。 在 [設定 **屬性**] 的  >  **[一般**] 頁面上，將 [**專案類型**] 屬性設定為 [**影像內容管線**]。 確定 [內容] 屬性是設定為 [是]，且 [從組建中排除] 是設定為 [否]，然後選擇 [套用] 按鈕。 此時會顯示 [影像內容管線] 組態屬性頁面。
 
-3. 將輸出格式設定為其中一種區塊壓縮格式。 在 [設定 **屬性**  >  **影像內容管線**  >  **一般** ] 頁面上，將 [ **壓縮** ] 屬性設定為 **BC3_UNORM 壓縮 (/compress： BC3_UNORM)** 。 您可以依據您的需求，選擇任何其他 BC1、BC2 或 BC3 格式。 Direct2D 目前不支援 BC4、BC5、BC6 或 BC7 材質。 如需不同 BC 格式的詳細資訊，請參閱 [封鎖壓縮 (Direct3D 10) ](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression)。
+3. 將輸出格式設定為其中一種區塊壓縮格式。 在 [設定 **屬性**  >  **影像內容管線**  >  **一般**] 頁面上，將 [**壓縮**] 屬性設定為 **BC3_UNORM 壓縮 (/compress： BC3_UNORM)**。 您可以依據您的需求，選擇任何其他 BC1、BC2 或 BC3 格式。 Direct2D 目前不支援 BC4、BC5、BC6 或 BC7 材質。 如需不同 BC 格式的詳細資訊，請參閱 [封鎖壓縮 (Direct3D 10) ](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression)。
 
    > [!NOTE]
-   > 指定的壓縮格式會決定「影像內容管線」所產生之檔案的格式。 這與「影像編輯器」中來源影像的 [格式]  屬性不同，該屬性所決定的是儲存在磁碟上的來源影像檔案格式，亦即「工作格式」  。 一般而言，您不會想要壓縮工作格式。
+   > 指定的壓縮格式會決定「影像內容管線」所產生之檔案的格式。 這與「影像編輯器」中來源影像的 [格式] 屬性不同，該屬性所決定的是儲存在磁碟上的來源影像檔案格式，亦即「工作格式」。 一般而言，您不會想要壓縮工作格式。
 
-4. 設定「影像內容管線」以產生使用預乘 Alpha 的輸出。 在 [設定 **屬性**  >  **影像內容管線**  >  **一般** ] 頁面上，將 [ **轉換成前置字母格式** ] 屬性設定為 **[是] (/generatepremultipliedAlpha)** 。
+4. 設定「影像內容管線」以產生使用預乘 Alpha 的輸出。 在 [設定 **屬性**  >  **影像內容管線**  >  **一般**] 頁面上，將 [**轉換成前置字母格式**] 屬性設定為 **[是] (/generatepremultipliedAlpha)**。
 
-5. 設定影像內容管線，使其不會產生 Mipmap。 在 [設定 **屬性**  >  **映射內容管線**  >  **一般** ] 頁面上，將 [ **產生 Mips** ] 屬性設定為 [ **否** ]。
+5. 設定影像內容管線，使其不會產生 Mipmap。 在 [設定 **屬性**  >  **映射內容管線**  >  **一般**] 頁面上，將 [**產生 Mips** ] 屬性設定為 [**否**]。
 
 6. 選擇 [確定]  按鈕。
 

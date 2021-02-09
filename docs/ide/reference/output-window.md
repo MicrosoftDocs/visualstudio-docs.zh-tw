@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8615fcdb7e6751087c499967478aaf63e68d624
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 0bdbaf79a3700a1ba1c0574e345093af25608e39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560378"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932042"
 ---
 # <a name="output-window"></a>輸出視窗
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d276cdfa997bb02cfa44037d8ebe758a4d2704e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 5182708e848587439795f5d6c04d87382b36f84a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931990"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup 元素 (MSBuild)
 
@@ -54,13 +54,13 @@ ms.locfileid: "93048806"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[屬性](../msbuild/property-element-msbuild.md)|選擇性項目。<br /><br /> 使用者定義的屬性名稱，其中包含屬性值。 `PropertyGroup` 項目中可能有零或多個 *Property* 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 
@@ -76,7 +76,7 @@ ms.locfileid: "93048806"
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)

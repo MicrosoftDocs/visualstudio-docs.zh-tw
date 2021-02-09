@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 188c02471e8921e66faefe9668ec3f54c935b50b
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 0a4ebcf99634012943ed0a7fd1a72b5d4852729e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931379"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>逐步解說：建立自訂編輯器
 VSPackage 專案範本可以在 c + + 中建立簡單的自訂編輯器。 VSPackage 專案範本不再支援 c # 或 Visual Basic 專案。 如需詳細資訊，請參閱 [VISUAL STUDIO SDK](../extensibility/visual-studio-sdk.md)。
@@ -48,5 +48,5 @@ VSPackage 專案範本可以在 c + + 中建立簡單的自訂編輯器。 VSPac
 
      編輯器支援剪下和貼上、尋找和取代，以及開啟和載入作業。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSPackages](../extensibility/internals/vspackages.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 558a54f6ddcf4945da4937f75b8aa133949349a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931080"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 最佳化和偵錯
 如果您想要進行程式碼的偵錯工具，則在該程式碼 **未** 優化的情況下會比較容易。 當程式碼優化時，編譯器和執行時間會變更發出的 CPU 程式碼，使其執行速度更快，但不會直接對應至原始原始程式碼。 如果對應較不直接，則偵錯工具通常無法告訴您區域變數的值，而且程式碼逐步執行和中斷點可能無法如您預期般運作。

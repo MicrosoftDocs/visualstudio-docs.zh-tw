@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 373d6b49-0459-4cce-816e-05745a44fe49
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc637ff3ce2fe596eed48684523da7114fe0a03a
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 223b1fff75c8fefdfed5bce5765d82fc5309738d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930729"
 ---
 # <a name="call-stack-evaluation"></a>呼叫堆疊評估
 為了在中斷模式期間查看呼叫堆疊的堆疊框架，您必須執行 [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 方法。

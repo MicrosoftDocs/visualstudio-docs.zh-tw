@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8dd554ed8f3b1664f889909d5d5ae7a30e9889a
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 56e8d198e55b521b761f8f3a7b54f6c2c0ee2c33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930926"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>如何：匯出包含預乘 Alpha 的材質
 
@@ -42,9 +42,9 @@ ms.locfileid: "93134814"
 
 1. 從基本材質著手。 載入現有的影像檔案，或依照 [如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)中所述，建立一個影像檔案。
 
-2. 設定材質檔案，以便供「影像內容管線」處理。 在方案總管  中，開啟材質檔案的捷徑功能表，然後選擇 [屬性]  。 在 [設定 **屬性** ] 的  >  **[一般** ] 頁面上，將 [ **專案類型** ] 屬性設定為 [ **影像內容管線** ]。 確定 [內容]  屬性是設定為 [是]  ，且 [從組建中排除]  是設定為 [否]  ，然後選擇 [套用]  按鈕。 此時會顯示 [影像內容管線]  組態屬性頁面。
+2. 設定材質檔案，以便供「影像內容管線」處理。 在方案總管中，開啟材質檔案的捷徑功能表，然後選擇 [屬性]。 在 [設定 **屬性**] 的  >  **[一般**] 頁面上，將 [**專案類型**] 屬性設定為 [**影像內容管線**]。 確定 [內容] 屬性是設定為 [是]，且 [從組建中排除] 是設定為 [否]，然後選擇 [套用] 按鈕。 此時會顯示 [影像內容管線] 組態屬性頁面。
 
-3. 設定影像內容管線以產生預乘 Alpha。 在 [設定 **屬性**  >  **影像內容管線**  >  **一般** ] 頁面上，將 [ **轉換成前置字母格式** ] 屬性設定為 **[是] (/generatepremultipliedAlpha)** 。
+3. 設定影像內容管線以產生預乘 Alpha。 在 [設定 **屬性**  >  **影像內容管線**  >  **一般**] 頁面上，將 [**轉換成前置字母格式**] 屬性設定為 **[是] (/generatepremultipliedAlpha)**。
 
 4. 選擇 [確定]  按鈕。
 

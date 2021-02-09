@@ -15,29 +15,29 @@ f1_keywords:
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a127263bc9bf94997585d07bff1b8d317b282e91
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 27b2c5765f041252e62defd15a3c7b6d7b460b43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932458"
 ---
 # <a name="options-dialog-box-text-editor--javascript--formatting"></a>選項對話方塊：文字編輯器 \> JavaScript \> 格式化
 
-使用 [選項]**** 對話方塊的 [格式]**** 頁面，設定在程式碼編輯器中格式化程式碼的選項。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **JavaScript/TypeScript**  >  **格式**]。
+使用 [選項] 對話方塊的 [格式] 頁面，設定在程式碼編輯器中格式化程式碼的選項。 若要存取此頁面，請在功能表列上選擇 [**工具**  >  **選項**]，然後展開 [**文字編輯器**  >  **JavaScript/TypeScript**  >  **格式**]。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="automatic-formatting"></a>自動格式化
 
-這些選項會決定在 [來源]**** 檢視中進行格式化的時機。
+這些選項會決定在 [來源] 檢視中進行格式化的時機。
 
 ### <a name="uielement-list"></a>UIElement 清單
 
-|選項|描述|
+|選項|Description|
 |------------|-----------------|
 |**遇到 Enter 字元時格式化完成的行**|選取這個選項時，程式碼編輯器會在您選擇 Enter 鍵時自動格式化行。|
 |**遇到 ; 字元時格式化完成的陳述式**|選取這個選項時，程式碼編輯器會在您選擇分號鍵時自動格式化行。|
@@ -51,18 +51,18 @@ ms.locfileid: "91947735"
 
 ### <a name="uielement-list"></a>UIElement 清單
 
-|選項|描述|
+|選項|Description|
 |------------|-----------------|
 |**將函式的左大括弧放在新行**|選取這個選項時，程式碼編輯器會將與函式相關聯的左大括弧移至新行。|
 |**將控制區塊的左大括弧置於新行**|選取這個選項時，程式碼編輯器會將與控制區塊 (例如，`if` 和 `while` 控制區塊) 相關聯的左大括弧移至新行。|
 
 ## <a name="spacing"></a>間距
 
-這些選項會決定在 [來源]**** 檢視中插入空格的方式。
+這些選項會決定在 [來源] 檢視中插入空格的方式。
 
 ### <a name="uielement-list"></a>UIElement 清單
 
-|選項|描述|
+|選項|Description|
 |------------|-----------------|
 |**在逗號分隔符號後面插入空格**|選取這個選項時，程式碼編輯器會在逗號分隔符號後面新增空格。|
 |**在 "for" 陳述式中的分號後面插入空格**|選取這個選項時，程式碼編輯器會在 `for` 迴圈第一行中的每個分號後面新增空格。|

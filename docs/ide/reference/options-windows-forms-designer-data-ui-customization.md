@@ -11,13 +11,13 @@ helpviewer_keywords:
 - Options dialog box, Windows Forms Designer, Data UI Customization
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 2b43776d2218f6f2a6a120e139dcae9d540f6f10
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: 46834dea30f41ebf0eb8629fe4dde0525288e82d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932302"
 ---
 # <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>選項對話方塊： Windows Form 設計工具 > 資料 UI 自訂
 

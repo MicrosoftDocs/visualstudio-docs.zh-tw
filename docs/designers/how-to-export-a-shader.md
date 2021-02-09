@@ -7,19 +7,19 @@ ms.topic: how-to
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da09feffc4d2f804660f02dbda6055bf59099500
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 7f4abcdf5648031be9b76ba3f25e0a8f33d4efba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930963"
 ---
 # <a name="how-to-export-a-shader"></a>如何：匯出著色器
 
-本文將示範如何使用 [著色器設計工具]  匯出您可以在應用程式中使用的「有向圖著色器語言」(DGSL) 著色器。
+本文將示範如何使用 [著色器設計工具] 匯出您可以在應用程式中使用的「有向圖著色器語言」(DGSL) 著色器。
 
 ## <a name="export-a-shader"></a>匯出著色器
 
@@ -29,9 +29,9 @@ ms.locfileid: "93134298"
 
      如果您沒有 **視覺著色器圖形 ( dgsl)** 檔案開啟，請依照 how [to：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)中所述建立一個檔案。
 
-2. 在 [著色器設計工具]  工具列上，選擇 [進階]  > [匯出]  > [匯出成]  。 [匯出著色器]  對話方塊隨即出現。
+2. 在 [著色器設計工具] 工具列上，選擇 [進階] > [匯出] > [匯出成]。 [匯出著色器] 對話方塊隨即出現。
 
-3. 在 [存檔類型]  下拉式清單中，選擇您想要匯出的格式。
+3. 在 [存檔類型] 下拉式清單中，選擇您想要匯出的格式。
 
      以下是您可以選擇的格式︰
 
@@ -41,7 +41,7 @@ ms.locfileid: "93134298"
 
      **C++ 標頭 (\*.h)** 將著色器匯出為 C-Style 標頭，其定義包含 HLSL 位元組程式碼的位元組陣列。 此選項會讓您在根據使用者問題來偵錯和修補程式時更加費時，因為必須重新編譯應用程式，才能測試修正。 不過，這個選項可讓著色器在應用程式部署之後就難以 (但無法杜絕) 修改，對想以不必要的方式修改著色器的使用者而言難度最高。
 
-4. 在 [檔案名稱]  下拉式方塊中，為匯出的著色器指定名稱，然後選擇 [儲存]  按鈕。
+4. 在 [檔案名稱] 下拉式方塊中，為匯出的著色器指定名稱，然後選擇 [儲存] 按鈕。
 
 ## <a name="see-also"></a>另請參閱
 
