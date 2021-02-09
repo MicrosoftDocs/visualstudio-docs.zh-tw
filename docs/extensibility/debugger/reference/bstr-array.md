@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e9859267cc26ec012852a1150e458c81383dfd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d16eb78cdb6c6b9e665dda8410f46d4cf61ee69a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882208"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
 描述字串陣列的結構。
@@ -53,7 +53,7 @@ struct BSTR_ARRAY {
 
  [僅限 c + +]每個個別字串都必須使用來釋 `SysFreeString` 出，而 `Members` 陣列必須使用來釋放 `CoTaskMemFree` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

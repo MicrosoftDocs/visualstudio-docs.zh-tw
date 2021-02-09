@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 523279d70215af90ea070ea8272a5221d9947582
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9c3d745f14185d46dce08d46b8c56391b108627d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882404"
 ---
 # <a name="setwefprocessid-method"></a>SetWefProcessId 方法
   提供將執行 Web Extensions Framework (WEF) 內容的處理序識別碼。
@@ -32,7 +32,7 @@ HRESULT SetWefProcessId(
 
 #### <a name="parameters"></a>參數
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |*dwProcessId*|將用來執行 WEF 內容的處理序識別碼。|
 

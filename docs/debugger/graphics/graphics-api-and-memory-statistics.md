@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 27d2f303-e3ed-4219-9009-345a0d849506
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e0ad2bc48e1e15e1b061cdb600ce65773523e70
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 08c9f518f6d56f2ec211ef494da3890a56bf1369
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882293"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>圖形 API 和記憶體統計資料
 <!-- VERSIONLESS -->
@@ -42,7 +42,7 @@ Visual Studio 圖形診斷中的圖形 API 統計資料可讓您查看所有已�
 
 如同 API 統計資料工具，您可以在視窗中按一下滑鼠右鍵，將所有資料複製為 CSV，然後將其貼入 Excel 之類的資料，以供進一步分析。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [圖形診斷 (對 DirectX 圖形進行偵錯)](visual-studio-graphics-diagnostics.md)
 - [資源歷程記錄](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], Outlook solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ded4652704a47252f0839aed151f0557ae5e6766
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 86fa849641894576f141ce9bc76eccaf72424d47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882436"
 ---
 # <a name="outlook-solutions"></a>Outlook 方案
   Visual Studio 提供的專案範本可用來建立 Microsoft Office Outlook 的 VSTO 增益集。 您可以使用 VSTO 增益集來自動化 Outlook、擴充 Outlook 功能，或自訂 Outlook 的使用者介面 (UI)。 如需 VSTO 增益集的詳細資訊，請參閱 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。
@@ -57,7 +57,7 @@ ms.locfileid: "97527549"
 
 ## <a name="customize-the-user-interface-of-an-outlook-application"></a>自訂 Outlook 應用程式的使用者介面
 
-|工作|取得詳細資訊|
+|Task|取得詳細資訊|
 |----------|--------------------------|
 |在 Outlook 偵測器的功能區中加入自訂索引標籤。|[功能區總覽](../vsto/ribbon-overview.md)|
 |將自訂群組加入 Outlook 偵測器的內建索引標籤。|[如何：自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)|

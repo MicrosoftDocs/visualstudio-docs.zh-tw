@@ -8,15 +8,15 @@ ms.topic: reference
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdf4256b2fb376fc063eb330d47c843c1ff8820b
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8e2a1f542e89851cb430f8d80934933351e9349e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882267"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a> (Visual Studio 範本的 BuildProjectOnload 元素) 
 建立新的專案，並將其新增至方案。 整個方案都不會建立。
@@ -29,7 +29,7 @@ ms.locfileid: "94671588"
     <BuildProjectOnLoad>
 ```
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```vb
 <BuildProjectOnLoad> true/false </BuildProjectOnLoad>
@@ -46,7 +46,7 @@ ms.locfileid: "94671588"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |`TemplateData`|將範本分類，並定義該範本在 [ **新增專案** ] 和 [ **加入新專案** ] 對話方塊中的顯示方式。|
 
