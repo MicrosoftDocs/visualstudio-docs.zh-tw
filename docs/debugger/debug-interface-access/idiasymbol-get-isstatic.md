@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3be5fe1b-46e8-4b07-90d8-4929dbbe7ff7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da8597c0a30a25e0cbda01b294273f845fcef7a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 338c2e650b59f501bbf184e877ca1e1f08b924c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863106"
 ---
 # <a name="idiasymbolget_isstatic"></a>IDiaSymbol::get_isStatic
 抓取旗標，這個旗標會指定函式或 Thunk 圖層是否已標示為靜態。
@@ -41,7 +41,7 @@ HRESULT get_isStatic(
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

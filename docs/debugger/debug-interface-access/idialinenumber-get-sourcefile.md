@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 86fc4411-375e-4b99-8f96-4da2c3f68190
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5242dec0f217f819c6a2ceb8ddaacbafe2de18a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e8d597682b88e30eefb6a1627ebc3e21a7fe7a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466858"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864723"
 ---
 # <a name="idialinenumberget_sourcefile"></a>IDiaLineNumber::get_sourceFile
 抓取來源檔案的參考。
@@ -25,7 +25,7 @@ ms.locfileid: "85466858"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_sourceFile ( 
+HRESULT get_sourceFile ( 
    IDiaSourceFile** pRetVal
 );
 ```

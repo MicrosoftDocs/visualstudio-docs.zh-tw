@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: de4760c3-a746-4bab-8065-1388fed31b67
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 18436d28fbee7ba12cea2398eb1fa6abbd8ac23b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7cd793819bb0d8fdfb9e6c3b7c921c1dbf78ad22
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466732"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864675"
 ---
 # <a name="idialoadcallbackrestrictregistryaccess"></a>IDiaLoadCallback::RestrictRegistryAccess
 決定是否可以使用登錄查詢來尋找符號搜尋路徑。

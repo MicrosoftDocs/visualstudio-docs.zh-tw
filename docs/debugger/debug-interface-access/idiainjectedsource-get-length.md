@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 38b88b8b-c2e0-4b2d-8b8b-9ff373733e78
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 73beb6fea872da74bdce6f94e05d1c8ddc8915b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5fde6459d2c5bb0463a919732427b277a371099
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864849"
 ---
 # <a name="idiainjectedsourceget_length"></a>IDiaInjectedSource::get_length
 捕獲程式碼的位元組數目。
@@ -25,7 +25,7 @@ ms.locfileid: "85467061"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_length ( 
+HRESULT get_length ( 
    ULONGLONG* pRetVal
 );
 ```

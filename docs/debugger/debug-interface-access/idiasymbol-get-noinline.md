@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c610b78-f1a3-494a-acf8-c42b97935be1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74a2cd3daa2c1ca466b0e302c916a220fa31e7d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3ac08460995cbaec149c5dda9ffc4c1e3e5bfbf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862959"
 ---
 # <a name="idiasymbolget_noinline"></a>IDiaSymbol::get_noInline
 抓取旗標，這個旗標會指定是否使用 [noinline](/cpp/cpp/noinline) 屬性) 將函式標示為非內嵌 (。
@@ -41,7 +41,7 @@ HRESULT get_noInline(
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

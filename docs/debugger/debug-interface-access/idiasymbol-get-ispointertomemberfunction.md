@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: aa9b5599-9602-41be-ab50-d84b90bee72f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a13c9c43c5f79a37c569b74d423f3748e5bd6a53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e19338d187f312d44633e218c8f540e03ba83ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463243"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863127"
 ---
 # <a name="idiasymbolget_ispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
 指定此符號是否為成員函式的指標。

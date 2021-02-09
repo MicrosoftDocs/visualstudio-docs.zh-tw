@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f29e373d-e7bb-4181-ab9f-bf708d401d83
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 84123d88bc379ea670caca90d66207fc6e16f26f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c32382468c4d67dae9e94a3fc9882fd61213cf00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863120"
 ---
 # <a name="idiasymbolget_issafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 抓取旗標，這個旗標會指定是否使用安全緩衝區的預處理器指示詞。 當 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 設定為時，請使用 `SymTagFunction` 。
@@ -25,7 +25,7 @@ ms.locfileid: "85463208"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_isSafeBuffers( 
+HRESULT get_isSafeBuffers( 
    BOOL* pRetVal)
 );
 ```

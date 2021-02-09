@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 31fde3af-2824-4b0f-8d0d-cee6046596f6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 784e17ddf6202419618b7ff3b8836f0f46021989
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8346d86b88635e544c698d31f4aecb18728c8b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864660"
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
 決定是否可以在原始的 debug 目錄中尋找 .pdb 檔。

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 2f18c64c-2cf0-43fc-a447-21e82702ca2a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 435dc337ea3f1caad2ad99031d9be872d80337e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa5013909fc875e406472c520a9811d716c50e6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864676"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 從 DIA 符號尋找程式接收回呼，因此可讓使用者介面報告位置嘗試的進度。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDiaLoadCallback : IUnknown
@@ -44,7 +44,7 @@ IDiaLoadCallback : IUnknown
 
  如需可加諸于載入進程的其他限制，請參閱 [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md) 介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Dia2。h
 
  程式庫： diaguids .lib

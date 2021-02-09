@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f7f05b8-6b71-4958-9e1e-e4924ef9c59b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 009fcf437f56852e324e392f6a5691dd23e23ebc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3f1fde1a3509181182e7d41486facfb01d3efe1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863176"
 ---
 # <a name="idiasymbolget_isltcg"></a>IDiaSymbol::get_isLTCG
 抓取旗標，這個旗標會指定 [編譯單位](../../debugger/debug-interface-access/compiland.md) 是否已連結至連結器切換 [/ltcg (連結時產生程式碼) ](/cpp/build/reference/ltcg-link-time-code-generation)，以協助整個程式優化。 此參數只適用于 managed 程式碼。
@@ -41,7 +41,7 @@ HRESULT get_iSLTCG(
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

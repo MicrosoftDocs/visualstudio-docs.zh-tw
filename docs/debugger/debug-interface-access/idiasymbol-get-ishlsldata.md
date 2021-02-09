@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 4662058b-c505-4ccf-ae03-739a62c814ca
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 39ea8fab6616cb64b7870cb9a1d5cd0c706fa105
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56f65e8160165485aab4718d13e9417bd0e92523
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463418"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863190"
 ---
 # <a name="idiasymbolget_ishlsldata"></a>IDiaSymbol::get_isHLSLData
 指定此符號是否代表高階著色器語言 (HLSL) 資料。

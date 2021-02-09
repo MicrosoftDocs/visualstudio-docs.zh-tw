@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ffcce3cc-085c-44eb-8145-46e3819c54f9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dac0c302fa85533624f58eac1538f8c8ba076e5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b243159cccc53361e833107fdf4d6381833ac6da
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863015"
 ---
 # <a name="idiasymbolget_liverangelength"></a>IDiaSymbol::get_liveRangeLength
 傳回區域符號有效的位址範圍長度。
@@ -25,7 +25,7 @@ ms.locfileid: "85463040"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_liveRangeLength ( 
+HRESULT get_liveRangeLength ( 
    ULONGLONG* length
 );
 ```

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b9977075-8fd1-4b11-bfff-d87e9f2586dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f883d22e677d4401e6bee476cf88527a24787145
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78bb087f7e5b66d68e24d66315d9edcd15b06544
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864870"
 ---
 # <a name="idiainjectedsourceget_virtualfilename"></a>IDiaInjectedSource::get_virtualFilename
 抓取提供給非檔案原始碼的名稱;也就是插入的程式碼。
@@ -25,7 +25,7 @@ ms.locfileid: "85467012"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_virtualFilename ( 
+HRESULT get_virtualFilename ( 
    BSTR* pRetVal
 );
 ```

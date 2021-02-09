@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4ba3d9e4-b205-4ee6-a41d-6996972f1f85
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00461f73059198f5e9028658100c9ccf400be607
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f62e974b6461d3567c67d36bad963c687c3a291
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467173"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864919"
 ---
 # <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
 抓取影像應依據的記憶體位置。
@@ -25,7 +25,7 @@ ms.locfileid: "85467173"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_imageBase ( 
+HRESULT get_imageBase ( 
    ULONGLONG* pRetVal
 );
 ```

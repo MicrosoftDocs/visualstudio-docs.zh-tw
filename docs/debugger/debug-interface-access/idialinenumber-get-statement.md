@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 22b8ee29-79ef-427f-bd05-00d255ab836b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea4a05bfccddeedb29110ea6ee44f34f85534a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0baad9c254efad1fff772cfae27828e3597d078b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466844"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864730"
 ---
 # <a name="idialinenumberget_statement"></a>IDiaLineNumber::get_statement
 抓取旗標，指出這行資訊描述程式來源中語句的開頭，而不是運算式。
@@ -25,7 +25,7 @@ ms.locfileid: "85466844"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_statement ( 
+HRESULT get_statement ( 
    BOOL* pRetVal
 );
 ```
