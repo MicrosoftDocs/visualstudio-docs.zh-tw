@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: a832bcee3f722cabaedcb3ac0672dbe09a4e77c4
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: abc824cf5d0413f01ad5f3f4423b974aeca40b03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870580"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中 c # 的格式規範
 您可以使用格式規範變更在 [ **監看** 式] 視窗中顯示值的格式。 您也可以 **在 [即時** 運算] 視窗、 **命令** 視窗、追蹤 [點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)和來源視窗中使用格式規範。 如果您在這些視窗中的運算式上暫停，結果會以指定的格式顯示顯示在  [資料提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) 中。
@@ -77,6 +77,6 @@ ms.locfileid: "97761208"
 |raw|以項目在原始項目節點中出現的形式顯示該項目。 只有在 Proxy 物件上有效。|字典\<T>|字典的原始觀點\<T>|
 |results|與實作為 IEnumerable 或 IEnumerable 之型別的變數搭配使用 \<T> ，通常是查詢運算式的結果。 只顯示包含查詢結果的成員。|顯示所有成員|顯示符合查詢條件的成員|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [觀賞和快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)
 - [自動變數和區域變數視窗](../debugger/autos-and-locals-windows.md)

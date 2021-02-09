@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4c2bf24058ce8a69f05d8d2cee17a18ff9505d
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 02ba7d14dad8e4755170ffca7853aa9cc6c85a19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862993"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870541"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>執行緒屬性對話方塊、一般索引標籤
 使用此對話方塊可深入瞭解特定執行緒。 若要顯示此對話方塊，請將焦點移至 [ [執行緒] 視圖](../debugger/threads-view.md) 視窗，或開啟 [訊息] [視圖](../debugger/messages-view.md) 並展開訊息。 選取樹狀結構中的任何執行緒節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。
 
  [ **執行緒屬性** ] 對話方塊包含一個窗格，也就是 [ **一般** ] 索引標籤。可用的設定如下：
 
-|進入|描述|
+|進入|Description|
 |-----------|-----------------|
 |**模組名稱**|模組的名稱。|
 |**執行緒識別碼**|此執行緒的唯一識別碼。 請注意，執行緒識別碼會重複使用;它們只會在該執行緒的存留期內識別執行緒。|

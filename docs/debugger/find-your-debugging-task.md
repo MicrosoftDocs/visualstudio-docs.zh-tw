@@ -1,5 +1,5 @@
 ---
-title: 常見問題-尋找您的偵錯工具功能
+title: 常見問題集 - 尋找您的偵錯功能
 description: 常見問題，協助您找出可協助您進行應用程式的偵錯工具功能
 ms.custom: ''
 ms.date: 10/01/2019
@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], find your feature
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a34aa926fca081a498173cd5fcc439a6b3886ba7
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 3c215b232c64b97c57285618056ee4675587b48e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728027"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870710"
 ---
 # <a name="faq---find-the-debugging-feature-you-need-in-visual-studio"></a>常見問題-在 Visual Studio 中尋找您需要的調試功能
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 414c42a5-7168-46a9-bbea-6ab10f2d82a8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3a3d5babc0fe78098661f22dd84fca1eac9b19
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: b0213cef21363b62a0a889dc66b9a182b0ed535e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870645"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>字型對話方塊 (Microsoft Spy++ 說明)
 使用此對話方塊來設定 [Spy + + [視圖](../debugger/spy-increment-views.md) ] 視窗中所使用的字元字型。 若要顯示此對話方塊，請展開 [ **View** ] 功能表並選擇 [ **字型**]。

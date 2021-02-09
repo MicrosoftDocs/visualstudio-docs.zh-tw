@@ -14,15 +14,15 @@ helpviewer_keywords:
 - tutorials, multithreaded debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870515"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>開始對多執行緒應用程式進行偵錯工具 (c #、Visual Basic、c + +) 
 
@@ -46,31 +46,31 @@ Visual Studio 提供數個工具和使用者介面元素，以協助您進行多
 
    在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
-   在 [建立新專案]**** 視窗的搜尋方塊中輸入或鍵入 ASP.NET**。 接下來，從 [語言] 清單中選擇 **c #**、 **c + +** 或 **Visual Basic** ，然後從 [平臺] 清單中選擇 [ **Windows** ]。 
+   在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從 [語言] 清單中選擇 **c #**、 **c + +** 或 **Visual Basic** ，然後從 [平臺] 清單中選擇 [ **Windows** ]。 
 
-   套用語言和平臺篩選器之後，請選擇 ** ( .Net Core) 的主控台應用程式 ** ，或針對 c + + **主控台應用程式** 範本，然後選擇 **[下一步]**。
+   套用語言和平臺篩選器之後，請選擇 **( .Net Core) 的主控台應用程式** ，或針對 c + + **主控台應用程式** 範本，然後選擇 **[下一步]**。
 
    > [!NOTE]
    > 如果您沒有看到正確的範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發** ] 或 [ **使用 c + + 的桌面開發** ] 工作負載，然後選擇 [ **修改**]。
 
-   在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中輸入或輸入*MyThreadWalkthroughApp* 。 然後，選擇 [ **建立**]。
+   在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中輸入或輸入 *MyThreadWalkthroughApp* 。 然後，選擇 [ **建立**]。
 
    ::: moniker-end
    ::: moniker range="vs-2017"
    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇下列專案：
 
-   - 針對 c # 應用程式，請選擇 [ **Visual c #**] 底下的 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .NET Framework) **]。
-   - 若為 Visual Basic 應用程式，請在 [ **Visual Basic**] 下選擇 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 (] .NET Framework) **。
+   - 針對 c # 應用程式，請選擇 [ **Visual c #**] 底下的 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .NET Framework)**]。
+   - 若為 Visual Basic 應用程式，請在 [ **Visual Basic**] 下選擇 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 (] .NET Framework)**。
    - 若是 c + + 應用程式，請在 [ **Visual C++**] 下，選擇 [ **windows 桌面**]，然後選擇 [ **windows 主控台應用程式**]。
 
-   如果您沒有看到**主控台應用程式 ( .net Core) **或針對 c + +，**主控台應用程式**專案範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發** ] 或 [ **使用 c + + 的桌面開發** ] 工作負載，然後選擇 [ **修改**]。
+   如果您沒有看到 **主控台應用程式 ( .net Core)** 或針對 c + +，**主控台應用程式** 專案範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發** ] 或 [ **使用 c + + 的桌面開發** ] 工作負載，然後選擇 [ **修改**]。
 
    然後，輸入 *MyThreadWalkthroughApp* 之類的名稱，然後按一下 **[確定]**。
 
    選取 [確定]。
    ::: moniker-end
 
-   新的主控台專案隨即出現。 建立專案之後，會出現原始程式檔。 根據您所選擇的語言，來源檔案可能會稱為 *Program.cs*、 *MyThreadWalkthroughApp .cpp*或 *Module1*。
+   新的主控台專案隨即出現。 建立專案之後，會出現原始程式檔。 根據您所選擇的語言，來源檔案可能會稱為 *Program.cs*、 *MyThreadWalkthroughApp .cpp* 或 *Module1*。
 
 1. 刪除出現在原始程式檔中的程式碼，並將它取代為下列適當的範例程式碼。
 
@@ -242,7 +242,7 @@ Visual Studio 提供數個工具和使用者介面元素，以協助您進行多
 
 3. 在 [原始程式碼編輯器] 中，找出包含中斷點的行。
 
-### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>探索執行緒標記  
+### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>探索執行緒標記  
 
 1. 在調試的工具列中，選取 [ **在來源中顯示執行緒** ] 按鈕 ![顯示來源中的執行緒](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")。
 
@@ -260,7 +260,7 @@ Visual Studio 提供數個工具和使用者介面元素，以協助您進行多
 
 在 [ **平行堆疊** ] 視窗中，您可以在 [執行緒] 和 [工作]) 工作視圖的工作程式設計 (之間切換，也可以查看每個執行緒的呼叫堆疊資訊。 在此應用程式中，我們可以使用執行緒的觀點。
 
-1. 選擇 [ **Debug** **Parallel Stacks**  >  **Windows**  >  **平行堆疊**] 來開啟 [平行堆疊] 視窗。 您應該會看到類似下面的內容。 確切的資訊會根據每個執行緒的目前位置、硬體和程式語言而有所不同。
+1. 選擇 [ **Debug**   >  **Windows**  >  **平行堆疊**] 來開啟 [平行堆疊] 視窗。 您應該會看到類似下面的內容。 確切的資訊會根據每個執行緒的目前位置、硬體和程式語言而有所不同。
 
     ![平行堆疊視窗](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
@@ -279,7 +279,7 @@ Visual Studio 提供數個工具和使用者介面元素，以協助您進行多
 
 ### <a name="set-a-watch-on-a-variable"></a>在變數上設定監看式
 
-1. 選取 [ **Debug**Windows **Parallel Watch**  >  **Windows**  >  **parallel watch**  >  **parallel watch 1**]，開啟 [平行監看式] 視窗。
+1. 選取 [ **Debug** Windows   >    >  **parallel watch**  >  **parallel watch 1**]，開啟 [平行監看式] 視窗。
 
 2. 選取您在 `<Add Watch>` 第4個數據行中看到文字 (或空白標頭資料格的資料格) 然後輸入 `data` 。
 
@@ -298,7 +298,7 @@ Visual Studio 提供數個工具和使用者介面元素，以協助您進行多
 
 1. 在 [ **平行監看** 式] 視窗中，按住 **Shift** 鍵，然後選取多個資料列。
 
-2. 以滑鼠右鍵按一下並選取 [ **旗**標]。
+2. 以滑鼠右鍵按一下並選取 [ **旗** 標]。
 
     所有選取的執行緒都會加上旗標。 現在，您可以篩選，只顯示已加上旗標的執行緒。
 
@@ -311,7 +311,7 @@ Visual Studio 提供數個工具和使用者介面元素，以協助您進行多
 
 4. 再次選取 [ **僅顯示** 已加上旗標的執行緒] 按鈕，切換回以 **顯示所有線程** 模式。
 
-5. 若要取消標示執行緒，請在 [**平行監看**式] 視窗中，以滑鼠右鍵按一下一或多個加上旗**標的執行緒**
+5. 若要取消標示執行緒，請在 [**平行監看** 式] 視窗中，以滑鼠右鍵按一下一或多個加上旗 **標的執行緒**
 
 ### <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a> 凍結和解除凍結執行緒執行
 
@@ -328,7 +328,7 @@ Visual Studio 提供數個工具和使用者介面元素，以協助您進行多
 
     暫停圖示會在此資料列中消失，表示執行緒已不再凍結。
 
-4. 切換至 [程式碼編輯器]，然後按 **F11**鍵。 只有未凍結的執行緒才會執行。
+4. 切換至 [程式碼編輯器]，然後按 **F11** 鍵。 只有未凍結的執行緒才會執行。
 
     應用程式也可能會具現化一些新的執行緒。 任何新的執行緒都未標記且不會凍結。
 
@@ -362,7 +362,7 @@ Visual Studio 提供數個工具和使用者介面元素，以協助您進行多
 
 ## <a name="see-also"></a>另請參閱
 
-- [Debug 多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 - [如何：使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)
 - [如何：使用平行監看式視窗](../debugger/how-to-use-the-parallel-watch-window.md)

@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f5c906bd06fd4107166a45e93bf11be579c2270
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: f98bfb3aca5be844018c4c7d9736ab2fa74ebb71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870671"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>尋找 CRT 程式庫的記憶體流失問題
 
@@ -184,7 +184,7 @@ Object dump complete.
 
 1. 在應用程式的開頭附近設定中斷點，然後開始進行偵錯工具。
 
-1. 當應用程式在中斷點暫停時，請選取 [ **Debug** Windows **Watch**  >  **Windows**  >  **Watch 1** (] 或 **[觀賞 2**]、 **[監看式 3**] 或 **[觀賞 4]**) 開啟 [監看式] 視窗。
+1. 當應用程式在中斷點暫停時，請選取 [ **Debug** Windows   >    >  **Watch 1** (] 或 **[觀賞 2**]、 **[監看式 3**] 或 **[觀賞 4]**) 開啟 [監看式] 視窗。
 
 1. 在 [ **監看** 式] 視窗中，輸入 `_crtBreakAlloc` [ **名稱** ] 資料行。
 

@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a90d2e08d16ddfb7ac22baafe58cf76b4895d3
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 9f83a4f262e394222d420c2fec187e67ddfbfaf8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150843"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870411"
 ---
 # <a name="unable-to-attach-to-the-process"></a>無法附加到處理序
 無法附加至處理序。 當連接至這部電腦時，伺服器上的偵錯工具元件會收到拒絕存取。

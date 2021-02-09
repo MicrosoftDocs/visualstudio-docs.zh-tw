@@ -8,22 +8,22 @@ helpviewer_keywords:
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 125420655af4fb021e264c3885a739fc90cfff59
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 1aa19ad99629f5106ee89876f347dfafd7520d26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870502"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、一般索引標籤
 使用 [ **一般** ] 索引標籤來顯示所選視窗的相關資訊。 若要顯示 [ [視窗屬性] 對話方塊](../debugger/window-properties-dialog-box.md)，請將焦點移至 [ [Windows View](../debugger/windows-view.md) ] 視窗。 選取樹狀結構中的任何視窗節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。
 
  [ **一般** ] 索引標籤提供下列設定：
 
-|進入|描述|
+|進入|Description|
 |-----------|-----------------|
 |[視窗標題]|視窗標題中的文字，或視窗中包含的文字（如果它是控制項的話）。|
 |**視窗控制代碼**|此視窗的唯一識別碼。 視窗控制碼號碼會重複使用;他們只會在該視窗的存留期內找出一個視窗。|

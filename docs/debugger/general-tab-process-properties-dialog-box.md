@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 86f4d61d-a594-4aac-8960-c5279b4a10fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4980437c63348050db1a007e8f541e9af9e186cc
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: dae82479044df6c031e5aa9f023b17c5e7902965
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870554"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、一般索引標籤
 使用 [ **一般** ] 索引標籤可深入瞭解特定的進程。 若要顯示 [ [處理常式屬性] 對話方塊](../debugger/process-properties-dialog-box.md)，請將焦點移至 [ [進程] 視圖](../debugger/processes-view.md) 視窗。 選取樹狀結構中的任何進程節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。
 
  [ **一般** ] 索引標籤提供下列設定：
 
-|進入|描述|
+|進入|Description|
 |-----------|-----------------|
 |**模組名稱**|模組的名稱。|
 |**處理序識別碼**|此進程的唯一識別碼。 處理序識別碼會重複使用，因此它們只會在該進程的存留期內找出處理常式。 當程式執行時，會建立處理常式物件類型。 進程中的所有線程都共用相同的位址空間，而且可以存取相同的資料。|
