@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <application> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 37ab88939b6a5a753f67621697a63903c5a35eb2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 895a695f1de56c3041ad1723f1b6b30356c839df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900911"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 程式開發的應用程式元素
   `application` 命名空間的 `vstav3` 項目會包裝 Office 方案的描述。 文件層級自訂與 VSTO 增益集的子項目不同。
@@ -67,7 +67,7 @@ ms.locfileid: "96847035"
 
 ## <a name="document-level-customization-example"></a>檔層級自訂範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>Description
  下列程式碼範例說明使用 `application` 部署之文件層級 Office 方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
@@ -86,7 +86,7 @@ ms.locfileid: "96847035"
 
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>Description
  下列程式碼範例說明使用 `application` 部署之應用程式層級 Office 方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼

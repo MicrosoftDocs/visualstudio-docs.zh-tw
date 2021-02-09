@@ -6,15 +6,15 @@ ms.date: 10/12/2020
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 675636b7abca10fb2f9f1898d753155235830f86
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 2af4bc47d711275716eea528a4d9bd816408322f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901142"
 ---
 # <a name="analyze-memory-usage"></a>分析記憶體使用量
 
@@ -40,7 +40,7 @@ C + + 開發人員可以使用偵錯工具整合式或非偵錯工具記憶體�
 
 [Visual C++ blog： Visual C++ 2015 中的記憶體分析](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

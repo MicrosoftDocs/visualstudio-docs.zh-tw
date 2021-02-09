@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], mapping XML schemas
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 427e2fcb9b881305c160b906262f251d32d70981
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 082d5fe4fbcc7f66709770c16d3c9a1a2811e60d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900928"
 ---
 # <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>如何：將架構對應至 Visual Studio 內的 Word 檔
   **重要** 本主題中有關 Microsoft Word 的資訊，只會提供給位於美國以外的個人和組織，或使用或正在開發的 microsoft word 產品（在2010年1月之前由 Microsoft 授權的 microsoft Word 產品），而 Microsoft 已從 Microsoft Word 移除與自訂 XML 相關的特定功能。 這項有關 Microsoft Word 的資訊，可能無法由美國的個人或組織、在2010年1月10日之後由 Microsoft 授權的 Microsoft Word 產品所使用的 microsoft word 產品或開發人員所使用;這些產品的行為不像在該日期之前授權的產品，或購買並授權在美國以外地區使用。
@@ -58,7 +58,7 @@ ms.locfileid: "96848218"
 
 8. 指派別名或按一下 **[確定]** ，以新增沒有別名的架構。
 
-9. 按一下 [確定]。
+9. 按一下 [確定]  。
 
      [ **XML 結構** ] 視窗隨即開啟。
 

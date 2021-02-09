@@ -15,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9e346022871a3aa25363aa717f1bf15a3d42a6
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4f4b5e8fe9d17a6de9abac2681074dcfc162e9b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900610"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>如何：在 ClickOnce 應用程式中包含資料檔案
-您安裝的每個 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式都會被指派目的地電腦本機磁片上的資料目錄，應用程式可以在其中管理本身的資料。 資料檔案可包含任何類型的檔案：文字檔、XML 檔案，或甚至是 Microsoft Access 資料庫 ( *.mdb* ) 檔。 下列程式示範如何將任何類型的資料檔案加入至您的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。
+您安裝的每個 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式都會被指派目的地電腦本機磁片上的資料目錄，應用程式可以在其中管理本身的資料。 資料檔案可包含任何類型的檔案：文字檔、XML 檔案，或甚至是 Microsoft Access 資料庫 (*.mdb*) 檔。 下列程式示範如何將任何類型的資料檔案加入至您的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>使用 Mage.exe 來包含資料檔案
 
@@ -66,15 +66,15 @@ ms.locfileid: "94349941"
 
 2. 一般而言，您的應用程式目錄會是標示為部署目前版本的目錄，例如1.0.0.0 版。
 
-3. **在 [檔案** ] 功能表上，按一下 [ **開啟** ] 以開啟您的應用程式資訊清單。
+3. **在 [檔案**] 功能表上，按一下 [**開啟**] 以開啟您的應用程式資訊清單。
 
 4. 選取 [ **檔案** ] 索引標籤。
 
-5. 在索引標籤頂端的文字方塊中，輸入包含您應用程式檔案的目錄，然後按一下 [ **填入** ]。
+5. 在索引標籤頂端的文字方塊中，輸入包含您應用程式檔案的目錄，然後按一下 [ **填入**]。
 
      資料檔案將會出現在方格中。
 
-6. 將資料檔案的 **檔案類型** 值設定為 [ **資料** ]。
+6. 將資料檔案的 **檔案類型** 值設定為 [ **資料**]。
 
 7. 儲存應用程式資訊清單，然後重新簽署檔案。
 
@@ -84,5 +84,5 @@ ms.locfileid: "94349941"
 
      您必須重新簽署部署資訊清單，因為它的應用程式資訊清單雜湊已變更。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [在 ClickOnce 應用程式中存取本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

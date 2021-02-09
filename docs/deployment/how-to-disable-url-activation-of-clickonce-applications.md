@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: db31a16b-960f-4264-91d7-c7c40f876068
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46e46278f5465de029aa9536744f51843397d743
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e721199716abc47e89dc9fd2c7c510926853439
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351228"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900695"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>How to: Disable URL activation of ClickOnce applications (如何：停用 ClickOnce 應用程式的 URL 啟動過程)
 
@@ -45,6 +45,6 @@ ms.locfileid: "94351228"
 
 4. 儲存並簽署該資訊清單。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)

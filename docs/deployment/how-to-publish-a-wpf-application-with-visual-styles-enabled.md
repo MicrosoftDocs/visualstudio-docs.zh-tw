@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349850"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900470"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：發佈已啟用視覺樣式的 WPF 應用程式
 
@@ -51,17 +51,17 @@ ms.locfileid: "94349850"
 
     **開啟 Visual Basic 專案中的資訊清單檔**
 
-    1. 在功能表列上，選擇 **Project** [專案 *]、[專案名稱]* **屬性** ，其中 *專案* 名稱是您 WPF 專案的名稱。
+    1. 在功能表列上，選擇[專案 *]、[專案名稱]* **屬性**，其中 *專案* 名稱是您 WPF 專案的名稱。
 
          您 WPF 專案的屬性頁面隨即出現。
 
-    2. 在 [ **應用程式** ] 索引標籤上，選擇 [ **View Windows Settings** ]。
+    2. 在 [ **應用程式** ] 索引標籤上，選擇 [ **View Windows Settings**]。
 
          隨即在程式 **代碼編輯器** 中開啟 app.config 檔案。
 
     **開啟 c # 專案中的資訊清單檔**
 
-    1. 在功能表列上，選擇 **Project** [專案 *]、[專案名稱]* **屬性** ，其中 *專案* 名稱是您 WPF 專案的名稱。
+    1. 在功能表列上，選擇[專案 *]、[專案名稱]* **屬性**，其中 *專案* 名稱是您 WPF 專案的名稱。
 
          您 WPF 專案的屬性頁面隨即出現。
 
@@ -101,9 +101,9 @@ ms.locfileid: "94349850"
 
 3. 在 [ **另存** 新檔] 對話方塊的 [檔 **類型** ] 下拉式清單中，選取 [ **所有** 檔案]。
 
-4. 在 [ **檔案名** ] 方塊中，將檔案命名並附加 *資訊清單* 到檔案名的結尾。 例如： *主題. 資訊清單* 。
+4. 在 [ **檔案名** ] 方塊中，將檔案命名並附加 *資訊清單* 到檔案名的結尾。 例如： *主題. 資訊清單*。
 
-5. 選擇 [ **流覽資料夾]** 按鈕，選取任何資料夾，然後按一下 [ **儲存** ]。
+5. 選擇 [ **流覽資料夾]** 按鈕，選取任何資料夾，然後按一下 [ **儲存**]。
 
     > [!NOTE]
     > 其餘的程式假設這個檔案的名稱是 *主題* ，而檔案會儲存到您電腦上的 *C：\temp* 目錄。
@@ -117,7 +117,7 @@ ms.locfileid: "94349850"
    > [!NOTE]
    > 其餘步驟會對您的解決方案進行下列假設：
    >
-   > - 解決方案的名稱是 **MyWPFProject** 。
+   > - 解決方案的名稱是 **MyWPFProject**。
    > - 解決方案位於下列目錄： `%UserProfile%\Documents\Visual Studio 2010\Projects\` 。
    >
    > - 此解決方案會發佈到下列目錄： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish` 。
@@ -177,7 +177,7 @@ ms.locfileid: "94349850"
 
    執行這些步驟之後，您可以將已發佈的檔案移至您想要讓使用者安裝應用程式的位置。 如果您想要經常更新解決方案，您可以將這些命令移至腳本，並在每次發行新版本時執行腳本。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 -[針對 ClickOnce 部署中的特定錯誤進行疑難排解](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [視覺化樣式總覽](/windows/desktop/Controls/visual-styles-overview)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], XML schemas
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7a7e1a06e644536ce9ce881d9b9f1dc23aae03f1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0e6d868655e3f697a7f659064026929568f2e400
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900847"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>如何：將架構對應至 Visual Studio 內的工作表
   在 Visual Studio 中開啟工作表時，您可以將 XML 架構對應至工作表。 您可以使用在活頁簿于 Visual Studio 之外開啟時所使用的相同 Microsoft Office Excel 工具。 無論您是在建立 Excel 方案之前或之後，將架構對應至工作表，Office 專案都會建立相同的物件。
@@ -56,7 +56,7 @@ ms.locfileid: "96848205"
 
 7. 流覽至您的架構檔案，選取它，然後按一下 [ **開啟**]。
 
-8. 按一下 [確定]。
+8. 按一下 [確定]  。
 
      架構會以 **XML 來源** 視窗表示。 在您的專案中， <xref:System.Data.DataSet> 會根據架構產生型別，並 <xref:System.Windows.Forms.BindingSource> 建立。
 

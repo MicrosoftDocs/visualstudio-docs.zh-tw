@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dbd42f42213e475452185475a69b1dd9fe5f8e0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d9eb50261b346d8751a76817d97d59a798d17236
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899669"
 ---
 # <a name="t4-import-directive"></a>T4 匯入指示詞
 
@@ -51,6 +51,6 @@ The file contains: <#=  fileContent #>
 
 - DSL 的命名空間
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [T4 組件指示詞](../modeling/t4-assembly-directive.md)

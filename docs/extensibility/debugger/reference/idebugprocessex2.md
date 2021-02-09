@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 743dd1aa72d9b8db6b848618c8a2ad6c8c8ecaaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e8966be5c30bf2061fc1e03be6798279afbe8ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900169"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 此介面可讓會話 debug manager (SDM) 通知正在附加或卸離進程的進程。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProcessEx2 : IUnknown
@@ -53,7 +53,7 @@ IDebugProcessEx2 : IUnknown
 ## <a name="remarks"></a>備註
  這個介面在 SDM 和進程之間是私用的。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Portpriv。h
 
  命名空間： VisualStudio

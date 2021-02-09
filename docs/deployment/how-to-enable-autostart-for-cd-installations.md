@@ -15,24 +15,24 @@ helpviewer_keywords:
 ms.assetid: caaec619-900c-4790-90e3-8c91f5347635
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ed3df72b98454c4669e7d9bcd21c0612a6fef3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b157df8666223e72a1e36d58505a5c087b0351bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349954"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900686"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>How to: Enable AutoStart for CD installations (如何：啟用 CD 安裝的 AutoStart)
 藉由卸載 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 式媒體（例如 cd-rom 或 dvd-rom）部署應用程式時，您可以啟用， `AutoStart` 讓 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式在插入媒體時自動啟動。
 
- `AutoStart`可以在 [ **專案設計** 工具] 的 [ **發行** ] 頁面上啟用。
+ `AutoStart`可以在 [**專案設計** 工具] 的 [**發行**] 頁面上啟用。
 
 ### <a name="to-enable-autostart"></a>啟用自動啟動
 
-1. 在 **方案總管** 中選取專案時，在 [ **專案** ] 功能表上按一下 [ **屬性** ]。
+1. 在 **方案總管** 中選取專案時，在 [ **專案** ] 功能表上按一下 [ **屬性**]。
 
 2. 按一下 [Publish (發行)]  索引標籤。
 
@@ -46,6 +46,6 @@ ms.locfileid: "94349954"
 
      發行應用程式時，會將 *自動完成 .inf* 檔案複製到發行位置。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)
 - [如何：使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

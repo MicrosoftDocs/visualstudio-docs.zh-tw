@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0be8eed2dc41ad433c0e0514dfd34e3c6e3d7193
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: c70a3458a8f54cc4437e00517445917cf92f6aa1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901038"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>逐步解說：部署專案工作清單定義
 
@@ -27,7 +27,7 @@ ms.locfileid: "95970426"
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 - 支援的 Microsoft Windows 和 SharePoint 版本。
 
@@ -166,7 +166,7 @@ Visual Studio 回收 IIS 應用程式集區、撤銷任何現有版本的解決�
 
      如需遠端部署的詳細資訊，請參閱在 SharePoint 2010 中 [使用方案和使用](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) [PowerShell 新增和部署解決方案](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 您可以從下列主題深入瞭解如何自訂及部署 SharePoint 方案：
 

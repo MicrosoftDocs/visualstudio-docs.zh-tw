@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a469208a-cb70-4d87-a79b-d2086fc4fae4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3da6df6aab6d64d9ca589959a0d0227026983dfe
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: b8fa82bb1885b04e1b1efe8b1d5fe5a97959cfe2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487903"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899894"
 ---
 # <a name="vssdk-utilities"></a>VSSDK 公用程式
 本節中的主題描述 VSSDK 隨附的工具。

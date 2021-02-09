@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 825beee156c3de0e29e561817663c0f7731840dc
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: ed43ff63eb6605a27885eb1030ebc8689fa37a93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899626"
 ---
 # <a name="t4-include-directive"></a>T4 包含指示詞
 

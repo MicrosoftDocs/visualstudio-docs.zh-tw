@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Test generation
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: a2ccb54995107bbd22e961f14ff3755b4a6f543a
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 92071a3bdaf32f06a77f8502b251f1f3af019203
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668075"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899528"
 ---
 # <a name="test-generation"></a>測試產生
 
@@ -237,7 +237,7 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>進階閱讀
+## <a name="further-reading"></a>進一步閱讀
 
 * [程式碼繫結測試](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [一項掌控全場的測試](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)

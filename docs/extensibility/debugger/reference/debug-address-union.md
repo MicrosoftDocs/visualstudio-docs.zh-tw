@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad531ee10914e404459632c98aae4a9bbda8e437
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76fc15389242de1011851492e3a68dc001534582
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899134"
 ---
 # <a name="debug_address_union"></a>DEBUG_ADDRESS_UNION
 描述不同類型的位址。
@@ -134,7 +134,7 @@ namespace MyPackage
 }
 ```
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： sh. h
 
 命名空間： VisualStudio

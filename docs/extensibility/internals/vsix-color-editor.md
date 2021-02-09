@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66cb163a1943df9deb27ab4fa691b71ee116735e
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 1bf699a5dcb7f14c2a0ac88943b94d9e65c86450
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900080"
 ---
 # <a name="vsix-color-editor"></a>VSIX 色彩編輯器
 Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Studio 的自訂色彩。 此工具也可以產生主題資源索引鍵，讓您可以在程式碼中使用這些色彩。 此工具適用于為支援主題的 Visual Studio 延伸模組建立色彩。 此工具可以開啟 .pkgdef 和 .xml 檔案。 Visual Studio 主題 (. vstheme 檔案) 可透過將副檔名變更為 .xml 來搭配 Visual Studio 延伸模組色彩編輯器使用。 此外，也可以將 vstheme 檔案匯入到目前的 .xml 檔案中。
@@ -189,7 +189,7 @@ namespace MyCustomColors
 
  若要永久變更，請在將新的色彩新增至 .pkgdef 檔案，並撰寫將使用這些色彩的程式碼之後，重建並重新部署 Visual Studio 延伸模組。 重建 Visual Studio 的延伸模組會將新色彩的登錄值合併到主題的其餘部分。 然後重新開機 Visual Studio、觀看 UI，並確認新的色彩如預期般出現。
 
-## <a name="notes"></a>備忘稿
+## <a name="notes"></a>備註
  這項工具是用來建立預先存在之 Visual Studio 主題的自訂色彩，或是用來編輯自訂 Visual Studio 主題的色彩。 若要建立完整的自訂 Visual Studio 主題，請從 Visual Studio 延伸模組資源庫下載 [Visual Studio 色彩主題編輯器延伸](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) 模組。
 
 ## <a name="sample-output"></a>範例輸出

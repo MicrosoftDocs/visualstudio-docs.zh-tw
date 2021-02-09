@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9199bb720cb94bc949a04bd59d5d3b6527108ed
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: e7791308de670b209433708e69ec473780342858
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351189"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900630"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>如何：與 ClickOnce 應用程式一起包含必要元件
 在您隨 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式散發必要條件軟體之前，必須先將這些必要條件的安裝程式套件下載到您的開發電腦。 當您發行應用程式並選擇 [從應用程式的相同位置下載必要條件] 時，如果安裝程式套件不在 [套件] 資料夾中，就會發生錯誤。
@@ -29,7 +29,7 @@ ms.locfileid: "94351189"
 
     依預設，此路徑為 `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\` 。
 
-2. 開啟您要新增的必要條件資料夾，然後開啟安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 版本的語言資料夾 (例如， **en** 代表英文)。
+2. 開啟您要新增的必要條件資料夾，然後開啟安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 版本的語言資料夾 (例如，**en** 代表英文)。
 
 3. 在 [記事本] 中，開啟 *Package.xml* 檔案。
 
@@ -39,7 +39,7 @@ ms.locfileid: "94351189"
    > 如果沒有 **名稱** 專案包含 `http://go.microsoft.com/fwlink` ，請在必要專案的根資料夾中開啟 **Product.xml** 檔案，並找出 **fwlink** 字串。
 
    > [!IMPORTANT]
-   > 有些必要條件包含多個安裝程式套件 (例如，用於 32 位元或 64 位元系統)。 如果有多個 [Name] 元素包含 **fwlink** ，則必須針對每一個元素重覆其餘步驟。
+   > 有些必要條件包含多個安裝程式套件 (例如，用於 32 位元或 64 位元系統)。 如果有多個 [Name] 元素包含 **fwlink**，則必須針對每一個元素重覆其餘步驟。
 
 5. 將 URL 貼上瀏覽器的網址列，然後在系統提示您執行或儲存時，選擇 [儲存]。
 
@@ -51,5 +51,5 @@ ms.locfileid: "94351189"
 
     現在您可以隨應用程式散發安裝程式套件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [How to: Install prerequisites with a ClickOnce application](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) (如何：使用 ClickOnce 應用程式安裝必要元件)

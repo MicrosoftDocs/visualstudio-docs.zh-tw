@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3de9b8f7ef30cffbdd78399dc831060e413ba51b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fa8e8d9e07510a10b1b32534f3323dab4c84a22
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737540"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899109"
 ---
 # <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 識別自訂檢視器或型別視覺化的結構。
@@ -28,24 +28,24 @@ ms.locfileid: "80737540"
 ## <a name="syntax"></a>語法
 
 ```cpp
-typedef struct tagDEBUG_CUSTOM_VIEWER {
-    DWORD dwID;
-    BSTR  bstrMenuName;
-    BSTR  bstrDescription;
-    GUID  guidLang;
-    GUID  guidVendor;
-    BSTR  bstrMetric;
-} DEBUG_CUSTOM_VIEWER;
+typedef struct tagDEBUG_CUSTOM_VIEWER {
+    DWORD dwID;
+    BSTR  bstrMenuName;
+    BSTR  bstrDescription;
+    GUID  guidLang;
+    GUID  guidVendor;
+    BSTR  bstrMetric;
+} DEBUG_CUSTOM_VIEWER;
 ```
 
 ```csharp
-public struct DEBUG_CUSTOM_VIEWER {
-    public uint   dwID;
-    public string bstrMenuName;
-    public string bstrDescription;
-    public Guid   guidLang;
-    public Guid   guidVendor;
-    public string bstrMetric;
+public struct DEBUG_CUSTOM_VIEWER {
+    public uint   dwID;
+    public string bstrMenuName;
+    public string bstrDescription;
+    public Guid   guidLang;
+    public Guid   guidVendor;
+    public string bstrMetric;
 };
 ```
 
@@ -71,7 +71,7 @@ public struct DEBUG_CUSTOM_VIEWER {
 ## <a name="remarks"></a>備註
 呼叫 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 方法時，會傳回這個結構的清單 (以及 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 方法) 的擴充方法。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

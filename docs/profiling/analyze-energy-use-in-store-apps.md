@@ -12,16 +12,16 @@ dev_langs:
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: cf55035ba5a05917334b2192067a3273f4930775
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: af27524b9b057e1a7dc852bd10d7acd23cf8bd04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205784"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901235"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP App 中的能源耗用量
 
@@ -158,7 +158,7 @@ if (performance && performance.mark) {
 
 - [CPU 使用量] 工具可以協助您降低因無效率函式所造成的 CPU 負載。 請參閱 [分析 CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

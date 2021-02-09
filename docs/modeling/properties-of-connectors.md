@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, connectors
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d456f251c5c8af21113593469b019094207cbf2
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b09ec4278dd78f797067c3acdf3152736fb395c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899846"
 ---
 # <a name="properties-of-connectors"></a>接點的屬性
 連接器代表產生的設計工具中的網域關聯性。
@@ -42,14 +42,14 @@ ms.locfileid: "97360503"
 |名稱|此連接器的名稱。|目前的名稱|
 |命名空間|與此連接器關聯的命名空間。|目前的命名空間|
 |工具提示類型|工具提示的定義方式 (固定、變數或無) 。 如果已修正，則 `Fixed Tooltip Text` 會使用屬性的值做為工具提示; 如果是變數，則會在自訂程式碼中定義工具提示。|\<none>|
-|附註|與此連接器相關聯的非正式附注。|\<none>|
+|備註|與此連接器相關聯的非正式附注。|\<none>|
 |路由樣式|用來路由傳送連接器的樣式。 `Rectilinear`連接器會視需要進行右角回合; 連接器則 `Straight` 不會。|直線|
 |公開色彩做為屬性<br /><br /> 公開虛線樣式為屬性<br /><br /> 公開粗細作為屬性<br /><br /> 公開文字色彩|如果為 `True` ，則使用者可以設定圖形的 [已陳述] 屬性。 若要設定此設定，請以滑鼠右鍵按一下圖形定義，然後按一下 [ **新增公開**]。|否|
-|說明|用來記錄產生的設計工具。|\<none>|
+|Description|用來記錄產生的設計工具。|\<none>|
 |顯示名稱|將在此連接器產生的設計工具中顯示的名稱。|\<none>|
 |修正工具提示文字|用於固定工具提示的文字。|\<none>|
 |說明關鍵字|用來為這個元素的 F1 說明編制索引的關鍵字。|\<none>|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

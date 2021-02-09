@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62be3ce13ecbc3180cf2bbcce26b04f3d79edb1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b40fd243fa8f3f67786b862c3e0cdbfd81373a53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899016"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 要求此 debug engine 所進行的所有程式都 (取消) ，以在下一個執行緒嘗試執行時停止執行。
@@ -28,8 +28,8 @@ ms.locfileid: "80731162"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT CauseBreak( 
-   void 
+HRESULT CauseBreak( 
+   void 
 );
 ```
 

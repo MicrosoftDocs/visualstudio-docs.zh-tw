@@ -13,15 +13,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7eeff880538d98f997f48f82c49d01045e834031
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 861b6ff20f9ceb73c279e54fa89ee513389b6b91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900956"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>逐步解說：從現有的 SharePoint 網站匯入專案
   本逐步解說示範如何將專案從現有的 SharePoint 網站匯入至 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 專案。
@@ -124,7 +124,7 @@ ms.locfileid: "95970124"
 
 7. 在 [ **選取要匯入的專案** ] 方塊中，清除 [ **測試資料行**] 以外的清單中的所有核取方塊，然後選擇 [ **完成]** 按鈕。
 
-    因為此清單包含許多專案，所以您可以選擇 **Ctrl** + **A** 鍵來挑選清單中的所有專案，選擇空格鍵以清除所有核取方塊，然後只選取 [測試] 資料 **行** 專案旁的核取方塊。
+    因為此清單包含許多專案，所以您可以選擇 **Ctrl** + 鍵來挑選清單中的所有專案，選擇空格鍵以清除所有核取方塊，然後只選取 [測試] 資料 **行** 專案旁的核取方塊。
 
     匯入作業完成後，會建立名為 **WspImportProject1** 的新專案，其中包含名為 [ **欄位**] 的資料夾。 在此資料夾中，[自訂網站資料行] **測試資料行** 及其定義檔 *Elements.xml*。
 

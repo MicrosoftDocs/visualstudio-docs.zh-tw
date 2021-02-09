@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6dc136b1c58f9c627787045b1259d07e27a6b8ad
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 43104ad8b26045056ca8d8d653fcb9625734f7eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527867"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899426"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>逐步解說：建立 Word 的第一個 VSTO 增益集
   本入門逐步解說將示範如何建立 Microsoft Office Word 的 VSTO 增益集。 不論開啟哪一份文件，您在這類方案中建立的功能都可供應用程式本身使用。
@@ -64,7 +64,7 @@ ms.locfileid: "97527867"
 
 6. 在 [ **名稱** ] 方塊中，輸入 **FirstWordAddIn**。
 
-7. 按一下 [確定]。
+7. 按一下 [確定]  。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立 **FirstWordAddIn** 專案，並在編輯器中開啟 ThisAddIn 程式碼檔案。
 
@@ -120,7 +120,7 @@ ms.locfileid: "97527867"
 
 1. 在 Visual Studio 中，按一下 [建置]  功能表上的 [清除方案] 。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  現在您已經建立 Word 的基本 VSTO 增益集，可以從下列主題進一步了解如何開發 VSTO 增益集：
 
 - 您可以在 VSTO 增益集中執行的一般程式設計工作： [PROGRAM Vsto 增益集](../vsto/programming-vsto-add-ins.md)。

@@ -6,15 +6,15 @@ ms.date: 05/16/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9898b720e51c2750b67054d1f095200372f426da
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 324f8fe7ee34f469d31ad1ce6cf6bd25ab97f225
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363766"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899822"
 ---
 # <a name="share-code-maps"></a>共用 Code Map
 
@@ -57,8 +57,8 @@ Visual Studio 會將對應儲存為 *.dgml* 檔案，您可以與 Visual Studio 
 
 2. 瀏覽至儲存檔案的位置。
 
-3. 為 Code Map 命名。 確定 [檔 **類型** ] 方塊設定為 [xps 檔案 **(.xps \*)**。 選擇 [儲存]  。
+3. 為 Code Map 命名。 確定 [檔 **類型** ] 方塊設定為 [xps 檔案 **(.xps \*)**。 選擇 [儲存]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 code map 對應相依性](../modeling/map-dependencies-across-your-solutions.md)

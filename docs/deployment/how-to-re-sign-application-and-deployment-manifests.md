@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a17902451c931bd37a92158a3b5c3838ed91ed4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0b4e4efee02ca1571f40ae33f9d69d8fbec0a1d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900439"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何：重新簽署應用程式和部署資訊清單
 在 Windows Forms 應用程式的應用程式資訊清單中變更部署屬性之後，Windows Presentation Foundation 應用程式 (xbap) 或 Office 方案中，您必須使用憑證重新簽署應用程式和部署資訊清單。 這項程序有助於確保不會在終端使用者電腦上安裝遭到竄改的檔案。
@@ -33,7 +33,7 @@ ms.locfileid: "94351124"
  當您的客戶想要使用自己的憑證來簽署應用程式和部署資訊清單時，您可能會重新簽署資訊清單的另一種情況。
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>重新簽署應用程式和部署資訊清單
- 此程式假設您已經對應用程式資訊清單檔進行變更 ( *指令* 清單) 。 如需詳細資訊，請參閱 [如何：變更部署屬性](/previous-versions/cc442869(v=vs.110))。
+ 此程式假設您已經對應用程式資訊清單檔進行變更 (*指令* 清單) 。 如需詳細資訊，請參閱 [如何：變更部署屬性](/previous-versions/cc442869(v=vs.110))。
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>使用 Mage.exe 重新簽署應用程式和部署資訊清單
 
@@ -69,7 +69,7 @@ ms.locfileid: "94351124"
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. （選擇性）將主要部署資訊清單 ( *發佈 \\ \<appname> 。應用程式* ) 到您的版本部署目錄 ( *publish\Application 檔 \\ \<appname> _ \<version>* ) 。
+5. （選擇性）將主要部署資訊清單 (*發佈 \\ \<appname> 。應用程式*) 到您的版本部署目錄 (*publish\Application 檔 \\ \<appname> _ \<version>*) 。
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>更新並重新簽署應用程式和部署資訊清單
  此程式假設您已經對應用程式資訊清單 *檔 ()* 進行變更，但仍有其他已更新的檔案。 更新檔案時，也必須更新代表檔案的雜湊。
@@ -112,13 +112,13 @@ ms.locfileid: "94351124"
 
 6. 將 *.deploy* 副檔名新增回檔案，但應用程式和部署資訊清單檔案除外。
 
-7. （選擇性）將主要部署資訊清單 ( *發佈 \\ \<appname> 。應用程式* ) 到您的版本部署目錄 ( *publish\Application 檔 \\ \<appname> _ \<version>* ) 。
+7. （選擇性）將主要部署資訊清單 (*發佈 \\ \<appname> 。應用程式*) 到您的版本部署目錄 (*publish\Application 檔 \\ \<appname> _ \<version>*) 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)
-- [受信任的應用程式部署總覽](../deployment/trusted-application-deployment-overview.md)
+- [信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)
 - [How to: Enable ClickOnce security settings (如何：啟用 ClickOnce 安全性設定)](../deployment/how-to-enable-clickonce-security-settings.md)
 - [如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [How to: Set custom permissions for a ClickOnce application (如何：設定 ClickOnce 應用程式的自訂權限)](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

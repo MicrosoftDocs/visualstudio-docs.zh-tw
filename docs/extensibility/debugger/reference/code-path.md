@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2d4b2890-4c9d-47e1-83c0-df9c6436427f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3148b75e56b61ee545c6bc82b972c13572199af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4bba942b0740fba98e88a3cddcecfcd43d7d215
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900303"
 ---
 # <a name="code_path"></a>CODE_PATH
 描述方法或函式呼叫。
@@ -28,7 +28,7 @@ ms.locfileid: "80737674"
 ## <a name="syntax"></a>語法
 
 ```cpp
-typedef struct tagCODE_PATH { 
+typedef struct tagCODE_PATH { 
     BSTR                bstrName;
     IDebugCodeContext2* pCode;
 } CODE_PATH;
@@ -51,7 +51,7 @@ public struct CODE_PATH {
 ## <a name="remarks"></a>備註
 此結構是用來將逐步執行至函式。 [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) 會從正在進行調試的程式中，傳回目前位置的所有呼叫。 此結構代表一種這類呼叫。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

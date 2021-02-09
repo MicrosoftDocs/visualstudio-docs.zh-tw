@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0021ef24e0cafec0119263d2c74175f0d38d784
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2893b6a1e977b84fba3161a33a5342f94ccc030
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737630"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900296"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
 保存清單的結構 `GUID` 。
@@ -28,16 +28,16 @@ ms.locfileid: "80737630"
 ## <a name="syntax"></a>語法
 
 ```cpp
-typedef struct tagCONST_GUID_ARRAY {
-    DWORD       dwCount;
-    CONST GUID* Members;
-} CONST_GUID_ARRAY;
+typedef struct tagCONST_GUID_ARRAY {
+    DWORD       dwCount;
+    CONST GUID* Members;
+} CONST_GUID_ARRAY;
 ```
 
 ```csharp
-public struct CONST_GUID_ARRAY {
-    public uint   dwCount;
-    public Guid[] Members;
+public struct CONST_GUID_ARRAY {
+    public uint   dwCount;
+    public Guid[] Members;
 }
 ```
 
@@ -53,7 +53,7 @@ public struct CONST_GUID_ARRAY {
 
 此結構之實例的擁有者負責釋放任何配置的記憶體。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

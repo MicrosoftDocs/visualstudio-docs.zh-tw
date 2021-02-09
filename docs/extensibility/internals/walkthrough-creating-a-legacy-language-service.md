@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fcc4004542f9a566d6c6bfa820cbb8c2e1846fa
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 61f4dfd8068cc44fca97eb5e07ddbf62b21ee1f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487929"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899914"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>逐步解說：建立舊版語言服務
 使用 managed package framework (MPF) 語言類別在中執行語言服務 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 相當簡單。 您需要 VSPackage 來裝載語言服務、語言服務本身，以及適用于您語言的剖析器。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 [VISUAL STUDIO SDK](../../extensibility/visual-studio-sdk.md)。
 
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio Package 專案範本位置
