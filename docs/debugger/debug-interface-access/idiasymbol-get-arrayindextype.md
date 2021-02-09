@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd63b9ec-9694-406c-b37f-bde6bd5fcbf2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bbe3bd3525abd5ac7fccbae66b603ce8d2a6dbf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 225723fbc5eb40025a6dad1b52a5ab6c790f3fea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854553"
 ---
 # <a name="idiasymbolget_arrayindextype"></a>IDiaSymbol::get_arrayIndexType
 抓取符號的陣列索引類型的符號介面。
@@ -25,7 +25,7 @@ ms.locfileid: "85464307"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_arrayIndexType ( 
+HRESULT get_arrayIndexType ( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -44,7 +44,7 @@ HRESULT get_arrayIndexType ( 
 ## <a name="remarks"></a>備註
  某些語言可以指定用來做為陣列索引的型別。 從這個方法傳回的符號會指定該型別。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

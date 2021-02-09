@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 29080009-36e4-4697-acd7-50f2e3e1bf1b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e365c6bd29238717466d9e5e378909ab7a2bda4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ed1d2e2cfda5bf16117c2bc4fbd8c13384055a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854665"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
 抓取符號的子系，此符號在指定的虛擬位址中是有效的。
@@ -25,7 +25,7 @@ ms.locfileid: "85464559"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT findChildrenExByVA ( 
+HRESULT findChildrenExByVA ( 
    enum SymTagEnum   symtag,
    LPCOLESTR         name,
    DWORD             compareFlags,
@@ -61,7 +61,7 @@ HRESULT findChildrenExByVA ( 
 ## <a name="remarks"></a>備註
  傳回的本機符號包括即時範圍資訊。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Dia2。h
 
  程式庫： diaguids .lib

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f11e3ccb-215d-418c-b8c3-e63159234915
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c4dc9d14808edbfef2076bf89478e4432c44ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a965d04bf6cd41bcd19c2b5e987f610149f601c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464097"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854483"
 ---
 # <a name="idiasymbolget_classparentid"></a>IDiaSymbol::get_classParentId
 抓取符號的類別父系識別碼。
@@ -25,7 +25,7 @@ ms.locfileid: "85464097"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_classParentId ( 
+HRESULT get_classParentId ( 
    DWORD* pRetVal
 );
 ```
@@ -44,7 +44,7 @@ HRESULT get_classParentId ( 
 ## <a name="remarks"></a>備註
  識別碼是 DIA SDK 所建立的唯一值，會將所有符號標示為唯一的。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

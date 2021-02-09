@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7001c7cc-1459-4929-851b-a08066a803c6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bd9207a802a919e1dd86624584bda6963d2f278
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26a617f01c56e417ed9d0a05c4fea72bc1e0b88b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854238"
 ---
 # <a name="idiasymbolget_hasinlasm"></a>IDiaSymbol::get_hasInlAsm
 抓取指定函式是否包含內嵌元件的旗標。
@@ -41,7 +41,7 @@ HRESULT get_hasInlAsm(
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

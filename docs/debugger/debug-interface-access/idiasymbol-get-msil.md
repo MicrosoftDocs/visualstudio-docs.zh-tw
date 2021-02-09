@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 43a8e003-6856-4726-aa16-c0d4dae7299b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dfde93d05aa2e3d4f5458915b4bb98a20999480
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89e14e118c6d9f0a04cfe2c29de345a88a0fc63c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853860"
 ---
 # <a name="idiasymbolget_msil"></a>IDiaSymbol::get_msil
 抓取旗標，這個旗標會指定符號是否參考 Microsoft 中繼語言 (MSIL) 程式碼。
@@ -25,7 +25,7 @@ ms.locfileid: "85462893"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_msil ( 
+HRESULT get_msil ( 
    BOOL* pRetVal
 );
 ```

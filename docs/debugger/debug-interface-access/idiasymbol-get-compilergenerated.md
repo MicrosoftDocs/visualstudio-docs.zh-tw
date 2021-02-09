@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 864d9249-f0c8-4a34-b391-eb785f7e8865
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29d7255fd0e2c769a1b7d318e56982ba739915d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d73abdd735131c0af9e776dfcd41772b240059f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464083"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854455"
 ---
 # <a name="idiasymbolget_compilergenerated"></a>IDiaSymbol::get_compilerGenerated
 抓取旗標，這個旗標會指出此符號是否由編譯器產生。
@@ -25,7 +25,7 @@ ms.locfileid: "85464083"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_compilerGenerated ( 
+HRESULT get_compilerGenerated ( 
    BOOL* pRetVal
 );
 ```
@@ -41,7 +41,7 @@ HRESULT get_compilerGenerated ( 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

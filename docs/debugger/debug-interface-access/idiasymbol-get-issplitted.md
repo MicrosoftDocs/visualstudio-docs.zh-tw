@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ff160cf6-003b-4ef5-a406-20a7b287b2bf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c2bae3d054aa8e331db3a345743e4f0e9c20b49
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbdeb9b4a5bf6f173cbb2a0bd593202317d62342
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463173"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853993"
 ---
 # <a name="idiasymbolget_issplitted"></a>IDiaSymbol::get_isSplitted
 抓取旗標，這個旗標會指定資料符號是否已分割成其他符號的匯總或集合;編譯器會將符號視為個別的實體，即使它們真的是較大符號的一部分也是一樣。
@@ -44,7 +44,7 @@ HRESULT get_isSplitted(
 ## <a name="remarks"></a>備註
  [IDiaSymbol：： get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)方法 `TRUE` 會針對屬於分割符號一部分的所有符號傳回。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

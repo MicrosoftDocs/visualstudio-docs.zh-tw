@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5fe7573a-e48b-428d-9c17-7421b7209246
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f1fe583ba4932f4f534886ed1c9af34e900ba67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a61a85e36159c361f01dd4048a06c040415860d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854700"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 抓取符號的子系。
@@ -25,7 +25,7 @@ ms.locfileid: "85464587"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT findChildren ( 
+HRESULT findChildren ( 
    enum SymTagEnum   symtag,
    LPCOLESTR         name,
    DWORD             compareFlags,

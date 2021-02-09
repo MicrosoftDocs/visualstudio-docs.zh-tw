@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd703c64-9ff8-4654-8493-8cde9309cb22
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d4d2de1dab8fda2deacf43d9c3072d0e6fe0efa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4168ab7ba3351dc8abe5f9c781fccea881fb7df0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463950"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854350"
 ---
 # <a name="idiasymbolget_editandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 抓取旗標，指出模組是否以 [/Z7、/zi、/zi (Debug 資訊格式編譯) ](/cpp/build/reference/z7-zi-zi-debug-information-format) 編譯器參數。
@@ -25,7 +25,7 @@ ms.locfileid: "85463950"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_editAndContinueEnabled ( 
+HRESULT get_editAndContinueEnabled ( 
    BOOL* pRetVal
 );
 ```
@@ -41,7 +41,7 @@ HRESULT get_editAndContinueEnabled ( 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

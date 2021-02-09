@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6ae46d43-8486-48d6-a6f2-d73ebf4023e3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a9f2fda5fb6effff1d528ac3c98d84b670ea2c09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04de0500105a460006d49788c5563eba3820685f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462851"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853832"
 ---
 # <a name="idiasymbolget_nested"></a>IDiaSymbol::get_nested
 抓取旗標，這個旗標會指定使用者定義資料類型是否為嵌套的。
@@ -25,7 +25,7 @@ ms.locfileid: "85462851"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_nested ( 
+HRESULT get_nested ( 
    BOOL* pRetVal
 );
 ```

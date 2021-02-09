@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f881e793-eb9e-48dc-a847-dd61d77174fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f252d02a137ada627c0c546e1f1ac79118f76de9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7c63c9464b0d8c716b4946dab5c5b86d198a14c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853671"
 ---
 # <a name="idiasymbolget_registerid"></a>IDiaSymbol::get_registerId
 當 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 設定為時，抓取位置的註冊指示項 `LocIsEnregistered` 。
@@ -25,7 +25,7 @@ ms.locfileid: "85462473"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_registerId ( 
+HRESULT get_registerId ( 
    DWORD* pRetVal
 );
 ```

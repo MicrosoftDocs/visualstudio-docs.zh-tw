@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f8a067c5-3306-4fc5-bc20-8910a47ed504
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 14d69d617d76ffe033e3ab763cdf85dad871f1f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bec64aa467ffeb4780626f2296d9fddbea4d3f1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854336"
 ---
 # <a name="idiasymbolget_frontendmajor"></a>IDiaSymbol::get_frontEndMajor
 抓取前端主要版本號碼。
@@ -25,7 +25,7 @@ ms.locfileid: "85463880"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_frontEndMajor ( 
+HRESULT get_frontEndMajor ( 
    DWORD* pRetVal
 );
 ```
@@ -46,7 +46,7 @@ HRESULT get_frontEndMajor ( 
 
  前端或後端版本號碼由三個部分組成： \<major> ... \<minor> \<build> ，其中 \<major> 是主要版本號碼， \<minor> 是次要版本號碼，而 \<build> 是組建編號。 例如 13.10.3077。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

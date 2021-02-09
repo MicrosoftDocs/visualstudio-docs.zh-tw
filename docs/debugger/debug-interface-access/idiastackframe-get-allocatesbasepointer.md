@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a91e9c8e-c5e3-4887-a60b-f03b5a98f30c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60b6d132e177be9abb325782c1a43497462690f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6740a183e730293c6791a7f9ca9dcc67c4fe16b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854938"
 ---
 # <a name="idiastackframeget_allocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
 抓取旗標，這個旗標會指出基底指標是否配置給此位址範圍內的程式碼。
@@ -25,7 +25,7 @@ ms.locfileid: "85465133"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_allocatesBasePointer ( 
+HRESULT get_allocatesBasePointer ( 
    BOOL* pRetVal
 );
 ```

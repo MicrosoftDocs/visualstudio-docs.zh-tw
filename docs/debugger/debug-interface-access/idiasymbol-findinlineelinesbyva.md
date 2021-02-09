@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 61427d33-30d2-4ac9-9bd6-c58c6c705072
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb8f86b7bdeb7e6d3eb95f9540ce8c0a5c1eb241
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6c3dfb222108d2a531e83673ed2fe7f23c5d619f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464489"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854638"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
 抓取列舉，此列舉可讓用戶端逐一查看在指定虛擬位址 (VA) 內，直接或間接內嵌于此符號中的所有函式的行號資訊。
@@ -23,7 +23,7 @@ ms.locfileid: "85464489"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT findInlineeLinesByVA ( 
+HRESULT findInlineeLinesByVA ( 
    ULONGLONG             va,
    DWORD                 length,
    IDiaEnumLineNumbers** ppResult

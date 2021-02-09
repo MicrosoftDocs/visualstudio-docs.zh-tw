@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 166a1a3a-2e10-4baa-ace1-9104b56185ce
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 050e2b4db8a29ab0b80774f4e135624109729405
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c62620528a6cad9b2b5033841c2645b4c4248716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853517"
 ---
 # <a name="idiasymbolget_textureslot"></a>IDiaSymbol::get_textureSlot
 抓取材質位置。

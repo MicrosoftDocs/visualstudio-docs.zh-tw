@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 355d3877-b6b6-45fd-a1d8-baed428d8f96
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4513571edb7d46efd02ff65bac5882c38f5dbc0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eee47ae1b1254e553c4b2bb1e075079c3f51a1ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464111"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854476"
 ---
 # <a name="idiasymbolget_callingconvention"></a>IDiaSymbol::get_callingConvention
 傳回方法呼叫慣例的指標。
@@ -25,7 +25,7 @@ ms.locfileid: "85464111"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_callingConvention ( 
+HRESULT get_callingConvention ( 
    DWORD* pRetVal
 );
 ```
@@ -41,7 +41,7 @@ HRESULT get_callingConvention ( 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

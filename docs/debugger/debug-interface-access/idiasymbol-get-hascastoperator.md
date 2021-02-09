@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a21114a6-56a3-4e8a-a65f-58ec2a0a8908
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97242a8945270d81362066abbc52450b61c1997b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6329ea001ec2584c34cda76417c143634f4fb3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854273"
 ---
 # <a name="idiasymbolget_hascastoperator"></a>IDiaSymbol::get_hasCastOperator
 抓取旗標，這個旗標會指定使用者定義資料類型是否已定義任何轉換運算子。
@@ -25,7 +25,7 @@ ms.locfileid: "85463796"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_hasCastOperator ( 
+HRESULT get_hasCastOperator ( 
    BOOL* pRetVal
 );
 ```
@@ -41,7 +41,7 @@ HRESULT get_hasCastOperator ( 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

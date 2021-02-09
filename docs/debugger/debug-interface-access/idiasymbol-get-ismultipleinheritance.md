@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 0aa356a1-5c5c-4ee4-8b48-bae0a2610013
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a9963de56dd02504cb74ed31c6a0ee2d3f08df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a50966270f91d941d825712938851ec5a06f0892
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463341"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854070"
 ---
 # <a name="idiasymbolget_ismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
 指定指標是否 `this` 指向具有多重繼承的資料成員。

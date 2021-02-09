@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f2631820-c986-40ca-b61e-230d7a9c426c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc2e4042185b17d7e2f670456cf124c5ce079fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4532d64b31f291262938e03b595795d0f1252fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465118"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854931"
 ---
 # <a name="idiastackframeget_cplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 捕獲旗標，指出 c + + 例外狀況處理是否有效。
@@ -25,7 +25,7 @@ ms.locfileid: "85465118"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_cplusplusExceptionHandling ( 
+HRESULT get_cplusplusExceptionHandling ( 
    BOOL* pRetVal
 );
 ```

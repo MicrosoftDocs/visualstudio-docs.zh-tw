@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dd1fb3ba-31bf-497d-a6bf-79f1206e6642
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe5c412e815b5cda02959f792197954cb1f92540
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 810de26d9bef93308744a161f6638fb61913dea2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853559"
 ---
 # <a name="idiasymbolget_symindexid"></a>IDiaSymbol::get_symIndexId
 抓取唯一的符號識別碼。
@@ -25,7 +25,7 @@ ms.locfileid: "85461918"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_symIndexId ( 
+HRESULT get_symIndexId ( 
    DWORD* pRetVal
 );
 ```

@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 4264742a-3d91-44b9-9d14-87adbc77f0f0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f3853c6883ed5feab420f0b689c0c614d57aecd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab4fae7c0e2816fa8c69e239cc96df82b9e805d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461953"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853594"
 ---
 # <a name="idiasymbolget_stride"></a>IDiaSymbol::get_stride
 抓取矩陣或 strided 陣列的 stride。

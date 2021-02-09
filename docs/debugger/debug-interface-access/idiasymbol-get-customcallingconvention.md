@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0aa97951-f7e1-4fa5-a87f-2920460c122d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3a76c0927efad18e667a786b1678262da6ac4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df38f143eb3e0ab7fb7181b111c309e37e2ed4ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854371"
 ---
 # <a name="idiasymbolget_customcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 抓取指定函式是否有自訂呼叫慣例的旗標。
@@ -41,7 +41,7 @@ HRESULT get_customCallingConvention(
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

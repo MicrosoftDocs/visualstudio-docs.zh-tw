@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5408ea53-f64c-431e-9f62-62819026b038
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a7c0703568d044bcda93fde7c9ecee0dea52a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0c2fa26093862efb90bdfa9c5cbc54b7f59ad06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466207"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855400"
 ---
 # <a name="idiasectioncontribget_notcached"></a>IDiaSectionContrib::get_notCached
 抓取指出是否無法快取區段的旗標。
@@ -25,7 +25,7 @@ ms.locfileid: "85466207"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_notCached ( 
+HRESULT get_notCached ( 
    BOOL* pRetVal
 );
 ```

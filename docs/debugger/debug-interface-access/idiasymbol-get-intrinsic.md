@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f969f595-d9f9-48b9-adaa-63a6e4e09575
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 864a86f261ca115e9c5186129577696582966e18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bd69f0e194ebd9842c23081b4722dd9934e7fbb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854175"
 ---
 # <a name="idiasymbolget_intrinsic"></a>IDiaSymbol::get_intrinsic
 抓取旗標，這個旗標會指定類別是否為內建類型。
@@ -25,7 +25,7 @@ ms.locfileid: "85463523"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_intrinsic( 
+HRESULT get_intrinsic( 
    BOOL* pRetVal)
 );
 ```

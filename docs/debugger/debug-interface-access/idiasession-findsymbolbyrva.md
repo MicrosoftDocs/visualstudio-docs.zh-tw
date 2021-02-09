@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14fb2903-b771-44d6-b0a8-44e0097c58ce
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3af468a08d938fbdc19509fc93d48cd7d619a07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 720b77852ab0e8eb863fd903f756fb38ebbcf47d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855085"
 ---
 # <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
 抓取指定的符號類型，其中包含或最接近指定的相對虛擬位址 (RVA) 。
@@ -25,7 +25,7 @@ ms.locfileid: "85465563"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT findSymbolByRVA ( 
+HRESULT findSymbolByRVA ( 
    DWORD        rva,
    SymTagEnum   symtag,
    IDiaSymbol** ppSymbol

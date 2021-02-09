@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8292bb08-4dc8-4663-beb4-258f5d5a448d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 71105c6c3f93f259bdb6ce8e5f46abe30c5953c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6469180cada412fe5f08db1bd982f5a6e250e9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853741"
 ---
 # <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
 抓取符號位置的位移。 當 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 為或時 `LocIsRegRel` 使用 `LocIsBitField` 。
@@ -25,7 +25,7 @@ ms.locfileid: "85462613"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_offset ( 
+HRESULT get_offset ( 
    LONG* pRetVal
 );
 ```
@@ -44,7 +44,7 @@ HRESULT get_offset ( 
 ## <a name="remarks"></a>備註
  位移是來自先前決定的某個已知點。 例如， `LocIsBitField` 位置類型的位移通常是來自包含類別的開頭。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e44ba922-6cda-40c2-9b62-44e5a8628e63
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26aca8f37bfe18940ecca45f3ee150e7af73d22d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65456c26881b3351e834397745ace5f8be280d16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462773"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853811"
 ---
 # <a name="idiasymbolget_notreached"></a>IDiaSymbol::get_notReached
 抓取旗標，這個旗標會指定是否永遠不會到達函數或標籤。
@@ -41,7 +41,7 @@ HRESULT get_notReached(
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

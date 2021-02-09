@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e42ff368-56c4-49a2-8676-f80e349efa21
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 73694e46f66014c251dbe3760dfade7baea566da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2682086764294f9721153e9509088e653b9fd11
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853706"
 ---
 # <a name="idiasymbolget_packed"></a>IDiaSymbol::get_packed
 抓取旗標，這個旗標會指定是否封裝 (UDT) 的使用者定義資料類型。
@@ -25,7 +25,7 @@ ms.locfileid: "85462585"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_packed ( 
+HRESULT get_packed ( 
    BOOL* pRetVal
 );
 ```

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c15639b0-7f37-46c7-891b-40273b7f6319
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5971b5d7cf55e75c3350c72575856326be62feba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5d5c865ca503890f3f29df44bcd65dd10343bf1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464370"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854595"
 ---
 # <a name="idiasymbolget_addressoffset"></a>IDiaSymbol::get_addressOffset
 捕獲位址位置的位移部分。 當 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 設定為時，請使用 `LocIsStatic` 。
@@ -25,7 +25,7 @@ ms.locfileid: "85464370"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_addressOffset ( 
+HRESULT get_addressOffset ( 
    DWORD* pRetVal
 );
 ```
@@ -46,7 +46,7 @@ HRESULT get_addressOffset ( 
 
  若要取得位址的區段部分，請呼叫 [IDiaSymbol：： get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md) 方法。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

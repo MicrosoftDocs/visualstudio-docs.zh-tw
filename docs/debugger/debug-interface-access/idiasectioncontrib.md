@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 371d40f6-ca0e-4d7e-9210-64d3768996c6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d1a52616273a1cfe1d54580c91ec4ba6e1c09e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba3e4566796d65818fcf85abc70494122fe5f14d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855337"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 抓取描述區段參與的資料，也就是編譯單位對影像提供的連續記憶體區塊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDiaSectionContrib : IUnknown
+IDiaSectionContrib : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
@@ -126,7 +126,7 @@ void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)
 }
 ```
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： Dia2。h
 
 程式庫： diaguids .lib

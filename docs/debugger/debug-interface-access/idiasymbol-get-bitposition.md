@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b0059407-8655-497b-81ca-025595989371
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 636f553d72dc73f463d7b9814230f4b80cdda535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2c0c796bc01b6829e3345c45080f9ea2215d235
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854490"
 ---
 # <a name="idiasymbolget_bitposition"></a>IDiaSymbol::get_bitPosition
 抓取位置的位位置。 當 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 為時使用 `LocIsBitField` 。
@@ -25,7 +25,7 @@ ms.locfileid: "85464167"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_bitPosition ( 
+HRESULT get_bitPosition ( 
    DWORD* pRetVal
 );
 ```
@@ -41,7 +41,7 @@ HRESULT get_bitPosition ( 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

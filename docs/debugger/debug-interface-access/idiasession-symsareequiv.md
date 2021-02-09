@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9941d520-e203-46c0-83c3-b3a967f4fc59
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe609d53571e6ffcd8e18919f0351e29c0329b46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10aa5f1b086856793fe32512867834848b6f7162
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465360"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855015"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 查看兩個符號是否相等。
@@ -25,7 +25,7 @@ ms.locfileid: "85465360"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT symsAreEquiv ( 
+HRESULT symsAreEquiv ( 
    IDiaSymbol* symbolA,
    IDiaSymbol* symbolB
 );

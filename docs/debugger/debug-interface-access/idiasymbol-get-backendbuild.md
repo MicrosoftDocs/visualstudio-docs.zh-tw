@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 423af497-9294-438e-92b4-456c6f56dc56
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 995f4139e0bf70f6d7b30719698aafa4d03eb87f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f35d1e74042a1416a7d5f7f6a05b24b423255991
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854525"
 ---
 # <a name="idiasymbolget_backendbuild"></a>IDiaSymbol::get_backEndBuild
 抓取編譯器的後端組建編號。
@@ -25,7 +25,7 @@ ms.locfileid: "85464293"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_backEndBuild ( 
+HRESULT get_backEndBuild ( 
    DWORD* pRetVal
 );
 ```
@@ -46,7 +46,7 @@ HRESULT get_backEndBuild ( 
 
  前端或後端版本號碼由三個部分組成： \<major> ... \<minor> \<build> ，其中 \<major> 是主要版本號碼， \<minor> 是次要版本號碼，而 \<build> 是組建編號。 例如 13.10.3077。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

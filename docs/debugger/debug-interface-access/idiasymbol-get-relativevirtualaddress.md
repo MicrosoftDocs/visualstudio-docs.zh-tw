@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e37219e3-c021-4057-9ec8-4f7cf3c13a15
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e7ff0b8a9227cd05086f84e5db1a569fb2ffb2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 693bf46ceb3194f699d9a5a4dbb0a8828e723fe5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853664"
 ---
 # <a name="idiasymbolget_relativevirtualaddress"></a>IDiaSymbol::get_relativeVirtualAddress
 抓取位置 (RVA) 的相對虛擬位址。 當 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 設定為時，請使用 `LocIsStatic` 。
@@ -25,7 +25,7 @@ ms.locfileid: "85462452"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_relativeVirtualAddress ( 
+HRESULT get_relativeVirtualAddress ( 
    DWORD* pRetVal
 );
 ```

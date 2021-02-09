@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aafbc86d-352c-4e1a-911a-1472d2d59212
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f350f41fab4915b7ad067038b215412e058fe838
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4da4a37a59eddde4e4f7a67efe9bcc1902a29fcb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465955"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855295"
 ---
 # <a name="idiasegmentget_read"></a>IDiaSegment::get_read
 抓取指出區段是否可讀取的旗標。
@@ -25,7 +25,7 @@ ms.locfileid: "85465955"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_read ( 
+HRESULT get_read ( 
    BOOL* pRetVal
 );
 ```

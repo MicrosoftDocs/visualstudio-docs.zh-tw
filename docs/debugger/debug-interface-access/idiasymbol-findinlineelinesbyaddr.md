@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: f1ab47ca-c851-48ea-9c12-47fb80b31102
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ea271ae921ebefe9c579a89b487a6f96c014f1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a97f53d5900768479290ab16add24ee8574e79a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854651"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
 抓取列舉，此列舉可讓用戶端逐一查看在指定的位址範圍內，直接或間接內嵌于此符號中的所有函式的行號資訊。
@@ -23,7 +23,7 @@ ms.locfileid: "85464545"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT findInlineeLinesByAddr ( 
+HRESULT findInlineeLinesByAddr ( 
    DWORD                 isect,
    DWORD                 offset,
    DWORD                 length,

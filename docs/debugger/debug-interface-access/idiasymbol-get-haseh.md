@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9a4952d8-9fa7-4798-b48c-fe4357648276
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 178bc2744e74867c1954474a20e8c3640ade49c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d387d37103773e7352357ebef5f9134bcff85c59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463754"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854245"
 ---
 # <a name="idiasymbolget_haseh"></a>IDiaSymbol::get_hasEH
 抓取旗標，這個旗標會指定函數是否包含任何非受控 c + + 樣式例外狀況處理 (例如 try/catch 區塊) 。
@@ -41,7 +41,7 @@ HRESULT get_hasEH(
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

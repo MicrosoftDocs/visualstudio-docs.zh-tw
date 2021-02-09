@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 73196d3f-112c-4b3a-997b-7c6b815d4afc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28e2f0ec5f176ab32e6bfed1e959f68c04550f67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f5e4e55c85312033cc79c140381068a64a1ef28
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464853"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854805"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 抓取特定平臺類型的堆疊框架列舉值。
@@ -26,7 +26,7 @@ ms.locfileid: "85464853"
 
 ```C++
 
-      HRESULT getEnumFrames2( 
+      HRESULT getEnumFrames2( 
    enum  CV_CPU_TYPE_e    cpuid,
    IDiaStackWalkHelper*   pHelper,
    IDiaEnumStackFrames**  ppEnum

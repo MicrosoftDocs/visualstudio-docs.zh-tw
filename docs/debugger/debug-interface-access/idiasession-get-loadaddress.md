@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5162ae1a-38e3-4571-8995-4ed9be1dec3e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0615933715c0e78513f9ee33ee171cc764f5d743
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a971ccb8511d54e934ebe241b3f3285d0b44c321
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465430"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855050"
 ---
 # <a name="idiasessionget_loadaddress"></a>IDiaSession::get_loadAddress
 抓取對應于此符號存放區中符號的可執行檔的載入位址。
@@ -25,7 +25,7 @@ ms.locfileid: "85465430"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_loadAddress ( 
+HRESULT get_loadAddress ( 
    ULONGLONG* pRetVal
 );
 ```

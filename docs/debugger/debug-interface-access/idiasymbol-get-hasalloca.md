@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3b9fb747-670b-4da7-bb70-612f7b911786
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebf6a450aa9b2b5fdd05d6573fc9ee10c6f83e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b6dfbb3d12e01656117c0b1a3391af5a0578358
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854287"
 ---
 # <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
 抓取旗標，這個旗標會指定函式是否包含 (的呼叫，該呼叫 `alloca` 用來配置堆疊) 的記憶體。
@@ -25,7 +25,7 @@ ms.locfileid: "85463824"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT get_hasAlloca(   BOOL *pFlag);
+HRESULT get_hasAlloca(   BOOL *pFlag);
 ```
 
 #### <a name="parameters"></a>參數
@@ -39,7 +39,7 @@ HRESULT get_hasAlloca(   BOOL *pFlag);
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

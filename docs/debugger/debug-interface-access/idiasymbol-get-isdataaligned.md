@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddd11a41-6c00-4829-acf4-aa1ace8c21a7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00507b5d69f46657968407170d9633f1d84c8e4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2270a960eda7942216751be90241e4f896ba5ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854105"
 ---
 # <a name="idiasymbolget_isdataaligned"></a>IDiaSymbol::get_isDataAligned
 抓取旗標，這個旗標會指定使用者定義型別 (UDT) 是否已對齊某個特定的記憶體界限。
@@ -44,7 +44,7 @@ HRESULT get_isDataAligned(
 ## <a name="remarks"></a>備註
  這個屬性通常會在以非預設資料對齊方式編譯可執行檔時設定。 例如，Microsoft c + + 編譯器可以使用命令列選項/Zp <em>#</em> （其中是位元組值）來變更資料對齊 *#* 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

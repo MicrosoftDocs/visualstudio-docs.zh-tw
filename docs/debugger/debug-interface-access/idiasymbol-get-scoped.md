@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 588163f7-958e-4072-bf66-db5c5f07d3cb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ab42f39535dae2f6eb1e84e0c656dc4ff601f18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f882a71e92056a7120eb9ea6ae3b96b6ee8ea69c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853643"
 ---
 # <a name="idiasymbolget_scoped"></a>IDiaSymbol::get_scoped
 抓取旗標，這個旗標會指定使用者定義資料類型是否出現在非全域的詞法範圍中。
@@ -25,7 +25,7 @@ ms.locfileid: "85468718"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_scoped ( 
+HRESULT get_scoped ( 
    BOOL* pRetVal
 );
 ```

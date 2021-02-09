@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f647eee9-a73c-483b-9fe9-21f42e560a7b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e39793e2060daebf93759feb9c64622a9cf880
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c53aa02338b83436648deb6569bbe1217f8adf35
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855120"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 抓取指定虛擬位址中包含的行號資訊 (VA) 範圍。

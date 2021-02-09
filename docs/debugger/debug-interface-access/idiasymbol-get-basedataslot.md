@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: f9ed21b7-9397-4813-926e-ade11914b06b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ce2a1f2d6404f7bbb708478dff1e64b09b8246d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3475ec7dd4a619ce231538203104ceab264c8a84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854511"
 ---
 # <a name="idiasymbolget_basedataslot"></a>IDiaSymbol::get_baseDataSlot
 抓取基底資料槽。

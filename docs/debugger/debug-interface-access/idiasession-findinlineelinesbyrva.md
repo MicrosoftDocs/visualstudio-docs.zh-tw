@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 7a74d5ee-0dbf-47c0-92b4-47ec03b13ce9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9469415682d7347aa3d51ee09878e31e28e85f62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1daae404b3adb1e4a8d2595307ef9bc4eb406399
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855190"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
 抓取列舉，此列舉可讓用戶端逐一查看由指定的父系符號內嵌、直接或間接內嵌的所有函式的行號資訊，並且包含在指定的相對虛擬位址 (RVA) 內。
@@ -23,7 +23,7 @@ ms.locfileid: "85465717"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT findInlineeLinesByRVA ( 
+HRESULT findInlineeLinesByRVA ( 
    IDiaSymbol*           parent,
    DWORD                 rva,
    DWORD                 length,

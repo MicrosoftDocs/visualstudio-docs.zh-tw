@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 024ccd78-5867-4ca7-bc26-548758e9ac53
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de63223afda4ce5d00358fe3c06cabe90f2689aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5f4fc54ee9192877c7c59f32a4f8fe41ff063c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464433"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854623"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
 如果有對應的標記值，這個方法會傳回在指定的相對虛擬位址的這個存根函式中所包含的符號列舉。

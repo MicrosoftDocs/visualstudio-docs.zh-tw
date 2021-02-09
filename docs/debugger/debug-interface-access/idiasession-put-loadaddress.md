@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b157b245-1ea0-4b80-8962-d8b278dbc742
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 807346ef5a34c0b175257fe2099dc25e8de692f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3642c17f342f824ea920fcf4adf0e11f5ef93215
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465381"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855029"
 ---
 # <a name="idiasessionput_loadaddress"></a>IDiaSession::put_loadAddress
 設定可執行檔的載入位址，這些檔案會對應到此符號存放區中的符號。
@@ -25,7 +25,7 @@ ms.locfileid: "85465381"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT put_loadAddress ( 
+HRESULT put_loadAddress ( 
    ULONGLONG NewVal
 );
 ```

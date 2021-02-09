@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f6d6ac2f-6d96-4f88-962b-29c0a66890b0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 515ef7571192271b5458d36257120d6eef2fe02f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ade59bbe5c89a9fa88c49dc0ef3d648c45030f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854385"
 ---
 # <a name="idiasymbolget_count"></a>IDiaSymbol::get_count
 捕獲清單或陣列中的專案數。
@@ -25,7 +25,7 @@ ms.locfileid: "85464006"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_count ( 
+HRESULT get_count ( 
    DWORD* pRetVal
 );
 ```
@@ -41,7 +41,7 @@ HRESULT get_count ( 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|
