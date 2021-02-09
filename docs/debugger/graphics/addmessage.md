@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 102a0404-a00c-4566-93f3-01bc8df63280
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: efd4b29e6a4875611603087a1a2c0942c3e571b3
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: d9d51e4415d9707b2df4bb0912290d4f5aa7825f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874635"
 ---
 # <a name="addmessage"></a>AddMessage
 將自訂訊息新增至 [圖形診斷] *抬頭顯示器* (上層顯示) 。

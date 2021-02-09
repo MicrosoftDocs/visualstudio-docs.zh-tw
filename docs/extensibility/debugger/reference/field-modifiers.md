@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7a24345174854462a2118df626223a8a299cd7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5589b1535fbe22f0b0c1f2f9c9e34f70a4e7e861
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736851"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874318"
 ---
 # <a name="field_modifiers"></a>FIELD_MODIFIERS
 指定欄位類型的修飾詞。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
-enum enum_FIELD_MODIFIERS {
+enum enum_FIELD_MODIFIERS {
     FIELD_MOD_NONE             = 0x00000000,
 
     // Modifier of the field
@@ -188,7 +188,7 @@ public enum enum_FIELD_MODIFIERS {
 
 這些值也會傳遞至 [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) 方法，以篩選特定欄位。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： sh. h
 
 命名空間： VisualStudio

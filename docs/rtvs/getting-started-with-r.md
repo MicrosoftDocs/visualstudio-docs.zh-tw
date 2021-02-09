@@ -5,15 +5,15 @@ ms.date: 06/29/2017
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 8be766e078a04d713ed69aa0b9cc464433dcb73d
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 80e09a9c6b86d37e3069e3694bea289ac37282af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761390"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873693"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio R 工具使用者入門
 
@@ -161,7 +161,7 @@ Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項
 
 若要深入資訊，請參閱[偵錯](debugging-r-in-visual-studio.md)和[變數總管](variable-explorer.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在此逐步解說中，您已了解 R 專案的基本概念、使用互動式視窗、程式碼編輯，以及在 Visual Studio 中偵錯。 若要繼續探索更多的功能，請參閱下列文章和目錄中顯示的文章：
 

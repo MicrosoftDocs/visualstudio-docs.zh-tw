@@ -15,15 +15,15 @@ helpviewer_keywords:
 - managed code, debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e7dadfbc6a02382165b623aeff9d866e9edc975a
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 1cac60b6b7187164780a67be24c7d8bdfb3b4eb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872660"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debug Managed 程式碼 (c #、Visual Basic、F #、c + +/CLI) 
 
@@ -81,7 +81,7 @@ ms.locfileid: "97727017"
 [偵錯工具腳本和 Web 應用程式](how-to-enable-debugging-for-aspnet-applications.md)\
 描述您在偵錯指令碼和 Web 應用程式時會遇到的一般偵錯問題和技術。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [逐步解說：在設計階段 Debug 自訂 Windows Forms 控制項](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [偵錯工具安全性](../debugger/debugger-security.md)

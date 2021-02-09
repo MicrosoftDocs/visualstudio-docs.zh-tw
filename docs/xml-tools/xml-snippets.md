@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9114d50abd8f12e19f67d593927b94afcb010f6
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 158f51ddc8db8f83d98c34aa03b3ee4f5a1a4d01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874817"
 ---
 # <a name="xml-snippets"></a>XML 片段
 
@@ -39,7 +39,7 @@ XML 編輯器包含許多涵蓋一些常見工作的程式碼片段。 這可讓
 </xs:element>
 ```
 
-插入片段的方式有兩種。 [ **插入程式碼片段** ] 命令會在游標位置插入 XML 程式碼片段。 「範圍語句」命令會將所選文字周圍的 XML 程式碼片段包裝 **起來** 。 這兩個命令都可從 [ **編輯** ] 功能表下的 [ **IntelliSense** ] 子功能表，或從編輯器內的滑鼠右鍵功能表使用。
+插入片段的方式有兩種。 [ **插入程式碼片段** ] 命令會在游標位置插入 XML 程式碼片段。 「範圍語句」命令會將所選文字周圍的 XML 程式碼片段包裝 **起來** 。 這兩個命令都可從 [**編輯**] 功能表下的 [ **IntelliSense** ] 子功能表，或從編輯器內的滑鼠右鍵功能表使用。
 
 如需詳細資訊，請參閱 [如何：使用 XML 程式碼片段](../xml-tools/how-to-use-xml-snippets.md)。
 
@@ -51,7 +51,7 @@ XML 編輯器也可以從 XML 架構產生 XML 片段。 此功能可讓您以�
 
 除了 Visual Studio 預設隨附的程式碼片段，您也可以建立並使用自己的 XML 程式碼片段。 如需詳細資訊，請參閱 [如何：建立 XML 片段](../xml-tools/how-to-create-xml-snippets.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的程式碼片段](../ide/code-snippets.md)
 - [XML 編輯器](../xml-tools/xml-editor.md)

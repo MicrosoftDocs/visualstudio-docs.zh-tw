@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 386e9524-be17-4573-83fb-4f7c5cae0be0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 345efabedca63187fd9f16b4ed9622de8e320e89
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: b61d0c6bc89f8be2680930411e0b9109fdeec473
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728079"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872051"
 ---
 # <a name="send-messages-to-the-output-window"></a>傳送訊息至 [輸出] 視窗
 
@@ -53,7 +53,7 @@ ms.locfileid: "97728079"
 
 - 已結束的執行序。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [輸出視窗](../ide/reference/output-window.md)
 - [追蹤和檢測應用程式](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications) (機器翻譯)

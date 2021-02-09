@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2512836781b0bf8c269f296066b25722b58be1fb
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 792175d7d2c168f75d20bce86675a1fcd8c47899
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875532"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>如何：變更組建輸出目錄
 
@@ -26,28 +26,28 @@ ms.locfileid: "92136884"
 
 ## <a name="change-the-build-output-directory"></a>變更組建輸出目錄
 
-1. 若要開啟專案屬性頁面，請以滑鼠右鍵按一下 [方案總管]**** 中的專案節點，然後選取 [屬性]****。
+1. 若要開啟專案屬性頁面，請以滑鼠右鍵按一下 [方案總管] 中的專案節點，然後選取 [屬性]。
 
 2. 根據您的專案類型，選取適當的索引標籤：
 
-   - 若是 C#，請選取 [建置]**** 索引標籤。
-   - 若是 Visual Basic，請選取 [編譯]**** 索引標籤。
-   - 若是 C++ 或 JavaScript，請選取 [一般]**** 索引標籤。
+   - 若是 C#，請選取 [建置] 索引標籤。
+   - 若是 Visual Basic，請選取 [編譯] 索引標籤。
+   - 若是 C++ 或 JavaScript，請選取 [一般] 索引標籤。
 
-3. 在頂端的組態下拉式清單中，選擇您想要變更其輸出檔位置的組態 ([偵錯]****、[發行]**** 或 [所有組態]****)。
+3. 在頂端的組態下拉式清單中，選擇您想要變更其輸出檔位置的組態 ([偵錯]、[發行] 或 [所有組態])。
 
 4. 在頁面中尋找輸出路徑項目&mdash;因您的專案類型而異：
 
-   - **輸出路徑**適用於 C++ 和 JavaScript 專案
-   - **組建輸出路徑**適用於 Visual Basic 專案
-   - **輸出目錄**適用於 Visual C++ 專案
+   - **輸出路徑** 適用於 C++ 和 JavaScript 專案
+   - **組建輸出路徑** 適用於 Visual Basic 專案
+   - **輸出目錄** 適用於 Visual C++ 專案
 
-   鍵入要產生輸出的目標路徑 (絕對或相對於根專案目錄)，或改為選擇 [瀏覽]**** 以瀏覽至該資料夾。
+   鍵入要產生輸出的目標路徑 (絕對或相對於根專案目錄)，或改為選擇 [瀏覽] 以瀏覽至該資料夾。
 
    ![適用於 Visual Studio C# 專案的輸出路徑](media/output-path.png)
    
    > [!NOTE]
-   > 某些專案預設會在組建路徑中包含架構和執行時間。 若要變更此專案，請在 **方案總管**中的專案節點上按一下滑鼠右鍵，選取 [ **編輯專案**檔]，然後新增下列專案：
+   > 某些專案預設會在組建路徑中包含架構和執行時間。 若要變更此專案，請在 **方案總管** 中的專案節點上按一下滑鼠右鍵，選取 [ **編輯專案** 檔]，然後新增下列專案：
    > ```xml
    > <PropertyGroup>
    >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -56,7 +56,7 @@ ms.locfileid: "92136884"
    > ```
 
 > [!TIP]
-> 如果您指定的位置並未產生輸出，請確定您已正確選取 Visual Studio 的功能表列來建置對應組態 (例如 [偵錯]**** 或 [發行]****)。
+> 如果您指定的位置並未產生輸出，請確定您已正確選取 Visual Studio 的功能表列來建置對應組態 (例如 [偵錯] 或 [發行])。
 >
 > ![Visual Studio 2019 中的 [建置] 組態選擇器](media/build-configuration-chooser.png)
 

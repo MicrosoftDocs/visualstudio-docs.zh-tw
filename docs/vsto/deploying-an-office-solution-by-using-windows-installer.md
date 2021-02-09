@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c001b3ce308c9e991cee747bdcab3ad646b226ab
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef515ce323322dee667dab5690b85b29af97c07d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847113"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875415"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 方案
 
@@ -494,7 +494,7 @@ ms.locfileid: "96847113"
 
 5. 在 **Setup.exe** 屬性頁上，從 [ **InstallShield 必要條件位置** ] 清單中選擇 [ **從 Web 下載**]。
 
-6. 在功能表列上，選擇 [**建立**  >  **Configuration Manager**]。
+6. 在功能表列上，選擇 [**建立**  >  **設定管理員**]。
 
 7. 在 [ **使用中的方案組態** ] 清單中，選擇 [ **SingleImage**]。
 

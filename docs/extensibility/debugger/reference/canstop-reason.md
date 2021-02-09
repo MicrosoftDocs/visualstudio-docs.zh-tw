@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d7be361d4468584c109db52f487b3de3c1fdff0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6756d574c36d6381b606be597ca0e54e7945763
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737690"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874352"
 ---
 # <a name="canstop_reason"></a>CANSTOP_REASON
 用來判斷程式是否可以在到達執行的特定點之後停止執行。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_CANSTOP_REASON {
@@ -52,7 +52,7 @@ public enum enum_CANSTOP_REASON {
 ## <a name="remarks"></a>備註
 以引數的形式傳遞至 [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) 方法，以確認會話 Debug MANAGER (SDM) 是否可以在到達程式的進入點之後，或逐步執行至函式或方法之後停止運作。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

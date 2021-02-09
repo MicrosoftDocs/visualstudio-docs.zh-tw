@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 624d9649-5946-4298-a138-70773b72e810
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc1e7a27624cede9ca20295d3dc890f172e35889
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 99180c941f82a33db0432e12414a061fc29a7f35
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862980"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872023"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>編輯後繼續對話方塊 (C++)
 [編輯後繼續] 無法套用您對機器碼所做的變更。 不過這可能只是暫時的狀況。 有時 [編輯後繼續] 無法立即套用機器碼變更，但是可以稍後在偵錯工作階段期間套用 (例如，完成目前執行的程序呼叫後)。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。

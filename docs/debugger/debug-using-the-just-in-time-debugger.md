@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Just-In-Time debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a03afa64d19e3ccd0efbb170b4305049f6bfee30
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 8e082f5346d22fd574b7f9b725f8ec88b8a3b08f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761338"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873193"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>使用 Visual Studio 中的即時偵錯工具進行偵錯工具
 
@@ -95,7 +95,7 @@ ms.locfileid: "97761338"
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
    ```
 
-   如需詳細資訊，請參閱 <xref:System.Diagnostics.DebuggableAttribute> 。
+   如需詳細資訊，請參閱<xref:System.Diagnostics.DebuggableAttribute>。
 
 ## <a name="use-just-in-time-debugging"></a><a name="BKMK_Using_JIT"></a>使用即時調試
 這個範例會逐步引導您在應用程式擲回錯誤時進行即時的偵錯工具。
@@ -191,7 +191,7 @@ ms.locfileid: "97761338"
 
     若要修正此問題，請使用 Visual Studio 安裝程式重新安裝或修復您的 Visual Studio 安裝。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef34889b838e2f7eaa92420eec90db9def57e65
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 0835746b94412380bee314bc3fac59b4c48f86d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871997"
 ---
 # <a name="edit-and-continue-error-message"></a>編輯後繼續錯誤訊息
 
@@ -42,12 +42,12 @@ ms.locfileid: "96862839"
 - 嘗試在偵測 Dr. Watson 傾印時編輯程式碼。
 - 在未處理的例外狀況發生後嘗試編輯程式碼，但未選取 [未處理的例外狀況] 的 **[回溯呼叫堆疊** ] 選項。
 - 嘗試在對內嵌執行時間應用程式進行偵錯工具時編輯程式碼。
-- 嘗試使用64位應用程式目標的4.5.1 之前的 .NET Framework 版本來編輯 managed 程式碼。 若要針對4.5.1 之前的 .NET Framework 使用 [編輯後繼續]，請 **x86** 在 [ **\<ProjectName>**  >  **屬性**  >  **編譯**] **Advanced Compiler** 索引標籤中，將 [目標] 設定為 [x86]
+- 嘗試使用64位應用程式目標的4.5.1 之前的 .NET Framework 版本來編輯 managed 程式碼。 若要針對4.5.1 之前的 .NET Framework 使用 [編輯後繼續]，請在 [ **\<ProjectName>**  >  **屬性**  >  **編譯**] 索引標籤中，將 [目標] 設定為 [x86]
 - 嘗試編輯元件中的程式碼在偵錯工具期間已修改，且已重載。
 - 嘗試編輯尚未載入之元件中的程式碼。
 - 開始對繼承應用程式進行偵錯工具，因為最新版本的組建錯誤。
 
-如需詳細資訊，請參閱：
+如需詳細資訊，請參閱
 - [C + + 編輯後繼續的 blog 文章](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)
 - [ (c + +) 支援的程式碼變更 ](../debugger/supported-code-changes-cpp.md)
 - [編輯後繼續](../debugger/edit-and-continue.md)

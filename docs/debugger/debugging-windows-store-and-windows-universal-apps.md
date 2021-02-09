@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 111a84471ca20659b9a8a4a00345c1c027a0472e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: ffaa1a5188d3bb9b401d7b9b889e548158f4ae3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872244"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>在 Visual Studio 中將通用 Windows 應用程式 (UWP) 進行偵錯工具
 
@@ -33,5 +33,5 @@ Visual Studio 偵錯工具提供對 UWP 應用程式的完整支援。 請參閱
 | [在偵錯時檢查 XAML 屬性](../xaml-tools/xaml-hot-reload.md) | 您可以使用 [即時視覺化樹狀] 來探索 UWP XAML 物件的視覺化樹狀結構，並查看該樹狀結構中物件的相依性屬性。 |
 |分析 UWP 應用程式的 ContentPrefetcher 類別效果。|[UWP 應用程式的預先提取內容](../debugger/prefetch-content-for-windows-store-apps.md)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [使用靜態程式碼分析來分析程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md)

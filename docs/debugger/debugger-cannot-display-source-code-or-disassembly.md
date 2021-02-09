@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 112d3ea3-fdd2-4bce-92b4-167a76258934
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dd0ed9a798c29010911a1537c99f30ba44e01aea
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 2966405378d2a6144c921c442e7412a41c454c52
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873063"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>偵錯工具無法顯示原始程式碼或反組譯碼
 這個錯誤為：

@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 024a8659d95855c8154ed8d9bed231739648719e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9e5d113718c2ecc73ad942dd58ddf92216fe6c83
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045802"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875116"
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT) 
 
@@ -31,7 +31,7 @@ ms.locfileid: "93045802"
 
 此資料行包含目前範圍中所有區域變數的名稱。 節點集具有樹狀目錄控制項，您可以向下切入以查看其子資料夾。
 
-**ReplTest1**
+**值**
 
 此資料行顯示每個變數所包含的值。 屬性、處理指示、註解、文字及 CData 節點都顯示節點的文字值。 命名空間節點會顯示命名空間 URI。
 
@@ -41,7 +41,7 @@ ms.locfileid: "93045802"
 
 [本機] 視窗還顯示追蹤 XSLT 轉換內容之預先定義的內容變數。 下表說明 XSLT 偵錯工具使用之預先定義的內容變數。
 
-|Name|描述|
+|名稱|描述|
 |-|-----------------|
 |`last()`|內容大小。|
 |`position()`|內容節點的位置或索引編號 (相對於內容大小)。|
@@ -102,7 +102,7 @@ ms.locfileid: "93045802"
 
 如需詳細資訊，請使用 [反組解碼 [] 視窗](../debugger/how-to-use-the-disassembly-window.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯 XSLT](../xml-tools/debugging-xslt.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

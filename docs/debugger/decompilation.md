@@ -11,16 +11,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], decompilation, source not found
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 8ad919b14642dff98746c194ad8c05bbb3aea529
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 84ba27607a594862905ef77b7979e89009eb098e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872153"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>在偵錯工具時，從 .NET 元件產生原始程式碼
 
@@ -67,7 +67,7 @@ ms.locfileid: "97726731"
 
 ![包含其他檔案的方案瀏覽器螢幕擷取畫面。](media/decompilation-solution-explorer.png)
 
-## <a name="known-limitations"></a>已知限制
+## <a name="known-limitations"></a>已知的限制
 
 ### <a name="requires-break-mode"></a>需要中斷模式
 

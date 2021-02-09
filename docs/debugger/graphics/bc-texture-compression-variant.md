@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e767268073f896de590386854a0d2c9ce2803073
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 144065c5ee04c75582307440b4cee6242b48bc01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874609"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 紋理壓縮變異
 在具有 B8G8R8X8、B8G8R8A8 或 R8G8B8A8 像素格式變異的紋理上啟用區塊壓縮。
@@ -62,5 +62,5 @@ ms.locfileid: "97726445"
 ## <a name="example"></a>範例
  此變異會先在執行階段對紋理進行區塊壓縮，再呼叫 `CreateTexture2D`。 建議您不要對實際執行程式碼使用此方式，因為未壓縮的紋理會耗用較多的磁碟空間，而且因為額外步驟可能會大幅增加應用程式中的載入時間，畢竟區塊壓縮需要大量計算資源來進行編碼。 建議您改用屬於您組建管線的影像編輯器或影像處理器，來離線壓縮紋理。 這些方式會減少磁碟空間需求、去除應用程式中的執行階段額外負荷，以及提供更多的處理時間，讓您可以保留最佳影像品質。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [半/季材質維度變異](half-quarter-texture-dimensions-variant.md)

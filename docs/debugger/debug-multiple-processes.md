@@ -18,15 +18,15 @@ dev_langs:
 ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 214025c2d128443223594fdb00fcf730e5a8091a
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: fdb86d0c0140c7d0c30b3a56fbf875215d1e626e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873278"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a> (c #、Visual Basic、c + +) 進行多個進程的偵錯工具
 
@@ -165,7 +165,7 @@ Visual Studio 可以將有數個進程的方案進行 debug 錯。 您可以啟�
 
 下表描述偵錯工具停止、終止和卸離命令與多個進程的行為：
 
-|**命令**|**描述**|
+|**命令**|**說明**|
 |-|-|
 |**Debug**  > **停止調試**|除非在 [ **進程** ] 視窗中變更行為，否則偵錯工具啟動的進程會結束，而且附加的進程也會卸離。|
 |**Debug**  > **全部終止**|所有進程都會結束。|
@@ -174,7 +174,7 @@ Visual Studio 可以將有數個進程的方案進行 debug 錯。 您可以啟�
 |**進程** 視窗 > **終止進程**|選取的進程已結束。<br />其他處理序維持其現有的狀態 (已暫止或執行中)。|
 |**停止偵錯工具時**，**進程** 視窗 > 卸離|如果選取此選項，則會  >  從選取的進程 **中斷** 偵錯工具的偵錯工具。 <br />如果未選取此選項， **Debug**  >  **Stop 調試** 程式會結束選取的進程。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [指定符號 ( .pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [附加至正在執行的進程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

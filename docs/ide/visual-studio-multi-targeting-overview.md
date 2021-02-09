@@ -9,15 +9,15 @@ helpviewer_keywords:
 - .NET framework targeting [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9bc20c2ee08a2b838e0fd1ab14ee9a8388912542
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: d29f40c6e6e43f81eefc287bf28141be6ca7feb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873927"
 ---
 # <a name="framework-targeting-overview"></a>Framework 目標概觀
 

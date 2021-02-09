@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c52be25c007a16d7e6221663c434767c02d8d50
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 943bc9aa6efbdf5fcec038d469d39a3361315afb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97683897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875545"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>如何：在 Visual Studio 中變更字型、色彩和主題
 
@@ -118,7 +118,7 @@ ms.locfileid: "97683897"
 > [!TIP]
 > 如果您認為可能有用，但目前無法在 Visual Studio 中使用的色彩或字型有協助工具選項，請在 [Visual Studio 開發人員社群](https://aka.ms/feedback/suggest?space=8)中選取 [**建議功能**] 讓我們知道。 如需此論壇和其運作方式的詳細資訊，請參閱 [建議功能](../ide/suggest-a-feature.md) 頁面。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要深入瞭解您可以變更字型和色彩配置的所有使用者介面 (UI) 元素，請參閱 [字型 [和色彩]、[環境]、[選項] 對話方塊](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 頁面。
 

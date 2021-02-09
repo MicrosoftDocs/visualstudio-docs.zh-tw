@@ -7,15 +7,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6202fa019aed8e6fc9eb9ff93bdb390bf22f2911
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: fbb99d2b41a8a354ec450e99dab13efb6ec60248
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872920"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>完全初學者如何偵錯
 
@@ -308,7 +308,7 @@ ms.locfileid: "97761247"
 
     按任意鍵完成應用程式。
 
-## <a name="summary"></a>總結
+## <a name="summary"></a>摘要
 
 當您看到問題時，請使用偵錯工具和 [步驟命令](../debugger/navigating-through-code-with-the-debugger.md) (例如 **F10** 和 **F11**)，以找出有問題的程式碼區域。
 
@@ -324,7 +324,7 @@ ms.locfileid: "97761247"
 > [!TIP]
 > 您可以使用偵錯工具協助找出 Bug。 偵錯工具只有在知道您程式碼的意圖時，才可「為您」找出 Bug。 您身為開發人員必須表示程式碼的意圖，工具才能知道該意圖。 您可以撰寫[單元測試](../test/improve-code-quality.md)來執行這項作業。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在本文中，您已了解幾個一般偵錯概念。 接下來，您可以開始深入了解偵錯工具。
 

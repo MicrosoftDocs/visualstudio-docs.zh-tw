@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b934c0e9532bd3bc1f53d9b00d1cc8273f4120
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872985"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>瞭解 Visual Studio 中偵錯工具的生產力秘訣和訣竅
 
@@ -33,7 +33,7 @@ ms.locfileid: "89315053"
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>編輯您的程式碼並繼續進行 (c #、VB、c + +) 的偵錯工具
 
-在 Visual Studio 所支援的大部分語言中，您可以在偵錯工具的過程中編輯程式碼，並繼續進行偵錯工具。 若要使用這項功能，請在偵錯工具中暫停時，按一下您的程式碼，並進行編輯，然後按 **F5**、 **F10**或 **F11** 以繼續進行偵錯工具。
+在 Visual Studio 所支援的大部分語言中，您可以在偵錯工具的過程中編輯程式碼，並繼續進行偵錯工具。 若要使用這項功能，請在偵錯工具中暫停時，按一下您的程式碼，並進行編輯，然後按 **F5**、 **F10** 或 **F11** 以繼續進行偵錯工具。
 
 ![編輯後繼續調試](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
@@ -98,11 +98,11 @@ ms.locfileid: "89315053"
 
 ![自動變數視窗](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
-此外，您可以 **在 [即時** 運算] 視窗中輸入函數來查看傳回值。  (使用 **Debug > Windows > Immediate**來開啟它。 ) 
+此外，您可以 **在 [即時** 運算] 視窗中輸入函數來查看傳回值。  (使用 **Debug > Windows > Immediate** 來開啟它。 ) 
 
 ![即時運算視窗](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 
-您也可以在 [**監看**式] 和 [即時**運算] 視窗**中使用[下](../debugger/pseudovariables.md)，例如 `$ReturnValue` 。
+您也可以在 [**監看** 式] 和 [即時 **運算] 視窗** 中使用 [下](../debugger/pseudovariables.md)，例如 `$ReturnValue` 。
 
 ## <a name="inspect-strings-in-a-visualizer"></a><a name="string_visualizer"></a>在視覺化視覺化中檢查字串
 
@@ -130,7 +130,7 @@ ms.locfileid: "89315053"
 
 #### <a name="to-show-threads-in-your-source-code"></a>在原始程式碼中顯示執行緒
 
-1. 在調試過程中，按一下 [**在來源中顯示執行緒**] 按鈕會在**調試**的工具列中![顯示來源](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")中的執行緒。
+1. 在調試過程中，按一下 [**在來源中顯示執行緒**] 按鈕會在 **調試** 的工具列中 ![顯示來源](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")中的執行緒。
 
 2. 查看來源視窗左邊的裝訂邊。 在此行中，您會看到類似兩個抹布執行緒的 *執行緒標記* 圖示  ![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker") 。 執行緒標記表示執行緒會停在這個位置上。
 
@@ -143,7 +143,7 @@ ms.locfileid: "89315053"
 ::: moniker range="vs-2017"
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>檢查 (UWP) 的 web 服務和網路資源承載
 
-在 UWP 應用程式中，您可以使用 API 來分析執行的網路作業 `Windows.Web.Http` 。 您可以使用此工具來協助您進行 web 服務和網路資源的調試。 若要使用此工具，請選取 [ **Debug >] 效能分析工具**。 選取 [ **網路**]，然後選擇 [ **啟動**]。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集]**** 以產生報表。
+在 UWP 應用程式中，您可以使用 API 來分析執行的網路作業 `Windows.Web.Http` 。 您可以使用此工具來協助您進行 web 服務和網路資源的調試。 若要使用此工具，請選取 [ **Debug >] 效能分析工具**。 選取 [ **網路**]，然後選擇 [ **啟動**]。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集] 以產生報表。
 
 ![網路流量分析工具](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 

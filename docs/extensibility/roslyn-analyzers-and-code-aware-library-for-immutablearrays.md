@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04b65ae8c81f381ee996da5f20ec15588b9180de
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875519"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>適用于適用于 immutablearray 的 Roslyn 分析器和程式碼感知程式庫
 
@@ -309,7 +309,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 您可以在 [這裡](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)看到所有完成的程式碼。 *DoNotUseImmutableArrayCollectionInitializer* 和 *DoNotUseImmutableArrayCtor* 的子資料夾都有一個 c # 檔案，可用於尋找問題和一個 c # 檔案，該檔案會執行顯示在 Visual Studio 燈泡 UI 中的程式碼修正程式。 請注意，完成的程式碼有更多的抽象概念，可避免過度提取 ImmutableArray \<T> 型別物件。 它會使用嵌套註冊的動作，將類型物件儲存在可使用的內容中，只要子動作 (分析物件建立，並分析) 執行的集合初始化。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [\\\Build 2015 談](https://channel9.msdn.com/events/Build/2015/3-725)
 * [GitHub 上已完成的程式碼](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

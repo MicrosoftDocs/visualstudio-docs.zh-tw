@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 068362f88d801d44a1a6b6a85c74f97ba2d3c773
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 894263883cbb34c8d41ec67a5e595e801f723390
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873420"
 ---
 # <a name="evaluate-xpath-expressions"></a>評估 XPath 運算式
 
@@ -32,11 +32,11 @@ ms.locfileid: "93399737"
 
 ## <a name="evaluate-an-xpath-expression"></a>評估 XPath 運算式
 
-下列程式會使用 [ [逐步解說： DEBUG XSLT 樣式表單](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files)] 頁面中的 below-average 和 *books.xml* 檔案 *。*
+下列程式會使用 [[逐步解說： DEBUG XSLT 樣式表單](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files)] 頁面中的 below-average 和 *books.xml* 檔案 *。*
 
 1. 在 `xsl:if` 開始標記處插入中斷點。
 
-2. 若要啟動調試，請在功能表列上選擇 [ **XML**  >  **啟動 XSLT 調試** ] (或按 **Alt** + **F5** ) 。
+2. 若要啟動調試，請在功能表列上選擇 [ **XML**  >  **啟動 XSLT 調試**] (或按 **Alt** + **F5**) 。
 
    偵錯工具會啟動，並在 `xsl:if` 標記處中斷。
 
@@ -44,16 +44,16 @@ ms.locfileid: "93399737"
 
    [ **快速** 監看式] 視窗隨即開啟。
 
-4. `./price/text()`在 [ **快速** 監看式] 對話方塊的 [ **運算式** ] 欄位中輸入，然後選擇 [重新 **評估** ]。
+4. `./price/text()`在 [**快速** 監看式] 對話方塊的 [**運算式**] 欄位中輸入，然後選擇 [重新 **評估**]。
 
    [目前的書籍] 節點的價格會出現在 [ **值** ] 方塊中。
 
    ![在 [快速監看式] 視窗中評估 XPath 運算式](media/quickwatch-price.png)
 
-5. 將 XPath 運算式變更為 `./price/text() < $bookAverage` ，然後按一下 [重新 **評估** ]。
+5. 將 XPath 運算式變更為 `./price/text() < $bookAverage` ，然後按一下 [重新 **評估**]。
 
    [ **值** ] 方塊會顯示 XPath 運算式評估為 `true` 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯 XSLT](../xml-tools/debugging-xslt.md)

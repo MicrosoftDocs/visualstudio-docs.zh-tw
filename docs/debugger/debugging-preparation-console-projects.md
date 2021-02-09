@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9de54feeb77f1bff31fc0b41e385e5a10393aba2
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e39cb7df53a12b97d297ee739338c42a3201089f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728261"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872517"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>調試準備：主控台專案 (c #、c + +、Visual Basic、F # ) 
 
@@ -58,7 +58,7 @@ ms.locfileid: "97728261"
 
   當您從 Visual Studio 啟動主控台應用程式時，[主控台] 視窗有時候會出現在 Visual Studio 視窗後面。 如果您嘗試從 Visual Studio 啟動主控台應用程式而且似乎沒有回應，請嘗試移動 Visual Studio 視窗。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯機器碼](../debugger/debugging-native-code.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)
 - [準備 debug c + + 專案](../debugger/debugging-preparation-visual-cpp-project-types.md)

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 3dbc3247-00f5-4644-8ff9-72e9febcf09a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1041f3a8016500a6e1f217849654d9710a508d8
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: dc96decdc8e61e1d8c1f5b60195d7644222dbd51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726484"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874596"
 ---
 # <a name="1x1-viewport-size-variant"></a>1x1 Viewport 大小變異
 將所有呈現目標上的檢視區維度減少為 1x1 個像素。

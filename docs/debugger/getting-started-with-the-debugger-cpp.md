@@ -11,15 +11,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cc5d0b85ac1406f214784976ca23467a0e0eb6c
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: af974731fac6842c38f2a0e4ccbc9f32748e29b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847096"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874791"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 C++ 程式碼進行偵錯
 
@@ -76,7 +76,7 @@ ms.locfileid: "97847096"
 
      如果您沒有看到 [**主控台應用程式**] 專案範本，請在 [**新增專案**] 對話方塊的左窗格中，選擇 [**開啟] Visual Studio 安裝程式** 連結。 Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
    Visual Studio 會隨即開啟您的新專案。
 
@@ -323,7 +323,7 @@ ms.locfileid: "97847096"
 
     恭喜您完成此教學課程！
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在本教學課程中，您已了解如何啟動偵錯工具、逐步執行程式碼，以及檢查變數。 建議您進一步查看偵錯工具功能，以及詳細資訊的連結。
 

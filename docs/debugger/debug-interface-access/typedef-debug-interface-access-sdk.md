@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9ab441b9-cc72-47fa-83e2-87b3c2b891b4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb0b4fd242f53b3e115c44c35c80b22ff08e3116
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aaaafb263e2276e760750d2f13217e72869a6aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873412"
 ---
 # <a name="typedef-debug-interface-access-sdk"></a>Typedef (偵錯介面存取 SDK)
 具有標記的符號會 `SymTagTypedef` 引入其他類型的名稱。

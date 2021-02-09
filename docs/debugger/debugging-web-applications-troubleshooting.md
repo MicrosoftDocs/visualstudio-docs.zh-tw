@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1624e4af-018e-4b7c-9a00-063bfe97fb7d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 569b967a91ea3a93ff75bc45aec8974f5474ce84
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e256e62152d774eb5e296784d934f205a1003d2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872283"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>偵錯 Web 應用程式：疑難排解
 本節包含可以用來解決錯誤的通用程序。

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a096a90d-6d0d-4752-9fb5-417635ccab3e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63c5409f14fde2805e80f35f498cb57d68b1f58b
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c7dd36846bf1d7ac0c24a73a489ed2c461837ca7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728131"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872270"
 ---
 # <a name="debugging-web-applications"></a>偵錯 Web 應用程式
 
@@ -46,7 +46,7 @@ ms.locfileid: "97728131"
 
   啟用 AJAX 功能的 Web 應用程式會使用大量指令碼，在偵錯時特別困難。 如需 AJAX 偵錯工具技術的詳細資訊，請參閱 [偵錯工具和追蹤 Ajax 應用程式總覽](/previous-versions/bb398817(v=vs.140))。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

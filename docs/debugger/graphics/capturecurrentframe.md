@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 4509311d-6fe2-4b65-9b4a-ff0522585d6a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 793d86ac7d23fa209560222415dce50f4e5ac508
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 94c55a34ee71f8002d31613d64ff978f0a546b72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874544"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
 將目前框架的其餘部分捕獲到圖形記錄檔。
@@ -31,6 +31,6 @@ void CaptureCurrentFrame();
 
  若要取得畫面格，您必須準備您的應用程式來捕獲和記錄圖形資訊，也就是說，您必須先透過類別的實例呼叫 [Init](init.md) ， `VsgDbg` 才能呼叫 `CaptureCurrentFrame` 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Init](init.md)
 - [BeginCapture](begincapture.md)

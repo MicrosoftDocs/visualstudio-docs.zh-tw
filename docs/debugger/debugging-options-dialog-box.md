@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 9450589a-42ea-45bf-b128-89447225cca6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae93f22249540da0121472ce07db52e3747abf85
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 6048ff2b86b41a2b825f87d9c9ff9078d414cb7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872504"
 ---
 # <a name="debugging-options-dialog-box"></a>選項對話方塊、偵錯
 [偵錯] 資料夾位於 [工具] 功能表上的 [選項] 對話方塊中，該資料夾提供了下列頁面，可讓您指定偵錯工具選項。
@@ -41,7 +41,7 @@ ms.locfileid: "97726900"
 
 - [符號、偵錯、選項對話方塊](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e7c1774666d2079bea56586f28c6c4e3f5aeec
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: ca91d586be9a351d113aed758d4312dab1a98299
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351306"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874855"
 ---
 # <a name="xml-schema-designer-workspace-views"></a>XML 架構設計工具工作區視圖
 

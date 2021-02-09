@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 0e838ced-12bb-4efc-b811-2b7c034b77b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63742f220d5a776fca180a3f9f7fe9c15e04c66a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dc8537fc943e84e37d47dc02cf6264b16dd7fb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874305"
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
 此介面代表原始程式檔中的抽象位置。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocumentPosition2 : IUnknown
@@ -44,7 +44,7 @@ IDebugDocumentPosition2 : IUnknown
 |[IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)|判斷此位置是否包含在指定的檔中。|
 |[GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)|取得此檔位置的範圍。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

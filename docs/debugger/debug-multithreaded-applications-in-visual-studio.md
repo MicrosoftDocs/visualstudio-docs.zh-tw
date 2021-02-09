@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fed6580219964ab71f5a5010060c1af193375df
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e7a133b4b59b11525a7f7ba776b3b4a4a1e6a31e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873206"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中對多執行緒應用程式進行偵錯
 執行緒是作業系統授權處理器時間的一連串指令。 在作業系統中執行的每個處理序都包含至少一個執行緒。 具有一個以上執行緒的處理序就稱為多執行緒。
@@ -99,7 +99,7 @@ Visual Studio 也提供功能強大的中斷點和追蹤點，當您在調試多
 
 為執行緒命名以方便在 [執行緒] 視窗中檢視。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用中斷點](../debugger/using-breakpoints.md)
 - [執行緒](/dotnet/standard/threading/index)

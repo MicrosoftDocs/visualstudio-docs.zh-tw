@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98444ca60937d40262c92d89b8a6c48ed1a0b7ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d59f46bdde06addf5454700eb45e64c3b452d78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724296"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874279"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 提供埠供應商的地區設定支援。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplierLocale2 : IUnknown
@@ -30,13 +30,13 @@ IDebugPortSupplierLocale2 : IUnknown
  自訂埠供應商會執行此介面來設定地區設定。
 
 ## <a name="methods"></a>方法
- 下表顯示 **IDebugPortSupplierLocale2**的方法。
+ 下表顯示 **IDebugPortSupplierLocale2** 的方法。
 
 |方法|描述|
 |------------|-----------------|
 |[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|設定埠供應商的地區設定。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Portpriv。h
 
  命名空間： VisualStudio

@@ -6,13 +6,13 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 68018c625c5e406e2ba0d7fbfb138b05c53fff9c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+manager: jmartens
+ms.openlocfilehash: 94c8a26d75b92f9b8d51e3ca61f761985a5b4959
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351319"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875038"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>逐步解說：使用 XSLT 階層
 
@@ -48,7 +48,7 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
     </COLLECTION>
     ```
 
-1. 新增下列 *xslincludefile* ：
+1. 新增下列 *xslincludefile*：
 
     ```xml
     <?xml version='1.0'?>
@@ -111,6 +111,6 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
 
 6. 當偵錯工具在指示停止時 `<xsl:include href="xslincludefile.xsl" />` ，請按 [ **逐步** 執行] 按鈕。 可以在參考的樣式表單中繼續進行調試。 您會看見階層，同時設計工具會顯示正確的路徑。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XSLT 分析工具](../xml-tools/xslt-profiler.md)

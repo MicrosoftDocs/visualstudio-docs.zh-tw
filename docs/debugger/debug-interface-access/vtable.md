@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c8be6692-7d2a-4721-99d3-8e2e565bb8a1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f648e1ce5d768a7c1be976fc6d0b81638d40a625
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab5c576cf033be9bff2560a92a46b8e196d016c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460955"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873405"
 ---
 # <a name="vtable"></a>VTable
 虛擬資料表是由 `SymTagVTable` 符號識別。

@@ -6,15 +6,15 @@ ms.date: 08/02/2019
 ms.topic: conceptual
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 50197eeda1828156113fbbfa507447484618861a
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: ab2a99c2230c9fc150fe06c305741eedf14ded37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874031"
 ---
 # <a name="nuget-versus-sdk-as-a-project-reference"></a>NuGet 與 SDK 做為專案參考
 
@@ -66,7 +66,7 @@ ms.locfileid: "97863770"
 | 機制支援輕量的資訊清單格式。 | Y | *SDKManifest.xml* 支援許多屬性，但通常只有一小部分為必要。 | Y | |
 | 機制可供所有 Visual Studio 版本使用。 | Y | SDK 支援所有 Visual Studio 版本。 | Y | NuGet 支援所有 Visual Studio 版本。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [管理專案中的參考](../ide/managing-references-in-a-project.md)
 - [管理專案中的參考 (Visual Studio for Mac)](/visualstudio/mac/managing-references-in-a-project)

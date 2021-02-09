@@ -5,18 +5,18 @@ ms.date: 11/18/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7455a668bf78cc4c3badafa3fa1c3e9b4697a592
-ms.sourcegitcommit: 3b9a8aec34c7e835069f4db5c133dd002028180c
+ms.openlocfilehash: 32d407c4803c2b50276145a2c9a66c2c501f05ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94941354"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874417"
 ---
 # <a name="tutorial"></a>教學課程
 

@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31098083383b1669e0fe79423c212f1f38208acc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e12118f2f7f5d9189ca768f7be65a35b490eb54
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875012"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 文件屬性，屬性視窗
 
@@ -30,7 +30,7 @@ ms.locfileid: "94350227"
 
 **輸入**
 
-與 XSLT 樣式表相關聯的輸入文件。 它是由 **啟動 xslt** 命令使用，例如， **XML**  >  **啟動 xslt 而不進行調試** 。 您可以使用 [ **流覽 (]** ) 按鈕來選取檔。
+與 XSLT 樣式表相關聯的輸入文件。 它是由 **啟動 xslt** 命令使用，例如， **XML**  >  **啟動 xslt 而不進行調試**。 您可以使用 [ **流覽 (]**) 按鈕來選取檔。
 
 只有在編輯器中開啟 XSLT 檔案時，才會顯示此屬性。
 
@@ -52,6 +52,6 @@ ms.locfileid: "94350227"
 
 編輯 XSLT 檔案時，這個屬性可用來指定當選取 [ **啟動 Xslt 調試** 程式或 **啟動 xslt 但不使用調試** 程式] 命令時，應該使用不同的樣式表單。 例如，當您編輯的樣式表單包含在父樣式表單中時，您可能會想要這樣做。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 編輯器](../xml-tools/xml-editor.md)

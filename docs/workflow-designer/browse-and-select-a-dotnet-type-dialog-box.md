@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c479cbad884a8a21197c945f8f6f1ae13947991
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f0a7ffb9e100a621019a5d0ced855575a05708ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875298"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>瀏覽並選取 .NET 類型對話方塊
 
@@ -41,7 +41,7 @@ ms.locfileid: "96995482"
 
 1. 在 [ **類型名稱** ] 方塊中，輸入您要使用之類型的名稱。
 
-2. 請執行下列其中一項：
+2. 執行下列其中一個動作：
 
     - 一旦您要使用的型別名稱顯示在 [ **型別名稱** ] 方塊中的樹狀結構中，請按兩下該型別加以選取。
 
