@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 92825f77b1c94a7545b399dbc1cb35ecefb8218d
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 2b1ce5af864a87691fab5b4026e797dc6eb970bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883328"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907264"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：限制檢測特定函式
 您可以透過在 [效能工作階段] 或目標二進位檔屬性頁的 [進階] 頁面中設定選項，將檢測和資料收集限制在一或多個函式：
@@ -44,10 +44,10 @@ ms.locfileid: "98883328"
 
     **/include：** `FuncSpec`**[;** `FuncSpec`**]**`...`
 
-    `FuncSpec` 是命名空間和函式名稱。 它的格式 `Namespace` **如下：：** `FunctionName` 。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如， **/include： MyNS：： \\** _ 會指定 MyNS 命名空間中的所有函數。
+    `FuncSpec` 是命名空間和函式名稱。 它的格式 `Namespace` **如下：：** `FunctionName` 。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。
 
    > [!NOTE]
-   > 若要列出二進位檔中的函式，請在分析工具安裝目錄中開啟命令提示字元視窗 (請參閱 [指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) 然後輸入 _ *vsinstr/DumpFuncs**
+   > 若要列出二進位檔中的函式，請在分析工具安裝目錄中開啟命令提示字元視窗 (請參閱 [指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md))，然後鍵入 **vsinstr /DumpFuncs**
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>限制檢測二進位檔中的特定函式
 
@@ -63,10 +63,10 @@ ms.locfileid: "98883328"
 
     **/include：** `FuncSpec`**[;** `FuncSpec`**]**`...`
 
-    `FuncSpec` 是命名空間和函式名稱。 它的格式 `Namespace` **如下：：** `FunctionName` 。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如， **/include： MyNS：： \\** _ 會指定 MyNS 命名空間中的所有函數。
+    `FuncSpec` 是命名空間和函式名稱。 它的格式 `Namespace` **如下：：** `FunctionName` 。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。
 
    > [!NOTE]
-   > 若要列出二進位檔中的函式，請在分析工具安裝目錄中開啟命令提示字元視窗 (請參閱 [指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) 然後輸入 _ *vsinstr/DumpFuncs**
+   > 若要列出二進位檔中的函式，請在分析工具安裝目錄中開啟命令提示字元視窗 (請參閱 [指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md))，然後鍵入 **vsinstr /DumpFuncs**
 
 ## <a name="see-also"></a>另請參閱
 - [控制資料收集](../profiling/controlling-data-collection.md)

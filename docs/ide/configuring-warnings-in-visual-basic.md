@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cd5239c4fd01aefa247fc63a66af3e872dbecbb6
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: a59ee0e3aed10b5fd48fcbf57d9cb69aca3f929e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006402"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907640"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>在 Visual Basic 中設定警告
 
@@ -52,7 +52,7 @@ ms.locfileid: "95006402"
 ## <a name="examples"></a>範例
 下表提供命令列引數範例，並描述每個引數的功能。
 
-|引數|說明|
+|引數|描述|
 |--------------|-----------------|
 |`vbc /warnaserror`|指定應該將所有警告視為錯誤。|
 |`vbc /warnaserror:42024`|指定應該將警告 42024 視為錯誤。|

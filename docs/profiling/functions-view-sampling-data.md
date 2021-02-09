@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 029d5ebb-e551-46b0-b64e-2c553d9dbb8e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f30849ff7503d9301ee94408df0cd7b14f65fea
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 82b48689b6348c7d003f5418224260b7939e907a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801243"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907361"
 ---
 # <a name="functions-view---sampling-data"></a>函式檢視 - 取樣資料
 取樣方法的函式報表檢視會列出程式碼剖析執行期間取樣的函式。

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf008bd7c1355f5991890ca5ab8bd999f2a8dd32
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: df8d9545ce8179451530e2eb30bef7f98ba365d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907544"
 ---
 # <a name="error-list-window"></a>[錯誤清單] 視窗
 
@@ -86,7 +86,7 @@ ms.locfileid: "96305440"
 
 會顯示錯誤碼。
 
-描述
+Description
 
 會顯示項目的文字。
 

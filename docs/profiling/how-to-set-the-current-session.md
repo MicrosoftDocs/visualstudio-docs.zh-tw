@@ -13,16 +13,16 @@ helpviewer_keywords:
 - sessions, setting multiple
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a704b88f40f5d89b6bcdcccd7e4158411d9999c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 857fa7e76e0f8830d9a892ba123106ff2add736e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906967"
 ---
 # <a name="how-to-set-the-current-session"></a>如何：設定目前的工作階段
 

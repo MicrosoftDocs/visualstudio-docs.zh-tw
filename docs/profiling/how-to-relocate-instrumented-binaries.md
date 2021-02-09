@@ -12,16 +12,16 @@ helpviewer_keywords:
 - profiling tools, instrumented binaries
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee94737f59f5c29aac47d686f68ade06131d0379
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 7c63a1ce67095696d590670327a1a33e2471c145
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907087"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>如何：重新配置所檢測的二進位檔
 

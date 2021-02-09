@@ -17,15 +17,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7599348b0c44b7239305bb5af49ee2f5c51d882b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906588"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>逐步解說：將資料系結至 Word 執行窗格上的控制項
   本逐步解說示範如何將資料系結至 Word 執行窗格上的控制項。 這些控制項會顯示 SQL Server 資料庫中資料表之間的主要/詳細資料關聯。
@@ -89,7 +89,7 @@ ms.locfileid: "97526212"
 
 4. 選取與 Northwind 範例 SQL Server 資料庫的資料連線，或使用 [ **新增連接** ] 按鈕來加入新的連接。
 
-5. 按 [下一步]  。
+5. 按一下 [下一步] 。
 
 6. 如果已選取連接，請清除選項來儲存連接，然後按 **[下一步]**。
 
@@ -231,7 +231,7 @@ ms.locfileid: "97526212"
 
 5. 插入不同公司的其他產品。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  本逐步解說會示範將資料系結至 Word 執行窗格上控制項的基本概念。 接著可以執行下列一些工作：
 
 - 在 Excel 中將資料系結至控制項。 如需詳細資訊，請參閱逐步解說：將資料系結 [至 Excel 執行窗格上的控制項](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)。

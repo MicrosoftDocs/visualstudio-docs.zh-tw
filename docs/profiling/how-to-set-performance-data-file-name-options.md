@@ -6,16 +6,16 @@ ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dce666121214bef7d844bae2735a284589463ee
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 110199375aef4f4a1168c761a5dad9d77da215b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906999"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>如何：設定效能資料檔案名稱選項
 
@@ -25,7 +25,7 @@ ms.locfileid: "98722044"
 
 您可以在效能工作階段中 [屬性] 對話方塊的 [一般] 頁面上，變更任何命名參數。
 
-|參數|描述|
+|參數|Description|
 |-|-|
 |*路徑*|包含報告的目錄。 預設位置是方案資料夾，或是使用者專案及方案的預設位置。|
 |*.VSP-檔案*|程式碼剖析資料檔案的名稱。 預設的名稱是經過程式碼剖析的方案或可執行檔的名稱。|
@@ -40,7 +40,7 @@ ms.locfileid: "98722044"
 
 3. 變更 [報告] 中的下列設定：
 
-    |Name|描述|
+    |名稱|描述|
     |-|-|
     |**報告位置**|指定儲存程式碼剖析資料檔案的目錄。|
     |**報表名稱**|指定檔案的基底名稱。|

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 34a66e9c2728798330b52f87afe8ecdea8733508
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906333"
 ---
 # <a name="windows-view"></a>視窗檢視
 當您第一次開啟 Spy + + 時，Windows view 會顯示系統中所有視窗和控制項的樹狀結構。 系統會顯示視窗控制碼和類別名稱。 目前的桌面視窗位於樹狀結構的頂端。 所有其他視窗都是桌面的子系，並根據標準視窗階層列出。 Expansible 清單會以縮排方式顯示在其父代下方的 [同輩] 視窗。

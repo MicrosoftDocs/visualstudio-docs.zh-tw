@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 27a29584a4cf3cd688abe36f625c2e68967c39c0
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: fab2a3f2893ba79874b6909b3d19ccf939f8b14a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906320"
 ---
 # <a name="choco-upgrade"></a>choco-upgrade
 
@@ -34,7 +34,7 @@ ms.locfileid: "95440486"
 
 ### <a name="input"></a>輸入
 
-`input`屬性可用來指定要升級的封裝名稱 (例如 ' mongodb ' ) 或下列格式的設定檔路徑 _packages.config_、 _nuspec_ 和 _. nupkg_。 的值 `input` 將會附加至 `choco upgrade` 命令 (例如 `choco upgrade mongodb`) ，以及中特定的任何引數 [`additionalOptions`](#additional-options) ，以及下列) 所定義的內建 `choco` 選項 (。 [below](#built-in-options) 您可以在 [Chocolatey 封裝資源庫](https://chocolatey.org/packages)中找到套件。 使用設定檔時，您可以傳入屬性中該檔案的路徑， `input` 例如： `"input":"packages.config"` 。
+`input`屬性可用來指定要升級的封裝名稱 (例如 ' mongodb ' ) 或下列格式的設定檔路徑 _packages.config_、 _nuspec_ 和 _. nupkg_。 的值 `input` 將會附加至 `choco upgrade` 命令 (例如 `choco upgrade mongodb`) ，以及中特定的任何引數 [`additionalOptions`](#additional-options) ，以及下列) 所定義的內建 `choco` 選項 (。 [](#built-in-options) 您可以在 [Chocolatey 封裝資源庫](https://chocolatey.org/packages)中找到套件。 使用設定檔時，您可以傳入屬性中該檔案的路徑， `input` 例如： `"input":"packages.config"` 。
 
 ### <a name="additional-options"></a>其他選項
 
@@ -44,7 +44,7 @@ ms.locfileid: "95440486"
 
 此 `choco-upgrade` 工具會設定一些 `choco` 命令列引數，以確保 `choco` 可執行無周邊。 以下列出這些引數，您可以在 [chocolatey 檔](https://chocolatey.org/docs/)中找到這些引數的相關檔。
 
-| Name                  | 描述                                                                                        |
+| 名稱                  | 描述                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | **--是**             | 確認所有提示-選擇肯定答案而非提示。 意指 `--accept-license` 。 |
 | **--沒有進度**     | 不要顯示進度-不會顯示進度百分比。                                         |

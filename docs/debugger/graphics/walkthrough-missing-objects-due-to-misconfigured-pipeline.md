@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e099d94479183e795a2ad3c8fc8db03fa969111c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 1b2ce885969ec8b9e382f453eddf388a850e8ac7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906497"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>逐步解說：因管線設定錯誤而遺漏的物件
 此逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷工具來調查因為沒有設定像素著色器而遺失的物件。
@@ -30,7 +30,7 @@ ms.locfileid: "96994988"
 
 - 使用 [圖形管線階段]  視窗搭配 [圖形事件呼叫堆疊]  ，以協助找出未設定像素著色器的來源。
 
-## <a name="scenario"></a>案例
+## <a name="scenario"></a>狀況
  有時是因為在轉譯物件前未設定其中一個著色器階段，而造成 3D 應用程式遺漏物件。 在具有簡單轉譯需求的應用程式中，此錯誤來源通常位於物件繪製呼叫的呼叫堆疊中某處。 但為了達到最佳化，某些應用程式會將具有相同著色器程式、材質或其他資料的物件批次處理，以將狀態變更的額外負荷最小化。 在這些應用程式中，錯誤的來源可能埋沒在批次處理系統中，而非位於呼叫堆疊的繪製呼叫中。 此逐步解說中的情節示範具有簡單轉譯需求的應用程式，因此可在呼叫堆疊中找到錯誤的來源。
 
  在此情節中，當執行應用程式來加以測試時，背景如預期般轉譯，但其中一個物件未出現。 透過使用圖形診斷，您可擷取圖形記錄問題，以偵錯應用程式。 在應用程式中，問題看起來如下：

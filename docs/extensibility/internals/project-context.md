@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc4234481023592595de2df482d5ff6c2227a95e
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: fdc5550cfde44c71b1b663a30cf1824c6edfcf82
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907682"
 ---
 # <a name="project-context"></a>專案內容
 當使用者加入或使用專案和專案專案時，IDE 會使用專案內容的概念來決定應該如何執行各種作業。
@@ -28,6 +28,6 @@ ms.locfileid: "97877659"
 
  在其他情況下，不會明確指定專案的專案內容。 例如，當使用者開啟檔案時，無法使用專案的內容，方法是 **選取 [檔案] 功能表上** 的 [**開啟現有** 檔案] 命令、偵錯工具在檔案上運作，或是當使用者按一下 [**尋找和取代**] 對話方塊中的 [檔案 **中尋找**] 命令。 為了處理這些情況，IDE 會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> 來管理尋找最佳專案以開啟檔的進程。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [專案優先順序](../../extensibility/internals/project-priority.md)
 - [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)

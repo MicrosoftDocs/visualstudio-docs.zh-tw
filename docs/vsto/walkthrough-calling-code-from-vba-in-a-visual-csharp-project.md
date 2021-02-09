@@ -18,15 +18,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a026732f9b49107b8c113796251e1a2b916cf9a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906487"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>逐步解說：在 Visual c # 專案中呼叫 VBA 的程式碼
   本逐步解說示範如何從活頁簿中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Office Excel 文件層級自訂中的方法。 這個程序和三個基本步驟相關：將方法加入 `Sheet1` 主項目類別、將方法公開至活頁簿中的 VBA 程式碼，然後從活頁簿中的 VBA 程式碼呼叫此方法。
@@ -109,7 +109,7 @@ ms.locfileid: "97527303"
 
 6. 在 [名稱]  方塊中，輸入 **CallingCodeFromVBA**。
 
-7. 按一下 [確定]。
+7. 按一下 [確定]  。
 
      隨即開啟 [Visual Studio Tools for Office 專案精靈]  。
 
@@ -182,7 +182,7 @@ ms.locfileid: "97527303"
 
 3. 在 [擷取介面]  對話方塊的 [選取 Public 成員以形成介面]  方塊中，按一下 `CreateVstoNamedRange` 方法的項目。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會產生名稱為 `ISheet1`的新介面，而且會修改 `Sheet1` 類別的定義，以便實作 `ISheet1` 介面。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 也會在 [程式碼編輯器] 中開啟 **ISheet1.cs** 檔案。
 
@@ -241,7 +241,7 @@ ms.locfileid: "97527303"
 
 7. 結束 Excel 但不儲存變更。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  您可以在這些主題中，進一步了解如何從 VBA 呼叫 Office 方案中的程式碼：
 
 - 從 VBA 呼叫 Visual Basic 自訂之主項目中的程式碼。 此處理序與 Visual C# 處理序不同。 如需詳細資訊，請參閱 [逐步解說：從 Visual Basic 專案中的 VBA 呼叫程式碼](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)。

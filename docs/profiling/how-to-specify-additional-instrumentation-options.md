@@ -11,16 +11,16 @@ helpviewer_keywords:
 - performance sessions, options
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aaa6a222ca320ff9e8e3d117c2218e170d67d683
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 5652088b3b90c7dd9df067c81d8eb38fe348ec19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721849"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906871"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>如何：指定其他的檢測選項
 
@@ -39,7 +39,7 @@ ms.locfileid: "98721849"
 
      例如，使用 /CONTROL:THREAD 以指定程式碼剖析層級。 如需選項的完整清單，請參閱 [VSInstr](../profiling/vsinstr.md)。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
 ## <a name="see-also"></a>另請參閱
 

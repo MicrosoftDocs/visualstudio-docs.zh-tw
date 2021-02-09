@@ -19,15 +19,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bcb13ec0e26b1668a397d56982d049bf9ebcceb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527381"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906544"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>逐步解說：在 Visual Basic 專案中呼叫 VBA 的程式碼
   本逐步解說示範如何從文件中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Office Word 文件層級自訂中的方法。 這個程序和三個基本步驟相關：將方法加入 `ThisDocument` 主項目類別、將方法公開至 VBA 程式碼，然後從文件中的 VBA 程式碼呼叫此方法。
@@ -108,7 +108,7 @@ ms.locfileid: "97527381"
 
 6. 在 [名稱]  方塊中，輸入 **CallingCodeFromVBA**。
 
-7. 按一下 [確定]。
+7. 按一下 [確定]  。
 
      隨即開啟 [Visual Studio Tools for Office 專案精靈]  。
 
@@ -211,7 +211,7 @@ ms.locfileid: "97527381"
 
 7. 結束 Word 但不儲存變更。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  您可以在這些主題中，進一步了解如何從 VBA 呼叫 Office 方案中的程式碼：
 
 - 從 VBA 呼叫在 Visual C# 自訂中的程式碼。 此處理序與 Visual Basic 處理序不同。 如需詳細資訊，請參閱 [逐步解說：從 Visual C&#35; 專案中的 VBA 呼叫程式碼](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)。

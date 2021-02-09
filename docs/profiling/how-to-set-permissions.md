@@ -11,16 +11,16 @@ helpviewer_keywords:
 - performance tools, setting profiling permissions
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ab51b317164b8f2e828e0327021fb595574583c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 550c8c3f7a436fa2321d42ced1744650d4de679f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906976"
 ---
 # <a name="how-to-set-permissions"></a>如何：設定權限
 
@@ -73,7 +73,7 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
 
 5. 在 [**許可權 \<user name>** ] 方塊中，選取 [**完全控制**] 的核取方塊。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
      如此便會將共用之資料夾樹狀目錄 (從步驟 5 中選取的資料夾開始) 的權限授與使用者。
 

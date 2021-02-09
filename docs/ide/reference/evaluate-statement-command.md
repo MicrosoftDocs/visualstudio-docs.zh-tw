@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 264629769bbb25af97404e7c97c2676c4951f8d3
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 4aec65a1460203d3c02ed75c40e82256151703ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907540"
 ---
 # <a name="evaluate-statement-command"></a>評估陳述式命令
 

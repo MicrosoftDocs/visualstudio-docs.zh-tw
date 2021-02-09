@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f168c4c88ba12ff1f1c9bd0543e9d2b74ae095c
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 1eb65e3cb8273f36cd9255bc0a3a2f8e91689f39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907368"
 ---
 # <a name="getting-started-with-performance-tools"></a>效能工具使用者入門
 
