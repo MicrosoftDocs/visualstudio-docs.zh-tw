@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c39fae399cd735d09218699f10c1eaead8e40ee
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 7f3d9a907d0857e918069fc4542d59d87242d609
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865835"
 ---
 # <a name="create-custom-data-visualizers"></a>建立自訂資料視覺化檢視
 

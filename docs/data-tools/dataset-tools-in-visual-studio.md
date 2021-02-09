@@ -46,15 +46,15 @@ helpviewer_keywords:
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0ccb15d65f021099bb48c26dbdb7c03122049a7
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4e711d60010117f3a5081470ab8e6e656a7e6e90
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436481"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866992"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 
@@ -97,6 +97,6 @@ Visual Studio 提供可簡化資料集使用的工具。 基本的端對端工�
 
 如需有關將資料集轉換成 XML 以及從 XML 轉換資料的詳細資訊，請參閱將 [xml 資料讀入資料集](../data-tools/read-xml-data-into-a-dataset.md) ，並 [將資料集儲存為 xml](../data-tools/save-a-dataset-as-xml.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

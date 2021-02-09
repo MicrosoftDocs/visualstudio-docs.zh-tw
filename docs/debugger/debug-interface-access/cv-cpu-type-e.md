@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: df470a7e-1d04-448e-b920-c731189514fa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b076caffe4bc92bb62b63aa9d5d5e3dc464786
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e0574814d15f981647283afa0d42320088652532
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865444"
 ---
 # <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 指定目標處理器。
@@ -103,6 +103,6 @@ typedef enum CV_CPU_TYPE_e {
 ## <a name="requirements"></a>規格需求
 標頭： cvconst。h
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

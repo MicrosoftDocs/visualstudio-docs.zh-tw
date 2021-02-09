@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f072fd3-0b99-405c-af99-fd44cd56fd73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c732e91649116529d30591ba9182d65d4007c211
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 872c55d47f72c85a943ca32a577d7bdd52a590c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865353"
 ---
 # <a name="functionargtype"></a>FunctionArgType
 函式的每個參數都是以 `SymTagFunctionArgType` 符號來識別。

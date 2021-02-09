@@ -34,15 +34,15 @@ helpviewer_keywords:
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 983ff598003a4f966b5173dc9ae78dd9aaa16580
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: fb5ace269d7770d0e7d360734268d3e7adfda319
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866121"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 
@@ -254,7 +254,7 @@ Windows Communication Foundation 中 (WCF) 服務的大部分方法，都可以�
 
 ## <a name="related-topics"></a>相關主題
 
-| 標題 | 說明 |
+| 標題 | 描述 |
 | - | - |
 | [逐步解說：在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | 提供在 Visual Studio 中建立和使用 WCF 服務的逐步示範。 |
 | [逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | 提供如何建立和使用 Visual Studio 中之 WCF Data Services 的逐步示範。 |

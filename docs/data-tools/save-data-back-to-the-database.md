@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: bdbfba867fd1fa898ff376d3d1e60f33f58c32a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866589"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 
@@ -43,7 +43,7 @@ ms.locfileid: "94436051"
 
 如果您很熟悉 Tableadapter，可以直接跳到下列其中一個主題：
 
-|主題|說明|
+|主題|描述|
 |-----------|-----------------|
 |[在資料庫中插入新的記錄](../data-tools/insert-new-records-into-a-database.md)|如何使用 Tableadapter 或命令物件執行更新和插入|
 |[使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)|如何使用 Tableadapter 執行更新|
@@ -127,7 +127,7 @@ ms.locfileid: "94436051"
 
 下表詳細說明列舉的可能值 <xref:System.Data.DataRowState> ：
 
-|DataRowState 值|說明|
+|DataRowState 值|Description|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|資料列已加入做為的專案 <xref:System.Data.DataRowCollection> 。  (此狀態的資料列沒有對應的原始版本，因為在呼叫最後一個方法時，它不存在 <xref:System.Data.DataRow.AcceptChanges%2A>) 。|
 |<xref:System.Data.DataRowState.Deleted>|使用物件的來刪除資料列 <xref:System.Data.DataRow.Delete%2A> <xref:System.Data.DataRow> 。|
@@ -141,7 +141,7 @@ ms.locfileid: "94436051"
 
 下表詳細說明列舉的可能值 <xref:System.Data.DataRowVersion> ：
 
-|DataRowVersion 值|說明|
+|DataRowVersion 值|Description|
 | - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|記錄的目前版本包含自上次呼叫後對記錄執行的所有修改 <xref:System.Data.DataRow.AcceptChanges%2A> 。 如果資料列已刪除，則沒有目前的版本。|
 |<xref:System.Data.DataRowVersion.Default>|記錄的預設值，如資料集架構或資料來源所定義。|
@@ -274,7 +274,7 @@ ms.locfileid: "94436051"
 > [!NOTE]
 > 您也可以 `Parameters` 在程式碼中自行設定集合中的值，這通常會在資料配接器的事件的事件處理常式中進行 <xref:System.Data.DataTable.RowChanging> 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)
 - [建立和設定 TableAdapter](create-and-configure-tableadapters.md)

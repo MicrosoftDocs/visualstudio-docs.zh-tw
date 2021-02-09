@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: cc34ee96-3d91-41bd-a019-aa3759139e7e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c9225281952700b118f13b20a11f7619307b8e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 49739a0c07426329dc20f7fd459febcc70866ec9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866056"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>配置攔截和 C 執行階段記憶體配置
 配置攔截函式的一個非常重要的限制是它們必須明確地忽略 `_CRT_BLOCK` 區塊。 這些區塊是由 C 執行時間程式庫函式在內部進行的記憶體配置，如果它們對任何配置內部儲存體的 C 執行時間程式庫函式進行呼叫。 您可以 `_CRT_BLOCK` 在配置攔截函式的開頭包含下列程式碼，以忽略區塊：
@@ -41,5 +41,5 @@ if ( nBlockUse == _CRT_BLOCK )
 
 如果檢查執行階段程式庫原始程式檔，您會看到預設的 **CrtDefaultAllocHook** 配置攔截函式 (只簡單傳回 **TRUE**) 位於本身不同的 DBGHOOK.C 檔案內。 如果您要針對在應用程式 **main** 函式前執行之執行階段起始程式碼的配置進行呼叫配置攔截，則您可以使用自己的攔截而不使用 [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook) 來取代這個預設函式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [調試攔截函式寫入](../debugger/debug-hook-function-writing.md)

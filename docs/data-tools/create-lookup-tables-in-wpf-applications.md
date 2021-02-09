@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 293f04ca111fe88c905a288885f7e4763ec1cdc3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cc390642155d33f75bf5c4a69236945658845639
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867096"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 應用程式中建立查閱資料表
 
@@ -55,7 +55,7 @@ ms.locfileid: "94436689"
     > [!NOTE]
     > 相關的子資料工作表或物件是在父資料表或物件下顯示為可展開子節點的節點。
 
-5. 按一下子節點的下拉式功能表，然後選取 [ **詳細資料** ]。
+5. 按一下子節點的下拉式功能表，然後選取 [ **詳細資料**]。
 
 6. 展開子節點。
 
@@ -90,7 +90,7 @@ ms.locfileid: "94436689"
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio 將這個屬性系結至您拖曳至設計工具之子資料的資料行或屬性。 這是父資料的外鍵。|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio 將這個屬性設定為子資料之資料行或屬性的路徑，而該資料行是父資料的外鍵。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [在 WPF 應用程式中顯示相關資料](../data-tools/display-related-data-in-wpf-applications.md)

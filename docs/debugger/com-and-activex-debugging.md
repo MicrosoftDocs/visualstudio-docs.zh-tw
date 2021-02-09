@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1df80e8486cb8f8667494137392fadb0a9754e8b
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: f86f072a32bf9d7ff4af3c77564236fe2997f70a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728998"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865861"
 ---
 # <a name="com-and-activex-debugging"></a>偵錯 COM 和 ActiveX
 本章節提供有關偵錯 COM 應用程式和 ActiveX 控制項的秘訣。
@@ -43,7 +43,7 @@ ms.locfileid: "97728998"
 ## <a name="related-sections"></a>相關章節
  [開始查看偵錯工具](../debugger/debugger-feature-tour.md) 提供偵錯工具檔較大區段的連結。 資訊包括：偵錯工具的新功能、設定和準備、中斷點、處理例外狀況、編輯後繼續、偵測 managed 程式碼、偵錯工具 c + + 專案、偵測 COM 和 ActiveX、偵錯工具 Dll、偵錯工具，以及使用者介面參考。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [COM 簡介](/cpp/atl/introduction-to-com)

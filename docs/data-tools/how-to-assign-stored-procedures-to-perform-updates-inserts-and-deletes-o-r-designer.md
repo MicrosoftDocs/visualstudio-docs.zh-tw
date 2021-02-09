@@ -7,19 +7,19 @@ ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5915de290a84429878eccb4eae17821f8ac27f70
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f0b7ab161a252e1d3a89ef856325963bddffdc56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436409"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866849"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)
 
-預存程序可以新增至 **O/R 設計工具** ，而且可以作為一般 <xref:System.Data.Linq.DataContext> 方法來執行。 它們也可以用來覆寫預設的 LINQ to SQL 執行時間行為，此行為會在將變更從實體類別儲存至資料庫時執行插入、更新和刪除 (例如，在呼叫 <xref:System.Data.Linq.DataContext.SubmitChanges%2A>) 的方法時。
+預存程序可以新增至 **O/R 設計工具**，而且可以作為一般 <xref:System.Data.Linq.DataContext> 方法來執行。 它們也可以用來覆寫預設的 LINQ to SQL 執行時間行為，此行為會在將變更從實體類別儲存至資料庫時執行插入、更新和刪除 (例如，在呼叫 <xref:System.Data.Linq.DataContext.SubmitChanges%2A>) 的方法時。
 
 > [!NOTE]
 > 如果預存程序傳回的值需要送回給用戶端 (例如，在預存程序中計算的值)，請在預存程序中建立輸出參數。 如果您無法使用輸出參數，請撰寫部分方法實作 (Implementation)，而不要依賴 O/R 設計工具產生的覆寫作業。 與資料庫產生的值對應的成員，必須在 INSERT 或 UPDATE 作業成功完成之後設定為適當值。 如需詳細資訊，請參閱 [開發人員覆寫預設行為的責任](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior)。
@@ -39,13 +39,13 @@ ms.locfileid: "94436409"
 
 2. 展開 [伺服器總管] 或 [資料庫總管] 中的 [預存程序]，尋找您希望當成實體類別之 Insert、Update 和 (或) Delete 命令使用的預存程序。
 
-3. 將預存程序拖曳至 **O/R 設計工具** 。
+3. 將預存程序拖曳至 **O/R 設計工具**。
 
      預存程序會加入至方法窗格做為 <xref:System.Data.Linq.DataContext> 方法。 如需詳細資訊，請參閱 [DataCoNtext 方法 (O/R 設計工具) ](../data-tools/datacontext-methods-o-r-designer.md)。
 
 4. 選取想要使用預存程序執行更新的實體類別。
 
-5. 在 [屬性] 視窗中，選取要覆寫的命令 ( **Insert** 、 **Update** 或 **Delete** )。
+5. 在 [屬性] 視窗中，選取要覆寫的命令 (**Insert**、**Update** 或 **Delete**)。
 
 6. 按一下 [使用執行階段] 字組旁邊的省略符號 (...)，以開啟 [設定行為] 對話方塊。
 
@@ -65,7 +65,7 @@ ms.locfileid: "94436409"
 
 若要還原成使用預設執行階段邏輯來進行更新，請在 [屬性] 視窗中按一下 [Insert]、[Update] 或 [Delete] 命令旁邊的省略符號，然後選取 [設定行為] 對話方塊中的 [使用執行階段]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext 方法](../data-tools/datacontext-methods-o-r-designer.md)

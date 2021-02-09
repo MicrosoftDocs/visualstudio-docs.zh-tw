@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8037b8d19bad19485e9ed8f7926e6a3e45b8fef1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866901"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 TableAdapter 填入資料集
 
@@ -37,7 +37,7 @@ TableAdapter 元件會根據您指定的一或多個查詢或預存程式，使�
 
 如需有關 TableAdapter 作業的詳細資訊，您可以直接跳到下列其中一個主題：
 
-|主題|說明|
+|主題|描述|
 |-----------|-----------------|
 |[建立和設定 TableAdapter](../data-tools/create-and-configure-tableadapters.md)|如何使用設計工具來建立和設定 Tableadapter|
 |[建立參數型 TableAdapter 查詢](../data-tools/create-parameterized-tableadapter-queries.md)|如何讓使用者提供引數給 TableAdapter 程式或查詢|
@@ -133,12 +133,12 @@ TableAdapterManager 類別不是 .NET 類型。 因此，您無法在檔中查�
 |`UpdateAll` 方法|儲存所有資料表中的所有資料。|
 |`BackUpDataSetBeforeUpdate` 屬性|判斷是否要在執行方法之前建立資料集的備份副本 `TableAdapterManager.UpdateAll` 。布林。|
 |*tableName* `TableAdapter` 財產|代表 TableAdapter。 產生的 TableAdapterManager 包含其所管理之每個的屬性 `TableAdapter` 。 例如，具有 Customers 和 Orders 資料表的資料集會以包含和屬性的 TableAdapterManager `CustomersTableAdapter` 產生 `OrdersTableAdapter` 。|
-|`UpdateOrder` 屬性|控制個別 insert、update 和 delete 命令的順序。 將此值設定為列舉中的其中一個值 `TableAdapterManager.UpdateOrderOption` 。<br /><br /> 依預設， `UpdateOrder` 會設為 **InsertUpdateDelete** 。 這表示會針對資料集中的所有資料表執行插入、更新和刪除作業。|
+|`UpdateOrder` 屬性|控制個別 insert、update 和 delete 命令的順序。 將此值設定為列舉中的其中一個值 `TableAdapterManager.UpdateOrderOption` 。<br /><br /> 依預設， `UpdateOrder` 會設為 **InsertUpdateDelete**。 這表示會針對資料集中的所有資料表執行插入、更新和刪除作業。|
 
 ## <a name="security"></a>安全性
 
 當您使用 CommandType 屬性設定為的資料命令時 <xref:System.Data.CommandType.Text> ，請仔細檢查從用戶端傳送的資訊，再將其傳遞至您的資料庫。 惡意使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取或破壞資料庫。 將使用者輸入傳送至資料庫之前，請務必確認該資訊是否有效。 最佳做法是盡可能隨時使用參數化查詢或預存程式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [資料集工具](../data-tools/dataset-tools-in-visual-studio.md)

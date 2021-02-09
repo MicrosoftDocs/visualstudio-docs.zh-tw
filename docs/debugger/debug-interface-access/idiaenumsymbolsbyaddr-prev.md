@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: da3b3dca-68cb-4cb0-b25c-e28a1ffe49d3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe7ced486524c7409532e140f48f841b5e55078
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 352e9b1892285d8cc33c86c595462da84273eac1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865129"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 依位址來抓取之前的符號。
@@ -25,7 +25,7 @@ ms.locfileid: "85467642"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Prev ( 
+HRESULT Prev ( 
    ULONG        celt,
    IDiaSymbol** rgelt,
    ULONG*       pceltFetched

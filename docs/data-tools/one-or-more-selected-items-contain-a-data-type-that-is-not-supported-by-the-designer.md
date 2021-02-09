@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 71dcd4f9-2946-42c5-9ce4-99c819ea2785
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4f678ad9bc6bcfc36baabad8a8d4d64d7bf2f89e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c50d47363217a87147275a406d5370cc8736c10b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436129"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866641"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>一個或多個選取的項目包含設計工具不支援的資料類型
 
@@ -27,6 +27,6 @@ ms.locfileid: "94436129"
 
 2. 從 **伺服器總管** 或 **資料庫總管** 將視圖拖曳至設計工具。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: cac9f27263fc7d316d308f1f8d906751f419f104
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 1aba3b1f00ce65b90f61077673a0b88a3bab0f5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866134"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>逐步解說：自訂實體類別的插入、更新和刪除行為
 
@@ -87,7 +87,7 @@ ms.locfileid: "94997923"
 
 5. 按一下 [LINQ to SQL 類別] 範本，並在 [名稱] 方塊中鍵入 **Northwind.dbml**。
 
-6. 按一下 [新增] 。
+6. 按一下 **[新增]** 。
 
      將 (**Northwind**) 的空白 LINQ to SQL 類別檔案新增至專案，並開啟 **O/R 設計** 工具。
 
@@ -231,7 +231,7 @@ ms.locfileid: "94997923"
 
 18. 將 [Original_CustomerID] 方法引數對應至 [CustomerID (Original)] 類別屬性。
 
-19. 按一下 [確定]。
+19. 按一下 [確定]  。
 
 > [!NOTE]
 > 雖然這不是此特定逐步解說的問題，但值得注意的是，LINQ to SQL 會自動處理身分識別 (自動遞增) 、rowguidcol (資料庫產生的 GUID) ，以及在插入和更新期間的時間戳記資料行的資料庫產生的值。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動將設定為，並將設定為 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> `true` <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 下列其中一項： [自動同步. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)、 [自動同步](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)或 [自動同步. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。

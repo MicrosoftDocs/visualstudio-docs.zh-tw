@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 9375ca35-cb91-45f5-8903-7344ee4528e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d813955c8b61965b41cd252aaa35cb7ca323234
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: f0cb578e55ed5559c9ac5e88aca4db9abf31a2e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728885"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865579"
 ---
 # <a name="baseclass"></a>BaseClass
 使用者定義型別 (UDT) 符號的每個基類都是由具有標記的子系所識別 `SymTagBaseClass` 。 [IDiaSymbol：： get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)屬性包含基礎 udt 的符號，而基礎 udt 的所有屬性都可作為這個 BaseClass 符號的一部分。
@@ -63,6 +63,6 @@ ms.locfileid: "97728885"
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|虛擬資料表圖形符號的識別碼。|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果基底類別標示為 volatile。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [UDT](../../debugger/debug-interface-access/udt.md)

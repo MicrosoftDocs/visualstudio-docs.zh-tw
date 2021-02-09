@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8ccf228b147301eb9fccf41da98f8cc5204971a9
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4342af681f8e2cc38855bec6041e8b4cd83dcf5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436064"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866615"
 ---
 # <a name="query-datasets"></a>查詢資料集
 若要搜尋資料集中的特定記錄，請 `FindBy` 在 DataTable 上使用方法、撰寫您自己的 foreach 語句，以在資料表的資料列集合上進行迴圈，或使用 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
@@ -96,6 +96,6 @@ ms.locfileid: "94436064"
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)

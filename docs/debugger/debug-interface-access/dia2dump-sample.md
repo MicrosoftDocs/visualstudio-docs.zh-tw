@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 17fe6d65e70399ccac5b9ef4e2f1234ef4e3698e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fee6f04b3ee0aefe0aac99f8079e2f31733ce08b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865416"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 範例
 
@@ -40,15 +40,15 @@ Dia2dump 範例隨 Visual Studio 一起安裝，並包含方案和來源檔案�
 
 1. 在 Visual Studio 中開啟 DIA2Dump .sln 檔案。 如果您未將解決方案複製到另一個目錄，系統可能會提示您以較高的許可權重新開機 Visual Studio。
 
-1. 在 **方案總管**中，選取 [Dia2Dump] 專案 (不是方案) 。
+1. 在 **方案總管** 中，選取 [Dia2Dump] 專案 (不是方案) 。
 
-1. 開啟專案的 [屬性頁] **** 對話方塊。 如需詳細資料，請參閱[使用專案屬性](/cpp/build/working-with-project-properties)。
+1. 開啟專案的 [屬性頁]  對話方塊。 如需詳細資料，請參閱[使用專案屬性](/cpp/build/working-with-project-properties)。
 
-1. 開啟 [設定**屬性**  >  **C/c + +**  >  **一般**] 屬性頁。
+1. 開啟 [設定 **屬性**  >  **C/c + +**  >  **一般**] 屬性頁。
 
 1. 在 [ **其他 Include 目錄** ] 屬性中，選擇下拉式清單控制項，然後選擇 [ **編輯**]。
 
-1. 在 [ **其他 Include 目錄** ] 對話方塊的 [編輯] 欄位中，輸入 `$(VSInstallDir)DIA SDK\include` 目錄。 新增此目錄，以保證編譯器可以找到 dia2 .h 檔案。 選取 [確定]**** 儲存您的變更。
+1. 在 [ **其他 Include 目錄** ] 對話方塊的 [編輯] 欄位中，輸入 `$(VSInstallDir)DIA SDK\include` 目錄。 新增此目錄，以保證編譯器可以找到 dia2 .h 檔案。 選取 [確定] 儲存您的變更。
 
 1. 選擇 **[確定]** ，將您的變更儲存至專案屬性。
 
@@ -64,7 +64,7 @@ Dia2dump 範例隨 Visual Studio 一起安裝，並包含方案和來源檔案�
 
 ## <a name="run-the-dia2dump-sample"></a>執行 Dia2Dump 範例
 
-Dia2Dump.exe 依賴 msdia*版本*.dll COM 伺服器來提供其服務。 從 Visual Studio 2015 開始，msdia140.dll 版本。 如果 msdia*版本*.dll COM 伺服器尚未初始化，您必須先註冊它，dia2dump.exe 才能運作。 DIA SDK 目錄具有包含 DLL x86 版本的 bin 子目錄。 X64 架構機器的版本是在 bin\amd64 中，而 ARM 的版本位於 bin\arm。 若要註冊 dll，請開啟提升許可權的開發人員命令提示字元視窗，然後變更為包含您電腦架構版本的目錄。 輸入用 `regsvr32 msdia140.dll` 來註冊 COM 伺服器的命令。
+Dia2Dump.exe 依賴 msdia *版本*.dll COM 伺服器來提供其服務。 從 Visual Studio 2015 開始，msdia140.dll 版本。 如果 msdia *版本*.dll COM 伺服器尚未初始化，您必須先註冊它，dia2dump.exe 才能運作。 DIA SDK 目錄具有包含 DLL x86 版本的 bin 子目錄。 X64 架構機器的版本是在 bin\amd64 中，而 ARM 的版本位於 bin\arm。 若要註冊 dll，請開啟提升許可權的開發人員命令提示字元視窗，然後變更為包含您電腦架構版本的目錄。 輸入用 `regsvr32 msdia140.dll` 來註冊 COM 伺服器的命令。
 
 ### <a name="to-run-the-sample"></a>執行範例
 

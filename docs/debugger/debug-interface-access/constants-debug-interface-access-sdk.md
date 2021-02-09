@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: aca4ec77-bc08-4cdd-a6ce-8d4a28ea5ea3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 806eb9207fa60b7147d1e0d7df75871b23f8850d
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 89af4172a09631cfc63065cd5c49144c42d41a6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728751"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865486"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>常數 (偵錯介面存取 SDK)
 這些字串常數可以用來識別程式的各個區段， (PDB 透過 DIA SDK) 檔。
@@ -57,7 +57,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ## <a name="requirements"></a>規格需求
 標頭： dia2。h
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [參考](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

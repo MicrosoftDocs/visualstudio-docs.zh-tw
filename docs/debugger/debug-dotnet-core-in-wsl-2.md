@@ -8,16 +8,16 @@ helpviewer_keywords:
 - debugging, wsl2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 736987a02ca7e2f59ce689b8402d9a6fcd7407e9
-ms.sourcegitcommit: 586369f5aa61d4a0330802f718f0ceaa55d7e9c7
+ms.openlocfilehash: 6ae43b79b9db766d752a25fb538b7f208e6f5e13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99227643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865614"
 ---
 # <a name="debug-net-core-apps-in-wsl-2-with-visual-studio"></a>使用 Visual Studio 在 WSL 2 中調試 .NET Core 應用程式
 

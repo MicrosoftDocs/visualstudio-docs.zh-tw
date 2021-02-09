@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5147a170-41ce-4727-8ace-c318e8d11647
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e410b453b9fac97a96e31c4d62fb9d7cccc41d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b895555ce1334fa306b64fe213787bdf5dc827e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865381"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>friend (偵錯介面存取 SDK)
 Friend 類別和 friend 函式是以 `SymTagFriend` 符號識別。 它們是父使用者自訂類型的子系 (Udt) ，而且具有 [IDiaSymbol：： get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) 屬性。

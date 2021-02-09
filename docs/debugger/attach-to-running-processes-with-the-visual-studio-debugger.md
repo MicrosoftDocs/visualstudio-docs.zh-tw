@@ -26,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3250eff2b5691ab344e2fedde80054415ec8ffcd
-ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
+ms.openlocfilehash: 3a76aff1c17988f61b5f89e2e8d20ef7129efcae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99627963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866004"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具附加至執行中處理序
 

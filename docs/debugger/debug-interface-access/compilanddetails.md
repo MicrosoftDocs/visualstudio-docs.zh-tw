@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ddc7d794-c622-4c63-b2a6-72f8b2d0022a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 04687eb58ecee2211f098c0f432afc28e0465305
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e217294eeec332a7b629ae39715b6973f7ebb2a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728778"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865539"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 編譯單位資訊會在具有標記的符號之間分割 `SymTagCompiland` (低詳細資料) 和 `SymTagCompilandDetails` 標記 (高詳細資料) 。 `SymTagCompilandDetails` 提供有關符號無法使用之編譯單位的豐富資訊 `SymTagCompiland` 。
@@ -55,6 +55,6 @@ ms.locfileid: "97728778"
 ## <a name="remarks"></a>備註
  編譯器通常會以兩種形式提供，稱為雙 pass 編譯器;在某些編譯器版本中，每個階段都是由個別的程式來處理。 這些分別稱為前端和後端編譯器，因此是後端和前端版本號碼的符號屬性。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [編譯模組](../../debugger/debug-interface-access/compiland.md)
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 0ccd6990-4654-44cd-a6f3-bdd82fe90f6c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 36f97702f41f72efab970617da2a40a70f339e2a
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c33b6852935bbe02c75b0814fd2f77095d283c15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865572"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>符號類型的類別階層架構
 下表描述類別階層架構中的符號類型。
 
 ## <a name="symbol-types"></a>符號類型
 
-|符號類型|描述|
+|符號類型|Description|
 |-----------------|-----------------|
 |[UDT](../../debugger/debug-interface-access/udt.md)|用來表示每個類別、結構和等位的符號。|
 |[Enum (偵錯介面存取 SDK)](../../debugger/debug-interface-access/enum-debug-interface-access-sdk.md)|列舉類型的符號。|
@@ -47,7 +47,7 @@ ms.locfileid: "97728792"
 > [!NOTE]
 > 每個符號都可以有屬性（property），其中包含符號的相關資訊，以及其他符號的參考。 這些屬性會列在個別的符號主題中。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [符號和符號標記](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 37d3dcdf-e4fa-4354-b5e1-8843566b52ac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 92062883ea97fdc6251ffa600e31230fb448f73b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 479534179d1dc54c84ebb2c53647272112dea77b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865101"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 藉由定址資料來源中包含的各種符號來列舉。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDiaEnumSymbolsByAddr : IUnknown
+IDiaEnumSymbolsByAddr : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
@@ -93,7 +93,7 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： Dia2。h
 
 程式庫： diaguids .lib

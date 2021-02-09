@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1cbc6ca5-87d0-4c30-a39e-0a9dc62ce1a9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9ea7a24708595eff7b4299964dd2a159c1c5836
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6847f75a3e6a2869e70665fbcf55ee5a8ba2f863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865360"
 ---
 # <a name="funcdebugstart"></a>FuncDebugStart
 如果函式已定義開始進行偵錯工具的定義點，則該點會由具有標記的符號來識別 `SymTagFuncDebugStart` 。

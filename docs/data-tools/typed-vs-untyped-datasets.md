@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b2dc8d78f42d210741c904e3e475be33f2443e74
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: e4853dfbffdf07d3b605b13c5fce749a30285c27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866329"
 ---
 # <a name="typed-vs-untyped-datasets"></a>具類型資料集與不具類型資料集的比較
 具型別資料集是第一個衍生自基類的資料集， <xref:System.Data.DataSet> 然後使用儲存在 .xsd 檔中 **DataSet 設計工具** 的資訊來產生新的強型別資料集類別。 架構 (資料表、資料行等等) 的資訊會產生並編譯成這個新的資料集類別，做為一組第一級的物件和屬性。 由於具型別資料集繼承自基類，因此具型別 <xref:System.Data.DataSet> 類別會假設類別的所有功能， <xref:System.Data.DataSet> 而且可以與採用類別實例作為參數的方法搭配使用 <xref:System.Data.DataSet> 。

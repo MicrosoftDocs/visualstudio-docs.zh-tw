@@ -8,16 +8,16 @@ dev_langs:
 - CPP
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 36b1fe83cb20aee6d6fc95984a254c9ac9d212bd
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 4cf316e0d892e8c6ba229a7a46ee0439797d032f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998092"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866342"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>適用於 C++ 的 Visual Studio 資料工具
 
@@ -41,9 +41,9 @@ ms.locfileid: "94998092"
 
    ![SSMS 附加資料庫](../data-tools/media/raddata-ssms-attach-database.png)
 
-4. 下載 ODBC Windows SDK 範例，並將它解壓縮至新的位置。 這個範例會顯示用來連接到資料庫併發出查詢和命令的基本 ODBC 命令。 您可以在 [Microsoft 開放式資料庫連接 (ODBC) ](/sql/odbc/microsoft-open-database-connectivity-odbc)中深入瞭解這些功能。 當您第一次載入方案時 (它會在 c + + 資料夾) 中，Visual Studio 將會提供將解決方案升級為目前版本的 Visual Studio。 按一下 [是] 。
+4. 下載 ODBC Windows SDK 範例，並將它解壓縮至新的位置。 這個範例會顯示用來連接到資料庫併發出查詢和命令的基本 ODBC 命令。 您可以在 [Microsoft 開放式資料庫連接 (ODBC) ](/sql/odbc/microsoft-open-database-connectivity-odbc)中深入瞭解這些功能。 當您第一次載入方案時 (它會在 c + + 資料夾) 中，Visual Studio 將會提供將解決方案升級為目前版本的 Visual Studio。 按一下 [是]  。
 
-5. 若要使用 native client，您需要它的 *頭* 檔和 *lib* 檔。 這些檔案包含在 SQL 中所定義之 ODBC 函數以外 SQL Server 的函數和定義。 在 [**專案** 屬性] 的 [  >  **Properties**  >  **VC + + 目錄**] 中，新增下列 include 目錄：
+5. 若要使用 native client，您需要它的 *頭* 檔和 *lib* 檔。 這些檔案包含在 SQL 中所定義之 ODBC 函數以外 SQL Server 的函數和定義。 在 [**專案** 屬性] 的 [  >    >  **VC + + 目錄**] 中，新增下列 include 目錄：
 
    **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
 

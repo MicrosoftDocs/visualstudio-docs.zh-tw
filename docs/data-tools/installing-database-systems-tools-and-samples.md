@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 598d48d560db58a40b04e9d7684e98df22291a6a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 41cf31c6cae310eb151969df0776788d6ea5b1e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434847"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866693"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>適用於 Visual Studio 相容的資料庫系統
 
@@ -41,21 +41,21 @@ SQL Server 是 Microsoft 旗艦版資料庫供應專案。 SQL Server 2016 提�
 
 ## <a name="mysql"></a>MySQL
 
-MySQL 是廣泛用於企業和網站的熱門開放原始碼資料庫系統。 適用于 MySQL 的下載、適用于 Visual Studio 的 MySQL，以及相關產品位於 [Windows 上的 mysql](https://www.mysql.com/why-mysql/windows/)。 協力廠商提供各種 Visual Studio 擴充功能和適用于 MySQL 的獨立管理應用程式。 您可以流覽 nuget 封裝管理員 ( **工具**  >  **nuget 封裝管理員**  >  **管理解決方案) 的 nuget 套件** 中的供應專案。
+MySQL 是廣泛用於企業和網站的熱門開放原始碼資料庫系統。 適用于 MySQL 的下載、適用于 Visual Studio 的 MySQL，以及相關產品位於 [Windows 上的 mysql](https://www.mysql.com/why-mysql/windows/)。 協力廠商提供各種 Visual Studio 擴充功能和適用于 MySQL 的獨立管理應用程式。 您可以流覽 nuget 封裝管理員 (**工具**  >  **nuget 封裝管理員**  >  **管理解決方案) 的 nuget 套件** 中的供應專案。
 
 ## <a name="postgresql"></a>PostgreSQL
 
-于 postgresql 是一個免費的開放原始碼物件關係資料庫系統。 若要將它安裝在 Windows 上，您可以從 [于 postgresql 下載頁面](https://www.postgresql.org/download/windows/)下載。 您也可以從來源程式碼建立于 postgresql。 于 postgresql 核心系統包含 C 語言介面。 許多協力廠商提供 NuGet 套件，可讓您從 .NET 應用程式使用於 postgresql。 您可以流覽 nuget 封裝管理員 ( **工具**  >  **nuget 封裝管理員**  >  **管理解決方案) 的 nuget 套件** 中的供應專案。 或許最受歡迎的封裝是由 [npgsql.org](http://www.npgsql.org)所提供。
+于 postgresql 是一個免費的開放原始碼物件關係資料庫系統。 若要將它安裝在 Windows 上，您可以從 [于 postgresql 下載頁面](https://www.postgresql.org/download/windows/)下載。 您也可以從來源程式碼建立于 postgresql。 于 postgresql 核心系統包含 C 語言介面。 許多協力廠商提供 NuGet 套件，可讓您從 .NET 應用程式使用於 postgresql。 您可以流覽 nuget 封裝管理員 (**工具**  >  **nuget 封裝管理員**  >  **管理解決方案) 的 nuget 套件** 中的供應專案。 或許最受歡迎的封裝是由 [npgsql.org](http://www.npgsql.org)所提供。
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite 是在應用程式本身的進程中執行的內嵌 SQL database 引擎。 您可以從 [SQLite 下載頁面](https://www.sqlite.org/download.html)下載它。 您也可以使用 SQLite 的許多協力廠商 NuGet 套件。 您可以流覽 nuget 封裝管理員 ( **工具**  >  **nuget 封裝管理員**  >  **管理解決方案) 的 nuget 套件** 中的供應專案。
+SQLite 是在應用程式本身的進程中執行的內嵌 SQL database 引擎。 您可以從 [SQLite 下載頁面](https://www.sqlite.org/download.html)下載它。 您也可以使用 SQLite 的許多協力廠商 NuGet 套件。 您可以流覽 nuget 封裝管理員 (**工具**  >  **nuget 封裝管理員**  >  **管理解決方案) 的 nuget 套件** 中的供應專案。
 
 ## <a name="firebird"></a>Firebird
 
 Firebird 是開放原始碼 SQL 資料庫系統。 您可以從 [Firebird 下載頁面](http://firebirdsql.org/en/downloads/)下載它。 ADO.NET 資料提供者可透過 NuGet 封裝管理員取得。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)
 - [如何判斷 SQL Server 與其元件的版本 (Version) 與版本 (Edition)](https://support.microsoft.com/help/321185/how-to-determine-the-version-edition-and-update-level-of-sql-server-an)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 909291e3f9762593a58df93a9ccc7fe2e82b7952
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998066"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866355"
 ---
 # <a name="troubleshoot-service-references"></a>針對服務參考進行疑難排解
 
@@ -84,7 +84,7 @@ ms.locfileid: "94998066"
 
 4. 載入 WCF 服務專案。
 
-5. 在 [ **Configuration Manager** ] 對話方塊中，將 [使用中的 **方案** 設定] 設定為 [ **Debug**]。 如需詳細資訊，請參閱 [如何：建立和編輯](../ide/how-to-create-and-edit-configurations.md)設定。
+5. 在 [ **設定管理員** ] 對話方塊中，將 [使用中的 **方案** 設定] 設定為 [ **Debug**]。 如需詳細資訊，請參閱 [如何：建立和編輯](../ide/how-to-create-and-edit-configurations.md)設定。
 
 6. 在 **方案總管** 中，選取 [WCF 服務] 專案。
 

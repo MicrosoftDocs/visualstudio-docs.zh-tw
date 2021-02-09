@@ -1,5 +1,5 @@
 ---
-title: 消費者入門 (Debug 介面存取 SDK) |Microsoft Docs
+title: 開始使用 (Debug 介面存取 SDK) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cb3d040a-2846-40d7-bdbc-8a5beb5dd2f6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a93225b4bd4180a9ce3389911c2c15d0dbef52ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a60e7b685fe277cfe44e5dd3ab1c4825dba67af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468599"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865311"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>使用者入門 (偵錯介面存取 SDK)
  (DIA) SDK 的 Debug 介面存取會提供您教學檔，以及說明如何使用 DIA API 的範例。 使用 DIA SDK 中的介面和方法來開發自訂應用程式，以開啟 .pdb 和 dbg 檔案，並搜尋其內容中的符號、值、屬性、位址和其他偵錯工具資訊。 此 SDK 也提供與 c + + 應用程式中的符號相關聯之屬性的參考資料表。

@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d145ccd8764e488a5d1270985050b29bcd8987d
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: fe50082f8ff62c4a19b7725facc18f43d672e353
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865705"
 ---
 # <a name="crt-debug-library-use"></a>CRT 偵錯程式庫操作
 C 執行階段程式庫提供更多的偵錯支援。 若要使用其中一個 CRT debug 程式庫，您必須與 [/debug](/cpp/build/reference/debug-generate-debug-info) 連結，並使用 **/MDd**、 **/MTd** 或 **/LDd** 進行編譯。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cf08850b-8b75-4e8c-90bd-bd0214756f99
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 231c6b082f7a641ee78d10003d544c3fb9644c1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 950e6453a75878cd871532c2e5557e2e6314c932
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865290"
 ---
 # <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 抓取最後載入錯誤的檔案名。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f4582c69-bc3f-4a26-bcca-b641102b85fe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f81525147b30548184ae68c0ed3259d093a6685
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: daed3430c98ec68e9996aa7711a38f0357b4dec1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467670"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865136"
 ---
 # <a name="idiaenumsymbolsbyaddrclone"></a>IDiaEnumSymbolsByAddr::Clone
 建立物件的複本。
@@ -25,7 +25,7 @@ ms.locfileid: "85467670"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT Clone ( 
+HRESULT Clone ( 
    IDiaEnumSymbolsByAddr** ppenum
 );
 ```

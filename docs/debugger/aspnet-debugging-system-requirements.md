@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7810b9b2-debf-4271-8fc7-1df031123255
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2002d6ccbbe8f2cd3e186c49aca7a846568eedb2
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 8ab32e855ee93ceb328bc33340597ce65e3ee871
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866095"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 偵錯：系統需求
 本主題描述 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 偵錯情節的軟體和安全性需求：
@@ -53,7 +53,7 @@ ms.locfileid: "97729115"
 > [!CAUTION]
 > 在您將 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序變更為以不同帳戶執行之前，請考慮以該帳戶執行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序時，處理序遭到竊取的後果。 ASPNET 和 NETWORK SERVICE 使用者帳戶會以最低權限執行，因此可降低處理序遭竊取時可能造成的損害。 如果您必須將 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序變更為以具有較高權限的帳戶執行，可能造成的損害也會較大。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [ASP.NET 應用程式的偵錯工具](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [如何：在使用者帳戶下執行背景工作進程](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

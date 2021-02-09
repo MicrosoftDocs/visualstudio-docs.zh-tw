@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2aa79ca10729b9c36437fe30072328838de5dda4
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ef5745f974848da75b4dcc0c42b59b38aa61cd0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866108"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>使用概念模型 (WCF Data Services) 
 
@@ -27,7 +27,7 @@ ms.locfileid: "94997871"
 
 您可以在 WCF Data Services 應用程式中使用概念模型。 下列主題示範如何透過概念模型來查詢資料。
 
-| 主題 | 說明 |
+| 主題 | 描述 |
 | - | - |
 | [如何：執行資料服務查詢](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | 說明如何從 .NET 應用程式查詢資料服務。 |
 | [如何：投影查詢結果](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | 顯示如何透過資料服務查詢來減少傳回的資料量。 |
@@ -36,13 +36,13 @@ ms.locfileid: "94997871"
 
 下列主題將說明如何將驗證加入至 WCF Data Services 應用程式。
 
-|主題|說明|
+|主題|描述|
 |-----------|-----------------|
 |[如何：攔截資料服務訊息](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|顯示如何將驗證加入至資料服務作業。|
 
  下列主題示範如何在實體上執行作業，以建立、更新和刪除資料。
 
-|主題|說明|
+|主題|描述|
 |-----------|-----------------|
 |[如何：新增、修改和刪除實體](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|顯示如何建立、更新和刪除資料服務中的實體資料。|
 |[如何：定義實體關聯性](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|顯示如何在資料服務中建立或變更關聯性。|

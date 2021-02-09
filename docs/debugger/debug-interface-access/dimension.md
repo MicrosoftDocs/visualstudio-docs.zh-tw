@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94f791da-bfea-454f-8a14-da31e8e1596a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c36937e51eeef53a0a1fa5f24582221c5a209144
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f20217f1a83db71e5a63b2f592e2749dc07a2889
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865423"
 ---
 # <a name="dimension"></a>維度
 每個 FORTRAN 陣列都有一個由符號識別的維度 `SymTagDimension` 。

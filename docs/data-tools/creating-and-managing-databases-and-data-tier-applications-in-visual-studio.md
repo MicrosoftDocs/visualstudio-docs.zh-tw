@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57b889f025b06e127e8e4bb38be311f6bbe55952
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8ed1dc21d0029dc8939c540d33d0743c81db93fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436598"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867083"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>資料庫專案和資料層應用程式
 
@@ -33,6 +33,6 @@ ms.locfileid: "94436598"
 | **執行反復的資料庫開發：** 開發人員可以簽出項目的各個部分，並在隔離的開發環境中加以更新。 藉由使用這種類型的環境，您可以測試您的變更，而不會影響小組的其他成員。 變更完成之後，您可以將檔案簽回版本控制，讓其他小組成員可以取得您的變更，並將其建立並部署至測試伺服器。 | - [專案導向的離線資料庫開發 (SQL Server Data Tools) ](/sql/ssdt/project-oriented-offline-database-development)<br />- [Transact-sql 偵錯工具 (SQL Server Management Studio) ](/sql/ssms/scripting/transact-sql-debugger) |
 | **原型設計、驗證測試結果，以及修改資料庫腳本和物件：** 您可以使用 Transact-sql 編輯器來執行這些一般工作中的任何一項。 | - [查詢和文字編輯器 (SQL Server Management Studio) ](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

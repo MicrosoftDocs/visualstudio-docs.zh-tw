@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: be73b8392f6b92bf48bd9150197be9bf8fe380dd
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 959d015bd23c91ec2ba6215c7a5b42d13b37ee29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728946"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865822"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆以進行遠端偵錯
 
@@ -56,7 +56,7 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
 
 ::: moniker range="vs-2017"
 
-|**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|
+|**連接埠**|**傳入/傳出**|**通訊協定**|**說明**|
 |-|-|-|-|
 |4022|正在傳入|TCP|針對 VS 2017。 每個 Visual Studio 版本的埠號碼會遞增2。 如需詳細資訊，請參閱 [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)。|
 |4023|正在傳入|TCP|針對 VS 2017。 每個 Visual Studio 版本的埠號碼會遞增2。 此埠僅用來從遠端偵錯程式的64位版本進行遠端偵錯程式的32位處理常式。 如需詳細資訊，請參閱  [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)。|
@@ -66,7 +66,7 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
 
 ::: moniker range=">= vs-2019"
 
-|**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|
+|**連接埠**|**傳入/傳出**|**通訊協定**|**說明**|
 |-|-|-|-|
 |4024|正在傳入|TCP|針對 VS 2019。 每個 Visual Studio 版本的埠號碼會遞增2。 如需詳細資訊，請參閱 [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)。|
 |4025|正在傳入|TCP|針對 VS 2019。 每個 Visual Studio 版本的埠號碼會遞增2。 此埠僅用來從遠端偵錯程式的64位版本進行遠端偵錯程式的32位處理常式。 如需詳細資訊，請參閱  [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)。|
@@ -76,14 +76,14 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
 
 如果您選取 [**工具** 選項偵錯工具] 下的 [**使用 Managed 相容性模式]**  >    >  ****，請開啟這些額外的遠端偵錯程式埠 偵錯工具管理的相容性模式會啟用舊版的 Visual Studio 2010 版本的偵錯工具。
 
-|**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|
+|**連接埠**|**傳入/傳出**|**通訊協定**|**說明**|
 |-|-|-|-|
 |135、139、445|傳出|TCP|必要。|
 |137、138|傳出|UDP|必要。|
 
 如果您的網域原則需要透過 IPSec 執行網路通訊，您必須在 Visual Studio 和遠端電腦上開啟其他埠。 若要在遠端 IIS web 伺服器上進行調試，請在遠端電腦上開啟埠80。
 
-|**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|
+|**連接埠**|**傳入/傳出**|**通訊協定**|**說明**|
 |-|-|-|-|
 |500、4500|傳出|UDP|如果您的網域原則需要透過 IPSec 進行網路通訊時，則為必要項。|
 |80|傳出|TCP|網頁伺服器偵錯的必要項。|
@@ -123,7 +123,7 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
   - 若要查看或變更規則設定，請在清單中的 **遠端偵錯** 程式應用程式上按一下滑鼠右鍵，然後選取 [ **屬性**]。 您可以使用 [ **屬性** ] 索引標籤來啟用或停用規則，或變更埠號碼、通訊協定或網路類型。
   - 如果「遠端偵錯程式」應用程式未出現在 [規則] 清單中，請 [新增並設定正確的埠](#configure-ports-for-remote-debugging)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [遠端偵錯](../debugger/remote-debugging.md)
 - [Visual Studio 遠端偵錯程式埠指派](../debugger/remote-debugger-port-assignments.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 767c078e-8ad7-4940-9e00-cae7704aadee
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a2e69bf6626cd11d82164a707c2611884b36411
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e6311c0db3329852fe8061c8da9f0355d6b2565
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468557"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865282"
 ---
 # <a name="idiaaddressmapput_relativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
 允許用戶端啟用或停用相對虛擬位址 (RVA) 的計算和使用。
@@ -25,7 +25,7 @@ ms.locfileid: "85468557"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT put_relativeVirtualAddressEnabled ( 
+HRESULT put_relativeVirtualAddressEnabled ( 
    BOOL NewVal
 );
 ```

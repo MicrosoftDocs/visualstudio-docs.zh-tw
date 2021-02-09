@@ -7,19 +7,19 @@ ms.topic: how-to
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 79e5c529c1aefb4777e174489fc8fd1ca95a4111
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: b440e8c47afdec6e0b04b5f48a35e15fe48e1875
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866797"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>如何：建立對應至資料表和檢視的 LINQ to SQL 類別 (O/R 設計工具)
 
-[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 對應至資料庫資料表和視圖的類別稱為 *實體類別* 。 Entity 類別會對應至記錄，而實體類別的個別屬性會對應至組成記錄的個別資料行。 從 **伺服器總管** 或 **資料庫總管** 將資料表或視圖拖曳至 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)，以建立以資料庫資料表或視圖為基礎的實體類別。 **O/R 設計** 工具會產生類別並套用特定的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 屬性，以啟用 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] () 資料通訊和編輯功能的功能 <xref:System.Data.Linq.DataContext> 。 如需類別的詳細資訊 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ，請參閱 [LINQ to SQL 物件模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)。
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 對應至資料庫資料表和視圖的類別稱為 *實體類別*。 Entity 類別會對應至記錄，而實體類別的個別屬性會對應至組成記錄的個別資料行。 從 **伺服器總管** 或 **資料庫總管** 將資料表或視圖拖曳至 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)，以建立以資料庫資料表或視圖為基礎的實體類別。 **O/R 設計** 工具會產生類別並套用特定的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 屬性，以啟用 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] () 資料通訊和編輯功能的功能 <xref:System.Data.Linq.DataContext> 。 如需類別的詳細資訊 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ，請參閱 [LINQ to SQL 物件模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)。
 
 > [!NOTE]
 > **O/R 設計** 工具是簡單的物件關聯式對應程式，因為它只支援1:1 對應關聯性。 換句話說，實體類別與資料庫資料表或檢視之間只可以有一對一對應關聯性。 目前不支援複雜對應 (例如，將實體類別對應至多個資料表)。 不過，您可以將一個實體類別對應至一個將多個相關資料表聯結 (Join) 在一起的檢視。
@@ -48,9 +48,9 @@ ms.locfileid: "94436342"
 
 1. 按一下 [建置] 功能表上的 [建置方案] 來建置您的專案。
 
-2. 若要開啟 [ **資料來源** ] 視窗，請按一下 [ **資料** ] 功能表上的 [ **顯示資料來源** ]。
+2. 若要開啟 [ **資料來源** ] 視窗，請按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
 
-3. 在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源** ]。
+3. 在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。
 
 4. 按一下 [選擇資料來源類型] 頁面上的 [物件]，然後按一下 [下一步]。
 
@@ -63,7 +63,7 @@ ms.locfileid: "94436342"
 
 7. 將項目從 [資料來源] 視窗拖曳至表單。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [逐步解說：建立 LINQ to SQL 類別 (O-R 設計工具)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a46b9d0e-43e6-433f-b2c7-aa203981e4e4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ded09d64a071c12e14de1597c21aad3872cacf4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63bf56b7749033ecc99c7ba1ef0c9357c95542d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865276"
 ---
 # <a name="idiaaddressmapset_imageheaders"></a>IDiaAddressMap::set_imageHeaders
 設定影像標頭，以啟用相對虛擬位址轉譯。
@@ -25,7 +25,7 @@ ms.locfileid: "85468543"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT set_imageHeaders ( 
+HRESULT set_imageHeaders ( 
    DWORD cbData,
    BYTE  data[],
    BOOL  originalHeaders

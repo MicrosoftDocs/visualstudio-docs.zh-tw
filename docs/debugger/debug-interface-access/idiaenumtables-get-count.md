@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30fa316b-a746-4028-acae-4efcd2066f38
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fed5b7f6cf3b18e854a9607b163b5e538f734915
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fc48165b269e7164d710c23ed0ecbddedef36fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865080"
 ---
 # <a name="idiaenumtablesget_count"></a>IDiaEnumTables::get_Count
 抓取資料表的數目。
@@ -25,7 +25,7 @@ ms.locfileid: "85467565"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_Count (    LONG* pRetVal
+HRESULT get_Count (    LONG* pRetVal
 );
 
 ```

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2f6401fedc3158e2743f08775da93faf2ddfee73
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 75800c5a2b5ff62addec3c914905ae67ac171b95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866576"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>將資料儲存至資料庫 (多個資料表)
 
@@ -43,7 +43,7 @@ ms.locfileid: "94436038"
 
 - 修改程式碼，以將資料集中更新的資料傳送回資料庫。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -51,7 +51,7 @@ ms.locfileid: "94436038"
 
 2. 遵循下列步驟來安裝 Northwind 範例資料庫：
 
-    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 Visual Studio 安裝程式中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢** ]。
+    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 Visual Studio 安裝程式中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢**]。
 
        [查詢編輯器] 視窗隨即開啟。
 
@@ -63,19 +63,19 @@ ms.locfileid: "94436038"
 
 ## <a name="create-the-windows-forms-application"></a>建立 Windows Forms 應用程式
 
-為 c # 或 Visual Basic 建立新的 **Windows Forms 應用程式** 專案。 將專案命名為 **UpdateMultipleTablesWalkthrough** 。
+為 c # 或 Visual Basic 建立新的 **Windows Forms 應用程式** 專案。 將專案命名為 **UpdateMultipleTablesWalkthrough**。
 
 ## <a name="create-the-data-source"></a>建立資料來源
 
 此步驟會使用 [資料來源組態精靈] 從 Northwind 資料庫建立資料來源。 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需設定 Northwind 範例資料庫的詳細資訊，請參閱 [如何：安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
 
-1. 在 [ **資料** ] 功能表上，選取 [ **顯示資料來源** ]。
+1. 在 [ **資料** ] 功能表上，選取 [ **顯示資料來源**]。
 
    [資料來源] 視窗隨即開啟。
 
 2. 在 [資料來源] 視窗中，選取 [新增新資料來源]，以啟動 [資料來源組態精靈]。
 
-3. 在 [ **選擇資料來源類型** ] 畫面上，選取 [ **資料庫** ]，然後選取 **[下一步]** 。
+3. 在 [ **選擇資料來源類型** ] 畫面上，選取 [ **資料庫**]，然後選取 **[下一步]**。
 
 4. 在 [ **選擇您的資料連線** ] 畫面上，執行下列其中一項：
 
@@ -85,13 +85,13 @@ ms.locfileid: "94436038"
 
     - 選取 [新增連線]，以開啟 [新增/修改連線] 對話方塊。
 
-5. 如果您的資料庫需要密碼，請選取包含機密資料的選項，然後選取 **[下一步]** 。
+5. 如果您的資料庫需要密碼，請選取包含機密資料的選項，然後選取 **[下一步]**。
 
-6. 在 [ **將連接字串儲存到應用程式佈建檔** ] 中，選取 **[下一步]** 。
+6. 在 [ **將連接字串儲存到應用程式佈建檔**] 中，選取 **[下一步]**。
 
 7. 在 [ **選擇您的資料庫物件** ] 畫面上，展開 [ **資料表]** 節點。
 
-8. 選取 [ **Customers** ] 和 [ **Orders** ] 資料表，然後選取 **[完成]** 。
+8. 選取 [ **Customers** ] 和 [ **Orders** ] 資料表，然後選取 **[完成]**。
 
      **NorthwindDataSet** 會新增專案中，且資料表會出現在 [資料來源] 視窗中。
 
@@ -109,7 +109,7 @@ ms.locfileid: "94436038"
 
 您可以從 [ **資料來源** ] 視窗將專案拖曳至表單，以建立資料繫結控制項。
 
-1. 從 [資料來源] 視窗，將 [客戶] 主節點拖曳至 **Form1** 。
+1. 從 [資料來源] 視窗，將 [客戶] 主節點拖曳至 **Form1**。
 
      會在表單上顯示具有描述性的資料繫結控制項，以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>)。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、、 `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator> 都會出現在元件匣中。
 
@@ -138,7 +138,7 @@ ms.locfileid: "94436038"
 
 ## <a name="test-the-application"></a>測試應用程式
 
-1. 按 **F5** 。
+1. 按 **F5**。
 
 2. 在每個資料表中，變更一個或多個記錄的資料。
 
@@ -146,6 +146,6 @@ ms.locfileid: "94436038"
 
 4. 檢查資料庫中的值，確認已儲存變更。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

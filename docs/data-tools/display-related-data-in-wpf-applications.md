@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a9604ac7c0083bc40edb17b19d4de608eb7366b1
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3467b2a3c4f49b22ab36b44ff0d3ea47d143e971
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866953"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>在 WPF 應用程式中顯示相關資料
 
@@ -53,11 +53,11 @@ ms.locfileid: "94436494"
 
      Visual Studio 會產生 XAML，以針對您拖曳的每個專案，建立新的資料繫結控制項。 XAML 也會將 <xref:System.Windows.Data.CollectionViewSource> 子資料工作表或物件的新加入至放置目標的資源。 這個新的會系結 <xref:System.Windows.Data.CollectionViewSource> 至您剛剛拖曳至設計工具的父資料表或物件的屬性。 針對某些資料來源，Visual Studio 也會產生程式碼，以將資料載入子資料工作表或物件。
 
-     下圖將示範 [ **資料來源** ] 視窗中資料集中 [ **Customers** ] 資料表的 [相關 **訂單** ] 資料表。
+     下圖將示範 [**資料來源**] 視窗中資料集中 [ **Customers** ] 資料表的 [相關 **訂單**] 資料表。
 
      ![顯示關聯的資料來源視窗](../data-tools/media/datasources2.gif)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [在 WPF 應用程式中建立查閱資料表](../data-tools/create-lookup-tables-in-wpf-applications.md)

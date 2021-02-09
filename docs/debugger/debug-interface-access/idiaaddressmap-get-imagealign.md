@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f1ba8071-669c-4cf7-9ac0-02f26d99f366
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 814381cb4792d9c21825ab1be5ebc4da415bc974
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c77fad0a43736e448ad828a7dc9300290bd8b835
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865304"
 ---
 # <a name="idiaaddressmapget_imagealign"></a>IDiaAddressMap::get_imageAlign
 抓取目前的影像對齊。
@@ -25,7 +25,7 @@ ms.locfileid: "85468585"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_imageAlign ( 
+HRESULT get_imageAlign ( 
    DWORD* pRetVal
 );
 ```

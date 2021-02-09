@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: eb9f759b-98a5-45fc-b085-91f1f2666e72
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cadd93b935e102cee2108be5c6fd6274f5a29e15
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e985f2ae94e0da631aed731d9cb26472f4481303
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865593"
 ---
 # <a name="annotation"></a>Annotation
 您可以使用符號來標注位置程式碼 `SymTagAnnotation` 。
@@ -39,7 +39,7 @@ ms.locfileid: "97728899"
 |[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|`VARIANT`|常數資料的值。|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|此批註在可執行映射中的位置。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)
 - [符號位置](../../debugger/debug-interface-access/symbol-locations.md)

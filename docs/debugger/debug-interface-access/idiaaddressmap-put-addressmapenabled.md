@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0f205337-4e59-4383-8059-7b1d207d6dcd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b671150463060f11dc62ea49d3a21cd388c6000
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3ebfcc5b76765a8fbfbe2be9ccef2112d351039
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865269"
 ---
 # <a name="idiaaddressmapput_addressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
 指定是否應該使用位址對應來轉譯符號位址。
@@ -25,7 +25,7 @@ ms.locfileid: "85468571"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT put_addressMapEnabled ( 
+HRESULT put_addressMapEnabled ( 
    BOOL NewVal
 );
 ```

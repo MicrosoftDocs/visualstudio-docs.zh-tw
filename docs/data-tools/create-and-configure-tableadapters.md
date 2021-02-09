@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c976f06f105969f1eaa91022607d61251a56008
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a9ab54b358125e45cfb0d6a4df30989cf679ab2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436754"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867135"
 ---
 # <a name="create-and-configure-tableadapters"></a>建立和設定 TableAdapter
 
@@ -29,7 +29,7 @@ Tableadapter 可提供您的應用程式與資料庫之間的通訊。 它們會
 
 當您執行下列其中一個動作時，系統會為您建立 Tableadapter：
 
-- 將資料庫物件從 **伺服器總管** 拖曳至 **DataSet 設計工具** 。
+- 將資料庫物件從 **伺服器總管** 拖曳至 **DataSet 設計工具**。
 
 - 執行 [資料來源設定向導]，然後選取 [ **資料庫** ] 或 [ **Web 服務** ] 資料來源類型。
 
@@ -51,7 +51,7 @@ Tableadapter 可提供您的應用程式與資料庫之間的通訊。 它們會
 
 - 如果您有資料庫的正確許可權，您可以選擇在基礎資料庫中建立新的預存程式。 如果您沒有這些許可權，這將不會是選項。
 
-- 您也可以選擇針對 TableAdapter 的 **SELECT** 、 **INSERT** 、 **UPDATE** 和 **DELETE** 命令執行現有的預存程式。 例如，在呼叫方法時，會執行指派給 **Update** 命令的預存程式 `TableAdapter.Update()` 。
+- 您也可以選擇針對 TableAdapter 的 **SELECT**、 **INSERT**、 **UPDATE** 和 **DELETE** 命令執行現有的預存程式。 例如，在呼叫方法時，會執行指派給 **Update** 命令的預存程式 `TableAdapter.Update()` 。
 
 從已選取預存程序將參數對應至資料表中對應的資料行。 例如，如果您的預存程式接受名為 `@CompanyName` 的參數，它會傳遞給 `CompanyName` 資料表中的資料行，請將參數的 **來源資料行** 設定 `@CompanyName` 為 `CompanyName` 。
 
@@ -84,7 +84,7 @@ Wizard 中的 [ **Advanced] 選項** 可讓您：
 
 1. 在 [DataSet 設計工具] 中開啟資料集。
 
-2. 如果您要建立新的查詢，請從 [ **工具箱** ] 的 [ **資料集** ] 索引標籤拖曳 **查詢** 物件至 <xref:System.Data.DataTable> ，或從 TableAdapter 的快捷方式功能表中選取 [ **加入查詢** ]。 您也可以將 **查詢** 物件拖曳到 **DataSet 設計工具** 的空白區域，以建立沒有相關聯的 TableAdapter <xref:System.Data.DataTable> 。 這些查詢只能傳回單一 (純量) 值，或是對資料庫執行 UPDATE、INSERT 或 DELETE 命令。
+2. 如果您要建立新的查詢，請從 [**工具箱**] 的 [**資料集**] 索引標籤拖曳 **查詢** 物件至 <xref:System.Data.DataTable> ，或從 TableAdapter 的快捷方式功能表中選取 [**加入查詢**]。 您也可以將 **查詢** 物件拖曳到 **DataSet 設計工具** 的空白區域，以建立沒有相關聯的 TableAdapter <xref:System.Data.DataTable> 。 這些查詢只能傳回單一 (純量) 值，或是對資料庫執行 UPDATE、INSERT 或 DELETE 命令。
 
 3. 在 [ **選擇您的資料連線** ] 畫面上，選取或建立查詢將使用的連接。
 
@@ -110,13 +110,13 @@ Wizard 中的 [ **Advanced] 選項** 可讓您：
 
 - 全域查詢是傳回單一 (純量) 值或沒有值的 SQL 查詢。 一般情況下，全域函式會執行資料庫作業，例如插入、更新和刪除。 它們也會匯總資訊，例如資料表中的客戶計數，或特定訂單中所有專案的總費用。
 
-     您可以從 [ **工具箱** ] 的 [ **資料集** ] 索引標籤，將 **查詢** 物件拖曳到 **DataSet 設計工具** 的空白區域，藉以新增全域查詢。
+     您可以從 [**工具箱**] 的 [**資料集**] 索引標籤，將 **查詢** 物件拖曳到 **DataSet 設計工具** 的空白區域，藉以新增全域查詢。
 
 - 提供執行所需工作（例如）的查詢 `SELECT COUNT(*) AS CustomerCount FROM Customers` 。
 
     > [!NOTE]
     > 直接將 **查詢** 物件拖曳到 **DataSet 設計工具** 會建立只傳回純量 (單一) 值的方法。 當您選取的查詢或預存程式可能會傳回一個以上的值時，由 wizard 建立的方法只會傳回單一值。 例如，查詢可能會傳回所傳回資料中第一個資料列的第一個資料行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)

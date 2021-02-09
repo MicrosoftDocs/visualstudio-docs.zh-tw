@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ea1ab222868df6ff1b22eee7827e1edd3978a88e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c4a25cc340216e3410e0ca4b6cfabec77a73662e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436207"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866680"
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構 (N-Tier) 資料應用程式概觀
 多 *層式* 資料應用程式是分割成多 *層* 的資料應用程式。 也稱為「分散式應用程式」和「多層式應用程式」，多層式應用程式會將處理區分為在用戶端與伺服器之間散發的離散層。 當您開發可存取資料的應用程式時，您應該在組成應用程式的各層之間進行清楚的分隔。
@@ -81,7 +81,7 @@ Visual Studio 包含數個可協助開發人員建立多層式應用程式的功
 
 [具有 LINQ to SQL 的多層式和遠端應用程式](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [階層式更新](../data-tools/hierarchical-update.md)

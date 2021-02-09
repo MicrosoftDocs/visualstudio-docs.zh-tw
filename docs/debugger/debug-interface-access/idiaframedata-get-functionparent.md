@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f00b9ab1-d4da-4818-973a-58f8f0e66769
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef646016433ecfe19106a17dff391c2dd8ce8382
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c5954bb80afde6d0ab33a4ad14b1ab08a4435f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864989"
 ---
 # <a name="idiaframedataget_functionparent"></a>IDiaFrameData::get_functionParent
 抓取封閉函數的框架資料介面。
@@ -25,7 +25,7 @@ ms.locfileid: "85467383"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_functionParent ( 
+HRESULT get_functionParent ( 
    IDiaFrameData** pRetVal
 );
 ```

@@ -7,21 +7,21 @@ ms.topic: error-reference
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 66acc8486bcb261bb97a1611ff0c6753caa65dee
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 94e9f1f91aa5c879e0e3ed0034e0d1f554901513
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866368"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>此關聯方法是下列預設插入、更新或刪除方法的支援方法
 
 此相關的方法是下列預設 `Insert` 、或方法的支援方法 `Update` `Delete` 。 如果刪除它，這些方法也會被刪除。 是否要繼續?
 
-選取的 `DataContext` 方法目前當做 `Insert` `Update` `Delete` **O/R 設計**工具上其中一個實體類別的其中一個、或方法使用。 刪除選取的方法會導致使用這個方法的實體類別還原成預設執行時間行為，以便在更新期間執行插入、更新或刪除。
+選取的 `DataContext` 方法目前當做 `Insert` `Update` `Delete` **O/R 設計** 工具上其中一個實體類別的其中一個、或方法使用。 刪除選取的方法會導致使用這個方法的實體類別還原成預設執行時間行為，以便在更新期間執行插入、更新或刪除。
 
 ## <a name="selected-method-options"></a>選取的方法選項
 
