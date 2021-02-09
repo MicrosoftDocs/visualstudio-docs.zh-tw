@@ -5,20 +5,20 @@ ms.topic: conceptual
 ms.assetid: f27ab0e6-9575-4ca0-9901-37d3e5c3a2f5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40f3c3c22de6b4b0ebdbdf2dfc953f4cb1c9b5e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f94b287f6ed9d4cda0696252ba32d493879ed5c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72736083"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880264"
 ---
 # <a name="dont_save_vsglog_to_temp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 出現時，定義圖形記錄檔是否儲存到使用者的暫存檔目錄。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```C++
 #define DONT_SAVE_VSGLOG_TO_TEMP

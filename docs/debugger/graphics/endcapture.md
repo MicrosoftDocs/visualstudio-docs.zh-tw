@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 06084c3b-e065-49b6-968e-d578762fb871
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bbdc8f2dc4fa3ad25be8674b9a46bf02179aa1d
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 3f7733eb9bed86bc450e4438ce34054312b13db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880277"
 ---
 # <a name="endcapture"></a>EndCapture
 結束以啟動的捕獲間隔 `BeginCapture` 。
@@ -31,6 +31,6 @@ void EndCapture();
 
  若要取得間隔，您必須準備您的應用程式來捕獲和記錄圖形資訊，也就是說，您必須先透過類別的實例呼叫 [Init](init.md) ， `VsgDbg` 才能呼叫 `BeginCapture` 或 `EndCapture` 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [BeginCapture](begincapture.md)
 - [CaptureCurrentFrame](capturecurrentframe.md)

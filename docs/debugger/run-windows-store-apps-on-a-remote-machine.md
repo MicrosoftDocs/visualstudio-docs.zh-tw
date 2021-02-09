@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: a28769237f0c1b0078e9c9c117695e68e5b521ac
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: f75c1c2420a356a38148f67daab05eadf5a073e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881317"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>從 Visual Studio 在遠端電腦上進行 UWP 應用程式的偵錯工具
 
@@ -108,7 +108,7 @@ ms.locfileid: "98204952"
 
 1. 如有必要，請選取 [**調試**  >  程式 **停止**]，或按 **Shift** + **F5** 以停止偵錯工具並關閉遠端應用程式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [進階遠端部署選項](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [使用 Visual Studio 測試 UWP 應用程式](../test/unit-test-your-code.md)
 - [在 Visual Studio 中對 UWP App 進行偵錯](debugging-windows-store-and-windows-universal-apps.md)

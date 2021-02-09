@@ -8,21 +8,21 @@ ms.topic: reference
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3641edafeed9cf7b5e29f8a967f9dbf26cdd3e8c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 92c2fd5ed260816ca9b0859d37f125b231c0906e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881278"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的鍵盤快速鍵
 
 ## <a name="project-shortcuts"></a>專案快速鍵
 
-|若要執行此工作|執行方式|
+|作法|執行方式|
 |----------------|-------------|
 |建立新專案|**Ctrl** +**Shift** +**N**|
 |開啟專案或解決方案 (非網站)|**Ctrl** +**Shift** +**O**|
@@ -35,15 +35,15 @@ ms.locfileid: "93049252"
 
 ## <a name="document-shortcuts"></a>文件快速鍵
 
-|若要執行此工作|執行方式|
+|作法|執行方式|
 |----------------|-------------|
 |切換開啟的文件|**Ctrl** +**Tab**|
 |儲存使用中的文件|**Ctrl** +**S**|
 |儲存所有文件|**Ctrl** +**Shift** +**S**|
 |關閉使用中的文件|**Ctrl** +**W**|
 |關閉所有開啟的文件|**Ctrl** +**Shift** +**W**|
-|復原上一個動作|**Ctrl** + Z|
-|取消復原上一個復原的動作|**Ctrl** +Y or **Ctrl**+**Shift**+**Z**|
+|復原上一個動作|**Ctrl**+ Z|
+|取消復原上一個復原的動作|**Ctrl**+Y or **Ctrl**+**Shift**+**Z**|
 |建立設計階段註釋|**Ctrl** +**Shift** +**T**|
 |剪下|**Ctrl** +**X**|
 |複製|**Ctrl** +**C**|
@@ -54,7 +54,7 @@ ms.locfileid: "93049252"
 
 ## <a name="object-shortcuts"></a>物件快速鍵
 
-|若要執行此工作|執行方式|
+|作法|執行方式|
 |----------------|-------------|
 |建立新的項目|**Ctrl** +**N**|
 |重複物件|按住 **Alt** 鍵並拖曳物件|
@@ -95,11 +95,11 @@ ms.locfileid: "93049252"
 
 ## <a name="view-shortcuts"></a>檢視快速鍵
 
-|若要執行此工作|執行方式|
+|作法|執行方式|
 |----------------|-------------|
-|切換 [設計]  、[程式碼]  與 [分割]  檢視|**F11**|
-|放大畫板|**Ctrl** +**等號** ( **=** ) |
-|縮小畫板|**Ctrl** +**負號** ( **-** ) |
+|切換 [設計]、[程式碼] 與 [分割] 檢視|**F11**|
+|放大畫板|**Ctrl** +**等號** (**=**) |
+|縮小畫板|**Ctrl** +**負號** (**-**) |
 |放大或縮小畫板|旋轉滑鼠滾輪|
 |向左或向右移動畫板|**Shift** 加旋轉滑鼠滾輪|
 |向上或向下移動畫板|**Ctrl** 加旋轉滑鼠滾輪|
@@ -107,16 +107,16 @@ ms.locfileid: "93049252"
 |以畫板的實際大小檢視|**Ctrl** +**1**|
 |顯示或隱藏控點|**F9**|
 |顯示或隱藏物件邊界|**Ctrl** +**Shift** +**H**|
-|切換 [設計]  、[XAML]  與 [分割]  檢視|**F11**|
+|切換 [設計]、[XAML] 與 [分割] 檢視|**F11**|
 
 ## <a name="workspace-shortcuts"></a>工作區快速鍵
 
-|若要執行此工作|執行方式|
+|作法|執行方式|
 |----------------|-------------|
-|切換 [動畫]  和 [設計]  工作區|**Ctrl** +**F11**|
-|顯示或隱藏 [資產]  面板|**Ctrl** +**期間**|
-|顯示或隱藏 [結果]  面板|**F12**|
+|切換 [動畫] 和 [設計] 工作區|**Ctrl** +**F11**|
+|顯示或隱藏 [資產] 面板|**Ctrl** +**期間**|
+|顯示或隱藏 [結果] 面板|**F12**|
 |顯示或隱藏所有面板|**F4**|
 |重設使用中的工作區版面配置|**Ctrl** +**Shift** +**R**|
 |移動瀏覽工作區|按住 **空格鍵**|
-|暫時使用 [選取]  工具 (在其他工具仍為選取狀態時)|按住 **Ctrl** 鍵|
+|暫時使用 [選取] 工具 (在其他工具仍為選取狀態時)|按住 **Ctrl** 鍵|

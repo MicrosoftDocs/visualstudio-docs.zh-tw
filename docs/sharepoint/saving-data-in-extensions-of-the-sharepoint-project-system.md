@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint projects, saving string data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1e3c05b9ad570febcfc28fec367a8d180dd2b222
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 579289a7ba5afa1eb50bdf5f1dbb105fc2a6b01e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881564"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>將資料儲存在 SharePoint 專案系統的延伸模組中
   當您延伸 SharePoint 專案系統時，可以儲存在 SharePoint 專案關閉之後仍會保存的字串資料。 資料通常與特定專案專案或專案本身相關聯。

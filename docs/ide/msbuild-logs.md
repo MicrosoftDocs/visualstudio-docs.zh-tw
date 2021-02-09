@@ -9,7 +9,7 @@ helpviewer_keywords:
 - msbuild logs"
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: c6b08b243a5b4eec3119ceedbaf2177670aa3e83
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: d9308bff68a5a5377c025bba5861ac344dcb0326
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880485"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>疑難排解及建立 MSBuild 問題的記錄檔
 
@@ -91,7 +91,7 @@ ms.locfileid: "92136572"
   Debug\Project1.tlog\CL.write.1.tlog
 ```
 
-如果您要在 Visual Studio IDE 中建置 (搭配詳盡的輸出視窗詳細資訊)，則 [輸出視窗]**** 會顯示每個專案為何不是最新的原因：
+如果您要在 Visual Studio IDE 中建置 (搭配詳盡的輸出視窗詳細資訊)，則 [輸出視窗] 會顯示每個專案為何不是最新的原因：
 
 ```output
 1>------ Up-To-Date check: Project: Project1, Configuration: Debug Win32 ------
@@ -119,7 +119,7 @@ Msbuild.binlog 檔案會建立在您執行 MSBuild 的目錄中。 您可以使�
 ## <a name="create-a-detailed-log"></a>建立詳細的記錄檔
 
 1. 從 Visual Studio 主功能表中，移至 [**工具**  >  **選項**  >  **專案和方案**  > **組建及執行**]。
-1. 兩個下拉式方塊中的 [Msbuild project build verbosity] \(MSBuild 專案組建詳細資料\)**** 都設為 [詳細]****。 第一個控制項是 **輸出視窗** 中的組建詳細資訊，第二個則 \<projectname\> 是在組建期間，在每個專案的中繼目錄中所建立的 .log 檔案中控制組建詳細資訊。
+1. 兩個下拉式方塊中的 [Msbuild project build verbosity] \(MSBuild 專案組建詳細資料\) 都設為 [詳細]。 第一個控制項是 **輸出視窗** 中的組建詳細資訊，第二個則 \<projectname\> 是在組建期間，在每個專案的中繼目錄中所建立的 .log 檔案中控制組建詳細資訊。
 2. 在 Visual Studio 開發人員命令提示字元中，輸入下列任一命令，替換實際的路徑和組態值：
 
     ```cmd

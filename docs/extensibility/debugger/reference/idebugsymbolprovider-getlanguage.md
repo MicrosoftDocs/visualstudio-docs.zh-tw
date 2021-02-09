@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 876466d3617131815f6aa48b8b7dfb68b645ecb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 120434e44819d4c503336dffeaa1c255626270d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880225"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 這個方法會取得在 debug 位址編譯器代碼所使用的語言。
@@ -28,7 +28,7 @@ ms.locfileid: "80719236"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetLanguage( 
+HRESULT GetLanguage( 
    IDebugAddress* pAddress,
    GUID*          pguidLanguage,
    GUID*          pguidLanguageVendor

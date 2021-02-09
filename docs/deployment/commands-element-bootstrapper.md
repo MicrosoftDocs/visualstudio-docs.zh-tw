@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c63d52290962d8c9878edf025bbc05487103da
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 0f53ca683e40be8e3cc428d013d2b8d3c8c5773e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383049"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881226"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;命令 &gt; 元素 (啟動載入器) 
 專案會執行專案下的專案 `Commands` 所描述的測試 `InstallChecks` ，並宣告 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 當測試失敗時，啟動載入器應該安裝的封裝。
@@ -74,7 +74,7 @@ ms.locfileid: "94383049"
 |---------------|-----------------|
 |`Reboot`|選擇性。 判斷如果有任何套件傳回重新開機結束代碼，系統是否應該重新開機。 下列清單顯示有效的值：<br /><br /> `Defer`. 重新開機會延後到未來的某個時間。<br /><br /> `Immediate`. 如果其中一個套件傳回重新開機結束代碼，則會立即重新開機。<br /><br /> `None`. 會忽略任何重新開機要求。<br /><br /> 預設為 `Immediate`。|
 
-## <a name="command"></a>Command
+## <a name="command"></a>命令
  `Command` 項目是 `Commands` 項目的子項目。 專案 `Commands` 可以有一或多個 `Command` 元素。 元素具有下列屬性。
 
 |屬性|描述|

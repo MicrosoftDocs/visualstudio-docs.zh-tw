@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 6b1e1863-0c64-4d85-8ab9-aface522fdea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e1d15936316d08a712e3d6f3fdc7a3a73be613d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f7b463b2da9c1e2c93568435b73020550802f98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734633"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881005"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 此介面會告知會話 debug manager (SDM) 系結的中斷點已從載入的程式解除系結。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointUnboundEvent2 : IUnknown
@@ -45,7 +45,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 ## <a name="remarks"></a>備註
  當偵錯工具 DLL 或類別卸載時，系結至該模組中程式碼的所有中斷點都必須從正在進行調試的程式中解除系結。 `IDebugBreakpointUnboundEvent2`會為每個未系結的中斷點傳送。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

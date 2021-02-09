@@ -8,15 +8,15 @@ helpviewer_keywords:
 - xaml hot reload
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25819d8d691836c12c73d9d76e334e36d50b83b4
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 11257561deecdbce4606207c3d59012a6d7c3d09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668868"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880316"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>使用 XAML 熱重新載入在 Visual Studio 中撰寫和偵測執行中的 XAML 程式碼
 
@@ -43,7 +43,7 @@ XAML 熱重新載入可讓您在應用程式執行時變更 XAML 程式碼，以
 > [!NOTE]
 > 目前只有當您在 Visual Studio 中執行您的應用程式，或 Blend for Visual Studio 附加偵錯工具 (**F5** 或 **啟動調試** 程式) 時，才支援 Visual Studio XAML 熱重新載入。 除非您[手動設定環境變數](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)，否則您無法使用 [[附加至進程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)] 來啟用此體驗。
 
-## <a name="known-limitations"></a>已知限制
+## <a name="known-limitations"></a>已知的限制
 
 以下是 XAML 熱重新載入的已知限制。 若要解決您遇到的任何限制，只要停止偵錯工具，然後完成操作即可。
 
@@ -61,7 +61,7 @@ XAML 熱重新載入可讓您在應用程式執行時變更 XAML 程式碼，以
 
 使用 XAML 熱重新載入時，您可能會遇到下列錯誤。
 
-|錯誤訊息|描述|
+|錯誤訊息|Description|
 |-|-|
 |確定事件失敗|錯誤表示您嘗試將事件連接到您的其中一個控制項，而您的應用程式在執行時並不支援。|
 |XAML 熱重新載入不支援這項變更，而且將不會在偵錯工具期間套用。|錯誤指出 XAML 熱重新載入不支援您嘗試的變更。 停止調試會話，進行變更，然後重新開機調試會話。 如果您發現不受支援的案例，請在 [Visual Studio 開發人員社群](https://aka.ms/feedback/suggest?space=8)中使用新的 [建議功能] 選項。 |

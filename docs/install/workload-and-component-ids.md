@@ -5,7 +5,7 @@ description: 使用工作負載和元件識別碼透過命令列安裝 Visual St
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 87b8b70f8adb10f0451d276520219c6954ff7325
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e7c2628e17305e861da3ab25e3e21833729638ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437301"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881980"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 工作負載與元件識別碼
 
@@ -72,7 +72,7 @@ ms.locfileid: "94437301"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 的 Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - build environment, MSBuild
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c8fa7756763a668f6e97d90d8a405c660519189
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3ae0e5f2516dd1f78aea880289f549ca3a44f3bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881954"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 
@@ -46,7 +46,7 @@ ms.locfileid: "92136949"
 
 ## <a name="prerequisites"></a>必要條件
 
-已安裝 [.NET 桌面開發]**** 工作負載的 Visual Studio。
+已安裝 [.NET 桌面開發] 工作負載的 Visual Studio。
 
 ## <a name="install-software-on-the-computers"></a>在電腦上安裝軟體
 
@@ -56,7 +56,7 @@ ms.locfileid: "92136949"
 
 1. 在主機電腦上，安裝 Visual Studio。
 
-2. 在建置電腦上，安裝 .NET Framework 4.5 或更新版本。 若要確認已安裝，請檢查登錄子機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** 中 [Version]**** 項目的值是否為 [4.5]**** 或更高。
+2. 在建置電腦上，安裝 .NET Framework 4.5 或更新版本。 若要確認已安裝，請檢查登錄子機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** 中 [Version] 項目的值是否為 [4.5] 或更高。
 
 ## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>將檔案從主機電腦複製到組建電腦
 
@@ -132,7 +132,7 @@ ms.locfileid: "92136949"
 
     - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\vsvars32.bat
 
-4. 下列 Visual C++ 執行階段程式庫只有在您於組建電腦上執行建置輸出時才需要，例如作為自動化測試的一部分。 這些檔案通常位於 *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x86*或 *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x64*資料夾下的子資料夾中，視系統架構而定。 在 x86 系統上，將 x86 二進位檔複製到 *Windows\System32* 資料夾。 在 x64 系統上，將 x86 二進位檔複製到 *Windows\SysWOW64* 資料夾，並將 x64 二進位檔複製到 *Windows\System32* 資料夾。
+4. 下列 Visual C++ 執行階段程式庫只有在您於組建電腦上執行建置輸出時才需要，例如作為自動化測試的一部分。 這些檔案通常位於 *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x86* 或 *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x64* 資料夾下的子資料夾中，視系統架構而定。 在 x86 系統上，將 x86 二進位檔複製到 *Windows\System32* 資料夾。 在 x64 系統上，將 x86 二進位檔複製到 *Windows\SysWOW64* 資料夾，並將 x64 二進位檔複製到 *Windows\System32* 資料夾。
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -172,7 +172,7 @@ ms.locfileid: "92136949"
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. 只將下列檔案從 *Debug_NonRedist\x86* 或 *Debug_NonRedist\x64* 資料夾複製到組建電腦，如[準備測試電腦以執行偵錯可執行檔](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)中所述。 不會複製其他任何檔案。
+5. 只將下列檔案從 *Debug_NonRedist\x86* 或 *Debug_NonRedist\x64* 資料夾複製到組建電腦，如 [準備測試電腦以執行偵錯可執行檔](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)中所述。 不會複製其他任何檔案。
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -194,7 +194,7 @@ ms.locfileid: "92136949"
 
 您必須建立登錄項目，才能進行 MSBuild 的設定。
 
-1. 識別登錄項目的父資料夾。 所有登錄項目都會在相同的父機碼下建立。 在 x86 電腦上，父機碼會是 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**。 在 x64 電腦上，父機碼是 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**的。 不論系統架構為何，本逐步解說會將父機碼稱為 %RegistryRoot%。
+1. 識別登錄項目的父資料夾。 所有登錄項目都會在相同的父機碼下建立。 在 x86 電腦上，父機碼會是 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**。 在 x64 電腦上，父機碼是 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft** 的。 不論系統架構為何，本逐步解說會將父機碼稱為 %RegistryRoot%。
 
     > [!NOTE]
     > 如果主機電腦的架構與組建電腦的架構不同，請務必在每部電腦上使用適當的父機碼。 如果您想要自動化匯出程序，這會特別重要。
@@ -257,7 +257,7 @@ ms.locfileid: "92136949"
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>使用 vcvarsall.bat 設定環境變數
 
-在組建電腦上開啟 [**命令提示**字元] 視窗，並執行 *% Program Files%\Microsoft Visual Studio \\ \<version> \\ \<edition>\VC\vcvarsall.bat*。 您可以使用命令列引數，指定要使用的工具組：x86、x64 Native 或 x64 Cross 編譯器。 如果您未指定命令列引數，則會使用 x86 工具組。
+在組建電腦上開啟 [**命令提示** 字元] 視窗，並執行 *% Program Files%\Microsoft Visual Studio \\ \<version> \\ \<edition>\VC\vcvarsall.bat*。 您可以使用命令列引數，指定要使用的工具組：x86、x64 Native 或 x64 Cross 編譯器。 如果您未指定命令列引數，則會使用 x86 工具組。
 
 下表描述 *vcvarsall.bat* 支援的引數：
 
@@ -267,7 +267,7 @@ ms.locfileid: "92136949"
 |x86_amd64|x64 Cross|x86、x64|x64|
 |amd64|x64 Native|x64|x64|
 
-如果 *vcvarsall.bat* 順利執行 (也就是未顯示任何錯誤訊息)，您可以略過下一個步驟，並繼續進行本文件的[將 MSBuild 組件安裝到組建電腦上的全域組件快取 (GAC)](#install-msbuild-to-gac) 一節。
+如果 *vcvarsall.bat* 順利執行 (也就是未顯示任何錯誤訊息)，您可以略過下一個步驟，並繼續進行本文件的 [將 MSBuild 組件安裝到組建電腦上的全域組件快取 (GAC)](#install-msbuild-to-gac) 一節。
 
 ### <a name="manually-set-environment-variables"></a>手動設定環境變數
 
@@ -303,7 +303,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 2. 若要將組件安裝到 GAC，請在組建電腦上尋找 *gacutil.exe* (通常位於 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ 中)。 如果找不到此資料夾，請重複本逐步解說之[將檔案從主機電腦複製到組建電腦](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)一節中的步驟。
 
-     開啟具有系統管理權限的 [命令提示字元]**** 視窗，然後針對每個檔案執行此命令：
+     開啟具有系統管理權限的 [命令提示字元] 視窗，然後針對每個檔案執行此命令：
 
      **gacutil-i \<file>**
 
@@ -333,7 +333,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
      這些步驟會將此目錄稱為 %Depot%。
 
-2. 如本逐步解說的[將檔案從主機電腦複製到組建電腦](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)一節中所述，複製目錄和檔案，但改為貼到您剛才建立的 *%Depot%* 目錄下。 例如，從 *%ProgramFiles%\Windows Kits\8.0\bin* 複製到 *%Depot%\Windows Kits\8.0\bin*。
+2. 如本逐步解說的 [將檔案從主機電腦複製到組建電腦](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)一節中所述，複製目錄和檔案，但改為貼到您剛才建立的 *%Depot%* 目錄下。 例如，從 *%ProgramFiles%\Windows Kits\8.0\bin* 複製到 *%Depot%\Windows Kits\8.0\bin*。
 
 3. 將檔案貼到 *%Depot%* 之後，請進行下列變更：
 
@@ -388,9 +388,9 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 6. 變更命令列環境，如下所示：
 
-    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」**
+    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」
 
-    - 設定 path=%path%;電腦上的 MSBuild 位置**;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
+    - 設定 path=%path%;電腦上的 MSBuild 位置;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
 
        如需原生 64 位元建置，請指向 64 位元版本的 MSBuild。
 
@@ -400,7 +400,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 6. 變更命令列環境，如下所示：
 
-    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」**
+    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」
 
     - 設定 path=%path%;*電腦上的 MSBuild 位置*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
 

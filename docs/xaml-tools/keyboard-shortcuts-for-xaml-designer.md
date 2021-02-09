@@ -7,13 +7,13 @@ ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: aed3ed43afcad9cfb38dc427a441512106d9749b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 0e0bdc7b10eb20b149493c8d9e05a6711eb71bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881330"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>XAML 設計工具的鍵盤快速鍵
 
@@ -49,6 +49,6 @@ XAML 設計工具中的鍵盤快速鍵可將需要點擊多次滑鼠按鈕的動
 |當焦點在 [文件大綱] 視窗上時鎖定畫板物件|**Ctrl** +**L**|
 |當焦點在 [文件大綱] 視窗上時解除鎖定畫板物件|**Shift** +**Ctrl** +**L**|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 XAML 設計工具建立 UI](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de246e5ecdc51ff6471eeed242d638fee261c8c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2b498279b085f19cd6ea218b4300301184da8e0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722954"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879744"
 ---
 # <a name="modules-view---sampling-data"></a>模組檢視 - 取樣資料
 取樣資料的模組檢視，依據分析資料中取樣的模組來分組顯示效能資料。 每個模組都是階層式樹狀結構的根。 模組的取樣函式列在模組節點之下。

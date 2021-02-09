@@ -6,15 +6,15 @@ ms.date: 06/08/2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88b22364c92a17c7200ddb261d154c7896cd1696
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: d1559854c1b293c33c16cfab6e638a33908c2eb8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727860"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881291"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷快速入門
 在本節中，您將準備第一次使用圖形診斷，並從 Direct3D 應用程式擷取畫面格，然後在圖形分析器中檢查它們。
@@ -94,5 +94,5 @@ ms.locfileid: "97727860"
 
  若要深入瞭解如何搭配使用圖形分析器工具，請參閱 [範例](graphics-diagnostics-examples.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Direct3D 12 圖形](/windows/desktop/direct3d12/direct3d-12-graphics)

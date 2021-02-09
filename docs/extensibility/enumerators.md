@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55e124ce3d36e2b23ef53c376b660de05cd87043
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 28de569ea19feff0a81a81d072575dfb89610e98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995807"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880745"
 ---
 # <a name="enumerators"></a>列舉值
 此區段會列出原始檔控制外掛程式必須知道的原始檔控制外掛程式 API 中的列舉值資料類型。

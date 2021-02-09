@@ -5,17 +5,17 @@ description: 使用工作負載和元件識別碼透過命令列安裝 Visual St
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: dd5930911c44ac0f0ffa15d164a5d7a90b15a5fa
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0af20eab0c2124cb25e935598d8b3f16cd64121e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437382"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881882"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-community-2019"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Community 2019)
 

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 5fb3c1fff831fdee711340345c283dbeaf3f13a6
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d9033921c9e9863e5210721fb2c1244c326802d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046072"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881369"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在偵錯時檢查 XAML 屬性
 
@@ -152,6 +152,6 @@ ms.locfileid: "93046072"
 
 4. 在 Visual Studio 的第二個執行個體中，開啟 [即時視覺化樹狀結構] ([偵錯] > [視窗] > [即時視覺化樹狀結構])。 您應該會看到 **TestXaml** UI 項目，且應該可以如同直接對應用程式進行偵錯時一樣管理這些項目。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 XAML 熱重新載入撰寫和偵測執行中的 XAML 程式碼](xaml-hot-reload.md)

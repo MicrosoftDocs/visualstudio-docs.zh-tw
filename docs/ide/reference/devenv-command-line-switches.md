@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 597a3f7e9a9b36d52f55a9215891c40b18f1a9e9
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: bef72e8889026f8202c7acdf3ea7c6b97c780b75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882169"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
 
@@ -64,7 +64,7 @@ Devenv 可讓您從命令列針對 IDE 設定不同選項、建置專案、偵�
 
 下列命令列參數會顯示 IDE，並執行所述的工作。
 
-|命令列參數|描述|
+|命令列參數|Description|
 | - |-----------------|
 |[/Command](command-devenv-exe.md)|啟動 IDE，並執行指定的命令。<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|在偵錯工具的控制下載入 C++ 可執行檔。 此參數不適用於 Visual Basic 或 C# 可執行檔。 如需詳細資訊，請參閱[在偵錯工具中自動啟動處理序](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。<br /><br /> `devenv /debugexe mysln.exe`|

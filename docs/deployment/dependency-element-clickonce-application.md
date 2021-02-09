@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7896fa2d39bafc793c5fd74f66f4991cf5e8461
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 1e716c0e9ebe88a8007296f1dad870424a0def0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382945"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881109"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;&gt; (ClickOnce 應用程式) 的相依性元素
 識別應用程式所需的平臺或元件相依性。

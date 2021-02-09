@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c26d5b9c2c45fd1ce932fc1108e4f77f2508cb31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d74257e9f45e54e17d824ce32c353d1f57132462
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880810"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 使用指定的最大位元組數目，抓取檔總和檢查碼和演算法識別碼。

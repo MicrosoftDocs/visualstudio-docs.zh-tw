@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 6d22fa94-21aa-46cb-b5b5-32a6399ebb20
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03cfb29cc54a2f0ab18bce3ec0761cfab62e20df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca8a33626ad68dcac690ca288d4bc375679a4e3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731905"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880771"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 表示 debug 檔的總和檢查碼，並且可在元件之間傳遞總和檢查碼。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocumentChecksum2 : IUnknown
@@ -36,7 +36,7 @@ IDebugDocumentChecksum2 : IUnknown
 |------------|-----------------|
 |[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|使用指定的最大位元組數目，抓取檔總和檢查碼和演算法識別碼。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Msdbg。h
 
  命名空間： VisualStudio

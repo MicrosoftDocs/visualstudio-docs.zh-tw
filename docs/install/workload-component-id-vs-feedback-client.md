@@ -5,7 +5,7 @@ description: 使用 Visual Studio 工作負載和元件識別碼針對 Azure Dev
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
-ms.openlocfilehash: fe4eec389389622f0d87d30edbbd46d7c5b53d80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f83b457582124658285e0769d1907a8643d44fda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81276301"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881759"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Visual Studio Feedback Client 元件目錄
 
@@ -31,7 +31,7 @@ ms.locfileid: "81276301"
 此外，也請注意此頁面的下列相關注意事項：
 
 * 每個工作負載都有自己的小節 (後面接著工作負載識別碼)，以及一張工作負載可用元件的表格。
-* 安裝工作負載時，預設會安裝「必要」**** 元件。
+* 安裝工作負載時，預設會安裝「必要」元件。
 * 如果您選擇，也可以安裝 **建議** 的和 **選用** 的元件。
 * 我們還新增了一個章節，當中列出不屬於任何工作負載的額外元件。
 

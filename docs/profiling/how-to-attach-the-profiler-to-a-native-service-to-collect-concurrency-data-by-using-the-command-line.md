@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 283a1ee1-b43e-4daf-95ae-1311925a42a8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 233d6d77fad3997fead9126065b2f867ac8ffd2e
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 301e507e7debb04aab25b30e0a4e8f234f57a46b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881629"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line-vsperfcmd"></a>如何：使用命令列將分析工具附加至原生服務以收集並行資料 (>vsperfcmd) 
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至原生 (C/C++) 服務，並使用取樣方法收集處理序和執行緒並行資料。
@@ -47,7 +47,7 @@ ms.locfileid: "98801086"
    > [!NOTE]
    > 大多數服務都需要 **/user** 和 **/crosssession** 選項。
 
-   | 選項 | 描述 |
+   | 選項 | Description |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **：**[ `Domain\` ]`UserName` | 指定要授與程式碼剖析工具存取權之帳戶的選擇性網域和使用者名稱。 |
    | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 |
@@ -68,7 +68,7 @@ ms.locfileid: "98801086"
 
 - 下表中成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|描述|
+    |選項|Description|
     |------------|-----------------|
     |[/globalon/globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [/processoff](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|

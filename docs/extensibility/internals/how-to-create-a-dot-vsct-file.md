@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47d38e68494f29947131bcc8ce3a2a59b2e8d48b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 66174d5de1abb4f5bdd23eeab0155a795cf0b634
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480365"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879978"
 ---
 # <a name="how-to-create-a-vsct-file"></a>如何：建立 .vsct 檔案
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bad18ab6-d956-47a6-a413-811cc26db5f5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d22ff6be694de69f105897821aba1b587955f748
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 3ca35f9e1c3c1340330ddbbe36ede540fe1e547d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879952"
 ---
 # <a name="c-structures-in-class-designer"></a>類別設計工具中的 c + + 結構
 

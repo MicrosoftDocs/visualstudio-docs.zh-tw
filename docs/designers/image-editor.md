@@ -9,15 +9,15 @@ f1_keywords:
 - vs.graphics.imageeditor
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc01e717c30c3f633f3dcd317313452373050539
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: bf8610f1db4b08d822d8a6c32172efde5efd0966
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880290"
 ---
 # <a name="image-editor"></a>影像編輯器
 
@@ -50,7 +50,7 @@ ms.locfileid: "93134775"
 2. 在 [加入新項目] 對話方塊中的 [已安裝] 下方，選取 [圖形]，然後為影像選取適當的檔案格式。
 
    > [!NOTE]
-   > 如果在 [新增項目] 對話方塊中沒有看到 [圖形] 分類，您可能需要安裝 **影像和 3D 模型編輯器** 元件。 關閉對話方塊，然後 **Tools**  >  從功能表列選取 [工具 **取得工具和功能**]，以開啟 **Visual Studio 安裝程式**。 選取 [個別元件] 索引標籤，然後選取 [遊戲與圖形] 分類下的 **影像和 3D 模型編輯器** 元件。 選取 [修改]。
+   > 如果在 [新增項目] 對話方塊中沒有看到 [圖形] 分類，您可能需要安裝 **影像和 3D 模型編輯器** 元件。 關閉對話方塊，然後  >  從功能表列選取 [工具 **取得工具和功能**]，以開啟 **Visual Studio 安裝程式**。 選取 [個別元件] 索引標籤，然後選取 [遊戲與圖形] 分類下的 **影像和 3D 模型編輯器** 元件。 選取 [修改]。
    >
    > ![影像與 3D 模型編輯器](media/image-3d-model-editors-component.png)
 
@@ -113,7 +113,7 @@ Truevision Graphics Adapter (TGA) 影像格式 (也稱為 Targa)。 一種 RLE �
 
 下表描述 [影像編輯器模式] 工具列上的項目，依照項目從左到右的位置順序列出：
 
-|工具列項目|說明|
+|工具列項目|Description|
 |------------------|-----------------|
 |**選取**|可讓您選取矩形的影像區域。 選取一個區域之後，您可以將它剪下、複製、移動、縮放、旋轉、翻轉或刪除。 當有作用中的選取範圍時，繪製工具只會影響選取的區域。|
 |**非標準的選取範圍**|可讓您選取不規則的影像區域。 選取一個區域之後，您可以將它剪下、複製、移動、縮放、旋轉、翻轉或刪除。 當有作用中的選取範圍時，繪製工具只會影響選取的區域。|
@@ -137,7 +137,7 @@ Truevision Graphics Adapter (TGA) 影像格式 (也稱為 Targa)。 一種 RLE �
 
 下表描述 [影像編輯器] 工具列上的項目，依照項目從上到下的位置順序列出：
 
-|工具列項目|說明|
+|工具列項目|Description|
 |------------------|-----------------|
 |**Pencil**|使用作用中色彩選取範圍來繪製毛邊筆觸。 您可以在 [屬性] 視窗中設定色彩和粗細。|
 |**Brush**|使用作用中色彩選取範圍來繪製無毛邊筆觸。 您可以在 [屬性] 視窗中設定色彩和粗細。|
@@ -160,7 +160,7 @@ Truevision Graphics Adapter (TGA) 影像格式 (也稱為 Targa)。 一種 RLE �
 
 下表描述不同種類的工具如何控制套用透明度的方式：
 
-|工具|說明|
+|工具|描述|
 |----------|-----------------|
 |**鉛筆**、**筆刷**、**噴槍**、**線條**、**矩形**、**圓角矩形**、**橢圓形**、**文字**|若要將作用中色彩選取範圍與影像混合，請在 [屬性] 視窗中，展開 [色板] 屬性群組並選取 [Alpha] 色板上的 [繪圖] 核取方塊，然後正常地繪圖。<br /><br /> 若要使用作用中色彩選取範圍來進行繪製並保留現有的影像 Alpha 值，請將 [Alpha] 色板的 [繪圖] 核取方塊取消選取，然後正常地繪圖。|
 |**填滿**|若要將作用中色彩選取範圍與影像混合，只要選擇要填滿的區域即可。<br /><br /> 若要使用現用色彩選取範圍（包括 Alpha 色板的值）來覆寫影像，請按住 **Shift** 鍵，然後選擇要填滿的區域。|
@@ -171,7 +171,7 @@ Truevision Graphics Adapter (TGA) 影像格式 (也稱為 Targa)。 一種 RLE �
 
 下表說明影像屬性：
 
-|屬性|說明|
+|屬性|描述|
 |--------------|-----------------|
 |寬度|影像的寬度。|
 |高度|影像的高度。|
@@ -216,7 +216,7 @@ Truevision Graphics Adapter (TGA) 影像格式 (也稱為 Targa)。 一種 RLE �
 
 下表描述有效的輔助按鍵組合：
 
-|CTRL|Shift|Alt|說明|
+|CTRL|Shift|Alt|Description|
 |----------|-----------|---------|-----------------|
 ||||調整所選區域的內容大小。|
 ||**Shift 鍵**||依比例調整所選區域的內容大小。|
@@ -288,7 +288,7 @@ Truevision Graphics Adapter (TGA) 影像格式 (也稱為 Targa)。 一種 RLE �
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[使用3D 資產來打造遊戲和應用程式](../designers/working-with-3-d-assets-for-games-and-apps.md)|提供可在 Visual Studio 中用來處理圖形資產 (例如紋理及影像、3D 模型和著色器效果) 之工具的概觀。|
 |[模型編輯器](../designers/model-editor.md)|描述如何使用 Visual Studio 模型編輯器來處理 3D 模型。|

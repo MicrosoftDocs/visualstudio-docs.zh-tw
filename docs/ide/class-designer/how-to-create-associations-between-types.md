@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 713b7349a6ccd008174b0f6c13c1df768cca65b5
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: e7cb4e344ca2ecde2f3644b57f0d26773b6294bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96933553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880524"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>如何：在類別設計工具中建立類型之間的關聯
 

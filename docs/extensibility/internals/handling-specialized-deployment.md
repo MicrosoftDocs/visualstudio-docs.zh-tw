@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 664625cd8737fb9a9a3e398716d750d6d9665529
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 279732f6019757c1a0d9fef566e8aaf1898dbdfb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480430"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880046"
 ---
 # <a name="handle-specialized-deployment"></a>處理特殊部署
 部署是專案的選擇性作業。 例如，Web 專案支援部署，讓專案更新 Web 服務器。 同樣地， **智慧型裝置** 專案支援部署，以將建立的應用程式複製到目標裝置。 專案子類型可透過實作為介面，提供特殊的部署行為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 。 此介面會定義一組完整的部署作業：

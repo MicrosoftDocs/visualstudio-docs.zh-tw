@@ -5,14 +5,14 @@ ms.date: 11/17/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 992c97b188535fb39548fca4fd9d02d588a45474
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 4bd059fa82f8a959d6e3b8a843f19cbec636fb7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880407"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>使用 XAML 設計工具的設計階段資料 Visual Studio
 
@@ -189,7 +189,7 @@ xmlns:models="clr-namespace:Cities.Models"
 
 請嘗試關閉並重新開啟 XAML 檔案，並清除並重建您的專案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 Xamarin 預覽設計階段資料](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
 - [WPF 應用程式中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

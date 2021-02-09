@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 39be066e63a04c08eecd92395757d09b88333965
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 2a4df840a2eaa6077589b86b28aab1a7f83c8f55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879796"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入門：從現有程式碼建立 Python 專案
 
@@ -26,9 +26,9 @@ ms.locfileid: "90100744"
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-如有需要，請按下**Ctrl** + **F5**或選取 [ **Debug**  >  **啟動時不進行調試**程式] 來執行程式。
+如有需要，請按下 **Ctrl** + **F5** 或選取 [   >  **啟動時不進行調試** 程式] 來執行程式。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [教學課程：在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

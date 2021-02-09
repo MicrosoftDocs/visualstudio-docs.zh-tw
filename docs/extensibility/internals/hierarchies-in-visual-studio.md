@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a7126f52517b1028cf878750294f1d4c7dbfe26
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 826ef8f7836aaea0b934bb2a7fa8f568492f0b1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480352"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880004"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio 中的階層
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) *會將* 專案顯示為階層。 在 IDE 中，階層是節點的樹狀結構，其中每個節點都有一組相關聯的屬性。 *專案* 階層是一個容器，可保存專案的專案、專案的關聯性，以及專案的相關屬性和命令。
