@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 778602cc29049d855c418fd8fa416feb1ad8e9fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f03bef276d4f4aada1a173c45defd100e4becbf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928685"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 此介面代表程式碼指令的開始位置。 在現今大部分的執行時間架構中，可以將程式碼內容視為程式執行資料流程中的位址。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDebugCodeContext2 : IDebugMemoryContext2
+IDebugCodeContext2 : IDebugMemoryContext2
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
@@ -43,9 +43,9 @@ IDebugCodeContext2 : IDebugMemoryContext2
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|取得此程式碼內容的語言資訊。|
 
 ## <a name="remarks"></a>備註
- 介面和 IDebugMemoryCoNtext2 介面之間的主要差異在於， `IDebugCodeContext2` [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) `IDebugCodeContext2` 一律會對齊指令。 這表示 `IDebugCodeContext2` 一定會指向指示的開頭，而 `IDebugMemoryContext2` 可能會指向執行時間架構中的任何位元組記憶體。 `IDebugCodeContext2` 會以指示遞增，而不是基本的儲存體大小 (通常是位元組) 。
+ 介面和 IDebugMemoryCoNtext2 介面之間的主要差異在於， `IDebugCodeContext2` [](../../../extensibility/debugger/reference/idebugmemorycontext2.md) `IDebugCodeContext2` 一律會對齊指令。 這表示 `IDebugCodeContext2` 一定會指向指示的開頭，而 `IDebugMemoryContext2` 可能會指向執行時間架構中的任何位元組記憶體。 `IDebugCodeContext2` 會以指示遞增，而不是基本的儲存體大小 (通常是位元組) 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio
@@ -58,5 +58,5 @@ IDebugCodeContext2 : IDebugMemoryContext2
 - [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)
 - [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)
 - [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)
-- [下一個](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)
+- [下一步](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

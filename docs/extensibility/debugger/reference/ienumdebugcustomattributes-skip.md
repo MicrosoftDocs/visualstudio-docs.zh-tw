@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 54c72e23-cd4c-4746-935c-abea8057dd1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 25086724f1fde63737275aa7995f532f119bbf82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93b2d9176af4fe3a5a91e76e7f8890b8a4e3d79f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717139"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929236"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
 略過列舉序列中指定數目的自訂屬性。
@@ -28,7 +28,7 @@ ms.locfileid: "80717139"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT Skip ( 
+HRESULT Skip ( 
    ULONG celt
 );
 ```

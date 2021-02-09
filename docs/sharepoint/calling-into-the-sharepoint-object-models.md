@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 14358b5cc84f63227fd5001731c261002a324492
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928935"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>呼叫 SharePoint 物件模型
   當您在 Visual Studio 中建立 SharePoint 工具的延伸模組時，您可能必須呼叫 SharePoint Api 來執行某些工作。 例如，如果您建立 SharePoint 專案的自訂部署步驟，您可能必須呼叫 SharePoint Api 來執行一些工作，以部署方案。
@@ -56,7 +56,7 @@ ms.locfileid: "94850048"
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>瞭解如何執行 SharePoint 命令
  定義 SharePoint 命令的元件會載入名為 *vssphost4.exe* 的64位主機進程中。 當您在 SharePoint 工具擴充功能中呼叫 SharePoint 命令之後，命令會由 *vssphost4.exe* 執行，而不是32位 Visual Studio 進程 (*devenv.exe*) 。 您可以藉由設定登錄中的值，來控制如何執行 SharePoint 命令的某些層面。 如需詳細資訊，請參閱 [Visual Studio 中 SharePoint 工具的 Debug 擴充](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)功能。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：建立 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [How to：執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [SharePoint 工具擴充功能的程式設計模型總覽](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)

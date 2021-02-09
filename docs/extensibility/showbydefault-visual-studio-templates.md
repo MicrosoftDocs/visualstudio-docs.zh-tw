@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b17a9a29b55721695509deed6b3d33cc7554aa9
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5cacf6f6774ad1c0f29ff81407848b23cb3b170d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903971"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928116"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a> (Visual Studio 範本的 ShowByDefault 元素) 
 如果為 `false` ，則指定範本只會顯示在指定的 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)下。
@@ -29,7 +29,7 @@ ms.locfileid: "94903971"
  \<VSTemplate> \<TemplateData>
  \<ShowByDefault>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <ShowByDefault> true/false </ShowByDefault>
@@ -46,7 +46,7 @@ ms.locfileid: "94903971"
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 

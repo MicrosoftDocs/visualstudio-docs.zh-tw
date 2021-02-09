@@ -6,15 +6,15 @@ ms.topic: how-to
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: madskristensen
 ms.author: madsk
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6f0d126853c518692725d495586b3adfa57c9aa
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 696afd04e5b2fa62fc4f467ea6606b4a9ff0f59e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928077"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>如何回報 Visual Studio 或 Visual Studio 安裝程式的問題
 
@@ -86,7 +86,7 @@ ms.locfileid: "97761351"
 
 如果您沒有要回報的問題，但想要建議某項功能，也有一個地方可以這麼做。 如需詳細資訊，請參閱[提出功能建議](https://aka.ms/feedback/suggest?space=8)頁面。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [開發人員社群指導方針](./developer-community-guidelines.md)
 * [Visual Studio 意見反應選項](../ide/feedback-options.md)

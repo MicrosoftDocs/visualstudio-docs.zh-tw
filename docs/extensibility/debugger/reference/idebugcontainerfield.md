@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a72296517a64c6dcfcb8e347fb00588504aa75a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e7ed9e573236f0bdeff9c9a8433af322a5a5f79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928493"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 此介面代表做為其他符號或類型之容器的符號或類型。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDebugContainerField : IDebugField
+IDebugContainerField : IDebugField
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
@@ -44,7 +44,7 @@ IDebugContainerField : IDebugField
 ## <a name="remarks"></a>備註
  變數) 的陣列 (容器、適用于方法和變數的類別 (容器) 和方法 (容器的參數和區域變數) 為容器的範例。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio

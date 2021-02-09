@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e044ecbf2309d4d858c16afbdddc130b4661005
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 97926070bd06e4e8a99a4d6b2fe59e4ea57233ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929221"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>如何：將視圖附加至檔資料
 如果您有新的檔視圖，則可以將它附加到現有的檔資料物件。

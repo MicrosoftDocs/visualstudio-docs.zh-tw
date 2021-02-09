@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d110e66e937249fdee34f424d4f68a9b914113d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6faa47bc107c8d00864307bdb6802908e085652
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928464"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 這個介面可讓您存取執行進程之伺服器的相關資訊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCoreServer3 : IDebugCoreServer2
@@ -51,7 +51,7 @@ IDebugCoreServer3 : IDebugCoreServer2
 ## <a name="remarks"></a>備註
  自訂埠供應商會在呼叫[事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)時收到[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)介面。 您 `IDebugCoreServer3` 可以從該介面取得介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

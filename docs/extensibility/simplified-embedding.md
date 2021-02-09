@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99aaf5070646bbbb95c6be98eb8ac2f7a5948ff2
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: f62e3a4f33193f36e76b1286ae3d35d26706b3ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928090"
 ---
 # <a name="simplified-embedding"></a>簡化嵌入
 當編輯器的檔視圖物件是父代（ (也就是) 的子系 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，而 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 介面會實作為處理其視窗命令）時，就會在編輯器中啟用簡化嵌入。 簡化的內嵌編輯器無法裝載活動控制項。 下圖顯示用來建立具有簡化內嵌之編輯器的物件。

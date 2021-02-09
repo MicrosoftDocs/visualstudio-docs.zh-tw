@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 114862bb3358cc2a5400d6f40031deb030e4e4df
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 8df7a4be9c8a270feebd7e27d25c006eb4dc5817
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927934"
 ---
 # <a name="source-control-plug-in-api-functions"></a>原始檔控制外掛程式 API 函式
 原始檔控制外掛程式 API 提供下列函式，這些函式必須由原始檔控制外掛程式根據此 API 來執行。 這項參考會詳細說明每個函式的簽章，以及與位旗標和其他參數相關聯的語法。
@@ -87,6 +87,6 @@ ms.locfileid: "97715986"
 
  依預設，環境 SDK common include 資料夾中提供的 (*[磁片磁碟機]* \Program Files\VSIP 8.0 \ EnvSDK\common\inc;此外，也會在具有 MSSCCI 範例的 VSIP 資料夾中提供 *[磁片磁碟機]* \Program Files\VSIP 8.0 \ MSSCCI) 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
 - [建立原始檔控制外掛程式](../extensibility/internals/creating-a-source-control-plug-in.md)

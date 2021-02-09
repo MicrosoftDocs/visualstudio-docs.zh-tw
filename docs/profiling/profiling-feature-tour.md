@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 849b9d7bd6aca3fa56cb0106bea844ce1fa56b73
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: bfd7055303fed2c18501d5eea3b49b34c68ec248
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929104"
 ---
 # <a name="first-look-at-profiling-tools"></a>初步認識分析工具
 
@@ -231,12 +231,12 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |[CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md)|是|是|是|
 |[記憶體使用量](../profiling/memory-usage.md)|是|是|是|
 |[.NET 物件配置](../profiling/dotnet-alloc-tool.md)|是 ( 僅限 .NET) |是|是|
-|[GPU 使用量](./gpu-usage.md)|是|是|否|
-|[應用程式時間軸](../profiling/application-timeline.md)|是 (XAML) |是|否|
+|[GPU 使用量](./gpu-usage.md)|是|是|不可以|
+|[應用程式時間軸](../profiling/application-timeline.md)|是 (XAML) |是|不可以|
 |[事件檢視器](../profiling/events-viewer.md)|是|是|是|
 |[.NET Async](../profiling/analyze-async.md)|是 ( 僅限 .NET) |是|是|
-|[Database](../profiling/analyze-database.md)|是 ( 僅限 .NET Core) |否|是 (只 ASP.NET Core) |
-|[效能總管](#analyze-performance-legacy-tools)|否|否|否|
+|[資料庫](../profiling/analyze-database.md)|是 ( 僅限 .NET Core) |不可以|是 (只 ASP.NET Core) |
+|[效能總管](#analyze-performance-legacy-tools)|否|否|不可以|
 |[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|
 ::: moniker-end
 
@@ -245,16 +245,16 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |----------------------|---------------------|-------------|-------------|
 |[CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md)|是|是|是|
 |[記憶體使用量](../profiling/memory-usage.md)|是|是|是|
-|[GPU 使用量](./gpu-usage.md)|是|是|否|
-|[應用程式時間軸](../profiling/application-timeline.md)|是 (XAML) |是|否|
+|[GPU 使用量](./gpu-usage.md)|是|是|不可以|
+|[應用程式時間軸](../profiling/application-timeline.md)|是 (XAML) |是|不可以|
 |[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|
-|[效能總管](../profiling/performance-explorer.md)|是|否|是|
+|[效能總管](../profiling/performance-explorer.md)|是|不可以|是|
 |[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|
-|[網路使用量](../profiling/network-usage.md)|否|是|否|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|否|對 HTML 為是，對 XAML 為否|否|
-|[JavaScript 記憶體](../profiling/javascript-memory.md)|否|對 HTML 為是，對 XAML 為否|否|
+|[網路使用量](../profiling/network-usage.md)|不可以|是|不可以|
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|不可以|對 HTML 為是，對 XAML 為否|不可以|
+|[JavaScript 記憶體](../profiling/javascript-memory.md)|不可以|對 HTML 為是，對 XAML 為否|不可以|
 ::: moniker-end
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 偵錯](../debugger/debugger-feature-tour.md)

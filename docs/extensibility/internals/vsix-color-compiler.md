@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e50cd1f1c8c3ff7f86cd00e4b384f548c7ec9d21
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 7e6e4a07a023be398c4106984fe4dc33eddd2706
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929195"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 色彩編譯器
 Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，它會採用代表現有 Visual Studio 主題色彩的 .xml 檔案，並將其將至 .pkgdef 檔案，以便在 Visual Studio 中使用這些色彩。 因為比較簡單的方式是比較 .xml 檔案之間的差異，所以此工具對於管理原始檔控制中的自訂色彩相當有用。 它也可以連結到組建環境，讓組建的輸出成為有效的 .pkgdef 檔案。
@@ -52,7 +52,7 @@ Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，
 </Theme>
 ```
 
-|**Attribute**|**[定義]**|
+|**Attribute**|**定義**|
 |-|-|
 |名稱|必主題的名稱|
 |GUID|必主題的 GUID (必須符合 GUID 格式) |
@@ -76,7 +76,7 @@ Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，
  </Category>
 ```
 
-|**Attribute**|**[定義]**|
+|**Attribute**|**定義**|
 |-|-|
 |名稱|必類別目錄的名稱|
 |GUID|必類別的 GUID (必須符合 GUID 格式) |
@@ -92,7 +92,7 @@ Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，
  </Color>
 ```
 
-|**Attribute**|**[定義]**|
+|**Attribute**|**定義**|
 |-|-|
 |名稱|必色彩的名稱|
 
@@ -105,7 +105,7 @@ Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，
 <Foreground Type="type" Source="int" />
 ```
 
-|**Attribute**|**[定義]**|
+|**Attribute**|**定義**|
 |-|-|
 |類型|必色彩的類型。 可以是下列其中一項：<br /><br /> *CT_INVALID：* 色彩無效或未設定。<br /><br /> *CT_RAW：* 原始的 ARGB 值。<br /><br /> *CT_COLORINDEX：* 請勿使用。<br /><br /> *CT_SYSCOLOR：* 來自 SysColor 的 Windows 系統色彩。<br /><br /> *CT_VSCOLOR：* __VSSYSCOLOREX 的 Visual Studio 色彩。<br /><br /> *CT_AUTOMATIC：* 自動色彩。<br /><br /> *CT_TRACK_FOREGROUND：* 請勿使用。<br /><br /> *CT_TRACK_BACKGROUND：* 請勿使用。|
 |來源|必以十六進位表示的色彩值|
@@ -135,7 +135,7 @@ Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，
 
  **引數**
 
-|**交換器名稱**|**備註**|**必要或選擇性**|
+|**交換器名稱**|**注意事項**|**必要或選擇性**|
 |-|-|-|
 |未命名的 ( .xml 檔案) |這是第一個未命名的參數，是要轉換之 XML 檔案的路徑。|必要|
 |未命名的 ( .pkgdef 檔案) |這是第二個未命名的參數，而且是所產生之 .pkgdef 檔案的輸出路徑。<br /><br /> 預設值： \<XML Filename> . .pkgdef|選擇性|
@@ -149,7 +149,7 @@ Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，
 
 - VsixColorCompiler D:\xml\colors.xml/noLogo
 
-## <a name="notes"></a>備忘稿
+## <a name="notes"></a>備註
 
 - 這項工具需要安裝最新版本的 VC + + 執行時間。
 

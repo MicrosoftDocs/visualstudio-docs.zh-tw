@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180162988cbb09f98b7fc2e8f33f6b5d0ed322ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6796e2d4f3a7fa20e4bcab4088b6687866edf570
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928259"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 偵錯工具引擎會使用這個介面 (DE) 將訊息傳送至需要使用者回應的 Visual Studio。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugMessageEvent2 : IUnknown
@@ -51,7 +51,7 @@ IDebugMessageEvent2 : IUnknown
 
  使用 [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) 介面，將訊息傳送至不需要使用者回應的 Visual Studio。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

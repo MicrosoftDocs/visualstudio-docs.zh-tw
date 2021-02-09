@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b32042ed-7a06-4b4a-99ef-fe03b0aa61cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d13fa3821a6d7bf861cd160a5588d0788b92243
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85224fcdeaa59c7d2046e1c936deff23681ce0d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928181"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
 取得組成屬性值的記憶體位元組。
@@ -28,13 +28,13 @@ ms.locfileid: "80721473"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetMemoryBytes ( 
+HRESULT GetMemoryBytes ( 
    IDebugMemoryBytes2** ppMemoryBytes
 );
 ```
 
 ```csharp
-int GetMemoryBytes ( 
+int GetMemoryBytes ( 
    out IDebugMemoryBytes2 ppMemoryBytes
 );
 ```

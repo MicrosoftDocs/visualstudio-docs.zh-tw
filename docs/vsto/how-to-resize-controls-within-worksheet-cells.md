@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], resizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ba2a77dc44618c0415e645718aff3ead542b4b48
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7b62d3fed62b4d17b9f1918b76760593b38d83a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525346"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927817"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>如何：調整工作表儲存格內的控制項大小
   當您調整工作表上的資料行或資料列時，資料格內的任何主控制項都會自動調整大小，以調整大小的儲存格高度或寬度。 Windows Forms 控制項預設不會自動調整大小。

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 201f6e7845f1294892836de4cca24195fb0f1596
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672329"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928233"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 項目 (Visual Studio 項目範本)
 指定包含在專案範本中的檔案。
@@ -32,7 +32,7 @@ ms.locfileid: "94672329"
  \<VSTemplate> \<TemplateContent>
  \<ProjectItem>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <ProjectItem
@@ -50,7 +50,7 @@ ms.locfileid: "94672329"
 
 ### <a name="attributes"></a>屬性
 
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |---------------------| - |
 | `SubType` | 選擇性屬性。<br /><br /> 指定多檔案專案範本中專案的子類型。 此值可用來判斷 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 將用來開啟專案的編輯器。 |
 | `CustomTool` | 選擇性屬性。<br /><br /> 設定專案檔中專案的 CustomTool。 |
@@ -63,7 +63,7 @@ ms.locfileid: "94672329"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|指定範本的內容。|
 
