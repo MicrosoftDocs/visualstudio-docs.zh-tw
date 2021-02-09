@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: baa607e62732cdf0e04413e07966658bb6a0b8f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4a697a4677b6bedef376e602c4327dff66ead53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915422"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 從停止狀態繼續執行此進程。 任何先前的執行狀態 (（例如步驟) ）都會清除，而且進程會再次開始執行。
@@ -31,14 +31,14 @@ ms.locfileid: "86386507"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT Execute(
-   IDebugThread2* pThread
+HRESULT Execute(
+   IDebugThread2* pThread
 );
 ```
 
 ```csharp
-int Execute(
-   IDebugThread2 pThread
+int Execute(
+   IDebugThread2 pThread
 );
 ```
 
@@ -50,7 +50,7 @@ int Execute(
  如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 當使用者從其他進程的執行緒中的停止狀態開始執行時，會在這個進程上呼叫這個方法。 當使用者從 IDE 中的 [**調試**程式] 功能表選取 [**啟動**] 命令時，也會呼叫這個方法。 這種方法的執行方式，可以像在進程中的目前線程上呼叫 [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) 方法一樣簡單。
+ 當使用者從其他進程的執行緒中的停止狀態開始執行時，會在這個進程上呼叫這個方法。 當使用者從 IDE 中的 [**調試** 程式] 功能表選取 [**啟動**] 命令時，也會呼叫這個方法。 這種方法的執行方式，可以像在進程中的目前線程上呼叫 [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) 方法一樣簡單。
 
 > [!WARNING]
 > 在處理此呼叫時，請勿將停止事件或立即 (同步) 事件傳送到 [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ;否則，偵錯工具可能會停止回應。

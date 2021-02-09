@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 288922be-ba3f-411e-af50-bba39c9529cc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 983c053ca6bd1370cf67cb04eeb2626c2b1217aa
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 2edcf359bd54774647ff1a5957d741fec25b60a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915808"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：偵錯自我裝載的 WCF 服務
 「自我裝載服務」是一項不會在 IIS、WCF 服務主機或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 程式開發伺服器內部執行的 WCF 服務。 若要將自我裝載的 WCF 錯用，最簡單的方式是將設定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 為在您選擇 [**調試** 程式] 功能表上的 [**開始調試** 程式] 時同時啟動用戶端和伺服器。
@@ -53,7 +53,7 @@ ms.locfileid: "97398723"
 
    5. 在對應至用戶端專案的行上，按一下 [ **動作** ]，然後選擇 [ **啟動**]。
 
-   6. 按一下 [確定]。
+   6. 按一下 [確定]  。
 
 ## <a name="see-also"></a>另請參閱
 - [偵錯 WCF 服務](../debugger/debugging-wcf-services.md)

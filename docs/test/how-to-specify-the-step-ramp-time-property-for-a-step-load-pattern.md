@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: b3beb0b8bb026f996583ab3f209bb525a45a0be2
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: 9d630d84124bb132c82389ecf73af24aac7e1a49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915791"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>如何：指定步驟負載模式的逐步遞增時間屬性
 

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c158453421d9e4f899a7cfed7118be8e5871356c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: b5319526da9aa59951729389749e53f3df65b643
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915720"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>如何：建立基本 Phong 著色器
 
@@ -27,19 +27,19 @@ Phong 光源模型擴充 Lambert 光源模型以納入反射強光，模擬表�
 
 如需 Lambert 光源模型的詳細資訊，請參閱[如何：建立基本 Lambert 著色器](../designers/how-to-create-a-basic-lambert-shader.md)。
 
-開始之前，請確定已顯示 [屬性]  視窗和 [工具箱]  。
+開始之前，請確定已顯示 [屬性] 視窗和 [工具箱]。
 
 1. 建立 Lambert 著色器，如[如何：建立基本 Lambert 著色器](../designers/how-to-create-a-basic-lambert-shader.md)中所述。
 
-2. 中斷 [Lambert]  節點和 [完稿色彩]  節點的連接。 選擇 [Lambert]  節點的 [RGB]  端點，然後選擇 [中斷連結]  。 這樣會替下一個步驟加入的節點留出空間。
+2. 中斷 [Lambert]節點和 [完稿色彩]節點的連接。 選擇 [Lambert] 節點的 [RGB] 端點，然後選擇 [中斷連結]。 這樣會替下一個步驟加入的節點留出空間。
 
-3. 將 [加入]  節點加入圖形。 在 [工具箱]  的 [數學]  下，選取 [加入]  ，並將其移至設計介面。
+3. 將 [加入] 節點加入圖形。 在 [工具箱] 的 [數學] 下，選取 [加入]，並將其移至設計介面。
 
-4. 將 [反射]  節點加入圖形。 在 [工具箱]  的 [工用程式]  下，選取 [反射]  ，並將其移至設計介面。
+4. 將 [反射] 節點加入圖形。 在 [工具箱] 的 [工用程式] 下，選取 [反射]，並將其移至設計介面。
 
-5. 加入反射比重。 將 [反射]  節點的 [輸出]  端點移至 [加入]  節點的 [X]  端點，然後將 [Lambert]  節點的 [輸出]  端點移至 [加入]  節點的 [Y]  端點。 這些連接結合像素的總擴散和反射色彩比重。
+5. 加入反射比重。 將 [反射] 節點的 [輸出] 端點移至 [加入] 節點的 [X] 端點，然後將 [Lambert] 節點的 [輸出] 端點移至 [加入] 節點的 [Y] 端點。 這些連接結合像素的總擴散和反射色彩比重。
 
-6. 將計算後的色彩值連接到完稿色彩。 將 [加入]  節點的 [輸出]  端點移至 [完稿色彩]  節點的 [RGB]  端點。
+6. 將計算後的色彩值連接到完稿色彩。 將 [加入] 節點的 [輸出] 端點移至 [完稿色彩] 節點的 [RGB] 端點。
 
    下圖顯示完成的著色器圖形和套用至茶壺模型的著色器預覽。
 

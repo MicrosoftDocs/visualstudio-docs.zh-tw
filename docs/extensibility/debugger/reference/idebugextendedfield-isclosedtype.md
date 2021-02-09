@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 9136fc57-74ff-4fe4-a6e2-b137cb9d5b08
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4524d7c899480518e669f1f77a4756a83e0cf52f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 404b1852e0db27673ea62569b25013a7f999f16d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915495"
 ---
 # <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
 判斷欄位是否代表封閉型別。

@@ -7,16 +7,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Attribute glossary
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0c406f8900ee890eaf8419ce27adeba2d06c81dd
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 2d82e240b33841a390acc5afbdfa1f568797e47e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915780"
 ---
 # <a name="attribute-glossary"></a>屬性字彙
 

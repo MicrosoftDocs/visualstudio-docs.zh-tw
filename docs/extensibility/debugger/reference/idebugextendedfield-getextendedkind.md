@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 20dc1c13-3cc0-4bb4-9c99-fa85587c86c3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 942b14af9907e2c026372f295a59ac1f22f78bc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f431278997dcc02ecc60cd6bd4e8b9171d88dfb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729073"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915549"
 ---
 # <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
 抓取指定的延伸欄位種類。

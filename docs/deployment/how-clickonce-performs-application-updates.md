@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d54313c2-cf0c-420d-b151-99953a95f0bb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e0177f199f0178e9fe0221a4cb6daa58d36a6f87
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: cdef39a0ab07d4cb9c9f42cf897bd7728934b88d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915736"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce 執行應用程式更新的方式
 ClickOnce 會使用應用程式部署資訊清單中指定的檔案版本資訊，來決定是否要更新應用程式的檔案。 開始更新之後，ClickOnce 會使用稱為「檔案 *修補* 」的技術，以避免重複下載應用程式檔。

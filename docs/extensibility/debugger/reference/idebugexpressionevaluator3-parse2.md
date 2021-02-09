@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5254d30ed1a656bfd357fca822efa554d895807e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a82e729f3811f63a11aa8476ad23b566521c8cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729136"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915515"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 給定符號提供者和評估框架的位址，將運算式字串轉換為剖析的運算式。
@@ -83,7 +83,7 @@ HRESULT Parse2 (
 這個方法會產生剖析的運算式，而不是實際值。 已剖析的運算式已可供評估，也就是轉換成值。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)介面的**產生 cee**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)介面的 **產生 cee** 物件，執行這個方法。
 
 ```cpp
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
