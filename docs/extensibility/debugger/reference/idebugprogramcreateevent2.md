@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: b19a7934-6179-4a68-9075-bd7dcd640b05
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78088d6e5da61c32302c13b08143c9ed902452e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b73deab28f08ed9268033e941b64b753f64adf5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891016"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
 當程式附加至時，debug engine 會將這個介面傳送 (DE) 至會話 debug manager (SDM) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramCreateEvent2 : IUnknown
@@ -37,7 +37,7 @@ IDebugProgramCreateEvent2 : IUnknown
 ## <a name="remarks"></a>備註
  取消或自訂埠供應商會藉由呼叫[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)來發佈新的[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

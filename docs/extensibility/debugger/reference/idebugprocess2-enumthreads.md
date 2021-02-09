@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 05677385-7a7f-4545-8438-af00dde85db0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 52383649fc45eae6bbac6831f9bb233b9c0a2fde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c766ab8f12d9cda4348b9916d41b6182ccf67e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890184"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 抓取在進程中執行之所有線程的清單。
@@ -28,14 +28,14 @@ ms.locfileid: "80724065"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT EnumThreads(
-   IEnumDebugThreads2** ppEnum
+HRESULT EnumThreads(
+   IEnumDebugThreads2** ppEnum
 );
 ```
 
 ```csharp
-int EnumThreads(
-   out IEnumDebugThreads2 ppEnum
+int EnumThreads(
+   out IEnumDebugThreads2 ppEnum
 );
 ```
 

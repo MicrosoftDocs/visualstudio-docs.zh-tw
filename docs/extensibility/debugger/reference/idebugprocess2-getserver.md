@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8f73c530-cceb-4f1f-8c63-1cc0ccd4a310
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5f54faf50f5307a1c4c67d07efccd5747918e322
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3e8a1553d374f7eaddaace3e3a2ad4a0c882b20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890067"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 取得此進程正在其上執行的伺服器。
@@ -28,14 +28,14 @@ ms.locfileid: "80723895"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetServer( 
-   IDebugCoreServer2** ppServer
+HRESULT GetServer( 
+   IDebugCoreServer2** ppServer
 );
 ```
 
 ```csharp
-int GetServer( 
-   out IDebugCoreServer2 ppServer
+int GetServer( 
+   out IDebugCoreServer2 ppServer
 );
 ```
 

@@ -23,15 +23,15 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f73d8727fb960cf519d368d928aa20cae38ae1a9
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f05e2035338ea4c2d0e45bb9d135d618b938e4ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889534"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>提供專案專案中的封裝和部署資訊
   中的所有 SharePoint 專案專案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 都有屬性，可讓您在專案部署至 SharePoint 時，用來提供額外的資料。 這些屬性如下所示：

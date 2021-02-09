@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2d745619be8bff77503bc14a1d7a87d84cc7864
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0f77afea813158c787978e2ea4dbec1a55e36eca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890626"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE 中的選取項目和貨幣
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 使用選取內容來維護使用者目前選取之物件的相關資訊。 透過選取內容，Vspackage 可以透過兩種方式參與貨幣追蹤：
@@ -64,6 +64,6 @@ ms.locfileid: "97875592"
 
 - 變更在視窗框架選取內容中追蹤之元素的事件。 範例包括在 DocObject 中變更選取範圍，或變更專案類型視窗中的選取範圍。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [選取項目內容物件](../../extensibility/internals/selection-context-objects.md)
 - [使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)

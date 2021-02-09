@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 257fa167-b46e-4ffb-9a12-272efbf26702
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b28189b3f0a07a27f5e4478f64963a63d634db5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 134c1edabb7df7a5cb7f26ce1b7b7487daa78e37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890197"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
@@ -25,10 +25,10 @@ ms.locfileid: "80725485"
 
  此介面代表指標物件。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDebugPointerObject : IDebugObject
+IDebugPointerObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
@@ -49,7 +49,7 @@ IDebugPointerObject : IDebugObject
 ## <a name="remarks"></a>備註
  運算式評估工具會使用此介面來表示剖析樹狀結構中的指標。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： ee. h
 
  命名空間： VisualStudio

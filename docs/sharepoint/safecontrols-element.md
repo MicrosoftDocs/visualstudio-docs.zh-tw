@@ -11,20 +11,20 @@ helpviewer_keywords:
 - SafeControls element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 23e31e3df59d6d580ac94ffcb83f7a17e186a267
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440671"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889443"
 ---
 # <a name="safecontrols-element"></a>SafeControls 項目
   ASPX 控制項和 Web 組件的集合，可在 SharePoint 網站上的任何 ASPX 頁面上，指定為可存取的任何使用者的安全。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <SafeControls>
@@ -40,13 +40,13 @@ ms.locfileid: "95440671"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[SafeControl](../sharepoint/safecontrol-element.md)|選擇性項目。<br /><br /> 代表在 SharePoint 網站上的任何 ASPX 頁面上，指定為可存取之任何使用者的 ASPX 控制項或網頁元件。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 專案專案。 這個元素是 *.spdata* 檔案的必要根項目。|
 

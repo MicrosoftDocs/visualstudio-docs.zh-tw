@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 111f65d8-5a1a-42b3-9de3-dd9bb03a33fd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bbc5c5128c1235c7ee46300a1cd45f92b53d243d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a8a58b2fc328f5659736e2ceb399bda62dc90cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725154"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891094"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 判斷是否可以終止進程。
@@ -28,13 +28,13 @@ ms.locfileid: "80725154"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT CanTerminateProcess( 
+HRESULT CanTerminateProcess( 
    IDebugProcess2* pPortProcess
 );
 ```
 
 ```csharp
-HRESULT CanTerminateProcess( 
+HRESULT CanTerminateProcess( 
    IDebugProcess2 pPortProcess
 );
 ```

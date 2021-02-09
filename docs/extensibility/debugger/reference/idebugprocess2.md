@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72659491ec6718397a4fbb494175eea0896c7f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd644a728f049cf8b94f22ef961464b8bfcb5816
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891068"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 此介面代表在埠上執行的處理常式。 如果埠是本機埠，則 `IDebugProcess2` 通常代表本機電腦上的實體處理常式。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProcess2 : IUnknown
@@ -61,7 +61,7 @@ IDebugProcess2 : IUnknown
 ## <a name="remarks"></a>備註
  `IDebugProcess2`包含一或多個[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Msdbg。h
 
  命名空間： VisualStudio
@@ -73,7 +73,7 @@ IDebugProcess2 : IUnknown
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
 - [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
-- [下一個](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)
+- [下一步](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)
 - [事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
 - [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

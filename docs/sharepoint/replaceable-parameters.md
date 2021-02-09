@@ -14,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, replaceable parameters
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload: office
-ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3eb6e737a1f939e05e6a6be7f2c9ba950fc411d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889495"
 ---
 # <a name="replaceable-parameters"></a>可替換的參數
   可以在專案檔內使用可取代的參數或 *權杖*，以提供在設計階段不知道其實際值的 SharePoint 方案專案的值。 它們類似于標準範本權杖的功能 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 如需詳細資訊，請參閱 [範本參數](../ide/template-parameters.md)。

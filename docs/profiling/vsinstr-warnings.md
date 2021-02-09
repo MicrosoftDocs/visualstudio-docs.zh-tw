@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 47512bc9-a8e9-4628-883a-d9888edab786
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d5510c475ab566e65d2bd152136535fde62f257b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ed42588f7135b4664b7f65dfcd8c0d979a523aeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723123"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890483"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出 *VSInstr.exe* 工具所發出的警告。 若要隱藏警告訊息使其不出現，您可以使用 NOWARN 選項以及警告編號。
 
-|警告編號|描述|
+|警告編號|Description|
 |--------------------|-----------------|
 |**VSP1026**|不參考 MSCorLib 的程式庫不支援涵蓋範圍。 此情況常見於可攜式程式庫。<br /><br />[/EnableCodeCoverage](../test/vstest-console-options.md) 命令列選項是 .NET Core 的必要選項。|
 |**VSP2000**|內部錯誤。 無法取得這個可執行檔的模組檔案名稱。|

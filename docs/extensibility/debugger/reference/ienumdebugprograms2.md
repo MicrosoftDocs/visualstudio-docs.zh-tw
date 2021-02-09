@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1717397d9ff073642c7b6bc25ad85babe76d684c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04566b4a8dae7f25f799d08780c93936009adef8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890743"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 這個介面會列舉在目前的 debug 會話中執行的程式。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugPrograms2 : IUnknown
@@ -39,7 +39,7 @@ IEnumDebugPrograms2 : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|以列舉順序抓取指定的程式數目。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|以列舉順序抓取指定的程式數目。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|略過列舉序列中指定的程式數目。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugprograms2-reset.md)|將列舉順序重設為開頭。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
@@ -48,15 +48,15 @@ IEnumDebugPrograms2 : IUnknown
 ## <a name="remarks"></a>備註
  Visual Studio 使用此介面來：
 
-- 藉由呼叫[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) ，然後在每個程式) 上呼叫[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) ，來填入 [**模組**] 視窗 (。
+- 藉由呼叫 [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) ，然後在每個程式) 上呼叫 [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) ，來填入 [**模組**] 視窗 (。
 
-- 藉由**Attach to Process**呼叫 `IDebugProcess2::EnumPrograms` ，然後呼叫每個[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面上的[QueryInterface](/cpp/atl/queryinterface)來取得[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)介面) ，以填入附加至進程清單 (。
+- 藉由呼叫 `IDebugProcess2::EnumPrograms` ，然後呼叫每個[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面上的[QueryInterface](/cpp/atl/queryinterface)來取得[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)介面) ，以填入附加至進程清單 (。
 
 - 產生可在程式 (使用 [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)) 來偵測每個程式的 DEs 清單。
 
 - 藉由呼叫 IDebugProcess2：： EnumPrograms，然後呼叫 [GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)) ，對每個程式 (套用 [編輯後繼續] (ENC) 更新。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

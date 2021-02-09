@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a46f24adde12415acc20a6afd7298c491a3188c0
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 6424c2280f3f5eaaedadc6a2f1afebfd1109f1c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891302"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt; (啟動載入器) 的產品 &gt; 元素
 專案 `Product` 是產品檔案內的最上層 XML 元素。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Product
@@ -142,7 +142,7 @@ ProductCode
 ## <a name="elements-and-attributes"></a>元素和屬性
  `Product`產品檔中需要有元素。 它具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`ProductCode`|產品的唯一識別碼。|
 
@@ -251,5 +251,5 @@ ProductCode
 </Product>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)

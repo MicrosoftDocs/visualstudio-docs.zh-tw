@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51b47156b73d81f427c08e62006dc6e457e5780b
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 88c37bbdf49fe1c73a3f087058256a2c58ae9602
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889754"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 

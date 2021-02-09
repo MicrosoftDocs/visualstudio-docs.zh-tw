@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5fdfe6e3-b94e-4edb-acc5-41d8773d8ca5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a10f306b6c507f6db7add17931b8a38d926a37d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 726ae6c0f56f177a6baa6f463e843378fdc0acea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890821"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
@@ -28,7 +28,7 @@ ms.locfileid: "80718061"
 
  這個介面可讓您透過型別視覺化程式來變更物件的值。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEEVisualizerDataProvider : IUnknown
@@ -52,7 +52,7 @@ IEEVisualizerDataProvider : IUnknown
 ## <a name="remarks"></a>備註
  視覺化程式服務 (以 [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) 介面表示，並由 [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) 所傳回) 保留對執行介面之物件的參考 `IEEVisualizerDataProvider` 。 如此一來， `IEEVisualizerDataProvider` 如果物件會維護物件的參考，則不應在執行 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 的相同物件上實介面 `IEEVisualizerService` ：迴圈參考結果，以及當物件終結時，就會發生鎖死。 建議的方法是 `IEEVisualizerDataProvider` 在物件委派的另一個物件上執行， `IDebugProperty2` 而不需要 `IUnknown::AddRef` 對其進行呼叫。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： ee. h
 
  命名空間： VisualStudio

@@ -5,17 +5,17 @@ ms.date: 09/10/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 367b3681d2ff8a828ee45f59359043b5fede3d26
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: d42f16e62437eac856c63e5436f4d3243bbae004
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668101"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889768"
 ---
 # <a name="visual-studio-on-arm-powered-devices"></a>ARM 驅動裝置上的 Visual Studio
 

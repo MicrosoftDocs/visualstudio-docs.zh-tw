@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, reference for project and tools extensibility
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5fcc1117c88f19eaae7633698dee1698a8108fdb
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: bd996539e5f0291bb31e153771735399a8874701
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440710"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889508"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a> (SharePoint 工具擴充性的參考) 
 

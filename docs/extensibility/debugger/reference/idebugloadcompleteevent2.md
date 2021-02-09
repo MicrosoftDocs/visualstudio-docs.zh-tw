@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 37eb7360-28e9-4273-862a-4c17f22af690
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cb39d3d814270414f28aec7f1876b6b44406e53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 37c6713dc0e34ae0823cfbfb5db5c539b5073e3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890249"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 此介面是由 debug 引擎傳送， (在載入程式時，但在執行任何程式碼之前，將) 還原為會話 debug manager (SDM) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugLoadCompleteEvent2 : IUnknown
@@ -34,7 +34,7 @@ IDebugLoadCompleteEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  「取消」會建立並傳送此事件物件，以報告程式已順利載入。 使用 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送事件，該函式會在附加至要進行偵錯工具的程式時提供。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

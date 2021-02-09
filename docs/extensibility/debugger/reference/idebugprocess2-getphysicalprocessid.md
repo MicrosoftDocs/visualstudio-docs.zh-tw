@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 77da6e10-75af-4308-97dd-c44416ca52d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bde46309442fceb61ed6c3482ca1f0ce2e83c725
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2513278c03c2ec2efed14028a78ab1b1b8ce2f63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723942"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890158"
 ---
 # <a name="idebugprocess2getphysicalprocessid"></a>IDebugProcess2::GetPhysicalProcessId
 取得系統處理序識別碼。
@@ -28,14 +28,14 @@ ms.locfileid: "80723942"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetPhysicalProcessId(
-   AD_PROCESS_ID* pdwProcessId
+HRESULT GetPhysicalProcessId(
+   AD_PROCESS_ID* pdwProcessId
 );
 ```
 
 ```csharp
-int GetPhysicalProcessId(
-   AD_PROCESS_ID[] pdwProcessId
+int GetPhysicalProcessId(
+   AD_PROCESS_ID[] pdwProcessId
 );
 ```
 

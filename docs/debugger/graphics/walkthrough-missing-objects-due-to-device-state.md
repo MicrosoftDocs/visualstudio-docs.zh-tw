@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c29e240d4be2f66fb0684bf5372d59fe5d4d825a
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: a8eff8a088823bc46363d2e5ea7b40b3e2b8478e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890431"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>逐步解說：因裝置狀態而遺漏的物件
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷來調查因為裝置狀態設定不正確而遺漏的物件。
@@ -30,7 +30,7 @@ ms.locfileid: "96995053"
 
 - 檢查裝置狀態以找出潛在問題或錯誤組態。
 
-## <a name="scenario"></a>案例
+## <a name="scenario"></a>狀況
  在 3D 應用程式中，物件可能不會如預期出現的其中一個原因是圖形裝置組態不正確，這造成物件在轉譯中遭到排除，例如，當捲繞順序導致三角形揀選錯誤時，或是當深度測試功能造成物件中的所有像素遭拒時。
 
  在本逐步解說所述的情節中，您已到達 3D 應用程式開發的第一個里程碑，並準備開始進行第一次測試。 不過，當您執行應用程式時，只有使用者介面會轉譯至螢幕。 透過使用圖形診斷，您可以將問題擷取到圖形記錄檔，以便偵錯應用程式。 在應用程式中，問題看起來如下：

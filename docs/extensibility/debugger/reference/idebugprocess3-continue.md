@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aba0863ad7c50bf5c14e7a30c06097825b8cf5ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60ac7109b9f92a4ed7eecf57095c44fc4208b9f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891055"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 從停止狀態繼續執行此進程。 任何先前的執行狀態 (（例如步驟) ）都會保留，且進程會再次開始執行。

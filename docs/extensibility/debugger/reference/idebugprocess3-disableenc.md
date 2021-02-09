@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b39bb448501bacd5ab458b7e61bb1a5044bc8a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cfd425e6b992d8d933edd45f27d6fb4c8161a1a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891042"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 這個方法會明確停用此進程的 [編輯後繼續] (以及它包含) 的所有程式。 自訂埠供應商應該一律傳回 `E_NOTIMPL` 。
@@ -28,8 +28,8 @@ ms.locfileid: "80723728"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT DisableENC(
-   EncUnavailableReason reason
+HRESULT DisableENC(
+   EncUnavailableReason reason
 );
 ```
 

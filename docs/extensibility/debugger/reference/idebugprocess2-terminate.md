@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5e6bf373-0fe9-4321-b04a-473a65f664d9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8da1b2719e8b37df009e3bbef99e57c24117a963
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 235f2464c2302a19860e5414fb19ab042a8b5aa3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890041"
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
 終止進程。
@@ -28,8 +28,8 @@ ms.locfileid: "80723812"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT Terminate( 
-   void 
+HRESULT Terminate( 
+   void 
 );
 ```
 

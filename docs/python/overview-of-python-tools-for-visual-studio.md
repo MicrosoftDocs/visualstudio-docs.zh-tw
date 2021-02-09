@@ -6,23 +6,23 @@ ms.date: 06/05/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0283cb4332e9137550b74a85c38d7963f3c77a70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315261"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890470"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 的 Visual Studio 中使用 Python
 
 Python 是一種熱門的程式設計語言，不僅可靠、有彈性、容易學習、可在所有作業系統上免費使用，而且也受到強大的開發人員社群和許多免費程式庫支援。 Python 支援各式各樣的開發，包括 Web 應用程式、Web 服務、傳統型應用程式、指令碼及科學計算，並且許多大學、科學家、業餘開發人員及專業開發人員等都使用它。 您可以從 [python.org (英文)](https://www.python.org) 和[適用於初學者的 Python (英文)](https://www.python.org/about/gettingstarted/) 深入了解此語言。
 
-Visual Studio 是 Windows 上功能強大的 Python IDE。 Visual Studio 可透過「Python 開發與資料科學」******** 工作負載 (Visual Studio 2017 和更新的版本) 和免費的「適用於 Visual Studio 的 Python 工具」延伸模組 (Visual Studio 2015 和更舊的版本)，針對 Python 語言提供[開放原始碼](https://github.com/Microsoft/ptvs)支援。
+Visual Studio 是 Windows 上功能強大的 Python IDE。 Visual Studio 可透過「Python 開發與資料科學」 工作負載 (Visual Studio 2017 和更新的版本) 和免費的「適用於 Visual Studio 的 Python 工具」延伸模組 (Visual Studio 2015 和更舊的版本)，針對 Python 語言提供[開放原始碼](https://github.com/Microsoft/ptvs)支援。
 
 Python 目前在 Visual Studio for Mac 中不予支援，但可透過 Visual Studio Code 在 Mac 和 Linux 上使用 (請參閱[問與答](#questions-and-answers))。
 
@@ -45,7 +45,7 @@ Python 目前在 Visual Studio for Mac 中不予支援，但可透過 Visual Stu
 
 ## <a name="support-for-multiple-interpreters"></a>支援多重解譯器
 
-Visual Studio 的 [Python 環境]**** 視窗 (在下方顯示為寬型的展開檢視) 提供您一個單一位置來管理所有全域 Python 環境、Conda 環境及虛擬環境。 Visual Studio 會自動偵測標準位置中的 Python 安裝，並允許您設定自訂安裝。 針對每個環境，您可以輕鬆管理套件、開啟該環境的互動式視窗，以及存取環境資料夾。
+Visual Studio 的 [Python 環境] 視窗 (在下方顯示為寬型的展開檢視) 提供您一個單一位置來管理所有全域 Python 環境、Conda 環境及虛擬環境。 Visual Studio 會自動偵測標準位置中的 Python 安裝，並允許您設定自訂安裝。 針對每個環境，您可以輕鬆管理套件、開啟該環境的互動式視窗，以及存取環境資料夾。
 
 ::: moniker range="vs-2017"
 ![[Python 環境] 視窗的展開檢視](media/environments/environments-expanded-view.png)
@@ -54,20 +54,20 @@ Visual Studio 的 [Python 環境]**** 視窗 (在下方顯示為寬型的展開�
 ![[Python 環境] 視窗的展開檢視](media/environments/environments-expanded-view-2019.png)
 ::: moniker-end
 
-使用 [開啟互動式視窗]**** 在 Visual Studio 的內容中命令以互動方式執行 Python。 使用 [在 PowerShell 中開啟]**** 命令，在所選環境的資料夾中開啟另外的命令視窗。 您可以從命令視窗執行任何 Python 指令碼。
+使用 [開啟互動式視窗] 在 Visual Studio 的內容中命令以互動方式執行 Python。 使用 [在 PowerShell 中開啟] 命令，在所選環境的資料夾中開啟另外的命令視窗。 您可以從命令視窗執行任何 Python 指令碼。
 
-如需詳細資訊：
+其他資訊：
 
 - [管理 Python 環境](managing-python-environments-in-visual-studio.md)
 - [Python 環境參考](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>豐富的編輯功能、IntelliSense 及程式碼理解
 
-Visual Studio 提供最優質的 Python 編輯器，包括語法色彩標示、所有程式碼和程式庫的自動完成、程式碼格式設定、簽章說明、重構、Lint 處理和類型提示。 Visual Studio 也提供獨特的功能，例如類別視圖、 **移至定義**、 **尋找所有參考**和程式碼片段。 與 [互動視窗](#interactive-window) 的直接整合可協助您快速開發已經儲存在檔案中的 Python 程式碼。
+Visual Studio 提供最優質的 Python 編輯器，包括語法色彩標示、所有程式碼和程式庫的自動完成、程式碼格式設定、簽章說明、重構、Lint 處理和類型提示。 Visual Studio 也提供獨特的功能，例如類別視圖、 **移至定義**、 **尋找所有參考** 和程式碼片段。 與 [互動視窗](#interactive-window) 的直接整合可協助您快速開發已經儲存在檔案中的 Python 程式碼。
 
 ![Visual Studio 中 Python 程式碼的程式碼完成](media/code-editing-completions-simple.png)
 
-如需詳細資訊：
+其他資訊：
 
 - 文件：[編輯 Python 程式碼](editing-python-code-in-visual-studio.md)
 - 文件：[格式化程式碼](formatting-python-code.md)
@@ -77,15 +77,15 @@ Visual Studio 提供最優質的 Python 編輯器，包括語法色彩標示、�
 
 ## <a name="interactive-window"></a>互動式視窗
 
-針對 Visual Studio 已知的每個 Python 環境，您可以直接從 Visual Studio 內輕鬆開啟相同的 Python 解譯器互動式 (REPL) 環境，而無須使用個別的命令提示字元。 您也可以在環境之間輕鬆切換。 (若要開啟另外的命令提示字元，請在 [Python 環境]**** 視窗中選取您想要的環境，然後選取 [在 PowerShell 中開啟]**** 命令，如先前在[支援多重解譯器](#support-for-multiple-interpreters)中所述。)
+針對 Visual Studio 已知的每個 Python 環境，您可以直接從 Visual Studio 內輕鬆開啟相同的 Python 解譯器互動式 (REPL) 環境，而無須使用個別的命令提示字元。 您也可以在環境之間輕鬆切換。 (若要開啟另外的命令提示字元，請在 [Python 環境] 視窗中選取您想要的環境，然後選取 [在 PowerShell 中開啟] 命令，如先前在[支援多重解譯器](#support-for-multiple-interpreters)中所述。)
 
 ![Visual Studio 中的 Python 互動式視窗](media/interactive-window.png)
 
-Visual Studio 也提供 Python 程式碼編輯器與 **互動式** 視窗之間的緊密整合。 **Ctrl** + **Enter**鍵盤快速鍵可方便您將編輯器中目前的程式程式碼 (或程式碼區塊) 傳送至**互動式**視窗，然後移至下一行 (或封鎖) 。 **Ctrl** +**Enter**可讓您輕鬆地逐步執行程式碼，而不需要執行偵錯工具。 您也可以使用相同的按鍵將選取的程式碼傳送至 **互動式** 視窗，並輕鬆地將程式碼從 **互動式** 視窗貼到編輯器中。 這些功能結合在一起，可讓您在 **互動式** 視窗中處理常式代碼區段的詳細資料，並在編輯器中輕鬆地將結果儲存在檔案中。
+Visual Studio 也提供 Python 程式碼編輯器與 **互動式** 視窗之間的緊密整合。 **Ctrl** + **Enter** 鍵盤快速鍵可方便您將編輯器中目前的程式程式碼 (或程式碼區塊) 傳送至 **互動式** 視窗，然後移至下一行 (或封鎖) 。 **Ctrl** +**Enter** 可讓您輕鬆地逐步執行程式碼，而不需要執行偵錯工具。 您也可以使用相同的按鍵將選取的程式碼傳送至 **互動式** 視窗，並輕鬆地將程式碼從 **互動式** 視窗貼到編輯器中。 這些功能結合在一起，可讓您在 **互動式** 視窗中處理常式代碼區段的詳細資料，並在編輯器中輕鬆地將結果儲存在檔案中。
 
 Visual Studio 也支援 REPL 中 IPython/Jupyter，包括內嵌繪圖、.NET 與 Windows Presentation Foundation (WPF)。
 
-如需詳細資訊：
+其他資訊：
 
 - [互動視窗](python-interactive-repl-in-visual-studio.md)
 - [Visual Studio 中的 IPython](interactive-repl-ipython.md)
@@ -97,7 +97,7 @@ Visual Studio 也支援 REPL 中 IPython/Jupyter，包括內嵌繪圖、.NET 與
 > Visual Studio 2019 支援開啟包含 Python 程式碼的資料夾，並執行該程式碼，不需要建立 Visual Studio 專案和方案檔案。 如需詳細資訊，請參閱 [快速入門：在資料夾中開啟及執行 Python 程式碼](quickstart-05-python-visual-studio-open-folder.md)。 但是使用專案檔有一些優點，如本節所述。
 ::: moniker-end
 
-Visual Studio 可協助您管理專案隨時間發展衍生出的複雜性。 *Visual Studio 專案*遠比資料夾結構複雜：它包括了解不同檔案的使用方式，以及它們之間的關聯性。 Visual Studio 可協助您區別應用程式程式碼、測試程式碼、網頁、JavaScript、建置指令碼等，這些會接著啟用檔案適當的功能。 此外，Visual Studio 方案還可協助您管理多個相關的專案，例如 Python 專案和 C++ 延伸模組專案。
+Visual Studio 可協助您管理專案隨時間發展衍生出的複雜性。 *Visual Studio 專案* 遠比資料夾結構複雜：它包括了解不同檔案的使用方式，以及它們之間的關聯性。 Visual Studio 可協助您區別應用程式程式碼、測試程式碼、網頁、JavaScript、建置指令碼等，這些會接著啟用檔案適當的功能。 此外，Visual Studio 方案還可協助您管理多個相關的專案，例如 Python 專案和 C++ 延伸模組專案。
 
 ![同時包含 Python 和 C++ 專案的 Visual Studio 方案](media/projects-solution-explorer-two-projects.png)
 
@@ -105,7 +105,7 @@ Visual Studio 可協助您管理專案隨時間發展衍生出的複雜性。 *V
 
 [![Visual Studio 中的 Python 專案和專案範本](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
-如需詳細資訊：
+其他資訊：
 
 - 文件：[管理 Python 專案](managing-python-projects-in-visual-studio.md)
 - 文件：[項目範本參考](python-item-templates.md)
@@ -116,7 +116,7 @@ Visual Studio 可協助您管理專案隨時間發展衍生出的複雜性。 *V
 
 ## <a name="full-featured-debugging"></a>功能完整的偵錯
 
-Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是針對 Python，Visual Studio 包括可進行 Python/C++ 混合模式偵錯、對 Linux 進行遠端偵錯、在 [互動式]**** 視窗內進行偵錯，以及對 Python 單元測試進行偵錯。
+Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是針對 Python，Visual Studio 包括可進行 Python/C++ 混合模式偵錯、對 Linux 進行遠端偵錯、在 [互動式]視窗內進行偵錯，以及對 Python 單元測試進行偵錯。
 
 ![顯示例外狀況快顯的 Visual Studio Python 偵錯工具](media/debugging-exception-popup.png)
 
@@ -124,7 +124,7 @@ Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是�
 您可以在 Visual Studio 2019 中執行並偵錯程式碼，不需要 Visual Studio 專案檔。 如需範例，請參閱 [快速入門：開啟並執行資料夾中的 Python 程式碼](quickstart-05-python-visual-studio-open-folder.md) 。
 ::: moniker-end
 
-如需詳細資訊：
+其他資訊：
 
 - 文件：[針對 Python 程式碼進行偵錯](debugging-python-in-visual-studio.md)
 - 文件：[Python/C++ 混合模式偵錯](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
@@ -137,18 +137,18 @@ Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是�
 
 [![Visual Studio Python 專案的 profiler 結果](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
-如需詳細資訊：
+其他資訊：
 
 - 文件：[Python 分析工具](profiling-python-code-in-visual-studio.md)
 - 一般 Visual Studio 功能文件：[分析功能導覽](../profiling/profiling-feature-tour.md)。 (並非所有 Visual Studio 分析功能都可供 Python 使用)。
 
 ## <a name="unit-testing-tools"></a>單元測試工具
 
-在 Visual Studio **Test Explorer**中探索、執行和管理測試，並輕鬆地對單元測試進行測試。
+在 Visual Studio **Test Explorer** 中探索、執行和管理測試，並輕鬆地對單元測試進行測試。
 
 ![在 Visual Studio 中進行 Python 單元測試偵錯](media/unit-test-debugging.png)
 
-如需詳細資訊：
+其他資訊：
 
 - 文件：[適用於 Python 的單元測試工具](unit-testing-python-in-visual-studio.md)
 - 一般 Visual Studio 功能文件：[對您的程式碼進行單元測試](../test/unit-test-your-code.md)。
@@ -240,7 +240,7 @@ Visual Studio 2015 和更早版本位於 [visualstudio.microsoft.com/vs/older-do
 
 <br/>
 
-|               [桌上型電腦]               |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|               桌上型               |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     主控台/Windows 應用程式     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | IronPython WPF (含 XAML 設計工具) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -313,9 +313,9 @@ Visual Studio 2015 和更早版本位於 [visualstudio.microsoft.com/vs/older-do
 
 1. Visual Studio 2013 中的 Django 範本編輯器有一些已知的問題，這些問題可透過安裝 Update 2 來解決。
 
-1. 需要 Windows 8 或更新版本。 Visual Studio 2013 Express for Web 沒有 [**附加至進程**] 對話方塊，但您仍然可以使用**伺服器總管**中的 [**附加偵錯工具] (Python) **命令，來進行 Azure 網站遠端偵錯程式。 遠端偵錯需要 [Azure SDK for .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 或更新版本。
+1. 需要 Windows 8 或更新版本。 Visual Studio 2013 Express for Web 沒有 [**附加至進程**] 對話方塊，但您仍然可以使用 **伺服器總管** 中的 [**附加偵錯工具] (Python)** 命令，來進行 Azure 網站遠端偵錯程式。 遠端偵錯需要 [Azure SDK for .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 或更新版本。
 
-1. 需要 Windows 8 或更新版本。 若要在**伺服器總管**中**附加偵錯工具 (Python) **命令，需要[Azure SDK for .net 2.3-Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids)或更新版本。
+1. 需要 Windows 8 或更新版本。 若要在 **伺服器總管** 中 **附加偵錯工具 (Python)** 命令，需要 [Azure SDK for .net 2.3-Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids)或更新版本。
 
 1. 需要 Windows 8 或更新版本。
 ::: moniker-end

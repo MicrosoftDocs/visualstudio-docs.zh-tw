@@ -11,20 +11,20 @@ helpviewer_keywords:
 - SafeControl element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 36a8b0ed45fbdb8d2dfe8e93a027a47adf407587
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f08046666ff00d4a0e5489bc78c0c70967774f08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889469"
 ---
 # <a name="safecontrol-element"></a>SafeControl 項目
   代表在 SharePoint 網站上的任何 ASPX 頁面上，指定為可存取之任何使用者的 ASPX 控制項或網頁元件。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <SafeControl Assembly = "Name of assembly that contains the safe control"
@@ -45,7 +45,7 @@ ms.locfileid: "95440619"
 |**組件**|選擇性 **xs： string** 屬性。<br /><br /> 定義 ASPX 控制項或網頁元件的元件名稱。 根據預設，這個屬性會 **$SharePoint 使用 AssemblyFullName $** 可取代參數作為元件名稱。 如需詳細資訊，請參閱可 [取代的參數](../sharepoint/replaceable-parameters.md)。|
 |**IsSafe**|選用的 **xs： boolean** 屬性。<br /><br /> 指定 ASPX 控制項或網頁元件是否安全，讓不受信任的使用者存取。|
 |**IsSafeAgainstScript**|選用的 **xs： boolean** 屬性。<br /><br /> 指定未受信任的使用者是否可以查看或編輯 ASPX 控制項或網頁元件的屬性。|
-|**Name**|選擇性 **xs： string** 屬性。<br /><br /> 集合中這個安全控制項專案的名稱。|
+|**名稱**|選擇性 **xs： string** 屬性。<br /><br /> 集合中這個安全控制項專案的名稱。|
 |**Namespace**|選擇性 **xs： string** 屬性。<br /><br /> ASPX 控制項或網頁元件的命名空間。|
 |**TypeName**|選擇性 **xs： string** 屬性。<br /><br /> ASPX 控制項或 Web 元件的類型名稱。|
 
@@ -54,7 +54,7 @@ ms.locfileid: "95440619"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[SafeControls](../sharepoint/safecontrols-element.md)|代表 ASPX 控制項和 Web 組件的集合，這些控制項和在 SharePoint 網站上的任何 ASPX 頁面上都被指定為安全的使用者。|
 

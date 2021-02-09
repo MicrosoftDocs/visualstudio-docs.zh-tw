@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c08d7df4a6b05be489f6b9ab06569c085f3b1f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5156f905eb5891be64d0718e8aeff4c3c404663b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735821"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891250"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 這個方法會傳回要求的服務。
@@ -28,20 +28,20 @@ ms.locfileid: "80735821"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetEEService(
-   [in] GUID        vendor,
-   [in] GUID        language,
-   [in] GUID        iid,
-   [out] IUnknown** ppService
+HRESULT GetEEService(
+   [in] GUID        vendor,
+   [in] GUID        language,
+   [in] GUID        iid,
+   [out] IUnknown** ppService
 );
 ```
 
 ```csharp
-Int GetEEService(
-   Guid       vendor,
-   Guid       language,
-   Guid       iid,
-   out object ppService
+Int GetEEService(
+   Guid       vendor,
+   Guid       language,
+   Guid       iid,
+   out object ppService
 );
 ```
 

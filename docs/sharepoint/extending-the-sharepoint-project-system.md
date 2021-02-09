@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c017217f66e38eed6248b90efaeabce0efaa9c70
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 5a81fef67cc6816f16a074494005a61d647abeab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672544"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889677"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>擴充 SharePoint 專案系統
   您可以使用 Visual Studio 中的一組專案範本和專案範本來建立 SharePoint 方案。 這些範本符合許多開發案例的需求，但您可能會發現它們無法提供您所需的功能。 在這些情況下，您可以擴充 SharePoint 專案系統。

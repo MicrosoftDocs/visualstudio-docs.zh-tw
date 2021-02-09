@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c6c48dbad986d8bc4be58f1ebd9c5bd1fffbd57
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 6e018631e24cf7e678072b6b54183fd3c619dc4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890327"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定命令所使用的位旗標
 您可以藉由在單一值中設定一或多個位，來修改原始檔控制外掛程式 API 中許多函數的行為。 這些值稱為位旗標。 原始檔控制外掛程式 API 所使用的各種位旗標詳述于此處，並依使用它們的函式進行分組。

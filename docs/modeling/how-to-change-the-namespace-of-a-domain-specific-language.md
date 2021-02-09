@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: a7b0de26fdc1a7982347a12c283a6aa73e9aad12
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 29835e993d287c981ad1c4014af3dc276891af5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890496"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>如何：變更特定領域語言的命名空間
 
@@ -49,7 +49,7 @@ ms.locfileid: "90809436"
 
 10. 重設 Visual Studio 實驗實例。
 
-    1. 刪除**\Users \\ ** _{您的 name}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp**。
+    1. 刪除 **\Users \\** _{您的 name}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp**。
 
     2. 在 Windows [**開始**] 功能表上，選擇 [**所有程式**]  >  **Microsoft Visual Studio 2010 SDK**  >  **工具**  >  **重設實驗實例**。
 

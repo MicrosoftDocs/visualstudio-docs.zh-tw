@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9da63d54f64a4ef7592fdbc4d36e2b31220f82df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d22a58021a744cc71b8df3acb8e577d853aa2829
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722638"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889989"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 這個介面代表在進程中執行的程式，並藉由提供執行緒資訊來擴充 [執行](../../../extensibility/debugger/reference/idebugprogram2-execute.md) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgram3 : IDebugProgram3
@@ -39,7 +39,7 @@ IDebugProgram3 : IDebugProgram3
 |------------|-----------------|
 |[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|執行程式。 傳回的執行緒可提供偵錯工具資訊給使用者在執行時所要查看的執行緒。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio
@@ -53,7 +53,7 @@ IDebugProgram3 : IDebugProgram3
 - [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)
-- [下一個](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)
+- [下一步](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)
 - [事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 - [DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)

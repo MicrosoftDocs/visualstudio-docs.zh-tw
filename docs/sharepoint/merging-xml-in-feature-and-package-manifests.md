@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 8be6adfedeabaea236e4dcb2cd969e6023a7f3ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889560"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>合併功能和封裝資訊清單中的 XML
   功能和封裝是由資訊清單檔案所定義 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 。 這些封裝的資訊清單是 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 由使用者從在資訊清單範本中輸入的設計師和自訂所產生的資料組合。 在封裝期間，將 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 自訂 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 語句與提供的設計工具合併， [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 以形成封裝的 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 資訊清單檔案。 類似的元素（稍後會在合併例外狀況中注明例外狀況）會合並，以避免 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 在您將檔案部署至 SharePoint 之後的驗證錯誤，以及讓資訊清單檔案更小且更有效率。
@@ -52,7 +52,7 @@ ms.locfileid: "96304227"
 |功能 (所有屬性) |*屬性名稱* (功能專案的每個屬性名稱都是唯一索引鍵。 ) |
 |ElementFile|Location|
 |ElementManifests/ElementManifest|Location|
-|屬性/屬性|Key|
+|屬性/屬性|答案|
 |CustomUpgradeAction|名稱|
 |CustomUpgradeActionParameter|名稱|
 

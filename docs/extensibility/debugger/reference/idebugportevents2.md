@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c611eb531bdabb633b11ac2e8ca2d0d11f52005
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba68608e09405265940686bbb235a41c53959943
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725183"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891185"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 此介面會通知接聽程式 (通常是會話 debug manager [SDM] 或偵錯工具) 進程的進程和程式建立，並在特定埠上進行銷毀。 這項資訊可用來即時查看在埠上執行的進程和程式。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortEvents2 : IUnknown
@@ -46,7 +46,7 @@ IDebugPortEvents2 : IUnknown
 
  埠事件會由這個介面傳遞給 SDM。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

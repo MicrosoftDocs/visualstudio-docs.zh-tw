@@ -8,15 +8,15 @@ helpviewer_keywords:
 - xaml hot reload, troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c5dca96b4e20e36bc6c69b907423f27ac4af71
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 4e13fd71c9d53ef49d7f7372986bfabc29c62747
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890444"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>對 XAML 熱重新載入進行疑難排解
 
@@ -69,6 +69,6 @@ UWP
 
 如果您的 XAML 檔案顯示 **錯誤清單** 中的錯誤，XAML 熱重新載入可能無法運作。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 XAML 熱重新載入撰寫和偵測執行中的 XAML 程式碼](xaml-hot-reload.md)

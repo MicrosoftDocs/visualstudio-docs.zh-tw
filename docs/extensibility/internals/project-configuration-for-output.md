@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe5cb6477808f892b8d36aa5fd616a5a0ea7969
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6817dbd534d272924e5020b1c4c48753dcd70a54
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890665"
 ---
 # <a name="project-configuration-for-output"></a>輸出的專案組態
 每個設定都可以支援一組產生輸出專案的組建處理常式，例如可執行檔或資源檔。 這些輸出專案是使用者私用的，而且可以放在連結相關輸出類型的群組中，例如可執行檔 ( .exe、.dll、.lib) 和來源檔案 ( .idl、.h 檔) 。
@@ -45,7 +45,7 @@ ms.locfileid: "97876320"
 
  如需詳細資訊，請參閱 `IVsOutputGroup` 在 [適用于專案的 MPF](https://github.com/tunnelvisionlabs/MPFProj10)上自訂專案範例中的實作為。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 - [建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)
 - [專案組態物件](../../extensibility/internals/project-configuration-object.md)

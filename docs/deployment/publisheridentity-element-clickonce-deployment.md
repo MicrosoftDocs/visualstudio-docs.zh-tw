@@ -15,20 +15,20 @@ helpviewer_keywords:
 ms.assetid: 34c579db-d2f2-4b66-b9c8-47207f33d950
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eb4b67bfdca13c63480f3dde82004d87cd4a12a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 65f225f8e3dd3f6d2b3afb2d2a5284d172d4fab1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891289"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (的 publisherIdentity 元素) 
 包含簽署此部署資訊清單之發行者的資訊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <publisherIdentity
