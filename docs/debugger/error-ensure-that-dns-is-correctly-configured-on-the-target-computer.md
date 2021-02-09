@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6848363b3afa5c3216c242136c7909980f0ed60
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: cc16217b20d08e9ad2d3b43d3b074652fdffec95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852754"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871678"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>錯誤：請確認目標電腦上的 DNS 設定都正確
 您可能會在嘗試進行遠端偵錯時，得到下列錯誤訊息：
@@ -30,7 +30,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
  當目標電腦無法解析 Visual Studio 偵錯工具主機電腦的名稱時，便會發生這個錯誤。 請檢查目標電腦上的 DNS 設定。
 
-- 如需檢視在 Windows 8.1、Vista、Windows 7、Windows Server 2012、Windows Server 2008 或 Windows Server 2008 R2 上 DNS 的設定資訊，請執行下列作業：在 [開始]**** 功能表上，選擇 [說明及支援]****，然後搜尋 [變更 TCP/IP]**** 設定。
+- 如需檢視在 Windows 8.1、Vista、Windows 7、Windows Server 2012、Windows Server 2008 或 Windows Server 2008 R2 上 DNS 的設定資訊，請執行下列作業：在 [開始] 功能表上，選擇 [說明及支援]，然後搜尋 [變更 TCP/IP] 設定。
 
 - 如需詳細資訊，請移至 [Microsoft Windows](https://www.microsoft.com/windows/) 網站並搜尋 **變更 tcp/ip 設定**。
 

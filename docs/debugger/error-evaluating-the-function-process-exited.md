@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97751ae2cbc44429bc1c0fb363366faa830beb68
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 07891e5bcbcab35a4ec5652676a014b87dd32d43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871633"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>錯誤：評估函數 &#39;函數時，目標進程以程式碼 &#39;程式碼&#39; 結束&#39;
 
@@ -28,9 +28,9 @@ ms.locfileid: "90852728"
 
 有兩個可能的解決方案可解決此問題。
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>方案 #1：防止偵錯工具呼叫 getter 屬性或 ToString 方法 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>方案 #1：防止偵錯工具呼叫 getter 屬性或 ToString 方法 
 
-錯誤訊息會告訴您偵錯工具嘗試呼叫的函式名稱。 使用函式的名稱，您可以嘗試從 [即時 **運算] 視窗** 重新評估該函數，以進行評估。 從 [即時運算] 視窗進行評估時可以進行偵錯工具，因為與 [自動**變數/區域變數]/[監看**式 **] 視窗的**隱含評估不同，偵錯工具會在未處理的例外
+錯誤訊息會告訴您偵錯工具嘗試呼叫的函式名稱。 使用函式的名稱，您可以嘗試從 [即時 **運算] 視窗** 重新評估該函數，以進行評估。 從 [即時運算] 視窗進行評估時可以進行偵錯工具，因為與 [自動 **變數/區域變數]/[監看** 式 **] 視窗的** 隱含評估不同，偵錯工具會在未處理的例外
 
 如果您可以修改此函式，則可以防止偵錯工具呼叫屬性 getter 或 `ToString` 方法。 請嘗試下列其中一項：
 
@@ -44,4 +44,4 @@ ms.locfileid: "90852728"
 
 ### <a name="solution-2-disable-all-implicit-evaluation"></a>解決方案 #2：停用所有隱含評估
 
-如果先前的解決方案無法修正問題，請移至 [**工具**  >  **選項**]，並取消核**取 [**  >  **一般**設定]  >  **啟用屬性評估及其他隱含函式呼叫**的設定。 這將會停用大部分的隱含函式評估，並且應該解決問題。
+如果先前的解決方案無法修正問題，請移至 [**工具**  >  **選項**]，並取消核 **取 [**  >  **一般** 設定]  >  **啟用屬性評估及其他隱含函式呼叫** 的設定。 這將會停用大部分的隱含函式評估，並且應該解決問題。

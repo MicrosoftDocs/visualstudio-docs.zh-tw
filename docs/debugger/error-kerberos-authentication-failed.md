@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae81d7503ef325da24db7d553a98837f97a96168
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: dd5b68c0312c3974667775f90ab4fec911206342
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871620"
 ---
 # <a name="error-kerberos-authentication-failed"></a>錯誤：Kerberos 驗證失敗
 當您嘗試進行遠端偵錯時，可能會看到下列錯誤訊息：
@@ -44,7 +44,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>若要確認目標電腦上的 DNS 有正確解析偵錯工具主機電腦的名稱
 
-1. 在目標電腦上，開啟 [開始]**** 功能表，指向 [附屬應用程式]****，然後按一下 [命令提示字元]****。
+1. 在目標電腦上，開啟 [開始] 功能表，指向 [附屬應用程式]，然後按一下 [命令提示字元]。
 
 2. 在 **命令提示** 字元視窗中，輸入：
 
@@ -54,7 +54,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 3. `ping` 回應的第一行顯示針對指定電腦，DNS 所傳回的電腦全名和 IP 位址。
 
-4. 在偵錯工具主機電腦上，開啟 [命令提示字元]**** 視窗，並執行 `ipconfig`。
+4. 在偵錯工具主機電腦上，開啟 [命令提示字元] 視窗，並執行 `ipconfig`。
 
 5. 比較 IP 位址值。
 

@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bc0fe09078493814d1ff12108ccdada36e8da1f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 22fa1b7f332d6a9f6481c513a3c2024a3551c7a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871581"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>錯誤：不支援 IA64 處理序的混合模式偵錯
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具不支援對 Itanium 處理序中混合的原生和 Managed 程式碼進行偵錯。

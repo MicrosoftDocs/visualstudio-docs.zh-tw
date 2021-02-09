@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 256b7858ed5714d716b31fa28c8cd463b96dbb8a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1f6cae3ffb692161deb0b162a6432efe90f12bf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871646"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>錯誤：評估函數 &#39;函式&#39; 超時，而且需要以不安全的方式中止
 
@@ -44,8 +44,8 @@ ms.locfileid: "90852741"
 
 ### <a name="solution-3-disable-all-implicit-evaluation"></a>解決方案 #3：停用所有隱含評估
 
-如果先前的解決方案無法修正問題，請移至 [**工具**  >  **選項**]，並取消核**取 [**  >  **一般**設定]  >  **啟用屬性評估及其他隱含函式呼叫**的設定。 這將會停用大部分的隱含函式評估，並且應該解決問題。
+如果先前的解決方案無法修正問題，請移至 [**工具**  >  **選項**]，並取消核 **取 [**  >  **一般** 設定]  >  **啟用屬性評估及其他隱含函式呼叫** 的設定。 這將會停用大部分的隱含函式評估，並且應該解決問題。
 
 ### <a name="solution-4-enable-managed-compatibility-mode"></a>解決方案 #4：啟用受管理的相容性模式
 
-如果您切換至舊版的偵測引擎，您可以消除此錯誤。 移至 [**工具**  >  **選項**]，然後選取**Debugging**[一般] 設定 [  >  **一般**  >  **使用 managed 相容性模式]**。 如需詳細資訊，請參閱 [一般偵錯工具選項](../debugger/general-debugging-options-dialog-box.md)。
+如果您切換至舊版的偵測引擎，您可以消除此錯誤。 移至 [**工具**  >  **選項**]，然後選取[一般] 設定 [  >  **一般**  >  **使用 managed 相容性模式]**。 如需詳細資訊，請參閱 [一般偵錯工具選項](../debugger/general-debugging-options-dialog-box.md)。

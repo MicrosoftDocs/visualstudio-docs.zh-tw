@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b05af635ba7774cdb31291ad7c2b7eb52686bcf
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: cc17892697e16c24e3bb1fae5aa956123ee4e7bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870788"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的運算式
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。
@@ -206,7 +206,7 @@ int main()
 
 - 命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [C + + 中的格式規範](../debugger/format-specifiers-in-cpp.md)
 - [ (c + +) 的內容運算子 ](../debugger/context-operator-cpp.md)
 - [C 中的格式規範#](../debugger/format-specifiers-in-csharp.md)

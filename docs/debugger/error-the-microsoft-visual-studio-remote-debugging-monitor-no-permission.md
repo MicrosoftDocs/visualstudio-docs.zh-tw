@@ -16,15 +16,15 @@ helpviewer_keywords:
 - remote debugging, Windows version error
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7baed5cc2c4c8dbaa01cd3dfadc386b6db1834c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 150d49d25c8c39d927c64a2cd463a068559847b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871334"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>錯誤：遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視沒有連接至這部電腦的使用權限
 
@@ -38,7 +38,7 @@ ms.locfileid: "90851082"
 
 - 將 msvsmon 當成具有使用權限呼叫本機電腦的使用者來執行。 這表示這個使用者必須是 msvsmon 電腦上的網域使用者和系統管理員。 您可以下列兩種方式的其中一種，指定執行 msvsmon 的使用者帳戶：
 
-  - 以滑鼠右鍵按一下 msvsmon 圖示，並從捷徑功能表中選擇 [執行身分]****
+  - 以滑鼠右鍵按一下 msvsmon 圖示，並從捷徑功能表中選擇 [執行身分]
 
     \- 或 -
 

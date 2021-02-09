@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66a1f60673d1bdfb58b1a101bd1571637c41f556
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 660b6c8b1f8d09baf35d3d019fe80d428e9d7525
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871126"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>錯誤：Transact-SQL 執行未經偵錯即結束
 
@@ -50,5 +50,5 @@ ms.locfileid: "90851524"
 
 - [設定 SQL 調試](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
 - [如何：設定偵錯的 SQL Server 權限](/previous-versions/w1bhybwz(v=vs.100))
-- [偵錯設定及準備](../debugger/debugger-settings-and-preparation.md)
+- [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)
 - [遠端偵錯](../debugger/remote-debugging.md)

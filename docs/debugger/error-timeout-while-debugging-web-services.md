@@ -12,15 +12,15 @@ helpviewer_keywords:
 - XML Web services, timeout while debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f3522b61c8d7d78a182036d3a1f66c0495f5081
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 87a2d79fc24bdb433fbb5eb1480dbf5d15520a8c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852442"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871100"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>錯誤：偵錯 Web 服務時逾時
 當您從呼叫程式碼逐步執行 XML Web Service 時，呼叫有時可能會逾時，並產生無法繼續偵錯的結果。 您可能會看到像這樣的錯誤訊息。
@@ -31,7 +31,7 @@ system.Web.services.dll
 Additional information: The operation has timed-out.
 ```
 
-## <a name="solution"></a>解決方法
+## <a name="solution"></a>解決方案
  為避免發生這個問題，請將 XML Web Service 呼叫的逾時值設成無限，如這個範例中所示：
 
 ```csharp

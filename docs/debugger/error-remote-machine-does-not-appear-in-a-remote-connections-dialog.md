@@ -9,15 +9,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5392a6219b1bf8bf42146cacf8216a63f1fa3832
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: be39d733b2e5fe83fa9f7e2241c7de06980bb583
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871361"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>錯誤：遠端電腦未顯示於 [遠端連線] 對話方塊
 如果遠端電腦沒有出現在 [遠端連接] 對話方塊中，請檢查下列常見的原因。

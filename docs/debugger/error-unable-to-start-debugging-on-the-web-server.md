@@ -23,15 +23,15 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a0aa657abefa0638e62039cae8b6d15a33fdf51
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 94dcfdc05f2d852e1a433067b0a574444632195d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851420"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870879"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在 Web 伺服器上啟動偵錯
 
@@ -91,7 +91,7 @@ ms.locfileid: "90851420"
 ## <a name="could-not-start-aspnet-debugging"></a><a name="aspnet"></a> 無法啟動 ASP.NET 調試
 
 - 重新開機應用程式集區，並重設 IIS。 如需詳細資訊，請參閱 [檢查您的 IIS](#vxtbshttpservererrorsthingstocheck)設定。
-- 如果您正在重寫 URL，請測試不含 URL 重寫的基本 web.config。 請參閱[檢查 IIS](#vxtbshttpservererrorsthingstocheck)設定中有關 URL 重寫模組的**注意事項**。
+- 如果您正在重寫 URL，請測試不含 URL 重寫的基本 web.config。 請參閱 [檢查 IIS](#vxtbshttpservererrorsthingstocheck)設定中有關 URL 重寫模組的 **注意事項**。
 
 ## <a name="the-debugger-cannot-connect-to-the-remote-computer"></a><a name="cannot_connect"></a> 偵錯工具無法連接到遠端電腦
 
@@ -109,7 +109,7 @@ ms.locfileid: "90851420"
 
 ## <a name="operation-not-supported-unknown-error-errornumber"></a><a name="operation_not_supported"></a> 不支援操作。 未知的錯誤： *errornumber*
 
-如果您正在重寫 URL，請測試不含 URL 重寫的基本 web.config。 請參閱[檢查 IIS](#vxtbshttpservererrorsthingstocheck)設定中有關 URL 重寫模組的**注意事項**。
+如果您正在重寫 URL，請測試不含 URL 重寫的基本 web.config。 請參閱 [檢查 IIS](#vxtbshttpservererrorsthingstocheck)設定中有關 URL 重寫模組的 **注意事項**。
 
 ## <a name="check-your-iis-configuration"></a><a name="vxtbshttpservererrorsthingstocheck"></a> 檢查您的 IIS 設定
 
@@ -126,7 +126,7 @@ ms.locfileid: "90851420"
 
     您可以針對不符合 Visual Studio 專案的 ASP.NET 版本，設定應用程式集區。 更新應用程式集區中的 ASP.NET 版本，然後重新開機它。 如需詳細資訊，請參閱 [使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
-    此外，如果密碼認證已變更，您可能需要在您的應用程式集區或網站中加以更新。  在應用程式集區中，更新 [ **Advanced Settings] > 進程模型 > 身分識別**的認證。 針對網站，在 [ **基本設定]** 中更新認證 > 連接身分 ...]。重新開機您的應用程式集區。
+    此外，如果密碼認證已變更，您可能需要在您的應用程式集區或網站中加以更新。  在應用程式集區中，更新 [ **Advanced Settings] > 進程模型 > 身分識別** 的認證。 針對網站，在 [ **基本設定]** 中更新認證 > 連接身分 ...]。重新開機您的應用程式集區。
 
 * 檢查您的 Web 應用程式資料夾是否具有適當的許可權。
 

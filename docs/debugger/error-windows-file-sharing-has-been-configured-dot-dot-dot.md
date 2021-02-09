@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 17dbb1f3493ead985ac946331fdbff7933b6d604
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: d1cc81c8ef39aeeb716a26209a4aded0c69dcf95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870866"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>錯誤：Windows 檔案共用已設定...
 已設定 Windows 檔案共用，這樣您將使用不同的使用者名稱連接到遠端電腦。 這與遠端偵錯不相容
@@ -38,7 +38,7 @@ ms.locfileid: "90851667"
 
      . 中斷與遠端電腦的連線，然後將檔案共用重新設定成使用您的帳戶名稱連接至另一台電腦：
 
-    1. 在 [開始]**** 功能表中，指向 [附屬應用程式]****，然後按一下 [命令提示字元]****。
+    1. 在 [開始] 功能表中，指向 [附屬應用程式]，然後按一下 [命令提示字元]。
 
     2. 在 Windows 命令提示字元中輸入：
 

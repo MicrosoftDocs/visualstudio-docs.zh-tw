@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f5991bf0b14cf4952303dba599ad47e4c8fd27a9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: cf7832d71ab86c6dab973a07dbc46217274cb83b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852409"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870892"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>錯誤：網站背景工作處理序已被 IIS 終止
 偵錯工具停止執行網站上的程式碼。 如此一來，可能會使網際網路資訊服務 (IIS) 認為背景工作處理序已停止回應。 因此，IIS 會結束背景工作處理序。
@@ -28,33 +28,33 @@ ms.locfileid: "90852409"
 
 ### <a name="to-configure-iis-7-to-allow-the-worker-process-to-continue"></a>若要設定 IIS 7 允許背景工作處理序繼續進行
 
-1. 開啟 [系統管理工具]**** 視窗。
+1. 開啟 [系統管理工具] 視窗。
 
    1. 按一下 [ **開始**]，然後選擇 [ **主控台**]。
 
-   2. 在 [ **主控台**中，視需要選擇 [ **切換到傳統視圖**]，然後按兩下 [系統 **管理工具**]。
+   2. 在 [ **主控台** 中，視需要選擇 [ **切換到傳統視圖**]，然後按兩下 [系統 **管理工具**]。
 
-2. 在 [系統管理工具]**** 視窗中，按兩下 [Internet Information Services (IIS) 管理員]****。
+2. 在 [系統管理工具] 視窗中，按兩下 [Internet Information Services (IIS) 管理員]。
 
     [IIS 管理員] 隨即開啟。
 
 3. 在 [ **連接** ] 窗格中，視 \<computer name> 需要展開節點。
 
-4. 在 \<computer name> 節點下，按一下 [ **應用程式**集區]。
+4. 在 \<computer name> 節點下，按一下 [ **應用程式** 集區]。
 
-5. 在 [應用程式集區]**** 清單內，以滑鼠右鍵按一下應用程式執行位置所在的集區名稱，然後按一下 [進階設定]****。
+5. 在 [應用程式集區] 清單內，以滑鼠右鍵按一下應用程式執行位置所在的集區名稱，然後按一下 [進階設定]。
 
-6. 在 [進階設定]**** 對話方塊中，找出 [處理模型]**** 區段，並執行下列其中一個動作：
+6. 在 [進階設定] 對話方塊中，找出 [處理模型] 區段，並執行下列其中一個動作：
 
-   - 將 [已啟用 Ping]**** 設定為 [False]****。
+   - 將 [已啟用 Ping] 設定為 [False]。
 
-   - 將 [Ping 回應時間上限]**** 設定為大於 90 秒的值。
+   - 將 [Ping 回應時間上限] 設定為大於 90 秒的值。
 
-     將 [已啟用 Ping]**** 設定為 [False]****，可使 IIS 停止檢查背景工作處理序是否仍在執行，並使背景工作處理序保持為執行狀態，直到停止已偵錯的處理序為止。 將 [Ping 回應時間上限]**** 設定為大數值，可讓 IIS 繼續監視背景工作處理序。
+     將 [已啟用 Ping] 設定為 [False]，可使 IIS 停止檢查背景工作處理序是否仍在執行，並使背景工作處理序保持為執行狀態，直到停止已偵錯的處理序為止。 將 [Ping 回應時間上限] 設定為大數值，可讓 IIS 繼續監視背景工作處理序。
 
 7. 按一下 **[確定]** 以關閉 **[進階設定]** 對話方塊。
 
-8. 關閉 [IIS 管理員] 和 [系統管理工具]**** 視窗。
+8. 關閉 [IIS 管理員] 和 [系統管理工具] 視窗。
 
 ## <a name="see-also"></a>另請參閱
 - [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)

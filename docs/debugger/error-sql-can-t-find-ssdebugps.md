@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c8b6c2385879e4cf41c8cc2aea57715050b5e2
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 67d7602357a39cbdce0c96b494f4c02758533e73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851784"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871386"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>錯誤： SQL 可以&#39;t Find SSDEBUGPS.DLL
 
@@ -38,7 +38,7 @@ SSDEBUGPS.dll 是 SQL Server 偵錯主機元件。
 
 1. 將該檔案複製到 [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] 電腦上具有相同名稱和路徑的目錄。
 
-2. 開啟 [命令提示字元]**** 並執行下列命令，即可登錄該檔案：
+2. 開啟 [命令提示字元] 並執行下列命令，即可登錄該檔案：
 
     ```cmd
     regsvr32 ssdebugps.dll
