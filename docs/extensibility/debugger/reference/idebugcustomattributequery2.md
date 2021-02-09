@@ -10,23 +10,23 @@ helpviewer_keywords:
 ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fe3969002c64ab361de76012c432e2bb5c61b5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 331fba87de68b3cf5e135e0b6f633874236bec38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732484"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842403"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 判斷這個欄位的自訂屬性是否存在，如果存在，則傳回屬性資訊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
+IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
@@ -52,7 +52,7 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ## <a name="remarks"></a>備註
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)方法可以傳回針對此欄位所定義的所有自訂屬性的列舉值。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio

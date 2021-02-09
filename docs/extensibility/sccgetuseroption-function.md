@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc7b68df3331c1240ad833048940e656da034ccf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e4bc3e4bf6acef8ff8de1cdcecb2596dcf6d86e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844550"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函式
 此函式會抓取各種使用者專屬的選項。
@@ -25,10 +25,10 @@ ms.locfileid: "80700692"
 ## <a name="syntax"></a>語法
 
 ```cpp
-SCCRTN SccGetUserOption(
-   LPVOID pContext,
-   LONG nOption,
-   LPLONG lpVal
+SCCRTN SccGetUserOption(
+   LPVOID pContext,
+   LONG nOption,
+   LPLONG lpVal
 );
 ```
 
@@ -57,7 +57,7 @@ SCCRTN SccGetUserOption(
 ## <a name="remarks"></a>備註
  此命令支援下列選項：
 
-|使用者選項|描述|
+|使用者選項|Description|
 |-----------------|-----------------|
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|判斷使用者是否想要簽出本機版本的檔案。 `lpVal` 指派 `SCC_USEROPT_COLV_YES` (使用者想要簽出本機檔案) 或 `SCC_USEROPT_COLV_NO` 。|
 

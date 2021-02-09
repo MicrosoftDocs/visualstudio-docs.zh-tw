@@ -2,18 +2,18 @@
 title: 使用已連線的服務新增 Azure 儲存體 | Microsoft Docs
 description: 使用 Visual Studio 將 Azure 儲存體服務相依性新增至您的應用程式已連線的服務
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: d169940d6deffdf67bcbcb94e9f647631d0f606a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a2aa5a0453b6a05c261d3cac853ab8265fb4e453
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902632"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844342"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>使用 Visual Studio 的已連接服務加入 Azure 儲存體
 
@@ -33,7 +33,7 @@ ms.locfileid: "94902632"
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 若是 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中已連線的服務](/visualstudio/mac/connected-services)。
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 - 已安裝 Azure 工作負載的 Visual Studio。
 - 其中一個支援類型的專案

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 7ed01441-686f-4032-8268-a4c750f19f85
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6132235a7e4789c7d9efe5bae9d7fd531112dab4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14b5bdc8a8be5734da765f0396fb96830042969f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842221"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
 此介面會列舉 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugReferenceInfo2 : IUnknown
@@ -39,7 +39,7 @@ IEnumDebugReferenceInfo2 : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|抓取列舉序列中指定數目的 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|抓取列舉序列中指定數目的 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|略過列舉序列中指定數目的 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 結構。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|將列舉順序重設為開頭。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
@@ -48,7 +48,7 @@ IEnumDebugReferenceInfo2 : IUnknown
 ## <a name="remarks"></a>備註
  參考基本上是類型和位址，而屬性則是名稱、類型和位址。 只要參考的物件存在於記憶體中，就會保存參考。 如需詳細資訊，請參閱 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

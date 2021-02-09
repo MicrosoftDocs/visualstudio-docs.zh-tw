@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d5cf57cb-b93b-4e1d-bec9-185f4fe8668d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d92dddda8fd9831f5d66b602cd48fdbbc3dbcf1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17a3623ab0a674b49d96d6eb77f04ec0de9a2fb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731652"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842248"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 判斷檔位置是否包含在指定的檔中。
@@ -28,13 +28,13 @@ ms.locfileid: "80731652"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT IsPositionInDocument( 
+HRESULT IsPositionInDocument( 
    IDebugDocument2* pDoc
 );
 ```
 
 ```csharp
-int IsPositionInDocument( 
+int IsPositionInDocument( 
    IDebugDocument2 pDoc
 );
 ```

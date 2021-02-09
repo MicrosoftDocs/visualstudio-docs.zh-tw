@@ -3,17 +3,17 @@ title: 流覽和管理儲存體資源
 description: 使用伺服器總管瀏覽和管理儲存體資源
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ae45fafb562387720b652e0921624bc859ea5920
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 70656b71df09f5635ebfb5d4532256e8f0d3dd35
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843848"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>使用伺服器總管來瀏覽及管理儲存體資源
 
@@ -261,7 +261,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
    ![建立 Azure 儲存體帳戶](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. 選取 [建立]。
+1. 選取 [建立]  。
 
 新的儲存體帳戶會出現在 [方案總管] 中的 [儲存體]  清單。
 
@@ -290,6 +290,6 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
 如果您從 [伺服器總管] 刪除儲存體帳戶，它並不會影響您的儲存體帳戶或其包含的任何資料。 它只會從 [伺服器總管] 移除參考。 若要永久刪除儲存體帳戶，請使用 [Azure 入口網站](https://portal.azure.com/)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要深入了解如何使用 Azure 儲存體服務，請參閱[存取 Azure 儲存體服務](/azure/storage/common/storage-introduction)。

@@ -2,17 +2,17 @@
 title: Azure 的命令列建置 | Microsoft Docs
 description: Azure 的命令列建置
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 64c18ea8b572d8481b2b2d04f8a8e16f21afc44a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b60e076c50c9465f54c3c05dda0318f56fa5e9ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902484"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844264"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>從命令列建置 Azure 專案
 使用 Microsoft Build Engine (MSBuild) 時，您可以在未安裝 Visual Studio 的測試版環境中建置產品。 MSBuild 的專案檔案會採用可擴充且 Microsoft 完全支援的 XML 格式。 使用 MSBuild 檔案格式時，您可以說明針對一或多個平台和組態所必須建置的項目。
@@ -29,5 +29,5 @@ ms.locfileid: "94902484"
 
 如果您想要為儲存的封裝和組態檔使用替代目錄，請使用 `/p:PublishDir=Directory\` 選項來設定路徑 (包括結尾的反斜線分隔符號)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 建立封裝之後，您可以將它部署至 Azure。

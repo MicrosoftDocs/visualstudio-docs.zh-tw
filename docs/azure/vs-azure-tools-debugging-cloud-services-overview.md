@@ -2,18 +2,18 @@
 title: 進行 Azure 雲端服務偵錯的選項 | Microsoft Docs
 description: 進行 Azure 雲端服務的偵錯
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 03/18/2017
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c32ab209f612c9e818f5e4ef1ab85a341e2027eb
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2471b79c7401d63b9655586fc4745d3977d37275
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844225"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>了解針對 Azure 雲端服務進行偵錯的各種方式
 本文提供進行 Azure 雲端服務偵錯的各種方法連結。
@@ -27,5 +27,5 @@ ms.locfileid: "94902478"
 ## <a name="remote-debugging"></a>遠端偵錯
 您可以在從 Visual Studio 部署雲端服務時，啟用雲端服務的遠端偵錯。 如果您選擇對部署啟用遠端偵錯，則會在執行每個角色執行個體的虛擬機器上安裝遠端偵錯服務。 這些服務 (例如 `msvsmon.exe`) 不會影響效能或造成額外成本。 如需詳細資訊，請參閱 [在 Azure 中偵錯雲端服務](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - [在 Visual Studio 中進行 Azure 雲端服務或 VM 的偵錯](./vs-azure-tools-debug-cloud-services-virtual-machines.md) - 了解如何進行 Azure 雲端服務偵錯的詳細資料。

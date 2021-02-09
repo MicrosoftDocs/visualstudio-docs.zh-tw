@@ -2,18 +2,18 @@
 title: 針對 Azure 雲端服務或虛擬機器進行偵錯
 description: 在 Visual Studio 中進行雲端服務或虛擬機器的偵錯
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c6e03bb4048b077bb4e1faa8b0382a3f4dbaf856
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: c7a95c43435cf78f169ce363b3e8fe301e9d0cbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844329"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>在 Visual Studio 中進行 Azure 雲端服務或虛擬機器的偵錯
 
@@ -183,7 +183,7 @@ Visual Studio ASP.NET 專案提供選項，讓您建立可用於測試應用程�
 
 10. 選擇您想要在虛擬機器上進行偵錯工具的進程，然後選取 [ **附加**]。 例如，如果您想要在虛擬機器上偵錯 Web 應用程式，可以選擇 w3wp.exe 處理序。 如需詳細資訊，請參閱 [在 Visual Studio 中偵錯一或多個處理序](../debugger/debug-multiple-processes.md) 。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 * 使用 **IntelliTrace** 從發行伺服器收集呼叫和事件的記錄檔。 請參閱 [使用 IntelliTrace 和 Visual Studio 偵錯發佈的雲端服務](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)。
 

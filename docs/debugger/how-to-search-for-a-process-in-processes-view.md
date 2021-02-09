@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7cb97b37-4a95-4f1b-9eee-4910aa9c115b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f6c51276bea76fe77455d13e011aa85efa8f6fd
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 85b2c2bab29316846620c7dbec935b41eec1d9df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845070"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在處理序檢視中搜尋處理序
 您可以使用處理序識別碼或模組字串做為搜尋準則，在進程視圖中搜尋特定的進程。 您也可以指定搜尋的初始方向。 對話方塊中的欄位會在進程樹狀結構中顯示所選進程的屬性。
@@ -40,6 +40,6 @@ ms.locfileid: "98148555"
 
 5. 選擇 [ **向上** ] 或 [ **向下** ] 以取得搜尋的初始方向。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
    如果找到相符的進程，就會在 [進程] **視圖** 視窗中反白顯示。

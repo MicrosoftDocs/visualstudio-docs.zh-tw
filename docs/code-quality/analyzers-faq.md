@@ -8,15 +8,15 @@ helpviewer_keywords:
 - analyzers, faq
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 48dcb2d01e53502c371595048666fd94c267b6ec
-ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
+ms.openlocfilehash: 6d67471027f36d0e22c055f4306ce2137d972463
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97646381"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843744"
 ---
 # <a name="code-analysis-faq"></a>程式碼分析常見問題
 

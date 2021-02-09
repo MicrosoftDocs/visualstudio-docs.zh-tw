@@ -2,17 +2,17 @@
 title: 使用 Azure Tools 發佈雲端服務 | Microsoft Docs
 description: 了解如何使用 Visual Studio 發佈 Azure 雲端服務專案。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: f4aebb023aa764b0f2d7cc1c5426a63e7df81200
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 3a6bc08d3c293f67e10d79996968eeb483203095
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902125"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843978"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>使用 Visual Studio 發佈雲端服務
 
@@ -151,6 +151,6 @@ Visual Studio 可直接將應用程式發佈至 Azure，並支援雲端服務的
 
 1. 若要在服務封裝中納入已加入到背景工作角色專案的檔案，請開啟檔案的捷徑功能表，然後選擇 [屬性]。 在 [屬性] 視窗中，從 [複製到輸出目錄] 清單方塊選擇 [有更新時才複製]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要深入了解如何從 Visual Studio 發佈至 Azure，請參閱 [發佈 Azure 應用程式精靈](vs-azure-tools-publish-azure-application-wizard.md)。

@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4750b4d1a9c1f972c0445dfcf3ea2f4fa5be328
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842651"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
 提供中斷點未系結的原因。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_UNBOUND_REASON {
@@ -62,7 +62,7 @@ public enum enum_BP_UNBOUND_REASON {
 ## <a name="remarks"></a>備註
 由 [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) 方法傳回。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

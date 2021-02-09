@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2160f963ad1f3f37291519ced30b8096e33a6116
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e499d7b655cb79873b1cd3ef2954f054bba84f60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722857"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844693"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 取得此程式的反組解碼資料流程或此程式的一部分。
@@ -28,7 +28,7 @@ ms.locfileid: "80722857"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetDisassemblyStream( 
+HRESULT GetDisassemblyStream( 
    DISASSEMBLY_STREAM_SCOPE   dwScope,
    IDebugCodeContext2*        pCodeContext,
    IDebugDisassemblyStream2** ppDisassemblyStream
@@ -36,7 +36,7 @@ HRESULT GetDisassemblyStream( 
 ```
 
 ```csharp
-int GetDisassemblyStream( 
+int GetDisassemblyStream( 
    enum_DISASSEMBLY_STREAM_SCOPE  dwScope,
    IDebugCodeContext2             pCodeContext,
    out IDebugDisassemblyStream2   ppDisassemblyStream

@@ -2,17 +2,17 @@
 title: 設定 Azure 雲端服務的角色
 description: 了解如何使用 Visual Studio 設定 Azure 雲端服務的角色。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 120c693e7009dddf2efaab7ce54fd4d20c0b1681
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 8695840c48a39c6485d7b9c9b70835872f1104bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844381"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>使用 Visual Studio 設定 Azure 雲端服務角色
 Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您必須為每個角色定義其設定方式，並設定該角色的執行方式。 若要深入了解雲端服務中的角色，請參閱視訊 [Azure 雲端服務簡介](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)。
@@ -266,5 +266,5 @@ using (FileStream writeStream = File.Create(filePath))
 
 1. 當 [Windows 檔案總管] 視窗開啟時，請在 [搜尋] 文字方塊中輸入 `MyLocalStorageTest.txt`，然後選取 **Enter** 開始搜尋。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 藉由參閱 [設定 Azure 專案](vs-azure-tools-configuring-an-azure-project.md)深入了解 Visual Studio 中的 Azure 專案。 藉由參閱 [結構描述參考](/previous-versions/azure/dd179398(v=azure.100))深入了解雲端服務結構描述。

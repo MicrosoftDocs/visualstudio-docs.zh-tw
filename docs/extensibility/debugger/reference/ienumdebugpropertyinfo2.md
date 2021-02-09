@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: fdea8262-40b8-473e-88ba-639e4c4648e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfa0f8feff6a53b84a6337e5bea8bdc622e19a20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ecbb7db381261e1c836b48994eb0f208b619b3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715346"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842208"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
 此介面會列舉 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 結構。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugPropertyInfo2 : IUnknown
@@ -39,7 +39,7 @@ IEnumDebugPropertyInfo2 : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|抓取列舉序列中指定數目的 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 結構。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|抓取列舉序列中指定數目的 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 結構。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|略過列舉序列中指定數目的 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 結構。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|將列舉順序重設為開頭。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
@@ -48,7 +48,7 @@ IEnumDebugPropertyInfo2 : IUnknown
 ## <a name="remarks"></a>備註
  一般情況下，屬性（property）是可包含名稱、值、位址和類型的資訊階層，以及任何適用于關聯屬性物件或堆疊框架的其他資訊。 如需詳細資訊，請參閱 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

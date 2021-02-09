@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 95558da015462899d0388870fce95d19030fc291
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f24ccfbe66075cdb5b9f0fb257e401b611862044
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842663"
 ---
 # <a name="require-mssql"></a>require-mssql
 
@@ -53,7 +53,7 @@ ms.locfileid: "95442095"
 
 此 `require-mssql` 工具會設定一些安裝程式命令列引數，以確保安裝程式可以執行無周邊。 以下列出這些引數，您可以在 [SQL 安裝檔](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true)中找到這些引數的相關檔。
 
-| Name                                                               | 描述 |
+| 名稱                                                               | 描述 |
 |--------------------------------------------------------------------|-------------|
 | /q                                                                 |             |
 | /ACTION = 安裝                                                    |             |

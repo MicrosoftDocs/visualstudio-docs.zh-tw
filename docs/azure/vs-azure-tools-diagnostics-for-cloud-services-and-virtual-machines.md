@@ -3,17 +3,17 @@ title: 診斷-Azure 雲端服務 & Vm
 ms.custom: SEO-VS-2020
 description: 了解如何在 Visual Studio 中為 Azure 雲端服務和虛擬機器 (VM) 設定診斷。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: ababbbfcfa71f3083a292103f4fa4f1ba481faae
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e98d335d53edb7e8771db3314944a11c534d046b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844303"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>針對 Azure 雲端服務與虛擬機器設定診斷
 需要針對 Azure 雲端服務或 Azure 虛擬機器進行疑難排解時，您可以使用 Visual Studio 更輕鬆地設定 Azure 診斷。 診斷會在執行雲端服務的虛擬機器和虛擬機器執行個體上擷取系統資料和記錄資料。 診斷資料會傳輸到您選擇的儲存體帳戶。 如需 Azure 中診斷記錄的詳細資訊，請參閱[在 Azure App Service 中針對 Web 應用程式啟用診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。
@@ -216,7 +216,7 @@ ms.locfileid: "94902600"
     在 [雲端總管] 或 [伺服器總管] 中，開啟與部署相關聯的儲存體帳戶。
 3. 在資料表檢視器中開啟診斷資料表，然後檢閱您所收集的資料。 在 IIS 記錄和自訂記錄中，您可以開啟 blob 容器。 下表列出資料表或 blob 容器，其中包含不同記錄檔的資料。 除了該記錄檔的資料之外，資料表項目包含 **EventTickCount**、**DeploymentId**、**Role** 和 **RoleInstance**，以協助您識別哪些虛擬機器與角色產生了資料及其時機。
 
-   | 診斷資料 | 說明 | Location |
+   | 診斷資料 | 描述 | Location |
    | --- | --- | --- |
    | 應用程式記錄 |您的 **程式** 代碼藉由呼叫 system.servicemodel 類別的方法所產生的記錄。 |WADLogsTable |
    | 事件記錄檔 |資料來自虛擬機器上的 Windows 事件記錄。 Windows 會將資訊儲存在這些記錄中，但應用程式和服務也會使用記錄來報告錯誤或記錄資訊。 |WADWindowsEventLogsTable |
@@ -301,5 +301,5 @@ ms.locfileid: "94902600"
 
 在 [屬性] 視窗中，將 [複製到輸出目錄] 屬性設為 [永遠複製]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 若要深入了解 Azure 中的診斷記錄，請參閱[在 Azure 雲端服務](/azure/cloud-services/cloud-services-dotnet-diagnostics)和[虛擬機器中啟用診斷和在 Azure App Service 中啟用 Web 應用程式的診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。

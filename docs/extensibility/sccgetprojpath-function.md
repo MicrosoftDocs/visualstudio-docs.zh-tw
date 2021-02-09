@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 281787da3499c081fbbe6f59b7b8175a4dbf24d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad1cae248c0fe3babd920e0773825d9d36b7042
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700696"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844563"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函式
 此函式會提示使用者輸入專案路徑，這是僅對原始檔控制外掛程式有意義的字串。 當使用者為時，就會呼叫它：
@@ -76,15 +76,15 @@ SCCRTN SccGetProjPath (
 
 [in，out]傳入的值會指出是否要建立新的專案。 傳回的值表示建立專案的成功：
 
-|傳入|解譯|
+|正在傳入|解讀|
 |--------------|--------------------|
-|TRUE|使用者可以建立新專案。|
-|false|使用者可能不會建立新專案。|
+|true|使用者可以建立新專案。|
+|FALSE|使用者可能不會建立新專案。|
 
-|傳出|解譯|
+|傳出|解讀|
 |--------------|--------------------|
-|TRUE|已建立新專案。|
-|false|已選取現有的專案。|
+|true|已建立新專案。|
+|FALSE|已選取現有的專案。|
 
 ## <a name="return-value"></a>傳回值
  此函式的原始檔控制外掛程式實作為預期會傳回下列其中一個值：

@@ -2,17 +2,17 @@
 title: 測試雲端服務的效能 | Microsoft Docs
 description: 使用 Visual Studio 分析工具測試雲端服務的效能
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 119f781e972b38c04763f7a069e3835f42e21941
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 83d7372fd6942f8f29e7244b1f57d40c2b64009b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844017"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>測試雲端服務的效能
 ## <a name="overview"></a>概觀
@@ -103,7 +103,7 @@ ms.locfileid: "94902255"
     現在便會從 Azure 下載 .vsp 檔案的報告，而下載狀態會出現在 Azure 活動記錄檔中。 下載完成時，分析報告會顯示在 Visual Studio 編輯器的索引標籤中，名為  <角色名稱\><執行個體號碼\><識別碼\>.vsp。 報告的摘要資料隨即出現。
 4. 若要顯示報告的不同檢視，在 [目前檢視] 清單中，選擇您要的檢視類型。 如需詳細資訊，請參閱 [分析工具報告檢視](../profiling/performance-report-views.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 [偵錯雲端服務](vs-azure-tools-debug-cloud-services-virtual-machines.md)
 
 [從 Visual Studio 發佈至 Azure 雲端服務](vs-azure-tools-publishing-a-cloud-service.md)

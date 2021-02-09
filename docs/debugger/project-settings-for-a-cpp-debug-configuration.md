@@ -110,15 +110,15 @@ helpviewer_keywords:
 ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6130b49beecb3411c275fc5d2005b7aabee262fd
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 168dac192972c2ee670d733a07503ffe2776910e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842717"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 偵錯組態的專案設定
 您可以在 [ **屬性頁** ] 對話方塊中變更 C 或 c + + 偵錯工具設定的專案設定，如 [如何：設定 Debug 和 release 設定](../debugger/how-to-set-debug-and-release-configurations.md)中所述。 下表顯示 [屬性頁] 對話方塊中與偵錯工具相關的設定位置。
@@ -156,19 +156,19 @@ ms.locfileid: "97975286"
 
 ## <a name="cc-folder-general-category"></a>C/C++ 資料夾 (一般分類)
 
-|設定|描述|
+|設定|Description|
 |-------------|-----------------|
 |**偵錯資訊格式** ([/Z7、/Zd、Zi、/ZI](/cpp/build/reference/z7-zi-zi-debug-information-format))|指定要為專案建立的偵錯資訊類型。<br /><br /> 預設選項 (/ZI) 會以 [編輯後繼續] 相容格式建立程式資料庫 (PDB)。 如需詳細資訊，請參閱 [/Z7、/Zd、/Zi、/ZI (偵錯資訊格式)](/cpp/build/reference/z7-zi-zi-debug-information-format)。|
 
 ## <a name="cc-folder-optimization-category"></a>C/C++ 資料夾 (最佳化分類)
 
-|設定|描述|
+|設定|Description|
 |-------------|-----------------|
 |**最佳化**|指定編譯器是否應該將它所產生的程式碼最佳化。 最佳化會變更執行的程式碼。 優化的程式碼不再符合原始程式碼，讓偵錯工具更困難。<br /><br /> 預設選項 ([停用 (/0d]) 會隱藏最佳化。 您可以在隱藏最佳化的情況下進行開發，然後在建立程式碼的生產環境版本時再將此功能開啟。|
 
 ## <a name="linker-folder-debugging-category"></a>連結器資料夾 (偵錯分類)
 
-|設定|描述|
+|設定|Description|
 |-------------|-----------------|
 |**產生偵錯資訊** ([/DEBUG](/cpp/build/reference/debug-generate-debug-info))|通知連結器要包含偵錯資訊，資訊的格式是由 [/Z7、/Zd、Zi 或 /ZI](/cpp/build/reference/z7-zi-zi-debug-information-format) 所指定。|
 |**產生程式資料庫檔案** ([/PDB:name](/cpp/build/reference/pdb-use-program-database))|在此方塊中指定程式資料庫 (PDB) 檔案的名稱。 您必須選取 ZI 或 /Zi 以指定 [偵錯資訊格式]。|
@@ -186,7 +186,7 @@ ms.locfileid: "97975286"
 
 若要對專案外部的 Dll 進行 debug 錯，請參閱 [偵錯工具 dll 專案](../debugger/debugging-dll-projects.md#vxtskdebuggingdllprojectsexternal)。 如果您需要對自己的 DLL 專案進行偵錯工具，但無法存取呼叫應用程式的專案，請參閱 [如何從 DLL 專案進行調試](../debugger/how-to-debug-from-a-dll-project.md)程式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [程式碼的偵錯工具](../debugger/debugging-native-code.md)
 - [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)
 - [建立和管理 c + + 專案](/cpp/ide/creating-and-managing-visual-cpp-projects)

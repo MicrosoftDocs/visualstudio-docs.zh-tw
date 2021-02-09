@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: a70785f2-5997-40ec-a90f-80a52449768b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10fd47127abfd9cc476ed7029edd0dbbeb5501de
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 4a1bf0409dacdd6cb2f7de65462f637124a5cecd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845018"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、記憶體索引標籤
 使用 [ **記憶體** ] 索引標籤可顯示進程如何使用記憶體。 若要顯示 [ [處理常式屬性] 對話方塊](../debugger/process-properties-dialog-box.md)，請將焦點移至 [ [進程] 視圖](../debugger/processes-view.md) 視窗。 選取樹狀結構中的任何進程節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。
 
  您可以在 [ **記憶體** ] 索引標籤上使用下列設定：
 
-|進入|描述|
+|進入|Description|
 |-----------|-----------------|
 |**虛擬位元組**|目前的大小 (進程正在使用的虛擬位址空間) 位元組數。 使用虛擬位址空間時，不一定表示對應使用的是磁片或主儲存體頁面。 不過，虛擬空間是有限的，而且使用太多可能會限制進程載入程式庫的能力。|
 |**尖峰虛擬位元組**|進程已在任何一次使用之虛擬位址空間的最大位元組數目。|

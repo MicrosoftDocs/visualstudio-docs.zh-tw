@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: dc0acd64a61acac2cb30b9251bcb4e528c08f227
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840115"
 ---
 # <a name="image-library-viewer"></a>影像庫檢視器
 Visual Studio 影像庫檢視器工具可以載入和搜尋影像資訊清單，讓使用者以 Visual Studio 的相同方式來操作它們。 使用者可以改變背景、大小、DPI、高對比和其他設定。 此工具也會顯示每個影像資訊清單的載入資訊，並顯示影像資訊清單中每個影像的來源資訊。 此工具適用于：
@@ -70,7 +70,7 @@ Visual Studio 影像庫檢視器工具可以載入和搜尋影像資訊清單，
 </Symbols>
 ```
 
-|**Subelement**|**[定義]**|
+|**Subelement**|**定義**|
 |-|-|
 |匯入|匯入指定資訊清單檔的符號，以用於目前的資訊清單中。|
 |Guid|符號代表 GUID，而且必須符合 GUID 格式。|
@@ -110,7 +110,7 @@ Visual Studio 影像庫檢視器工具可以載入和搜尋影像資訊清單，
 </Image>
 ```
 
-|**Attribute**|**[定義]**|
+|**Attribute**|**定義**|
 |-|-|
 |Guid|必影像標記的 GUID 部分|
 |識別碼|必影像標記的識別碼部分|
@@ -126,14 +126,14 @@ Visual Studio 影像庫檢視器工具可以載入和搜尋影像資訊清單，
  </Source>
 ```
 
-|**Attribute**|**[定義]**|
+|**Attribute**|**定義**|
 |-|-|
 |Uri|必URI，定義可從中載入映射的位置。 可以是下列其中一項：<br /><br /> -使用 application:///授權單位的[套件 URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br /><br /> -絕對元件資源參考<br /><br /> -包含原生資源之檔案的路徑|
 |背景|參數指出來源預定要使用的背景內容。<br /><br /> 可以是下列其中一項：<br /><br /> - *Light*：來源可用於淺色背景。<br /><br /> - *深色*：來源可用於深色背景。<br /><br /> - *Systeminformation.highcontrast*：來源可以在高對比模式中的任何背景使用。<br /><br /> - *HighContrastLight*：來源可以在高對比模式中的淺色背景上使用。<br /><br /> -*HighContrastDark*：來源可在高對比模式的深色背景上使用。<br /><br /> 如果省略 **background** 屬性，則可以在任何背景使用來源。<br /><br /> 如果 **背景** 是 *淺色*、 *深色*、 *HighContrastLight* 或 *HighContrastDark*，則不會反轉來源的色彩。 如果省略 **背景** 或設定為 *systeminformation.highcontrast*，則會以影像的 **AllowColorInversion** 屬性來控制來源的色彩反轉。|
 
  \<Source>元素只能有下列其中一個選擇性子項目：
 
-|**Element**|**屬性 (所有必要的)**|**[定義]**|
+|**Element**|**屬性 (所有必要的)**|**定義**|
 |-|-|-|
 |\<Size>|值|來源將用於在裝置單位)  (指定大小的影像。 影像將會是正方形。|
 |\<SizeRange>|MinSize、MaxSize|來源會用於從 MinSize 到 MaxSize (在裝置單位) 的影像。 影像將會是正方形。|
@@ -146,7 +146,7 @@ Visual Studio 影像庫檢視器工具可以載入和搜尋影像資訊清單，
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Attribute**|**[定義]**|
+|**Attribute**|**定義**|
 |-|-|
 |類型|必原生資源的類型，也就是 XAML 或 PNG|
 |識別碼|必原生資源的整數識別碼部分|
@@ -162,7 +162,7 @@ Visual Studio 影像庫檢視器工具可以載入和搜尋影像資訊清單，
  </ImageList>
 ```
 
-|**Attribute**|**[定義]**|
+|**Attribute**|**定義**|
 |-|-|
 |Guid|必影像標記的 GUID 部分|
 |識別碼|必影像標記的識別碼部分|
@@ -217,7 +217,7 @@ Visual Studio 影像庫檢視器工具可以載入和搜尋影像資訊清單，
 
  ![影像庫檢視器篩選識別碼](../../extensibility/internals/media/image-library-viewer-filter-id.png "影像庫檢視器篩選識別碼")
 
-## <a name="notes"></a>注意
+## <a name="notes"></a>備註
 
 - 根據預設，此工具將會提取 Visual Studio 安裝目錄中出現的數個映射資訊清單。 只有一個可公開取用的標記是 **VisualStudio. ImageCatalog** 資訊清單。 GUID： ae27a6b0-e345-4288-96df-5eaf394ee369 (不 **會** 在自訂資訊清單中覆寫此 GUID) 類型： KnownMonikers
 

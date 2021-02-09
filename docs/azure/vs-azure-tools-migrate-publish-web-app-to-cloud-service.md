@@ -3,17 +3,17 @@ title: 將 web 應用程式遷移和發佈至雲端服務
 description: 了解如何使用 Visual Studio 將 Web 應用程式移轉並發佈至 Azure 雲端服務
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c9d689ddca7b6f1b0c02f89c7afb82392e8a58af
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 3154ffd50043ecc824ca44fcae86e54e511ab5bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902346"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844082"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>如何：從 Visual Studio 將 web 應用程式遷移和發佈至 Azure 雲端服務
 
@@ -120,7 +120,7 @@ ms.locfileid: "94902346"
 | WCF | WCF 工作流程服務應用程式 |
 | 工作流程 | WCF 工作流程服務應用程式 |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 - [準備從 Visual Studio 發佈或部署 Azure 應用程式](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)
 - [設定具名的驗證認證](vs-azure-tools-setting-up-named-authentication-credentials.md)。

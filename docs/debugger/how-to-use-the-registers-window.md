@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 2918ffa2-562f-40d6-9053-ef321bbeb767
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8422738b5c46b5482ac65cd24ccc903acdb4506e
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: ea0275a5186b58c9b9a07934b95351b597a816f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845005"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>在 [暫存器] 視窗中查看暫存器值， (c #、c + +、Visual Basic、F # ) 
 

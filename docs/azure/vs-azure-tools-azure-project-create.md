@@ -2,17 +2,17 @@
 title: 建立 Azure 雲端服務專案
 description: 立即了解如何使用 Visual Studio 建立 Azure 雲端服務專案
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 667d3a0a4e4642c348f6a0dd6663a30fcf704d14
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d652172bde2ecd3aea4bb027e46173eaa5fe7b17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902788"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844498"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>使用 Visual Studio 來建立 Azure 雲端服務專案
 
@@ -63,5 +63,5 @@ Visual Studio Azure 專案與方案中的角色專案有關。 專案還包含�
 
 如需這些檔案的詳細資訊，請參閱[使用 Visual Studio 設定 Azure 雲端服務的角色](vs-azure-tools-configure-roles-for-cloud-service.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - [使用 Visual Studio 在 Azure 雲端服務專案中管理角色](./vs-azure-tools-cloud-service-project-managing-roles.md)

@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 21e88510-caac-405e-ba45-cb00e19a28bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f35e4f2732427045fac982454ce9f7290a6dc970
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28ba94e40e475527b586c3e9da33bbf1a893295a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724312"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840102"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
 設定埠供應商的地區設定。

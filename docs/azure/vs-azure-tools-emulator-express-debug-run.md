@@ -3,17 +3,17 @@ title: 在本機執行/錯 Azure 雲端服務的模擬器 Express
 ms.custom: SEO-VS-2020
 description: 使用 Emulator Express 在本機電腦上執行及偵錯雲端服務
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: dee97ab487f4e165fd372559e51b6f19c3501e9f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 08381be4fdc4fc23b70fb252c653b62398799a30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902437"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844212"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>使用 Emulator Express 在本機電腦上執行 Azure 雲端服務及對其進行偵錯
 使用 Emulator Express，您可以測試及偵錯雲端服務，而不需以系統管理員身分執行 Visual Studio。 視您的雲端服務的需求而定，您可以進行專案設定以使用 Emulator Express 或完整模擬器。 如需完整模擬器的詳細資訊，請參閱 [在計算模擬器中執行 Azure 應用程式](/azure/storage/common/storage-use-emulator)。
@@ -47,5 +47,5 @@ ms.locfileid: "94902437"
 - 您無法存取低於 1000 的連接埠號碼。 如果您使用的驗證提供者通常使用小於 1000 的連接埠，您可能需要將此值變更為大於 1000 的連接埠號碼。
 - 任何適用於 Azure 計算模擬器的限制也適用於 Emulator Express。 例如，每一個部署不能有 50 個以上的角色執行個體。 如需有關「Azure 計算模擬器」的詳細資訊，請參閱[在計算模擬器中執行 Azure 應用程式](vs-azure-tools-performance-profiling-cloud-services.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 [進行 Azure 雲端服務的偵錯](vs-azure-tools-debugging-cloud-services-overview.md)

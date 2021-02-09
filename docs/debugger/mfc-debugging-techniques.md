@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf00191aff408b1133c281e10eea17e3a923215
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: b4a3f0f675df70643876b7bb5480cb8c885d8854
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844992"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 如果您正在偵錯 MFC 程式，這些偵錯技術可能很有幫助。
@@ -432,7 +432,7 @@ pMyPerson->Dump( afxDump );
 
 3. 首先，您要建立新專案組態。
 
-   1. 在 [ **\<Project> 屬性頁**] 對話方塊中，按一下 [ **Configuration Manager** ] 按鈕。
+   1. 在 [ **\<Project> 屬性頁**] 對話方塊中，按一下 [**設定管理員**] 按鈕。
 
    2. 在 [組態管理員對話方塊](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))裡，在方格中尋找專案。 **在 [設定**] 欄中，選取 **\<New...>** 。
 
@@ -482,5 +482,5 @@ pMyPerson->Dump( afxDump );
 
    [本主題內容](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [偵錯機器碼](../debugger/debugging-native-code.md)

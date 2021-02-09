@@ -2,17 +2,17 @@
 title: 如何管理服務組態和設定檔 | Microsoft Docs
 description: 了解如何使用服務組態和設定檔組態檔案 | 其儲存部署環境的設定及雲端服務的發佈設定。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 751214a99c7724c83f01226164202f90425ebf65
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e1c97670a91f2d90a01fef24f592e6ce2d5b05fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843809"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>如何管理服務組態和設定檔
 ## <a name="overview"></a>概觀
@@ -93,5 +93,5 @@ ms.locfileid: "94902074"
 4. 變更完設定之後，選取 [下一步] 以返回 **「設定」** 頁面。
 5. (選擇性) 選取 [發佈]  以使用新設定來發佈雲端服務。 如果您不想在此時發佈雲端服務，而關閉 [發佈精靈]，Visual Studio 會詢問您是否要將變更儲存至設定檔。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 若要瞭解如何從 Visual Studio 設定 Azure 專案的其他部分，請參閱設定 [Azure 專案](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)。

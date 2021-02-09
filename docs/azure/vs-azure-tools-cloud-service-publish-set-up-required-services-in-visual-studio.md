@@ -2,17 +2,17 @@
 title: 準備發佈或部署雲端服務
 description: 了解設定雲端和儲存體帳戶服務以及 Azure 應用程式的程序。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c048968ca97484812b7423a16e4a1834e1c8a66b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 06157f1476762af5bfe24ce950e29e80ac60e6b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844420"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>準備從 Visual Studio 發佈或部署雲端服務
 
@@ -75,6 +75,6 @@ Azure 入口網站會顯示可用來存取每個 Azure 儲存體服務中之資�
 
 次要存取金鑰提供和主要存取金鑰相同的儲存體帳戶存取權，並會在主要存取金鑰遭到入侵時產生做為備份。 此外，建議您定期重新產生存取金鑰。 您可以修改連接字串設定以在您重新產生主要金鑰時使用次要金鑰，然後您可以修改它以在重新產生次要金鑰時使用重新產生的主要金鑰。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要深入了解如何將應用程式從 Visual Studio 發佈至 Azure，請參閱 [使用 Azure Tools 發佈雲端服務](vs-azure-tools-publishing-a-cloud-service.md)。

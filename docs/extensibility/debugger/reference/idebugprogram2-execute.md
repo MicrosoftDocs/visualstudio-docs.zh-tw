@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af4650b5523595350543ac549ac162247563e418
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25f1544fe13c6dc44aa90b73f69854893beae14f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844732"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 從停止狀態繼續執行此程式。 任何先前的執行狀態 (（例如步驟) ）都會清除，而且程式會再次開始執行。
@@ -44,7 +44,7 @@ int Execute();
  如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 當使用者從某個其他程式執行緒的停止狀態開始執行時，會在此程式上呼叫這個方法。 當使用者從 IDE 中的 [**調試**程式] 功能表選取 [**啟動**] 命令時，也會呼叫這個方法。 這種方法的執行方式，可以像在程式中的目前線程上呼叫 [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) 方法一樣簡單。
+ 當使用者從某個其他程式執行緒的停止狀態開始執行時，會在此程式上呼叫這個方法。 當使用者從 IDE 中的 [**調試** 程式] 功能表選取 [**啟動**] 命令時，也會呼叫這個方法。 這種方法的執行方式，可以像在程式中的目前線程上呼叫 [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) 方法一樣簡單。
 
 > [!WARNING]
 > 在處理此呼叫時，請勿將停止事件或立即 (同步) 事件傳送到 [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ;否則，偵錯工具可能會停止回應。

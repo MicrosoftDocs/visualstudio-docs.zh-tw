@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6314199fdf850c377825ee31e58cd9f315c5f672
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: e46832803008ea65d0f7ec4f2723a615ba496b94
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761019"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840076"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE 定義的命令、功能表和群組
 許多功能表、命令和命令群組已定義為可供 IDE 使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 當您擴充時，也可以使用這些命令 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。

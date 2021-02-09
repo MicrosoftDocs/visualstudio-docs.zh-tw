@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 471acaef0145b3bf1a73925b42e17a6343439ea2
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 200339b8fc7bbaf524d920ff4a7520c20d09ffc7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994390"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844628"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>開始使用語言服務及編輯器擴充功能
 

@@ -3,17 +3,17 @@ title: 使用 IntelliTrace 來偵測已發佈的 Azure 雲端服務
 ms.custom: SEO-VS-2020
 description: 了解如何使用 Visual Studio 和 IntelliTrace，進行雲端服務的偵錯
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: abfe3de9bad150fbfb187646592218e62c1cce20
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d419f80dc0319fbcebe053cd063cf668fc278a38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902411"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844199"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>使用 Visual Studio 和 IntelliTrace 進行已發佈 Azure 雲端服務的偵錯
 有了 IntelliTrace，您可以於角色執行個體在 Azure 中執行時，記錄其廣泛的偵錯資訊。 如果您需要找出問題的原因，您可以從 Visual Studio 使用 IntelliTrace 記錄來瀏覽程式碼，如同它是在 Azure 中執行。 實際上，Azure 應用程式在 Azure 中以雲端服務形式執行時，IntelliTrace 會記錄主要執行程式碼和環境資料，並且可讓您從 Visual Studio 重新播放記錄的資料。
@@ -73,6 +73,6 @@ IntelliTrace 記錄檔是循環記錄檔，大小上限是在 IntelliTrace 設�
 >
 >
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - [進行 Azure 雲端服務偵錯的選項](vs-azure-tools-debugging-cloud-services-overview.md)
 - [使用 Visual Studio 發佈 Azure 雲端服務](vs-azure-tools-publishing-a-cloud-service.md)

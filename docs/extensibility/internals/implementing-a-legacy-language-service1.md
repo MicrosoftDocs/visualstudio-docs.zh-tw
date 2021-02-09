@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be2caf25dfef71cb267f49b6cfd732923aa0848c
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 2337d1ee2ac8e698e93a0d8d3d1dc9324af4f933
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839985"
 ---
 # <a name="implementing-a-legacy-language-service-1"></a>執行舊版語言服務1
 您可以使用 managed package framework 中的類別 (MPF) 來執行支援各種功能的舊版語言服務，例如語法醒目提示、括弧對稱和 IntelliSense 完成。

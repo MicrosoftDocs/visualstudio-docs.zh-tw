@@ -2,17 +2,17 @@
 title: 發佈 Azure 雲端服務
 description: 了解如何在 Visual Studio 發佈 Azure 應用程式精靈中進行各種設定
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f965d8e7f71ba34be9901d77fa4f0af881805bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844056"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>使用 Visual Studio 發佈 Azure 應用程式精靈
 
@@ -106,7 +106,7 @@ Azure 儲存體帳戶會儲存應用程式部署的封裝。 部署應用程式�
 
 設定專案部署的所有設定後，請選取對話方塊底部的 [發佈]。 您可以在 Visual Studio 的 [輸出] 窗格中監視處理序狀態。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 - [從 Visual Studio 將 Web 應用程式移轉並發佈至 Azure 雲端服務](./vs-azure-tools-migrate-publish-web-app-to-cloud-service.md)
 
