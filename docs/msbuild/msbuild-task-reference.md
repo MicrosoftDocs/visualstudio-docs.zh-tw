@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e247dc242fcacd7ea94f9f078af05dd56299e0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f26c3c1b8256597c795fa8bcd815fd605f895fa5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878379"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
 
@@ -30,10 +30,10 @@ ms.locfileid: "93049080"
 
 除了本節中主題所列的參數之外，每個工作也會有下列參數：
 
-| 參數 | 描述 |
+| 參數 | Description |
 |-------------------| - |
 | `Condition` | 選擇性的 `String` 參數。<br /><br /> `Boolean`MSBuild 引擎用來判斷是否會執行此工作的運算式。 如需 MSBuild 所支援條件的詳細資訊，請參閱 [條件](../msbuild/msbuild-conditions.md)。 |
-| `ContinueOnError` | 選擇性參數。 可包含一或多個下列值：<br /><br /> -   **WarnAndContinue** 或 **true** 。 當工作失敗時， [目標](../msbuild/target-element-msbuild.md) 專案和組建中的後續工作會繼續執行，並將工作中的所有錯誤視為警告。<br />-   **ErrorAndContinue** 。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **ErrorAndStop** 或 **false** (預設) 。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱[如何：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。 |
+| `ContinueOnError` | 選擇性參數。 可包含一或多個下列值：<br /><br /> -   **WarnAndContinue** 或 **true**。 當工作失敗時， [目標](../msbuild/target-element-msbuild.md) 專案和組建中的後續工作會繼續執行，並將工作中的所有錯誤視為警告。<br />-   **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **ErrorAndStop** 或 **false** (預設) 。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱[如何：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。 |
 
 ## <a name="in-this-section"></a>本節內容
 
@@ -55,7 +55,7 @@ ms.locfileid: "93049080"
 
 - [AspNetCompiler 工作](../msbuild/aspnetcompiler-task.md)
 
- 包裝 *aspnet_compiler.exe* ，此為預先編譯 ASP.NET 應用程式的公用程式。
+ 包裝 *aspnet_compiler.exe*，此為預先編譯 ASP.NET 應用程式的公用程式。
 
 - [AssignCulture 工作](../msbuild/assignculture-task.md)
 
@@ -303,13 +303,13 @@ ms.locfileid: "93049080"
 
 - [XslTransformation 工作](../msbuild/xsltransformation-task.md)
 
- 使用「可延伸樣式表語言轉換」  (XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。
+ 使用「可延伸樣式表語言轉換」(XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。
 
 - [ZipDirectory 工作](../msbuild/zipdirectory-task.md)
 
  從目錄的內容建立 *.zip* 封存。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
 - [工作撰寫](../msbuild/task-writing.md)

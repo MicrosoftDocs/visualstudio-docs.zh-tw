@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 831a5a1a-c4af-4520-9fdf-3a731aeff85c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b8890cb76d8f15ff0519db5e20d3b8e8866d4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c0db9bfd870921de151d5fb9eda2f2a06f50dc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875844"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 取得度量的值（指定其名稱）。

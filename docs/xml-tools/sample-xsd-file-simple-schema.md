@@ -7,15 +7,15 @@ ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 974e15c9645a1c1fcb8d17a8e10adc995a8743f4
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 0529a80ac88d33d4f24f5933a814fde3c1fbbef7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876364"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>範例 XSD 檔案：簡單結構描述
 

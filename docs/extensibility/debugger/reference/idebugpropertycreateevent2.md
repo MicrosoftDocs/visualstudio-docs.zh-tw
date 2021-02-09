@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d8fcb4375f29820b51752ac3fdebbd04f06f80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08ef46275d9c7365cfcc837b8e4dfc73f0b48b41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876052"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 此介面是由偵錯工具在建立與特定檔相關聯的屬性時， (DE) 至會話 debug manager (SDM) 所傳送。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPropertyCreateEvent2 : IUnknown
@@ -42,9 +42,9 @@ IDebugPropertyCreateEvent2 : IUnknown
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|取得新的屬性。|
 
 ## <a name="remarks"></a>備註
- 如果屬性具有與其相關聯的特定檔或腳本，則會將此事件傳送至 SDM，以便使用檔的名稱來更新 [ **指令檔** ] 視窗。 SDM 會以引數呼叫 [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) ， `guidDocument` 以取出 `VARIANT` 包含 [IUnknown](/cpp/atl/iunknown) 指標的。 SDM 會呼叫這個指標上的[QueryInterface](/cpp/atl/queryinterface) ，以抓取用來更新**指令檔**視窗的[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面。
+ 如果屬性具有與其相關聯的特定檔或腳本，則會將此事件傳送至 SDM，以便使用檔的名稱來更新 [ **指令檔** ] 視窗。 SDM 會以引數呼叫 [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) ， `guidDocument` 以取出 `VARIANT` 包含 [IUnknown](/cpp/atl/iunknown) 指標的。 SDM 會呼叫這個指標上的 [QueryInterface](/cpp/atl/queryinterface) ，以抓取用來更新 **指令檔** 視窗的 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

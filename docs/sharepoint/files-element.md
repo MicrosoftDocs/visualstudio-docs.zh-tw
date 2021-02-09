@@ -11,20 +11,20 @@ helpviewer_keywords:
 - Files element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 03473f40bb78c866f3d93dea11a20b8747afad7b
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 653e48a2e9b6a68db94fd66660da85f4dec20927
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876643"
 ---
 # <a name="files-element"></a>Files 項目
   使用 SharePoint 專案專案指定要部署的檔案，例如功能元素檔和相依非 SharePoint 專案的輸出。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Files>
@@ -44,14 +44,14 @@ ms.locfileid: "94672804"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ProjectItemFile](../sharepoint/projectitemfile-element.md)|選擇性的 **ProjectItemFileType** 元素。<br /><br /> 表示當專案專案部署至 SharePoint 時，要包含在專案專案中的 SharePoint 檔案，例如功能元素檔。|
 |[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|選擇性的 **ProjectOutputFileType** 元素。<br /><br /> 代表專案的輸出，該專案會在專案專案部署至 SharePoint 時包含在專案專案中。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 專案專案。 此元素是檔案的必要根項目 `.spdata` 。|
 

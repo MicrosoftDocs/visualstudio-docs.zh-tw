@@ -10,16 +10,16 @@ helpviewer_keywords:
 - performance collection methods
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fe102c7ebd8ed551a0da4e92c66dfac8acb78ec
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: a304006a778dc4766e6b4be9ceb133450c0dfb52
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876910"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：選擇收集方法
 
@@ -33,7 +33,7 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 
 - 在精靈的第一個頁面上，選取下列其中一個選項︰
 
-| 選項 | 描述 |
+| 選項 | Description |
 |----------------------------| - |
 | **CPU 取樣** | 收集對初始分析和 CPU 使用率問題分析有用的應用程式統計資料。 |
 | **儀錶** | 收集對重點分析和輸入/輸出效能問題分析有用的詳細計時資料。 |

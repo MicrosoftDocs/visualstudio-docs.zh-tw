@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ae887e8752e1603af173ed569d19a6602ac84f0
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 489aea2ba5b12dafa161ce70a49f81f60b38ba5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878756"
 ---
 # <a name="create-a-source-control-plug-in"></a>建立原始檔控制外掛程式
 Visual Studio SDK 提供的資源可讓您將原始檔控制功能新增至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (IDE) 的整合式開發環境。 它可讓您使用符合本檔中所述之原始檔控制外掛程式 API 的任何外掛程式 DLL。

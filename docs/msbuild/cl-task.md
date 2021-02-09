@@ -20,19 +20,19 @@ helpviewer_keywords:
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d930ed8d918a08503a6eaa6b60848abeec7683a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 542d84f4c0279c1f76fa1ea29a244e78c53b394d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878431"
 ---
 # <a name="cl-task"></a>CL 工作
 
-包裝 Microsoft c + + 編譯器工具（ *cl.exe* ）。 編譯器會產生可執行檔 ( *.exe* ) 檔案、動態連結程式庫 ( *.dll* ) 檔案或程式碼模組 ( *. .netmodule* ) 檔。 如需詳細資訊，請參閱 [編譯器選項](/cpp/build/reference/compiler-options) 和 [從命令列使用 MSBuild](/cpp/build/msbuild-visual-cpp) ，然後 [從命令列使用 Microsoft c + + 工具](/cpp/build/building-on-the-command-line)組。
+包裝 Microsoft c + + 編譯器工具（ *cl.exe*）。 編譯器會產生可執行檔 (*.exe*) 檔案、動態連結程式庫 (*.dll*) 檔案或程式碼模組 (*. .netmodule*) 檔。 如需詳細資訊，請參閱 [編譯器選項](/cpp/build/reference/compiler-options) 和 [從命令列使用 MSBuild](/cpp/build/msbuild-visual-cpp) ，然後 [從命令列使用 Microsoft c + + 工具](/cpp/build/building-on-the-command-line)組。
 
 ## <a name="parameters"></a>參數
 
@@ -66,7 +66,7 @@ ms.locfileid: "92796832"
 
    選擇性的 String 參數。
 
-   一律會在命令列上發出的字串。 其預設值為 " **/c** "。
+   一律會在命令列上發出的字串。 其預設值為 "**/c**"。
 
 - **AssemblerListingLocation**
 
@@ -92,7 +92,7 @@ ms.locfileid: "92796832"
 
   - **全部**  - **/FAcs**
 
-    如需詳細資訊，請參閱/FA 中的 **/FA** 、 **/FAc** 、 **/FAs** 和 **/FAcs** 選項 [、/FA (清單檔)](/cpp/build/reference/fa-fa-listing-file)。
+    如需詳細資訊，請參閱/FA 中的 **/FA**、 **/FAc**、 **/FAs** 和 **/FAcs** 選項 [、/FA (清單檔)](/cpp/build/reference/fa-fa-listing-file)。
 
 - **BasicRuntimeChecks**
 
@@ -140,7 +140,7 @@ ms.locfileid: "92796832"
 
    選擇性的 Boolean 參數。
 
-   如果是 `true`，即表示 IDE 會叫用 **MSBuild** 。 否則，會在命令列上叫用 **MSBuild** 。
+   如果是 `true`，即表示 IDE 會叫用 **MSBuild**。 否則，會在命令列上叫用 **MSBuild**。
 
 - **CallingConvention**
 
@@ -198,7 +198,7 @@ ms.locfileid: "92796832"
 
    選擇性的 Boolean 參數。
 
-   如果是 `true`，則會告知編譯器來準備「Hotpatch 功能」  所需的映像。 此參數會確認每個函式的第一個指令都是兩個位元組，這是 Hotpatch 功能所需要的。
+   如果是 `true`，則會告知編譯器來準備「Hotpatch 功能」所需的映像。 此參數會確認每個函式的第一個指令都是兩個位元組，這是 Hotpatch 功能所需要的。
 
    如需詳細資訊，請參閱 [/hotpatch (建立可線上修補映射) ](/cpp/build/reference/hotpatch-create-hotpatchable-image)。
 
@@ -206,7 +206,7 @@ ms.locfileid: "92796832"
 
    選擇性的 String 參數。
 
-   選取為您的程式建立的偵錯工具類型，以及此資訊是否保留在物件 ( *.obj* ) 檔或程式資料庫 (PDB) 中。
+   選取為您的程式建立的偵錯工具類型，以及此資訊是否保留在物件 (*.obj*) 檔或程式資料庫 (PDB) 中。
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
@@ -222,7 +222,7 @@ ms.locfileid: "92796832"
 
    選擇性的 Boolean 參數。
 
-   如果是 **true** ，即會告訴編譯器，針對與 ANSI C 或 ANSI C++ 不相容的語言建構發出錯誤。
+   如果是 **true**，即會告訴編譯器，針對與 ANSI C 或 ANSI C++ 不相容的語言建構發出錯誤。
 
    如需詳細資訊，請參閱/Za 中的 **/za** 選項 [、/ze (停用語言延伸模組)](/cpp/build/reference/za-ze-disable-language-extensions)。
 
@@ -268,7 +268,7 @@ ms.locfileid: "92796832"
 
    選擇性的 String 參數。
 
-   讓您可將內部編譯器錯誤 (ICE) 資訊直接提供給 Microsoft。 根據預設，IDE 組建中的設定是 **Prompt** ，而命令列組建中的設定是 **Queue** 。
+   讓您可將內部編譯器錯誤 (ICE) 資訊直接提供給 Microsoft。 根據預設，IDE 組建中的設定是 **Prompt**，而命令列組建中的設定是 **Queue**。
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
@@ -330,7 +330,7 @@ ms.locfileid: "92796832"
 
    如果是 `true`，即會啟用可靠的浮點例外狀況模型。 觸發例外狀況之後，將會立即引發例外狀況。
 
-   如需詳細資訊，請參閱 [/fp (指定浮點數行為)](/cpp/build/reference/fp-specify-floating-point-behavior)中的/ **fp： except** 選項。
+   如需詳細資訊，請參閱 [/fp (指定浮點數行為)](/cpp/build/reference/fp-specify-floating-point-behavior)中的/**fp： except** 選項。
 
 - **FloatingPointModel**
 
@@ -456,7 +456,7 @@ ms.locfileid: "92796832"
 
    選擇性的 `Boolean` 參數。
 
-   如果為，則會 `true` 從物件 ( *.obj* ) 檔案中省略預設的 C 執行時間程式庫名稱。 根據預設，編譯器會將程式庫的名稱放入 *.obj* 檔中，以將連結器導向至正確的程式庫。
+   如果為，則會 `true` 從物件 (*.obj*) 檔案中省略預設的 C 執行時間程式庫名稱。 根據預設，編譯器會將程式庫的名稱放入 *.obj* 檔中，以將連結器導向至正確的程式庫。
 
    如需詳細資訊，請參閱 [/zl (省略預設程式庫名稱) ](/cpp/build/reference/zl-omit-default-library-name)。
 
@@ -498,7 +498,7 @@ ms.locfileid: "92796832"
 
    選擇性的 **字串** 參數。
 
-   在組建期間，建立或使用先行編譯標頭檔 ( *.pch* ) 檔。
+   在組建期間，建立或使用先行編譯標頭檔 (*.pch*) 檔。
 
    指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
@@ -686,7 +686,7 @@ ms.locfileid: "92796832"
 
    將指定的編譯器警告清單視為錯誤。
 
-   如需詳細資訊，請 **/we** 參閱 `n` [/W、/W0、/W1、/W2、/W3、/W4、/W1、/W2、/W3、/W4、/Wall、/wd、/we、/wo、/Wv、、、、、/wx (警告層級)](/cpp/build/reference/compiler-option-warning-level)的/we 選項。
+   如需詳細資訊，請參閱 `n` [/W、/W0、/W1、/W2、/W3、/W4、/W1、/W2、/W3、/W4、/Wall、/wd、/we、/wo、/Wv、、、、、/wx (警告層級) ](/cpp/build/reference/compiler-option-warning-level)的/we 選項。
 
 - **TreatWarningAsError**
 
@@ -784,7 +784,7 @@ ms.locfileid: "92796832"
 
    選擇性的 `ITaskItem[]` 參數。
 
-   指定代表「讀取檔案追蹤記錄檔」  的項目陣列。
+   指定代表「讀取檔案追蹤記錄檔」的項目陣列。
 
    讀取檔案追蹤記錄 *檔 ()* 包含工作所讀取的輸入檔名稱，且專案組建系統會使用它來支援累加組建。 如需詳細資訊，請參閱此表格中的 **TrackerLogDirectory** 和 **TrackFileAccess** 參數。
 
@@ -792,7 +792,7 @@ ms.locfileid: "92796832"
 
    選擇性的 `ITaskItem[]` 參數。
 
-   指定代表「寫入檔案追蹤記錄檔」  的項目陣列。
+   指定代表「寫入檔案追蹤記錄檔」的項目陣列。
 
    寫入檔案追蹤記錄 *檔 ()* 包含工作所寫入之輸出檔案的名稱，並由專案組建系統用來支援累加式組建。 如需詳細資訊，請參閱此表格中的 **TrackerLogDirectory** 和 **TrackFileAccess** 參數。
 
@@ -804,6 +804,6 @@ ms.locfileid: "92796832"
 
    如需詳細資訊，請參閱此表格中的 **TLogReadFiles** 和 **TLogWriteFiles** 參數。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)

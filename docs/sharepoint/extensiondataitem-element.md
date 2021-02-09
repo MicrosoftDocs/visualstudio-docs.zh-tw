@@ -11,20 +11,20 @@ helpviewer_keywords:
 - ExtensionDataItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 23bd231343b3e7a6c68883aa7fe3ee4e518ac883
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: add1a119283635f9cfd9bebddfe18228f1976703
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876819"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 項目
   與 SharePoint 專案專案相關聯的自訂資料項目（以索引鍵/值格式）。 索引鍵和值都必須是字串。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ExtensionDataItem Key = "Key of the data item"
@@ -36,17 +36,17 @@ ms.locfileid: "94672609"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |**金鑰**|必要的 **xs： string** 屬性。<br /><br /> 用來儲存和取出資料項目的索引鍵。|
-|**ReplTest1**|必要的 **xs： string** 屬性。<br /><br /> 資料項目的值。|
+|**值**|必要的 **xs： string** 屬性。<br /><br /> 資料項目的值。|
 
 ### <a name="child-elements"></a>子元素
  無。
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|表示與 SharePoint 專案專案相關聯的自訂資料項目集合。|
 

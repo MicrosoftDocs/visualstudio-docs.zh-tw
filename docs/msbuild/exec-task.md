@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99475ac316112f29a73a85b8ff92249a13867852
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 785d1bcfb8fdce5b09e749dcca17ff476a5d3f48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877157"
 ---
 # <a name="exec-task"></a>Exec 工作
 
@@ -35,9 +35,9 @@ ms.locfileid: "92436733"
 
 下表說明 `Exec` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
-|`Command`|必要的 `String` 參數。<br /><br /> 一或多個要執行的命令。 這些可以是系統命令（如 attrib）或可執行檔，例如 *program.exe*、 *runprogram.bat*或 *setup.msi*。<br /><br /> 此參數可以包含多行命令。 或者，您可以將多個命令放在一個批次檔中，然後使用此參數來執行該批次檔。|
+|`Command`|必要的 `String` 參數。<br /><br /> 一或多個要執行的命令。 這些可以是系統命令（如 attrib）或可執行檔，例如 *program.exe*、 *runprogram.bat* 或 *setup.msi*。<br /><br /> 此參數可以包含多行命令。 或者，您可以將多個命令放在一個批次檔中，然後使用此參數來執行該批次檔。|
 |`ConsoleOutput`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 每個項目輸出都是工具發出的標準輸出或標準錯誤資料流。 這只有在 `ConsoleToMsBuild` 設為 `true` 時才會擷取。|
 |`ConsoleToMsBuild`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，工作會擷取工具的標準錯誤和標準輸出，讓它們可在 `ConsoleOutput` 輸出參數中使用。<br /><br />預設：`false`。|
 |`CustomErrorRegularExpression`|選擇性的 `String` 參數。<br /><br /> 指定在工具輸出中用來檢查錯誤行的規則運算式。 這適用於會產生異常格式之輸出的工具。<br /><br />預設值：`null` (沒有自訂處理)。|

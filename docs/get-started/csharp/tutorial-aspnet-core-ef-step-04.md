@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9a2ee576808698e19726cadfea7ba560ce3bdb7c
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 9625ce43d94158732c2d6af738a1f1abc84f666e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878769"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>步驟4：從您的 ASP.NET Core 應用程式公開 web API
 
@@ -37,7 +37,7 @@ _觀看並遵循這段影片，向您的第一個 ASP.NET Core 應用程式新�
 
 ## <a name="add-an-api-controller"></a>新增 API 控制器
 
-以滑鼠右鍵按一下專案並加入一個名為 *Api* 的新資料夾。 然後，以滑鼠右鍵按一下此資料夾，然後選擇 [**加入**  >  **新的 scaffold 專案**]。 選擇 [使用 Entity Framework 執行動作的 API 控制器]****。 現在選擇現有的模型類別，然後按一下 [新增]****。
+以滑鼠右鍵按一下專案並加入一個名為 *Api* 的新資料夾。 然後，以滑鼠右鍵按一下此資料夾，然後選擇 [**加入**  >  **新的 scaffold 專案**]。 選擇 [使用 Entity Framework 執行動作的 API 控制器]。 現在選擇現有的模型類別，然後按一下 [新增]。
 
 ![Visual Studio 2019 ASP.NET Core Scaffolded API 控制器](media/vs-2019/vs2019-add-scaffold-api.png)
 
@@ -187,7 +187,7 @@ public async Task<IActionResult> DeleteGame([FromRoute] int id)
 
 ## <a name="adding-swagger"></a>新增 Swagger
 
-Swagger 是一個 API 文件和測試工具，可以作為一組服務與中介軟體新增至 ASP.NET Core 應用程式中。 若要這樣做，請以右鍵按一下專案，然後選擇 [管理 NuGet 套件]****。 然後，按一下 **[流覽]**、搜尋 `Swashbuckle.AspNetCore` 及安裝4.0.1 版本。
+Swagger 是一個 API 文件和測試工具，可以作為一組服務與中介軟體新增至 ASP.NET Core 應用程式中。 若要這樣做，請以右鍵按一下專案，然後選擇 [管理 NuGet 套件]。 然後，按一下 **[流覽]**、搜尋 `Swashbuckle.AspNetCore` 及安裝4.0.1 版本。
 
 ![Visual Studio 2019 從 Nuget 新增 Swashbuckle](media/vs-2019/vs2019-nuget-swashbuckle.png)
 
@@ -222,7 +222,7 @@ app.UseSwaggerUI(c =>
 
 按一下 [遊戲] 下的端點，然後按一下 `Try it out` 和 `Execute` 以查看不同端點的行為方式。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在下一個影片中，您將學習如何將應用程式部署至 Azure。
 

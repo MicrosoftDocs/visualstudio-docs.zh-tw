@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8060b4d2-e4a9-48cf-a437-852649ceb417
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f9276fa25651d3f453302a1fc87d10b37e4d49e4
-ms.sourcegitcommit: 52742b678233eed1de7a249cf990d072f9758149
+ms.openlocfilehash: 2958b45fc64383fde7d762d4c20887b3f58669d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99049463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878392"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
 

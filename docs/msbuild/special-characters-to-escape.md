@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5b5172c3-41e4-4f38-a16f-2aeac831a5fc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 433e762bf68b6a3956616e0ccccc229bca8f86b9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 5e665c214ea75de67a6c339bb516dfb812936448
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878145"
 ---
 # <a name="special-characters-to-escape"></a>要逸出的特殊字元
 
@@ -33,7 +33,7 @@ ms.locfileid: "93048269"
 
  要逸出的特殊字元完整清單如下：
 
-|字元|ASCII 編碼|描述|
+|字元|ASCII 編碼|Description|
 |---------|----------|-----------|
 |%|%25|百分比符號，用以參考中繼資料。|
 |$|%24|錢幣符號，用以參考屬性。|
@@ -47,7 +47,7 @@ ms.locfileid: "93048269"
 > [!NOTE]
 > 在某些情況下，您可能需要將雙引號 ( ") 字元，例如在工作中使用時 `Exec` 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：在 MSBuild 中 Escape 特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

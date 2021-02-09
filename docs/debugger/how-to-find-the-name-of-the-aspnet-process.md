@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 07d692dac1b5770cdee4682af5184649471c2828
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 11526639975924fd9984dce33a08e54c9a5405b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903437"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877651"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>尋找 ASP.NET 處理序的名稱
 

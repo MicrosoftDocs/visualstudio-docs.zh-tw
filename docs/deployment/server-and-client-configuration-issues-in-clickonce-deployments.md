@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e5cebadb35ae5d4cddcd0d4bfb4763979937318
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 469749c28acdb90e835082dd05010102ab50e52b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877612"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 如果您在 Windows Server 上使用 Internet Information Services (IIS) ，而您的部署包含 Windows 無法辨識的檔案類型，例如 Microsoft Word 檔案，IIS 將拒絕傳輸該檔案，而且您的部署將不會成功。
@@ -33,7 +33,7 @@ ms.locfileid: "94350543"
 
  雖然這項限制不會造成下載核心檔案 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] （例如資訊清單和元件）的問題，但這項限制可能會讓您無法下載包含在應用程式中的資料檔案 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 在中 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ，您可以藉由移除防止從 IIS 設定管理員下載這類檔案的處理常式來解決此錯誤。 如需其他詳細資料，請參閱 IIS 伺服器檔。
 
- 某些網頁伺服器可能會封鎖副檔名為 *.dll* 、 *.config* 和 *.mdf* 等副檔名的檔案。 以 Windows 為基礎的應用程式通常包含具有其中一些延伸模組的檔案。 如果使用者嘗試在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Web 服務器上執行存取封鎖檔案的應用程式，則會產生錯誤。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]預設會以 .deploy 副檔名發行每個應用程式檔，而不是解除封鎖所有副檔名 *。* 因此，系統管理員只需要設定 Web 服務器來解除封鎖下列三個副檔名：
+ 某些網頁伺服器可能會封鎖副檔名為 *.dll*、 *.config* 和 *.mdf* 等副檔名的檔案。 以 Windows 為基礎的應用程式通常包含具有其中一些延伸模組的檔案。 如果使用者嘗試在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Web 服務器上執行存取封鎖檔案的應用程式，則會產生錯誤。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]預設會以 .deploy 副檔名發行每個應用程式檔，而不是解除封鎖所有副檔名 *。* 因此，系統管理員只需要設定 Web 服務器來解除封鎖下列三個副檔名：
 
 - *。應用程式*
 
@@ -41,9 +41,9 @@ ms.locfileid: "94350543"
 
 - *. 部署*
 
-  不過，您可以在 [ [發行選項] 對話方塊](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))中清除 [ **使用 ". Deploy" 副檔名** ] 選項來停用此選項，在這種情況下，您必須設定網頁伺服器來解除封鎖應用程式中使用的所有副檔名。
+  不過，您可以在 [[發行選項] 對話方塊](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))中清除 [**使用 ". Deploy" 副檔名**] 選項來停用此選項，在這種情況下，您必須設定網頁伺服器來解除封鎖應用程式中使用的所有副檔名。
 
-  比方說，如果您使用的是未安裝 .NET Framework 的 IIS，或如果您使用的是其他 Web 服務器 (例如 Apache) ，就必須設定 *資訊清單* 、 *. 應用程式* 及 *部署* 。
+  比方說，如果您使用的是未安裝 .NET Framework 的 IIS，或如果您使用的是其他 Web 服務器 (例如 Apache) ，就必須設定 *資訊清單*、 *. 應用程式* 及 *部署*。
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce 和安全通訊端層 (SSL) 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]除非 Internet Explorer 引發 ssl 憑證的提示，否則應用程式將可透過 ssl 運作正常。 當憑證發生錯誤時，可能會引發提示，例如網站名稱不相符或憑證已過期。 若要透過 SSL 連線進行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 工作，請確定憑證是最新的，而且憑證資料符合網站資料。
@@ -62,7 +62,7 @@ ms.locfileid: "94350543"
 > 如果部署提供者不是空白或已安裝 Microsoft .NET Framework Assistant 延伸模組，則支援 Mozilla Firefox。 此擴充功能封裝 .NET Framework 3.5 SP1。 針對 XBAP 支援，NPWPF 外掛程式會在需要時啟用。
 
 ## <a name="activate-clickonce-applications-through-browser-scripting"></a>透過瀏覽器腳本啟用 ClickOnce 應用程式
- 如果您已開發使用動態指令碼來啟動應用程式的自訂網頁 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，您可能會發現應用程式不會在某些電腦上啟動。 Internet Explorer 包含一個稱為「 **自動提示檔案下載** 」的設定，這會影響此行為。 這項設定可在其 [ **選項** ] 功能表中的 [ **安全性** ] 索引標籤上取得，以影響此行為。 它稱為 **自動提示檔案下載** ，而且會列在 [ **下載** ] 類別之下。 針對內部網路網頁，此屬性預設為 **啟用** ，預設為針對網際網路網頁 **停** 用。 當此設定設為 [ **停** 用] 時，任何嘗試以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 程式設計方式啟動應用程式 (例如，藉由將其 URL 指派給 `document.location` 屬性) 將會遭到封鎖。 在這種情況下，使用者只能透過使用者起始的下載來啟動應用程式，例如，按一下設定為應用程式 URL 的超連結。
+ 如果您已開發使用動態指令碼來啟動應用程式的自訂網頁 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，您可能會發現應用程式不會在某些電腦上啟動。 Internet Explorer 包含一個稱為「 **自動提示檔案下載**」的設定，這會影響此行為。 這項設定可在其 [**選項**] 功能表中的 [**安全性**] 索引標籤上取得，以影響此行為。 它稱為 **自動提示檔案下載**，而且會列在 [ **下載** ] 類別之下。 針對內部網路網頁，此屬性預設為 **啟用** ，預設為針對網際網路網頁 **停** 用。 當此設定設為 [ **停** 用] 時，任何嘗試以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 程式設計方式啟動應用程式 (例如，藉由將其 URL 指派給 `document.location` 屬性) 將會遭到封鎖。 在這種情況下，使用者只能透過使用者起始的下載來啟動應用程式，例如，按一下設定為應用程式 URL 的超連結。
 
 ## <a name="additional-server-configuration-issues"></a>其他伺服器設定問題
 
@@ -96,7 +96,7 @@ ms.locfileid: "94350543"
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>不支援安裝應用程式的 FTP 通訊協定
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 支援從任何 HTTP 1.1 Web 服務器或檔案伺服器安裝應用程式。 安裝應用程式時，不支援 FTP （檔案傳輸通訊協定）。 您只能使用 FTP 來發佈應用程式。 下表摘要說明這些差異：
 
-| URL 類型 | 說明 |
+| URL 類型 | Description |
 |----------| - |
 | ftp:// | 您可以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用此通訊協定來發行應用程式。 |
 | http:// | 您可以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用此通訊協定來安裝應用程式。 |
@@ -112,7 +112,7 @@ ms.locfileid: "94350543"
  根據預設，Windows Server 沒有安裝 FrontPage Server Extensions。 如果您想要使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 發佈至搭配 FrontPage Server Extensions 使用 HTTP 的 Windows Server Web 服務器，您必須先安裝 FrontPage Server Extensions。 您可以使用 Windows Server 中的 [管理您的伺服器管理] 工具來執行安裝。
 
 ## <a name="windows-server-locked-down-content-types"></a>Windows Server：鎖定的內容類型
- [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)]除了特定的已知內容類型之外，IIS 會鎖定所有檔案類型 (例如， *.htm* 、 *.html* 、 *.txt* 等) 。 若要 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用此伺服器來啟用應用程式的部署，您需要變更 IIS 設定，以允許下載類型為 *. 應用* 程式、 *資訊清單* 和其他任何自訂檔案類型的檔。
+ [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)]除了特定的已知內容類型之外，IIS 會鎖定所有檔案類型 (例如， *.htm*、 *.html*、 *.txt* 等) 。 若要 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用此伺服器來啟用應用程式的部署，您需要變更 IIS 設定，以允許下載類型為 *. 應用* 程式、 *資訊清單* 和其他任何自訂檔案類型的檔。
 
  如果您使用 IIS 伺服器進行部署，請執行 *inetmgr.exe* ，並為預設的網頁加入新的檔案類型：
 
@@ -130,11 +130,11 @@ ms.locfileid: "94350543"
 ## <a name="http-compression-issues"></a>HTTP 壓縮問題
  透過 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，您可以執行使用 HTTP 壓縮的下載，這是使用 GZIP 演算法來壓縮資料流程，然後將資料流程傳送至用戶端的網頁伺服器技術。 在此案例中，用戶端會 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 先解壓縮串流，然後再讀取檔案。
 
- 如果您使用 IIS，您可以輕鬆地啟用 HTTP 壓縮。 但是，當您啟用 HTTP 壓縮時，只會針對特定檔案類型（也就是 HTML 和文字檔）啟用它。 若要啟用元件 ( *.dll* ) 、xml ( *.xml* ) 、部署指令 *清單 (、應用程式指令* 清單) 和應用程式指令 *清單 (的* 壓縮，您必須將這些檔案類型新增至要壓縮的 IIS 類型清單。 在您將檔案類型新增至部署之前，只會壓縮文字和 HTML 檔案。
+ 如果您使用 IIS，您可以輕鬆地啟用 HTTP 壓縮。 但是，當您啟用 HTTP 壓縮時，只會針對特定檔案類型（也就是 HTML 和文字檔）啟用它。 若要啟用元件 (*.dll*) 、xml (*.xml*) 、部署指令 *清單 (、應用程式指令* 清單) 和應用程式指令 *清單 (的* 壓縮，您必須將這些檔案類型新增至要壓縮的 IIS 類型清單。 在您將檔案類型新增至部署之前，只會壓縮文字和 HTML 檔案。
 
  如需 IIS 的詳細指示，請參閱 [如何為 HTTP 壓縮指定其他檔案類型](https://support.microsoft.com/help/234497)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [針對 ClickOnce 部署進行疑難排解](../deployment/troubleshooting-clickonce-deployments.md)
 - [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)

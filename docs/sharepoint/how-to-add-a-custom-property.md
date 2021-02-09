@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], custom properties
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b12124d874c58ce17f1fa24d2bd9283af64f1c92
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d335cc809a8415a2b41f3de63138c113c2a78706
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915475"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876598"
 ---
 # <a name="how-to-add-a-custom-property"></a>如何：加入自訂屬性
   您可以使用 **屬性編輯器**，將自訂屬性加入至模型。 您可以在程式碼中存取這些屬性，以便在執行時間取得連接字串和其他資料等資訊。

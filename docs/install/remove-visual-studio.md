@@ -17,17 +17,17 @@ f1_keywords:
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b26e837ec2c4155c1be0b3639368c4315d2aecd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 751f87075d4e9dcbb7daa94f39a2f38c5083fb3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878444"
 ---
 # <a name="remove-visual-studio"></a>移除 Visual Studio
 
@@ -40,7 +40,7 @@ ms.locfileid: "85418921"
 
 您可以使用下列其中一個命令列參數搭配 `InstallCleanup.exe` 工具：
 
-| 交換器 | 行為 |
+| 參數 | 行為 |
 | ------ | -------- |
 | `-i`   | 如果未傳遞其他參數，則此參數是預設值。 它只會移除主要安裝目錄和產品資訊。 如果您想要在執行工具之後重新安裝相同版本的 Visual Studio，請使用此參數 `InstallCleanup.exe` 。 |
 | `-f`   | 此參數會移除安裝目錄之外安裝的主要安裝目錄、產品資訊和其他大部分功能，也可能與其他 Visual Studio 安裝或其他產品共用。 如果您想要移除 Visual Studio，但稍後再重新安裝，請使用此參數。 |
@@ -50,7 +50,7 @@ ms.locfileid: "85418921"
 1. 關閉 Visual Studio 安裝程式。
 1. 開啟系統管理員命令提示字元。 若要開啟系統管理員命令提示字元，請遵循下列步驟：
    * 於 [在這裡輸入要搜尋的文字] 方塊中鍵入 **cmd**。
-   * 以右鍵按一下 [命令提示字元]****，然後選擇 [以系統管理員身分執行]****。
+   * 以右鍵按一下 [命令提示字元]，然後選擇 [以系統管理員身分執行]。
 1. 輸入工具的完整路徑 `InstallCleanup.exe` ，並新增您偏好的命令列參數。 根據預設，此工具的路徑如下所示。 雙引號括住包含空格的命令：
 
    ```

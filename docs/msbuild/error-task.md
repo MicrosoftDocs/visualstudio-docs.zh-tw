@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: e96a90ee-a8ae-4e5b-8ef2-b5cf5fedd8b2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a2b451f9c3074af7d621576336ea3bf0e05ebea3
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 4e4e1a91bc018bdf77671b13994ce57e4e10e694
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877196"
 ---
 # <a name="error-task"></a>Error 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "92436645"
 
 下表說明 `Error` 工作的參數。
 
-| 參數 | 描述 |
+| 參數 | Description |
 |---------------| - |
 | `Code` | 選擇性的 `String` 參數。<br /><br /> 與錯誤相關聯的錯誤碼。 |
 | `File` | 選擇性的 `String` 參數。<br /><br /> 包含錯誤的檔案名稱。 如果沒有提供檔案名稱，將會使用包含 Error 工作的檔案。 |

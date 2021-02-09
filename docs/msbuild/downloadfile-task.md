@@ -21,15 +21,15 @@ ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fda3edcd1c8bf173e1b70d8bf2d76d58f6e10d8d
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 0c68b468cac63d556e9757210c8ce2933d94cba6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877209"
 ---
 # <a name="downloadfile-task"></a>DownloadFile 工作
 
@@ -42,7 +42,7 @@ ms.locfileid: "92436654"
 
 下表說明 `DownloadFile` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`DestinationFileName`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數<br /><br /> 要用於已下載檔案的名稱。  根據預設，檔案名稱衍生自 `SourceUrl` 或遠端伺服器。|
 |`DestinationFolder`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定檔案下載的目的地資料夾。  如果資料夾不存在，則會予以建立。|

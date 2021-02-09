@@ -11,20 +11,20 @@ helpviewer_keywords:
 - FeatureProperties element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9ee2bddec02263a889fb1f69088a8a50b3d8b57d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8756feaf08de9b01904309177f5e19c122da714d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672596"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876715"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties 項目
   當功能部署到 SharePoint 時，所包含的屬性值集合。 部署功能之後，您可以存取程式碼中的屬性值。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <FeatureProperties>
@@ -40,13 +40,13 @@ ms.locfileid: "94672596"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[FeatureProperty](../sharepoint/featureproperty-element.md)|選擇性項目。<br /><br /> 代表索引鍵/值格式的自訂屬性。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 專案專案。 此元素是檔案的必要根項目 `.spdata` 。|
 
@@ -55,7 +55,7 @@ ms.locfileid: "94672596"
 
 ## <a name="element-information"></a>項目資訊
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |**Namespace**|HTTP： \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**結構描述名稱**|SharePoint 專案專案架構|

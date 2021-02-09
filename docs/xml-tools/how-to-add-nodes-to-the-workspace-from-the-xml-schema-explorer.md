@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: baa4d32d14a85e27bb0bb453c8c81f0bab486379
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f895d29e46556bff8543563841939640c501f84d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879263"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>如何：從 XML 架構瀏覽器將節點加入至工作區
 
@@ -28,17 +28,17 @@ ms.locfileid: "93045722"
 
 1. 遵循 how [to：建立和編輯 XSD 架構](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)檔案中的步驟。
 
-2. 以滑鼠右鍵按一下 `PurchaseOrderType` XSD Explorer 中的節點。 選取 [ **在圖形視圖中顯示]** 。
+2. 以滑鼠右鍵按一下 `PurchaseOrderType` XSD Explorer 中的節點。 選取 [ **在圖形視圖中顯示]**。
 
      `purchaseOrderType` 節點會出現在圖表檢視的設計介面上。
 
 ## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>將節點拖放至檢視上
 
-1. 以滑鼠右鍵按一下 `PurchaseOrderType` 圖形視圖中的節點。 選取 [ **在 XML 架構瀏覽器中顯示** ]。
+1. 以滑鼠右鍵按一下 `PurchaseOrderType` 圖形視圖中的節點。 選取 [ **在 XML 架構瀏覽器中顯示**]。
 
      節點會在 **XML 架構瀏覽器** 中反白顯示。
 
-2. 在 `PurchaseOrderType` **XML 架構瀏覽器** 中，以滑鼠右鍵按一下節點，然後選取 [ **顯示所有參考** ]。
+2. 在 `PurchaseOrderType` **XML 架構瀏覽器** 中，以滑鼠右鍵按一下節點，然後選取 [ **顯示所有參考**]。
 
      `purchaseOrder` 節點會反白顯示。
 
@@ -60,6 +60,6 @@ ms.locfileid: "93045722"
 
      `purchaseOrder`節點和 `PurchaseOrderType` 節點會出現在[圖形視圖](../xml-tools/graph-view.md)的設計介面旁。 由於兩個節點是相關的 (`purchaseOrder` 項目屬於 `PurchaseOrderType` 型別)，因此兩個節點之間會畫上箭號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)

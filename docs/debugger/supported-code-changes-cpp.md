@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d693753cbcc9844ff602ab4d20e90fdc6de7dae5
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: d000d2757321701c2e14427c6bbb4d3e4164d26f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150492"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876299"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C++)
 C + + 專案的 [編輯後繼續] 可處理大部分類型的程式碼變更。 不過，有些變更無法在程式執行期間套用。 若要套用這些變更，您必須停止執行，並建置新版的程式碼。

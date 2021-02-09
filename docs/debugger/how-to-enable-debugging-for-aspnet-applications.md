@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28f74c449e196d5eb0b3380d0ff1392db17e0b23
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 8ef65fbd9452aef52d807210f84928a4eef14100
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903593"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877742"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>在 Visual Studio 中對 ASP.NET 或 ASP.NET Core 進行偵錯
 
@@ -172,11 +172,11 @@ ASP.NET projects 預設有 *web.config* 檔案，其中包含應用程式設定�
 
    - 針對 ASP.NET Core，請選取 [ **檔案系統**]，選取您為應用程式設定的資料夾，然後選取 [ **開啟**]。
 
-1. 選取 [下一步]  。
+1. 選取 [下一步] 。
 
 1. 在 [設定] **底下，從下拉式清單中選取**[ **Debug** ]。
 
-1. 選取 [Save] \(儲存\)。
+1. 選取 [儲存]。
 
 1. 在 [ **發行** ] 對話方塊中，確定 **CustomProfile** (或您剛才建立的設定檔名稱) 出現，並將 **LastUsedBuildConfiguration** 設定為 **Debug**。
 

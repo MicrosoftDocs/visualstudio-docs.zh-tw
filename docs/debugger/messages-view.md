@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: e20d3f83d6e68211d1b48f63747bea80ee6b25d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903399"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876325"
 ---
 # <a name="messages-view"></a>訊息檢視
 每個視窗都有相關聯的訊息資料流程。 [訊息] 視圖視窗會顯示此訊息資料流程。 系統會顯示視窗控制碼、訊息程式碼和訊息。 您也可以建立執行緒或進程的訊息查看。 這可讓您查看傳送至特定進程或執行緒所擁有之所有 windows 的訊息，這在捕獲視窗初始化訊息時特別有用。

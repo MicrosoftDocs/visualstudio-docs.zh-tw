@@ -14,15 +14,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a771b1eae096227a46378c8146e6aa5d9e2a06
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 7e0a8e8a313e351d175822e2427378fb89703444
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97683923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879224"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>將您的應用程式部署到資料夾、IIS、Azure 或其他目的地
 
@@ -243,7 +243,7 @@ IIS 網頁伺服器可讓您將應用程式部署至 Azure 以外的 web 伺服�
 - [目標執行時間識別碼 (可攜的 RID，et al) ](/dotnet/core/rid-catalog)
 - [Debug 和 release 設定](../ide/understanding-build-configurations.md)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 教學課程：
 

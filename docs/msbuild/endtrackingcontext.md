@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: c2c5d794-8dc8-4594-8717-70dc79a0e75d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da1ef921106732a7787f68a979bc88f3ac012b6d
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 90f4c8c4a83a496dba537e74dddfde4ae3f2f21a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877222"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 

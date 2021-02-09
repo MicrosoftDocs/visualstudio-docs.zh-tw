@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a69797cc513b96c364f0357f22788fc9bcd65657
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9904f02183da73df496e858fa8a81e5290a8950c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877391"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 這個介面代表指標類型。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPointerField : IDebugContainerField
@@ -44,7 +44,7 @@ IDebugPointerField : IDebugContainerField
 ## <a name="remarks"></a>備註
  在 C/c + + 中，指標可以是搭配陣列標記法使用的容器。 例如，假設 `char *pString` `pString` 有一種指標類型 `char` 。 `pString[3]` 具有容器的型別，其為 `char` 參考該容器之第四個元素的指標。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio

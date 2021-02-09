@@ -21,15 +21,15 @@ helpviewer_keywords:
 - ClickOnce applications, security issues
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb13f8720bced2baa118dda1e55da3f52f1b9ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 55758f67c845cbf753d51ebfb94b87af6cf55cde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877625"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全性、版本控制和資訊清單問題
 
@@ -69,7 +69,7 @@ ms.locfileid: "94349369"
 
 可能會在資訊清單檔中造成問題的某個情況是選取包含特殊字元的應用程式名稱，例如單引號或雙引號。 應用程式的名稱是其身分識別的一部分 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 目前不會剖析包含特殊字元的身分識別。 如果您的應用程式無法啟動，請確定您只使用字母和數位字元作為名稱，然後再次嘗試部署。
 
-如果您已手動編輯您的部署或應用程式資訊清單，可能會不慎損毀。 損毀的資訊清單會導致無法正確 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 安裝。 您可以在執行時間中，按一下 [ **ClickOnce 錯誤** ] 對話方塊上的 [ **詳細資料** ]，然後在記錄檔中讀取錯誤訊息，來偵測這類錯誤。 記錄檔將會列出下列其中一則訊息：
+如果您已手動編輯您的部署或應用程式資訊清單，可能會不慎損毀。 損毀的資訊清單會導致無法正確 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 安裝。 您可以在執行時間中，按一下 [ **ClickOnce 錯誤**] 對話方塊上的 [**詳細資料**]，然後在記錄檔中讀取錯誤訊息，來偵測這類錯誤。 記錄檔將會列出下列其中一則訊息：
 
 - 語法錯誤的描述，以及發生錯誤的行號和字元位置。
 
@@ -96,7 +96,7 @@ ms.locfileid: "94349369"
 > [!NOTE]
 > 每次更新資訊清單時，您也必須重新簽署它。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 針對[ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md) 
  進行疑難排解[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md) 

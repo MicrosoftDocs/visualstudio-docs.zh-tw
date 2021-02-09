@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4697aa4869535d63c522ae25c978dd89bfe51697
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349249"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876169"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>針對 ClickOnce 部署的特定錯誤進行疑難排解
 本文列出當您部署應用程式時可能會發生的下列常見錯誤 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，並提供解決每個問題的步驟。
@@ -54,7 +54,7 @@ ms.locfileid: "94349249"
 - 查看是否有網路連線問題;如果用戶端電腦在下載期間離線，您就可以收到此訊息。
 
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>當您嘗試安裝具有 .config 檔案的 ClickOnce 應用程式時，下載錯誤
- 根據預設，Visual Basic Windows 型應用程式包含 App.config 檔案。 當使用者嘗試從使用 Windows Server 2003 的 Web 服務器安裝時，將會發生問題，因為作業系統會基於安全性理由封鎖 *.config* 檔案的安裝。 若要啟用要安裝的 *.config* 檔案，請按一下 [ **發行選項** ] 對話方塊中的 **[使用 "deploy" 副檔名** ]。
+ 根據預設，Visual Basic Windows 型應用程式包含 App.config 檔案。 當使用者嘗試從使用 Windows Server 2003 的 Web 服務器安裝時，將會發生問題，因為作業系統會基於安全性理由封鎖 *.config* 檔案的安裝。 若要啟用要安裝的 *.config* 檔案，請按一下 [**發行選項**] 對話方塊中的 **[使用 "deploy" 副檔名**]。
 
  您也必須將內容類型 (也稱為 MIME 類型) 適當地針對. 應用程式、資訊清單和. 部署檔案。 如需詳細資訊，請參閱您的網頁伺服器檔。
 
@@ -104,7 +104,7 @@ ms.locfileid: "94349249"
  如果您要使用 URL 發佈，請確定目的地電腦已啟用 FrontPage Server Extensions。
 
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>錯誤訊息：無法建立網站 ' ' \<site> 。 未安裝與 FrontPage Server Extensions 進行通訊的元件。
- 確定您已在要發行的電腦上安裝 Microsoft Visual Studio Web Authoring Component。 若為 Express 使用者，預設不會安裝此元件。 如需詳細資訊，請參閱 [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/help/945358) \(英文\)。
+ 確定您已在要發行的電腦上安裝 Microsoft Visual Studio Web Authoring Component。 若為 Express 使用者，預設不會安裝此元件。 如需詳細資訊，請參閱 [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/help/945358)。
 
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>錯誤訊息：找不到檔案 ' Microsoft. Common Controls，Version = 6.0.0.0，Culture = *，PublicKeyToken = 6595b64144ccf1df，ProcessorArchitecture = \* ，Type = win32 '
  當您嘗試發行已啟用視覺化樣式的 WPF 應用程式時，會出現此錯誤訊息。 若要解決此問題，請參閱 [如何：發行已啟用視覺化樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)。
@@ -114,17 +114,17 @@ ms.locfileid: "94349249"
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>您嘗試使用憑證存放區中的憑證和收到的空白訊息方塊來簽署
  在 [ **簽署** ] 對話方塊中，您必須：
 
-- 選取 [ **使用預存憑證簽署** ]，然後
+- 選取 [ **使用預存憑證簽署**]，然後
 
 - 從清單中選取憑證;第一個憑證不是預設選項。
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>按一下 [不要簽署] 按鈕會造成例外狀況
- 此問題是已知的 bug。 所有 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資訊清單都需要簽署。 只需選取其中一個簽署選項，然後按一下 **[確定]** 。
+ 此問題是已知的 bug。 所有 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資訊清單都需要簽署。 只需選取其中一個簽署選項，然後按一下 **[確定]**。
 
 ## <a name="additional-errors"></a>其他錯誤
  下表顯示當使用者安裝應用程式時，用戶端電腦使用者可能會收到的一些常見錯誤訊息 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 錯誤的最可能原因描述旁邊會列出每個錯誤訊息。
 
-| 錯誤訊息 | 說明 |
+| 錯誤訊息 | Description |
 | - | - |
 | 無法啟動應用程式。 聯繫應用程式發行者。<br /><br /> 無法啟動應用程式。 洽詢應用程式廠商以取得協助。 | 這些是當應用程式無法啟動時所發生的一般錯誤訊息，而且找不到其他特定的原因。 這通常表示應用程式已損毀，或 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 存放區已損毀。 |
 | 無法繼續。 應用程式的格式不正確。 請洽詢應用程式發行者以取得協助。<br /><br /> 應用程式驗證失敗。 無法繼續。<br /><br /> 無法取出應用程式檔。 部署中的檔案已損毀。 | 部署中的其中一個資訊清單檔案的語法無效，或包含無法與對應檔案協調的雜湊。 這項錯誤也可能表示內嵌在元件中的資訊清單已損毀。 重新建立您的部署並重新編譯您的應用程式，或在資訊清單中手動尋找並修正錯誤。 |
@@ -138,7 +138,7 @@ ms.locfileid: "94349249"
 | 無法透過網路啟用快速鍵。 | 應用程式的快捷方式 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 只能在本機硬碟上啟動。 您無法藉由開啟指向遠端伺服器上快捷方式檔案的 URL 來啟動它們。 |
 | 應用程式太大，無法在線上以部分信任方式執行。 洽詢應用程式廠商或您的系統管理員以取得協助。 | 在部分信任中執行的應用程式不能大於線上應用程式配額的一半，預設為 250 MB。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [針對 ClickOnce 部署進行疑難排解](../deployment/troubleshooting-clickonce-deployments.md)
 - [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)

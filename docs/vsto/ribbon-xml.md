@@ -22,15 +22,15 @@ helpviewer_keywords:
 - customizing the Ribbon, displaying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 69ca0269859db9e1a69904c2211b8f4d1ad45710
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528417"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879289"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   功能區 (XML) 專案可讓您使用 XML 自訂功能區。 如果您想要以功能區 (視覺化設計工具) 專案不支援的方式自訂功能區，請使用功能區 (XML) 專案。 如需如何使用每個專案的比較，請參閱 [功能區總覽](../vsto/Ribbon-overview.md)。
@@ -125,7 +125,7 @@ ms.locfileid: "97528417"
 
  這些專案具有屬性，可指定自訂功能區的外觀和行為。 下表描述功能區 XML 檔中的預設屬性。
 
-|屬性|父元素|描述|
+|屬性|父元素|Description|
 |---------------|--------------------|-----------------|
 |**onLoad**|**customUI**|識別應用程式載入功能區時所呼叫的方法。|
 |**idMso**|**選項 卡**|識別要在功能區中顯示的內建索引標籤。|

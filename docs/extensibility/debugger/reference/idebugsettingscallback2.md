@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c85b54f92970dca5d712b827019300f850b03cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 696f5eb00781c8f46ef099db1000b36a972a95dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875805"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 啟用調試引擎以從遠端讀取計量設定。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugSettingsCallback2D : IUnknown
@@ -44,7 +44,7 @@ IDebugSettingsCallback2D : IUnknown
 |[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|使用指定的名稱來抓取度量的唯一識別碼。|
 |[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|取得度量的值字串，並指定其名稱。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： Msdbg。h
 
 命名空間： VisualStudio

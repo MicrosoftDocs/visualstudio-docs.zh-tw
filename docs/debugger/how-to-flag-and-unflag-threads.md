@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 952d579d-6911-413e-b3e5-54e7e797e70c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9b7ce5db863987d530fe9e68d026a94474fc13c
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: d5f31bb73b4a22a11235e471dfa1fa99545e422e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149491"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877599"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>如何：將執行緒加上旗標和解除標記 (c #、Visual Basic、c + +) 
 
@@ -60,7 +60,7 @@ ms.locfileid: "98149491"
 
 4. (選擇性) 在 [搜尋] 方塊中，鍵入用於搜尋特定模組的字串。
 
-5. 按一下 [確定]。
+5. 按一下 [確定]  。
 
 ## <a name="see-also"></a>另請參閱
 - [Debug 多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)

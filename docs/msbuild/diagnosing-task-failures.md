@@ -13,15 +13,15 @@ dev_langs:
 - jsharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf55cc529be8fc61e05d1a76096e26d965aa136
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 33aa8787144f185b5bcd2e26df5e7fa90ce3213f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877235"
 ---
 # <a name="diagnosing-task-failures"></a>診斷工作失敗
 
@@ -63,7 +63,7 @@ Build FAILED.
 
 行為良好的工具通常會在其標準輸出或錯誤資料流程中發出部分內容或錯誤資訊，而工作預設會捕捉並記錄這項資訊。 在錯誤發生之前查看記錄專案，以取得其他資訊。 重新執行具有較高記錄層級的組建時，可能需要保留此資訊。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 希望記錄中識別的其他內容或錯誤顯示問題的根本原因。
 

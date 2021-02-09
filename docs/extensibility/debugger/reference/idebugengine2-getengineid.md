@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4071e8279c2c4ab615ff625c1bbedebfd8e64ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ec0c294c0d1a1e19942ac86847cad1226041b24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731075"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878964"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 取得 debug engine (DE) 的 GUID。
@@ -50,7 +50,7 @@ int GetEngineID(
 一般 Guid 的一些範例包括 `guidScriptEng` 、 `guidNativeEng` 或 `guidSQLEng` 。 新的偵錯工具引擎會建立自己的 GUID 以供識別。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對實 IDebugEngine2 介面的簡單物件，執行這個方法 `CEngine` 。 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+下列範例示範如何針對實 IDebugEngine2 介面的簡單物件，執行這個方法 `CEngine` 。 [](../../../extensibility/debugger/reference/idebugengine2.md)
 
 ```cpp
 HRESULT CEngine::GetEngineId(GUID *pguidEngine) {

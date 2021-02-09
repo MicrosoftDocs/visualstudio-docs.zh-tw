@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 455f144a95a41ae482c1f240e1d2f87b888763a5
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 8151748b946d2c1b5ad21359569d6f5f856f9250
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876156"
 ---
 # <a name="address-dpi-issues"></a>解決 DPI 問題
 以「高解析度」畫面出貨的裝置數量會增加。 這些畫面的每英寸通常有超過200圖元 (ppi) 。 在這些電腦上使用應用程式需要相應增加內容，以符合在裝置上以一般觀賞距離來查看內容的需求。 從2014，高密度顯示器的主要目標是行動裝置電腦 (平板電腦、clamshell 膝上型電腦和手機) 。

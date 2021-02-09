@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e6f2c1df37e953a5d8c66bad9d0a3574a463fad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6798d940bb186e6d685f22282e641eb2e690e48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877404"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 這個介面代表已準備好系結至程式碼位置的中斷點。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPendingBreakpoint2 : IUnknown
@@ -32,7 +32,7 @@ IDebugPendingBreakpoint2 : IUnknown
  Debug engine (DE) 在它支援中斷點的過程中，執行這個介面。
 
 ## <a name="notes-for-callers"></a>呼叫者注意事項
- 對 [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) 的呼叫會從 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 介面建立暫止中斷點。 系結的[Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)呼叫會 `IDebugBreakpoint2` 在程式中建立表示系結中斷點的介面。
+ 對 [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) 的呼叫會從 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 介面建立暫止中斷點。 系結的[](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)呼叫會 `IDebugBreakpoint2` 在程式中建立表示系結中斷點的介面。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法 `IDebugPendingBreakpoint2` 。
@@ -40,7 +40,7 @@ IDebugPendingBreakpoint2 : IUnknown
 |方法|描述|
 |------------|-----------------|
 |[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|判斷此暫止中斷點是否可以系結至程式碼位置。|
-|[繫結](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|將這個暫止中斷點系結至一個或多個程式碼位置。|
+|[綁定](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|將這個暫止中斷點系結至一個或多個程式碼位置。|
 |[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|取得這個暫止中斷點的狀態。|
 |[GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|取得用來建立這個暫止中斷點的中斷點要求。|
 |[Virtualize](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)|切換此暫止中斷點的虛擬化狀態。|
@@ -56,7 +56,7 @@ IDebugPendingBreakpoint2 : IUnknown
 
  暫止的中斷點可能會產生一個以上的系結中斷點。 例如，c + + 樣式範本中的中斷點可能會針對該範本的每個唯一實例產生系結中斷點。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

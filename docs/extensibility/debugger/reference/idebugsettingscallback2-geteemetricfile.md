@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 3a0bf9e5-bbd2-4d15-840d-8244732787fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2aafda1563d2f948ea0871f920faa8bbbef766f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef2242d26aad4bf439a3ea33bb9d35cca1d7f8cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720042"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875857"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 取得指定名稱或計量的運算式評估工具度量檔案。

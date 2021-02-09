@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eb35554c61c532e0d004e5c974345564e17d4ae
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: ba6a71373026a5a41905efc7c91520a9f6b7c5c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049001"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878203"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 轉換
 
@@ -34,7 +34,7 @@ ms.locfileid: "93049001"
 @(RESXFile->'%(filename).resources')
 ```
 
-比方說，如果 @(RESXFile) 項目清單中的項目是 *Form1.resx* 、 *Form2.resx* 和 *Form3.resx* ，已轉換清單中的輸出會是 *Form1.resources* 、 *Form2.resources* 和 *Form3.resources* 。
+比方說，如果 @(RESXFile) 項目清單中的項目是 *Form1.resx*、*Form2.resx* 和 *Form3.resx*，已轉換清單中的輸出會是 *Form1.resources*、*Form2.resources* 和 *Form3.resources*。
 
 > [!NOTE]
 > 您可以為已轉換的項目清單指定自訂分隔符號 (方法與您為標準項目清單指定分隔符號的方式相同)。 例如，若要使用逗號 (,) 而不是預設的分號 (;) 來分隔已轉換的項目清單，請使用下列 XML： `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
@@ -47,7 +47,7 @@ ms.locfileid: "93049001"
 @(RESXFile->'Toolset\%(filename)%(extension)')
 ```
 
- 比方說，如果 `RESXFile` 項目清單中包含的項目是 *Project1\Form1.resx* 、 *Project1\Form2.resx* 和 *Project1\Form3.text* ，已轉換清單中的輸出會是 *Toolset\Form1.resx* 、 *Toolset\Form2.resx* 和 *Toolset\Form3.text* 。
+ 比方說，如果 `RESXFile` 項目清單中包含的項目是 *Project1\Form1.resx*、*Project1\Form2.resx* 和 *Project1\Form3.text*，已轉換清單中的輸出會是 *Toolset\Form1.resx*、*Toolset\Form2.resx* 和 *Toolset\Form3.text*。
 
 ## <a name="dependency-analysis"></a>相依性分析
 
@@ -71,7 +71,7 @@ ms.locfileid: "93049001"
 
 ### <a name="description"></a>描述
 
- 下列範例顯示使用轉換的 MSBuild 專案檔。 這個範例假設 *c:\sub0\sub1\sub2\sub3* 目錄中只有一個 *.xsd* 檔案，而工作目錄是 *c:\sub0* 。
+ 下列範例顯示使用轉換的 MSBuild 專案檔。 這個範例假設 *c:\sub0\sub1\sub2\sub3* 目錄中只有一個 *.xsd* 檔案，而工作目錄是 *c:\sub0*。
 
 ### <a name="code"></a>程式碼
 
@@ -109,7 +109,7 @@ relativedir: sub1\sub2\sub3\
 extension: .xsd
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

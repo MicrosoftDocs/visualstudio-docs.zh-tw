@@ -22,13 +22,13 @@ helpviewer_keywords:
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 7787b3b0afaed0bc3592b458646b97151e309905
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 5b501cef5360be08f1b283e9064617b649a33da9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878015"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在負載測試分析器的資料表檢視中分析負載測試結果和錯誤
 
@@ -52,7 +52,7 @@ ms.locfileid: "95442504"
 
 下列表格列出可用於分析負載測試回合的資料表。
 
-|資料表名稱|描述|
+|資料表名稱|Description|
 |-|-|
 |Errors|顯示負載測試回合期間發生的錯誤清單。 如需詳細資訊，請參閱本主題中 [的錯誤資料表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) ，以及 [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)。|
 |頁面|顯示負載測試回合期間存取的頁面清單。 本資料表中的部分資料只有在負載測試完成後才可用。 如需詳細資訊，請參閱 [如何：查看網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。|
@@ -81,7 +81,7 @@ ms.locfileid: "95442504"
 |**測試**|測試的名稱。|是|
 |**總計**|負載測試回合期間發出的此 Web 效能測試要求總數。 這個總數包含成功和失敗的要求，但不包含快取的要求，因為快取的要求並未發給 Web 伺服器。|是|
 |**通過**|發出且成功的要求次數。|否|
-|**已失敗**|發出且失敗的要求次數。 此資料行中的項目會顯示成超連結。 您可以選擇任何超連結，以便在 [負載測試錯誤] 對話方塊中檢視個別錯誤的清單。 如需詳細資訊，請參閱 [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)。|是|
+|**失敗**|發出且失敗的要求次數。 此資料行中的項目會顯示成超連結。 您可以選擇任何超連結，以便在 [負載測試錯誤] 對話方塊中檢視個別錯誤的清單。 如需詳細資訊，請參閱 [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)。|是|
 |**快取**|已快取之要求的總次數。|否|
 |**Requests/Sec**|負載測試期間要求之每秒的速率。|否|
 |**成功/秒**|負載測試回合期間此要求之每秒的速率 (針對此要求已成功的執行個體)。|否|
@@ -102,7 +102,7 @@ ms.locfileid: "95442504"
 |**案例**|情節的名稱。|是|
 |**總計**|情節中測試執行的總次數。 這包含測試成功和失敗的次數。|是|
 |**通過**|情節中執行且成功的測試次數。|是|
-|**已失敗**|情節中執行但失敗的測試次數。 此資料行中的項目會顯示成超連結。 您可以選擇任何超連結，以便在 [負載測試錯誤] 對話方塊中檢視個別錯誤的清單。 如需詳細資訊，請參閱 [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)。|是|
+|**失敗**|情節中執行但失敗的測試次數。 此資料行中的項目會顯示成超連結。 您可以選擇任何超連結，以便在 [負載測試錯誤] 對話方塊中檢視個別錯誤的清單。 如需詳細資訊，請參閱 [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)。|是|
 |**Tests/Sec**|負載測試期間之測試每秒的速率。|是|
 |**成功/秒**|負載測試回合期間此測試每秒的速率 (針對此測試已成功的執行個體)。|否|
 |**失敗/秒**|負載測試回合期間此測試每秒的速率 (針對此測試已失敗的執行個體)。|否|
@@ -150,7 +150,7 @@ ms.locfileid: "95442504"
 |-|-|-|
 |類型|錯誤的類型。 例如，HttpError。|是|
 |子類型|錯誤的子類型。 例如，LoadTestException。|是|
-|計數|負載測試期間發生此類型錯誤的數量。 此資料行中的項目會顯示成超連結。 您可以選擇任何超連結，檢視個別錯誤的清單。|是|
+|Count|負載測試期間發生此類型錯誤的數量。 此資料行中的項目會顯示成超連結。 您可以選擇任何超連結，檢視個別錯誤的清單。|是|
 |最後一個訊息|描述錯誤的訊息。 例如，404 - NotFound。|是|
 
 如需詳細資訊，請參閱 [使用負載測試資料表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
@@ -172,7 +172,7 @@ ms.locfileid: "95442504"
 |**案例**|發生錯誤之情節的名稱。|
 |**要求**|發生錯誤之要求的 URL。|
 |**型別**|錯誤的類型。 例如，HttpError。|
-|**子類型**|錯誤的子類型。 例如，LoadTestException。|
+|**亞**|錯誤的子類型。 例如，LoadTestException。|
 |**Text**|錯誤訊息的文字。 例如，404 - NotFound。|
 |**堆疊**|本資料行中的項目一定是空的，或是超連結格式的 **Stack** 一字。 您可以選擇超連結，檢視錯誤的堆疊追蹤。|
 |**詳細資料**|本資料行中的項目一定是空的，或是超連結格式的 **TestLog** 一字。 此連結可幫助您找出負載測試中的錯誤。 例如，選擇 web 效能測試要求錯誤上的 [ **TestLog** ] 連結，就會在 [Web 效能] 測試結果檢視器中開啟 web 效能測試的結果，並醒目提示要求錯誤。|

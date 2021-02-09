@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b04d1327-a45e-4c12-a0d0-67672b3fa855
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4574874e14ee66bbfb0f11d7767d59516b6666f3
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 9947551fce9bc05b44c3d7f22a11966793b87e55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597284"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878678"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>如何：變更編輯器中的文字大小寫
 
@@ -33,7 +33,7 @@ ms.locfileid: "95597284"
 
 2. 若要將文字轉換成全部大寫，請選擇 [**編輯**  >  **Advanced Advanced**  >  **大寫**] 或按 **Ctrl** + **Shift** + **U**。
 
-   若要將文字轉換成全部小寫，請選擇 [**編輯** Advanced]、[  >  **Advanced**  >  **大寫**] 或 [按 **Ctrl** + **U**]。 (如果您已安裝 C++ 開發工作負載，此按鍵繫結關係可能已被不同的命令所使用。)
+   若要將文字轉換成全部小寫，請選擇 [**編輯** Advanced]、[  >    >  **大寫**] 或 [按 **Ctrl** + **U**]。 (如果您已安裝 C++ 開發工作負載，此按鍵繫結關係可能已被不同的命令所使用。)
 
 > [!TIP]
 > 若要還原為這項變更之前的先前大小寫格式，請選取 [編輯] 功能表中的 [復原]。

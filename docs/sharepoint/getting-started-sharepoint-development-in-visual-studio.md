@@ -1,5 +1,5 @@
 ---
-title: Visual Studio) 的消費者入門 (SharePoint 開發 |Microsoft Docs
+title: Visual Studio) 的開始使用 (SharePoint 開發 |Microsoft Docs
 titleSuffix: ''
 description: Visual Studio 中的 SharePoint 開發入門。 SharePoint 提供以 web 為基礎的共同作業平臺。
 ms.custom: SEO-VS-2020
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40eb9444ec72787e154ddd0cd7bc93e786c84397
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 109cf2fe5661f23ae7fb051829ec1c9e9a6d2329
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915163"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876624"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>在 Visual Studio) 中開始 (SharePoint 開發
   本節可協助您開始使用利用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 的 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]開發 SharePoint 解決方案。

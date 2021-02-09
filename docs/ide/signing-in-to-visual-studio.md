@@ -8,15 +8,15 @@ ms.topic: how-to
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 87c0ad7517bb01aa68d98e0502e34af7c767e962
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 2bc45ae5732db5033a1b123ef18cda27c426fd6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97683992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878522"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 

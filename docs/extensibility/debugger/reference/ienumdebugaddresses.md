@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14b42ec37babe72b47b0e832397d33029c4fc3d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9b4b95d805833ffd8b8041292cd18e5db8df9b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717593"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875792"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 這個介面代表執行 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 介面的物件集合。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugAdresses : IUnknown
@@ -39,7 +39,7 @@ IEnumDebugAdresses : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|從列舉中抓取下一組 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 物件。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|從列舉中抓取下一組 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 物件。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|略過指定數目的專案。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|將列舉重設為第一個專案。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|抓取目前列舉的複本。|
@@ -48,7 +48,7 @@ IEnumDebugAdresses : IUnknown
 ## <a name="remarks"></a>備註
  這個介面通常會由 debug 引擎用來協助判斷要提供給運算式評估工具的適當位址。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41fc320034ef5ea86006abf6f19079e8b0a45a82
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9eef76a3757d9a2ff8ece5da5c18968097bd7618
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048282"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878158"
 ---
 # <a name="signfile-task"></a>SignFile 工作
 
@@ -40,7 +40,7 @@ ms.locfileid: "93048282"
 > [!WARNING]
 > 從 Visual Studio 2013 Update 3 開始，這個工作有新的簽章，可讓您指定檔案的目標架構版本。 我們鼓勵您儘可能地使用新的簽章，因為只有當目標架構是 .NET 4.5 或更高版本時，MSBuild 程序才會使用 SHA-256 雜湊。 如果目標架構是 .NET 4.0 或更低版本，將不會使用 SHA-256 雜湊。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`CertificateThumbprint`|必要的 `String` 參數。<br /><br /> 指定簽署要使用的憑證。 此憑證必須位於目前使用者的個人存放區。|
 |`SigningTarget`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要使用憑證簽署的檔案，其類型為 .exe 或 .dll。|
@@ -75,7 +75,7 @@ ms.locfileid: "93048282"
 > [!NOTE]
 > 憑證指紋是憑證的 SHA-1 雜湊。 如需詳細資訊，請參閱[取得受信任的根 CA 憑證的 SHA-1 雜湊](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\))。 如果您從憑證詳細資料複製並貼上指紋，請確定您未包含額外的 (3F) 不可見字元，這可能會導致 `SignFile` 找不到憑證。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

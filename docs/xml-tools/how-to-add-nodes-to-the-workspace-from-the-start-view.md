@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2a30297cd2ede7293929604046550f78427b2a0
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 6c897d4e6e267eb73e83a0d1610476d08646587a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879249"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>如何：從開始視圖將節點新增至工作區
 

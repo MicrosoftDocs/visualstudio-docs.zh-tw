@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8616dd827f99dfcfbc337cb5cdf5ac5a7d392e88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e43d8d13f34b8477ab870c80842ff33eef72a7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878912"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 設定 debug engine (DE) 的地區設定。
@@ -28,13 +28,13 @@ ms.locfileid: "80730910"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT SetLocale( 
+HRESULT SetLocale( 
    WORD wLangID
 );
 ```
 
 ```csharp
-int SetLocale( 
+int SetLocale( 
    ushort wLangID
 );
 ```

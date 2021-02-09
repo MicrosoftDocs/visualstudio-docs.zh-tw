@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a4d1f9fe79ae5092992ff66ddaf5e10729e8b19a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f8241188b484447f94c60aa0e0c9bf05e477dd39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878275"
 ---
 # <a name="msbuild-task"></a>MSBuild 工作
 
@@ -35,14 +35,14 @@ ms.locfileid: "93049060"
 
  下表說明 `MSBuild` 工作的參數。
 
-| 參數 | 描述 |
+| 參數 | Description |
 |-----------------------------------| - |
-| `BuildInParallel` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，同時也會建置 `Projects` 參數中指定的專案 (如果可能)。 預設值為 `false`。 |
+| `BuildInParallel` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，同時也會建置 `Projects` 參數中指定的專案 (如果可能)。 預設為 `false`。 |
 | `Projects` | 必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要建置的專案檔。 |
 | `Properties` | 選擇性的 `String` 參數。<br /><br /> 作為全域屬性套用至子專案的屬性名稱/值組的分號分隔清單。 當您指定這個參數時，它在功能上相當於使用 [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md)建立時，設定具有 **-property** 參數的屬性。 例如：<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> 當您透過參數將屬性傳遞至專案時 `Properties` ，MSBuild 可能會建立專案的新實例，即使已經載入專案檔也一樣。 MSBuild 會為指定的專案路徑和一組唯一的全域屬性建立單一專案實例。 例如，此行為可讓您建立多個呼叫 *myproject.proj* 的 MSBuild 工作，在 Configuration=Release 的情況下，您會獲得單一的 *myproject.proj* 執行個體 (如果工作中未指定任何唯一屬性)。 如果您指定 MSBuild 尚未看見的屬性，MSBuild 會建立專案的新實例，該實例可以平行內建至專案的其他實例。 例如，Release 組態可以與 Debug 組態同時建置。|
-| `RebaseOutputs` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，已建置的專案中目標輸出項目的相對路徑就會將其路徑調整為相對於呼叫的專案。 預設值為 `false`。 |
+| `RebaseOutputs` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，已建置的專案中目標輸出項目的相對路徑就會將其路徑調整為相對於呼叫的專案。 預設為 `false`。 |
 | `RemoveProperties` | 選擇性的 `String` 參數。<br /><br /> 指定要移除的全域屬性組。 |
-| `RunEachTargetSeparately` | 選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true` ，則 MSBuild 工作會一次叫用一次傳遞至 MSBuild 的清單中的每個目標，而不是同時叫用。 將此參數設定為 `true`，可保證即使先前叫用的目標失敗，還是會叫用後續的目標。 否則，建置錯誤便會停止叫用所有後續的目標。 預設值為 `false`。 |
+| `RunEachTargetSeparately` | 選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true` ，則 MSBuild 工作會一次叫用一次傳遞至 MSBuild 的清單中的每個目標，而不是同時叫用。 將此參數設定為 `true`，可保證即使先前叫用的目標失敗，還是會叫用後續的目標。 否則，建置錯誤便會停止叫用所有後續的目標。 預設為 `false`。 |
 | `SkipNonexistentProjects` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，將會略過不存在於磁碟上的專案檔。 否則，這類專案將會造成錯誤。 |
 |`SkipNonexistentTargets`|選擇性的 `Boolean` 參數。<br /><br /> 如果為，則會 `true` 略過存在但未包含命名的專案檔 `Targets` 。 否則，這類專案將會造成錯誤。 在 MSBuild 15.5 中引進。|
 | `StopOnFirstFailure` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，則當其中一個專案無法建置時，將無法建置其他專案。 目前在 (使用多個處理器) 同時建置時不支援此功能。 |
@@ -55,7 +55,7 @@ ms.locfileid: "93049060"
 
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 
- 不同于使用 [Exec](../msbuild/exec-task.md) 工作來開始 *MSBuild.exe* ，此工作會使用相同的 MSBuild 進程來建立子專案。 父組建和子組建之間能夠共用已經建置且可略過的目標清單。 這項工作也會更快，因為不會建立新的 MSBuild 進程。
+ 不同于使用 [Exec](../msbuild/exec-task.md) 工作來開始 *MSBuild.exe*，此工作會使用相同的 MSBuild 進程來建立子專案。 父組建和子組建之間能夠共用已經建置且可略過的目標清單。 這項工作也會更快，因為不會建立新的 MSBuild 進程。
 
  此工作不只會處理專案檔，也會處理方案檔。
 
@@ -197,7 +197,7 @@ ms.locfileid: "93049060"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

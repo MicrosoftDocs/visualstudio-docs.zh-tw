@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 585ea1a558b91ac733670ad94a9a3e0be33f1348
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350942"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876312"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：在 ClickOnce 部署中指定個別必要條件的支援 URL
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以測試用戶端電腦上必須提供的一些必要條件， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式才能執行。 這些相依性包括必要的最小 .NET Framework 版本、作業系統版本，以及必須預先安裝在全域組件快取 (GAC) 中的任何元件。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]但是，無法安裝任何這些必要條件，如果找不到必要條件，它只會中止安裝，並顯示一個對話方塊來說明安裝失敗的原因。
@@ -67,7 +67,7 @@ ms.locfileid: "94350942"
      </dependency>
    ```
 
-5. 選擇性。 針對以 .NET Framework 4 為目標的應用程式，請 *.application* [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在文字編輯器中開啟應用程式的 [應用程式檔] () 的部署資訊清單。
+5. 選擇性。 針對以 .NET Framework 4 為目標的應用程式，請 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在文字編輯器中開啟應用程式的 [應用程式檔] () 的部署資訊清單。
 
 6. 針對 .NET Framework 4 必要條件，請將 `supportUrl` 屬性新增至 `compatibleFrameworks` 元素：
 
@@ -83,7 +83,7 @@ ms.locfileid: "94350942"
 ## <a name="net-framework-security"></a>.NET Framework 安全性
  如果應用程式標示為在部分信任中執行，則不會在對話方塊上顯示支援 URL。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Mage.exe (資訊清單產生和編輯工具) ](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [\<compatibleFrameworks> 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md)

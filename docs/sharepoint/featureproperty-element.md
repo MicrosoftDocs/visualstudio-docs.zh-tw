@@ -11,20 +11,20 @@ helpviewer_keywords:
 - FeatureProperty element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8e6010ac45d0b760325c73c4bd754fbb0b422a77
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 070866b9dd14d974eb976b22bf7a79907e2c5d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876663"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty 項目
   表示將功能部署至 SharePoint 時隨附的自訂屬性。 部署功能之後，您可以在程式碼中存取屬性。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <FeatureProperty Key = "Key of the property value"
@@ -36,17 +36,17 @@ ms.locfileid: "94672752"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |**金鑰**|必要的 **xs： string** 屬性。<br /><br /> 用來儲存和取出屬性值的索引鍵。 每個屬性在功能中都必須有唯一的索引鍵。|
-|**ReplTest1**|必要的 **xs： string** 屬性。<br /><br /> 屬性值。|
+|**值**|必要的 **xs： string** 屬性。<br /><br /> 屬性值。|
 
 ### <a name="child-elements"></a>子元素
  無。
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|表示將功能部署至 SharePoint 時包含的屬性值集合。|
 

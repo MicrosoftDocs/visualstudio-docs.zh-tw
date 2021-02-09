@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: ecf62568-8b65-4a41-b8a4-e962ff2dfb71
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eacc8865b3f531df8651ad77d99b319278e6cd1
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 4636c3b5150bd04b8a776b28d210be1cef79dcda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903386"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877638"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>如何：找出您的程式在 (c #、c + +、Visual Basic、F # ) 中損毀的 DLL
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], opening without running code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 99f1a01a745544e7e11e724db9c6eafacf0ca201
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844916"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876585"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>如何：開啟 Office 方案而不執行程式碼
   即使終端使用者的 Office 應用程式中的安全性設定設為 [高]，使用 managed 程式碼擴充功能建立的 Microsoft Office 方案仍會執行。 這是因為 .NET 元件碼安全性是由 Microsoft .NET Framework 管理，而不是由 Microsoft Office 管理。
@@ -41,7 +41,7 @@ ms.locfileid: "96844916"
 - 從 [檔案] 功能表開啟 **檔** 和活頁簿，同時按住 **Shift** 鍵，以防止 Word 和 Excel 在檔開啟時引發初始化事件。
 
     > [!NOTE]
-    > 如果您從 **消費者入門** 工作窗格開啟檔或活頁簿，按住 **Shift** 並不會略過程式碼。 此外，按住 SHIFT 鍵並不會防止在檔開啟後引發事件。
+    > 如果您從 **開始使用** 工作窗格開啟檔或活頁簿，按住 **Shift** 並不會略過程式碼。 此外，按住 SHIFT 鍵並不會防止在檔開啟後引發事件。
 
      如果您想要在沒有執行程式碼的情況下進行變更並先變更檔，這個方法會很有用。
 
