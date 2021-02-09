@@ -24,30 +24,30 @@ helpviewer_keywords:
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac5810fa3bdd6d479c1df4c484960fd923b0ed59
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e409ba89a9ca472f0025ddcf81383ed83641db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918373"
 ---
 # <a name="product-and-package-schema-reference"></a>產品和封裝結構描述參考
 *產品* 檔案是 XML 資訊清單，描述應用程式所需的所有外部相依性 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 外部相依性的範例包括 .NET Framework 以及 Microsoft Data Access 元件 (MDAC) 。 封裝檔案類似于產品檔案，但用來安裝相依性的文化特性相依元件，例如當地語系化的元件、授權合約和檔。
 
  產品和套件檔案是由最上層或元素所組成 `Product` `Package` ，其中每個專案都包含下列元素。
 
-|項目|描述|屬性|
+|元素|描述|屬性|
 |-------------|-----------------|----------------|
-|[\<Product> 元素](../deployment/product-element-bootstrapper.md)|產品檔案的必要最上層元素。|None|
+|[\<Product> 元素](../deployment/product-element-bootstrapper.md)|產品檔案的必要最上層元素。|無|
 |[\<Package> 元素](../deployment/package-element-bootstrapper.md)|封裝檔案的必要最上層元素。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
-|[\<RelatedProducts> 元素](../deployment/relatedproducts-element-bootstrapper.md)|產品檔案的選擇性元素。 此產品安裝或相依的其他產品。|None|
-|[\<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)|必要元素。 列出在安裝期間要在本機電腦上執行的相依性檢查。|None|
-|[\<Commands> 元素](../deployment/commands-element-bootstrapper.md)|必要元素。  執行一或多個安裝檢查（如所述 `InstallChecks` ），並表示檢查失敗時要安裝的套件。|None|
-|[\<PackageFiles> 元素](../deployment/packagefiles-element-bootstrapper.md)|必要元素。 列出這個安裝程式可能安裝的封裝。|None|
-|[\<Strings> 元素](../deployment/strings-element-bootstrapper.md)|必要元素。 儲存產品名稱和錯誤字串的當地語系化版本。|None|
+|[\<RelatedProducts> 元素](../deployment/relatedproducts-element-bootstrapper.md)|產品檔案的選擇性元素。 此產品安裝或相依的其他產品。|無|
+|[\<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)|必要元素。 列出在安裝期間要在本機電腦上執行的相依性檢查。|無|
+|[\<Commands> 元素](../deployment/commands-element-bootstrapper.md)|必要元素。  執行一或多個安裝檢查（如所述 `InstallChecks` ），並表示檢查失敗時要安裝的套件。|無|
+|[\<PackageFiles> 元素](../deployment/packagefiles-element-bootstrapper.md)|必要元素。 列出這個安裝程式可能安裝的封裝。|無|
+|[\<Strings> 元素](../deployment/strings-element-bootstrapper.md)|必要元素。 儲存產品名稱和錯誤字串的當地語系化版本。|無|
 
 ## <a name="remarks"></a>備註
  封裝架構是由 *Setup.exe* 所取用，MS Build 啟動載入工作所產生的存根程式，其中只包含其本身的硬式編碼邏輯。 架構會驅動安裝程式的每個層面。
@@ -159,6 +159,6 @@ ms.locfileid: "94350708"
 </Product>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)
 - [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

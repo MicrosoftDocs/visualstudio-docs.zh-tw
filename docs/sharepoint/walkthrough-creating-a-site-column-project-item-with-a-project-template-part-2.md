@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6e5c9a0bb461f6b81b9cb7e1aa5f0134a7bdcbd
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: bc664a50fc307c59d5c168b26c8af1bc6181ebad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915137"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918725"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>逐步解說：使用專案範本建立網站資料行專案專案（第2部分）
   在您定義自訂類型的 SharePoint 專案專案，並將其與 Visual Studio 中的專案範本建立關聯之後，您可能也會想要提供範本的嚮導。 當使用者使用您的範本建立包含專案專案的新專案時，您可以使用此嚮導來收集使用者的資訊。 您收集的資訊可以用來初始化專案專案。
@@ -397,7 +397,7 @@ ms.locfileid: "96915137"
 
 1. 在 **方案總管** 中，展開 [ **SiteColumnProjectTemplate** ] 專案節點，然後開啟 SiteColumnProjectTemplate .vstemplate 檔案。
 
-2. 在檔案結尾附近， `WizardExtension` 于和標記之間新增下列元素 `</TemplateContent>` `</VSTemplate>` 。 *your token* `PublicKeyToken` 以您在上一個程式中取得的公開金鑰 token 取代屬性的 token 值。
+2. 在檔案結尾附近， `WizardExtension` 于和標記之間新增下列元素 `</TemplateContent>` `</VSTemplate>` 。  `PublicKeyToken` 以您在上一個程式中取得的公開金鑰 token 取代屬性的 token 值。
 
     ```xml
     <WizardExtension>

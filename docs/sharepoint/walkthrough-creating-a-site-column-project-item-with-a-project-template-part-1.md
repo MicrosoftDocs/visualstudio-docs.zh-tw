@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 32f56f282dc5755b8162c4f19a9c036dc2e9cc5f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: b9ccf478a084b8dedabc6f470a333e3fe4b54eb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918727"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本建立網站資料行專案專案（第1部分）
   SharePoint 專案是一個或多個 SharePoint 專案專案的容器。 您可以建立自己的 SharePoint 專案專案類型，然後將它們與專案範本產生關聯，藉以擴充 Visual Studio 中的 SharePoint 專案系統。 在這個逐步解說中，您將會定義用來建立網站資料行的專案專案類型，然後您將建立專案範本，可用來建立包含網站資料行專案專案的新專案。
@@ -752,7 +752,7 @@ ms.locfileid: "96915209"
 
 5. 關閉 Visual Studio 的兩個實例 (實驗實例，以及開啟 SiteColumnProjectItem 方案) 的 Visual Studio 實例。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  完成此逐步解說之後，您可以將嚮導加入至專案範本。 當使用者建立網站資料行專案時，wizard 會要求使用者提供要用於偵錯工具的網站 URL，以及新的方案是否為沙箱化，然後嚮導會使用這項資訊來設定新專案。 此 wizard 也會收集有關資料行 (的資訊，例如基底類型，以及要在 [網站] 資料行資源庫中列出資料行的群組) 然後將這項資訊新增至新專案中的 *Elements.xml* 檔。 如需詳細資訊，請參閱 [逐步解說：使用專案範本建立網站資料行專案專案（第2部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
 
 ## <a name="see-also"></a>另請參閱

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 848e9c8c4e3dcc7d364f2001393730fbcc56be7e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 4a90a5a251169bc9b41dea5bfddcfa2f8459af28
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046335"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919052"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 內嵌工作
 
@@ -94,7 +94,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 ## <a name="helloworld"></a>HelloWorld
 
- 以下是更強固的內嵌工作。 HelloWorld 工作會在預設的錯誤記錄裝置上顯示 "Hello, world!"， 此裝置通常是系統主控台或 Visual Studio 的 [輸出]  視窗。 範例所包含的 `Reference` 項目僅供說明之用。
+ 以下是更強固的內嵌工作。 HelloWorld 工作會在預設的錯誤記錄裝置上顯示 "Hello, world!"， 此裝置通常是系統主控台或 Visual Studio 的 [輸出] 視窗。 範例所包含的 `Reference` 項目僅供說明之用。
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -148,7 +148,7 @@ Log.LogError("Hello, world!");
 
 - `Output` 是選擇性屬性，預設值為 `false`。 如果是 `true`，則必須為參數提供值，才能從 Execute 方法傳回。
 
-例如，套用至物件的
+例如，
 
 ```xml
 <ParameterGroup>
@@ -197,7 +197,7 @@ File.WriteAllText(Path, content);
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [逐步解說：建立內嵌工作](../msbuild/walkthrough-creating-an-inline-task.md)

@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 08d620bdf9fd8902a82eceb066e58c9abc7de45b
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: e6e5ef85ffc4a10719cfbef79cbaf6dad08bdbf0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919126"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 字彙表
 

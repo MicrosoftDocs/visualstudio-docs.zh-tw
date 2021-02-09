@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5459ded60ea90ae00a3f943f829065a82548d160
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 0168f8e4b6c04ea0d6b675ce6c280bd8140971b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305297"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919563"
 ---
 # <a name="list-registers-command"></a>列出暫存器命令
 顯示所選暫存器的值，並讓您修改要顯示的暫存器清單。

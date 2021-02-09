@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a28823a1a492cb1e8d5f434f98248fecc5d84e47
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: d4bfc58c9be578514598fce2d447ef921d091177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919075"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 
@@ -35,7 +35,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 </ItemGroup>
 ```
 
- 專案 *file2.cs* 不會取代專案 *file1.cs* ;相反地，檔案名會附加至專案類型的值清單 `Compile` 。
+ 專案 *file2.cs* 不會取代專案 *file1.cs*;相反地，檔案名會附加至專案類型的值清單 `Compile` 。
 
  下列 XML 會在一個 `Include` 屬性中宣告這兩個檔案，來建立相同的項目類型。 請注意，檔案名稱是以分號分隔的。
 
@@ -150,7 +150,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 
 ### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a> 使用中繼資料轉換項目類型
 
- 您可以使用中繼資料，來將項目清單轉換為新的項目清單。 例如，您可以使用運算式，將具有代表 .cpp 檔案之專案的專案類型轉換 `CppFiles` 成 .obj 檔案的對應 *.cpp* 清單 *。* `@(CppFiles -> '%(Filename).obj')`
+ 您可以使用中繼資料，來將項目清單轉換為新的項目清單。 例如，您可以使用運算式，將具有代表 .cpp 檔案之專案的專案類型轉換 `CppFiles` 成 .obj 檔案的對應清單 *。* `@(CppFiles -> '%(Filename).obj')`
 
  下列程式碼會建立 `CultureResource` 項目類型，其中包含所有具 `Culture` 中繼資料之 `EmbeddedResource` 項目的複本。 `Culture` 中繼資料值會成為新中繼資料 `CultureResource.TargetDirectory` 的值。
 
@@ -593,7 +593,7 @@ Item1: notebook
 -->
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)
 - [一般 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)

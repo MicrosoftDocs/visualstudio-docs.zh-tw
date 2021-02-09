@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b4ba2c27e130580af961216739289c6c7e9585
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9d448adb2ba898eabdbac304c0087176e6ed7119
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918995"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多目標概觀
 
@@ -30,7 +30,7 @@ ms.locfileid: "93046305"
 
 - 您可以將 .NET Framework 以外的架構作為目標，例如 Silverlight Framework。
 
-- 您可以將「Framework 設定檔」  當做目標，這是預先定義的目標 Framework 子集。
+- 您可以將「Framework 設定檔」當做目標，這是預先定義的目標 Framework 子集。
 
 - 如果 .NET Framework 目前版本的 Service Pack 已發行，您可以將它當做目標。
 
@@ -38,11 +38,11 @@ ms.locfileid: "93046305"
 
 ## <a name="target-framework-and-platform"></a>目標架構和平台
 
- 「目標架構」  是建置專案以在其上執行的 .NET Framework 版本，而「目標平台」  是建置專案以在其上執行的系統平台。  例如，您可能想要將 .NET Framework 2.0 應用程式的目標設為與80x86 處理器系列 (x86) 相容的32位平臺上執行。 目標 Framework 和目標平台的組合稱為「目標內容」  。 如需詳細資訊，請參閱[目標 Framework 和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。
+ 「目標架構」是建置專案以在其上執行的 .NET Framework 版本，而「目標平台」是建置專案以在其上執行的系統平台。  例如，您可能想要將 .NET Framework 2.0 應用程式的目標設為與80x86 處理器系列 (x86) 相容的32位平臺上執行。 目標 Framework 和目標平台的組合稱為「目標內容」。 如需詳細資訊，請參閱[目標 Framework 和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。
 
 ## <a name="toolset-toolsversion"></a>Toolset (ToolsVersion)
 
- 工具組會將工具、工作以及用來建立應用程式的目標收集在一起。 工具組包含像是 *csc.exe* 和 *vbc.exe* 的編譯器、通用目標檔案 ( *microsoft. common.* ) 和 common tasks *file (* 4.5 工具組可以用來以 .NET Framework 版本 2.0、3.0、3.5、4 和 4.5 為目標。 不過，2.0 工具組只能用來以 .NET Framework 版本 2.0 為目標。 如需詳細資訊，請參閱 [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。
+ 工具組會將工具、工作以及用來建立應用程式的目標收集在一起。 工具組包含像是 *csc.exe* 和 *vbc.exe* 的編譯器、通用目標檔案 (*microsoft. common.*) 和 common tasks *file (* 4.5 工具組可以用來以 .NET Framework 版本 2.0、3.0、3.5、4 和 4.5 為目標。 不過，2.0 工具組只能用來以 .NET Framework 版本 2.0 為目標。 如需詳細資訊，請參閱 [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。
 
 ## <a name="reference-assemblies"></a>參考組件
 

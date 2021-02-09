@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f861fd9e5c10946c2bfee0235632c005822cbf1
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: b3451101d6ab2483960731281763167c0cd1629c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918974"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild 專案檔案結構描述參考
 
@@ -55,7 +55,7 @@ Visual Studio 2017 和更新版本中不需要 MSBuild 專案檔中的架構連�
 |[MSBuild)  (Property 元素 ](../msbuild/property-element-msbuild.md)|--|條件|
 |[MSBuild)  (PropertyGroup 元素 ](../msbuild/propertygroup-element-msbuild.md)|*屬性*|條件|
 |[MSBuild)  (Sdk 元素 ](../msbuild/sdk-element-msbuild.md)|--|名稱<br /><br /> 版本|
-|[MSBuild)  (目標元素 ](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Task*|AfterTargets<br /><br /> BeforeTargets<br /><br /> 條件<br /><br /> DependsOnTargets<br /><br /> 輸入<br /><br /> KeepDuplicateOutputs<br /><br /> Name<br /><br /> 輸出<br /><br /> 傳回|
+|[MSBuild)  (目標元素 ](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Task*|AfterTargets<br /><br /> BeforeTargets<br /><br /> 條件<br /><br /> DependsOnTargets<br /><br /> 輸入<br /><br /> KeepDuplicateOutputs<br /><br /> 名稱<br /><br /> 輸出<br /><br /> 傳回|
 |[目標 (MSBuild) 的 Task 元素 ](../msbuild/task-element-msbuild.md)|輸出|條件<br /><br /> ContinueOnError<br /><br /> *參數*|
 |[UsingTask (MSBuild) 的 Task 元素 ](../msbuild/taskbody-element-msbuild.md)|*資料*|評估|
 |[MSBuild)  (UsingTask 元素 ](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> Task|AssemblyFile<br /><br /> AssemblyName<br /><br /> 條件<br /><br /> TaskFactory<br /><br /> TaskName|

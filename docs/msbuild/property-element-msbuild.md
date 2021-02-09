@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 69ab08ab-3e76-41dd-a01b-49aa1d2e0cac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c17906467579e8fc532372371df8be76b40e7f0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 617a6d3712b137d76334d4063f36a1b8dde1d101
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918846"
 ---
 # <a name="property-element-msbuild"></a>Property 元素 (MSBuild)
 
@@ -55,7 +55,7 @@ ms.locfileid: "93048824"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|屬性的群組項目。|
 
@@ -80,7 +80,7 @@ ms.locfileid: "93048824"
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 屬性](../msbuild/msbuild-properties.md)
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)

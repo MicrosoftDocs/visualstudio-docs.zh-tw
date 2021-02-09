@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae2463a3d8dd295fcba9bf264e1ad3fa250169d4
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 4efd5ab0ddd94b17fa6a683366707d635f844bb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305281"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919431"
 ---
 # <a name="list-source-command"></a>列出原始碼命令
 顯示指定的原始程式碼程式行。

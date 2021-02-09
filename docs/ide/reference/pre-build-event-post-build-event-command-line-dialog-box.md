@@ -33,15 +33,15 @@ helpviewer_keywords:
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 538b6c0dc3a163936e04a85b374a239d43e46e8e
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 20f8afa9dc9946644b935c34b98616d96a5fa875
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918307"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>建置前事件/建置後事件命令列對話方塊
 
@@ -75,7 +75,7 @@ ms.locfileid: "92136806"
 
 您可以使用任何這些巨集指定檔案位置，或是在複選的情況下取得輸入檔的實際名稱。 這些巨集不區分大小寫。
 
-|巨集|描述|
+|巨集|Description|
 |-----------|-----------------|
 |`$(ConfigurationName)`|目前的專案設定名稱，例如 "Debug"。|
 |`$(OutDir)`|相對於專案目錄的輸出檔目錄路徑。 這會解析為 Output Directory 屬性的值。 它包含尾端的反斜線 '\\'。|

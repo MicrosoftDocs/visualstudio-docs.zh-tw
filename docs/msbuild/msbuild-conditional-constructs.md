@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 614a59771ea63637ee7c0576f67bf4798cb90c1f
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 10b26e9bdc0c632f924a29cd2ad09c21f8048d31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046410"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919134"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild 條件式建構
 
@@ -93,7 +93,7 @@ MSBuild 提供了一種機制，可使用 [Choose](../msbuild/choose-element-msb
 </Choose>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)
 - [當元素 (MSBuild 時) ](../msbuild/when-element-msbuild.md)

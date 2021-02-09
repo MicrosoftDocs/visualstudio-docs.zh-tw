@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7b3ed8b28a43c31efe68c6512f08883cb4187a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: f3abcd7182c8bb5b94b2f35a9463f845cc6bb5bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919386"
 ---
 # <a name="list-threads-command"></a>列出執行緒命令
 顯示目前程式中的執行緒清單。

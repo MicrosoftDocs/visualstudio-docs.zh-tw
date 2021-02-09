@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c4d91e95d080b93c8bcdc4486593b4c94bcb501
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d14a979a166f7378c288453530b46b8ec6c98828
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919207"
 ---
 # <a name="msbuild-batching"></a>MSBuild 批次處理
 
@@ -207,13 +207,13 @@ Test1:
 
 ## <a name="property-functions-using-metadata"></a>使用中繼資料的屬性函式
 
-批次處理可由包含中繼資料的屬性函式來控制。 例如，套用至物件的
+批次處理可由包含中繼資料的屬性函式來控制。 例如，
 
 `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`
 
 會使用 <xref:System.IO.Path.Combine%2A> 來結合根資料夾路徑和編譯項目路徑。
 
-屬性函式可能不會出現在中繼資料值內。 例如，套用至物件的
+屬性函式可能不會出現在中繼資料值內。 例如，
 
 `%(Compile.FullPath.Substring(0,3))`
 
@@ -221,7 +221,7 @@ Test1:
 
 如需屬性函式的詳細資訊，請參閱[屬性函式](../msbuild/property-functions.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [ItemMetadata 項目 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

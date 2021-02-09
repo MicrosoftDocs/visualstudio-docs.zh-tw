@@ -6,21 +6,21 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 34628f08c8860771b07d8e2544c79ad23eba18cf
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: b376f1cb1d6b473c0ea37bb33f6ae2b60789fa24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919309"
 ---
 # <a name="use-the-msbuild-api"></a>使用 MSBuild API
 
 MSBuild 提供公開的 API 介面，讓您的程式可以執行建置並檢查專案。 您可以在下列 NuGet 套件中找到最新版本的 MSBuild Api：
 
-| 套件名稱 | 描述 |
+| 套件名稱 | Description |
 | ------------ | ----------- |
 | [Microsoft.Build](https://www.nuget.org/packages/Microsoft.Build) | 包含用來建立、編輯和評估 MSBuild 專案的 Microsoft Build 元件。|
 | [Microsoft.Build.Framework](https://www.nuget.org/packages/Microsoft.Build.Framework)| 包含其他 MSBuild 元件所使用的常見 MSBuild 架構元件。 |
@@ -35,7 +35,7 @@ MSBuild API 有數種不同的版本，而在15和16版中，NuGet 套件中的�
 您可以使用 [.NET Api 瀏覽器](/dotnet/api)或流覽下列清單中的命名空間，找到 MSBuild API 的檔。
 
 ::: moniker range="vs-2017"
-| 命名空間 | 套用至 | 描述 |
+| 命名空間 | 套用至 | Description |
 |-----------| -----------| ----------- |
 | [Microsoft. 建造](/dotnet/api/Microsoft.Build.Construction?view=msbuild-15&preserve-view=true) | 全部 |  包含型別，由 MSBuild 物件模型搭配未評估的值用來建構專案根目錄。 每個專案根目錄對應至專案或目標檔案。 |
 | [建立定義](/dotnet/api/Microsoft.Build.Definition?view=msbuild-15&preserve-view=true) | 全部 | 包含 `ProjectOptions` 支援專案結構的類別。 |
@@ -59,7 +59,7 @@ MSBuild API 有數種不同的版本，而在15和16版中，NuGet 套件中的�
 | [Microsoft.Build.Utilities](/dotnet/api/Microsoft.Build.Utilities?view=msbuild-15&preserve-view=true) | 全部 | 包含 helper 類別，可讓您用來建立自己的 MSBuild 記錄器和工作。|
 :::moniker-end
 :::moniker range=">=vs-2019"
-| 命名空間 | 套用至 | 描述 |
+| 命名空間 | 套用至 | Description |
 |-----------| -----------| ----------- |
 | [Microsoft. 建造](/dotnet/api/Microsoft.Build.Construction?view=msbuild-16&preserve-view=true) | 全部 |  包含型別，由 MSBuild 物件模型搭配未評估的值用來建構專案根目錄。 每個專案根目錄對應至專案或目標檔案。 |
 | [建立定義](/dotnet/api/Microsoft.Build.Definition?view=msbuild-16&preserve-view=true) | 全部 | 包含 `ProjectOptions` 支援專案結構的類別。 |

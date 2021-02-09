@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29fed063d4c223cf0b1862384612ea5aa84b52b0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 855a07ab21d0396fea4605e5117e312608cb625e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048906"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918894"
 ---
 # <a name="override-toolsversion-settings"></a>覆寫 ToolsVersion 設定
 
@@ -129,7 +129,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     4. 否則，請使用目前的 `ToolsVersion`。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [多目標](../msbuild/msbuild-multitargeting-overview.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

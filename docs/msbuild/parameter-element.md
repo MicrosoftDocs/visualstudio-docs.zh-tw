@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7aa8809cbce8f07e18666afb1734026fdc9694b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 728618a6d9ff174d4d4bf7cdc20516433d06036b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918869"
 ---
 # <a name="parameter-element"></a>Parameter 元素
 
@@ -60,7 +60,7 @@ ms.locfileid: "93048880"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|包含選擇性的參數清單，這些參數將會出現在由產生的工作上 `UsingTask` `TaskFactory` 。|
 
@@ -81,7 +81,7 @@ ms.locfileid: "93048880"
 </UsingTask>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

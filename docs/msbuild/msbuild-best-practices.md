@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 90ef8693-e921-410a-a377-fe4d13f58c48
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2742324f737a4e70221e3cbe4c78cff56fa7e7ca
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 83527ac4b7d16d2cb06c797924c18f2567f12350
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919190"
 ---
 # <a name="msbuild-best-practices"></a>MSBuild 最佳做法
 
@@ -34,6 +34,6 @@ ms.locfileid: "93047659"
 
 - 一般情況下，請避免在選取專案時使用萬用字元。 而要明確地指定檔案。 這是因為在大部分的專案類型中，MSBuild 會在不同的時間展開萬用字元，例如新增或移除專案時，可能會導致非預期的行為。 例外狀況是在 .NET Core SDK 樣式的專案中，這會正確處理萬用字元。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [進階概念](../msbuild/msbuild-advanced-concepts.md)

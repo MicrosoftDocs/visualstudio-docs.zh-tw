@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: d39f3579-719a-4f47-a97d-5b4232fe4c64
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: e825b456a4524653df4e8c40793f16f3d8887665
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: da2a19b702e29589a71e84776fbff939dc468914
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918815"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>如何：指定 .NET Framework 執行階段
 

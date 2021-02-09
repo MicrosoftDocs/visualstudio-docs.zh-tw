@@ -13,15 +13,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], control layout
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 49739b6011fcf977db84a3350929a56514040975
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848244"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918584"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>如何：管理執行窗格的控制項版面配置
   執行窗格預設會停駐在檔或工作表的右側;不過，它可以停駐在左邊、頂端或底部。 如果您使用多個使用者控制項，您可以撰寫程式碼，在 [動作] 窗格上適當地堆疊使用者控制項。 如需詳細資訊，請參閱執行 [窗格總覽](../vsto/actions-pane-overview.md)。

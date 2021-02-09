@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76b359eebe0f4a22bef3ff6c6742a5134aa4520c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 6b3bb4c1a17cd5d1481be2fa942686bce3861bb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918922"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 工作
 
@@ -71,7 +71,7 @@ ms.locfileid: "93049053"
 
  MSBuild 會在數個位置中尋找工作。 第一個位置是在副檔名為的檔案中 *。* 儲存在 .NET Framework 目錄中的 OverrideTasks。 這些檔案中的工作會覆寫任何其他具有相同名稱的工作，包括專案檔中的工作。 第二個位置是在副檔名為的檔案中 *。.NET Framework 目錄中的* 工作。 如果在這兩個位置中找不到工作，就會使用專案檔中的工作。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
