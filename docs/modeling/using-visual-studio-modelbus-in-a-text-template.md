@@ -5,15 +5,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1025e7d35c20dc18c87942e23cf71b598d85637a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 0f65ece27122949fec006d73858c8c89483441f1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924369"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>使用文字範本中的 Visual Studio ModelBus
 
@@ -42,7 +42,7 @@ ms.locfileid: "97361361"
 
     3. 在對話方塊中，選取 [ **我要將這個 DSL 公開給 ModelBus**]。 如果您想要讓此 DSL 公開其模型並取用其他 Dsl 的參考，您可以選取兩個選項。
 
-    4. 按一下 [確定]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
+    4. 按一下 [確定]  。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
 
     5. 按一下 [ **轉換所有範本**]。
 
@@ -397,7 +397,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     如果您已在該元素上設定 MBR，則會開啟參考的模型，並選取參考的元素。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)

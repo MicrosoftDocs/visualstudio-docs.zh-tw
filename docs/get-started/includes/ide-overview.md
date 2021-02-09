@@ -4,14 +4,14 @@ ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
-manager: jillfra
+manager: jmartens
 ms.topic: include
-ms.openlocfilehash: fbbd2278a59197601afe02e777e89245fc6bb421
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: afc0466e93b8bf2a71db42c08cd2e043107e3bc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97844749"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924995"
 ---
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
@@ -85,7 +85,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![在 Visual Studio 中重構](../media/refactoring-menu.png)
 
-- [IntelliSense](../../ide/using-intellisense.md)
+- [智慧](../../ide/using-intellisense.md)
 
    IntelliSense 為一組功能的字詞，會直接在編輯器中顯示有關您程式碼的資訊，而在某些情況下會為您撰寫一些程式碼。 就像內嵌在編輯器中的基本文件，讓您不必在其他位置查閱類型資訊。 IntelliSense 功能會因語言而異。 如需詳細資訊，請參閱 [c # intellisense](../../ide/visual-csharp-intellisense.md)、 [Visual C++ IntelliSense](../../ide/visual-cpp-intellisense.md)、 [JavaScript intellisense](../../ide/javascript-intellisense.md)和 [Visual Basic intellisense](../../ide/visual-basic-specific-intellisense.md)。 下圖顯示 IntelliSense 如何顯示類型的成員清單：
 

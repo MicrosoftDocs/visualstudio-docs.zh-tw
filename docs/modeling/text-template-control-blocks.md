@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, template code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cc289f668a674707c584396998ea7abb9e7ea9
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: ff6d09cae433cab0a5411350970325c6ec659184
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924581"
 ---
 # <a name="text-template-control-blocks"></a>文字範本控制區塊
 控制區塊可讓您在文字範本撰寫程式碼，以便產生不同的輸出。 有三種類型的控制區塊，是使用左括號來區別：

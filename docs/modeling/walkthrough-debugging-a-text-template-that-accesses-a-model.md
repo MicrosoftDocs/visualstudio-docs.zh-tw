@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924115"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>逐步解說：偵錯存取模型的文字範本
 當您修改或新增特定領域語言方案中的文字模板時，當引擎將範本轉換為原始程式碼或編譯產生的程式碼時，可能會收到錯誤。 下列逐步解說將示範您可以用來對文字模板進行的一些動作。
@@ -22,7 +22,7 @@ ms.locfileid: "90100783"
 > [!NOTE]
 > 如需文字模板的一般詳細資訊，請參閱程式 [代碼產生和 T4 文字模板](../modeling/code-generation-and-t4-text-templates.md)。 如需有關偵錯工具文字模板的詳細資訊，請參閱 [逐步解說：進行文字模板的調試](debugging-a-t4-text-template.md)程式。
 
-## <a name="creating-a-domain-specific-language-solution"></a>建立特定領域語言方案
+## <a name="creating-a-domain-specific-language-solution"></a>建立 Domain-Specific 語言方案
  在此程式中，您會建立具有下列特性的特定領域語言方案：
 
 - 名稱： DebuggingTestLanguage
@@ -33,14 +33,14 @@ ms.locfileid: "90100783"
 
 - 公司名稱： Fabrikam
 
-  如需有關建立特定領域語言解決方案的詳細資訊，請參閱 [如何：建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+  如需有關建立特定領域語言解決方案的詳細資訊，請參閱 [如何：建立 Domain-Specific 語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 ## <a name="creating-a-text-template"></a>建立文字模板
  將文字模板加入至您的方案。
 
 #### <a name="to-create-a-text-template"></a>若要建立文字模板
 
-1. 建立方案，並在偵錯工具中開始執行。  (在 [ **組建** ] 功能表上，按一下 [ **重建方案**]，然後在 [ **調試** 程式] 功能表上，按一下 [ **開始調試**程式]。 ) 新的實例時，Visual Studio 會開啟偵錯工具專案。
+1. 建立方案，並在偵錯工具中開始執行。  (在 [ **組建** ] 功能表上，按一下 [ **重建方案**]，然後在 [ **調試** 程式] 功能表上，按一下 [ **開始調試** 程式]。 ) 新的實例時，Visual Studio 會開啟偵錯工具專案。
 
 2. 將名為的文字檔加入 `DebugTest.tt` 至調試專案。
 
@@ -89,7 +89,7 @@ ms.locfileid: "90100783"
     #>
     ```
 
-2. 在 **方案總管**中，以滑鼠右鍵按一下 [DebugTest.tt]，然後按一下 [ **執行自訂工具**]。
+2. 在 **方案總管** 中，以滑鼠右鍵按一下 [DebugTest.tt]，然後按一下 [ **執行自訂工具**]。
 
      [ **錯誤清單** ] 視窗會顯示下列錯誤：
 
@@ -111,7 +111,7 @@ ms.locfileid: "90100783"
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
     ```
 
-5. 在 **方案總管**中，以滑鼠右鍵按一下 [DebugTest.tt]，然後按一下 [ **執行自訂工具**]。
+5. 在 **方案總管** 中，以滑鼠右鍵按一下 [DebugTest.tt]，然後按一下 [ **執行自訂工具**]。
 
      現在系統會轉換文字模板，並產生對應的輸出檔。 您將不會在 [ **錯誤清單** ] 視窗中看到任何錯誤。
 
@@ -153,7 +153,7 @@ ms.locfileid: "90100783"
     #>
     ```
 
-2. 在 **方案總管**中，以滑鼠右鍵按一下 [DebugTest.tt]，然後按一下 [ **執行自訂工具**]。
+2. 在 **方案總管** 中，以滑鼠右鍵按一下 [DebugTest.tt]，然後按一下 [ **執行自訂工具**]。
 
      [ **錯誤清單** ] 視窗隨即出現，並顯示下列其中一個錯誤：
 
@@ -208,6 +208,6 @@ ms.locfileid: "90100783"
     #>
     ```
 
-5. 在 **方案總管**中，以滑鼠右鍵按一下 [DebugTest.tt]，然後按一下 [ **執行自訂工具**]。
+5. 在 **方案總管** 中，以滑鼠右鍵按一下 [DebugTest.tt]，然後按一下 [ **執行自訂工具**]。
 
      現在系統會轉換文字模板，並產生對應的輸出檔。 您將不會在 [ **錯誤清單** ] 視窗中看到任何錯誤。

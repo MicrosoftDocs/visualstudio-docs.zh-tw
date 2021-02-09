@@ -14,15 +14,15 @@ helpviewer_keywords:
 - mapped folders [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4d29be9b008bfaa9ad6694725b03e25bf6847df
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e6771482925a935d1b6424412d4176db5e9ad6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923477"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>如何：新增和移除對應的資料夾
   SharePoint 中一些常用的資料夾（例如影像和版面配置）會在檔案階層中緊密內嵌。 您可以將這些資料夾對應到 SharePoint 專案，以便更輕鬆地存取這些資料夾。 對應的資料夾是 SharePoint 專案中對應至 SharePoint Server 安裝中檔案實體位置的資料夾。

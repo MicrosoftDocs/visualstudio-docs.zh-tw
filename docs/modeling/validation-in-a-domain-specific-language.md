@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9baced0a4cc38ae175146d3f3779c5b9c28dd2
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 44ee0d9e10a4f96979362d8613dc6ca949ff2fd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924254"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 身為網域指定的語言 (DSL) 的作者，您可以定義驗證條件約束，以驗證使用者建立的模型是否有意義。 例如，如果您的 DSL 允許使用者繪製人們與其祖先的家譜，您可以撰寫條件約束，確保孩子的出生日期晚於父母的出生日期。
@@ -195,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  如果將網域關聯性角色的多重性設定為 1..* 或 1..1，但使用者未建立此關聯性的連結，則會出現驗證錯誤訊息。
 
- 例如，如果您的 DSL 具有類別 Person 和城鎮，以及關聯性1的關聯性 PersonLivesInTown **。 \\** _ 在城鎮角色，然後針對沒有城鎮的每個人，將會出現一則錯誤訊息。
+ 例如，如果您的 DSL 具有類別 Person 和城鎮，以及關聯性1的關聯性 PersonLivesInTown **。 \\*** 在城鎮角色中，針對沒有城鎮的每個人，將會出現錯誤訊息。
 
 ## <a name="running-validation-from-program-code"></a>從程式碼執行驗證
  您可以存取或建立 ValidationController 來執行驗證。 如果您想要在錯誤視窗中向使用者顯示錯誤，請使用附加至圖表 DocData 的 ValidationController。 例如，如果您要撰寫功能表命令，可以使用命令集類別中的 `CurrentDocData.ValidationController`：
@@ -235,7 +235,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>發生變更時執行驗證
  如果您要確保在模型無效時立即警告使用者，您可以定義執行驗證的存放區事件。 如需有關儲存事件的詳細資訊，請參閱 [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
- 除了驗證程式代碼，請將自訂程式碼檔案新增至您的 _ *DslPackage** 專案，其內容與下列範例類似。 這個程式碼使用連結至文件的 `ValidationController`。 此控制器會在 Visual Studio 錯誤清單中顯示驗證錯誤。
+ 除了驗證碼之外，也將自訂程式碼檔案新增至您的 **DslPackage** 專案，其中包含與下列範例類似的內容。 這個程式碼使用連結至文件的 `ValidationController`。 此控制器會在 Visual Studio 錯誤清單中顯示驗證錯誤。
 
 ```csharp
 using System;
@@ -336,7 +336,7 @@ validationController.ValidateCustom
 > [!WARNING]
 > 確定使用者知道已調整或已復原變更。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)

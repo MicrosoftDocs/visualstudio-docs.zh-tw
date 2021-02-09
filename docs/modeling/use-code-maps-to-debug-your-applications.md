@@ -15,15 +15,15 @@ helpviewer_keywords:
 - mapping relationships in code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d935ee5c4341a2d625c6f85226cc649d696d6e6e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: a39be2e465ebe8b04501f319e89d6f8bc926b4c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729388"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924460"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用 Code Map 偵錯您的應用程式
 
@@ -142,7 +142,7 @@ Code Map 有助於避免在大型程式碼基底、不熟悉的程式碼或舊�
 
  現在您已經完成調查。 您藉由對應程式碼成功找到問題並且加以解決。 您還可以利用對應巡覽程式碼、記住您所學到的內容，以及顯示您用於解決問題的步驟。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [進行偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [視覺化程式碼](../modeling/visualize-code.md)

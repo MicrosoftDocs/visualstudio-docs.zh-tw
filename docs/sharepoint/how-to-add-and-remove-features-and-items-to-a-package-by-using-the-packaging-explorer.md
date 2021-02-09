@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ee9b2a12c9eaa168f0223dff29a3379a12b3d691
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: eec1468fc2e0c51d7dea7aa5f3ffa808b484ec87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923571"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何：使用封裝瀏覽器加入和移除封裝的功能和專案
   若要設定套件以部署 SharePoint 專案和功能，您可以使用封裝瀏覽器。 您可以調整 .wsp 檔案內的 SharePoint 專案專案和功能。

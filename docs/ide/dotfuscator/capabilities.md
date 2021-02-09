@@ -16,19 +16,19 @@ description: 了解 Visual Studio 2017 中隨附的免費 Dotfuscator Community 
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 019acd338ab49dd08255e3dc5d174cf2e371b71e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+manager: jmartens
+ms.openlocfilehash: ad53c99656096fec2393ecbd9f63fbffe1343e9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75918409"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924800"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator 的功能
 
 本頁的重點在於描述 Dotfuscator Community 的功能，並對透過[升級][upgrades]取得的進階選項提供一些參考資訊。
 
-Dotfuscator Community 是 .NET 應用程式的「建置後」** 系統。
+Dotfuscator Community 是 .NET 應用程式的「建置後」系統。
 有了它，Visual Studio 使用者可以「混淆組件」[][obfuscation]，並將[主動防禦評估][checks]插入應用程式，Dotfuscator 完全不需要存取原始程式碼。
 Dotfuscator 採用多種方法來保護您的應用程式，並建立多層保護策略。
 

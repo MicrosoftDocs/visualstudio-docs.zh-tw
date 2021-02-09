@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b97b113b763a8f294386d4fa5fe66233a3f980
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3363857d9a953b61e18eb4b0cb891b20dbed1eb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360451"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923959"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>撰寫程式碼來自訂特定領域語言
 
@@ -74,6 +74,6 @@ ms.locfileid: "97360451"
 
 - **序列化**。 存放區提供將它所包含之物件序列化至檔案的標準方式。 您可以自訂序列化和還原序列化的規則。 如需詳細資訊，請參閱 [自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)

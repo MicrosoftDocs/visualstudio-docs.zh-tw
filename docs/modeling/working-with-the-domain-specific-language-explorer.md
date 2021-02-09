@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb08f7d6dc6ea41c64cfc9aeb6898eac4df0ae5
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: fa3fd0fd16f33342e362432e0193a92e0e981b04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360919"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923993"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>使用網域指定的語言總管
 **DSL Explorer** 會在樹狀檢視中顯示數種類型的資訊。 如需有關 [DSL Explorer] 中大部分專案的詳細資訊，請參閱 [如何定義 Domain-Specific 語言](../modeling/how-to-define-a-domain-specific-language.md)。
@@ -43,6 +43,6 @@ ms.locfileid: "97360919"
 
 - **Xml 序列化行為**。 模型的序列化設定。 如需序列化的詳細資訊，請參閱 [自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a2a9d74c66ffa699ea3fbf73da5d9043316f31
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: be8bb4ec135b94e1efa92a3121d6ad74644cefd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924734"
 ---
 # <a name="how-to-manage-editor-windows"></a>如何：管理編輯器視窗
 

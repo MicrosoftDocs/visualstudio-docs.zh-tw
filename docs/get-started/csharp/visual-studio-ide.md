@@ -9,17 +9,17 @@ ms.custom:
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 688a4377b9e4bd6f80d65744955dc84908a18e7a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: eb34f9dbf0c4778431bbf1eed31b20bc3cd4833b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94904010"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925002"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>歡迎使用 Visual Studio IDE | C\#
 
@@ -41,7 +41,7 @@ ms.locfileid: "94904010"
 
 若要了解您可以個人化 IDE 的其他方式，請參閱[個人化 Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 遵循以下其中一篇簡介文章，進一步探索 Visual Studio：
 

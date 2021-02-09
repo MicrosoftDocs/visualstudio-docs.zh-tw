@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ad786b19-7c4c-46ee-bfb6-c4752b373a09
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b25e2974f4b0e4a6bbf6cf02c411fde3f3de1a
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 22224e375c1d1f463f1c07d41ca5a03efa5cabdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923743"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic 命名空間
 `diagnostics` 命名空間提供的功能可用來發出並行視覺化檢視標記。
@@ -34,14 +34,14 @@ namespace diagnostic;
 
 ### <a name="classes"></a>類別
 
-|Name|描述|
+|名稱|描述|
 |----------|-----------------|
 |[marker_series 類別](../profiling/marker-series-class.md)|表示由單一提供者產生之事件的序列通道。|
 |[span 類別](../profiling/span-class.md)|定義應用程式階段。|
 
 ### <a name="enumerations"></a>列舉
 
-|Name|描述|
+|名稱|描述|
 |----------|-----------------|
 |[marker_importance 列舉](../profiling/marker-importance-enumeration.md)|表示並行視覺化檢視標記的重要性層級。|
 

@@ -17,25 +17,25 @@ helpviewer_keywords:
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d59251240abc7ca39b3819adf2324bf5bb9cef0a
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 3d99c33a74512b380d7b5260d5b7e747c6a39e41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353352"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923867"
 ---
 # <a name="al-assembly-linker-task"></a>AL (組件連結器) 工作
 
-AL 工作會包裝 *AL.exe*，這是隨 WINDOWS 軟體開發套件 (SDK) 散發的工具。 這個組件連結器工具可用來從一或多個屬於模組或資源檔的檔案中，建立包含資訊清單的組件。 編譯器和開發環境可能已經提供這些功能，因此通常不需直接使用此工作。 如果開發人員需要從多個元件檔案建立單一組件 (例如，可能是從混合式語言開發中產生的那些)，則組件連結器就非常實用。 此工作不能將多個模組合併成單一組件檔案；您仍需依序散發和提供個別的模組，才能讓產生的組件正確載入。 如需 AL.exe** 的詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker)。
+AL 工作會包裝 *AL.exe*，這是隨 WINDOWS 軟體開發套件 (SDK) 散發的工具。 這個組件連結器工具可用來從一或多個屬於模組或資源檔的檔案中，建立包含資訊清單的組件。 編譯器和開發環境可能已經提供這些功能，因此通常不需直接使用此工作。 如果開發人員需要從多個元件檔案建立單一組件 (例如，可能是從混合式語言開發中產生的那些)，則組件連結器就非常實用。 此工作不能將多個模組合併成單一組件檔案；您仍需依序散發和提供個別的模組，才能讓產生的組件正確載入。 如需 AL.exe 的詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker)。
 
 ## <a name="parameters"></a>參數
 
  下表說明 `AL` 工作的參數。
 
-| 參數 | 說明 |
+| 參數 | Description |
 |---------------------| - |
 | `AlgorithmID` | 選擇性的 `String` 參數。<br /><br /> 指定雜湊多檔案組件中所有檔案的演算法，但包含組件資訊清單的檔案除外。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中 `/algid` 選項的說明文件。 |
 | `BaseAddress` | 選擇性的 `String` 參數。<br /><br /> 指定在執行期間將 DLL 載入使用者電腦上的目標位址。 如果您指定 DLL 的基底位址，而不是讓作業系統重新找出處理序空間中的 DLL，應用程式載入的速度會更快。 此參數對應至 /base[address](/dotnet/framework/tools/al-exe-assembly-linker)。 |
@@ -95,7 +95,7 @@ AL 工作會包裝 *AL.exe*，這是隨 WINDOWS 軟體開發套件 (SDK) 散發�
 </AL>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [工作參考](../msbuild/msbuild-task-reference.md)
 * [工作](../msbuild/msbuild-tasks.md)

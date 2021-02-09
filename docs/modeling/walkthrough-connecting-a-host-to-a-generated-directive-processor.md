@@ -9,18 +9,18 @@ helpviewer_keywords:
 - text templates, custom directive hosts
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a98e432c7eb9508d32f52e51acc1447035b9058b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a815718f099b024708b86658e10fc0e85c087b4c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362492"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924134"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連線至產生的指示詞處理器
 
@@ -39,7 +39,7 @@ ms.locfileid: "97362492"
 
 - 使用產生的指示詞處理器來測試自訂主機。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 若要定義 DSL，您必須已安裝下列元件：
 
@@ -362,6 +362,6 @@ ms.locfileid: "97362492"
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)

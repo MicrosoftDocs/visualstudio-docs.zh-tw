@@ -18,15 +18,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8b36768cbac4249b964b167988119b5700d5c7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e330b95d2de6da53d9d1bd0f3d553ab8319bdd04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362544"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924325"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -44,7 +44,7 @@ ms.locfileid: "97362544"
 
    在您將程式碼移至不同的架構時，請尋找需要運作的程式碼或相依性。
 
-**Requirements**
+**需求**
 
 - Visual Studio
 
@@ -236,7 +236,7 @@ ms.locfileid: "97362544"
 | DV3001： **遺漏連結** | 找不到 ' 成品 ' 圖 *層 '**LayerName*' 的連結。 您是否遺漏了組件參考? |
 | DV9001： **架構分析發現內部錯誤** | 結果可能不完整。 如需詳細資訊，請參閱詳細建置事件記錄檔或輸出視窗。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的即時相依性驗證](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)

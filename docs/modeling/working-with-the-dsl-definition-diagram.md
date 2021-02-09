@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Bring Tree Here
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d489bfde8b095e35bc652f1cdb7588b07458e48e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 705134b5dfa31bb317360073e336abebcefdb13d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923977"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定義圖表
 定義的圖表 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 是定義網域特定語言的重要工具。 您可以將項目加入至網域模型，並定義圖表上的關聯性；也可以修改圖表配置，讓圖表更容易讀取。
@@ -72,6 +72,6 @@ ms.locfileid: "97362830"
 ### <a name="show-as-class"></a>Show As Class
  如果網域關聯性具有衍生的關聯性，或它具有與其他網域關聯性的內嵌或參考關聯性，您可以用滑鼠右鍵按一下關聯性，然後按一下 [ **顯示為類別**]，將關聯性顯示為類別。 關聯性會以 **定義域屬性** 區間顯示，並且會顯示繼承和關聯性樹狀結構。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

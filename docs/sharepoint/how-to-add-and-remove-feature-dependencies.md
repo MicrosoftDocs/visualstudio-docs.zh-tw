@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5011db32123e77e9bf60c99459125302b2bf8264
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ebec7f6b1f6d777ce7b3b914ac5c1d5629190fcc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915358"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923584"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>如何：新增和移除功能相依性
   您的 SharePoint 功能可能相依于功能或資料的其他功能。 在這些情況下，您可以將這些其他功能標示為功能的相依性。 如此一來，SharePoint 伺服器便可確保在啟用功能之前，會先啟用相依功能。

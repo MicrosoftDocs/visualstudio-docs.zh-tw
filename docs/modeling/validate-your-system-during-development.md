@@ -8,15 +8,15 @@ helpviewer_keywords:
 - dependency diagrams
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a803b2fb7eb7c682e29ae0d17698ef673927d751
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: bac26664a2ef98cffbd60eee0647b39dd1108675
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361400"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924313"
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 
@@ -40,7 +40,7 @@ Visual Studio 可協助讓您的軟體與使用者需求和系統架構保持一
 |**影片**|![連結至影片 ](../data-tools/media/playvideo.gif) [Channel 9： Doug 七：使用 Visual Studio 2010 的程式碼瞭解和系統設計](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![連結至影片 ](../data-tools/media/playvideo.gif) [Channel 9：架構應用程式](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application)) |
 |**論壇**|- [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 擴充性](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [模型使用者需求](../modeling/model-user-requirements.md)
 - [分析和模型架構](../modeling/analyze-and-model-your-architecture.md)

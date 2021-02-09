@@ -9,18 +9,18 @@ helpviewer_keywords:
 - text templates, custom host walkthrough
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1cc1681d7c761aca123217cbf28cc33b0dbb584c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3e24c46e576ab6125c3152989c568a704a33b2d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361049"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924143"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
 
@@ -37,7 +37,7 @@ ms.locfileid: "97361049"
 
 - 測試自訂主應用程式。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 若要完成這個逐步解說，您必須具有下列各項：
 
@@ -819,10 +819,10 @@ ms.locfileid: "97361049"
     This is a test
     ```
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱 [逐步解說：將主機連接至產生的](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)指示詞處理器。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

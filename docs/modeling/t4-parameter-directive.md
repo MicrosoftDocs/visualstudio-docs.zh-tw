@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: df739f10764f20b415ac74ee4b4e529433c7dc96
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: fe68d31d214ae4be8fca35f1e90e63690f3ad581
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924614"
 ---
 # <a name="t4-parameter-directive"></a>T4 參數指示詞
 

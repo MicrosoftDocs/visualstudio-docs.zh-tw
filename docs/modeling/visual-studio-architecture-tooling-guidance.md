@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1d05f9a904df076c437d9e2e5efb9e829cab758
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 261d4d1ce64fd566a85c7fbea5556d8e374a212f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924249"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio 架構工具指南
 

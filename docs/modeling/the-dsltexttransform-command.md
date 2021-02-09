@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, commands
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f87f735f5ad6864082046327bc852d5d43fdb6
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f51d1a5cbefc3c2cf60559075a9c9a299664ed07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924506"
 ---
 # <a name="the-dsltexttransform-command"></a>DslTextTransform 命令
 DslTextTransform 是呼叫 TextTransform.exe 的腳本，並使用一般選項來執行它。 您可以使用 DslTextTransformation 將專案的夜間組建自動化 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 。 如需詳細資訊，請參閱 [使用 TextTransform 公用程式產生](../modeling/generating-files-with-the-texttransform-utility.md)檔案。

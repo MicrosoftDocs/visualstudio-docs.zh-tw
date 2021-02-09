@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, building
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4e878221f3b6989a87fa3c9e36be1018d34d4af
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 3be11b730f3cc809a6d1a8ead6724a69be5f136d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923431"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>如何：建立 SharePoint 方案
 
@@ -35,6 +35,6 @@ ms.locfileid: "94850685"
 
 3. 在功能表列上，選擇 [**組建**  >  **組建方案**]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)

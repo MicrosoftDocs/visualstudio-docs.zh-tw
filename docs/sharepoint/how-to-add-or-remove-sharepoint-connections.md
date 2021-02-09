@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b898dd0f9327c7589d0dac3436aec0299009221d
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 57ff132274ba7f720a845078b0424fe235d9c31e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923450"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>如何：加入或移除 SharePoint 連接
   伺服器總管可讓您流覽 SharePoint 網站以及資料連線。 不過，您必須先將 SharePoint 網站的內容新增至 **sharepoint [連接** ] 節點，才能流覽 sharepoint 網站的內容。
@@ -45,5 +45,5 @@ ms.locfileid: "94850711"
     > [!NOTE]
     > 此步驟不會刪除基礎網站;它只會刪除 **伺服器總管** 的連接。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [使用伺服器總管流覽 SharePoint 連接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

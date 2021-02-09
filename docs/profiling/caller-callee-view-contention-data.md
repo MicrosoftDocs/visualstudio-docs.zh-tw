@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab622ffda91e6ea9020fb8caa6af2fb460128f17
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 7f783a543bb0139213bb75d7af2d7bb1e516ca65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923854"
 ---
 # <a name="callercallee-view----contention-data"></a>呼叫端/被呼叫端檢視 - 爭用資料
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的爭用資訊。 [呼叫端/被呼叫端] 檢視包含三個方格。
@@ -50,7 +50,7 @@ ms.locfileid: "98204796"
 |**根函式名稱**|目前函數的名稱。 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|
 |**來源檔案**|含有這個函式定義的原始程式檔。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)
 - [呼叫端/被呼叫者視圖](../profiling/caller-callee-view.md)
 - [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)

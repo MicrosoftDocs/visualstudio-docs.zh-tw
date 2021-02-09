@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d912e98d01448a378acbed79e2278f70f62436e7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: da5817711c7131868c4bad22bbe93447119d19d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362687"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924523"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 特定領域語言 (DSL) 是由其 DSL 定義檔所定義，以及您可能會撰寫的任何自訂程式碼。 DSL 解決方案中的大部分程式碼都是從這個檔案產生的。
@@ -134,7 +134,7 @@ ms.locfileid: "97362687"
 
  您可以在圖表上輸入或修改 [ `Multiplicity` **屬性** ] 視窗中的屬性，以設定角色的多重性。 下表描述這個屬性的設定。
 
-|多重性類型|說明|
+|多重性類型|Description|
 |-|-|
 |0 ... * (零到多個) |網域類別的每個實例都可以有多個關聯性實例或沒有關聯性的實例。|
 |0 ..1 (零到一個) |網域類別的每個實例都不能有一個以上的關聯性實例，或是沒有關聯性的實例。|
@@ -150,6 +150,6 @@ ms.locfileid: "97362687"
 
  衍生的關聯性專門于其基底關聯性。 其連結的網域類別應該衍生自，或與基底關聯性所連結的類別相同。 在模型中建立衍生關聯性的連結時，它是衍生的和基底關聯性的實例。 在程式碼中，您可以使用基底或衍生類別所產生的屬性，導覽至連結的相對結尾。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

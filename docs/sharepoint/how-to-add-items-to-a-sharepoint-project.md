@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, adding items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4471f6a593e9349f32e4837da15df2e3e952d227
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 4a32d38b20b93cf215cb53c2c2d2b8767418de24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923494"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>如何：將專案加入至 SharePoint 專案
   SharePoint 方案包含一或多個專案，其中每個專案都包含多個 SharePoint 專案專案。 開啟或建立 SharePoint 方案之後，您可以將新的或現有的專案加入至這些專案。 例如，新的工作流程專案會隨附名為 default.aspx 的預設表單，但您可以使用新的或不同的表單來取代該表單，或加入另一個 ASPX 表單。
@@ -48,6 +48,6 @@ ms.locfileid: "94850724"
 
 4. 流覽至包含您要新增之專案的資料夾，選擇該專案，然後選擇 [ **加入** ] 按鈕。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [SharePoint 專案和專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

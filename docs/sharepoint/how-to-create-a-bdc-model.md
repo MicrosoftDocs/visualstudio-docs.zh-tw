@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8f95533a5ad3955ee00829194bc4da1498baace0
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 77ffd8b6cd913b79249862a875b6267848a131af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850672"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923363"
 ---
 # <a name="how-to-create-a-bdc-model"></a>如何：建立 BDC 模型
   您可以使用該專案類型的範本，然後將模型加入至任何 SharePoint 專案，來建立 (BDC) 模型的商務資料連線。 如需詳細資訊，請參閱 [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。 如需如何設計模型的詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -59,7 +59,7 @@ ms.locfileid: "94850672"
 
      **商務資料連線模型** 專案會加入至專案。 依預設，此模型會顯示在 BDC 設計工具中。 如需詳細資訊，請參閱 [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [如何：將現有的 BDC 模型檔案新增至 SharePoint 專案](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [如何：使用資源檔來指定當地語系化的名稱、屬性和許可權](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)

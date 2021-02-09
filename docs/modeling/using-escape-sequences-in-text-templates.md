@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, escape sequences
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b007a9b5ccf41a27cda7d9833064eb60394c4dc
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 126fe3f4e42c9c6cf0b75bf740e1e7e2c4b269ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361322"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924338"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>在文字模板中使用 escape 序列
 
@@ -38,6 +38,6 @@ ms.locfileid: "97361322"
 
 - 如果 escape (\\) 字元會出現在其他任何順序中，而 (不是以 c # 中的任何順序（僅限 c #）進行) ，則會直接輸出該字元。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：使用逸出序列從範本產生範本](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0523f9a21dbdb655a02fb6263a6eb644458ab6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a72cb56209176e968f9198808f25c20edee96d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923832"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003：許多核心樣本
 

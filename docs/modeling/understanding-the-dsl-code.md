@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, generated code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cd739a7780a2a2c858efc14aa72205e9be161900
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 330a2a8f4173ddb22303064ee7f97ee025d05758
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924484"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 
@@ -346,7 +346,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  這個檔案控制如何將 DSL 封裝成 Visual Studio 整合擴充功能 (VSIX)。 如需詳細資訊，請參閱[部署特定領域語言方案](msi-and-vsix-deployment-of-a-dsl.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
 - [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)
