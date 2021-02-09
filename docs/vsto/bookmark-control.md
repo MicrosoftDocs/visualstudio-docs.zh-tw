@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Bookmark control
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 53f68bfd9abd26d9dfcb9e253c412a1ddf3c0e28
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1da30943eff228aad3c5413c5d8faea337634e9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905267"
 ---
 # <a name="bookmark-control"></a>書籤控制項
   <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項是具有唯一名稱、可公開事件及繫結至資料的書籤。 書籤可以做為預留位置，以標記 Microsoft Office Word 文件中的項目或位置。 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項是 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件和 <xref:Microsoft.Office.Interop.Word.Range> 物件的組合。
@@ -48,7 +48,7 @@ ms.locfileid: "96848361"
 
  <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> 控制項也有 <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> 屬性。 這個屬性與 <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> 控制項屬性（property）或物件的屬性（property）上可用的屬性（property）不同 <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> 。
 
-|Text 屬性|描述|
+|Text 屬性|Description|
 |-------------------|-----------------|
 |<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|使用這個屬性可顯示書籤內的文字，並將書籤保留在文件上。 指派文字給書籤會擴充書籤範圍，但不會刪除書籤。<br /><br /> 例如， `Bookmark1.Text = "Hello world"` 會將文字插入書籤，並保留完整的書籤。|
 |<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|使用這個屬性可顯示書籤位置上的文字，並自動刪除書籤。 例如， `Bookmark1.Range.Text = "Hello world"` 會將文字插入書籤，並刪除書籤。|

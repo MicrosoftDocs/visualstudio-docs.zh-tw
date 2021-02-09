@@ -7,20 +7,20 @@ ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d939fb537ac6aed75d9b0f7bda2970a85f9175ad
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: dc2e377c0313fffda88bf14c0c7304ff084f3275
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904439"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 產生變異
 在非呈現目標的紋理上啟用 MIP 對應。
 
-## <a name="interpretation"></a>解譯
+## <a name="interpretation"></a>解讀
 MIP 對應主要用來透過預先計算較小版本的紋理，來去除處於縮製的紋理中的鋸齒化成品。 雖然這些額外紋理會耗用 GPU 記憶體 (約高於原始紋理的 33%)，但是也更具效率，因為其介面區大部分會放入 GPU 紋理快取中，使其內容會達到較高的使用率。
 
 針對 3-D 場景，有可儲存其他紋理的記憶體時，建議使用 MIP 對應，因為它們可增加呈現效能和影像品質。

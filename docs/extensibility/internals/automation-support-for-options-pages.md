@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e15b1f8bdd27e013e1ef2060d9867a81e8ddde3
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 532568dc0e4d181dfe3de56151096565bf9ff771
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190027"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905970"
 ---
 # <a name="automation-support-for-options-pages"></a>選項頁的自動化支援
 Vspackage 可以提供自訂 **選項** 對話方塊至 [ **工具** ] 功能表 (的 [ **工具選項** ] 頁面) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，並可讓這些對話方塊提供給 automation 模型使用。

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 432fd50d30347972d7b1fc8222a430fc90a9e590
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: b5c9d0449fca38371e07ddaca6cef8758f53a2aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149959"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904920"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在程式碼編輯器的資料提示中查看資料值
 

@@ -40,15 +40,15 @@ helpviewer_keywords:
 ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e66654c8ceefa2cb7983c29f441cbb0f9cf97aff
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: c429b8e6dbf6931ebf68717b6d43fcf746cf13ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96043968"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905554"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>索引標籤、所有語言、文字編輯器、選項
 
@@ -61,7 +61,7 @@ ms.locfileid: "96043968"
 
 ## <a name="indenting"></a>縮排
 
-None
+無
 
 選取時，新行不會縮排。 插入點會放在新行的第一欄中。
 
@@ -75,7 +75,7 @@ None
 
 例如，左大括弧 ( { ) 和右大括弧 ( } ) 之間的行，可能會自動從對齊的大括弧位置縮排一個額外的定位停駐點。
 
-## <a name="tabs"></a>索引標籤
+## <a name="tabs"></a>定位點
 
 定位點大小
 

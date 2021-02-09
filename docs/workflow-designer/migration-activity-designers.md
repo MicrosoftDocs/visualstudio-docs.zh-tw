@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed5640495c7de8550db63d2fa48d3fab1e67de9a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d808603dde5853aa7d7f0edc6052d7e34cb9c73a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435608"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905215"
 ---
 # <a name="migration-activity-designers"></a>移轉活動設計工具
 

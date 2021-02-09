@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: acf181d4-ef42-4aa5-86f9-95fd5467ea31
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a33fafae142ef0628130d48a9a84d10b408924c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 426cb86f14fcce8d41ded575c3cc621ccf38a402
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733068"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904038"
 ---
 # <a name="idebugcoreserver2getportsupplier"></a>IDebugCoreServer2::GetPortSupplier
 抓取特定的埠供應商。
@@ -28,16 +28,16 @@ ms.locfileid: "80733068"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetPortSupplier( 
-   REFGUID               guidPortSupplier,
-   IDebugPortSupplier2** ppPortSupplier
+HRESULT GetPortSupplier( 
+   REFGUID               guidPortSupplier,
+   IDebugPortSupplier2** ppPortSupplier
 );
 ```
 
 ```csharp
-int GetPortSupplier( 
-   ref Guid                guidPortSupplier,
-   out IDebugPortSupplier2 ppPortSupplier
+int GetPortSupplier( 
+   ref Guid                guidPortSupplier,
+   out IDebugPortSupplier2 ppPortSupplier
 );
 ```
 

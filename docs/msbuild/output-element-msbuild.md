@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 34bc7cd1-efd3-4b57-b691-4584eeb6a0e9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f48f5166e102273651511ceb5a925b5e49e66878
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d69f1e4960ad2f9e11b8ac0248033e5ff425262d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905310"
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 
@@ -62,7 +62,7 @@ ms.locfileid: "93048926"
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [Task](../msbuild/task-element-msbuild.md) | 建立並執行 MSBuild 工作的實例。 |
 
@@ -87,7 +87,7 @@ ms.locfileid: "93048926"
 </Target>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

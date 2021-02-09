@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6323b4330279848bc0453bdc7413904e2582d13a
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: c053b5f7fe2962e683621ad834cac0815eee7d3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863967"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905736"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 資訊清單設計工具
 修改 VSIX 套件資訊清單檔，此檔案會設定 Visual Studio 擴充功能的安裝行為。
@@ -70,7 +70,7 @@ ms.locfileid: "97863967"
 
   **版本** 資訊指定包含版本資訊 (*.txt*、 *.rtf*) 的檔案。 也會取得顯示版本資訊的網站 URL。
 
-  **消費者入門指南** 指定 (*.txt*， *.rtf*) 的檔案，其中包含如何在 VSIX 封裝中使用擴充功能或內容的相關資訊。 當擴充功能安裝完成時，即會顯示此指南。 也會取得顯示指南之網站的 URL。
+  **開始使用指南** 指定 (*.txt*， *.rtf*) 的檔案，其中包含如何在 VSIX 封裝中使用擴充功能或內容的相關資訊。 當擴充功能安裝完成時，即會顯示此指南。 也會取得顯示指南之網站的 URL。
 
   **詳細資訊 URL** 指定網站的 URL，其中包含產品的其他相關資訊。
 
@@ -130,6 +130,6 @@ ms.locfileid: "97863967"
 
   識別碼必須符合相依性 `ID` 套件中繼資料的屬性。 來源可以是目前方案中的專案、目前安裝的副檔名或檔案。 [ **如何解決** 相依性] 設定可以是嵌套封裝的相對路徑，或相依性下載位置的 URL。 相依性套件的識別碼、版本及解析，會對應至 `Id` 相關聯專案的、 `Version` 和 `Location` 屬性 `Dependency` 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSIX 延伸架構2.0 參考](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [VSIX 封裝的剖析](../extensibility/anatomy-of-a-vsix-package.md)

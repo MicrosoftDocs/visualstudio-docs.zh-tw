@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e97b04294f0545c378210d39f343f3b009b6d15
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 8ff54e24408577ba8bfbf553a5c641eab2d15814
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906235"
 ---
 # <a name="add-project-and-project-item-templates"></a>新增專案與專案專案範本
 當您建立自己的專案類型時，您必須使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (IDE) 對話方塊的標準整合式開發環境，以提供新增專案和專案專案的支援。 下列主題討論新增專案和專案專案的不同技術。

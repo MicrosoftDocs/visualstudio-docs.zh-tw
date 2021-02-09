@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f95f312f-ff92-41eb-9469-ad99e236a307
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f01f9e6a82d89ca99455f160bda1e9b7e24345
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b7b186fa1d7a5ecb8297045d4b0bbb111d136d1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905291"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 元素 (MSBuild)
 
@@ -55,7 +55,7 @@ ms.locfileid: "93048848"
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 
@@ -79,7 +79,7 @@ ms.locfileid: "93048848"
 </ProjectExtensions>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - application resources [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4707a3e33279ead458566bc01ed2eed8c67355cf
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: b970e9e502542da0452c1ed4f1ebb4585f00559b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903953"
 ---
 # <a name="manage-application-resources-net"></a>管理應用程式資源 (.NET)
 
@@ -41,7 +41,7 @@ ms.locfileid: "95596738"
 
 - 在 **方案總管** 中的專案節點上按一下滑鼠右鍵，然後選取 [**屬性**]
 - 在 **Ctrl**+**Q** 搜尋方塊中，輸入 **專案屬性**
-- 選擇 **Alt** + **方案總管** 中的 Alt **Enter**
+- 選擇 + **方案總管** 中的 Alt **Enter**
 
 選取 [ **資源** ] 索引標籤。如果您的專案尚未包含 *.resx* 檔案，您可以新增和刪除不同種類的資源，以及修改現有的資源。
 

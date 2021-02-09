@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 96e692f6-b581-46ca-8cc9-441a1861e371
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16da018e49e6cb456074ebabac52a8768d06c1c6
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: b6444811750a59de5488b8ca3614f9926d472746
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436701"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905480"
 ---
 # <a name="formatversion-task"></a>FormatVersion 工作
 
@@ -36,7 +36,7 @@ ms.locfileid: "92436701"
 
  下表說明 `FormatVersion` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`FormatType`|選擇性的 `String` 參數。<br /><br /> 指定格式類型。<br /><br /> -   "Version" = 版本。<br />-   "Path" = 將 "." 取代為 "_"；|
 |`OutputVersion`|選擇性的 `String` 輸出參數。<br /><br /> 指定包含修訂編號的輸出版本。|

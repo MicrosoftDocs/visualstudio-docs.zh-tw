@@ -6,15 +6,15 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22c49085a430c7afc002fe4e11dcf1184348efdc
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: c6f4a25e3cda10e74c344cb7eef879b78f60a1de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903908"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>在 Visual Studio 中產生方法
 
@@ -30,7 +30,7 @@ ms.locfileid: "96617210"
 
 **原因：** 您可以在使用方法和參數之前先宣告方法和參數，不過，此功能將可自動產生宣告。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將游標放在有紅色曲線的行上。 紅色波浪線表示尚不存在的方法。
 

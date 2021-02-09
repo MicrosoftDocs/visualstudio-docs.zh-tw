@@ -24,15 +24,15 @@ helpviewer_keywords:
 - XML documentation comments [JavaScript]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b4f86d904d98235ee98c54045789751c829b28c
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 5a4120a6038949f172b96bec599f2329b69abcac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903976"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -137,7 +137,7 @@ function Foo(param1) {
 根據預設，Salsa 語言服務會嘗試偵測使用中的 JavaScript 程式庫為何，並自動下載及參考對應的 *.d.ts* 檔案，以描述程式庫來提供更豐富的 IntelliSense。 這些檔案會下載到位於 *%LOCALAPPDATA%\Microsoft\TypeScript* 的使用者資料夾下的快取。
 
 > [!NOTE]
-> 如果使用 *tsconfig.json* 組態檔，這項功能預設會 [停用]****，但可設定為 [啟用]，詳細資訊如下所述。
+> 如果使用 *tsconfig.json* 組態檔，這項功能預設會 [停用]，但可設定為 [啟用]，詳細資訊如下所述。
 
 自動偵測目前處理從 npm (藉由讀取 *package.json* 檔案)、Bower (藉由讀取 *bower.json* 檔案)，以及比對前 400 多個熱門 JavaScript 程式庫清單的專案中的鬆散式檔案下載的相依性。 例如，如果您的專案中有 *jquery-1.10.min.js*，則會擷取並載入檔案 *jquery.d.ts* 以提供更好的編輯體驗。 此 *.d.ts* 檔案對您的專案沒有任何影響。
 

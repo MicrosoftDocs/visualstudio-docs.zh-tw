@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c40361a9739bf468de2038df4325fa1ac98337c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1d52989d5687e922e0cb0ab306efc5321ffecef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904755"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 描述堆疊框架。
@@ -106,7 +106,7 @@ public struct FRAMEINFO {
 ## <a name="remarks"></a>備註
 此結構會傳遞至要填入的 [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) 方法。 此結構也會包含在 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 介面中所包含的清單中，而此清單會從 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 方法的呼叫傳回。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0aeb601449ffcc47b7f7786825ee222b8b6ac5b
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 3c484c08b3335d51283f1f6e1a7b29757a2271aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190079"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906062"
 ---
 # <a name="author-vsct-files"></a>撰寫 .vsct 檔案
 本檔說明如何撰寫 *.vsct* 檔案，以將功能表項目、工具列和其他使用者介面 (UI) 專案加入至 Visual Studio 整合式開發環境 (IDE) 。 當您將 UI 專案加入至沒有 *.vsct* 檔案的 Visual Studio 封裝 (VSPackage) 時，請使用這些步驟。
@@ -62,7 +62,7 @@ ms.locfileid: "96190079"
    如需有關如何尋找 Visual Studio 命令之 Guid 和識別碼的詳細資訊，請參閱 [Visual Studio 命令的 guid 和識別碼](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)。 若要從其他封裝呼叫命令，請使用這些封裝的 *.vsct* 檔案中所定義的 GUID 和命令識別碼。
 
 ### <a name="declare-ui-elements"></a>宣告 UI 元素
- 在 .vsct 檔案的區段中宣告所有新的 UI 元素 `Symbols` 。 *.vsct*
+ 在 .vsct 檔案的區段中宣告所有新的 UI 元素 `Symbols` 。 
 
 #### <a name="to-declare-ui-elements"></a>宣告 UI 元素
 

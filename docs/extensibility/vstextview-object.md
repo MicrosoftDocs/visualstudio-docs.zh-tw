@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d7309e05c3763794deb344a978dd188dbfddd79
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 8c80f224170d085347ff962bc88301aa0ab3c9f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905627"
 ---
 # <a name="vstextview-object"></a>VSTextView 物件
 
@@ -40,7 +40,7 @@ ms.locfileid: "97863811"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|與文字圖層互動。|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|從不同的執行緒在視圖上執行作業。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [編輯圖形](https://www.microsoft.com/download/details.aspx?id=55984)
 - [VSTextBuffer 物件](../extensibility/vstextbuffer-object.md)

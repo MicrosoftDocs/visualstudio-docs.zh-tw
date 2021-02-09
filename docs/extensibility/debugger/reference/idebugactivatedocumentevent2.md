@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f601027ce9e71dff6687bcd6aa1b08f13f5ce0cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ec3168a7e104e20bbb53607b4bd7a6acd8e79e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904652"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 Debug engine (DE) 會使用此介面來要求載入檔。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugActivateDocumentEvent2 : IUnknown
@@ -45,7 +45,7 @@ IDebugActivateDocumentEvent2 : IUnknown
 ## <a name="remarks"></a>備註
  使用這個介面的一般案例是，如果在 HTML 網頁的腳本程式碼中發生剖析錯誤，腳本會將這個介面傳送給 SDM，以便顯示具有剖析錯誤的檔。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

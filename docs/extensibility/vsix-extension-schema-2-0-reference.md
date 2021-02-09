@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2edd0349555380f6d98d24f7a40c22e48797d12
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 3fdbd9220ef82102dd66f10ab7f15570118bae9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904549"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸架構2.0 參考
 VSIX 部署資訊清單檔案會描述 VSIX 封裝的內容。 檔案格式是由架構所控管。 此架構的版本2.0 支援新增自訂類型和屬性。  資訊清單的架構是可擴充的。 資訊清單載入器會忽略其不了解的 XML 元素和屬性。
@@ -221,6 +221,6 @@ VSIX 部署資訊清單檔案會描述 VSIX 封裝的內容。 檔案格式是�
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [寄送 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 7261e01d-3c72-46ce-9fb3-5f33b2ddb901
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bee5a89be0fc1503595a36cfc48a692711d40a
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 6cde6549551156f3655f313c23dc66659d2830cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905056"
 ---
 # <a name="togglehud"></a>ToggleHUD
 切換 [圖形診斷] *抬頭顯示器* (上層顯示) 重迭顯示或關閉。

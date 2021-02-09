@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e42452d8ee59142c4f906d928378d1fb44bf67
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: dbf938e61cc1567beb682847821595f5ca6cc026
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905468"
 ---
 # <a name="msbuild"></a>MSBuild
 
 Microsoft Build Engine 是用來建立應用程式的平臺。 這個引擎也稱為 MSBuild，提供了專案檔的 XML 結構描述，以控制組建平台處理和建置軟體的方式。 Visual Studio 使用 MSBuild，但 MSBuild 並不依賴 Visual Studio。 藉由叫用專案或方案檔上的 *msbuild.exe* ，您可以在未安裝 Visual Studio 的環境中協調和建立產品。
 
- Visual Studio 會使用 MSBuild 載入及建置 Managed 專案。 Visual Studio 中的專案檔 ( *.csproj* 、 *.vbproj* 、 *.vcxproj* 等等) 包含 MSBuild XML 程式碼，該程式碼會在您使用 IDE 建置專案時執行。 Visual Studio 專案會匯入所有必要的設定，並建置執行一般開發工作的流程，但是您可以在 Visual Studio 內或使用 XML 編輯器擴充或修改它們。
+ Visual Studio 會使用 MSBuild 載入及建置 Managed 專案。 Visual Studio 中的專案檔 (*.csproj*、*.vbproj*、*.vcxproj* 等等) 包含 MSBuild XML 程式碼，該程式碼會在您使用 IDE 建置專案時執行。 Visual Studio 專案會匯入所有必要的設定，並建置執行一般開發工作的流程，但是您可以在 Visual Studio 內或使用 XML 編輯器擴充或修改它們。
 
  如需 MSBuild for c + + 的相關資訊，請參閱 [msbuild (c + +) ](/cpp/build/msbuild-visual-cpp)。
 
@@ -55,7 +55,7 @@ Microsoft Build Engine 是用來建立應用程式的平臺。 這個引擎也�
 
 ## <a name="use-msbuild-at-a-command-prompt"></a>在命令提示字元中使用 MSBuild
 
- 若要在命令提示字元中執行 MSBuild，請將專案檔傳遞至 *MSBuild.exe* ，以及適當的命令列選項。 命令列選項能讓您設定屬性、執行特定目標，以及設定可控制建置流程的其他選項。 例如，您可以使用下列命令列語法，在 `Configuration` 屬性設為 `Debug` 的情況下建置 *MyProj.proj* 檔案。
+ 若要在命令提示字元中執行 MSBuild，請將專案檔傳遞至 *MSBuild.exe*，以及適當的命令列選項。 命令列選項能讓您設定屬性、執行特定目標，以及設定可控制建置流程的其他選項。 例如，您可以使用下列命令列語法，在 `Configuration` 屬性設為 `Debug` 的情況下建置 *MyProj.proj* 檔案。
 
 ```cmd
 MSBuild.exe MyProj.proj -property:Configuration=Debug
@@ -170,7 +170,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 - 您可以將 .NET Framework 以外的 framework 作為目標，例如 Silverlight。
 
-- 您可以將「Framework 設定檔」  當做目標，這是預先定義的目標 Framework 子集。
+- 您可以將「Framework 設定檔」當做目標，這是預先定義的目標 Framework 子集。
 
 - 如果發行 .NET Framework 目前版本的 service pack，您可以將其設為目標。
 
@@ -178,7 +178,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 如需詳細資訊，請參閱[多目標](../msbuild/msbuild-multitargeting-overview.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 | 標題 | 描述 |
 | - | - |

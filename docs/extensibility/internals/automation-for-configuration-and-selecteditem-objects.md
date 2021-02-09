@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bc4b23662efe688146a7266d1b061d2d9611a45
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 4a1316115ca3ebbd0f78249d1a73310fc06de688
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190066"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906074"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Configuration 和 SelectedItem 物件的自動化
 

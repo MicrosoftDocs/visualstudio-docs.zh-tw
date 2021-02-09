@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3510726400623c5ddf3e7a4d58a4903763b91245
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dcdb555e4355d6f22c8218f98899c01b3b3e2e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904766"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 指定要針對堆疊框架物件取得的資訊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
-enum enum_FRAMEINFO_FLAGS {
+enum enum_FRAMEINFO_FLAGS {
     FIF_FUNCNAME              = 0x00000001,
     FIF_RETURNTYPE            = 0x00000002,
     FIF_ARGS                  = 0x00000004,
@@ -65,7 +65,7 @@ typedef DWORD FRAMEINFO_FLAGS;
 ```
 
 ```csharp
-public enum enum_FRAMEINFO_FLAGS {
+public enum enum_FRAMEINFO_FLAGS {
     FIF_FUNCNAME              = 0x00000001,
     FIF_RETURNTYPE            = 0x00000002,
     FIF_ARGS                  = 0x00000004,
@@ -199,7 +199,7 @@ public enum enum_FRAMEINFO_FLAGS {
 
 這些旗標也可用來指出當傳回結構時，所使用的 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 結構欄位和有效的欄位。 這些值可能會與位結合 `OR` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

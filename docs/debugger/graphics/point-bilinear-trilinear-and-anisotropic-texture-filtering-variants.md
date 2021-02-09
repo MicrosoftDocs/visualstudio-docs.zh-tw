@@ -7,20 +7,20 @@ ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c38869b4c8daa4cb4433f9f6a64afcc7398c9a9c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 7de150064ee493795bdeed579715dbf1370573a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905060"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>點、雙線性、三線性和各向異性紋理篩選變異
 覆寫適當的紋理取樣器上的篩選模式。
 
-## <a name="interpretation"></a>解譯
+## <a name="interpretation"></a>解讀
  不同的紋理取樣方法具有不同的效能成本和影像品質。 若要增加成本 (以及增加視覺品質)，篩選模式為：
 
 1. 點篩選 (花費最少，視覺品質最差)

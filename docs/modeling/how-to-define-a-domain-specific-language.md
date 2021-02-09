@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40dcba1cb83e695f2b02468bdd83a5faa8c25a38
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 440d2f42fb7967ebbcb97433c3faa55e2d91ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903936"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要 (DSL) 定義特定領域語言，您可以從範本建立 Visual Studio 解決方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
@@ -622,7 +622,7 @@ ms.locfileid: "97363311"
 | 變更組件名稱之後未出現 DSL 的工具箱。 | 檢查及更新 **DslPackage\GeneratedCode\Package.tt** 如需詳細資訊，請參閱 [如何：變更 Domain-Specific 語言的命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。 |
 | DSL 的工具箱未出現，但是我未變更組件名稱。<br /><br /> 或者，出現一個訊息方塊，回報載入擴充功能失敗。 | 重設實驗執行個體，然後重建方案。<br /><br /> 1. 在 Windows [開始] 功能表的 [ **所有程式**] 底下，依序展開 [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] [] 和 [ **工具**]，然後按一下 **[重設 Microsoft Visual Studio 實驗實例**]。<br />2. 在 [ **組建** ] 功能表上，按一下 [ **重建方案**]。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [開始使用網域指定的語言](../modeling/getting-started-with-domain-specific-languages.md)
 - [建立 Windows Form 架構之網域指定的語言](../modeling/creating-a-windows-forms-based-domain-specific-language.md)

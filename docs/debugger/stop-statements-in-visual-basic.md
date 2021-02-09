@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 4ad3fe5c-3dfb-4913-b2eb-a0b635751c18
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b36f00f628d9551d8e45075d790d8e5d2de294dc
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 4a17aafd508acd9272e8058ea7ca3ff585a8c0c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904937"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Visual Basic 中的 Stop 陳述式
 

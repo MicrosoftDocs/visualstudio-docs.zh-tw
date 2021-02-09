@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: de3997e9-1595-4263-a886-95530b56a319
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 05cc8820f073ea8c620e4331c180ee1ddbfc2b65
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c5e78723ee6cc0f8ed1da0d5e913be0d84eb1050
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905327"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 元素 (MSBuild)
 
@@ -58,7 +58,7 @@ ms.locfileid: "93048940"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[選擇](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子元素，以選取要執行的一個程式碼區段。 `Otherwise` 元素中可能有零個或多個 `Choose` 元素。|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 元素。 `Otherwise` 元素中可能有零個或多個 `ItemGroup` 元素。|
@@ -66,7 +66,7 @@ ms.locfileid: "93048940"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[選擇](../msbuild/choose-element-msbuild.md)|評估子元素，以選取要執行的一個程式碼區段。|
 
@@ -125,7 +125,7 @@ ms.locfileid: "93048940"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [條件式結構](../msbuild/msbuild-conditional-constructs.md)
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)

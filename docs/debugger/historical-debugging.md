@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 38166f777153206ad4b862ac473226aecdff4147
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: c4a6bf07cc7905fc48bcc82c8b38fa5b6f6e7cfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904408"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a> (c #、Visual Basic、c + +) 的歷程記錄調試
 

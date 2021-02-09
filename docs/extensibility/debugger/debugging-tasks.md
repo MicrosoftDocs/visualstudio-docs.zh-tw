@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83d351e2b995922d1a8257f7ea9fc0cdad67ab3e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f27bc3f261e66791f41034923989b2cd61e09db6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904765"
 ---
 # <a name="debug-tasks"></a>調試作業
 若要對程式進行程式設計，必須將它啟動，而且必須將 debug engine (DE) 必須附加到該程式，否則 DE 必須附加至先前啟動的程式。 附加之後，DE 必須產生特定的啟動事件。 在回應中，debug 封裝會嘗試系結 IDE 中設定的中斷點。 當程式到達系結的中斷點時，它會中止，並等候使用者輸入。

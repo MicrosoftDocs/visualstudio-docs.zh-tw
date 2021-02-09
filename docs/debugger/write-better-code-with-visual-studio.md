@@ -10,15 +10,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311387"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904943"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>協助您撰寫更好的程式碼的偵錯工具技術和工具
 
@@ -44,20 +44,20 @@ ms.locfileid: "89311387"
 
 1. 您必須安裝 Visual Studio，以及安裝 **.Net Core 跨平臺開發** 或 **.net 桌面開發** 工作負載（視您想要建立的應用程式類型而定）。
 
-    如果您尚未安裝 Visual Studio，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)   頁面，免費進行安裝。
+    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面免費進行安裝。
 
     如果您需要安裝工作負載，但已有 Visual Studio，請按一下 [**工具**  >  **取得工具及功能**]。 Visual Studio 安裝程式即會啟動。 選擇 **.Net Core 跨平臺開發** 或 **.net 桌面開發** 工作負載，然後選擇 [ **修改**]。
 
 1. 開啟 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    在 [開始] 視窗中，選擇 [ **建立新專案**]。 在搜尋方塊中輸入 **主控台** ，然後選擇 **主控台應用程式 ( .net Core) ** 或 **主控台應用程式 ( .NET Framework) **。 選擇 [下一步]。 輸入類似 **Console_Parse_JSON** 的專案名稱，然後按一下 [ **建立**]。
+    在 [開始] 視窗中，選擇 [ **建立新專案**]。 在搜尋方塊中輸入 **主控台** ，然後選擇 **主控台應用程式 ( .net Core)** 或 **主控台應用程式 ( .NET Framework)**。 選擇 [下一步]。 輸入類似 **Console_Parse_JSON** 的專案名稱，然後按一下 [ **建立**]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇 [ **Visual c #**] 底下的 [ **主控台應用程式**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .Net Core]) ** 或 [ **主控台應用程式] ( .NET Framework) **。 輸入類似 **Console_Parse_JSON** 的名稱，然後按一下 **[確定]**。
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇 [ **Visual c #**] 底下的 [ **主控台應用程式**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .Net Core])** 或 [ **主控台應用程式] ( .NET Framework)**。 輸入類似 **Console_Parse_JSON** 的名稱，然後按一下 **[確定]**。
     ::: moniker-end
 
-    如果您沒有看到**主控台應用程式 ( .net Core) **或**主控台應用程式 ( .NET Framework) **專案範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 **.Net Core 跨平臺開發** 或 **.net 桌面開發** 工作負載，然後選擇 [ **修改**]。
+    如果您沒有看到 **主控台應用程式 ( .net Core)** 或 **主控台應用程式 ( .NET Framework)** 專案範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 **.Net Core 跨平臺開發** 或 **.net 桌面開發** 工作負載，然後選擇 [ **修改**]。
 
     Visual Studio 隨即建立主控台專案，並出現在右窗格的 [方案總管] 中。
 
@@ -253,7 +253,7 @@ item.totalpoints += users[i].points;
 
 當您修正所有的紅色波浪線並解決--或至少調查--所有綠色波浪線之後，您就可以開始偵錯工具並執行應用程式。
 
-按**F5** (**Debug > 開始調試**) **或啟動調試按鈕**![開始](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")在調試工具列中進行調試。
+按 **F5** (**Debug > 開始調試**) **或啟動調試按鈕**![開始](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")在調試工具列中進行調試。
 
 此時，範例應用程式會擲回 `SerializationException` 例外狀況 () 的執行階段錯誤。 也就是，應用程式會在嘗試序列化的資料上進行淺淺化。 由於您已在偵錯工具中啟動應用程式 (偵錯工具已附加) ，偵錯工具的例外狀況協助程式會帶您前往擲回例外狀況的程式碼，並提供實用的錯誤訊息給您。
 
@@ -273,7 +273,7 @@ item.totalpoints += users[i].points;
 users = ser.ReadObject(ms) as User[];
 ```
 
-取代為此程式碼：
+使用此程式碼取代：
 
 ```csharp
 try
@@ -312,11 +312,11 @@ catch (SerializationException)
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>使用 assert 來表達您的程式碼意圖
 
-按一下偵錯工具列中的 [**重新**啟動![重新開機應用程式](../debugger/media/dbg-tour-restart.png ">restartapp")] 按鈕， (**Ctrl**  +  **Shift**  +  **F5**) 。 這會以較少的步驟重新開機應用程式。 您會在主控台視窗中看到下列輸出。
+按一下偵錯工具列中的 [**重新** 啟動 ![重新開機應用程式](../debugger/media/dbg-tour-restart.png ">restartapp")] 按鈕， (**Ctrl**  +  **Shift**  +  **F5**) 。 這會以較少的步驟重新開機應用程式。 您會在主控台視窗中看到下列輸出。
 
 ![輸出中的 Null 值](../debugger/media/write-better-code-using-assert-null-output.png)
 
-您可以在此輸出中看到不太適合的內容。 第三筆記錄的**名稱**和**lastname**是空白的！
+您可以在此輸出中看到不太適合的內容。 第三筆記錄的 **名稱** 和 **lastname** 是空白的！
 
 這是一個很好的時機，可以討論有説明的程式碼撰寫實務，通常是使用您函式 `assert` 中的語句。 藉由新增下列程式碼，您可以包含執行時間檢查，以確定 `firstname` 和 `lastname` 不是 `null` 。 取代方法中的下列程式碼 `UpdateRecords` ：
 
@@ -348,7 +348,7 @@ if (existingUser == false)
 
 藉由以這種方式指定意圖，您將會強制執行您的需求。 這是簡單且便利的方法，可讓您在開發期間用來呈現 bug。  (`assert` 語句也用來作為單元測試中的主要元素。 ) 
 
-按一下偵錯工具列中的 [**重新**啟動![重新開機應用程式](../debugger/media/dbg-tour-restart.png ">restartapp")] 按鈕， (**Ctrl**  +  **Shift**  +  **F5**) 。
+按一下偵錯工具列中的 [**重新** 啟動 ![重新開機應用程式](../debugger/media/dbg-tour-restart.png ">restartapp")] 按鈕， (**Ctrl**  +  **Shift**  +  **F5**) 。
 
 > [!NOTE]
 > `assert`程式碼只在 Debug 組建中為作用中。
@@ -370,7 +370,7 @@ if (existingUser == false)
     User user = new User();
 ```
 
-取代為此程式碼：
+使用此程式碼取代：
 
 ```csharp
 if (existingUser == false && users[i].firstname != null && users[i].lastname != null)
@@ -417,7 +417,7 @@ Debug.Assert(users[0].points > 0);
 
 另一種情況的錯誤包括效率不佳的程式碼，導致您的應用程式執行速度變慢或使用過多的記憶體。 一般來說，將效能優化是您稍後在應用程式開發中執行的一些作業。 不過，您可以提早遇到效能問題 (例如，您會看到應用程式的某些部分執行速度很慢) ，而您可能需要提早流量分析工具測試您的應用程式。 如需分析工具的詳細資訊（例如 CPU 使用量工具和記憶體分析器），請參閱程式碼 [剖析工具的第一看](../profiling/profiling-feature-tour.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在本文中，您已瞭解如何避免和修正程式碼中的許多常見錯誤，以及使用偵錯工具的時機。 接下來，請深入瞭解如何使用 Visual Studio 偵錯工具來修正 bug。
 

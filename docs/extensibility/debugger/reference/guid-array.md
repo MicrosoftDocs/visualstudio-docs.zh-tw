@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e163674b5622146ef1a270920dc7458dce2e3993
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ad4d1ba6a0aa0489b7f2c80e0ffe59cd35b2e58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904744"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
 描述可用的偵錯工具引擎之唯一識別碼陣列。
@@ -51,7 +51,7 @@ public struct GUID_ARRAY
 ## <a name="remarks"></a>備註
 [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)方法會傳回這個結構。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： Msdbg。h
 
 命名空間： VisualStudio

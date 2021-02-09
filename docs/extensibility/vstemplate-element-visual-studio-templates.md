@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 973e2ede7e97d1e7710e6571d520be3d8919b9d9
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5f15b21ccb52cf7aa7c857c0b6b523c02fd65461
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905729"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a> (Visual Studio 範本的 .Vstemplate 元素) 
 包含專案範本、專案範本或入門套件的所有中繼資料。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```csharp
 <VSTemplate Type="TemplateType" Version="x.x.x">
@@ -40,14 +40,14 @@ ms.locfileid: "94903477"
 
 ### <a name="attributes"></a>屬性
 
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |-----------| - |
 | `Type` | 將範本識別為專案範本或專案範本。 這個屬性的值可以是 `Project` 或 `Item` 。 |
 | `Version` | 指定範本的版本號碼。 和中 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 的範本具有 `Version` 的屬性值 `3.0.0` 。 |
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定將範本分類的資料，並定義該範本在 [ **新增專案** ] 或 [ **加入新專案** ] 對話方塊中顯示的方式。|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定範本的內容。|

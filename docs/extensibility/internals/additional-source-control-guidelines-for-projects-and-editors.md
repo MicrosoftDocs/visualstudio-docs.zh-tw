@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdd7e23840701981eaea46b44355c34b55b37a33
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 688c7de73c1a935ed6f7a30c6d956c7db97bdc6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190131"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906124"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>專案和編輯器的其他原始檔控制指導方針
 為了支援原始檔控制，專案和編輯器必須遵守一些指導方針。

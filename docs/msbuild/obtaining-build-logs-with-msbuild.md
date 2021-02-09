@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf13e23d69dfeba967e8e971ad2463cef4546567
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7ecfa11122b76bcfef3473ff5d06083c64157a2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048958"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905439"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>使用 MSBuild 取得組建記錄檔
 
@@ -37,7 +37,7 @@ ms.locfileid: "93048958"
 
 - 組建摘要。
 
-使用 **-verbosity** ( **-v** ) 參數，您可以控制要在輸出記錄檔中顯示的資料量。 如需疑難排解，請使用 `detailed` (`d`) 或 `diagnostic` (`diag`) 的詳細資訊層級，其中提供了最多資訊。
+使用 **-verbosity** (**-v**) 參數，您可以控制要在輸出記錄檔中顯示的資料量。 如需疑難排解，請使用 `detailed` (`d`) 或 `diagnostic` (`diag`) 的詳細資訊層級，其中提供了最多資訊。
 
 當您將 **-verbosity** 設為 `detailed` 時，建置程序可能會變慢，而當您將 **-verbosity** 設為 `diagnostic` 時，甚至會變得更慢。
 
@@ -49,7 +49,7 @@ msbuild MyProject.proj -t:go -v:diag
 
 下表顯示記錄檔的詳細資訊 (資料行值) 對記錄哪些類型的訊息 (資料列的值) 有什麼影響。
 
-| 訊息類型/詳細資訊              | Quiet | 最小 | 正常 | 詳細 | 診斷 |
+| 訊息類型/詳細資訊              | Quiet | 最小 | 正常 | 詳細 | Diagnostic |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
 | Errors                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | 警告                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
@@ -60,13 +60,13 @@ msbuild MyProject.proj -t:go -v:diag
 
 ## <a name="save-the-build-log-to-a-file"></a>將組建記錄檔儲存至檔案
 
-您可以使用 **-fileLogger** ( **fl** ) 參數，將組建資料儲存至檔案。 下列範例會將組建資料儲存至名為 *msbuild.log* 的檔案。
+您可以使用 **-fileLogger** (**fl**) 參數，將組建資料儲存至檔案。 下列範例會將組建資料儲存至名為 *msbuild.log* 的檔案。
 
 ```cmd
 msbuild MyProject.proj -t:go -fileLogger
 ```
 
- 在下列範例中，會將記錄檔命名為 *MyProjectOutput.log* ，並將記錄檔輸出的詳細資訊設為 `diagnostic`。 您可以使用 **-fileLoggerParameters** () 參數來指定這兩個設定 `flp` 。
+ 在下列範例中，會將記錄檔命名為 *MyProjectOutput.log*，並將記錄檔輸出的詳細資訊設為 `diagnostic`。 您可以使用 **-fileLoggerParameters** () 參數來指定這兩個設定 `flp` 。
 
 ```cmd
 msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic
@@ -76,7 +76,7 @@ msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diag
 
 ## <a name="save-the-log-output-to-multiple-files"></a>將記錄輸出儲存至多個檔案
 
- 下列範例會將整個記錄檔儲存至 *msbuild1.log* 、只將錯誤儲存至 *JustErrors.log* ，並且只將警告儲存至 *JustWarnings.log* 。 這個範例會針對這三個檔案的每個檔案使用檔案號碼。 檔案號碼會指定於 **-fl** 和 **-flp** 參數 (例如，`-fl1` 和 `-flp1`) 的正後方。
+ 下列範例會將整個記錄檔儲存至 *msbuild1.log*、只將錯誤儲存至 *JustErrors.log*，並且只將警告儲存至 *JustWarnings.log*。 這個範例會針對這三個檔案的每個檔案使用檔案號碼。 檔案號碼會指定於 **-fl** 和 **-flp** 參數 (例如，`-fl1` 和 `-flp1`) 的正後方。
 
  檔案2和3的 **-fileLoggerParameters** (`flp`) 參數指定要為每個檔案命名的內容，以及要在每個檔案中包含的內容。 由於未指定檔案 1 的名稱，因此會使用 *msbuild1.log* 的預設名稱。
 
@@ -88,7 +88,7 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
 ## <a name="save-a-binary-log"></a>儲存二進位記錄檔
 
-您可以使用 **-binaryLogger** ( **bl** ) 參數，將記錄檔儲存為壓縮的二進位格式。 此記錄檔包含建置程序的詳細描述，並可以由特定的記錄分析工具讀取。
+您可以使用 **-binaryLogger** (**bl**) 參數，將記錄檔儲存為壓縮的二進位格式。 此記錄檔包含建置程序的詳細描述，並可以由特定的記錄分析工具讀取。
 
 在下列範例中，會建立具有名稱 *binarylogfilename* 的二進位記錄檔。
 
@@ -104,7 +104,7 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
  在 MSBuild 命令列中，您會使用 **-logger** 參數指定自訂記錄器。 您也可以使用 **-noconsolelogger** 參數，停用預設的主控台記錄器。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [組建記錄器](../msbuild/build-loggers.md)

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44a1736890ac78e7aaf20b4a639b1794fc63b5ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc5683e39da2da190468b2cafd0d3accae9b7479
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904011"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 這個介面是用來通知 Visual Studio 有關由 debug 引擎提供之來源文件的變更。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocumentTextEvents2 : IUnknown
@@ -49,7 +49,7 @@ IDebugDocumentTextEvents2 : IUnknown
 ## <a name="remarks"></a>備註
  只有提供專屬檔的偵錯工具引擎會利用 `IDebugDocumentTextEvent2` 介面。 其中一個範例就是腳本處理的偵錯工具引擎。 在解讀腳本的過程中，可能會產生不存在於任何磁片檔案中的新原始程式碼，而且只有 DE 才知道。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

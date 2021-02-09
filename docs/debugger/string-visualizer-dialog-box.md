@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 080fd8f1-72b0-461f-8451-3c84d5dc51df
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c33459312cb0c5c4dd4be3bc043956ccb33a6e1
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 3084db99226ab268bb6ce70611628dcafcf1753b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904281"
 ---
 # <a name="string-visualizer-dialog-box"></a>[字串視覺化檢視] 對話方塊
 

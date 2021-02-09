@@ -5,17 +5,17 @@ ms.date: 05/22/2019
 ms.topic: how-to
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 135a89534b17a509d75616b0819dae112901fef3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd0013df051def28c57552c0aeb733888d55e9b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905545"
 ---
 # <a name="package-payload-changes"></a>套件承載變更
 
