@@ -10,15 +10,15 @@ ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
 ms.technology: vs-ide-compile
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99d8f93dc21925b997828adb541b7ee2f0337b6c
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: f51ae283f94703b7d7572ae51308da660784e80e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930235"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>作法：設定多個啟始專案
 

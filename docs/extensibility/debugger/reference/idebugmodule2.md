@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbbea1b52133de41dd26f437aeba31a0eff5a50a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a43c7e7ed24da7d73784e20e9e998bdfe69cbd65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726902"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929742"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 此介面代表模組，也就是程式的可執行單元，例如 DLL。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugModule2 : IUnknown
@@ -49,7 +49,7 @@ IDebugModule2 : IUnknown
 ## <a name="remarks"></a>備註
  模組資訊可以顯示在 IDE 的 [ **模組** ] 視窗中。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

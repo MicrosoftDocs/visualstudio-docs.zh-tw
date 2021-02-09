@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 74c52fcf-688c-40df-9acd-29b3b84e6216
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7bd77b63be5d7de5a6845e08b9d8d8679b2e3a70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df6d463d58ffb5caa33c2df12946f31e2d51bf73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717353"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929468"
 ---
 # <a name="ienumdebugcodecontexts2getcount"></a>IEnumDebugCodeContexts2::GetCount
 傳回列舉中的元素數目。

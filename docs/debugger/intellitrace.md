@@ -17,15 +17,15 @@ helpviewer_keywords:
 - IntelliTrace, debugging after a crash
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 518043a38f3a0f6945840a36a1f7fcade5a313d7
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 10b914ac60e19e39fb7712aa8021c5d988aada50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930300"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>適用于 Visual Studio Enterprise (c #、Visual Basic、c + +) 的 IntelliTrace
 
@@ -41,7 +41,7 @@ ms.locfileid: "98148997"
 
 ## <a name="what-do-you-want-to-do"></a>您想要做什麼事？
 
-|案例|標題|
+|狀況|標題|
 |-|-|
 |**使用 IntelliTrace 偵錯我的應用程式：**<br /><br /> - 顯示過去的事件。<br />- 顯示過去事件的呼叫資訊。<br />- 儲存 IntelliTrace 工作階段。<br />- 控制 IntelliTrace 收集的資料。|- [使用 IntelliTrace 檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)<br />- [逐步解說：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [歷程記錄調試](../debugger/historical-debugging.md)|
 |**從部署的應用程式中收集 IntelliTrace 資料**|- [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|

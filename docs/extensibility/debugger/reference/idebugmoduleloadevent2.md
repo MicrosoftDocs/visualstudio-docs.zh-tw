@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 7d26fb23-5d49-4ba7-b7c5-3aed4d7be81e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06bb96d8a02ccc9299d43f28b4fbfa3fdb39acdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dbc1cda72aa868bc5bcf68215e4c3815f520d1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726695"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929637"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 當載入或卸載模組時，debug engine 會將這個介面傳送 (DE) 至會話 debug manager (SDM) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugModuleLoadEvent2 : IUnknown
@@ -44,7 +44,7 @@ IDebugModuleLoadEvent2 : IUnknown
 ## <a name="remarks"></a>備註
  Visual Studio 使用此事件讓 **模組** 視窗保持在最新狀態。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

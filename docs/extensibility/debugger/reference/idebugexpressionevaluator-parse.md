@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e6e31b3a-63a7-4293-bcda-267eb78dffb6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d1af9d3f253a9849f54bb5a50d432b98eb4ad7b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abcc66eb8a0f1419d447dfbd0081b39583e2941e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930287"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 這個方法會將運算式字串轉換為剖析的運算式。
@@ -28,7 +28,7 @@ ms.locfileid: "80729501"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT Parse( 
+HRESULT Parse( 
    LPCOLESTR                upstrExpression,
    PARSEFLAGS               dwFlags,
    UINT                     nRadix,

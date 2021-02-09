@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: ea03e7e1-28d6-40b7-8097-bbb61d3b7caa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421d46efbef189fd6ffc86812d2bfdd28f5da5ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d52aad69397be315cf9c06b5f49a2c55d2fce28
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929520"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
 這個介面會列舉與暫止中斷點或中斷點系結事件相關聯的系結中斷點。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugBoundBreakpoints2 : IUnknown
@@ -45,7 +45,7 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|以列舉順序抓取指定的系結中斷點數目。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|以列舉順序抓取指定的系結中斷點數目。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|略過列舉序列中指定的系結中斷點數目。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset.md)|將列舉順序重設為開頭。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
@@ -54,7 +54,7 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 ## <a name="remarks"></a>備註
  Visual Studio 使用由此介面表示的系結中斷點來更新 IDE 中中斷點的顯示。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

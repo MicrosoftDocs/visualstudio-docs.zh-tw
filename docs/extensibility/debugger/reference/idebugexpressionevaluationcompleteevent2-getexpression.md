@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: faf6b2dd-2afd-4852-b21c-7e8d3130e141
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d938b2081081f0fd3821ebea2e12d39a9ef6a185
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 873fd4236b627d93bce4029ef36861a720c19828
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930430"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
 取得原始的運算式。
@@ -30,13 +30,13 @@ ms.locfileid: "90038526"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetExpression( 
+HRESULT GetExpression( 
    IDebugExpression2** ppExpr
 );
 ```
 
 ```csharp
-int GetExpression( 
+int GetExpression( 
    out IDebugExpression2 ppExpr
 );
 ```

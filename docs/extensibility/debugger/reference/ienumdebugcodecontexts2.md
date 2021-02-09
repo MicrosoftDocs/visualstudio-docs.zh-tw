@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 72915146-215f-4c99-a034-131b2b474e0e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6917c44bb3ddc80513e7c45a6aa4ea0207fd46c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dee04516d8bc8d72859509a9f721455d858a433
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929390"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 這個介面會列舉與 debug 會話相關聯的程式碼內容，或是與特定程式或檔相關聯的程式碼內容。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugCodeContexts2 : IUnknown
@@ -41,7 +41,7 @@ IEnumDebugCodeContexts2 : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|抓取列舉序列中指定數目的程式碼內容。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|抓取列舉序列中指定數目的程式碼內容。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|略過列舉序列中指定數目的程式碼內容。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|將列舉順序重設為開頭。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
@@ -50,7 +50,7 @@ IEnumDebugCodeContexts2 : IUnknown
 ## <a name="remarks"></a>備註
  Visual Studio 會呼叫 [EnumCodeCoNtexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) ，以填入使用者在設定下一個語句或顯示來源檔案的反組解碼時，可從中選擇的程式碼內容清單。 例如，當有多個 c + + 樣式範本的實例時，可能會發生多個程式碼內容。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

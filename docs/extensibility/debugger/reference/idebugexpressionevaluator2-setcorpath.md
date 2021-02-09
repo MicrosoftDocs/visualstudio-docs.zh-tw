@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 27b614ff-7325-4f9b-8da4-61ee020c9410
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bea93c3f10a946353c52231d0ac3802f0b2ec8e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 84a3223464092e9f85af9701b37f946890b05c99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930248"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
 設定在偵錯工具中載入之 common language runtime (CLR) 的路徑。
@@ -46,7 +46,7 @@ int SetCorPath(
  如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
- 下列範例示範如何針對公開[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)介面的**ExpressionEvaluatorPackage**物件，執行這個方法。
+ 下列範例示範如何針對公開 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)介面的 **ExpressionEvaluatorPackage** 物件，執行這個方法。
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::SetCorPath(LPCOLESTR pcstrCorPath)

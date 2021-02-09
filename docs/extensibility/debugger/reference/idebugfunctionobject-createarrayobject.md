@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd4c07f2b95ff3077de79d4bc63f4fad19b0c6fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44d60c2f0573bf60d827737b2a54ff16b49d610c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728611"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929999"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 建立陣列物件。 這個陣列可以包含基本或物件實例值。
@@ -28,7 +28,7 @@ ms.locfileid: "80728611"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT CreateArrayObject( 
+HRESULT CreateArrayObject( 
    OBJECT_TYPE    ot,
    IDebugField*   pClassField,
    DWORD          dwRank,

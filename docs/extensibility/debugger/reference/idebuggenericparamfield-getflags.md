@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d131a5dc4a1fd64f2a82bff4f51f7cbc4a905a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be9f842db6b322ffb9bdc76ebd2a954d849e5d65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929819"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 抓取這個泛型參數的旗標。
@@ -49,7 +49,7 @@ int GetFlags(
 這些旗標包含各種特殊條件約束的相關資訊。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面的**CDebugGenericParamFieldType**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面的 **CDebugGenericParamFieldType** 物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetFlags(DWORD *pdwFlags)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 40a13b9b388caa6a1ae6e3e470e4ea02553fa0ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1fe290655781dd144e7c7b3951e021124e46086
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929949"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 建立字串物件。
@@ -28,7 +28,7 @@ ms.locfileid: "80728525"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT CreateStringObject( 
+HRESULT CreateStringObject( 
    LPCOLESTR      pcstrString,
    IDebugObject** ppObject
 );

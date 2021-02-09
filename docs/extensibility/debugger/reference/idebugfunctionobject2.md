@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4150480d2e6686992d78727b6fed817da270145
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 304269ba2a4f556cfe931157c445d7b4fc86f489
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929936"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
@@ -23,7 +23,7 @@ ms.locfileid: "80728424"
 
  代表函式並增強 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 介面。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugFunctionObject2 : IUnknown
@@ -35,11 +35,11 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  這個介面的方法會以下列方式延遲這些 **IDebugFunctionObject** ：
 
-- **IDebugEvaluate**方法會接受旗標。
+- **IDebugEvaluate** 方法會接受旗標。
 
-- **CreateObject**方法會接受旗標和超時。
+- **CreateObject** 方法會接受旗標和超時。
 
-- **CreateStringObjectWithLength**方法會採用長度。
+- **CreateStringObjectWithLength** 方法會採用長度。
 
 ## <a name="methods"></a>方法
  此介面會執行下列方法：
@@ -50,7 +50,7 @@ IDebugFunctionObject2 : IUnknown
 |[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|建立具有指定長度的字串物件。|
 |[評估](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|呼叫函數，並傳回產生的值做為物件。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Ee. h
 
  命名空間： VisualStudio

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e776434e17d90cd2c61c926bbf0100a44ecc524b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d4e484a1557ea99138f31fdc6f9103e6708b803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929748"
 ---
 # <a name="idebugmodule2reloadsymbols_deprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 已過時。 請勿使用。 重載此模組的符號。
@@ -28,14 +28,14 @@ ms.locfileid: "80726926"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT ReloadSymbols( 
+HRESULT ReloadSymbols( 
    LPCOLESTR pszUrlToSymbols,
    BSTR*     pbstrDebugMessage
 );
 ```
 
 ```csharp
-int ReloadSymbols( 
+int ReloadSymbols( 
    string     pszUrlToSymbols,
    out string pbstrDebugMessage
 );

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fbd270aa1b65f05f308d41d22f154fb53b8833d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b90540aaf5f7e409c8fc7fa44126f195230317f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727687"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929806"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
@@ -25,10 +25,10 @@ ms.locfileid: "80727687"
 
  這個介面可讓運算式評估工具 (EE) 在實值類別實例上呼叫屬性或方法 (例如 `System.Decimal`) ，以及設定其值，而不需在所要進行的程式上呼叫 [評估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDebugManagedObject : IDebugObject
+IDebugManagedObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
@@ -48,7 +48,7 @@ IDebugManagedObject : IDebugObject
 ## <a name="remarks"></a>備註
  運算式評估工具會使用這個介面將 managed 程式碼物件儲存在剖析樹狀結構中。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： ee. h
 
  命名空間： VisualStudio
