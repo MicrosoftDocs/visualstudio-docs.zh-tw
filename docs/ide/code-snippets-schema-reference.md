@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b5030efcfe6fc774a1bb576f6056db7d9f8fd662
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 22a5d4543548c8ac927487c9f4e2c9d95ea3487e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006467"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842143"
 ---
 # <a name="code-snippets-schema-reference"></a>程式碼片段結構描述參考
 
@@ -112,7 +112,7 @@ $selected$ is a great color. I love $selected$.
 
 - **語言**  - 指定程式碼片段語言的 _必要_ 屬性。 這個值可以是下列值之一：
 
-   |值|說明|
+   |值|描述|
    |-----|-----------|
    |`VB`|識別 Visual Basic 程式碼片段。|
    |`CSharp`|識別 C# 程式碼片段。|
@@ -126,7 +126,7 @@ $selected$ is a great color. I love $selected$.
 
 - **種類**  - _選擇性_ 屬性，指定程式碼片段包含的程式碼種類。 這個值可以是下列值之一：
 
-   |值|說明|
+   |值|描述|
    |-----|-----------|
    |`method body`|指定程式碼片段為方法主體，因此必須在方法宣告中插入。|
    |`method decl`|指定程式碼片段為方法，因此必須在類別或模組中插入。|
@@ -153,7 +153,7 @@ $selected$ is a great color. I love $selected$.
 </CodeSnippet>
 ```
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Format`|必要屬性。 指定程式碼片段的結構描述版本。 Format 屬性必須是語法為 x.x.x 的字串，其中每個 "x" 代表版本號碼的一個數值。 Visual Studio 會忽略具有它所不了解之 `Format` 屬性的程式碼片段。|
 
@@ -405,7 +405,7 @@ $selected$ is a great color. I love $selected$.
 </Literal>
 ```
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Editable`|選擇性 `Boolean` 屬性。 指定在程式碼片段插入後您是否可以編輯常值。 此屬性的預設值為 `true`。|
 
@@ -450,7 +450,7 @@ $selected$ is a great color. I love $selected$.
 </Object>
 ```
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Editable`|選擇性 `Boolean` 屬性。 指定在程式碼片段插入後您是否可以編輯常值。 此屬性的預設值為 `true`。|
 

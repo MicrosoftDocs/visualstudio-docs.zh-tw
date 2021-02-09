@@ -6,18 +6,18 @@ ms.date: 04/25/2019
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 9172fff2dde1528c5ea382aea996d316e0738ea0
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 0aafcb1740f0e17234d2e4da38630c1416c44e9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841936"
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 
@@ -60,7 +60,7 @@ ms.locfileid: "96189741"
 
 ### <a name="preference-and-severity"></a>喜好設定和嚴重性
 
-對於此頁面上的各個程式碼樣式，您可以使用每一行的下拉式清單來設定 [喜好設定] 和 [嚴重性] 的值。 [嚴重性] 可設定為 [僅重構]、[建議]、[警告] 或 [錯誤]。 如果您想要針對程式碼樣式啟用[快速動作](../ide/quick-actions.md)，請務必將 [嚴重性] 設定設為 [僅重構] 以外的值。 **Quick Actions** :::image type="icon" source="media/light-bulb-dropdown.png"::: 當使用非慣用樣式時，會出現 [快速動作] 燈泡、錯誤燈泡 :::image type="icon" source="media/error-bulb.png"::: 或螺絲起子 :::image type="icon" source="media/screwdriver.png"::: 圖示，而且您可以在 [**快速動作**] 清單中選擇一個選項，以自動將程式碼重寫為慣用的樣式。
+對於此頁面上的各個程式碼樣式，您可以使用每一行的下拉式清單來設定 [喜好設定] 和 [嚴重性] 的值。 [嚴重性] 可設定為 [僅重構]、[建議]、[警告] 或 [錯誤]。 如果您想要針對程式碼樣式啟用[快速動作](../ide/quick-actions.md)，請務必將 [嚴重性] 設定設為 [僅重構] 以外的值。  :::image type="icon" source="media/light-bulb-dropdown.png"::: 當使用非慣用樣式時，會出現 [快速動作] 燈泡、錯誤燈泡 :::image type="icon" source="media/error-bulb.png"::: 或螺絲起子 :::image type="icon" source="media/screwdriver.png"::: 圖示，而且您可以在 [**快速動作**] 清單中選擇一個選項，以自動將程式碼重寫為慣用的樣式。
 
 ::: moniker range=">=vs-2019"
 

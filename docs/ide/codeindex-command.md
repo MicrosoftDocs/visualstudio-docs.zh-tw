@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ece3916f0af442b67bb5cdd0999ad37159e53448
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 47875bcece910433a1d20ad66867acd7fdbee8d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901176"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841916"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 
@@ -40,7 +40,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 ### <a name="parameters"></a>參數
 
-|**Argument**|**描述**|
+|**Argument**|**說明**|
 |------------------| - |
 |`CollectionName`|指定專案集合的名稱。 如果名稱包含空格，請為名稱加上引號，例如，"Fabrikam Website"。|
 |`CollectionId`|指定專案集合的識別號碼。|

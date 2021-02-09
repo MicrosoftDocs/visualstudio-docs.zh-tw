@@ -11,15 +11,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e306814512c6cab2d331a26128f22bb94d7dbbf4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9eaa78a04c7dfda42a82a5d5a9ff3b407e6502d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842001"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>逐步解說：設計 Outlook 表單區域
   自訂的表單區域會擴充標準或自訂的 Microsoft Office Outlook 表單。 在此逐步解說中，您要設計自訂的表單區域，它在連絡人項目的 [偵測器] 視窗中會顯示為新頁面。 這個表單區域會將地址資訊傳送至 Windows Live 當地搜尋網站，顯示連絡人清單中每個地址的對應。 如需表單區域的詳細資訊，請參閱 [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
@@ -169,7 +169,7 @@ ms.locfileid: "97524208"
 
      Map It 表單區域即出現並顯示當地搜尋網站。 [ **商務**]、[ **首頁**] 和 [ **其他** 位址] 會出現在 [臨時板] 中。 在便條簿中選取想要對應的地址。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  從這些主題，您可以進一步了解如何自訂 Outlook 應用程式的 UI：
 
 - 若要瞭解如何自訂 Outlook 專案的功能區，請參閱 [自訂 outlook 功能區](../vsto/customizing-a-ribbon-for-outlook.md)。

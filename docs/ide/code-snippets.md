@@ -12,19 +12,19 @@ helpviewer_keywords:
 - code snippets
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 52059dd464ad0c720a4a2e77a961b7d6f3525c6d
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 642bfe9fdccaa607476facb792120502437cb4b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006389"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841961"
 ---
 # <a name="code-snippets"></a>程式碼片段
 
@@ -77,7 +77,7 @@ if (true)
 
 程式碼片段可以包含取代參數，這些都是您必須取代的預留位置，以符合您要撰寫的精確程式碼。 在上述範例中，`true` 是取代參數，您必須以適當的條件取代。 在此程式碼片段中同一個取代參數的每個執行個體都要重複這項您所進行的取代。
 
-例如，在 Visual Basic 中有會插入屬性的程式碼片段。 若要插入程式碼片段， **Snippet** 請  >  從 Visual Basic 程式碼檔案中的滑鼠右鍵功能表或操作功能表中選擇 [程式碼片段 **插入代碼** 段]。 然後，選擇程式 **代碼模式**  >  **屬性、程式、事件**  >  **定義屬性**。
+例如，在 Visual Basic 中有會插入屬性的程式碼片段。 若要插入程式碼片段， 請  >  從 Visual Basic 程式碼檔案中的滑鼠右鍵功能表或操作功能表中選擇 [程式碼片段 **插入代碼** 段]。 然後，選擇程式 **代碼模式**  >  **屬性、程式、事件**  >  **定義屬性**。
 
 ![定義屬性的程式碼片段功能表](media/code-snippets-vb-property.png)
 
