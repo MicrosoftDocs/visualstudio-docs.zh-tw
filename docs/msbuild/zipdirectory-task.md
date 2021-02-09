@@ -21,15 +21,15 @@ ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ffdd5e2601501146f0fa21e4adb572094ddbbf
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d6b897a33dacdbd52beaabdd9289a010df92a85c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847878"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory 工作
 
@@ -42,7 +42,7 @@ ms.locfileid: "93046614"
 
  下表說明 `ZipDirectory` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`DestinationFile`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數<br /><br /> 要建立之 *.zip* 檔案的完整路徑。|
 |`Overwrite`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true` ，則會覆寫目的地檔案（如果存在的話）。 預設值為 `false`。|
@@ -68,7 +68,7 @@ ms.locfileid: "93046614"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

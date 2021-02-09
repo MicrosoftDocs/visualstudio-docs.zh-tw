@@ -22,15 +22,15 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7453d221cf57188a2c2f589492e4df59817f2cd9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9ac8c4ef96a421ece6c0591d4340d570d71c08e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526087"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846279"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>逐步解說：使用功能區按鈕同步處理自訂工作窗格
   本逐步解說示範如何建立使用者按一下功能區上的切換按鈕，即可隱藏或顯示的自訂工作窗格。 您應該一律建立使用者介面 (UI) 元素，例如按鈕，讓使用者按一下即可顯示或隱藏自訂工作窗格；因為 Microsoft Office 應用程式不提供使用者顯示或隱藏自訂工作窗格的預設方式。
@@ -164,7 +164,7 @@ ms.locfileid: "97526087"
 
      確認切換按鈕出現時未被按下。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  您可以透過下列主題，進一步了解如何建立自訂工作窗格：
 
 - 針對不同的應用程式，在 VSTO 增益集中建立自訂工作窗格。 如需支援自訂工作窗格之應用程式的詳細資訊，請參閱 [自訂工作窗格](../vsto/custom-task-panes.md)。

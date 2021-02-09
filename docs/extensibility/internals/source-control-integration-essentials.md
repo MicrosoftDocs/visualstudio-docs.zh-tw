@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4dd5186b20dfac4ad5a027e4519700ff8ac1f77
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: a549a4f90cca6c17f3ad634551740f91fbe7da6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846409"
 ---
 # <a name="source-control-integration-essentials"></a>原始檔控制整合的基本資訊
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援兩種類型的原始檔控制整合：提供基本功能的原始檔控制外掛程式，以及使用原始檔控制外掛程式 API 建立的 (先前稱為 MSSCCI API) ，以及以 VSPackage 為基礎的原始檔控制整合解決方案，可提供更強大的功能。
@@ -52,7 +52,7 @@ ms.locfileid: "97876021"
 
    如需詳細資訊，請參閱 [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [概觀](../../extensibility/internals/source-control-integration-overview.md)
 - [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)

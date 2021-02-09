@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98e84167bc9cbbcad41b897c2de69115c6827ca5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: b7335e3c5b15365680d70486f5f8ec8d19e90af4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846487"
 ---
 # <a name="source-control-design-decisions"></a>原始檔控制的設計決策
 執行原始檔控制時，應考慮專案的下列設計決策。
@@ -36,7 +36,7 @@ ms.locfileid: "97875514"
 
 3. 當您的專案或編輯器呼叫檔案時 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> ，不會自動簽出與該檔案相關聯的特殊檔案。將特殊檔案連同父檔案一起傳遞。 環境會偵測傳入的所有檔案之間的關聯性，並適當地隱藏簽出 UI 中的特殊檔案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>

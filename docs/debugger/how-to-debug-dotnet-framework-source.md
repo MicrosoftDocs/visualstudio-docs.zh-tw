@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 13a575ec2e77f1b715ec5f17324a6933d8cf0805
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 890aeef41a9a0f4d893cfcf57d42b78ff32d88c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846877"
 ---
 # <a name="how-to-debug-net-framework-source"></a>How to: Debug .NET Framework source (如何：對 .NET Framework 來源進行偵錯)
 

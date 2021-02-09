@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e154e91ce552df9e54d45ea9210a0679edae5f28
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 669ef527e65e56612199b8303f7cc99e8b993b50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846396"
 ---
 # <a name="source-control-plug-in-architecture"></a>原始檔控制外掛程式架構
 您可以藉由執行和附加原始檔控制外掛程式，將原始檔控制支援新增至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 。 IDE 會透過定義完善的原始檔控制 Plug-In API 連接到原始檔控制外掛程式。 IDE 藉由提供使用者介面 (UI) ，其中包含工具列和功能表命令，以公開原始檔控制系統的版本控制功能。 原始檔控制外掛程式會執行原始檔控制功能。
@@ -38,7 +38,7 @@ ms.locfileid: "97878062"
 
  原始檔控制外掛程式無法對 shell 進行變更，因此無法變更 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 至 IDE 所提供的原始檔控制介面卡封裝或原始檔控制 UI。 它必須充分利用透過執行各種原始檔控制外掛程式 API 函式所提供的彈性，以提供給使用者的整合式體驗。 原始檔控制外掛程式 API 檔的參考區段包含一些 advanced Source control 外掛程式功能的資訊。 若要利用這些功能，原始檔控制外掛程式必須在初始化期間將其先進的功能宣告為 IDE，而且必須針對每個功能執行特定的 advanced 函數。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)
 - [詞彙](../../extensibility/source-control-plug-in-glossary.md)
 - [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)

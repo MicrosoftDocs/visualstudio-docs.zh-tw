@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da8bd850413d32e5453b7dc312e863832e5f5218
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 8c45ff8b0fd2328a6398f844dc1416decc0ea591
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715258"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848080"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>開始開發 Visual Studio 擴充功能
 
@@ -82,7 +82,7 @@ ms.locfileid: "97715258"
 
 - 基本 Vspackage：[使用 VSPackage 建立延伸](../extensibility/creating-an-extension-with-a-vspackage.md)模組
 
-- VSIX 專案範本： [使用 Vsix 專案範本消費者入門](../extensibility/getting-started-with-the-vsix-project-template.md)
+- VSIX 專案範本： [使用 Vsix 專案範本開始使用](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>如何? 讓我的延伸模組看起來像 Visual Studio？
  取得在 [Visual Studio 使用者經驗指導方針](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)中，為您的擴充功能設計 UI 的絕佳秘訣。
@@ -95,7 +95,7 @@ ms.locfileid: "97715258"
 
  您也可以在 Visual Studio Marketplace 上發佈您的延伸模組，讓大量的 Visual Studio 客戶看得到。 如需將擴充功能封裝至 Marketplace 的範例，請參閱 [逐步解說：發行 Visual Studio 延伸](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)模組。 如需在 Marketplace 上發佈的詳細資訊，請參閱 [Visual Studio 的產品和延伸](/azure/devops/extend/overview?view=vsts&preserve-view=true)模組。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [擴充 Visual Studio for Mac](/visualstudio/mac/extending-visual-studio-mac)
 - [擴充 Visual Studio Code](https://code.visualstudio.com/api)

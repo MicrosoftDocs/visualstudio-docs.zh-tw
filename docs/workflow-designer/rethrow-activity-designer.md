@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9195fc95ac905213b048aa16882ea6584adacd33
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2e3615c73583e8c5c313d23fd5f9aa6d9fcd5ff4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847319"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow 活動設計工具
 
@@ -29,17 +29,17 @@ ms.locfileid: "94434112"
 
 ### <a name="use-the-rethrow-activity-designer"></a>使用重新擲回活動設計工具
 
-存取 [工具箱] 的 [ **錯誤處理** ] 類別中的 [重新擲 **回活動設計****工具** ]。 重新擲回活動設計工具可以從 [ **工具箱** ] 拖曳出來，放到工作流程設計工具介面上通常用來放置 **活動的任一** 處，例如內部 <xref:System.Activities.Statements.Sequence> 。 卸載活動設計工具時，會建立一個 <xref:System.Activities.Statements.Rethrow> 具有 Throw 預設 **DisplayName** 的活動。 值可以在 [重新擲回 <xref:System.Activities.Activity.DisplayName%2A> 活動設計工具 **Rethrow** ] 的標頭中編輯，或是在屬性方格的 [ **DisplayName** ] 方塊中編輯。
+存取 [工具箱] 的 [**錯誤處理**] 類別中的 [重新擲 **回活動設計****工具**]。 重新擲回活動設計工具可以從 [**工具箱**] 拖曳出來，放到工作流程設計工具介面上通常用來放置 **活動的任一** 處，例如內部 <xref:System.Activities.Statements.Sequence> 。 卸載活動設計工具時，會建立一個 <xref:System.Activities.Statements.Rethrow> 具有 Throw 預設 **DisplayName** 的活動。 值可以在 [重新擲回 <xref:System.Activities.Activity.DisplayName%2A> 活動設計工具 ] 的標頭中編輯，或是在屬性方格的 [ **DisplayName** ] 方塊中編輯。
 
 ### <a name="the-rethrow-properties"></a>重新擲回屬性
 
 下表顯示 <xref:System.Activities.Statements.Rethrow> 屬性，並描述如何在設計工具中使用這些屬性：
 
-|屬性名稱|必要|使用量|
+|屬性名稱|必要|使用方式|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|否|指定 <xref:System.Activities.Statements.Rethrow> 活動選用的易記名稱。 預設為 Rethrow。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [集合](../workflow-designer/collection-activity-designers.md)
 - [扔](../workflow-designer/throw-activity-designer.md)

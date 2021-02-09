@@ -12,15 +12,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ee35ecc9cfa49f445e93677df9d2917150bc1e74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914786"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847826"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>逐步解說：建立顯示適用于 SharePoint 之 OData 的 Silverlight web 元件
   SharePoint 2010 透過 OData 公開其清單資料。 在 SharePoint 中，OData 服務是由 RESTful service ListData 所執行。 本逐步解說將示範如何建立裝載 Silverlight 應用程式的 SharePoint 網頁元件。 Silverlight 應用程式會使用 ListData 來顯示 SharePoint 公告清單資訊。 如需詳細資訊，請參閱 [SharePoint FOUNDATION REST 介面](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) 和 [開放式資料通訊協定](https://www.odata.org/)。
@@ -96,7 +96,7 @@ ms.locfileid: "96914786"
 
 8. 調整方格控制項的大小，使其符合 Silverlight 頁面。
 
-9. 在 MainPage 的 MainPage.xaml.cs 中， (Visual c # 或) Visual Basic *MainPage* 的 *MainPage.xaml.cs* ，請新增下列命名空間參考。
+9. 在 MainPage 的 MainPage.xaml.cs 中， (Visual c # 或) Visual Basic *MainPage* 的 ，請新增下列命名空間參考。
 
     ```vb
     ' Add the following three Imports statements.

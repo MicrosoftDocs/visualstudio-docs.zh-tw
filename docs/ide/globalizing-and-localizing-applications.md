@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c7a82488fea8fc12e6d5db838818269add0181
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 77402f7503818b310a592a39706ac717ac728852
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847956"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>開發全球化和當地語系化應用程式
 

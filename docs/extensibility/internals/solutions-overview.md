@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2888f2fd0b2c9b7bfb530cc3fd46708ca13422f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 91903954f490e5845e01ddbf4b7aa4767f2ceacc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846539"
 ---
 # <a name="solutions-overview"></a>解決方案概觀
 

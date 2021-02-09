@@ -13,20 +13,20 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], common tasks in Visio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8835e3ef668e060798c515a89868d800ca737f34
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 49809b1d67ae8427ae1230987cb4ceb05e08fa44
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847462"
 ---
 # <a name="work-with-visio-documents"></a>使用 Visio 檔
   本節中的主題提供使用 Microsoft Office Visio 的物件模型來處理 Office 專案中檔的逐步程式和程式碼範例。
 
-|工作|程序|
+|Task|程序|
 |----------|---------------|
 |建立空白的 Visio 檔，或以現有的 Visio 範本、樣板或檔為基礎的新檔。|[如何：以程式設計方式建立新的 Visio 檔](../vsto/how-to-programmatically-create-new-visio-documents.md)|
 |開啟現有的 Visio 檔，並指定讀/寫、唯讀和停駐的選項。|[如何：以程式設計方式開啟 Visio 檔](../vsto/how-to-programmatically-open-visio-documents.md)|

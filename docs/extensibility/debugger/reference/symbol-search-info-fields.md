@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bf8a1ad8a5dabc663ef29f5f2c36fdf0fbd8b786
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38d3c7fe6333783dde092674657ea78d146d53aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846591"
 ---
 # <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
 指定要取出的符號資訊種類。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_SYMBOL_SEARCH_INFO_FIELDS
@@ -58,7 +58,7 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 > [!NOTE]
 > 目前只 `SSIF_VERBOSE_SEARCH_INFO` 支援，而且必須指定為的 `dwFlags` 參數 `IDebugModule3::GetSymbolInfo` 。 所有其他值都會傳回錯誤。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

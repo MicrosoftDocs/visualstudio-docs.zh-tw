@@ -14,20 +14,20 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], tables
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 27fdc776589879af6757967b18a7cac47f9f66df
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 143b537c0d921d70206ce6f9128338e30351d080
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526863"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847449"
 ---
 # <a name="work-with-tables"></a>使用資料表
   本節中的主題針對在 Office 專案中使用 Microsoft Office Word 物件模型處理資料表，提供逐步程序和程式碼範例。 在某些情況下，您在 VSTO 增益集中執行這些工作的方式，不同於您在文件層級自訂中的執行方式。
 
-|工作|程序|
+|Task|程序|
 |----------|---------------|
 |建立資料表、套用樣式，然後存取程式碼中的資料表。|[如何：以程式設計方式建立 Word 表格](../vsto/how-to-programmatically-create-word-tables.md)|
 |建立並格式化資料表，然後將資料插入儲存格。|[如何：以程式設計方式將文件屬性填入 Word 表格](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)|

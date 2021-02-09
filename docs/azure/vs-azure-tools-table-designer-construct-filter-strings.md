@@ -2,17 +2,17 @@
 title: 建構資料表設計工具的篩選字串 | Microsoft Docs
 description: 建構資料表設計工具的篩選字串
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: cdfcacf38239e896687a236624bb167573f4bd1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846201"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>建構資料表設計工具的篩選字串
 ## <a name="overview"></a>概觀
@@ -23,7 +23,7 @@ WCF Data Services 以 [開放式資料通訊協定](https://www.odata.org/) (ODa
 ## <a name="comparison-operators"></a>比較運算子
 所有屬性類型都支援下列邏輯運算子：
 
-| 邏輯運算子 | 說明 | 篩選字串範例 |
+| 邏輯運算子 | Description | 篩選字串範例 |
 | --- | --- | --- |
 | eq |等於 |City eq 'Redmond' |
 | gt |大於 |Price gt 20 |
@@ -31,9 +31,9 @@ WCF Data Services 以 [開放式資料通訊協定](https://www.odata.org/) (ODa
 | lt |小於 |Price lt 20 |
 | le |小於或等於 |Price le 100 |
 | ne |不等於 |City ne 'London' |
-| 及 |和 |Price le 200 and Price gt 3.5 |
-| 或 |或 |Price le 3.5 or Price gt 200 |
-| not |否 |not isAvailable |
+| 及 |And |Price le 200 and Price gt 3.5 |
+| 或 |Or |Price le 3.5 or Price gt 200 |
+| not |Not |not isAvailable |
 
 建構篩選字串時，下列規則很重要：
 

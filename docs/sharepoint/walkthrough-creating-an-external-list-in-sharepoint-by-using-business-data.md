@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915332"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847709"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>逐步解說：使用商務資料在 SharePoint 中建立外部清單
 
@@ -114,7 +114,7 @@ ms.locfileid: "96915332"
 
 3. 在設計工具中，開啟 **Entity1** 的快捷方式功能表，然後選擇 [ **刪除**]。
 
-4. 在 **方案總管** 中，開啟 [Entity1.cs] 中的 [Visual Basic (*Entity1* ] 的快捷方式功能表，) 或 [c # 中的 *Entity1.cs* (] ) ，然後選擇 [**刪除**]。
+4. 在 **方案總管** 中，開啟 [Entity1.cs] 中的 [Visual Basic (*Entity1* ] 的快捷方式功能表，) 或 [c # 中的 (] ) ，然後選擇 [**刪除**]。
 
 5. 在 Visual Basic) 中開啟 *Entity1Service* 的快捷方式功能表 (，或在 c # ) 中開啟 [ *Entity1Service.cs* (]，然後選擇 [ **刪除**]。
 
@@ -268,7 +268,7 @@ ms.locfileid: "96915332"
 
      您選擇之連絡人的詳細資料隨即出現在表單上。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 您可以從下列主題深入瞭解如何在 SharePoint 中設計 BDC 服務的模型：
 

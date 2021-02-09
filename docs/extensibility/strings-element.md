@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f517d350f3383dcaeb99d651872ffb8ed09814fe
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 7951d0c72c3fd6a1897224d9606abdfec9a60053
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848008"
 ---
 # <a name="strings-element"></a>Strings 項目
 Strings 元素至少必須包含 **ButtonText** 子項目。 所有其他子項目都是選擇性的。 不正確 XML 字元，例如 ' & ' 和 ' < ' 必須編碼為實體 ( ' &amp; ' 和 ' &lt; ' 等等，) 。
@@ -62,5 +62,5 @@ Strings 元素至少必須包含 **ButtonText** 子項目。 所有其他子項�
 |[Menu 元素](../extensibility/menu-element.md)|定義單一功能表項目。|
 |[Combo 元素](../extensibility/combo-element.md)|定義出現在下拉式方塊中的命令。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

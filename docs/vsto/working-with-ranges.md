@@ -14,20 +14,20 @@ helpviewer_keywords:
 - workbooks, ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 168774f031e992db62b4173bd8d27652aa21b82f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ce099c7cf531e4fa9acfe725959023e579577c8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847436"
 ---
 # <a name="work-with-ranges"></a>使用範圍
   <xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Interop.Excel.Range> 類別包含您用來執行有範圍工作的方法和屬性。
 
-|工作|程序|
+|Task|程序|
 |----------|---------------|
 |存取範圍並設定值。|[如何：以程式設計方式在程式碼中參考工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)|
 |根據初始值填滿範圍。|[如何：以程式設計方式自動以累加方式變更資料填滿範圍](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)|

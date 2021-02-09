@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 89af423b-36eb-479d-b2de-2693455eca15
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8fd42abfc056c3b9e50d073ad335f72ac9022aa7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a475b4d6d9b0af8b4c55a3d949fdc4ed172aa337
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846825"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
 取得物件的大小（以位元組為單位）。
@@ -28,7 +28,7 @@ ms.locfileid: "80726565"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetSize( 
+HRESULT GetSize( 
    UINT* pnSize
 );
 ```

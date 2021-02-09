@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd90cb92dd56d3e7ff9eb43bad1086e8a8fb548f
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 1e7cf5998645230f038c6de12c79b53b44c09dfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847982"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>撰寫能夠辨識多處理器的記錄器
 
@@ -37,7 +37,7 @@ MSBuild 利用多個處理器的能力可能會減少專案建立時間，但也
 
 ### <a name="central-logging-model"></a>集中式記錄模型
 
- 在集中式記錄模型中， *MSBuild.exe* 的單一執行個體做為「中央節點」，中央節點的子執行個體 (「次要節點」) 則附加至中央節點，協助它執行組建工作。
+ 在集中式記錄模型中，*MSBuild.exe* 的單一執行個體做為「中央節點」，中央節點的子執行個體 (「次要節點」) 則附加至中央節點，協助它執行組建工作。
 
  ![中央記錄器模型](../msbuild/media/centralnode.png "CentralNode")
 
@@ -120,6 +120,6 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|
 |SHOWCOMMANDLINE|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)

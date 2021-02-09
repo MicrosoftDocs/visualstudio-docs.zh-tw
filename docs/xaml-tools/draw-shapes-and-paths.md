@@ -8,25 +8,25 @@ ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c29e2a4718a10193a4c86d1485549ded6ae2c0e
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 2e815b3e4959727dab282fcbe0fcd1f82890bf8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847345"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 
-在 XAML 設計工具中，「圖形」  (Shape) 正如您所預期。 例如：矩形、圓形或橢圓形。 *「路徑」* (path) 是圖形的更靈活版本。 您可以執行像是調整形狀，或將圖形合併在一起形成新的圖形等動作。
+在 XAML 設計工具中，「圖形」(Shape) 正如您所預期。 例如：矩形、圓形或橢圓形。 *「路徑」* (path) 是圖形的更靈活版本。 您可以執行像是調整形狀，或將圖形合併在一起形成新的圖形等動作。
 
 圖形與路徑使用向量圖形，因此可以配合高解析度顯示妥善調整。
 
 ## <a name="draw-a-shape"></a>繪製圖形
 
-在 [資產]  視窗中尋找圖形。
+在 [資產] 視窗中尋找圖形。
 
 :::image type="content" source="media/blend-shapes.png" alt-text="Blend for Visual Studio 中 [資產] 視窗的 [圖形] 類別的螢幕擷取畫面":::
 
@@ -36,13 +36,13 @@ ms.locfileid: "92796793"
 
 ## <a name="draw-a-path"></a>繪製路徑
 
-路徑是一系列連接的直線和曲線。 使用路徑來建立 [資產]  視窗中所沒有的有趣圖形。
+路徑是一系列連接的直線和曲線。 使用路徑來建立 [資產] 視窗中所沒有的有趣圖形。
 
-您可以使用線條、畫筆或鉛筆來繪製路徑。 您可以在 [工具]  視窗中找到這些工具。
+您可以使用線條、畫筆或鉛筆來繪製路徑。 您可以在 [工具] 視窗中找到這些工具。
 
 ### <a name="draw-a-straight-line"></a>繪製直線
 
-使用 [畫筆]  工具或 [線條]  工具。
+使用 [畫筆] 工具或 [線條] 工具。
 
 **使用 [畫筆] 工具**
 
@@ -54,7 +54,7 @@ ms.locfileid: "92796793"
 
 ### <a name="draw-a-curve"></a>繪製曲線
 
-使用 [畫筆]  工具。
+使用 [畫筆] 工具。
 
 在畫板上，按一次可定義線條的起始點，然後按一下並拖曳指標可建立所需的曲線。
 
@@ -62,38 +62,38 @@ ms.locfileid: "92796793"
 
 ### <a name="change-the-shape-of-a-curve"></a>變更曲線的形狀
 
-使用 [直接選取]  工具。
+使用 [直接選取] 工具。
 
 按一下圖形，然後拖曳圖形上的任一點可變更曲線圖形。
 
 ### <a name="draw-a-free-form-path"></a>繪製任意形狀的路徑
 
-使用 [鉛筆]  工具。
+使用 [鉛筆] 工具。
 
 在畫板上，繪製任意形狀的路徑，就像使用真正的鉛筆一樣。
 
 ### <a name="remove-part-of-a-path"></a>移除路徑的一部分
 
-使用 [直接選取]  工具。
+使用 [直接選取] 工具。
 
 選取包含所要刪除線段的路徑，然後按一下 [刪除]  按鈕。
 
 ### <a name="remove-a-point-in-a-path"></a>移除路徑中的點
 
-使用 [選取]  工具來選取路徑。 然後，使用 [畫筆]  工具來按一下您想要移除的點。
+使用 [選取] 工具來選取路徑。 然後，使用 [畫筆] 工具來按一下您想要移除的點。
 
 ### <a name="add-a-point-to-a-path"></a>將點加入至路徑
 
-使用 [選取]  工具來選取路徑。 使用 [畫筆]  工具來按一下路徑上您要新增點的任何位置。
+使用 [選取] 工具來選取路徑。 使用 [畫筆] 工具來按一下路徑上您要新增點的任何位置。
 
 ## <a name="convert-a-shape-to-a-path"></a>將圖形轉換成路徑
 
-若要以修改路徑的相同方式來修改圖形，請將圖形轉換為路徑。 選取圖形，然後選取 [ **Format**  >  **Path**  >  **轉換成路徑** 的格式路徑]。
+若要以修改路徑的相同方式來修改圖形，請將圖形轉換為路徑。 選取圖形，然後選取 [   >    >  **轉換成路徑** 的格式路徑]。
 
 **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) (使用路徑：將圖形轉換成路徑)。
 
 > [!NOTE]
-> [轉換成路徑]  目前不適用於 `TargetPlatformVersion` 至少為 10.0.16299.0 或更新版本的 UWP 應用程式。
+> [轉換成路徑] 目前不適用於 `TargetPlatformVersion` 至少為 10.0.16299.0 或更新版本的 UWP 應用程式。
 
 ## <a name="combine-paths"></a>合併路徑
 
@@ -101,7 +101,7 @@ ms.locfileid: "92796793"
 
 ![合併路徑](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|數字|動作|
+|Number|動作|
 |-|-|
 |![合併前的兩個圖形](../designers/media/b1_1.png)|合併前的兩個圖形|
 |![聯集](../designers/media/b1_2.png)|聯集|

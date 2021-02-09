@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 06a1368f-10f0-44eb-af61-e388c2327111
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b9fe0e96ade081e8da11b5e1c06c5b45279b10b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f59cdc9a257f853f70afe2566d7b06e39f8edc02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715751"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846656"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 這個介面會列舉在 debug 埠上執行的處理常式。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugProcesses : IUnknown
@@ -39,7 +39,7 @@ IEnumDebugProcesses : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|抓取列舉序列中指定數目的進程。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|抓取列舉序列中指定數目的進程。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|略過列舉序列中指定數目的進程。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|將列舉順序重設為開頭。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
@@ -48,7 +48,7 @@ IEnumDebugProcesses : IUnknown
 ## <a name="remarks"></a>備註
  Visual Studio 使用此介面來填入 **處理** 程式視窗。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

@@ -15,20 +15,20 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], folders
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1ca2d6c690e094884313bc128291dd7295103d54
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6e2e3dcb6978225b5af493f3649e4b2fac47f3c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526973"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847501"
 ---
 # <a name="work-with-folders"></a>使用資料夾
   <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 類別包含用以存取、建立和自訂資料夾的方法與屬性。
 
-|工作|程序|
+|Task|程序|
 |----------|---------------|
 |在 [收件匣] 郵件的 [主旨] 欄位中搜尋字串。|[如何：以程式設計方式在特定資料夾中搜尋](../vsto/how-to-programmatically-search-within-a-specific-folder.md)|
 |取得資料夾的參考並顯示內容。|[如何：以程式設計方式依名稱取出資料夾](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 95addb145312de85a3525c228297e7ff9636ea0d
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: def9407d309e5f673d0a7a2cdc3710fae557be50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847839"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>逐步解說：建立 SharePoint 應用程式頁面
 
@@ -143,7 +143,7 @@ ms.locfileid: "96914877"
 
      [應用程式] 頁面會重新整理，並顯示您在伺服器陣列上的所有網站中建立的所有專案。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 如需 SharePoint 應用程式頁面的詳細資訊，請參閱 [建立 sharepoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)。
 

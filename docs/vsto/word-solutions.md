@@ -25,15 +25,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55ffb54e00af0291a33bd635ea81d3d865cc4c9a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 91f262fb88d95be586869b22559e171f4a01ed16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847631"
 ---
 # <a name="word-solutions"></a>Word 方案
   Visual Studio 提供的專案範本，可用以建立 Microsoft Office Word 的文件層級自訂和 VSTO 增益集。 您可以使用這些解決方案自動化 Word、擴充 Word 功能和自訂 Word 使用者介面 (UI)。 如需檔層級自訂和 VSTO 增益集之間差異的詳細資訊，請參閱 [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -87,7 +87,7 @@ ms.locfileid: "97528368"
 ### <a name="options-for-all-project-types"></a>所有專案類型的選項
  下表列出的自訂選項，文件層級自訂和 VSTO 增益集皆可使用。
 
-|工作|取得詳細資訊|
+|Task|取得詳細資訊|
 |----------|--------------------------|
 |自訂功能區。|[功能區總覽](../vsto/ribbon-overview.md)|
 |在文件層級自訂的自訂文件，或任何開啟的 VSTO 增益集文件中，加入 Windows Form 控制項或擴充的 Word 控制項。|[如何：將 Windows Forms 控制項新增至 Office 檔](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [如何：將內容控制項新增至 Word 檔](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [如何：將書簽控制項新增至 Word 檔](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|
@@ -95,7 +95,7 @@ ms.locfileid: "97528368"
 ### <a name="options-for-document-level-customizations"></a>檔層級自訂的選項
  下表列出的自訂選項僅限文件層級自訂使用。
 
-|工作|取得詳細資訊|
+|Task|取得詳細資訊|
 |----------|--------------------------|
 |在文件中加入執行窗格。|[動作窗格總覽](../vsto/actions-pane-overview.md)<br /><br /> [如何：將執行窗格加入 Word 檔或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|
 |在文件介面中加入擴充的 XMLNode 和 XMLNodes 控制項。|[如何：將 XMLNode 控制項新增至 Word 檔](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [如何：將 XMLNodes 控制項加入至 Word 檔](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|
@@ -103,7 +103,7 @@ ms.locfileid: "97528368"
 ### <a name="options-for-vsto-add-ins"></a>VSTO 增益集的選項
  下表列出的自訂選項僅限 VSTO 增益集使用。
 
-|工作|取得詳細資訊|
+|Task|取得詳細資訊|
 |----------|--------------------------|
 |建立自訂工作窗格。|[自訂工作窗格](../vsto/custom-task-panes.md)|
 

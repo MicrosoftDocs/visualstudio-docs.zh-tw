@@ -17,15 +17,15 @@ helpviewer_keywords:
 - parameters [Office development in Visual Studio], optional
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7567f43dfa79e6a1e5d92b9ecddbf7918a6edef3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: d6824d53d552a27a68a49d63497156147283fd29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847696"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office 方案中的選擇性參數
   Microsoft Office 應用程式物件模型中的許多方法，都接受選擇性參數。 如果您使用 Visual Basic 在 Visual Studio 中開發 Office 方案，就不必傳遞選擇性參數的值，因為每個遺漏的參數都會自動使用預設值。 在大部分的情況下，也可以省略 Visual C# 專案中的選擇性參數。 不過，您無法 `ThisDocument` 在檔層級 Word 專案中省略類別的選擇性 ref 參數。

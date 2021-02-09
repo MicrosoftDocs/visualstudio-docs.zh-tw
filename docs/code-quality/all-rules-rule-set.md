@@ -6,15 +6,15 @@ ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d4881cbc2cf6cde6c9316f547b5b2aabb31b01
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 157bd599f8ff01aefcb7419f6e2ef6e4e733be0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348420"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847241"
 ---
 # <a name="all-rules-rule-set"></a>所有規則規則集
 

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Office object models
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6d8ca92fdebb3504331ec38937dd79786fdb8b42
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3d593185412db23fa985f7effea6e91f9b3faa6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847644"
 ---
 # <a name="word-object-model-overview"></a>Word 物件模型總覽
   當您在 Visual Studio 中開發 Word 解決方案時，會與 Word 物件模型互動。 組成這個物件模型的類別和介面，是由 Word 的主要 Interop 組件所提供，並在 <xref:Microsoft.Office.Interop.Word> 命名空間中定義。

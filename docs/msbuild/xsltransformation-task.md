@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6f3a7d81-3ae3-4703-9a06-870b32b69d80
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da983f6dc215a5afd651733ecea6b62846ca95cc
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f779fc5d222fdd0985adef203f0bb20fc601a429
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847942"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation 工作
 
@@ -33,7 +33,7 @@ ms.locfileid: "93047193"
 
  下表說明 `XslTransformation` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`OutputPaths`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定 XML 轉換的輸出檔案。|
 |`Parameters`|選擇性的 `String` 參數。<br /><br /> 指定「XSLT 輸入」文件的參數。  提供保存每個參數的原始 XML `<Parameter Name="" Value="" Namespace="" />` 。|
@@ -58,7 +58,7 @@ ms.locfileid: "93047193"
                        Parameters="&lt;Parameter Name='Parameter1' Value='$(Parameter1)'/&gt;"/>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XSLT 參數](/dotnet/standard/data/xml/xslt-parameters)
 - [工作](../msbuild/msbuild-tasks.md)

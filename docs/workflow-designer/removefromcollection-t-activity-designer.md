@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 069640dccf185f2f2c738efdde6a2311352a04b6
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9fdaf7172c00d80e5e7615bfcadcc1fb6233c257
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847358"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T> 活動設計工具
 
@@ -36,7 +36,7 @@ ms.locfileid: "96996093"
 
 下表顯示 <xref:System.Activities.Statements.RemoveFromCollection%601> 屬性，並描述如何在設計工具中使用這些屬性：
 
-|屬性名稱|必要|使用量|
+|屬性名稱|必要|使用方式|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|否|<xref:System.Activities.Statements.RemoveFromCollection%601> 活動可選用的易記名稱。 預設值為 RemoveFromCollection<Int32 \> 。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|是|要從 **集合 \<T>** 中移除的專案。 此專案的類型為 *T*，其類型為 *TypeArgument*。 若要指定項目，請在屬性方格中輸入 Visual Basic 運算式。|

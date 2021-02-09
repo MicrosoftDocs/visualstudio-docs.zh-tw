@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, workflow initiation forms
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: cb759b155b119c29f20a39cdbf35338ec5a305b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970434"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847735"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>逐步解說：使用關聯與初始表單建立工作流程
   本逐步解說示範如何建立包含關聯和初始表單使用方式的基本連續工作流程。 這些是 ASPX 表單，可在 SharePoint 系統管理員第一次將參數加入至工作流程時，將參數加入至工作流程中， () 的關聯表單，以及當使用者啟動工作流程) 時 (起始表單。
@@ -442,7 +442,7 @@ ms.locfileid: "95970434"
 
      發生這種情況時，會建立記錄清單中的專案，而不是工作。 專案會顯示在 [工作流程狀態] 頁面的 [ **工作流程歷程記錄** ] 區段中。 請注意歷程記錄事件 [ **結果** ] 資料行中的訊息。 它包含在事件中輸入的文字 `logToHistoryListActivity1.MethodInvoking` ，其中包含已自動核准的數量。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  您可以從下列主題深入瞭解如何建立工作流程範本：
 
 - 若要深入瞭解 SharePoint 工作流程，請參閱 [Windows Sharepoint Services 中的工作流程](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14))。

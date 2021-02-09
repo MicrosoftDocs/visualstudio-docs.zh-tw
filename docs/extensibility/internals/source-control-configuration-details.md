@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: efed4592bfa0b697d66f377430cc5998d3e9e5d3
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: b9a3a2f33fcbb94d1e863daf69b8561f7bad4f2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846500"
 ---
 # <a name="source-control-configuration-details"></a>原始檔控制組態的詳細資料
 若要執行原始檔控制，您需要適當地設定您的專案系統或編輯器，以執行下列動作：
@@ -52,7 +52,7 @@ ms.locfileid: "97875501"
 
  針對每個新增、重新命名和移除動作，都有 `OnQuery*` 方法和 `OnAfter*` 方法。 呼叫 `OnQuery*` 方法，以要求新增、重新命名或移除檔案或目錄的許可權。 在 `OnAfter*` 新增、重新命名或移除檔案或目錄之後，以及專案狀態反映新狀態之後，呼叫方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>
