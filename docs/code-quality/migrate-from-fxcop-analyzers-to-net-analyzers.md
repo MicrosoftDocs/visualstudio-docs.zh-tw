@@ -12,13 +12,13 @@ helpviewer_keywords:
 - source code analysis, migration
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 5f9794c825012d682ca40dfdc5ebbfa03f0614ee
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+manager: jmartens
+ms.openlocfilehash: e435502587e65bd694567f4100516a91fa97cc0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867863"
 ---
 # <a name="migrate-from-fxcop-analyzers-to-net-analyzers"></a>從 FxCop 分析器移轉至 .NET 分析器
 

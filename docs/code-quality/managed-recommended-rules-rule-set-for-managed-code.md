@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 30874b00f7bca4d66a60e359445c28be686d3269
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e691e6dc48b33ff00f6824436b80e5f49721db98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867902"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的 Managed 建議規則規則集
 
@@ -23,7 +23,7 @@ ms.locfileid: "94435361"
 
 在您為專案建立的任何自訂規則集中包含此規則集。
 
-|規則|說明|
+|規則|Description|
 |----------|-----------------|
 |[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可處置欄位的類型應該為可處置|
 |[CA1009](../code-quality/ca1009.md)|事件處理常式必須正確宣告|

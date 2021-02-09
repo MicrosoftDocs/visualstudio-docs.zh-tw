@@ -7,15 +7,15 @@ ms.topic: overview
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: edab24396f5a3ae5527b76a58db90c19796c4240
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: f5b0d239c2280362b45c085448437b15bd8ddfe8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869527"
 ---
 # <a name="install-the-visual-studio-sdk"></a>安裝 Visual Studio IDE
 

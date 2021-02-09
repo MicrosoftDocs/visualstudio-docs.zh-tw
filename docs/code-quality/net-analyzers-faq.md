@@ -8,15 +8,15 @@ helpviewer_keywords:
 - code analysis FAQ
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: d581ef60ebfe9ff5aeceae4c16ee4294eae5d850
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 951e9b951f1d90077fe29506e9c288fb19f2d5ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867759"
 ---
 # <a name="frequently-asked-questions-about-legacy-fxcop-and-net-analyzers"></a>舊版 FxCop 和 .NET 分析器的常見問題
 
@@ -38,7 +38,7 @@ FxCop 分析器和 .NET 分析器都會參考 FxCop CA 規則 ) 分析器的 .NE
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild 專案屬性是否會執行分析器？
 
-否。 專案檔中的 **RunCodeAnalysis** 屬性 (例如 *.csproj*) 只會用來執行舊版 FxCop。 它會執行建置後 msbuild 工作，以叫用 **FxCopCmd.exe**。
+不會。 專案檔中的 **RunCodeAnalysis** 屬性 (例如 *.csproj*) 只會用來執行舊版 FxCop。 它會執行建置後 msbuild 工作，以叫用 **FxCopCmd.exe**。
 
 ## <a name="so-how-do-i-run-net-analyzers-then"></a>那麼，我該如何執行 .NET 分析器呢？
 
@@ -63,5 +63,5 @@ FxCop 分析器和 .NET 分析器都會參考 FxCop CA 規則 ) 分析器的 .NE
 ## <a name="see-also"></a>另請參閱
 
 - [.NET Compiler Platform 分析器概觀](roslyn-analyzers-overview.md)
-- [遷移至 .NET 分析器](migrate-from-legacy-analysis-to-net-analyzers.md)
+- [移轉至 .NET 分析器](migrate-from-legacy-analysis-to-net-analyzers.md)
 - [安裝 .NET 分析器](install-net-analyzers.md)

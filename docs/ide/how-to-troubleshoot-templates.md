@@ -8,13 +8,13 @@ helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 42dc34d846f37ed1d7655d6758d045b2db7187d9
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: 842e34ce18767f5d16cc55d16b8346369fe6cef9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596842"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869111"
 ---
 # <a name="how-to-troubleshoot-templates"></a>如何：針對範本進行疑難排解
 

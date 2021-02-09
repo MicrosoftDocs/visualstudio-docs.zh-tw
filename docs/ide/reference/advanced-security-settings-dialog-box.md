@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ffbf2bb5a8a73ba577489af825969c3bdc23f15e
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3ece930da2bb133a19e443da4d37654367a1c862
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868981"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>[進階安全性設定] 對話方塊
 
@@ -28,7 +28,7 @@ ms.locfileid: "94351501"
 
 ![Visual Studio 中的進階安全性設定對話方塊](../media/advanced-security-settings.png)
 
-若要存取這個對話方塊，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 當 [ **專案設計** 工具] 出現時，按一下 [ **安全性** ] 索引標籤。在 [ **安全性** ] 頁面上，選取 [ **啟用 ClickOnce 安全性設定** ]，再按一下 [ **這是部分信任的應用程式** ]，然後按一下 [ **Advanced** ]。
+若要存取這個對話方塊，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 當 [ **專案設計** 工具] 出現時，按一下 [ **安全性** ] 索引標籤。在 [ **安全性** ] 頁面上，選取 [ **啟用 ClickOnce 安全性設定**]，再按一下 [ **這是部分信任的應用程式**]，然後按一下 [ **Advanced**]。
 
 ## <a name="uielement-list"></a>UIElement 清單
 
@@ -40,6 +40,6 @@ ms.locfileid: "94351501"
 
 如果您必須讓應用程式存取對應至 [發行] 頁面上所指定之 **安裝 URL** 的網站或伺服器共用，請在這裡輸入該 URL。 只有在選取 [允許應用程式存取它的來源網站] 時，才能使用此選項。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [專案設計工具、安全性頁](../../ide/reference/security-page-project-designer.md)

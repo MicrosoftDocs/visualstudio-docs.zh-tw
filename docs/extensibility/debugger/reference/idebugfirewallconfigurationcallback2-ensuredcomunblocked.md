@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: acf54d27-32a6-47e7-aba6-3cc0004edc7f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 259a6b8142e66e4abb5bf838a62671c449acad10
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2cdf9a98a3670da07b13590b8a8a6287ae783b76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869748"
 ---
 # <a name="idebugfirewallconfigurationcallback2ensuredcomunblocked"></a>IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
 

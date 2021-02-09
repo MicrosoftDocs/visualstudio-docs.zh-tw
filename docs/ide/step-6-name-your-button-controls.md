@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868877"
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名按鈕控制項
 
@@ -35,7 +35,7 @@ ms.locfileid: "96480313"
 
 1. 在表單上，選擇 [關閉]  按鈕。  (如果您仍然已選取所有按鈕，請選擇 **Esc** 鍵取消選取專案。 ) 在 [ **屬性** ] 視窗中滾動，直到您看到 **(名稱)** 屬性。  (**(名稱)** 屬性會在按字母順序排列時接近頂端。 ) 將名稱變更為 **closeButton**，如下列螢幕擷取畫面所示。
 
-    ![包含 closeButton 名稱的 [屬性] 視窗](../ide/media/express_setnameproperty.png)<br>*_具有 * ***closeButton**_ _Name * 的 [*_屬性_*] 視窗
+    ![包含 closeButton 名稱的 [屬性] 視窗](../ide/media/express_setnameproperty.png)<br>*_具有 * ***closeButton**_ _Name * 的 [**屬性**] 視窗
 
     > [!NOTE]
     > 請嘗試將按鈕的名稱變更為 [ **關閉] 按鈕**，並在 [關閉] 和 [按鈕] 單字之間加上空格。 當您這樣做時，IDE 會顯示錯誤訊息：「屬性值無效」。 控制項名稱中不允許空格 (和其他一些字元)。
@@ -48,7 +48,7 @@ ms.locfileid: "96480313"
    此索引標籤會顯示表單後方的程式碼檔案，如下列螢幕擷取畫面所示。
 
     ![包含 Visual C&#35; 程式碼的 [Form1.cs] 索引標籤](../ide/media/express_showbuttoncode.png)<br>
-*使用 c # 程式碼的 *_Form1.cs_* _ _tab *
+*使用 c # 程式碼的 **Form1.cs** _ _tab *
 
     > [!NOTE]
     > 您的 Form1.cs 或 form1.vb 索引標籤可能會改為顯示 **showButton** 為 **showButton** 。
@@ -99,7 +99,7 @@ ms.locfileid: "96480313"
 
     如果您決定要變更程式碼變數名稱，請以滑鼠右鍵按一下程式碼中的變數，然後選擇 [**重構**  >  **重新命名**]。 會重新命名該變數在程式碼中的所有執行個體。 如需詳細資訊，請參閱 [重新命名重構](../ide/reference/rename.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 * 若要移至下一個教學課程步驟，請參閱 **[步驟7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)**。
 

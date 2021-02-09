@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: be6e504d-4ab3-4141-a61b-0953ee0e038e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8a6580d0cbdead7866bbc6dd106a2aa0ea56f76
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 418ec9bdef9621f7623e254856ae33dec501a9c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736233"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870021"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]
@@ -23,7 +23,7 @@ ms.locfileid: "80736233"
 
  代表 managed 陣列物件，並允許運算式評估工具 (EE) 判斷陣列 (下限) 的基底索引。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugArrayObject2 : IDebugArrayObject
@@ -43,7 +43,7 @@ IDebugArrayObject2 : IDebugArrayObject
 ## <a name="remarks"></a>備註
  運算式評估工具會使用此介面來表示剖析樹狀結構中的 managed 陣列。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Ee. h
 
  命名空間： VisualStudio

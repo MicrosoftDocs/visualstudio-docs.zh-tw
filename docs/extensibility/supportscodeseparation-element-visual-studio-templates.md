@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1847d5f0a0fa77b1dd0ddd0d74eeba84326d0205
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a4938d90c3122d7aa42582e68aa087a9068a1ac4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869436"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 項目 (Visual Studio 範本)
 指定是否在 [**加入新專案**] 對話方塊中，啟用 [將程式 **代碼放在個別檔案中**] 核取方塊。
@@ -30,7 +30,7 @@ ms.locfileid: "94901852"
  \<VSTemplate> \<TemplateData>
  \<SupportsCodeSeparation>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <SupportsCodeSeparation> true/false </SupportsCodeSeparation>
@@ -47,7 +47,7 @@ ms.locfileid: "94901852"
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [ **新增專案** ] 或 [ **新增** 專案] 對話方塊中顯示的方式。|
 

@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dff098dc5b893ce394698118d53ae6a96fc8b28a
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 76454a77a895a44d4c6871ad5061ee4b6079e604
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868176"
 ---
 # <a name="targetclr"></a>TargetCLR
 **TargetCLR** 選項指定當應用程式載入多個 CLR 版本時要分析的 Common Language Runtime (CLR) 版本。

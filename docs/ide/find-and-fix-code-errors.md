@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49da1f46ee5e182741d3aaa56432faac39bfe0f1
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: d6da05729be409b142f6c9cec2c543fb2b9171ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833282"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869423"
 ---
 # <a name="make-code-work-in-visual-studio"></a>讓程式碼在 Visual Studio 中運作
 
@@ -166,7 +166,7 @@ Visual Studio 透過編輯器底部的 [程式 **代碼清除**] 按鈕，提供
 
 若要深入了解 Visual Studio 中的單元測試，以及了解它們如何協助您建立更高品質的程式碼，請參閱[單元測試基本概念](../test/unit-test-basics.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [深入了解使用偵錯工具](../debugger/index.yml)

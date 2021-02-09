@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f6a6262f-5183-46ce-8a45-33ef46088b98
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: be06acbef93d8858557fea5bd7563168be2d28aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a93e75be0e3a7b3c86e75b29a13b2cabe5a4573
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870164"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
 取得陣列中所有元素的列舉值。
@@ -28,7 +28,7 @@ ms.locfileid: "80736247"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetElements( 
+HRESULT GetElements( 
    IEnumDebugObjects** ppEnum
 );
 ```

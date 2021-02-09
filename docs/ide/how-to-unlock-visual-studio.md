@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dd2a688ef70064f44caccfd7c64150b7c649769
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77027571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869124"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>延長試用版或更新授權
 
@@ -26,12 +26,12 @@ ms.locfileid: "77027571"
 
 ## <a name="use-an-online-subscription"></a>使用線上訂用帳戶
 
-1. 選擇 IDE 右上角的 [登**入**] 按鈕 (或**移至 [** 檔案  >  **帳戶設定**] 開啟 [**帳戶設定**] 對話方塊，然後選擇 [登**入**] 按鈕) 。
+1. 選擇 IDE 右上角的 [登 **入**] 按鈕 (或 **移至 [** 檔案  >  **帳戶設定**] 開啟 [**帳戶設定**] 對話方塊，然後選擇 [登 **入**] 按鈕) 。
 
 1. 輸入 Microsoft 帳戶或工作/學校帳戶的認證。 Visual Studio 會尋找與您帳戶建立關聯的 Visual Studio 訂用帳戶或 Azure DevOps 組織。
 
 > [!IMPORTANT]
-> 當您從 [Team Explorer]**** 工具視窗連線到 Azure DevOps 組織時，Visual Studio 會自動尋找相關聯的線上訂用帳戶。 當您連線到 Azure DevOps 組織時，您可以使用 Microsoft 帳戶和公司或學校帳戶進行登入。 如果該使用者帳戶有線上訂閱，Visual Studio 會自動為您解除鎖定 IDE。
+> 當您從 [Team Explorer] 工具視窗連線到 Azure DevOps 組織時，Visual Studio 會自動尋找相關聯的線上訂用帳戶。 當您連線到 Azure DevOps 組織時，您可以使用 Microsoft 帳戶和公司或學校帳戶進行登入。 如果該使用者帳戶有線上訂閱，Visual Studio 會自動為您解除鎖定 IDE。
 
 如需 Visual Studio 訂用帳戶和其運作方式的詳細資訊，請參閱 [訂閱支援常見問題](https://visualstudio.microsoft.com/subscriptions/support/) 頁面。
 
@@ -66,7 +66,7 @@ ms.locfileid: "77027571"
 
 ## <a name="update-an-expired-license"></a>更新過期的授權
 
-如果您的訂用帳戶已過期，且您不再有 Visual Studio 的存取權限，您必須更新您的訂用帳戶，或新增另一個具有訂用帳戶的帳戶。 若要查看您所使用之授權的詳細資訊，請**移至 [** 檔案  >  **帳戶設定**]，並查看對話方塊右側的授權資訊。 如果您有另一個與不同帳戶相關聯的訂用帳戶，請選取 [**新增帳戶**] 連結，將該帳戶新增至對話方塊左側的 [**所有帳戶**] 清單。
+如果您的訂用帳戶已過期，且您不再有 Visual Studio 的存取權限，您必須更新您的訂用帳戶，或新增另一個具有訂用帳戶的帳戶。 若要查看您所使用之授權的詳細資訊，請 **移至 [** 檔案  >  **帳戶設定**]，並查看對話方塊右側的授權資訊。 如果您有另一個與不同帳戶相關聯的訂用帳戶，請選取 [**新增帳戶**] 連結，將該帳戶新增至對話方塊左側的 [**所有帳戶**] 清單。
 
 ## <a name="get-support"></a>取得支援
 

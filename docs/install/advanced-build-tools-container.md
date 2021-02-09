@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d21784169e541e2f4353fd6d16772b5315940166
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: d8b2148dced2d08d04c73091375f91ab37732274
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668829"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868724"
 ---
 # <a name="advanced-example-for-containers"></a>容器的進階範例
 

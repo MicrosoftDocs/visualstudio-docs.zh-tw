@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: c0d9d20000781980535259c0a739e03a47ae53e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869540"
 ---
 # <a name="inside-the-editor"></a>在編輯器內
 
@@ -45,7 +45,7 @@ ms.locfileid: "97487526"
 
 - [編輯器作業](../extensibility/inside-the-editor.md#editor-operations)
 
-- [IntelliSense](../extensibility/inside-the-editor.md#intellisense)
+- [智慧](../extensibility/inside-the-editor.md#intellisense)
 
 ## <a name="overview-of-the-subsystems"></a>子系統的總覽
 

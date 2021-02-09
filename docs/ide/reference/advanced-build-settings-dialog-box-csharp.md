@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 8569231ee1b9f19752bf58691b41ec74789bb761
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868994"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>C # )  ([Advanced Build Settings] 對話方塊
 
-使用 [專案設計工具]**** 的 [進階建置設定]**** 對話方塊，以指定專案的進階組建組態屬性。 此對話方塊只適用于 c # 專案。
+使用 [專案設計工具] 的 [進階建置設定] 對話方塊，以指定專案的進階組建組態屬性。 此對話方塊只適用于 c # 專案。
 
 ## <a name="general"></a>一般
 
@@ -48,7 +48,7 @@ ms.locfileid: "92136741"
 
 **報告內部編譯器錯誤**
 
-指定是否要向 Microsoft 報告編譯器錯誤。 如果設定為 [提示]**** \(預設值)，您會在發生內部編譯器錯誤時收到提示，讓您選擇以電子方式將錯誤報告傳送給 Microsoft。 如果設定為 [傳送]****，則會自動傳送錯誤報告。 如果設定為 [佇列]****，則會將錯誤報告排入佇列。 如果設定為 [無]****，則會以編譯器的文字輸出報告錯誤。 如需詳細資訊，請參閱 [/errorreport (c # 編譯器選項) ](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)。
+指定是否要向 Microsoft 報告編譯器錯誤。 如果設定為 [提示]\(預設值)，您會在發生內部編譯器錯誤時收到提示，讓您選擇以電子方式將錯誤報告傳送給 Microsoft。 如果設定為 [傳送]，則會自動傳送錯誤報告。 如果設定為 [佇列]，則會將錯誤報告排入佇列。 如果設定為 [無]，則會以編譯器的文字輸出報告錯誤。 如需詳細資訊，請參閱 [/errorreport (c # 編譯器選項) ](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)。
 
 **檢查算術溢位/反向溢位**
 

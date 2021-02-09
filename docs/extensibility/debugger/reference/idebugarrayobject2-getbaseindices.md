@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 882951a2-3da0-49bf-8d1e-7daedd13ffe6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 925ce3a7bcce9f787e02c2bd2714f8b26d8cec26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 074bc97bab80e09d6b720d23e9d617cdfcdc6350
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870047"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 針對指定陣列中的維度數目的每個索引，抓取基底索引 (下限) 。

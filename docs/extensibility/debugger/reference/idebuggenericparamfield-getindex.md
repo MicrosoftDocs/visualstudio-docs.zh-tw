@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 8e0bdb26-1247-44d9-8d80-ec6e35187fb4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b31acd57685058795186fcecb73164218d5ad15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c45f7c83c840566fb494c7944ccab9dbe37c3875
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727993"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869696"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 抓取這個泛型參數的索引。
@@ -48,7 +48,7 @@ int GetIndex(
 例如，針對 Dictionary (K，V) ，K 為索引0，V 為索引1。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面的**CDebugGenericParamFieldType**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面的 **CDebugGenericParamFieldType** 物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)

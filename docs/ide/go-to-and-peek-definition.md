@@ -12,15 +12,15 @@ helpviewer_keywords:
 - member definition [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fab4bae999825d7d2fb11dd232d1e271b4f62d5
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 804c49c079f619a774cb1f99d54b2b2af5a3929d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597492"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869358"
 ---
 # <a name="view-type-and-member-definitions"></a>檢視型別與成員的定義
 
@@ -36,7 +36,7 @@ ms.locfileid: "95597492"
 
 ![滑鼠點按移至定義動畫](../ide/media/click_gotodef.gif)
 
-您可以移至 [**工具** 選項 **Go To Definition**  >  **Options**  >  **文字編輯器**  >  **一般**]，然後 **Alt** **Ctrl** + 從 [**使用輔助按鍵**] 下拉式清單中選取 [alt] 或 [Ctrl **Alt** ]，來變更滑鼠點擊 [移至定義] 的輔助按鍵。 您也可以停用滑鼠點按 [移至定義]，方法是取消核取 [Enable mouse click to perform Go To Definition] (啟用滑鼠點按以執行移至定義) 核取方塊。
+您可以移至 [**工具** 選項  >    >  **文字編輯器**  >  **一般**]，然後  + 從 [**使用輔助按鍵**] 下拉式清單中選取 [alt] 或 [Ctrl **Alt** ]，來變更滑鼠點擊 [移至定義] 的輔助按鍵。 您也可以停用滑鼠點按 [移至定義]，方法是取消核取 [Enable mouse click to perform Go To Definition] (啟用滑鼠點按以執行移至定義) 核取方塊。
 
 ![啟用滑鼠點按移至定義](../ide/media/editor_options_mouse_click_gotodef.png)
 

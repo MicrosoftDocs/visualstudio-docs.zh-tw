@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0930640b-eb84-48ef-a8f7-d4268f55c99c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b206cc4aa7c1ff388d6868fa8a0533d15da094ff
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: af4683dede8a57b2d42acdf357808b465efb1e8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869501"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 指定 IntelliSense 主機旗標。
@@ -40,7 +40,7 @@ enum IntellisenseHostFlags
 
 ### <a name="parameters"></a>參數
 
-|成員|描述|
+|成員|Description|
 |-------------|-----------------|
 |`IHF_READONLYCONTEXT`|內容緩衝區是唯讀的。|
 |`IHF_NOSEPARATESUBJECT`|沒有主體文字。 內容緩衝區包含 IntelliSense-目標 (意指 `!IHF_READONLYCONTEXT`) 。|

@@ -5,17 +5,17 @@ description: 使用 Visual Studio 工作負載和元件識別碼為通用測試�
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 986186c0fb4a6819d85f9b3771d89eeb6d96e893
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f60ee53234d45ca43ea60fa4a56e51d7d23e914
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76158835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868562"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Team Explorer 2017)
 

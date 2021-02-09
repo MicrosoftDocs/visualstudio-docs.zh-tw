@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 275aacba-b2af-4d34-8931-ee30d777a256
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b4d65490c0ae75c7ab17fd7764d499cb39824f7
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 8ae2d3678ec05ce583c9c0b7daf202f3272f4b77
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148308"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868448"
 ---
 # <a name="collect-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>使用分析工具命令列收集服務的並行資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的並行方法可讓您收集資源爭用資料和執行緒活動資料，顯示 CPU 使用率、執行緒爭用、執行緒移轉、同步處理延遲、重疊 IO 區域 和其他系統事件。
@@ -26,7 +26,7 @@ ms.locfileid: "98148308"
 
 ## <a name="common-tasks"></a>常見工作
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**附加至執行中的 .NET 服務**|-   [如何：將分析工具附加至 .NET 服務以收集並行資料](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)|
 |**新增階層互動資料**|-   [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
@@ -36,7 +36,7 @@ ms.locfileid: "98148308"
 
 ### <a name="profile-windows-services"></a>分析 Windows 服務
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**使用取樣方法進行分析**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|
 |**使用檢測方法進行分析**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
@@ -44,7 +44,7 @@ ms.locfileid: "98148308"
 
 ### <a name="profile-concurrency-data"></a>分析並行資料
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**分析獨立應用程式**|-   [收集並行資料](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 |**分析 ASP.NET Web 應用程式**|-   [收集並行資料](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
@@ -54,5 +54,5 @@ ms.locfileid: "98148308"
 
 - [並行視覺化檢視](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>參考資料
+## <a name="reference"></a>參考
 - [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)

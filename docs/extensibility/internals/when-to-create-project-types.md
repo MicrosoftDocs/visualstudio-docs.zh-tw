@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 458ca77ebcd8017b9834a8925edec255ca04cc13
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 161be2b157c079312cdbbee0b6913c92c3c61578
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487825"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869514"
 ---
 # <a name="when-to-create-project-types"></a>建立專案類型的時機
 建立新的專案類型可為使用者提供自訂的基礎 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 但是，並非所有自訂都需要建立新的專案類型 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 下列指導方針可協助您判斷您的案例是否需要新的專案類型。
@@ -49,7 +49,7 @@ ms.locfileid: "97487825"
 ## <a name="use-an-existing-project-type"></a>使用現有的專案類型
  有時不需要建立新專案。 下表顯示您不需要為其建立專案類型的工作。
 
-|Task|描述|
+|Task|Description|
 |----------|-----------------|
 |處理命令|任何 VSPackage 都可以處理命令。|
 |建立編輯器|您可以註冊自訂編輯器。 如需詳細資訊，請參閱 [檔視窗和編輯器](/previous-versions/bb165691(v=vs.100))。|

@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bb87da3cc668ba946c6ee607fa3be5a2c79cc32
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 54ba61f3d4f82a5db25d0079193955a5569afa8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435322"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867876"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 
@@ -23,7 +23,7 @@ Microsoft 混合的最小規則會著重于 c + + 專案中支援 Common Languag
 
 在您為支援 Common Language Runtime 的 c + + 專案所建立的任何自訂規則集中包含此規則集。
 
-|規則|說明|
+|規則|Description|
 |----------|-----------------|
 |[C6001](/cpp/code-quality/c6001)|使用尚未初始化的記憶體|
 |[C6011](/cpp/code-quality/c6011)|取值的指標為 NULL|

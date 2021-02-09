@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 154f168044e5395a534b4a79ea44d9eafe6293f6
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a7c1e22d10e7ffa20c73e1b4c42541bc22eab4bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719275"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868227"
 ---
 # <a name="summary-view"></a>摘要檢視
 [摘要] 檢視顯示分析回合中效能耗費最多資源的函式或物件資訊。 此檢視會提供時間軸圖表，以及根據分析方法效能計量之兩個以上耗費最多資源的函式或物件清單。 此檢視中的資料取決於所使用的分析方法 (取樣、檢測或並行) 以及是否收集 .NET 記憶體配置。
@@ -38,7 +38,7 @@ ms.locfileid: "98719275"
 ## <a name="notifications-links"></a>通知連結
  您可以按一下 [通知] 清單中的連結，以設定報表的顯示選項。 清單是要時間軸圖形右側。
 
-|選項|描述|
+|選項|Description|
 |-|-|
 |**顯示非使用者程式碼**<br /><br /> **顯示 Just My Code**|不適用於原生程式碼或使用檢測方法所收集的分析資料。 切換只顯示使用者程式碼中的資料 ([顯示 Just My Code]) 以及顯示所有程式碼的資料 (包含系統程式碼) ([顯示非使用者程式碼])。 根據預設，會將資料限制為使用者程式碼。 若要變更設定，請參閱 [如何：篩選程式代碼剖析工具報表檢視以顯示 Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)。|
 |**查看指引**|在 [錯誤清單] 視窗中顯示效能規則警告。 如需詳細資訊，請參閱[使用效能規則分析資料](../profiling/using-performance-rules-to-analyze-data.md)|
@@ -46,7 +46,7 @@ ms.locfileid: "98719275"
 ## <a name="report"></a>報表
  您可以按一下 [報表] 清單中的連結以開啟不同的檢視，以及比較、儲存或篩選報表。 清單是要時間軸圖形右側。
 
-|選項 |描述 |
+|選項 |Description |
 |----------------------------| - |
 | **顯示修改過的呼叫樹狀圖** | 顯示 [呼叫樹狀圖檢視] 中耗費最多資源的執行路徑。 如需詳細資訊，請參閱 [呼叫樹狀檢視](../profiling/call-tree-view.md)。 |
 | **顯示熱門程式行** | 不適用於使用檢測方法所收集的分析資料。 在 [程式行檢視] 中，顯示耗費最多資源的原始程式碼行。 如需詳細資訊，請參閱[程式行檢視](../profiling/lines-view.md)。 |

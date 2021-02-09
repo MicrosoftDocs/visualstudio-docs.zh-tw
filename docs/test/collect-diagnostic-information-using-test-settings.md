@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: fc8bbf1aea3e596af392db97ba33ebdaff5d1f56
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 564d1598dd4458a902df5cf0ddcae37afbf9c423
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868149"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>使用測試設定收集診斷資訊
 

@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8090a39426455e0f6d877c26a7f0a50f00f10c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 66815265544afdee263490ed5eec92301911e3cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719756"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868162"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 *VSPerfCmd.exe* **Sys** 選項會設定對系統呼叫事件取樣的分析事件 (從已分析應用程式到作業系統的函式呼叫)，並選擇性變更取樣間隔中的系統呼叫數目 (預設值為 10)。

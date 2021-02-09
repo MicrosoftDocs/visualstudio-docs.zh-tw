@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 08b44341-7bf1-4a8c-8b79-98ae5785b195
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e29fe09905119057224b45b455e4f56e5ce904af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61085ee3e8323b2aa297473cffeebb998fc5c11b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736179"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870177"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 取得陣列的元素。
@@ -28,7 +28,7 @@ ms.locfileid: "80736179"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetElement( 
+HRESULT GetElement( 
    DWORD          dwIndex,
    IDebugObject** ppElement
 );

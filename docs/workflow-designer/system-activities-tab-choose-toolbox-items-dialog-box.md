@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 280dcf7c9fe07c7b3266822f0d8b92b1c399075e
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 73027013916d909fd5d9f4c9f00949ce9a863708
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867941"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>[系統] 索引標籤，選擇工具箱專案對話方塊
 

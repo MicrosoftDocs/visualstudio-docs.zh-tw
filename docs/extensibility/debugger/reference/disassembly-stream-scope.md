@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fae1f22c6db22cd6cff93cfb1b98a28620a1537c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54773ee6f770855122992f49bebad44fa1f6129a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870294"
 ---
 # <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
 指定反組解碼資料流程的範圍。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DISASSEMBLY_STREAM_SCOPE {
@@ -64,7 +64,7 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 
 這些值可能會與位結合 `OR` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 68a4848f00153206b87dd3e5893bbaaeccf3b358
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868747"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>步驟 8：新增驗證玩家是否勝利的方法
 您已建立一個有趣的遊戲，但它需要額外的項目才能完成。 這個遊戲應該在玩家獲勝時結束，因此您需要加入 `CheckForWinner()` 方法以驗證玩家是否贏了。
@@ -45,10 +45,10 @@ ms.locfileid: "96479286"
 3. 儲存並執行程式。 玩遊戲並將所有的圖示配對。 當您贏得時，程式會顯示「祝賀 **MessageBox** (如下列螢幕擷取畫面所示) ，然後關閉該方塊。
 
      ![配對遊戲和 MessageBox](../ide/media/express_tut4step8.png)<br/>
-**_配對遊戲_* _ _與 * ***MessageBox**_
+***配對遊戲** _ _With * ***MessageBox***
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移至下一個教學課程步驟，請參閱 _ *[步驟9：嘗試其他功能](../ide/step-9-try-other-features.md)* *。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟9：嘗試其他功能](../ide/step-9-try-other-features.md)**。
 
 - 若要回到上一個教學課程步驟，請參閱 [步驟7：讓配對保持可見](../ide/step-7-keep-pairs-visible.md)。

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a267a64a6b6d59b64ffb70596154d1e54f368410
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 5568961cc8b527ecd724ab9a1d26ab4a641696b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869280"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：簽署應用程式和部署資訊清單
 
@@ -63,17 +63,17 @@ ms.locfileid: "94351267"
 
      [選取檔案] 對話方塊隨即出現。
 
-3. 在 [選取檔案] 對話方塊中，瀏覽至您要使用的金鑰檔 ( *.pfx* ) 位置，然後按一下 [開啟]。
+3. 在 [選取檔案] 對話方塊中，瀏覽至您要使用的金鑰檔 (*.pfx*) 位置，然後按一下 [開啟]。
 
     > [!NOTE]
     > 此選項僅支援具有 *.pfx* 副檔名的檔案。 如果您的金鑰檔或憑證是其他格式，請將它儲存在 Windows 憑證存放區，並遵循上一個程序所述選取該憑證。 選取的憑證用途應包含程式碼簽署。
 
      [輸入密碼以開啟檔案] 對話方塊隨即出現。 (如果 *.pfx* 檔案是儲存在您的 Windows 憑證存放區，或未受密碼保護，系統就不會提示您輸入密碼)。
 
-4. 輸入密碼以存取金鑰檔，然後選取 **Enter** 。
+4. 輸入密碼以存取金鑰檔，然後選取 **Enter**。
 
 > [!NOTE]
-> *.pfx* 檔案不能包含憑證鏈結資訊。 如果有的話，將會發生下列匯入錯誤：找 **不到憑證和私密金鑰進行解密** 。 若要移除憑證鏈資訊，您可以使用 *certmgr.msc* ，並停用在匯出 * .pfx 檔案時 **包含所有憑證**[的選項](/previous-versions/aa730868(v=vs.80))。
+> *.pfx* 檔案不能包含憑證鏈結資訊。 如果有的話，將會發生下列匯入錯誤：找 **不到憑證和私密金鑰進行解密**。 若要移除憑證鏈資訊，您可以使用 *certmgr.msc* ，並停用在匯出 * .pfx 檔案時 **包含所有憑證**[的選項](/previous-versions/aa730868(v=vs.80))。
 
 ## <a name="sign-using-a-test-certificate"></a>使用測試憑證簽署
 
@@ -113,7 +113,7 @@ ms.locfileid: "94351267"
 
 3. 發行應用程式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [強式名稱組件](/dotnet/framework/app-domains/strong-named-assemblies)
 - [如何：建立公開/私密金鑰組](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)

@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 9667b0a5-4295-46cc-9388-b75c1350be15
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dab01c1e956ced7e6894b951ab16f4ce68eb778b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64717948f6406d1c6e9a5c1fabfec4b3a16bf116
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870255"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
 此介面描述陣列符號或類型。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDebugArrayField : IDebugContainerField
+IDebugArrayField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
@@ -43,7 +43,7 @@ IDebugArrayField : IDebugContainerField
 |[GetElementType](../../../extensibility/debugger/reference/idebugarrayfield-getelementtype.md)|取得陣列中的元素類型。|
 |[GetRank](../../../extensibility/debugger/reference/idebugarrayfield-getrank.md)|取得陣列的順位。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio

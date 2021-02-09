@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2684b197fc32b33081c8ecdfa8139b3c8f14e752
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 77daa47cdd6336849903202233392d3eecc33c1a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868890"
 ---
 # <a name="step-6-add-a-timer"></a>步驟 6：新增計時器
 接下來，您可以將 <xref:System.Windows.Forms.Timer> 控制項新增至配對遊戲。 計時器會等候指定的毫秒數，然後引發事件，稱為「刻度」。 這對於定期啟動動作或重複動作非常有用。 在這個案例中，您將使用計時器讓玩家選擇兩個圖示，如果圖示不相符，則在短時間之後再次隱藏兩個圖示。
@@ -30,12 +30,12 @@ ms.locfileid: "96480547"
 1. 在 [Windows Forms 設計工具] 的工具箱中，選擇 [計時器] (位於 [元件] 類別)，然後選擇 **Enter** 鍵，按兩下計時器，將計時器控制項新增至表單。 計時器的圖示（稱為 **Timer1**）應該會出現在表單下方的空間中，如下圖所示。
 
      ![計時器](../ide/media/express_timer.png)<br/>
-**_計時器_* _
+***計時器***
 
     > [!NOTE]
     > 如果工具箱是空的，請確定先選取表單設計工具 (而不是選取表單的後置程式碼)，再開啟工具箱。
 
-2. 選擇 _ *Timer1** 圖示來選取計時器。 在 [屬性] 視窗中，從檢視事件切換為檢視屬性。 然後，將計時器的 [Interval] 屬性設為 [750]，但是將 [Enabled] 屬性設為 [False]。 **Interval** 屬性會告知計時器在「刻度」之間，或當其觸發其 <xref:System.Windows.Forms.Timer.Tick> 事件時應等候多久的時間。 值為 750 表示會告知計時器等待四分之三秒 (750 毫秒)，再引發其 Tick 事件。 您只會在玩家選擇第二個標籤時呼叫 <xref:System.Windows.Forms.Timer.Start> 方法，以啟動計時器。
+2. 選擇 **Timer1** 圖示以選取計時器。 在 [屬性] 視窗中，從檢視事件切換為檢視屬性。 然後，將計時器的 [Interval] 屬性設為 [750]，但是將 [Enabled] 屬性設為 [False]。 **Interval** 屬性會告知計時器在「刻度」之間，或當其觸發其 <xref:System.Windows.Forms.Timer.Tick> 事件時應等候多久的時間。 值為 750 表示會告知計時器等待四分之三秒 (750 毫秒)，再引發其 Tick 事件。 您只會在玩家選擇第二個標籤時呼叫 <xref:System.Windows.Forms.Timer.Start> 方法，以啟動計時器。
 
 3. 選擇 [Windows Forms 設計工具] 中的計時器控制項圖示，然後選擇 **Enter** 鍵或按兩下計時器，以新增空的 Tick 事件處理常式。 以下列程式碼取代程式碼，或手動輸入下列程式碼至事件處理常式。
 

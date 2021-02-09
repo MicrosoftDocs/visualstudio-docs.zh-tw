@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 182c896aea682287f89119217e5d4b8b860b6dcf
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 1e029e0127a361bc133c008cef36d4426617c83b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437079"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867824"
 ---
 # <a name="native-minimum-rules-rule-set"></a>原生最小規則規則集
 
@@ -23,7 +23,7 @@ Microsoft 原生最小規則著重于機器碼中最嚴重的問題，包括潛�
 
 在您為原生專案建立的任何自訂規則集中包含此規則集。
 
-|規則|說明|
+|規則|Description|
 |----------|-----------------|
 |[C6001](/cpp/code-quality/c6001)|使用尚未初始化的記憶體|
 |[C6011](/cpp/code-quality/c6011)|取值的指標為 NULL|

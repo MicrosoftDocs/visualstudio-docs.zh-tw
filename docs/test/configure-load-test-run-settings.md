@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 24f267e32468958171266f0e8aaf45c69b2c373a
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: a606f2cb9547250db79de9defba57dc95a402bf1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868084"
 ---
 # <a name="configure-load-test-run-settings"></a>設定負載測試回合設定
 

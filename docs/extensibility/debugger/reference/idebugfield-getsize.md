@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 73329924-3751-4f44-af54-5986b7943374
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9f19a914de2e74613e987753c8062215fd0d0403
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6330179f1bbfffcb1f590dfc09ae0c06385f12e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869852"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 這個方法會取得欄位的大小（以位元組為單位）。
@@ -28,7 +28,7 @@ ms.locfileid: "80728804"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetSize( 
+HRESULT GetSize( 
    DWORD* pdwSize
 );
 ```

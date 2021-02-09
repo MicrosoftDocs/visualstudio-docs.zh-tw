@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f4ca1908fbd54c0e8d12212bed19fc77e1dff51
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 4081c79b7492e369e19187a099bf975275cb371c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487773"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869488"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本概念
 Windows Installer 在使用者的電腦上安裝和卸載應用程式或軟體產品，以稱為 Windows Installer 元件的單位來執行這些工作 (有時候稱為 WICs 或只是) 的元件。 GUID 會識別每個 WIC，也就是使用 Windows Installer 進行安裝的基本安裝單位和參考計數。

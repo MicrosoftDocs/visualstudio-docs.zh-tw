@@ -11,17 +11,17 @@ helpviewer_keywords:
 - command-line
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ecdda55bbe4e79af01f8fb9a9a2b77f775548b10
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3fa063d82a9d0ba9f26e326961b1345b47151b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868723"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>如何在回應檔中定義設定
 
@@ -41,7 +41,7 @@ vs_enterprise.exe --in customInstall.json
 
 建立配置的系統管理員可以修改配置中的 `response.json` 檔案，以控制使用者從配置中安裝 Visual Studio 時所看到的預設設定。  例如，如果系統管理員想要預設安裝的特定工作負載和元件，則可以設定 `response.json` 檔案來進行新增。
 
-從配置資料夾執行 Visual Studio 安裝程式時，會「自動」__ 使用配置資料夾中的回應檔。  您不需要使用 `--in` 選項。
+從配置資料夾執行 Visual Studio 安裝程式時，會「自動」使用配置資料夾中的回應檔。  您不需要使用 `--in` 選項。
 
 您可以更新於離線配置資料夾中建立的 `response.json` 檔案，以針對從此配置安裝的使用者定義預設設定。
 

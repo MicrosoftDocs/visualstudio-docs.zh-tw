@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c7a25246f42d288020481330fe60e312849862d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67a5bfe92547738a672cb6881234ae80f76aeda8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869761"
 ---
 # <a name="idebugfield"></a>IDebugField
 這個介面代表一個欄位，也就是符號或型別的描述。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugField : IUnknown
@@ -62,7 +62,7 @@ weather stormy;
 
  欄位是否代表符號或類型，可以藉由呼叫 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 和檢查 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 結果來決定。 如果 `FIELD_KIND_TYPE` 設定位，則欄位為類型，如果 `FIELD_KIND_SYMBOL` 設定位，則為符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio

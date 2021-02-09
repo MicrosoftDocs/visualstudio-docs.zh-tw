@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a4286feb778e17b345f964b1b7ccca5343e461
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: a009f5667f2eb01b22c45c9439a582d2319e6df9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868968"
 ---
 # <a name="step-5-add-label-references"></a>步驟 5：新增標籤參考
 程式需要追蹤玩家所選擇的 Label 控制項。 現在，程式會顯示玩家選擇的所有標籤。 但是，我們將要變更該行為。 在選擇第一個標籤之後，程式應該會顯示標籤的圖示。 在選擇第二個標籤之後，程式應該要短暫顯示這兩個圖示，然後再次隱藏這兩個圖示。 您的程式現在將會使用 *參考變數*，追蹤第一次和第二次選擇的 Label 控制項。

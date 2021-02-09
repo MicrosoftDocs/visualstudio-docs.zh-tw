@@ -8,15 +8,15 @@ helpviewer_keywords:
 - code analysis, rule sets reference
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5b7f2ecdc854269288c61eaeee6d46b4a74d91
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cead2d51a13ce4ec137edcd55c7db91d84b04f7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436975"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867772"
 ---
 # <a name="code-analysis-rule-set-reference"></a>程式碼分析規則集參考
 
