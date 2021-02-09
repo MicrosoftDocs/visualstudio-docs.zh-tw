@@ -5,15 +5,15 @@ ms.date: 06/25/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 2d1eb4cc53b6123acbba9741d33d3401d44cf6d7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c0aedbccdb82bd91fe201a23b6201a3cdd7db283
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908689"
 ---
 # <a name="work-with-sql-server-and-r"></a>使用 SQL Server 和 R
 
@@ -37,11 +37,11 @@ Visual Studio 對於 SQL Server 有絕佳的支援，可讓資料科學家建立
 
 RTVS 支援將 SQL 查詢新增到 R 專案，讓您在不同的內容中反覆開發 SQL 查詢，直到達到您想要的結果。
 
-若要新增 SQL 查詢檔案，請以滑鼠右鍵按一下方案總管中的專案，選取 [**加入**  >  **新專案**]，然後選取 [ **SQL 查詢**檔案類型]：
+若要新增 SQL 查詢檔案，請以滑鼠右鍵按一下方案總管中的專案，選取 [**加入**  >  **新專案**]，然後選取 [ **SQL 查詢** 檔案類型]：
 
 ![將 SQL 查詢項目新增至專案](media/sql-add-item.png)
 
-此命令會在 Visual Studio 的 Transact-SQL 編輯器中開啟檔案，提供完整的 IntelliSense for SQL 及執行查詢的能力。 若要讓這些功能運作，您需要使用編輯器工具列的 [連接] 按鈕連接到資料庫，或嘗試執行 (**Ctrl** + **Shift** + **E**的查詢，這也適用于選取的) 。 任一方式都會顯示 [連線] 對話方塊︰
+此命令會在 Visual Studio 的 Transact-SQL 編輯器中開啟檔案，提供完整的 IntelliSense for SQL 及執行查詢的能力。 若要讓這些功能運作，您需要使用編輯器工具列的 [連接] 按鈕連接到資料庫，或嘗試執行 (**Ctrl** + **Shift** + **E** 的查詢，這也適用于選取的) 。 任一方式都會顯示 [連線] 對話方塊︰
 
 ![SQL 連線對話方塊](media/sql-connection-dialog.png)
 
@@ -73,17 +73,17 @@ Transact-SQL 編輯器支援各種不同的其他功能，例如檢視查詢執�
 
 ### <a name="add-a-database-connection"></a>新增資料庫連接
 
-1. 選取 [ **R 工具**  >  **資料**  >  **加入資料庫連接**]，以顯示 [**連接屬性**] 對話方塊。 您可以在這裡指定資料來源名稱 (在此情況下是 SQL Server)、伺服器名稱、驗證模式，以及資料庫名稱。 選取 [測試連接]**** 先驗證您的輸入，再關閉對話方塊。
+1. 選取 [ **R 工具**  >  **資料**  >  **加入資料庫連接**]，以顯示 [**連接屬性**] 對話方塊。 您可以在這裡指定資料來源名稱 (在此情況下是 SQL Server)、伺服器名稱、驗證模式，以及資料庫名稱。 選取 [測試連接] 先驗證您的輸入，再關閉對話方塊。
 
     ![SQL 連線對話方塊](media/sql-connection-string-dialog.png)
 
-1. 一旦您對有效的連線選取 [確定]****，Visual Studio 就會在新的 *settings.R* 檔案中產生名為 `dbConnection` 的連接字串。 RTVS 自動將此檔案設為來源 (執行)，因此您可以立即使用 R 指令碼中的連接︰
+1. 一旦您對有效的連線選取 [確定]，Visual Studio 就會在新的 *settings.R* 檔案中產生名為 `dbConnection` 的連接字串。 RTVS 自動將此檔案設為來源 (執行)，因此您可以立即使用 R 指令碼中的連接︰
 
 ![SQL Settings.R 檔案](media/sql-settings-dot-r.png)
 
 ### <a name="write-and-test-a-sql-stored-procedure"></a>撰寫及測試 SQL 預存程序
 
-若要加入新的 SQL 預存程式，請在專案上按一下滑鼠右鍵、選取 [**加入**  >  **新專案**]、從範本清單中選取 [**具有 R 的 SQL 預存**程式]、為檔案命名，然後選取 **[確定]**。 預設檔名為 *SqlSProc.R*；為了便於閱讀，本節的其餘部分會使用檔名 *StoredProcedure.R*。 如果您有多個預存程序，每個檔案必須具有唯一的檔名。
+若要加入新的 SQL 預存程式，請在專案上按一下滑鼠右鍵、選取 [**加入**  >  **新專案**]、從範本清單中選取 [**具有 R 的 SQL 預存** 程式]、為檔案命名，然後選取 **[確定]**。 預設檔名為 *SqlSProc.R*；為了便於閱讀，本節的其餘部分會使用檔名 *StoredProcedure.R*。 如果您有多個預存程序，每個檔案必須具有唯一的檔名。
 
 RTVS 會為預存程序建立三個檔案：*.R* 檔案供 R 程式碼使用、*.Query.sql* 檔案供 SQL 程式碼使用，而 *.Template.sql* 檔案則結合這兩者。 後面兩個會出現在 [方案總管] 中，作為 *.R* 檔案的子系：
 
@@ -119,7 +119,7 @@ OutputDataSet <- InputDataSet
 
 如您所見，這個簡單的步驟會自動產生 R 程式碼以開啟 *.sql* 檔案，並將其內容讀入字串，然後將它傳遞給 RODBC 套件以傳送給 SQL Server。
 
-您現在可以透過互動方式撰寫 R 程式碼，以操作所需的 `InputDataSet` 資料框架。 請記住，您可以在編輯器中只選取 R 程式碼，並按 **Ctrl**+**Enter** 將它傳送至[互動式視窗](interactive-repl-for-r-in-visual-studio.md)。
+您現在可以透過互動方式撰寫 R 程式碼，以操作所需的 `InputDataSet` 資料框架。 請記住，您可以在編輯器中只選取 R 程式碼，並按 **Ctrl**+**Enter** 將它傳送至 [互動式視窗](interactive-repl-for-r-in-visual-studio.md)。
 
 最後，*.Template.sql* 檔案 (在此範例中為 *StoredProcedure.Template.sql*) 會包含用於產生 SQL 預存程序的範本：
 
@@ -154,11 +154,11 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 ### <a name="publish-a-sql-stored-procedure"></a>發行 SQL 預存程序
 
 1. 選取 [ **R 工具**  >  **資料**  >  **發佈與選項**] 功能表命令。
-1. 在出現的對話方塊中，將 [Publish to:] (發行到:)**** 變更為 [資料庫]****，並指定目標，然後選取 [發行]****，RTVS 就會建置及發行預存程序︰
+1. 在出現的對話方塊中，將 [Publish to:] (發行到:) 變更為 [資料庫]，並指定目標，然後選取 [發行]，RTVS 就會建置及發行預存程序︰
 
     ![發行預存程序對話方塊](media/sql-publish-with-options.png)
 
 1. 若要發行專案中的所有預存程式，您可以使用 [ **R 工具**  >  **資料**  >  **發佈預存程式**] 命令，此命令也適用于以滑鼠右鍵按一下方案總管中的專案時。
 
 > [!Tip]
-> 如果 SQL Server 物件總管在 Visual Studio 中開啟，則您已發行的預存程式會出現在資料庫**的 [可**  >  程式性**預存程式**] 資料夾中。 以滑鼠右鍵按一下並選取 [執行程序]****，或在 *.sql* 查詢視窗中以互動方式呼叫它，即可從物件總管中執行它。
+> 如果 SQL Server 物件總管在 Visual Studio 中開啟，則您已發行的預存程式會出現在資料庫 **的 [可**  >  程式性 **預存程式**] 資料夾中。 以滑鼠右鍵按一下並選取 [執行程序]，或在 *.sql* 查詢視窗中以互動方式呼叫它，即可從物件總管中執行它。

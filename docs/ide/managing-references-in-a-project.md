@@ -20,15 +20,15 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf737d26ec14c2a108125425a3b66cdf4a0e519
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: b9beb330f452ff97b7f5a81539cfc62c02404901
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870946"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909164"
 ---
 # <a name="manage-references-in-a-project"></a>管理專案中的參考
 
@@ -82,7 +82,7 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 
 1. 以滑鼠右鍵按一下導致錯誤之專案中的 [參考] 或 [相依性] 節點，然後選擇 [新增參考]。
 
-1. 依序按一下 [Windows] 索引標籤和 [延伸模組] 子索引標籤，然後針對舊延伸模組 SDK 取消核取方塊，並核取新延伸模組 SDK 的核取方塊。 按一下 [確定]。
+1. 依序按一下 [Windows] 索引標籤和 [延伸模組] 子索引標籤，然後針對舊延伸模組 SDK 取消核取方塊，並核取新延伸模組 SDK 的核取方塊。 按一下 [確定]  。
 
 ## <a name="add-a-reference-at-design-time"></a>在設計階段新增參考
 

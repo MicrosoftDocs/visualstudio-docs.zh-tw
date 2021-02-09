@@ -11,15 +11,15 @@ helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 51e4a2cc4fb74309c44b8068152253de92eed0df
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: fc61f66b2aefaf0e43b1b5af819e0e244feec114
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910314"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 方案的全球化與當地語系化
   本節包含在非英文設定的 Windows 電腦上執行 Microsoft Office Excel 解決方案之特殊考量的相關資訊。 當您使用 Visual Studio 建立其他種類的解決方案時，遇到的 Microsoft Office 解決方案全球化和當地語系化問題層面，大部分都一樣。 如需一般資訊，請參閱 [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)。

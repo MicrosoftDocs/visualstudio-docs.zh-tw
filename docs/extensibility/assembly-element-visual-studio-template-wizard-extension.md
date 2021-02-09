@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4807014a99fd479a126481db910097ceefd5f806
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: ffc20d0156aeb04131e19c25fef8ab4455b7ab0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908141"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>元件專案 (Visual Studio 範本 wizard 擴充) 
 指定執行介面之元件的名稱或強式名稱 `IWizard` 。
@@ -31,7 +31,7 @@ ms.locfileid: "94671717"
 \<WizardExtension>
 \<Assembly>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Assembly>AssemblyName</Assembly>
@@ -48,7 +48,7 @@ ms.locfileid: "94671717"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|包含用於自訂範本 wizard 的註冊專案。|
 

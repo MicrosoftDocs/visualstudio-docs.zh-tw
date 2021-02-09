@@ -16,15 +16,15 @@ helpviewer_keywords:
 - WordArt, adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0662c9324aaab8f5a368bc4db300ccff1a0ece33
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 596f7ea7586ee70ae740dc237d83b7a4b40fa83f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910185"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>如何：以程式設計方式將圖片和文字藝術新增至檔
   您可以在設計階段或執行階段，將圖片和繪圖物件加入至您的文件。 文字藝術師可讓您將裝飾文字加入至 Microsoft Office Word 文件。 這些特殊文字效果是繪圖物件，您可自訂並將它們插入至文件。

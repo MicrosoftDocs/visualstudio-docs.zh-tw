@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: c409ad35b3d9c09a5dbe574d00a24d1f2bcb8370
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 6d00979ff1672376c5d22da5ef55e5ad3bdf344a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909097"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>最佳化 Visual Studio 啟動時間
 
@@ -31,7 +31,7 @@ Visual Studio 設計旨在盡可能快速且有效率地啟動。 不過，某�
 
 為了避免延長啟動時間，Visual Studio 使用「隨需」的方式來載入延伸模組。 此行為代表延伸模組不會在 Visual Studio 立即開啟，而是視需要開啟。 此外，因為在先前的 Visual Studio 工作階段中保持開啟的工具視窗可能會讓啟動時間變慢，所以 Visual Studio 會以更智慧的方式開啟工具視窗，以避免影響啟動時間。
 
-如果 Visual Studio 偵測到啟動變慢，就會出現快顯訊息，警告您導致速度變慢的延伸模組或工具視窗。 此訊息提供 [管理 Visual Studio 效能] 對話方塊的連結。 您也可以從功能表列選擇 [說明 **Help**  >  **管理 Visual Studio 效能**] 來存取此對話方塊。
+如果 Visual Studio 偵測到啟動變慢，就會出現快顯訊息，警告您導致速度變慢的延伸模組或工具視窗。 此訊息提供 [管理 Visual Studio 效能] 對話方塊的連結。 您也可以從功能表列選擇 [說明  >  **管理 Visual Studio 效能**] 來存取此對話方塊。
 
 ![管理 Visual Studio 效能 - 快顯會顯示「我們注意到擴充功能 ... 讓 Visual Studio 變慢」的訊息](../ide/media/vside_perfdialog_popup.png)
 

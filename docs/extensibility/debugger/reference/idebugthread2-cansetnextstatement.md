@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4232c25bfe9acd7f17c88c28aa4211a9c62175f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ce1d04303edb34de98ead8d416221e7f71338ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909285"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 判斷目前的指令指標是否可以設定為指定的堆疊框架。
@@ -28,14 +28,14 @@ ms.locfileid: "80718848"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT CanSetNextStatement ( 
+HRESULT CanSetNextStatement ( 
    IDebugStackFrame2*  pStackFrame,
    IDebugCodeContext2* pCodeContext
 );
 ```
 
 ```csharp
-int CanSetNextStatement ( 
+int CanSetNextStatement ( 
    IDebugStackFrame2  pStackFrame,
    IDebugCodeContext2 pCodeContext
 );

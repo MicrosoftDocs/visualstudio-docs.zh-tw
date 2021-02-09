@@ -9,15 +9,15 @@ helpviewer_keywords:
 - dependency diagrams, adding custom gestures
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc91e2c160d2081db868daf8d8dbaeb041172297
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9da8272f115efe4c6708bcc4d5cd0203697bfdd6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362219"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908894"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>將命令和軌跡新增至相依性圖表
 
@@ -263,6 +263,6 @@ namespace MyLayerExtensions // change to your preference
 
 - 針對某些拖曳項目類型的處理常式早已受到定義。 例如，使用者可以將方案總管中的專案拖曳至相依性圖表。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將自訂架構驗證新增至相依性圖表](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

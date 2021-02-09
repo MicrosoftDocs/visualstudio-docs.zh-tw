@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc2f459fa3455d3f02953c42ad06e7f2647c79c6
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 21d3b402bbffd9528755098131ff9ed1ee636906
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134716"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908144"
 ---
 # <a name="work-with-textures-and-images"></a>使用紋理和影像
 
@@ -48,7 +48,7 @@ ms.locfileid: "93134716"
 
 ### <a name="cube-maps"></a>立方體貼圖
 
-立方體貼圖可以包含不同類型的資料 (例如色彩或法線) 但會組織成立方體表面上的六個紋理。 因為這個緣故，立方體貼圖不是藉由提供紋理座標取樣，而是藉由提供一個來源為立方體中央的向量；會在向量與立方體交集之處取樣。 立方體貼圖用來提供可用來計算反射的環境近似值 — 這就是所謂的 *環境對應* — 或用來提供材質給具有比基本、2D 材質可提供的扭曲程度更低的球面物件。
+立方體貼圖可以包含不同類型的資料 (例如色彩或法線) 但會組織成立方體表面上的六個紋理。 因為這個緣故，立方體貼圖不是藉由提供紋理座標取樣，而是藉由提供一個來源為立方體中央的向量；會在向量與立方體交集之處取樣。 立方體貼圖用來提供可用來計算反射的環境近似值 — 這就是所謂的 *環境對應*— 或用來提供材質給具有比基本、2D 材質可提供的扭曲程度更低的球面物件。
 
 ## <a name="related-topics"></a>相關主題
 

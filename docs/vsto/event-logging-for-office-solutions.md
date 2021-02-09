@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, event viewer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 74aaf7c1c07c349fa3669332a41e4e7d06ba86f1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: fb38c08e807c65845c323671b0c82151f5c8567c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910357"
 ---
 # <a name="event-logging-for-office-solutions"></a>Office 方案的事件記錄
   在安裝或解除安裝 Office 方案時，您可以使用 Windows 的事件檢視器查看 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 擷取的例外狀況訊息。 您可以使用事件記錄器的這些訊息，解決安裝和部署問題。
@@ -96,7 +96,7 @@ ms.locfileid: "96847763"
 
 5. 在 [變數值]  方塊中，輸入 **1**。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
 ## <a name="see-also"></a>另請參閱
 - [部署 Office 方案](../vsto/deploying-an-office-solution.md)

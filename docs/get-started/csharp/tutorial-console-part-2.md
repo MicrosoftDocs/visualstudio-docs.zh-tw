@@ -9,19 +9,19 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 monikerRange: '>=vs-2019'
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 55b1e30d214ff85bfc1b7e9c00ebff7e76a95f12
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e5552cc3d84eb0dd2a44943c36ddaa60c827ceb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909321"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>教學課程：擴充簡單的 c # 主控台應用程式
 
@@ -434,7 +434,7 @@ Visual Studio 偵錯工具是一項功能強大的工具，可讓您逐步執行
 
 1. 使用 ' n ' 命令，正確地關閉應用程式。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 恭喜您完成此教學課程！ 若要更深入了解，請繼續下列教學課程。
 

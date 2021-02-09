@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 9b946d55-ff85-44eb-b40a-efbf8282eafd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbe99422e506fb86b0a7e1d9d3242783f3258e6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad5fa763be8929a9122a6fd7517b401f5a874e04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718794"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909351"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 此介面是由 debug engine (DE) 來傳送，表示正在進行正在進行調試之模組的偵錯工具符號。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugSymbolSearchEvent2 : IUnknown
@@ -46,7 +46,7 @@ IDebugSymbolSearchEvent2 : IUnknown
 
  Visual Studio 通常會使用此事件來更新 [ **模組** ] 視窗中已載入符號的狀態。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

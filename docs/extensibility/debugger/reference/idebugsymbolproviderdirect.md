@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 872b04a8-70de-4ab5-aceb-684c81828545
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd1201007b27d3c7c51b5b0d862b36ba0549429b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29f0e7e3d2fefe0f47dc971ebff273bf2745a5ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909418"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 代表可直接存取中繼資料和核心符號介面的符號提供者。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugSymbolProviderDirect: IUnknown
@@ -41,7 +41,7 @@ IDebugSymbolProviderDirect: IUnknown
 ## <a name="remarks"></a>備註
  這個介面可以用來取代大部分其他的符號提供者介面。 它可直接存取中繼資料和 `CorSym` 介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Sh. h
 
  命名空間： VisualStudio

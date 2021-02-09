@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6b536cbfbd1019fc9b55a0113525f37030493f8
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 197cd51d31729119d48e255d038ad2e53f17a891
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149413"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908369"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>指定舊版的 .NET Framework 版本以進行偵錯工具 (c #、Visual Basic、F # ) 
 
@@ -59,7 +59,7 @@ The debugger has made an incorrect assumption about the .NET Framework version y
 
 7. 在 [編輯字串] 方塊的 [值] 方塊中鍵入 .NET Framework 版本號碼。 例如：V1.1.4322。
 
-8. 按一下 [確定]。
+8. 按一下 [確定]  。
 
 9. 關閉 **登錄編輯程式**。
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a1e9b1f853ad540f65101bffabea922f8fdcef1
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 144e8f965a456c4763a74daa2cedeb8c571e518f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360882"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908966"
 ---
 # <a name="about-domain-specific-languages"></a>關於網域指定的語言
 

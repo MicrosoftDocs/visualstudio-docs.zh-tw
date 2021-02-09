@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: a147c939-4fb1-415c-8410-cf303781e9e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 310ec0b881c3b4a299a3d933511e54db0e288ddf
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 3a1857d349f339a537748f11154b43f7d30c7bdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398360"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910039"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何發覺我的指標是否損毀記憶體位址？
 ## <a name="problem-description"></a>問題說明

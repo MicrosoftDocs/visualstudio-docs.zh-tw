@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a31133139d0104cd29f5d0d0e760bd78ec5783fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1baa46cd9be53134d42c71e8c2bd88e3e2c38d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732686"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907959"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 這個介面代表自訂屬性，它可以提供屬性的名稱、父系和類別類型。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDebugCustomAttribute : IUnknown
+IDebugCustomAttribute : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
@@ -47,7 +47,7 @@ IDebugCustomAttribute : IUnknown
 ## <a name="remarks"></a>備註
  自訂屬性是 c # 的結構，可提供與特定類別或方法相關聯的自訂中繼資料。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio

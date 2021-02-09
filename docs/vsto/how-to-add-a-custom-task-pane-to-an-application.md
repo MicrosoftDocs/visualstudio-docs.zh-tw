@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], adding to application
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1e8056eddef6329aeb10ed5545c4146f0af0f167
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: b0bac1f14994dea73526aa3684851412ad2cf1b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910208"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>如何：將自訂工作窗格加入至應用程式
   您可以使用 VSTO 增益集，將自訂工作窗格加入上面所列的應用程式。 如需詳細資訊，請參閱 [自訂工作窗格](../vsto/custom-task-panes.md)。

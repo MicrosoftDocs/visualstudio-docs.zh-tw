@@ -17,16 +17,16 @@ helpviewer_keywords:
 ms.assetid: fd99ee60-fa94-46df-8b17-369f60bfd908
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 3bce07008d285c6446d3fa8c79ce45c222c34bae
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 66580f935638ef0583dc492b487267853173b2d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908283"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>在 Visual Studio 中重新整理 UWP 應用程式
 
@@ -63,5 +63,5 @@ ms.locfileid: "98204900"
 
 8. 切換至應用程式。 應用程式會重載，並使用更新的 HTML 來呈現應用程式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

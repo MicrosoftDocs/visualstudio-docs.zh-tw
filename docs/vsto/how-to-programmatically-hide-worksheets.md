@@ -12,15 +12,15 @@ helpviewer_keywords:
 - worksheets, hiding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9a5ba61c7db0a62cf3e97fb8e4df5cb655e9f2dd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5763e040e0206272b6b50b039f1260bcbc99db49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908587"
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>如何：以程式設計方式隱藏工作表
   您可以顯示或隱藏活頁簿中的任何工作表。 若要隱藏工作表，請使用工作表主項目，或使用活頁簿的工作表集合存取工作表。

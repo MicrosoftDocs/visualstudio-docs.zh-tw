@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40081f276dc9649cf448bf00e80d11fc80f58f47
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: d7552ab67b70b3af8cfd1603462089e4fe2a209e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204822"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908216"
 ---
 # <a name="remote-debugger-port-assignments"></a>遠端偵錯工具連接埠指派
 Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行。 當以應用程式的形式執行時，它會使用預設指派的連接埠，如下所示：
@@ -72,5 +72,5 @@ Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarderx86|31401|31399|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [遠端偵錯](../debugger/remote-debugging.md)

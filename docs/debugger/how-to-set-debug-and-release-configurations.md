@@ -30,15 +30,15 @@ helpviewer_keywords:
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51237a9b73825620c77c7f2a10ad1efe367cdd37
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 6f96570f517d24492ecdacb4e45450fa7b7ba1cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908395"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>在 Visual Studio 中設定偵錯和發行組態
 
@@ -56,7 +56,7 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 
 若要變更組建設定，請執行下列其中一項：
 
-* 從 [ **組建** ] 功能表中，選取 [ **Configuration Manager**]，然後選取 [ **Debug** ] 或 [ **發行**]。
+* 從 [ **組建** ] 功能表中，選取 [ **設定管理員**]，然後選取 [ **Debug** ] 或 [ **發行**]。
 
 或
 

@@ -6,17 +6,17 @@ ms.date: 12/16/2016
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: f8eef438f1dd504120b62e2e0018935489d6c80a
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 55a53e60ffa05892531257871ede89381e7fd4e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909012"
 ---
 # <a name="preview-changes-window"></a>[預覽變更] 視窗
 

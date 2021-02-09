@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 47fc3827-07a0-4eee-b7f4-fc1c62e6b25c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7f7f49262c0efe9f856ba01a73382541067335f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d34684be7a08199bfc434b62600b9d1287d0354
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909631"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 取得參考的記憶體內容。 保留供未來使用。
@@ -28,13 +28,13 @@ ms.locfileid: "80720585"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetMemoryContext ( 
+HRESULT GetMemoryContext ( 
    IDebugMemoryContext2** ppMemory
 );
 ```
 
 ```csharp
-int GetMemoryContext ( 
+int GetMemoryContext ( 
    out IDebugMemoryContext2 ppMemory
 );
 ```

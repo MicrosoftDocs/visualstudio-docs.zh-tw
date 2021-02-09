@@ -7,15 +7,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c0f19f96ee5f6879ccc3328c29d0e1fa1d2a6d0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: ce008d0a14cbd75cf8a46599ff67bd9e799ee8ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908876"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>從文字模板存取 Visual Studio 或其他主機
 

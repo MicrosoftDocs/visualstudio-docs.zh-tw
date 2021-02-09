@@ -5,16 +5,16 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
 monikerRange: vs-2017
-ms.openlocfilehash: 5a09b3f78b929fd60764be36f56c0b580c7a42d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa5346d65a94646a0fa5e922f3b0055d8cdb6c0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75843726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908659"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>如何安裝 Visual Studio R 工具
 
@@ -38,13 +38,13 @@ Visual Studio for Mac 目前不支援 RTVS。
 
 ## <a name="install-rtvs-in-visual-studio-2017"></a>在 Visual Studio 2017 中安裝 RTVS
 
-1. 執行 Visual Studio 安裝程式，並選取 [修改]**** 選項 (如需詳細資料，請參閱[修改 Visual Studio](../install/modify-visual-studio.md))。 如果您還沒有安裝 Visual Studio，請參閱[安裝 Visual Studio](../install/install-visual-studio.md)。 在 Windows 7 上，請確定您的安裝程式已更新為顯示 Visual Studio 2017 15.2 版、組建 26430.12** 或更新版本。
+1. 執行 Visual Studio 安裝程式，並選取 [修改] 選項 (如需詳細資料，請參閱[修改 Visual Studio](../install/modify-visual-studio.md))。 如果您還沒有安裝 Visual Studio，請參閱[安裝 Visual Studio](../install/install-visual-studio.md)。 在 Windows 7 上，請確定您的安裝程式已更新為顯示 Visual Studio 2017 15.2 版、組建 26430.12 或更新版本。
 
-1. 選取 [資料科學與分析應用程式]**** 工作負載：
+1. 選取 [資料科學與分析應用程式] 工作負載：
 
     ![VS2017 中的資料科學與分析應用程式工作負載](media/installation-data-science-workload.png)
 
-1. 在相同的工作負載名稱下方，於右側設定任何其他選項。 這個工作負載預設會包括 F# 和 Python 支援。 針對 R，最低需求是 [R 語言支援]****、[R 開發工具的執行階段支援]**** 和 [Microsoft R Client]****。
+1. 在相同的工作負載名稱下方，於右側設定任何其他選項。 這個工作負載預設會包括 F# 和 Python 支援。 針對 R，最低需求是 [R 語言支援]、[R 開發工具的執行階段支援] 和 [Microsoft R Client]。
 
 RTVS 安裝在： *% ProgramFiles (x86) % \ Microsoft Visual Studio \<version> \<edition> Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio* ，其中 *\<version>* 通常是 `2017` *\<edition>* `Community` 、 `Professional` 或 `Enterprise` 。
 
@@ -77,7 +77,7 @@ RTVS for Visual Studio 2015 會安裝在：`%ProgramFiles(x86)%\Microsoft Visual
 
 1. 前往[建立 Visual Studio 2017 的離線安裝](../install/create-an-offline-installation-of-visual-studio.md)。
 
-1. 如果您使用 Visual Studio 2015，請在目錄上方的選取器中選取 [2015]****。
+1. 如果您使用 Visual Studio 2015，請在目錄上方的選取器中選取 [2015]。
 
 1. 請遵循網站中針對建立離線安裝的指示。
 

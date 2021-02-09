@@ -13,15 +13,15 @@ helpviewer_keywords:
 - ranges, applying color
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 63a38bb4fb6f8f8ab35b9e1104a1b93d6d757446
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7ab1681cf402fc45b81b49b77a84973be83729c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910101"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>如何：以程式設計方式將色彩套用至 Excel 範圍
   若要將色彩套用至儲存格範圍內的文字，請使用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件。

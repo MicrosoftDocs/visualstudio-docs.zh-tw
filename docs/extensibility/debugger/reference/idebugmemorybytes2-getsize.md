@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: dae64c5f-5b54-40c3-b32f-ec3b16c093f7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6de4eccb395059112dde40af36ce75798db9064b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790fcccd54aa80c51137655b0653970897f496d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909946"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
 抓取這個 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 物件所表示之記憶體的大小（以位元組為單位）。
@@ -29,7 +29,7 @@ ms.locfileid: "80727554"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetSize( 
+HRESULT GetSize( 
    UINT64* pqwSize
 );
 ```

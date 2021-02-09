@@ -5,18 +5,18 @@ ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 153864a293ca25fdcf30f23b96f686737411c965
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9cd9fef6cebdefc190d37c067616e51c6d3e372f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908126"
 ---
 # <a name="devinit-commands"></a>devinit 命令
 
@@ -32,7 +32,7 @@ devinit init
 
 命令的選擇性選項 `devinit init` 。
 
-| 引數             | 必要 | 說明                                                               |
+| 引數             | 必要 | 描述                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
 | -f,--file            | 否       | 檔案的路徑 `.devinit.json` 。                                         |
 | --錯誤-動作       | 否       | 指定如何處理錯誤。 選項： [停止]、[忽略]、[繼續] (預設) 。|
@@ -79,7 +79,7 @@ devinit run -t <toolname>
 
 命令的選項 `devinit run` 。
 
-| 引數                                      | 必要 | 說明                                                                          |
+| 引數                                      | 必要 | 描述                                                                          |
 |-----------------------------------------------|----------|--------------------------------------------------------------------------------------|
 | -t,--工具                                     | 是      | 必要。 工具名稱。                                                             |
 | -i,--輸入                                    | 否       | 工具輸入值。 例如，檔案名、封裝或名稱。                     |
@@ -92,7 +92,7 @@ devinit run -t <toolname>
 
 指定工具傳回非零結束代碼時要採取的動作。 有效值為：
 
-| 引數 | 說明                                                                                                                                                                                                                                                                           |
+| 引數 | 描述                                                                                                                                                                                                                                                                           |
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | continue | 發出錯誤給標準錯誤之後，繼續處理其他工具。 devinit.exe 結束碼為非零 (失敗) 。 此行為類似于停止錯誤動作，但仍繼續處理。 `continue` 這是 init 命令的預設錯誤（action）動作。              |
 | ignore   | 發出警告給標準輸出之後，繼續處理其他工具。 DevInit 處理常式結束碼應一律為零 (成功) 。 此 `ignore` 設定會忽略所有錯誤。                                                                                                      |
@@ -124,7 +124,7 @@ devinit run -t <toolname> -<somearg> "<some value>"
 devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
 ```
 
-## <a name="list"></a>清單
+## <a name="list"></a>List
 
 ```console
 devinit list
@@ -138,7 +138,7 @@ devinit list
 devinit show -t <toolname>
 ```
 
-| 引數       | 必要 | 說明                                                                          |
+| 引數       | 必要 | 描述                                                                          |
 |----------------|----------|--------------------------------------------------------------------------------------|
 | -t,--工具      | 是      | 必要。 工具名稱。                                                             |
 

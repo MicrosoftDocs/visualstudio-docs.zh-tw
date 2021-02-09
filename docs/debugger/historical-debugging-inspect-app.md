@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d51327f67429071d08f6dfd02c0ec0a1fc55822f
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 87987beed3750d8eda5d680b561a46b0866473b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398697"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908409"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>使用 Visual Studio (c #、Visual Basic、c + + 中的 IntelliTrace 歷程記錄偵錯工具檢查您的應用程式) 
 
@@ -53,7 +53,7 @@ private static int AddInt(int add)
 }
 ```
 
-我們假設呼叫 `AddAll()` 之後的 `resultInt` 預期值是 20 (遞增 `testInt` 20 次的結果)。  (我們也會假設您在) 中看不到錯誤 `AddInt()` 。但結果實際上是44。 如何在不逐步執行 `AddAll()` 10 次的情況下找到 Bug？ 我們可以使用歷程偵錯更迅速且更輕鬆地找到 BUG。 其做法如下：
+我們假設呼叫 `AddAll()` 之後的 `resultInt` 預期值是 20 (遞增 `testInt` 20 次的結果)。  (我們也會假設您在) 中看不到錯誤 `AddInt()` 。但結果實際上是44。 如何在不逐步執行 `AddAll()` 10 次的情況下找到 Bug？ 我們可以使用歷程偵錯更迅速且更輕鬆地找到 BUG。 方法如下：
 
 1. 在 **[工具] > [一般] > > 選項**] 中，確定已啟用 intellitrace，然後選取 [ **intellitrace 事件和呼叫資訊**]。 如果您未選取此選項，則無法看到巡覽邊 (如下所述)。
 
@@ -77,7 +77,7 @@ private static int AddInt(int add)
 
 7. 現在會逐步執行 `AddInt()` 方法。 您應該會立即看到此程式碼中的 Bug。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 這個程序只會大略探討您可以如何使用歷程偵錯。
 

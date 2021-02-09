@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: bc746d5139b897d51d4d038f077906f56aa5d552
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: b288836b3868f561e86a801d5d26f7d59dd17535
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205810"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908266"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>遠端偵錯 ASP.NET Core 在 Visual Studio 的遠端 IIS 電腦上
 
@@ -26,7 +26,7 @@ ms.locfileid: "98205810"
 
 本指南說明如何安裝和設定 Visual Studio ASP.NET Core、將它部署到 IIS，以及從 Visual Studio 附加遠端偵錯程式。 若要進行遠端偵錯程式 ASP.NET 4.5.2，請參閱 [IIS 電腦上的遠端偵錯程式 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 您也可以使用 Azure 在 IIS 上部署和調試。 針對 Azure App Service，您可以使用 [快照偵錯工具](../debugger/debug-live-azure-applications.md) 或 [從伺服器總管附加偵錯工具](../debugger/remote-debugging-azure.md)，輕鬆地在預先設定的 IIS 實例和遠端偵錯程式上部署和偵錯工具。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 ::: moniker range=">=vs-2019"
 需要 Visual Studio 2019，才能遵循本文中所示的步驟。

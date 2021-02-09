@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a7e4c01a990ce4d3fff6769ba016c168b190687f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 5d07020e3e5b80325daa254f8d8c612a92b9dfb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908545"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>逐步解說：因頂點著色而遺漏的物件
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷工具來調查因為端點著色器階段發生的錯誤而遺漏的物件。
@@ -30,7 +30,7 @@ ms.locfileid: "96994992"
 
 - 使用 [圖形事件呼叫堆疊]  協助找出無效 HLSL 常數的來源。
 
-## <a name="scenario"></a>案例
+## <a name="scenario"></a>狀況
  3D 應用程式遺漏物件最常見的其中一個原因，發生於端點著色器以不正確或非預期方式轉換物件的頂點時；例如，物件可能縮到非常小，或是經轉換後出現在觀景窗後面而非前面。
 
  在此情節中，當執行應用程式來加以測試時，背景如預期般轉譯，但其中一個物件未出現。 透過使用圖形診斷，您可擷取圖形記錄問題，以偵錯應用程式。 在應用程式中，問題看起來如下：

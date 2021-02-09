@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: a0c85318-5686-4eed-b213-21f2b9e681e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c9e7cf711b5cf6823059945f85b9c3db30701ccf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e089973061df779ca7f4e40765625897142efbcf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719079"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909493"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 抓取符號提供者為其成員之符號群組的相關資訊。

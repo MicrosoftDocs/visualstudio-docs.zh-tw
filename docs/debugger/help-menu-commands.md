@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a842caf3-d635-4620-bc81-1d4a6ea06ed6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 492062a5ba53eb277263e4284b74710786e13993
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 6d1339e99e4efb66410bf9d240fcee75abc085d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398606"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908436"
 ---
 # <a name="help-menu-commands"></a>說明功能表命令
 [ **說明** ] 功能表提供開啟說明檔的命令。

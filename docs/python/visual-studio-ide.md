@@ -5,29 +5,29 @@ ms.date: 03/13/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9d744e7495323c6e0ce565f33e2cfca95feb0a51
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d90ee69b8ee7f264a48d6ae01f77ea65e5d1c1b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928680"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908788"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>歡迎使用 Visual Studio IDE | Python
 
-Visual Studio 整合式開發環境** 是支援 Python (和其他語言) 且創作功能豐富的啟動控制板，可供您編輯、偵錯及測試程式碼，然後發行應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有程式碼完成工具、互動式 REPL 環境及其他功能，讓軟體開發程序變得更為容易。
+Visual Studio 整合式開發環境是支援 Python (和其他語言) 且創作功能豐富的啟動控制板，可供您編輯、偵錯及測試程式碼，然後發行應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有程式碼完成工具、互動式 REPL 環境及其他功能，讓軟體開發程序變得更為容易。
 
 [![使用 Python 專案 Visual Studio](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 此圖顯示 Visual Studio 有一個開啟的 Python 專案，以及數個您可能會用到的重要工具視窗：
 
 - [**方案總管**](../ide/solutions-and-projects-in-visual-studio.md) (右上方) 可讓您查看、流覽和管理程式碼檔案。 **方案總管** 可以將檔案分組到 [方案和專案](../get-started/tutorial-projects-solutions.md)中，以協助組織程式碼。
-  - 方案總管**** 旁的是 [Python 環境****](managing-python-environments-in-visual-studio.md)，您可以在此環境中管理安裝在電腦上的其他 Python 解譯器。
+  - 方案總管 旁的是 [Python 環境](managing-python-environments-in-visual-studio.md)，您可以在此環境中管理安裝在電腦上的其他 Python 解譯器。
 
   ::: moniker range=">=vs-2019"
   - 您也可以開啟並執行資料夾中的 Python 程式碼，不需建立 Visual Studio 專案和方案檔案。 如需詳細資訊，請參閱 [快速入門：在資料夾中開啟及執行 Python 程式碼](quickstart-05-python-visual-studio-open-folder.md)。
@@ -50,7 +50,7 @@ Windows 上有三個版本的 Visual Studio：「社區」、「專業」和「�
 
 Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產力，這些功能包括：
 
-- [IntelliSense](editing-python-code-in-visual-studio.md#intellisense)
+- [智慧](editing-python-code-in-visual-studio.md#intellisense)
 
    IntelliSense 為一組功能的字詞，會直接在編輯器中顯示有關您程式碼的資訊，而在某些情況下會為您撰寫一些程式碼。 就像內嵌在編輯器中的基本文件，讓您不必在其他位置查閱類型資訊。 IntelliSense 的功能會依語言而有所不同，[編輯 Python 程式碼](editing-python-code-in-visual-studio.md#intellisense)一文中有 Python 的詳細說明。 下圖顯示 IntelliSense 如何顯示類型的成員清單：
 
@@ -58,7 +58,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [重構](refactoring-python-code.md)
 
-   您可以右鍵按一下一段程式碼並選取 [快速控制項目及重構]****，Visual Studio 會提供您智慧型重新命名變數、將一或多行程式碼擷取至新方法，還有變更方法參數順序等作業。
+   您可以右鍵按一下一段程式碼並選取 [快速控制項目及重構]，Visual Studio 會提供您智慧型重新命名變數、將一或多行程式碼擷取至新方法，還有變更方法參數順序等作業。
 
    ![在 Visual Studio 中重構](media/tour-ide-refactor-extract-method.png)
 
@@ -82,7 +82,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [移至及查看定義](../ide/go-to-and-peek-definition.md)
 
-   [移至定義]**** 功能可以直接帶您到定義函式或類型的位置。 [查看定義]**** 命令會在視窗中顯示定義，且無須開啟另外的檔案。 [尋找所有參考]**** 命令也可提供您探索同時已定義和使用之任何指定識別碼的實用方法。
+   [移至定義] 功能可以直接帶您到定義函式或類型的位置。 [查看定義] 命令會在視窗中顯示定義，且無須開啟另外的檔案。 [尋找所有參考] 命令也可提供您探索同時已定義和使用之任何指定識別碼的實用方法。
 
    ![程式碼巡覽命令](media/tour-ide-navigation-commands.png)
 
@@ -100,13 +100,13 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [Python 互動式 REPL](python-interactive-repl-in-visual-studio.md)
 
-    Visual Studio 為您的每個 Python 環境提供互動式「讀取、求值、輸出」迴圈 (REPL) 視窗，它是以透過命令列上的 *python.exe* 取得的 REPL 為基礎加以改進。 在 [互動]**** 視窗中，您可輸入任意 Python 程式碼，然後查看即時結果。
+    Visual Studio 為您的每個 Python 環境提供互動式「讀取、求值、輸出」迴圈 (REPL) 視窗，它是以透過命令列上的 *python.exe* 取得的 REPL 為基礎加以改進。 在 [互動] 視窗中，您可輸入任意 Python 程式碼，然後查看即時結果。
 
     ![Python 互動式視窗](media/interactive-window.png)
 
 - [偵錯](debugging-python-in-visual-studio.md)
 
-    Visual Studio 為 Python 提供完整的偵錯工具體驗，包括附加至執行中進程、在 **監看** 式和即時 **運算視窗中** 評估運算式、檢查區域變數、中斷點、逐步執行/跳過/跳過語句、 **設定下一個語句**等。 您也可針對在 Linux 電腦上執行的遠端 Python 程式碼進行偵錯。
+    Visual Studio 為 Python 提供完整的偵錯工具體驗，包括附加至執行中進程、在 **監看** 式和即時 **運算視窗中** 評估運算式、檢查區域變數、中斷點、逐步執行/跳過/跳過語句、 **設定下一個語句** 等。 您也可針對在 Linux 電腦上執行的遠端 Python 程式碼進行偵錯。
 
     ![在 Visual Studio 中針對 Python 進行偵錯](media/remote-debugging-breakpoint-hit.png)
 
@@ -128,7 +128,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
     ![顯示失敗測試狀態的單元測試](media/unit-test-A-fail.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 透過遵循以下其中一個快速入門或教學課程，在 Visual Studio 中進一步探索 Python：
 

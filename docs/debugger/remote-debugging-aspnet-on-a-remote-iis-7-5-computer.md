@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8a3520220da15ef771c8cecbd7962e4448727910
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 854d3e23252e63d6330abd9f1704890d3b90ae36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908300"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>在執行 IIS 的遠端電腦上對 ASP.NET 進行遠端偵錯
 若要對已部署至 IIS 的 ASP.NET 應用程式進行 debug 錯，請在您部署應用程式的電腦上安裝並執行遠端工具，然後從 Visual Studio 連接到您的執行中應用程式。

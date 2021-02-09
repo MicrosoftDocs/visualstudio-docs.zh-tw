@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e3061665-ad3e-4c1b-b33f-82755fa21be3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8af5f08ae0b06e508794851ff0fff238f19519b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4ed767023fc8d1de65f75c8fb73e31004319024
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909618"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 取得參考的父參考。 保留供未來使用。
@@ -28,13 +28,13 @@ ms.locfileid: "80720436"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetParent ( 
+HRESULT GetParent ( 
    IDebugReference2** ppParent
 );
 ```
 
 ```csharp
-int GetParent ( 
+int GetParent ( 
    out IDebugReference2 ppParent
 );
 ```

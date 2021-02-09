@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Office object models
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fb3134b7656fc5156554e60fc88d16e6c2b58120
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a49dcc36d4079a6a945806b3112e3949ddcd79e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910289"
 ---
 # <a name="excel-object-model-overview"></a>Excel 物件模型總覽
   若要開發使用 Microsoft Office Excel 的方案，您可以與 Excel 物件模型提供的物件進行互動。 本主題將介紹最重要的物件：

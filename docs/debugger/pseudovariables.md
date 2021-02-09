@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a76bf799eabd29b778c2dec867cc7e50aa45ee
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 88880110ca00141382d7038ec001f3cc4159f2b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908330"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的下
 虛擬變數是在變數視窗或 [快速監看式] 對話方塊中，用來顯示特定資訊的詞彙。 輸入虛擬變數的方式與輸入一般變數相同。 但虛擬變數並不是變數，而且不會對應至您程式中的變數名稱。
@@ -69,6 +69,6 @@ ms.locfileid: "98205524"
 |`$`*N*`#`|顯示物件識別碼等於 *N* 的物件。|
 |`$dynamic`|針對實作 `IDynamicMetaObjectProvider` 的物件，顯示特殊 [動態檢視] 節點。 介面。 語法為 `$dynamic,` *object*。 這項功能只適用于使用 .NET Framework 4 版或更新版本的程式碼。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)
 - [變數視窗](../debugger/debugger-windows.md)

@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9d790f12d3fc21bbae7373470746af2ebfe6dc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e13d02cb08f957636a81bf4a985f1d7006b6c2ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737189"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908102"
 ---
 # <a name="dwtype_kind"></a>dwTYPE_KIND
 指定如何解讀 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 物件的類型。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_dwTYPE_KIND {
@@ -58,7 +58,7 @@ public enum enum_dwTYPE_KIND {
 ## <a name="remarks"></a>備註
 這個列舉的值會出現在 `dwKind` [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 結構的欄位中，用來決定如何解讀等位 `type` 成員。 `TYPE_INFO` [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)方法的呼叫會傳回此結構。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： sh. h
 
 命名空間： VisualStudio

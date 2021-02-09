@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96a3f3c2dca16cd2c28c9d1727e4ac145c91c482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 303ff1820d0213766ec5ad186ce7b9a3483c0bfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909857"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 這個介面會提供可讓您取得和設定屬性的功能。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDebugPropertyField : IDebugContainerField
+IDebugPropertyField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
@@ -45,7 +45,7 @@ IDebugPropertyField : IDebugContainerField
 ## <a name="remarks"></a>備註
  屬性是 managed 程式碼的概念，並代表視為變數的方法。 屬性不存在於非受控 c + + 中。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio

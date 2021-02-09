@@ -9,15 +9,15 @@ helpviewer_keywords:
 - error, process
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e44f96e0a8056a369b164e725aca6832b5a349cb
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e2ff53ecf1e3f3b377180fe85f972dca665b81f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909155"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio 無法復原的程序錯誤
 
