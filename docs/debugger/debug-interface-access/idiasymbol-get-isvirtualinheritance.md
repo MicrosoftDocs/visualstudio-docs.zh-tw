@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 72906b92-dd4a-42e3-9b24-b77628fa48c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 67b35a40de94bec45ce9ea1f5b50472f234192d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b3cc3929b019765d3406ad9ddedf3b0eaec2f01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463152"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863099"
 ---
 # <a name="idiasymbolget_isvirtualinheritance"></a>IDiaSymbol::get_isVirtualInheritance
 指定指標是否 `this` 指向具有虛擬繼承的資料成員。

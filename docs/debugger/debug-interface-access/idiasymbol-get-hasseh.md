@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1a709ded-22c8-464c-97be-eba5e464210c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e0f9e7b1dc2fb5a338dc2cd2edbf3cf9d0eb2441
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0689490e855508314835a21e44e6cb9a02736ef4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863302"
 ---
 # <a name="idiasymbolget_hasseh"></a>IDiaSymbol::get_hasSEH
 抓取旗標，這個旗標會指定函數是否包含任何 [結構化例外狀況處理 (C/c + +) ](/cpp/cpp/structured-exception-handling-c-cpp) (例如 __try/ \_ _except 區塊) 。
@@ -41,7 +41,7 @@ HRESULT get_hasSEH(
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

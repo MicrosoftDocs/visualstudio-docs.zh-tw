@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 386c87aa-f7b2-4d38-9dd6-fffba9ff01f0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec927532ebc808fae0717e36439be356cb022b32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 196eafaee2b18c4dd08b81d6670b79cf62b8f41f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864282"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
 傳回對應至指定來源位置之內嵌框架的符號列舉。
@@ -23,7 +23,7 @@ ms.locfileid: "85465871"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT findAcceleratorInlineeLinesByName ( 
+HRESULT findAcceleratorInlineeLinesByName ( 
    IDiaSymbol*           parent,
    IDiaSourceFile*       file,
    DWORD                 linenum,

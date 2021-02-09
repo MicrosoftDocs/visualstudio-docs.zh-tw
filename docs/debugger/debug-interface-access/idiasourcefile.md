@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 6e9be757-797f-4960-ba62-c14092620bbd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c28559eb3b936505cf03c6499dd79178554645bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0d7ae9a054da64dfc7ee3264734e03959016f53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863988"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 表示原始檔。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDiaSourceFile : IUnknown
+IDiaSourceFile : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
@@ -72,7 +72,7 @@ void ShowSourceFiles(IDiaTable *pTable)
 }
 ```
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： Dia2。h
 
 程式庫： diaguids .lib

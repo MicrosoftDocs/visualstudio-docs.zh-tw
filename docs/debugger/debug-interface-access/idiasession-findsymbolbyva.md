@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0350df23-9a5d-4e8d-8c26-7f571d8fb1af
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99486de93b580a106c05a2bed862ae282f831aca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60304d7a94bdd03d5a9d0bfda57dc282ef5104ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864114"
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
 抓取指定的符號類型，其中包含或最接近指定的虛擬位址。
@@ -25,7 +25,7 @@ ms.locfileid: "85465542"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT findSymbolByVA ( 
+HRESULT findSymbolByVA ( 
    ULONGLONG    va,
    SymTagEnum   symtag,
    IDiaSymbol** ppSymbol

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fb1acb9c-4500-4343-a590-0395789e4040
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d0d2410e8bb027aebf767970877870f1558a9c2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 709ffb3327359e41693d524e5b9eaab79dc64790
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463810"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863393"
 ---
 # <a name="idiasymbolget_hasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
 抓取指定使用者定義資料類型是否已定義任何指派運算子的旗標。
@@ -25,7 +25,7 @@ ms.locfileid: "85463810"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_hasAssignmentOperator ( 
+HRESULT get_hasAssignmentOperator ( 
    BOOL* pRetVal
 );
 ```
@@ -41,7 +41,7 @@ HRESULT get_hasAssignmentOperator ( 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

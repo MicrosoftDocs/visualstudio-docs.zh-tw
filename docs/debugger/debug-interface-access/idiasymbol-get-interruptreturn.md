@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9665da6c-4cc0-41d7-b2e2-0d9e50174cf8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3173eb31ec10b812f6ca300d1e95a3c938fa1368
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0981f103d9914e9d8d13f02449187fdfef0ff61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863267"
 ---
 # <a name="idiasymbolget_interruptreturn"></a>IDiaSymbol::get_interruptReturn
 抓取旗標，這個旗標會指定函式是否包含插斷指令的傳回 (例如 X86 元件程式碼 `iret`) 。
@@ -41,7 +41,7 @@ HRESULT get_interruptReturn(
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

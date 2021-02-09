@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 711b81fd-9549-44dc-9761-5eb862ed64c0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 068720e4b35ca52e07351aeb6f74d7594fe69d1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f2439a2b2256732856afbfcf4d856bfa829cc7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863239"
 ---
 # <a name="idiasymbolget_iscvtcil"></a>IDiaSymbol::get_isCVTCIL
 抓取旗標，指出模組是否已從通用中繼語言 (CIL) 模組轉換成原生模組。
@@ -44,7 +44,7 @@ HRESULT get_isCVTCIL(
 ## <a name="remarks"></a>備註
  您可以從符號類型取得這個屬性 `SymTagCompilandDetails` (請參閱 [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

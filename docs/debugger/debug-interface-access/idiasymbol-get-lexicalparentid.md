@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6c0c2874-cc47-4e4f-ad9c-02a18a108d9d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e8bacd43e7d3eb1e08990945ddfb12c3550bfbac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb1992c48b89dc5a2a2a8fb8f33775ae944e782f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863029"
 ---
 # <a name="idiasymbolget_lexicalparentid"></a>IDiaSymbol::get_lexicalParentId
 抓取符號的詞法父識別碼。
@@ -25,7 +25,7 @@ ms.locfileid: "85463047"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_lexicalParentId ( 
+HRESULT get_lexicalParentId ( 
    DWORD* pRetVal
 );
 ```

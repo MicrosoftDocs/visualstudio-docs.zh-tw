@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6352e972-7105-4d0e-aeba-b8fc16d62dec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba6fdd1b01e4d17bec0e16aae8fe4e086cb6cc7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69b342520e9ae72b8d48367390d1189179e7747d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863946"
 ---
 # <a name="idiastackframeget_maxstack"></a>IDiaStackFrame::get_maxStack
 抓取框架中堆疊上推送的位元組數目上限。
@@ -25,7 +25,7 @@ ms.locfileid: "85464986"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_maxStack ( 
+HRESULT get_maxStack ( 
    DWORD* pRetVal
 );
 ```

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97415ac6-b072-4e3c-9dd3-73087ae605fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: be90322d11d8676d1087ee53c914eaf7a33c518b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbfff4382df74052efdcc59aa813b9c002a9103f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465962"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864359"
 ---
 # <a name="idiasegmentget_offset"></a>IDiaSegment::get_offset
 抓取區段開始之區段中的位移。
@@ -25,7 +25,7 @@ ms.locfileid: "85465962"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_offset ( 
+HRESULT get_offset ( 
    DWORD* pRetVal
 );
 ```

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24d280ef-6ea3-4958-9418-4ad3ca7c67c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e1a3a831ccd7394c58af4b744f0be8b905d763
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fc7eb836bab2219e764a7d6a40fc6b8421c916f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463481"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863246"
 ---
 # <a name="idiasymbolget_isaggregated"></a>IDiaSymbol::get_isAggregated
 抓取旗標，這個旗標會指定資料符號是否為符號的匯總或集合的一部分。編譯器會將匯總的符號視為個別的實體，但實際上是一個較大符號的一部分。
@@ -44,7 +44,7 @@ HRESULT get_isAggregated(
 ## <a name="remarks"></a>備註
  [IDiaSymbol：： get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)方法 `TRUE` 適用于做為匯總符號父系的符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

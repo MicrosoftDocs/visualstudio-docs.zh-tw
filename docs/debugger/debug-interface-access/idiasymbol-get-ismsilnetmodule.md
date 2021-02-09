@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 593827f3-8437-4a12-ada4-ff715ec95fb2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2a53fdc23462cf2a71a01aa34e51e4fe47344b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 943f496ff4c08a6f3b2047c977c4ed4588190587
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863155"
 ---
 # <a name="idiasymbolget_ismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 抓取旗標，指出模組是否為. .netmodule (Microsoft 中繼語言 (MSIL) 模組，該模組只包含中繼資料，) 沒有原生符號。
@@ -46,7 +46,7 @@ HRESULT get_isMSILNetmodule(
 
 ## <a name="requirements"></a>規格需求
 
-|需求|說明|
+|需求|描述|
 |-----------------|-----------------|
 |標頭：|dia2。h|
 |版本：|DIA SDK v8.0|

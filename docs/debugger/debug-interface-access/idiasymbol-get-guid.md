@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c02a6c92-f406-4646-82e7-3cd005af900e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 27c672f3738585923348ac5c36df681b4de60ca7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: faba8ccc1cbaacdf6459c8245a230595bf258624
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463817"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863400"
 ---
 # <a name="idiasymbolget_guid"></a>IDiaSymbol::get_guid
 抓取符號的全域唯一識別碼 (GUID) 。
@@ -25,7 +25,7 @@ ms.locfileid: "85463817"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_guid ( 
+HRESULT get_guid ( 
    GUID* pRetVal
 );
 ```
@@ -41,7 +41,7 @@ HRESULT get_guid ( 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

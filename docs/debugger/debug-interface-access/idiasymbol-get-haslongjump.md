@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14484cb1-43b0-47a1-a9a8-081b55566886
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aa43688b8fd3bb69cd8d44181da22924932e900
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0f7107f498ca5a7a46a3c47cfa131d7f5396bae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863323"
 ---
 # <a name="idiasymbolget_haslongjump"></a>IDiaSymbol::get_hasLongJump
 抓取旗標，這個旗標會指定函式是否包含使用 [longjmp](/cpp/c-runtime-library/reference/longjmp) 命令 (與 [setjmp](/cpp/c-runtime-library/reference/setjmp) 命令配對，而這些會形成例外狀況處理) 的 C 樣式方法。
@@ -41,7 +41,7 @@ HRESULT get_hasLongJump
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

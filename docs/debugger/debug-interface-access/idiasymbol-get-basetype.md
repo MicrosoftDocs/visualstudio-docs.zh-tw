@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c69a241-a8d3-48ed-8b36-27463a196572
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aea1205abf5c7a4bf7e4fd6b035651cc7ad52be6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e41b8f3825da25878ac81ba91b59106ac60d857
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464202"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863540"
 ---
 # <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
 抓取此符號的基底類型<em>。</em>
@@ -59,7 +59,7 @@ if (pType->get_type( &pBaseType ) == S_OK)
 }
 ```
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

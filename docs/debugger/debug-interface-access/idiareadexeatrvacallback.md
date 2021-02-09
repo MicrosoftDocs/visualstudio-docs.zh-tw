@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: b2892513-3952-4f99-9b98-60cb9b1fdc91
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fc4d27f3ef8c9329feddd6bf7d8342ceae1b263
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98887e684d9bf2cbe282b7d9c4670fd18a355bd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864534"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
 讓用戶端應用程式提供相對虛擬位址所指定的可執行檔位元組。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDiaReadExeAtRVACallback : IUnknown
+IDiaReadExeAtRVACallback : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
@@ -41,7 +41,7 @@ IDiaReadExeAtRVACallback : IUnknown
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  這個方法是由用戶端應用程式所執行，並傳遞至 [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法，作為讀取檔案的替代方法。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Dia2。h
 
  程式庫： diaguids .lib

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7214643b-3286-48ed-90aa-0fe95b4cae5b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e87c2ed168a262fc1a12f06fc6a18bcf73e7bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f83d31d36f7d6c067cd3dbd4d64f804ca6f9ebd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864639"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 讀取 `BSTR` 屬性集中的值。
@@ -25,7 +25,7 @@ ms.locfileid: "85466592"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT ReadBSTR ( 
+HRESULT ReadBSTR ( 
    PROPID id,
    BSTR*  pValue
 );

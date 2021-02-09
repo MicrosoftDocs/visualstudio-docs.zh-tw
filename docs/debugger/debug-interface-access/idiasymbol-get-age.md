@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 60d05654-e832-4a2e-a4a7-fe9922c459fe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8fc198573123c24a3c48068b50161d0aa7f3b60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9d7ebaaafa1e01ef081aa96d64170ac59922dc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863589"
 ---
 # <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
 捕獲 .pdb 檔案的存留期值。
@@ -25,7 +25,7 @@ ms.locfileid: "85464342"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_age ( 
+HRESULT get_age ( 
    DWORD* pRetVal
 );
 ```
@@ -44,7 +44,7 @@ HRESULT get_age ( 
 ## <a name="remarks"></a>備註
  年齡不一定會對應到任何已知的時間值;它通常用來判斷 .pdb 檔案是否與對應的 .exe 檔案不同步。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

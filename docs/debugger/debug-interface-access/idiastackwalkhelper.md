@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: d66e5c84-565d-494e-8486-f91db9a34548
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf2f54c585a8a5406a0772dc1c580112036671d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b84661f5cd51da17cf20577490b2fe458e71ef71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464622"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863736"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 使用「程式偵錯工具」資料庫 ( .pdb) 檔來加速堆疊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 
@@ -51,7 +51,7 @@ IDiaStackWalkHelper: IUnknown
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  用戶端應用程式會在程式執行期間，將此介面實作為支援堆疊。 這個介面的實例會傳遞至 [IDiaStackWalker：： getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) 或 [IDiaStackWalker：： getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) 方法。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Dia2。h
 
  程式庫： diaguids .lib

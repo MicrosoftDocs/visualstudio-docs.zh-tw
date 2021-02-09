@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 54295d3e-bbb6-4c10-ab9d-adcfc22b1f71
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ffe73d910520966f49e7cc345cd5abbf18a9d32a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 518fafc86c26b790f8f302d8750a445a8ba3f8bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863673"
 ---
 # <a name="idiasymbolfindinlineframesbyva"></a>IDiaSymbol::findInlineFramesByVA
 抓取列舉，可讓用戶端逐一查看指定虛擬位址的所有內嵌框架 (VA) 。
@@ -23,7 +23,7 @@ ms.locfileid: "85464454"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT findInlineFramesByVA ( 
+HRESULT findInlineFramesByVA ( 
    ULONGLONG         va,
    IDiaEnumSymbols** ppResult
 );

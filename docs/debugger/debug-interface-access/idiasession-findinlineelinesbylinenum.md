@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: cf32ae7c-a0c8-4800-bc8f-d64fdd15fb06
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7f2299dcfbef53c510c9e9689f92cde2132974
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8fb0748028a18ad2572dca2181d11937fbb6138c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465794"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864240"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
 抓取列舉，可讓用戶端逐一查看在指定的原始程式檔和行號中，直接或間接內嵌的所有函式的行號資訊。
@@ -23,7 +23,7 @@ ms.locfileid: "85465794"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT findInlineeLinesByVA ( 
+HRESULT findInlineeLinesByVA ( 
    IDiaSymbol*           compiland,
    IDiaSourceFile*       file,
    DWORD                 linenum,

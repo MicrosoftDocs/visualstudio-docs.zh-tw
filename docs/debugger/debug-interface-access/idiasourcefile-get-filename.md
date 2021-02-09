@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a5cb8927-23c6-469e-8f78-f2787d85dba4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 35935f3f61fbbdc4ded91c7f1ec2f3d03e6cefab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 914b5fb7371a8671de046c93746925a1d08d95dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864002"
 ---
 # <a name="idiasourcefileget_filename"></a>IDiaSourceFile::get_fileName
 抓取來原始檔案名。
@@ -25,7 +25,7 @@ ms.locfileid: "85465290"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_fileName ( 
+HRESULT get_fileName ( 
    BSTR* pRetVal
 );
 ```

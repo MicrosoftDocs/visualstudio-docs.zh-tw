@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 101afe4a-4c57-45de-87b4-330394c6de10
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b48f91dcb68f44f070e596d674461367dcf22966
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5099eb9d8ba1f56419cd1cf0138e29a79e2c28f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863260"
 ---
 # <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
 抓取指定函數是否為簡介虛擬函式的旗標。
@@ -25,7 +25,7 @@ ms.locfileid: "85463516"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_intro ( 
+HRESULT get_intro ( 
     BOOL* pRetVal
 );
 ```
@@ -54,7 +54,7 @@ class B : public A {
 
 `A::f1`和 `B::f1` 都是虛擬函式，但 `A::f1` 是虛擬的簡介。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 75d128a8-3dce-40ed-b392-de3fdda041b7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc1e935ab47fd815c8f132dbeee21e21c9ba6350
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b78497cee5fea3eb4ab4fda29eacc3d864ce2ea5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864100"
 ---
 # <a name="idiasessionget_globalscope"></a>IDiaSession::get_globalScope
 抓取全域範圍的參考。
@@ -25,7 +25,7 @@ ms.locfileid: "85465444"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_globalScope ( 
+HRESULT get_globalScope ( 
    IDiaSymbol** pRetVal
 );
 ```

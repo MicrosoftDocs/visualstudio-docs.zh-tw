@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66eb38ce-a5e1-467e-b845-b3dc433eda91
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c261a2687e42006ffeed6081db0aceb41a02645
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b08eb94b500d67cb9bb9c8effd0d1e14c360933
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864499"
 ---
 # <a name="idiasectioncontribget_execute"></a>IDiaSectionContrib::get_execute
 抓取旗標，指出區段是否為可執行檔做為程式碼。
@@ -25,7 +25,7 @@ ms.locfileid: "85466270"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_excute ( 
+HRESULT get_excute ( 
    BOOL* pRetVal
 );
 ```

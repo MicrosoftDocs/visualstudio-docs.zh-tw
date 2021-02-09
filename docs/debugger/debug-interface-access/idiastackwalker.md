@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 4a61a22a-9cf8-4ea1-9e6e-b42f96872d40
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d80e20200966c65258485782fec5865158f114a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9ec4267a0f5de93b32a4a56a61742a9148f2d9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464846"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863855"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 提供方法，以使用 .pdb 檔案中的資訊來進行堆疊逐步解說。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDiaStackWalker: IUnknown
@@ -59,7 +59,7 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： Dia2。h
 
 程式庫： diaguids .lib

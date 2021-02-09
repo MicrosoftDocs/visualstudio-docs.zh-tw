@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: d3197a38-5973-4e56-873e-4f1b84c3f674
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba4cdb5f74cedf13cfb74b5aff6d43d24534eab9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc38d92dc20d1eea368c07e45237508dd5f85585
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864562"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 可讓您讀取 DIA 屬性集的持續性屬性。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDiaPropertyStorage : IUnknown
+IDiaPropertyStorage : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
@@ -63,7 +63,7 @@ IDiaPropertyStorage : IUnknown
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 
 ## <a name="example"></a>範例
-此範例顯示的函式會顯示物件公開的所有屬性 `IDiaPropertyStorage` 。 如需[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)如何 `IDiaPropertyStorage` 從[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)介面取得介面的範例，請參閱 IDiaEnumInjectedSources 介面。
+此範例顯示的函式會顯示物件公開的所有屬性 `IDiaPropertyStorage` 。 如需[](../../debugger/debug-interface-access/idiaenuminjectedsources.md)如何 `IDiaPropertyStorage` 從[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)介面取得介面的範例，請參閱 IDiaEnumInjectedSources 介面。
 
 ```C++
 void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
@@ -119,7 +119,7 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 }
 ```
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： Dia2。h
 
 程式庫： diaguids .lib

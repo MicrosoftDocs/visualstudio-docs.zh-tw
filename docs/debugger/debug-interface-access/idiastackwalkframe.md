@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 42d82845-d6f6-4846-9ecd-9dd169216077
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee80b9bbb6d16f2aa4264491593d1864bdade690
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05db065b047629e1eaac49e5f6aeeb05eed4307e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863820"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 維護 [IDiaFrameData：： execute](../../debugger/debug-interface-access/idiaframedata-execute.md) 方法調用之間的堆疊內容。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDiaStackWalkFrame : IUnknown
+IDiaStackWalkFrame : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
@@ -45,7 +45,7 @@ IDiaStackWalkFrame : IUnknown
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  用戶端應用程式會執行這個介面，並將介面的實例傳遞至 [IDiaFrameData：： execute](../../debugger/debug-interface-access/idiaframedata-execute.md) 方法。 這個介面的相同實例會再次使用，並在每次叫用方法期間維持暫存器的狀態 `execute` 。 `execute`方法也會使用此介面來判斷傳回位址。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Dia2。h
 
  程式庫： diaguids .lib

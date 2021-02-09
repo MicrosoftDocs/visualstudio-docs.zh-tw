@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6e045045-da8c-4338-9423-81a1ca20c405
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 191991ffb842657b7a7c4f439ca04a05670bca7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68c13c433d10bb462c78397b012000f0f245327a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863715"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 抓取符號的子系。 如果程式是以優化的方式編譯，則傳回的本機符號會包含即時範圍資訊。
@@ -25,7 +25,7 @@ ms.locfileid: "85464580"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT findChildrenEx ( 
+HRESULT findChildrenEx ( 
    enum SymTagEnum   symtag,
    LPCOLESTR         name,
    DWORD             compareFlags,
@@ -56,7 +56,7 @@ HRESULT findChildrenEx ( 
 ## <a name="remarks"></a>備註
  這個方法是 [IDiaSymbol：： findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)的擴充版本。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Dia2。h
 
  程式庫： diaguids .lib

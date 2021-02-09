@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 56ba4bc0-8f96-47c2-8b18-332b4e7c2d91
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 45fbc94460eef4e8b5bde2d9a0537c6e75e96756
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eefbfd9d0d19269c96699a624400fb77c83c9fb9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863687"
 ---
 # <a name="idiasymbolfindinlineelines"></a>IDiaSymbol::findInlineeLines
 抓取列舉，此列舉可讓用戶端逐一查看此符號中內嵌或間接內嵌之所有函式的行號資訊。
@@ -23,7 +23,7 @@ ms.locfileid: "85464552"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT findInlineeLines ( 
+HRESULT findInlineeLines ( 
    IDiaEnumLineNumbers** ppResult
 );
 ```

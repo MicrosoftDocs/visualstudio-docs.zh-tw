@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 45005ad0-8b29-4cde-9d33-6bef72f6e463
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbeff220bdb0f3c97b8e6588ff42c31b31b97ceb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6448b30f94924d24358409715af0dec673e31d87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863435"
 ---
 # <a name="idiasymbolget_datakind"></a>IDiaSymbol::get_dataKind
 捕獲資料符號的變數分類。
@@ -25,7 +25,7 @@ ms.locfileid: "85463943"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_dataKind ( 
+HRESULT get_dataKind ( 
    DWORD* pRetVal
 );
 ```
@@ -41,7 +41,7 @@ HRESULT get_dataKind ( 
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

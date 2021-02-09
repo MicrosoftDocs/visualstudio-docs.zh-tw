@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 71e2f5ab-4aa8-4922-aa8a-b7db97ee143c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 238dfd6195b2f7538978a46df6a36d21b6c19250
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80a5f8fe48985df2cde61a52d69aa8bc6d6fb06f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464958"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863890"
 ---
 # <a name="idiastackframeget_size"></a>IDiaStackFrame::get_size
 抓取堆疊框架的大小（以位元組為單位）。
@@ -25,7 +25,7 @@ ms.locfileid: "85464958"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_size ( 
+HRESULT get_size ( 
    DWORD* pRetVal
 );
 ```

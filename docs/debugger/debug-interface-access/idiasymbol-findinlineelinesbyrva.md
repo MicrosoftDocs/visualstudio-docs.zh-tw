@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: ac108db1-9dbf-4dc4-bf48-159ca8d3725c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26941012b28bb114771472452e158823d988faab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a959de9f17969ca5c759988b7781b65936409005
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863694"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
 抓取列舉，此列舉可讓用戶端在指定的相對虛擬位址 (RVA) 內，直接或間接地逐一查看在此符號中內嵌或間接內嵌的所有函式的行號資訊。
@@ -23,7 +23,7 @@ ms.locfileid: "85464517"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,
+HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,
    IDiaEnumLineNumbers** ppResult
 );
 ```

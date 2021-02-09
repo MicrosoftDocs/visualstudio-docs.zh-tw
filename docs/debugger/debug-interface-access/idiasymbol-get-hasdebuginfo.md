@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 84cd2b67-0d83-4589-9ecb-a4bcbeed55f5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c158d15f7d60000bfd022e8cab10c3f2bc060c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8914c0eae31e7faac8cea523f4c558a9f00749a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463768"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863386"
 ---
 # <a name="idiasymbolget_hasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
 抓取旗標，這個旗標會指定 [編譯單位](../../debugger/debug-interface-access/compiland.md) 是否包含偵錯工具資訊。
@@ -41,7 +41,7 @@ HRESULT get_hasDebugInfo(
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

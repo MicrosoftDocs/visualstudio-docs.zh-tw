@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f7dab1c6-112b-4966-baa5-afc976949c76
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 261a43ab176669a2b06e1481f1ee2e1d62e73162
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fc3c967f296e87ef46fe9121eaca055fd879025
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863414"
 ---
 # <a name="idiasymbolget_frontendbuild"></a>IDiaSymbol::get_frontEndBuild
 抓取前端組建編號。
@@ -25,7 +25,7 @@ ms.locfileid: "85463894"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_frontEndBuild ( 
+HRESULT get_frontEndBuild ( 
    DWORD* pRetVal
 );
 ```
@@ -46,7 +46,7 @@ HRESULT get_frontEndBuild ( 
 
  前端或後端版本號碼由三個部分組成： \<major> ... \<minor> \<build> ，其中 \<major> 是主要版本號碼， \<minor> 是次要版本號碼，而 \<build> 是組建編號。 例如 13.10.3077。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|
