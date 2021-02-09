@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: b7e4c9690e573d2807eb3ad9d842921ee08417d8
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 65415c22da2815650278ac1190e7d19f54b96063
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974561"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853081"
 ---
 # <a name="creating-a-custom-start-page"></a>建立自訂起始頁
 

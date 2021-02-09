@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32af7033eb29d223a5ecfafaccb0a3123ab88d06
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 95bc250219c59d4db21fcb086cdf43e0ba7800e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838626"
 ---
 # <a name="walkthrough-highlight-text"></a>逐步解說：反白顯示文字
 您可以藉由建立 Managed Extensibility Framework (MEF) 元件部分，將不同的視覺效果加入編輯器中。 本逐步解說示範如何在文字檔中醒目提示目前單字的每個出現專案。 如果單字在文字檔中出現一次以上，而且您將插入點放在一次，則會反白顯示每個出現的專案。
@@ -407,5 +407,5 @@ ms.locfileid: "97877126"
 
 4. 將游標放在其中一個出現的 "hello" 中。 每次出現時，都應該以藍色反白顯示。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

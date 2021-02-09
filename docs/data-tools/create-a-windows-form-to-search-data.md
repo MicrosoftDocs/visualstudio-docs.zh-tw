@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00b492c7aec41d30e972df93206f9e597ea82eb3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: eb6e5a1ba304627c08828b6ad7bff7f6accd3980
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435283"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859108"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>建立 Windows Form 以搜尋資料
 
@@ -45,7 +45,7 @@ ms.locfileid: "94435283"
 
 - 將參數輸入至表單，並執行參數化查詢。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -53,7 +53,7 @@ ms.locfileid: "94435283"
 
 2. 遵循下列步驟來安裝 Northwind 範例資料庫：
 
-    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 **Visual Studio 安裝程式** 中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢** ]。
+    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管** ] 視窗。  (SQL Server 物件總管會安裝為 **Visual Studio 安裝程式** 中 **資料儲存和處理** 工作負載的一部分。 ) 展開 **SQL Server** 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加 **查詢**]。
 
        [查詢編輯器] 視窗隨即開啟。
 
@@ -65,17 +65,17 @@ ms.locfileid: "94435283"
 
 ## <a name="create-the-windows-forms-application"></a>建立 Windows Forms 應用程式
 
-為 c # 或 Visual Basic 建立新的 **Windows Forms 應用程式** 專案。 將專案命名為 **WindowsSearchForm** 。
+為 c # 或 Visual Basic 建立新的 **Windows Forms 應用程式** 專案。 將專案命名為 **WindowsSearchForm**。
 
 ## <a name="create-the-data-source"></a>建立資料來源
 
 此步驟會使用 [資料來源組態精靈]，從資料庫建立資料來源：
 
-1. 若要開啟 [ **資料來源** ] 視窗，請按一下 [ **資料** ] 功能表上的 [ **顯示資料來源** ]。
+1. 若要開啟 [ **資料來源** ] 視窗，請按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
 
 2. 在 [ **資料來源** ] 視窗中，選取 [ **加入新的資料來源** ] 以啟動 [ **資料來源** 設定向導]。
 
-3. 請選取 [ **選擇資料來源類型** ] 頁面上的 [ **資料庫** ]，再按 [ **下一步** ]。
+3. 請選取 [ **選擇資料來源類型** ] 頁面上的 [ **資料庫** ]，再按 [ **下一步**]。
 
 4. 在 [選擇您的資料連線] 頁面上，執行下列其中一項：
 
@@ -85,7 +85,7 @@ ms.locfileid: "94435283"
 
 5. 如果資料庫需要密碼，請選取選項來加入敏感性資料，然後按一下 [下一步]。
 
-6. 在 [ **將連接字串儲存到應用程式佈建檔** ] 頁面上，按 **[下一步]** 。
+6. 在 [ **將連接字串儲存到應用程式佈建檔** ] 頁面上，按 **[下一步]**。
 
 7. 展開 [選擇您的資料庫物件] 頁面上的 [資料表] 節點。
 
@@ -109,7 +109,7 @@ ms.locfileid: "94435283"
 
 1. 選取 <xref:System.Windows.Forms.DataGridView> 控制項，然後選取 [資料] 功能表中的 [新增查詢]。
 
-2. 在 [ **搜尋準則** 產生器] 對話方塊的 [ **新查詢名稱** ] 區域中輸入 **fillbycity]** 。
+2. 在 [**搜尋準則** 產生器] 對話方塊的 [**新查詢名稱**] 區域中輸入 **fillbycity]** 。
 
 3. 將 `WHERE City = @City` 新增至 [查詢文字] 區域中的查詢。
 
@@ -135,11 +135,11 @@ ms.locfileid: "94435283"
 
 1. 按 **F5** 執行應用程式。
 
-2. 在 [City] 文字方塊中鍵入 **London** ，然後按一下 [FillByCity]。
+2. 在 [City] 文字方塊中鍵入 **London**，然後按一下 [FillByCity]。
 
      資料方格會填入符合準則的客戶。 在此範例中，資料格只會顯示在 [City] 資料行中具有 **London** 值的客戶。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 視應用程式的需求而定，在建立參數型表單後，您可能會有幾個想要執行的步驟。 一些您可以加強這個逐步解說的部分包括：
 
@@ -147,6 +147,6 @@ ms.locfileid: "94435283"
 
 - 編輯資料集，以加入或移除資料庫物件。 如需詳細資訊，請參閱[建立和設定資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

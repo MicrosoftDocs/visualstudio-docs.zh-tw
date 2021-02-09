@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fe283da2c2a81827ca70414315278cebd775873a
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: bc1474d1c7aeabb9b3e9ecbbe6b42931d44c59c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915202"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839080"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說：使用專案範本建立自訂動作專案專案（第2部分）
   在您定義自訂類型的 SharePoint 專案專案，並將其與 Visual Studio 中的專案範本建立關聯之後，您可能也會想要提供範本的嚮導。 當使用者使用您的範本將新的專案專案實例加入至專案時，您可以使用此嚮導來收集使用者的資訊。 您收集的資訊可以用來初始化專案專案。
@@ -105,7 +105,7 @@ ms.locfileid: "96915202"
 9. 在 [ **屬性** ] 視窗中，將 [ **內嵌 Interop 類型** ] 屬性的值變更為 [ **False**]。
 
 ## <a name="define-the-default-location-and-id-strings-for-custom-actions"></a>定義自訂動作的預設位置和識別碼字串
- 每個自訂動作都具有在Elements.xml檔案中專案的和屬性中指定的位置和識別碼 `GroupID` `Location` `CustomAction` 。 *Elements.xml* 在此步驟中，您會在 ItemTemplateWizard 專案中定義這些屬性的部分有效字串。 當您完成此逐步解說時，當使用者在嚮導中指定位置和識別碼時，這些字串會寫入自訂動作專案專案中的 *Elements.xml* 檔案。
+ 每個自訂動作都具有在Elements.xml檔案中專案的和屬性中指定的位置和識別碼 `GroupID` `Location` `CustomAction` 。  在此步驟中，您會在 ItemTemplateWizard 專案中定義這些屬性的部分有效字串。 當您完成此逐步解說時，當使用者在嚮導中指定位置和識別碼時，這些字串會寫入自訂動作專案專案中的 *Elements.xml* 檔案。
 
  為了簡單起見，此範例僅支援可用預設位置和識別碼的子集。 如需完整清單，請參閱 [預設自訂動作位置和識別碼](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))。
 

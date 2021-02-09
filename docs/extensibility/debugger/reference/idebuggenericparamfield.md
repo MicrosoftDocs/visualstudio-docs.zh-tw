@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: ba24f499-5ba7-4c67-83e6-923229b52327
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b04b0805aec5ecee818fa42e1d76a76cce12b66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad01730f7f1d1e8e155cd1df44f75fbf88c73a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727849"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838639"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 代表 managed 程式碼泛型型別的參數。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugGenericParamField : IDebugField
@@ -41,7 +41,7 @@ IDebugGenericParamField : IDebugField
 |[GetNameOfFormalParam](../../../extensibility/debugger/reference/idebuggenericparamfield-getnameofformalparam.md)|抓取這個泛型參數的名稱。|
 |[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|抓取這個泛型參數的類型或方法擁有者。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Sh. h
 
  命名空間： VisualStudio

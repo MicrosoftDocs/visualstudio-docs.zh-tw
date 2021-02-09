@@ -7,15 +7,15 @@ helpviewer_keywords:
 - .NET analyzers, ported rules, unported rules, rules that may be ported
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8510027e60bfd7383b07306d0d11e81fd11bfbfd
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: dbc4e53b78eded2b8ab2698d60b1653d1615a7e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860252"
 ---
 # <a name="unported-rules-that-may-be-ported"></a>可能可移植的未移植規則
 

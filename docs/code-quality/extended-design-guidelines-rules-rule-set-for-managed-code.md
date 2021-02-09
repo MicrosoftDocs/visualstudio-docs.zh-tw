@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0da23a533ca7667ba946299a3197dd487999afec
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3555014113f84a5e21f21d1ab7d9a658e2c9aa6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860330"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充設計方針規則規則集
 
@@ -25,7 +25,7 @@ Microsoft 擴充設計指導方針規則規則集會擴充基本的設計指導�
 
 下表說明 Microsoft 擴充設計指導方針規則規則集中的所有規則。
 
-|規則|說明|
+|規則|Description|
 |----------|-----------------|
 |[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可處置欄位的類型應該為可處置|
 |[CA1009](../code-quality/ca1009.md)|事件處理常式必須正確宣告|

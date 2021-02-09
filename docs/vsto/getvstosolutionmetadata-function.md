@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 205bde9352e2a037b4a08108d8cfce3460034e66
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: eaf58f312afd379fb1f16d208c323777ec725231
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845033"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860603"
 ---
 # <a name="getvstosolutionmetadata-function"></a>GetVstoSolutionMetadata 函式
   此 API 支援 Office 基礎結構，而且不適合直接從程式碼使用。
@@ -33,7 +33,7 @@ HRESULT WINAPI GetVstoSolutionMetadata(
 
 ### <a name="parameters"></a>參數
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |*lpwszSolutionMetadataKey*|請勿使用。|
 |*ppSolutionInfo*|請勿使用。|

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8d31adc0-1c44-4658-8d4f-f4b73e35f4a6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 585ff354cef9686097325ea4dea25cd08c4cbb1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83243899bdc11c58e76c35b6d9eb7b9555794374
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838652"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
@@ -23,7 +23,7 @@ ms.locfileid: "80727834"
 
  讓運算式評估工具 (EE) 在偵錯工具的輸出視窗中顯示訊息。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugIDECallback : IUnknown
@@ -42,7 +42,7 @@ IDebugIDECallback : IUnknown
 |------------|-----------------|
 |[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|將指定的訊息字串傳送至偵錯工具的輸出視窗。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Ee. h
 
  命名空間： VisualStudio

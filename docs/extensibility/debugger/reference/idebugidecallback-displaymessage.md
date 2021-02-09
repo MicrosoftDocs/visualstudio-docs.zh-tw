@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: c19b48ee-b370-4fce-91fe-f82bf1e63179
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7073cc3d142d0faabe145b775780c177fbf0d732
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74fc337137ac6ddd523e0584333865661abf3427
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727851"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838678"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
 將指定的訊息字串傳送至偵錯工具的輸出視窗。

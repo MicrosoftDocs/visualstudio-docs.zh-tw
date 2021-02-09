@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 ms.author: mikejo
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c900ec10ea13e7f9d7092769565703bf52fe8c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: efeabd85bbf2753dd3f5e37a43e0918b7f95d7fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860213"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd 工具錯誤
 
@@ -41,7 +41,7 @@ FxCopCmd 不會將所有錯誤視為嚴重錯誤。 如果 FxCopCmd 有足夠的
 |BuildBreakingMessage|0x400|
 |未知的錯誤|0x1000000|
 
-發生嚴重錯誤時，會傳回 **分析錯誤** 。 指出無法完成分析。 在適用的情況下，錯誤碼也包含嚴重錯誤的根本原因。 下列條件會產生嚴重錯誤：
+發生嚴重錯誤時，會傳回 **分析錯誤**。 指出無法完成分析。 在適用的情況下，錯誤碼也包含嚴重錯誤的根本原因。 下列條件會產生嚴重錯誤：
 
 - 無法執行分析，因為輸入不足。
 
@@ -54,6 +54,6 @@ FxCopCmd 不會將所有錯誤視為嚴重錯誤。 如果 FxCopCmd 有足夠的
 > [!NOTE]
 > FxCopCmd 傳回碼 **元件本身參考錯誤** 0x200 本身是警告而非錯誤。 這個傳回碼表示有遺漏的間接參考，但是該 FxCopCmd 能夠處理它們。 警告表示某些分析結果可能已遭入侵。 將 **元件參考錯誤** 視為與任何其他傳回碼合併時的錯誤。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [程式碼分析應用程式錯誤](../code-quality/code-analysis-application-errors.md)

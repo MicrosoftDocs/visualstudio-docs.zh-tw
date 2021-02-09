@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 5fdd14b394bca495b38f408be94b46a4b9a68c01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349096"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860551"
 ---
 # <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 
@@ -31,7 +31,7 @@ ms.locfileid: "94349096"
 
 - 方案中所有專案的組建都未啟用程式碼分析。
 
-- 在 Visual Studio 中，專案的本機規則集所設定的 **動作** 設定較不嚴格，例如專案規則集，在伺服器上設定為 **動作** = **錯誤** 的規則，其 **動作** 設定為 [ **警告** ] 或 [ **無** ] 會在 Visual Studio) 中執行的規則集。
+- 在 Visual Studio 中，專案的本機規則集所設定的 **動作** 設定較不嚴格，例如專案規則集，在伺服器上設定為 **動作** = **錯誤** 的規則，其 **動作** 設定為 [**警告**] 或 [**無**] 會在 Visual Studio) 中執行的規則集。
 
 - Visual Studio 中指定的規則集未包含專案的程式碼分析簽入原則中指定的規則集內所指定的所有規則。
 
@@ -75,6 +75,6 @@ ms.locfileid: "94349096"
 
 此錯誤適用于未受管理的專案。 程式碼分析原則需要 C/c + + 的程式碼分析，但在用戶端的目前專案中未啟用。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [程式碼分析應用程式錯誤](../code-quality/code-analysis-application-errors.md)

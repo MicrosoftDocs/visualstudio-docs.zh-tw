@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6aa97d246ac767cc3c88c845298e2db61edcd35f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a70a0315d596e4490d40db1846d7be0b6f3bf448
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860369"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充正確性規則規則集
 
@@ -25,7 +25,7 @@ Microsoft 擴充正確性規則規則集包含 [基本正確性規則](../code-q
 
 下表說明 Microsoft 擴充正確性規則規則集中的所有規則。
 
-|規則|說明|
+|規則|Description|
 |----------|-----------------|
 |[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可處置欄位的類型應該為可處置|
 |[CA1009](../code-quality/ca1009.md)|事件處理常式必須正確宣告|

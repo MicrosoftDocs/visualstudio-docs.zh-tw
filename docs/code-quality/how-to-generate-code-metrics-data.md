@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code metrics [Visual Studio]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 631ce51df5d985e02e8ccabca258c0ef1c1318f4
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: 0387542487b2c24baa129fbb0163dee0140cb413
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069470"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860034"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>How to：產生程式碼度量資料
 
@@ -45,7 +45,7 @@ ms.locfileid: "98069470"
 dotnet_diagnostic.CA1502.severity = warning
 ```
 
-### <a name="configuration"></a>設定
+### <a name="configuration"></a>組態
 
 您可以設定程式碼計量規則引發的臨界值。
 

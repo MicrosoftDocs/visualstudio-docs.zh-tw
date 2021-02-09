@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d6ec8860d2c163d16e29d229203bb77abcdf65f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 57190afba118468b4533ef1ecd30957eb25b08e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435191"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859044"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows Forms 應用程式中建立查閱資料表
 
@@ -30,7 +30,7 @@ ms.locfileid: "94435191"
 
 ## <a name="to-databind-a-lookup-control"></a>若要將查閱控制項進行 databind
 
-1. 當您的專案開啟時，選擇 [ **查看** **Data Sources**  >  **其他 Windows**  >  **資料來源** ] 以開啟 [資料來源] 視窗。
+1. 當您的專案開啟時，選擇 [**查看**   >  **其他 Windows**  >  **資料來源**] 以開啟 [資料來源] 視窗。
 
     > [!NOTE]
     > 查閱資料表要求在 [ **資料來源** ] 視窗中有兩個相關的資料表或物件。 如需詳細資訊，請參閱 [資料集中的關聯](relationships-in-datasets.md)性。
@@ -40,7 +40,7 @@ ms.locfileid: "94435191"
     > [!NOTE]
     > 子資料工作表節點是在父資料表中顯示為可展開子節點的節點。
 
-3. 從子資料工作表節點的控制項清單中選取 [ **詳細資料** ]，將子資料工作表的卸載類型變更為 [ **詳細資料** ]。 如需詳細資訊，請參閱 [設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
+3. 從子資料工作表節點的控制項清單中選取 [**詳細資料**]，將子資料工作表的卸載類型變更為 [**詳細資料**]。 如需詳細資訊，請參閱 [設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
 4. 找出與上一個範例中的節點相關聯的兩個數據表 (節點 `CustomerID`) 。 <xref:System.Windows.Forms.ComboBox>從控制項清單中選取 [ **ComboBox** ]，將其卸載類型變更為。
 
@@ -59,6 +59,6 @@ ms.locfileid: "94435191"
     |**ValueMember**|Visual Studio 會將此屬性設定為參與主索引鍵的第一個資料行，或者，如果未定義索引鍵，則為資料表中的第一個資料行。<br /><br /> 如果您需要進行調整，請使用您想要顯示的資料行，將此參數設定為數據表中的主鍵。|
     |**SelectedValue**|Visual Studio 將此屬性設定為從 [ **資料來源** ] 視窗卸載的原始資料行。<br /><br /> 如果您需要進行調整，請將此設定為相關資料表中的外鍵資料行。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

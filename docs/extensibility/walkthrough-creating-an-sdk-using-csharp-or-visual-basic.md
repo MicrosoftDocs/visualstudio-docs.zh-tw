@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b9000290b146275ca495b49211c9823422b0a32f
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 1f1ede0e642f14581d13d571acf67a952360bf65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862956"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838691"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>逐步解說：使用 c # 或 Visual Basic 建立 SDK
 在本逐步解說中，您將瞭解如何使用 Visual c # 建立簡單的數學程式庫 SDK，然後將 SDK 封裝為 (VSIX) 的 Visual Studio 延伸模組。 您將完成下列程式：
@@ -46,9 +46,9 @@ ms.locfileid: "97862956"
     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]
 
-6. 在 **方案總管** 中，開啟 [ **方案 ' SimpleMath '** ] 節點的快捷方式功能表，然後選擇 [ **Configuration Manager**]。
+6. 在 **方案總管** 中，開啟 [ **方案 ' SimpleMath '** ] 節點的快捷方式功能表，然後選擇 [ **設定管理員**]。
 
-    [ **Configuration Manager** ] 對話方塊隨即開啟。
+    [ **設定管理員** ] 對話方塊隨即開啟。
 
 7. 在 [使用中的 **方案** 設定] 清單中，選擇 [ **發行**]。
 
@@ -247,7 +247,7 @@ ms.locfileid: "97862956"
 
     您已成功建立並使用延伸模組 SDK。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [逐步解說：使用 c + + 建立 SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [逐步解說：使用 JavaScript 建立 SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
 - [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)

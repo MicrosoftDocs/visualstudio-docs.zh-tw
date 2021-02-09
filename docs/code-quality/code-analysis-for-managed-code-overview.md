@@ -9,15 +9,15 @@ helpviewer_keywords:
 - managed code, code analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 643e8457dbbe838d593a7bad38064537b6cbe57d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 542747f650888b384a9f9c4910b0d9caea93e948
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860564"
 ---
 # <a name="overview-of-code-analysis-for-net-in-visual-studio"></a>Visual Studio 中的 .NET 程式碼分析總覽
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - .NET analyzers, ported rules
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0a17e39839fa0e75842f4b7692cc012f6aa4b315
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 71c3dd4e30b30c2e71e11ec8159aa805306f0e4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860265"
 ---
 # <a name="unported-rules"></a>未移植的規則
 

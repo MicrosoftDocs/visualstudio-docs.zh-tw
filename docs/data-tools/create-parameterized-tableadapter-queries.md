@@ -17,21 +17,21 @@ helpviewer_keywords:
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6eb2f6e1358c91a1103615aca67ede4a3561fae
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 373e062ad7f2d8600fd28f098cbc0cae1c8d5a65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859004"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>建立參數型 TableAdapter 查詢
 
 參數型查詢會傳回符合查詢中 WHERE 子句條件的資料。 例如，您可以將 `WHERE City = @City` 加入至傳回客戶清單的 SQL 陳述式結尾，以參數化客戶清單，使其只顯示特定城市的客戶。
 
-您可以在 **DataSet 設計工具** 中建立參數化的 TableAdapter 查詢。您也可以使用 [ **資料** ] 功能表上的 [ **參數化資料來源** ] 命令，在 Windows 應用程式中建立它們。 **參數化資料來源** 命令會在您的表單上建立控制項，您可以在其中輸入參數值並執行查詢。
+您可以在 **DataSet 設計工具** 中建立參數化的 TableAdapter 查詢。您也可以使用 [**資料**] 功能表上的 [**參數化資料來源**] 命令，在 Windows 應用程式中建立它們。 **參數化資料來源** 命令會在您的表單上建立控制項，您可以在其中輸入參數值並執行查詢。
 
 > [!NOTE]
 > 當您建立參數化查詢時，請使用您要撰寫程式碼的資料庫專用的參數標記法。 例如，Access 和 OleDb 資料來源使用問號 '?' 代表參數，所以 WHERE 子句應該類似：`WHERE City = ?`。
@@ -50,7 +50,7 @@ ms.locfileid: "94436663"
 
 1. 在表單上選取已繫結至資料集的控制項。 如需詳細資訊，請參閱 [將 Windows Forms 控制項系結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)。
 
-2. 選取 [ **資料** ] 功能表上的 [ **加入查詢** ]。
+2. 選取 [ **資料** ] 功能表上的 [ **加入查詢**]。
 
 3. 完成 [搜尋準則產生器] 對話方塊，並將具有所需參數的 WHERE 子句新增至 SQL 陳述式。
 
@@ -58,7 +58,7 @@ ms.locfileid: "94436663"
 
 1. 在 **Windows Forms 設計工具** 中開啟表單。
 
-2. 在 [ **資料** ] 功能表上，選取 [ **加入查詢** ] 或 [ **資料智慧標籤** ]。
+2. 在 [ **資料** ] 功能表上，選取 [ **加入查詢** ] 或 [ **資料智慧標籤**]。
 
     > [!NOTE]
     > 若 [資料] 功能表中的 [新增查詢] 無法使用，請選取表單上顯示您想要新增參數化之資料來源的控制項。 例如，若表單以 <xref:System.Windows.Forms.DataGridView> 控制項顯示資料，請選取此控制項。 若表單以個別控制項顯示資料，請選取任何資料繫結控制項。
@@ -96,10 +96,10 @@ WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 
 1. 在 [ **DataSet 設計工具** 中，選取需要接受 null 參數值的 TableAdapter 查詢。
 
-2. 在 [ **屬性** ] 視窗中，選取 [ **參數** ]，然後按一下省略號 ( **...** ) 按鈕以開啟 [ **參數集合編輯器** ]。
+2. 在 [ **屬性** ] 視窗中，選取 [ **參數**]，然後按一下省略號 (**...**) 按鈕以開啟 [ **參數集合編輯器**]。
 
 3. 選取允許 null 值的參數，並將 **AllowDbNull** 屬性設定為 `true` 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)

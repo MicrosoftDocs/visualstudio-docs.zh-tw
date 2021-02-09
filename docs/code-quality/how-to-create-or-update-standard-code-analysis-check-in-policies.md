@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3d46ed89880c41cbcaa6982c386e2ff8f115f8de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860109"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：建立或更新標準程式碼分析簽入原則
 
@@ -37,21 +37,21 @@ ms.locfileid: "94348758"
 
 ## <a name="to-open-the-check-in-policy-editor"></a>開啟簽入原則編輯器
 
-1. 在 Team Explorer 中，以滑鼠右鍵按一下專案名稱，指向 [ **專案設定** ]，然後按一下 [ **原始檔控制** ]。
+1. 在 Team Explorer 中，以滑鼠右鍵按一下專案名稱，指向 [ **專案設定**]，然後按一下 [ **原始檔控制**]。
 
 1. 在 [ **原始檔控制** ] 對話方塊中，選取 [ **簽入原則** ] 索引標籤。
 
-1. 請執行下列其中一項：
+1. 執行下列其中一個動作：
 
     - 按一下 **[新增]** 以建立新的簽入原則。
 
-    - 按兩下 [ **原則類型** ] 清單中的現有程式 **代碼分析** 專案，以變更原則。
+    - 按兩下 [**原則類型**] 清單中的現有程式 **代碼分析** 專案，以變更原則。
 
 ## <a name="to-set-policy-options"></a>設定原則選項
 
 選取或清除下列選項：
 
-|選項|說明|
+|選項|Description|
 |------------|-----------------|
 |**強制簽入只包含屬於目前方案的檔案。**|程式碼分析只能在方案和專案設定檔中指定的檔案上執行。 此原則可確保分析解決方案中的所有程式碼。|
 |**強制執行 C/c + + 程式碼分析 (/analyze)**|需要以/analyze 編譯器選項建立所有 C 或 c + + 專案，才能在簽入之前先執行程式碼分析。|
@@ -69,6 +69,6 @@ ms.locfileid: "94348758"
 
 如需如何建立及執行自訂簽入原則規則集的詳細資訊，請參閱 [針對 Managed 程式碼執行自訂簽入原則](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [為受控碼實作自訂程式碼分析簽入原則](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

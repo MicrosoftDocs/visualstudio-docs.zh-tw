@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Word projects [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e9420ab02b5f402dd39e5ca1713b911a10932dfb
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ff19fd84b66b9d31ed806589044775e006ef7096
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845176"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860655"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>開始程式設計 Word 的檔層級自訂
   如果您剛開始使用 Visual Studio 來建立 Microsoft Office Word 的檔層級自訂，以下是您需要知道的專案。
@@ -61,7 +61,7 @@ ms.locfileid: "96845176"
 ## <a name="bind-controls-to-data"></a>將控制項系結至資料
  內容控制項和控制項位於 <xref:Microsoft.Office.Tools.Word.Bookmark> 您可以從 [ **資料來源** ] 視窗拖曳的控制項清單中。 以這種方式加入內容控制項和書簽，會自動將其系結至您使用視窗所設定的資料來源。 若未撰寫任何程式碼，您可以顯示資料庫、服務和商務物件的資料。 如需詳細資訊，請參閱 [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  若要瞭解如何建立 Word 的檔層級自訂，請參閱 [逐步解說：建立 word 的第一個檔層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)。 本逐步解說將為您介紹 Visual Studio 中的 Office 程式開發工具，以及 Word 檔層級自訂的程式設計模型。
 
  如需逐步解說 Word 專案中一些常見工作的主題清單，請參閱 [Office 程式設計的一般](../vsto/common-tasks-in-office-programming.md)工作。

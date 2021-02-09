@@ -7,15 +7,15 @@ helpviewer_keywords:
 - .NET analyzers, ported rules, unported rules, deprecated rules
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: c73816ae31ac9283b0f9053c08b8a351511b9a76
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 2cc47582f69b3ac186e931c7090d6372d42d3574
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860291"
 ---
 # <a name="deprecated-rules"></a>過時的規則
 
