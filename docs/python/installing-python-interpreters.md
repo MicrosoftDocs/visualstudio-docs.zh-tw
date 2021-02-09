@@ -5,24 +5,24 @@ ms.date: 06/05/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb1c657789e232307672d494710f330758780a67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2c4cd4c110b55837009ea9d081a95180727d331
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916524"
 ---
 # <a name="install-python-interpreters"></a>安裝 Python 解譯器
 
 根據預設，會在 Visual Studio 2017 中安裝 Python 開發工作負載，之後也會安裝 Python 3 (64 位元)。 如[安裝](installing-python-support-in-visual-studio.md)中所述，您可以選擇安裝 32 位元和 64 位元版本的 Python 2 與 Python 3，以及 Miniconda (Visual Studio 2019) 或 Anaconda 2/Anaconda 3 (Visual Studio 2017)。
 
 ::: moniker range=">=vs-2019"
-或者，可以從 [新增環境]**** 對話方塊安裝標準 Python 解譯器。 在 [Python 環境]**** 視窗或 Python 工具列中選取 [新增環境]**** 命令，選取 [Python 安裝]**** 索引標籤，指出要安裝哪一個解譯器，然後選取 [安裝]****。
+或者，可以從 [新增環境] 對話方塊安裝標準 Python 解譯器。 在 [Python 環境] 視窗或 Python 工具列中選取 [新增環境] 命令，選取 [Python 安裝] 索引標籤，指出要安裝哪一個解譯器，然後選取 [安裝]。
 ::: moniker-end
 
 您也可以手動安裝下表所列出 Visual Studio 安裝程式以外的任何解譯器。 例如，如果您在安裝 Visual Studio 前已經安裝了 Anaconda 3，就不需透過 Visual Studio 安裝程式再次安裝。 如果可用的新版本未出現在 Visual Studio 安裝程式中，您也可以手動安裝解譯器。
@@ -40,9 +40,9 @@ Visual Studio (所有版本) 會根據 [PEP 514 - Python registration in the Win
 
 Visual Studio 會在 [ [**Python 環境**](managing-python-environments-in-visual-studio.md#the-python-environments-window) ] 視窗中顯示所有已知的環境，並自動偵測現有解譯器的更新。
 
-| 解譯器 | 說明 |
+| 解譯器 | Description |
 | --- | --- |
-| [CPython](https://www.python.org/) | 這是「原生」且最常用的解譯器，提供 32 位元和 64 位元版本 (建議使用 32 位元)。 包含最新的語言功能、最大的 Python 套件相容性、完整的偵錯支援，以及與 [IPython](https://ipython.org/) 的互通性。 另請參閱： [我應該使用 python 2 還是 python 3？](https://wiki.python.org/moin/Python2orPython3)。 請注意，Visual Studio 2015 及更舊版本不支援 Python 3.6+，因此可能會出現**不支援 python 3.6 版**這樣的錯誤。 請改用 Python 3.5 或更早版本。 |
+| [CPython](https://www.python.org/) | 這是「原生」且最常用的解譯器，提供 32 位元和 64 位元版本 (建議使用 32 位元)。 包含最新的語言功能、最大的 Python 套件相容性、完整的偵錯支援，以及與 [IPython](https://ipython.org/) 的互通性。 另請參閱： [我應該使用 python 2 還是 python 3？](https://wiki.python.org/moin/Python2orPython3)。 請注意，Visual Studio 2015 及更舊版本不支援 Python 3.6+，因此可能會出現 **不支援 python 3.6 版** 這樣的錯誤。 請改用 Python 3.5 或更早版本。 |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Python 的 .NET 實作具有 32 位元和 64 位元版本，除了提供 C#/F#/Visual Basic 互通性之外，還可存取 .NET API、標準 Python 偵錯 (但不包括 C++ 混合模式偵錯) 及混合式 IronPython/C# 偵錯。 不過，IronPython 並不支援虛擬環境。 |
 | [Anaconda](https://www.continuum.io) | 由 Python 提供技術支援的開放式資料科學平台，它包含最新版的 CPython 和大多數難以安裝的套件。 如果您無法決定要使用哪一個解譯器，建議您使用此解譯器。 |
 | [PyPy](https://www.pypy.org/) | Python 的高效能追蹤 JIT 實作，適合用來處理長時間執行的程式，以及您找出效能問題但找不到其他解決方案的情況。 可以與 Visual Studio 搭配運作，但對進階偵錯功能的支援有限。 |
@@ -54,7 +54,7 @@ Visual Studio 會在 [ [**Python 環境**](managing-python-environments-in-visua
 
 如果您使用檔案系統將現有的解譯器移至新的位置，則 Visual Studio 不會自動偵測變更。
 
-- 如果您原本透過 [Python 環境]**** 視窗指定解譯器的位置，請使用該視窗中的 [設定]**** 索引標籤來編輯其環境，以便識別新的位置。 請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
+- 如果您原本透過 [Python 環境] 視窗指定解譯器的位置，請使用該視窗中的 [設定] 索引標籤來編輯其環境，以便識別新的位置。 請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
 - 如果您已使用安裝程式安裝解譯器，則請使用下列步驟在新的位置中重新安裝解譯器：
 

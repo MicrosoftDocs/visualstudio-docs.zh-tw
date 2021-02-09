@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 62c06333af1e296c7e9745b70f33577d45ede68b
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 1ae12d6b7465e7b0542c987aae9fb849f232fce3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668764"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916521"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 
@@ -79,7 +79,7 @@ IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 �
 
 如果類型不可見或欄位不[可見](#visibility)，IntelliTest 需要協助建立物件，並使其進入相關狀態，以達到最大的程式碼涵蓋範圍。 IntelliTest 可使用反映來以任意方式建立和初始化執行個體，但這通常不可取，因為它可能會使物件進入正常程式執行期間可能永遠不會發生的狀態。 相反地，IntelliTest 會依賴來自使用者的提示。
 
-## <a name="visibility"></a>可見度
+## <a name="visibility"></a>可見性
 
 .NET 中有一個詳盡的可見性模型：類型、方法、欄位和其他成員可以是 **私人**、**公用**、**內部** 等等。
 
@@ -135,6 +135,6 @@ IntelliTest 會嘗試將觸發相關程式行為所需的陣列和字串大小�
 
 在[開發人員社群](https://aka.ms/feedback/suggest?space=8)上張貼您的意見與功能建議。
 
-## <a name="further-reading"></a>進階閱讀
+## <a name="further-reading"></a>進一步閱讀
 
-* [它如何運作？](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
+* [運作方式](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

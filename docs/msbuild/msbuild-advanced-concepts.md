@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f34a558a-ebd9-49bd-8510-32a2b581a4af
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58974778be615f2b0455f5b65a1c392035265425
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: c92a9270198fc7dfb5035afd35a1c92269450133
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918156"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 進階概念
 
@@ -34,7 +34,7 @@ ms.locfileid: "92903472"
 |[多目標](../msbuild/msbuild-multitargeting-overview.md)|說明如何編譯應用程式，讓它在數個版本的 .NET Framework 上都能執行。|
 |[最佳做法](../msbuild/msbuild-best-practices.md)|建議撰寫 MSBuild 指令碼的最佳做法。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [MSBuild 中的記錄](../msbuild/logging-in-msbuild.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging and deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bd06a5be3c9e7ceea38bdb4560f8b6262175bd45
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: ae74aa3cf759ba006acd36c168eecceac4b2ee4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305072"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916549"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>封裝和部署 SharePoint 方案
   SharePoint 方案通常會使用 ( .wsp) 檔案的方案套件，部署到 SharePoint 伺服器。 您可以使用 Visual Studio 將 SharePoint 專案專案組織成功能，並建立封裝以部署 SharePoint 功能。

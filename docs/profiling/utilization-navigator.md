@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 522a981a-37ef-4cdd-a04c-f1e7525a2aab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f209098200333e91f0e5baf9c7a2b73b4a3202f
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3d92747bb90cae18a79e81e49689ce8c01b8a9b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917569"
 ---
 # <a name="utilization-navigator"></a>使用率導覽
 您可以使用並行視覺化檢視中的使用率導覽，選取追蹤中的一段時間。 並行視覺化檢視會顯示目標處理序在一段時間內的 CPU 核心使用率。 這可讓您更輕鬆地檢查 CPU 使用率模式，也可讓您比較使用率資料與其他檢視中的資料。 使用率導覽會出現在並行視覺化檢視中的每個檢視頂端。 下圖顯示使用率導覽。

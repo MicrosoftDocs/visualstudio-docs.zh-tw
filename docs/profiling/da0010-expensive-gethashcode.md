@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: 3987e21a-5b4f-45e4-8a33-6b3f0a472c08
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f94277822d1fcd4210f0f8d79591fc4e2ed3d9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc9c1b35a78a8d9453ab35f201a120bc75134768
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916833"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010：GetHashCode 高度耗費資源
 

@@ -5,19 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: e58a9c6477568843141a73ece002d1911280d7ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719652"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916451"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 隔離測試中的程式碼
 
@@ -31,7 +31,7 @@ Fakes 分為兩種類別：
 
 ![Fakes 會取代其他元件](../test/media/fakes-2.png)
 
-**Requirements**
+**需求**
 
 - Visual Studio Enterprise
 - .NET Framework 專案

@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 71ec0781-6031-4e17-af09-f50226018437
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0d7785071e5f2928e7eabb4a29b1655b42c5ad
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: f99431faaa7bfc77bd7cd9a14be03f7cc2238127
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917837"
 ---
 # <a name="lines-view"></a>程式行檢視
 [程式行] 檢視僅適用於使用取樣方法收集的分析工具資料。 此檢視不適用於使用檢測收集的資料。

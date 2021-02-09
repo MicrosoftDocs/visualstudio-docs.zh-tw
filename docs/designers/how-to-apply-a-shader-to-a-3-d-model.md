@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b31e9002a97decf699ffbd589a1e0e656e3e403
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: bdaf4b86bfc773df678c03875a9ec260cd72084f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917087"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>如何：將著色器套用至 3D 模型
 
@@ -37,7 +37,7 @@ ms.locfileid: "93134115"
 
 在將著色器套用至模型之後，您可以選取該模型，然後在 [屬性] 視窗中，於 [效果] 屬性群組的 [(進階)] 屬性中，選擇省略符號(**...**) 按鈕。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：建立基本3D 模型](../designers/how-to-create-a-basic-3-d-model.md)
 - [如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)

@@ -5,17 +5,17 @@ ms.date: 05/12/2020
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5307684bde56955f2a4ed77d2ac66b6b30cb1c1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcc5d9746a556af54ea206528fcb9a402e25d700
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916616"
 ---
 Visual Studio 可以在 Windows 電腦本機和遠端啟動 Python 應用程式並進行偵錯工具 (查看 [遠端偵錯](../../../debugger/remote-debugging.md)) 。 它也可以使用 [debugpy 程式庫](https://pypi.org/project/debugpy/)，在 CPython 以外的不同作業系統、裝置或 Python 執行上進行遠端偵錯。
 
@@ -91,7 +91,7 @@ Visual Studio 可以在 Windows 電腦本機和遠端啟動 Python 應用程式�
 
 1. 選取 [ **Debug**  >  **附加至進程**]。
 
-1. 在出現的 [ **附加至進程** ] 對話方塊中，將 [ **連線類型** ] 設定為 [ **Python 遠端 (debugpy) **。
+1. 在出現的 [ **附加至進程** ] 對話方塊中，將 [ **連線類型** ] 設定為 [ **Python 遠端 (debugpy)**。
 
 1. 在 [ **連接目標** ] 欄位中，輸入 `tcp://<ip_address>:5678` `<ip_address>` 遠端電腦 (的位置，它可以是明確的位址或名稱，例如 myvm.cloudapp.net) ，而 `:5678` 是遠端偵錯程式埠號碼。
 
@@ -99,9 +99,9 @@ Visual Studio 可以在 Windows 電腦本機和遠端啟動 Python 應用程式�
 
     ![輸入連線目標，並列出處理序](../../media/remote-debugging-attach.png)
 
-    填入此清單之後，如果您剛好在遠端電腦上啟動另一個程式，請選取 [重新整理]**** 按鈕。
+    填入此清單之後，如果您剛好在遠端電腦上啟動另一個程式，請選取 [重新整理] 按鈕。
 
-1. 選取要偵錯的處理序，再選取 [附加]****，或按兩下處理序。
+1. 選取要偵錯的處理序，再選取 [附加]，或按兩下處理序。
 
 1. Visual Studio 即會切換至偵錯模式，而遠端電腦仍會繼續執行指令碼，並提供所有一般[偵錯](../../debugging-python-in-visual-studio.md)功能。 例如，在 `if guess < number:` 行上設定中斷點，然後切換到遠端電腦，並輸入另一種猜測。 進行上述作業之後，本機電腦的 Visual Studio 會在該中斷點停駐，並顯示本機變數等等：
 
@@ -111,7 +111,7 @@ Visual Studio 可以在 Windows 電腦本機和遠端啟動 Python 應用程式�
 
 ### <a name="connection-troubleshooting"></a>連線疑難排解
 
-1. 確定您已為連線**類型**選取**Python 遠端 (debugpy) **
+1. 確定您已為連線 **類型** 選取 **Python 遠端 (debugpy)**
 1. 檢查 **連接目標** 中的密碼是否完全符合遠端程式碼中的密碼。
 1. 檢查 **連接目標** 中的 IP 位址是否與遠端電腦的 IP 位址相符。
 1. 請確認您已在遠端電腦上開啟遠端偵錯程式埠，而且您已在連接目標中包含埠尾碼，例如 `:5678` 。
@@ -141,7 +141,7 @@ Visual Studio 2017 15.8 版及更新版本使用以 ptvsd 4.1+ 版為基礎的�
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
-    當 openssl 出現提示時，請依據您用以連接的項目，在 [一般名稱]**** 中使用主機名稱或 IP 位址 
+    當 openssl 出現提示時，請依據您用以連接的項目，在 [一般名稱] 中使用主機名稱或 IP 位址 
 
     (如需詳細資訊，請參閱 Python `ssl` 模組文件中的 [Self-signed certificates](https://docs.python.org/3/library/ssl.html#self-signed-certificates) (自我簽署的憑證)。 請注意，這些文件中的命令只會產生單一合併檔案)。
 
@@ -158,11 +158,11 @@ Visual Studio 2017 15.8 版及更新版本使用以 ptvsd 4.1+ 版為基礎的�
 1. 將憑證新增至安裝 Visual Studio 之 Windows 電腦上的受信任根 CA，以確保通道安全：
 
     1. 將遠端電腦的憑證檔案複製到本機電腦。
-    1. 開啟 [控制台]**** 並巡覽至 [系統管理工具]**** > [管理電腦憑證]****。
-    1. 在出現的視窗中，展開左側的 [受信任的根憑證授權單位]****，以滑鼠右鍵按一下 [憑證]****，然後選取 [所有工作]**** > [匯入]****。
+    1. 開啟 [控制台] 並巡覽至 [系統管理工具] > [管理電腦憑證]。
+    1. 在出現的視窗中，展開左側的 [受信任的根憑證授權單位]，以滑鼠右鍵按一下 [憑證]，然後選取 [所有工作] > [匯入]。
     1. 巡覽至並選取從遠端電腦複製的 *.cer* 檔案，然後按一下所有對話方塊以完成匯入。
 
-1. 現在，將 `tcps://` 作為 [連線目標]\****(或 [限定詞]****) 的通訊協定，以在 Visual Studio 中重複附加程序，如先前所述。
+1. 現在，將 `tcps://` 作為 [連線目標]\(或 [限定詞]) 的通訊協定，以在 Visual Studio 中重複附加程序，如先前所述。
 
     ![選擇使用 SSL 進行遠端偵錯傳輸](../../media/remote-debugging-qualifier-ssl.png)
 

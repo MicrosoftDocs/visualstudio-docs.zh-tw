@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: f7cae2dc-e9a7-49d4-8be5-58b79868624e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97f81a51248f548ea26283dc193645ff7216eb0f
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: d2fe2d0c7f6d156e8a9a88a474c59f75b70a5dac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917068"
 ---
 # <a name="filter-nodes"></a>篩選節點
 

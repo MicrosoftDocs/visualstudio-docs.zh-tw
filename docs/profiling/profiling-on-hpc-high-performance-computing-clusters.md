@@ -17,22 +17,22 @@ helpviewer_keywords:
 - HPC profiling
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a160adda25debe21d8262d9064c23849011dc9
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3faea797d57ca8874a198e5ee1bf76708ee20e7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917566"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>在 HPC (高效能運算) 叢集上進行分析
 
 您可以使用 Visual Studio 分析工具的取樣方法，在 Microsoft Windows HPC 叢集的計算節點上進行分析。 如需有關 HPC 的詳細資訊，請參閱 Microsoft 網站上的 [Windows HPC](https://azure.microsoft.com/solutions/big-compute/)。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 若要在 HPC 計算節點上進行程式碼剖析，您必須執行下列動作︰
 

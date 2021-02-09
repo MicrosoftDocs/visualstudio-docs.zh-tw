@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41a964f1e08fc2e88ac9a1d211e4b3e36b32c5b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a6aebd8a27f4eb9962abbcd593c947c04a17854
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730606"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916286"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 當建立取消的實例時，debug engine (DE) 會將這個介面傳送至會話 debug manager (SDM) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngineCreateEvent2 : IUnknown
@@ -41,7 +41,7 @@ IDebugEngineCreateEvent2 : IUnknown
 |------------|-----------------|
 |[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|抓取物件，該物件表示新建立的 debug engine (DE) 。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

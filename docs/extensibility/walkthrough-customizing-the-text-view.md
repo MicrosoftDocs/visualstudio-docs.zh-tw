@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 057e2a68e1d9a130f69441d8aec4b6a7fe0249e9
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f967235eed7e563b01b96cd9ed19d0aa5975b1fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862962"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916988"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>逐步解說：自訂文字視圖
 您可以在編輯器格式對應中修改下列任何屬性，以自訂文字視圖：
@@ -93,5 +93,5 @@ ms.locfileid: "97862962"
 
 5. 開啟可見的空白。  (在 [ **編輯** ] 功能表上，指向 [ **Advanced** ]，然後按一下 [ **View** 空白字元]) 。 在文字中輸入一些索引標籤。 應該會顯示代表索引標籤的紅色箭號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

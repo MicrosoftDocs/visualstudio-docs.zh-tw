@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 3ff32032-d412-44d3-91bf-870cc354a09e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: e338c3b24ade2cf7663b77abea64f58425d3a068
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a94425c86e59e360814df2053f003948af6e674
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916272"
 ---
 # <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
 在程式碼原始程式檔中的特定行，包含中斷點位置的資料。
@@ -43,7 +43,7 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
 ## <a name="remarks"></a>備註
 此結構是 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 結構的成員，做為聯集的一部分。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

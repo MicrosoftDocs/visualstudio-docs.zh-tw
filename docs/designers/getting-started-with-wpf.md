@@ -7,15 +7,15 @@ ms.topic: overview
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8584ec76ce0779421f1151e53f562f66b8789c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 5bdcff111660b34d5cde2d21d48ffeab022d124d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134533"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917058"
 ---
 # <a name="get-started-with-wpf"></a>開始使用 WPF
 

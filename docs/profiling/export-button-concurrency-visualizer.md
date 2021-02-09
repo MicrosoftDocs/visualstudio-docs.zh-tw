@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 68550095-8a69-48ee-bb7e-eb5504810578
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5395dccaf3d97d7b2b517cbecfec12826594e2
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 89b01c1b64d85a98491c5cfba9ddaaf923d869b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801459"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916747"
 ---
 # <a name="export-button-concurrency-visualizer"></a>匯出按鈕 (並行視覺化檢視)
 [ **匯出** ] 按鈕可讓您將呼叫堆疊匯出為。適用于您自己的記錄或與 Microsoft Excel 等其他工具搭配使用的 *csv* 檔案。

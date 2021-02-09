@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7f9bda07-53a8-4f11-9846-a3e31064c596
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cf79b23de47c1ac808b9287f387a16b51e5c3e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 69e0fc1d7e6a21483972efac48c273d71ce59091
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915926"
 ---
 # <a name="zoom-control-threads-view"></a>縮放控制 (執行緒檢視)
 縮放控制是可以放大和縮小時間軸的滑桿，讓您能專注在特別感興趣的區域。 此控制項會從時間軸檢視的中央放大，因此請先將感興趣的區域置中再放大。

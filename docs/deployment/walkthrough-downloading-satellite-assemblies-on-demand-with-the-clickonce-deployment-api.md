@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 59c468e28321c01993cd2f4b119218fb29bc6020
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917321"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：使用 ClickOnce 部署 API 依需求下載附屬元件
 透過使用附屬組件，Windows Forms 應用程式可以設定為適用多個文化特性。 *「附屬組件」* (Satellite Assembly) 為包含文化特性 (除了應用程式的預設文化特性以外) 之應用程式資源的組件。
@@ -56,7 +56,7 @@ ms.locfileid: "94349291"
 
 4. 按一下 [檔案]  索引標籤。
 
-5. 按一下 **省略符號** 按鈕 ( **...** )，然後選取所有應用程式之附屬組件與檔案的所在目錄，包括您使用 *Resgen.exe* 產生的附屬組件  (附屬元件會有格式為 *\<isoCode>\ApplicationName.resources.dll* 的名稱，其中 \<isoCode> 是 RFC 1766 格式的語言識別項。 ) 
+5. 按一下 **省略符號** 按鈕 (**...**)，然後選取所有應用程式之附屬組件與檔案的所在目錄，包括您使用 *Resgen.exe* 產生的附屬組件  (附屬元件會有格式為 *\<isoCode>\ApplicationName.resources.dll* 的名稱，其中 \<isoCode> 是 RFC 1766 格式的語言識別項。 ) 
 
 6. 按一下 [填入]  將檔案加入您的部署。
 
@@ -64,8 +64,8 @@ ms.locfileid: "94349291"
 
 8. 設定群組欄位到每個附屬組件的 ISO 語言識別項。 以日文的附屬組件為例，您會將下載群組名稱指定為 `ja-JP`取得。 這可讓您在步驟 1 加入的程式碼，根據使用者之 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性設定，下載適合的附屬組件。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  在生產環境中，因為用戶端電腦上會有正確的預設值，所以您可能需要移除行程式碼範例中，將 <xref:System.Threading.Thread.CurrentUICulture%2A> 設定為特定值的行。 當您的應用程式在日文的用戶端電腦上執行時， <xref:System.Threading.Thread.CurrentUICulture%2A> 預設會是 `ja-JP` 。 在部署您的應用程式之前，以程式設計方式設定這個值以測試附屬組件，是個好方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [將 ClickOnce 應用程式當地語系化](../deployment/localizing-clickonce-applications.md)

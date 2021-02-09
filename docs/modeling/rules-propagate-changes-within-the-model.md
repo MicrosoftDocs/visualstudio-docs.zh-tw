@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, rules
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4ff2273c8c71582c3ef634eeb398b12e29401d0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7062feddf00194e4633435655b5e11f5fefd38ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916954"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則傳播模型內的變更
 您可以建立存放區規則，以視覺效果和模型 SDK (VMSDK) ，將變更傳播到另一個元素。 當存放區中的任何專案發生變更時，系統會排定要執行的規則，通常是在認可最外層的交易時執行。 不同類型的事件有不同類型的規則，例如新增專案或刪除專案。 您可以將規則附加至特定類型的元素、圖形或圖表。 許多內建功能都是由規則所定義：例如，當模型變更時，規則會確保圖表會更新。 您可以新增自己的規則來自訂特定領域語言。
@@ -209,6 +209,6 @@ namespace Company.TaskRuleExample
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)

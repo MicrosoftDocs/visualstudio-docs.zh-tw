@@ -19,23 +19,23 @@ helpviewer_keywords:
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9767820889548f134c018df28ee3180088f5dc01
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: d1555a7ef1f942e4be0b7cf929e0e1730f99d1d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349244"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917281"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>逐步解說：手動部署 ClickOnce 應用程式
-如果您無法使用 Visual Studio 來部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，或需要使用 advanced 部署功能（例如「信任的應用程式部署」），則應該使用 *Mage.exe* 命令列工具來建立 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資訊清單。 本逐步解說將說明如何 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用命令列版本 ( *Mage.exe* ) 或圖形版本 (MageUI.exe *) 資訊清單產生和編輯工具來* 建立部署。
+如果您無法使用 Visual Studio 來部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，或需要使用 advanced 部署功能（例如「信任的應用程式部署」），則應該使用 *Mage.exe* 命令列工具來建立 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資訊清單。 本逐步解說將說明如何 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用命令列版本 (*Mage.exe*) 或圖形版本 (MageUI.exe *) 資訊清單產生和編輯工具來* 建立部署。
 
 ## <a name="prerequisites"></a>必要條件
  本逐步解說有一些必要條件和選項，讓您在建立部署之前需要選擇。
 
-- 安裝 *Mage.exe* 並 *MageUI.exe* 。
+- 安裝 *Mage.exe* 並 *MageUI.exe*。
 
    *Mage.exe* 和 *MageUI.exe* 是的一部分 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 。 您必須有已 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 安裝的或 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 隨附于 Visual Studio 的版本。 如需詳細資訊，請參閱 MSDN 上的 [Windows SDK](https://www.microsoft.com/download/details.aspx?id=8279) 。
 
@@ -62,17 +62,17 @@ ms.locfileid: "94349244"
 
    您必須判斷您的應用程式是否包含具有使用者帳戶控制的資訊清單 (UAC) 資訊（例如 `<dependentAssembly>` 元素）。 若要檢查應用程式資訊清單，您可以使用 Windows Sysinternals [Sigcheck](/sysinternals/downloads/sigcheck) 公用程式。
 
-   如果您的應用程式包含具有 UAC 詳細資料的資訊清單，您必須在沒有 UAC 資訊的情況下重新建立它。 針對 Visual Studio 中的 c # 專案，開啟專案屬性，然後選取 [應用程式] 索引標籤。在 [ **資訊清單** ] 下拉式清單中，選取 [ **建立沒有資訊清單的應用程式** ]。 針對 Visual Studio 中的 Visual Basic 專案，開啟專案屬性，選取 [應用程式] 索引標籤，然後按一下 [ **查看 UAC 設定** ]。 在開啟的資訊清單檔中，移除單一元素內的所有專案 `<asmv1:assembly>` 。
+   如果您的應用程式包含具有 UAC 詳細資料的資訊清單，您必須在沒有 UAC 資訊的情況下重新建立它。 針對 Visual Studio 中的 c # 專案，開啟專案屬性，然後選取 [應用程式] 索引標籤。在 [ **資訊清單** ] 下拉式清單中，選取 [ **建立沒有資訊清單的應用程式**]。 針對 Visual Studio 中的 Visual Basic 專案，開啟專案屬性，選取 [應用程式] 索引標籤，然後按一下 [ **查看 UAC 設定**]。 在開啟的資訊清單檔中，移除單一元素內的所有專案 `<asmv1:assembly>` 。
 
 - 判斷應用程式是否需要用戶端電腦上的必要條件。
 
-   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從 Visual Studio 部署的應用程式可能會包含必要條件安裝啟動載入器 ( *setup.exe* ) 部署。 本逐步解說會建立部署所需的兩個資訊清單 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 您可以使用 [GenerateBootstrapper](../msbuild/generatebootstrapper-task.md)工作來建立必要條件啟動載入器。
+   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從 Visual Studio 部署的應用程式可能會包含必要條件安裝啟動載入器 (*setup.exe*) 部署。 本逐步解說會建立部署所需的兩個資訊清單 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 您可以使用 [GenerateBootstrapper](../msbuild/generatebootstrapper-task.md)工作來建立必要條件啟動載入器。
 
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>使用 Mage.exe 命令列工具部署應用程式
 
 1. 建立您將在其中儲存部署檔案的目錄 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
 
-2. 在您剛才建立的部署目錄中，建立版本子目錄。 如果這是您第一次部署應用程式，請將版本子目錄命名為 **1.0.0.0** 。
+2. 在您剛才建立的部署目錄中，建立版本子目錄。 如果這是您第一次部署應用程式，請將版本子目錄命名為 **1.0.0.0**。
 
    > [!NOTE]
    > 您的部署版本可能與應用程式的版本不同。
@@ -120,7 +120,7 @@ ms.locfileid: "94349244"
 
 1. 建立您將在其中儲存部署檔案的目錄 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
 
-2. 在您剛才建立的部署目錄中，建立版本子目錄。 如果這是您第一次部署應用程式，請將版本子目錄命名為 **1.0.0.0** 。
+2. 在您剛才建立的部署目錄中，建立版本子目錄。 如果這是您第一次部署應用程式，請將版本子目錄命名為 **1.0.0.0**。
 
    > [!NOTE]
    > 您的部署版本可能與應用程式的版本不同。
@@ -133,23 +133,23 @@ ms.locfileid: "94349244"
    MageUI.exe
    ```
 
-5. 從功能表選取 [檔案]、[ **新增** **]、[****應用程式資訊清單** ]，建立新的應用程式資訊清單。
+5. 從功能表選取 [檔案]、[**新增** **]、[****應用程式資訊清單**]，建立新的應用程式資訊清單。
 
 6. 在 [預設 **名稱** ] 索引標籤上，輸入此部署的名稱和版本號碼。 此外，請指定您的應用程式所建立的 **處理器** ，例如 x86。
 
-7. 選取 [ **檔案] 索引** 標籤，然後選取 [ **應用程式目錄** ] 文字方塊旁的省略號 ( **...** ) 按鈕。 [ **流覽資料夾** ] 對話方塊隨即出現。
+7. 選取 [**檔案] 索引** 標籤，然後選取 [**應用程式目錄**] 文字方塊旁的省略號 (**...**) 按鈕。 [ **流覽資料夾** ] 對話方塊隨即出現。
 
-8. 選取包含應用程式檔的版本子目錄，然後選取 **[確定]** 。
+8. 選取包含應用程式檔的版本子目錄，然後選取 **[確定]**。
 
 9. 如果您要從 Internet Information Services 部署 (IIS) ，請選取 [擴展 **時將 .deploy 副檔名新增至沒有它** 的檔案] 核取方塊。
 
-10. 移至 [ **填入** ] 按鈕，將您所有的應用程式檔新增至檔案清單。 如果您的應用程式包含多個可執行檔，請從 [ **檔案類型** ] 下拉式清單中選取 [ **進入點** ]，將此部署的主要可執行檔標記為啟動應用程式。  (如果您的應用程式只包含一個可執行檔， *MageUI.exe* 會為您標示。 ) 
+10. 移至 [ **填入** ] 按鈕，將您所有的應用程式檔新增至檔案清單。 如果您的應用程式包含多個可執行檔，請從 [**檔案類型**] 下拉式清單中選取 [**進入點**]，將此部署的主要可執行檔標記為啟動應用程式。  (如果您的應用程式只包含一個可執行檔， *MageUI.exe* 會為您標示。 ) 
 
-11. 選取 [ **必要許可權** ] 索引標籤，然後選取您需要應用程式判斷提示的信任層級。 預設值是 **FullTrust** ，適用于大部分的應用程式。
+11. 選取 [ **必要許可權** ] 索引標籤，然後選取您需要應用程式判斷提示的信任層級。 預設值是 **FullTrust**，適用于大部分的應用程式。
 
 12. 從 **功能表選取 [** 檔案]、[ **另存** 新檔]。 [簽署選項] 對話方塊隨即出現，提示您簽署應用程式資訊清單。
 
-13. 如果您的憑證儲存為檔案系統上的檔案，請使用 [ **使用憑證簽署** 檔案] 選項，然後使用省略號 ( **...** ) 按鈕，從檔案系統中選取憑證。 然後輸入您的憑證密碼。
+13. 如果您的憑證儲存為檔案系統上的檔案，請使用 [ **使用憑證簽署** 檔案] 選項，然後使用省略號 (**...**) 按鈕，從檔案系統中選取憑證。 然後輸入您的憑證密碼。
 
      -或-
 
@@ -157,15 +157,15 @@ ms.locfileid: "94349244"
 
 14. 選取 **[確定]** 以簽署您的應用程式資訊清單。 [另存新檔]  對話方塊隨即出現。
 
-15. 在 [ **另存** 新檔] 對話方塊中，指定版本目錄，然後選取 [ **儲存** ]。
+15. 在 [ **另存** 新檔] 對話方塊中，指定版本目錄，然後選取 [ **儲存**]。
 
-16. 從 **功能表選取 [** 檔案]、[ **新增** ]、[ **部署資訊清單** ]，以建立您的部署資訊清單。
+16. 從 **功能表選取 [** 檔案]、[ **新增**]、[ **部署資訊清單** ]，以建立您的部署資訊清單。
 
-17. 在 [ **名稱** ] 索引標籤上，指定此部署的名稱和版本號碼 ( **1.0.0.0** ，此範例) 。 此外，請指定您的應用程式所建立的 **處理器** ，例如 x86。
+17. 在 [ **名稱** ] 索引標籤上，指定此部署的名稱和版本號碼 (**1.0.0.0** ，此範例) 。 此外，請指定您的應用程式所建立的 **處理器** ，例如 x86。
 
-18. 選取 [ **描述** ] 索引標籤，然後指定 **[發行者** ] 和 [ **產品** ] 的值。 當您的應用程式安裝在用戶端電腦上以供離線使用時， ( **產品** 是在 Windows [開始] 功能表上提供給您應用程式的名稱。 ) 
+18. 選取 [ **描述** ] 索引標籤，然後指定 **[發行者** ] 和 [ **產品**] 的值。 當您的應用程式安裝在用戶端電腦上以供離線使用時， (**產品** 是在 Windows [開始] 功能表上提供給您應用程式的名稱。 ) 
 
-19. 選取 [ **部署選項** ] 索引標籤，然後在 [ **開始位置** ] 文字方塊中，指定應用程式資訊清單在 Web 服務器或共用上的位置。 例如， *\\ \myServer\myShare\AppToDeploy.application* 。
+19. 選取 [ **部署選項** ] 索引標籤，然後在 [ **開始位置** ] 文字方塊中，指定應用程式資訊清單在 Web 服務器或共用上的位置。 例如， *\\ \myServer\myShare\AppToDeploy.application*。
 
 20. 如果您在上一個步驟中加入了 *deploy* 延伸模組，也請選取 [在此 **使用. deploy** 副檔名]。
 
@@ -173,11 +173,11 @@ ms.locfileid: "94349244"
 
 22. 選取 [ **應用程式參考** ] 索引標籤，然後移至 [ **選取資訊清單** ] 按鈕。 [開啟] 對話方塊隨即出現。
 
-23. 選取您稍早建立的應用程式資訊清單，然後選取 [ **開啟** ]。
+23. 選取您稍早建立的應用程式資訊清單，然後選取 [ **開啟**]。
 
 24. 從 **功能表選取 [** 檔案]、[ **另存** 新檔]。 [ **簽署選項** ] 對話方塊隨即出現，提示您簽署部署資訊清單。
 
-25. 如果您的憑證儲存為檔案系統上的檔案，請使用 [ **使用憑證簽署** 檔案] 選項，然後使用省略號 ( **...** ) 按鈕，從檔案系統中選取憑證。 然後輸入您的憑證密碼。
+25. 如果您的憑證儲存為檔案系統上的檔案，請使用 [ **使用憑證簽署** 檔案] 選項，然後使用省略號 (**...**) 按鈕，從檔案系統中選取憑證。 然後輸入您的憑證密碼。
 
      -或-
 
@@ -185,16 +185,16 @@ ms.locfileid: "94349244"
 
 26. 移至 **[確定]** 以簽署部署資訊清單。 [另存新檔]  對話方塊隨即出現。
 
-27. 在 [ **另存** 新檔] 對話方塊中，將一個目錄移至部署的根目錄，然後選取 [ **儲存** ]。
+27. 在 [ **另存** 新檔] 對話方塊中，將一個目錄移至部署的根目錄，然後選取 [ **儲存**]。
 
 28. 將部署目錄中的所有檔案複製到部署目的地或媒體。 這可能是網站或 FTP 網站、檔案共用或 CD-ROM 上的資料夾。
 
 29. 為您的使用者提供安裝應用程式所需的 URL、UNC 或實體媒體。 如果您提供 URL 或 UNC，您必須為使用者提供部署資訊清單的完整路徑。 例如，如果 AppToDeploy 部署到 http://webserver01/ AppToDeploy 目錄中，則完整的 URL 路徑為 http://webserver01/AppToDeploy/AppToDeploy.application 。
 
-## <a name="next-steps"></a>後續步驟
- 當您需要部署應用程式的新版本時，請建立新的目錄（以新版本命名）（例如1.0.0.1），並將新的應用程式檔案複製到新的目錄。 接下來，您必須遵循先前的步驟來建立和簽署新的應用程式資訊清單，以及更新和簽署部署資訊清單。 請小心指定 *Mage.exe* 和呼叫中的相同較高版本 `-New` `-Update` ，因為只會 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 更新較高的版本，最重要的是最左邊的整數。 如果您使用 *MageUI.exe* ，可以藉由開啟部署資訊清單來更新部署資訊清單，然後選取 [ **應用程式參考** ] 索引標籤，移至 [ **選取資訊清單** ] 按鈕，然後選取更新的應用程式資訊清單。
+## <a name="next-steps"></a>下一步
+ 當您需要部署應用程式的新版本時，請建立新的目錄（以新版本命名）（例如1.0.0.1），並將新的應用程式檔案複製到新的目錄。 接下來，您必須遵循先前的步驟來建立和簽署新的應用程式資訊清單，以及更新和簽署部署資訊清單。 請小心指定 *Mage.exe* 和呼叫中的相同較高版本 `-New` `-Update` ，因為只會 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 更新較高的版本，最重要的是最左邊的整數。 如果您使用 *MageUI.exe*，可以藉由開啟部署資訊清單來更新部署資訊清單，然後選取 [ **應用程式參考** ] 索引標籤，移至 [ **選取資訊清單** ] 按鈕，然後選取更新的應用程式資訊清單。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Mage.exe (資訊清單產生和編輯工具) ](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe (資訊清單產生和編輯工具、圖形用戶端) ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)

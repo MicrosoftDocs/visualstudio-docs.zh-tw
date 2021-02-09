@@ -14,15 +14,15 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 69d675209f2a3ac47e8681da8fca73c5cd86e95d
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f9488a15f851446c5779bdb1a4572e69a1cf3053
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917526"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>如何：將執行窗格加入至 Word 文件或 Excel 活頁簿
   若要將執行窗格加入 Microsoft Office Word 檔或 Microsoft Excel 活頁簿，請先建立 Windows Forms 的使用者控制項。 然後，將使用者控制項加入至 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> `ThisDocument.ActionsPane` 專案中 (Word) 或 `ThisWorkbook.ActionsPane` 欄位 (Excel) 欄位的屬性。

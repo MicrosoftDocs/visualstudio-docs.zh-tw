@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 94276e294bfcf342cfc81b14005205a8f1e97949
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: e1405169ae7f4734463428405cf90cce631fba3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915944"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
 
@@ -38,7 +38,7 @@ ms.locfileid: "98723084"
 
  針對 managed 程式碼，profiler Api 位於 *Microsoft.VisualStudio.Profiler.dll* 中。 這個 DLL 位於 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄。 針對 64 位元應用程式，資料夾為 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*。 如需詳細資訊，請參閱[分析工具](/previous-versions/ms242704(v=vs.140))。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  本逐步解說假設您所選擇的開發環境設定成支援偵錯和取樣。 下列主題概述這些必要條件：
 
 - [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)

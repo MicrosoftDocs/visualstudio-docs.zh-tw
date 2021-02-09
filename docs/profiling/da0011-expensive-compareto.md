@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: 239a381d-0d97-4367-8668-746c93f5af2c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c94e5a24eab1c638397d7b1391596e503207fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aef8135e48b07946803832266ed9dff9e843d3ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916815"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011：CompareTo 高度耗費資源
 

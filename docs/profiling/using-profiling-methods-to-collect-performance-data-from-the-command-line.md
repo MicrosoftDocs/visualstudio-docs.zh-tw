@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1796fad03d04ffb79ca1c8aeccc241ee3698f9f1
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ebcd3fdbc09029309d1b06efc75417add223ce04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723240"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917586"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>從命令列使用分析方法收集效能資料
 您選擇的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具與選項，取決於像是您要進行程式碼剖析的應用程式類型、您想要使用的程式碼剖析方法以及目標應用程式是否以原生或 .NET Framework 程式碼撰寫等因素。

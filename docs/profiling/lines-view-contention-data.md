@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 50a314d5ba0a5dd907da3a915835f1410894ee7a
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 863cd741833082ddfac400d86edeba574b4dcb09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917881"
 ---
 # <a name="lines-view---contention-data"></a>程式行檢視 - 爭用資料
 爭用資料的 [程式行] 檢視會針對在執行分析期間收集樣本時執行的陳述式，列出效能資料。 在原始程式檔中，陳述式在原始程式檔中可以長達多行，而單一行程式也可能包含一個以上的陳述式。

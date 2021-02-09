@@ -16,15 +16,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], adding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f137dbe88b8b3ecf51f17e0f19f61368359087fa
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9f50475f52ca2ec08894a3c1c0375e78d2b5620b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917535"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>如何：在 Outlook 增益集專案中加入表單區域
   使用 [新的 Outlook 表單區域精靈]  建立表單區域，以擴充標準或自訂的 Microsoft Office Outlook 表單。 您可以建立新的表單區域並且在 Visual Studio 中設計使用者介面，或者匯入在 Outlook 中設計的表單區域並加入 Visual Basic 或 C# 程式碼。

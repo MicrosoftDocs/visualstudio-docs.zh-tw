@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: 32c612ea-d077-44ba-8e6f-3a96333bad00
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 79150cf63fb8177534d2e5cb0506a64c703e5d03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff2ab87ab783ea58ffa060c0c6d29a8ca0dd8468
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532103"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918058"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505：為所分析處理序配置的平均私用位元組
 

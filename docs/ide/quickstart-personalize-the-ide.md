@@ -6,15 +6,15 @@ ms.topic: how-to
 ms.custom: contperf-fy21q1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d261d6c13572be6df80ca36f37e19792d53e2a32
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: eb7c9bf04e5f38e5138eae6cf6254bb77bbd6230
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916061"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>如何：將 Visual Studio IDE 和編輯器個人化
 

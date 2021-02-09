@@ -8,13 +8,13 @@ helpviewer_keywords:
 - load testing, quickstart
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 3833542dc00f347014dabf96f836fbd4fa810862
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: d440b4d9fe175cb685b7e7ed3c5eb5911e541fde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329129"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917595"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入門：建立負載測試專案
 
@@ -108,7 +108,7 @@ ms.locfileid: "96329129"
 
 ![負載測試分析器視窗](media/load-test-analyzer.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 現在您已建立簡單的負載測試專案，下一個步驟是設定情節、計數器集合與回合設定。
 

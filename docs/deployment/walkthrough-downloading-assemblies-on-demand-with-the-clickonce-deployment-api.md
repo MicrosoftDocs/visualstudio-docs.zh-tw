@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb74d7fd5ad388b9b3dc217bae8782b24517c13b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349242"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917340"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：使用 ClickOnce 部署 API 依需求下載元件
 根據預設，應用程式中包含的所有元件 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 都會在第一次執行應用程式時下載。 不過，您的應用程式中可能會有一小部分使用者使用的部分。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 命名空間中的類別來下載它們。
@@ -102,15 +102,15 @@ ms.locfileid: "94349242"
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>使用 MageUI.exe 將元件標示為 ClickOnce 應用程式中的選擇性
 
-1. 使用 *MageUI.exe* ，依照 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)中所述的方式建立應用程式資訊清單。 使用應用程式資訊清單的下列設定：
+1. 使用 *MageUI.exe*，依照 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)中所述的方式建立應用程式資訊清單。 使用應用程式資訊清單的下列設定：
 
     - 命名應用程式資訊清單 `ClickOnceOnDemand` 。
 
-    - 在 [檔案 **] 頁面的** [ *ClickOnceLibrary.dll* ] 資料列中，將 [ **檔案類型** ] 資料行設定為 [ **無** ]。
+    - 在 [檔案 **] 頁面的** [ *ClickOnceLibrary.dll* ] 資料列中，將 [ **檔案類型** ] 資料行設定為 [ **無**]。
 
     - 在 [檔案 **] 頁面的** [ *ClickOnceLibrary.dll* ] 資料列中，輸入 `ClickOnceLibrary.dll` [ **群組** ] 資料行。
 
-2. 使用 *MageUI.exe* ，依照 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)中所述的方式建立部署資訊清單。 針對部署資訊清單，請使用下列設定：
+2. 使用 *MageUI.exe*，依照 [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)中所述的方式建立部署資訊清單。 針對部署資訊清單，請使用下列設定：
 
     - 命名部署資訊清單 `ClickOnceOnDemand` 。
 

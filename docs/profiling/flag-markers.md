@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fc7b128915b7fc961b44aa7d70a24a813d432ddf
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: fc7e8d9a7c39a0bb7953c309adb9f2abb1c0dc43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916720"
 ---
 # <a name="flag-markers"></a>旗標標記
 旗標標記表示在應用程式時間中的某個時刻發生的項目。 旗標可代表許多種類的應用程式事件。 比方說，當特定工作項目已排程或擲回例外狀況時，可以顯示旗標。 工作平行程式庫等的執行階段也可以產生旗標。

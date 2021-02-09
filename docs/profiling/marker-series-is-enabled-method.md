@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8ce4dd50-ca29-4c72-98d6-582693f7d501
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ff6b0449c877b5ae925ba2088917d7bacab4c34
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e68ec76737308d9bc9478f4106420626389f5eeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917734"
 ---
 # <a name="marker_seriesis_enabled-method"></a>marker_series::is_enabled 方法
 判斷是否有任何工作階段啟用該提供者。
@@ -39,7 +39,7 @@ bool is_enabled(
 
 ## <a name="return-value"></a>傳回值
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  **標頭：** *cvmarkersobj.h*
 
  **命名空間：** Concurrency::diagnostic

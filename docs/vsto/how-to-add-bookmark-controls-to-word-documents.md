@@ -14,15 +14,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a6ccf3f5a355cdad682026453691a4203c95a814
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: c5330d4419c065d7209900bfd4fa404663be185d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847464"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917476"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>如何：將書簽控制項新增至 Word 檔
   在文件層級的專案中，您可以於設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入專案中的文件。 在 VSTO 增益集專案中，您可以於執行階段將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入任何開啟的文件。
@@ -66,7 +66,7 @@ ms.locfileid: "96847464"
 
 3. 選取您想要包含在書籤內的文字或其他項目。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
      如果您不想保留預設的書籤名稱，您可以在 [屬性]  視窗中變更名稱。
 

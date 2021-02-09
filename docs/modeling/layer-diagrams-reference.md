@@ -19,15 +19,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 265bb31dd95aa3a84bdb497a3306278acfd8838e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f173e27588538c806d075e0a6b010fbd848f2690
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917001"
 ---
 # <a name="dependency-diagrams-reference"></a>相依性圖表：參考
 
@@ -98,6 +98,6 @@ ms.locfileid: "97360568"
 |**支援驗證**|若 **為 True**，則圖層驗證程式可以驗證專案是否符合此元素的相依性。<br /><br /> 如果 **為 False**，則連結不會參與圖層驗證流程。<br /><br /> 如需詳細資訊，請參閱相依性 [圖表：指導方針](../modeling/layer-diagrams-guidelines.md)。|
 |**識別碼**|連結成品的參考|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [建立應用程式模型](../modeling/create-models-for-your-app.md)

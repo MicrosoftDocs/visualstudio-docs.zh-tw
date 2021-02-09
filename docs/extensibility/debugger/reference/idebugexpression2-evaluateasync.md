@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 848fe6cb-0759-42f2-890b-d2b551c527d6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cd1eba56f8e3c5a1a779acc3330790e9ba2bc96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8af09c2db00b1f24631418c5332811cf4cb9202c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729759"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916264"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 這個方法會以非同步方式評估運算式。
@@ -59,7 +59,7 @@ int EvaluateAsync(
 這個方法應該會在開始進行運算式評估之後立即傳回。 成功評估運算式後，必須透過[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)或[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)，將[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)傳送至[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)事件回呼。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對實 IDebugExpression2 介面的簡單物件，執行這個方法 `CExpression` 。 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
+下列範例示範如何針對實 IDebugExpression2 介面的簡單物件，執行這個方法 `CExpression` 。 [](../../../extensibility/debugger/reference/idebugexpression2.md)
 
 ```cpp
 HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,

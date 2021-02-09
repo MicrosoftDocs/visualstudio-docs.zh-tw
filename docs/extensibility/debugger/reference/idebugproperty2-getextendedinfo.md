@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34d6cd880ccae520bf000ad01b52223857f4f10f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb9fe21b1dc004d5a124a1146e6f7610fbe8699
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916056"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 取得屬性的延伸資訊。
@@ -28,14 +28,14 @@ ms.locfileid: "80721482"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetExtendedInfo ( 
+HRESULT GetExtendedInfo ( 
    REFGUID* guidExtendedInfo,
    VARIANT* pExtendedInfo
 );
 ```
 
 ```csharp
-int GetExtendedInfo ( 
+int GetExtendedInfo ( 
    ref Guid guidExtendedInfo,
    out object pExtendedInfo
 );
@@ -56,7 +56,7 @@ int GetExtendedInfo ( 
 
  此方法通常會辨識下列 Guid (GUID 值是針對 c # 指定的，因為名稱無法在任何元件) 中使用。 您可以建立其他 Guid 以供內部使用。
 
-|Name|GUID|描述|
+|名稱|GUID|Description|
 |----------|----------|-----------------|
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|傳回 `IUnknown` 檔的介面。 一般而言， [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) 介面可從這個 `IUnknown` 介面取得。|
 |guidCodeCoNtext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|傳回 `IUnknown` 檔內容的介面。 一般而言， [IDebugDocumentCoNtext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 介面可從這個 `IUnknown` 介面取得。|
