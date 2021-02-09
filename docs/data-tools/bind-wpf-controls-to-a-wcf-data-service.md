@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4368c9134539202b1bde2be7a2d8c39e5ebc3e74
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9f3c4cc273d89b5d1fc74596f1f5565177319da7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867356"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 
@@ -62,9 +62,9 @@ ms.locfileid: "94518520"
 
 ## <a name="create-the-service-project"></a>建立服務專案
 
-1. 藉由建立 c # 或 Visual Basic **ASP.NET Web 應用程式** 專案來開始本逐步解說。 將專案命名為 **adventureworksservice.svc** 。
+1. 藉由建立 c # 或 Visual Basic **ASP.NET Web 應用程式** 專案來開始本逐步解說。 將專案命名為 **adventureworksservice.svc**。
 
-2. 在 [方案總管] 中，以滑鼠右鍵按一下 **Default.aspx** ，並選取 [刪除]。 本逐步解說不需要此檔案。
+2. 在 [方案總管] 中，以滑鼠右鍵按一下 **Default.aspx**，並選取 [刪除]。 本逐步解說不需要此檔案。
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>建立服務的實體資料模型
 
@@ -74,7 +74,7 @@ ms.locfileid: "94518520"
 
 2. 在 [已安裝的範本] 清單中，按一下 [資料]，然後選取 [ADO.NET 實體資料模型] 專案項目。
 
-3. 將 [名稱] 變更為 `AdventureWorksModel.edmx` ，然後按一下 [ **新增** ]。
+3. 將 [名稱] 變更為 `AdventureWorksModel.edmx` ，然後按一下 [ **新增**]。
 
      [實體資料模型精靈] 隨即開啟。
 
@@ -98,9 +98,9 @@ ms.locfileid: "94518520"
 
 1. 在 [專案] 功能表上，選取 [新增項目]。
 
-2. 在 [已安裝的範本] 清單中，按一下 **Web** ，然後選取 [WCF 資料服務] 專案項目。
+2. 在 [已安裝的範本] 清單中，按一下 **Web**，然後選取 [WCF 資料服務] 專案項目。
 
-3. 在 [ **名稱** ] 方塊中，輸入 `AdventureWorksService.svc` ，然後按一下 [ **新增** ]。
+3. 在 [ **名稱** ] 方塊中，輸入 `AdventureWorksService.svc` ，然後按一下 [ **新增**]。
 
      Visual Studio 將加入 `AdventureWorksService.svc` 至專案。
 
@@ -131,23 +131,23 @@ ms.locfileid: "94518520"
 
    Visual Studio 將 `AdventureWorksSalesEditor` 專案加入至方案。
 
-5. 按一下 [ **資料** ] 功能表上的 [ **顯示資料來源** ]。
+5. 按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
 
    [資料來源] 視窗隨即開啟。
 
-6. 在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源** ]。
+6. 在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。
 
    [資料來源組態精靈] 隨即開啟。
 
 7. 在精靈的 [選擇資料來源類型] 頁面中，選取 [服務]，然後按一下 [下一步]。
 
-8. 在  **[加入服務參考]** 對話方塊中，按一下  **[探索]** 。
+8. 在  **[加入服務參考]** 對話方塊中，按一下  **[探索]**。
 
    Visual Studio 會在目前的解決方案中搜尋可用的服務，並新增 `AdventureWorksService.svc` 至 [ **服務** ] 方塊中的可用服務清單。
 
-9. 在 [命名空間] 方塊中，鍵入 **AdventureWorksService** 。
+9. 在 [命名空間] 方塊中，鍵入 **AdventureWorksService**。
 
-10. 在 [服務] 方塊中，按一下 **AdventureWorksService.svc** ，然後按一下 [確定]。
+10. 在 [服務] 方塊中，按一下 **AdventureWorksService.svc**，然後按一下 [確定]。
 
     Visual Studio 會下載服務資訊，然後傳回 [資料來源組態精靈]。
 
@@ -159,7 +159,7 @@ ms.locfileid: "94518520"
 
 透過在 WPF 設計工具中修改 XAML，將數個按鈕加入至視窗。 在此逐步解說的稍後內容中，您會加入程式碼，讓使用者使用這些按鈕檢視及更新銷售記錄。
 
-1. 在 [方案總管] 中，按兩下 **MainWindow.xaml** 。
+1. 在 [方案總管] 中，按兩下 **MainWindow.xaml**。
 
    隨即會在 WPF 設計工具中開啟視窗。
 
@@ -219,7 +219,7 @@ ms.locfileid: "94518520"
 
 使用服務 proxy 物件從服務載入銷售資料。 然後，將傳回的資料指派給 <xref:System.Windows.Data.CollectionViewSource> WPF 視窗中的資料來源。
 
-1. 在設計師中，若要建立`Window_Loaded`事件處理常式，按兩下所讀取的文字： **MainWindow** 。
+1. 在設計師中，若要建立`Window_Loaded`事件處理常式，按兩下所讀取的文字：**MainWindow**。
 
 2. 以下列程式碼取代事件處理常式。 確認您是使用開發電腦的本機主機位址，取代此程式碼中的 *localhost* 位址。
 
@@ -265,19 +265,19 @@ ms.locfileid: "94518520"
 
 建置並執行應用程式，以確認您可以檢視及更新客戶記錄：
 
-1. 在 [ **組建** ] 功能表上，按一下 [ **建立方案** ]。 確認方案建置無誤。
+1. 在 [ **組建** ] 功能表上，按一下 [ **建立方案**]。 確認方案建置無誤。
 
-2. 按下 **Ctrl** + **F5** 。
+2. 按下 **Ctrl** + **F5**。
 
      Visual Studio 會啟動 **AdventureWorksService** 專案而不進行偵錯。
 
-3. 在 [方案總管] 中，以滑鼠右鍵按一下 **AdventureWorksSalesEditor** 。
+3. 在 [方案總管] 中，以滑鼠右鍵按一下 **AdventureWorksSalesEditor**。
 
-4. 在右鍵功能表上 (內容功能表) 的 [ **Debug** ] 下，按一下 [ **開始新實例** ]。
+4. 在右鍵功能表上 (內容功能表) 的 [ **Debug**] 下，按一下 [ **開始新實例**]。
 
      應用程式隨即執行。 驗證下列項目：
 
-    - 這些文字方塊會從第一筆銷售記錄 (具有銷售訂單 ID **71774** ) 的資料顯示不同欄位。
+    - 這些文字方塊會從第一筆銷售記錄 (具有銷售訂單 ID **71774**) 的資料顯示不同欄位。
 
     - 您可以按一下 **>** 或 **<** 按鈕，以流覽其他銷售記錄。
 
@@ -289,7 +289,7 @@ ms.locfileid: "94518520"
 
 8. 關閉應用程式。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 完成此逐步解說後，您可以執行下列相關的工作：
 

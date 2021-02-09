@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec58528bfe5e1687c4b4edc7f86451c08b04652c
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b6e42681d2c25162df22af9711d47b71ba155d67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518670"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867434"
 ---
 # <a name="add-new-data-sources"></a>新增新資料來源
 
@@ -44,7 +44,7 @@ ms.locfileid: "94518670"
 > [!NOTE]
 > 如果您不是使用資料系結功能、資料集、Entity Framework、LINQ to SQL、WCF 或 SharePoint，就不適用「資料來源」的概念。 只要使用 SQLCommand 物件直接連接到資料庫，就可以直接與資料庫進行通訊。
 
-您可以使用 Windows Forms 或 Windows Presentation Foundation 應用程式中的 [ **資料來源設定]** 來建立和編輯資料來源。 針對 Entity Framework，請先建立您的實體類別，然後選取 [ **專案**  >  **加入新的資料 (源** ] 來啟動精靈，此文章稍後會詳細說明) 。
+您可以使用 Windows Forms 或 Windows Presentation Foundation 應用程式中的 [ **資料來源設定]** 來建立和編輯資料來源。 針對 Entity Framework，請先建立您的實體類別，然後選取 [**專案**  >  **加入新的資料 (源**] 來啟動精靈，此文章稍後會詳細說明) 。
 
 ![資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)
 
@@ -53,7 +53,7 @@ ms.locfileid: "94518670"
 在您建立資料來源之後，它會出現在 [ **資料來源** ] 工具視窗中。
 
 > [!TIP]
-> 若要開啟 [ **資料來源** ] 視窗，請確定您的專案已開啟，然後按下 **Shift** + **Alt** + **D** 或選擇 [ **View**  >  **Other Windows**  >  **資料來源** ]。
+> 若要開啟 [**資料來源**] 視窗，請確定您的專案已開啟，然後按下 **Shift** + **Alt** + **D** 或選擇 [ **View**  >  **Other Windows**  >  **資料來源**]。
 
 您可以將資料來源從 [ **資料來源** ] 視窗拖曳至表單設計介面或控制項。 這會導致產生未產生的程式碼，以顯示資料存放區中的資料。
 
@@ -67,13 +67,13 @@ ms.locfileid: "94518670"
 
 ### <a name="dataset"></a>資料集
 
-若要建立資料集做為資料來源，請選取 [ **專案** 加入新資料來源] 來執行 [ **資料來源設定]**  >  **** 。 選擇 **資料庫** 資料來源類型，並遵循提示來指定新的或現有的資料庫連接，或資料庫檔案。
+若要建立資料集做為資料來源，請選取 [**專案** 加入新資料來源] 來執行 [**資料來源設定]**  >  ****。 選擇 **資料庫** 資料來源類型，並遵循提示來指定新的或現有的資料庫連接，或資料庫檔案。
 
 ### <a name="entity-classes"></a>實體類別
 
 若要建立 Entity Framework 模型做為資料來源：
 
-1. 執行 **實體資料模型 Wizard** 以建立實體類別。 選取 [ **專案**  >  **加入新專案**  >  **ADO.NET] 實體資料模型** 。
+1. 執行 **實體資料模型 Wizard** 以建立實體類別。 選取 [**專案**  >  **加入新專案**  >  **ADO.NET] 實體資料模型**。
 
    ![新的 Entity Framework 模型專案專案](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
@@ -81,13 +81,13 @@ ms.locfileid: "94518670"
 
    ![實體資料模型精靈](../data-tools/media/raddata-entity-data-model-wizard.png)
 
-1. 將模型新增為數據源。 當您選擇 [ **物件** ] 類別時，產生的類別會出現在 [ **資料來源設定]** 中。
+1. 將模型新增為數據源。 當您選擇 [**物件**] 類別時，產生的類別會出現在 [**資料來源設定]** 中。
 
    ![具有實體類別的資料來源設定 Wizard](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>服務的資料來源
 
-若要從服務建立資料來源，請執行 [ **資料來源設定] 嚮導** ，然後選擇 [ **服務** ] 資料來源類型。 這只是 **加入服務參考** 對話方塊的快捷方式，您也可以在 **方案總管** 中以滑鼠右鍵按一下專案，然後選取 [ **加入服務參考** ] 來存取此對話方塊。
+若要從服務建立資料來源，請執行 [ **資料來源設定] 嚮導** ，然後選擇 [ **服務** ] 資料來源類型。 這只是 **加入服務參考** 對話方塊的快捷方式，您也可以在 **方案總管** 中以滑鼠右鍵按一下專案，然後選取 [ **加入服務參考**] 來存取此對話方塊。
 
 當您從服務建立資料來源時，Visual Studio 會將服務參考加入至您的專案。 Visual Studio 也會建立 proxy 物件，這些物件會對應至服務傳回的物件。 例如，傳回資料集的服務會在您的專案中表示為資料集;傳回特定類型的服務會在您的專案中表示為傳回的型別。
 
@@ -118,7 +118,7 @@ ms.locfileid: "94518670"
 
 ## <a name="data-source-for-a-sharepoint-list"></a>SharePoint 清單的資料來源
 
-您可以執行 [ **資料來源設定向導]** ，然後選取 [ **sharepoint** 資料來源類型]，從 sharepoint 清單建立資料來源。 SharePoint 會透過 WCF Data Services 公開資料，因此建立 SharePoint 資料來源與從服務建立資料來源的方式相同。 在 [ **資料來源設定]** 中選取 **SharePoint** 專案，會開啟 [ **加入服務參考** ] 對話方塊，您可以在其中指向 SharePoint 伺服器，以連接到 sharepoint 資料服務。 這需要 SharePoint SDK。
+您可以執行 [ **資料來源設定向導]** ，然後選取 [ **sharepoint** 資料來源類型]，從 sharepoint 清單建立資料來源。 SharePoint 會透過 WCF Data Services 公開資料，因此建立 SharePoint 資料來源與從服務建立資料來源的方式相同。 在 [**資料來源設定]** 中選取 **SharePoint** 專案，會開啟 [**加入服務參考**] 對話方塊，您可以在其中指向 SharePoint 伺服器，以連接到 sharepoint 資料服務。 這需要 SharePoint SDK。
 
 ## <a name="see-also"></a>另請參閱
 

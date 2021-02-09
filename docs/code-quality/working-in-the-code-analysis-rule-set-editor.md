@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: ba8ecdd3a1aae382d1b74d75e26e614ba07e6a66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436819"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867603"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用程式碼分析規則集編輯器
 
@@ -25,7 +25,7 @@ ms.locfileid: "94436819"
 
 下表顯示嚴重性選項：
 
-|Action (嚴重性) |說明|
+|Action (嚴重性) |Description|
 |-|-|
 |警告|在 [ **錯誤清單** ] 和 [組建階段] 中產生警告。|
 |錯誤|在 **錯誤清單** 中以及在組建階段產生錯誤。|
@@ -50,7 +50,7 @@ ms.locfileid: "94436819"
 
 下表說明 [規則集編輯器] 工具列上的控制項。
 
-|Toolbar 控制項|說明|
+|Toolbar 控制項|Description|
 |---------------------|-----------------|
 |**全部展開**|顯示所有群組中的規則。|
 |**全部摺疊**|隱藏所有群組中的規則。|
@@ -87,6 +87,6 @@ ms.locfileid: "94436819"
 
 - 若要依欄位值篩選規則集，請選取您要篩選之欄位的資料行標頭上的 [篩選] 按鈕。 選取您要顯示之值的核取方塊，並清除您要隱藏之值的核取方塊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [建立自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)

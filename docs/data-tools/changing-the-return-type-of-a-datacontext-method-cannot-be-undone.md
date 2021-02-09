@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 76b161fc-5075-4192-8d94-f15b02e199e9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c0f3728056f2703dc1c9553a4a165f9654ce5112
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 71112b90f45fbc2b86aeb3f7e1935c38974a3694
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94381814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867304"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>如果變更 DataContext 方法的傳回類型，將無法復原
 
@@ -25,7 +25,7 @@ ms.locfileid: "94381814"
 
 ## <a name="to-change-the-return-type-of-a-datacontext"></a>若要變更 DataContext 的傳回型別
 
-- 按一下 [是] 。
+- 按一下 [是]  。
 
 ## <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>若要結束訊息方塊而不變更傳回型別
 

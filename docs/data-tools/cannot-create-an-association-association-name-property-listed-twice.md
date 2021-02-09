@@ -8,15 +8,15 @@ ms.technology: vs-data-tools
 ms.assetid: 3ced8bda-210e-4caf-9d8f-96cdbba19251
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4cb795a5d608e31c26ccec0b96f359a5c63cee7
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4466515f390db2ac3c03d302fd6ffb8da3a6176f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94381775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867343"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>無法建立關聯&lt;關聯名稱&gt;：屬性已列出兩次
 
@@ -34,7 +34,7 @@ ms.locfileid: "94381775"
 
 - 檢查 [關聯屬性]，並移除重複項目。
 
-- 按一下 [確定]。
+- 按一下 [確定]  。
 
 ## <a name="see-also"></a>另請參閱
 

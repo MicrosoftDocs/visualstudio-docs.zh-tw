@@ -6,15 +6,15 @@ ms.topic: conceptual
 description: 說明使用 Bridge Kubernetes 將您的開發電腦連線至 Kubernetes 叢集的程式
 keywords: 橋接至 Kubernetes、Docker、Kubernetes、Azure、容器
 monikerRange: '>=vs-2019'
-manager: jillfra
+manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: c6a85faf2d1451dcab9bc822fcdf228513b90dca
-ms.sourcegitcommit: ab60fd7b4a8219e378d100df1386e1b038ecdafc
+ms.openlocfilehash: 253b50ff4778458b28375b06b7fb7f24f4d85054
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96595262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867564"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 的運作方式
 
@@ -153,7 +153,7 @@ kubectl -n <namespace> apply -f <yaml file name>
 
 您無法在已啟用 Azure Dev Spaces 的叢集上使用 Bridge 進行 Kubernetes。 如果您想要在已啟用 Azure Dev Spaces 的叢集上使用橋接器來 Kubernetes，則必須先停用 Azure Dev Spaces，然後再連接到您的叢集。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要開始使用 Bridge 來 Kubernetes，以連接到您的本機開發電腦至您的叢集，請參閱 [使用 bridge 來 Kubernetes](bridge-to-kubernetes.md)。
 

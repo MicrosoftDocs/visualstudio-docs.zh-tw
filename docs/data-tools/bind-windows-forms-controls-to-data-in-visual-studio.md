@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee50a01093ff83faba17ec6fd59f4ddc1101012a
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 3da0c4e9835c9b6f6498aa28b82f2e631d1717ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518644"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867408"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>將 Windows Forms 控制項繫結至 Visual Studio 中的資料
 
@@ -33,7 +33,7 @@ ms.locfileid: "94518644"
 ![資料來源拖曳操作](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> 如果看不到 [ **資料來源** ] 視窗，您可以選擇 [ **View**  >  **Other Windows**  >  **資料來源** ]，或按 **Shift** + **Alt** + **D** 來開啟它。 您必須在 Visual Studio 中開啟專案，才能看到 [ **資料來源** ] 視窗。
+> 如果看不到 [**資料來源**] 視窗，您可以選擇 [ **View**  >  **Other Windows**  >  **資料來源**]，或按 **Shift** + **Alt** + **D** 來開啟它。 您必須在 Visual Studio 中開啟專案，才能看到 [ **資料來源** ] 視窗。
 
 拖曳專案之前，您可以設定要系結的控制項類型。 根據您選擇的是資料表本身或個別資料行，會顯示不同的值。  您也可以設定自訂值。 針對資料表， **詳細資料** 表示每個資料行都系結至不同的控制項。
 
@@ -76,7 +76,7 @@ ms.locfileid: "94518644"
 > [!IMPORTANT]
 > 請注意，在上圖中，您會從 Customers 資料表的 Orders 屬性（而不是從 Orders 資料表）拖曳。 藉由系 `Customer.Orders` 結至屬性， **DataGridView** 中所建立的導覽命令會立即反映在詳細資料控制項中。 如果您從 Orders 資料表拖曳，控制項仍會系結至資料集，但不會與 **DataGridView** 進行同步處理。
 
-下圖顯示在 [Customers] 資料表的 Orders 屬性系結至 [ **資料來源** ] 視窗中的 **詳細** 資料之後，加入至表單的預設資料繫結控制項。
+下圖顯示在 [Customers] 資料表的 Orders 屬性系結至 [**資料來源**] 視窗中的 **詳細** 資料之後，加入至表單的預設資料繫結控制項。
 
 ![訂單資料表系結至詳細資料](../data-tools/media/raddata-orders-table-bound-to-details.png)
 

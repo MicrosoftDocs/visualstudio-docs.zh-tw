@@ -2,19 +2,19 @@
 title: 將 ASP.NET Core Docker 容器部署至 Docker Hub |Microsoft Docs
 description: 瞭解如何使用 Visual Studio 容器工具將 ASP.NET Core web 應用程式部署至 Docker Hub
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 5bbdbffa9de9ac7789495249d3e7bfb0a8d65377
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: e51088d135d0d2cdcc5d1bcca71f72fed8b73fd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867655"
 ---
 # <a name="deploy-to-docker-hub"></a>發佈至 Docker Hub
 
@@ -54,7 +54,7 @@ Docker Hub 為您的映射存放庫提供便利的主機服務。 您可以輕�
 
 使用 [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true)來設定持續整合和傳遞 (CI/CD) 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [部署至 Azure App Service](deploy-app-service.md) 
 [Visual Studio 容器工具](./index.yml)。

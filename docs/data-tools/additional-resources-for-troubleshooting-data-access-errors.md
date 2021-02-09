@@ -223,15 +223,15 @@ helpviewer_keywords:
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c3bfd0b322a368cd758ea1518c8c63ed668d4545
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: a61e7be94faf9a9b75349412f923157b5df47b6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867382"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>針對論壇上的資料存取錯誤進行疑難排解
 

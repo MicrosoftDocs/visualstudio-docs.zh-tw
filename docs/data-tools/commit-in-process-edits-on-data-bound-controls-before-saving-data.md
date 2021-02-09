@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 61af4798-eef7-468c-b229-5e1497febb2f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: cd50ad6c0e81f337ad922f6fa994f0d900edb8b6
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 98f75769a8002fd960da74dc5f9bd9a6b046a604
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382386"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867239"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>儲存資料前先認可資料繫結控制項上的同處理序編輯
 
