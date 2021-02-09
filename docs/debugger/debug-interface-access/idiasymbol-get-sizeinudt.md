@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: a82ab896-0185-46a4-b4d5-babfcc660fe1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba2f0351997b5f6a2a96cb035871b116b9180786
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 709f5c344cc2bedfe719eaeae26e4babd70be2c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461981"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862707"
 ---
 # <a name="idiasymbolget_sizeinudt"></a>IDiaSymbol::get_sizeInUdt
 抓取使用者自訂類型之成員的大小。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddfa1617-bd0f-4187-ba77-a225bab93a95
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d573f54a6264562c02960448768a8409fcc5e5a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11f86019cdf037aaf5859346dba21e94a0471500
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862497"
 ---
 # <a name="idiasymbolget_upperboundid"></a>IDiaSymbol::get_upperBoundId
 捕獲 FORTRAN 陣列維度上限的符號識別碼。
@@ -25,7 +25,7 @@ ms.locfileid: "85461543"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_upperBoundId ( 
+HRESULT get_upperBoundId ( 
    DWORD* pRetVal
 );
 ```

@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 61ff7431-1994-4f7e-a182-1817f16f60a9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 42f1e1b4e918acce3bfd749532283f6e3fb6e1ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 433e57eaa6e1f3a36a83f4613e13f7cf717d2fe8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862875"
 ---
 # <a name="idiasymbolget_numberofmodifiers"></a>IDiaSymbol::get_numberOfModifiers
 抓取套用至原始類型的修飾詞數目。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a1753917-705b-4165-9880-d05e91e6dcb4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c82b8c4836d97f02fa84aec500d961911f993df3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e98ddb508ef1e00b1192df2d6015ba3ca5632cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462788"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862910"
 ---
 # <a name="idiasymbolget_nostackordering"></a>IDiaSymbol::get_noStackOrdering
 此函式會抓取旗標，這個旗標會指出是否無法在堆疊緩衝區檢查 ([/gs (緩衝區安全性檢查) ](/cpp/build/reference/gs-buffer-security-check) 編譯器選項) 中完成堆疊排序。
@@ -41,7 +41,7 @@ HRESULT get_noStackOrdering(
 > [!NOTE]
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 |需求|描述|
 |-----------------|-----------------|

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a0a5ce72-95f8-443e-bb4b-8c21194faad0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe19daf3271006e177677d490ccccd89ee293af2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e6e6df4e4916f9f2fa68cdedf4d03fd6d6b9d6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461820"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862609"
 ---
 # <a name="idiasymbolget_targetvirtualaddress"></a>IDiaSymbol::get_targetVirtualAddress
 抓取 Thunk 目標 (VA) 的虛擬位址。
@@ -25,7 +25,7 @@ ms.locfileid: "85461820"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_targetVirtualAddress ( 
+HRESULT get_targetVirtualAddress ( 
    ULONGLONG* pRetVal
 );
 ```

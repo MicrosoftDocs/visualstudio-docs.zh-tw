@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c1aa39ee-d645-431e-bf5f-0640c0998934
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d83747d3db9336c00d8c770db415093de693f1c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1fa997d8552efec7fdfbcd97fa3e300975d4f58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862686"
 ---
 # <a name="idiasymbolget_symbolsfilename"></a>IDiaSymbol::get_symbolsFileName
 抓取從中載入符號的檔案名。
@@ -25,7 +25,7 @@ ms.locfileid: "85461925"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_symbolsFileName ( 
+HRESULT get_symbolsFileName ( 
    BSTR* pRetVal
 );
 ```

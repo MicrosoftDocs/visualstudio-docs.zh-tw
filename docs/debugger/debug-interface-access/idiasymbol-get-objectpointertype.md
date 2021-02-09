@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bce193b9-67b0-4c35-96e5-6a664937322e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ae9ce8d655d9229b5e9c9f547b0dade6ad503e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: add00659717072522acd7942d16feb942a5dca83
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862854"
 ---
 # <a name="idiasymbolget_objectpointertype"></a>IDiaSymbol::get_objectPointerType
 捕獲類別方法的物件指標類型。
@@ -25,7 +25,7 @@ ms.locfileid: "85462683"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_objectPointerType ( 
+HRESULT get_objectPointerType ( 
    IDiaSymbol** pRetVal
 );
 ```

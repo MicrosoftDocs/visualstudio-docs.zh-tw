@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d707b76-dbaa-4d88-86c3-6f3672cc6d4c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 765d0baff1d5d51a1f946240f26354e1f0962e1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43556164d3b3713f827797c0b5b8325b67299059
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461757"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862588"
 ---
 # <a name="idiasymbolget_timestamp"></a>IDiaSymbol::get_timeStamp
 捕獲基礎可執行檔的時間戳記。
@@ -25,7 +25,7 @@ ms.locfileid: "85461757"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_timeStamp ( 
+HRESULT get_timeStamp ( 
    DWORD* pRetVal
 );
 ```

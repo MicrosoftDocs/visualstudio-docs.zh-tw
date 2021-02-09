@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 187801f0-bd82-4c5b-9fae-8eeb1a4ac0ce
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 401894a921f2ad6a9649e337059c8ee142858f84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bec0bcde96bbb55129cf3549afa48707e236ddeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462620"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862847"
 ---
 # <a name="idiasymbolget_oemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 抓取原始設備製造商 (OEM) 符號的識別碼值。
@@ -25,7 +25,7 @@ ms.locfileid: "85462620"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_oemSymbolId ( 
+HRESULT get_oemSymbolId ( 
    DWORD* pRetVal
 );
 ```

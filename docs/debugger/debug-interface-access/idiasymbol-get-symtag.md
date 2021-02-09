@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 139a35bd-faeb-4878-be72-394dedfbb18f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9336bece2713c69f4fbb88df9703405cdd161e54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9421807871a173535aaded1064133dcef683f513
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862672"
 ---
 # <a name="idiasymbolget_symtag"></a>IDiaSymbol::get_symTag
 抓取符號類型分類器。
@@ -25,7 +25,7 @@ ms.locfileid: "85461890"
 ## <a name="syntax"></a>語法
 
 ```C++
-HRESULT get_symTag ( 
+HRESULT get_symTag ( 
    DWORD* pRetVal
 );
 ```
