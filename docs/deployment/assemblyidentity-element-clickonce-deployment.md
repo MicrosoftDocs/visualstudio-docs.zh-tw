@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f4a3bb83-c800-47d0-9905-9a5ae2486838
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a692d37771070f1835fc791515d5dbc24ce6b1b
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: bc689c80d033c6b92178f020c0d3273f6ec86ca7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383179"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911353"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (的 assemblyIdentity 元素) 
 識別應用程式的主要元件 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。

@@ -12,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7ce5d9fa8e1c3cfc3eaedb55d69ca382e937e45
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 8abe32abcb79fada541124f50a750fb4c1edde58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97864022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910868"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 這是 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 作業用來列舉檔案名集合，並決定每個檔案狀態的回呼函數。
 
  函式 `SccQueryChanges` 會提供檔案清單和回呼的指標 `QUERYCHANGESFUNC` 。 原始檔控制外掛程式會列舉指定的清單，並透過此回呼) 為清單中的每個檔案提供狀態 (。
 
-## <a name="signature"></a>簽章
+## <a name="signature"></a>簽名
 
 ```cpp
 typedef BOOL (*QUERYCHANGESFUNC)(
@@ -98,7 +98,7 @@ struct QUERYCHANGESDATA_W
 
  lpLatestName 這個專案的目前檔案名。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDE 所執行的回呼函數](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccQueryChanges](../extensibility/sccquerychanges-function.md)
 - [錯誤碼](../extensibility/error-codes.md)

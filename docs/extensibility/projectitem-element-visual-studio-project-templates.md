@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2d41fe83b440e2a3b4bfebd4fac6f5d06094a4
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 3e0cf60b260204ac3b97a222591946765cf8bb80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910974"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>專案範本 (Visual Studio 專案範本) 
 指定包含在專案範本中的檔案。
@@ -33,7 +33,7 @@ ms.locfileid: "94671320"
  \<Project>
  \<ProjectItem>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <ProjectItem
@@ -52,7 +52,7 @@ ms.locfileid: "94671320"
 
 ### <a name="attributes"></a>屬性
 
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |---------------------| - |
 | `TargetFileName` | 選擇性屬性。<br /><br /> 指定從範本建立專案時，專案專案的名稱和路徑。 這個屬性可用來建立與範本 *.zip* 檔中目錄結構不同的目錄結構，或是使用參數取代來建立專案名稱。 |
 | `ReplaceParameters` | 選擇性屬性。<br /><br /> 布林值，指定專案是否有在從範本建立專案時必須取代的參數值。 預設值為 `false`。 |
@@ -66,7 +66,7 @@ ms.locfileid: "94671320"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[專案](../extensibility/project-element-visual-studio-templates.md)|指定要加入至專案的檔案或目錄。|
 
@@ -78,7 +78,7 @@ ms.locfileid: "94671320"
 ## <a name="remarks"></a>備註
  `ProjectItem` 是的選擇性子系 `Project` 。
 
- `TargetFileName`屬性可以用來建立與範本 *.zip* 檔中目錄結構不同的目錄結構。 例如，如果 *myfile.txt* 檔案的根目錄中有檔案，但您想要將 *.zip* 檔案放在所有從範本建立的專案中名為 *CustomFiles* 的目錄，您會使用下列 XML：
+ `TargetFileName`屬性可以用來建立與範本 *.zip* 檔中目錄結構不同的目錄結構。 例如，如果 *myfile.txt* 檔案的根目錄中有檔案，但您想要將檔案放在所有從範本建立的專案中名為 *CustomFiles* 的目錄，您會使用下列 XML：
 
 ```xml
 <ProjectItem TargetFileName="CustomFiles\MyFile.vb">MyFile.vb</ProjectItem>
@@ -96,7 +96,7 @@ ms.locfileid: "94671320"
    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>
    ```
 
-2. *.vbproj* [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 在文字編輯器或中開啟專案) 的專案檔 (vbproj。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
+2.  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 在文字編輯器或中開啟專案) 的專案檔 (vbproj。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
 
 3. 在專案檔中尋找類似下列 XML 的行：
 

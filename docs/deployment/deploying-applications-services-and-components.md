@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be42b3a66f6bd874568945081972b220e7a7830
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 8933127940cd8155bbf0854fd19c559022bceecb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912164"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
 
@@ -123,7 +123,7 @@ ms.locfileid: "95006558"
 
 透過將應用程式部署至虛擬環境，即可啟用更複雜的開發和測試。 如需詳細資訊，請參閱[在實驗室環境中測試](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md)。
 
-## <a name="continuous-deployment"></a>連續部署
+## <a name="continuous-deployment"></a>持續部署
 
 您可以使用 Azure Pipelines 來啟用應用程式的持續部署。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true) 及[部署至 Azure](/azure/devops/deploy-azure/index?view=vsts&preserve-view=true)。
 

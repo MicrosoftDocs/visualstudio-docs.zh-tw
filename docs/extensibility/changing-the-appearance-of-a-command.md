@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f79ac7873a1746e0b14db51ba864e94f6bbfa1e
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1514fb9409805df91a16678a5cce67ee1f66ab9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974414"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911231"
 ---
 # <a name="change-the-appearance-of-a-command"></a>變更命令的外觀
 您可以藉由變更命令的外觀，將意見反應提供給您的使用者。 例如，您可能會想讓命令在無法使用時看起來不同。 您可以讓命令可供使用或無法使用、隱藏或顯示命令，或是在功能表上核取或取消選取。

@@ -7,22 +7,22 @@ helpviewer_keywords:
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a2df6d82099a927664620e19096107f283afada
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24e7c8892798d9192aa59c946e1c978899b4d173
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738184"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912042"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 參考 (Visual Studio 偵錯)
 參考章節包含 API 的概念總覽，此指南會顯示所有 API 專案的語法和使用方式，以及各種程式碼範例。 所有參考都會依類別目錄依字母順序列出。
 
  下表顯示方法所傳回的一般 `HRESULT` 值。
 
-|Name|描述|值|
+|名稱|描述|值|
 |----------|-----------------|-----------|
 |S_OK|成功。|0x00000000|
 |E_UNEXPECTED|發生非預期的失敗。|0x8000FFFF|

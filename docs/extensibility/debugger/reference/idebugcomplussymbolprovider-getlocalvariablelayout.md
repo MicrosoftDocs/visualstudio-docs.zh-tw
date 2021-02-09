@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: b7328d85-e5e9-4d9f-bcd1-e7711fd33878
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f805249a3736b1191ae3218f8fcd41ffae2c686a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0671715dd0532e268c6cc59abfafd62ff7686e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733844"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911972"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
 抓取一組方法的本機變數版面配置。
@@ -66,7 +66,7 @@ int GetLocalVariablelayout(
 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbolProvider**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的 **CDebugSymbolProvider** 物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(

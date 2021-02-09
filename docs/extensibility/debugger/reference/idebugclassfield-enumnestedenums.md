@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 90fd0cef-9145-4de6-91d4-6c881df39d6e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 38ee3ccd1ffd3130bc918da18c631cf08683f064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9c283d4b07458368a4ea5f143dc83bf13453302
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734403"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912011"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
 建立此類別之嵌套列舉值的枚舉器。

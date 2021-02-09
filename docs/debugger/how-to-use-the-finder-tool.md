@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ca277962f81b3cd1c35ebcf8a940e8168a6803
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: d48e9b580d25b521721fafa7dc475bdbe3532656
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150596"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912237"
 ---
 # <a name="how-to-use-the-finder-tool"></a>如何：使用搜尋工具
 您可以使用 [ **尋找視窗** ] 對話方塊中的 [Finder] 工具來顯示視窗屬性或訊息。 Finder 工具也可以找出已停用的子視窗，並辨別停用的子視窗是否重迭時要醒目提示哪個視窗。

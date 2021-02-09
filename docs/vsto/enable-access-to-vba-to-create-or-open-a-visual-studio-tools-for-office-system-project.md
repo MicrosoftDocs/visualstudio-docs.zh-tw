@@ -16,15 +16,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef68ffccd7a048cd0591ee0bf1aa511fe0489c92
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846125"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910510"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>啟用 VBA 存取以建立或開啟 Microsoft Office 系統專案的 Visual Studio Tools
 
@@ -59,7 +59,7 @@ ms.locfileid: "96846125"
 
 5. 核取或取消核取 **VBA 專案物件模型的 [信任存取權** ]，以啟用或停用 Visual Basic 專案的存取權。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
 ### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>若要啟用或停用具有 2007 Microsoft Office 系統之 Visual Basic 專案的存取權
 
@@ -69,7 +69,7 @@ ms.locfileid: "96846125"
 
 3. 選取以啟用或清除 [停用]， **Visual Basic 專案的 [信任存取**]。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
 ## <a name="to-set-your-office-macro-security-level"></a>設定 Office 巨集安全性層級
 
@@ -83,7 +83,7 @@ ms.locfileid: "96846125"
 
 5. 在 [ **宏設定** ] 區段中，選取所需的設定。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>使用 2007 Microsoft Office 系統設定 Office 宏安全性等級
 
@@ -109,7 +109,7 @@ ms.locfileid: "96846125"
 
 7. 開啟 **Visual Basic for Applications** 旁的下拉式功能表，然後按一下 [ **從我的電腦執行**]。
 
-8. 按一下 **[繼續]** 。
+8. 按一下 [繼續] 。
 
 9. 按一下 [關閉]  。
 

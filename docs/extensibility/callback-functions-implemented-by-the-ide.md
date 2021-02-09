@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dfb7e8b7e046c9587f591aec96a6a7fbd270865
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 42d7c02f2beb24aa92c0a3319c44cce3c8b325b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974457"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911253"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE 所執行的回呼函數
 為了與整合式開發環境整合 (IDE) 盡可能順暢地進行整合，並提供統一的終端使用者體驗，原始檔控制外掛程式可以使用 IDE 所執行的回呼函數。 外掛程式可以在原始檔控制作業期間，于適當的時間呼叫這些函式，以將資訊傳遞至 IDE;然後，IDE 可以將此資訊顯示為其原生 UI 中的內嵌元素。 在此案例中，使用者在此案例中的使用方式不會比外掛程式採用自己的 UI 更少。

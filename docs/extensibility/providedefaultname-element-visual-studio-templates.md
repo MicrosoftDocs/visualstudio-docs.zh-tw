@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7732c6f02ae5ec086a89bd9ade5c00ea533a68f2
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7f207a4c86a9c76f009341f96a7d562da1e8fb33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903802"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910952"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a> (Visual Studio 範本的 ProvideDefaultName 元素) 
 指定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案系統是否會在 [ **加入新專案** ] 或 [ **新增專案** ] 對話方塊中，產生範本的預設名稱。
@@ -28,7 +28,7 @@ ms.locfileid: "94903802"
  \<VSTemplate> \<TemplateData>
  \<ProvideDefaultName>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ProvideDefaultName> true/false </ProvideDefaultName>
@@ -45,7 +45,7 @@ ms.locfileid: "94903802"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 

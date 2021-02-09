@@ -5,18 +5,18 @@ ms.topic: overview
 ms.date: 09/04/2020
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 629ad64ad2a179e1f70998240f26a4484280e514
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 374e07735667a2a8891824b23d49b061651b3b95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911720"
 ---
 # <a name="what-is-github-codespaces-preview"></a>什麼是 GitHub Codespaces？ (預覽)
 

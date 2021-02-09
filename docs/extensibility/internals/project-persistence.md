@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 1009df1ce71e5ab46c0e9d100a79562f77460c0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911771"
 ---
 # <a name="project-persistence"></a>專案持續性
 持續性是您專案的重要設計考慮。 大部分的專案都會使用代表檔案的專案專案; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 也支援以非檔案為基礎之資料的專案。 專案和專案檔案所擁有的兩個檔案都必須保存。 IDE 會指示專案儲存本身或專案專案。
@@ -44,6 +44,6 @@ ms.locfileid: "97877438"
 
  介面上的方法 `IVsPersistHierarchyItem2` 是用來判斷專案是否可以重載，而且如果專案可以的話，也可以重載。 此外，您 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> 可以執行方法來使變更的專案在不儲存的情況下捨棄。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [使用專案 Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

@@ -11,16 +11,16 @@ helpviewer_keywords:
 - VSPerfCLREnv tool
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa0d4a476c64ec20f0a378398cfb95e364a07e3
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 24db8e45efbe732c69dedcce8b3c1b14463a0a0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911495"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -66,7 +66,7 @@ VSPerfCmd /Attach:MyService.exe
 
 下表描述用於檢測程式碼剖析的 VSPerfCLREnv 選項︰
 
-|選項|描述|
+|選項|Description|
 |------------|-----------------|
 |**TraceOn**|使用檢測方法啟用程式碼剖析功能。 不會啟用記憶體配置程式碼剖析功能或收集物件存留期資料。|
 |**TraceGC**|使用檢測方法啟用記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|
@@ -76,7 +76,7 @@ VSPerfCmd /Attach:MyService.exe
 
 下表描述用於取樣程式碼剖析的 VSPerfCLREnv 選項︰
 
-|選項|描述|
+|選項|Description|
 |------------|-----------------|
 |**SampleOn**|使用取樣方法啟用程式碼剖析功能。 不會啟用記憶體配置程式碼剖析功能或收集物件存留期資料。|
 |**SampleGC**|使用取樣方法啟用記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|
@@ -87,7 +87,7 @@ VSPerfCmd /Attach:MyService.exe
 
 若要分析受管理服務和由作業系統啟動而不是使用者啟動的 ASP.NET Web 應用程式，請選擇使用進行全域程式碼剖析的 VSPerfCLREnv 選項。 下表描述 VSPerfCLREnv 選項的全域版本︰ 這些選項可在登錄中設定適當的環境變數。
 
-|選項|描述|
+|選項|Description|
 |------------|-----------------|
 |**GlobalTraceOn**|使用檢測方法啟用全域程式碼剖析功能。 不會收集記憶體配置事件或物件存留期資料。|
 |**GlobalTraceGC**|使用檢測方法啟用全域記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|
@@ -100,7 +100,7 @@ VSPerfCmd /Attach:MyService.exe
 
  當您完成對 Managed 應用程式進行程式碼剖析時，使用下列其中一個選項來刪除 VSPerfCLREnv 所加入的環境變數。 下表描述如何刪除這兩個標準和全域環境變數︰
 
-|選項|描述|
+|選項|Description|
 |------------|-----------------|
 |**關閉**|刪除標準 .NET 程式碼剖析的環境變數。 使用非全域 VSPerfClrEnv 選項來設定分析工具環境變數時，請使用此選項。|
 |**GlobalOff**|刪除全域 .NET 程式碼剖析的環境變數。 當應用程式由作業系統啟動且不是分析工具時，請使用此選項。|

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b5644a890a8705c68852cb5f67e4d998e12338dc
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4d5d7244f70852dee29813834fc427c888df9c1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912148"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>針對測試和實際執行伺服器部署 ClickOnce 應用程式，而不需進行簽署
 本文描述 .NET Framework 版本3.5 中引進的 ClickOnce 功能，可讓您從多個網路位置部署 ClickOnce 應用程式，而不需要重新簽署或變更 ClickOnce 資訊清單。
@@ -45,7 +45,7 @@ ms.locfileid: "94382932"
 
  在 .NET Framework 3.5 中對 ClickOnce 進行的變更時，協力廠商可能會將 ClickOnce 應用程式提供給另一個組織，然後將應用程式部署在自己的網路上。
 
- 為了充分利用此功能，ClickOnce 應用程式的開發人員必須 `deploymentProvider` 從其部署資訊清單中排除。 這項需求表示 `-providerUrl` 當您使用 Mage.exe 建立部署資訊清單時，必須排除引數。 或者，如果您要使用 MageUI.exe 產生部署資訊清單，您必須確定 [ **應用程式資訊清單** ] 索引標籤上的 [ **啟動位置** ] 文字方塊保持空白。
+ 為了充分利用此功能，ClickOnce 應用程式的開發人員必須 `deploymentProvider` 從其部署資訊清單中排除。 這項需求表示 `-providerUrl` 當您使用 Mage.exe 建立部署資訊清單時，必須排除引數。 或者，如果您要使用 MageUI.exe 產生部署資訊清單，您必須確定 [**應用程式資訊清單**] 索引標籤上的 [**啟動位置**] 文字方塊保持空白。
 
 ## <a name="deploymentprovider-and-application-updates"></a>deploymentProvider 和應用程式更新
  從 .NET Framework 3.5 開始，您不再需要在部署資訊清單中指定，就能 `deploymentProvider` 同時部署 ClickOnce 應用程式以進行線上和離線使用。 這種變更支援您必須自行封裝和簽署部署的情況，但允許其他公司透過其網路部署應用程式。

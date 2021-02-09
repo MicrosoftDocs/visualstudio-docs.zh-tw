@@ -19,18 +19,18 @@ helpviewer_keywords:
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ffa19de6abff0bb73c91c4a8e79d707d0941e00
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 04cbb0db729d39295ee9c608a19302a109980f10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383010"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912211"
 ---
 # <a name="create-bootstrapper-packages"></a>建立啟動載入器套件
-安裝程式是一般安裝程式，可設定來偵測及安裝可轉散發元件，例如 Windows Installer ( *.msi* ) 檔案和可執行程式。 安裝程式也稱為啟動載入器。 其程式設計方式是透過一組 XML 資訊清單，指定用於管理元件安裝的中繼資料。  ClickOnce 的必要條件對話方塊中顯示的每個可轉散發元件（或 **必要條件** ）都是啟動載入器套件。 啟動載入器套件是一組目錄和檔案，內含描述必要條件安裝方式的資訊清單檔案。
+安裝程式是一般安裝程式，可設定來偵測及安裝可轉散發元件，例如 Windows Installer (*.msi*) 檔案和可執行程式。 安裝程式也稱為啟動載入器。 其程式設計方式是透過一組 XML 資訊清單，指定用於管理元件安裝的中繼資料。  ClickOnce 的必要條件對話方塊中顯示的每個可轉散發元件（或 **必要條件** ）都是啟動載入器套件。 啟動載入器套件是一組目錄和檔案，內含描述必要條件安裝方式的資訊清單檔案。
 
 啟動載入器會先偵測是否已安裝所有必要條件。 如果未安裝必要條件，啟動載入器會先顯示授權合約。 接著，在使用者接受授權合約之後，就會開始安裝必要條件。 不過，如果啟動載入器偵測到所有必要條件，就會直接啟動應用程式安裝程式。
 
@@ -39,9 +39,9 @@ ms.locfileid: "94383010"
 
 若要建立啟動載入器套件，您必須建立產品資訊清單，並針對元件的每個當地語系化版本，也建立封裝資訊清單。
 
-* 產品資訊清單（ *product.xml* ）包含套件的任何非語言相關中繼資料。 此清單包含所有當地語系化版本之可轉散發元件通用的中繼資料。  若要建立這個檔案，請參閱 [如何：建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)。
+* 產品資訊清單（ *product.xml*）包含套件的任何非語言相關中繼資料。 此清單包含所有當地語系化版本之可轉散發元件通用的中繼資料。  若要建立這個檔案，請參閱 [如何：建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)。
 
-* 封裝資訊清單（ *package.xml* ）包含特定語言的中繼資料;它通常包含當地語系化的錯誤訊息。 元件的每個當地語系化版本至少必須各有一份套件資訊清單。 若要建立這個檔案，請參閱 [如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)。
+* 封裝資訊清單（ *package.xml*）包含特定語言的中繼資料;它通常包含當地語系化的錯誤訊息。 元件的每個當地語系化版本至少必須各有一份套件資訊清單。 若要建立這個檔案，請參閱 [如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)。
 
 建立這些檔案之後，請將產品資訊清單檔案放入以自訂啟動載入器命名的資料夾中， 並將套件資訊清單檔案放入以地區設定命名的資料夾中。 例如，如果是英文版可轉散發套件的套件資訊清單檔案，請將檔案放入稱為 en 的資料夾中。 針對每個地區設定重複這個程序，例如以 ja 代表日文，以 de 代表德文。 最終的自訂啟動載入器套件可能會有下列資料夾結構。
 
@@ -111,7 +111,7 @@ CustomBootstrapperPackage
 
 `%ProgramFiles%\Microsoft.NET\RedistList`
 
-可轉散發清單是 XML 檔案，您應該使用下列格式來命名： *\<Company Name> . \<Component Name>.RedistList.xml* 。 比方說，如果是由 DataWidgets 所建立的元件，請使用 *Acme.DataWidgets.RedistList.xml* 。 可轉散發清單的內容範例可能如下所示：
+可轉散發清單是 XML 檔案，您應該使用下列格式來命名： *\<Company Name> . \<Component Name>.RedistList.xml*。 比方說，如果是由 DataWidgets 所建立的元件，請使用 *Acme.DataWidgets.RedistList.xml*。 可轉散發清單的內容範例可能如下所示：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: b276bd25-6658-4898-bc36-04ecdf92aa2f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d7dd8b5b86b6b8c89d11326b817f2718a3ee4ad3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0677b45d3c78f1e652a1185e0e5519bb60bc35ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911199"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
 判斷已刪除指定之偵錯工具位址的函式。
@@ -45,7 +45,7 @@ int IsFunctionDeleted(
 如果函數已刪除，則會傳回 `S_OK` 。 如果函數存在，會傳回 `S_FALSE` 。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的**CDebugSymbolProvider**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面的 **CDebugSymbolProvider** 物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsFunctionDeleted(

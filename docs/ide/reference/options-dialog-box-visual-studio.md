@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 02b09877-1df1-4531-a0d1-a4ca17c7f857
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1abf435625cc9003dc569542e24e020e3801ec00
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 16c2c6a1d5f9f9b673e7ae12661c4681f713c2fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189325"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910821"
 ---
 # <a name="options-dialog-box-visual-studio"></a>[選項] 對話方塊 (Visual Studio)
 

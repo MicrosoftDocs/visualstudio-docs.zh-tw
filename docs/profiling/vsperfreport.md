@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3ba5453976e3f3976aba43bc296c040a86b7a5
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 507ea5a90aa17ba252a95714f488f5ea22dff4f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719769"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911507"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport 命令列工具可用來建立使用「[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具」分析資料檔案的報告。 預設報告格式為 .*csv* 檔案。

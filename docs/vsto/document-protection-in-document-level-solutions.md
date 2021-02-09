@@ -15,15 +15,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2898781a3603e7cb9582d246e4fa7edaaf6bddb9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddfe9d70cafc6acf7526c8819cb9ae3f46ea8022
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846190"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910556"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>檔層級方案的檔案保護
   您可以在檔層級專案中，使用 Microsoft Office Word 和 Microsoft Office Excel 的保護功能。 這些功能會封鎖未經授權的使用者對檔的受保護部分進行變更。

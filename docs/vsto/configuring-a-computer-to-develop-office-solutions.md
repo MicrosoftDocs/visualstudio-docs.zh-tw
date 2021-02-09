@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, installing tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3658f655c50c9d1a0775a8cc69dd65baf32d1408
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ee8f840aa81d3decfdb96dd2658b758704443347
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847256"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910565"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>設定電腦以開發 Office 方案
 

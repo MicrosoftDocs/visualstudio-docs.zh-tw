@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a04cfc249efa4640df2b2e4b1c5f4b43ed52ace2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 17f52a469d93a843ef776c125e15a37db22277e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910479"
 ---
 # <a name="ensurevstocomponent-function"></a>EnsureVSTOComponent 函式
   此 API 支援 Office 基礎結構，而且不適合直接從程式碼使用。
@@ -32,7 +32,7 @@ HRESULT EnsureVSTOComponent(
 
 #### <a name="parameters"></a>參數
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |*pProject*|請勿使用。|
 

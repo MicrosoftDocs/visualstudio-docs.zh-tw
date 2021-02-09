@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8447213b14a3632197ea7ce27677423460315f71
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 95b4c88cc42879bf40278871a0e39de13f63a418
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911223"
 ---
 # <a name="commandname-element"></a>CommandName 元素
 專案 `CommandName` 會在 [選項] 對話方塊的 [**選項**] 對話方塊中，以及在 [**自訂**] 對話方塊的 **命令** 清單中，指定出現在鍵盤類別中的文字。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <CommandName>MyCommand</CommandName>
@@ -40,7 +40,7 @@ ms.locfileid: "94974115"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[Strings 元素](../extensibility/strings-element.md)|將文字元素分組，例如 `ButtonText` 和 `CommandName` 。|
 

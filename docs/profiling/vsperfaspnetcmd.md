@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: f9e9f895-57bb-41e8-8bd1-cdaa738ec220
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b594141d6209c8ede9171df880e7523b81a34775
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 1d886284a130d9c103d2f0d8a6bc24d2ebd69b6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911624"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 **VSPerfASPNetCmd.exe** 命令列工具可讓您進行 ASP.Net 網站分析，而不需要設定環境變數或重新啟動您的電腦。 當您進行 ASP.NET 網站分析且不需要 **VSPerfCmd** 提供的額外功能時，請使用 **VSPerfASPNetCmd.exe** 而非 [VSPerfCmd](../profiling/vsperfcmd.md)。 如需 **VSPerfASPNetCmd** 的詳細資訊，請參閱 [使用 VSPerfASPNetCmd 快速進行網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。 當您使用獨立分析工具來分析 ASP.NET 的網站時， **VSPerfASPNetCmd** 是慣用的命令列工具。
@@ -28,7 +28,7 @@ ms.locfileid: "98719223"
 
 ## <a name="options"></a>選項。
 
-|選項|描述|
+|選項|Description|
 |------------|-----------------|
 |**/Sample** 或 **/s**|使用取樣方法進行網站分析。 **/Sample** 是預設方法。 /Sample 無法搭配 **/Trace** 使用。|
 |**/Trace** 或 **/t**|使用檢測方法進行網站分析。 /Trace 無法搭配 **/Sample** 使用。|

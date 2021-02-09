@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a8f97900f1d400f3208a24ccc45ff9bbd774aeb
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: d60e6093eb439aa3b0e2a0a86e0d21d8ace95e00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911750"
 ---
 # <a name="how-to-get-a-service"></a>How to：取得服務
 

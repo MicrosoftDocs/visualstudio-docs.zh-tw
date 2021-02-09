@@ -19,18 +19,18 @@ helpviewer_keywords:
 ms.assetid: 11a30580-3a1a-4be8-a241-0abdc758302e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d533d524effe5ba055116d926d7cc5ba9632a6b
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: b821c374a87983ab8cb2667b434b1509e8449f31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911437"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>逐步執行應用程式時，如何保持焦點？
-## <a name="description"></a>描述
+## <a name="description"></a>Description
  我的程式有視窗啟動的問題。 要重現問題時，以偵錯工具逐步執行程式會帶來干擾，因為程式會一直失焦。 有什麼方法可以避免這個問題嗎？
 
 ## <a name="solution"></a>解決方案

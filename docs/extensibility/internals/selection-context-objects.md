@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5e54f00ecbac03eaebe68c6fb4de410987b63f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: c8fa0303d752351efd87847941037a36f2f90f2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911098"
 ---
 # <a name="selection-context-objects"></a>選取項目內容物件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 會使用全域選取內容物件來判斷應該在 IDE 中顯示的內容。 IDE 中的每個視窗都可以將自己的選取內容物件推送至全域選取內容。 當視窗具有焦點時，IDE 會使用視窗中的值來更新全域選取範圍內容。 如需詳細資訊，請參閱 [對使用者的意見](../../extensibility/internals/feedback-to-the-user.md)反應。
@@ -41,7 +41,7 @@ ms.locfileid: "97875566"
 
 3. VSPackage 藉由執行活動（例如更新階層、重新開機工具或其他類似工作），來對它所收到的事件採取動作。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>
 - [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

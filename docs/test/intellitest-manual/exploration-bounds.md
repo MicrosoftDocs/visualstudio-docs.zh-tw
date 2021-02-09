@@ -7,16 +7,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 075eaa4613a1afe6bdeb83a9e46e639b073a200a
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 44af9fc50e81727d534e7c5a79dba0ccf2edde75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667919"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910674"
 ---
 # <a name="exploration-bounds"></a>探索界限
 
