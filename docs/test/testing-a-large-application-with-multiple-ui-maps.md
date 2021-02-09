@@ -9,15 +9,15 @@ helpviewer_keywords:
 - coded UI tests, for large applications
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 93ae6aaa77a133a0d1805554a38b2714bff5b312
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9995623265b4f72e75f76827c2acbdf508c4e657
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879445"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 
@@ -25,7 +25,7 @@ ms.locfileid: "96330156"
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requirements**
+**需求**
 
 - Visual Studio Enterprise
 

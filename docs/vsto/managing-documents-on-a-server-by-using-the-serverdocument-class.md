@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ServerDocument class, managing documents on server
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 585ec1842daeb4e4c4c59047383e5d53b3599bcf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 17a25ca382cfbbc762731afacaa628de616cfe1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879471"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>使用 ServerDocument 類別管理伺服器上的檔
   您可以使用 `ServerDocument` 中的類別 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 來管理檔層級自訂的數個層面，即使未安裝 Microsoft Office Word 和 Microsoft Office Excel 也是如此。 您可以執行下列工作：
@@ -48,7 +48,7 @@ ms.locfileid: "97528490"
 
  下表列出您可以用來處理快取資料的成員。
 
-|工作|要使用的成員|
+|Task|要使用的成員|
 |----------|-------------------|
 |判斷檔是否有資料快取。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> 方法|
 |存取檔中的快取資料。<br /><br /> 如需詳細資訊，請參閱 [存取伺服器檔中的資料](../vsto/accessing-data-in-documents-on-the-server.md)。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 屬性。|
@@ -58,7 +58,7 @@ ms.locfileid: "97528490"
 
  下表列出您可用來管理自訂群組件的成員。
 
-|工作|要使用的成員|
+|Task|要使用的成員|
 |----------|-------------------|
 |判斷檔是否為檔層級自訂的一部分。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> 方法|
 |以程式設計方式在執行時間將自訂附加至檔。<br /><br /> 如需詳細資訊，請參閱 [如何：將 managed 程式碼擴充附加至檔](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|其中一個 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> 方法。|

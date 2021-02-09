@@ -14,15 +14,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], filter descriptors
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ff312753be07867d8978dc4d5f60d5dfc0eee557
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 4fe2da1bc6aefefb92fbd6f7d11613372b8b7742
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915423"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879692"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：將篩選描述元新增至搜尋工具方法
   篩選描述項可讓模型的取用者在執行之前，將值傳遞給方法。 如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。

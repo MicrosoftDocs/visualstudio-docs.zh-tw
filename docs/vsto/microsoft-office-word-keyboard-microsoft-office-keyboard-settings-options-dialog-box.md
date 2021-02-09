@@ -16,15 +16,15 @@ helpviewer_keywords:
 - keyboard shortcuts, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bf4cfbaf23ad9c1e545af25614722cd52c493df7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0138fcd73ddf07202a9111ec2b3d17dcc0fb7a0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879419"
 ---
 # <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>選項對話方塊、設定、Microsoft Office Word 鍵盤
   Microsoft Office Word 和 Visual Studio 都處理快速鍵。 相同的快速鍵組合可用於 Word 和 Visual Studio 中的不同命令。 當 Word 在 Visual Studio 的檔層級專案中開啟時，一次只有一個應用程式會收到快速鍵命令。 根據預設，Visual Studio 會接收所有快速鍵命令，但是您可以在檔具有選取 **動態鍵盤** 佈局的焦點時，讓 Word 接收它們。

@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9a5fbd9f396dfe0ed92c0590712f9fddb84c27a0
-ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
+ms.openlocfilehash: c59a9d9055dd6a5788eec4d4904d9ec41262dae2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879497"
 ---
 # <a name="install-unit-test-frameworks"></a>安裝單元測試架構
 

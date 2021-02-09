@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: fd2064a76777390eb4b708b402578f1d89ca52c7
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: 281e64f83766b6b42dd9f076726c429c9432245b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879549"
 ---
 # <a name="how-to-use-the-load-test-api"></a>如何：使用負載測試 API
 

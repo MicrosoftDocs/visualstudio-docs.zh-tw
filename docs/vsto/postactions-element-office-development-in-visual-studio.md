@@ -12,20 +12,20 @@ helpviewer_keywords:
 - <postActions> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: eb716c3d9a20b6bda2cadff178a5126d6815ac00
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: da0c3ee640d7ae4ec1b61df7a60893a7e1428cd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879432"
 ---
 # <a name="ltpostactionsgt-element-office-development"></a>&lt;&gt; (Office 開發) 的 p s 元素
   `postActions` 命名空間的 `vstav3` 項目包含描述安裝 Office 方案後所執行之部署後動作的所有 `postAction` 項目。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <postActions>
@@ -50,7 +50,7 @@ ms.locfileid: "91583706"
 
 ## <a name="post-deployment-action-example"></a>部署後動作範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>Description
  下列程式碼範例說明使用 `postActions` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
