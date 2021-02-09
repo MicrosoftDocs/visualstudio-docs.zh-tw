@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: csharp
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
 dev_langs:
@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3aa7831c56068c826c9bbecf97d7115331243251
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: d86a9c42fbd1c54e7bef409cc6d61d9aca751436
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039819"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919659"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>將 Get 方法轉換為屬性 / 將屬性轉換為 Get 方法的重構
 
@@ -36,7 +36,7 @@ ms.locfileid: "96039819"
 
 **時機：** 您有未包含任何邏輯的 Get 方法。
 
-### <a name="how-to"></a>操作方式
+### <a name="how-to"></a>使用方法
 
 1. 將游標放在 Get 方法名稱中。
 
@@ -77,7 +77,7 @@ public int MyValue
 
 **時機：** 您有不只是涉及立即設定和取得值的屬性
 
-### <a name="how-to"></a>操作方式
+### <a name="how-to"></a>使用方法
 
 1. 將游標放在 Get 方法名稱中。
 

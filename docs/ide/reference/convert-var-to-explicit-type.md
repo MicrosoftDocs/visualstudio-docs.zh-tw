@@ -6,17 +6,17 @@ ms.date: 05/15/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a9270ca6cf7407d196eca211b6a76c6dc6a8be78
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: d45d4ffcbdedb456bde40b3fd1103fa8b21a8f9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919594"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>重構以將 var 取代為明確類型
 

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 144724d0-38ee-4c9b-87ca-8a504371182b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5789681b0da70f46dadac1e29d0d6bb9dc905d1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2ff055f730d193b5294b98129e073a21428f8ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919899"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 此介面可讓會話 debug manager (SDM) 控制在埠上執行的程式和進程。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortEx2 : IUnknown
@@ -51,7 +51,7 @@ IDebugPortEx2 : IUnknown
 
  如果需要，debug engine (DE) 可以在傳遞至[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)的[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)介面上尋找這個介面，然後使用[LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)來啟動程式。 但是，這並不是一項需求，而 DE 可以做任何需要執行的動作來啟動要求程式。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： portpriv。h
 
  命名空間： VisualStudio

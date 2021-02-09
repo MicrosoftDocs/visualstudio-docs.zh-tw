@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 1f0e9ac0-6dfb-461a-976c-888d82144cdb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e00751db052adeefee828829ec89309a3adba4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c38dc023c44e0c1743fd9d35dbe65befda405f4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730858"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919926"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 這個介面表示 (DE) 的 debug engine。 它是用來管理偵錯工具會話的各個層面，從建立中斷點到設定和清除例外狀況。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngine2 : IUnknown
@@ -53,7 +53,7 @@ IDebugEngine2 : IUnknown
 |[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|設定度量。|
 |[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|要求所有由這個取消執行的程式會在下一個執行緒嘗試執行時停止執行。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Msdbg。h
 
  命名空間： VisualStudio

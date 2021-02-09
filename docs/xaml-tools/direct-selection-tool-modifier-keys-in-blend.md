@@ -8,19 +8,19 @@ ms.topic: reference
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb98ae063824b29bc3bb8719a034defdeec5293
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 08d26dc394e859862b85f5009a9427f34576fd5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920246"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的直接選取工具輔助按鍵
 
-下表列出您可以用來修改現有路徑圖形的 [直接選取]  工具 ![[直接選取] 工具](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) 快速鍵。 若要新增或移除現有路徑上的點，或結合兩個現有路徑，請使用 **畫筆** 工具。
+下表列出您可以用來修改現有路徑圖形的 [直接選取]工具 ![[直接選取] 工具](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) 快速鍵。 若要新增或移除現有路徑上的點，或結合兩個現有路徑，請使用 **畫筆** 工具。
 
 |若要執行這項操作|執行方式|Pointer|
 | - |-------------|-------------|
@@ -35,7 +35,7 @@ ms.locfileid: "92796689"
 |選取線段並將其彎成曲線，以通過指標的位置。|將滑鼠指標停在路徑中的線段上，按住 **Alt** 鍵，然後拖曳線段|![選取線段並將其彎成曲線，以通過指標的位置。](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> 轉換線段的指標|
 |個別調整另一側正切函數的一端|直接選取點或線段，按住 **Alt** 鍵，然後拖曳正切函數的結束點|![個別調整另一側正切函數的一端](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png)<br /><br /> 轉換正切函數的指標|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [畫板輔助按鍵](../xaml-tools/artboard-modifier-keys-in-blend.md)
 - [畫筆工具輔助按鍵](../xaml-tools/pen-tool-modifier-keys-in-blend.md)

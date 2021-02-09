@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 05f0b20307ac0802c4c4350588f5dc0c47cb3b6b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 768c61ab525d03a7b9a1a80481b84b492d6bd0c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901423"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919645"
 ---
 # <a name="how-to-customize-class-diagrams"></a>如何：自訂類別圖表
 

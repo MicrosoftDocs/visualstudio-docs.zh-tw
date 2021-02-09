@@ -6,15 +6,15 @@ ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 64a46fc6221f00e6bb130be8010cb2544a00dcc8
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 3cecafe64f7ead8157a9cb6c80d2f0a245566390
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919726"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>將區域函式轉換為方法
 
