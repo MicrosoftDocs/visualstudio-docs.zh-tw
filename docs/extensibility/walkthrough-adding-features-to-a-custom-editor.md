@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: c18b73b22d1ce4d4b2a7720d3d80081b4e2c075c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893395"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>逐步解說：將功能新增至自訂編輯器
 建立自訂編輯器之後，您可以在其中加入更多功能。
@@ -53,7 +53,7 @@ ms.locfileid: "97863195"
         > [!NOTE]
         > 呼叫 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> 以取得的指標 `IVsFileChangeEx` 。
 
-7. 使用原始程式碼控制協調檔編輯事件。 依照下列步驟執行：
+7. 使用原始程式碼控制協調檔編輯事件。 請遵循下列步驟：
 
     1. 藉由呼叫來取得的指標 `IVsQueryEditQuerySave2` `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> 。
 
@@ -65,13 +65,13 @@ ms.locfileid: "97863195"
 
          如果檔案尚未儲存或自上次儲存後已變更，則此方法會提示使用者儲存檔案。
 
-8. 啟用 [ **屬性** ] 視窗，即可顯示在編輯器中選取之文字的屬性。 依照下列步驟執行：
+8. 啟用 [ **屬性** ] 視窗，即可顯示在編輯器中選取之文字的屬性。 請遵循下列步驟：
 
     1. <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>每次文字選取變更時呼叫，並傳入您的實作為 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 。
 
     2. 呼叫 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 服務以取得的指標 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 。
 
-9. 讓使用者在編輯器和 **工具箱** 之間，或在外部編輯器 (（例如 Microsoft Word) 和 **工具箱**）之間，拖放專案。 依照下列步驟執行：
+9. 讓使用者在編輯器和 **工具箱** 之間，或在外部編輯器 (（例如 Microsoft Word) 和 **工具箱**）之間，拖放專案。 請遵循下列步驟：
 
     1. `IDropTarget`在編輯器上執行，以警示 IDE 編輯器是放置目標。
 
@@ -154,6 +154,6 @@ ms.locfileid: "97863195"
 
   - `Window.Object`
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [參與 automation 模型](../extensibility/internals/contributing-to-the-automation-model.md)

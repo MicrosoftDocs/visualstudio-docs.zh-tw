@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e8dc5e402fcf3bedabe2b0f7fe606dfe807525ab
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a427b14db5be8081352ce54bf13900fa826202b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894006"
 ---
 # <a name="how-to-use-the-variable-designer"></a>HOW TO：使用變數設計工具
 
@@ -33,12 +33,12 @@ ms.locfileid: "94437823"
 
 3. 按一下設計工具畫布左下角的 [ **變數** ] 按鈕，以開啟變數設計工具。 變數設計工具隨即出現。
 
-4. 按一下標示為 [ **建立變數** ] 的空資料列。 這會加入新的資料列，其中包含使用下列預設值的新變數： **名稱** 的 variablex，其中 x 是值為1的整數，會自動遞增以建立唯一變數名稱、 **變數類型** 的 **字串** ，以及 **範圍** 的 **順序** 。 **預設** 不會加入任何值。 在工作流程設計過程中，您隨時可以變更這些值。
+4. 按一下標示為 [ **建立變數**] 的空資料列。 這會加入新的資料列，其中包含使用下列預設值的新變數：**名稱** 的 variablex，其中 x 是值為1的整數，會自動遞增以建立唯一變數名稱、**變數類型** 的 **字串**，以及 **範圍** 的 **順序**。 **預設** 不會加入任何值。 在工作流程設計過程中，您隨時可以變更這些值。
 
     > [!NOTE]
     > 若要刪除變數，請按一下變數，然後按下 **delete** 鍵，即可加以選取。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用工作流程設計工具](developing-applications-with-the-workflow-designer.md)
 - [變數與引數](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

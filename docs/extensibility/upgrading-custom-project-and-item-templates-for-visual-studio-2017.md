@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 089baadcb60afcc8b32e287095b10ab30196ce17
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 84e9b08350cf5977269bfbcf28ca5335e17f024d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715973"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893401"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升級自訂 Visual Studio 的專案與項目範本2017
 
@@ -35,7 +35,7 @@ ms.locfileid: "97715973"
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>如何使用專案或專案範本更新 VSIX 擴充功能
 
-1. 在 Visual Studio 2017 中開啟方案。 系統會要求您升級程式碼。 按一下 [確定]。
+1. 在 Visual Studio 2017 中開啟方案。 系統會要求您升級程式碼。 按一下 [確定]  。
 
 2. 升級完成之後，您可能需要變更安裝目標的版本。 在 VSIX 專案中，開啟 extension.vsixmanifest 檔案，然後選取 [ **安裝目標** ] 索引標籤。如果 [ **版本範圍** ] 欄位是 **[14.0]**，請按一下 [ **編輯** ]，並將其變更為包含 Visual Studio 2017。 例如，您可以將它設定為 **[14.0，15.0]** 以將延伸模組安裝到 Visual Studio 2015 或 Visual Studio 2017，或 **[15.0]** 將它安裝到只 Visual Studio 2017。
 
@@ -190,7 +190,7 @@ ms.locfileid: "97715973"
 
 為專案和專案範本建立個別的資訊清單，它們應該指向上述所指定的根範本目錄。 為每個延伸模組和地區設定建立一個資訊清單。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [針對範本探索進行疑難排解](troubleshooting-template-discovery.md)
 - [建立自訂專案和專案範本](creating-custom-project-and-item-templates.md)

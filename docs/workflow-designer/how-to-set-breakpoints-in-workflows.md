@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88516a4160c5236a5a4ef9f01d7f15620aee5cc3
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 3fa7dc307dfef26bb8ab46f0df62f40bc0f4d5c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894149"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>如何：在工作流程中設定中斷點
 

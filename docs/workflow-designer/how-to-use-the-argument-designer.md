@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aca39eaf94e5dca3159a9f3740dae0f87257d9c1
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9b97368a942747046aa7641771f84a9f2ed41e11
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894097"
 ---
 # <a name="how-to-use-the-argument-designer"></a>HOW TO：使用引數設計工具
 
@@ -30,12 +30,12 @@ ms.locfileid: "94437862"
 
 2. 按一下設計工具畫布左下角的 [ **引數** ] 按鈕，以開啟引數設計工具。 引數設計工具隨即出現。
 
-3. 按一下標示為 [ **建立引數** ] 的空資料列。 這會加入新的資料列，其中包含使用下列預設值的新引數： argumentx 的 **名稱** ，其中 x 是值為1的 **整數，會** 自動遞增以建立唯一的引數名稱，而針對 **方向** ，則是 **引數型** 別的 **字串** 。 **預設值** 不會加入任何值。 在工作流程設計過程中，您隨時可以變更這些值。
+3. 按一下標示為 [ **建立引數**] 的空資料列。 這會加入新的資料列，其中包含使用下列預設值的新引數： argumentx 的 **名稱**，其中 x 是值為1的 **整數，會** 自動遞增以建立唯一的引數名稱，而針對 **方向**，則是 **引數型** 別的 **字串**。 **預設值** 不會加入任何值。 在工作流程設計過程中，您隨時可以變更這些值。
 
     > [!NOTE]
     > 若要刪除引數，請按一下引數，然後按下 **delete** 鍵，以選取該引數。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用工作流程設計工具](developing-applications-with-the-workflow-designer.md)
 - [變數與引數](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

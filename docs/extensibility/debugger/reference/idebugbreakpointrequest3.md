@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 8a042beb-b319-48e3-b3c8-9c8336ab371b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 505b0c0b05fa0f14578d770abec6c43ed6b80b01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6e42111ca0c8b357a7f8841511cf935694a30b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893057"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 此介面代表建立和系結任何類型中斷點所需的資訊。 它是 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)的延伸模組。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointRequest3 : IDebugBreakpointRequest2
@@ -44,7 +44,7 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 ## <a name="remarks"></a>備註
  這個介面是用來提供其他資訊給 DE [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 結構。 這項額外的資訊包括「DE 的廠商識別碼」 (格式為 GUID) 、追蹤點的名稱，以及中斷點條件約束的名稱。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

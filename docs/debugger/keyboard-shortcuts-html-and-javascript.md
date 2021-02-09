@@ -11,16 +11,16 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a65cf7eea0541464a013a72377f439dd53ebf685
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: f20c7bf1060dc09783722c20254db7ed8c167b07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893200"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>鍵盤快速鍵 (HTML 和 JavaScript)
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 74a7dd5dc69effbd46986eff963de3e740d9aa8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ede08dfd2c5f8ee3a205f744388d9aac3f8f3709
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893655"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 暫停執行緒。
@@ -28,13 +28,13 @@ ms.locfileid: "80718636"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT Suspend ( 
+HRESULT Suspend ( 
    DWORD *pdwSuspendCount
 );
 ```
 
 ```csharp
-HRESULT Suspend ( 
+HRESULT Suspend ( 
    out uint pdwSuspendCount
 );
 ```

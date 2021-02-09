@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 948deb35-d72f-462b-bea6-4b119c10a148
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8385fe376f56738d76e066dc172e7b6b516f9a08
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6e117fcbea0488c4b6a42125971984b86cf78251
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438057"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894253"
 ---
 # <a name="dowhile-activity-designer"></a>DoWhile 活動設計工具
 
@@ -27,12 +27,12 @@ ms.locfileid: "94438057"
 
 下表顯示最有用的 <xref:System.Activities.Statements.DoWhile> 活動屬性，並說明如何在設計工具中使用它們：
 
-|屬性名稱|必要|使用量|
+|屬性名稱|必要|使用方式|
 |-|--------------|-|
 |<xref:System.Activities.Statements.DoWhile.Body%2A>|否|條件為 **true** 時要執行的活動。 若要加入 <xref:System.Activities.Statements.DoWhile.Body%2A> 活動，請從 [工具箱 **] 將** 活動拖放到 [ **DoWhile** ] 活動設計工具的 [內文] 方塊中，並在 [在此放置活動] 提示文字。|
-|<xref:System.Activities.Statements.DoWhile.Condition%2A>|對|在每次迴圈重複之後所要評估的條件。 若要設定 <xref:System.Activities.Statements.DoWhile.Condition%2A> ，請在 [ **DoWhile** ] 活動設計工具的 [ **條件** ] 方塊或在屬性方格中輸入 Visual Basic 運算式。|
+|<xref:System.Activities.Statements.DoWhile.Condition%2A>|是|在每次迴圈重複之後所要評估的條件。 若要設定 <xref:System.Activities.Statements.DoWhile.Condition%2A> ，請在 [ **DoWhile** ] 活動設計工具的 [**條件**] 方塊或在屬性方格中輸入 Visual Basic 運算式。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [While](../workflow-designer/while-activity-designer.md)
 - [控制流程](../workflow-designer/control-flow-activity-designers.md)

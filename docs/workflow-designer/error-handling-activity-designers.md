@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 9679ca32-ad7f-4089-824e-fdb931e47a30
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52ad843b48d87755802a8492d4ff8f997c82caa5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a92ca3436c3516a886721488c9d0c34ecab02e39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894227"
 ---
 # <a name="error-handling-activity-designers"></a>Error Handling 活動設計工具
 

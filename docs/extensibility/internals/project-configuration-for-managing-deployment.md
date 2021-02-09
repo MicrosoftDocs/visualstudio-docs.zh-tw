@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c322e320e193acd25a011cc85173c1c80e2d29d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: ebdc1dc529e73e17ba55a0b4766f11dced4addcb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877984"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893642"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>管理部署的專案組態
 部署是指將輸出專案從組建進程實際移至預期位置以進行偵錯工具的動作。 例如，Web 應用程式可能會建立在本機電腦上，然後放在伺服器上。
@@ -39,7 +39,7 @@ ms.locfileid: "97877984"
 
   設定可以指定影響其組建或部署作業的相依性。 組建或部署相依性是必須在建立或部署設定本身之前或之後建立或部署的專案。 專案之間的組建相依性會使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> 介面來描述，並部署與介面的相依性 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> 。 如需詳細資訊，請參閱 [建立的專案](../../extensibility/internals/project-configuration-for-building.md)設定。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 - [建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)
 - [輸出的專案組態](../../extensibility/internals/project-configuration-for-output.md)

@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b0b62f88903cab7ce3fcf9117e7159256d7adaf5
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 59d85b8d299c8417fecbcc7a24c3be25c3eaadd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720497"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893330"
 ---
 # <a name="profiling-tools-apis"></a>程式碼剖析工具 API
 

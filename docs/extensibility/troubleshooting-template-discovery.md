@@ -6,15 +6,15 @@ ms.date: 01/02/2018
 ms.topic: troubleshooting
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff864e1a244d058b2c5ec1de33d116cfdcfe22db
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 23e30ddb5f43a755fc2dc0206509e403e802c3e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716042"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893486"
 ---
 # <a name="troubleshooting-template-installation"></a>針對範本安裝進行疑難排解
 
@@ -72,7 +72,7 @@ ms.locfileid: "97716042"
 > [!NOTE]
 > 若要停用記錄，請移除 .pkgdef 檔案，或將的值變更 `EnableTemplateDiscoveryLog` 為 `dword:00000000` ，然後 `devenv /updateConfiguration` 再次執行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [建立自訂專案和專案範本](creating-custom-project-and-item-templates.md)
 - [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)

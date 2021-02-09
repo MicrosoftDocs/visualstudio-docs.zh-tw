@@ -31,15 +31,15 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a701e6297cb81ce84c164b3b6791a6e73c76f8
-ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
+ms.openlocfilehash: b594857b00ee233c186008efc9d0fba7d968a9bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893161"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>在 Visual Studio 中使用偵錯工具管理例外狀況
 
@@ -217,9 +217,9 @@ public class GenericException<T> : Exception
 
    ![例外狀況的額外條件](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. 針對每個條件行，輸入模組的名稱，並將比較運算子清單變更為 **等於** 或 **不等於**。 您可以在名稱中指定萬用字元 ( * *\\\** _) 來指定一個以上的模組。
+3. 針對每個條件行，輸入模組的名稱，並將比較運算子清單變更為 **等於** 或 **不等於**。 您可以 **\\\*** 在名稱中指定萬用字元 () ，以指定一個以上的模組。
 
-4. 如果您需要刪除條件，請選擇條件行結尾的 _ *X**。
+4. 如果您需要刪除條件，請選擇條件線結尾的 **X** 。
 
 ## <a name="see-also"></a>另請參閱
 

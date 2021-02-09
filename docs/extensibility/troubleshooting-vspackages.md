@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c1e85c59d49f4079172cfb098701b09d461bdf3
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 957488adb36c54355b4fe47577a7cd5b2407864f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893512"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 以下是您可能會遇到的 VSPackage 問題，以及解決問題的秘訣。
@@ -125,6 +125,6 @@ ms.locfileid: "97716038"
 
    請確定 InprocServer32 專案具有正確的 VSPackage dll 路徑。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSPackages](../extensibility/internals/vspackages.md)
 - [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)

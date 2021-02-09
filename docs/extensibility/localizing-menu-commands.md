@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51f3692a4539eddbf35e24de8024eadd39031080
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: af86f64935d4e99d4c1245669505fcef8ce7ec1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615599"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893616"
 ---
 # <a name="localize-menu-commands"></a>當地語系化功能表命令
 

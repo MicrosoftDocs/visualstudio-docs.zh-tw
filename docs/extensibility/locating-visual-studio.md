@@ -8,15 +8,15 @@ helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8935af62b16ed6dd6d0d5d61412f347a95f32f23
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 175623723b8f7b59a644a439afd10246eab01c95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616284"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893590"
 ---
 # <a name="locate-visual-studio"></a>尋找 Visual Studio
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: fd088d6887e7c7b60ea5a4101de050149583c5a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716025"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893447"
 ---
 # <a name="updating-the-user-interface"></a>更新使用者介面
 在您執行命令之後，您可以新增程式碼，以使用新命令的狀態來更新使用者介面。
@@ -52,6 +52,6 @@ ms.locfileid: "97716025"
 
          請注意，您可以 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> `QueryInterface` 在物件上呼叫方法， <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> 或從服務取得介面，以取得介面 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSPackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [實作](../extensibility/internals/command-implementation.md)

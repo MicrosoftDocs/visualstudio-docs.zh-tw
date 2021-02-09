@@ -21,20 +21,20 @@ helpviewer_keywords:
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 0356f05c3f0dac636813d1632f628dd02dd28923
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903788"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893122"
 ---
 # <a name="macros-for-reporting"></a>報告巨集
 若要進行偵錯工具，您可以使用 CRTDBG.H 裡中定義的 **_RPTn** 和 **_RPTFn** 宏。H，取代語句的使用 `printf` 。 您不需要在 **#ifdef** 中 inclose 它們，因為 **_DEBUG** 未定義時，它們會自動在您的發行組建中消失。
 
-|巨集|描述|
+|巨集|Description|
 |-----------|-----------------|
 |**_RPT0**、**_RPT1**、**_RPT2**、**_RPT3**、**_RPT4**|輸出訊息字串和零至四個引數。 針對 **_RPT1** 至 **_RPT4**，訊息字串可作為引數的 printf 樣式格式字串。|
 |**_RPTF0**、 **_RPTF1**、 **_RPTF2**、 **_RPTF3**、 **_RPTF4**|與 **_RPTn** 相同，但是這些巨集也會輸出巨集所在位置的檔案名稱和行號。|

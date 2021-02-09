@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c902147bd1b7761bb6fdab1bc577af6a1990bed
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 9d4ea8bb6a1d03d3b61ab5be51992a7b51f661d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903879"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893252"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>僅使用 Just My Code 的使用者程式碼進行偵錯工具
 

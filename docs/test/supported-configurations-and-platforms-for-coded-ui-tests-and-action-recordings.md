@@ -7,16 +7,16 @@ ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2b749375c398b3deb6ac56e8b1a787b0bcb82b22
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ddad690c98b3516586b769e57721da8760b28b75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894539"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>自動程式碼 UI 測試和動作記錄的支援組態和平台
 
@@ -27,7 +27,7 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requirements**
+**需求**
 
 - Visual Studio Enterprise
 

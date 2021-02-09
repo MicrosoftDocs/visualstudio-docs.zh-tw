@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e802c17d0a93aabbe5c6c0a8573abc6a551944ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1afa09abd0e997c47b33953e5321d4c5d1845a25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892823"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 這個方法會透過 debug engine (DE) 來啟動處理常式。
@@ -28,7 +28,7 @@ ms.locfileid: "80730551"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT LaunchSuspended ( 
+HRESULT LaunchSuspended ( 
    LPCOLESTR             pszMachine,
    IDebugPort2*          pPort,
    LPCOLESTR             pszExe,
