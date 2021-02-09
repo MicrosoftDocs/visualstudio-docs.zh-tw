@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53ab3531e67be540f7c66da52b7e5152a510fa27
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: b00eb3e410c7fd3d10d2aef7fcfbf637ea04e41a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839569"
 ---
 # <a name="list-of-available-services"></a>可用服務清單
 
@@ -65,7 +65,7 @@ ms.locfileid: "98204640"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsComplusLibrary> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibraryReferenceManager> | 是 | 是 | 讓 VSPackage 能夠將流覽資訊提供給 **物件瀏覽器**。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsComponentSelectorDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsComponentSelectorDlg> | 否 | 是 | 讓 VSPackage 支援 [ **加入參考** ] 選項，讓使用者選取要加入至專案的外部元件。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsComponentSelectorDlg2> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsComponentSelectorDlg2> | 否 | 是 | 讓 VSPackage 支援 [ **加入參考** ] 選項，讓使用者選取要加入至專案的外部元件。 此版本的對話方塊允許預先填入元件清單，然後才會顯示它。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsConfigurationManagerDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsConfigurationManagerDlg> | 否 | 是 | 顯示 [ **Configuration Manager** ] 對話方塊。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsConfigurationManagerDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsConfigurationManagerDlg> | 否 | 是 | 顯示 [ **設定管理員** ] 對話方塊。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject> | 否 | 是 | 讓 VSPackage 建立包含其他專案集合的專案。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsDebuggableProtocol> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProtocol> | 是 | 是 | 讓 VSPackage 更新 IDE 用來啟動特定 debug 引擎的可調試通訊協定清單。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsDebugLaunch> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugLaunch> | 是 | 是 | 啟用 VSPackage 以支援啟動偵錯工具。 |
@@ -160,6 +160,6 @@ ms.locfileid: "98204640"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | 是 | 是 | 可讓 VSPackage 取得封裝或部分封裝所在的視窗框架。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | 是 | 是 | 提供與特定中繼資料檔案相關聯之 XML 格式檔檔案的存取權。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用和提供服務](../../extensibility/using-and-providing-services.md)

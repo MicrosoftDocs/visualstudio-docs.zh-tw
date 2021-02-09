@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 4bb44fbb263bb12aba04c06f1248ae25aa9d546f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839541"
 ---
 # <a name="making-commands-available"></a>讓命令可供使用
 
@@ -57,7 +57,7 @@ ms.locfileid: "98204531"
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 監視使用者動作所產生的變更，例如載入專案或從編輯到建立。 發生變更時，會自動修改 IDE 的外觀。 下表顯示監視之 IDE 變更的四個主要內容 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-| 內容類型 | 描述 |
+| 內容類型 | Description |
 |-------------------------| - |
 | 作用中的專案類型 | 針對大部分的專案類型，這個值與執行 `GUID` 專案之 VSPackage 的 GUID 相同。 不過， [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 專案會使用專案類型 `GUID` 作為值。 |
 | 使用中視窗 | 通常，這是最後一個使用中的文件視窗，可建立目前的 UI 內容以進行索引鍵系結。 不過，它也可能是具有類似于內部網頁瀏覽器之按鍵系結表的工具視窗。 針對多索引標籤式文件視窗（例如 HTML 編輯器），每個索引標籤都有不同的命令內容 `GUID` 。 |
@@ -149,7 +149,7 @@ ms.locfileid: "98204531"
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將命令新增至方案總管的工具列](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 - [VSPackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

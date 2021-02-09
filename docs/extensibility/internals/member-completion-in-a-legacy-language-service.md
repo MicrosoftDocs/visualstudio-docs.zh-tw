@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fbf88dab2f1ffad0b4a6e5dc6b2ad516c28afca
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 1a72b90530358346c2a20808deeb0050e6c72b8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839385"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>舊版語言服務中的成員完成
 

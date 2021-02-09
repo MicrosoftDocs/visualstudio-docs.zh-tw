@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ca43ac07bbdcec98cd204cb2720ac9f2cdef1f1
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 709867c44456223da129460eb6ea72c413ba5b48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839411"
 ---
 # <a name="manifest-to-code"></a>資訊清單至程式碼
 Manifest to Code 工具是一種主控台應用程式，它會採用 Visual Studio 映射服務的 imagemanifest 檔，並產生包裝函式檔案或檔案，以參考 Visual Studio 擴充功能的 c + +、c #、VB 或 .vsct 檔案中的影像資訊清單值。 此工具會產生包裝函式檔案，這些檔案可用來直接向 Visual Studio 映射服務要求影像，或在程式碼不會處理它自己的任何 UI 和轉譯時，透過 Api 來傳遞資訊清單值。
@@ -27,7 +27,7 @@ Manifest to Code 工具是一種主控台應用程式，它會採用 Visual Stud
 
  **引數**
 
-|**交換器名稱**|**備註**|**必要或選擇性**|
+|**交換器名稱**|**注意事項**|**必要或選擇性**|
 |-|-|-|
 |/manifest|要用來建立或更新程式碼包裝函式的影像資訊清單路徑。|必要|
 |/language|要在其中產生程式碼包裝函式的語言。<br /><br /> 有效值： CPP、c + +、CS、CSharp、c #、VB 或 .VSCT 值不區分大小寫。<br /><br /> 針對 .VSCT language 選項，會忽略/monikerClass、/classAccess 和/namespace 選項。|必要|
@@ -47,7 +47,7 @@ Manifest to Code 工具是一種主控台應用程式，它會採用 Visual Stud
 
 - ManifestToCode/manifest： D:\MyManifest.imagemanifest/language： .VSCT/imageIdClass： MyImageIds
 
-## <a name="notes"></a>附註
+## <a name="notes"></a>備註
 
 - 我們建議您搭配 Manifest from Resources 工具所產生的影像資訊清單來使用此工具。
 

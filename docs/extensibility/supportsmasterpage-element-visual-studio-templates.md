@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07230c3a9b76be8d78e22acaa83addd0fa21005a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e9509d7bc0f8141b01ed1a0a600fa5d77a6d6916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839372"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 項目 (Visual Studio 範本)
 指定是否在 [**加入新專案**] 對話方塊中啟用 [**選取主版頁面**] 核取方塊。
@@ -29,7 +29,7 @@ ms.locfileid: "94903828"
  \<VSTemplate> \<TemplateData>
  \<SupportsMasterPage>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <SupportsMasterPage> true/false </SupportsMasterPage>
@@ -46,7 +46,7 @@ ms.locfileid: "94903828"
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|指定將範本分類的資料，並定義該範本在 [ **新增專案** ] 或 [ **新增專案** ] 對話方塊中顯示的方式。|
 
