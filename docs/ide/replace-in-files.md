@@ -13,15 +13,15 @@ helpviewer_keywords:
 - replace in files
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c3499c1b2073d0263231eb1f60129b2cd3548fa
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: da7509c8025c19c3b6fb4caca37bc91632644e1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480027"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939730"
 ---
 # <a name="replace-in-files"></a>檔案中取代
 

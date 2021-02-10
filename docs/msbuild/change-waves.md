@@ -1,5 +1,5 @@
 ---
-title: 變更波
+title: 變更波浪
 description: 瞭解如何啟用或停用 MSBuild 中可能有干擾的功能。
 ms.date: 11/10/2020
 ms.topic: conceptual
@@ -8,18 +8,18 @@ helpviewer_keywords:
 - MSBuildDisableFeaturesFromVersion environment variable
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 monikerRange: '>=vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 68aafd8ebb97b4bf649cc41eb7739e1700c9cb1a
-ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
+ms.openlocfilehash: 77f93b4741ee987bac871e619ccbe58e2d4d4000
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94532067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939522"
 ---
-# <a name="change-waves"></a>變更波
+# <a name="change-waves"></a>變更波浪
 
 *變更 wave* 是 MSBuild 中的一組行為變更，您可以藉由指定特定旗標作為環境變數來退出。 其目的是要警告您可能發生的干擾性變更，讓您可以彈性地在這些變更成為標準功能之前，對這些變更進行調整。 特定變更波中的所有功能只能一起啟用或停用，而不是個別啟用或停用。
 
@@ -79,5 +79,5 @@ ms.locfileid: "94532067"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Msbuild](msbuild.md)
+- [MSBuild](msbuild.md)
 - [MSBuild 16 的新功能](whats-new-msbuild-16-0.md)

@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8907018c7f5b131747e802902d88a02ca95c2cc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: fdfdabf66c48a875f3b4316ac22e1911c141275c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350968"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940523"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>How to: Sign setup files with SignTool.exe (ClickOnce) (如何：使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce))
-您可以使用 *SignTool.exe* 簽署安裝程式 ( *setup.exe* )。 這項程序有助於確保不會在使用者電腦上安裝遭到修改的檔案。
+您可以使用 *SignTool.exe* 簽署安裝程式 (*setup.exe*)。 這項程序有助於確保不會在使用者電腦上安裝遭到修改的檔案。
 
  根據預設，ClickOnce 具有已簽署的資訊清單和已簽署的安裝程式。 不過，如果您稍後要變更安裝程式的參數，就必須在稍後簽署安裝程式。 如果在簽署安裝程式之後變更參數，簽章會損毀。
 
@@ -40,7 +40,7 @@ ms.locfileid: "94350968"
 
 2. 在 [方案總管] 中選取專案。
 
-3. 在 [專案] 功能表上，按一下[ *ProjectName 屬性]* 。
+3. 在 [專案] 功能表上，按一下[*ProjectName 屬性]* 。
 
 4. 在 [簽署] 頁面上，清除的 [簽署 ClickOnce 資訊清單]。
 
@@ -78,5 +78,5 @@ ms.locfileid: "94350968"
     signtool sign /f CertFileName Setup.exe
     ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

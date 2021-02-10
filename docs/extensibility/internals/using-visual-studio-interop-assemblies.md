@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c52dd2cf8c76cdef9be5080950d5f1b9e621e70
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 1764cc735ca836feada2ad6f794f2bc8520fef41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941693"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>使用 Visual Studio Interop 組件
 Visual Studio interop 元件可讓 managed 應用程式存取提供 Visual Studio 擴充性的 COM 介面。 直接 COM 介面與其 interop 版本之間有一些差異。 例如，Hresult 通常會表示為 int 值，而且需要以與例外狀況相同的方式來處理，而參數 (特別是參數) 的處理方式不同。

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6970c582b6f3ac254f5bbb60f0324128dac63cfe
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 47da8ae405dc24cad5bab4c98384ad5db5a97ef2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941173"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>並行視覺化檢視命令列公用程式 (CVCollectionCmd)
 您可以使用並行視覺化檢視命令列公用程式 (*CVCollectionCmd.exe*) 從命令列收集追蹤，以便在 Visual Studio 的並行視覺化檢視中進行檢視。 此工具可在未安裝 Visual Studio 的電腦上使用。
@@ -75,7 +75,7 @@ ms.locfileid: "98721043"
 | MarkerProvider | 指定單一標記提供者。 | 必須包含下列項目：<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 可包含下列項目：<br /><br /> -   Categories<br />-   IsEnabled |
 | 層級 | 設定 MarkerProvider 的重要性層級。 | -   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything |
 | Guid | ETW 標記提供者的全域唯一識別項。 | GUID。 |
-| Name | 指定標記提供者的描述。 | 字串。 |
+| 名稱 | 指定標記提供者的描述。 | 字串。 |
 | 類別 | 指定標記提供者所收集的分類。 | 以逗號分隔字串表示多個數字或多個範圍的數字。 |
 | IsEnabled | 設定值，決定是否啟用標記提供者進行收集。 | -   True<br />-   False |
 | FilterConfig | 指定從收集篩選之 ETW 事件的組態選項清單。 | 可包含下列項目：<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO |

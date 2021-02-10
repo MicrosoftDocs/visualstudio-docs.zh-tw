@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 7b8b025a-d944-4f5c-9018-c89fc2ef146d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ad83bc215c70389dbb9383e1cb9562b99be7106
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 4a3cb3ae9ef120954bb3c299cdf310a32da69845
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939509"
 ---
 # <a name="choose-element-msbuild"></a>Choose 項目 (MSBuild)
 
@@ -124,7 +124,7 @@ ms.locfileid: "92796624"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [條件式結構](../msbuild/msbuild-conditional-constructs.md)
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)

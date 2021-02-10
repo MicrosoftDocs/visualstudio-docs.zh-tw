@@ -12,13 +12,13 @@ helpviewer_keywords:
 - install multiple versions of Visual Studio
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
-ms.openlocfilehash: ff62f07f3b1c5cc72488320b05d6ff9649fb5795
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+manager: jmartens
+ms.openlocfilehash: f17759d186805dc72623f27c9f254c7a6c0d36e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941524"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>並存安裝 Visual Studio 版本
 
@@ -67,15 +67,15 @@ ms.locfileid: "91928628"
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework 的版本和並存安裝
 
-Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具] **** 使用 [目標 Framework] **** 選項，指定專案的目標 .NET Framework 版本。 對於 C++ 專案，您可以手動修改 .vcxproj 檔案來變更目標 Framework。 如需詳細資訊，請參閱 [.NET Framework 的版本相容性](/dotnet/framework/migration-guide/version-compatibility)頁面。
+Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具]  使用 [目標 Framework]  選項，指定專案的目標 .NET Framework 版本。 對於 C++ 專案，您可以手動修改 .vcxproj 檔案來變更目標 Framework。 如需詳細資訊，請參閱 [.NET Framework 的版本相容性](/dotnet/framework/migration-guide/version-compatibility)頁面。
 
-當您建立專案時，您可以在 [新增專案] **** 對話方塊的 [.NET Framework] **** 清單中指定專案的目標 .NET Framework 版本。
+當您建立專案時，您可以在 [新增專案]  對話方塊的 [.NET Framework]  清單中指定專案的目標 .NET Framework 版本。
 
 如需語言特定的資訊，請參閱下表中適當的主題。
 
 ::: moniker range="vs-2017"
 
-| Language | 主題 |
+| 語言 | 主題 |
 |--------------|-----------|
 | Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017&preserve-view=true) |
 | Visual C# | [專案設計工具，應用程式頁 (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017&preserve-view=true) |
@@ -94,7 +94,7 @@ Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具] **** 使�
 
 ::: moniker range=">= vs-2019"
 
-| Language | 主題 |
+| 語言 | 主題 |
 |--------------|-----------|
 | Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
 | Visual C# | [專案設計工具，應用程式頁 (C#)](../ide/reference/application-page-project-designer-csharp.md) |

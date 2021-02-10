@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99831638219481d7db331f2a4429fffce58ecc96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43a2db3f3585dbfa68bf217cc29fb7b73cc35485
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76113797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939795"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的協助工具功能
 

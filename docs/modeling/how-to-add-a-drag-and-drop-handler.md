@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 337fd73dbe46a97b6f154dfba1714ede834f1e69
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c9e6960cdd84e518b2d58eb77c25278bd52475d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363324"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941433"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：加入拖放處理常式
 
@@ -162,7 +162,7 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
 
 Visual Studio 模型匯流排，使來源 DSL 可供存取：
 
-1. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [ **啟用 Modelbus**]。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定]。 新專案 "ModelBus" 會隨即加入至 DSL 方案。
+1. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [ **啟用 Modelbus**]。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定]  。 新專案 "ModelBus" 會隨即加入至 DSL 方案。
 
 2. 按一下 [ **轉換所有範本** ]，然後重建方案。
 
@@ -407,7 +407,7 @@ namespace Company.CompartmentDrag  // EDIT.
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
+ /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
  /// </summary>
  public partial class ClassShape
  {
@@ -571,7 +571,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [自訂複製行為](../modeling/customizing-copy-behavior.md)
 - [部署網域指定的語言方案](msi-and-vsix-deployment-of-a-dsl.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c8c9aadc-33ad-4aa1-b07d-b879e9eabda0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b91bca1fb1e8866e4f0c9b5a68140f7a7ae892f2
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: c8e90a649a11933e4281140299bf9ee1b564a212
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939626"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>使用 MSBuild 同時建置多個專案
 
@@ -34,7 +34,7 @@ ms.locfileid: "92353235"
 
 ## <a name="-maxcpucount-switch"></a>-maxcpucount 參數
 
-如果您使用 `-maxcpucount` 參數 (簡寫為 `-m`)，則 MSBuild 可以建立可平行執行的 MSBuild.exe** 處理序指定數目。 這些處理序也稱為「背景工作處理序」。 每個背景工作處理序會使用個別的核心或處理器 (如果有的話)，在其他可用處理器可能正在建置其他專案的同時建置專案。 例如，將此參數設為值 "4" 時，MSBuild 會建立四個背景工作處理序來建置專案。
+如果您使用 `-maxcpucount` 參數 (簡寫為 `-m`)，則 MSBuild 可以建立可平行執行的 MSBuild.exe 處理序指定數目。 這些處理序也稱為「背景工作處理序」。 每個背景工作處理序會使用個別的核心或處理器 (如果有的話)，在其他可用處理器可能正在建置其他專案的同時建置專案。 例如，將此參數設為值 "4" 時，MSBuild 會建立四個背景工作處理序來建置專案。
 
 如果您引入 `-maxcpucount` 參數但未指定值，MSBuild 會使用電腦上的處理器最大數目。
 
@@ -50,7 +50,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 
 `BuildInParallel` 在 MSBuild 工作上是選擇性的布林值參數。 將 `BuildInParallel` 設為 `true` (其預設值為 `true`) 時，會產生多個背景工作處理序，以盡可能同時建置最多個專案。 若要使其能正常運作，必須將 `-maxcpucount` 參數設為大於 1 的值，而且系統必須至少是雙核心或具有兩或多個處理器。
 
-以下範例取自 microsoft.common.targets**，說明如何設定 `BuildInParallel` 參數。
+以下範例取自 microsoft.common.targets，說明如何設定 `BuildInParallel` 參數。
 
 ```xml
 <PropertyGroup>
@@ -74,7 +74,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 </MSBuild>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用多個處理器來建置專案](../msbuild/using-multiple-processors-to-build-projects.md)
 - [撰寫能夠辨識多處理器的記錄器](../msbuild/writing-multi-processor-aware-loggers.md)

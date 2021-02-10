@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 267d9097ebe53b4074bed6c5caf4077006c946eb
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 4fc3f49038a44b2b2bd5b467d6e1874f8a9a9803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940757"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a> (c # 和 Visual Basic 支援的程式碼變更) 
 [編輯後繼續] 會處理方法主體內大多數程式碼的變更。 但是在偵錯期間，無法套用方法主體外的變更和方法主體內的某些變更。 若要套用這些不支援的變更，您必須停止偵錯，然後使用新版程式碼重新啟動偵錯。
@@ -58,7 +58,7 @@ ms.locfileid: "98149205"
 |Language 元素/功能|不支援的編輯作業|
 |-|-|
 |所有程式碼元素|重新命名|
-|命名空間|新增|
+|命名空間|加|
 |命名空間、類型、成員|刪除|
 |泛型|新增或修改|
 |介面|修改|
@@ -76,7 +76,7 @@ ms.locfileid: "98149205"
 |運算子或索引子|修改類型參數、基底類型、委派類型或傳回類型 |
 |catch 區塊|在包含使用中語句時修改|
 |try-catch-finally 區塊|在包含使用中語句時修改|
-|Using 陳述式|新增|
+|Using 陳述式|加|
 |async 方法/lambda|修改以 .NET Framework 4 和更低版本為目標之專案中的非同步方法/lambda (查看 [詳細資料](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)) |
 |迭代器|在以 .NET Framework 4 和更低版本為目標的專案中修改反覆運算器， (查看 [詳細資料](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)) |
 

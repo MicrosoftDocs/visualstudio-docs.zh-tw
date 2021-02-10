@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f07dbfb0ca193f7bacbf2408fc26e622ffb037e1
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 7b7cf8883e1a0c94756f7dcd9cc3a0a99744c9c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720978"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941095"
 ---
 # <a name="concurrency-visualizer-sdk"></a>並行視覺化檢視 SDK
 您可以使用並行視覺化檢視 SDK 檢測原始程式碼，以便在並行視覺化檢視中顯示其他資訊。 您可以在程式碼中將其他資料與階段和事件關聯。 這些額外的視覺效果稱為 *標記*。  如需入門逐步解說，請參閱[並行視覺化檢視 SDK 簡介](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk)。

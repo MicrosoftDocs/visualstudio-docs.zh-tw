@@ -11,15 +11,15 @@ helpviewer_keywords:
 - C#, code snippets
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 46b2d231f1fa9a0e90538c426f48c86e5fafecbe
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: e4656e0769075be26db5bd06108093a49fb5e2af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941537"
 ---
 # <a name="c-code-snippets"></a>C# 程式碼片段
 
@@ -33,7 +33,7 @@ ms.locfileid: "96478753"
 
 Visual Studio for C# 中預設會包含下列程式碼片段。
 
-|名稱 (或捷徑)|描述|插入程式碼片段的有效位置|
+|名稱 (或捷徑)|Description|插入程式碼片段的有效位置|
 | - |-----------------| - |
 |#if|建立 [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) 指示詞和 [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif) 指示詞。|任何位置。|
 |#region|建立 [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) 指示詞和 [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion) 指示詞。|任何位置。|
@@ -53,13 +53,13 @@ Visual Studio for C# 中預設會包含下列程式碼片段。
 |forr|建立在每個重複項目後遞減迴圈變數的 [for](/dotnet/csharp/language-reference/keywords/for) 迴圈。|在方法、索引子、屬性存取子或事件存取子內。|
 |if|建立 [if](/dotnet/csharp/language-reference/keywords/if-else) 區塊。|在方法、索引子、屬性存取子或事件存取子內。|
 |索引子|建立索引子宣告。|在類別或結構內部。|
-|interface|建立 [interface](/dotnet/csharp/language-reference/keywords/interface) 宣告。|在命名空間 (包含全域命名空間)、類別或結構內部。|
+|介面|建立 [interface](/dotnet/csharp/language-reference/keywords/interface) 宣告。|在命名空間 (包含全域命名空間)、類別或結構內部。|
 |叫用|建立安全地叫用事件的區塊。|在方法、索引子、屬性存取子或事件存取子內。|
 |迭代器|建立迭代器。|在類別或結構內部。|
 |iterindex|使用巢狀類別建立 "named" 迭代器和索引子組。|在類別或結構內部。|
 |鎖定|建立 [lock](/dotnet/csharp/language-reference/keywords/lock-statement) 區塊。|在方法、索引子、屬性存取子或事件存取子內。|
 |mbox|建立 <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> 呼叫。 您可能必須新增 *System.Windows.Forms.dll* 的參考。|在方法、索引子、屬性存取子或事件存取子內。|
-|namespace|建立 [namespace](/dotnet/csharp/language-reference/keywords/namespace) 宣告。|在命名空間 (包含全域命名空間) 內部。|
+|命名空間|建立 [namespace](/dotnet/csharp/language-reference/keywords/namespace) 宣告。|在命名空間 (包含全域命名空間) 內部。|
 |prop|建立[自動實作的屬性](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)宣告。|在類別或結構內部。|
 |propfull|建立具有 `get` 和 `set` 存取子的屬性宣告。|在類別或結構內部。|
 |propg|建立具有私用 `set` 存取子的唯讀[自動實作的屬性](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)。|在類別或結構內部。|

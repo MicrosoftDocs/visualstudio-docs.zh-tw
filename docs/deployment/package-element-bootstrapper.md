@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2ddb1feb3e5234b26e2ebceb9f899554d55b3015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940341"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;啟動載入器 &gt;)  (套件元素
 `Package`元素是封裝檔案內的最上層 XML 元素。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Package
@@ -149,7 +149,7 @@ ms.locfileid: "94350734"
 |--------------------| - |
 | `Culture` | 必要。 定義此封裝的文化特性，以決定要使用的語言。 這個屬性是元素中的索引鍵 `Strings` ，它會在安裝期間列出產品名稱和錯誤訊息的文化特性特定字串。 |
 | `Name` | 必要。 在工具中顯示給開發人員的封裝名稱，例如 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 這個屬性是元素中的索引鍵 `Strings` ，它應該包含一個專案，其中 `String` 的 `Name` 和 `Culture` 屬性設定為符合 `Name` `Culture` 的和屬性 `Package` 。 |
-| `LicenseAgreement` | 選擇性。 指定發佈套件中包含 End-User 授權合約 (EULA) 的檔案名。  這個檔案可以是純文字 ( *.txt* ) 或 Rich text 格式。  ( *.rtf* )  |
+| `LicenseAgreement` | 選擇性。 指定發佈套件中包含 End-User 授權合約 (EULA) 的檔案名。  這個檔案可以是純文字 (*.txt*) 或 Rich text 格式。  (*.rtf*)  |
 
 ## <a name="example"></a>範例
  下列程式碼範例顯示可轉散發 .NET Framework 2.0 的完整封裝檔案。
@@ -189,5 +189,5 @@ ms.locfileid: "94350734"
 </Package>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)

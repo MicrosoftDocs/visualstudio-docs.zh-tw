@@ -8,20 +8,20 @@ ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a1272a4765559fcfcde1aa60c57099b5d707f46
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 3ab748a309bf57af79753596ede11b371589faa8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941559"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 項目 (Visual Studio 樣板)
 指定項目範本使用 SDK 參考。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <VSTemplate>
@@ -42,7 +42,7 @@ ms.locfileid: "94901683"
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[參考](../extensibility/reference-element-visual-studio-templates.md)|指定項目加入專案時要加入的組件參考。|
 

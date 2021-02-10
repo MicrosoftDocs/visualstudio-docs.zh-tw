@@ -32,15 +32,15 @@ helpviewer_keywords:
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fba148b409d8e2b5b9cbc3b629f9f7116509c74
-ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
+ms.openlocfilehash: cdc0231b7c42dbdb4aca86040347ec5bfd57607d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99627989"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940666"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中使用中斷點
 

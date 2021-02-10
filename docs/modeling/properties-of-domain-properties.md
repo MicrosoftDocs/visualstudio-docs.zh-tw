@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97bfbcf73a950692d5736b7a6e0b529cfe658caa
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f9cca8468e99d41d879bee02dded8538e5fa9c5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941355"
 ---
 # <a name="properties-of-domain-properties"></a>網域屬性的屬性
 *網域屬性* 是可保存值之模型專案的功能。 例如，`Person` 網域類別可能具有屬性 `Name` 和 `BirthDate`。 在 DSL 定義中，網域屬性會列在圖表上的網域類別方塊中以及 DSL Explorer 中的網域類別之下。 如需詳細資訊，請參閱 [如何定義 Domain-Specific 語言](../modeling/how-to-define-a-domain-specific-language.md)。
@@ -46,10 +46,10 @@ ms.locfileid: "97361517"
 |**Is UI Read Only**|如果為 `True`，則無法使用 UI 變更網域屬性的值。 它仍然可由程式設定，並且可以在 [屬性] 視窗中看見它。<br /><br /> 如果您想要從使用者隱藏網域屬性，請將設定 **為可流覽**。 如果您想要透過程式來控制存取權，請設定 **Setter 存取修飾** 詞。|`False`|
 |**種類**|網域屬性的類型 (`Normal`、`Calculated` 或 `CustomStorage`)。 如需詳細資訊，請參閱 [計算和自訂儲存體屬性](../modeling/calculated-and-custom-storage-properties.md)。|`Normal`|
 |**名稱**|此網域屬性的名稱。 它必須是有效的識別碼，例如 **SongTitle**。|\<none>|
-|**備註**|與此網域屬性相關聯的非正式附註。|\<none>|
+|**注意事項**|與此網域屬性相關聯的非正式附註。|\<none>|
 |**Setter 存取修飾詞**|Setter 的存取修飾詞。 此修飾詞可控制程式碼設定屬性的範圍。|`public`|
-|**類型**|屬性的類型。 若要加入可用類型的清單，請以滑鼠右鍵按一下 [DSL explorer] 中 DSL 的根，然後按一下 [ **加入外部類型**]。|`String`|
+|**型別**|屬性的類型。 若要加入可用類型的清單，請以滑鼠右鍵按一下 [DSL explorer] 中 DSL 的根，然後按一下 [ **加入外部類型**]。|`String`|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

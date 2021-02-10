@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 895241a99131c31e2fab73b9799f6203db7259e0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: afcbbcb1990f27a09ec74814b67dbdd77bc28ec9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940614"
 ---
 # <a name="thread-search-dialog-box"></a>執行緒搜尋對話方塊
 使用這個對話方塊，即可在 [ [執行緒] 視圖](../debugger/threads-view.md)中尋找並選取特定執行緒的節點。 若要顯示此對話方塊，請將焦點移至 [ **執行緒** ] 視圖視窗。 然後選擇 [**搜尋**] 功能表中的 [**尋找執行緒**]。

@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], shortcut keys
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 06211bb22ae071132b4cfad67352daa46182d366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940913"
 ---
 # <a name="ribbon-designer"></a>功能區設計工具
   功能區設計工具是一種視覺化設計畫布。 您可以使用功能區設計工具，將自訂索引標籤、群組和控制項新增至 Microsoft Office 應用程式的功能區。
@@ -195,10 +195,10 @@ ms.locfileid: "97528000"
 
 |動作|鍵盤快速鍵|
 |------------|-----------------------|
-|如果下拉式面板已開啟，並已在下拉式面板上選取控制項，請選取父控制項。|**Left**|
-|如果下拉式面板已開啟且已選取父控制項，請關閉下拉式面板。|**Left**|
-|開啟下拉式面板。|**Right**|
-|如果下拉式面板已開啟，請選取下拉式面板上的第一個控制項。|**Right**|
+|如果下拉式面板已開啟，並已在下拉式面板上選取控制項，請選取父控制項。|**離開**|
+|如果下拉式面板已開啟且已選取父控制項，請關閉下拉式面板。|**離開**|
+|開啟下拉式面板。|**對**|
+|如果下拉式面板已開啟，請選取下拉式面板上的第一個控制項。|**對**|
 |關閉下拉式面板。|**Esc**|
 
 ## <a name="see-also"></a>另請參閱

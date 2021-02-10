@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c20edbf4-3d4f-4f66-b1d5-753a0d858ed8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc33c3a413d788bd9a5a30a7db69c4c7766a3392
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: f1eb27a311f1b61e3e36b4c9eaa65de7f3fd8f1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796611"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939496"
 ---
 # <a name="combinepath-task"></a>CombinePath 工作
 
@@ -33,7 +33,7 @@ ms.locfileid: "92796611"
  下表描述 [CombinePath 工作](../msbuild/combinepath-task.md)的參數。
 
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`BasePath`|必要的 `String` 參數。<br /><br /> 要與其他路徑結合的基底路徑。 可以是相對路徑、絕對路徑或空白。|
 |`Paths`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要與 BasePath 結合以形成結合路徑的個別路徑清單。 路徑可為相對或絕對路徑。|
@@ -64,12 +64,12 @@ ms.locfileid: "92796611"
   </Target>
 ```
 
-唯一允許為清單的屬性 `CombinePath` 是 `Paths` ，在此情況下，輸出也是清單。 因此，如果 `$(PublishRoot)` 是 *C:\Site1 \\* ，而且 `$(ReleaseDirectory)` 是 *Release \\* ，而且 `@(LangDirectories)` 是 *en-us \; fr \\* ，則這個範例會建立資料夾：
+唯一允許為清單的屬性 `CombinePath` 是 `Paths` ，在此情況下，輸出也是清單。 因此，如果 `$(PublishRoot)` 是 *C:\Site1 \\*，而且 `$(ReleaseDirectory)` 是 *Release \\*，而且 `@(LangDirectories)` 是 *en-us \; fr \\*，則這個範例會建立資料夾：
 
 - C:\Site1\Release\en-us\
 - C:\Site1\Release\fr-fr\
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

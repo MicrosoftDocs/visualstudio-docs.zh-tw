@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e49705c99801cd6e09f4bf6d9be3c411cc2c53e3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 75c2d97e8cd30bb3cf5605d50e65a68513590647
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939366"
 ---
 # <a name="deploying-a-vsto-solution-using-windows-installer"></a>使用 Windows Installer 部署 VSTO 方案
 
@@ -160,7 +160,7 @@ Visual Studio 開啟新安裝專案的檔案系統 Explorer。 檔案系統 Expl
 
 1. 在 [**方案總管** 中，以滑鼠右鍵按一下 [ **officeaddinsetup]**] **，按一下 [****新增**]，然後按一下 [檔案]。
 2. 在 [ **新增** 檔案] 對話方塊中，流覽至 **ExcelAddIn** 輸出目錄。 輸出目錄通常是專案根目錄的 **bin \\ 發行** 子資料夾（視選取的組建設定而定）。
-3. 選取ExcelAddIn.dll **ExcelAddIn** ，然後按一下 **ExcelAddIn.dll.manifest** [**開啟**]，將這兩個檔案加入至安裝專案。
+3. 選取ExcelAddIn.dll **ExcelAddIn** ，然後按一下 [**開啟**]，將這兩個檔案加入至安裝專案。
 
     ![方案總管中的應用程式和部署資訊清單的螢幕擷取畫面](media/setup-project-figure-3.jpg)
 

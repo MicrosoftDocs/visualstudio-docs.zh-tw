@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59206c206f04aaf3506771ee2310daebd0af273a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68919527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939743"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 協助工具祕訣和訣竅
 
@@ -64,9 +64,9 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列鍵盤�
 |操作功能表|開啟操作 (滑鼠右鍵) 功能表。 <br> <br> **注意：** 標準 Windows 鍵盤快捷方式|**Shift** +**F10**|
 |功能表|使用其快速鍵來快速存取功能表項目。 選擇 **Alt** 鍵，然後選擇功能表中加底線的字母來啟用命令。 例如，若要在 Visual Studio 中查看 [開啟專案] 對話方塊，您可以選擇 [ **Alt** + **F** + **O** + **P**]。  <br><br> **注意：** 標準 Windows 鍵盤快捷方式|**Alt**  + **[字母]**|
 |搜尋方塊|使用 Visual Studio 中的搜尋功能。|**Ctrl** +**問：**|
-|[工具箱] 視窗|在 [工具箱] 索引標籤之間移動。|**Ctrl** +**向上鍵**<br /><br /> 及<br /><br /> **Ctrl** +**向下箭**號|
-|[工具箱] 視窗|將控制項從 [工具箱] 新增至表單或設計工具。|**進入**|
-|選項對話方塊：環境 > 鍵盤|刪除 [按快速鍵]**** 選項中所輸入的按鍵組合。|**退格鍵**|
+|[工具箱] 視窗|在 [工具箱] 索引標籤之間移動。|**Ctrl** +**向上鍵**<br /><br /> 及<br /><br /> **Ctrl** +**向下箭** 號|
+|[工具箱] 視窗|將控制項從 [工具箱] 新增至表單或設計工具。|**Enter**|
+|選項對話方塊：環境 > 鍵盤|刪除 [按快速鍵] 選項中所輸入的按鍵組合。|**退格鍵**|
 |[通知] 工具視窗|使用兩個鍵盤快速鍵按鍵組合 (一個後面接著另一個) 來開啟 [通知] 工具視窗。 接著，使用方向鍵來選取通知以檢視該通知。| **Ctrl** +**&#92;**， **Ctrl** + **N**|
 
 > [!NOTE]
@@ -76,13 +76,13 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列鍵盤�
 
 當通知出現在 IDE 中時，以下是您可以使用鍵盤快速鍵來存取 [通知] 視窗的方式：
 
-1. 從 IDE 中的任何地方，依序按下下列兩個鍵盤快速鍵，再按一次： **ctrl** + **&#92;** 然後按**ctrl** + **N**。
+1. 從 IDE 中的任何地方，依序按下下列兩個鍵盤快速鍵，再按一次： **ctrl** + **&#92;** 然後按 **ctrl** + **N**。
 
-   [通知]**** 視窗隨即開啟。
+   [通知] 視窗隨即開啟。
 
    ![Visual Studio IDE 中的 [通知] 工具視窗](media/toast-notification.png "Visual Studio IDE 中 [通知] 視窗的螢幕擷取畫面")
 
-1. 使用 **Tab**鍵或方向鍵來選取通知。
+1. 使用 **Tab** 鍵或方向鍵來選取通知。
 
 ## <a name="use-the-sound-applet-to-set-build-and-breakpoint-cues"></a>使用音效小程式設定組建與中斷點提示
 
@@ -95,19 +95,19 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列鍵盤�
 
 方法如下：
 
-1. 在執行 Windows 10 電腦的 [搜尋]**** 方塊中鍵入**變更系統音效**。
+1. 在執行 Windows 10 電腦的 [搜尋] 方塊中鍵入 **變更系統音效**。
 
    ![Windows 10 中的搜尋方塊](media/type-here-to-search.png "Windows 10 中搜尋方塊的螢幕擷取畫面")
 
    (或者，如啟用 Cortana，說出「嘿 Cortana」，接著說出「變更系統音效」。)
 
-1. 按兩下 [變更系統音效]****。
+1. 按兩下 [變更系統音效]。
 
    ![Windows 10 中的搜尋結果](media/change-system-sounds.png "Windows 10 中「變更系統音效」搜尋結果的螢幕擷取畫面")
 
-1. 在 [音效]**** 對話方塊中，按一下 [音效]**** 索引標籤。
+1. 在 [音效] 對話方塊中，按一下 [音效] 索引標籤。
 
-1. 在 [程式事件]**** 中，捲動至 [Microsoft Visual Studio]****，然後選取要套用到所選事件的音效。
+1. 在 [程式事件] 中，捲動至 [Microsoft Visual Studio]，然後選取要套用到所選事件的音效。
 
    ![Windows 10 中 [音效] 小程式的 [音效] 索引標籤](media/sound-applet.png "Windows 10 中 [音效] 小程式的 [音效] 索引標籤")
 

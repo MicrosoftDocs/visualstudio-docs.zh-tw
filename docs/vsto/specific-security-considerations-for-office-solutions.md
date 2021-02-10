@@ -17,15 +17,15 @@ helpviewer_keywords:
 - security [Office development in Visual Studio], troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0da77067931d35ee63a9ccc9b0de85752157772b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 57b330884ef6638e5c853cfb5670e3552aca46cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940822"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office 方案的特定安全性考慮
   Microsoft .NET Framework 和 Microsoft Office 所提供的安全性功能，可協助保護您的 Office 解決方案免於可能的安全性威脅。 本主題說明一些這類威脅，並提供建議協助您免於威脅。 本主題也包含 Microsoft Office 安全性設定如何影響 Office 方案的相關資訊。

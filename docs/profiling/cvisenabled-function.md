@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2e4fea6d-758d-4150-8744-6102a1d58c1c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f1bb96480fe054c729b11a3fabd311407fa858
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 0be750f62e248b3d9f837c5baa561765e14bfba5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686476"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940939"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled 函式
 判斷任何工作階段是否已啟用指定的 ETW 提供者。

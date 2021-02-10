@@ -15,21 +15,21 @@ helpviewer_keywords:
 - Object Browser, icons in Class View
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e0348c1f6c51f0a82328814be671d8f44e3d4a7
-ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
+ms.openlocfilehash: 551033ce7dcd7b8755124b86734243470442b6e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98773344"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939977"
 ---
 # <a name="class-view-and-object-browser-icons"></a>類別檢視和物件瀏覽器圖示
 
 [類別檢視] 和 [物件瀏覽器] 會顯示代表程式碼實體 (例如，命名空間、類別、函式和變數) 的圖示。 下表說明並描述圖示。
 
-|圖示|描述|圖示|描述|
+|圖示|描述|圖示|Description|
 |----------|-----------------|----------|-----------------|
 |![命名空間符號](../ide/media/vxnamespace_icon.gif)|命名空間|![宣告符號](../ide/media/vxmethod_icon.gif)|方法或函式|
 |![類別圖示](../ide/media/vxclass_icon.gif)|類別|![運算子符號](../ide/media/vxoperator_icon.gif)|運算子|
@@ -54,7 +54,7 @@ ms.locfileid: "98773344"
 
 下列訊號圖示套用至所有先前的圖示，並指出其存取範圍。
 
-|圖示|描述|
+|圖示|Description|
 |----------|-----------------|
 |\<No Signal Icon>|公用。 可從此元件中的任何位置以及任何參考它的元件存取。|
 |![指示 Protected 符號](../ide/media/vxsignal_icon_key.gif)|受保護。 可從包含類別或類型存取，或從衍生自包含類別或類型的包含類別或類型存取。|

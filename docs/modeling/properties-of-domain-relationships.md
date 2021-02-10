@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain relationships
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c5db50432947b99a2667280fe7861e7acd95ac
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 6fb50018dccbe03512c8ab6e5f07c17dbcee307d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362453"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941329"
 ---
 # <a name="properties-of-domain-relationships"></a>網域關聯性的屬性
 下表中的屬性與網域關聯性相關聯。 如需有關網域關聯性的詳細資訊，請參閱 [瞭解模型、類別和關聯](../modeling/understanding-models-classes-and-relationships.md)性。 如需有關如何使用這些屬性的詳細資訊，請參閱 [自訂和擴充 Domain-Specific 語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -33,11 +33,11 @@ ms.locfileid: "97362453"
 |正在內嵌|如果 `True` 為，則網域關聯性是內嵌關聯性。 如果 `False` 為，則關聯性是參考關聯性。|\<both>|
 |名稱|網域關聯性的名稱。|目前的名稱|
 |命名空間|與網域關聯性相關聯的命名空間。|目前的命名空間|
-|附註|與網域關聯性相關聯的非正式附注。|\<none>|
-|說明|用來記錄程式碼的描述，用於產生之設計工具的 UI 中。|\<none>|
+|備註|與網域關聯性相關聯的非正式附注。|\<none>|
+|Description|用來記錄程式碼的描述，用於產生之設計工具的 UI 中。|\<none>|
 |顯示名稱|針對網域關聯性所產生的設計工具中顯示的名稱。|\<none>|
 |說明關鍵字|選擇性的關鍵字，用來為定義域關聯性的 F1 說明編制索引。|\<none>|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

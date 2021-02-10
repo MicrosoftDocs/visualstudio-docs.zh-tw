@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: efeca838050c9024ad3768b2ac7f73ce7dd06720
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 3a2f124fa7e83e9f85e572276eed1851f42f7047
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353287"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939548"
 ---
 # <a name="calltarget-task"></a>CallTarget 工作
 
@@ -33,9 +33,9 @@ ms.locfileid: "92353287"
 
  下表說明 `CallTarget` 工作的參數。
 
-| 參數 | 說明 |
+| 參數 | Description |
 |---------------------------| - |
-| `RunEachTargetSeparately` | 選擇性 `Boolean` 輸入參數。<br /><br /> 如果 `true` 為，則會針對每個目標呼叫 MSBuild 引擎一次。 如果為 `false` ，則會呼叫一次 MSBuild 引擎來建立所有目標。 預設值為 `false`。 |
+| `RunEachTargetSeparately` | 選擇性 `Boolean` 輸入參數。<br /><br /> 如果 `true` 為，則會針對每個目標呼叫 MSBuild 引擎一次。 如果為 `false` ，則會呼叫一次 MSBuild 引擎來建立所有目標。 預設值是 `false`。 |
 | `TargetOutputs` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含所有建置目標的輸出。 |
 | `Targets` | 選擇性的 `String[]` 參數。<br /><br /> 指定要建置的一或多個目標。 |
 | `UseResultsCache` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即傳回快取的結果 (如果有的話)。<br /><br /> **注意**：執行 MSBuild 工作時，會在範圍 (ProjectFileName, GlobalProperties)[TargetNames] 內快取它的結果，當作組建項目清單。 |
@@ -69,7 +69,7 @@ ms.locfileid: "92353287"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [目標](../msbuild/msbuild-targets.md)

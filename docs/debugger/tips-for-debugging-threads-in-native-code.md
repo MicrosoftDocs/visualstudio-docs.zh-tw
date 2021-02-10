@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0374c8c6-57a3-4cfe-8047-2effef5ff5dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9249e1527a7dd2ae720ab575b1d443c10b85376e
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 85bdd804e25dfa91b649e95daacef4bfb322df64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150050"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940562"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>在機器碼中偵錯執行緒的秘訣
 在機器碼中對執行緒執行偵錯時，有下列幾個訣竅：

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eaab198edae66fc334e854ae1f47dae313dce76b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 8fe531b127d657228ed68fa79358ef5df69ff17c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941485"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>特定領域語言的使用者入門
 
@@ -39,7 +39,7 @@ Dsl 的其中一個主要應用程式是產生程式碼、設定檔及其他成�
 
 本總覽的其餘部分是逐步解說，介紹在 Visual Studio 中建立和使用特定領域語言的基本作業。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 若要定義 DSL，您必須已安裝下列元件：
 
@@ -63,7 +63,7 @@ Dsl 的其中一個主要應用程式是產生程式碼、設定檔及其他成�
 
      ![[建立 DSL] 對話方塊](../modeling/media/create_dsldialog.png)
 
-4. 在 [ **名稱** ] 方塊中，輸入 **FamilyTree**。 按一下 [確定]。
+4. 在 [ **名稱** ] 方塊中，輸入 **FamilyTree**。 按一下 [確定]  。
 
      **網域指定的語言嚮導** 隨即開啟，並顯示範本 DSL 解決方案的清單。
 
@@ -409,7 +409,7 @@ DSL 定義可以指定如何在圖表上顯示模型。 您可以從各種不同
 
 2. 重建任何您仍要使用的實驗性 Dsl 或其他實驗性 Visual Studio 延伸模組。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)

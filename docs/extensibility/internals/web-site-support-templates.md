@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7bb3d669dadf7c33fa81231adf26ae30e999c51
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 988b81e72ff7714cb8a0983655de551b54c9150c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487851"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940027"
 ---
 # <a name="web-site-support-templates"></a>網站支援範本
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 網站專案和專案範本提供可重複使用且可自訂的網站專案和專案存根，可讓您從頭開始建立新的網站專案和專案的需求，以加速開發流程。 如需範本的詳細資訊 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，請參閱 [建立專案和專案範本](../../ide/creating-project-and-item-templates.md)。

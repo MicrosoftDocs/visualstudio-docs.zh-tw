@@ -12,20 +12,20 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c913f3015c56f7872dfe5ef3471578de7075b7d0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5d04366c908494386edc9921129db27df0ead4f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941407"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：建立網域指定的語言方案
 特定領域語言 (DSL) 是使用特製化的 Visual Studio 解決方案所建立。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 開始此程式之前，請先安裝下列元件：
 
@@ -118,7 +118,7 @@ ms.locfileid: "97363272"
 
  如需強式命名的詳細資訊，請參閱 [建立和使用 Strong-Named 元件](/dotnet/standard/assembly/create-use-strong-named)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

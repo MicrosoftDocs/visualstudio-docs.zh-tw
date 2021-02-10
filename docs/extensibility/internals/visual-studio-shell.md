@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 546a76d1533efaef28ddafb14b04514f64e9d4f9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 9ebc01c76c17319ebcfe2b61c06a6f2365a68122
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941615"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Shell 是中整合的主要代理程式 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 Shell 提供必要的功能，讓 Vspackage 共用一般服務。 由於的架構目標 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 是要在 vspackage 中背心主要功能，因此 shell 是一個架構，可提供基本功能，並支援其元件 vspackage 之間的交叉通訊。

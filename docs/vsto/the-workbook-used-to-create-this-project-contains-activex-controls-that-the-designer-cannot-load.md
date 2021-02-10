@@ -12,15 +12,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7257e3940af72f344906642adc51a1dd98cb3f25
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4c8039fc2a5df197446873f0b2efef82d9a5f662
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524173"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940783"
 ---
 # <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>活頁簿包含無法載入的 ActiveX 控制項
 

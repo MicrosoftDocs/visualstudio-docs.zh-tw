@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bcd225bb64096d8a8e58e3cffd15e7bc94bf5cc
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 993b5f61d8517d5638cb785fa2d79b47f80d1caf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150869"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940549"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中傾印檔案
 

@@ -10,40 +10,40 @@ f1_keywords:
 - vs.toolsoptionspages.r_tools.#150
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed2ee29fb7a0a832dd3076cbd47a7f9cd1414d96
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315079"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939470"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio R 工具選項
 
-您可以透過 [ **R 工具**  >  **選項**] 功能表，或透過 [**工具**  >  **選項**] 和 [滾動至**R 工具**] 來存取設定：
+您可以透過 [ **R 工具**  >  **選項**] 功能表，或透過 [**工具**  >  **選項**] 和 [滾動至 **R 工具**] 來存取設定：
 
   ![R 工具的 [選項] 對話方塊](media/options-dialog.png)
 
-您可以使用下列方法存取 R 專用的選項及設定。 您必須選取位於 [選項]**** 對話方塊底部的 [顯示所有設定]**** 方塊，才能顯示這些區段。
+您可以使用下列方法存取 R 專用的選項及設定。 您必須選取位於 [選項] 對話方塊底部的 [顯示所有設定] 方塊，才能顯示這些區段。
 
-- 程式碼格式設定選項 (請參閱[編輯器選項](editing-r-code-in-visual-studio.md#editor-options))：[工具]**** > [選項]**** 功能表，然後選取 [文字編輯器]**** > [R]**** > [格式設定]****
-- Linter 選項 (請參閱 [Linter](linting-r-code.md))：[工具]**** > [選項]**** 功能表，然後選取 [文字編輯器]**** > [R]**** > [Lint]****
-- 進階編輯器選項 ([於本文中描述](#text-editor--r--advanced-options))：[工具]**** > [選項]**** 功能表，然後選取 [文字編輯器]**** > [R]**** > [進階]****
-- 行為選項 ([於本文中描述](#r-tools--advanced-options))：[R 工具]**** > [選項]**** 功能表，或 [工具]**** > [選項]****，然後捲動至 [R 工具]****。
+- 程式碼格式設定選項 (請參閱[編輯器選項](editing-r-code-in-visual-studio.md#editor-options))：[工具] > [選項] 功能表，然後選取 [文字編輯器] > [R] > [格式設定]
+- Linter 選項 (請參閱 [Linter](linting-r-code.md))：[工具] > [選項] 功能表，然後選取 [文字編輯器] > [R] > [Lint]
+- 進階編輯器選項 ([於本文中描述](#text-editor--r--advanced-options))：[工具] > [選項] 功能表，然後選取 [文字編輯器] > [R] > [進階]
+- 行為選項 ([於本文中描述](#r-tools--advanced-options))：[R 工具] > [選項] 功能表，或 [工具] > [選項]，然後捲動至 [R 工具]。
 
-**R 工具**  >  **資料科學設定**命令也會影響整體 Visual Studio 的許多不同設定。 下一節將描述此命令。
+**R 工具**  >  **資料科學設定** 命令也會影響整體 Visual Studio 的許多不同設定。 下一節將描述此命令。
 
 <a name="data-scientist-layout"></a>
 
 ## <a name="r-tools--data-science-settings"></a>[R 工具] > [資料科學設定]
 
-[R 工具] > [資料科學設定]**** 功能表項目可使用針對資料科學家需求最佳化的配置來設定 Visual Studio IDE。 具體而言，此選項會開啟[互動式](interactive-repl-for-r-in-visual-studio.md)、[變數總管](variable-explorer.md)和[工作區](r-workspaces-in-visual-studio.md)視窗：
+[R 工具] > [資料科學設定] 功能表項目可使用針對資料科學家需求最佳化的配置來設定 Visual Studio IDE。 具體而言，此選項會開啟[互動式](interactive-repl-for-r-in-visual-studio.md)、[變數總管](variable-explorer.md)和[工作區](r-workspaces-in-visual-studio.md)視窗：
 
 ![Visual Studio 中的資料科學家視窗版面配置](media/installation-data-scientist-layout-result.png)
 
-若要在稍後還原為其他 Visual Studio 設定，請先使用 [**工具**匯  >  **入和匯出設定**] 命令，選取 [**匯出選取的環境設定**]，然後指定檔案名。 若要還原這些設定，請使用相同的命令並選取 [匯入選取的環境設定]****。 如果您變更資料科學家版面配置，並稍後想要還原，而不是直接使用 [資料科學設定]**** 命令，則也可以使用相同的命令。
+若要在稍後還原為其他 Visual Studio 設定，請先使用 [**工具** 匯  >  **入和匯出設定**] 命令，選取 [**匯出選取的環境設定**]，然後指定檔案名。 若要還原這些設定，請使用相同的命令並選取 [匯入選取的環境設定]。 如果您變更資料科學家版面配置，並稍後想要還原，而不是直接使用 [資料科學設定] 命令，則也可以使用相同的命令。
 
 ## <a name="text-editor--r--advanced-options"></a>[文字編輯器] > [R] > [進階選項]
 
@@ -82,8 +82,8 @@ ms.locfileid: "89315079"
 
 | 選項 | 預設值 | 描述 |
 | --- | --- | --- |
-| F1 網頁瀏覽器 | `Internal` | 控制當您使用**Ctrl**F1 搜尋詞彙時的說明顯示方式 + ** **。 設定為 `Internal` 時，說明是呈現在 Visual Studio 的工具視窗內。 設定為 `External` 時，說明會顯示在預設網頁瀏覽器中。 |
-| F1 Web 搜尋字串 | `R site:stackoverflow.com` | 控制當您在**Ctrl** + 編輯器中的字詞上按 Ctrl**F1**時，如何將搜尋字詞傳遞給搜尋引擎。 字串預設是 `R site:stackoverflow.com`，這是將 `R` 附加至搜尋詞彙。 `site:stackoverflow.com` 是搜尋引擎的指示詞，告知將搜尋範圍設為 `stackoverflow.com` 網域內的頁面。 |
+| F1 網頁瀏覽器 | `Internal` | 控制當您使用 **Ctrl** F1 搜尋詞彙時的說明顯示方式 + ****。 設定為 `Internal` 時，說明是呈現在 Visual Studio 的工具視窗內。 設定為 `External` 時，說明會顯示在預設網頁瀏覽器中。 |
+| F1 Web 搜尋字串 | `R site:stackoverflow.com` | 控制當您在 + 編輯器中的字詞上按 Ctrl **F1** 時，如何將搜尋字詞傳遞給搜尋引擎。 字串預設是 `R site:stackoverflow.com`，這是將 `R` 附加至搜尋詞彙。 `site:stackoverflow.com` 是搜尋引擎的指示詞，告知將搜尋範圍設為 `stackoverflow.com` 網域內的頁面。 |
 | R 說明瀏覽器 | `Automatic` | 控制當您使用 **F1**、 **？** 或 **？？** 搜尋 R 檔時的說明顯示方式。 設定為 `Automatic` 時，說明會呈現在適當的視窗中。 例如，HTML 說明出現在 Visual Studio 工具視窗內，而 PDF 出現在預設 PDF 程式中。 設定為 `External` 時，說明會呈現在預設網頁瀏覽器中。 |
 
 ### <a name="history"></a>記錄

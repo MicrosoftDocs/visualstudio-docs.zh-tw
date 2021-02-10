@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Projects.Locations
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 171635e9f08b0c427679d874dee3466d9eb5e3f6
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 605198da53de13c50666aceb0eb5c5cb748936a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616820"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939756"
 ---
 # <a name="options-dialog-box-projects-and-solutions--locations"></a>選項對話方塊：專案和方案 \> 位置
 

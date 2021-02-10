@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 698ca2c97bcc4699d2c836eff9fefa371481c9cc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f0832105ccc203dd046461e40d27f8d50efc3009
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940367"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何：指定部署更新的替代位置
 您可以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從 CD 或檔案共用一開始就安裝您的應用程式，但應用程式必須檢查網路上的定期更新。 您可以在部署資訊清單中指定更新的替代位置，讓您的應用程式可以在初始安裝之後，從 Web 更新自己的位置。
@@ -40,7 +40,7 @@ ms.locfileid: "94349642"
 
 3. 選取 [部署選項] 索引標籤。
 
-4. 在名為 [ **啟動位置** ] 的文字方塊中，輸入將包含應用程式更新部署資訊清單之目錄的 URL。
+4. 在名為 [ **啟動位置**] 的文字方塊中，輸入將包含應用程式更新部署資訊清單之目錄的 URL。
 
 5. 儲存部署資訊清單。
 
@@ -62,7 +62,7 @@ ms.locfileid: "94349642"
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用的所有應用程式都 `<deploymentProvider>` 應該在其應用程式資訊清單中明確宣告所需的許可權，讓應用程式不會在不同的電腦上收到不同的信任層級。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)

@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Visual Studio 已發行版本和組件編號的清單，依日期排序。
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 1/21/2021
 ms.topic: reference
 ms.workload:
@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 2cc67c299f11a43c21f7890090415a83587c976f
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 263a8bd8e2452944920a664e7dc70295e9cbf011
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939769"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 

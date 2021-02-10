@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 377357345516d210b30dd4db278dd672a8b6b469
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 7c09b9f061c9f718f8830cdb797cc56f35619e20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940725"
 ---
 # <a name="thread-properties-dialog-box"></a>執行緒屬性對話方塊
 使用此對話方塊以深入瞭解特定的執行緒。 若要顯示此對話方塊，請將焦點移至 [ [執行緒] 視圖](../debugger/threads-view.md) 視窗，或開啟 [訊息] [視圖](../debugger/messages-view.md) 並展開訊息。 選取樹狀結構中的任何執行緒節點，然後從 [ **View** ] 功能表選擇 [**屬性**]。

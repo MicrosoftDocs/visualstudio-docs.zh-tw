@@ -20,15 +20,15 @@ helpviewer_keywords:
 - Office, development with Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: abd9d3aac289df702554790673cb6561a6e2488d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cebcb16708e42f8102e2dc235b52a81e16c588c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525331"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940900"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 Office 和 SharePoint 開發
   若要擴充 Microsoft Office 和 SharePoint，您可以建立讓使用者從 [Office 市集](https://store.office.com/) 或組織目錄下載的輕量應用程式或增益集，或是建立以 .NET Framework 為基礎的解決方案，讓使用者可以安裝在電腦上。

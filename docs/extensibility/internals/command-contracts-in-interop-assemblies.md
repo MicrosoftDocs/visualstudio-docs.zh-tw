@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d655bfb3e6f2206156cd3a6d091ea04f18afe91a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 9ed9435f4f0618ee0c0f4bc47cdb21e2cbf92f77
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304907"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940120"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Interop 元件中的命令合約
 透過介面處理命令的基本合約 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 是，環境會呼叫 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法來判斷是否支援命令，並在支援時判斷其狀態和文字。 然後，環境會呼叫 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法來執行命令。

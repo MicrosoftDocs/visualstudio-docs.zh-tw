@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ae5879a0-1e1a-455a-ba72-148e57f59289
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e6f36568568a59980316f3070f902027898e39e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: becd44d5f7c5a28681d5fd180689909086b23c89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941056"
 ---
 # <a name="concurrency-visualizer"></a>並行視覺化檢視
 

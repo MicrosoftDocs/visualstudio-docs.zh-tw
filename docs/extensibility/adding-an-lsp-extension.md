@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d86f57abdc96e4fc4f2abbb781e9437c74854a7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939288"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>新增語言伺服器通訊協定延伸模組
 
@@ -109,7 +109,7 @@ textDocument/重新命名 | 是
 
 若要使用以 LSP 為基礎的語言伺服器來建立語言服務延伸模組，請先確定您已針對 VS 的實例安裝 **Visual Studio 延伸模組開發** 工作負載。
 
-接下來，**流覽至 [**  >  **新增專案**  >  **Visual c #** 擴充性  >  **Extensibility**  >  **VSIX 專案**] 來建立新的 VSIX 專案：
+接下來，**流覽至 [**  >  **新增專案**  >  **Visual c #** 擴充性  >    >  **VSIX 專案**] 來建立新的 VSIX 專案：
 
 ![建立 vsix 專案](media/lsp-vsix-project.png)
 

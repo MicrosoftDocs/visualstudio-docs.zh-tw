@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bd2c59d1af2802876305fa218bd169fae805f4f3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: ac5ad8169cf7cabcce8d072a723c0535b129408c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351358"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940770"
 ---
 # <a name="start-view"></a>開始檢視
 
@@ -41,13 +41,13 @@ ms.locfileid: "94351358"
 
 當開始檢視為作用中時，下列 XSD 設計工具工具列的按鈕將會啟用：
 
-|選項|說明|
+|選項|Description|
 |-|-----------------|
-|**顯示開始檢視**|切換至開始檢視。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **1** 。|
-|**顯示內容模型檢視**|切換至內容模型檢視。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **2** 。|
-|**顯示圖表檢視**|切換至圖表檢視。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **3** 。|
+|**顯示開始檢視**|切換至開始檢視。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **1**。|
+|**顯示內容模型檢視**|切換至內容模型檢視。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **2**。|
+|**顯示圖表檢視**|切換至圖表檢視。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **3**。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)
 - [圖形檢視](../xml-tools/graph-view.md)

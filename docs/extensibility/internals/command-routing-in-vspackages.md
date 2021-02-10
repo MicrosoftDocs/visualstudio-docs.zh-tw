@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a9c7f9ae-3594-4557-a314-8cf76f5f8772
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8168fbe3ad5ba9b1b332aebc4675ecd8e752ee7e
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: d05612f9d15c3670411a7901157570fbb3e315a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939990"
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage 中的命令路由
 命令會 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根據其執行所在的內容路由傳送。 它會從初始內容向外路由傳送至全域內容。

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MSBuild, build process overview
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4374e6763933e2da3e6a11c5609b76e3341e1050
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353248"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939652"
 ---
 # <a name="how-msbuild-builds-projects"></a>MSBuild 如何建置專案
 
@@ -26,7 +26,7 @@ MSBuild 實際上如何運作？ 在本文中，您將瞭解 MSBuild 如何處�
 
 ## <a name="startup"></a>啟動
 
-您可以透過 *Microsoft.Build.dll*中的 msbuild 物件模型，或直接在命令列上叫用可執行檔，或在腳本中叫用可執行檔（例如在 CI 系統中），從 Visual Studio 叫用 msbuild。 無論是哪一種情況，會影響組建進程的輸入都會包含專案檔 (或 Visual Studio) 的內部專案物件，可能是方案檔、環境變數，以及命令列參數或其物件模型對等專案。 在啟動階段，您可以使用命令列選項或物件模型對等專案來設定 MSBuild 設定，例如設定記錄器。 使用或參數在命令列上設定的屬性 `-property` `-p` 會設定為全域屬性，這會覆寫任何會在專案檔中設定的值，即使稍後會讀取專案檔也是一樣。
+您可以透過 *Microsoft.Build.dll* 中的 msbuild 物件模型，或直接在命令列上叫用可執行檔，或在腳本中叫用可執行檔（例如在 CI 系統中），從 Visual Studio 叫用 msbuild。 無論是哪一種情況，會影響組建進程的輸入都會包含專案檔 (或 Visual Studio) 的內部專案物件，可能是方案檔、環境變數，以及命令列參數或其物件模型對等專案。 在啟動階段，您可以使用命令列選項或物件模型對等專案來設定 MSBuild 設定，例如設定記錄器。 使用或參數在命令列上設定的屬性 `-property` `-p` 會設定為全域屬性，這會覆寫任何會在專案檔中設定的值，即使稍後會讀取專案檔也是一樣。
 
 接下來的章節是關於輸入檔，例如解決方案檔或專案檔。
 
@@ -135,11 +135,11 @@ Visual Studio 可讓您在方案 ( .sln) 檔案中建立專案相依性。 這�
 
 *.Props* 和 *microsoft* 通常會在 SDK 樣式專案中明確或隱含地匯入 .net 專案檔 (，) 並位於 Visual Studio 安裝的 *MSBuild\Current\bin* 資料夾中。 C + + 專案有自己的 imports 階層：請參閱 [c + + 專案的 MSBuild 內部](/cpp/build/reference/msbuild-visual-cpp-overview)。
 
-*.Props*檔案會設定您可以覆寫的預設值。 它會在專案檔的開頭明確或隱含地) 匯入 (。 如此一來，您的專案設定就會出現在預設值之後，讓它們覆寫這些設定。
+*.Props* 檔案會設定您可以覆寫的預設值。 它會在專案檔的開頭明確或隱含地) 匯入 (。 如此一來，您的專案設定就會出現在預設值之後，讓它們覆寫這些設定。
 
-*Microsoft 一般 .targets*檔案和它所匯入的目標檔案會定義 .net 專案的標準組建進程。 它也提供您可用來自訂群組建的擴充點。
+*Microsoft 一般 .targets* 檔案和它所匯入的目標檔案會定義 .net 專案的標準組建進程。 它也提供您可用來自訂群組建的擴充點。
 
-在執行中，CurrentVersion 是一種精簡型包裝函*式，可*匯入 *。* 此檔案包含標準屬性的設定，並定義定義組建進程的實際目標。 `Build`目標是在這裡定義的，但其實是空的。 但是， `Build` 目標包含 `DependsOn` 屬性，此屬性會指定組成實際組建步驟的個別目標，也就是、 `BeforeBuild` `CoreBuild` 和 `AfterBuild` 。 `Build`目標定義如下：
+在執行中，CurrentVersion 是一種精簡型包裝函 *式，可* 匯入 *。* 此檔案包含標準屬性的設定，並定義定義組建進程的實際目標。 `Build`目標是在這裡定義的，但其實是空的。 但是， `Build` 目標包含 `DependsOn` 屬性，此屬性會指定組成實際組建步驟的個別目標，也就是、 `BeforeBuild` `CoreBuild` 和 `AfterBuild` 。 `Build`目標定義如下：
 
 ```xml
   <PropertyGroup>
@@ -195,7 +195,7 @@ Visual Studio 可讓您在方案 ( .sln) 檔案中建立專案相依性。 這�
 
 下表描述這些目標;某些目標只適用于特定的專案類型。
 
-| 目標 | 說明 |
+| 目標 | Description |
 |--------|-------------|
 | BuildOnlySettings | 實際組建的設定，而不是在 Visual Studio 于專案載入時叫用 MSBuild。 |
 | PrepareForBuild | 準備組建的必要條件 |
@@ -228,18 +228,18 @@ Visual Studio 可讓您在方案 ( .sln) 檔案中建立專案相依性。 這�
 
 這些檔案是由其下任何子資料夾中任何專案的標準匯入所讀取。 這通常是用來控制解決方案中所有專案的設定解決方案層級，但在檔案系統中也可能較高，最多可達磁片磁碟機的根目錄。
 
-*.Props*檔案是由 *.props*匯入，因此專案檔中可使用定義于其中的屬性。 您可以在專案檔中重新定義它們，以根據每個專案自訂值。 在專案檔之後，會讀取 *目錄. 組建* 檔案。 它通常包含目標，但您也可以在這裡定義不想要個別專案重新定義的屬性。
+*.Props* 檔案是由 *.props* 匯入，因此專案檔中可使用定義于其中的屬性。 您可以在專案檔中重新定義它們，以根據每個專案自訂值。 在專案檔之後，會讀取 *目錄. 組建* 檔案。 它通常包含目標，但您也可以在這裡定義不想要個別專案重新定義的屬性。
 
 ## <a name="customizations-in-a-project-file"></a>專案檔中的自訂
 
-Visual Studio 在 **方案總管**、[ **屬性** ] 視窗或 **專案屬性**中進行變更時，會更新專案檔，但是您也可以直接編輯專案檔來進行自己的變更。
+Visual Studio 在 **方案總管**、[ **屬性** ] 視窗或 **專案屬性** 中進行變更時，會更新專案檔，但是您也可以直接編輯專案檔來進行自己的變更。
 
 您可以藉由在專案檔中設定 MSBuild 屬性（在專案的本機設定）或上一節中所述的方式來設定許多組建行為，方法是建立 *.props* 檔案，以針對專案和方案的整個資料夾設定全域屬性。 針對命令列上的臨機操作組建或腳本，您也可以使用 `/p` 命令列上的選項來設定 MSBuild 特定調用的屬性。 如需您可以設定之屬性的相關資訊，請參閱 [一般 MSBuild 專案屬性](common-msbuild-project-properties.md) 。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 MSBuild 進程除了此處所述以外的其他數個擴充點。 請參閱 [自訂您的組建](customize-your-build.md)。 以及 [如何延伸 Visual Studio 組建進程](how-to-extend-the-visual-studio-build-process.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [MSBuild](msbuild.md)

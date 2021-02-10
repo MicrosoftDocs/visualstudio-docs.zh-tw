@@ -17,15 +17,15 @@ helpviewer_keywords:
 - custom Ribbon, multiple Ribbons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2eff346425dca31cb88342e69701a229de2b80ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527978"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940861"
 ---
 # <a name="ribbon-overview"></a>功能區總覽
   功能區是一種組織相關命令的方式，可讓您更輕鬆地找到它們。 命令會以控制項形式出現在功能區上。 在應用程式視窗的上邊緣，會將控制群組織成 *群組* 和水準帶狀。 相關的群組會組織在索引標籤上。
