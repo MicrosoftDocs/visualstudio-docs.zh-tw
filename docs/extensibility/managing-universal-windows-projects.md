@@ -7,21 +7,21 @@ ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f86edd33e7719dc326aa2c5d252d11322509de64
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 03d4fbd509cbbb408bdcd0465ba4460f8c3b1e9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943240"
 ---
 # <a name="manage-universal-windows-projects"></a>管理通用 Windows 專案
 
 通用 Windows 應用程式是以 Windows 8.1 和 Windows Phone 8.1 為目標的應用程式，可讓開發人員在兩個平臺上使用程式碼和其他資產。 共用的程式碼和資源會保留在共用的專案中，而平臺特定的程式碼和資源會保留在不同的專案中，一個用於 Windows，另一個則用於 Windows Phone。 如需通用 Windows 應用程式的詳細資訊，請參閱 [通用 windows 應用程式](/windows/uwp/get-started/create-uwp-apps)。 管理專案的 Visual Studio 延伸模組應留意到通用 Windows 應用程式專案的結構與單一平臺應用程式不同。 本逐步解說會示範如何流覽共用的專案，以及管理共用的專案。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 

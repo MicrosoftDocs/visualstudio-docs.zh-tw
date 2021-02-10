@@ -5,18 +5,18 @@ ms.date: 11/04/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 787bfc4b9959dcc5e6abab4737426e5a0a54b6a1
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 0099c6404ef4189732ec5f0729239730815cb190
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93402273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943555"
 ---
 # <a name="nodejs-app"></a>Node.js 應用程式
 

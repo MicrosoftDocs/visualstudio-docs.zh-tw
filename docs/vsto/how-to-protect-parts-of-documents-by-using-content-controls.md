@@ -18,15 +18,15 @@ helpviewer_keywords:
 - GroupContentControl
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 83052ca3c61fe931c3360a1092ca23740ddcff3f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 1dc962e372f4406fffb5cf8a6357f3826f0c8845
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528239"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942252"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何：使用內容控制項保護檔的元件
   當您保護文件的某個部分時，使用者即無法變更或刪除文件中該部分的內容。 您可使用多種方法，透過內容控制項來保護 Microsoft Office Word 文件的下列部分：
@@ -52,7 +52,7 @@ ms.locfileid: "97528239"
 
     - 若要防止使用者刪除控制項，請將 **LockContentControl** 設定為 **True**。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
 ### <a name="to-protect-a-content-control-at-run-time"></a>若要在執行階段保護內容控制項
 

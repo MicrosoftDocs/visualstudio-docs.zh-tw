@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419207"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944364"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教學課程：使用 Visual Basic 建立簡單的應用程式
 
@@ -41,11 +41,11 @@ ms.locfileid: "85419207"
 
 ::: moniker range="vs-2017"
 
-當您第一次開啟 Visual Studio 時，系統會提示您登入。 這在此教學課程中為選擇性步驟。 接下來您可能會看到對話方塊，要求您選擇開發設定和色彩佈景主題。 保留預設值，然後選擇 [啟動 Visual Studio]****。
+當您第一次開啟 Visual Studio 時，系統會提示您登入。 這在此教學課程中為選擇性步驟。 接下來您可能會看到對話方塊，要求您選擇開發設定和色彩佈景主題。 保留預設值，然後選擇 [啟動 Visual Studio]。
 
 ![選擇設定對話方塊](../media/exploreide-settings.png)
 
-Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以及主視窗空間。 工具視窗會停駐在應用程式視窗的左右端，同時 [ **快速啟動**]、功能表列和標準工具列則位於視窗的上方。 位於應用程式視窗中央的是 [ **起始頁**]。 當您載入方案或專案時，編輯器和設計工具會出現在 [起始頁] **** 所在的空間中。 在開發應用程式時，您大部分時間都會在此中央區域工作。
+Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以及主視窗空間。 工具視窗會停駐在應用程式視窗的左右端，同時 [ **快速啟動**]、功能表列和標準工具列則位於視窗的上方。 位於應用程式視窗中央的是 [ **起始頁**]。 當您載入方案或專案時，編輯器和設計工具會出現在 [起始頁]  所在的空間中。 在開發應用程式時，您大部分時間都會在此中央區域工作。
 
 ![已套用一般設定的 Visual Studio 2017 IDE](../media/exploreide-idewithgeneralsettings.png)
 
@@ -53,7 +53,7 @@ Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以
 
 ::: moniker range=">=vs-2019"
 
-當您啟動 Visual Studio 時，會先開啟 [開始] 視窗。 選取 [不使用程式碼繼續]**** 以開啟開發環境。 您會看到工具視窗、功能表和工具列，以及主視窗空間。 [工具] 視窗會停駐在應用程式視窗的左側和右側，搜尋方塊、功能表列和標準工具列則位於視窗上方。 當您載入方案或專案時，編輯器和設計工具會出現在應用程式視窗的中央區域。 在開發應用程式時，您大部分時間都會在此中央區域工作。
+當您啟動 Visual Studio 時，會先開啟 [開始] 視窗。 選取 [不使用程式碼繼續] 以開啟開發環境。 您會看到工具視窗、功能表和工具列，以及主視窗空間。 [工具] 視窗會停駐在應用程式視窗的左側和右側，搜尋方塊、功能表列和標準工具列則位於視窗上方。 當您載入方案或專案時，編輯器和設計工具會出現在應用程式視窗的中央區域。 在開發應用程式時，您大部分時間都會在此中央區域工作。
 
 ::: moniker-end
 
@@ -67,11 +67,11 @@ Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以
 
      ![在功能表上依序選擇 [檔案]、[開新檔案] 和 [專案]](../media/exploreide-filenewproject.png)
 
-2. 在 [新增專案]**** 對話方塊中，選取 [已安裝]**** >  [Visual Basic]**** >  [Windows 桌面]**** 類別，然後選取 [WPF 應用程式 (.NET Framework)]**** 範本。 將專案命名為 **HelloWPFApp**，然後選取 [確定]****。
+2. 在 [新增專案] 對話方塊中，選取 [已安裝] >  [Visual Basic] >  [Windows 桌面] 類別，然後選取 [WPF 應用程式 (.NET Framework)] 範本。 將專案命名為 **HelloWPFApp**，然後選取 [確定]。
 
      ![Visual Studio [新增專案] 對話方塊中的 WPF 應用程式範本](media/exploreide-newproject-vb.png)
 
-Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 **WPF 設計工具**會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 下列項目會在 **方案總管**中出現：
+Visual Studio 會建立 HelloWPFApp 專案和方案，而且 **方案總管** 會顯示各種不同檔案。 **WPF 設計工具** 會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 下列項目會在 **方案總管** 中出現：
 
 ![已載入 HelloWPFApp 檔案的 [方案總管]](../media/exploreide-hellowpfappfiles.png)
 
@@ -81,13 +81,13 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 
 1. 開啟 Visual Studio 2019。
 
-2. 在 [建立新專案]**** 畫面上，搜尋 "WPF"、選擇 [WPF 應用程式 (.NET Framework)]****，然後選擇 [下一步]****。
+2. 在 [建立新專案] 畫面上，搜尋 "WPF"、選擇 [WPF 應用程式 (.NET Framework)]，然後選擇 [下一步]。
 
    ![Visual Studio [新增專案] 對話方塊中的 WPF 應用程式範本](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
-3. 在下一個畫面上，為專案指定名稱 **HelloWPFApp**，然後選擇 [建立]****。
+3. 在下一個畫面上，為專案指定名稱 **HelloWPFApp**，然後選擇 [建立]。
 
-Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 **WPF 設計工具**會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 下列項目會在 **方案總管**中出現：
+Visual Studio 會建立 HelloWPFApp 專案和方案，而且 **方案總管** 會顯示各種不同檔案。 **WPF 設計工具** 會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 下列項目會在 **方案總管** 中出現：
 
 ![已載入 HelloWPFApp 檔案的 [方案總管]](../media/vs-2019/exploreide-hellowpfappfiles.png)
 
@@ -96,23 +96,23 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 > [!NOTE]
 > 如需 XAML (eXtensible Application Markup Language) 的詳細資訊，請參閱 [WPF 的 XAML 概觀](/dotnet/framework/wpf/advanced/xaml-overview-wpf)頁面。
 
-建立專案之後，您可以進行自訂。 使用 [屬性] **** 視窗 (在 [檢視] **** 功能表上)，就可以顯示和變更應用程式中的專案項目、控制項及其他項目的選項。
+建立專案之後，您可以進行自訂。 使用 [屬性]  視窗 (在 [檢視]  功能表上)，就可以顯示和變更應用程式中的專案項目、控制項及其他項目的選項。
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>變更 MainWindow.xaml 的名稱
 
-讓我們給 MainWindow 一個更具體的名稱。 在 **方案總管**中，以滑鼠右鍵按一下 *MainWindow* ，然後選擇 [ **重新命名**]。 將檔案重新命名為 *問候. xaml*。
+讓我們給 MainWindow 一個更具體的名稱。 在 **方案總管** 中，以滑鼠右鍵按一下 *MainWindow* ，然後選擇 [ **重新命名**]。 將檔案重新命名為 *問候. xaml*。
 
 ## <a name="design-the-user-interface-ui"></a>設計使用者介面 (UI)
 
-如果設計工具未開啟，請在**方案總管***中選取*[]，然後按下**Shift** + **F7**以開啟設計工具。
+如果設計工具未開啟，請在 **方案總管***中選取*[]，然後按下 **Shift** + **F7** 以開啟設計工具。
 
 我們會將三種類型的控制項新增至這個應用程式：一個 <xref:System.Windows.Controls.TextBlock> 控制項、兩個 <xref:System.Windows.Controls.RadioButton> 控制項和一個 <xref:System.Windows.Controls.Button> 控制項。
 
 ### <a name="add-a-textblock-control"></a>新增 TextBlock 控制項
 
-1. 按下**Ctrl** + **Q**以啟動搜尋方塊，然後輸入 [**工具箱**]。 從結果清單中選擇 [檢視] > [工具箱]****。
+1. 按下 **Ctrl** + **Q** 以啟動搜尋方塊，然後輸入 [**工具箱**]。 從結果清單中選擇 [檢視] > [工具箱]。
 
-2. 在 [工具箱]**** 中展開 [通用 WPF 控制項]**** 節點以查看 TextBlock 控制項。
+2. 在 [工具箱] 中展開 [通用 WPF 控制項] 節點以查看 TextBlock 控制項。
 
      ![已反白顯示 [TextBlock] 控制項的 [工具箱]](../media/exploreide-textblocktoolbox.png)
 
@@ -136,13 +136,13 @@ XAML 標記應該看起來與下列範例相似：
    Text="Select a message option and then choose the Display button."
    ```
 
-2. 視需要再次將 TextBlock 置中，然後按 Ctrl+S 或使用 [檔案]**** 功能表項目來儲存您的變更。
+2. 視需要再次將 TextBlock 置中，然後按 Ctrl+S 或使用 [檔案] 功能表項目來儲存您的變更。
 
 接下來，您要將兩個 [選項按鈕](/dotnet/framework/wpf/controls/radiobutton) 控制項加入表單中。
 
 ### <a name="add-radio-buttons"></a>新增選項按鈕
 
-1. 在 [工具箱]**** 中，尋找 **RadioButton** 控制項。
+1. 在 [工具箱] 中，尋找 **RadioButton** 控制項。
 
      ![已選取 [RadioButton] 控制項的 [工具箱] 視窗](../media/exploreide-radiobuttontoolbox.png)
 
@@ -156,7 +156,7 @@ XAML 標記應該看起來與下列範例相似：
 
      ![RadioButton 的 [屬性] 視窗](../media/exploreide-buttonproperties.png)
 
-4. 在右邊 RadioButton 控制項的 [屬性]**** 視窗中，將 [名稱]**** 屬性變更為 `GoodbyeButton`，然後儲存您的變更。
+4. 在右邊 RadioButton 控制項的 [屬性] 視窗中，將 [名稱] 屬性變更為 `GoodbyeButton`，然後儲存您的變更。
 
 您現在可以為每個 RadioButton 控制項加入顯示的文字。 下列步驟會更新 RadioButton 控制項的 [ **內容** ] 屬性。
 
@@ -186,9 +186,9 @@ IsChecked="True"
 
 ### <a name="add-the-button-control"></a>新增按鈕控制項
 
-1. 在 [工具箱]**** 中尋找 **Button** 控制項，然後將它拖曳至設計檢視中的表單，將它新增至設計介面的 RadioButton 控制項底下。 如果您使用 Visual Studio 2019 或更新版本，則會有一條紅線可協助您將控制項置中。
+1. 在 [工具箱] 中尋找 **Button** 控制項，然後將它拖曳至設計檢視中的表單，將它新增至設計介面的 RadioButton 控制項底下。 如果您使用 Visual Studio 2019 或更新版本，則會有一條紅線可協助您將控制項置中。
 
-2. 在 XAML 檢視中，將 Button 控制項的 [內容]**** 值從 `Content="Button"` 變更為 `Content="Display"`，然後儲存變更。
+2. 在 XAML 檢視中，將 Button 控制項的 [內容] 值從 `Content="Button"` 變更為 `Content="Display"`，然後儲存變更。
 
      這個標記應類似於下列範例：`<Button Content="Display" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,204,0,0"/>`
 
@@ -198,7 +198,7 @@ IsChecked="True"
 
 ### <a name="add-code-to-the-display-button"></a>將程式碼新增至顯示按鈕
 
-此應用程式執行時，會在使用者選擇選項按鈕並選擇 [顯示]**** 按鈕之後顯示訊息方塊。 一個訊息方塊會顯示 Hello，而另外一個會顯示 Goodbye。 若要建立這個行為，您必須將程式碼新增至 *Greetings.xaml.vb* 或 *Greetings.xaml.cs* 中的 `Button_Click` 事件。
+此應用程式執行時，會在使用者選擇選項按鈕並選擇 [顯示] 按鈕之後顯示訊息方塊。 一個訊息方塊會顯示 Hello，而另外一個會顯示 Goodbye。 若要建立這個行為，您必須將程式碼新增至 *Greetings.xaml.vb* 或 *Greetings.xaml.cs* 中的 `Button_Click` 事件。
 
 1. 在設計介面上，按兩下 [ **顯示** ] 按鈕。
 
@@ -232,19 +232,19 @@ IsChecked="True"
 
 #### <a name="start-debugging-and-find-the-error"></a>開始偵錯並找出錯誤
 
-1. 按 **F5** 或依序選取 [偵錯]**** 和 [開始偵錯]****，來啟動偵錯工具。
+1. 按 **F5** 或依序選取 [偵錯] 和 [開始偵錯]，來啟動偵錯工具。
 
-   [中斷模式]**** 視窗隨即出現，而 [輸出]**** 視窗會指出發生了 IOException：找不到資源 'mainwindow.xaml'。
+   [中斷模式] 視窗隨即出現，而 [輸出] 視窗會指出發生了 IOException：找不到資源 'mainwindow.xaml'。
 
    ![IOException 訊息的螢幕擷取畫面](../media/exploreide-ioexception.png)
 
-2. 選擇 [ **Debug**停止錯] 以停止偵錯工具  >  ** **。
+2. 選擇 [ **Debug** 停止錯] 以停止偵錯工具  >  ****。
 
 我們已在這個教學課程開始時，將 *MainWindow.xaml* 重新命名為 *Greetings.xaml*，但程式碼仍會參考 *MainWindow.xaml* 作為應用程式的啟動 URI，因此專案無法啟動。
 
 #### <a name="specify-greetingsxaml-as-the-startup-uri"></a>指定 Greetings.xaml 作為啟動 URI
 
-1. 在 [方案總管]**** 中，開啟 *Application.xaml* 檔。
+1. 在 [方案總管]中，開啟 *Application.xaml* 檔。
 
 2. 將 `StartupUri="MainWindow.xaml"` 變更為 `StartupUri="Greetings.xaml"`，然後儲存變更。
 
@@ -261,13 +261,13 @@ IsChecked="True"
 
 ### <a name="debug-with-breakpoints"></a>使用中斷點進行偵錯
 
-新增一些中斷點，即可在偵錯時測試程式碼。 若要加入中斷點，您可以選擇 [ **Debug**  >  **切換中斷點**]，方法是在編輯器的左邊界中，按一下您想要發生中斷的程式程式碼旁邊，或是按**F9**。
+新增一些中斷點，即可在偵錯時測試程式碼。 若要加入中斷點，您可以選擇 [ **Debug**  >  **切換中斷點**]，方法是在編輯器的左邊界中，按一下您想要發生中斷的程式程式碼旁邊，或是按 **F9**。
 
 #### <a name="add-breakpoints"></a>新增中斷點
 
 1. 開啟 [ *app.xaml*]，然後選取下列程式程式碼： `MessageBox.Show("Hello.")`
 
-2. 按 **F9**，或從功能表中依序選取 [偵錯]**** 和 [切換中斷點]****，來新增中斷點。
+2. 按 **F9**，或從功能表中依序選取 [偵錯] 和 [切換中斷點]，來新增中斷點。
 
    在編輯器視窗最左緣、程式碼行的旁邊會出現一個紅色圓圈。
 

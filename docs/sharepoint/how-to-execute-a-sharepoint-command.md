@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], executing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2746704e30a61b0971db50a5083855b4a93560d4
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b5a9ea96820aafe32ca119d7e6d08057b91206fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943818"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>How to：執行 SharePoint 命令
   如果您想要在 SharePoint 工具擴充功能中使用伺服器物件模型，您必須建立自訂 *SharePoint 命令* 以呼叫 API。 在您定義命令並使用 SharePoint 工具延伸模組部署之後，您的擴充功能就可以執行命令來呼叫 SharePoint 伺服器物件模型。 若要執行命令，請使用物件的其中一個 ExecuteCommand 方法 <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> 。

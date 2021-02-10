@@ -5,18 +5,18 @@ ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 0cc36dc58b65188b21115569f1216446784d227a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e2565a215ca97d2933dee14e639772f43da3f51f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438219"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943575"
 ---
 # <a name="net-core-runtime"></a>.NET Core 執行階段
 

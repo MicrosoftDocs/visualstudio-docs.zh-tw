@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 312b886ee0becc794f657ecaaba7fb028d4b3cf1
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e52b03b01f53a8064dc6ec691f751c86266af6a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944299"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 系統管理員指南
 
@@ -60,7 +60,7 @@ ms.locfileid: "91878887"
 
 #### <a name="to-install-english-content-from-the-internet"></a>從網際網路安裝英文內容
 
-1. 選擇 [開始]****，然後選擇 [執行]****。
+1. 選擇 [開始]，然後選擇 [執行]。
 
 2. 輸入下列命令：
 
@@ -79,7 +79,7 @@ ms.locfileid: "91878887"
 - 在安裝本機說明內容後，使用者必須擁有系統管理員權限，以更新、新增或移除本機說明內容。
 
     > [!TIP]
-    > 如果使用者沒有系統管理員權限，建議您停用 Help Viewer 中的 [管理內容]**** 索引標籤。 如需詳細資訊，請參閱 [Help Content Manager 覆寫](../help-viewer/behavior-overrides.md)。
+    > 如果使用者沒有系統管理員權限，建議您停用 Help Viewer 中的 [管理內容] 索引標籤。 如需詳細資訊，請參閱 [Help Content Manager 覆寫](../help-viewer/behavior-overrides.md)。
 
 警告：
 
@@ -91,25 +91,25 @@ ms.locfileid: "91878887"
 
 #### <a name="to-uninstall-local-help"></a>解除安裝本機說明
 
-1. 在 Help Viewer 中，選擇 [管理內容]**** 索引標籤。
+1. 在 Help Viewer 中，選擇 [管理內容] 索引標籤。
 
 2. 巡覽至 Visual Studio 文件集。
 
-3. 選擇每個子項目旁的 [移除]****。
+3. 選擇每個子項目旁的 [移除]。
 
-4. 選擇 [更新]**** 以解除安裝。
+4. 選擇 [更新] 以解除安裝。
 
-5. 流覽至 *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* ，並確認資料夾僅包含 *catalogType.xml*的檔案。
+5. 流覽至 *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* ，並確認資料夾僅包含 *catalogType.xml* 的檔案。
 
    一旦移除了所有先前安裝的本機 Visual Studio 說明內容，您已準備好下載基底內容集。
 
 #### <a name="to-download-the-content"></a>下載內容
 
-1. 在 Help Viewer 中，選擇 [管理內容]**** 索引標籤。
+1. 在 Help Viewer 中，選擇 [管理內容] 索引標籤。
 
-2. 在 [建議的文件]**** 或 [可用的文件]**** 之下，巡覽至您想要下載的文件集，然後選擇 [新增]****。
+2. 在 [建議的文件] 或 [可用的文件] 之下，巡覽至您想要下載的文件集，然後選擇 [新增]。
 
-3. 選擇 [更新]****。
+3. 選擇 [更新]。
 
 接下來，您必須封裝內容，讓它可以部署到用戶端電腦。
 
@@ -125,15 +125,15 @@ ms.locfileid: "91878887"
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
-     例如： `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
+     例如：`Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
 
 ### <a name="deploy-the-content"></a>部署內容
 
 1. 建立網路共用，並將這些說明內容複製到該位置。
 
-     例如，將*C:\VSHelp*中的內容複寫到* \\ \myserver\VSHelp*。
+     例如，將 *C:\VSHelp* 中的內容複寫到 *\\ \myserver\VSHelp*。
 
-2. 建立 .bat** 檔案，以包含說明內容的部署指令碼。 由於用戶端在推送的部分過程中要刪除的檔案可能有讀取鎖定，您應該在推送更新之前關閉用戶端。 例如：
+2. 建立 .bat 檔案，以包含說明內容的部署指令碼。 由於用戶端在推送的部分過程中要刪除的檔案可能有讀取鎖定，您應該在推送更新之前關閉用戶端。 例如：
 
     ```cmd
     REM - copy pre-ripped content to ProgramData

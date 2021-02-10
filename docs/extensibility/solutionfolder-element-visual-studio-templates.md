@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 963f0398-fb50-4d8e-879d-d48f8b7c6d80
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be6cb773e2d822efe01f87b1102293898005cbc8
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 595e82538b15bdced811e55f028b6be2aaa214db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903776"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942967"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 項目 (Visual Studio 範本)
 將多專案範本中的專案分組。
@@ -30,7 +30,7 @@ ms.locfileid: "94903776"
  \<ProjectCollection>
  \<SolutionFolder>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <SolutionFolder Name="DirectoryName">
@@ -43,20 +43,20 @@ ms.locfileid: "94903776"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Name`|必要屬性。<br /><br /> 方案資料夾的名稱。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定多專案範本中某一個專案的 .vstemplate 檔路徑。|
 |`SolutionFolder`|選擇性項目。<br /><br /> 將多專案範本中的專案分組。|
 
 ### <a name="parent-elements"></a>父項目
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|指定多專案範本的組織和內容。|
 |`SolutionFolder`|將多專案範本中的專案分組。|

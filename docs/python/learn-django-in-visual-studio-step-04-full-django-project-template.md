@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c0a0f0f4e009d689a69e840b31281e65bc5a0e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62961672"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942551"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>步驟 4：使用完整的 Django Web 專案範本
 
@@ -35,15 +35,15 @@ ms.locfileid: "62961672"
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>步驟 4-1：從範本建立專案
 
-1. 在 Visual Studio 中，移至**方案總管**，以滑鼠右鍵按一下本教學課程稍早建立的**LearningDjango**方案，然後選取 [**加入**  >  **新專案**]。  (或者，如果您想要使用新的方案，請**選取 [** 檔案  >  **新增**  >  **專案**]。 ) 
+1. 在 Visual Studio 中，移至 **方案總管**，以滑鼠右鍵按一下本教學課程稍早建立的 **LearningDjango** 方案，然後選取 [**加入**  >  **新專案**]。  (或者，如果您想要使用新的方案，請 **選取 [** 檔案  >  **新增**  >  **專案**]。 ) 
 
-1. 在 [新增專案] 對話方塊中，搜尋並選取 [Django Web 專案]**** 範本，接著呼叫 "DjangoWeb" 專案，然後選取 [確定]****。
+1. 在 [新增專案] 對話方塊中，搜尋並選取 [Django Web 專案] 範本，接著呼叫 "DjangoWeb" 專案，然後選取 [確定]。
 
-1. 由於該範本再次包含 *requirements.txt* 檔案，因此 Visual Studio 會詢問要在何處安裝這些相依性。 選擇 [安裝至虛擬環境]**** 選項，然後在 [新增虛擬環境]**** 對話方塊中，選取 [建立]**** 並接受預設值。
+1. 由於該範本再次包含 *requirements.txt* 檔案，因此 Visual Studio 會詢問要在何處安裝這些相依性。 選擇 [安裝至虛擬環境] 選項，然後在 [新增虛擬環境] 對話方塊中，選取 [建立] 並接受預設值。
 
 1. Visual Studio 設定好虛擬環境後，請遵循所顯示 *readme.html* 中的指示來建立 Django 進階使用者 (也就是系統管理員)。 只需以滑鼠右鍵按一下 Visual Studio 專案，然後選取 [ **Python**  >  **Django 建立超級使用者**] 命令，然後遵循提示。 請務必記下您的使用者名稱和密碼，因為當您執行應用程式的驗證功能時會用到。
 
-1. 您可以在 [方案總管] **** 中的 **DjangoWeb** 專案上按一下滑鼠右鍵，然後選取 [設定為啟始專案]****，即可將該專案設定為 Visual Studio 方案的預設專案。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
+1. 您可以在 [方案總管] 中的 **DjangoWeb** 專案上按一下滑鼠右鍵，然後選取 [設定為啟始專案]，即可將該專案設定為 Visual Studio 方案的預設專案。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 
     ![方案總管將 DjangoWeb 專案顯示為啟始專案](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
@@ -51,7 +51,7 @@ ms.locfileid: "62961672"
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/django/run-web-server-toolbar-button.png)
 
-1. 範本建立的應用程式有三個頁面，分別是 Home (首頁)、About (關於) 和 Contact (連絡)，您可以使用瀏覽列在它們之間來回瀏覽。 請花一兩分鐘的時間檢查應用程式的不同組件。 若要透過 [登入]**** 命令來驗證應用程式，請使用先前建立的進階使用者認證。
+1. 範本建立的應用程式有三個頁面，分別是 Home (首頁)、About (關於) 和 Contact (連絡)，您可以使用瀏覽列在它們之間來回瀏覽。 請花一兩分鐘的時間檢查應用程式的不同組件。 若要透過 [登入] 命令來驗證應用程式，請使用先前建立的進階使用者認證。
 
     ![Django Web 專案應用程式的完整瀏覽器檢視](media/django/step04-full-app-desktop-view.png)
 
@@ -61,7 +61,7 @@ ms.locfileid: "62961672"
 
 1. 您可以讓這個應用程式繼續執行，在接下來的各節中都會用到它。
 
-    如果您想停止應用程式並[認可對原始檔控制所做的變更](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)，請先開啟 [Team Explorer]**** 中的 [變更]**** 頁面，接著在虛擬環境的資料夾 (可能是 **env**) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]****。
+    如果您想停止應用程式並 [認可對原始檔控制所做的變更](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)，請先開啟 [Team Explorer] 中的 [變更] 頁面，接著在虛擬環境的資料夾 (可能是 **env**) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]。
 
 ### <a name="examine-what-the-template-creates"></a>檢查範本建立的項目
 
@@ -73,7 +73,7 @@ ms.locfileid: "62961672"
   - *requirements.txt*：包含 Django 1.x 的相依性。
   - *readme.html*：建立專案後，會在 Visual Studio 中顯示的檔案。 如前一節中所述，請遵照此處的指示來建立應用程式的進階使用者 (系統管理員) 帳戶。
 - *app* 資料夾包含所有應用程式檔案，包括檢視、模型、測試、表單、範本和靜態檔案 (請參閱步驟 4-2)。 您通常會重新命名此資料夾，以便使用更特定的應用程式名稱。
-- *DjangoWeb* (Django project) 資料夾包含一般的 Django 專案檔： * \_ \_ init \_ \_ . .py*、 *settings.py*、 *urls.py*和*wsgi.py*。 藉由使用專案範本，便可針對應用程式和資料庫檔案設定好 *settings.py*，而且 *urls.py* 也會設定好所有應用程式頁面的路由，包括登入表單。
+- *DjangoWeb* (Django project) 資料夾包含一般的 Django 專案檔： *\_ \_ init \_ \_ . .py*、 *settings.py*、 *urls.py* 和 *wsgi.py*。 藉由使用專案範本，便可針對應用程式和資料庫檔案設定好 *settings.py*，而且 *urls.py* 也會設定好所有應用程式頁面的路由，包括登入表單。
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>問題：Visual Studio 專案之間是否可以共用虛擬環境？
 
@@ -81,9 +81,9 @@ ms.locfileid: "62961672"
 
 不過，若要使用現有的虛擬環境，請執行下列作業：
 
-1. 在 Visual Studio 中提示安裝相依性時，請選取 [我將自行安裝]**** 選項。
-1. 在 [方案總管]**** 中的 [Python 環境]**** 節點上按一下滑鼠右鍵，然後選取 [新增現有虛擬環境]****。
-1. 瀏覽並選取包含虛擬環境的資料夾，然後選取 [確定]****。
+1. 在 Visual Studio 中提示安裝相依性時，請選取 [我將自行安裝] 選項。
+1. 在 [方案總管] 中的 [Python 環境] 節點上按一下滑鼠右鍵，然後選取 [新增現有虛擬環境]。
+1. 瀏覽並選取包含虛擬環境的資料夾，然後選取 [確定]。
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>步驟 4-2：了解專案範本所建立的檢視和頁面範本
 
@@ -208,9 +208,9 @@ urlpatterns = [
 
 ### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>問題：在我建立的專案中，為什麼 "about" (關於) URL 模式會使用 '^about'，而不是此處所顯示的 '^about$'？
 
-答：規則運算式中少了尾端 '$' 只是許多專案範本版本中的單純疏忽。 URL 模式可以正常運作於名為 "about" (關於) 的頁面。不過，如果少了尾端 '$'，該 URL 模式也會符合 "about=django"、"about09876"、"aboutoflaughter" 等等的 URL。 此處顯示的尾端 '$' 是為了建立只** 符合 "about" 的 URL 模式。
+答：規則運算式中少了尾端 '$' 只是許多專案範本版本中的單純疏忽。 URL 模式可以正常運作於名為 "about" (關於) 的頁面。不過，如果少了尾端 '$'，該 URL 模式也會符合 "about=django"、"about09876"、"aboutoflaughter" 等等的 URL。 此處顯示的尾端 '$' 是為了建立只符合 "about" 的 URL 模式。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [在 Django 中驗證使用者](learn-django-in-visual-studio-step-05-django-authentication.md)

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1af6ce13de529fef5e16b3bc1be7053f0e1347b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61fb53c1fc83f06c200b50b5fcf55f950a00ead6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735400"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943430"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 此介面會告知會話 debug manager (SDM) 已成功完成非同步中斷。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakEvent2 : IUnknown
@@ -35,9 +35,9 @@ IDebugBreakEvent2 : IUnknown
  當使用者要求正在進行正在進行偵錯工具的程式暫停時，SDM 會呼叫 [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) 。 當程式已順利暫停時，就會將事件取消 `IDebugBreakEvent2` 。 這個事件是在附加至所要進行的程式時，使用 SDM 提供的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回呼函式來傳送。
 
 ## <a name="remarks"></a>備註
- 例如，使用者可以選取 [**調試**程式] 功能表上的 [**全部中斷**] 命令，以中斷正在執行無限迴圈的程式。 SDM 會告知程式，藉由呼叫 [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)來停止。 當程式最後停止時，就會傳送 [取消] `IDebugBreakEvent2` 。
+ 例如，使用者可以選取 [**調試** 程式] 功能表上的 [**全部中斷**] 命令，以中斷正在執行無限迴圈的程式。 SDM 會告知程式，藉由呼叫 [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)來停止。 當程式最後停止時，就會傳送 [取消] `IDebugBreakEvent2` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

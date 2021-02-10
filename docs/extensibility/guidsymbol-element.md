@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 11fb3545-8974-4776-9a54-6b6e7739ae31
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98fd802021f29365b6f338610754214352a996d7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 8f739135a9a4bed969163ce26911e5304a66822b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943390"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol 元素
 `GuidSymbol`元素包含 guid： ID 組的 guid，代表功能表、群組或命令。 識別碼來自 `IDSymbol` 元素中的元素 `GuidSymbol` 。 專案 `GuidSymbol` 具有屬性， `name` 該屬性會提供 GUID 的易記名稱，該名稱包含在屬性中 `value` 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <GuidSymbol name="guidMyCommandSet" value="{xxxxxxxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx}">
@@ -40,7 +40,7 @@ ms.locfileid: "96994234"
 |屬性|描述|
 |---------------|-----------------|
 |NAME|必要。 GUID 符號的名稱。|
-|值|必要。 GUID 符號的 GUID。|
+|value|必要。 GUID 符號的 GUID。|
 
 ### <a name="child-elements"></a>子元素
 

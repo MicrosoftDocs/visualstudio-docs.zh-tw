@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e33ae67e0fd18ecd9a1a40a8b8075cd22d4bf7
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: bf32f4cd32ad6e53c1db33f75f68559e84414436
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942902"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>適用於 Visual Studio 的色彩和樣式設定
 

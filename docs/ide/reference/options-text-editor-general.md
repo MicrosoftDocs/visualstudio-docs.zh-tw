@@ -33,15 +33,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c76ea1729fa84bee97458f131e18f64281b76567
-ms.sourcegitcommit: 4ee20054afe7bcf5c0aed504dec01e18059fbbd0
+ms.openlocfilehash: e39febb27a74b0a2cef54098542bba087e2e0180
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943870"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>選項對話方塊：文字編輯器 \> 一般
 
@@ -101,7 +101,7 @@ ms.locfileid: "98226496"
 
 選取時，會在編輯器的左下角顯示檔案健康情況指標狀態 (錯誤、警告) 列和程式碼清除選項。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages.md)
 - [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)

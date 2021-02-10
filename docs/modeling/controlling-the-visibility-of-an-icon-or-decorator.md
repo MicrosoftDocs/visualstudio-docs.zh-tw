@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf97cc10543f066665506d3e238386dc39f0d4f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 23df6dc45d1d96997a18942e7878a84a5d9f60a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942798"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 裝飾 *專案是在* 特定領域語言的圖形中出現的圖示或文字行 (DSL) 。 您可以根據模型中的屬性狀態，使裝飾專案出現並消失。 例如，在代表人的圖形上，您可能會有不同的圖示，這些圖示會根據人的性別、子女數目等而出現。
@@ -105,7 +105,7 @@ ms.locfileid: "97363493"
 
 8. 重建並執行方案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [定義圖案和連接器](../modeling/defining-shapes-and-connectors.md)
 - [設定圖表上的背景影像](../modeling/setting-a-background-image-on-a-diagram.md)

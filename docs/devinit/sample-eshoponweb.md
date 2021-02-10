@@ -5,18 +5,18 @@ ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b981b9bb066057228fed07aa7ea26aeab4670ae4
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3fe551626880c9a469abcfb22ef7b249c77c225b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943548"
 ---
 # <a name="eshoponweb"></a>eShopOnWeb
 

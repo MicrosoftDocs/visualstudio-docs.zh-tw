@@ -13,21 +13,21 @@ f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 406b02c0453c8e8b6fb353c0a1b021f64cab6181
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: fb8a558485f6855af1411c99d270f1328d62db20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901449"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944377"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>歡迎使用 Visual Studio IDE
 
 [!INCLUDE [overview-part-1](includes/ide-overview.md)]
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 遵循以下其中一篇簡介文章，進一步探索 Visual Studio：
 

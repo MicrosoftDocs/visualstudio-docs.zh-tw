@@ -5,18 +5,18 @@ ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a2f284e1e464ab41391f60c546ce01d418ff377b
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 6524cec090f20c475724f1ae8615c5dd24cfa2d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750123"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943502"
 ---
 # <a name="opencv"></a>OpenCV
 
@@ -28,10 +28,10 @@ ms.locfileid: "92750123"
 
 `.devcontainer`目錄必須包含下列檔案：
 
-* devcontainer.js開啟
+* devcontainer.json
 * devinit.js開啟
 
-### <a name="devcontainerjson"></a>devcontainer.js開啟
+### <a name="devcontainerjson"></a>devcontainer.json
 
 以下是檔案 _devcontainer.js_ 的內容。
 
@@ -41,7 +41,7 @@ ms.locfileid: "92750123"
 }
 ```
 
-會 `postCreateCommand` 啟動  [devinit](devinit-and-codespaces.md) 工具，此工具會使用 _devinit.json_ 。
+會 `postCreateCommand` 啟動  [devinit](devinit-and-codespaces.md) 工具，此工具會使用 _devinit.json_。
 
 ### <a name="devinitjson"></a>devinit.js開啟
 

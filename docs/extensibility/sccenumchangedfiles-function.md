@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b1826a87b20d6bc92254fc4a86b8e0b756400ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e871f244082374bcf24ea49062cdcefd6e08d888
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942993"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函式
 指定本機檔案清單之後，此函式會判斷哪些檔案與原始程式碼控制資料庫中的對應版本不同。

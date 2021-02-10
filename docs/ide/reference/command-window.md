@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e133f20464fb19752c7616d2fab1a631fa802c9
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fba1c12743035c397780db64939dec8195a75afd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040885"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942850"
 ---
 # <a name="command-window"></a>命令視窗
 [命令] 視窗是用來直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中執行命令或別名。 您可以執行功能表命令以及不會出現在任何功能表上的命令。 若要顯示 [命令] 視窗，請從 [檢視] 功能表中選擇 [其他視窗]，然後選取 [命令視窗]。
@@ -46,7 +46,7 @@ ms.locfileid: "96040885"
 ## <a name="entering-commands"></a>輸入命令
 大於符號 (`>`) 會出現在 [命令] 視窗的左邊緣作為新行的提示。 使用向上鍵和向下鍵來捲動先前所發出的命令。
 
-|Task|解決方法|範例|
+|Task|解決方案|範例|
 |----------|--------------|-------------|
 |評估運算式。|在運算式前面加上問號 (`?`)。|`? myvar`|
 |切換至 [即時運算] 視窗。|將 `immed` 輸入到視窗但沒有大於符號 (>)|`immed`|

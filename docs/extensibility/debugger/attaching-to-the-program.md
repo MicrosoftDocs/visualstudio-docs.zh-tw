@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 030ee19e7e9e9e52140fb41da78f766978e18d3f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 5b1f411b6ca79fec85f4557ce379c341942e0b84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913759"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943470"
 ---
 # <a name="attach-to-the-program"></a>附加至程式
 使用適當的埠註冊程式之後，您必須將偵錯工具附加至您要進行偵錯工具的程式。

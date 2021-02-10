@@ -6,23 +6,23 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d91e587f354efe14db7cd669fa89a0f4658a538
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 9c8da2566be9b389b3ae36f2e6aa46686011ac0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90097303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942590"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本建立 Django 應用程式
 
 **上一個步驟：[建立 Visual Studio 專案和解決方案](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
-目前，您的 Visual Studio 專案中只有 Django *專案*的網站層級元件，該專案可執行一或多個 Django *應用程式*。 下一個步驟是建立您第一個具有單一網頁的應用程式。
+目前，您的 Visual Studio 專案中只有 Django *專案* 的網站層級元件，該專案可執行一或多個 Django *應用程式*。 下一個步驟是建立您第一個具有單一網頁的應用程式。
 
 在這個步驟中，您現在將了解如何：
 
@@ -38,9 +38,9 @@ Django 應用程式是個別的 Python 套件，其中包含具特定用途的�
 
 Django 應用程式通常會以一組標準的檔案作為開始。 Visual Studio 提供項目範本以初始化 Django 專案內的 Django 應用程式，並提供具相同用途的整合式功能表命令：
 
-- 範本：在 [方案總管]**** 中，以滑鼠右鍵按一下專案，然後選取 [加入]**** > [新項目]****。 在 [ **加入新專案** ] 對話方塊中，選取 [ **Django 1.9 應用程式** ] 範本，在 [ **名稱** ] 欄位中指定應用程式名稱，然後選取 **[確定]**。
+- 範本：在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選取 [加入] > [新項目]。 在 [ **加入新專案** ] 對話方塊中，選取 [ **Django 1.9 應用程式** ] 範本，在 [ **名稱** ] 欄位中指定應用程式名稱，然後選取 **[確定]**。
 
-- 整合式命令：在 [方案總管]**** 中，以滑鼠右鍵按一下專案，然後選取 [加入]**** > [Django 應用程式]****。 此命令會提示您輸入名稱，並建立 Django 1.9 應用程式。
+- 整合式命令：在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選取 [加入] > [Django 應用程式]。 此命令會提示您輸入名稱，並建立 Django 1.9 應用程式。
 
     ![新增 Django 應用程式的功能表命令](media/django/step02-add-django-app-command.png)
 
@@ -48,10 +48,10 @@ Django 應用程式通常會以一組標準的檔案作為開始。 Visual Studi
 
 ![[方案總管] 中的 Django 應用程式檔案](media/django/step02-django-app-in-solution-explorer.png)
 
-| Item | 描述 |
+| 項目 | 描述 |
 | --- | --- |
 | **\_\_\_ \_ .py** | 此檔案會將應用程式識別為套件。 |
-| **遷移** | Django 儲存指令碼的資料夾，這些指令碼會更新資料庫以配合對模型所做的變更。 接著，Django 的移轉工具會對任何舊版資料庫套用必要的變更，以使它符合目前的模型。 透過使用移轉，您可以專注於模型上，並讓 Django 處理基礎資料庫結構描述。 步驟6會討論遷移;目前，該資料夾只會包含* \_ \_ \_ \_ .py*檔案， (表示該資料夾定義自己的 Python 套件) 。 |
+| **遷移** | Django 儲存指令碼的資料夾，這些指令碼會更新資料庫以配合對模型所做的變更。 接著，Django 的移轉工具會對任何舊版資料庫套用必要的變更，以使它符合目前的模型。 透過使用移轉，您可以專注於模型上，並讓 Django 處理基礎資料庫結構描述。 步驟6會討論遷移;目前，該資料夾只會包含 *\_ \_ \_ \_ .py* 檔案， (表示該資料夾定義自己的 Python 套件) 。 |
 | **templates** | Django 頁面範本的資料夾，在與應用程式名稱相符的資料夾內包含單一檔案 *index.html*。  (在 Visual Studio 2017 15.7 和更早版本中，檔案會直接包含在 *範本* 中，而步驟2-4 則會指示您建立子資料夾。 ) 範本是可在其中新增資訊以動態轉譯頁面的 HTML 區塊。 頁面範本「變數」(例如 *index.html* 中的 `{{ content }}`) 是動態值的預留位置，如本文稍後所述 (步驟 2)。 Django 應用程式通常會將其範本置於名稱與應用程式名稱相符的子資料夾中，來為範本建立命名空間。 |
 | **admin.py** | 在其中擴充應用程式系統管理介面的 Python 檔案 (請參閱步驟 6)，用來植入和編輯資料庫中的資料。 此檔案一開始只包含陳述式 `from django.contrib import admin`。 根據預設，Django 是透過 Django 專案中的 *settings.py* 檔案來包含標準系統管理介面，您可以藉由取消註解 *urls.py* 中的現有項目來開啟它。 |
 | **apps.py** | Python 檔案，定義應用程式的設定類別 (請參閱本表後面的內容)。 |
@@ -70,11 +70,11 @@ class HelloDjangoAppConfig(AppConfig):
 
 ### <a name="question-is-creating-a-django-app-in-visual-studio-any-different-from-creating-an-app-on-the-command-line"></a>問題：在 Visual Studio 中建立 Django 應用程式，和在命令列上建立應用程式有何不同？
 
-答：執行**add**  >  **Django app**命令或使用**Add**  >  [**新增專案**] 搭配 Django 應用程式範本，會產生與 Django 命令相同的檔案 `manage.py startapp <app_name>` 。 在 Visual Studio 中建立應用程式的優點，在於應用程式資料夾與其所有檔案都會自動整合至專案。 您可以使用相同的 Visual Studio 命令，在專案中建立任何數目的應用程式。
+答：執行 **add**  >  **Django app** 命令或使用  >  [**新增專案**] 搭配 Django 應用程式範本，會產生與 Django 命令相同的檔案 `manage.py startapp <app_name>` 。 在 Visual Studio 中建立應用程式的優點，在於應用程式資料夾與其所有檔案都會自動整合至專案。 您可以使用相同的 Visual Studio 命令，在專案中建立任何數目的應用程式。
 
 ## <a name="step-2-2-run-the-app-from-the-django-project"></a>步驟 2-2：從 Django 專案執行應用程式
 
-此時，如果您 Visual Studio (使用工具列按鈕或**Debug**  >  **開始調試**) ，再次執行專案，您仍會看到預設頁面。 之所以未出現任何應用程式內容，是因為您必須定義應用程式特定頁面，並將應用程式新增至 Django 專案：
+此時，如果您 Visual Studio (使用工具列按鈕或 **Debug**  >  **開始調試**) ，再次執行專案，您仍會看到預設頁面。 之所以未出現任何應用程式內容，是因為您必須定義應用程式特定頁面，並將應用程式新增至 Django 專案：
 
 1. 在 *HelloDjangoApp* 資料夾中，修改 *views.py* 以符合下面的程式碼，這會定義名為 "index" 的檢視：
 
@@ -107,11 +107,11 @@ class HelloDjangoAppConfig(AppConfig):
 
 因為您已變更並成功測試程式碼，所以現在是檢閱並認可對原始碼控制所做變更的絕佳時機。 本教學課程稍後的步驟會在適當時刻提醒您再次認可至原始檔控制，並請您返回參閱本節。
 
-1. 選取位於 Visual Studio 底部的變更按鈕 (下面圈起處)，這會瀏覽至 [Team Explorer]****。
+1. 選取位於 Visual Studio 底部的變更按鈕 (下面圈起處)，這會瀏覽至 [Team Explorer]。
 
     ![Visual Studio 狀態列上的原始檔控制變更按鈕](media/django/step02-source-control-changes-button.png)
 
-1. 在 [Team Explorer]**** 中，輸入像是「建立初始 Django 應用程式」的認可訊息，然後選取 [全部認可]****。 當認可完成時，您會看到在 **本機建立的訊息認可 \<hash> 。同步以與伺服器共用您的變更。** 如果您想要將變更推送至遠端存放庫，請選取 [同步]****，然後選取 [傳出的認可]**** 底下的 [推送]****。 您也可以在累積多個本機認可之後，再推送至遠端。
+1. 在 [Team Explorer] 中，輸入像是「建立初始 Django 應用程式」的認可訊息，然後選取 [全部認可]。 當認可完成時，您會看到在 **本機建立的訊息認可 \<hash> 。同步以與伺服器共用您的變更。** 如果您想要將變更推送至遠端存放庫，請選取 [同步]，然後選取 [傳出的認可] 底下的 [推送]。 您也可以在累積多個本機認可之後，再推送至遠端。
 
     ![在 [Team Explorer] 中將認可推送至遠端](media/django/step02-source-control-push-to-remote.png)
 
@@ -123,7 +123,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 回答：在定義 URL 模式的規則運算式中，^ 表示「行的開頭」，而 $ 則表示「行的結尾」，而 URL 同樣地是相對於網站根目錄 (`https://www.domain.com/` 後面的部分)。 規則運算式 `^$` 際上表示「空白」，因此會比對完整的 URL `https://www.domain.com/` (沒有將任何內容加入至網站根目錄)。 模式 `^home$` 會完全符合 `https://www.domain.com/home/`。 (Django 在模式比對中不會使用尾端的 /)。
 
-如果您不在規則運算式中使用尾端的 $ (如同 `^home`)，URL 模型將會符合以 "home" 開頭的*任何* URL，例如 "home"、"homework"、"homestead" 及 "home192837"。
+如果您不在規則運算式中使用尾端的 $ (如同 `^home`)，URL 模型將會符合以 "home" 開頭的 *任何* URL，例如 "home"、"homework"、"homestead" 及 "home192837"。
 
 若要使用不同的規則運算式進行實驗，請嘗試使用如 [pythex.org](https://www.pythex.org) \(英文\) 的 [regex101.com](https://regex101.com) \(英文\) 等線上工具。
 
@@ -212,7 +212,7 @@ Django 頁面範本是 HTML 區塊，可包含任意數目的取代權杖 (稱�
 
 1. 執行專案，並觀察輸出結果。 您應該會看到和步驟 2-2 類似的訊息，表示範本運作正常。
 
-    不過，您會觀察到在 `content` 屬性中使用的 HTML 只會轉譯為純文字，原因是 `render` 函式會自動逸出該 HTML。 自動逸出可防止意外遭受插入式攻擊：開發人員經常會透過範本預留位置從一個頁面收集輸入，再使用該輸入作為另一個頁面的值。 逸出也可作為一種提醒，就是最好將 HTML 放在頁面範本中且在程式碼外。 幸運的是，視需要建立額外變數是相當簡單的事。 例如，以 *templates* 變更 *index.html*使其符合下列標記，以新增頁面標題，同時保留頁面範本中的所有格式設定：
+    不過，您會觀察到在 `content` 屬性中使用的 HTML 只會轉譯為純文字，原因是 `render` 函式會自動逸出該 HTML。 自動逸出可防止意外遭受插入式攻擊：開發人員經常會透過範本預留位置從一個頁面收集輸入，再使用該輸入作為另一個頁面的值。 逸出也可作為一種提醒，就是最好將 HTML 放在頁面範本中且在程式碼外。 幸運的是，視需要建立額外變數是相當簡單的事。 例如，以 *templates* 變更 *index.html* 使其符合下列標記，以新增頁面標題，同時保留頁面範本中的所有格式設定：
 
     ```html
     <html>
@@ -247,7 +247,7 @@ Django 頁面範本是 HTML 區塊，可包含任意數目的取代權杖 (稱�
 
     ![使用範本執行應用程式](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Visual Studio 2017 15.7 版及較早版本：最後一個步驟，是將範本移到和應用程式名稱相同的子資料夾中以建立命名空間，並避免與可能會新增到專案中的其他應用程式發生潛在衝突。  (VS 2017 15.8 + 中的範本會自動為您執行此作業。 ) 也就是說，在名為*HelloDjangoApp*的*範本*中建立子資料夾，將*index.html*移至該子資料夾，然後修改 view 函式 `index` 以參考範本的新路徑*HelloDjangoApp/index.html*。 接著執行專案，確認頁面轉譯正確，然後停止伺服器。
+1. <a name="template-namespacing"></a>Visual Studio 2017 15.7 版及較早版本：最後一個步驟，是將範本移到和應用程式名稱相同的子資料夾中以建立命名空間，並避免與可能會新增到專案中的其他應用程式發生潛在衝突。  (VS 2017 15.8 + 中的範本會自動為您執行此作業。 ) 也就是說，在名為 *HelloDjangoApp* 的 *範本* 中建立子資料夾，將 *index.html* 移至該子資料夾，然後修改 view 函式 `index` 以參考範本的新路徑 *HelloDjangoApp/index.html*。 接著執行專案，確認頁面轉譯正確，然後停止伺服器。
 
 1. 將變更認可至原始檔控制，並視需要更新遠端存放庫，如[步驟 2-2](#commit-to-source-control)所述。
 
@@ -259,7 +259,7 @@ Django 頁面範本是 HTML 區塊，可包含任意數目的取代權杖 (稱�
 
 回答：頁面範本檔案的 *.html* 副檔名完全是選擇性的，因為您一定會在 `render` 函式的第二個引數中識別該檔案的確切相對路徑。 不過，Visual Studio (與其他編輯器) 通常會針對 *.html* 檔案為您提供程式碼完成和語法色彩等功能，其重要性超過頁面範本不一定是 HTML 的事實。
 
-實際上，當您在處理 Django 專案時，Visual Studio 會自動偵測出您正在編輯的 HTML 檔案實際上是 Django 範本，然後提供一些自動完成功能。 例如，當您開始輸入 Django 頁面範本註解 (`{#`) 時，Visual Studio 會自動提供結尾的 `#}` 字元。 [註解選取範圍]**** 與 [取消註解選取範圍]**** 命令 (位在 [編輯]**** > [進階]**** 功能表和工具列上) 也會使用範本註解，而不是 HTML 註解。
+實際上，當您在處理 Django 專案時，Visual Studio 會自動偵測出您正在編輯的 HTML 檔案實際上是 Django 範本，然後提供一些自動完成功能。 例如，當您開始輸入 Django 頁面範本註解 (`{#`) 時，Visual Studio 會自動提供結尾的 `#}` 字元。 [註解選取範圍] 與 [取消註解選取範圍] 命令 (位在 [編輯] > [進階] 功能表和工具列上) 也會使用範本註解，而不是 HTML 註解。
 
 ### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>問題：當我執行專案時，看到找不到範本的錯誤。 出了什麼問題？
 
@@ -269,7 +269,7 @@ Django 頁面範本是 HTML 區塊，可包含任意數目的取代權杖 (稱�
 
 回答：當 Django 尋找在 `render` 函式中參考的範本時，它會使用所找到第一個和相對路徑相符的檔案。 如果您在相同專案中有多個 Django 應用程式，且專案範本都使用相同的資料夾結構時，很可能會有應用程式不小心用到另一個應用程式的範本。 若要避免發生這類錯誤，請一律在應用程式的 *templates* 資料夾下建立與應用程式名稱相符的子資料夾，以避免任何重複情況。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [提供靜態檔案、新增頁面，然後使用範本繼承](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)

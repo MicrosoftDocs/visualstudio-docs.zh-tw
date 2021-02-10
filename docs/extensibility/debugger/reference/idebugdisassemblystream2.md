@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: b03cab0c-3f0b-4cc6-88dc-acb3b48c567a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ba08e4ec32aceaf6c265714848939cc6ad9c66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d561c8eaa9f7b4fc08f71c241fd052fd366ca80d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944638"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 此介面代表指示的資料流程。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDisassemblyStream2 : IUnknown
@@ -51,7 +51,7 @@ IDebugDisassemblyStream2 : IUnknown
 ## <a name="remarks"></a>備註
  您可以建立反組解碼資料流程來代表整個位址空間，或只是空間內的函式或模組。 每個指令都是由對[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法的呼叫所傳回的[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構來表示。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

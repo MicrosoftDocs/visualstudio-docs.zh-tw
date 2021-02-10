@@ -9,17 +9,17 @@ ms.custom:
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0277379c44a7d0334798920759438dce52ae16f8
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 36aabdd07dd7fa966a31d8fc3844e68d816c59ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944520"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>了解使用 Visual Basic 的專案與解決方案
 
@@ -247,7 +247,7 @@ ms.locfileid: "94901267"
 > [!TIP]
 > 如果 [測試總管] 未自動開啟，請從功能表列選擇 [測試] > [Windows] > [測試總管] 開啟它。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 如果您想要進一步探索 Visual Studio，請考慮遵循其中一個 [Visual Basic 教學課程](index.yml)，來建立應用程式。
 

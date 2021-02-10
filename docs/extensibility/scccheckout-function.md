@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ed809e33a80bf2903c88550e97b28b1e0178bcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4112190e145242da591fa3d8e4db7d054bd07466
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943136"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函式
 在指定完整檔案名的清單之後，此函式會將它們簽出至本機磁片磁碟機。 批註會套用至所有簽出的檔案。Comment 引數可以是 `null` 字串。

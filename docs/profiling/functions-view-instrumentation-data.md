@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 595d91c8-a42b-4644-85b8-39e8140a5dfe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b12fc05f9eeb9b77e982c62ae52bfbbe784f5e6
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: c5f5fd61abbdb251b3f46bb267debad2cecde72b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801367"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942720"
 ---
 # <a name="functions-view---instrumentation-data"></a>函式檢視 - 檢測資料
 函式報表檢視會依函式名稱列出程式碼剖析資料。

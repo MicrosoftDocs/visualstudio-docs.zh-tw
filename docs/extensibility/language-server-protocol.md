@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d642d1168cbd2a8bd7abadbcdbd7c1e2851b00e
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 4f9a7766d4462ffbd74073448f49457215eb79a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943279"
 ---
 # <a name="language-server-protocol"></a>語言伺服器通訊協定
 

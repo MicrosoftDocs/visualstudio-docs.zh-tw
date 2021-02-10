@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71df385bc0cf42c2437abfd117c2f84bda5b5432
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4a54193b23015135b6112655fe48d79d3de74e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943149"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject 函式
 此函式會關閉專案，並標示特定會話的結尾。

@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a06c6dbacf21cb2ce00539af901c24c77aaf9ef5
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 8e9d55d9c1c22edea1ff826b23beb6d0ec6b392c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974090"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942408"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本來建立 Flask 應用程式
 
@@ -209,7 +209,7 @@ ms.locfileid: "94974090"
 
 回答：是，您可以使用子資料夾，然後在對 `render_template` 的呼叫中參考 *templates* 底下的相對路徑。 這樣做是一個可有效地為範本建立命名空間的絕佳方式。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [提供靜態檔案、新增頁面，然後使用範本繼承](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)

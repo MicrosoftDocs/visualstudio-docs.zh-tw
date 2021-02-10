@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 19568cce3fbd7abd4a74922d2a726ff7c92dd09a
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: bd7c23218fca3a501aa0c56684a4fea98d304252
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943766"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>如何：指定使用 Web 快取資料之虛擬使用者的百分比
 

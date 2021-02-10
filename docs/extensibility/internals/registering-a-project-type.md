@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a34f5c7f1ae3a214a0a72932ae80dbc44845a45
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 893f59aa9e99d990623e0c8383c12bbffbc4a510
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944507"
 ---
 # <a name="registering-a-project-type"></a>註冊專案類型
 當您建立新的專案類型時，您必須建立登錄專案，讓 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 能夠辨識和使用您的專案類型。 您通常會使用登入指令檔 ( .rgs) 檔案來建立這些登錄專案。
@@ -149,7 +149,7 @@ ms.locfileid: "97875187"
 
  下表顯示先前程式碼區段中可用的篩選選項。
 
-|篩選選項|描述|
+|篩選選項|Description|
 |-------------------|-----------------|
 |`CommonFindFilesFilter`|指出篩選是 [檔案 **中尋找** ] 對話方塊中的其中一個常見篩選準則。 一般篩選器會列在篩選器清單中，然後才會將篩選準則標示為 common。|
 |`CommonOpenFilesFilter`|指出篩選是 [ **開啟** 檔案] 對話方塊中的其中一個常見的篩選準則。 一般篩選器會列在篩選器清單中，然後才會將篩選準則標示為 common。|
@@ -266,7 +266,7 @@ ms.locfileid: "97875187"
 
  這表示，如果您在 .vsz 檔案中包含 PROJECT_TYPE = EF 專案，環境會在先前指定的 ProductDir 目錄中尋找您的 .vsz 檔。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)
 - [使用專案 Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - collaborative development [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 028530014afdc78ab6c9c0483c3d443195383793
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942304"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Office 方案的共同開發
   多個開發人員可以使用與其他 Visual Studio 專案共同作業的相同方式來處理 Office 專案。 Visual Studio 在每部電腦上正確地找到 Microsoft Office 安裝，即使 Office 安裝在不同的位置。 不過，有一些重要的考慮要留意。

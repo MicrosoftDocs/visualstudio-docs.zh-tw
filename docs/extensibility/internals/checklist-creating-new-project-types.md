@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20579422e8253b2c0cff7961a91395b5e44137ab
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 0a8cdeb250b81a39a5d9350da61a872ef43ae23b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189962"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944494"
 ---
 # <a name="checklist-create-new-project-types"></a>檢查清單：建立新的專案類型
 您必須完成幾項工作，才能建立新的專案類型。 下列檢查清單提供這些工作的指南：
@@ -55,7 +55,7 @@ ms.locfileid: "96189962"
 
 6. 測試、偵測和啟動您的專案類型。
 
-7. 藉由設定為的值，在 [**加入參考**] 對話方塊的 [**專案**] 索引標籤中顯示您的專案 `VARIANT_TRUE` `VSHPROPID_ShowProjInSolutionPage` 。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 與 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>。
+7. 藉由設定為的值，在 [**加入參考**] 對話方塊的 [**專案**] 索引標籤中顯示您的專案 `VARIANT_TRUE` `VSHPROPID_ShowProjInSolutionPage` 。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>。
 
 8. 建立 Microsoft Installer (*.msi*) 檔案，以安裝您的 vspackage。 如需詳細資訊，請參閱 [使用 Windows Installer 安裝 vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)、 [註冊專案類型](../../extensibility/internals/registering-a-project-type.md)和 [vspackage](../../extensibility/internals/vspackages.md)。
 

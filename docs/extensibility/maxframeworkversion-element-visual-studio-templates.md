@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44345b712f448bd7eedf288d7c58cb4193e1b020
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 09ddccece8261a331277d1c143054305f0d08d7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672421"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943201"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a> (Visual Studio 範本的 MaxFrameworkVersion 元素) 
 
@@ -31,7 +31,7 @@ ms.locfileid: "94672421"
  \<VSTemplate> \<TemplateData>
  \<MaxFrameworkVersion>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <MaxFrameworkVersion> ... </MaxFrameworkVersion>
@@ -48,7 +48,7 @@ ms.locfileid: "94672421"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [ **新增專案** ] 或 [ **加入新** 專案] 對話方塊中顯示的方式。|
 

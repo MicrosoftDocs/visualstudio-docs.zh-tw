@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 24011c50cf6f8d2204abdaa8b6119f7873470bcf
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 905284d69d23971771eecd9da6cef5c5051f36ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944273"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令列引數
 
@@ -62,7 +62,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 |/locationpath|否|指定本機說明內容的預設資料夾。 您只能用這個參數安裝或移動內容。 如果您指定這個參數，則您也必須指定 /silent 參數。|
 |/silent|否|安裝或移除說明內容，而不提示使用者，或顯示任何包括狀態通知區域中圖示的 UI。 輸出會記錄到 *% Temp%* 目錄中的檔案。 **重要事項：**  若要以無訊息方式安裝內容，您必須使用數位簽署 *的 .cab* 檔案，而非 *.mshc* 檔案。|
 |/launchingApp|否|在沒有父應用程式時啟動說明檢視器，請定義應用程式和目錄的內容。 此切換參數的引數是 *CompanyName*、*ProductName* 和 *VersionNumber* (例如 `/launchingApp Microsoft,VisualStudio,16.0`)。<br /><br /> 若要使用 /silent 參數安裝內容，這是必要的。|
-|/wait 秒**|否|暫停安裝、解除安裝和重新整理作業。 如果已經為了目錄而正在進行作業，處理序會在等候指定的秒數後繼續。 使用 0 表示永遠等候。|
+|/wait 秒|否|暫停安裝、解除安裝和重新整理作業。 如果已經為了目錄而正在進行作業，處理序會在等候指定的秒數後繼續。 使用 0 表示永遠等候。|
 |/?|否|列出 Help Content Manager 命令列工具的參數及描述。|
 
 ### <a name="exit-codes"></a>結束代碼

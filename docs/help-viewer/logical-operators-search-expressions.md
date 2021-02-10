@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 37e2652d04df154a45ae5f87fd62c8f8dc2e0b3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944078"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>搜尋運算式中的邏輯與進階運算子
 
-您可以使用邏輯運算子與進階的搜尋運算子，來精簡 [說明檢視器]**** 的說明內容搜尋範圍。
+您可以使用邏輯運算子與進階的搜尋運算子，來精簡 [說明檢視器] 的說明內容搜尋範圍。
 
 ## <a name="logical-operators"></a>邏輯運算子
 

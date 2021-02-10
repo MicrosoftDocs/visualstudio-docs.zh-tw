@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94a3225c-d2cb-4565-8453-855d1cdc1acf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 359a1c4c87a139c35bf38d36edc6a53b2147dd98
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 7ada860eb82b6c391e04e7431d6625c876174654
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944351"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>說明檢視器的協助工具功能
 Microsoft 致力於讓所有使用者都能輕鬆使用其產品與服務。 本主題包含功能、產品和服務的相關資訊，協助各類人士存取 Microsoft Help Viewer。

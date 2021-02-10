@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f367723a3c819635f2d7cf20ed812a36cda12830
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 828a08cfe2841595e0ed3a9f1e3d79973a6e6756
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943377"
 ---
 # <a name="wizards"></a>精靈
 建立嚮導之後，您通常會想要將它加入至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) ，讓其他人可以使用它。 加入的 wizard 接著會出現在 [ **加入新專案** ] 或 [ **加入新** 專案] 對話方塊中。 若要查看 [ **加入新專案** ] 或 [ **加入新** 專案] 對話方塊，請以滑鼠右鍵按一下 **方案總管** 中開啟的方案，指向 [ **加入**]，然後按一下 [ **新增專案** ] 或 [ **新增專案**]。

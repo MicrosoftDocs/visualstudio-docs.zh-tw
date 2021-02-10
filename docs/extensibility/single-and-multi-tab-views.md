@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94081af0bfdb85793c092f76d28758f220f4628b
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: f6cea04557fb0bf3075461b22979cac2168af322
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942980"
 ---
 # <a name="single-and-multi-tab-views"></a>單一和多重索引標籤檢視
 編輯器可以建立不同類型的視圖。 其中一個範例是 [程式碼編輯器] 視窗，另一個則是表單設計工具。
@@ -114,7 +114,7 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)
 - [如何︰將檢視附加至文件資料](../extensibility/how-to-attach-views-to-document-data.md)
 - [建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)

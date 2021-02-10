@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d0e782b0d141666ca7d1f79464d60afd89ef871
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 0f163f1aca78832f38e73eaaed882ae1ac6cff17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943935"
 ---
 # <a name="options-text-editor-file-extension"></a>副檔名、文字編輯器、選項
 
@@ -32,7 +32,7 @@ ms.locfileid: "96039727"
 
 ## <a name="uielement-list"></a>UIElement 清單
 
-**副檔名**
+**分機**
 
 輸入您想要在 IDE 中為其定義編輯體驗的檔案副檔名。
 

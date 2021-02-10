@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 51c8d3cb-4d43-458f-9631-b63755f9ac94
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9e7e6e9114405bc1575e0256dd63211a4fb6d08
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c7bfc8c850cee9273af2af3b28f71b9d27209d9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433969"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943636"
 ---
 # <a name="sequence-activity-designer"></a>Sequence 活動設計工具
 
@@ -33,11 +33,11 @@ ms.locfileid: "94433969"
 
 下表顯示 <xref:System.Activities.Statements.Sequence> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中或在設計工具介面上編輯。
 
-|屬性名稱|必要|使用量|
+|屬性名稱|必要|使用方式|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|否|指定 <xref:System.Activities.Statements.Sequence> 活動設計工具在標頭中的易記名稱。 預設值為 Sequence。 此值可在屬性方格中編輯，或是直接在活動設計工具的標頭上編輯。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [流程圖](../workflow-designer/flowchart-activity-designer.md)
 - [控制流程](../workflow-designer/control-flow-activity-designers.md)

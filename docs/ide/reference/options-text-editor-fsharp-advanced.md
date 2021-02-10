@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.Advanced
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f9f4550ccf83f5697bca46d4a4049fe7df9b1c20
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 42398657a896b823637d8235c859b5802812a112
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943922"
 ---
 # <a name="options-text-editor-f-advanced"></a>選項、文字編輯器、F#、進階
 

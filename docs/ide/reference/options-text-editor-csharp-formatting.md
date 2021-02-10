@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Text editor Options dialog box, formatting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: a29f298579d571595cbf537f99ed67b333fbbb9c
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: eea4f9afd82dd87385e02ba9f149e91f336369a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944065"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>選項對話方塊：文字編輯器 \> c # 程式 \> 代碼樣式 \> 格式化
 
@@ -67,7 +67,7 @@ ms.locfileid: "96039767"
 |**套用所有 C# 格式化規則 (縮排、換行、間距)**|**將文件格式化** 的命令一律會修正格式化問題。 這項設定無法變更。| [Core EditorConfig 選項](../../ide/create-portable-custom-editor-options.md)<br/>[.NET EditorConfig 格式化選項](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules)<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > **格式化**> [**縮排** 或 **新行** 或 **間距** 或 **換** 行]|
 |**在格式化期間執行其他程式碼清理**|如有選取，會對 **Edit.FormatDocument** 命令下指定的規則套用修正。| N/A |
 |**移除不必要的 using**|如有選取，會在 **Edit.FormatDocument** 觸發時移除不必要的 `using` 指示詞。| N/A |
-|**為 using 排序**|如有選取，會在 **Edit.FormatDocument** 觸發時為 `using` 指示詞排序。| dotnet_sort_system_directives_first<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > **Advanced**  > **排序 using 時先放置 ' System '** 指示詞 |
+|**排序 using**|如有選取，會在 **Edit.FormatDocument** 觸發時為 `using` 指示詞排序。| dotnet_sort_system_directives_first<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > **Advanced**  > **排序 using 時先放置 ' System '** 指示詞 |
 |**新增/移除單行控制陳述式的括號**|如有選取，會在 **Edit.FormatDocument** 觸發時從單行控制陳述式新增或移除括號。| csharp_prefer_braces<br/><br/>**工具**  > **選項**  > **文字編輯器**  > **C #**  > 程式 **代碼樣式**  > 程式 **代碼區塊喜好**  >  設定 **偏好大括弧** |
 |**新增協助工具修飾詞**|如有選取，會在 **Edit.FormatDocument** 觸發時新增缺少的協助工具修飾詞。| dotnet_style_require_accessibility_modifiers |
 |**為存取範圍修飾詞排序**|如有選取，會在 **Edit.FormatDocument** 觸發時為協助工具修飾詞排序。| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |

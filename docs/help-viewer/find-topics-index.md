@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 695bcabc195b97551b2943a557d591bdfb85c991
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 34eb02621c42282fdd5ec1656edcb175351a1f5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944220"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>使用說明檢視器索引來尋找主題
 
@@ -29,14 +29,14 @@ ms.locfileid: "91879017"
 
 ## <a name="to-find-a-topic-by-using-the-index"></a>使用索引來尋找主題
 
-在 [索引]**** 索引標籤上，執行下列任一項工作：
+在 [索引] 索引標籤上，執行下列任一項工作：
 
 - 在文字方塊中指定要搜尋的關鍵字。 例如，指定 "update" 來尋找包含 "update"、"updated" 和 "updating" 這類關鍵字的主題。
 
     選擇接近索引標籤頂端的篩選按鈕，您可以顯示包含所指定文字的所有項目，或只顯示開頭為所指定文字的項目。
 
     > [!NOTE]
-    > 當篩選按鈕出現在具有框線的深色背景上時，項目必須_包含_您所指定的文字。 如果未出現背景和框線，則項目必須以您所指定的文字_作為開頭_。
+    > 當篩選按鈕出現在具有框線的深色背景上時，項目必須 _包含_ 您所指定的文字。 如果未出現背景和框線，則項目必須以您所指定的文字 _作為開頭_。
 
 - 捲動索引，然後選取關鍵字。
 
@@ -56,7 +56,7 @@ ms.locfileid: "91879017"
 
     例如，如果 "debugging inline assembly code" 沒有顯示相關的項目，請嘗試輸入 "assembly code, debugging inline"。
 
-- 搭配 [索引]**** 索引標籤使用篩選，來減少結果數目。
+- 搭配 [索引] 索引標籤使用篩選，來減少結果數目。
 
 ### <a name="syntax-tips"></a>語法提示
 

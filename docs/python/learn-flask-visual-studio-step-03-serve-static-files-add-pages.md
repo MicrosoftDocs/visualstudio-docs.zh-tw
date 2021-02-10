@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 69fd704976ee941cb053d75040a3d3ec7871a380
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d474236aca50a74b96689001a56e7d0701caae30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942382"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>步驟3：提供靜態檔案、新增頁面，以及搭配 Flask 應用程式使用範本繼承
 
@@ -34,13 +34,13 @@ ms.locfileid: "88238738"
 
 ## <a name="step-3-1-become-familiar-with-item-templates"></a>步驟 3-1：熟悉項目範本
 
-當您開發 Flask 應用程式時，通常會新增許多 Python、HTML、CSS 和 JavaScript 檔案。 針對每一種檔案類型 (以及開發可能需要的其他檔案，例如 *web.config*)，Visual Studio 都提供方便您著手的[項目範本](python-item-templates.md)。
+當您開發 Flask 應用程式時，通常會新增許多 Python、HTML、CSS 和 JavaScript 檔案。 針對每一種檔案類型 (以及開發可能需要的其他檔案，例如 *web.config*)，Visual Studio 都提供方便您著手的 [項目範本](python-item-templates.md)。
 
-若要查看可用的範本，請移至 [方案總管]****，以滑鼠右鍵按一下您要建立項目的資料夾，選取 [加入]**** > [新項目]****：
+若要查看可用的範本，請移至 [方案總管]，以滑鼠右鍵按一下您要建立項目的資料夾，選取 [加入] > [新項目]：
 
 ![Visual Studio 中的加入新項目對話方塊](media/flask/step03-add-new-item-dialog.png)
 
-若要使用範本，請選取所需的範本、指定檔案名稱，然後選取 [確定]****。 以這種方式加入項目，會將檔案自動加入您的 Visual Studio 專案，並為原始檔控制標記變更。
+若要使用範本，請選取所需的範本、指定檔案名稱，然後選取 [確定]。 以這種方式加入項目，會將檔案自動加入您的 Visual Studio 專案，並為原始檔控制標記變更。
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>問題：Visual Studio 如何知道應提供哪些項目範本？
 
@@ -56,9 +56,9 @@ ms.locfileid: "88238738"
 
 ### <a name="use-a-static-file-in-a-template"></a>在範本中使用靜態檔案
 
-1. 在**方案總管**中，以滑鼠右鍵按一下 Visual Studio 專案中的 [ **HelloFlask** ] 資料夾 **，選取 [新增**  >  **資料夾**]，並為資料夾命名 `static` 。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 Visual Studio 專案中的 [ **HelloFlask** ] 資料夾 **，選取 [新增**  >  **資料夾**]，並為資料夾命名 `static` 。
 
-1. 以滑鼠右鍵按一下 **static** 資料夾，並選取 [新增]**** > [新增項目]****。 在出現的對話方塊中，選取 **樣式** 表單範本、為檔案命名 `site.css` ，然後選取 **[確定]**。 **site.css** 檔案會出現在專案中，並在編輯器中開啟。 您的資料夾結構應該與下列影像類似：
+1. 以滑鼠右鍵按一下 **static** 資料夾，並選取 [新增] > [新增項目]。 在出現的對話方塊中，選取 **樣式** 表單範本、為檔案命名 `site.css` ，然後選取 **[確定]**。 **site.css** 檔案會出現在專案中，並在編輯器中開啟。 您的資料夾結構應該與下列影像類似：
 
     ![方案總管中所顯示的靜態檔案結構](media/flask/step03-static-file-structure.png)
 
@@ -91,7 +91,7 @@ ms.locfileid: "88238738"
 
 Flask 提供一個稱為 `serve_static_file` 的函式，您可以從程式碼呼叫此函式來參考專案 *static* 資料夾內的任何檔案。 下列程序會建立一個簡單的 API 端點，傳回靜態資料檔案。
 
-1. 如果您尚未建立 *static* 資料夾，請建立此資料夾：在 [方案總管] **** 中，於 Visual Studio 專案的 [HelloFlask]**** 資料夾上按一下滑鼠右鍵，選取 [新增]**** > [新增資料夾]****，然後將資料夾命名為 `static`。
+1. 如果您尚未建立 *static* 資料夾，請建立此資料夾：在 [方案總管] 中，於 Visual Studio 專案的 [HelloFlask] 資料夾上按一下滑鼠右鍵，選取 [新增] > [新增資料夾]，然後將資料夾命名為 `static`。
 
 1. 在 *static* 資料夾中，使用下列內容 (無意義的範例資料) 來建立一個名為 *data.json* 的 JSON 資料檔：
 
@@ -131,10 +131,10 @@ Flask 提供一個稱為 `serve_static_file` 的函式，您可以從程式碼�
 
 下列步驟會將 [About] (關於) 頁面新增至 "HelloFlask" 專案，並從首頁連結至該頁面：
 
-1. 在 [方案總管] **** 中，以滑鼠右鍵按一下 [templates]**** 資料夾，選取 [新增]**** > [新增項目]**** 選取 [HTML Page]**** (HTML 頁面) 項目範本、將檔案命名為 `about.html`，然後選取 [確定]****。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下 [templates] 資料夾，選取 [新增] > [新增項目]選取 [HTML Page] (HTML 頁面) 項目範本、將檔案命名為 `about.html`，然後選取 [確定]。
 
     > [!Tip]
-    > 如果 [新增項目]**** 命令未出現在 [新增]**** 功能表上，請確定您已停止應用程式，如此 Visual Studio 才會結束偵錯模式。
+    > 如果 [新增項目] 命令未出現在 [新增] 功能表上，請確定您已停止應用程式，如此 Visual Studio 才會結束偵錯模式。
 
 1. 將 *about.html* 的內容取代為下列標記 (您會在步驟 3-4 中將首頁的明確連結取代為簡單的導覽列)：
 
@@ -168,7 +168,7 @@ Flask 提供一個稱為 `serve_static_file` 的函式，您可以從程式碼�
     <div><a href="about">About</a></div>
     ```
 
-1. 使用 **[**  >  **全部儲存**] 功能表命令來儲存所有檔案，或只按**Ctrl** + **Shift** + **S**。 (技術上來說並不需要此步驟，因為在 Visual Studio 中執行專案會自動儲存檔案。 不過，知道有這個命令也很好！)
+1. 使用 **[**  >  **全部儲存**] 功能表命令來儲存所有檔案，或只按 **Ctrl** + **Shift** + **S**。 (技術上來說並不需要此步驟，因為在 Visual Studio 中執行專案會自動儲存檔案。 不過，知道有這個命令也很好！)
 
 1. 執行專案以觀察結果並檢查頁面之間的瀏覽。 完成時，請停止應用程式。
 
@@ -182,17 +182,17 @@ Flask 提供一個稱為 `serve_static_file` 的函式，您可以從程式碼�
 
 Flask 的範本化系統 (預設為 Jinja) 提供兩種方法，可跨多個範本重複使用特定元素：包含和繼承。
 
-- 「包含」** 使用 `{% include <template_path> %}` 語法，在參考範本中的特定位置插入其他頁面範本。 如果您想要以動態方式變更程式碼中的路徑，也可以使用變數。 「包含」通常用在頁面主體，用來在頁面特定位置引進共用的範本。
+- 「包含」使用 `{% include <template_path> %}` 語法，在參考範本中的特定位置插入其他頁面範本。 如果您想要以動態方式變更程式碼中的路徑，也可以使用變數。 「包含」通常用在頁面主體，用來在頁面特定位置引進共用的範本。
 
-- 「繼承」** 在頁面範本開頭使用`{% extends <template_path> %}`，以指定共用基底範本，以便參考範本並接著據以建置範本。 繼承通常用來定義共用版面配置、瀏覽列和應用程式頁面的其他結構，因此參考範本只需要加入或修改名為 *blocks* (區塊) 的基底範本特定區域。
+- 「繼承」在頁面範本開頭使用`{% extends <template_path> %}`，以指定共用基底範本，以便參考範本並接著據以建置範本。 繼承通常用來定義共用版面配置、瀏覽列和應用程式頁面的其他結構，因此參考範本只需要加入或修改名為 *blocks* (區塊) 的基底範本特定區域。
 
 在這兩種情況下，`<template_path>` 是相對於應用程式的 *templates* 資料夾 (也允許 `../` 或 `./`)。
 
-基底範本描述*blocks*使用 `{% block <block_name> %}` 和 `{% endblock %}` 標記區塊。 若之後參考範本再對同一個區塊名稱使用標籤，其區塊內容將會覆寫基底範本的區塊內容。
+基底範本描述使用 `{% block <block_name> %}` 和 `{% endblock %}` 標記區塊。 若之後參考範本再對同一個區塊名稱使用標籤，其區塊內容將會覆寫基底範本的區塊內容。
 
 下列步驟將示範繼承：
 
-1. 在應用程式的 *templates* 資料夾中，建立稱為 *layout.html* 的新 HTML 檔案 (使用 [新增]**** > [新增項目]**** 操作功能表，或 [新增]**** > [HTML 網頁]****)，然後以下列標記取代其內容。 您可以看到此範本包含一個名為 "content" (內容) 的區塊，這是參考頁面必須全部取代的部分：
+1. 在應用程式的 *templates* 資料夾中，建立稱為 *layout.html* 的新 HTML 檔案 (使用 [新增] > [新增項目] 操作功能表，或 [新增] > [HTML 網頁])，然後以下列標記取代其內容。 您可以看到此範本包含一個名為 "content" (內容) 的區塊，這是參考頁面必須全部取代的部分：
 
     ```html
     <!DOCTYPE html>
@@ -278,7 +278,7 @@ Flask 的範本化系統 (預設為 Jinja) 提供兩種方法，可跨多個範�
 
 1. 由於您對應用程式做了大幅變更，因此現在也是[將變更認可至原始檔控制](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)的好時機。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [使用完整的 Flask Web 專案範本](learn-flask-visual-studio-step-04-full-flask-project-template.md)

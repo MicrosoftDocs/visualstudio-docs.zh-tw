@@ -9,17 +9,17 @@ ms.custom:
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 990bff2832f290987ed29fd48b69f4d7a1a05bba
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 3d771fac2cf494e92cbc27fdbdca0b78af97b67e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944390"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>歡迎使用 Visual Studio IDE | Visual Basic
 
@@ -502,7 +502,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 如需有關 Visual Studio 中之 偵錯的更多詳細資料，請參閱[偵錯工具功能導覽](../../debugger/debugger-feature-tour.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 遵循以下其中一篇簡介文章，進一步探索 Visual Studio：
 

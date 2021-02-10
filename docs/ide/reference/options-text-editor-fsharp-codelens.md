@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.CodeLens
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6bdccdc45664bd620018fa094d35add545b302d4
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 50d78909e7abf27c8bd1a813041a85df47ea831c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943883"
 ---
 # <a name="options-text-editor-f-codelens"></a>選項、文字編輯器、F#、CodeLens
 
