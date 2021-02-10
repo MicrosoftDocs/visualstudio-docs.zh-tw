@@ -12,16 +12,16 @@ helpviewer_keywords:
 - unit tests, data-driven
 - data-driven unit tests
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 31e1fb08d77992e6fb592e286553196928b13ad4
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 94dcc3aed8d41f9ece0f9b51410fc749330b01df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441192"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966691"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：建立資料驅動型單元測試
 
@@ -69,7 +69,7 @@ public int AddIntegers(int first, int second)
 
 若要測試 `AddIntegers` 方法，請建立一個資料來源，其中會指定參數的值範圍，以及您預期將傳回的總和。 在範例中，我們將建立名為 `MathsData` 的 SQL 壓縮資料庫，和名為 `AddIntegersData` 的資料表，其中包含下列資料行名稱和值
 
-|FirstNumber|SecondNumber|總和|
+|FirstNumber|SecondNumber|Sum|
 |-|------------------|-|
 |0|1|1|
 |1|1|2|

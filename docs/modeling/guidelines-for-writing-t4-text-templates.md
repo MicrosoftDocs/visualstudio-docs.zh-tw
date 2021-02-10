@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f5f7be4ce9b8beb7699844397de3e1fc206d017c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5418013898f24b15cf51926022d974d23f4a7215
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363402"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966353"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>撰寫 T4 文字範本的方針
 
@@ -171,7 +171,7 @@ Team Members:
 
 您也可以將自己的圖表類型設計為 (DSL) 的特定領域語言。 您可以從 UML 和 Dsl 產生程式碼。 如需詳細資訊，請參閱 [分析和模型化架構](../modeling/analyze-and-model-your-architecture.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [使用 T4 文字範本在執行階段產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)

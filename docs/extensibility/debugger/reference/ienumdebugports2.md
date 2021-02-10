@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 1754eef3-cf62-42e0-b218-1911acba77d4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3cc46ef8abb6ef1fbb8f072d97b0fc4a537af1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 638b17490ba875f8ecab7bf6dcdff7fef161b66e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716111"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967796"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 此介面會列舉機器或埠供應商的埠。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugPorts2 : IUnknown
@@ -39,7 +39,7 @@ IEnumDebugPorts2 : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|以列舉順序抓取指定的埠數目。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|以列舉順序抓取指定的埠數目。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|略過列舉序列中指定的埠數目。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|將列舉順序重設為開頭。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
@@ -50,7 +50,7 @@ IEnumDebugPorts2 : IUnknown
 
  Debug engine 通常不會使用此介面。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

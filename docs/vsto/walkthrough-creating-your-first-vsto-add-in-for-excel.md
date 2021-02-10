@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f04532e627a694e8a234f1842995b92a707e537
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4449e286fed0572e2dfc1ed855daf834400bd4e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966626"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>逐步解說：建立 Excel 的第一個 VSTO 增益集
   本入門逐步解說將示範如何建立 Microsoft Office Excel 的應用程式層級增益集。 不論開啟哪一份活頁簿，您在這類方案中建立的功能都可供應用程式本身使用。
@@ -66,7 +66,7 @@ ms.locfileid: "97527911"
 
 6. 在 [名稱] **Deploying Office Solutions** 方塊中，輸入 **FirstExcelAddIn**。
 
-7. 按一下 [確定]。
+7. 按一下 [確定]  。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立 **FirstExcelAddIn** 專案，並在編輯器中開啟 ThisAddIn 程式碼檔案。
 
@@ -119,7 +119,7 @@ ms.locfileid: "97527911"
 
 1. 在 Visual Studio 中，按一下 [建置]  功能表上的 [清除方案] 。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  現在您已經建立 Excel 的基本 VSTO 增益集，可以從下列主題進一步了解如何開發 VSTO 增益集：
 
 - 您可以在 VSTO 增益集中執行的一般程式設計工作： [PROGRAM Vsto 增益集](../vsto/programming-vsto-add-ins.md)。

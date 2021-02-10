@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15efb14d2cee36e5f2a8559c3ffa3844251aa982
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 57a273d994e6b8a4b34a139ab98713cc8c6cd83b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968121"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>從設定存放區取得服務資訊
 您可以使用 [設定] 存放區來尋找所有可用的服務，或判斷是否已安裝特定的服務。 您必須知道服務類別的型別。

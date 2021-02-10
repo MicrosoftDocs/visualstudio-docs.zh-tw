@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 3f90a3d42eb1390adbb242242172aea152a0a54f
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 7808c83e8ba517a26d60fe12cb563c5a1a64b8db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833230"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966717"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：設定以舊版 .NET Framework 為目標的單元測試
 
@@ -106,7 +106,7 @@ ms.locfileid: "97833230"
 
 6. 在 [方案總管] 中，從新的 C++ 測試專案右鍵功能表選取 [重新載入專案]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [建立 SharePoint 方案](../sharepoint/create-sharepoint-solutions.md)
 - [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)

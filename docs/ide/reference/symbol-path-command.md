@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3268f3c40736f85a18b35e33c6cc78c96d6c88
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 72e69300e9dc621ea346c05923168c33bc7065c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967159"
 ---
 # <a name="symbol-path-command"></a>符號路徑命令
 設定目錄清單，以讓偵錯工具搜尋符號。

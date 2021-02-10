@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bde46ef959e0d005c9ab90ef8d2807ed240571
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: bd7f47466074536c9088840e726f768f62f9346b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047646"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965924"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15 的現有應用程式更新
 
@@ -28,7 +28,7 @@ ms.locfileid: "93047646"
 
 ## <a name="use-microsoftbuildlocator"></a>使用 Microsoft.Build.Locator
 
-如果您與應用程式一起轉散發 *Microsoft.Build.Locator.dll* ，則不需要散發其他 MSBuild 組件。
+如果您與應用程式一起轉散發 *Microsoft.Build.Locator.dll*，則不需要散發其他 MSBuild 組件。
 
 更新專案以使用 MSBuild 15 和定位器 API，需要在專案中進行一些變更，如下所述。 若要查看更新專案所需的變更範例，請參閱[對 MSBuildLocator 儲存機制中的範例專案所做的認可](https://github.com/Microsoft/MSBuildLocator/commits/example-updating-to-msbuild-15)。
 

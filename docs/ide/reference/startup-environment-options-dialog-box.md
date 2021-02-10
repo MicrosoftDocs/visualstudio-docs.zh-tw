@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 9d517203-3c62-4660-b7b4-ea7d032dcb1e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8e6cbac9da68a31c345805c1070c4d5b9fd168d
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 62057dcc4b7410e31f5f27dc31976b49ee25a132
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967211"
 ---
 # <a name="options-dialog-box-environment--startup"></a>選項對話方塊：環境 \> 啟動
 

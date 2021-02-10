@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad7da71d31e1093d87d68bb39958a71a117f5d5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbec27d262e43cb0fcdf8317725ad3c77a1817eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718183"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966431"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 此介面代表位元組陣列。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEEDataStorage : IUnknown
@@ -47,7 +47,7 @@ IEEDataStorage : IUnknown
 
  如果有需要，自訂檢視器也可以使用此介面，但更常見的情況是，自訂檢視器會使用自訂介面、 [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) 或 [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (用於字串導向的資料) 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

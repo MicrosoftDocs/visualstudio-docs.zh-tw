@@ -11,20 +11,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <update> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5712be9e12ede3338856955e00a34a7565d733ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968758"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio) 中 (Office 開發的 update 元素
   `update`元素會指定方案檢查更新的間隔。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <update
@@ -59,7 +59,7 @@ ms.locfileid: "85537380"
 
 ## <a name="example-of-always-checking-for-updates"></a>一律檢查更新的範例
 
-### <a name="description"></a>說明
+### <a name="description"></a>Description
  下列程式碼範例將說明 `update` 設定為一律檢查 Office 方案中更新的元素。
 
 ### <a name="code"></a>程式碼
@@ -70,7 +70,7 @@ ms.locfileid: "85537380"
 
 ## <a name="example-of-setting-a-default-update-interval"></a>設定預設更新間隔的範例
 
-### <a name="description"></a>說明
+### <a name="description"></a>Description
  下列程式碼範例說明 `update` Office 方案的應用程式資訊清單中的元素。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼

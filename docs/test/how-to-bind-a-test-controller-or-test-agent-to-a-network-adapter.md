@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 3f4c215937f6637eedfa869a5e3abd701966c693
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: f35e870e625a0f494692d082494ee0c2511ffd8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442347"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966834"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>如何：將測試控制器或測試代理程式繫結至網路介面卡
 

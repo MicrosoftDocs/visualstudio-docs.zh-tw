@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: bdcd96e8fc87a7627689af1c67a81b69b2ecee72
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: 888bf1f699027ab883a01ba74d8efc5703c91c9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968966"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>逐步解說：建立和執行包含單元測試的負載測試
 
@@ -61,7 +61,7 @@ ms.locfileid: "95598259"
 
 1. [新增負載測試精靈] 的 [歡迎使用] 頁面是第一個出現的頁面。
 
-1. 選擇 [下一步]  。
+1. 選擇 [下一步]。
 
 ### <a name="to-edit-settings-for-load-test-scenario"></a>若要編輯負載測試情節的設定
 
@@ -88,13 +88,13 @@ ms.locfileid: "95598259"
 
 5. 將 [最大使用者計數] 設為 100 位使用者。
 
-6. 選擇 [下一步]  。
+6. 選擇 [下一步]。
 
 ### <a name="to-select-test-mix-model-for-the-scenario"></a>若要選取情節的測試混合模型
 
 1. 在 **[如何將測試混合模型** 化] 底下，選取 [ **根據測試總數**]。
 
-2. 選擇 [下一步]  。
+2. 選擇 [下一步]。
 
 ### <a name="to-add-unit-tests-to-the-scenario"></a>若要將單元測試加入至情節
 
@@ -114,7 +114,7 @@ ms.locfileid: "95598259"
 
 7. 將 **CreditTest** 的 [分佈] 下方的滑桿略往右移，以調整測試分佈。 留意到其餘滑桿會自動往左移，而分佈會維持在 100%。
 
-8. 選擇 [下一步]  。
+8. 選擇 [下一步]。
 
 ### <a name="to-select-network-mix-for-test-scenario"></a>若要選取測試情節的網路混合
 
@@ -122,11 +122,11 @@ ms.locfileid: "95598259"
 
      您還可以新增其他網路類型。 使用滑桿來調整測試散發和加權。
 
-2. 選擇 [下一步]  。
+2. 選擇 [下一步]。
 
 ### <a name="to-specify-computers-to-monitor-with-counter-sets-during-load-test-run"></a>若要指定要在負載測試執行期間以計數器集合監視的電腦
 
-1. 選擇 [下一步]  。
+1. 選擇 [下一步]。
 
      如需計數器集合的詳細資訊，請參閱[在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
 

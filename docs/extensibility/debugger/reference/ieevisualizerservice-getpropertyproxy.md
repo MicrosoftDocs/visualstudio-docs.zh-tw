@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 748750f4-76e7-4580-9da2-afba07681b37
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f499b816b012c3b3a71e3e8ecafaa2c0f34586d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ae18e9e04d6de4be3dcaf28a0e8eae6303ae75e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966418"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 這個方法會傳回屬性物件的 proxy。
@@ -28,16 +28,16 @@ ms.locfileid: "80717997"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetPropertyProxy(
-   DWORD                  dwID,
-   IPropertyProxyEESide** proxy
+HRESULT GetPropertyProxy(
+   DWORD                  dwID,
+   IPropertyProxyEESide** proxy
 );
 ```
 
 ```csharp
-int GetPropertyProxy(
-   uint                     dwID,
-   out IPropertyProxyEESide proxy
+int GetPropertyProxy(
+   uint                     dwID,
+   out IPropertyProxyEESide proxy
 );
 ```
 

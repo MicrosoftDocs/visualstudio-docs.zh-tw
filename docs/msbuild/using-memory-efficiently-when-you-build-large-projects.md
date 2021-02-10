@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 853a21ed-69f7-4817-af00-57f73e2c74b5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61bfa09bf91b49c163e47bbf71c0d192b6950160
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 99cee9cfbf779bbee97c00fb76f9670e1d609b00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047606"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965898"
 ---
 # <a name="use-memory-efficiently-when-you-build-large-projects"></a>在建置大型專案時有效使用記憶體
 
@@ -27,6 +27,6 @@ ms.locfileid: "93047606"
 
  4.0 版會自動處理此記憶體管理，並儲存專案；而不需要使用 `UnloadProjectsOnCompletion` 和 `UseResultsCache` 這類屬性。
 
-### <a name="see-also"></a>請參閱
+### <a name="see-also"></a>另請參閱
 
 - [平行建立多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

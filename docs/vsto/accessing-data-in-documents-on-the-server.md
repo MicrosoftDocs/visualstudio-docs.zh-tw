@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data access [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c610bdc33564e3e211d1ec5aab943af4eec49d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847620"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965794"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>存取伺服器檔中的資料
   您可以針對檔層級自訂中的資料進行程式設計，而不需要使用 Microsoft Office Word 或 Microsoft Office Excel 的物件模型。 這表示您可以在未安裝 Word 或 Excel 的伺服器上，存取包含在檔中的資料。 例如，伺服器上的程式碼 (例如，在頁面中 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]) 可以自訂檔中的資料，並將自訂檔傳送給終端使用者。 當使用者開啟檔時，方案元件中的資料系結程式碼會將自訂資料系結至檔。 這是可能的，因為檔中的資料與使用者介面分開。 如需詳細資訊，請參閱 [檔層級自訂中](../vsto/cached-data-in-document-level-customizations.md)的快取資料。
@@ -59,7 +59,7 @@ ms.locfileid: "96847620"
 
     - 如果您想要自動序列化變更，請使用 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 方法。 這個方法會使用 **DiffGram** 格式 <xref:System.Data.DataSet> ，在資料快取中序列化、 <xref:System.Data.DataTable> 和具類型的資料集物件。 **DiffGram** 格式可確保離線檔中資料快取的變更會正確地傳送至伺服器。
 
-    - 如果您想要執行自己的序列化來變更快取的資料，您可以直接寫入 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> 屬性。 如果您 **DiffGram** 使用 <xref:System.Data.Common.DataAdapter> 來更新資料庫，並在、或具類型的資料集中對資料進行變更，請指定 DiffGram 格式 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 。 否則， <xref:System.Data.Common.DataAdapter> 將會藉由加入新的資料列，而不是修改現有的資料列來更新資料庫。
+    - 如果您想要執行自己的序列化來變更快取的資料，您可以直接寫入 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> 屬性。 如果您使用 <xref:System.Data.Common.DataAdapter> 來更新資料庫，並在、或具類型的資料集中對資料進行變更，請指定 DiffGram 格式 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 。 否則， <xref:System.Data.Common.DataAdapter> 將會藉由加入新的資料列，而不是修改現有的資料列來更新資料庫。
 
 ### <a name="modify-data-without-deserializing-the-current-value"></a>修改資料，而不還原序列化目前的值
  在某些情況下，您可能會想要修改快取物件的值，而不需要先還原序列化目前的值。 例如，如果您要變更具有簡單類型的物件值（例如字串或整數），或在伺服器上的檔中初始化快取，就可以這樣做 <xref:System.Data.DataSet> 。 在這些情況下，您可以使用 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 方法，而不需要先還原序列化快取物件的目前值。

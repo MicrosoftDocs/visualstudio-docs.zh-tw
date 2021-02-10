@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b0148a7c42b359906cd316b45dfdf2898e6313
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7a12607a6e4f603c86e7714ff87db085d3bf3b9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965937"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 基底類別
 
@@ -30,7 +30,7 @@ ms.locfileid: "93047827"
 
  下表說明基底類別的參數。
 
-| 參數 | 描述 |
+| 參數 | Description |
 | - | - |
 | <xref:Microsoft.Build.Utilities.Task.BuildEngine%2A> | 選擇性的 <xref:Microsoft.Build.Framework.IBuildEngine> 參數。<br /><br /> 指定工作可以使用的建置引擎介面。 建置引擎會自動設定這個參數，以允許工作回呼至它。 |
 | <xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A> | 選擇性的 <xref:Microsoft.Build.Framework.IBuildEngine2> 參數。<br /><br /> 指定工作可以使用的建置引擎介面。 建置引擎會自動設定這個參數，以允許工作回呼至它。<br /><br /> 這是方便的屬性，讓工作作者繼承自這個類別，不需要將值從 `IBuildEngine` 轉型到 `IBuildEngine2`。 |
@@ -49,7 +49,7 @@ ms.locfileid: "93047827"
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | 選擇性的 `bool` 參數。<br /><br /> 當設為 `true` 時，這項工作會針對命令列建立批次檔，並且使用命令處理器來執行，而不是直接執行命令。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | 選擇性的 `bool` 參數。<br /><br /> 當設為 `true` 時，這項工作在執行其工作時，會產生節點。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)
 - [工作](../msbuild/msbuild-tasks.md)

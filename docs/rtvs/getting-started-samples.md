@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: ef3316d929b00203815918a656568f75571e954e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ed322a03d056f72ac2246e96d3aaeefa8f557c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75843827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967016"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Visual Studio R 工具範例專案
 
@@ -23,11 +23,11 @@ ms.locfileid: "75843827"
 1. 開啟 `examples/Examples.sln` 即可看到專案中的兩個資料夾︰
 
     - *初探 R* 為 R 新手提供合適的簡介。
-    - *MRS 和機器學習服務*提供如何使用 R 和 Microsoft Machine Learning Server 進行機器學習服務的範例。
+    - *MRS 和機器學習服務* 提供如何使用 R 和 Microsoft Machine Learning Server 進行機器學習服務的範例。
 
 ## <a name="a-first-look-at-r"></a>初探 R
 
-這個範例透過兩個原始程式檔中的大量註解，提供 R 的深入介紹。 為獲得最佳體驗，請將游標放在檔案最上方，然後按 Ctrl + Enter 逐步傳送程式碼行到 [R 互動]**** 視窗。 (安裝套件的行可能需要一兩分鐘的時間才能完成。)
+這個範例透過兩個原始程式檔中的大量註解，提供 R 的深入介紹。 為獲得最佳體驗，請將游標放在檔案最上方，然後按 Ctrl + Enter 逐步傳送程式碼行到 [R 互動] 視窗。 (安裝套件的行可能需要一兩分鐘的時間才能完成。)
 
 - `1-Getting Started with R.R` 涵蓋許多 R 基本概念，包括使用套件、載入和分析資料，以及繪製。
 
@@ -41,7 +41,7 @@ ms.locfileid: "75843827"
 
 此範例集合示範如何使用 R 建立機器學習服務模型，以及如何充分利用 [Microsoft Machine Learning Server](/machine-learning-server/what-is-machine-learning-server)。
 
-如同所有範例，請開啟檔案、將游標放在最上方，然後以**Ctrl**Enter 逐行執行程式程式碼 + ** **。 每個資料夾中的 Markdown 檔案也包含其他詳細資料。
+如同所有範例，請開啟檔案、將游標放在最上方，然後以 **Ctrl** Enter 逐行執行程式程式碼 + ****。 每個資料夾中的 Markdown 檔案也包含其他詳細資料。
 
 - `Benchmarks` 會執行許多密集、平行的線性代數運算，顯示透過使用 Microsoft R Open 和 Intel 數學核心程式庫 (MKL) 而可能會提升的效能。 使用模擬資料，基準測試特別比較在一與兩個執行緒上的矩陣計算。
 

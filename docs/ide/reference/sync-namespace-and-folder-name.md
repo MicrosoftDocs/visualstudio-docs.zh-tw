@@ -6,17 +6,17 @@ ms.date: 06/12/2019
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 10dff5d9129d1a91f01ef7541397d86f5a71468c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: e4f10f3555f4edcec031cd4c144bf5a28e9c055d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967146"
 ---
 # <a name="sync-namespace-and-folder-name"></a>同步命名空間和資料夾名稱
 
@@ -30,7 +30,7 @@ ms.locfileid: "96479806"
 
 **原因：** 您想要確保您的命名空間能以新的資料夾結構保持最新狀態。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將游標放在命名空間名稱中。
 2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。

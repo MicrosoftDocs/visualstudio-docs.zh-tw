@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc1da67206e5e5c9fde1b5c595424239d1685ac7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 72938f316be22cd9b2eab2d7dab893c9370fb0ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965846"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>如何：設定 SharePoint 部署命令
   您可以藉由設定部署前和部署後命令來自訂部署流程。 當您從 Visual Studio 中的 SharePoint 方案進行調試時，這些命令會在其他部署動作之前和之後執行。

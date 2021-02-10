@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 2c966eb9b4ad0bbf8e00c8a27fd69fef0c59cbc1
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: c6f4efd21da1d10f3885bdb0202baf6f42992522
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966873"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>做法：將分佈套用到步調延遲以進行使用者步調測試混合模型
 

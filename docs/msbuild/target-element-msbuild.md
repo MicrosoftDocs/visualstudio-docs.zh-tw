@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b8533bed128199a4eb0b6e7171ed9c674d62f4
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 231ffd185eaf06fb91a709631082c2b68db372ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966119"
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
 
@@ -74,7 +74,7 @@ ms.locfileid: "93048046"
 
 ### <a name="child-elements"></a>子元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [Task](../msbuild/task-element-msbuild.md) | 建立並執行 MSBuild 工作的實例。 目標中可能有零或多個工作。 |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | 包含一組使用者定義的 `Property` 項目。 從 .NET Framework 3.5 開始，`Target` 項目可以包含 `PropertyGroup` 項目。 |
@@ -83,7 +83,7 @@ ms.locfileid: "93048046"
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 
@@ -123,7 +123,7 @@ ms.locfileid: "93048046"
 </Target>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [目標](../msbuild/msbuild-targets.md)
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)

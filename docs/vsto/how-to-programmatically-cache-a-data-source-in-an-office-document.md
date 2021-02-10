@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d1e66b587a149c02059e549fb20a5293f296a4a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968940"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>如何：以程式設計方式快取 Office 檔中的資料來源
   您可以藉由呼叫 `StartCaching` 主專案的方法（例如、或），以程式設計方式將資料物件新增至檔中的資料快取 <xref:Microsoft.Office.Tools.Word.Document> <xref:Microsoft.Office.Tools.Excel.Workbook> <xref:Microsoft.Office.Tools.Excel.Worksheet> 。 藉由呼叫主專案的方法，從資料快取中移除資料物件 `StopCaching` 。

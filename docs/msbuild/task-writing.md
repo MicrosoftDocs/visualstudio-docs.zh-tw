@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b614fd1705491e676bb89a9527c75cf86bdd36c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9f13d561cba0482e15f065e66200b51c8b77ddfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966015"
 ---
 # <a name="task-writing"></a>工作撰寫
 
@@ -174,7 +174,7 @@ MSBuild 會以原生方式處理型別 `string` 、和的屬性 `bool` `ITaskIte
 
 ## <a name="example-1"></a>範例 1
 
-### <a name="description"></a>描述
+### <a name="description"></a>Description
 
 下列 c # 類別示範衍生自 <xref:Microsoft.Build.Utilities.Task> helper 類別的工作。 此工作會傳回 `true`，指出是否成功。
 
@@ -199,7 +199,7 @@ namespace SimpleTask1
 
 ## <a name="example-2"></a>範例 2
 
-### <a name="description"></a>描述
+### <a name="description"></a>Description
 
 下列 c # 類別示範執行介面的工作 <xref:Microsoft.Build.Framework.ITask> 。 此工作會傳回 `true`，指出是否成功。
 
@@ -235,7 +235,7 @@ namespace SimpleTask2
 
 ## <a name="example-3"></a>範例 3
 
-### <a name="description"></a>描述
+### <a name="description"></a>Description
 
 這個 c # 類別會示範衍生自 <xref:Microsoft.Build.Utilities.Task> helper 類別的工作。 它具有必要的字串屬性，會引發所有已註冊記錄器顯示的事件。
 
@@ -245,7 +245,7 @@ namespace SimpleTask2
 
 ## <a name="example-4"></a>範例 4
 
-### <a name="description"></a>描述
+### <a name="description"></a>Description
 
 下例示範的專案檔會叫用前一個範例的工作：SimpleTask3。
 
@@ -262,6 +262,6 @@ namespace SimpleTask2
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)

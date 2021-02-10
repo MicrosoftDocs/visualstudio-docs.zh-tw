@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
 ms.author: bertaygu
-manager: jillfra
+manager: jmartens
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 03721f2aedd231dd9d4c4edaadf5eeb3a89389c2
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 05dda944ab2aecd429386e0e4c40646d21e9a3d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966405"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>測量擴充功能對啟動的影響
 

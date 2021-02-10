@@ -14,15 +14,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3bb5c111b4c75298ee55bc64dfbb2d0dd4b6c8b5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9a084ad152f178b4dd03e986eb06718b0fb47c98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968797"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>使用包含清單來信任 Office 方案
   內含清單可讓使用者將信任授與使用可識別發行者的憑證所簽署的 Office 方案。 內含清單是使用者專屬的，可以用於文件層級自訂和 VSTO 增益集。

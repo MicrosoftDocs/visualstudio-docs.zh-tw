@@ -13,15 +13,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c1f827346c30720cefd781dade3039416504b9c0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 56777213c4cac0e2356fa33235d2527abdbb5172
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527075"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966639"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>逐步解說：建立 Word 的第一個檔層級自訂
 
@@ -67,7 +67,7 @@ ms.locfileid: "97527075"
 
 6. 在 [ **名稱** ] 方塊中，輸入 **FirstDocumentCustomization**。
 
-7. 按一下 [確定]。
+7. 按一下 [確定]  。
 
 8. 從 [ **Visual Studio Tools for Office 專案] Wizard** 中選取 [**建立新檔**]，然後按一下 **[確定]**。
 ::: moniker-end
@@ -76,7 +76,7 @@ ms.locfileid: "97527075"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. 按 [下一步]  。
+4. 按一下 [下一步] 。
 
 5. 在 [**設定您的新專案**] 對話方塊的 [**名稱**] 方塊中輸入 **FirstWorkbookCustomization** ，然後按一下 [**建立**]。
 
@@ -154,7 +154,7 @@ ms.locfileid: "97527075"
 
 1. 在 Visual Studio 中，按一下 [建置]  功能表上的 [清除方案] 。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
  現在您已經建立 Word 的基本文件層級自訂，可以從下列主題進一步了解如何開發自訂：
 

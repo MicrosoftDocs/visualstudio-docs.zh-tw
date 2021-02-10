@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: bc951577-1bfb-4100-b1f1-bc8278c45bf7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 91be7dc2baf7df36d98cd725e8141cfa9cab773f
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: fa7b853ea6706c4958635c399bbc6134e823223c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904304"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966223"
 ---
 # <a name="makedir-task"></a>MakeDir 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "92904304"
 
 下表說明 `MakeDir` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`Directories`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要建立的目錄集合。|
 |`DirectoriesCreated`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 這項工作所建立的目錄。 如果無法建立某些目錄，就可能未包含所有已傳入 `Directories` 參數的項目。|
@@ -63,7 +63,7 @@ ms.locfileid: "92904304"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

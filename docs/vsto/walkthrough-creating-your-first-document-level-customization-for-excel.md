@@ -14,15 +14,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4183e84a930957b7cf87a6cc1e6fabcb21420785
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ae0f4982ca325970b8b7965c956a7d2dea4bf60f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966665"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>逐步解說：建立 Excel 的第一個檔層級自訂
 
@@ -68,7 +68,7 @@ ms.locfileid: "97527947"
 
 6. 在 [ **名稱** ] 方塊中，輸入 **FirstWorkbookCustomization**。
 
-7. 按一下 [確定]。
+7. 按一下 [確定]  。
 
 8. 從 [ **Visual Studio Tools for Office 專案] Wizard** 中選取 [**建立新檔**]，然後按一下 **[確定]**。
 ::: moniker-end
@@ -77,7 +77,7 @@ ms.locfileid: "97527947"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. 按 [下一步]  。
+4. 按一下 [下一步] 。
 
 5. 在 [**設定您的新專案**] 對話方塊的 [**名稱**] 方塊中輸入 **FirstWorkbookCustomization** ，然後按一下 [**建立**]。
 
@@ -167,7 +167,7 @@ ms.locfileid: "97527947"
 
 1. 在 Visual Studio 中，按一下 [建置]  功能表上的 [清除方案] 。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
  現在您已經建立 Excel 的基本文件層級自訂，可以從下列主題進一步了解如何開發自訂：
 

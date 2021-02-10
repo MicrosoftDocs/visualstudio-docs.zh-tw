@@ -14,13 +14,13 @@ ms.devlang: CSharp
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 73e7fb0b3216baa960a1b69302fe43161e311399
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: 132a5aef33b501ad17a2a089684cfe927321b2e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796780"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966483"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>使用 XAML 設計工具建立 UI
 
@@ -67,7 +67,7 @@ Grid 滑軌可用來管理 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中�
 
 **邊界**
 
-邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [ **屬性** ] 視窗中 [ **版面** 配置] 下的 [ [邊界](xref:Windows.UI.Xaml.FrameworkElement.Margin)] 屬性來設定控制項的邊界。
+邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [**屬性**] 視窗中 [**版面** 配置] 下的 [[邊界](xref:Windows.UI.Xaml.FrameworkElement.Margin)] 屬性來設定控制項的邊界。
 
 **邊界裝飾項**
 
@@ -125,8 +125,8 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 - [建立動畫](animate-objects-in-xaml-designer.md) (僅適用於 Blend for Visual Studio)。
 
-若要在 Visual Studio 中查看 [檔大綱] 視窗，請在功能表列上選取 [ **查看**  >  **其他 Windows**  >  **檔大綱** ]。
-若要在 Blend for Visual Studio 中查看物件與時間軸視窗，請在功能表列上選取 [ **視圖**  >  **檔大綱** ]。
+若要在 Visual Studio 中查看 [檔大綱] 視窗，請在功能表列上選取 [**查看**  >  **其他 Windows**  >  **檔大綱**]。
+若要在 Blend for Visual Studio 中查看物件與時間軸視窗，請在功能表列上選取 [**視圖**  >  **檔大綱**]。
 
 ![Visual Studio 的 [文件大綱] 視窗](media/document-outline-window.png)
 
@@ -138,7 +138,7 @@ Visual Studio 中的 [文件大綱] 視窗類似 Blend for Visual Studio 中的 
 
 **鎖定/解除鎖定**
 
-將畫板元素鎖定或解除鎖定。 無法修改鎖定的項目。 鎖定時，會顯示為掛鎖符號。 您也可以按 **ctrl** + **l** 來鎖定元素，並 **Shift** + 將 **ctrl** + **l** 解除鎖定。
+將畫板元素鎖定或解除鎖定。 無法修改鎖定的項目。 鎖定時，會顯示為掛鎖符號。 您也可以按 **ctrl** + **l** 來鎖定元素，並 + 將 **ctrl** + **l** 解除鎖定。
 
 **將範圍傳回 pageRoot**
 

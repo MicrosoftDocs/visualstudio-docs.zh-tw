@@ -14,15 +14,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6f4774b8f5ba55d54e05e3a9ef18f8ea13fd48fc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f35649db5f61cb545bb3550980b3d6b9a8742cd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966496"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>逐步解說：建立 Project 的第一個 VSTO 增益集
   本逐步解說將說明如何建立 Microsoft Office 專案的 VSTO 增益集。 不論開啟哪一個專案，您在這類方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱 [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -64,7 +64,7 @@ ms.locfileid: "97527900"
 
 6. 在 [名稱]  方塊中，輸入 **FirstProjectAddIn**。
 
-7. 按一下 [確定]。
+7. 按一下 [確定]  。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會建立 **FirstProjectAddIn** 專案，並在編輯器中開啟 **ThisAddIn** 程式碼檔。
 
@@ -118,7 +118,7 @@ ms.locfileid: "97527900"
 
 1. 在 Visual Studio 中，按一下 [建置]  功能表上的 [清除方案] 。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  現在您已經建立 Project 的基本 VSTO 增益集，可以從下列主題進一步了解如何開發 VSTO 增益集：
 
 - 您可以在 Project VSTO 增益集中執行的一般程式設計工作： [PROGRAM Vsto 增益集](../vsto/programming-vsto-add-ins.md)。

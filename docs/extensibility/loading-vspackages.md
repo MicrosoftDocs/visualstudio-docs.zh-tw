@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aeab78a2f64be2df6f601ad8ed224f13071eb8c
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: f87b5bcc94ed11e18de763bd1db7c59bdc4796fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616100"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966379"
 ---
 # <a name="load-vspackages"></a>Load Vspackage
 Vspackage 只有在需要它們的功能時，才會載入 Visual Studio。 例如，當 Visual Studio 使用專案 factory 或 VSPackage 所執行的服務時，就會載入 VSPackage。 這項功能稱為延遲載入，會盡可能用來改善效能。

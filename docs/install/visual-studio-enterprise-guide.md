@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 56a6142d7217d6afa7d48ea708c642a32d8cb3c8
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: e653d7ae5f2408fd8438cbdf69a28648c6bcc446
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713434"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967107"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Visual Studio 企業版指南
 如果您想要在讓公司在 Visual Studio 上執行時節省時間，請從這裡開始。 本企業指南包含的秘訣可協助您在一般企業案例中安裝和更新 Visual Studio、在發生問題時解除封鎖，以及瞭解如何在您需要更多協助時回報問題。 

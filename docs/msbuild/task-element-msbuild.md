@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d82e2485-e5f0-4936-a357-745bacccc299
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58ac6b02424da40ba1130d8a1b549886c9efd718
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a4b8e3cb3acccc2e7ae4c6c2d93353bec79a3690
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047953"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966041"
 ---
 # <a name="task-element-of-target-msbuild"></a>目標 (MSBuild) 的 Task 元素
 
@@ -50,18 +50,18 @@ ms.locfileid: "93047953"
 |屬性|描述|
 |---------------|-----------------|
 |`Condition`|選擇性屬性。 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
-|`ContinueOnError`|選擇性屬性。 可包含一或多個下列值：<br /><br /> -   **WarnAndContinue** 或 **true** 。 當工作失敗時， [目標](../msbuild/target-element-msbuild.md) 專案和組建中的後續工作會繼續執行，並將工作中的所有錯誤視為警告。<br />-   **ErrorAndContinue** 。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **ErrorAndStop** 或 **false** (預設) 。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱[如何：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。|
+|`ContinueOnError`|選擇性屬性。 可包含一或多個下列值：<br /><br /> -   **WarnAndContinue** 或 **true**。 當工作失敗時， [目標](../msbuild/target-element-msbuild.md) 專案和組建中的後續工作會繼續執行，並將工作中的所有錯誤視為警告。<br />-   **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **ErrorAndStop** 或 **false** (預設) 。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱[如何：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。|
 |`Parameter`|如果工作類別包含一或多個使用 `[Required]` 屬性 (Attribute) 標記的屬性 (Property)，則為必要項目。<br /><br /> 使用者定義的工作參數，其中包含參數值當作它的值。 `Task` 元素中可以有任意數量的參數，而每個屬性 (Attribute) 會對應到工作類別的 .NET 屬性 (Property)。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[輸出](../msbuild/output-element-msbuild.md)|在專案檔中儲存工作的輸出。 工作中可能有零或多個 `Output` 元素。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [Target](../msbuild/target-element-msbuild.md) | MSBuild 工作的容器元素。 |
 
@@ -89,7 +89,7 @@ ms.locfileid: "93047953"
 </Target>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

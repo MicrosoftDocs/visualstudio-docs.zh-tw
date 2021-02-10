@@ -11,20 +11,20 @@ helpviewer_keywords:
 - ProjectOutputFile element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ffe6f95bdfd7795c837aaaa25ec7ef2a35a7ae76
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: a3b5a0f6474231fdc8f7617040ec4aa57056d9c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442024"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966951"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile 項目
   表示當專案專案部署至 SharePoint 時，要包含的個別專案的輸出。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ProjectOutputFile ProjectId = "GUID of the project"
@@ -53,7 +53,7 @@ ms.locfileid: "95442024"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[檔案](../sharepoint/files-element.md)|指定當 SharePoint 專案專案部署至 SharePoint 時要包含的檔案。|
 

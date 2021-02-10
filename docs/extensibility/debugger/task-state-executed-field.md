@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 75b8f9d0-b908-40d0-b109-70feaed2ab0c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa637b8bc29f53ca6dde1b13310d83a5e176408f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 551ac7af1e331f9c1e57b078be4924994ebe8a3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968550"
 ---
 # <a name="task_state_executed-field"></a>TASK_STATE_EXECUTED 欄位
 工作正在執行，但尚未完成。

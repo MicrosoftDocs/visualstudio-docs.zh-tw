@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f99452021b0efef1e5df305e984c684f3f446905
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 29259d71a610a4d83740c139c1309db477288004
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965989"
 ---
 # <a name="task-element-of-usingtask-msbuild"></a>UsingTask (MSBuild) 的 Task 元素
 
@@ -50,13 +50,13 @@ ms.locfileid: "93047899"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |資料|`Task` 標籤之間的文字會逐字傳送給 `TaskFactory`。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | 提供在 MSBuild 中註冊工作的方式。 專案中可能有零或多個 `UsingTask` 項目。 |
 
@@ -77,7 +77,7 @@ ms.locfileid: "93047899"
 </UsingTask>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)
