@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3737bbe8fbffcb89ca4e03bcc6063ba45f8a44fd
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 7cfe141f186f192d17dc64ea3fae58a469e1d063
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971358"
 ---
 # <a name="understand-build-platforms"></a>了解組建平台
 

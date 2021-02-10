@@ -5,18 +5,18 @@ ms.topic: how-to
 ms.date: 09/21/2020
 author: gregvanl
 ms.author: gregvanl
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 994ac7b759b943a2076c4e8f401d757258e782ab
-ms.sourcegitcommit: 0e91210421974ad08189919495a7327e60be93bb
+ms.openlocfilehash: 1a94915748f6c7cedb19a0b27c67eb67d6086963
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99251436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971137"
 ---
 # <a name="supported-visual-studio-features-preview"></a>支援 (Preview 的 Visual Studio 功能) 
 
@@ -105,7 +105,7 @@ Visual Studio 在連接至 codespace 時，提供豐富的開發體驗。 您可
 * 執行緒功能-不支援凍結/解除凍結執行緒、重新命名執行緒，以及顯示來源中的執行緒。
 * 其他逐步執行功能-不支援在屬性和運算子 ( .NET Core) 和逐步執行特定的自動步驟。 
 
-## <a name="features"></a>特性
+## <a name="features"></a>功能
 
 使用連接至 codespace 的 Visual Studio 時，您會取得與在本機工作時相同的協助工具功能。
 

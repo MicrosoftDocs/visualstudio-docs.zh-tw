@@ -16,13 +16,13 @@ dev_langs:
 - VB
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 627122368c90163cf9aef4c8035bfbb67c4a0dba
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: ae5228c4da9abef9b5bee417d5d3d71bb28d416d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441816"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964585"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂驗證規則程式碼
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - unit testing, create unit tests
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c9bdbd545a3509927dd13a800e22b9aaaab2cb2b
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: 684c6254aac8bd45926759e0b6ad96cfe3f6c8ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756626"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964416"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>從程式碼建立單元測試方法存根
 
@@ -60,7 +60,7 @@ ms.locfileid: "97756626"
 
 不過，這項功能也同樣適用於開發人員開始撰寫一些程式碼，並用它啟動單元測試的情況。 在編碼流程內，開發人員可能想要快速建立特定程式碼片段的單元測試方法 Stub (具有適當的測試類別和測試專案)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 [建立單元測試] 來建立單元測試方法虛設常式](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/) \(英文\)
 - [單元測試部落格文章](https://devblogs.microsoft.com/devops/?s=unit+testing) \(英文\)

@@ -8,15 +8,15 @@ ms.topic: tutorial
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 62859c86ff3b4057eceb1f6e00ebfd46867f9927
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: cfb5a8af72d7c41cdee913ee94c382c57e8cf5dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971410"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教學課程 3：建立配對遊戲
 
@@ -57,7 +57,7 @@ ms.locfileid: "96479026"
 
 另外還有絕佳的免費影片學習資源可供您使用。 若要深入瞭解如何在 c # 中進行程式設計，請參閱 [c # 基礎：適用于絕對初學者的開發](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)。 若要深入了解 Visual Basic 中的程式設計，請參閱 [Visual Basic 基礎：徹底初學者開發](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) \(英文\)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要開始本教學課程，請從 **[步驟1：建立專案並將資料表加入至您的表單](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)**。
 

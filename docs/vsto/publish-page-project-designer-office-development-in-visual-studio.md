@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Property Pages dialog box, Publish [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7f68ab8f0ee9efde903148d4702e85e99aad77d2
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bc80a71516f1de8f2a6943d9df7b02341ea786aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971722"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Visual Studio) 中的 [發行] 頁面、[專案設計工具] (Office 開發
   [專案設計工具]  的 [發行]  頁面，可用以設定部署的屬性。

@@ -5,15 +5,15 @@ ms.date: 07/14/2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b811cc3538e3bbb108e50acf50c2fe7a977fe3d
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 09889839c9e2873810c78a5f0c3425820170b68d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211283"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964377"
 ---
 # <a name="debug-and-analyze-unit-tests-with-test-explorer"></a>使用 Test Explorer 來對單元測試進行調試和分析
 
@@ -38,11 +38,11 @@ ms.locfileid: "91211283"
 ## <a name="diagnose-test-method-performance-issues"></a>診斷測試方法效能問題
 
 ::: moniker range="vs-2017"
-若要診斷測試方法為何花費太多時間，請在 [測試總管] 中選取該方法，然後在右鍵功能表上選擇 [設定檔已選取測試]****。 請參閱 [檢測分析報表](../profiling/understanding-instrumentation-data-values.md?view=vs-2017&preserve-view=true)。
+若要診斷測試方法為何花費太多時間，請在 [測試總管] 中選取該方法，然後在右鍵功能表上選擇 [設定檔已選取測試]。 請參閱 [檢測分析報表](../profiling/understanding-instrumentation-data-values.md?view=vs-2017&preserve-view=true)。
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-若要診斷測試方法為何花費太多時間，請在 [測試總管] 中選取該方法，然後選擇右鍵功能表上的 [設定檔]****。 請參閱 [檢測分析報表](../profiling/understanding-instrumentation-data-values.md?view=vs-2017&preserve-view=true)。
+若要診斷測試方法為何花費太多時間，請在 [測試總管] 中選取該方法，然後選擇右鍵功能表上的 [設定檔]。 請參閱 [檢測分析報表](../profiling/understanding-instrumentation-data-values.md?view=vs-2017&preserve-view=true)。
 ::: moniker-end
 
 > [!NOTE]

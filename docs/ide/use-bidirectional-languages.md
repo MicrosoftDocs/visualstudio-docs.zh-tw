@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aa2520527259c476f84d83cdff81d9f96bc2bbd7
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: a16aa4d445878ac8d357fa551e46552a1465bfe1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478961"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971345"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Visual Studio 中的雙向語言支援
 

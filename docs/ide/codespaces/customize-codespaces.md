@@ -5,18 +5,18 @@ ms.topic: how-to
 ms.date: 09/21/2020
 author: gregvanl
 ms.author: gregvanl
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 9072676dfc96ffc6286f81785048eca8ec46b0b8
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 15efee817e41f928e5ca1162e9ace20276bd20d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971150"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>如何自訂 codespace (預覽) 
 
@@ -28,21 +28,21 @@ Windows codespaces 隨附許多已安裝的架構和工具，可讓您立即開�
 
 | 應用程式                                         | 路徑別名 | 版本            |
 |---------------------------------------------|------------|--------------------|
-| .NET                                        | 不適用        | 4.8                |
+| .NET                                        | N/A        | 4.8                |
 | .NET Core 執行階段                           | dotnet     | 2.1、3。1           |
 | .NET Core SDK                               | dotnet     | 2.1、3.1.3、3.1。4  |
 | Azure CLI                                   | Az         | 2.5                |
-| Chocolatey                                  | 崔克      | 0.10.15            |
+| Chocolatey \(英文\)                                  | 崔克      | 0.10.15            |
 | CMake                                       | cmake      | 3.17               |
 | Git                                         | git        | 2.26               |
 | Microsoft build                             | msbuild    | 16.7               |
-| Microsoft SQL Server Express 版本2019   | 不適用        | 15.0               |
+| Microsoft SQL Server Express 版本2019   | N/A        | 15.0               |
 | Ninja                                       | 忍者      | 1.8.2              |
 | Node.js                                     | node       | 12.16              |
 | NPM                                         | npm        | 6.14               |
 | Python                                      | Python     | 3.7                |
 | VC 封裝管理員                          | vcpkg      | 2020.02            |
-| Windows SDK                                 | 不適用        | 10.0.18362         |
+| Windows SDK                                 | N/A        | 10.0.18362         |
 
 上面的清單並不完整，也排除了許多 Visual Studio 安裝的工具 (例如 IISExpress) 。 元件的次要或修補程式版本也可能與上面所述的版本不同。
 
@@ -192,7 +192,7 @@ Azure CLI 安裝在所有 Windows Codespace 環境中，而且可在 path as 上
 
 您可以從 `az login` Azure CLI [檔](/cli/azure/reference-index#az_login)中的命令進一步瞭解。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [什麼是 GitHub Codespaces？](codespaces-overview.md)
 - [如何搭配 codespace 使用 Visual Studio](use-visual-studio-with-codespaces.md)

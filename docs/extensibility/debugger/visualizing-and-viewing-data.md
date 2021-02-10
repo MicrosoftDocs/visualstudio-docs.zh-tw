@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 856788546e10e69a8bb7e2787558505937f9effd
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 61c2094564ea20c1073a198c3da162862c543e65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965352"
 ---
 # <a name="visualizing-and-viewing-data"></a>視覺化和查看資料
 鍵入視覺化程式和自訂檢視器，以對開發人員快速有意義的方式呈現資料。 運算式評估工具 (EE) 可以支援協力廠商類型的視覺化檢視，以及提供自己的自訂檢視器。

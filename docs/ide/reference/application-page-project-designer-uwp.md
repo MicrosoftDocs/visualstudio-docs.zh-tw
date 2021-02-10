@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Application page [UWP project]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 826d408d8e1a6a2cb8bcad956ce930781a9155db
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 21dd08f81802661cae9d77ee3449f4e9369ca768
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965079"
 ---
 # <a name="application-property-page-uwp-projects"></a>應用程式屬性頁 (UWP 專案)
 
@@ -26,7 +26,7 @@ ms.locfileid: "95871362"
 
 ![應用程式屬性頁](media/application-page-uwp.png)
 
-若要存取 [應用程式] 頁面，請在 [方案總管] 中選擇專案節點。 然後選擇 **Project**  >  功能表列上的 [專案 **屬性**]。 屬性頁會在 [應用程式] 索引標籤上開啟。
+若要存取 [應用程式] 頁面，請在 [方案總管] 中選擇專案節點。 然後選擇  >  功能表列上的 [專案 **屬性**]。 屬性頁會在 [應用程式] 索引標籤上開啟。
 
 ## <a name="general-section"></a>[一般] 區段
 

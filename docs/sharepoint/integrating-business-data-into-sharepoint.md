@@ -18,15 +18,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3156adc286222282ae63f70f70838bc6b7155a8
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 94162e2fca66fd86b2ac8b237c518e391d0a9908
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304348"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964676"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>將商務資料整合至 SharePoint
   您可以將商務資料整合到 SharePoint。 商務資料可能來自後端伺服器應用程式，例如 [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)] 、Siebel、SAP 或 Web 服務。 使用者可以在 SharePoint 中使用外部清單或商務資料 Web 組件來查看、加入、更新或刪除商務資料。  使用者也可以在 Microsoft Office 的應用程式（例如 Microsoft Outlook）中離線存取此資料。 如需詳細資訊，請參閱 [哪裡可以顯示外部資料](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14))。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d69308d2f569fc2e0d72dcf64c762687955d4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50281ffdd233debd3c10672868e9debd4b1f395f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965209"
 ---
 # <a name="sccget-function"></a>SccGet 函式
 此函式會取得一或多個檔案的複本，以供您進行編輯，但無法進行編輯。 在大部分的系統中，會將檔案標記為唯讀。
@@ -98,7 +98,7 @@ SCCRTN SccGet(
 
     2. 將本機 *a.txt* 重新命名為 *b.txt*。
 
-    3. `SccGet`針對*a.txt*和*b.txt*呼叫函數。
+    3. `SccGet`針對 *a.txt* 和 *b.txt* 呼叫函數。
 
     4. 由於 *a.txt* 不存在於原始檔控制資料庫中，因此會清除缺少的 *a.txt* 版本資訊的本機版本快取。
 

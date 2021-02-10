@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f6d98eb4-d2fa-49b7-8e3c-bae1ca3cf596
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d25605c83126c41a24f55775d9633e6e4212909c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: ee685fc3deada1a3ac36082fa916b50986900f81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046356"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971241"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .targets 檔案
 
@@ -38,17 +38,17 @@ MSBuild 包含數個 *.targets* 檔案，其中包含常見案例的專案、屬
 
 ## <a name="common-targets-files"></a>通用 .targets 檔案
 
-| *.targets* 檔案 | 描述 |
+| *.targets* 檔案 | Description |
 |---------------------------------| - |
 | *Microsoft.Common.targets* | 定義 Visual Basic 和 c # 專案的標準組建程式中的步驟。<br /><br /> 已透過 *Microsoft.CSharp.targets* 和 *Microsoft.VisualBasic.targets* 檔案匯入，其中包含下列陳述式：`<Import Project="Microsoft.Common.targets" />` |
-| *Microsoft.CSharp.targets* | 針對 Visual C# 專案定義標準建置程序的步驟。<br /><br /> 已透過 Visual C# 專案檔 ( *.csproj* ) 匯入，其中包含下列陳述式︰`<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
-| *Microsoft.VisualBasic.targets* | 針對 Visual Basic 專案定義標準建置程序的步驟。<br /><br /> Visual Basic 專案檔匯入 ( *vbproj* ) ，其中包含下列語句： `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
+| *Microsoft.CSharp.targets* | 針對 Visual C# 專案定義標準建置程序的步驟。<br /><br /> 已透過 Visual C# 專案檔 (*.csproj*) 匯入，其中包含下列陳述式︰`<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
+| *Microsoft.VisualBasic.targets* | 針對 Visual Basic 專案定義標準建置程序的步驟。<br /><br /> Visual Basic 專案檔匯入 (*vbproj*) ，其中包含下列語句： `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
 
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
 
-*Directory.Build.targets* 是使用者定義的檔案，可讓您自訂目錄下的專案。 除非 **ImportDirectoryBuildTargets** 屬性設定為 **false** ，否則系統皆會從 *Microsoft.Common.targets* 自動匯入此檔案。 如需詳細資訊，請參閱[自訂組建](customize-your-build.md)。
+*Directory.Build.targets* 是使用者定義的檔案，可讓您自訂目錄下的專案。 除非 **ImportDirectoryBuildTargets** 屬性設定為 **false**，否則系統皆會從 *Microsoft.Common.targets* 自動匯入此檔案。 如需詳細資訊，請參閱[自訂組建](customize-your-build.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Toolbox, Components tab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ba84712a343a071d6213dc9cd985727fc20ebf
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: adbc2611cf0d0e08ef356e91e25ed0c4854c4386
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965040"
 ---
 # <a name="toolbox-components-tab"></a>工具箱, 元件索引標籤
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeefa26422476ca40e782df3ff35eee9d429a149
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965196"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 函式
 此函數會提示使用者提供指定命令的 advanced 選項。
@@ -74,7 +74,7 @@ SCCRTN SccGetCommandOptions(
 
  如果使用者在同一個對話方塊中再次按一下 [ **Advanced** ]，IDE 就會再次呼叫函式 `SccGetCommandOptions` 而不會變更 `ppvOptions` ，以便將結構傳回至外掛程式。 這可讓外掛程式將其對話方塊重新初始化為使用者先前設定的值。 外掛程式會在傳回之前修改結構。
 
- 最後，當使用者在 IDE 的 [**取得**] 對話方塊中按一下 **[確定**] 時，ide 會呼叫[SccGet](../extensibility/sccget-function.md)，並傳遞傳回的結構， `ppvOptions` 其中包含 advanced 選項。
+ 最後，當使用者在 IDE 的 [**取得**] 對話方塊中按一下 **[確定**] 時，ide 會呼叫 [SccGet](../extensibility/sccget-function.md)，並傳遞傳回的結構， `ppvOptions` 其中包含 advanced 選項。
 
 > [!NOTE]
 > `SCC_COMMAND_OPTIONS`當 IDE 顯示 [**選項**] 對話方塊，可讓使用者設定控制整合運作方式的喜好設定時，就會使用此命令。 如果原始檔控制外掛程式想要提供自己的 [喜好設定] 對話方塊，它可以從 IDE 的 [喜好設定] 對話方塊中的 [ **Advanced** ] 按鈕顯示它。 此外掛程式僅負責取得和保存這項資訊;IDE 不會使用或修改它。

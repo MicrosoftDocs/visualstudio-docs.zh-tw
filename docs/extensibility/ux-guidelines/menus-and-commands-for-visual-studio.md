@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7abb0249efc1a8da5d7e65572777e192e72c25e7
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d28242b70c0c9808cc7eb066341cd2973d2372a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971579"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>適用於 Visual Studio 的功能表和命令
 ## <a name="command-usage"></a>命令使用方式
@@ -93,7 +93,7 @@ ms.locfileid: "97863541"
 
 - Project
 
-- Build
+- 組建
 
 - 偵錯
 
@@ -113,7 +113,7 @@ ms.locfileid: "97863541"
 
 - 格式
 
-- Table
+- 資料表
 
 ##### <a name="when-designing-main-menus-adhere-to-these-rules"></a>設計主功能表時，請遵守下列規則：
 

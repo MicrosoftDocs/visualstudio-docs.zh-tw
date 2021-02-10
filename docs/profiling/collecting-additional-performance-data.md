@@ -6,16 +6,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b8dd95a9fbf4cba0841488132e3c2ab84f4f6385
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 2929f6b9e82a7a156034178f7e7f5f5d678ac842
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150401"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971202"
 ---
 # <a name="collect-additional-performance-data"></a>收集其他效能資料
 
@@ -23,7 +23,7 @@ ms.locfileid: "98150401"
 
 ## <a name="common-tasks"></a>常見工作
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**收集應用程式中 ADO.NET 呼叫的效能資料。** 新增您應用程式對資料庫提出之同步呼叫的資料。|- [收集階層互動資料](../profiling/collecting-tier-interaction-data.md)|
 |**收集 Windows 效能計數器資料。** 將系統效能計數器當成分析標記新增至分析資料。 標記可以用來篩選報表。|- [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)|

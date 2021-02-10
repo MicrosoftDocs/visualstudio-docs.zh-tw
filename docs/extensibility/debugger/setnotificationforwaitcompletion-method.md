@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: da149c9a-20f4-4543-a29e-429c8c1d2e19
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80904e95c1561dd20ed2a6cc9ad561e6c18ee93a
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 2418e958c027fea7fd39c93b0d5abbd95d64435b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960788"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion 方法
 設定或清除 TASK_STATE_WAIT_COMPLETION_NOTIFICATION 狀態位。

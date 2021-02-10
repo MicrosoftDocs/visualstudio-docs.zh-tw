@@ -14,15 +14,15 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c60372d7268dd76bf9bbd967678490998ffa76c3
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 46eae980a1dafc8e9b7f95f5d40593e57045cc01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971319"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 Intellisense
 
@@ -40,7 +40,7 @@ IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 In
 
 ![Visual Studio 成員清單](../ide/media/vs2015_intellisense.png)
 
-您可以輸入 **Ctrl** **List Members** + **J**、選擇 [**編輯**  >  **IntelliSense**  >  **清單成員**]，或選擇編輯器工具列上的 [**列出成員**] 按鈕，手動叫用 [列出成員] 功能。 在空白行或可辨識範圍外叫用清單時，清單會顯示全域命名空間中的符號。
+您可以輸入 **Ctrl**  + **J**、選擇 [**編輯**  >  **IntelliSense**  >  **清單成員**]，或選擇編輯器工具列上的 [**列出成員**] 按鈕，手動叫用 [列出成員] 功能。 在空白行或可辨識範圍外叫用清單時，清單會顯示全域命名空間中的符號。
 
 若要預設關閉 [列出成員] (，使其不會出現，除非特別叫用) ，請移至 [**工具**  >  **選項**  >  **所有語言**]，然後取消選取 [**自動列出成員**]。 如果您想要只關閉特定語言的 [列出成員]，請移至該語言的 [一般] 設定。
 
@@ -80,12 +80,12 @@ IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 In
 
 ## <a name="intellisense-options"></a>IntelliSense 選項
 
-IntelliSense 選項預設為開啟。 **Tools**  >  **Options**  >  如果您不想要列出成員功能，請選擇 [工具選項 **文字編輯器**]，然後取消選取 [**參數資訊**] 或 [**自動列出成員**]。
+IntelliSense 選項預設為開啟。   >    >  如果您不想要列出成員功能，請選擇 [工具選項 **文字編輯器**]，然後取消選取 [**參數資訊**] 或 [**自動列出成員**]。
 
 ## <a name="intellisense-icons"></a>IntelliSense 圖示
 IntelliSense 中的圖示可以搭配圖示修飾詞來傳達其他意義。 這些是在物件圖示頂端的階層式星形、心形和鎖定圖示，可分別傳達受保護、內部或私人等意義。
 
-|    圖示    |    Accessibility    |    描述    |
+|    圖示    |    協助工具選項    |    Description    |
 |------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![公用圖示修飾詞](../ide/media/intellisensePublicNoModifier.png)       |    公用類別    |    未限制存取。   |
 | ![受保護圖示修飾詞](../ide/media/intellisenseProtectedModifier.png)       |    受保護類別    |    存取限於包含類別或衍生自包含類別的類型。    |

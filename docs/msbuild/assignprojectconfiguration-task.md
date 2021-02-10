@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 09633a0b-8f6f-4aba-8058-7cb4d13ce2c0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 496b6d538385473d50baec80e30fbc269e06c1f6
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 18dab3d34f4c1c11fa2c212f12ca875cb1b7f3b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189702"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964949"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 工作
 
@@ -30,12 +30,12 @@ ms.locfileid: "96189702"
 
  下表說明 `AssignProjectConfiguration` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`ProjectReferences`|必要 <xref:Microsoft.Build.Framework.ITaskItem> `[]` 的輸入參數。<br /><br /> 要設定的專案。|
 |`SolutionConfigurationContents`|選擇性的 `string` 輸出參數。<br /><br /> 包含 XML 字串，其中含有每個專案的專案組態。 工作會將組態指派給具名的專案。|
 |`DefaultToVcxPlatformMapping`|選擇性的 `string` 輸出參數。<br /><br /> 包含以分號分隔的對應清單，這些對應是從大部分類型所使用之平台名稱到 *.vcxproj* 檔案所使用之平台名稱的對應。<br /><br /> 例如：<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
-|`VcxToDefaultPlatformMapping`|選用<br /><br /> `string` 輸出參數。<br /><br /> 包含從 .vcxproj 平臺名稱到大部分類型所使用之平臺名稱的對應清單（以分號分隔） *。*<br /><br /> 例如：<br /><br /> `"Win32=AnyCPU;X64=X64"`|
+|`VcxToDefaultPlatformMapping`|選擇性<br /><br /> `string` 輸出參數。<br /><br /> 包含從 .vcxproj 平臺名稱到大部分類型所使用之平臺名稱的對應清單（以分號分隔） *。*<br /><br /> 例如：<br /><br /> `"Win32=AnyCPU;X64=X64"`|
 |`CurrentProjectConfiguration`|選擇性的 `string` 輸出參數。<br /><br /> 包含目前專案的組態。|
 |`CurrentProjectPlatform`|選擇性的 `string` 輸出參數。<br /><br /> 包含目前專案的平台。|
 |`OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration`|選擇性的 `bool` 輸出參數。<br /><br /> 包含旗標，指出即使已在專案組態中停用參考，還是應該建置它們。|
