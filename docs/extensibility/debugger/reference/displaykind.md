@@ -7,23 +7,23 @@ helpviewer_keywords:
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7634ae3ee03b7e577f0621ffc263e4d45bfe194
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62421ad9bf03c3b8eb21539f2f53fd8a632498ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737258"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953769"
 ---
 # <a name="displaykind"></a>DisplayKind
 列舉代表要從 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 物件取得並向使用者顯示之資訊類型的有效值。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DisplayKind
@@ -54,7 +54,7 @@ public enum enum_DisplayKind
 `DisplayKind_Type`\
 欄位的類型。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： Ee. h
 
 命名空間： VisualStudio

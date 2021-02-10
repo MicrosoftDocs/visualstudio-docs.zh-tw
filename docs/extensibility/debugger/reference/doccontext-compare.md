@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75e4453cae63f484961cb2d0f3385a703709f83b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db66748a1665d5ab965f20295258efd65ec43d38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953717"
 ---
 # <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
 指定用於比較兩個檔內容的準則。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DOCCONTEXT_COMPARE {
@@ -64,7 +64,7 @@ enum enum_DOCCONTEXT_COMPARE {
 
 這些值用來指定在清單中尋找第一個檔內容的比較準則。 檔內容會取得一份檔內容清單，以透過方法進行比較 `IDebugDocumentContext2::Compare` 。 接著會傳回清單中的第一個檔內容，其比較運算子會 `true` 傳回。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

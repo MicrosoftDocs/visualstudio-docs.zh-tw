@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 06c66b87-db95-4400-ab26-5d33e743a439
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6cab0d0d0f5f1c2e491c9aa0fe9efd26b39e51df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 216d1e0e007376b88b8befd2bf654a65192b13c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726483"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953639"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
 判斷物件是否為透明的 proxy。

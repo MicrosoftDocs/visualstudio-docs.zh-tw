@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28863549ab3eac96322530bc85c52697f20448c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 384d71d6f88e8cd792585bb097594fa7b1e38c64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737165"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953743"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` 表示無法使用 [ **編輯後繼續** ] 的原因。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
-enum tagEncUnavailableReason {
+enum tagEncUnavailableReason {
     ENCUN_NONE,
     ENCUN_INTEROP,
     ENCUN_SQLCLR,
@@ -37,11 +37,11 @@ enum tagEncUnavailableReason {
     ENCUN_ATTACH,
     ENCUN_WIN64
 };
-typedef enum tagEncUnavailableReason EncUnavailableReason;
+typedef enum tagEncUnavailableReason EncUnavailableReason;
 ```
 
 ```csharp
-public enum EncUnavailableReason {
+public enum EncUnavailableReason {
     ENCUN_NONE,
     ENCUN_INTEROP,
     ENCUN_SQLCLR,
@@ -77,7 +77,7 @@ public enum EncUnavailableReason {
 ## <a name="remarks"></a>備註
 這個列舉僅供內部使用 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。 自訂埠供應商所執行的 [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) 和 [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) 方法應該一律會傳回 `E_NOTIMPL` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg .idl
 
 命名空間： VisualStudio

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6801176964a47646f03091131e1be89cf63c97f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc6fc188537799a8a3eeab66dd4af1d92ffb67db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726308"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953574"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80726308"
 
  這個介面代表系結器建立的物件，用來封裝符號和運算式的值。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugObject : IUnknown
@@ -56,7 +56,7 @@ IDebugObject : IUnknown
 ## <a name="remarks"></a>備註
  運算式評估工具會使用這個介面作為基類，以表示剖析樹狀結構中的物件。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： ee. h
 
  命名空間： VisualStudio
@@ -66,4 +66,4 @@ IDebugObject : IUnknown
 ## <a name="see-also"></a>另請參閱
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)
-- [繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+- [綁定](../../../extensibility/debugger/reference/idebugbinder-bind.md)

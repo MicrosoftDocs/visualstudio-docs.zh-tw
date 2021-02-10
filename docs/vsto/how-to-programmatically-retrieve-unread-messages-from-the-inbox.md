@@ -14,15 +14,15 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], unread mail
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6dae629c008c04f7ee9fb66b9dbc5f8f31e53d4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 82bd595b76a03ee730995e546fd9c4e827c95a53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953847"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>如何：以程式設計方式從收件匣取出未讀取的訊息
   此範例會從 Outlook **收件** 匣抓取未閱讀的電子郵件訊息，並顯示專案數。

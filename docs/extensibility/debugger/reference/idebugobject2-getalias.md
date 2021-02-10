@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 53c72182b497e2b24d41a784c405d169c3db195f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f2fa330b98a37f3946ef19bc2f5641b5b525d88
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726282"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953483"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 取得與此物件相關聯的別名（如果有的話）。
@@ -28,14 +28,14 @@ ms.locfileid: "80726282"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetAlias(
-   IDebugAlias** ppAlias
+HRESULT GetAlias(
+   IDebugAlias** ppAlias
 );
 ```
 
 ```csharp
-int GetAlias(
-   out IDebugAlias ppAlias
+int GetAlias(
+   out IDebugAlias ppAlias
 );
 ```
 

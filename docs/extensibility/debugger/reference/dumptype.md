@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d4d42709efdefe097b4c8a78a0b00f45f2e1a2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99e7e5a9e092118eb40501e6f2ba3cc580cf7cc7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953730"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 指定程式的狀態 (（例如，執行中的執行緒、堆疊框架和目前的指令位址) 傾印）。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DUMPTYPE {
@@ -52,7 +52,7 @@ public enum enum_DUMPTYPE {
 ## <a name="remarks"></a>備註
 以引數形式傳遞至 [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) 方法。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio
