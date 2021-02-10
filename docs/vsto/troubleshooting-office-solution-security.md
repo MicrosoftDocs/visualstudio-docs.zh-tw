@@ -11,15 +11,15 @@ helpviewer_keywords:
 - security [Office development in Visual Studio], troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 89ca980b378ee71d1db9b373459c8b7309f0ecc2
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 04b68a8207dad1edf83462a8284a69c73c668006
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969200"
 ---
 # <a name="troubleshoot-office-solution-security"></a>針對 Office 方案安全性進行疑難排解
   本主題包含的秘訣可解決您在使用保護 Office 方案時可能遇到的常見問題。

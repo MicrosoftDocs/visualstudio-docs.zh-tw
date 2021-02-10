@@ -13,15 +13,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], importing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9b65502bbf29f6e0df7435f6a27d3c51e8082e41
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4b60060f8db2bf2bb1abf42803a8c80333ee5fc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969148"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>逐步解說：匯入在 Outlook 中設計的表單區域
   本逐步解說示範如何在 Microsoft Office Outlook 中設計表單區域，然後使用 [新增表單區域精靈]  將表單區域匯入至 Outlook VSTO 增益集專案。 在 Outlook 中設計表單區域可讓您將原生 Outlook 控制項加入繫結至 Outlook 資料的表單區域。 匯入表單區域之後，即可處理每個控制項的事件。
@@ -244,7 +244,7 @@ ms.locfileid: "97522675"
 
      [完成 50% - 相依工作] 現在會出現在 [這項工作相依於下列工作]  清單方塊中。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  從這些主題，您可以進一步了解如何自訂 Outlook 應用程式的 UI：
 
 - 若要深入瞭解如何藉由將 managed 控制項拖曳至視覺化設計工具來設計表單區域的外觀，請參閱 [逐步解說：設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。

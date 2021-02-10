@@ -15,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 95108a5901a00582e708f6bf3660cb07d2126e0a
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 5d3d52266bf94c0badefb71d5109ad393e071db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442595"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970448"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>如何：存取負載測試結果以進行分析
 

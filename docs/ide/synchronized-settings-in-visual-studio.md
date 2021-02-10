@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 310e716f890dcc2185d6ebf6e60411934a1761f4
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 396981533502f2687040f470ded9b490cab1ef7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970630"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>跨多部電腦同步處理 Visual Studio 設定
 
@@ -49,12 +49,12 @@ ms.locfileid: "96560911"
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>關閉特定電腦的同步設定
 
-Visual Studio 的同步設定預設為開啟。 您可以前往 [**工具** 選項環境帳戶] 頁面關閉電腦上的同步  >  **Options**  >  **Environment**  >  **Accounts** 處理設定，並 **在登入 Visual Studio 時** 取消核取各裝置的設定。
+Visual Studio 的同步設定預設為開啟。 您可以前往 [**工具** 選項環境帳戶] 頁面關閉電腦上的同步  >    >    >  處理設定，並 **在登入 Visual Studio 時** 取消核取各裝置的設定。
 
 例如，如果您決定不要同步處理電腦 "A" 上 Visual Studio 中的設定，則在電腦 "A" 上所做的任何設定變更都不會出現在電腦 "B" 或電腦 "C" 上。 電腦 "B" 和 "C" 會繼續互相同步處理，但不會和電腦 "A" 同步。
 
 > [!NOTE]
-> 如果您選擇 [**工具** 選項環境帳戶] 頁面上的選項來選擇不同步處理設定  >  **Options**  >  **Environment**  >  **Accounts** ，則您在相同電腦上的其他 Visual Studio 版本或版本不會受到影響。 Visual studio 的那些並存安裝將繼續同步處理其設定 (除非您也在該處取消選取選項)。
+> 如果您選擇 [**工具** 選項環境帳戶] 頁面上的選項來選擇不同步處理設定  >    >    >   ，則您在相同電腦上的其他 Visual Studio 版本或版本不會受到影響。 Visual studio 的那些並存安裝將繼續同步處理其設定 (除非您也在該處取消選取選項)。
 
 ## <a name="synchronize-settings-across-visual-studio-ide-products-and-editions"></a>同步處理 Visual Studio IDE 產品和版本之間的設定
 

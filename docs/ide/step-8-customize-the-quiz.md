@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 21403aeb51f342f607575d99a79ce2bdb7aaa54a
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 727d880caf912441009bda66bf516d501bd7303f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479312"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969642"
 ---
 # <a name="step-8-customize-the-quiz"></a>步驟 8：自訂測驗
 

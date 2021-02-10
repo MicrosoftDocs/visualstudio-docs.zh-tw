@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d51a541edb30e24405faccfec6e05264303d049
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2f7941b3a2c9c3fe71119e3a4413ad97f56b6290
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969850"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>在類別設計工具中將類別與類型重構
 

@@ -11,13 +11,13 @@ helpviewer_keywords:
 - item templates, parameters
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 8e575011f76370083b5a0f461fbb62bbbc839ea3
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+manager: jmartens
+ms.openlocfilehash: 133fbec68ff0e6b04793c2e168c730ee37024ad4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970644"
 ---
 # <a name="template-parameters"></a>範本參數
 
@@ -49,7 +49,7 @@ ms.locfileid: "96479193"
 
 下表列出可用於任何範本的保留範本參數：
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |clrversion|通用語言執行平台 (CLR) 的最新版本。|
 |ext_*|將 `ext_` 前置詞新增至任何參數，以參考父代範本的變數。 例如： `ext_safeprojectname` 。|

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7e807a5673f27da6a852fd2c83347d1348f1f6fd
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 065a904047630d15a8e9ed167a6a4a2764858387
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844409"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970318"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>如何：將 XMLMappedRange 控制項加入至工作表
   當您將 XML 專案對應至 Microsoft Office Excel 中的資料格時，Visual Studio 會自動將 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控制項加入至您的工作表。

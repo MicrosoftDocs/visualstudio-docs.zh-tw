@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 94603c2da0eb339df52aa58e3b2bb5666b75ead7
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: f208dd19674a257381db6feeaf47df5d3951ff9d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969291"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>如何：指定負載測試回合設定的計時詳細資料儲存區屬性
 

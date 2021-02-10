@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c97ab4db9b71c91689abe0afb85230e5b0242962
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: b0d02107e8f0128e7a91f679eb8c651515e39ace
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969898"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>舊版語言服務中的 [自動變數] 視窗支援
 

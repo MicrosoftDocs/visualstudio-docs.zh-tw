@@ -9,15 +9,15 @@ helpviewer_keywords:
 - stories
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40418b2d188ac5482a12dd4ffdddd221bf5d2f97
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d55e549d2dccdc047cbf4449392cc090a569f85c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361959"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970578"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 
@@ -98,7 +98,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 請參閱 [模型應用程式架構](../modeling/model-your-app-s-architecture.md) ，以瞭解如何開發符合服務需求品質的程式碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)
 - [建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)

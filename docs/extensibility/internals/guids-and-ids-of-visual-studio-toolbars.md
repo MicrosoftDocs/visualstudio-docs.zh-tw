@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480378"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970214"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 工具列的 Guid 和識別碼
 本主題列舉 Visual Studio 整合式開發環境中包含的工具列 GUID 和識別碼值 (IDE) 以及它們所包含的群組。 這些值會定義在 *.vsct* 檔案中，這些檔案會安裝為 Visual Studio SDK 的一部分。 如需詳細資訊，請參閱 [IDE 定義的命令、功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。

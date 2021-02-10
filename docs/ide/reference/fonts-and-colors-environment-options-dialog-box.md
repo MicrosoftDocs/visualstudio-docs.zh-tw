@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbd42b0e4eae6d124fc59d68592155bf2c9bd49
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: ccc2309cf3ccc51c82796816f635908b55b81901
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969746"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 
@@ -101,7 +101,7 @@ ms.locfileid: "96617522"
 
 部分顯示項目包括：
 
-|顯示項目|描述|
+|顯示項目|Description|
 |------------------|-----------------|
 |**純文字**|編輯器中的文字。|
 |**選取的文字**|當編輯器具有焦點時，目前的選取範圍中所包含的文字。|
@@ -222,7 +222,7 @@ ms.locfileid: "96617522"
 
 當您第一次開啟 Visual Studio 時的項目顯示色彩。 按一下 [使用預設] 按鈕會重設成這個色彩。
 
-**自訂**
+**Custom**
 
 顯示 [色彩] 對話方塊，以讓您設定 [顯示項目] 清單中選取的項目的自訂色彩。
 
@@ -241,7 +241,7 @@ ms.locfileid: "96617522"
 
 當您第一次開啟 Visual Studio 時的項目顯示色彩。 按一下 [使用預設] 按鈕會重設成這個色彩。
 
-**自訂**
+**Custom**
 
 顯示 [色彩] 對話方塊，以讓您設定 [顯示項目] 清單中選取的項目的自訂色彩。
 

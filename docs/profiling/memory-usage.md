@@ -6,15 +6,15 @@ ms.date: 04/25/2018
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d259c6fa69821d1fecd26944227bff86cc82104
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: ef2ddd4011f807099c6bc82447f888b56f151e72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815850"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969408"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>在 Visual Studio 中測量記憶體使用量
 
@@ -165,7 +165,7 @@ ms.locfileid: "97815850"
 
 [Visual C++ Blog: Memory Profiling in Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/) (Visual C++ 部落格：Visual C++ 2015 中的記憶體分析)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在本教學課程中，您已了解如何收集並分析記憶體使用量資料。 如果您已完成[分析工具的教學課程](../profiling/profiling-feature-tour.md)，建議您快速查看如何分析應用程式的 CPU 使用量。
 

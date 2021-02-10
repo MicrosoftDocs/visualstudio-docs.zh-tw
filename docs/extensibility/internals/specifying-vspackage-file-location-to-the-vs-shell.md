@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e59bea4894d6b0014542ea2a32bf6c73bc8d797c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 12034ef884fafda2e3e09722b9bb187ed7a1cbb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877854"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969967"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>為 VS Shell 指定 VSPackage 檔案位置
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須能夠找出元件 DLL 以載入 VSPackage。 您可以用各種方式找出它，如下表所述。

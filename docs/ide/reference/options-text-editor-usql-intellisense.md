@@ -9,19 +9,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HQL.IntelliSense
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c1aea741c91f38be9d5b423226e635b77e440d9e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 1fe7fc81fdc27fc2cdb126e2bf50d07dd3048ec9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970825"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>選項、文字編輯器、U-SQL、IntelliSense
 
-使用 [IntelliSense] 選項頁面修改 U-SQL 的一些文字編輯器設定。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]，然後選擇 [**文字編輯器**]-[文字編輯器]  >  **U-SQL**  >  ****。
+使用 [IntelliSense] 選項頁面修改 U-SQL 的一些文字編輯器設定。 若要存取此選項頁面，請選擇 [**工具**  >  **選項**]，然後選擇 [**文字編輯器**]-[文字編輯器]  >    >  ****。
 
 ## <a name="intellisense-settings"></a>IntelliSense 設定
 

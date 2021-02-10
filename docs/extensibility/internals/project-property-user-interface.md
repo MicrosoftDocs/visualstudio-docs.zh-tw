@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c9bba8b163b7fd21cfa829bb26e06cf37b887bd
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: da60258f41665bbbb5510eb73b4fbca0a88809ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877386"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970175"
 ---
 # <a name="project-property-user-interface"></a>專案屬性使用者介面
 
@@ -59,7 +59,7 @@ ms.locfileid: "97877386"
 
 專案子類型所加入的新屬性頁面，會從基底專案執行中，傳遞專案設定流覽物件。 此專案設定流覽物件支援 Automation 擴充項。 如需 AutomationExtenders 的詳細資訊，請參閱 [執行和使用 Automation](/previous-versions/0y92k2w2(v=vs.140))擴充項。 專案子類型所實的屬性頁面 <xref:EnvDTE.Project.Extender%2A> 會呼叫，以抓取其自己的專案子類型設定流覽物件，此物件會擴充基底專案的設定流覽物件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:EnvDTE.IFilterProperties>
 - [[屬性頁] 對話方塊](/previous-versions/visualstudio/visual-studio-2010/as5chysf(v=vs.100))

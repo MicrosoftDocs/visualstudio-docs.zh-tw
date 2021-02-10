@@ -13,20 +13,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <formRegions> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6f98c74c2df998f0e79f5b95a316a7917304e029
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1a718c6a247528788d91e9c1f30ad636acb7ab9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970331"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 開發的 f s 元素
   `formRegions`命名空間的元素 `vstov4` 包含與 VSTO 增益集相關聯的 Microsoft Office Outlook 表單區域。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <formRegions>
@@ -49,7 +49,7 @@ ms.locfileid: "85538355"
 
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例
 
-### <a name="description"></a>說明
+### <a name="description"></a>Description
  下列程式碼範例說明使用 `formRegions` 所部署之應用程式層級 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼

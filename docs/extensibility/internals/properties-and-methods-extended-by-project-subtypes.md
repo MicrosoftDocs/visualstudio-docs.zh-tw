@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cff332d7b573bb2fdff886b4206ea1267c091c48
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8d5d81135a2571db3c84b67acb2fa08e4f83f57d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878036"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970058"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>專案子類型所擴充的屬性和方法
 專案子類型有許多強大的功能可影響專案的行為，因為它會被視為基底專案的匯總工具。 本節將摘要說明專案子類型可以增強或修改的部分功能。
@@ -50,5 +50,5 @@ ms.locfileid: "97878036"
 
  基底專案提供上述屬性的預設執行。 基底專案會藉由 `QueryInterface` <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 在最外層的專案子類型上呼叫來取得這些專案，進而允許專案子類型覆寫屬性的執行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [設計專案子類型](../../extensibility/internals/project-subtypes-design.md)

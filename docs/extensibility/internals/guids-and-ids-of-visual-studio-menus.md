@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0203c8b7028fb170ae2ba4d2cc9d6f1825414f64
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: bd2bdc047ddd5a568aca01ed99b6148b0f288faa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970266"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 功能表的 Guid 和識別碼
 本文列舉 Visual Studio 功能表列上功能表和群組的 GUID 和識別碼值。 這些值會定義在 *.vsct* 檔案中，這些檔案會安裝為 Visual Studio SDK 的一部分。 如需詳細資訊，請參閱 [IDE 定義的命令、功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -34,11 +34,11 @@ ms.locfileid: "96480404"
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Visual Studio 功能表列上的群組
  若要將功能表新增至功能表列，請將其中一個群組設定為其父項。
 
-|群組|識別碼|
+|Group|識別碼|
 |-----------|--------|
 |檔案/編輯/查看|IDG_VS_MM_FILEEDITVIEW|
 |重構|IDG_VS_MM_REFACTORING：|
-|專案|IDG_VS_MM_PROJECT|
+|Project|IDG_VS_MM_PROJECT|
 |組建|IDG_VS_MM_BUILDDEBUGRUN|
 |格式/工具|IDG_VS_MM_TOOLSADDINS|
 |視窗/說明/群體|IDG_VS_MM_WINDOWHELP|
@@ -54,7 +54,7 @@ ms.locfileid: "96480404"
 |編輯|IDM_VS_MENU_EDIT|
 |檢視|IDM_VS_MENU_VIEW|
 |重構|IDM_VS_MENU_REFACTORING|
-|專案|IDM_VS_MENU_PROJECT|
+|Project|IDM_VS_MENU_PROJECT|
 |組建|IDM_VS_MENU_BUILD|
 |格式|IDM_VS_MENU_FORMAT|
 |工具|IDM_VS_MENU_TOOLS|
@@ -69,11 +69,11 @@ ms.locfileid: "96480404"
 
 ### <a name="file-menu-groups"></a>檔案功能表群組
 
-|群組|識別碼|
+|Group|識別碼|
 |-----------|--------|
 |新增/開啟|IDG_VS_FILE_FILE|
 |加|IDG_VS_FILE_ADD|
-|解決方法|IDG_VS_FILE_SOLUTION|
+|解決方案|IDG_VS_FILE_SOLUTION|
 |其他|IDG_VS_FILE_MISC|
 |儲存|IDG_VS_FILE_SAVE|
 |重新命名|IDG_VS_FILE_RENAME|
@@ -85,7 +85,7 @@ ms.locfileid: "96480404"
 
 ### <a name="edit-menu-groups"></a>編輯功能表群組
 
-|群組|識別碼|
+|Group|識別碼|
 |-----------|--------|
 |復原/取消復原|IDG_VS_EDIT_UNDOREDO|
 |剪下/複製/貼上|IDG_VS_EDIT_CUTCOPY|
@@ -98,14 +98,14 @@ ms.locfileid: "96480404"
 
 ### <a name="refactor-menu-groups"></a>重構功能表群組
 
-|群組|識別碼|
+|Group|識別碼|
 |-----------|--------|
 |通用|IDG_REFACTORING_COMMON|
 |進階|IDG_REFACTORING_ADVANCED|
 
 ### <a name="view-menu-groups"></a>視圖功能表群組
 
-|群組|識別碼|
+|Group|識別碼|
 |-----------|--------|
 |表單程式碼|IDG_VS_VIEW_FORMCODE|
 |瀏覽器|IDG_VS_VIEW_BROWSER|
@@ -126,29 +126,29 @@ ms.locfileid: "96480404"
 
 ### <a name="project-menu-groups"></a>專案功能表群組
 
-|群組|識別碼|
+|Group|識別碼|
 |-----------|--------|
 |其他新增|IDG_VS_PROJ_MISCADD|
 |加|IDG_VS_PROJ_ADD|
 |資料夾|IDG_VS_PROJ_FOLDER|
 |Unload/重載|IDG_VS_PROJ_UNLOADRELOAD|
-|參考資料|IDG_VS_PROJ_REFERENCE|
+|參考|IDG_VS_PROJ_REFERENCE|
 |選項|IDG_VS_PROJ_OPTIONS|
 |設定|IDG_VS_PROJ_SETTINGS|
 
 ### <a name="build-menu-groups"></a>組建功能表群組
 
-|群組|識別碼|
+|Group|識別碼|
 |-----------|--------|
-|解決方法|IDG_VS_BUILD_SOLUTION|
-|選取項目|IDG_VS_BUILD_SELECTION|
+|解決方案|IDG_VS_BUILD_SOLUTION|
+|選取|IDG_VS_BUILD_SELECTION|
 |特性指引最佳化|IDG_VS_PGO_SELECTION|
 |其他|IDG_VS_BUILD_MISC|
 |取消|IDG_VS_BUILD_CANCEL|
 
 ### <a name="tools-menu-groups"></a>工具功能表群組
 
-|群組|識別碼|
+|Group|識別碼|
 |-----------|--------|
 |命令列|IDG_VS_TOOLS_CMDLINE|
 |程式碼片段|IDG_VS_TOOLS_SNIPPETS|
@@ -160,18 +160,18 @@ ms.locfileid: "96480404"
 
 ### <a name="window-menu-groups"></a>視窗功能表群組
 
-|群組|識別碼|
+|Group|識別碼|
 |-----------|--------|
 |新增|IDG_VS_WINDOW_NEW|
 |停駐/關閉|IDG_VS_DOCKCLOSE|
 |停駐/隱藏|IDG_VS_DOCKHIDE|
 |排列|IDG_VS_WINDOW_ARRANGE|
 |導覽|IDG_VS_WINDOW_NAVIGATION|
-|清單|IDG_VS_WINDOW_LIST|
+|List|IDG_VS_WINDOW_LIST|
 
 ### <a name="help-menu-groups"></a>說明功能表群組
 
-|群組|識別碼|
+|Group|識別碼|
 |-----------|--------|
 |範例|IDG_VS_HELP_SAMPLES|
 |支援|IDG_VS_HELP_SUPPORT|

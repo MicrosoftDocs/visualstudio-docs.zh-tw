@@ -5,18 +5,18 @@ ms.topic: how-to
 ms.date: 09/21/2020
 author: gregvanl
 ms.author: gregvanl
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c3a2e14236c2d24bc9650fab81150cc295826844
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 95ed318c327735c85fda854d207b36874eeffca7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970981"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>如何搭配使用 Visual Studio 與 codespace (Preview) 
 

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdd987a5153a4f421b4bfad83e1ce7979dddb54
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 6bc802d48bc76bc5f0c6a4c272bf994e87bb8443
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970305"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>How to：根據 XSD 架構建立 XML 檔
 
@@ -45,9 +45,9 @@ ms.locfileid: "93398887"
 
 1. 遵循 how [to：建立和編輯 XSD 架構](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)檔案中的步驟。
 
-2. 在 [XML 架構瀏覽器](../xml-tools/xml-schema-explorer.md)中，以滑鼠右鍵按一下 `PurchaseOrder` 全域元素，然後選取 [ **產生範例 XML** ]。
+2. 在 [XML 架構瀏覽器](../xml-tools/xml-schema-explorer.md)中，以滑鼠右鍵按一下 `PurchaseOrder` 全域元素，然後選取 [ **產生範例 XML**]。
 
-     當您選取此選項時，PurchaseOrder。 *xml 檔案* 中會產生下列 xml 內容範例，並在 xml 編輯器中開啟：
+     當您選取此選項時，PurchaseOrder。*xml 檔案* 中會產生下列 xml 內容範例，並在 xml 編輯器中開啟：
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

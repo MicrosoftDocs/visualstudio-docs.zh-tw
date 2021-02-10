@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 43e8f9806c724da414940c92b6609846486a49c0
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: b40620388ffb3aefcd77eeb3f60355ed293ea59d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970565"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 方法會在 .vsp 檔案中 `CommentMarkAtProfile` 插入時間戳記值、數位標記和批註字串。  時間戳記值可以用來同步處理外部事件。 針對要插入的標記和註解，包含 CommentMarkAtProfile 函式之執行緒的分析必須是 ON。
@@ -49,7 +49,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值
  此函式會使用 **PROFILE_COMMAND_STATUS** 列舉來指出成功或失敗。 傳回值可以是下列其中一個：
 
-|列舉值|說明|
+|列舉值|Description|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|參數小於或等於 0。 會保留這些值。 不會記錄標記和註解。|
 |MARK_ERROR_MODE_NEVER|呼叫函式時，分析模式設定為 NEVER。 不會記錄標記和註解。|

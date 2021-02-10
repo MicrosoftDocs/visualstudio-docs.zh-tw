@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: f0d62318-b0e8-49c6-9a30-9f7a6adef2f6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f05ca0a11060e2a9009b38b0caf7ce9172773f36
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: dd77161184c5cb8be89ed522bbf06b6d80ca4bee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969499"
 ---
 # <a name="command-line-profiling-of-services"></a>服務的命令列分析
 本節說明從命令列使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集 Windows 服務之效能資料的程序和選項。
@@ -29,7 +29,7 @@ ms.locfileid: "98533650"
 
 ## <a name="common-tasks"></a>常見工作
 
-| 工作 | 相關內容 |
+| Task | 相關內容 |
 | - | - |
 | **收集應用程式統計資料：** 使用取樣方法收集效能統計資料。 取樣資料可用來分析 CPU 使用率的問題，以及了解應用程式的一般效能特性。 | -   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md) |
 | **收集詳細計時資料：** 使用檢測方法收集詳細的計時資訊。 檢測資料可用來分析 IO 問題，並且適用於更細緻的應用程式案例分析。 | -   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md) |

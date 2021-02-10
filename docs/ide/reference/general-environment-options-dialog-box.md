@@ -19,15 +19,15 @@ helpviewer_keywords:
 - Environment Options dialog box
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6068f63cc9c2e7abe36b6eac804beaaa6603303e
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: b58cf19406d49c175a07ab5e3dad60fd0354c656
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969694"
 ---
 # <a name="options-dialog-box-environment--general"></a>選項對話方塊：環境 \> 一般
 

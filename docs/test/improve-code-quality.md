@@ -8,16 +8,16 @@ helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: cc5a1a7b72dcbdba8b874958bbef47ac4b98e936
-ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
+ms.openlocfilehash: 0c3f40900c30ca3632b3e82c4b197f28f9d108bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969239"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>先查看 Visual Studio 中的測試控管
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d55a4be044c44567f65e312d013ebdb61314ea00
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 7ccd63039b55fce076153cbb2a60bd04a1ca674c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877789"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970162"
 ---
 # <a name="project-type-essentials"></a>專案類型的基本資訊
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包含多種語言的專案類型，例如 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 也可讓您建立自己的專案類型。
@@ -66,5 +66,5 @@ ms.locfileid: "97877789"
 
 - 專案類型可以支援多個設定，例如 Debug 和 Release。 使用者可以使用您提供的屬性頁，來變更專案的不同設定。 如需詳細資訊，請參閱 [管理設定選項](../../extensibility/internals/managing-configuration-options.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [部署專案類型](../../extensibility/internals/deploying-project-types.md)

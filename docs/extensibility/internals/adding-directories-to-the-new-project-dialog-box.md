@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87e4c0bcb44690a36579fe77564962515534338d
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: d65b7e4adc6d235bcb925efae1cef20d0aa2c9c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190144"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969031"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>將目錄新增至新增專案對話方塊
 當您建立新的專案類型時，您也可以在 [ **新增專案** ] 對話方塊中註冊新的目錄，以顯示它們作為範本使用。 下列程式碼範例說明如何註冊新的目錄（也稱為節點）。 在此範例中，會註冊 VSPackage 所公開的範本（ *CLSID_Package*）。 如此一來，[ **新增專案** ] 對話方塊的左側會提供加入的節點，以及由 *Folder_Label_ResID* 資源決定的名稱。 此資源是從 VSPackage 附屬 DLL 載入的。

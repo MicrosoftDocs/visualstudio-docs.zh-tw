@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21bc3a7f1d46a1afe579a67afa09097fd04458ff
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: eb1f0a0f78b935a3b61596e4dd0b595030640b00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970006"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 用來決定要在 [ **屬性** ] 視窗中顯示哪些資訊的模型是根據焦點在 IDE 中的視窗。 在選取的視窗內，每個視窗和物件都可以將其選取內容物件推送至全域選取內容。 當視窗具有焦點時，環境會以視窗框架中的值來更新全域選取內容。 當焦點變更時，就會進行選取內容。
@@ -116,6 +116,6 @@ STDAPI DLLGetDocumentation
 
  取得屬性的當地語系化名稱和說明的另一個方式，是實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>。 如需實作這個方法的詳細資訊，請參閱 [Properties Window Fields and Interfaces](../../extensibility/internals/properties-window-fields-and-interfaces.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [擴充屬性](../../extensibility/internals/extending-properties.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03f1709184126d31845bfe1145afdebfeffcd1d1
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: e34b857d26be49bb98096c6b0ba85ff8049290b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863331"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968979"
 ---
 # <a name="parent-element"></a>父元素
 按鈕或下拉式方塊的父系可能只是群組。 功能表或群組的父系可以是任何其他功能表或群組。 在 [CommandPlacement 元素](../extensibility/commandplacement-element.md)中，需要這個元素。在其他所有實例中，則是選擇性的。 如果省略這個元素，就會隱含的父系 `Group_Undefined:0` 。
@@ -51,5 +51,5 @@ ms.locfileid: "97863331"
 |[Menu 元素](../extensibility/menus-element.md)|定義 VSPackage 所實行的所有功能表。|
 |[Groups 元素](../extensibility/groups-element.md)|包含定義 VSPackage 之命令群組的專案。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 命令表格 (. .vsct) 檔](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

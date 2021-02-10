@@ -5,7 +5,7 @@ description: 瞭解如何使用 EditorConfig 來格式化 Visual Studio 中的 c
 ms.date: 9/14/2020
 author: jureid
 ms.author: jureid
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CPP
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ ms.topic: reference
 ms.workload:
 - cplusplus
 monikerRange: vs-2019
-ms.openlocfilehash: f248ede6a4bb45a58d64a346489124462f304a86
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 490a7b29d6e3d8a2dc63c27b9e9d7226b5d22662
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518540"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970877"
 ---
 # <a name="c-editorconfig-formatting-conventions"></a>C++ EditorConfig 格式設定慣例
 

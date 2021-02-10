@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c175f838389067ef7e40b07d2f3f9d15aa5df03e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 18e3010e9798f3c056afd5ffc7964ace3f734f53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970838"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>如何：新增或移除匯入的命名空間 (Visual Basic)
 

@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9767630fc7fee4eafce72e4eb99aa12db8469691
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62431283"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970539"
 ---
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安裝 Python 支援
 
@@ -31,11 +31,11 @@ ms.locfileid: "62431283"
     >[!Tip]
     > Community Edition 是針對個別開發人員、課堂學習、學術研究和開放原始碼開發。 針對其他用途，請安裝 [Visual Studio Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) 或 [Visual Studio Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)。
 
-1. 安裝程式會顯示一份工作負載清單，而工作負載是特定開發區域的相關選項群組。 針對 Python，選取 [Python 開發]**** 工作負載，並選取 [安裝]****：
+1. 安裝程式會顯示一份工作負載清單，而工作負載是特定開發區域的相關選項群組。 針對 Python，選取 [Python 開發] 工作負載，並選取 [安裝]：
 
     ![Visual Studio 安裝程式中的 Python 開發工作負載](media/installation-python-workload.png)
 
-1. 若要快速測試 Python 支援，請啟動 Visual Studio，按**Alt** + **I**開啟**Python 互動式**視窗，然後輸入 `2+2` 。 如果您沒有看到 **4** 的輸出，請重新檢查您的步驟。
+1. 若要快速測試 Python 支援，請啟動 Visual Studio，按 **Alt** + **I** 開啟 **Python 互動式** 視窗，然後輸入 `2+2` 。 如果您沒有看到 **4** 的輸出，請重新檢查您的步驟。
 
     ![在互動式視窗中測試 Python](media/installation-interactive-test.png)
 
