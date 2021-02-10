@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, MSBuild properties
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f1eab3832121f1e0c926257797ddbc79695546a5
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 20458cc7047e913e13f4594380d4b4946b44ec17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305146"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938508"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint 支援的 MsBuild 屬性
   您 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 可以在 sharepoint 專案中使用 VisualStudio 檔案、專案檔或專案使用者檔案中定義的任何屬性 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 除了專案所提供的通用 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 屬性之外，sharepoint 也會定義 sharepoint 專案專屬的其他屬性。

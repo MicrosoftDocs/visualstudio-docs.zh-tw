@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e31205f52151679f932877c9c4fdc56907ea59e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e491054ffbdfa9e19cb8bed995b2f369ac1a885
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737410"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939171"
 ---
 # <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
 描述參考。
@@ -76,7 +76,7 @@ public struct DEBUG_REFERENCE_INFO {
 ## <a name="remarks"></a>備註
 此結構會傳遞至要填入之 [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) 方法的呼叫。 此結構也會從 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) 介面傳回做為清單的一部分，而這會從 [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) 方法的呼叫傳回。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

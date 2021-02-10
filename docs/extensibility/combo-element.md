@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5c16db298edb0e1fe526190531df4cb638f8e3d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: dc495727fd06bec0d20cab25a7cd8c4716bcc19e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938378"
 ---
 # <a name="combo-element"></a>組合元素
 定義出現在下拉式方塊中的命令。 下拉式方塊有四種類型，如下所示： DropDownCombo、DynamicCombo、IndexCombo 和 MRUCombo。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <combo guid="guidMyCommandSet" id="MyCommand" defaultWidth="20" idCommandList="MyCommandListID" priority="0x102" type="DropDownCombo">
@@ -50,7 +50,7 @@ ms.locfileid: "94974315"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |父代|選擇性。 按鈕的父元素。|
 |CommandFlag|必要。 請參閱 [命令旗標元素](../extensibility/command-flag-element.md)。 按鈕的有效 CommandFlag 值如下所示。<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DynamicVisibility<br /><br /> -篩選<br /><br /> - IconAndText<br /><br /> - NoAutoComplete<br /><br /> - NoButtonCustomize<br /><br /> - NoCustomize<br /><br /> - NoKeyCustomize<br /><br /> - StretchHorizontally|
@@ -59,7 +59,7 @@ ms.locfileid: "94974315"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[命令元素](../extensibility/commands-element.md)|代表 VSPackage 工具列上的命令集合。|
 

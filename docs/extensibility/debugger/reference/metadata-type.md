@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: afe5ea128775c7be0e48035ab4c7e7d370c9d233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d41716dcbc1aefba52f6507bb624973f36025af0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714294"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938728"
 ---
 # <a name="metadata_type"></a>METADATA_TYPE
 此結構會指定取自中繼資料之欄位類型的相關資訊。
@@ -56,11 +56,11 @@ public struct METADATA_TYPE {
  [C + +] `_mdToken` 是 `typedef` 32 位的 `int` 。
 
 ## <a name="remarks"></a>備註
- 當結構的[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) `dwKind` 欄位 `TYPE_INFO` 設定為 `TYPE_KIND_METADATA` ([dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉) 中的值時，這個結構會顯示為 TYPE_INFO 結構中聯集的一部分。
+ 當結構的[](../../../extensibility/debugger/reference/type-info.md) `dwKind` 欄位 `TYPE_INFO` 設定為 `TYPE_KIND_METADATA` ([dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉) 中的值時，這個結構會顯示為 TYPE_INFO 結構中聯集的一部分。
 
  `tokClass`值是可唯一識別類型的元資料標記。 如需有關如何解讀中繼資料權杖識別碼之最高位的詳細資訊，請參閱 `CorTokenType` .NET FRAMEWORK SDK 的 corhdr.h .h 檔案中的列舉。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio

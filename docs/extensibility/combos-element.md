@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eba7b40a6e770c5076a4d1aa89bf6196f7ef8684
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 38383882005e3a19b1a31709fb5656caf2a7d788
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938365"
 ---
 # <a name="combos-element"></a>Combos 元素
 群組 [組合元素](../extensibility/combo-element.md) 元素。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <Combos>
@@ -43,14 +43,14 @@ ms.locfileid: "94974241"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[Combos 元素](../extensibility/combos-element.md)|群組組合元素。|
 |[組合元素](../extensibility/combo-element.md)|定義出現在下拉式方塊中的命令。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[命令元素](../extensibility/commands-element.md)|代表 VSPackage 工具列上的命令集合。|
 

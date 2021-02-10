@@ -14,20 +14,20 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], about mail items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ce91f9773bf4fc212a47bf64d76c8f1131457c38
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 033dece28bad4471560646cdd086b342b3e1357b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939236"
 ---
 # <a name="work-with-mail-items"></a>使用訊息項目
   <xref:Microsoft.Office.Interop.Outlook.MailItem>類別包含您用來執行電子郵件訊息之工作的方法和屬性。
 
-|工作|程序|
+|Task|程序|
 |----------|---------------|
 |建立電子郵件訊息。|[如何：以程式設計方式建立電子郵件專案](../vsto/how-to-programmatically-create-an-e-mail-item.md)|
 |傳送電子郵件訊息。|[如何：以程式設計方式傳送電子郵件](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|

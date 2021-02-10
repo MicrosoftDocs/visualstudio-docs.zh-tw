@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: fa38e508c087d61ad5ea1762e3e3cc33d6d4f538
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939223"
 ---
 # <a name="add-command-line-switches"></a>新增命令列參數
 您可以在執行 *devenv.exe* 時，新增適用于 VSPackage 的命令列參數。 用 <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> 來宣告參數的名稱和其屬性。 在此範例中，會針對名為 **AddCommandSwitchPackage** 的 VSPackage 子類別加入 MySwitch 參數，但不含任何引數，且會自動載入 VSPackage。
@@ -31,12 +31,12 @@ ms.locfileid: "95597726"
 
  具名引數會顯示在下列描述中。
 
-|Name|描述|
+|名稱|描述|
 |-|-|
 | 引數 | 切換的引數數目。 可以是 "*" 或引數清單。 |
 | DemandLoad | 如果此設定為1，則自動載入 VSPackage，否則設定為0。 |
 | HelpString | 要以 **devenv/？** 顯示之字串的說明字串或資源識別碼。 |
-| Name | 參數。 |
+| 名稱 | 參數。 |
 | PackageGuid | 封裝的 GUID。 |
 
  引數的第一個值通常是0或1。 您可以使用 ' * ' 的特殊值，表示命令列的整個其餘部分都是引數。 當使用者必須傳入偵錯工具命令字串時，這會很有用。
@@ -74,4 +74,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)
 - [CreatePkgDef 公用程式](../extensibility/internals/createpkgdef-utility.md)
-- [.Pkgdef 檔案](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [..Pkgdef 檔案](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

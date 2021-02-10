@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dc4e4aa2-b0ab-4e00-92db-6dc3058ddc21
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d6d9e1e36a2790fb63f9d39c0c83d67d889cc0a8
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 0cae9d4630a854bc24c952380a1e27cbab42d261
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616417"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938651"
 ---
 # <a name="start-command"></a>Start 命令
 開始偵錯啟始專案。

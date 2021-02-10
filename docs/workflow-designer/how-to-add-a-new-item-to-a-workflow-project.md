@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af6563d21ce41d54e66f474de126c3bd4070ff8a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e0cc4b24462583a5f704f47c16e6e8d30456512b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938456"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>如何：將新的專案加入至工作流程專案
 
@@ -23,7 +23,7 @@ ms.locfileid: "94437966"
 
 下表列出您可以新增至工作流程專案的 Windows Workflow Foundation (WF) 專案：
 
-| 名稱 | 說明 |
+| 名稱 | 描述 |
 |-| - |
 | 活動 | 要由其他活動組成的活動。 選取這個專案會將相同的 XAML 檔案加入至專案，就像您在選取新專案的 **活動程式庫** 範本時所取得的一樣。 如需有關此程式的詳細資訊，請參閱 [建立工作流程專案](creating-a-workflow-project.md)。 |
 | 活動設計工具 | 可自訂活動之設計階段經驗的設計工具。 選取這個專案會將相同的檔案加入至專案，就像您在選取新專案的 [ **活動設計** 工具程式庫] 範本時所取得的一樣。 |
@@ -45,6 +45,6 @@ ms.locfileid: "94437966"
 
 1. 選取 [ **新增** ]，將專案加入至專案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [建立工作流程專案](../workflow-designer/creating-a-workflow-project.md)

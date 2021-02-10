@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4fe8d72cc8e2216ee8f5057d032c071974bf3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8a8e1dea5fb3716d593ca9b28f52ca0cd59a054f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938495"
 ---
 # <a name="localize-clickonce-applications"></a>將 ClickOnce 應用程式當地語系化
 當地語系化是讓應用程式適合特定文化特性的程序， 這個程序包括將使用者介面 (UI) 文字翻譯成特定地區的語言、使用正確的日期和貨幣格式、調整表單上控制項的大小，以及視需要將控制項左右反轉。
@@ -48,7 +48,7 @@ ms.locfileid: "94350812"
 
  這個方法是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的預設值。 您不需要執行任何額外的工作，即可在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用這個方法。
 
- 若要搭配 *MageUI.exe* 使用這個方法，您必須在 *MageUI.exe* 中將應用程式的文化特性設為 **中性** 。 接著，您必須手動加入部署中所有附屬組件。 在 *MageUI.exe* 中，您可以使用應用程式資訊清單中 [檔案] 索引標籤上的 [填入] 按鈕新增附屬組件。
+ 若要搭配 *MageUI.exe* 使用這個方法，您必須在 *MageUI.exe* 中將應用程式的文化特性設為 **中性**。 接著，您必須手動加入部署中所有附屬組件。 在 *MageUI.exe* 中，您可以使用應用程式資訊清單中 [檔案] 索引標籤上的 [填入] 按鈕新增附屬組件。
 
  這種方法的優點是會建立單一部署，並簡化了當地語系化部署的過程。 在執行階段，將會根據使用者 Windows 作業系統之預設文化特性而使用適當的附屬組件。 這種方法的缺點是不管應用程式要在用戶端電腦上安裝或更新，都會下載所有的附屬組件。 如果您的應用程式包含大量的字串，或是您的客戶使用慢速的網路連接，這種處理序可能會在應用程式更新期間影響效能。
 
@@ -80,7 +80,7 @@ ms.locfileid: "94350812"
 
 - 您可以透過程式設計方式在應用程式內設定 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性  (這個屬性必須在呼叫 <xref:System.Windows.Forms.Application.Run%2A> 方法之前設定)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [全球化 Windows forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)

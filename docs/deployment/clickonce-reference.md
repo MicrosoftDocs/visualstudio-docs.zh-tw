@@ -14,21 +14,21 @@ helpviewer_keywords:
 ms.assetid: 2a7d5704-5e8c-452c-9ef3-5e8ec5e952fe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f852182baec22915f412a3753755b129053e0ad
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 6f71f042df1ef683ed48e2389e2c781dfb22bff1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939249"
 ---
 # <a name="clickonce-reference"></a>ClickOnce 參考
 下列頁面描述用來表示 ClickOnce 應用程式的 XML 檔案結構。
 
 ## <a name="in-this-section"></a>本節內容
- [ndptecclick](../deployment/clickonce-application-manifest.md)
+ [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)
 
  列出並描述構成應用程式資訊清單的元素和屬性。
 
