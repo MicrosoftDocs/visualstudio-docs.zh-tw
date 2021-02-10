@@ -16,15 +16,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f32ad4ffe44eb725953bc664acf4c4c38da4b11e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 818c7c9aa5edeae32859d0b5af6449b513df1c85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524840"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937436"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>逐步解說：從伺服器上的活頁簿取出快取的資料
   本逐步解說示範如何從 Microsoft Office Excel 活頁簿中快取的資料集取出資料，而不需要使用類別啟動 Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 。
@@ -80,7 +80,7 @@ ms.locfileid: "97524840"
 
 7. 在 [ **新增專案** ] 對話方塊中，確定未選取 [ **建立方案的目錄** ] 核取方塊。
 
-8. 按一下 [確定]。
+8. 按一下 [確定]  。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 **AdventureWorksDataSet** 專案加入 **方案總管** ，並開啟 *Class1.cs* 或 *Class1* 程式碼檔案。
 
@@ -138,7 +138,7 @@ ms.locfileid: "97524840"
 
 5. 在 [ **名稱** ] 方塊中，輸入 **AdventureWorksReport**。 請勿修改位置。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
      隨即開啟 [Visual Studio Tools for Office 專案精靈]  。
 
@@ -227,7 +227,7 @@ ms.locfileid: "97524840"
 
 4. 在 [ **名稱** ] 方塊中，輸入 **DataReader**。 請勿修改位置。
 
-5. 按一下 [確定]。
+5. 按一下 [確定]  。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 **DataReader** 專案加入 **方案總管** ，並開啟 *Program.cs* 或 *Module1* 程式碼檔案。
 
@@ -240,7 +240,7 @@ ms.locfileid: "97524840"
 
 2. 在 [ **.net** ] 索引標籤上，選取 [ **VisualStudio] ServerDocument**。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
 4. 在 **方案總管** 中，以滑鼠右鍵按一下 **DataReader** 專案，然後按一下 [ **加入參考**]。
 
@@ -291,7 +291,7 @@ ms.locfileid: "97524840"
 
 2. 按 **Enter** 以關閉應用程式。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  您可以從下列主題深入瞭解如何使用快取的資料：
 
 - 在不啟動 Excel 的情況下，變更快取資料集中的資料。 如需詳細資訊，請參閱 [逐步解說：變更伺服器上活頁簿中的](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)快取資料。

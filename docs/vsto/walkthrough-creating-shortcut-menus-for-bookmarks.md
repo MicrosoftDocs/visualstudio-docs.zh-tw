@@ -14,15 +14,15 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: aabc7dec0a9965a055bce07cafeca25ac0165037
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937410"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>逐步解說：建立書簽的快捷方式功能表
   本逐步解說示範如何 <xref:Microsoft.Office.Tools.Word.Bookmark> 在 Word 的檔層級自訂中建立控制項的快捷方式功能表。 當使用者以滑鼠右鍵按一下書簽中的文字時，會出現快捷方式功能表，並提供使用者選項來格式化文字。
@@ -187,7 +187,7 @@ ms.locfileid: "97524222"
 
 5. 確認中的所有文字 `bookmark2` 都是斜體，而且只有該重迭文字的部分 `bookmark1` `bookmark2` 是斜體。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  接著可以執行下列一些工作：
 
 - 撰寫程式碼以回應 Excel 中主控制項的事件。 如需詳細資訊，請參閱 [逐步解說：針對 NamedRange 控制項的事件進行程式](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)設計。

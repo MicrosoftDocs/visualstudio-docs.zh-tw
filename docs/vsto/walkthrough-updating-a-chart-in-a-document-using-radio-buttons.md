@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], updating documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: df2996d99e752fbe0f7f36bcab537ee8c19d4f06
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0db8cd113983231ee45252fec8fb47e3a7b75b7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528396"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937325"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>逐步解說：使用選項按鈕更新檔中的圖表
   本逐步解說示範如何在 Microsoft Office Word 的文件層級自訂中使用選項按鈕，讓使用者可以在文件上選取圖表樣式。
@@ -103,7 +103,7 @@ ms.locfileid: "97528396"
     |屬性|值|
     |--------------|-----------|
     |**名稱**|**barChart**|
-    |**Text**|**橫條圖**|
+    |**Text**|**長條圖**|
 
 4. 將第三個 **選項按鈕** 加入至使用者控制項，並變更下列屬性。
 
@@ -208,7 +208,7 @@ ms.locfileid: "97528396"
 
 3. 確認圖表樣式的變更與所選的項目相符。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  接著可以執行下列一些工作：
 
 - 使用按鈕填入文字方塊。 如需詳細資訊，請參閱 [逐步解說：使用按鈕在檔的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, site workflows
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f2b722ccef084286287b9825c43fa9069f64dcc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937715"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>逐步解說：建立自訂網站工作流程活動
   本逐步解說示範如何使用建立網站層級工作流程的自訂活動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。  (網站層級的工作流程會套用到整個網站，而不只是網站上的清單。 ) 自訂活動會建立備份公告清單，然後將公告清單的內容複寫到其中。

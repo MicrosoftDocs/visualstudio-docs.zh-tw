@@ -15,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: e379921e-9ef1-4326-bbf3-53ba67925526
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4bc8d045ff21a536016edc0a0ac64d99c63c2f
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 12c14850717688b17caed2fbe7feb546e0ebdb6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383101"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936167"
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce 快取概觀
-所有 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式（不論是在本機安裝或裝載于線上）都會儲存在用戶端電腦上的應用程式快取中 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 *cache* 快取 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是在目前使用者的 [檔和設定] 資料夾的本機設定目錄下的隱藏目錄系列。 此快取會保存應用程式的所有檔案，包括元件、設定檔、應用程式和使用者設定，以及資料目錄。 快取也負責將應用程式的資料目錄遷移至最新版本。 如需資料移轉的詳細資訊，請參閱 [在 ClickOnce 應用程式中存取本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。
+所有 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式（不論是在本機安裝或裝載于線上）都會儲存在用戶端電腦上的應用程式快取中 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。  快取 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是在目前使用者的 [檔和設定] 資料夾的本機設定目錄下的隱藏目錄系列。 此快取會保存應用程式的所有檔案，包括元件、設定檔、應用程式和使用者設定，以及資料目錄。 快取也負責將應用程式的資料目錄遷移至最新版本。 如需資料移轉的詳細資訊，請參閱 [在 ClickOnce 應用程式中存取本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。
 
  藉由提供單一位置來儲存應用程式， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可將管理應用程式實體安裝的工作從使用者接管。 快取也會將所有應用程式的元件和資料檔和彼此分開的不同版本保持在一起，有助於隔離應用程式。 例如，當您升級 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，該版本和其資料資源會在快取中提供自己的目錄。
 

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - worksheets, automating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b3305fdc8f4fbadb3dcdd9775c3a6fe3dac3a1fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526132"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937390"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>逐步解說：針對 NamedRange 控制項的事件進行程式設計
   本逐步解說將示範如何 <xref:Microsoft.Office.Tools.Excel.NamedRange> 使用 Visual Studio 中的 Office 開發工具，將控制項加入至 Microsoft Office Excel 工作表，並針對其事件進行程式設計。
@@ -73,7 +73,7 @@ ms.locfileid: "97526132"
 
 3. 確認 **$A $1** 出現在 [可編輯] 文字方塊中，並且已選取該儲存格 **A1** 。 如果不是，請按一下 [儲存格 **A1** ] 加以選取。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
      儲存格 **A1** 會成為名為的範圍 `namedRange1` 。 工作表上沒有可見的指示，但 `namedRange1` 會出現在 [ **名稱** ] 方塊中 (位於左側工作表的上方，) 選取 [儲存格 **A1** ]。
 
@@ -81,7 +81,7 @@ ms.locfileid: "97526132"
 
 6. 確認 **$B $3** 出現在 [可編輯] 文字方塊中，而且已選取 [ **B3** ] 儲存格。 如果不是，請按一下資料格 **B3** 加以選取。
 
-7. 按一下 [確定]。
+7. 按一下 [確定]  。
 
      儲存格 **B3** 變成名為的範圍 `namedRange2` 。
 
@@ -153,7 +153,7 @@ ms.locfileid: "97526132"
 
 6. 按一下 [外部] `namedRange1` ，並確認 [關於] <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> 事件的文字會插入藍色文字 `namedRange2` 。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  本逐步解說將說明針對控制項事件進行程式設計的基本概念 <xref:Microsoft.Office.Tools.Excel.NamedRange> 。 以下是接下來可能會發生的工作：
 
 - 部署專案。 如需詳細資訊，請參閱 [部署 Office 方案](../vsto/deploying-an-office-solution.md)。

@@ -5,17 +5,17 @@ ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 390e66fa01d49f217140c3c030bcc54fd349e402
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 462a9624809d2dccfe68bb2e016dda6739d9c2e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86285390"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936843"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>將 Foreach 迴圈轉換為 LINQ
 
@@ -23,7 +23,7 @@ ms.locfileid: "86285390"
 
 - C#
 
-事項 **：** 可讓您輕鬆地將使用 IEnumerable 的*foreach*迴圈轉換成 linq 查詢或 linq 呼叫表單 (也稱為 linq 方法) 。
+事項 **：** 可讓您輕鬆地將使用 IEnumerable 的 *foreach* 迴圈轉換成 linq 查詢或 linq 呼叫表單 (也稱為 linq 方法) 。
 
 時機 **：** 您有一個使用 IEnumerable 的 foreach 迴圈，而您想要該迴圈讀取為 LINQ 查詢。
 
@@ -38,11 +38,11 @@ ms.locfileid: "86285390"
 
     ![使用 IEnumerable 範例的 Foreach](media/convert-foreach-to-LINQ.png)
 
-2. 按下**Ctrl** + **。** 以觸發 [快速動作與重構]**** 功能表。
+2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
 
    ![轉換為 LINQ 功能表範例](media/convert-foreach-to-LINQ-codefix.png)
 
-3. 選取 [ **轉換成 linq** ] 或 [ **轉換成 linq (呼叫表單) **。
+3. 選取 [ **轉換成 linq** ] 或 [ **轉換成 linq (呼叫表單)**。
 
    ![LINQ 查詢結果範例](media/convert-foreach-to-LINQ-result.png)
 

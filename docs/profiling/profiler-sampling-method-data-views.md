@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b88abc935ca9eaef0a22230d427817756629bcb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: cc1dc50c379ab2eac7d44c48e06834dd73c477f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719431"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936427"
 ---
 # <a name="profiler-sampling-method-data-views"></a>分析工具取樣方法資料檢視
 本節包含使用取樣方法所產生的分析工具資料檔案之檢視和報告的參考資訊。

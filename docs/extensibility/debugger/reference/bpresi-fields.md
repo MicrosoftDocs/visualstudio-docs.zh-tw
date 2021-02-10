@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 837bb7d25ab8dea2b146a98cc65d320b58162685
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d82650fabf467d44b1bd5eba01599c5cb5e40bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737729"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938259"
 ---
 # <a name="bpresi_fields"></a>BPRESI_FIELDS
 指定要抓取的資訊，以取得中斷點的成功解析。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BPRESI_FIELDS {
@@ -66,7 +66,7 @@ public enum enum_BPRESI_FIELDS {
 
 這些值可能會與位結合 `OR` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

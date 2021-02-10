@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4afddf8c0b25d262161df991f1a2a9d447a9a655
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 5fd27843ade6217f0b465645fed4b0abfaf9365e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937663"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005：常見的 GC2 集合
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks [Office development in Visual Studio], inserting data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 23acfc79514d034faa6fce5c2c27a8edcaa4c58d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2456f92e6bd0b6e1a6b8bf6389718ec6a41342dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937429"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>逐步解說：在伺服器的活頁簿中插入資料
   本逐步解說示範如何將資料插入 Microsoft Office Excel 活頁簿中快取的資料集，而不需要使用類別啟動 Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 。
@@ -79,7 +79,7 @@ ms.locfileid: "97526223"
 
 7. 在 [ **新增專案** ] 對話方塊中，確定未選取 [ **建立方案的目錄** ] 核取方塊。
 
-8. 按一下 [確定]。
+8. 按一下 [確定]  。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 **AdventureWorksDataSet** 專案加入 **方案總管** ，並開啟 **Class1.cs** 或 **Class1** 程式碼檔案。
 
@@ -137,7 +137,7 @@ ms.locfileid: "97526223"
 
 5. 在 [ **名稱** ] 方塊中，輸入 **AdventureWorksReport**。 請勿修改位置。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
      隨即開啟 [Visual Studio Tools for Office 專案精靈]  。
 
@@ -218,7 +218,7 @@ ms.locfileid: "97526223"
 
 4. 在 [ **名稱** ] 方塊中，輸入 **>datawriter**。 請勿修改位置。
 
-5. 按一下 [確定]。
+5. 按一下 [確定]  。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 **>datawriter** 專案加入 **方案總管** ，並開啟 **Program.cs** 或 **Module1** 程式碼檔案。
 
@@ -231,7 +231,7 @@ ms.locfileid: "97526223"
 
 2. 在 [ **.net** ] 索引標籤上，選取 [ **VisualStudio] ServerDocument**。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
 4. 在 **方案總管** 中，以滑鼠右鍵按一下 **>datawriter** 專案，然後按一下 [ **加入參考**]。
 
@@ -288,7 +288,7 @@ ms.locfileid: "97526223"
 
 3. 確認在 <xref:Microsoft.Office.Tools.Excel.ListObject> 開啟活頁簿之後，已填入資料。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 您可以從下列主題深入瞭解如何使用快取的資料：
 

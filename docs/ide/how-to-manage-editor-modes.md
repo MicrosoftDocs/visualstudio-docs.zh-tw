@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b86859f5f5718871499bb1f3e2014da59f956db
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 112fbd727f28ce1dd3f72626c03e3cc6594da213
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597141"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935882"
 ---
 # <a name="how-to-manage-editor-modes"></a>如何：管理編輯器模式
 

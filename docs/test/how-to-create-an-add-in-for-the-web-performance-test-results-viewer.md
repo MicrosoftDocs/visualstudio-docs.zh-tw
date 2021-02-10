@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: b8fa3b83fb9a92be0118f4222e92364767affcda
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: e2773165b37600eb214893de91f8fc8c4467c0d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937624"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>如何：建立 Web 效能測試結果檢視器的增益集
 
@@ -57,7 +57,7 @@ ms.locfileid: "95441074"
 
     Visual Studio [增益集精靈] 隨即啟動。
 
-3. 選擇 [下一步]  。
+3. 選擇 [下一步]。
 
 4. 在 [選取程式設計語言] 頁面上，選取您要用來撰寫增益集的程式設計語言。
 
@@ -66,13 +66,13 @@ ms.locfileid: "95441074"
 
 5. 在 [選擇主應用程式] 頁面上，選取 [Visual Studio] 並清除 [Visual Studio 巨集]。
 
-6. 選擇 [下一步]  。
+6. 選擇 [下一步]。
 
 7. 在 [輸入名稱和描述] 頁面中，鍵入增益集的名稱和描述。
 
      建立增益集之後，其名稱和描述會顯示在 [增益集管理員] 的 [可用的增益集] 清單中。 您可以為增益集加入詳細的描述資料，讓使用者了解增益集的功能、運作方式等。
 
-8. 選擇 [下一步]  。
+8. 選擇 [下一步]。
 
 9. 在 [選擇增益集選項] 頁面上，選取 [當主應用程式啟動時載入增益集]。
 
@@ -82,7 +82,7 @@ ms.locfileid: "95441074"
 
      可新增至 Visual Studio [關於] 對話方塊的資訊包括版本號碼、支援詳細資料、授權資料等等。
 
-12. 選擇 [下一步]  。
+12. 選擇 [下一步]。
 
 13. 您所選取的選項就會顯示在 [摘要] 頁面上，供您檢閱。 如果您對設定感到滿意，請選擇 [完成] 建立增益集。 如果您想要變更某些設定，請選擇 [上一頁] 按鈕。
 

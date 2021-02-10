@@ -9,19 +9,19 @@ helpviewer_keywords:
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 515c99a4d73abcb3a287f3f4026723bd8050b360
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f7927ff370ab05f4931cb0346f00f65157a411d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048492"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937923"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>在設計階段解析組件
 
-當您透過 [加入參考]  對話方塊的 [.NET]  索引標籤加入組件的參考時，參考會指向中繼參考組件，也就是說，這個組件會包含所有類型和簽章資訊，但不一定會包含任何程式碼。 [.NET]  索引標籤會列出對應至 .NET Framework 中執行階段組件的參考組件。 此外，它列出的參考組件會對應至協力廠商使用的已註冊 AssemblyFoldersEx 資料夾中的執行階段組件。
+當您透過 [加入參考] 對話方塊的 [.NET] 索引標籤加入組件的參考時，參考會指向中繼參考組件，也就是說，這個組件會包含所有類型和簽章資訊，但不一定會包含任何程式碼。 [.NET] 索引標籤會列出對應至 .NET Framework 中執行階段組件的參考組件。 此外，它列出的參考組件會對應至協力廠商使用的已註冊 AssemblyFoldersEx 資料夾中的執行階段組件。
 
 ## <a name="multi-targeting"></a>多目標
 
@@ -41,5 +41,5 @@ ms.locfileid: "93048492"
 
  現在隨附於 .NET Framework SDK 的目標套件包含 Framework 版本中所有執行階段組件的清單，稱為轉散發 (redist) 清單，使組建系統無法針對錯誤的組件版本解析類型。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [進階概念](../msbuild/msbuild-advanced-concepts.md)

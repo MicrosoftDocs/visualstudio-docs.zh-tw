@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 175ca46645d55106f18c163c54135316d73ea3ec
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: ef415763a67232f79b269650abecfe6bcabe6bd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993233"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937195"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope 活動設計工具
 
@@ -37,7 +37,7 @@ ms.locfileid: "96993233"
 
 下表顯示 <xref:System.Activities.Statements.CancellationScope> 屬性，並且描述屬性在設計工具中的使用方式。 <xref:System.Activities.Activity.DisplayName%2A>屬性可以在屬性方格中編輯，但其他屬性必須在工作流程設計工具介面上編輯。
 
-|屬性名稱|必要|使用量|
+|屬性名稱|必要|使用方式|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|否|<xref:System.Activities.Statements.CancellationScope> 活動可選用的易記名稱。 預設為 CancellationScope。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.CancellationScope.Body%2A>|是|指定提供取消邏輯的活動。 若要加入 <xref:System.Activities.Statements.CancellationScope.Body%2A> 活動，請從 [工具箱 **] 將** 活動拖放到 [ **CancellationScope** ] 活動設計 **工具** 的 [內文] 方塊中。 新增提示文字「在此放置活動」。|

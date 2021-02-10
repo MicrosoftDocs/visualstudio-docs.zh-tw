@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c479058a5e6abb61fb419425706d2a8b26858d04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f304921f622245787413a05894096470a96eb30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936953"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 指定事件屬性。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_EVENTATTRIBUTES {
@@ -79,7 +79,7 @@ public enum enum_EVENTATTRIBUTES {
 
 這些值可能會與位結合 `OR` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

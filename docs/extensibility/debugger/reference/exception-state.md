@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd2e280cd03ae413e0853950d13fbfefb69bc15f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f804f9a47314bfd239e6904286122776977e92e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736951"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936921"
 ---
 # <a name="exception_state"></a>EXCEPTION_STATE
 指定例外狀況狀態。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_EXCEPTION_STATE {
@@ -129,7 +129,7 @@ public enum enum_EXCEPTION_STATE {
 
 這些旗標可以結合位 OR。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

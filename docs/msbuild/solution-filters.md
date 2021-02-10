@@ -8,14 +8,14 @@ helpviewer_keywords:
 - solution filters [MSBuild]
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 998103828d20827e8a1d99e0cc34d7f9beb6bd7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a5c764ad9ea4190df5e533926671dbd88c53b8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87401024"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937832"
 ---
 # <a name="solution-filters-in-msbuild"></a>MSBuild 中的解決方案篩選
 

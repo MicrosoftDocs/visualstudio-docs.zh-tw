@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 56f23ef7-17c4-4d76-9ead-982bbcd42061
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f095d05a873eb59b0f6453ddb796fc2a183705e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: e901d2e2286f5c4ac19bc5cdea9606867e23ff06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936765"
 ---
 # <a name="convert-dialog-box"></a>轉換對話方塊
 

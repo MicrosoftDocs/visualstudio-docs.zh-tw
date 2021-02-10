@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: def1ae862a7b9ba4def62cb590260c5a18758929
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913850"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937702"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>逐步解說：建立基本網站定義專案
   本逐步解說將示範如何建立基本網站定義，其中包含有一些控制項的視覺網頁元件。 為了清楚起見，您所建立的視覺網頁元件只有幾個控制項。 不過，您可以建立更複雜的 SharePoint 網站定義，其中包含更多功能。
@@ -112,7 +112,7 @@ ms.locfileid: "96913850"
     </table>
     ```
 
-6. 在 [ *VisualWebPart1*] 下，針對) 開啟) 或 (VisualWebPart1 的 *VisualWebPart1.ascx.cs* 檔 ([!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ，然後 *VisualWebPart1.ascx.vb* [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 加入下列程式碼：
+6. 在 [ *VisualWebPart1*] 下，針對) 開啟) 或 (VisualWebPart1 的 *VisualWebPart1.ascx.cs* 檔 ([!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ，然後 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 加入下列程式碼：
 
      [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]

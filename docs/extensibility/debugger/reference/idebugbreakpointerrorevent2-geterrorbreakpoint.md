@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5acfd19-ac17-47f3-a31a-b2aa8baca36d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe22f18d4574ffde48cea975bff8d8f5801ca465
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e81cf833ea6e03a79d359144fa3e7e9a7024b74e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735066"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936115"
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 取得描述中斷點未系結原因的 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 物件。
@@ -28,13 +28,13 @@ ms.locfileid: "80735066"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetErrorBreakpoint( 
+HRESULT GetErrorBreakpoint( 
     IDebugErrorBreakpoint2** ppErrorBP
 );
 ```
 
 ```csharp
-int GetErrorBreakpoint( 
+int GetErrorBreakpoint( 
     out IDebugErrorBreakpoint2 ppErrorBP
 );
 ```
@@ -50,7 +50,7 @@ int GetErrorBreakpoint( 
 `IDebugErrorBreakpoint2`取得介面之後，請呼叫[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)方法來取得[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)物件。 然後，您可以使用 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) 方法來判斷不正確位置、不正確運算式或暫止中斷點未系結的原因，例如尚未載入的程式碼等等。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)介面的**CBreakpointSetDebugEventBase**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)介面的 **CBreakpointSetDebugEventBase** 物件，執行這個方法。
 
 ```cpp
 STDMETHODIMP CBreakpointErrorDebugEventBase::GetErrorBreakpoint(

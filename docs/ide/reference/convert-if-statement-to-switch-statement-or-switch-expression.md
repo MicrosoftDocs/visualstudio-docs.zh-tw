@@ -6,17 +6,17 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e19314b8bf73f5859fdf2cef7d281f142c643b68
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 0d857338eb1c9b5bb66ccb89e20e6f892944d608
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936825"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>將 if 陳述式轉換為 switch 陳述式或 switch 運算式
 
@@ -30,7 +30,7 @@ ms.locfileid: "96305554"
 
 **原因：** 如果您使用的是 `if` 語句，這種重整功能可讓您輕鬆地轉換成 `switch` 語句或 `switch` 運算式。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將游標放在 `if` 關鍵字中。
 2. 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。

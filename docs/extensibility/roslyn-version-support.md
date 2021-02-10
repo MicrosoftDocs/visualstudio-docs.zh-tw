@@ -8,15 +8,15 @@ helpviewer_keywords:
 - roslyn package versions
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c787188fa727692bf11035c00562f7a6e26e81b
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: f76a8dcdbb644fe456c62fca7de6fb7afe96d556
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935883"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET 編譯器平臺套件版本參考
 
@@ -45,7 +45,7 @@ ms.locfileid: "97715739"
 > [!TIP]
 > 針對支援的最低 Visual Studio 版本為 Visual Studio 2017 版本的 Roslyn 套件，也支援 Visual Studio 2019 的所有版本，因為稍後會提供這些版本。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)
 - [開始使用 Roslyn 分析器](getting-started-with-roslyn-analyzers.md)

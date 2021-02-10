@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 34e1bb2c92cd387e979fdaa5746a34ea8d3995fc
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 3c07dd32b889a9d75222bc8ff5a245f516fab528
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935920"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>逐步解說：顯示 QuickInfo 工具提示
 QuickInfo 是一項 IntelliSense 功能，會在使用者將指標移至方法名稱上方時，顯示方法簽章和描述。 您可以藉由定義要提供 QuickInfo 描述的識別碼，然後建立要顯示內容的工具提示，來執行以語言為基礎的功能（例如 QuickInfo）。 您可以在語言服務的內容中定義 QuickInfo，或者您可以定義自己的副檔名和內容類型，並只顯示該類型的 QuickInfo，也可以顯示現有內容 (類型的 QuickInfo，例如 "text" ) 。 本逐步解說示範如何顯示「文字」內容類型的 QuickInfo。
@@ -179,5 +179,5 @@ QuickInfo 是一項 IntelliSense 功能，會在使用者將指標移至方法�
 
 4. 將指標移至其中一個出現的 [新增]。 應該會顯示簽章和方法的描述 `add` 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

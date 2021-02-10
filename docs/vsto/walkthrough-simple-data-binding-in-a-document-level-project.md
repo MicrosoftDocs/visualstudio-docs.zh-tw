@@ -16,15 +16,15 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 31084703a581999a1f25bfc82db6c36d9e2cbf6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937403"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說：檔層級專案中的簡單資料系結
   本逐步解說示範檔層級專案中資料系結的基本概念。 SQL Server 資料庫中的單一資料欄位會系結至 Microsoft Office Excel 中的已命名範圍。 本逐步解說也會示範如何加入控制項，讓您可以在資料表中的所有記錄之間進行滾動。
@@ -185,7 +185,7 @@ ms.locfileid: "97524098"
 
 4. 按一下 [其他] 滾動按鈕以確認記錄會如預期般變更。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  本逐步解說會示範將命名範圍系結至資料庫中之欄位的基本概念。 接著可以執行下列一些工作：
 
 - 快取資料，讓它可以離線使用。 如需詳細資訊，請參閱 [如何：快取資料供離線使用或在伺服器上使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。

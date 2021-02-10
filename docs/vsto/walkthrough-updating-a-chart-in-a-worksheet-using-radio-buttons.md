@@ -13,15 +13,15 @@ helpviewer_keywords:
 - worksheets, using radio buttons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b1c9da3b1d019c77988ef01e1b3c019dd3f1d775
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937312"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>逐步解說：使用選項按鈕更新工作表中的圖表
   本逐步解說示範在 Microsoft Office Excel 工作表上使用選項按鈕的基本概念，讓使用者能夠在選項之間快速切換。 在此情況下，選項會變更圖表的樣式。
@@ -99,7 +99,7 @@ ms.locfileid: "97526067"
 
 2. 按一下 [ **流覽]** 按鈕，流覽至您稍早在本逐步解說中建立的活頁簿。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
      Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 [ **我的 Excel 圖表** ] 專案加入 **方案總管**。
 
@@ -144,7 +144,7 @@ ms.locfileid: "97526067"
    | 屬性 | 值 |
    |----------|---------------|
    | **名稱** | **barChart** |
-   | **Text** | **橫條圖** |
+   | **Text** | **長條圖** |
 
 4. 將第三個選項按鈕加入至使用者控制項，並變更下列屬性。
 
@@ -242,7 +242,7 @@ ms.locfileid: "97526067"
 
 3. 確認圖表樣式的變更與所選的項目相符。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  本逐步解說將示範如何在工作表上使用選項按鈕和圖表樣式的基本概念。 接著可以執行下列一些工作：
 
 - 部署專案。 如需詳細資訊，請參閱 [部署 Office 方案](../vsto/deploying-an-office-solution.md)。

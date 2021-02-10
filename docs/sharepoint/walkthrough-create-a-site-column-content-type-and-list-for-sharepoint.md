@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b1670dfa3c7202e8ebbdb28396f161daeffac491
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d205203797d8bd50c7b3132df86fbff9dbad1771
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937689"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>逐步解說：建立 SharePoint 的網站資料行、內容類型和清單
   下列程式示範如何建立自訂 SharePoint 網站資料行（或 *欄位*），以及使用網站資料行的內容類型。 它也會顯示如何建立使用新內容類型的清單。
@@ -56,7 +56,7 @@ ms.locfileid: "96914006"
 
 #### <a name="to-create-the-project"></a>若要建立專案
 
-1. 在 [檔案] [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **File** 功能表上，選擇 [**新增**  >  **專案**]。
+1. 在 [檔案] [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 功能表上，選擇 [**新增**  >  **專案**]。
 ::: moniker range="=vs-2017"
 2. 在 [ **新增專案** ] 對話方塊的 [ **Visual c #** ] 或 [ **Visual Basic**] 底下，展開 [ **Office/SharePoint** ] 節點，然後選取 [ **SharePoint 方案**]。
 
@@ -64,7 +64,7 @@ ms.locfileid: "96914006"
 
 4. 將專案的名稱 **變更為 [** 實務]，然後選擇 [ **確定]** 按鈕。
 
-5. 在 [**指定偵錯工具的網站和安全性層級**] 對話方塊中，輸入您要加入新自訂欄位專案之本機 SharePoint 網站的 URL，或使用預設位置 (SystemName] `http://<` *SystemName* `>/)` 。
+5. 在 [**指定偵錯工具的網站和安全性層級**] 對話方塊中，輸入您要加入新自訂欄位專案之本機 SharePoint 網站的 URL，或使用預設位置 (SystemName] `http://<`  `>/)` 。
 
 6. 在 [ **此 SharePoint 方案的信任層級為何？** ] 區段中，使用預設值 [ **部署為沙箱化方案**]。
 
@@ -78,7 +78,7 @@ ms.locfileid: "96914006"
 
 3. 將專案的名稱 **變更為 [** 實務]，然後選擇 [ **建立** ] 按鈕。
 
-4. 在 [**指定偵錯工具的網站和安全性層級**] 對話方塊中，輸入您要加入新自訂欄位專案之本機 SharePoint 網站的 URL，或使用預設位置 (SystemName] `http://<` *SystemName* `>/)` 。
+4. 在 [**指定偵錯工具的網站和安全性層級**] 對話方塊中，輸入您要加入新自訂欄位專案之本機 SharePoint 網站的 URL，或使用預設位置 (SystemName] `http://<`  `>/)` 。
 
 5. 在 [ **此 SharePoint 方案的信任層級為何？** ] 區段中，使用預設值 [ **部署為沙箱化方案**]。
 

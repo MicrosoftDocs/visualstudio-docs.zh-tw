@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d117ab18022285e5cd52f18a1de01adeafbc5df3
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 71c2f0be2377ea391595b02f5b1e94465cffcf68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937097"
 ---
 # <a name="add-search-to-a-tool-window"></a>將搜尋新增至工具視窗
 當您建立或更新延伸模組中的工具視窗時，可以新增在 Visual Studio 的其他位置出現的相同搜尋功能。 這項功能包含下列功能：

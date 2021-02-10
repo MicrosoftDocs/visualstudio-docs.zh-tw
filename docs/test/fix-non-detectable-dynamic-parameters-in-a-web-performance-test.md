@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 9f670c9cf543ae209ebed63ce185fadfbbe253d0
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+manager: jmartens
+ms.openlocfilehash: 5d1e1c35feba87ada3b98d13c5d43c436fd91b1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936557"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>在 Web 效能測試中修正無法偵測的動態參數
 

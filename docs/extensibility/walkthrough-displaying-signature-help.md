@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be324ab48d42e859678ccf01d8c75faae6cea381
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8933822ee5bb63b341ff51296ba2884fef2aeb75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876242"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935907"
 ---
 # <a name="walkthrough-display-signature-help"></a>逐步解說：顯示簽章說明
 簽章說明 (也稱為 *參數資訊*) 當使用者輸入參數清單開始字元 (通常是左括弧) 時，就會在工具提示中顯示方法的簽章。 作為參數和參數分隔符號 (通常會輸入逗點) ，工具提示會更新以顯示下一個參數（以粗體顯示）。 您可以用下列方式定義簽章說明：在語言服務的內容中，定義您自己的副檔名和內容類型，以及只顯示該類型的簽章說明，或針對現有的內容類型顯示簽章說明 (例如 "text" ) 。 本逐步解說會示範如何顯示「文字」內容類型的簽章說明。
@@ -246,5 +246,5 @@ ms.locfileid: "97876242"
 
 4. 輸入左括弧之後，您應該會看到工具提示，顯示該方法的兩個簽章清單 `add()` 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

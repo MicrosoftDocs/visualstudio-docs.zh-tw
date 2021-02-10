@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 792fe50aea43bc9711a58a895be09f85c041345b
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 96376c352d3019ba2efefc1f82e75e89a4ac2370
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935621"
 ---
 # <a name="open-file-command"></a>開啟檔案命令
 

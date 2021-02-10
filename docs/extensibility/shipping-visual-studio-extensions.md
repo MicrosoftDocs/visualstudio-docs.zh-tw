@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 5c1b5787eaecd6b3787d77c7ecab70acae689df8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938092"
 ---
 # <a name="shipping-visual-studio-extensions"></a>推出 Visual Studio 延伸模組
 在您完成擴充功能的開發之後，您可以將它安裝在其他電腦上、與您的朋友和同事共用，或將它發佈到 Visual Studio Marketplace 上。 在本節中，我們將說明發行和維護您的延伸模組所需執行的所有作業：使用 .vsix 檔案、發行、當地語系化和更新。

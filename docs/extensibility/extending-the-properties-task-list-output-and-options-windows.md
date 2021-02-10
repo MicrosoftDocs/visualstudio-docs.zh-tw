@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2586618b16afa8f8bfd6b7aa529486adf1d9ce41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995794"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938131"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>擴充屬性、工作清單、輸出和選項視窗
 您可以存取 Visual Studio 中的任何工具視窗。 本逐步解說將示範如何將工具視窗的相關資訊整合至新的 [ **選項** ] 頁面和 [ **屬性** ] 頁面上的新設定，以及如何寫入 **工作清單** 和 **輸出** 視窗中。

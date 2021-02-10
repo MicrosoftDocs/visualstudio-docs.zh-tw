@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CPU Usage, command-line
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: b0d2b0964c565bab4d3a0731a14b93ccd976bb69
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 0b1d5906213b148605e35c483b377280dc942515
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936544"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>從命令列測量應用程式的效能
 
@@ -27,7 +27,7 @@ ms.locfileid: "93344490"
 
 本文所述範例會收集 Microsoft [記事本] 的效能資訊，但您可以使用相同的方法來分析任何處理序。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 * Visual Studio 2019 或更新版本
 
@@ -45,7 +45,7 @@ ms.locfileid: "93344490"
 
    ```<Visual Studio installation folder>\2019\Enterprise\Team Tools\DiagnosticsHub\Collector\```
 
-1. 鍵入下列命令，開始 *VSDiagnostics.exe* 。
+1. 鍵入下列命令，開始 *VSDiagnostics.exe*。
 
    ```cmd
    VSDiagnostics.exe start <id> /attach:<pid> /loadConfig:<configFile>
@@ -71,7 +71,7 @@ ms.locfileid: "93344490"
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. 找出前一個命令的 *diagsession* 檔輸出，然後在 Visual Studio (檔案開啟) **中開啟它** ，  >  **Open** 以檢查收集到的資訊。
+1. 找出前一個命令的 *diagsession* 檔輸出，然後在 Visual Studio (檔案開啟) **中開啟它**，  >  以檢查收集到的資訊。
 
    若要分析結果，請參閱對應效能工具的檔。 例如，這可能是 [ [CPU 使用量](../profiling/cpu-usage.md)]、[ [.net 物件配置] 工具](../profiling/dotnet-alloc-tool.md)或 [ [資料庫](../profiling/analyze-database.md) ] 工具。
 

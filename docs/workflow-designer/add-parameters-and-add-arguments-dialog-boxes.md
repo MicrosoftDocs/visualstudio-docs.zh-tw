@@ -8,16 +8,16 @@ f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: f29ee2aeedc971fc25654b6681c87b5dab71e386
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f0a5bba22ea9255fcc6c65ea5fa6a59990548dc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937136"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>加入參數及加入引數對話方塊
 
@@ -26,7 +26,7 @@ ms.locfileid: "96995508"
 |名稱|值|
 |-|-|
 |[方向]|指定參數表示資料傳入方法、從方法傳出資料，或兩者皆是。|
-|**類型**|新參數的型別名稱。|
+|**型別**|新參數的型別名稱。|
 |**值**|用來將預設值指派給新參數的 Visual Basic 運算式|
 
 下表描述設計工具所使用之 [ **加入引數** ] 對話方塊的使用者介面 (UI) 元素 <xref:System.Activities.Statements.InvokeDelegate> ：
@@ -35,5 +35,5 @@ ms.locfileid: "96995508"
 |-|-|
 |**名稱**|引數的名稱。|
 |[方向]|指定引數表示資料傳入委派、從委派傳出資料，或兩者皆是。|
-|**類型**|新引數的型別名稱。|
+|**型別**|新引數的型別名稱。|
 |**值**|用於此委派引數執行個體的值。|

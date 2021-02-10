@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], updating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2246dcdca1e754c885dd610f98986306a256228c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 181fafeb55720b5a97a635a4c2322cf7343643d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937182"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>逐步解說：在執行時間更新功能區上的控制項
 
@@ -288,7 +288,7 @@ ms.locfileid: "97526046"
 
      產品名稱會加入郵件的本文。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 您可以透過下列主題，進一步了解自訂 Office UI 的方式：
 

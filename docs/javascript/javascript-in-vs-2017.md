@@ -13,13 +13,13 @@ ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: a5d71b2b20d0723b1809ae78717b64ee43ae2b6b
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+manager: jmartens
+ms.openlocfilehash: b39ee716c5092f41ef3ea8f05c529509ceca3717
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936856"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -262,7 +262,7 @@ XML 文件註解有時稱為 VSDocs，先前可以用來使用其他資料來裝
 因為新語言服務具有靜態分析功能，而不是執行引擎 (如需差異的資訊，請閱讀[本問題](https://github.com/Microsoft/TypeScript/issues/4789))，所以無法再偵測到一些 JavaScript 模式。
 最常見的模式是 "expando" 模式。
 語言服務目前無法在宣告之後附加屬性的物件上提供 IntelliSense。
-例如︰
+例如：
 
 ```js
 var obj = {};

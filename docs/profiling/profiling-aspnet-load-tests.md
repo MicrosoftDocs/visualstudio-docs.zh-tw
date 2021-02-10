@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7ade0fc4b83832145132d925fe43feb6b3b0ef10
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 4bb52c2ba89e9f335504b0e67cb140c9c9ef8ea0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723253"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936375"
 ---
 # <a name="profile-aspnet-load-tests"></a>對 ASP.NET 負載測試進行分析
 您可以從針對 ASP.NET 網站專案執行的自動化 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 網路測試來收集程式碼剖析資料。 您可以收集取樣和階層互動資料。 如需詳細資訊，請參閱下列主題：

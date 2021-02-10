@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: a89818630258aab42535fb4256fa3e844b0c6878
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 1196f0893c73873d4be6d17c7e41ee56490590d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937559"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>如何：使用 Microsoft Excel 建立負載測試效能報告
 

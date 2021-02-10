@@ -16,15 +16,15 @@ helpviewer_keywords:
 - <Sdk> element [MSBuild]
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b348cf2af76c439a28bbb58c0050cc3d458d5457
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: cd5f66cc6500a3320e0da962985f5b7fff1e86dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937897"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 元素 (MSBuild)
 
@@ -56,11 +56,11 @@ ms.locfileid: "93048364"
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：參考 MSBuild 專案 SDK](../msbuild/how-to-use-project-sdk.md)
 - [專案檔案架構參考](../msbuild/msbuild-project-file-schema-reference.md)

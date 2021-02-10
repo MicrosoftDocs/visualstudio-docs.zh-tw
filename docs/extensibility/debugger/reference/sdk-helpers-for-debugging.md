@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 7b98914d4e7fc2d63fd6cc9f79789c389e19b784
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935998"
 ---
 # <a name="sdk-helpers-for-debugging"></a>適用於偵錯的 SDK 協助程式
 這些函式和宣告都是全域 helper 函式，可用於在 c + + 中執行 debug 引擎、運算式評估工具和符號提供者。
@@ -49,7 +49,7 @@ HRESULT GetMetric(
 );
 ```
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |pszMachine|在可能會寫入註冊 (的遠端電腦名稱稱， `NULL` 表示本機電腦) 。|
 |pszType|在其中一個度量類型。|
@@ -72,7 +72,7 @@ HRESULT SetMetric(
 );
 ```
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |pszType|在其中一個度量類型。|
 |guidSection|在特定引擎、評估工具、例外狀況等的 GUID。這會指定特定專案之度量類型下的子區段。|
@@ -93,7 +93,7 @@ HRESULT RemoveMetric(
 );
 ```
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |pszType|在其中一個度量類型。|
 |guidSection|在特定引擎、評估工具、例外狀況等的 GUID。這會指定特定專案之度量類型下的子區段。|
@@ -113,7 +113,7 @@ HRESULT EnumMetricSections(
 );
 ```
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |pszMachine|在可能會寫入註冊 (的遠端電腦名稱稱， `NULL` 表示本機電腦) 。|
 |pszType|在其中一個度量類型。|
@@ -166,7 +166,7 @@ HRESULT EnumMetricSections(
 |metrictypeException|所有例外狀況度量。|
 |metricttypeEEExtension|所有運算式評估工具延伸模組。|
 
-|Debug Engine 屬性|描述|
+|Debug Engine 屬性|Description|
 |-----------------------------|-----------------|
 |metricAddressBP|設定為非零，表示支援位址中斷點。|
 |metricAlwaysLoadLocal|設定為非零，以便永遠在本機載入 debug engine。|
@@ -202,13 +202,13 @@ HRESULT EnumMetricSections(
 |metricIncompatibleList|包含專案的登錄機碼，這些專案會指定與此 debug engine 不相容的 debug engine Guid。|
 |metricDisableJITOptimization|將此設為非零，表示 managed 程式碼) 的即時優化 (應在偵錯工具期間停用。|
 
-|運算式評估工具屬性|描述|
+|運算式評估工具屬性|Description|
 |-------------------------------------|-----------------|
 |metricEngine|這會保留支援指定運算式評估工具的偵錯工具引擎數目。|
 |metricPreloadModules|將此設定為非零，表示在針對程式啟動運算式評估工具時，應該預先載入模組。|
 |metricThisObjectName|將此設定為 "this" 物件名稱。|
 
-|運算式評估工具延伸模組屬性|描述|
+|運算式評估工具延伸模組屬性|Description|
 | - |-----------------|
 |metricExtensionDll|支援此延伸模組之 dll 的名稱。|
 |metricExtensionRegistersSupported|支援的暫存器清單。|
@@ -216,18 +216,18 @@ HRESULT EnumMetricSections(
 |metricExtensionTypesSupported|支援的類型清單。|
 |metricExtensionTypesEntryPoint|存取類型的進入點。|
 
-|埠供應商屬性|描述|
+|埠供應商屬性|Description|
 |------------------------------|-----------------|
 |metricPortPickerCLSID|埠選擇器的 CLSID (一個對話方塊，使用者可使用此對話方塊來選取埠，並新增用來) 進行偵錯工具的埠。|
 |metricDisallowUserEnteredPorts|如果使用者輸入的埠無法新增至埠供應商，則為非零 (這會讓 [埠選擇器] 對話方塊本質上是唯讀) 。|
 |metricPidBase|配置處理常式識別碼時，埠供應商所使用的基底處理序識別碼。|
 
-|預先定義的 SP 存放區類型|描述|
+|預先定義的 SP 存放區類型|Description|
 |-------------------------------|-----------------|
 |storetypeFile|符號會儲存在不同的檔案中。|
 |storetypeMetadata|符號會以中繼資料的形式儲存在元件中。|
 
-|其他屬性|描述|
+|其他屬性|Description|
 |------------------------------|-----------------|
 |metricShowNonUserCode|將此設定為非零，以顯示 nonuser 程式碼。|
 |metricJustMyCodeStepping|將此設定為非零，表示逐步執行只能在使用者程式碼中執行。|

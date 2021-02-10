@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e44def032854e46b00638cff77c8bea91eb0f09
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3a6066a40ea09698bec6caba38d5d55aa8b269e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360608"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937936"
 ---
 # <a name="respond-to-and-propagate-changes"></a>回應及傳播變更
 
@@ -54,7 +54,7 @@ ms.locfileid: "97360608"
 
 - **將事件引數傳遞至規則和事件** 事件和規則都會傳遞一個 `EventArgs` 參數，其中包含模型變更方式的相關資訊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：攔截圖案或 Decorator 上的點選](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [撰寫程式碼以自訂 Domain-Specific 語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

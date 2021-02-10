@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: 4d85bdd6-b571-47e0-afd6-ba3764e4eed5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ba62555f786b2280de9a07c435a3e32d5cc3e7d9
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: e815c985653bc58271b643aabd53955ae3c83f9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937650"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值型別的 Equals()
 

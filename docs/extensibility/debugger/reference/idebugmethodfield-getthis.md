@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b29252d1586d039084ec1d21f1fc4967aea68baf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1893ffac03aba345589274475f81abd44b5b7b5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727174"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936817"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 取得 `this` `Me` [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 包含方法之物件) 指標中的 (。
@@ -28,7 +28,7 @@ ms.locfileid: "80727174"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetThis( 
+HRESULT GetThis( 
    IDebugClassField** ppClass
 );
 ```

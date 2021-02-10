@@ -15,15 +15,15 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c0f24c7270dc3c174be124506e1e36dafe7581f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937377"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>逐步解說：從執行窗格將文字插入檔
   本逐步解說示範如何在 Microsoft Office Word 檔中建立執行窗格。 [動作] 窗格包含兩個可收集輸入的控制項，然後將文字傳送至檔。
@@ -175,7 +175,7 @@ ms.locfileid: "97524167"
 
 3. 在 [動作] 窗格的文字方塊中輸入您的名稱和位址，然後按一下 [ **插入**]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  接著可以執行下列一些工作：
 
 - 在 Excel 中建立執行窗格。 如需詳細資訊，請參閱 [如何：將執行窗格加入至 Excel 活頁簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))。

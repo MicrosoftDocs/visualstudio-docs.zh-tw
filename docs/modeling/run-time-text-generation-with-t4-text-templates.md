@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text templates, generating files at run time
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5c64dd1c8ee25f2e0a3c2b94caa8026438b32286
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363935"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937949"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 
@@ -429,13 +429,13 @@ End of common template.
 End material for DerivedTemplate1.
 ```
 
-## <a name="related-topics"></a>相關主題
+## <a name="related-topics"></a>[相關主題]
 
 設計階段範本：如果您想要使用範本來產生會成為應用程式一部分的程式碼，請參閱 [使用 T4 文字模板產生設計階段程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
 執行時間範本可以在任何應用程式中使用，其中範本和其內容會在編譯時期決定。 但是，如果您想要撰寫 Visual Studio 的延伸模組，以便在執行時間變更的範本產生文字，請參閱 [在 VS 延伸模組中叫用文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)
 - [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)

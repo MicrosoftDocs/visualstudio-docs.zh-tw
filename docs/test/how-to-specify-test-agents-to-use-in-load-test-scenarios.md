@@ -13,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: af0dac96bef5218a80e01c3ec205b58d122677c6
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 0fc1aeb6eed9bf3697d1658a98d00bdfdab42660
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440905"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936206"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>如何：指定要用於負載測試情節的測試代理程式
 

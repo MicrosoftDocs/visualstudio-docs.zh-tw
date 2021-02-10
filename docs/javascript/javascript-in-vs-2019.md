@@ -12,14 +12,14 @@ dev_langs:
 - DHTML
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 5063e0fe369615af51db9da3016d2afef49789ac
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0fe13030478f62f759b3eabc8e897c09a4295bad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936752"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>Visual Studio 2019 中的 JavaScript 和 TypeScript
 

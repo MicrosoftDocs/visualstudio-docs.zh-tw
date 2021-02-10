@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 041ac5aa-0b80-4310-b9ae-b88f8e7e0e5f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 37e3b26a265fe651216e46fa299bdd827416b8ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 197490cde12e0c7dd9cee14d11c3ec2f0b165d86
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727132"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936869"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 取得方法的全域容器。

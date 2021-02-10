@@ -13,15 +13,15 @@ helpviewer_keywords:
 - content controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2dd7e75048a84a4e235390b99d17d48dfad039ec
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4bd636070a8375b6761cb2d3ab62d08be4302db4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937494"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>逐步解說：使用內容控制項建立範本
   本逐步解說示範如何建立文件層級自訂，這個自訂會使用內容控制項在 Microsoft Office Word 範本中建立可重複使用的結構化內容。
@@ -231,7 +231,7 @@ ms.locfileid: "97524979"
 
 7. 關閉範本。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  您可以透過下列主題，進一步了解如何使用內容控制項：
 
 - 將內容控制項繫結至內嵌於文件的 XML 片段，也稱為自訂 XML 組件。 如需詳細資訊，請參閱 [逐步解說：將內容控制項系結至自訂 XML 元件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)。

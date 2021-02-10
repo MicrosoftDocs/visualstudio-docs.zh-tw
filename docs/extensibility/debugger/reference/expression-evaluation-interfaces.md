@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da230a2da87b2dd3e3a85ce3ec6c914e829ccc61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a048d11b09ee873a2f5a11e35db78f68df6ad680
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936934"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
@@ -34,7 +34,7 @@ ms.locfileid: "80736949"
 
 - Visual Studio (VS) 
 
-|介面|實作為|描述|
+|介面|實作為|Description|
 |---------------|--------------------|-----------------|
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|代表變數的數值別名。|
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|代表變數的數值別名，並讓運算式評估工具 (EE) 取得別名的應用程式域。|
