@@ -7,21 +7,21 @@ ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 431de32838ad236229db5e41330aba372e30ea75
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: b847fad9752c6a2448c0fdc571815ea1823e2d9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944891"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>使用 VSPackage 建立延伸模組
 
 本逐步解說將示範如何建立 VSIX 專案並加入 VSPackage 專案專案。 我們將使用 VSPackage 來取得 UI Shell 服務，以便顯示訊息方塊。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "94973781"
 
 1. 建立名為 **FirstPackage** 的 VSIX 專案。 您可以藉由搜尋 "vsix"，在 [ **新增專案** ] 對話方塊中找到 VSIX 專案範本。
 
-2. 當專案開啟時，加入名為 **FirstPackage** 的 Visual Studio 套件專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  **Extensibility** 然後選取 [ **Visual Studio 套件**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstPackage.cs*。
+2. 當專案開啟時，加入名為 **FirstPackage** 的 Visual Studio 套件專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  然後選取 [ **Visual Studio 套件**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstPackage.cs*。
 
 3. 建置此專案並開始偵錯。
 

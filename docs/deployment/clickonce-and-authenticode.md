@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ab5b6712-f32a-4e33-842f-e88ab4818ccf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 07b40cb9c4e1d79390bb4a0541e1cb5bd8862d3a
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: e6541e99b23579713e77cf2bf1dc62152f02b4ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383140"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946094"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 *Authenticode* 是 Microsoft 技術，使用業界標準密碼編譯簽署有數位憑證的應用程式程式碼，以確認應用程式發行者真偽。 使用 Authenticode 部署應用程式， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以降低特洛伊木馬程式的風險。 特洛伊木馬程式是誤以為來自於已建立、可信任來源的合法程式，其實是惡意第三方的病毒或其他有害的程式。 使用數位憑證簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署是選擇性的步驟，用以確認組件和檔案未遭竄改。
@@ -46,7 +46,7 @@ ms.locfileid: "94383140"
 - 使用 New-SelfSignedCertificate PowerShell Cmdlet 或使用隨附的 *MakeCert.exe* 來產生您自己的憑證 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 。
 
 ### <a name="how-using-certificate-authorities-helps-users"></a>如何使用憑證授權單位幫助使用者
- 使用 New-selfsignedcertificate 產生的憑證或 *MakeCert.exe* 公用程式通稱為 *自助憑證* 或是 *測試憑證* 。這種憑證的運作方式與 .NET Framework 之 *.snk* 檔案的運作方式相同。 它只有公開/私密密碼編譯金鑰組，不包含任何可驗證的發行者資訊。 您可以使用自助憑證部署在內部網路高度信任的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 不過，當這些應用程式在用戶端電腦上執行時， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 會視之為來自未知的發行者。 根據預設，使用自我憑證簽署並透過網際網路部署的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，不能使用受信任的應用程式部署。
+ 使用 New-selfsignedcertificate 產生的憑證或 *MakeCert.exe* 公用程式通稱為 *自助憑證* 或是 *測試憑證*。這種憑證的運作方式與 .NET Framework 之 *.snk* 檔案的運作方式相同。 它只有公開/私密密碼編譯金鑰組，不包含任何可驗證的發行者資訊。 您可以使用自助憑證部署在內部網路高度信任的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 不過，當這些應用程式在用戶端電腦上執行時， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 會視之為來自未知的發行者。 根據預設，使用自我憑證簽署並透過網際網路部署的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，不能使用受信任的應用程式部署。
 
  相反地，來自 CA 的憑證，例如，憑證廠商或貴企業內部的部門，能為您的使用者提供更高的安全性。 它不只會識別簽署軟體的發行者，還會檢查簽署的 CA 驗證身分識別。 如果 CA 不是根授權單位，Authenticode 也會「鏈結」回根授權單位，確認 CA 有權發行憑證。 為了更高的安全性，您應該盡可能使用 CA 發出的憑證。
 
@@ -71,5 +71,5 @@ ms.locfileid: "94383140"
 ## <a name="see-also"></a>另請參閱
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)
-- [受信任的應用程式部署總覽](../deployment/trusted-application-deployment-overview.md)
+- [信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)
 - [Mage.exe (資訊清單產生和編輯工具) ](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: bc709ff7-4966-4f36-9af2-690efe2cea1d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f281ceb1f305c5774fedbf725f2e6a9481d073d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e069a822cc2394769d256c93a1decf01b451b643
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944852"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 這個介面代表專案的位址。 它是由符號處理常式傳回。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugAddress : IUnknown
@@ -44,7 +44,7 @@ IDebugAddress : IUnknown
 ## <a name="remarks"></a>備註
  符號提供者會傳回這個介面，以代表物件及其在特定範圍內的位置 (例如，函數、方法或類別) 。 這個介面會從傳回，並傳遞給符號提供者和運算式評估工具的各種方法。 通常，符號提供者是唯一需要解讀這個介面內容的實體。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio

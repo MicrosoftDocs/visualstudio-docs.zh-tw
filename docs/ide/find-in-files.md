@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Find in Files tab, Find and Replace window
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c9aa0d1523c8ef8be73a3c5e73255ce1eeb32d57
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: b04853681ef764d494f16df4659acbbec0bdd018
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945600"
 ---
 # <a name="find-in-files"></a>檔案中尋找
 

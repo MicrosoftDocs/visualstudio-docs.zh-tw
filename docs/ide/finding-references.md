@@ -9,15 +9,15 @@ helpviewer_keywords:
 - find all references
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5ee6a0792c5dbfa1661018e75806499d1aa1028
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 0cc7702ae07c83c5798945c4a9bb2ab787fc9cd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945561"
 ---
 # <a name="find-references-in-your-code"></a>在您的程式碼中尋找參考
 

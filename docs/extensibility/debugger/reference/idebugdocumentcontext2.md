@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 2a446c71-8100-4c09-a1cc-fd446bd74030
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d31a78412a1a6b20518b6f38ba76b7964cbdbe3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64db2446496d2083d34eefc92afabc3ca541442e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946965"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 這個介面代表來源檔案檔中的位置。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocumentContext2 : IUnknown
@@ -48,7 +48,7 @@ IDebugDocumentContext2 : IUnknown
 |[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)|將此檔內容與指定的檔內容陣列進行比較。|
 |[Seek](../../../extensibility/debugger/reference/idebugdocumentcontext2-seek.md)|依指定的語句或行數移動檔內容。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

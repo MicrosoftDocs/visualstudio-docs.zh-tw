@@ -7,21 +7,21 @@ ms.topic: how-to
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2bcbce3c97830663b43a94191d84d81418b423
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1b03b7a4941609462fca27bebf67d8ad2a8f7044
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973929"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944917"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>使用工具視窗建立擴充功能
 
 在此程式中，您將瞭解如何使用 VSIX 專案範本和 **自訂工具視窗** 專案範本，以使用工具視窗建立延伸模組。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
  從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "94973929"
 
 1. 建立名為 **FirstWindow** 的 VSIX 專案。 您可以藉由搜尋 "vsix"，在 [ **新增專案** ] 對話方塊中找到 VSIX 專案範本。
 
-2. 當專案開啟時，加入名為 **MyWindow** 的工具視窗專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  **Extensibility** 然後選取 [**自訂工具視窗]**。 在視窗底部的 [ **名稱** ] 欄位中，將工具視窗的檔案名變更為 *MyWindow.cs*。
+2. 當專案開啟時，加入名為 **MyWindow** 的工具視窗專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  然後選取 [**自訂工具視窗]**。 在視窗底部的 [ **名稱** ] 欄位中，將工具視窗的檔案名變更為 *MyWindow.cs*。
 
 3. 建置此專案並開始偵錯。
 

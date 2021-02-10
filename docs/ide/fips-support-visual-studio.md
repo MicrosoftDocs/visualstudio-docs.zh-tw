@@ -7,15 +7,15 @@ ms.date: 04/14/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf7831df3a820c757120159d6d367b884d224a4
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 3d6cb0d2bbcb1ec1d13f5916a7c2b1cd97824fb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945535"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Visual Studio 支援的作業的 FIPS 140-2 核准模式
 
@@ -28,7 +28,7 @@ ms.locfileid: "95597479"
 > [!NOTE]
 > 您用來為非 Microsoft 平臺（例如 iOS 或 Android）開發應用程式的工具，可能不會使用符合 FIPS 規範的演算法。 您安裝的 Visual Studio 或延伸模組隨附的協力廠商軟體，也可能不會使用符合 FIPS 規範的演算法。 而且， [SharePoint](/sharepoint/security-for-sharepoint-server/federal-information-processing-standard-security-standards/) 解決方案的開發並不支援 FIPS 140-2 核准的作業模式。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要深入瞭解 Visual Studio 和其他 Microsoft 產品和服務的 FIPS 140-2 核准模式，請參閱下列連結：
 

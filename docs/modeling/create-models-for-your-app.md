@@ -20,15 +20,15 @@ helpviewer_keywords:
 - software, modeling
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b79496e6762d798db14d7341e71129d5e510c1b0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9adf4445ca4b52e23fce91bb1f574e55fbab4f1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363467"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945379"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 

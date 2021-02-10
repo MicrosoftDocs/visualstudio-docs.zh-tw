@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d3dac454-518a-44d7-a76e-ccb7b9c3a150
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e8b49f833b5dd91dc6379d2a015d41a9679afe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 23174667827e63afb93d82679a51d65512731710
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349772"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946068"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>How to: Set a security zone for a ClickOnce application (如何：設定 ClickOnce 應用程式的安全性區域)
 設定 ClickOnce 應用程式的程式碼存取安全性權限時，必須從 [專案設計工具]  之 [安全性] 頁面上的一組基底權限開始。
@@ -32,7 +32,7 @@ ms.locfileid: "94349772"
 
 ### <a name="to-set-a-security-zone"></a>設定安全性區域
 
-1. 在 **方案總管** 中選取專案時，在 [ **專案** ] 功能表上按一下 [ **屬性** ]。
+1. 在 **方案總管** 中選取專案時，在 [ **專案** ] 功能表上按一下 [ **屬性**]。
 
 2. 按一下 [安全性]  索引標籤。
 
@@ -44,7 +44,7 @@ ms.locfileid: "94349772"
 
 5. 在 [安裝應用程式的區域]  下拉式清單中，選取安全性區域。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [How to: Set custom permissions for a ClickOnce application (如何：設定 ClickOnce 應用程式的自訂權限)](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)

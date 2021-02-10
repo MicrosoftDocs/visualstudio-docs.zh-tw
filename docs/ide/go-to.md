@@ -11,15 +11,15 @@ helpviewer_keywords:
 - go to
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e3e000224fc09810e15ba3cdbdc4be729139eaaa
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 257db632c095027d9fa4be667a30e809ecb2fff4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946614"
 ---
 # <a name="find-code-using-go-to-commands"></a>使用移至命令來尋找程式碼
 
@@ -54,7 +54,7 @@ Visual Studio 的 [移至] 命令會對程式碼執行焦點式搜尋，協助�
 
 若要縮小搜尋範圍至特定類型的程式碼項目，您可以在 [搜尋] 方塊中指定前置詞，或選取五個篩選條件圖示的其中一個：
 
-前置詞 | 圖示 | 快速鍵 | 描述
+前置詞 | 圖示 | 快速鍵 | Description
 :-: | - | - | -
 :| ![行圖示](media/gotoall-line-icon.png) | **Ctrl** +**G** | 移至指定的行號
 f| ![檔案圖示](media/gotoall-files-icon.png) | **Ctrl** +**1**、 **Ctrl** + **F** | 移至指定的檔案
@@ -67,7 +67,7 @@ m| ![成員圖示](media/gotoall-members-icon.png) | **Ctrl** +**1**、 **Ctrl**
 
 若要將搜尋範圍縮小為特定位置，請選取兩個文件圖示的其中一個：
 
-圖示 | 描述
+圖示 | Description
 ---- | ---
 ![目前的文件](media/gotoall_currentdocument.png) | 僅搜尋目前文件
 ![外部文件](media/gotoall_external.png) | 除了專案/方案中的文件之外，還會搜尋外部文件
@@ -82,7 +82,7 @@ m| ![成員圖示](media/gotoall-members-icon.png) | **Ctrl** +**1**、 **Ctrl**
 
 選取齒輪圖示 ![齒輪圖示](media/gotoall_gear.png) 可讓您變更這項功能的運作方式：
 
-設定 | 描述
+設定 | Description
 ------- | ---
 使用預覽索引標籤 | 在 IDE 的預覽索引標籤中立即顯示選取的項目
 顯示詳細資料 | 在視窗中顯示文件註解中的專案、檔案、行和摘要資訊

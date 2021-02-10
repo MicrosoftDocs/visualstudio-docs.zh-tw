@@ -5,16 +5,16 @@ ms.date: 07/11/2018
 ms.topic: troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 4b5cf62dadc38802e477c7588416b4003304e852
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe9d87a5cdea04251d7ab30b6e9e0fed6b0c4b31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75584578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945522"
 ---
 # <a name="target-older-versions-of-net-f"></a>以舊版 .NET 為目標 (F#)
 
@@ -42,13 +42,13 @@ ms.locfileid: "75584578"
 
 ### <a name="to-enable-the-net-framework-35-on-windows-81"></a>在 Windows 8.1 上啟用 .NET Framework 3.5
 
-1. 在 [開始]**** 畫面上鍵入**控制台**。
+1. 在 [開始] 畫面上鍵入 **控制台**。
 
-   當您鍵入時，**控制台**圖示會出現在 [應用程式]**** 標題下方。
+   當您鍵入時，**控制台** 圖示會出現在 [應用程式] 標題下方。
 
-2. 選擇**控制台**圖示，選擇**程式集**圖示，然後選擇 [開啟或關閉 Windows 功能]**** 連結。
+2. 選擇 **控制台** 圖示，選擇 **程式集** 圖示，然後選擇 [開啟或關閉 Windows 功能] 連結。
 
-3. 確定已選取 [.NET Framework 3.5 (含 .NET 2.0 及 3.0)]**** 核取方塊，然後選擇 [確定]**** 按鈕。 您不需要為 .NET Framework 選用元件的任何子節點選取核取方塊。
+3. 確定已選取 [.NET Framework 3.5 (含 .NET 2.0 及 3.0)] 核取方塊，然後選擇 [確定] 按鈕。 您不需要為 .NET Framework 選用元件的任何子節點選取核取方塊。
 
    如果尚未啟用 .NET Framework 3.5，則會加以啟用。
 

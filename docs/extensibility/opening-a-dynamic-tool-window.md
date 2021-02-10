@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12b08f676e02a9023374c709aa18edfc0e8815db
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 1998091559f78ed7c7eb8d9585206cf0217d8b2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863515"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946588"
 ---
 # <a name="open-a-dynamic-tool-window"></a>開啟動態工具視窗
 通常會從功能表上的命令或對等的鍵盤快速鍵開啟工具視窗。 但有時候，您可能需要在每次套用特定 UI 內容時開啟的工具視窗，並在不再套用 UI 內容時關閉。 這些類型的工具視窗稱為 *動態* 或 *自動顯示*。

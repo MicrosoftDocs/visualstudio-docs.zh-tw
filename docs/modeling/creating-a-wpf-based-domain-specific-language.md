@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef1aaf4f26e6459f48345a2f9552ab09a89da9d3
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5142189e5502d1be29442359b8705abec2b8ca7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945340"
 ---
 # <a name="create-a-wpf-based-domain-specific-language"></a>建立 WPF 架構的特定領域語言
 
@@ -22,6 +22,6 @@ ms.locfileid: "97363441"
 
 這項功能的相關資訊和範例可在 Visual Studio 的視覺效果和模型工具網站上找到，網址為： [http://go.microsoft.com/fwlink/?LinkId=186128](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)

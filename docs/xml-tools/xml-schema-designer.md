@@ -7,15 +7,15 @@ ms.topic: overview
 ms.assetid: ffdf63ee-faa6-45b7-bbf9-a5644dc8aca2
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d809b9065ec780c8383f2320453c957bc61daa54
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: daf4f145afe6b94884912ab974e96262b04f229a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351423"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946081"
 ---
 # <a name="xml-schema-designer-overview"></a>XML 架構設計工具總覽
 

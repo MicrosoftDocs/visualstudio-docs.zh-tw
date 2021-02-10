@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5b7780b6fccef86dfe4a671c0c468e5899adc36c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8c11b2f107414ac5ffb048d7c5e49609ba0b17b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528459"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946133"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>將 Office 方案遷移至 .NET Framework 4 或更新版本
   如果 Office 專案的目標 framework [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 從舊版 .NET Framework 變更為或更新版本，可能需要一些額外的步驟，才能繼續在開發和終端使用者電腦上執行解決方案。 如需詳細資訊，請參閱 [執行您遷移至 .NET Framework 4 或 .NET Framework 4.5 之 Office 專案的必要變更](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。

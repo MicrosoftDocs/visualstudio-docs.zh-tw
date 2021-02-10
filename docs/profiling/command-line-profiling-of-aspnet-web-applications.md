@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 897c00d5-5767-433b-a960-4a29c6023ede
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: c4c95890ae4022b854b76d2e4857fc2a27ce97e5
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: e97e6a3d9115be2b14cac4e87698c6eeb9fc091d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945184"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>ASP.NET Web 應用程式的命令列分析
 本節說明 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 從命令列流量分析工具，收集 web 應用程式之效能資料的程式和選項 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
@@ -29,7 +29,7 @@ ms.locfileid: "98533689"
 
 ## <a name="common-tasks"></a>常見工作
 
-| 工作 | 相關內容 |
+| Task | 相關內容 |
 | - | - |
 | **輕鬆收集基本的 ASP.NET 分析資料：** 使用 **VSPerfASPNETCmd** 工具可收集取樣、檢測、.NET 記憶體、爭用或階層互動資料，不需要進行設定，也不需要像使用 **VSPerfCmd** 時必須重新啟動 Internet Information Services (IIS)。 **VSPerfASPNETCmd** 不允許您收集其他資料，或控制資料收集。 **注意：**  **VSPerfASPNETCmd** 是慣用的工具，可供您使用獨立分析工具來分析 ASP.NET 的網站。 | -   [使用 VSPerfASPNETCmd 快速進行網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) |
 | **收集應用程式統計資料：** 使用取樣方法收集效能統計資料。 取樣資料可用來分析 CPU 使用量的問題，以及了解應用程式的一般效能特性。 | -   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md) |

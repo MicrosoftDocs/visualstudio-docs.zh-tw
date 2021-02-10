@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00afdc31e72e4b0336db19939955a0b2360a00a1
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 4ada5870bc06465b97bdf767eb64910f62e15f0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974279"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944904"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>使用功能表命令建立擴充功能
 
 本逐步解說將示範如何使用可啟動 [記事本] 的功能表命令來建立延伸模組。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 從 Visual Studio 2015 開始，您不會從下載中心安裝 Visual Studio SDK。 它會在 Visual Studio 安裝程式中包含為選用功能。 您也可以稍後再安裝 VS SDK。 如需詳細資訊，請參閱 [安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
@@ -36,13 +36,13 @@ ms.locfileid: "94974279"
 
 ::: moniker range="vs-2017"
 
-2. 當專案開啟時，加入名為 **FirstCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  **Extensibility** 然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstCommand.cs*。
+2. 當專案開啟時，加入名為 **FirstCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstCommand.cs*。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. 當專案開啟時，加入名為 **FirstCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  **Extensibility** 然後選取 [**命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstCommand.cs*。
+2. 當專案開啟時，加入名為 **FirstCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  然後選取 [**命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstCommand.cs*。
 
 ::: moniker-end
 
@@ -133,7 +133,7 @@ ms.locfileid: "94974279"
 
 當您的朋友再次帶出 Visual Studio 時，他們會在 [**工具**  >  **擴充功能和更新**] 中找到 FirstMenuCommand 延伸模組。 它們也可以移至 [ **擴充功能和更新** ]，以卸載或停用延伸模組。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 本逐步解說只示範了您可以使用 Visual Studio 擴充功能的一小部分。 以下是您可以使用 Visual Studio 擴充功能來執行的其他 (簡單的) 專案清單：
 

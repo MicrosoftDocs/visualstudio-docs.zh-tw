@@ -5,15 +5,15 @@ ms.date: 11/13/2017
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 89aa8b9d1b1f288e19252b8a111666f5b4e3e087
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
-ms.translationtype: HT
+ms.openlocfilehash: 76230555defd9367800f6c3c4e5ea0fe24a5195d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946341"
 ---
 # <a name="work-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
@@ -49,8 +49,8 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 
 ## <a name="send-us-your-feedback"></a>將您的意見反應傳送給我們！
 
-1. **GitHub Issues**：連絡 RTVS 小組的最佳方式，就是[在 GitHub 上提問](https://github.com/Microsoft/RTVS/issues)，或是使用 [R 工具]**** >  [意見反應]**** 功能表。
+1. **GitHub Issues**：連絡 RTVS 小組的最佳方式，就是 [在 GitHub 上提問](https://github.com/Microsoft/RTVS/issues)，或是使用 [R 工具] >  [意見反應] 功能表。
 
-1. **傳送笑臉/苦臉**：[R 工具]**** >  [意見反應]**** 功能表是快速傳送意見反應，以及附加 RTVS 記錄檔，協助診斷問題最快的方式  (若您想要個別傳送記錄檔，其位於 *%temp%/RTVSlogs.zip* 之中)。若透過 [說明] >  [意見反應] >  [設定] 功能表命令或在是安裝期間選擇退出 Visual Studio 遙測，將會停用記錄。
+1. **傳送笑臉/苦臉**：[R 工具] >  [意見反應] 功能表是快速傳送意見反應，以及附加 RTVS 記錄檔，協助診斷問題最快的方式  (若您想要個別傳送記錄檔，其位於 *%temp%/RTVSlogs.zip* 之中)。若透過 [說明] >  [意見反應] >  [設定] 功能表命令或在是安裝期間選擇退出 Visual Studio 遙測，將會停用記錄。
 
 1. **電子郵件**：您可以透過 *rtvsuserfeedback (at) microsoft.com*，將意見反應直接傳送給小組。

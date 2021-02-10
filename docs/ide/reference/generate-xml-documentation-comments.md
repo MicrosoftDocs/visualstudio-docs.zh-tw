@@ -6,15 +6,15 @@ ms.date: 01/22/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 250e07994b04e03b015bf3893633ebce0f36a90d
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 2c203d9a445d9426a8079801a856e20f7be82229
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617470"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946562"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>如何：在文件產生中插入 XML 註解
 
@@ -32,7 +32,7 @@ Visual Studio 可藉由自動產生標準 XML 文件註解結構，來幫助您�
 
 1. 將文字游標放在您想要記載的元素 (例如方法) 上方。
 
-2. 請執行下列其中一項：
+2. 執行下列其中一個動作：
 
    - 在 C# 中鍵入 `///`，或在 Visual Basic 中鍵入 `'''`
 

@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: a34ba40e-01b1-4386-90b1-c8e628a8c527
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0bffb825b06b6fd807f08542e2c591aa87ad07
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 35037334c31209a54cff4ea29dcb229a6adfd28e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945121"
 ---
 # <a name="command-line-profiling-tools-reference"></a>命令列分析工具參考
 命令列效能工具可讓程式設計人員在命令提示字元上剖析他們的應用程式。 下列命令列程式碼剖析工具可讓您在命令提示字元上剖析程式碼。

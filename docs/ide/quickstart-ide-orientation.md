@@ -7,15 +7,15 @@ ms.date: 02/21/2019
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4511658a454c1431967905e88428842c3ba00c64
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 5e0199319bc0c647f42e87d4003dd2fabe4544a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945496"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio IDE 初探
 
@@ -189,7 +189,7 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 
 ::: moniker-end
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 我們已經介紹 Visual Studio 的幾個功能，藉以熟悉使用者介面。 若要進一步探索：
 

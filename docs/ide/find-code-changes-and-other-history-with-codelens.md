@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 485287239a13f61d10ee39bad854a0f3bdae4f55
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 59df5a4b0b0c873de69c5e574ad5c2cccbc43567
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006701"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945873"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 

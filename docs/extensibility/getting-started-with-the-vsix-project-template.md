@@ -1,5 +1,5 @@
 ---
-title: 使用 VSIX 專案範本消費者入門 |Microsoft Docs
+title: 使用 VSIX 專案範本開始使用 |Microsoft Docs
 description: 瞭解如何使用 VSIX 專案範本來建立擴充功能，或封裝現有的延伸模組以進行部署。
 ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6c7c2e12f01b008be6937a8c974f2eea183d594
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 231b7e1595a7674280a56b4655643c2b77baeb85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994338"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945795"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>開始使用 VSIX 專案範本
 

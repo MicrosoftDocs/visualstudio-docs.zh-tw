@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a4f5c0250405c2e2a0314b52c4cbc64d749fc0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 720850096e7099ed95cbc5fa914bebb2bee580ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732090"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944663"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 從反組解碼資料流程中的目前位置開始讀取指示。
@@ -28,7 +28,7 @@ ms.locfileid: "80732090"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT Read( 
+HRESULT Read( 
    DWORD                     dwInstructions,
    DISASSEMBLY_STREAM_FIELDS dwFields,
    DWORD*                    pdwInstructionsRead,
@@ -37,7 +37,7 @@ HRESULT Read( 
 ```
 
 ```csharp
-int Read( 
+int Read( 
    uint                           dwInstructions,
    enum_DISASSEMBLY_STREAM_FIELDS dwFields,
    out uint                       pdwInstructionsRead,

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 912c8fc9b5920411304310c44cdc264968472d4e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9cfa8a3cda3f6bb2f564efe745a11863cf4d0e8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945301"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>自訂及擴充特定領域語言
 
@@ -70,7 +70,7 @@ Visual Studio 模型和視覺效果 SDK (VMSDK) 提供數個層級，您可以�
 |整合數個 Dsl，使其可做為一個應用程式的一部分。|請參閱 [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。|
 |允許協力廠商擴充您的 DSL，並控制擴充功能。|[使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [使用 DSL 程式庫共用 DSL 之間的類別](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [定義鎖定原則來建立唯讀區段](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
 - [撰寫程式碼以自訂 Domain-Specific 語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

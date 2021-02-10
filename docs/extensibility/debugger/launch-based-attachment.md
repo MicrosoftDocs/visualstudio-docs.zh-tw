@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e041c692a833b7d0a1891c078388a3f5b2d11e4
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 1f898bcb040b5b46144fd7c4f3fc2260b480872d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945938"
 ---
 # <a name="launch-based-attachment"></a>以啟動為基礎的附件
 以啟動為基礎的程式附件是自動的。 當裝載程式的進程由 SDM 啟動時，以啟動為基礎的附件會遵循與手動附件方法類似的路徑。 如需詳細資訊，請參閱 [附加至程式](../../extensibility/debugger/attaching-to-the-program.md)。

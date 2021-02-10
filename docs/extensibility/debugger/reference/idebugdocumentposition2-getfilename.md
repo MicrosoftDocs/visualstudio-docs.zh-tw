@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d713635e-088f-465b-b26d-00ac971c9e86
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7cc194c43b0a95ad92e9421334be7af2cd6073b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fde4f0eea0d873a22bde5771bfce9afa247e524f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946874"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 取得包含檔位置之原始程式檔的檔案名。
@@ -28,13 +28,13 @@ ms.locfileid: "80731675"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetFileName( 
+HRESULT GetFileName( 
    BSTR* pbstrFileName
 );
 ```
 
 ```csharp
-int GetFileName( 
+int GetFileName( 
    out string pbstrFileName
 );
 ```

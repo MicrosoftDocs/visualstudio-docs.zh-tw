@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4954b3b278b3c7a6b798a4ffda3856ab8bb200c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3223f454fbf775b6aa11512c20fc63f8c224ade7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944624"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 移動反組解碼資料流程中的讀取指標，指定的指示數目相對於指定的位置。
@@ -28,7 +28,7 @@ ms.locfileid: "80732080"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT Seek( 
+HRESULT Seek( 
    SEEK_START          dwSeekStart,
    IDebugCodeContext2* pCodeContext,
    UINT64              uCodeLocationId,
@@ -37,7 +37,7 @@ HRESULT Seek( 
 ```
 
 ```csharp
-int Seek( 
+int Seek( 
    enum_SEEK_START    dwSeekStart,
    IDebugCodeContext2 pCodeContext,
    ulong              uCodeLocationId,

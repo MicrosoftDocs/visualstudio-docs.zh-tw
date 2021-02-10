@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c1560b40fe94af8dae5223981dd8e0c790320085
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946367"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>使用多個處理器來建置專案
 
@@ -38,7 +38,7 @@ MSBuild 可運用有多個處理器或多核心處理器的系統。 針對每�
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>C + + 專案 (. .vcxproj) 和方案 ( .sln) 檔案
 
- C + + 專案 ( *.vcxproj* ) 和方案 ( *.sln* ) 檔案都可以傳遞給 [MSBuild](../msbuild/msbuild-task.md)工作。 針對 c + + 專案，會呼叫 VCWrapperProject，然後建立內部 MSBuild 專案。 針對 c + + 方案，會建立 SolutionWrapperProject，然後建立內部 MSBuild 專案。 在這兩種情況下，產生的專案都會被視為與任何其他 MSBuild 專案相同。
+ C + + 專案 (*.vcxproj*) 和方案 (*.sln*) 檔案都可以傳遞給 [MSBuild](../msbuild/msbuild-task.md)工作。 針對 c + + 專案，會呼叫 VCWrapperProject，然後建立內部 MSBuild 專案。 針對 c + + 方案，會建立 SolutionWrapperProject，然後建立內部 MSBuild 專案。 在這兩種情況下，產生的專案都會被視為與任何其他 MSBuild 專案相同。
 
 ## <a name="multi-process-execution"></a>多處理序執行
 
@@ -46,7 +46,7 @@ MSBuild 可運用有多個處理器或多核心處理器的系統。 針對每�
 
  為了避免這個問題，但仍啟用多處理器組建，MSBuild 會使用「進程隔離」。 藉由使用進程隔離，MSBuild 可以建立最多 `n` 進程，其中 `n` 等於系統上可用的處理器數目。 例如，如果 MSBuild 在具有兩個處理器的系統上建立方案，則只會建立兩個組建處理常式。 這些處理序會重複使用來建置方案中的所有專案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [平行建立多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 - [工作](../msbuild/msbuild-tasks.md)

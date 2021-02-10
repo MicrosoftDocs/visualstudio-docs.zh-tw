@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5252dcbb-8bfe-4d8a-a8e5-b022b194df19
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00e13da257c5477b3834ebb85bf6d481fe699362
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 171e9da3b25aa33ad3921f4ec5f841429490be72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944611"
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 > [!IMPORTANT]
@@ -23,7 +23,7 @@ ms.locfileid: "80736362"
 
  代表變數的數值別名，並讓運算式評估工具 (EE) 取得別名的應用程式域。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugAlias2 : IDebugAlias
@@ -42,7 +42,7 @@ IDebugAlias2 : IDebugAlias
 ## <a name="remarks"></a>備註
  別名是字串格式的十進位數，後面接著 # 字元，例如 1001 #。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Ee. h
 
  命名空間： VisualStudio

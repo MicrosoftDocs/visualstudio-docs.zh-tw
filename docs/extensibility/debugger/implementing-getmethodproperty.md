@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6028bd92611e7d5dc8a7e05fcf98bc360de7e9ed
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 41150ad7909f15484b9bc035dd9dff70ad693029
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946003"
 ---
 # <a name="implement-getmethodproperty"></a>執行 GetMethodProperty
 > [!IMPORTANT]

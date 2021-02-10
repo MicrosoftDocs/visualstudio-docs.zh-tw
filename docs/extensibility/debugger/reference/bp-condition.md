@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 88ed6b6468c5765c8f987c1f15f3e4e8ade9c8c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8bbdcec09ef004817b05e7992ae72bc856764da9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945847"
 ---
 # <a name="bp_condition"></a>BP_CONDITION
 描述引發中斷點的條件。
@@ -68,7 +68,7 @@ public struct BP_CONDITION {
 
 此結構也會以參數形式傳遞至 [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) 和 [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) 方法。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

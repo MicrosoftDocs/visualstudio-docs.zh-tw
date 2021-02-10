@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3cc4c9a4-7805-4239-b00e-eb4a024f3c55
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2ceb87277460f65e52c35f02e7fbbd01da1101a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad298d83efd16112a0cf1be3171601b93342a55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944715"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80736523"
 
  代表變數的數值別名。 別名只是變數的不同名稱。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugAlias : IUnknown
@@ -50,7 +50,7 @@ IDebugAlias : IUnknown
 ## <a name="remarks"></a>備註
  別名是字串格式的十進位數，後面接著 # 字元，例如 1001 #。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： ee. h
 
  命名空間： VisualStudio

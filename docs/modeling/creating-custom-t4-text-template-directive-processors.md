@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 283f2122c05a91a5e677293f59e3f6e02d43f63a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: bf17d2a7e3b38e267f0353f71c7cd83826b141bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363418"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945327"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器
 
@@ -66,7 +66,7 @@ ms.locfileid: "97363418"
 
 - 如需詳細資訊，請參閱 [逐步解說：建立自訂](../modeling/walkthrough-creating-a-custom-directive-processor.md)指示詞處理器。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [部署自訂](../modeling/deploying-a-custom-directive-processor.md) 指示詞處理器說明如何註冊自訂指示詞處理器。
 - [逐步解說：建立自訂](../modeling/walkthrough-creating-a-custom-directive-processor.md) 指示詞處理器說明如何建立自訂指示詞處理器、如何註冊和測試指示詞處理器，以及如何將輸出檔格式化為 HTML。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92fcce4dc62cdc84d15ca6dc51420791d4460340
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 24ffc64876e015ba2139022698576e04b12625e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875423"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945639"
 ---
 # <a name="properties-window-object-list"></a>屬性視窗的物件清單
 [ **屬性** ] 視窗中的 [物件清單] 是一個下拉式清單，可讓您將選取範圍變更為一或多個選取視窗內可用的其他物件。 從這份清單中選取不同的物件會觸發呼叫， <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> 以通知環境已選取新的物件。 接著會變更 [ **屬性** ] 視窗中顯示的資訊，顯示與新選取之物件相關聯的屬性。
@@ -31,5 +31,5 @@ ms.locfileid: "97875423"
 
  如果 COM 物件未執行 <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> ，[ **屬性** ] 視窗就會顯示介面名稱，取代清單左邊的物件名稱。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [擴充屬性](../../extensibility/internals/extending-properties.md)

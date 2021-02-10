@@ -27,15 +27,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], visualizing the call stack
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b3d5c531400ddd88cea17b9172f19bf9711105d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7196cf06e7d6bcde33bc1e4a6c5d0ebfac486576
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946484"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 
@@ -47,13 +47,13 @@ ms.locfileid: "97362427"
 
  ::: moniker range="vs-2017"
 
-- [Visual Studio 企業版](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-- [Visual Studio 企業版](https://visualstudio.microsoft.com/downloads)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -202,7 +202,7 @@ ms.locfileid: "97362427"
 
 - [使用地圖尋找 bug](#FindBugs)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)

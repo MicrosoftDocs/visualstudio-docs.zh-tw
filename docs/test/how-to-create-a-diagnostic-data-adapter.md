@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 730a3e2618bd5f424d21eaf3eb4ef3621ec1838e
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: b35444987686107b9ba2788392abde498661f3de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95439845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945145"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：建立診斷資料配接器
 

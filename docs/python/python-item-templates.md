@@ -5,33 +5,33 @@ ms.date: 12/06/2018
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 528606356c2d976de71ab2c0317a1a0236d2e63f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23a79d0842592ff3ad68f63c2739a2af9847aaeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533389"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945158"
 ---
 # <a name="python-item-templates"></a>Python 項目範本
 
-您可以透過 [**專案**  >  **加入新專案**] 功能表命令，在 Python 專案中取得專案範本，或在方案總管的內容功能表上使用 [**加入**  >  **新專案**] 命令。 **Solution Explorer**
+您可以透過 [**專案**  >  **加入新專案**] 功能表命令，在 Python 專案中取得專案範本，或在方案總管的內容功能表上使用 [**加入**  >  **新專案**] 命令。 
 
 ![[加入新項目] 對話方塊](media/project-item-templates.png)
 
-使用您為項目提供的名稱時，範本通常會在專案中目前所選的資料夾內建立一或多個檔案和資料夾 (以滑鼠右鍵按一下資料夾可自動選取該資料夾的操作功能表)。 新增項目時，會將該項目包含在 Visual Studio 專案中，而且會出現的 [方案總管]**** 中。
+使用您為項目提供的名稱時，範本通常會在專案中目前所選的資料夾內建立一或多個檔案和資料夾 (以滑鼠右鍵按一下資料夾可自動選取該資料夾的操作功能表)。 新增項目時，會將該項目包含在 Visual Studio 專案中，而且會出現的 [方案總管] 中。
 
 下表簡短說明 Python 專案內每個項目範本的效果：
 
-| [範本] | 範本建立的內容 |
+| 範本 | 範本建立的內容 |
 | --- | --- |
 | **空白 Python 檔案** | 副檔名為 *.py* 的空白檔案。 |
 | **Python 類別** | 包含單一空白 Python 類別定義的 *.py* 檔案。 |
-| **Python 套件** | 包含* \_ \_ \_ \_ .py*檔案的資料夾。 |
+| **Python 套件** | 包含 *\_ \_ \_ \_ .py* 檔案的資料夾。 |
 | **Python 單元測試** | 根據 `unittest` 架構進行一個單元測試的 *.py* 檔案，還有呼叫 `unittest.main()` 以執行檔案中的測試。 |
 | **HTML 頁面** | 具有單一頁面結構的 *.html* 檔案，此結構包含 `<head>` 和 `<body>` 元素。 |
 | **JavaScript** | 空白的 *.js* 檔案。 |

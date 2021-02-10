@@ -15,15 +15,15 @@ helpviewer_keywords:
 - dependency graphs
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b34bb124d663d81769c6d3086d6b36803d60eb
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9723fd44aedf4950b99a49b62d421230b43d55fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362232"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946523"
 ---
 # <a name="map-dependencies-with-code-maps"></a>使用 code map 對應相依性
 
@@ -191,7 +191,7 @@ ms.locfileid: "97362232"
 
     對於 **組件**，選擇：
 
-    |選項|說明|
+    |選項|Description|
     |-|-|
     |**顯示這一項參考的組件**|加入這個組件參考的組件。 外部組件會出現在 [外部]  群組中。|
     |**顯示參考這一項的組件**|從參考這個組件的方案中加入組件。|
@@ -200,7 +200,7 @@ ms.locfileid: "97362232"
 
     對於 **類別** 或 **介面**，選擇：
 
-    |選項|說明|
+    |選項|Description|
     |-|-|
     |**顯示基底類型**|對於類別，加入基底類別和實作的介面。<br /><br /> 對於介面，加入基底介面。|
     |**顯示衍生類型**|對於類別，加入衍生類別。<br /><br /> 對於介面，加入衍生介面和實作類別或結構。|
@@ -213,7 +213,7 @@ ms.locfileid: "97362232"
 
      對於 **方法**，選擇：
 
-    |選項|說明|
+    |選項|Description|
     |-|-|
     |**顯示這一項呼叫的方法**|加入這個方法呼叫的方法。|
     |**顯示這一項參考的欄位**|加入這個方法所參考的欄位。|
@@ -223,7 +223,7 @@ ms.locfileid: "97362232"
 
      對於 **欄位** 或 **屬性**，選擇：
 
-    |選項|說明|
+    |選項|Description|
     |-|-|
     |**顯示包含的類型**|加入父類型。|
     |**顯示包含的類型、命名空間和組件**|加入父容器階層架構。|
@@ -238,7 +238,7 @@ ms.locfileid: "97362232"
 
    ![使用 [篩選] 窗格來簡化顯示](../modeling/media/almcodemapfilterpane.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [影片：利用 Visual Studio 2015 code map 瞭解程式碼的設計](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)
