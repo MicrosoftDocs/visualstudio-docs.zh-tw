@@ -13,20 +13,20 @@ helpviewer_keywords:
 - <document> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 36d822d60d1a28d48f660f6d358b75bf4a913048
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e92c17d71b1c0959cb1918ce6fbad0e2cd44d5ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63000034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949827"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;檔 &gt; 元素 (Visual Studio) 的 Office 開發
   `document`命名空間的元素會 `vstov4` 儲存檔層級自訂的自訂特定資訊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <document solutionId />
@@ -43,7 +43,7 @@ ms.locfileid: "63000034"
 
 ## <a name="document-level-customization-example"></a>檔層級自訂範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>Description
  下列程式碼範例說明 `document` 使用部署之檔層級 Office 方案中的元素 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼

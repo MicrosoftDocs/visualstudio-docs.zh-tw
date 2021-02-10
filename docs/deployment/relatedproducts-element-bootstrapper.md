@@ -20,20 +20,20 @@ helpviewer_keywords:
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ac9f84fa22526ed03d7a2e9b201cc9afc2f476d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a7987306d9f7fc25f9f9b783d5b0966ac5015ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949684"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;啟動載入器 &gt;)  (RelatedProducts 元素
 `RelatedProducts`元素會定義相依于或包含在目前產品中的其他產品。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <RelatedProducts>
@@ -59,7 +59,7 @@ ms.locfileid: "94350565"
 
  `DependsOnProduct` 具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Code`|所含產品的代碼名稱，如元素的屬性所指定 `ProductCode` `Product` 。 如需詳細資訊，請參閱[ \<Product> 元素](../deployment/product-element-bootstrapper.md)。|
 
@@ -71,7 +71,7 @@ ms.locfileid: "94350565"
 
  `IncludesProduct` 具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Code`|所含產品的代碼名稱，如元素的屬性所指定 `ProductCode` `Product` 。 如需詳細資訊，請參閱[ \<Product> 元素](../deployment/product-element-bootstrapper.md)。|
 
@@ -84,5 +84,5 @@ ms.locfileid: "94350565"
 </RelatedProducts>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [\<Product> 元素](../deployment/product-element-bootstrapper.md)

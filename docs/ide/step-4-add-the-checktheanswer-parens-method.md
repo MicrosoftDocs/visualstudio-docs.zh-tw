@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: c66f3831-b4a0-40bc-a109-8f46f4db35ed
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d9d22363aa26628d122b451c51fb7d1df29fbe
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: f6e52d415b4278a04e559c64cdcfac86cdf22261
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480586"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950701"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：新增 CheckTheAnswer() 方法
 

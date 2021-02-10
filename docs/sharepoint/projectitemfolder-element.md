@@ -11,20 +11,20 @@ helpviewer_keywords:
 - ProjectItemFolder element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 99a27f8e255aa17e8b9fa604b504109976c5d36a
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: d1a5b5086ef90b9d8399a6f0f76bdee77c07288e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440788"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950571"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder 項目
   表示對應的資料夾。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ProjectItemFolder Target = "Path of SharePoint folder the mapped folder corresponds to"
@@ -49,7 +49,7 @@ ms.locfileid: "95440788"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 專案專案。 這個元素是 *.spdata* 檔案的必要根項目。|
 

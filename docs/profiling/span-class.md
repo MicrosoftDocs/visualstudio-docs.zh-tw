@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 527826a8-2590-43ad-b907-7bc0b7288e92
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca1e674b13877ff8a8864c3b7447f15fd0307d7
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: fff7f91326cac47100f5b2b1b42e22b9c0fc1d9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720042"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949957"
 ---
 # <a name="span-class"></a>span 類別
 定義應用程式階段。
@@ -33,7 +33,7 @@ class span;
 
 ### <a name="public-constructors"></a>公用建構函式
 
-|Name|描述|
+|名稱|描述|
 |----------|-----------------|
 |[span::span 建構函式](../profiling/span-span-constructor.md)|初始化 `span` 類別的新執行個體。|
 |[span::~span 解構函式](../profiling/span-tilde-span-destructor.md)|終結 `span` 物件，並釋放其資源。|
@@ -41,7 +41,7 @@ class span;
 ## <a name="inheritance-hierarchy"></a>繼承階層架構
  `span`
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  **標頭：** *cvmarkersobj.h*
 
  **命名空間：** Concurrency::diagnostic

@@ -7,15 +7,15 @@ ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f5a9d8d87af3f7d9e8583a1bc21c008d1a8571f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 32140ce05761fa5b8a067dfde04b65efa2a91a66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951637"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>範例 XSD 檔案：採購單結構描述
 

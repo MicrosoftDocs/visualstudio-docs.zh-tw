@@ -6,16 +6,16 @@ ms.topic: reference
 ms.assetid: a1e37500-4ad1-4670-9737-3d9a20536386
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c7a0bf796c91ce339c82f7f698ed63afe90f9c1c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 455278f7fccbc9e4f80ce4f11a167e5b433ca8ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720068"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950035"
 ---
 # <a name="shutdown"></a>關機
 [關機] 選項會等候任何目前分析的處理序結束或中斷連結，然後關閉分析工具及關閉分析資料檔案。 [關機] 選項必須是分析執行的最後一道命令。

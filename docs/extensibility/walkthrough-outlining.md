@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: ea0f16deee17e2cd249c0ee1de0861a936abc75c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: aa66d3b32f6992cb3a5db13bc2b7ee4d5cd9294c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951182"
 ---
 # <a name="walkthrough-outlining"></a>逐步解說︰大綱
 藉由定義要展開或折迭的文字區欄位型別，來設定以語言為基礎的功能，例如大綱。 您可以在語言服務的內容中定義區域，或定義自己的副檔名和內容類型，並將區域定義套用至現有的內容類型， (例如 "text" ) 。 本逐步解說會示範如何定義和顯示大綱區域。
@@ -136,5 +136,5 @@ ms.locfileid: "97877893"
 
 4. 應該會有包含這兩個括弧的大綱區域。 您應該可以按一下左括弧左邊的減號，以折迭大綱區域。 當區域折迭時，省略號符號 (*...*) 應該會出現在已折迭區域的左邊，而且當您將指標移至省略號上方時，就會出現包含文字暫留 **文字** 的快顯視窗。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

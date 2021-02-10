@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ab97efc82575c31c8e05b73063c2b53a09691d2d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd0dfa3a12c675463c46e93aa0d5b25e8b4bd4b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948852"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>部署、發行和升級 SharePoint 方案套件
   在 Visual Studio 開發 SharePoint 方案之後，您可以將其封裝 ( .wsp) 檔部署到本機 SharePoint 伺服器，或將其發行至遠端或本機 SharePoint 伺服器。 如果您部署檔案，您可以自訂部署封裝檔案 ( .wsp) 的方式。

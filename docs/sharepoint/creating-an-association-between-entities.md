@@ -20,15 +20,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], associate external content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6a5decf8ad803bea8b1d64c79410c319dbef0be9
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 7efd3d622e40c21574c0aa9e39263d53979706ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949190"
 ---
 # <a name="create-an-association-between-entities"></a>建立實體之間的關聯
   您可以藉由建立關聯來定義商務資料連線中實體之間的關聯性 (BDC) 模型。 Visual Studio 會產生可提供模型取用者的方法，以及每個關聯的相關資訊。 這些方法可以由 SharePoint Web 組件、清單或自訂應用程式加以使用，以便在使用者介面 (UI) 中顯示資料關聯性。
@@ -78,6 +78,6 @@ ms.locfileid: "94850542"
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [如何：建立實體之間的關聯](../sharepoint/how-to-create-an-association-between-entities.md)

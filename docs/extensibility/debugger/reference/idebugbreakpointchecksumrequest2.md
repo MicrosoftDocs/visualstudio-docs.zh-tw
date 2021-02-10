@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 9cfdbca5-052c-48e9-8411-e2e9e4065d00
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 632c3611f6c03a47a7d46e985eb6aa2685864a7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1004b8139617e370c6eef1c78f372d1e3a6db611
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951247"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
 代表中斷點要求的檔總和檢查碼。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointChecksumRequest2 : IUnknown
@@ -37,7 +37,7 @@ IDebugBreakpointChecksumRequest2 : IUnknown
 |[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|針對指定要使用總和檢查碼演算法的唯一識別碼，抓取中斷點要求的檔總和檢查碼。|
 |[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|判斷是否已啟用此檔的總和檢查碼。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Msdbg。h
 
  命名空間： VisualStudio

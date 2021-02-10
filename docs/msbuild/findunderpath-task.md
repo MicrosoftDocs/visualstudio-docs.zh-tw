@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afb9ff23e2f2533b7c51b500806a025691a232b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 82275b14fbda0d63e6235b87b55a0dbb5f2416b0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949424"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "92436748"
 
 下表說明 `FindUnderPath` 工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`Files`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定其路徑應該與 `Path` 參數所指定的路徑進行比較的檔案。|
 |`InPath`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含指定路徑下找到的項目。|

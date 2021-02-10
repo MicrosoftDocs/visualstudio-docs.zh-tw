@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], saving documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2221ec6576e7ac0de399613a1cda3cdcb8dcea6c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 34992bb4f76f68229bebbdb98265838f049dc288
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525471"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949775"
 ---
 # <a name="how-to-programmatically-save-documents"></a>如何：以程式設計方式儲存檔
 

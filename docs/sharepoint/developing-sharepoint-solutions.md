@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 755723dd2ae309e971e86852646ee33d2caa22cf
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 2f085f5679db2c5c4a1e3cf0cc8d7bbf7cad58eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970403"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948826"
 ---
 # <a name="develop-sharepoint-solutions"></a>開發 SharePoint 方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供數個 SharePoint 專案類型範本，以用來建立 SharePoint 網站和網站元素。 如需可用專案類型的清單，請參閱 [SharePoint 專案和專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是 SharePoint 專案的元素和屬性描述。
@@ -38,7 +38,7 @@ ms.locfileid: "95970403"
  每個 SharePoint 專案皆包含兩個節點，您無法重新命名、刪除、剪下、複製或從專案拖曳這兩個節點。 以下為這兩個節點：
 
 - 功能
-- Package
+- 套件
 
   即使專案沒有定義任何功能或套件，這兩個節點仍會出現在所有 SharePoint 專案中。
 

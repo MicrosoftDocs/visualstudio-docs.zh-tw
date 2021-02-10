@@ -12,15 +12,15 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 06a8fdef9c194e9b0f81768f93b675ade77d39ef
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 8fc572f6fc5c0444fda619af5af49c6c2e52ac5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949112"
 ---
 # <a name="create-sharepoint-features"></a>建立 SharePoint 功能
   您可以使用 SharePoint 功能來分組相關的 SharePoint 專案專案，以便更輕鬆地進行部署。 您可以使用 SharePoint 功能設計工具來建立功能、設定範圍，以及將其他功能標示為相依性。 設計工具也會產生資訊清單，這是描述每項功能的 XML 檔。
@@ -40,7 +40,7 @@ ms.locfileid: "94850581"
 
  下表描述功能設計工具中顯示的功能屬性。
 
-|屬性|說明|
+|屬性|描述|
 |--------------|-----------------|
 |標題|選擇性。 此功能的預設標題會設定為「*解決方案名稱* *」。*|
 |描述|選擇性。 SharePoint 功能的描述。|
@@ -54,7 +54,7 @@ ms.locfileid: "94850581"
 ## <a name="add-feature-dependencies"></a>新增功能相依性
  您可以設定功能資訊清單，讓 SharePoint 伺服器先啟用某些功能，然後再啟用功能。 例如，如果您的 SharePoint 功能相依于其他功能或資料的功能，則 SharePoint server 可以先嘗試啟用功能所依賴的任何功能。 如需詳細資訊，請參閱 [如何：新增和移除功能](../sharepoint/how-to-add-and-remove-feature-dependencies.md)相依性。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [如何：新增和移除 SharePoint 功能的專案](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
 - [如何：新增和移除功能相依性](../sharepoint/how-to-add-and-remove-feature-dependencies.md)

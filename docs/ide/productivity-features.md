@@ -1,20 +1,20 @@
 ---
-title: " 生產力指南"
+title: 生產力指南
 description: 瞭解 Visual Studio 中的鍵盤快速鍵和生產力功能，可協助您有效率地撰寫程式碼、偵錯工具代碼，以及處理錯誤。
 ms.custom: SEO-VS-2020
 ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bee392ddc4e7a0d185bdcc2d0e31dbd17832c733
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 01367d821ffc74de0e9d087bfe52680508fad9e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870868"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951156"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Visual Studio 的生產力指南
 
@@ -42,7 +42,7 @@ ms.locfileid: "95870868"
 
 您可以使用下列功能，更快速地撰寫程式碼。
 
-- **使用便捷命令**。 Visual Studio 包含各種可協助您更快速完成常用編輯工作的命令。 例如，您可以選擇一個命令來輕鬆複製一行程式碼，而不必先複製程式碼、調整游標位置，然後再將它貼上。 選擇 [**編輯**  >  **重複**]，或按 **Ctrl** + **E**、**V**。 您也可以選擇 [**編輯**  >  **先進**  >  **展開選取範圍**] 或 [**編輯** 高階  >  **Advanced**  >  **合約選取**]，或按下 **shift** + **alt** + **=** 或 **shift** + **alt** + **-** ，以快速展開或選取文字的選取範圍。
+- **使用便捷命令**。 Visual Studio 包含各種可協助您更快速完成常用編輯工作的命令。 例如，您可以選擇一個命令來輕鬆複製一行程式碼，而不必先複製程式碼、調整游標位置，然後再將它貼上。 選擇 [**編輯**  >  **重複**]，或按 **Ctrl** + **E**、**V**。 您也可以選擇 [**編輯**  >  **先進**  >  **展開選取範圍**] 或 [**編輯** 高階  >    >  **合約選取**]，或按下 **shift** + **alt** + **=** 或 **shift** + **alt** + **-** ，以快速展開或選取文字的選取範圍。
 
 - **使用 IntelliSense**。 當您在編輯器中輸入程式碼時，將會顯示 IntelliSense 資訊，例如列出成員、參數資訊、快速諮詢、簽章說明和自動完成文字。 這些功能支援文字的模糊比對;例如，清單成員的結果清單不僅包括以您輸入的字元開頭的專案，也包含名稱中任何位置包含字元組合的專案。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。
 
@@ -54,7 +54,7 @@ ms.locfileid: "95870868"
 
      若要插入程式碼片段，請在功能表列上選擇 [**編輯**  >  **IntelliSense**  >  **插入程式碼片段**] 或 [範圍語句]，或開啟檔案中的快捷方式功能表 **，** 然後選擇 [**程式碼片段**  >  **插入代碼** 段] 或 [**環繞于**]。 如需詳細資訊，請參閱[程式碼片段](../ide/code-snippets.md)。
 
-- **修正內嵌程式碼錯誤**。 快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。 這些動作可使用螺絲螺絲起子 ![ 圖示或燈泡 ](media/screwdriver-icon.png) 圖示圖示來套用 ![ ](media/light-bulb-icon.png) ，或是按下 **Alt** + **Enter** 或 **Ctrl** + **.** 鍵來套用。 。 如需詳細資訊，請參閱[快速動作](quick-actions.md)。
+- **修正內嵌程式碼錯誤**。 快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。 這些動作可使用螺絲螺絲起子 ![ 圖示或燈泡 ](media/screwdriver-icon.png) 圖示圖示來套用 ![ ](media/light-bulb-icon.png) ，或是按下 **Alt** + **Enter** 或 **Ctrl** + 鍵來套用。 。 如需詳細資訊，請參閱[快速動作](quick-actions.md)。
 
 - **顯示和編輯程式碼項目的定義**。 您可以快速顯示和編輯定義程式碼項目 (例如成員、變數或區域) 的模組。
 

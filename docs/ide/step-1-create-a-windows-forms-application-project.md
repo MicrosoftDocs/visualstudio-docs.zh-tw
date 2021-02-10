@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 04168d6f648a9219c40f81aa042cbc778429ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480391"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951000"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>步驟 1：建立 Windows Forms 應用程式專案
 
@@ -29,7 +29,7 @@ ms.locfileid: "96480391"
 
 1. 在功能表列上 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 對話方塊看起來應該類似下列螢幕擷取畫面。
 
-     ![[新增專案] 對話方塊](../ide/media/newprojectdialogcallouts.png)<br/>**_新增專案_* _ _dialog box *
+     ![[新增專案] 對話方塊](../ide/media/newprojectdialogcallouts.png)<br/>***新增專案** _ _dialog box *
 
 2. 在 [ **新增專案** ] 對話方塊的左側，選擇 [ **Visual c #** ] 或 [ **Visual Basic**]，然後選擇 [ **Windows 桌面**]。
 
@@ -107,11 +107,11 @@ Visual Studio 會為您的應用程式建立解決方案。 解決方案會作�
      或者，選擇工具列上的 [ **全部儲存** ] 按鈕，如下圖所示。
 
      ![[全部儲存] 工具列按鈕](../ide/media/express_iconsaveall.png)<br/>
-     **_全部儲存_* _ _toolbar 按鈕 *
+     ***全部儲存** _ _toolbar 按鈕 *
 
      Visual Studio 會自動填入資料夾名稱和專案名稱，然後將專案儲存在專案資料夾中。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 * 若要移至下一個教學課程步驟，請參閱 **[步驟2：執行您的應用程式](../ide/step-2-run-your-program.md)**。
 

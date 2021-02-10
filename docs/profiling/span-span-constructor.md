@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8b5578aa-5e5c-4ac7-87c7-ce87c4246e2c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f761e87c1658c11bfdfd93a4f4e22299d88575a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a813506e64242d1effdb9ed64d35c9ee5d31239
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62979818"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949970"
 ---
 # <a name="spanspan-constructor"></a>span::span 建構函式
 
@@ -62,7 +62,7 @@ span(
 
 `_Category` 分類。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 
 **標頭：** *cvmarkersobj.h*
 

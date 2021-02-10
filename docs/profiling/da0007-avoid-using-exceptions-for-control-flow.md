@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a33d5b8d18f18fb6bf7a2420603d994d845ce8f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4796fa1e998e75fcbbebe21df394ed41fe4807df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949385"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007：避免使用例外狀況進行控制流程
 
@@ -39,9 +39,9 @@ ms.locfileid: "85520792"
 ## <a name="rule-description"></a>規則描述
  雖然使用例外處理常式來攔截中斷程式執行的錯誤和其他事件是一個好方法，但是在一般的程式執行邏輯中使用例外處理常式可能會很耗費資源，應予以避免。 在大部分情況下，最好只針對很少發生且未預期的情況使用例外狀況。 例外狀況不應該用來當做一般程式流程的一部分傳回值。 在許多情況下，您可以驗證值並使用條件式邏輯以暫止執行導致問題的陳述式，來避免引發例外狀況。
 
- 如需詳細資訊，請參閱**第5章**的[例外狀況管理](/previous-versions/msp-n-p/ff647790(v=pandp.10)#exception-management)一節：在 MSDN 上改善**Microsoft 模式和實務**程式庫的 **.net 應用程式效能和擴充性**磁片區中的 Managed 程式碼效能。
+ 如需詳細資訊，請參閱 **第5章** 的 [例外狀況管理](/previous-versions/msp-n-p/ff647790(v=pandp.10)#exception-management)一節：在 MSDN 上改善 **Microsoft 模式和實務** 程式庫的 **.net 應用程式效能和擴充性** 磁片區中的 Managed 程式碼效能。
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
- 按兩下 [錯誤清單] 視窗中的訊息，瀏覽至 [標記] 檢視。 找出包含 .Net CLR 例外狀況的資料行 ** (@ProcessInstance) # of \\ 擅長擲出/秒的** 度量。 判斷是否有特定的程式執行階段，當中的例外狀況處理比其他階段更頻繁。 使用取樣設定檔，嘗試識別 throw 陳述式以及產生頻繁例外狀況的 try/catch 區塊。 如果有必要，請在 catch 區塊中加入邏輯，協助您了解最常處理的例外狀況。 如果可行，請將經常執行的 throw 陳述式或 catch 區塊，取代為簡單的流程控制邏輯或驗證程式碼。
+ 按兩下 [錯誤清單] 視窗中的訊息，瀏覽至 [標記] 檢視。 找出包含 .Net CLR 例外狀況的資料行 **(@ProcessInstance) # of \\ 擅長擲出/秒的** 度量。 判斷是否有特定的程式執行階段，當中的例外狀況處理比其他階段更頻繁。 使用取樣設定檔，嘗試識別 throw 陳述式以及產生頻繁例外狀況的 try/catch 區塊。 如果有必要，請在 catch 區塊中加入邏輯，協助您了解最常處理的例外狀況。 如果可行，請將經常執行的 throw 陳述式或 catch 區塊，取代為簡單的流程控制邏輯或驗證程式碼。
 
  例如，如果您發現應用程式經常處理 DivideByZeroException 例外狀況，在程式中新增邏輯來檢查分母是否有零值可改善應用程式的效能。

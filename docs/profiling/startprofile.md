@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1522cdfadb5de20a2413f584c710baca15883f9c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6a2fee1e5c7a091af1ed996d374f4ed7e60b8f2f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949918"
 ---
 # <a name="startprofile"></a>StartProfile
 `StartProfile` 函式會將所指定分析層級的計數器設定為 1 (開啟)。
@@ -35,7 +35,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 
  指出可套用效能資料收集的分析層級。 下列 **PROFILE_CONTROL_LEVEL** 列舉程式可以用來指出可套用效能資料收集的三種層級的其中一種：
 
-|列舉值|描述|
+|列舉值|Description|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|全域層級設定會影響分析執行中的所有處理序和執行緒。|
 |PROFILE_PROCESSLEVEL|處理序層級設定會影響屬於所指定處理序的所有執行緒。|
@@ -48,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值
  此函式會使用 **PROFILE_COMMAND_STATUS** 列舉來指出成功或失敗。 傳回值可以是下列其中一個：
 
-|列舉值|描述|
+|列舉值|Description|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|分析項目識別碼不存在。|
 |PROFILE_ERROR_LEVEL_NOEXIST|指定的分析層級不存在。|

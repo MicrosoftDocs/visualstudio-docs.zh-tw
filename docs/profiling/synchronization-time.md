@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: affa04cc-8bba-4848-9301-b19846d3c2cb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b0e8c2243d01a5801b6846445995bbdfdcff78c9
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b6469c1020f125dd28798ad4bff5ccc9d3e7aa06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719821"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949372"
 ---
 # <a name="synchronization-time"></a>同步處理時間
 時間軸中的這些區段會與歸類為同步處理的封鎖時間建立關聯。 當執行緒在同步處理中標記為已封鎖時，就會隱含這些項目的其中一個：

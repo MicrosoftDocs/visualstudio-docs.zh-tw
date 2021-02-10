@@ -12,15 +12,15 @@ helpviewer_keywords:
 - packages [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 423fcaf54d1d46ddf92352f4ff8bdbb637bbe514
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949086"
 ---
 # <a name="create-sharepoint-solution-packages"></a>建立 SharePoint 方案套件
   您可以使用封裝設計工具來建立和自訂部署套件。 例如，您可以加入 SharePoint 專案專案和功能、重設 IIS 伺服器、設定功能啟用範圍，以及識別功能相依性。 設計工具也會產生資訊清單，這是描述每個封裝的 XML 檔。
@@ -48,7 +48,7 @@ ms.locfileid: "94850555"
 
  下表顯示兩個您可以用來自訂 *.wsp* 檔案建立方式的 MSBuild 目標。
 
-|目標|說明|
+|目標|Description|
 |------------|-----------------|
 |BeforeLayout|在檔案複製到中繼目錄前立即執行工作的目標。 您可以在建立封裝檔 (*.wsp*) 之前修改檔案。|
 |AfterLayout|將檔案複製到中繼目錄後立即執行工作的目標。|
@@ -73,7 +73,7 @@ ms.locfileid: "94850555"
 ## <a name="package-folder-structure"></a>套件資料夾結構
  當您封裝 SharePoint 專案時，會在 *SolutionFolder\bin \\ \<BuildConfiguration>* 資料夾中為您建立 *.wsp* 檔。 例如，如果您的方案是在 *C:\Visual Studio 2013 \ Projects\ListDefinition1* 中，而組建設定設為 [發行]，則 *.Wsp* 檔案位於 *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [如何：使用封裝設計工具加入和移除封裝的功能和專案](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
 - [如何：使用 MSBuild 工作建立 SharePoint 方案套件](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)

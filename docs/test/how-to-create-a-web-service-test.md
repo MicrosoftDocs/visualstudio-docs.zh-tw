@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 32b5a6a91221e8942faeefcb89cfc52dd0cc5895
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 2d368ca7cbe64f2c0e8c8dc5e18e5f3c7145274c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95439923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949840"
 ---
 # <a name="how-to-create-a-web-service-test"></a>如何：建立 Web 服務測試
 
@@ -26,7 +26,7 @@ ms.locfileid: "95439923"
 >[!NOTE]
 > Web 效能和負載測試功能在 Visual Studio 2019 中已淘汰。 針對 Application Insights，多步驟 web 測試取決於 Visual Studio 的 webtest 檔。 已[宣佈](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) Visual Studio 2019 會是具有 Webtest 功能的最後一個版本。 請務必瞭解，雖然不會新增任何新功能，但目前仍支援 Visual Studio 2019 中的 Webtest 功能，並且會在產品的支援生命週期中繼續受到支援。 Azure 監視器產品小組已解決多步驟可用性測試的相關問題，如[這裡](https://github.com/MicrosoftDocs/azure-docs/issues/26050#issuecomment-468814101)所示。
 
-**Requirements**
+**需求**
 
 Visual Studio Enterprise
 
@@ -91,7 +91,7 @@ Web 測試需要 Web 效能和負載測試專案專案範本。 在本節中，�
 
 2. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
-3. 在 [建立新專案] 頁面，於搜尋方塊內鍵入 **web test**，然後選取 C# 的 [Web 效能和負載測試專案] \[已淘汰] 範本。 選擇 [下一步]  。
+3. 在 [建立新專案] 頁面，於搜尋方塊內鍵入 **web test**，然後選取 C# 的 [Web 效能和負載測試專案] \[已淘汰] 範本。 選擇 [下一步]。
 
 4. 如果您不想要使用預設名稱，請輸入專案的名稱，然後選擇 [建立]。
 

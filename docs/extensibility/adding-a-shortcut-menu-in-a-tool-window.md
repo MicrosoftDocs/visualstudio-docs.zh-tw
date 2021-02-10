@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e14d948bf5d4b637002ca1f2ec8be37b64dc22b
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: a35652c0eacf22a46eed3f3fc64c3bcc0d6d10ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597869"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951533"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>在工具視窗中新增快捷方式功能表
 本逐步解說會在工具視窗中放置快捷方式功能表。 快速鍵功能表是使用者在按鈕、文字方塊或視窗背景上按一下滑鼠右鍵時所顯示的功能表。 快速鍵功能表上的命令列為與其他功能表或工具列上的命令相同。 若要支援快捷方式功能表，請在 *.vsct* 檔案中指定，並將其顯示以回應滑鼠右鍵。

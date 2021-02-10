@@ -8,16 +8,16 @@ helpviewer_keywords:
 - profiling tools, packsymbols
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 142e73a65fa9ffd2210719d84f18a25068762acb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: af9d93c4aa7d38e65235d4a134978a9ff3571d33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950087"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用效能資料檔案儲存符號資訊
 

@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3330daeed243f96c44825a4be5516c573bb005
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 82356ce29f46388f9c74318c05dc6a4b68fcbbae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480625"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950766"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步驟 3：將隨機圖示指派給每一個標籤
 
@@ -57,7 +57,7 @@ ms.locfileid: "96480625"
 
      請記住，如果您不確定程式碼某些部分所執行的動作，可以將滑鼠指標放在程式碼項目上並檢閱顯示的工具提示。 使用 Visual Studio 偵錯工具時，您也可以在程式執行時對每一行程式碼進行逐步執行。 如需詳細資訊，請參閱[如何：在 Visual Studio 中逐步執行偵錯工具？](https://msdn.microsoft.com/vstudio/ee672313.aspx)\(英文\) 或[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
 
-3. 若要在程式啟動時使用圖示填滿遊戲面板，您必須呼叫 `AssignIconsToSquares()` 方法。 如果您使用的是 c #，請在 Form1 函式中呼叫方法的正下方新增語句 `InitializeComponent()` ，如此您的表單就會呼叫新的方法 **Form1** _，在_ 顯示之前先設定它。 當您建立新的物件 (例如類別或結構) 時會呼叫建構函式。 如需詳細資訊，請參閱[建構函式 (C# 程式設計手冊)](/dotnet/csharp/programming-guide/classes-and-structs/constructors)，若是在 Visual Basic 中，則請參閱[使用建構函式和解構函式](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\))。
+3. 若要在程式啟動時使用圖示填滿遊戲面板，您必須呼叫 `AssignIconsToSquares()` 方法。 如果您使用的是 c #，請在 Form1 函式中呼叫方法的正下方新增語句 `InitializeComponent()` ，如此您的表單就會呼叫新的方法 _，在_ 顯示之前先設定它。 當您建立新的物件 (例如類別或結構) 時會呼叫建構函式。 如需詳細資訊，請參閱[建構函式 (C# 程式設計手冊)](/dotnet/csharp/programming-guide/classes-and-structs/constructors)，若是在 Visual Basic 中，則請參閱[使用建構函式和解構函式](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\))。
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 

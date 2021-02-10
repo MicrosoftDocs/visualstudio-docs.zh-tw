@@ -11,17 +11,17 @@ f1_keywords:
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1c658d97ed678950869c9a011af04e04eeacf5b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e4a7e0f9335971bb026ccc1c6b977680d9e3121
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86156815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949554"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 
@@ -54,7 +54,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然我們
 
 ::: moniker range="vs-2019"
 
-在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝]**** 選項。 然後，繼續執行您的安裝。
+在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
 
    ![[全部下載後安裝] 選項](media/vs-2019/download-all-then-install-from-installer.png)
 
@@ -136,7 +136,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然我們
     vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
-- 若要建立具有所有功能的完整本機配置 (這會花很長的時間&mdash;有_非常多_功能)，請執行：
+- 若要建立具有所有功能的完整本機配置 (這會花很長的時間&mdash;有 _非常多_ 功能)，請執行：
 
    ```cmd
     vs_community.exe --layout c:\vslayout --lang en-US
@@ -188,7 +188,7 @@ c:\vslayout\vs_community.exe --noweb --add Microsoft.VisualStudio.Workload.Manag
 
 ### <a name="list-of-language-locales"></a>語言地區設定清單
 
-| **語言地區設定** | **語言** |
+| **語言地區設定** | **Language** |
 | ----------------------- | --------------- |
 | cs-CZ | 捷克文 |
 | de-DE | 德文 |

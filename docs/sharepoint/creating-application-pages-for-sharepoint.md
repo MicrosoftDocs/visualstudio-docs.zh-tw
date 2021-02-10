@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 9ecd6573573d76c3e47a2c87a4f455cb9890fb31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949177"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>建立 SharePoint 的應用程式頁面
   *應用程式頁面* 是設計用來在 SharePoint 網站中使用的 ASP.NET 網頁。 應用程式頁面是一種特殊類型的 ASP.NET 網頁。 應用程式頁面與標準 ASP.NET 網頁之間的主要差異在於，應用程式頁面包含與 SharePoint 主版頁面合併的內容。 主版頁面可讓應用程式頁面與網站上的其他頁面共用相同的外觀和行為。
@@ -73,7 +73,7 @@ ms.locfileid: "94850438"
 
  您可以藉由設定應用程式元素的屬性，明確變更應用程式頁面使用的主版頁面 `MasterPageFile` `Page` 。  (例如： `MasterPageFile="~/_layouts/applicationv4.master"`) 。 事實上，如果 SharePoint 伺服器上未啟用動態主版頁面，就必須設定這個屬性。 如需有關 SharePoint 中主版頁面的詳細資訊，請參閱 [主版頁面](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [深入瞭解 SharePoint Foundation 開發](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [ASP.NET 概觀](/aspnet/overview)
 - [ASP.NET Web Pages](/aspnet/web-pages/index)

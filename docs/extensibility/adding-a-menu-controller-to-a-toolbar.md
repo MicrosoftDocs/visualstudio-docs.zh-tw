@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ce14999913a3928cbe25d9f034c8288651629a3
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 82da331d93a2208b76bb953f3a6a489913c907ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597817"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951520"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>將功能表控制器新增至工具列
 本逐步解說是以將 [工具列加入至工具視窗](../extensibility/adding-a-toolbar-to-a-tool-window.md) 的逐步解說為基礎，並示範如何將功能表控制器加入至工具視窗工具列。 此處所示的步驟也可以套用至在 [ [加入工具列](../extensibility/adding-a-toolbar.md) ] 逐步解說中建立的工具列。

@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a9431f6f7a2adfee06f4fa007eafc109d3c32d0
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 626396e12db59dfa8e85285b486c8db280889328
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722655"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949892"
 ---
 # <a name="summary-view---instrumentation-data"></a>摘要檢視 - 檢測資料
 [摘要] 檢視顯示有關程式碼剖析執行時效能耗費最多資源的函式資訊。 如需詳細資訊，包括通知連結和報表清單的描述，請參閱 [摘要視圖](../profiling/summary-view.md)。

@@ -18,15 +18,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 29d0ebc33bf3df198f3ee9b3f9d80a747087341c
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: dfdf94f58c0fa7ba40d7c08309f8ea57949310df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949021"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>建立 SharePoint 的網站資料行、內容類型和清單
   Visual Studio 為許多不同的基本 SharePoint 專案（包括 *清單* 和 *內容類型*）提供專案專案範本，這兩個專案都可以) 的 (或 *欄位* 中納入網站資料行。 內容類型和清單的新設計工具讓您就以往更容易建立這些項目。
@@ -47,9 +47,9 @@ ms.locfileid: "94850516"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[逐步解說：建立 SharePoint 的網站資料行、內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|示範如何建立用於自訂內容類型的網站資料行。 這個內容類型之後可在自訂清單中使用。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [在 SharePoint 2010 上開發開始](/sharepoint/dev/)

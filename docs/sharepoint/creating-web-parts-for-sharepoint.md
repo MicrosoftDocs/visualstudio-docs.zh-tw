@@ -22,15 +22,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc9427d561817cb115473bddc71f2ba63475427e
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: ae28ab44b12c979f3c405bd7d853d7a2d196aae4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948930"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>建立 SharePoint 的網頁元件
   藉由使用網頁元件，您可以使用瀏覽器來修改 SharePoint 網站網頁的內容、外觀和行為。 Web 元件是在 web 元件頁面內執行的伺服器端控制項：它們是出現在 SharePoint 網站上的網頁構成要素。 請參閱 [建立區塊： Web 組件](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))。
@@ -59,7 +59,7 @@ ms.locfileid: "94672791"
 ## <a name="sharepoint-controls"></a>SharePoint 控制項
  Visual Studio 提供建立 SharePoint 頁面的一些控制項，例如應用程式頁面。 這些控制項會出現在 [ **工具箱** ] 的 **SharePoint 控制項** 底下。 這些控制項的功能衍生自 [WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) 命名空間，此命名空間包含用於 SharePoint 網站和清單頁面的 ASP.NET 伺服器控制項。
 
-|控制項名稱|說明|
+|控制項名稱|Description|
 |------------------|-----------------|
 |[AspMenu](/previous-versions/office/sharepoint-server/ms454108(v=office.15))|插入 ASP 功能表。 如需詳細資訊，請參閱 [功能表控制項總覽](/previous-versions/ecs0x9w5(v=vs.140))。|
 |[CssLink](/previous-versions/office/sharepoint-server/ms439048(v=office.15))|將 **LINK** 元素插入 *.aspx* 頁面，並套用 **CssRegistration** 所定義的一或多個外部樣式表單。|
@@ -110,7 +110,7 @@ ms.locfileid: "94672791"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[如何：建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part.md)|說明如何建立 SharePoint 網頁的 web 元件。|
 |[如何：使用設計工具建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|說明如何使用視覺化設計介面建立 SharePoint 的網頁元件。|

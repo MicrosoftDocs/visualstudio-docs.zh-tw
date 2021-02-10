@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c802832a9881cf3bf247c8e48b8ecdc2d784b1c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948995"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>建立 SharePoint 的網站定義
   中的 SharePoint 網站定義專案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 可讓您建立 *網站定義*，作為新 SharePoint 網站的基礎。 這些定義不僅能決定 SharePoint 網站的外觀和行為，也可以決定其預設內容和功能。 在定義中，您可以放入預先設定的清單、內容類型、事件接收器、影像和其他項目。 例如，SharePoint 包含了一些網站定義 (例如 BLOG)。 當您根據 BLOG 網站定義建立網站時，網站會包含清單、Web 元件，以及 BLOG 網站所需的其他專案。
@@ -46,7 +46,7 @@ ms.locfileid: "94850568"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[逐步解說：建立基本網站定義專案](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|帶領您逐步完成在中建立基本網站定義專案的步驟 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。|
 |[How to：建立自訂網站定義和設定](/previous-versions/office/developer/sharepoint-2010/ms454677(v=office.14))|說明如何藉由複製現有的網站定義並修改複本，在 SharePoint 中建立自訂網站定義。|
@@ -60,5 +60,5 @@ ms.locfileid: "94850568"
 |[程式設計 ASP.NET Web Pages](/previous-versions/aspnet/0yt4zca8(v=vs.100))|提供如何在頁面中建立事件處理常式 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] ，以及如何使用用戶端腳本的相關資訊。|
 |[Windows SharePoint Services 中的程式設計](/previous-versions/office/developer/sharepoint-services/ms430674(v=office.12))|描述如何使用中提供的 managed 物件模型 [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

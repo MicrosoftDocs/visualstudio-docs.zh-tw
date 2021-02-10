@@ -9,15 +9,15 @@ ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cd84b7b11f58b8deb62f6138255b4c8d942b5a00
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 7597b97a93b2e602a3166eb60b4055082ed7675f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480105"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951013"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步驟 1：建立專案並將標籤新增至表單
 

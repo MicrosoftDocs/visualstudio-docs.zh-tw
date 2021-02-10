@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 723b5daabd19d2e49462bf62d2657c6a6cd14b7f
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 238f6a2b6492fdd4ac04e0b596bbfbc304529786
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480638"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950831"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>步驟 3：新增倒數計時器
 

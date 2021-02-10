@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c23b85dec73c6810420dc5e8ab2d3f4121fc903
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 52b7ee88f53fc9ce30467bd42a271d39cc912ec1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950909"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步驟 2：建立隨機加法問題
 

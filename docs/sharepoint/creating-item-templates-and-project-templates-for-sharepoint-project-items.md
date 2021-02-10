@@ -17,15 +17,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating custom templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59710eb4651f363d669dc27b6190f8d224d9917f
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 538bc709ed3af1c7b1424b56c1bd843b127c6ab7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850633"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949151"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>建立 SharePoint 專案專案的專案範本和專案範本
 
@@ -40,7 +40,7 @@ ms.locfileid: "94850633"
 
  下表列出為 SharePoint 專案專案建立專案範本所需的檔案。
 
-|必要檔案|說明|
+|必要檔案|Description|
 |-------------------|-----------------|
 |*.Spdata* 檔案|這個 XML 檔案會指定專案專案的內容和預設行為。 這個檔案必須包含在專案範本中。 如需 *.spdata* 檔案內容的詳細資訊，請參閱 [SharePoint 專案專案架構參考](../sharepoint/sharepoint-project-item-schema-reference.md)。|
 |*.Vstemplate* 檔案。|這個檔案會提供 Visual Studio，提供在 [ **加入新專案** ] 對話方塊中顯示範本，以及從範本建立專案專案所需的資訊。 這個檔案必須包含在專案範本中。 如需詳細資訊，請參閱 [Visual Studio 範本中繼資料](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\))檔案。|
@@ -48,7 +48,7 @@ ms.locfileid: "94850633"
 
  下表列出一些最常見的選擇性檔案，這些檔案可以包含在專案範本中。 某些類型的專案專案可能需要其他未列于此處的檔案。
 
-| 選用檔案 | 說明 |
+| 選用檔案 | Description |
 |----------------------| - |
 | *Elements.xml* | *功能元素* 檔。 此檔案會定義專案專案所建立之自訂的 UI 和行為。 每種自訂類型（例如清單實例、內容類型或自訂動作）都有不同的架構，可定義這個檔案的內容。 如需詳細資訊，請參閱 [建立區塊：功能](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)) 和 [功能架構](/previous-versions/office/developer/sharepoint-2010/ms414322(v=office.14))。 |
 | *Schema.xml* | 清單定義的架構檔案。 如需詳細資訊，請參閱 [建立區塊：清單和文件庫](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14)) 及 [Schema.xml](/previous-versions/office/developer/sharepoint-2010/ms459356(v=office.14))。 |
@@ -64,7 +64,7 @@ ms.locfileid: "94850633"
 
  下表列出 SharePoint 專案範本中必須包含的檔案。
 
-|必要檔案|說明|
+|必要檔案|Description|
 |-------------------|-----------------|
 |*.Vstemplate* 檔案|這個檔案會提供 Visual Studio 在 [ **新增專案** ] 對話方塊中顯示範本所需的資訊，以及從範本建立專案。 如需詳細資訊，請參閱 [Visual Studio 範本中繼資料](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\))檔案。|
 |*.Csproj* 或 *vbproj* 檔案|這是專案檔。 它會定義專案的內容和設定。|
@@ -73,7 +73,7 @@ ms.locfileid: "94850633"
 
  下表列出可以包含在專案範本中的選擇性檔案。
 
-|選用檔案|說明|
+|選用檔案|Description|
 |-------------------|-----------------|
 |SharePoint 專案項目|您可以包含一個或多個定義 SharePoint 專案專案類型的 .spdata 檔案。 每個 *.spdata* 檔案的擴充元件中都必須有相符的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 實作為專案範本的 VSIX 套件。 如需詳細資訊，請參閱 [建立專案範本](#create-item-templates)。<br /><br /> 一般而言，SharePoint 專案至少會包含一個 SharePoint 專案專案。 但是，這並非必要措施。|
 |*\<featureName>。功能*|這個檔案會定義用來將數個專案專案分組以進行部署的 SharePoint 功能。 當您使用「功能設計工具」自訂專案中的功能時，Visual Studio 會將該功能的相關資料儲存在此檔案中。 如果您想要將專案專案分組成不同的功能，您可以包含多個 *功能* 檔。<br /><br /> 當您建立自訂 SharePoint 專案範本時，建議您在每個 *功能* 檔案中只包含最小必要的內容，而且您可以使用 <xref:Microsoft.VisualStudio.SharePoint.Features> 與專案範本相關聯之擴充功能命名空間中的 Api 來設定功能。 如果您這樣做，您的專案範本會受到保護，以防止未來對 *feature* 檔案結構的變更。 如需示範如何建立僅含最小必要內容的 *功能* 檔案的範例，請參閱 [逐步解說：使用專案範本建立網站資料行專案專案（第1部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。<br /><br /> 如果您想要直接修改 *feature* 檔案，您可以使用 *% Program Files (x86) % \ Microsoft Visual Studio 11.0 \ Xml\Schemas\FeatureModelSchema.xsd* 的架構來驗證內容。|
@@ -84,7 +84,7 @@ ms.locfileid: "94850633"
 
  如需示範如何建立專案範本和專案範本之嚮導的逐步解說，請參閱 [逐步解說：使用專案範本建立自訂動作專案專案（第2部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) ）和 [逐步解說：使用專案範本建立網站欄專案專案（第2部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [定義自訂 SharePoint 專案專案類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [逐步解說：使用專案範本建立自訂動作專案專案（第1部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)

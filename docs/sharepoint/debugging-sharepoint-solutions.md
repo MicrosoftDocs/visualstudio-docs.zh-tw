@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0bd1996f5d42561cb2d44879ab702d6b6c4b4f7
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f1a6abfbafcbafb9daa52fdc6af85156700efef7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948943"
 ---
 # <a name="debug-sharepoint-solutions"></a>調試 SharePoint 方案
   您可以使用偵錯工具來進行 SharePoint 方案的調試 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 程式。 當您啟動偵錯工具時， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將專案檔案部署至 sharepoint 伺服器，然後在網頁瀏覽器中開啟 SharePoint 網站的實例。 下列各節說明如何在中進行 SharePoint 應用程式的偵錯工具 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。

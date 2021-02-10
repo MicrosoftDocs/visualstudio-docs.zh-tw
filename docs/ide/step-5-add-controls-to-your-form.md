@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff3e132087b97339bc710555428ba7488fa2e06
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 58f46f80a90cce116b985def0377ef80f5a671c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950662"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>步驟 5：將控制項新增至表單
 
@@ -45,7 +45,7 @@ ms.locfileid: "96480573"
 
 1. 選擇表單上的 [ **TableLayoutPanel** ]，然後將 [CheckBox] 控制項加入表單中。 按兩下 [**工具箱**] 中的 **核取方塊** 專案，將新的 checkbox 控制項新增至資料表中的下一個可用儲存格。 由於 PictureBox 會佔用 TableLayoutPanel 的前兩個儲存格，因此 CheckBox 控制項會加入至左下方儲存格。 選擇 [ **文字** ] 屬性，然後在 [自動 **延展**] 中輸入，如下圖所示。
 
-    ![包含 Stretch 屬性的 TextBox 控制項](../ide/media/express_pictureviewercheckbox.png)<br/>**_TextBox_* _ _控制項與 * ***Stretch**_ _property *
+    ![包含 Stretch 屬性的 TextBox 控制項](../ide/media/express_pictureviewercheckbox.png)<br/>***TextBox** _ _控制項與 * ***Stretch**_ _property *
 
 1. 選擇表單上的 [ **TableLayoutPanel** ]，然後移至 [**工具箱**] 中的 [**容器**] 群組 (您取得 TableLayoutPanel 控制項的位置) 然後按兩下 [ **FlowLayoutPanel** ] 專案，將新的控制項加入至最後一個資料格 (右下方) 。 然後，將 FlowLayoutPanel 停駐在 TableLayoutPanel 中。 您可以選擇在 FlowLayoutPanel 的黑色三角形工作清單上的 [停 **駐于父容器中** ]，或將 FlowLayoutPanel 的 [ **dock** ] 屬性設定為 [ **填滿**]。
 
@@ -76,7 +76,7 @@ ms.locfileid: "96480573"
 
    您的按鈕現在應該具有適當的大小且順序正確   (只要選取了四個按鈕，您就可以同時變更全部四個 **AutoSize** 屬性。 ) 下圖顯示四個按鈕。
 
-    ![包含四個按鈕的圖片檢視器](../ide/media/express_autosize.png)<br/>**_圖片檢視器_* _ _with 四個按鈕 *
+    ![包含四個按鈕的圖片檢視器](../ide/media/express_autosize.png)<br/>***圖片檢視器** _ _with 四個按鈕 *
 
 1. 現在，再次執行程式以查看您的變更。
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97d04978a2809a4744f62f27c375efdec1e43dcc
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 69a7c6a472023dd8bd41b087b3749e5451382a5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903872"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950302"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 工作
 
@@ -33,7 +33,7 @@ ms.locfileid: "92903872"
 
 ## <a name="task-parameters"></a>工作參數
 
-| 參數 | 描述 |
+| 參數 | Description |
 |------------------------------| - |
 | `GeneratedLocalizationFiles` | 必要的 **ITaskItem []** 參數。<br /><br /> 以 XAML 二進位格式針對個別檔案指定當地語系化指示詞檔案的清單。 |
 | `OutputFile` | 必要的 **String** 輸出參數。<br /><br /> 指定編譯的當地語系化指示詞組件的輸出路徑。 |
@@ -59,7 +59,7 @@ ms.locfileid: "92903872"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
 - [WPF MSBuild 工作參考](../msbuild/wpf-msbuild-task-reference.md)

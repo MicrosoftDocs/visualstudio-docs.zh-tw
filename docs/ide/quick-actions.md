@@ -6,18 +6,18 @@ ms.date: 03/28/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 967e73748b364e7e41b1773a7fab33831152ab18
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e1d9c257bcf0e2a88a384c22010abb08894483ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870777"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951091"
 ---
 # <a name="quick-actions"></a>快速動作
 
@@ -46,7 +46,7 @@ ms.locfileid: "95870777"
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[重構 (Visual Studio for Mac)](/visualstudio/mac/refactoring)。
 
-您可以使用燈泡燈泡 ![ 圖示 ](media/light-bulb-icon.png) 或螺絲螺絲 ![ 起子圖示圖示或 ](media/screwdriver-icon.png) 按下 **Ctrl** + **.** 來套用快速動作。 當游標位於可使用動作的程式碼行上時。 如果有紅色波浪線指出錯誤，而且 Visual Studio 有適用於該錯誤的修正，您將會看到錯誤燈泡 ![錯誤燈泡圖示](media/error-light-bulb-icon.png)。
+您可以使用燈泡燈泡 ![ 圖示 ](media/light-bulb-icon.png) 或螺絲螺絲 ![ 起子圖示圖示或 ](media/screwdriver-icon.png) 按下 **Ctrl** + 來套用快速動作。 當游標位於可使用動作的程式碼行上時。 如果有紅色波浪線指出錯誤，而且 Visual Studio 有適用於該錯誤的修正，您將會看到錯誤燈泡 ![錯誤燈泡圖示](media/error-light-bulb-icon.png)。
 
 例如，協力廠商可以針對任何語言，在 SDK 當中提供自訂診斷和建議，而 Visual Studio 燈泡會依據那些規則來顯示。
 

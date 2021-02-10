@@ -6,21 +6,21 @@ ms.topic: conceptual
 ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96cad46cd8a42346ab6199bca664cdc885bfc3cd
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 1fc17bd86868a7b3e87c47ec44fd5caabf7a6cfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720263"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950139"
 ---
 # <a name="resource-monitoring-performance-rules"></a>資源監視效能規則
 [資源監視] 分類中的效能訊息提供應用程式效能的其他資料。 您可以使用這項資料來分析效能問題。 這些規則是參考性的，並針對每個分析回合進行報告。
 
-|規則|描述|
+|規則|Description|
 |-|-|
 |[DA0501：所分析之進程的平均 CPU 耗用量。](../profiling/da0501-average-cpu-consumption-by-the-process-being-profiled.md)|此訊息報告處理器忙於執行應用程式指令的時間百分比。 報告的值是所分析的處理序作用中之所有測量間隔的平均。|
 |[DA0502：所分析之處理序的 CPU 使用量上限](../profiling/da0502-maximum-cpu-consumption-by-the-process-being-profiled.md)|此訊息報告處理器忙於執行應用程式指令的最大時間百分比。 報告的值是在所分析的處理序作用中之所有測量間隔當中報告的最大值。|

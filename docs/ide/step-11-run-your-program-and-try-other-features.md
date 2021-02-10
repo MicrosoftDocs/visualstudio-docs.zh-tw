@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ac5967d13aa6572b36989150561363555a9705
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a4488c212cabe95d73f75246fb297c17ce073b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950896"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>步驟11：執行您的圖片檢視器應用程式並嘗試其他功能
 
@@ -25,19 +25,19 @@ ms.locfileid: "90809194"
 
 ## <a name="how-to-run-your-app-and-set-the-background-color"></a>如何執行您的應用程式並設定背景色彩
 
-1. 選擇 **F5**，或在功能表列上依序選擇 [偵錯]**** > [開始偵錯]****。
+1. 選擇 **F5**，或在功能表列上依序選擇 [偵錯] > [開始偵錯]。
 
-1. 在開啟圖片之前，請先選擇 [設定背景色彩]**** 按鈕。 [色彩]**** 對話方塊隨即開啟。
+1. 在開啟圖片之前，請先選擇 [設定背景色彩] 按鈕。 [色彩] 對話方塊隨即開啟。
 
      ![[色彩] 對話方塊](../ide/media/express_colordialog.png)<br/>
-***色彩****對話方塊*
+***色彩** _ _dialog box *
 
 1. 選擇色彩以設定 PictureBox 背景色彩。 請仔細查看 `backgroundButton_Click()` (或 `BackgroundButton_Click()`) 方法，以瞭解其運作方式。
 
     > [!NOTE]
-    > 您可以將圖片的 URL 貼至 [開啟檔案]**** 對話方塊中，即可從網際網路載入圖片。 試著尋找透明背景的影像，以呈現您的背景色彩。
+    > 您可以將圖片的 URL 貼至 [開啟檔案] 對話方塊中，即可從網際網路載入圖片。 試著尋找透明背景的影像，以呈現您的背景色彩。
 
-1. 選擇 [清除圖片]**** 按鈕，確定將圖片清除。 然後，選擇 [關閉] 按鈕來 **結束** 應用程式。
+1. 選擇 [清除圖片] 按鈕，確定將圖片清除。 然後，選擇 [關閉] 按鈕來 **結束** 應用程式。
 
 ## <a name="try-other-features"></a>嘗試其他功能
 
@@ -47,9 +47,9 @@ ms.locfileid: "90809194"
 
 * 變更表單的 **FormBorderStyle** 和 **ControlBox** 屬性。
 
-* 使用表單的 **AcceptButton** 和 **CancelButton** 屬性，如此就會在使用者選擇 **Enter** 或 **Esc** 鍵時，自動選擇這些按鈕。 讓應用程式在使用者選擇**Enter**鍵時開啟 [**開啟**檔案] 對話方塊，並在使用者選擇**Esc 鍵**時關閉方塊。
+* 使用表單的 **AcceptButton** 和 **CancelButton** 屬性，如此就會在使用者選擇 **Enter** 或 **Esc** 鍵時，自動選擇這些按鈕。 讓應用程式在使用者選擇 **Enter** 鍵時開啟 [**開啟** 檔案] 對話方塊，並在使用者選擇 **Esc 鍵** 時關閉方塊。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要深入了解，請繼續下列教學課程：
 

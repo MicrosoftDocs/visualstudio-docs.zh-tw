@@ -19,15 +19,15 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dd3f88df661537434c79a8b0049f90ddbce14c70
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 28a5bc44b0f6fa04d32c574e9772369709736ddd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850607"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949073"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>建立 SharePoint 工作流程方案
 
@@ -116,7 +116,7 @@ ms.locfileid: "94850607"
 
 - 修改
 
-- 工作
+- Task
 
   其中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 包含關聯和初始表單的專案範本。 *關聯表單* 的範例之一，是讓系統管理員安裝工作流程時，請輸入與工作流程相關的參數，例如費用工作流程的消費限制。 *初始表單* 的範例之一，是讓 expense 工作流程的使用者輸入他們花在工作流程中的金額。 如需這些表單類型的詳細資訊，請參閱 [SharePoint 專案和專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。
 
@@ -136,7 +136,7 @@ ms.locfileid: "94850607"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[逐步解說：建立和調試 SharePoint 工作流程方案](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|帶領您逐步建立和偵測簡單的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 工作流程。|
 |[逐步解說：使用關聯與初始表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|帶領您逐步建立 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 具有關聯和初始表單的完整功能工作流程。|
@@ -144,7 +144,7 @@ ms.locfileid: "94850607"
 |[逐步解說：建立自訂網站工作流程活動](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|示範如何執行兩項重要工作：建立網站層級工作流程，以及建立自訂工作流程活動。|
 |[逐步解說：將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|示範如何將 SharePoint Designer 2010 中建立之可重複使用的宣告式工作流程匯入至 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sharepoint 專案。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)
 - [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)

@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b858ed302c7fe89049585edb7cc5c4391a4789b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 10f021e8f8151216cd2728e1e9723b0edb9b3e1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480612"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950727"
 ---
 # <a name="step-3-set-your-form-properties"></a>步驟 3：設定表單屬性
 
@@ -35,7 +35,7 @@ ms.locfileid: "96480612"
 1. 選取表單之後，在 [屬性] 視窗中尋找 [文字] 屬性。 根據清單排序的方式，您可能需要向下捲動。 選擇 [ **文字**]，輸入 **Picture Viewer**，然後選擇 **Enter**。  您的表單現在應該會在其標題列中顯示文字 **圖片檢視器** ，而 [ **屬性** ] 視窗看起來應該類似下列螢幕擷取畫面。
 
     ![屬性視窗](../ide/media/express_edittextproperty.png)<br>
-   **_屬性_* _ _window *
+   ***屬性** _ _window *
 
    > [!NOTE]
    > 屬性可以依 [分類] 或 [字母順序] 檢視來排序。 您可以使用 [屬性] 視窗上的按鈕，在這兩個檢視之間切換。 在本教學課程中，透過 [字母順序] 檢視比較容易找到屬性。
@@ -58,7 +58,7 @@ ms.locfileid: "96480612"
    - 在工具列上選擇 [開始偵錯] 按鈕，如下所示。
 
       ![[開始偵錯] 工具列按鈕](../ide/media/express_icondebug.png)<br>
-     **_開始調試_* _toolbar 按鈕 *
+     ***開始調試** _toolbar 按鈕 *
 
      就像之前一樣，IDE 會建立並執行您的應用程式，而且會出現一個視窗。
 
@@ -72,7 +72,7 @@ ms.locfileid: "96480612"
 
    - 選擇 [**圖片檢視器**] 視窗左上角的 [ **X** ] 按鈕。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 * 若要移至下一個教學課程步驟，請參閱 **[步驟4：使用 TableLayoutPanel 控制項配置您的表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)**。
 

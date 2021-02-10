@@ -9,17 +9,17 @@ ms.custom:
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 39c5fd62b67c8153da0a64dcd92142300912c25f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f76eb5ba3ccab85a4cf6c8ca5ad4a8fa3e021f47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951208"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
@@ -182,7 +182,7 @@ Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中
 
    出現的這兩個 `words` 已重新命名，以及程式碼註解中的 `words` 參考。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [了解專案與解決方案](../get-started/tutorial-projects-solutions.md)

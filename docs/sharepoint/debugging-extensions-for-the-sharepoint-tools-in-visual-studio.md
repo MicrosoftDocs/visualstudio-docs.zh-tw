@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5ad95ce8b4ab9567f22748453ae59c258f24aa86
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 2b098ac007825745e13481592760be9d2badeb55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948904"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio 中 SharePoint 工具的 Debug 擴充功能
   您可以在實驗實例或 Visual Studio 的一般實例中，進行 SharePoint 工具擴充功能的偵錯工具。 如果您需要針對延伸模組的行為進行疑難排解，您也可以修改登錄值以顯示其他錯誤資訊，以及設定 Visual Studio 執行 SharePoint 命令的方式。
@@ -53,7 +53,7 @@ ms.locfileid: "94671216"
 
 3. 在 [ **Visual Studio 擴充功能安裝程式** ] 對話方塊中，選擇您要安裝擴充功能的 Visual Studio 版本，然後選擇 [ **安裝** ] 按鈕。
 
-     Visual Studio 將擴充檔安裝至%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions \\ *作者名稱* \\ *延伸模組名稱* \\ *版本*。 這個路徑中的最後三個資料夾是由擴充功能的 extension.vsixmanifest 檔案中的、和專案所構成 `Author` `Name` `Version` 。 *extension.vsixmanifest*
+     Visual Studio 將擴充檔安裝至%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions \\ *作者名稱* \\ *延伸模組名稱* \\ *版本*。 這個路徑中的最後三個資料夾是由擴充功能的 extension.vsixmanifest 檔案中的、和專案所構成 `Author` `Name` `Version` 。 
 
 4. Visual Studio 安裝延伸模組之後，請選擇 [ **關閉** ] 按鈕。
 
@@ -116,13 +116,13 @@ ms.locfileid: "94671216"
 
  若要協助疑難排解 SharePoint 工具的任何擴充功能，您可以建立並設定 EnableDiagnostics 值。 下表描述此值。
 
-|值|說明|
+|值|描述|
 |-----------|-----------------|
 |EnableDiagnostics|REG_DWORD，指定是否要在 [ **輸出** ] 視窗中顯示診斷訊息。<br /><br /> 若要顯示診斷訊息，請將此值設定為1。 若要停止顯示訊息，請將此值設定為0，或刪除此值。<br /><br /> 若要從 SharePoint 工具延伸模組將訊息寫入至 [ **輸出** ] 視窗，請使用 sharepoint 專案服務。 如需詳細資訊，請參閱 [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)。|
 
  如果您的延伸模組包含 SharePoint 命令，您可以建立並設定其他值，以協助疑難排解命令。 下表描述這些值。
 
-|值|說明|
+|值|描述|
 |-----------|-----------------|
 |AttachDebuggerToHostProcess|REG_DWORD，指定是否要顯示對話方塊，讓您在偵錯工具啟動時，立即將偵錯工具附加至 *vssphost4.exe* 。 如果您想要 debug 的命令是在啟動後立即 vssphost.exe 執行，而且沒有足夠的時間在執行命令之前手動附加偵錯工具，這就很有用。 若要顯示對話方塊， *vssphost4.exe* <xref:System.Diagnostics.Debugger.Break%2A> 會在啟動時呼叫方法。<br /><br /> 若要啟用此行為，請將此值設定為1。 若要關閉此行為，請將此值設定為0，或刪除此值。<br /><br /> 如果您將此值設定為1，您可能也會想要增加 HostProcessStartupTimeout 值，以提供足夠的時間來附加偵錯工具，Visual Studio 預期 *vssphost4.exe* 告知它已順利啟動。|
 |ChannelOperationTimeout|REG_DWORD，指定 Visual Studio 等候 SharePoint 命令執行的時間（以秒為單位）。 如果命令未及時執行，則會擲回 <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> 。<br /><br /> 預設值是 120 秒。|

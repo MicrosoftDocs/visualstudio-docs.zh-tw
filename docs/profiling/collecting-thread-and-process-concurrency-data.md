@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Profiling Tools, concurrency method
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f6d0dbc8c10c972957e2bcf8092d145bb3651c
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 2f5065c3eafc9fb1cd9e36227a09bbf26ed321c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950204"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>收集執行緒和處理序並行資料
 
@@ -38,7 +38,7 @@ Visual Studio 分析工具的並行分析方法可讓您收集資源爭用資料
 
 下表中的工作說明當您使用並行方法進行分析時，可以在 [效能工作階段屬性頁] 對話方塊中指定的選項。
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |在 [一般] 頁面上，指定產生的分析資料 (.vsp) 檔案的命名詳細資料。|- [如何：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)|
 |在 [啟動] 頁面上，如果您的程式碼方案中有多個 .exe 專案，請指定要啟動的應用程式。|- [如何：指定要啟動的二進位檔](../profiling/how-to-specify-the-binary-to-start.md)|

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 01ac4013-96f9-4235-b289-f55f9e99558f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f30f9698c9c81322edd6935b40c16cad6f46024c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d31b7cfe2480fa3b16a4d3c8c08185194fec6b79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951195"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 此介面代表建立和系結任何類型中斷點所需的資訊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointRequest2 : IUnknown
@@ -45,7 +45,7 @@ IDebugBreakpointRequest2 : IUnknown
 ## <a name="remarks"></a>備註
  在 [載入要進行](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) 偵錯工具的程式之後，呼叫系結會將暫止中斷點系結至程式中要求的位置。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio
@@ -55,4 +55,4 @@ IDebugBreakpointRequest2 : IUnknown
 ## <a name="see-also"></a>另請參閱
 - [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
 - [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)
-- [繫結](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [綁定](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

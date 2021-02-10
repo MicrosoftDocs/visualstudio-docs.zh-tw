@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a093dd65ce4de187cadf7e277c695bac99b5ca6
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: c0152de94eb74fff902ced4d61c749f7cca3a277
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597973"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951338"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>將工具列新增至工具視窗
 本逐步解說將說明如何將工具列加入至工具視窗。

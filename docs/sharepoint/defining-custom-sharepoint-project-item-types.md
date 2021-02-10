@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc2e3670dd734b368795f270fa6c1d63c8c079e8
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 00ee9f41695078d8bea5daacf1c0ccfd392a64cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948865"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>定義自訂 SharePoint 專案專案類型
   當您想要建立新種類的 SharePoint 專案專案時，請定義新的 SharePoint 專案專案類型。 例如，Visual Studio 不包含將欄位或自訂動作加入至 SharePoint 網站的 SharePoint 專案專案。 您可以定義自己的 SharePoint 專案專案類型，以建立欄位、自訂動作或其他類型的 SharePoint 元件。

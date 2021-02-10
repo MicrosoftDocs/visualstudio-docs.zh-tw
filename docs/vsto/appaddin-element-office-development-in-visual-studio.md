@@ -12,20 +12,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a22015fe6183dfd74fff54c34bc6896e1d33d217
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 427d7bc0ec59b98394b292745985be7fdf69b904
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950506"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 開發的 appAddin 元素
   命名空間的 **appAddin** 元素會 `vstov4` 儲存 VSTO 增益集的自訂特定資訊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <appAddin
@@ -52,7 +52,7 @@ ms.locfileid: "96844747"
  **AppAddin** 元素具有下列子項目。
 
 ### <a name="friendlyname"></a>friendlyName
- 選擇性。 在 **friendlyName** [Visual Studio&#41;中，&#60;friendlyname&#62; 元素 &#40;Office 程式開發](../vsto/friendlyname-element-office-development-in-visual-studio.md)說明。
+ 選擇性。 在 [Visual Studio&#41;中，&#60;friendlyname&#62; 元素 &#40;Office 程式開發](../vsto/friendlyname-element-office-development-in-visual-studio.md)說明。
 
 ### <a name="description"></a>description
  選擇性。 **Description** 元素會在 [Visual Studio&#41;中 &#40;Office 程式開發&#60;描述&#62;](../vsto/description-element-office-development-in-visual-studio.md)專案中說明。
@@ -62,7 +62,7 @@ ms.locfileid: "96844747"
 
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>Description
  下列程式碼範例說明使用部署之 Outlook 方案中的 **appAddin** 元素 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼

@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: 7047bf18-5779-4f6e-872c-66e2fc47c969
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fa1cb81d46f0977de2db9d78c6db53f542faa70f
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 7b53b37f670bf6bf8cc579fd6897ba344135a9e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949944"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>指定分析工具命令列工具的路徑
 

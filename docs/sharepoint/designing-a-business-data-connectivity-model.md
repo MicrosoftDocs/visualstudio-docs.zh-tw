@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b574c52b9081cc6640c5611e0759b5559e7a4f6d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8fb1aa194688533855b7c5bd1d58a4e3b97ac749
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672648"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948838"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>設計商務資料連線模型
   您可以藉由將實體和方法加入至模型檔案，來開發商務資料連線 (BDC) 服務的模型。 實體描述資料欄位的集合。 例如，實體可以代表資料庫中的資料表。 方法會執行工作，例如新增、刪除或更新實體所表示的資料。 如需詳細資訊，請參閱將 [商務資料整合到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。
@@ -33,7 +33,7 @@ ms.locfileid: "94672648"
 ## <a name="add-methods"></a>新增方法
  當使用者在以您的模型為基礎的清單或網頁元件中查看、加入、更新或刪除資訊時，BDC 服務會在您的模型中呼叫方法。 您必須針對使用者可執行檔每個工作，將方法新增至模型。 從 [ **BDC 方法詳細資料** ] 視窗中選取五個基本方法類型的任一種，以建立方法。 下表說明 BDC 模型的五個基本方法。
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |儀|傳回實體實例的集合。 當使用者開啟清單或網頁元件時呼叫。 如需詳細資訊，請參閱 [如何：加入搜尋工具方法](../sharepoint/how-to-add-a-finder-method.md)。|
 |特定搜尋|傳回特定的實體實例。 當使用者在清單中查看特定專案的詳細資料時呼叫。 如需詳細資訊，請參閱 [如何：加入特定的搜尋工具方法](../sharepoint/how-to-add-a-specific-finder-method.md)。|
@@ -87,7 +87,7 @@ ms.locfileid: "94672648"
 ### <a name="configure-bdc-security"></a>設定 BDC 安全性
  您可能必須先修改 SharePoint 中的安全性設定，才能將方案進行偵錯工具。 若要修改這些設定，請在 SharePoint 2010 管理中心網站中開啟商務資料連線服務應用程式。 在 [ **設定中繼資料存放區許可權** ] 對話方塊中，加入您的使用者帳戶，然後選取下列任何一個選項：
 
-|工作|選項|
+|Task|選項|
 |----------|------------|
 |將模型部署至 BDC 服務。|編輯|
 |若要使用外部內容類型來建立清單和 Web 組件，請 (模型中) 實體。|在用戶端中可選取|
@@ -113,7 +113,7 @@ ms.locfileid: "94672648"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)|描述您可以用來以視覺化方式設計 BDC 模型的工具。|
 |[如何：將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)|示範如何將外部內容類型或實體新增至模型。|

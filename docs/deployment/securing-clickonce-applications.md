@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cb992355378e6e124cadef3383633a52a9111c2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: aa698fc0ac0e46fa645ede54d6608b79dd031655
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350540"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949658"
 ---
 # <a name="secure-clickonce-applications"></a>保護 ClickOnce 應用程式
 在 .NET Framework 中，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式受到程式碼存取安全性條件約束的限制，因此能夠協助限制程式碼對受保護之資源和作業的存取。 因此，很重要的是您必須了解程式碼存取安全性的含意，照著撰寫 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 您的應用程式可以使用完全信任或部分信任區域 (例如網際網路和內部網路區域) 以限制存取。
@@ -78,6 +78,6 @@ ms.locfileid: "94350540"
 ## <a name="deploying-obfuscated-assemblies"></a>部署模糊化組件
  Visual Studio 包含免費的 [PreEmptive Protection-Dotfuscator Community](../ide/dotfuscator/index.md)，可用來透過程式碼混淆和作用中的保護措施，保護您的 ClickOnce 應用程式。  如需詳細資訊，請參閱 [Dotfuscator Community 使用者指南的 ClickOnce 一節](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)

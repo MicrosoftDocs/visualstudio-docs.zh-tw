@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fc7493d20d09ebd606e3a6ec8e5271981fb6f62
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: c3a2f54f9cdd576a5c4d90c3a471febe516e6549
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950269"
 ---
 # <a name="call-tree-view---sampling-data"></a>呼叫樹狀圖檢視 - 取樣資料
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。
@@ -39,7 +39,7 @@ ms.locfileid: "98150518"
 
  設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 若要將根節點重設回原始節點，請在 [呼叫樹狀圖檢視] 視窗上按一下滑鼠右鍵，然後選取 [重設根目錄]。
 
-|Column|描述|
+|資料行|描述|
 |------------|-----------------|
 |**處理序識別碼**|分析執行的處理序 ID (PID)。|
 |**進程名稱**|處理序的名稱。|

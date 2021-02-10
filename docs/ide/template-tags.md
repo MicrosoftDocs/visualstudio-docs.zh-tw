@@ -4,7 +4,7 @@ description: 了解如何在 Visual Studio 中於專案範本上新增或編輯�
 ms.date: 04/30/2019
 author: minsa110
 ms.author: somin
-manager: jillfra
+manager: jmartens
 ms.topic: reference
 helpviewer_keywords:
 - item templates, updating
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 37a1965712920420bdc4d784a003dbfbd2f2167a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5f8c3f6e96e8e593fe74fd58b3e8bafab0ad88e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950610"
 ---
 # <a name="add-tags-to-project-templates"></a>將標籤新增到專案範本
 
@@ -34,7 +34,7 @@ ms.locfileid: "85285214"
 
    ![[新增專案] 對話方塊中的搜尋及篩選](media/npd-search-and-filter.png)
 
-您可以透過更新 *.vstemplate* XML 檔案來新增標籤。 您可以使用 Visual Studio 內建的範本標籤，或建立自訂範本標籤。 範本標籤只會出現在 Visual Studio 2019 的 [新增專案]**** 對話方塊中。 範本標籤不會影響範本在先前版本 Visual Studio 中的呈現方式。
+您可以透過更新 *.vstemplate* XML 檔案來新增標籤。 您可以使用 Visual Studio 內建的範本標籤，或建立自訂範本標籤。 範本標籤只會出現在 Visual Studio 2019 的 [新增專案] 對話方塊中。 範本標籤不會影響範本在先前版本 Visual Studio 中的呈現方式。
 
 ## <a name="add-or-edit-tags"></a>新增或編輯標籤
 
@@ -44,7 +44,7 @@ ms.locfileid: "85285214"
 * [更新現有的專案範本](how-to-update-existing-templates.md)。
 * [建立新的 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <LanguageTag> Language Name </LanguageTag>
@@ -77,9 +77,9 @@ ms.locfileid: "85285214"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(必要) 將範本分類，並定義範本在 [新增專案]**** 對話方塊或 [加入新項目]**** 對話方塊中的顯示方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(必要) 將範本分類，並定義範本在 [新增專案] 對話方塊或 [加入新項目] 對話方塊中的顯示方式。|
 
 ## <a name="text-value"></a>文字值
 

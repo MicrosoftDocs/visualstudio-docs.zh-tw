@@ -9,15 +9,15 @@ ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a8ae9b17df85431945b19d65f5435ac081b4a1c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: c8d3a907651169e74f992fb908ce8a13c127a693
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480716"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950974"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步驟 1：建立專案並將資料表新增至表單
 

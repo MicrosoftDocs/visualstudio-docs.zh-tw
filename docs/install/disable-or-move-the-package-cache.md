@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f38757931cb22e9072571d96b015f37882dd500
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e328bf8420f9cc7cf207ede6b6447ed291b77745
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114786"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949450"
 ---
 # <a name="disable-or-move-the-package-cache"></a>停用或移動套件快取
 
