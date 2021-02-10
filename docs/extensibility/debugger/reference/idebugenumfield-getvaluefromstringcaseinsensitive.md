@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ef95b38e-d9b2-4fb5-a166-7c2e14641dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 551945ded9d1ba3e973f18c21463a896cbd478c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0eb781cd9e7a9073a45418c3793dc6ba026ec45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730248"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933345"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 這個方法會使用不區分大小寫的搜尋，傳回與列舉常數名稱相關聯的值。

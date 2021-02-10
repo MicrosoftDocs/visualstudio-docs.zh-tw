@@ -35,15 +35,15 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], deleting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: edc8939f2a9e5f41f81c8176d5268528c273a7ce
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: c58ad4dee128f7b2d0dcd91edb7b19c7f8f5a474
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933618"
 ---
 # <a name="host-items-and-host-controls-overview"></a>主專案和主控制項總覽
   主項目和主控制項類型可為使用 Visual Studio 中的 Office 開發工具建立的 Office 方案，提供程式撰寫模型。 主項目和主控制項會以較接近與 Managed 物件 (例如 Windows Form 控制項) 互動的方式，與以 COM 為基礎的 Microsoft Office Word 和 Microsoft Office Excel 物件模型進行互動。

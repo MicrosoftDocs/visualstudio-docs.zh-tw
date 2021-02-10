@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c0b415ba-b825-4da0-9faf-8a60a663e302
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a7c1d9f3632d8b710ac238c372ed4456183a8d1
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: dbf04b5e4b032bc44040cf14f6bf23225696ee61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934114"
 ---
 # <a name="using-and-providing-services"></a>使用和提供服務
 服務是兩個 Vspackage 之間的合約。 其中一個 VSPackage 會提供一組特定的介面，供另一個要取用的 VSPackage 使用。 例如， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> 會將服務提供給它所載入的任何 VSPackage。 此服務提供 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> 介面，可用來寫入活動記錄。 如需詳細資訊，請參閱 [如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。
@@ -28,7 +28,7 @@ ms.locfileid: "97715934"
 
  Visual Studio 提供重要的服務，如下所示：
 
-|IDE 服務|描述|
+|IDE 服務|Description|
 |-----------------|-----------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|提供對處理基本功能、Vspackage 和登錄的 IDE 服務的存取。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|在 IDE 中提供基本視窗和 UI 相關的功能，例如建立工具和文件視窗的能力。|

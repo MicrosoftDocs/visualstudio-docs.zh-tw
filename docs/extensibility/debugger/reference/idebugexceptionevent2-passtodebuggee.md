@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aec6f460295b59b2b5455b83d5b0be554bca24fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03ce1499863197ed71ef38fcae6a256b1ca319a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933257"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 指定是否應將例外狀況傳遞至執行繼續時所要進行的程式，或者是否應捨棄例外狀況。
@@ -28,14 +28,14 @@ ms.locfileid: "80729828"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT PassToDebuggee(
-   BOOL fPass
+HRESULT PassToDebuggee(
+   BOOL fPass
 );
 ```
 
 ```csharp
-int PassToDebuggee(
-   int fPass
+int PassToDebuggee(
+   int fPass
 );
 ```
 

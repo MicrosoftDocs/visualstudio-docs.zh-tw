@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: a7e8ea6514f29b99975b9e291d6a09ed2a0ad54e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934008"
 ---
 # <a name="animations-for-visual-studio"></a>適用於 Visual Studio 的動畫
 ## <a name="animation-fundamentals"></a>動畫基礎
@@ -153,7 +153,7 @@ ms.locfileid: "97715947"
 - 還原歷程記錄狀態
 
 #### <a name="attract-attention"></a>吸引關注
-如果目標是要將使用者的注意力放在多個專案中，或要提醒使用者更新資訊，則可能會有適當的動畫。 例如，您的應用程式起始頁可能會採用在頁面載入之後滑入位置的消費者入門按鈕。
+如果目標是要將使用者的注意力放在多個專案中，或要提醒使用者更新資訊，則可能會有適當的動畫。 例如，您的應用程式起始頁可能會採用在頁面載入之後滑入位置的開始使用按鈕。
 
 作為規則，畫面上的最後一個移動元素吸引使用者的注意力。  在一連串的動畫專案中，使用者的注意將會遵循最後移動的物件。
 

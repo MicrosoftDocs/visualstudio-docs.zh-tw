@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fc65cda5eb969e361e90771e0245fdaeaeebcd1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 8d25430206129f0236661222b92cefdbe538a7ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598155"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933566"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 封裝的剖析
 VSIX 封裝是一個包含一或多個 Visual Studio 延伸模組的 .vsix 檔案，以及 Visual Studio 用來分類及安裝延伸模組的中繼資料 *。* 該中繼資料包含在 VSIX 資訊清單和 *[Content_Types] .xml* 檔案中。 VSIX 封裝也可以包含一或多個 *vsixlangpack* 檔案，以提供當地語系化的設定文字，而且可能包含其他 VSIX 套件來安裝相依性。

@@ -6,16 +6,16 @@ ms.date: 03/11/2019
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: b5d2f8205c72f2fd661a76296392bb94d1d24469
-ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
+ms.openlocfilehash: 24b106442456f8bfbd415c4559cba71e463418d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94531858"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933787"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0 的新功能
 
@@ -33,7 +33,7 @@ ms.locfileid: "94531858"
 
 - 這個工具版本的 `VisualStudioVersion` 為 "16.0"。
 
-## <a name="change-waves"></a>變更波
+## <a name="change-waves"></a>變更波浪
 
 從 MSBuild 16.8 開始，您可以選擇性地選擇是否要退出 MSBuild 中的特定潛在干擾性變更。 請參閱 [變更波浪](change-waves.md)。
 

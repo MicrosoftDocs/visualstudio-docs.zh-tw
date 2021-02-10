@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: adc1a191e8fe3869273df546191f7701956018dd
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 3b214452a2eb7a85b4a9baea5e4b4e80a1a71e63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684010"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933852"
 ---
 # <a name="walkthrough-use-msbuild"></a>逐步解說：使用 MSBuild
 
@@ -627,7 +627,7 @@ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Includ
 
 請注意，此語法中所表示的中繼資料不會導致批次處理。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
  若要瞭解如何一次建立一個簡單的專案檔，請嘗試逐步解說 [：從頭開始建立 MSBuild 專案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)檔。
 

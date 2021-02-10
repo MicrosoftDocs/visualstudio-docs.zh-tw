@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab57f599214cfbd7a1f5fcca15fa104b072d1d48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 498b928d7e04fc97ec076cb67722b7947686c3a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933293"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
 決定 debug engine (DE) 是否支援將這個例外狀況傳遞至執行繼續時所要進行偵錯工具的選項。
@@ -28,13 +28,13 @@ ms.locfileid: "80729878"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT CanPassToDebuggee(
+HRESULT CanPassToDebuggee(
    void
 );
 ```
 
 ```csharp
-int CanPassToDebuggee();
+int CanPassToDebuggee();
 ```
 
 ## <a name="return-value"></a>傳回值

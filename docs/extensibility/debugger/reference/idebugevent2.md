@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6341f8003b962a7f45420b076b23623ebdaf861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ff87d79d45c90a3307d5f28a2aa6109033f4a59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729905"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933332"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 這個介面是用來傳達重要的偵錯工具資訊，例如在中斷點停止，以及非關鍵的資訊，例如偵錯工具訊息。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEvent2 : IUnknown
@@ -44,7 +44,7 @@ IDebugEvent2 : IUnknown
 ## <a name="remarks"></a>備註
  更特定的事件介面（例如 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)）不會衍生自 IDebugEvent2 介面，但會改為在與相同的物件上實作為個別的介面 `IDebugEvent2` 。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

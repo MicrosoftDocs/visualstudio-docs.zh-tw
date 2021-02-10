@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 42f685bf-0f39-47f4-98b0-6022efe2bf97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7885f36a113809e81279498a769e257af4f1cde2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a67c660ec8457191e688fdd430c3f7a07b5d75c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730165"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933319"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 這個介面代表列舉型別。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEnumField : IDebugContainerField
@@ -47,7 +47,7 @@ IDebugEnumField : IDebugContainerField
 ## <a name="remarks"></a>備註
  它是實際系結至具有系結之位置的基礎[符號。](../../../extensibility/debugger/reference/idebugbinder-bind.md)
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio
@@ -58,4 +58,4 @@ IDebugEnumField : IDebugContainerField
 - [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
-- [繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+- [綁定](../../../extensibility/debugger/reference/idebugbinder-bind.md)

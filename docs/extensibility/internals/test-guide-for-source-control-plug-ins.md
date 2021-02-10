@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a288beb618b0b539f53270928366349f47aee9e9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 951b83f425f1e7171c519fced3fa3a4644279621
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934138"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>原始檔控制外掛程式測試指南
 本節提供使用測試原始檔控制外掛程式的指引 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 提供最常見的測試區域，以及某些可能有問題的更複雜區域的廣泛總覽。 本總覽並非完整的測試案例清單。

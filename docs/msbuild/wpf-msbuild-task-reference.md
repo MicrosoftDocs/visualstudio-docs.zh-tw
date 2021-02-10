@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 94050565e6c5619781434c7a18307bfbf80b51f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047519"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933670"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 工作參考
 
@@ -59,7 +59,7 @@ Windows Presentation Foundation (WPF) 建置程序會擴充 Microsoft Build Engi
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- 將一或多個資源內嵌 ( *.jpg* 、 *.ico* 、 *.Bmp* 、二進位格式的 XAML，以及其他擴充類型) 至 *.resources* 檔。
+ 將一或多個資源內嵌 (*.jpg*、 *.ico*、 *.Bmp*、二進位格式的 XAML，以及其他擴充類型) 至 *.resources* 檔。
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -67,8 +67,8 @@ Windows Presentation Foundation (WPF) 建置程序會擴充 Microsoft Build Engi
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- **\<hostInBrowser />** 在建立 XAML 瀏覽器應用程式 (XBAP) 專案時，將專案新增至應用程式資訊清單 ( *\<projectname> .exe. 指令* 清單) 。
+ **\<hostInBrowser />** 在建立 XAML 瀏覽器應用程式 (XBAP) 專案時，將專案新增至應用程式資訊清單 (*\<projectname> .exe. 指令* 清單) 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild](../msbuild/msbuild.md)

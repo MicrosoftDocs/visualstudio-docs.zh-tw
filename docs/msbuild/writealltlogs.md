@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1fa3e10b-263c-4960-a9ad-485c02a7a872
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 754b34b872ba0f0f677a194194b2ff893e7107e1
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 65e0610c8148ab6ff32d8c19f6fd378ba46d76d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933592"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 
@@ -52,6 +52,6 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 
  **標頭：** *FileTracker.h*
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [WriteContextTLogs](../msbuild/writecontexttlogs.md)

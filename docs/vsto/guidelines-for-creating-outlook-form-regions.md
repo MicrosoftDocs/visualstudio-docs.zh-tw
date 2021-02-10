@@ -12,15 +12,15 @@ helpviewer_keywords:
 - icons [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a3a2fab671d6302583f1207f5756118c548bd8a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848088"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933605"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>建立 Outlook 表單區域的指導方針
   下列資訊可協助您最佳化表單區域及避免發生可能的問題：
@@ -42,7 +42,7 @@ ms.locfileid: "96848088"
 ## <a name="use-form-region-names"></a><a name="UsingFormRegions"></a> 使用表單區功能變數名稱稱
  可用來描述表單區域的名稱有好幾個。 請務必了解這些名稱之間的差異，以及這些名稱對表單區域的影響。 下表說明每個名稱。
 
-|表單區域名稱|描述|
+|表單區域名稱|Description|
 |----------------------|-----------------|
 |表單區域項目名稱|這個名稱是您在 [加入新項目]  對話方塊中為 [Outlook 表單區域]  指定的名稱。 這也是出現在方案總管 中表單區域程式碼檔的名稱。|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> 屬性|您會在 [新的 Outlook 表單區域精靈]  的 [提供描述文字和選取顯示設定]  頁面中指定這個名稱。 這個名稱會顯示為 [屬性]  視窗中的 **FormRegionName** 屬性。<br /><br /> 使用 <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> 屬性指定識別 Outlook 使用者介面 (UI) 中表單區域的標籤。 針對獨立型表單區域，這個名稱會顯示為 Outlook 項目之功能區上的按鈕。<br /><br /> 針對相鄰型表單區域，這個名稱會顯示為表單區域上方的標題文字。|
@@ -86,7 +86,7 @@ ms.locfileid: "96848088"
 
   **頁面** 圖示會出現在擁有獨立型、取代型或全部取代型表單區域之項目的偵測器功能區上。
 
-  **視窗** 圖示會出現在通知區域中，以及顯示 **Alt**[ + 取代] 或 [全部取代 **]** 表單區域之開啟專案的 [替換索引標籤] 對話方塊中。
+  **視窗** 圖示會出現在通知區域中，以及顯示[ + 取代] 或 [全部取代 **]** 表單區域之開啟專案的 [替換索引標籤] 對話方塊中。
 
 ## <a name="see-also"></a>另請參閱
 - [在執行時間存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)

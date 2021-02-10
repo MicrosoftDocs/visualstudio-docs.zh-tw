@@ -6,15 +6,15 @@ ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f2e4715c0333b02f120ec5f92d9f742196c04f3
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 2b177092b04d5042f62dfd0b34d2bfbf4f1f0228
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870855"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933865"
 ---
 # <a name="add-file-header"></a>新增檔案標頭
 
@@ -30,7 +30,7 @@ ms.locfileid: "95870855"
 
 **原因：** 您的小組要求您針對著作權用途納入檔案標頭。 
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將 [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project) 新增至專案或方案（如果您還沒有的話）。
 

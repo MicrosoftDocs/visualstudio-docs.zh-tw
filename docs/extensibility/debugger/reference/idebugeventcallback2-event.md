@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b60c09b21d531326e343dddd2f1cc69cfb0e5d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54f53132f0a1f4769386874118d24f7e77a95f71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729903"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933306"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 傳送 debug 事件的通知。
@@ -28,7 +28,7 @@ ms.locfileid: "80729903"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT Event( 
+HRESULT Event( 
    IDebugEngine2*  pEngine,
    IDebugProcess2* pProcess,
    IDebugProgram2* pProgram,
@@ -40,7 +40,7 @@ HRESULT Event( 
 ```
 
 ```csharp
-int Event( 
+int Event( 
    IDebugEngine2  pEngine,
    IDebugProcess2 pProcess,
    IDebugProgram2 pProgram,

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 488f675c39bb01c87aca13a9bef8cc4a715ecf18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cb8d468971a578f68ba64fe754ed788493400a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934047"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 如果發生堆疊回溯作業，則傳回代表位置的程式碼內容。

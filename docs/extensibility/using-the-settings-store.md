@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeb147c245f7dc09cf91db8a1b810a7c5f30b46b
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 752a912fd9a565e4b3e8dcb5c4c142e8f37dffc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715908"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934034"
 ---
 # <a name="using-the-settings-store"></a>使用設定存放區
 有兩種設定存放區：
