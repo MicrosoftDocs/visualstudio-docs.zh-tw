@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 98361f9abad40e447d7198265d21ef193bb9ddf5
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: e7a61e3a9ba159977d4a835126b2a584be1597c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955251"
 ---
 # <a name="execution-profile-report"></a>執行分析報表
 執行分析報表是傳統的取樣分析。 當執行緒在邏輯核心上執行時，約每毫秒會擷取一次樣本，並行視覺化檢視會透過自動分頁累積的樣本堆疊集來建立典型的呼叫樹狀圖。 目前的時間範圍、隱藏的執行緒及下列可套用的篩選都可能影響此資料表中的資料︰

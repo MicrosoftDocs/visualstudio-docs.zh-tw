@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c16414e6a49d727cf6b2113184c507feb7a73569
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955784"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>建置和偵錯 SharePoint 方案
   一般情況下，建立和偵錯工具 SharePoint 方案和在中建立和調試其他類型的專案相同 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 本節主題會說明兩者之間的差異。
@@ -50,7 +50,7 @@ ms.locfileid: "94850217"
 ## <a name="using-the-clean-command"></a>使用 Clean 命令
  在 SharePoint 伺服器上安裝 SharePoint 方案進行偵錯工具時，[ **清除** ] 命令不會卸載方案。 相反地，您必須透過 SharePoint 設定停用這些功能。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)
 - [使用伺服器總管流覽 SharePoint 連接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

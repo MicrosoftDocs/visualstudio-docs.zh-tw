@@ -6,15 +6,15 @@ ms.date: 09/18/2018
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d9a416dc64a9d49d14e367a04023f067c7b595c
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 88298cf9fecdb6ce3862ee289d63c4f31b748449
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955792"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>管理測試控制器和測試代理程式
 
@@ -157,7 +157,7 @@ ms.locfileid: "96329636"
 
 1. 視需要變更下列測試代理程式屬性。
 
-|測試代理程式屬性|說明|
+|測試代理程式屬性|Description|
 |-|-----------------|
 |**加權**|當您以不同的效能層級使用測試代理程式時，是用以分散負載。 例如，加權值 100 之測試代理程式所接收的負載，是加權值 50 之測試代理程式的兩倍。|
 |**IP 切換**|用來設定 IP 切換。 IP 切換可讓測試代理程式利用某個 IP 位址的範圍，將要求傳送至伺服器。 這會模擬來自不同用戶端電腦的呼叫。<br /><br /> 若您的測試負載會存取 Web 伺服陣列，「IP 切換」便很重要。 大多數的負載平衡器會使用用戶端的 IP 位址，將用戶端導引到特定的 Web 伺服器。 如果所有的要求似乎都來自單一用戶端，負載平衡器將不會平衡負載。 若要在 Web 伺服陣列中獲得較佳的負載平衡，確定讓要求都來自某一範圍的 IP 位址。 **注意：** 您可以指定網路介面卡，或是使用 [(全未指派)] 自動選取目前未使用的網路介面卡。 <br /><br /> 若要使用 IP 切換功能，Visual Studio Test Agent 服務必須以該代理程式電腦之 Administrators 群組中的使用者身分來執行。 在代理程式安裝期間選取此使用者，透過修改服務屬性然後重新啟動服務可對其進行變更。<br /><br /> 若要驗證 IP 切換是否正確運作，請啟用 Web 伺服器上的 IIS 記錄，並使用 IIS 記錄功能來驗證要求是否都來自您所設定的 IP 位址。|

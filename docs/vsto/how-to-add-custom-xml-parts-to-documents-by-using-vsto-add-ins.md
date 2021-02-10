@@ -18,15 +18,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], custom XML parts
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1b153fe3e7c68ed6a8288ff69a30e16dd32c448a
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: fbba5c629807815a306221368d00b7d759dcc294
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954224"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>如何：使用 VSTO 增益集將自訂 XML 元件新增至檔
   您可以將 XML 資料儲存在下列類型的文件中，方法是在 VSTO 增益集中建立自訂 XML 組件：

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio], Visual Basic
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 70cdcf9eb6d741fc579ce555ce0bfa3cdea0d774
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 1420165c8ca574c74efe6911bb9c5635e729a260
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478818"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955550"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Visual Basic 程式碼檔案的 IntelliSense
 

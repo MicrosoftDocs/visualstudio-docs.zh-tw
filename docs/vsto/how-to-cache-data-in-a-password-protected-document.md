@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2a11b70da4bdd2500f70d2b45f025340af21ea94
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: cd7efe4aa2aa14cb94a68f0729bc7fe3535888ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845995"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954029"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>如何：快取受密碼保護檔中的資料
   如果您將資料加入至以密碼保護的檔或活頁簿中的資料快取，系統不會自動儲存對快取資料的變更。 您可以藉由覆寫專案中的兩個方法，來儲存快取資料的變更。

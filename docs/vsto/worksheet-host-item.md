@@ -19,15 +19,15 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b25b921d29bee832ef37b943fd57edc38b7518db
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 12dc0823f1c7d1eb78867cb3529f955851f45b66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955732"
 ---
 # <a name="worksheet-host-item"></a>工作表主專案
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目是可從 Excel 的主要 Interop 組件擴充 <xref:Microsoft.Office.Interop.Excel.Worksheet> 類型的一種類型。 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目除了提供與 <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件相同的所有屬性、方法和事件之外，也會公開其他事件，並做為主控制項和 Windows Forms 控制項的容器。

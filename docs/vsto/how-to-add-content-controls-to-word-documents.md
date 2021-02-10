@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa1528371a1466ec2886bf652ed33561b66b7028
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ed33208d58e380b688ce2553b71033de0b7d07d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845540"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954289"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>如何：將內容控制項新增至 Word 檔
   在文件層級的 Word 專案中，您可以於設計階段或執行階段，將內容控制項加入專案中的文件。 在 Word VSTO 增益集專案中，您可以在執行階段將內容控制項加入任何開啟的文件。

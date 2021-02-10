@@ -11,20 +11,20 @@ helpviewer_keywords:
 - ProjectItemFile element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 099f20926487b09240219f04d9bce4a79709f6e6
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: a7c6dd7fc46dc8616eddc164bcf2ec801657cb00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955134"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 項目
   表示當專案專案部署至 SharePoint 時，要包含在專案專案中的 SharePoint 檔案，例如功能元素檔。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ProjectItemFile Source = "Name of the file"
@@ -42,7 +42,7 @@ ms.locfileid: "95440801"
 
 |屬性|描述|
 |---------------|-----------------|
-|**Source**|必要的 **xs： string** 屬性。<br /><br /> 要與專案專案一起部署的檔案名。|
+|**來源**|必要的 **xs： string** 屬性。<br /><br /> 要與專案專案一起部署的檔案名。|
 |**Target**|選擇性 **xs： string** 屬性。<br /><br /> 將在 SharePoint 上部署檔案的路徑（相對於部署根資料夾）。 部署根資料夾取決於 **type** 屬性所指定的部署類型。 如果未指定 **目標** 屬性，則會將檔案部署到 [ **來源** ] 屬性中指定之名稱的資料夾。<br /><br /> 如需詳細資訊，請參閱 [開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 sharepoint 專案專案的 **部署路徑** 和 **部署根** 屬性的說明。|
 |**型別**|必要的 **xs： string** 屬性。<br /><br /> 檔案的部署類型。 如需可能值的詳細資訊，請參閱 [開發 sharepoint 方案](../sharepoint/developing-sharepoint-solutions.md)中 SharePoint 專案專案的 [**部署類型**] 屬性的描述。|
 
@@ -51,7 +51,7 @@ ms.locfileid: "95440801"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[檔案](../sharepoint/files-element.md)|指定當 SharePoint 專案專案部署至 SharePoint 時要包含的檔案。|
 

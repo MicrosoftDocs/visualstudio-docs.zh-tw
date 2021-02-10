@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2513eb99940d45d11bc2360581cbba455e864da2
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: f8a85c87b14057372254f755e4c414aa089e5a55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305020"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955238"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>SharePoint 工具擴充功能的程式設計概念和功能
   Visual Studio 中的 SharePoint 工具有幾個重要的程式設計概念和功能。 這些概念和功能在大部分的 SharePoint 工具擴充功能中扮演著重要的角色。

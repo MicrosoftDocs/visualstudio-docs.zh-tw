@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: e1b508f1-6521-492f-b110-ab957744a037
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3a574766b884bf1aeed253754534fee66967e9ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6492f0899592074e003f49afb06fd9bf7303ddc7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954978"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 判斷指定的方法是否具有行資訊。
@@ -46,7 +46,7 @@ int FunctionHasLineInfo(
 如果成功，則傳回， `S_OK` 否則傳回 `S_FALSE` 。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面的**CDebugSymbolProvider**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面的 **CDebugSymbolProvider** 物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::FunctionHasLineInfo(

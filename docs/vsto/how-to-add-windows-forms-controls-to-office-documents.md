@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a8f073a72db1a18574dff6ab060b1ea069475fbb
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 8d2f8d54e791acd7d027350caa3ce88c8eea9959
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954146"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>如何：將 Windows Forms 控制項新增至 Office 檔
   您可以在文件層級專案的設計階段中，將 Windows Form 控制項加入 Microsoft Office Excel 和 Microsoft Office Word 文件。 在執行時間，您可以在檔層級自訂和 VSTO 增益集中加入控制項。例如，您可以將控制項新增 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> 至工作表，讓使用者可以從選項清單中選取。
@@ -100,7 +100,7 @@ ms.locfileid: "96846775"
     > 在 Excel 中選取控制項時，您會在 [資料編輯列]  看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。
 
 ## <a name="add-controls-at-run-time-in-document-level-projects"></a><a name="runtimedoclevel"></a> 在檔層級專案中的執行時間加入控制項
- 您可以透過程式設計的方式，在執行階段將 Windows Form 控制項加入文件。 在 Word 中，請使用 `ThisDocument` 類別之 <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> 屬性的方法。 在 Excel 中，使用 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> n 類別的屬性方法 `Sheet` *n* 。 每個方法都有數個多載，可讓您以不同方式指定控制項的位置。
+ 您可以透過程式設計的方式，在執行階段將 Windows Form 控制項加入文件。 在 Word 中，請使用 `ThisDocument` 類別之 <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> 屬性的方法。 在 Excel 中，使用 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> n 類別的屬性方法 `Sheet`  。 每個方法都有數個多載，可讓您以不同方式指定控制項的位置。
 
  當您在執行階段將 Windows Form 控制項加入文件時，若關閉文件，文件不會保存該控制項。 您可以在下一次開啟文件時重新建立該控制項。 如需詳細資訊，請參閱 [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
@@ -108,7 +108,7 @@ ms.locfileid: "96846775"
 
 1. 使用名稱為 Add (的方法 \<*control class*> ，其中 *control 類別* 是您想要加入之 Windows Forms 控制項的類別名稱，例如 <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>) 。
 
-     下列程式碼範例示範如何 <xref:Microsoft.Office.Tools.Excel.Controls.Button> **C5** `Sheet1` 在 Excel 的檔層級專案中，將加入儲存格 C5 的。
+     下列程式碼範例示範如何 <xref:Microsoft.Office.Tools.Excel.Controls.Button>  `Sheet1` 在 Excel 的檔層級專案中，將加入儲存格 C5 的。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#4)]

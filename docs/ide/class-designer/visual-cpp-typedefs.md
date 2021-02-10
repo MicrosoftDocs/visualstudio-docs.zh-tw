@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f95b948d4ffc70d225dd4a8b2bb2debe111c967e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b50b4be5552b3c6a0ba965b97aa2e1668a7369d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954458"
 ---
 # <a name="c-typedefs-in-class-designer"></a>類別設計工具中的 c + + typedef
 

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5e7b85fb8d5b0e3256e172ff78bc3a5f660b69b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e2b5c5f96c2c40105f54ba8d775c7ad1cc1c46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955017"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 使用指定的名稱來抓取型別。
@@ -59,7 +59,7 @@ int GetTypesByName(
 若為泛型型別，要查詢 ' List \<int> ' 或 ' list ' 的名稱將 \<int,int> 會是「list」。 如果有相同名稱的類型出現在多個模組中， `ppEnum` 參數將會包含所有的複本。 您必須使用 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) ，並根據參數來區分 `guidModule` 。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面的**CDebugSymbolProvider**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面的 **CDebugSymbolProvider** 物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypesByName(

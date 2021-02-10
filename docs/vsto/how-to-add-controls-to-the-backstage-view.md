@@ -19,15 +19,15 @@ helpviewer_keywords:
 - Microsoft Office Menu
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9f0fa33318e2407b01178971c6965b8ea035dd42
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 830ecea036ee972321d98994ab36924e0c61a09b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954263"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>如何：將控制項加入至 Backstage 檢視
   您可以使用功能區設計工具，將控制項加入至按一下 [檔案] 索引標籤時 **開啟的功能表** 。當您執行應用程式時，您新增 **至 [檔案** ] 索引標籤的控制項會出現一個名為 [ **增益集**] 的群組。
@@ -50,7 +50,7 @@ ms.locfileid: "96848166"
 
     - 按鈕
 
-    - CheckBox
+    - 核取方塊
 
     - 主機庫
 

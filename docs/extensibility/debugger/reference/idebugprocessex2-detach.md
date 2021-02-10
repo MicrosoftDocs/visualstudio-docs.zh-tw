@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7379436ae0da57d7f8c47ce8484c810a53a0a453
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62ca404442d6bf6080972f03c3e2fd0da2621e20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723353"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954887"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 這個方法會通知進程，會話不再將進程進行偵錯工具。
@@ -28,7 +28,7 @@ ms.locfileid: "80723353"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT Detach( 
+HRESULT Detach( 
    IDebugSession2* pSession
 );
 ```

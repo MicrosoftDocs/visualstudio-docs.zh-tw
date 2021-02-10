@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1929daaa82dbfec6f58513bf94eefe01f9520601
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 063b66af781ee412e7f7d2ab8014e009bc93bad9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954107"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>如何：將 managed 程式碼擴充附加至檔
   您可以將自訂群組件附加至現有的 Microsoft Office Word 檔或 Microsoft Office Excel 活頁簿。 檔或活頁簿可以使用 Visual Studio 中的 Microsoft Office 專案和開發工具所支援的任何檔案格式。 如需詳細資訊，請參閱 [檔層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)。

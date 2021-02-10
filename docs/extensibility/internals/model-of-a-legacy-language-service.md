@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 26b27bd6bef40a38e32e5b0d6d26e3d147659286
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954634"
 ---
 # <a name="model-of-a-legacy-language-service"></a>舊版語言服務模型
 語言服務會定義特定語言的元素和功能，並用來為編輯器提供該語言特定的資訊。 例如，編輯器必須知道語言的元素和關鍵字，才能支援語法色彩。
@@ -41,7 +41,7 @@ ms.locfileid: "97876736"
 
   下表提供模型中物件的總覽。
 
-| 元件 | Object | 函數 |
+| 元件 | Object | 函式 |
 |------------------| - | - |
 | 文字緩衝區 | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Unicode 讀取/寫入文字資料流程。 文字可能會使用其他編碼。 |
 | 程式碼視窗 | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | 包含一或多個文字視圖的文件視窗。 當 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 位於多重文件介面 (mdi) 模式時，程式碼視窗會是 mdi 子系。 |
@@ -49,5 +49,5 @@ ms.locfileid: "97876736"
 | 文字管理員 | 由服務管理 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> ，您可從中取得 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> 指標 | 此元件會維護先前所述所有元件所共用的通用資訊。 |
 | 語言服務 | 執行相依;實現 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | 物件，為編輯器提供語言特定的資訊，例如語法醒目提示、語句完成和大括弧比對。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [自訂編輯器中的文件資料和文件檢視](../../extensibility/document-data-and-document-view-in-custom-editors.md)

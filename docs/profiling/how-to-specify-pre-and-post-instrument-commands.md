@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 6a8d5340-1d1b-4d81-88dd-8e1f435eb828
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 172ca7a478dcc34443d2edf15186d9c040a04837
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 7f5bc12a8b0ffb7ef0fa1a78b771ced829f4d73c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955810"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>如何：指定檢測前置和檢測後續命令
 
@@ -48,7 +48,7 @@ ms.locfileid: "98721888"
     > [!NOTE]
     > 您可以按一下 [**命令列**] 方塊旁邊的省略號按鈕 **( ... )** ，以流覽並選取適當的 .exe、.cmd 或 .bat 檔案。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
      若要停止執行命令但不將它移除，請選取 [從檢測中排除] 核取方塊。 若要修改編譯器或連結器設定，請使用專案屬性頁。
 
@@ -67,7 +67,7 @@ ms.locfileid: "98721888"
     > [!NOTE]
     > 您可以按一下 [**命令列**] 方塊旁邊的省略號按鈕 **( ... )** ，以流覽並選取適當的 .exe、.cmd 或 .bat 檔案。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
      若要停止執行命令但不將它移除，請選取 [從檢測中排除] 核取方塊。 若要修改編譯器或連結器設定，請使用專案屬性頁。
 

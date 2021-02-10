@@ -12,15 +12,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5dd72db2678f448158f268b790d39d4f6e44a737
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7c790117c907144b9edc141463b8f7751a544a10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848153"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954237"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>如何：將 ListObject 控制項加入至工作表
   您可以在文件層級專案中，於設計階段和執行階段將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入 Microsoft Office Excel 工作表。

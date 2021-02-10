@@ -11,25 +11,25 @@ helpviewer_keywords:
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6529f4f82f7a8a6862ae85adbf170d2fb6f8706
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: ce569dabca9e5d867310b8d510975331f5a9f046
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954432"
 ---
 # <a name="code-snippet-functions"></a>程式碼片段函式
 
 有三個函式可用來與 C# 程式碼片段搭配使用。 函式指定於程式碼片段的 [Function](../ide/code-snippets-schema-reference.md#function-element) 項目中。 如需建立程式碼片段的資訊，請參閱[程式碼片段](../ide/code-snippets.md)。
 
-## <a name="functions"></a>函數
+## <a name="functions"></a>函式
 
 下表描述可用於與程式碼片段中的 `Function` 項目搭配使用的函式。
 
-|函式|說明|語言|
+|函式|描述|語言|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|針對 `EnumerationLiteral` 參數所指定列舉的成員，產生 switch 陳述式和一組 case 陳述式。 `EnumerationLiteral` 參數必須是列舉常值或列舉類型的參考。|C#|
 |`ClassName()`|傳回包含已插入程式碼片段的類別名稱。|C#|

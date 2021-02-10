@@ -12,15 +12,15 @@ helpviewer_keywords:
 - launch.vs.json file [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26f529fe8d9d8731375c4aa0783dde0dadb28a1d
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 1088cae031dc3498d2c5cdcd33db8d42f721b7d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954419"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>針對「開啟資料夾」自訂建置及對工作進行偵錯
 

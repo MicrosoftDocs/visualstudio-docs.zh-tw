@@ -12,15 +12,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddbc74c00c1e1f74ce078586d624e2da4dbd8163
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954016"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>如何：設定包含清單安全性
   如果您有系統管理員許可權，您可以設定 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 信任提示，以控制終端使用者是否可透過將信任決策儲存至內含清單，來控制使用者是否可以選擇安裝 Office 方案。 如需包含清單的詳細資訊，請參閱 [使用包含清單來信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。
@@ -57,10 +57,10 @@ ms.locfileid: "96846723"
     |字串值子機碼|值|
     |-------------------------|-----------|
     |**網際網路**|**AuthenticodeRequired**|
-    |**UntrustedSites**|**停用**|
-    |**MyComputer**|**啟用**|
-    |**LocalIntranet**|**啟用**|
-    |**TrustedSites**|**啟用**|
+    |**UntrustedSites**|**Disabled**|
+    |**MyComputer**|**Enabled**|
+    |**LocalIntranet**|**Enabled**|
+    |**TrustedSites**|**Enabled**|
 
      根據預設， **網際網路** 的值為 **AuthenticodeRequired** ，而 **UntrustedSites** 的值為 **Disabled**。
 
@@ -115,7 +115,7 @@ ms.locfileid: "96846723"
 
     |字串值子機碼|值|
     |-------------------------|-----------|
-    |**UntrustedSites**|**停用**|
+    |**UntrustedSites**|**Disabled**|
     |**網際網路**|**AuthenticodeRequired**|
     |**MyComputer**|**AuthenticodeRequired**|
     |**LocalIntranet**|**AuthenticodeRequired**|
@@ -172,11 +172,11 @@ ms.locfileid: "96846723"
 
     |字串值子機碼|值|
     |-------------------------|-----------|
-    |**UntrustedSites**|**停用**|
-    |**網際網路**|**停用**|
-    |**MyComputer**|**停用**|
-    |**LocalIntranet**|**停用**|
-    |**TrustedSites**|**停用**|
+    |**UntrustedSites**|**Disabled**|
+    |**網際網路**|**Disabled**|
+    |**MyComputer**|**Disabled**|
+    |**LocalIntranet**|**Disabled**|
+    |**TrustedSites**|**Disabled**|
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>以程式設計方式停用包含清單
 

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 44f8e96e-9c59-4ffc-9a08-9c908a0e4de7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84db1b672a9460ef3809162a2a1433f269796046
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa655c03665c9eed54feabc5af679765b09ac0a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955514"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 此介面表示支援符號和 JustMyCode 狀態之替代位置的模組。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugModule3 : IDebugModule2
@@ -47,7 +47,7 @@ IDebugModule3 : IDebugModule2
 ## <a name="remarks"></a>備註
  Visual Studio 是此介面的一般取用者。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

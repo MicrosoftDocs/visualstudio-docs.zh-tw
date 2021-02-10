@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f37b301f-3edc-4e56-8084-feec2dc5a9b1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 15dc4526ce101e21c00fe083b85f81db92bcd609
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: a4a3265c3b31653d94a686fa8fda12f7699596e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955264"
 ---
 # <a name="empty-timeline-segment"></a>空白時間表區段
 在並行視覺化檢視中，時間表區段空白 (具有白色背景) 的原因取決於通道的類型。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c9f8eea2-c964-485d-9ad0-55a4bf425ae7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: efe02bbd2e31792e1feb306ba331fa3bc4f736f9
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: f5a8d34c5a0e39b52949c1b60a6e73d18fff3d26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954302"
 ---
 # <a name="c-library-reference"></a>C++ 程式庫參考
 

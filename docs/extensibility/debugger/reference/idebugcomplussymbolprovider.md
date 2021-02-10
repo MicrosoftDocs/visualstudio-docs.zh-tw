@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 482ea1b2fb2eb7ddad46bd99694e4599e9fd9bbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0e168066cc01a9e557bc0b4f301ae6218664552
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733471"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955030"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 表示具有 managed 程式碼專屬方法的 COM + 符號提供者。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugComPlusSymbolProvider : IDebugSymbolProvider
@@ -57,7 +57,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 |[UnloadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-unloadsymbols.md)|從記憶體卸載指定模組的偵錯工具符號。|
 |[UpdateSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols.md)|使用指定的資料流程，更新記憶體中的 debug 符號。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Sh. h
 
  命名空間： VisualStudio

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaf7f40224e2f197627bb995dc6cccdf297b46e5
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 3ea9300c96cf63c932d88335c0ca0f9fd4542f72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480469"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954770"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>字元控制項 (原始檔控制 VSPackage) 
 可供原始檔控制 Vspackage 使用的深層整合有一部分，就是能夠顯示自己的字元來指出原始檔控制下的專案狀態。

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d05809b1e370fee2505470be1c06366f76bf9ca
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9612e1b8e808437122df88ad0bbef3a4cce74c0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955108"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity 活動設計工具
 
@@ -34,7 +34,7 @@ ms.locfileid: "96996223"
 ### <a name="the-compensableactivity-properties"></a>CompensableActivity 屬性
  下表顯示 <xref:System.Activities.Statements.CompensableActivity> 屬性，並且描述屬性在設計工具中的使用方式。 <xref:System.Activities.Activity.DisplayName%2A>和 <xref:System.Activities.Activity%601.Result%2A> 屬性可以在屬性方格中編輯，但其他屬性必須在工作流程設計工具介面上編輯。
 
-|屬性名稱|必要|使用量|
+|屬性名稱|必要|使用方式|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|否|<xref:System.Activities.Statements.CompensableActivity> 活動可選用的易記名稱。 預設為 CompensableActivity。|
 |<xref:System.Activities.Activity%601.Result%2A>|否|指定 <xref:System.Activities.Statements.CompensableActivity> 的傳回值。 這個屬性必須在屬性方格中編輯。|

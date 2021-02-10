@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7768de1b57142e201c4108f5ef0c0768c57a8639
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: b8891d5e68623312049e60730b0239bf7c06e83c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954471"
 ---
 # <a name="project-configuration-for-building"></a>建置的專案組態
 給定解決方案的解決方案設定清單是由 [方案設定] 對話方塊所管理。
@@ -57,7 +57,7 @@ ms.locfileid: "97877997"
 
  此外，您可以在 [專案相依性] 視窗中提供方格。 如需詳細資訊，請參閱 [屬性顯示方格](../../extensibility/internals/properties-display-grid.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 - [管理部署的專案組態](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 - [輸出的專案組態](../../extensibility/internals/project-configuration-for-output.md)

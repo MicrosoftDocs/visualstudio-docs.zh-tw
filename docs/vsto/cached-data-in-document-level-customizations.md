@@ -17,15 +17,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f1c383b5367b2966b9fd082b2d47570264b4d191
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955771"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>檔層級自訂中的快取資料
   檔層級自訂的主要目標是將資料與 Office 檔中的 view 分開。 資料指的是儲存在檔中的資訊，包括數位和文字。 View 指的是使用者介面以及 Microsoft Office Word 和 Microsoft Office Excel 的物件模型。

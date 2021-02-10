@@ -7,21 +7,21 @@ ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6bb10f948e7aa9d97491949222c3cb0d15ba66
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: f8ec2756353ac56b3b5d44e2a50c4d4f5b1c7ebf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955381"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用效能規則
 .Net Framework 使用類別中的效能規則會識別可最佳化的特定方法，也會識別較一般的使用模式 (例如記憶體回收和鎖定爭用)，以用於效能問題調查。
 
-|規則|描述|
+|規則|Description|
 |-|-|
 |[DA0001：使用 StringBuilder 進行串連](../profiling/da0001-use-stringbuilder-for-concatenations.md)|呼叫 <xref:System.String.Concat(System.String,System.String)?displayProperty=fullName> 佔分析資料的絕大部分。 請考慮使用 <xref:System.Text.StringBuilder> 類別，從多個區段建構字串。|
 |[DA0005：常見的 GC2 集合](../profiling/da0005-frequent-gc2-collections.md)|數量相對高的 .NET 記憶體物件正在層代 2 記憶體回收中收回。 如果有太多短期物件存留在層代 1 回收中，記憶體管理的成本很容易變得過高。|

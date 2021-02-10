@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e2575e034dbabe5e380857edd95e4bc46f56d2
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 554562a567975f6663f05c5de77cd1dd572e16c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721004"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955420"
 ---
 # <a name="configure-performance-sessions"></a>設定效能工作階段
 使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具，您可以收集大量應用程式類型的各種效能資料。 本節說明如何使用效能的 [效能] 和 [目標二進位檔] 的 [效能] Wizard 和屬性，將分析工具設定為收集您感興趣的資料。 分析工具的組態屬性也可以用來控制要在分析執行中收集的資料量。 如需詳細資訊，請參閱[控制資料收集](../profiling/controlling-data-collection.md)。

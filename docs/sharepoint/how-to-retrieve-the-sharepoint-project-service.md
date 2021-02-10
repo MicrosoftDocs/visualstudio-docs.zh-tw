@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint project service
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 553b4ae3b7ecfa9fa49065824020ebdcecf77215
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 6ae4000bb0ef147a8f601ce80483b9f2ecbe2de8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955225"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何：取得 SharePoint 專案服務
   您可以使用下列類型的解決方案來存取 SharePoint 專案服務：

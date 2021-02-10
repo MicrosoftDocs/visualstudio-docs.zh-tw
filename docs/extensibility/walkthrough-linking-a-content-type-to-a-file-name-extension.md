@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: fb65f581994c6ba90cbb49166612d81bc00de803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877906"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955498"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>逐步解說：將內容類型連結至副檔名
 您可以定義自己的內容類型，並使用編輯器 Managed Extensibility Framework (MEF) 擴充功能來連結副檔名。 在某些情況下，副檔名已由語言服務定義。 但是，若要搭配 MEF 使用它，您仍然必須將它連結至內容類型。
@@ -103,5 +103,5 @@ ms.locfileid: "97877906"
     [ContentType("hid")]
     ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

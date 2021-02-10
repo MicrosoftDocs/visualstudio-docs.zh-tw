@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4699063d753539c72c373266b3fce9a0fdf8f00
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: dac6c6898a8a8766d073cb5cd2f3bd330e7e2658
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877867"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954570"
 ---
 # <a name="options-and-options-pages"></a>選項和選項頁
 按一下 [**工具**] 功能表上的 [**選項**]，即可開啟 [**選項**] 對話方塊。 此對話方塊中的選項統稱為選項頁面。 流覽窗格中的樹狀目錄控制項包含選項分類，而每個類別都有選項頁面。 當您選取頁面時，其選項會顯示在右窗格中。 這些頁面可讓您變更決定 VSPackage 狀態的選項值。

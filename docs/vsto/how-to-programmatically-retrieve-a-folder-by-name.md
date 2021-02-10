@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], retrieving by name
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c4e615897fedcbfa41ad7958e93354718d9ccfbc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c05f8bc0174807a5336a9d9f79ac3dc81e87476e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953873"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>如何：以程式設計方式依名稱取出資料夾
   這個範例會取得名為自訂資料夾的參考，然後顯示資料夾的內容。

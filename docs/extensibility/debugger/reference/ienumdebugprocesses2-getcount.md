@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5dc3e36c-46e5-4556-bf41-1870aa67d2a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae0d6541bd2dc33b751087dc2ca8ee8dfeabba8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e23c90314efd0bf2d18bf5dced6096752d773b13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954731"
 ---
 # <a name="ienumdebugprocesses2getcount"></a>IEnumDebugProcesses2::GetCount
 傳回列舉中的元素數目。

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - built-in tabs [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7ac002b4c9ebacaf9cb522b583d6c4c9580b7bf2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 94cf4d256cafa03ee4604138f7233ff9fd3cf6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846632"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953990"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>如何：自訂內建索引標籤
   您可以將群組和控制項加入至內建索引標籤。內建索引標籤是已在 Microsoft Office 應用程式功能區上的索引標籤。 例如，[ **資料** ] 索引標籤是 Excel 中的內建索引標籤。 當您建立自訂群組時，它會出現在索引標籤的最末端，但是您可以在索引標籤上任意移動群組。

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 89b27c57-5295-428b-8229-a402500d8cd3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b9f1f3df8b96e9f9b25bf630206ce37bcd27635
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99d16ebd2802bb31b7568f7f8b862543b4083a67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733414"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954991"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 判斷指定的 debug 位址是否為序列點。
@@ -46,7 +46,7 @@ int IsAddressSequencePoint(
 如果 debug 位址是序列點，則會傳回， `S_OK` 否則會傳回 `S_FALSE` 。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面的**CDebugSymbolProvider**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面的 **CDebugSymbolProvider** 物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsAddressSequencePoint(

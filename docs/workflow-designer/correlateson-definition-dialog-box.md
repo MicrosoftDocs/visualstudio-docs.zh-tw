@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be38ba9521762c38c629c2817a7c8e8ca5a709a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: b4f371da2570d5573ce84c7e29393889202ae940
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955537"
 ---
 # <a name="correlateson-definition-dialog-box"></a>CorrelatesOn 定義對話方塊
 
@@ -36,7 +36,7 @@ ms.locfileid: "94438122"
 
 [ **Receive** ] 活動設計工具可以從 [ **工具箱** ] 拖曳出來，放到工作流程設計工具介面上，通常放置活動的地方。 卸載活動設計工具會建立 <xref:System.ServiceModel.Activities.Receive> 活動，預設值是 <xref:System.Activities.Activity.DisplayName%2A> Receive。 若要開啟 [ **CorrelatesOn 定義** ] 對話方塊，請選取 [ **Receive** ] 活動設計工具，然後在屬性方格中，選取 [ **CorrelatesOn** ] 屬性的集合文字旁的省略號按鈕。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:System.ServiceModel.Activities.Receive>
 - [加入相互關聯初始設定式對話方塊](../workflow-designer/add-correlationinitializers-dialog-box.md)

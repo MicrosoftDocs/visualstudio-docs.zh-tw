@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c61d407247910131deee9585d19a921f8cf76cca
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c9368ca0bf2c10afb86f61683bf58b631c4ba5f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954380"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 取樣的初級開發人員指南
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [取樣] 資料。
@@ -125,7 +125,7 @@ ms.locfileid: "98205355"
 
      新視窗隨即開啟並顯示比較結果。 如需如何使用比較視圖的詳細資訊，請參閱 [如何：比較效能資料檔案](../profiling/how-to-compare-performance-data-files.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [效能總管](../profiling/performance-explorer.md)
 - [開始使用](../profiling/getting-started-with-performance-tools.md)
 - [概觀](../profiling/overviews-performance-tools.md)

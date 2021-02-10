@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML, modeling architecture
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c284532a1e7f6407ebea987873665edb4e940019
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e78e88884801b7aa7fcbcfe1147afd6fad653fd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954367"
 ---
 # <a name="model-your-app39s-architecture"></a>將您的應用程式模型&#39;s 架構
 若要協助確保您的軟體系統或應用程式符合使用者的需求，您可以在 Visual Studio 中建立模型，做為軟體系統或應用程式之整體結構和行為的描述之一部分。 您也可以使用模型來描述整個設計所使用的模式。 這些模型可協助您了解現有架構、討論變更，並清楚地傳達您的意圖。
@@ -104,7 +104,7 @@ ms.locfileid: "97361023"
 
 - 開發人員能夠採用之變化的描述。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [視覺化程式碼](../modeling/visualize-code.md)
 - [模型使用者需求](../modeling/model-user-requirements.md)

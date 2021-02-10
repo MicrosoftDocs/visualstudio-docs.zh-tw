@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca457c32751fb1f9179a9c09b624c444efab627d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8a2f00cc4e968551983a8b943d256b49e33d7d6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954627"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>在舊版語言服務中製作大綱
 大綱可將複雜的程式折迭到總覽或大綱中。 例如，在 c # 中，所有方法都可以折迭成單一行，只顯示方法簽章。 此外，您可以將結構和類別折迭，只顯示結構和類別的名稱。 在單一方法中，您可以藉由只顯示第一行的語句（例如、和），折迭複雜邏輯以顯示整體流程 `foreach` `if` `while` 。
@@ -119,6 +119,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)
 - [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)
