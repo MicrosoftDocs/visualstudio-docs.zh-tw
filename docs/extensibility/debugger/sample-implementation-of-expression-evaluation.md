@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba5baf52f18f638730ecc5f3b7c016889503cbbb
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ec7ddd5270fdac3513c3f63673e5a5f3d05464b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960945"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>運算式評估的範例執行
 > [!IMPORTANT]

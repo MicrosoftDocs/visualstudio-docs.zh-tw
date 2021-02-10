@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1074e8dea5dfdb05571d3b1aa04e5c411530bb1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847139"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961101"
 ---
 # <a name="register-an-expression-evaluator"></a>註冊運算式評估工具
 > [!IMPORTANT]
@@ -112,7 +112,7 @@ namespace EEMC
 
 2. 呼叫 helper 函式 `SetEEMetric` ，以 Visual Studio 下表所示的 EE 計量來進行註冊。 以下列方式指定的函式 `SetEEMetric` 和度量是 *dbgmetric .lib* 程式庫的一部分。 如需詳細資料，請參閱 [SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 。
 
-    |計量|描述|
+    |Metric|描述|
     |------------|-----------------|
     |`metricCLSID`|`CLSID` EE class factory|
     |`metricName`|EE 的名稱，做為可顯示的字串|

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5193fd07c1a891f052814446815bfbc836c6a9a7
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ce3bdaafef2c8d526892571e8f53d9060148df10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960984"
 ---
 # <a name="sample-implementation-of-changing-values"></a>變更值的範例執行
 > [!IMPORTANT]

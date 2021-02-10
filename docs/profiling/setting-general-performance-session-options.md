@@ -7,16 +7,16 @@ f1_keywords:
 - vs.performance.property.general
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2691d9d8868343291f3be4d9f5b3002e24605b85
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 78082e8937f497af915c23e6db75b4b9836591fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960178"
 ---
 # <a name="set-general-performance-session-options"></a>設定一般效能工作階段選項
 

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d86997d11e124fd5a47981314cf383f5cd8aff7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5511624fb69015351d8cc37d6b27ad142a5956d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961179"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 這個介面會擴充 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 來處理攔截的例外狀況。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugStackFrame3 : IDebugStackFrame2
@@ -54,7 +54,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 
  偵錯工具引擎表示它支援攔截例外狀況，方法是在執行時間使用函數將 "metricExceptions" 設定為1的值 `SetMetric` 。 如需詳細資訊，請參閱 [SDK helper 以進行調試](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

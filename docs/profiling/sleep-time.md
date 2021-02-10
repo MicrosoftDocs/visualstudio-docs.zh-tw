@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3ddb96f9-9bda-4a68-ad4d-ef488a0a68dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e66e62c2f7d78003581b12121844090c9754c2cc
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a433d11c2684a4a39660759f33d49bd719c2b2ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960165"
 ---
 # <a name="sleep-time"></a>睡眠時間
 時間軸中的這些區段，會和分類為睡眠時間的封鎖時間相關聯。 睡眠分類表示執行緒自動放棄其邏輯核心，而且不執行任何工作。 在這段期間內，會在並行視覺化檢視當作睡眠分類計數的 API 中封鎖執行緒。 `Sleep()` 和 `SwitchToThread()` 這類 API 屬於這個群組。

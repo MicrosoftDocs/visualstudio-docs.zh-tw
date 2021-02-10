@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aea1032f709d2f8cebf105bce14dc081fe3b74da
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 98c1fa8a5d95b9819c6b988282fe9fcdb6259bd5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960054"
 ---
 # <a name="start"></a>開始
 **Start** 選項是一個 *VSPerfCmd.exe* 選項，可將分析工具初始化為指定的程式碼剖析方法。

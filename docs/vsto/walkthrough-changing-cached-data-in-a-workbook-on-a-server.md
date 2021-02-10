@@ -16,15 +16,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01ae4894d76e22f619bf498b4ac6a53f1232b5d5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 57c33dc89bdec39b62dbec6a74a152ba816dda88
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961348"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>逐步解說：變更伺服器上活頁簿中的快取資料
   本逐步解說將示範如何使用類別來修改在 Microsoft Office Excel 活頁簿中快取的資料集，而不需啟動 Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 。
@@ -82,7 +82,7 @@ ms.locfileid: "97527269"
 
 7. 在 [ **新增專案** ] 對話方塊中，確定未選取 [ **建立方案的目錄** ] 核取方塊。
 
-8. 按一下 [確定]。
+8. 按一下 [確定]  。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 **AdventureWorksDataSet** 專案加入 **方案總管** ，並開啟 **Class1.cs** 或 **Class1** 程式碼檔案。
 
@@ -140,7 +140,7 @@ ms.locfileid: "97527269"
 
 5. 在 [ **名稱** ] 方塊中，輸入 **AdventureWorksReport**。 請勿修改位置。
 
-6. 按一下 [確定]。
+6. 按一下 [確定]  。
 
      隨即開啟 [Visual Studio Tools for Office 專案精靈]  。
 
@@ -239,7 +239,7 @@ ms.locfileid: "97527269"
 
 4. 在 [ **名稱** ] 方塊中，輸入 **>datawriter**。 請勿修改位置。
 
-5. 按一下 [確定]。
+5. 按一下 [確定]  。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 **>datawriter** 專案加入 **方案總管** ，並開啟 **Program.cs** 或 **Module1** 程式碼檔案。
 
@@ -252,7 +252,7 @@ ms.locfileid: "97527269"
 
 2. 在 [ **.net** ] 索引標籤上，選取 [ **VisualStudio**]。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
 4. 在 **方案總管** 中，以滑鼠右鍵按一下 **>datawriter** 專案，然後按一下 [ **加入參考**]。
 

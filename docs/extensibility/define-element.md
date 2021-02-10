@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a427371afe55b6ea4ee20f658e683b9dcdb8fbe2
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2a2686abd8e8c703d8fb85009b3ba56070f166f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968446"
 ---
 # <a name="define-element"></a>Define 元素
 定義符號名稱和值組。 條件式屬性可以評估此符號。 如需詳細資訊，請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。 另請參閱 [符號元素](../extensibility/symbols-element.md)。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <Define name="Mode" value="Standard" />
@@ -37,7 +37,7 @@ ms.locfileid: "96996236"
 |屬性|描述|
 |---------------|-----------------|
 |NAME|必要。 符號的名稱：<br /><br /> name = "Mode"|
-|值|必要。 符號的值：<br /><br /> 值 = "Standard"|
+|value|必要。 符號的值：<br /><br /> 值 = "Standard"|
 |條件|選擇性。 如需詳細資訊，請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素

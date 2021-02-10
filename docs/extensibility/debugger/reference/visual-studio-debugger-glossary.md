@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01a6ad0e23af04001e9b0990be57d78e84c7241
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0cc5a8b75fd089318434cadea185f8070616cd8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961192"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Visual Studio 偵錯工具字彙
 以下是在調試 SDK 中使用的術語 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。

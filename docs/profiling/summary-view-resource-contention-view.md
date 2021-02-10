@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 40d922d8728e53d0098ad67c8b8140f9045c32b0
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3e6f0b629aa14cf465dcaa8abec48e3eea110c4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959996"
 ---
 # <a name="summary-view---resource-contention-view"></a>摘要檢視 - 資源爭用檢視
 [摘要] 檢視顯示因在等候資源存取權而暫停應用程式中執行緒或處理序的事件相關資訊。

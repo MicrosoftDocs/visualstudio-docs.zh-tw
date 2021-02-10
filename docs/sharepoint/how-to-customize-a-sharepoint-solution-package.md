@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7055be0b089a0b7c582ef0b66d84951d01685870
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 149e99a3ba86f1eec22d90618abfd8972ed68e97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903633"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959892"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>如何：自訂 SharePoint 方案套件
   您可以使用封裝設計工具來建立和自訂 (*.wsp*) 的封裝。 例如，您可以加入 SharePoint 專案專案和功能，指定是否在部署方案時重設 Web 服務器，並設定部署伺服器類型。

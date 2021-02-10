@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 76c2fc23a2b76b48152a4d3d44d687f165abf106
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 3deac1637bb6b4ed054a8a9afc7ab78bf26d0183
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993883"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968407"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自訂起始頁
 
