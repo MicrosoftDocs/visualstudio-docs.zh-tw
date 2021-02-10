@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7b6c0e786f13ff526a1b71861c040cb165bc9e4
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 80c86a8ab40b74d1b8f2838e3bf4359af41b0fc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329818"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963428"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>判斷是否要執行原始檔控制 VSPackage
 

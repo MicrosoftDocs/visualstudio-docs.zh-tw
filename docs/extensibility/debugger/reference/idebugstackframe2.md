@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37acb9f2984c36130de494108ef4b76a59cc74e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7241c697baf7810d961f4cc3aba71d469bad4582
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719505"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963558"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 這個介面代表特定執行緒中呼叫堆疊內的單一堆疊框架。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugStackFrame2 : IUnknown
@@ -53,7 +53,7 @@ IDebugStackFrame2 : IUnknown
 ## <a name="remarks"></a>備註
  只有在正在進行偵錯工具的中斷點停止時，才會取得這個介面 (可能是使用者設定中斷點或例外狀況) 所造成。 您可以從這個介面取得運算式內容來評估運算式、可以傳回暫存器清單，或者可以取得和檢查呼叫堆疊。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

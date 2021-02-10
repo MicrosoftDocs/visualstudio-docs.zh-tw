@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7debd5323e753c6c5fd1476eac3c062fb63393b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8e3ef123fb88f1519d398952ed2d27de0fb0b91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963545"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 當偵錯工具想要攔截目前的例外狀況時，在目前的堆疊框架上呼叫它。

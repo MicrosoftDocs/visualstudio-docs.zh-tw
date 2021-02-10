@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f51f8e0c5ca268c1171804f663e5d01bd7c2530
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 0c4951e1f3fbaf63bf0638965a7dee2db7be8830
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965248"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>如何：在舊版語言服務中提供隱藏文字支援
 除了外框區域外，您還可以建立隱藏的文字區域。 隱藏的文字區域可以是由用戶端控制或編輯編輯器，而且可用來完全隱藏文字的區域。 編輯器會將隱藏的區域顯示為水平線條。 其中一個範例就是在 HTML 編輯器中只會看到 [ **腳本** ]。

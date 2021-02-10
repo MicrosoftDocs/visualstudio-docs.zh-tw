@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 25f327b8-0303-4268-88d1-74df630436aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ef4162469651e4b69502d3a9639d1e86c62e0b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c90e63e8ea7b00ff7d342ef6b1a0e624779e13d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965599"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
 允許查詢目的電腦的相關資訊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugWindowsComputerPort2 : IUnknown
@@ -36,7 +36,7 @@ IDebugWindowsComputerPort2 : IUnknown
 |------------|-----------------|
 |[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|抓取正在執行之偵錯工具的電腦相關資訊。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Msdbg。h
 
  命名空間： VisualStudio

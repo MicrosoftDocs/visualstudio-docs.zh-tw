@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62a1295aeb2a6afad51dee0f1015e3ab01d13fbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0ff27438ad4a7d0106c1b452f55966dda3f7e07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965560"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 從物件中抓取指定的位元組數目。

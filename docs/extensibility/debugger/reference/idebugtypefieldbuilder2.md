@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 23911c5b-2bbf-4734-9976-87a0bd6ea36c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed34284e373a7d96761aabe5a7f179367649bc0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 321004d1d0ef37597d477cff71435091a3123ccf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965638"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
 擴充 **IDebugTypeFieldBuilder** ，以便能夠建立陣列類型。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder
@@ -36,7 +36,7 @@ IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder
 |------------|-----------------|
 |[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|建立指定型別和大小的陣列。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Sh. h
 
  命名空間： VisualStudio

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 512c6ff0-97c5-409f-939f-4cc969bc4bb9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c620bc91d034e5021bab1bbc16467336cd0592e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b1f7601d2533a52fdee709413a97d203a6556cb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718414"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965716"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
 建立代表基本類型的物件。

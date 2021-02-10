@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 654910b2-c239-44c8-92fc-317680a5672f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 420e963b70846b4d7251c3f1b6c7f5b224c9fdb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0292a520b414c2ca96cb9077af938d692dd57bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965612"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 抓取正在執行之偵錯工具的電腦相關資訊。

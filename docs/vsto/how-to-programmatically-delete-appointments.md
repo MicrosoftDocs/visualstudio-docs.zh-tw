@@ -13,15 +13,15 @@ helpviewer_keywords:
 - appointments [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 56bd9876fa24610412d66e71800a24b413dac576
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0520014edc97f7517338652fa89e4c8269ba552c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963922"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>如何：以程式設計方式刪除約會
   本範例會刪除一個週期性約會執行個體。 本範例假設有個週期性約會執行個體發生於 2006 年 6 月 28 日 08:00。

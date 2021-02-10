@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4befcf3950c41beba2440e6f023983269137b1f
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 20287ba123c5736c9eb7077622623f4a739bde5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329805"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963467"
 ---
 # <a name="detect-system-requirements"></a>偵測系統需求
 除非安裝 Visual Studio，否則 VSPackage 無法運作。 當您使用 Microsoft Windows Installer 來管理 VSPackage 的安裝時，您可以設定安裝程式來偵測是否已安裝 Visual Studio。 您也可以將它設定為檢查系統是否有其他需求，例如特定版本的 Windows 或特定的 RAM 數量。
@@ -26,7 +26,7 @@ ms.locfileid: "96329805"
 ## <a name="detect-visual-studio-editions"></a>偵測 Visual Studio 版本
  若要判斷是否已安裝 Visual Studio 版本，請確認在適當的資料夾中， **安裝** 登錄機碼的值 *(REG_DWORD) 1* ，如下表所示。 請注意，有 Visual Studio 版本的階層：
 
-1. 企業
+1. Enterprise
 
 2. Professional
 

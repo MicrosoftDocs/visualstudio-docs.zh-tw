@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 13722aa9968e21d4208ad5aa99fefe4c985ffb79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963493"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>設計 XML 命令表 ( .vsct) 檔案
 XML 命令表 (*.vsct*) 檔描述 VSPackage 的命令專案的配置和外觀。 命令專案包括按鈕、下拉式方塊、功能表、工具列和命令專案群組。 本文說明 XML 命令表格檔案、它們如何影響命令專案和功能表，以及如何建立它們。
@@ -36,7 +36,7 @@ XML 命令表 (*.vsct*) 檔描述 VSPackage 的命令專案的配置和外觀。
 
 - *.Vsct* 檔案支援 **/include** 語句，如同 *.ctc* 檔一樣，它也會提供新的 **\<import>** 元素功能。 差別在於， **/include** 會帶入 *所有* 資訊，而只會提供 **\<import>** 名稱。
 
-- *.Ctc* 檔案需要您定義預處理器指示詞的標頭檔，而 *.vsct* 檔案則不需要。 相反地，請將您的指示詞放在位於 .vsct 檔案底部的元素中的符號表中 **\<Symbol>** 。 *.vsct*
+- *.Ctc* 檔案需要您定義預處理器指示詞的標頭檔，而 *.vsct* 檔案則不需要。 相反地，請將您的指示詞放在位於 .vsct 檔案底部的元素中的符號表中 **\<Symbol>** 。 
 
 - *.vsct* 檔案是一個 **\<Annotation>** 標記，可讓您內嵌任何您想要的資訊，例如便箋或甚至是圖片。
 

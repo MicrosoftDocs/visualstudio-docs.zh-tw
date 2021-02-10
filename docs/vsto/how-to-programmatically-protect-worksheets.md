@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets, protecting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6b4fe6d314763c7b0d6a8b4c1ed9e8e7198e508c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 92ded3d8320f58bdd200f3892dc40c7a915c502e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963818"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>如何：以程式設計方式保護工作表
   Microsoft Office Excel 中的保護功能有助於防止使用者和程式碼修改工作表中的物件。 根據預設，開啟保護之後所有的儲存格都會鎖定。

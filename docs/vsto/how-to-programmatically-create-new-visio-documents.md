@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], creating Visio documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59c1fe0264a294692bea04b05e5e143fa28be801
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a5aeddeecf7fb76000817f2c57b90e30465fa4ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964026"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>如何：以程式設計方式建立新的 Visio 檔
   當您建立新的 Microsoft Office Visio 繪圖文件時，您會將它加入已開啟 Visio 文件的 `Microsoft.Office.Interop.Visio.Documents` 集合。 因此，`Microsoft.Office.Interop.Visio.Documents.Add` 方法會建立新的 Visio 繪圖文件。 如需詳細資訊，請參閱 Microsoft.Office.Interop.Visio.Documents.Add [myTemplate.vst](/office/vba/api/Visio.Documents.Add) 方法的 VBA 參考文件。

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b259ffd7814b42145489ee5990cee6da891a9d10
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: ec3c427e722739f17984866b8756d606ecb57813
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995950"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965456"
 ---
 # <a name="threads"></a>執行緒
 在偵錯工具架構中， *執行緒*：

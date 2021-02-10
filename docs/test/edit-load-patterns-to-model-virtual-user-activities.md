@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: c46c353b09df792b2e204ce90a04b372e23ebd8b
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 4da2078f8ed073811f30f4655dfad7ac32410135
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964351"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>編輯負載模式以建構虛擬使用者活動模型
 

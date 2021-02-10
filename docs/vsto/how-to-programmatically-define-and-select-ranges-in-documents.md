@@ -15,15 +15,15 @@ helpviewer_keywords:
 - ranges, defining in documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d1cc0475f7b25550b85018477d7c842f012445e2
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e9c703f4d4e747934d1bab458b75a9d499f0d439
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528322"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963948"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>如何：以程式設計方式定義和選取檔中的範圍
   您也可以使用 <xref:Microsoft.Office.Interop.Word.Range> 物件定義 Microsoft Office Word 文件中的範圍。 您可以使用數種方式來選取整份檔，例如，使用 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 物件的方法 <xref:Microsoft.Office.Interop.Word.Range> ，或使用 <xref:Microsoft.Office.Tools.Word.Document> 檔層級自訂) 中 (類別的 Content 屬性，或在 <xref:Microsoft.Office.Interop.Word.Document> VSTO 增益集) 中使用類別 (。

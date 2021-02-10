@@ -12,21 +12,21 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0b77ee4edca8f9cb8de2079e01d9c9997a24aeff
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 30f0951073214a70ec2865bce89426d0758b19cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871375"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965105"
 ---
 # <a name="application-page-project-designer-c"></a>專案設計工具，應用程式頁 (C#)
 
 使用 [專案設計工具] 的 [應用程式] 頁面來指定專案的應用程式設定和屬性。
 
-若要存取 [應用程式] 頁面，請在方案總管中選擇專案節點 (而不是 [方案] 節點)。 然後選擇 **Project**  >  功能表列上的 [專案 **屬性**]。 當 [專案設計工具] 出現時，請按一下 [應用程式] 索引標籤。
+若要存取 [應用程式] 頁面，請在方案總管中選擇專案節點 (而不是 [方案] 節點)。 然後選擇  >  功能表列上的 [專案 **屬性**]。 當 [專案設計工具] 出現時，請按一下 [應用程式] 索引標籤。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

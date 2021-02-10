@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 85e3c093-6a91-4101-ab32-d8ac6eed4918
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ec2d8d321045900ac208297f7b007ce5266953f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 710b4e7623450cbba04e449cbd732486f00932d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963636"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 抓取運算式評估工具度量的值字串（指定其名稱）。

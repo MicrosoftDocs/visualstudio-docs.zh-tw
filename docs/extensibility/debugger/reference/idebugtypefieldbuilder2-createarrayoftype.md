@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 85166ac9-0bff-49a0-b2fd-ca7f7a8eae4b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3d7a229ea92b57252a9f01976e7b5c80348bd314
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4e8bfb77a761622407addbd1708f2302f866a5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965664"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 建立指定型別和大小的陣列。
