@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7b89588e778a142e7dd49e1a3051a9aa188ff1
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 0cef610da1bcbfe7cb9c6c7ab5a806b74e07e177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871388"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959411"
 ---
 # <a name="manage-project-and-solution-properties"></a>管理專案和解決方案屬性
 

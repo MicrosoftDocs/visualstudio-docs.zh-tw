@@ -8,18 +8,18 @@ ms.prod: visual-studio-windows
 ms.topic: quickstart
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 7e7c6eec178d0ba3b2934e390cc02310044c4dfa
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: f9f442757b60b7dc9dc0e2dd0b8eba0c4928976b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833347"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959515"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
@@ -206,13 +206,13 @@ Visual Studio 隨即開啟您的專案檔。
 
 ::: moniker-end
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要深入了解，請繼續下列教學課程：
 
 > [!div class="nextstepaction"]
 > [Visual Studio 中的 C# 和 ASP.NET 使用者入門](../get-started/csharp/tutorial-aspnet-core.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 Visual Studio 將 Web 應用程式發佈至 Azure App Service](../deployment/quickstart-deploy-to-azure.md)

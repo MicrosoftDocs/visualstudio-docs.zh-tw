@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML, using models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbc817ca7bdf08c4e5ceee79a1e1113b4dd26e0c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 73b0d46e1e293d0713cf7e71706fa0188aaea269
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959060"
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 
@@ -138,7 +138,7 @@ ms.locfileid: "97361426"
 |**部落格**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**技術文件和日誌**|[MSDN 架構中心](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [在 Agile 開發中使用模型](/previous-versions/ff398061(v=vs.140))
 - [建立應用程式模型](../modeling/create-models-for-your-app.md)

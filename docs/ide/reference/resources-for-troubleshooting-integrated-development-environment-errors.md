@@ -92,15 +92,15 @@ f1_keywords:
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 081b36767388da4f78e1fd8f1e0f279d7ca201c9
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 3e2b678423cb8e212d435682a6a56947cd3f3276
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957929"
 ---
 # <a name="resources-for-troubleshooting-ide-errors"></a>IDE 錯誤疑難排解資源
 
@@ -128,7 +128,7 @@ ms.locfileid: "97696550"
 
 如果您在嘗試其他資源之後仍有疑問，則可以前往 [Microsoft 支援服務](https://support.microsoft.com/en-us)網站，連絡 Microsoft 支援服務。 如需您所在地區中可用產品支援的相關資訊，請參閱 [Visual Studio 意見反應選項](../../ide/feedback-options.md) 頁面。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [對網路相關錯誤或 Proxy 錯誤進行疑難排解](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [針對 Windows) 的 (Visual Studio 進行疑難排解 ](/troubleshoot/visualstudio/welcome-visual-studio/)

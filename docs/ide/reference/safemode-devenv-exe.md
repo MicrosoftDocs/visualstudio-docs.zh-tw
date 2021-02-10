@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b191f6a5-8f12-47ec-bcc7-b68149a22aa8
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8f663ca581892ba3207acbb0271586c322bad2
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 1626776ec41bdbdfe5ad2b611516e62ada4f15a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039868"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957864"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 

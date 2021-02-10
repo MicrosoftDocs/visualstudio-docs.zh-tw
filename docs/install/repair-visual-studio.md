@@ -7,17 +7,17 @@ ms.custom: seodec18
 ms.topic: how-to
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f27ccf9440d0f01a5a41d69e753a6d83f81c5263
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 09f167866d03b29530f4845aa958198215289555
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959294"
 ---
 # <a name="repair-visual-studio"></a>修復 Visual Studio
 

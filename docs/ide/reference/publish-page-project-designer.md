@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Publish page in Project Designer
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13edc1b2e2e235eaf5a475764a98067aa4b0150d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 32bbd09b087639c362fbb5d6a137241c1aab85af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350279"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958319"
 ---
 # <a name="publish-page-project-designer"></a>專案設計工具、發行頁
 
@@ -35,7 +35,7 @@ ms.locfileid: "94350279"
 
  **發行資料夾位置**
 
-指定應用程式的發行位置。 可以是磁碟機路徑 (`C:\deploy\myapplication`)、檔案共用 (`\\server\myapplication`) 或 FTP 伺服器 (`ftp://ftp.microsoft.com/myapplication`)。 請注意，文字必須出現在 [發行位置]  方塊中才能讓瀏覽 ( **...** ) 按鈕運作。
+指定應用程式的發行位置。 可以是磁碟機路徑 (`C:\deploy\myapplication`)、檔案共用 (`\\server\myapplication`) 或 FTP 伺服器 (`ftp://ftp.microsoft.com/myapplication`)。 請注意，文字必須出現在 [發行位置]  方塊中才能讓瀏覽 (**...**) 按鈕運作。
 
  **安裝資料夾 URL**
 
@@ -65,7 +65,7 @@ ms.locfileid: "94350279"
 
  **發行版本**
 
-設定應用程式的發行版本號碼；當版本號碼變更時，會以更新形式發行應用程式。 發行版本的每個部分 ( **主要** 、 **次要** 、 **組建** 、 **修訂** ) 最大值可以是 65355 (<xref:System.UInt16.MaxValue>)，這是 <xref:System.Version> 允許的最大值。
+設定應用程式的發行版本號碼；當版本號碼變更時，會以更新形式發行應用程式。 發行版本的每個部分 (**主要**、**次要**、**組建**、**修訂**) 最大值可以是 65355 (<xref:System.UInt16.MaxValue>)，這是 <xref:System.Version> 允許的最大值。
 
 當您使用 ClickOnce 安裝多個版本的應用程式時，安裝會將舊版應用程式移至您指定之發行位置中名為 Archive 的資料夾。 以這種方式封存先前的版本可將安裝目錄與舊版的資料夾分開。
 
@@ -81,7 +81,7 @@ ms.locfileid: "94350279"
 
 使用目前的設定發行應用程式。 這相當於 [發行精靈] 中的 [完成] 按鈕。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [發行 ClickOnce 應用程式](../../deployment/publishing-clickonce-applications.md)
 - [如何：使用發佈嚮導發行 ClickOnce 應用程式](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

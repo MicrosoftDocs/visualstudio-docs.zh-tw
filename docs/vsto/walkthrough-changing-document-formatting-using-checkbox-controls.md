@@ -15,15 +15,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4d83fb8fad6de0c932d371f7f874cea0ff9a8f80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527250"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958657"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>逐步解說：使用 CheckBox 控制項變更檔案格式
   本逐步解說示範如何在 Microsoft Office Word 的檔層級自訂中使用 Windows Forms 控制項，以變更文字格式。
@@ -151,7 +151,7 @@ ms.locfileid: "97527250"
 
 3. 確認文字的格式正確。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  本逐步解說將示範如何使用核取方塊，並以程式設計方式變更 Word 檔的文字格式。 接著可以執行下列一些工作：
 
 - 使用按鈕來填入文字方塊。 如需詳細資訊，請參閱 [逐步解說：使用按鈕在檔的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。

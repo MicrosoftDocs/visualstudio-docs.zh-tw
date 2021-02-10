@@ -6,7 +6,7 @@ ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 43a6e93815732c4f9d2ec7f29d6d6bef4c1f3451
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 2e3d4d5d0abc335cfb857e5a4de9c5189a1ca5cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616716"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958098"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>為程式碼符號重新命名的重構
 
@@ -35,7 +35,7 @@ ms.locfileid: "96616716"
 
 **原因：** 在整個專案複製並貼上新名稱可能造成錯誤。 這個重構工具將可正確地執行重新命名動作。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 醒目標示要重新命名的項目，或將文字游標放在要重新命名的項目內：
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: b8373501f324882c541784c6786b6b9f04a76069
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672381"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959450"
 ---
 # <a name="project-element-visual-studio-templates"></a> (Visual Studio 範本的專案元素) 
 指定要加入至專案的檔案或目錄。
@@ -29,7 +29,7 @@ ms.locfileid: "94672381"
  \<VSTemplate> \<TemplateContent>
  \<Project>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <Project
@@ -46,7 +46,7 @@ ms.locfileid: "94672381"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`File`|必要屬性。<br /><br /> 指定範本 *.zip* 檔中的專案檔名稱。|
 |`ReplaceParameters`|選擇性屬性。<br /><br /> 布林值，指定在從範本建立專案時，專案檔是否包含必須取代的參數值。 預設值為 `false`。|
@@ -55,14 +55,14 @@ ms.locfileid: "94672381"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|說明|
+|元素|描述|
 |-------------|-----------------|
 |[資料夾](../extensibility/folder-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的資料夾。|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的檔案。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必要元素。|
 

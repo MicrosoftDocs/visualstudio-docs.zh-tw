@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81c79ece83bc8aaaf7ca4dd28642de5973ad94c1
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 18e7fcb73a5ce89fae0936189eada9e3b959a55f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958449"
 ---
 # <a name="saving-a-standard-document"></a>儲存標準文件
 環境會處理 [儲存]、[另存新檔] 和 [儲存所有] 命令。 當使用者選取 [ **儲存**]、[ **另存** 新檔] 或 [ **全部儲存** ]，或從 [檔案] 功能表中選取 [全部儲存] **或 [** 全部儲存] **之後，就** 會發生下列進程。
 
- ![標準編輯器](../../extensibility/internals/media/public.gif "公開") 儲存、另存新檔，並儲存標準編輯器的所有命令處理
+ ![標準編輯器](../../extensibility/internals/media/public.gif "公用") 儲存、另存新檔，並儲存標準編輯器的所有命令處理
 
  下列步驟會詳細說明此程式：
 
@@ -58,6 +58,6 @@ ms.locfileid: "97875662"
 
 2. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew` ， `punkWindowFrame`) 方法，將檔傳送至新的階層。 執行 [另存新檔] 命令的階層會呼叫這個方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df68e72ee8597805bf02cb9c6e1c3a0bcaf8a449
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c93ce91b664a1d0ccb13534eb6109538df46f35b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959541"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 使程式節點可供 debug engine (DEs) 和會話 debug manager (SDM) 使用。
@@ -28,14 +28,14 @@ ms.locfileid: "80721675"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT PublishProgramNode(
+HRESULT PublishProgramNode(
    IDebugProgramNode2 *pProgramNode
 );
 ```
 
 ```csharp
-int PublishProgramNode(
-   IDebugProgramNode2 pProgramNode
+int PublishProgramNode(
+   IDebugProgramNode2 pProgramNode
 );
 ```
 

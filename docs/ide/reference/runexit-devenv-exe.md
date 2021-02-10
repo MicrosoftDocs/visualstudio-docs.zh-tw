@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a1e0af28e8a96860039381b958d63e161a24936
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 695996a6bde054d4e9ae79efdef1955ef93ef527
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039846"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957877"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
 

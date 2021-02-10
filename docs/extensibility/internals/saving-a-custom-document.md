@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2d2aa249d6944e33ab9556000c483efdec78f20
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: a3be218565feb26d66f623a281fc9277b7fa8fb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958514"
 ---
 # <a name="saving-a-custom-document"></a>儲存自訂文件
 環境會處理 [ **儲存**]、[ **另存** 新檔] 和 [ **儲存所有** ] 命令。 當使用者按一下 [ **儲存**]、[ **另存** 新檔]，或 [檔案] 功能表上的 [ **全部儲存** ] **或 [** 全部儲存] 或 [關閉方案] 時，就會出現下列程式。
@@ -43,6 +43,6 @@ ms.locfileid: "97875675"
     > [!NOTE]
     > 如果您要執行自己的持續性，請務必呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> 方法來節省時間。 這個方法會檢查以確定可以安全地儲存檔案 (例如，檔案不是唯讀) 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)

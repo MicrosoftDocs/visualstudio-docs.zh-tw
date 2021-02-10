@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55e17693bee1ced0354b21ee5cc736961a994c6f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: f022023ec03ddb280424f3c47944c91e8fa696de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958384"
 ---
 # <a name="writing-to-the-user-settings-store"></a>寫入使用者設定存放區
 使用者設定是可寫入的設定，例如 [ **工具/選項** ] 對話方塊、[屬性] 視窗和某些其他對話方塊中的設定。 Visual Studio 擴充功能可能會使用這些資料來儲存少量的資料。 本逐步解說將示範如何在使用者設定存放區中讀取和寫入，以將 [記事本] 新增至 Visual Studio 作為外部工具。

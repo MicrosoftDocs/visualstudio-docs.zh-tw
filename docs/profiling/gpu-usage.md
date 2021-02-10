@@ -5,15 +5,15 @@ ms.date: 11/01/2018
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b143cc0b3001f0a182de43f1b6eea554025eda
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 78f847acaf67a61064e64b765d9c138ec2fe93a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815648"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959021"
 ---
 # <a name="gpu-usage"></a>GPU 使用量
 
@@ -97,7 +97,7 @@ ms.locfileid: "97815648"
 
  以下是更多詳細資料：
 
-|篩選控制項|描述|
+|篩選控制項|Description|
 |--------------------|-----------------|
 |**處理**|您感興趣之進程的名稱。 在診斷會話期間使用 GPU 的所有進程都會包含在此下拉式清單中。 與進程相關聯的色彩是時間軸中線程活動的色彩。|
 |**執行緒**|您感興趣的執行緒識別碼。 在多執行緒應用程式中，此資訊可協助您隔離出您感興趣之處理序的特定執行緒。 在每個時間軸中會反白顯示與所選取執行緒相關聯的事件。|
@@ -107,7 +107,7 @@ ms.locfileid: "97815648"
 
 [GPU 使用量] 報表下半部中的事件清單會顯示每個事件的詳細資料。
 
-|Column|描述|
+|資料行|描述|
 |------------|-----------------|
 |**活動名稱**|圖形事件的名稱。 事件通常會對應至 CPU 執行緒時間軸中的事件以及 GPU 時間軸事件。 如果 GPU 使用量無法判斷事件的名稱，則可能會 *未歸屬* 事件名稱。 如需詳細資訊，請參閱此表格後面的附注。|
 |**CPU 啟動 (奈秒)**|透過呼叫 Direct3D API 對 CPU 起始事件的時間。 時間的測量單位是奈秒，相對於應用程式的啟動時間。|

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eef67b86925bc38a317196bbf00860b75a6ee15c
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 4b73f968d51cb15cde910a5bcbd7e541007f22fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959463"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>針對 RegPkg 套件註冊進行疑難排解
 > [!NOTE]

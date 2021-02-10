@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: deb27180-2035-49ed-b835-c47bb3cd2f8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d9da3dbe92bdde8b0c19495e73cdbf2660ef3b4
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 29a73f1e0c7a39bb5ffaa1877cbaff7aa54c3930
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959398"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a> (Visual Studio 範本的 ProjectCollection 元素) 
 指定多專案範本的組織和內容。
@@ -29,7 +29,7 @@ ms.locfileid: "94671229"
  \<VSTemplate> \<TemplateContent>
  \<ProjectCollection>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ProjectCollection>
@@ -46,14 +46,14 @@ ms.locfileid: "94671229"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定多專案範本中的專案。|
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 將多專案範本中的專案分組。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必要元素。<br /><br /> 指定範本的內容。|
 

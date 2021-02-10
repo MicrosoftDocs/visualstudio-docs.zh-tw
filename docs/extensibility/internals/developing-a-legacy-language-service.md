@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7876b590cb5b09cf5db571ba1145f6bf747e5e5
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5f61337b6dbdef158c7fb7ebe42d0af9f79822fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959528"
 ---
 # <a name="develop-a-legacy-language-service"></a>開發舊版語言服務
 本節連結的主題可協助您建立舊版語言服務。

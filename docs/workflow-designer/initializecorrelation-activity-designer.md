@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ef70cb452c01917f65619d400c21ed18ed11721
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9591ef604fcf9374e9aa498e74c5a7761459589f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959788"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation 活動設計工具
 
@@ -41,7 +41,7 @@ ms.locfileid: "96993194"
 
 下表顯示這些 <xref:System.ServiceModel.Activities.InitializeCorrelation> 屬性，並描述它們在設計工具中的使用方式。 這些屬性可以在 [ **屬性** ] 視窗中或在工作流程設計工具介面上編輯。
 
-|屬性名稱|必要|使用量|
+|屬性名稱|必要|使用方式|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|否|<xref:System.ServiceModel.Activities.InitializeCorrelation> 活動的易記名稱。 預設值為 InitializeCorrelation。<br /><br /> 雖然不是絕對需要針對易記使用非預設值 <xref:System.Activities.Activity.DisplayName%2A> ，但建議使用。|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|否|用於與相互關聯中工作流程活動相關聯的 <xref:System.ServiceModel.Activities.CorrelationHandle>。|
@@ -52,6 +52,6 @@ ms.locfileid: "96993194"
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [收到](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Send](../workflow-designer/send-activity-designer.md)
+- [發送](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

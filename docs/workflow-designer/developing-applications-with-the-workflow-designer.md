@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88825e5328fc11702a503311b227fde155c79d73
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: ee870e3c3794fc0f87b9e29e2bff8b20b79d84fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438070"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959814"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>使用工作流程設計工具開發應用程式
 
@@ -33,7 +33,7 @@ ms.locfileid: "94438070"
 
 若要在 Visual Studio 中使用工作流程專案範本，請先安裝 **Windows Workflow Foundation** 元件。
 
-1. 開啟 Visual Studio 安裝程式。 若要開啟它，您可以選取 [ **工具**  >  **取得工具和功能** ] Visual Studio 中的快速方法。
+1. 開啟 Visual Studio 安裝程式。 若要開啟它，您可以選取 [**工具**  >  **取得工具和功能**] Visual Studio 中的快速方法。
 
 1. 在 Visual Studio 安裝程式中，選取 [ **個別元件** ] 索引標籤。
 
@@ -45,6 +45,6 @@ ms.locfileid: "94438070"
 
    Visual Studio 安裝 **Windows Workflow Foundation** 元件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Windows Workflow Foundation ( .NET Framework) ](/dotnet/framework/windows-workflow-foundation/index)

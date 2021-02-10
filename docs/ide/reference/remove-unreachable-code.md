@@ -6,18 +6,18 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3af9d0a14b600773c5025fcaad68380c7bb82b29
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: a7ce04b38c13b0994d47974488b90114a63495e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616703"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958111"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>移除執行不到的程式碼重構
 
@@ -33,7 +33,7 @@ ms.locfileid: "96616703"
 
 **原因：** 藉由移除多餘且永遠不會執行的程式碼來提升可讀性和便於維護。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將游標放在執行不到之褪色程式碼中的任何位置：
 

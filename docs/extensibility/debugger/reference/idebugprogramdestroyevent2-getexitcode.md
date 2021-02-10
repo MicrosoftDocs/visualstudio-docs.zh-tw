@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7f540cf6-e2d1-42b0-913e-a26d654b7659
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cc887cdcd2975bdfb4042acb1831a7482baa52c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8718700b968501144038f987be7970979941e87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722607"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959749"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
 取得程式的結束代碼。
@@ -28,13 +28,13 @@ ms.locfileid: "80722607"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetExitCode( 
+HRESULT GetExitCode( 
    DWORD* pdwExit
 );
 ```
 
 ```csharp
-int GetExitCode( 
+int GetExitCode( 
    out uint pdwExit
 );
 ```

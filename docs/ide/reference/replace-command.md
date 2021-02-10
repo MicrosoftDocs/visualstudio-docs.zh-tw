@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2db7b59c1982f706cc6d2b18039870871ffa1039
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 6c3149b55c2b5b3a5ca666fbd780e4efbd03ef22
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304036"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958059"
 ---
 # <a name="replace-command"></a>取代命令
 使用在 [尋找和取代] 視窗 [檔案中取代] 索引標籤提供的選項子集，取代檔案中的文字。

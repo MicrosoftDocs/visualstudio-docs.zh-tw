@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d6e46c95584cb3732d6339a02f6098976f2bab85
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efd4091407d228a15cc80971d759e5371bddd3ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959255"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>用於偵測及管理 Visual Studio 執行個體的工具
 
@@ -64,7 +64,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 
 1. 選取 `HKEY_LOCAL_MACHINE` 節點。
 
-1. 從 Regedit 主功能表選取 [檔案**File**  >  **載入 Hive ...** ]，然後選取私人登錄檔（儲存在**AppData\Local**資料夾中）。 例如：
+1. 從 Regedit 主功能表選取 [檔案  >  **載入 Hive ...** ]，然後選取私人登錄檔（儲存在 **AppData\Local** 資料夾中）。 例如：
 
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
@@ -76,7 +76,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 系統將會提示您提供登錄區名稱，這會變成您的已隔離登錄區的名稱。 這麼做之後，您應該能在您所建立的已隔離登錄區下瀏覽登錄。
 
 > [!IMPORTANT]
-> 在重新啟動 Visual Studio 之前，必須卸載您所建立的已隔離登錄區。 若要這樣做，**請**  >  從 Regedit 主功能表選取 [檔案卸載**Hive** ]。 (如果您沒有這麼做，則檔案會維持鎖定且 Visual Studio 將無法啟動)。
+> 在重新啟動 Visual Studio 之前，必須卸載您所建立的已隔離登錄區。 若要這樣做，**請**  >  從 Regedit 主功能表選取 [檔案卸載 **Hive** ]。 (如果您沒有這麼做，則檔案會維持鎖定且 Visual Studio 將無法啟動)。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

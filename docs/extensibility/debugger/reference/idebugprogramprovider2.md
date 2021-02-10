@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43557e5d81e5140967a1189e57a350595d0f7220
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 788c4add42b70107ea2960ae5682a2e2cc815d59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721701"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959619"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 這個註冊的介面可讓會話 debug manager (SDM) 取得已透過 [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) 介面「發佈」之程式的相關資訊。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramProvider2 : IUnknown
@@ -46,7 +46,7 @@ Debug engine (DE) 會執行這個介面，以提供所要偵錯工具的相關�
 ## <a name="remarks"></a>備註
 一般情況下，程式會使用此介面來找出在該進程中執行的程式。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

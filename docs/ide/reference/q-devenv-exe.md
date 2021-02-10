@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: fd8fd6b2-1304-4d06-8118-6629666801fb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0b3784b832c56aba97f68e57be872820991c74
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 7e95f88bd65916cc31b18f8bd75a6807c36a653a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958254"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 

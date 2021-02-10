@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 6a07ed95-8319-44a2-8a1d-b4a89f16d0d9
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e7b4daea4b7ce99867df0ae7a013a996dc2d3f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9eb1b95ca83d06e2b992ace75dde96a45d385b97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434398"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958644"
 ---
 # <a name="collection-activity-designers"></a>Collection 活動設計工具
 

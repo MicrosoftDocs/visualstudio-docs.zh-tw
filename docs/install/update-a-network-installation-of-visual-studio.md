@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f54ee1191dd998d34e46a442debafc175ce98c8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6829bac79f747d4f9bacfe5e71f57352fcad0970
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959151"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
 
@@ -35,7 +35,7 @@ ms.locfileid: "85545427"
 
 ::: moniker range="vs-2017"
 
-**15.3 中的新**功能：如果您在 [第一次建立網路](create-a-network-installation-of-visual-studio.md)配置時已選取部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
+**15.3 中的新** 功能：如果您在 [第一次建立網路](create-a-network-installation-of-visual-studio.md)配置時已選取部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
 
 ::: moniker-end
 
@@ -74,9 +74,9 @@ ms.locfileid: "85545427"
   ```
 
     > [!IMPORTANT]
-    > 更新作業不會安裝新增的選擇性元件。 如果您需要新增的選用元件，請移除回應檔中的舊選用元件，並在的 `Layout.JSON` [response file](automated-installation-with-response-file.md) [新增] 區段中包含所需的元件 `Layout.JSON` 。 
+    > 更新作業不會安裝新增的選擇性元件。 如果您需要新增的選用元件，請移除回應檔中的舊選用元件，並在的 `Layout.JSON` [](automated-installation-with-response-file.md) [新增] 區段中包含所需的元件 `Layout.JSON` 。 
     >
-    > 因應**措施：在升級之後執行個別**的修改作業，以安裝遺失的元件。
+    > 因應 **措施：在升級之後執行個別** 的修改作業，以安裝遺失的元件。
 
 * 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。  (此命令會新增 *ASP.NET 和 網頁程式開發* 工作負載。現在 ) 此配置中包含受管理的桌面、Azure 和 ASP.NET & 網頁程式開發工作負載。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
 
@@ -90,7 +90,7 @@ ms.locfileid: "85545427"
 
 * 使用者可以更新從離線安裝資料夾安裝的 Visual Studio 執行個體：
   * 執行 Visual Studio 安裝程式。
-  * 接著，按一下 [更新]****。
+  * 接著，按一下 [更新]。
 
 ::: moniker range="vs-2017"
 
@@ -125,7 +125,7 @@ vs_enterprise.exe --layout <layoutDir> --verify
 vs_enterprise.exe 可以在 layoutDir 內進行叫用。
 
 > [!NOTE]
-> `--verify` 選項所需的一些重要中繼資料檔案必須在配置離線快取中。 如果遺失這些中繼資料檔案，則無法執行 "--verify"，而且安裝程式會產生錯誤。 如果您遇到此錯誤，請將新的離線配置重新建立到不同的資料夾 (或相同的離線快取資料夾)。 若要這麼做，請執行您用來建立初始離線配置的相同配置命令。 例如 `vs_enterprise.exe --layout <layoutDir>`。
+> `--verify` 選項所需的一些重要中繼資料檔案必須在配置離線快取中。 如果遺失這些中繼資料檔案，則無法執行 "--verify"，而且安裝程式會產生錯誤。 如果您遇到此錯誤，請將新的離線配置重新建立到不同的資料夾 (或相同的離線快取資料夾)。 若要這麼做，請執行您用來建立初始離線配置的相同配置命令。 例如： `vs_enterprise.exe --layout <layoutDir>` 。
 
 Microsoft 會定期提供 Visual Studio 更新，因此，您建立的新配置可能不是與初始配置相同的版本。
 
@@ -172,7 +172,7 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 如果您的離線安裝發生問題，我們會想要進行了解。 告訴我們的最簡單方式就是使用[回報問題](../ide/how-to-report-a-problem-with-visual-studio.md)工具。 使用此工具時，您可以將我們所需的遙測和記錄檔傳送給我們，來協助我們診斷及修正問題。
 
-我們也提供[**即時聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (僅限英文) 支援選項，可回答有關安裝的相關問題。
+我們也提供 [**即時聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (僅限英文) 支援選項，可回答有關安裝的相關問題。
 
 我們也提供其他支援選項。 如需清單，請參閱我們的[意見反應](../ide/feedback-options.md)頁面。
 

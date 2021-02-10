@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: e055906dd4cddabd16b39e3b2cad66d07dddd38d
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: f1889b20f96e051867d470bc96df36b7018abdc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958202"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>選項對話方塊、環境、快速啟動
 
@@ -40,11 +40,11 @@ ms.locfileid: "96616742"
 |--------------|--------------| - |
 |最近使用|@mru<br /><br /> 例如， `@mru font`|最多顯示您 [最近用過的函式] 的五個項目。|
 |功能表|@menu<br /><br /> 例如， `@menu project`|限制搜尋功能表項目。|
-|選項。|@opt<br /><br /> 例如， `@opt font`|限制搜尋 [選項] 對話方塊中的設定。|
+|選項|@opt<br /><br /> 例如， `@opt font`|限制搜尋 [選項] 對話方塊中的設定。|
 |文件|@doc<br /><br /> 例如， `@doc program.cs`|限制搜尋符合搜尋準則之開啟文件的檔案名稱和路徑，但不會搜尋檔案本身內的文字。|
 
 > [!NOTE]
-> 您可以在 [ **General**  >  **選項**] 對話方塊的 [一般 **鍵盤**] 頁面上，變更快速鍵。
+> 您可以在 [   >  **選項**] 對話方塊的 [一般 **鍵盤**] 頁面上，變更快速鍵。
 
 ## <a name="show-previous-results"></a>顯示先前的結果
 
