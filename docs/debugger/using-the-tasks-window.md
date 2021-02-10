@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df43a02dbda1fbcbe93decb58721032cd84d657
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: fcae019e8854ecee9cdc553eedd3e9d2d0f28a63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948579"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>使用 [工作] 視窗 (c #、Visual Basic、c + +) 
 
@@ -47,7 +47,7 @@ ms.locfileid: "98150063"
 
 [工作] 視窗中的資料行會顯示下列資訊。
 
-|資料行名稱|描述|
+|資料行名稱|Description|
 |-----------------|-----------------|
 |**旗標**|顯示已加上旗標的工作，並可讓您為工作加上或取消旗標。|
 |**圖示**|黃色箭號表示目前工作。 目前工作是目前執行緒上的最上方工作。<br /><br /> 白色箭號表示最新的工作，即叫用偵錯工具時的最新工作。<br /><br /> 暫停圖示表示已由使用者凍結的工作。 在清單中，於工作上按一下滑鼠右鍵，就可以凍結和解除凍結工作。|

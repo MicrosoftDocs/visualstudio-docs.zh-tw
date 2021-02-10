@@ -7,21 +7,21 @@ ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3aee0129516b6c7d377fcfff454f949e199eb5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 05db6f02f2d00a5c0aca1ff91e15c61cf6bf8d4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948592"
 ---
 # <a name="content-model-view"></a>內容模型檢視
 
 內容模型檢視提供區域和全域結構描述節點及其元件的圖形表示，包括簡單和複雜類型、項目、模型群組、屬性和屬性群組。 XML 註解和處理指示無法在內容模型檢視中檢視。 內容模型視圖包含兩個面板： [ **工作區** ] 面板，其中包含 [ [XML 架構設計工具] 工作區](../xml-tools/xml-schema-designer-workspace.md)中的節點清單，以及您可以在 [ **工作區** ] 面板中查看所選架構節點內容模型的設計介面。 內容模型檢視也包含 XML 結構描述設計工具工具列和階層連結列。
 
-在下圖中，[ **工作區** ] 面板包含六個架構節點。 `purchaseOrder`節點會在 [ **工作區** ] 面板中選取，並顯示在設計介面中。
+在下圖中，[ **工作區** ] 面板包含六個架構節點。 `purchaseOrder`節點會在 [**工作區**] 面板中選取，並顯示在設計介面中。
 
 ![XML 結構描述設計工具內容模型檢視](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
@@ -47,7 +47,7 @@ ms.locfileid: "93049212"
 
 當您以滑鼠右鍵按一下 [設計介面] 或 [ **工作區** ] 面板上的專案時，內容功能表隨即出現。 下表描述內容模型檢視設計介面的可用選項。
 
-|選項|描述|
+|選項|Description|
 |-|-----------------|
 |**在 XML 結構描述總管中顯示**|將焦點放在 XML 結構描述總管，然後反白顯示結構描述集節點。|
 |**在圖表檢視中顯示**|切換至圖表檢視。|
@@ -59,7 +59,7 @@ ms.locfileid: "93049212"
 
 下表說明可用於 [ **工作區** ] 面板的選項。
 
-|選項|描述|
+|選項|Description|
 |-|-----------------|
 |**在 XML 結構描述總管中顯示**|將焦點放在 XML 結構描述總管，然後反白顯示結構描述集節點。|
 |**在圖表檢視中顯示**|切換至圖表檢視。|
@@ -81,11 +81,11 @@ ms.locfileid: "93049212"
 
 ![XML 結構描述設計工具工具列](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
-|選項|描述|
+|選項|Description|
 |-|-----------------|
-|**顯示開始檢視**|切換至 [開始視圖](../xml-tools/start-view.md)。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **1** 。|
-|**顯示內容模型檢視**|切換至 [內容模型視圖](../xml-tools/content-model-view.md)。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **2** 。|
-|**顯示圖表檢視**|切換至 [圖表視圖](../xml-tools/graph-view.md)。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **3** 。|
+|**顯示開始檢視**|切換至 [開始視圖](../xml-tools/start-view.md)。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **1**。|
+|**顯示內容模型檢視**|切換至 [內容模型視圖](../xml-tools/content-model-view.md)。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **2**。|
+|**顯示圖表檢視**|切換至 [圖表視圖](../xml-tools/graph-view.md)。 您可以使用鍵盤快速鍵來存取此視圖： **Ctrl** + **3**。|
 |**清除工作空間**|清除工作空間和設計介面。|
 |**由工作空間移除**|從工作空間和設計介面移除選取的節點。|
 |**由工作空間移除選取範圍以外的所有項目**|從工作空間和設計介面移除未選取的節點。|
@@ -125,6 +125,6 @@ Zoom 可在內容模型視圖的右下角取得。
 
 如果您在 XML 編輯器中變更架構集，變更就會在內容模型視圖中進行同步處理。 如需詳細資訊，請參閱 [與 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 結構描述設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)

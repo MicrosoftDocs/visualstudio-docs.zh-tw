@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: febf7c6966fcf3f2ac64d62bb46f0aaf398c6bc4
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 66cc91a544d0d0729593b4be09f82ae0eb2081ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948474"
 ---
 # <a name="process-debug-manager"></a>進程偵錯工具管理員
 進程 debug manager (PDM) 是管理程式和進程的 Visual Studio 元件，可供會話 debug manager 和 debug engine 使用。

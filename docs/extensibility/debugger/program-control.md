@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 640b09620022d17fd6b7c8758f1dec4f9a3936eb
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: f9378dd2aa1ed52408e3aa4d0e9027a34d833dab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948448"
 ---
 # <a name="program-control"></a>程式控制
 在 Visual Studio 的偵錯工具中，會在程式層級進行下列所有逐步執行和繼續常式：

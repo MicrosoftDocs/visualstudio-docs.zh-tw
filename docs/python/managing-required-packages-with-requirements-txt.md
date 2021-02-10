@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b65072e7a9ffa5d3767a5ff66fda25b231c622ef
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: f535f9d6ad4aa917cde493dfcfe089896634d706
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948110"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理必要套件
 
@@ -23,19 +23,19 @@ ms.locfileid: "90100535"
 
 就技術而言，任何檔案名稱都可用來追蹤必要條件 (透過在安裝套件時使用 `-r <full path to file>`)，但 Visual Studio 為 *requirements.txt* 提供了專屬支援：
 
-- 若您已載入包含 *requirements.txt* 的專案，並想要安裝該檔案中列出的所有套件，請展開 [方案總管]**** 中的 [Python 環境]**** 節點，然後以滑鼠右鍵按一下環境節點，並選取 [從 requirements.txt 安裝]****：
+- 若您已載入包含 *requirements.txt* 的專案，並想要安裝該檔案中列出的所有套件，請展開 [方案總管] 中的 [Python 環境] 節點，然後以滑鼠右鍵按一下環境節點，並選取 [從 requirements.txt 安裝]：
 
     ![Install from requirements.txt (從 requirements.txt 安裝)](media/environments/environments-requirements-txt-install.png)
 
-- 如果想要在虛擬環境中安裝相依項目，請先建立並啟動該環境，然後使用 [從 requirements.txt 安裝]**** 命令。 如需建立虛擬環境的詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
+- 如果想要在虛擬環境中安裝相依項目，請先建立並啟動該環境，然後使用 [從 requirements.txt 安裝] 命令。 如需建立虛擬環境的詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
 - 如果您已經在環境中安裝所有必要的套件，可以在 **方案總管** 中的環境上按一下滑鼠右鍵，然後選取 [ **產生 requirements.txt** 以建立必要的檔案。 如果該檔案已經存在，系統會提示您如何更新它：
 
     ![更新 requirements.txt 選項](media/environments/environments-requirements-txt-replace.png)
 
-  - [Replace entire file (取代整個檔案)]**** 會移除所有已存在的項目、註解及選項。
-  - [重新整理現有項目]**** 會偵測套件需求並更新版本規範，以符合您目前已安裝的版本。
-  - [Update and add entries (更新及新增項目)]**** 會重新整理所找到的任何需求，並將所有其他套件新增到檔案結尾。
+  - [Replace entire file (取代整個檔案)] 會移除所有已存在的項目、註解及選項。
+  - [重新整理現有項目] 會偵測套件需求並更新版本規範，以符合您目前已安裝的版本。
+  - [Update and add entries (更新及新增項目)] 會重新整理所找到的任何需求，並將所有其他套件新增到檔案結尾。
 
 由於 *requirements.txt* 檔案的用意是要固定住環境的需求，因此所有安裝的套件都已寫明精確的版本。 使用精確的版本可確保您可以在另一部電腦上輕鬆重現您的環境。 即使安裝套件時已指定版本範圍，仍然會包含這些套件作為另一個套件的相依性，或隨附於 pip 以外的安裝程式。
 

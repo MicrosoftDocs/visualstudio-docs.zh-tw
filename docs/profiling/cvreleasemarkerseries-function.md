@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3b4711ee-e534-411d-9128-f69cd7932a48
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a69f60a991b9d88e6969992edbfe8eabdb7bd116
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 60a216c99e21d76efd4d348fea0d06d4f016db5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686450"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948240"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries 函式
 釋放標記系列。 不要在釋放之後使用標記系列物件，否則應用程式可能會當機。 釋放標記系列失敗會造成記憶體流失。

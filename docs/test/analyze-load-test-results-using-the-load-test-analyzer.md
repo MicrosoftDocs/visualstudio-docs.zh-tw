@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 4f33898aa1c3c08179f1438a7c6e6e11a75587bc
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 4151d4c9546795dbd87773315b4b135538ca3bbc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948058"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>使用負載測試分析器分析負載測試結果
 

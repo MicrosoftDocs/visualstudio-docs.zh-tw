@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4fe77cddcfe810e73d13de81cc7280969c1d1b1c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1f95c5bfcd0dda73b3cd3392c5a8b0bb7384bd9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848192"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947876"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 表單區域中的自訂動作
   動作會顯示可讓使用者回應 Microsoft Office Outlook 專案的按鈕。 例如，若要回應訊息項目，使用者可以按一下 [ **回復**]、[ **回復至全部**] 或 [ **轉寄** 動作] 按鈕。 上述每個動作都會建立新的訊息項目，並使用原始專案的資訊填入專案的欄位。
@@ -42,7 +42,7 @@ ms.locfileid: "96848192"
 |--------------|-----------------|
 |**AddressLike**|指定目標表單的定址方式。|
 |**本文**|指定原始專案的主體如何附加至目標表單。|
-|**啟用**|指出是否已啟用自訂動作。 如果這個屬性設定為 **false**，則會停用自訂動作。|
+|**Enabled**|指出是否已啟用自訂動作。 如果這個屬性設定為 **false**，則會停用自訂動作。|
 |**方法**|指定執行自訂動作時可使用的回應類型。 自訂動作可以傳送表單、開啟表單，或提示使用者是否要傳送或開啟表單。|
 |**名稱**|指定您可以在程式碼中用來參考這個自訂動作的內部名稱。|
 |**ShowOnRibbon**|指出是否要在原始專案的功能區上顯示自訂動作。|

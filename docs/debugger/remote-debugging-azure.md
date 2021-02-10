@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: b6535bb52221de780b9a8862be22a6a4deb79b57
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 3ce27c692e96423bbec89914caeab3afd3e62ba4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947915"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Visual Studio 中的 Azure IIS 上的遠端偵錯 ASP.NET Core
 
@@ -97,7 +97,7 @@ ms.locfileid: "97815837"
 
     應該在 Visual Studio 中叫用中斷點。
 
-    這樣就完成了！ 本主題的其餘步驟適用于 Azure VM 上的遠端偵錯程式。
+    大功告成！ 本主題的其餘步驟適用于 Azure VM 上的遠端偵錯程式。
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a> Azure VM 上的遠端 Debug ASP.NET Core
 

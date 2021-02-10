@@ -16,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: e30d81277ae28a3f5d6ca45a259fa66e0f4ee004
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: cbd15d57090f2248cdd97eba1898e363cc2d21b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441972"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948071"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在負載測試分析器的圖形檢視中分析負載測試結果
 
@@ -40,7 +40,7 @@ ms.locfileid: "95441972"
 
 下列表格列出可用於分析負載測試結果的內建圖形。
 
-|圖形名稱|描述|
+|圖形名稱|Description|
 |-|-|
 |關鍵指標|用於描述測試效能基本層面的計數器，例如使用者負載、輸送量和回應時間。|
 |測試回應時間|執行測試所需時間量的資料。|
@@ -71,7 +71,7 @@ ms.locfileid: "95441972"
 |電腦|要收集計數器的電腦名稱。|
 |Color|圖形中線條的色彩。|
 |範圍|表示對於該計數器，圖形上的 100 所表示的數目。 舉例來說，對上限值為 10,000 的範圍而言，圖形頂端的 100 標籤即代表 10,000。|
-|最小值|表示計數器的最小值 (以毫秒為單位)。|
+|Min|表示計數器的最小值 (以毫秒為單位)。|
 |最大值|表示計數器的最大值 (以毫秒為單位)。|
 |平均|表示計數器的平均值 (以毫秒為單位)。|
 |最後一個|顯示最近取樣間隔期間的計數器值 (以毫秒為單位)。|

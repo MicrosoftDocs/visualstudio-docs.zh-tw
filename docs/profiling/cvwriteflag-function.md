@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ee9da1e2-7b34-4cba-81e2-215d25d32e4d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b3c82a84e9a6523a0a969639f26b28d64cdfc9e
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 6e24782f38ec3512349efa123f5aed5a068c6b59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948162"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag 函式
 將旗標寫入並行視覺化檢視追蹤檔。

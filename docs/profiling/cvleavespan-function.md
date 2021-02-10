@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3bf65fdf-a471-4efd-ac7a-03e701bbae5d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1dcd98a8233f8080d03650c3989805ee9ec7289
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: da049fc5cc96e9eaa6830159db8c60f9469e2ac4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948253"
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan 函式
 標記範圍的結尾。

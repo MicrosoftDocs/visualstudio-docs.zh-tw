@@ -37,15 +37,15 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ce692bf10c5473c648fd6587b6b6568d369ed496
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848036"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947993"
 ---
 # <a name="content-controls"></a>內容控制項
   內容控制項提供一種設計文件和範本的方式，能讓它們具有下列功能：
@@ -96,7 +96,7 @@ ms.locfileid: "96848036"
 ### <a name="drop-down-list"></a>下拉式清單
  下拉式清單會顯示使用者可以選取的項目清單。 不同於下拉式方塊，下拉式清單不會讓使用者加入或編輯項目。 如需詳細資訊，請參閱 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 型別。
 
-### <a name="group"></a>群組
+### <a name="group"></a>Group
  群組控制項定義的文件受保護區域，使用者不能予以編輯或刪除。 群組控制項可以包含任何文件項目，例如文字、表格、圖形及其他內容控制項。 如需詳細資訊，請參閱 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 型別。
 
 ### <a name="picture"></a>Picture

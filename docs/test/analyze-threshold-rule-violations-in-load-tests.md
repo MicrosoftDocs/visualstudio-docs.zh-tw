@@ -16,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 49fe5893254083dd83551ef5f43fffcc295a992a
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 519a908b85c6cdf3dbecc38e032d72ac223a8bdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442699"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948045"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用負載測試分析器來分析負載測試中的臨界值規則違規
 
@@ -38,7 +38,7 @@ ms.locfileid: "95442699"
 
 |資料行|描述|預設為可見|
 |-|-|-|
-|時間|負載測試期間發生違規的時間。|是|
+|Time|負載測試期間發生違規的時間。|是|
 |電腦|發生違規之測試中的電腦名稱。 **注意：** 當您在 Rig 上執行負載測試時，這很重要。|是|
 |類別|發生違規之效能計數器的分類。|是|
 |計數器|發生違規之效能計數器的名稱。|是|

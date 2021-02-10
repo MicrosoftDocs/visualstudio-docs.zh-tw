@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 24ba362e-5be1-481a-b071-e1ebd3cae6e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7943addb4334710da3252a4d822330e45b6e0f80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 149b3f4d474c0304fab26f9ff3f772440ae761ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948331"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 此介面會告知會話 debug manager (SDM) 暫止的中斷點已成功系結至已載入的程式。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointBoundEvent2 : IUnknown
@@ -45,7 +45,7 @@ IDebugBreakpointBoundEvent2 : IUnknown
 ## <a name="remarks"></a>備註
  每當有中斷點系結時，就會將事件傳送至 SDM。 如果無法系結中斷點，則會傳送 [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) ;否則， `IDebugBreakpointBoundEvent2` 就會傳送。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

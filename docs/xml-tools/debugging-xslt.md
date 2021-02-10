@@ -6,17 +6,17 @@ ms.date: 03/05/2019
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ad9ec70e5cd0f215dbb138db521dee09d722242
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a7d0f5a683a627999076969dbc9077ba03d65208
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948553"
 ---
 # <a name="debugging-xslt"></a>偵錯 XSLT
 
@@ -35,7 +35,7 @@ ms.locfileid: "93047753"
 
 1. 在 Visual Studio 中開啟樣式表單或 XML 檔案。
 
-1. 從 [ **XML** ] 功能表選取 [ **啟動 XSLT 調試** ]，或按 **Alt** + **F5** 。
+1. 從 [ **XML** ] 功能表選取 [**啟動 XSLT 調試**]，或按 **Alt** + **F5**。
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>從使用 XSLT 的應用程式進行偵錯工具
 
@@ -92,7 +92,7 @@ namespace ConsoleApplication
 
 [Xslt](../xml-tools/xslt-profiler.md)分析工具是一種工具，可讓開發人員藉由建立詳細的 xslt 效能報告，來測量、評估及鎖定 XSLT 程式碼中的效能相關問題。 如需詳細資訊，請參閱 [XSLT profiler](../xml-tools/xslt-profiler.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [逐步解說：偵錯 XSLT 樣式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
 - [先查看 Visual Studio 偵錯工具](../debugger/debugger-feature-tour.md)

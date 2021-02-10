@@ -5,14 +5,14 @@ ms.date: 10/13/2020
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: f8affd426593754f77760e4f924cd401167078e5
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: d1ddefb07d95901baa70553fdc2a322aa36f6e87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947967"
 ---
 # <a name="visual-studio-2015-documentation"></a>Visual Studio 2015 文件
 
@@ -30,7 +30,7 @@ ms.locfileid: "93414148"
 
 如果您經常使用 Visual Studio 2015 檔，您可能會想要探索使用說明檢視器的選項，並下載該版本的離線說明書籍。 請參閱 [Microsoft Help viewer](./help-viewer/overview.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 舊版的檔](/previous-versions/visualstudio/)
 - [Visual Studio 2015 版本](/visualstudio/releasenotes/vs2015-version-history)
