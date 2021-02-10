@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd30cb2d09d042e70b5fc142ac220f2356962146
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: fe9002c3da63e9570819588035395780715e1d64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941862"
 ---
 # <a name="bitmap-element"></a>Bitmap 元素
 定義點陣圖。 點陣圖是從資源或檔案載入的。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <Bitmap guid="guidImages" href="images\MyImage.bmp" usedList="bmp1, bmp2, bmp3" />
@@ -47,7 +47,7 @@ ms.locfileid: "94974581"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[點陣圖元素](../extensibility/bitmaps-element.md)|群組點陣圖元素。|
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 81710456-2600-4468-a448-3fb21c7bda82
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e0db14b7aa641bd7da2d611b9f5156fb1da52f86
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: f052fa518df42f7e9fcea0a6d49049ada63c8178
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941901"
 ---
 # <a name="other-dialog-boxes"></a>其他對話方塊
 這些對話方塊會顯示 Spy + + 程式的相關資訊。

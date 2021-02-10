@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ed0732bc-4b8c-490f-adb1-af06869a2a6b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cf7bf067602586d90271eab1f9289a3b6b884ce
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: e9993c4482d20393a3ca46d9afcd0a8ec1b13f65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942031"
 ---
 # <a name="no-source-available"></a>沒有可用來源
 您的專案未包含您嘗試檢視之程式碼的原始程式碼。 常見的原因為在 [呼叫堆疊] 視窗或 [執行緒] 視窗中，按兩下沒有原始程式碼的模組。 您可以繼續偵錯，但無法使用來源視窗設定中斷點，或是在此位置執行其他動作。 如果您必須設定中斷點，請改用 [反組譯碼] 視窗。
@@ -37,7 +37,7 @@ ms.locfileid: "97975182"
 
  **一律顯示遺漏原始程式檔的** 反組解碼選取此選項可在沒有來源可供使用時，自動顯示 [反組解碼 **] 視窗** 。 這項設定也可以在 [選項] 對話方塊、[偵錯] 分類、[一般] 頁面中，透過選取或清除 [找不到可用的原始碼時顯示反組譯碼] 的方式變更。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [[方案屬性頁] 對話方塊、通用屬性、調試原始檔](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
 - [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [SOS.dll (SOS 調試延伸模組) ](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

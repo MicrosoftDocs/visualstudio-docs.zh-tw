@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: a7dc9030-fc98-4cf1-b943-37a4003300b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 061035933e57ea4ca8e7857f68ac3d6311bae32c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95f79062c4ca2452d6ed271660841fccb8adfca3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941810"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
 此介面描述方法。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
-IDebugMethodField : IDebugContainerField
+IDebugMethodField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
@@ -51,7 +51,7 @@ IDebugMethodField : IDebugContainerField
 ## <a name="remarks"></a>備註
  方法可以包含參數和本機變數。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio

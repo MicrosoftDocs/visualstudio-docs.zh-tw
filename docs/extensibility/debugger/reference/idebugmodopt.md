@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: ebd525e3-d140-4071-9d8c-41871de4125e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e142ed1229f59cfc22ff33cba48e9e35eb4e4406
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0aff72199b6b79f2cca30e99533311ac617816b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726989"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941771"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
 表示 debug 選擇性修飾詞。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugModOpt : IUnknown
@@ -36,7 +36,7 @@ IDebugModOpt : IUnknown
 |------------|-----------------|
 |[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|抓取選用修飾詞的清單。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Sh. h
 
  命名空間： VisualStudio

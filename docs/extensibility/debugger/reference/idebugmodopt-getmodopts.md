@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: cb513fa9-d521-4a65-b968-f55f53a368df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5ab870db3ae3517b60bebd4815e4530f6035b327
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78ddcaa6a062b844c3f60c04f7a08aa673c69f67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941784"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
 抓取選用修飾詞的清單。

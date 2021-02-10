@@ -6,13 +6,13 @@ ms.prod: visual-studio-windows
 ms.technology: vs-javascript
 ms.author: mikejo
 author: mikejo5000
-manager: jillfra
-ms.openlocfilehash: 2bf1d84db39efcd826331e87a8a525571755f6d4
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
-ms.translationtype: HT
+manager: jmartens
+ms.openlocfilehash: d436113067252db785cf097c272ace7b5f1b3a1b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80274046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942057"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio 中的 JavaScript
 

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ac14eff05c6f776181c20acde4cff4e2ed7a87b6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e1092f48ad699291ccad9abcc8c834344821c060
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942122"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>逐步解說：在 Outlook 中顯示含有電子郵件訊息的自訂工作窗格
   本逐步解說示範如何顯示自訂工作窗格的唯一實例，其中包含每個建立或開啟的電子郵件訊息。 使用者可以使用每則電子郵件訊息功能區上的按鈕，顯示或隱藏自訂工作窗格。
@@ -260,7 +260,7 @@ ms.locfileid: "97522712"
 
     這個 VSTO 增益集也會處理您可以嘗試的更進階案例。 例如，您可以使用 [ **下一個專案]** 和 [ **上一個** 專案] 按鈕來測試在查看電子郵件時的行為。 您也可以在卸載 VSTO 增益集時測試行為、開啟數個電子郵件訊息，然後重載 VSTO 增益集。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  您可以透過下列主題，進一步了解如何建立自訂工作窗格：
 
 - 針對不同的應用程式，在 VSTO 增益集中建立自訂工作窗格。 如需支援自訂工作窗格之應用程式的詳細資訊，請參閱 [自訂工作窗格](../vsto/custom-task-panes.md)。

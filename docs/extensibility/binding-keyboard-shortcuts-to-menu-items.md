@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: bed07019b3651ba7b0fe2959d06f0634374bb31a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941927"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>將鍵盤快速鍵系結至功能表項目
 若要將鍵盤快速鍵系結至自訂功能表命令，請只將專案加入至封裝的 *.vsct* 檔案。 本主題說明如何將鍵盤快速鍵對應至自訂按鈕、功能表項目或工具列命令，以及如何在預設編輯器中套用鍵盤對應，或將它限制為自訂編輯器。

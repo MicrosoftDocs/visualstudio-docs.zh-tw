@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ffe163ab567de98161f185ba2f3d2522c505095
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: e6ad377ddb457018099256cd64b6b8382c69df81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942070"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具流覽程式碼
 
@@ -82,7 +82,7 @@ Visual Studio 偵錯工具可協助您流覽程式碼來檢查應用程式的狀
 
 在進行偵錯工具時，您可能不在意函式，或您知道它的運作方式，就像是經過妥善測試的程式庫程式碼。 您可以使用下列命令，在程式碼逐步執行時略過程式碼。 函數仍會執行，但偵錯工具會略過這些函式。
 
-|鍵盤命令|偵錯功能表命令|描述|
+|鍵盤命令|偵錯功能表命令|Description|
 |----------------------|------------------|-----------------|
 |**F10**|**逐程序**|如果目前的行包含函式呼叫，[不進入函式] **會執行程式** 代碼，然後在呼叫的函式傳回之後，于第一行程式碼上暫停執行。|
 |**Shift** +**F11**|**跳出**|**跳出** 執行程式碼，並在目前的函式傳回時暫停執行。 偵錯工具會略過目前的函式。|
@@ -187,7 +187,7 @@ Visual Studio 的中斷點提供一組豐富的其他功能，例如條件式中
 ## <a name="step-into-properties-and-operators-in-managed-code"></a><a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 逐步執行 Managed 程式碼中的屬性及運算子
  偵錯工具預設為不進入 Managed 程式碼中的屬性及運算子。 在大部分情況下，這會產生比較令人滿意的偵錯經驗。 若要啟用逐步執行屬性或運算子，請選擇 [ **Debug**  >  **選項**]。 在 [**調試**  >  **一般**] 頁面上，清除 [不進入 **屬性和運算子] ([僅限 Managed)** ] 核取方塊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [什麼是偵錯？](../debugger/what-is-debugging.md)
 - [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)
 - [先查看調試](../debugger/debugger-feature-tour.md)
