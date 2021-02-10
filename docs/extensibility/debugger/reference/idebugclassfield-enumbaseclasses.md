@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 78749674-ef75-46d3-a1f4-ff33afd90e32
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12317c549050be31ac9e19bc7b3d8a6683f743d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8648890e030799b985a4e917be8caf85292528a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947095"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 建立此類別之基類的列舉值。
@@ -28,7 +28,7 @@ ms.locfileid: "80734468"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT EnumBaseClasses( 
+HRESULT EnumBaseClasses( 
    IEnumDebugFields** ppEnum
 );
 ```

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b9eb39ee-84af-4ace-9cfe-236b3d48aff5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd01785fee7ce65296bac940fb19819415139d53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba5456ba3beabb1d5418d739be2aa74838daa41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947173"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 抓取 managed 程式碼介面，此介面表示與此別名相關聯的值。
@@ -28,14 +28,14 @@ ms.locfileid: "80736486"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetICorDebugValue(
-   IUnknown** ppUnk
+HRESULT GetICorDebugValue(
+   IUnknown** ppUnk
 );
 ```
 
 ```csharp
 int GetICorDebugValue(
-   out object ppUnk
+   out object ppUnk
 );
 ```
 

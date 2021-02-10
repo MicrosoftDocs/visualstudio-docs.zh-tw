@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], saving Visio documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 29f8cbc8aa7b2ea796109a8143d348905df671f7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a9d3b8e7d7e7e1a0a58dee5ceb5f1ca49753930f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525386"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947758"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>如何：以程式設計方式儲存 Visio 檔
   儲存 Microsoft Office Visio 文件的方式有很多種：

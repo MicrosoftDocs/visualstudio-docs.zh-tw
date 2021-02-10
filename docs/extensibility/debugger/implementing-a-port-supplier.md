@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72963660e4f50a72cdbc04bab4833b397d15fc27
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 8bec31bb49433b7058ca7021091582f89933f0b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947680"
 ---
 # <a name="implement-a-port-supplier"></a>執行埠供應商
 埠供應商會在對會話 debug manager (SDM) 的要求上提供埠。 當您對非 DCOM 電腦或新裝置需要支援時，必須執行埠供應商。 例如，若要提供對行動電話的偵測，您可以設定埠供應商，以提供埠，連接到行動電話 (可能是透過 IR 或資料格連接) 並列舉電話上執行的處理常式和程式。
