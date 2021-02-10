@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 355ca667f0f909ebedc6f404ded545b3f862a444
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 89d2da35fb7ffa81ec9f6a882e6b35d42fc8f00c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952430"
 ---
 # <a name="debugger-contexts"></a>偵錯工具內容
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 調試中，debug engine (DE) 在數個不同的內容中同時運作，如下所示：

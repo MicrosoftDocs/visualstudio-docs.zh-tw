@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd5f15f16894faf6d47700e34db4d99a1fa3cb5a
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8d7e0065cf66f0d46680ab725537dbe4176928b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876593"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953067"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
 整合式開發環境 (IDE) 中的 [ **屬性** ] 視窗 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可以顯示專案和設定屬性。 您可以為自己的專案類型提供屬性頁，讓使用者可以設定應用程式的屬性。
@@ -92,7 +92,7 @@ ms.locfileid: "97876593"
 
  設定屬性會在 [設定] 屬性 `MyConfigProp` 頁上顯示為 [**我** 的分類] 類別中的 [我的設定]**屬性**。 如果選取此選項，[描述]、[ **我的描述**] 會出現在 [描述] 面板中。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [新增和移除屬性頁](../../extensibility/adding-and-removing-property-pages.md)
 - [專案](../../extensibility/internals/projects.md)
 - [範本目錄描述檔 (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

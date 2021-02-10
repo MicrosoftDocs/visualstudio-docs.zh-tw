@@ -6,15 +6,15 @@ ms.topic: overview
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f29fd0a69ceafa33c00593b67f6775a723780c26
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: f31ed0ccb09074798ddf56f601e9ad26facd505f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952534"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>適用於 Visual Studio 的影像和圖示
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio 中使用的影像

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d4c12626550e36acc1a135258750f2d96ac5e81d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952586"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>逐步解說：匯入 SharePoint Designer 可重複使用的工作流程
 
@@ -41,7 +41,7 @@ ms.locfileid: "95970186"
 
 - 將 SharePoint Designer 可重複使用的工作流程匯出至 *.wsp* 檔和 sharepoint。
 
-- 使用匯 *.wsp* [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 入可重複使用的工作流程專案，將 .wsp 檔案匯入到中。
+- 使用匯 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 入可重複使用的工作流程專案，將 .wsp 檔案匯入到中。
 
 - 藉由加入程式碼來改變工作流程。
 
@@ -77,7 +77,7 @@ ms.locfileid: "95970186"
 
     這會在 SharePoint Designer 中開啟新的子網站。 關閉此 SharePoint Designer 實例，然後回到頂層網站)  (第一個實例。
 
-6. 重複步驟 3-5 來建立第二個子網站，這次以 SPD2 取代中的單字 **子網站** [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 。 **SPD2**
+6. 重複步驟 3-5 來建立第二個子網站，這次以 SPD2 取代中的單字 **子網站** [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 。 
 
 ## <a name="create-a-sharepoint-designer-reusable-workflow"></a>建立 SharePoint Designer 可重複使用的工作流程
  因為 SharePoint 不包含可在此範例中使用的任何可重複使用工作流程，所以您會建立一個。 在這個簡單的工作流程中，當使用者在具有特定標題的工作清單中輸入新工作時，該工作會指派給該使用者。
@@ -153,11 +153,11 @@ ms.locfileid: "95970186"
 9. 在 [檔案 **下載** ] 對話方塊中，選擇 [ **儲存** ] 按鈕，將 *.wsp* 檔案儲存在本機系統上。
 
 ## <a name="import-the-wsp-file-into-visual-studio"></a>將 .wsp 檔案匯入 Visual Studio
- 使用匯 *.wsp* [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 入可重複使用的工作流程專案，將 .wsp 檔案匯入到中。 此專案會將工作流程從可重複使用的宣告式工作流程轉換成程式碼工作流程。 轉換工作流程之後，您將使用程式碼來修改其行為。
+ 使用匯 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 入可重複使用的工作流程專案，將 .wsp 檔案匯入到中。 此專案會將工作流程從可重複使用的宣告式工作流程轉換成程式碼工作流程。 轉換工作流程之後，您將使用程式碼來修改其行為。
 
 #### <a name="to-import-a-workflow-from-a-wsp-file-and-modify-it"></a>從 .wsp 檔案匯入工作流程並加以修改
 
-1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的功能表列上，選擇 [ **File** 檔案  >  **新增**  >  **專案**]。
+1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的功能表列上，選擇 [ 檔案  >  **新增**  >  **專案**]。
 
 2. 在 [**新增專案**] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic**] 底下的 [ **SharePoint** ] 節點，然後選擇 [ **2010** ] 節點。
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55950d8498b436d38d2145c2692556330718883e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952664"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>逐步解說：擴充伺服器總管以顯示 web 元件
   在 Visual Studio 中，您可以使用 **伺服器總管** 的 [ **sharepoint 連接**] 節點來查看 sharepoint 網站上的元件。 不過， **伺服器總管** 預設不會顯示某些元件。 在這個逐步解說中，您將延伸 **伺服器總管** ，使其在每個連線的 SharePoint 網站上顯示網頁元件庫。
@@ -45,7 +45,7 @@ ms.locfileid: "95970215"
 > [!NOTE]
 > 如需本逐步解說中使用用戶端物件模型（而不是其伺服器物件模型）的替代版本，請參閱 [逐步解說：在伺服器總管擴充功能中呼叫 sharepoint 用戶端物件模型](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
  您需要在開發電腦上執行下列元件，才能完成此逐步解說：
 
 - 支援的 Windows 版本、SharePoint 及 Visual Studio。

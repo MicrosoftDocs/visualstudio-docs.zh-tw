@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c47a920e99ece3fb0853e4e6a26dba3c8d0c45c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8fa51311bb7548889cccdd2eb91e70a4679fb5de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726027"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953301"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 此介面是由偵錯工具引擎傳送 (DE) 至會話 debug manager (SDM) 以輸出字串。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugOutputStringEvent2 : IUnknown
@@ -48,7 +48,7 @@ IDebugOutputStringEvent2 : IUnknown
 
  使用 [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) 傳送不需要回應的錯誤訊息。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

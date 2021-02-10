@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a04f47a6500c0cd2174d0567029a4f5c86d9f62d
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: ef05b65b1a018772f4354062aa1be285c40b0d90
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952170"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -31,7 +31,7 @@ ms.locfileid: "97615723"
 
 在呼叫 SccOpenProject 時，IDE 會將函式指標傳遞給此函式的函式指標，作為 `lpTextOutProc` 參數。 [](../extensibility/sccopenproject-function.md) 在 SCC 作業期間（例如，在呼叫涉及許多檔案的 [SccGet](../extensibility/sccget-function.md) 中間），外掛程式可以呼叫函式 `LPTEXTOUTPROC` ，定期傳遞要顯示的字串。 IDE 可以適當地在狀態列、輸出視窗或個別的訊息方塊中顯示這些字串。 IDE 可以選擇性地顯示具有 [ **取消** ] 按鈕的特定訊息。 這可讓使用者取消作業，並讓 IDE 能夠將這項資訊傳回外掛程式。
 
-## <a name="signature"></a>簽章
+## <a name="signature"></a>簽名
  IDE 的 output 函數具有下列簽章：
 
 ```cpp

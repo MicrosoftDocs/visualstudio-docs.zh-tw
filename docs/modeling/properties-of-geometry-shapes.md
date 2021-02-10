@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, geometry shape
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e66f68079ae97f0a2514a77acab4d779561ed86
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4bcb7bb1bb3950fbc79d9151b8b98ba3b2032494
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951767"
 ---
 # <a name="properties-of-geometry-shapes"></a>幾何圖案的屬性
 您可以使用幾何圖形來指定網域類別的實例如何以網域指定的語言顯示。 如需詳細資訊，請參閱 [如何定義 Domain-Specific 語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需有關如何使用這些屬性的詳細資訊，請參閱 [自訂和擴充 Domain-Specific 語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -44,15 +44,15 @@ ms.locfileid: "97360659"
 |名稱|此圖形的名稱。|目前的名稱|
 |命名空間|與這個圖形關聯的命名空間。|目前的命名空間|
 |工具提示類型|工具提示的定義方式 (固定、變數或無) 。 如果已修正，則 `Fixed Tooltip Text` 會使用屬性的值做為工具提示; 如果是變數，則會在自訂程式碼中定義工具提示。|無|
-|附註|與此元素相關聯的非正式附注。|\<none>|
+|備註|與此元素相關聯的非正式附注。|\<none>|
 |初始高度|此圖形的初始高度（以英寸為單位）。|1|
 |初始寬度|此圖形的初始寬度（以英寸為單位）。|1.5|
 |公開填滿色彩作為屬性<br /><br /> 公開填滿漸層模式<br /><br /> 公開大綱色彩作為屬性<br /><br /> 公開大綱樣式為屬性<br /><br /> 公開框線粗細作為屬性<br /><br /> 公開文字色彩|如果為 `True` ，則使用者可以設定圖形的 [已陳述] 屬性。 若要設定此設定，請以滑鼠右鍵按一下圖形定義，然後按一下 [ **新增公開**]。|否|
-|說明|用來記錄所產生之設計工具的描述。|\<none>|
+|Description|用來記錄所產生之設計工具的描述。|\<none>|
 |顯示名稱|將在此圖形產生的設計工具中顯示的名稱。|\<none>|
 |修正工具提示文字|用於固定工具提示的文字。|\<none>|
 |說明關鍵字|用來為此圖形的 F1 說明編制索引的關鍵字。|\<none>|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

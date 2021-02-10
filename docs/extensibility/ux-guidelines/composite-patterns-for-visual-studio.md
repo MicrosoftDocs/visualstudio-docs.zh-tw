@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715817"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952092"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>適用於 Visual Studio 的複合模式
 複合模式會將互動和設計項目合併在不同的設定中。 Visual Studio 中與一致性相關的一些最重要複合模式包括：
@@ -437,11 +437,11 @@ ms.locfileid: "97715817"
 
  清單中的選取專案可能是連續、脫離或區域。 如果允許多重選取，則應該一律支援連續和不連續的選取專案，而支援區域 (box) 選取專案是選擇性的。 區域選取專案是透過在清單主體的空白字元中拖曳來起始。
 
-| Object | 選項 |
+| Object | 選取 |
 |--------|------------|
-| 清單 | 連續 |
-| 清單 | 脫節 |
-| 清單 | 區域 |
+| List | 連續 |
+| List | 脫節 |
+| List | 區域 |
 
  按一下清單上的一次，就會選取發生點擊的資料列。 如果使用者在支援就地編輯的清單資料格中按一下時，也會立即啟用儲存格以進行就地編輯。 否則，會立即選取整個資料列並顯示反白顯示。
 
@@ -523,11 +523,11 @@ ms.locfileid: "97715817"
 ||基本體驗|優化體驗|更高的體驗|
 |-|----------------------|--------------------------|-------------------------|
 |**讓使用者可以 .。。**|修正程式碼和解決方案/專案層級的讀取，但不含失效結束|執行維護、重構和導覽工作|安心地在一致、直覺且流暢的體驗下運作|
-|**編輯器**|觸控移動和選取<br /><br /> 捲軸觸控以跳到並按下 + 拖曳|縮小縮放比例<br /><br /> 快速滾動<br /><br /> 選項<br /><br /> 快顯功能表的簡易使用||
+|**編輯器**|觸控移動和選取<br /><br /> 捲軸觸控以跳到並按下 + 拖曳|縮小縮放比例<br /><br /> 快速滾動<br /><br /> 選取<br /><br /> 快顯功能表的簡易使用||
 |**最上層工具視窗**|清單移動<br /><br /> 項目選取<br /><br /> 捲軸觸控以跳到並按下 + 拖曳|簡易專案滾動和選取||
 |**時間範圍**||調整視窗大小<br /><br /> 快速存取||
 |**檔妥善**||在開啟的檔案之間輕鬆流覽||
-|**軌跡**||確定一般手勢可跨 IDE 運作|以手勢為基礎的動作<br /><br /> 支援拖放和設計工具|
+|**手勢**||確定一般手勢可跨 IDE 運作|以手勢為基礎的動作<br /><br /> 支援拖放和設計工具|
 |**其他考量**|||自訂螢幕小鍵盤|
 
 #### <a name="gestures"></a>軌跡

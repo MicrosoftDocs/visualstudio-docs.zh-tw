@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 093db17990d538bf72ddeab9ba9da2b8db30d8f0
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: ca17eae2b4f21e9705788faa1a2371a066be6475
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616353"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952157"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>管理方案中的專案載入
 Visual Studio 的解決方案可以包含大量專案。 預設的 Visual Studio 行為是在方案開啟時載入方案中的所有專案，而不允許使用者存取任何專案，直到全部載入完成為止。 當專案載入的程式持續兩分鐘以上時，會顯示進度列，其中顯示已載入的專案數和專案總數。 使用者可以在具有多個專案的方案中工作時卸載專案，但此程式有一些缺點：卸載的專案不會建立為重建方案命令的一部分，且不會顯示已關閉專案之類型和成員的 IntelliSense 描述。

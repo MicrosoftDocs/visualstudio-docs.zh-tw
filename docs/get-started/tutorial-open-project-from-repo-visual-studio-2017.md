@@ -8,19 +8,19 @@ ms.prod: visual-studio-windows
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 6989de1c5b4542998d048e5eadd47f48dc7e05b1
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: 97bfe7178d3bd744d1e441f8428cd38e8241b721
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99181291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951923"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>教學課程：在 Visual Studio 2017 的存放庫中開啟專案
 
@@ -43,7 +43,7 @@ ms.locfileid: "99181291"
 
     ![從 [本機 Git 存放庫] 區段中選擇 [複製]](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. 在 [ **_輸入要複製的 Git_ 存放庫 url] 方塊中 *，輸入或貼上您存放庫的 url，然後按 _* enter**。 (您可能會看見登入 GitHub 的提示；如果看見提示，請登入)。
+1. 在 [**輸入要複製的 Git** 存放庫 url] 方塊中，輸入或貼上存放庫的 url，然後按 _ * Enter * *。 (您可能會看見登入 GitHub 的提示；如果看見提示，請登入)。
 
    當 Visual Studio 複製您的存放庫之後，[Team Explorer] 即會關閉，而 [方案總管] 即會開啟。 隨即出現一則訊息，指出「按一下上方的 [解決方案與資料夾] 可檢視解決方案清單」。 選擇 [解決方案與資料夾]。
 

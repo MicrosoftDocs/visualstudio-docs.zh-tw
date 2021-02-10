@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: ab8f04ff885f4b57d24cb3bc0eb449859fca6271
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715882"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952183"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>適用於 Visual Studio 的通用控制項模式
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> 通用控制項
@@ -301,7 +301,7 @@ Visual Studio 中的大部分按鈕會出現在公用程式對話方塊中，不
 > [!NOTE]
 > 使用者必須索引標籤至這些按鈕 (沒有) 的存取金鑰，因此請以合理的順序放置它們。 將 `name` 按鈕的屬性對應至它所採取的動作，讓畫面讀取器正確地解讀按鈕動作。
 
-| 函數 | 按鈕 |
+| 函式 | 按鈕 |
 | --- | --- |
 | 加 | ![圖形 [加入] 按鈕](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
 | 移除 | ![圖形 [移動] 按鈕](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
@@ -343,7 +343,7 @@ Visual Studio 中的大部分按鈕會出現在公用程式對話方塊中，不
 
 ![不正確：樹狀檢視節點的不適當樣式](../../extensibility/ux-guidelines/media/070705-2_treeviewincorrect1.png "070705-2_TreeViewIncorrect1")<br />不正確：樹狀檢視節點的不適當樣式
 
-#### <a name="selection"></a>選項
+#### <a name="selection"></a>選取
 當您在樹狀檢視內選取節點時，反白顯示應該會擴充至樹狀檢視控制項的全形。 這可協助使用者清楚地識別他們所選取的專案。 選取色彩應該會反映目前的 Visual Studio 主題。
 
 ![正確：反白顯示選取的節點符合整個樹狀檢視控制項的寬度。](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />正確：反白顯示選取的節點符合整個樹狀檢視控制項的寬度。

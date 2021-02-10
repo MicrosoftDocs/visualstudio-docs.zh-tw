@@ -6,15 +6,15 @@ ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28d70c0ea95c9373eb87e6199d53f1b43fadd508
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 05792636e1094c53869f0235145aec73b26deea9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952976"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>產生結構的 Equals 時產生 IEquatable 運算子
 
@@ -32,7 +32,7 @@ ms.locfileid: "96617197"
 
 - Implements IEquatable 介面會執行特定類型的 Equals ( # A1 方法。
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將游標放在您的結構宣告行的某個位置。
 

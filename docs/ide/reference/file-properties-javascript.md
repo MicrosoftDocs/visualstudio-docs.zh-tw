@@ -25,30 +25,30 @@ f1_keywords:
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: efe1486cf8ac2b64965ed157abbb47dc2d8c7b6c
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: c54ce24025f9ec15bc03d02825e961f9a03f3715
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952950"
 ---
 # <a name="file-properties-javascript"></a>JavaScript、檔案屬性
 
 您可以使用檔案屬性，指出專案系統應該對檔案執行哪些動作。 例如，您可以設定檔案屬性，指出是否應該將檔案新增至套件以作為資源檔。
 
-您可以在方案總管中選取任何檔案，然後在 [屬性] 視窗中檢查其屬性。 JavaScript 檔案有四個屬性：[複製到輸出目錄]****、[套件動作]****、[檔案名稱]**** 和 [檔案路徑]****。
+您可以在方案總管中選取任何檔案，然後在 [屬性] 視窗中檢查其屬性。 JavaScript 檔案有四個屬性：[複製到輸出目錄]、[套件動作]、[檔案名稱] 和 [檔案路徑]。
 
 ## <a name="file-properties"></a>檔案屬性
 此區段描述 JavaScript 檔案的共用屬性。
 
 ### <a name="copy-to-output-directory-property"></a>複製到輸出目錄屬性
-此屬性指定將選取的來源檔案複製到輸出目錄的條件。 如果永遠不要將檔案複製到輸出目錄，請選取 [不要複製]****。 如果一律要將檔案複製到輸出目錄，請選取 [一律複製]****。 只要複製版本比輸出目錄中同名現有檔案還要新的檔案時，請選取 [有更新時才複製]****。
+此屬性指定將選取的來源檔案複製到輸出目錄的條件。 如果永遠不要將檔案複製到輸出目錄，請選取 [不要複製]。 如果一律要將檔案複製到輸出目錄，請選取 [一律複製]。 只要複製版本比輸出目錄中同名現有檔案還要新的檔案時，請選取 [有更新時才複製]。
 
 ### <a name="package-action"></a>套件動作
-[套件動作]**** 屬性指出 Visual Studio 在執行組建時對檔案執行的動作。 [套件動作]**** 可以有數個值之一：
+[套件動作] 屬性指出 Visual Studio 在執行組建時對檔案執行的動作。 [套件動作] 可以有數個值之一：
 
 - **無**：檔案未包含在套件資訊清單中。 範例是包含讀我檔案這類文件的文字檔。
 
@@ -58,10 +58,10 @@ ms.locfileid: "91947787"
 
 - **資源**：檔案未包含在套件資訊清單中。 相反地，會以進入套件資訊清單的套件資源索引 (PRI) 編製檔案內容的索引。 這通常用於資源檔。
 
-[套件動作]**** 的預設值取決於您新增至方案之檔案的副檔名。
+[套件動作] 的預設值取決於您新增至方案之檔案的副檔名。
 
 ### <a name="file-name-property"></a>檔案名稱屬性
-將檔案名稱顯示為唯讀值。 若要將檔案重新命名，您必須以滑鼠右鍵按一下方案總管，然後選取 [重新命名]****。
+將檔案名稱顯示為唯讀值。 若要將檔案重新命名，您必須以滑鼠右鍵按一下方案總管，然後選取 [重新命名]。
 
 ### <a name="full-path-property"></a>完整路徑屬性
 將檔案的完整路徑顯示為唯讀值。 若要變更檔案的路徑，您可以在方案總管中拖放檔案。
@@ -81,7 +81,7 @@ ms.locfileid: "91947787"
 ### <a name="identity"></a>身分識別
 顯示專案中所使用參考的身分識別，這儲存在專案檔中。
 
-### <a name="package"></a>Package
+### <a name="package"></a>套件
 顯示與參考建立關聯的套件資訊清單名稱。
 
 ### <a name="resolved-path"></a>已解析路徑

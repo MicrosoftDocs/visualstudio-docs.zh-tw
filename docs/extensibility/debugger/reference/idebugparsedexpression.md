@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: be6486ed-b070-4898-95b1-58581bcb4447
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22069b8eedb06d67eafaf7333f379a057c1b6f23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 573c1528d37bd41d364430d610a31f4dfe89e4f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726004"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953223"
 ---
 # <a name="idebugparsedexpression"></a>IDebugParsedExpression
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80726004"
 
  這個介面表示已剖析的運算式可供評估。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugParsedExpression : IUnknown
@@ -47,7 +47,7 @@ IDebugParsedExpression : IUnknown
 ## <a name="remarks"></a>備註
  當呼叫端準備好評估運算式時，它會呼叫 [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 來傳回包含評估結果的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 。 這兩個部分的評估、剖析然後進行評估，可讓剖析的運算式多次評估，以略過剖析運算式的耗時處理常式。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： ee. h
 
  命名空間： VisualStudio

@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 46e3f307-219d-40cd-a929-d41399c60ecf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 83d48e8df847620716b0f581be65ded48e2e5a13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6385765c8062040da2f42ba56fcc6e8a16ca02e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953210"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
 將這個暫止中斷點系結至一個或多個程式碼位置。
@@ -29,8 +29,8 @@ ms.locfileid: "80725983"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT Bind( 
-   void 
+HRESULT Bind( 
+   void 
 );
 ```
 

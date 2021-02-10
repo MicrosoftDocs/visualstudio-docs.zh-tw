@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d080791c94c77577f80a4b55db67febd3d48b56a
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 305966a4cd4ec67994ac3dbd6c7ba0e25a14172f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597505"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951689"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>將命令新增至方案總管的工具列
 本逐步解說將示範如何將按鈕新增至 **方案總管** 工具列。
 
- 工具列或功能表上的任何命令都稱為 Visual Studio 中的按鈕。 按一下按鈕時，就會執行命令處理常式中的程式碼。 通常會將相關的命令群組在一起，以形成一個群組。 功能表或工具列可作為群組的容器。 優先權決定群組中個別命令出現在功能表或工具列上的順序。 您可以藉由控制控制項的可見度，防止按鈕顯示在工具列或功能表上。 .Vsct 檔案的區段中所列的命令 `<VisibilityConstraints>` 只 *.vsct* 會出現在相關聯的內容中。 可見度無法套用至群組。
+ 工具列或功能表上的任何命令都稱為 Visual Studio 中的按鈕。 按一下按鈕時，就會執行命令處理常式中的程式碼。 通常會將相關的命令群組在一起，以形成一個群組。 功能表或工具列可作為群組的容器。 優先權決定群組中個別命令出現在功能表或工具列上的順序。 您可以藉由控制控制項的可見度，防止按鈕顯示在工具列或功能表上。 .Vsct 檔案的區段中所列的命令 `<VisibilityConstraints>` 只會出現在相關聯的內容中。 可見度無法套用至群組。
 
  如需功能表、工具列命令和 *.vsct* 檔案的詳細資訊，請參閱 [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。
 
@@ -78,7 +78,7 @@ ms.locfileid: "95597505"
      應該會顯示一個對話方塊，其中包含在 **SolutionToolbar ( # B1 內** 的訊息 ToolbarButtonPackage。
 
 ## <a name="control-the-visibility-of-a-button"></a>控制按鈕的可見度
- 本逐步解說的這個部分會示範如何控制工具列上按鈕的可見度。 藉由將內容設定為 SolutionToolbar. .vsct 檔案區段中的一或多個專案 `<VisibilityConstraints>` ，您就可以限制只有在專案或專案開啟時才會顯示按鈕。 *SolutionToolbar.vsct*
+ 本逐步解說的這個部分會示範如何控制工具列上按鈕的可見度。 藉由將內容設定為 SolutionToolbar. .vsct 檔案區段中的一或多個專案 `<VisibilityConstraints>` ，您就可以限制只有在專案或專案開啟時才會顯示按鈕。 
 
 ### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>開啟一或多個專案時顯示按鈕
 

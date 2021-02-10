@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: f8383ab1-eb49-4d3f-8608-d8b4d51a81be
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: ef1f4ef1c50db1234425ab164f377dab5ff12ea6
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 190e67b3471162f29273d56f3e1cbeee6d09e557
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952820"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>收集 ASP.NET Web 應用程式的統計資料
 
@@ -33,7 +33,7 @@ ms.locfileid: "98149530"
 
 ## <a name="common-tasks"></a>常見工作
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**將分析工具附加至 ASP.NET 應用程式**|-   [如何：將分析工具附加至 ASP.NET web 應用程式以收集應用程式統計資料](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|
 
@@ -41,7 +41,7 @@ ms.locfileid: "98149530"
 
 ### <a name="profile-aspnet-web-applications"></a>分析 ASP.NET Web 應用程式
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**使用檢測方法進行分析**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
 |**分析記憶體配置和記憶體回收**|-   [收集記憶體資料](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
@@ -49,7 +49,7 @@ ms.locfileid: "98149530"
 
 ### <a name="sample-method"></a>取樣方法
 
-|工作|相關內容|
+|Task|相關內容|
 |----------|---------------------|
 |**分析獨立 (用戶端) 應用程式**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |-   **設定檔服務**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|

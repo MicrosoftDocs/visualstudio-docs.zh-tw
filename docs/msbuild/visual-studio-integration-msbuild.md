@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 17cb665d1b5ae399647868652f2b1e73fcd4543e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: ff8f195b6d77aeab9a01a6f3f6262f4024de1153
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951650"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 
@@ -38,7 +38,7 @@ Visual Studio 裝載 MSBuild 以載入和建立 managed 專案。 因為 MSBuild
 
 ## <a name="project-file-name-extensions"></a>專案檔副檔名
 
- *MSBuild.exe* 會辨識符合模式的任何專案檔名稱延伸 *。 \*proj* 。 不過，Visual Studio 只能辨識這些專案副檔名的子集，以決定將載入專案的特定語言專案系統。 Visual Studio 沒有以語言中立的 MSBuild 為基礎的專案系統。
+ *MSBuild.exe* 會辨識符合模式的任何專案檔名稱延伸 *。 \*proj*。 不過，Visual Studio 只能辨識這些專案副檔名的子集，以決定將載入專案的特定語言專案系統。 Visual Studio 沒有以語言中立的 MSBuild 為基礎的專案系統。
 
  例如，c # 專案系統載入 *.csproj* 檔案，但 Visual Studio 無法載入 *xxproj* 檔案。 任意語言的原始程式檔專案檔必須使用與 Visual Basic 或 c # 專案檔相同的副檔名，才能在 Visual Studio 中載入。
 
@@ -60,7 +60,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="additional-build-actions"></a>其他建置動作
 
- Visual Studio 可讓您使用 [ **檔案屬性** ] 視窗的 [ **建立動作** ] 屬性，來變更專案中檔案的專案類型名稱。 **Compile** 、 **EmbeddedResource** 、 **Content** 和 **None** 項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 **JScript** 加入至所有會匯入此類型之專案的這個功能表中：
+ Visual Studio 可讓您使用 [**檔案屬性**] 視窗的 [**建立動作**] 屬性，來變更專案中檔案的專案類型名稱。 **Compile**、**EmbeddedResource**、**Content** 和 **None** 項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 **JScript** 加入至所有會匯入此類型之專案的這個功能表中：
 
 ```xml
 <ItemGroup>
@@ -99,7 +99,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="display-properties-and-items"></a>顯示屬性和項目
 
- Visual Studio 會辨識某些屬性名稱和值。 例如，在專案中下列屬性會使 [ **Windows 應用程式** ] 出現在 [ **專案設計工具** ] 的 [ **應用程式類型** ] 方塊中。
+ Visual Studio 會辨識某些屬性名稱和值。 例如，在專案中下列屬性會使 [ **Windows 應用程式** ] 出現在 [ **專案設計工具** ] 的 [ **應用程式類型**] 方塊中。
 
 ```xml
 <OutputType>WinExe</OutputType>
@@ -148,17 +148,17 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>若要在 Visual Studio 中卸載和編輯專案檔
 
-1. 在 [ **方案總管** ] 中，開啟專案的捷徑功能表，然後選擇 [ **卸載專案** ]。
+1. 在 [ **方案總管**] 中，開啟專案的捷徑功能表，然後選擇 [ **卸載專案**]。
 
-     專案便會標記為 [ **(無法使用)** ]。
+     專案便會標記為 [ **(無法使用)**]。
 
-2. 在 **方案總管** 中，開啟無法使用之專案的快捷方式功能表，然後選擇 [ **編輯 \<Project File>** ]。
+2. 在 **方案總管** 中，開啟無法使用之專案的快捷方式功能表，然後選擇 [**編輯 \<Project File>**]。
 
      專案檔隨即在 [Visual Studio XML 編輯器] 中開啟。
 
 3. 編輯、儲存，然後關閉專案檔。
 
-4. 在 [ **方案總管** ] 中，開啟無法使用之專案的捷徑功能表，然後選擇 [ **重新載入專案** ]。
+4. 在 [ **方案總管**] 中，開啟無法使用之專案的捷徑功能表，然後選擇 [ **重新載入專案**]。
 
 ## <a name="intellisense-and-validation"></a>IntelliSense 和驗證
 
@@ -198,11 +198,11 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="performance-shortcuts"></a>效能捷徑
 
- 如果您使用 Visual Studio IDE，藉由選擇 F5 鍵或在功能表列上選擇 [ **Debug** 開始偵錯工具] 來啟動調試  >  **Start Debugging** 程式 () 或建立專案 (例如，組建 **Build**  >  **組建方案** ) ，組建程式會使用快速更新檢查來改善效能。 在某些情況下，自訂組建會建立輪流建置的檔案，此時快速更新檢查就無法正確識別變更的檔案。 需要更完整更新檢查的專案可以藉由設定環境變數 `DISABLEFASTUPTODATECHECK=1`關閉快速檢查。 或者，專案可以在專案中或專案匯入的檔案中將此設為 MSBuild 屬性。
+ 如果您使用 Visual Studio IDE，藉由選擇 F5 鍵或在功能表列上選擇 [ **Debug** 開始偵錯工具] 來啟動調試  >  程式 () 或建立專案 (例如，組建  >  **組建方案**) ，組建程式會使用快速更新檢查來改善效能。 在某些情況下，自訂組建會建立輪流建置的檔案，此時快速更新檢查就無法正確識別變更的檔案。 需要更完整更新檢查的專案可以藉由設定環境變數 `DISABLEFASTUPTODATECHECK=1`關閉快速檢查。 或者，專案可以在專案中或專案匯入的檔案中將此設為 MSBuild 屬性。
 
  快速更新檢查並不適用 Visual Studio 中的定期組建，而且專案的建置方式就如同您在命令提示字元中叫用組建一般。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：擴充 Visual Studio 組建進程](../msbuild/how-to-extend-the-visual-studio-build-process.md)
 - [從 IDE 中啟動組建](../msbuild/starting-a-build-from-within-the-ide.md)
