@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 17ec9f9e-dc06-4532-b5db-da52efcc8630
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89c8cac9a7c2baa020002fe852330639d7081982
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69a65488d38fe2562392be152e448369ff081915
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962154"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 此介面代表程式碼路徑的清單。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumCodePaths2 : IUnknown
@@ -39,7 +39,7 @@ IEnumCodePaths2 : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|抓取列舉序列中指定的程式碼路徑數目。|
+|[下一步](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|抓取列舉序列中指定的程式碼路徑數目。|
 |[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|略過列舉序列中指定數目的程式碼路徑。|
 |[重設](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|將列舉順序重設為開頭。|
 |[複製](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
@@ -48,7 +48,7 @@ IEnumCodePaths2 : IUnknown
 ## <a name="remarks"></a>備註
  程式碼路徑代表程式中的分支點或函式呼叫。 程式碼路徑清單代表執行程式碼的路徑。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

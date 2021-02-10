@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: e22d3723-b4d4-4524-8a2f-3adb55bbd273
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20a11488c32b4259105e346e7fa28fd706e48a48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4856588a0ca5644317aba6a61d270b390d955b73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961868"
 ---
 # <a name="module_info_flags"></a>MODULE_INFO_FLAGS
 指定模組的符號狀態。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_MODULE_INFO_FLAGS {
@@ -47,7 +47,7 @@ public enum enum_MODULE_INFO_FLAGS {
 ## <a name="remarks"></a>備註
  [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)方法會傳回這個值。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

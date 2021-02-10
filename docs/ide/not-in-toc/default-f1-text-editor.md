@@ -7,15 +7,15 @@ ms.custom: contperf-fy21q1
 robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
-manager: jillfra
+manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 1b2c34a2cb93bccd8b9f85d9dcbae9dfb86cae89
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 6d30a7bf02202b8114e594c94f7564a1d8683e32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684073"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961647"
 ---
 # <a name="f1-help-for-the-text-editor"></a>文字編輯器的 F1 說明
 

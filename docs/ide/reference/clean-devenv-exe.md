@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6023df4e0f8721f18a82950c0ea507406fd48e02
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: d4c3fdc30737a2266241e19ae40f840a41784cc1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96041045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963285"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 

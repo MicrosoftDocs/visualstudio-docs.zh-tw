@@ -9,22 +9,22 @@ helpviewer_keywords:
 - Tier Interactions view
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9021f814f093151c6d65beaececc0fa99a662d44
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 350810bba477f5a86963862fb496cf05eaf2c810
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722512"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963181"
 ---
 # <a name="tier-interactions-view"></a>階層互動檢視
 
 階層互動分析提供透過 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 與資料庫通訊的多介層應用程式函式執行時間的其他資訊。 只針對同步函式呼叫收集資料。
 
-**Requirements**
+**需求**
 
 - Visual Studio Enterprise
 

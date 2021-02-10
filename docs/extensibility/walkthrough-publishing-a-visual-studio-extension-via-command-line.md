@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4132d878ff1ec7689be890446a1849577fafd30
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 98c73da67e607346138d7d6fae124a86b7a34618
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877919"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961842"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>逐步解說：透過命令列發佈 Visual Studio 擴充功能
 
@@ -32,7 +32,7 @@ VsixPublisher.exe 是用來將 Visual Studio 延伸模組發佈至 Marketplace �
 
 將延伸模組發佈至 Marketplace。 延伸模組可以是 vsix、exe/msi 檔案或連結。 如果已經有相同版本的延伸模組，它會覆寫延伸模組。 如果延伸模組不存在，則會建立新的擴充功能。
 
-|命令選項 |描述 |
+|命令選項 |Description |
 |---------|---------|
 |承載 (必要)  | 要發佈之承載的路徑，或用來作為「更多資訊 URL」的連結。 |
 |publishManifest (必要)  | 要使用之發佈資訊清單檔案的路徑。 |
@@ -47,7 +47,7 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 在 Marketplace 上建立發行者。 也會將「發行者」記錄到電腦中，以供未來的動作 (例如，刪除/發佈延伸模組) 。
 
-|命令選項 |描述 |
+|命令選項 |Description |
 |---------|---------|
 |displayName (必要的)  | 發行者的顯示名稱。 |
 |publisherName (必要)  | 發行者的名稱 (例如，識別碼) 。 |
@@ -63,7 +63,7 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 刪除 Marketplace 上的發行者。
 
-|命令選項 |描述 |
+|命令選項 |Description |
 |---------|---------|
 |publisherName (必要)  | 發行者的名稱 (例如，識別碼) 。 |
 |personalAccessToken (必要)  | 用來驗證發行者的個人存取權杖。 |
@@ -76,7 +76,7 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 從 Marketplace 刪除擴充功能。
 
-|命令選項 |描述 |
+|命令選項 |Description |
 |---------|---------|
 |extensionName (必要)  | 要刪除的延伸模組名稱。 |
 |publisherName (必要)  | 發行者的名稱 (例如，識別碼) 。 |
@@ -90,7 +90,7 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 將發行者記錄至電腦。
 
-|命令選項 |描述 |
+|命令選項 |Description |
 |---------|---------|
 |需要 personalAccessToken ( | 用來驗證發行者的個人存取權杖。 |
 |publisherName (必要)  | 發行者的名稱 (例如，識別碼) 。 |
@@ -104,7 +104,7 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 將發行者登出電腦。
 
-|命令選項 |描述 |
+|命令選項 |Description |
 |---------|---------|
 |publisherName (必要)  | 發行者的名稱 (例如，識別碼) 。 |
 |ignoreMissingPublisher | 指定如果指定的發行者尚未登入，則工具不應該發生錯誤。 |
@@ -268,7 +268,7 @@ This is test extension.
 
 2. 按一下 [ **線上** ]，然後搜尋 TestPublish。
 
-3. 按一下 [下載]  。 擴充功能接著會排程安裝。
+3. 按一下 [下載] 。 擴充功能接著會排程安裝。
 
 4. 若要完成安裝，請關閉 Visual Studio 的所有實例。
 

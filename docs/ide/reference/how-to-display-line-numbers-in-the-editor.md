@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ca50674c3e16f9c43e71cfa041a0e05612740f3f
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 2ea63aac7bfa522c7a60492bf50b91be8a6bdd1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617431"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962752"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>如何：在編輯器中顯示行號
 

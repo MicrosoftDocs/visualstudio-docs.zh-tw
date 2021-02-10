@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9574a3319d3c43c17d7351e462b6956ae899d84
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 48d642c8a3b7883507c06453c0025badc299ce75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328401"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963415"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>判斷哪一個編輯器在專案中開啟檔案
 當使用者在專案中開啟檔案時，環境會經歷輪詢程式，最後開啟該檔案的適當編輯器或設計工具。 適用于標準和自訂編輯器的環境所採用的初始程式都相同。 當您輪詢要用來開啟檔案的編輯器，且 VSPackage 在此程式期間必須與環境協調時，環境會使用各種準則。

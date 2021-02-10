@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 903b33d72d3a97eb4ed3f7ad0bc865999bee54cf
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 97071500b8f3bc6cb4d6c21d264646cac2e7fdb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962921"
 ---
 # <a name="solution-sln-file"></a>方案 ( .sln) 檔
 
@@ -162,7 +162,7 @@ EndGlobal
 
 只有 .sln 檔案包含和區段中的專案 `preSolution` `postSolution` 。 .Suo 檔案中沒有類似的區段，因為解決方案需要此資訊才能正確載入。 .Suo 檔案包含使用者特定的選項（例如私用備註），不適合在原始程式碼控制之下共用或放置。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>
 - [方案使用者選項檔 (.Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)

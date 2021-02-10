@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 2daded43-e427-4fbb-a19e-f3834e3723af
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0afc4284795ae8dcae7b41d9207ddc6e7c11e67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bc76d7e7aaf9e443fc1dec08d83b3eb9e343e0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720258"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963051"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 此介面是由偵錯工具引擎傳送， (在跳過或非函式之後，將) 還原為會話 debug manager (SDM) 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugReturnValueEvent2 : IUnknown
@@ -44,7 +44,7 @@ IDebugReturnValueEvent2 : IUnknown
 ## <a name="remarks"></a>備註
  函數所傳回的值可以藉由呼叫 [GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)來取得。 傳回的值會出現在 [自動 **變數] 視窗** 中。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

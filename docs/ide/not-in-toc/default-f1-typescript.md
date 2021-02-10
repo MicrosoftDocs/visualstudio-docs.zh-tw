@@ -8,15 +8,15 @@ f1_keywords:
 - typescript
 dev_langs:
 - JavaScript
-manager: jillfra
+manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 7bb49a43a0d43c395165bda5bd86749d9a345816
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: da08ebff2a50dca190f310da732903edd667bfae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98887320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961621"
 ---
 # <a name="typescript-f1-help-for-visual-studio"></a>Visual Studio 的 TypeScript F1 說明
 

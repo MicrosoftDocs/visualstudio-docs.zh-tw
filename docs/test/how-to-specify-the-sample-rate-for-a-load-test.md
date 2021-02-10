@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: c21e38671a43755c55a3f0c37c5b8ab40ae11530
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: 7d591ad7cc97543f9167b698b0a5f0664e59b5c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962648"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>如何：指定負載測試回合設定的採樣速率
 

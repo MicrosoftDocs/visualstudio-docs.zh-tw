@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ListObject control, validating data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e60f19da0d36c5a57f0151318d6d76b43a80de37
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: dbb6582f6211f851b4734f4e9a074ce5c0bd8d8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961374"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>如何：將新的資料列加入至 ListObject 控制項時驗證資料
   使用者可以將新的資料列加入繫結至資料的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。 您可以先驗證使用者的資料，再認可資料來源的變更。

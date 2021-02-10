@@ -7,16 +7,16 @@ helpviewer_keywords:
 - profiling tools, tier interaction method views
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b358409b83a924672880cef5972ffbd3bd9a17f
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ee3f09cd3df4b3aa3b733b0a715147758f54c61a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963207"
 ---
 # <a name="tier-interaction-views"></a>階層互動檢視
 

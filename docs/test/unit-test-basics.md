@@ -8,15 +8,15 @@ f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5efed99b9934ed91b2194b5a38c99134d6d4b5e5
-ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
+ms.openlocfilehash: 755affbf52aa31539b35af4520f5a8d17254f776
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99628028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962726"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 

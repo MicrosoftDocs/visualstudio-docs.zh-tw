@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], automating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 81c2852a92124a7cf9fb6078b196982d22100be7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 11a0db0e23cf5512a6568ba5b66e0c18e563bd12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528105"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962375"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>如何：透過主要 interop 元件以 Office 應用程式為目標
   當您建立新的 Office 專案時，Visual Studio 會自動將參考加入建置專案所需的 Microsoft Office 主要 Interop 組件 (PIA)。 在下列情節中，您必須將參考加入其他 PIA：
@@ -49,7 +49,7 @@ ms.locfileid: "97528105"
     > [!NOTE]
     > 在 Office 專案中，一律使用 [**加入參考**] 對話方塊的 [ **.net** ] 索引標籤，而不是 [ **COM** ] 索引標籤，以新增 office pia 的參考。如需詳細資訊，請參閱 [Office 主要 interop 元件](../vsto/office-primary-interop-assemblies.md)。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
      元件名稱會出現在 **方案總管** 的 [**參考**] 資料夾中。
 

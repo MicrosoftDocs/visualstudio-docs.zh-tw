@@ -6,25 +6,25 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8b2bbbdf478f27f936d4897f2ff773baa4cca1d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f13128bc552ffdb31b3f4a9315a3f9aa3543b0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962687"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>使用 Node.js 互動式視窗
 
-適用於 Visual Studio 的 Node.js 工具包含用於已安裝 Node.js 執行階段的互動式視窗。 此視窗可讓您輸入 JavaScript 程式碼並立即查看結果並執行 npm 命令，以與目前的專案互動。 互動式視窗也稱為 REPL (**R**ead/**E**valuate/**P**rint **L**oop)。
+適用於 Visual Studio 的 Node.js 工具包含用於已安裝 Node.js 執行階段的互動式視窗。 此視窗可讓您輸入 JavaScript 程式碼並立即查看結果並執行 npm 命令，以與目前的專案互動。 互動式視窗也稱為 REPL (**R** ead/**E** valuate/**P** rint **L** oop)。
 
 ## <a name="open-the-interactive-window"></a>開啟互動式視窗
 
-若要開啟互動式視窗，請以滑鼠右鍵按一下 [方案總管] 中的 Node.js 專案節點，然後選取 [開啟 Node.js 互動式視窗]****。
+若要開啟互動式視窗，請以滑鼠右鍵按一下 [方案總管] 中的 Node.js 專案節點，然後選取 [開啟 Node.js 互動式視窗]。
 
 ![專案操作功能表中的 Node.js 互動式視窗](../javascript/media/interactivewindow-open-from-project.png)
 

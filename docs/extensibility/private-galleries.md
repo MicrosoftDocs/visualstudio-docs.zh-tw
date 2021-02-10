@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d5b58c5885f4fc9bd3765c818ea414bee0dbf3c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961855"
 ---
 # <a name="private-galleries"></a>私用資源庫
 您可以藉由將控制項、範本和工具張貼到組織內部網路上的私用資源 *庫* ，來共用您所開發的控制項、範本和工具，如下所示：
@@ -91,6 +91,6 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 3. 選取右窗格中的擴充功能，然後選擇 [ **更新** ] 按鈕。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)
 - [寄送 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)

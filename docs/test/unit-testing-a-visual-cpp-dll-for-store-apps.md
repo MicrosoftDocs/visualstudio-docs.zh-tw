@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 05/01/2019
 ms.topic: how-to
 ms.author: corob
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: a7ae79ff4df783d3c4541720c9fef709087e7da6
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5117ffb8731ef06f054b0ecbfc651aef2563078e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962622"
 ---
 # <a name="how-to-test-a-c-dll"></a>如何測試 c + + DLL
 

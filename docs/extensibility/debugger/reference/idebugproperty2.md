@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b04abdac135143ccbbd1b8e5632bf85c974f29d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c5cec0d93919058eae725a9e49198f1704d8bfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721232"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962193"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 這個介面代表堆疊框架屬性、程式檔案屬性或其他屬性。 屬性通常是運算式評估的結果。
@@ -25,7 +25,7 @@ ms.locfileid: "80721232"
 > [!NOTE]
 > 雖然可以表示這類實體，但不應該將「屬性」的用法與表示類別的成員變數混淆 `IDebugProperty2` 。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProperty2 : IUnknown
@@ -69,7 +69,7 @@ IDebugProperty2 : IUnknown
 
  IDE 可以使用 `IDebugProperty2` 介面，讓使用者在執行時間流覽和修改屬性。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

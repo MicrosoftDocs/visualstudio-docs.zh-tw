@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc3dd7a34e4f9a3e1b933781aeaf4e18cad7ec17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26de14b4c5e23334da85d49d5192ec332e418af8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714460"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961920"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
 此結構代表類別方法的位址。
@@ -56,9 +56,9 @@ public struct METADATA_ADDRESS_METHOD {
   (此值的方法版本對符號提供者) 而言是唯一的。
 
 ## <a name="remarks"></a>備註
- 當結構的[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 欄位 `DEBUG_ADDRESS_UNION` 設定為 `ADDRESS_KIND_METHOD` ([ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉) 中的值時，此結構就是 DEBUG_ADDRESS_UNION 結構中聯集的一部分。
+ 當結構的[](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 欄位 `DEBUG_ADDRESS_UNION` 設定為 `ADDRESS_KIND_METHOD` ([ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉) 中的值時，此結構就是 DEBUG_ADDRESS_UNION 結構中聯集的一部分。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio

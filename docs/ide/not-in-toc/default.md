@@ -7,15 +7,15 @@ ms.custom: contperf-fy21q1
 robots: noindex,nofollow
 f1_keywords:
 - vs.ambient
-manager: jillfra
+manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 3e3092c3f4cea22daf3b2b61d2c1aa8340340457
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 7026db3e4a3c9490c5ea770342d04fe477fdf28f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97683997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961608"
 ---
 # <a name="f1-help"></a>F1 說明
 

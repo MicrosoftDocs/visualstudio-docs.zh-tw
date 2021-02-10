@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 08ae6d19327a956b5dab71fa30b0b33742390d2b
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 2ca477e25daa76e63e786698e7e2fa1e39c7f77f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961465"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用測試設定在測試期間包含螢幕和聲音錄製
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ef73145fb0a2598dc5e4ee98e8652314e0bc1c89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76b8e36b6a6792b51552cb4203adebdc101cd808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963012"
 ---
 # <a name="process_info"></a>PROCESS_INFO
 包含處理常式的相關資訊。
@@ -28,7 +28,7 @@ ms.locfileid: "80713876"
 ## <a name="syntax"></a>語法
 
 ```cpp
-typedef struct tagPROCESS_INFO { 
+typedef struct tagPROCESS_INFO { 
    PROCESS_INFO_FIELDS Fields;
    BSTR                bstrFileName;
    BSTR                bstrBaseName;
@@ -42,7 +42,7 @@ typedef struct tagPROCESS_INFO { 
 ```
 
 ```csharp
-public struct PROCESS_INFO { 
+public struct PROCESS_INFO { 
    public uint          Fields;
    public string        bstrFileName;
    public string        bstrBaseName;
@@ -86,7 +86,7 @@ public struct PROCESS_INFO { 
 ## <a name="remarks"></a>備註
  此結構會傳遞至其填入的 [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) 方法。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

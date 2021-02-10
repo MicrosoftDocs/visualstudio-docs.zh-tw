@@ -14,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 9b838d79237fc54f6d44d5b8222489973dea0c6e
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 4976d8487b66d06384321874d56b82084ab42dd5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961530"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>如何：從存放庫中刪除負載測試結果
 

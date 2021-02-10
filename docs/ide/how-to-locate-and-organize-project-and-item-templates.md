@@ -10,13 +10,13 @@ helpviewer_keywords:
 - template locations [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 517918bf7e56381a4d4d2a36fc43f976a07c29ea
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: ba986fee3f5cf6098b72f3b7a52340a61d3449d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597154"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962856"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：尋找並整理專案範本和項目範本
 

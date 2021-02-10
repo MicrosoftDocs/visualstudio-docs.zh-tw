@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 539f75b7770abab75e912a28bc62ed51b7fb61d8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b87113b47ee0dc4d296bb5e206d6d277394160c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524829"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962271"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>逐步解說：使用功能區設計工具建立自訂索引標籤
   您可以使用功能區設計工具，建立自訂索引標籤，然後在其上加入和放置控制項。
@@ -154,7 +154,7 @@ ms.locfileid: "97524829"
 
      執行窗格將不再顯示。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  您可以透過下列主題，進一步了解自訂 Office UI 的方式：
 
 - 將內容為主的 UI 加入至任何文件層級的自訂。 如需詳細資訊，請參閱執行 [窗格總覽](../vsto/actions-pane-overview.md)。

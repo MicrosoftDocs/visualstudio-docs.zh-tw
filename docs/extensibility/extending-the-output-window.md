@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39ee69f934a9962d2beefb83b1ada08b920ce53d
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 91c59737d269af4eb91df402f38346cf41e3146e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961764"
 ---
 # <a name="extend-the-output-window"></a>擴充輸出視窗
 [ **輸出** ] 視窗是一組讀取/寫入文字窗格。 Visual Studio 具有下列內建窗格： **Build**，其中的專案會傳達有關組建的訊息，而 **一般** 會傳達 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 有關 IDE 的訊息。 專案會透過介面方法自動取得 **組建** 窗格的參考 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> ，而 Visual Studio 可透過服務直接存取 [ **一般** ] 窗格 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 。 除了內建的窗格之外，您還可以建立和管理自己的自訂窗格。

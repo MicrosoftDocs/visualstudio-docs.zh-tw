@@ -14,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 15d04d105264d07a1f883c5b67ce57c8590375a8
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 684715ed8ac29a3c85d0ea46799a2e14fb9722bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961439"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器管理計數器集合
 

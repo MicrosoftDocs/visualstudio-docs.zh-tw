@@ -17,26 +17,26 @@ helpviewer_keywords:
 ms.assetid: 653339f7-654b-4d64-a26a-5c9f27036895
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43e8fc7b9b09af51ea3be73409e2dcde9a718cee
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9e71e11988d4dd853b0f97c745b6d720a45adcdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961543"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication 工作
 
-<xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> **\<hostInBrowser />** 當建立 XAML 瀏覽器應用程式 (XBAP) 專案時，會執行此工作，以將專案新增至應用程式資訊清單 ( *\<projectname> .exe. 指令* 清單) 。
+<xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> **\<hostInBrowser />** 當建立 XAML 瀏覽器應用程式 (XBAP) 專案時，會執行此工作，以將專案新增至應用程式資訊清單 (*\<projectname> .exe. 指令* 清單) 。
 
 ## <a name="task-parameters"></a>工作參數
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`ApplicationManifest`|必要的 **ITaskItem []** 參數。<br /><br /> 指定要加入 `<hostInBrowser />` 項目的應用程式資訊清單檔案的路徑和名稱。|
-|`HostInBrowser`|必要的 **Boolean** 參數。<br /><br /> 指定是否要修改應用程式資訊清單以包含 **\<hostInBrowser />** 元素。 若 **為 true** ，專案 **\<hostInBrowser />** 中會包含新的元素 **\<entryPoint />** 。 元素包含是累計的：如果專案 **\<hostInBrowser />** 已經存在，則不會移除或覆寫它。 相反地， **\<hostInBrowser />** 會建立額外的元素。 若為 **false** ，則不會修改應用程式資訊清單。|
+|`HostInBrowser`|必要的 **Boolean** 參數。<br /><br /> 指定是否要修改應用程式資訊清單以包含 **\<hostInBrowser />** 元素。 若 **為 true**，專案 **\<hostInBrowser />** 中會包含新的元素 **\<entryPoint />** 。 元素包含是累計的：如果專案 **\<hostInBrowser />** 已經存在，則不會移除或覆寫它。 相反地， **\<hostInBrowser />** 會建立額外的元素。 若為 **false**，則不會修改應用程式資訊清單。|
 
 ## <a name="remarks"></a>備註
 
@@ -77,7 +77,7 @@ ms.locfileid: "93046813"
 </Project>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
 - [工作參考](../msbuild/wpf-msbuild-task-reference.md)

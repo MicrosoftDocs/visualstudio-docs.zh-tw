@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cc7d567f-b655-4539-810c-6506e7852121
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85ead5e0292815e92de587e90e0fd2cab92cb485
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 71ea53f03769be20ef33362beb19de46a331cbae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963168"
 ---
 # <a name="timeline-caret"></a>時間軸插入號
 當您在執行執行緒區段的時間軸上選取一點，時間軸插入號會出現在那點上方。 顯示在目前堆疊索引標籤上的呼叫堆疊，在時間上最接近您所按的區段。 插入號是用來和呼叫堆疊相關聯，其會在取樣的瞬間，顯示在 [目前] 索引標籤下方。 插入號顯示呼叫堆疊的確切位置，其是最接近使用者所選取位置的呼叫堆疊。

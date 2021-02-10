@@ -7,23 +7,23 @@ helpviewer_keywords:
 ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2ddb00e2cf70055c34335d8f2123004eb031a05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b7d144658065c32fd15b4b2b21ed0f53fe02a08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713849"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962947"
 ---
 # <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 列舉程式損毀旗標的有效值。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_PPROGRAM_DESTROY_FLAGS
@@ -47,7 +47,7 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 ## <a name="remarks"></a>備註
  列舉是由 [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) 方法傳回。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Msdbg。h
 
  命名空間： VisualStudio

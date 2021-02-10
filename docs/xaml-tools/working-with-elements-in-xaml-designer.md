@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 1af793ec7ecd741de1fc1b4bb1cb48dbf2ef32f3
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: ef09f181176bbab961b0caa97ccfb9910c5a281d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961244"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>使用 XAML 設計工具中的項目
 
@@ -111,6 +111,6 @@ XAML 設計工具中的邊界決定畫板上項目周圍的空白間距。 例�
 
 若要重設專案配置，請以滑鼠右鍵按一下 [檔大綱] 視窗或畫板中的專案，然後選擇 [**版面** 配置  >  **重設** 屬性 *名稱*]，其中 *PropertyName* 是您想要重設的屬性 (或選擇 [全部 **重**  >  **設**]，以重設專案) 的所有版面配置屬性。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 XAML 設計工具建立 UI](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

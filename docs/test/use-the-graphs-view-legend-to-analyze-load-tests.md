@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 25200b691e0bebf2e3bd1c6252efb371ed9caeb2
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: 485b5dc319a0e78f91f68f9c82b65ee5aa62b9d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962505"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>使用圖表檢視圖例來分析負載測試
 

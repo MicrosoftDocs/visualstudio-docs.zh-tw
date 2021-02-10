@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bd13c0a9f64ce484d9ba4e3193f7da94d0b1e446
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 5912603331ff6681cd6cc98cbb1afd88246ea695
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962869"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在套用 Visual Basic 開發者設定的情況下管理組建組態
 
@@ -38,7 +38,7 @@ ms.locfileid: "96189286"
 
 3. 按一下 [顯示進階組建組態]。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
      在 [組建] 功能表上現在已可使用 [組態管理員]，且 [組態] 和 [平台] 清單也會顯示在 [專案設計工具] 中。
 

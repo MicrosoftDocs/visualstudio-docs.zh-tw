@@ -5,15 +5,15 @@ ms.date: 08/20/2020
 ms.topic: how-to
 ms.custom: contperf-fy21q1
 robots: noindex,nofollow
-manager: jillfra
+manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: d9add6996949a97d6140ab6d063f13e02b677e79
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 30073b31fb98f604313c8de5d45687f3f768a374
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684087"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961686"
 ---
 # <a name="change-the-f1-help-key-in-visual-studio"></a>變更 Visual Studio 中的 F1 說明鍵
 

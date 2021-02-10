@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b2a5386e8329bb3ca51ca88a2449e223bb8d73d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: a978986ed6ef32dbad3ad06eafcba11d7f4782ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962908"
 ---
 # <a name="solution-user-options-suo-file"></a>方案使用者選項檔 (.Suo)
 方案使用者選項 ( .suo) 檔案包含每個使用者的方案選項。 此檔案不應簽入原始程式碼控制。
@@ -38,6 +38,6 @@ ms.locfileid: "97876750"
 
  這兩個方法（ `SaveUserOptions` 和 `WriteUserOptions` ）會以遞迴方式呼叫每個要儲存至 .suo 檔案的資料流程，並將指標傳入 `IVsSolutionPersistence` 。 它們是以遞迴方式呼叫，以允許將多個資料流程寫入 .suo 檔案。 如此一來，使用者資訊會與方案一起保存，並保證在下一次開啟方案時，會有此資訊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
 - [方案](../../extensibility/internals/solutions-overview.md)
