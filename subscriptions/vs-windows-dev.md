@@ -4,21 +4,24 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 12/02/2020
+ms.date: 02/09/2021
 ms.topic: how-to
 description: 了解 Visual Studio 訂用帳戶隨附的 Windows 開發人員帳戶。
-ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
+ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537717"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100089589"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Windows 開發人員帳戶
 Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中) 可讓您將免費和付費 Windows 應用程式提交至 Windows 市集。
 
 ## <a name="activation-steps"></a>啟用步驟
 若要使用 Windows 開發人員帳戶，您必須設定帳戶，或使用現有的帳戶登入。
+
+> [!IMPORTANT]
+> 您必須使用 Microsoft 帳戶 (MSA) ，才能建立 Windows 開發人員帳戶。  不支援使用 Azure Active Directory 帳戶。  
 
 建議您建立「私人」瀏覽器視窗來處理此程序。  例如，在 Google Chrome 中，建立新的 "incognito" 視窗。  在 Internet Explorer 中，建立新的 "InPrivate" 視窗。
 
@@ -36,7 +39,7 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 7. 建立發行者顯示名稱。  這會是您的客戶看到且與您的應用程式、增益集和服務建立關聯的唯一名稱。
 8. 提供您的連絡資訊和慣用電子郵件語言，然後按一下 [下一步]。
 9. 系統可能會要求您驗證密碼。  輸入它，然後按一下 [登入]。
-10. 在 [Registration - Payment] (註冊 - 付款) 頁面上，貼上您先前複製至 [促銷代碼] 欄位的程式碼。  此頁面會更新，以顯示 [不須付款]。  按一下 [下一步]  。
+10. 在 [Registration - Payment] (註冊 - 付款) 頁面上，貼上您先前複製至 [促銷代碼] 欄位的程式碼。  此頁面會更新，以顯示 [不須付款]。  按一下 [下一步] 。
 11. 檢閱您的帳戶資訊，並檢閱應用程式開發人員協議，然後按一下此核取方塊，指出您接受條款和條件。  然後按一下 [ **完成**]。
 12. 按一下 [移至儀表板] 開始使用 Windows 開發人員帳戶！
 
@@ -65,13 +68,13 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 - 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

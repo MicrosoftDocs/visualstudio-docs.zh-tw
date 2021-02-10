@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 11aa768d-1852-44d6-9de3-17f9bafaded2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f8b521432124267d3f0e179d3a889fb599fa99d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c3e4cfaf35c1fee655eedc49e8a3212c1355390
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717137"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967471"
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
 列舉自訂屬性。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumCustomAttributes : IUnknown
@@ -39,13 +39,13 @@ IEnumCustomAttributes : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|抓取列舉序列中指定數目的自訂屬性。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|抓取列舉序列中指定數目的自訂屬性。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|略過列舉序列中指定數目的自訂屬性。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugcustomattributes-reset.md)|將列舉順序重設為開頭。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugcustomattributes-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugcustomattributes-getcount.md)|取得列舉值中的自訂屬性數目。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： sh. h
 
  命名空間： VisualStudio

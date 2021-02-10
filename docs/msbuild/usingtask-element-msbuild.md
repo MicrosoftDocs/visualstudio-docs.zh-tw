@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 20247902-9446-4a1f-8253-5c7a17e4fe43
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3adc3d648e73fc1f3596cc7a5c2cb2148a8f611b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046110"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960334"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 元素 (MSBuild)
 
@@ -43,7 +43,7 @@ ms.locfileid: "93046110"
 ```
 
 > [!NOTE]
-> 與屬性和專案不同， *first* `UsingTask` 將會使用套用至的第一個專案 `TaskName` ; 若要覆寫工作，您必須在現有的專案之前定義新的 `UsingTask` *before* 。
+> 與屬性和專案不同，  `UsingTask` 將會使用套用至的第一個專案 `TaskName` ; 若要覆寫工作，您必須在現有的專案之前定義新的 `UsingTask`  。
 
 ## <a name="attributes-and-elements"></a>屬性和元素
 
@@ -63,14 +63,14 @@ ms.locfileid: "93046110"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|在指定的 `TaskFactory` 產生之工作上顯示的參數集。|
 |[Task](../msbuild/task-element-msbuild.md)|傳遞至 `TaskFactory` 以產生工作之執行個體的資料。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 項目 | 描述 |
+| 元素 | 描述 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | MSBuild 專案檔的必要根項目。 |
 
@@ -111,7 +111,7 @@ ms.locfileid: "93046110"
               AssemblyFile="c:\myTasks\myTask.dll" />
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作](../msbuild/msbuild-tasks.md)
 - [如何：設定目標和工作](../msbuild/how-to-configure-targets-and-tasks.md)   

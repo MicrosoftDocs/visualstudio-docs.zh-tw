@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd8e23b859577301d28cf23ac59462d08ad9a447
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: e89a19ee51a62e8d92c0ec8984e912703e2b92b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968186"
 ---
 # <a name="get-project-properties"></a>取得專案屬性
 

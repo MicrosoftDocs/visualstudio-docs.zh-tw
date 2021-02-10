@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 576b195663f379b1f2fd327ce6a8806ddb43deda
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 89f2903b2ec1308692f629c40af06f89706a427b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968290"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>自訂編輯器中的檔資料和檔查看
 自訂編輯器是由兩個部分所組成：檔資料物件和檔視圖物件。 顧名思義，檔資料物件代表要顯示的文字資料。 同樣地，[檔視圖] 物件 (或 [view] ) 代表要顯示檔資料物件的一或多個視窗。

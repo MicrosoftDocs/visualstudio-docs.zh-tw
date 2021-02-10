@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 805d7a5c9250bc511692c497bc9083852dad2301
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: da499ee9bbdcdff95456a4e4d5f5dc63f2acfb2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863453"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967393"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 這是提供給 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 函式的回呼函式，可更新目錄的集合，並 (選擇性地) 檔案名，以找出原始檔控制下的檔案名稱。
 
  只有在提供給函式的 `POPDIRLISTFUNC` 清單中， (在原始檔控制下的函式) ，才應該呼叫回呼 `SccPopulateDirList` 。
 
-## <a name="signature"></a>簽章
+## <a name="signature"></a>簽名
 
 ```cpp
 typedef BOOL (*POPDIRLISTFUNC)(
@@ -61,7 +61,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="remarks"></a>備註
  如果函式的 `fOptions` 參數 `SccPopulateDirList` 包含旗標 `SCC_PDL_INCLUDEFILES` ，則清單中可能會包含檔案名和目錄名稱。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDE 所執行的回呼函數](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)
 - [錯誤碼](../extensibility/error-codes.md)

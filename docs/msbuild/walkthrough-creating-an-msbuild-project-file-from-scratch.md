@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3acff7c-cb4e-4ae1-8be2-a871bcff847b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ebe3c60e4061a66bb77f41bf165fb16e0c427c2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 2d3d0462382ddcc86a23c7e25162fb429b9f9893
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967536"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭開始建立 MSBuild 專案檔
 
@@ -51,17 +51,17 @@ ms.locfileid: "93046067"
 
 ## <a name="extend-the-path"></a>擴充路徑
 
-在您可以使用 MSBuild 之前，您必須擴充 PATH 環境變數，以包含所有必要的工具。 您可以使用 **Visual Studio 的開發人員命令提示字元** 。 在 Windows 工作列的 [搜尋] 方塊中，于 Windows 10 上搜尋。 若要在一般命令提示字元或腳本環境中設定環境，請在 Visual Studio 安裝的 *Common7/Tools* 子資料夾中執行 *VSDevCmd.bat* 。
+在您可以使用 MSBuild 之前，您必須擴充 PATH 環境變數，以包含所有必要的工具。 您可以使用 **Visual Studio 的開發人員命令提示字元**。 在 Windows 工作列的 [搜尋] 方塊中，于 Windows 10 上搜尋。 若要在一般命令提示字元或腳本環境中設定環境，請在 Visual Studio 安裝的 *Common7/Tools* 子資料夾中執行 *VSDevCmd.bat* 。
 
 ## <a name="create-a-minimal-application"></a>建立最小應用程式
 
  本節說明如何使用文字編輯器來建立基本的 c # 應用程式原始程式檔。
 
-1. 在命令提示字元中，流覽至您要建立應用程式的資料夾，例如 *\My Documents \\* 或 *\Desktop \\* 。
+1. 在命令提示字元中，流覽至您要建立應用程式的資料夾，例如 *\My Documents \\* 或 *\Desktop \\*。
 
 2. 輸入 **Md HelloWorld** 來建立名為 *\HelloWorld \\* 的子資料夾。
 
-3. 輸入 **cd HelloWorld** ，以變更至新的資料夾。
+3. 輸入 **cd HelloWorld**，以變更至新的資料夾。
 
 4. 啟動 [記事本] 或其他文字編輯器，然後輸入下列程式碼。
 
@@ -81,15 +81,15 @@ ms.locfileid: "93046067"
     }
     ```
 
-5. 儲存此原始程式碼檔案，並將它命名為 *Helloworld.cs* 。
+5. 儲存此原始程式碼檔案，並將它命名為 *Helloworld.cs*。
 
-6. 在命令提示字元中輸入 **csc helloworld.cs** ，以建置應用程式。
+6. 在命令提示字元中輸入 **csc helloworld.cs**，以建置應用程式。
 
-7. 在命令提示字元中輸入 **helloworld** ，以測試應用程式。
+7. 在命令提示字元中輸入 **helloworld**，以測試應用程式。
 
-     此時應該會顯示 [Hello, world!]  訊息。
+     此時應該會顯示 [Hello, world!] 訊息。
 
-8. 在命令提示字元中輸入 **del helloworld.exe** ，以刪除應用程式。
+8. 在命令提示字元中輸入 **del helloworld.exe**，以刪除應用程式。
 
 ## <a name="create-a-minimal-msbuild-project-file"></a>建立最小的 MSBuild 專案檔
 
@@ -137,7 +137,7 @@ ms.locfileid: "93046067"
     <Csc Sources="@(Compile)"/>
     ```
 
-5. 儲存這個專案檔，並將它命名為 *Helloworld .csproj* 。
+5. 儲存這個專案檔，並將它命名為 *Helloworld .csproj*。
 
 您的最小專案檔應該類似下列程式碼：
 
@@ -152,7 +152,7 @@ ms.locfileid: "93046067"
 </Project>
 ```
 
-建置目標中的工作會循序執行。 在此情況下，Visual C# 編譯器 `Csc` 工作是唯一的工作。 它會預期要編譯的原始程式檔清單，由 `Compile` 項目的值提供。 `Compile`專案只會參考一個原始檔 *Helloworld.cs* 。
+建置目標中的工作會循序執行。 在此情況下，Visual C# 編譯器 `Csc` 工作是唯一的工作。 它會預期要編譯的原始程式檔清單，由 `Compile` 項目的值提供。 `Compile`專案只會參考一個原始檔 *Helloworld.cs*。
 
 > [!NOTE]
 > 在 item 專案中，您可以使用星號萬用字元 (\*) 來參考副檔名為 *.cs* 的所有檔案，如下所示：
@@ -165,13 +165,13 @@ ms.locfileid: "93046067"
 
  現在，若要建置應用程式，請使用您剛剛建立的專案檔。
 
-1. 在命令提示字元中，輸入 **msbuild helloworld .csproj-t:Build** 。
+1. 在命令提示字元中，輸入 **msbuild helloworld .csproj-t:Build**。
 
      叫用 Visual C# 編譯器來建立 Helloworld 應用程式，即可建置 Helloworld 專案檔的建置目標。
 
 2. 輸入 **helloworld** 來測試應用程式。
 
-     此時應該會顯示 [Hello, world!]  訊息。
+     此時應該會顯示 [Hello, world!] 訊息。
 
 > [!NOTE]
 > 提升詳細資訊層級，即可查看組建的更多詳細資料。 若要將詳細資訊層級設為「詳細」，請在命令提示字元處輸入下列命令：
@@ -188,7 +188,7 @@ ms.locfileid: "93046067"
 
 ### <a name="to-add-build-properties"></a>加入建置屬性
 
-1. 在命令提示字元中輸入 **del helloworld.exe** ，以刪除現有的應用程式。
+1. 在命令提示字元中輸入 **del helloworld.exe**，以刪除現有的應用程式。
 
 2. 在專案檔中，於開頭的 `PropertyGroup` 項目之後，插入此 `Project` 項目：
 
@@ -215,7 +215,7 @@ ms.locfileid: "93046067"
 
      這會指示 Visual C# 編譯器產生由 `AssemblyName` 屬性命名的組件，並將其置於由 `OutputPath` 屬性命名的資料夾中。
 
-5. 儲存變更。
+5. 儲存您的變更。
 
 您的專案檔現在應該類似下列程式碼：
 
@@ -252,15 +252,15 @@ ms.locfileid: "93046067"
 
  現在，您可以使用專案檔建置應用程式，您在該檔案中使用建置屬性來指定輸出資料夾和應用程式名稱。
 
-1. 在命令提示字元中，輸入 **msbuild helloworld .csproj-t:Build** 。
+1. 在命令提示字元中，輸入 **msbuild helloworld .csproj-t:Build**。
 
      這會建立 *\bin \\* 資料夾，然後叫用 Visual c # 編譯器來建立 *MSBuildSample* 應用程式，並將它放在 *\bin \\* 資料夾中。
 
-2. 若要確認已 *建立 \\ \bin* 資料夾，而且它包含 *MSBuildSample* 應用程式，請輸入 **dir Bin** 。
+2. 若要確認已 *建立 \\ \bin* 資料夾，而且它包含 *MSBuildSample* 應用程式，請輸入 **dir Bin**。
 
 3. 輸入 **Bin\MSBuildSample** 來測試應用程式。
 
-     此時應該會顯示 [Hello, world!]  訊息。
+     此時應該會顯示 [Hello, world!] 訊息。
 
 ## <a name="add-build-targets"></a>加入建置目標
 
@@ -329,31 +329,31 @@ ms.locfileid: "93046067"
 
 ### <a name="to-test-the-build-targets"></a>測試建置目標
 
-1. 在命令提示字元中，輸入 **msbuild helloworld .csproj-p:AssemblyName = 問候語** 。
+1. 在命令提示字元中，輸入 **msbuild helloworld .csproj-p:AssemblyName = 問候語**。
 
-     因為您未使用 **-t** 參數明確地設定目標，因此 MSBuild 會執行預設的組建目標。 **-P** 參數會覆寫 `AssemblyName` 屬性，並為其提供新值 `Greetings` 。 這會導致在 *\bin \\* 資料夾中建立新的應用程式 *Greetings.exe* 。
+     因為您未使用 **-t** 參數明確地設定目標，因此 MSBuild 會執行預設的組建目標。 **-P** 參數會覆寫 `AssemblyName` 屬性，並為其提供新值 `Greetings` 。 這會導致在 *\bin \\* 資料夾中建立新的應用程式 *Greetings.exe*。
 
-2. 若要確認 *\bin \\* 資料夾同時包含 *MSBuildSample* 應用程式和新的 *問候語* 應用程式，請輸入 **dir Bin** 。
+2. 若要確認 *\bin \\* 資料夾同時包含 *MSBuildSample* 應用程式和新的 *問候語* 應用程式，請輸入 **dir Bin**。
 
 3. 輸入 **Bin\Greetings** 來測試 Greetings 應用程式。
 
-     此時應該會顯示 [Hello, world!]  訊息。
+     此時應該會顯示 [Hello, world!] 訊息。
 
-4. 輸入 **msbuild helloworld t:clean** ，以刪除 MSBuildSample 應用程式。
+4. 輸入 **msbuild helloworld t:clean**，以刪除 MSBuildSample 應用程式。
 
      這會執行 Clean 工作，以移除具有預設 `AssemblyName` 屬性值 `MSBuildSample` 的應用程式。
 
-5. 輸入 msbuild helloworld 來刪除問候語應用程式 **。 .csproj-t:clean-p:AssemblyName = 問候語** 。
+5. 輸入 msbuild helloworld 來刪除問候語應用程式 **。 .csproj-t:clean-p:AssemblyName = 問候語**。
 
      這會執行 Clean 工作，以移除具有指定 **AssemblyName** 屬性值 `Greetings` 的應用程式。
 
-6. 若要確認 *\\ \bin* 資料夾現在是空的，請輸入 **dir Bin** 。
+6. 若要確認 *\\ \bin* 資料夾現在是空的，請輸入 **dir Bin**。
 
-7. 輸入 **msbuild** 。
+7. 輸入 **msbuild**。
 
      雖然未指定專案檔，但 MSBuild 會建立 *helloworld .csproj* 檔案，因為目前的資料夾中只有一個專案檔。 這會導致在 *\bin \\* 資料夾中建立 *MSBuildSample* 應用程式。
 
-     若要確認 *\bin \\* 資料夾包含 *MSBuildSample* 應用程式，請輸入 **dir Bin** 。
+     若要確認 *\bin \\* 資料夾包含 *MSBuildSample* 應用程式，請輸入 **dir Bin**。
 
 ## <a name="build-incrementally"></a>以累加方式建置
 
@@ -472,7 +472,7 @@ ms.locfileid: "93046067"
 
  Visual Studio 可以自動執行本逐步解說中提及的大量工作。 若要了解如何使用 Visual Studio 建立、編輯、建置及測試 MSBuild 專案檔，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [MSBuild 概觀](../msbuild/msbuild.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

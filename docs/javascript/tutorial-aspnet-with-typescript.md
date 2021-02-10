@@ -6,17 +6,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ef287616f5b214566a273817c229d9105bf253c5
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: c28355e4097dc014f4757788f175ea80850a3f63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98129480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960425"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>教學課程：在 Visual Studio 中建立具有 TypeScript 的 ASP.NET Core 應用程式
 
@@ -42,7 +42,7 @@ ms.locfileid: "98129480"
 > * 執行應用程式
 > * 使用 npm 新增協力廠商程式庫
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 * 您必須安裝 Visual Studio，以及 ASP.NET 網頁程式開發工作負載。
 
@@ -285,7 +285,7 @@ Visual Studio 可在「專案」中管理單一應用程式的檔案。 專案�
 
     ![jquery 範例](../javascript/media/aspnet-core-ts-jquery-example.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 您可能會想要深入瞭解搭配 ASP.NET Core 使用 TypeScript 的詳細資料。
 

@@ -19,22 +19,22 @@ helpviewer_keywords:
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7227fff5dd4c58e1bce81ef8cad5c32f854abf55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960321"
 ---
 # <a name="xsd-task"></a>XSD 工作
 
-包裝 XML 架構定義工具 ( *xsd.exe* ) ，它會從來源產生架構或類別檔案。
+包裝 XML 架構定義工具 (*xsd.exe*) ，它會從來源產生架構或類別檔案。
 
 > [!NOTE]
-> 從 Visual Studio 2017 開始， *xsd.exe* 的 C++ 專案支援已過時。 您仍然可以將 *CppCodeProvider.dll* 手動新增至 GAC 來使用 **Microsoft.VisualC.CppCodeProvider** API。
+> 從 Visual Studio 2017 開始，*xsd.exe* 的 C++ 專案支援已過時。 您仍然可以將 *CppCodeProvider.dll* 手動新增至 GAC 來使用 **Microsoft.VisualC.CppCodeProvider** API。
 
 ## <a name="parameters"></a>參數
 
@@ -58,13 +58,13 @@ ms.locfileid: "93047201"
 
   - **資料集**  - **/dataset**
 
-- **語言**
+- **Language**
 
      選擇性的 **字串** 參數。
 
      指定產生的程式碼要使用的程式語言。
 
-     可以選擇 **CS** (C#，此為預設值)、 **VB** (Visual Basic) 或 **JS** (JScript)。 您可以對實作 `System.CodeDom.Compiler.CodeDomProvider Class` 的類別指定完整名稱。
+     可以選擇 **CS** (C#，此為預設值)、**VB** (Visual Basic) 或 **JS** (JScript)。 您可以對實作 `System.CodeDom.Compiler.CodeDomProvider Class` 的類別指定完整名稱。
 
 - **Namespace**
 
@@ -90,6 +90,6 @@ ms.locfileid: "93047201"
 
      指定追蹤器記錄檔的目錄。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [工作參考](../msbuild/msbuild-task-reference.md)

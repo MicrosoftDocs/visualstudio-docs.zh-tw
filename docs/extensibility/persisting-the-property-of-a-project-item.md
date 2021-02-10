@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72de98e08581b105322b07390d85b95c06b1083c
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 63b1a4a7cb6e2d12882794a07e51151effe36716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967419"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>保存專案專案的屬性
 您可能會想要保存新增至專案專案的屬性，例如原始程式檔的作者。 您可以藉由將屬性儲存在專案檔中，來完成這項作業。
@@ -134,6 +134,6 @@ ms.locfileid: "97862693"
    </Compile>
    ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [自訂工具](../extensibility/internals/custom-tools.md)

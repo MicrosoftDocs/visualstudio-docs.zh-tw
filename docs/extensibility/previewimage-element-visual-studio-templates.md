@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 326588259203224d3f70b505af8437af22930faa
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: e306f6453ca3abbc2ad881821254ca88a160d01b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967276"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a> (Visual Studio 範本的 PreviewImage 元素) 
 針對將出現在 [ **新增專案** ] 或 [ **加入新專案** ] 對話方塊中的預覽影像，指定預覽影像（以檔案名表示）。
@@ -27,7 +27,7 @@ ms.locfileid: "94672342"
  \<VSTemplate> \<TemplateData>
  \<PreviewImage>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <PreviewImage>"filename"</PreviewImage>
@@ -44,7 +44,7 @@ ms.locfileid: "94672342"
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要元素。<br /><br /> 將範本分類，並定義該範本在 [ **新增專案** ] 或 [ **加入新** 專案] 對話方塊中顯示的方式。|
 

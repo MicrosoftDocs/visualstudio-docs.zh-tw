@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 00bec66b-bcee-46f5-91d9-f73a2b469744
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 69fb3d8b5e8af13ec8781e65e60bd060ad69d365
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 41ccdd8ef7285ba0e5fa211b6b9f76fead5a2f3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362388"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960568"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -238,7 +238,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 * 如果您遇到 Visual Studio 停止回應、當機或其他效能問題的問題，您可以使用 [回報 [問題](how-to-report-a-problem-with-visual-studio.md) ] 工具，輕鬆地與我們分享重現步驟和支援檔案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 檔中的新功能](whats-new-visual-studio-docs.md)
 * [Visual Studio 2019 版本資訊](/visualstudio/releases/2019/release-notes/)

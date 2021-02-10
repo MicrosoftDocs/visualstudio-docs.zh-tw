@@ -10,15 +10,15 @@ helpviewer_keywords:
 - data sources, defining with configuration files
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e33721fa4ac1cc657c79c8aa68b35e5ceec00b
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f234d0285f5a0ed01567bb77c21e4c2d080a5f64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967874"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 

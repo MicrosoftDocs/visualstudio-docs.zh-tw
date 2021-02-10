@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: e58a9c6477568843141a73ece002d1911280d7ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7e7672ca93c47370f746358203c37826a1b3ad3
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916451"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006424"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 隔離測試中的程式碼
 
@@ -36,7 +36,7 @@ Fakes 分為兩種類別：
 - Visual Studio Enterprise
 - .NET Framework 專案
 ::: moniker range=">=vs-2019"
-- 在 Visual Studio 2019 Update 6 中預覽的 .NET Core 和 SDK 樣式專案支援，預設會在 Update 8 中啟用。 如需詳細資訊，請參閱 [適用于 .Net Core 和 SDK 樣式專案的 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)。
+- 在 Visual Studio 2019 Update 6 中預覽的 .NET Core、.NET 5.0 和 SDK 樣式專案支援，預設會在 Update 8 中啟用。 如需詳細資訊，請參閱 [適用于 .Net Core 和 SDK 樣式專案的 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)。
 ::: moniker-end
 
 > [!NOTE]
@@ -88,7 +88,7 @@ Fakes 分為兩種類別：
    1. 在 **方案總管** 中， 
        - 針對較舊的 .NET Framework 專案 (非 SDK 樣式) ，請展開您的單元測試專案的 [ **參考** ] 節點。
        ::: moniker range=">=vs-2019"
-       - 若為以 .NET Framework 或 .NET Core 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件**、 **專案** 或 **封裝** 下偽造的元件。
+       - 若是以 .NET Framework、.NET Core 或 .NET 5.0 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件**、 **專案** 或 **封裝** 下偽造的元件。
        ::: moniker-end
        - 如果您是在 Visual Basic 中工作，請選取 [**方案總管**] 工具列中的 [**顯示所有** 檔案]，以查看 [**參考**] 節點。
    2. 選取包含您要為其建立填充碼之類別定義的元件。 例如，如果您想要填充碼 **DateTime**，請選取 [ **System.dll**]。
@@ -269,21 +269,21 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 </Project>
 ```
 
-您必須以手動方式將 SDK 樣式的專案加入此參考， ( .NET Core 和 .NET Framework) ，因為我們已移至隱含地將元件參考加入至您的測試專案。 如果您遵循此方法，則必須確保在父元件變更時，會更新 fakes 元件。
+需要以手動方式明確地在 SDK 樣式的專案中加入此參考， ( .NET Core、.NET 5.0 和 .NET Framework) ，因為我們已移至隱含地將元件參考加入至您的測試專案。 如果您遵循此方法，則必須確保在父元件變更時，會更新 fakes 元件。
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>正在執行 Microsoft Fakes 測試
 只要 Microsoft Fakes 的元件存在於設定的目錄中 `FakesAssemblies` (預設 `$(ProjectDir)FakesAssemblies`) ，您就可以使用 [vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)工作執行測試。
 
 ::: moniker range=">=vs-2019"
-使用 Microsoft Fakes 以 [vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) 工作 .net Core 專案進行分散式測試需要 Visual Studio 2019 Update 9 Preview `20201020-06` 和更新版本。
+使用 Microsoft Fakes 的 [vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) 工作 .net Core 和 .net 5.0 專案進行分散式測試需要 Visual Studio 2019 Update 9 Preview `20201020-06` 和更新版本。
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>將使用 Microsoft Fakes 的 .NET Framework 測試專案轉換成 SDK 樣式 .NET Framework 或 .NET Core 專案
-您將需要 .NET Framework 設定的最少量變更，讓 Microsoft Fakes 轉換為 .NET Core。 您必須考慮的案例如下：
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-net-core-or-net-50-projects"></a>將使用 Microsoft Fakes 的 .NET Framework 測試專案轉換成 SDK 樣式 .NET Framework、.NET Core 或 .NET 5.0 專案
+您將需要 .NET Framework 設定的最少量變更，讓 Microsoft Fakes 轉換為 .NET Core 或 .NET 5.0。 您必須考慮的案例如下：
 - 如果您使用的是自訂專案範本，您必須確定它是 SDK 樣式，而且是針對相容的目標 framework 所建立。
-- 某些型別存在於 .NET Framework 和 .net core 的不同元件中 (例如，存在於 .NET Framework 中， `System.DateTime` `System` / `mscorlib` 以及在 `System.Runtime` .net core) 中，而在這些情況下，您必須將元件變更為偽造。
+- 某些類型存在於 .NET Framework 中的不同元件和 .net core/.net 5.0 (例如，存在於 .NET Framework 中，在 `System.DateTime` `System` / `mscorlib` `System.Runtime` .net core 和 .net 5.0) 中，而且在這些案例中，您必須將元件變更為偽造。
 - 如果您有 fakes 元件和測試專案的元件參考，您可能會看到有關遺漏參考的組建警告，如下所示：
   ```
   (ResolveAssemblyReferences target) ->
@@ -299,12 +299,12 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 - Microsoft Fakes 的測試可以搭配所有可用的 TestPlatform NuGet 套件來執行。
 - 使用 Visual Studio Enterprise 2015 和更新版本中 Microsoft Fakes 的測試專案支援程式碼涵蓋範圍。
 
-### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>SDK 樣式 .NET Framework 和 .NET Core 專案中的 Microsoft Fakes
+### <a name="microsoft-fakes-in-sdk-style-net-framework-net-core-and-net-50-projects"></a>SDK 樣式 .NET Framework、.NET Core 和 .NET 5.0 專案中的 Microsoft Fakes
 - Microsoft Fakes 在 Visual Studio Enterprise 2019 Update 6 中預覽的元件產生，在 Update 8 中預設為啟用。
 - 針對以 .NET Framework 為目標的專案 Microsoft Fakes 測試可以搭配所有可用的 TestPlatform NuGet 套件來執行。
-- 針對以 .NET Core 為目標的專案，Microsoft Fakes 測試可以搭配 Microsoft 執行。 TestPlatform NuGet 套件的版本 [16.8.0-preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) 和更新版本。
+- 針對以 .NET Core 和 .NET 5.0 為目標的專案，Microsoft Fakes 測試可以與 Microsoft 一起執行。 TestPlatform NuGet 套件的版本 [16.9.0-preview-20210106-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.9.0-preview-20210106-01) 及更高版本。
 - 使用 Visual Studio Enterprise 2015 版和更高版本中的 Microsoft Fakes，以 .NET Framework 為目標的測試專案支援程式碼涵蓋範圍。
-- 使用 Microsoft Fakes 以 .NET Core 為目標之測試專案的程式碼涵蓋範圍支援正在開發中。
+- 使用 Microsoft Fakes 以 .NET Core 和 .NET 5.0 為目標之測試專案的程式碼涵蓋範圍支援，可在 Visual Studio 2019 update 9 和更新版本中取得。
 
 
 ## <a name="in-this-section"></a>本節內容

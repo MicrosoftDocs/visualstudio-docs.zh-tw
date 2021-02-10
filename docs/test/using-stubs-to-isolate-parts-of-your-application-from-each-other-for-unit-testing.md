@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 874695bed7044c92f43c6d3031842d94372a2c33
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d5e4d8fb598434bfaa2a8a699c546cdc84febb0
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946224"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006430"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用虛設常式隔離應用程式的各個組件，方便進行單元測試
 
@@ -152,7 +152,7 @@ analyzer = new StockAnalyzer(new StockFeed());
 1. 在 **方案總管** 中， 
     - 針對較舊的 .NET Framework 專案 (非 SDK 樣式) ，請展開您的單元測試專案的 [ **參考** ] 節點。
     ::: moniker range=">=vs-2019"
-    - 若為以 .NET Framework 或 .NET Core 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件**、 **專案** 或 **封裝** 下偽造的元件。
+    - 若是以 .NET Framework、.NET Core 或 .NET 5.0 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件**、 **專案** 或 **封裝** 下偽造的元件。
     ::: moniker-end
     - 如果您是在 Visual Basic 中工作，請選取 [**方案總管**] 工具列中的 [**顯示所有** 檔案]，以查看 [**參考**] 節點。
 

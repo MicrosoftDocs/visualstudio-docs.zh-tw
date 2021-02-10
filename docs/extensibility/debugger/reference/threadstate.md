@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: 62efdd7c-25b1-4fd3-9d06-ac1830a418a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1b291cc1668b2b867729da11d4c561f74567f257
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21b683e8f7797743d5ae78f932edfa5c862dbb8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713331"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967679"
 ---
 # <a name="threadstate"></a>THREADSTATE
 指定執行緒的狀態。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```cpp
-enum enum_THREADSTATE { 
+enum enum_THREADSTATE { 
    THREADSTATE_RUNNING = 0x0001,
    THREADSTATE_STOPPED = 0x0002,
    THREADSTATE_FRESH   = 0x0003,
@@ -39,7 +39,7 @@ typedef DWORD THREADSTATE;
 ```
 
 ```csharp
-public enum enum_THREADSTATE { 
+public enum enum_THREADSTATE { 
    THREADSTATE_RUNNING = 0x0001,
    THREADSTATE_STOPPED = 0x0002,
    THREADSTATE_FRESH   = 0x0003,
@@ -67,7 +67,7 @@ public enum enum_THREADSTATE { 
 ## <a name="remarks"></a>備註
  用於 `dwThreadState` [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 結構的欄位。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

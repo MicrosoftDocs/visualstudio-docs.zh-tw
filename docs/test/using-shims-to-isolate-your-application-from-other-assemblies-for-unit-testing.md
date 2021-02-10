@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4bf43fa5dd3e95500b036d5ef5d65055b5d5870f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f15af6958c7f5855b5005fc0a6aa4c821346ccb5
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946276"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006401"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>使用填充碼隔離應用程式以進行單元測試
 
@@ -30,7 +30,7 @@ ms.locfileid: "99946276"
 - Visual Studio Enterprise
 - .NET Framework 專案
 ::: moniker range=">=vs-2019"
-- 在 Visual Studio 2019 Update 6 中預覽的 .NET Core 和 SDK 樣式專案支援，預設會在 Update 8 中啟用。 如需詳細資訊，請參閱 [適用于 .Net Core 和 SDK 樣式專案的 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)。
+- 在 Visual Studio 2019 Update 6 中預覽的 .NET Core、.NET 5.0 和 SDK 樣式專案支援，預設會在 Update 8 中啟用。 如需詳細資訊，請參閱 [適用于 .Net Core 和 SDK 樣式專案的 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)。
 ::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>範例：Y2K Bug
@@ -71,7 +71,7 @@ using (ShimsContext.Create()) {
 1. 在 **方案總管** 中， 
     - 針對較舊的 .NET Framework 專案 (非 SDK 樣式) ，請展開您的單元測試專案的 [ **參考** ] 節點。
     ::: moniker range=">=vs-2019"
-    - 若為以 .NET Framework 或 .NET Core 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件**、 **專案** 或 **封裝** 下偽造的元件。
+    - 若是以 .NET Framework、.NET Core 或 .NET 5.0 為目標的 SDK 樣式專案，請展開 [相依性 **]** 節點，以尋找您想要在 **元件**、 **專案** 或 **封裝** 下偽造的元件。
     ::: moniker-end
     - 如果您是在 Visual Basic 中工作，請選取 [**方案總管**] 工具列中的 [**顯示所有** 檔案]，以查看 [**參考**] 節點。
 
@@ -524,7 +524,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>限制
 
-在 .net Core 類別庫 **mscorlib.dll** 和 **system** 的 .NET Framework 和 **system** 中，無法在所有類型上使用填充碼。
+填充碼不能用於 .NET 基類庫 **mscorlib** 和 **system** in .NET Framework，以及 .net Core 或 .Net 5.0 中的 **system.object** 。
 
 ## <a name="see-also"></a>另請參閱
 

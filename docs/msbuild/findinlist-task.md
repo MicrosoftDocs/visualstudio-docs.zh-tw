@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d49b9f84-52a2-4242-9269-b741a7a7e9f7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4afc20b7845f3af71de1fbbb89f074801e08d1d
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 45ad1cc57412161e2510f93cacb5a043be59802e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435687"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967549"
 ---
 # <a name="findinlist-task"></a>FindInList 工作
 
@@ -33,7 +33,7 @@ ms.locfileid: "92435687"
 
  下表描述 [FindInList](../msbuild/findinlist-task.md)工作的參數。
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`CaseSensitive`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，搜尋會區分大小寫；否則不區分大小寫。 預設值為 `true`。|
 |`FindLastMatch`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，則傳回最後一個相符項目；否則傳回第一個相符項目。 預設值為 `false`。|

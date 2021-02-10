@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d5147f4e03b019b083613a77afe95b95e9e033a
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 4a08d60a52ed970781ceafdb15d0d5c64440f0cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968069"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>用來擴充專案系統的 IDE 定義的命令
 當您想要擴充專案系統時，可以使用 IDE 所提供的命令和命令群組 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
@@ -28,7 +28,7 @@ ms.locfileid: "96761162"
 ## <a name="command-menus"></a>命令功能表
  下表顯示的命令功能表是很實用的位置，可讓您放置高階命令以叫用專案擴充項。
 
-|命令功能表|描述|
+|命令功能表|Description|
 |------------------|-----------------|
 |IDM_VS_MENU_PROJECT|**專案** 最上層功能表。|
 |IDM_VS_TOOL_PROJWIN|**方案總管** 的工具列。|
@@ -36,7 +36,7 @@ ms.locfileid: "96761162"
 ## <a name="shortcut-menus"></a>快顯功能表
  下表顯示在 **方案總管** 中選取單一節點時，或當 **方案總管** 中有多個同質選取時（當所有選取的節點都屬於相同類型時）適用的快捷方式功能表。
 
-|捷徑功能表|描述|
+|捷徑功能表|Description|
 |-------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|適用于選取專案節點時。|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|當選取檔案時套用。|
@@ -47,7 +47,7 @@ ms.locfileid: "96761162"
 
  下表顯示當 **方案總管** 中的選取範圍跨越多個階層時適用的快捷方式功能表。
 
-|捷徑功能表|描述|
+|捷徑功能表|Description|
 |-------------------|-----------------|
 |IDM_VS_CTXT_XPROJ_SLNPROJ|當目前的選取範圍包含方案節點和根專案節點時套用。|
 |IDM_VS_CTXT_XPROJ_SLNITEM|當目前的選取範圍包含方案節點和專案專案時套用。|
@@ -58,7 +58,7 @@ ms.locfileid: "96761162"
 ## <a name="command-groups"></a>命令群組
  下表顯示您可以在擴充專案時使用的命令群組，以及可透過快捷方式功能表存取的命令群組 <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> 。
 
-|命令群組|描述|
+|命令群組|Description|
 |-------------------|-----------------|
 |IDG_VS_CTXT_PROJECT_BUILD|用來建立、重建和部署專案的命令。|
 |IDG_VS_CTXT_COMPILELINK|用來編譯和連結專案的命令。|

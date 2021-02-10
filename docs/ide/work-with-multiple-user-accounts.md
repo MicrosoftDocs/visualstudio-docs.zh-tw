@@ -6,15 +6,15 @@ ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 071c6061417e26b45e5f9e67bc6ac1001bf08530
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 169415537460dae94ca844c426bb3770449161b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960451"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 

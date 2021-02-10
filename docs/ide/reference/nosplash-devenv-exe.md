@@ -11,15 +11,15 @@ helpviewer_keywords:
 - NoSplash Devenv switch
 author: DennisLee-DennisLee
 ms.author: v-dele
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e86398663ea7b6c8209d4123ab3cb12651d4491e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: c88d75c0658c861c4631daeeb736ed7cfdb0a487
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96043994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967224"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
 

@@ -6,16 +6,16 @@ ms.topic: conceptual
 description: 瞭解如何搭配使用 Visual Studio 與 GitHub 帳戶。
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 845b663a3a0828806766fa0609e45efafabec50a
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 9da0f2c2df796f50530f19252c7236c2bb606a10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704015"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960477"
 ---
 # <a name="work-with-github-accounts-in-visual-studio"></a>在 Visual Studio 中使用 GitHub 帳戶
 
@@ -25,7 +25,7 @@ ms.locfileid: "94704015"
 
 如果您已使用 Microsoft 帳戶或工作或學校帳戶登入 Visual Studio，則可以新增您的公用 GitHub 帳戶。
 
-1. 在 Visual Studio 環境的右上角選取具有您姓名縮寫的圖示。 然後，選取 [ **帳戶設定** ]，以管理您的帳戶。 您也可以前往 [檔案 **File**  >  **帳戶設定**] 開啟 [帳戶設定] 對話方塊。
+1. 在 Visual Studio 環境的右上角選取具有您姓名縮寫的圖示。 然後，選取 [ **帳戶設定** ]，以管理您的帳戶。 您也可以前往 [檔案  >  **帳戶設定**] 開啟 [帳戶設定] 對話方塊。
 
     :::image type="content" source="../ide/media/account-picker.png" alt-text="帳戶設定":::
 
@@ -41,7 +41,7 @@ ms.locfileid: "94704015"
 
     :::image type="content" source="../ide/media/show-both-accounts.png" alt-text="這兩個帳戶顯示":::
 
-如果您尚未使用不同的帳戶登入 Visual Studio，請選取 Visual Studio 環境右上角的 [登 **入** ] 連結。 您也可以前往 [檔案 **File**  >  **帳戶設定**] 開啟 [帳戶設定] 對話方塊。 然後，遵循上面的指示來新增您的 GitHub 帳戶。
+如果您尚未使用不同的帳戶登入 Visual Studio，請選取 Visual Studio 環境右上角的 [登 **入** ] 連結。 您也可以前往 [檔案  >  **帳戶設定**] 開啟 [帳戶設定] 對話方塊。 然後，遵循上面的指示來新增您的 GitHub 帳戶。
 
 ![未登入使用者](../ide/media/vs2019_usernotsignedin.png)
 

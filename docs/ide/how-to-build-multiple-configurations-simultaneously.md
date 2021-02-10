@@ -8,15 +8,15 @@ ms.topic: how-to
 ms.assetid: ba830937-3317-4674-8cc2-c0cd565603c5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cc5963ed3a16ffba16a52bfcde7425fb1f10cba
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: cabaf226742d867e9d5eccbaf391b723cfbed5d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136975"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967666"
 ---
 # <a name="how-to-build-multiple-configurations-in-a-single-build-request"></a>如何：在單一組建要求中建立多個設定
 
@@ -34,14 +34,14 @@ ms.locfileid: "92136975"
 
 ## <a name="to-build-a-project-in-multiple-build-configurations"></a>在多個組建組態中建置專案
 
-1. 在功能表列上，選擇 [**建立**  >  **批次組建**]。 或者，按**Ctrl** + **Q**開啟 [搜尋] 方塊，然後搜尋 `Batch Build` 。
+1. 在功能表列上，選擇 [**建立**  >  **批次組建**]。 或者，按 **Ctrl** + **Q** 開啟 [搜尋] 方塊，然後搜尋 `Batch Build` 。
 
-2. 在 [建置]**** 資料行中，選取您要用來建置專案之組態的核取方塊。
+2. 在 [建置] 資料行中，選取您要用來建置專案之組態的核取方塊。
 
     > [!TIP]
-    > 若要編輯或建立方案的組建設定，請選擇功能表列上的 [**建立**  >  **Configuration Manager** ]，以開啟 [ **Configuration Manager** ] 對話方塊。 在您編輯方案的組建組態之後，請在 [批次建置]**** 對話方塊中選擇 [重建]**** 按鈕，來更新方案中專案的所有組建組態。
+    > 若要編輯或建立方案的組建設定，請選擇功能表列上的 [**建立**  >  **設定管理員**]，以開啟 [**設定管理員**] 對話方塊。 在您編輯方案的組建組態之後，請在 [批次建置] 對話方塊中選擇 [重建] 按鈕，來更新方案中專案的所有組建組態。
 
-3. 選擇 [建置]**** 或 [重建]**** 按鈕，以使用您指定的組態來建置專案。
+3. 選擇 [建置] 或 [重建] 按鈕，以使用您指定的組態來建置專案。
 
 ## <a name="see-also"></a>另請參閱
 

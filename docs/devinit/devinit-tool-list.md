@@ -1,7 +1,7 @@
 ---
 title: 可用的工具
 description: 可以用來自訂開發環境的所有 devinit 工具清單。
-ms.date: 12/02/2020
+ms.date: 02/08/2021
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1a90b66e38a09e0de0c7fd374938f55a93789295
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e725cea2e668158b26cde102d42082fdc269069
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925330"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006414"
 ---
 # <a name="available-tools"></a>可用工具
 
@@ -44,9 +44,11 @@ ms.locfileid: "99925330"
 | [**require-psmodule**](tool-require-psmodule.md)                                                 | 從資源庫安裝 PowerShell 模組的工具。                                                        |
 | [**require-vcpkg**](tool-require-vcpkg.md)                                                       | 用來安裝 vcpkg 的工具。                                                                                      |
 | [**require-vscomponent**](tool-require-vscomponent.md)                                           | 根據檔案修改 VS 安裝的工具 `.vsconfig` 。                                                |
+| [**需要-winget**](tool-require-winget.md)                                                     | 用來安裝 winget 的工具。                                                                                     |
 | [**windowsfeature-enable**](tool-windowsfeature-enable.md)                                       | 工具組啟用 Windows 功能。                                                                           |
 | [**windowsfeature-disable**](tool-windowsfeature-disable.md)                                     | 工具組停用 Windows 功能。                                                                          |
-| [**windowsfeature-list**](tool-windowsfeature-list.md)                                           | 列出所有 Windows 功能的啟用/停用狀態的工具。                                                                        |
+| [**windowsfeature-list**](tool-windowsfeature-list.md)                                           | 列出所有 Windows 功能的啟用/停用狀態的工具。                                              |
 | [**set-env**](tool-set-env.md)                                                                   | 用來查看及設定環境變數的工具。                                                                 |
 | [**vcpkg-install**](tool-vcpkg-install.md)                                                       | 透過 vcpkg 安裝套件的工具。                                                                         |
+| [**winget-安裝**](tool-winget-install.md)                                                     | 透過 winget 安裝套件的工具。                                                                        |
 | [**wsl-install**](tool-wsl-install.md)                                                           | 適用于 Linux 的視窗子系統安裝和設定 Linux 散發版本的工具。                             |

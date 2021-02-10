@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba3f357f6c48280d12e4ddab6135245e699d0a44
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 9b655308760d64f97c168e8000972142f159ec3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968225"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Visual Studio 專案範本 (資料夾元素) 
 指定將新增至專案的資料夾。
@@ -29,7 +29,7 @@ ms.locfileid: "94672713"
  \<Project>
  \<Folder>
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 <Folder Name="Project Folder">
@@ -43,21 +43,21 @@ ms.locfileid: "94672713"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Name`|必要屬性。<br /><br /> 專案資料夾的名稱。|
 |`TargetFolderName`|選擇性屬性。<br /><br /> 指定從範本建立專案時，要提供資料夾的名稱。 這個屬性適用于使用參數取代來建立資料夾名稱，或使用無法直接在 *.zip* 檔案中使用的國際字串來命名資料夾。|
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |`Folder`|指定要加入至專案的資料夾。 `Folder` 元素可以包含子 `Folder` 元素。|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|指定要加入至專案的檔案。|
 
 ### <a name="parent-elements"></a>父元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[專案](../extensibility/project-element-visual-studio-templates.md)|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)的選擇性子項目。|
 
@@ -66,7 +66,7 @@ ms.locfileid: "94672713"
 
  您可以使用下列任何一種方法，將專案專案組織為範本中的資料夾：
 
-- 將資料夾包含在 *.zip* 檔案中，並在專案中指定檔案的路徑 *.vstemplate* `ProjectItem` （不含任何元素），以將它們新增至 .vstemplate 檔案中的專案 `Folder` 。 這是建議的方法。 例如：
+- 將資料夾包含在 *.zip* 檔案中，並在專案中指定檔案的路徑 `ProjectItem` （不含任何元素），以將它們新增至 .vstemplate 檔案中的專案 `Folder` 。 這是建議的方法。 例如：
 
      `...`
 
