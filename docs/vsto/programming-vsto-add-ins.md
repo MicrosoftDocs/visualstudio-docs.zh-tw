@@ -31,15 +31,15 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7c3a4b14a1935d1d276f0884234fcd121b838f39
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 83fdc3b6a60c5f8972ff5d955c56476fb13315d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971826"
 ---
 # <a name="program-vsto-add-ins"></a>程式 VSTO 增益集
   當您建立 VSTO 增益集來擴充 Microsoft Office 應用程式時，會直接針對專案中的 `ThisAddIn` 類別撰寫程式碼。 您可以使用這個類別來執行工作，例如存取 Microsoft Office 主應用程式的物件模型、自訂應用程式的使用者介面 (UI)，以及將 VSTO 增益集中的物件公開給其他 Office 解決方案。
@@ -118,7 +118,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 ### <a name="thisaddin-members-to-use-for-other-tasks"></a>要用於其他工作的 ThisAddIn 成員
  下表說明其他常見工作，並顯示可以用來執行這些工作的 `ThisAddIn` 類別。
 
-|工作|要使用的成員|
+|Task|要使用的成員|
 |----------|-------------------|
 |載入 VSTO 增益集時，執行程式碼以初始化 VSTO 增益集。|將程式碼加入 `ThisAddIn_Startup` 方法。 這是 <xref:Microsoft.Office.Tools.AddInBase.Startup> 事件的預設事件處理常式。 如需詳細資訊，請參閱 [Office 專案中的事件](../vsto/events-in-office-projects.md)。|
 |卸載 VSTO 增益集之前，執行程式碼以清除 VSTO 增益集所使用的資源。|將程式碼加入 `ThisAddIn_Shutdown` 方法。 這是 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件的預設事件處理常式。 如需詳細資訊，請參閱 [Office 專案中的事件](../vsto/events-in-office-projects.md)。 **注意：**  在 Outlook 中， `ThisAddIn_Shutdown` 當 VSTO 增益集卸載時，預設不一定會呼叫事件處理常式。 如需詳細資訊，請參閱 [Office 專案中的事件](../vsto/events-in-office-projects.md)。|

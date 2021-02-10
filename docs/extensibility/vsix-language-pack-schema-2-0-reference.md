@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 author: acangialosi
 ms.author: anthc
-manager: jillfra
-ms.openlocfilehash: fc9c3c1aa7f8cf77ebf165a3e10a67ccbd5887f7
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+manager: jmartens
+ms.openlocfilehash: 5a12fe1be4030332e804f38cee1e0eb646356d79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863820"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971865"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 語言套件架構2.0 參考
 
@@ -65,7 +65,7 @@ VSIX 語言套件架構會提供 VSIX 封裝的當地語系化安裝資訊。 �
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 |標題|描述|
 |-----------|-----------------|

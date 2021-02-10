@@ -16,15 +16,15 @@ helpviewer_keywords:
 - solutions [Office development in Visual Studio], Project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c44e1208daaef11cb7fd9bd22e3e3ae574ca610d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b17ff0312574a4e41b283bd3c631977a834c64c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971813"
 ---
 # <a name="project-solutions"></a>專案解決方案
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 提供的專案範本可用來建立 Microsoft Office Project 的 VSTO 增益集。 您可以使用 VSTO 增益集來自動化 Project、擴充 Project 功能，或自訂 Project 的使用者介面 (UI)。
@@ -58,7 +58,7 @@ ms.locfileid: "97527508"
 ## <a name="customize-the-user-interface-of-project"></a>自訂專案的使用者介面
  您可以使用下列方式自訂 Project UI。
 
-|工作|取得詳細資訊|
+|Task|取得詳細資訊|
 |----------|--------------------------|
 |在 Project 的功能區中加入自訂索引標籤。|[功能區總覽](../vsto/ribbon-overview.md)|
 

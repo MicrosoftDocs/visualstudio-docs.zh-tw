@@ -16,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: ada73cc1f907a298a2cc1efcf3281fb8a219ef32
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 832b4f9257c328989b2d4d0f7db3bb5f49ec4f08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95439936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971852"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>如何：選取負載測試結果存放庫
 

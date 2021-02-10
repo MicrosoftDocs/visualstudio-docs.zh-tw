@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: 71cf7380-f2c6-436f-a17c-fdd5f90f5865
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 1d257f1703615fe4bcc072362326ce48f99f904e
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 7429b66dd1e8e70fdf8690b0c92a8d01518b3900
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616846"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971072"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>選項對話方塊、環境、通知
 
