@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd98e449f674d2841dd41aa88e320468698f4736
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 898bb0f3a923cfeac863b365e4746a63ccbc4c91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363818"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935322"
 ---
 # <a name="define-shapes-and-connectors"></a>定義圖形與連接器
 
@@ -36,7 +36,7 @@ DSL 圖表會顯示依 *線條或接點* interlinked 的 *圖形* 集合。 一�
 
 下列為可用的圖形類型：
 
-|圖形類型|說明|
+|圖形類型|Description|
 |-|-|
 |幾何圖形|一般用途的矩形或橢圓形。 您可以在相對於圖形邊界的特定位置，顯示文字和圖示裝飾項目。 您也可以將圖形嵌入幾何圖形內。|
 |區間圖形|內含標頭和區間的矩形，例如 UML 類別。 每個區間都包含文字列清單。<br /><br /> 這些列通常表示以圖形表示之項目底下的內嵌項目。 例如，從「類別圖表」方案範本中建立 DSL。|

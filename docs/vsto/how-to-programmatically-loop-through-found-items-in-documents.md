@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], searching in documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 634012cae7f12f5346ec83bbd2b41c1019ef066d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a447b0fd2651ceafd789de084c56e0cea03a69e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934828"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>如何：以程式設計方式在檔中找到的專案之間執行迴圈
   <xref:Microsoft.Office.Interop.Word.Find>類別具有 <xref:Microsoft.Office.Interop.Word.Find.Found%2A> 屬性，每當找到搜尋的專案時，它就會傳回 **true** 。 您可以使用 <xref:Microsoft.Office.Interop.Word.Range> 方法在 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 中找到的所有執行個體間執行迴圈。

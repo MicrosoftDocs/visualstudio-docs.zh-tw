@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e889bb81b4c13d003beb15f733d053ef159b197f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 019f77320e9118d5f3d31e647a59c71bb474d204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935530"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 
@@ -81,7 +81,7 @@ ms.locfileid: "97362934"
 
 請注意下列有關序列化模型的重點：
 
-- 每個 XML 節點的名稱與網域類別名稱相同，不同之處在于初始字母是小寫。 例如，`familyTreeModel` 與 `person`。
+- 每個 XML 節點的名稱與網域類別名稱相同，不同之處在于初始字母是小寫。 例如 `familyTreeModel` 和 `person`。
 
 - 網域屬性（例如 Name 和 BirthYear）會序列化為 XML 節點中的屬性。 同樣地，會將屬性名稱的初始字元轉換成小寫。
 
@@ -268,37 +268,37 @@ ms.locfileid: "97362934"
 
 這些元素可在 [DSL Explorer] 中的 **Xml 序列化 Behavior\Class 資料** 下找到。
 
-|屬性|說明|
+|屬性|描述|
 |-|-|
 |具有自訂元素架構|若為 True，表示網域類別具有自訂元素架構|
 |為自訂|如果您想要為此網域類別撰寫自己的序列化和還原序列化程式碼，請將此值設定為 **True** 。<br /><br /> 建立解決方案並調查錯誤，以探索詳細的指示。|
 |領域類別|此類別資料節點適用的網域類別。 唯讀。|
 |元素名稱|這個類別之元素的 Xml 節點名稱。 預設值是網域類別名稱的小寫版本。|
 |標記屬性名稱|要包含參考之「標記」元素中使用的屬性名稱。 如果空白，則會使用索引鍵屬性或識別碼的名稱。<br /><br /> 在此範例中為 "name"：  `<personMoniker name="/Mike Nash"/>`|
-|標記元素名稱|Xml 專案的名稱，此專案是用來參考這個類別的專案的名字標記。<br /><br /> 預設值是以 "名字" 尾碼的類別名稱的小寫版本。 例如 `personMoniker`。|
+|標記元素名稱|Xml 專案的名稱，此專案是用來參考這個類別的專案的名字標記。<br /><br /> 預設值是以 "名字" 尾碼的類別名稱的小寫版本。 例如： `personMoniker` 。|
 |標記類型名稱|為此類別的專案產生的 xsd 型別名稱。 XSD 位於 Dsl\Generated 程式 **代碼 \\ \* 架構 .xsd** 中|
 |序列化識別碼|若為 True，則表示專案 GUID 包含在檔案中。 如果沒有標示 **為「標記為** 」的屬性，而且 DSL 定義此類別的參考關聯性，則必須為 true。|
 |類型名稱|在 xsd 中，從指定的網域類別產生的 xml 型別名稱。|
-|附註|與此元素相關的非正式附注|
+|備註|與此元素相關的非正式附注|
 
 ### <a name="xml-property-data"></a>Xml 屬性資料
 
 Xml 屬性節點可在類別節點下找到。
 
-|屬性|說明|
+|屬性|描述|
 |-|-|
 |網域屬性|套用 xml 序列化設定資料的屬性。 唯讀。|
 |是標記索引鍵|若為 True，則會使用屬性做為索引鍵，以建立參考這個網域類別之實例的名字標記。|
 |為標記辨識符號|若為 True，則會使用屬性在名字標記中建立限定詞。 如果為 false，且此網域類別的 SerializeId 不是 true，則會以內嵌樹狀結構中父元素的標記來限定專案名稱。|
 |表示法|如果是屬性，則會將屬性序列化為 xml 屬性;如果專案，則會將它序列化為元素;如果忽略，則不會序列化。|
 |Xml 名稱|用於表示屬性之 xml 屬性或元素的名稱。 根據預設，這是網域屬性名稱的小寫版本。|
-|附註|與此元素相關的非正式附注|
+|備註|與此元素相關的非正式附注|
 
 ### <a name="xml-role-data"></a>Xml 角色資料
 
 角色資料節點可在來源類別節點下找到。
 
-|屬性|說明|
+|屬性|描述|
 |-|-|
 |具有自訂的標記|如果您想要提供自己的程式碼來產生及解析可跨越此關聯性的名字組，請將此設為 true。<br /><br /> 如需詳細指示，請建立解決方案，然後按兩下錯誤訊息。|
 |領域關聯|指定套用這些選項的關聯性。 唯讀。|
@@ -306,7 +306,7 @@ Xml 屬性節點可在類別節點下找到。
 |角色元素名稱|指定衍生自來源角色之 XML 元素的名稱。 預設值為角色屬性名稱。|
 |使用完整格式|若為 true，則會在代表關聯性的 XML 節點中包含每個目標元素或標記。 如果關聯性有自己的網域屬性，則應該設定為 true。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)

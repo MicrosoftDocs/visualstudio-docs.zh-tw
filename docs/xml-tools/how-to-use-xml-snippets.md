@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bebca3a27d11015388e45ff6839f446506e716c
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 4ada7beb72c27594b637b2c090c96581d4a6eb49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934568"
 ---
 # <a name="how-to-use-xml-snippets"></a>如何：使用 XML 程式碼片段
 
@@ -78,7 +78,7 @@ ms.locfileid: "95970603"
 下列程式說明如何存取 [ **以環繞** ] 命令。
 
 > [!NOTE]
-> 您也可以透過鍵盤快速鍵 (**ctrl** **Surround With** + **K**，然後按 **ctrl** + **S**) 來使用 [環繞于] 命令。
+> 您也可以透過鍵盤快速鍵 (**ctrl**  + **K**，然後按 **ctrl** + **S**) 來使用 [環繞于] 命令。
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>若要從內容功能表使用範圍語句
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office primary interop assemblies, installing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 15a55650f2e4a434343c9128cc8f28117b54288e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 432b2a74eb7ea4753cd110956c9dc9313e1a5d6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934815"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>如何：安裝 Office 主要 interop 元件
   當您安裝 Office 時，請安裝 Microsoft Office 主要 Interop 組件 (PIA)。

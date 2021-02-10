@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Unload method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1ec01ebc32472e315fe2c905ecfd2cfef0f4bbe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a36599259a38d0b9b8eb814a457b3625d593b03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541007"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934594"
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
   卸載 Managed VSTO 增益集之前呼叫。

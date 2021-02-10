@@ -8,15 +8,15 @@ helpviewer_keywords:
 - remote debugging, unblock download
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 54d85ee7df7f4038cc78b10f83be79e524d3bfd2
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: ffefa70c59658382073a10db8ae1832b0d9b03c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934555"
 ---
 # <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>如何：解除封鎖 Windows Server 上的遠端工具下載
 

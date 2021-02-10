@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0636d8c3-625a-49fa-94b6-516f22b7e1bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e8dd910e4edc110abb40dde14b4cb85ff54a70a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c12dc405f08851e55040c3097e5d7f409030f61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729381"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934327"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80729381"
 
 此介面代表運算式評估工具。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugExpressionEvaluator : IUnknown
@@ -53,7 +53,7 @@ IDebugExpressionEvaluator : IUnknown
 
 當 EE 具現化之後，DE 會呼叫 [parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) 來剖析運算式，並將它儲存在 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) 物件中。 之後，呼叫 [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 會評估運算式。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： ee. h
 
 命名空間： VisualStudio

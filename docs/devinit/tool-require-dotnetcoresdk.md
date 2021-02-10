@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: fe860b697bb5a85ec2bb3c8221118254552b5301
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8f96566242e940f5a36f3d6ab62cd8e08ec9b7ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934339"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 

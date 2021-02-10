@@ -12,19 +12,19 @@ helpviewer_keywords:
 - visual studio
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f73a410752d4b3befd00602f84d575a040c457fe
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 7111c53a498fe10710ec2b328600052a7d4de0cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850451"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935634"
 ---
-# <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Azure 上的 Visual Studio 映射
+# <a name="visual-studio-images-on-azure"></a><a id="top"></a> Azure 上的 Visual Studio 映射
 
 在預先設定的 Azure 虛擬機器 (VM) 中使用 Visual Studio，是從零開始到建立已啟動並執行中之開發環境的快速簡單方式。 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure) 中提供具有各種不同 Visual Studio 設定的系統映像。
 

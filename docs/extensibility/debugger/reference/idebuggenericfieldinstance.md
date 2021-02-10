@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: f68b4761-be8b-4801-9d4b-cde90e01d95e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9723c146ecb5096ea6f3635a3d5cae5c48e573e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06711f7112aaa528b7274867bc133368075d19ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728120"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934373"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 代表 managed 程式碼泛型型別的欄位實例。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugGenericFieldInstance : IUnknown
@@ -34,7 +34,7 @@ IDebugGenericFieldInstance : IUnknown
 |[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|抓取這個實例的型別參數引數。|
 |[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|傳回這個實例的型別參數引數數目。|
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： Sh. h
 
  命名空間： VisualStudio

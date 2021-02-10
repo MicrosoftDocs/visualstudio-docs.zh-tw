@@ -9,15 +9,15 @@ helpviewer_keywords:
 - text templates, debugging
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ad1545918a02fbcf530b439e801a656a425864
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b197fd52972162acbc6e7d6882507f943b2a560c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361465"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935348"
 ---
 # <a name="debugging-a-t4-text-template"></a>偵錯 T4 文字範本
 您可以在文字模板中設定中斷點。 若要在設計階段文字模板中進行程式設計，請儲存文字模板檔案，然後在方案總管中，于檔案的快捷方式功能表上選擇 [ **Debug T4 範本** ]。 若要對執行時間文字模板進行偵錯工具，只需將它所屬的應用程式進行調試。

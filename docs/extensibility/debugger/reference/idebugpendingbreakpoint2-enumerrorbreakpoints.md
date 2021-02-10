@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11caf8c2af92a14e001d7403f2457f0fc66ff3ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34336c51d51c50f6dee7239a38588f36c935edbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725857"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934347"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 取得由此暫止中斷點所產生的所有錯誤中斷點清單。
@@ -29,14 +29,14 @@ ms.locfileid: "80725857"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT EnumErrorBreakpoints( 
+HRESULT EnumErrorBreakpoints( 
    BP_ERROR_TYPE                 bpErrorType,
    IEnumDebugErrorBreakpoints2** ppEnum
 );
 ```
 
 ```csharp
-int EnumErrorBreakpoints( 
+int EnumErrorBreakpoints( 
    enum_BP_ERROR_TYPE              bpErrorType,
    out IEnumDebugErrorBreakpoints2 ppEnum
 );

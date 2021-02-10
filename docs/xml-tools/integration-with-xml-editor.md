@@ -7,23 +7,23 @@ ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9569e33f8f9f861bc5d89030c6fe38b0ab853a6f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 9fe1bfcd422dbfc5f010ae7819e2fccbeafb8227
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400183"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934620"
 ---
 # <a name="integration-with-xml-editor"></a>與 XML 編輯器整合
 
 XML 架構設計工具會與 XML 編輯器整合。 如果您在 XML 編輯器中修改 XSD 檔案，變更將會反映在 [Xml 架構瀏覽器](../xml-tools/xml-schema-explorer.md)中。 如果您已開啟 [Graph 視圖](../xml-tools/graph-view.md) 或 [內容模型視圖](../xml-tools/content-model-view.md) ，則變更也會反映在此。 您可以透過下列方式，在 XML 架構設計工具和 XML 編輯器之間流覽：
 
-- 在 [XML 編輯器] 中，以滑鼠右鍵按一下節點，然後選取 [ **在 Xml 架構瀏覽器中顯示** ]。
+- 在 [XML 編輯器] 中，以滑鼠右鍵按一下節點，然後選取 [ **在 Xml 架構瀏覽器中顯示**]。
 
-- 在 [圖形] 和 [ **XML 架構瀏覽器** ] 中，按兩下節點，或以滑鼠右鍵按一下節點，然後選取 [ **視圖程式碼** ]。 在內容模型視圖中，以滑鼠右鍵按一下節點，然後選取 [ **視圖程式碼** ]。
+- 在 [圖形] 和 [ **XML 架構瀏覽器**] 中，按兩下節點，或以滑鼠右鍵按一下節點，然後選取 [ **視圖程式碼**]。 在內容模型視圖中，以滑鼠右鍵按一下節點，然後選取 [ **視圖程式碼**]。
 
 下列螢幕擷取畫面顯示在 **Xml 架構瀏覽器** 中開啟的 xml 架構。 **XML 架構瀏覽器** 會在樹狀檢視中顯示架構集。 XML 編輯器會顯示 **Xml 架構瀏覽器** 中目前作用中節點的文字視圖。
 
@@ -33,6 +33,6 @@ XML 架構設計工具會與 XML 編輯器整合。 如果您在 XML 編輯器�
 
 ![Visual Studio 專案的螢幕擷取畫面，其中顯示 [視圖設計工具] 窗格、[XML 編輯器] 窗格和 [XML 架構瀏覽器] 窗格。](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)

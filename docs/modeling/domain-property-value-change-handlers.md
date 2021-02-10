@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 34f7dcf97498895f841f2a68fd3bc1abac224824
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a5a372d2e558b44753e9d0bc66d7c4c24b825533
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361725"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935088"
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c44d2289180ece35725b9258e9d20abeb3a4cac3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17ca1bb92f5db821b1d581f1a573032fea004fb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934314"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 此介面可讓運算式評估工具 (EE) ，以任何需要的格式來顯示內容的值。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCustomViewer : IUknown
@@ -50,7 +50,7 @@ EE 會以自訂格式來執行此介面，以顯示內容的值。
 
 一般而言，自訂檢視器會提供資料的唯讀視圖，因為提供給[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)的[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面沒有任何方法可變更屬性的值，但字串除外。 為了支援變更任意的資料區塊，EE 會在執行介面的相同物件上實作為自訂介面 `IDebugProperty3` 。 然後，這個自訂介面會提供變更任意資料區塊所需的方法。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 標頭： msdbg。h
 
 命名空間： VisualStudio

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: aa7590689b4d7acdb7a7ebe501584ed6a8bd41bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935413"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定義鎖定原則來建立唯讀區段
 Visual Studio 視覺效果和模型 SDK 的永久性 API 可讓程式鎖定部分或所有特定領域語言 (DSL) 模型，讓它可以讀取但不會變更。 例如，您可以使用這個唯讀選項，讓使用者可以要求同事標注和審核 DSL 模型，但不允許他們變更原始模型。

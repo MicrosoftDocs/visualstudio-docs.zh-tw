@@ -9,15 +9,15 @@ helpviewer_keywords:
 - text templates, custom hosts
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b168e0e66b7704c3e78a241f76ee4122278c9ed
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4565e710d1b3172507cb3f966cd2a920d3b3aaa8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362908"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935400"
 ---
 # <a name="customize-t4-text-transformation"></a>自訂 T4 文字轉換
 

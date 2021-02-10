@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: a9753fbb-e7f4-47f0-9dbe-9de90c6c8457
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 76364dd6817774c38daa62463cd5bc635075ba73
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: e814e442fe740c6a5090a43a2d76fb50168ea205
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815694"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934633"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>在 Visual Studio 中對 c # 或 Visual Basic 專案進行遠端偵錯
 若要對已部署在不同電腦上的 Visual Studio 應用程式進行偵錯工具，請在您部署應用程式的電腦上安裝並執行遠端工具，並將您的專案設定為從 Visual Studio 連線到遠端電腦，然後執行您的應用程式。
@@ -117,7 +117,7 @@ Windows 7 和更新版本上支援遠端偵錯程式， (不是從 Windows Serve
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [設定 Windows 防火牆以進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16c0655cdd55a1825f0a872ef013392bc9e5db79
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: aee937b382e3fa4731516c05acf46276d3059e8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934542"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>使用 Microsoft Monitoring Agent (c #、Visual Basic) 
 

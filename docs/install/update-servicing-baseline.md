@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: f185451a7f12c3c0b24d74d4a24b40d986ec536f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c8510a1ba83243d2d92b538d80876a8b0f20079
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184389"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935648"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>在維護基底上時更新 Visual Studio
 

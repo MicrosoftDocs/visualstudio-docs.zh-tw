@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d4bdfcea6cbc54fd620e9aacbdc6250493ca426
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b3ae5ea3c24ea72c911f686c7a0a92191785d9d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935374"
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
 您可以針對網域專屬的語言設計工具變更 explorer 的外觀和行為，如下所示：
@@ -113,6 +113,6 @@ ms.locfileid: "97362886"
 
      Explorer 應該只顯示 [動作專案] 節點，而且不應該顯示 [**批註** **] 節點。**
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100)) (特定領域語言工具字彙表)

@@ -5,17 +5,17 @@ ms.date: 12/13/2018
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bd1b12be2dba1526301cd0ea9a4356fb9cc14c14
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: cec6a19d525f89b5ca8873344d3dce9c830fd4c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935686"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>瞭解如何使用 JavaScript 的程式碼編輯器
 
@@ -118,7 +118,7 @@ for (var i = 0; i < length; i++) {
 
 您可以選擇 [**編輯**  >  **IntelliSense**  >  **插入程式碼片段**]，然後選擇語言的資料夾，以查看語言的可用程式碼片段。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [程式碼片段](../ide/code-snippets.md)
 - [巡覽程式碼](../ide/navigating-code.md)

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6effda90580a184bb8ebfb8c4f4830dc6cb844d5
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 42819379aa2b21788686bf0917b1523bf77e6c64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362853"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935361"
 ---
 # <a name="customizing-text-and-image-fields"></a>自訂文字和影像欄位
 當您在圖形中定義文字裝飾專案時，它會以文字欄位表示。 如需 TextFields 和其他 ShapeFields 初始化的範例，請檢查 DSL 解決方案中的 Dsl\GeneratedCode\Shapes.cs。
@@ -263,7 +263,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [定義圖案和連接器](../modeling/defining-shapes-and-connectors.md)
 - [設定圖表上的背景影像](../modeling/setting-a-background-image-on-a-diagram.md)

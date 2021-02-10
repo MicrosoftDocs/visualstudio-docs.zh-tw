@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 20dc9b6ac1bd4e565fd10793889c611f9b039778
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 324037010e642ab4e96f6efea5da0f232c9bd530
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363168"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935062"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
 
@@ -131,7 +131,7 @@ ms.locfileid: "97363168"
 
    - 這個元件的名稱通常會以 ".Dsl.dll" 結尾。
 
-   - 如果您有 DSL 專案的存取權，您可以在 [*dsl \\ bin \\ \**] 目錄下找到元件檔案。
+   - 如果您有 DSL 專案的存取權，您可以在目錄 **DSL \\ bin \\ \*** 下找到元件檔案。
 
    - 如果您可以存取 DSL VSIX 檔案，您可以藉由將 VSIX 檔案的副檔名變更為 ".zip" 來尋找元件。 將 .zip 檔案解壓縮。
 
@@ -147,7 +147,7 @@ ms.locfileid: "97363168"
 
    - System.Windows.Forms.dll
 
-4. 建立新的 _ *VSIX 專案** 專案。
+4. 建立新的 **VSIX 專案** 專案。
 
 5. 在 **方案總管** 中，以滑鼠右鍵按一下 VSIX 專案，然後選擇 [ **設定為啟始專案**]。
 
@@ -159,11 +159,11 @@ ms.locfileid: "97363168"
 
    1. 在 **extension.vsixmanifest** 中，按一下 [**加入參考**]
 
-   2. 在對話方塊中，按一下 [ **新增** 內容]，然後找出 DSL 的 VSIX 檔案。 VSIX 檔案內建于 DSL 解決方案的 **DslPackage \\ bin \\ \** _ 中。
+   2. 在對話方塊中，按一下 [ **新增** 內容]，然後找出 DSL 的 VSIX 檔案。 VSIX 檔案內建于 DSL 解決方案的 **DslPackage \\ bin \\ \*** 中。
 
        這可讓使用者同時安裝 DSL 和您的延伸模組。 如果使用者已安裝 DSL，則只會安裝您的延伸模組。
 
-9. 檢查並更新 _ * extension.vsixmanifest * * 的其他欄位。 按一下 [ **選取版本** ]，並確認已設定正確的 Visual Studio 版本。
+9. 檢查並更新 **extension.vsixmanifest** 的其他欄位。 按一下 [ **選取版本** ]，並確認已設定正確的 Visual Studio 版本。
 
 10. 將程式碼加入至類別庫專案。 使用下一節中的範例做為指南。
 
@@ -374,7 +374,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)

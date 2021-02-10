@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text templates, generating code for your application
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 698dde24cb66d27a12a0f8785c8ac97e4cfb0eb0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 11c9384d03971f475abbe680f6731d2757cbb195
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363805"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935296"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 
@@ -64,7 +64,7 @@ ms.locfileid: "97363805"
 
 5. 儲存檔案。
 
-    您可能會看到 **安全性警告** 訊息方塊，要求您確認是否要執行該範本。 按一下 [確定]。
+    您可能會看到 **安全性警告** 訊息方塊，要求您確認是否要執行該範本。 按一下 [確定]  。
 
 6. 在 **方案總管** 中，展開 [範本檔案] 節點，您會發現副檔名為 **.txt** 的檔案。 此檔案包含從範本產生的文字。
 
@@ -355,7 +355,7 @@ Warning("A warning message");
    | | |
    |-|-|
    | **自訂工具 =** | **TextTemplatingFileGenerator** |
-   | **建置動作 =** | **無** |
+   | **建置動作 =** | **None** |
 
 5. 在檔案開頭，插入下列各行：
 
@@ -380,7 +380,7 @@ Warning("A warning message");
 
 請參閱 [撰寫 T4 文字模板的指導方針](../modeling/guidelines-for-writing-t4-text-templates.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 |後續步驟|主題|
 |-|-|
@@ -390,6 +390,6 @@ Warning("A warning message");
 |以網域特定領域語言形式，轉換您的資料。|[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)|
 |撰寫指示詞處理器，以轉換您專屬的資料來源。|[自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [撰寫 T4 文字範本的方針](../modeling/guidelines-for-writing-t4-text-templates.md)

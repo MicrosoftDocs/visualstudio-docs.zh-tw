@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain path
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a24e2c9bcbecb095282c0914fa09f93e5c21e699
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c11776576d00306e4b0f3de5e7ff830037c1fefd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935153"
 ---
 # <a name="domain-path-syntax"></a>網域路徑語法
 DSL 定義使用類似 XPath 的語法來尋找模型中的特定項目。
@@ -37,6 +37,6 @@ DSL 定義使用類似 XPath 的語法來尋找模型中的特定項目。
 
  用於表示項目到連結之躍點的名稱是角色的 [`Property Name`] 值。 用於表示連結到項目之躍點的名稱是目標角色名稱。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)

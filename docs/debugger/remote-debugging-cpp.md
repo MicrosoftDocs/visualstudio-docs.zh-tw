@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8d3b578e62b917a7553b42a04e53062c406c4fd
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 9915fdab1d4d0976a199a09a11c815e4966192a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934646"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Visual Studio 中的遠端偵錯 c + + 專案
 若要在不同的電腦上進行 Visual Studio 應用程式的偵錯工具，請在您要部署應用程式的電腦上安裝並執行遠端工具、將專案設定為從 Visual Studio 連線到遠端電腦，然後部署和執行您的應用程式。
@@ -80,11 +80,11 @@ Windows 7 和更新版本上支援遠端偵錯程式， (不是從 Windows Serve
 
     如果您 (選用) 部署其他檔案，則該資料夾必須存在於這兩部電腦上。
 
-6. 在方案總管中，以滑鼠右鍵按一下方案，然後選擇 [ **Configuration Manager**]。
+6. 在方案總管中，以滑鼠右鍵按一下方案，然後選擇 [ **設定管理員**]。
 
 7. 在 [偵錯] 組態中，選取 [部署] 核取方塊。
 
-    ![Visual Studio 方案總管中 Configuration Manager 的螢幕擷取畫面。 已選取 [偵錯工具] 設定，並已核取 [部署]。](../debugger/media/remotedebugcplusdeploy.png)
+    ![Visual Studio 方案總管中設定管理員的螢幕擷取畫面。 已選取 [偵錯工具] 設定，並已核取 [部署]。](../debugger/media/remotedebugcplusdeploy.png)
 
 8. 開始偵錯 ([偵錯] > [開始偵錯]，或 **F5**)。
 
@@ -107,7 +107,7 @@ Windows 7 和更新版本上支援遠端偵錯程式， (不是從 Windows Serve
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [設定 Windows 防火牆以進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

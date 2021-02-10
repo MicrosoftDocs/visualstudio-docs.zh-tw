@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a8f9809df0fa45021aab640bf3ff547efaa1576
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89c538d758b96ee8c5a5240189e6bd518ff2681c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728072"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934288"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
 傳回與這個泛型參數相關聯的條件約束數目。
@@ -46,7 +46,7 @@ int ConstraintCount(
 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面的**CDebugGenericParamFieldType**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面的 **CDebugGenericParamFieldType** 物件，執行這個方法。
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::ConstraintCount(ULONG32* pcConst)

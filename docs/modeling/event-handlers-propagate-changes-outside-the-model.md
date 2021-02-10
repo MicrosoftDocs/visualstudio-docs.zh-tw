@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b0780007361115aa485b91db70cc413029a6f8f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 0ed45d631697d37db8da49e459e80f1b5a43a373
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935127"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件處理常式傳播模型外的變更
 
@@ -186,7 +186,7 @@ private static void AlbumTitleAdjuster(object sender,
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)
 - [範例程式碼：電路圖](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

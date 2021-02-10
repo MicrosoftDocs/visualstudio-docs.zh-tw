@@ -7,16 +7,16 @@ helpviewer_keywords:
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
 author: john-hart
 ms.author: JohnHart
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d7b500caacf320df599843e45cc4e93b4f3e69
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 5a6f7c2c8d6c79270df94c100bbd4625856efa15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94441294"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934503"
 ---
 # <a name="deploy-a-net-windows-desktop-application-using-clickonce"></a>使用 ClickOnce 部署 .NET Windows 桌面應用程式
 
@@ -31,13 +31,13 @@ ms.locfileid: "94441294"
 
     ![方案總管的專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-clickonce-solution-explorer.png "選擇 [發行]")
 
-1. 如果您先前已設定任何發行設定檔，[ **發行** ] 頁面隨即出現。 選取 [新增]。
+1. 如果您先前已設定任何發行設定檔，[ **發行** ] 頁面隨即出現。 選取 [ **新增**]。
 
-1. 在 [ **發佈** 嚮導] 中，選取 [ **資料夾** ]。
+1. 在 [ **發佈** 嚮導] 中，選取 [ **資料夾**]。
 
     ![選擇資料夾做為發佈目標](../deployment/media/quickstart-clickonce-publish-folder-category.png "選擇資料夾")
 
-1. 在特定的 [ **目標** ] 頁面中，選取 [ **ClickOnce** ]。
+1. 在特定的 [ **目標** ] 頁面中，選取 [ **ClickOnce**]。
 
     ![選取 ClickOnce 作為特定目標](../deployment/media/quickstart-clickonce-publish-folder-target.png "選擇 ClickOnce")
 
@@ -70,7 +70,7 @@ ms.locfileid: "94441294"
 
     ![簽署 ClickOnce 資訊清單](../deployment/media/quickstart-clickonce-sign-manifests.png)
 
-1. **在 [設定] 頁面上** ，您可以選取所需的專案設定。
+1. **在 [設定] 頁面上**，您可以選取所需的專案設定。
 
      ![指定發佈設定](../deployment/media/quickstart-clickonce-configuration.png)
 
@@ -88,7 +88,7 @@ ms.locfileid: "94441294"
 
 1. 若要發行，請選取 [發行]。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 針對 .NET 應用程式：
 

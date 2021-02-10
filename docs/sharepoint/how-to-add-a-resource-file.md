@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, resource files
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 440777aaaf239dcdd3c276786a82e3d8aef55070
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 22b5638f7251b34c74da348e55e755cd27132aff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934841"
 ---
 # <a name="how-to-add-a-resource-file"></a>如何：新增資源檔
   新增資源檔的命令位於 [方案] 節點的快捷方式功能表和方案總管中的功能節點。 如需詳細資訊，請參閱 [當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)。
@@ -52,5 +52,5 @@ ms.locfileid: "94850126"
 
 3. 當 **資源編輯器** 在中開啟時 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，請將資源新增至資源檔。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

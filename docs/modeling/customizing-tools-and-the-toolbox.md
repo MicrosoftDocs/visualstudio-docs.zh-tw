@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f02254cc1229ab069277b0fe46a6b825393f682f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 40341a0c74b371c4c84429474e58c7d338bb8059
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935426"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 
@@ -234,7 +234,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  您可以使用自訂程式碼來套用「硬式」條件約束，但您應該考慮使用者是否應該能夠暫時進行不正確連接。 如果應該，您可以修改條件約束，在使用者嘗試儲存變更之前都不會驗證連接。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [自訂項目的建立和移動](../modeling/customizing-element-creation-and-movement.md)
 - [自訂複製行為](../modeling/customizing-copy-behavior.md)

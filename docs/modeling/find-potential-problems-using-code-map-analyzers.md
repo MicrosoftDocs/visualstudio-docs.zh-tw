@@ -12,15 +12,15 @@ helpviewer_keywords:
 - graph documents, analyzing
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f31aeb933150f31f4ef9d6a3fbe695dcb5ef174
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 77e5d8f6241f6f1978f24b9ebb5ad49aa9f24331
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362181"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934984"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>使用 Code Map 分析器尋找潛在問題
 
@@ -47,7 +47,7 @@ ms.locfileid: "97362181"
 > [!TIP]
 > 如果您的對應非常大，執行分析器可能會造成記憶體不足的例外狀況。 如果發生這種情況，請編輯對應以減少其範圍，或產生較小的對應，然後執行分析器。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)

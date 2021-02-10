@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Bookmark control, updating contents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9b9fa4b5ef19fdcaae38ef477952580f6568fcc0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cf38843d2ce7f617d44793769e6ca236c2683805
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934724"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>如何：以程式設計方式更新書簽文字
   您可以在 Microsoft Office Word 文件的預留位置書籤中插入文字，以便稍後擷取文字，或取代書籤中的文字。 如果開發的是文件層級自訂，您也可以更新繫結至資料的 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項文字。 如需詳細資訊，請參閱 [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。
