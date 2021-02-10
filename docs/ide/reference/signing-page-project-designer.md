@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e76be0482353ffe4740956ab16f24d6ce82f4da
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f52d02407316fbc8f9a7b5e3db1c02a3566cda87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957578"
 ---
 # <a name="signing-page-project-designer"></a>專案設計工具、簽署頁
 
@@ -100,7 +100,7 @@ ms.locfileid: "94348511"
 > [!NOTE]
 > 當您簽署組件時，不一定可以存取私密金鑰。 例如，組織可能會有嚴密保護的金鑰組，即使開發人員也沒有這類金鑰組的日常存取權。 公開金鑰可能可以使用，但只有少數人才能存取私密金鑰。 在這類情況下，您可以使用「延遲」或「部分簽署」提供公開金鑰，並將私密金鑰的新增延遲到交付組件時。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [專案屬性參考](../../ide/reference/project-properties-reference.md)
 - [管理元件和資訊清單簽署](../../ide/managing-assembly-and-manifest-signing.md)

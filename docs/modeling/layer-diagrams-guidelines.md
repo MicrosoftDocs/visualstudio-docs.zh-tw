@@ -11,15 +11,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfef2f9397fbe8dfeceaa8789cf8d118315b26d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 06f4baed4851681065f3f7ccafecd3af339398f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363961"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957370"
 ---
 # <a name="dependency-diagrams-guidelines"></a>相依性圖表：指導方針
 
@@ -174,7 +174,7 @@ ms.locfileid: "97363961"
 
 為了確保程式碼中的未來變更符合相依性圖表，請將圖層驗證封裝含在解決方案的標準組建流程中。 每當有其他小組成員建立方案時，程式碼和相依性圖表中的相依性之間的任何差異都會回報為組建錯誤。 如需在組建流程中包含圖層驗證的詳細資訊，請參閱使用相依性 [圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [相依性圖表︰參考](../modeling/layer-diagrams-reference.md)
 - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)

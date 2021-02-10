@@ -6,17 +6,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7ce7b4af783149a53e0eacadaa5753d596f69563
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: d3b8413673318f2e0cd2a5f00cfb9d1d7f0b4097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957526"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 Express 應用程式
 
@@ -269,7 +269,7 @@ IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
 
 恭喜您完成此教學課程！
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [將應用程式部署至 Linux App Service](../javascript/publish-nodejs-app-azure.md)

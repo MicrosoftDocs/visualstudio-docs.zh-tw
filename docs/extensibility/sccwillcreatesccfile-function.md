@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0694fd6b4ba82faf8b05354765fc5734efe2ef4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50ef18e44579525df136bd770cda96124cb30c87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956863"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 函式
 此函式會判斷原始檔控制外掛程式是否支援建立 MSSCCPRJ.SCC。每個指定檔案的 SCC 檔。

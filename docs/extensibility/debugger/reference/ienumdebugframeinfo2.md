@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa67792ced94afd9c4439cbc6ea577e6b85f28b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdc2006b45a664496615988251081f1000cdb428
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956280"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 此介面會列舉 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 結構。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugFrameInfo2 : IUnknown
@@ -39,7 +39,7 @@ IEnumDebugFrameInfo2 : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|抓取列舉序列中指定的 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 結構數目。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|抓取列舉序列中指定的 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 結構數目。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|略過列舉序列中指定的 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 結構數目。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|將列舉順序重設為開頭。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
@@ -48,7 +48,7 @@ IEnumDebugFrameInfo2 : IUnknown
 ## <a name="remarks"></a>備註
  Visual Studio 會取得這個介面，做為處理中斷點、例外狀況或使用者在所進行之程式上產生之暫停的第一個步驟。 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構的清單代表目前的呼叫堆疊，目前的函式呼叫位於清單的開頭，而最舊的函數呼叫位於清單結尾。 每個都 `FRAMEINFO` 代表一個堆疊框架，也就是可在其中評估運算式的內容，以及查看的本機變數。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

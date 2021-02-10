@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d577ff2f5848f2cb348bcaccf57875507018634b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cce45c926700779906881bc4a4607b05f0732be3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716776"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956395"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 這個介面代表執行 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 介面的物件集合。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugFields : IUnknown
@@ -39,7 +39,7 @@ IEnumDebugFields : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|從列舉中抓取下一組 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 物件。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|從列舉中抓取下一組 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 物件。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|略過指定數目的專案。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|將列舉重設為第一個專案。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|抓取目前列舉的複本。|

@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: c886f8af-2014-4fec-9b24-d98b68ecafb7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f57e372ec4fa3215a9f553403f513dc91b43016
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 68bb6c863921cdfa87da99d19f85afa8afb8c49b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686242"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955927"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>從命令列建立分析工具報告
 **VSPerfReport** 命令列工具可讓您建立。 ( 的 *xml* 或逗點分隔值。*csv*) 分析資料 ( 的報表。*.vsp*) 檔案。 VSPerfReport 報表類型極符合 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之介面的資料表檢視。 您可以篩選報表只顯示您的程式碼，以及只顯示分析資料檔案的區段。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。

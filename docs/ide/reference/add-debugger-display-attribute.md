@@ -6,15 +6,15 @@ ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: fa6baa6e104fca2d3a3b45cac343fd1ceb086271
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 2166f7876909f62d9d16a2a6d5ec126d4544193e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956720"
 ---
 # <a name="add-debuggerdisplay-attribute"></a>新增 DebuggerDisplay 屬性
 
@@ -28,7 +28,7 @@ ms.locfileid: "95871115"
 
 **原因：** 釘選屬性可讓您依物件的屬性快速檢查物件，方法是將該屬性反升到偵錯工具內物件的屬性清單頂端。 
 
-## <a name="how-to"></a>操作方式
+## <a name="how-to"></a>使用方法
 
 1. 將游標放在類型、委派、屬性或欄位上。 
 

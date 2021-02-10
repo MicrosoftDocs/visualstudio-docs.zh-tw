@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 15fcc5981c5711c7c3ddcf7262649a9d3473ee55
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 63db3f62f4e7c763bf02fbfec2dd2f52c32d3264
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956356"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 
@@ -361,13 +361,13 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置網際網路�
 
 Visual Studio 是開發人員生產力工具的整合式開發套件。 請將它視為可用來建立程式和應用程式的程式。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 恭喜您完成此教學課程！ 我們希望您更了解 C#、ASP.NET Core 和 Visual Studio IDE。 若要深入了解如何使用 C# 和 ASP.NET 建立 Web 應用程式或網站，請繼續進行下列教學課程：
 
 > [!div class="nextstepaction"]
 > [使用 ASP.NET Core 建立 Razor 頁面 Web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 Visual Studio 將 Web 應用程式發佈至 Azure App Service](../../deployment/quickstart-deploy-to-azure.md)

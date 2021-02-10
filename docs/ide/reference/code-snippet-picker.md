@@ -12,15 +12,15 @@ helpviewer_keywords:
 - code snippets, Code Snippet Picker
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf0b1c264911c92389c6c3afe722b5061455c3da
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 93fea67056c73a6e9b0b265253479fbecee63767
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96041014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956148"
 ---
 # <a name="code-snippet-picker"></a>程式碼片段選擇器
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 67da406c-eadb-421e-ae12-e26e9866f262
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6247e48af98f5c21a0afc40577e18d38bba06506
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f257ae62f08f7afdfae91a56570cb8a12a3d8fff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956915"
 ---
 # <a name="ienumdebugports2reset"></a>IEnumDebugPorts2::Reset
 將列舉重設為第一個元素。

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4a57d60c6e1dae0c42e30dce856a147fda0226
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 0f030a240bf02b3261ce903803095b83555a4531
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436905"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957357"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 工作
 
@@ -32,7 +32,7 @@ ms.locfileid: "92436905"
 
 ## <a name="task-parameters"></a>工作參數
 
-|參數|描述|
+|參數|Description|
 |---------------|-----------------|
 |`CLREmbeddedResource`|未使用的。|
 |`CLRResourceFiles`|未使用的。|

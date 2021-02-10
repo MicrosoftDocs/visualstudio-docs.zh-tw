@@ -7,15 +7,15 @@ ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dd4e4f3678cd59562f5945ab26f8d828210375c
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 9dbfd5459ae750236afde63574959fd6b7c7b37c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956564"
 ---
 # <a name="sample-xsd-file-relationships"></a>範例 XSD 檔案：關聯性
 

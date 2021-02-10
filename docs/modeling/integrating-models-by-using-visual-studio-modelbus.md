@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46705c7a614cd67d81c9e55c03e937f72c29a2fe
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f0c1d076edc09f7978dcc188b167ce953f631068
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957409"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 來整合模型
 
@@ -42,7 +42,7 @@ ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個�
 
 2. 在對話方塊中，選擇 [ **我要將這個 DSL 公開給 ModelBus**]。 如果您要將這個 DSL 公開給其模型，又要讓這個 DSL 使用其他 DSL 的參考，您可以選擇兩個選項。
 
-3. 按一下 [確定]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
+3. 按一下 [確定]  。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
 
 4. 如果您要從文字範本存取 DSL，您必須修改新專案中的 AdapterManager.tt。 如果您要從其他程式碼 (例如命令和事件處理常式) 存取 DSL，請略過這個步驟。 如需詳細資訊，請參閱 [使用文字模板中的 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
@@ -516,7 +516,7 @@ ModelBus 擴充功能在 DSL 方案中進行了下列變更。
 
 - 在 **DslPackage\source.extention.tt** 中， `|ModelBusAdapter|` 會新增為 MEF 元件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [如何：在程式碼中開啟檔案的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [如何：加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)

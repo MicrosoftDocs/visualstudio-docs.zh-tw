@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 4fe28074-a960-41ad-b74d-b57f04c0c0ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612285aa4d5a249c0f922ccae88d98a7df83187b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfcd594ab8764cedb8cbe2ea312675f884ae2338
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957149"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 此介面會列舉模組清單。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugModules2 : IUnknown
@@ -39,7 +39,7 @@ IEnumDebugModules2 : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|抓取列舉序列中指定數目的模組。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|抓取列舉序列中指定數目的模組。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|略過列舉序列中指定數目的模組。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|將列舉順序重設為開頭。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|建立包含與目前列舉值相同列舉狀態的列舉值。|
@@ -50,7 +50,7 @@ IEnumDebugModules2 : IUnknown
 
  為了在 Visual Studio 中進行偵錯工具，程式是程式碼指令的邏輯序列，可以跨模組界限，因此需要單一 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 介面的模組清單。 清單中的第一個模組通常包含相關程式的初始進入點。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： msdbg。h
 
  命名空間： VisualStudio

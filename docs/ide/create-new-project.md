@@ -10,15 +10,15 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcbf39be441ba8237520fcc56ceec7946d688901
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: 97d585f8c484f1ef8b4cbd0514585d6f328af67c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846908"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956876"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>在 Visual Studio 中建立新專案
 
@@ -106,7 +106,7 @@ ms.locfileid: "97846908"
 > [!TIP]
 > 如需從頭開始建立的專案和解決方案範例，請參閱 [專案和方案簡介](../get-started/tutorial-projects-solutions.md)（請參閱）。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [專案和解決方案簡介](../get-started/tutorial-projects-solutions.md)
 - [使用解決方案與專案](creating-solutions-and-projects.md)

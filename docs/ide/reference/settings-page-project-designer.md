@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Project Designer, Settings page
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5aa077043b16c01a05e8730bcd2b42719edaf0
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d8ee71e717d2287b4e6deb32b1b94c142cf7de73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957669"
 ---
 # <a name="settings-page-project-designer"></a>設定頁面、專案設計工具
 
@@ -67,11 +67,11 @@ Properties.Settings.Default.Save();
 
 [設定方格] 用來設定應用程式設定。 此方格包含下列資料行：
 
-名稱
+**名稱**
 
 輸入此欄位中應用程式設定的名稱。
 
-**類型**
+**型別**
 
 使用下拉式清單來選取設定類型。 最常使用的類型會出現在下拉式清單中，例如 **String**、**(Connection string)** 和 **System.Drawing.Font**。 您可以選取清單結尾的 [瀏覽]，然後從 [選取類型] 對話方塊選取類型，來選擇另一個類型。 選擇類型之後，會將它新增至下拉式清單中的常見類型 (僅適用於目前解決方案)。
 

@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0388e4a1916a16f7e429fa4f32c45ed62fdb02e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a53da7b55258cd3708777a802bcd4625e8461b0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956512"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 捕獲來源伺服器資訊的陣列。
@@ -50,7 +50,7 @@ public int GetSourceServerData(
 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="example"></a>範例
-下列範例示範如何針對公開[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)介面的**CModule**物件，執行這個方法。
+下列範例示範如何針對公開 [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)介面的 **CModule** 物件，執行這個方法。
 
 ```cpp
 HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)

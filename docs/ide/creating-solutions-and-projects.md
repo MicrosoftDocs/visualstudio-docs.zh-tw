@@ -13,15 +13,15 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88bbead675bcf8001e17fe731bc141ab90c42b98
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: 2f702908c60b08ac1eaae5aa1f941a2f56eaf8fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956798"
 ---
 # <a name="work-with-solutions-and-projects"></a>使用解決方案與專案
 
@@ -150,7 +150,7 @@ ms.locfileid: "97847059"
 
 1. 選取包含解決方案的資料夾，然後按下 **Delete** 鍵。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [專案和解決方案簡介](../get-started/tutorial-projects-solutions.md)
 - [管理專案和解決方案屬性](managing-project-and-solution-properties.md)

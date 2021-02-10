@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f3eb95c5ba8bb9f519623d4b43bc80d37919305d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 60f137c470b31ddccfa9b26cb907b13288d07dc1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957305"
 ---
 # <a name="process-view---contention-data"></a>處理序檢視 - 爭用資料
 處理序檢視顯示程式碼剖析執行期間所執行處理序和執行緒的爭用資料。

@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5df9f14fecce23eb72d08dcba87dee360269e078
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 258ed7d22114cba1d934a70c7bbef39364482464
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955940"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>從命令列建立可移植的分析資料檔案
 若要更輕鬆地共用分析資料，您可以使用 [VSPerfReport](../profiling/vsperfreport.md) 命令列工具，將程式碼剖析執行的符號內嵌至。*.vsp* 檔案。

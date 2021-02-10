@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0447cae810da48bd592371a40f22c40ff45cec
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 2ee685ebf542dbf9405afce8cfdf5c4a7e060b79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048172"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956044"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>從 IDE 中啟動組建
 

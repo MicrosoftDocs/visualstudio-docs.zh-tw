@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 902974c195cabf09abf5f29334a1e28316da54e5
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a223a2007d62b84f06191c71523b861f94efe3d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719353"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956122"
 ---
 # <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>在效能分析工具中分析 CPU 使用量，而不進行調試
 
@@ -60,7 +60,7 @@ ms.locfileid: "98719353"
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> [CPU 使用量] 資料行
 
-|Name|描述|
+|名稱|描述|
 |-|-|
 |**CPU 總計 [單位, %]**|![總計 % 資料方程式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 在選取的時間範圍內，呼叫函式和該函式所呼叫函式使用的毫秒數及 CPU 百分比。 這與 [CPU 使用率]  時間軸圖表不同，其會將時間範圍內的 CPU 活動總計與可用的 CPU 總計進行比較。|
 |**自我 CPU [單位, %]**|![自我 % 方程式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 在選取的時間範圍內，呼叫函式使用的毫秒數及 CPU 百分比，不包含函式所呼叫的函式。|

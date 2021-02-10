@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Project Designer, Services page
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c286dbd632e09a9a9c2c2b62ac2002f2e48f283
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 50d9e564b6637feb19ef99c3d33c0ea5c1b7b1fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560794"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957825"
 ---
 # <a name="services-page-project-designer"></a>專案設計工具、服務頁
 
@@ -35,7 +35,7 @@ ms.locfileid: "96560794"
 
 ## <a name="uielement-list"></a>UIElement 清單
 
- **設定**
+ **Configuration**
 
 在這個頁面上無法編輯此控制項。 如需此控制項的描述，請參閱[專案設計工具、編譯頁面 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) 或[專案設計工具、建置頁面 (C#)](../../ide/reference/build-page-project-designer-csharp.md)。
 

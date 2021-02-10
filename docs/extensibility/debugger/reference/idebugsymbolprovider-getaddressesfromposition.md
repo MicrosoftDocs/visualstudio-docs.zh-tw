@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27767af36093e9424775074a55bafadac9a4480d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15838ff1efe9cba6920b98a8b7f00cb62f2fc3b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719413"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956460"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 這個方法會將檔位置對應到一個 debug 位址陣列中。
@@ -28,7 +28,7 @@ ms.locfileid: "80719413"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetAddressesFromPosition( 
+HRESULT GetAddressesFromPosition( 
    IDebugDocumentPosition2* pDocPos,
    BOOL                     fStatmentOnly,
    IEnumDebugAddresses**    ppEnumBegAddresses,
@@ -37,7 +37,7 @@ HRESULT GetAddressesFromPosition( 
 ```
 
 ```csharp
-int GetAddressesFromPosition( 
+int GetAddressesFromPosition( 
    IDebugDocumentPosition2  pDocPos,
    bool                     fStatmentOnly,
    out IEnumDebugAddresses  ppEnumBegAddresses,

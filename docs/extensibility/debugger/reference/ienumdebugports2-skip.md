@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a837383f-7b39-4e06-b336-f1715b073dbe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c57eaa465a29cf505d62c720b1fe7f6aca8bda5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 708d7d85b7159e43305b52819a683b0895ddc295
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716155"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956902"
 ---
 # <a name="ienumdebugports2skip"></a>IEnumDebugPorts2::Skip
 略過指定的元素數目。

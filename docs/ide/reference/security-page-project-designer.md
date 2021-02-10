@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Security page in Project Designer
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7080c1a2ce77d26987f81acaa0a751887f9f574e
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 426179eb20fcb71ac02039c3b2be20dab6f685b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350253"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957851"
 ---
 # <a name="security-page-project-designer"></a>專案設計工具、安全性頁
 
@@ -74,7 +74,7 @@ WPF 網頁瀏覽器應用程式專案預設選取此選項。
 
 開啟 [[進階安全性設定] 對話方塊](../../ide/reference/advanced-security-settings-dialog-box.md)，這是用來設定以限制權限偵錯應用程式的設定。 偵錯期間會檢查這些設定，權限例外狀況會指出應用程式可能需要比在區域中定義更高的權限。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>

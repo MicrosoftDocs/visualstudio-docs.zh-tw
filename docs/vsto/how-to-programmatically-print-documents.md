@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], printing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e17976c86a519db3c5edcd60c426b5d20e84b526
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c81e22bbf3af08c150f1e1156ee62f1666f59638
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956629"
 ---
 # <a name="how-to-programmatically-print-documents"></a>如何：以程式設計方式列印檔案
   您可以將整個 Microsoft Office Word 文件，或文件的一部分，列印到預設印表機。

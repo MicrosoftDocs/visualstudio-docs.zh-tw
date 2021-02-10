@@ -8,13 +8,13 @@ helpviewer_keywords:
 - editorconfig [Visual Studio]
 author: mikadumont
 ms.author: midumont
-manager: jillfra
-ms.openlocfilehash: a1f66368972614347df9eebe33af435987ea9cc8
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+manager: jmartens
+ms.openlocfilehash: 8ab90fda1f14521d59982ef7b5d20998cf61e505
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956837"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 建立可攜式自訂編輯器設定
 
@@ -33,7 +33,7 @@ ms.locfileid: "95006493"
 
 ::: moniker range="=vs-2017"
 
-當您將 EditorConfig 檔案新增至 Visual Studio 中的專案時，會根據 EditorConfig 設定將新的程式程式碼格式化。 除非您將檔案格式化 (在 **Edit**  >  **Advanced**  >  預設設定檔) 中編輯 Advanced **format 檔** 或 **ctrl** + **K**、 **ctrl** + **D** ，否則不會變更現有程式碼的格式。 除非您已設定格式檔以 [執行額外的程式碼清除](../ide/code-styles-and-code-cleanup.md#apply-code-styles)，否則檔的格式設定只會影響泛空白字元設定，例如縮排樣式。
+當您將 EditorConfig 檔案新增至 Visual Studio 中的專案時，會根據 EditorConfig 設定將新的程式程式碼格式化。 除非您將檔案格式化 (在  >    >  預設設定檔) 中編輯 Advanced **format 檔** 或 **ctrl** + **K**、 **ctrl** + **D** ，否則不會變更現有程式碼的格式。 除非您已設定格式檔以 [執行額外的程式碼清除](../ide/code-styles-and-code-cleanup.md#apply-code-styles)，否則檔的格式設定只會影響泛空白字元設定，例如縮排樣式。
 
  ::: moniker-end
 

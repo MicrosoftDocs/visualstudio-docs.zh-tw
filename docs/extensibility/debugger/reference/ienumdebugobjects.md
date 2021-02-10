@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0950364c-6c8a-4b6c-ba37-c6aa359fa72c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c04409fb695613fea5d54b285946c04719fbe5b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b86d632d35063aa31e6be9e11adb266e5e36fa6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716260"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957071"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80716260"
 
  這個介面代表執行 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 介面的物件集合。
 
-## <a name="syntax"></a>語法
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugObjects : IUnknown
@@ -42,7 +42,7 @@ IEnumDebugObjects : IUnknown
 
 |方法|描述|
 |------------|-----------------|
-|[下一個](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|從列舉中抓取下一組 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|從列舉中抓取下一組 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 物件。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|略過指定數目的專案。|
 |[重設](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|將列舉重設為第一個專案。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|抓取目前列舉的複本。|
@@ -51,7 +51,7 @@ IEnumDebugObjects : IUnknown
 ## <a name="remarks"></a>備註
  這個介面可讓 debug engine 列舉陣列中的一組物件。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
  標頭： ee. h
 
  命名空間： VisualStudio

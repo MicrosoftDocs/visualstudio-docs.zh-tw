@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 026878bdc2158d803f191cf2d28c8eb52f0b6e09
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 9117360d795a8027812b2534311a846d0ee56e09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957604"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
 

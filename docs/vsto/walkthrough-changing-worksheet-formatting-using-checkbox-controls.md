@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 908660693abce2f2adf07d98e7f2a451a8f3c8e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956590"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>逐步解說：使用 CheckBox 控制項變更工作表格式
   本逐步解說會示範在 Microsoft Office Excel 工作表上使用核取方塊來變更格式的基本概念。 您將在 Visual Studio 中使用 Office 開發工具來建立程式碼，並將其新增至您的專案。 若要以完整範例的形式查看結果，請參閱 [Office 開發範例和](../vsto/office-development-samples-and-walkthroughs.md)逐步解說中的 Excel 控制項範例。
@@ -104,7 +104,7 @@ ms.locfileid: "97527218"
 
 2. 確認 **$B $9** 出現在 [可編輯] 文字方塊中，且已選取 [ **B9** ] 儲存格。 如果不是，請按一下 [ **資料格]，然後** 選取它。
 
-3. 按一下 [確定]。
+3. 按一下 [確定]  。
 
 4. 資料格 **B9** 會成為名為的範圍 `NamedRange1` 。
 
@@ -156,7 +156,7 @@ ms.locfileid: "97527218"
 
 3. 確認文字的格式正確。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
  本逐步解說將說明在 Excel 工作表上使用核取方塊和格式化文字的基本概念。 接著可以執行下列一些工作：
 
 - 部署專案。 如需詳細資訊，請參閱 [使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。

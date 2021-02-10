@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6b78f91e-a006-440c-83fb-e7368040951d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a102b11fdc7608b94b97105b061e28860f41a9a1
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b8515043b228deb4fbcbf43c0e75b9826912f059
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719509"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957318"
 ---
 # <a name="preemption-time"></a>先佔時間
 時間軸中的這些區段，會和分類為先佔的封鎖時間建立關聯。 此分類表示執行緒因為下列原因之一而被切換︰
