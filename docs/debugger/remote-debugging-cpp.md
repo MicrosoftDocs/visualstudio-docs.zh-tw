@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9915fdab1d4d0976a199a09a11c815e4966192a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7723a87471b8f76b9496fe8e7b01e56d1440ee2
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934646"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335263"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Visual Studio 中的遠端偵錯 c + + 專案
 若要在不同的電腦上進行 Visual Studio 應用程式的偵錯工具，請在您要部署應用程式的電腦上安裝並執行遠端工具、將專案設定為從 Visual Studio 連線到遠端電腦，然後部署和執行您的應用程式。
@@ -99,7 +99,7 @@ Windows 7 和更新版本上支援遠端偵錯程式， (不是從 Windows Serve
     > [!TIP]
     > 或者，您可以另外執行一個步驟來部署檔案。 在 [方案總管] 中，以滑鼠右鍵按一下 [mymfc] 節點，然後選擇 [部署]。
 
-    如果您有應用程式所需的非程式碼檔案，您可以在 [**遠端 Windows 偵錯工具**] 頁面上，于 **其他要部署** 的檔案中指定它們。
+    如果您有應用程式所需的非程式碼檔案，您可以在 [**遠端 Windows 偵錯工具**] 頁面上 **部署的其他** 檔案中，以分號分隔的清單來指定這些檔案。
 
     或者，您可以將檔案包含在您的專案中，並在每個檔案的 [**屬性**] 頁面中，將 [**內容**] 屬性設定為 **[是]** 。 這些檔案會複製到 [**遠端 Windows 偵錯工具**] 頁面上指定的 **部署目錄**。 如果您需要將檔案複製到 **部署目錄** 的子資料夾，您也可以變更 **專案類型** 來 **複製** 檔案，並在該處指定其他屬性。
 

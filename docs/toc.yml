@@ -190,8 +190,8 @@
           href: ide/creating-solutions-and-projects.md
         - name: 在 Visual Studio 2017 的存放庫中開啟專案
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: 從 Visual Studio 中的存放庫開啟專案
-          href: get-started/tutorial-open-project-from-repo.md
+        - name: 在 Visual Studio 2019 的存放庫中開啟專案
+          href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 移植、移轉及升級專案
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
         - name: 管理專案和解決方案屬性
@@ -840,7 +840,7 @@
         - name: 設計國際化應用程式
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-- name: Build
+- name: 組建
   items:
     - name: 概觀
       displayName: Compile build
