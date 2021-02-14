@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0387542487b2c24baa129fbb0163dee0140cb413
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa0512e5d29cb1b5c5a39715e34667803b752795
+ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860034"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496258"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>How to：產生程式碼度量資料
 
@@ -279,7 +279,7 @@ Build succeeded.
 1. 複製 [dotnet/roslyn-分析器](https://github.com/dotnet/roslyn-analyzers) 存放庫。
 2. 以系統管理員身分開啟 Visual Studio 的開發人員命令提示字元。
 3. 從 **roslyn 分析器** 存放庫的根目錄中，執行下列命令： `Restore.cmd`
-4. 將目錄變更為 *src\Tools*。
+4. 將目錄變更為 *src\Tools\Metrics*。
 5. 執行下列命令以建立 **計量 .csproj** 專案：
 
    ```shell

@@ -28,18 +28,6 @@
       href: tutorial-wpf.md
     - name: 建立 Windows Forms 應用程式
       href: ../../ide/create-csharp-winform-visual-studio.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-    - name: 影片教學課程 - 建立 ASP.NET Core Web 應用程式
-      items:
-        - name: 1 - 安裝 Visual Studio
-          href: tutorial-aspnet-core-ef-step-01.md
-        - name: 2 - 建立第一個 ASP.NET Core Web 應用程式
-          href: tutorial-aspnet-core-ef-step-02.md
-        - name: 3 - 使用資料
-          href: tutorial-aspnet-core-ef-step-03.md
-        - name: 4 - 公開 Web API
-          href: tutorial-aspnet-core-ef-step-04.md
-        - name: 5 - 將 ASP.NET Core 應用程式部署至 Azure
-          href: tutorial-aspnet-core-ef-step-05.md
 - name: 了解 Visual Studio
   expanded: true
   items:
