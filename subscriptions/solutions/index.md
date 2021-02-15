@@ -7,12 +7,12 @@ robots: noindex, nofollow
 author: evanwindom
 ms.author: v-evwin
 ms.date: 12/07/2020
-ms.openlocfilehash: 2185ca3a887c4ac0061ceeb02d58a290b7b912d3
-ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
+ms.openlocfilehash: 9168e857d07c7843bd1576185598f5911263528e
+ms.sourcegitcommit: 5c146b2dfaefc4f44802600c2cd252a7a0e4b846
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496276"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525536"
 ---
 # <a name="visual-studio-subscriptions-support-widget-content-includes-files"></a>Visual Studio 訂閱支援 widget 內容包含檔案
 
@@ -76,6 +76,8 @@ ms.locfileid: "100496276"
 [!INCLUDE [Visual Studio IDE technical support](downloading-activating-or-using-software/using-product-features/includes/visual-studio-ide-technical-support.md)]
 
 [!INCLUDE [Azure DevOps technical support](downloading-activating-or-using-software/using-product-features/includes/azure-devops-technical-support.md)]
+
+[!INCLUDE [Windows developer technical support](downloading-activating-or-using-software/using-product-features/includes/windows-developer-technical-support.md)]
 
 ## <a name="license-terms"></a>授權條款
 
