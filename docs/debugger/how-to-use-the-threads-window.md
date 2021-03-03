@@ -1,6 +1,6 @@
 ---
 title: 將多執行緒應用程式進行偵錯工具
-description: 在 Visual Studio 中使用 [執行緒] 視窗和 [調試位置] 工具列進行調試
+description: 使用 [執行緒] 視窗和 Visual Studio 中的 [調試位置] 工具列進行調試
 ms.date: 02/14/2020
 ms.topic: how-to
 dev_langs:
@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbac3de879937435e9f2e1dc5ab4fad0e7358fc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbde477e076203625e35ebf0109ed344679563f8
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925392"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683314"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>逐步解說：使用執行緒視窗對多執行緒應用程式進行 (c #、Visual Basic、c + +) 
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>逐步解說：使用執行緒視窗來進行多執行緒應用程式的偵錯工具 (c #、Visual Basic、c + +) 
 
-數個 Visual Studio 的使用者介面專案可協助您進行多執行緒應用程式的偵錯工具。 本文介紹 [程式碼編輯器] 視窗、[偵錯工具 **位置** ] 工具列和 [ **執行緒** ] 視窗中的多執行緒調試功能。 如需其他工具來偵測多執行緒應用程式的詳細資訊，請參閱 [開始對多執行緒](../debugger/get-started-debugging-multithreaded-apps.md)應用程式進行偵錯工具。
+數個 Visual Studio 使用者介面元素可協助您對多執行緒應用程式進行偵錯工具。 本文介紹 [程式碼編輯器] 視窗、[偵錯工具 **位置** ] 工具列和 [ **執行緒** ] 視窗中的多執行緒調試功能。 如需其他工具來偵測多執行緒應用程式的詳細資訊，請參閱 [開始對多執行緒](../debugger/get-started-debugging-multithreaded-apps.md)應用程式進行偵錯工具。
 
 完成本教學課程只需要幾分鐘的時間，並讓熟悉您瞭解多執行緒應用程式的基本概念。
 
@@ -44,21 +44,23 @@ ms.locfileid: "99925392"
 
    在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從 [語言] 清單中選擇 **c #** 或 **c + +** ，然後從 [平臺] 清單中選擇 [ **Windows** ]。 
 
-   套用語言和平臺篩選器之後，請選擇 **( .Net Core) 的主控台應用程式** ，或針對 c + + **主控台應用程式** 範本，然後選擇 **[下一步]**。
+   套用語言和平臺篩選器之後，請選擇適用于 .NET Core 或 c + + 的 **主控台應用程式** ，然後選擇 **[下一步]**。
 
    > [!NOTE]
-   > 如果您沒有看到正確的範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發** ] 或 [ **使用 c + + 的桌面開發** ] 工作負載，然後選擇 [ **修改**]。
+   > 如果您沒有看到正確的範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 **.Net Core 跨平臺開發** 或 **使用 c + + 的桌面開發** 工作負載，然後選擇 [ **修改**]。
 
-   在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中輸入或輸入 *MyThreadWalkthroughApp* 。 然後，選擇 [ **建立**]。
+   在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中輸入或輸入 *MyThreadWalkthroughApp* 。 然後選擇 **[下一步]** 或 [ **建立**]，其中有任何可用的選項。
+
+   若是 .NET Core，請選擇建議的目標架構 ( .NET Core 3.1) 或 .NET 5，然後選擇 [ **建立**]。
 
    ::: moniker-end
    ::: moniker range="vs-2017"
    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇下列專案：
 
-   - 針對 c # 應用程式，請選擇 [ **Visual c #**] 底下的 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .NET Framework)**]。
-   - 若是 c + + 應用程式，請在 [ **Visual C++**] 下，選擇 [ **windows 桌面**]，然後選擇 [ **windows 主控台應用程式**]。
+   - 針對 c # 應用程式，請選擇 [ **Visual c #**] 底下的 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .net Framework)**。
+   - 若是 c + + 應用程式，請選擇 [ **Visual c + +**] 底下的 [ **windows 桌面**]，然後選擇 [ **windows 主控台應用程式**]。
 
-   如果您沒有看到 **主控台應用程式 ( .net Core)** 或針對 c + +，**主控台應用程式** 專案範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發** ] 或 [ **使用 c + + 的桌面開發** ] 工作負載，然後選擇 [ **修改**]。
+   如果您沒有看到 **主控台應用程式 ( .net Framework)** 或在 c + + 的 **主控台應用程式** 專案範本中，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發** ] 或 [ **使用 c + + 的桌面開發** ] 工作負載，然後選擇 [ **修改**]。
 
    然後，輸入 *MyThreadWalkthroughApp* 之類的名稱，然後按一下 **[確定]**。
 
@@ -147,7 +149,7 @@ ms.locfileid: "99925392"
 
 您也可以用滑鼠右鍵按一下線條，然後從快捷方式功能表選取 [旗標]、[取消 **標記**] 或 [取消 **標示****所有線程**]。
 
-[ **執行緒** ] 視窗工具列也有 [ **顯示標示為僅限執行緒** ] 按鈕，這是兩個旗標圖示的 righthand 之一。 其運作方式與 [ **調試位置** ] 工具列上的按鈕相同，而任一個按鈕控制兩個位置中的顯示。
+[ **執行緒** ] 視窗工具列也有 [ **顯示標示為僅限執行緒** ] 按鈕，這是兩個旗標圖示的右邊之一。 其運作方式與 [ **調試位置** ] 工具列上的按鈕相同，而任一個按鈕控制兩個位置中的顯示。
 
 ### <a name="other-threads-window-features"></a>其他執行緒視窗功能
 

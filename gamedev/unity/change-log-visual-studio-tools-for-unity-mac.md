@@ -1,8 +1,8 @@
 ---
 title: 變更記錄檔 (Visual Studio Tools for Unity，Mac) | Microsoft Docs
-description: 查看 Visual Studio Tools for Unity、Mac 的變更記錄。 查看從1.0.0.0 版到2.7.0.0 的變更。
+description: 查看 Visual Studio Tools for Unity、Mac 的變更記錄檔。 查看從1.0.0.0 版到2.7.0.0 的變更。
 ms.custom: ''
-ms.date: 12/18/2020
+ms.date: 3/1/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,93 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 53aade9880686746d11fb899b377e81174915bfa
-ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
+ms.openlocfilehash: f11c5c1407d16d7a82a9d8d24e6a8dd3a04e57eb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97917915"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683377"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>變更記錄檔 (Visual Studio Tools for Unity，Mac)
 
 Visual Studio Tools for Unity 變更記錄。
+
+## <a name="2920"></a>2.9.2.0
+2021年3月2日發行
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 修正 Unity 訊息對話方塊中的搜尋反白顯示。
+
+  - 已修正 Unity 專案 treeview 的穩定性問題。
+
+- **調試：**
+
+  - 修正條件式中斷點的處理。
+
+## <a name="2910"></a>2.9.1.0
+2021年2月9日發行
+
+### <a name="new-features"></a>新功能
+
+- **集成：**
+
+  - 已新增從 IDE 執行和偵錯工具 Unity 測試的支援
+
+- **評價：**
+
+  - 已新增 `Active Scene` 至區域變數，並顯示根遊戲物件。
+
+  - 已新增 `this.gameObject` 至區域變數（假設它已廣泛用於 Unity 專案中）。
+
+  - 已 `Children` `Components` 將和群組新增至所有 `GameObject` 實例，以便您可以輕鬆地顯示所有物件階層。
+
+  - 已新增 `Scene Path` 至所有 `GameObject` 實例，以顯示場景中的位置。
+
+  - 在搭配來源產生器 `JobEntityBatch` 使用實體時，新增/Lambdas 的支援。
+
+  - 改進了使用 index 值區) 來顯示大型陣列 (的支援。
+
+  - 已新增 2019.4 API 缺少的 Unity 訊息。
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 修正 Unity 訊息對話方塊的穩定性問題
+
+  - 已修正非繁體中文語言的各種 UI 問題。
+
+  - 修正診斷的穩定性問題 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 。
+
+- **調試：**
+
+  - 修正使用方法時的 VM 中斷連線問題 `Trace` 。
+
+- **評價：**
+
+  - 修正了擲回例外狀況的過時屬性篩選。
+
+## <a name="2900"></a>2.9.0.0
+2021年1月20日發行
+
+### <a name="new-features"></a>新功能
+
+- **集成：**
+
+  - 新增了和檔案的支援 `raytrace shaders` `UXML` `USS` 。
+
+  - 已針對用來作為協同程式) 的所有方法更新 Unity 訊息 API (。
+
+  - 已更新 Android SDK 偵測。
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 修正 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 診斷，提供錯誤的協同程式和警告 `AssetPostprocessor.OnAssignMaterialModel` 。
 
 ## <a name="2840"></a>2.8.4.0
 2020年12月15日發行
@@ -264,7 +341,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - **評價：**
 
-  - 固定字串評估 (不使用 ToString ( # A2 呼叫) 
+  - 固定字串評估 (不使用 ToString () 呼叫) 
 
 ## <a name="2420"></a>2.4.2.0
 
@@ -300,7 +377,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - **集成：**
 
-  - 接下來，Visual Studio Tools for Unity 只會支援 Visual Studio 2017 +。
+  - 未來，Visual Studio Tools for Unity 只會支援 Visual Studio 2017 +。
 
 ## <a name="2400"></a>2.4.0.0
 
@@ -333,7 +410,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - **集成：**
 
-  - 我們已藉由新增 Unity 專屬的診斷，deepened 對 Unity 專案 Visual Studio 的瞭解。 我們也隱藏了對 Unity 專案不適用的通用 C# 診斷，讓 IDE 更有智慧。 例如，IDE 不會顯示快速修正來變更偵測器變數， `readonly` 讓您無法在 Unity 編輯器中修改變數。
+  - 我們已藉由新增 Unity 專屬的診斷功能，deepened Visual Studio 針對 Unity 專案所擁有的瞭解。 我們也隱藏了對 Unity 專案不適用的通用 C# 診斷，讓 IDE 更有智慧。 例如，IDE 不會顯示快速修正來變更偵測器變數， `readonly` 讓您無法在 Unity 編輯器中修改變數。
     - `UNT0001`： Unity 訊息是由執行時間呼叫，即使它們是空的，也不會將其宣告為避免 Unity 執行時間的 unity 處理。
     - `UNT0002`：使用字串相等的標記比較比內建的 CompareTag 方法慢。
     - `UNT0003`：型別安全的慣用 GetComponent 一般形式。
@@ -343,8 +420,8 @@ Visual Studio Tools for Unity 變更記錄。
     - `UNT0007`： Unity 會覆寫與 null 聯合不相容之 Unity 物件的 null 比較運算子。
     - `UNT0008`： Unity 會覆寫與 null 傳播不相容之 Unity 物件的 null 比較運算子。
     - `UNT0009`：將 InitializeOnLoad 屬性套用至類別時，您需要提供靜態的函式。 InitializeOnLoad 屬性可確保其在編輯器啟動時受到呼叫。
-    - `UNT0010`： MonoBehaviours 只能使用 AddComponent ( # A1 來建立。 MonoBehaviours 是元素，且應附加至 GameObject。
-    - `UNT0011`： ScriptableObject 只能使用 CreateInstance ( # A1 來建立。 ScriptableObject 須由 Unity 引擎建立來處理 Unity 訊息方法。
+    - `UNT0010`： MonoBehaviours 只能使用 AddComponent () 建立。 MonoBehaviours 是元素，且應附加至 GameObject。
+    - `UNT0011`： ScriptableObject 只能使用 CreateInstance () 建立。 ScriptableObject 須由 Unity 引擎建立來處理 Unity 訊息方法。
     - `USP0001` for `IDE0029` ： Unity 物件不應使用 null 聯合。
     - `USP0002` for `IDE0031` ： Unity 物件不應使用 null 傳播。
     - `USP0003` 若為 `IDE0051` ： unity 訊息會由 unity 執行時間叫用。

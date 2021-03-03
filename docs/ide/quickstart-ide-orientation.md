@@ -3,19 +3,19 @@ title: 快速入門： Visual Studio IDE 導覽
 description: 瞭解 Visual Studio 整合式開發環境 (IDE) 的部分視窗、功能表和其他 UI 功能。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
-ms.date: 02/21/2019
+ms.date: 03/02/2021
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0199319bc0c647f42e87d4003dd2fabe4544a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 237b3384d6bec010a760c4bc193b9a95f33febeb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945496"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683986"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio IDE 初探
 
@@ -83,15 +83,25 @@ ms.locfileid: "99945496"
 
 1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
-   隨即開啟一個對話方塊，表示要 **建立新專案**。 在這裡，您可以搜尋、篩選和選取專案範本。 它也會顯示一份最近使用的專案範本清單。
+    :::image type="content" source="../get-started/media/vs-2019/start-window-create-new-project.png" alt-text="Visual Studio 2019 中 [建立新專案] 視窗的螢幕擷取畫面。":::
 
-1. 在上方的搜尋方塊中，輸入 **console**，從專案類型清單中篩選出名稱包含 "console" 的專案類型。 從 [語言] 選擇器中挑選 [C#] (或您選擇的另一個語言)，進一步精簡搜尋結果。
+   [建立新專案] 視窗隨即開啟，並顯示數個專案「範本」。 範本包含指定專案類型所需的基本檔案和設定。
 
-   ![Visual Studio 2019 中的 [新增專案] 對話方塊](media/vs-2019/create-a-new-project.png)
+   在這裡，您可以搜尋、篩選和選取專案範本。 它也會顯示一份最近使用的專案範本清單。
 
-1. 如果您選取 C#、Visual Basic 或 F# 作為您的語言，請選取 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。 (如果您選取不同的語言，只需挑選任意範本。 我們稍後要介紹的 UI 在所有程式設計語言中都很類似)。
+1. 在上方的搜尋方塊中，輸入 **console**，從專案類型清單中篩選出名稱包含 "console" 的專案類型。 從 [**所有語言**] 下拉式清單中挑選 **c #** (或您) 選擇的另一種語言，進一步精簡搜尋結果。
 
-1. 在 [設定您的新專案] 頁面上，接受預設專案名稱和位置，然後選擇 [建立]。
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Visual Studio 2019 中 [建立新專案] 視窗的螢幕擷取畫面，您可以在其中選取所需的範本。":::
+
+1. 如果您選取 c #、Visual Basic 或 F # 作為您的語言，請選取 [ **主控台應用程式** ] 範本，然後選擇 [ **下一步]**。 (如果您選取不同的語言，只需挑選任意範本。 我們稍後要介紹的 UI 在所有程式設計語言中都很類似)。
+
+1. 在 [ **設定您的新專案** ] 視窗中，接受預設的 [專案名稱] 和 [位置]，然後選擇 **[下一步**]。
+
+    :::image type="content" source="media/vs-2019/configure-new-project-console.png" alt-text="Visual Studio 2019 中 [設定新專案] 視窗的螢幕擷取畫面，您可以在其中輸入專案的名稱。":::
+
+1. 在 [**其他資訊**] 視窗中，確認 [**目標 Framework** ] 下拉式功能表中出現 **.net Core 3.1** ，然後按一下 [**建立**]。
+
+    :::image type="content" source="../get-started/media/vs-2019/create-project-additional-info.png" alt-text="Visual Studio 2019 中 [其他資訊] 視窗的螢幕擷取畫面，您可以在其中選取所需的 .NET Core Framework 版本。":::
 
 ::: moniker-end
 
@@ -101,7 +111,7 @@ ms.locfileid: "99945496"
 
 ## <a name="solution-explorer"></a>方案總管
 
-[方案總管] 一般位在 Visual Studio 右側，並示範以圖形呈現專案、方案或程式碼資料夾中的檔案和資料夾階層。 您可以流覽階層，並流覽至 **方案總管** 中的檔案。
+[方案總管] 一般位在 Visual Studio 右側，並示範以圖形呈現專案、方案或程式碼資料夾中的檔案和資料夾階層。 您可以流覽階層，並流覽至 **方案 Explorer** 中的檔案。
 
 ![Visual Studio 中的 [方案總管]](media/quickstart-IDE-solution-explorer.png)
 

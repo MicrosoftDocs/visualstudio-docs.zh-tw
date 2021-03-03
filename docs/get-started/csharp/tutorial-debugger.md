@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 741c22e8116d47a51a75369b5b114725c1f64bf8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6eac51637b3f3b732f1293337080ef851f34c459
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909273"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682734"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 C# 程式碼進行偵錯
 
@@ -61,7 +61,7 @@ ms.locfileid: "99909273"
 
 ::: moniker-end
 
-如果您需要安裝工作負載，但已有 Visual Studio，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 **.Net Core 跨平臺開發** 工作負載，然後選擇 [ **修改**]。
+如果您需要安裝工作負載，但已有 visual studio，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 visual studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 **.Net Core 跨平臺開發** 工作負載，然後選擇 [ **修改**]。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -91,17 +91,19 @@ ms.locfileid: "99909273"
 
 1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **C#**，然後從平台清單中選擇 **Windows**。 
 
-   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
+   套用語言和平臺篩選器之後，請選擇適用于 .NET Core 的 **主控台應用程式** 範本，然後選擇 [ **下一步]**。
 
-   ![選擇適用于主控台應用程式的 c # 範本 ( .NET Core) ](../csharp/media/vs-2019/get-started-create-console-project.png)
+   ![選擇主控台應用程式的 c # 範本](../csharp/media/vs-2019/get-started-create-console-project.png)
 
    > [!NOTE]
-   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發** 工作負載。
+   > 如果您沒有看到 [ **主控台應用程式** ] 範本，您可以從 [ **建立新專案** ] 視窗進行安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發** 工作負載。
 
-1. 在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中輸入或輸入 *GetStartedDebugging* 。 然後，選擇 [ **建立**]。
+1. 在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中輸入或輸入 *GetStartedDebugging* 。 然後選擇 **[下一步]**。
+
+1. 選擇建議的目標架構 ( .NET Core 3.1) 或 .NET 5，然後選擇 [ **建立**]。
 
    Visual Studio 會隨即開啟您的新專案。
-   
+
 ::: moniker-end
 
 ## <a name="create-the-application"></a>建立應用程式

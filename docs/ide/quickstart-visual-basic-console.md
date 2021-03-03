@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e34bbd72810932f385d53a25ca1670fa059c1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 34b412d254d0775b57f2c9befaae71ce25c6ae75
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939925"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683857"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入門：使用 Visual Basic 在 Visual Studio 中建立第一個主控台應用程式
 
@@ -72,14 +72,14 @@ ms.locfileid: "99939925"
 
    ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。 
+1. 在 [ **建立新專案** ] 視窗中，從 [語言] 清單中選擇 [ **Visual Basic** ]。 接下來，從 [平臺] 清單中選擇 [ **Windows** ]，然後從 [專案類型] 清單中選擇 **主控台** 。
 
-   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
+   套用 [語言]、[平臺] 和 [專案類型] 篩選器之後，請選擇 [ **主控台應用程式** ] 範本，然後選擇 [ **下一步]**。
 
-   ![選擇主控台應用程式 (.NET Framework) 的 Visual Basic 專案範本](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   :::image type="content" source="../get-started/visual-basic/media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="選擇主控台應用程式的 Visual Basic 範本":::
 
    > [!NOTE]
-   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   > 如果您沒有看到 [ **主控台應用程式** ] 範本，您可以從 [ **建立新專案** ] 視窗進行安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
    >
    > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -89,9 +89,13 @@ ms.locfileid: "99939925"
    >
    > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *WhatIsYourName*。 然後，選擇 [ **建立**]。
+1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *WhatIsYourName*。 然後選擇 **[下一步]**。
 
-   ![在 [設定您的新專案] 視窗中，以 'WhatIsYourName' 命名您的專案](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
+   :::image type="content" source="../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png" alt-text="在 [設定您的新專案] 視窗中，以 'WhatIsYourName' 命名您的專案":::
+
+1. 在 [ **其他資訊** ] 視窗中，已針對您的目標架構選取 **.net Core 3.1** 。 如果沒有，請選取 [ **.Net Core 3.1**]。 然後，選擇 [ **建立**]。
+
+   :::image type="content" source="../get-started/visual-basic/media/vs-2019/vb-target-framework.png" alt-text="在 [其他資訊] 視窗中，確認已選取 [.NET Core 3.1]":::
 
    Visual Studio 會隨即開啟您的新專案。
 

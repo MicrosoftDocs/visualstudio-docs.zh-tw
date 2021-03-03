@@ -1,6 +1,6 @@
 ---
-title: 準備 debug 主控台專案 |Microsoft Docs
-description: '取得有關準備 (c #、c + +、Visual Basic、F # ) Visual Studio 中的主控台專案。'
+title: 準備 debug 主控台專案 |Microsoft 檔
+description: '取得有關準備在 Visual Studio 中 (c #、c + +、Visual Basic、F # ) 進行調試的主控台專案的資訊。'
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e39cb7df53a12b97d297ee739338c42a3201089f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66610eef4419b71cd41c8a7708b43b30bff4cc80
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872517"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683031"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>調試準備：主控台專案 (c #、c + +、Visual Basic、F # ) 
 
-準備 debug 主控台專案的方式類似于準備錯 Windows 專案，還有一些其他考慮，例如設定命令列引數，以及如何暫停應用程式以進行偵錯工具。 如需詳細資訊，請參閱 < [Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)，和[偵錯準備： Windows Forms 應用程式 (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：
+準備 debug 主控台專案的方式類似于準備錯 Windows 專案，還有一些其他考慮，例如設定命令列引數，以及如何暫停應用程式以進行偵錯工具。 如需詳細資訊，請參閱 [Windows Form 應用程式的偵錯工具準備](../debugger/debugging-preparation-windows-forms-applications.md)。 由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：
 
 - C #、Visual Basic 和 F # 主控台應用程式
 
@@ -40,7 +40,7 @@ ms.locfileid: "99872517"
 
 ## <a name="set-command-line-arguments"></a>設定命令列引數
 
-您可能需要為您的主控台應用程式指定命令列引數。 如需詳細資訊，請參閱 [c + + 偵錯工具的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)、 [Visual Basic 偵錯工具的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，或 [c # Debug 設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)。
+您可能需要為您的主控台應用程式指定命令列引數。 如需詳細資訊，請參閱 [c + + 偵錯工具設定的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)、 [Visual Basic 偵錯工具的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，或 [c # Debug 設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)。
 
 跟所有的專案屬性一樣，這些引數會持續保留於偵錯工作階段和 Visual Studio 工作階段之間。 因此，如果主控台應用程式是您先前曾進行過調試的應用程式，請記住，在 [ **\<Project> 屬性頁**] 對話方塊中輸入的先前會話可能有引數。
 

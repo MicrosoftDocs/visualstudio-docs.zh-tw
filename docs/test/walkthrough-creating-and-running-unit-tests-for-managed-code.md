@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 264744d7fe39c77da625c778d1bfea51f55e1f2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6ab205b7f651f8bb5954bee4998602c79fd78e7
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948006"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683917"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：針對受控碼建立和執行單元測試
 
@@ -55,9 +55,14 @@ ms.locfileid: "99948006"
 
 2. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
-3. 搜尋並選取 C# [主控台應用程式 (.NET Core)] 專案範本，然後按一下 [下一步]。
+3. 搜尋並選取適用于 .NET Core 的 c # **主控台應用程式** 專案範本，然後按 **[下一步]**。
 
-4. 將專案命名為 **Bank**，然後按一下 [建立]。
+   > [!NOTE]
+   > 如果您沒有看到 [ **主控台應用程式** ] 範本，您可以從 [ **建立新專案** ] 視窗進行安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發** 工作負載。
+
+4. 將專案命名為 **Bank**，然後按 **[下一步]**。
+
+   選擇建議的目標架構 ( .NET Core 3.1) 或 .NET 5，然後選擇 [ **建立**]。
 
    即會建立 Bank 專案並顯示在 [方案總管] 中，並於程式碼編輯器中開啟 *Program.cs* 檔案。
 
@@ -163,11 +168,14 @@ ms.locfileid: "99948006"
 
 ::: moniker range=">=vs-2019"
 
-2. 搜尋並選取 C# [MSTest 測試專案 (.NET Core)] 專案範本，然後按一下 [下一步]。
+2. 在 [搜尋] 方塊中輸入 **單元測試** ，選取 **c #** 做為語言，然後選取 [.net Core] 範本的 c # **單元測試專案** ，然後按 **[下一步]**。
 
-3. 將專案命名為 **BankTests**。
+   > [!NOTE]
+   > 從 Visual Studio 2019 版本16.9 開始，MSTest 專案範本名稱從 **Mstest 單元測試專案 ( .Net Core)** 變更為 **單元測試專案**。
 
-4. 按一下頁面底部的 [新增]  。
+3. 將專案命名為 **BankTests** ，然後按 **[下一步]**。
+
+4. 選擇建議的目標架構 ( .NET Core 3.1) 或 .NET 5，然後選擇 [ **建立**]。
 
    **BankTests** 專案就會新增至 **Bank** 方案中。
 

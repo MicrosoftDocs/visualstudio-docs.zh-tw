@@ -1,6 +1,6 @@
 ---
-title: 準備 Windows Forms apps 的偵錯工具 |Microsoft Docs
-description: 請採取準備步驟來進行 Windows Forms 應用程式的偵錯工具，這些應用程式是由 Visual Studio 中的 Windows Forms 專案範本所建立。
+title: 準備進行 Windows Forms 應用程式的偵錯工具 |Microsoft 檔
+description: 請在 Visual Studio 中執行 Windows Forms 專案範本所建立的 Windows Forms 應用程式的準備步驟。
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,17 +21,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f370fc0e3f97d53fb63bfdabb637edff90960442
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a59e454238bf362aec20916c6d1f6ed2e4ff187f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872397"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684142"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>偵錯準備：Windows Forms 應用程式
-Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以直接偵錯這種類型的應用程式。 如需詳細資訊，請參閱 [建立 Windows 應用程式專案](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))。
 
- 當您以專案範本建立 Windows Form 專案時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動建立偵錯和發行組態所需要的設定。 若有需要，您可以變更這些設定。 您可以在 [ **\<project name> 屬性頁**] 對話方塊中變更這些設定， (**我的專案** 在 Visual Basic) 中。
+Windows Forms 應用程式專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以直接偵錯這種類型的應用程式。 如需建立此類型專案的詳細資訊，請參閱 [建立 Windows Form 應用程式](../ide/create-csharp-winform-visual-studio.md)。
+
+ 當您以專案範本建立 Windows Form 專案時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動建立偵錯和發行組態所需要的設定。 若有需要，您可以變更這些設定。 您可以在 [ **\<project name> 屬性頁**] 對話方塊中變更這些設定，在 Visual Basic)  (**我的專案**。
 
  如需詳細資訊，請參閱 [建議的屬性設定](../debugger/managed-debugging-recommended-property-settings.md)。
 
@@ -70,6 +71,6 @@ Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[v
 - [C#、F# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [How to：設定 Debug 和 Release 設定](../debugger/how-to-set-debug-and-release-configurations.md)
 - [C # Debug 設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Visual Basic Debug 設定的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Visual Basic Debug Configuration 的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [附加到正在執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Windows Forms](/dotnet/framework/winforms/index)

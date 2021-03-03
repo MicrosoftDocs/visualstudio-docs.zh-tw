@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 4b1d250ed5306ce101fd7482b740ad57514e4f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d001e89993b90f6e8b7b33f43a5c06a1ffd7cd1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899413"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683327"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教學課程：在同一個偵錯工作階段中進行 C# 和 C++ 偵錯
 
@@ -44,7 +44,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 - **使用 C++ 開發桌面**
 - **.NET 桌面開發** 或 **.NET Core 跨平台開發**，視您要建立的應用程式類型而定。
 
-如果您沒有 Visual Studio，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) ] 頁面免費進行安裝。
+如果您沒有 Visual Studio，請移至 [Visual studio](https://visualstudio.microsoft.com/downloads/) 的 [下載] 頁面免費進行安裝。
 
 如果您已安裝 Visual Studio，但沒有所需的工作負載，請在 Visual Studio [新增專案] 對話方塊的左窗格中，選取 [開啟 Visual Studio 安裝程式]。 在 Visual Studio 安裝程式中，選取您所需的工作負載，然後選取 [修改]。
 
@@ -126,9 +126,11 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 1. 開啟 Visual Studio 並建立新專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 輸入 **Ctrl + Q** 以開啟 [搜尋] 方塊，輸入 **主控台**，選擇 [ **範本**]，然後選擇 [ **主控台應用程式 ( .net Core)** 或 **主控台應用程式 ( .NET Framework)** for c #。 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 輸入 **Ctrl + Q** 以開啟 [搜尋] 方塊，輸入 **主控台**，選擇 [ **範本**]，然後選擇 [適用于 .net Core 的 **主控台應用程式** ] 或 [ **主控台應用程式] ( .net Framework)** for c #。 在出現的對話方塊中，選擇 [ **下一步**]。
 
-    然後，鍵入像 **Mixed_Mode_Calling_App** 的名稱，並按一下 [建立]。
+    然後，輸入類似 **Mixed_Mode_Calling_App** 的名稱，然後按 **[下一步] 或 [** **建立**]，其中有任何可用的選項。
+
+    若是 .NET Core，請選擇建議的目標架構 ( .NET Core 3.1) 或 .NET 5，然後選擇 [ **建立**]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新專案] 對話方塊的左窗格中，於 [Visual C#] 下選擇 [Windows Desktop]，然後在中間的窗格中選擇 [主控台應用程式 (.NET Framework)] 或 [主控台應用程式 (.NET Core)]。
@@ -136,7 +138,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
     然後，鍵入像 **Mixed_Mode_Calling_App** 的名稱，並按一下 [確定]。
     ::: moniker-end
 
-    如果您未看到 [主控台應用程式] 專案範本，請前往 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 **.net 桌面開發** 工作負載，然後選擇 [ **修改**]。
+    如果您沒有看到正確的專案範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 根據您的目標架構，選擇 **.Net Core 跨平臺開發** 或 **.net 桌面開發** 工作負載，然後選擇 [ **修改**]。
 
     > [!NOTE]
     > 您也可以將新的 managed 專案加入至現有的 c + + 方案。 我們要在新的方案中建立專案，讓混合模式的調試工作變得更困難。

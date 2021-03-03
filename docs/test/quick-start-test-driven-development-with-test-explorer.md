@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 56bfe2b00efc4af71ca562672ad01423778edecd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 294c99081668baa2ed19df00989ceac768979481
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943727"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683948"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>逐步解說：使用 Test Explorer 進行測試導向開發
 
@@ -26,7 +26,11 @@ ms.locfileid: "99943727"
 
 1. 建立一個 C# **類別庫 (.NET Standard)** 專案。 這個專案將包含我們想要測試的程式碼。 將專案命名為 **MyMath**。
 
-2. 在同一個方案中，新增一個 **MSTest 測試專案 (.NET Core)** 專案。 將測試專案命名為 **MathTests**。
+2. 在相同的方案中，加入新的 MSTest 測試專案。
+
+   從 Visual Studio 2019 版本16.9 開始，MSTest 專案範本名稱從 **Mstest 測試專案 ( .Net Core)** 變更為 **單元測試專案**。
+
+   將測試專案命名為 **MathTests**。
 
    ![新程式碼和測試專案](../test/media/test-driven-development-ide.png)
 

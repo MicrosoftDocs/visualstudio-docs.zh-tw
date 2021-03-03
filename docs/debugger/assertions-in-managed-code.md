@@ -1,5 +1,5 @@
 ---
-title: Managed 程式碼中的判斷提示 |Microsoft Docs
+title: Managed 程式碼中的判斷提示 |Microsoft 檔
 description: '瞭解判斷提示做為 Visual Studio 中 c #、Visual Basic 或 F # managed 程式碼的偵錯工具。'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49560ac3293c416719b9addc1cbadf1b0c04f438
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 626f86c2a1d370a7f31e47f86d8adafc3f905672
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866082"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684235"
 ---
 # <a name="assertions-in-managed-code"></a>Managed 程式碼中的判斷提示
 判斷提示 (或 `Assert` 陳述式) 可以測試條件，您可以將此條件指定為 `Assert` 陳述式的引數。 如果條件判斷值為 true，則不會執行任何動作。 如果條件判斷值為 false，則判斷提示會失敗。 如果您是以偵錯組建執行，則您的程式將進入中斷模式。
@@ -173,7 +173,7 @@ Debug.Assert ( stacksize > 0 );
 Trace.Assert ( stacksize > 0 );
 ```
 
- 若出現第二個和第三個引數，這兩個引數必須為字串。 如果您使用兩個或三個引數呼叫 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 或 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>，第一個引數就是條件。 方法會檢查條件，如果結果是 false，就會輸出第二個和第三個字串。 下列範例將示範搭配兩個引數使用的 <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName>：
+  若出現第二個和第三個引數，這兩個引數必須為字串。 如果您使用兩個或三個引數呼叫 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 或 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>，第一個引數就是條件。 方法會檢查條件，如果結果是 false，就會輸出第二個和第三個字串。 下列範例將示範搭配兩個引數使用的 <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName>：
 
 ```VB
 Debug.Assert(stacksize > 0, "Out of stack space")
@@ -185,7 +185,7 @@ Debug.Assert ( stacksize > 0, "Out of stack space" );
 Trace.Assert ( stacksize > 0, "Out of stack space" );
 ```
 
- 下列範例將示範 <xref:System.Diagnostics.Debug.Assert%2A> 和 <xref:System.Diagnostics.Trace.Assert%2A>：
+  下列範例顯示 <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)?displayProperty=fullName> 並搭配 <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String,System.String)?displayProperty=fullName> 三個引數使用：
 
 ```VB
 Debug.Assert(stacksize > 0, "Out of stack space. Bytes left:" , Format(size, "G"))

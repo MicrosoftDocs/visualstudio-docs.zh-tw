@@ -2,7 +2,7 @@
 title: '教學課程：建立簡單的 c # 主控台應用程式'
 description: 了解如何逐步在 Visual Studio 中建立 C# 主控台應用程式。
 ms.custom: seodec18, get-started
-ms.date: 02/18/2020
+ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ff5e23a92409a3169add19c8810bec44fa4db9ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40e3d82c21e88b2d2144abf5902858eda1b1c293
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909359"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682826"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立簡單的 c # 主控台應用程式
 
@@ -83,14 +83,14 @@ ms.locfileid: "99909359"
 
    ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **C#**，然後從平台清單中選擇 **Windows**。 
+1. 在 [ **建立新專案** ] 視窗中，從 [語言] 清單中選擇 [ **c #** ]。 接下來，從 [平臺] 清單中選擇 [ **Windows** ]，然後從 [專案類型] 清單中選擇 **主控台** 。 
 
-   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
+   套用 [語言]、[平臺] 和 [專案類型] 篩選器之後，請選擇 [ **主控台應用程式** ] 範本，然後選擇 [ **下一步]**。
 
-   ![選擇主控台應用程式 (.NET Framework) 的 C# 專案範本](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+    :::image type="content" source="./media/vs-2019/csharp-create-new-project-console-net-core.png" alt-text="選擇主控台應用程式 (.NET Framework) 的 C# 專案範本":::
 
    > [!NOTE]
-   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   > 如果您沒有看到 [ **主控台應用程式** ] 範本，您可以從 [ **建立新專案** ] 視窗進行安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
    >
    > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -100,12 +100,16 @@ ms.locfileid: "99909359"
    >
    > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *Calculator*。 然後，選擇 [ **建立**]。
+1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *Calculator*。 然後選擇 **[下一步]**。
 
-   ![在 [設定您的新專案] 視窗中，以 'Calculator' 命名您的專案](./media/vs-2019/csharp-name-your-calculator-project.png)
+    :::image type="content" source="./media/vs-2019/csharp-name-your-calculator-project.png" alt-text="在 [設定您的新專案] 視窗中，以 'Calculator' 命名您的專案":::
+   
+1. 在 [ **其他資訊** ] 視窗中，已針對您的目標架構選取 **.net Core 3.1** 。 如果沒有，請選取 [ **.Net Core 3.1**]。 然後，選擇 [ **建立**]。
+
+    :::image type="content" source="./media/vs-2019/csharp-target-framework.png" alt-text="在 [其他資訊] 視窗中，確認已選取 [.NET Core 3.1]。":::
 
    Visual Studio 會隨即開啟您的新專案，其中包含預設 "Hello World" 程式碼。
-   
+
 ::: moniker-end
 
 ## <a name="create-the-app"></a>建立應用程式

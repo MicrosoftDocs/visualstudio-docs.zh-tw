@@ -1,6 +1,6 @@
 ---
 title: 偵錯技術和工具
-description: 使用 Visual Studio 修正例外狀況、修正錯誤，以及改善您的程式碼，以較少的 bug 來撰寫更好的程式碼
+description: 使用 Visual Studio 修正例外狀況、修正錯誤，以及改善您的程式碼，以較少的 bug 撰寫更好的程式碼
 ms.custom:
 - debug-experiment
 - seodec18
@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5fd3d8e17d90cde50f583dfc0393debf460de7f6
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904943"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684082"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>協助您撰寫更好的程式碼的偵錯工具技術和工具
 
-修正您程式碼中的錯誤和錯誤可能會很耗時，有時也很令人沮喪--工作。 學習如何有效率地進行 debug，但功能強大的 IDE （例如 Visual Studio）可以讓您的工作變得更容易。 IDE 可協助您更快速地修正錯誤和偵錯工具代碼，而不只是這樣，但也可以協助您撰寫更好的程式碼，並減少錯誤。 本文的目的是要讓您全面瞭解「bug 修正」程式，讓您知道何時使用程式碼分析器、何時使用偵錯工具、如何修正例外狀況，以及如何編寫意圖的程式碼。 如果您已經知道需要使用偵錯工具，請參閱 [偵錯工具的第一次查看](../debugger/debugger-feature-tour.md)。
+修正您程式碼中的錯誤和錯誤可能會很耗時，有時也很令人沮喪--工作。 學習如何有效地進行調試需要一些時間，但強大的 IDE （例如 Visual Studio）可以讓您的工作變得更容易。 IDE 可協助您更快速地修正錯誤和偵錯工具代碼，而不只是這樣，但也可以協助您撰寫更好的程式碼，並減少錯誤。 本文的目的是要讓您全面瞭解「bug 修正」程式，讓您知道何時使用程式碼分析器、何時使用偵錯工具、如何修正例外狀況，以及如何編寫意圖的程式碼。 如果您已經知道需要使用偵錯工具，請參閱 [偵錯工具的第一次查看](../debugger/debugger-feature-tour.md)。
 
 在本文中，我們將討論如何運用 IDE，讓您的程式碼撰寫會話更具生產力。 我們會討論數個工作，例如：
 
@@ -34,30 +34,34 @@ ms.locfileid: "99904943"
 
 * 使用偵錯工具的時機
 
-為了示範這些工作，我們會顯示一些最常見的錯誤和 bug 類型，您會在嘗試對應用程式進行偵錯工具時遇到這些錯誤。 雖然範例程式碼是 c #，但概念資訊通常適用于 c + +、Visual Basic、JavaScript，以及 Visual Studio (所支援的其他語言，除非) 有注明。 螢幕擷取畫面則使用 C# 表示。
+為了示範這些工作，我們會顯示一些最常見的錯誤和 bug 類型，您會在嘗試對應用程式進行偵錯工具時遇到這些錯誤。 雖然範例程式碼是 c #，但概念資訊通常適用于 c + +、Visual Basic、JavaScript 和 Visual Studio 支援的其他語言 (但) 注明。 螢幕擷取畫面則使用 C# 表示。
 
 ## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>建立範例應用程式，其中包含一些 bug 和錯誤
 
-下列程式碼有一些您可以使用 Visual Studio IDE 來修正的 bug。 這裡的應用程式是一個簡單的應用程式，可模擬從某個作業取得 JSON 資料、將資料還原序列化至物件，以及使用新的資料更新簡單的清單。
+下列程式碼有一些您可以使用 Visual Studio IDE 修正的 bug。 這裡的應用程式是一個簡單的應用程式，可模擬從某個作業取得 JSON 資料、將資料還原序列化至物件，以及使用新的資料更新簡單的清單。
 
 若要建立應用程式：
 
-1. 您必須安裝 Visual Studio，以及安裝 **.Net Core 跨平臺開發** 或 **.net 桌面開發** 工作負載（視您想要建立的應用程式類型而定）。
+1. 您必須安裝 Visual Studio 並安裝 **.Net Core 跨平臺開發** 工作負載。
 
     如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面免費進行安裝。
 
-    如果您需要安裝工作負載，但已有 Visual Studio，請按一下 [**工具**  >  **取得工具及功能**]。 Visual Studio 安裝程式即會啟動。 選擇 **.Net Core 跨平臺開發** 或 **.net 桌面開發** 工作負載，然後選擇 [ **修改**]。
+    如果您需要安裝工作負載，但已有 Visual Studio，請按一下 [**工具**  >  **取得工具及功能**]。 Visual Studio 安裝程式即會啟動。 選擇 [ **.Net Core 跨平臺開發** ] 工作負載，然後選擇 [ **修改**]。
 
 1. 開啟 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    在 [開始] 視窗中，選擇 [ **建立新專案**]。 在搜尋方塊中輸入 **主控台** ，然後選擇 **主控台應用程式 ( .net Core)** 或 **主控台應用程式 ( .NET Framework)**。 選擇 [下一步]。 輸入類似 **Console_Parse_JSON** 的專案名稱，然後按一下 [ **建立**]。
+    在 [開始] 視窗中，選擇 [ **建立新專案**]。 在 [搜尋] 方塊中輸入 **主控台** ，然後選擇 [.net Core 的 **主控台應用程式** ]。 選擇 [下一步]。 輸入類似 **Console_Parse_JSON** 的專案名稱，然後按 **[下一步] 或 [** **建立**]，其中有任何可用的選項。
+
+    若是 .NET Core，請選擇建議的目標架構 ( .NET Core 3.1) 或 .NET 5，然後選擇 [ **建立**]。
+
+    如果您沒有看到適用于 .net Core 專案範本的 **主控台應用程式**，請移至 **工具** 的 [  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.Net Core 跨平臺開發** ] 工作負載，然後選擇 [ **修改**]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇 [ **Visual c #**] 底下的 [ **主控台應用程式**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .Net Core])** 或 [ **主控台應用程式] ( .NET Framework)**。 輸入類似 **Console_Parse_JSON** 的名稱，然後按一下 **[確定]**。
-    ::: moniker-end
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇 [ **Visual c #**] 底下的 [ **主控台應用程式**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .net Core)**]。 輸入類似 **Console_Parse_JSON** 的名稱，然後按一下 **[確定]**。
 
-    如果您沒有看到 **主控台應用程式 ( .net Core)** 或 **主控台應用程式 ( .NET Framework)** 專案範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 **.Net Core 跨平臺開發** 或 **.net 桌面開發** 工作負載，然後選擇 [ **修改**]。
+    如果您沒有看到 **主控台應用程式 ( .net Core)** 專案範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.Net Core 跨平臺開發** ] 工作負載，然後選擇 [ **修改**]。
+    ::: moniker-end
 
     Visual Studio 隨即建立主控台專案，並出現在右窗格的 [方案總管] 中。
 
@@ -202,7 +206,7 @@ namespace Console_Parse_JSON
 
 ![使用燈泡來修正程式碼](../debugger/media/write-better-code-missing-include.png)
 
-當您按一下此專案時，Visual Studio 會將 `using System.Text` 語句加入 *Program.cs* 檔的頂端，而紅色波浪線也會消失。  (當您不確定建議的修正功能時，請選擇右邊的 [ **預覽變更** ] 連結，再套用修正。 ) 
+當您按一下此專案時，Visual Studio 會 `using System.Text` 在 *Program.cs* 檔案的頂端新增語句，而紅色波浪線會消失。  (當您不確定建議的修正功能時，請選擇右邊的 [ **預覽變更** ] 連結，再套用修正。 ) 
 
 上述錯誤通常是您在程式碼中加入新的語句來修正的常見錯誤 `using` 。 這種情況有幾個常見的類似錯誤，例如這 ```The type or namespace `Name` cannot be found.``` 類的錯誤可能表示遺漏元件參考 (以滑鼠右鍵按一下專案、選擇 [**加入**  >  **參考**]) 、拼錯的名稱，或您需要為 c # 新增 (的遺漏程式庫、以滑鼠右鍵按一下專案，然後選擇 [**管理 NuGet 套件**]) 。
 

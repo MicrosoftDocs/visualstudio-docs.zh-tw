@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 061e667196ce1577206ad76939e20daf3db131c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f790d30dc97d5549737c3c1cd003086477ce984f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840882"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683016"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具來進行 C# 或 Visual Basic 偵錯
 
@@ -28,13 +28,21 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 1. 開啟 Visual Studio 並建立新專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **主控台**，選擇 [範本]，然後選擇 [建立新的主控台應用程式 (.NET Core) 專案]。 在出現的對話方塊中選擇 [建立]。
+    如果 [開始] 視窗未開啟，請 **選擇 [** 檔案  >  **開始視窗]**。 在 [開始] 視窗中，選擇 [ **建立新專案**]。
+
+    在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **C#**，然後從平台清單中選擇 **Windows**。
+
+    套用語言和平臺篩選器之後，請選擇適用于 .NET Core 的 **主控台應用程式** 範本，然後選擇 [ **下一步]**。
+
+    選擇建議的目標架構 ( .NET Core 3.1) 或 .NET 5，然後選擇 [ **建立**]。
+
+    如果您沒有看到適用于 .net Core 的 **主控台應用程式** 專案範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 **.Net Core 跨平臺開發** 工作負載，然後選擇 [ **修改**]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新專案] 對話方塊的左窗格中，於 [Visual C#] 下選擇 [.NET Core]，然後在中間的窗格中選擇 [主控台應用程式 (.NET Core)]。 接著，輸入 **MyDbgApp** 之類的名稱，然後按一下 [確定]。
-    ::: moniker-end
 
-     如果您看不到 [主控台應用程式 (.NET Core)] 專案範本，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [.NET 桌面開發] 和 [.NET Core] 工作負載，然後選擇 [修改]。
+    如果您看不到 [主控台應用程式 (.NET Core)] 專案範本，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 **.Net Core 跨平臺開發** 工作負載，然後選擇 [ **修改**]。
+    ::: moniker-end
 
     Visual Studio 會建立專案。
 
@@ -155,17 +163,17 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 用來逐步執行程式碼的常用鍵盤命令包括 **F10** 和 **F11**。 如需詳細指示，請參閱[偵錯工具簡介](../debugger/debugger-feature-tour.md)。
 
-## <a name="inspect-variables-in-a-datatip"></a>在資料提示中檢查變數
+## <a name="inspect-variables-in-a-data-tip"></a>檢查資料提示中的變數
 
-1. 在目前這一行程式碼中 (以黃色執行指標標示)，使用滑鼠將滑鼠游標移至 `c1` 物件上方以顯示資料提示。
+1. 在目前的程式程式碼 (以黃色執行指標標示) ，將滑鼠停留在 `c1` 物件上，並以滑鼠顯示資料提示。
 
-    ![檢視資料提示](../debugger/media/dbg-qs-data-tip-csharp.png "檢視資料提示")
+    ![查看資料提示](../debugger/media/dbg-qs-data-tip-csharp.png "查看資料提示")
 
-    資料提示顯示 `c1` 變數的目前值，並可讓您檢查其屬性。 偵錯時，如果您看到非預期的值，則前面的數行程式碼或呼叫的數行程式碼可能有 Bug。
+    資料提示會顯示變數目前的值 `c1` ，並可讓您檢查其屬性。 偵錯時，如果您看到非預期的值，則前面的數行程式碼或呼叫的數行程式碼可能有 Bug。
 
-2. 展開資料提示以查看 `c1` 物件的目前屬性值。
+2. 展開資料提示以查看物件目前的屬性值 `c1` 。
 
-3. 如果您想要釘選資料提示，以便在執行程式碼時繼續查看 `c1` 的值，請按一下釘選小圖示 (您可以將所釘選資料提示移至方便存取的位置)。
+3. 如果您想要釘選資料提示，讓您可以在執行程式碼時繼續查看的值 `c1` ，請按一下 [小型釘選] 圖示。  (您可以將釘選的資料提示移至方便的位置。 ) 
 
 ## <a name="edit-code-and-continue-debugging"></a>編輯程式碼並繼續偵錯
 

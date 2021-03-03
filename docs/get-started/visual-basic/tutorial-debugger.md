@@ -1,6 +1,6 @@
 ---
-title: 教學課程： Debug Visual Basic 程式碼
-description: 學習 Visual Studio 偵錯工具的功能，以及如何啟動偵錯工具、逐步執行程式碼，以及檢查 Visual Basic 應用程式中的資料。
+title: 教學課程：偵錯工具的 Visual Basic 程式碼
+description: 瞭解 Visual Studio 偵錯工具的功能，以及如何啟動偵錯工具、逐步執行程式碼，以及檢查 Visual Basic 應用程式中的資料。
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 02/03/2020
 ms.technology: vs-ide-debug
@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4cb6cbdaee7e5bed6cb80cea1f431a6db4d286e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6bc1cd4dd994a744e814ab893bfe67e24f110bb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915044"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682688"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 Visual Basic 程式碼進行偵錯
 
 本文以逐步解說介紹 Visual Studio 偵錯工具的功能。 如果您希望檢視偵錯工具功能的概要，請參閱[偵錯工具簡介](../../debugger/debugger-feature-tour.md)。 當您「偵錯您的應用程式」，通常表示您正在執行附加偵錯工具的應用程式。 執行此作業時，偵錯工具會提供許多方式來查看您程式碼所執行的功能。 您可以逐步執行程式碼並查看儲存在變數中的值、可以設定變數的監看式以查看值變更、可以檢查程式碼的執行路徑，查看是否正在執行程式碼的分支，依此類推。 如果這是您第一次嘗試偵錯程式碼，您可能需要先閱讀[適用於徹底初學者偵錯](../../debugger/debugging-absolute-beginners.md)，再瀏覽本文。
 
-雖然示範應用程式是 Visual Basic 的，但大部分的功能都適用于 c #、c + +、F #、Python、JavaScript 和其他 Visual Studio 所支援的語言 (F # 不支援編輯後繼續。 F# 和 JavaScript 不支援 [自動變數] 視窗)。 螢幕擷取畫面位於 Visual Basic 中。
+雖然示範應用程式是 Visual Basic，但大部分的功能都適用于 c #、c + +、F #、Python、JavaScript 和 Visual Studio 支援的其他語言 (F # 不支援編輯後繼續。 F# 和 JavaScript 不支援 [自動變數] 視窗)。 螢幕擷取畫面是在 Visual Basic 中。
 
 在本教學課程中，您將：
 
@@ -61,7 +61,7 @@ ms.locfileid: "99915044"
 
 ::: moniker-end
 
-如果您需要安裝工作負載，但已有 Visual Studio，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 **.Net Core 跨平臺開發** 工作負載，然後選擇 [ **修改**]。
+如果您需要安裝工作負載，但已有 visual studio，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 visual studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 **.Net Core 跨平臺開發** 工作負載，然後選擇 [ **修改**]。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -91,14 +91,16 @@ ms.locfileid: "99915044"
 
 1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。 
 
-   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
+   套用語言和平臺篩選器之後，請選擇適用于 .NET Core 的 **主控台應用程式** 範本，然後選擇 [ **下一步]**。
 
-   ![選擇主控台應用程式 ( .NET Core 的 Visual Basic 範本) ](../visual-basic/media/vs-2019/get-started-create-console-project.png)
+   ![選擇主控台應用程式的 Visual Basic 範本](../visual-basic/media/vs-2019/get-started-create-console-project.png)
 
    > [!NOTE]
-   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發** 工作負載。
+   > 如果您沒有看到 [ **主控台應用程式** ] 範本，您可以從 [ **建立新專案** ] 視窗進行安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發** 工作負載。
 
-1. 在 [**設定您的新專案**] 視窗中，輸入或輸入 [**專案名稱**] 方塊中的 [開始使用 *-偵錯工具*]。 然後，選擇 [ **建立**]。
+1. 在 [**設定您的新專案**] 視窗中，輸入或輸入 [**專案名稱**] 方塊中的 [開始使用 *-偵錯工具*]。 然後選擇 **[下一步]**。
+
+1. 選擇建議的目標架構 ( .NET Core 3.1) 或 .NET 5，然後選擇 [ **建立**]。
 
    Visual Studio 會隨即開啟您的新專案。
    
@@ -193,7 +195,7 @@ ms.locfileid: "99915044"
 
      ![使用 F11 來逐步執行程式碼](../visual-basic/media/get-started-f11-vb.png "F10 逐步執行")
 
-     F11 鍵是 **逐步執行** 命令，可將應用程式執行一次往前推進一個陳述式。 F11 鍵是以最詳細的方式檢查執行流程的好方法  (透過程式碼更快地移動，我們也會示範一些其他選項 ) 。根據預設，偵錯工具會略過非使用者程式碼 (如果您需要更多詳細資料，請參閱 [Just My Code](../../debugger/just-my-code.md)) 。
+     F11 鍵是 **逐步執行** 命令，可將應用程式執行一次往前推進一個陳述式。 F11 鍵是以最詳細的方式檢查執行流程的好方法  (透過程式碼加快移動速度，我們也會示範一些其他選項 ) 。根據預設，偵錯工具會略過非使用者程式碼 (如果您需要更多詳細資料，請參閱我的程式 [代碼](../../debugger/just-my-code.md)) 。
 
      假設您已完成方法的檢查 `SendMessage` ，而您想要退出該方法，但仍留在偵錯工具中。 您可以使用 [跳離函式] 命令完成這項動作。
 

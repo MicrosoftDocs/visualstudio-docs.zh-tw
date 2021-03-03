@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fbb99d2b41a8a354ec450e99dab13efb6ec60248
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d57fa806ae565d0752fb9970c3f335295e83535
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872920"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684216"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>完全初學者如何偵錯
 
@@ -64,7 +64,7 @@ ms.locfileid: "99872920"
 
 在偵錯工具 (也稱為「偵錯模式」) 中執行應用程式，表示偵錯工具會在程式執行時主動監視發生的所有情況。 它也可讓您在任何位置暫停應用程式以檢查其狀態，然後逐行執行程式碼，以監看發生的所有詳細資料。
 
-在 Visual Studio 中，您可以使用 **F5** (或 [偵錯工具  >  **開始調試** 程式] 命令，或在偵錯工具列) 中 **啟動調試** 程式按鈕 ![開始調試](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")程式，進入偵錯工具模式。 如果發生任何例外狀況，Visual Studio 的例外狀況協助程式會帶您前往發生例外狀況的確切位置，並提供其他實用的資訊。 如需如何在程式碼中處理例外狀況的詳細資訊，請參閱[偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)。
+在 Visual Studio 中，您可以使用 **F5** (或 [偵錯工具  >  **開始調試** 程式] 命令或 [**開始** 偵錯工具] 按鈕在偵錯工具的工具列中 ![啟動](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")偵錯工具) 來進入偵錯工具模式。 如果發生任何例外狀況，Visual Studio 的例外狀況協助程式會帶您前往發生例外狀況的確切位置，並提供其他實用的資訊。 如需如何在程式碼中處理例外狀況的詳細資訊，請參閱[偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)。
 
 如果您未收到例外狀況，您可能知道要到程式碼中的何處尋找問題。 這是您搭配偵錯工具使用「中斷點」的位置，讓您有機會更仔細地檢查程式碼。 中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值、記憶體的行為，或程式碼執行的順序。
 
@@ -76,22 +76,24 @@ ms.locfileid: "99872920"
 
 接下來，我們將建立內含一些 Bug 的應用程式。
 
-1. 您必須安裝 Visual Studio，以及安裝 **.net 桌面開發** 工作負載或 **.net Core 跨平臺開發** 工作負載（視您想要建立的應用程式類型而定）。
+1. 您必須安裝 Visual Studio 並安裝 **.Net Core 跨平臺開發** 工作負載。
 
     如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面免費進行安裝。
 
-    如果您需要安裝工作負載，但已有 Visual Studio，請按一下 [**工具**  >  **取得工具及功能**]。 Visual Studio 安裝程式即會啟動。 選擇 [ **.net 桌面開發** (] 或 [ **.net Core 跨平臺開發** ]) 工作負載，然後選擇 [ **修改**]。
+    如果您需要安裝工作負載，但已有 Visual Studio，請按一下 [**工具**  >  **取得工具及功能**]。 Visual Studio 安裝程式即會啟動。 選擇 [ **.Net Core 跨平臺開發** ] 工作負載，然後選擇 [ **修改**]。
 
 1. 開啟 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    在 [開始] 視窗中，選擇 [ **建立新專案**]。 在搜尋方塊中輸入 **主控台** ，然後選擇 **主控台應用程式 ( .net Core)** 或 **主控台應用程式 ( .NET Framework)**。 選擇 [下一步]。 鍵入例如 **ConsoleApp-FirstApp** 的專案名稱，然後按一下 [建立]。
+    在 [開始] 視窗中，選擇 [ **建立新專案**]。 在搜尋方塊中輸入 **主控台** ，選取 **c #** 做為語言，然後選擇 [適用于 .Net Core 的 **主控台應用程式** ]。 選擇 [下一步]。 輸入專案名稱（例如 **consoleapp.exe-FirstApp）** ，然後按 **[下一步]**。
+
+    選擇建議的目標架構 ( .NET Core 3.1) 或 .NET 5，然後選擇 [ **建立**]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新專案] 對話方塊的左窗格中，於 [Visual C#] 下選擇 [主控台應用程式]，然後在中間的窗格中選擇 [主控台應用程式 (.NET Framework)] 或 [主控台應用程式 (.NET Core)]。 鍵入像 **ConsoleApp-FirstApp** 的名稱，並按一下 [確定]。
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇 [ **Visual c #**] 底下的 [ **主控台應用程式**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .net Core])**。 鍵入像 **ConsoleApp-FirstApp** 的名稱，並按一下 [確定]。
     ::: moniker-end
 
-    如未看到 **主控台應用程式 (.NET Framework)** 或 **主控台應用程式 (.NET Core)** 專案範本，請前往 [工具] > [取得工具與功能] 來開啟 Visual Studio 安裝程式。 選擇 **.Net Core 跨平臺開發** 或 **.net 桌面開發** 工作負載，然後選擇 [ **修改**]。
+    如果您沒有看到適用于 .net Core 的 **主控台應用程式** 專案範本，請移至 **工具** 的 [  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.Net Core 跨平臺開發** ] 工作負載，然後選擇 [ **修改**]。
 
     Visual Studio 隨即建立主控台專案，並出現在右窗格的 [方案總管] 中。
 
@@ -229,7 +231,7 @@ ms.locfileid: "99872920"
 
 1. 將滑鼠游標移至右邊的 `GalaxyType` 變數上方，然後移至左邊的扳手圖示上方，展開 `theGalaxy.GalaxyType`。 您會看到 `GalaxyType` 包含 `MyGType` 屬性，且該屬性值已設定為 `Spiral`。
 
-    ![Visual Studio 偵錯工具的螢幕擷取畫面，其中包含黃色的程式碼，以及在行尾的 theGalaxy. GalaxyType 屬性下方展開的功能表。](../debugger/media/beginners-inspect-variable.png)
+    ![Visual Studio 偵錯工具的螢幕擷取畫面，其中包含以黃色顯示的程式碼，並在行尾的 theGalaxy. GalaxyType 屬性下方展開功能表。](../debugger/media/beginners-inspect-variable.png)
 
     "Spiral" 實際上是您預期列印至主控台的正確值！ 因此，這是一個不錯的起點，您可以在執行應用程式時存取這段程式碼中的這個值。 在此案例中，我們將使用不正確的 API。 我們將了解是否可以在偵錯工具中執行程式碼時修正此問題。
 
@@ -288,7 +290,7 @@ ms.locfileid: "99872920"
 
 1. 按 **F5** 鍵，並再次將滑鼠游標移至 `type` 變數上方。 重複此步驟，直到您在 `type` 變數中看到 `I` 值。
 
-    ![Visual Studio 偵錯工具的螢幕擷取畫面，其中包含以黃色顯示的程式程式碼，以及一個小視窗，其中顯示類型變數的值為 73 ' I '。](../debugger/media/beginners-inspecting-data.png)
+    ![Visual Studio 偵錯工具的螢幕擷取畫面，其中包含以黃色顯示的程式碼，以及一個小視窗，其中顯示類型變數的值為 73 ' I '。](../debugger/media/beginners-inspecting-data.png)
 
 1. 現在，按 **F11** 鍵 ([偵錯] > [逐步執行] 或偵錯工具列中的 [逐步執行] 按鈕)。
 

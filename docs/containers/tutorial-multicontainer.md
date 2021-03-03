@@ -1,22 +1,22 @@
 ---
-title: 使用 Docker Compose 來處理多個容器
+title: 使用 Docker 撰寫來處理多個容器
 author: ghogen
-description: 瞭解如何使用多個容器搭配 Docker Compose
+description: 瞭解如何搭配 Docker 撰寫使用多個容器
 ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 1dd5e237e99333e9c2fb9414b3d32ff19b70dd9b
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729284"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684270"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教學課程：使用 Docker Compose 建立多容器應用程式
 
-在本教學課程中，您將瞭解如何在 Visual Studio 中使用容器工具來管理多個容器並在它們之間進行通訊。  管理多個容器需要 *容器協調流程* ，而且需要協調器，例如 Docker Compose、Kubernetes 或 Service Fabric。 在這裡，我們會使用 Docker Compose。 Docker Compose 在開發週期的過程中，很適合用來進行本機的偵錯工具和測試。
+在本教學課程中，您將瞭解如何管理一個以上的容器，並在使用 Visual Studio 中的容器工具時在這些容器之間進行通訊。  管理多個容器需要 *容器協調流程* ，且需要 Docker 撰寫、Kubernetes 或 Service Fabric 等協調器。 在這裡，我們將使用 Docker 撰寫。 在開發週期的過程中，Docker 撰寫很適合用來進行本機的偵錯工具和測試。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -34,7 +34,7 @@ ms.locfileid: "97729284"
 
 ## <a name="create-a-web-application-project"></a>建立 Web 應用程式專案
 
-在 Visual Studio 中，建立名為的 **ASP.NET Core Web 應用程式** 專案 `WebFrontEnd` 。 選取 [ **Web 應用程式** ] 以使用 Razor pages 建立 web 應用程式。 
+在 Visual Studio 中，建立名為的 **ASP.NET Core Web 應用** 程式專案， `WebFrontEnd` 以建立包含 Razor 頁面的 web 應用程式。
   
 ::: moniker range="vs-2017"
 
@@ -46,11 +46,11 @@ ms.locfileid: "97729284"
 
 ::: moniker range="vs-2019"
 
-![[設定您的新專案] 畫面的螢幕擷取畫面，其中 ASP.NET Core 的 Web 應用程式，[專案名稱] 和 [方案名稱] 欄位會設為 "WebFrontEnd"。](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![建立 ASP.NET Core Web 應用程式專案](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
 
 請勿選取 [Enable Docker Support] (啟用 Docker 支援)。 您稍後將會新增 Docker 支援。
 
-![[建立新的 ASP.NET Core Web 應用程式] 畫面的螢幕擷取畫面，其中已選取 Web 應用程式。 未選取啟用 Docker 支援的選項。](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![建立 Web 專案時，[其他資訊] 畫面的螢幕擷取畫面。 未選取啟用 Docker 支援的選項。](./media/tutorial-multicontainer/vs-2019/create-web-project-additional-information.png)
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ ms.locfileid: "97729284"
    ![建立 Web API 專案的螢幕擷取畫面](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
 ::: moniker-end
 ::: moniker range="vs-2019"
-   ![建立 Web API 專案的螢幕擷取畫面](./media/tutorial-multicontainer/vs-2019/web-api-project.png)
+   ![建立 Web API 專案的螢幕擷取畫面](./media/tutorial-multicontainer/vs-2019/create-web-api-project.png)
 ::: moniker-end
 
 ## <a name="add-code-to-call-the-web-api"></a>新增程式碼以呼叫 Web API
@@ -89,7 +89,7 @@ ms.locfileid: "97729284"
     > [!NOTE]
     > 在真實世界的程式碼中，您不應該在 `HttpClient` 每個要求之後處置。 如需最佳作法，請參閱 [使用 HttpClientFactory 來執行復原的 HTTP 要求](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)。
 
-   針對 Visual Studio 2019 或更新版本中的 .NET Core 3.1，Web API 範本會使用 WeatherForecast API，因此請將該行取消批註，並將 ASP.NET 2.x 的行加上批註。
+   若為 Visual Studio 2019 或更新版本中的 .NET Core 3.1，Web API 範本會使用 WeatherForecast API，因此請將該行取消批註，並將 ASP.NET 2.x 的行加上批註。
 
 1. 在 [Index.cshtml] 檔案中，新增一行以顯示 `ViewData["Message"]`，讓檔案看起來像下列程式碼：
     
@@ -126,7 +126,7 @@ ms.locfileid: "97729284"
 
 1. 在 `WebFrontEnd` 專案中，選擇 [ **新增 > 容器協調器支援**]。 [ **Docker 支援選項** ] 對話方塊隨即出現。
 
-1. 選擇 [ **Docker Compose**]。
+1. 選擇 [ **Docker 撰寫**]。
 
 1. 選擇您的目標作業系統（例如 Linux）。
 
@@ -134,7 +134,7 @@ ms.locfileid: "97729284"
 
    Visual Studio 會在解決方案的 **docker 撰寫** 節點中建立 *>docker-compose.yml yml* 檔案和 *>.dockerignore* 檔案，而該專案會顯示為粗體字型，其顯示為啟始專案。
 
-   ![已新增 docker 撰寫專案方案總管的螢幕擷取畫面](media/tutorial-multicontainer/multicontainer-solution-explorer.png)
+   ![已新增 docker 撰寫專案的 [Solution Explorer] 螢幕擷取畫面](media/tutorial-multicontainer/multicontainer-solution-explorer.png)
 
    *>docker-compose.yml* 會如下所示：
 
@@ -153,12 +153,12 @@ ms.locfileid: "97729284"
 
    查看 [輸出] 窗格的 [ **容器工具** ] 區段，以取得執行中命令的詳細資料。  您可以看到使用 docker 撰寫的命令列工具來設定和建立執行時間容器。
 
-1. 在 Web API 專案中，再次以滑鼠右鍵按一下專案節點，然後選擇 [**新增**  >  **容器協調器支援**]。 選擇 [ **Docker Compose**]，然後選取相同的目標 OS。  
+1. 在 Web API 專案中，再次以滑鼠右鍵按一下專案節點，然後選擇 [**新增**  >  **容器協調器支援**]。 選擇 [ **Docker 撰寫**]，然後選取相同的目標 OS。  
 
     > [!NOTE]
-    > 在此步驟中，Visual Studio 將會提供建立 Dockerfile。 如果您在已經有 Docker 支援的專案上這麼做，系統會提示您是否要覆寫現有的 Dockerfile。 如果您在 Dockerfile 中進行了想要保留的變更，請選擇 [否]。
+    > 在這個步驟中，Visual Studio 會提供建立 Dockerfile。 如果您在已經有 Docker 支援的專案上這麼做，系統會提示您是否要覆寫現有的 Dockerfile。 如果您在 Dockerfile 中進行了想要保留的變更，請選擇 [否]。
 
-    Visual Studio 會對您的 docker 撰寫 YML 檔進行一些變更。 現在會包含這兩項服務。
+    Visual Studio 會對您的 docker 撰寫 YML 檔案進行一些變更。 現在會包含這兩項服務。
 
     ```yaml
     version: '3.4'
@@ -189,11 +189,11 @@ ms.locfileid: "97729284"
 
    適用于 .NET 3.1 的 web 應用程式會顯示 JSON 格式的氣象資料。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 查看將 [容器部署至 Azure](/azure/containers)的選項。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
   
-[Docker Compose](https://docs.docker.com/compose/)  
+[Docker 撰寫](https://docs.docker.com/compose/)  
 [容器工具](./index.yml)

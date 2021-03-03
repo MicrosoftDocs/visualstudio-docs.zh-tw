@@ -1,17 +1,17 @@
 ---
-ms.date: 09/22/2020
+ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: afc0466e93b8bf2a71db42c08cd2e043107e3bc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e36fe11b5eb604a9b109432047da9a3c26df414
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924995"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750807"
 ---
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
@@ -29,7 +29,7 @@ Visual Studio「整合式開發環境」是一個有創意的啟動控制板，�
 
 此圖顯示 Visual Studio，其中包含一個開啟的專案，以及您想要使用的數個重要工具視窗：
 
-- 「方案總管」(右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 **方案總管** 可以將檔案分組到 [方案和專案](../tutorial-projects-solutions.md)中，以協助組織程式碼。
+- 「方案總管」(右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 **方案 Explorer** 可將檔案分組到 [方案和專案](../tutorial-projects-solutions.md)中，以協助組織程式碼。
 
 - 「編輯器視窗」(中間) 會顯示檔案內容，您大部分的時間可能都是花在這裡。 您在這裡編輯程式碼或設計使用者介面，例如有按鈕和文字方塊的視窗。
 
@@ -87,7 +87,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [智慧](../../ide/using-intellisense.md)
 
-   IntelliSense 為一組功能的字詞，會直接在編輯器中顯示有關您程式碼的資訊，而在某些情況下會為您撰寫一些程式碼。 就像內嵌在編輯器中的基本文件，讓您不必在其他位置查閱類型資訊。 IntelliSense 功能會因語言而異。 如需詳細資訊，請參閱 [c # intellisense](../../ide/visual-csharp-intellisense.md)、 [Visual C++ IntelliSense](../../ide/visual-cpp-intellisense.md)、 [JavaScript intellisense](../../ide/javascript-intellisense.md)和 [Visual Basic intellisense](../../ide/visual-basic-specific-intellisense.md)。 下圖顯示 IntelliSense 如何顯示類型的成員清單：
+   IntelliSense 為一組功能的字詞，會直接在編輯器中顯示有關您程式碼的資訊，而在某些情況下會為您撰寫一些程式碼。 就像內嵌在編輯器中的基本文件，讓您不必在其他位置查閱類型資訊。 IntelliSense 功能會因語言而異。 如需詳細資訊，請參閱 [c # intellisense](../../ide/visual-csharp-intellisense.md)、 [Visual c + + IntelliSense](../../ide/visual-cpp-intellisense.md)、 [JavaScript intellisense](../../ide/javascript-intellisense.md)和 [visual Basic intellisense](../../ide/visual-basic-specific-intellisense.md)。 下圖顯示 IntelliSense 如何顯示類型的成員清單：
 
    ![Visual Studio 成員清單](../media/intellisense-list-members.png)
 
@@ -196,7 +196,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![[偵錯] > [啟動但不偵錯] 功能表](../media/overview-start-without-debugging.png)
 
-   Visual Studio 會建立應用程式，而主控台視窗隨即開啟，並顯示訊息 **Hello World！**。 您現在已有一個執行中的應用程式！
+   Visual Studio 會建立應用程式，而主控台視窗則會開啟，並顯示訊息 **Hello World！**。 您現在已有一個執行中的應用程式！
 
    ![顯示輸出 ' Hello Word！ ' 的 cmd.exe 主控台視窗的螢幕擷取畫面 和「按任意鍵繼續」。](../media/overview-console-window.png)
 
@@ -237,17 +237,23 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 1. 選擇 [ **建立新專案**]。
 
-   ![Visual Studio [開始] 視窗建立新專案](../media/vs-2019/start-window-create-new-project.png)
+    :::image type="content" source="../media/vs-2019/start-window-create-new-project.png" alt-text="Visual Studio 2019 中 [建立新專案] 視窗的螢幕擷取畫面。":::
 
    [建立新專案] 視窗隨即開啟，並顯示數個專案「範本」。 範本包含指定專案類型所需的基本檔案和設定。
 
-1. 若要尋找所需的範本，在搜尋方塊中鍵入或輸入 **.net core 主控台**。 系統即會根據您所輸入的關鍵字自動篩選可用的範本清單。 您可以從 [語言] 下拉式清單中選擇 [C#]，進一步篩選範本結果。 選取 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
+1. 若要尋找所需的範本，在搜尋方塊中鍵入或輸入 **.net core 主控台**。 系統即會根據您所輸入的關鍵字自動篩選可用的範本清單。 您可以從 [**所有語言**] 下拉式清單中選擇 [ **c #** ]、[**所有平臺**] 清單中的 [ **Windows** ] 和 [**所有專案類型**] 清單中的 [**主控台**]，進一步篩選範本結果。
 
-    ![在 Visual Studio 中建立新專案](../media/vs-2019/create-new-project.png)
+    選取 [ **主控台應用程式** ] 範本，然後按 **[下一步]**。
 
-1. 在 [設定新專案] 視窗中，於 [專案名稱] 方塊中輸入 **HelloWorld**、選擇性地變更專案檔的目錄位置，然後選擇 [建立]。
+    :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="Visual Studio 2019 中 [建立新專案] 視窗的螢幕擷取畫面，您可以在其中選取所需的範本。":::
 
-   ![在 Visual Studio 中設定新專案](../media/vs-2019/configure-new-project.png)
+1. 在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中輸入 **HelloWorld** ，選擇性地變更專案檔的目錄位置 (預設的地區設定為 `C:\Users\<name>\source\repos`) ，然後按 **[下一步]**。
+
+    :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="Visual Studio 2019 中 [設定您的新專案] 視窗的螢幕擷取畫面，您可以在其中輸入專案的名稱。":::
+
+1. 在 [**其他資訊**] 視窗中，確認 [**目標 Framework** ] 下拉式功能表中出現 **.net Core 3.1** ，然後按一下 [**建立**]。
+
+    :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="Visual Studio 2019 中 [其他資訊] 視窗的螢幕擷取畫面，您可以在其中選取所需的 .NET Core Framework 版本。":::
 
    Visual Studio 會建立專案。 其為簡單的 "Hello World" 應用程式，會呼叫 <xref:System.Console.WriteLine?displayProperty=nameWithType> 方法來顯示常值字串 "Hello World!" 在主控台 (程式輸出) 視窗中。
 
@@ -265,9 +271,9 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![[偵錯] > [啟動但不偵錯] 功能表](../media/overview-start-without-debugging.png)
 
-   Visual Studio 會建立應用程式，而主控台視窗隨即開啟，並顯示訊息 **Hello World！**。 您現在已有一個執行中的應用程式！
+   Visual Studio 會建立應用程式，而主控台視窗則會開啟，並顯示訊息 **Hello World！**。 您現在已有一個執行中的應用程式！
 
-   ![顯示「Hello 單字！」輸出的 [Microsoft Visual Studio 偵錯主控台] 視窗螢幕擷取畫面 和「按任意鍵關閉此視窗」。](../media/vs-2019/overview-console-window.png)
+   ![Microsoft Visual Studio 偵錯工具主控台視窗的螢幕擷取畫面，其中顯示輸出 ' Hello Word！ ' 和「按任意鍵關閉此視窗」。](../media/vs-2019/overview-console-window.png)
 
 1. 若要關閉主控台視窗，請在鍵盤上按下任意鍵。
 
@@ -292,7 +298,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 1. 請在主控台視窗中輸入您的名稱，並按下 **ENTER**。
 
-   ![Microsoft Visual Studio 偵錯主控台視窗的螢幕擷取畫面，其中顯示名稱、輸入和輸出 ' Hello Georgette！ ' 的提示。](../media/vs-2019/overview-console-input.png)
+   ![Microsoft Visual Studio 偵錯工具主控台視窗的螢幕擷取畫面，其中顯示名稱、輸入和輸出 ' Hello Georgette！ ' 的提示。](../media/vs-2019/overview-console-input.png)
 
 1. 按任意鍵以關閉主控台視窗並停止執行程式。
 
@@ -374,7 +380,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 10. 按下 **Ctrl** + **F5** 再次執行程式。 輸出看起來會像這樣：
 
-    ![[Microsoft Visual Studio 偵錯主控台] 視窗的螢幕擷取畫面，其中顯示名稱、輸入和輸出「Hello Georgette！」的提示。 年中的日： 43 '。](../media/vs-2019/overview-console-final.png)
+    ![Microsoft Visual Studio 偵錯工具主控台視窗的螢幕擷取畫面，其中顯示名稱、輸入和輸出「Hello Georgette！」的提示。 年中的日： 43 '。](../media/vs-2019/overview-console-final.png)
 
 ::: moniker-end
 

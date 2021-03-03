@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 52281c403ceb0f2708aa546cbd73559593c419be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 338e53d576e9f4d73b32c3f432223480d9e708c3
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942824"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683938"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>使用適用於 Visual Studio 的 Node.js 工具建立 Vue.js 應用程式
 
@@ -43,7 +43,7 @@ Visual Studio 支援使用 JavaScript 或 TypeScript 搭配 [Vue.js](https://vue
     如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
     ::: moniker-end
 
-    如果您需要安裝工作負載，但已有 Visual Studio，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
+    如果您需要安裝工作負載，但已有 visual studio，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 visual studio 安裝程式。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
 
 * 若要建立 ASP.NET Core 專案，您必須安裝 ASP.NET 與網頁程式開發工作負載，以及 .NET Core 跨平台開發工作負載。
 
@@ -68,20 +68,22 @@ Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用
 
 #### <a name="create-an-empty-project"></a>建立空白專案
 
-1. 開啟 Visual Studio 並建立新專案。
+* 開啟 Visual Studio 並建立新專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **asp.net**，然後選擇 [建立新的 ASP.NET Core Web 應用程式]。 在出現的對話方塊中，鍵入名稱 **client-app**，然後選擇 [建立]。
+    在 Visual Studio 2019 中，選擇 [開始] 視窗中的 [ **建立新專案** ]。 如果 [開始] 視窗未開啟，請 **選擇 [** 檔案  >  **開始視窗]**。 輸入 **web 應用程式**，選擇 **c #** 做為語言，然後選擇 [ **ASP.NET Core 空白**]，然後選擇 **[下一步]**。 在下一個畫面中，將專案命名為 **用戶端應用程式**，然後選擇 **[下一步]**。
+
+    選擇建議的目標架構 ( .NET Core 3.1) 或 .NET 5，然後選擇 [ **建立**]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [Web]。 在中間窗格中，選擇 [ASP.NET Core Web 應用程式]，鍵入名稱 **client-app**，然後選擇 [確定]。
+
+    選取 [空白]，然後按一下 [確定]。
+
+    Visual Studio 隨即建立專案，而專案會在 [方案總管] (右窗格) 中開啟。
     ::: moniker-end
 
     如果您看不到 [ASP.NET Core Web 應用程式] 專案範本，則必須先安裝 **ASP.NET 與網頁程式開發** 工作負載和 **.NET Core** 程式開發工作負載。 若要安裝工作負載，請在 [新增專案] 對話方塊 (選取 [檔案] > [新增] > [專案]) 的左窗格中，按一下 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選取所需的工作負載。
-
-1. 選取 [空白]，然後按一下 [確定]。
-
-    Visual Studio 隨即建立專案，而專案會在 [方案總管] (右窗格) 中開啟。
 
 #### <a name="configure-the-project-startup-file"></a>設定專案啟動檔案
 
@@ -119,7 +121,7 @@ Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用
 
 #### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>指出專案會在每次觸發建置時建置用戶端應用程式
 
-1. 在 Visual Studio 中，移至 [**專案**  >  **屬性**]  >  **組建事件**。
+1. 在 Visual Studio 中，移至 **專案**  >  **屬性**  >  **建立事件**。
 
 1. 在 [建置前事件命令列] 上鍵入 `npm --prefix ./client-app run build`。
 

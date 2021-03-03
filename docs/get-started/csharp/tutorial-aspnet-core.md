@@ -3,7 +3,7 @@ title: '教學課程：開始使用 c # 和 ASP.NET Core'
 titleSuffix: ''
 description: 了解如何在 Visual Studio 中使用 C# 逐步建立 ASP.NET Core Web 應用程式。
 ms.custom: seodec18, get-started
-ms.date: 05/29/2019
+ms.date: 02/12/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 63db3f62f4e7c763bf02fbfec2dd2f52c32d3264
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 026f6f2902b537312c0714b7eeb61d10e0fb980d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956356"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683145"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 
@@ -45,7 +45,7 @@ ms.locfileid: "99956356"
 
 ### <a name="update-visual-studio"></a>更新 Visual Studio 2017
 
-如果您已經安裝 Visual Studio，請確定您執行的是最新版本。 如需有關如何更新安裝的詳細資訊，請參閱 [最新版本頁面的更新 Visual Studio](../../install/update-visual-studio.md) 。
+如果您已經安裝 Visual Studio，請確定您執行的是最新版本。 如需如何更新安裝的詳細資訊，請參閱將 [Visual Studio 更新至最新版本](../../install/update-visual-studio.md) 頁面。
 
 ### <a name="choose-your-theme-optional"></a>選擇您的佈景主題 (選擇性)
 
@@ -98,7 +98,7 @@ ms.locfileid: "99956356"
    ![新增 ASP.NET Core Web 應用程式對話方塊](media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > 如果您在頂端的下拉式功能表中沒有看到 **ASP.NET Core 2.1**，請確定您執行的是最新版 Visual Studio。 如需有關如何更新安裝的詳細資訊，請參閱 [最新版本頁面的更新 Visual Studio](../../install/update-visual-studio.md) 。
+   > 如果您在頂端的下拉式功能表中沒有看到 **ASP.NET Core 2.1**，請確定您執行的是最新版 Visual Studio。 如需如何更新安裝的詳細資訊，請參閱將 [Visual Studio 更新至最新版本](../../install/update-visual-studio.md) 頁面。
 
 ::: moniker-end
 
@@ -106,16 +106,16 @@ ms.locfileid: "99956356"
 
 1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
-   ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   :::image type="content" source="../../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="檢視 [建立新專案] 視窗":::
 
-1. 在 [建立新專案] 視窗中，在搜尋方塊內輸入或鍵入 *ASP.NET*。 接下來，從語言清單中選擇 **C#**，然後從平台清單中選擇 **Windows**。
+1. 在 [ **建立新專案** ] 視窗中，從 [語言] 清單中選擇 [ **c #** ]。 接著，從 [平臺] 清單中選擇 [ **Windows** ]，然後從 [專案類型] 清單中選擇 [ **Web** ]。
 
-   在您套用語言和平台的篩選後，請選擇 [ASP.NET Core Web 應用程式] 範本，然後選擇 [下一步]。
+      套用 [語言]、[平臺] 和 [專案類型] 篩選器之後，請選擇 [ **ASP.NET Core Web 應用程式** ] 範本，然後選擇 [ **下一步]**。
 
-   ![為 ASP.NET Core Web 應用程式選擇 C# 範本](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="選擇 ASP.NET Core Web 應用程式的 c # 範本":::
 
    > [!NOTE]
-   > 如果您沒有看到 [ASP.NET Core Web 應用程式] 範本，可以從 [建立新專案] 視窗加以安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   > 如果您沒有看到 **ASP.NET Core Web 應用程式** 範本，您可以從 [ **建立新專案** ] 視窗進行安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
    >
    > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -125,15 +125,21 @@ ms.locfileid: "99956356"
    >
    > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 如果系統出現提示，請儲存您的工作。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定新專案] 視窗中，於 [專案名稱] 方塊中鍵入或輸入 *MyCoreApp*。 然後，選擇 [ **建立**]。
+1. 在 [設定新專案] 視窗中，於 [專案名稱] 方塊中鍵入或輸入 *MyCoreApp*。 然後選擇 **[下一步]**。
 
-   ![在 [設定新專案] 視窗中，將專案命名為 'MyCoreApp'](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
+   :::image type="content" source="./media/vs-2019/csharp-name-your-aspnet-app.png" alt-text="在 [設定新專案] 視窗中，將專案命名為 'MyCoreApp'":::
 
-1. 在 [ **建立新的 ASP.NET Core Web 應用程式** ] 視窗中，確認 **ASP.NET Core 3.0** 出現在頂端的下拉式功能表中。 然後，請選擇包含範例 Razor Pages 的 [Web 應用程式]。 接著，選擇 [建立]。
+1. 在 [ **其他資訊** ] 視窗中，確認 [ **.net Core 3.1** ] 出現在頂端的下拉式功能表中。 請注意，您可以勾選方塊來選擇啟用 Docker 支援。 您也可以按一下 [變更驗證] 按鈕，以新增驗證支援。 您可以在該處選擇：
+    - None：無驗證。
+    - 個別帳戶：這些帳戶儲存在本機或以 Azure 為基礎的資料庫中。
+    - Microsoft 身分識別平臺：此選項會使用 Active Directory、Azure AD 或 Microsoft 365 進行驗證。
+    - Windows：適用于內部網路應用程式。
+    
+    讓 [ **啟用 Docker** ] 方塊保持未選取狀態，並針對 [驗證類型] 選取 [ **無** ]。 然後，選取 [Create] \(建立\)。
 
-   ![[建立新的 ASP.NET Core Web 應用程式] 視窗](./media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
+   :::image type="content" source="./media/vs-2019/aspnet-core-additional-information.png" alt-text="在 [其他資訊] 視窗中，確認已選取 [.NET Core 3.1]，並保留所有預設值":::
 
-   Visual Studio 會隨即開啟您的新專案。
+   Visual Studio 會開啟您的新專案。
 
 ::: moniker-end
 
@@ -239,7 +245,7 @@ ms.locfileid: "99956356"
 
    ![檢視包含您所做變更的 [關於] 頁面](media/csharp-aspnet-razor-browser-page-about-changed.png)
 
-1. 關閉網頁瀏覽器，按 **Shift** + **F5** 以停止 Debug 模式，然後關閉 Visual Studio。
+1. 關閉網頁瀏覽器，按 **Shift** + **F5** 以停止偵錯模式，然後關閉 Visual Studio。
 
 ::: moniker-end
 
@@ -253,13 +259,13 @@ ms.locfileid: "99956356"
 
  1. 展開 [ **頁面** ] 資料夾。
 
-     ![方案總管中的 Pages 資料夾](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
+     ![方案 Explorer 中的 Pages 資料夾](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
 
  1. 在程式碼編輯器中，查看 **索引的 cshtml** 檔案。
 
-     ![在 Visual Studio 程式碼編輯器中，查看索引 cshtml 檔](media/vs-2019/csharp-aspnet-index-cshtml.png)
+     ![在 Visual Studio 程式碼編輯器中查看索引 cshtml 檔案](media/vs-2019/csharp-aspnet-index-cshtml.png)
 
- 1. 每個 cshtml 檔案都有相關聯的程式碼檔案。 若要在編輯器中開啟程式碼檔案，請在方案總管中展開 [ **Index** ] 節點，然後選擇 **Index.cshtml.cs** 檔案。
+ 1. 每個 cshtml 檔案都有相關聯的程式碼檔案。 若要在編輯器中開啟程式碼檔案，請在 [方案瀏覽器] 中展開 [ **Index** ] 節點，然後選擇 **Index.cshtml.cs** 檔案。
 
      ![選擇 Visual Studio 程式碼編輯器中的 Index.cshtml.cs 檔案](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
 
@@ -342,7 +348,7 @@ ms.locfileid: "99956356"
 
    ![查看已更新的隱私權頁面，其中包含您所做的變更](media/vs-2019/csharp-aspnet-browser-page-privacy-changed.png)
 
-1. 關閉網頁瀏覽器，按 **Shift** + **F5** 以停止 Debug 模式，然後關閉 Visual Studio。
+1. 關閉網頁瀏覽器，按 **Shift** + **F5** 以停止偵錯模式，然後關閉 Visual Studio。
 ::: moniker-end
 
 ## <a name="quick-answers-faq"></a>常見問題集快問快答

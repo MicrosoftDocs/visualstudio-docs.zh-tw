@@ -1,5 +1,5 @@
 ---
-title: 進行平行應用程式的偵錯工具 |Microsoft Docs
+title: 進行平行應用程式的偵錯工具 |Microsoft 檔
 description: 使用 Visual Studio 中的 [平行工作] 和 [平行堆疊] 視窗進行調試
 ms.date: 02/14/2020
 ms.topic: conceptual
@@ -22,16 +22,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f46efe377cb01b7b78a9df2de2d1e6fc89826014
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8f739ab99f060005f7bbfebc400c424c50ba7d5
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884282"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684136"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>逐步解說：在 Visual Studio 中 (c #、Visual Basic、c + + 的平行應用程式進行偵錯工具) 
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>逐步解說：在 Visual Studio 中進行平行應用程式的偵錯工具 (c #、Visual Basic、c + +) 
 
-本逐步解說顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來偵錯平行應用程式。 這些視窗可協助您瞭解並驗證使用工作 [平行程式庫 (TPL) ](/dotnet/standard/parallel-programming/task-parallel-library-tpl) 或 [並行執行階段](/cpp/parallel/concrt/concurrency-runtime)之程式碼的執行時間行為。 本逐步解說提供具有內建中斷點的範例程式碼。 在程式碼中斷之後，本逐步解說會顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來檢查程式碼。
+本逐步解說顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來偵錯平行應用程式。 這些視窗可協助您瞭解並驗證使用工作 [平行程式庫 (TPL) ](/dotnet/standard/parallel-programming/task-parallel-library-tpl) 或 [並行運行](/cpp/parallel/concrt/concurrency-runtime)時間的程式碼執行時間行為。 本逐步解說提供具有內建中斷點的範例程式碼。 在程式碼中斷之後，本逐步解說會顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來檢查程式碼。
 
  本逐步解說教導下列工作：
 
@@ -46,7 +46,7 @@ ms.locfileid: "99884282"
 - 視窗如何透過分組、縮放和其他相關功能來處理比例調整。
 
 ## <a name="prerequisites"></a>必要條件
- 本逐步解說假設 **Just My Code** 已啟用 (預設會在較新版本的 Visual Studio) 中啟用。 按一下 [工具] 功能表上的 [選項]，展開 [偵錯] 節點，再選取 [一般]，然後選取 [啟用 Just My Code (僅限受授程式碼)]。 如果未設定這項功能，您仍然可以使用本逐步解說，但結果可能與插圖不同。
+ 本逐步解說假設已啟用 **My Code** (預設會在較新版本的 Visual Studio) 中啟用。 按一下 [工具] 功能表上的 [選項]，展開 [偵錯] 節點，再選取 [一般]，然後選取 [啟用 Just My Code (僅限受授程式碼)]。 如果未設定這項功能，您仍然可以使用本逐步解說，但結果可能與插圖不同。
 
 ## <a name="c-sample"></a>C# 範例
  如果您使用 C# 範例，本逐步解說也會假設外部程式碼已隱藏。 若要切換是否顯示外部程式碼，請以滑鼠右鍵按一下 [呼叫堆疊] 視窗的 [名稱] 表格標題，然後選取或清除 [顯示外部程式碼]。 如果未設定這項功能，您仍然可以使用本逐步解說，但結果可能與插圖不同。
@@ -70,24 +70,26 @@ ms.locfileid: "99884282"
 
    在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
-   在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從 [語言] 清單中選擇 **c #**、 **c + +** 或 **Visual Basic** ，然後從 [平臺] 清單中選擇 [ **Windows** ]。 
+   在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從 [語言] 清單中選擇 **c #**、 **c + +** 或 **Visual Basic** ，然後從 [平臺] 清單中選擇 [ **Windows** ]。
 
-   套用語言和平臺篩選器之後，請選擇 **( .Net Core) 的主控台應用程式** ，或針對 c + + **主控台應用程式** 範本，然後選擇 **[下一步]**。
+   套用語言和平臺篩選器之後，請選擇適用于 .NET Core 或 c + + 的 **主控台應用程式** ，然後選擇 [ **下一步]**。
 
    > [!NOTE]
-   > 如果您沒有看到正確的範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發** ] 或 [ **使用 c + + 的桌面開發** ] 工作負載，然後選擇 [ **修改**]。
+   > 如果您沒有看到正確的範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 **.Net Core 跨平臺開發** 或 **使用 c + + 的桌面開發** 工作負載，然後選擇 [ **修改**]。
 
-   在 [ **設定您的新專案** ] 視窗中，于 [ **專案名稱** ] 方塊中輸入名稱或使用預設名稱。 然後，選擇 [ **建立**]。
+   在 [ **設定您的新專案** ] 視窗中，于 [ **專案名稱** ] 方塊中輸入名稱或使用預設名稱。 然後選擇 **[下一步]** 或 [ **建立**]，其中有任何可用的選項。
+
+   若是 .NET Core，請選擇建議的目標架構 ( .NET Core 3.1) 或 .NET 5，然後選擇 [ **建立**]。
 
    ::: moniker-end
    ::: moniker range="vs-2017"
    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇下列專案：
 
-   - 針對 c # 應用程式，請選擇 [ **Visual c #**] 底下的 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .NET Framework)**]。
-   - 若為 Visual Basic 應用程式，請在 [ **Visual Basic**] 下選擇 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 (] .NET Framework)**。
-   - 若是 c + + 應用程式，請在 [ **Visual C++**] 下，選擇 [ **windows 桌面**]，然後選擇 [ **windows 主控台應用程式**]。
+   - 針對 c # 應用程式，請選擇 [ **Visual c #**] 底下的 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .net Framework)**。
+   - 若為 Visual Basic 應用程式，請在 [ **Visual basic**] 下選擇 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .net Framework)**。
+   - 若是 c + + 應用程式，請選擇 [ **Visual c + +**] 底下的 [ **windows 桌面**]，然後選擇 [ **windows 主控台應用程式**]。
 
-   如果您沒有看到 **主控台應用程式 ( .net Core)** 或針對 c + +，**主控台應用程式** 專案範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發** ] 或 [ **使用 c + + 的桌面開發** ] 工作負載，然後選擇 [ **修改**]。
+   如果您沒有看到 **主控台應用程式 ( .net Core)** 或針對 c + +，**主控台應用** 程式專案範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發** ] 或 [ **使用 c + + 的桌面開發** ] 工作負載，然後選擇 [ **修改**]。
 
    然後，輸入名稱或使用預設名稱，然後按一下 **[確定]**。
 
@@ -232,7 +234,7 @@ ms.locfileid: "99884282"
 
 2. 在 [偵錯] 功能表上，指向 [視窗]，然後按一下 [執行緒]。 將 [執行緒] 視窗停駐在 Visual Studio 底部。
 
-3. 在 [偵錯] 功能表中，指向 [視窗]，然後按一下 [呼叫堆疊]。 將 [ **呼叫堆疊** ] 視窗停駐在 Visual Studio 的底部。
+3. 在 [偵錯] 功能表中，指向 [視窗]，然後按一下 [呼叫堆疊]。 將 [ **呼叫堆疊** ] 視窗停駐在 Visual Studio 底部。
 
 4. 按兩下 [執行緒] 視窗中的執行緒，使它成為目前執行緒。 目前執行緒具有黃色箭號。 當您變更目前執行緒時，其他視窗會隨之更新。 我們接下來檢查工作。
 
