@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_virtualBaseOffset |Microsoft Docs
+description: 抓取虛擬函數的虛擬函式資料表中的位移。
+title: IDiaSymbol：： get_virtualBaseOffset |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 32f37a2e912e6e7ad315a1c92a495fcb5ad98a0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f22826b9fb795543c27c621f95dd4e5ccf897b0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862443"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161764"
 ---
 # <a name="idiasymbolget_virtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
 抓取虛擬函數的虛擬函式資料表中的位移。

@@ -1,5 +1,6 @@
 ---
-title: IDebugComPlusSymbolProvider2 |Microsoft Docs
+description: 以 managed 程式碼專屬的方法表示 COM + 符號提供者，並擴充 IDebugComPlusSymbolProvider。
+title: IDebugComPlusSymbolProvider2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 658d7e5b8660a738616dc89be567f01c17406267
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3a29fcc5cca12698919f0bc4af02bc3db1fe3fa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928584"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163313"
 ---
 # <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
 以 managed 程式碼專屬的方法表示 COM + 符號提供者，並擴充 **IDebugComPlusSymbolProvider**[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)。

@@ -1,4 +1,5 @@
 ---
+description: 抓取位置的插槽號碼。
 title: IDiaSymbol::get_slot | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb7c89828bb4b0715f97aaba37fd335c8f1eb6c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7bd3fcbcba541ada2fabeff134fe600940a81fd9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853601"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161792"
 ---
 # <a name="idiasymbolget_slot"></a>IDiaSymbol::get_slot
 抓取位置的插槽號碼。 當 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 為時使用 `LocIsSlot` 。

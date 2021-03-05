@@ -1,5 +1,6 @@
 ---
-title: IDebugComPlusSymbolProvider：： IsFunctionDeleted |Microsoft Docs
+description: 判斷已刪除指定之偵錯工具位址的函式。
+title: IDebugComPlusSymbolProvider：： IsFunctionDeleted |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0677b45d3c78f1e652a1185e0e5519bb60bc35ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fcaf296381e6035613ebc496e440f10d1ec65baa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911199"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163703"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
 判斷已刪除指定之偵錯工具位址的函式。

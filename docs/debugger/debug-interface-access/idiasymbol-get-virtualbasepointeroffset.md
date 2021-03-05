@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_virtualBasePointerOffset |Microsoft Docs
+description: 捕獲虛擬基底指標的位移。
+title: IDiaSymbol：： get_virtualBasePointerOffset |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fa72582bccd0193ab16375e04b8196275203531
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e44c1249ce2c13236dcdf4b95b7daa1c8896c13
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853356"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161729"
 ---
 # <a name="idiasymbolget_virtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
 捕獲虛擬基底指標的位移。

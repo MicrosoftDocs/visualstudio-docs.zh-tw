@@ -1,4 +1,5 @@
 ---
+description: 抓取載入物件的程式庫或物件檔案的檔案名。
 title: IDiaSymbol::get_libraryName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab6dc26ef8e449b27daf8c99982cf5fbb2a0d5fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e717e1794531114d7b68966ef19bdbb2158bfe60
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853944"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161988"
 ---
 # <a name="idiasymbolget_libraryname"></a>IDiaSymbol::get_libraryName
 抓取載入物件的程式庫或物件檔案的檔案名。

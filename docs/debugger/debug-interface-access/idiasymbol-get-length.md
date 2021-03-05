@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_length |Microsoft Docs
+description: 抓取此符號所表示之物件所使用的記憶體位數或位元組數目。
+title: IDiaSymbol：： get_length |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9ad12358e92be12dca0dd9c49f4a2941f5c1da3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a7b3a7a88c688f8ff68f2c1280390f10110c3a9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863043"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162009"
 ---
 # <a name="idiasymbolget_length"></a>IDiaSymbol::get_length
 抓取此符號所表示之物件所使用的記憶體位數或位元組數目。

@@ -1,4 +1,5 @@
 ---
+description: 列舉 DIA 資料來源資料表。
 title: IDiaTable | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b44d7ad28ff2fdc5c6f71daca1d5479cd05263ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3b93dad0baef701a7d417993080d6511373454a3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862399"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161652"
 ---
 # <a name="idiatable"></a>IDiaTable
 列舉 DIA 資料來源資料表。

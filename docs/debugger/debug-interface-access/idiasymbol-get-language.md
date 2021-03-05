@@ -1,4 +1,5 @@
 ---
+description: 抓取來源的語言。
 title: IDiaSymbol::get_language | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 530bfc0b977cd99f1924461d52417deb49e7330e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50d4ee9899b7d625a18babc3551d41b4e2ddc8bc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853965"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162023"
 ---
 # <a name="idiasymbolget_language"></a>IDiaSymbol::get_language
 抓取來源的語言。

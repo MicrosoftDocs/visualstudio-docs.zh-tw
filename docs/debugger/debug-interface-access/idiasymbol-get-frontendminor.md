@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_frontEndMinor |Microsoft Docs
+description: 抓取前端次要版本號碼。
+title: IDiaSymbol：： get_frontEndMinor |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9677e1c0d5f15a6b58ee66bf4041bebd5320fa27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e638d0a22b3b24117147ab52cbd328980c7f0aa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863407"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162142"
 ---
 # <a name="idiasymbolget_frontendminor"></a>IDiaSymbol::get_frontEndMinor
 抓取前端次要版本號碼。

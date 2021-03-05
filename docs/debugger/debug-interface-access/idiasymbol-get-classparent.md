@@ -1,4 +1,5 @@
 ---
+description: 抓取符號之類別父系的參考。
 title: IDiaSymbol::get_classParent | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b556529a0cf4a30cd84f83700947cb52c671de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 61bab788c29a987ad7204d395c5e0d87fe2ab7dd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863526"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162210"
 ---
 # <a name="idiasymbolget_classparent"></a>IDiaSymbol::get_classParent
 抓取符號之類別父系的參考。

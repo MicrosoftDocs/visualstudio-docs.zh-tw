@@ -1,5 +1,6 @@
 ---
-title: IDebugDocumentPosition2：： GetDocument |Microsoft Docs
+description: 取得包含的檔。
+title: IDebugDocumentPosition2：： GetDocument |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c6cbfd47cb5e8f72723ab385b544e804a603ef1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f0153b55397b78191d1e2ddc022767095bc1fcd8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946887"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162793"
 ---
 # <a name="idebugdocumentposition2getdocument"></a>IDebugDocumentPosition2::GetDocument
 取得包含的檔。

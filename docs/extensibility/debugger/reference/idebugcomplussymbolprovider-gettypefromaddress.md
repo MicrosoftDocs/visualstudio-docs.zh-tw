@@ -1,5 +1,6 @@
 ---
-title: IDebugComPlusSymbolProvider：： GetTypeFromAddress |Microsoft Docs
+description: 根據指定的 debug 位址，抓取至符號類型。
+title: IDebugComPlusSymbolProvider：： GetTypeFromAddress |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 65b94be12bab00b44f12bc23239de90f5e8c0ddc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dfcc7987c672ebf9647f33281b64d6d446a383e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892836"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163715"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 根據指定的 debug 位址，抓取至符號類型。

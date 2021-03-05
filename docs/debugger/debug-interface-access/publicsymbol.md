@@ -1,5 +1,6 @@
 ---
-title: PublicSymbol |Microsoft Docs
+description: 建立 .exe 檔案時，每個公用符號最少 (，每個全域函式和資料符號) 都會獲得 SymTagPublicSymbol 標記。
+title: PublicSymbol |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c13674eb7aba147946f2dc8a75bcabbdb4b7147
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02a706a1dc20dd61c43fce62905b2d3ac48f87fd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862294"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161645"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 建立 .exe 檔案時，每個公用符號最少 (，每個全域函式和資料符號) 都會獲得一個 `SymTagPublicSymbol` 標記。

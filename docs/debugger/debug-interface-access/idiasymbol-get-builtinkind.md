@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_builtInKind |Microsoft Docs
+description: 抓取 HLSL 型別的內建類型。
+title: IDiaSymbol：： get_builtInKind |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7bc90c83ec789920d89bb424e6c7a6464c0ce8f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d71ad1c8986bb60238e8fce6a5f3c7c201cb4954
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863533"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162218"
 ---
 # <a name="idiasymbolget_builtinkind"></a>IDiaSymbol::get_builtInKind
 抓取 HLSL 型別的內建類型。

@@ -1,5 +1,6 @@
 ---
-title: IDebugComPlusSymbolProvider：： IsHiddenCode |Microsoft Docs
+description: 判斷是否隱藏指定偵錯工具位址的程式碼。
+title: IDebugComPlusSymbolProvider：： IsHiddenCode |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3791feff0b02bf3555b9fa973fdba90b5f5f6d6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: de0343e5af864044a7feaff2b0aa47ee6eef8826
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911132"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163638"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
 判斷是否隱藏指定偵錯工具位址的程式碼。

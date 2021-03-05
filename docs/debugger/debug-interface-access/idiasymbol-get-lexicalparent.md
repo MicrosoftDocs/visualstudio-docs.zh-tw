@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_lexicalParent |Microsoft Docs
+description: 抓取符號之詞彙父系的參考。
+title: IDiaSymbol：： get_lexicalParent |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: afac75a650f3ffc8dc365626a7a61fea8c3193f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d36147effa96d6c5a8ceb0b8f06a01cb0de5e455
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853951"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162002"
 ---
 # <a name="idiasymbolget_lexicalparent"></a>IDiaSymbol::get_lexicalParent
 抓取符號之詞彙父系的參考。

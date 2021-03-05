@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_packed |Microsoft Docs
+description: 抓取旗標，這個旗標會指定是否封裝 (UDT) 的使用者定義資料類型。
+title: IDiaSymbol：： get_packed |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2682086764294f9721153e9509088e653b9fd11
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5e6cf89aa0bdd31b826ac8e73000c1bfa8c595c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853706"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161932"
 ---
 # <a name="idiasymbolget_packed"></a>IDiaSymbol::get_packed
 抓取旗標，這個旗標會指定是否封裝 (UDT) 的使用者定義資料類型。

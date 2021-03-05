@@ -1,5 +1,6 @@
 ---
-title: BPERESI_FIELDS |Microsoft Docs
+description: 指定要抓取的資訊，以找出中斷點的解析失敗。
+title: BPERESI_FIELDS |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 287e6750ceaafc705c5d49bd5cd27201f16a692f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e26b5a7285c2e5c9135429777b4b58f35252e550
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876091"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162520"
 ---
 # <a name="bperesi_fields"></a>BPERESI_FIELDS
 指定要抓取的資訊，以找出中斷點的解析失敗。

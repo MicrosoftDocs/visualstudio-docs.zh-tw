@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_frontEndMajor |Microsoft Docs
+description: 抓取前端主要版本號碼。
+title: IDiaSymbol：： get_frontEndMajor |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bec64aa467ffeb4780626f2296d9fddbea4d3f1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf5bc125b00fa8194475c9f6101e697dbf66062a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854336"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162163"
 ---
 # <a name="idiasymbolget_frontendmajor"></a>IDiaSymbol::get_frontEndMajor
 抓取前端主要版本號碼。

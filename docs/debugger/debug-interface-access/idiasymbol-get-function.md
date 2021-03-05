@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_function |Microsoft Docs
+description: 抓取旗標，這個旗標會指定公用符號是否參考函數。
+title: IDiaSymbol：： get_function |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f340f4ba2202f6412d962d218e23369c9c6e3a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3c436777b8a84bc16e7356805aa2faedc2e18e5a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854315"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162135"
 ---
 # <a name="idiasymbolget_function"></a>IDiaSymbol::get_function
 抓取旗標，這個旗標會指定公用符號是否參考函數。

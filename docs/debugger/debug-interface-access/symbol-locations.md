@@ -1,5 +1,6 @@
 ---
-title: 符號位置 |Microsoft Docs
+description: 大部分的符號在影像檔案中都有一個已定義的位置。
+title: 符號位置 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f7e5d9a02a8c928b64bcb6abd8054d8fa76f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2452d9aca52c281a96ea8f5738bc38ed21ee63e8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853188"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161624"
 ---
 # <a name="symbol-locations"></a>符號位置
 大部分的符號在影像檔案中都有一個已定義的位置。 符號的位置會以 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 列舉的值來指定。 符號可能會根據其位置支援其他屬性。

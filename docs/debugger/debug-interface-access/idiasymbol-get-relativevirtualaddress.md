@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_relativeVirtualAddress |Microsoft Docs
+description: 抓取位置 (RVA) 的相對虛擬位址。
+title: IDiaSymbol：： get_relativeVirtualAddress |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 693bf46ceb3194f699d9a5a4dbb0a8828e723fe5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 261c24dc73b7fca7c26aac61185e5f197d089453
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853664"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161869"
 ---
 # <a name="idiasymbolget_relativevirtualaddress"></a>IDiaSymbol::get_relativeVirtualAddress
 抓取位置 (RVA) 的相對虛擬位址。 當 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 設定為時，請使用 `LocIsStatic` 。

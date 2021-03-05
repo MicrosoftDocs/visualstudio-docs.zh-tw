@@ -1,5 +1,6 @@
 ---
-title: IDebugEngine2：： ContinueFromSynchronousEvent |Microsoft Docs
+description: 由會話 debug manager 所呼叫 (SDM) ，表示已接收並處理由 debug engine 所傳送的同步 debug 事件 (將) 解除至 SDM。
+title: IDebugEngine2：： ContinueFromSynchronousEvent |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78485e209c93e0673aa32587b21bb074aac047e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8e7d92e4d49b6a9e409ee30cf04d131645d287fd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921137"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162663"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 由會話 debug manager 所呼叫 (SDM) ，表示已接收並處理由 debug engine 所傳送的同步 debug 事件 (將) 解除至 SDM。

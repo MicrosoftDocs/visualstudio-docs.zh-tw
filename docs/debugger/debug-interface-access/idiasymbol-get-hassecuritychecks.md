@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_hasSecurityChecks |Microsoft Docs
+description: 抓取旗標，這個旗標會指定編譯單位或函數是否以緩衝區溢位的安全性檢查進行編譯 (例如，/GS (緩衝區安全性檢查) ) 編譯器參數) 。
+title: IDiaSymbol：： get_hasSecurityChecks |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03e4415b57e687aefc5e165ffef85302c3610644
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 56f337a84081aa8c0282efcf07b70f30d98da15e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854224"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162065"
 ---
 # <a name="idiasymbolget_hassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
 抓取旗標，這個旗標會指定編譯單位或函數是否以緩衝區溢位的安全性檢查進行編譯 (例如， [/gs (緩衝區安全性檢查) ](/cpp/build/reference/gs-buffer-security-check) 編譯器參數) 。

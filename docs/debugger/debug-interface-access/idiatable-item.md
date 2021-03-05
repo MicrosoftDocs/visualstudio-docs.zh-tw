@@ -1,5 +1,6 @@
 ---
-title: IDiaTable：： Item |Microsoft Docs
+description: 抓取資料表中所指定專案的參考。
+title: IDiaTable：： Item |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: db3baeaf7c30e0fa381c1d99d7a53e1eac5e2862
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9693a1d16666dcb23f97d918807f9c2fea31c186
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853265"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161673"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 抓取資料表中所指定專案的參考。

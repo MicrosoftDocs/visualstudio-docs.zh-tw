@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_isSplitted |Microsoft Docs
+description: 抓取旗標，這個旗標會指定資料符號是否已分割成其他符號的匯總或集合;編譯器會將符號視為個別的實體，即使它們真的是較大符號的一部分也是一樣。
+title: IDiaSymbol：： get_isSplitted |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bbdeb9b4a5bf6f173cbb2a0bd593202317d62342
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5dd9807928ca5f1b8d2e3b20c5de3ec30adc70db
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853993"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162051"
 ---
 # <a name="idiasymbolget_issplitted"></a>IDiaSymbol::get_isSplitted
 抓取旗標，這個旗標會指定資料符號是否已分割成其他符號的匯總或集合;編譯器會將符號視為個別的實體，即使它們真的是較大符號的一部分也是一樣。

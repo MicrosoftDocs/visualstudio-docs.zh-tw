@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_rank |Microsoft Docs
+description: 抓取 FORTRAN 多維陣列的維度)  (數目排名。
+title: IDiaSymbol：： get_rank |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da00422a5a12a12f99cf706b0bf7bb2ce623d76f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4da2bb7dc41d06e113e0bd278ef08917771cfb2e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853678"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161911"
 ---
 # <a name="idiasymbolget_rank"></a>IDiaSymbol::get_rank
 抓取 FORTRAN 多維陣列的維度)  (數目排名。

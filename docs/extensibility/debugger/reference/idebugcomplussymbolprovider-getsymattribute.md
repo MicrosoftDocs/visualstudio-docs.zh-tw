@@ -1,5 +1,6 @@
 ---
-title: IDebugComPlusSymbolProvider：： GetSymAttribute |Microsoft Docs
+description: 使用指定之模組的給定父屬性抓取 debug 符號。
+title: IDebugComPlusSymbolProvider：： GetSymAttribute |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 53d0f3ae185a8f13a76547b5afdad1e3b6558918
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66504d4b98de9f8435e4757a17a1970362e84ab9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892862"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163807"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 使用指定之模組的給定父屬性抓取 debug 符號。

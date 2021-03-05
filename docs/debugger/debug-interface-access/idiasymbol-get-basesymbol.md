@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_baseSymbol |Microsoft Docs
+description: 抓取指標所依據的符號。
+title: IDiaSymbol：： get_baseSymbol |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 832a4c6fbd2c0571d9e87d877c7a013af62cf202
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c30595ec98f7e379414a9b1f85d572aec02c5032
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863547"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162204"
 ---
 # <a name="idiasymbolget_basesymbol"></a>IDiaSymbol::get_baseSymbol
 抓取指標所依據的符號。

@@ -1,4 +1,5 @@
 ---
+description: 抓取指定函數是否為虛擬的旗標。
 title: IDiaSymbol::get_virtual | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f65e41883c6854c3514040a8eb20dba2f139b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec8576691b1ff5898ae40f421c60839880fc1d70
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862483"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161771"
 ---
 # <a name="idiasymbolget_virtual"></a>IDiaSymbol::get_virtual
 抓取指定函數是否為虛擬的旗標。

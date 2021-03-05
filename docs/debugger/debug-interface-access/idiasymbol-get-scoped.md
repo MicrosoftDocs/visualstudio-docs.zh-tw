@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_scoped |Microsoft Docs
+description: 抓取旗標，這個旗標會指定使用者定義資料類型是否出現在非全域的詞法範圍中。
+title: IDiaSymbol：： get_scoped |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f882a71e92056a7120eb9ea6ae3b96b6ee8ea69c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63260280f4730c2a0ee32324e49205650cd6c204
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853643"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161848"
 ---
 # <a name="idiasymbolget_scoped"></a>IDiaSymbol::get_scoped
 抓取旗標，這個旗標會指定使用者定義資料類型是否出現在非全域的詞法範圍中。

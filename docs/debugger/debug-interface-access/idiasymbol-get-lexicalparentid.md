@@ -1,4 +1,5 @@
 ---
+description: 抓取符號的詞法父識別碼。
 title: IDiaSymbol::get_lexicalParentId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1992c48b89dc5a2a2a8fb8f33775ae944e782f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ef91c63332399c170ba5cd7a296c56b7d93b425
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863029"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161995"
 ---
 # <a name="idiasymbolget_lexicalparentid"></a>IDiaSymbol::get_lexicalParentId
 抓取符號的詞法父識別碼。
@@ -42,7 +43,7 @@ HRESULT get_lexicalParentId (
 > 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="remarks"></a>備註
- 識別碼是 DIA SDK 所建立的唯一值，會將所有符號標示為唯一的。
+ 識別碼是 DIA SDK 所建立的唯一值，可將所有符號標示為唯一的。
 
 ## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

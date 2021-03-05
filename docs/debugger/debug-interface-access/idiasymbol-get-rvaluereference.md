@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_RValueReference |Microsoft Docs
+description: 抓取旗標，指定指標類型是否為右值參考。
+title: IDiaSymbol：： get_RValueReference |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a66ec650c1e12e795241ab31cafc50ebaacf20ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3be0c7f5a25459823911c27c39f80f3b6593cbbe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853650"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161855"
 ---
 # <a name="idiasymbolget_rvaluereference"></a>IDiaSymbol::get_RValueReference
 抓取旗標，指定指標類型是否為右值參考。 當 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 設定為指標類型時使用。
