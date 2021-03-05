@@ -1,5 +1,6 @@
 ---
-title: 評估函數函 &apos; &apos; 式超時，需要以不安全的方式中止 |Microsoft Docs
+description: 完整郵件內文：評估函式 ' function ' 超時，且需要以不安全的方式中止。
+title: 評估函數函 &apos; &apos; 式超時，需要以不安全的方式中止 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f6cae3ffb692161deb0b162a6432efe90f12bf3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a540f6f80029039644b22a24a31510042236de2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871646"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147012"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>錯誤：評估函數 &#39;函式&#39; 超時，而且需要以不安全的方式中止
 

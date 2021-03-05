@@ -1,4 +1,5 @@
 ---
+description: 抓取屬性提供者或編譯器的其他元件已放入符號存放區中的來源清單。
 title: IDiaSession::findInjectedSource | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a49af12ed317732271d755477a2f50e6bb424205
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1604bf91f70f2973dcd394f81569b5ee04e9a99
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855218"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147846"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
 抓取屬性提供者或編譯器的其他元件已放入符號存放區中的來源清單。

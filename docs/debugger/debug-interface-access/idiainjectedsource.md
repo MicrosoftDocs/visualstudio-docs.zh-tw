@@ -1,4 +1,5 @@
 ---
+description: 存取儲存在 DIA 資料來源中的插入原始碼。
 title: IDiaInjectedSource | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8282ee5d887ed8ad7c8d19eb0d7891947e32350e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ea02d5312aea0bdf5e38d5a1f54de546860edfd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855771"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148329"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 存取儲存在 DIA 資料來源中的插入原始碼。

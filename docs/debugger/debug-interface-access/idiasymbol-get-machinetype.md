@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_machineType |Microsoft Docs
+description: 抓取目標 CPU 的型別。
+title: IDiaSymbol：： get_machineType |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dd903d49ed036533195f2fcb8dc61eef9176ba42
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6b3bce455e194be35c895f3aa94e171c686e28d7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862980"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147216"
 ---
 # <a name="idiasymbolget_machinetype"></a>IDiaSymbol::get_machineType
 抓取目標 CPU 的型別。

@@ -1,4 +1,5 @@
 ---
+description: IDiaFrameData：： get_functionStart 會抓取旗標，指出區塊是否包含函式的進入點。
 title: IDiaFrameData::get_functionStart | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bae370c5a279edf86bd3fabd9ba710436ae63ed7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 996442dfbd615b7a1d4e73e2191ced36218570b4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855925"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148560"
 ---
 # <a name="idiaframedataget_functionstart"></a>IDiaFrameData::get_functionStart
 抓取指出區塊是否包含函式進入點的旗標。

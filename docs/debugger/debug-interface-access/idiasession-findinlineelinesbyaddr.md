@@ -1,4 +1,5 @@
 ---
+description: IDiaSession：： findInlineeLinesByAddr 會抓取列舉，以允許用戶端逐一查看由指定的父系符號內嵌、直接或間接內嵌之所有函式的行號資訊，並且包含在指定的位址範圍內。
 title: IDiaSession::findInlineeLinesByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bb539e6897cfa058d019b2aff5df598792cf6191
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 917da4855990844fb6bc0c3fc995174b519b129e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855204"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147769"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
 抓取列舉，此列舉可讓用戶端逐一查看由指定的父系符號內嵌、直接或間接內嵌之所有函式的行號資訊，並且包含在指定的位址範圍內。

@@ -1,4 +1,5 @@
 ---
+description: 抓取貢獻位址的位移部分。
 title: IDiaSectionContrib::get_addressOffset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41be98ab0c44cfb41b7ee9c5f55e99b0fae17ae7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3e7aede11e3311e2d68fd25ce03ecd41032ab26
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855491"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148049"
 ---
 # <a name="idiasectioncontribget_addressoffset"></a>IDiaSectionContrib::get_addressOffset
 抓取貢獻位址的位移部分。

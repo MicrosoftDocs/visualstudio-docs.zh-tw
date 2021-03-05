@@ -1,4 +1,5 @@
 ---
+description: 表示原始檔。
 title: IDiaSourceFile | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e0d7ae9a054da64dfc7ee3264734e03959016f53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2695fdb267d328b596673ed08f5dc0be63cfaeaa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863988"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147580"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 表示原始檔。

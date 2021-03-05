@@ -1,4 +1,5 @@
 ---
+description: 抓取指定的符號類型，其中包含或最接近指定的相對虛擬位址 (RVA) 。
 title: IDiaSession::findSymbolByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 720b77852ab0e8eb863fd903f756fb38ebbcf47d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 12e9bfbc1a774f435efc52f5ea1aaf5aff9d4340
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855085"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147629"
 ---
 # <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
 抓取指定的符號類型，其中包含或最接近指定的相對虛擬位址 (RVA) 。

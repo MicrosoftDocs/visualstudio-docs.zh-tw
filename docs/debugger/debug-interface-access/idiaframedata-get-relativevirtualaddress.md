@@ -1,4 +1,5 @@
 ---
+description: 抓取框架的程式碼 (RVA) 的相對虛擬位址。
 title: IDiaFrameData::get_relativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4803b095425d701cf82cf94bf30fb6d2ea3e3d51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a7622526e993e12330d1ef1f6c28485223194d42
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855897"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148483"
 ---
 # <a name="idiaframedataget_relativevirtualaddress"></a>IDiaFrameData::get_relativeVirtualAddress
 抓取框架的程式碼 (RVA) 的相對虛擬位址。

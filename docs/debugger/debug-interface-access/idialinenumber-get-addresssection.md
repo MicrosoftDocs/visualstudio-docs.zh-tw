@@ -1,4 +1,5 @@
 ---
+description: 抓取區塊開始之記憶體位址的區段部分。
 title: IDiaLineNumber::get_addressSection | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd7718c0b7d6cf92ff701c16bfb6e7a309c81829
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8739ad4bb9b3bc3cfb573a3fdde0c3eb9013c592
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855764"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148308"
 ---
 # <a name="idialinenumberget_addresssection"></a>IDiaLineNumber::get_addressSection
 抓取區塊開始之記憶體位址的區段部分。

@@ -1,5 +1,6 @@
 ---
-title: IDiaPropertyStorage：： ReadULONGLONG |Microsoft Docs
+description: 讀取屬性集中的 ULONGLONG 值。
+title: IDiaPropertyStorage：： ReadULONGLONG |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab1459100d773e0f887c09f06d03cdfa8e578e35
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f314152355459ffd2437621efaae002ef284c765
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855540"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148133"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
 讀取 `ULONGLONG` 屬性集中的值。

@@ -1,4 +1,5 @@
 ---
+description: 藉由定址資料來源中包含的各種符號來列舉。
 title: IDiaEnumSymbolsByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 479534179d1dc54c84ebb2c53647272112dea77b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c1c0e20b6b148f41781f9962f961128aa2d342fc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865101"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148595"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 藉由定址資料來源中包含的各種符號來列舉。

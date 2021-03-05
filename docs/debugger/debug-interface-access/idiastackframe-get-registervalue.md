@@ -1,4 +1,5 @@
 ---
+description: 抓取儲存在堆疊框架中的指定暫存器值。
 title: IDiaStackFrame::get_registerValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f11d99a3e3a8a78b6c8152dd94a28f27d800772
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 92ada384d6e231a33dc2b1bbccfafa1e790f1c9c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863939"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147433"
 ---
 # <a name="idiastackframeget_registervalue"></a>IDiaStackFrame::get_registerValue
 抓取儲存在堆疊框架中的指定暫存器值。

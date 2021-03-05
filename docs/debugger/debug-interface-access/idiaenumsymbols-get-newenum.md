@@ -1,4 +1,5 @@
 ---
+description: 抓取符號列舉值的 System.runtime.interopservices.outattribute. System.runtime.interopservices.comtypes. IEnumVARIANT 版本。
 title: IDiaEnumSymbols::get__NewEnum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 36c093143b98f27c6baaac3ae68003f284e86589
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec594958912a4f964f876665e229bf66b77b6968
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865171"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148714"
 ---
 # <a name="idiaenumsymbolsget__newenum"></a>IDiaEnumSymbols::get__NewEnum
 抓取 <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> 此列舉值的版本。

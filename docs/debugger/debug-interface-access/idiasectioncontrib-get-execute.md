@@ -1,4 +1,5 @@
 ---
+description: 抓取旗標，指出區段是否為可執行檔做為程式碼。
 title: IDiaSectionContrib::get_execute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b08eb94b500d67cb9bb9c8effd0d1e14c360933
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 81f057e1b37f0d8ee758171da08c9c40c7808af0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864499"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148014"
 ---
 # <a name="idiasectioncontribget_execute"></a>IDiaSectionContrib::get_execute
 抓取旗標，指出區段是否為可執行檔做為程式碼。

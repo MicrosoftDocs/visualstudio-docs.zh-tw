@@ -1,4 +1,5 @@
 ---
+description: 抓取暫存器的識別碼，該暫存器會在堆疊上保存區域變數的基底指標。
 title: IDiaSymbol::get_localBasePointerRegisterId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cdec2a9d4c1cb089ef813123bab6f84daa26a826
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 779f88d2199819d9854d9678b9704e90782e3e32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862994"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147293"
 ---
 # <a name="idiasymbolget_localbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 抓取暫存器的識別碼，該暫存器會在堆疊上保存區域變數的基底指標。 當 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 設定為時，請使用 `SymTagFunction` 。

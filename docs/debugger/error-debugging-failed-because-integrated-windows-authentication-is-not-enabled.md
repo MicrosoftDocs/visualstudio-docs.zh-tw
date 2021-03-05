@@ -1,5 +1,6 @@
 ---
-title: 因為未啟用整合式 Windows 驗證，所以無法進行偵錯工具 |Microsoft Docs
+description: 因為驗證錯誤，所以無法對要求偵錯之使用者進行驗證。
+title: 因為未啟用整合式 Windows 驗證，所以無法進行偵錯工具 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d1bbdc3e06dee87e7d8930bc5c4e60c6d25ee2f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a3f95359c7963ca7da3d59f81aa471424c23de8a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871737"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147025"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>錯誤：偵錯失敗，因為整合式 Windows 驗證沒有啟用
 因為驗證錯誤，所以無法對要求偵錯之使用者進行驗證。 這種情形可能會在您嘗試逐步執行 Web 應用程式或 XML Web Service 時發生。 造成這個錯誤的原因之一是未啟用整合式 Windows 驗證。 若要啟用該驗證，請遵循「若要啟用整合式 Windows 驗證」內所述的步驟進行。
@@ -33,7 +34,7 @@ ms.locfileid: "99871737"
 
 1. 使用系統管理員帳戶登入 Web 伺服器。
 
-2. 按一下 [ **開始** ]，然後按一下 [ **主控台**]。
+2. 按一下 [ **開始** ]，然後按一下 [ **控制台**]。
 
 3. 在 [控制台] 中按兩下 [系統管理工具]。
 
@@ -67,7 +68,7 @@ ms.locfileid: "99871737"
 
 2. 如果您先前未開啟 [Windows 驗證] 和 [II6 管理相容性]，請遵循下列步驟來執行此動作：
 
-    1. 按一下 [ **開始**]，按一下 [ **主控台** 然後按一下 [ **程式**]。
+    1. 按一下 [ **開始**]，按一下 [ **控制台** ]，然後按一下 [ **程式**]。
 
     2. 按一下 [程式和功能] 下的 [開啟或關閉 Windows 功能]。
 
@@ -116,4 +117,4 @@ ms.locfileid: "99871737"
 ## <a name="see-also"></a>另請參閱
 - [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Microsoft 摘要式驗證](/windows/win32/secauthn/microsoft-digest-authentication)
-- [在 Windows Vista 上執行具有 IIS 7.0 和 Visual Studio 的 Web 應用程式](/previous-versions/aa964620(v=vs.140))
+- [在 Windows Vista 上使用 IIS 7.0 和 Visual Studio 執行 Web 應用程式](/previous-versions/aa964620(v=vs.140))

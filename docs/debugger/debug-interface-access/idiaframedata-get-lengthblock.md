@@ -1,4 +1,5 @@
 ---
+description: 抓取框架所描述之程式碼區塊的長度（以位元組為單位）。
 title: IDiaFrameData::get_lengthBlock | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c92c21ecd278810fd65c9d624564c992225ca20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 824c224fa84318f6bd6fd2c590992cff89839af0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864975"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148567"
 ---
 # <a name="idiaframedataget_lengthblock"></a>IDiaFrameData::get_lengthBlock
 抓取框架所描述之程式碼區塊的長度（以位元組為單位）。

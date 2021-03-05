@@ -1,4 +1,5 @@
 ---
+description: 抓取影像應依據的記憶體位置。
 title: IDiaImageData::get_imageBase | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f62e974b6461d3567c67d36bad963c687c3a291
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82f80f95689a176118d5be6dcc5cfe4fdb903e0f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864919"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148448"
 ---
 # <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
 抓取影像應依據的記憶體位置。

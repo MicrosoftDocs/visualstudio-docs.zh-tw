@@ -1,5 +1,6 @@
 ---
-title: IDiaPropertyStorage：： ReadMultiple |Microsoft Docs
+description: 從目前的屬性集讀取指定的屬性。
+title: IDiaPropertyStorage：： ReadMultiple |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 45eaed0b3306ba0ab1c448d5e61657f0461a9474
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c7d0191d17074ec41b5fc73b3e33ba94b845a96e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855547"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148147"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 從目前的屬性集讀取指定的屬性。

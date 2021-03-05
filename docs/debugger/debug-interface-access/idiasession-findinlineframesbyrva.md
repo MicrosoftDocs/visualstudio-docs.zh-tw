@@ -1,4 +1,5 @@
 ---
+description: IDiaSession：： findInlineFramesByRVA 會抓取列舉，以允許用戶端逐一查看指定相對虛擬位址上的所有內嵌框架 (RVA) 。
 title: IDiaSession::findInlineFramesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae878043729787b80102d4ad6ed3bf2158d3cba0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 749e53971df11c8294117245fcd63eac6da2a078
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855169"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147748"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
 抓取列舉，可讓用戶端在指定的相對虛擬位址 (RVA) 上，逐一查看所有的內嵌框架。

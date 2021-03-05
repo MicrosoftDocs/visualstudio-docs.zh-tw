@@ -1,5 +1,6 @@
 ---
-title: 防火牆無驗證 |Microsoft Docs
+description: 遠端機器上的網際網路連線防火牆並未設定允許遠端偵錯。
+title: 防火牆無驗證 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cdd1b0bc56c0316d3a79cf59f744a7e2b0a2aece
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2bb46b09af4f87ac93fd7001ff1de02a782ae263
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871607"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146986"
 ---
 # <a name="error-firewall-no-authentication"></a>錯誤：非驗證防火牆
 遠端機器上的網際網路連線防火牆並未設定允許遠端偵錯。 針對使用 `No Authentication` 的遠端偵錯，msvsmon.exe 必須加入至例外狀況清單。 可能也必須開啟某些 IPSEC 通訊埠。

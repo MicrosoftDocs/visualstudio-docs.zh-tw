@@ -1,4 +1,5 @@
 ---
+description: 藉由索引或名稱抓取資料表。
 title: IDiaEnumTables::Item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f1ddf3982275429428635754c488993e2058ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dc222672b0ba52f19f153a8e0c9e97137a069607
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865073"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148574"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 藉由索引或名稱抓取資料表。

@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_noInline |Microsoft Docs
+description: 抓取旗標，這個旗標會指定是否使用 noinline) 屬性) ，將函式標示為非內嵌 (。
+title: IDiaSymbol：： get_noInline |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ac08460995cbaec149c5dda9ffc4c1e3e5bfbf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe98c362b4bc1bc6e355e86f2f90fe6b9f2069eb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862959"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147174"
 ---
 # <a name="idiasymbolget_noinline"></a>IDiaSymbol::get_noInline
 抓取旗標，這個旗標會指定是否使用 [noinline](/cpp/cpp/noinline) 屬性) 將函式標示為非內嵌 (。

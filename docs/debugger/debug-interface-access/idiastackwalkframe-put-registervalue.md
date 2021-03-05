@@ -1,4 +1,5 @@
 ---
+description: IDiaStackWalkFrame：:p ut_registerValue 設定註冊的值。
 title: IDiaStackWalkFrame::put_registerValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4a827d05ab091ac9ff436f08a723bdca77eedf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 731993bb9074e6b67d9908c42999d53768abaa5b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863827"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147328"
 ---
 # <a name="idiastackwalkframeput_registervalue"></a>IDiaStackWalkFrame::put_registerValue
 設定註冊的值。

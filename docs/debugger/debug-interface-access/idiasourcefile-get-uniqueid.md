@@ -1,4 +1,5 @@
 ---
+description: 抓取此映射的唯一唯一整數值。
 title: IDiaSourceFile::get_uniqueId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b562690569cfd5013ac44e0f091bc552874d8f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0595e20518db1e977a75384c7aec3d1b8cef7716
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854945"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147573"
 ---
 # <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
 抓取此映射的唯一唯一整數值。

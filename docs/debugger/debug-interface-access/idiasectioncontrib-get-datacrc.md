@@ -1,4 +1,5 @@
 ---
+description: 捕獲區段中資料 (CRC) 的迴圈重複檢查。
 title: IDiaSectionContrib::get_dataCrc | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 234525fe0e68789c3c5dbba100301d21ed76ea79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 60c453e63fc26f96ce9dc00ef4cd841c79761ead
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864506"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148021"
 ---
 # <a name="idiasectioncontribget_datacrc"></a>IDiaSectionContrib::get_dataCrc
 捕獲區段中資料 (CRC) 的迴圈重複檢查。

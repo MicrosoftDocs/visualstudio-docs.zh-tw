@@ -1,4 +1,5 @@
 ---
+description: 依其唯一識別碼抓取符號。
 title: IDiaSession::symbolById | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 423bf9a1c6d816d17bb36be6a4a84820617234ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 979825cd3e62c97334d55676b3bf32bf874f8445
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864079"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147601"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 依其唯一識別碼抓取符號。
@@ -44,7 +45,7 @@ HRESULT symbolById (
 如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-指定的識別碼是唯一的值，由 DIA SDK 在內部使用，讓所有符號都是唯一的。
+指定的識別碼是 DIA SDK 內部使用的唯一值，可讓所有符號成為唯一的。
 
 例如，您可以使用這個方法來取得代表另一個符號類型的符號 (請參閱範例) 。
 

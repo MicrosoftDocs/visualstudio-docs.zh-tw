@@ -1,4 +1,5 @@
 ---
+description: IDiaSession：： findInlineeLinesByRVA 會抓取列舉，以允許用戶端逐一查看由指定的父系符號內嵌、直接或間接內嵌的所有函式的行號資訊，並且包含在指定的相對虛擬位址 (RVA) 內。
 title: IDiaSession::findInlineeLinesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1daae404b3adb1e4a8d2595307ef9bc4eb406399
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9989ffd3c8b4cf03b82cbb0f310840572315031
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855190"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147755"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
 抓取列舉，此列舉可讓用戶端逐一查看由指定的父系符號內嵌、直接或間接內嵌的所有函式的行號資訊，並且包含在指定的相對虛擬位址 (RVA) 內。

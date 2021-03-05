@@ -1,4 +1,5 @@
 ---
+description: 抓取框架的本機變數基底位址。
 title: IDiaStackFrame::get_localsBase | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ebec528c0361ac9eab1149b0988c476f90d302ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2efe2d85f46ef18927be3c8667808ce51c761c90
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854903"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147454"
 ---
 # <a name="idiastackframeget_localsbase"></a>IDiaStackFrame::get_localsBase
 抓取框架的本機變數基底位址。

@@ -1,4 +1,5 @@
 ---
+description: 抓取框架類型。
 title: IDiaStackFrame::get_type | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 435e8fadf1c1928013f52d3e1d7339066990abff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 24b05b9a651072854b3e7db91a8f27d94781f323
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863876"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147426"
 ---
 # <a name="idiastackframeget_type"></a>IDiaStackFrame::get_type
 抓取框架類型。

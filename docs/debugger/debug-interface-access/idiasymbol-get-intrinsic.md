@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_intrinsic |Microsoft Docs
+description: 抓取旗標，這個旗標會指定類別是否為內建類型。
+title: IDiaSymbol：： get_intrinsic |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bd69f0e194ebd9842c23081b4722dd9934e7fbb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bddec7880c69ccc9f4ce0ff20490ef355a71cfbd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854175"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147307"
 ---
 # <a name="idiasymbolget_intrinsic"></a>IDiaSymbol::get_intrinsic
 抓取旗標，這個旗標會指定類別是否為內建類型。

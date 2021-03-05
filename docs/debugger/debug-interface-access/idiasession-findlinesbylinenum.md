@@ -1,4 +1,5 @@
 ---
+description: 判斷原始程式檔中指定的行號位於或附近的編譯單位行號。
 title: IDiaSession::findLinesByLinenum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e2486d3cbbecad1dee6b171f105d155d95a4e231
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 924b3aada49fca11056a1cf7f1b577bab505b3ce
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855127"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147734"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
 判斷原始程式檔中指定的行號位於或附近的編譯單位行號。

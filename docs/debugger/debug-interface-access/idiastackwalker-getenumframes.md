@@ -1,5 +1,6 @@
 ---
-title: IDiaStackWalker：： getEnumFrames |Microsoft Docs
+description: 捕獲 x86 平臺的堆疊框架列舉值。
+title: IDiaStackWalker：： getEnumFrames |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d4a30b9f4b37274872141c6e9ac18a9aab9206
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f4dc2230bdbbdb626bece7ecec39f2c2c2578ab3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863848"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147349"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
 捕獲 x86 平臺的堆疊框架列舉值。

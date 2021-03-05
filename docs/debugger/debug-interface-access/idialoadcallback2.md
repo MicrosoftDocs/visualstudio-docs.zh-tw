@@ -1,4 +1,5 @@
 ---
+description: 從 DIA 符號尋找程式接收回呼，以允許在尋找進程上加諸限制。
 title: IDiaLoadCallback2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d58a109c3eb63bd3a1f59fb0009ba01809eca1a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9103157791f5ce67bb14bb05e708f7ffd87ee435
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855624"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148196"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 從 DIA 符號尋找程式接收回呼，以允許在尋找進程上加諸限制。

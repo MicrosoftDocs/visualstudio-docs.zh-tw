@@ -1,4 +1,5 @@
 ---
+description: 依位址來抓取之前的符號。
 title: IDiaEnumSymbolsByAddr::Prev | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 352e9b1892285d8cc33c86c595462da84273eac1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 721eaf80e0bd7121d9e8286315b63422edbb745d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865129"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148637"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 依位址來抓取之前的符號。

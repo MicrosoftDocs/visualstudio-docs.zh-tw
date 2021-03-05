@@ -1,5 +1,6 @@
 ---
-title: IDiaEnumLineNumbers：： Skip |Microsoft Docs
+description: 略過列舉序列中指定數目的行號。
+title: IDiaEnumLineNumbers：： Skip |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d171b36cb45bbe51ef9920217a17cf67edc343
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 051d55b901512168a8bca5cdaa71c487f791c8a8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856541"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148917"
 ---
 # <a name="idiaenumlinenumbersskip"></a>IDiaEnumLineNumbers::Skip
 略過列舉序列中指定數目的行號。

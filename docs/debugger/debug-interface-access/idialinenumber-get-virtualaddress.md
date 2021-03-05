@@ -1,4 +1,5 @@
 ---
+description: 抓取區塊 (VA) 的虛擬位址。
 title: IDiaLineNumber::get_virtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e484186471cce6f286f291d992befe4a9fb3b2b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2882d24dec7f7f0cb5afcd93cf609680dc3a3a3d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855673"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148273"
 ---
 # <a name="idialinenumberget_virtualaddress"></a>IDiaLineNumber::get_virtualAddress
 抓取區塊 (VA) 的虛擬位址。

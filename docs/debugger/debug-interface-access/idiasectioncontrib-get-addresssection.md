@@ -1,4 +1,5 @@
 ---
+description: 抓取參與的位址部分。
 title: IDiaSectionContrib::get_addressSection | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8ea4eb1839981e37d5a85b946eb52e5945f2229
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a94902128750fe2858a6493b909ef88e1cc429dc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864527"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148035"
 ---
 # <a name="idiasectioncontribget_addresssection"></a>IDiaSectionContrib::get_addressSection
 抓取參與的位址部分。

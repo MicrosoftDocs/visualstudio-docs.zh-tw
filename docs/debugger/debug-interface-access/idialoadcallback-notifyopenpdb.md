@@ -1,4 +1,5 @@
 ---
+description: 在開啟候選 .pdb 檔案時呼叫。
 title: IDiaLoadCallback::NotifyOpenPDB | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e89d8a96ff1d615c75ae45b6846d7c3aedbf95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab1f72c6f22f70bb94262c57327ab91f96a02183
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855638"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148294"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
 在開啟候選 .pdb 檔案時呼叫。

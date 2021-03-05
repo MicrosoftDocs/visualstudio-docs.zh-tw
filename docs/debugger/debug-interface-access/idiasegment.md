@@ -1,4 +1,5 @@
 ---
+description: 將區段編號的資料對應至位址空間的區段。
 title: IDiaSegment | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7d30fdf5c669f572c66a975494490ed7c4e954
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4823983519eef461e388952d5037f529f9fcdf2f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855260"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147874"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 將區段編號的資料對應至位址空間的區段。
@@ -44,7 +45,7 @@ IDiaSegment : IUnknown
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|抓取區段開頭 (VA) 的虛擬位址。|
 
 ## <a name="remarks"></a>備註
-因為 DIA SDK 已經從相對虛擬位址的區段位移執行翻譯，大部分的應用程式都不會利用區段對應中的資訊。
+因為 DIA SDK 已從相對虛擬位址的區段位移執行翻譯，大部分的應用程式不會利用區段對應中的資訊。
 
 ## <a name="notes-for-callers"></a>呼叫者注意事項
 藉由呼叫 [IDiaEnumSegments：： Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) 或 [IDiaEnumSegments：： Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) 方法來取得這個介面。 如需詳細資訊，請參閱範例。

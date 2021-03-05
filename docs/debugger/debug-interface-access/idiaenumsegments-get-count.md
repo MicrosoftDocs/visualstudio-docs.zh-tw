@@ -1,4 +1,5 @@
 ---
+description: 捕獲區段的數目。
 title: IDiaEnumSegments::get_Count | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c1ac1f9f955099d3c99da07784aa20054e80f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c2c415653678bece0dd05ed50c6971831502bd5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856387"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148861"
 ---
 # <a name="idiaenumsegmentsget_count"></a>IDiaEnumSegments::get_Count
 捕獲區段的數目。

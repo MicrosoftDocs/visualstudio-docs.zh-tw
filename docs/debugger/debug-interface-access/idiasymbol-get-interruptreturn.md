@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_interruptReturn |Microsoft Docs
+description: 抓取旗標，這個旗標會指定函式是否包含插斷指令的傳回 (例如，X86 元件碼 iret ') 。
+title: IDiaSymbol：： get_interruptReturn |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f0981f103d9914e9d8d13f02449187fdfef0ff61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91e88b4348e5bc778b71c0737a57effcf70ecac6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863267"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147321"
 ---
 # <a name="idiasymbolget_interruptreturn"></a>IDiaSymbol::get_interruptReturn
 抓取旗標，這個旗標會指定函式是否包含插斷指令的傳回 (例如 X86 元件程式碼 `iret`) 。

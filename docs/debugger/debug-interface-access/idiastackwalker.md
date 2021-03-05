@@ -1,4 +1,5 @@
 ---
+description: 提供方法，以使用 .pdb 檔案中的資訊來進行堆疊逐步解說。
 title: IDiaStackWalker | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ec4267a0f5de93b32a4a56a61742a9148f2d9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a86609f43bb6e825dac1b595b5e32951c3313a34
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863855"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147335"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 提供方法，以使用 .pdb 檔案中的資訊來進行堆疊逐步解說。

@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_noStackOrdering |Microsoft Docs
+description: 此函式會抓取旗標，這個旗標會指出是否無法在堆疊緩衝區檢查 ([/gs (緩衝區安全性檢查) ](/cpp/build/reference/gs-buffer-security-check) 編譯器選項) 中完成堆疊排序。
+title: IDiaSymbol：： get_noStackOrdering |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e98ddb508ef1e00b1192df2d6015ba3ca5632cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fbfcb8c4404179431c4c480ee036210cb2d0be77
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862910"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147156"
 ---
 # <a name="idiasymbolget_nostackordering"></a>IDiaSymbol::get_noStackOrdering
 此函式會抓取旗標，這個旗標會指出是否無法在堆疊緩衝區檢查 ([/gs (緩衝區安全性檢查) ](/cpp/build/reference/gs-buffer-security-check) 編譯器選項) 中完成堆疊排序。

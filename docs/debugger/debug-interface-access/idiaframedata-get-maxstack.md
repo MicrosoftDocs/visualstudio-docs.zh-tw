@@ -1,4 +1,5 @@
 ---
+description: IDiaFrameData：： get_maxStack 抓取框架中堆疊上推送的位元組數目上限。
 title: IDiaFrameData::get_maxStack | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a0a4cec6b81ecf3944523d4023c61c353beb90d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e9918cf908256d886547c57dae84da27b567cbd8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855904"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148552"
 ---
 # <a name="idiaframedataget_maxstack"></a>IDiaFrameData::get_maxStack
 抓取框架中堆疊上推送的位元組數目上限。

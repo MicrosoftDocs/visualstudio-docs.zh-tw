@@ -1,5 +1,6 @@
 ---
-title: '&apos; &apos; 評估函數函式時， &apos; 目標進程以程式碼結束 &apos;Microsoft Docs'
+description: 完整郵件內文：評估函式 ' function ' 時，目標進程以程式碼 ' code ' 結束。
+title: '&apos; &apos; 評估函數函式時， &apos; 目標進程以程式碼結束 &apos;Microsoft 檔'
 ms.date: 4/06/2018
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 07891e5bcbcab35a4ec5652676a014b87dd32d43
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ba1e2e258a12c6548317b272365db67503dc3d16
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871633"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146999"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>錯誤：評估函數 &#39;函數時，目標進程以程式碼 &#39;程式碼&#39; 結束&#39;
 

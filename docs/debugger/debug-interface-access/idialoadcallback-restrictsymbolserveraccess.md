@@ -1,4 +1,5 @@
 ---
+description: 決定是否允許符號伺服器存取符號，以解析符號。
 title: IDiaLoadCallback::RestrictSymbolServerAccess | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 718a27c4e72db4bed37ed189a4bde78ec4ec0830
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dd2b263fbda81251ec845997976c5240100e339c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855652"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148287"
 ---
 # <a name="idialoadcallbackrestrictsymbolserveraccess"></a>IDiaLoadCallback::RestrictSymbolServerAccess
 決定是否允許符號伺服器存取符號，以解析符號。

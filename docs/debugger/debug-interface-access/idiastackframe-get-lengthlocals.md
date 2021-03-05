@@ -1,4 +1,5 @@
 ---
+description: IDiaStackFrame：： get_lengthLocals 會抓取堆疊上推入的本機變數位元組數目。
 title: IDiaStackFrame::get_lengthLocals | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a78811b39243c31385201ee327fbe7b5c5416b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21bca9962d73bf02deed763fb1c0de49eef5efe8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854910"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147482"
 ---
 # <a name="idiastackframeget_lengthlocals"></a>IDiaStackFrame::get_lengthLocals
 抓取推播于堆疊上的本機變數位元組數目。

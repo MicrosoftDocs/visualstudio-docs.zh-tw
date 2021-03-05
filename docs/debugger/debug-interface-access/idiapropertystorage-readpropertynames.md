@@ -1,5 +1,6 @@
 ---
-title: IDiaPropertyStorage：： ReadPropertyNames |Microsoft Docs
+description: 針對指定的屬性識別碼，抓取對應的字串名稱。
+title: IDiaPropertyStorage：： ReadPropertyNames |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e7216c5878a13b4312d737ae266004d757c24db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbb6d511a6be9ed408b076162a3d00d22705075a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864569"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148140"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
 針對指定的屬性識別碼，抓取對應的字串名稱。

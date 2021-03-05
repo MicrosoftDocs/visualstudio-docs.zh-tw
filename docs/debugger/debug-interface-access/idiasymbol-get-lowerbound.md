@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_lowerBound |Microsoft Docs
+description: 捕獲 FORTRAN 陣列維度的下限。
+title: IDiaSymbol：： get_lowerBound |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c3689eaa25e49780ee47421451592005b1c35a8d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b81c853c69aae755fa17c5d37f0e92c94d4871d2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862987"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147286"
 ---
 # <a name="idiasymbolget_lowerbound"></a>IDiaSymbol::get_lowerBound
 捕獲 FORTRAN 陣列維度的下限。

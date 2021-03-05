@@ -1,5 +1,6 @@
 ---
-title: IDiaEnumSymbols：： Clone |Microsoft Docs
+description: 建立包含與目前符號列舉值相同列舉狀態的列舉值。
+title: IDiaEnumSymbols：： Clone |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 810f6f153fa09409ff8356505f297c185319ccbd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3c6af6aa1aa912c4a1f568bb11318803deb87939
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865178"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148721"
 ---
 # <a name="idiaenumsymbolsclone"></a>IDiaEnumSymbols::Clone
 建立包含與目前列舉值相同列舉狀態的列舉值。

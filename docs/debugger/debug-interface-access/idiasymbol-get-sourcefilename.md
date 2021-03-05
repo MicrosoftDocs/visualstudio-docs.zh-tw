@@ -1,4 +1,5 @@
 ---
+description: 抓取編譯單位原始程式檔的檔案名。
 title: IDiaSymbol::get_sourceFileName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e847fccc35c38b6a592d8338afd2b802b43a87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52a105891388953e26c38ab49aa950d5cd46fedc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862700"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147154"
 ---
 # <a name="idiasymbolget_sourcefilename"></a>IDiaSymbol::get_sourceFileName
 抓取編譯單位原始程式檔的檔案名。
