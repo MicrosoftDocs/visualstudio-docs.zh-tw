@@ -1,5 +1,6 @@
 ---
-title: IDebugTypeFieldBuilder2 |Microsoft Docs
+description: 擴充 IDebugTypeFieldBuilder，以便能夠建立陣列類型。
+title: IDebugTypeFieldBuilder2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321004d1d0ef37597d477cff71435091a3123ccf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e73642024cb379e804559ba8dd55eb44722cf580
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965638"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223000"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
 擴充 **IDebugTypeFieldBuilder** ，以便能夠建立陣列類型。

@@ -1,4 +1,5 @@
 ---
+description: 終結 span 物件，並釋放其資源。
 title: span::~span 解構函式 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 260d4210ccb00739b3f1bcdc7d4b6be831cdecb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0a0bf8a817a6d14cfa344578448f71e03b141a7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960087"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223845"
 ---
 # <a name="spanspan-destructor"></a>span::~span 解構函式
 

@@ -1,4 +1,5 @@
 ---
+description: '[呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的分析資訊。'
 title: 呼叫端-被呼叫端檢視 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a994f5ff564860ac753787eebd293a8e2fa9c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 375c0f366fb32fcbe8187c2c4b5d1d3d632f7260
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889729"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223702"
 ---
 # <a name="callercallee-view"></a>呼叫端/被呼叫端檢視
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的分析資訊。 [呼叫端/被呼叫端] 檢視包含三個方格：

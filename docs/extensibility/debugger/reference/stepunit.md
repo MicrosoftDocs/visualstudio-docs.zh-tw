@@ -1,5 +1,6 @@
 ---
-title: STEPUNIT |Microsoft Docs
+description: 指定逐步執行的步驟單位。
+title: STEPUNIT |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f42c6af308770132343e18b95a9f839717f6d401
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f628039cdd9715d9463b0def9912da8f78ef6b84
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840089"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221882"
 ---
 # <a name="stepunit"></a>STEPUNIT
 指定逐步執行的步驟單位。

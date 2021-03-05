@@ -1,5 +1,6 @@
 ---
-title: DA0022-高比率的 Gen 2 垃圾收集 |Microsoft Docs
+description: 分析期間所收集的系統效能資料表示，相較於第 0 代和第 1 代的記憶體回收，大部分 .NET Framework 物件的記憶體是在記憶體回收的第 2 代回收。
+title: DA0022-高比率的 Gen 2 垃圾收集 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 61fb953b1eae3ecfb0aa9c87e8b10a25099cb12a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c0949dcf7bf55d079037ffa9cb160edeb35294d7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967003"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223666"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022：高比率的 Gen 2 記憶體回收
 

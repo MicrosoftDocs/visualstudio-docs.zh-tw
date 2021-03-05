@@ -1,5 +1,6 @@
 ---
-title: PDB_TYPE |Microsoft Docs
+description: 此結構會指定取自 PDB 符號之欄位類型的相關資訊。
+title: PDB_TYPE |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df6a41801f4cce272d896776745ac0cc507d0e38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced96c1241c64abc764a052046e5ecab1a986bdc
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890015"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222129"
 ---
 # <a name="pdb_type"></a>PDB_TYPE
 

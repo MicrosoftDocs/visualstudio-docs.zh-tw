@@ -1,5 +1,6 @@
 ---
-title: SccPopulateList 函式 |Microsoft Docs
+description: 此函式會更新特定原始檔控制命令的檔案清單，並在所有指定的檔案上提供原始檔控制狀態。
+title: SccPopulateList 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2deb30b606de686269e095fffe369a7d56adb453
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 24ed033d05711e4c6815945796595897e926ba74
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836926"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220543"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函式
 此函式會更新特定原始檔控制命令的檔案清單，並在所有指定的檔案上提供原始檔控制狀態。

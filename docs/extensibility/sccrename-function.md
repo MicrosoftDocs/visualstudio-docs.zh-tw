@@ -1,5 +1,6 @@
 ---
-title: SccRename 函式 |Microsoft Docs
+description: 此函數會重新命名原始檔控制系統中的檔案。
+title: SccRename 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b4579644b04002ae9da3361ba35c63472eef637
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dcfb68518f42e969b7c9d52acfb37723e9774f97
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836744"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221336"
 ---
 # <a name="sccrename-function"></a>SccRename 函式
 此函數會重新命名原始檔控制系統中的檔案。

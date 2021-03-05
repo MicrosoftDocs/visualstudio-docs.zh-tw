@@ -1,5 +1,6 @@
 ---
-title: UNMANAGED_ADDRESS_THIS_RELATIVE |Microsoft Docs
+description: 此結構代表相對於 this 指標的位址， (我在 Visual Basic 中的) 。
+title: UNMANAGED_ADDRESS_THIS_RELATIVE |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +16,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c19109215a9e8824f1648860c39ccb33836ca93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc3e72a536af25c3c62d953a0e5cfb75b5200c69
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879991"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223363"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
-此結構代表相對於 `this` Visual Basic) 中之指標 (的位址 `Me` 。
+此結構代表相對於 `this` `Me` Visual Basic) 中之指標 (的位址。
 
 ## <a name="syntax"></a>語法
 

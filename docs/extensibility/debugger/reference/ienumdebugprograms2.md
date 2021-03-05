@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugPrograms2 |Microsoft Docs
+description: 這個介面會列舉在目前的 debug 會話中執行的程式。
+title: IEnumDebugPrograms2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04566b4a8dae7f25f799d08780c93936009adef8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b0a593d6168b7d34f97802a0b3b1b0a5c141821
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890743"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224222"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 這個介面會列舉在目前的 debug 會話中執行的程式。
@@ -46,7 +47,7 @@ IEnumDebugPrograms2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprograms2-getcount.md)|取得列舉值中的程式數目。|
 
 ## <a name="remarks"></a>備註
- Visual Studio 使用此介面來：
+ Visual Studio 會使用此介面來：
 
 - 藉由呼叫 [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) ，然後在每個程式) 上呼叫 [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) ，來填入 [**模組**] 視窗 (。
 

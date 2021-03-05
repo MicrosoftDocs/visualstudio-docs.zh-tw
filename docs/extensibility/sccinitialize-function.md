@@ -1,5 +1,6 @@
 ---
-title: SccInitialize 函式 |Microsoft Docs
+description: 此函式會初始化原始檔控制外掛程式，並提供整合式開發環境 (IDE) 的功能和限制。
+title: SccInitialize 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9fb944cb672249ecb823f48048d12c1b61d9e99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 986e3624b1716c782102f0f214283a7fa7020a08
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846357"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220582"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 函式
 此函式會初始化原始檔控制外掛程式，並提供整合式開發環境 (IDE) 的功能和限制。

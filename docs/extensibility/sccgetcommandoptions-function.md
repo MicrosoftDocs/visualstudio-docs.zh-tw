@@ -1,5 +1,6 @@
 ---
-title: SccGetCommandOptions 函式 |Microsoft Docs
+description: 此函數會提示使用者提供指定命令的 advanced 選項。
+title: SccGetCommandOptions 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 400b778cf5e26b0cabad0fb19c548b2faa0a803f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965196"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220803"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 函式
 此函數會提示使用者提供指定命令的 advanced 選項。

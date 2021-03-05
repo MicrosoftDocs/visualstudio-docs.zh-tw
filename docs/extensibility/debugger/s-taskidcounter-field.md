@@ -1,5 +1,6 @@
 ---
-title: s_taskIdCounter 欄位 |Microsoft Docs
+description: 適用于 System.object 的下一個可用識別碼。 Task 物件。
+title: s_taskIdCounter 欄位 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7ee7c76e02d08f0893fedee2530a74ef235e66a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f57a69061912297bb1c09b02828d3cbba75a808
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961023"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223351"
 ---
 # <a name="s_taskidcounter-field"></a>s_taskIdCounter 欄位
 物件的下一個可用識別碼 <xref:System.Threading.Tasks.Task> 。
@@ -24,7 +25,7 @@ ms.locfileid: "99961023"
 
  **元件：** mscorlib.dll) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在一般中繼語言 (的 CIL) 中提供下列語法。
 
 ## <a name="syntax"></a>語法
 

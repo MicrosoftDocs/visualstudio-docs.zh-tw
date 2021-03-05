@@ -1,5 +1,6 @@
 ---
-title: SccBackgroundGet 函式 |Microsoft Docs
+description: 此函式會從原始檔控制每個指定的檔案，而不是使用者互動。
+title: SccBackgroundGet 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d081389124b8703958f82cb97fc877f9f812290
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4df0866458f04081c82796767808194b292866a1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952118"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220920"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 函式
 此函式會從原始檔控制每個指定的檔案，而不是使用者互動。

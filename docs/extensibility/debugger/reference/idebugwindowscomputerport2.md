@@ -1,5 +1,6 @@
 ---
-title: IDebugWindowsComputerPort2 |Microsoft Docs
+description: 允許查詢目的電腦的相關資訊。
+title: IDebugWindowsComputerPort2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90e63e8ea7b00ff7d342ef6b1a0e624779e13d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9c7e940c2284b5b39097226f9a5b0c3b34a0d18
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965599"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222948"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
 允許查詢目的電腦的相關資訊。

@@ -1,5 +1,6 @@
 ---
-title: PENDING_BP_STATE_INFO |Microsoft Docs
+description: 包含已準備系結至程式碼位置之中斷點狀態的相關資訊。
+title: PENDING_BP_STATE_INFO |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7c1e2b8b537607f6dc57d807d276c5b72ccb144
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: edd4bbdde1c241d90329343be1fd5570129c675a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968563"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223923"
 ---
 # <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
 包含已準備系結至程式碼位置之中斷點狀態的相關資訊。

@@ -1,5 +1,6 @@
 ---
-title: SccUninitialize 函式 |Microsoft Docs
+description: 此函式會清除先前呼叫 SccInitialize 所建立的任何配置或開啟的連接，以準備關閉原始檔控制外掛程式。
+title: SccUninitialize 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7de3572b17bf47859a64451149a269988c91e5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 187451aba5151c95d8947bd4f5a1419894cc65e7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836679"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221323"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize 函式
 此函式會清除先前呼叫 [SccInitialize](../extensibility/sccinitialize-function.md) 所建立的任何配置或開啟的連接，以準備關閉原始檔控制外掛程式。

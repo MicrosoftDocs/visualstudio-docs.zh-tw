@@ -1,5 +1,6 @@
 ---
-title: SccHistory 函式 |Microsoft Docs
+description: 此函數會顯示指定檔案的歷程記錄。
+title: SccHistory 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61ca9071373cd25a4a8bd0d367a97654dfdefb3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b7e1cd6fa6d5b9b3a5ab42cd1b4cafec215deca
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893564"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220569"
 ---
 # <a name="scchistory-function"></a>SccHistory 函式
 此函數會顯示指定檔案的歷程記錄。

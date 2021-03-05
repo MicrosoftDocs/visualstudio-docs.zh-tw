@@ -1,5 +1,6 @@
 ---
-title: IEEVisualizerDataProvider：： CanSetObjectForVisualizer |Microsoft Docs
+description: 這個方法會判斷視覺化檢視是否可以讓它代表更新的資料物件。
+title: IEEVisualizerDataProvider：： CanSetObjectForVisualizer |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b6f3b3ebf41ebd3fd4c04b0cb7451f57a41fa73
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0a7f69ea57e14e7a1960712631f03a3becc8b80
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890990"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222935"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 這個方法會判斷視覺化檢視是否可以讓它代表更新的資料物件。

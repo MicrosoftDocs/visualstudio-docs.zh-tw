@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugFields：： Clone |Microsoft Docs
+description: 這個方法會傳回目前欄位列舉的複本，做為個別的物件。
+title: IEnumDebugFields：： Clone |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b2a9cc66e0e3b56d27c71147bd1b77ee3e559b6b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 965bc201646c7e068c58f9238dccba9a9e587d26
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896945"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224898"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 這個方法會傳回目前列舉的複本，做為個別的物件。

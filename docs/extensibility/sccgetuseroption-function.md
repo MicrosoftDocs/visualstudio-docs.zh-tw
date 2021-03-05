@@ -1,5 +1,6 @@
 ---
-title: SccGetUserOption 函式 |Microsoft Docs
+description: 此函式會抓取各種使用者專屬的選項。
+title: SccGetUserOption 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e4bc3e4bf6acef8ff8de1cdcecb2596dcf6d86e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c137630e4a29fc534e9bfced16cffe862e07a046
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844550"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220621"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函式
 此函式會抓取各種使用者專屬的選項。
@@ -57,7 +58,7 @@ SCCRTN SccGetUserOption(
 ## <a name="remarks"></a>備註
  此命令支援下列選項：
 
-|使用者選項|Description|
+|使用者選項|描述|
 |-----------------|-----------------|
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|判斷使用者是否想要簽出本機版本的檔案。 `lpVal` 指派 `SCC_USEROPT_COLV_YES` (使用者想要簽出本機檔案) 或 `SCC_USEROPT_COLV_NO` 。|
 

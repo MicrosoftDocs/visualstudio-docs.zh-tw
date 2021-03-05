@@ -1,4 +1,5 @@
 ---
+description: 將訊息寫入並行視覺化檢視追蹤檔。
 title: marker_series::write_message 方法 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5610cc623476fa395fae7bf68c2ffa127c96e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71a7e1783e470ee5ca1b7f1f18cd3d06cf1b5f49
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927895"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223871"
 ---
 # <a name="marker_serieswrite_message-method"></a>marker_series::write_message 方法
 將訊息寫入並行視覺化檢視追蹤檔。

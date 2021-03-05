@@ -1,5 +1,6 @@
 ---
-title: SccPopulateDirList 函式 |Microsoft Docs
+description: 此函式會指定要檢查的目錄清單，以判斷哪些目錄和 (選擇性地) 檔案儲存在原始檔控制中。
+title: SccPopulateDirList 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eac3973bf28a14340b720a51fc291b914822f3d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 991803511e48e72012c868eaa4b0afbd889b2380
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836913"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221505"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 函式
 此函式會指定要檢查的目錄清單，以判斷哪些目錄和 (選擇性地) 檔案儲存在原始檔控制中。

@@ -1,5 +1,6 @@
 ---
-title: SccAdd 函式 |Microsoft Docs
+description: 此函式會將新檔案新增至原始檔控制系統。
+title: SccAdd 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7fc3a2a6fbf362d58ddd1bfe25c905354d1ebdb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f654429f8c3faefe05a6410a3c732a6a4b1d083b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926855"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221719"
 ---
 # <a name="sccadd-function"></a>SccAdd 函式
 此函式會將新檔案新增至原始檔控制系統。

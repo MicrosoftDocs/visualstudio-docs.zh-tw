@@ -1,4 +1,5 @@
 ---
+description: Visual Studio 整合式開發環境是支援 Python (和其他語言) 且創作功能豐富的啟動控制板，可供您編輯、偵錯及測試程式碼，然後發行應用程式。
 title: 適用於 Python 開發人員的 Visual Studio 概觀
 titleSuffix: ''
 ms.date: 03/13/2019
@@ -11,22 +12,22 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d90ee69b8ee7f264a48d6ae01f77ea65e5d1c1b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e4a0c227f8c833febf20ed4e8dba82b814e3223
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908788"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223780"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>歡迎使用 Visual Studio IDE | Python
 
 Visual Studio 整合式開發環境是支援 Python (和其他語言) 且創作功能豐富的啟動控制板，可供您編輯、偵錯及測試程式碼，然後發行應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有程式碼完成工具、互動式 REPL 環境及其他功能，讓軟體開發程序變得更為容易。
 
-[![使用 Python 專案 Visual Studio](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![具有 Python 專案的 Visual Studio](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 此圖顯示 Visual Studio 有一個開啟的 Python 專案，以及數個您可能會用到的重要工具視窗：
 
-- [**方案總管**](../ide/solutions-and-projects-in-visual-studio.md) (右上方) 可讓您查看、流覽和管理程式碼檔案。 **方案總管** 可以將檔案分組到 [方案和專案](../get-started/tutorial-projects-solutions.md)中，以協助組織程式碼。
+- [**Solution Explorer**](../ide/solutions-and-projects-in-visual-studio.md) (右上方) 可讓您查看、流覽和管理程式碼檔案。 **方案 Explorer** 可將檔案分組到 [方案和專案](../get-started/tutorial-projects-solutions.md)中，以協助組織程式碼。
   - 方案總管 旁的是 [Python 環境](managing-python-environments-in-visual-studio.md)，您可以在此環境中管理安裝在電腦上的其他 Python 解譯器。
 
   ::: moniker range=">=vs-2019"
@@ -44,7 +45,7 @@ Visual Studio 整合式開發環境是支援 Python (和其他語言) 且創作�
 
 Visual Studio 適用於 Windows 及 Mac；但 Python 僅支援適用於 Windows 的 Visual Studio。
 
-Windows 上有三個版本的 Visual Studio：「社區」、「專業」和「企業」。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
+Windows 上有三種版本的 Visual Studio：「社區」、「專業」和「企業」。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
 
 ## <a name="popular-productivity-features"></a>熱門的生產力功能
 
@@ -106,7 +107,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [偵錯](debugging-python-in-visual-studio.md)
 
-    Visual Studio 為 Python 提供完整的偵錯工具體驗，包括附加至執行中進程、在 **監看** 式和即時 **運算視窗中** 評估運算式、檢查區域變數、中斷點、逐步執行/跳過/跳過語句、 **設定下一個語句** 等。 您也可針對在 Linux 電腦上執行的遠端 Python 程式碼進行偵錯。
+    Visual Studio 提供完整的 Python 偵錯工具體驗，包括附加至執行中進程、在 **監看****式和即時** 運算視窗中評估運算式、檢查區域變數、中斷點、逐步執行/跳過/跳過語句、**設定下一個語句** 等。 您也可針對在 Linux 電腦上執行的遠端 Python 程式碼進行偵錯。
 
     ![在 Visual Studio 中針對 Python 進行偵錯](media/remote-debugging-breakpoint-hit.png)
 

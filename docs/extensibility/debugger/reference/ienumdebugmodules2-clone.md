@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugModules2：： Clone |Microsoft Docs
+description: 傳回目前模組列舉的複本，做為個別的物件。
+title: IEnumDebugModules2：： Clone |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f008cef55d45257ddd18dec69d6e72be8095ed57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 699afcaabdf88ca8b2b6ea60b6ad06dfcb12e3bd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932824"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224885"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 傳回目前列舉的複本作為個別的物件。

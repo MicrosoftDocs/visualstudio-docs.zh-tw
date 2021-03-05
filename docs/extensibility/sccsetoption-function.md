@@ -1,5 +1,6 @@
 ---
-title: SccSetOption 函式 |Microsoft Docs
+description: 此函式會設定控制原始檔控制外掛程式行為的選項。
+title: SccSetOption 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e25647eb8d2e5796665f072af6df43b2f585c7b0
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836692"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221375"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函式
 此函式會設定控制原始檔控制外掛程式行為的選項。
@@ -59,7 +60,7 @@ SCCRTN SccSetOption(
 
  選項及其值的摘要：
 
-|`nOption`|`dwValue`|Description|
+|`nOption`|`dwValue`|描述|
 |---------------|---------------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|啟用/停用背景事件佇列。|
 |`SCC_OPT_USERDATA`|任意值|指定要傳遞至 [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 回呼函數的使用者值。|

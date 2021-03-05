@@ -1,4 +1,5 @@
 ---
+description: 指定範本所需的最低 .NET Framework 版本。
 title: RequiredFrameworkVersion 項目 (Visual Studio 範本)
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -14,19 +15,19 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 211393ea65f7ca31f80134c48863b0092478b3f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3700735f987da7320d569b2cee020f0d8a072bdc
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836978"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221792"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a> (Visual Studio 範本的 RequiredFrameworkVersion 元素) 
 
-指定範本所需之 .NET Framework 的最小版本。 這會導致 [**新增專案**] 對話方塊中顯示 [**目標 Framework 版本**] 下拉式清單。 `RequiredFrameworkVersion`元素也會決定下拉式清單中可用的最小值。
+指定範本所需的最低 .NET Framework 版本。 這會導致 [**新增專案**] 對話方塊中顯示 [**目標 Framework 版本**] 下拉式清單。 `RequiredFrameworkVersion`元素也會決定下拉式清單中可用的最小值。
 
 > [!IMPORTANT]
-> 從 Visual Studio 2017 15.6 版開始，[**目標 Framework 版本**] 下拉式清單不再是 [**新增專案**] 對話方塊的 [**範本**] 區段中顯示之範本的篩選。 相反地，下拉式清單會作為所選範本的架構選擇器。
+> 從 Visual Studio 2017 版本15.6 開始，[**目標 Framework 版本**] 下拉式清單不再是 [**新增專案**] 對話方塊的 [**範本**] 區段中顯示之範本的篩選。 相反地，下拉式清單會作為所選範本的架構選擇器。
 
  \<VSTemplate> \<TemplateData>
  \<RequiredFrameworkVersion>
@@ -55,11 +56,11 @@ ms.locfileid: "99836978"
 ## <a name="text-value"></a>文字值
  需要文字值。
 
- 文字必須是範本所需之 .NET Framework 的最小版本號碼。
+ 此文字必須是範本所需之 .NET Framework 的最低版本號碼。
 
 ## <a name="remarks"></a>備註
 
- 是選擇性元素。 只有在範本支援特定的最小版本 (和更新版本（如果 .NET Framework 的任何) ）時，才使用這個元素。 如果您指定專案 `RequiredFrameworkVersion` ，而您的範本不支援特定的最小 .NET Framework 版本，則會顯示 [ **目標 Framework 版本** ] 下拉式清單（不適用）。
+ 是選擇性元素。 只有在範本支援特定的最小版本 (和更新版本（如果 .NET Framework 的任何) ）時，才使用這個元素。 如果您指定專案 `RequiredFrameworkVersion` ，而您的範本不支援特定的最小 .Net Framework 版本，則當 [目標 Framework 版本] 下拉式清單不適用時，會顯示 [ **目標 Framework 版本** ] 下拉式清單。
 
 ## <a name="example"></a>範例
 
@@ -83,7 +84,7 @@ ms.locfileid: "99836978"
 </VSTemplate>
 ```
 
-在此範例中，範本所需之 .NET Framework 的最小版本（以表示 `RequiredFrameworkVersion` ）是3.0。 使用此範本所建立的專案可將目標設定為從3.0 開始的 .NET Framework 版本。
+在此範例中，範本所需的 .NET Framework 最低版本（以表示） `RequiredFrameworkVersion` 是3.0。 使用此範本建立的專案可將目標設為 .NET Framework 版本，從3.0 開始。
 
 ## <a name="see-also"></a>另請參閱
 

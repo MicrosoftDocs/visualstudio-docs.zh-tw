@@ -1,5 +1,6 @@
 ---
-title: DA0506-配置給所分析進程的最大私用位元組 |Microsoft Docs
+description: 此訊息報告處理序目前已配置的虛擬記憶體最大數量，以位元組 (私用位元組) 為單位。
+title: DA0506-配置給所分析進程的最大私用位元組 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 48671c7e8552626deed814f06f21be38527545bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a796dd962485e5569ec09b07b881a8bb183b6e9d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918072"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223637"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506：為所分析的處理序配置的最大私用位元組
 
