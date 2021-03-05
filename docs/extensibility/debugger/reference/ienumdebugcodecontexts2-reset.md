@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugCodeCoNtexts2：： Reset |Microsoft Docs
+description: 將程式碼內容列舉重設為第一個元素。
+title: IEnumDebugCodeCoNtexts2：： Reset |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a4b3fed1c8e5cb9c781349da0e633040c4646368
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48df7ce32f085ea387f6ce49e891a0f0e01eb2cf
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929455"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226952"
 ---
 # <a name="ienumdebugcodecontexts2reset"></a>IEnumDebugCodeContexts2::Reset
 將列舉重設為第一個元素。

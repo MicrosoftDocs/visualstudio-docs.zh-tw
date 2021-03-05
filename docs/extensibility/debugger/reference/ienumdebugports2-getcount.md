@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugPorts2：： GetCount |Microsoft Docs
+description: 傳回埠列舉中的元素數目。
+title: IEnumDebugPorts2：： GetCount |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 47a72debd686fe0586c4eb65adae1198cf16b6e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22550fa1ba700a77564f6da666d6300335427e1a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957045"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226315"
 ---
 # <a name="ienumdebugports2getcount"></a>IEnumDebugPorts2::GetCount
 傳回列舉中的元素數目。

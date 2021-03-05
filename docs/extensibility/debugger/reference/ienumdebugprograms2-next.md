@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugPrograms2：： Next |Microsoft Docs
+description: 從程式列舉傳回下一組元素。
+title: IEnumDebugPrograms2：： Next |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c869c314f2f06d18b95afed3a7e45390ea52fa2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f3c90f01b19b57925e765e35735f41326a52314
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846617"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226068"
 ---
 # <a name="ienumdebugprograms2next"></a>IEnumDebugPrograms2::Next
 傳回列舉中的下一組元素。

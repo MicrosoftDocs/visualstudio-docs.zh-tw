@@ -1,5 +1,6 @@
 ---
-title: PROCESS_INFO_FLAGS |Microsoft Docs
+description: 描述或指定進程的屬性。
+title: PROCESS_INFO_FLAGS |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd20b194623a02ff3852d0f0734f3dc7d7e1cfc6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e192a51c2c371754778ecbe697d280d1b254f224
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923087"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225327"
 ---
 # <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 

@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugPortSuppliers2：： Clone |Microsoft Docs
+description: 傳回目前埠供應商列舉的複本，做為個別的物件。
+title: IEnumDebugPortSuppliers2：： Clone |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fca68c1fd6f0c3d59759499c6aa5e4f5a7fe8e22
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7c5a96f30150c40bb0042afcb2574d49843a2bb
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967783"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226263"
 ---
 # <a name="ienumdebugportsuppliers2clone"></a>IEnumDebugPortSuppliers2::Clone
 傳回目前列舉的複本作為個別的物件。

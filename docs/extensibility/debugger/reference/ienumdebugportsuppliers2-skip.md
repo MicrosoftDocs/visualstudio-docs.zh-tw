@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugPortSuppliers2：： Skip |Microsoft Docs
+description: 略過埠供應商列舉中指定的元素數目。
+title: IEnumDebugPortSuppliers2：： Skip |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9cb5b9536d1602cabe1aa35d6838ed26f4e4c8d9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85110c17bb9c1f83e600e47d54a1ea762667dc18
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940159"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226211"
 ---
 # <a name="ienumdebugportsuppliers2skip"></a>IEnumDebugPortSuppliers2::Skip
 略過指定的元素數目。

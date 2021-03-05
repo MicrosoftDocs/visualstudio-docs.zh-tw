@@ -1,5 +1,6 @@
 ---
-title: THREADSTATE |Microsoft Docs
+description: 指定執行緒的狀態。
+title: THREADSTATE |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21b683e8f7797743d5ae78f932edfa5c862dbb8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 36c44eaf3b5ab8d3515b2c3e2128e8ac9562492e
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967679"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225250"
 ---
 # <a name="threadstate"></a>THREADSTATE
 指定執行緒的狀態。

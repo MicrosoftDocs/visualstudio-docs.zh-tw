@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugBoundBreakpoints2：： Skip |Microsoft Docs
+description: 略過系結中斷點列舉中指定的元素數目。
+title: IEnumDebugBoundBreakpoints2：： Skip |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb6c77226109a6f73255f3a7eb3f27cab2c08375
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6b2fb66b433dac4828935dbf0299a9b48e143371
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875623"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227017"
 ---
 # <a name="ienumdebugboundbreakpoints2skip"></a>IEnumDebugBoundBreakpoints2::Skip
 略過指定的元素數目。

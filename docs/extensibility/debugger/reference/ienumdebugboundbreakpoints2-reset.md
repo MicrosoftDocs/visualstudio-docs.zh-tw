@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugBoundBreakpoints2：： Reset |Microsoft Docs
+description: 將系結的中斷點列舉重設為第一個元素。
+title: IEnumDebugBoundBreakpoints2：： Reset |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f1a8649dd49d8252fc509cf117e2f28923b906c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 980288cdacf492ca135066396498838d25b1e697
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875597"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227056"
 ---
 # <a name="ienumdebugboundbreakpoints2reset"></a>IEnumDebugBoundBreakpoints2::Reset
 將列舉重設為第一個元素。

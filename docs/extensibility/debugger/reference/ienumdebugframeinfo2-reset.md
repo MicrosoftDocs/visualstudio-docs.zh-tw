@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugFrameInfo2：： Reset |Microsoft Docs
+description: 將列舉重設為第一個 FRAMEINFO 元素。
+title: IEnumDebugFrameInfo2：： Reset |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3c15a5bd7db1def82c5ae7f654f19e76dd524540
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01a7a2be3986798e087e4bc4096be2b8ce1454ad
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956304"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226432"
 ---
 # <a name="ienumdebugframeinfo2reset"></a>IEnumDebugFrameInfo2::Reset
 將列舉重設為第一個元素。

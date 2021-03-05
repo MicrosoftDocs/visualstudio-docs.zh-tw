@@ -1,5 +1,6 @@
 ---
-title: IEnumCodePaths2 |Microsoft Docs
+description: 此介面代表程式碼路徑的清單。
+title: IEnumCodePaths2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69a65488d38fe2562392be152e448369ff081915
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9758bacf6dc22ad65dc4d8db9b21d0f6728efaf
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962154"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227082"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 此介面代表程式碼路徑的清單。

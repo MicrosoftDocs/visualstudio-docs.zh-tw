@@ -1,5 +1,6 @@
 ---
-title: IDebugThreadDestroyEvent2：： GetExitCode |Microsoft Docs
+description: 取得執行緒的結束代碼。
+title: IDebugThreadDestroyEvent2：： GetExitCode |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 567e7fdedbf408ce9cac137f2b240626fd16d10c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 693f44ededcaa081d72ef44d60d31473f0b70e1d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940224"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227368"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
 取得執行緒的結束代碼。

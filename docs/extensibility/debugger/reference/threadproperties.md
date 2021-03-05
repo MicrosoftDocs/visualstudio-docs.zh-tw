@@ -1,5 +1,6 @@
 ---
-title: THREADPROPERTIES |Microsoft Docs
+description: 描述執行緒的屬性。
+title: THREADPROPERTIES |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2eb7abf897cf4891f08228dd5f0c918f580a1ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 186d9b0cd4f9ee3a822a528ab16788902d9ff1af
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850657"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225254"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 描述執行緒的屬性。

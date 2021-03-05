@@ -1,5 +1,6 @@
 ---
-title: IDebugWindowsComputerPort2：： GetComputerInfo |Microsoft Docs
+description: 抓取正在執行之偵錯工具的電腦相關資訊。
+title: IDebugWindowsComputerPort2：： GetComputerInfo |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0292a520b414c2ca96cb9077af938d692dd57bb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 279de593e79629546f0a3a10fe8e329b4b6ec6af
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965612"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227316"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 抓取正在執行之偵錯工具的電腦相關資訊。

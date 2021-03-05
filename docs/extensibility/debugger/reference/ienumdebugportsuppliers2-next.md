@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugPortSuppliers2：： Next |Microsoft Docs
+description: 從埠供應商列舉傳回下一組元素。
+title: IEnumDebugPortSuppliers2：： Next |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04f1b428f76198c0bb06ae6d12c58d5f779a0e79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29badfc9c42875b981f99fbfe215c7a336dc1535
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846734"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226250"
 ---
 # <a name="ienumdebugportsuppliers2next"></a>IEnumDebugPortSuppliers2::Next
 傳回列舉中的下一組元素。

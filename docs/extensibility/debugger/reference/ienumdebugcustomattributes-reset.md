@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugCustomAttributes：： Reset |Microsoft Docs
+description: 將自訂屬性列舉順序重設為開頭。
+title: IEnumDebugCustomAttributes：： Reset |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8879b910de378ae4358ca092ee2c4b3ab6204bfe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3393f2b87043345156337976ed12d10928572d2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929239"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226887"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
 將列舉序列重設為開頭。

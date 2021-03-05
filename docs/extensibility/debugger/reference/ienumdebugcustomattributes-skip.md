@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugCustomAttributes：： Skip |Microsoft Docs
+description: 略過列舉序列中指定數目的自訂屬性。
+title: IEnumDebugCustomAttributes：： Skip |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93b2d9176af4fe3a5a91e76e7f8890b8a4e3d79f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c57ca47b8d5100ff9c9bf7451e07ad0924775475
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929236"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226796"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
 略過列舉序列中指定數目的自訂屬性。
