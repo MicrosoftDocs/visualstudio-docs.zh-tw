@@ -1,6 +1,6 @@
 ---
-title: 變更字型 |Microsoft Docs
-Description: 請參閱如何設定 Spy + + 視窗的字型、字型樣式和字型大小。 您可以將選擇儲存為未來 Spy + + 視窗的預設值。
+title: 變更字型 |Microsoft 檔
+description: 請參閱如何設定 Spy + + 視窗的字型、字型樣式和字型大小。 您可以將選擇儲存為未來 Spy + + 視窗的預設值。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 109ca82378fc7d59869b26cd02fcf2e803e5715f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b52a32d6360776572f17b1ab43a9c46f77ff18ec
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913440"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155025"
 ---
 # <a name="how-to-change-fonts"></a>如何：變更字型
 您可以變更 Spy + + 視窗的字型、字型樣式和字型大小。

@@ -1,4 +1,5 @@
 ---
+description: 指出符號中包含的位置資訊種類。
 title: LocationType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aafc62f5920db70bd881bd3a541cfcfabfac360
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f111e269f0a61e827a6d1334aee8b9250f3f46f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862343"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155380"
 ---
 # <a name="locationtype"></a>LocationType
 指出符號中包含的位置資訊種類。

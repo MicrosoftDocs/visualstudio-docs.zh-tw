@@ -1,5 +1,6 @@
 ---
-title: IDebugDocumentTextEvents2 |Microsoft Docs
+description: 此介面是用來通知 Visual Studio 有關由 debug 引擎所提供的來源文件變更。
+title: IDebugDocumentTextEvents2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,15 +13,15 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc5683e39da2da190468b2cafd0d3accae9b7479
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bcbe6e44923172c3eac4da605848e972216837cc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904011"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154180"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
-這個介面是用來通知 Visual Studio 有關由 debug 引擎提供之來源文件的變更。
+此介面是用來通知 Visual Studio 有關由 debug 引擎所提供的來源文件變更。
 
 ## <a name="syntax"></a>Syntax
 

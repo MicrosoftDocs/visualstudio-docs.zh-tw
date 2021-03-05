@@ -1,5 +1,6 @@
 ---
-title: IDebugEngine2：： SetRegistryRoot |Microsoft Docs
+description: 設定 debug engine (DE) 的登錄根目錄。
+title: IDebugEngine2：： SetRegistryRoot |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75e5b66f19e017becc0ee307179e7e9798d357a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01d43d2891b4ffb6257dfe0a367971022ebb1f99
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933579"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153894"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 設定 debug engine (DE) 的登錄根目錄。

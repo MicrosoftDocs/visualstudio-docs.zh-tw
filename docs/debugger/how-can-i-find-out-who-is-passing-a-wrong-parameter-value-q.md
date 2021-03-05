@@ -1,6 +1,6 @@
 ---
-title: 找出誰傳遞錯誤的參數值 |Microsoft Docs
-Description: 您可以找出呼叫函式的程式碼，並傳遞不正確的參數值。 瞭解如何使用條件式中斷點來執行此動作。
+title: 找出誰傳遞錯誤的參數值 |Microsoft 檔
+description: 您可以找出呼叫函式的程式碼，並傳遞不正確的參數值。 瞭解如何使用條件式中斷點來執行此動作。
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -23,18 +23,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d159198137c70810bc47cc79caf18ac178aeecd6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cb4b3c41b46817d15a13626983ccf55ffa9acc5f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912277"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155176"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>如何發現誰傳錯參數值？
 ## <a name="problem-description"></a>問題說明
  我的函式中傳入了一個錯誤的參數。 這個函式會從許多地方呼叫。 我該如何確定錯誤值是誰傳出的？
 
-## <a name="solution"></a>解決方案
+## <a name="solution"></a>解決方法
 
 #### <a name="to-resolve-this-problem"></a>若要解決這個問題
 

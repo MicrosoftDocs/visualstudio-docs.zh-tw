@@ -1,4 +1,5 @@
 ---
+description: 指定堆疊框架類型。
 title: StackFrameTypeEnum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 707b22693afe83f82a30055f0c59ff89272b5bc3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b84ad19ec31cd1fae65913827b8ee381711f6534
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862287"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155303"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 指定堆疊框架類型。

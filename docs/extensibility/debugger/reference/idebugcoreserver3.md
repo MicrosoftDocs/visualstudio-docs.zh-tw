@@ -1,5 +1,6 @@
 ---
-title: IDebugCoreServer3 |Microsoft Docs
+description: 這個介面可讓您存取執行進程之伺服器的相關資訊。
+title: IDebugCoreServer3 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6faa47bc107c8d00864307bdb6802908e085652
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1328a97742a4672cdc71805c4c674d66fe05e817
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928464"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154609"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 這個介面可讓您存取執行進程之伺服器的相關資訊。

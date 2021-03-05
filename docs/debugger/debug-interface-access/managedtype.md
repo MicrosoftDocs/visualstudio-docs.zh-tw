@@ -1,4 +1,5 @@
 ---
+description: 'Managed 類型 (中繼資料所定義的任何符號，或原生至 c # ) 語言的記憶體和資源管理功能，由 SymTagManagedType 符號識別。'
 title: ManagedType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8488c912b502fccbc91ef3a61d0e3d635f925e04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5285cc971b87054e5e024e2bbb787fa2023e1885
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853237"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155373"
 ---
 # <a name="managedtype"></a>ManagedType
 Managed 類型 (中繼資料所定義的任何符號，或原生至 c # ) 語言的記憶體和資源管理功能，是以符號來識別 `SymTagManagedType` 。

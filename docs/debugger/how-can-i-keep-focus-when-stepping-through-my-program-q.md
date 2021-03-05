@@ -1,6 +1,6 @@
 ---
-title: 逐步執行應用程式時保持焦點 |Microsoft Docs
-Description: 當您在偵測視窗啟用問題時，請使用遠端偵錯程式讓您的程式無法遺失焦點。
+title: 逐步執行應用程式時保持焦點 |Microsoft 檔
+description: 當您在偵測視窗啟用問題時，請使用遠端偵錯程式讓您的程式無法遺失焦點。
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b821c374a87983ab8cb2667b434b1509e8449f31
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9700b5f62637cb70900845185578fbb272f5a22b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911437"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155163"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>逐步執行應用程式時，如何保持焦點？
-## <a name="description"></a>Description
+## <a name="description"></a>描述
  我的程式有視窗啟動的問題。 要重現問題時，以偵錯工具逐步執行程式會帶來干擾，因為程式會一直失焦。 有什麼方法可以避免這個問題嗎？
 
-## <a name="solution"></a>解決方案
+## <a name="solution"></a>解決方法
  如果您有第二台電腦，使用遠端偵錯。 當您在本機上執行偵錯工具時，您可以在遠端電腦上操作程式。 如需詳細資訊，請參閱 [如何：選取遠端電腦](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100))。
 
 ## <a name="see-also"></a>另請參閱

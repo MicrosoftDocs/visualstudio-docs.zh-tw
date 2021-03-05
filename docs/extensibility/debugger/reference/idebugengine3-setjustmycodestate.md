@@ -1,5 +1,6 @@
 ---
-title: IDebugEngine3：： SetJustMyCodeState |Microsoft Docs
+description: 這個方法會告訴 debug engine 有關 JustMyCode 狀態資訊的資訊。
+title: IDebugEngine3：： SetJustMyCodeState |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e706d0fd23bc0c5388ee3bd6bb82323309725c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a81fa4bda506cf1be27f658b071910e7c8ccd8a7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887181"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153699"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 這個方法會告訴 debug engine 有關 JustMyCode 狀態資訊的資訊。

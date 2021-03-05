@@ -1,5 +1,6 @@
 ---
-title: IDebugCanStopEvent2 |Microsoft Docs
+description: 這個介面是用來要求會話 debug manager (SDM) 是否要在目前的程式碼位置停止。
+title: IDebugCanStopEvent2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87306e1373d746479ce59c96b6625fa41ef119fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d46f4aacdc886e455771f5a30ba82b941b29c957
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903239"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154843"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 這個介面是用來要求會話 debug manager (SDM) 是否要在目前的程式碼位置停止。

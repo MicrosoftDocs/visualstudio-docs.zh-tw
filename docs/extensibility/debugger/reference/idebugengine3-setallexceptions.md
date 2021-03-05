@@ -1,5 +1,6 @@
 ---
-title: IDebugEngine3：： SetAllExceptions |Microsoft Docs
+description: 這個方法會設定所有未處理例外狀況的狀態。
+title: IDebugEngine3：： SetAllExceptions |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63af55f55dbeb43bfa30aaca5354c4d4fa8afc06
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 734a227bbd9387f591314c65be1124d1b2593fd2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887233"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153751"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 這個方法會設定所有未處理例外狀況的狀態。

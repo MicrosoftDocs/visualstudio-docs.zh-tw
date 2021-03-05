@@ -1,5 +1,6 @@
 ---
-title: IDebugEngine2：： SetException |Microsoft Docs
+description: 指定 debug engine (DE) 應該如何處理指定的例外狀況。
+title: IDebugEngine2：： SetException |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1e2a6dbd5d5700d4d64625490c016da2d04af6d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 543cccbbefd12accd75213f255f8e3b677cdea38
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878938"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153933"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 指定 debug engine (DE) 應該如何處理指定的例外狀況。

@@ -1,5 +1,6 @@
 ---
-title: IDebugActivateDocumentEvent2：： GetDocumentCoNtext |Microsoft Docs
+description: 取得檔內容，描述檔中要由 debug 封裝啟用的位置。
+title: IDebugActivateDocumentEvent2：： GetDocumentCoNtext |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 32bc4715438c7197628b4df66203aadb753bec25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 680382e43feee9298a2de99933847ea633982a15
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904681"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154934"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 取得檔內容，描述檔中要由 debug 封裝啟用的位置。

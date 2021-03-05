@@ -1,5 +1,6 @@
 ---
-title: IDebugCoreServer3：:D isableAutoAttach |Microsoft Docs
+description: 針對與此伺服器相關聯的所有偵錯工具引擎停用自動附加。
+title: IDebugCoreServer3：:D isableAutoAttach |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f2af960c9efdd0732d950f16e7f83dd4d8a54fb4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ad02efc68fe0bdd7a64ae0df02fe934a2044abc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908029"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154713"
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
 針對與此伺服器相關聯的所有偵錯工具引擎停用自動附加。

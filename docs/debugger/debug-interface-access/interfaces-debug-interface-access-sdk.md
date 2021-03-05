@@ -1,5 +1,6 @@
 ---
-title: " (Debug 介面存取 SDK) 的介面 |Microsoft Docs"
+description: 方法會依字母順序列在目錄中的每個介面下，以及在介面頁面上以 Vtable 順序列出。
+title: " (Debug 介面存取 SDK) 的介面 |Microsoft 檔"
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 234bfa31c79fa2c9ef60afd29d655cfc6e585aed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d827e688e7618ebf66842eb4e633acdb483aa4f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853258"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155422"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>介面 (偵錯介面存取 SDK)
 方法會依字母順序列在目錄中的每個介面下，以及在介面頁面上以 Vtable 順序列出。
@@ -27,7 +28,7 @@ ms.locfileid: "99853258"
 
 [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 
-提供控制 DIA SDK 如何計算 debug 物件的虛擬和相對虛擬位址。
+提供 DIA SDK 如何計算 debug 物件的虛擬和相對虛擬位址的控制權。
 
 [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 
@@ -164,7 +165,7 @@ ms.locfileid: "99853258"
 
 [常數 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
-描述 DIA SDK 中的可用常數。
+描述 DIA SDK 中可用的常數。
 
 ## <a name="see-also"></a>另請參閱
 

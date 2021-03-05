@@ -1,4 +1,5 @@
 ---
+description: 描述 (UDT) 的各種使用者定義型別。
 title: UdtKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c543d09a360bfb7eadad11d7fca84764bb2006
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dbda75e668309318c4c4fe61c5c72f27629ea2cc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873391"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155275"
 ---
 # <a name="udtkind"></a>UdtKind
 描述 (UDT) 的各種使用者定義型別。

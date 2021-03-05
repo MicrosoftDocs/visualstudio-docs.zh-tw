@@ -1,6 +1,6 @@
 ---
-title: Self-Hosted WCF 服務的 Debug |Microsoft Docs
-Description: 瞭解如何對自我裝載的 WCF 服務進行調試。  (但不一定能) 的最簡單方式，就是將 Visual Studio 設定為同時啟動用戶端和伺服器。
+title: Self-Hosted WCF 服務的 Debug |Microsoft 檔
+description: 瞭解如何對自我裝載的 WCF 服務進行調試。  (但不一定能) 的最簡單方式，就是將 Visual Studio 設定為同時啟動用戶端和伺服器。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2edcf359bd54774647ff1a5957d741fec25b60a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3cd11966347cd90576eb78a59f6c7eb96cc697ef
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915808"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155077"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：偵錯自我裝載的 WCF 服務
 「自我裝載服務」是一項不會在 IIS、WCF 服務主機或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 程式開發伺服器內部執行的 WCF 服務。 若要將自我裝載的 WCF 錯用，最簡單的方式是將設定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 為在您選擇 [**調試** 程式] 功能表上的 [**開始調試** 程式] 時同時啟動用戶端和伺服器。
@@ -37,13 +37,13 @@ ms.locfileid: "99915808"
 
 - 開始對用戶端進行調試，然後逐步執行對服務的呼叫。 這需要您在 app.config 檔案中啟用偵錯工具。 如需詳細資訊，請瞭解 [WCF 調試](../debugger/limitations-on-wcf-debugging.md)程式的限制。
 
-### <a name="to-start-both-client-and-host-from-visual-studio"></a>從 Visual Studio 啟動用戶端和主機
+### <a name="to-start-both-client-and-host-from-visual-studio"></a>若要從 Visual Studio 啟動用戶端和主機
 
 1. 建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 包含用戶端和伺服器專案的方案。
 
 2. 當您在 [**調試** 程式] 功能表上選擇 [**啟動**] 時，請將方案設定為啟動用戶端和伺服器進程。
 
-   1. 在 **方案總管** 中，以滑鼠右鍵按一下方案名稱。
+   1. 在 [ **方案 Explorer**] 中，以滑鼠右鍵按一下方案名稱。
 
    2. 按一下 [ **設定啟始專案**]。
 

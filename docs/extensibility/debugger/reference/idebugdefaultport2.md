@@ -1,5 +1,6 @@
 ---
-title: IDebugDefaultPort2 |Microsoft Docs
+description: 此介面提供數種存取埠伺服器和通知設備的方法。
+title: IDebugDefaultPort2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca0b999f4c5878debbdee556431d56b7977c719
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5ec637daa197574710978af7cb22195c969f48b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901846"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154414"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 此介面提供數種存取埠伺服器和通知設備的方法。
@@ -29,7 +30,7 @@ IDebugDefaultPort2 : IDebugPort2
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
- Visual Studio 會執行此介面來代表用來存取程式的 debug 埠。 如果自訂埠供應商處理遠端偵錯，也可以執行這個介面。
+ Visual Studio 會執行這個介面，以代表用於存取程式的 debug 埠。 如果自訂埠供應商處理遠端偵錯，也可以執行這個介面。
 
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面上方法的引數會提供這個介面。 在[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)介面上呼叫[QueryInterface](/cpp/atl/queryinterface)也可以取得這個介面。

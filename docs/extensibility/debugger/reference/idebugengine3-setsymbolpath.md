@@ -1,5 +1,6 @@
 ---
-title: IDebugEngine3：： SetSymbolPath |Microsoft Docs
+description: 設定要搜尋的路徑或路徑以進行偵錯工具符號。
+title: IDebugEngine3：： SetSymbolPath |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aee3b02acfa54cbe9d947be8cb781725ebb4d071
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e2b029413e3b402e1d8dfa19ccb3ad22644b241
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874292"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153686"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 設定要搜尋的路徑或路徑以進行偵錯工具符號。

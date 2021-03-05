@@ -1,5 +1,6 @@
 ---
-title: IDebugEngine2：： GetEngineID |Microsoft Docs
+description: 取得 debug engine (DE) 的 GUID。
+title: IDebugEngine2：： GetEngineID |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ec0c294c0d1a1e19942ac86847cad1226041b24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf785c906303bab677adadfd081ae6af276a754c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878964"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153972"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 取得 debug engine (DE) 的 GUID。

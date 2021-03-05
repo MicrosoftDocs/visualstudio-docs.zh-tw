@@ -1,5 +1,6 @@
 ---
-title: IDebugEngineLaunch2：： LaunchSuspended |Microsoft Docs
+description: 這個方法會透過 debug engine (DE) 來啟動處理常式。
+title: IDebugEngineLaunch2：： LaunchSuspended |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1afa09abd0e997c47b33953e5321d4c5d1845a25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fd8b610f99161a9716b9bffc235196165306711
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892823"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153582"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 這個方法會透過 debug engine (DE) 來啟動處理常式。

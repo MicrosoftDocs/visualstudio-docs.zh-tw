@@ -1,6 +1,6 @@
 ---
-title: Debug .NET Framework source |Microsoft Docs
-Description: 瞭解如何 .NET Framework 來源進行調試。 您必須為其設定，並下載偵錯工具符號。
+title: Debug .NET Framework 來源 |Microsoft 檔
+description: 瞭解如何將 .NET Framework 來源進行調試。 您必須為其設定，並下載偵錯工具符號。
 ms.custom: SEO-VS-2020
 ms.date: 11/19/2018
 ms.topic: how-to
@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 890aeef41a9a0f4d893cfcf57d42b78ff32d88c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e762b28cfaf239e5edb38b1be3981496e56d72d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846877"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154986"
 ---
 # <a name="how-to-debug-net-framework-source"></a>How to: Debug .NET Framework source (如何：對 .NET Framework 來源進行偵錯)
 
-若要 .NET Framework 來源進行 debug 錯，您必須：
+若要 debug .NET Framework 來源，您必須：
 
 - 啟用逐步執行 .NET Framework 來源。
 
@@ -31,7 +31,7 @@ ms.locfileid: "99846877"
 
 ### <a name="to-enable-stepping-into-net-framework-source"></a>若要啟用逐步執行 .NET Framework 來源
 
-1. 在 [**工具**] (或 [ **Debug** ]) >**選項**  >    >  的 **[一般**] 調試，選取 [**啟用 .NET Framework 來源逐步執行**]
+1. 在 [**工具**] (或 [ **Debug** ]) >**選項**  >    >  的 **[一般**] 調試，選取 [**啟用 .net Framework 來源逐步執行**]
 
    - 如果您已啟用 Just My Code，將會出現警告對話方塊，通知您 Just My Code 現在已停用。 選取 [確定]。
 

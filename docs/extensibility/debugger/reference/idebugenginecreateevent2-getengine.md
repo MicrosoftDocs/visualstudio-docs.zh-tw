@@ -1,5 +1,6 @@
 ---
-title: IDebugEngineCreateEvent2：： GetEngine |Microsoft Docs
+description: 抓取物件，該物件表示新建立的 debug engine (DE) 。
+title: IDebugEngineCreateEvent2：： GetEngine |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95e3991b9e6c5d08793780b9bb3b5150e28c5246
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3aaabac0b9ee0e6fb2e8982d673e8e55e1cede4e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936141"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153663"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
 抓取物件，該物件表示新建立的 debug engine (DE) 。

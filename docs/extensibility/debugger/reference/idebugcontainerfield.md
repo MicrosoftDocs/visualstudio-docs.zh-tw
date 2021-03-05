@@ -1,5 +1,6 @@
 ---
-title: IDebugContainerField |Microsoft Docs
+description: 此介面代表做為其他符號或類型之容器的符號或類型。
+title: IDebugContainerField |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7ed9e573236f0bdeff9c9a8433af322a5a5f79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 752eb7d77035a25ad1d0ddc8aec45afe95d898c7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928493"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154778"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 此介面代表做為其他符號或類型之容器的符號或類型。

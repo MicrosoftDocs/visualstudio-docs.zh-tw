@@ -1,6 +1,6 @@
 ---
-title: 找出我的指標是否損毀記憶體位址 |Microsoft Docs
-Description: 若要判斷指標是否會損毀記憶體，您可以尋找堆積損毀，而且可以設定資料中斷點，以找出值的修改方式。
+title: 找出我的指標是否損毀記憶體位址 |Microsoft 檔
+description: 若要判斷指標是否會損毀記憶體，您可以尋找堆積損毀，而且可以設定資料中斷點，以找出值的修改方式。
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a1857d349f339a537748f11154b43f7d30c7bdb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d95e38c6393d6576f2867aad5d1224940f33cebc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910039"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155196"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何發覺我的指標是否損毀記憶體位址？
 ## <a name="problem-description"></a>問題說明
  我認為我的其中一個指標可能損毀在 0x00408000 位址的記憶體。 我該如何確定那裡的狀況？
 
-## <a name="solution"></a>解決方案
+## <a name="solution"></a>解決方法
 
 #### <a name="check-for-heap-corruption"></a>檢查堆積損毀
 

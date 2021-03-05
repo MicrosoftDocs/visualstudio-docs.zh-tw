@@ -1,5 +1,6 @@
 ---
-title: IDebugDocumentText2：： GetText |Microsoft Docs
+description: 從檔中指定的位置抓取文字。
+title: IDebugDocumentText2：： GetText |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0fb2281c9086baee87df6ac7e214b2911e2fc354
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 53ee0ff735cfbec4835e762dfa95e293c95885b5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923162"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154219"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 從檔中指定的位置抓取文字。

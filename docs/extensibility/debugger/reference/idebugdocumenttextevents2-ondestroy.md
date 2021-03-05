@@ -1,5 +1,6 @@
 ---
-title: IDebugDocumentTextEvents2：： onDestroy |Microsoft Docs
+description: 表示整份檔已損毀。
+title: IDebugDocumentTextEvents2：： onDestroy |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 791ed47d09d44713f4586d79ac2a1655ea0bb94b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc3bafa569a95765c5504196da94e0410078b0fa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848178"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154193"
 ---
 # <a name="idebugdocumenttextevents2ondestroy"></a>IDebugDocumentTextEvents2::onDestroy
 表示整份檔已損毀。

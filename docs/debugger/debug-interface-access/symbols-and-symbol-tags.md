@@ -1,5 +1,6 @@
 ---
-title: 符號和符號標記 |Microsoft Docs
+description: 已編譯器的 Debug 資訊會儲存在程式資料庫 ( .pdb) 檔中，做為可使用 Debug 介面存取 (DIA) SDK Api 存取的符號。
+title: 符號和符號標記 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f1927e4290ff9d008eff9f497c9d570d9d44f8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98631149e5a53c13bfc9b12b0d6de165c345e29a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862280"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155282"
 ---
 # <a name="symbols-and-symbol-tags"></a>符號和符號標記
 已編譯器的 Debug 資訊會儲存在程式資料庫 ( .pdb) 檔中，做為可使用 Debug 介面存取 (DIA) SDK Api 存取的符號。 所有符號都有 [IDiaSymbol：： get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) 和 [IDiaSymbol：： get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) 屬性。 `symTag`屬性工作表示[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉所定義的符號種類。 `symIndexId`屬性是一個 `DWORD` 值，其中包含每個符號實例的唯一識別碼。

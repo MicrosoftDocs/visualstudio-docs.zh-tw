@@ -1,5 +1,6 @@
 ---
-title: IDebugDocumentPosition2：： IsPositionInDocument |Microsoft Docs
+description: 判斷檔位置是否包含在指定的檔中。
+title: IDebugDocumentPosition2：： IsPositionInDocument |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17a3623ab0a674b49d96d6eb77f04ec0de9a2fb2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4800f3735e2d015e3638a642e8c0d54829ddd4c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842248"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154284"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 判斷檔位置是否包含在指定的檔中。

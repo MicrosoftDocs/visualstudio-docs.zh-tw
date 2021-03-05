@@ -1,5 +1,6 @@
 ---
-title: IDebugEngineLaunch2：： TerminateProcess |Microsoft Docs
+description: IDebugEngineLaunch2：： TerminateProcess 終止進程。
+title: IDebugEngineLaunch2：： TerminateProcess |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 19222c3cc6ec7e3b09cfa16bdb82820ecc702451
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 761e3c35e6f433f4bbaa280026e5879413231334
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892797"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153517"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
 終止進程。

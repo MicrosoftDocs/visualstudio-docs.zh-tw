@@ -1,5 +1,6 @@
 ---
-title: IDebugEngineProgram2 |Microsoft Docs
+description: 此介面提供多執行緒的調試支援。
+title: IDebugEngineProgram2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f630614dbe49e87b5a9905ceabbf717269c98ea2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea46ccad8f357cb868a445a8836280abf7c224e0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892602"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153374"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 此介面提供多執行緒的調試支援。
@@ -44,7 +45,7 @@ IDebugEngineProgram2 : IUnknown
 |[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|允許 (或不允許在指定的執行緒上執行) 運算式評估，即使程式已停止也是如此。|
 
 ## <a name="remarks"></a>備註
- Visual Studio 會呼叫此介面來回應 [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 事件，並設定程式的「監看式執行緒步驟」和「監看執行緒上的運算式評估」狀態。 每當程式停止時，就會呼叫[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) ;這個方法可讓程式有機會終止所有線程。
+ Visual Studio 會呼叫此介面來回應 [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 事件，並設定程式的「監看式執行緒步驟」和「監看執行緒的運算式評估」狀態。 每當程式停止時，就會呼叫[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) ;這個方法可讓程式有機會終止所有線程。
 
 ## <a name="requirements"></a>規格需求
  標頭： msdbg。h

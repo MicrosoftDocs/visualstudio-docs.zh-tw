@@ -1,5 +1,6 @@
 ---
-title: IDebugCustomAttributeQuery |Microsoft Docs
+description: 表示方法或型別上的自訂屬性查詢。
+title: IDebugCustomAttributeQuery |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52549ac36ef8bdbf36d8f28c8864a874fc71fb6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31212a7c2d032dd22aa2fddb8df6718cceeff587
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840467"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154466"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
 表示方法或型別上的自訂屬性查詢。

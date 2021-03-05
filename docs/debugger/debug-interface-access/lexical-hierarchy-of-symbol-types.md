@@ -1,5 +1,6 @@
 ---
-title: 符號類型的詞法階層 |Microsoft Docs
+description: 下表顯示 [詞彙] 階層中的符號類型。
+title: 符號類型的詞法階層 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,19 +13,19 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1c9284637be43ab30d35d3e0cb4aea937c0a224
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 605b16d2a53178b52095e9919c10bba53f3f21a1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853251"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155387"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>符號類型的語彙階層架構
 下表顯示 [詞彙] 階層中的符號類型。
 
 ## <a name="symbol-types"></a>符號類型
 
-|符號類型|Description|
+|符號類型|描述|
 |-----------------|-----------------|
 |[註釋](../../debugger/debug-interface-access/annotation.md)|在程式碼中指定已標注的位置。|
 |[封鎖](../../debugger/debug-interface-access/block.md)|在函數中指定嵌套的範圍。|
