@@ -1,5 +1,6 @@
 ---
-title: IDebugBreakpointUnboundEvent2 |Microsoft Docs
+description: 此介面會告知會話 debug manager (SDM) 系結的中斷點已從載入的程式解除系結。
+title: IDebugBreakpointUnboundEvent2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7b463b2da9c1e2c93568435b73020550802f98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c23c060883ca3d2682659112bdc55de001e80e4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881005"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170220"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 此介面會告知會話 debug manager (SDM) 系結的中斷點已從載入的程式解除系結。

@@ -1,5 +1,6 @@
 ---
-title: IDebugObject |Microsoft Docs
+description: 這個介面代表系結器建立的物件，用來封裝符號和運算式的值。
+title: IDebugObject |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6fc188537799a8a3eeab66dd4af1d92ffb67db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14c405c9dbe3d1cbfdf61c606b995a686e063661
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953574"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170189"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]

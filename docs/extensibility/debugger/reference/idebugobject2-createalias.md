@@ -1,5 +1,6 @@
 ---
-title: IDebugObject2：： CreateAlias |Microsoft Docs
+description: 建立此物件的唯一識別碼或別名，或傳回現有的別名。
+title: IDebugObject2：： CreateAlias |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 48badc2f418dec9fd34906b6925db1c2a9dfd490
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2c0059b7b3b12b8e2e59524939c4a47aad97219
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953509"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170182"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 建立此物件的唯一識別碼或別名，或傳回現有的別名。
