@@ -1,5 +1,6 @@
 ---
-title: AsyncVoidMethodBuilder 結構-內部成員 |Microsoft Docs
+description: 本主題說明 CompilerServices. AsyncVoidMethodBuilder 類別的內部成員。
+title: AsyncVoidMethodBuilder 結構-內部成員 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: edb0e11f80743289f8318c9fe7d331e6528f8107
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad209fb94a9857fe0596f1e25b0dec844d03ca8f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921614"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151140"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder 結構-內部成員
 本主題說明類別的內部成員 <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> 。 如需此類別的一般資訊，請參閱 <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> 參考主題。
@@ -25,7 +26,7 @@ ms.locfileid: "99921614"
 
  **元件：** mscorlib.dll) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取這些內部成員，所以會以一般中繼語言 () 的 CIL 來提供下列語法。
+ 因為您無法從 .NET Framework 存取這些內部成員，所以會以一般中繼語言 (的 CIL) 來提供下列語法。
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,4 +45,4 @@ ms.locfileid: "99921614"
 
 ## <a name="see-also"></a>另請參閱
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [.NET Framework 的平行延伸模組內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET Framework 的平行擴充功能內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

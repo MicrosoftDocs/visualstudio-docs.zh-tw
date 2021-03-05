@@ -1,5 +1,6 @@
 ---
-title: BP_TYPE |Microsoft Docs
+description: 指定中斷點位於程式碼位置、是否為數據位置，或是另一種類型的中斷點。
+title: BP_TYPE |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d01485a6044122baf460eede90470c5cc1478323
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e310154bc62cdea1fb9069cc868cf9e20335d06
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913001"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151100"
 ---
 # <a name="bp_type"></a>BP_TYPE
 指定中斷點位於程式碼位置、是否為數據位置，或是另一種類型的中斷點。

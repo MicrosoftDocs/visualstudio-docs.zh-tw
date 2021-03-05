@@ -1,4 +1,5 @@
 ---
+description: 函式的每個參數都是以 SymTagFunctionArgType 符號來識別。
 title: FunctionArgType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 872c55d47f72c85a943ca32a577d7bdd52a590c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a22f46be4161755bf8e2a1d998ec84dc99e83108
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865353"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151166"
 ---
 # <a name="functionargtype"></a>FunctionArgType
 函式的每個參數都是以 `SymTagFunctionArgType` 符號來識別。

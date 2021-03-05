@@ -1,5 +1,6 @@
 ---
-title: DEBUG_CUSTOM_VIEWER |Microsoft Docs
+description: 識別自訂檢視器或型別視覺化的結構。
+title: DEBUG_CUSTOM_VIEWER |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6fa8e8d9e07510a10b1b32534f3323dab4c84a22
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 46133d2b2800977b0819835f578b04569c4f5ce8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899109"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151053"
 ---
 # <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 識別自訂檢視器或型別視覺化的結構。

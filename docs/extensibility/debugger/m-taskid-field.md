@@ -1,5 +1,6 @@
 ---
-title: m_taskId 欄位 |Microsoft Docs
+description: System.Threading.Tasks.Task.Id 屬性的支援欄位。
+title: m_taskId 欄位 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5603225ee768e1e79f27b5e06a86369d377f68af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7fcae044be9df9d93252c7193ef808820ceb5575
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925105"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151112"
 ---
 # <a name="m_taskid-field"></a>m_taskId 欄位
 屬性的支援欄位 <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> 。
@@ -24,7 +25,7 @@ ms.locfileid: "99925105"
 
  **元件：** *mscorlib.dll*) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在一般中繼語言 (的 CIL) 中提供下列語法。
 
 ## <a name="syntax"></a>語法
 
