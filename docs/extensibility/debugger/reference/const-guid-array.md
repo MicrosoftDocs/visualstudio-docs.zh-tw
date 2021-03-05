@@ -1,5 +1,6 @@
 ---
-title: CONST_GUID_ARRAY |Microsoft Docs
+description: 保存 GUID 清單的結構。
+title: CONST_GUID_ARRAY |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2893b6a1e977b84fba3161a33a5342f94ccc030
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3caa4518872abbb2164e523b30679621d2bf319c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900296"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170805"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
 保存清單的結構 `GUID` 。

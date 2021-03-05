@@ -1,5 +1,6 @@
 ---
-title: IDebugBinder3：： GetAllAliases |Microsoft Docs
+description: 這個方法會從程式抓取別名清單。
+title: IDebugBinder3：： GetAllAliases |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea8de97a82959b1135866988aeeeb14cf464e8b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16a9d41280a9ff97072390a0cd2e687ee24e1d83
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925075"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174043"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 這個方法會從程式抓取別名清單。

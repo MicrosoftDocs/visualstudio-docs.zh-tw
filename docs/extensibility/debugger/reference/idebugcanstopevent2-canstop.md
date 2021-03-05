@@ -1,5 +1,6 @@
 ---
-title: IDebugCanStopEvent2：： CanStop |Microsoft Docs
+description: 通知偵錯工具引擎 (DE) 是否要在目前的程式碼位置停止，或只是繼續執行。
+title: IDebugCanStopEvent2：： CanStop |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d3563fb46b9117ff7f142c5822c708deda34fda
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38b4d528ae1aa5a89853dc4873a9c07aa051a14c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880992"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173632"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
 通知偵錯工具引擎 (DE) 是否要在目前的程式碼位置停止，或只是繼續執行。

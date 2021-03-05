@@ -1,5 +1,6 @@
 ---
-title: DEBUG_PROPERTY_INFO |Microsoft Docs
+description: 包含 debug 屬性的相關資訊。
+title: DEBUG_PROPERTY_INFO |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98cd4292692fe9d9b965790ce9a0a30d55423454
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0b02ca1f8c85f81096954fb416cc73ee400b9ba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899089"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170584"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 包含 debug 屬性的相關資訊。

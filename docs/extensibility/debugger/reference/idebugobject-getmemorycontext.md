@@ -1,5 +1,6 @@
 ---
-title: IDebugObject：： GetMemoryCoNtext |Microsoft Docs
+description: 取得表示物件值之位址的記憶體內容。
+title: IDebugObject：： GetMemoryCoNtext |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2c7dbdace7c40ccba25cdce0306e6f0998489f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fabcee7bc0f4501f1440345b648fb93dab84d16
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920781"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172108"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 取得表示物件值之位址的記憶體內容。

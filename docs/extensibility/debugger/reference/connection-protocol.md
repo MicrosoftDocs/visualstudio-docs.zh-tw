@@ -1,5 +1,6 @@
 ---
-title: CONNECTION_PROTOCOL |Microsoft Docs
+description: 表示用來在 debug server 與 debug 封裝之間進行通訊的通訊協定 (DE) 。
+title: CONNECTION_PROTOCOL |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d25068b71689ffbc9e472addbd6ca3663db267c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 24ac267552166bea43df77f31cb79d8198fb7514
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891276"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170857"
 ---
 # <a name="connection_protocol"></a>CONNECTION_PROTOCOL
 表示用來在 debug server 與 debug 封裝之間進行通訊的通訊協定 (DE) 。

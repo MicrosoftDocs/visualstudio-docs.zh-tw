@@ -1,5 +1,6 @@
 ---
-title: DEBUGREF_INFO_FLAGS |Microsoft Docs
+description: 指定要針對 debug 參考物件取得哪些資訊。
+title: DEBUGREF_INFO_FLAGS |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01a26b6e10fae095bcf7284a6b5dbc12394d2541
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: da408e159f654f9eb707e71710a178d22881d715
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938989"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170506"
 ---
 # <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
 指定要針對 debug 參考物件取得哪些資訊。

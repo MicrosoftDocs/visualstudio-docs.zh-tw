@@ -1,5 +1,6 @@
 ---
-title: BSTR_ARRAY |Microsoft Docs
+description: 描述字串陣列的結構。
+title: BSTR_ARRAY |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d16eb78cdb6c6b9e665dda8410f46d4cf61ee69a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5fb882bb31f6fd525d00dc134e042e9bce9398f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882208"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170968"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
 描述字串陣列的結構。

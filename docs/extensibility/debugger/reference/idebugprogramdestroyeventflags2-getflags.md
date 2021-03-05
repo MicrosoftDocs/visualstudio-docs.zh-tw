@@ -1,5 +1,6 @@
 ---
-title: IDebugProgramDestroyEventFlags2：： GetFlags |Microsoft Docs
+description: 抓取程式損毀旗標。
+title: IDebugProgramDestroyEventFlags2：： GetFlags |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9454fbe515bca21b4d9bd0dc05016d69fdc30d28
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be871d325cd63e70fb2857ee3f89f2cc854c89fc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959723"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171837"
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
 抓取程式損毀旗標。

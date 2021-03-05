@@ -1,5 +1,6 @@
 ---
-title: IDebugProperty3：： CreateObjectID |Microsoft Docs
+description: 建立這個屬性的唯一識別碼，以確保它在所有其他屬性中都是唯一的。
+title: IDebugProperty3：： CreateObjectID |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9d555d7b0480d910a5cb88397db5bfd7e734fd1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e82e11d83c77131e47d815529813484d2869cdc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896119"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171435"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 建立這個屬性的唯一識別碼，以確保它在所有其他屬性中都是唯一的。

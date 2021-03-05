@@ -1,5 +1,6 @@
 ---
-title: FIELD_INFO_FIELDS |Microsoft Docs
+description: 指定要對 IDebugField 物件取得哪些資訊。
+title: FIELD_INFO_FIELDS |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8cec892d65dc4e5d081063fa6b31def06fb7f85c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 024c12d5112398e055141a8db4995f2801ca5401
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936908"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170285"
 ---
 # <a name="field_info_fields"></a>FIELD_INFO_FIELDS
 指定要對 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 物件取得哪些資訊。

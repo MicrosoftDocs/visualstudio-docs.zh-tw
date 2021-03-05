@@ -1,5 +1,6 @@
 ---
-title: IDebugBinder：： GetMemoryCoNtext |Microsoft Docs
+description: 這個方法會將物件位置或記憶體位址轉換成記憶體內容。
+title: IDebugBinder：： GetMemoryCoNtext |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c203e83a595562e604d8c32b09056c8544bfd1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e31df905c35fa81e3e56e32ef969f9663054dc5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938965"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174090"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 這個方法會將物件位置或記憶體位址轉換成記憶體內容。

@@ -1,5 +1,6 @@
 ---
-title: dwTYPE_KIND |Microsoft Docs
+description: 指定如何解讀 IDebugField 物件的類型。
+title: dwTYPE_KIND |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e13d02cb08f957636a81bf4a985f1d7006b6c2ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f51a84951cdfe09e13454035c3219324e9a68368
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908102"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170324"
 ---
 # <a name="dwtype_kind"></a>dwTYPE_KIND
 指定如何解讀 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 物件的類型。

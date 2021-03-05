@@ -1,5 +1,6 @@
 ---
-title: IDebugIDECallback：:D isplayMessage |Microsoft Docs
+description: 將指定的訊息字串傳送至偵錯工具的輸出視窗。
+title: IDebugIDECallback：:D isplayMessage |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 74fc337137ac6ddd523e0584333865661abf3427
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab7223d065df0bb77c2782ef7f66d14843a23f62
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838678"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172541"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
 將指定的訊息字串傳送至偵錯工具的輸出視窗。

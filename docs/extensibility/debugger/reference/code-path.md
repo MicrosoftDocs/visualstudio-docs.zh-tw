@@ -1,5 +1,6 @@
 ---
-title: CODE_PATH |Microsoft Docs
+description: 描述方法或函式呼叫。
+title: CODE_PATH |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d4bba942b0740fba98e88a3cddcecfcd43d7d215
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ecdbbfdbcffbb8b1aa6246e2e99ef6eabfa1f19
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900303"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170955"
 ---
 # <a name="code_path"></a>CODE_PATH
 描述方法或函式呼叫。

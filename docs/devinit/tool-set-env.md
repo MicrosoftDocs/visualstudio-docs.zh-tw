@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 89f62550d75a86c6d48848a31c99ca169964faa0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82f0def521a7a5a6bf4bd4595d32775324a0a39c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950419"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171019"
 ---
 # <a name="set-env"></a>set-env
 
@@ -55,7 +55,7 @@ ms.locfileid: "99950419"
 
 ## <a name="usage-in-a-codespace"></a>Codespace 中的使用方式
 
-如果您使用的是 codespace，可以透過自訂檔案中的屬性，來設定 codespace 中使用的環境變數 `remoteEnv` [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) 。
+如果您使用的是 codespace，可以透過自訂檔案中的屬性，來設定 codespace 中使用的環境變數 `remoteEnv` [`.devcontainer.json`](https://code.visualstudio.com/docs/remote/devcontainerjson-reference) 。
 
 ## <a name="example-usage"></a>使用方式範例
 以下是如何使用執行的範例 `set-env` `.devinit.json` 。

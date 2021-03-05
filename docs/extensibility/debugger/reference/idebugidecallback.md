@@ -1,5 +1,6 @@
 ---
-title: IDebugIDECallback |Microsoft Docs
+description: 讓運算式評估工具 (EE) 在偵錯工具的輸出視窗中顯示訊息。
+title: IDebugIDECallback |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83243899bdc11c58e76c35b6d9eb7b9555794374
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0ef2072967aad5f2cd012283b0c6f4ac7b9b3be
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838652"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172554"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]

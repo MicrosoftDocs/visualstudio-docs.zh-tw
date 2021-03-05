@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 285d624debed6dc498e3d274af2839137b5094d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900470"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171275"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：發佈已啟用視覺樣式的 WPF 應用程式
 
-視覺效果樣式可讓您根據使用者選擇的主題，變更通用控制項的外觀。 依預設，不會針對 Windows Presentation Foundation (WPF) 應用程式啟用視覺化樣式，因此您必須手動加以啟用。 不過，為 WPF 應用程式啟用視覺化樣式，然後發佈方案會導致錯誤。 本主題說明如何解決此錯誤，以及在啟用視覺化樣式的情況下發行 WPF 應用程式的程式。 如需視覺化樣式的詳細資訊，請參閱 [視覺化樣式總覽](/windows/desktop/Controls/visual-styles-overview)。 如需有關錯誤訊息的詳細資訊，請參閱 [疑難排解 ClickOnce 部署中的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。
+視覺效果樣式可讓您根據使用者選擇的主題，變更通用控制項的外觀。 根據預設，不會針對 Windows Presentation Foundation (WPF) 應用程式啟用視覺化樣式，因此您必須手動加以啟用。 不過，為 WPF 應用程式啟用視覺化樣式，然後發佈方案會導致錯誤。 本主題說明如何解決此錯誤，以及在啟用視覺化樣式的情況下發行 WPF 應用程式的程式。 如需視覺化樣式的詳細資訊，請參閱 [視覺化樣式總覽](/windows/desktop/Controls/visual-styles-overview)。 如需有關錯誤訊息的詳細資訊，請參閱 [疑難排解 ClickOnce 部署中的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。
 
  若要解決此錯誤併發行解決方案，您必須執行下列工作：
 
@@ -49,7 +49,7 @@ ms.locfileid: "99900470"
 
      下列程式示範如何開啟與專案相關聯的資訊清單檔案。
 
-    **開啟 Visual Basic 專案中的資訊清單檔**
+    **若要在 Visual Basic 專案中開啟資訊清單檔**
 
     1. 在功能表列上，選擇[專案 *]、[專案名稱]* **屬性**，其中 *專案* 名稱是您 WPF 專案的名稱。
 
@@ -110,9 +110,9 @@ ms.locfileid: "99900470"
 
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>將資訊清單檔案內嵌至已發佈方案的可執行檔
 
-1. 開啟 **Visual Studio 命令提示** 字元。
+1. 開啟 **Visual Studio 的開發人員命令提示** 字元。
 
-    如需如何開啟 **Visual Studio 命令提示** 字元的詳細資訊，請參閱 [命令提示](/dotnet/framework/tools/developer-command-prompt-for-vs)字元。
+    如需如何開啟 Visual Studio 開發人員命令提示字元的詳細資訊，請參閱 [開發人員命令提示字元和開發人員 PowerShell](../ide/reference/command-prompt-powershell.md)。
 
    > [!NOTE]
    > 其餘步驟會對您的解決方案進行下列假設：
@@ -179,7 +179,7 @@ ms.locfileid: "99900470"
 
 ## <a name="see-also"></a>另請參閱
 
--[針對 ClickOnce 部署中的特定錯誤進行疑難排解](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [疑難排解 ClickOnce 部署的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [視覺化樣式總覽](/windows/desktop/Controls/visual-styles-overview)
 - [啟用視覺化樣式](/windows/desktop/Controls/cookbook-overview)
-- [命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)
+- [開發人員命令提示字元和開發人員 PowerShell](../ide/reference/command-prompt-powershell.md)

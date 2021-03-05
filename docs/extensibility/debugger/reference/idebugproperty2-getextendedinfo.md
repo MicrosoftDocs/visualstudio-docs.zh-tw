@@ -1,5 +1,6 @@
 ---
-title: IDebugProperty2：： GetExtendedInfo |Microsoft Docs
+description: 取得屬性的延伸資訊。
+title: IDebugProperty2：： GetExtendedInfo |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1bb9fe21b1dc004d5a124a1146e6f7610fbe8699
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 004c7d545dbaaa20016fd94febe999420305fc7a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916056"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171495"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 取得屬性的延伸資訊。
@@ -56,7 +57,7 @@ int GetExtendedInfo (
 
  此方法通常會辨識下列 Guid (GUID 值是針對 c # 指定的，因為名稱無法在任何元件) 中使用。 您可以建立其他 Guid 以供內部使用。
 
-|名稱|GUID|Description|
+|名稱|GUID|描述|
 |----------|----------|-----------------|
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|傳回 `IUnknown` 檔的介面。 一般而言， [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) 介面可從這個 `IUnknown` 介面取得。|
 |guidCodeCoNtext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|傳回 `IUnknown` 檔內容的介面。 一般而言， [IDebugDocumentCoNtext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 介面可從這個 `IUnknown` 介面取得。|

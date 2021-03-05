@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e10f9b628d1d9fbbdb2911977fe7e63b1a7b6d57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04ef9834fdc66256b601ecdcf156e4d290447ce3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957474"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171314"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行單元測試
 
@@ -67,7 +67,7 @@ describe('Test Suite 1', function() {
 > [!Note]
 > 單元測試選項優先於個別檔案的設定。
 
-開啟 test explorer 之後 (選擇 [**測試**  >  **Windows**  >  **test explorer**) ]，Visual Studio 探索並顯示測試。 如果一開始未顯示測試，則重建專案以重新整理清單。
+開啟 test explorer 之後 (選擇 [**測試**  >  **Windows**  >  **test explorer**) ]，Visual Studio 會探索並顯示測試。 如果一開始未顯示測試，則重建專案以重新整理清單。
 
 ![測試總管](../javascript/media/UnitTestsDiscoveryMocha.png)
 
@@ -97,7 +97,7 @@ describe('Test Suite 1', function() {
 
 ### <a name="run-tests-from-the-command-line"></a>從命令列執行測試
 
-您可以使用下列命令，從 [開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs) 執行 Visual Studio 的測試：
+您可以使用下列命令，在 [Visual Studio 的開發人員命令提示](../ide/reference/command-prompt-powershell.md) 字元中執行測試：
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
@@ -152,11 +152,12 @@ Test execution time: 1.5731 Seconds
 探索可用的測試架構會在 Visual Studio 啟動時發生。 如果在 Visual Studio 執行時新增架構，請重新啟動 Visual Studio 來偵測此架構。 不過，當您對實作進行變更時，不需要重新啟動。
 
 ## <a name="unit-tests-in-other-project-types"></a>其他專案類型中的單元測試
+
 您並不限於只能在 Node.js 專案中撰寫單元測試。 當您將 TestFramework 和 TestRoot 屬性新增至任何 C# 或 Visual Basic 專案時，會列舉那些測試，且您可以使用 [測試總管] 視窗執行它們。
 
 若要啟用此功能，請以滑鼠右鍵按一下 [方案總管] 中的專案節點、選擇 [卸載專案]，然後選擇 [編輯專案]。 然後在專案檔中，將下列兩個項目新增至屬性群組。
 
-> [!NOTE]
+> [!IMPORTANT]
 > 請確定您要新增項目的屬性群組不包含指定的條件。
 > 這可能會導致非預期的行為。
 
@@ -170,6 +171,7 @@ Test execution time: 1.5731 Seconds
 接下來，將測試新增至您指定的測試根資料夾，它們便可在 [測試總管] 視窗中執行。 如果一開始未出現，您可能需要重新建置專案。
 
 ### <a name="unit-test-net-core-and-net-standard"></a>.NET Core 與 .NET Standard 中的單元測試
+
 除了上述屬性之外，您還將需要安裝 NuGet 套件 [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) 並設定屬性：
 
 ```xml

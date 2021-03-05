@@ -1,5 +1,6 @@
 ---
-title: IDebugProgram2：： WriteDump |Microsoft Docs
+description: 將傾印寫入檔案。
+title: IDebugProgram2：： WriteDump |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 265c77acdb15069c1fcd7f33d93d4ff74a528eca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0e4c90034d19635993196a0cd00ffcb06f26433
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896145"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171923"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 將傾印寫入檔案。

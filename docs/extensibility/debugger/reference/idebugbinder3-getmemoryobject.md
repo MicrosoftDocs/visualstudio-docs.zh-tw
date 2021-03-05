@@ -1,5 +1,6 @@
 ---
-title: IDebugBinder3：： GetMemoryObject |Microsoft Docs
+description: 這個方法會抓取代表這個物件所系結之記憶體的記憶體物件。
+title: IDebugBinder3：： GetMemoryObject |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3408237de91e822e2ea3cbd95fad40c859267c1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ca708c9a6fd80a7a04d8202a73f0bce99102ff1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916313"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173970"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 這個方法會抓取代表這個物件所系結之記憶體的記憶體物件。

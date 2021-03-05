@@ -1,5 +1,6 @@
 ---
-title: IDebugProgram2：： Terminate |Microsoft Docs
+description: 終止程式。
+title: IDebugProgram2：： Terminate |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 74a186bd39dab7ab1f7228504070f50b3aa6c311
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 880bf4e727d90c19cf11f42cc3020124235bb1e2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911897"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171979"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 終止程式。

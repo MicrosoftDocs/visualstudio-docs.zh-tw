@@ -1,5 +1,6 @@
 ---
-title: CONSTRUCTOR_ENUM |Microsoft Docs
+description: 選取不同類型的函式。
+title: CONSTRUCTOR_ENUM |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3fe47e53b1b95f69c80fd248f59de4cf23bf9c88
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e3a8eaae37b304c438c18ec2a683c19da00ab16
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913017"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170792"
 ---
 # <a name="constructor_enum"></a>CONSTRUCTOR_ENUM
 選取不同類型的函式。

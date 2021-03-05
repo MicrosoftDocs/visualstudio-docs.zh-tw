@@ -1,5 +1,6 @@
 ---
-title: DOCCONTEXT_COMPARE |Microsoft Docs
+description: 指定用於比較兩個檔內容的準則。
+title: DOCCONTEXT_COMPARE |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db66748a1665d5ab965f20295258efd65ec43d38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f64e2e8ec365daa84cbd1d4f7e3e9bdc43391d5e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953717"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170428"
 ---
 # <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
 指定用於比較兩個檔內容的準則。

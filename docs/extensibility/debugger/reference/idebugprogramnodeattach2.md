@@ -1,5 +1,6 @@
 ---
-title: IDebugProgramNodeAttach2 |Microsoft Docs
+description: 允許程式節點在嘗試附加至相關聯的程式時收到通知。
+title: IDebugProgramNodeAttach2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74a25e4eefe260dd61dc951118cdb6390a61b52d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa623097224afc4f3a6b93d6b98ece0e14149ca5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898501"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171730"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 允許程式節點在嘗試附加至相關聯的程式時收到通知。

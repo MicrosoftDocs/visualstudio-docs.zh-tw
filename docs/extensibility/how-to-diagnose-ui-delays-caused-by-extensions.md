@@ -1,23 +1,23 @@
 ---
-title: 診斷 Visual Studio 中的擴充功能 UI 延遲 |Microsoft Docs
-description: 如果 UI 延遲可能是延伸模組造成的，Visual Studio 會通知您。 瞭解如何診斷延伸模組程式碼中造成 UI 延遲的情況。
+title: 診斷 Visual Studio 中的擴充功能 UI 延遲 |Microsoft 檔
+description: Visual Studio 會在 UI 延遲可能因為擴充功能而造成的情況時通知您。 瞭解如何診斷延伸模組程式碼中造成 UI 延遲的情況。
 ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: conceptual
-author: PooyaZv
-ms.author: pozandev
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload: multiple
-ms.openlocfilehash: 508fdd44a1c73f66d88317b7ec304e810f5f12e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7bc43d806595c7653421daec6efabb087cc1071c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890795"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171353"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>如何：診斷延伸模組造成的 UI 延遲
 
-當 UI 變得沒有回應時，Visual Studio 會檢查 UI 執行緒的呼叫堆疊，從分葉開始並朝基底處理。 如果 Visual Studio 判斷呼叫堆疊框架屬於已安裝並啟用之延伸模組的一部分，則會顯示通知。
+當 UI 變得沒有回應時，Visual Studio 會檢查 UI 執行緒的呼叫堆疊，從分葉開始並處理基底。 如果 Visual Studio 判斷呼叫堆疊框架屬於已安裝並啟用之延伸模組的一部分，則會顯示通知。
 
 ![UI 延遲 (無回應) 通知](media/ui-delay-notification-in-vs.png)
 
@@ -26,7 +26,7 @@ ms.locfileid: "99890795"
 本檔說明如何診斷延伸模組程式碼中會造成 UI 延遲通知的內容。
 
 > [!NOTE]
-> 請勿使用 Visual Studio 實驗性實例來診斷 UI 延遲。 使用實驗性實例時，會關閉 UI 延遲通知所需的呼叫堆疊分析部分，這表示可能不會顯示 UI 延遲通知。
+> 請勿使用 Visual Studio 實驗實例來診斷 UI 延遲。 使用實驗性實例時，會關閉 UI 延遲通知所需的呼叫堆疊分析部分，這表示可能不會顯示 UI 延遲通知。
 
 診斷程式的總覽如下所示：
 1. 識別觸發程式案例。
@@ -45,7 +45,7 @@ ms.locfileid: "99890795"
 
 ## <a name="restart-vs-with-activity-logging-on"></a>重新開機 VS 活動記錄
 
-Visual Studio 可以產生「活動記錄」，以提供在對問題進行偵錯工具時有用的資訊。 若要在 Visual Studio 中開啟活動記錄，請使用 `/log` 命令列選項開啟 Visual Studio。 Visual Studio 啟動之後，活動記錄會儲存在下列位置：
+Visual Studio 可以產生「活動記錄」，以提供在對問題進行偵錯工具時有用的資訊。 若要在 Visual Studio 中開啟活動記錄，請使用 `/log` 命令列選項開啟 Visual studio。 Visual Studio 啟動之後，活動記錄會儲存在下列位置：
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
@@ -61,7 +61,7 @@ Visual Studio 可以產生「活動記錄」，以提供在對問題進行偵錯
 Perfview.exe collect C:\trace.etl /BufferSizeMB=1024 -CircularMB:2048 -Merge:true -Providers:*Microsoft-VisualStudio:@StacksEnabled=true -NoV2Rundown /kernelEvents=default+FileIOInit+ContextSwitch+Dispatcher
 ```
 
-這會啟用「Microsoft VisualStudio」提供者，這是提供者 Visual Studio 使用於與 UI 延遲通知相關的事件。 它也會針對 PerfView 可用來產生 **執行緒時間堆疊** 視圖的核心提供者，指定關鍵字。
+這會啟用「Microsoft VisualStudio」提供者，此提供者是 Visual Studio 針對與 UI 延遲通知相關的事件所使用的提供者。 它也會針對 PerfView 可用來產生 **執行緒時間堆疊** 視圖的核心提供者，指定關鍵字。
 
 ## <a name="trigger-the-notification-to-appear-again"></a>觸發通知以再次顯示
 
@@ -73,7 +73,7 @@ Perfview.exe collect C:\trace.etl /BufferSizeMB=1024 -CircularMB:2048 -Merge:tru
 
 ## <a name="examine-the-activity-log-to-get-the-delay-id"></a>檢查活動記錄以取得延遲識別碼
 
-如先前所述，您可以在 *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml* 找到活動記錄。 每次 Visual Studio 偵測到延伸模組 UI 延遲時，它就會將節點寫入至活動記錄以 `UIDelayNotifications` 做為來源。 此節點包含 UI 延遲的四項資訊：
+如先前所述，您可以在 *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml* 找到活動記錄。 每次 Visual Studio 偵測到延伸模組 UI 延遲時，都會將節點寫入至活動記錄以 `UIDelayNotifications` 做為來源。 此節點包含 UI 延遲的四項資訊：
 
 - UI 延遲識別碼，這個序號可唯一識別 VS 會話中的 UI 延遲
 - 會話識別碼，可唯一識別從開始到關閉的 Visual Studio 會話
@@ -139,7 +139,7 @@ PerfView 可能需要幾分鐘的時間來處理並開啟追蹤。 開啟追蹤�
 在 [ **執行緒時間堆疊** ] 中，您可以在頁面左上角，將時間範圍設定為我們在上一個步驟中計算的值，然後按 **enter** ，以便將堆疊調整為該時間範圍。
 
 > [!NOTE]
-> 如果在已開啟 Visual Studio 之後啟動追蹤收集，則判斷哪個執行緒是 UI (啟動) 執行緒可以違反直覺。 不過，UI 堆疊上的第一個元素 (啟動) 執行緒最可能一律是作業系統 Dll (*ntdll.dll* 和 *kernel32.dll*) 之後再接著 `devenv!?` `msenv!?` 。 此順序有助於識別 UI 執行緒。
+> 如果在 Visual Studio 已經開啟之後啟動追蹤收集，則判斷哪個執行緒是 UI (啟動) 執行緒可以違反直覺。 不過，UI 堆疊上的第一個元素 (啟動) 執行緒最可能一律是作業系統 Dll (*ntdll.dll* 和 *kernel32.dll*) 之後再接著 `devenv!?` `msenv!?` 。 此順序有助於識別 UI 執行緒。
 
  ![識別啟動執行緒](media/ui-delay-startup-thread.png)
 
@@ -155,7 +155,7 @@ PerfView 在 [說明] 功能表下有 **詳細的指引** ，可讓您用來識�
 * [https://github.com/Microsoft/vs-threading/blob/master/doc/index.md](https://github.com/Microsoft/vs-threading/blob/master/doc/index.md)
 * [https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md)
 
-您也可以使用新的 Visual Studio 靜態分析器 (NuGet [) 套件的](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers) 延伸模組），以提供撰寫有效率擴充功能的最佳作法指引。 查看 [VS SDK 分析器](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) 和 [執行緒分析器](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md)的清單。
+您也可以使用新的 Visual Studio 靜態分析器 (的 [NuGet 套件) ，其中提供](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers) 撰寫有效率延伸模組的最佳作法指引。 查看 [VS SDK 分析器](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) 和 [執行緒分析器](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md)的清單。
 
 > [!NOTE]
 > 如果您因為相依性無法控制 (而無法處理無回應，例如，如果您的延伸模組必須呼叫 UI 執行緒上的同步 VS 服務) ，我們想要知道它的相關資訊。 如果您是 Visual Studio 合作夥伴方案的成員，您可以提交開發人員支援要求來洽詢我們。 否則，請使用「回報問題」工具來提交您的意見反應，並 `"Extension UI Delay Notifications"` 將其包含在標題中。 也請包含您分析的詳細描述。

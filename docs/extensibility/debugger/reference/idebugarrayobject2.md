@@ -1,5 +1,6 @@
 ---
-title: IDebugArrayObject2 |Microsoft Docs
+description: 代表 managed 陣列物件，並允許運算式評估工具 (EE) 判斷陣列 (下限) 的基底索引。
+title: IDebugArrayObject2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 418ec9bdef9621f7623e254856ae33dec501a9c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6bb73834f53e22df63682663539b5f01685b30
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870021"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174120"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]

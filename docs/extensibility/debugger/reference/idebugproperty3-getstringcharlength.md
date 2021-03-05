@@ -1,5 +1,6 @@
 ---
-title: IDebugProperty3：： GetStringCharLength |Microsoft Docs
+description: 傳回相關聯屬性之字串中的字元數。
+title: IDebugProperty3：： GetStringCharLength |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3189a7c84ed36827ab48b27c8f727314eb34983
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eaf0792b6e0c2311b7eeb01f12b01a485739c6c9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963116"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171379"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 傳回相關聯屬性之字串中的字元數。
@@ -41,7 +42,7 @@ int GetStringCharLength(
 
 ## <a name="parameters"></a>參數
 
-|參數|Description|
+|參數|描述|
 |---------------|-----------------|
 |`pLen`|擴展傳回屬性字串中的字元數。|
 

@@ -1,5 +1,6 @@
 ---
-title: CANSTOP_REASON |Microsoft Docs
+description: 用來判斷程式是否可以在到達執行的特定點之後停止執行。
+title: CANSTOP_REASON |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b6756d574c36d6381b606be597ca0e54e7945763
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: def5bdbb6433f6a154eb6f84a88fb39004bc41ae
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874352"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170994"
 ---
 # <a name="canstop_reason"></a>CANSTOP_REASON
 用來判斷程式是否可以在到達執行的特定點之後停止執行。
