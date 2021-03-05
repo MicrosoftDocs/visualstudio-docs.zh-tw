@@ -1,4 +1,5 @@
 ---
+description: IDiaStackWalkHelper：： get_registerValue 抓取 register 的值。
 title: IDiaStackWalkHelper::get_registerValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f5df55043c1a29a95cd0f8883c2a6546e8153320
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa87529f90b20d7d9099dd76e294e406ae0c7a08
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863813"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161177"
 ---
 # <a name="idiastackwalkhelperget_registervalue"></a>IDiaStackWalkHelper::get_registerValue
 捕獲暫存器的值。

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 036c59e54ba2e2068cf1bfa7eb05b67059cdf855
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a3ac2e91ed9166a2eb8bdc4a19f2143c4fc71640
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942941"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161309"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>適用於 C# 開發人員的 Visual Studio 生產力指南
 
@@ -62,7 +62,7 @@ ms.locfileid: "99942941"
 | **Ctrl** +**Shift**+**/** | 切換區塊註解/取消註解 | 此命令會根據您所選取的項目來新增或移除區塊註解 |
 
 > [!NOTE]
-> 有些擴充功能會將預設的 Visual Studio 按鍵繫結關係解除繫結。 若要使用上述命令，請前往 [**工具** 匯  >  **入和匯出設定**  >  **重設所有設定** 或 **工具**  >  **選項** 的  >  **鍵盤**  >  **重設**]，將您的 keybindings.json 還原為 Visual Studio 的預設值。
+> 有些擴充功能會將預設的 Visual Studio 按鍵繫結關係解除繫結。 若要使用上述命令，請前往 [**工具** 匯  >  **入和匯出設定**  >  **重設所有設定** 或 **工具**  >  **選項** 的  >  **鍵盤**  >  **重設**]，將您的 keybindings.json 還原至 Visual Studio 的預設值。
 
 如需鍵盤快速鍵和命令的詳細資訊，請參閱[生產力快速鍵](../ide/productivity-shortcuts.md)及[常用鍵盤快速鍵](default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)。
 
@@ -143,10 +143,23 @@ Visual Studio 提供許多重構、程式碼產生動作，以及程式碼修正
 
 數個社群成員撰寫了新增額外程式碼檢查的免費延伸模組：
 
+::: moniker range="vs-2017"
+
 - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
 - [ Visual Studio 的 SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
 - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 - [CodeCracker](https://www.nuget.org/packages/codecracker.CSharp/) \(英文\)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2019)
+- [ Visual Studio 的 SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2019)
+- [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
+- [CodeCracker](https://www.nuget.org/packages/codecracker.CSharp/) \(英文\)
+
+::: moniker-end
 
 ![Visual Studio 中的重構](../ide/media/VSGuide_CodeAnalysis.png)
 
@@ -228,7 +241,7 @@ Visual Studio 有許多功能，可協助您搜尋和[巡覽程式碼](../ide/na
 
 | 功能 | 詳細資料 | 如何啟用 |
 |-|-|-|
-| 在 [方案總管] 中尋找檔案 | 在 [方案總管] 中反白顯示使用中的檔案 | **工具**  > **選項**  > **專案和方案**  > **追蹤方案總管中的活動專案** |
+| 在 [方案總管] 中尋找檔案 | 在 [方案總管] 中反白顯示使用中的檔案 | **工具**  > **選項**  > **專案和方案**  > **在 Solution Explorer 中追蹤活動專案** |
 | 針對參考組件與 NuGet 套件中的型別新增 Using | 顯示包含程式碼修正的錯誤燈泡，以針對未參考的型別來安裝 NuGet 套件 | **工具**  > **選項**  > **文字編輯器**  > **C #**  > **Advanced**  > **針對參考元件中的類型建議 using** ，並 **針對 NuGet 套件中的類型建議 using** |
 | 啟用完整解決方案分析 | 在 [**錯誤清單**] 中查看方案中的所有錯誤 | **工具**  > **選項**  > **文字編輯器**  > **C #**  > **Advanced**  > **啟用完整解決方案分析** |
 | 啟用巡覽至反向編譯的原始碼 | 允許從外部來源對類型/成員啟用 [移至定義]，並使用 ILSpy 解編程式來顯示方法主體 | **工具**  > **選項**  > **文字編輯器**  > **C #**  > **Advanced**  > **啟用流覽至反向組譯來源** |

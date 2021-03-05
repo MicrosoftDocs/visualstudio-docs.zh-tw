@@ -1,5 +1,6 @@
 ---
-title: UsingNameSpace |Microsoft Docs
+description: 某些符號可能是由命名空間所參考，之後會以 SymTagUsingNameSpace 標記來識別。
+title: UsingNameSpace |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c42899aaf829d4c12efdcb6e1daa004d7611960
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1fde0be17059342c3b00ba43cab93f4464e31f1e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873384"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161540"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 某些符號可能是由命名空間所參考，之後會以標記來識別 `SymTagUsingNameSpace` 。

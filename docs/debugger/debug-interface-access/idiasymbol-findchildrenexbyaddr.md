@@ -1,4 +1,5 @@
 ---
+description: 抓取符號的子系，此符號在指定的位址有效。
 title: IDiaSymbol::findChildrenExByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec8c7136347406aa49aad65600e59950b308e4a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 254ab98e8b1f1ec88fc946221bb2e15e2af76ffd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854658"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161156"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
 抓取符號的子系，此符號在指定的位址有效。

@@ -1,4 +1,5 @@
 ---
+description: 指定符號的類型。
 title: SymTagEnum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66705cdc213d8dd143856ba6a8e378505085c73a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 72d07b0609fd9d66507c898854810043f2911e0c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853174"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161603"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 指定符號的類型。

@@ -1,4 +1,5 @@
 ---
+description: 每個類別、結構和等位都是由 SymTagUDT 符號來識別。
 title: UDT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d49d41c6f399391ac748125cb9012630784827c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d4479c41bfe68e5dcaa4265dd96091fe3938b775
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873398"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161575"
 ---
 # <a name="udt"></a>UDT
 每個類別、結構和等位都是以 `SymTagUDT` 符號來識別。 每個成員、函式、資料或巢狀型別，以及每個基類，都會顯示為使用者定義型別的類別子系 (UDT) 。

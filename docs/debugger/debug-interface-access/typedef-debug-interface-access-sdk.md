@@ -1,5 +1,6 @@
 ---
-title: Typedef (Debug 介面存取 SDK) |Microsoft Docs
+description: 具有 SymTagTypedef 標記的符號會引入其他類型的名稱。
+title: Typedef (Debug 介面存取 SDK) |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aaaafb263e2276e760750d2f13217e72869a6aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0ef070e5efa1b50bc71b6e5a541d05c3374a29ad
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873412"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161568"
 ---
 # <a name="typedef-debug-interface-access-sdk"></a>Typedef (偵錯介面存取 SDK)
 具有標記的符號會 `SymTagTypedef` 引入其他類型的名稱。

@@ -1,5 +1,6 @@
 ---
-title: IDebugProcess2：： Attach |Microsoft Docs
+description: 將會話 debug manager (SDM) 附加至進程。
+title: IDebugProcess2：： Attach |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 462b2299a658359e81fc3641e590b95ab183a24e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73dbe76a32e67794736fd26595378485879b00b8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874174"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161440"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 將會話 debug manager (SDM) 附加至進程。

@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： findChildrenEx |Microsoft Docs
+description: 抓取符號的子系。 如果程式是以優化的方式編譯，則傳回的本機符號會包含即時範圍資訊。
+title: IDiaSymbol：： findChildrenEx |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68c13c433d10bb462c78397b012000f0f245327a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e667766974b8cc97a171567bd267c9ac0f245229
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863715"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161163"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 抓取符號的子系。 如果程式是以優化的方式編譯，則傳回的本機符號會包含即時範圍資訊。

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1088cae031dc3498d2c5cdcd33db8d42f721b7d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 659e0f4e46d6960a2a1350c605e55357a84ec115
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954419"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161296"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>針對「開啟資料夾」自訂建置及對工作進行偵錯
 
@@ -52,7 +52,7 @@ Visual Studio 知道如何執行許多不同的語言和程式碼基底，但它
 
 ### <a name="define-custom-build-tasks"></a>定義自訂建置工作
 
-如果您的程式碼基底使用 Visual Studio 無法辨識的自訂組建工具，則在您完成一些設定步驟前，將無法在 Visual Studio 中執行程式碼並對它進行偵錯。 Visual Studio 有提供 *建置工作*，可讓您告訴 Visual Studio 建置、重新建置及清除您程式碼的方式。 組建工作檔案 *上的tasks.vs.js* 會將 Visual Studio 內部開發迴圈與您程式碼基底所使用的自訂群組建工具結合在一起。
+如果您的程式碼基底使用 Visual Studio 無法辨識的自訂組建工具，則在您完成一些設定步驟前，將無法在 Visual Studio 中執行程式碼並對它進行偵錯。 Visual Studio 有提供 *建置工作*，可讓您告訴 Visual Studio 建置、重新建置及清除您程式碼的方式。 組建工作檔案 *上的tasks.vs.js* 將 Visual Studio 內部開發迴圈與您程式碼基底所使用的自訂群組建工具結合在一起。
 
 我們以包含名為 *hello.cs* 之單一 C# 檔案的程式碼基底為例。 這類程式碼基底的 Makefile 看起來可能會像這樣：
 
@@ -203,7 +203,7 @@ bin:
 
 您可以在 `appliesTo` 欄位中指定任何檔案或資料夾的名稱來針對它們建立工作，例如 `"appliesTo": "hello.js"`。 下列檔案遮罩可作為值使用：
 
-|檔案遮罩|Description|
+|檔案遮罩|描述|
 |-|-|
 |`"*"`| 工作可供工作區中的所有檔案及資料夾使用|
 |`"*/"`| 工作可供工作區中的所有資料夾使用|
@@ -215,9 +215,9 @@ bin:
 
 #### <a name="macros-for-tasksvsjson"></a>適用於 tasks.vs.json 的巨集
 
-|巨集|Description|
+|巨集|描述|
 |-|-|
-|`${env.<VARIABLE>}`| 指定針對開發人員命令提示字元所設定的任何環境變數 (例如 ${env.PATH}、${env.COMSPEC} 等)。 如需詳細資訊，請參閱[適用於 Visual Studio 的開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)。|
+|`${env.<VARIABLE>}`| 指定針對開發人員命令提示字元所設定的任何環境變數 (例如 ${env.PATH}、${env.COMSPEC} 等)。 如需詳細資訊，請參閱 [開發人員命令提示字元和開發人員 PowerShell](../ide/reference/command-prompt-powershell.md)。|
 |`${workspaceRoot}`| 工作區資料夾的完整路徑 (例如 C:\sources\hello)|
 |`${file}`| 選取來執行此工作之檔案或資料夾的完整路徑 (例如 C:\sources\hello\src\hello.js)|
 |`${relativeFile}`| 檔案或資料夾的相對路徑 (例如 src\hello.js)|

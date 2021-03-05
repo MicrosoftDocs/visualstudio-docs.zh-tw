@@ -1,5 +1,6 @@
 ---
-title: IDebugProgramPublisher2：:P ublishProgramNode |Microsoft Docs
+description: 使程式節點可供 debug engine (DEs) 和會話 debug manager (SDM) 使用。
+title: IDebugProgramPublisher2：:P ublishProgramNode |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c93ce91b664a1d0ccb13534eb6109538df46f35b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 56d407e22aabb396b331c14047f5a1753a5adf09
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959541"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161322"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 使程式節點可供 debug engine (DEs) 和會話 debug manager (SDM) 使用。
