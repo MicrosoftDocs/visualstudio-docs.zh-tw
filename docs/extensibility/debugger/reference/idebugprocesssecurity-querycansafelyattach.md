@@ -1,5 +1,6 @@
 ---
-title: IDebugProcessSecurity：： QueryCanSafelyAttach |Microsoft Docs
+description: 此方法可讓埠供應商在使用者附加至不安全的進程之前顯示警告。
+title: IDebugProcessSecurity：： QueryCanSafelyAttach |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa3f2c02610b5fbe99335ccea6d7c566a0fe58df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6a586983d64e8be27b15a0514234d1a321e943
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931457"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166160"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
 此方法可讓埠供應商在使用者附加至不安全的進程之前顯示警告。

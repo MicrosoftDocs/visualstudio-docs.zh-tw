@@ -1,5 +1,6 @@
 ---
-title: IDebugBoundBreakpoint2：： SetCondition |Microsoft Docs
+description: 設定或變更與此系結中斷點相關聯的條件。
+title: IDebugBoundBreakpoint2：： SetCondition |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4c90c75d1ddfe4edaeb47e132f5b049ee8d29a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7aa29d84c182cfc315d344b9d7b87b76148b929c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927102"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167525"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 設定或變更與此系結中斷點相關聯的條件。

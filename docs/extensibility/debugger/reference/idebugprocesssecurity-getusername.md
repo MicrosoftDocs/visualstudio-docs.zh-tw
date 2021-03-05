@@ -1,5 +1,6 @@
 ---
-title: IDebugProcessSecurity：： GetUserName |Microsoft Docs
+description: 從埠供應商取得使用者名稱。
+title: IDebugProcessSecurity：： GetUserName |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 075cc96866a2b7b4a987c04c6cb78dcd22da2b50
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04ad8bf6ba572a1f9e14e26ef2ca37d021f6e3a0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912020"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166199"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
 從埠供應商取得使用者名稱。

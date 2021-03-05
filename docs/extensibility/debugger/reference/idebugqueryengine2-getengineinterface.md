@@ -1,5 +1,6 @@
 ---
-title: IDebugQueryEngine2：： GetEngineInterface |Microsoft Docs
+description: 取得自訂的 debug engine (DE) 介面。
+title: IDebugQueryEngine2：： GetEngineInterface |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab1d9be5e4405cea3bb75d7837d4ff3ad9a91e9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbf727de01c8cbf34d645aff4e0a64aeb476ebbd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909790"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167837"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 取得自訂的 debug engine (DE) 介面。

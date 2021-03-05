@@ -1,5 +1,6 @@
 ---
-title: IDebugDocument2 |Microsoft Docs
+description: 此介面代表來源文件。
+title: IDebugDocument2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e611f6a4daf878042640697dca862015285078d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96bf5821cb463b8a99f7376cb99b81ab8cae2206
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884867"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167343"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 此介面代表來源文件。

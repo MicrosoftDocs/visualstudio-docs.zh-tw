@@ -1,5 +1,6 @@
 ---
-title: IDebugProgramPublisher2 |Microsoft Docs
+description: 此介面可讓 debug engine (DE) 或自訂埠供應商來註冊程式以進行偵錯工具。
+title: IDebugProgramPublisher2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 430cd05c66311971ad3cdbf60e170478810899ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: deac68ba693bd9e4f827fef5610e3c9d2c3c26f6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916200"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166966"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 此介面可讓 debug engine (DE) 或自訂埠供應商來註冊程式以進行偵錯工具。
@@ -46,7 +47,7 @@ Visual Studio 會執行這個介面以註冊要進行偵錯工具的程式，以
 |[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|設定旗標，指出偵錯工具存在。|
 
 ## <a name="remarks"></a>備註
-此介面讓程式和程式節點可供使用， (也就是「發佈」它們) 供 DEs 和會話 debug manager (SDM) 使用。 若要存取已發佈的程式和程式節點，請使用 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) 介面。 這是 Visual Studio 可以辨識程式正在進行調試的唯一方法。
+此介面讓程式和程式節點可供使用， (也就是「發佈」它們) 供 DEs 和會話 debug manager (SDM) 使用。 若要存取已發佈的程式和程式節點，請使用 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) 介面。 這是 Visual Studio 可辨識程式正在進行調試的唯一方式。
 
 ## <a name="requirements"></a>規格需求
 標頭： msdbg。h

@@ -1,5 +1,6 @@
 ---
-title: IDebugProperty2：： EnumChildren |Microsoft Docs
+description: 抓取屬性的子系列表。
+title: IDebugProperty2：： EnumChildren |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 68880945d7534985e1788ae3b1f1e3755f79eeda
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c9cade8cb0468c78ba03e2beec682d7c2284be0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916176"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166953"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 抓取屬性的子系列表。

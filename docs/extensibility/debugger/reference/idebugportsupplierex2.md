@@ -1,5 +1,6 @@
 ---
-title: IDebugPortSupplierEx2 |Microsoft Docs
+description: 提供埠供應商的支援，以選取和與核心伺服器互動。
+title: IDebugPortSupplierEx2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9a0958614c8df326c20ad8030bb798447a5e62a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd166280ab75b6cb560d6936342d8c3905b87ade
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840154"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167109"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 提供埠供應商的支援，以選取和與核心伺服器互動。

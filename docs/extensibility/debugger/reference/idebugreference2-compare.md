@@ -1,5 +1,6 @@
 ---
-title: IDebugReference2：： Compare |Microsoft Docs
+description: 比較某個參考與另一個參考。
+title: IDebugReference2：： Compare |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6cebc34bdd1515ad632a0165fcdc900999b383fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef006cba574e0cc5f51d2ec45eb6187b1076543a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909741"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166003"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 比較某個參考與另一個參考。 保留供未來使用。

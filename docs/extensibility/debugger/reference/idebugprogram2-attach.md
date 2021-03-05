@@ -1,5 +1,6 @@
 ---
-title: IDebugProgram2：： Attach |Microsoft Docs
+description: 附加至程式。
+title: IDebugProgram2：： Attach |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f42aa8ff646a62f7314887df4b38c648e2d84b31
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d9b06d217f5edec0e913a6c07e57f6bee27f30ea
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931444"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166056"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
 附加至程式。

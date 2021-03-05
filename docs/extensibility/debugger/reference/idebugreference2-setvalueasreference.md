@@ -1,5 +1,6 @@
 ---
-title: IDebugReference2：： SetValueAsReference |Microsoft Docs
+description: 設定來自另一個參考的參考值。
+title: IDebugReference2：： SetValueAsReference |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2111f4c3b60bbdc5f8a88b5cc7777fc92af74509
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 84117f4a9eb925b442be86a73736479a05818ca1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963623"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165939"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 設定來自另一個參考的參考值。 保留供未來使用。

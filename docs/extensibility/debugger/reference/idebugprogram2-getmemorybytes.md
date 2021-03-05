@@ -1,5 +1,6 @@
 ---
-title: IDebugProgram2：： GetMemoryBytes |Microsoft Docs
+description: 抓取程式所佔用的記憶體位元組。
+title: IDebugProgram2：： GetMemoryBytes |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 279333dc85a225a679efd205805ccee282b11260
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e63d25807e6a434066c7fc3bb860e9657faadf15
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906220"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165991"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 抓取程式所佔用的記憶體位元組。

@@ -1,5 +1,6 @@
 ---
-title: GetScheduledTasksForDebugger 方法 |Microsoft Docs
+description: 捕獲所有排程工作的陣列。
+title: GetScheduledTasksForDebugger 方法 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 318e535d86dcd51f9c9bbfcfae8e228c8d7c20b4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dd70db6f6fd9eb1558a21e50f3d2f63137fe8e1d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921345"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167811"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger 方法
 捕獲所有排程工作的陣列。
@@ -24,7 +25,7 @@ ms.locfileid: "99921345"
 
  **元件：** *mscorlib.dll*) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在一般中繼語言 (的 CIL) 中提供下列語法。
 
 ## <a name="syntax"></a>語法
 

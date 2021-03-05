@@ -1,5 +1,6 @@
 ---
-title: IDebugDisassemblyStream2 |Microsoft Docs
+description: 此介面代表指示的資料流程。
+title: IDebugDisassemblyStream2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d561c8eaa9f7b4fc08f71c241fd052fd366ca80d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 760d77ced3cc07da2dd02c21cf3ed0200df14231
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944638"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166563"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 此介面代表指示的資料流程。

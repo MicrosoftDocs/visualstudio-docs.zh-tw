@@ -1,5 +1,6 @@
 ---
-title: IDebugDocumentPositionOffset2 |Microsoft Docs
+description: 以字元位移表示原始檔中的位置。
+title: IDebugDocumentPositionOffset2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69fbdef70fc9c95ef571ce0ce796199292417ca0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dee28d7f19f6398863476afbab8eb9b3cdbbb60
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933553"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167317"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
 以字元位移表示原始檔中的位置。

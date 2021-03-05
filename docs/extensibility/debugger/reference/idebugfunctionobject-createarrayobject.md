@@ -1,5 +1,6 @@
 ---
-title: IDebugFunctionObject：： CreateArrayObject |Microsoft Docs
+description: 建立陣列物件。
+title: IDebugFunctionObject：： CreateArrayObject |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 44d60c2f0573bf60d827737b2a54ff16b49d610c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aee0617364321e5a18f0ea83ef7f19f1388209df
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929999"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166485"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 建立陣列物件。 這個陣列可以包含基本或物件實例值。

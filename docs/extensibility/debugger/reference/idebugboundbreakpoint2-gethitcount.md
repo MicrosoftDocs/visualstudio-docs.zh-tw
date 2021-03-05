@@ -1,5 +1,6 @@
 ---
-title: IDebugBoundBreakpoint2：： GetHitCount |Microsoft Docs
+description: 取得這個系結中斷點的目前計數。
+title: IDebugBoundBreakpoint2：： GetHitCount |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 875f1e55953d412e0c6dc49f1b00bd24cf589446
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eec08d34f74ad1f91b7c9cbabd4b3982f270bf09
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945821"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167603"
 ---
 # <a name="idebugboundbreakpoint2gethitcount"></a>IDebugBoundBreakpoint2::GetHitCount
 取得這個系結中斷點的目前計數。

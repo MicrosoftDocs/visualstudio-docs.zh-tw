@@ -1,5 +1,6 @@
 ---
-title: IDebugBoundBreakpoint2：： SetHitCount |Microsoft Docs
+description: 設定系結中斷點的計數。
+title: IDebugBoundBreakpoint2：： SetHitCount |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a5daff1f0bd1928633a32021f96addcacd291694
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c7dbba43563a87a6c434d24014ce773375cd705c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930469"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167512"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 設定系結中斷點的計數。
