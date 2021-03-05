@@ -1,5 +1,6 @@
 ---
-title: IDebugComPlusSymbolProvider：： GetAssemblyName |Microsoft Docs
+description: 根據指定的模組和應用程式域，抓取元件的名稱。
+title: IDebugComPlusSymbolProvider：： GetAssemblyName |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aee740483d116938e2f5523e7b44236348827f2c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 208508c4db2fe82a70aeb75ab8cf267ef0cca775
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911186"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163924"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
 根據指定的模組和應用程式域，抓取元件的名稱。

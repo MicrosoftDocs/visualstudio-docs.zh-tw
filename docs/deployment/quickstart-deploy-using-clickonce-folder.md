@@ -1,4 +1,5 @@
 ---
+description: 從 Visual Studio 2019 版本16.8 開始，您可以使用 Visual Studio 中的 [發行] 工具，從 Visual Studio 使用 ClickOnce 發行 .NET Core 3.1 或更新版本的 Windows 桌面應用程式。
 title: 使用 ClickOnce 部署 .NET Windows 桌面應用程式
 ms.date: 10/15/2020
 ms.topic: quickstart
@@ -11,25 +12,25 @@ manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6f7c2c8d6c79270df94c100bbd4625856efa15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3977408f191aabc734226fd6b637fcfaaf5e9de
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934503"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165705"
 ---
 # <a name="deploy-a-net-windows-desktop-application-using-clickonce"></a>使用 ClickOnce 部署 .NET Windows 桌面應用程式
 
-從 Visual Studio 2019 版本16.8 開始，您可以使用 **發行** 工具，從 Visual Studio 使用 ClickOnce 發行 .net Core 3.1 或更新版本的 Windows 桌面應用程式。
+從 Visual Studio 2019 版本16.8 開始，您可以使用 Visual Studio 中的 [ **發行** ] 工具，從 visual Studio 使用 ClickOnce 發行 .net Core 3.1 或更新版本的 Windows 桌面應用程式。
 
 > [!NOTE]
-> 如果您需要發佈 .NET Framework Windows 應用程式，請參閱 [使用 ClickOnce 部署桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (c # 或 Visual Basic) 。
+> 如果您需要發行 .NET Framework Windows 應用程式，請參閱 [使用 ClickOnce 部署桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (c # 或 Visual Basic) 。
 
 ## <a name="publishing-with-clickonce"></a>使用 ClickOnce 發行
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行] (或使用 [建置] > [發行] 功能表項目)。
 
-    ![方案總管的專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-clickonce-solution-explorer.png "選擇 [發行]")
+    ![方案 Explorer 中專案內容功能表上的 [發行] 命令](../deployment/media/quickstart-clickonce-solution-explorer.png "選擇 [發行]")
 
 1. 如果您先前已設定任何發行設定檔，[ **發行** ] 頁面隨即出現。 選取 [ **新增**]。
 
@@ -82,7 +83,7 @@ ms.locfileid: "99934503"
 
 1. 選取 **[完成]** 以儲存新的 ClickOnce 發行設定檔。
 
-1. 在 [ **摘要** ] 頁面上，選取 [ **發行** ]，Visual Studio 建立專案，並將其發行至指定的發行資料夾。 此頁面也會顯示設定檔摘要。
+1. 在 [ **摘要** ] 頁面上，選取 [ **發行** ]，Visual Studio 會建立專案，並將其發行至指定的發行資料夾。 此頁面也會顯示設定檔摘要。
 
     ![顯示設定檔摘要的 [發行] 屬性窗格](../deployment/media/quickstart-clickonce-summary.png)
 

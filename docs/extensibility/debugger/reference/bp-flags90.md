@@ -1,5 +1,6 @@
 ---
-title: BP_FLAGS90 |Microsoft Docs
+description: 列舉選擇性旗標的有效值。
+title: BP_FLAGS90 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95992d32df6b05c182b5b0ca505bc288294e282c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2203a6fa2a5f84f422eafd28706c54065f752e2e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923236"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165614"
 ---
 # <a name="bp_flags90"></a>BP_FLAGS90
 列舉選擇性旗標的有效值。 當您設定中斷點時，可以使用選擇性旗標來指定其他資訊。 此列舉會擴充 [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) 列舉。

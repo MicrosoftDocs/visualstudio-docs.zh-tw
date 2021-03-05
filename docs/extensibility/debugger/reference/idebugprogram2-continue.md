@@ -1,5 +1,6 @@
 ---
-title: IDebugProgram2：： Continue |Microsoft Docs
+description: IDebugProgram2：： Continue 會繼續從停止狀態執行此程式。 任何先前的執行狀態 (（例如步驟) ）都會保留，且程式會再次開始執行。
+title: IDebugProgram2：： Continue |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 07e48a59f044f8f3ccc94576210a51e7d70d9b66
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f10d9266e8562d7ba1afed45b4b054f306bfbca
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912952"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164717"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 從停止狀態繼續執行此程式。 任何先前的執行狀態 (（例如步驟) ）都會保留，且程式會再次開始執行。

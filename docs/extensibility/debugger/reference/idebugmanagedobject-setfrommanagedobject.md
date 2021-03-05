@@ -1,5 +1,6 @@
 ---
-title: IDebugManagedObject：： SetFromManagedObject |Microsoft Docs
+description: 從提供作為參數的實值類別的實例，設定實值類別物件的實例值。
+title: IDebugManagedObject：： SetFromManagedObject |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3c1f18fbfa70faf1d3da8ae785768419765dc94b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6b4038b4f3560b7cd526261f898c01f384421f42
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890223"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165213"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 從提供作為參數的實值類別的實例，設定實值類別物件的實例值。

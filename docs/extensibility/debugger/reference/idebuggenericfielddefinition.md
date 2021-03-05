@@ -1,5 +1,6 @@
 ---
-title: IDebugGenericFieldDefinition |Microsoft Docs
+description: 代表 managed 程式碼泛型型別的欄位定義。
+title: IDebugGenericFieldDefinition |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff7c28a30ccab43629636f7dcd9391a669a376ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae277a6f0523adfc0c9afb0e0cac8765df2d5758
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884789"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165406"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
 代表 managed 程式碼泛型型別的欄位定義。

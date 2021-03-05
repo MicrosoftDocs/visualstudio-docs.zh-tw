@@ -1,5 +1,6 @@
 ---
-title: IDebugFunctionPosition2 |Microsoft Docs
+description: 此介面表示函式在來源文件中的抽象位置。
+title: IDebugFunctionPosition2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e05cc09d2c252ddeaadc3cfa1b40e1a5797b6d79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a5717023eea18060834d1beade25199d5b0c3f3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920908"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165523"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 此介面表示函式在來源文件中的抽象位置。

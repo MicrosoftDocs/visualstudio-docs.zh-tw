@@ -1,5 +1,6 @@
 ---
-title: IDebugMemoryBytes2 |Microsoft Docs
+description: 此介面代表位元組的記憶體。
+title: IDebugMemoryBytes2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9d4ee145d900a79a48db44f95a125e87bd10f67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1c6f1cf03aa36a4ae6c935d1efc8970ce3ff5f7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851240"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165081"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
 此介面代表位元組的記憶體。
@@ -46,7 +47,7 @@ IDebugMemoryBytes2 : IUnknown
 ## <a name="remarks"></a>備註
  若為屬性，代表陣列的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 介面會提供 `IDebugMemoryBytes2` 介面來存取該陣列中的值。
 
- Visual Studio 的 **記憶體 View** 呼叫 [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) 來取得 `IDebugMemoryBytes2` 存取系統記憶體的介面。 要存取的位址是藉由將輸入為位址的運算式剖析至記憶體視圖，然後使用 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 來取得介面來評估剖析的運算式而取得 `IDebugProperty2` 。 呼叫 [GetMemoryCoNtext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) 會傳回描述記憶體位址的 [IDebugMemoryCoNtext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 。 此記憶體內容接著會傳遞至 [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) 和 [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)。
+ Visual Studio 的 **Memory View** 會呼叫 [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) 來取得 `IDebugMemoryBytes2` 存取系統記憶體的介面。 要存取的位址是藉由將輸入為位址的運算式剖析至記憶體視圖，然後使用 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 來取得介面來評估剖析的運算式而取得 `IDebugProperty2` 。 呼叫 [GetMemoryCoNtext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) 會傳回描述記憶體位址的 [IDebugMemoryCoNtext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 。 此記憶體內容接著會傳遞至 [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) 和 [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)。
 
 ## <a name="requirements"></a>規格需求
  標頭： msdbg。h

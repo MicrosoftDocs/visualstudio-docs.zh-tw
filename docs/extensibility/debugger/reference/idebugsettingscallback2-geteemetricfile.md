@@ -1,5 +1,6 @@
 ---
-title: IDebugSettingsCallback2：： GetEEMetricFile |Microsoft Docs
+description: 取得指定名稱或計量的運算式評估工具度量檔案。
+title: IDebugSettingsCallback2：： GetEEMetricFile |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ef2242d26aad4bf439a3ea33bb9d35cca1d7f8cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ba7f6008e6b513a99c1d8e9c21d78e99938c926
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875857"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165783"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 取得指定名稱或計量的運算式評估工具度量檔案。

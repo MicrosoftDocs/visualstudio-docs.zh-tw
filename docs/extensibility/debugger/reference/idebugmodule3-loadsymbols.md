@@ -1,5 +1,6 @@
 ---
-title: IDebugModule3：： LoadSymbols |Microsoft Docs
+description: 載入目前模組的符號。
+title: IDebugModule3：： LoadSymbols |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 731b13b823fd1ad1666d3578c7f0475c2e00b789
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0612be8ffdde8a942331a89e08298f71414a4c76
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929728"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164821"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
 載入目前模組的符號。

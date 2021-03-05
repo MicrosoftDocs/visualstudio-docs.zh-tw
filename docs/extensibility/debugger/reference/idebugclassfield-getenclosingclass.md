@@ -1,5 +1,6 @@
 ---
-title: IDebugClassField：： GetEnclosingClass |Microsoft Docs
+description: 取得括住這個類別的類別。
+title: IDebugClassField：： GetEnclosingClass |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 91a4e04e26a57247a541c565ea4f0f392a413d39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c08550204c8a2860d8fd7870e4ac949e9e9319c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925056"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164197"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 取得括住這個類別的類別。

@@ -2,7 +2,7 @@
 title: 管理 npm 套件
 description: Visual Studio 可協助您使用 Node.js 套件管理員 (npm) 來管理套件
 ms.custom: seodec18
-ms.date: 04/16/2020
+ms.date: 02/23/2021
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -12,21 +12,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 26c750a11c2910a6c6f91e1207d731024af64a5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b017495d12d654be3e11da7153310b5bcba367d5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962713"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165809"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>管理 Visual Studio 中的 npm 套件
 
 npm 可讓您安裝和管理要在 Node.js 應用程式中使用的套件。 Visual Studio 可讓您輕鬆地與 npm 互動，並透過 UI 或直接發出 npm 命令。 如果您不熟悉 npm，而且想要深入了解，請移至 [npm 文件](https://docs.npmjs.com/)。
 
-Visual Studio 與 npm 的整合會根據您的專案類型而有所不同。
+Visual Studio 與 npm 的整合是根據您的專案類型而有所不同。
 * [Node.js](#nodejs-projects)
 * [ASP.NET Core](#aspnet-core-projects)
-* [開啟資料夾 ( # A0) ](../javascript/develop-javascript-code-without-solutions-projects.md)
+* [開啟資料夾 (Node.js) ](../javascript/develop-javascript-code-without-solutions-projects.md)
 
 > [!Important]
 > npm 需要專案根目錄中的 *node_modules* 資料夾和 *package.js* 。 如果您的應用程式資料夾結構不同，如果您想要使用 Visual Studio 管理 npm 套件，則應該修改您的資料夾結構。
@@ -45,9 +45,9 @@ Visual Studio 與 npm 的整合會根據您的專案類型而有所不同。
 您需要安裝 **Node.js 開發** 工作負載及 Node.js 執行時間，才能將 npm 支援新增至您的專案。 如需詳細步驟，請參閱 [建立 Node.js 專案](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json)。
 
 > [!NOTE]
-> 針對現有的 Node.js 專案，請使用 [ **從現有的 Node.js 程式碼** ] 方案範本或 [ [開啟資料夾] ( # A2)](../javascript/develop-javascript-code-without-solutions-projects.md) 專案類型，在您的專案中啟用 npm。
+> 針對現有的 Node.js 專案，請使用 [ **從現有的 Node.js 程式碼** ] 方案範本或 [ [開啟資料夾] (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md) 專案類型，在您的專案中啟用 npm。
 
-### <a name="install-packages-from-solution-explorer-nodejs"></a><a name="npmInstallWindow"></a> 從方案總管 ( # A0) 安裝套件
+### <a name="install-packages-from-solution-explorer-nodejs"></a><a name="npmInstallWindow"></a> 從 Solution Explorer 安裝封裝 (Node.js) 
 
 針對 Node.js 專案，安裝 npm 套件最簡單的方式是透過 npm 套件安裝視窗。 若要存取此視窗，請以滑鼠右鍵按一下專案中的 [npm] 節點，然後選取 [安裝新的 npm 套件]。
 
@@ -69,11 +69,11 @@ Visual Studio 與 npm 的整合會根據您的專案類型而有所不同。
 > [!TIP]
 > 您可以在搜尋查詢前面加上感興趣範圍來搜尋範圍套件；例如，鍵入 `@types/mocha` 尋找 mocha 的 TypeScript 定義檔案。 此外，安裝 TypeScript 的型別定義時，您可以 `@ts2.6` 在 [npm 引數] 欄位中加入，藉以指定您要設為目標的 TypeScript 版本。
 
-### <a name="manage-installed-packages-in-solution-explorer-nodejs"></a><a name="solutionExplorer"></a>在方案總管 ( # A0) 中管理已安裝的套件
+### <a name="manage-installed-packages-in-solution-explorer-nodejs"></a><a name="solutionExplorer"></a>在 Solution Explorer 中管理已安裝的套件 (Node.js) 
 
 npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬 package.json 檔案中的相依性。
 
-![Npm 方案總管節點的螢幕擷取畫面，其中顯示 npm 封裝的安裝狀態。](../javascript/media/solution-explorer-status.png)
+![[方案 npm] 節點的螢幕擷取畫面，其中顯示 npm 封裝的安裝狀態。](../javascript/media/solution-explorer-status.png)
 
 ### <a name="package-status"></a>套件狀態
 
@@ -104,7 +104,7 @@ npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬
 >[!NOTE]
 > 如需解決 npm 封裝問題的協助，請參閱 [疑難排解](#troubleshooting-npm-packages)。
 
-### <a name="use-the-npm-command-in-the-nodejs-interactive-window-nodejs"></a><a name="interactive"></a>在 Node.js 的互動式視窗中使用. npm 命令 ( # A1) 
+### <a name="use-the-npm-command-in-the-nodejs-interactive-window-nodejs"></a><a name="interactive"></a>在 Node.js 的互動式視窗中使用. npm 命令 (Node.js) 
 
 您也可以在 Node.js 互動式視窗中使用 `.npm` 命令來執行 npm 命令。 若要開啟此視窗，請以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [開啟 Node.js 互動式視窗]。
 
@@ -119,14 +119,14 @@ npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬
  > [!Tip]
  > 如果您的專案未包含 package.json 檔案，請使用 `.npm init -y`來以預設項目建立新的 package.json 檔案。
 
- ## <a name="aspnet-core-projects"></a>ASP.NET Core 專案
+ ## <a name="aspnet-core-projects"></a>ASP.NET 核心專案
 
-針對 ASP.NET Core 專案之類的專案，您可以在專案中整合 npm 支援，並使用 npm 來安裝封裝。
+針對 ASP.NET 核心專案之類的專案，您可以在專案中整合 npm 支援，並使用 npm 來安裝封裝。
 * [將 npm 支援新增至專案](#npmAdd)
 * [使用 package.js安裝套件](#npmInstallPackage)
 
 >[!NOTE]
-> 針對 ASP.NET Core 專案，您也可以使用連結 [庫管理員](/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) 或 yarn 而不是 npm 來安裝用戶端 JAVASCRIPT 和 CSS 檔案。
+> 針對 ASP.NET 核心專案，您也可以使用連結 [庫管理員](/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) 或 yarn （而不是 npm）來安裝用戶端 JAVASCRIPT 和 CSS 檔案。
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> 將 npm 支援新增至專案 (ASP.NET Core) 
 
@@ -136,7 +136,7 @@ npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬
 
    npm 需要 Node.js。
 
-1. 若要將 *package.js* 加入檔案，請以滑鼠右鍵按一下方案總管中的專案，然後選擇 [**加入**  >  **新專案**]。 選擇 **Npm 設定檔**，使用預設名稱，然後按一下 [ **新增**]。
+1. 若要 *在檔案上加入package.js* ，請在 [方案瀏覽器] 中的專案上按一下滑鼠右鍵，然後選擇 [**加入**  >  **新專案**]。 選擇 **Npm 設定檔**，使用預設名稱，然後按一下 [ **新增**]。
 
    ![將 package.js新增至您的專案](../javascript/media/npm-add-package-json.png)
 
@@ -151,22 +151,22 @@ npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬
    }
    ```
 
-當您儲存檔案時，Visual Studio 會在方案總管的 [相依性 **/Npm]** 節點下加入封裝。 如果您沒有看到節點，請以滑鼠右鍵按一下 **package.js** ，然後選擇 [ **還原套件**]。
+當您儲存檔案時，Visual Studio 會在 [方案瀏覽器] 的 [相依性 **/Npm]** 節點下加入封裝。 如果您沒有看到節點，請以滑鼠右鍵按一下 **package.js** ，然後選擇 [ **還原套件**]。
 
 >[!NOTE]
-> 在某些情況下，方案總管可能不會顯示已安裝之 npm 套件的正確狀態。 如需詳細資訊，請參閱[疑難排解](#troubleshooting-npm-packages)。
+> 在某些情況下，方案 Explorer 可能不會顯示已安裝之 npm 套件的正確狀態。 如需詳細資訊，請參閱[疑難排解](#troubleshooting-npm-packages)。
 
-### <a name="install-packages-using-packagejson-aspnet-core"></a><a name="npmInstallPackage"></a>在 (ASP.NET Core 上使用 package.js安裝套件) 
+### <a name="install-packages-using-packagejson-aspnet-core"></a><a name="npmInstallPackage"></a>使用 package.js在 (ASP.NET Core) 上安裝套件
 
-針對包含 npm 的專案，您可以使用設定 npm 封裝 `package.json` 。 在方案總管中的 [npm] 節點上按一下滑鼠右鍵，然後選擇 [ **開啟 package.js** 開啟]。
+針對包含 npm 的專案，您可以使用設定 npm 封裝 `package.json` 。 以滑鼠右鍵按一下 [方案 npm] 中的 [] 節點，然後選擇 [ **開啟 package.js**]。
 
-![已選取 [npm] 節點之方案總管的螢幕擷取畫面。 以滑鼠右鍵按一下內容功能表為開啟狀態，且已選取 [開啟 package.js開啟]。](../javascript/media/npm-add-package.png)
+![已選取 [npm] 節點的 [Solution Explorer] 螢幕擷取畫面。 以滑鼠右鍵按一下內容功能表為開啟狀態，且已選取 [開啟 package.js開啟]。](../javascript/media/npm-add-package.png)
 
 *package.js* 中的 IntelliSense 可協助您選取特定版本的 npm 套件。
 
 :::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="選取 npm 套件版本" border="true":::
 
-當您儲存檔案時，Visual Studio 會在方案總管的 [相依性 **/Npm]** 節點下加入封裝。 如果您沒有看到節點，請以滑鼠右鍵按一下 **package.js** ，然後選擇 [ **還原套件**]。
+當您儲存檔案時，Visual Studio 會在 [方案瀏覽器] 的 [相依性 **/Npm]** 節點下加入封裝。 如果您沒有看到節點，請以滑鼠右鍵按一下 **package.js** ，然後選擇 [ **還原套件**]。
 
 安裝套件可能需要幾分鐘的時間。 切換至 [**輸出**] 視窗中的 [ **npm** 輸出]，檢查封裝安裝的進度。
 
@@ -178,6 +178,8 @@ npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬
 
 * 針對 Node.js 的專案，您必須安裝 **Node.js 開發** 工作負載，以支援 npm。
 
-* 在某些情況下，方案總管可能不會顯示已安裝 npm 套件的正確狀態，因為 [這裡](https://github.com/aspnet/Tooling/issues/479)有已知的問題。 例如，封裝可能會在安裝時顯示為未安裝。 在大部分的情況下，您可以刪除 *package.js*、重新開機 Visual Studio，然後重新新增 *package.js* 檔案，以更新方案總管，如本文稍早所述。 或者，在安裝封裝時，您可以使用 [npm 輸出] 視窗來確認安裝狀態。
+* 在某些情況下，因為 [此處](https://github.com/aspnet/Tooling/issues/479)所述的已知問題，所以方案 Explorer 可能不會顯示已安裝之 npm 套件的正確狀態。 例如，封裝可能會在安裝時顯示為未安裝。 在大部分的情況下，您可以藉由刪除 *package.js開啟*、重新開機 Visual Studio，然後重新新增檔案中的 *package.js* （如本文稍早所述），來更新方案 Explorer。 或者，在安裝封裝時，您可以使用 [npm 輸出] 視窗來確認安裝狀態。
+
+* 在某些 ASP.NET 的核心案例中，在您建立專案之後，可能看不到 [方案 Explorer] 中的 [npm] 節點。 若要再次顯示節點，請以滑鼠右鍵按一下專案節點，然後選擇 **[卸載專案]。** 然後以滑鼠右鍵按一下專案節點，然後選擇 [ **重載專案**]。
 
 * 如果您在建立應用程式或轉譯 TypeScript 程式碼時看到任何錯誤，請檢查 npm 套件不相容是否為可能的錯誤來源。 如本文先前所述，若要協助識別錯誤，請在安裝套件時檢查 [npm 輸出] 視窗。 例如，如果有一或多個 npm 套件版本已被取代，而導致錯誤，您可能需要安裝較新的版本來修正錯誤。 如需使用 *package.json* 控制 npm 套件版本的資訊，請參閱 [package.json 組態](../javascript/configure-packages-with-package-json.md)。

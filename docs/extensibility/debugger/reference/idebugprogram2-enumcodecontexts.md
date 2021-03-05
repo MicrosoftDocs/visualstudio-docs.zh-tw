@@ -1,5 +1,6 @@
 ---
-title: IDebugProgram2：： EnumCodeCoNtexts |Microsoft Docs
+description: 抓取原始程式檔中指定位置的程式碼內容清單。
+title: IDebugProgram2：： EnumCodeCoNtexts |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2971eba711682781f509757c3986bb76f2e37703
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd26ee9fe0c6e28695eeca5a77a5b90fbbb25213
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891029"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164730"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 抓取原始程式檔中指定位置的程式碼內容清單。

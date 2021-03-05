@@ -1,5 +1,6 @@
 ---
-title: IDebugSourceServerModule |Microsoft Docs
+description: 表示 PDB 檔案中包含的來源伺服器資訊。
+title: IDebugSourceServerModule |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dfc4b3defc0b74c1e22c45670209682692a4807
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74fa5f3aafea5f709777bbead81743c7c5aef358
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837693"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164639"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 表示 PDB 檔案中包含的來源伺服器資訊。

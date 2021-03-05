@@ -1,5 +1,6 @@
 ---
-title: IDebugClassField：： EnumNestedEnums |Microsoft Docs
+description: 建立此類別之嵌套列舉值的枚舉器。
+title: IDebugClassField：： EnumNestedEnums |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9c283d4b07458368a4ea5f143dc83bf13453302
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9412d487dbb9617bb3bae91bd225473e67e2dfdc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912011"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164236"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
 建立此類別之嵌套列舉值的枚舉器。

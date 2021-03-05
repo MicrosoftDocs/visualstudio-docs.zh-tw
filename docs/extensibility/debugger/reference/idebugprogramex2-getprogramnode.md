@@ -1,5 +1,6 @@
 ---
-title: IDebugProgramEx2：： GetProgramNode |Microsoft Docs
+description: 取得與程式相關聯的程式節點。
+title: IDebugProgramEx2：： GetProgramNode |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 203992c6ab5ca094b091ece56e810d4fef462456
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d84669b9f4c05690827675435fdc60143a0814af
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898879"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164679"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 取得與程式相關聯的程式節點。

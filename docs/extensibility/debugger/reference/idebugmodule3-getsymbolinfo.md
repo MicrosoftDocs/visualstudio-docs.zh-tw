@@ -1,5 +1,6 @@
 ---
-title: IDebugModule3：： GetSymbolInfo |Microsoft Docs
+description: 抓取搜尋符號的路徑清單，以及搜尋每個路徑的結果。
+title: IDebugModule3：： GetSymbolInfo |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63803b84e3d00bddef2238a627300522a4e7c294
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2793c9b6d9d88997ce2e4e84c147f87183555cd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929780"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164847"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 抓取搜尋符號的路徑清單，以及搜尋每個路徑的結果。

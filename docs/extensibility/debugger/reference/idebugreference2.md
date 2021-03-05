@@ -1,5 +1,6 @@
 ---
-title: IDebugReference2 |Microsoft Docs
+description: 這個介面代表堆疊框架屬性或其他屬性的參考。
+title: IDebugReference2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1ae87cc9d0926d7afc22d819dddf672a89afd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04d9795388b2a079d0eb7ac1d787bf92de6cdff4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883801"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165848"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 這個介面代表堆疊框架屬性或其他屬性的參考。

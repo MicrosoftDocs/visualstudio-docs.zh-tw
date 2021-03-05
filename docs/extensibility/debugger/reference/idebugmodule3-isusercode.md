@@ -1,5 +1,6 @@
 ---
-title: IDebugModule3：： IsUserCode |Microsoft Docs
+description: 捕獲模組是否代表使用者程式碼的資訊。
+title: IDebugModule3：： IsUserCode |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c8b313ecdbc1168238bad517f34350a420fb30ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a936d4408b2d289477a860ffca3d53ca7b0ad61d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929767"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164834"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 捕獲模組是否代表使用者程式碼的資訊。

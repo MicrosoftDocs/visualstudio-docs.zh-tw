@@ -1,5 +1,6 @@
 ---
-title: IDebugMemoryCoNtext2：： Compare |Microsoft Docs
+description: 以比較旗標所指定的方式，將記憶體內容與指定陣列中的每個內容進行比較，並傳回符合之第一個內容的索引。
+title: IDebugMemoryCoNtext2：： Compare |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e54a2bf7cd37b411dbc2d18d23a3466a4b47ce0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f21b22574a780f5e9fcfa045c6786b13d82caa45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851201"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165094"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 以比較旗標所指定的方式，將記憶體內容與指定陣列中的每個內容進行比較，並傳回符合之第一個內容的索引。

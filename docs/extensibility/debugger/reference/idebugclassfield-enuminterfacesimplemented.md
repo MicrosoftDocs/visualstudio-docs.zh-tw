@@ -1,5 +1,6 @@
 ---
-title: IDebugClassField：： EnumInterfacesImplemented |Microsoft Docs
+description: 為這個類別所執行的介面建立枚舉器。
+title: IDebugClassField：： EnumInterfacesImplemented |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7283d8a2996d5ab4dfc52cde446170e7632c27c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f90bf6efc3a34e4f6b9f60ef5bdadb0640f495b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876078"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164314"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 為這個類別所執行的介面建立枚舉器。

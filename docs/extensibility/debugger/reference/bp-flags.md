@@ -1,5 +1,6 @@
 ---
-title: BP_FLAGS |Microsoft Docs
+description: 提供選擇性旗標，可在設定中斷點時用來指定其他資訊。
+title: BP_FLAGS |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ff3730d3903b71db78c8ecbc025bfe44d6e37f7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0a3ccb96aecf00943bc637b78fb5219c3273281
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853028"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165666"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
 提供選擇性旗標，可在設定中斷點時用來指定其他資訊。

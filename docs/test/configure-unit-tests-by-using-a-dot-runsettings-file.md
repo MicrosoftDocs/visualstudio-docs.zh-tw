@@ -1,6 +1,6 @@
 ---
 title: 使用 .runsettings 檔案設定單元測試
-description: 瞭解如何在 Visual Studio 中使用 .runsettings 檔案，以設定從命令列、IDE 或在組建工作流程中執行的單元測試。
+description: 瞭解如何在 Visual Studio 中使用 .runsettings 檔案，以設定從命令列、從 IDE 或在組建工作流程中執行的單元測試。
 ms.custom: SEO-VS-2020
 ms.date: 07/15/2020
 ms.topic: conceptual
@@ -9,24 +9,24 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 10bfed2a9a2a0ce466e1b3276a487695d40fb580
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d6b4dd8bd21da7fcfc4d7cde54e5f5a7926472e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964559"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165718"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
 您可以使用 *.runsettings* 檔案來設定 Visual Studio 中的單元測試。 例如，您可以變更執行測試的 .NET 版本、測試結果的所在目錄，或在測試回合期間所收集的資料。 *.runsettings* 檔案常見的用法是用來自訂 [程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
 
-您可以使用回合設定檔案來設定從 [命令列](vstest-console-options.md)、IDE，或使用 Azure Test Plans 或 TEAM FOUNDATION SERVER (TFS) 的 [組建工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true) 中執行的測試。
+您可以使用回合設定檔案來設定從 [命令列](vstest-console-options.md)、IDE，或使用 Azure 測試計劃或 Team Foundation SERVER (TFS) 在 [組建工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true) 中執行的測試。
 
 回合設定檔為選擇性。 如果您不需要任何特殊設定，就不需要 *.runsettings* 檔案。
 
 ## <a name="create-a-run-settings-file-and-customize-it"></a>建立執行設定檔並加以自訂
 
-1. 將回合設定檔新增至方案。 在 [**方案總管**] 中，在方案的快捷方式功能表上，選擇 [**加入**  >  **新專案**]，然後選取 [ **XML** 檔案]。 使用 *.runsettings* 之類的名稱來儲存檔案。
+1. 將回合設定檔新增至方案。 在 [**方案瀏覽器**] 中，于方案的快捷方式功能表上，選擇 [**加入**  >  **新專案**]，然後選取 [ **XML** 檔案]。 使用 *.runsettings* 之類的名稱來儲存檔案。
 
    > [!TIP]
    > 檔案名稱並不重要，只要使用的副檔名為 .runsettings 即可。
@@ -37,7 +37,7 @@ ms.locfileid: "99964559"
 
    - [Visual Studio IDE](#specify-a-run-settings-file-in-the-ide)
    - [命令列](#specify-a-run-settings-file-from-the-command-line)
-   - 使用 Azure Test Plans 或 Team Foundation Server (TFS) 來[建立工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)。
+   - 使用 Azure 測試計劃或 Team Foundation Server (TFS) 來[建立工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)。
 
 4. 執行單元測試，以使用自訂回合設定。
 
@@ -74,7 +74,7 @@ ms.locfileid: "99964559"
 
 ### <a name="visual-studio-2019-version-164-and-later"></a>Visual Studio 2019 16.4 版和更新版本
 
-有三種方式可以指定 Visual Studio 2019 16.4 版和更新版本中的回合設定檔。
+有三種方式可在 Visual Studio 2019 16.4 版和更新版本中指定回合設定檔案。
 
 - [自動偵測回合設定](#autodetect-the-run-settings-file)
 - [手動設定回合設定](#manually-select-the-run-settings-file)
@@ -101,7 +101,7 @@ ms.locfileid: "99964559"
    - 這個檔案會覆寫位於方案根目錄的 *.runsettings* 檔案（如果有的話），並套用到所有測試回合。
    - 此檔案選取專案只會在本機保存。
 
-![在 Visual Studio 2019 中選取 [測試整個解決方案的 .runsettings 檔案] 功能表](media/vs-2019/select-solution-settings-file.png)
+![選取 Visual Studio 2019 中的測試全解決方案 .runsettings 檔功能表](media/vs-2019/select-solution-settings-file.png)
 
 #### <a name="set-a-build-property"></a>設定組建屬性
 
@@ -135,7 +135,7 @@ ms.locfileid: "99964559"
 
 若要從命令列執行測試，請使用 *vstest.console.exe*，並使用 **/settings** 參數指定設定檔案。
 
-1. 開啟 Visual Studio 的 [開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs) 。
+1. 開啟 [Visual Studio 的開發人員命令提示](../ide/reference/command-prompt-powershell.md)字元。
 
 2. 輸入與下列類似的命令：
 
@@ -268,7 +268,7 @@ public void HomePageTest()
 
 ## <a name="loggerrunsettings-element"></a>LoggerRunSettings 元素
 
-`LoggerRunSettings`區段會定義要用於測試回合的一或多個記錄器。 最常見的記錄器為主控台、Visual Studio 測試結果檔 (.trx) 和 html。
+`LoggerRunSettings`區段會定義要用於測試回合的一或多個記錄器。 最常見的記錄器為主控台、Visual Studio 測試結果檔案 (.trx) 和 html。
 
 ```xml
 <LoggerRunSettings>
@@ -311,7 +311,7 @@ public void HomePageTest()
 |組態|預設|值|
 |-|-|-|
 |**ForcedLegacyMode**|false|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
-|**IgnoreTestImpact**|false|「測試影響」功能會將受最新變更影響的測試（當在 MSTest 中執行時），或 Visual Studio 2017) 中 Microsoft Test Manager (淘汰的測試排定優先順序。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](/previous-versions/dd286589(v=vs.140))。|
+|**IgnoreTestImpact**|false|「測試影響」功能會將受最新變更影響的測試排定優先順序、在 MSTest 或 Microsoft Test Manager 中執行時 (已在 Visual Studio 2017) 中淘汰。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](/previous-versions/dd286589(v=vs.140))。|
 |**SettingsFile**||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以[從設定功能表](#specify-a-run-settings-file-in-the-ide)指定測試設定檔。<br /><br />如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true**]。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|測試回合完成後，會關閉 MSTest。 所有在測試過程中啟動的處理序也都會終止。 如果您要讓測試執行程式保持運作，請將此值設定為 **true**。 例如，您可以使用此設定讓瀏覽器在不同的自動程式碼 UI 測試之間保持執行。|
 |**DeploymentEnabled**|true|如果您將此值設定為 **false**，就不會將您在測試方法中指定的部署項目複製到部署目錄中。|
