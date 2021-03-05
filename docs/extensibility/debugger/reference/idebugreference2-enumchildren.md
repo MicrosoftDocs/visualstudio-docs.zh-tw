@@ -1,5 +1,6 @@
 ---
-title: IDebugReference2：： EnumChildren |Microsoft Docs
+description: 取得參考的選定子系列表。
+title: IDebugReference2：： EnumChildren |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d142f6c3715e2c3888c7ce60f349c50e84f7f16b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1481e58dd36e330bf9c4cff1644629bd93de55ac
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909702"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151372"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 取得參考的選定子系列表。 保留供未來使用。

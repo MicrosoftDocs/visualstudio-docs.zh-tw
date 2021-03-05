@@ -1,5 +1,6 @@
 ---
-title: IDebugEvent2：： GetAttributes |Microsoft Docs
+description: 取得這個 debug 事件的屬性。
+title: IDebugEvent2：： GetAttributes |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 64f4b404938143e5b1531798b1cded7ac6218de6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a7402c2b5a367a3a0a681a9a17ef89872a7b3e96
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888273"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152971"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 取得這個 debug 事件的屬性。

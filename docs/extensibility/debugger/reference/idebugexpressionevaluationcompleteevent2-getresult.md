@@ -1,5 +1,6 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2：： GetResult |Microsoft Docs
+description: 取得運算式評估的結果。
+title: IDebugExpressionEvaluationCompleteEvent2：： GetResult |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9abc7ce472543b6d2fd6e82fbd5a01f97e4d1784
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 00200c9aaa23249eefc4b1b6d0876065ce1ed4ad
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930443"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152607"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
 取得運算式評估的結果。

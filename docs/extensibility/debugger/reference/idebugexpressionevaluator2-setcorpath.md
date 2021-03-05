@@ -1,5 +1,6 @@
 ---
-title: IDebugExpressionEvaluator2：： SetCorPath |Microsoft Docs
+description: 設定在偵錯工具中載入之 common language runtime (CLR) 的路徑。
+title: IDebugExpressionEvaluator2：： SetCorPath |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 84a3223464092e9f85af9701b37f946890b05c99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afa363b620702c244484612606274dd1cbddb523
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930248"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152308"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
 設定在偵錯工具中載入之 common language runtime (CLR) 的路徑。

@@ -1,5 +1,6 @@
 ---
-title: 列舉和結構 |Microsoft Docs
+description: 這些是 DIA SDK 所使用的列舉和結構。
+title: 列舉和結構 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,16 +16,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bb7fbdfac3026d1487b39fd2ae3f1adb72d01f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa7fa04080596a5d54297557c33238826450830e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865402"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151246"
 ---
 # <a name="enumerations-and-structures"></a>列舉和結構
 
-這些是 DIA SDK 使用的列舉和結構。
+這些是 DIA SDK 所使用的列舉和結構。
 
 ## <a name="in-this-section"></a>本節內容
 

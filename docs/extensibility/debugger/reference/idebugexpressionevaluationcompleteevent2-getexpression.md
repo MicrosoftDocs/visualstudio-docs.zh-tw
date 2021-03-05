@@ -1,4 +1,5 @@
 ---
+description: 取得原始的運算式。
 title: IDebugExpressionEvaluationCompleteEvent2::GetExpression
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -17,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 873fd4236b627d93bce4029ef36861a720c19828
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0934e7674aeacdd923ef83975918a162fb127e5a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930430"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152620"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
 取得原始的運算式。

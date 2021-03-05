@@ -1,5 +1,6 @@
 ---
-title: IDebugReference2：： GetMemoryCoNtext |Microsoft Docs
+description: 取得參考的記憶體內容。
+title: IDebugReference2：： GetMemoryCoNtext |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d34684be7a08199bfc434b62600b9d1287d0354
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77bdda6ca03aebdf0e8b10aed24f1f98805f2954
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909631"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151333"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 取得參考的記憶體內容。 保留供未來使用。

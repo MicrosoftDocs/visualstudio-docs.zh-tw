@@ -1,5 +1,6 @@
 ---
-title: IDebugExpression2 |Microsoft Docs
+description: 這個介面代表已剖析的運算式，可供進行系結和評估。
+title: IDebugExpression2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d7b6508a635edf3dc328f79a06a386efce07aae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fe6a6955f5d8d4ae42d51e3623b0c4f966dc416
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949580"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152659"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 這個介面代表已剖析的運算式，可供進行系結和評估。

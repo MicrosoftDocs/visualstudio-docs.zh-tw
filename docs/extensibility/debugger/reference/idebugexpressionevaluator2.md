@@ -1,5 +1,6 @@
 ---
-title: IDebugExpressionEvaluator2 |Microsoft Docs
+description: 表示 (EE) 的增強版運算式評估工具。
+title: IDebugExpressionEvaluator2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f70fe2c00d680cb7dff2ca3c66e55ee8221476cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 150ede0d3063fa8905b7cdfa5d67da16c0f68eed
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938157"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152230"
 ---
 # <a name="idebugexpressionevaluator2"></a>IDebugExpressionEvaluator2
 > [!IMPORTANT]

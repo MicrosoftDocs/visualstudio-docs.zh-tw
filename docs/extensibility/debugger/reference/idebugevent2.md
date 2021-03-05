@@ -1,5 +1,6 @@
 ---
-title: IDebugEvent2 |Microsoft Docs
+description: 這個介面是用來傳達重要的偵錯工具資訊，例如在中斷點停止，以及非關鍵的資訊，例如偵錯工具訊息。
+title: IDebugEvent2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ff87d79d45c90a3307d5f28a2aa6109033f4a59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e162e276fc93c9e2c0d4333ac0f5c2630f75618e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933332"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152945"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 這個介面是用來傳達重要的偵錯工具資訊，例如在中斷點停止，以及非關鍵的資訊，例如偵錯工具訊息。

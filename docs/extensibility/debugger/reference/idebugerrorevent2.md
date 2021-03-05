@@ -1,5 +1,6 @@
 ---
-title: IDebugErrorEvent2 |Microsoft Docs
+description: 此介面會指定要向使用者回報的錯誤訊息。
+title: IDebugErrorEvent2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1af67a00b9a692e5156ec7a6a14ef3fadcc3ac32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf249e8568c3ae70bc8d881d72b491cf7fa3576b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888338"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153036"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 此介面會指定要向使用者回報的錯誤訊息。

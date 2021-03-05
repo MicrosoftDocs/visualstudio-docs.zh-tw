@@ -1,5 +1,6 @@
 ---
-title: IDebugExceptionEvent2 |Microsoft Docs
+description: 當目前正在執行的程式中擲回例外狀況時，debug engine (DE) 會將此介面傳送至會話 debug manager (SDM) 。
+title: IDebugExceptionEvent2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c09b81a6a3eb56734e7d3a95dc5d1a8d1717fba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e171154d933ac533f6a63469321b5a0d22e8651b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933111"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152763"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 當目前正在執行的程式中擲回例外狀況時，debug engine (DE) 會將此介面傳送至會話 debug manager (SDM) 。

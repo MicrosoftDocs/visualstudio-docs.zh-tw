@@ -1,5 +1,6 @@
 ---
-title: IDebugExpressionEvaluator：： SetRegistryRoot |Microsoft Docs
+description: 這個方法會設定登錄根目錄。
+title: IDebugExpressionEvaluator：： SetRegistryRoot |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b5151d337618409970b61e515cd4428467a7fe25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3b900817a5025b0d523f8d3bb3237a1b10cc3a6a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930339"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152399"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 這個方法會設定登錄根目錄。 用於並存的偵錯工具。
@@ -47,7 +48,7 @@ int SetRegistryRoot(
  如果成功，則傳回， `S_OK` 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 當運算式評估工具第一次具現化時，通常會設定指定的登錄根目錄，並指向特定 Visual Studio 版本 ( # B0 \\ *X. y* 的登錄機碼，其中 *X. y* 是) 的版本號碼。
+ 當運算式評估工具第一次具現化時，通常會設定指定的登錄根目錄，並指向特定 Visual Studio 版本 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudioX.x.x.x 的登錄機碼 \\ **，其中 *X. y* 是) 的版本號碼。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

@@ -1,5 +1,6 @@
 ---
-title: IDebugExtendedField：： IsClosedType |Microsoft Docs
+description: 判斷欄位是否代表封閉型別。
+title: IDebugExtendedField：： IsClosedType |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 404b1852e0db27673ea62569b25013a7f999f16d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f13fa0f143ac6adb8fb3493621b7ef638a394ca
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915495"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152113"
 ---
 # <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
 判斷欄位是否代表封閉型別。

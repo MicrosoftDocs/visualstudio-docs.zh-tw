@@ -1,5 +1,6 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2 |Microsoft Docs
+description: 當非同步運算式評估完成時，debug engine 會將這個介面傳送 (DE) 至會話 debug manager (SDM) 。
+title: IDebugExpressionEvaluationCompleteEvent2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74e31339b48e49869ce76ce9a3b20a14dcb0acf5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a56cb564470263c9ae98fb0adda84881f25209c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930456"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152594"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 當非同步運算式評估完成時，debug engine 會將這個介面傳送 (DE) 至會話 debug manager (SDM) 。

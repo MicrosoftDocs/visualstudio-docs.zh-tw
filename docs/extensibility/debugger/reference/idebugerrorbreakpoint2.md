@@ -1,5 +1,6 @@
 ---
-title: IDebugErrorBreakpoint2 |Microsoft Docs
+description: 此介面代表錯誤或警告中斷點，例如不正確位置、不正確運算式，或暫止中斷點尚未系結 (程式碼尚未載入，因此) 的原因。
+title: IDebugErrorBreakpoint2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 798dcf0beecd3b1a8cf786b93e581ac6aa780210
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91697ebad462f3d1e953aa42d74bf5a96757886a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888390"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153153"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 此介面代表錯誤或警告中斷點，例如不正確位置、不正確運算式，或暫止中斷點尚未系結 (程式碼尚未載入，因此) 的原因。

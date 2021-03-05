@@ -1,5 +1,6 @@
 ---
-title: 維度 |Microsoft Docs
+description: 每個 FORTRAN 陣列都有以 SymTagDimension 符號識別的維度。
+title: 維度 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f20217f1a83db71e5a63b2f592e2749dc07a2889
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb077c24c42af561e884384959149c9b1990d422
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865423"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151279"
 ---
 # <a name="dimension"></a>維度
 每個 FORTRAN 陣列都有一個由符號識別的維度 `SymTagDimension` 。

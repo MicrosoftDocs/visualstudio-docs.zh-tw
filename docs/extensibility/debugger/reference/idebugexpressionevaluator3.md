@@ -1,5 +1,6 @@
 ---
-title: IDebugExpressionEvaluator3 |Microsoft Docs
+description: 表示具有增強型剖析器樹狀結構 (EE) 的運算式評估工具。
+title: IDebugExpressionEvaluator3 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58d37d1afb33642d352a86c197cdcb72afef5330
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3732e1262424fbe54de835848642f7ab1c78d7e9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915538"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152152"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]

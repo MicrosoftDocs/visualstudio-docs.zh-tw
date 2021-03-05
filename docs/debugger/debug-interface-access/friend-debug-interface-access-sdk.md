@@ -1,5 +1,6 @@
 ---
-title: Friend (Debug 介面存取 SDK) |Microsoft Docs
+description: Friend 類別和 friend 函式是透過 SymTagFriend 符號來識別。
+title: Friend (Debug 介面存取 SDK) |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b895555ce1334fa306b64fe213787bdf5dc827e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4a0e9784c864b2b591847f3d77ced553762911c1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865381"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151213"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>friend (偵錯介面存取 SDK)
 Friend 類別和 friend 函式是以 `SymTagFriend` 符號識別。 它們是父使用者自訂類型的子系 (Udt) ，而且具有 [IDiaSymbol：： get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) 屬性。

@@ -1,5 +1,6 @@
 ---
-title: IDebugExpressionEvaluator3：:P arse2 |Microsoft Docs
+description: 給定符號提供者和評估框架的位址，將運算式字串轉換為剖析的運算式。
+title: IDebugExpressionEvaluator3：:P arse2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8a82e729f3811f63a11aa8476ad23b566521c8cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39edfbcdec6f634307c61b3db4ac76b238ac3614
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915515"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152204"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 給定符號提供者和評估框架的位址，將運算式字串轉換為剖析的運算式。

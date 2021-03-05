@@ -1,5 +1,6 @@
 ---
-title: IDebugExceptionEvent2：： GetException |Microsoft Docs
+description: 取得引發這個事件之例外狀況的詳細描述。
+title: IDebugExceptionEvent2：： GetException |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d9b9a174843b4c48dccc00370176668c582b53c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6505cd2309323d7fe91f2c807af33555c3575fd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933280"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152893"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 取得引發這個事件之例外狀況的詳細描述。

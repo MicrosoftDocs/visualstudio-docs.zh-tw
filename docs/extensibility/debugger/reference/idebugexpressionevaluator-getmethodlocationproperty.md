@@ -1,5 +1,6 @@
 ---
-title: IDebugExpressionEvaluator：： GetMethodLocationProperty |Microsoft Docs
+description: 這個方法會將方法位置和位移轉換成記憶體位址。
+title: IDebugExpressionEvaluator：： GetMethodLocationProperty |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13759bc8598c4739fbb9d2263dd8dc7d1b84c16e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f841f602064b21035ea409457c708f99ec25bf12
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930417"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152516"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 這個方法會將方法位置和位移轉換成記憶體位址。

@@ -1,5 +1,6 @@
 ---
-title: IDebugProgramEngines2：： EnumPossibleEngines |Microsoft Docs
+description: 傳回所有可能的 debug 引擎的 Guid (DE) 可將此程式進行偵錯工具。
+title: IDebugProgramEngines2：： EnumPossibleEngines |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aa404f713a8982177cb28c48ddc83f332e5c5e56
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e5719728637f26ed61283578565470b39fc60455
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899009"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151580"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 傳回所有可能的 debug 引擎的 Guid (DE) 可將此程式進行偵錯工具。

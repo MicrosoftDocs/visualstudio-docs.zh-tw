@@ -1,5 +1,6 @@
 ---
-title: IDebugEventCallback2：： Event |Microsoft Docs
+description: 傳送 debug 事件的通知。
+title: IDebugEventCallback2：： Event |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54f53132f0a1f4769386874118d24f7e77a95f71
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afa0cfd8f96d21a510370a4fc526a3cae053c77b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933306"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152919"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 傳送 debug 事件的通知。
