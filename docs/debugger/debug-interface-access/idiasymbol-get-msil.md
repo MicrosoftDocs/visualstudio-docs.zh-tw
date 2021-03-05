@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_msil |Microsoft Docs
+description: 抓取旗標，這個旗標會指定符號是否參考 Microsoft 中繼語言 (MSIL) 程式碼。
+title: IDiaSymbol：： get_msil |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 89e14e118c6d9f0a04cfe2c29de345a88a0fc63c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 322b01e97507da4940aea02fe461da0b19b7995c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853860"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155947"
 ---
 # <a name="idiasymbolget_msil"></a>IDiaSymbol::get_msil
 抓取旗標，這個旗標會指定符號是否參考 Microsoft 中繼語言 (MSIL) 程式碼。

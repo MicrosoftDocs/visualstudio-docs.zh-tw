@@ -1,4 +1,5 @@
 ---
+description: 抓取原始 (未修改) 類型的識別碼。
 title: IDiaSymbol::get_unmodifiedTypeId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ab437d243b976b2d8a32d62430f3169ed79905
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 816689751a28b2b3729542233004b2d98a8366de
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862532"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155520"
 ---
 # <a name="idiasymbolget_unmodifiedtypeid"></a>IDiaSymbol::get_unmodifiedTypeId
 抓取原始 (未修改) 類型的識別碼。

@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_isAcceleratorStubFunction |Microsoft Docs
+description: 指出符號是否對應至針對對應至 parallel_for_each 呼叫之快速鍵所編譯之著色器的最上層函式符號。
+title: IDiaSymbol：： get_isAcceleratorStubFunction |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dc951b069342478301b0cf815d1c226f9f1da11
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 710622fdb8fb10d0357c060097f13bab3be7d05f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854133"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156213"
 ---
 # <a name="idiasymbolget_isacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
 指出符號是否對應至針對對應至呼叫之快速鍵編譯的著色器的最上層函式符號 `parallel_for_each` 。

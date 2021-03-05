@@ -1,4 +1,5 @@
 ---
+description: 抓取不同的使用者定義型別 (UDT) 。
 title: IDiaSymbol::get_udtKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b93f8369b4cc1e733b89c9aa25e04150849b2e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c49fc5b27a9af2a986b0cde1dc41b3a07df7150
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853447"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155576"
 ---
 # <a name="idiasymbolget_udtkind"></a>IDiaSymbol::get_udtKind
 抓取不同的使用者定義型別 (UDT) 。

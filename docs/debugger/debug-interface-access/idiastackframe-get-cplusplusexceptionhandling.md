@@ -1,4 +1,5 @@
 ---
+description: 捕獲旗標，指出 c + + 例外狀況處理是否有效。
 title: IDiaStackFrame::get_cplusplusExceptionHandling | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a4532d64b31f291262938e03b595795d0f1252fe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d7e0fb0d3c6006a9ee2b83bae8e02d1150530f9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854931"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156892"
 ---
 # <a name="idiastackframeget_cplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 捕獲旗標，指出 c + + 例外狀況處理是否有效。

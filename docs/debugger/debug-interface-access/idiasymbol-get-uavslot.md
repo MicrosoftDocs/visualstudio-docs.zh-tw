@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_uavSlot |Microsoft Docs
+description: 抓取 uav 插槽。
+title: IDiaSymbol：： get_uavSlot |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba6c88200ea935b0061e2b1939a13c6c376ee96f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad1d526952f7f09ebc1d186f8833f1d0b07ae678
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862560"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155604"
 ---
 # <a name="idiasymbolget_uavslot"></a>IDiaSymbol::get_uavSlot
 抓取 uav 插槽。

@@ -1,4 +1,5 @@
 ---
+description: 傳回區域符號有效範圍之起始位址的位移部分。
 title: IDiaSymbol::get_liveRangeStartAddressOffset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d7c2e80ebbd7cef116b27d6c3b9a40ef21fd38d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41cdaaa1035a27294f3172c6533da2f682ff69a7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853930"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156031"
 ---
 # <a name="idiasymbolget_liverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 傳回區域符號有效範圍之起始位址的位移部分。

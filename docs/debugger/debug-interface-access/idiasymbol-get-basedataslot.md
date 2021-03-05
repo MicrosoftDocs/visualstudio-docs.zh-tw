@@ -1,4 +1,5 @@
 ---
+description: 抓取基底資料槽。
 title: IDiaSymbol::get_baseDataSlot | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3475ec7dd4a619ce231538203104ceab264c8a84
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 941633f50e7d8e44e591b82211b00de931d45919
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854511"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156465"
 ---
 # <a name="idiasymbolget_basedataslot"></a>IDiaSymbol::get_baseDataSlot
 抓取基底資料槽。

@@ -1,4 +1,5 @@
 ---
+description: 抓取使用者定義型別之虛擬資料表類型的符號介面。
 title: IDiaSymbol::get_virtualTableShape | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 62eb3879fd30bfd4820dd0f53b864140127f51a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f9d91e993a85f97acd23d396f40e4b1b82c9434
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853370"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155492"
 ---
 # <a name="idiasymbolget_virtualtableshape"></a>IDiaSymbol::get_virtualTableShape
 抓取使用者定義型別之虛擬資料表類型的符號介面。

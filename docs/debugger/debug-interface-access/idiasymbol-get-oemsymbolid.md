@@ -1,4 +1,5 @@
 ---
+description: 抓取原始設備製造商 (OEM) 符號的識別碼值。
 title: IDiaSymbol::get_oemSymbolId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bec0bcde96bbb55129cf3549afa48707e236ddeb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd7ce01dea21a8d9fe2886fb5fe7b4277f458636
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862847"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155919"
 ---
 # <a name="idiasymbolget_oemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 抓取原始設備製造商 (OEM) 符號的識別碼值。
@@ -42,7 +43,7 @@ HRESULT get_oemSymbolId (
 > 的傳回值 `S_FALSE` 表示該符號無法使用該屬性。
 
 ## <a name="remarks"></a>備註
- 識別碼是 DIA SDK 所建立的唯一值，會將所有符號標示為唯一的。
+ 識別碼是 DIA SDK 所建立的唯一值，可將所有符號標示為唯一的。
 
  這個屬性只適用于 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 型別為的符號 `SymTagCustomType` 。
 

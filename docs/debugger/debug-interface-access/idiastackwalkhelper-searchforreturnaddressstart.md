@@ -1,5 +1,6 @@
 ---
-title: IDiaStackWalkHelper：： searchForReturnAddressStart |Microsoft Docs
+description: 在指定的堆疊框架中搜尋指定堆疊位址的或附近的傳回位址。
+title: IDiaStackWalkHelper：： searchForReturnAddressStart |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 097bc8f1d2cadd800db78623523b26d6fe7587e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5dfda60c2be8f7900a8b2fc0db54e4801c628bb7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863750"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156766"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddressstart"></a>IDiaStackWalkHelper::searchForReturnAddressStart
 在指定的堆疊框架中搜尋指定堆疊位址的或附近的傳回位址。

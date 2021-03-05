@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： findInlineeLinesByRVA |Microsoft Docs
+description: IDiaSymbol：： findInlineeLinesByRVA 會抓取列舉，以允許用戶端逐一查看在指定的相對虛擬位址 (RVA) 內，直接或間接內嵌的所有函式的行號資訊。
+title: IDiaSymbol：： findInlineeLinesByRVA |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a959de9f17969ca5c759988b7781b65936409005
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1169f0d92c46165b840b6831a735e333bf6ff3ae
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863694"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156717"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
 抓取列舉，此列舉可讓用戶端在指定的相對虛擬位址 (RVA) 內，直接或間接地逐一查看在此符號中內嵌或間接內嵌的所有函式的行號資訊。

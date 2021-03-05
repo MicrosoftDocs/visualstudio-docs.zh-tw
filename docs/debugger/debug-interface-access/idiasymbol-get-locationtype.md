@@ -1,4 +1,5 @@
 ---
+description: 捕獲資料符號的位置類型。
 title: IDiaSymbol::get_locationType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1419f8e26b3541ad648668b95b6d3316de3d7b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a4ef7d60db3eacc7f87699e8c6e20b93e56bcd4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853909"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156017"
 ---
 # <a name="idiasymbolget_locationtype"></a>IDiaSymbol::get_locationType
 捕獲資料符號的位置類型。

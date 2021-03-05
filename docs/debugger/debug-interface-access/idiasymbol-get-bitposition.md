@@ -1,4 +1,5 @@
 ---
+description: 抓取位置的位位置。
 title: IDiaSymbol::get_bitPosition | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c0c796bc01b6829e3345c45080f9ea2215d235
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82d0220afe8b5946e52dfe3885a23bdc1827b2e1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854490"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156444"
 ---
 # <a name="idiasymbolget_bitposition"></a>IDiaSymbol::get_bitPosition
 抓取位置的位位置。 當 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 為時使用 `LocIsBitField` 。

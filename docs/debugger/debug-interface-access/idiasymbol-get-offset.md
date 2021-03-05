@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_offset |Microsoft Docs
+description: 抓取符號位置的位移。
+title: IDiaSymbol：： get_offset |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6469180cada412fe5f08db1bd982f5a6e250e9e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c5c3e59596fdfc1e769710f8459620303e72d6a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853741"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155898"
 ---
 # <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
 抓取符號位置的位移。 當 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 為或時 `LocIsRegRel` 使用 `LocIsBitField` 。

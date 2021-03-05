@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_constructor |Microsoft Docs
+description: 抓取旗標，這個旗標會指定使用者定義資料類型是否具有函式或自訂函數。
+title: IDiaSymbol：： get_constructor |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1d2f084d0561d7d691df1f0e12f98b4604c11b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca2162f9da71d42308feb44b15edcca77ad269df
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854427"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156416"
 ---
 # <a name="idiasymbolget_constructor"></a>IDiaSymbol::get_constructor
 抓取旗標，這個旗標會指定使用者定義資料類型是否具有函式或自訂函數。

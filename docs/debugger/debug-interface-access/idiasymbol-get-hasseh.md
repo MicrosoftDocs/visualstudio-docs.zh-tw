@@ -1,4 +1,5 @@
 ---
+description: 抓取旗標，這個旗標會指定函數是否包含任何結構化例外狀況處理 (C/c + +) )  (例如 _try/__except 區塊) 。
 title: IDiaSymbol::get_hasSEH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0689490e855508314835a21e44e6cb9a02736ef4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a802a14c1c4e9b9c3b080c751d8cd512c3adf75d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863302"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156263"
 ---
 # <a name="idiasymbolget_hasseh"></a>IDiaSymbol::get_hasSEH
 抓取旗標，這個旗標會指定函數是否包含任何 [結構化例外狀況處理 (C/c + +) ](/cpp/cpp/structured-exception-handling-c-cpp) (例如 __try/ \_ _except 區塊) 。

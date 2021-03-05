@@ -1,4 +1,5 @@
 ---
+description: 使用「程式偵錯工具」資料庫 ( .pdb) 檔來加速堆疊。
 title: IDiaStackWalkHelper | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b84661f5cd51da17cf20577490b2fe458e71ef71
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb014ebf703a0775e4f18208bc17d74a3fa29f12
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863736"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156738"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 使用「程式偵錯工具」資料庫 ( .pdb) 檔來加速堆疊。

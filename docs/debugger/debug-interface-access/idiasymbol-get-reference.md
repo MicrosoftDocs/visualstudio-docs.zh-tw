@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_reference |Microsoft Docs
+description: 抓取旗標，這個旗標會指定指標型別是否為參考。
+title: IDiaSymbol：： get_reference |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2337dbe13b6d6fed1b12bbcee86f943831dff3d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 278a146da28b3402c8586b96ab1053250bf8f2c0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862770"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155807"
 ---
 # <a name="idiasymbolget_reference"></a>IDiaSymbol::get_reference
 抓取旗標，這個旗標會指定指標型別是否為參考。

@@ -1,4 +1,5 @@
 ---
+description: 抓取旗標，這個旗標會指定編譯單位) 是否包含偵錯工具資訊。
 title: IDiaSymbol::get_hasDebugInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8914c0eae31e7faac8cea523f4c558a9f00749a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c1ca848ec33e31fbb1f6e8708fd41930931d5f6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863386"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156325"
 ---
 # <a name="idiasymbolget_hasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
 抓取旗標，這個旗標會指定 [編譯單位](../../debugger/debug-interface-access/compiland.md) 是否包含偵錯工具資訊。

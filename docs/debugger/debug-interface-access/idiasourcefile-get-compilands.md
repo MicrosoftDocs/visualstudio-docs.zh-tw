@@ -1,4 +1,5 @@
 ---
+description: 抓取 compilands 的列舉值，其中包含參考此檔案的行號。
 title: IDiaSourceFile::get_compilands | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 339097280cc3ddf88082f7c18c65693fd8e30702
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2161501bb55385fa9967d6b841b938c1482f20ce
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854980"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156948"
 ---
 # <a name="idiasourcefileget_compilands"></a>IDiaSourceFile::get_compilands
 抓取 compilands 的列舉值，其中包含參考此檔案的行號。

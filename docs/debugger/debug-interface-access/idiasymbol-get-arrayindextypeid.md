@@ -1,4 +1,5 @@
 ---
+description: 抓取符號的陣列索引類型識別碼。
 title: IDiaSymbol::get_arrayIndexTypeId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 48a3be4d7aa3d2f7fcc096c3d8c101733bd71fff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9815f4d76d80adea96950c4d63ba46702827b8bc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863582"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156514"
 ---
 # <a name="idiasymbolget_arrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
 抓取符號的陣列索引類型識別碼。
@@ -42,7 +43,7 @@ HRESULT get_arrayIndexTypeId (
 > 的傳回值 `S_FALSE` 表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
- 識別碼是 DIA SDK 所建立的唯一值，會將所有符號標示為唯一的。
+ 識別碼是 DIA SDK 所建立的唯一值，可將所有符號標示為唯一的。
 
 ## <a name="requirements"></a>規格需求
 

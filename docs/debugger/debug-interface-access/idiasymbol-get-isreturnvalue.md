@@ -1,4 +1,5 @@
 ---
+description: 指定變數是否攜帶傳回值。
 title: IDiaSymbol::get_isReturnValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee93dd1c6ea72111d226c1ca59d12de4cc53dc9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 92e4c024c6f849a67c028013953047c79711a017
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854021"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156066"
 ---
 # <a name="idiasymbolget_isreturnvalue"></a>IDiaSymbol::get_isReturnValue
 指定變數是否攜帶傳回值。

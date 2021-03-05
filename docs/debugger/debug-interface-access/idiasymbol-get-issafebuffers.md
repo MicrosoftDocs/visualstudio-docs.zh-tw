@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_isSafeBuffers |Microsoft Docs
+description: 抓取旗標，這個旗標會指定是否使用安全緩衝區的預處理器指示詞。
+title: IDiaSymbol：： get_isSafeBuffers |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c32382468c4d67dae9e94a3fc9882fd61213cf00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9fd2114a1e4272296e97fa498c5c9137b49adeb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863120"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156052"
 ---
 # <a name="idiasymbolget_issafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 抓取旗標，這個旗標會指定是否使用安全緩衝區的預處理器指示詞。 當 [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md) 設定為時，請使用 `SymTagFunction` 。

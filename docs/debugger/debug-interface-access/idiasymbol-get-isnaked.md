@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_isNaked |Microsoft Docs
+description: 抓取旗標，這個旗標會指定函式是否具有 naked) 屬性 (也就是說，函式沒有編譯器) 所新增的初構或終解程式碼。
+title: IDiaSymbol：： get_isNaked |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c9e905cc68bb612d9a59bb1780d08561716abca8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ec1d273ce826a87ae658f7ed22fe7680edad25d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863141"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156157"
 ---
 # <a name="idiasymbolget_isnaked"></a>IDiaSymbol::get_isNaked
 抓取旗標，這個旗標會指定函式是否具有 [naked](/cpp/cpp/naked-cpp) 屬性 (也就是說，函式沒有編譯器) 所新增的初構或終解程式碼。

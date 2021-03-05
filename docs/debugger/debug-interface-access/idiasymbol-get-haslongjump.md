@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_hasLongJump |Microsoft Docs
+description: 抓取旗標，這個旗標會指定函式是否包含使用 longjmp) 命令 (與 setjmp (/cpp/c-runtime-library/reference/setjmp) 命令配對，這些會形成例外狀況處理) 的 C 樣式方法。
+title: IDiaSymbol：： get_hasLongJump |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f7107f498ca5a7a46a3c47cfa131d7f5396bae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c211e52e1a8e13a88b6c2a2f9404f5d8a67386f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863323"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156297"
 ---
 # <a name="idiasymbolget_haslongjump"></a>IDiaSymbol::get_hasLongJump
 抓取旗標，這個旗標會指定函式是否包含使用 [longjmp](/cpp/c-runtime-library/reference/longjmp) 命令 (與 [setjmp](/cpp/c-runtime-library/reference/setjmp) 命令配對，而這些會形成例外狀況處理) 的 C 樣式方法。

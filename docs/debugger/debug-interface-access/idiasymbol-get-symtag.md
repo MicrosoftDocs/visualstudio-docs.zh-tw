@@ -1,4 +1,5 @@
 ---
+description: 抓取符號類型分類器。
 title: IDiaSymbol::get_symTag | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9421807871a173535aaded1064133dcef683f513
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d8988efac8f29ec587a48568a9b61a40d7c710b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862672"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155730"
 ---
 # <a name="idiasymbolget_symtag"></a>IDiaSymbol::get_symTag
 抓取符號類型分類器。

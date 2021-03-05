@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_isHotpatchable |Microsoft Docs
+description: 抓取旗標，指出模組是否以/hotpatch (Create 可線上修補 Image) ) 編譯器參數編譯。
+title: IDiaSymbol：： get_isHotpatchable |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9433743788663e9a3975f7bb2b402d930b0b4837
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8af3d00d15bb521dda05ce345a93b16a47f8539b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854091"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156185"
 ---
 # <a name="idiasymbolget_ishotpatchable"></a>IDiaSymbol::get_isHotpatchable
 抓取旗標，指出模組是否以 [/hotpatch (Create 可線上修補 Image) ](/cpp/build/reference/hotpatch-create-hotpatchable-image) 編譯器參數編譯。

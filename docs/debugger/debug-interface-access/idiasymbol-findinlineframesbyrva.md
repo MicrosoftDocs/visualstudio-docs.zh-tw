@@ -1,4 +1,5 @@
 ---
+description: IDiaSymbol：： findInlineFramesByRVA 會抓取列舉，以允許用戶端逐一查看指定相對虛擬位址上的所有內嵌框架 (RVA) 。
 title: IDiaSymbol::findInlineFramesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 27cd45ba5dbcc54ecbaac6013d1d89d6f3bea4a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22ecafb604f31c23f503bbfcbedcd13ee2a42e95
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854630"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156661"
 ---
 # <a name="idiasymbolfindinlineframesbyrva"></a>IDiaSymbol::findInlineFramesByRVA
 抓取列舉，可讓用戶端在指定的相對虛擬位址 (RVA) 上，逐一查看所有的內嵌框架。

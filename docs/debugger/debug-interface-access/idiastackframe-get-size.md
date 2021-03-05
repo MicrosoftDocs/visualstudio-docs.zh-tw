@@ -1,4 +1,5 @@
 ---
+description: 抓取堆疊框架的大小（以位元組為單位）。
 title: IDiaStackFrame::get_size | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 80a5f8fe48985df2cde61a52d69aa8bc6d6fb06f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 64132a4865735acdc70a252b72702e1529ad9c20
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863890"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156878"
 ---
 # <a name="idiastackframeget_size"></a>IDiaStackFrame::get_size
 抓取堆疊框架的大小（以位元組為單位）。

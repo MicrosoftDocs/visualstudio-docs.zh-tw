@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_farReturn |Microsoft Docs
+description: 抓取旗標，這個旗標會指定函數是否包含最多傳回。
+title: IDiaSymbol：： get_farReturn |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f06b6fa14af959d051409ce721807fc939f8ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bebf0d1f61c6cf1dc21528e44703de049d247c1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863421"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156339"
 ---
 # <a name="idiasymbolget_farreturn"></a>IDiaSymbol::get_farReturn
 抓取旗標，這個旗標會指定函數是否包含最多傳回。

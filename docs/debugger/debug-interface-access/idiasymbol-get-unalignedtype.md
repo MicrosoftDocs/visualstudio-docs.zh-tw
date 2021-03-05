@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_unalignedType |Microsoft Docs
+description: 抓取指定使用者定義資料類型是否未對齊的旗標。
+title: IDiaSymbol：： get_unalignedType |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 92c088660b4ae5cca67a5a90d840611046691a76
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b126951bdc178aca4aae36faeb2d41e307bf9ef1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862553"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155540"
 ---
 # <a name="idiasymbolget_unalignedtype"></a>IDiaSymbol::get_unalignedType
 抓取指定使用者定義資料類型是否未對齊的旗標。

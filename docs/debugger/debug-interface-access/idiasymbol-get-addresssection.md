@@ -1,4 +1,5 @@
 ---
+description: 抓取位址位置的區段部分。
 title: IDiaSymbol::get_addressSection | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 274b2e4820c78618df8f048cd3607a9ec9436500
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e0b6554011a29a7b90d1d7c55deefced01b27c3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863610"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156584"
 ---
 # <a name="idiasymbolget_addresssection"></a>IDiaSymbol::get_addressSection
 抓取位址位置的區段部分。 當 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 設定為時，請使用 `LocIsStatic` 。

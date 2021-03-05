@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_isMultipleInheritance |Microsoft Docs
+description: 指定 this 指標是否指向具有多重繼承的資料成員。
+title: IDiaSymbol：： get_isMultipleInheritance |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a50966270f91d941d825712938851ec5a06f0892
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d197810c61ca50a98cc47c5c3e2ecaca5be548d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854070"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156171"
 ---
 # <a name="idiasymbolget_ismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
 指定指標是否 `this` 指向具有多重繼承的資料成員。

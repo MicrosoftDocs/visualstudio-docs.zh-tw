@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_isDataAligned |Microsoft Docs
+description: 抓取旗標，這個旗標會指定使用者定義型別 (UDT) 是否已對齊某個特定的記憶體界限。
+title: IDiaSymbol：： get_isDataAligned |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f2270a960eda7942216751be90241e4f896ba5ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e32df5e095f7f7af332e29a8f9899d6f1f5351e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854105"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156199"
 ---
 # <a name="idiasymbolget_isdataaligned"></a>IDiaSymbol::get_isDataAligned
 抓取旗標，這個旗標會指定使用者定義型別 (UDT) 是否已對齊某個特定的記憶體界限。

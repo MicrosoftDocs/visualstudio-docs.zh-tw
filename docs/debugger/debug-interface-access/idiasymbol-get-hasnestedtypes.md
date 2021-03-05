@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_hasNestedTypes |Microsoft Docs
+description: 抓取旗標，這個旗標會指定使用者定義資料類型是否有嵌套的型別定義。
+title: IDiaSymbol：： get_hasNestedTypes |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 117bbed95e4adf79270072888c8ac1ac71215433
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b52efb012ef713c2308e3fc7b6b28367327e8311
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863309"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156283"
 ---
 # <a name="idiasymbolget_hasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
 抓取旗標，這個旗標會指定使用者定義資料類型是否有嵌套的型別定義。

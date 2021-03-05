@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_undecoratedNameEx |Microsoft Docs
+description: 針對 c + + 裝飾 (連結) 名稱，抓取部分或所有未修飾的名稱。
+title: IDiaSymbol：： get_undecoratedNameEx |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d34c362a64107bff94e271c01b57d45d09cf8d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35e1dcb2704b4a8e76fe8d7ffb172f0846fbdc78
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862546"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155527"
 ---
 # <a name="idiasymbolget_undecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 針對 c + + 裝飾 (連結) 名稱，抓取部分或所有未修飾的名稱。
@@ -50,7 +51,7 @@ HRESULT get_undecoratedNameEx(
  `undecorateOptions`可以是下列旗標的組合。
 
 > [!NOTE]
-> 旗標名稱未在 DIA SDK 中定義，因此您必須將宣告加入至您的程式碼，或使用原始值。
+> 旗標名稱未在 DIA SDK 中定義，因此您必須將宣告新增至您的程式碼，或使用原始值。
 
 |旗標|值|描述|
 |----------|-----------|-----------------|

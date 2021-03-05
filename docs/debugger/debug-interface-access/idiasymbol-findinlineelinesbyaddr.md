@@ -1,4 +1,5 @@
 ---
+description: IDiaSymbol：： findInlineeLinesByAddr 會抓取列舉，以允許用戶端逐一查看在指定的位址範圍內，直接或間接內嵌于此符號中的所有函式的行號資訊。
 title: IDiaSymbol::findInlineeLinesByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a97f53d5900768479290ab16add24ee8574e79a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8bdb7ad39d5f3dec7f4d3710f28fee94b6ff9fa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854651"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156752"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
 抓取列舉，此列舉可讓用戶端逐一查看在指定的位址範圍內，直接或間接內嵌于此符號中的所有函式的行號資訊。

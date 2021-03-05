@@ -1,4 +1,5 @@
 ---
+description: 抓取旗標，指出模組是否以/Z7、/Zi、/ZI (Debug 資訊格式編譯) ) 編譯器參數。
 title: IDiaSymbol::get_editAndContinueEnabled | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4168ab7ba3351dc8abe5f9c781fccea881fb7df0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ead107b051dd898b549ee25f800a8b8d2e83973a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854350"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156346"
 ---
 # <a name="idiasymbolget_editandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 抓取旗標，指出模組是否以 [/Z7、/zi、/zi (Debug 資訊格式編譯) ](/cpp/build/reference/z7-zi-zi-debug-information-format) 編譯器參數。

@@ -1,4 +1,5 @@
 ---
+description: IDiaStackFrame：： get_systemExceptionHandling 會抓取旗標，指出系統例外狀況處理是否有效。
 title: IDiaStackFrame::get_systemExceptionHandling | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a8211c1fc7dfc87b16f89c1f6dd181e92ec68f36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 976445f34dcbfff5c96bf4d5fdd4a1ebedc8bd03
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854847"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156885"
 ---
 # <a name="idiastackframeget_systemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
 抓取指出系統例外狀況處理是否有效的旗標。

@@ -1,5 +1,6 @@
 ---
-title: IDiaStackWalkHelper：： imageForVA |Microsoft Docs
+description: 針對可執行檔記憶體空間中某處的虛擬位址，傳回記憶體中的可執行檔映射的起始位置。
+title: IDiaStackWalkHelper：： imageForVA |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7f3ee8df56a0015e0ad0fc34b139a7bcaca29b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2459ed59f4b34befd893d25848de9482b39f9d70
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854763"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156843"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
 針對可執行檔記憶體空間中某處的虛擬位址，傳回記憶體中的可執行檔映射的起始位置。
