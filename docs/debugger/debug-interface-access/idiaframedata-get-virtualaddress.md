@@ -1,4 +1,5 @@
 ---
+description: 抓取框架的程式碼 (VA) 的虛擬位址。
 title: IDiaFrameData::get_virtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba343def1405609139bd2288b93bc1d43e11630c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 048d78185450cb06be7265f4db0cf34cf1a2d5d2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864926"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157648"
 ---
 # <a name="idiaframedataget_virtualaddress"></a>IDiaFrameData::get_virtualAddress
 抓取框架的程式碼 (VA) 的虛擬位址。

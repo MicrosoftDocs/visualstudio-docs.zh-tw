@@ -1,5 +1,6 @@
 ---
-title: IDiaDataSource：： get_lastError |Microsoft Docs
+description: 抓取最後載入錯誤的檔案名。
+title: IDiaDataSource：： get_lastError |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 950e6453a75878cd871532c2e5557e2e6314c932
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7edce9a2af6c849371360526d617d20738973cba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865290"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158312"
 ---
 # <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 抓取最後載入錯誤的檔案名。

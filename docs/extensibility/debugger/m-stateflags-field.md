@@ -1,5 +1,6 @@
 ---
-title: m_stateFlags 欄位 |Microsoft Docs
+description: 儲存與目前的狀態有關的資訊。
+title: m_stateFlags 欄位 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6e49ad2965ef99d5ceaafc3cb5f4de3589321d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 322e739d84f54f1aa3fd215ba902f0b11a060bcd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925242"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158770"
 ---
 # <a name="m_stateflags-field"></a>m_stateFlags 欄位
 儲存物件目前狀態的相關資訊 <xref:System.Threading.Tasks.Task> 。
@@ -24,7 +25,7 @@ ms.locfileid: "99925242"
 
  **元件：** *mscorlib.dll*) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在一般中繼語言 (的 CIL) 中提供下列語法。
 
 ## <a name="syntax"></a>語法
 

@@ -1,5 +1,6 @@
 ---
-title: IDebugArrayField |Microsoft Docs
+description: 此介面描述陣列符號或類型。
+title: IDebugArrayField |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64717948f6406d1c6e9a5c1fabfec4b3a16bf116
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3926bb47e1ea8a91289a7454f289cd3806e97f7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870255"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158718"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
 此介面描述陣列符號或類型。

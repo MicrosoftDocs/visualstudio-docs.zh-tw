@@ -1,4 +1,5 @@
 ---
+description: 傳回與虛擬位址相關聯的 .PDATA 資料區塊。
 title: IDiaStackWalkHelper::pdataForVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d150e777f657fcf63dc66dbe3e686c1b445dd473
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91f156d51b787666cf756a4de277587a46b0dd39
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863806"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158912"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 傳回與虛擬位址相關聯的 .PDATA 資料區塊。

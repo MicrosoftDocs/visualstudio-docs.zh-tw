@@ -1,5 +1,6 @@
 ---
-title: IDiaDataSource：： loadAndValidateDataFromPdb |Microsoft Docs
+description: 開啟並確認程式資料庫 ( .pdb) 檔與提供的簽章資訊相符，並將 .pdb 檔案準備為 debug 資料來源。
+title: IDiaDataSource：： loadAndValidateDataFromPdb |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f903bde5121a9ece797f6eb97c29805a3290a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d55053271e38ee87533a11a8c5f6cd30d7e7333
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857164"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158285"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 開啟並確認程式資料庫 ( .pdb) 檔與提供的簽章資訊相符，並將 .pdb 檔案準備為 debug 資料來源。

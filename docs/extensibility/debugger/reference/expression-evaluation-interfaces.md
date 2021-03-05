@@ -1,5 +1,6 @@
 ---
-title: 運算式評估介面 |Microsoft Docs
+description: 以下是 Visual Studio 偵錯工具的運算式評估介面。
+title: 運算式評估介面 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a048d11b09ee873a2f5a11e35db78f68df6ad680
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d380fcce087fad3dc6b101e78cbc514ba19b1052
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936934"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158731"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
@@ -34,7 +35,7 @@ ms.locfileid: "99936934"
 
 - Visual Studio (VS) 
 
-|介面|實作為|Description|
+|介面|實作為|描述|
 |---------------|--------------------|-----------------|
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|代表變數的數值別名。|
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|代表變數的數值別名，並讓運算式評估工具 (EE) 取得別名的應用程式域。|

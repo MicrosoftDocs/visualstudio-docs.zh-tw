@@ -1,5 +1,6 @@
 ---
-title: IDiaDataSource：： loadDataFromIStream |Microsoft Docs
+description: 準備程式資料庫中儲存的 debug 資料 ( .pdb) 透過記憶體中資料流程存取的檔案。
+title: IDiaDataSource：： loadDataFromIStream |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: adf9d25f2ba6afac0510c95790dc8608b22243c2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f68c3e11b07ef4be2824b4795291dfbc793c945
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857136"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158264"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 準備程式資料庫中儲存的 debug 資料 ( .pdb) 透過記憶體中資料流程存取的檔案。

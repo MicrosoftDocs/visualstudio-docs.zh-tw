@@ -1,4 +1,5 @@
 ---
+description: 抓取迴圈冗余檢查 (CRC) 從原始程式碼的位元組計算。
 title: IDiaInjectedSource::get_crc | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e346352d802404beca57054ab649366035baa908
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74fec4428af13e3e3410cf8cb526c8b5b1dbebf6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864835"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157599"
 ---
 # <a name="idiainjectedsourceget_crc"></a>IDiaInjectedSource::get_crc
 抓取迴圈冗余檢查 (CRC) 從原始程式碼的位元組計算。

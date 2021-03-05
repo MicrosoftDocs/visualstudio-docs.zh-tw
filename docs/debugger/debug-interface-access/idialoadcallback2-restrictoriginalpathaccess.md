@@ -1,4 +1,5 @@
 ---
+description: 決定是否可以在原始的 debug 目錄中尋找 .pdb 檔。
 title: IDiaLoadCallback2::RestrictOriginalPathAccess | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8346d86b88635e544c698d31f4aecb18728c8b8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7af6794b57dfe5efe8d2e85f8e74febcede5ef23
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864660"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157424"
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
 決定是否可以在原始的 debug 目錄中尋找 .pdb 檔。

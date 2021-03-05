@@ -1,5 +1,6 @@
 ---
-title: IDiaEnumLineNumbers：： Next |Microsoft Docs
+description: 捕獲列舉序列中指定的行號數目。
+title: IDiaEnumLineNumbers：： Next |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d65791fddfd09aa90a65320b4663b17ea4e8260f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9301c10634919774b8253eea77dba6acdd3c324a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856590"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157962"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
 捕獲列舉序列中指定的行號數目。

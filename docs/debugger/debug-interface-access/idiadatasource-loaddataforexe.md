@@ -1,5 +1,6 @@
 ---
-title: IDiaDataSource：： loadDataForExe |Microsoft Docs
+description: 開啟並準備與 .exe/.dll 檔案相關聯的調試資料。
+title: IDiaDataSource：： loadDataForExe |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd56e200ffe382cf8803598d9a1006403aeb393
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ecb7c774314a35f99de41af720b180475e0c55b5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865255"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158271"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 開啟並準備與 .exe/.dll 檔案相關聯的調試資料。

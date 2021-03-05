@@ -1,5 +1,6 @@
 ---
-title: IDiaSession：： findSymbolsForAcceleratorPointerTag |Microsoft Docs
+description: 傳回指定之標記值在父快速鍵對應存根函式中對應之變數的符號列舉。
+title: IDiaSession：： findSymbolsForAcceleratorPointerTag |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cba0d6c24bf4c22773da738ceb37470d6d7c5125
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d1a177cd1c36a2e51f846bf60edfbef875a51df
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855064"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158926"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
 傳回指定之標記值在父快速鍵對應存根函式中對應之變數的符號列舉。

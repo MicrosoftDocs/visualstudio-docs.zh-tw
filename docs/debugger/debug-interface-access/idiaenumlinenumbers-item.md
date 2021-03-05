@@ -1,4 +1,5 @@
 ---
+description: 以索引的方式抓取行號。
 title: IDiaEnumLineNumbers::Item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c0a421b89f9187a055b7ab5fedc93a5f66a112
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6eeea52f2152d1674710d7c5ee2b5970a8cd91cd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856597"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157977"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
 以索引的方式抓取行號。

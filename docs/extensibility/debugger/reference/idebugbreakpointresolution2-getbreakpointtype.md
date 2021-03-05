@@ -1,5 +1,6 @@
 ---
-title: IDebugBreakpointResolution2：： GetBreakpointType |Microsoft Docs
+description: 取得這個解析所表示之中斷點的型別。
+title: IDebugBreakpointResolution2：： GetBreakpointType |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5410cbf6147e0c8c6f4cba97b0214c4503f9790b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cca069871c99c623119853f37d1c422125b985ff
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892992"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158510"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 取得這個解析所表示之中斷點的型別。

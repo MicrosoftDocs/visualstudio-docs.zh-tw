@@ -1,4 +1,5 @@
 ---
+description: 捕獲區段的編譯單位識別碼。
 title: IDiaSectionContrib::get_compilandId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 693c036bf3947e391cdd076f99af4dd267a4c771
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04f5420ab149de3382553ea2cc23a04f0a526bd6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855470"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157298"
 ---
 # <a name="idiasectioncontribget_compilandid"></a>IDiaSectionContrib::get_compilandId
 捕獲區段的編譯單位識別碼。

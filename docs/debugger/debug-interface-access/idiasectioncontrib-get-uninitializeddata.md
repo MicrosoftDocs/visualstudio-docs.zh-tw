@@ -1,4 +1,5 @@
 ---
+description: 抓取旗標，這個旗標會指出區段是否包含未初始化的資料。
 title: IDiaSectionContrib::get_uninitializedData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d18e6398f563f7f766ba1e38047a688676b55bca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 391ef6ddc2b0a377fbde0b9475b689df2823fdcc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864387"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157158"
 ---
 # <a name="idiasectioncontribget_uninitializeddata"></a>IDiaSectionContrib::get_uninitializedData
 抓取旗標，這個旗標會指出區段是否包含未初始化的資料。

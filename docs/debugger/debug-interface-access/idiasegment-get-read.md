@@ -1,4 +1,5 @@
 ---
+description: 抓取指出區段是否可讀取的旗標。
 title: IDiaSegment::get_read | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da4a37a59eddde4e4f7a67efe9bcc1902a29fcb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a1ed49889432d29b8058dcf269549dd31d6f9cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855295"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157172"
 ---
 # <a name="idiasegmentget_read"></a>IDiaSegment::get_read
 抓取指出區段是否可讀取的旗標。

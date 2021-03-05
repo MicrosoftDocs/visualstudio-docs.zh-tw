@@ -1,5 +1,6 @@
 ---
-title: IDebugArrayObject：： GetCount |Microsoft Docs
+description: 取得陣列中的元素計數。
+title: IDebugArrayObject：： GetCount |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9750b2982ad0b2d70375fe0519a9fd888bcac8a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4dafff955eb0801ffe13f76f61d8f7451398e41e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870216"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158692"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 取得陣列中的元素計數。

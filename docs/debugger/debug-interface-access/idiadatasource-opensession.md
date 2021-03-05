@@ -1,5 +1,6 @@
 ---
-title: IDiaDataSource：： openSession |Microsoft Docs
+description: 開啟用於查詢符號的會話。
+title: IDiaDataSource：： openSession |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1221bac37b51d9aa55e31a07f2a301defa3af16e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d31e30c2044332d1e299d6a734ee5fecb22ec686
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857122"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158236"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 開啟用於查詢符號的會話。

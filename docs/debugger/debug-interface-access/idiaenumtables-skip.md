@@ -1,4 +1,5 @@
 ---
+description: 略過列舉序列中指定數目的資料表。
 title: IDiaEnumTables::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 739c8e0684e435d4b6747a7127907ec424d90c4f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98cec85c0b36051cb3fc173794188dbf7d58fcee
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856016"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157851"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
 略過列舉序列中指定數目的資料表。

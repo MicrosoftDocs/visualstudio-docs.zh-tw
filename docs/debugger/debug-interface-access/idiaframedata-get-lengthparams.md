@@ -1,4 +1,5 @@
 ---
+description: IDiaFrameData：： get_lengthParams 抓取堆疊上推送之參數的位元組數目。
 title: IDiaFrameData::get_lengthParams | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51f1f23704c404cf5772fc804b4e6d51aa5d35c2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f686095ab06097ff72692c988888e1e2954d3796
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864968"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157732"
 ---
 # <a name="idiaframedataget_lengthparams"></a>IDiaFrameData::get_lengthParams
 抓取堆疊上推送之參數的位元組數目。

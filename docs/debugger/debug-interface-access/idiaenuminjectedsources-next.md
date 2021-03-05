@@ -1,4 +1,5 @@
 ---
+description: 抓取列舉順序中指定數目的插入來源。
 title: IDiaEnumInjectedSources::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b77fd91e53e6fd0a3e5940e25c8d495a87d7f45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bdc57bd1b15150b93e8c42537e5a4abed8dfae57
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856674"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157998"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
 抓取列舉順序中指定數目的插入來源。

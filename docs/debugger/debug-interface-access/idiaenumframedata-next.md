@@ -1,5 +1,6 @@
 ---
-title: IDiaEnumFrameData：： Next |Microsoft Docs
+description: 抓取列舉序列中指定的框架資料元素數目。
+title: IDiaEnumFrameData：： Next |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a0d7a98884d217bb8172d53768917e8e8f7453d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: adc27c29eedc98375f9feefc8872b5a75b7b219b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856793"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158033"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
 抓取列舉序列中指定的框架資料元素數目。

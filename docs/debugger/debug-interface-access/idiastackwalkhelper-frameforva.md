@@ -1,4 +1,5 @@
 ---
+description: 抓取包含指定虛擬位址的堆疊框架。
 title: IDiaStackWalkHelper::frameForVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d5d053e7f3d185f3685ff9b0bf775711115abad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6e4771f899615eb308163c1bc560212a2b4e3cd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854777"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158898"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
 抓取包含指定虛擬位址的堆疊框架。

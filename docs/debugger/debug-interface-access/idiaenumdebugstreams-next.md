@@ -1,5 +1,6 @@
 ---
-title: IDiaEnumDebugStreams：： Next |Microsoft Docs
+description: 抓取列舉順序中指定數目的 debug 資料流程。
+title: IDiaEnumDebugStreams：： Next |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f70b052746438516275b205676339b216eea70e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 645c04005263372df120f976e9dd402160594855
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856961"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158117"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 抓取列舉順序中指定數目的 debug 資料流程。

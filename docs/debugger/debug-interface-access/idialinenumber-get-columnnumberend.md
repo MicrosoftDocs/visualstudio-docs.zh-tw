@@ -1,4 +1,5 @@
 ---
+description: 抓取運算式或語句結尾的以一為基礎的來源資料行編號。
 title: IDiaLineNumber::get_columnNumberEnd | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f2ea924ffd92b6e099302c1bb8e2857dab47479
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b11dcd94b0e51feb3b70070e5abf1139c6c9eff0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855757"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157606"
 ---
 # <a name="idialinenumberget_columnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 抓取運算式或語句結尾的以一為基礎的來源資料行編號。

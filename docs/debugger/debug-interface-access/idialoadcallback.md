@@ -1,4 +1,5 @@
 ---
+description: 從 DIA 符號尋找程式接收回呼，因此可讓使用者介面報告位置嘗試的進度。
 title: IDiaLoadCallback | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aa5013909fc875e406472c520a9811d716c50e6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a283a40ae39c53a4a96f80adb633b92ba68f637
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864676"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157466"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 從 DIA 符號尋找程式接收回呼，因此可讓使用者介面報告位置嘗試的進度。

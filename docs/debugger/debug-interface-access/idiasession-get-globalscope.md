@@ -1,4 +1,5 @@
 ---
+description: 抓取全域範圍的參考。
 title: IDiaSession::get_globalScope | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b78497cee5fea3eb4ab4fda29eacc3d864ce2ea5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce8c0c68242aef2e06a071686c57d1f5ebec2976
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864100"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157053"
 ---
 # <a name="idiasessionget_globalscope"></a>IDiaSession::get_globalScope
 抓取全域範圍的參考。

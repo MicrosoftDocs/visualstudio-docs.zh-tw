@@ -1,4 +1,5 @@
 ---
+description: 抓取 debug 資料流程的名稱。
 title: IDiaEnumDebugStreamData::get_name | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e2dcec8380ebdc869c093a840d76347cd31c244b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50a3209a9ba73bc83aa24b26575ad04617453254
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857094"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158166"
 ---
 # <a name="idiaenumdebugstreamdataget_name"></a>IDiaEnumDebugStreamData::get_name
 抓取 debug 資料流程的名稱。

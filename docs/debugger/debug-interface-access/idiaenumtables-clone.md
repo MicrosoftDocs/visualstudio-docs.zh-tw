@@ -1,4 +1,5 @@
 ---
+description: 建立包含與目前資料表列舉值相同列舉狀態的列舉值。
 title: IDiaEnumTables::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7abdc5545c25f0e4dfa68657a0867c4c97b483
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 410e02ab0a7a914c06b09b97a10fe3e2f3e3c630
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856044"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157893"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
 建立包含與目前列舉值相同列舉狀態的列舉值。

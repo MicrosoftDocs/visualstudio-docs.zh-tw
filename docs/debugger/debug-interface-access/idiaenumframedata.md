@@ -1,4 +1,5 @@
 ---
+description: 列舉資料來源中包含的各種框架資料元素。
 title: IDiaEnumFrameData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1f2483971b8bb9deb59174fab77bd2c5692f830
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0bd1ca95e2f7377c00548658634cbf1e2993e3d8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856751"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158005"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 列舉資料來源中包含的各種框架資料元素。

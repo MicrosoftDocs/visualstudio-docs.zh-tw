@@ -1,4 +1,5 @@
 ---
+description: 公開模組或映射的基底位置和記憶體位移的詳細資料。
 title: IDiaImageData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2b27ac07cab49834d3f2364ab3b77fd162ced5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8cee712f393c3b006484eeda4a0ec1033c1f26b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855827"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157613"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 公開模組或映射的基底位置和記憶體位移的詳細資料。

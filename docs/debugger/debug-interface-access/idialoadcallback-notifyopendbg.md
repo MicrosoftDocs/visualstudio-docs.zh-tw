@@ -1,4 +1,5 @@
 ---
+description: 在開啟候選的 dbg 檔案時呼叫。
 title: IDiaLoadCallback::NotifyOpenDBG | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dae715a947db9c8b04a1acf3f8557b86589c26a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f1dfdc36f66a883f1c66d37eb6f4ff48b8962a0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864695"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157444"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
 在開啟候選的 dbg 檔案時呼叫。

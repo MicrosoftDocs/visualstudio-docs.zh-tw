@@ -1,4 +1,5 @@
 ---
+description: 建立 IDiaEnumSymbolsByAddr 物件的複本。
 title: IDiaEnumSymbolsByAddr::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: daed3430c98ec68e9996aa7711a38f0357b4dec1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5cc43a88266a6f56e11277b9443471cc137bbc6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865136"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157921"
 ---
 # <a name="idiaenumsymbolsbyaddrclone"></a>IDiaEnumSymbolsByAddr::Clone
 建立物件的複本。

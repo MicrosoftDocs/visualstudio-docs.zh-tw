@@ -1,5 +1,6 @@
 ---
-title: IDiaEnumDebugStreamData：： Skip |Microsoft Docs
+description: 略過列舉序列中指定數目的記錄。
+title: IDiaEnumDebugStreamData：： Skip |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 38cfb559f79567bced9adb501f38220f33a44692
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 078a53d185b42c1453a65ba483e4dd06b59b35ba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857024"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158131"
 ---
 # <a name="idiaenumdebugstreamdataskip"></a>IDiaEnumDebugStreamData::Skip
 略過列舉序列中指定數目的記錄。

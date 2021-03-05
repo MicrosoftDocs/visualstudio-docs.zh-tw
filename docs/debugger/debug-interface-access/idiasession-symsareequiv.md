@@ -1,4 +1,5 @@
 ---
+description: 查看兩個符號是否相等。
 title: IDiaSession::symsAreEquiv | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10aa5f1b086856793fe32512867834848b6f7162
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5f887b13195bdde133c4bca845291b1255b99ea
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855015"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156983"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 查看兩個符號是否相等。
