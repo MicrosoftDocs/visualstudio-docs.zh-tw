@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_isAggregated |Microsoft Docs
+description: 抓取旗標，這個旗標會指定資料符號是否為符號的匯總或集合的一部分。編譯器會將匯總的符號視為個別的實體，但實際上是一個較大符號的一部分。
+title: IDiaSymbol：： get_isAggregated |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc7eb836bab2219e764a7d6a40fc6b8421c916f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e78ec7f180ad1c719d562975377a413156bb1480
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863246"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160859"
 ---
 # <a name="idiasymbolget_isaggregated"></a>IDiaSymbol::get_isAggregated
 抓取旗標，這個旗標會指定資料符號是否為符號的匯總或集合的一部分。編譯器會將匯總的符號視為個別的實體，但實際上是一個較大符號的一部分。

@@ -1,5 +1,6 @@
 ---
-title: IDebugStackFrame3：： GetUnwindCodeCoNtext |Microsoft Docs
+description: 如果發生堆疊回溯作業，則傳回代表位置的程式碼內容。
+title: IDebugStackFrame3：： GetUnwindCodeCoNtext |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3cb8d468971a578f68ba64fe754ed788493400a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ef0a66729a2e9061a9e71ec0634a65999b55bf2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934047"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159727"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 如果發生堆疊回溯作業，則傳回代表位置的程式碼內容。

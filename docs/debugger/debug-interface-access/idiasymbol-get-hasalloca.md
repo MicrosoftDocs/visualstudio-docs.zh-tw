@@ -1,4 +1,5 @@
 ---
+description: 抓取旗標，這個旗標會指定函式是否包含對 alloca (的呼叫，此呼叫是用來配置堆疊) 的記憶體。
 title: IDiaSymbol::get_hasAlloca | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b6dfbb3d12e01656117c0b1a3391af5a0578358
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42b2c63932cc37e0c5c605e31e9dfb0671fdd586
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854287"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160999"
 ---
 # <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
 抓取旗標，這個旗標會指定函式是否包含 (的呼叫，該呼叫 `alloca` 用來配置堆疊) 的記憶體。

@@ -1,5 +1,6 @@
 ---
-title: IDebugStackFrame2：： GetName |Microsoft Docs
+description: 取得堆疊框架的名稱。
+title: IDebugStackFrame2：： GetName |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05b226afa482e195600ac073b1f77e49790ec9cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e94cc5a7df302ebf641bfcb9db9af1ca228c30c6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837485"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159752"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 取得堆疊框架的名稱。

@@ -1,4 +1,5 @@
 ---
+description: 抓取 Thunk 目標的 offset 區段。
 title: IDiaSymbol::get_targetOffset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f16521314971617f07c4adabafa14187c3c7b7c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 352e9e00e033ac52b238fc8c207beff298e8b300
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853538"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160670"
 ---
 # <a name="idiasymbolget_targetoffset"></a>IDiaSymbol::get_targetOffset
 抓取 Thunk 目標的 offset 區段。

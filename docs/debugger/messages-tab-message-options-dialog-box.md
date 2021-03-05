@@ -1,5 +1,6 @@
 ---
-title: 訊息選項對話方塊、訊息索引標籤 |Microsoft Docs
+description: 使用 [訊息] 索引標籤，即可選取要在訊息視圖中列出哪些訊息類型) 以及指定訊息搜尋準則。
+title: 訊息選項對話方塊、訊息索引標籤 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0a97a5b42e27c6db770e0c74a64e214561cea9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66c1abcedbf48e8cd80aeafe0c4a5def1ddbb9eb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891601"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160364"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>訊息選項對話方塊、訊息索引標籤
 使用 [ **訊息** ] 索引標籤，即可選取要在 [訊息視圖](../debugger/messages-view.md)中列出的訊息類型，以及指定訊息搜尋準則。 若要顯示 [[訊息選項] 對話方塊](../debugger/message-options-dialog-box.md)，請從 [ **Spy** ] 功能表選擇 [**記錄訊息**]。

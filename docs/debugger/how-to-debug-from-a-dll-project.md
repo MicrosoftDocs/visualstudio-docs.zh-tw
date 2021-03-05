@@ -1,6 +1,6 @@
 ---
-title: 從 DLL 專案進行 Debug |Microsoft Docs
-Description: 您可以在專案屬性中指定呼叫應用程式，以開始從專案本身進行 DLL 專案的偵錯工具。 如需詳細資訊，請參閱本文。
+title: 從 DLL 專案進行 Debug |Microsoft 檔
+description: 您可以在專案屬性中指定呼叫應用程式，以開始從專案本身進行 DLL 專案的偵錯工具。 如需詳細資訊，請參閱本文。
 ms.custom: SEO-VS-2020
 ms.date: 10/10/2018
 ms.topic: how-to
@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b819a5cdbd09ced66fddec91574c1d03718518f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f6063c5a0343951bb098c6937ce13dac7100d4a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913266"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160430"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>如何：在 Visual Studio (c #、c + +、Visual Basic、F # 中的 DLL 專案進行 Debug ) 
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>如何：在 Visual Studio 中從 DLL 專案進行調試 (c #、c + +、Visual Basic、F # ) 
 
 調試 DLL 專案的其中一種方式是在 DLL 專案屬性中指定呼叫應用程式。 然後，您可以從 DLL 專案本身開始進行調試。 若要讓此方法運作，應用程式必須在與您所設定相同的位置中呼叫相同的 DLL。 如果應用程式找到並載入不同版本的 DLL，該版本將不會包含您的中斷點。 如需偵錯工具 Dll 的其他方法，請參閱 [偵錯工具 dll 專案](../debugger/debugging-dll-projects.md)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "99913266"
 
 ## <a name="specify-a-calling-app-in-a-native-dll-project"></a>在原生 DLL 專案中指定呼叫應用程式
 
-1. 在 **方案總管** 中選取 c + + DLL 專案。 選取 [**屬性**] 圖示，按下 **Alt** + **鍵**，或按一下滑鼠右鍵並選擇 [**屬性**]。
+1. 在 [ **方案瀏覽器**] 中選取 c + + DLL 專案。 選取 [**屬性**] 圖示，按下 **Alt** + **鍵**，或按一下滑鼠右鍵並選擇 [**屬性**]。
 
 1. 在 [ **\<Project> 屬性頁**] 對話方塊中，請確定視窗頂端 **的 [設定**] 欄位設定為 [ **Debug**]。
 
@@ -47,7 +47,7 @@ ms.locfileid: "99913266"
 
 1. 在 [ **命令** ] 或 [ **遠端命令** ] 方塊中，新增呼叫應用程式的完整路徑和檔案名，例如 *.exe* 檔。
 
-   ![Debug 屬性視窗](../debugger/media/dbg-debugging-properties-dll.png "Debug 屬性視窗")
+   ![調試屬性視窗](../debugger/media/dbg-debugging-properties-dll.png "調試屬性視窗")
 
 1. 在 [命令引數] 方塊中，新增必要的程式引數。
 
@@ -55,7 +55,7 @@ ms.locfileid: "99913266"
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>在 managed DLL 專案中指定呼叫應用程式
 
-1. 選取 **方案總管** 中的 c # 或 Visual Basic DLL 專案。 選取 [**屬性**] 圖示，按下 **Alt** + **鍵**，或按一下滑鼠右鍵並選擇 [**屬性**]。
+1. 在 [ **方案瀏覽器**] 中，選取 c # 或 VISUAL Basic DLL 專案。 選取 [**屬性**] 圖示，按下 **Alt** + **鍵**，或按一下滑鼠右鍵並選擇 [**屬性**]。
 
 1. 請確定視窗頂端的 [組態] 欄位已設定為 [偵錯]。
 
@@ -69,7 +69,7 @@ ms.locfileid: "99913266"
 
 1. 在 [ **命令列引數** ] 或 [ **應用程式引數** ] 欄位中，新增任何必要的命令列引數。
 
-   ![C # Debug 屬性視窗](../debugger/media/dbg-debugging-properties-dll-csharp.png "C # Debug 屬性視窗")
+   ![C # 調試屬性視窗](../debugger/media/dbg-debugging-properties-dll-csharp.png "C # 調試屬性視窗")
 
 1. 使用 **[** 檔案  >  **儲存選取專案**] 或 [ **Ctrl** + **S** ] 儲存變更。
 

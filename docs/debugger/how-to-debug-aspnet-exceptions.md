@@ -1,6 +1,6 @@
 ---
-title: Debug ASP.NET 例外狀況 |Microsoft Docs
-Description: 瞭解如何設定，讓偵錯工具停止 ASP.NET 應用程式中未處理的例外狀況。 您可以確保中斷發生在非系統程式碼中。
+title: Debug ASP.NET 例外狀況 |Microsoft 檔
+description: 瞭解如何設定，讓偵錯工具停止 ASP.NET 應用程式中未處理的例外狀況。 您可以確保中斷發生在非系統程式碼中。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 00823fd1a5029cb45b91a6beb4168f8a9cbd999a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebf53569e2c104b49acdadba36203f9d6409e215
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913256"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160417"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>如何：偵錯 ASP.NET 例外狀況
 在開發強固的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式時，針對例外狀況進行偵錯是很重要的部分。 如何 [使用偵錯工具管理例外](../debugger/managing-exceptions-with-the-debugger.md)狀況的一般資訊。
 
  若要對未處理的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 例外狀況進行偵錯，則必須確定偵錯工具是否會因為這些例外狀況而停止。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 執行階段擁有最上層例外狀況處理常式。 因此，偵錯工具預設為絕不會在未處理的例外狀況中斷。 若要在擲回例外狀況時中斷偵錯工具，您必須在 [例外狀況] 對話方塊中，為該特定例外狀況選取 [例外狀況為下列時中斷: Thrown] 設定。
 
- 如果您已啟用 Just My Code，請 **在例外狀況發生時中斷：** 擲回例外狀況時，如果在 .net 方法或其他系統程式碼中擲回例外狀況，則不會導致偵錯工具立即中斷。 而是直到偵錯工具叫用非系統程式碼後才會停止執行。 因此，您不需要在發生例外狀況時，逐步執行系統程式碼。
+ 如果您已啟用 My Code，請 **在例外狀況發生時中斷：** 擲回例外狀況時，如果在 .net 方法或其他系統程式碼中擲回例外狀況，則不會導致偵錯工具立即中斷。 而是直到偵錯工具叫用非系統程式碼後才會停止執行。 因此，您不需要在發生例外狀況時，逐步執行系統程式碼。
 
  Just My Code 提供另一個更有用的選項：[例外狀況為下列時中斷: User-unhandled]。 如果為例外狀況選擇這個設定，偵錯工具則會在使用者程式碼中斷執行 (但是只有在使用者程式碼並未攔截和處理例外狀況時)。 因為這個處理常式是在非使用者程式碼中，所以這個設定會取消最上層 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 例外狀況處理常式的效果。
 

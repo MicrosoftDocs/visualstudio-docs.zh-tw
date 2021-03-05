@@ -1,5 +1,6 @@
 ---
-title: IDebugProgram2 |Microsoft Docs
+description: 這個介面代表在進程中執行的程式。
+title: IDebugProgram2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c262f123e56bf9ed9751ad8b9e7d91770cbd2df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4854150d6581d80804b4c29246bf6db016b5acb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887103"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159909"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 這個介面代表在進程中執行的程式。

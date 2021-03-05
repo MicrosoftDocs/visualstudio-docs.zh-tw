@@ -1,5 +1,6 @@
 ---
-title: IDebugFunctionObject：：評估 |Microsoft Docs
+description: IDebugFunctionObject：：評估會呼叫函數，並傳回產生的值做為物件。
+title: IDebugFunctionObject：：評估 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94285bc0ca36d4a55c3cd3a3483f6e20f6914271
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d15cdb09de32edcdf6159567db12e05cffd06e7e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920986"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160104"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 呼叫函數，並傳回產生的值做為物件。

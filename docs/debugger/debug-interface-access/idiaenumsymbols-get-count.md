@@ -1,5 +1,6 @@
 ---
-title: IDiaEnumSymbols：： get_Count |Microsoft Docs
+description: 抓取符號的數目。
+title: IDiaEnumSymbols：： get_Count |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 973ee791f32338b3ed9ac527667ab3a853c0cb14
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3859524adce48fb504c09c4b0bcacf8ac97a875
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856156"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159129"
 ---
 # <a name="idiaenumsymbolsget_count"></a>IDiaEnumSymbols::get_Count
 抓取符號的數目。

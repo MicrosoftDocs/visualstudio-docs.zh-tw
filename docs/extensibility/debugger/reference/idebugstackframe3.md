@@ -1,5 +1,6 @@
 ---
-title: IDebugStackFrame3 |Microsoft Docs
+description: 這個介面會擴充 IDebugStackFrame2 來處理攔截的例外狀況。
+title: IDebugStackFrame3 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5511624fb69015351d8cc37d6b27ad142a5956d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d70095db80b8bbd349509de2858b641c520b0623
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961179"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159766"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 這個介面會擴充 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 來處理攔截的例外狀況。

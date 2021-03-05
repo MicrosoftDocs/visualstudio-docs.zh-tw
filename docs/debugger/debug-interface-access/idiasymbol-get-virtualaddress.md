@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_virtualAddress |Microsoft Docs
+description: 抓取位置 (VA) 的虛擬位址。
+title: IDiaSymbol：： get_virtualAddress |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c933bd98a4745bdd4f8198993b476945120ed51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f8c4666649ad0fb4156f1a3c4868ce59b03f1f7c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853377"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160551"
 ---
 # <a name="idiasymbolget_virtualaddress"></a>IDiaSymbol::get_virtualAddress
 抓取位置 (VA) 的虛擬位址。 當 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) 設定為時，請使用 `LocIsStatic` 。

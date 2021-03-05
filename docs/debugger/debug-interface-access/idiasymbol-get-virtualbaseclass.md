@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_virtualBaseClass |Microsoft Docs
+description: 抓取旗標，這個旗標會指定使用者定義資料類型是否為虛擬基類。
+title: IDiaSymbol：： get_virtualBaseClass |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6c2b08915c83d041d11cc9b65c1e35c725e56c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 512138b8734fb9137781da040dd5d5a591107fd8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862455"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160537"
 ---
 # <a name="idiasymbolget_virtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
 抓取旗標，這個旗標會指定使用者定義資料類型是否為虛擬基類。

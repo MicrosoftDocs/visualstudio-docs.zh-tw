@@ -1,5 +1,6 @@
 ---
-title: IDiaEnumSectionContribs：： get_Count |Microsoft Docs
+description: 抓取區段投稿的數目。
+title: IDiaEnumSectionContribs：： get_Count |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e098af61a81702c55aa1d92a3b6425e6ef20ae4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a0ff3439af3ab973e2cc050e1bb4e5f0d7b41cd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856485"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159339"
 ---
 # <a name="idiaenumsectioncontribsget_count"></a>IDiaEnumSectionContribs::get_Count
 抓取區段投稿的數目。

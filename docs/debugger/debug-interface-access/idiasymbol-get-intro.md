@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_intro |Microsoft Docs
+description: 抓取指定函數是否為簡介虛擬函式的旗標。
+title: IDiaSymbol：： get_intro |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5099eb9d8ba1f56419cd1cf0138e29a79e2c28f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad2e791995f4edc1b09655640bc339d577f7f37d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863260"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160873"
 ---
 # <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
 抓取指定函數是否為簡介虛擬函式的旗標。

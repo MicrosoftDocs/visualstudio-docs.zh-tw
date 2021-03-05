@@ -1,4 +1,5 @@
 ---
+description: 建立包含與目前列舉值相同列舉狀態的列舉值。
 title: IDiaEnumSegments::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 59cfde0b935ec43f6b439d2d2cf58b39d2ac9aa7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d67e96c3718dab9b6c02a34e7ee16abee919ec77
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856408"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159248"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
 建立包含與目前列舉值相同列舉狀態的列舉值。

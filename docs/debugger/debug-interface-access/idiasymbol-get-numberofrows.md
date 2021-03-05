@@ -1,4 +1,5 @@
 ---
+description: 捕獲矩陣中的資料列數目。
 title: IDiaSymbol::get_numberOfRows | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a7c083d41bce916c9ab7745a25d2fbf0450688c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d597b7a6089f07a1a7233fc780398358c2ad7d4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862861"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160719"
 ---
 # <a name="idiasymbolget_numberofrows"></a>IDiaSymbol::get_numberOfRows
 捕獲矩陣中的資料列數目。

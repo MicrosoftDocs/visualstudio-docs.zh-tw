@@ -1,5 +1,6 @@
 ---
-title: IDebugProgram2：： GetDebugProperty |Microsoft Docs
+description: 取得程式的屬性。
+title: IDebugProgram2：： GetDebugProperty |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb0bb520d3a821d777d5deaeaa200c4b7e526f65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0114d0cf51769d6162563f6c60d51a3f031e19e2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911964"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159948"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 取得程式的屬性。

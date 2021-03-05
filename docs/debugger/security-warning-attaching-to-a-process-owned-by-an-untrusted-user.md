@@ -1,5 +1,6 @@
 ---
-title: 安全性警告：附加至未受信任的使用者所擁有的處理序可能會造成危險。 如果下列資訊看起來很可疑，或您不確定，請不要附加至此進程 |Microsoft Docs
+description: 當您附加至包含部分受信任程式碼的處理序，或是附加至在附加之前即由未受信任之使用者所擁有的處理序時，這個警告對話方塊就會出現。
+title: 安全性警告：附加至未受信任的使用者所擁有的處理序可能會造成危險。 如果下列資訊看起來很可疑，或您不確定，請不要附加至此進程 |Microsoft 檔
 ms.date: 1/15/2021
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ec174a03e62cb8cb033be0b92db679fb19f0180
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fe65e753a0e825eed0c09fdefc4e93168d27ecb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881252"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160312"
 ---
 # <a name="security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process"></a>安全性警告：附加至未受信任的使用者所擁有的處理序可能會造成危險。 如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序
 
@@ -36,7 +37,7 @@ ms.locfileid: "99881252"
 
    在下方尋找或建立金鑰 `HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\<version>\Debugger` ，並將它設定為1。
 
-   從 Visual Studio 2017 開始，如果您想要查看完整的登錄設定，則需要載入私用登錄區。 如需詳細資訊，請參閱 [如何檢查 Visual Studio 2017](https://github.com/microsoft/VSProjectSystem/blob/master/doc/overview/examine_registry.md)登錄。 開始 Visual Studio 之前，請務必先卸載私人登錄 hive。
+   從 Visual Studio 2017 開始，如果您想要查看完整的登錄設定，則需要載入私用登錄區。 如需詳細資訊，請參閱 [如何檢查 Visual Studio 2017](https://github.com/microsoft/VSProjectSystem/blob/master/doc/overview/examine_registry.md)登錄。 啟動 Visual Studio 之前，請務必先卸載私人登錄 hive。
 
 1. 重新啟動 Visual Studio。
 

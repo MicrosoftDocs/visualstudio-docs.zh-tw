@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_InlSpec |Microsoft Docs
+description: 此函式會抓取旗標，指出是否已使用其中一個內嵌、_inline __forceinline) 屬性) ，將函數標記為內嵌 (。
+title: IDiaSymbol：： get_InlSpec |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: efde91caaa4e7b79db01975c0691b2acb5f01bee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f727e83d067fed37698eb750bb39309a9454535a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854189"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160866"
 ---
 # <a name="idiasymbolget_inlspec"></a>IDiaSymbol::get_InlSpec
 此函式會抓取旗標，指出是否已使用其中一個 [內嵌、__inline \_ _forceinline](/cpp/cpp/inline-functions-cpp) 屬性) ，將函數標記為內嵌 (。

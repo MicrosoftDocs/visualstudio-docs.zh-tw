@@ -1,4 +1,5 @@
 ---
+description: 略過列舉序列中指定的原始程式檔數目。
 title: IDiaEnumSourceFiles::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8474899ac5f1a0617bc0adfc110dbb773d6b6b43
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1292329e20807b87eafc7ab98f4cfb226607d354
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856198"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159185"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
 略過列舉序列中指定的原始程式檔數目。

@@ -1,5 +1,6 @@
 ---
-title: VsgDbg 類別 |Microsoft Docs
+description: 表示介面，可讓您以程式設計方式控制圖形診斷的應用程式內元件。
+title: VsgDbg 類別 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6722263c-ccef-40c7-a0ae-87a863fbab00
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 67bce62612a85e0bcff5e51cd07d4c374e13b01e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 24a4847e0d6c72d4de611edc47481477d2862a55
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861396"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160456"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg 類別
 表示介面，可讓您以程式設計方式控制圖形診斷的應用程式內元件。

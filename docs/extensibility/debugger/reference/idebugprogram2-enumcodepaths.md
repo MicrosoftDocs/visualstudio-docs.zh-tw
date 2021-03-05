@@ -1,5 +1,6 @@
 ---
-title: IDebugProgram2：： EnumCodePaths |Microsoft Docs
+description: 抓取原始程式檔中指定位置的程式碼路徑清單。
+title: IDebugProgram2：： EnumCodePaths |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8e71085da547b87389a8d787f24580a7610fd33f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c647379d0b72832a4068d720846f8a9331f9b939
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844745"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159961"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 抓取原始程式檔中指定位置的程式碼路徑清單。

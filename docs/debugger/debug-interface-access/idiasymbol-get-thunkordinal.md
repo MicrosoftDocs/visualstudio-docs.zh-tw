@@ -1,4 +1,5 @@
 ---
+description: 捕獲函式的 Thunk 型別。
 title: IDiaSymbol::get_thunkOrdinal | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 276cb0ed42f884f2be3b10d82fd8561c6b9aa20c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: de9b0fa692ff44096e962bc952b91c3f2fd314f2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853503"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160607"
 ---
 # <a name="idiasymbolget_thunkordinal"></a>IDiaSymbol::get_thunkOrdinal
 捕獲函式的 Thunk 型別。

@@ -1,5 +1,6 @@
 ---
-title: IDebugSymbolProvider：： GetClassTypeByName |Microsoft Docs
+description: 這個方法會取得代表完整類別名稱的類別欄位類型。
+title: IDebugSymbolProvider：： GetClassTypeByName |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f6843eee8e6de7ec3e8cfd52362ee4463dea7da4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58b7002abf622992dacde4797f41a272177c280e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956421"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159662"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 這個方法會取得代表完整類別名稱的類別欄位類型。

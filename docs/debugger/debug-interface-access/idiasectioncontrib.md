@@ -1,4 +1,5 @@
 ---
+description: 抓取描述區段參與的資料，也就是編譯單位對影像提供的連續記憶體區塊。
 title: IDiaSectionContrib | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba3e4566796d65818fcf85abc70494122fe5f14d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 03ab7bd69c026ccab1972d57988ef68c7c55eca8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855337"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159087"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 抓取描述區段參與的資料，也就是編譯單位對影像提供的連續記憶體區塊。

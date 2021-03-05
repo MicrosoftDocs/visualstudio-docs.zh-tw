@@ -1,4 +1,5 @@
 ---
+description: 抓取旗標，這個旗標會指定使用者定義型別 (UDT) 是否包含雙精度浮點數的 (HFA) 資料。
 title: IDiaSymbol::get_hfaDouble | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 089db5b67e235477b8e3b8a0c352284f48f40782
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 974c47f9630278995e134bc327971de178269f0f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863281"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160915"
 ---
 # <a name="idiasymbolget_hfadouble"></a>IDiaSymbol::get_hfaDouble
 抓取旗標，這個旗標會指定使用者定義型別 (UDT) 是否包含雙精度浮點數的 (HFA) 資料。

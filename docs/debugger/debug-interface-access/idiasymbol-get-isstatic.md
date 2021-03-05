@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_isStatic |Microsoft Docs
+description: 抓取旗標，這個旗標會指定函式或 Thunk 圖層是否已標示為靜態。
+title: IDiaSymbol：： get_isStatic |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 338c2e650b59f501bbf184e877ca1e1f08b924c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59a29412a95192306454b40335285f580d1120c8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863106"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160712"
 ---
 # <a name="idiasymbolget_isstatic"></a>IDiaSymbol::get_isStatic
 抓取旗標，這個旗標會指定函式或 Thunk 圖層是否已標示為靜態。

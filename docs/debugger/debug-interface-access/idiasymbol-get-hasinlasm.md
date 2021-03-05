@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_hasInlAsm |Microsoft Docs
+description: 抓取指定函式是否包含內嵌元件的旗標。
+title: IDiaSymbol：： get_hasInlAsm |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26a617f01c56e417ed9d0a05c4fea72bc1e0b88b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d422310a255e6442ee0d878f541882cdee254244
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854238"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160950"
 ---
 # <a name="idiasymbolget_hasinlasm"></a>IDiaSymbol::get_hasInlAsm
 抓取指定函式是否包含內嵌元件的旗標。

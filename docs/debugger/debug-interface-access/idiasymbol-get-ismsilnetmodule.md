@@ -1,4 +1,5 @@
 ---
+description: 抓取旗標，指出模組是否為. .netmodule (Microsoft 中繼語言 (MSIL) 模組，該模組只包含中繼資料，) 沒有原生符號。
 title: IDiaSymbol::get_isMSILNetmodule | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 943f496ff4c08a6f3b2047c977c4ed4588190587
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27d1294e5cbced8cd2f521a25858a37efe9f5b8c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863155"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160761"
 ---
 # <a name="idiasymbolget_ismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 抓取旗標，指出模組是否為. .netmodule (Microsoft 中繼語言 (MSIL) 模組，該模組只包含中繼資料，) 沒有原生符號。

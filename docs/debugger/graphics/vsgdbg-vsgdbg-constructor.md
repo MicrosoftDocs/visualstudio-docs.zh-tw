@@ -1,5 +1,6 @@
 ---
-title: VsgDbg：： VsgDbg () 的函式 |Microsoft Docs
+description: 建立 VsgDbg 類別的實例，並在不准備圖形診斷的應用程式內元件時，根據指定的布林值參數，主動捕捉和記錄圖形資訊。
+title: VsgDbg：： VsgDbg () 的函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 466c64f3b055eef3629f0f4666529f1be4247f42
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae4259b1af1bcb51b05431131db596d2a26da895
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861331"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160442"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (建構函式)
 `VsgDbg`使用或不准備圖形診斷的應用程式內元件，以根據指定的布林值參數，主動捕捉和記錄圖形資訊的類別實例。

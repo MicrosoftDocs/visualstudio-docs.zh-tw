@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_types |Microsoft Docs
+description: 針對這個符號抓取編譯器特定類型的陣列。
+title: IDiaSymbol：： get_types |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb8ee1519dd2613ec823aa2d13e60f296baa4415
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aec5db878c87ba257f1f83458d1ae742272a9b0f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853461"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160600"
 ---
 # <a name="idiasymbolget_types"></a>IDiaSymbol::get_types
 針對這個符號抓取編譯器特定類型的陣列。

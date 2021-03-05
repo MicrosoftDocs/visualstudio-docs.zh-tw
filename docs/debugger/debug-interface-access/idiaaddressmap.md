@@ -1,4 +1,5 @@
 ---
+description: 提供 DIA SDK 如何計算 debug 物件的虛擬和相對虛擬位址的控制權。
 title: IDiaAddressMap | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 975321d9710e9b448fa0b6b860f76c2f0b84d52e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 085ba4e75eab1dd67585b3926b71edd5dce88d72
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857157"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159464"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
-提供控制 DIA SDK 如何計算 debug 物件的虛擬和相對虛擬位址。
+提供 DIA SDK 如何計算 debug 物件的虛擬和相對虛擬位址的控制權。
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,7 +44,7 @@ IDiaAddressMap : IUnknown
 |[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|提供可支援影像版面配置翻譯的位址對應。|
 
 ## <a name="remarks"></a>備註
- 此介面提供的控制項封裝在您提供的兩組資料中：影像標頭和位址對應。 大部分的用戶端會使用 [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法來尋找影像的適當 debug 資訊，而且方法通常可以探索所有必要的標頭和地圖資料本身。 不過，有些用戶端會執行特殊處理和搜尋資料。 這類用戶端會使用介面的方法 `IDiaAddressMap` ，以搜尋結果提供 DIA SDK。
+ 此介面提供的控制項封裝在您提供的兩組資料中：影像標頭和位址對應。 大部分的用戶端會使用 [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法來尋找影像的適當 debug 資訊，而且方法通常可以探索所有必要的標頭和地圖資料本身。 不過，有些用戶端會執行特殊處理和搜尋資料。 這類用戶端會使用介面的方法 `IDiaAddressMap` ，為 DIA SDK 提供搜尋結果。
 
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  此介面可從 DIA 會話物件取得。 用戶端會 `QueryInterface` 在 DIA 會話物件介面（通常是 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)）上呼叫方法，以取得 `IDiaAddressMap` 介面。

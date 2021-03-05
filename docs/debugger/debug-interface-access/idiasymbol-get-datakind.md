@@ -1,4 +1,5 @@
 ---
+description: 捕獲資料符號的變數分類。
 title: IDiaSymbol::get_dataKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6448b30f94924d24358409715af0dec673e31d87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 833ff0fb6602d7f33aabbb9aa1a442bda07a379b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863435"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161006"
 ---
 # <a name="idiasymbolget_datakind"></a>IDiaSymbol::get_dataKind
 捕獲資料符號的變數分類。

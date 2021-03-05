@@ -1,4 +1,5 @@
 ---
+description: 抓取指出區段是否為可執行檔的旗標。
 title: IDiaSegment::get_execute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 79b8207a8c983bdaea6af2e91190ae4b6c0e0105
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: abb2ce313b33d81f4960ef22cc8946574cf5ea94
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855323"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159045"
 ---
 # <a name="idiasegmentget_execute"></a>IDiaSegment::get_execute
 抓取指出區段是否為可執行檔的旗標。

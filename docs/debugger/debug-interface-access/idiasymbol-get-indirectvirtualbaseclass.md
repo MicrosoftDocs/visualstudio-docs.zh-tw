@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_indirectVirtualBaseClass |Microsoft Docs
+description: 抓取旗標，這個旗標會指定使用者定義資料類型是否為間接虛擬基類。
+title: IDiaSymbol：： get_indirectVirtualBaseClass |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 284e41b9b9d3339a08acb25ad0ea6adc8d474e6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a19e82acef2bbe35a8af35b533a5931c51373959
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863274"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160852"
 ---
 # <a name="idiasymbolget_indirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
 抓取旗標，這個旗標會指定使用者定義資料類型是否為間接虛擬基類。

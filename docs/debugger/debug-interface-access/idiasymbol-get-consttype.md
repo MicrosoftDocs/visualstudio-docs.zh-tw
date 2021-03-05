@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol：： get_constType |Microsoft Docs
+description: 抓取指定使用者定義資料類型是否為常數的旗標。
+title: IDiaSymbol：： get_constType |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a2b81f307e2b925037dfa2075446d0a9c837a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c91896d84c140d6a736c481013e1414f48260518
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863449"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161048"
 ---
 # <a name="idiasymbolget_consttype"></a>IDiaSymbol::get_constType
 抓取指定使用者定義資料類型是否為常數的旗標。

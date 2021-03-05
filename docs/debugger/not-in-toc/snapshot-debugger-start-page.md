@@ -1,4 +1,5 @@
 ---
+description: Visual Studio 快照集偵錯工具現在已連接至您的服務，您可以開始收集快照集以協助進行偵錯工具。
 title: 快照偵錯工具的起始頁
 ms.date: 07/14/2018
 robots: noindex, nofollow
@@ -8,22 +9,22 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f237f121d0bd0a5eaa57cd2b198024d22951622
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96e0c6196d99b8a2b7ac9b4187dbd1397111abbd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941992"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160338"
 ---
-# <a name="getting-started-with-the-snapshot-debugger"></a>使用快照偵錯工具開始使用
+# <a name="getting-started-with-the-snapshot-debugger"></a>開始使用快照偵錯工具
 
-Visual Studio 快照偵錯工具現在已連接至您的服務，您可以開始收集快照集以協助進行偵錯工具。
+Visual Studio 快照集偵錯工具現在已連接至您的服務，您可以開始收集快照集以協助進行偵錯工具。
 
-若要使用快照偵錯工具，請在您的程式碼中設定一些快照點，按一下按鈕開始收集快照集，然後執行您的案例。 當您已在其中設定快照點的程式碼執行時，會建立應用程式的快照集。 然後按一下 [診斷工具] 視窗中 Visual Studio 中的快照集來開啟快照集。 您現在可以從服務中的快照集來進行偵錯工具，就像是在本機一樣。 如需詳細指示，請繼續閱讀。
+若要使用快照偵錯工具，請在您的程式碼中設定一些快照點，按一下按鈕開始收集快照集，然後執行您的案例。 當您已在其中設定快照點的程式碼執行時，會建立應用程式的快照集。 然後，在 Visual Studio 的 [診斷工具] 視窗中按一下，以開啟快照集。 您現在可以從服務中的快照集來進行偵錯工具，就像是在本機一樣。 如需詳細指示，請繼續閱讀。
 
 ## <a name="collect-and-view-snapshots"></a>收集和查看快照集
 
-快照偵錯工具會從您的應用程式收集快照集。 快照集就像您在某個時間點的 appication 圖片。 您可以藉由在程式碼中設定快照點，告訴您要收集快照集 Visual Studio 的時機和位置。 在快照點中，您可以設定任何需要的條件，以確保您取得正在調查之問題的快照。
+快照偵錯工具會從您的應用程式收集快照集。 快照集就像您在某個時間點的 appication 圖片。 您可以藉由在程式碼中設定快照點，告訴 Visual Studio 何時以及要收集快照集的位置。 在快照點中，您可以設定任何需要的條件，以確保您取得正在調查之問題的快照。
 
 ### <a name="set-a-snappoint"></a>設定快照點
 
@@ -37,9 +38,9 @@ Visual Studio 快照偵錯工具現在已連接至您的服務，您可以開始
 
 ### <a name="open-a-snapshot"></a>開啟快照集
 
-1. 當達到快照點時，快照集會出現在右邊的診斷工具視窗中。 如果視窗未開啟，您可以選擇 [ **Debug**  >  **Windows**  >  **Show 診斷工具** 來開啟它。
+1. 當達到快照點時，快照集會出現在右側的 [診斷工具] 視窗中。 如果視窗未開啟，您可以選擇 [ **Debug**  >  **Windows**  >  **Show 診斷工具**] 來開啟它。
 
-    ![診斷工具視窗中的快照集](../media/snapshot-startpage-diagsession-window.png)
+    ![[診斷工具] 視窗中的快照集](../media/snapshot-startpage-diagsession-window.png)
 
 2. 按兩下快照集以開啟它。
 
@@ -59,16 +60,16 @@ Visual Studio 快照偵錯工具現在已連接至您的服務，您可以開始
 
 3. 在 [ **訊息** ] 欄位中，輸入您想要記錄的記錄檔訊息。 也可以在記錄訊息中變數的前後加上大括號，以評估它們。
 
-    如果您選擇 [ **傳送至] 輸出視窗**，當叫用記錄點時，訊息會出現在 [診斷工具] 視窗中。
+    如果您選擇 [ **傳送到輸出] 視窗**，當叫用記錄點時，訊息會出現在 [診斷工具] 視窗中。
 
     如果您選擇 [ **傳送至應用程式記錄** 檔]，則會出現訊息，您可以在叫用 `System.Diagnostics.Trace` 記錄點時查看來自 (或 `ILogger` .net Core) 的訊息，例如 App Insights。
 
 ## <a name="learn-more"></a>深入了解
 
-您可以在 [檔] [頁面](../debug-live-azure-applications.md)找到快照偵錯工具的詳細資訊。 深入瞭解如何設定條件，讓您更輕鬆地找到 bug。
+您可以在 [檔] [頁面](../debug-live-azure-applications.md)上找到快照偵錯工具的詳細資訊。 深入瞭解如何設定條件，讓您更輕鬆地找到 bug。
 
 ## <a name="dont-show-me-this-again"></a>不要再顯示此訊息
 
-當您連接快照偵錯工具時，若不想再顯示快照偵錯工具起始頁，請在 [**工具** 選項] 快照偵錯工具的 [會話啟動] 選項中，變更 [**顯示 ' 開始使用 ' 頁面**]  >    >  ****。
+當您連接快照偵錯工具時，若不想再顯示快照偵錯工具起始頁，請在 [**工具**   >  **選項**  >  **快照集偵錯工具**] 中，變更 [會話啟動] 選項上的 [顯示] 頁面。
 
 ![快照偵錯工具工具選項頁面](../media/snapshot-startpage-tools-options.png)
