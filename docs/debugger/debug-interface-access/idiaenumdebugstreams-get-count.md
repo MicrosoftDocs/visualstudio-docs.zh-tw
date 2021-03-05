@@ -1,5 +1,6 @@
 ---
-title: IDiaEnumDebugStreams：： get_Count |Microsoft Docs
+description: 抓取 debug 資料流程的數目。
+title: IDiaEnumDebugStreams：： get_Count |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f07b29c1b540a6c89086e51bf633b51114cf62a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0dbf8b4b5ce26c67cc91f1d8dafe22f3a75b41c1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856982"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149113"
 ---
 # <a name="idiaenumdebugstreamsget_count"></a>IDiaEnumDebugStreams::get_Count
 抓取 debug 資料流程的數目。

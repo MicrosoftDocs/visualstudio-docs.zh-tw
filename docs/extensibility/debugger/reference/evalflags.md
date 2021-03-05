@@ -1,5 +1,6 @@
 ---
-title: EVALFLAGS |Microsoft Docs
+description: 指定控制運算式評估的旗標。
+title: EVALFLAGS |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 073dac8de37edddc1b748c52258047cd2d85e218
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 531d155104475b84d881358711a6aa3f1d0bf2ce
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937071"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150935"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 指定控制運算式評估的旗標。
@@ -63,7 +64,7 @@ public enum enum_EVALFLAGS {
 指定在中斷點上停止。
 
 `EVAL_ALLOWERRORREPORT`\
-指定要允許的主機錯誤報表。 主要用於 Internet Explorer 中腳本的運算式評估。
+指定要允許的主機錯誤報表。 主要用於 Internet Explorer 腳本中的運算式評估。
 
 `EVAL_FUNCTION_AS_ADDRESS`\
 強制將函數評估為位址，而不是叫用函數。

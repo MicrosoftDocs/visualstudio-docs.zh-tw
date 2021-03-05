@@ -1,5 +1,6 @@
 ---
-title: IDebugModuleLoadEvent2：： GetModule |Microsoft Docs
+description: 取得正在載入或卸載的模組。
+title: IDebugModuleLoadEvent2：： GetModule |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0baed5d7c0717f1bb8fd1a999f767d9e59abbae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e44268dcf4ab79e99bd1bdf5a996ae18762e139
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920896"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149830"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
 取得正在載入或卸載的模組。

@@ -1,5 +1,6 @@
 ---
-title: FIELD_MODIFIERS |Microsoft Docs
+description: 指定欄位類型的修飾詞。
+title: FIELD_MODIFIERS |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5589b1535fbe22f0b0c1f2f9c9e34f70a4e7e861
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 81dd06f5f4c39ac777cb338cd4c51839c7806602
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874318"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150870"
 ---
 # <a name="field_modifiers"></a>FIELD_MODIFIERS
 指定欄位類型的修飾詞。

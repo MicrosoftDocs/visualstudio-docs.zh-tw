@@ -1,5 +1,6 @@
 ---
-title: IDebugProcess3：： Execute |Microsoft Docs
+description: 從停止狀態繼續執行此進程。 任何先前的執行狀態 (（例如步驟) ）都會清除，而且進程會再次開始執行。
+title: IDebugProcess3：： Execute |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4a697a4677b6bedef376e602c4327dff66ead53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 149497bcee5c37813e9d1134237ddb991d5893da
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915422"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150246"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 從停止狀態繼續執行此進程。 任何先前的執行狀態 (（例如步驟) ）都會清除，而且進程會再次開始執行。

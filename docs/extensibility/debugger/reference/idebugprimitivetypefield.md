@@ -1,5 +1,6 @@
 ---
-title: IDebugPrimitiveTypeField |Microsoft Docs
+description: 表示來自 IDebugField 介面的基本類型列舉值。
+title: IDebugPrimitiveTypeField |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65ebc0a4c029cdb748ebfadff41f83d0cbb2ab75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ba0fd92098d8089f6d80573c1db53e0b7e003b8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874187"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150298"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 表示來自 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 介面的基本類型列舉值。

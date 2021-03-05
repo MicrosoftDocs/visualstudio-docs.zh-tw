@@ -1,5 +1,6 @@
 ---
-title: Data (Debug Interface Access SDK) |Microsoft Docs
+description: 所有變數（例如參數、區域變數、全域變數和類別成員）都是透過 SymTagData 符號來識別。
+title: Data (Debug Interface Access SDK) |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c71f9f39d1b38db79d47aff37cee50f48e92566e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 08354e2f54a8c4d4e96d139470494dcdefe78703
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865430"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149288"
 ---
 # <a name="data-debug-interface-access-sdk"></a>資料 (偵錯介面存取 SDK)
 所有變數（例如參數、區域變數、全域變數和類別成員）都是以符號來識別 `SymTagData` 。 您 `LocIsConstant` 也可以使用此類型來識別常數值 () 。
@@ -34,13 +35,13 @@ ms.locfileid: "99865430"
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Location 的位移部分;如需詳細資訊，請參閱 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)。|
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Location 的部分;如需詳細資訊，請參閱 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)。|
 |[IDiaSymbol::get_addressTaken](../../debugger/debug-interface-access/idiasymbol-get-addresstaken.md)|`BOOL`|`TRUE` 如果另一個符號參考此資料的位址。|
-|[IDiaSymbol::get_bitPosition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)|`DWORD`|Location 的位位置;如需詳細資訊，請參閱 DIA SDK 8.0 版) 不支援的 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) (。|
+|[IDiaSymbol::get_bitPosition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)|`DWORD`|Location 的位位置;如需詳細資訊，請參閱 DIA SDK 8.0 版中不支援的 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) () 。|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|類別的符號，如果這是結構、等位或類別欄位，則為。|
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|類別父系符號的識別碼。|
 |[IDiaSymbol::get_compilerGenerated](../../debugger/debug-interface-access/idiasymbol-get-compilergenerated.md)|`BOOL`|`TRUE` 如果資料是由編譯器所產生。|
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` 如果資料標示為常數。|
 |[IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)|`DWORD`|其中一個 [DataKind 的列舉](../../debugger/debug-interface-access/datakind.md) 值。|
-|[IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)|`BOOL`|`TRUE` 如果資料是匯總資料類型的一部分 (只有 DIA SDK 8.0 和更新版本) 。|
+|[IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)|`BOOL`|`TRUE` 如果資料是匯總資料類型的一部分 (只有在 DIA SDK 8.0 版和更新版本中) 。|
 |[IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)|`BOOL`|`TRUE` 如果資料已分割成多個符號的匯總， (只有 DIA SDK 8.0 和更新版本) 。|
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|位位的長度;如需詳細資訊，請參閱 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)。|
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|封閉編譯單位、function 或 block 的符號。|

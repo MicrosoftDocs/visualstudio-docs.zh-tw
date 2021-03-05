@@ -1,5 +1,6 @@
 ---
-title: IDebugProcess3：： Continue |Microsoft Docs
+description: 從停止狀態繼續執行此進程。 任何先前的執行狀態 (（例如步驟) ）都會保留，且進程會再次開始執行。
+title: IDebugProcess3：： Continue |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60ac7109b9f92a4ed7eecf57095c44fc4208b9f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e003193a189017b9aeacf6a983756d219b10195
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891055"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149767"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 從停止狀態繼續執行此進程。 任何先前的執行狀態 (（例如步驟) ）都會保留，且進程會再次開始執行。

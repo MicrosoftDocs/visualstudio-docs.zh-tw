@@ -1,5 +1,6 @@
 ---
-title: IDebugFunctionObject |Microsoft Docs
+description: 此介面表示函式。
+title: IDebugFunctionObject |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1462c30f1012eb1002f692672fc470cac3b39a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e9a579212a34a10fc9999867d88dfbd277a9c3fe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921002"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150584"
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 > [!IMPORTANT]

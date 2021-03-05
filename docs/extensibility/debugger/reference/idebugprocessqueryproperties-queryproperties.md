@@ -1,5 +1,6 @@
 ---
-title: IDebugProcessQueryProperties：： QueryProperties |Microsoft Docs
+description: 這個方法會查詢偵錯工具的指定屬性值。
+title: IDebugProcessQueryProperties：： QueryProperties |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b7a1bb22b163c06b24db57b15824b82243af4b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 215606f12eb14c4a4b8db8313356a363dea5247e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900160"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149609"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 這個方法會查詢偵錯工具的指定屬性值。

@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 1dd5e237e99333e9c2fb9414b3d32ff19b70dd9b
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: e5bd7673bc600d0ae84b0a343a071e2a8621e4b9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684270"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150197"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教學課程：使用 Docker Compose 建立多容器應用程式
 
@@ -62,7 +62,7 @@ ms.locfileid: "101684270"
    ![建立 Web API 專案的螢幕擷取畫面](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
 ::: moniker-end
 ::: moniker range="vs-2019"
-   ![建立 Web API 專案的螢幕擷取畫面](./media/tutorial-multicontainer/vs-2019/create-web-api-project.png)
+   ![建立 Web API 專案的螢幕擷取畫面](./media/tutorial-multicontainer/vs-2019/create-webapi-project.png)
 ::: moniker-end
 
 ## <a name="add-code-to-call-the-web-api"></a>新增程式碼以呼叫 Web API

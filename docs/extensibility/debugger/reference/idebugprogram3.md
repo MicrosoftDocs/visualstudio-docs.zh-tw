@@ -1,5 +1,6 @@
 ---
-title: IDebugProgram3 |Microsoft Docs
+description: 這個介面代表在進程中執行的程式，並藉由提供執行緒資訊來擴充執行。
+title: IDebugProgram3 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d22a58021a744cc71b8df3acb8e577d853aa2829
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c16184a017e5e97f81afbab5d4d2579796e4217
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889989"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149596"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 這個介面代表在進程中執行的程式，並藉由提供執行緒資訊來擴充 [執行](../../../extensibility/debugger/reference/idebugprogram2-execute.md) 。

@@ -1,5 +1,5 @@
 ---
-title: 設定 Windows 防火牆進行遠端偵錯 |Microsoft Docs
+title: 設定 Windows 防火牆進行遠端偵錯 |Microsoft 檔
 description: 設定 Windows 防火牆進行遠端偵錯。 設定遠端偵錯程式的埠。 疑難排解遠端偵錯連接。
 ms.custom: SEO-VS-2020
 ms.date: 10/31/2018
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 959d015bd23c91ec2ba6215c7a5b42d13b37ee29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52264580e428fa6a2c33d80ea8fb9fb8e07f0c59
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865822"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149323"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆以進行遠端偵錯
 
@@ -28,11 +28,11 @@ ms.locfileid: "99865822"
 
 ## <a name="configure-ports-for-remote-debugging"></a>設定遠端偵錯程式的埠
 
-Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的埠。 不過，在某些情況下，例如協力廠商防火牆，您可能需要手動開啟埠。
+Visual Studio 和遠端偵錯程式會嘗試在安裝或啟動期間開啟正確的埠。 不過，在某些情況下，例如協力廠商防火牆，您可能需要手動開啟埠。
 
 **若要開啟埠：**
 
-1. 在 Windows [ **開始** ] 功能表中，搜尋並開啟 [ **具有 Advanced Security 的 Windows 防火牆**]。 在 Windows 10 中，這是 **使用 Advanced Security Windows Defender 防火牆的**。
+1. 在 Windows [ **開始** ] 功能表中，搜尋並開啟 [ **具有 Advanced Security 的 Windows 防火牆**]。 在 Windows 10 中，這是 **具有 Advanced Security 的 Windows Defender 防火牆**。
 
 1. 針對新的連入埠，選取 [ **輸入規則** ]，然後選取 [ **新增規則**]。 若為外寄規則，請改為選取 **輸出規則** 。
 
@@ -49,6 +49,16 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
 1. 新增規則的名稱 (例如， **msvsmon**、 **IIS** 或 **Web Deploy**) ，然後選取 **[完成]**。
 
    新的規則應該會出現，並在 [ **輸入規則** ] 或 [ **輸出規則** ] 清單中選取。
+
+**使用 PowerShell 開啟埠：**
+
+針對 Windows 防火牆，您可以使用 PowerShell 命令，例如 [>new-netfirewallrule](/powershell/module/netsecurity/new-netfirewallrule?view=win10-ps)。
+
+下列範例會在遠端電腦上開啟遠端偵錯程式的埠4024。 您需要使用的路徑可能不同。
+
+```ps
+New-NetFirewallRule -DisplayName "msvsmon" -Direction Inbound -Program "Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe" -LocalPort 4024 -Protocol TCP -Authentication Required -Action Allow
+```
 
 ### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>在遠端電腦上啟用遠端偵錯的連接埠
 
@@ -100,11 +110,11 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
 
 ### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>透過 Windows 防火牆允許和設定遠端偵錯程式
 
-1. 在 Windows [ **開始** ] 功能表中，搜尋並開啟 [ **windows 防火牆**]，或 **Windows Defender 防火牆**]。
+1. 在 Windows [ **開始** ] 功能表中，搜尋並開啟 [ **windows 防火牆**] 或 [ **windows Defender 防火牆**]。
 
 1. 選取 [ **允許應用程式通過 Windows 防火牆**]。
 
-1. 如果 [**允許的應用程式和功能**] 下的 **[遠端偵錯程式**] 或 **Visual Studio 遠端偵錯工具** 沒有出現，請選取 [**變更設定**]，然後選取 [**允許其他應用程式**
+1. 如果 [**允許的應用程式和功能**] 下的 **[遠端偵錯程式**] 或 **[Visual Studio 遠端偵錯程式**] 未出現，請選取 [**變更設定**]，然後選取 [**允許**
 
 1. 如果遠端偵錯程式應用程式仍未列在 [**新增應用程式**] 對話方塊中，請選取 **[流覽]**，然後 \<Visual Studio installation directory\> \\ \\ \\ \\ \<x86*, *x64*, or *Appx*\> 根據您應用程式的適當架構，流覽至 * Common7 IDE 遠端偵錯程式。 選取 *msvsmon.exe*，然後選取 [ **新增**]。
 
@@ -116,9 +126,9 @@ Visual Studio 和遠端偵錯程式在安裝或啟動期間嘗試開啟正確的
 
 如果您無法使用遠端偵錯程式附加至您的應用程式，請確定遠端偵錯程式防火牆埠、通訊協定、網路類型和應用程式設定都正確無誤。
 
-- 在 Windows [ **開始** ] 功能表中，搜尋並開啟 [ **windows 防火牆**]，然後選取 [ **允許應用程式通過 Windows 防火牆**]。 確定 [ **遠端偵錯程式** ] 或 [ **Visual Studio 遠端偵錯工具** 會出現在 [ **允許的應用程式和功能** ] 清單中，並選取核取方塊，並選取正確的網路類型。 如果沒有，請 [新增正確的應用程式和設定](#configure-remote-debugging-through-windows-firewall)。
+- 在 Windows [ **開始** ] 功能表中，搜尋並開啟 [ **windows 防火牆**]，然後選取 [ **允許應用程式通過 Windows 防火牆**]。 確定 [ **遠端偵錯程式** ] 或 [ **Visual Studio 遠端偵錯程式** ] 會出現在 [ **允許的應用程式和功能** ] 清單中，並選取核取方塊，並選取正確的網路類型。 如果沒有，請 [新增正確的應用程式和設定](#configure-remote-debugging-through-windows-firewall)。
 
-- 在 Windows [ **開始** ] 功能表中，搜尋並開啟 [ **具有 Advanced Security 的 Windows 防火牆**]。 請確定 [**輸入 (規則**] 下出現 [**遠端偵錯程式**] 或 **Visual Studio 遠端偵錯工具**，並選擇性地顯示 **輸出規則**) 綠色核取記號圖示，且所有設定都正確。
+- 在 Windows [ **開始** ] 功能表中，搜尋並開啟 [ **具有 Advanced Security 的 Windows 防火牆**]。 請確定 [**輸入規則**] 下出現 [**遠端偵錯程式**] 或 [ **Visual Studio 遠端偵錯程式**] (以及選擇性地) 具有綠色核取記號圖示的 **輸出規則**，而且所有設定都是正確的。
 
   - 若要查看或變更規則設定，請在清單中的 **遠端偵錯** 程式應用程式上按一下滑鼠右鍵，然後選取 [ **屬性**]。 您可以使用 [ **屬性** ] 索引標籤來啟用或停用規則，或變更埠號碼、通訊協定或網路類型。
   - 如果「遠端偵錯程式」應用程式未出現在 [規則] 清單中，請 [新增並設定正確的埠](#configure-ports-for-remote-debugging)。

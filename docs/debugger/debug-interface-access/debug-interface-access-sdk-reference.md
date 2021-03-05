@@ -1,5 +1,6 @@
 ---
-title: Debug Interface Access SDK 參考 |Microsoft Docs
+description: DIA SDK 中所有介面和支援列舉和結構的完整參考。
+title: Debug Interface Access SDK 參考 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,16 +15,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e914cb7fade7c46213f3ffc1c68113ebf83188b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 012de677e6b6d819df05cf0b95640fe800b63b3d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865409"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149294"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>偵錯介面存取 SDK 參考
 
-所有介面的完整參考，以及支援 DIA SDK 中的列舉和結構。
+DIA SDK 中所有介面和支援列舉和結構的完整參考。
 
 ## <a name="in-this-section"></a>本節內容
 

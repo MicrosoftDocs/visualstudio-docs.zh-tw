@@ -1,5 +1,6 @@
 ---
-title: IDebugModule2：： ReloadSymbols_Deprecated |Microsoft Docs
+description: 已過時。 重載此模組的符號。
+title: IDebugModule2：： ReloadSymbols_Deprecated |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d4e484a1557ea99138f31fdc6f9103e6708b803
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d07f80a3dccef666c0608d79505816f73ff52013
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929748"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150519"
 ---
 # <a name="idebugmodule2reloadsymbols_deprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 已過時。 請勿使用。 重載此模組的符號。

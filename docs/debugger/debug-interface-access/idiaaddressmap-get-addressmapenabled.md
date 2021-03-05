@@ -1,4 +1,5 @@
 ---
+description: 指出是否已為特定會話建立位址對應。
 title: IDiaAddressMap::get_addressMapEnabled | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09d4507df7090e36f9436f2ca24b6f982d56f420
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a55ff89e97d1898ec2ced2b62f7cdfa5a0df817
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857227"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149106"
 ---
 # <a name="idiaaddressmapget_addressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
 指出是否已為特定會話建立位址對應。

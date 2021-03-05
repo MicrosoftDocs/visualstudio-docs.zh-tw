@@ -1,5 +1,6 @@
 ---
-title: FunctionType |Microsoft Docs
+description: 每個唯一的函式簽章都是以 SymTagFunctionType 符號來識別。
+title: FunctionType |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c69e4aba479073256d5dcf136c9d955b13f50c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ac1a15528783f21169427a67f47afcb2d64a81e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857234"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149127"
 ---
 # <a name="functiontype"></a>FunctionType
 每個唯一的函式簽章都是以符號來識別 `SymTagFunctionType` 。 每個參數都會識別為具有標記的類別子符號 `SymTagFunctionArgType` 。

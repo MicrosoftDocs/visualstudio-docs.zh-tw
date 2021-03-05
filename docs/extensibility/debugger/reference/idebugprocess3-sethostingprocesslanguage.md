@@ -1,5 +1,6 @@
 ---
-title: IDebugProcess3：： SetHostingProcessLanguage |Microsoft Docs
+description: 這個方法會設定將裝載進程的語言。
+title: IDebugProcess3：： SetHostingProcessLanguage |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b65d8a3171de6ac33526bafadbe04254ce58855
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d2a95a5f8181b7b58198a8a56b7fb0037ef0bc1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926255"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150116"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 這個方法會設定將裝載進程的語言。 然後，偵錯工具引擎可以使用此語言 (DE) 載入適當的運算式評估工具。

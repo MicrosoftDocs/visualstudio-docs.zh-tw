@@ -1,4 +1,5 @@
 ---
+description: Exe 是唯一沒有詞法或類別父系的符號，因為它代表 .exe 或 .dll 檔案的全域範圍。
 title: Exe | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85dc30078565f73d4d2f6cab19c57afade6d8e41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5394acaa19efed0c882d97f6ee5b633ffe1c68c0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857269"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149148"
 ---
 # <a name="exe"></a>Exe
 Exe 是唯一沒有詞法或類別父系的符號，因為它代表 .exe 或 .dll 檔案的全域範圍。 每個檔案只有一個符號具有 `SymTagExe` 標記。 [IDiaSession：： get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)方法會傳回符號。
@@ -32,8 +33,8 @@ Exe 是唯一沒有詞法或類別父系的符號，因為它代表 .exe 或 .dl
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|這個可執行檔的存留期。|
 |[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID` 的這個可執行檔。|
-|[IDiaSymbol::get_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|`BOOL`|`TRUE` 如果與此可執行檔相關聯的符號檔包含 C 類型 (只有 DIA SDK 8.0 或更新版本) 。|
-|[IDiaSymbol::get_isStripped](../../debugger/debug-interface-access/idiasymbol-get-isstripped.md)|`BOOL`|`TRUE` 如果已從與這個可執行檔相關聯的符號檔中移除私用符號 (只有 DIA SDK 8.0 或更新版本) 。|
+|[IDiaSymbol::get_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|`BOOL`|`TRUE` 如果與此可執行檔相關聯的符號檔包含 C 類型 (只有在 DIA SDK 8.0 版或更新版本中) 。|
+|[IDiaSymbol::get_isStripped](../../debugger/debug-interface-access/idiasymbol-get-isstripped.md)|`BOOL`|`TRUE` 如果已從與這個可執行檔相關聯的符號檔中移除私用符號 (僅適用于 DIA SDK 8.0 版或更新版本的) 。|
 |[IDiaSymbol::get_machineType](../../debugger/debug-interface-access/idiasymbol-get-machinetype.md)|`DWORD`|指出目標 CPU () 的其中一個 [CV_CPU_TYPE_e 列舉](../../debugger/debug-interface-access/cv-cpu-type-e.md) 值的值。|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|.Exe 檔案的名稱。|
 |[IDiaSymbol::get_signature](../../debugger/debug-interface-access/idiasymbol-get-signature.md)|`DWORD`|可執行檔的簽章。|

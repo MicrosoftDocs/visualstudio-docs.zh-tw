@@ -1,5 +1,6 @@
 ---
-title: IDebugBreakpointRequest3 |Microsoft Docs
+description: IDebugBreakpointRequest3 介面代表建立及系結任何中斷點類型所需的資訊。
+title: IDebugBreakpointRequest3 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6e42111ca0c8b357a7f8841511cf935694a30b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 628a68cf6712e6863550d85a5f876afbe1b6bdb5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893057"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150740"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 此介面代表建立和系結任何類型中斷點所需的資訊。 它是 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)的延伸模組。

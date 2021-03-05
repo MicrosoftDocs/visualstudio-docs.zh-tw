@@ -1,5 +1,6 @@
 ---
-title: IDebugPortSupplierDescription2 |Microsoft Docs
+description: 讓 Visual Studio UI 在 [附加至進程] 對話方塊的 [傳輸資訊] 區段中顯示文字。
+title: IDebugPortSupplierDescription2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3db59d4938911d0c47f0122a8727be8f1c8acd67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c3cd8d6fbeaf020ea772c9bd5cae783b6e8d127
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840193"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150376"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 讓 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] UI 在 [**附加至進程**] 對話方塊的 [**傳輸資訊**] 區段中顯示文字。

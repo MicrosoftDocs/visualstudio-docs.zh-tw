@@ -1,4 +1,5 @@
 ---
+description: 抓取插入的來源列舉值的 System.runtime.interopservices.outattribute. System.runtime.interopservices.comtypes. IEnumVARIANT 版本。
 title: IDiaEnumInjectedSources::get__NewEnum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2233c625fe1b27ffb749b8d29eb734ecddcb3700
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0be164adc64b0ac966e97b81f114da8e47853073
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856730"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149008"
 ---
 # <a name="idiaenuminjectedsourcesget__newenum"></a>IDiaEnumInjectedSources::get__NewEnum
 抓取 <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> 此列舉值的版本。

@@ -1,5 +1,6 @@
 ---
-title: GetTaskSchedulersForDebugger 方法 |Microsoft Docs
+description: 抓取目前作用中的所有 TaskScheduler 物件的陣列。
+title: GetTaskSchedulersForDebugger 方法 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9826681d2d322b1b240abb4062de007b564619
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f60ffa851e8b8821e3d07e1bfdd6e864104b5001
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921264"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150090"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger 方法
 抓取目前作用中之所有物件的陣列 <xref:System.Threading.Tasks.TaskScheduler> 。
@@ -24,7 +25,7 @@ ms.locfileid: "99921264"
 
  **元件：** *mscorlib.dll*) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在一般中繼語言 (的 CIL) 中提供下列語法。
 
 ## <a name="syntax"></a>語法
 

@@ -1,5 +1,6 @@
 ---
-title: IDebugSymbolProviderDirect：： GetMethodFromAddress |Microsoft Docs
+description: 在指定的 debug 位址抓取方法的相關資訊。
+title: IDebugSymbolProviderDirect：： GetMethodFromAddress |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3cbcab2126ffa61f4bfb71fbf21abff8ecc5d798
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dea6367280217f42238a56a56a6ce0e0e6f92b47
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909438"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149492"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 在指定的 debug 位址抓取方法的相關資訊。

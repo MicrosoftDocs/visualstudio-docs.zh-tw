@@ -1,5 +1,6 @@
 ---
-title: IDebugModOpt：： GetModOpts |Microsoft Docs
+description: 抓取選用修飾詞的清單。
+title: IDebugModOpt：： GetModOpts |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78ddcaa6a062b844c3f60c04f7a08aa673c69f67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 971d04662042afed1afe8e1861d0080b513ca74d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941784"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149934"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
 抓取選用修飾詞的清單。

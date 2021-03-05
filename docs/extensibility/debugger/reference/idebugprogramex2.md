@@ -1,5 +1,6 @@
 ---
-title: IDebugProgramEx2 |Microsoft Docs
+description: 此介面可讓會話 debug manager (SDM) 附加至程式，並取得與程式相關聯的程式節點。
+title: IDebugProgramEx2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f206de825d021d8daa2977a839f96fabd5e9db7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3efe419eaf037602ce1148c898c6c30dd86d23b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898862"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149570"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 此介面可讓會話 debug manager (SDM) 附加至程式，並取得與程式相關聯的程式節點。

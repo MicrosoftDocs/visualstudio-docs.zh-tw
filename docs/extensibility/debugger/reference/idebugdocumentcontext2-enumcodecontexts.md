@@ -1,5 +1,6 @@
 ---
-title: IDebugDocumentCoNtext2：： EnumCodeCoNtexts |Microsoft Docs
+description: 抓取與此檔內容相關聯的所有程式碼內容清單。
+title: IDebugDocumentCoNtext2：： EnumCodeCoNtexts |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 089122a4a4d7ff3d6a8828ba0c251efd3729c101
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d361a0cee6a5c54a11e5497366fe1d82bf30af45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933540"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150597"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 抓取與此檔內容相關聯的所有程式碼內容清單。

@@ -1,5 +1,6 @@
 ---
-title: DUMPTYPE |Microsoft Docs
+description: 指定程式的狀態 (（例如，執行中的執行緒、堆疊框架和目前的指令位址) 傾印）。
+title: DUMPTYPE |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99e7e5a9e092118eb40501e6f2ba3cc580cf7cc7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cef9f90c1f08dac742a6f01a4dd48f6bff76848b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953730"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150974"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 指定程式的狀態 (（例如，執行中的執行緒、堆疊框架和目前的指令位址) 傾印）。
