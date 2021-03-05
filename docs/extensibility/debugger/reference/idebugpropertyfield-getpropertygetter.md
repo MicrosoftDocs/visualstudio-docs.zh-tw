@@ -1,5 +1,6 @@
 ---
-title: IDebugPropertyField：： GetPropertyGetter |Microsoft Docs
+description: 取得取得屬性的方法。
+title: IDebugPropertyField：： GetPropertyGetter |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30ddc04eca7fb3932ae0797aaa18b1e665ce85e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b86315d7991e8ca76a4d08ec38292a9157bbdb1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897243"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167980"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
 取得取得屬性的方法。
