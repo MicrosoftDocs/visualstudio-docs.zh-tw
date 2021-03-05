@@ -1,5 +1,6 @@
 ---
-title: IDebugEnumField：： GetUnderlyingSymbol |Microsoft Docs
+description: 這個方法會傳回代表列舉名稱的 IDebugField。
+title: IDebugEnumField：： GetUnderlyingSymbol |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c812117e59ca50e64fa6e987ebbe1d30d8d552c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cf657256be2998d1b1fb0c32d12ab9040b14115
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933527"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153283"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 這個方法會傳回代表列舉名稱的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 。

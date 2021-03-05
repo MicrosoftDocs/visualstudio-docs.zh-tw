@@ -1,5 +1,6 @@
 ---
-title: IDebugEnumField：： GetValueFromStringCaseInsensitive |Microsoft Docs
+description: 這個方法會使用不區分大小寫的搜尋，傳回與列舉常數名稱相關聯的值。
+title: IDebugEnumField：： GetValueFromStringCaseInsensitive |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0eb781cd9e7a9073a45418c3793dc6ba026ec45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f853598c5d3c9b293c806e1db475c5053a1a208e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933345"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153218"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 這個方法會使用不區分大小寫的搜尋，傳回與列舉常數名稱相關聯的值。
