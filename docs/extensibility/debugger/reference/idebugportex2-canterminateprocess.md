@@ -1,5 +1,6 @@
 ---
-title: IDebugPortEx2：： CanTerminateProcess |Microsoft Docs
+description: 判斷是否可以終止進程。
+title: IDebugPortEx2：： CanTerminateProcess |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a8a58b2fc328f5659736e2ceb399bda62dc90cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 11a850f844a77c0e137a7a6603ac14b31e7dc326
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891094"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169453"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 判斷是否可以終止進程。

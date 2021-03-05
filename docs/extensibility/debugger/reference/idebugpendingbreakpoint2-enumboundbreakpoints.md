@@ -1,5 +1,6 @@
 ---
-title: IDebugPendingBreakpoint2：： EnumBoundBreakpoints |Microsoft Docs
+description: 列舉從此暫止中斷點系結的所有中斷點。
+title: IDebugPendingBreakpoint2：： EnumBoundBreakpoints |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2b65e36552ccdf8bf30777f13761183eb38e6700
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 198470afbf40f72b33c6163bcf4fe0eb19b956eb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953093"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169908"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
 列舉從此暫止中斷點系結的所有中斷點。

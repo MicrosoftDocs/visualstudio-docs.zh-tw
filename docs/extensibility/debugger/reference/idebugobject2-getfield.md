@@ -1,5 +1,6 @@
 ---
-title: IDebugObject2：： >getfield |Microsoft Docs
+description: 取得此物件的型別。
+title: IDebugObject2：： >getfield |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54f692fa85cfd8fa290a7f5c697a91e0366f8224
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a35974f637583663b82c3f0af726a7dd7a54345
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953457"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170064"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 取得此物件的型別。

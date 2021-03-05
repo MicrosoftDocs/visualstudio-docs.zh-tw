@@ -1,5 +1,6 @@
 ---
-title: IDebugCustomAttributeQuery2：： IsCustomAttributeDefined |Microsoft Docs
+description: 判斷自訂屬性是否以名稱存在。
+title: IDebugCustomAttributeQuery2：： IsCustomAttributeDefined |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 808c2f57d0fdf8f5f629b21d3c02507eecd49bd6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c25a0357a1b0b8768f02fd7eb903c30943964445
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842416"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168292"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 判斷自訂屬性是否以名稱存在。

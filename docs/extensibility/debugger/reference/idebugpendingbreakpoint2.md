@@ -1,5 +1,6 @@
 ---
-title: IDebugPendingBreakpoint2 |Microsoft Docs
+description: 這個介面代表已準備好系結至程式碼位置的中斷點。
+title: IDebugPendingBreakpoint2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6798d940bb186e6d685f22282e641eb2e690e48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05e66a0066abca5fb657960f2042b738a10e59ca
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877404"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169726"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 這個介面代表已準備好系結至程式碼位置的中斷點。

@@ -1,5 +1,6 @@
 ---
-title: IDebugPortEx2：： ResumeProcess |Microsoft Docs
+description: 繼續執行進程。
+title: IDebugPortEx2：： ResumeProcess |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cbe4c0951d116500a94e1bce0fb905ea5bc501d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4f0a1b5384631c1c36bb4fca8213b33b8697409
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933046"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169440"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
 繼續執行進程。

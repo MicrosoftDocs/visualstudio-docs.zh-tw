@@ -1,5 +1,6 @@
 ---
-title: IDebugSettingsCallback2：： GetEELocalObject |Microsoft Docs
+description: 根據給定的度量名稱，抓取運算式評估工具區域物件。
+title: IDebugSettingsCallback2：： GetEELocalObject |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7fafd813a569c02af356fee9213ed4c1fdc8751e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 72ff072cdb6c0431a7b04e644f71186c91763efa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875948"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168760"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 根據給定的度量名稱，抓取運算式評估工具區域物件。

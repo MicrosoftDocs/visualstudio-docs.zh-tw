@@ -1,5 +1,6 @@
 ---
-title: IDebugPortEvents2 |Microsoft Docs
+description: 此介面會通知接聽程式 (通常是會話 debug manager [SDM] 或偵錯工具) 進程的進程和程式建立，並在特定埠上進行銷毀。
+title: IDebugPortEvents2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba68608e09405265940686bbb235a41c53959943
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50dadee6ac2e1d1a441796aac7ca49614b84bcdf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891185"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169466"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 此介面會通知接聽程式 (通常是會話 debug manager [SDM] 或偵錯工具) 進程的進程和程式建立，並在特定埠上進行銷毀。 這項資訊可用來即時查看在埠上執行的進程和程式。

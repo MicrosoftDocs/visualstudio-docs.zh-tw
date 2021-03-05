@@ -1,5 +1,6 @@
 ---
-title: IDebugPendingBreakpoint2：： Enable |Microsoft Docs
+description: 切換暫止中斷點的啟用狀態。
+title: IDebugPendingBreakpoint2：： Enable |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2da595754066adefb397bf90085b7d2e58ab49d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3d0e92cf469a48e2ace84861a36cb256835d4cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953106"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169921"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 切換暫止中斷點的啟用狀態。

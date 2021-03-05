@@ -1,5 +1,6 @@
 ---
-title: IDebugProcessDestroyEvent2 |Microsoft Docs
+description: 此介面會在進程終止、異常離開或從卸離時傳送。
+title: IDebugProcessDestroyEvent2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c194ef3585a8ba3f0a0ab90e5ea39f4ad3a04622
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91d2e3afc2292f7a180b1dcce0cc015fea640a86
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861097"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169154"
 ---
 # <a name="idebugprocessdestroyevent2"></a>IDebugProcessDestroyEvent2
 此介面會在進程終止、異常離開或從卸離時傳送。

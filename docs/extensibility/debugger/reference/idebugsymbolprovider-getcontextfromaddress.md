@@ -1,5 +1,6 @@
 ---
-title: IDebugSymbolProvider：： GetCoNtextFromAddress |Microsoft Docs
+description: 這個方法會將 debug 位址對應至檔內容。
+title: IDebugSymbolProvider：： GetCoNtextFromAddress |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60ee6773e468c1f647a78712bbdcb5b64f8d6871
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 698167d64a8a1449f6aced543b42450a0213251b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954757"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168578"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
 這個方法會將 debug 位址對應至檔內容。

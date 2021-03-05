@@ -1,5 +1,6 @@
 ---
-title: IDebugProgram2：： GetEngineInfo |Microsoft Docs
+description: 取得在執行此程式時， (DE) 的偵測引擎的名稱和 GUID。
+title: IDebugProgram2：： GetEngineInfo |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b26d6dcde31d3599c8aa8f8223c1f3cf00a59437
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d59d621097e57336b67535d29a11d05ab4e686b4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906259"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169167"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 取得在執行此程式時， (DE) 的偵測引擎的名稱和 GUID。

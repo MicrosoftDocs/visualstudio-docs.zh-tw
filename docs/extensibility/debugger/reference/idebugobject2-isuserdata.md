@@ -1,5 +1,6 @@
 ---
-title: IDebugObject2：： IsUserData |Microsoft Docs
+description: 判斷物件是否代表使用者資料。
+title: IDebugObject2：： IsUserData |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c53281ee144d3a1fa771fe4e77bba6bb418356e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9264ed546a4f1c9abcf42b1376e0b21b0f27940
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953353"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169985"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
 判斷物件是否代表使用者資料。

@@ -1,5 +1,6 @@
 ---
-title: IDebugSymbolProvider：： GetLanguage |Microsoft Docs
+description: 這個方法會取得在 debug 位址編譯器代碼所使用的語言。
+title: IDebugSymbolProvider：： GetLanguage |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 120434e44819d4c503336dffeaa1c255626270d5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86387e86261a91b77793e9a31ae4b415983e2c5c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880225"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168552"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 這個方法會取得在 debug 位址編譯器代碼所使用的語言。

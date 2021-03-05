@@ -1,5 +1,6 @@
 ---
-title: IDebugPortRequest2：： GetPortName |Microsoft Docs
+description: 取得埠的名稱。
+title: IDebugPortRequest2：： GetPortName |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 574ea2ecb69c944bdb47ff80d7b4e26db51933da
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee0d0199a87dff6f29e82b691ed0a396f6d0162a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887155"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169245"
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
 取得埠的名稱。

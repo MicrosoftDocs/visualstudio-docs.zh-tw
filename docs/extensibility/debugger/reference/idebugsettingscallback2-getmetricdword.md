@@ -1,5 +1,6 @@
 ---
-title: IDebugSettingsCallback2：： GetMetricDword |Microsoft Docs
+description: 取得度量的值（指定其名稱）。
+title: IDebugSettingsCallback2：： GetMetricDword |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2c0db9bfd870921de151d5fb9eda2f2a06f50dc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c67dccee1c59856ef295aa4fd815f2eb6b4ae758
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875844"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168682"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 取得度量的值（指定其名稱）。

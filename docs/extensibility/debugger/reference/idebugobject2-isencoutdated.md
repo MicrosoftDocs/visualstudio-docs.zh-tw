@@ -1,5 +1,6 @@
 ---
-title: IDebugObject2：： IsEncOutdated |Microsoft Docs
+description: 這個方法會判斷這個物件或父容器的 [編輯後繼續] 狀態是否已過期。
+title: IDebugObject2：： IsEncOutdated |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94f861e6a45b05c8db1b7e7e76815579f6568c69
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 583b77ed4f3fbfc81bb595ddde025b8c08f169dd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953379"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170012"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 這個方法會判斷這個物件或父容器的 [編輯後繼續] 狀態是否已過期。 自訂表格達式評估工具不會執行這個方法，且一律會傳回 `E_NOTIMPL` 。
