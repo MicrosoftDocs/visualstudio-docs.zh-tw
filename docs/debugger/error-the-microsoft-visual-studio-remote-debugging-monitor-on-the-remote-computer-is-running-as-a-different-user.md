@@ -1,6 +1,7 @@
 ---
 title: 遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視，目前是以不同的使用者身分在執行
 titleSuffix: ''
+description: 當您以 [非驗證] 模式進行偵錯，但啟動 msvsmon 的使用者不是執行 Visual Studio 的使用者時，就會出現這個訊息。
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03e4ef05c1615e7798cd111f9cc5f95976abeebc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cee8ea9442ab88c280a11a0b73d74cac6888e9f9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871321"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146700"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>錯誤：遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視以不同使用者執行
 您可能會在嘗試進行遠端偵錯時，得到下列錯誤訊息：
@@ -36,7 +37,7 @@ ms.locfileid: "99871321"
 ## <a name="cause"></a>原因
  當您以 [非驗證] 模式進行偵錯，但啟動 msvsmon 的使用者不是執行 Visual Studio 的使用者時，就會出現這個訊息。
 
-## <a name="solution"></a>解決方案
+## <a name="solution"></a>解決方法
  最安全且最理想的方案就是以相同的使用者帳戶執行遠端偵錯監視 (msvsmon.exe) 和 Visual Studio。 如果無法這麼做的話，您可以使用其他帳戶執行遠端偵錯監視，方法是在遠端偵錯監視的 [選項] 對話方塊中選取 [允許任何使用者執行偵錯] 選項。
 
 > [!CAUTION]

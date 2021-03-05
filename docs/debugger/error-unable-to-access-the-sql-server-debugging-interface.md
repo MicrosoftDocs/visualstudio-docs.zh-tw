@@ -1,5 +1,6 @@
 ---
-title: 無法存取 SQL Server 的調試介面 |Microsoft Docs
+description: 當您嘗試在未啟用 SQL 偵錯的電腦上進行 SQL 偵錯時，便會出現這則訊息。
+title: 無法存取 SQL Server 調試介面 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f14143052ed3eb65e74e284e0877d9b32cb17bf7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f73ca5586b80cd72c952c8ab511061d877ed7b37
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871087"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146465"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>錯誤：無法存取 SQL Server 偵錯介面
 當您嘗試在未啟用 SQL 偵錯的電腦上進行 SQL 偵錯時，便會出現這則訊息。

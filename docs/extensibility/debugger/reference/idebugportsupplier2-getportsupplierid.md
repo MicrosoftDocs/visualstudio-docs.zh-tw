@@ -1,5 +1,6 @@
 ---
-title: IDebugPortSupplier2：： GetPortSupplierId |Microsoft Docs
+description: 取得埠供應商識別碼。
+title: IDebugPortSupplier2：： GetPortSupplierId |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fcfafa5d104ded3ace847ac659171f423b07128a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bbed2ba8dfa46477770815376046083a8f7c92f1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840388"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145387"
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
 取得埠供應商識別碼。

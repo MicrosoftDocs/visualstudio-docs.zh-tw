@@ -1,5 +1,6 @@
 ---
-title: 遠端電腦無法起始 DCOM 通訊 |Microsoft Docs
+description: 當遠端電腦嘗試與本機電腦進行通訊時，就會發生 DCOM 錯誤。
+title: 遠端電腦無法起始 DCOM 通訊 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc23af6335aa29adcad6dbe9e7869ab26cc0bc6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86d6c46f338d789d6b113551ac9d99c681290526
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871477"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146778"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>錯誤：遠端電腦無法啟始 DCOM 通訊
 當遠端電腦嘗試與本機電腦進行通訊時，就會發生 DCOM 錯誤。 本機電腦是

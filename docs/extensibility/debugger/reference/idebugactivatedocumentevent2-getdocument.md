@@ -1,5 +1,6 @@
 ---
-title: IDebugActivateDocumentEvent2：： GetDocument |Microsoft Docs
+description: 取得要啟動的檔。
+title: IDebugActivateDocumentEvent2：： GetDocument |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7242bf5f85a401531b9f5de419c23c201e8051ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 918b215e21f7335493d7711085a359f1db51cee4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904707"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145465"
 ---
 # <a name="idebugactivatedocumentevent2getdocument"></a>IDebugActivateDocumentEvent2::GetDocument
 取得要啟動的檔。

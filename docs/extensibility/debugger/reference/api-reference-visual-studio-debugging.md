@@ -1,5 +1,6 @@
 ---
-title: API 參考 (Visual Studio 調試) |Microsoft Docs
+description: 參考章節包含 API 的概念總覽，此指南會顯示所有 API 專案的語法和使用方式，以及各種程式碼範例。
+title: API 參考 (Visual Studio 調試) |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24e7c8892798d9192aa59c946e1c978899b4d173
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47c6697945c6c588a8b4e57ab03d573d45c4d4cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912042"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144633"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 參考 (Visual Studio 偵錯)
 參考章節包含 API 的概念總覽，此指南會顯示所有 API 專案的語法和使用方式，以及各種程式碼範例。 所有參考都會依類別目錄依字母順序列出。

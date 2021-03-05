@@ -1,5 +1,6 @@
 ---
-title: ATTACH_REASON |Microsoft Docs
+description: 指定 debug engine (DE) 附加至程式節點的原因。
+title: ATTACH_REASON |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4baf13945b85cff334aa6392a50f6a80fdf50961
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6fa83fb537f05a2c073e3693dab964fa58af464
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950434"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144607"
 ---
 # <a name="attach_reason"></a>ATTACH_REASON
 指定 debug engine (DE) 附加至程式節點的原因。

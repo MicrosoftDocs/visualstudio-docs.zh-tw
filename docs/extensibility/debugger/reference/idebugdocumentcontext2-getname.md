@@ -1,5 +1,6 @@
 ---
-title: IDebugDocumentCoNtext2：： GetName |Microsoft Docs
+description: 取得包含此檔內容之檔的可顯示名稱。
+title: IDebugDocumentCoNtext2：： GetName |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7619f15e995aeb8d70897d74686a0e79d2532da
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4e75cd6b963965a245055ff8fa0849e39339af1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947043"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146206"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 取得包含此檔內容之檔的可顯示名稱。

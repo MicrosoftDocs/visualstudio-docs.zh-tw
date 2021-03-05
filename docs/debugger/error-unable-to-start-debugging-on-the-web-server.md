@@ -1,5 +1,6 @@
 ---
-title: 無法在 Web 服務器上啟動調試 |Microsoft Docs
+description: 當您嘗試在 Web 服務器上執行 ASP.NET 應用程式的偵錯工具時，可能會收到下列錯誤訊息：無法在 Web 服務器上啟動偵錯工具。
+title: 無法在 Web 服務器上啟動調試 |Microsoft 檔
 ms.date: 05/23/2018
 ms.topic: error-reference
 f1_keywords:
@@ -26,12 +27,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94dcfdc05f2d852e1a433067b0a574444632195d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91fa3f74c5dd0f5f6a036d5da7a779e68462c426
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870879"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146362"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在 Web 伺服器上啟動偵錯
 
@@ -56,9 +57,9 @@ ms.locfileid: "99870879"
 
 ## <a name="iis-does-not-list-a-website-that-matches-the-launch-url"></a><a name="IISlist"></a> IIS 不會列出符合啟動 url 的網站
 
-- 以系統管理員身分重新開機 Visual Studio，然後重試一次調試。  (某些 ASP.NET 的偵測情節需要較高的許可權。 ) 
+- 以系統管理員身分重新開機 Visual Studio，然後重試一次偵錯工具。  (某些 ASP.NET 的偵測情節需要較高的許可權。 ) 
 
-    您可以將 Visual Studio 設定為 [一律以系統管理員身分執行]，方法是以滑鼠右鍵按一下 Visual Studio 快捷方式圖示，選擇 [ **屬性] > [Advanced**]，然後選擇 [一律以系統管理員身分執行]。
+    您可以將 Visual Studio 設定為一律以系統管理員身分執行，方法是以滑鼠右鍵按一下 Visual Studio 快捷方式圖示，選擇 [ **屬性] > [Advanced**]，然後選擇 [一律以系統管理員身分執行]。
 
 ## <a name="the-web-server-is-not-configured-correctly"></a><a name="web_server_config"></a> 未正確設定 web 伺服器
 
@@ -66,7 +67,7 @@ ms.locfileid: "99870879"
 
 ## <a name="unable-to-connect-to-the-webserver"></a><a name="unabletoconnect"></a> 無法連接到 web 伺服器
 
-- 您是否在同一部電腦上執行 Visual Studio 和 Web 服務器，並使用 **F5** (（而不是 **附加至進程**) ）進行偵錯工具？ 開啟您的專案屬性，並確定已將專案設定為連接到正確的 Web 服務器並啟動 URL。 根據您的專案類型， (開啟 [ **Web > 伺服器** ] 或 [屬性] > **> Debug** 。 若為 Web Form 專案，請開啟 [ **屬性頁] > [啟動選項] > Server**. ) 
+- 您是否在同一部電腦上執行 Visual Studio 和 Web 服務器，並使用 **F5** (而不是 **附加至進程**) ？ 開啟您的專案屬性，並確定已將專案設定為連接到正確的 Web 服務器並啟動 URL。 根據您的專案類型， (開啟 [ **Web > 伺服器** ] 或 [屬性] > **> Debug** 。 若為 Web form 專案，請開啟 [ **屬性頁] > 啟動選項 > Server**]。 ) 
 
 - 否則，請重新開機您的應用程式集區，然後重設 IIS。 如需詳細資訊，請參閱 [檢查您的 IIS](#vxtbshttpservererrorsthingstocheck)設定。
 
@@ -74,7 +75,7 @@ ms.locfileid: "99870879"
 
 - 重設 IIS 並重試調試。 多個偵錯工具實例可能附加至 IIS 進程;重設會終止它們。 如需詳細資訊，請參閱 [檢查您的 IIS](#vxtbshttpservererrorsthingstocheck)設定。
 
-## <a name="the-microsoft-visual-studio-remote-debugging-monitormsvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a><a name="msvsmon"></a> Microsoft visual studio 遠端偵錯 ( # A0) 似乎未在遠端電腦上執行
+## <a name="the-microsoft-visual-studio-remote-debugging-monitormsvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a><a name="msvsmon"></a> Microsoft visual studio 遠端偵錯 (msvsmon.exe) 似乎未在遠端電腦上執行
 
 - 如果您是在遠端電腦上進行偵錯工具，請確定您已 [安裝且正在執行遠端偵錯程式](../debugger/remote-debugging.md)。 如果訊息提及防火牆，請確定已開啟 [防火牆中的正確埠](../debugger/remote-debugger-port-assignments.md) ，特別是當您使用協力廠商防火牆時。
 - 如果您使用 HOSTS 檔案，請確定已正確設定。 例如，如果使用 **F5** 進行偵錯工具 (而不是 **附加至進程**) ，主機檔案就必須在您的專案屬性中包含相同的專案 URL、根據您的專案類型 **> Web > 伺服器** 或 **屬性 >** 的屬性。
@@ -97,7 +98,7 @@ ms.locfileid: "99870879"
 
 如果您要在本機進行偵錯工具，請在 Visual Studio 中開啟您的專案屬性，並確定已將專案設定為連接到正確的 Web 服務器和 URL。 根據您的專案類型， (開啟 [ **Web > 伺服器** ] 或 [屬性] > **> Debug** 。 ) 
 
-當您在本機上進行偵錯工具時，可能會發生這個錯誤，因為 Visual Studio 是32位的應用程式，所以它會使用64位版本的遠端偵錯程式來偵測64位應用程式。 檢查 IIS 上的應用程式集區，以確定 [ **啟用32位應用程式** ] 已設定為 `true` 、重新開機 IIS，然後再試一次。
+當您在本機上進行偵錯工具時，可能會發生這個錯誤，因為 Visual Studio 是32位的應用程式，因此它會使用64位版本的遠端偵錯程式來將64位應用程式進行偵錯工具。 檢查 IIS 上的應用程式集區，以確定 [ **啟用32位應用程式** ] 已設定為 `true` 、重新開機 IIS，然後再試一次。
 
 此外，如果您使用 HOSTS 檔案，請確定已正確設定。 例如，HOSTS 檔案必須包含與您的專案屬性相同的專案 URL， **> Web > 伺服器** 或屬性（property）， **> Debug**（視您的專案類型而定）。
 
@@ -120,7 +121,7 @@ ms.locfileid: "99870879"
     由於發生錯誤，應用程式集區可能已停止。 或者，您所做的另一種設定變更可能需要您停止並重新啟動應用程式集區。
 
     > [!NOTE]
-    > 如果應用程式集區持續停止，您可能需要從主控台卸載 URL 重寫模組。 您可以使用 Web Platform Installer (WebPI) 來重新安裝它。 這項問題可能會在重要的系統升級後發生。
+    > 如果應用程式集區持續停止，您可能需要從 [控制台] 卸載 URL 重寫模組。 您可以使用 (WebPI) 的 Web Platform Installer 重新安裝它。 這項問題可能會在重要的系統升級後發生。
 
 * 檢查您的應用程式集區設定，視需要加以更正，然後重試。
 
@@ -134,7 +135,7 @@ ms.locfileid: "99870879"
 
 * 請確定已在 IIS 上安裝正確版本的 ASP.NET。
 
-    IIS 和 Visual Studio 專案中的 ASP.NET 版本不相符，可能會造成此問題。 您可能需要在 web.config 中設定 framework 版本。若要在 IIS 上安裝 ASP.NET，請使用 [Web Platform Installer (WebPI) ](https://www.microsoft.com/web/downloads/platform.aspx)。 此外，請參閱 [使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ，或針對 ASP.NET Core， [使用 iis 在 Windows 上裝載](https://docs.asp.net/en/latest/publishing/iis.html)。
+    IIS 和 Visual Studio 專案中的 ASP.NET 版本不相符，可能會造成此問題。 您可能需要在 web.config 中設定 framework 版本。若要在 IIS 上安裝 ASP.NET，請使用 [ (WebPI) 的 Web Platform Installer ](https://www.microsoft.com/web/downloads/platform.aspx)。 此外，請參閱 [使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ，或針對 ASP.NET Core， [在 WINDOWS 上使用 iis 裝載](https://docs.asp.net/en/latest/publishing/iis.html)。
 
 * 若您只使用 IP 位址，請解決驗證錯誤
 
@@ -146,9 +147,9 @@ ms.locfileid: "99870879"
 
 - 以系統管理員許可權重新開機 Visual Studio，然後再試一次。
 
-    某些 ASP.NET 的偵錯工具案例（例如使用 Web Deploy）需要較高的許可權才能 Visual Studio。
+    某些 ASP.NET 的偵錯工具（例如使用 Web Deploy）需要較高的 Visual Studio 許可權。
 
-- 如果有多個 Visual Studio 實例正在執行，請在 Visual Studio (的一個實例中，以系統管理員許可權) 重新開啟您的專案，然後再試一次。
+- 如果有多個 Visual Studio 實例正在執行中，請在 Visual Studio (中重新開啟您的專案，並) 系統管理員許可權，然後再試一次。
 
 - 如果您使用的主機檔案具有本機位址，請嘗試使用回送位址，而不是機器的 IP 位址。
 
@@ -160,7 +161,7 @@ ms.locfileid: "99870879"
 
      若 IIS 未正確安裝，則您在瀏覽器中輸入 `http://localhost` 時應該會發生錯誤。
 
-     如需部署至 IIS 的詳細資訊，請參閱 [使用 ASP.NET 3.5 和 ASP.NET 4.5 的 iis 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ，以及針對 ASP.NET Core，使用 [iis 在 Windows 上裝載](https://docs.asp.net/en/latest/publishing/iis.html)。
+     如需部署至 IIS 的詳細資訊，請參閱 [使用 ASP.NET 3.5 和 ASP.NET 4.5 的 iis 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ，以及適用于 ASP.NET Core、 [在 WINDOWS 上使用 iis 的主機](https://docs.asp.net/en/latest/publishing/iis.html)。
 
 * 在伺服器上建立基本 ASP.NET 應用程式 (或使用基本的 web.config 檔) 。
 

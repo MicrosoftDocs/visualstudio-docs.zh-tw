@@ -1,5 +1,6 @@
 ---
-title: IDebugStackFrame3：： InterceptCurrentException |Microsoft Docs
+description: 當偵錯工具想要攔截目前的例外狀況時，在目前的堆疊框架上呼叫它。
+title: IDebugStackFrame3：： InterceptCurrentException |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8e3ef123fb88f1519d398952ed2d27de0fb0b91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93fa7f73b3e13c655716ecbb16ff420605f76c90
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963545"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145777"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 當偵錯工具想要攔截目前的例外狀況時，在目前的堆疊框架上呼叫它。

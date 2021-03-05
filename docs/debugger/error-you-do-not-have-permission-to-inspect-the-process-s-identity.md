@@ -1,5 +1,6 @@
 ---
-title: 您沒有檢查進程身分識別的許可權 &apos; |Microsoft Docs
+description: 您沒有檢查此處理序識別的權限。
+title: 您沒有檢查進程身分識別的許可權 &apos; |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6903cba8d048d5ed2969d5aa7436fc6eca17561e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2070f6734c667f64cb54e2c5fead8eb63fd50d2c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870803"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146219"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>錯誤：您沒有許可權可檢查進程&#39;s 的身分識別
 您沒有檢查此處理序識別的權限。 這很可能是因為系統組態所造成。

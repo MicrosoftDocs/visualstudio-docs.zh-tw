@@ -1,5 +1,6 @@
 ---
-title: IDebugSymbolProvider：： GetTypeByName |Microsoft Docs
+description: 這個方法會將符號名稱對應至符號類型。
+title: IDebugSymbolProvider：： GetTypeByName |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 565a202d3b63a8c501864099940f5ca16da96077
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9223639fa82bffa2f55a7692e1ec4a2576e66d45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894864"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145751"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 這個方法會將符號名稱對應至符號類型。

@@ -1,5 +1,6 @@
 ---
-title: IDebugProgram2：:D etach |Microsoft Docs
+description: 從程式卸離 debug 引擎。
+title: IDebugProgram2：:D etach |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ba312ce18dd0a3ee2bbf65d83390a2af9f4ac3d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d303db7043865d770604d7feeec57ddf584fc346
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912928"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146167"
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
 從程式卸離 debug 引擎。

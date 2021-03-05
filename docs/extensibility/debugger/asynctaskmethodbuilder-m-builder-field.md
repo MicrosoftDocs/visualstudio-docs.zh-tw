@@ -1,5 +1,6 @@
 ---
-title: AsyncTaskMethodBuilder.m_builder 欄位 |Microsoft Docs
+description: 表示這個非泛型實例所委派的一般 builder 物件。
+title: AsyncTaskMethodBuilder.m_builder 欄位 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 911b094c991e041a3f6a1a466d587294c6a09b4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75c2bfafffd20f32db5d49c5938f25bb693f297d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862184"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145699"
 ---
 # <a name="asynctaskmethodbuilderm_builder-field"></a>AsyncTaskMethodBuilder.m_builder 欄位
 表示這個非泛型實例所委派的一般 builder 物件。
@@ -24,7 +25,7 @@ ms.locfileid: "99862184"
 
  **元件：** mscorlib.dll) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
+ 因為您無法從 .NET Framework 存取這個內部成員，所以會在一般中繼語言 (的 CIL) 中提供下列語法。
 
 ## <a name="syntax"></a>語法
 
@@ -36,4 +37,4 @@ ms.locfileid: "99862184"
 
 ## <a name="see-also"></a>另請參閱
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
-- [.NET Framework 的平行延伸模組內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET Framework 的平行擴充功能內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -1,5 +1,6 @@
 ---
-title: IDebugProgramHost2：： GetHostMachineName |Microsoft Docs
+description: 取得裝載此程式之進程正在執行的電腦名稱稱。
+title: IDebugProgramHost2：： GetHostMachineName |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 575481951ffb662452d5cb6635f91bfb11ea6432
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5ba8a2598af54f700ec85f3e3856b29166f2613
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898753"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145244"
 ---
 # <a name="idebugprogramhost2gethostmachinename"></a>IDebugProgramHost2::GetHostMachineName
 取得裝載此程式之進程正在執行的電腦名稱稱。

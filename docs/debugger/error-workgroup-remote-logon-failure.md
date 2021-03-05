@@ -1,5 +1,6 @@
 ---
-title: 工作組遠端登入失敗 |Microsoft Docs
+title: 工作組遠端登入失敗 |Microsoft 檔
+description: 當您從工作群組上的電腦進行偵錯並嘗試連接遠端機器時，就可能會發生這個錯誤。
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f56c8d8e0113b400e9d9cd072ba16f304cd6192
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 582b38b7a4115a140f6031b2d4c9227edfd438d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870840"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146232"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>錯誤：工作群組遠端登入失敗
 這個錯誤為：

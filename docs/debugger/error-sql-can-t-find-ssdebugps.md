@@ -1,5 +1,6 @@
 ---
-title: SQL 可以 &apos; 找不到 ssdebugps.dll |Microsoft Docs
+description: SSDEBUGPS.dll 是 SQL Server 偵錯主機元件。
+title: SQL 可以 &apos; 找不到 ssdebugps.dll |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 67d7602357a39cbdce0c96b494f4c02758533e73
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a746759f294a1d8ac6b13350efd56976a1f3ae21
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871386"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146752"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>錯誤： SQL 可以&#39;t Find SSDEBUGPS.DLL
 
@@ -32,7 +33,7 @@ SSDEBUGPS.dll 是 SQL Server 偵錯主機元件。
 
 若要重新執行遠端偵錯程式設定，請遵循 [遠端偵錯](../debugger/remote-debugging.md)程式的指示。
 
-如果找得到 ssdebugps.dll 的複本，就可以將該複本複製到 [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] 電腦。 如果有這個檔案，會在 \Program Files\ Common Files\Microsoft Shared\SQL Debugging 目錄中。 您可能會在另一部 [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] 電腦或安裝了 Visual Studio 2005 的電腦上找到它。
+如果找得到 ssdebugps.dll 的複本，就可以將該複本複製到 [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] 電腦。 如果有這個檔案，會在 \Program Files\ Common Files\Microsoft Shared\SQL Debugging 目錄中。 您可能會在另一部 [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] 電腦上，或在已安裝 Visual Studio 2005 的電腦上找到它。
 
 將 SSDEBUGPS.dll 複製到 SQL Server 2005 電腦：
 

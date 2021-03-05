@@ -1,5 +1,6 @@
 ---
-title: AsyncTaskMethodBuilder &lt; TResult &gt; 結構-內部成員 |Microsoft Docs
+description: 本主題說明 CompilerServices. AsyncTaskMethodBuilder 類別的內部成員。
+title: AsyncTaskMethodBuilder &lt; TResult &gt; 結構-內部成員 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41cb409495b28b7dc2bc796859da413a32b90d85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35e1ca4d19727383bdd7c957bc59fd6b6568c9f5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921636"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145647"
 ---
 # <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>AsyncTaskMethodBuilder &lt; TResult &gt; 結構-內部成員
 本主題說明類別的內部成員 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> 。 如需此類別的一般資訊，請參閱 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> 參考主題。
@@ -25,7 +26,7 @@ ms.locfileid: "99921636"
 
  **元件：** mscorlib.dll) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取這些內部成員，所以會以一般中繼語言 () 的 CIL 來提供下列語法。
+ 因為您無法從 .NET Framework 存取這些內部成員，所以會以一般中繼語言 (的 CIL) 來提供下列語法。
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,4 +45,4 @@ ms.locfileid: "99921636"
 
 ## <a name="see-also"></a>另請參閱
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
-- [.NET Framework 的平行延伸模組內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET Framework 的平行擴充功能內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

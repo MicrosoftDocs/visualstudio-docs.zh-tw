@@ -1,5 +1,6 @@
 ---
-title: IIS 已終止網站背景工作進程 |Microsoft Docs
+description: 偵錯工具停止執行網站上的程式碼。
+title: IIS 已終止網站背景工作進程 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7832d71ab86c6dab973a07dbc46217274cb83b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca2b873a4d4b04362298d2d96b9d037cc80addd4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870892"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146271"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>錯誤：網站背景工作處理序已被 IIS 終止
 偵錯工具停止執行網站上的程式碼。 如此一來，可能會使網際網路資訊服務 (IIS) 認為背景工作處理序已停止回應。 因此，IIS 會結束背景工作處理序。
@@ -30,9 +31,9 @@ ms.locfileid: "99870892"
 
 1. 開啟 [系統管理工具] 視窗。
 
-   1. 按一下 [ **開始**]，然後選擇 [ **主控台**]。
+   1. 按一下 [ **開始**]，然後選擇 [ **控制台**]。
 
-   2. 在 [ **主控台** 中，視需要選擇 [ **切換到傳統視圖**]，然後按兩下 [系統 **管理工具**]。
+   2. 在 [ **控制台**] 中，視需要選擇 [ **切換到傳統視圖**]，然後按兩下 [系統 **管理工具**]。
 
 2. 在 [系統管理工具] 視窗中，按兩下 [Internet Information Services (IIS) 管理員]。
 

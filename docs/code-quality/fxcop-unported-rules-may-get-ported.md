@@ -1,4 +1,5 @@
 ---
+description: 下列 FxCop 舊版分析規則尚未實作為分析器，但仍然可能。
 title: 可能可移植的未移植規則
 ms.date: 05/21/2019
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: dbc4e53b78eded2b8ab2698d60b1653d1615a7e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a01a46330e28960cfa1eab4598c17fe71b4fcc0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860252"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144685"
 ---
 # <a name="unported-rules-that-may-be-ported"></a>可能可移植的未移植規則
 

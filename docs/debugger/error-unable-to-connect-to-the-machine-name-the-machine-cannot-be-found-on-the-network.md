@@ -1,5 +1,6 @@
 ---
 title: 無法連接到電腦 &lt; 名稱 &gt; 。 網路上找不到這部電腦。 | Microsoft Docs
+description: 如果下列其中一個條件成立，就會發生此行為： (1) 遠端電腦的連接已中斷。  (2) 遠端電腦上的使用者帳戶已停用。  (3) 您在遠端電腦上的密碼已過期。
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcf52a258a46f44afaf6e890531496f57b11fc24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e0d83f043e020ad3c65ac0f986ec174fac95585
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871061"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146427"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>錯誤：無法連接到電腦 &lt; 名稱 &gt; 。 網路上找不到這部電腦。
 如果下列其中一種情況為 true 時，就會發生這個行為：

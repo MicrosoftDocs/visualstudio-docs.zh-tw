@@ -1,5 +1,6 @@
 ---
-title: IDebugStackFrame2：： EnumProperties |Microsoft Docs
+description: 建立與堆疊框架（例如區域變數）相關聯之屬性的列舉值。
+title: IDebugStackFrame2：： EnumProperties |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 500701be7b6f2aedffceaaaa819ecbd253a58e36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40298e505f0d3ccbba200c5487a1bf1d6723f5b2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837706"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145959"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 建立與堆疊框架（例如區域變數）相關聯之屬性的列舉值。

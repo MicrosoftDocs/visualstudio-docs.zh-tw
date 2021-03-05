@@ -1,4 +1,5 @@
 ---
+description: 這個錯誤訊息表示 Visual Studio 無法在遠端電腦上找到正確的 Visual Studio 遠端偵錯監視執行個體。
 title: Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。
 titleSuffix: ''
 ms.custom: seodec18
@@ -16,18 +17,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ecb8a0a3c725403d57769090229f690281026a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c40e36548e17bbd4d37192364667a369bdcbb47
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871503"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146790"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>錯誤：Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。
 這個錯誤訊息表示 Visual Studio 無法在遠端電腦上找到正確的 Visual Studio 遠端偵錯監視執行個體。 必須安裝 Visual Studio 遠端偵錯監視，才能執行遠端偵錯。 如需下載和設定遠端偵錯程式的詳細資訊，請參閱 [遠端偵錯](../debugger/remote-debugging.md)程式。
 
 > [!IMPORTANT]
-> 如果您認為因為產品錯誤而收到此訊息，請 [將此問題回報給 Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)。 如果您需要更多協助，請參閱 [Talk to Us](../ide/feedback-options.md) 與 Microsoft 連絡。
+> 如果您認為因為產品錯誤而收到此訊息，請 [向 Visual Studio 報告這個問題](../ide/how-to-report-a-problem-with-visual-studio.md)。 如果您需要更多協助，請參閱 [Talk to Us](../ide/feedback-options.md) 與 Microsoft 連絡。
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>我在 Visual Studio 2010 或更早版本中偵錯時收到這則訊息
  如果您使用的 Visual Studio 版本是 Visual Studio 2010 或更早版本，在未啟用檔案或印表機共用時，也可能會收到這個錯誤。 若要深入了解這個問題，請參閱本文件的 Visual Studio 2010 版本：[Error: The Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) does not appear to be running on the remote computer. - Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100)) (錯誤：Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。- Visual Studio 2010)
@@ -70,7 +71,7 @@ ms.locfileid: "99871503"
  您可能需要在別的時間執行遠端偵錯，或重新排定其他時間的網路工作。
 
 ## <a name="more-help"></a>詳細的說明
- 若要取得更多遠端偵錯程式說明（包括命令列參數），請按一下 [遠端偵錯程式] 視窗中的 [說明 **> 使用** 方式]。 如果您沒有開啟該檔案，您可以將下面這一行複製到  **檔案總管** 的視窗，以查看該網頁。  (您需要以 \<Visual Studio installation directory> Visual Studio 安裝的位置取代。 ) 
+ 若要取得更多遠端偵錯程式說明（包括命令列參數），請按一下 [遠端偵錯程式] 視窗中的 [說明 **> 使用** 方式]。 如果您未開啟，您可以將下列程式程式碼複製到 [檔案  **瀏覽器** ] 視窗，以查看該網頁。  (您需要取代為 \<Visual Studio installation directory> Visual Studio 安裝的位置。 ) 
 
  res:// *\<Visual Studio installation directory>* \Common7\IDE\Remote% 20Debugger\x64\msvsmon.exe/help.htm
 
