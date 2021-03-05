@@ -1,5 +1,6 @@
 ---
-title: IDebugBreakpointErrorEvent2：： GetErrorBreakpoint |Microsoft Docs
+description: 取得描述中斷點未系結原因的 IDebugErrorBreakpoint2 物件。
+title: IDebugBreakpointErrorEvent2：： GetErrorBreakpoint |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e81cf833ea6e03a79d359144fa3e7e9a7024b74e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a71442e25d8da31ed7bed0b6e65ae05692eb1e36
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936115"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143385"
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 取得描述中斷點未系結原因的 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 物件。

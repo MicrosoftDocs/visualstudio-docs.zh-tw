@@ -1,5 +1,6 @@
 ---
-title: IDebugPendingBreakpoint2：： >getstate |Microsoft Docs
+description: 取得暫止中斷點的狀態。
+title: IDebugPendingBreakpoint2：： >getstate |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93aae8aea0216adfff533aa9aacd3c5c925e362c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94e513828ba726b314a6b748992c42bd95a614c4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940289"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143047"
 ---
 # <a name="idebugpendingbreakpoint2getstate"></a>IDebugPendingBreakpoint2::GetState
 取得暫止中斷點的狀態。

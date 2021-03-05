@@ -1,5 +1,6 @@
 ---
-title: BP_LOCATION_CODE_CONTEXT |Microsoft Docs
+description: 描述直接系結至要進行偵錯工具之位址的中斷點位置。
+title: BP_LOCATION_CODE_CONTEXT |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: a51665a22a01c17256c41d45d2970bea0f617140
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b84e71c3102071dcdd0bcb5be9b539144c19047
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948383"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144399"
 ---
 # <a name="bp_location_code_context"></a>BP_LOCATION_CODE_CONTEXT
 描述直接系結至要進行偵錯工具之位址的中斷點位置。

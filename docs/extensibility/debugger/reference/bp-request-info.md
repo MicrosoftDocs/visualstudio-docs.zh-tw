@@ -1,5 +1,6 @@
 ---
-title: BP_REQUEST_INFO |Microsoft Docs
+description: 包含執行中斷點所需的資訊。
+title: BP_REQUEST_INFO |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c806687b9948be693ca25868aaf7211d9ccf6b97
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 941c8302fa52d579c2fbefc62ccd962d26e2cf13
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902018"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144127"
 ---
 # <a name="bp_request_info"></a>BP_REQUEST_INFO
 包含執行中斷點所需的資訊。

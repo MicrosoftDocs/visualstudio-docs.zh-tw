@@ -1,5 +1,6 @@
 ---
-title: IDebugBreakpointChecksumRequest2：： IsChecksumEnabled |Microsoft Docs
+description: 判斷是否已啟用此檔的總和檢查碼。
+title: IDebugBreakpointChecksumRequest2：： IsChecksumEnabled |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ca1034d0d67cc0628717638bf08a930c7a9111c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 697ad612595b869d0f7b4836ffb15357b9a2e77f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951221"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143437"
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
 判斷是否已啟用此檔的總和檢查碼。

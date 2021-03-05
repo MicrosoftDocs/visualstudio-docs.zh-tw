@@ -1,5 +1,6 @@
 ---
-title: IDebugBreakpointErrorEvent2 |Microsoft Docs
+description: 此介面會告知會話 debug manager (SDM) 暫止的中斷點無法系結至載入的程式，可能是因為出現警告或錯誤。
+title: IDebugBreakpointErrorEvent2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 033c997f3bd1038c2103a6c0ef3ad9ddbd74c249
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 89342f5d26c5aeec41222bba12a29f534798782b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901870"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143349"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 此介面會告知會話 debug manager (SDM) 暫止的中斷點無法系結至載入的程式，可能是因為出現警告或錯誤。

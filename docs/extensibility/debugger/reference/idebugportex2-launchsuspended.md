@@ -1,5 +1,6 @@
 ---
-title: IDebugPortEx2：： LaunchSuspended |Microsoft Docs
+description: 啟動可執行檔。
+title: IDebugPortEx2：： LaunchSuspended |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3cfaf6dd332f17bd934a55f700e4d28096fba8b8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5982ad665333aa4d11e2098d3b148db88e77c32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844771"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142818"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 啟動可執行檔。

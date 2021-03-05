@@ -1,5 +1,6 @@
 ---
-title: IDebugPortRequest2 |Microsoft Docs
+description: 此介面描述埠。
+title: IDebugPortRequest2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44e0bc66d9f385a41f0f43af7217738e40e69126
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ca2d1d59c66c87c2dbb0fc256481d35ad590dbe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887116"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142618"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 此介面描述埠。 此描述可用來將埠新增至埠供應商。

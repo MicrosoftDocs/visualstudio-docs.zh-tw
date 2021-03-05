@@ -1,5 +1,6 @@
 ---
-title: IDebugBreakEvent2 |Microsoft Docs
+description: 此介面會告知會話 debug manager (SDM) 已成功完成非同步中斷。
+title: IDebugBreakEvent2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61fb53c1fc83f06c200b50b5fcf55f950a00ead6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dddf2c69cf7ccf221c00e88fc159b762284483ff
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943430"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143580"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 此介面會告知會話 debug manager (SDM) 已成功完成非同步中斷。

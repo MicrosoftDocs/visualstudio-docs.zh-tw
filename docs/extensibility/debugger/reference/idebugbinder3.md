@@ -1,5 +1,6 @@
 ---
-title: IDebugBinder3 |Microsoft Docs
+description: 此介面提供類型、別名和自訂視覺化服務的存取權。
+title: IDebugBinder3 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 673e4a4f18488b973984319310c139e104524a47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f6be3b149450ec84158acc533230102fce5a67e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901885"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143606"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]

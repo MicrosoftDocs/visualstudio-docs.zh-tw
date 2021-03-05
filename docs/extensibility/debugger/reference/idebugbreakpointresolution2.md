@@ -1,5 +1,6 @@
 ---
-title: IDebugBreakpointResolution2 |Microsoft Docs
+description: 此介面表示描述系結中斷點的資訊。
+title: IDebugBreakpointResolution2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6ebb698fc839a93547d15828b250bd436260e33
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31543b574006609cb22e6cf505771840678a97fa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881031"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143320"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
 此介面表示描述系結中斷點的資訊。

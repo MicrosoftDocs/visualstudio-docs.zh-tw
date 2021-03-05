@@ -1,5 +1,6 @@
 ---
-title: IDebugProcess2：： GetAttachedSessionName |Microsoft Docs
+description: 取得正在對此進程進行偵錯工具的會話名稱。
+title: IDebugProcess2：： GetAttachedSessionName |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a4692fdbc08655553a829c0f44037221f2e8b410
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63d83a9d5f89ea06744454b790d988f1881c193b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907860"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142540"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
 取得正在對此進程進行偵錯工具的會話名稱。 IDE 可以將這項資訊顯示給正在將特定電腦上的特定進程進行偵錯工具的使用者。

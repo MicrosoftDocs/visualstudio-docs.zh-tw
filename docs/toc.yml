@@ -188,9 +188,9 @@
           href: ide/create-new-project.md
         - name: 使用解決方案與專案
           href: ide/creating-solutions-and-projects.md
-        - name: 在 Visual Studio 2017 的存放庫中開啟專案
+        - name: 從 Visual Studio 2017 中的存放庫開啟專案
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: 在 Visual Studio 2019 的存放庫中開啟專案
+        - name: 從 Visual Studio 2019 中的存放庫開啟專案
           href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 移植、移轉及升級專案
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
@@ -1070,6 +1070,8 @@
       items:
         - name: 呼叫階層
           href: ide/reference/call-hierarchy.md
+        - name: 開發人員命令提示字元 & 開發人員 PowerShell
+          href: ide/reference/command-prompt-powershell.md
         - name: 預覽變更
           href: ide/preview-changes.md
         - name: 選擇工具箱項目、WPF 元件

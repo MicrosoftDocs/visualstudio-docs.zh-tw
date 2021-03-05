@@ -1,5 +1,6 @@
 ---
-title: IDebugBinder：： Bind |Microsoft Docs
+description: 這個方法會取得包含符號目前值的記憶體內容或物件。
+title: IDebugBinder：： Bind |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ee9f303223da15bc75adbf31d533848fb017bb1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c373fbdae030de30544c67c1509eb812b746b7f1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901909"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143652"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 這個方法會取得包含符號目前值的記憶體內容或物件。

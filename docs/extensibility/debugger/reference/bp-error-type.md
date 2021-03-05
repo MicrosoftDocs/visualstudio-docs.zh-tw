@@ -1,5 +1,6 @@
 ---
-title: BP_ERROR_TYPE |Microsoft Docs
+description: 指定中斷點的錯誤類型。
+title: BP_ERROR_TYPE |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b67b28c61624b73787dabe9fd24c4c39ff9b3c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced08f5bf4cd51a1f89f139fd19971e21e2225e6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853048"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144425"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
 指定中斷點的錯誤類型。

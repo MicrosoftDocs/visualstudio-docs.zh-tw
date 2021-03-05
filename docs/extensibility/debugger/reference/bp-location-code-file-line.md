@@ -1,5 +1,6 @@
 ---
-title: BP_LOCATION_CODE_FILE_LINE |Microsoft Docs
+description: 在程式碼原始程式檔中的特定行，包含中斷點位置的資料。
+title: BP_LOCATION_CODE_FILE_LINE |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 1a94425c86e59e360814df2053f003948af6e674
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ad3452e0fce6ec7339fe2d8e67a2aee4585828c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916272"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144386"
 ---
 # <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
 在程式碼原始程式檔中的特定行，包含中斷點位置的資料。

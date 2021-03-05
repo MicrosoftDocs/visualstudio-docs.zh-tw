@@ -1,5 +1,6 @@
 ---
-title: IDebugFunctionObject2：： CreateObject |Microsoft Docs
+description: 建立物件，該物件會使用指定的評估旗標設定和超時值的函式。
+title: IDebugFunctionObject2：： CreateObject |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 424599d322c2c8dd4db8ff4e19bab60eceaefc08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4cd5eb81972af35b84c688e34b8cbc285c4723c2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920994"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143138"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 建立物件，該物件會使用指定的評估旗標設定和超時值的函式。
