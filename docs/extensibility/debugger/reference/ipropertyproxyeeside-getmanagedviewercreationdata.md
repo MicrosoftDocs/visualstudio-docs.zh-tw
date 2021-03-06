@@ -1,5 +1,6 @@
 ---
-title: IPropertyProxyEESide：： GetManagedViewerCreationData |Microsoft Docs
+description: 抓取此屬性類型的檢視器相關資訊，以便具現化該檢視器。
+title: IPropertyProxyEESide：： GetManagedViewerCreationData |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee551ba78ceb91c2622af217d8863597e028be9d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f2d7d4ef3f35cb0ad00f91033213449af8cb7306
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896008"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224131"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 抓取此屬性類型的檢視器相關資訊，以便具現化該檢視器。

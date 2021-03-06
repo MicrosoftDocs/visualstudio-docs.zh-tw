@@ -1,5 +1,6 @@
 ---
-title: IDebugTypeFieldBuilder |Microsoft Docs
+description: 表示建立代表型別之欄位的能力。
+title: IDebugTypeFieldBuilder |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a94f3f88d85d1e74ce7b1d67e1ef3d44546132
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1bc4f58470792cac8bdb68ede4ddf37567bac208
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965690"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223104"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 表示建立代表型別之欄位的能力。

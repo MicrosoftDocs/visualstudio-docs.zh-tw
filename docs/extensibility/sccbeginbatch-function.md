@@ -1,5 +1,6 @@
 ---
-title: SccBeginBatch 函式 |Microsoft Docs
+description: 此函式會啟動原始檔控制作業的批次序列。
+title: SccBeginBatch 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e79a1203d97bfbf105a69b97516bda307825bd99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b52b82919b10e58772343aee42cb8723b10d6ca3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952131"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221648"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 函式
 此函式會啟動原始檔控制作業的批次序列。 將呼叫 [SccEndBatch](../extensibility/sccendbatch-function.md) 以結束批次。 這些批次可能不會被嵌套。

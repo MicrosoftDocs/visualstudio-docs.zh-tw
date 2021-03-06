@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugProcesses2：： Reset |Microsoft Docs
+description: 將進程列舉重設為第一個元素。
+title: IEnumDebugProcesses2：： Reset |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a82a70722adbfd281d08bf544fbfb038f253afd2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e812385425fa711b9bb0f2da57ba242c3031386b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883674"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224391"
 ---
 # <a name="ienumdebugprocesses2reset"></a>IEnumDebugProcesses2::Reset
 將列舉重設為第一個元素。

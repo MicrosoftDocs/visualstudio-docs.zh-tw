@@ -1,5 +1,6 @@
 ---
-title: METADATA_ADDRESS_PARAM |Microsoft Docs
+description: 此結構代表方法或函數的參數。
+title: METADATA_ADDRESS_PARAM |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dbb6e709ab1b6ee92ad9a27ed3061642665c7f39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3317981def12a72cf98dad850d5509bd3e64520a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938716"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222376"
 ---
 # <a name="metadata_address_param"></a>METADATA_ADDRESS_PARAM
 此結構代表方法或函數的參數。

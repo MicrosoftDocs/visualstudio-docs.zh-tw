@@ -1,5 +1,6 @@
 ---
-title: SccIsMultiCheckoutEnabled 函式 |Microsoft Docs
+description: 此函式會檢查原始檔控制外掛程式是否允許在檔案上進行多次簽出。
+title: SccIsMultiCheckoutEnabled 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 009bc5ba0bb307d0aaee78076266260aa5bb20ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 648b68f1575e31e81b6f12ca09abcb8e7305a985
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924814"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220556"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled 函式
 此函式會檢查原始檔控制外掛程式是否允許在檔案上進行多次簽出。

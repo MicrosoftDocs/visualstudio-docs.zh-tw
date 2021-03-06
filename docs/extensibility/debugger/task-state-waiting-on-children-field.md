@@ -1,5 +1,6 @@
 ---
-title: TASK_STATE_WAITING_ON_CHILDREN 欄位 |Microsoft Docs
+description: 工作已完成執行它的委派，並隱含地等候附加的子工作完成。
+title: TASK_STATE_WAITING_ON_CHILDREN 欄位 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 052b1dd454ca091b0d83becbd02909c7cd92d00e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1533ef28b32450d9b039c27e49ba655dddfd6ebe
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837459"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223197"
 ---
 # <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN 欄位
 工作已完成執行它的委派，並隱含地等候附加的子工作完成。
@@ -24,7 +25,7 @@ ms.locfileid: "99837459"
 
  **元件：** *mscorlib.dll*) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在一般中繼語言 (的 CIL) 中提供下列語法。
 
 ## <a name="syntax"></a>語法
 

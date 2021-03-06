@@ -1,5 +1,6 @@
 ---
-title: TASK_STATE_RAN_TO_COMPLETION 欄位 |Microsoft Docs
+description: 工作已成功完成執行。
+title: TASK_STATE_RAN_TO_COMPLETION 欄位 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8eedfba005848dbb44d194a6210966ec0fda736
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f4963b257f5c53336660274da1a99736411c2e8
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968537"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223198"
 ---
 # <a name="task_state_ran_to_completion-field"></a>TASK_STATE_RAN_TO_COMPLETION 欄位
 工作已成功完成執行。
@@ -24,7 +25,7 @@ ms.locfileid: "99968537"
 
  **元件：** *mscorlib.dll*) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在一般中繼語言 (的 CIL) 中提供下列語法。
 
 ## <a name="syntax"></a>語法
 

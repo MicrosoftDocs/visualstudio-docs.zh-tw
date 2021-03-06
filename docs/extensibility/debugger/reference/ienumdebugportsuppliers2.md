@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugPortSuppliers2 |Microsoft Docs
+description: 此介面會列舉埠供應商。
+title: IEnumDebugPortSuppliers2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: edff2cad101a6a6f0f19a4b384b8f2398b98b2e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 893135291be3126055fa139dacaf3cc12141d8f4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883736"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224482"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 此介面會列舉埠供應商。
@@ -29,7 +30,7 @@ IEnumDebugPortSuppliers2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
- Visual Studio 會執行此介面來代表埠供應商的清單。
+ Visual Studio 會執行這個介面，以代表埠供應商的清單。
 
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  呼叫 [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) 來取得埠供應商的清單。

@@ -1,5 +1,6 @@
 ---
-title: DA0005-頻繁的 GC2 集合 |Microsoft Docs
+description: 數量高的 .NET 記憶體物件正在層代 2 記憶體回收中收回。
+title: DA0005-頻繁的 GC2 集合 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fd27843ade6217f0b465645fed4b0abfaf9365e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73b24eba94791a9a24b80898fb7333665ed13caf
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937663"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221024"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005：常見的 GC2 集合
 

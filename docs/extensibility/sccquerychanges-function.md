@@ -1,5 +1,6 @@
 ---
-title: SccQueryChanges 函式 |Microsoft Docs
+description: 此函式會列舉指定的檔案清單，並透過回呼函數提供每個檔案的名稱變更相關資訊。
+title: SccQueryChanges 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd69183b290fa194d87dff79d69596dd65ec19ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e34c37ca999b05e7148d910032fe90c33470ce50
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836718"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220517"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函式
 此函式會列舉指定的檔案清單，並透過回呼函數提供每個檔案的名稱變更相關資訊。

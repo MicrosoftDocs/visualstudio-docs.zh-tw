@@ -1,5 +1,6 @@
 ---
-title: '&lt;&gt;在 Visual Studio) 中 (Office 開發的 e 元素'
+description: Vstav3 命名空間的 e 元素包含與 Office 方案相關聯的所有 entryPoint 元素。
+title: '&lt;&gt;Visual Studio) 中 (Office 開發的 e 元素'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0cd5b49183bc4754e894caf898f6ca6a0c0e5440
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 481c67302c84ce08f60c571eb17084b96c0322bd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910465"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223169"
 ---
-# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 開發的 e 元素
+# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio) 中 (Office 開發的 e 元素
   `entryPoints` 命名空間的 `vstav3` 項目包含與 Office 方案相關聯的所有 `entryPoint` 項目。
 
 ## <a name="syntax"></a>Syntax
@@ -49,11 +50,11 @@ ms.locfileid: "99910465"
  `entryPoints` 具有下列項目。
 
 ### <a name="entrypoint"></a>entryPoint
- 必要。 `entryPoint`命名空間中專案的角色 `vstav3` 會在&#60;entryPoint&#62; 專案中定義， [&#40;Visual Studio&#41;中的 Office 程式開發](../vsto/entrypoint-element-office-development-in-visual-studio.md)。
+ 必要。 `entryPoint`命名空間中專案的角色 `vstav3` 是在[Visual Studio&#41;中 &#40;Office 程式開發的&#60;entryPoint&#62; 元素](../vsto/entrypoint-element-office-development-in-visual-studio.md)中定義。
 
 ## <a name="document-level-customization-example"></a>檔層級自訂範例
 
-### <a name="description"></a>Description
+### <a name="description"></a>描述
  下列程式碼範例說明使用 `entryPoints` 所部署之文件層級方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
@@ -97,7 +98,7 @@ ms.locfileid: "99910465"
 
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例
 
-### <a name="description"></a>Description
+### <a name="description"></a>描述
  下列程式碼範例說明使用 `entryPoints` 所部署之應用程式層級方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼
@@ -117,7 +118,7 @@ ms.locfileid: "99910465"
 
 ## <a name="multi-project-deployment-example"></a>多專案部署範例
 
-### <a name="description"></a>Description
+### <a name="description"></a>描述
  下列程式碼範例說明多專案部署的應用程式資訊清單中的 `entryPoints` 項目。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼

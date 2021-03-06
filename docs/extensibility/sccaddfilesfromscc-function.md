@@ -1,5 +1,6 @@
 ---
-title: SccAddFilesFromSCC 函式 |Microsoft Docs
+description: 此函式會將檔案清單從原始檔控制加入目前開啟的專案。
+title: SccAddFilesFromSCC 函式 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c230d1dae4b6ff9552a8ff464d3128eac9be1482
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27b695b2777aa32f77d49ced7b74436ce870df80
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926842"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220972"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 函式
 此函式會將檔案清單從原始檔控制加入目前開啟的專案。

@@ -1,5 +1,6 @@
 ---
-title: METADATA_ADDRESS_METHOD |Microsoft Docs
+description: 此結構代表類別方法的位址。
+title: METADATA_ADDRESS_METHOD |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 26de14b4c5e23334da85d49d5192ec332e418af8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4c79aa9e7592417ba3f42d86137908c350681eb8
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961920"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222389"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
 此結構代表類別方法的位址。

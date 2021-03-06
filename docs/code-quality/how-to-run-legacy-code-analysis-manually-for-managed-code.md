@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45f201e2c647a1b1074585d59c7618e1ddeb9084
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f214ac47ad3d831432b91652c5bbe3249ce5f1c5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859992"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223481"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>如何：針對 managed 程式碼手動執行舊版程式碼分析
 
@@ -25,12 +25,12 @@ ms.locfileid: "99859992"
 
 ## <a name="to-run-code-analysis-manually"></a>手動執行程式碼分析
 
-1. 如果您是在 Visual Studio 2019 16.5 版或更新版本上，請在命令提示字元上執行下列命令，然後再啟動 Visual Studio：
+1. 如果您是在 Visual Studio 2019 16.5 版或更新版本上，請在啟動 Visual Studio 之前，在命令提示字元上執行下列命令：
 
 ```
-set EnableLegacyCodeAnalysis = true
+setx EnableLegacyCodeAnalysis true
 ```
 
-2. 在 **方案總管** 中，按一下專案。
+2. 在 [ **方案 Explorer**] 中，按一下專案。
 
 3. 在 [**分析**] 功能表上，按一下 [針對 *專案名稱***執行程式碼分析**]。

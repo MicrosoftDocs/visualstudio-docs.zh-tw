@@ -1,5 +1,6 @@
 ---
-title: PROVIDER_PROCESS_DATA |Microsoft Docs
+description: 此結構提供在電腦上執行之處理常式的相關資訊。
+title: PROVIDER_PROCESS_DATA |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5845ce7f512a24d341f73afa9f9905339dda87cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f49ef1c2990fe578738356cbe5db19cbc1c159ab
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922972"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221974"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 此結構提供在電腦上執行之處理常式的相關資訊。

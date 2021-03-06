@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9d6b4dd8bd21da7fcfc4d7cde54e5f5a7926472e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 65785384746fa3f16dd25f0405e5ead45c553c21
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165718"
+ms.locfileid: "102221154"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -81,6 +81,9 @@ ms.locfileid: "102165718"
 - [設定組建屬性](#set-a-build-property)
 
 #### <a name="autodetect-the-run-settings-file"></a>自動偵測回合設定檔
+
+> [!NOTE]
+> 這只適用于名為的檔案 `.runsettings` 。
 
 若要自動偵測回合設定檔，請將它放在解決方案的根目錄中。
 

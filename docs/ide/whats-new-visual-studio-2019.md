@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bdbad2633136ead7cfe04a1ef82e3cc9db587212
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8371b9baa22b72eff0c829426b1b39bcf42398f2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151411"
+ms.locfileid: "102221180"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -57,7 +57,7 @@ ms.locfileid: "102151411"
 
 #### <a name="intelligent-search-service"></a>智慧型搜尋服務
 
-**16.9 的新** 功能：使用雲端技術、人工智慧和機器學習服務，我們已改善搜尋結果。 Visual Studio 中的搜尋不僅更相關，還可協助您更輕鬆地探索產品功能。
+**16.9 的新** 功能：使用雲端技術、人工智慧和機器學習服務，我們已改善搜尋結果。 現在，Visual Studio 中的搜尋不僅會產生更多相關的結果，還可協助您更輕鬆地探索產品功能。
 
 如需詳細資訊，請參閱 [智慧型 Visual Studio 搜尋服務](https://devblogs.microsoft.com/visualstudio/intelligent-visual-studio-search-service/) 的 blog 文章。
 

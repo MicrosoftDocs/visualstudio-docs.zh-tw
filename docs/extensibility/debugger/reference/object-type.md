@@ -1,5 +1,6 @@
 ---
-title: OBJECT_TYPE |Microsoft Docs
+description: 從運算式評估工具指定物件的類型。
+title: OBJECT_TYPE |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad51e8db72cba874d35f66c9759fb970ffff2716
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3add4d46a258eb7e6c107f8d2eb16f7cd84ba919
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911715"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222155"
 ---
 # <a name="object_type"></a>Object_Type
 從運算式評估工具指定物件的類型。

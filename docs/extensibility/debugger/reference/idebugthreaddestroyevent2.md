@@ -1,5 +1,6 @@
 ---
-title: IDebugThreadDestroyEvent2 |Microsoft Docs
+description: 此介面是由偵錯工具引擎傳送 (當執行緒已執行完成時，將) 還原為會話 debug manager (SDM) 。
+title: IDebugThreadDestroyEvent2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d8c349ab867fda76ffbade0c92aa31489321061
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48390b220a1398e712af494a6d0f21024f659f49
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888182"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223117"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 此介面是由偵錯工具引擎傳送 (當執行緒已執行完成時，將) 還原為會話 debug manager (SDM) 。
@@ -42,7 +43,7 @@ IDebugThreadDestroyEvent2 : IUnknown
 |[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|取得執行緒的結束代碼。|
 
 ## <a name="remarks"></a>備註
- Visual Studio 使用此事件來更新 [ **執行緒** ] 視窗。
+ Visual Studio 會使用此事件來更新 [ **執行緒** ] 視窗。
 
 ## <a name="requirements"></a>規格需求
  標頭： msdbg。h

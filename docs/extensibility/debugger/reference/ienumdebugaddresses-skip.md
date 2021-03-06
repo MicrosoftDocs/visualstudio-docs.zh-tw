@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugAddresses：： Skip |Microsoft Docs
+description: 這個方法會略過位址列舉中指定的元素數目。
+title: IEnumDebugAddresses：： Skip |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b0921d2b65aedb94c15c66ad878aa66bff73dbe2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ae1b23c28f98d90649e701b7ff96b2394a9894b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923043"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222649"
 ---
 # <a name="ienumdebugaddressesskip"></a>IEnumDebugAddresses::Skip
 這個方法會略過指定的元素數目。

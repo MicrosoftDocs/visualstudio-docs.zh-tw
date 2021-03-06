@@ -1,4 +1,5 @@
 ---
+description: 取得要在進行偵錯工具時自動插入的 Office 相關應用程式的相關資訊。
 title: GetAutoInsertExtensions 方法
 ms.date: 02/02/2017
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 24fd5768a9eafa4a023aeabf21c862ea1a0d1891
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c4a49942f50a79db604d2363cf2d85762c5ddce5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931522"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223429"
 ---
 # <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions 方法
   取得要在進行偵錯工具時自動插入的 Office 相關應用程式的相關資訊。
@@ -32,7 +33,7 @@ HRESULT GetAutoInsertExtensions(
 
 ### <a name="parameters"></a>參數
 
-|參數|Description|
+|參數|描述|
 |---------------|-----------------|
 |*psaExtensionNames*|適用于 Office 的應用程式延伸模組名稱。|
 

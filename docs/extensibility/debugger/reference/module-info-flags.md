@@ -1,5 +1,6 @@
 ---
-title: MODULE_INFO_FLAGS |Microsoft Docs
+description: 指定模組的符號狀態。
+title: MODULE_INFO_FLAGS |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4856588a0ca5644317aba6a61d270b390d955b73
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 158cc849e32fc0177b784c8898ec83fe58008f60
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961868"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222337"
 ---
 # <a name="module_info_flags"></a>MODULE_INFO_FLAGS
 指定模組的符號狀態。
