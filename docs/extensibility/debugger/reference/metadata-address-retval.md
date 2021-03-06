@@ -1,5 +1,6 @@
 ---
-title: METADATA_ADDRESS_RETVAL |Microsoft Docs
+description: 此結構代表方法或函數的傳回值。
+title: METADATA_ADDRESS_RETVAL |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ec357bcc21cb3f7cd8f4f9eaa8318c4b0deb1d42
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d727771128e161eed77bf78091c8e0dadcc20ee6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961894"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225547"
 ---
 # <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
 此結構代表方法或函數的傳回值。
@@ -50,7 +51,7 @@ public struct METADATA_ADDRESS_RETVAL {
  這個傳回值適用之方法的識別碼。
 
  `dwCorType`\
- 傳回值的基底類型。 這是 `CorElementType` .NET FRAMEWORK SDK corhdr.h .h 檔案中定義之列舉的值。
+ 傳回值的基底類型。 這是來自 `CorElementType` .Net FRAMEWORK SDK corhdr.h .h 檔案中定義之列舉的值。
 
  `dwSigSize`\
  傳回值簽章的大小 (儲存在) 中 `rgSig` 。

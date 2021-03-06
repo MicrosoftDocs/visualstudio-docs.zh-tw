@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugReferenceInfo2：： GetCount |Microsoft Docs
+description: 傳回列舉中 DEBUG_REFERENCE_INFO 元素的數目。
+title: IEnumDebugReferenceInfo2：： GetCount |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e087992cd5b2d5ac29b4f987d2c29dbf0e9006e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6756426e6ed668860a743c87964014fff3bc7f79
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967718"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225977"
 ---
 # <a name="ienumdebugreferenceinfo2getcount"></a>IEnumDebugReferenceInfo2::GetCount
 傳回列舉中的元素數目。

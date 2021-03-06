@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugBoundBreakpoints2 |Microsoft Docs
+description: 這個介面會列舉與暫止中斷點或中斷點系結事件相關聯的系結中斷點。
+title: IEnumDebugBoundBreakpoints2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d52aad69397be315cf9c06b5f49a2c55d2fce28
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e861465e2abf18a42af75d420dc58075d19ff253
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929520"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224989"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
 這個介面會列舉與暫止中斷點或中斷點系結事件相關聯的系結中斷點。
@@ -32,7 +33,7 @@ IEnumDebugBoundBreakpoints2 : IUnknown
  Debug engine (DE) 在它支援中斷點的過程中，執行這個介面。 如果支援中斷點，就必須執行這個介面。
 
 ## <a name="notes-for-callers"></a>呼叫者注意事項
- Visual Studio 呼叫：
+ Visual Studio 會呼叫：
 
 - [EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) ，以取得這個介面，代表已觸發的所有中斷點的清單。
 
@@ -52,7 +53,7 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|取得列舉值中系結中斷點的數目。|
 
 ## <a name="remarks"></a>備註
- Visual Studio 使用由此介面表示的系結中斷點來更新 IDE 中中斷點的顯示。
+ Visual Studio 會使用由此介面表示的系結中斷點，來更新 IDE 中中斷點的顯示。
 
 ## <a name="requirements"></a>規格需求
  標頭： msdbg。h

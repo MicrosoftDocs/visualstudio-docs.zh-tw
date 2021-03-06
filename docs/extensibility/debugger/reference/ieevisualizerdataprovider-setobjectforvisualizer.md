@@ -1,5 +1,6 @@
 ---
-title: IEEVisualizerDataProvider：： SetObjectForVisualizer |Microsoft Docs
+description: 這個方法會變更視覺化程式所代表的物件。
+title: IEEVisualizerDataProvider：： SetObjectForVisualizer |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50d68b5cdb7399dc391ef90150f0b6a156783301
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: df5cfd2acef1a2214d4692a49c742c26cd420ffa
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890834"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227225"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 這個方法會變更視覺化程式所代表的物件。

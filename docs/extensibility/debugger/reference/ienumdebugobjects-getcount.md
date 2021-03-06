@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugObjects：： GetCount |Microsoft Docs
+description: 這個方法會傳回列舉中 IDebugObject 元素的數目。
+title: IEnumDebugObjects：： GetCount |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f657bdeeb8f4f355bc8a6cafaaf79b1218dbbc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54247fd49792b0a0ce5ed3218429b97b0ccdfcbf
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890769"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224677"
 ---
 # <a name="ienumdebugobjectsgetcount"></a>IEnumDebugObjects::GetCount
 這個方法會傳回列舉中的元素數目。

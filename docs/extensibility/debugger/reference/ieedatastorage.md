@@ -1,5 +1,6 @@
 ---
-title: IEEDataStorage |Microsoft Docs
+description: 此介面代表位元組陣列。
+title: IEEDataStorage |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbec27d262e43cb0fcdf8317725ad3c77a1817eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9434138114f2b4b0615e20c1b556ff6387c715de
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966431"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227329"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 此介面代表位元組陣列。

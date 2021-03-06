@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugThreads2：： Clone |Microsoft Docs
+description: 傳回目前線程列舉的複本，做為個別的物件。
+title: IEnumDebugThreads2：： Clone |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f19c95e57ee1ae949573fcd0d4460d8c11ed72bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b934bbf6e358296c433a1a59fe675f376d1491ac
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842169"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225834"
 ---
 # <a name="ienumdebugthreads2clone"></a>IEnumDebugThreads2::Clone
 傳回目前列舉的複本作為個別的物件。

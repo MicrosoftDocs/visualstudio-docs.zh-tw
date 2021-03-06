@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugReferenceInfo2：： Reset |Microsoft Docs
+description: 將列舉重設為第一個 DEBUG_REFERENCE_INFO 元素。
+title: IEnumDebugReferenceInfo2：： Reset |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4e1465d3007896e0361612c8bdc60a9f53282c25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2cdb977b66fb4be8dd6c378c77cfeefd5e19f18
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926920"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225808"
 ---
 # <a name="ienumdebugreferenceinfo2reset"></a>IEnumDebugReferenceInfo2::Reset
 將列舉重設為第一個元素。

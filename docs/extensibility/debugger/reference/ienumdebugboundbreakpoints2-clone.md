@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugBoundBreakpoints2：： Clone |Microsoft Docs
+description: 傳回目前系結中斷點列舉的複本，做為個別的物件。
+title: IEnumDebugBoundBreakpoints2：： Clone |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e91efb24fec454b509d64decb6b9fd3954c1c9d9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b08b3af3c2a1744613f29968d72ef971de93c3e3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875779"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225002"
 ---
 # <a name="ienumdebugboundbreakpoints2clone"></a>IEnumDebugBoundBreakpoints2::Clone
 傳回目前列舉的複本作為個別的物件。

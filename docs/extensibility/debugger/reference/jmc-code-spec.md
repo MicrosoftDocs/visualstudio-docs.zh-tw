@@ -1,5 +1,6 @@
 ---
-title: JMC_CODE_SPEC |Microsoft Docs
+description: 此結構是用來設定模組的 JustMyCode 資訊。
+title: JMC_CODE_SPEC |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0ca5fd553d94fdf866424b4cd0dc2b2a5fdb094
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c862a2897b45d89f95963ce7adfe2da8d4d350f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962102"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225561"
 ---
 # <a name="jmc_code_spec"></a>JMC_CODE_SPEC
 此結構是用來設定模組的 JustMyCode 資訊。

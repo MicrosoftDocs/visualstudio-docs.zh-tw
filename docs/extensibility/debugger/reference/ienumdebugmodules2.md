@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugModules2 |Microsoft Docs
+description: 此介面會列舉模組清單。
+title: IEnumDebugModules2 |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfcd594ab8764cedb8cbe2ea312675f884ae2338
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33853804078d5f32aba6fda6dac409cf2a24de0a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957149"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224755"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 此介面會列舉模組清單。
@@ -46,9 +47,9 @@ IEnumDebugModules2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|取得模組的數目。|
 
 ## <a name="remarks"></a>備註
- Visual Studio 使用此介面主要是用來更新 **模組** 視窗。
+ Visual Studio 會使用此介面，主要是用來更新 **模組** 視窗。
 
- 為了在 Visual Studio 中進行偵錯工具，程式是程式碼指令的邏輯序列，可以跨模組界限，因此需要單一 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 介面的模組清單。 清單中的第一個模組通常包含相關程式的初始進入點。
+ 基於在 Visual Studio 中進行偵錯工具的目的，程式是可以跨模組界限的程式碼指令邏輯順序，因此需要單一 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 介面的模組清單。 清單中的第一個模組通常包含相關程式的初始進入點。
 
 ## <a name="requirements"></a>規格需求
  標頭： msdbg。h

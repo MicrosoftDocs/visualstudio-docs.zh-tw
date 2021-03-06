@@ -1,5 +1,6 @@
 ---
-title: IPropertyProxyProvider |Microsoft Docs
+description: 這個介面會提供 proxy 介面，以查看及變更物件的資料。
+title: IPropertyProxyProvider |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6082b06e6235a93b0e198d973b40efb728bd815
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d8d92f6d616d86b82a9f4efa443f459a082256e
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962128"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225535"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 這個介面會提供 proxy 介面，以查看及變更物件的資料。

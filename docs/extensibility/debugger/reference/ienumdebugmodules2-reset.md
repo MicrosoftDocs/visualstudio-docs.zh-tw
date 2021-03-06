@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugModules2：： Reset |Microsoft Docs
+description: 將模組列舉重設為第一個元素。
+title: IEnumDebugModules2：： Reset |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fdc98e9ac2d545670fde240cea914be9108b8f0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a395a31b029b0d6a63eda670b10cbe8d4132b5b2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956252"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224716"
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
 將列舉重設為第一個元素。

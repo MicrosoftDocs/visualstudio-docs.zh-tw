@@ -1,18 +1,18 @@
 ---
-title: Visual Studio Visual 雲端訂用帳戶的計費常見問題 |Microsoft Docs
+title: Visual Studio Visual 雲端訂用帳戶的計費常見問題 |Microsoft 檔
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 02/04/2021
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: 雲端訂用帳戶帳單問題。
-ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: 2c03871d11279b7c368ebd0c7012670fc92c9ee0
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572872"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249722"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 雲端訂閱帳單常見問題集
 請務必[比較雲端訂閱權益和定價](https://visualstudio.microsoft.com/vs/pricing/)，利用雲端與標準 Visual Studio 訂閱之間的比較、訂閱者權益的詳細資料以及其他更多，了解每個 Visual Studio 訂用帳戶的權益。
@@ -56,7 +56,7 @@ ms.locfileid: "99572872"
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>問：雲端訂閱的 **年度訂閱** 如何收費？
 答：每單購買都是立即按購買的完整數量計價。 費用不會分散到一整年，也不會按比例分配。 如果您在一年的不同時間分次購買年度的雲端訂閱，您必須在不同的月份續約訂閱。 我們不會將客戶所有的年度雲端訂閱連在一起，雖然這在 Microsoft 大量授權合約購買中很常見。
 
-### <a name="q-how-do-cancelations-work"></a>問：取消如何運作？
+### <a name="q-how-do-cancellations-work"></a>問：取消如何運作？
 答：當您取消 Visual Studio 雲端訂閱時，您即取消自動續約。 訂閱保持有效直至其正常的續約日期，然後就到期。
 到期時，Visual Studio 訂閱者即無法再使用 Visual Studio 或來自訂用帳戶的任何其他權益。
 
@@ -77,11 +77,11 @@ ms.locfileid: "99572872"
 而且，折扣僅適用於指定的月租方案計費期費用。 因此，如果您在一個月內購買了 5 個 Visual Studio Professional 訂用帳戶的年度訂閱，然後在次月又購買了 5 個，則所有 10 個訂用帳戶都要支付一般價格。
 
 > [!NOTE]
-> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶前往以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
 
 ## <a name="other-questions"></a>其他問題
-### <a name="q-can-i-use-the-monthly-azure-devtest-individual-credit-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>問：我可以使用每月 Azure DevTest 個別點數作為 Visual Studio 的訂閱者，以購買更 Visual Studio 的雲端訂用帳戶嗎？
-答：否，您無法使用您的 [每月 Azure DevTest 個別點數](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) 作為 Visual Studio 訂閱者來支付 Visual Studio Marketplace 購買費用。 任何 Visual Studio 雲端訂閱購買都會計入您的信用卡帳單。
+### <a name="q-can-i-use-the-monthly-azure-devtest-individual-credit-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>問：我可以使用每月 Azure DevTest 個別點數作為 Visual Studio 訂閱者來購買更多 Visual Studio 雲端訂閱嗎？
+答：否，您無法使用您的 [每月 Azure DevTest 個別點數](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) 作為 visual studio 訂閱者來支付 Visual studio Marketplace 購買費用。 任何 Visual Studio 雲端訂閱購買都會計入您的信用卡帳單。
 進行採購之前，您必須[移除您的消費限制](https://azure.microsoft.com/pricing/spending-limits/)。
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>問：雲端訂閱的年度訂閱和月租方案有何差異？
@@ -92,7 +92,10 @@ ms.locfileid: "99572872"
 答：可以。 發行新版本時，您可以下載並執行它們。 而且您也可以繼續執行舊版。
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>問：是否可以向軟體經銷商購買 Visual Studio 雲端訂閱？
-答：可以，如果您的轉銷商參與雲端解決方案提供者 (CSP) 方案。 詢問他們即可。
+答：可以，如果您的轉銷商參與雲端解決方案提供者 (CSP) 計畫。 詢問他們即可。
+
+### <a name="q-where-can-i-find-information-about-azure-invoices"></a>問：哪裡可以找到有關 Azure 發票的資訊？
+答：請參閱[azure 檔](/azure/)中的[瞭解您的 azure 發票](https://docs.microsoft.com/azure/cost-management-billing/understand/understand-invoice)文章。
 
 ## <a name="related-resources"></a>相關資源
 - [Visual Studio 訂閱系統管理員入口網站](https://manage.visualstudio.com/)
@@ -107,5 +110,5 @@ ms.locfileid: "99572872"
 
 ## <a name="next-steps"></a>下一步
 立即購買雲端訂閱
-- [每月 Visual Studio Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
-- [每月 Visual Studio Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
+- [Visual Studio Professional 每月](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
+- [Visual Studio Enterprise 每月](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)

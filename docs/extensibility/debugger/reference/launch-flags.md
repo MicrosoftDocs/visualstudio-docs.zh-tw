@@ -1,5 +1,6 @@
 ---
-title: LAUNCH_FLAGS |Microsoft Docs
+description: 指定 debug 啟動旗標。
+title: LAUNCH_FLAGS |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e2457f6e18af75a515c0e27889ffecea521670db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e53cb955cda833d2172ed369e5573f257082b08
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962089"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225522"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
 指定 debug 啟動旗標。

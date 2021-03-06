@@ -1,5 +1,6 @@
 ---
-title: IPropertyProxyEESide：： ResolveAssemblyRef |Microsoft Docs
+description: 判斷指定之 managed 元件參考的位置。
+title: IPropertyProxyEESide：： ResolveAssemblyRef |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc14d3aff5116f7bfb18244f39d14ec2dbbd37f1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 687ca5922cc59322c37b7b391a9b5f40d52c14ad
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895956"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225574"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 判斷指定之 managed 元件參考的位置。

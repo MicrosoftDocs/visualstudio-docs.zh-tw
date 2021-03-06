@@ -1,5 +1,6 @@
 ---
-title: IEnumDebugCustomAttributes：： Clone |Microsoft Docs
+description: 建立包含與目前自訂屬性列舉值相同列舉狀態的列舉值。
+title: IEnumDebugCustomAttributes：： Clone |Microsoft 檔
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1680c2e68a72c985236e501281100fa4e8b7d1f7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d4b1efc9df3988cc921a4ac68a82c3ed0bfe18af
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929377"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224937"
 ---
 # <a name="ienumdebugcustomattributesclone"></a>IEnumDebugCustomAttributes::Clone
 建立包含與目前列舉值相同列舉狀態的列舉值。
