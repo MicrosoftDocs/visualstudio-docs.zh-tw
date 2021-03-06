@@ -11,12 +11,12 @@ manager: jmartens
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1b4eabfe35671b3cda0e2df71163b7c91695b264
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: a364289ded27879c74767f03e89b9ea7b9f604fc
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683073"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249894"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Visual Studio 遠端 IIS 電腦上的遠端 Debug ASP.NET Core
 
@@ -129,10 +129,17 @@ ms.locfileid: "101683073"
 
 應用程式部署成功之後，它應該會自動啟動。 如果應用程式不是從 Visual Studio 啟動，請在 IIS 中啟動應用程式，以確認它是否正確執行。 針對 ASP.NET Core，您也必須確定 **DefaultAppPool** 的 [應用程式集區] 欄位設定為 [ **沒有 Managed 程式碼**]。
 
-1. 在 [**設定**] 對話方塊中，按一下 [**下一步]** 來啟用偵錯工具，選擇 **調試** 程式設定，然後選擇 [檔案 **發行** 選項] 下的 [**移除目的地的其他** 檔案]。
+1. 切換至 debug 設定。
 
-    > [!IMPORTANT]
-    > 如果您選擇發行設定，就會在發行時停用 *web.config* 檔案中的調試。
+   ::: moniker range=">=vs-2019"
+   選擇 [ **編輯** ] 以編輯設定檔，然後選擇 [ **設定**]。 選擇 [ **Debug** ] 設定，然後選擇 [檔案 **發行** 選項] 下的 [**移除目的地的其他** 檔案]。
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   在 [**設定**] 對話方塊中，按一下 [**下一步]** 來啟用偵錯工具，選擇 **調試** 程式設定，然後選擇 [檔案 **發行** 選項] 下的 [**移除目的地的其他** 檔案]。
+   ::: moniker-end
+
+   > [!IMPORTANT]
+   > 如果您選擇發行設定，就會在發行時停用 *web.config* 檔案中的調試。
 
 1. 按一下 [ **儲存** ]，然後重新發佈應用程式。
 
@@ -150,13 +157,13 @@ ms.locfileid: "101683073"
 
 4. 選取 [ **預設的網站**]，選擇 [ **基本設定**]，並將 [ **實體路徑** ] 設定為 [ **C:\Publish**]。
 
-4. 以滑鼠右鍵按一下 [預設的網站]  節點，並選取 [加入應用程式] 。
+5. 以滑鼠右鍵按一下 [預設的網站]  節點，並選取 [加入應用程式] 。
 
-5. 將 [ **別名** ] 欄位設定為 **MyASPApp**、接受預設的應用程式集區 (**DefaultAppPool**) ，然後將 **實體路徑** 設定為 **C:\Publish**。
+6. 將 [ **別名** ] 欄位設定為 **MyASPApp**、接受預設的應用程式集區 (**DefaultAppPool**) ，然後將 **實體路徑** 設定為 **C:\Publish**。
 
-6. 在 [ **連接**] 底下，選取 [ **應用程式** 集區]。 開啟 **DefaultAppPool** ，並將 [應用程式集區] 欄位設定為 [ **沒有 Managed 程式碼**]。
+7. 在 [ **連接**] 底下，選取 [ **應用程式** 集區]。 開啟 **DefaultAppPool** ，並將 [應用程式集區] 欄位設定為 [ **沒有 Managed 程式碼**]。
 
-7. 在 [IIS 管理員] 中的新網站上按一下滑鼠右鍵，選擇 [ **編輯許可權**]，並確定 [IUSR]、[IIS_IUSRS] 或設定為存取 web 應用程式的使用者，都是具有 [讀取] & [執行] 許可權的授權使用者。
+8. 在 [IIS 管理員] 中的新網站上按一下滑鼠右鍵，選擇 [ **編輯許可權**]，並確定 [IUSR]、[IIS_IUSRS] 或設定為存取 web 應用程式的使用者，都是具有 [讀取] & [執行] 許可權的授權使用者。
 
     如果您沒有看到其中一個使用者具有存取權，請執行下列步驟，將 IUSR 新增為具有 Read & Execute 許可權的使用者。
 

@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/03/2021
 ms.topic: conceptual
 description: 使用 GitHub Enterprise 管理 Visual Studio 訂用帳戶中的訂閱
-ms.openlocfilehash: d1734e3f416815b9c63f7237eca4e7df26e34331
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5837ec33e6f17f0970178a0f1b306960e9c42668
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159551"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249698"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>管理含 GitHub Enterprise 的 Visual Studio 訂閱
 具有 Microsoft 的 Enterprise 合約 (EA) 的客戶有資格購買新的訂用帳戶供應專案，以整合 Visual Studio 標準訂閱和 GitHub Enterprise。 Visual Studio 訂閱者若想取得 GitHub Enterprise，這是個既簡單又經濟實惠的方法。 
@@ -72,8 +72,8 @@ GitHub 以雲端式 GitHub.com 或內部部署 GitHub Enterprise Server 的形�
 - 深入[瞭解 github 檔的 github](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)指派
 - 在 [github](https://help.github.com/en)說明的廣泛 github 主題中尋找問題的答案。
 - 在 [GitHub Community Forum](https://github.community/) (GitHub 社群論壇) 可以獲得其他 GitHub 使用者的協助。
-- 如需有關銷售、訂用帳戶、帳戶及 Visual Studio 訂用帳戶計費的協助，請洽詢 [Visual studio 管理與訂閱支援](https://my.visualstudio.com/gethelp)。
-- 有關于 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題嗎？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+- 如需有關銷售、訂用帳戶、帳戶及 Visual Studio 訂用帳戶計費的協助，請聯絡 [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 - 取得 GitHub Enterprise 的[技術支援](https://support.microsoft.com/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 
 ## <a name="see-also"></a>另請參閱

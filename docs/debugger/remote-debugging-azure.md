@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: d41beea47e8173170ea2d428b40bd7c7ed8ff67e
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 619f1f1cc99cbab425bc1bcb2bac181e09db8fc4
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684158"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250054"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Visual Studio 中 Azure 上 IIS 的遠端 Debug ASP.NET Core
 
@@ -79,13 +79,23 @@ ms.locfileid: "101684158"
 
 1. 在 Visual Studio 中，以滑鼠右鍵按一下專案節點，然後選擇 [ **發行**]。
 
-    如果您之前已設定任何發行設定檔，[發行] 窗格會隨即出現。 按一下 [ **新增設定檔**]。
+    如果您之前已設定任何發行設定檔，[發行] 窗格會隨即出現。 選取 [ **新增** ] 或 [ **新增設定檔**]。
 
-1. 從 [**發行**] 對話方塊中選擇 [ **Azure App Service** ]，選取 [**建立新** 的]，並遵循提示來建立設定檔。
+1. 建立新的發行設定檔。
 
-    如需詳細指示，請參閱[使用 Visual Studio 將 ASP.NET Core Web 應用程式部署至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
+    ::: moniker range=">=vs-2019"
+    從 [**發行**] 對話方塊中選擇 [ **Azure** ]，然後選取 **[下一步]**。 然後，選擇 [ **Azure App Service (Windows)**]，然後選取 [ **下一步]**，並遵循提示來建立設定檔。
+
+    :::image type="content" source="../debugger/media/vs-2019/remotedbg-azure-app-service-profile.png" alt-text="使用 Visual Studio 將 ASP.NET Core Web 應用程式部署至 Azure":::
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+
+    從 [**發行**] 對話方塊中選擇 [ **Azure App Service** ]，選取 [**建立新** 的]，並遵循提示來建立設定檔。
 
     ![發佈至 Azure App Service](../debugger/media/remotedbg_azure_app_service_profile.png)
+    ::: moniker-end
+
+    如需更詳細的指示，請參閱 [使用 Visual Studio 將 ASP.NET Core web 應用程式部署到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 
 1. 在 [發行] 視窗中，選擇 [ **編輯** 設定] 並切換至調試設定，然後選擇 [ **發行**]。
 
@@ -106,6 +116,7 @@ ms.locfileid: "101684158"
 您可以建立適用于 Windows Server 的 Azure VM，然後安裝及設定 IIS 和其他所需的軟體元件。 這比部署至 Azure App Service 需要更多時間，而且需要您遵循本教學課程中的其餘步驟。
 
 這些程式已經過這些伺服器設定的測試：
+
 * Windows Server 2012 R2 和 IIS 8
 * Windows Server 2016 和 IIS 10
 * Windows Server 2019 和 IIS 10
@@ -143,7 +154,7 @@ ms.locfileid: "101684158"
     > [!NOTE]
     > 如果系統沒有網際網路連線，請先取得並安裝 *[Microsoft Visual c + + 2015](https://www.microsoft.com/download/details.aspx?id=53840)* 可轉散發套件，再安裝 .Net Core Windows Server 裝載套件組合。
 
-3. 重新開機系統 (或執行 **net stop was/y** ，然後從命令提示字元執行 **net start w3svc** ，以挑選系統路徑的變更) 。
+2. 重新開機系統 (或執行 **net stop was/y** ，然後從命令提示字元執行 **net start w3svc** ，以挑選系統路徑的變更) 。
 
 ## <a name="choose-a-deployment-option"></a>選擇部署選項
 

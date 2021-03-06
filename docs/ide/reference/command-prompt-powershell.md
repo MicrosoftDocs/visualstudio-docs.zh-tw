@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 2500a540a4135517c65736d7a0f3d039c90cc71e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 406ef4e7d475df82a0e36732dd5e777959ea3b96
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168846"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249751"
 ---
 # <a name="developer-command-prompt-and-developer-powershell"></a>開發人員命令提示字元和開發人員 PowerShell
 
@@ -55,11 +55,11 @@ Visual Studio 2019 包含適用于開發人員的兩個命令列 shell：
 
    ![Visual Studio 中的命令提示字元功能表項目](./media/developer-command-prompt-for-vs/vs-menu.png)
 
-### <a name="use-the-windows-start-menu"></a>使用 Windows [開始] 功能表
+## <a name="use-the-windows-start-menu"></a>使用 Windows [開始] 功能表
 
 根據 Visual Studio 的版本以及您已安裝的任何其他 Sdk 和工作負載，您可能會有多個命令提示字元。 如果下列步驟沒有作用，您可以嘗試 [手動找出電腦上的](#manually-locate-the-file) 檔案，或 [從 Visual Studio 內啟動 shell](#start-the-shell-from-inside-visual-studio)。
 
-#### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 1. 選取 ![ 鍵盤上的 [啟動 Windows 標誌鍵]。](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) 並將其滾動至字母 **V**。
 
@@ -71,7 +71,7 @@ Visual Studio 2019 包含適用于開發人員的兩個命令列 shell：
 
    ![顯示 Windows 10 上搜尋行為的動畫 gif](./media/developer-command-prompt-for-vs/windows-10-search.gif)
 
-#### <a name="windows-81"></a>Windows 8.1
+### <a name="windows-81"></a>Windows 8.1
 
 1. 按下 Windows 標誌鍵 ![鍵盤上的 Windows 標誌鍵](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) 前往 [開始] 畫面。 位於您的鍵盤上，作為範例。
 
@@ -79,7 +79,7 @@ Visual Studio 2019 包含適用于開發人員的兩個命令列 shell：
 
 1. 選擇 vs 2019 或 **Developer PowerShell FOR vs 2019** 的 **開發人員命令提示** 字元。
 
-#### <a name="windows-7"></a>Windows 7
+### <a name="windows-7"></a>Windows 7
 
 1. 選擇 [ **開始** ]，然後展開 [ **所有程式**]。
 
@@ -89,11 +89,11 @@ Visual Studio 2019 包含適用于開發人員的兩個命令列 shell：
 
 如果您已安裝其他 Sdk （例如 [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 或 [舊版](https://developer.microsoft.com/windows/downloads/sdk-archive)），您可能會看到其他的命令提示字元。 查看個別工具的文件以判斷要使用哪個版本的命令提示字元。
 
-### <a name="manually-locate-the-file"></a>手動找出檔案
+## <a name="manually-locate-the-file"></a>手動找出檔案
 
 您已安裝之 shell 的快捷方式通常會置於 Visual Studio 的 [ **開始功能表** ] 資料夾中，例如 *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019 \ Visual studio Tools*。 但是如果搜尋命令提示字元並不會產生預期的結果，您可以嘗試手動找出電腦上的檔案。
 
-#### <a name="developer-command-prompt"></a>開發人員命令提示字元
+### <a name="developer-command-prompt"></a>開發人員命令提示字元
 
 搜尋 *VsDevCmd.bat* 的命令提示字元檔案名，或移至 visual studio 的 [工具] 資料夾，例如 *% ProgramFiles (x86) % \ Microsoft Visual Studio\2019\Community\Common7\Tools* (路徑變更（根據您的 visual Studio 版本、版本和安裝位置) ）。
 
@@ -112,7 +112,7 @@ Visual Studio 2019 包含適用于開發人員的兩個命令列 shell：
 > [!TIP]
 > 您必須編輯路徑以符合您的 Visual Studio 安裝。
 
-#### <a name="developer-powershell"></a>開發人員 PowerShell
+### <a name="developer-powershell"></a>開發人員 PowerShell
 
 搜尋名為 *Launch-VsDevShell.ps1* 的 PowerShell 腳本檔案，或移至 Visual Studio 的 Tools 資料夾，例如 *% ProgramFiles (x86) % \ Microsoft Visual Studio\2019\Community\Common7\Tools*。  (路徑會根據您的 Visual Studio 版本、版本和安裝位置進行變更 ) 。當您找到 PowerShell 檔案之後，請在 Windows PowerShell 或 PowerShell 6 提示字元中輸入下列命令來執行此動作：
 
