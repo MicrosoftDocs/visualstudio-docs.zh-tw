@@ -1,5 +1,6 @@
 ---
 title: '&lt;&gt; (Office 開發) 的 p s 元素'
+description: Vstav3 命名空間的 P s 元素包含所有 P n 元素，這些元素會描述在安裝 Office 方案後執行的部署後動作。
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: da0c3ee640d7ae4ec1b61df7a60893a7e1428cd2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5c4a66e270cd446996884262d380df0f7384f54f
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879432"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470036"
 ---
 # <a name="ltpostactionsgt-element-office-development"></a>&lt;&gt; (Office 開發) 的 p s 元素
   `postActions` 命名空間的 `vstav3` 項目包含描述安裝 Office 方案後所執行之部署後動作的所有 `postAction` 項目。
@@ -46,11 +47,11 @@ ms.locfileid: "99879432"
  `postActions` 具有下列項目。
 
 ### <a name="postaction"></a>postAction
- 選擇性。 `postAction`命名空間中專案的角色 `vstav3` 定義于[&#60;p n&#62; 專案中，&#40;Visual Studio&#41;中的 Office 程式開發](../vsto/postaction-element-office-development-in-visual-studio.md)。
+ 選擇性。 `postAction`命名空間中專案的角色 `vstav3` 會在&#60;p n&#62; 專案中定義， [&#40;Visual Studio&#41;中的 Office 程式開發](../vsto/postaction-element-office-development-in-visual-studio.md)。
 
 ## <a name="post-deployment-action-example"></a>部署後動作範例
 
-### <a name="description"></a>Description
+### <a name="description"></a>描述
  下列程式碼範例說明使用 `postActions` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。
 
 ### <a name="code"></a>程式碼

@@ -1,5 +1,6 @@
 ---
-title: DA0014-極高比率的使用中記憶體分頁到磁片 |Microsoft Docs
+title: DA0014-極高比率的使用中記憶體分頁到磁片 |Microsoft 檔
+description: 在分析執行中收集的系統效能資料表示在整個分析執行期間發生極高比率的使用中記憶體分頁進出磁碟。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5770c02efacd70b681e32ad029c813babd21bfc3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3467feff8a947146a5ec407054094a76e09d57fa
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916783"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469984"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014：極高比率的使用中記憶體分頁到磁碟
 

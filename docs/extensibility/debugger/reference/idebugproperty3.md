@@ -1,5 +1,6 @@
 ---
-title: IDebugProperty3 |Microsoft Docs
+title: IDebugProperty3 |Microsoft 檔
+description: 這個介面支援抓取與屬性相關聯的任意長字串、將唯一識別碼與屬性產生關聯、取得屬性的自訂檢視器清單、設定屬性值以及報告任何產生錯誤的能力。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f24e7ec1842866011bb4d3735104a043bc77e01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 65da477c47e88699cc479f632843f839b3d02f9d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897264"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469771"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 此介面提供下列支援：

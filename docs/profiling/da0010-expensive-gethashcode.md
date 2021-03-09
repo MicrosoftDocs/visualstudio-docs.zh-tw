@@ -1,5 +1,6 @@
 ---
-title: DA0010-昂貴的 GetHashCode |Microsoft Docs
+title: DA0010-昂貴的 GetHashCode |Microsoft 檔
+description: 類型的 GetHashCode 方法呼叫大部分是分析資料，或方法會配置記憶體。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc9c1b35a78a8d9453ab35f201a120bc75134768
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d44c998cabd3611e2ed393be0ad7df20e1ac49c
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916833"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469920"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010：GetHashCode 高度耗費資源
 

@@ -1,5 +1,6 @@
 ---
-title: DA0003-許多核心範例 |Microsoft Docs
+title: DA0003-許多核心範例 |Microsoft 檔
+description: 針對應用程式收集的大部分呼叫堆疊範例是以核心模式執行。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a72cb56209176e968f9198808f25c20edee96d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b93bbbcb2026ad6f7ef0d25dc359eb211a6c85f
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923832"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469945"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003：許多核心樣本
 

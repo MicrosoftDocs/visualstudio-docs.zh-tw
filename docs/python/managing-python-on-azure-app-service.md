@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b76bc008c30efdee0185e6f122abaff8457acef6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7c874a5cd2742f795c6d8b04db88b98b19a556d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882787"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470010"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure App Service 上設定 Python 環境 (Windows)
 
@@ -46,7 +46,7 @@ Azure App Service 是以一組 App Service「網站延伸模組」的形式來�
 
 ## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>透過 Azure Resource Manager 選擇 Python 版本
 
-如果您要使用 Azure Resource Manager 範本來部署 App Service，請將網站延伸模組新增為資源。 特別是，延伸模組會顯示為巢狀資源 (`resources` 下的 `resources` 物件) ，其類型為 `siteextensions` 並具有來自 [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22) 的名稱。
+如果您要使用 Azure Resource Manager 範本來部署 App Service，請將網站延伸模組新增為資源。 具體而言，此延伸模組會以嵌套資源的形式出現， (`resources` 在) 的物件 `resources` ，且其類型為 `siteextensions` 。
 
 例如，新增 `python361x64` (Python 3.6.1 x64) 的參考之後，您的範本可能如下所示 (已省略部分屬性)：
 
@@ -173,7 +173,7 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
 
 [Kudu console](https://github.com/projectkudu/kudu/wiki/Kudu-console) (Kudu 主控台) 可讓您透過直接且提高權限的命令列存取 App Service 伺服器和其檔案系統。 這既是一項重要的偵錯工具，也可讓 CLI 作業 (例如安裝套件) 順利進行。
 
-1. 選取 [**開發工具**] 的 [  >  **Advanced tools**]，然後選取 [**移至**]，從 Azure 入口網站的 App Service 頁面開啟 Kudu。 這個動作會瀏覽至與基底 App Service URL 相同的 URL，差別只在於插入了 `.scm`。 例如，如果您的基底 URL 是 `https://vspython-test.azurewebsites.net/`，則 Kudu 位於 `https://vspython-test.scm.azurewebsites.net/` (您可將其設為書籤)：
+1. 從 Azure 入口網站上的 App Service 頁面開啟 Kudu，方法是選取 [**開發工具**]  >  **Advanced tools**，然後選取 [**移至**]。 這個動作會瀏覽至與基底 App Service URL 相同的 URL，差別只在於插入了 `.scm`。 例如，如果您的基底 URL 是 `https://vspython-test.azurewebsites.net/`，則 Kudu 位於 `https://vspython-test.scm.azurewebsites.net/` (您可將其設為書籤)：
 
     ![Azure App Service 的 Kudu 主控台](media/python-on-azure-console01.png)
 

@@ -1,5 +1,6 @@
 ---
-title: DA0001-使用 StringBuilder 進行串連 |Microsoft Docs
+title: DA0001-使用 StringBuilder 進行串連 |Microsoft 檔
+description: 對 System.String.Concat 的呼叫大部分是分析資料。 請考慮使用 system.servicemodel 類別來建立多個區段中的字串。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e94aac22eae270abdffef5c7a866b353bce90fd8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 11ec65fc4131b4ad4d33fa25c616ecacc6a2fc79
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938442"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470023"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001：使用 StringBuilder 進行串連
 
