@@ -1,5 +1,6 @@
 ---
-title: 遺漏 DA0002-VSPerfCorProf.dll |Microsoft Docs
+title: 遺漏 DA0002-VSPerfCorProf.dll |Microsoft 檔
+description: 當使用 profiler 資料集合的命令列工具，而不使用 VSPerfCLREnv 來初始化必要的環境變數，或在分析工具啟動時，如果另一個 profiler 正在執行，就會發生這個警告。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b6437daa245343f5a7fc40e5564ee6f2f885e14
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 763a28dcb2200549b13b3562ffe3ab9fa629cdc5
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868293"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466176"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002：遺漏 VSPerfCorProf.dll
 
@@ -35,7 +36,7 @@ ms.locfileid: "99868293"
  分析工具在執行程式碼剖析期間找不到 *VSPerfCorProf.dll* 。 當流量分析工具資料集合的命令列工具，而不使用 *VSPerfCLREnv* 來初始化必要的環境變數時，就會發生此警告。 如果在分析工具啟動時正在執行另一個分析工具，也可能會引發警告。
 
 ## <a name="rule-description"></a>規則描述
- 必須在分析回合之前設定特定環境變數，讓分析工具解決 .NET Framework 二進位檔中的符號。 此警告表示在收集分析資料之前，不會執行 *VSPerfCLREnv .cmd* 工具。 可能無法解析 Managed 二進位檔的符號。 如需從命令列流量分析工具的詳細資訊，請參閱 [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ 必須在分析回合之前設定特定環境變數，讓分析工具解決 .NET Framework 二進位檔中的符號。 此警告表示在收集分析資料之前，不會執行 *VSPerfCLREnv .cmd* 工具。 可能無法解析 Managed 二進位檔的符號。 如需從命令列使用程式碼剖析工具的詳細資訊，請參閱 [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  當您要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具中使用命令列工具來分析 Managed 應用程式時，請先執行 [VSPerfCLREnv](../profiling/vsperfclrenv.md) 命令列工具，再開始收集資料。

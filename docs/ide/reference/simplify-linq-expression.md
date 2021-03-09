@@ -1,5 +1,6 @@
 ---
 title: 簡化 LINQ 運算式
+description: 這項重構可用來移除 Where 方法之可列舉的不必要呼叫。
 ms.date: 08/12/2020
 ms.topic: reference
 author: m-redding
@@ -9,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 006fc0fe84b11573ece98019a4446d83de52d62c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 20a3524d786b1f03fc3e221d1b257892d9439a0b
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957552"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466163"
 ---
 # <a name="simplify-linq-expression"></a>簡化 LINQ 運算式
 

@@ -1,5 +1,6 @@
 ---
-title: Kerberos 驗證失敗 |Microsoft Docs
+title: Kerberos 驗證失敗 |Microsoft 檔
+description: 當 Visual Studio 遠端偵錯監視是使用本機系統或網路服務帳戶執行時，就會發生這個錯誤。
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dd5b68c0312c3974667775f90ab4fec911206342
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41ffc4e5cb71c78462c9dbfd18472a4fc4e57c7d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871620"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466234"
 ---
 # <a name="error-kerberos-authentication-failed"></a>錯誤：Kerberos 驗證失敗
 當您嘗試進行遠端偵錯時，可能會看到下列錯誤訊息：
@@ -38,7 +39,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 - 在網域控制站上已停用 Kerberos。
 
-  如果無法使用 Kerberos 驗證，請將帳戶變更為用於執行 Visual Studio 遠端偵錯監視的帳戶。 如需相關程式，請參閱 [錯誤：目的電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)。
+  如果無法使用 Kerberos 驗證，請將帳戶變更為用於執行 Visual Studio 遠端偵錯監視的帳戶。 如需相關程式，請參閱 [錯誤：目的電腦上的 Visual Studio 遠端偵錯程式服務無法連回這部電腦](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)。
 
   如果兩部電腦都連接至相同的網域，而您仍然收到這個訊息，請確認目標電腦上的 DNS 有正確解析偵錯工具主機電腦的名稱。 請參閱下列程序。
 

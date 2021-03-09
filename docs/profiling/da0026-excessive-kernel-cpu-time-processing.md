@@ -1,5 +1,6 @@
 ---
-title: DA0026-過多核心 CPU 時間處理 |Microsoft Docs
+title: DA0026-過多核心 CPU 時間處理 |Microsoft 檔
+description: 在核心模式中執行的 CPU 時間比例超過在使用者模式中所花費的時間量。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f3231fce4954d3ace5e04e470cda386a9ceebe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d39318433194693ee2b2cbbc8a94753cf2acd75d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936739"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465864"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026：過多的核心 CPU 時間處理
 

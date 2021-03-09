@@ -1,5 +1,6 @@
 ---
-title: DA0503-所分析之進程的平均工作集（以位元組為單位） |Microsoft Docs
+title: DA0503-所分析之進程的平均工作集（以位元組為單位） |Microsoft 檔
+description: 此訊息報告處理序目前使用的實體記憶體平均數量，以位元組 (工作集) 為單位。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a871925d4cde24675bd7d5c7f777b909ea633d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9913d3408a3219c2c07fa096c1f17b3a61afd8c
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918091"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465799"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503：所分析之處理序的平均工作集 (以位元組為單位)
 

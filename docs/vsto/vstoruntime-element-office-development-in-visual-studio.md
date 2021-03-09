@@ -1,6 +1,7 @@
 ---
-title: '&lt;&gt;在 Visual Studio) 中 (Office 開發的 v m e 元素'
+title: '&lt;&gt;Visual Studio) 中 (Office 開發的 v m e 元素'
 titleSuffix: ''
+description: Vstav3 命名空間的 V m e 元素包含特定 Office 方案支援的 Visual Studio Tools for Office runtime 版本。
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,14 +16,14 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c866db5f691db56e68f6980c9c07d21ee15c0ae5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c856836bd2ba107a2fa6c3017c5ecb2694fcf6b
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921754"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102468568"
 ---
-# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;在 Visual Studio) 中 (Office 開發的 v m e 元素
+# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio) 中 (Office 開發的 v m e 元素
   `vstoRuntime` 命名空間的 `vstav3` 項目包含特定 Office 方案支援的 Visual Studio Tools for Office Runtime 版本。
 
 ## <a name="syntax"></a>Syntax

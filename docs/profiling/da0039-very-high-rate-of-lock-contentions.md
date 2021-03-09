@@ -1,5 +1,6 @@
 ---
-title: DA0039-非常高的鎖定爭用率 |Microsoft Docs
+title: DA0039-非常高的鎖定爭用率 |Microsoft 檔
+description: 分析資料收集的系統效能資料指出，應用程式執行期間發生過高的鎖定爭用率。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4504a05eb8f3835f65c144c8a073304f2761b237
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 656f9dbc3994ed47e6d7cd8077191b23aa9ead6a
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886349"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465916"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039：鎖定爭用的比率非常高
 

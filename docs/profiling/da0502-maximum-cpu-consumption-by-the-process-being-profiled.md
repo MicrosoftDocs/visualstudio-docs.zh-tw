@@ -1,5 +1,6 @@
 ---
-title: DA0502-所分析進程的最大 CPU 耗用量 |Microsoft Docs
+title: DA0502-所分析進程的最大 CPU 耗用量 |Microsoft 檔
+description: 此訊息報告處理器忙於執行應用程式指令的最大時間百分比。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 988e9576f7c5aacac4bc4335f06b08dd1176f847
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45071fb94b00be721e8c76c69dc5135a59f3a9b1
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918112"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465773"
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502：所分析之處理序的最大 CPU 使用量
 

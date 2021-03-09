@@ -1,5 +1,6 @@
 ---
-title: DA0030-收集資料庫專案的階層互動度量 |Microsoft Docs
+title: DA0030-收集資料庫專案的階層互動度量 |Microsoft 檔
+description: 對 system.string 方法的呼叫是程式碼剖析資料的大量比例，且您未在程式碼剖析執行中收集階層互動資料。 請考慮再次進行分析，並加入階層互動資料。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bfce545cd3e7eb5e13e28ec7d22aaba4f7cbecfd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44720e086fa0c9201fba319e445a44835faa9c2e
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908742"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465877"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：收集資料庫專案的階層互動度量
 

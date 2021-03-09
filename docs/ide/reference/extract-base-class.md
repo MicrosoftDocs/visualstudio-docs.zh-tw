@@ -1,5 +1,6 @@
 ---
 title: 擷取基底類別
+description: 這種重構會將所選類別的成員解壓縮至新的基類。
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c389ac6285b3f20dcdf05833f1ff3202d155c4f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d7a21bbd3e51ee6a6776ca728a545cbbb731cab
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962804"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466273"
 ---
 # <a name="extract-base-class"></a>擷取基底類別
 

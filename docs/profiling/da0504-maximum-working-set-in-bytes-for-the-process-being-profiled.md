@@ -1,5 +1,6 @@
 ---
-title: DA0504-所分析之進程的最大工作集（以位元組為單位） |Microsoft Docs
+title: DA0504-所分析之進程的最大工作集（以位元組為單位） |Microsoft 檔
+description: 此訊息報告處理序目前使用的實體記憶體最大數量，以位元組為單位。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c218965add570035e9396652cec46279fcebc4d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7810646f14c61683fc3fc5e3e70eee33ba01dde1
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931743"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465786"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504：所分析之處理序的最大工作集 (以位元組為單位)
 

@@ -1,5 +1,6 @@
 ---
-title: DA0023-高 GC CPU 時間 |Microsoft Docs
+title: DA0023-高 GC CPU 時間 |Microsoft 檔
+description: 程式碼剖析期間收集的系統效能資料指出，相較於應用程式總處理時間，花費在記憶體回收的時間量極高。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f719cf2e416e3cb1a58a279d6327810c71e41d0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eccf44528b18d43a97a5a9c202c72b59abbdf431
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966977"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466073"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023：高記憶體回收 CPU 時間
 

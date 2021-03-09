@@ -1,5 +1,6 @@
 ---
-title: 'DA0006-覆寫等於數值型別 ( # A1 |Microsoft Docs'
+title: DA0006-覆寫數值型別的 Equals () |Microsoft 檔
+description: Equals 方法呼叫或公用實值型別的相等運算子大部分是分析資料。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e815c985653bc58271b643aabd53955ae3c83f9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f8399dbe43c20a8c888ac4e4bac9ec8b03e9610
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937650"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466137"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值型別的 Equals()
 

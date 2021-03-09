@@ -1,5 +1,6 @@
 ---
-title: DA0018-32-以進程 managed 記憶體限制執行的位應用程式 |Microsoft Docs
+title: DA0018-32-以進程 managed 記憶體限制執行的位應用程式 |Microsoft 檔
+description: 分析執行期間收集的系統資料指出，.NET Framework 記憶體堆積已接近 Managed 堆積在 32 位元處理序中可以到達的大小上限。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5730e96a47e7e931606269341d5f1cca302a0e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48f94f064b983ae671546f543dfbdfa380f35119
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886388"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466098"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式
 

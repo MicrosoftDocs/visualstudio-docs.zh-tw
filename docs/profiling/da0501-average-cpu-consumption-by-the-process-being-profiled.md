@@ -1,5 +1,6 @@
 ---
 title: DA0501-所分析之進程的平均 CPU 耗用量。 | Microsoft Docs
+description: 此訊息報告處理器忙於執行應用程式指令的時間百分比。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 65fed5b7afd6c8b1a678a9ef94b8c86e6dc88500
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 242a3ff10042a53997b17f662af145440df2e95a
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918079"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465825"
 ---
 # <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501：所分析之處理序的平均 CPU 使用量。
 

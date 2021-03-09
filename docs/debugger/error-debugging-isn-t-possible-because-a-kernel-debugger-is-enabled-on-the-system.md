@@ -1,5 +1,6 @@
 ---
-title: 無法進行調試 &apos; 程式，因為系統上已啟用內核偵錯工具 |Microsoft Docs
+title: 無法進行調試 &apos; 程式，因為系統上已啟用內核偵錯工具 |Microsoft 檔
+description: 當您嘗試在 Windows 7 或 Windows Vista 系統上（已在「偵測模式」中啟動）偵測 managed 程式碼，且應用程式使用 CLR 版本 CLR 2.0、3.0 或3.5 時，就會出現此訊息。
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a06ed9092145188bf5fbecd2caeb42f5ad5c2e3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced7fb79a11321678ae2963241807e5ddd4600ab
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871763"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466455"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：因為系統上已啟用內核偵錯工具，所以無法進行&#39;t 的偵錯工具
 當您對 Managed 程式碼進行偵錯時，可能會收到下列錯誤訊息：
@@ -32,7 +33,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
  當您嘗試對 Managed 程式碼進行偵錯時，這個訊息就會出現：
 
-- 在以偵錯模式啟動的 [!INCLUDE[win7](../debugger/includes/win7_md.md)] 或 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 系統上。
+- 在 [!INCLUDE[win7](../debugger/includes/win7_md.md)] 或 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 系統上，以偵測模式啟動。
 
 - 使用 CLR 2.0、3.0 或 3.5 版的應用程式。
 
