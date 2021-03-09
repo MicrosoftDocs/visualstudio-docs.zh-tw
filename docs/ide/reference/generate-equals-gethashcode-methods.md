@@ -2,19 +2,19 @@
 title: 產生 C# Equals 與 GetHashCode 方法的覆寫
 description: 瞭解如何使用 [快速動作與重構] 功能表來產生 Equals 和 GetHashCode 方法。
 ms.custom: SEO-VS-2020
-ms.date: 01/26/2018
+ms.date: 03/08/2021
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04c054dd73e437907c0943e3e6f0af5003dee37e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a9d0ea6f6cb0aedc4fa13a8014b1a8bd66ccca0
+ms.sourcegitcommit: 6ed6ae5a1693607dce57923a78d01eea3d88b29a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962778"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514936"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>在 Visual Studio 中產生 Equals 與 GetHashCode 方法覆寫
 
@@ -28,9 +28,9 @@ ms.locfileid: "99962778"
 
 **為什麼：**
 
-- 如果您要實作實值型別，便應該考慮覆寫 **Equals** 方法，以獲得比在 ValueType 上實作預設 Equals 方法更好的效能。
+- 如果您要執行實值型別，則應該考慮覆寫 **Equals** 方法。 當您這樣做時，您可以透過 ValueType 的 Equals 方法預設執行來提升效能。
 
-- 如果您要實作參考型別，當該類型看似基底類型 (例如 Point、String、BigNumber 等) 時，便應該考慮覆寫 **Equals** 方法。
+- 如果您正在執行參考型別，則應該考慮覆寫 **Equals** 方法（如果您的型別看起來像是 Point、String、bignumber 等等等）。
 
 - 覆寫 **GetHashCode** 方法以允許類型在雜湊表中正確運作。 如需更多指引，請參閱[等號比較運算子](/dotnet/standard/design-guidelines/equality-operators)。
 
@@ -38,22 +38,32 @@ ms.locfileid: "99962778"
 
 1. 將游標放在型別宣告行的某個位置。
 
-   ![醒目標示的程式碼](media/overrides-highlight-cs.png)
+    ```csharp
+    public class ImaginaryNumber
+    {
+        public double RealNumber { get; set; }
+        public double ImaginaryUnit { get; set; }
+    }
+    ```
+
+   您的程式碼看起來應該類似下列螢幕擷取畫面：
+
+   ![醒目提示程式碼的螢幕擷取畫面，以套用產生的方法](media/overrides-highlight-cs.png)
 
    > [!TIP]
    > 請勿按兩下來選取型別名稱，否則功能表選項將無法使用。 只要將游標放在該行的某個位置即可。
 
-1. 接著，執行下列其中一項操作：
+1. 接下來，選擇下列其中一個動作：
 
    - 按下 **Ctrl** + **。** 以觸發 [快速動作與重構] 功能表。
 
    - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
 
-   - 按一下 ![螺絲起子](../media/screwdriver-icon.png) 圖示。
-
-   ![「產生覆寫」預覽](media/overrides-preview-cs.png)
+   - 按一下 ![Visual Studio 中快速動作螺絲起子圖示的螢幕擷取畫面](../media/screwdriver-icon.png) 圖示。
 
 1. 從下拉式功能表選取 [產生 Equals(object)]或 [產生 Equals 和 GetHashCode]。
+
+   ![[產生覆寫] 下拉式功能表的螢幕擷取畫面](media/overrides-preview-cs.png)
 
 1. 在 [選取成員]對話方塊中，選取您想要產生方法的成員：
 
@@ -62,9 +72,36 @@ ms.locfileid: "99962778"
     > [!TIP]
     > 您也可以選擇使用對方塊底部附近的核取方塊，從此對話方塊中產生運算子。
 
-   系統會使用預設實作來產生 `Equals` 與 `GetHashCode` 方法。
+   `Equals`和 `GetHashCode` 方法會使用預設的實值產生，如下列程式碼所示：
 
-   ![「產生方法」結果](media/overrides-result-cs.png)
+    ```csharp
+   public class ImaginaryNumber : IEquatable<ImaginaryNumber>
+    {
+        public double RealNumber { get; set; }
+        public double ImaginaryUnit { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            return Equals(obj as ImaginaryNumber);
+        }
+
+        public bool Equals(ImaginaryNumber other)
+        {
+            return other != null &&
+                   RealNumber == other.RealNumber &&
+                   ImaginaryUnit == other.ImaginaryUnit;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(RealNumber, ImaginaryUnit);
+        }
+    }
+    ```
+
+   您的程式碼看起來應該類似下列螢幕擷取畫面：
+
+   ![所產生方法的結果螢幕擷取畫面](media/overrides-result-cs.png)
 
 ## <a name="see-also"></a>另請參閱
 
