@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6a9d0ea6f6cb0aedc4fa13a8014b1a8bd66ccca0
-ms.sourcegitcommit: 6ed6ae5a1693607dce57923a78d01eea3d88b29a
+ms.openlocfilehash: 597d17b69aa3f0feca520e6100439d934e5d9211
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102514936"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607330"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>在 Visual Studio 中產生 Equals 與 GetHashCode 方法覆寫
 
@@ -61,7 +61,7 @@ ms.locfileid: "102514936"
 
    - 按一下 ![Visual Studio 中快速動作螺絲起子圖示的螢幕擷取畫面](../media/screwdriver-icon.png) 圖示。
 
-1. 從下拉式功能表選取 [產生 Equals(object)]或 [產生 Equals 和 GetHashCode]。
+1. 在下拉式功能表中，選取 [ **產生等於 (物件)** ] 或 [ **產生 equals] 和 [GetHashCode**]。
 
    ![[產生覆寫] 下拉式功能表的螢幕擷取畫面](media/overrides-preview-cs.png)
 

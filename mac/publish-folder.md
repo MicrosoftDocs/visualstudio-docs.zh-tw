@@ -10,27 +10,27 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 640cdf8b9c31bad42f8c5664f3cef44c558e2a3a
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 99127416b6a488cd7e795b3c4a1888ff103c8029
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493409"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607388"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 發行至資料夾
 
-您可以使用 [發佈] 工具，將 .NET Core 主控台或 ASP.NET Core 應用程式發佈到資料夾。
+您可以使用發行工具，將 .NET Core 主控台或 ASP.NET Core 應用程式發佈到資料夾。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
-- 已啟用 .NET Core 的[Visual Studio 2019 For Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) 。
+- 安裝了 .NET Core 的[Visual Studio 2019 For Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) 。
 - .NET Core 主控台或 ASP.NET Core 專案。 如果您還沒有專案，可以[建立新的專案](./create-new-projects.md)。
 
 ## <a name="publish-to-folder"></a>發佈到資料夾
 
-使用 Visual Studio for Mac 您可以使用 [發行] 工具，將您的 .NET Core 專案發行到資料夾。 發行到資料夾之後，您可以將檔案傳送到不同的環境。 若要發佈到資料夾，請執行下列步驟。
+使用 Visual Studio for Mac，您可以使用 [發行] 工具，將您的 .NET Core 專案發行到資料夾。 發行到資料夾之後，您可以將檔案傳送到不同的環境。 若要發佈到資料夾，請執行下列步驟。
 
- 1. 在 [方案] 視窗中，以滑鼠右鍵按一下專案，然後選擇 [ **發行** ]。
+ 1. 在 [方案] 視窗中，以滑鼠右鍵按一下專案，然後選擇 [ **發行**]。
 
     ![[發佈] 操作功能表](media/publish-context-menu.png)
 
@@ -59,3 +59,7 @@ ms.locfileid: "94493409"
 若要變更發佈資料夾路徑，請開啟發行設定檔並編輯 `publishUrl` 值。
 
 若要變更使用的組建組態，請變更發行設定檔中的 `LastUsedBuildConfiguration` 屬性。
+
+## <a name="see-also"></a>另請參閱
+ - [dotnet publish](https://docs.microsoft.com/dotnet/core/tools/dotnet-publish)
+ - [使用 Visual Studio 將 Web 應用程式發行至網站 ](https://docs.microsoft.com/visualstudio/deployment/quickstart-deploy-to-a-web-site?view=vs-2019)

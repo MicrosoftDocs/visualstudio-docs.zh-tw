@@ -12,19 +12,19 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0c3f40900c30ca3632b3e82c4b197f28f9d108bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7efc8e5955f4d11004d8408cadf312e6cbcb43eb
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969239"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607401"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>先查看 Visual Studio 中的測試控管
 
 Visual Studio 測試工具可協助您和小組開發及維持絕佳的高標準程式碼表現。
 
 > [!NOTE]
-> 所有版本的 Visual Studio 都提供單元測試。 其他測試控管（例如 Live Unit Testing 和 IntelliTest）僅適用于 Visual Studio Enterprise 版。 如需版本的詳細資訊，請參閱[比較 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
+> 所有版本的 Visual Studio 都提供單元測試。 其他測試控管（例如 Live Unit 測試和 IntelliTest）僅適用于 Visual Studio Enterprise edition。 如需版本的詳細資訊，請參閱[比較 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
 
 ## <a name="test-explorer"></a>測試總管
 
@@ -61,7 +61,7 @@ IntelliTest 會自動產生受控碼的單元測試和測試資料。 IntelliTes
 ![IntelliTest 作用中](media/devtest-intellitest.png)
 
 > [!NOTE]
-> IntelliTest 僅適用于 Enterprise edition。 以 .NET Framework 為目標的 c # 程式碼支援。 目前不支援 .NET Core 和 .NET Standard。
+> IntelliTest 僅適用于 Enterprise edition。 針對以 .NET Framework 為目標的 c # 程式碼，支援此功能。 目前不支援 .NET Core 和 .NET Standard。
 
 * [使用 IntelliTest 為程式碼產生單元測試](generate-unit-tests-for-your-code-with-intellitest.md)
 * [IntelliTest –一個測試以將它們全部加以規則](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
@@ -79,7 +79,7 @@ IntelliTest 會自動產生受控碼的單元測試和測試資料。 IntelliTes
 當您使用 [測試總管] 執行測試方法程式時，可以選擇程式碼涵蓋範圍。 結果表會顯示程式碼在每個組件、類別和方法中執行的百分比。 此外，原始檔編輯器會顯示已測試的程式碼。
 
 * [使用程式碼涵蓋範圍來決定所測試的程式碼數量](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [使用 Visual Studio (Lab) 的單元測試、程式碼涵蓋範圍和程式碼複製分析 ](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
+* [使用 Visual Studio (Lab) 單元測試、程式碼涵蓋範圍和程式碼複製品分析 ](https://azuredevopslabs.com/labs/devopsserver/liveunittesting)
 * [自訂程式碼涵蓋範圍分析](customizing-code-coverage-analysis.md)
 
 ## <a name="microsoft-fakes"></a>Microsoft Fakes
@@ -103,7 +103,7 @@ IntelliTest 會自動產生受控碼的單元測試和測試資料。 IntelliTes
 * [使用 UI 自動化來測試您的程式碼](use-ui-automation-to-test-your-code.md)
 * [開始建立、編輯和維護自動程式碼 UI 測試](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [使用自動程式碼 UI 測試來測試 UWP 應用程式](test-uwp-app-with-coded-ui-test.md)
-* [使用 Visual Studio Enterprise (Lab) 的自動程式碼 UI 測試簡介 ](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
+* [Visual Studio Enterprise (Lab) 的自動程式碼 UI 測試簡介 ](https://azuredevopslabs.com/labs/tfs/codedui)
 
 ## <a name="related-scenarios"></a>相關案例
 

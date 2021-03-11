@@ -1,18 +1,18 @@
 ---
-title: 使用 Microsoft 帳戶登入 Visual Studio 訂閱 |Microsoft Docs
+title: 使用 Microsoft 帳戶登入 Visual Studio 訂用帳戶 |Microsoft 檔
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
-ms.date: 09/08/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: 如何使用 Microsoft 帳戶 (MSA) 登入 Visual Studio 訂用帳戶
-ms.openlocfilehash: 52882fcf50a784812752dbf606b21db1ddc5c3ea
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 7e0ef2e9adedc62be7c2c7ca709496d1f075f03c
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005933"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607154"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>使用 Microsoft 帳戶 (MSA) 登入 Visual Studio 訂用帳戶
 
@@ -40,11 +40,12 @@ ms.locfileid: "91005933"
 - 您已使用不同的 Microsoft 帳戶登入。  您可能會有多個訂用帳戶，例如 Professional 或 Enterprise 訂用帳戶和 Visual Studio Dev Essentials 成員資格，且它們與不同的電子郵件地址建立關聯。 若要查看其他訂用帳戶，請先登出，再使用另一個 MSA 重新登入。
 - 您有多個與相同 MSA 建立關聯的訂用帳戶。  若要查看與您 MSA 建立關聯的所有訂用帳戶，請前往 https://my.visualstudio.com/subscriptions，並選擇您想要使用的訂用帳戶。 
 
-如果仍然遇到問題，您可以與我們的[訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)小組聯繫以取得協助。  
+## <a name="resources"></a>資源 
+- 如需有關銷售、訂用帳戶、帳戶和 Visual Studio 訂用帳戶計費的協助，請參閱 Visual Studio [訂閱支援](https://aka.ms/vssubscriberhelp)。
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 

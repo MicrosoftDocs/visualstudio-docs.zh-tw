@@ -1,7 +1,7 @@
 ---
 title: 以系統管理員身分執行
 description: 瞭解如何以系統管理員身分執行 Visual Studio。
-ms.date: 01/06/2020
+ms.date: 03/09/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -13,32 +13,32 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63787b394d9e8988759cd141540785e34324f8c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3d2a22533137bf2c1f2e7cfeb3802f5824c3926
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971293"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607245"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 
-基於安全性的理由，您應該盡可能以一般使用者的身份執行 Visual Studio。
+基於安全性的理由，您應該盡可能以一般使用者的形式執行 Visual Studio。
 
 > [!WARNING]
 > 您也應該確保不會編譯、啟動或偵錯任何不是來自受信任者或受信任位置的 Visual Studio 方案。
 
-您可以用一般使用者的形式，在 Visual Studio IDE 中進行幾乎所有的工作。 您需要有系統管理員權限才能完成下列工作：
+您幾乎可以在 Visual Studio IDE 中，以一般使用者的形式來進行。 您需要有系統管理員權限才能完成下列工作：
 
 |區域|Task|取得詳細資訊|
 |----------|----------| - |
-|安裝|安裝或修改 Visual Studio。|[安裝 Visual Studio](../install/install-visual-studio.md)、 [修改 Visual Studio](../install/modify-visual-studio.md)|
+|安裝|安裝或修改 Visual Studio。|[安裝 Visual studio](../install/install-visual-studio.md)、 [修改 visual studio](../install/modify-visual-studio.md)|
 ||安裝、更新或移除本機說明內容。|[安裝和管理本機說明內容](../help-viewer/install-manage-local-content.md)|
 |工具箱|將傳統 COM 控制項新增至 [工具箱]。|[工具箱](../ide/reference/toolbox.md)|
 |建置|使用註冊元件的建置後事件。|[了解自訂建置步驟和建置事件](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||包含當您建置 C++ 專案時的註冊步驟。||
 |偵錯|對以更高權限執行的應用程式進行偵錯。|[偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)|
 ||對在不同使用者帳戶下執行的應用程式進行偵錯，例如 ASP.NET 網站。|[ASP.NET 和 AJAX 應用程式的偵錯工具](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
-||在 XAML 瀏覽器應用程式 (XBAP) 的區域中進行偵錯。|[WPF 主機 ( # A0) ](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
+||在 XAML 瀏覽器應用程式 (XBAP) 的區域中進行偵錯。|[WPF 主機 (PresentationHost.exe) ](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||使用模擬器來對 Microsoft Azure 雲端服務專案進行偵錯。|[在 Visual Studio 中針對雲端服務進行偵錯](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||設定遠端偵錯的防火牆。|[遠端偵錯](../debugger/remote-debugging.md)|
 |效能工具|附加至提升權限的應用程式。|[效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)|
@@ -72,7 +72,17 @@ ms.locfileid: "99971293"
 
 ::: moniker-end
 
-您也可以將應用程式捷徑修改為一律以系統管理權限執行。
+您也可以修改應用程式快捷方式，一律以系統管理許可權執行：
+
+1. 開啟 [**開始**] 功能表，並滾動至您所使用的 Visual Studio 版本，然後選取 [**其他**  >  **開啟** 的檔案位置]。
+
+1. 在 [檔案 **瀏覽器**] 中，找出您所使用版本的 **Visual Studio** 快捷方式。 然後，以滑鼠右鍵按一下快捷方式，然後選取 [**傳送至**  >  **桌面] (建立快捷方式)**。
+
+1. 在 **Windows** 桌面上，以滑鼠右鍵按一下 **Visual Studio** 快捷方式，然後選取 [ **屬性**]。
+
+1. 選取 [ **Advanced** ] 按鈕，然後選取 [ **以系統管理員身分執行** ] 核取方塊。
+
+1. 選取 [確定]  ，然後再選取一次 [建立]  。
 
 ## <a name="see-also"></a>另請參閱
 

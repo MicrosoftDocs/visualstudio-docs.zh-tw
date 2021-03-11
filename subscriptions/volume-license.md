@@ -1,18 +1,18 @@
 ---
-title: 存取 Visual Studio 大量授權客戶的系統管理員入口網站 |Microsoft Docs
+title: 存取 Visual Studio 大量授權客戶的系統管理員入口網站 |Microsoft 檔
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 10/28/2020
+ms.date: 03/08/2021
 ms.topic: conceptual
-description: 瞭解大量授權合約的管理員如何存取 Visual Studio 訂用帳戶管理員入口網站
-ms.openlocfilehash: 85e82eed6b8810e7e6a2f8622aead9d50323841d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+description: 瞭解大量授權合約的管理員如何存取 Visual Studio 訂用帳戶系統管理員入口網站
+ms.openlocfilehash: 4704b3258eedf8fd1639804a8792a1c18fafce77
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904210"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607284"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>以大量授權合約的系統管理員身分存取系統管理員入口網站
 
@@ -23,14 +23,14 @@ ms.locfileid: "92904210"
 
 登入後，系統會自動將您設定為超級管理員，並且可以開始管理訂用帳戶和其他系統管理員。 如需超級管理員和系統管理員之間差異的相關資訊，請參閱我們有關系統 [管理員角色](admin-roles.md)的文章。
 
-這適用于所有大量授權合約類型，包括但不限於： Enterprise 合約、Enterprise 訂用帳戶、Select、Select Plus、Open、Open License、Govt 和學術協定。 
+這適用于所有大量授權合約類型，包括但不限於： Enterprise 合約、Enterprise 訂用帳戶、Select、Select Plus、Open、Open License、政府。 和學術協定。 
 
 ## <a name="resources"></a>資源
-- [Visual Studio 系統管理員和訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
+- 如需有關銷售、訂用帳戶、帳戶和 Visual Studio 訂用帳戶計費的協助，請參閱 Visual Studio [訂閱支援](https://aka.ms/vssubscriberhelp)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 

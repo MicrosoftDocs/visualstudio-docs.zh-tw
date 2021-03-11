@@ -4,18 +4,17 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 03/05/2021
+ms.date: 03/08/2021
 ms.topic: conceptual
 description: 了解如何使用 GitHub 帳戶登入 Visual Studio 訂用帳戶。
-ms.openlocfilehash: 41966fb4468832b3e1a320e898164989d1fb5c3b
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 99352f4f25d4dd6da42dc0a8d51a093c7c4c216e
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249726"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607180"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>使用 GitHub 帳戶登入 Visual Studio 訂用帳戶 
-
 登入您 Visual Studio 訂用帳戶的步驟取決於您使用的帳戶類型。 例如，您可能使用 Microsoft 帳戶 (MSA) 或您的雇主或學校提供的電子郵件地址。 2019 年 1 月起，您現在也可以使用您的 GitHub 帳戶來登入某些訂用帳戶。 
 
 本文將提供使用 GitHub 帳戶登入的步驟。
@@ -26,7 +25,7 @@ GitHub 身分識別支援可讓您使用現有 GitHub 帳戶，作為新或現�
 
 當您登入 GitHub 時，Microsoft 會檢查與您 GitHub 帳戶建立關聯的任何電子郵件地址，是否與現有的個人或企業 Microsoft 帳戶相符。 如果電子郵件地址符合您的企業帳戶，系統會提示您改為登入該帳戶。 如果電子郵件地址符合個人帳戶，我們會將您 GitHub 帳戶新增為登入該個人帳戶的方法。
 
-連結您的 GitHub 和 Microsoft 帳戶認證之後，您可以從任何可使用個人 Microsoft 帳戶的位置 (例如 Azure 網站、Office 應用程式和 Xbox) 使用該單一登入。 這些帳戶也可以用於讓 Azure Active Directory 來賓登入為 Microsoft 帳戶 (假設電子郵件地址符合邀請中的其中一個)。
+連結您的 GitHub 和 Microsoft 帳號憑證之後，您可以在任何可使用個人 Microsoft 帳戶的位置（例如 Azure 網站、Office 應用程式和 Xbox）使用該單一登入。 如果電子郵件地址符合邀請上的電子郵件地址，則這些帳戶也可以用來作為 Microsoft 帳戶的 Azure Active Directory 來賓登入。
 
 > [!NOTE]
 > 將 GitHub 身分識別連結到 Microsoft 帳戶，不會提供 Microsoft 任何程式碼存取權。 當應用程式 (例如 Azure DevOps 與 Visual Studio) 需要存取您的程式碼存放庫時，系統會提示您授與此存取權的特定同意。 
@@ -38,7 +37,7 @@ GitHub 身分識別支援可讓您使用現有 GitHub 帳戶，作為新或現�
 答：您可以藉由嘗試 [重設您的密碼](https://github.com/password_reset)來復原您的 GitHub 帳戶。 或者，您可以在[復原您的帳戶](https://account.live.com/password/reset)上輸入您的 GitHub 帳戶電子郵件地址，來復原您與 GitHub 連結的 Microsoft 帳戶。
 
 #### <a name="q-i-deleted-my-github-account--how-can-i-access-my-microsoft-account-msa-now"></a>問：我已刪除我的 GitHub 帳戶。  我現在應如何存取我的 Microsoft 帳戶 (MSA)？
-答：如果您的 MSA 上沒有任何其他認證 (例如密碼、驗證器應用程式或安全性金鑰) ，您可以使用附加的電子郵件地址來復原您的 Microsoft 帳戶。 若要開始使用，請前往[復原您的帳戶](https://account.live.com/password/reset)。 您必須將密碼新增至您的帳戶，讓我們知道稍後如何將您登入。 
+答：如果您的 MSA 沒有任何其他認證，例如密碼、驗證器應用程式或安全性金鑰，您可以使用附加的電子郵件地址來復原您的 Microsoft 帳戶。 若要開始使用，請前往[復原您的帳戶](https://account.live.com/password/reset)。 您必須將密碼新增至您的帳戶，讓我們知道稍後如何將您登入。 
 
 #### <a name="q-theres-no-sign-in-with-github-option-on-the-sign-in-page--how-can-i-use-my-github-credentials-to-sign-in"></a>問：登入頁面上沒有 [使用 GitHub 登入] 選項。  我應如何使用我的 GitHub 認證登入？
 答：輸入您在建立 GitHub 連結的 Microsoft 帳戶時所選擇的 GitHub 帳戶電子郵件地址。 我們將尋找您的資訊，並將您轉至 GitHub 進行登入。 或者，如果登入頁面中有登入選項連結，請按一下該連結，並使用顯示的 [使用 GitHub 登入] 按鈕。 
@@ -62,7 +61,10 @@ GitHub 身分識別支援可讓您使用現有 GitHub 帳戶，作為新或現�
 答：移至 account.microsoft.com 的 [ [安全性]](https://account.microsoft.com/security) 索引標籤，然後按一下 [ **Advanced security options** ]，取消連結您的 GitHub 帳戶。 取消您 GitHub 帳戶的連結會將其從登入方法移除，並移除 Visual Studio 中任何 GitHub 存放庫的存取權。 其他 Microsoft 產品可能會個別要求存取您的 GitHub 帳戶，因此移除該存取權不會在所有產品中移除存取權。 前往 GitHub 設定檔的[應用程式權限](https://github.com/settings/applications)頁面，並從在該處列出的應用程式中撤銷同意。
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>問：我嘗試使用我的 GitHub 帳戶登入，但系統提示我已經有應該改用的 Microsoft 身分識別。  這是為什麼？
-答：如果您的 GitHub 帳戶上有 Azure Active Directory 電子郵件地址，這表示您已經擁有可存取 Azure 的 Microsoft 身分識別，並使用您的 GitHub 程式碼執行 CI 管線。 使用該帳戶可確保您的 Azure 資源和組建管線保留在您組織範圍內。 不過，如果您要進行個人工作，我們建議在您的 GitHub 帳戶上設定個人電子郵件地址，讓您隨時都能存取。 完成此操作後，請再次嘗試登入，並在系統提示您登入您的公司或學校帳戶時，選擇 [使用不同的電子郵件地址]。 這會讓您使用該個人電子郵件地址來建立新的 Microsoft 帳戶。
+答：如果您的 GitHub 帳戶上有 Azure Active Directory 電子郵件地址，則您已經有可存取 Azure 的 Microsoft 身分識別，並使用您的 GitHub 程式碼執行 CI 管線。 使用該帳戶可確保您的 Azure 資源和組建管線保留在您組織範圍內。 不過，如果您要進行個人工作，我們建議在您的 GitHub 帳戶上設定個人電子郵件地址，讓您隨時都能存取。 完成此操作後，請再次嘗試登入，並在系統提示您登入您的公司或學校帳戶時，選擇 [使用不同的電子郵件地址]。 這會讓您使用該個人電子郵件地址來建立新的 Microsoft 帳戶。
+
+## <a name="resources"></a>資源
+- 如需有關銷售、訂用帳戶、帳戶和 Visual Studio 訂用帳戶計費的協助，請參閱 Visual Studio [訂閱支援](https://aka.ms/vssubscriberhelp)。
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)

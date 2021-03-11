@@ -4,19 +4,19 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
-ms.date: 03/11/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: 請找出 Visual Studio 訂用帳戶隨附軟體下載項目的清單。
-ms.openlocfilehash: 390f33591afa6dfceebddbbe5f7f08b413be5e77
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 54e018420233072f99caa84bb3e1e3858b6ed633
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903464"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607271"
 ---
 # <a name="what-software-is-available-for-download"></a>哪些軟體可供下載？
 
-視您使用的訂用帳戶而定，您可以使用[軟體下載清單](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)來得知。  若您有多個與相同登入地址關聯的訂用帳戶，您將會看到具有最高層級訂用帳戶的下載項目，不論您正在檢視的訂用帳戶為何。  例如，如果您有 Visual Studio Enterprise 標準訂用帳戶和 Visual Studio Professional 訂用帳戶，您將會看到您的 Enterprise 訂用帳戶可使用的完整下載清單。  若要查看您的訂用帳戶清單，請造訪 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 。
+視您使用的訂用帳戶而定，您可以使用[軟體下載清單](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)來得知。  若您有多個與相同登入地址關聯的訂用帳戶，您將會看到具有最高層級訂用帳戶的下載項目，不論您正在檢視的訂用帳戶為何。  例如，如果您有 Visual Studio Enterprise standard 訂用帳戶和 Visual Studio Professional 訂用帳戶，您將會看到您的 Enterprise 訂用帳戶所提供的完整下載清單。  若要查看您的訂用帳戶清單，請造訪 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 。
 
 若您已經有 Visual Studio 訂用帳戶：
 1. 請前往 [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
@@ -30,9 +30,12 @@ ms.locfileid: "92903464"
 
 您也可以下載包含每個訂用帳戶類型的豐富[可用軟體](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)清單。
 
-## <a name="see-also"></a>請參閱
+## <a name="resources"></a>資源 
+- 如需有關銷售、訂用帳戶、帳戶和 Visual Studio 訂用帳戶計費的協助，請參閱 Visual Studio [訂閱支援](https://aka.ms/vssubscriberhelp)。 
+
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 

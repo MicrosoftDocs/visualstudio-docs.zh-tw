@@ -1,22 +1,22 @@
 ---
-title: 在 Visual Studio 訂用帳戶中使用訂閱者入口網站 |Microsoft Docs
+title: 使用 Visual Studio 訂用帳戶的訂閱者入口網站 |Microsoft 檔
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: overview
 description: 了解 Visual Studio 訂用帳戶入口網站上提供給您的完整權益
-ms.openlocfilehash: d4f65f4c430d585485c388f22664726c848e6d1e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 6ce759b3ef6a73980e7bd477e36479d65a61b3c8
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904579"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607139"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>使用訂閱者入口網站 - my.visualstudio.com
 
-Visual Studio 訂閱的入口網站 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 是您的全方位資源，可充分利用您的 Visual Studio 訂用帳戶所提供的各種權益。
+Visual Studio 訂用帳戶入口網站 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 是您的全方位資源，可充分利用 Visual studio 訂用帳戶所提供的各種權益。
 
 若要使用入口網站，您必須以和訂閱相關聯的身分識別登入。  這可能是您的 Microsoft 帳戶 (MSA) 或組織提供給您的電子郵件地址，例如您的雇主或學校。  了解[登入](./index.yml)。
 
@@ -47,15 +47,15 @@ Visual Studio 訂閱的入口網站 [https://my.visualstudio.com](https://my.vis
 
 ## <a name="support"></a>支援
 
-除了可在 [權益] 頁面上的 [支援] 類別中找到的個別權益之外，[支援] 頁面也可讓您存取特定資源，以協助您充分運用 Visual Studio 訂閱。 存取[支援資源](https://visualstudio.microsoft.com/subscriptions/support/)以解決技術性問題，或是與訂閱銷售、帳戶及帳單相關聯的問題。
+除了可在 [權益] 頁面上的 [支援] 類別中找到的個別權益之外，[支援] 頁面也可讓您存取特定資源，以協助您充分運用 Visual Studio 訂閱。 存取[支援資源](https://aka.ms/vssubscriberhelp)以解決技術性問題，或是與訂閱銷售、帳戶及帳單相關聯的問題。
 
 ## <a name="marketplace"></a>[Marketplace](https://marketplace.visualstudio.com/) \(英文\)
 
 是否需要更新 Visual Studio 雲端訂閱？  想要下載適用於 Visual Studio 產品系列的最新擴充功能？  Marketplace 可協助使用者尋找延伸模組、工具與服務，以進一步改進 Azure DevOps、Azure DevOps Server 與 Visual Studio Code。 您甚至可以成為發行者，並將自己的擴充功能發行到 Marketplace 上。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 

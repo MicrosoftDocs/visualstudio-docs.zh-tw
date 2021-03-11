@@ -5,19 +5,19 @@ description: Visual Studio 已發行版本和組件編號的清單，依日期�
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
-ms.date: 03/02/2021
+ms.date: 03/09/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 1577edce6db3f62df5e57d15aab1f0328a1950a6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 3f904c2528ce0daa228bc2cb8fbe1c48908ce0ea
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221102"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607375"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -29,6 +29,9 @@ ms.locfileid: "102221102"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.20 | 版本 | 2021年3月9日 | 16.4.31026.101 |
+| 16.7.13 | 版本 | 2021年3月9日 | 16.7.31026.100 |
+| 16.9.1 | 版本 | 2021年3月9日 | 16.9.31105.61 |
 | 16.10.0 | Preview 1 | 2021年3月2日 | 16.10.31025.218 |
 | 16.9.0 | 版本 | 2021年3月2日 | 16.9.31025.194 |
 | 16.9.0 | Preview 5 | 2021年2月23日 | 16.9.31019.194 |
@@ -214,6 +217,7 @@ ms.locfileid: "102221102"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.34 | 版本 | 2021年3月9日 | 15.9.28307.1440 |
 | 15.9.33 | 版本 | 2021年2月10日 | 15.9.28307.1401 |
 | 15.9.32 | 版本 | 2021年2月9日 | 15.9.28307.1382 |
 | 15.9.31 | 版本 | 2021 年 1 月 12 日 | 15.9.28307.1342 |
