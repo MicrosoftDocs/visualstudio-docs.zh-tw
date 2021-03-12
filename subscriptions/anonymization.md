@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
-ms.date: 02/20/2020
+ms.date: 03/11/2021
 ms.topic: conceptual
 description: 了解無法存取訂用帳戶時，訂閱者資料的匿名方式。
-ms.openlocfilehash: 34059c20a65c41f7998efe344e2d8d4ac63cf7af
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 69f41232a678a857908b30d63df2ae7f72b79904
+ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467488"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225959"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>將 Visual Studio 訂閱者資訊匿名化
 發生禁止訂閱者使用訂用帳戶的事件時 (例如訂用帳戶到期或刪除訂閱者的登入帳戶)，使用者的個人資訊 (例如名稱和登入帳戶) 基本上會變碼使其無法使用。  這麼做是為了保護訂閱者的個人資訊。
@@ -35,7 +35,9 @@ ms.locfileid: "92467488"
 答：否。  匿名化會回應導致無法存取訂用帳戶的事件，但並不會導致缺乏存取權。
 
 ### <a name="q--im-an-admin-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>問：我是組織訂閱的系統管理員。  如果訂閱者的其中一項資訊已匿名化，可以將該訂用帳戶重新指派給另一位使用者嗎？
-答：可以，只要訂用帳戶尚未過期，它可以重新指派給另一位訂閱者。
+答：可以。  如果符合下列條件，就可以重新指派訂閱：
+- 訂用帳戶尚未過期
+- 自從訂用帳戶上次指派給訂閱者之後，最少會通過90天。  例如，如果在6月1日將訂用帳戶指派給訂閱者，則必須等到至少8月30日前重新指派。
 
 ### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>問：如何避免因刪除登入電子郵件地址而造成匿名化？
 答：有兩種方法可以避免這個問題：
@@ -44,9 +46,9 @@ ms.locfileid: "92467488"
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 瞭解如何藉由 [關聯 MSA 和 AAD](/azure/active-directory/b2b/add-users-administrator)身分識別來防止匿名化。

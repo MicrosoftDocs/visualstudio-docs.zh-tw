@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 02/02/2021
+ms.date: 03/11/2021
 ms.topic: conceptual
 description: 瞭解訂用帳戶管理員的責任。
-ms.openlocfilehash: 9d2c724fafb41ee44e531a1eec41d76d7e888686
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 14b8832a8031ddbc96ce82e10a015c730530ce3e
+ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511289"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225985"
 ---
 # <a name="overview-of-admin-responsibilities"></a>系統管理員責任概觀
 以系統管理員身分，您可以管理組織的訂用帳戶。  系統管理員角色也會負責確保訂用帳戶會根據授權條款來管理。 本文概述系統管理員角色的職責、優點和限制。
@@ -21,7 +21,7 @@ ms.locfileid: "99511289"
 Visual Studio 訂用帳戶管理員有四個主要責任：
 
 1. **了解 Visual Studio 訂用帳戶的權益和限制。** 正確了解您的權益，可讓您使用雲端服務減少硬體成本，並減少生產前環境的每個使用者授權的軟體成本。 
-2. **將 Visual Studio 訂用帳戶指派給特定的具名個人，並且鼓勵大家使用。** 您的合約要求將 Visual Studio 訂用帳戶指派給特定的具名個人。 請與您的訂閱者聯繫，以確保他們能夠存取並充分利用 Visual Studio 訂用帳戶中包含的權益。
+2. **將 Visual Studio 訂用帳戶指派給特定的具名個人，並且鼓勵大家使用。** 您的合約要求將 Visual Studio 訂用帳戶指派給特定的具名個人。 追蹤您的訂閱者，確保他們能夠存取並充分利用其 Visual Studio 訂用帳戶中包含的權益。
 3. **正確清查生產前環境。** 若要確保與 Visual Studio 授權軟體互動的所有使用者都已使用他們自己的 Visual Studio 訂用帳戶取得適當的授權，這是不可或缺的作業。 
 4. **根據時間表追蹤使用者指派變更，並取得的額外授權。** Microsoft 大量授權 (VL) 合約和 MPSA 可讓您靈活地使用及指派 Visual Studio 訂用帳戶。 相對地，您應該根據協議中所述的時間表追蹤軟體使用和使用者指派的變更，並下單取得額外的授權。  為協助完成此責任，您可以在 Visual Studio 訂用帳戶管理入口網站中執行[使用量上限報表](maximum-usage.md)。 
 
@@ -33,7 +33,7 @@ Visual Studio 訂閱可讓開發人員安裝和使用軟體，以設計、開發
 | 依使用者授權                     | MSDN 平台和所有層級的 Visual Studio 訂用帳戶都是以每個使用者為基礎來授權。 要與這些產品和服務隨附的軟體互動 (安裝、設定或存取) 的每個開發小組成員，都必須有自己的 Visual Studio 訂用帳戶。                                                                                                                                                                                                                                                                                                                                  |
 | 無限制安裝                  | 每個授權的使用者可以在任意數目的裝置上安裝和使用軟體，來設計、開發、測試、評估及示範軟體。 例外情況是 Microsoft Office，僅提供一部桌上型電腦的授權。 您可以在公司、住家、學校，以及客戶辦事處的裝置或協力廠商所裝載的專用硬體上安裝及使用 Visual Studio 授權的軟體。                                                                                                                                                                                                                                  |
 | 不適用於生產環境 | Visual Studio 訂用帳戶軟體未授權用於生產環境，包括終端使用者存取但用於接受度測試或意見反應以外用途的任何環境、連線到生產資料庫的環境、支援災害復原或生產環境備份的環境，或在活動尖峰期間用於生產的環境。 此項目的例外狀況包含 [Visual Studio Licensing White Paper](https://aka.ms/vslicensing) (Visual Studio 授權白皮書) 中所述之某些訂用帳戶層級的特殊權益。                                                                                            |
-| 授權重新指派                     | 當使用者離開小組而不再需要授權時，您可以在過了 90 天後重新指派授權。 當您重新指派授權時，仍然提供已使用的任何產品金鑰，但將不會被取代。 針對擁有 Enterprise 合約 (EA) 的組織，原始使用者曾使用的任何權益 (例如 Pluralsight 訓練) 都會被重設。                                                                                                                                                                                                                                                 |
+| 授權重新指派                     | 當使用者離開小組，且不再需要授權時，您可以將授權重新指派給另一位使用者，如果至少已超過90天，因為它已指派給前一個使用者。 當您重新指派授權時，仍然提供已使用的任何產品金鑰，但將不會被取代。 針對擁有 Enterprise 合約 (EA) 的組織，原始使用者曾使用的任何權益 (例如 Pluralsight 訓練) 都會被重設。                                                                                                                                                                                                                                                 |
 | 終端使用者的例外狀況                  | 在軟體開發專案結束時，終端使用者通常會審核應用程式，並判斷它是否符合發行的必要準則。 此程序稱為使用者接受度測試 (UAT)。 企業贊助商或產品經理等小組成員可作為終端使用者的代理人。 如果以其他方式使用軟體符合所有的 Visual Studio 授權條款，則沒有 Visual Studio 訂用帳戶的終端使用者也可以存取軟體來進行 UAT。 其主要角色是設計、開發或測試軟體的人很罕見，也是「使用者」的資格。 |
 
 ## <a name="see-also"></a>另請參閱

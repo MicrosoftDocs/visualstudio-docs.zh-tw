@@ -7,15 +7,17 @@ ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 02/18/2021
 ms.topic: how-to
 description: 瞭解系統管理員如何刪除 Visual Studio 訂用帳戶管理入口網站中的訂用帳戶指派
-ms.openlocfilehash: 4eedc767e6397b371256c7957662147964782f75
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: efd0e149f390dd21a286b6ab7405ec36a43b8f78
+ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250020"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225972"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>刪除 Visual Studio 訂閱的指派
-當訂閱者因為離開公司、完成專案，或轉換至新的工作角色等原因，而不再需要 Visual Studio 訂閱時，您可以將其訂閱移除，並指派給其他人。 請注意，當您重新指派訂閱時，不會重設所有訂閱者權益。  新的使用者將能夠過領取任何未領取的金鑰，並檢視先前已領取的金鑰，然而系統「不會重設」領取限制。  針對擁有 Enterprise 合約 (EA) 的組織，原始使用者曾使用的任何權益 (例如 Pluralsight 訓練) 都會被重設。 
+當訂閱者不再需要 Visual Studio 訂用帳戶時（例如離開公司、完成專案或切換至新的工作角色），您可以移除其訂用帳戶，並將其指派給其他人。 請注意，當您重新指派訂閱時，不會重設所有訂閱者權益。  新的使用者將能夠過領取任何未領取的金鑰，並檢視先前已領取的金鑰，然而系統「不會重設」領取限制。  針對擁有 Enterprise 合約 (EA) 的組織，原始使用者曾使用的任何權益 (例如 Pluralsight 訓練) 都會被重設。 
+> [!Important]
+> 訂用帳戶只能指派給不同的使用者，如果在上次指派訂用帳戶後已超過90天。  例如，如果訂閱在6月1日指派給訂閱者，則必須等到8月30日才將其指派給新的訂閱者。 
 
 觀賞這段影片，或繼續閱讀以瞭解如何刪除指派。  
 
