@@ -1,6 +1,6 @@
 ---
 title: 使用規則運算式
-description: 瞭解您可以在 Visual Studio 中使用的一些正則運算式字元、運算子、結構和模式範例。
+description: 瞭解一些可在 Visual Studio 中使用的正則運算式字元、運算子、結構和模式範例。
 ms.custom: SEO-VS-2020
 ms.date: 09/13/2019
 ms.topic: conceptual
@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d62d35a296c70462aab75af5a8c6729179d5b34d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2314bb8fdb44d769a5067a39b01b40b0a74734f
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925768"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295758"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 
@@ -60,7 +60,7 @@ Visual Studio 會使用 [.NET 規則運算式](/dotnet/standard/base-types/regul
 |比對任何[空白字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` 符合「公用介面」片語|
 |比對任何[十進位數字字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d` 符合 "wd40" 中的 "4" 和 "0"|
 
-結合一些運算子和結構以符合十六進位數位的範例正則運算式 `\b0[xX]([0-9a-fA-F]+\)\b` 。 此運算式符合 "對 0xc67f"，但不符合 "0xc67g"。
+結合一些運算子和結構以符合十六進位數位的範例正則運算式 `\b0[xX]([0-9a-fA-F]+)\b` 。 此運算式符合 "對 0xc67f"，但不符合 "0xc67g"。
 
 > [!TIP]
 > 在 Windows 作業系統中，大部分的程式行都是以 "\r\n" 結尾 (歸位字元後面接著新行)。 這些字元並不可見，但會出現在編輯器中，並傳遞至 .NET 正則運算式服務。

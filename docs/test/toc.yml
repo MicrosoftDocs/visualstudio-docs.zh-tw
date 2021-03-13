@@ -119,6 +119,10 @@
           href: customizing-code-coverage-analysis.md
         - name: 對程式碼涵蓋範圍進行疑難排解
           href: troubleshooting-code-coverage.md
+    - name: 移轉
+      items:
+        - name: 從 MSTestV1 升級至 MSTestV2
+          href: mstest-update-to-mstestv2.md
 - name: Live Unit Testing
   items:
     - name: 簡介

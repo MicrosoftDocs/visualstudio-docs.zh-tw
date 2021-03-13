@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 026f6f2902b537312c0714b7eeb61d10e0fb980d
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: b9c7f41fd2977ca00294eabd941bc371d8a3220e
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683145"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295800"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 
@@ -357,7 +357,7 @@ ms.locfileid: "101683145"
 
 ### <a name="what-is-c"></a>什麼是 C#?
 
-[C#](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework) 是一種類型安全和物件導向程式設計語言，設計成穩固且易於了解。
+[C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/) 是一種類型安全和物件導向程式設計語言，設計成穩固且易於了解。
 
 ### <a name="what-is-aspnet-core"></a>什麼是 ASP.NET Core？
 
