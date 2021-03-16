@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d44dc484da904d2692b90e23d10db6edc6f6e7b8
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 49c3081e68baf4f2bf1d0975bcdae7ea25ab90b3
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223156"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571541"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 的運作方式
 
@@ -142,10 +142,8 @@ kubectl -n <namespace> apply -f <yaml file name>
 
 橋接器至 Kubernetes 具有下列限制：
 
-* 服務必須由單一 pod 支援，才能連接至該服務。 您無法連接到具有多個 pod 的服務，例如具有複本的服務。
-* Pod 可能只有在該 pod 中執行的單一容器，才能讓 Bridge Kubernetes 成功連接。 橋接器至 Kubernetes 無法連線到具有其他容器的 pod 的服務，例如側車由服務網格插入的容器。
+* Pod 可能只有在該 pod 中執行的單一容器，才能讓 Bridge Kubernetes 成功連接。
 * 目前，Kubernetes pod 的 Bridge 必須是 Linux 容器。 不支援 Windows 容器。
-* 當您使用 Bridge 與 Visual Studio Kubernetes 時，不能搭配 HTTPS 使用隔離。 只有當您使用 Visual Studio Code 時，才會在隔離模式中支援 HTTPS。
 * 橋接器至 Kubernetes 需要較高的許可權，才能在您的開發電腦上執行，以編輯主機檔案。
 * 無法在已啟用 Azure Dev Spaces 的叢集上使用 Bridge 至 Kubernetes。
 

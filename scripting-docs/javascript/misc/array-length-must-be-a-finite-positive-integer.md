@@ -1,5 +1,6 @@
 ---
-title: 陣列長度必須是有限的正整數 |Microsoft Docs
+description: 您使用不是整數的引數來呼叫陣列的函式， (整數包含零，再加上一組正整數) 。
+title: 陣列長度必須是有限的正整數 |Microsoft 檔
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,12 +15,12 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0b827e0cef5cd6c6ea4aeaddc9f32f02004c214
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 49d3d2985706ad6cfca9b6ac441baa039ccf04af
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862207"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572113"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>陣列長度必須是有限的正整數
 您使用不是整數的引數來呼叫 **陣列** 的函式， (整數包含零，再加上一組正整數) 。  
@@ -41,5 +42,5 @@ ms.locfileid: "91862207"
   
      陣列的大小沒有上限，除了最大整數值 (大約 4000000000) 。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用陣列](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

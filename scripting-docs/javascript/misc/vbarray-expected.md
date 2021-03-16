@@ -1,5 +1,6 @@
 ---
-title: 預期的 VBArray |Microsoft Docs
+description: 您提供的物件不是 Visual Basic safeArray （如果預期的話）。
+title: 預期的 VBArray |Microsoft 檔
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +15,15 @@ ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b4e6521e5d363c21311b19e2ecc1679981acac3
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: e344e24b3fbef7b7f119a36513c222e085328072
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862700"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572074"
 ---
 # <a name="vbarray-expected"></a>必須是 VBArray
-您提供了一個不是 Visual Basic safeArray 的物件（如果預期的話）。  
+您提供的物件不是 Visual Basic safeArray （如果預期的話）。  
   
 ```js
 new VBArray(safeArray);  
@@ -34,6 +35,6 @@ new VBArray(safeArray);
   
 - 確定您只將 **VBArray** 物件傳遞至 **VBArray** 的函式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VBArray 物件](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/VBArray)   
  [使用陣列](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

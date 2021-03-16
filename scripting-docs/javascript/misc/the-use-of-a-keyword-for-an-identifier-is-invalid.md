@@ -1,5 +1,6 @@
 ---
-title: 針對識別碼使用關鍵字是不正確 |Microsoft Docs
+title: 針對識別碼使用關鍵字是不正確 |Microsoft 檔
+description: 您無法使用關鍵字做為變數、函式或其他使用者定義識別碼的名稱。
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,12 +15,12 @@ ms.assetid: 04951b3b-a8b5-4d36-94f8-d2daee1ce0f8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ae4fd36d78ee2d9e17d3fe22c6013a338e85a21
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: ed4a27b735bfec34aa0bb7e9b09bc8f4e4e829c6
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862722"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571528"
 ---
 # <a name="the-use-of-a-keyword-for-an-identifier-is-invalid"></a>針對識別項使用關鍵字是無效的動作
 1048：識別碼的使用關鍵字無效  

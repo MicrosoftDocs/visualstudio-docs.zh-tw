@@ -1,5 +1,6 @@
 ---
-title: JavaScript)  (的運算子摘要 |Microsoft Docs
+description: 下表列出個別類別中的 JavaScript 運算子。
+title: JavaScript)  (的運算子摘要 |Microsoft 檔
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -12,12 +13,12 @@ ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de5d26f810fc1ab46c5ef09112fd62fada5d7d9b
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 47f14b0d8ee87877dc8f4305eb19679ea19fb9e3
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862096"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571684"
 ---
 # <a name="operator-summary-javascript"></a>運算子摘要 (JavaScript)
 下表列出 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 其各自類別中的運算子。  
@@ -81,5 +82,5 @@ ms.locfileid: "91862096"
   
  [void](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/void)  
   
-## <a name="requirements"></a>需求  
+## <a name="requirements"></a>規格需求  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]

@@ -1,5 +1,6 @@
 ---
-title: 預期的常數 |Microsoft Docs
+description: 您嘗試在條件式編譯測試語句中使用 (的非條件式編譯) 變數。
+title: 預期的常數 |Microsoft 檔
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,12 +15,12 @@ ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc791e97fcecf357177d140a3c30ee8c66db377b
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 3592b36568d388314ac1ce26513674df7dda58eb
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861975"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570449"
 ---
 # <a name="expected-constant"></a>必須是常數
 您嘗試在條件式編譯測試語句中使用 (的非條件式編譯) 變數。 條件式編譯測試語句必須評估為常數。  
@@ -30,6 +31,6 @@ ms.locfileid: "91861975"
   
 - 使用條件式編譯變數來取代變數。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [條件式編譯](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
  [條件式編譯變數](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))

@@ -1,6 +1,6 @@
 ---
-title: C/c + + 判斷提示 |Microsoft Docs
-description: 瞭解 C/c + + 判斷提示如何在 Visual Studio 的調試中運作。 判斷提示會指定您在程式中的某個點預期會是 true 的條件。
+title: C/c + + 判斷提示 |Microsoft 檔
+description: 瞭解如何在 Visual Studio 中使用 C/c + + 判斷提示。 判斷提示會指定您在程式中的某個點預期會是 true 的條件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -30,14 +30,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc58d125f82a33f982578f9a186d579d280e89e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e347bd8de6342a79d7523a1085f0e40cad8b0cbf
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865952"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571489"
 ---
 # <a name="cc-assertions"></a>C/C++ 判斷提示
+
 判斷提示語句會指定您在程式中的某個點預期會是 true 的條件。 如果該條件不是 true，判斷提示失敗，程式的執行會中斷，而且出現 [判斷提示 [失敗] 對話方塊](../debugger/assertion-failed-dialog-box.md) 。
 
 Visual Studio 支援以下列結構為基礎的 c + + 判斷提示語句：
@@ -53,6 +54,7 @@ Visual Studio 支援以下列結構為基礎的 c + + 判斷提示語句：
   您可以使用判斷提示來攔截邏輯錯誤、檢查作業的結果，以及測試應該已處理的錯誤狀況。
 
 ## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> 本主題中
+
 [判斷提示的運作方式](#BKMK_How_assertions_work)
 
 [Debug 和 Release 組建中的判斷提示](#BKMK_Assertions_in_Debug_and_Release_builds)
@@ -76,6 +78,7 @@ Visual Studio 支援以下列結構為基礎的 c + + 判斷提示語句：
 - [尋找未處理的錯誤](#BKMK_Testing_error_conditions_)
 
 ## <a name="how-assertions-work"></a><a name="BKMK_How_assertions_work"></a> 判斷提示的運作方式
+
 當偵錯工具因為 MFC 或 C 執行時間程式庫判斷提示而停止時，如果來源可供使用，則偵錯工具會流覽至原始程式檔中發生判斷提示的位置。 判斷提示訊息會出現在 [ [輸出] 視窗](../ide/reference/output-window.md) 和 [判斷提示 **失敗** ] 對話方塊中。 如果您想要儲存判斷提示訊息以供日後參考，可以將它從 [ **輸出** ] 視窗複製到文字視窗。 **輸出** 視窗也可能包含其他錯誤訊息。 請仔細檢查這些訊息，因為它們會提供判斷提示失敗原因的線索。
 
 使用判斷提示來偵測開發期間的錯誤。 作為規則，請針對每個假設使用一個判斷提示。 例如，如果您假設引數不是 Null，請使用判斷提示來測試該假設。
@@ -83,9 +86,11 @@ Visual Studio 支援以下列結構為基礎的 c + + 判斷提示語句：
 [本主題內容](#BKMK_In_this_topic)
 
 ## <a name="assertions-in-debug-and-release-builds"></a><a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> Debug 和 Release 組建中的判斷提示
+
 只有在 `_DEBUG` 已定義時，才會編譯判斷提示語句。 否則，編譯器會將判斷提示視為 null 語句。 因此，判斷提示語句在您的最終發行計畫中不會有額外負荷或效能成本，並可讓您避免使用指示詞 `#ifdef` 。
 
 ## <a name="side-effects-of-using-assertions"></a><a name="BKMK_Side_effects_of_using_assertions"></a> 使用判斷提示的副作用
+
 當您將判斷提示加入至程式碼時，請確定判斷提示沒有副作用。 例如，請考慮下列修改值的判斷提示 `nM` ：
 
 ```cpp
@@ -106,6 +111,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
 [本主題內容](#BKMK_In_this_topic)
 
 ## <a name="crt-assertions"></a><a name="BKMK_CRT_assertions"></a> CRT 判斷提示
+
 CRTDBG.H 裡。H 標頭檔會定義判斷提示檢查的 [_ASSERT 和 _ASSERTE 宏](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros) 。
 
 | 巨集 | 結果 |
@@ -128,7 +134,10 @@ CRTDBG.H 裡。H 標頭檔會定義判斷提示檢查的 [_ASSERT 和 _ASSERTE �
 
 如果判斷提示的運算式評估為 FALSE，則會根據) 預設使用訊息對話方塊來呼叫 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) ，以報告判斷提示失敗 (。 如果您在 [訊息] 對話方塊中選擇 [ **重試** ]，則會傳回 `_CrtDbgReport` 1，並 `_CrtDbgBreak` 透過呼叫偵錯工具 `DebugBreak` 。
 
+如果您需要暫時停用所有判斷提示，請使用 [_CtrSetReportMode](/cpp/c-runtime-library/reference/crtsetreportmode)。
+
 ### <a name="checking-for-heap-corruption"></a>檢查堆積損毀
+
 下列範例會使用 [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory) 來檢查堆積是否損毀：
 
 ```cpp
@@ -136,6 +145,7 @@ _ASSERTE(_CrtCheckMemory());
 ```
 
 ### <a name="checking-pointer-validity"></a>檢查指標有效性
+
 下列範例會使用 [_CrtIsValidPointer](/cpp/c-runtime-library/reference/crtisvalidpointer) 來確認指定的記憶體範圍是否適用于讀取或寫入。
 
 ```cpp
@@ -149,6 +159,7 @@ _ASSERTE(_CrtIsValidPointer( myData );
 ```
 
 ### <a name="checking-a-memory-block"></a>檢查記憶體區塊
+
 下列範例會使用 [_CrtIsMemoryBlock](/cpp/c-runtime-library/reference/crtismemoryblock) 來確認記憶體區塊位於本機堆積，且具有有效的區塊類型。
 
 ```cpp
@@ -158,6 +169,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [本主題內容](#BKMK_In_this_topic)
 
 ## <a name="mfc-assertions"></a><a name="BKMK_MFC_assertions"></a> MFC 判斷提示
+
 MFC 會為判斷提示檢查定義 [ASSERT](/previous-versions/ew16s3zc(v=vs.140)) 宏。 它也會定義 `MFC ASSERT_VALID` `CObject::AssertValid` 用來檢查衍生物件之內部狀態的和方法 `CObject` 。
 
 如果 MFC 宏的引數 `ASSERT` 評估為零或 false，宏會中止程式執行，並對使用者發出警示，否則會繼續執行。
@@ -180,6 +192,7 @@ ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 `ASSERT`宏不會在發行版本中產生任何程式碼。 如果您需要評估發行版本中的運算式，請使用 [VERIFY](/cpp/mfc/reference/diagnostic-services#verify) 宏，而不是 ASSERT。
 
 ### <a name="mfc-assert_valid-and-cobjectassertvalid"></a><a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID 和 CObject：： AssertValid
+
 [CObject：： AssertValid](/cpp/mfc/reference/cobject-class#assertvalid)方法提供物件內部狀態的執行時間檢查。 雖然您不需要在 `AssertValid` 衍生類別的情況下覆寫 `CObject` ，但您可以藉由執行此操作來提高類別的可靠性。 `AssertValid` 應該在所有物件的成員變數上執行判斷提示，以確認它們是否包含有效的值。 例如，它應該會檢查指標成員變數是否不是 Null。
 
 下列範例顯示如何宣告函式 `AssertValid` ：
@@ -268,6 +281,7 @@ void CMyData::AssertValid( ) const
 ## <a name="using-assertions"></a><a name="BKMK_Using_assertions"></a> 使用判斷提示
 
 ### <a name="catching-logic-errors"></a><a name="BKMK_Catching_logic_errors"></a> 捕捉邏輯錯誤
+
 您可以根據程式的邏輯，在必須是 true 的條件上設定判斷提示。 除非發生邏輯錯誤，否則判斷提示沒有任何作用。
 
 例如，假設您正在模擬容器中的天然氣分子，而變數 `numMols` 代表分子的總數目。 此數位不能小於零，因此您可能會包含 MFC 判斷提示語句，如下所示：
@@ -287,6 +301,7 @@ _ASSERT(numMols >= 0);
 [本主題內容](#BKMK_In_this_topic)
 
 ### <a name="checking-results"></a><a name="BKMK_Checking_results_"></a> 檢查結果
+
 判斷提示對於測試作業而言很重要，因為這些作業的結果不是快速視覺化檢查的明顯。
 
 例如，請考慮下列程式碼，此程式碼會 `iMols` 根據所指向的連結清單內容來更新變數 `mols` ：
@@ -310,6 +325,7 @@ _ASSERT(iMols<=numMols); // CRT version
 [本主題內容](#BKMK_In_this_topic)
 
 ### <a name="finding-unhandled-errors"></a><a name="BKMK_Testing_error_conditions_"></a> 尋找未處理的錯誤
+
 您可以使用判斷提示，在程式碼中的某個點測試是否有任何錯誤應該處理的錯誤狀況。 在下列範例中，圖形常式會傳回錯誤碼或零表示成功。
 
 ```cpp

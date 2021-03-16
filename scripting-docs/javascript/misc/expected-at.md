@@ -1,5 +1,6 @@
 ---
-title: 應為 ' @ ' |Microsoft Docs
+description: 您嘗試使用語句來建立要搭配條件式編譯語句使用的變數 @set ，但未在變數名稱之前放置 @ 符號 @。
+title: 應為 ' @ ' |Microsoft 檔
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,12 +15,12 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98a35421054e4d2236fe509224ed146063b61a79
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: e7aa02ed1e436c92014d44e57f2c71ff7db5f99b
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862302"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570618"
 ---
 # <a name="expected-"></a>應為 '\@'
 您嘗試使用語句來建立要搭配條件式編譯語句使用的變數 `@set` ，但未在變數名稱之前放置 @ 符號 **@** 。  

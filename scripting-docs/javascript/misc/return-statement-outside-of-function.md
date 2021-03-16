@@ -1,5 +1,6 @@
 ---
-title: 函式外部的 ' return ' 語句 |Microsoft Docs
+description: 您已在程式碼的全域範圍中使用 return 語句。
+title: 函式外部的 ' return ' 語句 |Microsoft 檔
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,12 +15,12 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ec17d9e421d06736a236e26dd5a1200a5564e7d
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: c275db9b2b13f6730ef62a757502b1d51a59ee43
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862041"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571658"
 ---
 # <a name="return-statement-outside-of-function"></a>函式外部的 'return' 陳述式
 您已 `return` 在程式碼的全域範圍中使用語句。 `return`語句只應出現在函式主體內。  
@@ -41,7 +42,7 @@ return [ expression ];
   
 - `return`從程式碼的主體 (全域範圍) 移除語句。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [return 語句](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/return)   
  [Function 物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
  [caller 屬性 (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/caller)
