@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecb7c774314a35f99de41af720b180475e0c55b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 649efd5202d8b153b5fe5b4dbf9ba5052883f352
+ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158271"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103483181"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 開啟並準備與 .exe/.dll 檔案相關聯的調試資料。
@@ -60,6 +60,8 @@ pCallback
 
 ## <a name="remarks"></a>備註
 .Exe/.DLL 檔案名的 debug 標頭會將相關聯的 debug 資料位置命名為。
+
+如果您要從符號伺服器載入偵錯工具資料， *symsrv.dll* 必須存在於已安裝使用者的應用程式或 *msdia140.dll* 的相同目錄中，或者必須存在於系統目錄中。
 
 這個方法會讀取 debug 標頭，然後搜尋並準備偵錯工具資料。 搜尋的進度可選擇性地透過回呼報告及控制。 例如， [IDiaLoadCallback：： NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) 會在 `IDiaDataSource::loadDataForExe` 方法尋找並處理 debug 目錄時叫用。
 

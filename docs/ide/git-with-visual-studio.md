@@ -2,18 +2,18 @@
 title: Visual Studio 中的 Git 體驗
 titleSuffix: ''
 description: 瞭解 Visual Studio 2019 新的整合式 Git 體驗如何協助您提高生產力。
-ms.date: 01/15/2021
+ms.date: 03/08/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 354be4d3e31ead2d77e62f61600c20c1774353cd
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: e97088f11c32eae6b5d0ef4b7a3490e120a1b6d2
+ms.sourcegitcommit: 8edb1a7e3e8eee48bf0a900f00b5ee8e08de8e1d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295786"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103481409"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 體驗
 
@@ -202,6 +202,7 @@ Visual Studio 中的「合併編輯器」是三向合併工具，可顯示內送
 
 ## <a name="see-also"></a>另請參閱
 
+- YouTube 上[Visual Studio 中的 Git](https://www.youtube.com/watch?v=GCZ9x3yqkyc)使用者入門影片
 - [宣佈推出 Visual Studio blog 文章中的 Git 體驗](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)
 - 在 YouTube 上[推出新的 Git 體驗](https://www.youtube.com/watch?v=UHrAg3iKoe0&t)
 - [Visual Studio 工具箱系列提供：](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) Channel 9 和[YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)上的新 Git 體驗影片

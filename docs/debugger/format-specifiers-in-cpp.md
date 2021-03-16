@@ -1,5 +1,5 @@
 ---
-title: 偵錯工具中的格式規範 (c + +) |Microsoft Docs
+title: 偵錯工具中的格式規範 (c + +) |Microsoft 檔
 description: 使用格式規範來變更在 [監看式]、[自動變數] 或 [區域變數] 視窗中顯示值的格式。 本文提供使用詳細資料。
 ms.custom: SEO-VS-2020
 ms.date: 3/11/2019
@@ -26,22 +26,24 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97c0730b2c1fd8d534fed232846dcca76c58ce2e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a3fa99594f42e7e9c3739a8a8d57abf226bc04c
+ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870632"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103483189"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中 c + + 的格式規範
+
 您可以使用格式規範變更在 [**監看式]、[** 自動變數]**和 [****區域變數**] 視窗中顯示值的格式。
 
 您也可以 **在 [即時** 運算] 視窗、 **命令** 視窗、追蹤 [點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，甚至是在來源視窗中使用格式規範。 如果您在這些視窗中的運算式上暫停，結果會顯示在 [資料提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中。 DataTip 顯示會反映格式規範。
 
 > [!NOTE]
-> 當 Visual Studio 原生偵錯工具變更為新的偵測引擎時，會加入一些新的格式規範，並移除一些舊的格式規範。 當您使用 C++/CLI 執行 Interop (混合原生和 Managed) 偵錯時仍會使用較舊的偵錯工具。
+> 當 Visual Studio 原生偵錯工具變更為新的偵錯工具引擎時，會加入一些新的格式規範，並移除一些舊的格式規範。 當您使用 C++/CLI 執行 Interop (混合原生和 Managed) 偵錯時仍會使用較舊的偵錯工具。
 
 ## <a name="set-format-specifiers"></a>設定格式規範
+
 我們將使用下列範例程式碼：
 
 ```C++
@@ -54,7 +56,7 @@ int main() {
 
 將 `my_var1` 變數加入至 [**監看** 式] 視窗（在進行調試時），並將它設為 [ **Debug**  >  ****]  >    >   接下來，以滑鼠右鍵按一下變數，然後選取 [ **十六進位顯示**]。 現在 [ **監看** 式] 視窗會顯示值0x0065。 若要查看以字元而非整數表示的此值，請先以滑鼠右鍵按一下並取消選取 [ **十六進位顯示**]。 然後在 **名稱** 資料行中 **，** 將字元格式規範 c 加入變數名稱後面。 **值** 資料行現在會顯示 **101 ' e '**。
 
-![Visual Studio 監看式視窗的螢幕擷取畫面，其中有一個選取的線條顯示 my_var1 的值為 101 ' e ' 和 int 類型。](../debugger/media/watchformatcplus1.png)
+![Visual Studio 監看式視窗的螢幕擷取畫面，其中有一個選取的線條顯示 my_var1，其值為 101 ' e ' 和 int 類型。](../debugger/media/watchformatcplus1.png)
 
 ::: moniker range=">= vs-2019" 
 您可以在 [ **監看** 式] 視窗中附加逗號 (，) ，以從可用的格式規範清單中查看並選取。 
@@ -64,7 +66,8 @@ int main() {
 ::: moniker-end
 
 ## <a name="format-specifiers"></a><a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 格式規範
-下表描述您可以在 Visual Studio 中使用的格式規範。 只有新的偵錯工具才支援粗體的規範，而不支援以 c + +/CLI 進行 interop 偵錯工具
+
+下表說明您可以在 Visual Studio 中使用的格式規範。 只有新的偵錯工具才支援粗體的規範，而不支援以 c + +/CLI 進行 interop 偵錯工具
 
 ::: moniker range=">= vs-2019" 
 
@@ -138,6 +141,7 @@ int main() {
 > 當 **hv** 格式規範出現時，偵錯工具會嘗試判斷緩衝區的長度，並顯示該元素的數目。 因為偵錯工具不一定能一直找到陣列確切的緩衝區大小，所以您應該盡可能使用大小規範 `(pBuffer,[bufferSize])` 。 當緩衝區大小不是可供使用時， **hv** 格式規範會很有用。
 
 ### <a name="size-specifiers-for-pointers-as-arrays"></a><a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 做為陣列的指標大小規範
+
 如果您希望將物件指標視為陣列，可以使用整數或運算式來指定陣列項目的數量。
 
 |規範|格式|原始的監看值|顯示的值|
@@ -147,7 +151,8 @@ int main() {
 |**expand(n)**|判斷值為整數的有效 C++ 運算式|pBuffer，expand(2)|顯示  `pBuffer`的第三個項目|
 
 ## <a name="format-specifiers-for-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的 Interop 偵錯格式規範
-偵錯原生和 C++/CLI 程式碼僅支援 **粗體** 的規範。
+
+偵錯原生和 C++/CLI 程式碼僅支援 **粗體** 的規範。 這需要使用 [Managed 相容性模式](../debugger/general-debugging-options-dialog-box.md)指定的舊版偵錯工具。
 
 |規範|格式|原始的監看值|顯示的值|
 |---------------|------------|--------------------------|---------------------|
@@ -170,7 +175,10 @@ int main() {
 |!|原始格式，忽略任何資料類型視圖自訂|\<customized representation>|4|
 
 ### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 使用 c + +/CLI 進行 interop 偵錯工具中記憶體位置的格式規範
+
 下表描述用於記憶體位置的格式化符號。 您可將記憶體位置規範用於評估結果為位置的任何數值或運算式。
+
+偵錯原生和 C++/CLI 程式碼僅支援 **粗體** 的規範。 這需要使用 [Managed 相容性模式](../debugger/general-debugging-options-dialog-box.md)指定的舊版偵錯工具。
 
 |符號|格式|原始的監看值|顯示的值|
 |------------|------------|--------------------------|---------------------|
@@ -183,6 +191,7 @@ int main() {
 |**木**|2 個位元組的字元 (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|
 
 ### <a name="size-specifier-for-pointers-as-arrays-in-interop-debugging-with-ccli"></a><a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 在使用 C++/CLI 的 Interop 偵錯中作為陣列之指標的大小規範
+
 如果您希望將物件指標視為陣列，可以使用整數來指定陣列項目的數量。
 
 |規範|格式|運算式|顯示的值|
