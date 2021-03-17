@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 684c6254aac8bd45926759e0b6ad96cfe3f6c8ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb30135ac5c137fdc836273855e2d9f000f1c6b2
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964416"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622630"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>從程式碼建立單元測試方法存根
 
@@ -24,7 +24,7 @@ ms.locfileid: "99964416"
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> [ **建立單元測試** ] 功能表命令僅適用于以 .NET Framework (為目標的 c # 程式碼，但不適用於 .net Core 或 .NET Standard) 。
+> [ **建立單元測試** ] 功能表命令僅適用于以 .net Framework 為目標的 c # 程式碼 (，但不適用 .net Core 或 .net Standard) 。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
@@ -52,7 +52,7 @@ ms.locfileid: "99964416"
 若要自動產生 NUnit 或 xUnit 的單元測試，請從 Visual Studio Marketplace 安裝下列其中一個測試架構延伸模組：
 
 * [測試產生器的 NUnit 延伸模組](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
-* [測試產生器的 xUnit.net 延伸模組](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
+* [測試產生器的 xUnit.net 延伸模組](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)
 
 ## <a name="when-should-i-use-this-feature"></a>何時應該使用這項功能？
 

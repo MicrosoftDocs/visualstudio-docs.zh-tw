@@ -5,19 +5,19 @@ description: Visual Studio 已發行版本和組件編號的清單，依日期�
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
-ms.date: 03/09/2021
+ms.date: 03/16/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 3f904c2528ce0daa228bc2cb8fbe1c48908ce0ea
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.openlocfilehash: 90d28d2658bba70ffc45a0b52beaee06f2ba97da
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607375"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622617"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -29,6 +29,7 @@ ms.locfileid: "102607375"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.9.2 | 版本 | 2021年3月16日 | 16.9.31112.23 |
 | 16.4.20 | 版本 | 2021年3月9日 | 16.4.31026.101 |
 | 16.7.13 | 版本 | 2021年3月9日 | 16.7.31026.100 |
 | 16.9.1 | 版本 | 2021年3月9日 | 16.9.31105.61 |
@@ -39,7 +40,7 @@ ms.locfileid: "102607375"
 | 16.4.19 | 版本 | 2021年2月10日 | 16.4.31009.304 |
 | 16.7.12 | 版本 | 2021年2月10日 | 16.7.31009.191 |
 | 16.8.5 | 版本 | 2021年2月9日 | 16.8.31005.135 |
-| 16.9.0 | Preview 4 | 2021年2月9日 | 16.9.31004.235 | 
+| 16.9.0 | Preview 4 | 2021年2月9日 | 16.9.31004.235 |
 | 16.7.11 | 版本 | 2021年2月9日 | 16.7.30928.143 |
 | 16.4.18 | 版本 | 2021年2月9日 | 16.4.30928.142 |
 | 16.9.0 | Preview 3 | 2021年1月21日 | 16.9.30914.41 |

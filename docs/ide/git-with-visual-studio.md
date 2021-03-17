@@ -2,18 +2,18 @@
 title: Visual Studio 中的 Git 體驗
 titleSuffix: ''
 description: 瞭解 Visual Studio 2019 新的整合式 Git 體驗如何協助您提高生產力。
-ms.date: 03/08/2021
+ms.date: 03/16/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e97088f11c32eae6b5d0ef4b7a3490e120a1b6d2
-ms.sourcegitcommit: 8edb1a7e3e8eee48bf0a900f00b5ee8e08de8e1d
+ms.openlocfilehash: e33b91088022a4588773737b2820677c84a65807
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103481409"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622643"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 體驗
 
@@ -48,7 +48,7 @@ Git 現在是 Visual Studio 2019 中的預設版本控制體驗。 自 [16.6 版
 > [!TIP]
 > 無論您的儲存機制是公用或私用，最好是在 GitHub 上安全地儲存程式碼的遠端備份，即使您不是使用小組也是一樣。 無論您使用哪一台電腦，這也可讓您的程式碼可供您使用。
 
-您可以選擇使用 **僅限本機** 選項來建立僅限本機的 Git 存放庫。 或者，您可以使用 **現有的遠端** 選項，將存放庫連結至任何其他 Git 提供者上任何現有的空白遠端存放庫。
+您可以選擇使用 **僅限本機** 選項來建立僅限本機的 Git 存放庫。 或者，您可以使用 **現有的遠端** 選項，將您的本機專案與 Azure DevOps 上現有的空白遠端存放庫或任何其他 Git 提供者連結在一起。
 
 ## <a name="clone-an-existing-git-repository"></a>複製現有的 Git 存放庫
 

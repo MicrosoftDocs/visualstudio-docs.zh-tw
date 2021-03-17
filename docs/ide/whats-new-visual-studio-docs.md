@@ -1,8 +1,8 @@
 ---
-title: Visual Studio 檔：2021年1月的新功能
+title: Visual Studio 檔：2021年2月的新功能
 titleSuffix: ''
-description: 2021年1月 Visual Studio 檔中的新功能。
-ms.date: 02/01/2021
+description: 2021年2月 Visual Studio 檔的新功能。
+ms.date: 03/08/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,101 +15,69 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 17b307e248e18710a93669116ccf032e533145f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9debf7605d19c50ad9bdc9a10f8cdb572ac7d089
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960490"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622505"
 ---
-# <a name="visual-studio-docs-whats-new-for-january-2021"></a>Visual Studio 檔：2021年1月的新功能
+# <a name="visual-studio-docs-whats-new-for-february-2021"></a>Visual Studio 檔：2021年2月的新功能
 
-歡迎使用2021年1月 Visual Studio 檔中的新功能。 本文列出在這段期間內文件的一些主要變更。 如需前幾個月新功能的相關資訊，請參閱 [新功能歷程記錄](whats-new-visual-studio-docs-history.md) 文章。
-
-## <a name="azure"></a>Azure
-
-**新文章**
-
-- [建立及部署至雲端服務 (延伸支援) Visual Studio (Preview) ](../azure/cloud-services-extended-support.md) -雲端服務延伸支援-沒有範本
-
-## <a name="code-quality"></a>程式碼品質
-
-**新文章**
-
-- [程式碼計量-類別耦合](../code-quality/code-metrics-class-coupling.md) -程式碼計量重新整理
-- [程式碼計量-可維護性索引範圍和意義](../code-quality/code-metrics-maintainability-index-range-and-meaning.md) -程式碼計量重新整理
+歡迎使用 Visual Studio 檔的新功能（2021年2月）。 本文列出在這段期間內文件的一些主要變更。 如需前幾個月新功能的相關資訊，請參閱 [新功能歷程記錄](whats-new-visual-studio-docs-history.md) 文章。
 
 ## <a name="debugger"></a>偵錯工具
 
-**新文章**
-
-- [在 WSL 2 中使用 Visual Studio 進行 .Net CORE WSL2 的偵錯工具](../debugger/debug-dotnet-core-in-wsl-2.md)
-
 **更新的文章**
 
-- [使用 Natvis 架構，在偵錯工具中建立 c + + 物件的自訂視圖](../debugger/create-custom-views-of-native-objects.md) -Natvis 中特殊字元的 XML 格式說明
-- [安全性警告：附加至不受信任的使用者所擁有的進程可能會造成危險。如果下列資訊看起來很可疑，或您不確定，請不要附加至此進程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md) -附加至不受信任的進程時，安全性警告的更新
-
-## <a name="deployment"></a>部署
-
-**更新的文章**
-
-- [ &lt; InstallChecks &gt; 元素 (](../deployment/installchecks-element-bootstrapper.md)啟動載入器) -更新啟動載入器套件檔以包含新的 BeforeInstallChecks 元素
-
-## <a name="extensibility"></a>擴充性
-
-**更新的文章**
-
-- [逐步解說：發佈 Visual Studio 擴充](../extensibility/walkthrough-publishing-a-visual-studio-extension.md) 功能-[PUBLIC_MOVE] 從公用 PR 6214 認可
+- [使用 Visual Studio 偵錯工具中的中斷點](../debugger/using-breakpoints.md) -協助工具的更新
 
 ## <a name="get-started"></a>開始使用
 
-**新文章**
-
-- [教學課程：在 Visual Studio 2017 的存放庫中開啟專案](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) -更新從存放庫開啟專案教學課程
-
 **更新的文章**
 
-- [教學課程：從存放庫開啟專案](../get-started/tutorial-open-project-from-repo.md) -更新從存放庫開啟專案教學課程
+- [教學課程：在 Visual Studio 2017 中從存放庫開啟專案](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) -更新另請參閱 VS2017 Open project 中的連結。
+- [教學課程：從存放庫開啟專案](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md) -將連結新增至 [從存放庫開啟專案] 頁面的 VS2017 版本
 
 ## <a name="ide"></a>IDE
 
-**新文章**
-
-- Visual Studio 新增的 JS 和 TS 預設 F1 頁面[的 JavaScript F1](./not-in-toc/default-f1-javascript.md)說明
-- [適用于 Visual Studio](./not-in-toc/default-f1-typescript.md) 新增的 JS 和 TS 預設 F1 頁面的 TypeScript F1 說明
-
 **更新的文章**
 
-- [Visual Studio 中的方案和專案](./solutions-and-projects-in-visual-studio.md) -新增 Visual Studio 影像庫的連結
+- [針對 MSBuild 問題進行疑難排解和建立記錄](./msbuild-logs.md) -新增使用專案系統工具延伸模組的指示
 
 ## <a name="install"></a>安裝
 
 **更新的文章**
 
-- [Visual Studio 組建編號和發行日期](../install/visual-studio-build-numbers-and-release-dates.md) -修補星期二更新
+- [使用最小離線版面配置來更新 Visual Studio](../install/update-minimal-layout.md)
+  - 在選項資料表中新增2017範例
+  - 新增 VS2017 的範例
 
 ## <a name="msbuild"></a>MSBuild
 
-**更新的文章**
-
-- [MSBuild 詞彙](../msbuild/msbuild-glossary.md) -將詞彙金鑰升階至 H2
-
-## <a name="profiling"></a>程式碼剖析
-
 **新文章**
 
-- [從 Visual Studio 分析工具將 dotnet 計數器視覺化](../profiling/dotnet-counters-tool.md) -新增 .net 計數器工具檔
+- [MSB3644：找不到 ' FrameworkVersion ' 的參考元件](../msbuild/errors/msb3644.md) -MSBuild 錯誤
+- [MSB8036：找不到 WINDOWS SDK ' version '](../msbuild/errors/msb8036.md) -MSBuild 錯誤
 
 ## <a name="test"></a>測試
 
 **更新的文章**
 
-- [使用 Test Explorer 執行單元測試](../test/run-unit-tests-with-test-explorer.md) -新增測試音訊提示檔
+- [在 Visual Studio 中使用適用于 c + + 的 Microsoft 單元測試架構](../test/how-to-use-microsoft-test-framework-for-cpp.md) -小型內容重新整理和編輯
+- [在 Visual Studio 中撰寫 c + + dll 的單元測試](../test/how-to-write-unit-tests-for-cpp-dlls.md) -小型內容重新整理和編輯
+- [使用 Test Explorer 執行單元測試](../test/run-unit-tests-with-test-explorer.md) -協助工具的更新
+- [逐步解說：針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) -協助工具的更新
+- [使用 Microsoft Fakes 隔離測試](../test/isolating-code-under-test-with-microsoft-fakes.md) 中的程式碼-在 Fakes 檔中明確提及 .net 5。0
 
 ## <a name="community-contributors"></a>社群參與者
 
-下列人員會在這段期間內參與 Visual Studio 檔。 感謝您！ 遵循《 [參與者指南》](/contribute/)中的指導方針，瞭解如何參與 Visual Studio 檔。
+下列人員會在這段期間內參與 Visual Studio 檔。 感謝您！ 遵循《 [參與者指南》](/contribute/)中的指引，瞭解如何參與 Visual Studio 檔。
 
-- [ericmutta](https://github.com/ericmutta) -Eric Mutta (1) 
-- [saip106](https://github.com/saip106) -Sai Gudigundla (1) 
+- [hyoshioka0128](https://github.com/hyoshioka0128) -Hiroshi Yoshioka (2) 
+- [alvinseville7cf](https://github.com/alvinseville7cf) -Alvin Seville (1) 
+- [CrabApl](https://github.com/CrabApl) -Kristopher (1) 
+- [inyong37](https://github.com/inyong37) -Inyong Hwang (1) 
+- [patuzov](https://github.com/patuzov) -Pavel Tuzov (1) 
+- [reduckted](https://github.com/reduckted) (1) 
+- [trebizonder](https://github.com/trebizonder) (1) 

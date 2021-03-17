@@ -1,5 +1,6 @@
 ---
-title: 需要物件成員 |Microsoft Docs
+description: 您嘗試對物件的資料成員執行作業，但該成員不存在。
+title: 需要物件成員 |Microsoft 檔
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,12 +15,12 @@ ms.assetid: 3af95632-80e1-47c4-8e4b-81c5f2be8017
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 791395d1fff89708e96a6dbe61fd73d954faac3b
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: d6637515920327855849906797cc38cd0b3b3a59
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862070"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622578"
 ---
 # <a name="object-member-expected"></a>必須是物件成員
 您嘗試對物件的資料成員執行作業，但該成員不存在。  
@@ -28,6 +29,6 @@ ms.locfileid: "91862070"
   
 - 確定您已正確輸入資料成員的名稱。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Object 物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)   
  [物件和陣列](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)
