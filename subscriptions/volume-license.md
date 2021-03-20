@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 03/08/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
-description: 瞭解大量授權合約的管理員如何存取 Visual Studio 訂用帳戶系統管理員入口網站
-ms.openlocfilehash: 4704b3258eedf8fd1639804a8792a1c18fafce77
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+description: 瞭解大量授權合約的管理員如何存取 Visual Studio 訂用帳戶管理員入口網站
+ms.openlocfilehash: 0ab0ca532c1c2cdb848a3f6df9862c1d80518248
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607284"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672526"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>以大量授權合約的系統管理員身分存取系統管理員入口網站
 
@@ -26,7 +26,7 @@ ms.locfileid: "102607284"
 這適用于所有大量授權合約類型，包括但不限於： Enterprise 合約、Enterprise 訂用帳戶、Select、Select Plus、Open、Open License、政府。 和學術協定。 
 
 ## <a name="resources"></a>資源
-- 如需有關銷售、訂用帳戶、帳戶和 Visual Studio 訂用帳戶計費的協助，請參閱 Visual Studio [訂閱支援](https://aka.ms/vssubscriberhelp)。
+- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請參閱 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)

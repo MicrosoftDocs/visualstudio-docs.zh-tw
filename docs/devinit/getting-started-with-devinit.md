@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 99daeeff40091bb3600b82b1f25cc9cf44c52cf9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 660bb5a2c3d235a347e478d55ae8176e87c5d626
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848236"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672478"
 ---
 # <a name="getting-started-with-devinit"></a>使用 devinit 開始使用
+
+> [!IMPORTANT]
+> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 這項功能 `devinit` 和相關聯的工具將無法再使用。 我們建議您參與我們的開發人員社區論壇，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。
 
 devinit 是一種工具，您可以藉由執行簡單的命令，讓任何人都能取得程式碼，並在您的存放庫中提高生產力。 您可以使用 devinit 來定義存放庫所需的所有全系統相依性，例如 SQL server、Node.js、Docker 或 IIS。 Devinit 可以叫用其他工具和套件管理員，以安裝您的存放庫所需的內容。 您可以在名為 [.devinit.js](devinit-json.md) 的 JSON 檔案中定義這些相依性，然後使用您的存放庫的下一個人必須執行 [`devinit init`](devinit-commands.md#init) ，才能安裝所有這些相依性。 因此，您可以在短短幾分鐘內完成這項工作，而不需要花上半天的時間登入新的存放庫。
 

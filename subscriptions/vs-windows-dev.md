@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 訂閱的 Windows 開發人員帳戶權益 |Microsoft Docs
+title: Visual Studio 訂閱的 Windows 開發人員帳戶權益 |Microsoft 檔
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 02/09/2021
+ms.date: 03/17/2021
 ms.topic: how-to
 description: 了解 Visual Studio 訂用帳戶隨附的 Windows 開發人員帳戶。
-ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
-ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
+ms.openlocfilehash: 4ea61f0bdb131c20412c0b99bbd09cbc44777fb7
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100089589"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672757"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Windows 開發人員帳戶
 Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中) 可讓您將免費和付費 Windows 應用程式提交至 Windows 市集。
@@ -46,16 +46,16 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 已包括       |  是|
-| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶   | Vl  | 已包括       |  是|
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 已包括                                                            |是|
-| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl                                        | 已包括                                                            |是|
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 已包括       |  Yes|
+| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶   | Vl  | 已包括       |  Yes|
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 已包括                                                            |Yes|
+| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl                                        | 已包括                                                            |Yes|
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                            |  NA|
 | MSDN 平台 (標準)                                          | VL, 零售                                              |  無法使用                                            |  NA|
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 ||
 
-<sup>1</sup>  *包括：禁止轉售 (NFR) 、FTE、Visual Studio 產業合作夥伴 (VSIP) 、BizSpark、MCT Software & Services Developer、最有價值專家 (MVP) 、區域主管 (RD) 。排除： Microsoft 合作夥伴網路 (MPN) ，試想，MCT Software & Services。*
+<sup>1</sup>  *包括：禁止轉售 (NFR) 、FTE、Visual Studio 產業合作夥伴 (VSIP) 、BizSpark、MCT Software & Services Developer、最有價值專家 (MVP) 、區域主管 (RD) 。排除： Microsoft 合作夥伴網路 (MPN) 、假想、MCT Software & Services、NFR Basic。*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
@@ -65,7 +65,7 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 ## <a name="support-resources"></a>支援資源
 - 需要使用 Windows 開發人員帳戶的說明嗎？  請參閱 [Windows 開發人員中心](https://developer.microsoft.com/windows)的[支援](https://developer.microsoft.com/windows/support)資源。
 - [Windows 程式開發](/windows/)
-- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [Visual Studio 訂閱支援](https://my.visualstudio.com/gethelp)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱

@@ -11,14 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a075733a0dee254d74bae7008b58af2510ba5f29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cdb37bf4e714cfc25e5bf82354856fd4d3d63e87
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862252"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672697"
 ---
 # <a name="require-psmodule"></a>require-psmodule
+
+> [!IMPORTANT]
+> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 這項功能 `devinit` 和相關聯的工具將無法再使用。 我們建議您參與我們的開發人員社區論壇，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。
+
 
 此 `require-psmodule` 工具可用來透過[安裝模組](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true)從[PowerShell 資源庫](https://www.powershellgallery.com/)安裝[powershell 模組](/powershell/scripting/developer/module/understanding-a-windows-powershell-module?view=powershell-7&preserve-view=true)，以便在 powershell 腳本中使用。
 
@@ -32,7 +36,7 @@ ms.locfileid: "99862252"
 | 名稱                                             | 類型   | 必要 | 值                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **評論**                                     | 字串 | No       | 選擇性批註屬性。 未使用。                                                   |
-| [**輸入**](#input)                              | 字串 | 是      | 要安裝的套件 (s) 。 如需詳細資料，請參閱下列 [輸入](#input) 。                       |
+| [**輸入**](#input)                              | 字串 | Yes      | 要安裝的套件 (s) 。 如需詳細資料，請參閱下列 [輸入](#input) 。                       |
 | [**additionalOptions**](#additional-options)     | 字串 | No       | 未使用。 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。              |
 
 ### <a name="input"></a>輸入
@@ -51,7 +55,7 @@ ms.locfileid: "99862252"
 
 此 `require-psmodule` 工具會設定一些 `Install-Module` 命令列引數，以確保 `Install-Module` 可執行無周邊。 以下列出這些引數，您可以在 [安裝模組](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true)中找到這些引數的相關檔。
 
-| 名稱         | 描述                                                                                                                                                                                                                                                                                                                                                               |
+| Name         | 描述                                                                                                                                                                                                                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **-Force**   | 安裝模組並覆寫有關模組安裝衝突的警告訊息。 如果電腦上已有相同名稱的模組，則強制允許安裝多個版本。 如果存在具有相同名稱和版本的現有模組，將會覆寫模組。 Force 和 AllowClobber 可以在 Install-Module 命令中一起使用。 |
 | **-WhatIf**  | -傳遞命令的試執行時，會新增 WhatIf 旗標 `devinit` 。                                                                                                                                                                                                                                                                                                       |

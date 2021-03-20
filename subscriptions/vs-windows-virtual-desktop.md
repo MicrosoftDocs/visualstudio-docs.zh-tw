@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 訂用帳戶中的 Microsoft Windows 虛擬桌面 |Microsoft Docs
+title: Visual Studio 訂用帳戶中的 Microsoft Windows 虛擬桌面 |Microsoft 檔
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: conceptual
 description: 瞭解如何透過您的 Visual Studio 訂用帳戶來利用 Microsoft Windows 虛擬桌面
-ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 2e7aad5d3f8214d39e5671e4bf5c4d5d357cd930
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537951"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671735"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>存取訂用帳戶中的 Windows 虛擬桌面 
 Visual Studio 訂閱者現在可以將其 Azure 開發/測試人員點數用於 Microsoft Windows 虛擬桌面服務。  
@@ -31,7 +31,7 @@ Visual Studio 訂閱者現在有數種方式可使用 Azure 訂用帳戶來支�
 - [Azure DevTest 隨用隨付訂用](vs-azure-payg.md)帳戶。  您可以建立 Azure 訂用帳戶並附加付款條件，讓您有順暢的方式來為您的 Windows 虛擬桌面使用量付費。 
 - [Azure Enterprise 合約 DevTest 優惠](azure-ea-devtest.md)。  有了這種供應專案，具有 Enterprise 合約的訂閱者可以用折扣價格支付 Azure 的 Windows 虛擬桌面費用。 
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>規格需求
 Windows 虛擬桌面需要 Azure Active Directory (Azure AD) 將會聯結 Vm。  使用者必須是此 Azure AD 的成員。  有兩個選項可執行 Azure AD：
 - Azure AD 目錄服務。  對於大部分的使用者而言，這是最容易執行的選項。
 - 執行網域控制站促銷的虛擬機器。  此選項需要更多的工作來設定，但可為大多數使用者提供較低的營運成本。
@@ -46,27 +46,28 @@ Windows 虛擬桌面需要 Azure Active Directory (Azure AD) 將會聯結 Vm。 
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 可用|  是          |
-| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶  | Vl | 可用|  是          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                             |  是             |
-| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl                                       | 可用                                        |  是           |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用|  是          |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                         |  是          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 可用|  Yes          |
+| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶  | Vl | 可用|  Yes          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                             |  Yes             |
+| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl                                       | 可用                                        |  Yes           |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用|  Yes          |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                         |  Yes          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
-<sup>1</sup>  *包括：禁止轉售 (NFR) 、FTE、最有價值專家 (MVP) 、區域主管 (RD) 、Microsoft 合作夥伴網路 (MPN) 、Visual Studio 產業合作夥伴 (VSIP) 、Microsoft 認證訓練人員、BizSpark、設想*
+<sup>1</sup>  *包括：禁止轉售 (NFR) 、FTE、最有價值專家 (MVP) 、區域主管 (RD) 、Microsoft 合作夥伴網路 (MPN) 、Visual Studio 產業合作夥伴 (VSIP) 、Microsoft 認證訓練人員、BizSpark、假想、NFR Basic*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
 
 不確定您使用哪一個訂用帳戶？  連接至以 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 查看指派給您電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Azure 檔](/azure/)
 - [Windows 虛擬桌面文件](/azure/virtual-desktop/)
+- [Visual Studio 訂閱支援](https://my.visualstudio.com/gethelp)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 -   如果您需要購買 Visual Studio 訂閱，請參閱：
      - 透過 Microsoft Store 的[零售購買定價](https://visualstudio.microsoft.com/vs/pricing/)
      - [大量授權方案](https://www.microsoft.com/licensing/default)

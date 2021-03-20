@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: f805b5c1c7b3b994c984dfdb6ce937f8cd51edf1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4fe78f33533931f91e97c61ec093602ee0071895
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848229"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671613"
 ---
 # <a name="nuget-restore"></a>nuget-restore
+
+> [!IMPORTANT]
+> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 這項功能 `devinit` 和相關聯的工具將無法再使用。 我們建議您參與我們的開發人員社區論壇，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。
 
 此 `nuget-restore` 工具會還原專案檔中所指定的相依性和專案特有工具。 請 [在這裡](/nuget/reference/cli-reference/cli-ref-restore)閱讀 NuGet 還原的詳細資訊。
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所包含的「Azure 社群支援」權益。
-ms.openlocfilehash: 57190bce0625108c332e307051cf28aec192f556
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: 43633e20bbf10988092a2d98d7d0a5ddd9b08601
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473331"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672103"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Azure 社群支援論壇
 直接透過「Azure 社群」從精選支援論壇取得協助。  「Azure 社群」權益可讓您存取著重在 Azure 相關主題的論壇集合。
@@ -70,18 +70,18 @@ Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：
 
 |                                          訂用帳戶層級                                           |     通道      |    優點    | 可續約？ |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (Standard) ，NFR<sup>1</sup>                            | VL, Azure, 零售 |   可用    |    是     |
-|                           具有 GitHub Enterprise 的 Visual Studio Enterprise 訂用帳戶                           | VL, Azure, 零售 |   可用    |    是     |
-|                          Visual Studio Professional (Standard)                          | VL, Azure, 零售 |   可用    |    是     |
-|                          Visual Studio Professional 訂用帳戶與 GitHub Enterprise                          | VL, Azure, 零售 |   可用    |    是     |
-|                              Visual Studio Test Professional (標準訂用帳戶)                               |    VL, 零售     |   可用    |    是     |
-|                                       MSDN 平台 (標準)                                       |    VL, 零售     |   可用    |    是     |
-| Visual Studio Enterprise (每月雲端) 、Visual Studio Professional (每月雲端) |        全部        | 無法使用 |     否     |
+|                           Visual Studio Enterprise (Standard) ，NFR<sup>1</sup>                            | VL, Azure, 零售 |   可用    |    Yes     |
+|                           使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶                           | VL, Azure, 零售 |   可用    |    Yes     |
+|                          Visual Studio Professional (Standard)                          | VL, Azure, 零售 |   可用    |    Yes     |
+|                          使用 GitHub Enterprise Visual Studio Professional 訂用帳戶                          | VL, Azure, 零售 |   可用    |    Yes     |
+|                              Visual Studio Test Professional (標準訂用帳戶)                               |    VL, 零售     |   可用    |    Yes     |
+|                                       MSDN 平台 (標準)                                       |    VL, 零售     |   可用    |    Yes     |
+| Visual Studio Enterprise (每月雲端) ，Visual Studio Professional (每月雲端) |        全部        | 無法使用 |     No     |
 
-<sup>1</sup>  *包括：禁止轉售 (NFR) 、Microsoft FTE、最有價值專家 (MVP) 、區域總監 (RD) 、Visual Studio 產業合作夥伴 (VSIP) 、BizSpark、想像、Microsoft 認證講師 (MCT)*
+<sup>1</sup>  *包括：禁止轉售 (NFR) 、Microsoft FTE、最有價值專家 (MVP) 、區域主管 (RD) 、Visual Studio 產業合作夥伴 (VSIP) 、BizSpark、假想、Microsoft 認證講師 (MCT) 。排除： NFR Basic*
 
 > [!NOTE]
-> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶前往以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
 
 不確定您使用哪一個訂用帳戶？  連接至以 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 查看指派給您電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 

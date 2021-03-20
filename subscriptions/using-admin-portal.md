@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 10/28/2020
 ms.topic: overview
 description: 瞭解如何使用訂用帳戶系統管理員入口網站開始管理您組織的 Visual Studio 訂用帳戶。
-ms.openlocfilehash: a9e23208bea480167452711442b52fb84b2bd8ee
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 3ac02dcd49af1c3277be0c3a15a2e3bf9c735f04
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904553"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104673069"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 訂閱系統管理員入口網站的總覽
 
@@ -25,8 +25,8 @@ Visual Studio 訂閱系統管理員入口網站提供工具，讓您在單一位
 ## <a name="important-considerations"></a>重要考量
 當您使用 Visual Studio 訂閱系統管理員入口網站時，請記住下列幾點：
 - **Visual Studio 訂用帳戶依使用者授權。** 每位訂閱者可以基於開發和測試用途在任意數量的電腦上使用軟體。
-- 根據貴組織購買的 Visual Studio 訂用帳戶， **僅為每位訂閱者指派一個訂用帳戶層級** 。 如果您的訂閱者獲派超過一個以上的訂閱等級，請編輯他們的設定，讓他們只擁有一個等級。
-- 如果升級訂閱 (在購買「升級」授權之後) 或以較低等級續訂， **也必須更新訂閱者的訂用帳戶等級** 。
+- 根據貴組織購買的 Visual Studio 訂用帳戶，**僅為每位訂閱者指派一個訂用帳戶層級**。 如果您的訂閱者獲派超過一個以上的訂閱等級，請編輯他們的設定，讓他們只擁有一個等級。
+- 如果升級訂閱 (在購買「升級」授權之後) 或以較低等級續訂，**也必須更新訂閱者的訂用帳戶等級**。
 - **請勿讓訂閱者彼此共用訂用帳戶。** 訂閱必須指派給具名的個人。  不允許將訂閱指派給小組。  您必須將訂用帳戶指派給使用全部或部分訂用帳戶權益的任一人 (供開發和測試用的軟體、Microsoft Azure、E-learning 等等)。
 
 ## <a name="the-subscribers-page"></a>訂閱者頁面
@@ -57,11 +57,11 @@ Visual Studio 訂閱系統管理員入口網站提供工具，讓您在單一位
 - [Visual Studio 授權技術白皮書](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [比較訂閱選項和定價](https://visualstudio.microsoft.com/vs/pricing)
 - [比較 Visual Studio IDE 功能](https://visualstudio.microsoft.com/vs/compare)
-- [Visual Studio 系統管理員和訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 

@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 訂閱的程式碼雜誌權益 |Microsoft Docs
+title: Visual Studio 訂閱的程式碼雜誌權益 |Microsoft 檔
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 01/19/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: 瞭解 Visual Studio 訂用帳戶中所含的程式碼雜誌權益。
-ms.openlocfilehash: a9aabd98fa872846d12e20b3aad3f617d1c97a64
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: 831885a89b67bc5d9ab50f49c59eb91bc5717262
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597395"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672037"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中包含的程式碼雜誌
 
@@ -49,16 +49,16 @@ ms.locfileid: "98597395"
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售| 可用       |  否          |
-| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶   | Vl| 可用       |  否          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                            |  否          |
-| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl                                      | 可用                                                            |  否          |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  否          |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  否          |
-| Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | 不適用 |
-| Visual Studio Enterprise NFR<sup>1</sup> | NFR | 無法使用 | 不適用 |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售| 可用       |  No          |
+| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶   | Vl| 可用       |  No          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 可用                                                            |  No          |
+| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl                                      | 可用                                                            |  No          |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  No          |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  No          |
+| Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
+| Visual Studio Enterprise NFR<sup>1</sup> | NFR | 無法使用 | N/A |
 
-<sup>1</sup>  *包括：禁止轉售 (NFR) 、Visual Studio 產業合作夥伴 (VSIP) 、FTE、BizSpark、假想、假想 Premium、Microsoft 合作夥伴網路 (MPN) 、最有價值專家 (MVP) 、區域主管 (RD) 、MCT Software & SERVICES Developer、MCT Software & services。*
+<sup>1</sup>  * 包括：禁止轉售 (NFR) 、Visual Studio 產業合作夥伴 (VSIP) 、FTE、BizSpark、假想、假想 Premium、MICROSOFT 合作夥伴網路 (MPN) 、最有價值專家 (MVP) 、區域主管 (RD) 、MCT Software & services DEVELOPER、MCT Software & services。  
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
@@ -74,7 +74,7 @@ ms.locfileid: "98597395"
 
 ## <a name="support-resources"></a>支援資源
 - 對於您的程式碼雜誌訂閱有任何疑問嗎？  透過電子郵件或電話聯絡 [代碼雜誌](https://www.codemag.com/contact) ，或提交線上支援要求。
-- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 [Visual Studio 訂閱支援](https://my.visualstudio.com/gethelp)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱
@@ -83,7 +83,7 @@ ms.locfileid: "98597395"
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 查看您的訂用帳戶中包含的其他絕佳權益。 請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 。
 
 如果您尚未啟用訂用帳戶隨附的 Azure DevTest 個人點數權益，請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並按一下 [工具] 類別中的 azure 磚，以設定您的 azure 訂用帳戶並兌換您的 Azure DevTest 個人點數。

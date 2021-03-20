@@ -2,7 +2,7 @@
 title: 教學課程：在 Visual Studio 2019 的存放庫中開啟專案
 description: 瞭解如何使用 Visual Studio 2019，在 Git 或 Azure DevOps 存放庫中開啟專案。
 ms.custom: get-started
-ms.date: 02/11/2021
+ms.date: 03/18/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2019
-ms.openlocfilehash: 5a637b2536c05e8f5678989f47dba61cd6ec7381
-ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
+ms.openlocfilehash: 76dcd5061e2e12688f5119598071c3235e620967
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "100335492"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671709"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教學課程：從存放庫開啟專案
 
@@ -53,6 +53,9 @@ ms.locfileid: "100335492"
    ![[Git 使用者資訊] 對話方塊的螢幕擷取畫面，您可以在 Visual Studio 2019 16.8 版和更新版本中輸入或編輯您的帳戶資訊。](../ide/media/vs-2019/git-user-information-dialog.png)
 
     選取 [ **儲存** ]，將資訊新增至 .gitconfig 儲存檔案。  (或，您可以稍後選取 [ **取消**] 來選擇是否要這麼做。 ) 
+
+    > [!TIP]
+    > 如需有關登入 Visual Studio 的詳細資訊，請參閱登 [入 Visual Studio](../ide/signing-in-to-visual-studio.md) 頁面。 如需有關如何使用 GitHub 帳戶登入的特定資訊，請參閱 Visual Studio 頁面 [中的使用 github 帳戶](../ide/work-with-github-accounts.md) 。
 
     接著，Visual Studio 會自動從儲存機制載入並開啟方案。
 
@@ -207,5 +210,6 @@ ms.locfileid: "100335492"
 
 - [在 Visual Studio 2017 的存放庫中開啟專案](tutorial-open-project-from-repo-visual-studio-2017.md)
 - [Visual Studio 2019 中的新 Git 體驗](../ide/git-with-visual-studio.md)
+- [比較 Git 和 Team Explorer 並存](../ide/git-team-explorer-feature-comparison.md)
 - [Azure DevOps Services：開始使用 Azure Repos 和 Visual Studio](/azure/devops/repos/git/gitquickstart/)
 - [Microsoft Learn：開始使用 Azure DevOps](/learn/modules/get-started-with-devops/)

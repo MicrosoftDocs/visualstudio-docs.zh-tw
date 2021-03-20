@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 50172f96a49e2384553a372ded0c889b30a23fff
-ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
+ms.openlocfilehash: 7d6609c49efb9f77c9823ca3f703b8843ddb753e
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100006393"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672670"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
+
+> [!IMPORTANT]
+> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 這項功能 `devinit` 和相關聯的工具將無法再使用。 我們建議您參與我們的開發人員社區論壇，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。
 
 此 `require-vscomponent` 工具可用來將 Visual Studio 設定匯入現有的 Visual Studio。 如需詳細資訊，請參閱 `.vsconfig` [ ](../install/import-export-installation-configurations.md)。
 

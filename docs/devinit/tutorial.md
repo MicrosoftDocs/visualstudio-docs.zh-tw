@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 32d407c4803c2b50276145a2c9a66c2c501f05ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5fc53a534b592b4f6a4799100ce16b1d45049457
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874417"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671795"
 ---
 # <a name="tutorial"></a>教學課程
+
+> [!IMPORTANT]
+> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 我們建議您參與我們的開發人員社區論壇，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。
 
 在本教學課程中，我們將探索如何使用 devinit 和 Codespaces 來設定 [eShopOnWeb 存放庫](https://github.com/andysterland/eShopOnWeb) 。 本教學課程假設 devinit 已可供使用，如 [開始使用] [頁面](getting-started-with-devinit.md)中所述。
 

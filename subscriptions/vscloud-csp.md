@@ -2,17 +2,17 @@
 title: 適合 CSP 購買的 Visual Studio 雲端訂閱
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: 如何為您的客戶購買和管理 Visual Studio 雲端訂用帳戶的雲端解決方案提供者資訊。
-ms.openlocfilehash: 78d4f39eef4b3daabc5bcbfbf47e969dd6213d36
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: b905d698f3d9f1a763ae7d9e9dbc8276a5362da6
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473292"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104673017"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>為您的客戶購買及管理 Visual Studio 雲端訂閱
 [雲端解決方案提供者計畫](https://partner.microsoft.com/cloud-solution-provider)中的合作夥伴可以為他們的客戶購買 Visual Studio Enterprise 和 Visual Studio Professional 的雲端訂閱。
@@ -20,9 +20,9 @@ ms.locfileid: "102473292"
 [比較雲端訂閱選項](https://visualstudio.microsoft.com/vs/pricing)
 
 > [!NOTE]
-> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶前往以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 您必須先在合作夥伴中心設定您的客戶租用戶，為此租用戶建立 Azure 訂用帳戶。
 
 [深入了解](/azure/devops/organizations/billing/csp/set-up-csp-customer)
@@ -69,7 +69,7 @@ ms.locfileid: "102473292"
 
 以下是您所見此試算表內容的解讀方法：
 
-| 計量類別    |   名稱                 |  單位                                |           說明                          |
+| 計量類別    |   Name                 |  單位                                |           說明                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  訂用帳戶                         | Visual Studio Enterprise 月租方案   |
 | Visual Studio     | Professional           |  訂用帳戶                         | Visual Studio Professional 月租方案 |
@@ -107,7 +107,7 @@ ms.locfileid: "102473292"
  答：目前沒有。 您的客戶可以充分利用 [Azure 開發/測試定價](https://azure.microsoft.com/pricing/dev-test/)，但我們並沒有任何針對 CSP 的特殊優惠。
 
 ## <a name="resources"></a>資源
-- 如需有關銷售、訂用帳戶、帳戶和 Visual Studio 訂用帳戶計費的協助，請參閱 Visual Studio [訂閱支援](https://aka.ms/vssubscriberhelp)。
+- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請參閱 Visual Studio [訂閱支援](https://aka.ms/vssubscriberhelp)。
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)

@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 9cd9fef6cebdefc190d37c067616e51c6d3e372f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6c8f487fcb35fc210db57f0c8a49a2a86f909e9
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908126"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672211"
 ---
 # <a name="devinit-commands"></a>devinit 命令
+
+> [!IMPORTANT]
+> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 這項功能 `devinit` 和相關聯的工具將無法再使用。 我們建議您參與我們的開發人員社區論壇，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。
 
 ## <a name="init"></a>Init
 
@@ -34,10 +37,10 @@ devinit init
 
 | 引數             | 必要 | 描述                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
-| -f,--file            | 否       | 檔案的路徑 `.devinit.json` 。                                         |
-| --錯誤-動作       | 否       | 指定如何處理錯誤。 選項： [停止]、[忽略]、[繼續] (預設) 。|
-| -v,--詳細資訊         | 否       | 發出詳細資訊輸出。                                                      |
-| -n,--試執行         | 否       | 試執行。                                                                  |
+| -f,--file            | No       | 檔案的路徑 `.devinit.json` 。                                         |
+| --錯誤-動作       | No       | 指定如何處理錯誤。 選項： [停止]、[忽略]、[繼續] (預設) 。|
+| -v,--詳細資訊         | No       | 發出詳細資訊輸出。                                                      |
+| -n,--試執行         | No       | 試執行。                                                                  |
 
 #### <a name="--file-argument"></a>--file 引數
 
@@ -81,12 +84,12 @@ devinit run -t <toolname>
 
 | 引數                                      | 必要 | 描述                                                                          |
 |-----------------------------------------------|----------|--------------------------------------------------------------------------------------|
-| -t,--工具                                     | 是      | 必要。 工具名稱。                                                             |
-| -i,--輸入                                    | 否       | 工具輸入值。 例如，檔案名、封裝或名稱。                     |
-| --錯誤-動作                                | 否       | 指定如何處理工具錯誤： [停止]、[忽略]、[繼續]。 預設值是停止。 |
-| -v,--詳細資訊                                  | 否       | 發出詳細資訊輸出。                                                                 |
-| -n,--試執行                                  | 否       | 試執行。                                                                             |
-| --&lt;arg1 &gt; &lt; arg2 &gt; ... &lt;argN&gt;  | 否       | 工具的其他命令列引數。                                       |
+| -t,--工具                                     | Yes      | 必要。 工具名稱。                                                             |
+| -i,--輸入                                    | No       | 工具輸入值。 例如，檔案名、封裝或名稱。                     |
+| --錯誤-動作                                | No       | 指定如何處理工具錯誤： [停止]、[忽略]、[繼續]。 預設值是停止。 |
+| -v,--詳細資訊                                  | No       | 發出詳細資訊輸出。                                                                 |
+| -n,--試執行                                  | No       | 試執行。                                                                             |
+| --&lt;arg1 &gt; &lt; arg2 &gt; ... &lt;argN&gt;  | No       | 工具的其他命令列引數。                                       |
 
 #### <a name="--error-action-argument"></a>--error-action 引數
 
@@ -140,7 +143,7 @@ devinit show -t <toolname>
 
 | 引數       | 必要 | 描述                                                                          |
 |----------------|----------|--------------------------------------------------------------------------------------|
-| -t,--工具      | 是      | 必要。 工具名稱。                                                             |
+| -t,--工具      | Yes      | 必要。 工具名稱。                                                             |
 
 列印指定工具的說明資訊。
 
@@ -152,7 +155,7 @@ devinit version
 
 列印 devinit 的目前版本資訊。
 
-## <a name="help"></a>説明
+## <a name="help"></a>Help
 
 ```console
 devinit help

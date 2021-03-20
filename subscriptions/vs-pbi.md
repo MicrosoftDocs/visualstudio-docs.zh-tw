@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 Power BI Pro 訂用帳戶。
-ms.openlocfilehash: 6d64c9e5d15e24dcf53dd5b45261305dffb43353
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 1801ed8deae3294837078401420e16efdc016979
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538068"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672900"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Power BI Pro
 
@@ -49,7 +49,7 @@ ms.locfileid: "96538068"
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro 權益連絡資訊](_img/vs-pbi/vs-pbi-contact-cropped.png "為您的帳戶提供您的連絡人資訊。")
 
-9. 下個頁面會確認您的 Power BI Pro 開發人員 (MSDN) 訂用帳戶價格為 0.00 USD。  按一下 [下一步]  。
+9. 下個頁面會確認您的 Power BI Pro 開發人員 (MSDN) 訂用帳戶價格為 0.00 USD。  按一下 [下一步] 。
 
 10. 最後，我們會收集一些付款資訊。  不要擔心，您不必支付任何費用。  請注意價格仍是 0.00 USD。  支付方式可以選擇信用卡、銀行帳戶或發票。  如果您選擇 **發票**，可能需要提供意見反應說明為何偏好此種付款方法。  請提供偏好付款方式所要求的資訊，然後按一下 [下單]。
     > [!div class="mx-imgBorder"]
@@ -63,16 +63,16 @@ ms.locfileid: "96538068"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  是|
-| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶  | Vl | 可用       |  是|
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  Yes|
+| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶  | Vl | 可用       |  Yes|
 | Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 無法使用                                                            |NA         |
 | 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl                                      | 無法使用                                                            |NA         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                            |NA         |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用       |  是|
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用       |  Yes|
 | Visual Studio Enterprise (每月雲端) | Azure                                       | 無法使用                                  |NA|
 ||
 
-<sup>1</sup>  *包括：禁止轉售 (NFR) 、Visual Studio 產業合作夥伴 (VSIP) 、BizSpark、MCT Software & SERVICES Developer、MCT Software & Service、最有價值專家 (MVP) 區域主管 (RD) 。 排除： Microsoft 合作夥伴網路 (MPN) 、FTE、想像。*
+<sup>1</sup>  *包括：禁止轉售 (NFR) 、Visual Studio 產業合作夥伴 (VSIP) 、BizSpark、MCT Software & SERVICES Developer、MCT Software & Service、最有價值專家 (MVP) 區域主管 (RD) 。 排除： Microsoft 合作夥伴網路 (MPN) 、FTE、假想、NFR Basic。*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
@@ -110,15 +110,15 @@ ms.locfileid: "96538068"
   - 請查看[線上文件](/power-bi/)。
   - 有註冊問題嗎？  請查看[以個人身分註冊 Power BI](/power-bi/service-self-service-signup-for-power-bi)
   - 在[支援頁面](https://powerbi.microsoft.com/support/)上瀏覽最常發生的問題、取得社群協助或提交支援票證。
-- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 [Visual Studio 訂閱支援](https://my.visualstudio.com/gethelp)
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 - 若要啟用您的 Power BI Pro 權益，請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 。
 - 啟用您的 [Azure DevTest 個人點數](vs-azure.md)，以利用您自己的開發沙箱。

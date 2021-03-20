@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 386b41dd7f1b19d223703570b0423de0855e983a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c1f5b1c587ea8d1d6335e19b2e7303cc12ad9783
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904804"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671655"
 ---
 # <a name="choco-install"></a>choco-install
+
+> [!IMPORTANT]
+> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 這項功能 `devinit` 和相關聯的工具將無法再使用。 我們建議您參與我們的開發人員社區論壇，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。
 
 此 `choco-install` 工具可用於安裝和更新 [chocolatey](https://chocolatey.org/) 套件。
 
@@ -29,7 +32,7 @@ ms.locfileid: "99904804"
 | 名稱                                             | 類型   | 必要  | 值                                                                                                          |
 |--------------------------------------------------|--------|-----------|----------------------------------------------------------------------------------------------------------------|
 | **評論**                                     | 字串 | No        | 選擇性批註屬性。 未使用。                                                                          |
-| [**輸入**](#input)                              | 字串 | 是       | 要取得安裝的封裝。 如需詳細資料，請參閱下列 [輸入](#input) 。                                                 |
+| [**輸入**](#input)                              | 字串 | Yes       | 要取得安裝的封裝。 如需詳細資料，請參閱下列 [輸入](#input) 。                                                 |
 | [**additionalOptions**](#additional-options)     | 字串 | No        | 傳遞至工具的其他選項。 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。       |
 
 ### <a name="input"></a>輸入
@@ -47,7 +50,7 @@ ms.locfileid: "99904804"
 
 此 `choco-install` 工具會設定一些 `choco` 命令列引數，以確保 `choco` 可執行無周邊。 以下列出這些引數，您可以在 [chocolatey 檔](https://chocolatey.org/docs/)中找到這些引數的相關檔。
 
-| 名稱                  | 描述                                                                                        |
+| Name                  | 描述                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | **--是**             | 確認所有提示-選擇肯定答案而非提示。 意味 著 `--accept-license.` |
 | **--沒有進度**     | 不要顯示進度-不會顯示進度百分比。                                         |

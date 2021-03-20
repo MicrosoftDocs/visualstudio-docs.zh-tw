@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsight 訓練課程訂用帳戶。
-ms.openlocfilehash: c5503c2adad075bdf6f186567fc372705f1ab55f
-ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
+ms.openlocfilehash: 6d12fcf49184d8e8293d4f4e3a3c552e859d3afe
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100542986"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671696"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -82,7 +82,7 @@ ms.locfileid: "100542986"
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      程式      | 無法使用 |       NA       |
 ||
 
-<sup>1</sup>  *包括：禁止轉售 (NFR) 、Visual Studio 產業合作夥伴 (VSIP) 、BizSpark、MCT Software & SERVICES Developer、MCT Software & Service、最有價值專家 (MVP) 、區域主管 (RD) 、Microsoft 合作夥伴網路 (MPN) 、FTE、想像。*
+<sup>1</sup>  *包括：禁止轉售 (NFR) 、Visual Studio 產業合作夥伴 (VSIP) 、BizSpark、MCT Software & SERVICES Developer、MCT Software & Service、最有價值專家 (MVP) 、區域主管 (RD) 、Microsoft 合作夥伴網路 (MPN) 、FTE、想像。排除： NFR Basic。*
 
 <sup>2</sup>  *當您的訂閱續約時，所選 Visual Studio 訂用帳戶中的 Pluralsight 權益會更新。比方說，如果您有每年續訂的年度訂閱，每年的權益都可供您續訂。如果您有多年的訂用帳戶，您可以在訂用帳戶期間將 Pluralsight 權益提供給您。 如果您更新了多年的訂用帳戶，權益會在續約之後再次提供。*
 
@@ -110,7 +110,7 @@ A：是。 作為 Visual Studio 的訂閱者，您可以在 Pluralsight 訓練�
 
 ## <a name="support-resources"></a>支援資源
 - [Pluralsight 說明中心](https://help.pluralsight.com/help) \(英文\) 可提供針對 Pluralsight 課程或 Pluralsight 網站的使用協助。
-- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 [Visual Studio 訂閱支援](https://my.visualstudio.com/gethelp)
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>另請參閱

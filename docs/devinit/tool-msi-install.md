@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 9b177d63ceabd8162c5ddd77e87c68d4a820b00a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2da7f26501cfa686cd0703f7dbbbef4053f761b
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896235"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671641"
 ---
 # <a name="msi-install"></a>msi-install
+
+> [!IMPORTANT]
+> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 這項功能 `devinit` 和相關聯的工具將無法再使用。 我們建議您參與我們的開發人員社區論壇，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。
 
 此 `msi-install` 工具是用來 `.msi` 使用 [msiexec](https://docs.microsoft.com/windows-server/administration/windows-commands/msiexec)安裝封裝檔案格式。
 
@@ -29,7 +32,7 @@ ms.locfileid: "99896235"
 | 名稱                                         | 類型   | 必要 | 值                                                                             |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------------|
 | **評論**                                 | 字串 | No       | 選擇性批註屬性。 未使用。                                             |
-| [**輸入**](#input)                          | 字串 | 是      | 要安裝的 `msi`。 如需詳細資料，請參閱下列 [輸入](#input) 。                      |
+| [**輸入**](#input)                          | 字串 | Yes      | 要安裝的 `msi`。 如需詳細資料，請參閱下列 [輸入](#input) 。                      |
 | [**additionalOptions**](#additional-options) | 字串 | No       | 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。                  |
 
 ### <a name="input"></a>輸入
@@ -44,7 +47,7 @@ ms.locfileid: "99896235"
 
 Msi 安裝工具會設定一些 `msiexec` 命令列引數，以確保 msi 可以執行無周邊。 以下列出這些引數，您可以在檔中找到這些引數的相關檔 `msiexec` [ ](https://docs.microsoft.com/windows-server/administration/windows-commands/msiexec)。
 
-| 名稱          | 描述                                                                                                                                                                                   |
+| Name          | 描述                                                                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | /i            | 執行正常安裝                                                                                                                                                                    |
 | /quiet        | 指定無需使用者互動的無訊息模式                                                                                                                                        |

@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b24f118613fa1004275702ad27a789ec16e6a347
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea3716cfd244cb81d6c380d2787babf5845c490a
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874516"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672635"
 ---
 # <a name="windowsfeature-enable"></a>windowsfeature-enable
+
+> [!IMPORTANT]
+> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 這項功能 `devinit` 和相關聯的工具將無法再使用。 我們建議您參與我們的開發人員社區論壇，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。
 
 此 `windowsfeature-enable` 工具可用來啟用 Windows 功能。
 
@@ -27,7 +30,7 @@ ms.locfileid: "99874516"
 | 名稱                                             | 類型   | 必要 | 值                                                                    |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------|
 | **評論**                                     | 字串 | No       | 選擇性批註屬性。 未使用。                                    |
-| [**輸入**](#input)                              | 字串 | 是      | 要安裝的 Windows 功能。 如需詳細資料，請參閱下列 [輸入](#input) 。   |
+| [**輸入**](#input)                              | 字串 | Yes      | 要安裝的 Windows 功能。 如需詳細資料，請參閱下列 [輸入](#input) 。   |
 | [**additionalOptions**](#additional-options)     | 字串 | No       | 請參閱下方的 [其他選項](#additional-options) 以取得詳細資料。         |
 
 ### <a name="input"></a>輸入

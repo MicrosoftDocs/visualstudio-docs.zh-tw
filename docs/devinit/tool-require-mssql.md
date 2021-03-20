@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: f24ccfbe66075cdb5b9f0fb257e401b611862044
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e39a03fe70d2e4399b758e06e9acb2e0de59ef08
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842663"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672518"
 ---
 # <a name="require-mssql"></a>require-mssql
+
+> [!IMPORTANT]
+> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 這項功能 `devinit` 和相關聯的工具將無法再使用。 我們建議您參與我們的開發人員社區論壇，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。
 
 此 `require-mssql` 工具是用來透過 MS SQL SERVER ISO 安裝 [Microsoft SQL Server 2019 Developer Edition](https://www.microsoft.com/sql-server/application-development) 。 SQL server 將 `localhost` 使用整合式 Windows 驗證來提供，sql server 將可透過連接字串存取 `"Server=localhost;Integrated Security=true;"` 。
 
@@ -53,7 +56,7 @@ ms.locfileid: "99842663"
 
 此 `require-mssql` 工具會設定一些安裝程式命令列引數，以確保安裝程式可以執行無周邊。 以下列出這些引數，您可以在 [SQL 安裝檔](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true)中找到這些引數的相關檔。
 
-| 名稱                                                               | 描述 |
+| Name                                                               | 描述 |
 |--------------------------------------------------------------------|-------------|
 | /q                                                                 |             |
 | /ACTION = 安裝                                                    |             |

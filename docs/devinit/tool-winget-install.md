@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3c236e63686d3882ed199c122fed9ebddfa8fa20
-ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
+ms.openlocfilehash: 4a2ad1ef30692d7d23f2d450f0ba32d6f38f8262
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100012356"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672621"
 ---
 # <a name="winget-install"></a>winget-安裝
+
+> [!IMPORTANT]
+> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 這項功能 `devinit` 和相關聯的工具將無法再使用。 我們建議您參與我們的開發人員社區論壇，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。
 
 此 `winget-install` 工具是用來安裝 [winget 套件](https://docs.microsoft.com/windows/package-manager/winget/)。
 
@@ -48,7 +51,7 @@ ms.locfileid: "100012356"
 
 Winget 安裝工具會設定數個 winget 命令列引數，以確保 winget 可以執行無周邊。 以下列出這些引數，您可以在檔中找到這些引數的相關檔 `winget install` [ ](https://docs.microsoft.com/windows/package-manager/winget/install)。
 
-| 名稱     | 描述                                                                                                                       |
+| Name     | 描述                                                                                                                       |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------|
 | --無訊息 | 以無訊息模式執行安裝程式。 這會隱藏所有 UI。 預設體驗會顯示安裝程式的進度。                       | 
 

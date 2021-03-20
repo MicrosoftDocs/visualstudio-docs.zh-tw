@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 訂用帳戶中的 LinkedIn Learning 權益 |Microsoft Docs
+title: Visual Studio 訂用帳戶中的 LinkedIn 學習權益 |Microsoft 檔
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: 了解包含為所選取 Visual Studio 訂用帳戶中所含 LinkedIn Premium 訂用帳戶一部分的 LinkedIn Learning 權益。
-ms.openlocfilehash: b3c8d0b61dbde3f9e45d6000e1de409255750931
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: dcf242dc09c833b091454ea1863184229e3b71c0
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537886"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672913"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 LinkedIn Learning 權益
 
@@ -65,21 +65,21 @@ ms.locfileid: "96537886"
 
 17. 您已成功啟用 Premium 訂閱供應項目，現在可以開始使用 LinkedIn Learning 和所有其他的 Premium 權益！
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning 首頁](_img/vs-linkedin/vs-linkedin-learning-home.png "歡迎使用 linkedin Premium 與 LinkedIn Learning！")
+   > ![LinkedIn Learning 首頁](_img/vs-linkedin/vs-linkedin-learning-home.png "歡迎使用 LinkedIn 學習的 LinkedIn Premium！")
 
 ## <a name="eligibility"></a>資格
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL，Azure，零售<sup>1</sup> | 6 個月       |  否。  僅提供給新訂閱者使用          |
-| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶   | Vl | 6 個月       |  否。  僅提供給新訂閱者使用          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 3 個月                                                            |否。  僅提供給新訂閱者使用         |
-| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl | 3 個月      | 否。  僅提供給新訂閱者使用         |
+| Visual Studio Enterprise (Standard)   | VL，Azure，零售<sup>1</sup> | 6 個月       |  不會。  僅提供給新訂閱者使用          |
+| 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶   | Vl | 6 個月       |  不會。  僅提供給新訂閱者使用          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 3 個月                                                            |不會。  僅提供給新訂閱者使用         |
+| 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl | 3 個月      | 不會。  僅提供給新訂閱者使用         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                            |  NA         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              | NA         |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
-<sup>1</sup>  *排除： NFR、Visual Studio 產業夥伴、Microsoft 合作夥伴網路 (MPN) 、FTE、MCT Software & Services Developer、BizSpark、假想、最有價值專家 (MVP) 、區域主管 (RD) 。 MCT 軟體 & 服務。*
+<sup>1</sup>  *排除： NFR、NFR Basic、Visual Studio 產業夥伴、Microsoft 合作夥伴網路 (MPN) 、FTE、MCT Software & Services Developer、BizSpark、假想、最有價值專家 (MVP) 區域主管 (RD) 。 MCT 軟體 & 服務。*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
@@ -94,16 +94,16 @@ ms.locfileid: "96537886"
 - 需要有關 LinkedIn Learning 的說明？  請參閱下列資源：
   - 有關[使用 LinkedIn Learning](https://www.linkedin.com/help/learning) 的說明。
   - 有關 [LinkedIn](https://www.linkedin.com/help/linkedin) 一般問題 (例如建立帳戶與設定檔，以及管理您的網路) 的說明。
-- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 [Visual Studio 訂閱支援](https://my.visualstudio.com/gethelp)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 查看您的訂用帳戶中包含的其他絕佳權益。 請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 。
 
 如果您尚未啟用訂用帳戶隨附的 Azure DevTest 個人點數權益，請造訪 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並按一下 [工具] 類別中的 azure 磚，以設定您的 azure 訂用帳戶並兌換您的 Azure DevTest 個人點數。

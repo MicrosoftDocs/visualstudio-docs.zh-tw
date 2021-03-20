@@ -11,16 +11,19 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 95ed318c327735c85fda854d207b36874eeffca7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: add43a5d130d8938193774d50bb643f48ecc3f8c
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970981"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104673043"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>如何搭配使用 Visual Studio 與 codespace (Preview) 
 
-Visual Studio 在 GitHub Codespaces 中有絕佳的開發支援。 您可以建立並連接到 codespace，並具備 Visual Studio 的完整功能，以在遠端裝載的環境上處理您的專案。 即使您的原始程式碼和工具是在 codespace 中，而且您的編譯和偵錯工具是在雲端中進行，您的開發體驗仍會像是在本機工作一樣快速且不會發生。 您可以從 Visual Studio 2019 Preview 內使用 codespace ([註冊有限的公用 Beta](https://github.com/features/codespaces/signup-vs)) 。
+> [!Important] 
+> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 我們建議您參與我們的 [開發人員社區論壇](https://developercommunity.visualstudio.com/home) ，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。 
+
+Visual Studio 在 GitHub Codespaces 中有絕佳的開發支援。 您可以建立並連接到 codespace，並具備 Visual Studio 的完整功能，以在遠端裝載的環境上處理您的專案。 即使您的原始程式碼和工具是在 codespace 中，而且您的編譯和偵錯工具是在雲端中進行，您的開發體驗仍會像是在本機工作一樣快速且不會發生。
 
 > [!NOTE]
 > 本文特別說明如何使用 Visual Studio 連接到 GitHub Codespaces。 您可以在 [Visual Studio Code](https://docs.github.com/github/developing-online-with-codespaces/connecting-to-your-codespace-from-visual-studio-code) 或 [GitHub](https://docs.github.com/github/developing-online-with-codespaces/developing-in-a-codespace) 檔中瞭解如何使用其他用戶端連接到 codespace。
