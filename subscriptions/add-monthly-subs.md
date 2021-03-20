@@ -1,18 +1,18 @@
 ---
-title: 將新的每月訂閱新增至訂用帳戶管理入口網站 |Microsoft Docs
+title: 將新的每月訂閱新增至訂用帳戶管理入口網站 |Microsoft 檔
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
-ms.date: 09/03/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: 瞭解如何在訂用帳戶管理入口網站中，新購買的每月 Visual Studio 訂閱
-ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 931f297a650926e4da5c13271a58091c9f00ddd3
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467592"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757642"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>將新的每月 Visual Studio 訂用帳戶新增至訂用帳戶管理入口網站
 當您使用 Azure 訂用帳戶購買新的每月 Visual Studio 訂用帳戶時，您可能需要將這些訂用帳戶新增至訂用帳戶管理入口網站，才能將它們指派給使用者。  
@@ -41,6 +41,9 @@ ms.locfileid: "92467592"
 - 新增每月訂閱的選項只有在您第一次購買時才可使用。  新增每月訂用帳戶之後，我們會在您每次登入入口網站時檢查是否有新的訂閱。 
 - 當找到新的訂用帳戶時，您可能會看到這些訂閱已指派給訂閱者。  這是因為有其他系統管理員可以存取 Azure 訂用帳戶，而且他們已經將新的 Visual Studio 訂用帳戶指派給使用者。  現在您也已將它們新增至入口網站，您可以管理這些訂用帳戶。 
 
+## <a name="support-resources"></a>支援資源
+- 如需 Visual Studio 訂閱管理的協助，請聯絡 [Visual Studio 訂閱支援](https://aka.ms/vsadminhelp)。
+
 ## <a name="next-steps"></a>下一步
 現在您已新增訂用帳戶，您已準備好將它們指派給使用者。  您可以透過數種方式來執行此動作：
 - [個別指派訂用帳戶](assign-license.md)
@@ -49,6 +52,6 @@ ms.locfileid: "92467592"
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 了解如何在管理入口網站中設定語言、連絡人、訂用帳戶層級及其他喜好設定
-ms.openlocfilehash: bdb6a5bc1160c75830fe9f1473222155d8fad781
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 93a9417a88d07dcc841c6a59a7353b0ffb5e7565
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511341"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757616"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>在管理入口網站中設定您合約的喜好設定
 超級管理員可以在系統管理員入口網站中設定特定的喜好設定 (系統管理員入口網站) 將會針對每個合約全域套用。  這些喜好設定將會在新增訂閱者時自動填入您系統管理員的訂用帳戶詳細資料，而且只能由超級管理員進行全域修改。  
@@ -73,7 +73,7 @@ ms.locfileid: "99511341"
 答：如果 **連絡人電子郵件地址** 喜好設定中未設定特定的電子郵件地址，則合約上的所有系統管理員都會收到要求。 
 
 ## <a name="resources"></a>資源
-- [Visual Studio 管理與訂閱支援](https://my.visualstudio.com/gethelp)
+- [Visual Studio 管理與訂閱支援](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)

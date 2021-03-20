@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 02/02/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 深入瞭解超級管理員和系統管理員角色，以及如何指派系統管理員。
-ms.openlocfilehash: 2d9abf5a3079320011cb979a8109278c878321e3
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: eca87026c681454925974f2e394737092c3e226d
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511328"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757590"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Visual Studio 訂用帳戶協定的超級管理員和系統管理員
 
@@ -42,7 +42,7 @@ ms.locfileid: "99511328"
 5. 當您按一下 [新增] 指派新的系統管理員之後，他們會收到一封電子郵件，邀請他們登入入口網站。  
 
 ## <a name="resources"></a>資源
-- [Visual Studio 管理與訂閱支援](https://my.visualstudio.com/gethelp)
+- [Visual Studio 管理與訂閱支援](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)

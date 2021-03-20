@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 03/11/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 瞭解訂用帳戶管理員的責任。
-ms.openlocfilehash: 14b8832a8031ddbc96ce82e10a015c730530ce3e
-ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
+ms.openlocfilehash: 817330093ce0a2e9df6379db42420057ded30486
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225985"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757681"
 ---
 # <a name="overview-of-admin-responsibilities"></a>系統管理員責任概觀
 以系統管理員身分，您可以管理組織的訂用帳戶。  系統管理員角色也會負責確保訂用帳戶會根據授權條款來管理。 本文概述系統管理員角色的職責、優點和限制。
@@ -21,7 +21,7 @@ ms.locfileid: "103225985"
 Visual Studio 訂用帳戶管理員有四個主要責任：
 
 1. **了解 Visual Studio 訂用帳戶的權益和限制。** 正確了解您的權益，可讓您使用雲端服務減少硬體成本，並減少生產前環境的每個使用者授權的軟體成本。 
-2. **將 Visual Studio 訂用帳戶指派給特定的具名個人，並且鼓勵大家使用。** 您的合約要求將 Visual Studio 訂用帳戶指派給特定的具名個人。 追蹤您的訂閱者，確保他們能夠存取並充分利用其 Visual Studio 訂用帳戶中包含的權益。
+2. **將 Visual Studio 訂用帳戶指派給特定的具名個人，並且鼓勵大家使用。** 您的合約要求將 Visual Studio 訂用帳戶指派給特定的具名個人。 請與您的訂閱者聯繫，以確保他們能夠存取並充分利用 Visual Studio 訂用帳戶中包含的權益。
 3. **正確清查生產前環境。** 若要確保與 Visual Studio 授權軟體互動的所有使用者都已使用他們自己的 Visual Studio 訂用帳戶取得適當的授權，這是不可或缺的作業。 
 4. **根據時間表追蹤使用者指派變更，並取得的額外授權。** Microsoft 大量授權 (VL) 合約和 MPSA 可讓您靈活地使用及指派 Visual Studio 訂用帳戶。 相對地，您應該根據協議中所述的時間表追蹤軟體使用和使用者指派的變更，並下單取得額外的授權。  為協助完成此責任，您可以在 Visual Studio 訂用帳戶管理入口網站中執行[使用量上限報表](maximum-usage.md)。 
 
@@ -41,7 +41,7 @@ Visual Studio 訂閱可讓開發人員安裝和使用軟體，以設計、開發
 - [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
-- [Visual Studio 管理與訂閱支援](https://my.visualstudio.com/gethelp)
+- [Visual Studio 管理與訂閱支援](https://aka.ms/vsadminhelp)
 
 ## <a name="next-steps"></a>下一步
 深入瞭解系統管理員的責任：
