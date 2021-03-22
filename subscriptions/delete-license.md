@@ -1,18 +1,18 @@
 ---
-title: 在訂用帳戶管理員入口網站中刪除 Visual Studio 訂用帳戶指派 |Microsoft 檔
+title: 在訂用帳戶系統管理員入口網站中刪除 Visual Studio 訂用帳戶指派 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
-description: 瞭解系統管理員如何刪除 Visual Studio 訂用帳戶管理入口網站中的訂用帳戶指派
-ms.openlocfilehash: efd0e149f390dd21a286b6ab7405ec36a43b8f78
-ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
+description: 瞭解系統管理員如何在 Visual Studio 訂閱系統管理入口網站中刪除訂用帳戶指派
+ms.openlocfilehash: d0ce93855cf56dab5e1a333e41e24ac2a368a540
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225972"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776929"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>刪除 Visual Studio 訂閱的指派
 當訂閱者不再需要 Visual Studio 訂用帳戶時（例如離開公司、完成專案或切換至新的工作角色），您可以移除其訂用帳戶，並將其指派給其他人。 請注意，當您重新指派訂閱時，不會重設所有訂閱者權益。  新的使用者將能夠過領取任何未領取的金鑰，並檢視先前已領取的金鑰，然而系統「不會重設」領取限制。  針對擁有 Enterprise 合約 (EA) 的組織，原始使用者曾使用的任何權益 (例如 Pluralsight 訓練) 都會被重設。 
@@ -33,10 +33,10 @@ ms.locfileid: "103225972"
    > [!NOTE]
    > 使用範本的大量刪除無法使用。 
    >
-   > 如果您透過 Azure Active Directory 安全性群組新增了訂用帳戶指派，則在系統管理員入口網站中進行刪除最多可能需要24小時的時間。  如需使用 Azure Active Directory 群組來管理訂用帳戶的詳細資訊，請參閱 [我們的文章](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) 。 
+   > 如果您透過 Azure Active Directory 安全性群組新增了訂用帳戶指派，則可能需要24小時的時間，才能在系統管理員入口網站中更新刪除。  如需使用 Azure Active Directory 群組來管理訂用帳戶的詳細資訊，請參閱 [我們的文章](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) 。 
 
 ## <a name="resources"></a>資源
-- [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)
+- [訂閱支援](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)

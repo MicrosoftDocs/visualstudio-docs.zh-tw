@@ -4,21 +4,21 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: 瞭解系統管理員如何編輯訂用帳戶指派。
-ms.openlocfilehash: f24c949224d895f4cc2926ab30db637835e7886c
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: b1779b80cc295e680ff1856181be42a6390fe25b
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249791"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776866"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>編輯 Visual Studio 訂用帳戶指派
 訂用帳戶管理員可讓您變更指派給組織內個人的訂用帳戶。  本文章討論您可以進行的變更類型，並提供必要的步驟。
 
    > [!NOTE]
-   > 如果您需要變更透過 Azure Active Directory 群組指派之訂閱者的訂用帳戶詳細資料，您必須將其從群組中移除，並個別將其新增至系統管理入口網站。  
+   > 如果您需要變更透過 Azure Active Directory 群組指派之訂閱者的訂閱詳細資料，您必須將其從群組中移除，並個別將其新增至系統管理入口網站。  
 
 ## <a name="change-subscriber-information"></a>變更訂閱者資訊
 您可以編輯訂閱者資訊，以更正錯誤或更新資訊。
@@ -56,7 +56,7 @@ ms.locfileid: "102249791"
 5. 上傳檔案後，您會看到通知，讓您知道作業已順利完成。 此時，您的編輯會反映在訂閱者資訊中。
 
 ## <a name="resources"></a>資源
-- [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)
+- [訂閱支援](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)

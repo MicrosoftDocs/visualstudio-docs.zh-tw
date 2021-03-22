@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
-ms.openlocfilehash: a865bfa5cf7d55504e022efb1b134bddde7d231c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: fce096a0999fefe16abc009c04f87cf4eff35748
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904679"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776828"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
@@ -70,8 +70,8 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 
 1. 在訂閱者入口網站的右上角選取您的名稱。
 2. 選取 [ **編輯設定檔** ] 按鈕。
-3. 在 [關於]  索引標籤中，您可以變更名稱、電子郵件、國家/地區、設定檔圖片和連絡人喜好設定。 在 [喜好設定]  索引標籤中，您可以選取慣用的語言、日期和時間模式、時區以及使用者介面主題。
-4. 當您完成變更時，請選取 [ **儲存** ]。
+3. 在 [關於] 索引標籤中，您可以變更名稱、電子郵件、國家/地區、設定檔圖片和連絡人喜好設定。 在 [喜好設定] 索引標籤中，您可以選取慣用的語言、日期和時間模式、時區以及使用者介面主題。
+4. 當您完成變更時，請選取 [ **儲存**]。
 5. 選取瀏覽器的 [ **上一頁** ] 按鈕以返回 [權益] 頁面。
 
 ### <a name="setting-communications-preferences"></a>設定通訊喜好設定
@@ -89,8 +89,8 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 
 1. 使用您的 Microsoft 帳戶 (MSA) 登入[訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
 2. 選取 **[訂閱]** 索引標籤。
-3. 在 [相關連結]  中，選擇 [新增其他帳戶]  。
-4. 輸入您的公司/學校帳戶電子郵件地址，然後選取 [ **新增** ]。
+3. 在 [相關連結] 中，選擇 [新增其他帳戶]。
+4. 輸入您的公司/學校帳戶電子郵件地址，然後選取 [ **新增**]。
 
 新增其他帳戶之後，您可以隨時更新或移除帳戶，方法是選取 [ **訂閱** ] 索引標籤，然後在 [ **相關連結** ] 區段中選擇適當的選項。
 
@@ -113,9 +113,12 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 > - 如果您選擇關閉 Microsoft 帳戶或 Azure AD，則會立即匿名您的個人資料。
 > - 如果您有使用中的訂閱，則不會完全移除您的個人資料。
 
+## <a name="support-resources"></a>支援資源
+- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 [Visual Studio 訂閱支援](https://aka.ms/vssubscriberhelp)。
+
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: cabuschl
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解如何在 Visual Studio 訂用帳戶中尋找、索取及匯出產品金鑰
-ms.openlocfilehash: 5e055295e76ee91dbaf641256b8b7e93a530fcfb
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 2e74269c3e5e49e776b00484de790472030dc1c1
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249261"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776567"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中尋找及索取產品金鑰
 本文說明如何從 https://my.visualstudio.com/productkeys 尋找、索取及匯出產品金鑰。  如需有關使用金鑰、零售和大量授權版本的金鑰來啟用產品，以及每日產品金鑰索取限制的詳細資訊，請造訪 [產品金鑰總覽](product-keys.md)。
@@ -67,7 +67,7 @@ ms.locfileid: "102249261"
 若要匯出您的金鑰，請選取 [產品金鑰] 頁面最右邊的 [ **匯出所有金鑰** ] 連結。  將會建立標題為 KeysExport.xml 的 .xml 檔案，而且您可以選擇開啟或儲存檔案。  您必須使用可以處理 .xml 檔案的應用程式開啟檔案。  例如，您可以使用 Excel 將檔案開啟為唯讀活頁簿。
 
 ## <a name="resources"></a>資源
-- [Visual Studio 訂閱支援](https://my.visualstudio.com/gethelp)
+- [Visual Studio 訂閱支援](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)

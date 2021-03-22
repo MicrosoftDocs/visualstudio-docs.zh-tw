@@ -1,21 +1,21 @@
 ---
-title: 將特定 Guid 指派給 Visual Studio 訂閱者 |Microsoft 檔
+title: 指派特定 Guid 給 Visual Studio 訂閱者 |Microsoft 檔
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 02/18/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 瞭解系統管理員如何對訂閱者進行特定訂用帳戶 GUID
-ms.openlocfilehash: 3c92a3e6cc35230f6bcf10320e92a50dc5ffb85b
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: a0721029186605c6b9a277c9eb95a370a086d7d2
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249676"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776646"
 ---
-# <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 訂用帳戶管理入口網站中指派特定訂閱
+# <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 訂閱系統管理入口網站中指派特定訂用帳戶
 
-系統管理員現在可以使用 Visual Studio 訂用帳戶管理入口網站，將特定訂用帳戶指派給個別的訂閱者。  如果組織有暫時的員工或廠商需要存取訂用帳戶一小段時間，這項功能就很有用。  系統管理員可以指派已部分使用的訂用帳戶，讓新的訂用帳戶更長期使用。  
+系統管理員現在可以使用 Visual Studio 訂閱系統管理入口網站，將特定訂用帳戶指派給個別的訂閱者。  如果組織有暫時的員工或廠商需要存取訂用帳戶一小段時間，這項功能就很有用。  系統管理員可以指派已部分使用的訂用帳戶，讓新的訂用帳戶更長期使用。  
 
 觀賞影片或繼續閱讀，以瞭解如何將特定訂閱 Guid 指派給使用者。 
 
@@ -59,11 +59,11 @@ ms.locfileid: "102249676"
 > - GUID 尚未指派給匯出清單中的另一位使用者。 
 
 ## <a name="frequently-asked-questions"></a>常見問題集
-### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>問：如何變更目前指派給個別使用者的訂用帳戶？
+### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>問：如何? 變更目前指派給個別使用者的訂用帳戶？
 答：如果您想要變更指派給使用者的 GUID，您必須先刪除該使用者的訂用帳戶。  如需詳細資訊，請參閱我們的 [刪除訂閱](delete-license.md) 文章，以取得詳細資訊。  刪除該使用者的訂用帳戶之後，請使用上面所述的程式來匯出清單並上傳新的訂用帳戶資訊。  
 
 ## <a name="resources"></a>資源
-- [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)
+- [訂閱支援](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
@@ -78,5 +78,3 @@ ms.locfileid: "102249676"
 - [編輯訂用帳戶](edit-license.md)
 - [刪除訂用帳戶](delete-license.md)
 - [判斷最大使用量](maximum-usage.md)
-
-

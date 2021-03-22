@@ -1,28 +1,28 @@
 ---
-title: 設定每月 Visual Studio 訂閱的管理員 |Microsoft 檔
+title: 設定每月 Visual Studio 訂閱的系統管理員 |Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: 設定每月訂閱的系統管理員
-ms.openlocfilehash: c018dbc3437c03c6d029a98c84e0b6cceaef9e2c
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 220f5986bb06b638504379b63e911f9bb62926b5
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249543"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776944"
 ---
-# <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>設定 Visual Studio 每月訂閱的管理員
+# <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>設定系統管理員以 Visual Studio 每月訂閱
 
-Visual Studio 每月訂閱是由系統管理員管理。 這些人可以指派訂用帳戶、編輯指派、新增或刪除訂用帳戶，以及執行其他訂用帳戶管理工作。
+Visual Studio 的每月訂閱是由系統管理員管理。 這些人可以指派訂用帳戶、編輯指派、新增或刪除訂用帳戶，以及執行其他訂用帳戶管理工作。
 
 ## <a name="the-azure-subscription-owner-is-the-first-admin"></a>Azure 訂用帳戶擁有者是第一個系統管理員
 
-當您購買 Visual Studio 每月訂用帳戶時，如果是用來進行購買的 Azure 訂用帳戶擁有者，系統會自動將您設定為這些訂用帳戶的系統管理員。
+當您購買 Visual Studio 的每月訂用帳戶，作為用來進行購買的 Azure 訂用帳戶擁有者時，系統會自動將您設定為這些訂用帳戶的系統管理員。
 
-您可以透過 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)購買每月訂閱，或藉由聯絡雲端解決方案提供者。 如果您透過 Visual Studio Marketplace 進行購買，購買體驗的結尾將提供您管理使用者的機會。 選擇該選項會帶您前往 Visual Studio 訂用帳戶的系統管理入口網站 [https://manage.visualstudio.com](https://manage.visualstudio.com) 。
+您可以透過 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)購買每月訂閱，或藉由聯絡雲端解決方案提供者。 如果您透過 Visual Studio Marketplace 進行購買，購買體驗的結尾將提供您管理使用者的機會。 選擇該選項會帶您前往 Visual Studio 訂閱系統管理入口網站- [https://manage.visualstudio.com](https://manage.visualstudio.com) 。
 
 一旦您購買了訂用帳戶，就可以隨時瀏覽[系統管理入口網站](https://manage.visualstudio.com)。 只需登入入口網站，然後在左上角選取適當的 Azure 訂用帳戶。
 
@@ -32,7 +32,7 @@ Visual Studio 每月訂閱是由系統管理員管理。 這些人可以指派�
 
 若要新增系統管理員：
 
-1. 連接到 Azure 入口網站，網址為 [portal.azure.com](https://portal.azure.com)。
+1. 連接至 [portal.azure.com](https://portal.azure.com)的 Azure 入口網站。
 2. 使用您用來購買 Visual Studio 每月訂閱的帳戶登入。
 3. 在 [ **Azure 服務**] 下，選擇 [ **成本管理 + 計費**]。
    > [!div class="mx-imgBorder"]
@@ -57,11 +57,10 @@ Visual Studio 每月訂閱是由系統管理員管理。 這些人可以指派�
 > [!NOTE]
 > 如果您看到使用者有權編輯您未以系統管理員身份建立的每月訂用帳戶，他們可能會在基礎 Azure 訂用帳戶中擁有可讓他們管理訂用帳戶的角色。 這些角色包括：擁有者、參與者、服務管理員或共同管理員。如需詳細資訊，請造訪 [新增帳單管理員](/azure/devops/organizations/billing/add-backup-billing-managers)。
 
-如需 Visual Studio 每月訂閱的詳細資訊，請參閱購買訂閱下的 [總覽](vscloud-overview.md) 。 若要購買 Visual Studio 每月訂閱，請造訪 Visual Studio Marketplace [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription) 。
+如需 Visual Studio 每月訂閱的詳細資訊，請參閱購買訂閱下的 [總覽](vscloud-overview.md) 。 若要購買 Visual Studio 的每月訂閱，請造訪 Visual Studio Marketplace [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription) 。
 
 ## <a name="resources"></a>資源
-- [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)
-
+- [訂閱支援](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
@@ -70,7 +69,7 @@ Visual Studio 每月訂閱是由系統管理員管理。 這些人可以指派�
 - [Microsoft 365 檔](/microsoft-365/)
 
 ## <a name="next-steps"></a>下一步
-深入瞭解如何管理 Visual Studio 訂閱。
+深入瞭解如何管理 Visual Studio 的訂閱。
 - [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)
 - [編輯訂用帳戶](edit-license.md)

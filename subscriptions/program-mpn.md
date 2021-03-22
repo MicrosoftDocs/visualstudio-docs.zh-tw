@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 有關提供哪些訂用帳戶、套用哪些規則，以及 MPN 中提供多少訂用帳戶的詳細資料。
-ms.openlocfilehash: 47b13147e87880ea90c07ee4746d5359571719b0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: eab7779c7aedbbe7116a6227b16b6b3f4f15471c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005829"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776749"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳戶
 
@@ -30,7 +30,7 @@ ms.locfileid: "91005829"
 
 ### <a name="additional-visual-studio-benefit-for-select-competencies"></a>特選專長認證的其他 Visual Studio 權益
 
-| 專長認證                                  | **銀級**專長認證所獲得的其他訂用帳戶 | **金級**專長認證所獲得的其他訂用帳戶 |
+| 專長認證                                  | **銀級** 專長認證所獲得的其他訂用帳戶 | **金級** 專長認證所獲得的其他訂用帳戶 |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | 應用程式開發                     | 5 個 Visual Studio Enterprise 訂用帳戶                  | 25 個 Visual Studio Enterprise 訂用帳戶               |
 | 雲端客戶關係管理      | 5 個 Visual Studio Enterprise 訂用帳戶                  | 25 個 Visual Studio Enterprise 訂用帳戶               |
@@ -71,15 +71,14 @@ MPN 規則規定，所有視為方案權益提供的軟體僅能供內部使用�
 使用透過 MPN 提供的 Visual Studio 訂用帳戶，獲得授權的使用者必須使用啟用 Visual Studio 訂用帳戶所用之相同的身分識別/登入來登入 Visual Studio。 未提供產品金鑰來解除鎖定產品;登入是執行 Visual Studio 的唯一選項。 在 Visual Studio 停止運作之前，Visual Studio 訂閱者最多可以離線操作 30 天。 在線上工作時，Visual Studio 會以無訊息模式定期重新整理使用者的授權狀態，以確保訂用帳戶仍然有效。
 
 ## <a name="resources"></a>資源
-
 - [Microsoft 合作夥伴網路程式指南](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [將 Visual Studio 訂用帳戶指派給 MPN 員工](manage-mpn-subscriptions.md)
 - [使用條款](https://www.microsoft.com/useterms/) - 透過 MPN 提供的 Visual Studio 訂用帳戶受到 Visual Studio 訂用帳戶非賣品 (NFR) 使用者授權合約的約束。
-
+- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 [Visual Studio 訂閱支援](https://aka.ms/vssubscriberhelp)。
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 

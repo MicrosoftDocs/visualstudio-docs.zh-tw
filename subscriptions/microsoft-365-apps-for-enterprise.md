@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 訂用帳戶中適用于企業的 Microsoft 365 應用程式 |Microsoft Docs
+title: Visual Studio 訂用帳戶中適用于企業的 Microsoft 365 應用程式 |Microsoft 檔
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: d1257931-392a-4a65-bf26-177737505122
-ms.date: 06/24/2020
+ms.date: 03/21/2021
 ms.topic: how-to
 description: 深入瞭解並安裝適用于企業的 Microsoft 365 應用程式
-ms.openlocfilehash: d23f8cccd284972d05d7085aea7e0b1cab0f275d
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: e1d629aae2d3c9e5d906a5593c287bd0b3250446
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537821"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776710"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中適用于企業的 Microsoft 365 應用程式
 您可以在選取的 Visual Studio 訂用帳戶中，取得適用于 enterprise (的 Microsoft 365 應用程式先前的 Office 365 Pro Plus)  
@@ -74,16 +74,16 @@ ms.locfileid: "96537821"
 
 ## <a name="support-resources"></a>支援資源
 - 如需適用于企業的 Microsoft 365 應用程式任何元件的技術支援，請流覽 https://support.microsoft.com/allproducts 並選取產品。
-- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請聯絡 Visual Studio [訂閱支援](https://aka.ms/vssubscriberhelp)。
 - 是否有關於 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
 - [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

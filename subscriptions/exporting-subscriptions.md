@@ -1,21 +1,21 @@
 ---
-title: 匯出 Visual Studio 訂用帳戶中的訂用帳戶資訊 |Microsoft 檔
+title: 在 Visual Studio 訂用帳戶中匯出訂用帳戶資訊 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解如何匯出訂閱者清單和其訂閱指派的詳細資料。
-ms.openlocfilehash: afd30470b5d9171f803c14b0d604eca626b70342
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 991128fc0f45b0caa0727c8ab418ba632d90e60c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250036"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776814"
 ---
 # <a name="export-subscription-information"></a>匯出訂用帳戶資訊
-在 Visual Studio 訂閱系統 [管理員入口網站](https://manage.visualstudio.com)中，您可以匯出訂閱者清單，以及其指派的詳細資料。 此資訊包括其名稱、電子郵件地址、替代電子郵件地址、訂用帳戶層級、指派日期、啟用狀態、到期日、參考欄位、是否啟用下載、國家/地區、語言、訂用帳戶狀態，以及訂用帳戶 GUID。  此清單會匯出為 CSV 檔案，您可以在 Microsoft Excel 中輕鬆開啟此檔案，以建立圖表、量軸和其他成品。
+在 Visual Studio 訂閱系統 [管理入口網站](https://manage.visualstudio.com)中，您可以匯出訂閱者清單，以及其指派的詳細資料。 此資訊包括其名稱、電子郵件地址、替代電子郵件地址、訂用帳戶層級、指派日期、啟用狀態、到期日、參考欄位、是否啟用下載、國家/地區、語言、訂用帳戶狀態，以及訂用帳戶 GUID。  此清單會匯出為 CSV 檔案，您可以在 Microsoft Excel 中輕鬆開啟此檔案，以建立圖表、量軸和其他成品。
 
 將您的所有訂閱者資訊集中在同一處可協助您執行下列作業：
 - 取得組織中小組和/或位置的使用中訂用帳戶的整體檢視。
@@ -33,7 +33,7 @@ ms.locfileid: "102250036"
 > ![匯出訂閱者](_img/exporting-subscriptions/exporting-subscriptions.png "按一下 [匯出] 以下載已指派訂用帳戶的完整清單。")
 
 ## <a name="resources"></a>資源
-- [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)
+- [訂閱支援](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)

@@ -4,27 +4,27 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
-description: 瞭解系統管理員如何使用大量新增功能或 Microsoft Azure Active Directory 群組，將授權指派給多個訂閱者
-ms.openlocfilehash: 76717090731b2e1fad0758c3c6298ab572bbb4de
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+description: 瞭解系統管理員如何使用「大量新增」功能或 Microsoft Azure Active Directory 群組，將授權指派給多個「訂閱者」
+ms.openlocfilehash: 4744f689e9b03e4a6cf8c804409abddfde16c527
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249568"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776892"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>指派訂閱給多個使用者
 訂用帳戶系統管理入口網站可讓您以一次一個或以大型群組方式新增使用者。  若要新增個別使用者，請參閱[新增單一使用者](assign-license.md)。
 
-若要新增大量的使用者，您可以使用大量新增功能，或者，如果您的組織使用 Microsoft Azure Active Directory)  (Azure AD，您可以使用 Azure AD 群組。 本文將說明這兩個選項的程式。  觀賞這段影片或繼續閱讀，以深入瞭解大量新增功能。 
+若要加入大量的使用者，您可以使用「大量新增」功能，或者，如果您的組織使用 Microsoft Azure Active Directory (Azure AD) ，您可以使用 Azure AD 群組。 本文將說明這兩個選項的程式。  觀賞這段影片或繼續閱讀，以深入瞭解大量新增功能。 
 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>使用大量新增來指派訂閱
-1. 登入 Visual Studio 訂用帳戶的系統管理入口網站 <https://manage.visualstudio.com> 。
+1. 登入 Visual Studio 訂閱管理入口網站 <https://manage.visualstudio.com> 。
 
 1. 若要一次加入多個訂閱者，請流覽至 [ **管理訂閱者** ] 索引標籤。選擇 [ **加入** ] 索引標籤，然後在下拉式清單中選擇 [ **大量新增** ]。  
 
@@ -75,41 +75,41 @@ ms.locfileid: "102249568"
    > [!div class="mx-imgBorder"]
    > ![當上傳多位訂閱者成功時顯示確認訊息](_img/assign-license-bulk/bulk-add-upload-success.png "當您的上傳成功完成時，您會收到確認訊息。")
 
-## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>使用 Azure Active Directory 群組來指派訂用帳戶 
-使用這項功能可讓您輕鬆地在訂用帳戶指派上保持最上層。 您可以在訂用帳戶管理入口網站中新增 Azure Active Directory 安全性群組，以確保群組中的所有人員都已獲指派訂用帳戶。 為了方便使用，當個人離開您的組織並從 Azure Active Directory 移除時，也會移除其訂用帳戶的存取權。 
+## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>使用 Azure Active Directory 群組指派訂用帳戶 
+使用這項功能可讓您輕鬆地在訂用帳戶指派上保持最上層。 您可以在訂用帳戶管理入口網站中新增 Azure Active Directory 安全性群組，以確保群組中的所有人員都已獲指派訂用帳戶。 為了方便使用，當個人離開您的組織並從 Azure Active Directory 中移除時，也會移除其訂用帳戶的存取權。 
 
 
 > [!IMPORTANT]
 >
-> 使用 Azure AD 群組來新增訂閱者時，適用下列限制：
+> 下列限制適用于使用 Azure AD 群組來新增訂閱者：
 > - 初次將群組新增至系統管理員入口網站時，系統管理員必須是 AAD 租使用者的成員。  新增群組之後，對群組成員資格所做的變更不需要系統管理員介入。 
 > - 群組至少必須包含一個成員。  不支援空白群組。
 > - 群組的使用者必須少於1000個。 
 > - 所有使用者都必須在群組的最上層。  「不支援」巢狀群組。
 > - 僅支援信任的協定。  (只能信任可 ' overallocate ' 訂用帳戶的協定。 ) 
 > - 群組的所有成員都必須有與其 Azure AD 帳戶相關聯的電子郵件地址。
-> - 使用 Azure AD 群組新增的訂用帳戶不支援通知的個別電子郵件地址。  
+> - 使用 Azure AD 群組新增的訂閱不支援通知的個別電子郵件地址。  
 
-觀看這段影片或繼續閱讀，以深入瞭解如何使用 Azure Active Directory 群組功能新增訂閱者。 
+觀賞這段影片或繼續閱讀，以深入瞭解如何使用 Azure Active Directory 群組功能新增訂閱者。 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 
-1. 登入 Visual Studio 訂用帳戶的系統管理入口網站 [https://manage.visualstudio.com](https://manage.visualstudio.com) 。
+1. 登入 Visual Studio 訂閱系統管理入口網站 [https://manage.visualstudio.com](https://manage.visualstudio.com) 。
 
 2. 若要一次加入多個訂閱者，請流覽至 [ **管理訂閱者** ] 索引標籤。
 
-3. 選擇 [ **新增** ] 索引標籤，然後在下拉式清單中選取 [ **Azure Active Directory 群組** ]。  
+3. 選擇 [ **加入** ] 索引標籤，然後在下拉式清單中選取 **Azure Active Directory 群組** ]。  
 
    > [!div class="mx-imgBorder"]
-   > ![選擇使用 Azure AD 進行大量新增](_img/assign-license-bulk/bulk-add-aad.png "選擇 [使用 Azure AD 大量新增] 功能，從您的 Azure Active Directory 群組提取訂閱者。")
+   > ![選擇使用 Azure AD 的大量新增](_img/assign-license-bulk/bulk-add-aad.png "選擇 [使用 Azure AD 的大量新增] 功能，從您的 Azure Active Directory 群組提取訂閱者。")
 
-4. 開始在表單欄位中輸入您想要新增的 Azure AD 組名。 這會搜尋您組織內可用的 Azure AD 群組。 
+4. 開始輸入您想要新增至表單欄位的 Azure AD 組名。 這會搜尋您組織內的可用 Azure AD 群組。 
 
 5. 當您選取群組時，欄位會自動填入組名。 在新增群組之前，您將可以選擇先查看該群組中的使用者。 接下來，您可以選擇訂用帳戶層級、下載許可權，以及群組的通訊喜好設定。 您可以視需要將詳細資料新增至參考欄位。 
 
    > [!div class="mx-imgBorder"]
-   > ![選擇您的 Azure AD 群組](_img/assign-license-bulk/bulk-add-aad-details.png "選擇您的 Azure AD 群組名稱，以從該群組新增訂閱者。")
+   > ![選擇您的 Azure AD 群組](_img/assign-license-bulk/bulk-add-aad-details.png "選擇您的 Azure AD 組名，以從該群組新增訂閱者。")
 
 6. 選取 [ **新增** ]，然後 **確認**。 
 
@@ -118,7 +118,7 @@ ms.locfileid: "102249568"
 8. 選取 [ **View 訂閱者** ] 以顯示群組的成員。 您可以查看群組中訂閱者的詳細資料，但無法對訂閱者或指派的訂閱進行任何編輯。    
 
 > [!NOTE]
-> 如果您已將訂用帳戶個別指派給後續新增為 Azure AD 群組一部分的使用者，這些訂用帳戶將會新增為群組的一部分，且不會再個別列出。 不過，如果個別訂用帳戶是針對不同的訂用帳戶層級，則會有兩個訂用帳戶。  範例：如果使用者有個別的 Visual Studio Professional 訂用帳戶，而且他們是您指派 Visual Studio Enterprise 訂用帳戶之群組的成員，他們將會有這兩個訂閱。  
+> 如果您已將訂用帳戶個別指派給後續新增成為 Azure AD 群組一部分的使用者，這些訂用帳戶將會新增為群組的一部分，且不會再個別列出。 不過，如果個別訂用帳戶是針對不同的訂用帳戶層級，則會有兩個訂用帳戶。  範例：如果使用者有個別的 Visual Studio Professional 訂用帳戶，而且他們是您指派 Visual Studio Enterprise 訂用帳戶之群組的成員，他們將會有這兩個訂閱。  
 >
 > 如果您從已指派訂用帳戶的 Azure Active Directory 群組中移除訂閱者，則可能需要24小時的時間，更新才會反映在系統管理員入口網站中。 
 
@@ -127,17 +127,17 @@ ms.locfileid: "102249568"
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>問：我可以選擇要在 Azure AD 群組內指派多個訂用帳戶層級嗎？ 
 答：否--群組中的每個人都會收到相同的訂用帳戶。 
 
-### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>問：是否可以編輯 Azure AD 群組中新增的個人訂閱者詳細資料？  
+### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>問：我可以編輯 Azure AD 群組中新增的個人訂閱者詳細資料嗎？  
 答：否--若要修改個別訂閱者的資訊，您必須將其從 Azure AD 安全性群組中移除，並個別指派訂用帳戶給他們。  
 
-### <a name="q-why-cant-i-see-the-option-to-use-azure-active-directory-groups-to-add-subscribers"></a>問：為什麼看不到使用 Azure Active Directory 群組來新增訂閱者的選項？
+### <a name="q-why-cant-i-see-the-option-to-use-azure-active-directory-groups-to-add-subscribers"></a>問：為什麼看不到使用 Azure Active Directory 群組來加入訂閱者的選項？
 答：這項功能目前僅適用于具有信任協定的組織。  選取 [ **詳細資料** ] 按鈕，以顯示您的合約資訊。
 
    > [!div class="mx-imgBorder"]
    > ![按一下 [詳細資料] 按鈕](_img/assign-license-bulk/bulk-add-agreement.png "按一下 [詳細資料] 按鈕，以查看您擁有的合約類型")
 
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>問：我已將某人新增至我的 Azure AD 安全性群組，但我在訂用帳戶管理入口網站中看不到他們新增的帳戶，且他們沒有訂用帳戶。 為什麼不用？  
-答：根據您的組織如何設定 Azure AD，您可能會在新增使用者之前看到最多24小時的延遲。 如果超過24小時，請流覽 [Visual Studio 管理與訂閱支援](https://my.visualstudio.com/gethelp)。  
+答：根據組織設定 Azure AD 的方式，您可能會在新增使用者之前看到最多24小時的延遲。 如果超過24小時，請造訪 [Visual Studio 管理和訂閱支援](https://my.visualstudio.com/gethelp)。  
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
@@ -147,4 +147,4 @@ ms.locfileid: "102249568"
 
 ## <a name="next-steps"></a>下一步
 - 只有一或兩個訂閱者要新增嗎？  參閱[新增單一使用者](assign-license.md)
-- 需要協助嗎？ 連絡人 [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 需要協助嗎？ 連絡人 [訂閱支援](https://aka.ms/vsadminhelp)。

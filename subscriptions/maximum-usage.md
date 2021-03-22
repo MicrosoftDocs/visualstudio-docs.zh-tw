@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解如何在管理入口網站中檢視已指派的訂用帳戶數目上限
-ms.openlocfilehash: e8ea9aa9001312c792e6f9d356dbc5f7cf58dfb8
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 29aaa3d2268d5fc0ae99a1a400238d633e9026a5
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904492"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104777009"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>使用 [使用量上限] 功能來追蹤指派的訂用帳戶數目
 Visual Studio 訂用帳戶系統管理員入口網站中的一項新功能，可協助您追蹤您已購買和指派的訂用帳戶數量，並識別您所指派之每個層級的尖峰數量（在過去一年內），以及在合約 (s) 的整個持續期間內。 
@@ -32,7 +32,7 @@ Visual Studio 訂用帳戶系統管理員入口網站中的一項新功能，可
 3. 將會顯示 [12 個月的最大使用量]，並顯示您在過去一年內為每個層級指派的最大訂用帳戶數目，以及達到該尖峰的月份。    
 
 ## <a name="view-your-assignment-history"></a>檢視指派記錄
-按一下 [Export full report] \(匯出完整報告\)  按鈕，除可看到每個訂用帳戶層級的尖峰指派，您還可以看到合約的活動執行帳戶，包括購買和指派。   (您可能需要向下滾動以查看按鈕。 )   
+按一下 [Export full report] \(匯出完整報告\) 按鈕，除可看到每個訂用帳戶層級的尖峰指派，您還可以看到合約的活動執行帳戶，包括購買和指派。   (您可能需要向下滾動以查看按鈕。 )   
 
 > [!div class="mx-imgBorder"]
 > ![[使用量上限] 完整報告](_img/maximum-usage/maximum-usage-full-report.png "完整報表包含所有訂用帳戶購買和指派的記錄。")
@@ -45,12 +45,12 @@ Visual Studio 訂用帳戶系統管理員入口網站中的一項新功能，可
 
 ## <a name="resources"></a>資源
 - [Visual Studio 授權技術白皮書](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio 管理與訂閱支援](https://aka.ms/vsadminhelp)
 - [大量授權條款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 檔](/visualstudio/)
-- [Azure DevOps 檔](/azure/devops/)
+- [Azure DevOps 文件](/azure/devops/) \(英文\)
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
