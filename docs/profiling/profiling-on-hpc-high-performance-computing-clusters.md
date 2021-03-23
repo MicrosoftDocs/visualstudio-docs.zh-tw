@@ -21,18 +21,18 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3faea797d57ca8874a198e5ee1bf76708ee20e7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d7ce643f0684520da52a450ff40c60928808d26
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917566"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884092"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>在 HPC (高效能運算) 叢集上進行分析
 
 您可以使用 Visual Studio 分析工具的取樣方法，在 Microsoft Windows HPC 叢集的計算節點上進行分析。 如需有關 HPC 的詳細資訊，請參閱 Microsoft 網站上的 [Windows HPC](https://azure.microsoft.com/solutions/big-compute/)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要在 HPC 計算節點上進行程式碼剖析，您必須執行下列動作︰
 
@@ -52,7 +52,7 @@ ms.locfileid: "99917566"
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
-| | |
+|參數 | 描述 |
 |------------------| - |
 | *頭* | 叢集前端節點的名稱。 |
 | *%FxPath%* | .NET Framework 4 安裝程式的路徑。 在 Visual Studio 安裝媒體的路徑是︰WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |

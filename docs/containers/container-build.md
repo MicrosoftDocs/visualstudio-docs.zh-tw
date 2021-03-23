@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 004427ced7d18d9a5af5c863172416fd8637aa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07ecc9a171cf6c0ca254ddbf284f116545ddd0f0
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536860"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884079"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio 如何建置容器化應用程式
 
@@ -92,7 +92,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="project-warmup"></a>專案預熱
 
-*專案*準備是指標對專案選取 docker 設定檔時所發生的一系列步驟 (也就是當載入專案或新增 Docker 支援時) ，以改善後續執行 (**f5**或**Ctrl** + **F5**) 的效能。 這可在 [**工具**  >  **選項**]  >  **容器工具**下設定。 以下是在背景中執行的工作：
+*專案* 準備是指標對專案選取 docker 設定檔時所發生的一系列步驟 (也就是當載入專案或新增 Docker 支援時) ，以改善後續執行 (**f5** 或 **Ctrl** + **F5**) 的效能。 這可在 [**工具**  >  **選項**]  >  **容器工具** 下設定。 以下是在背景中執行的工作：
 
 - 檢查 Docker Desktop 是否已安裝且正在執行。
 - 確定 Docker Desktop 已設定為與專案相同的作業系統。
@@ -105,9 +105,9 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 若要讓偵錯工具在容器中運作，Visual Studio 會使用磁片區對應，從主機電腦對應偵錯工具和 NuGet 資料夾。 [這裡](https://docs.docker.com/storage/volumes/)的 Docker 檔會說明磁片區對應。 以下是在您的容器中掛接的磁片區：
 
-|磁碟區|說明|
+|磁碟區|描述|
 |-|-|
-| **遠端偵錯程式** | 包含在容器中執行偵錯工具所需的位（視專案類型而定）。 詳細說明 |[調試](#debugging)區段中的詳細資料。
+| **遠端偵錯程式** | 包含在容器中執行偵錯工具所需的位（視專案類型而定）。 這會在 [調試](#debugging) 程式區段中更詳細地說明。|
 | **應用程式資料夾** | 包含 Dockerfile 所在的專案資料夾。|
 | **源資料夾** | 包含傳遞至 Docker 命令的組建內容。|
 | **NuGet 套件資料夾** | 包含從專案中的 *obj \{ 專案} .props* 檔案讀取的 NuGet 封裝和回溯資料夾。 |
@@ -166,10 +166,10 @@ ASP.NET Core 尋找符合 *Https* 資料夾下元件名稱的憑證，這就是�
 
 執行偵錯工具的程式取決於專案和容器作業系統的類型：
 
-|案例|偵錯工具進程|
+|狀況|偵錯工具進程|
 |-|-|
-| ** (Linux 容器的 .NET Core 應用程式) **| Visual Studio 下載 `vsdbg` 並將它對應至容器，則會使用您的程式和引數來呼叫， (也就是 `dotnet webapp.dll`) ，然後偵錯工具會附加至進程。 |
-| ** (Windows 容器的 .NET Core 應用程式) **| Visual Studio 使用 `onecoremsvsmon` 並將它對應至容器、以進入點的形式執行，然後 Visual Studio 連接到該容器並附加至您的程式。 這與您通常會在另一部電腦或虛擬機器上設定遠端偵錯程式的方式類似。|
+| **(Linux 容器的 .NET Core 應用程式)**| Visual Studio 下載 `vsdbg` 並將它對應至容器，則會使用您的程式和引數來呼叫， (也就是 `dotnet webapp.dll`) ，然後偵錯工具會附加至進程。 |
+| **(Windows 容器的 .NET Core 應用程式)**| Visual Studio 使用 `onecoremsvsmon` 並將它對應至容器、以進入點的形式執行，然後 Visual Studio 連接到該容器並附加至您的程式。 這與您通常會在另一部電腦或虛擬機器上設定遠端偵錯程式的方式類似。|
 | **.NET Framework 應用程式** | Visual Studio 使用 `msvsmon` 並將它對應至容器、將其作為 Visual Studio 可連接的進入點一部分來執行，並附加至您的程式。|
 
 如需的詳細資訊 `vsdbg.exe` ，請參閱 [Offroad 在 Linux 和 OSX 上的 .net Core 和 Visual Studio 的](https://github.com/Microsoft/MIEngine/wiki/Offroad-Debugging-of-.NET-Core-on-Linux---OSX-from-Visual-Studio)。
@@ -185,7 +185,7 @@ Visual Studio 會根據專案類型和容器作業系統使用自訂容器進入
 
 容器進入點只能在 docker 撰寫專案中進行修改，而不能在單一容器專案中修改。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解如何在您的專案檔中設定其他 MSBuild 屬性，以進一步自訂您的組建。 請參閱 [容器專案的 MSBuild 屬性](container-msbuild-properties.md)。
 

@@ -11,12 +11,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab5ddea8ddb3fdd741f4df3b3b53f4239d016049
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 81311e9dea2c5367b44cdf2cc8e2327a8aff5617
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928955"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884105"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列以分析工具啟動獨立的 .NET Framework 應用程式並收集並行資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具啟動 .NET Framework stand-alone 獨立 (用戶端) 應用程式，並收集處理序和執行緒並行資料
@@ -39,7 +39,7 @@ ms.locfileid: "99928955"
 
    - [/start](../profiling/start.md) 選項將分析工具初始化。
 
-     | | |
+     | 命令 | 描述 |
      |-------------------------------------| - |
      | **/start:concurrency** | 啟用收集資源爭用和執行緒執行資料。 |
      | **/start:concurrency,resourceonly** | 啟用只收集資源爭用資料。 |
@@ -49,7 +49,7 @@ ms.locfileid: "99928955"
 
      您可以使用下列任一選項搭配 **/start:concurrency** 選項。
 
-   | 選項 | Description |
+   | 選項 | 描述 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **：**[ `domain\` ]`username` | 指定要授與程式碼剖析工具存取權之帳戶的選擇性網域和使用者名稱。 |
    | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 |
@@ -63,7 +63,7 @@ ms.locfileid: "99928955"
 
     您可以使用下列任一選項搭配 **/launch** 選項。
 
-   |選項|Description|
+   |選項|描述|
    |------------|-----------------|
    |[/args](../profiling/args.md) **：**`Arguments`|指定包含要傳遞至目標應用程式的命令列引數的字串。|
    |[/console](../profiling/console.md)|在個別的視窗中啟動目標命令列應用程式。|
@@ -76,7 +76,7 @@ ms.locfileid: "99928955"
 
 1. 下列 *VSPerfCmd.exe* 選項配對會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|Description|
+    |選項|描述|
     |------------|-----------------|
     |[/globalon/globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [/processoff](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|

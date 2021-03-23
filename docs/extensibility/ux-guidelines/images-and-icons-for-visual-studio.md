@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31ed0ccb09074798ddf56f601e9ad26facd505f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c7bc09147c2c9a6cf36a1a967241219df9e9bce
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952534"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884157"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>適用於 Visual Studio 的影像和圖示
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio 中使用的影像
@@ -259,7 +259,7 @@ ms.locfileid: "99952534"
 ### <a name="base-palette"></a>基底調色板
  所有標準圖示都包含三種基本色彩。 圖示不包含任何漸層或陰影，而3D 工具圖示有一或兩個例外狀況。
 
-|使用方式|名稱|值 (淺色主題) |樣本|範例|
+|使用方式|Name|值 (淺色主題) |樣本|範例|
 |-----------|----------|---------------------------|------------|-------------|
 |背景/深色|VS BG|424242/66、66、66|![樣本 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![基礎調色盤範例](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |前景/淺色|VS FG|F0EFF1/240239241|![樣本 F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -272,7 +272,7 @@ ms.locfileid: "99952534"
 #### <a name="action-modifiers"></a>動作修飾詞
  以下四種色彩指出動作修飾詞所需的動作類型：
 
-|使用方式|名稱|所有主題的值 () |樣本|
+|使用方式|Name|所有主題的值 () |樣本|
 |-----------|----------|--------------------------|------------|
 |正|VS Action 綠|388A34/56138、52|![樣本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |負|VS Action 紅色|A1260D/161、38、13|![樣本 A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -315,14 +315,14 @@ ms.locfileid: "99952534"
 
 #### <a name="folder"></a>資料夾
 
-|使用方式|名稱|所有主題的值 () |樣本|範例|
+|使用方式|Name|所有主題的值 () |樣本|範例|
 |-----------|----------|--------------------------|------------|-------------|
 |資料夾|資料夾|DCB67A/220182122|![樣本 DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![資料夾色彩圖示](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio 語言
  Visual Studio 中提供的每個通用語言或平臺都有相關聯的色彩。 這些色彩會用在基底圖示上，或是出現在複合圖示右上角的語言修飾詞上。
 
-|使用方式|名稱|所有主題的值 () |樣本|
+|使用方式|Name|所有主題的值 () |樣本|
 |-----------|----------|--------------------------|------------|
 |ASP、HTML、WPF|ASP HTML WPF Blue|0095D7/0149215|![樣本 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|.CPP 紫色|9B4F96/155、79150|![樣本 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -336,18 +336,18 @@ ms.locfileid: "99952534"
 
 ##### <a name="examples-of-icons-with-language-modifiers"></a>具有語言修飾詞的圖示範例
 
-|VB|C#|F#|JavaScript|Python|
+|VB|C#|C++|F#|JavaScript|Python|
 |-|-|-|-|-|-|
 |![Visual Basic 圖示](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405-25_VB")|![C&#35; 圖示](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")|![C&#43;&#43; 圖示](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")|![F&#35; 圖示](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")|![JavaScript 圖示](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")|![Python 圖示](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python")|
 
 |HTML|WPF|ASP|CSS|TypeScript|
-|-|-|-|-|-|-|
-|![HTML 圖示](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![WPF 圖示](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP 圖示](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![CSS 圖示](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![TypeScript 圖示](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||
+|-|-|-|-|-|
+|![HTML 圖示](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![WPF 圖示](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP 圖示](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![CSS 圖示](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![TypeScript 圖示](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript|
 
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense 圖示使用專屬色調色板。 這些色彩可用來協助使用者快速分辨 IntelliSense 快顯視窗清單中不同的專案。
 
-|使用方式|名稱|所有主題的值 () |樣本|
+|使用方式|Name|所有主題的值 () |樣本|
 |-----------|----------|--------------------------|------------|
 |類別、事件|VS Action 橙色|C27D1A/194125、26|![樣本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |擴充方法、方法、模組、委派|VS 動作紫色|652D90/101、45144|![樣本 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -368,7 +368,7 @@ ms.locfileid: "99952534"
 ### <a name="notifications"></a>通知
  Visual Studio 中的通知是用來表示狀態。 通知選擇區使用下列四種色彩，以及黑色或白色前景填滿選項，來定義具有下列狀態層級的通知。
 
-|使用方式|名稱|所有主題的值 () |樣本|
+|使用方式|Name|所有主題的值 () |樣本|
 |-----------|----------|--------------------------|------------|
 |狀態：中性|通知 Blue (與 Blue) |1BA1E2/27161226|![樣本 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |狀態：正面|通知綠色 (與綠色) |339933/51153、51|![樣本 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
