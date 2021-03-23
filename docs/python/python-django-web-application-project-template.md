@@ -10,17 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0193256edb4a55285e8017a56fe7249ef5d60362
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 462c66229b6f28d281bf03650e4d22d0d1dab64f
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912397"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806039"
 ---
 # <a name="django-web-project-template"></a>Django Web 專案範本
-
+::: moniker range="vs-2017"
 [Django (英文)](https://www.djangoproject.com/) 是高階的 Python 架構，專為快速、安全且可擴充的網頁程式開發所設計。 Visual Studio 中的 Python 支援提供數個專案範本，可設定以 Django 為基礎的 Web 應用程式結構。 若要使用 Visual Studio 中的範本，**請選取**  >  [檔案 **新增**  >  **專案**]，搜尋 "Django"，然後從 **空白 Django Web 專案**、 **Django Web 專案**，然後 **投票 Django Web 專案** 範本進行選取。 如需所有範本的逐步解說，請參閱[學習 Django 教學課程](learn-django-in-visual-studio-step-01-project-and-solution.md)。
-
+::: moniker-end
+::: moniker range=">=vs-2019"
+[Django (英文)](https://www.djangoproject.com/) 是高階的 Python 架構，專為快速、安全且可擴充的網頁程式開發所設計。 Visual Studio 中的 Python 支援提供數個專案範本，可設定以 Django 為基礎的 Web 應用程式結構。 若要使用 Visual Studio 中的範本，**請選取**  >  [檔案 **新增**  >  **專案**]，搜尋 "Django"，然後從 **空白 Django Web 專案** 和 **Django Web 專案** 範本中選取。 如需所有範本的逐步解說，請參閱[學習 Django 教學課程](learn-django-in-visual-studio-step-01-project-and-solution.md)。
+::: moniker-end
 Visual Studio 針對 Django 專案提供完整的 IntelliSense：
 
 - 傳入範本的內容變數：

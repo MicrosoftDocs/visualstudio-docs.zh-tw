@@ -8,15 +8,16 @@ author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
 ms.custom: seodec18
+monikerRange: vs-2017
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 611bad608d3619e020994ad7325ad7a678fe1e24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd67e527ccf62de17dc15a5415f573c9622a51e9
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882826"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104805974"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步驟 5：使用 Polls Flask Web 專案範本
 

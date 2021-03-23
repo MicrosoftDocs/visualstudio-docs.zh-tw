@@ -8,15 +8,16 @@ author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
 ms.custom: seodec18
+monikerRange: vs-2017
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e524232eed7e4044454c57fc4fcaa30c6e2a8a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b52cc9615eb4829aede06ae65c152e47b3ff3844
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942473"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806026"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步驟 6：使用投票 Django Web 專案範本
 

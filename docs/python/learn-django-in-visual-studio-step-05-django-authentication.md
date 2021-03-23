@@ -11,18 +11,24 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ea708c1721d85468d99a0ccc327f378042579f85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3f589aed953a852cb57570988d914f77b2fa10b2
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942486"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806013"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>步驟 5：在 Django 中驗證使用者
 
 **上一個步驟：[使用完整的 Django Web 專案範本](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
+::: moniker range="vs-2017"
 因為 Web 應用程式一般都需要驗證，所以 [Django Web 專案] 範本會包含基本的驗證流程。  (本教學課程的步驟6中所討論的「投票 Django Web 專案」範本也包含相同的流程。 ) 使用任何 Django 專案範本時，Visual Studio 包含在 Django 專案 *settings.py* 中進行驗證的所有必要模組。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+因為 Web 應用程式一般都需要驗證，所以 [Django Web 專案] 範本會包含基本的驗證流程。 使用任何 Django 專案範本時，Visual Studio 會在 Django 專案的 *settings.py* 中包含驗證所需的所有模組。
+::: moniker-end
 
 在這個步驟中，您將了解：
 
@@ -210,9 +216,28 @@ ms.locfileid: "99942486"
 
 ## <a name="next-steps"></a>下一步
 
-> [!div class="nextstepaction"]
-> [使用投票 Django Web 專案範本](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+::: moniker range="vs-2017"
+- [使用投票 Django Web 專案範本](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+::: moniker-end
 
+::: moniker range=">=vs-2019"
+> [!Note]
+> 如果您一直在致力於為本教學課程中的原始檔控制，研究出自己的 Visual Studio 方案，現在是另一次做出貢獻的好機會。 您的方案應與 GitHub 上的教學課程原始程式碼相吻合：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)。
+
+您現在已探索 Visual Studio 中的整個「空白 Django Web 專案」和「Django Web 專案」範本。 您學會了 Django 的所有基礎知識，例如檢視和範本，也探索了路由、驗證及資料庫模型的應用。 您現在應該能夠利用所有必備的檢視和模型，建立您自己的 Web 應用程式。
+
+在開發電腦上執行 Web 應用程式，只是開放客戶使用應用程式過程中的一個環結而已。 接下來的步驟可能包括下列的事項：
+
+- 將 Web 應用程式部署到生產伺服器，例如 Azure App Service。 請參閱[發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)。
+
+- 建立名為 *templates/404.html* 的範本，以自訂 404 頁面。 如果這個範本存在，Django 就會使用它，而不使用預設範本。 如需詳細資訊，請參閱 Django 文件中的[錯誤檢視](https://docs.djangoproject.com/en/2.0/ref/views/#error-views)。
+
+- 在 *tests.py* 中編寫單位測試；您可以在 Visual Studio 專案範本的基礎上再進行設計，而且 Django 文件中的 [Writing your first Django app, part 5 - testing](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) (編寫第一個 Django 應用程式，第 5 部分 - 測試) 以及 [Testing in Django](https://docs.djangoproject.com/en/2.0/topics/testing/) (在 Django 中進行測試) 都有相關的詳細資訊。
+
+- 將 SQLite 的應用程式變更為生產層級資料存放區，例如 PostgreSQL、MySQL 和 SQL Server (它們全部可以在 Azure 上託管)。 如同[何時使用 SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org) 所述，SQLite 適合低到中等流量而且每日點擊量不足 100K 的站台，超過此限，不建議使用。 而且也只許在一台電腦上使用，因此任何多伺服器案例均不列入考慮，例如負載平衡和地理複寫。 如需 Django 支援的其他資料庫相關資訊，請參閱[資料庫安裝](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)。 您也可以使用 [Azure SDK for Python](/azure/python/) 來操作 Azure 儲存體服務，例如資料表和 blob。
+
+- 在 Azure DevOps 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (透過 Azure Repos、GitHub 或其他位置)，您可以設定 Azure DevOps 專案來自動執行單元測試作為發行必要條件，另外也請設定管線來部署至預備伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 此外，Azure DevOps 還會與 App Insights 等監視解決方案整合，並使用敏捷式規劃工具來關閉整個週期。 如需詳細資訊，請參閱[使用 Azure DevOps 專案建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true)，以及一般的 [Azure DevOps 文件](/azure/devops/?view=vsts&preserve-view=true)。
+::: moniker-end
 ## <a name="go-deeper"></a>深入了解
 
 - [Django 中的使用者驗證](https://docs.djangoproject.com/en/2.0/topics/auth/) \(英文\) (docs.djangoproject.com)

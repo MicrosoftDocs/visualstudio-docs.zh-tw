@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef9154a34ddd08e7e0a4b9434f7f748b2603aef4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7926a7983e43545ad47e8bc975f051821c108c18
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882865"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806000"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步驟 4：使用完整的 Flask Web 專案範本
 
@@ -229,8 +229,24 @@ block content
 
 ## <a name="next-steps"></a>下一步
 
-> [!div class="nextstepaction"]
-> [投票 Flask Web 專案範本](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+::: moniker range="vs-2017"
+- [投票 Flask Web 專案範本](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> 如果您一直在致力於為本教學課程中的原始檔控制，研究出自己的 Visual Studio 方案，現在是另一次做出貢獻的好機會。 您的方案應與 GitHub 上的教學課程原始程式碼相吻合：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)。
+
+您現在已探索完 Visual Studio 中的「空白 Flask Web 專案」、「Flask[/Jade] Web 專案」及「投票 Flask[/Jade] Web 專案」範本的全部內容。 您已了解 Flask 的所有基本知識 (例如檢視、範本及路由)，也了解了如何使用支援資料存放區。 現在，您應該能夠利用所需的任何檢視和模型，開始建立自己的 Web 應用程式。
+
+在開發電腦上執行 Web 應用程式，只是開放客戶使用應用程式過程中的一個環結而已。 接下來的步驟可能包括下列的事項：
+
+- 將 Web 應用程式部署到生產伺服器，例如 Azure App Service。 請參閱[發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)。
+
+- 新增使用另一個生產環境層級資料存放區 (例如 PostgreSQL、MySQL 及 SQL Server；這些全都可以裝載在 Azure 上) 的存放庫實作。 您也可以使用 [Azure SDK for Python](/azure/python/) 來除了搭配 Cosmos DB 運作之外，也可以搭配 Azure 儲存體服務 (例如資料表和 Blob) 運作。
+
+- 在 Azure DevOps 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (透過 Azure Repos、GitHub 或其他位置)，您可以設定 Azure DevOps 專案來自動執行單元測試作為發行必要條件，另外也請設定管線來部署至預備伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 此外，Azure DevOps 還會與 App Insights 等監視解決方案整合，並使用敏捷式規劃工具來關閉整個週期。 如需詳細資訊，請參閱[使用 Azure DevOps 專案建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true)，以及一般的[Azure DevOps 文件](/azure/devops/?view=vsts&preserve-view=true)。
+::: moniker-end
 
 ## <a name="go-deeper"></a>深入了解
 

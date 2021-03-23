@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: afde24347237ed3fc87d7a00ebdf21787d78909c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6bf427f7597b59fc5bb6fb32766134daa5b22bf
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942656"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806065"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Django Web 架構
 
@@ -24,15 +24,24 @@ ms.locfileid: "99942656"
 
 在本教學課程中，您會了解如何：
 
-> [!div class="checklist"]
-> - 使用 [空白 Django Web 專案] 範本在 Git 存放庫中建立基本的 Django 專案 (步驟 1)
-> - 建立具有單一頁面的 Django 應用程式，然後使用範本轉譯該頁面 (步驟 2)
-> - 提供靜態檔案，新增頁面，然後使用範本繼承 (步驟 3)
-> - 使用 Django Web 專案範本建立具有多個頁面與回應式設計的應用程式 (步驟 4)
-> - 驗證使用者 (步驟 5)
-> - 使用 [投票 Django Web 專案] 範本，建立使用模型、移轉資料庫及自訂系統管理介面的應用程式 (步驟 6)
+::: moniker range="vs-2017"
+- 使用 [空白 Django Web 專案] 範本在 Git 存放庫中建立基本的 Django 專案 (步驟 1)
+- 建立具有單一頁面的 Django 應用程式，然後使用範本轉譯該頁面 (步驟 2)
+- 提供靜態檔案，新增頁面，然後使用範本繼承 (步驟 3)
+- 使用 Django Web 專案範本建立具有多個頁面與回應式設計的應用程式 (步驟 4)
+- 驗證使用者 (步驟 5)
+- 使用 [投票 Django Web 專案] 範本，建立使用模型、移轉資料庫及自訂系統管理介面的應用程式 (步驟 6)
+::: moniker-end
 
-## <a name="prerequisites"></a>必要條件
+::: moniker range=">=vs-2019"
+- 使用 [空白 Django Web 專案] 範本在 Git 存放庫中建立基本的 Django 專案 (步驟 1)
+- 建立具有單一頁面的 Django 應用程式，然後使用範本轉譯該頁面 (步驟 2)
+- 提供靜態檔案，新增頁面，然後使用範本繼承 (步驟 3)
+- 使用 Django Web 專案範本建立具有多個頁面與回應式設計的應用程式 (步驟 4)
+- 驗證使用者 (步驟 5)
+::: moniker-end
+
+## <a name="prerequisites"></a>Prerequisites
 
 - Windows 上具有下列選項的 Visual Studio 2017 或更新版本：
   - **Python 開發** 工作負載 (安裝程式的 [工作負載] 索引標籤)。 如需相關指示，請參閱[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)。

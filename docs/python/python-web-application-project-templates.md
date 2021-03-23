@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f6376978826afc2946cfac25ab635d0b7533dc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a309ba898c22836fb5c0cebfc390b6c8d7c116c5
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939535"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104805987"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 
@@ -56,6 +56,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 | **Flask Web 專案** | 產生其靜態檔案會包含在 *static* 資料夾中的應用程式。 *views.py* 中的程式碼會處理路由，而使用 Jinja 引擎的頁面範本則會包含在 *templates* 資料夾中。 *runserver.py* 檔案會提供啟動程式碼。 請參閱[學習 Flask 步驟 4](learn-flask-visual-studio-step-04-full-flask-project-template.md)。 |
 | **Flask/Jade Web 專案** | 產生與 **Flask Web 專案** 範本相同的應用程式，但使用 Jinja 範本化引擎的 Jade 延伸模組。 |
 
+::: moniker range="vs-2017"
 ### <a name="polls-group"></a>投票群組
 
 **投票 \<framework> Web 專案** 範本會建立入門 web 應用程式，讓使用者可以透過此應用程式來對不同的投票問題進行投票。 每個應用程式都建置在 [Web] 專案範本的結構上，以使用資料庫來管理投票和使用者回應。 應用程式會包含適當的資料模型，以及會從 *samples.json* 檔案載入投票項目的特殊應用程式頁面 (/seed)。
@@ -66,6 +67,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 | **投票 Django Web 專案** | 會產生 Django 專案和包含三個頁面及 SQLite 資料庫的 Django 應用程式。 包含對 Django 系統管理介面的自訂項目，以允許已驗證的系統管理員建立及管理投票。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)。 |
 | **投票 Flask Web 專案** | 產生能針對記憶體內資料庫、MongoDB 或 Azure 資料表儲存體執行的應用程式，這是使用 `REPOSITORY_NAME` 環境變數來設定。 資料模型和資料存放區程式碼會包含在 *models* 資料夾中，且 *settings.py* 檔案會包含程式碼以決定要使用哪個資料存放區。 該應用程式針對頁面範本會使用 Jinja 引擎。 請參閱[學習 Flask 步驟 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)。 |
 | **投票 Flask/Jade Web 專案** | 產生與 **投票 Flask Web 專案** 範本相同的應用程式，但使用 Jinja 範本化引擎的 Jade 延伸模組。 |
+::: moniker-end
 
 ## <a name="install-project-requirements"></a>安裝專案需求
 

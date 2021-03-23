@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e77d4ea1d46914962f0791af91ad6c1efe21825c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca82beef26f897b2f5d3a145c968c11efaabc294
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942512"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806052"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Flask Web 架構
 
@@ -24,21 +24,32 @@ ms.locfileid: "99942512"
 
 Flask 被稱為「微」架構，因為它並不直接提供表單驗證、資料庫抽象、驗證等功能。 這類功能會改由稱為 Flask「延伸模組」的特殊 Python 套件提供。 這些延伸模組與 Flask 緊密整合，因此看起來就像 Flask 本身的一部分一樣。 例如，Flask 本身並不提供頁面範本引擎。 如本教學課程中所示範，範本化功能是由 Jinja 和 Jade 等延伸模組所提供。
 
+::: moniker range="vs-2017"
 在本教學課程中，您會了解如何：
-
-> [!div class="checklist"]
-> - 使用「空白 Flask Web 專案」範本在 Git 存放庫中建立基本的 Flask 專案 (步驟 1)
-> - 建立具有單一頁面的 Flask 應用程式，然後使用範本來轉譯該頁面 (步驟 2)
-> - 提供靜態檔案，新增頁面，然後使用範本繼承 (步驟 3)
-> - 使用「Flask Web 專案」範本來建立具有多個頁面與回應式設計的應用程式 (步驟 4)
-> - 使用「投票 Flask Web 專案」範本來建立使用各種儲存體選項 (Azure 儲存體、MongoDB 或記憶體) 的投票應用程式。
+- 使用「空白 Flask Web 專案」範本在 Git 存放庫中建立基本的 Flask 專案 (步驟 1)
+- 建立具有單一頁面的 Flask 應用程式，然後使用範本來轉譯該頁面 (步驟 2)
+- 提供靜態檔案，新增頁面，然後使用範本繼承 (步驟 3)
+- 使用「Flask Web 專案」範本來建立具有多個頁面與回應式設計的應用程式 (步驟 4)
+- 使用「投票 Flask Web 專案」範本來建立使用各種儲存體選項 (Azure 儲存體、MongoDB 或記憶體) 的投票應用程式。
 
 在這些步驟的整個過程中，您會建立包含三個個別專案的單一 Visual Studio 解決方案。 您會使用 Visual Studio 隨附的不同 Flask 專案範本來建立專案。 透過將專案保留在同一個解決方案中，可讓您輕鬆地來回切換，比較不同的檔案。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+在本教學課程中，您會了解如何：
+- 使用「空白 Flask Web 專案」範本在 Git 存放庫中建立基本的 Flask 專案 (步驟 1)
+- 建立具有單一頁面的 Flask 應用程式，然後使用範本來轉譯該頁面 (步驟 2)
+- 提供靜態檔案，新增頁面，然後使用範本繼承 (步驟 3)
+- 使用「Flask Web 專案」範本來建立具有多個頁面與回應式設計的應用程式 (步驟 4)
+
+在這些步驟中，您會建立單一 Visual Studio 方案，其中包含兩個不同的專案。 您會使用 Visual Studio 隨附的不同 Flask 專案範本來建立專案。 透過將專案保留在同一個解決方案中，可讓您輕鬆地來回切換，比較不同的檔案。
+::: moniker-end
 
 > [!Note]
 > 本教學課程與 [Flask 快速入門](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)的差異在於，您可以深入了解 Flask，以及如何使用各種不同 Flask 專案範本，以便為自己的專案提供更廣泛的起點。 例如，專案範本會在建立專案時自動安裝 Flask 套件，而不像快速入門中所示，需要您手動安裝套件。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 - Windows 上具有下列選項的 Visual Studio 2017 或更新版本：
   - **Python 開發** 工作負載 (安裝程式的 [工作負載] 索引標籤)。 如需相關指示，請參閱[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
