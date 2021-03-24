@@ -188,9 +188,9 @@
           href: ide/create-new-project.md
         - name: 使用解決方案與專案
           href: ide/creating-solutions-and-projects.md
-        - name: 從 Visual Studio 2017 中的存放庫開啟專案
+        - name: 在 Visual Studio 2017 的存放庫中開啟專案
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: 從 Visual Studio 2019 中的存放庫開啟專案
+        - name: 在 Visual Studio 2019 的存放庫中開啟專案
           href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 移植、移轉及升級專案
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
@@ -903,9 +903,11 @@
   href: debugger/index.yml
 - name: 版本控制
   items:
-    - name: Visual Studio 中的新 Git 體驗
+    - name: Visual Studio 的新 Git 體驗
       href: ide/git-with-visual-studio.md
-    - name: 並行比較 Git 與 Team Explorer
+    - name: Visual Studio 如何讓原始檔控制變得更容易
+      href: ide/git-visual-studio-source-control.md
+    - name: 比較 Git 和 Team Explorer 並存
       href: ide/git-team-explorer-feature-comparison.md
 - name: 測試 >>
   displayName: Unit testing
