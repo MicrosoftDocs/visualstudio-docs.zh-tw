@@ -1,6 +1,6 @@
 ---
 description: 要求程式會在下一個執行緒嘗試執行時停止執行。
-title: IDebugProgram2：： CauseBreak |Microsoft 檔
+title: IDebugProgram2：： CauseBreak |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::CauseBreak
 ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ef10a714b6e65b40edb83cb0547ae1a28720d328
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 64ad2a22a06cc18595aabb37e3c244c7ea0c0be1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166030"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076156"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 要求程式會在下一個執行緒嘗試執行時停止執行。

@@ -1,6 +1,6 @@
 ---
 description: 描述程式碼中斷點的位置。
-title: BP_RESOLUTION_CODE |Microsoft 檔
+title: BP_RESOLUTION_CODE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_CODE structure
 ms.assetid: ac103ec5-771c-4667-92de-b5abb53bbb52
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e6c6b306fcb9bfec0f2c88b861507da9123c390
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ca265d73cf54ce04f4ef3c25ee52ace94d269074
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162650"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059596"
 ---
 # <a name="bp_resolution_code"></a>BP_RESOLUTION_CODE
 描述程式碼中斷點的位置。

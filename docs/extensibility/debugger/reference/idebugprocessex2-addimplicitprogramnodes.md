@@ -1,6 +1,6 @@
 ---
 description: 這個方法會為每個偵錯工具新增程式節點， (DE) 指定。
-title: IDebugProcessEx2：： AddImplicitProgramNodes |Microsoft 檔
+title: IDebugProcessEx2：： AddImplicitProgramNodes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::AddImplicitProgramNodes method
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e3a4c6446c2106d79dd14fc0378fc848eac3df18
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 30e5943ca0326a05b98b9fb833004c0ba7e342d3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159987"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076390"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 這個方法會為每個偵錯工具新增程式節點， (DE) 指定。

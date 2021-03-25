@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d626f2390138c7e4e6e2471d285bcda940d7f30
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 12acefb99de787d55bc0f932757dde5ea928c6cb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882280"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094922"
 ---
 # <a name="capability-flags"></a>功能旗標
 SCC_CAP_ *xxx* 旗標是用來表示原始檔控制外掛程式功能的位旗標。 SCC_EXCAP_ *xxx* 旗標是遞增旗標，表示擴充的功能並解析為整數值。

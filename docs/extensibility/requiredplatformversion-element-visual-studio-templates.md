@@ -7,17 +7,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f281e51bd07c76d63bc0247d9d7f62fe0390283
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 8b1d7e3b8cc67f839977eb1e53d80731e59c064e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221778"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068423"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a> (Visual Studio 範本的 RequiredPlatformVersion 元素) 
 

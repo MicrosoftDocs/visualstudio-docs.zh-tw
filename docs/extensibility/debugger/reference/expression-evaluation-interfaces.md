@@ -1,22 +1,22 @@
 ---
 description: 以下是 Visual Studio 偵錯工具的運算式評估介面。
-title: 運算式評估介面 |Microsoft 檔
+title: 運算式評估介面 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - expression evaluation, interfaces
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d380fcce087fad3dc6b101e78cbc514ba19b1052
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 563e66f7aa7c2f8cf1e5573487690edc703ae5d8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158731"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059453"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
@@ -35,7 +35,7 @@ ms.locfileid: "102158731"
 
 - Visual Studio (VS) 
 
-|介面|實作為|描述|
+|介面|實作為|Description|
 |---------------|--------------------|-----------------|
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|代表變數的數值別名。|
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|代表變數的數值別名，並讓運算式評估工具 (EE) 取得別名的應用程式域。|

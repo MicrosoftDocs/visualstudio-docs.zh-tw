@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d28242b70c0c9808cc7eb066341cd2973d2372a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1061de343ae24dce163dd0a7665d58ec7aac3a3a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971579"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068384"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>適用於 Visual Studio 的功能表和命令
 ## <a name="command-usage"></a>命令使用方式
@@ -87,7 +87,7 @@ ms.locfileid: "99971579"
 
 - 時間範圍
 
-- 説明
+- Help
 
 ##### <a name="project-specific-menus"></a>專案特定功能表
 

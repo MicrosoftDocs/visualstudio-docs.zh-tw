@@ -1,6 +1,6 @@
 ---
 description: 描述引發中斷點的條件。
-title: BP_CONDITION |Microsoft 檔
+title: BP_CONDITION |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_CONDITION structure
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10b360dfa6d811834ea9564e5f73c80f6eeea722
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 560cf7184e5fa7b25e35410313535675713742aa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144451"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085334"
 ---
 # <a name="bp_condition"></a>BP_CONDITION
 描述引發中斷點的條件。

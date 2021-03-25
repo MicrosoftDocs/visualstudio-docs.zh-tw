@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe9002c3da63e9570819588035395780715e1d64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 32f07857f2d04989b0de021988b2961d4a1553d2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941862"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068215"
 ---
 # <a name="bitmap-element"></a>Bitmap 元素
 定義點陣圖。 點陣圖是從資源或檔案載入的。

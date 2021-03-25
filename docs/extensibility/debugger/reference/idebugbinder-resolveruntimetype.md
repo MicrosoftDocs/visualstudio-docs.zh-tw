@@ -1,6 +1,6 @@
 ---
 description: 這個方法會判斷物件的執行時間類型。
-title: IDebugBinder：： ResolveRuntimeType |Microsoft 檔
+title: IDebugBinder：： ResolveRuntimeType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::ResolveRuntimeType method
 ms.assetid: 6456ab3e-1c03-4f3c-91f9-16797ab7f5e7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 19e7285dd25009e7fe4aeb92974c70ce4109502c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 23bc63e4550264d499c6d97a03aa9361b3fa4f62
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143632"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067344"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 這個方法會判斷物件的執行時間類型。

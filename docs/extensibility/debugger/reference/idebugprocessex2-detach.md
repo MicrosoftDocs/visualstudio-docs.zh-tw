@@ -1,6 +1,6 @@
 ---
 description: 這個方法會通知進程，會話不再將進程進行偵錯工具。
-title: IDebugProcessEx2：:D etach |Microsoft 檔
+title: IDebugProcessEx2：:D etach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Detach method
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3140da647b46a1cbc3b60691e820238c2c6c83eb
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c5ad25fe6461f1df89ada83623ab4e28194ca207
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166251"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076325"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 這個方法會通知進程，會話不再將進程進行偵錯工具。

@@ -1,6 +1,6 @@
 ---
 description: 標記此別名以供移除。
-title: IDebugAlias：:D ispose |Microsoft 檔
+title: IDebugAlias：:D ispose |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias::Dispose method
 ms.assetid: e84909a4-d378-4f48-bf25-2c014c77c8e3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: efca2b2bedc531fa241d8cfe6cfe8cd3527a7b40
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7428b1a8d0dcb95d14274270542d4bba8c50bde9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143918"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059167"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
 標記此別名以供移除。

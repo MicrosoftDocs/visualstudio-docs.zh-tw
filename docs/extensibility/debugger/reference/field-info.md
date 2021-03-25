@@ -1,6 +1,6 @@
 ---
 description: 此結構描述本機變數、參數或其他欄位。
-title: FIELD_INFO |Microsoft 檔
+title: FIELD_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 47b7c7cb3a77d0ad925b044130901dd481b99943
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 27055178f01f41bb6b4642b8c4d70ea6346b9e74
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162429"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059415"
 ---
 # <a name="field_info"></a>FIELD_INFO
 此結構描述本機變數、參數或其他欄位。

@@ -1,6 +1,6 @@
 ---
 description: 指定例外狀況狀態。
-title: EXCEPTION_STATE |Microsoft 檔
+title: EXCEPTION_STATE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ff9edf1ef12d219b865815585035151e664e67a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 297c5de3afd2b5f81444dd29278fc294cd71aa6a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158744"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059440"
 ---
 # <a name="exception_state"></a>EXCEPTION_STATE
 指定例外狀況狀態。

@@ -28,12 +28,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a310cd4428232338ed46a8a54502d9956e73be15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eadec17e7c5221f0b169d38b15b9601cec746fa4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932005"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094974"
 ---
 # <a name="midl-task"></a>MIDL 工作
 
@@ -79,7 +79,7 @@ ms.locfileid: "99932005"
 
      選擇性的 **字串** 參數。
 
-     指定要傳遞至 C/C++ 前置處理器的選項。 指定以空格分隔的前置處理器選項清單。
+     指定要傳遞至 C/C++ 前置處理器的選項。 指定以空格分隔的前置處理器選項清單。 必須包含 `/E` 選項。
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/cpp_opt** 選項。
 

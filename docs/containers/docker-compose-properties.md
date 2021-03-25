@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 0a27535e9c07f87391b3cdfd8440578e36feee9e
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: 4478656af7fff4cfd3a0fdafefe623af5811154f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846812"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068293"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 組建屬性
 
@@ -39,11 +39,12 @@ ms.locfileid: "97846812"
 |AdditionalComposeFilePaths|docker-compose.dcproj|以分號分隔的清單，指定要傳送給所有命令 docker-compose.exe 的其他撰寫檔。 允許 (docker-compose.dcproj) 的 docker 撰寫專案檔的相對路徑。|-|
 |DockerComposeBaseFilePath|docker-compose.dcproj|指定 docker 組成檔案的第一個部分，不含副檔名為 *yml* 的檔案。 例如： <br>1. DockerComposeBaseFilePath = null/undefined：使用以 *docker 撰寫* 的基底檔案路徑，檔案將命名為 *>docker-compose.yml. yml* 和 *>docker-compose.yml. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*：檔案將命名為 *mydockercompose. yml* 和 *mydockercompose。 yml*<br> 3. DockerComposeBaseFilePath = *.。。\mydockercompose*：檔案將會啟動一個層級。 |>docker-compose.yml|
 |DockerComposeBuildArguments|docker-compose.dcproj|指定要傳遞給命令的額外參數 `docker-compose build` 。 例如， `--parallel --pull` |
-|DockerComposeDownArguments|docker-compose.dcproj|指定要傳遞給命令的額外參數 `docker-compose down` 。 例如， `--timeout 500`|-|  
+|DockerComposeDownArguments|docker-compose.dcproj|指定要傳遞給命令的額外參數 `docker-compose down` 。 例如， `--timeout 500`|-|
+|DockerComposeProjectName| docker-compose.dcproj | 如果有指定，會覆寫 docker 撰寫專案的專案名稱。 | "dockercompose" + 自動產生的雜湊 |
 |DockerComposeProjectPath|.csproj 或 vbproj|Docker 撰寫專案的相對路徑 (docker-compose.dcproj) 檔。 發佈服務專案時設定此屬性，以尋找儲存在 >docker-compose.yml. yml 檔案中的相關聯映射組建設定。|-|
 |DockerComposeUpArguments|docker-compose.dcproj|指定要傳遞給命令的額外參數 `docker-compose up` 。 例如， `--timeout 500`|-|
 |DockerDevelopmentMode|docker-compose.dcproj| 控制是否啟用「內部主機」優化 ( 「快速模式」的偵錯工具) 。  允許的值為 **Fast** 和 **Regular**。 | 快速 |
-|DockerLaunchAction| docker-compose.dcproj | 指定要在 F5 或 Ctrl + F5 執行的啟動動作。  允許的值為 None、LaunchBrowser 和 LaunchWCFTestClient|無|
+|DockerLaunchAction| docker-compose.dcproj | 指定要在 F5 或 Ctrl + F5 執行的啟動動作。  允許的值為 None、LaunchBrowser 和 LaunchWCFTestClient。|無|
 |DockerLaunchBrowser| docker-compose.dcproj | 指出是否要啟動瀏覽器。 如果已指定 DockerLaunchAction，則會忽略。 | 否 |
 |DockerServiceName| docker-compose.dcproj|如果指定了 DockerLaunchAction 或 DockerLaunchBrowser，則 DockerServiceName 是應啟動之服務的名稱。  您可以使用這個屬性來判斷哪些專案可能會啟動 docker 組成檔案可以參考的專案。|-|
 |DockerServiceUrl| docker-compose.dcproj | 要在啟動瀏覽器時使用的 URL。  有效的取代權杖為 "{ServiceIPAddress}"、"{ServicePort}" 和 "{配置}"。  例如： {配置}：//{ServiceIPAddress}： {ServicePort}|-|
@@ -105,7 +106,7 @@ services:
 
 使用雙引號括住值（如上述範例所示），並使用反斜線做為路徑中反斜線的 escape 字元。
 
-|標籤名稱|描述|
+|標籤名稱|Description|
 |----------|-----------|
 |visualstudio。引數|啟動偵錯工具時傳遞給程式的引數。 若是 .NET Core 應用程式，這些引數通常是 NuGet 套件的額外搜尋路徑，後面接著專案輸出元件的路徑。|
 |visualstudio. killprogram。|此命令可用來停止在容器內執行的偵錯工具程式 (必要時) 。|
@@ -126,11 +127,11 @@ services:
 
 如果您省略 *>docker-compose.yml. yml* 或 *>docker-compose.yml. yml* ，則 Visual Studio 根據預設設定產生一個。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 如需 MSBuild 屬性的一般資訊，請參閱 [Msbuild 屬性](../msbuild/msbuild-properties.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [容器工具組建屬性](container-msbuild-properties.md)
 
