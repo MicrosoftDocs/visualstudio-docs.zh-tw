@@ -8,18 +8,18 @@ helpviewer_keywords:
 - custom start page
 - xaml start page
 ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 47c83906b84263af966737a309de0b5096031f94
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 972f8c477a62078b14d16ff61d3f6b8c7978616d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926867"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062027"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>逐步解說：將自訂 XAML 新增至起始頁
 

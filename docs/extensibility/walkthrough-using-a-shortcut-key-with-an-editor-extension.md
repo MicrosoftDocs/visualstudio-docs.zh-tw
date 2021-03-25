@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0f6cb0d3cc0bef03539428bafeff5ae3da64964
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2d49fa9e858d65529e466f6ed960835ab8c2324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931262"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061949"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>逐步解說：搭配編輯器延伸模組使用快速鍵
 您可以在編輯器延伸模組中回應快速鍵。 下列逐步解說示範如何使用快速鍵，將視圖修飾加入至文字視圖。 本逐步解說是以「視口裝飾編輯器」範本為基礎，可讓您使用 + 字元來新增裝飾。
@@ -47,7 +47,7 @@ ms.locfileid: "99931262"
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ```
 
-在 KeyBindingTestTextViewCreationListener.cs 類別檔案中，將 AdornmentLayer 的名稱從 **KeyBindingTest** 變更為 **PurpleCornerBox**：
+在 KeyBindingTestTextViewCreationListener .cs 類別檔案中，將 AdornmentLayer 的名稱從 **KeyBindingTest** 變更為 **PurpleCornerBox**：
 
 ```csharp
 [Export(typeof(AdornmentLayerDefinition))]
@@ -259,7 +259,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
    }
    ```
 
-   7. 將裝飾層定義從 *KeyBindingTestTextViewCreationListener.cs* 檔案複製到 *KeyBindingCommandHandler.cs* ，然後刪除 *KeyBindingTestTextViewCreationListener.cs* 檔案：
+   7. 將裝飾層定義從 *KeyBindingTestTextViewCreationListener* 檔複製到 *KeyBindingCommandHandler .cs* ，然後刪除 *KeyBindingTestTextViewCreationListener .cs* 檔案：
 
    ```csharp
    /// <summary>
@@ -276,7 +276,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
 原始裝飾會出現在文字檔中的每個字元 ' a '。 既然我們已變更程式碼以新增裝飾以回應 **+** 字元，它只會在輸入字元的行上新增裝飾 **+** 。 我們可以變更裝飾程式碼，使裝飾一次出現在每個 ' a ' 上。
 
-在 *KeyBindingTest.cs* 檔案中，變更 `CreateVisuals()` 方法以逐一查看視圖中的所有行，以裝飾 ' a ' 字元。
+在 *KeyBindingTest .cs* 檔案中，變更 `CreateVisuals()` 方法以逐一查看視圖中的所有行，以裝飾 ' a ' 字元。
 
 ```csharp
 private void CreateVisuals(ITextViewLine line)

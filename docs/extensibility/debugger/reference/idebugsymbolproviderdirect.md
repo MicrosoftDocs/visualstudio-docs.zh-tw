@@ -1,22 +1,22 @@
 ---
 description: 代表可直接存取中繼資料和核心符號介面的符號提供者。
-title: IDebugSymbolProviderDirect |Microsoft 檔
+title: IDebugSymbolProviderDirect |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect interface
 ms.assetid: 872b04a8-70de-4ab5-aceb-684c81828545
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d60af5be925341e5421badb4c3e6e3dae97903b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6cce774ff6c3ca3e1037a4a61f5c8b4f892aa1c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149310"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053148"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 代表可直接存取中繼資料和核心符號介面的符號提供者。

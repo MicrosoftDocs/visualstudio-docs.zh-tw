@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb1f0a0f78b935a3b61596e4dd0b595030640b00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f445d31fe995321ad6ec334a5b6eb93570b8875
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970006"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061026"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 用來決定要在 [ **屬性** ] 視窗中顯示哪些資訊的模型是根據焦點在 IDE 中的視窗。 在選取的視窗內，每個視窗和物件都可以將其選取內容物件推送至全域選取內容。 當視窗具有焦點時，環境會以視窗框架中的值來更新全域選取內容。 當焦點變更時，就會進行選取內容。

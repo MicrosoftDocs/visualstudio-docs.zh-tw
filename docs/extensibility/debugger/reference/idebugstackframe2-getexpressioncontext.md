@@ -1,6 +1,6 @@
 ---
 description: 在堆疊框架和執行緒的目前內容中，取得運算式評估的評估內容。
-title: IDebugStackFrame2：： GetExpressionCoNtext |Microsoft 檔
+title: IDebugStackFrame2：： GetExpressionCoNtext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetExpressionContext
 ms.assetid: a2604e6a-502d-473b-868f-b11ac64c7a35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4780b979102ee2ada499e2cd2e0f8ca728cadd91
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4da07b438ca35417de025a0d9ec6c2dfa01f464d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145933"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053434"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 在堆疊框架和執行緒的目前內容中，取得運算式評估的評估內容。

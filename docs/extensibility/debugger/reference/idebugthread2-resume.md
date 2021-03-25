@@ -1,6 +1,6 @@
 ---
 description: 繼續執行執行緒。
-title: IDebugThread2：： Resume |Microsoft 檔
+title: IDebugThread2：： Resume |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Resume
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 64a7d5509ac098f6b3a47c3606b6ec530bb6b65b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 93552bac60d16a21212bfa89816481cf7099d399
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164496"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053018"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 繼續執行執行緒。

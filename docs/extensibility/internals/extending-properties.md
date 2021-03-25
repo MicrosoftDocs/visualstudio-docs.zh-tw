@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9a777bf11f388873978f450184f1455236e9ff9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3b1006f74cd2de03b4fe74e090d7ffcd1c921e5d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887077"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069643"
 ---
 # <a name="extend-properties"></a>擴充屬性
 [ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **屬性** ] 視窗是適用于 COM 和 com + 元件的通用屬性瀏覽器，並支援所有 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 產品。 [ **屬性** ] 視窗適用于 `ITypeInfo` 型別資訊和 com + 中繼資料，可在整合式開發環境 (IDE) 的任何其他視窗中，列出目前所選物件的設計階段屬性。

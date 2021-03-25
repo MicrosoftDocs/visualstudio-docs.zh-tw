@@ -1,6 +1,6 @@
 ---
 description: 這個介面代表特定執行緒中呼叫堆疊內的單一堆疊框架。
-title: IDebugStackFrame2 |Microsoft 檔
+title: IDebugStackFrame2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2 interface
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5ec53e89afb43187c641058620df53c4a61d6cc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f9675627bf3044258a532ca91768619f2c6de3ba
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145907"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053252"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 這個介面代表特定執行緒中呼叫堆疊內的單一堆疊框架。

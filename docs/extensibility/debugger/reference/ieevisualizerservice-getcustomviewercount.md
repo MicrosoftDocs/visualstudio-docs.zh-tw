@@ -1,6 +1,6 @@
 ---
 description: 這個方法會取得此服務可用的視覺化類型數目。
-title: IEEVisualizerService：： GetCustomViewerCount |Microsoft 檔
+title: IEEVisualizerService：： GetCustomViewerCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerCount method
 ms.assetid: f7b095c2-e538-4352-8cad-d4c6d4f6bdbc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d44cc0c53185f823a8092335052e52dcfd201c1
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ea7ec50f3affc415d0a0fdab448cd3d812d5f84c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227147"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061741"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 這個方法會取得此服務可用的視覺化類型數目。

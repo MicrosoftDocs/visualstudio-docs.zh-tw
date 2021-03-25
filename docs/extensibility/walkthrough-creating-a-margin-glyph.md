@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2a1857edb8032d12cd23da5e2686ad90f15b574
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9260b567b65000780ee81226607e0a1c76c5fd46
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892459"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062001"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>逐步解說：建立邊界字元
 您可以使用自訂編輯器延伸自訂編輯器邊界的外觀。 本逐步解說會在程式碼批註中出現 "todo" 一字時，將自訂圖像放在指標邊界上。

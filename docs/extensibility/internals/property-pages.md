@@ -9,17 +9,17 @@ helpviewer_keywords:
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd7d1ce463377daa2800d5c3e635adc71935d9d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3e36960b35119434e56f075f622ae2513454dd6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883164"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061013"
 ---
 # <a name="property-pages"></a>屬性頁
 使用者可使用屬性頁來查看和變更專案設定相依且獨立的屬性。 在 [**屬性**] 視窗或 [方案總管] 工具列上，會針對提供所選取物件之屬性頁視圖的物件啟用 [**屬性頁**] 按鈕。 屬性頁是由環境所建立，而且適用于方案和專案。 不過，它們也可以提供給利用設定相依屬性的專案專案使用。 當專案中的檔案需要不同的編譯器切換設定才能正確建立時，可能會使用這項功能。

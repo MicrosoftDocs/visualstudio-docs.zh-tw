@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a33d393cfd904bdae890f4ead9a4c25a6451460
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5f378200072df603817a445a9c3406cf62233c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837290"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061000"
 ---
 # <a name="properties-window-overview"></a>屬性視窗概觀
 [ **屬性** ] 視窗是用來顯示在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 所提供的兩個主要 windows 類型中所選取物件的屬性。 這兩種類型的 windows 為：

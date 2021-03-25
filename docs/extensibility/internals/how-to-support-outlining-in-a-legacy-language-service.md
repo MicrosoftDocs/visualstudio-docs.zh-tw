@@ -9,17 +9,17 @@ helpviewer_keywords:
 - language services, supporting Collapse to Definitions command
 - hidden text, Collapse to Definitions command
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7d2dc2b12ee20b96cad27cb56bf0e4552e3f7c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c275a6a466cc58187293f6ebd84a39fdf8064e6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844589"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078681"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何：在舊版語言服務中支援大綱
 大綱是用來展開或折迭不同的文字區域。 使用大綱的方式可以不同的語言來定義。 如需詳細資訊，請參閱[大綱](../../ide/outlining.md)。

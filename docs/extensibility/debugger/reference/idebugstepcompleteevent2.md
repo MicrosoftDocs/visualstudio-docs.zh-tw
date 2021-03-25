@@ -1,6 +1,6 @@
 ---
 description: 此介面是由 debug 引擎傳送 (當正在進行程式設計的程式在原始程式碼或語句或指令行中完成逐步執行、不進入一或多個步驟時，) 至會話 debug manager (SDM) 。
-title: IDebugStepCompleteEvent2 |Microsoft 檔
+title: IDebugStepCompleteEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStepCompleteEvent2 interface
 ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f366b9eb1d9406ba5207016ca97ea40d1fd48529
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 38791456500fc5996345314a0a779f5ccd03d940
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149531"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053187"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 此介面是由 debug 引擎傳送 (當正在進行程式設計的程式在原始程式碼或語句或指令行中完成逐步執行、不進入一或多個步驟時，) 至會話 debug manager (SDM) 。

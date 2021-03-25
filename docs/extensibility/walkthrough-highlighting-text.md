@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95bc250219c59d4db21fcb086cdf43e0ba7800e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a500d63eb497ce6d2b23860cd3793cbc2632b819
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838626"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078457"
 ---
 # <a name="walkthrough-highlight-text"></a>逐步解說：反白顯示文字
 您可以藉由建立 Managed Extensibility Framework (MEF) 元件部分，將不同的視覺效果加入編輯器中。 本逐步解說示範如何在文字檔中醒目提示目前單字的每個出現專案。 如果單字在文字檔中出現一次以上，而且您將插入點放在一次，則會反白顯示每個出現的專案。

@@ -8,18 +8,18 @@ helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3deac1637bb6b4ed054a8a9afc7ab78bf26d0183
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a356fe3dadaf0eca4f0b4d0f2a7d17f0b475acfb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968407"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061403"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自訂起始頁
 

@@ -1,6 +1,6 @@
 ---
 description: 取得 (DE) 執行程式的偵錯工具的名稱和識別碼。
-title: IDebugProgramNode2：： GetEngineInfo |Microsoft 檔
+title: IDebugProgramNode2：： GetEngineInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetEngineInfo
 ms.assetid: 664e7fe5-9100-4b7d-9dc5-e5a4dd0d0451
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d09ec8b7503047a9dcece353c859c607289a005b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f0a902db31cb4d48810e673e7807bd3944c2a875
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145985"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053525"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 取得 (DE) 執行程式的偵錯工具的名稱和識別碼。

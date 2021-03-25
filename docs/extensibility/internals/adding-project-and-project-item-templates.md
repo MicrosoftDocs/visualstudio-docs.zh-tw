@@ -8,17 +8,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], adding
 - project items [Visual Studio], adding
 ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff54e24408577ba8bfbf553a5c641eab2d15814
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3f2c10b310569a412025fd114f7818734106bc18
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906235"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079055"
 ---
 # <a name="add-project-and-project-item-templates"></a>新增專案與專案專案範本
 當您建立自己的專案類型時，您必須使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (IDE) 對話方塊的標準整合式開發環境，以提供新增專案和專案專案的支援。 下列主題討論新增專案和專案專案的不同技術。

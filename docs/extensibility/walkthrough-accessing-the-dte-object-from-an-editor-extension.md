@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - getting the DTE object
 ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7228165d49c7f11c15d12086933c473699ef6bc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7035842f608428f149dd2c0965b4792afa25db67
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905592"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062066"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>逐步解說：從編輯器延伸模組存取 DTE 物件
 
@@ -40,7 +40,7 @@ ms.locfileid: "99905592"
     - VisualStudio 架構
     - VisualStudio，不變的10。0
 
-3. 在 *DTETestProvider.cs* 檔案中，新增下列指示詞 `using` ：
+3. 在 *DTETestProvider .cs* 檔案中，加入下列指示詞 `using` ：
 
     ```csharp
     using EnvDTE;
@@ -70,7 +70,7 @@ ms.locfileid: "99905592"
    - EnvDTE
    - VisualStudio 架構
 
-3. 在 *DTETestProvider.cs* 檔案中，新增下列指示詞 `using` ：
+3. 在 *DTETestProvider .cs* 檔案中，加入下列指示詞 `using` ：
 
     ```csharp
     using EnvDTE;

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - designers [Visual Studio SDK], exposing types
 - custom tools, exposing types to visual designers
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c36552c3a10f4ddbf50a7a28978acf27118bbd34
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5208de3af52e4dad5fb9bb59b16f7b59efb72340
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887087"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069669"
 ---
 # <a name="expose-types-to-visual-designers"></a>將類型公開至視覺化設計工具
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須能夠在設計階段存取類別和類型定義，才能顯示視覺化設計工具。 類別是從一組預先定義的元件載入，其中包含目前專案的完整相依性集合， (參考加上) 的相依性。 視覺化設計工具也可能需要存取自訂工具所產生的檔案中所定義的類別和類型。

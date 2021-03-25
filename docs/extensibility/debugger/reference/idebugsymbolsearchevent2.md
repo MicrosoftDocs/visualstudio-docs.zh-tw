@@ -1,6 +1,6 @@
 ---
 description: 此介面是由 debug engine (DE) 來傳送，表示正在進行正在進行調試之模組的偵錯工具符號。
-title: IDebugSymbolSearchEvent2 |Microsoft 檔
+title: IDebugSymbolSearchEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolSearchEvent2
 ms.assetid: 9b946d55-ff85-44eb-b40a-efbf8282eafd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ef2d315568b78e567d682728c4cbc989c5a4ed2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5a4ef5008740f563f2f7f986f73c8bbfbb94ef6b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145738"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053135"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 此介面是由 debug engine (DE) 來傳送，表示正在進行正在進行調試之模組的偵錯工具符號。

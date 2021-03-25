@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, initialization sequence
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86173253c947be5de8600e15b68a6f08504803a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88a8aa39c513ed6317a6b57509810e16a58f192b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839842"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069539"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>專案子類型的初始化順序
 環境會呼叫的基底專案 factory，以建立專案 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> 。 當環境判斷專案檔延伸的專案類型 GUID 清單不是空的時，就會啟動專案子類型的結構。 專案檔延伸和專案 GUID 會指定專案為 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案類型。 例如，vbproj 副檔名和 {F184B08F-C81C-45F6-A57F-5ABD9991F28F} 會識別 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 專案。

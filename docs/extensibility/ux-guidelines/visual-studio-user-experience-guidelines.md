@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5afe5df8808ee8b0c8ad13c494e58aea903fff89
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a218cc3923f26c048bcf40894d66fccea2526aa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926055"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062638"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 使用者體驗方針
 如果您設計 Visual Studio 的新功能，請遵循 Visual Studio 的使用者經驗指導方針。 這些指導方針包含一般使用者模型和互動模式的相關資訊，讓新使用者介面的設計工具 (UI) 可以在開發環境中建立順暢且一致的使用者體驗。

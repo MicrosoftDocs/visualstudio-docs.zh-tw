@@ -11,17 +11,17 @@ helpviewer_keywords:
 - visual studio command
 - guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: db0c417c40a2f2d02adef9c7a9e7274f95592015
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2f25853f8f1ece583b460d39550af680001b3d4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898280"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069591"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 命令的 Guid 和識別碼
 Visual Studio 整合式開發環境中所包含命令的 GUID 和識別碼值 (IDE) 是在安裝為 Visual Studio SDK 一部分的 .vsct 檔案中定義。 如需詳細資訊，請參閱 [IDE 定義的命令、功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -56,7 +56,7 @@ Visual Studio 整合式開發環境中所包含命令的 GUID 和識別碼值 (I
 
 - 包含加底線的字元的功能表項目，**例如 [檔案] 功能表上** 的 [**列印**] 命令，其中的 *P* 會加上底線。
 
-     以連字號開頭的字元 ( # A0) 字元在功能表項目名稱中會顯示為加上底線。 不過， *.vsct* 檔案是以 XML 撰寫的，它會使用連字號 ( # A0) 字元來表示特殊字元，而且需要顯示連字號才能顯示為 *&amp; amp;*。 因此，在 *.vsct* 檔案中， **Print** 命令會顯示為 *&amp; amp;列印*。
+     在功能表項目名稱中加上 & 符號 (&) 字元的字元會顯示為加上底線。 不過， *.vsct* 檔案是以 XML 撰寫的，它會使用連字號 (&) 字元來指出特殊字元，而且需要顯示連字號才能顯示為 *&amp; amp;*。 因此，在 *.vsct* 檔案中， **Print** 命令會顯示為 *&amp; amp;列印*。
 
 - 具有動態文字的命令（例如 **儲存** \<Current Filename\> ），以及動態產生的功能表項目（例如 [ **最近使用** 的檔案] 清單中的專案）。
 

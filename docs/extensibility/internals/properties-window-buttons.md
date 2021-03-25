@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 601e40762adc665f6241bb00a4b683b81e7fbd80
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88eacbdbcc50dc843769cdcf4701ba1a2bfe895a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970019"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061065"
 ---
 # <a name="properties-window-buttons"></a>屬性視窗的按鈕
 依開發語言和產品類型而定，預設會在 [ **屬性** ] 視窗的工具列上顯示特定按鈕。 在所有情況下，會顯示 [ **分類**]、[ **字母順序**]、[ **屬性**] 和 [ **屬性頁** ] 按鈕。 在 Visual c # 和 Visual Basic 中，也會顯示 [ **事件** ] 按鈕。 在某些 Visual C++ 專案中，會顯示 [ **vc + + 訊息** ] 和 [ **vc 覆寫** ] 按鈕。 其他專案類型可能會顯示其他按鈕。 如需 [ **屬性** ] 視窗中之按鈕的詳細資訊，請參閱 [屬性視窗](../../ide/reference/properties-window.md)。

@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e0072d3f39ef037dfaa660d3a297afb59baacf3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f36d141c75b43dfaf90960261e40c4a619069802
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888910"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061988"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>逐步解說：搭配編輯器延伸模組使用 shell 命令
 從 VSPackage，您可以將功能表命令之類的功能加入編輯器中。 本逐步解說示範如何藉由叫用功能表命令，在編輯器中將裝飾加入至文本視圖。
@@ -614,7 +614,7 @@ ms.locfileid: "99888910"
 
     - VisualStudio （Wpf）
 
-2. 開啟 *AddAdornment.cs* 檔案，並新增下列指示詞 `using` 。
+2. 開啟 *AddAdornment .cs* 檔案，然後加入下列指示詞 `using` 。
 
     ```csharp
     using Microsoft.VisualStudio.TextManager.Interop;

@@ -1,6 +1,6 @@
 ---
 description: 從錯誤中斷點列舉傳回下一組元素。
-title: IEnumDebugErrorBreakpoints2：： Next |Microsoft 檔
+title: IEnumDebugErrorBreakpoints2：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2::Next
 ms.assetid: 6a3dee11-5267-4d77-9e28-6a38413ba70b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ae50e3d2cb9a3f4b023a59598f7fea07373dad5
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 02a96c6f6ea27eb7c80d97700395026663bd4a00
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226718"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105052966"
 ---
 # <a name="ienumdebugerrorbreakpoints2next"></a>IEnumDebugErrorBreakpoints2::Next
 傳回列舉中的下一組元素。

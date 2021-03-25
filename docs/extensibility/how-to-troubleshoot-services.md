@@ -7,17 +7,17 @@ ms.topic: troubleshooting
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6e29f2c65ec7503f06baca4af4c6772090d5eb8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a105f38166ecea958bb0e5bbfe790170b020e354
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952287"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079211"
 ---
 # <a name="how-to-troubleshoot-services"></a>如何：針對服務進行疑難排解
 當您嘗試取得服務時，可能會發生幾個常見問題：

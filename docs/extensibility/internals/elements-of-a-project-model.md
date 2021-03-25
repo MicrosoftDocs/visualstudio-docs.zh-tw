@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project models
 - projects [Visual Studio SDK], elements
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f786ae8e0725c7c1b6f0683a779a65f015ac2a75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85b31996a7a0636f136e43531e69fe25c6d87d8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946744"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061286"
 ---
 # <a name="elements-of-a-project-model"></a>專案模型的元素
 中所有專案的介面和實 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 作為共用基本結構：專案類型的專案模型。 在您要開發的 VSPackage 專案模型中，您會建立符合設計決策的物件，並與 IDE 所提供的全域功能一起運作。 您可以控制專案專案的保存方式，例如，您無法控制必須保存檔案的通知。 當使用者將焦點放在開啟的專案專案，並在功能表列上的 [檔案 **] 功能表上選擇 [** **儲存**] 時 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，您的專案類型程式碼必須從 IDE 攔截命令、保存檔案，然後將通知傳送回 ide，表示檔案已不再變更。

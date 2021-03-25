@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 5388EEBA-211D-4114-8CD9-70C899919F7E
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: c959660b920abc18be70b228fa6b40de1ab585f8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 57b447be3ee411b737c1aea5b0a4be5ef966c8c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037656"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062144"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>逐步解說：建立延伸模組組件
 
@@ -33,9 +33,9 @@ ms.locfileid: "90037656"
 
 延伸模組套件專案範本會建立延伸模組套件，其中包含可一起安裝的延伸模組集合。
 
-1. 在 [ **新增專案** ] 對話方塊中，搜尋 "vsix" 並選取 [ **vsix 專案**]。 在 [ **專案名稱**] 中，輸入「測試擴充功能套件」。 選取 [建立]。
+1. 在 [ **新增專案** ] 對話方塊中，搜尋 "vsix" 並選取 [ **vsix 專案**]。 在 [ **專案名稱**] 中，輸入「測試擴充功能套件」。 選取 [建立]  。
 
-2. 在 [**方案總管**中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [擴充功能 **套件**]。 將預設的檔案名保留 (ExtensionPack1.cs) 。
+2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [擴充功能 **套件**]。 將預設的檔案名保留 (ExtensionPack1]) 。
 
 3. 加入的 ExtensionPack1 vsext 檔案包含下列程式碼
 
@@ -79,7 +79,7 @@ ms.locfileid: "90037656"
 
 ::: moniker range=">=vs-2019"
 
-1. 在 Visual Studio 的 [ **延伸** 模組] 功能表上，按一下 [ **受管理的延伸**模組]。
+1. 在 Visual Studio 的 [ **延伸** 模組] 功能表上，按一下 [ **受管理的延伸** 模組]。
 
 ::: moniker-end
 
@@ -105,7 +105,7 @@ ms.locfileid: "90037656"
 
 ::: moniker range=">=vs-2019"
 
-1. 在 Visual Studio 的 [ **延伸** 模組] 功能表上，按一下 [ **受管理的延伸**模組]。
+1. 在 Visual Studio 的 [ **延伸** 模組] 功能表上，按一下 [ **受管理的延伸** 模組]。
 
 ::: moniker-end
 

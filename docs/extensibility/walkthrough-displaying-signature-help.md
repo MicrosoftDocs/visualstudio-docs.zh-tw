@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8933822ee5bb63b341ff51296ba2884fef2aeb75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a9aedc6324eb1d4a57517a10b80348841fa72df
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935907"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078496"
 ---
 # <a name="walkthrough-display-signature-help"></a>逐步解說：顯示簽章說明
 簽章說明 (也稱為 *參數資訊*) 當使用者輸入參數清單開始字元 (通常是左括弧) 時，就會在工具提示中顯示方法的簽章。 作為參數和參數分隔符號 (通常會輸入逗點) ，工具提示會更新以顯示下一個參數（以粗體顯示）。 您可以用下列方式定義簽章說明：在語言服務的內容中，定義您自己的副檔名和內容類型，以及只顯示該類型的簽章說明，或針對現有的內容類型顯示簽章說明 (例如 "text" ) 。 本逐步解說會示範如何顯示「文字」內容類型的簽章說明。

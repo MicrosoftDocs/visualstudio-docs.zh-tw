@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - EnableLocationBrowseButton [Visual Studio project templates]
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d909e70f38800bdbeb873ad3fd9bff1d55132825
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5bf5ec98fc71158d9ebe3b95ec9e3d49526cb491
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883424"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061390"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a> (Visual Studio 範本的 EnableLocationBrowseButton 元素) 
 指定是否可在 [**新增專案**] 對話方塊中使用 [**流覽]** 按鈕，讓使用者可以輕鬆地修改儲存新專案的預設目錄。

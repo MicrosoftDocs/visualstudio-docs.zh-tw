@@ -10,17 +10,17 @@ helpviewer_keywords:
 - VSTextBuffer object, reference
 - views [Visual Studio SDK], VSTextBuffer object
 ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9207018ae4f2845e49c541695052ecc30de8914b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a72491b118e0a51454181734a8fe388c2f7e851e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905691"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062183"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 物件
 文字緩衝區物件代表 Unicode 文字的資料流程，通常與檔案相關聯。 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>物件可以在核心編輯器的內容之外使用，如同在中的 wizard。
