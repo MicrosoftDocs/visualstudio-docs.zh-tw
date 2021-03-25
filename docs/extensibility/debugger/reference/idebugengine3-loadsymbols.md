@@ -1,6 +1,6 @@
 ---
 description: 視需要為此偵錯工具所進行的所有模組) 符號載入 (。
-title: IDebugEngine3：： LoadSymbols |Microsoft 檔
+title: IDebugEngine3：： LoadSymbols |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::LoadSymbols
 ms.assetid: c846a440-1d91-4d48-b8f1-82e902ae152b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4b4f210ef07ad10b35251582dd8a3c0fe3b0685
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 43651baac29b3904b9bc12d8d4b965ca1cd8e3ee
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153803"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066174"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
 視需要為此偵錯工具所進行的所有模組) 符號載入 (。

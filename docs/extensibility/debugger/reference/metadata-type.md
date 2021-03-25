@@ -1,6 +1,6 @@
 ---
-description: 此結構會指定取自中繼資料之欄位類型的相關資訊。
-title: METADATA_TYPE |Microsoft 檔
+description: METADATA_TYPE 結構會指定取自中繼資料之欄位型別的相關資訊。
+title: METADATA_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_TYPE structure
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c8f0c8341213dfbe15dcf9a6f5a5fc421c0ebab3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 5a76e051e146985338564d497323b6232b35a4a1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225483"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079848"
 ---
 # <a name="metadata_type"></a>METADATA_TYPE
 此結構會指定取自中繼資料之欄位類型的相關資訊。
@@ -59,7 +59,7 @@ public struct METADATA_TYPE {
 ## <a name="remarks"></a>備註
  當結構的[](../../../extensibility/debugger/reference/type-info.md) `dwKind` 欄位 `TYPE_INFO` 設定為 `TYPE_KIND_METADATA` ([dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉) 中的值時，這個結構會顯示為 TYPE_INFO 結構中聯集的一部分。
 
- `tokClass`值是可唯一識別類型的元資料標記。 如需有關如何解讀中繼資料 token 識別碼之最高位的詳細資訊，請參閱 `CorTokenType` .Net FRAMEWORK SDK 中 corhdr.h 檔案的列舉。
+ `tokClass`值是可唯一識別類型的元資料標記。 如需有關如何解讀中繼資料權杖識別碼之最高位的詳細資訊，請參閱 `CorTokenType` .NET FRAMEWORK SDK 的 corhdr.h .h 檔案中的列舉。
 
 ## <a name="requirements"></a>規格需求
  標頭： sh. h

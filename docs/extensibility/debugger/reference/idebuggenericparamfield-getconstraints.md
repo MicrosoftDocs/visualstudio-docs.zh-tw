@@ -1,26 +1,26 @@
 ---
 description: 捕獲與這個泛型參數相關聯的條件約束。
-title: IDebugGenericParamField：： GetConstraints |Microsoft 檔
+title: IDebugGenericParamField：： GetConstraints |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetConstraints
 - GetConstraints
 ms.assetid: 86a78b5a-ee0f-4999-a0ba-919d3dc7d969
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 51c3dcbeda334953ef09f8bcfbf1789450201a0c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 80a148907c8bb3a50d41c58777efaf965872a0b4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172782"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072737"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 捕獲與這個泛型參數相關聯的條件約束。

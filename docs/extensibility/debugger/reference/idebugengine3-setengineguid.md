@@ -1,6 +1,6 @@
 ---
 description: 這個方法會將 debug engine 的 (DE) GUID '。
-title: IDebugEngine3：： SetEngineGuid |Microsoft 檔
+title: IDebugEngine3：： SetEngineGuid |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetEngineGuid
 ms.assetid: 8bdfa05d-feb7-4d98-abac-77825a04c50f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b1f614de2349d7bfae8339d516c991b2906ffe4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 64d18b8a2cc1e1f0a6ad67418bb4abdf1e684829
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153712"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066161"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
 這個方法會將 debug engine 的 (DE) `GUID` 。

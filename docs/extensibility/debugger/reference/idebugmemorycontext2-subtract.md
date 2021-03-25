@@ -1,6 +1,6 @@
 ---
 description: 從目前內容減去指定的值，並傳回新的內容。
-title: IDebugMemoryCoNtext2：：減法 |Microsoft 檔
+title: IDebugMemoryCoNtext2：：減法 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Subtract method
 - IDebugMemoryContext2::Subtract method
 ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d77a0fcd4d791eefe98ae908bdf86ba49bec519
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1007a50ca42164cfc4e4f58c8d2c877cbba20f5c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165003"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058582"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 從目前內容減去指定的值，並傳回新的內容。

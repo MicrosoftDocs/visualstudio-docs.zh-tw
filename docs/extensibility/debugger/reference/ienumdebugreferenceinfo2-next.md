@@ -1,6 +1,6 @@
 ---
 description: 從列舉傳回下一組 DEBUG_REFERENCE_INFO 元素。
-title: IEnumDebugReferenceInfo2：： Next |Microsoft 檔
+title: IEnumDebugReferenceInfo2：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugReferenceInfo2::Next
 ms.assetid: 70b31a57-1701-4757-9e7e-63ec60a71b3c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4345dae86655dcbf6cd6e31c6277a2cc7acc0528
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 42f407054728d2ac4a3ba5b9c04bd48080442f94
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225821"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079900"
 ---
 # <a name="ienumdebugreferenceinfo2next"></a>IEnumDebugReferenceInfo2::Next
 傳回列舉中的下一組元素。

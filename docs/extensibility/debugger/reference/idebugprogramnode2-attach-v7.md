@@ -1,5 +1,6 @@
 ---
 title: IDebugProgramNode2：： Attach_V7 |Microsoft Docs
+description: 這個介面方法是在 Visual Studio 2005 之前所使用的舊取代附加方法。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::Attach_V7
 - IDebugProgramNode2::Attach
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b143477dc558b20a302a54d5baecc64d02d33ea3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c949bba45457917e4dd00bdc05bc300f3a38eb7e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898637"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053590"
 ---
 # <a name="idebugprogramnode2attach_v7"></a>IDebugProgramNode2::Attach_V7
 

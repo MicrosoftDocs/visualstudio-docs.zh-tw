@@ -1,6 +1,6 @@
 ---
 description: 略過埠列舉中指定的元素數目。
-title: IEnumDebugPorts2：： Skip |Microsoft 檔
+title: IEnumDebugPorts2：： Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPorts2::Skip
 ms.assetid: a837383f-7b39-4e06-b336-f1715b073dbe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04ff77835470e4eb495de0af992ec6563cb3fba6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 60ca2f50512b998683f497fa04ccca96cc746657
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224469"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105052796"
 ---
 # <a name="ienumdebugports2skip"></a>IEnumDebugPorts2::Skip
 略過指定的元素數目。

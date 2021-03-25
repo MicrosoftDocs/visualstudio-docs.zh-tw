@@ -1,6 +1,6 @@
 ---
 description: 針對指定的偵錯工具引擎啟用自動附加。
-title: IDebugCoreServer3：： EnableAutoAttach |Microsoft 檔
+title: IDebugCoreServer3：： EnableAutoAttach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 644d238db11c117b9068de8f7903361b9712f3aa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0e3b78744d67183c368345af8c6c26e57edec8d1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163144"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058673"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 針對指定的偵錯工具引擎啟用自動附加。

@@ -1,6 +1,6 @@
 ---
 description: 抓取描述內容的 CONTEXT_INFO 結構。
-title: IDebugMemoryCoNtext2：： GetInfo |Microsoft 檔
+title: IDebugMemoryCoNtext2：： GetInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - GetInfo method
 - IDebugMemoryContext2::GetInfo method
 ms.assetid: 08c7f091-1816-4d64-8834-f9ecaac5c58d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2dfcd6063988f188b307b03febaeca988c8fb025
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fe87f5dbf14d714f4915e99c23a56b8c9490dd23
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165042"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058621"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
 抓取描述內容的 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 結構。

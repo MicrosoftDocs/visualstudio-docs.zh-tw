@@ -1,22 +1,22 @@
 ---
 description: 代表 managed 程式碼泛型型別的欄位實例。
-title: IDebugGenericFieldInstance |Microsoft 檔
+title: IDebugGenericFieldInstance |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericFieldInstance interface
 ms.assetid: f68b4761-be8b-4801-9d4b-cde90e01d95e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e593e3e739831ac8478a277962201d4be8f9554
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: cf87999768ae12b9ae10702bc0e8ae8efe16e000
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165341"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072750"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 代表 managed 程式碼泛型型別的欄位實例。

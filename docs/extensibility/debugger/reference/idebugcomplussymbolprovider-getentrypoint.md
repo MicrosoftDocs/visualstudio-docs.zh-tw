@@ -1,26 +1,26 @@
 ---
 description: 抓取應用程式進入點。
-title: IDebugComPlusSymbolProvider：： GetEntryPoint |Microsoft 檔
+title: IDebugComPlusSymbolProvider：： GetEntryPoint |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetEntryPoint
 - GetEntryPoint
 ms.assetid: 9640e121-1da1-41f9-8e66-76efca36baf2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c6acda563d1d2187f350fb1d2edcd968ee8d64ce
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 60c05683bae7845c852b954ed330b26557504fd6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163820"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058842"
 ---
 # <a name="idebugcomplussymbolprovidergetentrypoint"></a>IDebugComPlusSymbolProvider::GetEntryPoint
 抓取應用程式進入點。

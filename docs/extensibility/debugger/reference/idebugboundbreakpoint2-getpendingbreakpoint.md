@@ -1,6 +1,6 @@
 ---
 description: 取得建立指定系結中斷點的暫止中斷點。
-title: IDebugBoundBreakpoint2：： GetPendingBreakpoint |Microsoft 檔
+title: IDebugBoundBreakpoint2：： GetPendingBreakpoint |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - IDebugBoundBreakpoint2::GetPendingBreakpoint method
 - GetPendingBreakpoint method
 ms.assetid: 22f94f81-f8d9-46de-96e9-fae6f3c24903
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18b6ab7f9c520511d2abe57e3864e71bc7534b4c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 15b053515268c16bfacdeee08e40390950542e38
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167577"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095832"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 取得建立指定系結中斷點的暫止中斷點。

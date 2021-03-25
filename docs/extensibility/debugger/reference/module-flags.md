@@ -1,6 +1,6 @@
 ---
 description: 用來描述模組。
-title: MODULE_FLAGS |Microsoft 檔
+title: MODULE_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_FLAGS enumeration
 ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e671b3e578a78665a6a816582e0290119f77ea58
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b78e0ec9f720307a60485283b98939dee954ff29
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225470"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079783"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
 用來描述模組。

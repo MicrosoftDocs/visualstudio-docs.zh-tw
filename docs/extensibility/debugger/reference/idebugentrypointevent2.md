@@ -1,6 +1,6 @@
 ---
 description: 當程式即將執行其第一個使用者程式碼指令時，debug engine (DE) 會將此介面傳送至會話 debug manager (SDM) 。
-title: IDebugEntryPointEvent2 |Microsoft 檔
+title: IDebugEntryPointEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEntryPointEvent2 interface
 ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da733292407c93327374a4c6fa54c558d3202caa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ccc928b3d0ca9106b6f83a4c398a694ba429ce8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153387"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065981"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 當程式即將執行其第一個使用者程式碼指令時，debug engine (DE) 會將此介面傳送至會話 debug manager (SDM) 。

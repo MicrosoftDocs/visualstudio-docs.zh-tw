@@ -1,25 +1,25 @@
 ---
 description: 列舉控制運算式評估之旗標的有效值。
-title: EVALFLAGS90 |Microsoft 檔
+title: EVALFLAGS90 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - EVALFLAGS90 enumeration
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2080eba4b8319045dcd4d3603d1e6441fafed97d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 32e75b938f45df5d4fa91bec4b59964dfc6a54e5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150922"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095923"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 列舉控制運算式評估之旗標的有效值。 此列舉會擴充 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 列舉。
@@ -76,7 +76,7 @@ public enum enum_EVALFLAGS90
 指定在中斷點上停止。
 
 `EVAL90_ALLOWERRORREPORT`\
-指定要允許的主機錯誤報表。 主要用於 Internet Explorer 腳本中的運算式評估。
+指定要允許的主機錯誤報表。 主要用於 Internet Explorer 中腳本的運算式評估。
 
 `EVAL90_FUNCTION_AS_ADDRESS`\
 強制將函數評估為位址，而不是叫用函數。

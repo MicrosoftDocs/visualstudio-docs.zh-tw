@@ -1,26 +1,26 @@
 ---
 description: 建立具有指定長度的字串物件。
-title: IDebugFunctionObject2：： CreateStringObjectWithLength |Microsoft 檔
+title: IDebugFunctionObject2：： CreateStringObjectWithLength |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - CreateStringObjectWithLength
 - IDebugFunctionObject2::CreateStringObjectWithLength
 ms.assetid: 1f43ec66-1615-4a4c-8b9d-e933f549f96d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 637b9837cdc351e9f717a773302fbfe6f6588f46
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5314bf6d06f291ce7128b3b6ccebd520ef2eafca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149952"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072828"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
 建立具有指定長度的字串物件。

@@ -1,22 +1,22 @@
 ---
 description: 當程式的名稱變更時，從 debug engine 傳送 (DE) 至會話 debug manager (SDM) 。
-title: IDebugProgramNameChangedEvent2 |Microsoft 檔
+title: IDebugProgramNameChangedEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProgramNameChangedEvent2 interface
 ms.assetid: be1f1cd5-0b2f-435c-a052-dca28a7c978d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 408d564efe6b0cbd76d5bf6993fcc0113a299cb7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 60fbc8aac3fd621a8f19074682bd82fbe957ed3b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145218"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053694"
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
 當程式的名稱變更時，從 debug engine 傳送 (DE) 至會話 debug manager (SDM) 。

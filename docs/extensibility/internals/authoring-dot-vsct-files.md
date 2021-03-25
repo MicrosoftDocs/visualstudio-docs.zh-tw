@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c484c08b3335d51283f1f6e1a7b29757a2271aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73d16337daefdfe25425982a7fc7249c42f0fa1a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906062"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086335"
 ---
 # <a name="author-vsct-files"></a>撰寫 .vsct 檔案
 本檔說明如何撰寫 *.vsct* 檔案，以將功能表項目、工具列和其他使用者介面 (UI) 專案加入至 Visual Studio 整合式開發環境 (IDE) 。 當您將 UI 專案加入至沒有 *.vsct* 檔案的 Visual Studio 封裝 (VSPackage) 時，請使用這些步驟。
@@ -223,7 +223,7 @@ ms.locfileid: "99906062"
 
    如需詳細資訊，請參閱 [CommandFlag](../../extensibility/command-flag-element.md) 元素。
 
-5. 若要將功能表相依的鍵盤快速鍵附加至功能表或功能表上的專案，請在 `ButtonText` 功能表或功能表項目的元素中，新增符號字元 ( # A0) 。 當上層功能表開啟時，連字號後面的字元是使用中的鍵盤快速鍵。
+5. 若要將功能表相依的鍵盤快速鍵附加至功能表或功能表上的專案，請在 `ButtonText` 功能表或功能表項目的元素中加入連字號字元 (&) 。 當上層功能表開啟時，連字號後面的字元是使用中的鍵盤快速鍵。
 
 6. 若要將功能表獨立的鍵盤快速鍵附加至命令，請使用 [keybindings.json](../../extensibility/keybindings-element.md) 元素。 如需詳細資訊，請參閱 [KeyBinding](../../extensibility/keybinding-element.md) 元素。
 

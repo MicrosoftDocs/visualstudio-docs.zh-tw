@@ -1,6 +1,6 @@
 ---
 description: 此結構代表原生位址。
-title: NATIVE_ADDRESS |Microsoft 檔
+title: NATIVE_ADDRESS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - NATIVE_ADDRESS structure
 ms.assetid: 7a0cd085-bfc8-45cc-a3d4-4459070e207a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5e243982eefbfbb8aab5797bf40031aa5d8aca4c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 799120bf3a068ccbc7eebad729b4312d6715af34
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222181"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086465"
 ---
 # <a name="native_address"></a>NATIVE_ADDRESS
 

@@ -1,6 +1,6 @@
 ---
 description: 指定要從程式提供者取得的所需屬性。
-title: PROVIDER_FLAGS |Microsoft 檔
+title: PROVIDER_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FLAGS enumeration
 ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8851dffa0de1155edf401c0d0b0feadda199a5e9
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ed6a93b9e2b90fc125642697b193d51713b01e69
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222025"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086348"
 ---
 # <a name="provider_flags"></a>PROVIDER_FLAGS
 指定要從程式提供者取得的所需屬性。

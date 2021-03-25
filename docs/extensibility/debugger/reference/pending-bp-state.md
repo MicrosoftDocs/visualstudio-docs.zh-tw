@@ -1,6 +1,6 @@
 ---
 description: 指定暫止中斷點的狀態 (尚未系結) 的中斷點。
-title: PENDING_BP_STATE |Microsoft 檔
+title: PENDING_BP_STATE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE enumeration
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce0ceedd50fbdf6345b49143c4634f49dec308f7
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d041042be92fe68dd6f0ea35bbdb4f6dd6d9ac7e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222116"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086374"
 ---
 # <a name="pending_bp_state"></a>PENDING_BP_STATE
 指定暫止中斷點的狀態 (尚未系結) 的中斷點。
