@@ -1,26 +1,26 @@
 ---
 description: 判斷指定的 debug 位址是否為序列點。
-title: IDebugComPlusSymbolProvider2：： IsAddressSequencePoint |Microsoft 檔
+title: IDebugComPlusSymbolProvider2：： IsAddressSequencePoint |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 - IsAddressSequencePoint
 ms.assetid: 89b27c57-5295-428b-8229-a402500d8cd3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50e14f7e91457e2a7a0bd4719730e96d4019e82d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 966981d4dba7e1517e8e89471ccd2c062a8fb822
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163378"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084957"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 判斷指定的 debug 位址是否為序列點。

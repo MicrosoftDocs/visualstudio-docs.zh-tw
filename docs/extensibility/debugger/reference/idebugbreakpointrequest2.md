@@ -1,6 +1,6 @@
 ---
 description: IDebugBreakPointRequest2 介面代表建立及系結任何中斷點類型所需的資訊。
-title: IDebugBreakpointRequest2 |Microsoft 檔
+title: IDebugBreakpointRequest2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 01ac4013-96f9-4235-b289-f55f9e99558f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e7d13c945de1358265a5eb92769192ce736be49
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8788e7a78bcd4c03567e5d07c96a310fa6970fb1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162351"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054448"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 此介面代表建立和系結任何類型中斷點所需的資訊。

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fdbd9220ef82102dd66f10ab7f15570118bae9a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1b94c7b2cacb7ad78031721156bdd90cb666c4f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904549"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062287"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸架構2.0 參考
 VSIX 部署資訊清單檔案會描述 VSIX 封裝的內容。 檔案格式是由架構所控管。 此架構的版本2.0 支援新增自訂類型和屬性。  資訊清單的架構是可擴充的。 資訊清單載入器會忽略其不了解的 XML 元素和屬性。
@@ -114,7 +114,7 @@ VSIX 部署資訊清單檔案會描述 VSIX 封裝的內容。 檔案格式是�
 
     - VisualStudio. VSLS
 
-    - 我的 Shell. 應用程式
+    - My.Shell.App
 
   - `Version` -此屬性會使用此 SKU 的最小和最大支援版本來指定版本範圍。 封裝可以詳細說明它支援的 Sku 版本。 版本範圍標記法是 [10.0-11.0]，其中
 

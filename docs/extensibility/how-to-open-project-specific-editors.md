@@ -9,17 +9,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], opening project-specific editors
 - projects [Visual Studio SDK], opening folders
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719460b36f926df19e76db1aab4e90b4d959fdc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8fa68ff628212a207f860a3f9e6eca960481ee9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850490"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069877"
 ---
 # <a name="how-to-open-project-specific-editors"></a>如何：開啟專案特定的編輯器
 如果專案開啟的專案檔本質上系結至該專案的特定編輯器，則專案必須使用專案特定的編輯器來開啟檔案。 無法將檔案委派給 IDE 用來選取編輯器的機制。 例如，您可以使用這個專案特定的編輯器選項來指定特定的點陣圖編輯器，以辨識專案中唯一的資訊，而不是使用標準點陣圖編輯器。

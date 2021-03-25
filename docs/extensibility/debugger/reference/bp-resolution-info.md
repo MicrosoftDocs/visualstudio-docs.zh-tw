@@ -1,6 +1,6 @@
 ---
 description: 描述程式碼中斷點或資料中斷點的系結中斷點資訊。
-title: BP_RESOLUTION_INFO |Microsoft 檔
+title: BP_RESOLUTION_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_INFO structure
 ms.assetid: ba0c162a-61e8-4a0b-811f-4c1d8a5d82f0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9acdc85cd7ea3e8da239395e5db8c921936a98bd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c611b37003df7d8ccab787a14402e64ee2da9ad3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162585"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054669"
 ---
 # <a name="bp_resolution_info"></a>BP_RESOLUTION_INFO
 描述程式碼中斷點或資料中斷點的系結中斷點資訊。

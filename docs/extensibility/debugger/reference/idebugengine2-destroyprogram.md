@@ -1,6 +1,6 @@
 ---
 description: 通知偵錯工具引擎 (DE) 指定的程式已被異常終止，而 DE 應該清除程式的所有參考，並傳送程式損毀事件。
-title: IDebugEngine2：:D estroyProgram |Microsoft 檔
+title: IDebugEngine2：:D estroyProgram |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::DestroyProgram
 ms.assetid: 0c9e2698-c70f-4770-a7bb-39650e9c3a1f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ee646b48a36a2b2c5d707eab6c5a32145d55439
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c0a58dd5893c3235ded9c7eeb5f5d47e3ddcb380
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162676"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105093843"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 通知偵錯工具引擎 (DE) 指定的程式已被異常終止，而 DE 應該清除程式的所有參考，並傳送程式損毀事件。

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d08552683ce61892b0ee233173466a79326e4c6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fbad469b28c0b8a6aab070d47cf12c326beb92d8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894851"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062781"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>註冊舊版語言服務2
 下列各節提供中可用之各種語言服務選項的登錄專案清單 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。

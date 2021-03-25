@@ -1,6 +1,6 @@
 ---
 description: 判斷這個欄位的自訂屬性是否存在，如果存在，則傳回屬性資訊。
-title: IDebugCustomAttributeQuery2 |Microsoft 檔
+title: IDebugCustomAttributeQuery2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 - IDebugCustomAttributeQuery interface
 - IDebugCustomAttributeQuery2 interface
 ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62461cbdbfe373f6c3d45569564e611efdd6f452
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 00f7e23b280ef92e9883f68f203bd790f5e4d815
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160221"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077560"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 判斷這個欄位的自訂屬性是否存在，如果存在，則傳回屬性資訊。

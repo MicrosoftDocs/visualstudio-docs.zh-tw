@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7d7e664f0c39a46e1d84df0c5a0842c7270c942
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae01d149611afe5bf75a6952f19baff7d70f6210
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896898"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062807"
 ---
 # <a name="project-model-core-components"></a>專案模型的核心元件
 下表會在專案模型上展開。 這些表格會顯示模型中所識別之介面和服務的簡短描述，以及與特定物件相關聯的介面和服務。 此外，根據特定專案類型的需求，資料表會詳細說明專案建立和維護中的其他介面。

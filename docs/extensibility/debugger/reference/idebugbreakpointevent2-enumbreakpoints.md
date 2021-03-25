@@ -1,6 +1,6 @@
 ---
 description: 針對在目前程式碼位置引發的所有中斷點建立枚舉器。
-title: IDebugBreakpointEvent2：： EnumBreakpoints |Microsoft 檔
+title: IDebugBreakpointEvent2：： EnumBreakpoints |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointEvent2:::EnumBreakpoints
 ms.assetid: 606a9625-ee43-4e84-9a47-af9a50d2d005
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6bccb263fbdfebe1a83dab5f2ce5f570338b6d2e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ee18b1e24730b003e9b5cecaa0eac9bbdd87a913
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143347"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054500"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 針對在目前程式碼位置引發的所有中斷點建立枚舉器。

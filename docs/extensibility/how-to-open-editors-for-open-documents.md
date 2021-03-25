@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45cd616a58f51a532883eeba37f06c4eb73bd72d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6dfcd44a03b110ae514c2de36092ee07fd0c35e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850670"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069916"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何：開啟開啟檔的編輯器
 專案必須先判斷檔案是否已經在其他編輯器的文件視窗中開啟，專案才會開啟文件視窗。 您可以在專案特定的編輯器中開啟檔案，或在其中一個已註冊的標準編輯器中開啟檔案 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。

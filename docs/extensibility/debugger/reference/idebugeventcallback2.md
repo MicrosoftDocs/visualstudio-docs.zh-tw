@@ -1,6 +1,6 @@
 ---
 description: 此介面是由 debug engine (DE) 將 debug 事件傳送到會話 debug manager (SDM) 。
-title: IDebugEventCallback2 |Microsoft 檔
+title: IDebugEventCallback2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEventCallback2
 ms.assetid: 2c935ee0-2e22-4be0-a852-73736f33c8c9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb33bcbdff14b0f95aab5d8f300473c13d4c342f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d00c970c522adf232f9a18b762c7d6cf3cf3b794
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152906"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084892"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 此介面是由 debug engine (DE) 將 debug 事件傳送到會話 debug manager (SDM) 。

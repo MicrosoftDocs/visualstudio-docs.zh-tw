@@ -1,25 +1,25 @@
 ---
 description: 描述可用的偵錯工具引擎之唯一識別碼陣列。
-title: GUID_ARRAY |Microsoft 檔
+title: GUID_ARRAY |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GUID_ARRAY structure
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cbdc8465bef0795649fef5b169a221a3e7b7178c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 504c917d9fb2b1e2cd15ac8154faf70eaf98beec
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162416"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054578"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
 描述可用的偵錯工具引擎之唯一識別碼陣列。

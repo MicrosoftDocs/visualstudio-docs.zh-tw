@@ -1,6 +1,6 @@
 ---
 description: 在 debug engine 中建立暫止中斷點 (DE) 。
-title: IDebugEngine2：： CreatePendingBreakpoint |Microsoft 檔
+title: IDebugEngine2：： CreatePendingBreakpoint |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::CreatePendingBreakpoint
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c364778fa857049139c058f144651edc28bb4692
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fa06a4c88afecfebbd0b1258d7f1830dfdaad5ac
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160157"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105093869"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 在 debug engine 中建立暫止中斷點 (DE) 。

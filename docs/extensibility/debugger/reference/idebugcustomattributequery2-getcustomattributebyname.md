@@ -1,6 +1,6 @@
 ---
 description: 取得自訂屬性的名稱的自訂屬性（property）。
-title: IDebugCustomAttributeQuery2：： GetCustomAttributeByName |Microsoft 檔
+title: IDebugCustomAttributeQuery2：： GetCustomAttributeByName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::GetCustomAttributeByName
 ms.assetid: 7428dfeb-8929-41b2-9b99-cb343a86c02d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c65abff050af7b7c34161cbca2594431cb119b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: dd8b1793bad585dd808ebd812b610cd68aabc129
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150077"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077599"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 取得自訂屬性的名稱的自訂屬性（property）。

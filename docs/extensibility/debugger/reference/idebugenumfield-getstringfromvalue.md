@@ -1,6 +1,6 @@
 ---
 description: 這個方法會根據指定的值來取得列舉常數的名稱。
-title: IDebugEnumField：： GetStringFromValue |Microsoft 檔
+title: IDebugEnumField：： GetStringFromValue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetStringFromValue method
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8601be6a1c87fcad10c6e5260e791fcf2ce42f01
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 41d004a9b226646dd1196f1debc244cdf11efe32
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153335"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092575"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
 這個方法會根據指定的值來取得列舉常數的名稱。

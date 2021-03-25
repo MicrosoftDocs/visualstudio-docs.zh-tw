@@ -1,6 +1,6 @@
 ---
 description: 此介面代表變數的類型。
-title: IDebugDynamicField |Microsoft 檔
+title: IDebugDynamicField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDynamicField interface
 ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf148294a7c18c2b717bb4de63dac7e656e25d6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bf1d72bfa38e6af0419e696b267699d10340cc68
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167226"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094077"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
 此介面代表變數的類型。
