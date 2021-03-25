@@ -1,6 +1,6 @@
 ---
 description: 這個方法會取得欄位的偵錯工具位址。
-title: IDebugField：： GetAddress |Microsoft 檔
+title: IDebugField：： GetAddress |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetAddress method
 ms.assetid: 6981bf03-66ef-4bf9-87ea-f6c9624486cb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bda569ecc278fa0ff4a479b55817cd905ca85c40
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 06b6d1770e5fa4c4d2548e0551c437b04e91feb2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152061"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077118"
 ---
 # <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
 這個方法會取得欄位的偵錯工具位址。

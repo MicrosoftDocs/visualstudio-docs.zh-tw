@@ -1,6 +1,6 @@
 ---
 description: 抓取與這個屬性相關聯的字串，並將它儲存在使用者提供的緩衝區中。
-title: IDebugProperty3：： GetStringChars |Microsoft 檔
+title: IDebugProperty3：： GetStringChars |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetStringChars
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3b220fa02809015d1fa699c5e9eb5edac8cf2f3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 21baaa5e5eb7446636fcbab9038db87444d50017
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166680"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083930"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 抓取與這個屬性相關聯的字串，並將它儲存在使用者提供的緩衝區中。

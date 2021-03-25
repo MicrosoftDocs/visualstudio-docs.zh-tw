@@ -1,6 +1,6 @@
 ---
 description: 傳回屬性值的參考。
-title: IDebugProperty2：： GetReference |Microsoft 檔
+title: IDebugProperty2：： GetReference |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetReference method
 ms.assetid: 2fa97d9b-c3d7-478e-ba5a-a933f40a0103
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c103e8826266ddbaaa5b96f4a9aa32067893e45f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: cc8a922ad29b7f6b3ecff57ee5df7ad0e7dded1d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166783"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064757"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 傳回屬性值的參考。

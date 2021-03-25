@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands, routing
 - command routing
 ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47991a3d1140893c4695e4edb7b76b808ab2917a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e02493cbb2f872806ade33d77609d45d1938ccd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907737"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057308"
 ---
 # <a name="command-routing-algorithm"></a>命令路由演算法
 在 Visual Studio 命令會由許多不同的元件處理。 命令會根據目前的選取範圍，從最內層的內容路由傳送至最外層的 (也稱為全域) 內容。 如需詳細資訊，請參閱 [命令可用性](../../extensibility/internals/command-availability.md)。

@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57a273d994e6b8a4b34a139ab98713cc8c6cd83b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a39987e13ed3af4bc19c3a80baf0049467daf3a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968121"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057646"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>從設定存放區取得服務資訊
 您可以使用 [設定] 存放區來尋找所有可用的服務，或判斷是否已安裝特定的服務。 您必須知道服務類別的型別。
@@ -24,7 +24,7 @@ ms.locfileid: "99968121"
 
 1. 建立名為的 VSIX 專案 `FindServicesExtension` ，然後新增名為的自訂命令 `FindServicesCommand` 。 如需有關如何建立自訂命令的詳細資訊，請參閱[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能
 
-2. 在 *FindServicesCommand.cs* 中，新增下列 using 指示詞：
+2. 在 *FindServicesCommand* 中，新增下列 using 指示詞：
 
     ```csharp
     using System.Collections.Generic;

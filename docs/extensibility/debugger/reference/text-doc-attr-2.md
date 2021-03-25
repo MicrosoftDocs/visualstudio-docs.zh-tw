@@ -1,6 +1,6 @@
 ---
 description: 描述檔的屬性。
-title: TEXT_DOC_ATTR_2 |Microsoft 檔
+title: TEXT_DOC_ATTR_2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_DOC_ATTR_2 enumeration
 ms.assetid: 2333b33b-042b-4ac6-9ebe-e66f95f52f51
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c8351753c5e8da9a320bd93c17e8138dedaff03d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a2b9d5910b3a86b322a7589b285ba242dec4add2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221856"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070917"
 ---
 # <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 描述檔的屬性。

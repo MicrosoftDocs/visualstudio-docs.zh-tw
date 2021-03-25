@@ -8,17 +8,17 @@ helpviewer_keywords:
 - programs, termination events
 - debug engines, detaching from programs
 ms.assetid: 268c1e51-6363-45d1-964c-1ab99bdfa4f9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6ac3e8517ee99dcd52261eb87b6cee3954793d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8662809b50dbfec3046af1d0d6b6fa151c3a33e0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895891"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057828"
 ---
 # <a name="termination-and-detaching"></a>終止和卸離
 下一節說明正常終止。

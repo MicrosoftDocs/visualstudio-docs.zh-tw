@@ -1,6 +1,6 @@
 ---
 description: 這個方法會取得欄位的可顯示資訊。
-title: IDebugField：： GetInfo |Microsoft 檔
+title: IDebugField：： GetInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetInfo method
 ms.assetid: 7d508200-89ce-400f-a8ea-f28e7610cb2b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c681fef38377f0ce8e74b45dba065b5eae39462c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: deebf0c8dafe64c8eb78ba5a1af0b8f96c70a18a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151931"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077053"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 這個方法會取得欄位的可顯示資訊。

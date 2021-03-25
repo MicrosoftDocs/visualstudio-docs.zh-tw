@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
 - source control plug-ins, switching
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50cbf92b8214e605976aec58aaea984276ca8cc6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2dbc6b9646bcdec8cbdfae9d262397eb0ff74bdc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848204"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090768"
 ---
 # <a name="test-area-8-plug-in-switching"></a>測試區域 8：外掛程式切換
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 具有使用者介面 (UI) ，可變更目前的原始檔控制外掛程式。 這個測試區域提供的測試案例，可讓您挑選要用於方案原始檔控制的外掛程式。

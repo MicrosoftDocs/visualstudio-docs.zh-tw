@@ -1,6 +1,6 @@
 ---
 description: 取得描述這個執行緒的屬性。
-title: IDebugThread2：： GetThreadProperties |Microsoft 檔
+title: IDebugThread2：： GetThreadProperties |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetThreadProperties
 ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 293607e30fa8c5d1f4367b23a1f4904f94aa0bed
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fc681ff8258988c5a7f708d9ae2342f013010bd6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164522"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070930"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 取得描述這個執行緒的屬性。

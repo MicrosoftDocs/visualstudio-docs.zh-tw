@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89a19ee51a62e8d92c0ec8984e912703e2b92b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8de3f32951cb70b8115781ce067950c7e518b102
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968186"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057659"
 ---
 # <a name="get-project-properties"></a>取得專案屬性
 
@@ -38,7 +38,7 @@ ms.locfileid: "99968186"
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>在工具視窗中顯示專案屬性
 
-1. 在 ProjectPropertiesToolWindowCommand.cs 檔案中，新增下列 using 指示詞。
+1. 在 ProjectPropertiesToolWindowCommand .cs 檔案中，加入下列 using 指示詞。
 
     ```csharp
     using EnvDTE;
@@ -46,9 +46,9 @@ ms.locfileid: "99968186"
 
     ```
 
-2. 在 *ProjectPropertiesToolWindowControl* 中，移除 [現有] 按鈕，並從 [工具箱] 新增 TreeView。 您也可以從 *ProjectPropertiesToolWindowControl.xaml.cs* 檔中移除 click 事件處理常式。
+2. 在 *ProjectPropertiesToolWindowControl* 中，移除 [現有] 按鈕，並從 [工具箱] 新增 TreeView。 您也可以從 *ProjectPropertiesToolWindowControl* 檔中移除 click 事件處理常式。
 
-3. 在 *ProjectPropertiesToolWindowCommand.cs* 中，使用 `ShowToolWindow()` 方法開啟專案並讀取其屬性，然後將屬性新增至 TreeView。 ShowToolWindow 的程式碼看起來應該如下所示：
+3. 在 *ProjectPropertiesToolWindowCommand* 中，使用 `ShowToolWindow()` 方法開啟專案並讀取其屬性，然後將屬性新增至 TreeView。 ShowToolWindow 的程式碼看起來應該如下所示：
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

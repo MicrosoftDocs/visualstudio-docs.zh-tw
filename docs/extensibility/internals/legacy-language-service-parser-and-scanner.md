@@ -8,17 +8,17 @@ helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c57bd9f8b71f861fd5be4176211af6907b27e74
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839556"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090833"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>舊版語言服務的剖析器和掃描器
 剖析器是語言服務的核心。 受管理的封裝架構 (MPF) 語言類別需要語言剖析器來選取要顯示之程式碼的相關資訊。 剖析器會將文字分隔為詞法標記，然後根據類型和功能來識別這些權杖。
@@ -114,7 +114,7 @@ namespace MyNamespace
 
 12. 大功告成。
 
-### <a name="summary"></a>摘要
+### <a name="summary"></a>總結
  相符的大括弧運算通常僅限於一組簡單的語言專案。 更複雜的元素（例如，比對三 ( ""、""、" `if(...)` `{` "、"" `}` `else` 、" `{` " 和 " `}` " ) ）可以反白顯示為字完成作業的一部分。 例如，當 "else" 單字完成時，可以反白顯示相符的 " `if` " 語句。 如果有一系列的 `if` / `else if` 語句，則可以使用相同的機制來反白顯示所有的語句。 <xref:Microsoft.VisualStudio.Package.Source>基類已支援這項功能，如下所示：掃描器必須傳回 token 觸發程式值， <xref:Microsoft.VisualStudio.Package.TokenTriggers> 並與 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 游標位置之前的標記觸發值結合。
 
  如需詳細資訊，請參閱 [舊版語言服務中的括弧](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)比對。

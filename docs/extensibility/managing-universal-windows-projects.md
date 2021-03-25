@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d4fbd509cbbb408bdcd0465ba4460f8c3b1e9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8af418d8ffcaad18aca4497078f4e24f9bb679fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943240"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090638"
 ---
 # <a name="manage-universal-windows-projects"></a>管理通用 Windows 專案
 
@@ -31,7 +31,7 @@ ms.locfileid: "99943240"
 
 2. 在 [**延伸** 模組] 區段中新增 *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* 的參考，並 *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* () 。
 
-3. 開啟 *TestUniversalProject.cs* ，並新增下列指示詞 `using` ：
+3. 開啟 *TestUniversalProject* ，並加入下列指示詞 `using` ：
 
     ```csharp
     using EnvDTE;
@@ -425,9 +425,9 @@ ms.locfileid: "99943240"
 
       在此程式中，您會將事件接聽程式新增至共用專案和平臺專案。 然後，當您重新命名共用專案中的一個檔案，以及平臺專案中的另一個檔案時，就會看到針對每個重新命名作業引發的事件。
 
-2. 新增事件接聽程式。 將新的類別檔案加入至專案，並呼叫它 *HierarchyEventListener.cs*。
+2. 新增事件接聽程式。 將新的類別檔案加入至專案，並呼叫它 *HierarchyEventListener。*
 
-3. 開啟 *HierarchyEventListener.cs* 檔案，並新增下列 using 指示詞：
+3. 開啟 *HierarchyEventListener .cs* 檔案，然後新增下列 using 指示詞：
 
    ```csharp
    using Microsoft.VisualStudio.Shell.Interop;
@@ -551,7 +551,7 @@ ms.locfileid: "99943240"
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. 建置並執行專案。 在實驗實例中建立 c # 通用中樞應用程式，移至 [ **工具** ] 功能表，然後按一下 [叫用 **TestUniversalProject**]，並檢查 [一般輸出] 窗格中的文字。 共用專案中第一個專案的名稱 (我們預期它是 *應用程式 .xaml* 檔案) 應該變更，您應該會看到 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> 事件已引發。 在此情況下，自從重新命名 *應用程式* 之後，也會讓 *App.xaml.cs* 重新命名，您應該會看到每個平臺專案) 的四個事件 (兩個。  (DTE 事件不會追蹤共用專案中的專案。 ) 您應該會看到兩個 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 事件，每個平臺) 專案 (一個事件，但沒有任何 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 事件。
+11. 建置並執行專案。 在實驗實例中建立 c # 通用中樞應用程式，移至 [ **工具** ] 功能表，然後按一下 [叫用 **TestUniversalProject**]，並檢查 [一般輸出] 窗格中的文字。 共用專案中第一個專案的名稱 (我們預期它是 *應用程式 .xaml* 檔案) 應該變更，您應該會看到 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> 事件已引發。 在此情況下，由於重新命名 *應用程式* ，會使 *app.config* 重新命名，因此您應該會看到每個平臺專案的四個事件 (兩個) 。  (DTE 事件不會追蹤共用專案中的專案。 ) 您應該會看到兩個 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 事件，每個平臺) 專案 (一個事件，但沒有任何 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 事件。
 
 12. 現在嘗試重新命名平臺專案中的檔案，您可以看到引發的事件有何差異。 在呼叫之後，將下列程式碼加入 `ShowMessageBox` `ModifyFileName` 。
 

@@ -1,6 +1,6 @@
 ---
 description: 描述指定文字中的行和資料行位置。
-title: TEXT_POSITION |Microsoft 檔
+title: TEXT_POSITION |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_POSITION structure
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7793870c91279b219a450463c921339b76565a62
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 1b99b5dcede7f0e40e0ff77d1e3f7f64b5943c18
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221843"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070891"
 ---
 # <a name="text_position"></a>TEXT_POSITION
 描述指定文字中的行和資料行位置。

@@ -1,6 +1,6 @@
 ---
 description: 這個介面代表堆疊框架屬性、程式檔案屬性或其他屬性。
-title: IDebugProperty2 |Microsoft 檔
+title: IDebugProperty2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2 interface
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42cdd3f9e5fd1d92e007bb9a15cf9e1fa5e44e83
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c5d20f0bd3727860f32e111baad2d2513590e880
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171448"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064796"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 這個介面代表堆疊框架屬性、程式檔案屬性或其他屬性。 屬性通常是運算式評估的結果。

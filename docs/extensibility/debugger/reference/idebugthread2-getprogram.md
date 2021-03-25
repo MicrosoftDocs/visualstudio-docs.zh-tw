@@ -1,6 +1,6 @@
 ---
 description: 取得執行執行緒的程式。
-title: IDebugThread2：： GetProgram |Microsoft 檔
+title: IDebugThread2：： GetProgram |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetProgram
 ms.assetid: 8c9c5ea1-2031-472e-bc8f-30e22e754566
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd58ffb9cbcfd073d20643c4702194759f6267a0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e29b0683931e82617a4d34cfa438fd5cac6d55e9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164587"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070956"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 取得執行執行緒的程式。

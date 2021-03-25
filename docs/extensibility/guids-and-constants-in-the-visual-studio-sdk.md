@@ -8,17 +8,17 @@ helpviewer_keywords:
 - constants, Visual Studio SDK
 - GUIDs, Visual Studio SDK
 ms.assetid: 438c1079-0747-4995-ae7a-32aa399c96f5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d4cb524a40e97a5873d080cdeb996fdadb7aaf7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a76c0328581f3060fa77cdbb2bf2b9a72913230
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945756"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057555"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Visual Studio SDK 中的 Guid 和常數
 <xref:Microsoft.VisualStudio.VSConstants>類別可讓您存取選取的環境 guid 和常數。

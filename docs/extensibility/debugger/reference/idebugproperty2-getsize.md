@@ -1,6 +1,6 @@
 ---
 description: 取得屬性值的大小（以位元組為單位）。
-title: IDebugProperty2：： GetSize |Microsoft 檔
+title: IDebugProperty2：： GetSize |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetSize
 ms.assetid: 0deb8ec5-d6fb-4622-bb14-0c46b9459cc6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd6342efd1d9bcb2d2ac063438ee741df3c61325
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7db319a420dc63eaec8afcdcbeaa38fe861a4bea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166810"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064783"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 取得屬性值的大小（以位元組為單位）。

@@ -1,6 +1,6 @@
 ---
 description: 取得此程式之裝載進程的標題、易記名稱或檔案名。
-title: IDebugProgramHost2：： GetHostName |Microsoft 檔
+title: IDebugProgramHost2：： GetHostName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramHost2::GetHostName
 ms.assetid: 48bbb089-e59a-471a-9965-24b42a8dabf3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4574bee7fb5a7f3ed125a73361de6fc9c3bcbfc2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 53b4d69be1ea24f5c240b6247539f499c9fb00fb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149518"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084008"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 取得此程式之裝載進程的標題、易記名稱或檔案名。

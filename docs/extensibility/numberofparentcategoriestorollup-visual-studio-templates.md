@@ -11,17 +11,17 @@ helpviewer_keywords:
 - NumberOfParentCategoriesToRollUp element [Visual Studio Templates]
 - <NumberOfParentCategoriesToRollUp> element [Visual Studio Templates]
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bcf11552ecd137f63f1f3ccca2b1d869f003b3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02c6f0e22429b268fb643c622ebd1f237a4721d3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883073"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090469"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a> (Visual Studio 範本的 NumberOfParentCategoriesToRollUp 元素) 
 指定將在 [ **新增專案** ] 對話方塊中顯示範本的父類別目錄數目。

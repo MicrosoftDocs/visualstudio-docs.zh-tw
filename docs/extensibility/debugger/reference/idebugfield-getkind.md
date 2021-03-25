@@ -1,6 +1,6 @@
 ---
 description: 這個方法會取得欄位的種類。
-title: IDebugField：： GetKind |Microsoft 檔
+title: IDebugField：： GetKind |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetKind method
 ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cac900e35dd6de8a58a9daaadfe1ad8e5a638ed8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5e26f6850f8d0cdd1a197ec88a93ee1069d065bf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151905"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077040"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 這個方法會取得欄位的種類。

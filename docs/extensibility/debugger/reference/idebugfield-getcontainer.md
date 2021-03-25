@@ -1,6 +1,6 @@
 ---
 description: 這個方法會取得欄位的容器。
-title: IDebugField：： GetContainer |Microsoft 檔
+title: IDebugField：： GetContainer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetContainer method
 ms.assetid: 6d6c8213-6181-4adf-9584-3e4cac163dd8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 39be9de82e6356b16562ca4b45ea67bb40e3764f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c5e5f474a55291245cc1811e8f063f80e651b3a5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151996"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077079"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 這個方法會取得欄位的容器。
