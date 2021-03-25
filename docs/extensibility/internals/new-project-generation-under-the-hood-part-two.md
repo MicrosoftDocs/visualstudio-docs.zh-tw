@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7891cb6a40e6b7de48ba11871688881625b9c68d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e391ad66c9925dc68997ff610dc5d1556ddf09b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895605"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063080"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新專案產生：一探究竟，第二部份
 
@@ -31,7 +31,7 @@ ms.locfileid: "99895605"
 ### <a name="template-parameter-replacement"></a>範本參數取代
  當範本將專案範本複製到新的專案時，它會以字串取代任何範本參數來自訂檔案。 範本參數是一種特殊的標記，前面加上貨幣符號，例如 $date $。
 
- 讓我們看看典型的專案專案範本。 在 Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 資料夾中解壓縮並檢查 Program.cs。
+ 讓我們看看典型的專案專案範本。 解壓縮並檢查 Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 資料夾中的程式 .cs。
 
 ```csharp
 using System;
@@ -130,7 +130,7 @@ namespace Simple
  這會藉由複製和自訂範本專案 windowsapplication 來指示新的專案範本建立簡單的 .csproj 專案檔。
 
 ### <a name="designers-and-references"></a>設計工具和參考
- 您可以在方案總管中看到 [Properties] 資料夾存在，而且包含預期的檔案。 但是，專案參考和設計工具檔案相依性的相關資訊，例如 Resources.Designer.cs 到 Resources .resx 以及 Form1.Designer.cs 至 Form1.cs？  這些設定會在產生時的簡單 .csproj 檔案中設定。
+ 您可以在方案總管中看到 [Properties] 資料夾存在，而且包含預期的檔案。 但是，專案參考和設計工具檔案相依性的相關資訊，例如 Resources、.cs 到 Resources .resx，以及 form1.vb 到 .cs？  這些設定會在產生時的簡單 .csproj 檔案中設定。
 
  以下是 \<ItemGroup> 從建立專案參考的簡單 .csproj：
 
@@ -145,7 +145,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- 您可以看到這些都是出現在方案總管中的六個專案參考。 以下是另一個區段 \<ItemGroup> 。 為了清楚起見，已刪除許多行程式碼。 本節會讓 Settings.Designer.cs 相依于設定。設定：
+ 您可以看到這些都是出現在方案總管中的六個專案參考。 以下是另一個區段 \<ItemGroup> 。 為了清楚起見，已刪除許多行程式碼。 此區段會進行設定。 .cs 會相依于設定。設定：
 
 ```xml
 <ItemGroup>

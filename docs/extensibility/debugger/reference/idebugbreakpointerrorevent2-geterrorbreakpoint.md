@@ -1,6 +1,6 @@
 ---
 description: 取得描述中斷點未系結原因的 IDebugErrorBreakpoint2 物件。
-title: IDebugBreakpointErrorEvent2：： GetErrorBreakpoint |Microsoft 檔
+title: IDebugBreakpointErrorEvent2：： GetErrorBreakpoint |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 ms.assetid: e5acfd19-ac17-47f3-a31a-b2aa8baca36d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a71442e25d8da31ed7bed0b6e65ae05692eb1e36
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ef8986195f856f7c21613cb16c2be56461e957e8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143385"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078054"
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 取得描述中斷點未系結原因的 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 物件。

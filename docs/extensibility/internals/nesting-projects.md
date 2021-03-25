@@ -10,17 +10,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], child projects
 - projects [Visual Studio SDK], nesting
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306099f1fc65a211943e4fb25a5cd73ad6195ea2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30b562cac794b7ab960f055fe67a5d0cc4ec871f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895670"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063213"
 ---
 # <a name="nesting-projects"></a>巢狀專案
 使用您的 VS 封裝的企業應用程式開發人員可以 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用 *專案嵌套*，輕鬆地在中將類似的專案群組在一起。 例如，企業範本專案會使用嵌套專案將專案分組為類別。 商務外觀專案、Web UI 專案等會在一個類別中群組在一起。

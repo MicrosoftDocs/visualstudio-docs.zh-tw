@@ -1,6 +1,6 @@
 ---
 description: 這個介面代表陣列物件。
-title: IDebugArrayObject |Microsoft 檔
+title: IDebugArrayObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject method
 ms.assetid: a1c8e77e-dee1-4748-a516-6ab032a8f54f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16162cee8a02bf02b192336425101ec4bb579106
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e27f40a3f8a54c9cda285ba30bdcbc53472aab59
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158523"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078106"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]

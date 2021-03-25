@@ -1,6 +1,6 @@
 ---
 description: 傳回結構，描述物件與其在其範圍或容器內的位置。
-title: IDebugAddress：： GetAddress |Microsoft 檔
+title: IDebugAddress：： GetAddress |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress:GetAddress method
 ms.assetid: 2590387b-5d36-4116-9a75-737957b8898e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 52c52d12d8c357f4dbadeef673a3dc4474713ce9
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 92e616ded029c22b16b81ccd5f25086b11be6ff4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145439"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094391"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 傳回結構，描述物件與其在其範圍或容器內的位置。
