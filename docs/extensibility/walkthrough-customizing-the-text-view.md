@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - customizing the view
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f967235eed7e563b01b96cd9ed19d0aa5975b1fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 17aa8644fc4823df5b68378e9045fa190980306d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916988"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080303"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>逐步解說：自訂文字視圖
 您可以在編輯器格式對應中修改下列任何屬性，以自訂文字視圖：

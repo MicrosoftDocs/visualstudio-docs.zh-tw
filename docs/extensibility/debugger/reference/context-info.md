@@ -1,6 +1,6 @@
 ---
 description: 此結構描述記憶體內容或程式碼內容。
-title: CONTEXT_INFO |Microsoft 檔
+title: CONTEXT_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO structure
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc0636334cfde4452f427285bfe21141bc7614e1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 58b524de5d2d230e240ae7338190568ccfe6fb2a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170727"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096482"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
 此結構描述記憶體內容或程式碼內容。

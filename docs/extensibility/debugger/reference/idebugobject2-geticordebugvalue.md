@@ -1,6 +1,6 @@
 ---
 description: 取得代表與此物件相關聯之值的 managed 程式碼物件。
-title: IDebugObject2：： GetICorDebugValue |Microsoft 檔
+title: IDebugObject2：： GetICorDebugValue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetICorDebugValue method
 ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd37073990a5a91f7eaa04d88e4aa7a73efb74ff
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b25d5147283ad14b77e216a23a45f69516951908
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170025"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053746"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 取得代表與此物件相關聯之值的 managed 程式碼物件。

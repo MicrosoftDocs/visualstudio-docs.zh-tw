@@ -1,6 +1,6 @@
 ---
 description: 建立基本資料物件，例如簡單的整數。
-title: IDebugFunctionObject：： CreatePrimitiveObject |Microsoft 檔
+title: IDebugFunctionObject：： CreatePrimitiveObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreatePrimitiveObject method
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eed6bf305667b98e16f4a112b1196456269e5b3c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c706d8908f1fa8776d1d7304772a0c5eec03bd2d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165537"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073491"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 建立基本資料物件，例如簡單的整數。

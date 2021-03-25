@@ -1,25 +1,25 @@
 ---
 description: 抓取這個泛型參數的索引。
-title: IDebugGenericParamField：： GetIndex |Microsoft 檔
+title: IDebugGenericParamField：： GetIndex |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetIndex
 ms.assetid: 8e0bdb26-1247-44d9-8d80-ec6e35187fb4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f14326572964c91a7691d1a940ef6df86ed334b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 210a66db89998cff2cde043ceb1c1cf21f23d8ee
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172619"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073478"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 抓取這個泛型參數的索引。

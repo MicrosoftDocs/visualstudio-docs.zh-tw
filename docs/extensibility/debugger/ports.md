@@ -8,17 +8,17 @@ helpviewer_keywords:
 - ports
 - debugging [Debugging SDK], ports
 ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 368d55db8e52d2797041e420d109960c88d96cb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9629a27931fad9e0a7f753caad1c21893700d42
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927180"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067773"
 ---
 # <a name="ports"></a>連接埠
 在偵錯工具架構中， *埠*：

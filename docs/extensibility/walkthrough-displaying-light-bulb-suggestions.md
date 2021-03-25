@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1c906b96f3bd20b72cf2b5eca92190e0ad42916
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad000d486b0808ea4ddc3311daa7178c6eda1231
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931288"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080316"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>逐步解說：顯示燈泡建議
 Light 燈泡是 Visual Studio 編輯器中的圖示，會展開以顯示一組動作，例如修正內建程式碼分析器或程式碼重構所識別的問題。
@@ -74,7 +74,7 @@ Light 燈泡是 Visual Studio 編輯器中的圖示，會展開以顯示一組�
 
 ## <a name="implement-the-light-bulb-source-provider"></a>執行燈泡來源提供者
 
-1. 在 *LightBulbTest.cs* 類別檔案中，刪除 LightBulbTest 類別。 加入一個名為 **TestSuggestedActionsSourceProvider** 的類別，它會執行 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> 。 將其匯出為 **測試建議的動作** 名稱和 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text"。
+1. 在 *LightBulbTest .cs* 類別檔案中，刪除 LightBulbTest 類別。 加入一個名為 **TestSuggestedActionsSourceProvider** 的類別，它會執行 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> 。 將其匯出為 **測試建議的動作** 名稱和 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text"。
 
     ```csharp
     [Export(typeof(ISuggestedActionsSourceProvider))]

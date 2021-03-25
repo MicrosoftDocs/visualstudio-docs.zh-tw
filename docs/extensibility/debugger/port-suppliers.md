@@ -8,17 +8,17 @@ helpviewer_keywords:
 - port suppliers
 - debugging [Debugging SDK], port suppliers
 ms.assetid: a8f3db96-1a13-4e93-9ef6-0861880369e0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b543770e5fcc920b05e5d19a15e312174ddad3dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ace9a7072287fa26aee3fa2abd083cc9f7f1314
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934386"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067799"
 ---
 # <a name="port-suppliers"></a>埠供應商
 在偵錯工具架構中， *埠供應商*：

@@ -1,6 +1,6 @@
 ---
 description: 指定要抓取之中斷點要求的相關資訊。
-title: BPREQI_FIELDS |Microsoft 檔
+title: BPREQI_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BPREQI_FIELDS enumeration
 ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f7ee5d8dbf48ad8d1b07512727b1b91635ab990
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fc0d24d07f5c7473df7e963ee56ca6023fffa16d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162455"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067617"
 ---
 # <a name="bpreqi_fields"></a>BPREQI_FIELDS
 指定要抓取之中斷點要求的相關資訊。

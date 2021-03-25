@@ -1,6 +1,6 @@
 ---
 description: 這個方法會從欄位列舉傳回下一組元素。
-title: IEnumDebugFields：： Next |Microsoft 檔
+title: IEnumDebugFields：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Next method
 ms.assetid: 22c177a2-af81-4234-812b-f9b47be245a2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb60dcf991c1a3002612b6779ef179c1571f3244
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 6b1705c1f07ce17df0d09c8b3036c639b6fe829a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226653"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073465"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 這個方法會傳回列舉中的下一組元素。

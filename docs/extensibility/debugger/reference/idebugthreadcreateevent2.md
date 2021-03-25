@@ -1,6 +1,6 @@
 ---
 description: 此介面是由偵錯工具在要進行調試的程式中建立執行緒時， (DE) 至會話 debug manager (SDM) 。
-title: IDebugThreadCreateEvent2 |Microsoft 檔
+title: IDebugThreadCreateEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadCreateEvent2
 ms.assetid: aee34a14-4f9c-4ad3-845f-c96ee938cefd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c792c3a3eff151bdbc035c8dbbaf6eaacb7bcf
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 054163732d0ca4a2b818acf948da0490ebe0f8e6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164379"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086959"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 此介面是由偵錯工具在要進行調試的程式中建立執行緒時， (DE) 至會話 debug manager (SDM) 。

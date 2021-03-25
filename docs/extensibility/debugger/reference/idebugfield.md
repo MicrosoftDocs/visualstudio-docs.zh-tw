@@ -1,6 +1,6 @@
 ---
 description: 這個介面代表一個欄位，也就是符號或型別的描述。
-title: IDebugField |Microsoft 檔
+title: IDebugField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField interface
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 175f9a329a93587873db7c76b53757ba715ace67
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c519ccfe70ba5685dec8230bf3e4fcb0eb768921
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151840"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073673"
 ---
 # <a name="idebugfield"></a>IDebugField
 這個介面代表一個欄位，也就是符號或型別的描述。

@@ -1,6 +1,6 @@
 ---
-description: 此結構會指定取自中繼資料之欄位類型的相關資訊。
-title: BUILT_TYPE |Microsoft 檔
+description: BUILT_TYPE 結構會指定取自中繼資料之欄位型別的相關資訊。
+title: BUILT_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BUILT_TYPE structure
 ms.assetid: cc02c32c-0f65-4210-ad25-a9b1899066e8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dd9f5984861b0f56e4a46b4f793a38bbb3bafa60
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 00a031d02bba7ffcc1dca6f2cf73cfceeed04838
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170981"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096573"
 ---
 # <a name="built_type"></a>BUILT_TYPE
 此結構會指定取自中繼資料之欄位類型的相關資訊。

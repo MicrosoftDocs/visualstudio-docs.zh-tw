@@ -1,6 +1,6 @@
 ---
 description: 這個介面代表在程式中執行的執行緒。
-title: IDebugThread2 |Microsoft 檔
+title: IDebugThread2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2 interface
 ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8b09aa546e4711b1c11623a3596ba0e385b2a14
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 24a9cef2e62dc2597871f270c9ee48ad58c0a0e1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164418"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086972"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 這個介面代表在程式中執行的執行緒。

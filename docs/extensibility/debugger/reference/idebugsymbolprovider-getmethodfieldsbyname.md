@@ -1,6 +1,6 @@
 ---
 description: 這個方法會取得代表完整方法名稱的欄位。
-title: IDebugSymbolProvider：： GetMethodFieldsByName |Microsoft 檔
+title: IDebugSymbolProvider：： GetMethodFieldsByName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetMethodFieldsByName method
 ms.assetid: 1f781320-81ef-4037-b068-f1864b271258
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c807717dd9b984fdb2f6ab63c5e9539af4a033b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 54962d87bcb3de471c9799f4c6be9f969b8eed17
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168513"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086998"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 這個方法會取得代表完整方法名稱的欄位。

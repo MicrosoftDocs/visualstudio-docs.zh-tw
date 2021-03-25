@@ -1,6 +1,6 @@
 ---
 description: 這個方法會將檔位置對應到一個 debug 位址陣列中。
-title: IDebugSymbolProvider：： GetAddressesFromPosition |Microsoft 檔
+title: IDebugSymbolProvider：： GetAddressesFromPosition |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromPosition method
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d4437055ccd693b40fe4f1f7d6364d9601c827a3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4dd3b8fbe65a72ccf937007d19117359859ff29f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159675"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087102"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 這個方法會將檔位置對應到一個 debug 位址陣列中。

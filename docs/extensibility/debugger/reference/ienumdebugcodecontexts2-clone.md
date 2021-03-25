@@ -1,6 +1,6 @@
 ---
 description: 傳回目前程式碼內容列舉的複本，做為個別的物件。
-title: IEnumDebugCodeCoNtexts2：： Clone |Microsoft 檔
+title: IEnumDebugCodeCoNtexts2：： Clone |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2::Clone
 ms.assetid: 22c98975-4294-4fbd-a345-16f65fe1200d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bbbfe0436cbe9234d4e5b21a1de242ea823c0aa7
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d26f6b96d4ea73fecd7446625a049b5ac7755f97
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224963"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080147"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
 傳回目前列舉的複本作為個別的物件。

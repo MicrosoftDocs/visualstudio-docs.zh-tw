@@ -1,6 +1,6 @@
 ---
 description: 描述 IDebugProperty2 或 IDebugReference2 介面的各種屬性。
-title: DBG_ATTRIB_FLAGS |Microsoft 檔
+title: DBG_ATTRIB_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_ATTRIB_FLAGS enumerations
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f467c9ac66bc249974f919a48a1527bebb26f361
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: aba733cd1e8ff05adac0cd538da79e4d437e6f60
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170714"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096469"
 ---
 # <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 描述 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 或 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 介面的各種屬性。 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構的成員。

@@ -1,6 +1,6 @@
 ---
 description: 此介面是由偵錯工具引擎傳送 (當執行緒已執行完成時，將) 還原為會話 debug manager (SDM) 。
-title: IDebugThreadDestroyEvent2 |Microsoft 檔
+title: IDebugThreadDestroyEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadDestroyEvent2
 ms.assetid: fca3f603-9432-457b-9ddd-8b0ec17da046
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48390b220a1398e712af494a6d0f21024f659f49
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e97ad58a74c260703769dae83882d627c36c1d46
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223117"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086868"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 此介面是由偵錯工具引擎傳送 (當執行緒已執行完成時，將) 還原為會話 debug manager (SDM) 。
@@ -43,7 +43,7 @@ IDebugThreadDestroyEvent2 : IUnknown
 |[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|取得執行緒的結束代碼。|
 
 ## <a name="remarks"></a>備註
- Visual Studio 會使用此事件來更新 [ **執行緒** ] 視窗。
+ Visual Studio 使用此事件來更新 [ **執行緒** ] 視窗。
 
 ## <a name="requirements"></a>規格需求
  標頭： msdbg。h

@@ -1,6 +1,6 @@
 ---
 description: 取得欄位或變數 (是否有任何可支援此物件所表示之屬性的) 。
-title: IDebugObject2：： GetBackingFieldForProperty |Microsoft 檔
+title: IDebugObject2：： GetBackingFieldForProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetBackingFieldForProperty method
 ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6f7a5427193aafe8a4aa35fdf331f62bb08e3fe6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 210381e034ccae8ab9662b77c47970af2affa095
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170168"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053798"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 取得欄位或變數 (是否有任何可支援此物件所表示之屬性的) 。

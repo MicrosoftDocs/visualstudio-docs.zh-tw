@@ -1,6 +1,6 @@
 ---
 description: 這個方法會取得與符號或類型無關的類型相關資訊。
-title: IDebugField：： GetTypeInfo |Microsoft 檔
+title: IDebugField：： GetTypeInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetTypeInfo method
 ms.assetid: bb5acfa3-04c3-4088-be84-9ff8926cd16f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e908fb4eec16ec9891eda5127c753616419fc176
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9ea120cb58faa28bbb8168800ef6e35f707d879f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151866"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073699"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 這個方法會取得與符號或類型無關的類型相關資訊。

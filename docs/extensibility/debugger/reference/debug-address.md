@@ -1,6 +1,6 @@
 ---
 description: 此結構代表位址。
-title: DEBUG_ADDRESS |Microsoft 檔
+title: DEBUG_ADDRESS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_ADDRESS structure
 ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a13a83b5622053593702409c44b6481ba76d17d8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1b250654f45f18adcfd9c52a6047b2b8798be75b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170675"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096365"
 ---
 # <a name="debug_address"></a>DEBUG_ADDRESS
 此結構代表位址。

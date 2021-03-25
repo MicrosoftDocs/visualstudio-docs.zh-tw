@@ -1,6 +1,6 @@
 ---
 description: 取得裝載程式之進程的名稱。
-title: IDebugProgramNode2：： GetHostName |Microsoft 檔
+title: IDebugProgramNode2：： GetHostName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetHostName
 ms.assetid: 16aad1ff-ad34-4394-a2e4-5621374a7729
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e3e5ad5d4154ef4ffc8135ec6e3d7d2a75ce038
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a9e8958adf8072715ccc3f51ceb28ef44904d768
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146024"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087297"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 取得裝載程式之進程的名稱。

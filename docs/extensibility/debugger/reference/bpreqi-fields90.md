@@ -1,25 +1,25 @@
 ---
 description: 列舉有效的值，指定要針對中斷點要求抓取的資訊。
-title: BPREQI_FIELDS90 |Microsoft 檔
+title: BPREQI_FIELDS90 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - BPREQI_FIELDS90 enumeration
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5405f728cf979738de5a830421c4306c5e398bb2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e977d6e85430dbd9f1931bd4fb62c02f22181d5a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151080"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067604"
 ---
 # <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
 列舉有效的值，指定要針對中斷點要求抓取的資訊。 此列舉會擴充 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 列舉。
