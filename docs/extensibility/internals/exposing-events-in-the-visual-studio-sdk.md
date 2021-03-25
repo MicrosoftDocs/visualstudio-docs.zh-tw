@@ -8,17 +8,17 @@ helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00dd13898204fe322ec0ddd33db10e7ca19db167
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 019efb11d7a31af875425888a1f70423bca76ca9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946640"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069799"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>在 Visual Studio SDK 中公開事件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可讓您使用自動化來來源事件。 建議您輸入專案和專案專案的來源事件。

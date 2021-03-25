@@ -12,17 +12,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2586618b16afa8f8bfd6b7aa529486adf1d9ce41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 970ab167434da4ba9c28eb6bbf9a8ea5f6cc6af0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938131"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070137"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>擴充屬性、工作清單、輸出和選項視窗
 您可以存取 Visual Studio 中的任何工具視窗。 本逐步解說將示範如何將工具視窗的相關資訊整合至新的 [ **選項** ] 頁面和 [ **屬性** ] 頁面上的新設定，以及如何寫入 **工作清單** 和 **輸出** 視窗中。
@@ -63,7 +63,7 @@ ms.locfileid: "99938131"
 
 ### <a name="customize-the-constructor"></a>自訂函式
 
-1. 在 *TodoWindowControl.xaml.cs* 檔案中，新增下列 using 指示詞：
+1. 在 *TodoWindowControl* 檔案中，加入下列 using 指示詞：
 
     ```csharp
     using System;
@@ -81,7 +81,7 @@ ms.locfileid: "99938131"
     }
     ```
 
-3. 在 *TodoWindow.cs* 中，變更 TodoWindowControl 的函式以包含 TodoWindow 參數。 程式碼看起來應該像這樣：
+3. 在 *TodoWindow* 中，將 TodoWindowControl 的函式變更為包含 TodoWindow 參數。 程式碼看起來應該像這樣：
 
     ```csharp
     public TodoWindow() : base(null)
@@ -95,7 +95,7 @@ ms.locfileid: "99938131"
     ```
 
 ## <a name="create-an-options-page"></a>建立選項頁面
- 您可以在 [ **選項** ] 對話方塊中提供頁面，讓使用者可以變更工具視窗的設定。 建立 [選項] 頁面同時需要一個描述 *TodoListPackage.cs* 或 *TodoListPackage .vb* 檔案中選項和專案的類別。
+ 您可以在 [ **選項** ] 對話方塊中提供頁面，讓使用者可以變更工具視窗的設定。 建立 [選項] 頁面同時需要一個描述選項的類別和 *TodoListPackage .cs* 或 *TodoListPackage .vb* 檔案中的專案。
 
 1. 新增名為 `ToolsOptions.cs`的類別。 讓 `ToolsOptions` 類別繼承自 <xref:Microsoft.VisualStudio.Shell.DialogPage> 。
 
@@ -127,7 +127,7 @@ ms.locfileid: "99938131"
 
 ### <a name="make-the-options-page-available-to-users"></a>讓使用者可以使用 [選項] 頁面
 
-1. 在 *TodoWindowPackage.cs* 中，將新增 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 至 `TodoWindowPackage` 類別：
+1. 在 *TodoWindowPackage* 中，將新增 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 至 `TodoWindowPackage` 類別：
 
     ```csharp
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
@@ -152,7 +152,7 @@ ms.locfileid: "99938131"
 
      ![屬性視窗](../extensibility/media/t5properties.png "T5Properties")
 
-2. 在 *TodoItem.cs* 檔案中新增下列 using 指示詞。
+2. 在 *TodoItem .cs* 檔案中新增下列 using 指示詞。
 
     ```csharp
     using System.ComponentModel;
@@ -232,7 +232,7 @@ ms.locfileid: "99938131"
     }
     ```
 
-5. 因為類別的實例 `TodoItem` 會儲存在 listbox 中，而 listbox 會呼叫函式 `ToString` ，所以您必須多載函式 `ToString` 。 將下列程式碼加入至 *TodoItem.cs*，在函式之後，以及在類別結尾之前。
+5. 因為類別的實例 `TodoItem` 會儲存在 listbox 中，而 listbox 會呼叫函式 `ToString` ，所以您必須多載函式 `ToString` 。 將下列程式碼加入至 *TodoItem*，在函式之後以及類別結尾的前面。
 
     ```csharp
     public override string ToString()
@@ -241,7 +241,7 @@ ms.locfileid: "99938131"
     }
     ```
 
-6. 在 *TodoWindowControl.xaml.cs* 中，將存根方法加入至 `TodoWindowControl` `CheckForError` 和方法的類別 `UpdateList` 。 將它們放在 System.windows.forms.control.processdialogchar 之後和檔案結尾之前。
+6. 在 *TodoWindowControl* 中，將存根方法加入至 `TodoWindowControl` `CheckForError` 和方法的類別 `UpdateList` 。 將它們放在 System.windows.forms.control.processdialogchar 之後和檔案結尾之前。
 
     ```csharp
     public void CheckForErrors()
@@ -285,7 +285,7 @@ ms.locfileid: "99938131"
     }
     ```
 
-4. 將下列 using 指示詞新增至 *TodoWindowControl.xaml.cs*：
+4. 將下列 using 指示詞新增至 *TodoWindowControl*：
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -353,7 +353,7 @@ ms.locfileid: "99938131"
 
      現在您已經有一個可供 [ **屬性** ] 視窗使用的類別，您可以將 [ **屬性** ] 視窗與 [工具] 視窗整合。 當使用者按一下工具視窗中清單方塊中的專案時，[ **屬性** ] 視窗應該會隨之更新。 同樣地，當使用者變更 [ **屬性** ] 視窗中的 ToDo 專案時，應該更新相關聯的專案。
 
-7. 現在，在 *TodoWindowControl.xaml.cs* 中新增其餘的 UpdateList 函式程式碼。 它應該從 ListBox 中卸載並重新新增修改過的 TodoItem。
+7. 現在，在 *TodoWindowControl* 中新增其餘的 UpdateList 函式程式碼。 它應該從 ListBox 中卸載並重新新增修改過的 TodoItem。
 
     ```csharp
     public void UpdateList(TodoItem item)
@@ -378,7 +378,7 @@ ms.locfileid: "99938131"
 ## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>將文字新增至 [輸出] 視窗，並將專案加入至工作清單
  在 **工作清單** 中，您會建立工作類型的新物件，然後藉由呼叫其方法，將該工作物件加入至 **工作清單** `Add` 。 若要寫入至 [ **輸出** ] 視窗，您可以呼叫其 `GetPane` 方法來取得窗格物件，然後呼叫 `OutputString` 窗格物件的方法。
 
-1. 在 *TodoWindowControl.xaml.cs* 的方法中 `button1_Click` ，新增程式碼以取得 **輸出** 視窗的 **[一般**] 窗格 (這是預設) ，並寫入其中。 方法看起來應如下所示：
+1. 在 *TodoWindowControl* 的方法中， `button1_Click` 新增程式碼以取得 **輸出** 視窗的 **[一般**] 窗格 (這是預設) ，並寫入其中。 方法看起來應如下所示：
 
     ```csharp
     private void button1_Click(object sender, EventArgs e)

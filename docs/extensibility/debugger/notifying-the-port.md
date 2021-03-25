@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - ports, notification
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1fdf09859c8b943eb71a403f49b29dc8b315503
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7793dddb1a6bdd448b2b5a912f59b625bdca733e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884906"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054747"
 ---
 # <a name="notify-the-port"></a>通知埠
 啟動程式之後，必須通知埠，如下所示：

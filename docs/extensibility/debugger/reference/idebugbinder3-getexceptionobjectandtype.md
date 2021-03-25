@@ -1,6 +1,6 @@
 ---
 description: 這個方法會抓取與物件相關聯的例外狀況（如果有的話）。
-title: IDebugBinder3：： GetExceptionObjectAndType |Microsoft 檔
+title: IDebugBinder3：： GetExceptionObjectAndType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetExceptionObjectAndType method
 ms.assetid: 2a313fe1-4ee1-4f01-af86-382d6c661a8f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5ec511cc6145c890c4f62a76563c51aa7c667977
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 67f6c146182546f83782a0299c0ea3e29f94a3b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167629"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094246"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 這個方法會抓取與物件相關聯的例外狀況（如果有的話）。

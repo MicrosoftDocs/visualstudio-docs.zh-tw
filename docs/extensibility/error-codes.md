@@ -9,17 +9,17 @@ helpviewer_keywords:
 - source control plug-ins, error codes
 - errors [Visual Studio SDK]
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9706f7c9cd5b25a3644af2f324fda01f448fa17
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 32557b2a476be9f662decc9992771fe359967a94
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883398"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070163"
 ---
 # <a name="error-codes"></a>錯誤碼
 當原始檔控制外掛程式 API 函式傳回錯誤時，預期會是下列其中一個錯誤碼。 所有錯誤都是否定的、警告或參考用的錯誤碼是正面的，成功則為0。

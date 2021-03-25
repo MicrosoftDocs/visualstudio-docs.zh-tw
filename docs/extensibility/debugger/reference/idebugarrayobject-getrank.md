@@ -1,6 +1,6 @@
 ---
 description: 取得陣列的順位，也就是維度的數目。
-title: IDebugArrayObject：： GetRank |Microsoft 檔
+title: IDebugArrayObject：： GetRank |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetRank method
 ms.assetid: 9948551a-e334-4ff6-979c-08dab633b9b6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3a246cda3f5b9395ae013b4bca9d4d27d6f8a5c1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1440ff2fa82c8296bf54b106b622556a8eebb611
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158536"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094324"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 取得陣列的順位，也就是維度的數目。

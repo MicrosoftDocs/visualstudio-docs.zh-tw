@@ -1,6 +1,6 @@
 ---
 description: 此介面是用來表示和取得網路上電腦上伺服器的資訊。
-title: IDebugCoreServer2 |Microsoft 檔
+title: IDebugCoreServer2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2 interface
 ms.assetid: 9c47d0a6-9eb1-464e-bd44-fa2b552d4d36
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 871f7ea5671fa4f3c615d84e0591bd331f945ccc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 318644353ff3643e92b2a7186359661b403db486
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163131"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077716"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 此介面是用來表示和取得網路上電腦上伺服器的資訊。
@@ -30,7 +30,7 @@ IDebugCoreServer2 : IUknown
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
- Visual Studio 會執行此介面來表示伺服器。 Visual Studio 的每個實例都會建立這個介面的實例。
+ Visual Studio 會執行這個介面來表示伺服器。 Visual Studio 的每個實例都會建立這個介面的實例。
 
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  自訂埠供應商會在呼叫 [事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)時收到這個介面。

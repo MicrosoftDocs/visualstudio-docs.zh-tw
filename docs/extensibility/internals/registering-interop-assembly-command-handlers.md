@@ -8,17 +8,17 @@ helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c01aa9ecb3661235670866d92b29d7d8eef543
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 641a21658e490f94a27cbd9120d044539a7ec284
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837271"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062755"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>註冊 Interop 組件命令處理常式
 VSPackage 必須註冊，才能 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 讓整合式開發環境 (IDE) 適當地路由命令。

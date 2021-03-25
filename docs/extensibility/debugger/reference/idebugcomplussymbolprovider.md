@@ -1,22 +1,22 @@
 ---
 description: 表示具有 managed 程式碼專屬方法的 COM + 符號提供者。
-title: IDebugComPlusSymbolProvider |Microsoft 檔
+title: IDebugComPlusSymbolProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider interface
 ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20ede060901a9aeec591fb17d1f632cb5d228963
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 13541766cdcd6cdd3a0a49673703d6abea82a5c7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163469"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094168"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 表示具有 managed 程式碼專屬方法的 COM + 符號提供者。

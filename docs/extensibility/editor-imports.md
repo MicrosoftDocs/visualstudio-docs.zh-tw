@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aef66be9797967b8c551ad4d1674c0b7be7aad81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0587ed6487ec3a1bb833a804bb5ffa76cbc101f9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883476"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070150"
 ---
 # <a name="editor-imports"></a>編輯器匯入
 您可以匯入一些編輯器服務、factory 和訊息代理程式，以提供您的擴充功能與核心編輯器的不同存取類型。 例如，您可以匯入， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 以提供 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> 指定之內容類型的。  (此導覽器可讓您在文字緩衝區上執行不同種類的搜尋。 ) 

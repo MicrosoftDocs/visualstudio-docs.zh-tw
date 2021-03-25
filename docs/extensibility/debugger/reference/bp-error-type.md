@@ -1,6 +1,6 @@
 ---
 description: 指定中斷點的錯誤類型。
-title: BP_ERROR_TYPE |Microsoft 檔
+title: BP_ERROR_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_TYPE enumeration
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ced08f5bf4cd51a1f89f139fd19971e21e2225e6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ddff439aba67248bd2eb706a85c5f91b4bf1628d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144425"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085282"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
 指定中斷點的錯誤類型。

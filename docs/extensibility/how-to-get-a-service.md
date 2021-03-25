@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d60e6093eb439aa3b0e2a0a86e0d21d8ace95e00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9096250f72e6bf64b2c6b76eeaa313ee7769dd51
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911750"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070085"
 ---
 # <a name="how-to-get-a-service"></a>How to：取得服務
 
@@ -31,9 +31,9 @@ ms.locfileid: "99911750"
 
 1. 每個 Visual Studio 擴充功能都會從 VSIX 部署專案開始，其中包含延伸模組資產。 建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名為的 VSIX 專案 `GetServiceExtension` 。 您可以藉由搜尋 "vsix"，在 [ **新增專案** ] 對話方塊中找到 VSIX 專案範本。
 
-2. 現在，新增名為 **GetServiceCommand** 的自訂命令專案範本。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *GetServiceCommand.cs*。 如需如何建立自訂命令的詳細資訊，請[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能
+2. 現在，新增名為 **GetServiceCommand** 的自訂命令專案範本。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *GetServiceCommand .cs*。 如需如何建立自訂命令的詳細資訊，請[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能
 
-3. 在 *GetServiceCommand.cs* 中，移除方法的主體 `MenuItemCommand` 並加入下列程式碼：
+3. 在 *GetServiceCommand* 中，移除方法的主體 `MenuItemCommand` 並加入下列程式碼：
 
    ```csharp
    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;

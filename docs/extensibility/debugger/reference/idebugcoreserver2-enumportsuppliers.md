@@ -1,6 +1,6 @@
 ---
 description: 抓取所有可用埠供應商的清單。
-title: IDebugCoreServer2：： EnumPortSuppliers |Microsoft 檔
+title: IDebugCoreServer2：： EnumPortSuppliers |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::EnumPortSuppliers
 ms.assetid: ce0c90e4-8e02-4b08-b558-7677fb2c88f7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 079854ca6395ef1a85caffe81ff9ee971f843ee4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7e608bd2dd20de6ac8e519301e8502ee0dbec292
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163235"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077911"
 ---
 # <a name="idebugcoreserver2enumportsuppliers"></a>IDebugCoreServer2::EnumPortSuppliers
 抓取所有可用埠供應商的清單。

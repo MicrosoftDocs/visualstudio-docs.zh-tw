@@ -11,17 +11,17 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c053b5f7fe2962e683621ad834cac0815eee7d3b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dfa6e402bfa6b0ef1949a967c37773557b79b0a3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905736"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062222"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 資訊清單設計工具
 修改 VSIX 套件資訊清單檔，此檔案會設定 Visual Studio 擴充功能的安裝行為。

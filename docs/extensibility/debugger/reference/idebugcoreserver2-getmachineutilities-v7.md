@@ -1,6 +1,6 @@
 ---
 description: 這個方法會取得伺服器的電腦公用程式。
-title: IDebugCoreServer2：： GetMachineUtilities_V7 |Microsoft 檔
+title: IDebugCoreServer2：： GetMachineUtilities_V7 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetMachineUtilities_V7
 ms.assetid: 64c1f08f-853b-4498-9810-29791581ef2f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc58f41d9cca98f6c15c164ed4acb941345627e5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 26d2c042c6f4a08acb7efc558bbc86021b16587e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154765"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077950"
 ---
 # <a name="idebugcoreserver2getmachineutilities_v7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 這個方法會取得伺服器的電腦公用程式。

@@ -1,22 +1,22 @@
 ---
 description: 抓取目前作用中的所有 TaskScheduler 物件的陣列。
-title: GetTaskSchedulersForDebugger 方法 |Microsoft 檔
+title: GetTaskSchedulersForDebugger 方法 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - GetTaskSchedulersForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 58aa236a-5ab8-4695-b303-89dffdbcd946
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f60ffa851e8b8821e3d07e1bfdd6e864104b5001
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7d024e44dee8e7513d862e3d299c2ed2b9e53cd5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150090"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054851"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger 方法
 抓取目前作用中之所有物件的陣列 <xref:System.Threading.Tasks.TaskScheduler> 。
@@ -25,7 +25,7 @@ ms.locfileid: "102150090"
 
  **元件：** *mscorlib.dll*) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取此內部成員，所以會在一般中繼語言 (的 CIL) 中提供下列語法。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
 
 ## <a name="syntax"></a>語法
 

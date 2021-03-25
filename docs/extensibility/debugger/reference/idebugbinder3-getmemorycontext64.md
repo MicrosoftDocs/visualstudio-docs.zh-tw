@@ -1,26 +1,26 @@
 ---
 description: 將物件位置或64位的記憶體位址轉換成記憶體內容。
-title: IDebugBinder3：： GetMemoryCoNtext64 |Microsoft 檔
+title: IDebugBinder3：： GetMemoryCoNtext64 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
 ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8652b5a71cf301b3c76d1b8bd6f29a3fa984fa1b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 263d50a0c9f3f9b2ab0aa74a05647abc1930970c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167590"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094220"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 將物件位置或64位的記憶體位址轉換成記憶體內容。

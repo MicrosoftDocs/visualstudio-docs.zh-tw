@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdc5550cfde44c71b1b663a30cf1824c6edfcf82
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38571b51c31b20bd38e50dd32644be4c262e0702
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907682"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062859"
 ---
 # <a name="project-context"></a>專案內容
 當使用者加入或使用專案和專案專案時，IDE 會使用專案內容的概念來決定應該如何執行各種作業。

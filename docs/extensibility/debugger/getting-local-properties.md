@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], local properties
 - expression evaluation, local properties
 ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51006d78e69f48fc423fb7d35ad876b2b16bc0d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1be593d14736a6526cc951bbc01460ce7bdb83f4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921286"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054799"
 ---
 # <a name="get-local-properties"></a>取得區域屬性
 > [!IMPORTANT]
