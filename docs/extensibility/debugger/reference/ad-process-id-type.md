@@ -1,6 +1,6 @@
 ---
 description: 指定如何解讀 AD_PROCESS_ID 結構中的處理序識別碼。
-title: AD_PROCESS_ID_TYPE |Microsoft 檔
+title: AD_PROCESS_ID_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - AD_PROCESS_ID_TYPE enumeration
 ms.assetid: 0aab80e9-285a-4697-94ac-c864d42a6aaa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f56ca1db0462a85bd68b193147f5dd3a46c6bee9
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9ae50fc827debd540faa99c33e10ddd217fc691f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164340"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094558"
 ---
 # <a name="ad_process_id_type"></a>AD_PROCESS_ID_TYPE
 指定如何解讀 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 結構中的處理序識別碼。

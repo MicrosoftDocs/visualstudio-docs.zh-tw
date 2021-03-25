@@ -1,6 +1,6 @@
 ---
 description: 取得檔的類別識別碼。
-title: IDebugDocument2：： GetDocumentClassID |Microsoft 檔
+title: IDebugDocument2：： GetDocumentClassID |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetDocumentClassID
 ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 36a95914f470d0ce095db0c0db8d1397b02be3cf
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 829f0002a79f2fd5ec69f31ef4b59068bc5b5c05
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166550"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066850"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 取得檔的類別識別碼。

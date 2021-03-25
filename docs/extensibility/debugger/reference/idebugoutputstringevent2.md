@@ -1,6 +1,6 @@
 ---
 description: 此介面是由偵錯工具引擎傳送 (DE) 至會話 debug manager (SDM) 以輸出字串。
-title: IDebugOutputStringEvent2 |Microsoft 檔
+title: IDebugOutputStringEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugOutputStringEvent2 interface
 ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 604eace2f5f4be7a35b6f4b736722b435cf06928
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4576914ada9a575569ce09c120dbbd9bc11fdfa9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169947"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084645"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 此介面是由偵錯工具引擎傳送 (DE) 至會話 debug manager (SDM) 以輸出字串。

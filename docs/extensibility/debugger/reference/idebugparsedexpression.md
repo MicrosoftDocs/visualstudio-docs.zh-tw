@@ -1,6 +1,6 @@
 ---
 description: 這個介面表示已剖析的運算式可供評估。
-title: IDebugParsedExpression |Microsoft 檔
+title: IDebugParsedExpression |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugParsedExpression interface
 ms.assetid: be6486ed-b070-4898-95b1-58581bcb4447
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf978f6d2775c720cfff528ceb8a557fd96ae00a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 00daeac20d621657d61aa802d79a46a3ee0e7aa7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169934"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084580"
 ---
 # <a name="idebugparsedexpression"></a>IDebugParsedExpression
 > [!IMPORTANT]

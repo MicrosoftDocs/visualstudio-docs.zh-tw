@@ -1,6 +1,6 @@
 ---
 description: 執行步驟。
-title: IDebugProgram2：： Step |Microsoft 檔
+title: IDebugProgram2：： Step |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Step
 ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ff4ee710369aef80ac18603ac3fc117e17dba07
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2470c62215c8c708056f7c123adc5eac3a5e389d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171992"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084489"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 執行步驟。

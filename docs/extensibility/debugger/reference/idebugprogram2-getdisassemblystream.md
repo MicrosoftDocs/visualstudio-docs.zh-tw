@@ -1,6 +1,6 @@
 ---
 description: 取得此程式的反組解碼資料流程或此程式的一部分。
-title: IDebugProgram2：： GetDisassemblyStream |Microsoft 檔
+title: IDebugProgram2：： GetDisassemblyStream |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetDisassemblyStream
 ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e000ada618c21af865743bfb2bd9fd6b60a80a4b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c7016c003642b9ef2688390de7cdb39be412bded
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159922"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075896"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 取得此程式的反組解碼資料流程或此程式的一部分。

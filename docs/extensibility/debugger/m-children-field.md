@@ -1,22 +1,22 @@
 ---
 description: 這項工作所註冊之子工作的清單。
-title: m_children 欄位 |Microsoft 檔
+title: m_children 欄位 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_children field, ContingentProperties class [.NET Framework debug engines]
 ms.assetid: 0a3b5653-7bc0-4a7a-8963-9020bc52b9cb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5aaf29d76a7bbd81a416c86360f315bc5c09b76c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 90394afd982f22977d3d3ed74850032bfb5634c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158865"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094688"
 ---
 # <a name="m_children-field"></a>m_children 欄位
 這項工作所註冊之子工作的清單。
@@ -25,7 +25,7 @@ ms.locfileid: "102158865"
 
  **元件：** *mscorlib.dll*) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取此內部成員，所以會在一般中繼語言 (的 CIL) 中提供下列語法。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
 
 ## <a name="syntax"></a>語法
 

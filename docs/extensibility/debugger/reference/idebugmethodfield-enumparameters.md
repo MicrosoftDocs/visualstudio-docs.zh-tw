@@ -1,6 +1,6 @@
 ---
 description: 建立方法參數的列舉值。
-title: IDebugMethodField：： Microsoft.sqlserver.replication.agentprofile.enumparameters |Microsoft 檔
+title: IDebugMethodField：： Microsoft.sqlserver.replication.agentprofile.enumparameters |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumParameters method
 ms.assetid: d77b1197-deb6-4144-8d1b-8b09949ccfac
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 51b0ca4d799bc5943a1effd612947b5822730d37
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0f2085b6a2aff6b41456f47a01c446b1c646f353
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164990"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058387"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 建立方法參數的列舉值。

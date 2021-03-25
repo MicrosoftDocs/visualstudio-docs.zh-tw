@@ -1,6 +1,6 @@
 ---
 description: 從訊息方塊設定回應（如果有的話）。
-title: IDebugMessageEvent2：： Responsemanager |Microsoft 檔
+title: IDebugMessageEvent2：： Responsemanager |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - IDebugMessageEvent2::SetResponse method
 - SetResponse method
 ms.assetid: 2a5e318d-3225-4abd-83f1-28323baff6c0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77170bb95855d91dcad873a5254c0a0937001032
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ddba44f807d8b5f54008a8a67c9c5571cf316a32
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160039"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058439"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
 從訊息方塊設定回應（如果有的話）。

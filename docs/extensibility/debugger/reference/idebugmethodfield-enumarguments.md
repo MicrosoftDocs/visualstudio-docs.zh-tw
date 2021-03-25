@@ -1,6 +1,6 @@
 ---
 description: 針對呼叫方法所需的每個引數，建立其類型的列舉值。
-title: IDebugMethodField：： EnumArguments |Microsoft 檔
+title: IDebugMethodField：： EnumArguments |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumArguments method
 ms.assetid: 3ab55488-2437-4ff6-a9ae-78ea6d7b23a8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04815bb1fc148893c5b594223f6b92bfb7e0d97f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3ba48eb4d98c1ab331ee898a219584b7a4b6cf1c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172121"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058413"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 針對呼叫方法所需的每個引數，建立其類型的列舉值。

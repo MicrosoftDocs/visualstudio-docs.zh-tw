@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9378dd2aa1ed52408e3aa4d0e9027a34d833dab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2d869094eff3713a3c9e7ec63a8003bb12a018c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948448"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094675"
 ---
 # <a name="program-control"></a>程式控制
 在 Visual Studio 的偵錯工具中，會在程式層級進行下列所有逐步執行和繼續常式：

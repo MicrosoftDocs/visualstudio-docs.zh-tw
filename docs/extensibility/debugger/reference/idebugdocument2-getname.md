@@ -1,6 +1,6 @@
 ---
 description: 以數種形式的其中一種取得檔的名稱。
-title: IDebugDocument2：： GetName |Microsoft 檔
+title: IDebugDocument2：： GetName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetName
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1b68fb60cb13d88941b21f6625e6cc0e38ceeda4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 49c9a2b4fd95fbb24b28b69003c8e462b09be38b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166537"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066811"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 以數種形式的其中一種取得檔的名稱。

@@ -1,6 +1,6 @@
 ---
 description: 此介面是由偵錯工具引擎傳送， (在跳過或非函式之後，將) 還原為會話 debug manager (SDM) 。
-title: IDebugReturnValueEvent2 |Microsoft 檔
+title: IDebugReturnValueEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReturnValueEvent2
 ms.assetid: 2daded43-e427-4fbb-a19e-f3834e3723af
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b0566453d5ce34f829f43fab465b4310942e44e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 17eafb8f974c193fd4796cd246bf7e0a1abe929a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165835"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075701"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 此介面是由偵錯工具引擎傳送， (在跳過或非函式之後，將) 還原為會話 debug manager (SDM) 。

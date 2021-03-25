@@ -1,6 +1,6 @@
 ---
 description: 傳回代表目前程式碼位置的程式碼位置識別碼。
-title: IDebugDisassemblyStream2：： GetCurrentLocation |Microsoft 檔
+title: IDebugDisassemblyStream2：： GetCurrentLocation |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetCurrentLocation
 ms.assetid: 512302f1-12b1-4107-8a6e-c5bc878ce1c3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75687f0ad229ae1e2284b18dcc864e17d5b734d3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 851c7a22b69c60baac52ec3597f0b1f6df64cfa2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154427"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067032"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
 傳回代表目前程式碼位置的程式碼位置識別碼。

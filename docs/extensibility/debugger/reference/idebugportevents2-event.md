@@ -1,6 +1,6 @@
 ---
 description: 這個方法會傳送事件，以表示埠上的進程和程式的建立和終結。
-title: IDebugPortEvents2：： Event |Microsoft 檔
+title: IDebugPortEvents2：： Event |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEvents2::Event
 ms.assetid: 5cc813f7-04a1-4462-9ea7-fbddcf0e0143
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc975c2f48c560d0f15f08a6cc957c67ecc13808
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 314c31c426300c31f90813e2b73b150678578437
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142904"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058335"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 這個方法會傳送事件，以表示埠上的進程和程式的建立和終結。

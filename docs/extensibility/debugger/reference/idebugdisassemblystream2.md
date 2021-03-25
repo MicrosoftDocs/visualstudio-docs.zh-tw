@@ -1,6 +1,6 @@
 ---
 description: 此介面代表指示的資料流程。
-title: IDebugDisassemblyStream2 |Microsoft 檔
+title: IDebugDisassemblyStream2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2 interface
 ms.assetid: b03cab0c-3f0b-4cc6-88dc-acb3b48c567a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 760d77ced3cc07da2dd02c21cf3ed0200df14231
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8e4ffa8de4b245071f1893eae5f5427a9dccd353
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166563"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066876"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 此介面代表指示的資料流程。

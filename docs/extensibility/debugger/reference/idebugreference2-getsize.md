@@ -1,6 +1,6 @@
 ---
 description: 取得參考值的大小（以位元組為單位）。
-title: IDebugReference2：： GetSize |Microsoft 檔
+title: IDebugReference2：： GetSize |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetSize
 ms.assetid: a404ddd9-d940-4513-97cd-f52b8ab6a560
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e653a88adcf6388ab31d7ba5ae2cf526c5c84bae
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 061b4422efced1480a8f42cf39b7fdb648834b3b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165965"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075831"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
 取得參考值的大小（以位元組為單位）。 保留供未來使用。

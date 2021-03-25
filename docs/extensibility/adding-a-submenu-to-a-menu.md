@@ -10,17 +10,17 @@ helpviewer_keywords:
 - cascading submenus
 - menus, creating cascading submenus
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b784cae836f1a5cae520a9650c8f396ccc960a72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc6d521e699beb2345ba76e2e617ff749886eee9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951507"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094896"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>將子功能表新增至功能表
 本逐步解說會示範如何將子功能表新增至 [ **TestMenu** ] 功能表，以 [將功能表新增至 Visual Studio 的功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)。
@@ -85,7 +85,7 @@ ms.locfileid: "99951507"
 
 ## <a name="add-a-command"></a>新增命令
 
-1. 開啟 *TestCommand.cs* ，並在現有的命令識別碼之後新增下列命令識別碼。
+1. 開啟 *TestCommand* ，並在現有的命令識別碼之後新增下列命令識別碼。
 
     ```csharp
     public const int cmdidTestSubCmd = 0x0105;
@@ -153,7 +153,7 @@ ms.locfileid: "99951507"
 
 4. 建置此專案並開始偵錯。 實驗實例應會出現。
 
-5. 在 [ **TestMenu** ] 功能表上，按一下 [ **子功能表** ]，然後按一下 [ **測試子命令**]。 應該會出現訊息方塊，並顯示文字 "Test Command TestCommand. SubItemCallback ( # A1"。
+5. 在 [ **TestMenu** ] 功能表上，按一下 [ **子功能表** ]，然後按一下 [ **測試子命令**]。 應該會出現訊息方塊，並顯示「在 TestCommand. SubItemCallback 中測試命令 () 」文字。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - expression evaluators, architecture
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac81d386f0e1104879701faba230d5384259fa25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31b382f4765a115657fb213f39530e88e4008c95
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921411"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094727"
 ---
 # <a name="expression-evaluator-architecture"></a>運算式評估工具架構
 > [!IMPORTANT]

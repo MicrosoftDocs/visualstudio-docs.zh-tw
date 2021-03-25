@@ -1,6 +1,6 @@
 ---
 description: 抓取正在程式中執行的執行緒清單。
-title: IDebugProgram2：： EnumThreads |Microsoft 檔
+title: IDebugProgram2：： EnumThreads |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::EnumThreads
 ms.assetid: 0f2a8c51-1315-4c96-8aa1-6a937dc2a769
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d25d8da572bea90af13523228c5c53795cfe4301
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0d00d377d26e6afc22bf2a2d3e65c261d82d6ede
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164743"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076000"
 ---
 # <a name="idebugprogram2enumthreads"></a>IDebugProgram2::EnumThreads
 抓取正在程式中執行的執行緒清單。

@@ -1,6 +1,6 @@
 ---
 description: 指定比較兩個記憶體內容的準則。
-title: CONTEXT_COMPARE |Microsoft 檔
+title: CONTEXT_COMPARE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 70f4621eaad5e494684e6c227959e13566a22eba
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fd74516c3f687f05b2d5fb33dc2b94455114bbc6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170779"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094441"
 ---
 # <a name="context_compare"></a>CONTEXT_COMPARE
 指定比較兩個記憶體內容的準則。

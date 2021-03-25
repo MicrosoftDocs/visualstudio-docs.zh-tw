@@ -1,6 +1,6 @@
 ---
 description: 取得方法的全域容器。
-title: IDebugMethodField：： GetGlobalContainer |Microsoft 檔
+title: IDebugMethodField：： GetGlobalContainer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::GetGlobalContainer method
 ms.assetid: 041ac5aa-0b80-4310-b9ae-b88f8e7e0e5f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb20551d39f3e876a836ac42906ad9c50e3c6419
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e35082faf076bd0242d9dcc34552c31ba159fb08
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166290"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058374"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 取得方法的全域容器。

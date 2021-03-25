@@ -1,6 +1,6 @@
 ---
 description: 當程式執行完成時，debug engine 會將這個介面傳送 (DE) 至會話 debug manager (SDM) 。
-title: IDebugProgramDestroyEvent2 |Microsoft 檔
+title: IDebugProgramDestroyEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramDestroyEvent2
 ms.assetid: ddf127ca-c4a5-4071-90ca-68faf2f57dbd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0513de268d0761c6774b02cf2eeb78718ee4bc9
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 49242ea2c0116ae57f1c063bf3d5fe5e1db2ce17
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151606"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084372"
 ---
 # <a name="idebugprogramdestroyevent2"></a>IDebugProgramDestroyEvent2
 當程式執行完成時，debug engine 會將這個介面傳送 (DE) 至會話 debug manager (SDM) 。

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], programs
 - programs, debugging
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5205dba6cddf104d0cb05f01acbc43f6927acaaf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0769d2abc650305095115d1c645e3037096974de
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948422"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094610"
 ---
 # <a name="programs"></a>程式
 在偵錯工具架構中， *程式*：

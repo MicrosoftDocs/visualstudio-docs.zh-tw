@@ -1,6 +1,6 @@
 ---
 description: 切換此暫止中斷點的虛擬化狀態。
-title: IDebugPendingBreakpoint2：：虛擬化 |Microsoft 檔
+title: IDebugPendingBreakpoint2：：虛擬化 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Virtualize method
 - IDebugPendingBreakpoint2::Virtualize method
 ms.assetid: 58c8e9a5-4494-47c2-bddb-56f628da6a2d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ea6d6231a99f730969c44e7ced83cb48d0db4b4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fa2d3dcab7e5e71140b308dc825417c03e79d356
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169752"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084515"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 切換此暫止中斷點的虛擬化狀態。 當暫止的中斷點已虛擬化時，每當新的程式碼載入程式時，debug engine 都會嘗試系結它。

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: de29b012914ac9997a78674fd3215f2c15d43c6e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a21036d3a9661306d1efff5a66ae47f8f7404209
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945912"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094714"
 ---
 # <a name="launch-a-program"></a>啟動程式
 想要進行程式設計的使用者可以按 **F5** 從 IDE 執行偵錯工具。 這會開始一系列的事件，這些事件最後會導致 IDE 連接到偵錯工具， () 取消連接或附加至程式，如下所示：

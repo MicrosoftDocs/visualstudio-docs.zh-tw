@@ -1,6 +1,6 @@
 ---
 description: 傳回對應至指定之程式碼位置識別碼的程式碼內容物件。
-title: IDebugDisassemblyStream2：： GetCodeCoNtext |Microsoft 檔
+title: IDebugDisassemblyStream2：： GetCodeCoNtext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetCodeContext
 ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a8662fdadfbd2c41d193ddced158a956cb8c6fc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c532c68435d1eaabdb03f8acae571ac4b71a5a7b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150623"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067071"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 傳回對應至指定之程式碼位置識別碼的程式碼內容物件。

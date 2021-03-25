@@ -1,6 +1,6 @@
 ---
 description: 傳回特定程式碼內容的程式碼位置識別碼。
-title: IDebugDisassemblyStream2：： GetCodeLocationId |Microsoft 檔
+title: IDebugDisassemblyStream2：： GetCodeLocationId |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetCodeLocationId
 ms.assetid: 567adfb8-2f54-499a-a027-e4ecb82277ef
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c1c3a6f7a9f2e2a0617f1322d17073a9dcc7c32
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f68ee6ff0495fe36d8de8ccf0e3c2c81f3d05ac5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162923"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067084"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
 傳回特定程式碼內容的程式碼位置識別碼。

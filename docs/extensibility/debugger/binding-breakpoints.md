@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d7da8cfdb2b7995b77364e5a5de62667b13e52c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 622d61c6083288f7293258feb3743ef7cfdd0b8b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895007"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055280"
 ---
 # <a name="bind-breakpoints"></a>系結中斷點
 如果使用者設定中斷點（也許是按 **F9**），IDE 就會會構成要求，並提示 debug 會話來建立中斷點。

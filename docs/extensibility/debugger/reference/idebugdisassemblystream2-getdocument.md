@@ -1,6 +1,6 @@
 ---
 description: 取得與此輸入資料流程相關聯的來源文件。
-title: IDebugDisassemblyStream2：： GetDocument |Microsoft 檔
+title: IDebugDisassemblyStream2：： GetDocument |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetDocument
 ms.assetid: 3d039a44-ebaa-4413-ac18-7cfd92c408bd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c8b71a1c8b12aecf8346f1e035269da722d59ad
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1d214cf9be09dea4a4bf244224a5ae1bd6d882ef
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162935"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066993"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 取得與此輸入資料流程相關聯的來源文件。

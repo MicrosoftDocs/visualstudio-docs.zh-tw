@@ -1,25 +1,25 @@
 ---
 description: 使用指定的語言和廠商識別碼，列舉可用的運算式評估工具。
-title: IDebugSettingsCallback2：： EnumEEs |Microsoft 檔
+title: IDebugSettingsCallback2：： EnumEEs |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::EnumEEs
 ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ccd154643ece5f9ec87ee0fdb063082e7d371d8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7606bd46587c7141bddea0c822f08459f2d262d9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168799"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075662"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 使用指定的語言和廠商識別碼，列舉可用的運算式評估工具。

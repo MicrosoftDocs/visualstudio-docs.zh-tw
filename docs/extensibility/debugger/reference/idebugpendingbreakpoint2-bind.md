@@ -1,6 +1,6 @@
 ---
 description: 將這個暫止中斷點系結至一個或多個程式碼位置。
-title: IDebugPendingBreakpoint2：： Bind |Microsoft 檔
+title: IDebugPendingBreakpoint2：： Bind |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Bind method
 - IDebugPendingBreakpoint2::Bind method
 ms.assetid: 46e3f307-219d-40cd-a929-d41399c60ecf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eda2cdef924aec782b18155a92e3a0159b338f08
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3a99319aa4269a1f17032a30ea8df02b4f08836a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143111"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084528"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
 將這個暫止中斷點系結至一個或多個程式碼位置。

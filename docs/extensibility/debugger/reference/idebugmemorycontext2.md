@@ -1,6 +1,6 @@
 ---
 description: 此介面代表執行正在進行偵錯工具之電腦的位址空間中的位置。
-title: IDebugMemoryCoNtext2 |Microsoft 檔
+title: IDebugMemoryCoNtext2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMemoryContext2 interface
 ms.assetid: 3a544c8b-11dc-46bb-8549-261e4ac5bbc4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20750397eafa392ee7ad8bd742b0126b1fb9deeb
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5a967c992fc55065c50dbbe173495e7c1199df59
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166342"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058478"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 此介面代表執行正在進行偵錯工具之電腦的位址空間中的位置。

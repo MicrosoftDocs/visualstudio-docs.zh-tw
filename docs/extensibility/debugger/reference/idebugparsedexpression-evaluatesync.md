@@ -1,6 +1,6 @@
 ---
 description: 這個方法會評估剖析的運算式，並選擇性地將結果轉換成另一種資料類型。
-title: IDebugParsedExpression：： EvaluateSync |Microsoft 檔
+title: IDebugParsedExpression：： EvaluateSync |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugParsedExpression::EvaluateSync method
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99760fb35975834186beddf2962ea8402543d088
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 75f86506ea3cd29d09bf8c78a07eaabcf7a9a6f0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143099"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084632"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 這個方法會評估剖析的運算式，並選擇性地將結果轉換成另一種資料類型。
