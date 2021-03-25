@@ -1,6 +1,6 @@
 ---
 description: 由 debug engine 使用 (DE) 來啟動和終止程式。
-title: IDebugEngineLaunch2 |Microsoft 檔
+title: IDebugEngineLaunch2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2 interface
 ms.assetid: 5eaf2ad8-3fbf-446e-b48b-5327ad3f5255
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f03b4754d1648dc8a184d59e5e8b0f038a000bf2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a8931590ea20373b5350d880d5fe9495dfe53c4f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153465"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077378"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
 由 debug engine 使用 (DE) 來啟動和終止程式。

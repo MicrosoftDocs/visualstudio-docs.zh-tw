@@ -1,6 +1,6 @@
 ---
 description: 判斷目前的指令指標是否可以設定為指定的堆疊框架。
-title: IDebugThread2：： CanSetNextStatement |Microsoft 檔
+title: IDebugThread2：： CanSetNextStatement |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::CanSetNextStatement
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b07eb23127abedc4e41af2795c3452401c3e670
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 25846bf028eb93f83767b2ab964f152feabcaefb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168383"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070982"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 判斷目前的指令指標是否可以設定為指定的堆疊框架。

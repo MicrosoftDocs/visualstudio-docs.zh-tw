@@ -1,6 +1,6 @@
 ---
 description: 將會話附加至程式。
-title: IDebugProgramEx2：： Attach |Microsoft 檔
+title: IDebugProgramEx2：： Attach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2::Attach
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa9a66bdec3da9b6d18772b4ff2c85a7874bde6c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f4f7f6a083c37ece73be488ab0c4f6d4c25ce24c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150142"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084151"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 將會話附加至程式。

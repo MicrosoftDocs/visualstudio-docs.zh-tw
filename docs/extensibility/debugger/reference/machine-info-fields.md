@@ -1,6 +1,6 @@
 ---
 description: 指定要針對特定電腦取出的資訊類型。
-title: MACHINE_INFO_FIELDS |Microsoft 檔
+title: MACHINE_INFO_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO_FIELDS enumeration
 ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bb07f679027c37ebc74343ba17051a7e7980c1c7
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 3361ed090dc724f948d98aa0037949e0c573d56d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222558"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057932"
 ---
 # <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
 指定要針對特定電腦取出的資訊類型。

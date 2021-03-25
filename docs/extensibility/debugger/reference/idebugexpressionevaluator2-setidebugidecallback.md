@@ -1,26 +1,26 @@
 ---
 description: 讓 debug engine 在初始化期間將回呼傳遞給運算式評估工具。
-title: IDebugExpressionEvaluator2：： SetIDebugIDECallback |Microsoft 檔
+title: IDebugExpressionEvaluator2：： SetIDebugIDECallback |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetIDebugIDECallback
 - SetIDebugIDECallback
 ms.assetid: f01c40ad-ef4b-477b-8304-602c6972bc88
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 827e8a2096b0ac79720e5306cce83c55267269c6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3793fbcf19b87d6aed1df81d6739ae6529c2ba14
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152256"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077326"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
 讓 debug engine 在初始化期間將回呼傳遞給運算式評估工具。

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13722aa9968e21d4208ad5aa99fefe4c985ffb79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d6409b5e624cd8596e669f191b2644aaf27a88c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963493"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090924"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>設計 XML 命令表 ( .vsct) 檔案
 XML 命令表 (*.vsct*) 檔描述 VSPackage 的命令專案的配置和外觀。 命令專案包括按鈕、下拉式方塊、功能表、工具列和命令專案群組。 本文說明 XML 命令表格檔案、它們如何影響命令專案和功能表，以及如何建立它們。

@@ -1,6 +1,6 @@
 ---
 description: 傳回目前進程列舉的複本，做為個別的物件。
-title: IEnumDebugProcesses2：： Clone |Microsoft 檔
+title: IEnumDebugProcesses2：： Clone |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2::Clone
 ms.assetid: 3d4196d3-5a80-4f76-b8b2-f72e80c8d406
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2189f0b48317ac6dc6459cbd3cde1785e02b25c5
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 964aa8d280ec5d3a2803c88ea40284ed6d10110b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226172"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058114"
 ---
 # <a name="ienumdebugprocesses2clone"></a>IEnumDebugProcesses2::Clone
 傳回目前列舉的複本作為個別的物件。

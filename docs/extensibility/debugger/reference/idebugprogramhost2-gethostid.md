@@ -1,6 +1,6 @@
 ---
 description: 取得裝載此程式之進程的處理序識別碼。
-title: IDebugProgramHost2：： GetHostId |Microsoft 檔
+title: IDebugProgramHost2：： GetHostId |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramHost2::GetHostId
 ms.assetid: 7702e221-feb1-446b-a224-cb46c420987e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e9784c8e54ee5c75ed33a0aaf513f71dd09f6191
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 27e305a53b33c45e297e9ceaec521d0a3ec8965b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168123"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084086"
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
 取得裝載此程式之進程的處理序識別碼。

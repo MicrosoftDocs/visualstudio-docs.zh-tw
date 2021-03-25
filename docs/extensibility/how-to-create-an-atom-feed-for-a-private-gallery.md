@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81167b1e2e9f7959398b30b89796913520c48fac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a83d5aa68f6f631243fbbfcad7cf28b25e7bc70
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967445"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057373"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何：建立私用元件庫的 Atom 摘要
 您可以建立 Atom (RSS) 摘要至包含擴充功能的內部網路位置，並將摘要新增至 **擴充功能和更新** 作為私用資源庫。 如需詳細資訊，請參閱私用資源 [庫](../extensibility/private-galleries.md)。

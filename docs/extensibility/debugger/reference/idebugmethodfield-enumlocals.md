@@ -1,6 +1,6 @@
 ---
 description: 為方法的選取區域變數建立枚舉器。
-title: IDebugMethodField：： EnumLocals |Microsoft 檔
+title: IDebugMethodField：： EnumLocals |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumLocals method
 ms.assetid: b0456a6d-2b96-49e2-a871-516571b4f6a5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d99b6e4b3cf30cccd4a2785f3712b34d9471bdd8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b7ecaeac949cf139f6b18f30a10a0030002c7f0f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166329"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076676"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 為方法的選取區域變數建立枚舉器。

@@ -1,6 +1,6 @@
 ---
 description: 調試引擎不會執行此方法。
-title: IDebugThread2：： GetLogicalThread |Microsoft 檔
+title: IDebugThread2：： GetLogicalThread |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetLogicalThread
 ms.assetid: bce6230e-41d4-49b7-a050-2dde5efb6805
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9193cde20ba1035552451143c676aab291d7c684
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3fe053a15ca6c89167b4b4cbf9bdffc8d7c334e8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168344"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070969"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 調試引擎不會執行此方法。

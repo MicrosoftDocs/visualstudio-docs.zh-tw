@@ -1,6 +1,6 @@
 ---
 description: 傳回進程列舉中的元素數目。
-title: IEnumDebugProcesses2：： GetCount |Microsoft 檔
+title: IEnumDebugProcesses2：： GetCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2::GetCount
 ms.assetid: 5dc3e36c-46e5-4556-bf41-1870aa67d2a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2797390c7a8d6449a11d939a796f07f41b14304c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 8707bf7cdaf21c8f600d4404120fa7ed41165190
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224437"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058101"
 ---
 # <a name="ienumdebugprocesses2getcount"></a>IEnumDebugProcesses2::GetCount
 傳回列舉中的元素數目。

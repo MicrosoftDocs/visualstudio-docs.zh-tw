@@ -1,6 +1,6 @@
 ---
 description: 程式節點會使用此介面來指定所有可能的偵錯工具引擎 (DE) 可將此程式進行偵錯工具。
-title: IDebugProgramEngines2 |Microsoft 檔
+title: IDebugProgramEngines2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2 interface
 ms.assetid: 53d648f0-6c11-4337-badd-c43f3872b62c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c19b4dc3967cf7001144d38114a1f873776cb2b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e0202185d760a1e3334996906807e5922fe61e0a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149583"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084216"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 程式節點會使用此介面來指定所有可能的偵錯工具引擎 (DE) 可將此程式進行偵錯工具。

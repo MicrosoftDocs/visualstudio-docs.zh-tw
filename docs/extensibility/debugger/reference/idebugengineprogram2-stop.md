@@ -1,6 +1,6 @@
 ---
 description: 停止在此程式中執行的所有線程。
-title: IDebugEngineProgram2：： Stop |Microsoft 檔
+title: IDebugEngineProgram2：： Stop |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::Stop
 ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3867e4e3f119e69734495d5c545d53348755af3a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7263756a0a8bacbbc6f90e327916cec8868d8f5c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153452"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077365"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
 停止在此程式中執行的所有線程。

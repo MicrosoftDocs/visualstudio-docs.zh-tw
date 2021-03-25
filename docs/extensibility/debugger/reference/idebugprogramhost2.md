@@ -1,6 +1,6 @@
 ---
 description: 此介面提供主機 (程式) 程式的相關資訊。
-title: IDebugProgramHost2 |Microsoft 檔
+title: IDebugProgramHost2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramHost2 interface
 ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 109cca0cc3d12d8bf14da848774042fe346f0f1e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6b58eb61a65ff8ed0a6455d81128539ad5e6d00a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168110"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058244"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 此介面提供主機 (程式) 程式的相關資訊。

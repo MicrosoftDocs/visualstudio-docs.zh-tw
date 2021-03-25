@@ -1,6 +1,6 @@
 ---
 description: 包含已搜尋之符號搜尋路徑的相關狀態資訊。
-title: MODULE_SYMBOL_SEARCH_INFO |Microsoft 檔
+title: MODULE_SYMBOL_SEARCH_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_SYMBOL_SEARCH_INFO structure
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc914334fc4b8ebf2dd73f691cdec242e19364a9
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 266d786df422e5260e212a4005feb7d3167af099
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222285"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057893"
 ---
 # <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 

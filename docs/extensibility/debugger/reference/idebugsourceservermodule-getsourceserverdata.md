@@ -1,25 +1,25 @@
 ---
 description: 捕獲來源伺服器資訊的陣列。
-title: IDebugSourceServerModule：： GetSourceServerData |Microsoft 檔
+title: IDebugSourceServerModule：： GetSourceServerData |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSourceServerModule::GetSourceServerData
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2478c28d77f07084813c86cac194a241b26354b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 35e6f73d74006d4db4135f9202968896a6023cf5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168630"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071177"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 捕獲來源伺服器資訊的陣列。

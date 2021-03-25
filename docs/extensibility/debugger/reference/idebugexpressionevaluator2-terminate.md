@@ -1,26 +1,26 @@
 ---
 description: 停止並清除運算式評估工具。
-title: IDebugExpressionEvaluator2：： Terminate |Microsoft 檔
+title: IDebugExpressionEvaluator2：： Terminate |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Terminate
 - IDebugExpressionEvaluator2::Terminate
 ms.assetid: 38265100-4d80-4902-833a-07bb569f9ba8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 703d6a0179fca8da68af1b0815a07fd01fb672c6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: cab26c681b621980f1c9220c72bd3107a03c64fb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152243"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077313"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
 停止並清除運算式評估工具。

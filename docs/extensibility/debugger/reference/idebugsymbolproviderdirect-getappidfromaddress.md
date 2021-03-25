@@ -1,26 +1,26 @@
 ---
 description: 根據指定的 debug 位址，抓取應用程式域識別碼。
-title: IDebugSymbolProviderDirect：： GetAppIDFromAddress |Microsoft 檔
+title: IDebugSymbolProviderDirect：： GetAppIDFromAddress |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetAppIDFromAddress
 - GetAppIDFromAddress
 ms.assetid: d76a0f36-79c4-4c58-9db3-880b00d11610
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3869bf7f43566fce45b634ce328b79de1e172dad
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0e93a24eaea8f74ac839b7a240ab7a95aaf3f4ee
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168370"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071112"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 根據指定的 debug 位址，抓取應用程式域識別碼。

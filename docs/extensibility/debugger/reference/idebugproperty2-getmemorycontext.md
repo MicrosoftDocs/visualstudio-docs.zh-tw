@@ -1,6 +1,6 @@
 ---
 description: 取得屬性值的記憶體內容。
-title: IDebugProperty2：： GetMemoryCoNtext |Microsoft 檔
+title: IDebugProperty2：： GetMemoryCoNtext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetMemoryContext
 ms.assetid: 91793d25-790f-4881-a5c0-d0458e534514
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a82b2f0ed4a1fb7a37ec621d737d624d30d33ef2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 35eff7948bc6171a0853f8772b65cf10c0b4cf1b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166849"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064965"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
 取得屬性值的記憶體內容。
