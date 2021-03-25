@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text, menus
 - commands, changing text
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2d812dbee833358f682b5227785c78322efe44a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47389352e0491c20b7eb6409c36091179bf967d1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911241"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068059"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>變更功能表命令的文字
 下列步驟顯示如何使用服務來變更功能表命令的文字標籤 <xref:System.ComponentModel.Design.IMenuCommandService> 。
@@ -41,7 +41,7 @@ ms.locfileid: "99911241"
     </Button>
     ```
 
-3. 在 *ChangeMenuText.cs* 檔案中，建立將在功能表命令顯示之前呼叫的事件處理常式。
+3. 在 *ChangeMenuText .cs* 檔案中，建立將在功能表命令顯示之前呼叫的事件處理常式。
 
     ```csharp
     private void OnBeforeQueryStatus(object sender, EventArgs e)

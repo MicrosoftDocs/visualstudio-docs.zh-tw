@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 752a912fd9a565e4b3e8dcb5c4c142e8f37dffc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a84fa551a4a3ea10b212832c0891fb0d7d19b2f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934034"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060181"
 ---
 # <a name="using-the-settings-store"></a>使用設定存放區
 有兩種設定存放區：
@@ -33,12 +33,12 @@ ms.locfileid: "99934034"
 
 1. 每個 Visual Studio 擴充功能都會以 VSIX 部署專案開始，其中將包含延伸模組資產。 建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名為的 VSIX 專案 `SettingsStoreExtension` 。 您可以在 [ **新增專案** ] 對話方塊中的 **Visual c #/** 擴充性下找到 VSIX 專案範本。
 
-2. 現在，新增名為 **SettingsStoreCommand** 的自訂命令專案範本。 在 [ **加入新專案** ] 對話方塊中，移至 **Visual c #/** 擴充性，然後選取 [ **自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 **SettingsStoreCommand.cs**。 如需如何建立自訂命令的詳細資訊，請參閱[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能
+2. 現在，新增名為 **SettingsStoreCommand** 的自訂命令專案範本。 在 [ **加入新專案** ] 對話方塊中，移至 **Visual c #/** 擴充性，然後選取 [ **自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 **SettingsStoreCommand .cs**。 如需如何建立自訂命令的詳細資訊，請參閱[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能
 
 ## <a name="using-the-configuration-settings-store"></a>使用設定存放區
  本節說明如何偵測和顯示設定。
 
-1. 在 SettingsStorageCommand.cs 檔案中，新增下列 using 指示詞：
+1. 在 SettingsStorageCommand .cs 檔案中，加入下列 using 指示詞：
 
    ```
    using System.Collections.Generic;

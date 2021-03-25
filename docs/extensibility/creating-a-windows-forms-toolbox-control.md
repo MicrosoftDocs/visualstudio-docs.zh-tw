@@ -8,17 +8,17 @@ helpviewer_keywords:
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bb9505ab475da7919a39eb03e7c84b92857db4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42dcf30e7c31880357bb95e3858a2c70aa59f174
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902187"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089325"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
 
@@ -46,7 +46,7 @@ Windows Forms 的 [工具箱控制項] 範本會建立未定義的使用者控�
 
 #### <a name="to-build-the-user-interface"></a>建置使用者介面
 
-1. 在 **方案總管** 中，按兩下 [ *Counter.cs* ]，在設計工具中開啟它。
+1. 在 **方案總管** 中，按兩下 [ *Counter* ]，在設計工具中開啟它。
 
 2. 移除 **這裡的 Click！** 當您加入 Windows Forms 工具箱控制項專案範本時，預設會包含的按鈕。
 
@@ -163,7 +163,7 @@ Windows Forms 的 [工具箱控制項] 範本會建立未定義的使用者控�
 
 2. 在 Visual Studio 的實驗實例中，建立 **Windows Forms 應用程式** 專案。
 
-3. 在 **方案總管** 中，按兩下 [ *Form1.cs* ]，在設計工具中開啟它（如果尚未開啟）。
+3. 在 **方案總管** 中，按兩下 [form1.vb *]，在* 設計工具中開啟它（如果尚未開啟）。
 
 4. 在 [ **工具箱**] 中， `Counter` 控制項應該會顯示在 [ **一般** ] 區段中。
 
@@ -173,7 +173,7 @@ Windows Forms 的 [工具箱控制項] 範本會建立未定義的使用者控�
 
 7. 將 <xref:System.Windows.Forms.Button> 控制項拖曳至表單，然後將按鈕的 [名稱] 和 [text] 屬性設定為 `Test` 。
 
-8. 按兩下按鈕以在程式碼視圖中開啟 *Form1.cs* ，並建立 click 處理常式。
+8. 按兩下按鈕以在程式碼視圖中開啟 *Form1* ，然後建立 click 處理常式。
 
 9. 在按一下處理常式中，呼叫 `counter1.Increment()` 。
 

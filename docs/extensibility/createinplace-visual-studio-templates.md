@@ -11,17 +11,17 @@ helpviewer_keywords:
 - CreateInPlace element [Visual Studio Templates]
 - <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa138923f8d23c59613ce1bbc51460fd3c8c9acb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3da93439b245c2f8f23a8fa5b79d9fef3a48a9d2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870333"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089481"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a> (Visual Studio 範本的 CreateInPlace 元素) 
 指定是否要在指定的位置建立專案並執行參數取代，或在暫存位置中執行參數取代，然後將專案儲存至指定的位置。

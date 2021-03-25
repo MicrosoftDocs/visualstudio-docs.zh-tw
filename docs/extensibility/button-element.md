@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
 ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51b202db9210fa5c1f3d5b26b5177cc0b5e1e0a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec0640313195d6a15599d1a765081557c0c1a75a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927310"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068138"
 ---
 # <a name="button-element"></a>Button 元素
 定義使用者可以與之互動的元素。 按鈕可以是不同的類型： Button、MenuButton 和 SplitDropDown。

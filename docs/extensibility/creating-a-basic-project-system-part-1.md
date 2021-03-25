@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 15d28ff154629d07c643430b210d6106ac99978c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887363"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089429"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>建立基本的專案系統，第1部分
 在 Visual Studio 中，專案是開發人員用來組織原始程式碼檔和其他資產的容器。 專案在 **方案總管** 中會顯示為解決方案的子系。 專案可讓您組織、建立、偵測和部署原始程式碼，以及建立 Web 服務、資料庫和其他資源的參考。
@@ -80,7 +80,7 @@ ms.locfileid: "99887363"
 
 4. 儲存圖示並關閉圖示編輯器。
 
-5. 在 [ *Templates\Projects\SimpleProject* ] 資料夾中，加入名為 *Program.cs* 的 **類別** 專案。
+5. 在 [ *Templates\Projects\SimpleProject* ] 資料夾中，加入名為 *Program* 的 **類別** 專案。
 
 6. 以下列程式程式碼取代現有的程式碼。
 
@@ -103,11 +103,11 @@ ms.locfileid: "99887363"
    ```
 
    > [!IMPORTANT]
-   > 這不是 *Program.cs* 程式碼的最終形式;取代參數將在稍後的步驟中處理。 您可能會看到編譯錯誤，但是只要檔案的 **BuildAction** 是 **內容**，您應該就可以像平常一樣地建立及執行專案。
+   > 這不是 *程式 .Cs 程式* 代碼的最終形式;取代參數將在稍後的步驟中處理。 您可能會看到編譯錯誤，但是只要檔案的 **BuildAction** 是 **內容**，您應該就可以像平常一樣地建立及執行專案。
 
 7. 儲存檔案。
 
-8. 從 *Properties* 資料夾將 *AssemblyInfo.cs* 檔案複製到 *Projects\SimpleProject* 資料夾。
+8. 從 *Properties* 資料夾將 *AssemblyInfo .cs* 檔案複製到 *Projects\SimpleProject* 資料夾。
 
 9. 在 *Projects\SimpleProject* 資料夾中，加入名為 *SIMPLEPROJECT myproj.csproj* 的 XML 檔案。
 
@@ -156,9 +156,9 @@ ms.locfileid: "99887363"
 
 11. 儲存檔案。
 
-12. 在 [**屬性**] 視窗中，將 [ *AssemblyInfo.cs*]、[ *Program.cs*]、[ *SimpleProject*] 和 [ *SimpleProject* ] 的 [**組建] 動作** 設定為 [**內容**]，並將其 [**包含于 VSIX** 屬性] 設定為 **True**。
+12. 在 [**屬性**] 視窗中，將 [ *AssemblyInfo*]、[ *SimpleProject*] 和 [ *SimpleProject* ] 的 [**組建] 動作** 設定為 [**內容** *]，並* 將其 [**包含于 VSIX** ] 屬性設定為 [ **True**]。
 
-    此專案範本描述具有 Debug 設定和發行設定的基本 Visual c # 專案。 專案包含兩個原始程式檔： *AssemblyInfo.cs* 和 *Program.cs*，以及數個元件參考。 從範本建立專案時，會自動將 ProjectGuid 值取代為新的 GUID。
+    此專案範本描述具有 Debug 設定和發行設定的基本 Visual c # 專案。 專案包含兩個原始程式檔： *AssemblyInfo .cs* 和 *Program .cs*，以及數個元件參考。 從範本建立專案時，會自動將 ProjectGuid 值取代為新的 GUID。
 
     在 **方案總管** 中，展開的 **範本** 資料夾應該會顯示如下：
 
@@ -190,7 +190,7 @@ Templates
        }
    ```
 
-2. 將類別新增至名為 *SimpleProjectFactory.cs* 的 top *SimpleProject* 資料夾。
+2. 將類別新增至名為 *SimpleProjectFactory* 的 top *SimpleProject* 資料夾。
 
 3. 加入以下 using 指示詞：
 
@@ -212,7 +212,7 @@ Templates
 
 ### <a name="to-register-the-project-template"></a>註冊專案範本
 
-1. 在 *SimpleProjectPackage.cs* 中，將 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 屬性新增至 `SimpleProjectPackage` 類別，如下所示。
+1. 在 *SimpleProjectPackage* 中，將屬性新增 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 至類別，如下所示 `SimpleProjectPackage` 。
 
    ```csharp
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",
@@ -271,7 +271,7 @@ Templates
 
 ### <a name="to-initialize-the-project-factory"></a>若要初始化專案 factory
 
-1. 在 *SimpleProjectPackage.cs* 檔案中，新增下列指示詞 `using` 。
+1. 在 *SimpleProjectPackage .cs* 檔案中，加入下列指示詞 `using` 。
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -299,7 +299,7 @@ Templates
     }
     ```
 
-5. 在 *SimpleProjectFactory.cs* 中，將下列指示詞新增至現有指示詞 `using` 之後 `using` 。
+5. 在 *SimpleProjectFactory* 中，將下列指示詞新增至現有指示詞 `using` 之後 `using` 。
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -339,7 +339,7 @@ Templates
 
 ### <a name="to-test-the-project-factory-implementation"></a>測試 project factory 的執行
 
-1. 在 *SimpleProjectFactory.cs* 檔案中，于函式的下列這一行設定中斷點 `SimpleProjectFactory` 。
+1. 在 *SimpleProjectFactory .cs* 檔案的函式中，于下一行設定中斷點 `SimpleProjectFactory` 。
 
     ```csharp
     this.package = package;
@@ -418,7 +418,7 @@ Templates
 
 ### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>連接專案 factory 類別和 node 類別
 
-1. 在 *SimpleProjectFactory.cs* 檔案中，新增下列指示詞 `using` ：
+1. 在 *SimpleProjectFactory .cs* 檔案中，加入下列指示詞 `using` ：
 
     ```csharp
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;
@@ -462,7 +462,7 @@ Templates
 
 3. 在 [ **屬性** ] 視窗中，將點陣圖的 [ **建立] 動作** 變更為 [ **內嵌資源**]。
 
-4. 在 *SimpleProjectNode.cs* 中，新增下列指示詞 `using` ：
+4. 在 *SimpleProjectNode* 中，新增下列指示詞 `using` ：
 
    ```csharp
    using System.Drawing;
@@ -564,7 +564,7 @@ Templates
 
 ### <a name="to-substitute-template-parameters"></a>替代範本參數
 
-1. 在 *SimpleProjectNode.cs* 檔案中，新增下列指示詞 `using` 。
+1. 在 *SimpleProjectNode .cs* 檔案中，加入下列指示詞 `using` 。
 
    ```csharp
    using System.IO;
@@ -605,7 +605,7 @@ Templates
 
    - `nameSpace` 會提供 \<RootNamespace> *\Templates\Projects\SimpleProject\SimpleProject.myproj* 專案範本檔中的元素值。 此處的值為 `MyRootNamespace`。
 
-   - `className` 提供類別原始程式檔名稱的值，但不含副檔名。 在此情況下，要複製到目的資料夾的第一個檔案是 *AssemblyInfo.cs*;因此，className 的值為 `AssemblyInfo` 。
+   - `className` 提供類別原始程式檔名稱的值，但不含副檔名。 在此情況下，要複製到目的資料夾的第一個檔案是 *AssemblyInfo .cs*;因此，className 的值為 `AssemblyInfo` 。
 
 4. 移除中斷點，然後按 **F5** 繼續執行。
 

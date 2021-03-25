@@ -10,17 +10,17 @@ helpviewer_keywords:
 - CommandTable element (VSCT XML schema)
 - VSCT XML schema elements, CommandTable
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79441880091088cf1d953c8925273e801dc0860d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 507bdd20602c680f58b62e85251eaaa592982bc7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887350"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089520"
 ---
 # <a name="commandtable-element"></a>CommandTable 元素
 CommandTable 是 *.vsct* 檔的根項目。 此檔案會定義 VSPackage 提供給 IDE 之命令的實際版面配置和類型。 命令可能包含功能表項目、功能表、工具列和下拉式方塊。 如需詳細資訊，請參閱 [Visual Studio 命令表格 (. .vsct) ](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔。

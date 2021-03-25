@@ -8,17 +8,17 @@ helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1d332e3c41a55de8f405f028070fa95f97f6717
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce6122cbf4d6f85ab50e067fbbd643053ac4e4dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923264"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089351"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>建立多實例工具視窗
 您可以對工具視窗進行程式設計，讓它的多個實例可以同時開啟。 根據預設，工具視窗只能開啟一個實例。
@@ -34,7 +34,7 @@ ms.locfileid: "99923264"
 
 ## <a name="make-a-tool-window-multi-instance"></a>將工具視窗設為多重實例
 
-1. 開啟 *MIToolWindowPackage.cs* 檔案，並尋找 `ProvideToolWindow` 屬性。 和 `MultiInstances=true` 參數，如下列範例所示：
+1. 開啟 *MIToolWindowPackage .cs* 檔案，然後尋找 `ProvideToolWindow` 屬性。 和 `MultiInstances=true` 參數，如下列範例所示：
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -46,7 +46,7 @@ ms.locfileid: "99923264"
     {. . .}
     ```
 
-2. 在 *MIToolWindowCommand.cs* 檔案中，尋找 `ShowToolWindos()` 方法。 在這個方法中，請呼叫 <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> 方法，並將其旗標設定 `create` 為，以便在 `false` 找到可用的之後，才逐一查看現有的工具視窗實例 `id` 。
+2. 在 *MIToolWindowCommand .cs* 檔案中，尋找 `ShowToolWindos()` 方法。 在這個方法中，請呼叫 <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> 方法，並將其旗標設定 `create` 為，以便在 `false` 找到可用的之後，才逐一查看現有的工具視窗實例 `id` 。
 
 3. 若要建立工具視窗實例，請呼叫 <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> 方法，並將其設定 `id` 為可用的值及其 `create` 旗標 `true` 。
 

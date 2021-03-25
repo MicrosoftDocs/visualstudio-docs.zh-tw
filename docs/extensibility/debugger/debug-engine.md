@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e278b83e69a063c88b4cb3ff48d919d2b07ea6a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c13dd7165a5f85dc0122f97aaee838c528207f96
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955160"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067942"
 ---
 # <a name="debug-engine"></a>Debug 引擎
 Debug engine (DE) 可搭配解譯器或作業系統使用，以提供偵錯工具，例如執行控制、中斷點和運算式評估。 DE 負責監視正在進行偵錯工具的狀態。 為了達成此目的，在支援的執行時間中，不論是從 CPU 或執行時間所提供的 Api，DE 都會使用任何可用的方法。

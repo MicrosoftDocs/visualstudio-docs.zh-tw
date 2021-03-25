@@ -1,6 +1,6 @@
 ---
 description: 這個方法會在欄位列舉中略過指定數目的元素。
-title: IEnumDebugFields：： Skip |Microsoft 檔
+title: IEnumDebugFields：： Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Skip method
 ms.assetid: b3bc51c4-21ae-4913-800c-c2ca9dc18443
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54241fe231af6f9ba73cafe6d351fee60c9b4b51
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d5b411b17c5609f24f2a9b57189538264d8ba726
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226575"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075506"
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
 這個方法會略過指定的元素數目。

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceef95f90d2f54ad7b527ccc8c00322c77491fb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a60bdc7a6cbd73e85248f6ea5897ad3e56337113
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853148"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089416"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>建立基本的專案系統，第2部分
 本系列的第一個逐步解說會 [建立基本的專案系統，第1部分](../extensibility/creating-a-basic-project-system-part-1.md)顯示如何建立基本的專案系統。 本逐步解說會透過新增 Visual Studio 範本、屬性頁及其他功能，以基本專案系統為基礎。 您必須先完成第一個逐步解說，然後再開始這一項。
@@ -48,7 +48,7 @@ ms.locfileid: "99853148"
 
 1. 在中 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，開啟您透過下列 [建立基本專案系統（第1部分）](../extensibility/creating-a-basic-project-system-part-1.md)所建立的 SimpleProject 方案。
 
-2. 在 *SimpleProjectPackage.cs* 檔案中，尋找 ProvideProjectFactory 屬性。 以 null 取代 (專案名稱) 的第二個參數，而第四個參數 (專案範本資料夾的路徑，) 為 "。 \\\NullPath "，如下所示。
+2. 在 *SimpleProjectPackage .cs* 檔案中，尋找 ProvideProjectFactory 屬性。 以 null 取代 (專案名稱) 的第二個參數，而第四個參數 (專案範本資料夾的路徑，) 為 "。 \\\NullPath "，如下所示。
 
     ```
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,
@@ -100,17 +100,17 @@ ms.locfileid: "99853148"
 - \<ProjectType>元素會在 [**新增專案**] 對話方塊中命名專案類型。 這個名稱會取代 ProvideProjectFactory 屬性的專案名稱參數。
 
   > [!NOTE]
-  > \<ProjectType>元素必須符合 SimpleProjectPackage.cs 檔 `LanguageVsTemplate` 中屬性的引數 `ProvideProjectFactory` 。
+  > 專案 \<ProjectType> 必須符合 `LanguageVsTemplate` `ProvideProjectFactory` SimpleProjectPackage .cs 檔案中屬性的引數。
 
   \<TemplateContent>本節說明在建立新專案時所產生的這些檔案：
 
 - *SimpleProject. myproj.csproj*
 
-- *Program.cs*
+- *.Cs*
 
 - *AssemblyInfo.cs*
 
-  這三個檔案都已 `ReplaceParameters` 設為 true，以啟用參數替代。 *Program.cs* 檔案已 `OpenInEditor` 設定為 true，這會在建立專案時，在程式碼編輯器中開啟檔案。
+  這三個檔案都已 `ReplaceParameters` 設為 true，以啟用參數替代。 *程式 .cs* 檔案已 `OpenInEditor` 設定為 true，這會在建立專案時，于程式碼編輯器中開啟檔案。
 
   如需 Visual Studio 範本架構中專案的詳細資訊，請參閱 [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)。
 
@@ -285,7 +285,7 @@ Visual Studio 範本不包含路徑資訊。 因此，必須將範本 *.zip* 檔
 
 ### <a name="to-substitute-project-template-parameters"></a>替代專案範本參數
 
-1. 在 *SimpleProjectNode.cs* 檔案中，移除 `AddFileFromTemplate` 方法。
+1. 在 *SimpleProjectNode .cs* 檔案中，移除 `AddFileFromTemplate` 方法。
 
 2. 在 *\\ Templates\Projects\ConsoleApp\SimpleProject.myproj* 檔案中，找出 \<RootNamespace> 屬性，並將其值變更為 $safeprojectname $。
 
@@ -319,7 +319,7 @@ Visual Studio 範本不包含路徑資訊。 因此，必須將範本 *.zip* 檔
 
 5. 建立新的 SimpleProject 主控台應用程式。  (在 [ **專案類型** ] 窗格中，選取 [ **SimpleProject**]。 在 [ **Visual Studio 安裝的範本**] 下，選取 [ **主控台應用程式**]。 ) 
 
-6. 在新建立的專案中，開啟 *Program.cs*。 您的檔案看起來應該會像下面這樣 (GUID 值將有所不同。 ) ：
+6. 在新建立的專案中，開啟 [ *Program*]。 您的檔案看起來應該會像下面這樣 (GUID 值將有所不同。 ) ：
 
     ```csharp
     using System;
@@ -354,7 +354,7 @@ Visual Studio 範本不包含路徑資訊。 因此，必須將範本 *.zip* 檔
 
 - RootNamespace.
 
-1. 在 *SimpleProjectPackage.cs* 檔案中，將下列 `ProvideObject` 屬性新增至 `SimpleProjectPackage` 類別：
+1. 在 *SimpleProjectPackage .cs* 檔案中，將下列 `ProvideObject` 屬性新增至 `SimpleProjectPackage` 類別：
 
     ```
     [ProvideObject(typeof(GeneralPropertyPage))]
@@ -363,7 +363,7 @@ Visual Studio 範本不包含路徑資訊。 因此，必須將範本 *.zip* 檔
 
     這會向 COM 註冊屬性頁面類別 `GeneralPropertyPage` 。
 
-2. 在 *SimpleProjectNode.cs* 檔案中，將這兩個覆寫的方法新增至 `SimpleProjectNode` 類別：
+2. 在 *SimpleProjectNode .cs* 檔案中，將這兩個覆寫的方法新增至 `SimpleProjectNode` 類別：
 
     ```csharp
     protected override Guid[] GetConfigurationIndependentPropertyPages()
@@ -382,7 +382,7 @@ Visual Studio 範本不包含路徑資訊。 因此，必須將範本 *.zip* 檔
 
     這兩種方法都會傳回屬性頁 Guid 的陣列。 GeneralPropertyPage GUID 是陣列中唯一的元素，因此 [ **屬性頁** ] 對話方塊只會顯示一個頁面。
 
-3. 將名為 *GeneralPropertyPage.cs* 的類別檔案新增至 SimpleProject 專案。
+3. 將名為 *GeneralPropertyPage* 的類別檔案加入至 SimpleProject 專案。
 
 4. 使用下列程式碼取代此檔案的內容：
 
@@ -462,7 +462,7 @@ Visual Studio 範本不包含路徑資訊。 因此，必須將範本 *.zip* 檔
 
 6. 在實驗實例中，建立新的 SimpleProject 應用程式。
 
-7. Visual Studio 會呼叫您的 project factory，以使用 Visual Studio 範本建立專案。 新的 *Program.cs* 檔案會在程式碼編輯器中開啟。
+7. Visual Studio 會呼叫您的 project factory，以使用 Visual Studio 範本建立專案。 在程式碼編輯器中開啟新的 *Program 檔。*
 
 8. 在 **方案總管** 的專案節點上按一下滑鼠右鍵，然後按一下 [ **屬性**]。 [屬性頁面] 對話方塊隨即出現。
 

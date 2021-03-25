@@ -8,17 +8,17 @@ helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 997f4e32007af641b24ba933d2c891e447382786
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3d4b962475e2f0705d8a46624a8f47d802ff2f4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895826"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075155"
 ---
 # <a name="extend-projects"></a>擴充專案
 專案和解決方案是 Visual Studio 將程式碼和資源檔組織成編譯和部署單位的方式。 您可以在 [ (VISUAL STUDIO SDK) 的專案 ](../extensibility/extending-projects.md)中找到專案的詳細資訊。

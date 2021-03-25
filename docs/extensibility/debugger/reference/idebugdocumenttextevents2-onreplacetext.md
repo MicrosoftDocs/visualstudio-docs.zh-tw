@@ -1,6 +1,6 @@
 ---
 description: 通知偵錯工具封裝檔中的文字已被取代。
-title: IDebugDocumentTextEvents2：： onReplaceText |Microsoft 檔
+title: IDebugDocumentTextEvents2：： onReplaceText |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onReplaceText
 ms.assetid: cb39f025-66d8-4dc0-bef6-1bdc8e07db92
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 14b90f0ca28447e9e987767026165b0ff615f88c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9f57c0a48e523a57582130107a0d8b1012b1232e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167265"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054344"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
 通知偵錯工具封裝檔中的文字已被取代。

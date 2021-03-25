@@ -9,17 +9,17 @@ helpviewer_keywords:
 - properties [Visual Studio SDK]
 - Property Browser, exposing properties
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd9f2eb66bd2e1b8edcffd9e1053e4f644ba5e77
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9de86e956fe6a4d7841d519d7252b75ae216229
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890756"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075246"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>將屬性公開給屬性視窗
 
@@ -37,9 +37,9 @@ ms.locfileid: "99890756"
 
 1. 每個 Visual Studio 擴充功能都會從 VSIX 部署專案開始，其中包含延伸模組資產。 建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名為的 VSIX 專案 `MyObjectPropertiesExtension` 。 您可以藉由搜尋 "vsix"，在 [ **新增專案** ] 對話方塊中找到 VSIX 專案範本。
 
-2. 加入名為的自訂工具視窗專案範本，以新增工具視窗 `MyToolWindow` 。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案] 對話方塊** 中，移至 **Visual c # 專案** 擴充性  >   ，然後選取 [**自訂工具視窗]**。 在對話方塊底部的 [ **名稱** ] 欄位中，將檔案名變更為 *MyToolWindow.cs*。 如需有關如何建立自訂工具視窗的詳細資訊，請參閱 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。
+2. 加入名為的自訂工具視窗專案範本，以新增工具視窗 `MyToolWindow` 。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案] 對話方塊** 中，移至 **Visual c # 專案** 擴充性  >   ，然後選取 [**自訂工具視窗]**。 在對話方塊底部的 [ **名稱** ] 欄位中，將檔案名變更為 *mytoolwindow] .cs*。 如需有關如何建立自訂工具視窗的詳細資訊，請參閱 [使用工具視窗建立延伸](../extensibility/creating-an-extension-with-a-tool-window.md)模組。
 
-3. 開啟 *MyToolWindow.cs* ，並新增下列 using 語句：
+3. 開啟 *mytoolwindow]* ，並新增下列 using 語句：
 
    ```csharp
    using System.Collections;
@@ -112,7 +112,7 @@ ms.locfileid: "99890756"
 
 ### <a name="to-expose-tool-window-properties"></a>若要公開工具視窗屬性
 
-1. 開啟 *MyToolWindow.cs*，並將公用布林值屬性 IsChecked 加入至 `MyToolWindow` 類別。
+1. 開啟 *mytoolwindow]*，並將公用布林值屬性 IsChecked 加入至 `MyToolWindow` 類別。
 
     ```csharp
     [Category("My Properties")]
@@ -131,7 +131,7 @@ ms.locfileid: "99890756"
 
      這個屬性會從 WPF 核取方塊取得您稍後將建立的狀態。
 
-2. 開啟 *MyToolWindowControl.xaml.cs* ，並以下列程式碼取代 MyToolWindowControl 的函式。
+2. 開啟 *MyToolWindowControl* ，並以下列程式碼取代 MyToolWindowControl 的函式。
 
     ```vb
     private MyToolWindow pane;
@@ -145,7 +145,7 @@ ms.locfileid: "99890756"
 
      這會提供 `MyToolWindowControl` 窗格的存取權 `MyToolWindow` 。
 
-3. 在 *MyToolWindow.cs* 中，變更此函式，如下所示 `MyToolWindow` ：
+3. 在 *mytoolwindow]* 中，變更此函式，如下所示 `MyToolWindow` ：
 
     ```csharp
     base.Content = new MyToolWindowControl(this);
@@ -189,7 +189,7 @@ ms.locfileid: "99890756"
 
 ### <a name="to-change-selection-lists"></a>變更選取清單
 
-1. 開啟 *MyToolWindow.cs* ，並新增名為的公用類別 `Simple` 。
+1. 開啟 *mytoolwindow]* ，並新增名為的公用類別 `Simple` 。
 
     ```csharp
     public class Simple
@@ -242,7 +242,7 @@ ms.locfileid: "99890756"
     }
     ```
 
-3. 在 *MyToolWindowControl.cs* 中，以下列程式程式碼取代核取方塊處理常式：
+3. 在 *MyToolWindowControl* 中，以下列程式程式碼取代核取方塊處理常式：
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)

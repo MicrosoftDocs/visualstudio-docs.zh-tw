@@ -8,17 +8,17 @@ helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c3f4a5f39e7cb999d9b3a86aa791464fca25645
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30ff89cba5dbc1e54afaf51fb659e07c29e53009
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934099"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060220"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 項目
 讓 VSPackage 存取另一個 .vsct 檔案中定義的命令。 例如，如果您的 VSPackage 使用由 shell 定義的標準 **複製** 命令， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 您可以將命令新增至功能表或工具列，而不需要重新執行它。

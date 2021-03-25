@@ -1,22 +1,22 @@
 ---
 description: Debug engine (DE) 會將這個介面傳送至會話 debug manager (SDM) ，在符號載入期間設定狀態列訊息。
-title: IDebugBeforeSymbolSearchEvent2 |Microsoft 檔
+title: IDebugBeforeSymbolSearchEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugBeforeSymbolSearchEvent2 interface
 ms.assetid: 679fd7b1-765a-41a8-a046-63240c09a499
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdf292a309e514f5b437b129bbfc6ee125df8269
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e3e7c0428a96b8841a598e7b91986aa1555ea5c2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167733"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067474"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 Debug engine (DE) 會將這個介面傳送至會話 debug manager (SDM) ，在符號載入期間設定狀態列訊息。

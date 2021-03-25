@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896256"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089338"
 ---
 # <a name="create-a-settings-category"></a>建立設定分類
 
@@ -39,7 +39,7 @@ ms.locfileid: "99896256"
 
 2. 開啟 *VSPackage .resx* 檔案，並新增下列三個字串資源：
 
-    |名稱|值|
+    |Name|值|
     |----------|-----------|
     |106|我的類別|
     |107|我的設定|
@@ -50,7 +50,7 @@ ms.locfileid: "99896256"
     > [!NOTE]
     > 在這三個中，只有類別目錄名稱不會出現在 [匯 **入和匯出設定** ] wizard 中。
 
-3. 在 *MyToolsOptionsPackage.cs* 中，將 `float` 名為 `OptionFloat` 的屬性加入至 `OptionPageGrid` 類別，如下列範例所示。
+3. 在 *MyToolsOptionsPackage* 中，將名為 `float` 的屬性加入 `OptionFloat` 至 `OptionPageGrid` 類別，如下列範例所示。
 
     ```csharp
     public class OptionPageGrid : DialogPage

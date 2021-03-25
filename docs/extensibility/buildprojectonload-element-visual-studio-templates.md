@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e2a1f542e89851cb430f8d80934933351e9349e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9d50d33824be70a7df09cee878d516ddaaf9f8d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882267"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068163"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a> (Visual Studio 範本的 BuildProjectOnload 元素) 
 建立新的專案，並將其新增至方案。 整個方案都不會建立。

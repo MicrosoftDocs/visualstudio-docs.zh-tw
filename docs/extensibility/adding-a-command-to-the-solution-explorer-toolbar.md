@@ -9,17 +9,17 @@ helpviewer_keywords:
 - buttons [Visual Studio], adding to Solution Explorer
 - Solution Explorer, adding buttons
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 305966a4cd4ec67994ac3dbd6c7ba0e25a14172f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf6ffcded95d142578ed118ab26b57914eb36c37
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951689"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060090"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>將命令新增至方案總管的工具列
 本逐步解說將示範如何將按鈕新增至 **方案總管** 工具列。
@@ -75,7 +75,7 @@ ms.locfileid: "99951689"
 
 5. 按一下 [新增] 按鈕。
 
-     應該會顯示一個對話方塊，其中包含在 **SolutionToolbar ( # B1 內** 的訊息 ToolbarButtonPackage。
+     應該會顯示一個對話方塊，其中包含在 **SolutionToolbar 中 ToolbarButtonPackage 的訊息。 ToolbarButton. MenuItemCallback ()** 。
 
 ## <a name="control-the-visibility-of-a-button"></a>控制按鈕的可見度
  本逐步解說的這個部分會示範如何控制工具列上按鈕的可見度。 藉由將內容設定為 SolutionToolbar. .vsct 檔案區段中的一或多個專案 `<VisibilityConstraints>` ，您就可以限制只有在專案或專案開啟時才會顯示按鈕。 

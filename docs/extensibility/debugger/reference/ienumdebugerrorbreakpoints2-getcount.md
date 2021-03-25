@@ -1,6 +1,6 @@
 ---
 description: 傳回錯誤中斷點列舉中的元素數目。
-title: IEnumDebugErrorBreakpoints2：： GetCount |Microsoft 檔
+title: IEnumDebugErrorBreakpoints2：： GetCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2::GetCount
 ms.assetid: 56f7bb70-d55b-471c-8c65-09a9e7f4938e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 32de3e1d6e154fd396dec0bf284853b0094258d5
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 9a0ce61de2b4a817b7efd83ae7e3a6d5a95c5214
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226744"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075519"
 ---
 # <a name="ienumdebugerrorbreakpoints2getcount"></a>IEnumDebugErrorBreakpoints2::GetCount
 傳回列舉中的元素數目。

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], local values
 - expression evaluation, getting local values
 ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64b3d4876622aabc831c0142a041964aa8dfe807
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7be71aaa6e1ea8afee37b9abb9ea76d0347e5c12
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921251"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059960"
 ---
 # <a name="get-local-values"></a>取得區域值
 > [!IMPORTANT]

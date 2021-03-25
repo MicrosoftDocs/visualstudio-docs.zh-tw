@@ -1,6 +1,6 @@
 ---
 description: 這個介面會列舉在目前的 debug 會話中執行的執行緒。
-title: IEnumDebugThreads2 |Microsoft 檔
+title: IEnumDebugThreads2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3706b9ff004dbe283952dbc3740f8ec4bcb056b2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 97cb6f4d0425fb75ebaa9375e53e3ba6d5075e00
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225730"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082643"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 這個介面會列舉在目前的 debug 會話中執行的執行緒。

@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d647a1dbd3bc6bf99f9803870c7b58ead358b41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b19d60294431a08fa26f11bf58606893f392cd1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892589"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060233"
 ---
 # <a name="application-patterns-for-visual-studio"></a>適用於 Visual Studio 的應用程式模式
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> 視窗互動
@@ -117,7 +117,7 @@ Visual Studio 的工具視窗具有不同的狀態，其中有些是使用者啟
 
 | 工具視窗 | 函式 |
 | --- | --- |
-| 説明 | 此視窗可讓使用者從「如何」存取各種取得協助的方法。 影片至 MSDN 論壇。 |
+| Help | 此視窗可讓使用者從「如何」存取各種取得協助的方法。 影片至 MSDN 論壇。 |
 | 動態說明 | 此工具視窗會顯示適用于目前選取範圍之說明主題的連結。 |
 | 物件瀏覽器 | 兩欄的框架，其中包含左窗格中的階層式物件元件清單，以及右邊資料行中物件的屬性和方法。 |
 

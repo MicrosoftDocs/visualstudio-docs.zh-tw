@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menus, adding menu controllers to toolbars
 - menu controllers, adding to toolbars
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82da331d93a2208b76bb953f3a6a489913c907ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 304f4ea11abc332c01603f96b6b67c0bd22e38c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951520"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060064"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>將功能表控制器新增至工具列
 本逐步解說是以將 [工具列加入至工具視窗](../extensibility/adding-a-toolbar-to-a-tool-window.md) 的逐步解說為基礎，並示範如何將功能表控制器加入至工具視窗工具列。 此處所示的步驟也可以套用至在 [ [加入工具列](../extensibility/adding-a-toolbar.md) ] 逐步解說中建立的工具列。
@@ -112,7 +112,7 @@ ms.locfileid: "99951520"
 
 ## <a name="implement-the-menu-controller-commands"></a>執行功能表控制器命令
 
-1. 在 *TWTestCommandPackageGuids.cs* 中，為您的三個功能表項目加入現有命令識別碼之後的命令識別碼。
+1. 在 *TWTestCommandPackageGuids* 中，為您的三個功能表項目，在現有的命令識別碼之後加入命令識別碼。
 
     ```csharp
     public const int cmdidMCItem1 = 0x130;
@@ -120,7 +120,7 @@ ms.locfileid: "99951520"
     public const int cmdidMCItem3 = 0x132;
     ```
 
-2. 在 *TWTestCommand.cs* 中，將下列程式碼加入至類別的頂端 `TWTestCommand` 。
+2. 在 *TWTestCommand* 中，將下列程式碼加入至類別的頂端 `TWTestCommand` 。
 
     ```csharp
     private int currentMCCommand; // The currently selected menu controller command

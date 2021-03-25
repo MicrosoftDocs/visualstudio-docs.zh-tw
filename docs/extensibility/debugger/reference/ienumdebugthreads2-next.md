@@ -1,6 +1,6 @@
 ---
 description: 從執行緒列舉傳回下一組元素。
-title: IEnumDebugThreads2：： Next |Microsoft 檔
+title: IEnumDebugThreads2：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2::Next
 ms.assetid: bcffd954-3c67-4867-96f3-041ddb3e34d4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fed2bcaf072e0b0246bafe1e2dfd9fb0bb94daab
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 373cccd0b03efe1e4d65d1910b5b06f60ecb4ea1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225795"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082669"
 ---
 # <a name="ienumdebugthreads2next"></a>IEnumDebugThreads2::Next
 傳回列舉中的下一組元素。
