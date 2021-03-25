@@ -1,6 +1,6 @@
 ---
 description: 在程式碼內容列舉中略過指定數目的專案。
-title: IEnumDebugCodeCoNtexts2：： Skip |Microsoft 檔
+title: IEnumDebugCodeCoNtexts2：： Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2::Skip
 ms.assetid: 3451a3eb-bf5b-4ec5-acc9-aa5a24363801
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e3d6dba22758860df17ea6ce16da8ae888b0829c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ea4bd2ab4239c212a17f5034282455f1e2bbe657
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224924"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086608"
 ---
 # <a name="ienumdebugcodecontexts2skip"></a>IEnumDebugCodeContexts2::Skip
 略過指定的元素數目。

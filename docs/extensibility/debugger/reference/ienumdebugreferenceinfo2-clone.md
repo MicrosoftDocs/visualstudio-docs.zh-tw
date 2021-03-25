@@ -1,6 +1,6 @@
 ---
 description: 傳回目前 DEBUG_REFERENCE_INFO 列舉的複本，做為個別的物件。
-title: IEnumDebugReferenceInfo2：： Clone |Microsoft 檔
+title: IEnumDebugReferenceInfo2：： Clone |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugReferenceInfo2::Clone
 ms.assetid: 49c5a301-a33a-428f-b83b-e734c71af4ef
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d39bcf4721a02975e36d16599cc041980ebf2aad
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ab36729040d0ed0531e2cec55ba281200272487a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224196"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095234"
 ---
 # <a name="ienumdebugreferenceinfo2clone"></a>IEnumDebugReferenceInfo2::Clone
 傳回目前列舉的複本作為個別的物件。

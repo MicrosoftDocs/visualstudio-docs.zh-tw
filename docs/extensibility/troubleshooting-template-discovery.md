@@ -1,20 +1,20 @@
 ---
-title: 針對 Visual Studio 中的範本探索進行疑難排解 |Microsoft 檔
+title: 針對 Visual Studio 中的範本探索進行疑難排解 |Microsoft Docs
 description: 瞭解如何啟用診斷記錄，以針對在 Visual Studio SDK 中部署自訂專案和範本進行疑難排解。
 ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ea99c1d74c06ab42ff86f07de4cf5c76e95de43
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 82b7b3f5eced4c8e24830fba34e47d224186949d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151320"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072945"
 ---
 # <a name="troubleshooting-template-installation"></a>針對範本安裝進行疑難排解
 
@@ -39,21 +39,21 @@ ms.locfileid: "102151320"
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-3. 開啟安裝程式的 [開發人員命令提示](../ide/reference/command-prompt-powershell.md) 字元，然後執行 `devenv /updateConfiguration` 。
+3. 開啟安裝的 [開發人員命令提示字元](../ide/reference/command-prompt-powershell.md) ，然後執行 `devenv /updateConfiguration` 。
 
 ::: moniker range="vs-2017"
 
 4. 開啟 Visual Studio，然後啟動 [新增專案] 和 [新增專案] 對話方塊，以初始化兩個範本樹狀結構。
 
-   範本記錄檔現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_ [instanceid] 中 \VsTemplateDiagnosticsList.csv** (instanceid 對應到您的 Visual Studio) 實例的安裝識別碼。 每個範本樹狀結構初始化都會將專案附加至此記錄檔。
+   範本記錄檔現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_ [instanceid] 中 \VsTemplateDiagnosticsList.csv** (instanceid 對應至 Visual Studio) 實例的安裝識別碼。 每個範本樹狀結構初始化都會將專案附加至此記錄檔。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. 開啟 Visual Studio，然後啟動 [ **建立新專案** ] 和 [ **新專案** ] 對話方塊，以初始化兩個範本樹狀結構。
+4. 開啟 Visual Studio 並啟動 [ **建立新專案** ] 和 [ **新專案** ] 對話方塊，以初始化兩個範本樹狀結構。
 
-   範本記錄檔現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_ [instanceid] 中 \VsTemplateDiagnosticsList.csv** (instanceid 對應到您的 Visual Studio) 實例的安裝識別碼。 每個範本樹狀結構初始化都會將專案附加至此記錄檔。
+   範本記錄檔現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_ [instanceid] 中 \VsTemplateDiagnosticsList.csv** (instanceid 對應至 Visual Studio) 實例的安裝識別碼。 每個範本樹狀結構初始化都會將專案附加至此記錄檔。
 
 ::: moniker-end
 

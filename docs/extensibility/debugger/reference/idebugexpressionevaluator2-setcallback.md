@@ -1,26 +1,26 @@
 ---
 description: 讓運算式評估工具 (EE) 指定偵錯工具引擎 (DE) 將用來讀取度量設定的回呼介面。
-title: IDebugExpressionEvaluator2：： SetCallback |Microsoft 檔
+title: IDebugExpressionEvaluator2：： SetCallback |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc858ab5d26ccffe33d26296e033ac577ddba440
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6d29707fb75a83b4e9508052531c18e8fa4796e2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152386"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095377"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 讓運算式評估工具 (EE) 指定偵錯工具引擎 (DE) 將用來讀取度量設定的回呼介面。

@@ -1,6 +1,6 @@
 ---
 description: 從連續的位元組序列設定物件的值。
-title: IDebugObject：： SetValue |Microsoft 檔
+title: IDebugObject：： SetValue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetValue method
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 972281335b964679f38693182e42c4e64074dffa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 63d75eae9c7966bfc5e7fceea0512db0fa174066
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167148"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054097"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 從連續的位元組序列設定物件的值。

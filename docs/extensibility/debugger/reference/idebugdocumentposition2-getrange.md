@@ -1,6 +1,6 @@
 ---
 description: 取得此檔位置的範圍。
-title: IDebugDocumentPosition2：： GetRange |Microsoft 檔
+title: IDebugDocumentPosition2：： GetRange |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::GetRange
 ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5e886891c0d971bdad0916d5b243993e46a7ba57
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 14aefb2e1ccc481a71cd32813f2ebf882834f12c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162715"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066447"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
 取得此檔位置的範圍。

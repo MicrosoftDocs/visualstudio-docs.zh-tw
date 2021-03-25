@@ -1,26 +1,26 @@
 ---
 description: 抓取未受管理的程式碼所使用的符號讀取器。
-title: IDebugComPlusSymbolProvider：： GetSymUnmanagedReader |Microsoft 檔
+title: IDebugComPlusSymbolProvider：： GetSymUnmanagedReader |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 - GetSymUnmanagedReader
 ms.assetid: 8f1c1627-217f-4405-8141-7a2eb80310a5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a650d55b6c3b36a5b3b08138f44618e2c3645627
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3640d93a0a2df4177e77b88987e6dbf13730412b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163794"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095637"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 抓取未受管理的程式碼所使用的符號讀取器。

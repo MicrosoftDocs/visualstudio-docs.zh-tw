@@ -1,6 +1,6 @@
 ---
 description: 描述要顯示之整合式開發環境 (IDE) 的一個反組解碼指令。
-title: DisassemblyData |Microsoft 檔
+title: DisassemblyData |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b6053647d43563e7369793982c72683002ae0df5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 71d52c4f48f23368d83d81f88fba4bf0ba36f197
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170454"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096118"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 描述要顯示之整合式開發環境 (IDE) 的一個反組解碼指令。

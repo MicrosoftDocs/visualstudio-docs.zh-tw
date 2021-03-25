@@ -1,6 +1,6 @@
 ---
 description: 這個介面可讓您存取可建立視覺化程式服務的方法，此服務可用來處理 IDE 的型別視覺化工作。
-title: IEEVisualizerServiceProvider |Microsoft 檔
+title: IEEVisualizerServiceProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerServiceProvider interface
 ms.assetid: 859d1a51-1c65-4c8b-ae74-3b74b181ebcd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4fc53ae13588a0e285e4a62691da4d88a94d5f5
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 973135865b0b1c460f4c9000036f2af04a9ae3ce
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227172"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086686"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
@@ -33,7 +33,7 @@ IEEVisualizerServiceProvider : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
- Visual Studio 會執行此介面來建立視覺化程式服務物件，該物件接著會用來將 `CLSID` 類型的視覺效果)  (的類別識別碼提供給 Visual STUDIO IDE。
+ Visual Studio 會執行此介面來建立視覺化程式服務物件，該物件接著會用來將型別 `CLSID` 視覺化) 的類別 (識別碼提供給 VISUAL STUDIO IDE。
 
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  運算式評估工具 (EE) 呼叫 [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) 來取得這個介面。

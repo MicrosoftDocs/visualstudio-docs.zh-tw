@@ -1,6 +1,6 @@
 ---
 description: 這個介面會實提供功能給 IDebugProperty3 和 IPropertyProxyEESide 介面的主要方法。
-title: IEEVisualizerService |Microsoft 檔
+title: IEEVisualizerService |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService interface
 ms.assetid: 3bdb124b-c582-47ba-b465-13c6a1cdb702
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5054041ab09898943d300393d36205581231b06d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: cc712d0c86613d0ee6b30d754b759c17e3ab9bdc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227212"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086764"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
@@ -33,7 +33,7 @@ IEEVisualizerService : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>實施者的注意事項
- Visual Studio 會執行這個介面，以允許 (EE) 的運算式評估工具支援型別視覺化。
+ Visual Studio 會執行這個介面，以允許運算式評估工具 (EE) 支援型別視覺化程式。
 
 ## <a name="notes-for-callers"></a>呼叫者注意事項
  EE 會呼叫 [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) 來取得此介面，作為其對視覺化類型的支援。

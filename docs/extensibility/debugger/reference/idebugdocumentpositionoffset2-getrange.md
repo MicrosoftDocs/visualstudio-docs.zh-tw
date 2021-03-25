@@ -1,25 +1,25 @@
 ---
 description: 抓取目前檔位置的範圍。
-title: IDebugDocumentPositionOffset2：： GetRange |Microsoft 檔
+title: IDebugDocumentPositionOffset2：： GetRange |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2::GetRange
 ms.assetid: 27da7130-0932-4f97-abde-05e6fb018606
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c56ac73d85f9cfbfdc17d40da9f0fec415e057d7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 66184ba67dd0623a886ca37e28d311aebc6633bd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154232"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066343"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 抓取目前檔位置的範圍。

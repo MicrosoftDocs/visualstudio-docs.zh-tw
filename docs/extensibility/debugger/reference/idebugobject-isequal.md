@@ -1,6 +1,6 @@
 ---
 description: 比較物件與此物件。
-title: IDebugObject：： IsEqual |Microsoft 檔
+title: IDebugObject：： IsEqual |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::IsEqual method
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0907b72f2a0647fc6ff6181ecdc5c7fd8c2134cb
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: cff388778ea584f589f92b5dc9dab11c060c953c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151658"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054084"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 比較物件與此物件。

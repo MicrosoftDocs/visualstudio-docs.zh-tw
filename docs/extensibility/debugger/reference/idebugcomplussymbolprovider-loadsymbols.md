@@ -1,26 +1,26 @@
 ---
 description: 在記憶體中載入指定的 debug 符號。
-title: IDebugComPlusSymbolProvider：： LoadSymbols |Microsoft 檔
+title: IDebugComPlusSymbolProvider：： LoadSymbols |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
 ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d09cbe3afd5bc32f3143e5fb15387b7c5c7cb702
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 30d127e57539e8dc14fc145f47fdad1c8a985d50
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163625"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095442"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 在記憶體中載入指定的 debug 符號。

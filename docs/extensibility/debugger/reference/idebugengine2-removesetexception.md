@@ -1,6 +1,6 @@
 ---
 description: 移除指定的例外狀況，使它不再由 debug 引擎處理。
-title: IDebugEngine2：： RemoveSetException |Microsoft 檔
+title: IDebugEngine2：： RemoveSetException |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::RemoveSetException
 ms.assetid: bdd25097-0e9d-4218-b417-0497ea48d2e8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 588037ef9dcf495f8fbbb210acc3154c31558a32
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b763291fccd39d46b32347d89df1a11e1b3d09f2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153945"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095403"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 移除指定的例外狀況，使它不再由 debug 引擎處理。

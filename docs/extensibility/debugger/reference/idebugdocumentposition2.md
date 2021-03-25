@@ -1,6 +1,6 @@
 ---
 description: 此介面代表原始程式檔中的抽象位置。
-title: IDebugDocumentPosition2 |Microsoft 檔
+title: IDebugDocumentPosition2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2 interface
 ms.assetid: 0e838ced-12bb-4efc-b811-2b7c034b77b0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6ebbe0a1101c146bf5d7e8c5fe7a096777f372c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8b7c4c8e469dff76e2af631c4943305b0e3ee8e7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154245"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066395"
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
 此介面代表原始程式檔中的抽象位置。

@@ -1,6 +1,6 @@
 ---
 description: 以連續的位元組序列取得物件的值。
-title: IDebugObject：： GetValue |Microsoft 檔
+title: IDebugObject：： GetValue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetValue method
 ms.assetid: eec6051e-8ecb-49fa-bdd4-dd786f211692
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63e07ccfbcf2117363ed3e2096d5f0bb4bcac806
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d957743a725ad462a9ed95fca6ebdffbecb6de16
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150441"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054123"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 以連續的位元組序列取得物件的值。

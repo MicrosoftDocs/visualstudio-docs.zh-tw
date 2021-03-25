@@ -1,26 +1,26 @@
 ---
 description: 將目前的 debug 符號取代為指定之資料流程中的符號。
-title: IDebugComPlusSymbolProvider：： ReplaceSymbols |Microsoft 檔
+title: IDebugComPlusSymbolProvider：： ReplaceSymbols |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - ReplaceSymbols
 - IDebugComPlusSymbolProvider::ReplaceSymbols
 ms.assetid: 82fbc8db-c4b1-432f-bec9-1a9dc09570be
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c6a7ec5ce2345a78920f210d2d84f5284cfd4d3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 164f5a780ae2c4306d4e8f424ac2bfa82408a6f7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163573"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095416"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 將目前的 debug 符號取代為指定之資料流程中的符號。
