@@ -1,6 +1,6 @@
 ---
 description: 此介面可讓會話 debug manager (SDM) 抓取表示 (DE) 之 debug 引擎的介面。
-title: IDebugQueryEngine2 |Microsoft 檔
+title: IDebugQueryEngine2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugQueryEngine2 interface
 ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8e4cd9358cf63188ec88f4ec4a613aebf9d4f79
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 899c5dceab16d4783cb28bff31c67e67bf5df774
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151398"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083644"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 此介面可讓會話 debug manager (SDM) 抓取表示 (DE) 之 debug 引擎的介面。

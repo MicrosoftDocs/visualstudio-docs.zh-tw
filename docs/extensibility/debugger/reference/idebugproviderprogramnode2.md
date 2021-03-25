@@ -1,6 +1,6 @@
 ---
 description: 此介面會跨進程界限封送處理常式相關的介面。
-title: IDebugProviderProgramNode2 |Microsoft 檔
+title: IDebugProviderProgramNode2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a615c076fd34d7bc230efb0f36683b7167b66566
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3d09046d70d6bc766d17963ea4cdd6469c0981fb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167850"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083670"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 此介面會跨進程界限封送處理常式相關的介面。
@@ -43,7 +43,7 @@ IDebugProviderProgramNode2 : IUnknown
 |[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|取得跨進程界限的指定介面。|
 
 ## <a name="remarks"></a>備註
- 此介面會在從正在進行偵錯工具的不同進程空間中執行時執行：例如，在 Visual Studio 進程空間中執行取消作業，而非正在進行偵錯工具的進程空間時。
+ 此介面會在從正在進行偵錯工具的不同進程空間中執行時執行：例如，在 Visual Studio 的進程空間中執行取消作業，而非正在進行偵錯工具的進程空間時。
 
 ## <a name="requirements"></a>規格需求
  標頭： msdbg。h

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], startup events
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5263c696f9f76c71463538d56414702e616a670
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 227d863df1e3318d2df6be6a24aaf05b5033e92d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960841"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070392"
 ---
 # <a name="send-startup-events-after-a-launch"></a>在啟動後傳送啟動事件
 一旦將 debug engine (DE) 附加至程式之後，它就會將一連串的啟動事件傳送回 debug 會話。

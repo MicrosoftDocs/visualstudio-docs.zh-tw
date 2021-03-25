@@ -1,6 +1,6 @@
 ---
 description: 從指定的位址開始，寫入指定的記憶體位元組數目。
-title: IDebugMemoryBytes2：： WriteAt |Microsoft 檔
+title: IDebugMemoryBytes2：： WriteAt |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::WriteAt method
 - WriteAt method
 ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc1b5547290712f07cd51a935627182ddd12d31c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 64e8aed5586dc6e2abf33b540654dcd24437e746
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165146"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076806"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 從指定的位址開始，寫入指定的記憶體位元組數目。

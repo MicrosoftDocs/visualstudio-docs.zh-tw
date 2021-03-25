@@ -1,6 +1,6 @@
 ---
 description: 抓取這個 IDebugMemoryBytes2 物件所表示之記憶體的大小（以位元組為單位）。
-title: IDebugMemoryBytes2：： GetSize |Microsoft 檔
+title: IDebugMemoryBytes2：： GetSize |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::GetSize method
 - GetSize method
 ms.assetid: dae64c5f-5b54-40c3-b32f-ec3b16c093f7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 55dfc147eca60f43da32e6c0584f0d540b3f90fc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8c76b9061bd5b54e222f7092720e29805aba028b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165198"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076780"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
 抓取這個 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 物件所表示之記憶體的大小（以位元組為單位）。

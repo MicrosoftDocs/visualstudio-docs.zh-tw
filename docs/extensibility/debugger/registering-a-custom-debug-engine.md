@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, registering
 ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4581411a2601bf598762a7157f9df0e006995230
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04e4e8de875cb66ed285e610950baa1c5bf4ef3f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961114"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070657"
 ---
 # <a name="register-a-custom-debug-engine"></a>註冊自訂的調試引擎
 Debug engine 必須將本身註冊為 class factory，並遵循 COM 慣例，並透過 Visual Studio 登錄子機碼向 Visual Studio 註冊。

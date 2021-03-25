@@ -1,6 +1,6 @@
 ---
 description: 此函式會設定控制原始檔控制外掛程式行為的選項。
-title: SccSetOption 函式 |Microsoft 檔
+title: SccSetOption 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccSetOption function
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25647eb8d2e5796665f072af6df43b2f585c7b0
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 031de256b231bbd95e7535af80448db5140cba7e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221375"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090144"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函式
 此函式會設定控制原始檔控制外掛程式行為的選項。
@@ -60,7 +60,7 @@ SCCRTN SccSetOption(
 
  選項及其值的摘要：
 
-|`nOption`|`dwValue`|描述|
+|`nOption`|`dwValue`|Description|
 |---------------|---------------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|啟用/停用背景事件佇列。|
 |`SCC_OPT_USERDATA`|任意值|指定要傳遞至 [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 回呼函數的使用者值。|

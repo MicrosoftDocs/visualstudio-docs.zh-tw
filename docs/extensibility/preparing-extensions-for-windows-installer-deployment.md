@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - vsix msi
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba25698cd1efc6aebf030638e191f139a14f99a6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6436d05d3b15be1c1fe8d7c7bb9c8592dee091dc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967289"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090274"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>準備 Windows Installer 部署的擴充功能
 您無法使用 Windows Installer 套件 (MSI) 來部署 VSIX 套件。 不過，您可以解壓縮適用于 MSI 部署的 VSIX 套件內容。 本檔將說明如何準備專案，其預設輸出為 VSIX 封裝，以包含在安裝專案中。

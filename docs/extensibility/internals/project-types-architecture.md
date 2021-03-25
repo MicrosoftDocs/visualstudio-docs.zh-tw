@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], architecture
 ms.assetid: 9c1d940f-8a54-41f7-a8aa-c870e324371c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6c9463604cda8c26a53cb02802252dfe40d309b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b03ca1db09df7176eb52d5c8141bf87b1637d79
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970123"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064266"
 ---
 # <a name="project-types-architecture"></a>專案類型架構
 本章節包含中專案類型架構的詳細資訊 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。

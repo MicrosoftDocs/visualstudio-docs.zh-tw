@@ -9,17 +9,17 @@ helpviewer_keywords:
 - deployment, VSIX
 - satellite DLLs, in VSIX packages
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c1b5787eaecd6b3787d77c7ecab70acae689df8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c88c80ffbc1e80815b8370a940a75c0eb197ff78
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938092"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090131"
 ---
 # <a name="shipping-visual-studio-extensions"></a>推出 Visual Studio 延伸模組
 在您完成擴充功能的開發之後，您可以將它安裝在其他電腦上、與您的朋友和同事共用，或將它發佈到 Visual Studio Marketplace 上。 在本節中，我們將說明發行和維護您的延伸模組所需執行的所有作業：使用 .vsix 檔案、發行、當地語系化和更新。

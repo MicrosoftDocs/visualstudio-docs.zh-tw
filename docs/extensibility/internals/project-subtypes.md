@@ -8,17 +8,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00d44014ced9253328890c34d877beb68120c0c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1695bc79e38c7a9ebbda7736e57116123343f30
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896790"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064328"
 ---
 # <a name="project-subtypes"></a>專案子類型
 專案子類型可讓您自訂或類別的專案系統行為 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 自訂包括將其他資料儲存在專案檔中、在 [ **加入新專案** ] 對話方塊中新增或篩選項目、控制元件的調試和部署方式，以及擴充 [專案 **屬性頁** ] 對話方塊。 Vspackage 使用 COM 匯總來執行專案子類型。

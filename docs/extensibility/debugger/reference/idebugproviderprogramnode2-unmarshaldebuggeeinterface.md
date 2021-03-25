@@ -1,6 +1,6 @@
 ---
 description: 取得跨進程界限的指定介面。
-title: IDebugProviderProgramNode2：： UnmarshalDebuggeeInterface |Microsoft 檔
+title: IDebugProviderProgramNode2：： UnmarshalDebuggeeInterface |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 ms.assetid: 2e4653c5-10f1-493c-9973-f31d266c5d48
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0f51484ae1e9acbb9b94fe546f8157145673e22f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 42b51d93f9c0cec3a2ee74b2dfc0f4621c608c07
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167863"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083683"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 取得跨進程界限的指定介面。

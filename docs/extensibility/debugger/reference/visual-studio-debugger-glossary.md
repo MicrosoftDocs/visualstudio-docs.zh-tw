@@ -8,17 +8,17 @@ helpviewer_keywords:
 - glossary [Debugging SDK]
 - debugging [Debugging SDK], glossary
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0cc5a8b75fd089318434cadea185f8070616cd8a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1871a395e87177c89f8af2bfce640a63c2cba324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961192"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070683"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Visual Studio 偵錯工具字彙
 以下是在調試 SDK 中使用的術語 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。

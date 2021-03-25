@@ -1,6 +1,6 @@
 ---
 description: 此介面是由 debug 引擎傳送， (在載入程式時，但在執行任何程式碼之前，將) 還原為會話 debug manager (SDM) 。
-title: IDebugLoadCompleteEvent2 |Microsoft 檔
+title: IDebugLoadCompleteEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugLoadCompleteEvent2
 ms.assetid: 37eb7360-28e9-4273-862a-4c17f22af690
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 430b112a0fff4a0bbd009c4e0eba7c055842f823
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 53351ca836658d55cdef1b793e0162b8573f6c6e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165302"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076923"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 此介面是由 debug 引擎傳送， (在載入程式時，但在執行任何程式碼之前，將) 還原為會話 debug manager (SDM) 。

@@ -1,6 +1,6 @@
 ---
 description: 這個介面會列舉在 debug 埠上執行的處理常式。
-title: IEnumDebugProcesses2 |Microsoft 檔
+title: IEnumDebugProcesses2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2
 ms.assetid: 06a1368f-10f0-44eb-af61-e388c2327111
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75778ea0f02c0e7dcca1f7d2eb0ea8ace82c9b9c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 1272c57b58b4e2656775bf746d470a3514c886ea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224378"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064536"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 這個介面會列舉在 debug 埠上執行的處理常式。
@@ -47,7 +47,7 @@ IEnumDebugProcesses : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|取得列舉值中的進程數目。|
 
 ## <a name="remarks"></a>備註
- Visual Studio 會使用此介面來填入 [ **進程** ] 視窗。
+ Visual Studio 使用此介面來填入 **處理** 程式視窗。
 
 ## <a name="requirements"></a>規格需求
  標頭： msdbg。h

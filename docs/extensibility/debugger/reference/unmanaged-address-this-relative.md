@@ -1,6 +1,6 @@
 ---
-description: 此結構代表相對於 this 指標的位址， (我在 Visual Basic 中的) 。
-title: UNMANAGED_ADDRESS_THIS_RELATIVE |Microsoft 檔
+description: 此結構代表相對於 this 指標的位址， (Me in Visual Basic) 。
+title: UNMANAGED_ADDRESS_THIS_RELATIVE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_THIS_RELATIVE structure
 ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cc3e72a536af25c3c62d953a0e5cfb75b5200c69
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 1fbe63edeed68bc50aae0062f171f66c8a9203ed
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223363"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070670"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
-此結構代表相對於 `this` `Me` Visual Basic) 中之指標 (的位址。
+此結構代表相對於 `this` Visual Basic) 中之指標 (的位址 `Me` 。
 
 ## <a name="syntax"></a>語法
 

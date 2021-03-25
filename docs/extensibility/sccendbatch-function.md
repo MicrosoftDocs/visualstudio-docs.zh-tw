@@ -1,6 +1,6 @@
 ---
 description: 此函式會結束原始檔控制作業的批次。
-title: SccEndBatch 函式 |Microsoft 檔
+title: SccEndBatch 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccEndBatch function
 ms.assetid: 100e7833-fe0a-45c0-9fca-3e61fd1165b7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4ea8ec19fcfe55da0666383408c2addbd42f2e6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b3bad3604c57661d0e0e091299cef127d9215d56
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221570"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090209"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch 函式
 此函式會結束原始檔控制作業的批次。 這些批次可能不會被嵌套。

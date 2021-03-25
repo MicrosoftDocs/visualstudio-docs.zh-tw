@@ -1,6 +1,6 @@
 ---
 description: 此函式會復原先前的簽出作業，藉此將所選取檔案的內容還原到簽出之前的狀態。
-title: SccUncheckout 函式 |Microsoft 檔
+title: SccUncheckout 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccUncheckout function
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33e0c4904a92d71e000d8c911d551eb8d0aab621
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 0144755d18bbabee47f7aad25337e3c41588ebe5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221349"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090157"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 函式
 此函式會復原先前的簽出作業，藉此將所選取檔案的內容還原到簽出之前的狀態。 簽出之後對檔案所做的所有變更都會遺失。

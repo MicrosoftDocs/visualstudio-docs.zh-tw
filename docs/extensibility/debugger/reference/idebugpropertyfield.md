@@ -1,6 +1,6 @@
 ---
 description: 這個介面會提供可讓您取得和設定屬性的功能。
-title: IDebugPropertyField |Microsoft 檔
+title: IDebugPropertyField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyField interface
 ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 097d73485773052afa1e9852293211084a225099
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 28fbdfc16733b5cce0d1442c98c624f694adbe1d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167902"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083774"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 這個介面會提供可讓您取得和設定屬性的功能。

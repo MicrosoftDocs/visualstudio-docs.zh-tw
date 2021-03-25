@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669ef527e65e56612199b8303f7cc99e8b993b50
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3fe51878603996044535b0abfb70302ef9027c03
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846396"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064250"
 ---
 # <a name="source-control-plug-in-architecture"></a>原始檔控制外掛程式架構
 您可以藉由執行和附加原始檔控制外掛程式，將原始檔控制支援新增至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 。 IDE 會透過定義完善的原始檔控制 Plug-In API 連接到原始檔控制外掛程式。 IDE 藉由提供使用者介面 (UI) ，其中包含工具列和功能表命令，以公開原始檔控制系統的版本控制功能。 原始檔控制外掛程式會執行原始檔控制功能。

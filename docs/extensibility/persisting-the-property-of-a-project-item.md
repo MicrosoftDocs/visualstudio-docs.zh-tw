@@ -8,24 +8,24 @@ helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63b1a4a7cb6e2d12882794a07e51151effe36716
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58c46da9023cc64246f1ea9ee4bde1ec866c545d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967419"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090352"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>保存專案專案的屬性
 您可能會想要保存新增至專案專案的屬性，例如原始程式檔的作者。 您可以藉由將屬性儲存在專案檔中，來完成這項作業。
 
  將屬性保存在專案檔中的第一個步驟是取得專案的階層作為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 介面。 您可以使用自動化或使用來取得這個介面 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> 。 取得介面之後，您可以使用它來判斷目前選取的專案專案。 擁有專案專案識別碼之後，您就可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 加入屬性。
 
- 在下列程式中，您會 `Author` 使用專案檔中的值來保存 VsPkg.cs 屬性 `Tom` 。
+ 在下列程式中，您會使用專案檔中的值保存 *VsPkg .cs* 屬性 `Author` `Tom` 。
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>取得具有 DTE 物件的專案階層
 
@@ -119,7 +119,7 @@ ms.locfileid: "99967419"
 
 1. 啟動 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 然後開啟或建立解決方案。
 
-2. 選取 **方案總管** 中的專案專案 VsPkg.cs。
+2. 選取 **方案總管** 中的專案專案 VsPkg。
 
 3. 使用中斷點，或判斷是否已載入您的 VSPackage 並執行 SetItemAttribute。
 

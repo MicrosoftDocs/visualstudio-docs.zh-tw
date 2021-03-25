@@ -1,6 +1,6 @@
 ---
 description: 取得這個屬性可能可用的自訂檢視器數目。
-title: IDebugProperty3：： GetCustomViewerCount |Microsoft 檔
+title: IDebugProperty3：： GetCustomViewerCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerCount
 ms.assetid: dc5bb3e4-dc85-46e4-98fa-c6be8583b985
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58ad7ffc1b3250f5002f9f08208c464d14a2cc15
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a7b74c1ae5a29b785de42295af3260f17655986c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171392"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064679"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 取得這個屬性可能可用的自訂檢視器數目。

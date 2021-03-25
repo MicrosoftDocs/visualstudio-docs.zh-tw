@@ -1,6 +1,6 @@
 ---
 description: 取得與此屬性相關聯的自訂檢視器清單。
-title: IDebugProperty3：： GetCustomViewerList |Microsoft 檔
+title: IDebugProperty3：： GetCustomViewerList |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerList
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e772987a6e27dbe72a927dd83f8d33d043408fd0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c5101a95b45448196a564d3e4942696f995b8097
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166666"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064666"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 取得與此屬性相關聯的自訂檢視器清單。

@@ -1,6 +1,6 @@
 ---
 description: 這個介面可讓運算式評估工具 (EE) 呼叫實值類別實例上的屬性或方法 (例如，System.object) 以及設定其值，而不需在所要進行的程式上呼叫評估。
-title: IDebugManagedObject |Microsoft 檔
+title: IDebugManagedObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject interface
 ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cb90893ab39a95dd3bd8046d8ba61a32064ccf7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 88eadb33aaccc09a7c4667ad01d9acee538169f2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165214"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076858"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
