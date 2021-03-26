@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e6e4a07a023be398c4106984fe4dc33eddd2706
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9486f1cd3e931d134c6fe2842f8704926de70966
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929195"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060701"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 色彩編譯器
 Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，它會採用代表現有 Visual Studio 主題色彩的 .xml 檔案，並將其將至 .pkgdef 檔案，以便在 Visual Studio 中使用這些色彩。 因為比較簡單的方式是比較 .xml 檔案之間的差異，所以此工具對於管理原始檔控制中的自訂色彩相當有用。 它也可以連結到組建環境，讓組建的輸出成為有效的 .pkgdef 檔案。
@@ -54,7 +54,7 @@ Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，
 
 |**Attribute**|**定義**|
 |-|-|
-|名稱|必主題的名稱|
+|Name|必主題的名稱|
 |GUID|必主題的 GUID (必須符合 GUID 格式) |
 
  建立 Visual Studio 的自訂色彩時，必須為下列主題定義這些色彩。 如果特定主題沒有任何色彩存在，Visual Studio 會嘗試從淺色主題載入遺漏的色彩。
@@ -78,7 +78,7 @@ Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，
 
 |**Attribute**|**定義**|
 |-|-|
-|名稱|必類別目錄的名稱|
+|Name|必類別目錄的名稱|
 |GUID|必類別的 GUID (必須符合 GUID 格式) |
 
  **色彩**
@@ -94,7 +94,7 @@ Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，
 
 |**Attribute**|**定義**|
 |-|-|
-|名稱|必色彩的名稱|
+|Name|必色彩的名稱|
 
  **背景和/或前景**
 

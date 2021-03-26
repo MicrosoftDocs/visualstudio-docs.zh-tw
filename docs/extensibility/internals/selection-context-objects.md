@@ -8,17 +8,17 @@ helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8fa0303d752351efd87847941037a36f2f90f2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca6239264ca1fa42edb0b73e8a96f523cb450857
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911098"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080836"
 ---
 # <a name="selection-context-objects"></a>選取項目內容物件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 會使用全域選取內容物件來判斷應該在 IDE 中顯示的內容。 IDE 中的每個視窗都可以將自己的選取內容物件推送至全域選取內容。 當視窗具有焦點時，IDE 會使用視窗中的值來更新全域選取範圍內容。 如需詳細資訊，請參閱 [對使用者的意見](../../extensibility/internals/feedback-to-the-user.md)反應。

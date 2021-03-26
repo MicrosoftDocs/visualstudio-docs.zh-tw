@@ -1,6 +1,6 @@
 ---
 description: 判斷會話 debug manager (SDM) 是否可以卸離進程。
-title: IDebugProcess2：： CanDetach |Microsoft 檔
+title: IDebugProcess2：： CanDetach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::CanDetach
 ms.assetid: 2830f7c3-69fb-474a-97b8-5b869e38d546
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 92e876d5642cf8a4b7b60f5119839e64959f296e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d0ffc6e8ee787960baf7ccb709ab76ab5d66be4d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151671"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071684"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
 判斷會話 debug manager (SDM) 是否可以卸離進程。

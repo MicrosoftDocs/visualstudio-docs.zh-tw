@@ -1,6 +1,6 @@
 ---
 description: 要求在此進程中執行程式碼的下一個程式會終止，並傳送 IDebugBreakEvent2 事件物件。
-title: IDebugProcess2：： CauseBreak |Microsoft 檔
+title: IDebugProcess2：： CauseBreak |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::CauseBreak
 ms.assetid: efda8865-2319-4d53-90bf-6d9d74cd5195
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28a4da4c0f7e4f8770478a47a73f7567506d5ae2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c79fbc17f02a49a1bbab416473bb99e201c24526
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161394"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071671"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 要求在此進程中執行程式碼的下一個程式會終止，並傳送 [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 事件物件。

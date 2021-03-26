@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99a0de44d5e7ac240187c929a8134ab47c7de55c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6bf2694b26305cdaefefd61dc1119b7b019b12d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910990"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080784"
 ---
 # <a name="solution-configuration"></a>方案組態
 解決方案設定會儲存解決方案層級的屬性。 他們會導向 **Start** (F5) Key 和 **Build** 命令的行為。 根據預設，這些命令會建立並啟動偵錯工具設定。 這兩個命令都會在解決方案設定的內容中執行。 這表示使用者可以預期 F5 啟動，並建立任何使用中解決方案設定的設定。 環境是設計來針對解決方案進行優化，而不是在建立和執行時進行專案。

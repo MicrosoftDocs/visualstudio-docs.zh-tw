@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7b2c8d5f194287f0b654184ddd8716f248ca36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c53191c5f6e02c0b37d29f89a65119f1edab92ea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895748"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063314"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -544,8 +544,8 @@ branding.js 檔案包含 Visual Studio 說明檢視器商標元素所使用的 J
 ||CopyToClipboard||
 |CollapsibleArea|addToCollapsibleControlSet|將所有可折迭的控制項物件寫入清單中。|
 ||CA_Click|根據可折迭區域的狀態，定義要顯示的影像和文字|
-|標誌的對比支援|isBlackBackground ( # A1|呼叫以判斷背景是否為黑色。  只有在高對比模式下才會正確。|
-||isHighContrast ( # A1|使用彩色的範圍來偵測高對比模式|
+|標誌的對比支援|isBlackBackground () |呼叫以判斷背景是否為黑色。  只有在高對比模式下才會正確。|
+||isHighContrast () |使用彩色的範圍來偵測高對比模式|
 ||onHighContrast (黑色) |偵測到高對比時呼叫|
 |.LST 功能|||
 ||addToLanSpecTextIdSet (識別碼) ||

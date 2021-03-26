@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa018d340e016ba5c9f424f705599a150ecdc818
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad30e3f7b91e8a76715f66d9f6701597f3830bd6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884685"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057126"
 ---
 # <a name="configuration-options-overview"></a>設定選項總覽
 中的專案 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可支援多個可建立、調試、執行和/或部署的設定。 「設定」（configuration）是一種以命名屬性集（通常是編譯器參數和檔案位置）描述的組建類型。 根據預設，新解決方案包含兩個設定： *Debug* 和 *Release*。 您可以使用預設設定來套用這些設定，或修改這些設定以符合您的特定解決方案及/或專案需求。 某些封裝可以用兩種方式來建立：作為 ActiveX 編輯器或就地元件。 不過，專案不需要支援多個設定。 如果只有一個可用的設定，則該設定會對應到所有解決方案設定。

@@ -1,26 +1,26 @@
 ---
 description: 抓取這個泛型參數的旗標。
-title: IDebugGenericParamField：： GetFlags |Microsoft 檔
+title: IDebugGenericParamField：： GetFlags |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetFlags
 - IDebugGenericParamField::GetFlags
 ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f54c85e7838370b383d1b3f8df1e044df655407
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8dc6360819c1a8ec49a58896a2042d35884ed4a0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172662"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063301"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 抓取這個泛型參數的旗標。

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: deca5b39701fd073b3191cf7a24d83ccf1e08794
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef557c0c679fad0dff25a51a8529270e4bd7ced2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884724"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057139"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必須在安裝後執行的命令
 如果您透過 *.msi* 檔案部署擴充功能，您必須在安裝過程中執行 **devenv/setup** ，才能讓 Visual Studio 探索您的擴充功能。

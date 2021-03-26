@@ -1,6 +1,6 @@
 ---
 description: 此介面可讓呼叫者藉由在偵錯工具的調用間寫入磁片) ，來決定埠供應商是否可以保留埠 (，然後取得這些保留的埠清單。
-title: IDebugPortSupplier3 |Microsoft 檔
+title: IDebugPortSupplier3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3 interface
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8db7c2321d5a309f66b85a3f177e20cb3f9b1244
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fa17984c9b7f3e87d4a7118188ecc6ca79c5deef
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150389"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071931"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 此介面可讓呼叫者藉由在偵錯工具的調用間寫入磁片) ，來決定埠供應商是否可以保留埠 (，然後取得這些保留的埠清單。

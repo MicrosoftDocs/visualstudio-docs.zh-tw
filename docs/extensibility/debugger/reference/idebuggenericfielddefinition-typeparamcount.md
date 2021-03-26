@@ -1,26 +1,26 @@
 ---
 description: 抓取與泛型欄位相關聯的型別參數數目。
-title: IDebugGenericFieldDefinition：： TypeParamCount |Microsoft 檔
+title: IDebugGenericFieldDefinition：： TypeParamCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - TypeParamCount
 - IDebugGenericFieldDefinition::TypeParamCount
 ms.assetid: d41dd5ea-aa25-4bf3-bcfd-e0bf451ead49
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ca50847ca5eb6538cfb4852a4543e02ab4c1fc0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9a50f258fe3febdf7c1dd680ea6b731e756abf7e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165458"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063392"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 抓取與泛型欄位相關聯的型別參數數目。

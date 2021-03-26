@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 886ff7112a5e455bfc07e51b30f4ac60eb10136a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae037e3bda4ca09ee11969325b67ff0f8323722d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899946"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060688"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 結構 (原始檔控制 VSPackage)
 
@@ -42,7 +42,7 @@ VSPackage 會宣告其功能表項目，並透過 .vsct 檔案建立預設專案
 
 - 編輯器
 
-- 方案
+- 解決方案
 
 - Windows
 

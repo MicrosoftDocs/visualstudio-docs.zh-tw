@@ -1,25 +1,25 @@
 ---
 description: 設定埠供應商的核心伺服器。
-title: IDebugPortSupplierEx2：： SetServer |Microsoft 檔
+title: IDebugPortSupplierEx2：： SetServer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierEx2::SetServer
 ms.assetid: 0e8ef194-3a4f-4abf-8382-4607ab3005d1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60136aaf238ade896145d96a62e4fa78ff068460
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 81de22828536dd118cb69ed4c3c73d51f55a8535
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145400"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071905"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
 設定埠供應商的核心伺服器。

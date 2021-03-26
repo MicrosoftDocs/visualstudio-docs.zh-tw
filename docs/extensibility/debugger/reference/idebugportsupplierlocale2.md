@@ -1,22 +1,22 @@
 ---
 description: 提供埠供應商的地區設定支援。
-title: IDebugPortSupplierLocale2 |Microsoft 檔
+title: IDebugPortSupplierLocale2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierLocale2 interface
 ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c29bd3fb882be6529daa0d26ab4cde23c11d0bc0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: da7c08363d07e577d11259b8633aa15ac3cd0eb0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167057"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071762"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 提供埠供應商的地區設定支援。

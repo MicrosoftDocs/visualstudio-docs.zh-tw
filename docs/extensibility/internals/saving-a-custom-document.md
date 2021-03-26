@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], saving custom documents
 - editors [Visual Studio SDK], saving custom documents
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3be218565feb26d66f623a281fc9277b7fa8fb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a536a5f0f2b1cac09c65079974c661e09e9139ab
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958514"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080914"
 ---
 # <a name="saving-a-custom-document"></a>儲存自訂文件
 環境會處理 [ **儲存**]、[ **另存** 新檔] 和 [ **儲存所有** ] 命令。 當使用者按一下 [ **儲存**]、[ **另存** 新檔]，或 [檔案] 功能表上的 [ **全部儲存** ] **或 [** 全部儲存] 或 [關閉方案] 時，就會出現下列程式。

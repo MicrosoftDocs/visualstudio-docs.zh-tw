@@ -1,26 +1,26 @@
 ---
 description: 抓取與此欄位相關聯的基本類型。
-title: IDebugPrimitiveTypeField：： GetPrimitiveType |Microsoft 檔
+title: IDebugPrimitiveTypeField：： GetPrimitiveType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetPrimitiveType
 - IDebugPrimitiveTypeField::GetPrimitiveType
 ms.assetid: a186c922-bbfe-478c-a744-b21eb4672d8f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0742f6a1d639d891a816bba479b6507a5a66b583
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c731ff93dae4bf605933263ffc1ca6bbef45431b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150324"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071710"
 ---
 # <a name="idebugprimitivetypefieldgetprimitivetype"></a>IDebugPrimitiveTypeField::GetPrimitiveType
 抓取與此欄位相關聯的基本類型。

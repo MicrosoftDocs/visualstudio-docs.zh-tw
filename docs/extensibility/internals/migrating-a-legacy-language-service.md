@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a0e20c77a1c8a81a29691079ace1e4751135560
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afe98f2d96618999aa02dd01f03f55395af46e19
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895683"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063262"
 ---
 # <a name="migrating-a-legacy-language-service"></a>移轉舊版語言服務
 您可以藉由更新專案並將 extension.vsixmanifest 檔案新增至專案，將舊版語言服務遷移至更新版的 Visual Studio。 語言服務本身將會繼續如之前一樣運作，因為 Visual Studio 編輯器會調整它。
@@ -71,13 +71,13 @@ ms.locfileid: "99895683"
 
     - 新增 Microsoft.VisualStudio.Shell.Interop.10.0.dll 的參考。
 
-8. 開啟 VsPkg.cs 檔案，並將屬性的值變更 `DefaultRegistryRoot` 為
+8. 開啟 VsPkg .cs 檔案，然後將屬性的值變更 `DefaultRegistryRoot` 為
 
     ```
     "Software\\Microsoft\\VisualStudio\\14.0Exp"
     ```
 
-9. 原始範例不會註冊其語言服務，因此您必須將下列屬性新增至 VsPkg.cs。
+9. 原始範例不會註冊其語言服務，因此您必須將下列屬性新增至 VsPkg。
 
     ```
     [ProvideLanguageService(typeof(RegularExpressionLanguageService), "RegularExpressionLanguage", 0, RequestStockColors=true)]

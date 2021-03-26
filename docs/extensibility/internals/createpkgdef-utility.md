@@ -10,17 +10,17 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9822319a74d1374ef2a88d4f9231e6fd86b1e5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 519cc251a245e1eeb65ddb1fcd34b0fa1af8f686
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884529"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056879"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 公用程式
 取得 Visual Studio 擴充功能的 .dll 檔作為參數，並建立與 *.dll* 檔案伴隨的 *.pkgdef* 檔案。 *.Pkgdef* 檔案包含在安裝擴充功能時，將寫入系統登錄的所有資訊。

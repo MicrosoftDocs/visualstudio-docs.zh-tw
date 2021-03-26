@@ -1,6 +1,6 @@
 ---
 description: 這個方法會抓取可列舉保存埠清單的物件。
-title: IDebugPortSupplier3：： EnumPersistedPorts |Microsoft 檔
+title: IDebugPortSupplier3：： EnumPersistedPorts |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3::EnumPersistedPorts
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 582849f0dd859d5155b4d3ee5653cefff6396780
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b4fe55898f6dbc7713db6e013868b1c7f22a5faf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150415"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071957"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 這個方法會抓取可列舉保存埠清單的物件。

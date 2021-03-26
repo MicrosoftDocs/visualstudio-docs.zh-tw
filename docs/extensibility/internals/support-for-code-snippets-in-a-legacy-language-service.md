@@ -9,17 +9,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f0df8a21621b93655935b3cfa27a4b62df63ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9578159554f77a9ad7553a56c054a863b3b63fd5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888143"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080758"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>舊版語言服務中對程式碼片段的支援
 程式碼片段是插入原始程式檔中的一段程式碼。 程式碼片段本身是以 XML 為基礎的範本，其中包含一組欄位。 這些欄位會在插入程式碼片段之後反白顯示，而且可以有不同的值，視插入程式碼片段的內容而定。 緊接在插入程式碼片段之後，語言服務可以格式化程式碼片段。

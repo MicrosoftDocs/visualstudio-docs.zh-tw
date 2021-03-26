@@ -1,6 +1,6 @@
 ---
 description: 傳回目前錯誤中斷點列舉的複本，做為個別的物件。
-title: IEnumDebugErrorBreakpoints2：： Clone |Microsoft 檔
+title: IEnumDebugErrorBreakpoints2：： Clone |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2::Clone
 ms.assetid: f6fb4985-8dd6-4a9b-98e0-15dbc64cc9ec
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f0f42ff6c6faef0ebe05f5f98445b6c51aa5152
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 40b4a19dd9a4ec5afcaeb04c26d92c161398b4cc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226809"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081044"
 ---
 # <a name="ienumdebugerrorbreakpoints2clone"></a>IEnumDebugErrorBreakpoints2::Clone
 傳回目前列舉的複本作為個別的物件。

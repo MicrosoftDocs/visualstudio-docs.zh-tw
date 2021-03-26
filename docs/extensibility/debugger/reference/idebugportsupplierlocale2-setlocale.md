@@ -1,25 +1,25 @@
 ---
 description: 設定埠供應商的地區設定。
-title: IDebugPortSupplierLocale2：： SetLocale |Microsoft 檔
+title: IDebugPortSupplierLocale2：： SetLocale |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierLocale2::SetLocale
 ms.assetid: 21e88510-caac-405e-ba45-cb00e19a28bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 351cd82388731d52620d376f9d943c0b8afab8b7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6ec7b5105915f762833b6b3b2b61b12d06b56773
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150337"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071801"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
 設定埠供應商的地區設定。

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 863a9b1cdb68218539045c9154fc18d845495222
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 615910684fd79d3cbd8d8a1e012c239e27abc180
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902889"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080966"
 ---
 # <a name="running-document-table"></a>執行中的文件資料表
 IDE 會在名為執行檔資料表 (RDT) 的內部結構中，維護所有目前開啟的檔案清單。 這份清單包含記憶體中所有開啟的檔，不論目前是否正在編輯這些檔。 檔是保存的任何專案，包括專案或主要專案檔中的檔案 (例如，.vcxproj 檔案) 。
