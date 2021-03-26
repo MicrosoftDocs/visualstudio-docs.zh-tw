@@ -1,7 +1,7 @@
 ---
 title: JavaScript 開發人員編輯簡介
 description: 這個 Visual Studio 程式碼編輯器簡介，說明 Visual Studio 可讓撰寫、巡覽和了解 JavaScript 程式碼更加輕鬆的一些方式。
-ms.date: 12/13/2018
+ms.date: 03/25/2021
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cec6a19d525f89b5ca8873344d3dce9c830fd4c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b1d9fb7cdc850bc54298cd3d82d52786a9e6a639
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935686"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616957"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>瞭解如何使用 JavaScript 的程式碼編輯器
 
@@ -40,7 +40,7 @@ ms.locfileid: "99935686"
 
 IntelliSense 是您撰寫程式碼時的重要資源。 它可以顯示類型可用成員的相關資訊，或方法之不同多載的參數詳細資料。 在下列程式碼中，當您鍵入 `Router()` 時，您會看到可傳遞的引數類型。 這稱為簽章說明。
 
-![輸入 JavaScript 程式碼之 Visual Studio 程式碼視窗的螢幕擷取畫面。  ( # A1 函數的路由器會顯示 IntelliSense 資訊。](../javascript/media/write-code-signature-checking.png)
+![輸入 JavaScript 程式碼之 Visual Studio 程式碼視窗的螢幕擷取畫面。 會顯示路由器 () 函式的 IntelliSense 資訊。](../javascript/media/write-code-signature-checking.png)
 
 在您鍵入足夠的字元來釐清文字之後，也可以使用 IntelliSense 自動完成文字。 如果您將游標放在下列程式碼中的 `data` 字串後面並鍵入 `get`，IntelliSense 將會顯示稍早在程式碼中定義或在協力廠商程式庫中定義並已新增至專案的函式。
 
@@ -48,7 +48,7 @@ IntelliSense 是您撰寫程式碼時的重要資源。 它可以顯示類型可
 
 當您將滑鼠停留在程式設計項目時，IntelliSense 也會顯示類型的相關資訊。
 
-語言服務可以使用 TypeScript *d.ts* 檔案和 JSDoc 註解來提供 IntelliSense 資訊。 若是最常見的 JavaScript 程式庫，則會自動取得 *d.ts* 檔案。 如需如何取得 IntelliSense 資訊的詳細資料，請參閱 [JavaScript IntelliSense](../ide/javascript-intellisense.md?toc=/visualstudio/javascript/toc.json)
+語言服務可以使用 TypeScript *d.ts* 檔案和 JSDoc 註解來提供 IntelliSense 資訊。 若是最常見的 JavaScript 程式庫，則會自動取得 *d.ts* 檔案。 如需如何取得 IntelliSense 資訊的詳細資訊，請參閱 [JavaScript intellisense](../ide/javascript-intellisense.md?toc=/visualstudio/javascript/toc.json)。 如果您想要在 Visual Studio 中 AngularJS 程式設計，您可以使用 Visual Studio 的 [AngularJS language service 延伸](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio) 模組來取得 IntelliSense。
 
 ## <a name="check-syntax"></a>檢查語法
 

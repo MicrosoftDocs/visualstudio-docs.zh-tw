@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b572a6854d505704accd79cc4da2ac4e52c193d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e76c5346230b6991f238384a4852938dcc540f6c
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850164"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616931"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
@@ -70,7 +70,7 @@ ms.locfileid: "99850164"
 
 ## <a name="create-an-offline-installation-folder"></a>建立離線安裝資料夾
 
-您必須連接網際網路，才能完成此步驟。 若要建立包含所有語言和所有功能的離線安裝，請使用類似下列其中一個範例的命令。
+您必須連接網際網路，才能完成此步驟。 若要建立包含所有語言和所有功能的離線安裝，請使用類似下列其中一個範例的命令。 此資料夾必須保持靜態，而且此資料夾中的所有更新都必須包含在此資料夾中。 
 
    > [!IMPORTANT]
    > 單一語言地區設定的完整版面配置需要大約 35 GB 的磁碟空間，Visual Studio Community 和 42 GB 的 Visual Studio Enterprise。 其他 [語言地區](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales) 設定每個都需要大約一半的 GB。 如需詳細資訊，請參閱 [自訂網路](#customize-the-network-layout) 配置一節。

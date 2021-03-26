@@ -2,7 +2,7 @@
 title: 建立您的第一個 Node.js 應用程式
 ms.custom: SEO-VS-2020
 description: 在此快速入門中，您會在 Visual Studio 中建立 Node.js 應用程式
-ms.date: 06/27/2018
+ms.date: 03/25/2021
 ms.technology: vs-javascript
 ms.topic: quickstart
 ms.devlang: javascript
@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c342018a2331b27a411b5efc23af1438fa18518d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ecd65c0348ac16a2097061726e3896961ae04482
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932614"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105617048"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式
 
@@ -115,5 +115,8 @@ ms.locfileid: "99932614"
 > [!div class="nextstepaction"]
 > [將應用程式部署至 Linux App Service](../javascript/publish-nodejs-app-azure.md)
 
-- [Node.js 和 Express 的教學課程](../javascript/tutorial-nodejs.md)
-- [Node.js 和 React 的教學課程](../javascript/tutorial-nodejs-with-react-and-jsx.md)
+> [!div class="nextstepaction"]
+> [Node.js 和 Express 的教學課程](../javascript/tutorial-nodejs.md)
+
+> [!div class="nextstepaction"]
+> [Node.js 和 React 的教學課程](../javascript/tutorial-nodejs-with-react-and-jsx.md)

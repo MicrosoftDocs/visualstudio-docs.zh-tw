@@ -62,6 +62,10 @@
                   href: install/troubleshooting-network-related-errors-in-visual-studio.md
         - name: 部署於企業中
           items:
+            - name: 套用系統管理員更新
+              href: install/applying-administrator-updates.md
+            - name: 啟用系統管理員更新
+              href: install/enabling-administrator-updates.md
             - name: 使用回應檔自動安裝 Visual Studio
               href: install/automated-installation-with-response-file.md
             - name: 在部署 Visual Studio 時自動套用產品金鑰

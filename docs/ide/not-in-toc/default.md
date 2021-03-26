@@ -1,21 +1,21 @@
 ---
 title: F1 說明的預設頁面
 description: F1 說明要求 Visual Studio 的預設頁面
-ms.date: 08/20/2020
+ms.date: 03/25/2021
 ms.topic: troubleshooting
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q3
 robots: noindex,nofollow
 f1_keywords:
 - vs.ambient
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 7026db3e4a3c9490c5ea770342d04fe477fdf28f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e6af978a080e0c75e439f1ee29a90fc0d40a653
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961608"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616918"
 ---
 # <a name="f1-help"></a>F1 說明
 
@@ -28,14 +28,14 @@ ms.locfileid: "99961608"
 - 嘗試在[docs.microsoft.com](/)上搜尋
 - 嘗試使用搜尋引擎進行搜尋。
 
-## <a name="find-help-on-a-keyword-or-api"></a>尋找關鍵字或 API 的說明
+## <a name="get-help-for-your-programming-language"></a>取得程式設計語言的說明嗎？
 
-- 如需 c # 說明，請參閱 [c # 程式設計手冊](/dotnet/csharp/programming-guide/) 或 [語言參考](/dotnet/csharp/language-reference/)。
-- 如需 Visual Basic 說明，請參閱 [Visual Basic 語言功能](/dotnet/visual-basic/programming-guide/language-features/) 或 [語言參考](/dotnet/visual-basic/language-reference/)。
-- 如需 Python 說明，請參閱 [python 檔](https://docs.python.org/)。
-- 如需 c + + 說明，請參閱 [c/c + + 語言和標準程式庫參考](/cpp/cpp/c-cpp-language-and-standard-libraries)。
-- 如需 F# 的說明，請參閱 [F# 指南](/dotnet/fsharp/)。
-- 如需 TypeScript 說明，請參閱 [typescript 檔](https://www.typescriptlang.org/docs)。
+- [C # 程式設計手冊](/dotnet/csharp/programming-guide/) 或 [語言參考](/dotnet/csharp/language-reference/)。
+- [Visual Basic 語言功能](/dotnet/visual-basic/programming-guide/language-features/) 或 [語言參考](/dotnet/visual-basic/language-reference/)。
+- [Python 檔](https://docs.python.org/)。
+- [C/c + + 語言和標準程式庫參考](/cpp/cpp/c-cpp-language-and-standard-libraries)。
+- [F # 指南](/dotnet/fsharp/)。
+- [TypeScript 檔](https://www.typescriptlang.org/docs)。
 
 ## <a name="re-map-or-disable-the-f1-help-key"></a>重新對應或停用 F1 說明鍵
 
