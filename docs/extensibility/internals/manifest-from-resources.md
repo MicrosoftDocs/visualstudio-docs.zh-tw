@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65e4b16beefdef765fe52afd9d84e64a767999fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42bd932b093ae805e8885bc9fc61324c3cadbe30
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839424"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095169"
 ---
 # <a name="manifest-from-resources"></a>來自資源的資訊清單
 Manifest from Resources 工具是一種主控台應用程式，它會將影像資源清單 ( .png 或 .xaml 檔案) 並產生 imagemanifest 檔案，以允許這些影像與 Visual Studio 影像服務搭配使用。 此外，此工具可以用來將影像新增至現有的 imagemanifest。 此工具適用于將影像的高 DPI 和主題支援新增至 Visual Studio 延伸模組。 產生的 imagemanifest 檔案應該包含在中，並部署為 Visual Studio 擴充功能的一部分 ( .vsix) 。

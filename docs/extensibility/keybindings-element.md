@@ -10,17 +10,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBindings element (VSCT XML schema)
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 451e0bab9568d794205e38e3573265c20c259961
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a590dc8bc1313e5c32b26465ae3dd346ed0564fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943331"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074011"
 ---
 # <a name="keybindings-element"></a>Keybindings.json 元素
 Keybindings.json 元素會將 KeyBinding 元素和其他 Keybindings.json 群組分組。

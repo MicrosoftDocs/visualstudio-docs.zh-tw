@@ -1,6 +1,6 @@
 ---
 description: 此函式會顯示用戶端磁片上目前本機目錄與原始檔控制下對應專案之間的差異。
-title: SccDirDiff 函式 |Microsoft 檔
+title: SccDirDiff 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirDiff function
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98a843c061941765404397186af74ab71923a9da
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 974d0aa22ff3940472be34b691a61632dc742223
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221596"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073972"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 函式
 此函式會顯示用戶端磁片上目前本機目錄與原始檔控制下對應專案之間的差異。

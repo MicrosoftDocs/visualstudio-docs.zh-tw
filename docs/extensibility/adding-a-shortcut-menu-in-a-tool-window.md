@@ -10,17 +10,17 @@ helpviewer_keywords:
 - shortcut menus, adding to tool windows
 - tool windows, adding context menus
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a35652c0eacf22a46eed3f3fc64c3bcc0d6d10ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ba0eb2324812ca7536b361d602bb683d627c743
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951533"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097613"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>在工具視窗中新增快捷方式功能表
 本逐步解說會在工具視窗中放置快捷方式功能表。 快速鍵功能表是使用者在按鈕、文字方塊或視窗背景上按一下滑鼠右鍵時所顯示的功能表。 快速鍵功能表上的命令列為與其他功能表或工具列上的命令相同。 若要支援快捷方式功能表，請在 *.vsct* 檔案中指定，並將其顯示以回應滑鼠右鍵。
@@ -114,7 +114,7 @@ ms.locfileid: "99951533"
     </Buttons>
     ```
 
-5. 在 *ShortcutMenuCommand.cs* 中，新增命令集 GUID、快捷方式功能表和功能表項目的定義。
+5. 在 *ShortcutMenuCommand* 中，新增命令集 GUID、快捷方式功能表和功能表項目的定義。
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
@@ -129,16 +129,16 @@ ms.locfileid: "99951533"
 ## <a name="implementing-the-shortcut-menu"></a>執行快捷方式功能表
  本節會執行快捷方式功能表和其命令。
 
-1. 在 *ShortcutMenu.cs* 中，工具視窗可以取得功能表命令服務，但是它所包含的控制項則不能。 下列步驟顯示如何讓功能表命令服務可供使用者控制項使用。
+1. 在 [ *快捷* 方式] 的 [工具] 視窗中，可以取得功能表命令服務，但是它所包含的控制項則不能。 下列步驟顯示如何讓功能表命令服務可供使用者控制項使用。
 
-2. 在 *ShortcutMenu.cs* 中，新增下列 using 指示詞：
+2. 在 *快捷方式 .cs* 中，加入下列 using 指示詞：
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
     using System.ComponentModel.Design;
     ```
 
-3. 覆寫工具視窗的 Initialize ( # A1 方法，以取得功能表命令服務並加入控制項，並將功能表命令服務傳遞給函式：
+3. 覆寫工具視窗的 Initialize () 方法，以取得功能表命令服務並加入控制項，並將功能表命令服務傳遞給函式：
 
     ```csharp
     protected override void Initialize()
@@ -159,7 +159,7 @@ ms.locfileid: "99951533"
     }
     ```
 
-5. 在 *ShortcutMenuControl.xaml.cs* 中，新增功能表命令服務的私用欄位，並變更控制項的函式以取得功能表命令服務。 然後使用功能表命令服務來新增內容功能表命令。 ShortcutMenuControl 的函式現在看起來應該像下列程式碼。 稍後會定義命令處理常式。
+5. 在 *ShortcutMenuControl* 中，加入功能表命令服務的私用欄位，並變更控制項的函式以取得功能表命令服務。 然後使用功能表命令服務來新增內容功能表命令。 ShortcutMenuControl 的函式現在看起來應該像下列程式碼。 稍後會定義命令處理常式。
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -207,7 +207,7 @@ ms.locfileid: "99951533"
     </UserControl>
     ```
 
-7. 在 *ShortcutMenuControl.xaml.cs* 中，新增事件處理常式的存根。
+7. 在 *ShortcutMenuControl* 中，加入事件處理常式的存根。
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)

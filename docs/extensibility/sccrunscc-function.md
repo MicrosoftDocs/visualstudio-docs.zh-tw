@@ -1,6 +1,6 @@
 ---
 description: 此函式會叫用原始檔控制管理工具。
-title: SccRunScc 函式 |Microsoft 檔
+title: SccRunScc 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRunScc function
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca492c35ba061072dc9e4b3d0eabc42476bcd8ed
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e78e58eafebd06d1ce7c710a31ce295b49f26340
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221362"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073816"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函式
 此函式會叫用原始檔控制管理工具。

@@ -1,6 +1,6 @@
 ---
 description: 此函式會取得原始檔控制下的一組選定檔案的狀態資訊。
-title: SccQueryInfo 函式 |Microsoft 檔
+title: SccQueryInfo 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccQueryInfo function
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 880cb2cf7db5c7a988d6549865de1864cb799e53
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 911219605859025f1877d040b5932714b10f836a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221492"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073894"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函式
 此函式會取得原始檔控制下的一組選定檔案的狀態資訊。

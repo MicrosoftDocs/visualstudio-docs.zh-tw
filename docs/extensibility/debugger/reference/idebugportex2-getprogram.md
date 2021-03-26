@@ -1,6 +1,6 @@
 ---
 description: 取得與程式節點相關聯的程式。
-title: IDebugPortEx2：： GetProgram |Microsoft 檔
+title: IDebugPortEx2：： GetProgram |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::GetProgram
 ms.assetid: cd83a111-bfd5-4eae-b576-526466c6b6ec
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5bb169ecdbd0dcea188054c96af06da609edf3f7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4efdd9c5a70849a6df1aefb95db384e3dd60f057
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142800"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072503"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
 取得與程式節點相關聯的程式。

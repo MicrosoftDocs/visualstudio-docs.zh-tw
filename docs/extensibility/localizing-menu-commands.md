@@ -12,17 +12,17 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af86f64935d4e99d4c1245669505fcef8ce7ec1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 141fb0d8ba6746e7d299984461fb3ca739d931d4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893616"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073257"
 ---
 # <a name="localize-menu-commands"></a>當地語系化功能表命令
 
@@ -112,9 +112,9 @@ ms.locfileid: "99893616"
 
 ## <a name="incorporate-localized-resources-into-the-project"></a>將當地語系化的資源納入專案中
 
-您必須修改 *assemblyinfo.cs* 檔案和專案檔，以併入當地語系化的資源。
+您必須修改 *assemblyinfo .cs* 檔案和專案檔，以併入當地語系化的資源。
 
-1. 從 **方案總管** 中的 [**屬性**] 節點，在編輯器中開啟 *assemblyinfo.cs* 或 *assemblyinfo。*
+1. 從 **方案總管** 中的 [**屬性**] 節點，在編輯器中開啟 *assemblyinfo .cs* 或 *assemblyinfo。*
 
 2. 新增下列專案。
 

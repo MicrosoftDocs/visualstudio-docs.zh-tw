@@ -1,6 +1,6 @@
 ---
 description: 建立在這個類別中嵌套之類別的列舉值。
-title: IDebugClassField：： EnumNestedClasses |Microsoft 檔
+title: IDebugClassField：： EnumNestedClasses |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumNestedClasses method
 ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87538db39df590fd3885f545e5442c7dafecb9a1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 95f423b556263dc7ad634feaebda90d62eeeeb04
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164262"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088571"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 建立在這個類別中嵌套之類別的列舉值。

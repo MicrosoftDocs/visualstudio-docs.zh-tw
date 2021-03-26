@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f1d7e0011b3f195224d8e55072ccd4c7666802
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 340ac4db04b62abade9c6572335e28c9fb27b495
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876117"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097470"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a> (Visual Studio 範本的 AppliesTo 元素) 
 
@@ -74,7 +74,7 @@ ms.locfileid: "99876117"
 
 - Null 或空白運算式會判斷值為相符項目。
 
-- 專案功能可以是下列保留字元以外的任何字元： "' '：;，+-*/ \\ ！ ~&#124;&% $ @ ^ ( # B1 = {} [] <>？ \t\b\n\r
+- 專案功能可以是下列保留字元以外的任何字元： "' '：;，+-*/ \\ ！ ~&#124;&% $ @ ^ () = {} [] <>？ \t\b\n\r
 
 ## <a name="example"></a>範例
 

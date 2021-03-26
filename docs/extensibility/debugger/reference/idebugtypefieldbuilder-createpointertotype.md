@@ -1,26 +1,26 @@
 ---
 description: 建立指定類型的指標。
-title: IDebugTypeFieldBuilder：： CreatePointerToType |Microsoft 檔
+title: IDebugTypeFieldBuilder：： CreatePointerToType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - CreatePointerToType
 - IDebugTypeFieldBuilder::CreatePointerToType
 ms.assetid: 73966e8a-b643-43e0-9b4e-0aa4b402ebbe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b5cc642ae4d9d4030abcf32c1e51360c8cb4a84f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f1fbdad2d4dcade465f24af91979b4ebc2b3cc59
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223143"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083592"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 建立指定類型的指標。

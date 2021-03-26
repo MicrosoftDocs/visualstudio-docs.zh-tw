@@ -1,6 +1,6 @@
 ---
 description: 當與特定檔相關聯的屬性即將終結時，debug engine 會將這個介面傳送 (DE) 至會話 debug manager (SDM) 。
-title: IDebugPropertyDestroyEvent2 |Microsoft 檔
+title: IDebugPropertyDestroyEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyDestroyEvent2 interface
 ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f5a726d8d77a3d12f1d390f70f7bbc30a3abb4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d9d0e0751b184ddbf6ebc62e12ed1d3a9bca853c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167993"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083800"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 當與特定檔相關聯的屬性即將終結時，debug engine 會將這個介面傳送 (DE) 至會話 debug manager (SDM) 。

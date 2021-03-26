@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc0acd64a61acac2cb30b9251bcb4e528c08f227
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d60443e97bc557bc964d59750417b2662e4c3c8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840115"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085971"
 ---
 # <a name="image-library-viewer"></a>影像庫檢視器
 Visual Studio 影像庫檢視器工具可以載入和搜尋影像資訊清單，讓使用者以 Visual Studio 的相同方式來操作它們。 使用者可以改變背景、大小、DPI、高對比和其他設定。 此工具也會顯示每個影像資訊清單的載入資訊，並顯示影像資訊清單中每個影像的來源資訊。 此工具適用于：

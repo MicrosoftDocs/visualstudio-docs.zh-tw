@@ -1,6 +1,6 @@
 ---
 description: 這個介面代表類別做為型別。
-title: IDebugClassField |Microsoft 檔
+title: IDebugClassField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField interface
 ms.assetid: 49358cbc-8973-4862-9dcc-79b1248e6712
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c8f566d7decc344dda17700da6712ff78120a1c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: dfb07f066d65ed48678c814444881cb004f14697
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164171"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088467"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 這個介面代表類別做為型別。

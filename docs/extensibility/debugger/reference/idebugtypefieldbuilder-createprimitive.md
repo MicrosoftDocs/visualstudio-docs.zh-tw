@@ -1,26 +1,26 @@
 ---
 description: 建立代表基本類型的物件。
-title: IDebugTypeFieldBuilder：： CreatePrimitive |Microsoft 檔
+title: IDebugTypeFieldBuilder：： CreatePrimitive |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - CreatePrimitive
 - IDebugTypeFieldBuilder::CreatePrimitive
 ms.assetid: 512c6ff0-97c5-409f-939f-4cc969bc4bb9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c480b32d56708569d3ac05e309e8bd06e17db4e5
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 60c095080770837b8afe50898cd570894a1130ed
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227355"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083553"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
 建立代表基本類型的物件。

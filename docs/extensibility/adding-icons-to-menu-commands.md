@@ -9,17 +9,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9f37bd14ed43ab0e165346f8ce09512c3981177
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01f159b9f07cd0d530039e0d5707cf38d51610ef
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934360"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097586"
 ---
 # <a name="add-icons-to-menu-commands"></a>將圖示新增至功能表命令
 命令可以同時出現在功能表和工具列上。 在工具列上，命令通常只會顯示一個圖示 (為了節省空間) 而功能表上的命令通常會同時以圖示和文字顯示。

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc9e80f549a5bf8cbf151ee224a9f503470a90de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1d01c2ed91a5f4aad55c196dfb2e689aeea288a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934115"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086036"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 如何新增使用者介面元素
 VSPackage 可以新增使用者介面 (UI) 專案，例如功能表、工具列和工具視窗），透過 .vsct 檔案來 Visual Studio *。*

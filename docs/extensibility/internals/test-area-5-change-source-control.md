@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], changing
 - source control plug-ins, changing source control
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88dcc8e86da43f330c50ea478aaee572c1c3a060
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44647781b8f7605a59fba5d9249b6a7165c0e27e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898135"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073400"
 ---
 # <a name="test-area-5-change-source-control"></a>測試區域 5：變更原始檔控制
 此原始檔控制外掛程式測試區域包含透過 [ **變更原始檔控制** ] 命令變更原始檔控制。

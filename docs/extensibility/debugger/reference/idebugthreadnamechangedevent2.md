@@ -1,6 +1,6 @@
 ---
 description: 此介面是由偵錯工具在正在進行正在進行程式設計的程式中的執行緒名稱變更時， (DE) 傳送至會話 debug manager (SDM) 。
-title: IDebugThreadNameChangedEvent2 |Microsoft 檔
+title: IDebugThreadNameChangedEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadNameChangedEvent2
 ms.assetid: 34c1652e-f019-48ba-8b26-ace20f8a158c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 878c1196c3d2343924be316725be35f1b6f01ae6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 28d61260b1f92df82b365d7aa8464b084681500e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227342"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083618"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 此介面是由偵錯工具在正在進行正在進行程式設計的程式中的執行緒名稱變更時， (DE) 傳送至會話 debug manager (SDM) 。

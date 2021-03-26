@@ -7,7 +7,7 @@ metadata:
   description: 探索 Visual Studio 產品系列文件，包括適用於 Windows 和 Mac 的 Visual Studio IDE、Visual Studio Code、Visual Studio App Center、GitHub Codespaces 以及 Visual Studio 訂閱。
   ms.topic: hub-page
   ms.custom: contperf-fy21q1, contperf-fy21q3
-  ms.date: 10/22/2020
+  ms.date: 03/23/2021
   searchScope: []
   titleSuffix: ''
   ms.author: ghogen
@@ -15,12 +15,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: 93e7b9d7e6c9d0004e3c4cf72d5ad10be359000a
-  ms.sourcegitcommit: 6f18481e4f84d86a837ec5d0e8f12fff1a1a8b65
+  ms.openlocfilehash: d9aa5ff71a4dc24b32827f24e0df219db3674df2
+  ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/11/2021
-  ms.locfileid: "102782833"
+  ms.lasthandoff: 03/25/2021
+  ms.locfileid: "105073738"
 productDirectory:
   items:
   - title: Visual Studio

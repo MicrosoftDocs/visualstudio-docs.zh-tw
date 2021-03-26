@@ -1,6 +1,6 @@
 ---
 description: 取得描述這個事件位置的程式碼內容。
-title: IDebugCanStopEvent2：： GetCodeCoNtext |Microsoft 檔
+title: IDebugCanStopEvent2：： GetCodeCoNtext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCanStopEvent2::GetCodeContext
 ms.assetid: eecf08b6-f9b7-4358-941b-3a448a92ac62
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29863a16d59528e86f7c5a3449e7c321b2dcaf9d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b906241a189edf78f3917d7d80ba4e4e073d50c4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102173533"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088584"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
 取得描述這個事件位置的程式碼內容。

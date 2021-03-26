@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, getting items from source control
 - source control [Visual Studio SDK], getting items from
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83b869a91b823a2f14823ab65a745a3ef6c0d883
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab6a35aa896d7a68e151007d6f694672f7477688
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898218"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073426"
 ---
 # <a name="test-area-2-get-from-source-control"></a>測試區域 2：從原始檔控制取得
 此測試區域涵蓋可透過 Get 命令從版本存放區中取得專案的測試案例。 這些測試案例可以同時套用至本機和 Web 專案。

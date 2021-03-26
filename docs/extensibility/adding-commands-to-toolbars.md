@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4f8cfba8-0653-4ccc-a2da-acf064c83aa7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12fd6e336631eeabe1761276442df993d44affe8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6478009e1887fb494bcff1433fb75d81207a7974
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939210"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097574"
 ---
 # <a name="add-commands-to-toolbars"></a>將命令新增至工具列
 工具列是包含與命令系結之按鈕的水準或垂直帶狀。 您可以將自己的命令新增至 Visual Studio 中許多不同視窗上的工具列：主要 Visual Studio 視窗、方案總管，以及您自己的自訂工具視窗。

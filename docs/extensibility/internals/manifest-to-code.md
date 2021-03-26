@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 709867c44456223da129460eb6ea72c413ba5b48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ae844b0b0b6d585895b6939d1d33b2a699c2756
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839411"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095156"
 ---
 # <a name="manifest-to-code"></a>資訊清單至程式碼
 Manifest to Code 工具是一種主控台應用程式，它會採用 Visual Studio 映射服務的 imagemanifest 檔，並產生包裝函式檔案或檔案，以參考 Visual Studio 擴充功能的 c + +、c #、VB 或 .vsct 檔案中的影像資訊清單值。 此工具會產生包裝函式檔案，這些檔案可用來直接向 Visual Studio 映射服務要求影像，或在程式碼不會處理它自己的任何 UI 和轉譯時，透過 Api 來傳遞資訊清單值。

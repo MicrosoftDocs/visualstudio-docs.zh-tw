@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - tool windows, adding search
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71c2f0be2377ea391595b02f5b1e94465cffcf68
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82176afaacae3b9f4553c8b1b5b41b9a4f10dace
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937097"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097548"
 ---
 # <a name="add-search-to-a-tool-window"></a>將搜尋新增至工具視窗
 當您建立或更新延伸模組中的工具視窗時，可以新增在 Visual Studio 的其他位置出現的相同搜尋功能。 這項功能包含下列功能：
@@ -67,7 +67,7 @@ ms.locfileid: "99937097"
     </StackPanel>
     ```
 
-3. 在 *TestSearchControl.xaml.cs* 檔案中，新增下列 using 指示詞：
+3. 在 *TestSearchControl* 檔案中，加入下列 using 指示詞：
 
     ```csharp
     using System.Text;
@@ -90,7 +90,7 @@ ms.locfileid: "99937097"
 
 ## <a name="to-add-a-search-box-to-the-tool-window"></a>將搜尋方塊新增至工具視窗
 
-1. 在 *TestSearch.cs* 檔案中，將下列程式碼加入至 `TestSearch` 類別。 程式碼會覆寫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> 屬性，讓 get 存取子傳回 `true` 。
+1. 在 *TestSearch .cs* 檔案中，將下列程式碼加入至 `TestSearch` 類別。 程式碼會覆寫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> 屬性，讓 get 存取子傳回 `true` 。
 
      若要啟用搜尋，您必須覆寫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> 屬性。 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>類別 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> 會執行，並提供不啟用搜尋的預設值。
 
@@ -110,7 +110,7 @@ ms.locfileid: "99937097"
 ## <a name="to-add-the-search-implementation"></a>若要加入搜尋執行
  當您在上啟用搜尋時（ <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> 如同在先前的程式中），工具視窗會建立搜尋主控制項。 此主機會設定及管理搜尋程式，而這些搜尋程式一律會在背景執行緒上發生。 因為 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> 類別會管理搜尋主機的建立以及搜尋的設定，所以您只需要建立搜尋工作，並提供搜尋方法。 搜尋進程會在背景執行緒上發生，而工具視窗控制項的呼叫會在 UI 執行緒上發生。 因此，您必須使用 [ThreadHelper *](https://msdn.microsoft.com/data/ee197798(v=vs.85)) 方法來管理您在處理控制項時所進行的任何呼叫。
 
-1. 在 *TestSearch.cs* 檔案中，新增下列指示詞 `using` ：
+1. 在 *TestSearch .cs* 檔案中，加入下列指示詞 `using` ：
 
     ```csharp
     using System;
@@ -241,7 +241,7 @@ ms.locfileid: "99937097"
 ## <a name="to-customize-the-search-behavior"></a>自訂搜尋行為
  藉由變更搜尋設定，您可以在搜尋控制項的顯示方式以及搜尋的執行方式方面進行各種變更。例如，您可以變更浮水印 (出現在搜尋方塊中的預設文字) 、搜尋控制項的最小和最大寬度，以及是否顯示進度列。 您也可以變更搜尋結果開始 (視需要或立即搜尋) 出現的時間點，以及是否要顯示您最近搜尋的字詞清單。 您可以在類別中找到完整的設定清單 <xref:Microsoft.VisualStudio.PlatformUI.SearchSettingsDataSource> 。
 
-1. 在 * TestSearch.cs * 檔案中，將下列程式碼加入至 `TestSearch` 類別。 這段程式碼會啟用立即搜尋，而不是依需求搜尋 (這表示使用者不需要按 **ENTER**) 。 程式碼會覆寫 `ProvideSearchSettings` 類別中的方法 `TestSearch` ，這是變更預設設定的必要方法。
+1. 在 * TestSearch .cs * 檔案中，將下列程式碼加入至 `TestSearch` 類別。 這段程式碼會啟用立即搜尋，而不是依需求搜尋 (這表示使用者不需要按 **ENTER**) 。 程式碼會覆寫 `ProvideSearchSettings` 類別中的方法 `TestSearch` ，這是變更預設設定的必要方法。
 
     ```csharp
     public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
@@ -288,7 +288,7 @@ ms.locfileid: "99937097"
 ## <a name="to-enable-users-to-refine-their-searches"></a>讓使用者精簡搜尋
  您可以允許使用者藉由比對 **案例** 或 **全字** 相符等選項來精簡搜尋。 選項可以是 [布林值]，其會顯示為核取方塊或命令，這會顯示為按鈕。 在這個逐步解說中，您將建立布林值選項。
 
-1. 在 *TestSearch.cs* 檔案中，將下列程式碼加入至 `TestSearch` 類別。 程式碼會覆寫 `SearchOptionsEnum` 方法，以允許搜尋執行偵測指定的選項是開啟或關閉。 中的程式碼會 `SearchOptionsEnum` 將符合大小寫的選項加入至 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> 列舉值。 符合大小寫的選項也可做為 `MatchCaseOption` 屬性。
+1. 在 *TestSearch .cs* 檔案中，將下列程式碼加入至 `TestSearch` 類別。 程式碼會覆寫 `SearchOptionsEnum` 方法，以允許搜尋執行偵測指定的選項是開啟或關閉。 中的程式碼會 `SearchOptionsEnum` 將符合大小寫的選項加入至 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> 列舉值。 符合大小寫的選項也可做為 `MatchCaseOption` 屬性。
 
     ```csharp
     private IVsEnumWindowSearchOptions m_optionsEnum;
@@ -341,7 +341,7 @@ ms.locfileid: "99937097"
 ## <a name="to-add-a-search-filter"></a>新增搜尋篩選
  您可以新增搜尋篩選器，讓使用者能夠精簡搜尋目標的集合。 例如，您可以依最近修改過的日期和副檔名來篩選檔案總管中的檔案。 在這個逐步解說中，您將只新增偶數行的篩選。 當使用者選擇該篩選時，搜尋主機會將您指定的字串新增至搜尋查詢。 然後，您可以在搜尋方法內識別這些字串，並據以篩選搜尋目標。
 
-1. 在 *TestSearch.cs* 檔案中，將下列程式碼加入至 `TestSearch` 類別。 程式碼 `SearchFiltersEnum` 會藉由加入 <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> ，以指定篩選搜尋結果，只顯示偶數行。
+1. 在 *TestSearch .cs* 檔案中，將下列程式碼加入至 `TestSearch` 類別。 程式碼 `SearchFiltersEnum` 會藉由加入 <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> ，以指定篩選搜尋結果，只顯示偶數行。
 
     ```csharp
     public override IVsEnumWindowSearchFilters SearchFiltersEnum
@@ -358,7 +358,7 @@ ms.locfileid: "99937097"
 
      現在搜尋控制項會顯示搜尋篩選準則 `Search even lines only` 。 當使用者選擇篩選準則時，該字串 `lines:"even"` 會出現在 [搜尋] 方塊中。 其他搜尋條件可以與篩選同時出現。 搜尋字串可能會出現在篩選準則之前、篩選準則之後，或兩者。
 
-2. 在 *TestSearch.cs* 檔案中，將下列方法加入至類別 `TestSearchTask` 中的類別 `TestSearch` 。 這些方法支援 `OnStartSearch` 您將在下一個步驟中修改的方法。
+2. 在 *TestSearch .cs* 檔案中，將下列方法加入至類別 `TestSearchTask` 中的類別 `TestSearch` 。 這些方法支援 `OnStartSearch` 您將在下一個步驟中修改的方法。
 
     ```csharp
     private string RemoveFromString(string origString, string stringToRemove)
