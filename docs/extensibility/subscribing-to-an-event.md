@@ -8,17 +8,17 @@ helpviewer_keywords:
 - running document table (RDT), responding to events
 - running document table (RDT), subscribing to events
 ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8477f252259f0ca436c4d4f34325c6dbb45565b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a887e7d50f14c76cf993eae64b0efd88dee2181
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847969"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056281"
 ---
 # <a name="subscribing-to-an-event"></a>訂閱事件
 本逐步解說將說明如何建立工具視窗，以回應執行中的檔資料表中的事件 (RDT) 。 工具視窗會裝載可執行檔使用者控制項 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> 。 方法會將 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> 介面連接到事件。
@@ -47,7 +47,7 @@ ms.locfileid: "99847969"
     </Grid>
     ```
 
-2. 在程式碼視圖中開啟 RDTExplorerWindow.cs 檔案。 將下列 using 指示詞新增至檔案的開頭。
+2. 在程式碼視圖中開啟 RDTExplorerWindow .cs 檔案。 將下列 using 指示詞新增至檔案的開頭。
 
     ```csharp
     using Microsoft.VisualStudio;
@@ -80,7 +80,7 @@ ms.locfileid: "99847969"
 
      這會保留方法所傳回的 cookie <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> 。
 
-7. 覆寫 RDTExplorerWindow 的 Initialize ( # A1 方法以註冊 RDT 事件。 您應該一律取得 ToolWindowPane 之 Initialize ( # A1 方法中的服務，而不是在此函式中。
+7. 覆寫 RDTExplorerWindow 的 Initialize () 方法，以註冊 RDT 事件。 您應該一律取得 ToolWindowPane 的 Initialize () 方法中的服務，而不是在此函式中。
 
     ```csharp
     protected override void Initialize()
@@ -93,7 +93,7 @@ ms.locfileid: "99847969"
 
      <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>呼叫服務以取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> 介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>方法會將 RDT 事件連接至物件，該物件會 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> 在此案例中執行 RDTExplorer 物件。
 
-8. 更新 RDTExplorerWindow 的 Dispose ( # A1 方法。
+8. 更新 RDTExplorerWindow 的 Dispose () 方法。
 
     ```csharp
     protected override void Dispose(bool disposing)

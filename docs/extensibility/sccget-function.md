@@ -1,6 +1,6 @@
 ---
 description: 此函式會取得一或多個檔案的複本，以供您進行編輯，但無法進行編輯。
-title: SccGet 函式 |Microsoft 檔
+title: SccGet 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 799d51c607ce720502c269cf82fe5a857ec7a826
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 172e0ec5fdba4b91c3cf86ea964b4a98a23a5fa8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220829"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060337"
 ---
 # <a name="sccget-function"></a>SccGet 函式
 此函式會取得一或多個檔案的複本，以供您進行編輯，但無法進行編輯。 在大部分的系統中，會將檔案標記為唯讀。

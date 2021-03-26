@@ -1,6 +1,6 @@
 ---
 description: 移除 IDE 已針對特定執行時間架構或語言設定的例外狀況清單。
-title: IDebugEngine2：： RemoveAllSetExceptions |Microsoft 檔
+title: IDebugEngine2：： RemoveAllSetExceptions |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::RemoveAllSetExceptions
 ms.assetid: 165fbe89-802d-4d99-85ca-c10fd6cccc09
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7832dd89ddfbdb15908934ff3ba36ab309d08fa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b40da7391fc360b68da70f02f4d32afb92e83a58
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153959"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087934"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 移除 IDE 已針對特定執行時間架構或語言設定的例外狀況清單。

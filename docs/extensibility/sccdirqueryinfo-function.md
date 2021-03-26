@@ -1,6 +1,6 @@
 ---
 description: 此函式會檢查完整目錄的清單，以取得其目前的狀態。
-title: SccDirQueryInfo 函式 |Microsoft 檔
+title: SccDirQueryInfo 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirQueryInfo function
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da0d42e2ef65aefc03e2813f32189876d0c07da1
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 81087d4f4da3435fb7bc80ec4a965394c7d6c7f3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220816"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060324"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 函式
 此函式會檢查完整目錄的清單，以取得其目前的狀態。

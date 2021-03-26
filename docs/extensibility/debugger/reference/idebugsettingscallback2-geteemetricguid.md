@@ -1,25 +1,25 @@
 ---
 description: 根據給定的名稱，抓取運算式評估工具度量的唯一識別碼。
-title: IDebugSettingsCallback2：： GetEEMetricGuid |Microsoft 檔
+title: IDebugSettingsCallback2：： GetEEMetricGuid |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricGuid
 ms.assetid: 3d70c19a-595d-44f1-a7b3-a0cf8f15e371
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16bc9671ee9f982eaf924d8966f2fc39a274eb6e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 45e858cf78e8b0acf7e50a95d73cd06523396bc1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165770"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071372"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 根據給定的名稱，抓取運算式評估工具度量的唯一識別碼。

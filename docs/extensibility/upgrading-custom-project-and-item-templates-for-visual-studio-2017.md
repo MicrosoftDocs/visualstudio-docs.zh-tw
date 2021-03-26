@@ -6,18 +6,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 84e9b08350cf5977269bfbcf28ca5335e17f024d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8442e24bf971b8a2a0bcf5baeeb397e4646ba766
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893401"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060272"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升級自訂 Visual Studio 的專案與項目範本2017
 

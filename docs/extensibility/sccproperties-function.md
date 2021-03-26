@@ -1,6 +1,6 @@
 ---
 description: 此函數會顯示檔案或專案的原始檔控制屬性。
-title: SccProperties 函式 |Microsoft 檔
+title: SccProperties 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccProperties function
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 410febfbbb79cb352b6247139a11b1c49f3cde9c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 56306bb7c248ea500e16964c0929f34a27187298
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220530"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056515"
 ---
 # <a name="sccproperties-function"></a>SccProperties 函式
 此函數會顯示檔案或專案的原始檔控制屬性。

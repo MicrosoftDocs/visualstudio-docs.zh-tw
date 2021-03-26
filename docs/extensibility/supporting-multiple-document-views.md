@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5360f67714e1da4f7372ee51eb4f75cc8835c1fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54ee028c6a7db2d5d2ea1ab609be6c2887c9829
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965118"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056203"
 ---
 # <a name="supporting-multiple-document-views"></a>支援多個文件檢視
 您可以為編輯器建立個別的檔資料和檔視圖物件，以提供多個檔的觀點。 有些情況下，其他檔視圖會很有用：
@@ -26,7 +26,7 @@ ms.locfileid: "99965118"
 
 - 表單和程式碼視圖支援：您希望編輯器提供不同類型的觀點。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]例如，提供表單檢視和程式碼視圖。
 
-  如需這項功能的詳細資訊，請參閱 Visual Studio 套件範本所建立之自訂編輯器專案中 EditorFactory.cs 檔案的 CreateEditorInstance 程式。 如需此專案的詳細資訊，請參閱 [逐步解說：建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)。
+  如需這項操作的詳細資訊，請參閱 Visual Studio 套件範本所建立之自訂編輯器專案中 EditorFactory .cs 檔案中的 CreateEditorInstance 程式。 如需此專案的詳細資訊，請參閱 [逐步解說：建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)。
 
 ## <a name="synchronizing-views"></a>同步處理視圖
  當您執行多個視圖時，檔資料物件會負責保持所有視圖與資料同步。 您可以使用上的事件處理介面 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> ，將多個資料檢視與資料同步。

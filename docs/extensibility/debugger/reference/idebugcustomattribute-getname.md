@@ -1,6 +1,6 @@
 ---
 description: 取得自訂屬性的名稱。
-title: IDebugCustomAttribute：： GetName |Microsoft 檔
+title: IDebugCustomAttribute：： GetName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetName
 ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 313408639b0a93faef0c63c0add92dc1ca2e947b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7be47a763d4809d6e62b65660c39187d2d130065
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163053"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088064"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 取得自訂屬性的名稱。

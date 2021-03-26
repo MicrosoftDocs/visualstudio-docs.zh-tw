@@ -1,26 +1,26 @@
 ---
 description: 根據給定的應用程式域識別碼，判斷是否已針對指定的模組載入偵錯工具符號。
-title: IDebugComPlusSymbolProvider：： AreSymbolsLoaded |Microsoft 檔
+title: IDebugComPlusSymbolProvider：： AreSymbolsLoaded |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - AreSymbolsLoaded
 - IDebugComPlusSymbolProvider::AreSymbolsLoaded
 ms.assetid: bbf8707d-f89c-4177-b019-d519f1ec6f4a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4e071f18442f66711b59c1063e7c2770ed772c60
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 567a0906544a28c2f145e8b4361045b56b6f9278
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163976"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088298"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 根據給定的應用程式域識別碼，判斷是否已針對指定的模組載入偵錯工具符號。

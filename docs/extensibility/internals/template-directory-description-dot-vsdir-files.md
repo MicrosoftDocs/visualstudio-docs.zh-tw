@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2b56c061ce6e3124a7ed5a5dc00e41c3964204
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bdd21dfa9fe5aae11553bb0268017690aba46fe9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898252"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080498"
 ---
 # <a name="template-directory-description-vsdir-files"></a>範本目錄描述檔 (.Vsdir)
 範本目錄描述檔 ( 的) 是一個文字檔，可讓整合式開發環境 (IDE) ，在對話方塊中顯示與專案相關聯的資料夾、wizard .vsz 檔案和範本檔案。 每個檔案或資料夾的內容都包含一筆記錄。 雖然通常只會提供一個 vsdir 檔案來描述多個資料夾、嚮導或範本檔案，但會合並參考位置中的所有 vsdir 檔案。
@@ -33,7 +33,7 @@ HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
 SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 ```
 
- 在此情況下，有兩筆記錄在一個檔案中。 分行符號 (換行字元) 分隔每一筆記錄。 每一行都代表不同的檔案類型。 管道 ( # A0) 字元會分隔每一筆記錄中的欄位。 單一目錄可以包含多個檔案名不同的檔案，或者每個檔案類型可以有一個 vsdir 檔案。
+ 在此情況下，有兩筆記錄在一個檔案中。 分行符號 (換行字元) 分隔每一筆記錄。 每一行都代表不同的檔案類型。 管道 (&#124;) 字元分隔每一筆記錄中的欄位。 單一目錄可以包含多個檔案名不同的檔案，或者每個檔案類型可以有一個 vsdir 檔案。
 
 ## <a name="fields"></a>欄位
  下表列出為每筆記錄指定的欄位。

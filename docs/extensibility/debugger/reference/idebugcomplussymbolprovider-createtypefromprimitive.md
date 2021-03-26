@@ -1,26 +1,26 @@
 ---
 description: 從指定的基本類型建立類型。
-title: IDebugComPlusSymbolProvider：： CreateTypeFromPrimitive |Microsoft 檔
+title: IDebugComPlusSymbolProvider：： CreateTypeFromPrimitive |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 - CreateTypeFromPrimitive
 ms.assetid: 37213cc2-a038-42ea-9b28-3ae40d4cfe69
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4fb311cbbfdca2a594bf993df83f239c83b5ea26
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f09e61efe513d5698af6fc9a64e1d7625585fa8c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163949"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088285"
 ---
 # <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 從指定的基本類型建立類型。

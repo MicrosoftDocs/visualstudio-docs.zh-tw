@@ -11,17 +11,17 @@ helpviewer_keywords:
 - vsix
 - packages
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0127b16438191a7d4f10ebf351b697455f72b16
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2a2c9703eb41c1a3e5baa023d8240b56ccbb13b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928025"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056359"
 ---
 # <a name="signing-vsix-packages"></a>簽署 VSIX 套件
 擴充功能元件不需要經過簽署，就可以在 Visual Studio 中執行，但這是很好的作法。
@@ -42,7 +42,7 @@ ms.locfileid: "99928025"
 
 3. 從 VisualStudioExtensibility 搜尋 VSIXSignTool 並安裝 NuGet 套件。
 
-4. 您現在可以從專案的本機套件位置執行 VSIXSignTool。 請參閱工具的命令列說明，以瞭解簽署案例 ( # A0/？ ) 。
+4. 您現在可以從專案的本機套件位置執行 VSIXSignTool。 請參閱工具的命令列說明，以瞭解您的簽署案例 (VSIXSignTool.exe/？ ) 。
 
    例如，使用受密碼保護的憑證檔案來簽署：
 

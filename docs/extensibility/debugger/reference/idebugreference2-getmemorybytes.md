@@ -1,6 +1,6 @@
 ---
 description: 取得實際包含參考值的記憶體位元組。
-title: IDebugReference2：： GetMemoryBytes |Microsoft 檔
+title: IDebugReference2：： GetMemoryBytes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetMemoryBytes
 ms.assetid: 2006cb2b-1dfa-4a2d-8e3e-db2ce0302e0d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8d5e12b5c26bb5216fdba173dcc4cbb284f27d7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 78ea4e0551ac0400b65cf695681d9b0c44f31ef0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151359"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071424"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
 取得實際包含參考值的記憶體位元組。 保留供未來使用。

@@ -1,6 +1,6 @@
 ---
 description: 從指定的進程抓取正在執行的程式清單。
-title: IDebugProgramProvider2：： GetProviderProcessData |Microsoft 檔
+title: IDebugProgramProvider2：： GetProviderProcessData |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::GetProviderProcessData
 ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b878a6731a9a7f2bf58bf55530d0b5f83cc978de
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ad388a552a34ebd49819987a20f4876193a96658
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151554"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071476"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 從指定的進程抓取正在執行的程式清單。

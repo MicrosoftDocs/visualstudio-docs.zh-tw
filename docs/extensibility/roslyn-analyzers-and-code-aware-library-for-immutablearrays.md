@@ -6,17 +6,17 @@ titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3bdcc9c35f5acaf9937bd18b0160f9e5a58161c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875519"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060578"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>適用于適用于 immutablearray 的 Roslyn 分析器和程式碼感知程式庫
 
@@ -66,7 +66,7 @@ Console.WriteLine("b2.Length = { 0}", b2.Length);
 
 從主功能表選擇 [檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊中，于左側導覽列中的 [ **c #** 專案] 下 **選擇 [擴充** 性]，然後在右窗格中選擇 [ **具有程式碼修正的分析器** ] 專案範本。 輸入名稱，並確認對話方塊。
 
-範本會開啟 *DiagnosticAnalyzer.cs* 檔案。 選擇 [編輯器緩衝區] 索引標籤。這個檔案的分析器類別 (由您提供的專案) 衍生自 `DiagnosticAnalyzer` (ROSLYN API 類型) 的名稱所組成。 您的新類別 `DiagnosticAnalyzerAttribute` 會宣告您的分析器與 c # 語言相關，以便編譯器探索和載入您的分析器。
+範本會開啟 *DiagnosticAnalyzer .cs* 檔案。 選擇 [編輯器緩衝區] 索引標籤。這個檔案的分析器類別 (由您提供的專案) 衍生自 `DiagnosticAnalyzer` (ROSLYN API 類型) 的名稱所組成。 您的新類別 `DiagnosticAnalyzerAttribute` 會宣告您的分析器與 c # 語言相關，以便編譯器探索和載入您的分析器。
 
 ```csharp
 [DiagnosticAnalyzer(LanguageNames.CSharp)]

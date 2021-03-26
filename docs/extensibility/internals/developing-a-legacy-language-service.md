@@ -13,17 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - language services, developing
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f61337b6dbdef158c7fb7ebe42d0af9f79822fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59c06c96d2a0263c9e76ed4359e0fac93ab2ab25
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959528"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056723"
 ---
 # <a name="develop-a-legacy-language-service"></a>開發舊版語言服務
 本節連結的主題可協助您建立舊版語言服務。

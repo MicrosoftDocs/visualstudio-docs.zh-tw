@@ -1,6 +1,6 @@
 ---
 description: 取得自訂屬性類別類型。
-title: IDebugCustomAttribute：： GetAttributeTypeField |Microsoft 檔
+title: IDebugCustomAttribute：： GetAttributeTypeField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetAttributeTypeField
 ms.assetid: d6ce26d5-42ba-44c1-8659-0516db5bc82d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f9ea62b012cd58aac44e5a2d37d4dc6e3b35ca92
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d0d0cfdfcdb49c934d9f4c0288f66a52e3e48f49
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154518"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088090"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 取得自訂屬性類別類型。

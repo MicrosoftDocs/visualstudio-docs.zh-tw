@@ -1,22 +1,22 @@
 ---
 description: 表示 debug 選擇性修飾詞。
-title: IDebugModOpt |Microsoft 檔
+title: IDebugModOpt |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugModOpt interface
 ms.assetid: ebd525e3-d140-4071-9d8c-41871de4125e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 047c01f78931e1b13110640952c67c11a68bc8a2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ffb235d58c254d130636da0f4b97961c11f9a372
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149856"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087895"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
 表示 debug 選擇性修飾詞。

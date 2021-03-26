@@ -8,17 +8,17 @@ helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20287ba123c5736c9eb7077622623f4a739bde5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ffb00ca42376f8b7c150552c862bba7a24a5c1fb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963467"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056762"
 ---
 # <a name="detect-system-requirements"></a>偵測系統需求
 除非安裝 Visual Studio，否則 VSPackage 無法運作。 當您使用 Microsoft Windows Installer 來管理 VSPackage 的安裝時，您可以設定安裝程式來偵測是否已安裝 Visual Studio。 您也可以將它設定為檢查系統是否有其他需求，例如特定版本的 Windows 或特定的 RAM 數量。

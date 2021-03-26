@@ -10,17 +10,17 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14fc4a44a85171d209ec227f20e47775b34be22d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 627c0b5184588f77188928b6355a9034a3a3465e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898256"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080540"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>舊版語言服務中的語法上色
 語法顏色標示是一種功能，可在不同的色彩和樣式的原始程式檔中顯示不同的程式設計語言元素。 若要支援這項功能，您必須提供剖析器或掃描器，以識別檔案中的詞法元素或標記類型。 許多語言會區分關鍵字、分隔符號 (例如括弧或大括弧) 和批註，方法是以不同方式標示它們。

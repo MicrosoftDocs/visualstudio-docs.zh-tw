@@ -1,6 +1,6 @@
 ---
 description: 抓取在進程中執行之所有線程的清單。
-title: IDebugProcess2：： EnumThreads |Microsoft 檔
+title: IDebugProcess2：： EnumThreads |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::EnumThreads
 ms.assetid: 05677385-7a7f-4545-8438-af00dde85db0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13d348376429bafaf113e6fb7dbd181bed4dab8f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6c502504b3a31f3e4689db34f907f9596b214877
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142605"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071606"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 抓取在進程中執行之所有線程的清單。

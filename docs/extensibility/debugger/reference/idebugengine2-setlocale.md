@@ -1,6 +1,6 @@
 ---
 description: 設定 debug engine (DE) 的地區設定。
-title: IDebugEngine2：： SetLocale |Microsoft 檔
+title: IDebugEngine2：： SetLocale |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetLocale
 ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54cfd2d9d51cbad414cfb481b88f1e3277500efa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8f06ffce2d4fdda772cc29d09057499c32dd6f77
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153907"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087921"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 設定 debug engine (DE) 的地區設定。

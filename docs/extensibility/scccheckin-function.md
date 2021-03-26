@@ -1,6 +1,6 @@
 ---
 description: 此函式會將先前簽出的檔案簽入至原始檔控制系統，並儲存變更並建立新的版本。
-title: SccCheckin 函式 |Microsoft 檔
+title: SccCheckin 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckin function
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a835ead5fb0404b78d9e9c9ecc92ee0c73eaf252
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d6864549c6825092b6ad26be199f8c7b5ea6bab6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220855"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060428"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函式
 此函式會將先前簽出的檔案簽入至原始檔控制系統，並儲存變更並建立新的版本。 呼叫此函式時，會使用計數和要簽入之檔案的名稱陣列。

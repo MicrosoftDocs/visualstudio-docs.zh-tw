@@ -1,6 +1,6 @@
 ---
 description: 抓取偵測引擎 (DE) 所要進行的所有程式的清單。
-title: IDebugEngine2：： EnumPrograms |Microsoft 檔
+title: IDebugEngine2：： EnumPrograms |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::EnumPrograms
 ms.assetid: 56bf98eb-beec-4e5f-9ebe-46c922e54c56
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11b5c95ffa5650ea50afa993b1cc1854a0bb60c7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9ee1dfeebb92bc4a0215e5e09ed8786a81ad6167
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153998"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088038"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
 抓取偵測引擎 (DE) 所要進行的所有程式的清單。

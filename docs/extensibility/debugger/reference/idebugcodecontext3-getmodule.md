@@ -1,25 +1,25 @@
 ---
 description: 抓取 debug 模組的介面參考。
-title: IDebugCodeCoNtext3：： GetModule |Microsoft 檔
+title: IDebugCodeCoNtext3：： GetModule |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3::GetModule
 ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1870b5e4d678ab6718f7c0cc904009dac8977d67
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 399b0b603bc104d9d0869f7a26e0b5f60565c93a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164067"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088337"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 抓取 debug 模組的介面參考。

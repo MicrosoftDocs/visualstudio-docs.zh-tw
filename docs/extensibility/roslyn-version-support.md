@@ -6,17 +6,17 @@ ms.date: 04/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - roslyn package versions
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f76a8dcdbb644fe456c62fca7de6fb7afe96d556
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8fd9e62de70dd5bff81b5fdaee05822c7171981e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935883"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060506"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET 編譯器平臺套件版本參考
 

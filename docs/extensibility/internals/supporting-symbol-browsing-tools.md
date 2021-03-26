@@ -15,17 +15,17 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 377cdd9875ebc2fddd80c673e53ecb318d171e47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d54f56ae3bc5fd5956f67400d84edfd4c8c9e55c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875558"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080563"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支援符號瀏覽工具
 **物件瀏覽器**、 **類別檢視**、 **呼叫瀏覽器** 和 **尋找符號結果** 工具提供 Visual Studio 中的符號流覽功能。 這些工具會顯示符號的階層式樹狀檢視，並顯示樹狀結構中符號之間的關聯性。 這些符號可能表示命名空間、物件、類別、類別成員，以及各種元件中所含的其他語言元素。 元件包含 Visual Studio 專案、外部 .NET Framework 元件和類型 ( .tlb) 程式庫。 如需詳細資訊，請參閱 [查看程式碼的結構](../../ide/viewing-the-structure-of-code.md)。
