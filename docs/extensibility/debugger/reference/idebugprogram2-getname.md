@@ -1,6 +1,6 @@
 ---
 description: IDebugProgram2：： GetName 取得程式的名稱。
-title: IDebugProgram2：： GetName |Microsoft 檔
+title: IDebugProgram2：： GetName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetName
 ms.assetid: a54cbf13-b3e3-4c9f-8b8d-13573232dfb0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f46aaf8dc7ca56f76e67668522d28ff5e59294d8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 58bad2d302e2a36590a39b0c3459b6bb89ba91e0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169037"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065342"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
 取得程式的名稱。

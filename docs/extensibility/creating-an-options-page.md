@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1069109cbda6b0385c9409a12f9f9c674ddec14c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb94554b4ac1af30d8187a8ab75aa83f65dccc72
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877482"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055800"
 ---
 # <a name="create-an-options-page"></a>建立選項頁面
 
@@ -166,7 +166,7 @@ ms.locfileid: "99877482"
 
 7. 將 **TextBox** 控制項加入使用者控制項。
 
-     在 [ **屬性** ] 視窗中，按一下工具列上的 [ **事件** ] 按鈕，然後按兩下 [ **離開** ] 事件。 新的事件處理常式會出現在 *MyUserControl.cs* 程式碼中。
+     在 [ **屬性** ] 視窗中，按一下工具列上的 [ **事件** ] 按鈕，然後按兩下 [ **離開** ] 事件。 新的事件處理常式會出現在 *MyUserControl .cs* 程式碼中。
 
 8. 將公用 `OptionsPage` 欄位、方法加入 `Initialize` 至控制項類別，並更新事件處理常式，以將選項值設定為文字方塊的內容：
 
@@ -249,7 +249,7 @@ ms.locfileid: "99877482"
 
      此程式碼會呼叫 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 以建立或取出 `OptionPageGrid` 實例。 `OptionPageGrid` 呼叫 <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 以載入其選項，也就是公用屬性。
 
-2. 現在，加入名為 **MyToolsOptionsCommand** 的自訂命令專案範本來顯示值。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *MyToolsOptionsCommand.cs*。
+2. 現在，加入名為 **MyToolsOptionsCommand** 的自訂命令專案範本來顯示值。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *MyToolsOptionsCommand .cs*。
 
 3. 在 *MyToolsOptionsCommand* 檔案中，以下列內容取代命令的 `ShowMessageBox` 方法主體：
 

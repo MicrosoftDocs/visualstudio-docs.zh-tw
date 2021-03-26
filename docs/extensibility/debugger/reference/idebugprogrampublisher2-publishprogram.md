@@ -1,6 +1,6 @@
 ---
 description: 此方法可讓您將程式用於偵錯工具， (DEs) 和會話偵錯工具管理員。
-title: IDebugProgramPublisher2：:P ublishProgram |Microsoft 檔
+title: IDebugProgramPublisher2：:P ublishProgram |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::PublishProgram
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2904376efa1a6798cbba967b93ad1c93d395b919
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ba1ac74813ea0c3ae5b7eadb26d540b7bfe20707
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171585"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065225"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 此方法可讓您將程式用於偵錯工具， (DEs) 和會話偵錯工具管理員。

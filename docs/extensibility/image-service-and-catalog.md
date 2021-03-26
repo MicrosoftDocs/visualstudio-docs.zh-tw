@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77fdc39ccccb7728749edd55527741c15bb1bcb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4483d73a5e6124006f09d05065b6f75f7a654e47
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912744"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082123"
 ---
 # <a name="image-service-and-catalog"></a>映射服務和目錄
 本逐步指南包含採用 Visual Studio 2015 中引進的 Visual Studio 映射服務和映射目錄的指導方針和最佳作法。
@@ -752,7 +752,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 - 我正在更新 CPS 專案系統。 **ImageName** 和 **StockIconService** 會發生什麼事？
 
-  - 當 CPS 更新為使用名字標記時，會移除這些物件。 您不再需要呼叫 **StockIconService**，只要使用 CPS 公用程式中的 **ToProjectSystemType ( # B1** 擴充方法，就能將所需的 **KnownMoniker** 傳遞給方法或屬性。 您可以在下面找到從 **ImageName** 到 **KnownMonikers** 的對應：
+  - 當 CPS 更新為使用名字標記時，會移除這些物件。 您不再需要呼叫 **StockIconService**，只要使用 CPS 公用程式中的 **ToProjectSystemType ()** 擴充方法，將所需的 **KnownMoniker** 傳遞給方法或屬性即可。 您可以在下面找到從 **ImageName** 到 **KnownMonikers** 的對應：
 
     |**ImageName**|**KnownMoniker**|
     |-|-|

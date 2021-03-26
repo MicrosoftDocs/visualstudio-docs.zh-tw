@@ -1,6 +1,6 @@
 ---
 description: 使用指定的資料物件來更新物件的資料，並傳回代表物件新資料的新資料物件。
-title: IPropertyProxyEESide：： InPlaceUpdateObject |Microsoft 檔
+title: IPropertyProxyEESide：： InPlaceUpdateObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::InPlaceUpdateObject
 ms.assetid: abf89411-1853-4f23-b244-d5e0afa197b1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2119db579863bea2ad0b9fa5834996d658308549
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 6fb6c098d26148db39493b25f199c6819fb81d27
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225587"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082409"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 使用指定的資料物件來更新物件的資料，並傳回代表物件新資料的新資料物件。

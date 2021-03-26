@@ -1,6 +1,6 @@
 ---
 description: 允許進程接收埠事件的通知。
-title: IDebugProgramProvider2：： WatchForProviderEvents |Microsoft 檔
+title: IDebugProgramProvider2：： WatchForProviderEvents |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb00d177cfdb5fe8451b914926f29f591d8f924d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e6695e3fd3a9603c9f8b3700ef1e361ec383fea4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151476"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065251"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 允許進程接收埠事件的通知。

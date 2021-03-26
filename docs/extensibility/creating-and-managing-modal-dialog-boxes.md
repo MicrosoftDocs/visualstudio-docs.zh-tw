@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 949f136913a30848ba13185bc699fa0bc51ac456
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96ac3c9ee92cd9124485dde29814f4a1e5c942c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884971"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055748"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>建立和管理模式對話方塊
 當您在 Visual Studio 內建立強制回應對話方塊時，您必須確定對話方塊的父視窗在對話方塊顯示時已停用，然後在對話方塊關閉之後重新啟用父視窗。 如果您沒有這麼做，可能會收到錯誤： *Microsoft Visual Studio 無法關機，因為強制回應對話方塊正在使用中。關閉作用中的對話方塊，然後再試一次。*
@@ -40,7 +40,7 @@ ms.locfileid: "99884971"
 
     - *System.Xaml*
 
-3. 在 *OpenDialog.cs* 中，新增下列 `using` 語句：
+3. 在 *OpenDialog* 中，加入下列 `using` 語句：
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Visual Studio, supporting multiple versions
 - VSPackages, side-by-side compatibility
 ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52b8bf1be57e10790d91d4712e56d707621cc7df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d455ebf18ee8817e2adac2fa266592594ca7e6c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889937"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056099"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>支援多個 Visual Studio 版本
 此詞彙 *並存* 表示您可以在同一部電腦上安裝和維護產品的多個版本。 針對 Vspackage，這表示使用者可以在同一部電腦上安裝數個 Visual Studio 版本。 不過，您不能將 Vspackage 的並存版本載入 Visual Studio 的單一版本。

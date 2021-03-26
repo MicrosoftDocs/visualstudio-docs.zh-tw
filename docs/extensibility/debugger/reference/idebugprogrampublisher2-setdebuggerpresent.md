@@ -1,6 +1,6 @@
 ---
 description: 告知程式發行者有偵錯工具存在且正在執行。
-title: IDebugProgramPublisher2：： SetDebuggerPresent |Microsoft 檔
+title: IDebugProgramPublisher2：： SetDebuggerPresent |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::SetDebuggerPresent
 ms.assetid: c88c3ff4-3632-4199-b5de-83c6d21bcf75
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3db8703ed05fd4a386b9265998de2f27017d0d76
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b9b7f5cb8d479d19bd9d7a5f89de065c52e581ec
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161283"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065121"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 告知程式發行者有偵錯工具存在且正在執行。

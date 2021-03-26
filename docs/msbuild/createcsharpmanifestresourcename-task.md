@@ -2,7 +2,7 @@
 title: CreateCSharpManifestResourceName 工作 | Microsoft Docs
 description: '使用 MSBuild CreateCSharpManifestResourceName 工作，從給定的 .resx 檔案名或其他資源建立 c # 樣式的資訊清單名稱。'
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 11/15/2020
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3406a5f61c9a4aa1c9e2a3c6388741c3ae0fa0f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e1bd096c2a9c7763a3be0611f3716f61df22856
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901448"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055865"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName 工作
 
@@ -43,7 +43,7 @@ ms.locfileid: "99901448"
 
 ## <a name="remarks"></a>備註
 
- [CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md)工作會決定要指派給指定 *.resx* 或其他資源檔的適當資訊清單資源名稱。 此工作會為資源檔提供邏輯名稱，然後將它附加到輸出參數做為中繼資料。
+ [CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md)工作會決定要指派給指定 *.resx* 或其他資源檔的適當資訊清單資源名稱。 此工作會為資源檔提供邏輯名稱，然後將它附加到輸出參數做為中繼資料。
 
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些額外參數的清單及其描述，請參閱 [TaskExtension 基類（base class](../msbuild/taskextension-base-class.md)）。
 

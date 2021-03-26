@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22ce6497b820e1dcd37315f9d74cb97de4cc34e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9010d2619b76c2932ca1a8a5aed8db6c6a5cf075
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837732"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055319"
 ---
 # <a name="attach-after-a-launch"></a>在啟動後附加
 程式啟動之後，就可以將偵錯工具附加 (DE) 的程式。

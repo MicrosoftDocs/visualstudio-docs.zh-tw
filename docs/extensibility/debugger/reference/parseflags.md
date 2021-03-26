@@ -1,6 +1,6 @@
 ---
 description: 指定如何剖析運算式。
-title: PARSEFLAGS |Microsoft 檔
+title: PARSEFLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - PARSEFLAGS enumeration
 ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 192e4de399540ce189bbf52cbb0f615b2b9bc855
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f7dabef93e8160a2319bc5cefeb189fa335f4b9f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222142"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082331"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 指定如何剖析運算式。

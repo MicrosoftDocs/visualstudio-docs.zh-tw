@@ -1,6 +1,6 @@
 ---
 description: 當載入或卸載模組時，debug engine 會將這個介面傳送 (DE) 至會話 debug manager (SDM) 。
-title: IDebugModuleLoadEvent2 |Microsoft 檔
+title: IDebugModuleLoadEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModuleLoadEvent2 interface
 ms.assetid: 7d26fb23-5d49-4ba7-b7c5-3aed4d7be81e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59b5e9e7619434b9ff4d914fc7b955ebbab4ace2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f6030e5962c0544a63b7b9658622447324a15792
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149843"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065355"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 當載入或卸載模組時，debug engine 會將這個介面傳送 (DE) 至會話 debug manager (SDM) 。
@@ -43,7 +43,7 @@ IDebugModuleLoadEvent2 : IUnknown
 |[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|取得正在載入或卸載的模組。|
 
 ## <a name="remarks"></a>備註
- Visual Studio 會使用此事件讓 **模組** 視窗保持在最新狀態。
+ Visual Studio 使用此事件讓 **模組** 視窗保持在最新狀態。
 
 ## <a name="requirements"></a>規格需求
  標頭： msdbg。h

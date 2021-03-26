@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5486d5faa4f994883d2a32d152ceec59c65629ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b301770a54baf0416aa9fcc838a9a6633252fbe
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924959"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073127"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>如何：在 managed 程式碼中管理多個執行緒
 如果您的 managed VSPackage 延伸模組會呼叫非同步方法，或具有在 Visual Studio UI 執行緒以外的執行緒上執行的作業，您應該遵循下面所述的指導方針。 您可以讓 UI 執行緒保持回應，因為它不需要在另一個執行緒上等候工作完成。 您可以讓程式碼更有效率，因為您沒有額外的執行緒佔用堆疊空間，而且您可以讓它更可靠且更容易進行偵錯工具，因為您可以避免鎖死和沒有回應的程式碼。

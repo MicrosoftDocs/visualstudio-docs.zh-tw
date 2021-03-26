@@ -1,6 +1,6 @@
 ---
 description: 此介面代表模組，也就是程式的可執行單元，例如 DLL。
-title: IDebugModule2 |Microsoft 檔
+title: IDebugModule2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule2 interface
 ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7cc14d4f33924a04b25344c4c624a633b97ff7b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 848aa60ad7b8343d84489f460cfcb5fb6ec2d77d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150480"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065550"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 此介面代表模組，也就是程式的可執行單元，例如 DLL。

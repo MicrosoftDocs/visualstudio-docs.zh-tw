@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87b5bcc94ed11e18de763bd1db7c59bdc4796fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39a58bcbad79191f54a7b4eeb2aa12e90d8a6e44
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966379"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073283"
 ---
 # <a name="load-vspackages"></a>Load Vspackage
 Vspackage 只有在需要它們的功能時，才會載入 Visual Studio。 例如，當 Visual Studio 使用專案 factory 或 VSPackage 所執行的服務時，就會載入 VSPackage。 這項功能稱為延遲載入，會盡可能用來改善效能。

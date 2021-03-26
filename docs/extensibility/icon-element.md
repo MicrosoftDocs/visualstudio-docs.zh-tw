@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Icon
 - Icon element (VSCT XML schema)
 ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4e68889ae6ea8396795137243cf732a9b028931
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52ccb8093b61e0458f7c3caefea6f826609aa51d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883268"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082136"
 ---
 # <a name="icon-element"></a>Icon 元素
 Icon 標記的 guid 屬性是已定義點陣圖的 guid。 `id`屬性會選取點陣圖區域中的位置。 這是選擇性的項目。 如果未包含此元素，則會隱含 **guidOfficeIcon： msotcidNoIcon** 的值。

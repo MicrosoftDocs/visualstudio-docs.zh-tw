@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - verbs, setting default
 ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 157e8b4b4d7a00845fb76e0105414879cb1f472d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 083eef2454a9e805b1cb8b3e85a6d7d81263a0dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924858"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073049"
 ---
 # <a name="manage-side-by-side-file-associations"></a>管理並存檔案關聯
 

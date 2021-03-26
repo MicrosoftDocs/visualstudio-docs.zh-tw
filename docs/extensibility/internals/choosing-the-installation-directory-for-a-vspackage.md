@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea697e6e445eeae117bb6bf1d1603220ec0c0675
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6442a8475c862693b851be783ae85bbb0a2e90af
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874070"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082110"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>選擇 VSPackage 的安裝目錄
 VSPackage 及其支援的檔案必須位於使用者的檔案系統上。 位置取決於 VSPackage 是受控或非受控、並存的版本控制配置，以及使用者選擇。

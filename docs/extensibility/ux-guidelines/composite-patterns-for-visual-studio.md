@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c6f609842f2531fe39158e871a330e136603433
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952092"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090053"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>適用於 Visual Studio 的複合模式
 複合模式會將互動和設計項目合併在不同的設定中。 Visual Studio 中與一致性相關的一些最重要複合模式包括：
@@ -395,7 +395,7 @@ ms.locfileid: "99952092"
 #### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> 繪圖物件選取外觀
  選取控點是在物件的周框方塊周圍以矩形模式繪製的正方形。 下圖顯示繪圖物件可以有控制碼、調整大小和就地編輯外觀的各種狀態範例。 您應使用 **GetSystemMetrics** API，將控制碼的大小系結至視窗框線和邊緣度量。
 
-| 州 | 外觀 | 視覺效果詳細資料 |
+| 狀態 | 外觀 | 視覺效果詳細資料 |
 |-------------------------|---------------| - |
 | **未選取** | 預設 | ![預設按鈕狀態](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
 | **主要選取範圍** | 小時 | ![使用調整大小控點的主要選取範圍](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize") |
@@ -485,7 +485,7 @@ ms.locfileid: "99952092"
 |時間範圍|視窗的大小和位置|當視窗關閉時<br /><br /> 當 Visual Studio 模式變更時<br /><br /> 當 Visual Studio 會話結束時|專案 **( .suo) 檔案的使用者選項**<br /><br /> 視窗設定的自訂選項檔|
 |文件|檔中目前的選取範圍<br /><br /> 檔的視圖<br /><br /> 使用者造訪的最後幾個地方|儲存檔時|專案 **( .suo) 檔案的使用者選項**|
 |Project|檔案的參考<br /><br /> 磁片上目錄的參考<br /><br /> 其他軟體的參考<br /><br /> 單元<br /><br /> 專案本身的狀態資訊|儲存專案時|專案檔|
-|解決方案|專案的參考<br /><br /> 檔案的參考|當專案或方案儲存時|**方案 ( .sln)** 檔|
+|解決方法|專案的參考<br /><br /> 檔案的參考|當專案或方案儲存時|**方案 ( .sln)** 檔|
 |**工具 > 選項** 中的設定|鍵盤自訂<br /><br /> 工具列自訂<br /><br /> 色彩配置|當 **工具 > 選項** ] 對話方塊關閉時<br /><br /> 當 Visual Studio 會話結束時|**HKEY_Current_User** 中的登錄|
 
  使用者正在執行的工作，以及在執行此工作時，指定設定是否要儲存在會話) 期間的記憶體 (、以登錄) 設定的形式 (儲存在會話中，做為專案或方案檔本身的一部分，作為 **方案選項 (**) 檔的一部分，或做為只有該軟體元件知道的自訂設定檔案。 上表顯示數個可儲存設定的事件。 不過，在其他情況下，您可能會想要儲存狀態：

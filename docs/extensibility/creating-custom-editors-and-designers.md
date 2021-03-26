@@ -8,17 +8,17 @@ helpviewer_keywords:
 - designers [Visual Studio SDK]
 - editors [Visual Studio SDK], custom
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb0c688e40df5247574e7ba87b4e04d5cfaba2ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2882cfa103627672e5c96a0e3d4b2a23b4b4ba9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846890"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055774"
 ---
 # <a name="create-custom-editors-and-designers"></a>建立自訂編輯器和設計工具
 

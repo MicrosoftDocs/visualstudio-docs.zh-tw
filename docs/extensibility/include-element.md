@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Include element (VSCT XML schema)
 - VSCT XML schema elements, Include
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d718178bf7490d29c0668d892add4c302b8925a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd64f897dc2a089a2e94f5e0c53e3ef116f7b385
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893629"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082097"
 ---
 # <a name="include-element"></a>Include 元素
 Include 元素會指定一個檔案，該檔案位於提供的 include 路徑上，以插入目前的檔案中。  所有定義的符號和類型都會成為編譯結果的一部分。

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <CustomDataSignature> Element (Visual Studio Templates)
 - CustomDataSignature Element (Visual Studio Templates)
 ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5f42b3c5fe1dc5b9ab9697275876509eb0f8509
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a07f53beb7e73d5608dcb6f75c8c55b353a10123
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946055"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055605"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a> (Visual Studio 範本的 CustomDataSignature 元素) 
 指定要尋找自訂資料的文字簽章。

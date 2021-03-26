@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 03/04/2021
+ms.date: 03/19/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 8371b9baa22b72eff0c829426b1b39bcf42398f2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 60e1aca5e0f561539f3e27cf36dac67bb92c4ddf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221180"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082019"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -29,12 +29,12 @@ ms.locfileid: "102221180"
 >[!div class="button"]
 >[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
-使用 Visual Studio 2019，您會獲得同類產品中最佳的工具和服務，任何開發人員、任何應用程式及任何平台均適用。 無論您是第一次使用 Visual Studio，或是多年來使用 Visual Studio，最新版本都有很大的需要！
+使用 Visual Studio 2019，您會獲得同類產品中最佳的工具和服務，任何開發人員、任何應用程式及任何平台均適用。 無論您是第一次使用 Visual Studio，還是使用了數年的時間，我們最新的版本都有很大的需要！
 
 以下是最新功能的概要回顧：
 
 * **[開發](#develop)**：利用改良的效能、即時程式碼清除及更好的搜尋結果，保持焦點和生產力。
-* **[共同](#collaborate)** 作業：透過 Git 優先工作流程、即時編輯和偵錯工具，以及直接在 Visual Studio 中進行程式碼的檢查，享受自然的共同作業。
+* **[共同](#collaborate)** 作業：透過 Git 優先工作流程、即時編輯和偵錯工具，以及直接在 Visual Studio 中進行程式碼審核，享受自然的共同作業。
 * **[Debug](#debug)**：反白顯示並流覽至特定值、優化記憶體使用量，以及取得應用程式執行的自動快照集。
 
 如需此版本中所有新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes/)。
@@ -57,7 +57,7 @@ ms.locfileid: "102221180"
 
 #### <a name="intelligent-search-service"></a>智慧型搜尋服務
 
-**16.9 的新** 功能：使用雲端技術、人工智慧和機器學習服務，我們已改善搜尋結果。 現在，Visual Studio 中的搜尋不僅會產生更多相關的結果，還可協助您更輕鬆地探索產品功能。
+**16.9 的新** 功能：使用雲端技術、人工智慧和機器學習服務，我們已改善搜尋結果。 現在，搜尋 Visual Studio 會產生更相關的結果，但也可協助您更輕鬆地探索產品功能。
 
 如需詳細資訊，請參閱 [智慧型 Visual Studio 搜尋服務](https://devblogs.microsoft.com/visualstudio/intelligent-visual-studio-search-service/) 的 blog 文章。
 
@@ -73,7 +73,7 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) 可使用人工智慧 (AI) 來強化您的軟體開發工作。 IntelliCode 在 GitHub 上的 2,000 個開放原始碼專案中訓練 (每個專案各有超過 100 顆星) 以產生建議。
 
-![Visual Studio 2019 中的 IntelliCode 動畫](media/vs-2019/IntelliCode.gif "Visual Studio 2019 中的 IntelliCode。")
+![Visual Studio 2019 中的 IntelliCode 動畫](media/vs-2019/IntelliCode.gif "IntelliCode Visual Studio 2019。")
 
 以下是 Visual Studio IntelliCode 可協助提高生產力的幾種方式：
 
@@ -106,7 +106,7 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為個別監視器感知 (PMA) 應用程式。 現在，不論您使用的顯示縮放比例為何，Visual Studio 均可正確轉譯。
 
-   ![Visual Studio 2019 中的個別監視器感知 (PMA) 轉譯](media/vs-2019/pma-dpi-scaling.png "Visual Studio 2019 中的個別監視器感知 (PMA) 轉譯。")
+   ![Visual Studio 2019 中的個別監視器感知 (PMA) 轉譯](media/vs-2019/pma-dpi-scaling.png "每一監視器感知 (PMA 在 Visual Studio 2019 中) 轉譯。")
 
 如需詳細資訊，請參閱[使用 Visual Studio 2019 獲得更好的多監視器體驗](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) \(英文\) 部落格文章。
 
@@ -140,13 +140,13 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 
 開始視窗也包含開啟專案或解決方案、開啟本機資料夾，或建立新專案的選項。
 
-如需詳細資訊，請參閱「開始撰寫程式 [代碼：我們如何設計新的 Visual Studio 開始視窗」](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) 文章。
+如需詳細資訊，請參閱 [取得程式碼：我們如何設計新的 Visual Studio 開始視窗的](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) blog 文章。
 
 ### <a name="git-productivity"></a>Git 生產力
 
-**16.8 的新** 功能： Git 現在是 Visual Studio 2019 中的預設版本控制體驗。 我們已根據您在過去兩個版本中的意見反應，建立功能集並逐一查看。 所有人現在都已預設開啟新的體驗。 您可以從新的 Git 功能表複製、建立或開啟存放庫。 使用整合式 Git 工具視窗來認可和推送程式碼的變更、管理分支、隨時掌握遠端存放庫的最新狀態，以及解決合併衝突。
+**16.8** 中的新功能： Git 現在是 Visual Studio 2019 中的預設版本控制體驗。 我們已根據您在過去兩個版本中的意見反應，建立功能集並逐一查看。 所有人現在都已預設開啟新的體驗。 您可以從新的 Git 功能表複製、建立或開啟存放庫。 使用整合式 Git 工具視窗來認可和推送程式碼的變更、管理分支、隨時掌握遠端存放庫的最新狀態，以及解決合併衝突。
 
-如需詳細資訊，請參閱 [Visual Studio 中的 Git 體驗](git-with-visual-studio.md) 頁面。
+如需詳細資訊，請參閱 [Visual Studio 頁面中的 Git 體驗](git-with-visual-studio.md) 。
 
 ### <a name="live-share"></a>Live Share
 
@@ -154,7 +154,7 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 
 Visual Studio 2019 預設會安裝這項服務。
 
-![顯示 Visual Studio 2019 中 Live Share 共同作業功能的動畫](media/vs-2019/live-share.gif "Visual Studio 2019 中的 Live Share 共同作業功能。")
+![顯示 Visual Studio 2019 中 Live Share 共同作業功能的動畫](media/vs-2019/live-share.gif "Visual Studio 2019 中的 Live Share 協同作業功能。")
 
 如需詳細資訊，請參閱 [Visual Studio Live Share 提供即時程式碼檢閱與互動式教學](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) \(英文\) 部落格文章和 [Visual Studio 2019 現已包含 Live Share](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) \(英文\) 部落格文章。
 
@@ -190,7 +190,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 在 [監看式]、[區域變數] 和 [自動變數] 視窗的顯示方式，您也能加以格式化。 ) 按兩下任何視窗中的其中一個專案來選取 (，然後新增逗號 ( "，" ) 以存取可能格式規範的下拉式清單，其中每個都包含其預期效果的描述。
 
-   ![Visual Studio 2019 中的新 [監看式] 視窗和格式值功能](media/search-watch-window.png "Visual Studio 2019 中的新 [監看式] 視窗和 [格式值] 功能。")
+   ![Visual Studio 2019 中的新 [監看式] 視窗和格式值功能](media/search-watch-window.png "Visual Studio 2019 中的新監看式視窗和格式值功能。")
 
 如需詳細資訊，請參閱 [Visual Studio 2019 中的增強功能：在 [監看式]、[自動變數] 和 [區域變數] 視窗文章中搜尋物件和屬性](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) 。
 
@@ -206,7 +206,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ### <a name="microsoft-edge-insider-support"></a>Microsoft Edge Insider 支援
 
-**16.2 的新** 功能：您可以在 JavaScript 應用程式中設定中斷點，並使用 [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) 瀏覽器啟動「偵測會話」。 當您這樣做的時候，Visual Studio 會在已啟用偵錯功能的情況下開啟新的瀏覽器視窗，讓您可以用來在 Visual Studio 內逐步執行應用程式 JavaScript。
+**16.2 中的新** 功能：您可以在 JavaScript 應用程式中設定中斷點，並使用 [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) 瀏覽器啟動 debug 會話。 當您這樣做的時候，Visual Studio 會在已啟用偵錯功能的情況下開啟新的瀏覽器視窗，讓您可以用來在 Visual Studio 內逐步執行應用程式 JavaScript。
 
    ![瀏覽器中顯示 JavaScript 程式碼轉譯的螢幕擷取畫面](media/vs-2019/edge-chromium-breakpoint.png "瀏覽器中的 JavaScript 程式碼轉譯。")
 
@@ -214,29 +214,23 @@ Visual Studio 2019 預設會安裝這項服務。
 
 **16.4 的新** 功能：現在，使用新的可釘選屬性工具進行偵錯工具時，可更輕鬆地依屬性來識別物件。 只要將游標暫留在您要在 [監看式]、[自動變數] 和 [區域變數] 視窗的偵錯工具視窗中顯示的屬性上，選取釘選圖示，即可立即在視窗頂端看到您要尋找的資訊！
 
-   ![顯示如何使用可釘選屬性工具在 Visual Studio 偵錯工具中釘選屬性的動畫](media/vs-2019/debugger-pinnable-properties.gif "使用 [可釘選屬性] 工具，在 Visual Studio 偵錯工具中釘選屬性。")
+   ![顯示如何使用可釘選屬性工具在 Visual Studio 偵錯工具中釘選屬性的動畫](media/vs-2019/debugger-pinnable-properties.gif "使用可釘選屬性工具，在 Visual Studio 偵錯工具中釘選屬性。")
 
 如需詳細資訊，請參閱 [可釘選屬性： Debug & 以您的方式將 Managed 物件顯示為您](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/) 的 blog 文章。
 
 ## <a name="whats-next"></a>後續步驟
 
-我們對 Visual Studio 2019 的更新通常附帶可大幅改善您開發體驗的新功能。 若要深入瞭解我們最新的創新，請參閱 [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)。 如需我們在預覽版本中發行之內容的記錄，請參閱 [Preview 版本](/visualstudio/releases/2019/release-notes-preview/)資訊。 如需我們接下來打算發行的內容清單，請參閱 [Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap)。
+我們對 Visual Studio 2019 的更新通常附帶可大幅改善您開發體驗的新功能。 若要深入瞭解我們最新的創新，請參閱 [Visual Studio 的 Blog](https://devblogs.microsoft.com/visualstudio/)。 如需我們在預覽版本中發行之內容的記錄，請參閱 [Preview 版本](/visualstudio/releases/2019/release-notes-preview/)資訊。 如需我們接下來打算發行的內容清單，請參閱 [Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap)。
 
-此外，以下是目前工作中的一些新功能。
+同時，這裡有一項新功能，目前正在運作。
 
-- **適用于 GitHub Codespaces (Preview) 的 Visual Studio 2019 支援**
-
-  現在，開發人員在工作和家裡以使用了多個專案。 新功能、bug 修正、PR 評論、 &amp; 原型全都競爭時間，而且需要持續的內容切換。 [GitHub Codespaces](https://github.com/features/codespaces) 可以提供協助。 您可以完全在雲端中進行開發，並在幾秒鐘內為每個專案建立專用的自訂環境。 使用 Visual Studio 2019，您可以連線到您的 codespace，並如同在本機運作。
-
-  如需詳細資訊，請參閱 [什麼是 GitHub Codespaces](codespaces/codespaces-overview.md) 頁面。
-
-- **改進 Visual Studio 2019 中的 Git 體驗 (預覽版)**
+- **改良 Visual Studio 2019 (Preview) 的 Git 體驗**
 
    雖然新的 Git 版本控制體驗現已在 Visual Studio 2019 [16.8 版](/visualstudio/releases/2019/release-notes/)中預設為開啟，但我們仍會繼續新增功能，以增強最新預覽版本的體驗。
 
-   如需詳細資訊，請參閱 [Visual Studio 中的 Git 體驗](git-with-visual-studio.md) 頁面。
+   如需詳細資訊，請參閱 [Visual Studio 頁面中的 Git 體驗](git-with-visual-studio.md) 。
 
-如需預覽版本的詳細資訊 &mdash; 和下載連結， &mdash; 請參閱 **[Visual Studio preview](https://aka.ms/vspreview/)** 頁面。
+如需預覽版本的詳細資訊 &mdash; 和下載連結，如果您想要試用， &mdash; 請參閱 **[Visual Studio 預覽](https://aka.ms/vspreview/)** 頁面。
 
 ## <a name="give-us-feedback"></a>提供意見反應
 

@@ -1,6 +1,6 @@
 ---
 description: 從可用性中移除指定的程式節點， (DEs) 和會話 debug manager (SDM) 。
-title: IDebugProgramPublisher2：： UnpublishProgramNode |Microsoft 檔
+title: IDebugProgramPublisher2：： UnpublishProgramNode |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::UnpublishProgramNode
 ms.assetid: 57c7e6e1-b84e-4e14-ad83-cbbb64e2f526
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 32c1384eadbf4e11a31534fccce21ab271000643
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9e3ee8b699fa73e6b8a8f4abc29624364f380add
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166992"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065134"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 從可用性中移除指定的程式節點， (DEs) 和會話 debug manager (SDM) 。

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSPackages, creating reusable button groups
 - buttons, creating reusable groups
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62873d57da04f94ce1cdda16c5fe4801af5d19c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6b9c0bd759083a0d0d053133cc9f2d4d03a52389
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884919"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055735"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>建立可重複使用的按鈕群組
 命令群組是命令的集合，這些命令一律會一起出現在功能表或工具列上。 您可以重複使用任何命令群組，方法是在 *.vsct* 檔案的 CommandPlacements 區段中，將它指派給不同的父功能表。
@@ -30,7 +30,7 @@ ms.locfileid: "99884919"
 
 1. 建立名為的 VSIX 專案 `ReusableButtons` 。 如需詳細資訊，請參閱 [使用功能表命令建立延伸](../extensibility/creating-an-extension-with-a-menu-command.md)模組。
 
-2. 當專案開啟時，加入名為 **ReusableCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *ReusableCommand.cs*。
+2. 當專案開啟時，加入名為 **ReusableCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *ReusableCommand .cs*。
 
 3. 在 *.vsct* 檔案中，移至 [符號] 區段，並尋找包含專案之群組和命令的 GuidSymbol 元素。 它應該命名為 guidReusableCommandPackageCmdSet。
 

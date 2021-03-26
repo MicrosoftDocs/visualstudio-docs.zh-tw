@@ -11,17 +11,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb70931f2c26c248b2e2d41348fa26958d5348b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41290f946c198ed854cad9a7eb2af088f6fe228a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883307"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082279"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>如何：搭配專案範本使用嚮導
 
@@ -74,7 +74,7 @@ Visual Studio 提供的 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 介
 
 5. 將 wizard 執行的類別加入至 VSIX 專案。  (在 **方案總管** 中，以滑鼠右鍵按一下 VSIX 專案節點，然後依序選取 [ **加入**]、[ **新增專案**] 和 [ **類別**]。 ) 將類別命名為 **WizardImplementation**。
 
-6. 將 *WizardImplementationClass.cs* 檔案中的程式碼取代為下列程式碼：
+6. 將 *WizardImplementationClass .cs* 檔案中的程式碼取代為下列程式碼：
 
    ```csharp
    using System;
@@ -161,7 +161,7 @@ Visual Studio 提供的 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 介
 
      此範例會將使用者輸入表單中的參數值加入至 <xref:System.Collections.Generic.Dictionary%602> 參數。 專案中每個 `$custommessage$` 參數的實例將會取代為使用者輸入的文字。
 
-7. 現在建立 **UserInputForm**。 在 *WizardImplementation.cs* 檔案中，將下列程式碼新增至類別結尾之後 `WizardImplementation` 。
+7. 現在建立 **UserInputForm**。 在 *WizardImplementation* 檔案中，將下列程式碼加入至類別結尾之後 `WizardImplementation` 。
 
    ```csharp
    public partial class UserInputForm : Form
@@ -265,7 +265,7 @@ Visual Studio 提供的 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 介
 
 在此範例中，當做範本使用的專案會顯示在 [自訂嚮導] 的使用者輸入表單中指定的訊息。
 
-1. 在 **方案總管** 中，移至 **MyProjectTemplate** 專案，然後開啟 *Class1.cs*。
+1. 在 **方案總管** 中，移至 **MyProjectTemplate** 專案並開啟 *Class1*。
 
 2. 在 `Main` 應用程式的方法中，新增下列程式程式碼。
 
