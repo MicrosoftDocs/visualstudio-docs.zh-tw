@@ -1,6 +1,6 @@
 ---
 description: 描述引發條件中斷點的計數和條件。
-title: BP_PASSCOUNT |Microsoft 檔
+title: BP_PASSCOUNT |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT structure
 ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c1e44ede0f39b3d1b33967311365508da6a701d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: afb94436897224bc9c6896a601447e9d9a1c8b6f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144152"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096729"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
 描述引發條件中斷點的計數和條件。

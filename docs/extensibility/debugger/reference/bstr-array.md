@@ -1,6 +1,6 @@
 ---
 description: 描述字串陣列的結構。
-title: BSTR_ARRAY |Microsoft 檔
+title: BSTR_ARRAY |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BSTR_ARRAY structure
 ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f5fb882bb31f6fd525d00dc134e042e9bce9398f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5af4c0efe53625063d4bb714f3d323bef28c5954
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170968"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096612"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
 描述字串陣列的結構。

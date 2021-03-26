@@ -1,22 +1,22 @@
 ---
 description: IDebugProcessSecurity 由埠供應商執行，以警告附加至進程的使用者是不安全的。
-title: IDebugProcessSecurity |Microsoft 檔
+title: IDebugProcessSecurity |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessSecurity interface
 ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5e2ca72cc3d9c1d204c6fb1f90ccc9b03060cff
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f7466d88be9460a2b4680fc7d14a741df9238ea0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166095"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076260"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 `IDebugProcessSecurity` 由埠供應商執行，以警告附加至進程的使用者是不安全的。

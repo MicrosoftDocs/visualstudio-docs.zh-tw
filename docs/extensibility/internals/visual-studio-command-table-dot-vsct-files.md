@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT files, overview
 - Visual Studio command table configuration files (VSCT), overview
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1baef0936cfe37d09fb8c65f2675bb9f4208f45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 305bf0e5463fd4e030f2ce3e9f7fa6eca99bfe20
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963402"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085737"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio 命令表檔案 (.Vsct)
 命令表格設定檔是一個文字檔，描述 VSPackage 所包含的一組命令。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令表格 (.vsct) 編譯器會將 XML 架構設定檔 ( .vsct 檔案，) 到二進位命令表格輸出 (. cto) 檔中。 Cto 檔案與使用命令表格建立的檔案相同， (.CTC) 編譯器來編譯 .ctc 設定檔。 不過，以 XML 為基礎的 .vsct 檔案有一些優點，例如 XML 編輯器和 XML IntelliSense。

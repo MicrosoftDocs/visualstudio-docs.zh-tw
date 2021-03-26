@@ -1,6 +1,6 @@
 ---
 description: 此函式會關閉專案，並標示特定會話的結尾。
-title: SccCloseProject 函式 |Microsoft 檔
+title: SccCloseProject 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCloseProject function
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3fb9208619639a8f1c767cbf12a2de0ed24768f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 05dbf0552242bdc1a21ec6dd81a592711f50f391
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220868"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085633"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject 函式
 此函式會關閉專案，並標示特定會話的結尾。

@@ -1,6 +1,6 @@
 ---
 description: 指定要抓取的資訊，以取得中斷點的成功解析。
-title: BPRESI_FIELDS |Microsoft 檔
+title: BPRESI_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BPRESI_FIELDS enumeration
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 91fa2a8b973149cb9365d817e14ac877bfc9f617
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 652d1423b95f923a8413bdec6fbbed528e9f624a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171027"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096690"
 ---
 # <a name="bpresi_fields"></a>BPRESI_FIELDS
 指定要抓取的資訊，以取得中斷點的成功解析。

@@ -7,24 +7,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b071631018ef398be481ccf514b33296e55fc2e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9442dcdd460e1213c3c07ee87a5ea2e0d7099072
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886869"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085698"
 ---
 # <a name="web-project-essentials"></a>Web 專案的基本資訊
 Web 專案會建立 Web 應用程式。 您可以使用 Web 專案建立具有智慧型網頁的 Web 應用程式。 智慧型網頁具有可隨選轉譯網頁的伺服器端程式碼。
 
  使用傳統的程式設計語言（例如 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ），您可以建立智慧型網頁來收集和處理使用者的資訊，將資訊儲存在資料庫中等等。
 
-- 程式碼後端模型會將相依原始程式碼檔與副檔名為 .aspx 或 .asmx 的網頁產生關聯。 例如，default.aspx 可能會有相依的原始程式碼檔 hello.aspx.cs。
+- 程式碼後端模型會將相依原始程式碼檔與副檔名為 .aspx 或 .asmx 的網頁產生關聯。 例如，default.aspx 可能會有相依的原始程式碼檔 .aspx. .cs。
 
 - 與智慧網頁相關聯的伺服器端程式碼會編譯成位於網站/bin 資料夾中的可執行檔。
 

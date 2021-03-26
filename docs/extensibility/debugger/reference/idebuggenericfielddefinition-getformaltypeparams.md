@@ -1,26 +1,26 @@
 ---
 description: 根據參數數目來抓取類型參數。
-title: IDebugGenericFieldDefinition：： GetFormalTypeParams |Microsoft 檔
+title: IDebugGenericFieldDefinition：： GetFormalTypeParams |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetFormalTypeParams
 - IDebugGenericFieldDefinition::GetFormalTypeParams
 ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 593e54c67e762d5ad1643f0481554fe98b5ba019
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3aba284bab3299bf6ef300f9493c20e9c0d230ee
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165471"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063444"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
 根據參數數目來抓取類型參數。

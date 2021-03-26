@@ -1,6 +1,6 @@
 ---
 description: 指定位址的種類。
-title: ADDRESS_KIND |Microsoft 檔
+title: ADDRESS_KIND |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - ADDRESS_KIND enumeration
 ms.assetid: 3a12fbec-7088-4cf9-8f6f-ad8ddec6009a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12a47edf2b9eca9cd99a5b11531f78e080572d54
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ca55e3de468ed61a3af32ddfe99873b90013aa16
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144646"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085503"
 ---
 # <a name="address_kind"></a>ADDRESS_KIND
 指定位址的種類。
@@ -62,7 +62,7 @@ public enum enum_ADDRESS_KIND {
 原生位址，以 [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) 結構表示。
 
 `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`\
-相對於 `this` `Me` Visual Basic) 指標中 (的非受控位址，並以 [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) 結構表示。
+相對於 `this` Visual Basic) 指標中 (的非受控位址 `Me` ，並以 [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) 結構表示。
 
 `ADDRESS_KIND_UNMANAGED_PHYSICAL`\
 未受管理的實體位址，以 [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) 結構表示。

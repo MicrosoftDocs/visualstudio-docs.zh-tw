@@ -1,6 +1,6 @@
 ---
 description: 取得包含檔位置之原始程式檔的檔案名。
-title: IDebugDocumentPosition2：： GetFileName |Microsoft 檔
+title: IDebugDocumentPosition2：： GetFileName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::GetFileName
 ms.assetid: d713635e-088f-465b-b26d-00ac971c9e86
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9bf6eb084c8122c940e49a006a09aa53e12cd8a8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 48c0500e47d938185595086ccf5fa5b22a14ab26
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162754"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066460"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 取得包含檔位置之原始程式檔的檔案名。

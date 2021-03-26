@@ -11,17 +11,17 @@ helpviewer_keywords:
 - menu commands, implementing
 - toolbars [Visual Studio], commands
 ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9df95efc1021ad5bd75c1d009627c5747152b37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c7d289f9dadf7b3442f937c5b50cf038c802516
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895527"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063054"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>將功能表和工具列命令最佳化
 將 Vspackage 及其對應的命令新增至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可能會導致擁擠的 UI。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供可協助將 UI 命令混淆降至最低的方式。

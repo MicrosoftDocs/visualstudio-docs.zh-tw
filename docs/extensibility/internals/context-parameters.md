@@ -8,17 +8,17 @@ helpviewer_keywords:
 - wizards, context parameters
 - context parameters
 ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d2c6ded39564b91ba4f7b74fe2985aab14a7ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14d60aa31fb586651ea6e2b00a8f8038bfaa42b9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852618"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057061"
 ---
 # <a name="context-parameters"></a>內容參數
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境中 (IDE) ，您可以將嚮導加入至 [ **新增專案**]、[ **加入新** 專案] 或 [ **加入子專案** ] 對話方塊。 您可以在 [檔案 **] 功能表上，或** 以滑鼠右鍵按一下 **方案總管** 中的專案，來使用新增的嚮導。 IDE 會將內容參數傳遞至 wizard 的執行。 當 IDE 呼叫 wizard 時，內容參數會定義專案的狀態。

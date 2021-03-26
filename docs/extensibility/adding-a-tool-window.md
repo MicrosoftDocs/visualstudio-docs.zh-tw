@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c84eafcfe19efdf6427db10f65dcf24504b598
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 314a684e34c91f43abe9babe4cdd6efc8a15cc35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951429"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085516"
 ---
 # <a name="add-a-tool-window"></a>新增工具視窗
 
@@ -117,7 +117,7 @@ Visual Studio SDK 在 Visual Studio 安裝程式中包含為選用功能。 如�
     </Button>
     ```
 
-3. 開啟 *FirstToolWindowCommand.cs* ，並在現有欄位之後的類別中新增下列幾行。
+3. 開啟 *FirstToolWindowCommand* ，並在現有欄位之後的類別中新增下列幾行。
 
     ```csharp
     public const string guidFirstToolWindowPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
@@ -143,7 +143,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 ## <a name="instantiate-the-tool-window-and-toolbar"></a>將工具視窗和工具列具現化
 加入工具列和功能表命令，以叫用 [ **開啟** 檔案] 對話方塊並播放選取的媒體檔案。
 
-1. 開啟 *FirstToolWindow.cs* ，並新增下列指示詞 `using` ：
+1. 開啟 *FirstToolWindow* ，並加入下列指示詞 `using` ：
 
     ```csharp
     using System.ComponentModel.Design;
@@ -188,13 +188,13 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }
     ```
 
-6. 將功能表命令加入至工具列。 在 FirstToolWindowCommand.cs 類別中，新增下列 using 指示詞：
+6. 將功能表命令加入至工具列。 在 FirstToolWindowCommand .cs 類別中，加入下列 using 指示詞：
 
     ```csharp
     using System.Windows.Forms;
     ```
 
-7. 在 FirstToolWindowCommand 類別中，將下列程式碼新增至 ShowToolWindow ( # A1 方法的結尾。 ButtonHandler 命令將會在下一節中執行。
+7. 在 FirstToolWindowCommand 類別中，將下列程式碼加入至 ShowToolWindow () 方法的結尾。 ButtonHandler 命令將會在下一節中執行。
 
     ```csharp
     // Create the handles for the toolbar command.
@@ -210,13 +210,13 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 1. 在 FirstToolWindowCommand 類別中，新增叫用 [ **開啟** 檔案] 對話方塊的 ButtonHandler 方法。 選取檔案之後，它就會播放媒體檔案。
 
-2. 在 FirstToolWindowCommand 類別中，將私用參考新增至在 FindToolWindow ( # A1 方法中建立的 FirstToolWindow 視窗。
+2. 在 FirstToolWindowCommand 類別中，將私用參考新增至在 FindToolWindow () 方法中建立的 FirstToolWindow 視窗。
 
     ```csharp
     private FirstToolWindow window;
     ```
 
-3. 變更 ShowToolWindow ( # A1 方法來設定您在上面定義的視窗 (，讓 ButtonHandler 命令處理常式可以存取視窗控制項。 以下是完整的 ShowToolWindow ( # A1 方法。
+3. 變更 ShowToolWindow () 方法，以設定您在上面定義的視窗 (，讓 ButtonHandler 命令處理常式可以存取視窗控制項。 以下是完整的 ShowToolWindow () 方法。
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -255,9 +255,9 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 ## <a name="set-the-default-position-for-the-tool-window"></a>設定工具視窗的預設位置
 
-接下來，在工具視窗的 IDE 中指定預設位置。 工具視窗的設定資訊位於 *FirstToolWindowPackage.cs* 檔案中。
+接下來，在工具視窗的 IDE 中指定預設位置。 工具視窗的設定資訊位於 *FirstToolWindowPackage .cs* 檔案中。
 
-1. 在 *FirstToolWindowPackage.cs* 中，尋找 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 類別上的屬性，此屬性會將 `FirstToolWindowPackage` FirstToolWindow 類型傳遞給函式。 若要指定預設位置，您必須在下列範例中新增更多參數到此函式。
+1. 在 *FirstToolWindowPackage* 中，尋找 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 類別上的屬性，此屬性會將 `FirstToolWindowPackage` FirstToolWindow 類型傳遞給函式。 若要指定預設位置，您必須在下列範例中新增更多參數到此函式。
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),

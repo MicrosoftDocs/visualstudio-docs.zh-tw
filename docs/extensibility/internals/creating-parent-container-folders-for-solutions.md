@@ -8,17 +8,17 @@ helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39e61e3566f848e23fdea7b4fb4d0ea5bc181370
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c9b3b5c01e9c1ad5de9fbb0a44398d3f7963295
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903146"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056830"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>建立解決方案的父容器檔案夾
 在原始檔控制外掛程式 API 版本1.2 中，使用者可以針對方案內的所有 Web 專案指定單一根原始檔控制目的地。 這個單一根目錄稱為 (SUR) 的超級統一根。
@@ -49,8 +49,8 @@ ms.locfileid: "99903146"
 
 |功能|原始檔控制外掛程式 API 版本1。1|原始檔控制外掛程式 API 版本1。2|
 |-------------| - | - |
-|將解決方案新增至 SCC|SccInitialize ( # A1<br /><br /> SccGetProjPath ( # A1<br /><br /> SccGetProjPath ( # A1<br /><br /> SccOpenProject ( # A1|SccInitialize ( # A1<br /><br /> SccGetProjPath ( # A1<br /><br /> SccCreateSubProject ( # A1<br /><br /> SccCreateSubProject ( # A1<br /><br /> SccOpenProject ( # A1|
-|將專案加入至原始檔控制的解決方案|SccGetProjPath ( # A1<br /><br /> File.openproject ( # A1|SccGetParentProjectPath ( # A1<br /><br /> SccOpenProject ( # A1<br /><br />  **注意：**  Visual Studio 假設方案是 SUR 的直接子系。|
+|將解決方案新增至 SCC|SccInitialize () <br /><br /> SccGetProjPath () <br /><br /> SccGetProjPath () <br /><br /> SccOpenProject () |SccInitialize () <br /><br /> SccGetProjPath () <br /><br /> SccCreateSubProject () <br /><br /> SccCreateSubProject () <br /><br /> SccOpenProject () |
+|將專案加入至原始檔控制的解決方案|SccGetProjPath () <br /><br /> File.openproject () |SccGetParentProjectPath () <br /><br /> SccOpenProject () <br /><br />  **注意：**  Visual Studio 假設方案是 SUR 的直接子系。|
 
 ## <a name="examples"></a>範例
  下表列出兩個範例。 在這兩種情況下， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 系統會提示使用者在原始檔控制之下輸入方案的目的地位置，直到將  *user_choice* 指定為目的地。 當指定 user_choice 時，會加入方案和兩個專案，而不提示使用者輸入原始檔控制目的地。

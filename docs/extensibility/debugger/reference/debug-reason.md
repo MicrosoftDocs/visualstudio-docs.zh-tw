@@ -1,6 +1,6 @@
 ---
 description: 指定啟動處理常式以進行偵錯工具的原因。
-title: DEBUG_REASON |Microsoft 檔
+title: DEBUG_REASON |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9404e4b5cfdd1f1690b0fe76d0cd5e98cc90d2a4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: db5d6697f222015cc4f6dbedbc6258e00c9b285f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170545"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096248"
 ---
 # <a name="debug_reason"></a>DEBUG_REASON
 指定啟動處理常式以進行偵錯工具的原因。

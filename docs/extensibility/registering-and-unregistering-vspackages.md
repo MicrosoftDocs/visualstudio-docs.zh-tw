@@ -8,17 +8,17 @@ helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: e25e7a46-6a55-4726-8def-ca316f553d6b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b130c9ceff03fe99151965d5166b056884401855
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5238ef7d544bcdeb3dd68a4741791262aaa77c0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836965"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056541"
 ---
 # <a name="register-and-unregister-vspackages"></a>註冊和取消註冊 Vspackage
 您可以使用屬性來註冊 VSPackage，但是

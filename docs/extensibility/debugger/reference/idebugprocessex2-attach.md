@@ -1,6 +1,6 @@
 ---
 description: 這個方法會通知進程，會話現在正在將進程進行偵錯工具。
-title: IDebugProcessEx2：： Attach |Microsoft 檔
+title: IDebugProcessEx2：： Attach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Attach method
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1938ae8299612caabe2fe684b7b5c1af685d4596
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: da538b5ba91a976e96f447ba63843f20ae0b6f62
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149739"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076364"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 這個方法會通知進程，會話現在正在將進程進行偵錯工具。

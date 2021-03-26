@@ -1,6 +1,6 @@
 ---
 description: 描述參考。
-title: DEBUG_REFERENCE_INFO |Microsoft 檔
+title: DEBUG_REFERENCE_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REFERENCE_INFO structure
 ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e210875f88a7c8246eff3bfcf0721d6866602b7e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 729dab8cc7a8b2960c699cce503400d97c6fa398
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170532"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096235"
 ---
 # <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
 描述參考。

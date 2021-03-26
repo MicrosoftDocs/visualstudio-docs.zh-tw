@@ -8,17 +8,17 @@ helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 593663c4906cc669c52336ffe6689e8de9fcde48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86029300c34e111344157bf39a15dceab8c1b77a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941589"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085789"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>在舊版語言服務中驗證中斷點
 中斷點表示程式執行在偵錯工具中執行時，應該會在特定的時間點停止。 使用者可以在原始程式檔中的任何一行上放置中斷點，因為編輯器不知道組成中斷點的有效位置。 當偵錯工具啟動時，所有標示的中斷點 (稱為暫止中斷點) 都會系結至執行程式中的適當位置。 同時驗證中斷點，以確保它們會標示有效的程式碼位置。 例如，批註上的中斷點無效，因為原始程式碼中的位置沒有任何程式碼。 偵錯工具會停用不正確中斷點。

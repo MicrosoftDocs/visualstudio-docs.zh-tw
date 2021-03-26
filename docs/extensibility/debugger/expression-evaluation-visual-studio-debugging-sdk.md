@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 772d38b328eca1e0afb6ff48a5ad580d01939527
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e6a79a3268f0bd4acebde795109d39466032a2f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921477"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096794"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>運算式評估 (Visual Studio 調試 SDK) 
 在中斷模式期間，IDE 必須評估涉及數個程式變數的簡單運算式。 若要完成其評估，debug engine (DE) 必須剖析和評估輸入至 IDE 其中一個視窗的運算式。

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 200339b8fc7bbaf524d920ff4a7520c20d09ffc7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1afec04882d5d52bffac509dd1d1202ccf9ea449
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844628"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057607"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>開始使用語言服務及編輯器擴充功能
 

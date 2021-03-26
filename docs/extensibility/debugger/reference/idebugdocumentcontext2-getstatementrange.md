@@ -1,6 +1,6 @@
 ---
 description: 取得檔內容的檔案語句範圍。
-title: IDebugDocumentCoNtext2：： GetStatementRange |Microsoft 檔
+title: IDebugDocumentCoNtext2：： GetStatementRange |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::GetStatementRange
 ms.assetid: bc94851a-0ec4-47ea-99c7-0a585e54e726
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c23de6f76ac4aa205ac50636775ee019da34137a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 37e08385c541c00e4f15f833487fc69b3acf12ce
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162871"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066577"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 取得檔內容的檔案語句範圍。

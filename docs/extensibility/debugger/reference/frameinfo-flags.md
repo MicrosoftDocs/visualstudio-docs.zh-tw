@@ -1,6 +1,6 @@
 ---
 description: 指定要針對堆疊框架物件取得的資訊。
-title: FRAMEINFO_FLAGS |Microsoft 檔
+title: FRAMEINFO_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO_FLAGS enumeration
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4029212aae6d4557e17c42a0c0e024a83c94b0a1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d4214dd81945c3e7e2711a500e2e3a2b173e33e0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150818"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059258"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 指定要針對堆疊框架物件取得的資訊。

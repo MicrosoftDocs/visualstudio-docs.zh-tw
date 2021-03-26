@@ -1,6 +1,6 @@
 ---
 description: 取得此檔內容的原始程式碼範圍。
-title: IDebugDocumentCoNtext2：： GetSourceRange |Microsoft 檔
+title: IDebugDocumentCoNtext2：： GetSourceRange |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::GetSourceRange
 ms.assetid: 5903c75e-5390-4d13-9314-1ee276255313
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d02dfbd93002bedadd4c82168d498f89050ddc0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a66f1b99793b1c8fa8036771d7815f95a395462a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162897"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066590"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
 取得此檔內容的原始程式碼範圍。

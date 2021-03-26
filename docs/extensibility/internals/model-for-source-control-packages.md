@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], model
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 958465fc927464c46befb2422eb1286cda156916
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e4e437afdfa0d3de03da6814e221840cbd0763fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895657"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063197"
 ---
 # <a name="model-for-source-control-packages"></a>原始檔控制套件的模型
 下列模型代表原始檔控制執行的範例。 在模型中，您會看到必須執行的介面，以及您必須呼叫的環境服務。 就像所有的服務一樣，您實際上會呼叫透過服務所取得之特定介面的方法。 系統會識別類別的名稱，讓您更輕鬆地查看如何執行原始檔控制。

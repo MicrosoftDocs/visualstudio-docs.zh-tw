@@ -1,6 +1,6 @@
 ---
 description: 依指定的語句或行數移動檔內容。
-title: IDebugDocumentCoNtext2：： Seek |Microsoft 檔
+title: IDebugDocumentCoNtext2：： Seek |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::Seek
 ms.assetid: 71501356-8a82-4d36-b354-6625bdd2baa0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a70b8fac8e084a78b1a29ae941f1d03d6552f860
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c9fcc430102ec974f2492a8e65894faa45978693
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162845"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066551"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 依指定的語句或行數移動檔內容。

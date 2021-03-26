@@ -1,6 +1,6 @@
 ---
 description: 此介面代表執行中的進程及其程式。
-title: IDebugProcess3 |Microsoft 檔
+title: IDebugProcess3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3 interface
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2303dfef18a1abccc728d80def0de25b4e7eadd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d08169b196e01b5e2a7effdfe54829d17a970ef3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169180"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076507"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 此介面代表執行中的進程及其程式。 這個介面是取代為 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 介面中的數個方法。 它可讓您控制進程中的所有程式。

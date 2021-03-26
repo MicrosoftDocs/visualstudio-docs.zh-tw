@@ -1,29 +1,29 @@
 ---
 description: 參考章節包含 API 的概念總覽，此指南會顯示所有 API 專案的語法和使用方式，以及各種程式碼範例。
-title: API 參考 (Visual Studio 調試) |Microsoft 檔
+title: API 參考 (Visual Studio 調試) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47c6697945c6c588a8b4e57ab03d573d45c4d4cf
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a8a43e4bae5afce98e07b196f5a01c33d44c72ca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144633"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085542"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 參考 (Visual Studio 偵錯)
 參考章節包含 API 的概念總覽，此指南會顯示所有 API 專案的語法和使用方式，以及各種程式碼範例。 所有參考都會依類別目錄依字母順序列出。
 
  下表顯示方法所傳回的一般 `HRESULT` 值。
 
-|名稱|描述|值|
+|Name|描述|值|
 |----------|-----------------|-----------|
 |S_OK|成功。|0x00000000|
 |E_UNEXPECTED|發生非預期的失敗。|0x8000FFFF|

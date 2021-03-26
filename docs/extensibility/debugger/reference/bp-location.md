@@ -1,6 +1,6 @@
 ---
 description: 指定用來描述中斷點位置的結構類型。
-title: BP_LOCATION |Microsoft 檔
+title: BP_LOCATION |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION union
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 472dc7b2e642608691ea2adb2ad1a7dce170729f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0ee3c9246c25517c2b0bc095c4035400e43d29b5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144178"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096716"
 ---
 # <a name="bp_location"></a>BP_LOCATION
 指定用來描述中斷點位置的結構類型。
