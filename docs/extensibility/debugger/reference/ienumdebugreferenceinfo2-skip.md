@@ -1,6 +1,6 @@
 ---
 description: 略過指定數目的 DEBUG_REFERENCE_INFO 元素。
-title: IEnumDebugReferenceInfo2：： Skip |Microsoft 檔
+title: IEnumDebugReferenceInfo2：： Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugReferenceInfo2::Skip
 ms.assetid: 12f07ed8-92bd-47b5-9113-f73fec5bdde6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a263c9c3cbb08620c90905d24b61da42f542b9bd
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 212c4966147831727c83b4aea2f50d65307ec38c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224157"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082825"
 ---
 # <a name="ienumdebugreferenceinfo2skip"></a>IEnumDebugReferenceInfo2::Skip
 略過指定的元素數目。

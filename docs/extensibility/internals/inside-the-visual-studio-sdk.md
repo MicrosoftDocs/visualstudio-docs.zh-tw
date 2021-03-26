@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d67c3d9f998c8dd5192363cf8ff8fae2ce4b57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e11ee862f43ead3605d8e07dc159e18da13413b8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839855"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074700"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 
@@ -64,7 +64,7 @@ ms.locfileid: "99839855"
 
  部分工具視窗會停駐在單一窗格上，顯示方案總管的工具視窗，並隱藏其他工具視窗，但按一下索引標籤可讓他們使用。 此圖顯示兩個其他工具視窗、[ **錯誤清單** ] 和 [ **輸出** ] 視窗，並在單一窗格上停駐在一起。
 
- 另外也會顯示主文件窗格，其中顯示數個編輯器視窗。 雖然工具視窗通常只有一個實例 (例如，您只能開啟一個 **方案總管**) 、編輯器視窗可以有多個實例，而每個實例都是用來編輯個別的檔，但全都停駐在相同的窗格中。 圖片會顯示具有兩個編輯器視窗的 [檔] 窗格，一個表單設計工具視窗。 [檔] 窗格中的所有視窗都可以藉由按一下 [tab]，但包含 EditorPane.cs 檔案的 [編輯器] 視窗是可見且使用中。
+ 另外也會顯示主文件窗格，其中顯示數個編輯器視窗。 雖然工具視窗通常只有一個實例 (例如，您只能開啟一個 **方案總管**) 、編輯器視窗可以有多個實例，而每個實例都是用來編輯個別的檔，但全都停駐在相同的窗格中。 圖片會顯示具有兩個編輯器視窗的 [檔] 窗格，一個表單設計工具視窗。 [檔] 窗格中的所有視窗都可以藉由按一下 [tab] 來使用，但是包含 EditorPane .cs 檔案的 [編輯器] 視窗是可見的，而且是使用中的。
 
  當您延伸 Visual Studio 時，您可以建立可讓 Visual Studio 使用者與您的延伸模組互動的工具視窗。 您也可以建立自己的編輯器，讓 Visual Studio 使用者編輯檔。 由於您的工具視窗和編輯器將會整合到 Visual Studio 中，因此您不需要進行程式設計，就能將它們固定或顯示在索引標籤上。 當這些使用者在 Visual Studio 中正確註冊時，就會在 Visual Studio 中自動擁有工具視窗和文件視窗的一般功能。 如需詳細資訊，請參閱 [擴充和自訂工具視窗](../../extensibility/extending-and-customizing-tool-windows.md)。
 

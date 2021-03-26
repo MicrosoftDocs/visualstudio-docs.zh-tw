@@ -1,6 +1,6 @@
 ---
 description: 略過指定數目的 DEBUG_PROPERTY_INFO 元素。
-title: IEnumDebugPropertyInfo2：： Skip |Microsoft 檔
+title: IEnumDebugPropertyInfo2：： Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2::Skip
 ms.assetid: 0366c778-18eb-4065-a452-64b70c751a58
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 799aadf40eafa03e944e5e25f9c721b459320c8c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f519d3a0163b7afdf15c254b450c24686d80b417
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225964"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082864"
 ---
 # <a name="ienumdebugpropertyinfo2skip"></a>IEnumDebugPropertyInfo2::Skip
 略過指定的元素數目。

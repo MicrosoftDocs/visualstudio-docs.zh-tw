@@ -1,6 +1,6 @@
 ---
 description: 將列舉重設為第一個 DEBUG_PROPERTY_INFO 元素。
-title: IEnumDebugPropertyInfo2：： Reset |Microsoft 檔
+title: IEnumDebugPropertyInfo2：： Reset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2::Reset
 ms.assetid: fa4201c1-4633-4596-93aa-bd415c4ed71a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 796246852c752b5460c162e4f6d6c0fab13f1e5b
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: c94b12242c0b57b94c9c26b9f23d9d7577de293b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226016"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082877"
 ---
 # <a name="ienumdebugpropertyinfo2reset"></a>IEnumDebugPropertyInfo2::Reset
 將列舉重設為第一個元素。

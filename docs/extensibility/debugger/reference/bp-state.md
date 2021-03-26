@@ -1,6 +1,6 @@
 ---
 description: 指定系結中斷點是否存在，並指定是否已啟用。
-title: BP_STATE |Microsoft 檔
+title: BP_STATE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ae225a7eeb782257a716c48c1882d78ad150e7e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 886469727e9a20802f375faac12abbdd0d2b1ff2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168331"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089104"
 ---
 # <a name="bp_state"></a>BP_STATE
 指定系結中斷點是否存在，並指定是否已啟用。

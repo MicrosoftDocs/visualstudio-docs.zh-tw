@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSPackages, registering
 - VSPackages, registration manifests
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a32d8f57be2e1e4c8a2855f7f9008eaed2ae4eac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c97d66574da0b1d4a4f3b12dcf2babf4d619dfb5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874057"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074682"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>How to：產生安裝程式的登錄資訊
 

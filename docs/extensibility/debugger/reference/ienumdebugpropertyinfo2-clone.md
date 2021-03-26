@@ -1,6 +1,6 @@
 ---
 description: 傳回目前 DEBUG_PROPERTY_INFO 列舉的複本，做為個別的物件。
-title: IEnumDebugPropertyInfo2：： Clone |Microsoft 檔
+title: IEnumDebugPropertyInfo2：： Clone |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2::Clone
 ms.assetid: 0ede1667-1071-4aa4-b887-260ea103d724
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 389bd852fa0be0c210d699dfa0e94be78e67d075
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 79f5ffd45799b8c2c2ed1642004c26889b26c172
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226029"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082916"
 ---
 # <a name="ienumdebugpropertyinfo2clone"></a>IEnumDebugPropertyInfo2::Clone
 傳回目前列舉的複本作為個別的物件。

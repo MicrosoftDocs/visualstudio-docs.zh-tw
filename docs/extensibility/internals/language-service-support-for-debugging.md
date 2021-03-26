@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugger, language support
 - language services, debugging support
 ms.assetid: 7a44067f-a410-4a6a-84d2-bda5184140bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b53eb738b695726cf86859ce83a8ee93440564a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c00d0af21d5d165b7733267e0a97ae71ca6e573
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839699"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074570"
 ---
 # <a name="language-service-support-for-debugging"></a>語言服務支援偵錯
 語言服務可以提供透過介面支援偵錯工具的功能 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> 。 這些功能包括驗證中斷點，以及 **在 [自動** 變數] 視窗中提供運算式清單。

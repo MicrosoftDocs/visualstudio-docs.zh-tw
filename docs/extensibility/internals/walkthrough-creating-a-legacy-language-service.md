@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61f4dfd8068cc44fca97eb5e07ddbf62b21ee1f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ded5624aed40ac2e878c44fd8dabc7d35c4d1ac8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899914"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074271"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>逐步解說：建立舊版語言服務
 使用 managed package framework (MPF) 語言類別在中執行語言服務 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 相當簡單。 您需要 VSPackage 來裝載語言服務、語言服務本身，以及適用于您語言的剖析器。
@@ -68,11 +68,11 @@ ms.locfileid: "99899914"
 
 4. 請確定已在範本清單中選取 [ **類別** ]。
 
-5. 輸入 **MyLanguageService.cs** 做為類別檔案的名稱，然後按一下 [ **新增**]。
+5. 輸入 **MyLanguageService** 做為類別檔案的名稱，然後按一下 [ **新增**]。
 
      您可以使用任何您想要的名稱。 此處詳述的這些程式會假設 `MyLanguageService` 為名稱。
 
-6. 在 MyLanguageService.cs 檔案中，新增下列指示詞 `using` 。
+6. 在 MyLanguageService .cs 檔案中，加入下列指示詞 `using` 。
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_1.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_1.vb)]
@@ -88,7 +88,7 @@ ms.locfileid: "99899914"
 
 ### <a name="register-the-language-service"></a>註冊語言服務
 
-1. 開啟 MyLanguagePackagePackage.cs 檔案，並新增下列指示詞 `using` ：
+1. 開啟 MyLanguagePackagePackage .cs 檔案，然後加入下列指示詞 `using` ：
 
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_3.vb)]
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_3.cs)]

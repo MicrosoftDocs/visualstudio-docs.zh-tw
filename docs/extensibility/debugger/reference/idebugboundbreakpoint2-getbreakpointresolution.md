@@ -1,6 +1,6 @@
 ---
 description: 取得描述此中斷點的中斷點解析度。
-title: IDebugBoundBreakpoint2：： GetBreakpointResolution |Microsoft 檔
+title: IDebugBoundBreakpoint2：： GetBreakpointResolution |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - GetBreakpointResolution method
 - IDebugBoundBreakpoint2::GetBreakpointResolution method
 ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aa5f5e9aabbf96bc0dffb13e99b404c906384324
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 60dfff7884f30090f1eb2feaeaea8bec7dc8753e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102173721"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088896"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 取得描述此中斷點的中斷點解析度。

@@ -1,6 +1,6 @@
 ---
 description: 這個方法會在指定名稱的情況下尋找別名。
-title: IDebugBinder3：： FindAlias |Microsoft 檔
+title: IDebugBinder3：： FindAlias |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::FindAlias method
 ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db4d5cad6d0c2990141e0dd3a824425b8b53145b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9958c1c2b93d6547f1f3453bafc9e331f9061844
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167720"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089052"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 這個方法會在指定名稱的情況下尋找別名。 這會搜尋程式中的所有別名。

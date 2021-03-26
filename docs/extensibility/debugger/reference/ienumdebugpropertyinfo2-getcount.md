@@ -1,6 +1,6 @@
 ---
 description: 傳回列舉中 DEBUG_PROPERTY_INFO 元素的數目。
-title: IEnumDebugPropertyInfo2：： GetCount |Microsoft 檔
+title: IEnumDebugPropertyInfo2：： GetCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2::GetCount
 ms.assetid: 9b0b3ce6-08cb-46fd-a6d9-92b36e60da19
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e841d1a7057f788c59832daaca7f74a838f2bd06
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 21e943ea051599e4d0ba66237132f52a4175c1ea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224248"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082903"
 ---
 # <a name="ienumdebugpropertyinfo2getcount"></a>IEnumDebugPropertyInfo2::GetCount
 傳回列舉中的元素數目。

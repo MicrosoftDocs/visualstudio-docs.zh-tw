@@ -1,6 +1,6 @@
 ---
 description: 這個方法會將列舉重設為第一個 IDebugObject 元素。
-title: IEnumDebugObjects：： Reset |Microsoft 檔
+title: IEnumDebugObjects：： Reset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugObjects::Reset method
 ms.assetid: 4a245e47-cc39-4177-b83d-083ea0e3190f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cacc9071004ddb68993bb3d3315eb1bda3b90cbb
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 193f0f2f793c1ca1ee1af208105be33754a1effa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224651"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083046"
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
 這個方法會將列舉重設為第一個元素。

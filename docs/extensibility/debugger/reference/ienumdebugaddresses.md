@@ -1,6 +1,6 @@
 ---
 description: 這個介面代表執行 IDebugAddress 介面的物件集合。
-title: IEnumDebugAddresses |Microsoft 檔
+title: IEnumDebugAddresses |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses interface
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea9e4115c1664e1dcd05041f7ece056b5de01dae
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 29b927f9b614e95be51bd285e36ab1e01c09f568
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222636"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083124"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 這個介面代表執行 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 介面的物件集合。

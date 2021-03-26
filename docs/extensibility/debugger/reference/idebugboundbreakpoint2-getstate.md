@@ -1,6 +1,6 @@
 ---
 description: 取得這個系結中斷點的狀態。
-title: IDebugBoundBreakpoint2：： >getstate |Microsoft 檔
+title: IDebugBoundBreakpoint2：： >getstate |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - GetState method
 - IDebugBoundBreakpoint2::GetState method
 ms.assetid: a40a8382-295e-4916-aae6-ffe3a9cd3f2d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0c3bc40fa9cb382281134b92b2b6c9533804b520
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 834f0b35eb902d8e5bcea7c9ac7f3c6da5c895fb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167551"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088845"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 取得這個系結中斷點的狀態。

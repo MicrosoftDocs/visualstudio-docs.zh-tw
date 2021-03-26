@@ -1,6 +1,6 @@
 ---
 description: 這個介面會將符號欄位（通常由符號提供者傳回）系結至記憶體內容或包含符號目前值的物件。
-title: IDebugBinder |Microsoft 檔
+title: IDebugBinder |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder interface
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: febe22338ddeaf275b37ae09c76921c91ec509da
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4fdfe0cffce209880d870cde7b70cc1e02252413
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143619"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089078"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]

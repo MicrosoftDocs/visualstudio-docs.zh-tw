@@ -1,6 +1,6 @@
 ---
 description: 略過程式碼路徑列舉中指定的元素數目。
-title: IEnumCodePaths2：： Skip |Microsoft 檔
+title: IEnumCodePaths2：： Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::Skip
 ms.assetid: 356472d8-68b2-4b7e-b5f0-1f16d4ee80af
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c05084efe0c4e1fa119b0e76978c4094b87a0d1f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: bc453d9b12171a3aad070b1b7774ebfabc0d1dc0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225145"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083293"
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
 略過指定的元素數目。

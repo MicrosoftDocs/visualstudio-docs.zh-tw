@@ -1,6 +1,6 @@
 ---
 description: 這個介面會提供方法，以在相關聯的物件上查看資料。
-title: IPropertyProxyEESide |Microsoft 檔
+title: IPropertyProxyEESide |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide interface
 ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80a295ad68341cfa4675d36b22d5de042078a0a3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ce7f950455a6b6a6ae2089e762db1aa02428f6a5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222604"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082392"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 這個介面會提供方法，以在相關聯的物件上查看資料。 此介面是類型視覺化程式支援的一部分。

@@ -1,6 +1,6 @@
 ---
 description: 這個方法會為視覺化檢視取得新的物件。
-title: IEEVisualizerDataProvider：： GetNewObjectForVisualizer |Microsoft 檔
+title: IEEVisualizerDataProvider：： GetNewObjectForVisualizer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::GetNewObjectForVisualizer method
 ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 07bc02adc9dc3e6675c7bfbbcafd21a350b3a94f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: af26455e37d0ecf881cd0bed898e1997f00a82ea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227290"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083345"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 這個方法會為視覺化檢視取得新的物件。 這個方法一律會從現有的物件建立新的物件。

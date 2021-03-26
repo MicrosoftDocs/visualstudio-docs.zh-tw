@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework]
 ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d34ce48d9543107831ec358a9cf7eeed74d2787b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2bb5169eeb53aa16d0827cdf50cb50d0db34d996
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839660"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074509"
 ---
 # <a name="legacy-language-service-features-1"></a>舊版語言服務功能1
 受控封裝架構 (MPF) 語言服務可支援一或多個 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 功能，例如語法醒目提示、IntelliSense 和中斷點驗證。 每項功能都可以獨立執行，但除了語法醒目提示以外，只需要掃描器，但全部都需要剖析器和掃描器。

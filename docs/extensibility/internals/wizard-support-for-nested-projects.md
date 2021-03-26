@@ -9,17 +9,17 @@ helpviewer_keywords:
 - nested projects, wizard support
 - New Project wizard
 ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2cd84379ead1cd45296ae370aab215a37cf4b50
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f52b42462fdc4b7878f97c01bdc65322f32eb5b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935867"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074141"
 ---
 # <a name="wizard-support-for-nested-projects"></a>巢狀專案的精靈支援
 IDE 會執行兩個嚮導，讓嵌套專案的父專案可以執行： [ **新增專案** ] 和 [ **加入專案** ] wizard。

@@ -1,6 +1,6 @@
 ---
 description: 這個方法會將位址列舉重設為第一個元素。
-title: IEnumDebugAddresses：： Reset |Microsoft 檔
+title: IEnumDebugAddresses：： Reset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses::Reset method
 ms.assetid: 3a9d7f20-5bc6-4e13-8e91-5af4092e092f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90ccbb3be28f676133756d5d07fcaca7e0aca3ec
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 385e650e908947288eafa6f3f2812db45f9721a3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222662"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083137"
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
 這個方法會將列舉重設為第一個元素。

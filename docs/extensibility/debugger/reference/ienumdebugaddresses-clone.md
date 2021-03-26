@@ -1,6 +1,6 @@
 ---
 description: 這個方法會傳回目前位址列舉的複本，做為個別的物件。
-title: IEnumDebugAddresses：： Clone |Microsoft 檔
+title: IEnumDebugAddresses：： Clone |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses::Clone method
 ms.assetid: 71189a00-34eb-4c71-b96e-8bd6e70c6966
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bf78bc1964c3498b845a2e1f89235d7c572b1916
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 4f26eb76ff9126d1aa4f490488513a3d22113b4f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225132"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083202"
 ---
 # <a name="ienumdebugaddressesclone"></a>IEnumDebugAddresses::Clone
 這個方法會傳回目前列舉的複本，做為個別的物件。

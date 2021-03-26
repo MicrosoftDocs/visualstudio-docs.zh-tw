@@ -8,17 +8,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], with Windows Installer
 - VSPackages, deploying
 ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3ab4493d1d3acce3ad28c834136d25264a74180
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1638f6d041dda28ca79492ba2c8e6ef772ce8bc7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839816"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074661"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>使用 Windows Installer 安裝 VSPackage
 將您的 VSPackage 整合到 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 需要的不只是將檔案複製到使用者的電腦。 VSPackage 的安裝程式必須安裝 VSPackage 和其相依的檔案，並將其註冊並整合到中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 您的 VSPackage 可以利用整合功能，例如在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 啟動顯示畫面和 [關於] 對話方塊中顯示圖示。

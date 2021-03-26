@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8bfdcd854cf35c392578d9851a7421bacc8cbfe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 06c3fbfabb4eccc08e528aef913e1c1ba502cbf1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884984"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089130"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>使用編輯器專案範本建立擴充功能
 您可以使用 Visual Studio SDK 中包含的專案範本，來建立可將分類器、裝飾和邊界新增至編輯器的基本編輯器延伸模組。 編輯器專案範本適用于 Visual c # 或 Visual Basic VSIX 專案。
@@ -30,17 +30,17 @@ ms.locfileid: "99884984"
 
 1. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ]， **然後按一下 [** 擴充性]。 在 [ **範本** ] 窗格中，選取 [ **VSIX 專案**]。 在 [名稱]  方塊中，輸入 `TestClassifier`。 按一下 [確定]  。
 
-2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [Visual c **# 擴充** 性] 節點，然後選取 [ **編輯器分類器**]。 將預設的檔案名保留 (*EditorClassifier1.cs*) 。
+2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [Visual c **# 擴充** 性] 節點，然後選取 [ **編輯器分類器**]。 將預設的檔案名保留 (*EditorClassifier1* ]) 。
 
 3. 有四個程式碼檔案，如下所示：
 
-    - *EditorClassifier1.cs* 包含 `EditorClassifier1` 類別。
+    - *EditorClassifier1* 包含 `EditorClassifier1` 類別。
 
-    - *EditorClassifier1ClassificationDefinition.cs* 包含 `EditorClassifier1ClassificationDefinition` 類別。
+    - *EditorClassifier1ClassificationDefinition* 包含 `EditorClassifier1ClassificationDefinition` 類別。
 
-    - *EditorClassifier1Format.cs* 包含 `EditorClassifier1Format`  類別。
+    - *EditorClassifier1Format* 包含 `EditorClassifier1Format`  類別。
 
-    - *EditorClassifier1Provider.cs* 包含 `EditorClassifier1Provider` 類別。
+    - *EditorClassifier1Provider* 包含 `EditorClassifier1Provider` 類別。
 
 4. 建置此專案並開始偵錯。 Visual Studio 的實驗實例隨即出現。
 
@@ -51,13 +51,13 @@ ms.locfileid: "99884984"
 
 1. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ]， **然後按一下 [** 擴充性]。 在 [ **範本** ] 窗格中，選取 [ **VSIX 專案**]。 在 [名稱]  方塊中，輸入 `TestAdornment`。 按一下 [確定]  。
 
-2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [ **編輯器文字裝飾**]。 將預設的檔案名保留 (*TextAdornment1.cs/vb*) 。
+2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [ **編輯器文字裝飾**]。 保留預設檔案名 (*TextAdornment1 .cs/vb*) 。
 
 3. 有兩個程式碼檔，如下所示：
 
-    - *TextAdornment1.cs* 包含 `TextAdornment1` 類別。
+    - *TextAdornment1* 包含 `TextAdornment1` 類別。
 
-    - *TextAdornment1TextViewCreationListener.cs* 包含 `TextAdornment1TextViewCreationListener` 類別。
+    - *TextAdornment1TextViewCreationListener* 包含 `TextAdornment1TextViewCreationListener` 類別。
 
 4. 建置此專案並開始偵錯。 實驗實例隨即出現。 如果您開啟文字檔，則文字中的所有 ' a ' 字元都會以紅色標示為藍色背景。
 
@@ -71,13 +71,13 @@ ms.locfileid: "99884984"
 
 1. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ]， **然後按一下 [** 擴充性]。 在 [ **範本** ] 窗格中，選取 [ **VSIX 專案**]。 在 [名稱]  方塊中，輸入 `ViewportAdornment`。 按一下 [確定]  。
 
-2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [ **編輯器區裝飾**]。 將預設的檔案名保留 (*ViewportAdornment1.cs/vb*) 。
+2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [ **編輯器區裝飾**]。 保留預設檔案名 (*ViewportAdornment1 .cs/vb*) 。
 
 3. 有兩個程式碼檔，如下所示：
 
-    - *ViewportAdornment1.cs* 包含 `ViewportAdornment1` 類別。
+    - *ViewportAdornment1* 包含 `ViewportAdornment1` 類別。
 
-    - *ViewportAdornment1TextViewCreationListener.cs* 包含 `ViewportAdornment1TextViewCreationListener` 類別
+    - *ViewportAdornment1TextViewCreationListener* 包含 `ViewportAdornment1TextViewCreationListener` 類別
 
 4. 建置此專案並開始偵錯。 實驗實例隨即出現。 如果您建立新的文字檔，則會在此區的右上角顯示具有紅色外框的紫色方塊。
 
@@ -88,13 +88,13 @@ ms.locfileid: "99884984"
 
 1. 在 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #** ] 或 [ **Visual Basic** ]， **然後按一下 [** 擴充性]。 在 [ **範本** ] 窗格中，選取 [ **VSIX 專案**]。 在 [名稱]  方塊中，輸入 `MarginExtension`。 按一下 [確定]  。
 
-2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [ **編輯器邊界**]。 將預設的檔案名保留 (EditorMargin1.cs/vb) 。
+2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [ **編輯器邊界**]。 保留預設檔案名 (EditorMargin1 .cs/vb) 。
 
 3. 有兩個程式碼檔，如下所示：
 
-    - *EditorMargin1.cs* 包含 `EditorMargin1` 類別。
+    - *EditorMargin1* 包含 `EditorMargin1` 類別。
 
-    - *EditorMargin1Factory.cs* 包含 `EditorMargin1Factory` 類別。
+    - *EditorMargin1Factory* 包含 `EditorMargin1Factory` 類別。
 
 4. 建立此專案並開始進行調試。 實驗實例隨即出現。 如果您開啟文字檔，則會在水準捲軸下方顯示具有 **Hello EditorMargin1** 單字的綠色邊界。
 

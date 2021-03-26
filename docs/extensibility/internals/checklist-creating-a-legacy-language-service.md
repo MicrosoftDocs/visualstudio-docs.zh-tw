@@ -8,17 +8,17 @@ helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 823d46453ac6ad4a1a5a42c1f7d18a079b39d12d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 111e72714f4afd56b7b53e9cc48329ba6ce68162
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905856"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074791"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>檢查清單：建立舊版語言服務
 下列檢查清單摘要說明為核心編輯器建立語言服務所必須採取的基本步驟 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 若要將您的語言服務整合至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，您必須建立一個 debug 運算式評估工具。 如需詳細資訊，請參閱[Visual Studio 偵錯工具](../../extensibility/debugger/visual-studio-debugger-extensibility.md)擴充性中的[撰寫 CLR 運算式評估](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)工具。

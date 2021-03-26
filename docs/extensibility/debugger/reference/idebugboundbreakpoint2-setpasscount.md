@@ -1,6 +1,6 @@
 ---
 description: 設定或變更與此系結中斷點相關聯的傳遞計數。
-title: IDebugBoundBreakpoint2：： SetPassCount |Microsoft 檔
+title: IDebugBoundBreakpoint2：： SetPassCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - SetPassCount method
 - IDebugBoundBreakpoint2::SetPassCount method
 ms.assetid: b32c12f9-b34d-43bd-a1b9-61af6cf8e51b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ccefd1e3b120ac52801a1163ea8bda814626a0b9
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8fb3ae8bf41b8cb9eafa40d9bcc98c702cf359d0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167486"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088831"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
 設定或變更與此系結中斷點相關聯的傳遞計數。

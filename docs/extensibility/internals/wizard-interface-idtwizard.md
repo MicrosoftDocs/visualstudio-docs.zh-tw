@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IDTWizard interface
 - wizards, interface
 ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc33d2fb37db7e021ce1752c642492a80956b61f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8dc88341bc72755ae0f5011d18182c5b78bb483
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935933"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074193"
 ---
 # <a name="wizard-interface-idtwizard"></a>精靈介面 (IDTWizard)
 整合式開發環境 (IDE) 會使用 <xref:EnvDTE.IDTWizard> 介面來與嚮導進行通訊。 您必須執行這個介面，才能將它安裝在 IDE 中。

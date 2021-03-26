@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b847fad9752c6a2448c0fdc571815ea1823e2d9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6c93d90771eeffbfe28ae91781403019743afa9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944891"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089143"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>使用 VSPackage 建立延伸模組
 
@@ -29,7 +29,7 @@ ms.locfileid: "99944891"
 
 1. 建立名為 **FirstPackage** 的 VSIX 專案。 您可以藉由搜尋 "vsix"，在 [ **新增專案** ] 對話方塊中找到 VSIX 專案範本。
 
-2. 當專案開啟時，加入名為 **FirstPackage** 的 Visual Studio 套件專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  然後選取 [ **Visual Studio 套件**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstPackage.cs*。
+2. 當專案開啟時，加入名為 **FirstPackage** 的 Visual Studio 套件專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  然後選取 [ **Visual Studio 套件**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstPackage .cs*。
 
 3. 建置此專案並開始偵錯。
 
@@ -41,7 +41,7 @@ ms.locfileid: "99944891"
 
 此時不會載入擴充功能，因為沒有任何專案會造成載入。 當您與 UI 互動時，通常可以載入擴充功能 (按一下功能表命令、開啟工具視窗) ，或指定 VSPackage 應該在特定的 UI 內容中載入。 如需有關載入 Vspackage 和 UI 內容的詳細資訊，請參閱 [載入 vspackage](../extensibility/loading-vspackages.md)。 在此程式中，我們將示範如何在解決方案開啟時載入 VSPackage。
 
-1. 開啟 *FirstPackage.cs* 檔案。 尋找類別的宣告 `FirstPackage` 。 將現有屬性取代為下列屬性：
+1. 開啟 *FirstPackage .cs* 檔案。 尋找類別的宣告 `FirstPackage` 。 將現有屬性取代為下列屬性：
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -78,4 +78,4 @@ ms.locfileid: "99944891"
 
 3. 建置此專案並開始偵錯。 實驗實例隨即出現。
 
-4. 在實驗實例中開啟方案。 您應該會看到一個訊息方塊，指出 **初始化 ( # B1 內的第一個封裝**。
+4. 在實驗實例中開啟方案。 您應該會看到一個訊息方塊，指出 **初始化 () 內的第一個封裝**。
