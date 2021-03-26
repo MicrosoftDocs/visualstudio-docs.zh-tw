@@ -1,6 +1,6 @@
 ---
 description: 取得此進程正在其上執行的伺服器。
-title: IDebugProcess2：： Teamfoundationserverfactory.getserver |Microsoft 檔
+title: IDebugProcess2：： Teamfoundationserverfactory.getserver |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetServer
 ms.assetid: 8f73c530-cceb-4f1f-8c63-1cc0ccd4a310
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fba7af19093d853d227241187242a24bf9bd8cdb
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a2bf0528526e20fc3eae7acf46dfc2b706be94eb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169193"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081629"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 取得此進程正在其上執行的伺服器。

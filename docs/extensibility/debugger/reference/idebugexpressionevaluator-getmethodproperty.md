@@ -1,6 +1,6 @@
 ---
 description: 這個方法會取得包含區域變數、引數和方法之其他屬性的屬性物件。
-title: IDebugExpressionEvaluator：： GetMethodProperty |Microsoft 檔
+title: IDebugExpressionEvaluator：： GetMethodProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::GetMethodProperty method
 ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d98e661ad3f469c41c120e07e6d54f76b089cb0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e4a82ce250b47f2f199d9e8e8fcf3a2ca7ec5777
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152503"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092172"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 這個方法會取得包含區域變數、引數和方法之其他屬性的屬性物件。

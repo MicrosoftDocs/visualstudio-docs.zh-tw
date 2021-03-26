@@ -1,6 +1,6 @@
 ---
 description: 這個介面代表列舉型別。
-title: IDebugEnumField |Microsoft 檔
+title: IDebugEnumField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField interface
 ms.assetid: 42f685bf-0f39-47f4-98b0-6022efe2bf97
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f78e8d2560224ad22a58b74823530b6be4b1efb8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 18671f8f719dc797709677a14417eaa0a54aaea2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153205"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092523"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 這個介面代表列舉型別。

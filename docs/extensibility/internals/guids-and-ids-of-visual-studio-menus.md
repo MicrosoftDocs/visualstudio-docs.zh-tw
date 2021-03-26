@@ -12,17 +12,17 @@ helpviewer_keywords:
 - guid
 - menus
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd2bdc047ddd5a568aca01ed99b6148b0f288faa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d9f5066c5ae5c9fa57517406b8eca388747979c4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970266"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082084"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 功能表的 Guid 和識別碼
 本文列舉 Visual Studio 功能表列上功能表和群組的 GUID 和識別碼值。 這些值會定義在 *.vsct* 檔案中，這些檔案會安裝為 Visual Studio SDK 的一部分。 如需詳細資訊，請參閱 [IDE 定義的命令、功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -62,7 +62,7 @@ ms.locfileid: "99970266"
 |時間範圍|IDM_VS_MENU_WINDOW|
 |增益集|IDM_VS_MENU_ADDINS|
 |社群|IDM_VS_MENU_COMMUNITY|
-|説明|IDM_VS_MENU_HELP|
+|Help|IDM_VS_MENU_HELP|
 
 ## <a name="groups-on-visual-studio-menus"></a>Visual Studio 功能表上的群組
  下列清單顯示直接從 Visual Studio 功能表列上的功能表中下降的群組。 將命令新增至 Visual Studio 功能表的最快方式，就是將其中一個群組設定為父系。 從子功能表繼承的群組不會出現在此區段中。
@@ -73,7 +73,7 @@ ms.locfileid: "99970266"
 |-----------|--------|
 |新增/開啟|IDG_VS_FILE_FILE|
 |加|IDG_VS_FILE_ADD|
-|解決方案|IDG_VS_FILE_SOLUTION|
+|解決方法|IDG_VS_FILE_SOLUTION|
 |其他|IDG_VS_FILE_MISC|
 |儲存|IDG_VS_FILE_SAVE|
 |重新命名|IDG_VS_FILE_RENAME|
@@ -140,7 +140,7 @@ ms.locfileid: "99970266"
 
 |Group|識別碼|
 |-----------|--------|
-|解決方案|IDG_VS_BUILD_SOLUTION|
+|解決方法|IDG_VS_BUILD_SOLUTION|
 |選取|IDG_VS_BUILD_SELECTION|
 |特性指引最佳化|IDG_VS_PGO_SELECTION|
 |其他|IDG_VS_BUILD_MISC|

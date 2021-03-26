@@ -1,6 +1,6 @@
 ---
 description: 刪除這個暫止中斷點及其系結的所有中斷點。
-title: IDebugPendingBreakpoint2：:D elete |Microsoft 檔
+title: IDebugPendingBreakpoint2：:D elete |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::Delete method
 - Delete method
 ms.assetid: 4cb5ed81-6f0c-41ce-a770-5adb6b4bf5d9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 459e21fa7cc9e43d09d56f4537dd9a3bf2a978b3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 25152c5a49ccef84f44d8c3fde3217367c0e334b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143073"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087765"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
 刪除這個暫止中斷點及其系結的所有中斷點。

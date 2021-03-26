@@ -8,17 +8,17 @@ helpviewer_keywords:
 - statement completion
 - language services, statement completion
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 815b47a700e87852596d7a65e341953f65b66cf9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63a784c850f4c88ecf17a978a2943577eb988a7b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894825"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080771"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>舊版語言服務中的陳述式完成
 語句完成是語言服務協助使用者完成其在核心編輯器中開始輸入的語言關鍵字或元素的程式。 本主題討論語句完成的運作方式，以及如何在您的語言服務中加以執行。

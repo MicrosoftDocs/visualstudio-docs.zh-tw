@@ -1,6 +1,6 @@
 ---
 description: 這個方法會傳回啟動處理常式以進行偵錯工具的原因。
-title: IDebugProcess3：： GetDebugReason |Microsoft 檔
+title: IDebugProcess3：： GetDebugReason |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::GetDebugReason
 ms.assetid: f23fbabc-8b18-4278-bebf-4cdc7091513c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ab36134f8085ba13279332e3c1b8dc2fe65c200
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c015756b441dacbd86be0c562c859753b7c8903b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158471"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081564"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
 這個方法會傳回啟動處理常式以進行偵錯工具的原因。

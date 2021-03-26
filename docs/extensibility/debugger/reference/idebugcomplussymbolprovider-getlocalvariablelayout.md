@@ -1,26 +1,26 @@
 ---
 description: 抓取一組方法的本機變數版面配置。
-title: IDebugComPlusSymbolProvider：： GetLocalVariablelayout |Microsoft 檔
+title: IDebugComPlusSymbolProvider：： GetLocalVariablelayout |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetLocalVariablelayout
 - IDebugComPlusSymbolProvider::GetLocalVariablelayout
 ms.assetid: b7328d85-e5e9-4d9f-bcd1-e7711fd33878
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 70b8a8e2e038d8aa60b594b18587c974d863ab89
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e78556b7187072f72930767c6b718a87998f5995
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167434"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095715"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
 抓取一組方法的本機變數版面配置。

@@ -15,17 +15,17 @@ helpviewer_keywords:
 - command line, switches
 - Visual Studio SDK, command-line switches
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c6b6260bad412127afe4dd9135ccf66d48e9e3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94cca255390d9f5637f0bf4f5b24f2d0fd6b4e83
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968303"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091262"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>適用于 VSPackage 開發的 Devenv 命令列參數
 

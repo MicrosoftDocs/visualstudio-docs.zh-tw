@@ -1,6 +1,6 @@
 ---
 description: 從程式碼路徑列舉傳回下一組元素。
-title: IEnumCodePaths2：： Next |Microsoft 檔
+title: IEnumCodePaths2：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::Next
 ms.assetid: c7a8fe97-2abc-4cee-8aef-64f1daa93b5c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7782a2b962786b191849dbdc1a9a7f3f7c727e9f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 9ff0cb49d69d9bc2b8584af53f8c11bba87921c0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222688"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091762"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 傳回列舉中的下一組元素。

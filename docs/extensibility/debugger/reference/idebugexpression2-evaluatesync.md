@@ -1,6 +1,6 @@
 ---
 description: 這個方法會以同步方式評估運算式。
-title: IDebugExpression2：： EvaluateSync |Microsoft 檔
+title: IDebugExpression2：： EvaluateSync |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::EvaluateSync
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08d430a2c4e803126e99d37fb7ef30336bde503b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 85e0dd1c334ce57b5e466ab66a74db4b29a40adc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152698"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092432"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 這個方法會以同步方式評估運算式。
@@ -68,7 +68,7 @@ int EvaluateSync(
 |E_EVALUATE_TIMEOUT|評估已超時。|
 
 ## <a name="remarks"></a>備註
-若要進行同步評估，在評估完成時，不需要將事件傳回至 Visual Studio。
+若要進行同步評估，在評估完成時，不需要將事件傳回 Visual Studio。
 
 ## <a name="example"></a>範例
 下列範例示範如何針對實 IDebugExpression2 介面的簡單物件，執行這個方法 `CExpression` 。 [](../../../extensibility/debugger/reference/idebugexpression2.md)

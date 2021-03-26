@@ -1,6 +1,6 @@
 ---
 description: 這個方法會傳回與列舉常數名稱相關聯的值。
-title: IDebugEnumField：： GetValueFromString |Microsoft 檔
+title: IDebugEnumField：： GetValueFromString |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetValueFromString method
 ms.assetid: 1ef8ac5e-a3e0-4078-b876-7f5615aedcbb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6a4ab2950667ba9268335f2e0dbca1c0ce5183bc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ec1070948685c69ce8615e2bef836c4d721e1cb0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153296"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092536"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 這個方法會傳回與列舉常數名稱相關聯的值。
@@ -53,7 +53,7 @@ int GetValueFromString(
  如果成功， `S_OK` 則傳回; 否則， `S_FALSE` 如果名稱不是列舉的一部分或錯誤碼，則會傳回。
 
 ## <a name="remarks"></a>備註
- 這個方法會區分大小寫。 如果需要不區分大小寫的搜尋 (例如，在 Visual Basic 之類的語言中，如果名稱不區分大小寫) ，請使用 [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)。
+ 這個方法會區分大小寫。 如果需要不區分大小寫的搜尋 (例如，在 Visual Basic 名稱不區分大小寫) 的語言中，請使用 [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

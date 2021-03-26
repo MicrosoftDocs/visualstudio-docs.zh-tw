@@ -1,6 +1,6 @@
 ---
 description: 這個方法會設定用來建立可列印結果的語言。
-title: IDebugExpressionEvaluator：： SetLocale |Microsoft 檔
+title: IDebugExpressionEvaluator：： SetLocale |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::SetLocale method
 ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f109717c030c830f433a02bec52e5931e4b5e467
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5f833311fe9029931c0d56cbe828bd027c45c26a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152438"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092055"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 這個方法會設定用來建立可列印結果的語言。

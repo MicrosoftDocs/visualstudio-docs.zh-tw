@@ -1,6 +1,6 @@
 ---
 description: 此介面代表在埠上執行的處理常式。
-title: IDebugProcess2 |Microsoft 檔
+title: IDebugProcess2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2 interface
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 131eacba321bac70c75b77faf33b18aae0135e55
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0d56687cb3559b5807b488fa44dfdfc4048e4c58
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150259"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081603"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 此介面代表在埠上執行的處理常式。 如果埠是本機埠，則 `IDebugProcess2` 通常代表本機電腦上的實體處理常式。

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfe2947d60ad5dde6e2f23b9bed59b09e6abe8ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1256b807d67f95aa8ca1e952a4dca7bd550e0fc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862118"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075012"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>擴充方案總管篩選
 您可以擴充 **方案總管** 篩選功能，以顯示或隱藏不同的檔案。 例如，您可以建立只在 **方案總管** 中顯示 c # class factory 檔案的篩選準則，如本逐步解說所示範。
@@ -60,14 +60,14 @@ ms.locfileid: "99862118"
 
 ### <a name="add-the-filter-code"></a>新增篩選器程式碼
 
-1. 將一些 Guid 新增至 *FileFilterPackageGuids.cs* 檔案：
+1. 將一些 Guid 新增至 *FileFilterPackageGuids .cs* 檔案：
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2. 將類別檔案加入至名為 *FileNameFilter.cs* 的 FileFilter 專案。
+2. 將類別檔案加入至名為 *FileNameFilter* 的 FileFilter 專案。
 
 3. 將空的命名空間和空白類別取代為下列程式碼。
 
@@ -160,7 +160,7 @@ ms.locfileid: "99862118"
 
     ```
 
-4. 在 *FileFilter.cs* 中，從 FileFilter 的函式移除命令放置和處理常式代碼。 結果看起來應該像這樣：
+4. 在 *filefilter* 中，從 filefilter 的函式移除命令放置和處理常式代碼。 結果看起來應該像這樣：
 
     ```csharp
     private FileFilter(Package package)
@@ -176,7 +176,7 @@ ms.locfileid: "99862118"
 
      也請移除 `ShowMessageBox()` 方法。
 
-5. 在 *FileFilterPackage.cs* 中，將方法中的程式碼取代為下列程式碼 `Initialize()` ：
+5. 在 *FileFilterPackage* 中，將方法中的程式碼取代為下列程式碼 `Initialize()` ：
 
     ```csharp
     protected override void Initialize()

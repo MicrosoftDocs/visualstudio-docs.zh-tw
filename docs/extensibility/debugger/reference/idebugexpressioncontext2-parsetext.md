@@ -1,6 +1,6 @@
 ---
 description: 剖析文字形式的運算式以供稍後評估之用。
-title: IDebugExpressionCoNtext2：:P arseText |Microsoft 檔
+title: IDebugExpressionCoNtext2：:P arseText |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionContext2::ParseText
 ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2095a1d6e035c676ab92722f9ae785e1a42c5b78
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 72cb26cf71b2994b25033d61adea52e8439d2fbd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152633"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092302"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 剖析文字形式的運算式以供稍後評估之用。

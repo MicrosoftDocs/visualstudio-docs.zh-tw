@@ -1,6 +1,6 @@
 ---
 description: 此介面代表中斷點錯誤的解決方式。
-title: IDebugErrorBreakpointResolution2 |Microsoft 檔
+title: IDebugErrorBreakpointResolution2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2
 ms.assetid: b1234216-0ac8-461d-b2a7-54f60f8f3262
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2825f35b4acad62b0134e3d02bbdb51be122ec5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f4dac9e7f506fdb4e6556de719aef554e47034f4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153101"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092458"
 ---
 # <a name="idebugerrorbreakpointresolution2"></a>IDebugErrorBreakpointResolution2
 此介面代表中斷點錯誤的解決方式。

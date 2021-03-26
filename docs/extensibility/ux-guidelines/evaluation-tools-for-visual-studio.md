@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6f20074b3609bce8e661baed5fded1d0d367c53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f23521763e73ef65b9c5a2f17acb54b85b71d63
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952014"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089884"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>適用於 Visual Studio 的評估工具
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Visual Studio 的熱情技術檢查清單

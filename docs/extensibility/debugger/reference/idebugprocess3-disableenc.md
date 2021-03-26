@@ -1,6 +1,6 @@
 ---
 description: 這個方法會明確停用此進程的 [編輯後繼續] (以及它包含) 的所有程式。
-title: IDebugProcess3：:D isableENC |Microsoft 檔
+title: IDebugProcess3：:D isableENC |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::DisableENC
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ffedebd14f720e006c0bec2044afe80901762b52
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7f9c4a1e05cf7d4a98489daf0c2ee3377d54f417
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158484"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081616"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 這個方法會明確停用此進程的 [編輯後繼續] (以及它包含) 的所有程式。 自訂埠供應商應該一律傳回 `E_NOTIMPL` 。
