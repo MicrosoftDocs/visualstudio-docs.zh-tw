@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a9b8db832207eff93e08f123db57b4beef4eb7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4c79d27c01035f83b506ffad4ec138c8c68f98d2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840596"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097028"
 ---
 # <a name="evaluate-expressions"></a>評估運算式
 運算式是 **從 [自動** 變數 **]、[監看式]、[快速監看式] 或 [** 即時運算] 視窗中傳遞  評估運算式時，它會產生可列印的字串，其中包含變數或引數的名稱和類型，以及其值。 這個字串會顯示在對應的 IDE 視窗中。

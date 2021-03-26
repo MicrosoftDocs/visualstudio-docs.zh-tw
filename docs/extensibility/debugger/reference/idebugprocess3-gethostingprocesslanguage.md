@@ -1,6 +1,6 @@
 ---
 description: 這個方法會傳回 GUID，代表這個進程的語言，如 SetHostingProcessLanguage 的呼叫所設定。
-title: IDebugProcess3：： GetHostingProcessLanguage |Microsoft 檔
+title: IDebugProcess3：： GetHostingProcessLanguage |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::GetHostingProcessLanguage
 ms.assetid: 52fca002-a9ef-43b1-9192-afbe7bb59ad4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 303f0e5dcd4cc87bbc13e55fcc9b95bc870213d5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2615f0e43c21983e220600e30ea9b78f508c8ddb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158432"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076546"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
 這個方法會傳回， `GUID` 代表這個進程的語言，如 [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)的呼叫所設定。

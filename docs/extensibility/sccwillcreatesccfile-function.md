@@ -1,6 +1,6 @@
 ---
 description: 此函式會判斷原始檔控制外掛程式是否支援建立 MSSCCPRJ.SCC。每個指定檔案的 SCC 檔。
-title: SccWillCreateSccFile 函式 |Microsoft 檔
+title: SccWillCreateSccFile 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccWillCreateSccFile function
 ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee01478858615aad135d07a5c10d5d6c58280926
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 00988afe980a29a7176c8632d95514813efaad37
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221284"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063717"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 函式
 此函式會判斷原始檔控制外掛程式是否支援建立 MSSCCPRJ.SCC。每個指定檔案的 SCC 檔。

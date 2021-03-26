@@ -1,6 +1,6 @@
 ---
 description: 將此檔內容與指定的檔內容陣列進行比較。
-title: IDebugDocumentCoNtext2：： Compare |Microsoft 檔
+title: IDebugDocumentCoNtext2：： Compare |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::Compare
 ms.assetid: 2327b1ba-52d0-42fb-a01e-63cb4b332d2f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a18a689a187e802b92485f092b10b7323d0f97c8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a680da6f33d3da37995eb26071c0ea5f1ddc2283
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102173013"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066707"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 將此檔內容與指定的檔內容陣列進行比較。

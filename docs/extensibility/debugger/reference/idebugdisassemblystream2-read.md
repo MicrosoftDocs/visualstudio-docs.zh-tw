@@ -1,6 +1,6 @@
 ---
 description: 從反組解碼資料流程中的目前位置開始讀取指示。
-title: IDebugDisassemblyStream2：： Read |Microsoft 檔
+title: IDebugDisassemblyStream2：： Read |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::Read
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b963bddc9d1ee04a6955b1110d73934b30196b21
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bcabd0cc42f013b579ee32deeb33d68cd9d45f5d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160195"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066915"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 從反組解碼資料流程中的目前位置開始讀取指示。

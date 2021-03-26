@@ -8,17 +8,17 @@ helpviewer_keywords:
 - break mode
 - debugging [Debugging SDK], entering break mode
 ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3ec09994f6998f87daafc690b1908b31e54706b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6e8af8aa2765e199e8e278982669f68b3019b6c2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840648"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097210"
 ---
 # <a name="enter-break-mode"></a>進入中斷模式
 下列資訊描述在逐步執行函式之後遇到中斷點時所發生的程式，執行至具有游標所在的源程式碼，或執行至中斷點。

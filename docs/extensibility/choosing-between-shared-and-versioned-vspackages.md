@@ -9,17 +9,17 @@ helpviewer_keywords:
 - side-by-side installation
 - installation [Visual Studio SDK], side-by-side
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90acdde2c365effd189efe4437b5e41c39f494b0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 257158ec3c8d4364e1aa52133c457e24fd98cff3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949632"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078236"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>在共用和建立版本的 Vspackage 之間進行選擇
 不同版本的 Visual Studio 可以並存于同一部電腦上。 Vspackage 可支援任何版本的混合 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。

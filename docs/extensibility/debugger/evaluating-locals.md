@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 291c77568f17cfb0aed9d0d5b55e5ca193a6a702
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26543152293cd93bc5565995f2e6c451417aca37
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840635"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096988"
 ---
 # <a name="evaluate-locals"></a>評估區域變數
 > [!IMPORTANT]

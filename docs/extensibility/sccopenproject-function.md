@@ -1,6 +1,6 @@
 ---
 description: 此函式會開啟現有的原始檔控制專案或建立新專案。
-title: SccOpenProject 函式 |Microsoft 檔
+title: SccOpenProject 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff0aa402f3c3ba264524d6d4082c4a9fbf57c8ad
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: baada63e84e95fd466e0e5640c592dfe303d8e1a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221544"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063756"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 函式
 此函式會開啟現有的原始檔控制專案或建立新專案。

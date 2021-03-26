@@ -1,6 +1,6 @@
 ---
 description: 這個方法會傳回變數的確切型別。
-title: IDebugBinder：： ResolveDynamicType |Microsoft 檔
+title: IDebugBinder：： ResolveDynamicType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::ResolveDynamicType method
 ms.assetid: 2c36ef92-5b44-4cfd-988e-54a2e5a6710c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 548ba7ed326de2310cdc6689088f72c7a97ade7d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 149cb7fc88a5bc3619cb8b87b08bc2018040410a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102174030"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067409"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 這個方法會傳回變數的確切型別。

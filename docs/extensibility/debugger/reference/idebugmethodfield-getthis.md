@@ -1,6 +1,6 @@
 ---
-description: 取得包含方法之物件的 Visual Basic) 指標中的這個 (Me。
-title: IDebugMethodField：： GetThis |Microsoft 檔
+description: 在包含方法的物件 Visual Basic) 指標中，取得這個 (Me。
+title: IDebugMethodField：： GetThis |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::GetThis method
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3eb303a7e0a4795d3f7ef49f9114cc942bff9b2d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 662555ec4552aa016b40c1e9c8222992e6cdfd66
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164938"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076637"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 取得 `this` `Me` [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 包含方法之物件) 指標中的 (。
