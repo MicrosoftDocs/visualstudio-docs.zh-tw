@@ -1,6 +1,6 @@
 ---
 description: 包含物件的陣列，這些物件會描述感興趣的程式。
-title: PROGRAM_NODE_ARRAY |Microsoft 檔
+title: PROGRAM_NODE_ARRAY |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROGRAM_NODE_ARRAY structure
 ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 282d96a221c0422da14427b71f1727c65b826fd7
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 5b1397737003216b843d893af696a5ad14607a19
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222051"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079523"
 ---
 # <a name="program_node_array"></a>PROGRAM_NODE_ARRAY
 包含物件的陣列，這些物件會描述感興趣的程式。

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - session debug manager, debug engine multiplexing
 - session debug manager, delegating
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d67716f78249bda5d316ffde175b80f4ef1c1e45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e5a206b8ece21b14758dfeb02563d4d323dcf60
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960776"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079458"
 ---
 # <a name="session-debug-manager"></a>會話偵錯工具管理員
 會話 debug manager (SDM) 管理任何數目的偵錯工具， (取消在任意數目的電腦之間，對多個進程中任何數目的程式進行偵錯工具的) 。 除了做為「偵測引擎多工器」之外，SDM 也提供對 IDE 之 debug 會話的統一觀點。

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - symbol handler
 - debugging [Debugging SDK], symbol handler
 ms.assetid: 5fce651b-fead-4418-81b0-a011df7644ab
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ae3cd813b79eca1fe64328e890f4a37cc03b0d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 132e3c15eed86c9008e49b74b6da6e5da5a3ce33
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960659"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079380"
 ---
 # <a name="symbol-provider"></a>符號提供者
 運算式評估工具的執行必須存取語言編譯器所產生的符號 debug 資訊，才能評估變數和運算式。 其運作方式是使用符號提供者的介面 (SP) ，也稱為符號處理常式。

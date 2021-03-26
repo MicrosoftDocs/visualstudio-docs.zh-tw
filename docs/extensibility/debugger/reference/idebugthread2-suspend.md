@@ -1,6 +1,6 @@
 ---
 description: 暫停執行緒。
-title: IDebugThread2：：暫止 |Microsoft 檔
+title: IDebugThread2：：暫止 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Suspend
 ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0f80799961ccce4b3492b46801b1917055742666
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 902418aeb18c149b0732e972a34ed89b56bb22ce
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164444"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081135"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 暫停執行緒。

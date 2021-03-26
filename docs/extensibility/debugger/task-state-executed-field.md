@@ -1,22 +1,22 @@
 ---
 description: 工作正在執行，但尚未完成。
-title: TASK_STATE_EXECUTED 欄位 |Microsoft 檔
+title: TASK_STATE_EXECUTED 欄位 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_EXECUTED field, Task class [.NET Framework debug engines]
 ms.assetid: 75b8f9d0-b908-40d0-b109-70feaed2ab0c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bdc6344c3257611664fc792658dcf6508e91bfd
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f035d0a55c1884deceb1a8312ff74fe0dd615bfb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223286"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079302"
 ---
 # <a name="task_state_executed-field"></a>TASK_STATE_EXECUTED 欄位
 工作正在執行，但尚未完成。
@@ -25,7 +25,7 @@ ms.locfileid: "102223286"
 
  **元件：** mscorlib.dll) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取此內部成員，所以會在一般中繼語言 (的 CIL) 中提供下列語法。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
 
 ## <a name="syntax"></a>語法
 

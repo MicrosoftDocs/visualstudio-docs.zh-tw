@@ -10,17 +10,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Extern
 - Extern element (VSCT XML schema)
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8892de377d2383e5aed3ec7824616d626bc5164f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5771dbc1c6b17b0f488d42c30a036ff1d90a5a18
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862092"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074986"
 ---
 # <a name="extern-element"></a>Extern 元素
 Extern 元素會參考任何外部標頭 (*.h*) 檔案，以便在編譯時期與 *.vsct* 檔案合併。 要合併的檔案必須位於提供給 .VSCT 編譯器的 Include 路徑上，或是由 [include 元素](../extensibility/include-element.md)所參考。 檔案可能是其他 *.vsct* 檔案或 c + + 標頭檔。

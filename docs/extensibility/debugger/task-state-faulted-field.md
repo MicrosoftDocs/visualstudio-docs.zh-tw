@@ -1,22 +1,22 @@
 ---
 description: 工作因未處理的例外狀況而完成。
-title: TASK_STATE_FAULTED 欄位 |Microsoft 檔
+title: TASK_STATE_FAULTED 欄位 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_FAULTED field, Task class [.NET Framework debug engines]
 ms.assetid: ced826ae-09a9-4acf-af00-a2343d396bb8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5a8113f6145706d2863a4f0060a8627952eb0b3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f01c222686ab2c03acc05dcd08beabd305119300
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223182"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079250"
 ---
 # <a name="task_state_faulted-field"></a>TASK_STATE_FAULTED 欄位
 工作因未處理的例外狀況而完成。
@@ -25,7 +25,7 @@ ms.locfileid: "102223182"
 
  **元件：** *mscorlib.dll*) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取此內部成員，所以會在一般中繼語言 (的 CIL) 中提供下列語法。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
 
 ## <a name="syntax"></a>語法
 

@@ -1,6 +1,6 @@
 ---
 description: 從進程列舉傳回下一組元素。
-title: IEnumDebugProcesses2：： Next |Microsoft 檔
+title: IEnumDebugProcesses2：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2::Next
 ms.assetid: abef89eb-198b-49cd-a4c9-17bce6cac0e1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a02299eb96e435089f87f0236d5d137b4ffac527
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 6b4af03e6ad50cea9392b967d6f874a42c0834de
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226107"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081031"
 ---
 # <a name="ienumdebugprocesses2next"></a>IEnumDebugProcesses2::Next
 傳回列舉中的下一組元素。

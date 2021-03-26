@@ -10,17 +10,17 @@ helpviewer_keywords:
 - tutorials
 - visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ada5870bc06465b97bdf767eb64910f62e15f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: de79662494a3228dd301e8d08480c6aa0a0192a2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944904"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089208"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>使用功能表命令建立擴充功能
 
@@ -36,13 +36,13 @@ ms.locfileid: "99944904"
 
 ::: moniker range="vs-2017"
 
-2. 當專案開啟時，加入名為 **FirstCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstCommand.cs*。
+2. 當專案開啟時，加入名為 **FirstCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 **Visual c #** 擴充性，  >  然後選取 [**自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstCommand .cs*。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. 當專案開啟時，加入名為 **FirstCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  然後選取 [**命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstCommand.cs*。
+2. 當專案開啟時，加入名為 **FirstCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 在 [**加入新專案**] 對話方塊中，移至 [ **Visual c #** 擴充性]，  >  然後選取 [**命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *FirstCommand .cs*。
 
 ::: moniker-end
 
@@ -62,13 +62,13 @@ ms.locfileid: "99944904"
 
 ::: moniker-end
 
-現在，移至實驗實例中的 [ **工具** ] 功能表。 您應該會看到 **Invoke FirstCommand** 命令。 此時，此命令會顯示一個訊息方塊，指出 **FirstCommand 內部 FirstMenuCommand. FirstCommand. MenuItemCallback ( # B1**。 在下一節中，我們將瞭解如何從此命令實際啟動「記事本」。
+現在，移至實驗實例中的 [ **工具** ] 功能表。 您應該會看到 **Invoke FirstCommand** 命令。 此時，此命令會顯示一個訊息方塊，指出 **FirstCommand 內部 FirstMenuCommand. FirstCommand. MenuItemCallback ()**。 在下一節中，我們將瞭解如何從此命令實際啟動「記事本」。
 
 ## <a name="change-the-menu-command-handler"></a>變更功能表命令處理常式
 
 現在讓我們更新命令處理常式以啟動 [記事本]。
 
-1. 停止偵錯工具，並返回 Visual Studio 的工作實例。 開啟 *FirstCommand.cs* 檔案，並新增下列 using 語句：
+1. 停止偵錯工具，並返回 Visual Studio 的工作實例。 開啟 *FirstCommand .cs* 檔案，然後新增下列 using 語句：
 
     ```csharp
     using System.Diagnostics;

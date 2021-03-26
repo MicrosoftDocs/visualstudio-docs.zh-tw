@@ -1,6 +1,6 @@
 ---
 description: 略過進程列舉中指定的元素數目。
-title: IEnumDebugProcesses2：： Skip |Microsoft 檔
+title: IEnumDebugProcesses2：： Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2::Skip
 ms.assetid: b9e9d888-189b-44c4-a65f-e91612458898
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 22f033ac1f7ec42fd6ce621e73dae9102e8621ed
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 359f37896592a13a395c0e71c6346ce3db8c7975
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226120"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091535"
 ---
 # <a name="ienumdebugprocesses2skip"></a>IEnumDebugProcesses2::Skip
 略過指定的元素數目。

@@ -1,26 +1,26 @@
 ---
 description: 抓取符號提供者為其成員之符號群組的相關資訊。
-title: IDebugSymbolProviderDirect：： GetCurrentModulesState |Microsoft 檔
+title: IDebugSymbolProviderDirect：： GetCurrentModulesState |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetCurrentModulesState
 - IDebugSymbolProviderDirect::GetCurrentModulesState
 ms.assetid: a0c85318-5686-4eed-b213-21f2b9e681e6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fcc127bd3450f06a51ab0b04d61d52f4ee08e092
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e5bc7af275d18626fdb86e25400e9433002be8cf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149479"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081304"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 抓取符號提供者為其成員之符號群組的相關資訊。

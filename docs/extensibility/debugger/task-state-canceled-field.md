@@ -1,22 +1,22 @@
 ---
 description: 工作在達到執行狀態之前已取消，或已確認其取消，且已完成，但未發生例外狀況。
-title: TASK_STATE_CANCELED 欄位 |Microsoft 檔
+title: TASK_STATE_CANCELED 欄位 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_CANCELED field, Task class [.NET Framework debug engines]
 ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e99148c223f86a0307a0588e7803a5fadf52d6a
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e02bd5c81fea58e49eca0909d53d2fe68269b72d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223325"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079263"
 ---
 # <a name="task_state_canceled-field"></a>TASK_STATE_CANCELED 欄位
 工作在達到執行狀態之前已取消，或已確認其取消，且已完成，但未發生例外狀況。
@@ -25,7 +25,7 @@ ms.locfileid: "102223325"
 
  **元件：** mscorlib.dll) 中的 mscorlib (
 
- 因為您無法從 .NET Framework 存取此內部成員，所以會在一般中繼語言 (的 CIL) 中提供下列語法。
+ 因為您無法從 .NET Framework 存取此內部成員，所以會在) 的通用中繼語言中提供下列語法 (。
 
 ## <a name="syntax"></a>語法
 

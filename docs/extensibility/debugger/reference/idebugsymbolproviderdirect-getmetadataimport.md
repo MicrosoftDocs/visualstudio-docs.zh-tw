@@ -1,26 +1,26 @@
 ---
 description: 捕獲中繼資料匯入資訊。
-title: IDebugSymbolProviderDirect：： GetMetaDataImport |Microsoft 檔
+title: IDebugSymbolProviderDirect：： GetMetaDataImport |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetMetaDataImport
 - IDebugSymbolProviderDirect::GetMetaDataImport
 ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4bbab6ea486d1de4076424bd70d86b34eac19813
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 52bc940485a99c545bc4450412a6aa4b3f8b104a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149466"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081291"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 捕獲中繼資料匯入資訊。

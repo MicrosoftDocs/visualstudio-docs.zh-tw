@@ -1,6 +1,6 @@
 ---
 description: 從模組列舉傳回下一組元素。
-title: IEnumDebugModules2：： Next |Microsoft 檔
+title: IEnumDebugModules2：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2::Next
 ms.assetid: 46b7ccad-b07b-4ec0-b3ce-13981ffab7e8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a7c1d627579faea8bb4871feb310db79d6e5eea0
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ce90b6095fc95902a74697e3957f3ef185e8c2c5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226393"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091496"
 ---
 # <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
 傳回列舉中的下一組元素。

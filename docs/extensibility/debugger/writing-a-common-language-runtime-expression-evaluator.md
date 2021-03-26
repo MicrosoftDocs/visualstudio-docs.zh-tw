@@ -9,17 +9,17 @@ helpviewer_keywords:
 - expression evaluation, samples
 - debugging [Debugging SDK], expression evaluators tutorial
 ms.assetid: bd79d57f-8e0a-4e14-a417-0b1de28fa1b2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7d7e4ab292793da5c4abe04233b027981ba3fff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 658158785d8f8a9376f5357ae2b869f6ad2e2271
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968485"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091392"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>撰寫 common language runtime 運算式評估工具
 > [!IMPORTANT]

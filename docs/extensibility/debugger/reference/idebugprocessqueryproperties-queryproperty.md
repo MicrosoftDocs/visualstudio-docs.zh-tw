@@ -1,25 +1,25 @@
 ---
 description: 這個方法會查詢偵錯工具的指定屬性值。
-title: IDebugProcessQueryProperties：： QueryProperty |Microsoft 檔
+title: IDebugProcessQueryProperties：： QueryProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperty
 ms.assetid: 9a91707d-a590-44ef-b122-69d9816a7a79
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c18c1abb4946fd207ea859b0f36dd93348126c51
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9814ff2dd377d1a10895f6ec5ba0818f480bfcf3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166225"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081395"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 這個方法會查詢偵錯工具的指定屬性值。

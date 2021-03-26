@@ -1,26 +1,26 @@
 ---
 description: 捕獲非受控碼的符號讀取器。
-title: IDebugSymbolProviderDirect：： GetSymUnmanagedReader |Microsoft 檔
+title: IDebugSymbolProviderDirect：： GetSymUnmanagedReader |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetSymUnmanagedReader
 - IDebugSymbolProviderDirect::GetSymUnmanagedReader
 ms.assetid: 147bacfa-f66c-43e0-8a72-e601058dc57f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 328cb3b42fbeaaf5df5dd01841d6438d663a0754
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 70c108f0a4af791a9866055f932a958100d59c2b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149453"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081278"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 捕獲非受控碼的符號讀取器。

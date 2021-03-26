@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menu commands, changing appearance
 - menus, changing command appearance
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1514fb9409805df91a16678a5cce67ee1f66ab9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b6911d865b253ff82ffcc6c4911e0989f109f28
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911231"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089819"
 ---
 # <a name="change-the-appearance-of-a-command"></a>變更命令的外觀
 您可以藉由變更命令的外觀，將意見反應提供給您的使用者。 例如，您可能會想讓命令在無法使用時看起來不同。 您可以讓命令可供使用或無法使用、隱藏或顯示命令，或是在功能表上核取或取消選取。
@@ -38,19 +38,19 @@ ms.locfileid: "99911231"
 
 1. 依照中的指示， [變更功能表命令的文字](../extensibility/changing-the-text-of-a-menu-command.md) ，以建立名為的功能表項目 `New Text` 。
 
-2. 在 *ChangeMenuText.cs* 檔案中，新增下列 using 語句：
+2. 在 *ChangeMenuText .cs* 檔案中，新增下列 using 語句：
 
     ```csharp
     using System.Security.Permissions;
     ```
 
-3. 在 *ChangeMenuTextPackageGuids.cs* 檔案中，新增下列程式程式碼：
+3. 在 *ChangeMenuTextPackageGuids .cs* 檔案中，加入下列程式程式碼：
 
     ```csharp
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     ```
 
-4. 在 *ChangeMenuText.cs* 檔案中，將 ShowMessageBox 方法中的程式碼取代為下列程式碼：
+4. 在 *ChangeMenuText .cs* 檔案中，將 ShowMessageBox 方法中的程式碼取代為下列程式碼：
 
     ```csharp
     private void Execute(object sender, EventArgs e)
@@ -82,7 +82,7 @@ ms.locfileid: "99911231"
 
 6. 建置此專案並開始偵錯。 應該會出現 Visual Studio 的實驗實例。
 
-7. 在 [ **工具** ] 功能表上，按一下 [叫用 **ChangeMenuText** ] 命令。 此時，命令名稱是 **Invoke ChangeMenuText**，因此命令處理常式不會呼叫 **ChangeMyCommand ( # B1**。
+7. 在 [ **工具** ] 功能表上，按一下 [叫用 **ChangeMenuText** ] 命令。 此時，命令名稱是 **Invoke ChangeMenuText**，因此命令處理常式不會呼叫 **ChangeMyCommand ()**。
 
 8. 在 [ **工具** ] 功能表上，您現在應該會看到 **新的文字**。 按一下 [ **新文字**]。 命令現在應該會呈現灰色。
 

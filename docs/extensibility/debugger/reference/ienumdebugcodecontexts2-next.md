@@ -1,6 +1,6 @@
 ---
 description: 從程式碼內容列舉傳回下一組專案。
-title: IEnumDebugCodeCoNtexts2：： Next |Microsoft 檔
+title: IEnumDebugCodeCoNtexts2：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2::Next
 ms.assetid: 0d8aa2db-0994-4166-b364-2e25d936fffc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c3ded045b0b2b8b1d7d84ce0240322e16f2db97f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f2b9cceac48949f6d11753a269bae1fb8ef7405b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222623"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081096"
 ---
 # <a name="ienumdebugcodecontexts2next"></a>IEnumDebugCodeContexts2::Next
 傳回列舉中的下一組元素。
