@@ -11,17 +11,17 @@ helpviewer_keywords:
 - solutions, user options
 - solution user options (.suo) file
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a978986ed6ef32dbad3ad06eafcba11d7f4782ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 92e755053d3519212c27fd2567610baf189db309
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962908"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069357"
 ---
 # <a name="solution-user-options-suo-file"></a>方案使用者選項檔 (.Suo)
 方案使用者選項 ( .suo) 檔案包含每個使用者的方案選項。 此檔案不應簽入原始程式碼控制。

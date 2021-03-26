@@ -1,6 +1,6 @@
 ---
 description: 此函式會提示使用者輸入專案路徑，這是僅對原始檔控制外掛程式有意義的字串。
-title: SccGetProjPath 函式 |Microsoft 檔
+title: SccGetProjPath 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3a08c09e1b04cf5e5f826520efcf64ead9113be
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 07c6b8f865d8b1b1d87c9c9468d74e2208265290
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220699"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063964"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函式
 此函式會提示使用者輸入專案路徑，這是僅對原始檔控制外掛程式有意義的字串。 當使用者為時，就會呼叫它：
@@ -112,7 +112,7 @@ SCCRTN SccGetProjPath (
 
  如果使用者建立要放在原始檔控制下的新專案，原始檔控制外掛程式在呼叫時，可能不會實際在原始檔控制系統中建立它 `SccGetProjPath` 。 相反地，它會傳回字串以及的非零值 `pbNew` ，表示將在原始檔控制系統中建立專案。
 
- 例如，如果在 Visual Studio 的 [ **新增專案** ] 嚮導中，使用者將其專案加入至原始檔控制，則 visual studio 會呼叫這個函式，而外掛程式會判斷是否可以在原始檔控制系統中建立新專案，以包含 Visual Studio 專案。 如果使用者在完成嚮導之前按一下 [ **取消** ]，則永遠不會建立專案。 如果使用者按一下 **[確定]**，Visual Studio `SccOpenProject` 會呼叫並傳入， `SCC_OPT_CREATEIFNEW` 並在該時間建立原始檔控制的專案。
+ 例如，如果 Visual Studio 的 [ **新增專案** ] 中的使用者將其專案加入至原始檔控制，Visual Studio 會呼叫這個函式，而外掛程式會判斷是否可以在原始檔控制系統中建立新的專案，以包含 Visual Studio 專案。 如果使用者在完成嚮導之前按一下 [ **取消** ]，則永遠不會建立專案。 如果使用者按一下 **[確定]**，則 `SccOpenProject` `SCC_OPT_CREATEIFNEW` 會在該時間建立 Visual Studio 呼叫、傳入，以及原始檔控制的專案。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

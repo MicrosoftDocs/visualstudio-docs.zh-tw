@@ -1,26 +1,26 @@
 ---
 description: 顯示允許使用者選取埠的指定對話方塊。
-title: IDebugPortPicker：:D isplayPortPicker |Microsoft 檔
+title: IDebugPortPicker：:D isplayPortPicker |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - DisplayPortPicker
 - IDebugPortPicker::DisplayPortPicker
 ms.assetid: 08511ef5-be64-4069-b169-a569cc94bc64
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c07e95343521692d41d045a89a4038f5ff64e7b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a49c1379d2bb3946f75eddd9d80bdccdb370d3ab
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142553"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072308"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
 顯示允許使用者選取埠的指定對話方塊。

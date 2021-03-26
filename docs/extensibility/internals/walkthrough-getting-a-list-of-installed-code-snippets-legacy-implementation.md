@@ -9,17 +9,17 @@ helpviewer_keywords:
 - code snippets, retrieving list
 - GetSnippets method
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 537793165f3a3b46d7f00c19dd2f093f0442326d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f94d481a2884c64cb42b170d9d1abfa25c913a9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886921"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069136"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>逐步解說：取得已安裝的程式碼片段 (舊版實作) 清單
 程式碼片段是一段程式碼，可以使用功能表命令 (可插入來源緩衝區，讓您可以選擇) 的已安裝程式碼片段清單，或從 IntelliSense 完成清單中選取程式碼片段快捷方式。

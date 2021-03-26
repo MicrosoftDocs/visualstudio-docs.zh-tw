@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b7e0f214f50831392b5f0f5633d7c06ba03f37c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0acef6dd38238ef58f1dd66f7d8de35318e4ffc6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940129"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078925"
 ---
 # <a name="command-design"></a>命令設計
 當您將命令新增至 VSPackage 時，您必須指定其出現的位置、可用的位置，以及處理方式。

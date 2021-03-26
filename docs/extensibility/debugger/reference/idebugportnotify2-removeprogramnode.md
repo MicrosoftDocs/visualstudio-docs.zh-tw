@@ -1,6 +1,6 @@
 ---
 description: 取消註冊可以從其執行所在之埠進行偵錯工具的程式。
-title: IDebugPortNotify2：： RemoveProgramNode |Microsoft 檔
+title: IDebugPortNotify2：： RemoveProgramNode |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2::RemoveProgramNode
 ms.assetid: 3668157b-66d2-416e-a359-fc04dcd18a48
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90918aed8652328a8aa02edac3517ec524a6cfa0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 10208570237de10f9a6e682fc3a7478bd15ca24d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142644"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072412"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
 取消註冊可以從其執行所在之埠進行偵錯工具的程式。

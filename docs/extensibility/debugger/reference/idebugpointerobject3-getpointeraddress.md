@@ -1,26 +1,26 @@
 ---
 description: 捕獲指標的位址。
-title: IDebugPointerObject3：： GetPointerAddress |Microsoft 檔
+title: IDebugPointerObject3：： GetPointerAddress |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetPointerAddress
 - IDebugPointerObject3::GetPointerAddress
 ms.assetid: 4cc5af04-9e70-420d-8230-ef3108df6d51
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aec9bf50500766c98797764a2bc21bc7b066cb7f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 395751e8ea65a2fc5d23c122be19cb50adf9bd54
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142878"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087557"
 ---
 # <a name="idebugpointerobject3getpointeraddress"></a>IDebugPointerObject3::GetPointerAddress
 捕獲指標的位址。

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - menus, creating top level
 - top-level menus
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bd568e53c3a74819f642f0593524b314e065afb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22ce9bc00f24278fd2c0533052d7bd5e944b1ebf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951559"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078340"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>將功能表新增至 Visual Studio 的功能表列
 
@@ -45,13 +45,13 @@ ms.locfileid: "99951559"
 
 ::: moniker range="vs-2017"
 
-2. 當專案開啟時，加入名為 **TestCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >   **新專案**]。 在 [ **加入新專案** ] 對話方塊中，移至 **Visual c #/** 擴充性，然後選取 [ **自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *TestCommand.cs*。
+2. 當專案開啟時，加入名為 **TestCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >   **新專案**]。 在 [ **加入新專案** ] 對話方塊中，移至 **Visual c #/** 擴充性，然後選取 [ **自訂命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *TestCommand .cs*。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. 當專案開啟時，加入名為 **TestCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >   **新專案**]。 在 [ **加入新專案** ] 對話方塊中，移至 [ **Visual c #/** 擴充性]，然後選取 [ **命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *TestCommand.cs*。
+2. 當專案開啟時，加入名為 **TestCommand** 的自訂命令專案範本。 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >   **新專案**]。 在 [ **加入新專案** ] 對話方塊中，移至 [ **Visual c #/** 擴充性]，然後選取 [ **命令**]。 在視窗底部的 [ **名稱** ] 欄位中，將命令檔名稱變更為 *TestCommand .cs*。
 
 ::: moniker-end
 
@@ -167,7 +167,7 @@ ms.locfileid: "99951559"
 
 3. 選取 [ **測試] 功能表** 功能表上的 [ **測試命令**]。
 
-    應該會出現訊息方塊，並顯示「TestCommand 內部 TopLevelMenu. TestCommand. MenuItemCallback ( # A1」訊息。
+    應該會出現訊息方塊，並顯示訊息「TestCommand 內部 TopLevelMenu. TestCommand. MenuItemCallback () 」。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - publishing web controls
 - web controls, publishing
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bda44c0c3f6c4b1986fc45a7c9cbf5c4ffa83043
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b1ff7d55f7d667ca8b07134e144ad192b9d19d8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889001"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078353"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>逐步解說：發佈 Visual Studio 擴充功能
 

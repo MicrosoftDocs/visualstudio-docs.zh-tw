@@ -1,6 +1,6 @@
 ---
 description: 此介面代表機器上的 debug 埠。
-title: IDebugPort2 |Microsoft 檔
+title: IDebugPort2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2 interface
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f78db8ba9a29b40d111dc5a82827395b100302b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4d0b173f362418171def93ee92e3883b2910ad18
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169479"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087336"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 此介面代表機器上的 debug 埠。
@@ -50,7 +50,7 @@ IDebugPort2 : IUnknown
 |[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)|列舉在埠上執行的所有處理常式。|
 
 ## <a name="remarks"></a>備註
- 本機埠可讓您存取在本機電腦上執行的所有處理常式和程式。 其他埠可能代表與 Windows CE 裝置的序列纜線連線，或是與非 DCOM 電腦的網路連線。 `IDebugPort2`介面是用來尋找埠的名稱和識別碼，並列舉在埠上執行的所有處理常式。 在埠上啟動和終止進程的功能會在介面中執行 `IDebugPortEx2` 。
+ 本機埠可讓您存取在本機電腦上執行的所有處理常式和程式。 其他埠可能代表連至 Windows CE 型裝置的序列纜線連線，或是連至非 DCOM 電腦的網路連線。 `IDebugPort2`介面是用來尋找埠的名稱和識別碼，並列舉在埠上執行的所有處理常式。 在埠上啟動和終止進程的功能會在介面中執行 `IDebugPortEx2` 。
 
 ## <a name="requirements"></a>規格需求
  標頭： msdbg。h

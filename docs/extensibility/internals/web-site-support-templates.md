@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 988b81e72ff7714cb8a0983655de551b54c9150c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c39e900bbdddd1d558bd0604f16924d2536cb98
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940027"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069085"
 ---
 # <a name="web-site-support-templates"></a>網站支援範本
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 網站專案和專案範本提供可重複使用且可自訂的網站專案和專案存根，可讓您從頭開始建立新的網站專案和專案的需求，以加速開發流程。 如需範本的詳細資訊 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，請參閱 [建立專案和專案範本](../../ide/creating-project-and-item-templates.md)。
@@ -65,7 +65,7 @@ ms.locfileid: "99940027"
 
 - web.config
 
-     根網站設定檔案。
+     根 web.site 設定檔。
 
 - WebApplication .vstemplate
 
@@ -88,7 +88,7 @@ ms.locfileid: "99940027"
 
 - web.config
 
-- 根網站設定檔案。
+- 根 web.site 設定檔。
 
 - WebService
 

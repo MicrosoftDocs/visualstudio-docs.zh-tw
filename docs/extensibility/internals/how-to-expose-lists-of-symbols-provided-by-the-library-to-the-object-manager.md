@@ -11,17 +11,17 @@ helpviewer_keywords:
 - lists, symbols for the object manager
 - symbols, exposing lists to the object manager
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf1d717f423768f9dc53972c2a482e2eab913d81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0cf4cef21746834a92abfd8b2e1df3f61e08b2dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928207"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078886"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何：將程式庫提供的符號清單公開至物件管理員
 符號流覽工具、 **類別檢視**、 **物件瀏覽器**、 **呼叫瀏覽器** 和 **尋找符號結果**，會將新資料的要求傳遞給 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 物件管理員。 物件管理員會尋找適當的程式庫，並要求新的符號清單。 程式庫會透過介面將要求的資料提供給物件管理員，以進行回應 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員會在介面中呼叫方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 以取得資料，並使用它來填入或更新符號流覽工具的視圖。

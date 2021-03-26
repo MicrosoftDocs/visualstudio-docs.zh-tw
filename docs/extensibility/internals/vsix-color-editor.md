@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf699a5dcb7f14c2a0ac88943b94d9e65c86450
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bfd6ff388119d829c2e5994c0fa78d01958326bc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900080"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069279"
 ---
 # <a name="vsix-color-editor"></a>VSIX 色彩編輯器
 Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Studio 的自訂色彩。 此工具也可以產生主題資源索引鍵，讓您可以在程式碼中使用這些色彩。 此工具適用于為支援主題的 Visual Studio 延伸模組建立色彩。 此工具可以開啟 .pkgdef 和 .xml 檔案。 Visual Studio 主題 (. vstheme 檔案) 可透過將副檔名變更為 .xml 來搭配 Visual Studio 延伸模組色彩編輯器使用。 此外，也可以將 vstheme 檔案匯入到目前的 .xml 檔案中。

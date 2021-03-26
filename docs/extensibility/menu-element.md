@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
 ms.assetid: ce0560f3-b4c9-4ab2-a99c-d4e10f37b9e0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a55b96e3947d8ca0605778ab927b4028b1a3ecd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7427b826249bd29c73c928630eed0941c57b997d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886804"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064042"
 ---
 # <a name="menu-element"></a>Menu 元素
 定義一個功能表項目。 以下是六種功能表：內容、功能表、MenuController、MenuControllerLatched、工具列和 ToolWindowToolbar。

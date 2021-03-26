@@ -1,6 +1,6 @@
 ---
 description: 這個介面會提供埠給會話 debug manager (SDM) 。
-title: IDebugPortSupplier2 |Microsoft 檔
+title: IDebugPortSupplier2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2 interface
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e9523212ea83182e69e83b4f8353f1a9ba7dd8c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bd28e261c9c74601bd88f2d84e1296a1ed508f37
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172035"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072022"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 這個介面會提供埠給會話 debug manager (SDM) 。

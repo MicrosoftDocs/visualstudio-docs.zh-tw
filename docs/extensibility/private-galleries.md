@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSIX galleries, private
 - private galleries, VSIX
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5b58c5885f4fc9bd3765c818ea414bee0dbf3c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c64c5880fcdb1d6a1fb3d6fc7c71f55abf7cbbc1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961855"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069032"
 ---
 # <a name="private-galleries"></a>私用資源庫
 您可以藉由將控制項、範本和工具張貼到組織內部網路上的私用資源 *庫* ，來共用您所開發的控制項、範本和工具，如下所示：

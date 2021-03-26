@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8373501f324882c541784c6786b6b9f04a76069
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52bfb5f65aa9d42c46eece619a21152c51e8fa28
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959450"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068800"
 ---
 # <a name="project-element-visual-studio-templates"></a> (Visual Studio 範本的專案元素) 
 指定要加入至專案的檔案或目錄。

@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f89c6303dc8ca9e48fb212a3ae889251b34ece91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0950f6b8ed647a3922fe63e365a97ea0a888ec6e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961725"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078613"
 ---
 # <a name="walkthrough-display-matching-braces"></a>逐步解說：顯示成對的大括弧
 藉由定義您想要比對的大括弧來執行以語言為基礎的功能（例如，大括弧比對），並在插入點位於其中一個大括弧時，將文字標記標記新增至相符的大括弧。 您可以在語言的內容中定義大括弧、定義您自己的副檔名和內容類型，並將標記套用至現有的內容類型， (例如「文字」 ) 。 下列逐步解說示範如何將大括弧比對標記套用至 "text" 內容類型。

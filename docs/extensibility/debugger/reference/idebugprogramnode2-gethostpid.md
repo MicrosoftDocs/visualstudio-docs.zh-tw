@@ -1,6 +1,6 @@
 ---
 description: 取得裝載程式之進程的系統處理序識別碼。
-title: IDebugProgramNode2：： GetHostPid |Microsoft 檔
+title: IDebugProgramNode2：： GetHostPid |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetHostPid
 ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f826c30e90f95686e375d176ba41b24deab4491c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4e3fa384bc22c864f6438fb3c54e044d9fff7368
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145946"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087245"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 取得裝載程式之進程的系統處理序識別碼。

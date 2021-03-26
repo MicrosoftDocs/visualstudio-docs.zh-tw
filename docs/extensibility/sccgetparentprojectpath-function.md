@@ -1,6 +1,6 @@
 ---
 description: 此函式會判斷指定專案的父專案路徑。
-title: SccGetParentProjectPath 函式 |Microsoft 檔
+title: SccGetParentProjectPath 函式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetParentProjectPath function
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e624d8765da65dc6231c0128e87ffd9d6cdf848d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 305f226117bbb9cf906231a0b9bbaa24c1d87a8e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220608"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063977"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 函式
-此函式會判斷指定專案的父專案路徑。 當使用者將 Visual Studio 專案加入至原始檔控制時，會呼叫此函式。
+此函式會判斷指定專案的父專案路徑。 當使用者將 Visual Studio 專案加入至原始檔控制時，會呼叫這個函式。
 
 ## <a name="syntax"></a>語法
 
@@ -91,13 +91,13 @@ SCCRTN SccGetParentProjectPath(
  `lpUser`引數是使用者名稱。 IDE 會傳入先前從函式收到的相同使用者名稱 `SccGetProjPath` ，而原始檔控制外掛程式應使用此名稱做為預設值。 如果使用者已經有與外掛程式的開啟連接，則外掛程式應嘗試排除任何提示，以確保函式可無訊息地運作。 但是，如果登入失敗，外掛程式應該會提示使用者輸入登入，並在收到有效的登入時，將名稱傳遞回 `lpUser` 。 由於外掛程式可能會變更這個字串，因此 IDE 一律會配置大小 (`SCC_USER_LEN` + 1) 的緩衝區。 如果字串已變更，則新的字串必須是有效的登入名稱， (至少與舊的字串) 一樣有效。
 
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreateSubProject 和 SccGetParentProjectPath 的技術注意事項
- Visual Studio 已簡化將方案和專案加入原始檔控制中的功能，可讓使用者在原始檔控制系統中選取位置的次數降到最低。 如果原始檔控制外掛程式同時支援這兩個新函式、 [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) 和函數，則 Visual Studio 會啟用這些變更 `SccGetParentProjectPath` 。 不過，您可以使用下列登錄專案來停用這些變更，並還原為先前的 Visual Studio (原始檔控制外掛程式 API 1.1 版) 行為：
+ 將方案和專案加入至原始檔控制已經過簡化，Visual Studio 將提示使用者在原始檔控制系統中選取位置的次數降到最低。 如果原始檔控制外掛程式同時支援這兩個新函式、 [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) 和函式，則會 Visual Studio 啟用這些變更 `SccGetParentProjectPath` 。 不過，您可以使用下列登錄專案來停用這些變更，並還原為先前的 Visual Studio (原始檔控制外掛程式 API 1.1 版) 行為：
 
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateSolutionRootFolderInSourceControl" = dword：00000001**
 
- 如果這個登錄專案不存在或設定為 dword：00000000，則 Visual Studio 會嘗試使用新的函式 `SccCreateSubProject` 和 `SccGetParentProjectPath` 。
+ 如果這個登錄專案不存在或設定為 dword：00000000，Visual Studio 會嘗試使用新的函式 `SccCreateSubProject` 和 `SccGetParentProjectPath` 。
 
- 如果登錄專案設定為 dword：00000001，Visual Studio 就不會嘗試使用這些新的函式，而新增至原始檔控制的作業會像在舊版 Visual Studio 中一樣運作。
+ 如果登錄專案設定為 dword：00000001，Visual Studio 不會嘗試使用這些新的函式，而新增至原始檔控制的作業會像在舊版 Visual Studio 中一樣運作。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

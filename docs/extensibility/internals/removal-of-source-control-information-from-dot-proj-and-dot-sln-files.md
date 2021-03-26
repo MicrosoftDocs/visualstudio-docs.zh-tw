@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, .sln and .proj files
 ms.assetid: 7b06883f-35de-41e2-9a9e-d3edba236f17
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03b1c3f6e2c1cc6852ea443788bb336a03c3330f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5fd4b4f12ab819903408d4d895773664e892b3ac
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905802"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069383"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>從 proj 和 .sln 檔案移除原始檔控制資訊
 

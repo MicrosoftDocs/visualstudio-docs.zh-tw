@@ -1,6 +1,6 @@
 ---
 description: 取得指向的物件。
-title: IDebugPointerObject：:D ereference 書庫 |Microsoft 檔
+title: IDebugPointerObject：:D ereference 書庫 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::Dereference method
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4aa96f726ec18e84aceba159fe9be6128456ce0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 226e8471d83208e9647578fca0fa16cc7b49e4eb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169687"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087635"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 取得指向的物件。
