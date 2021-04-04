@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c5ac6cf82d39790fa2d7762fea6b711a546da24
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6f3932658442774ad6f54bd5e6243fe73679b38f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080745"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214027"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
 整合式開發環境 (IDE) 中的 [ **屬性** ] 視窗 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可以顯示專案和設定屬性。 您可以為自己的專案類型提供屬性頁，讓使用者可以設定應用程式的屬性。
@@ -72,8 +72,8 @@ ms.locfileid: "105080745"
 ## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute 和登錄路徑
  衍生自 `SettingsPage` 的類別是設計來跨 vspackage 共用。 若要讓 VSPackage 可以建立衍生自的類別 `SettingsPage` ，請將加入 `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` 至衍生自的類別 `Microsoft.VisualStudio.Shell.Package` 。
 
- [!code-csharp[VSSDKSupportProjectConfigurationProperties#1](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_1.cs)]
- [!code-vb[VSSDKSupportProjectConfigurationProperties#1](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_1.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/cs/vssdksupportprojectconfigurationpropertiespackage.cs" id="Snippet1":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/vb/vssdksupportprojectconfigurationpropertiespackage.vb" id="Snippet1":::
 
  附加屬性的 VSPackage 並不重要。 當註冊 VSPackage 時，會 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 註冊可建立之任何物件的類別識別碼 (CLSID) ，以便呼叫來 <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> 建立它。
 
@@ -87,8 +87,8 @@ ms.locfileid: "105080745"
 
  請考慮下列程式碼片段：
 
- [!code-vb[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_2.vb)]
- [!code-csharp[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_2.cs)]
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/vb/myprojectpropertypage.vb" id="Snippet2":::
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/cs/myprojectpropertypage.cs" id="Snippet2":::
 
  設定屬性會在 [設定] 屬性 `MyConfigProp` 頁上顯示為 [**我** 的分類] 類別中的 [我的設定]**屬性**。 如果選取此選項，[描述]、[ **我的描述**] 會出現在 [描述] 面板中。
 

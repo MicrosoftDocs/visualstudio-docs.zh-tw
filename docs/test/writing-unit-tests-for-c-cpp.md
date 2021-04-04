@@ -1,19 +1,19 @@
 ---
 title: 撰寫 C/C++ 的單元測試
 description: 使用各種測試架構（包括 CTest、提升、測試和 Google Test），在 Visual Studio 中撰寫 c + + 單元測試。
-ms.date: 02/08/2020
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: cf6287ebdb4c2df6145a0e60e22ac1197a517fde
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: d20bcdef769d8cd751230000b0e4d4319b10e46f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729362"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217459"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中撰寫 C/C++ 的單元測試
 
@@ -92,7 +92,7 @@ C++ 單元測試專案支援 [CodeLens](../ide/find-code-changes-and-other-histo
 ### <a name="write-test-methods"></a>撰寫測試方法
 
 > [!NOTE]
-> 本節說明適用於 C/C++ 的 Microsoft 單元測試架構語法。 相關文件如下：[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。 如需 Google Test 文件，請參閱 [Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Google Test 入門)。 如需 Boost.Test，請參閱 [Boost Test library: The unit test framework](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Boost Test 程式庫：單元測試架構)。
+> 本節說明適用於 C/C++ 的 Microsoft 單元測試架構語法。 相關文件如下：[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。 如需 Google Test 文件，請參閱 [Google Test primer](https://github.com/google/googletest/blob/master/docs/primer.md) (Google Test 入門)。 如需 Boost.Test，請參閱 [Boost Test library: The unit test framework](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Boost Test 程式庫：單元測試架構)。
 
 您測試專案中的 *.cpp* 檔案有為您定義的存根類別和方法。 這些範例顯示如何撰寫測試程式碼的範例。 簽章會使用 TEST_CLASS 並 TEST_METHOD 宏，讓您可以從 [ **測試瀏覽器** ] 視窗中找到這些方法。
 
@@ -156,6 +156,6 @@ TEST_METHOD(TestClassInit)
 
 ![C++ CodeLens 執行及偵錯](media/cpp-test-codelens-run-debug.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [對程式碼進行單元測試](unit-test-your-code.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e7168b78303f93ccf89fad324992dd580481ac2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: db82151b7fd4dbe894cecf8fbf5f5b64cb2f5919
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888442"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213936"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>How to: Check for application updates programmatically using the ClickOnce deployment AP (如何：使用 ClickOnce 部署 API 以程式設計方式檢查應用程式更新)
 ClickOnce 提供兩種方式，可在部署應用程式之後進行更新。 在第一個方法中，您可以將 ClickOnce 部署設定為在特定間隔自動檢查更新。 在第二個方法中，您可以撰寫使用 <xref:System.Deployment.Application.ApplicationDeployment> 類別的程式碼，根據事件（例如使用者要求）來檢查更新。
@@ -40,9 +40,9 @@ ClickOnce 提供兩種方式，可在部署應用程式之後進行更新。 在
 
 2. 建立您想要讓使用者選取以檢查更新的任何按鈕、功能表項目或其他使用者介面專案。 從該專案的事件處理常式中，呼叫下列方法來檢查並安裝更新。
 
-     [!code-csharp[ClickOnceAPI#6](../deployment/codesnippet/CSharp/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.cs)]
-     [!code-cpp[ClickOnceAPI#6](../deployment/codesnippet/CPP/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.cpp)]
-     [!code-vb[ClickOnceAPI#6](../deployment/codesnippet/VisualBasic/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs" id="Snippet6":::
+    :::code language="cpp" source="../snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp" id="Snippet6":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb" id="Snippet6":::
 
 3. 編譯您的應用程式。
 

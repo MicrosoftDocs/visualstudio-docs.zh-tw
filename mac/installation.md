@@ -3,17 +3,17 @@ title: 安裝 Visual Studio 2019 for Mac
 description: 如何安裝 Visual Studio 2019 for Mac 及其他跨平台開發所需元件的指示。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 03/04/2021
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 5155c37a89f566841fc342bbd8213f5a38eb399d
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 653e653a0574da52c0030b06c7a8c13b436ed686
+ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727563"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106273410"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安裝 Visual Studio 2019 for Mac
 
@@ -28,7 +28,8 @@ ms.locfileid: "97727563"
 
 若要建置適用於 iOS 或 macOS 的 Xamarin 應用程式，您還需要：
 
-- Xcode 10.0 或以上版本。 通常建議使用最新穩定版本。
+- 與最新版本的 Xcode 相容的 Mac。 請參閱 Apple 的 [最低需求檔](https://developer.apple.com/support/xcode/)
+- 最新版本的 [Xcode](https://developer.apple.com/xcode)。 如果您的 Mac 與最新版本不相容，則可能會 [使用較舊版本的 Xcode](https://docs.microsoft.com/xamarin/ios/troubleshooting/questions/old-version-xcode) 。
 - Apple ID。 如果您還沒有 Apple 識別碼，可以在 https://appleid.apple.com 建立一個新識別碼。 安裝及登入 Xcode 時需要有 Apple 識別碼。
 
 ## <a name="installation-instructions"></a>安裝指示
@@ -53,7 +54,7 @@ ms.locfileid: "97727563"
 
    如果您不想要安裝所有平台，請使用以下指南以協助您決定要安裝的平台：
 
-   |應用程式類型  |目標  |選項  |附註  |
+   |應用程式類型  |目標  |選取  |備註  |
    |---------|---------|---------|---------|
    |**使用 Xamarin 的應用程式**| Xamarin.Forms|選取 **Android** 和 **iOS** 平臺 |您將需要安裝 [ **Xcode**](https://developer.apple.com/xcode/) |
    ||僅限 iOS|選取 **iOS** 平臺|您將需要安裝 [ **Xcode**](https://developer.apple.com/xcode/)|
@@ -90,20 +91,27 @@ ms.locfileid: "97727563"
 
 - [Visual Studio 端點](./install-behind-a-firewall-or-proxy-server.md)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 安裝 Visual Studio for Mac 可讓您開始撰寫應用程式的程式碼。 以下指示提供您下一步撰寫及部署專案的逐步指示。
 
 ### <a name="ios"></a>iOS
 
-1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
-2. [裝置部署](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning) \(英文\) (在裝置上執行您的應用程式)。
+1. [Hello, iOS](https://docs.microsoft.com//xamarin/ios/get-started/hello-ios/)
+2. [裝置部署](https://docs.microsoft.com/xamarin/ios/get-started/installation/device-provisioning/) \(英文\) (在裝置上執行您的應用程式)。
 
 ### <a name="android"></a>Android
 
-1. [使用 Xamarin Android SDK 管理員](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
-2. [Android SDK 模擬器](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [設定裝置以進行開發](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+1. [Hello, Android](https://docs.microsoft.com/xamarin/android/get-started/hello-android/)
+2. [使用 Xamarin Android SDK 管理員](https://docs.microsoft.com/xamarin/android/get-started/installation/android-sdk?tabs=macos)
+3. [Android SDK 模擬器](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)
+4. [設定裝置以進行開發](https://docs.microsoft.com/xamarin/android/get-started/installation/set-up-device-for-development)
+
+### <a name="xamarinforms"></a>Xamarin.Forms
+
+使用 Xamarin 建立原生跨平臺應用程式：
+
+1. [Xamarin. 表單快速入門](https://docs.microsoft.com/xamarin/get-started/quickstarts/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 應用程式、ASP.NET Core Web 應用程式、Unity 遊戲開發
 
@@ -113,6 +121,6 @@ ms.locfileid: "97727563"
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [安裝 Visual Studio (在 Windows 上)](/visualstudio/install/install-visual-studio)

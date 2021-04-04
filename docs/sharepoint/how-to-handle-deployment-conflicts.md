@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7c163aa10bdcb3ee28de6d6950dd15f85df876bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b09db3fecde5d4b87b24963930b2783b0c68052c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885608"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213975"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>如何：處理部署衝突
   您可以提供自己的程式碼來處理 SharePoint 專案專案的部署衝突。 例如，您可以判斷目前專案專案中的任何檔案是否已存在於部署位置中，然後在部署目前的專案專案之前，先刪除已部署的檔案。 如需部署衝突的詳細資訊，請參閱 [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
@@ -44,8 +44,8 @@ ms.locfileid: "99885608"
 
  為了簡單起見， <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> 此範例中的事件處理常式會假設部署衝突存在 (也就是，它一律會將新的 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 物件加入) ，而此 `Resolve` 方法只會傳回 **true** ，表示衝突已解決。 在實際案例中， <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> 事件處理常式會先判斷目前專案專案中的檔案和部署位置的檔案之間是否有衝突，然後 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 只有在衝突存在時才新增物件。 例如，您可以使用 `e.ProjectItem.Files` 事件處理常式中的屬性來分析專案專案中的檔案，而且您可能會呼叫 SharePoint 命令來分析部署位置的檔案。 同樣地，在實際的案例中，此 `Resolve` 方法可能會呼叫 sharepoint 命令以解決 sharepoint 網站上的衝突。 如需建立 SharePoint 命令的詳細資訊，請參閱 [如何：建立 sharepoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)。
 
- [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb#1)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs#1)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb" id="Snippet1":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>編譯程式碼
  此範例需要下列元件的參考：

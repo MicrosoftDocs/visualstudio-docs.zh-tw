@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 579289a7ba5afa1eb50bdf5f1dbb105fc2a6b01e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87e05ba763095a818cc5db6f92828e6259d30e73
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881564"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217433"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>將資料儲存在 SharePoint 專案系統的延伸模組中
   當您延伸 SharePoint 專案系統時，可以儲存在 SharePoint 專案關閉之後仍會保存的字串資料。 資料通常與特定專案專案或專案本身相關聯。
@@ -32,8 +32,8 @@ ms.locfileid: "99881564"
 
  下列程式碼範例示範如何使用 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> 屬性來儲存自訂 SharePoint 專案專案類型中所定義之字串屬性的值。 若要在較大範例的內容中查看這個範例，請參閱 [如何：將屬性加入至自訂 SharePoint 專案專案類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。
 
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#14)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#14)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet14":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet14":::
 
 ## <a name="save-data-that-is-associated-with-a-project"></a>儲存與專案相關聯的資料
  當您擁有專案層級的資料（例如，加入至 SharePoint 專案的屬性值）時，您可以 (*.csproj* 檔案或 *vbproj* 檔案，將資料儲存至專案檔，) 或 (*.csproj. 使用者* 檔案或 *. vbproj* 的專案使用者選項檔) 。 您選擇用來儲存資料的檔案，取決於您想要使用資料的方式：
@@ -45,16 +45,16 @@ ms.locfileid: "99881564"
 ### <a name="save-data-to-the-project-file"></a>將資料儲存至專案檔
  若要將資料儲存至專案檔，請將 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> 物件轉換為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 物件，然後使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> 方法。 下列程式碼範例將示範如何使用這個方法，將專案屬性的值儲存至專案檔。 若要在較大範例的內容中查看這個範例，請參閱 [如何：將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。
 
- [!code-vb[SpExt_SPCustomPrjProperty#3](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#3)]
- [!code-csharp[SpExt_SPCustomPrjProperty#3](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#3)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb" id="Snippet3":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs" id="Snippet3":::
 
  如需 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> 在 Visual Studio automation 物件模型或整合物件模型中將物件轉換成其他類型的詳細資訊，請參閱在 [SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。
 
 ### <a name="save-data-to-the-project-user-option-file"></a>將資料儲存至 project 使用者選項檔
  若要將資料儲存至 project 使用者選項檔，請使用 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> 物件的屬性 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> 。 下列程式碼範例將示範如何使用這個屬性，將專案屬性的值儲存至專案使用者選項檔。 若要在較大範例的內容中查看這個範例，請參閱 [如何：將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。
 
- [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
- [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb" id="Snippet2":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs" id="Snippet2":::
 
 ## <a name="see-also"></a>另請參閱
 - [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)

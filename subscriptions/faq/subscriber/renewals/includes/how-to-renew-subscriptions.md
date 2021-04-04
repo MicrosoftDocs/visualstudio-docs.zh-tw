@@ -6,14 +6,14 @@ ms.assetid: 00b82d16-6a80-42d1-8b71-e12047c6b50c
 ms.technology: ''
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/29/2021
+ms.date: 04/02/2021
 ms.faqid: q4_2
-ms.openlocfilehash: d59b972d13bd61a25fab6d783224eeb5c38144d7
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: 8d8b516a7572688314d043dc7ca052d30d26dcf4
+ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104489"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106273387"
 ---
 ## <a name="how-do-i-renew-visual-studio-subscriptions"></a>如何? 更新 Visual Studio 訂閱？ 
 
@@ -27,12 +27,14 @@ ms.locfileid: "99104489"
 - 請造訪 [Microsoft Store](https://www.microsoft.com/store)   並搜尋「Visual Studio 訂用帳戶」，以查看可用的續約機會。 以下是一些快速連結： 
 
 
-    [Visual Studio 企業版](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab) 
+    - [Visual Studio 企業版](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab) 
 
-    [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
 
-    [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
+    - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
 
+> [!Note]
+> 您必須在到期日30天內更新您的訂用帳戶，才能享有續約價格的限制。
 
 ### <a name="how-to-renew-cloud-subscriptions"></a>如何更新雲端訂閱
 雲端訂用帳戶是透過 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)購買的訂閱。  每月和年度雲端訂閱都會續約，直到您取消為止，因此不需要採取任何動作來更新它們。

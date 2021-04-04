@@ -10,12 +10,12 @@ user.type: subscriber
 tags: redirect
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: 096b025710a2907996654d59a9f30d92500b64d3
-ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
+ms.openlocfilehash: 1361fe540c037a7890fff89fe60b25249d69bfff
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496277"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106097373"
 ---
 ## <a name="azure-devops-technical-support"></a>Azure DevOps 技術支援  
 
@@ -23,7 +23,7 @@ Visual Studio 訂用帳戶支援可提供 Visual Studio 訂用帳戶的銷售、
 
 ## <a name="azure-devops-documentation"></a>Azure DevOps 文件 \(英文\) 
 
-請參閱教學課程、疑難排解指南、實用的資源，以及 [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/?view=azure-devops)中的其他主題範圍。
+請參閱教學課程、疑難排解指南、實用的資源，以及 [Azure DevOps 檔](https://docs.microsoft.com/azure/devops/?view=azure-devops&preserve-view=true)中的其他主題範圍。
 
 ## <a name="developer-community"></a>開發人員群體
 

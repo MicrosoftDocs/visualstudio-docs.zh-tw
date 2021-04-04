@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c8bc59fd1d47a04b2f4c6ec2be9b9adb035f11e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbffa062e1115264f9496081cdcf63d17d2a36c7
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837810"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217485"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 應用程式中存取本機和遠端資料
 大部分應用程式都會取用或產生資料。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供您許多選項，以進行本機和遠端的資料讀取及寫入。
@@ -55,8 +55,8 @@ ms.locfileid: "99837810"
 
  一旦您的應用程式具有這些權限之後，即可使用方法呼叫 <xref:System.IO>內部的類別以存取資料目錄。 您可以使用定義於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 之 <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> 屬性上的 <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> 屬性，來取得 Windows Form <xref:System.Deployment.Application.ApplicationDeployment>應用程式內的資料目錄路徑。 這是最方便的存取資料方法，也是建議的方法。 下列程式碼範例將示範如何針對已作為資料檔納入部署中的 *CSV.txt* 文字檔執行這個動作。
 
- [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
- [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]
+ :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnce.OpenDataFile/CS/Form1.cs" id="Snippet1":::
+ :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.OpenDataFile/VB/Form1.vb" id="Snippet1":::
 
  如需在您的部署中將檔案標示為資料檔案的詳細資訊，請參閱 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
 

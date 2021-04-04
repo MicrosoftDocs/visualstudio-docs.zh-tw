@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bcf879d2bb6fa592f77d4c94cb2f784d2c53f2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 202f069fc02f9d7afa13d44aab1925e6a1ece03f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969616"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214014"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步驟 9：檢閱、註解及測試您的程式碼
 
@@ -58,9 +58,8 @@ C # 中的兩個正斜線 (//) 將一行標示為批註。 在 Visual Basic 中�
 
      [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
-     [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
-
-     [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/cs/form1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb" id="Snippet1":::
 
     **showButton** 按鈕的 <xref:System.Windows.Forms.Control.Click> 事件處理常式現在已完成，可以運作。 您已從 `if` 陳述式開始撰寫程式碼。 `if`語句是您告訴應用程式的方式：「檢查這一件事，如果是真的，執行這些動作」。 在此情況下，您會告訴應用程式開啟 [ **開啟** 檔案] 對話方塊，如果使用者選取檔案並選擇 [ **確定]** 按鈕，請在 **PictureBox** 中載入該檔案。
 

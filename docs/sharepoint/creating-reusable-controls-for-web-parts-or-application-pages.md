@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01d8602971e2a89aef8cf8451d1273fa28c70f05
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b61474f4290771fb139d511296580ec1ef0f8820
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949125"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213910"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>為 web 元件或應用程式頁面建立可重複使用的控制項
   在 Visual Studio 中，您可以為 SharePoint 中執行的應用程式頁面和 Web 組件，建立可供其利用之自訂、可重複使用的控制項。 這些控制項稱為使用者控制項。 使用者控制項是一種相當於 ASP.NET 網頁的複合控制項，您可以將現有的 Web 服務器控制項和標記加入至使用者控制項，並定義控制項的屬性和方法。 然後，您可以將它們內嵌在 ASP.NET 網頁中，作為一個單位。
@@ -47,8 +47,8 @@ ms.locfileid: "99949125"
 
  若要在 Web 元件中包含使用者控制項，請將使用者控制項加入 web 元件程式碼檔案中的 Web 元件 <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> 集合。 下列範例會將使用者控制項加入至 <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> 網頁元件的集合。
 
- [!code-vb[SP_VisualWebPart#5](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb#5)]
- [!code-csharp[SP_VisualWebPart#5](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs#5)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb" id="Snippet5":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs" id="Snippet5":::
 
 ## <a name="debug-a-user-control"></a>調試使用者控制項
  若要對使用者控制項進行偵錯工具，請確定使用者控制項包含在 SharePoint 專案的應用程式頁面或 Web 元件中。 然後您就可以在使用者控制項中進行程式碼的偵錯工具，就像在任何 Visual Studio 專案中的程式碼一樣。

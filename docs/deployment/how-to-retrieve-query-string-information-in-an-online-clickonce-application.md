@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49fd3ca9b625b9dec179ec37603e875cfdd296c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f53d2d005ad9b706f318ec82d48898f73ce0f07
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885127"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213923"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>How to: Retrieve query string information in an online ClickOnce application (如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊)
 *「查詢字串」* (query string) 是開頭為句號 (?) 之 URL 的部分，內含 *name=value* 格式的任意資訊。 假設您有裝載於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 且名為 `WindowsApp1` 的 `servername`應用程式，而且想要在啟動應用程式時傳入變數 `username` 的值。 URL 可能如下所示：
@@ -50,8 +50,9 @@ ms.locfileid: "99885127"
 
 1. 請在專案中放入下列程式碼。 為了讓此程式碼能夠運作，您必須有 system.string 的參考，以及 `using` `Imports` 適用于 system.object、System.string 和 system.object 的 add 或指示詞。
 
-     [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
-     [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb" id="Snippet1":::
+
 
 2. 呼叫先前定義的函式，以擷取依名稱編製索引之查詢字串參數的 <xref:System.Collections.DictionaryBase.Dictionary%2A> 。
 
