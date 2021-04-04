@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2f36ee884beb3b79244e4621ba305c06aafe8ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96cfbf8693ce23dbc0b0584c7742607224aeab4f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915753"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216939"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>逐步解說：建立具有隱私權提示的自訂啟動載入器
 您可以設定 ClickOnce 應用程式，以便在具有較新檔案版本和元件版本的元件可供使用時自動更新。 為確保您的客戶同意此行為，您可以向他們顯示隱私權提示。 然後，他們可以選擇是否要將許可權授與應用程式，以自動更新。 如果應用程式不允許自動更新，就不會安裝。
@@ -81,32 +81,33 @@ ms.locfileid: "99915753"
 
 18. 在 Form1 程式碼檔案中，加入 CheckedChanged 事件處理常式的下列程式碼。
 
-     [!code-csharp[ConsentDialog#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.cs)]
-     [!code-vb[ConsentDialog#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet1":::
 
 19. 依預設，更新類別的函式以停用 [ **繼續** ] 按鈕。
 
-     [!code-csharp[ConsentDialog#6](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.cs)]
-     [!code-vb[ConsentDialog#6](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet6":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet6":::
 
 20. 在 Form1 程式碼檔案中，為布林值變數新增下列程式碼，以追蹤終端使用者是否已同意線上更新。
 
-     [!code-csharp[ConsentDialog#3](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.cs)]
-     [!code-vb[ConsentDialog#3](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet3":::
 
 21. 在設計工具中，按兩下 [ **繼續** ] 按鈕以產生 click 事件處理常式。
 
 22. 在 Form1 程式碼檔案中，將下列程式碼加入至 [ **繼續** ] 按鈕的 Click 事件處理常式。
 
-     [!code-csharp[ConsentDialog#2](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.cs)]
-     [!code-vb[ConsentDialog#2](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet2":::
+
 
 23. 在設計工具中，按兩下 [ **取消** ] 按鈕以產生 click 事件處理常式。
 
 24. 在 Form1 程式碼檔案中，為 [ **取消** ] 按鈕的 Click 事件處理常式加入下列程式碼。
 
-     [!code-csharp[ConsentDialog#4](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.cs)]
-     [!code-vb[ConsentDialog#4](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet4":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet4":::
 
 25. 更新應用程式，以在終端使用者不同意線上更新時傳回錯誤。
 
@@ -118,7 +119,7 @@ ms.locfileid: "99915753"
 
     3. 在 [ *Module1* ] 程式碼檔案中，加入下列程式碼。
 
-        [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]
+       :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb" id="Snippet7":::
 
     4. 在 [ **專案** ] 功能表上，按一下 [ **ConsentDialog 屬性**]，然後按一下 [ **應用程式** ] 索引標籤。
 
@@ -131,9 +132,9 @@ ms.locfileid: "99915753"
 
        僅適用于 Visual c # 開發人員：
 
-       開啟 *Program.cs* 程式碼檔案，然後加入下列程式碼。
+       開啟 *程式 .Cs 程式* 代碼檔案，然後加入下列程式碼。
 
-       [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]
+       :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs" id="Snippet5":::
 
 26. 在 [ **組建** ] 功能表上，按一下 [ **build.buildsolution**]。
 

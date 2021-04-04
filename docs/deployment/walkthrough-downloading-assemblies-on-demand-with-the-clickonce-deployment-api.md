@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 316be1f0a8fa881f781d983cfe9ed663e5907749
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917340"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216900"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：使用 ClickOnce 部署 API 依需求下載元件
 根據預設，應用程式中包含的所有元件 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 都會在第一次執行應用程式時下載。 不過，您的應用程式中可能會有一小部分使用者使用的部分。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 命名空間中的類別來下載它們。
@@ -56,10 +56,10 @@ ms.locfileid: "99917340"
 
 5. 使用 [記事本] 或其他文字編輯器，定義名為的類別， `DynamicClass` 並使用名為的單一屬性 `Message` 。
 
-    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
-    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs" id="Snippet1":::
 
-6. 將文字儲存為名為 *ClickOnceLibrary.cs* 或 *clickoncelibrary.dll* 的檔案（視您使用的語言而定）至 *ClickOnceOnDemand* 目錄。
+6. 將文字儲存為名為 *clickoncelibrary.dll* 的檔案，或 *clickoncelibrary.dll*，視您使用的語言而定，至 *ClickOnceOnDemand* 目錄。
 
 7. 將檔案編譯成元件。
 
@@ -79,14 +79,14 @@ ms.locfileid: "99917340"
 
 9. 使用文字編輯器建立新的檔案，並輸入下列程式碼。 此程式碼會建立 Windows Forms 應用程式，以在必要時下載 Clickoncelibrary.dll 元件。
 
-     [!code-csharp[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.cs)]
-     [!code-vb[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/CS/Form1.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/VB/Form1.vb" id="Snippet1":::
 
 10. 在程式碼中，找出的呼叫 <xref:System.Reflection.Assembly.LoadFile%2A> 。
 
 11. 設定 `PublicKeyToken` 為您稍早取出的值。
 
-12. 請將檔案儲存為 *Form1.cs* 或 *form1.vb。*
+12. 將檔案儲存為 *form1* *或 form1.vb。*
 
 13. 使用下列命令將它編譯成可執行檔。
 

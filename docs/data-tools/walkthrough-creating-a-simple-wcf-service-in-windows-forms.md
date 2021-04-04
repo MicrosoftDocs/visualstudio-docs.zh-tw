@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 92c2d72e2b0c71abe93290ab2bfb9b5b584e9178
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5352ad4724e7c54e72dbaa52573c814657fa041e
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866277"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216094"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>逐步解說：在 Windows Forms 中建立簡單的 WCF 服務
 
@@ -65,35 +65,35 @@ ms.locfileid: "99866277"
    > [!NOTE]
    > 這樣會建立一個可進行測試和存取的工作服務。 以下兩個步驟示範如何修改預設方法以使用不同的資料類型。 在實際的應用程式中，您也會將自己的功能加入服務。
 
-5. 在 **方案總管** 中，按兩下 [ **IService1** ] 或 [ **IService1.cs**]。
+5. 在 **方案總管** 中，按兩下 [ **IService1** ] 或 [ **IService1**]。
 
    ![IService1 檔案](../data-tools/media/wcf2.png)
 
    找出下列這一行：
 
-   [!code-csharp[WCFWalkthrough#4](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.cs)]
-   [!code-vb[WCFWalkthrough#4](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.vb)]
+   :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1_2.cs" id="Snippet4":::
+   :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1_2.vb" id="Snippet4":::
 
    將參數的類型變更 `value` 為 string：
 
-   [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.cs)]
-   [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.vb)]
+   :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs" id="Snippet1":::
+   :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1.vb" id="Snippet1":::
 
    請注意上述程式碼中的 `<OperationContract()>` 或 `[OperationContract]` 屬性。 服務所公開的所有方法都需要這些屬性。
 
-6. 在 **方案總管** 中，按兩下 [ **Service1** ] 或 [ **Service1.cs**]。
+6. 在 **方案總管** 中，按兩下 [ **Service1** ] 或 [ **Service1**]。
 
    ![Service1 檔案](../data-tools/media/wcf3.png)
 
    找出下列這一行：
 
-   [!code-vb[WCFWalkthrough#5](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.vb)]
-   [!code-csharp[WCFWalkthrough#5](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.cs)]
+   :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1_2.vb" id="Snippet5":::
+   :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1_2.cs" id="Snippet5":::
 
    將參數的類型變更 `value` 為 string：
 
-   [!code-csharp[WCFWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.cs)]
-   [!code-vb[WCFWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.vb)]
+   :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1.cs" id="Snippet2":::
+   :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1.vb" id="Snippet2":::
 
 ## <a name="test-the-service"></a>測試服務
 
@@ -143,8 +143,8 @@ ms.locfileid: "99866277"
 
 3. 按兩下 [`Button`]，並將下列程式碼加入 `Click` 事件處理常式：
 
-     [!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.cs)]
-     [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/form1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/form1.vb" id="Snippet3":::
 
 4. 在 [方案總管] 中，以滑鼠右鍵按一下 [WindowsApplication1]，然後按一下 [設定為啟始專案]。
 

@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4863fb40bc6f70556d8f00305d882e6edd93a0e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a80fc4fbfaf9a308492345ba897363d31d4669ca
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074388"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216536"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage 中的資源
 您可以在原生附屬 UI Dll、managed 附屬 Dll 或 managed VSPackage 本身中內嵌當地語系化的資源。
@@ -44,8 +44,8 @@ ms.locfileid: "105074388"
 
   您可以使用 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 屬性來指出 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 該 managed 資源是否可用。
 
-  [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
-  [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]
+  :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs" id="Snippet1":::
+  :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb" id="Snippet1":::
 
   <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>以這種方式設定，表示在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 搜尋資源（例如，使用）時，應該忽略未受管理的附屬 dll <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> 。 如果 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 遇到兩個以上具有相同資源識別碼的資源，則會使用它所找到的第一個資源。
 

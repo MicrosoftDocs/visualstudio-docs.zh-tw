@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4eade25f53bfd58f920a8d2a046d7d09ee98ac8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bd75c94e2f0f557b85d945d141f952950abb2eb
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879679"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216341"
 ---
 # <a name="how-to-add-a-finder-method"></a>如何：加入搜尋工具方法
   若要啟用商務資料連線 (BDC) 服務來顯示 web 元件或清單中的實體清單，您必須建立 *Finder* 方法。 Finder 方法是傳回實體實例集合的特殊方法。 如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -61,8 +61,8 @@ ms.locfileid: "99879679"
    > [!NOTE]
    > 將欄位的值取代為 `ServerName` 您伺服器的名稱。
 
-    [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
-    [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
+    :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet2":::
+    :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet2":::
 
 ## <a name="see-also"></a>另請參閱
 - [BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)

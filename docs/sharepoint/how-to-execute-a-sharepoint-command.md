@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b5a9ea96820aafe32ca119d7e6d08057b91206fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e22ade9b2414e1d598065bb9e417c4706f75a07
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943818"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217173"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>How to：執行 SharePoint 命令
   如果您想要在 SharePoint 工具擴充功能中使用伺服器物件模型，您必須建立自訂 *SharePoint 命令* 以呼叫 API。 在您定義命令並使用 SharePoint 工具延伸模組部署之後，您的擴充功能就可以執行命令來呼叫 SharePoint 伺服器物件模型。 若要執行命令，請使用物件的其中一個 ExecuteCommand 方法 <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> 。
@@ -56,8 +56,8 @@ ms.locfileid: "99943818"
 ## <a name="example"></a>範例
  下列程式碼範例示範如何使用多載 <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> 來呼叫 how `Contoso.Commands.UpgradeSolution` [to： Create a SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)所述的命令。
 
- [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#6)]
- [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#6)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs" id="Snippet6":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb" id="Snippet6":::
 
  `Execute`此範例中顯示的方法是 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A> <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> 在自訂部署步驟中執行介面的方法。 若要在較大範例的內容中查看這個程式碼，請參閱 [逐步解說：建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。
 

@@ -5,14 +5,14 @@ ms.topic: include
 ms.assetid: 9109bf1e-f725-439d-a870-13741e0dbc90
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 02/15/2021
+ms.date: 04/02/2021
 ms.faqid: q3_2
-ms.openlocfilehash: 2f68d8fcbdf9d4f92980f164181ccc2c6483a265
-ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
+ms.openlocfilehash: b2f8fbed33908c16252d958d627e4d19f07c1c13
+ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100552744"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106283203"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>我要如何使用自己的權益？
 
@@ -20,4 +20,4 @@ ms.locfileid: "100552744"
 
 針對訂閱者入口網站中提供的每個權益，我們提供了一些資訊，例如哪些訂用帳戶包含它們，以及啟用權益的步驟。
 
-請查看我們的文件以[深入了解](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) \(部分機器翻譯\) (按一下左側導覽窗格中的 [訂閱]，然後選擇 [優點])。
+請查看我們的文件以[深入了解](https://docs.microsoft.com/visualstudio/subscriptions/about-benefits) \(部分機器翻譯\) (按一下左側導覽窗格中的 [訂閱]，然後選擇 [優點])。

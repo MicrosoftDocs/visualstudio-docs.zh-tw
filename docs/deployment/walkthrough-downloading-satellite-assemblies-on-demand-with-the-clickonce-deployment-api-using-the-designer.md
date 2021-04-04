@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74e6641eff7fcaecfab300afe4747bb2ab7b75b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e9166dbd3d6cd7ba4500e2390bd611a31bcee7b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917303"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216874"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說：使用設計工具以 ClickOnce 部署 API 依需求下載附屬元件
 透過使用附屬組件，Windows Forms 應用程式可以設定為適用多個文化特性。 *「附屬組件」* (Satellite Assembly) 為包含文化特性 (除了應用程式的預設文化特性以外) 之應用程式資源的組件。
@@ -57,11 +57,11 @@ ms.locfileid: "99917303"
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>在 C\# 內視需要下載附屬組件
 
-1. 開啟 *Program.cs* 檔案。 如果您沒有在 [方案總管] 內看到這個檔案，請選取您的專案，並在 [專案] 功能表上按一下 [顯示所有檔案]。
+1. 開啟 *程式 .cs* 檔案。 如果您沒有在 [方案總管] 內看到這個檔案，請選取您的專案，並在 [專案] 功能表上按一下 [顯示所有檔案]。
 
 2. 使用下列程式碼來下載適當的附屬組件，並啟動您的應用程式。
 
-     [!code-csharp[ClickOnce.SatelliteAssemblies#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnce.SatelliteAssemblies/CS/Program.cs" id="Snippet1":::
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>在 Visual Basic 內視需要下載附屬組件
 
@@ -71,11 +71,11 @@ ms.locfileid: "99917303"
 
 3. 將下列匯入內容新增至 *ApplicationEvents.VB* 檔案的開頭。
 
-     [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesVB/VB/ApplicationEvents.vb" id="Snippet1":::
 
 4. 將下列程式碼新增至 `MyApplication` 類別。
 
-     [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesVB/VB/ApplicationEvents.vb" id="Snippet2":::
 
 ## <a name="next-steps"></a>下一步
  在生產環境中，您可能需要移除程式碼範例中將 <xref:System.Threading.Thread.CurrentUICulture%2A> 設定為特定值的那一行，因為用戶端電腦預設會設定正確的值。 當您的應用程式在日文的用戶端電腦上執行時， <xref:System.Threading.Thread.CurrentUICulture%2A> 預設會是 `ja-JP` 。 在部署應用程式前，以程式設計方式設定這個值是測試附屬組件的一個好方法。

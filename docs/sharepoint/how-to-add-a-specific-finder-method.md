@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 237cd28bffece4517e80b979602ac8d2ed357aa2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87f5b0cf86178b88b1611f4b0ce8a4bbacde780e
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882683"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216796"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>如何：新增特定搜尋工具方法
   您可以藉由建立特定的搜尋 *工具* 方法來傳回單一實體實例。 當使用者選擇商務資料網頁元件或外部清單中的實體時， (BDC) 服務的商務資料連線會執行特定的搜尋工具方法。 如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -84,8 +84,8 @@ ms.locfileid: "99882683"
      > [!NOTE]
      > 將欄位的值取代為 `ServerName` 您伺服器的名稱。
 
-     [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
-     [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet3":::
 
 ## <a name="see-also"></a>另請參閱
 - [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)

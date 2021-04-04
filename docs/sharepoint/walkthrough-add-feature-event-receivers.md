@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c9d50de6630a813a9c8c7a075af6f921608fcd93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 305220a8206cc84e55ed7319b5ce6ce1c8058b3c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851526"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217030"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>逐步解說：新增功能事件接收器
 功能事件接收器是在 SharePoint 中發生下列其中一個功能相關事件時所執行的方法：
@@ -85,16 +85,16 @@ ms.locfileid: "99851526"
 
 2. 在 [ **功能** ] 節點下，開啟 [ **Feature1**] 的快捷方式功能表，然後選擇 [ **加入事件接收器** ]，將事件接收器加入至功能。
 
-     這會在 Feature1 底下加入程式碼檔案。 在此情況下，會根據您專案的開發語言，將它命名為 *Feature1.EventReceiver.cs* 或 *Feature1。*
+     這會在 Feature1 底下加入程式碼檔案。 在此情況下，會根據您專案的開發語言，將它命名為 *Feature1. EventReceiver .cs* 或 *Feature1。*
 
 3. 如果您的專案是以撰寫的 [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ，請在事件接收器的頂端新增下列程式碼（如果它還不存在）：
 
-     [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs" id="Snippet1":::
 
 4. 事件接收器類別包含數個以批註形式處理的方法，這些方法會當做事件。 以下列內容取代 **FeatureDeactivating** 方法：
 
-     [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
-     [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs" id="Snippet2":::
 
 ## <a name="test-the-feature-event-receiver"></a>測試功能事件接收器
  接下來，停用此功能，測試 **FeatureDeactivating** 方法是否會將公告輸出到 SharePoint 公告清單。

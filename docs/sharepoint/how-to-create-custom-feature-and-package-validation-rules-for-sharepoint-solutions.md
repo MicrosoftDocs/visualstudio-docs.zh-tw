@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8c6514487ff791948787a4f9d319ff0fba9f1e02
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee6b27b92f1c79bfda95ba3d6dce7dbdce4a6fac
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885686"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216562"
 ---
 # <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>建立 SharePoint 方案的功能和套件驗證
 
@@ -48,8 +48,8 @@ ms.locfileid: "99885686"
 ## <a name="example"></a>範例
  下列程式碼範例示範如何建立自訂功能驗證規則。
 
- [!code-vb[SPExtensibility.FeatureValidation#1](../sharepoint/codesnippet/VisualBasic/featurevalidation/extension/customvalidationrule.vb#1)]
- [!code-csharp[SPExtensibility.FeatureValidation#1](../sharepoint/codesnippet/CSharp/featurevalidation/extension/customfeaturevalidationrule.cs#1)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/featurevalidation/extension/customvalidationrule.vb" id="Snippet1":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featurevalidation/extension/customfeaturevalidationrule.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>編譯程式碼
  此範例需要下列元件的參考：

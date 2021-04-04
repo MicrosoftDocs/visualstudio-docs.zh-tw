@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d4c12626550e36acc1a135258750f2d96ac5e81d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c78a7b1ea0e8de96146367782d9de274f413a5f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952586"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217602"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>逐步解說：匯入 SharePoint Designer 可重複使用的工作流程
 
@@ -216,13 +216,13 @@ ms.locfileid: "99952586"
 
 15. 在現有的 **using** 或 **Imports** 指示詞下新增下列內容：
 
-     [!code-csharp[SP_SPDWFImport#1](../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs#1)]
-     [!code-vb[SP_SPDWFImport#1](../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb" id="Snippet1":::
 
 16. 取代 `codeActivity1_ExecuteCode` 為下列內容：
 
-     [!code-csharp[SP_SPDWFImport#2](../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs#2)]
-     [!code-vb[SP_SPDWFImport#2](../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb" id="Snippet2":::
 
 ## <a name="deploy-the-project-and-associate-the-workflow"></a>部署專案並建立工作流程的關聯
  接下來，執行 WorkflowImportProject1 將它部署到 SharePoint 網站，然後將工作流程與工作清單產生關聯，以查看並測試修改過的已轉換工作流程。

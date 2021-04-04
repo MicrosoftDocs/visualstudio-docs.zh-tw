@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc1474d1c7aeabb9b3e9ecbbe6b42931d44c59c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b6fad27342c086e551320977cdf712f816b383c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839080"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217940"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說：使用專案範本建立自訂動作專案專案（第2部分）
   在您定義自訂類型的 SharePoint 專案專案，並將其與 Visual Studio 中的專案範本建立關聯之後，您可能也會想要提供範本的嚮導。 當使用者使用您的範本將新的專案專案實例加入至專案時，您可以使用此嚮導來收集使用者的資訊。 您收集的資訊可以用來初始化專案專案。
@@ -115,8 +115,8 @@ ms.locfileid: "99839080"
 
 2. 在 **ItemTemplateWizard** 專案中，以下列程式碼取代字串程式碼檔中的程式碼。
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs#6)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb#6)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs" id="Snippet6":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb" id="Snippet6":::
 
 ## <a name="create-the-wizard-ui"></a>建立嚮導 UI
  加入 XAML 來定義嚮導的 UI，並加入一些程式碼，將 wizard 中的一些控制項系結至識別碼字串。 您建立的 wizard 類似于 Visual Studio 中的 SharePoint 專案的內建 wizard。
@@ -130,7 +130,7 @@ ms.locfileid: "99839080"
     > [!NOTE]
     > 新增此程式碼之後，您的專案將會有一些編譯錯誤。 當您在後續步驟中新增程式碼時，這些錯誤就會消失。
 
-     [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml" id="Snippet9":::
 
     > [!NOTE]
     > 在此 XAML 中建立的視窗衍生自 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 基類。 當您加入自訂 WPF 對話方塊來 Visual Studio 時，建議您從此類別衍生您的對話方塊，使其符合 Visual Studio 中其他對話方塊的樣式，並避免強制回應對話方塊可能發生的問題。 如需詳細資訊，請參閱 [建立和管理模式對話方塊](../extensibility/creating-and-managing-modal-dialog-boxes.md)。
@@ -143,8 +143,8 @@ ms.locfileid: "99839080"
 
 4. 在 WizardWindow .xaml 檔案的程式碼後端檔案中，以下列程式碼取代目前的程式碼。
 
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb#7)]
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs#7)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb" id="Snippet7":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs" id="Snippet7":::
 
 ## <a name="implement-the-wizard"></a>執行嚮導
  藉由執行介面來定義嚮導的功能 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 。
@@ -153,8 +153,8 @@ ms.locfileid: "99839080"
 
 1. 在 **ItemTemplateWizard** 專案中，開啟 **CustomActionWizard** 程式碼檔案，然後以下列程式碼取代此檔案中的目前程式碼：
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs" id="Snippet8":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb" id="Snippet8":::
 
 ## <a name="checkpoint"></a>Checkpoint
  在本逐步解說的這個階段中，wizard 的所有程式碼現在都在專案中。 建立專案，以確定它會進行編譯而不會發生錯誤。

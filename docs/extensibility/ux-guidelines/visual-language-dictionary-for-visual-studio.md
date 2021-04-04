@@ -5,14 +5,15 @@ ms.date: 08/04/2017
 ms.reviewer: Jamie.Young
 ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
+author: brickgeorge
 ms.author: brgeorge
 manager: jmartens
-ms.openlocfilehash: b6bae4d0dbece80cff10b15e84e57dfaa9d1db9e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79d0b2c9e2d3502f971b6ba832b5077e82295b84
+ms.sourcegitcommit: d1e51dd407ec2b51e5954a000501de85e9fcd3d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930040"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106069262"
 ---
 # <a name="visual-language-dictionary"></a>視覺化語言字典
 
@@ -364,7 +365,7 @@ Visual Studio 使用常見的視覺語言，來說明其圖示和其他影像的
 | 概念 | 主要圖示 | 其他範例 | 備註 |
 | --- | --- | --- | --- |
 | **觀看** | ![監控圖示](../../extensibility/ux-guidelines/media/vld_c_watch.png "VLD_C_Watch") | ![檔案系統監控程式圖示](../../extensibility/ux-guidelines/media/vld_c_watch_filesystemwatcher.png "VLD_C_Watch_FileSystemWatcher")<br />檔案系統監看員 ||
-| **Web** | ![Web 圖示](../../extensibility/ux-guidelines/media/vld_c_web.png "VLD_C_Web") | ![發行至網站圖示](../../extensibility/ux-guidelines/media/vld_c_web_publishtoweb.png "VLD_C_Web_PublishToWeb")<br />發行至 Web<br />![具有設定圖示的 Web 圖示，以及表示下載 web 設定的下載圖示。](../../extensibility/ux-guidelines/media/vld_c_web_downloadwebsettings.png "VLD_C_Web_DownloadWebSettings")<br />下載 web 設定<br />![新網站圖示](../../extensibility/ux-guidelines/media/vld_c_web_newwebsite.png "VLD_C_Web_NewWebsite")<br />新網站 ||
+| **Web** | ![Web 圖示](../../extensibility/ux-guidelines/media/vld_c_web.png "VLD_C_Web") | ![發行至網站圖示](../../extensibility/ux-guidelines/media/vld_c_web_publishtoweb.png "VLD_C_Web_PublishToWeb")<br />發佈至 Web<br />![具有設定圖示的 Web 圖示，以及表示下載 web 設定的下載圖示。](../../extensibility/ux-guidelines/media/vld_c_web_downloadwebsettings.png "VLD_C_Web_DownloadWebSettings")<br />下載 web 設定<br />![新網站圖示](../../extensibility/ux-guidelines/media/vld_c_web_newwebsite.png "VLD_C_Web_NewWebsite")<br />新網站 ||
 | **精靈** | ![Wizard 圖示](../../extensibility/ux-guidelines/media/vld_c_wizard.png "VLD_C_Wizard") | ![地圖圖層精靈圖示](../../extensibility/ux-guidelines/media/vld_c_wizard_maplayerwizard.png "VLD_C_Wizard_MapLayerWizard")<br />地圖圖層嚮導<br />![MFC 類別精靈圖示](../../extensibility/ux-guidelines/media/vld_c_wizard_mfcclasswizard.png "VLD_C_Wizard_MFCCLassWizard")<br />MFC 類別精靈<br />![地圖嚮導圖示](../../extensibility/ux-guidelines/media/vld_c_wizard_mapwizard.png "VLD_C_Wizard_MapWizard")<br />Map wizard ||
 | **工作專案** | ![工作項目圖示](../../extensibility/ux-guidelines/media/vld_c_workitem.png "VLD_C_WorkItem") | ![前往工作項目圖示](../../extensibility/ux-guidelines/media/vld_c_workitem_gotoworkitem.png "VLD_C_WorkItem_GoToWorkItem")<br />移至工作項目<br />![工作項目查詢圖示](../../extensibility/ux-guidelines/media/vld_c_workitem_workitemquery.png "VLD_C_WorkItem_WorkItemQuery")<br />工作項目查詢 ||
 
@@ -424,7 +425,7 @@ Visual Studio 使用常見的視覺語言，來說明其圖示和其他影像的
 | **匯入** | ![匯入圖示](../../extensibility/ux-guidelines/media/vld_a_import.png "VLD_A_Import") | ![匯入目錄組件圖示](../../extensibility/ux-guidelines/media/vld_a_import_importcatalogpart.png "VLD_A_Import_ImportCatalogPart")<br />匯入目錄元件<br />![匯出篩選圖示](../../extensibility/ux-guidelines/media/vld_a_import_importfilter.png "VLD_A_Import_ImportFilter")<br />匯入篩選 |
 | **繼承** | ![表示模型化介面工具箱控制項的繼承圖示，例如使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_inheritance.png "VLD_A_Inheritance") ||
 | **指令指標** | ![指令指標圖示](../../extensibility/ux-guidelines/media/vld_a_instructionpointer.png "VLD_A_InstructionPointer") | ![目前的指標圖示](../../extensibility/ux-guidelines/media/vld_a_instructionpointer_currentpointer.png "VLD_A_InstructionPointer_CurrentPointer")<br />目前指標<br />![歷程記錄指標圖示](../../extensibility/ux-guidelines/media/vld_a_instructionpointer_historicalpointer.png "VLD_A_InstructionPointer_HistoricalPointer")<br />歷程記錄指標<br />![呼叫傳回指標圖示](../../extensibility/ux-guidelines/media/vld_a_instructionpointer_callreturnpointer.png "VLD_A_InstructionPointer_CallReturnPointer")<br />呼叫 return 指標 |
-| **合併式** | !合併圖示作為使用箭號的圖示範例。] (。/../extensibility/ux-guidelines/media/vld_a_merge.png "VLD_A_Merge" )  | ![合併圖示和自動圖示（具有兩個垂直線的開始圖示），表示全部自動合併為使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_merge_automergeall.png "VLD_A_Merge_AutomergeAll")<br />全部合併<br />![工具圖示和合併圖示，指出以工具合併變更為使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_merge_mergechangeswithtool.png "VLD_A_Merge_MergeChangesWithTool")<br />使用工具合併變更<br />![將「合併模組參考」表示為使用箭號之圖示範例的合併圖示和參考圖示。](../../extensibility/ux-guidelines/media/vld_a_merge_mergemodulereference.png "VLD_A_Merge_MergeModuleReference")<br />合併模組參考 |
+| **合併式** | ![合併圖示作為使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_merge.png "VLD_A_Merge") | ![合併圖示和自動圖示（具有兩個垂直線的開始圖示），表示全部自動合併為使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_merge_automergeall.png "VLD_A_Merge_AutomergeAll")<br />全部合併<br />![工具圖示和合併圖示，指出以工具合併變更為使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_merge_mergechangeswithtool.png "VLD_A_Merge_MergeChangesWithTool")<br />使用工具合併變更<br />![將「合併模組參考」表示為使用箭號之圖示範例的合併圖示和參考圖示。](../../extensibility/ux-guidelines/media/vld_a_merge_mergemodulereference.png "VLD_A_Merge_MergeModuleReference")<br />合併模組參考 |
 | **移至底部** | ![移至最下方圖示](../../extensibility/ux-guidelines/media/vld_a_movetobottom.png "VLD_A_MoveToBottom") ||
 | **移至頁首** | ![移至最上方圖示](../../extensibility/ux-guidelines/media/vld_a_movetotop.png "VLD_A_MoveToTop") ||
 | **往回導覽** | ![向後巡覽圖示](../../extensibility/ux-guidelines/media/vld_a_navigateback.png "VLD_A_NavigateBack") | ![超連結向後圖示](../../extensibility/ux-guidelines/media/vld_a_navigateback_hyperlinkback.png "VLD_A_NavigateBack_HyperlinkBack")<br />反向連結 |
@@ -436,7 +437,7 @@ Visual Studio 使用常見的視覺語言，來說明其圖示和其他影像的
 | **排序** | ![重新排序圖示，作為使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_reorder.png "VLD_A_Reorder") | ![重新排列圖示和屬性或參數圖示，指出將參數重新排列為使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_reorder_reorderparameters.png "VLD_A_Reorder_ReorderParameters")<br />重新排列參數 |
 | **同步** | ![同步圖示作為使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_sync.png "VLD_A_Sync") | ![同步處理內容圖示](../../extensibility/ux-guidelines/media/vld_a_sync_synccontents.png "VLD_A_Sync_SyncContents")<br />同步內容 |
 | **復原**<br />還原、還原 | ![復原圖示作為使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_undo.png "VLD_A_Undo") | ![表示影像還原的復原圖示和影像圖示，例如使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_undo_imagerestore.png "VLD_A_Undo_ImageRestore")<br />映射還原<br />![復原圖示和批註圖示，指出取消批註為使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_undo_uncomment.png "VLD_A_Undo_Uncomment")<br />取消註解 |
-| **Up**<br />上傳 | !圖示是使用箭號的圖示範例。] (。/../extensibility/ux-guidelines/media/vld_a_up.png "VLD_A_Up" )  | ![指出檔案上傳參數的圖示和屬性或參數圖示，例如使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_up_fileuploadparameter.png "VLD_A_Up_FileUploadParameter")<br />檔案上傳參數<br />![指出其中一個層級的向上圖示和資料夾圖示，作為使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_up_onelevelup.png "VLD_A_Up_OneLevelUp")<br />一層樓 |
+| **Up**<br />上傳 | ![圖示是使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_up.png "VLD_A_Up") | ![指出檔案上傳參數的圖示和屬性或參數圖示，例如使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_up_fileuploadparameter.png "VLD_A_Up_FileUploadParameter")<br />檔案上傳參數<br />![指出其中一個層級的向上圖示和資料夾圖示，作為使用箭號的圖示範例。](../../extensibility/ux-guidelines/media/vld_a_up_onelevelup.png "VLD_A_Up_OneLevelUp")<br />一層樓 |
 
 ## <a name="status-indicators"></a><a name="BKMK_VLDStatus"></a> 狀態指示器
 

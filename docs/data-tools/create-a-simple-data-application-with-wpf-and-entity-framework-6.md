@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52c9d8ca4af6467c6db21be64083b5bf64af0b6a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3432dd9a72fa71ea1e749dd28e80a3d55cce19c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859186"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216055"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
 
@@ -130,9 +130,9 @@ ms.locfileid: "99859186"
 
      ![將 Orders 類別拖曳為方格](../data-tools/media/raddata-drag-orders-classes-as-grid.png)
 
-7. Visual Studio 已產生將 UI 控制項連接到模型中事件的所有系結程式碼。 您只需要撰寫一些程式碼來填入模型，就可以查看某些資料。 首先，流覽至 *MainWindow.xaml.cs* ，並將資料成員加入至資料內容的 MainWindow 類別。 這個物件是為您產生的，它的作用就像是追蹤模型中變更和事件的控制項。 您也會新增客戶和訂單的 CollectionViewSource 資料成員，以及相關聯的函式初始化邏輯。 類別的最上層應如下所示：
+7. Visual Studio 已產生將 UI 控制項連接到模型中事件的所有系結程式碼。 您只需要撰寫一些程式碼來填入模型，就可以查看某些資料。 首先，流覽至 *MainWindow* ，並將資料成員加入至資料內容的 MainWindow 類別。 這個物件是為您產生的，它的作用就像是追蹤模型中變更和事件的控制項。 您也會新增客戶和訂單的 CollectionViewSource 資料成員，以及相關聯的函式初始化邏輯。 類別的最上層應如下所示：
 
-     [!code-csharp[MainWindow#1](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#1)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet1":::
 
      新增 system.string 的指示詞 `using` ，以將載入延伸方法帶入範圍中：
 
@@ -142,7 +142,8 @@ ms.locfileid: "99859186"
 
      現在，向下滾動並尋找 `Window_Loaded` 事件處理常式。 請注意，Visual Studio 已新增 CollectionViewSource 物件。 這代表您在建立模型時選取的 Northwindentities] 物件。 您已新增該檔案，因此您不需要它。 讓我們取代中的程式碼，讓 `Window_Loaded` 方法現在看起來像這樣：
 
-     [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet2":::
+
 
 8. 按 **F5**。 您應該會看到第一個已抓取到 CollectionViewSource 的客戶詳細資料。 您也應該會在資料方格中看到其訂單。 格式不太好，所以讓我們來修正這個問題。 您也可以建立一種方式來查看其他記錄，並進行基本的 CRUD 作業。
 
@@ -421,9 +422,10 @@ Visual Studio 所產生的預設相片順序並不適合您的應用程式，因
 
 程式碼後端是最基本的，但 add 和 delete 方法除外。 在 CollectionViewSource 的 View 屬性上呼叫方法來執行導覽。 `DeleteOrderCommandHandler`顯示如何針對訂單執行 cascade delete。 我們必須先刪除與其相關聯的 Order_Details。 會 `UpdateCommandHandler` 將新的客戶或訂單加入至集合，否則只會以使用者在文字方塊中所做的變更來更新現有的客戶或訂單。
 
-將這些處理常式方法新增至 *MainWindow.xaml.cs* 中的 MainWindow 類別。 如果您的 [Customers] 資料表的 CollectionViewSource 有不同的名稱，則您需要在下列每個方法中調整名稱：
+將這些處理常式方法新增至 *MainWindow* 中的 MainWindow 類別。 如果您的 [Customers] 資料表的 CollectionViewSource 有不同的名稱，則您需要在下列每個方法中調整名稱：
 
-[!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
+:::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet3":::
+
 
 ## <a name="run-the-application"></a>執行應用程式
 

@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7513617ab4ee4a051dd48cd110ecb2c5e22495
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f7b1b8b92f978739bfa4e540013347e216781cd4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056829"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217238"
 ---
 # <a name="create-options-pages"></a>建立選項頁面
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] managed 封裝架構中，從 [工具] 功能表底下新增 [選項] 頁面，衍生自的類別會 <xref:Microsoft.VisualStudio.Shell.DialogPage> 延伸 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE。  
@@ -61,19 +61,19 @@ ms.locfileid: "105056829"
 ## <a name="example"></a>範例
  接下來是簡單的「Hello world」選項頁面執行。 將下列程式碼新增至 Visual Studio 套件範本所建立的預設專案，並選取 [ **功能表命令** ] 選項，可充分示範選項頁面功能。
 
-### <a name="description"></a>Description
+### <a name="description"></a>描述
  下列類別會定義最短的 "Hello world" 選項頁面。 開啟時，使用者可以 `HelloWorld` 在屬性方格中設定公用屬性。
 
 ### <a name="code"></a>程式碼
- [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/class1.cs" id="Snippet11":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/class1.vb" id="Snippet11":::
 
 ### <a name="description"></a>描述
  將下列屬性套用至 package 類別，可讓您在封裝載入時使用 [選項] 頁面。 這些數位是類別和頁面的任意資源識別碼，而結尾的布林值會指定頁面是否支援 automation。
 
 ### <a name="code"></a>程式碼
- [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs" id="Snippet07":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb" id="Snippet07":::
 
 ### <a name="description"></a>描述
  下列事件處理常式會根據 [選項] 頁面中設定的屬性值來顯示結果。 它會使用 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 方法，並將結果明確轉換成自訂選項頁面類型，以存取頁面所公開的屬性。
@@ -81,8 +81,8 @@ ms.locfileid: "105056829"
  如果是封裝範本所產生的專案，請從函式呼叫這個函式，將 `MenuItemCallback` 它附加至新增至 [ **工具** ] 功能表的預設命令。
 
 ### <a name="code"></a>程式碼
- [!code-csharp[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs" id="Snippet08":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb" id="Snippet08":::
 
 ## <a name="see-also"></a>另請參閱
 - [擴充使用者設定和選項](../../extensibility/extending-user-settings-and-options.md)

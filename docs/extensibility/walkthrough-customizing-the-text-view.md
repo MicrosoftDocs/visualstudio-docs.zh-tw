@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17aa8644fc4823df5b68378e9045fa190980306d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5ef4d0b408afc00a806e73d1e2eae7a07dde7814
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080303"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216848"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>逐步解說：自訂文字視圖
 您可以在編輯器格式對應中修改下列任何屬性，以自訂文字視圖：
@@ -51,8 +51,8 @@ ms.locfileid: "105080303"
 
 2. 新增下列 `using` 指示詞：
 
-    [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
-    [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb" id="Snippet1":::
 
 3. 宣告名為 `TestViewCreationListener` 的類別，該類別繼承自 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> 。 使用下列屬性匯出此類別：
 
@@ -60,20 +60,20 @@ ms.locfileid: "105080303"
 
    - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 指定此接聽程式的角色。
 
-     [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
-     [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb" id="Snippet2":::
 
 4. 在這個類別中，匯入 <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService> 。
 
-    [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
-    [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs" id="Snippet3":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb" id="Snippet3":::
 
 ## <a name="change-the-view-properties"></a>變更視圖屬性
 
 1. 設定方法， <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> 以便在開啟視圖時變更視圖屬性。 若要進行變更，請先找出 <xref:System.Windows.ResourceDictionary> 對應到您想要尋找之觀點的。 然後，在資源字典中變更適當的屬性，並設定屬性。 藉由呼叫方法來批次處理方法的呼叫，然後再 <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> 設定屬性，然後在 <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> 設定屬性之後設定。
 
-     [!code-csharp[VSSDKViewPropertyTest#4](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_4.cs)]
-     [!code-vb[VSSDKViewPropertyTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_4.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs" id="Snippet4":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb" id="Snippet4":::
 
 ## <a name="build-and-test-the-code"></a>建立並測試程式碼
 

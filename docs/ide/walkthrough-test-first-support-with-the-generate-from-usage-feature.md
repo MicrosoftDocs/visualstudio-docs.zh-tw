@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea04a9c70f23c30a5f603fa9411780223fff563
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a1f115dfff92b1c5e5979e62af257cde6a92360
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883047"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216588"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>逐步解說：以使用時產生功能進行測試優先開發
 
@@ -85,15 +85,15 @@ Visual Studio 在盡可能不中斷工作流程的情況下產生新的類型和
 
 7. 按一下 [確定]  關閉對話方塊，並建立新的檔案。
 
-8. 在 **方案總管** 中，查看 [ **GFUDemo_VB** ] 或 [ **GFUDemo_CS** 專案] 節點底下， *確認新的* [ *Automobile.cs* ] 或 [檔案]。 在程式碼編輯器中，焦點仍在 `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`，這可讓您以最少的中斷繼續撰寫測試。
+8. 在 **方案總管** 中，在 [ **GFUDemo_VB** ] 或 [ **GFUDemo_CS** 專案] 節點下查看，以 *確認新的* [紐約 *] 或 [* 紐約] 檔案是否存在。 在程式碼編輯器中，焦點仍在 `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`，這可讓您以最少的中斷繼續撰寫測試。
 
 ### <a name="generate-a-property-stub"></a>產生屬性虛設常式
 假設產品規格規定 `Automobile` 類別有兩個公用屬性，名為 `Model` 和 `TopSpeed`。 這些屬性必須由預設的建構函式以 `"Not specified"` 和 `-1` 的預設值來初始化。 以下的單元測試會驗證預設建構函式是否將屬性設定為正確的預設值。
 
 1. 將下列程式碼新增至 `DefaultAutomobileIsInitializedCorrectly` 測試方法。
 
-     [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
-     [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/unittest1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/unittest1.vb" id="Snippet1":::
 
 2. 因為程式碼參考 `Automobile` 上兩個未定義的屬性，所以 `Model` 和 `TopSpeed` 下會顯示波浪線。 將滑鼠停留在 `Model` 上並選擇 [快速動作] 錯誤燈泡，然後選擇 [產生屬性 'Automobile.Model']。
 
@@ -106,8 +106,8 @@ Visual Studio 在盡可能不中斷工作流程的情況下產生新的類型和
 
 1. 請將下列其他測試方法加入您的 `AutomobileTest` 類別中。
 
-     [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
-     [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/intermediate.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/intermediate.vb" id="Snippet2":::
 
 2. 按一下紅色波浪線下的 [快速動作] 錯誤燈泡，然後按一下 [在 'Automobile' 中產生建構函式]。
 
@@ -120,8 +120,8 @@ Visual Studio 在盡可能不中斷工作流程的情況下產生新的類型和
 
 1. 請將下列各行加入 `AutomobileWithModelNameCanStart` 方法中。
 
-     [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
-     [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/unittest1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/unittest1.vb" id="Snippet3":::
 
 2. 按一下 `myAuto.Start` 方法呼叫的 [快速動作] 錯誤燈泡，然後按一下 [產生方法 'Automobile.Start']。
 
@@ -145,13 +145,13 @@ Visual Studio 在盡可能不中斷工作流程的情況下產生新的類型和
 
 1. 將下列程式碼加入預設建構函式中，讓 `Model`、 `TopSpeed` 和 `IsRunning` 屬性都初始化為正確的 `"Not specified"`、 `-1`和 `False` (C# 為 `false`) 預設值。
 
-     [!code-csharp[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]
-     [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/automobile.cs" id="Snippet5":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/automobile.vb" id="Snippet5":::
 
 2. 呼叫 `Start` 方法時，它應該只有在 `IsRunning` 或 `Model` 屬性設為預設值以外的值時，才將 `TopSpeed` 旗標設為 true。 從方法主體移除 `NotImplementedException` ，並加入下列程式碼。
 
-     [!code-csharp[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]
-     [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/automobile.cs" id="Snippet6":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/automobile.vb" id="Snippet6":::
 
 ### <a name="run-the-tests-again"></a>再次執行測試
 

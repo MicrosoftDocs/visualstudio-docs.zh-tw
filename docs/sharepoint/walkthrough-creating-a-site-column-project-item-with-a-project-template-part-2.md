@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc664a50fc307c59d5c168b26c8af1bc6181ebad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13a2f2c147bbf175a7601cd465dc8acbba9b5388
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918725"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217745"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>逐步解說：使用專案範本建立網站資料行專案專案（第2部分）
   在您定義自訂類型的 SharePoint 專案專案，並將其與 Visual Studio 中的專案範本建立關聯之後，您可能也會想要提供範本的嚮導。 當使用者使用您的範本建立包含專案專案的新專案時，您可以使用此嚮導來收集使用者的資訊。 您收集的資訊可以用來初始化專案專案。
@@ -204,22 +204,22 @@ ms.locfileid: "99918725"
 
 1. 在 ProjectTemplateWizard 專案中，開啟 CommandIds 程式碼檔案，然後將此檔案的整個內容取代為下列程式碼。
 
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#5](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/commandids.cs#5)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#5](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/commandids.vb#5)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/commandids.cs" id="Snippet5":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/commandids.vb" id="Snippet5":::
 
 #### <a name="to-create-the-wizard-model"></a>建立嚮導模型
 
 1. 開啟 SiteColumnWizardModel 程式碼檔案，並將此檔案的整個內容取代為下列程式碼。
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#6](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.vb#6)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#6](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.cs#6)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.vb" id="Snippet6":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.cs" id="Snippet6":::
 
 #### <a name="to-create-the-project-signing-manager"></a>若要建立專案簽署管理員
 
 1. 開啟 ProjectSigningManager 程式碼檔案，然後將此檔案的整個內容取代為下列程式碼。
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.vb#8)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.cs#8)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.vb" id="Snippet8":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.cs" id="Snippet8":::
 
 ## <a name="create-the-wizard-ui"></a>建立嚮導 UI
  加入 XAML 來定義嚮導視窗的 UI，以及兩個提供 wizard 頁面 UI 的使用者控制項，並加入程式碼來定義視窗和使用者控制項的行為。 您建立的 wizard 類似于 Visual Studio 中的 SharePoint 專案的內建 wizard。
@@ -233,7 +233,7 @@ ms.locfileid: "99918725"
 
 2. 在設計工具的 XAML 視圖中，以下列 XAML 取代目前的 XAML。 XAML 定義的 UI 包含標題、 <xref:System.Windows.Controls.Grid> 包含 wizard 頁面的，以及視窗底部的導覽按鈕。
 
-     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml" id="Snippet10":::
 
     > [!NOTE]
     > 在此 XAML 中建立的視窗衍生自 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 基類。 當您加入自訂 WPF 對話方塊來 Visual Studio 時，建議您從此類別衍生您的對話方塊，使其符合其他 Visual Studio 對話方塊的樣式，並避免可能發生的強制回應對話方塊問題。 如需詳細資訊，請參閱 [建立和管理模式對話方塊](../extensibility/creating-and-managing-modal-dialog-boxes.md)。
@@ -248,8 +248,8 @@ ms.locfileid: "99918725"
 
 5. 以下列程式碼取代此檔案的內容，但位於檔案頂端的宣告除外 `using` 。
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.vb#4)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.cs#4)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.vb" id="Snippet4":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.cs" id="Snippet4":::
 
 #### <a name="to-create-the-first-wizard-page-ui"></a>建立第一個嚮導頁面 UI
 
@@ -257,7 +257,7 @@ ms.locfileid: "99918725"
 
 2. 在設計工具的 XAML 視圖中，以下列 XAML 取代目前的 XAML。 XAML 會定義包含文字方塊的 UI，讓使用者可以在其中輸入要用於偵錯工具之本機網站的 URL。 UI 也包含選項按鈕，讓使用者可以指定是否要沙箱化專案。
 
-     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#11](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page1.xaml#11)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page1.xaml" id="Snippet11":::
 
 3. 如果您正在開發 Visual Basic 專案，請從專案的 `ProjectTemplateWizard` `Page1` 屬性中的類別名稱移除命名空間 `x:Class` `UserControl` 。 這是在 XAML 的第一行。 當您完成時，第一行應該如下所示。
 
@@ -267,8 +267,8 @@ ms.locfileid: "99918725"
 
 4. `using`以下列程式碼取代位於檔案最上方的宣告以外的 Page1 檔案內容。
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.vb#2)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.cs" id="Snippet2":::
 
 #### <a name="to-create-the-second-wizard-page-ui"></a>若要建立第二個 wizard 頁面 UI
 
@@ -278,7 +278,7 @@ ms.locfileid: "99918725"
 
 2. 在 XAML 視圖中，以下列 XAML 取代目前的 XAML。 XAML 會定義 UI，其中包含一個下拉式清單，可供您選擇網站資料行的基底類型、用於指定內建或自訂群組的下拉式方塊，以顯示資源庫中的網站資料行，以及用來指定網站資料行名稱的文字方塊。
 
-     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#12](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page2.xaml#12)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page2.xaml" id="Snippet12":::
 
 3. 如果您正在開發 Visual Basic 專案，請從專案的 `ProjectTemplateWizard` `Page2` 屬性中的類別名稱移除命名空間 `x:Class` `UserControl` 。 這是在 XAML 的第一行。 當您完成時，第一行應該如下所示。
 
@@ -288,8 +288,8 @@ ms.locfileid: "99918725"
 
 4. 以下列程式碼取代 Page2 檔案的程式碼後端檔案內容（位於檔案頂端的宣告除外） `using` 。
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.vb#3)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs#3)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.vb" id="Snippet3":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs" id="Snippet3":::
 
 ## <a name="implement-the-wizard"></a>執行嚮導
  藉由執行介面來定義嚮導的主要功能 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 。 這個介面會定義當 wizard 開始和完成時，以及在執行嚮導的特定時間，Visual Studio 呼叫的方法。
@@ -300,8 +300,8 @@ ms.locfileid: "99918725"
 
 2. 將此檔案的整個內容取代為下列程式碼。
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.vb#7)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.cs#7)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.vb" id="Snippet7":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.cs" id="Snippet7":::
 
 ## <a name="create-the-sharepoint-commands"></a>建立 SharePoint 命令
  建立兩個呼叫 SharePoint 伺服器物件模型的自訂命令。 其中一個命令會決定使用者在 wizard 中輸入的網站 URL 是否有效。 另一個命令會從指定的 SharePoint 網站取得所有欄位類型，讓使用者可以選取要使用哪一個做為新網站資料行的基礎。
@@ -312,8 +312,8 @@ ms.locfileid: "99918725"
 
 2. 將此檔案的整個內容取代為下列程式碼。
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/sharepointcommands/commands.vb#9)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/sharepointcommands/commands.cs#9)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/sharepointcommands/commands.vb" id="Snippet9":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/sharepointcommands/commands.cs" id="Snippet9":::
 
 ## <a name="checkpoint"></a>Checkpoint
  在本逐步解說的這個階段中，wizard 的所有程式碼現在都在專案中。 建立專案，以確定它會進行編譯而不會發生錯誤。

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 378e839ea5f4223873fbbeec8d7b401ae0b16fc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1de6cdc2f5c1f1480a738f99aa05b8833eb4b2ed
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918753"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217785"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>逐步解說：建立 SharePoint 專案延伸模組
   本逐步解說將說明如何建立 SharePoint 專案的擴充功能。 您可以使用專案延伸回應專案層級的事件，例如新增、刪除或重新命名專案。 您也可以在屬性值變更時加入自訂屬性或回應。 與專案專案延伸不同的是，專案延伸無法與特定的 SharePoint 專案類型建立關聯。 當您建立專案擴充功能時，會在中開啟任何種類的 SharePoint 專案時載入擴充功能 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
@@ -113,8 +113,8 @@ ms.locfileid: "99918753"
 
 1. 將下列程式碼貼入 CustomProperty 程式碼檔案中。
 
-     [!code-vb[SPExt_ProjectExtension#1](../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb#1)]
-     [!code-csharp[SPExt_ProjectExtension#1](../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs" id="Snippet1":::
 
 ## <a name="build-the-solution"></a>建立解決方案
  接下來，請建立解決方案，以確定它會進行編譯而不會發生錯誤。

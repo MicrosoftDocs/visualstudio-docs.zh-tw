@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f2d14bfd069fcf5064c9d8643393e28e52570be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e018085bd9900a9ee04f838b7c802afd2acc4fe
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918628"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217706"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>逐步解說：建立 SharePoint 的網頁元件
 
@@ -82,14 +82,14 @@ Web 元件會顯示資料方格中的員工。 使用者指定包含員工資料
 
 您可以藉由將控制項加入網頁元件類別的控制項集合，來指定要在 Web 元件中顯示哪些控制項。
 
-1. 在 **方案總管** 中， (Visual Basic) 或 c # (中的 *WebPart1.cs* ) 開啟 *WebPart1。*
+1. 在 **方案總管** 中，以 c # (中的 Visual Basic) 或 *WebPart1* (開啟 *WebPart1。*
 
      Web 元件程式碼檔案會在程式碼編輯器中開啟。
 
 2. 將下列指示詞加入至 Web 元件程式碼檔案的頂端。
 
-     [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
-     [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet1":::
 
 3. 將下列程式碼新增至 `WebPart1` 類別。 此程式碼會宣告下欄欄位：
 
@@ -101,13 +101,13 @@ Web 元件會顯示資料方格中的員工。 使用者指定包含員工資料
 
    - 字串，其中包含員工資料檔案的路徑。
 
-     [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
-     [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet2":::
 
 4. 將下列程式碼新增至 `WebPart1` 類別。 此程式碼會將名為的自訂屬性加入 `DataFilePath` 至網頁元件。 自訂屬性是使用者可以在 SharePoint 中設定的屬性。 這個屬性會取得並設定用來填入資料方格的 XML 資料檔案位置。
 
-     [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
-     [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet3":::
 
 5. 以下列程式碼取代 `CreateChildControls` 方法。 此程式碼會執行下列工作：
 
@@ -115,8 +115,8 @@ Web 元件會顯示資料方格中的員工。 使用者指定包含員工資料
 
    - 將資料格系結至包含員工資料的 XML 檔案。
 
-     [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
-     [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet4":::
 
 6. 將下列方法新增至 `WebPart1` 類別。 此程式碼會執行下列工作：
 
@@ -124,8 +124,8 @@ Web 元件會顯示資料方格中的員工。 使用者指定包含員工資料
 
    - 處理當使用者選擇動詞命令功能表中的動詞命令時所引發的事件。 此程式碼會篩選出現在資料方格中的員工清單。
 
-     [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
-     [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet5":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet5":::
 
 ## <a name="test-the-web-part"></a>測試網頁元件
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4fe2da1bc6aefefb92fbd6f7d11613372b8b7742
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47fcc7e388f240d8b9636a733df4b6b8767f0df4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879692"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218005"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：將篩選描述元新增至搜尋工具方法
   篩選描述項可讓模型的取用者在執行之前，將值傳遞給方法。 如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -66,8 +66,8 @@ ms.locfileid: "99879692"
     > [!NOTE]
     > 將欄位的值取代為 `ServerName` 您伺服器的名稱。
 
-     [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
-     [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs" id="Snippet11":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb" id="Snippet11":::
 
 ## <a name="see-also"></a>另請參閱
 - [如何：加入搜尋工具方法](../sharepoint/how-to-add-a-finder-method.md)

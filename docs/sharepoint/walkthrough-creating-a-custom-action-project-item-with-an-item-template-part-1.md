@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e7427c0866806c705ed28a049b33024771631c0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71e9d83cbe3459abb05e24b127e54651aade8ee5
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839119"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217953"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說：使用專案範本建立自訂動作專案專案（第1部分）
   您可以藉由建立自己的專案專案類型，在 Visual Studio 中擴充 SharePoint 專案系統。 在這個逐步解說中，您將建立可加入至 SharePoint 專案的專案專案，以在 SharePoint 網站上建立自訂動作。 自訂動作會將功能表項目加入至 SharePoint 網站的 [ **網站動作** ] 功能表。
@@ -152,8 +152,8 @@ ms.locfileid: "99839119"
 
 2. 以下列程式碼取代此檔案中的程式碼。
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/CSharp/customactionprojectitem/projectitemtypedefinition/customaction.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/projectitemtypedefinition/customaction.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb" id="Snippet1":::
 
 ## <a name="create-an-icon-for-the-project-item-in-solution-explorer"></a>在方案總管中建立專案專案的圖示
  當您建立自訂 SharePoint 專案專案時，您可以將影像 (圖示或點陣圖) 與專案專案產生關聯。 此影像會出現在 **方案總管** 中專案專案的旁邊。

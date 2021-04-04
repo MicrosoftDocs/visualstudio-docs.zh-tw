@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b9ccf478a084b8dedabc6f470a333e3fe4b54eb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07f3b90df070eca4e17e5bba9fa6a9e3582bd238
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918727"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217791"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本建立網站資料行專案專案（第1部分）
   SharePoint 專案是一個或多個 SharePoint 專案專案的容器。 您可以建立自己的 SharePoint 專案專案類型，然後將它們與專案範本產生關聯，藉以擴充 Visual Studio 中的 SharePoint 專案系統。 在這個逐步解說中，您將會定義用來建立網站資料行的專案專案類型，然後您將建立專案範本，可用來建立包含網站資料行專案專案的新專案。
@@ -150,8 +150,8 @@ ms.locfileid: "99918727"
 
 1. 在 **SiteColumnProjectItemTypeProvider** 程式碼檔案中，以下列程式碼取代預設程式碼，然後儲存檔案。
 
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb" id="Snippet1":::
 
 ## <a name="create-a-visual-studio-project-template"></a>建立 Visual Studio 專案範本
  藉由建立專案範本，您可以讓其他開發人員建立包含網站資料行專案專案的 SharePoint 專案。 SharePoint 專案範本包含 Visual Studio 中所有專案所需的檔案，例如 *.csproj* 或 *vbproj* 和 *.vstemplate* 檔案，以及 SharePoint 專案特定的檔案。 如需詳細資訊，請參閱 [建立 SharePoint 專案專案的專案範本和專案範本](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
@@ -225,7 +225,7 @@ ms.locfileid: "99918727"
 ## <a name="edit-the-project-template-files"></a>編輯專案範本檔
  在 SiteColumnProjectTemplate 專案中編輯下列檔案，以定義專案範本的行為：
 
-- *AssemblyInfo.cs* 或 *AssemblyInfo .vb*
+- *AssemblyInfo .cs* 或 *AssemblyInfo .vb*
 
 - *Elements.xml*
 
@@ -241,9 +241,9 @@ ms.locfileid: "99918727"
 
   在下列程式中，您會將可取代的參數新增至其中一些檔案。 可取代的參數是以貨幣符號 ($) 字元開頭和結尾的標記。 當使用者使用此專案範本建立專案時，Visual Studio 會自動將新專案中的這些參數取代為特定值。 如需詳細資訊，請參閱可 [取代的參數](../sharepoint/replaceable-parameters.md)。
 
-#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>編輯 AssemblyInfo.cs 或 AssemblyInfo .vb 檔案
+#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>編輯 AssemblyInfo .cs 或 AssemblyInfo .vb 檔案
 
-1. 在 SiteColumnProjectTemplate 專案中，開啟 *AssemblyInfo.cs* 或 *AssemblyInfo .vb* 檔案，然後將下列語句加入至它的頂端：
+1. 在 SiteColumnProjectTemplate 專案中，開啟 *AssemblyInfo .cs* 或 *AssemblyInfo .vb* 檔案，然後將下列語句加入至它的頂端：
 
     ```vb
     Imports System.Security

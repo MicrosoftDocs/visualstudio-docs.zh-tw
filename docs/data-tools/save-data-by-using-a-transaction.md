@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c633ed01821f500e958d3c7549febc23cf33c09d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c22a0cc9b0b9d37a4d725aa8ce494646e7779f0f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858484"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216068"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>如何：使用交易儲存資料
 
@@ -49,8 +49,8 @@ ms.locfileid: "99858484"
 
 - 加入程式碼，以在包含交易的 using 語句內儲存資料。 下列程式碼示範如何在 using 語句中建立和具現化 <xref:System.Transactions.TransactionScope> 物件：
 
-     [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
-     [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb" id="Snippet11":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs" id="Snippet11":::
 
 ## <a name="see-also"></a>另請參閱
 

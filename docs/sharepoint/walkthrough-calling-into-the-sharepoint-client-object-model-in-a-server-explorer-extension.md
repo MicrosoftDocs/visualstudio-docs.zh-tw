@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a095e9d1e8fc48500bceac06732150a3067e2dd2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dee53642e042c8d4db88bdba7c093f327527798d
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937676"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217017"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>逐步解說：在伺服器總管擴充功能中呼叫 SharePoint 用戶端物件模型
   本逐步解說示範如何在 **伺服器總管** 中，從 [ **sharepoint 連接**] 節點的延伸模組呼叫 sharepoint 用戶端物件模型。 如需有關如何使用 SharePoint 用戶端物件模型的詳細資訊，請參閱 [呼叫 sharepoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
@@ -166,8 +166,8 @@ ms.locfileid: "99937676"
     > [!NOTE]
     > 加入此程式碼之後，專案會有一些編譯錯誤。 當您在後續步驟中新增程式碼時，這些錯誤就會消失。
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb" id="Snippet1":::
 
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>定義代表網頁元件的節點類型
  建立類別，以定義代表 Web 元件的新節點類型。 Visual Studio 使用這個新的節點類型，在 [ **網頁元件庫** ] 節點下顯示子節點。 每個子節點都代表 SharePoint 網站上的單一網頁元件。
@@ -178,8 +178,8 @@ ms.locfileid: "99937676"
 
 1. 將下列程式碼貼入 **WebPartNodeExtension** 專案的 **WebPartNodeTypeProvider** 程式碼檔案中。
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb" id="Snippet2":::
 
 ## <a name="checkpoint"></a>Checkpoint
  在本逐步解說的這個階段中， **Web 元件庫** 節點的所有程式碼現在都位於專案中。 建立 **WebPartNodeExtension** 專案，以確定它會進行編譯而不會發生錯誤。

@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8b5228d463bebf7ed57c68cbcf16a1d767d94917
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6e1046dfd114e4cad69445b8f4e1432c03aac0e5
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858666"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216458"
 ---
 # <a name="insert-new-records-into-a-database"></a>在資料庫中插入新的記錄
 
@@ -52,8 +52,8 @@ Tableadapter 會根據您的應用程式需求提供不同的方式，將新的�
 
    下列程式碼示範如何將新記錄加入至 <xref:System.Data.DataTable> ，然後呼叫 `TableAdapter.Update` 方法將新的資料列儲存至資料庫。  (此範例使用 `Region` Northwind 資料庫中的資料表。 ) 
 
-   [!code-vb[VbRaddataSaving#14](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_1.vb)]
-   [!code-csharp[VbRaddataSaving#14](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_1.cs)]
+   :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb" id="Snippet14":::
+   :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs" id="Snippet14":::
 
 ### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>使用 TableAdapter. Insert 方法將新的記錄插入資料庫
 
@@ -66,8 +66,8 @@ Tableadapter 會根據您的應用程式需求提供不同的方式，將新的�
 > [!NOTE]
 > 如果您沒有可用的實例，請將您想要使用的 TableAdapter 具現化。
 
-[!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_2.vb)]
-[!code-csharp[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_2.cs)]
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb" id="Snippet15":::
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs" id="Snippet15":::
 
 ## <a name="insert-new-records-by-using-command-objects"></a>使用命令物件插入新的記錄
 
@@ -79,8 +79,8 @@ Tableadapter 會根據您的應用程式需求提供不同的方式，將新的�
 
 下列範例示範如何使用 command 物件將記錄插入資料庫中。 它會將資料插入 `Region` Northwind 資料庫中的資料表。
 
-[!code-vb[VbRaddataSaving#16](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_3.vb)]
-[!code-csharp[VbRaddataSaving#16](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_3.cs)]
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb" id="Snippet16":::
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs" id="Snippet16":::
 
 ## <a name="net-security"></a>.NET 安全性
 

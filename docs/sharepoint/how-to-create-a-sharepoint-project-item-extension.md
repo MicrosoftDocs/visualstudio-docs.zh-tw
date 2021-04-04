@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f55eb3ba06f2541bf1f4777c24927993444c6b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f01d3c15490a19c8cb5071cf7677fcf2b2a5384
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873602"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216614"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>如何：建立 SharePoint 專案專案延伸模組
   當您想要將功能加入至已安裝在 Visual Studio 中的 SharePoint 專案專案時，請建立專案專案延伸模組。 如需詳細資訊，請參閱 [擴充 SharePoint 專案專案](../sharepoint/extending-sharepoint-project-items.md)。
@@ -49,8 +49,8 @@ ms.locfileid: "99873602"
 ## <a name="example"></a>範例
  下列程式碼範例示範如何建立事件接收器專案專案的簡單擴充。 每次使用者將事件接收器專案專案加入至 SharePoint 專案時，此延伸模組會將訊息寫入至 [ **輸出** ] 視窗和 [ **錯誤清單** ] 視窗。
 
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemextension.cs#1)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemextension.vb#1)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemextension.cs" id="Snippet1":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemextension.vb" id="Snippet1":::
 
  這個範例會使用 SharePoint 專案服務，將訊息寫入 [ **輸出** ] 視窗和 [ **錯誤清單** ] 視窗。 如需詳細資訊，請參閱 [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)。
 

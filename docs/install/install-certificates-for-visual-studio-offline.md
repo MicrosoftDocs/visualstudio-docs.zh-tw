@@ -1,7 +1,7 @@
 ---
 title: 安裝離線安裝的憑證
 description: 了解如何安裝 Visual Studio 離線安裝的憑證。
-ms.date: 08/08/2019
+ms.date: 03/29/2021
 ms.custom: seodec18, SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 54ab09809b99c18977125a124bc53d50d3d6c90c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d8441b0a4b8acba3f24f60d5ea8dc7030b79253
+ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941550"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105981286"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 
 因為許多元件都會定期更新，所以 Visual Studio 主要設計成安裝在連線到網際網路的電腦上。 不過，透過一些額外的步驟，就可能在沒有可運作之網際網路連線的環境部署 Visual Studio。
 
-Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法是檢查要下載之內容的 Authenticode 簽章，並在安裝前驗證所有內容是否受信任。 如此可讓您的環境安全不受到入侵下載位置的攻擊。 Visual Studio 安裝程式因此需要在使用者的電腦上安裝數個標準的 Microsoft 根和中繼憑證，並且要是最新狀態。 如果已使用 Windows Update 將電腦保持在最新狀態，簽署憑證通常會是最新的。 如果將電腦連線到網際網路，在 Visual Studio 安裝期間可能會視需要重新整理憑證，以驗證檔案簽章。 如果電腦已離線，則必須透過其他方式來重新整理憑證。
+Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法是檢查要下載之內容的 Authenticode 簽章，並在安裝前驗證所有內容是否受信任。 如此可讓您的環境安全不受到入侵下載位置的攻擊。 因此 Visual Studio 安裝程式需要在使用者的電腦上安裝數個標準的 Microsoft 根和中繼憑證，並將其更新為最新狀態。 如果已使用 Windows Update 將電腦保持在最新狀態，簽署憑證通常會是最新的。 如果將電腦連線到網際網路，在 Visual Studio 安裝期間可能會視需要重新整理憑證，以驗證檔案簽章。 如果電腦已離線，則必須透過其他方式來重新整理憑證。
 
 ## <a name="how-to-refresh-certificates-when-offline"></a>如何在離線時重新整理憑證
 
@@ -36,7 +36,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 
 ::: moniker range="vs-2017"
 
-當您建立網路配置時，會將必要的憑證下載至 Certificates 資料夾。 您接著可以按兩下每個憑證檔案，然後點選完成 [憑證管理員精靈]，以手動安裝憑證。 如果要求您輸入密碼，請保留空白。
+當您建立 [網路](../install/create-a-network-installation-of-visual-studio.md) 配置或 [本機離線](../install/create-an-offline-installation-of-visual-studio.md)快取時，會將必要的憑證下載至 [憑證] 資料夾。 您接著可以按兩下每個憑證檔案，然後點選完成 [憑證管理員精靈]，以手動安裝憑證。 如果要求您輸入密碼，請保留空白。
 
 **更新**：針對 Visual Studio 2017 15.8 版 Preview 2 或更新版本，您透過能以滑鼠右鍵按一下每個憑證檔案、選取 [安裝憑證] 並按一下 [憑證管理員] 中的適當按鈕，以手動安裝憑證。
 
@@ -44,7 +44,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 
 ::: moniker range="vs-2019"
 
-當您建立網路配置時，會將必要的憑證下載至 Certificates 資料夾。 您可以用滑鼠右鍵按一下每個憑證檔案、選取 [安裝憑證]，然後逐一完成 [憑證管理員精靈] 來手動安裝憑證。 如果要求您輸入密碼，請保留空白。
+當您建立 [網路](../install/create-a-network-installation-of-visual-studio.md) 配置或 [本機離線](../install/create-an-offline-installation-of-visual-studio.md)快取時，會將必要的憑證下載至 [憑證] 資料夾。 您可以用滑鼠右鍵按一下每個憑證檔案、選取 [安裝憑證]，然後逐一完成 [憑證管理員精靈] 來手動安裝憑證。 如果要求您輸入密碼，請保留空白。
 
 ::: moniker-end
 
@@ -56,34 +56,16 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 
 如果您撰寫指令碼，在離線環境中將 Visual Studio 部署至用戶端工作站，您應該遵循下列步驟：
 
-::: moniker range="vs-2017"
-
-1. 將[憑證管理員工具](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) 複製到安裝共用 (例如 \\server\share\vs2017)。 Certmgr.exe 不包含為 Windows 本身的一部分，但提供於 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 中。
+1. 將 [憑證管理員工具](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) 複製到網路設定或本機快取安裝位置。 Certmgr.exe 不包含為 Windows 本身的一部分，但提供於 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 中。
 
 2. 使用下列命令建立批次檔：
-
-   ```cmd
-   certmgr.exe -add -c certificates\manifestSignCertificates.p12 -n "Microsoft Code Signing PCA 2011" -s -r LocalMachine CA
-
-   certmgr.exe -add -c certificates\manifestSignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-
-   certmgr.exe -add -c certificates\manifestCounterSignCertificates.p12 -n "Microsoft Time-Stamp PCA 2010" -s -r LocalMachine CA
-
-   certmgr.exe -add -c certificates\manifestCounterSignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-
-   certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Code Signing PCA" -s -r LocalMachine CA
-
-   certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-   ```
-
-   **更新**：針對 Visual Studio 2017 15.8 版 Preview 2 或更新版本，使用下列命令建立批次檔：
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
 
    certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
 
-   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
    ```
    
    或是使用以下命令，來建立使用 certutil.exe (隨附於 Windows) 的批次檔：
@@ -97,78 +79,15 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
    ```
 
 3. 將批次檔部署至用戶端。 此命令應該從提升權限的程序執行。
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-1. 將[憑證管理員工具](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) 複製到安裝共用 (例如 \\server\share\vs2019)。 Certmgr.exe 不包含為 Windows 本身的一部分，但提供於 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 中。
-
-2. 使用下列命令建立批次檔：
-
-   ```cmd
-   certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
-
-   certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
-
-   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-   ```
-   
-   或是使用以下命令，來建立使用 certutil.exe (隨附於 Windows) 的批次檔：
-   
-      ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
-
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
-
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
-   ```
-
-3. 將批次檔部署至用戶端。 此命令應該從提升權限的程序執行。
-
-::: moniker-end
 
 ## <a name="what-are-the-certificates-files-in-the-certificates-folder"></a>Certificates 資料夾中的憑證檔案是什麼？
 
-::: moniker range="vs-2017"
-
-此資料夾中的三個 .P12 檔都包含中繼憑證和根憑證。 使用 Windows Update 維持最新狀態的大部分系統都已經安裝這些憑證。
-
-* **ManifestSignCertificates.p12** 包含：
-  * 中繼憑證：**Microsoft 程式碼簽署 PCA 2011**
-    * 不需要。 如果有的話，可改善某些案例的效能。
+* **manifestRootCertificate .cer** 包含：
   * 根憑證：**Microsoft 根憑證授權單位 2011**
-    * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
-* **ManifestCounterSignCertificates.p12** 包含：
-  * 中繼憑證：**Microsoft 時間戳記 PCA 2010**
-    * 不需要。 如果有的話，可改善某些案例的效能。
+* **manifestCounterSignRootCertificate .cer** 及 **vs_installer_opc。RootCertificate .cer** 包含：
   * 根憑證：**Microsoft 根憑證授權單位 2010**
-    * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
-* **Vs_installer_opc.SignCertificates.p12** 包含：
-  * 中繼憑證：**Microsoft 程式碼簽署 PCA**
-    * 所有系統都需要。 請注意，從 Windows Update 套用所有更新的系統可能沒有此憑證。
-  * 根憑證：**Microsoft 根憑證授權單位**
-    * 必要。 此憑證隨附於執行 Windows 7 或更新版本的系統。
-
-**更新**：針對 Visual Studio 2017 15.8 版 Preview 2 或更新版本，Visual Studio 安裝程式只要求系統上必須安裝根憑證。 這些憑證會儲存在 .cer 檔案中，而不是在 .p12 中。
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-* **ManifestSignCertificates.cer** 包含：
-  * 根憑證：**Microsoft 根憑證授權單位 2011**
-    * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
-* **ManifestCounterSignCertificates.cer** 包含：
-  * 根憑證：**Microsoft 根憑證授權單位 2010**
-    * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
-* **Vs_installer_opc.SignCertificates.cer** 包含：
-  * 根憑證：**Microsoft 根憑證授權單位**
-    * 必要。 此憑證隨附於執行 Windows 7 或更新版本的系統。
-
-Visual Studio 安裝程式只要求系統上必須安裝根憑證。
-
-::: moniker-end
+ 
+Visual Studio 安裝程式只要求系統上必須安裝根憑證。 未安裝最新 Windows 更新的 Windows 7 Service Pack 1 系統都需要這些憑證。
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>為何不會自動安裝來自 Certificates 資料夾的憑證？
 
@@ -199,13 +118,14 @@ Visual Studio 安裝程式只要求系統上必須安裝根憑證。
 
 ## <a name="install-visual-studio"></a>安裝 Visual Studio
 
-在您安裝憑證之後，可以使用＜建立 Visual Studio 的網路安裝＞頁面之[從網路安裝部署](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation)一節中的指示，繼續部署 Visual Studio。
+在用戶端電腦上安裝憑證之後，您就可以 [從本機快取安裝 Visual Studio](../install/create-an-offline-installation-of-visual-studio.md#step-3---install-visual-studio-from-the-local-cache)，或 [從網路設定共用將 Visual Studio 部署](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) 到用戶端電腦。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝 Visual Studio](install-visual-studio.md)
+* [建立 Visual Studio 的網路安裝](../install/create-a-network-installation-of-visual-studio.md)
+* [建立 Visual Studio 的離線安裝](../install/create-an-offline-installation-of-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
+

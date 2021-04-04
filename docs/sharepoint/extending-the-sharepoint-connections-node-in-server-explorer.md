@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9c10c2bc69086e3c98633ba746c1e6fc8d7f2a20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f77e0044b8ae3c7456a31bb9c9153ba9e9f4c99
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889690"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218031"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>擴充伺服器總管中的 [SharePoint 連接] 節點
   在 Visual Studio 中，您可以使用 [**伺服器總管**] 視窗中的 [ **SharePoint 連接**] 節點連接到開發電腦上的本機 SharePoint 網站。 此節點會以階層式樹狀檢視顯示本機 SharePoint 網站的許多元件。 例如，您可以在本機網站上查看清單、文件庫和內容類型。 如需使用 **伺服器總管** 連接到本機 SharePoint 網站的詳細資訊，請參閱 [使用伺服器總管流覽 SharePoint 連接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)。
@@ -50,8 +50,8 @@ ms.locfileid: "99889690"
 
  下列程式碼範例示範如何取得清單節點的資料物件。 若要在較大範例的內容中查看這個範例，請參閱 [如何：在伺服器總管中取得內建 SharePoint 節點的資料](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md)。
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#11)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#11)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb" id="Snippet11":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs" id="Snippet11":::
 
  下表列出每個內建節點類型的資料物件類型。
 

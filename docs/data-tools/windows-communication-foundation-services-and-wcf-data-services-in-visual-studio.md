@@ -37,12 +37,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb5ace269d7770d0e7d360734268d3e7adfda319
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45ff4336859fe0294232e9ca1d99513665d8e975
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866121"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216471"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 
@@ -64,13 +64,13 @@ WCF 程式設計模型是以兩個實體（WCF 服務和 WCF 用戶端）之間�
 
 WCF 服務是以定義服務與用戶端之間合約的介面為基礎。 它會以屬性標記 <xref:System.ServiceModel.ServiceContractAttribute> ，如下列程式碼所示：
 
-[!code-csharp[WCFWalkthrough#6](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.cs)]
-[!code-vb[WCFWalkthrough#6](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs" id="Snippet6":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1.vb" id="Snippet6":::
 
 您可以使用屬性來標記 WCF 服務，藉此定義它們所公開的函式或方法 <xref:System.ServiceModel.OperationContractAttribute> 。
 
-[!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.cs)]
-[!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs" id="Snippet1":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1.vb" id="Snippet1":::
 
 此外，您可以藉由將複合類型標示為屬性，來公開序列化的資料 <xref:System.Runtime.Serialization.DataContractAttribute> 。 這樣就可以在用戶端中進行資料系結。
 
@@ -88,8 +88,8 @@ WCF 用戶端所包含的 *proxy* 可讓應用程式與 WCF 服務進行通訊�
 
 建立 WCF 用戶端之後，您可以參考程式碼中的服務，就像處理任何其他物件一樣。 例如，若要呼叫稍 `GetData` 早所示的方法，您可以撰寫類似下面的程式碼：
 
-[!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.cs)]
-[!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/form1.cs" id="Snippet3":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/form1.vb" id="Snippet3":::
 
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio 中的 WCF 工具
 
@@ -113,7 +113,7 @@ WCF Visual Studio 範本提供服務開發的基本類別結構。 [ **加入新
 
 使用 WCF 服務主機，您可以測試 WCF 服務，而不需要撰寫額外的程式碼，或在開發期間認可至特定的主機。
 
-若要深入瞭解 WCF 服務主機，請參閱 [wcf 服務主機 ( # A0) ](/dotnet/framework/wcf/wcf-service-host-wcfsvchost-exe)。
+若要深入瞭解 WCF 服務主機，請參閱 [wcf 服務主機 (WcfSvcHost.exe) ](/dotnet/framework/wcf/wcf-service-host-wcfsvchost-exe)。
 
 #### <a name="wcf-test-client"></a>WCF 測試用戶端
 
@@ -121,7 +121,7 @@ WCF 測試用戶端工具可讓您輸入測試參數、將該輸入提交至 WCF
 
 當您按下 **F5** 以偵測 wcf 服務專案時，WCF 測試用戶端會開啟並顯示設定檔中定義的服務端點清單。 您可以測試參數並啟動服務，然後重複此程式以持續測試及驗證您的服務。
 
-若要深入瞭解 WCF 測試用戶端，請參閱 [wcf 測試用戶端 ( # A0) ](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe)。
+若要深入瞭解 WCF 測試用戶端，請參閱 [wcf 測試用戶端 (WcfTestClient.exe) ](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe)。
 
 ### <a name="accessing-wcf-services-in-visual-studio"></a>存取 Visual Studio 中的 WCF 服務
 

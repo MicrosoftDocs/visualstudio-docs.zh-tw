@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4079fb5be612421bfa4a0b6dc53c3003a1c65e61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 950745a533fbea8d360c8bea6d839a304dd6e0d7
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934880"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216406"
 ---
 # <a name="how-to-add-a-creator-method"></a>如何：新增建立者方法
   建立者方法會將新的資料加入至實體的資料來源。 當使用者在以模型為基礎之清單的 **功能區** 上選擇 [**新增專案**] 按鈕時， (BDC) 服務的商務資料連線會呼叫這個方法。 如需詳細資訊，請參閱 [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -62,8 +62,8 @@ ms.locfileid: "99934880"
    > [!NOTE]
    > 將欄位的值取代為 `ServerName` 您伺服器的名稱。
 
-    [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
-    [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]
+    :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet4":::
+    :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet4":::
 
 ## <a name="see-also"></a>另請參閱
 - [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)

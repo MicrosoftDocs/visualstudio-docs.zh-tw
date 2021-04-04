@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2ced89c73d39fecb6b6cee80a8fddb0a8c2391
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7bb30b26e859708d295a31bd45b310897e4bcaac
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917322"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216991"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說：使用設計工具以 ClickOnce 部署 API 依需求下載元件
 第一次執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，預設會下載應用程式中包含的所有組件。 不過，可能是小部分使用者所使用之應用程式的組件。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 中的類別來如何下載它們。
@@ -46,8 +46,8 @@ ms.locfileid: "99917322"
 
 2. 定義具有單一屬性 `DynamicClass` 的 `Message`類別。
 
-    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.vb)]
-    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs" id="Snippet1":::
 
 3. 在方案總管 中，選取 Windows Forms 專案。 將參考新增至 <xref:System.Deployment.Application> 組件，並將專案參考新增至 `ClickOnceLibrary` 專案。
 
@@ -56,18 +56,18 @@ ms.locfileid: "99917322"
 
 4. 以滑鼠右鍵按一下表單，並從功能表中按一下 [檢視程式碼]  ，然後在表單中新增下列參考。
 
-    [!code-csharp[ClickOnceOnDemand#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.cs)]
-    [!code-vb[ClickOnceOnDemand#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb" id="Snippet1":::
 
 5. 新增下列程式碼，以視需要下載此組件。 此程式碼示範如何使用泛型 <xref:System.Collections.DictionaryBase.Dictionary%2A> 類別將一組組件對應至群組名稱。 因為我們只會下載本逐步解說中的單一組件，所以我們的群組中只會有一個組件。 在實際的應用程式中，您可能會想要同時下載與應用程式中單一功能相關的所有組件。 對應資料表可讓您輕鬆地進行這項作業，方法是將屬於某個功能的所有 DLL 都與下載群組名稱產生關聯。
 
-    [!code-csharp[ClickOnceOnDemand#2](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.cs)]
-    [!code-vb[ClickOnceOnDemand#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs" id="Snippet2":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb" id="Snippet2":::
 
 6. 在 [檢視] 功能表上，按一下 [工具箱]。 將 <xref:System.Windows.Forms.Button> 從 [工具箱]  拖曳至表單。 按兩下按鈕，並將下列程式碼新增至 <xref:System.Windows.Forms.Control.Click> 事件處理常式。
 
-    [!code-csharp[ClickOnceOnDemand#3](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.cs)]
-    [!code-vb[ClickOnceOnDemand#3](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs" id="Snippet3":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb" id="Snippet3":::
 
 ## <a name="mark-assemblies-as-optional"></a>將元件標示為選擇性
 

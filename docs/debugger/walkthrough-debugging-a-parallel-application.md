@@ -1,5 +1,5 @@
 ---
-title: 進行平行應用程式的偵錯工具 |Microsoft 檔
+title: 進行平行應用程式的偵錯工具 |Microsoft Docs
 description: 使用 Visual Studio 中的 [平行工作] 和 [平行堆疊] 視窗進行調試
 ms.date: 02/14/2020
 ms.topic: conceptual
@@ -22,16 +22,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f739ab99f060005f7bbfebc400c424c50ba7d5
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 10f0cd997b9635343837d0e387a6352abf4f60f3
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684136"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218057"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>逐步解說：在 Visual Studio 中進行平行應用程式的偵錯工具 (c #、Visual Basic、c + +) 
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>逐步解說：在 Visual Studio 中 (c #、Visual Basic、c + + 的平行應用程式進行偵錯工具) 
 
-本逐步解說顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來偵錯平行應用程式。 這些視窗可協助您瞭解並驗證使用工作 [平行程式庫 (TPL) ](/dotnet/standard/parallel-programming/task-parallel-library-tpl) 或 [並行運行](/cpp/parallel/concrt/concurrency-runtime)時間的程式碼執行時間行為。 本逐步解說提供具有內建中斷點的範例程式碼。 在程式碼中斷之後，本逐步解說會顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來檢查程式碼。
+本逐步解說顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來偵錯平行應用程式。 這些視窗可協助您瞭解並驗證使用工作 [平行程式庫 (TPL) ](/dotnet/standard/parallel-programming/task-parallel-library-tpl) 或 [並行執行階段](/cpp/parallel/concrt/concurrency-runtime)之程式碼的執行時間行為。 本逐步解說提供具有內建中斷點的範例程式碼。 在程式碼中斷之後，本逐步解說會顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來檢查程式碼。
 
  本逐步解說教導下列工作：
 
@@ -46,7 +46,7 @@ ms.locfileid: "101684136"
 - 視窗如何透過分組、縮放和其他相關功能來處理比例調整。
 
 ## <a name="prerequisites"></a>必要條件
- 本逐步解說假設已啟用 **My Code** (預設會在較新版本的 Visual Studio) 中啟用。 按一下 [工具] 功能表上的 [選項]，展開 [偵錯] 節點，再選取 [一般]，然後選取 [啟用 Just My Code (僅限受授程式碼)]。 如果未設定這項功能，您仍然可以使用本逐步解說，但結果可能與插圖不同。
+ 本逐步解說假設 **Just My Code** 已啟用 (預設會在較新版本的 Visual Studio) 中啟用。 按一下 [工具] 功能表上的 [選項]，展開 [偵錯] 節點，再選取 [一般]，然後選取 [啟用 Just My Code (僅限受授程式碼)]。 如果未設定這項功能，您仍然可以使用本逐步解說，但結果可能與插圖不同。
 
 ## <a name="c-sample"></a>C# 範例
  如果您使用 C# 範例，本逐步解說也會假設外部程式碼已隱藏。 若要切換是否顯示外部程式碼，請以滑鼠右鍵按一下 [呼叫堆疊] 視窗的 [名稱] 表格標題，然後選取或清除 [顯示外部程式碼]。 如果未設定這項功能，您仍然可以使用本逐步解說，但結果可能與插圖不同。
@@ -85,11 +85,11 @@ ms.locfileid: "101684136"
    ::: moniker range="vs-2017"
    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇下列專案：
 
-   - 針對 c # 應用程式，請選擇 [ **Visual c #**] 底下的 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .net Framework)**。
-   - 若為 Visual Basic 應用程式，請在 [ **Visual basic**] 下選擇 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .net Framework)**。
-   - 若是 c + + 應用程式，請選擇 [ **Visual c + +**] 底下的 [ **windows 桌面**]，然後選擇 [ **windows 主控台應用程式**]。
+   - 針對 c # 應用程式，請選擇 [ **Visual c #**] 底下的 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .NET Framework)**]。
+   - 若為 Visual Basic 應用程式，請在 [ **Visual Basic**] 下選擇 [ **Windows 桌面**]，然後在中間窗格中選擇 [ **主控台應用程式 (] .NET Framework)**。
+   - 若是 c + + 應用程式，請在 [ **Visual C++**] 下，選擇 [ **windows 桌面**]，然後選擇 [ **windows 主控台應用程式**]。
 
-   如果您沒有看到 **主控台應用程式 ( .net Core)** 或針對 c + +，**主控台應用** 程式專案範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發** ] 或 [ **使用 c + + 的桌面開發** ] 工作負載，然後選擇 [ **修改**]。
+   如果您沒有看到 **主控台應用程式 ( .net Core)** 或針對 c + +，**主控台應用程式** 專案範本，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.net 桌面開發** ] 或 [ **使用 c + + 的桌面開發** ] 工作負載，然後選擇 [ **修改**]。
 
    然後，輸入名稱或使用預設名稱，然後按一下 **[確定]**。
 
@@ -102,9 +102,9 @@ ms.locfileid: "101684136"
 
 1. 將所選擇語言的下列程式碼貼到空白程式碼檔案中。
 
-   [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
-   [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
-   [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
+   :::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs" id="Snippet1":::
+   :::code language="cpp" source="../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp" id="Snippet1":::
+   :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb" id="Snippet1":::
 
 1. 按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。
 
@@ -234,7 +234,7 @@ ms.locfileid: "101684136"
 
 2. 在 [偵錯] 功能表上，指向 [視窗]，然後按一下 [執行緒]。 將 [執行緒] 視窗停駐在 Visual Studio 底部。
 
-3. 在 [偵錯] 功能表中，指向 [視窗]，然後按一下 [呼叫堆疊]。 將 [ **呼叫堆疊** ] 視窗停駐在 Visual Studio 底部。
+3. 在 [偵錯] 功能表中，指向 [視窗]，然後按一下 [呼叫堆疊]。 將 [ **呼叫堆疊** ] 視窗停駐在 Visual Studio 的底部。
 
 4. 按兩下 [執行緒] 視窗中的執行緒，使它成為目前執行緒。 目前執行緒具有黃色箭號。 當您變更目前執行緒時，其他視窗會隨之更新。 我們接下來檢查工作。
 
@@ -322,7 +322,7 @@ ms.locfileid: "101684136"
 
      您可以凍結一項或多項工作的基礎執行緒，也可以凍結指派的執行緒除外的所有執行緒。 凍結的執行緒會 **在 [** 工作 **] 視窗** 中以藍色 *暫停* 圖示呈現。
 
-## <a name="summary"></a>摘要
+## <a name="summary"></a>總結
  本逐步解說示範 [平行工作] 和 [平行堆疊] 偵錯工具視窗。 請在使用多執行緒程式碼的實際專案上使用這些視窗。 您可以檢查以 C++、C# 或 Visual Basic 撰寫的平行程式碼。
 
 ## <a name="see-also"></a>另請參閱

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8d42726cddb0565af66e161b41c16c94cfe2cb2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77c80134ad63346b363c072ef2eff7e49978501f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839132"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217927"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>逐步解說：建立 SharePoint 專案的自訂部署步驟
   當您部署 SharePoint 專案時，Visual Studio 會依特定循序執行一系列的部署步驟。 Visual Studio 包含許多內建的部署步驟，但您也可以建立自己的部署步驟。
@@ -151,8 +151,8 @@ ms.locfileid: "99839132"
     > [!NOTE]
     > 當您加入此程式碼之後，專案將會有一些編譯錯誤，但是當您在後續步驟中新增程式碼時，就會消失。
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb" id="Snippet1":::
 
 ## <a name="create-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>建立包含自訂部署步驟的部署設定
  建立新部署設定的專案擴充功能，其中包含數個內建的部署步驟和新的升級部署步驟。 藉由建立此延伸模組，您可以説明 SharePoint 開發人員在 SharePoint 專案中使用升級部署步驟。
@@ -163,8 +163,8 @@ ms.locfileid: "99839132"
 
 1. 在 **DeploymentStepExtension** 專案中，開啟 DeploymentConfigurationExtension 程式碼檔案，然後將下列程式碼貼入其中。
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb" id="Snippet2":::
 
 ## <a name="create-the-custom-sharepoint-commands"></a>建立自訂 SharePoint 命令
  建立兩個自訂命令，以呼叫 SharePoint 的伺服器物件模型。 一個命令可判斷是否已部署解決方案;另一個命令會升級方案。
@@ -173,8 +173,8 @@ ms.locfileid: "99839132"
 
 1. 在 **SharePointCommands** 專案中，開啟命令程式碼檔，然後將下列程式碼貼入其中。
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb" id="Snippet4":::
 
 ## <a name="checkpoint"></a>Checkpoint
  在本逐步解說的這個階段中，自訂部署步驟和 SharePoint 命令的所有程式碼現在都位於專案中。 建立它們，以確保它們在沒有錯誤的情況下進行編譯。

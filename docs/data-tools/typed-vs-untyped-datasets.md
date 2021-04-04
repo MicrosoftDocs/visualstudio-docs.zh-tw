@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e4853dfbffdf07d3b605b13c5fce749a30285c27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: daf4f722eb51a08e7a6ddb287e5b54956ecdfe73
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866329"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216016"
 ---
 # <a name="typed-vs-untyped-datasets"></a>具類型資料集與不具類型資料集的比較
 具型別資料集是第一個衍生自基類的資料集， <xref:System.Data.DataSet> 然後使用儲存在 .xsd 檔中 **DataSet 設計工具** 的資訊來產生新的強型別資料集類別。 架構 (資料表、資料行等等) 的資訊會產生並編譯成這個新的資料集類別，做為一組第一級的物件和屬性。 由於具型別資料集繼承自基類，因此具型別 <xref:System.Data.DataSet> 類別會假設類別的所有功能， <xref:System.Data.DataSet> 而且可以與採用類別實例作為參數的方法搭配使用 <xref:System.Data.DataSet> 。
@@ -28,13 +28,13 @@ ms.locfileid: "99866329"
 ## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>具類型與不具類型資料集的資料存取對比
 具類型資料集的類別具有物件模型，其中的屬性會採用資料表和資料行的實際名稱。 例如，如果您使用具類型的資料集，您可以使用下列程式碼來參考資料行：
 
-[!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]
-[!code-vb[VbRaddataDatasets#4](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet4":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet4":::
 
 相反地，如果您使用不具類型的資料集，則對等的程式碼為：
 
-[!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
-[!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet5":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet5":::
 
 具型別存取不僅容易閱讀，而且 IntelliSense 在 Visual Studio 程式 **代碼編輯器** 中也受到完整支援。 除了更容易使用之外，具型別資料集的語法也會在編譯時期提供型別檢查，大幅減少將值指派給資料整合員的可能錯誤。 如果您在類別中變更資料行的名稱， <xref:System.Data.DataSet> 然後編譯您的應用程式，則會收到組建錯誤。 按兩下 **工作清單** 中的組建錯誤，即可直接移至參考舊資料行名稱的程式程式碼或程式程式碼。 在執行時間，存取具型別資料集的資料表和資料行也會稍微快一點，因為存取是在編譯時期決定，而不是在執行時間透過集合來決定。
 

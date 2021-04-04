@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75800c5a2b5ff62addec3c914905ae67ac171b95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f4b174e10eae63044c547d8ed87c46db03d23c6
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866576"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216042"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>將資料儲存至資料庫 (多個資料表)
 
@@ -133,8 +133,8 @@ ms.locfileid: "99866576"
 
 2. 替換事件處理常式中的程式碼，以呼叫相關 TableAdapters 的 `Update` 方法。 下列程式碼會先建立三個暫存資料表，以保留 <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>、<xref:System.Data.DataRowState.Added> 及 <xref:System.Data.DataRowState.Modified>) 的更新資訊。 更新會以正確的循序執行。 程式碼看起來應該如下所示：
 
-     [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
-     [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form4.vb" id="Snippet10":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form4.cs" id="Snippet10":::
 
 ## <a name="test-the-application"></a>測試應用程式
 

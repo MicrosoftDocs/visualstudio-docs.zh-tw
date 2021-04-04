@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 59c468e28321c01993cd2f4b119218fb29bc6020
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6ebcb455147b1cb014eb7aafc9f6a9e658e0131
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917321"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217004"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：使用 ClickOnce 部署 API 依需求下載附屬元件
 透過使用附屬組件，Windows Forms 應用程式可以設定為適用多個文化特性。 *「附屬組件」* (Satellite Assembly) 為包含文化特性 (除了應用程式的預設文化特性以外) 之應用程式資源的組件。
@@ -47,8 +47,8 @@ ms.locfileid: "99917321"
 
 1. 將下列程式碼加入您的應用程式，以便能夠隨需下載附屬組件。
 
-    [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
-    [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/CS/Program.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/VB/Form1.vb" id="Snippet1":::
 
 2. 使用 [Resgen.exe (資源檔 ](/dotnet/framework/tools/resgen-exe-resource-file-generator) 產生器) 或，為您的應用程式產生附屬元件 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
 

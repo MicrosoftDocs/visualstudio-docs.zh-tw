@@ -11,12 +11,12 @@ manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: be270fe8b76b6cd07bd27350eabceb5eecbc446b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2f7dddfca06d7bc475286c73087828305464daa5
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078327"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217212"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>逐步解說：在起始頁儲存使用者設定
 
@@ -83,7 +83,7 @@ ms.locfileid: "105078327"
 
 2. 將下列指示詞新增 `using` 至檔案頂端。
 
-     [!code-csharp[StartPageDTE#11](../extensibility/codesnippet/CSharp/walkthrough-saving-user-settings-on-a-start-page_1.cs)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/startpagedte/cs/startpagecontrol/mycontrol.xaml.cs" id="Snippet11":::
 
 3. 新增私用 `SettingsStore` 屬性，如下列範例所示。
 

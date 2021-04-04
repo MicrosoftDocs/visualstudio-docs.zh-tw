@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f94a93e8797922ef7629853e8261383984bb3ef9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16e7070769edf3ee65ee425a7f9cb5062da315cd
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885621"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216822"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>如何：定義 SharePoint 專案專案類型
   當您想要建立自訂 SharePoint 專案專案時，請定義專案專案類型。 如需詳細資訊，請參閱 [定義自訂 SharePoint 專案專案類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)。
@@ -51,8 +51,8 @@ ms.locfileid: "99885621"
 ## <a name="example"></a>範例
  下列程式碼範例示範如何定義簡單的專案專案類型。 當使用者將此類型的專案專案加入至專案時，這個專案專案類型會將訊息寫入至 [ **輸出** ] 視窗和 [ **錯誤清單** ] 視窗。
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#2](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemtype.vb#2)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#2](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemtype.cs#2)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemtype.vb" id="Snippet2":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemtype.cs" id="Snippet2":::
 
  這個範例會使用 SharePoint 專案服務，將訊息寫入 [ **輸出** ] 視窗和 [ **錯誤清單** ] 視窗。 如需詳細資訊，請參閱 [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)。
 

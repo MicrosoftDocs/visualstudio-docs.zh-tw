@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8037b8d19bad19485e9ed8f7926e6a3e45b8fef1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47c17c66a1def3c3fa774437825fe15b3f9ff534
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866901"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216276"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 TableAdapter 填入資料集
 
@@ -56,8 +56,8 @@ Tableadapter 是由設計工具產生的元件，可連接到資料庫、執行�
 
 雖然 Tableadapter 是使用 **DataSet 設計工具** 所設計，但 TableAdapter 類別不會產生為的嵌套類別  <xref:System.Data.DataSet> 。 它們位於個別的命名空間中，每個資料集都有特定的命名空間。 例如，如果您有一個名為的資料集 `NorthwindDataSet` ，則中與的相關聯的 tableadapter 會  <xref:System.Data.DataTable> `NorthwindDataSet` 在 `NorthwindDataSetTableAdapters` 命名空間中。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新實例。 例如：
 
-[!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
-[!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Class1.cs" id="Snippet7":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb" id="Snippet7":::
 
 ## <a name="associated-datatable-schema"></a>相關聯的 DataTable 架構
 

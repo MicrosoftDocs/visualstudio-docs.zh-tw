@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 748d9f5932f93261bc991f0d8af43728b8e5ce02
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7ae131026a94fa368d55bad1d8cd2164b6f960b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917286"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216926"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>逐步解說：為 ClickOnce 應用程式建立自訂安裝程式
 任何以 *.exe* 檔案為基礎的 ClickOnce 應用程式，都可以透過自訂安裝程式以無訊息方式安裝和更新。 自訂安裝程式可以在安裝期間執行自訂的使用者體驗，包括安全性和維護作業的自訂對話方塊。 若要執行安裝作業，自訂安裝程式會使用 <xref:System.Deployment.Application.InPlaceHostingManager> 類別。 本逐步解說示範如何建立以無訊息方式安裝 ClickOnce 應用程式的自訂安裝程式。
@@ -57,8 +57,8 @@ ms.locfileid: "99917286"
     > [!NOTE]
     > 預先信任所指派的許可權不能超過自訂安裝程式程式碼的許可權。
 
-     [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
-     [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs" id="Snippet1":::
 
 5. 若要從您的程式碼嘗試安裝，請呼叫 `InstallApplication` 方法。 例如，如果您將類別命名為 `MyInstaller` ，您可能會 `InstallApplication` 以下列方式呼叫。
 

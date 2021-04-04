@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c70a3458a8f54cc4437e00517445917cf92f6aa1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0692b676ec701b40edd12d1634ab9cdf419f85f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901038"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217719"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>逐步解說：部署專案工作清單定義
 
@@ -77,8 +77,8 @@ ms.locfileid: "99901038"
 
 6. 將程式碼加入至 `ItemAdded` **ProjectTaskListEventReceiver** 程式碼檔中的方法。 每次新增工作時，就會在工作中加入預設的到期日和描述。 預設的到期日為2009年7月1日。
 
-     [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
-     [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs" id="Snippet1":::
 
 ## <a name="customize-the-project-task-list-feature"></a>自訂專案工作清單功能
 
