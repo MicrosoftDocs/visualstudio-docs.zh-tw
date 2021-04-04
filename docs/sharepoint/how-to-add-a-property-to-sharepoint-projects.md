@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cde9235ffb7c692240c8f16ea0e93f49c79f002e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7be241dd4a043b8104c628e73f98e8881dc8b88b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934867"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215418"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何：將屬性加入至 SharePoint 專案
   您可以使用專案延伸模組，將屬性加入至任何 SharePoint 專案。 當您在 **方案總管** 中選取專案時，屬性會出現在 [**屬性**] 視窗中。
@@ -39,8 +39,8 @@ ms.locfileid: "99934867"
 ## <a name="example"></a>範例
  下列程式碼範例示範如何將兩個屬性加入至 SharePoint 專案。 其中一個屬性會將其資料保存在專案使用者選項檔 (*.csproj. 使用者* 檔案或 *vbproj* 檔案) 。 另一個屬性會將其資料保存在專案檔中， (*.csproj* 檔案或 *vbproj* 檔案) 。
 
- [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
- [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb" id="Snippet1":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs" id="Snippet1":::
 
 ### <a name="understand-the-code"></a>了解程式碼
  為了確保 `CustomProjectProperties` 每次發生事件時都會使用相同的類別實例 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> ，程式碼範例 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 會在第一次發生此事件時，將屬性物件加入至專案的屬性。 每當此事件再次發生時，程式碼就會抓取此物件。 如需使用 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 屬性將資料與專案產生關聯的詳細資訊，請參閱 [將自訂資料與 SharePoint 工具延伸模組建立關聯](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。

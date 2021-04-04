@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9446fa0edb9302d4032f19f23c8adb8747d9cc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 140700615759404f02109c4506f4c27d083a74b1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859303"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215535"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>將物件系結為 Visual Studio 中的資料來源
 
@@ -69,8 +69,8 @@ Visual Studio 提供可在應用程式中使用自訂物件作為資料來源的
 
 下列範例顯示如何在資料表的資料列中執行迴圈，並以資料填入物件：
 
-[!code-csharp[VbRaddataConnecting#4](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_1.cs)]
-[!code-vb[VbRaddataConnecting#4](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Form1.cs" id="Snippet4":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Form1.vb" id="Snippet4":::
 
 ### <a name="create-a-typed-collection-of-objects"></a>建立物件的具類型集合
 
@@ -85,8 +85,8 @@ Visual Studio 提供可在應用程式中使用自訂物件作為資料來源的
 
 下列程式碼將示範如何建立物件之強型別集合的類別 `Order` ：
 
-[!code-csharp[VbRaddataConnecting#8](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_2.cs)]
-[!code-vb[VbRaddataConnecting#8](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs" id="Snippet8":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb" id="Snippet8":::
 
 ### <a name="add-objects-to-a-collection"></a>將物件加入至集合
 
@@ -97,16 +97,16 @@ Visual Studio 提供可在應用程式中使用自訂物件作為資料來源的
 
 下列程式碼示範如何將物件加入至中的具類型集合 <xref:System.Windows.Forms.BindingSource> ：
 
-[!code-csharp[VbRaddataConnecting#5](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_3.cs)]
-[!code-vb[VbRaddataConnecting#5](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_3.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs" id="Snippet5":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb" id="Snippet5":::
 
 下列程式碼示範如何將物件加入至繼承自的類型集合 <xref:System.ComponentModel.BindingList%601> ：
 
 > [!NOTE]
 > 在此範例中， `Orders` 集合是物件的屬性 `Customer` 。
 
-[!code-csharp[VbRaddataConnecting#6](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_4.cs)]
-[!code-vb[VbRaddataConnecting#6](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_4.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs" id="Snippet6":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb" id="Snippet6":::
 
 ### <a name="remove-objects-from-a-collection"></a>從集合中移除物件
 
@@ -117,8 +117,8 @@ Visual Studio 提供可在應用程式中使用自訂物件作為資料來源的
 
 下列程式碼示範如何使用方法，在中從具類型的集合尋找和移除物件 <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> ：
 
-[!code-csharp[VbRaddataConnecting#7](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_5.cs)]
-[!code-vb[VbRaddataConnecting#7](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_5.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs" id="Snippet7":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb" id="Snippet7":::
 
 ### <a name="display-object-data-to-users"></a>向使用者顯示物件資料
 
@@ -136,7 +136,7 @@ Visual Studio 提供可在應用程式中使用自訂物件作為資料來源的
 
 Visual Studio 會建立可以直接對資料庫執行的 DBDirect 方法。 這些方法不需要 DataSet 或 DataTable 物件。
 
-|TableAdapter DBDirect 方法|Description|
+|TableAdapter DBDirect 方法|描述|
 | - |-----------------|
 |`TableAdapter.Insert`|將新的記錄加入至資料庫，讓您以方法參數的形式傳入個別的資料行值。|
 |`TableAdapter.Update`|更新資料庫中的現有記錄。 Update 方法會採用原始和新的資料行值做為方法參數。 原始值會用來尋找原始記錄，而新的值會用來更新該記錄。<br /><br /> `TableAdapter.Update`方法也可用來將 <xref:System.Data.DataSet> 、 <xref:System.Data.DataTable> 、 <xref:System.Data.DataRow> 或的陣列 <xref:System.Data.DataRow> 視為方法參數，以將資料集的變更重新協調回資料庫。|
@@ -146,8 +146,8 @@ Visual Studio 會建立可以直接對資料庫執行的 DBDirect 方法。 這�
 
 下列範例示範如何使用 `TableAdapter.Insert` DBDirect 方法，將新的客戶直接新增至資料庫中：
 
-[!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
-[!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs" id="Snippet23":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb" id="Snippet23":::
 
 ## <a name="see-also"></a>另請參閱
 

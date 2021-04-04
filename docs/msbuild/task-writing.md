@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f13d561cba0482e15f065e66200b51c8b77ddfd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0db9504404142e5bfdd17a66471820ddad790130
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966015"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214547"
 ---
 # <a name="task-writing"></a>工作撰寫
 
@@ -174,7 +174,7 @@ MSBuild 會以原生方式處理型別 `string` 、和的屬性 `bool` `ITaskIte
 
 ## <a name="example-1"></a>範例 1
 
-### <a name="description"></a>Description
+### <a name="description"></a>描述
 
 下列 c # 類別示範衍生自 <xref:Microsoft.Build.Utilities.Task> helper 類別的工作。 此工作會傳回 `true`，指出是否成功。
 
@@ -199,7 +199,7 @@ namespace SimpleTask1
 
 ## <a name="example-2"></a>範例 2
 
-### <a name="description"></a>Description
+### <a name="description"></a>描述
 
 下列 c # 類別示範執行介面的工作 <xref:Microsoft.Build.Framework.ITask> 。 此工作會傳回 `true`，指出是否成功。
 
@@ -235,17 +235,17 @@ namespace SimpleTask2
 
 ## <a name="example-3"></a>範例 3
 
-### <a name="description"></a>Description
+### <a name="description"></a>描述
 
 這個 c # 類別會示範衍生自 <xref:Microsoft.Build.Utilities.Task> helper 類別的工作。 它具有必要的字串屬性，會引發所有已註冊記錄器顯示的事件。
 
 ### <a name="code"></a>程式碼
 
-[!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleTask3/CS/SimpleTask3.cs" id="Snippet1":::
 
 ## <a name="example-4"></a>範例 4
 
-### <a name="description"></a>Description
+### <a name="description"></a>描述
 
 下例示範的專案檔會叫用前一個範例的工作：SimpleTask3。
 

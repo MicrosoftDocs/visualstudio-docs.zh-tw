@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f69a87d923eebaea03c9c8a38496c4c379db8aba
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868877"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214209"
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名按鈕控制項
 
@@ -43,15 +43,15 @@ ms.locfileid: "99868877"
 1. 將其他三個按鈕分別重新命名為 **backgroundButton**、 **clearButton** 和 **showButton**。
 您可以選擇 [屬性]  視窗中的控制項選取器下拉式清單，以驗證這些名稱。 新按鈕名稱隨即出現。
 
-1. 按兩下表單上的 [顯示圖片]  按鈕。 或者，您也可以選擇表單上的 [ **顯示圖片** ] 按鈕，然後按下 **enter** 鍵。 當您這樣做時，IDE 會在主視窗中開啟名為 **Form1.cs** 的其他索引標籤。  (如果您正在使用 Visual Basic，則索引標籤 **會命名為 form1.vb) 。**
+1. 按兩下表單上的 [顯示圖片]  按鈕。 或者，您也可以選擇表單上的 [ **顯示圖片** ] 按鈕，然後按下 **enter** 鍵。 當您這樣做時，IDE 會在主視窗中開啟另一個名為 [ **Form1**] 的索引標籤。  (如果您正在使用 Visual Basic，則索引標籤 **會命名為 form1.vb) 。**
 
    此索引標籤會顯示表單後方的程式碼檔案，如下列螢幕擷取畫面所示。
 
     ![包含 Visual C&#35; 程式碼的 [Form1.cs] 索引標籤](../ide/media/express_showbuttoncode.png)<br>
-*使用 c # 程式碼的 **Form1.cs** _ _tab *
+*使用 c # 程式碼的 **.cs** _ _tab *
 
     > [!NOTE]
-    > 您的 Form1.cs 或 form1.vb 索引標籤可能會改為顯示 **showButton** 為 **showButton** 。
+    > 您的 Form1 或 form1.vb 索引標籤可能會以 **showButton** 的形式來顯示 **showButton** 。
 
 1. 注意這部分程式碼。
 
@@ -71,18 +71,18 @@ ms.locfileid: "99868877"
 
    您正在查看稱為 (的程式碼 `showButton_Click()` ， `ShowButton_Click()`) 。 當您開啟 **showButton** 按鈕的程式碼檔時，IDE 已將此加入至表單的程式碼。 在設計階段，當您開啟表單中的控制項程式碼檔案時，如果該控制項的程式碼不存在，會產生程式碼。 這個程式碼稱為 *方法*，會在您執行應用程式並選擇控制項時執行（在此案例中為 [ **顯示圖片** ] 按鈕）。
 
-1. 再次選擇 [ **Windows Form 設計工具** ] 索引標籤 (**Form1.cs [設計]**) ，然後開啟 [ **清除圖片** ] 按鈕的程式碼檔，在表單程式碼中建立它的方法。 針對其他兩個按鈕重複此步驟。 IDE 每一次都會將新的方法加入至表單的程式碼檔案。
+1. 再次選擇 [ **Windows Form 設計工具** ] 索引標籤 (**[form1.vb [Design]]) ]** ，然後開啟 [ **清除圖片** ] 按鈕的程式碼檔，在表單程式碼中建立它的方法。 針對其他兩個按鈕重複此步驟。 IDE 每一次都會將新的方法加入至表單的程式碼檔案。
 
 1. 若要加入另一個方法，請在 **Windows Form 設計工具** 中開啟 **核取方塊** 控制項的程式碼檔案，讓 IDE 加入 `checkBox1_CheckedChanged()` 方法。 每當使用者選取或清除核取方塊時就會呼叫該方法。
 
    > [!TIP]
-   > 使用應用程式時，您通常會在程式碼編輯器和 **Windows Form 設計工具** 之間移動。 IDE 可讓您在專案中輕鬆巡覽。 使用 **方案總管** 來開啟 **Windows Form 設計工具**，方法是在 [Visual Basic *] 中按兩下*[ *Form1.cs* ]，或在功能表列上，選擇 [**視圖**  >  **設計** 工具]。
+   > 使用應用程式時，您通常會在程式碼編輯器和 **Windows Form 設計工具** 之間移動。 IDE 可讓您在專案中輕鬆巡覽。 使用 **方案總管** 來開啟 **Windows Form 設計工具**，方法是按兩下 c # 中的 *form1* 或 *Visual Basic 中的* form1.vb，或在功能表列上選擇 [**視圖**  >  **設計** 工具]。
 
     下列顯示您在程式碼編輯器中看到的新程式碼。
 
-    [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step6/cs/form1.cs" id="Snippet2":::
 
-    [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step6/vb/form1.vb" id="Snippet2":::
 
     > [!NOTE]
     > 您的程式碼可能無法顯示 "camelCase" 字母的事件處理常式。

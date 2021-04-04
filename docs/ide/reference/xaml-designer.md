@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 15bfae190ba2960c291dca635bfff1188ac64ab5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0418c8f3928ae2004055db7dfa70be123719377
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836185"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082522"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 設計工具選項頁面
 
@@ -36,7 +36,7 @@ ms.locfileid: "99836185"
 
 使用此設定可控制載入 XAML 文件時是否出現設計檢視。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**來源視圖**|指定是否只有 XAML 原始碼會出現在 XAML 檢視。 載入大型文件時，這非常有用。|
 |**設計檢視**|指定是否只有視覺化 XAML 設計工具會出現在 XAML 檢視。|
@@ -46,7 +46,7 @@ ms.locfileid: "99836185"
 
 使用此設定可控制編輯 XAML 文件時，何時以及如何顯示 XAML 設計工具。 這些設定只適用於 [預設文件檢視] 設為 [分割檢視] 時。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**Vertical**|XAML 原始碼出現在 XAML 檢視的左邊，另一邊則出現 XAML 設計工具。|
 |**水平**|XAML 設計工具會顯示在 XAML 檢視的頂端，XAML 原始碼出現在它下方。|
@@ -56,7 +56,7 @@ ms.locfileid: "99836185"
 
 使用此設定可決定編輯 XAML 文件時，縮放的運作方式。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**滑鼠滾輪**|捲動滑鼠滾輪來放大 XAML 設計工具。|
 |**CTRL + 滑鼠滾輪**|在滾動滑鼠滾輪時按 **Ctrl** 鍵來放大 XAML 設計工具。|
@@ -64,7 +64,18 @@ ms.locfileid: "99836185"
 
 這些設定會決定編輯 XAML 文件時的設計工具行為。
 
-|名稱|描述|
+## <a name="default-zoom-setting"></a>預設縮放設定
+
+您可以使用此設定來判斷用來查看 XAML 檔的預設縮放值。
+
+|Name|描述|
+|-|-|
+|**上次使用**|依預設，所有的 XAML 檔都使用上次使用的縮放值。 第一次開啟 XAML 檔時，它會先使用「全部符合全部」設定。|
+|**全部符合**|使用這個選項可將 XAML 設計工具的縮放值設定為 [全部調整]。 當 XAML 檔已關閉並重新開啟時，會保留該會話的最後一個設定值，但預設會使用不同的會話「符合全部」。|
+
+當您編輯 XAML 檔時，這些設定會決定設計工具的行為。
+
+|Name|描述|
 |-|-|
 |**建立時自動命名互動元素**|指定當您將互動元素新增至設計工具時，是否要提供新互動元素的預設名稱。|
 |**自動在建立元素時插入配置屬性**|指定當您將新項目新增至設計工具時，是否要提供新項目的配置屬性。 配置屬性就是會影響控制項配置的屬性，例如 Margin 和 VerticalAlignment。 下列 XAML 顯示選取此選項與不選取此選項時建立按鈕的方式：<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
@@ -75,7 +86,7 @@ ms.locfileid: "99836185"
 
 使用這些選項可決定使用 Blend 編輯 XAML 檔案時的設定。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**縮放方式**|藉由滾動滑鼠滾輪，或在滾動滑鼠滾輪時按 **Ctrl** 或 **Alt** 鍵來放大 XAML 設計工具。|
 |**類型單位**|指定設計工具上的度量單位是根據點數還是像素。 因為通用 Windows 應用程式不支援點，所以如果選取 [點]，單位會自動轉換為像素。|
@@ -86,7 +97,7 @@ ms.locfileid: "99836185"
 
 ### <a name="snapping"></a>貼齊
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**顯示貼齊格線**|選取此選項時，設計工具中會顯示格線，幫助您對齊控制項。 選取 [貼齊格線] 選項時，新增到設計工具的控制項會貼齊這些格線。|
 |**貼齊格線**|在設計工具新增或移動控制項時，它們會貼齊格線。|
@@ -103,7 +114,7 @@ ms.locfileid: "99836185"
 
 使用這些設定可決定使用 Blend 在 XAML 設計工具中編輯 XAML 檔案時，是否呈現效果。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**呈現效果**|指定使用 Blend 在 XAML 設計工具中編輯 XAML 檔案時，是否呈現效果。|
 |**縮放臨界值**|指定當選取 [呈現效果] 核取方塊時，效果呈現所使用的縮放百分比。 如果放大超過此設定，效果將不再呈現於 XAML 設計工具中。|

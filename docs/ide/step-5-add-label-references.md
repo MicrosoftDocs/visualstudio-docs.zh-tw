@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a009f5667f2eb01b22c45c9439a582d2319e6df9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 316db91ac00ca9e18b9c0875340d2358b8955bed
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868968"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214222"
 ---
 # <a name="step-5-add-label-references"></a>步驟 5：新增標籤參考
 程式需要追蹤玩家所選擇的 Label 控制項。 現在，程式會顯示玩家選擇的所有標籤。 但是，我們將要變更該行為。 在選擇第一個標籤之後，程式應該會顯示標籤的圖示。 在選擇第二個標籤之後，程式應該要短暫顯示這兩個圖示，然後再次隱藏這兩個圖示。 您的程式現在將會使用 *參考變數*，追蹤第一次和第二次選擇的 Label 控制項。
@@ -29,8 +29,8 @@ ms.locfileid: "99868968"
 
 1. 使用下列程式碼，將標籤參考加入至您的表單。
 
-     [!code-vb[VbExpressTutorial4Step5#5](../ide/codesnippet/VisualBasic/step-5-add-label-references_1.vb)]
-     [!code-csharp[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb" id="Snippet5":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs" id="Snippet5":::
 
      > [!IMPORTANT]
      > 您可以使用此頁面右上方的程式設計語言控制項來查看 c # 程式碼片段或 Visual Basic 程式碼片段。<br><br>![Docs.Microsoft.com 的程式設計語言控制項](../ide/media/docs-programming-language-control.png)
@@ -41,8 +41,8 @@ ms.locfileid: "99868968"
 
 2. 修改 <xref:System.Windows.Forms.Control.Click> 事件處理常式，以使用新的 `firstClicked` 參考變數。 移除 `label_Click()` 事件處理常式方法 (`clickedLabel.ForeColor = Color.Black;`) 中的最後一個陳述式，並以後面的 `if` 陳述式取代  (請務必包含註解和整個 `if` 陳述式)。
 
-     [!code-vb[VbExpressTutorial4Step5#6](../ide/codesnippet/VisualBasic/step-5-add-label-references_2.vb)]
-     [!code-csharp[VbExpressTutorial4Step5#6](../ide/codesnippet/CSharp/step-5-add-label-references_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb" id="Snippet6":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs" id="Snippet6":::
 
 3. 儲存並執行您的程式。 選擇其中一個 Label 控制項，其圖示就會出現。
 

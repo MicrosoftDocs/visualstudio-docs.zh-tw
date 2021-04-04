@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3d721c8d4f381e99a814852839de0e808d326b3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2634035435679bd5ab2627f803ff9d2c1dc5a863
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889638"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215444"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>如何：將屬性加入至 SharePoint 專案專案延伸模組
   您可以使用專案專案延伸，將屬性加入至 Visual Studio 中已安裝的任何 SharePoint 專案專案。 當 **方案總管** 中選取專案專案時，屬性會出現在 [**屬性**] 視窗中。
@@ -40,8 +40,8 @@ ms.locfileid: "99889638"
 ## <a name="example"></a>範例
  下列程式碼範例示範如何將名為 **Example 屬性** 的屬性加入至事件接收器專案專案。
 
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#8](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionproperty.cs#8)]
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#8](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionproperty.vb#8)]
+:::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionproperty.cs" id="Snippet8":::
+:::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionproperty.vb" id="Snippet8":::
 
 ### <a name="understand-the-code"></a>了解程式碼
  為了確保 `CustomProperties` 每次發生事件時都會使用相同的類別實例 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> ，程式碼範例 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 會在第一次發生此事件時，將屬性物件加入至專案專案的屬性。 每當此事件再次發生時，程式碼就會抓取此物件。 如需使用 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 屬性將資料與專案專案產生關聯的詳細資訊，請參閱 [將自訂資料與 SharePoint 工具延伸](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)模組產生關聯。

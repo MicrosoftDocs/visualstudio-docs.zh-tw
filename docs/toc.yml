@@ -906,6 +906,7 @@
 - name: 偵錯 >>
   href: debugger/index.yml
 - name: 版本控制
+  expanded: true
   items:
     - name: Visual Studio 的新 Git 體驗
       href: ide/git-with-visual-studio.md

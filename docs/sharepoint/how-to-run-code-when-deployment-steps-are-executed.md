@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0b3037c0ec983b9f496947feba41938111fafc38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74db1b73dded52ba15ea860873c49c0264f7fea7
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851578"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214404"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>如何：在執行部署步驟時執行程式碼
   如果您想要針對 SharePoint 專案中的部署步驟執行其他工作，您可以在 Visual Studio 執行每個部署步驟之前和之後，處理 SharePoint 專案專案所引發的事件。 如需詳細資訊，請參閱 [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
@@ -41,8 +41,8 @@ ms.locfileid: "99851578"
 ## <a name="example"></a>範例
  下列程式碼範例示範如何處理 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> 清單實例專案專案擴充功能中的和事件。 當 Visual Studio 在部署和撤銷解決方案時回收應用程式集區時，此擴充功能會將額外的訊息寫入至 **輸出** 視窗。
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb#4)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handledeploymentstepevents.cs#4)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb" id="Snippet4":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handledeploymentstepevents.cs" id="Snippet4":::
 
 ## <a name="compile-the-code"></a>編譯程式碼
  此範例需要下列元件的參考：

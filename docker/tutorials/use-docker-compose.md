@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f95a4f130e8ad662b3f0eca8f6f7d2162e2d1c7e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3bcf3a69dcf8053851e3d8519a25f61fe23ae7e3
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841714"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082561"
 ---
 # <a name="use-docker-compose"></a>使用 Docker Compose
 
@@ -168,7 +168,7 @@ docker run -d \
         image: mysql:5.7
     ```
 
-1. 接下來，定義磁片區對應。 當您執行容器時 `docker run` ，會自動建立命名磁片區。 不過，使用撰寫時並不會發生這種情況。 您需要在最上層區段中定義磁片 `volumes:` 區，然後在服務設定中指定掛接點。只要只提供磁片區名稱，就會使用預設選項。 不過還有 [許多選項可供使用](https://docs.docker.com/compose/compose-file/#volume-configuration-reference) 。
+1. 接下來，定義磁片區對應。 當您執行容器時 `docker run` ，會自動建立命名磁片區。 不過，使用撰寫時並不會發生這種情況。 您需要在最上層區段中定義磁片 `volumes:` 區，然後在服務設定中指定掛接點。只要只提供磁片區名稱，就會使用預設選項。 不過還有 [許多選項可供使用](https://github.com/compose-spec/compose-spec/blob/master/spec.md#volumes-top-level-element) 。
 
     ```yaml hl_lines="8 9 10 11 12"
     version: "3.7"

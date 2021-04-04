@@ -8,16 +8,16 @@ metadata:
   description: 了解如何使用 Visual Studio，以您選擇的語言，為任何平台或裝置開發應用程式、服務及工具。
   ms.topic: hub-page
   ms.custom: contperf-fy21q1
-  ms.date: 03/23/2021
+  ms.date: 03/30/2021
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 9ea356f29ed511dc5e968dd0947f614277d497f0
-  ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+  ms.openlocfilehash: c2f3b148f99924047c71f2bf1a13a99183e77063
+  ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "105080277"
+  ms.lasthandoff: 03/31/2021
+  ms.locfileid: "106083538"
 highlightedContent:
   items:
   - title: 設定與安裝
@@ -186,8 +186,8 @@ additionalContent:
       summary: 使用 Web Deploy、InstallShield、NuGet 和持續整合等功能，共用您的應用程式與程式碼。
       url: ../deployment/index.yml
     - title: 版本控制
-      summary: 使用 Git 和 TFVC 等版本控制技術來共用程式碼。
-      url: /azure/devops/repos/index
+      summary: 使用版本控制技術（例如 Git 和 GitHub）共用程式碼。
+      url: ../ide/git-with-visual-studio.md
     - title: DevOps
       summary: 利用 Azure DevOps Services 持續在雲端建置及發行您的應用程式及施行敏捷式運作。
       url: /azure/devops

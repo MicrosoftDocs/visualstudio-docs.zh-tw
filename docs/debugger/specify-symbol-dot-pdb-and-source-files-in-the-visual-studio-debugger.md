@@ -2,7 +2,7 @@
 title: 在偵錯工具中設定符號 ( .pdb) 和原始程式檔
 description: 瞭解如何在 Visual Studio 中設定和管理符號和原始檔
 ms.custom: ''
-ms.date: 10/31/2019
+ms.date: 3/31/2021
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 496994c0f9d546efe8804481230081090309d47e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ad72d2aa659f3d43bfca99c359d5db94e2d1045
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903574"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083678"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 偵錯工具中指定符號 ( .pdb) 和原始程式檔 (c #、c + +、Visual Basic、F # ) 
 
@@ -222,7 +222,7 @@ ms.locfileid: "99903574"
 1. 在 [ **模組** ] 視窗中，以滑鼠右鍵按一下 **符號狀態** 或 **符號** 檔標頭，或任何模組。
 1. 在快顯功能表中，選取下列其中一個選項︰
 
-|選項|Description|
+|選項|描述|
 |------------|-----------------|
 |**載入符號**|顯示已略過、找不到或未載入符號的模組。 嘗試從 [**選項**  >  **調試**  >  **符號**] 頁面上指定的位置載入符號。 如果找不到或未載入符號檔，則會啟動 **檔案總管** ，讓您可以指定要搜尋的新位置。|
 |**符號載入資訊**|顯示載入的符號檔的位置，或如果偵錯工具找不到檔案時所搜尋的位置。|
@@ -246,9 +246,10 @@ ms.locfileid: "99903574"
 
 - 若要變更搜尋路徑，請選取未選取的路徑，或選取 [ **新增路徑** ] 或 [ **新增 VSTS 路徑** ]，然後輸入或選取新的路徑。 選取 [ **載入** ] 以再次搜尋路徑，並載入符號檔（如果找到的話）。
 - 若要覆寫任何符號選項並重試搜尋路徑，請選取 **[ \<executable-name> 流覽並尋找]**。 如果找到符號檔，則會載入符號檔，或 **檔案總管** 開啟，讓您可以手動選取符號檔。
-- 若要開啟 [**選項**  >  **調試**  >  **符號**] 頁面，請選取 [**變更符號設定**]。
-- 若要在新視窗中一次顯示反組解碼，請選取 [ **視圖** 反組解碼]，或選取 [ **選項] 對話方塊** ，將選項設定為 [當找不到來源或符號檔時一律顯示反組解碼]。
+- 若要開啟 [符號設定] 頁面來設定行為，請選取 [**變更符號設定** (或選擇 [**選項**  >  **調試**  >  **符號**]) 。
+-  (Advanced) 在新視窗中顯示反組解碼一次，選取 [ **視圖** 反組解碼]，或選取 [ **選項] 對話方塊** ，將選項設定為 [當找不到來源或符號檔時一律顯示反組解碼]。 如需詳細資訊，請參閱視圖反組解碼程式 [代碼](../debugger/how-to-use-the-disassembly-window.md)。
 - 若要顯示搜尋的位置和結果，請展開 [ **符號載入資訊**]。
+- 若為 c # 程式碼，您也可以選擇從 **未載入的符號** 或 **未載入來源** 的頁面中，[反編譯原始程式碼](../debugger/decompilation.md)。
 
 如果偵錯工具在您執行其中一個選項之後找到 *.pdb* 檔案，而且可以使用 *.pdb* 檔案中的資訊來抓取原始程式檔，則會顯示來源。 否則，它會顯示 [ **未載入來源** ] 頁面來描述問題，並連結至可能會解決問題的動作。
 
@@ -259,6 +260,8 @@ ms.locfileid: "99903574"
 1. 在 [**方案總管** 中選取方案，然後選取 [**屬性**] 圖示，按下 **Alt** + **enter**，或按一下滑鼠右鍵並選取 [**屬性**]。
 
 1. 選取 [ **Debug Source Files**]。
+
+   ![Debug source files 頁面](../debugger/media/dbg-source-files.png)
 
 1. 在 [ **包含原始程式碼的目錄**] 下，輸入或選取要搜尋的原始程式碼位置。 使用 **新行** 圖示來新增更多位置、 **向上** 箭號和 **向下** 箭號圖示來重新排序它們，或使用 **X** 圖示來刪除它們。
 

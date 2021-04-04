@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 54699947588e29da7312c0574833a13bbc3c8cfd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f519d8e3bfe01fc3e4a1e4cfe82f4f8502c84821
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858185"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215691"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務
 在本逐步解說中，會示範如何建立裝載於 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的簡單 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，並從 Windows Forms 應用程式存取此服務。
@@ -126,13 +126,14 @@ ms.locfileid: "99858185"
 
 4. 在 [程式碼編輯器] 中找出第一個 `TODO:` 註解，並以下列程式碼取代：
 
-     [!code-vb[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.vb)]
-     [!code-csharp[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb" id="Snippet1":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs" id="Snippet1":::
 
 5. 將 `InitializeService` 事件處理常式中的註解以下列程式碼取代：
 
-     [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
-     [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb" id="Snippet2":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs" id="Snippet2":::
+
 
 6. 在功能表列上，選擇 [ **Debug**  >  **啟動但不進行調試**] 來執行服務。 瀏覽器視窗隨即開啟，並顯示服務的 XML 架構。
 

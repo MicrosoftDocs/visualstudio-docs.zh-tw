@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: eba366ecf777697a0c63999d8addf099fecca976
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bac5ff10ea59ba422a9dc33855919eb999a996ee
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923612"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215392"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>如何：將快捷方式功能表項目加入至 SharePoint 專案專案延伸模組
   您可以使用專案專案延伸，將快捷方式功能表項目加入至現有的 SharePoint 專案專案。 當使用者以滑鼠右鍵按一下 **方案總管** 中的專案專案時，就會顯示功能表項目。
@@ -40,8 +40,8 @@ ms.locfileid: "99923612"
 ## <a name="example"></a>範例
  下列程式碼範例示範如何將快捷方式功能表項目加入至事件接收器專案專案。 當使用者以滑鼠右鍵按一下 **方案總管** 中的專案專案，然後按一下 [ **寫入訊息] 輸出視窗** 功能表項目時，Visual Studio 會在 [ **輸出** ] 視窗中顯示一則訊息。
 
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#1](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionmenu.vb#1)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#1](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionmenu.cs#1)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionmenu.vb" id="Snippet1":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionmenu.cs" id="Snippet1":::
 
  這個範例會使用 SharePoint 專案服務，將訊息寫入至 [ **輸出** ] 視窗。 如需詳細資訊，請參閱 [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)。
 

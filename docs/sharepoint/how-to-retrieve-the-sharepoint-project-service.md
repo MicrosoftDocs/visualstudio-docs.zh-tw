@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6ae4000bb0ef147a8f601ce80483b9f2ecbe2de8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef53a0328fe8427b356132fe878b52a3e504ea9a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955225"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214456"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何：取得 SharePoint 專案服務
   您可以使用下列類型的解決方案來存取 SharePoint 專案服務：
@@ -43,8 +43,8 @@ ms.locfileid: "99955225"
 
      下列程式碼範例示範如何使用專案服務，將訊息以簡單的專案延伸寫入至 [ **輸出** ] 視窗和 [ **錯誤清單** ] 視窗。
 
-     [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#1)]
-     [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs" id="Snippet1":::
 
      如需建立專案擴充功能的詳細資訊，請參閱 [如何：建立 SharePoint 專案延伸](../sharepoint/how-to-create-a-sharepoint-project-extension.md)模組。
 
@@ -56,8 +56,8 @@ ms.locfileid: "99955225"
 
      下列程式碼範例將示範如何使用專案服務，將訊息寫入至 [ **輸出** 視窗] 和 [ **錯誤清單** ] 視窗中的 [ **清單定義** ] 專案專案的簡單延伸。
 
-     [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#2)]
-     [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs" id="Snippet2":::
 
      如需建立專案專案擴充功能的詳細資訊，請參閱 [如何：建立 SharePoint 專案專案延伸](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)模組。
 
@@ -69,8 +69,8 @@ ms.locfileid: "99955225"
 
      下列程式碼範例示範如何使用專案服務，將訊息寫入至簡單專案專案類型定義中的 [ **輸出** 視窗] 和 [ **錯誤清單** ] 視窗。
 
-     [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#3)]
-     [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#3)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb" id="Snippet3":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs" id="Snippet3":::
 
      如需定義專案專案類型的詳細資訊，請參閱 [如何：定義 SharePoint 專案專案類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。
 
@@ -85,8 +85,8 @@ ms.locfileid: "99955225"
 
      下列程式碼範例示範如何使用專案服務，將訊息從擴充功能新增至 **伺服器總管** 中清單節點的快捷方式功能表，寫入至 [**輸出**] 視窗和 [**錯誤清單**] 視窗。
 
-     [!code-vb[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb#1)]
-     [!code-csharp[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs" id="Snippet1":::
 
      如需在 **伺服器總管** 中擴充 [ **sharepoint 連接**] 節點的詳細資訊，請參閱 [如何：在伺服器總管中擴充 sharepoint 節點](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。
 

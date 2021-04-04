@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1b4722f04ae46f85d7cc70dadf6127330e8f6616
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5665fc28bacb76c6887cb7dcb1820ec9dc0d2b3a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851709"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215314"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>將自訂資料與 SharePoint 工具延伸模組產生關聯
   您可以將自訂資料新增至 SharePoint 工具延伸模組中的特定物件。 當您的延伸模組中有您想要稍後從擴充功能的其他程式碼存取的資料時，這非常有用。 您可以將資料與延伸模組中的物件建立關聯，然後再從相同的物件取得資料，而不是執行自訂方式來儲存及存取資料。
@@ -79,8 +79,8 @@ ms.locfileid: "99851709"
 
   下列程式碼範例會判斷特定資料物件是否已與專案專案相關聯。 如果資料物件尚未與專案專案相關聯，則程式碼會將物件加入至專案專案的 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 屬性。 若要在較大範例的內容中查看這個範例，請參閱 [如何：將屬性加入至自訂 SharePoint 專案專案類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。
 
-  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
-  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
+  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet13":::
+  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet13":::
 
 ## <a name="see-also"></a>另請參閱
 - [SharePoint 工具擴充功能的程式設計概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)

@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 785d1bcfb8fdce5b09e749dcca17ff476a5d3f48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3b89e074a4c67e8d16a07eb48431ebe1ade694f
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877157"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083564"
 ---
 # <a name="exec-task"></a>Exec 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "99877157"
 
 下表說明 `Exec` 工作的參數。
 
-|參數|Description|
+|參數|描述|
 |---------------|-----------------|
 |`Command`|必要的 `String` 參數。<br /><br /> 一或多個要執行的命令。 這些可以是系統命令（如 attrib）或可執行檔，例如 *program.exe*、 *runprogram.bat* 或 *setup.msi*。<br /><br /> 此參數可以包含多行命令。 或者，您可以將多個命令放在一個批次檔中，然後使用此參數來執行該批次檔。|
 |`ConsoleOutput`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 每個項目輸出都是工具發出的標準輸出或標準錯誤資料流。 這只有在 `ConsoleToMsBuild` 設為 `true` 時才會擷取。|
@@ -49,6 +49,7 @@ ms.locfileid: "99877157"
 |`Outputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含來自工作的輸出項目。 `Exec` 工作本身不會設定這些項目。 相反地，您可以提供項目，就像工作本身已設定一樣，如此一來，稍後就能在專案中使用它們。|
 |`StdErrEncoding`|選擇性的 `String` 輸出參數。<br /><br /> 指定所擷取工作標準錯誤資料流的編碼方式。 預設值是目前的主控台輸出編碼方式。|
 |`StdOutEncoding`|選擇性的 `String` 輸出參數。<br /><br /> 指定所擷取工作標準輸出資料流的編碼方式。 預設值是目前的主控台輸出編碼方式。|
+|`UseUtf8Encoding`|選擇性的 `String` 參數。<br /><br /> 指定在處理命令列以執行命令時，是否要使用 UTF8 字碼頁。 有效值為 `Always`、`Never` 或 `Detect`。 預設值為 `Detect` ，表示只有當非 ANSI 字元存在時，才使用 UTF8 字碼頁。|
 |`WorkingDirectory`|選擇性的 `String` 參數。<br /><br /> 指定將執行命令的目錄。<br /><br />預設值：專案的目前工作目錄。|
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]

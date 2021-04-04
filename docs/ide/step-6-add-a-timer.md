@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 77daa47cdd6336849903202233392d3eecc33c1a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f59375e9e64e6a7302d65b8c940d82b63adef54f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868890"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214196"
 ---
 # <a name="step-6-add-a-timer"></a>步驟 6：新增計時器
 接下來，您可以將 <xref:System.Windows.Forms.Timer> 控制項新增至配對遊戲。 計時器會等候指定的毫秒數，然後引發事件，稱為「刻度」。 這對於定期啟動動作或重複動作非常有用。 在這個案例中，您將使用計時器讓玩家選擇兩個圖示，如果圖示不相符，則在短時間之後再次隱藏兩個圖示。
@@ -39,8 +39,8 @@ ms.locfileid: "99868890"
 
 3. 選擇 [Windows Forms 設計工具] 中的計時器控制項圖示，然後選擇 **Enter** 鍵或按兩下計時器，以新增空的 Tick 事件處理常式。 以下列程式碼取代程式碼，或手動輸入下列程式碼至事件處理常式。
 
-     [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
-     [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step6/cs/form1.cs" id="Snippet7":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step6/vb/form1.vb" id="Snippet7":::
 
       > [!IMPORTANT]
       > 您可以使用此頁面右上方的程式設計語言控制項來查看 c # 程式碼片段或 Visual Basic 程式碼片段。<br><br>![Docs.Microsoft.com 的程式設計語言控制項](../ide/media/docs-programming-language-control.png)
@@ -52,8 +52,8 @@ ms.locfileid: "99868890"
 
 4. 若要查看作用中的新計時器，請移至程式碼編輯器並將下列程式碼加入至 `label_Click()` 事件處理常式方法的頂端和底端   (您要將兩個 `if` 語句加入至頂端，並將三個語句新增至底部，則方法的其餘部分會維持不變。 ) 
 
-     [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]
-     [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step6/cs/form1.cs" id="Snippet8":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step6/vb/form1.vb" id="Snippet8":::
 
      位於方法頂端的程式碼會檢查計時器是否藉由核取 [Enabled] 屬性的值來啟動。 如此一來，如果玩家選擇第一個和第二個 Label 控制項而且計時器啟動了，則選擇第三個標籤後並不會執行任何動作。 它也可防止播放程式在遊戲準備好進行另一個點擊之前，快速按一下第三次。 
 

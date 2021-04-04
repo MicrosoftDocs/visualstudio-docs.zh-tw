@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: f212fbd1868ad873f0692a11bae975eade8778a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38ceec2cafd3476342d9319d9b5d034564759fad
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858913"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215899"
 ---
 # <a name="edit-data-in-datasets"></a>編輯資料集中的資料
 您可以編輯資料表中的資料，就像在任何資料庫中編輯資料表中的資料一樣。 此程式可以包含插入、更新和刪除資料表中的記錄。 在資料系結表單中，您可以指定哪些欄位可供使用者編輯。 在這些情況下，資料系結基礎結構會處理所有變更追蹤，讓您稍後可以將變更傳送回資料庫。 如果您以程式設計方式對資料進行編輯，而且想要將這些變更傳送回資料庫，則必須使用為您執行變更追蹤的物件和方法。
@@ -33,21 +33,21 @@ ms.locfileid: "99858913"
 
 如果您不知道想要編輯之資料列的索引，請使用 `FindBy` 方法依主鍵搜尋：
 
-[!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)]
-[!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet3":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet3":::
 
 如果您知道資料列索引，您可以存取和編輯資料列，如下所示：
 
-[!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)]
-[!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet5":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet5":::
 
 ## <a name="to-insert-new-rows-into-a-dataset"></a>將新資料列插入資料集
 使用資料繫結控制項的應用程式通常會透過 [BindingNavigator 控制項](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)上的 [**加入新** 的] 按鈕來加入新的記錄。
 
 若要以手動方式將新記錄加入至資料集，請在 DataTable 上呼叫方法來建立新的資料列。 然後，將資料列加入至 <xref:System.Data.DataRow> 集合 (的 <xref:System.Data.DataTable.Rows%2A>) <xref:System.Data.DataTable> ：
 
-[!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
-[!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet1":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet1":::
 
 為了保留資料集需要將更新傳送到資料來源的資訊，請使用 <xref:System.Data.DataRow.Delete%2A> 方法來移除資料表中的資料列。 例如，如果您的應用程式使用 TableAdapter (或 <xref:System.Data.Common.DataAdapter>) ，TableAdapter 的 `Update` 方法會刪除資料庫中具有的資料列 <xref:System.Data.DataRow.RowState%2A> <xref:System.Data.DataRowState.Deleted> 。
 
@@ -64,8 +64,8 @@ ms.locfileid: "99858913"
 
 下列範例示範如何呼叫 <xref:System.Data.DataRow.Delete%2A> 方法，將資料表中的第一個資料列標示 `Customers` 為已刪除：
 
-[!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]
-[!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet8":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet8":::
 
 ## <a name="determine-if-there-are-changed-rows"></a>判斷是否有變更的資料列
 變更資料集中的記錄時，會儲存這些變更的相關資訊，直到您認可這些變更為止。 當您呼叫 `AcceptChanges` 資料集或資料表的方法，或呼叫 `Update` TableAdapter 或資料介面卡的方法時，您會認可變更。
@@ -84,8 +84,8 @@ ms.locfileid: "99858913"
 
 下列範例會示範如何從方法檢查傳回值 <xref:System.Data.DataSet.HasChanges%2A> ，以偵測資料集內是否有任何已變更的資料列，名為 `NorthwindDataset1` ：
 
-[!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
-[!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet12":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet12":::
 
 ## <a name="determine-the-type-of-changes"></a>判斷變更的類型
 您也可以藉由將列舉值傳遞給方法，來查看資料集中所做的變更類型 <xref:System.Data.DataRowState> <xref:System.Data.DataSet.HasChanges%2A> 。
@@ -96,8 +96,8 @@ ms.locfileid: "99858913"
 
 下列範例示範如何檢查名為的資料集 `NorthwindDataset1` ，以判斷是否有任何新的資料列新增至其中：
 
-[!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]
-[!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet13":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet13":::
 
 ## <a name="to-locate-rows-that-have-errors"></a>找出有錯誤的資料列
 使用個別資料行和資料列時，您可能會遇到錯誤。 您可以檢查 `HasErrors` 屬性，以判斷、或中是否有 <xref:System.Data.DataSet> 錯誤 <xref:System.Data.DataTable> <xref:System.Data.DataRow> 。
@@ -106,8 +106,8 @@ ms.locfileid: "99858913"
 
 2. 如果 `HasErrors` 屬性為 `true` ，請逐一查看資料表的集合，然後逐一查看資料列，以找出包含錯誤的資料列。
 
-[!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
-[!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet23":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet23":::
 
 ## <a name="see-also"></a>另請參閱
 

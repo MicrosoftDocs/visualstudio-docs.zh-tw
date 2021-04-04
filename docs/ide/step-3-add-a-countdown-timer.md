@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 238f6a2b6492fdd4ac04e0b596bbfbc304529786
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f64189cbde62ea70ae51fcdcbb8869377dd865f1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950831"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214300"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>步驟 3：新增倒數計時器
 
@@ -33,8 +33,8 @@ ms.locfileid: "99950831"
 
 1. 加入名為 **timeLeft** 的整數變數，就像在前一個程序中所進行。 您的程式碼應該看起來與下列範例相同。
 
-     [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
-     [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb" id="Snippet5":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs" id="Snippet5":::
 
      [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
@@ -54,8 +54,8 @@ ms.locfileid: "99950831"
 
 5. 將下列陳述式加入至新的事件處理常式方法。
 
-     [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
-     [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb" id="Snippet6":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs" id="Snippet6":::
 
      根據您新增的項目，計時器會藉由判斷 **timeLeft** 整數變數是否大於 0，每秒檢查一次時間是否已結束。 如果是，表示仍有剩餘時間。 計時器會先將 timeLeft 減 1，然後更新 **timeLabel** 控制項的 **Text** 屬性，讓受測者看到還剩多少秒。
 
@@ -91,8 +91,8 @@ ms.locfileid: "99950831"
 
      仔細查看您在 `else` 區塊中加入，用來顯示加法問題答案的陳述式。
 
-     [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)]
-     [!code-csharp[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb" id="Snippet24":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs" id="Snippet24":::
 
      `addend1 + addend2` 陳述式會將兩個變數中的值相加。 第一個部分 (`sum.Value`) 會使用 sum (總和) NumericUpDown 控制項的 **Value** 屬性來顯示正確答案。 稍後您會使用相同屬性檢查測驗的答案。
 
@@ -100,8 +100,8 @@ ms.locfileid: "99950831"
 
 6. 將三行程式碼加入至 `StartTheQuiz()` 方法的結尾，使程式碼看起來如下。
 
-     [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
-     [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb" id="Snippet7":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs" id="Snippet7":::
 
      現在，當測驗開始時，**timeLeft** 變數會設定為 30，而且 **timeLabel** 控制項的 **Text** 屬性會設定為 30 秒。 然後，Timer 控制項的 <xref:System.Windows.Forms.Timer.Start> 方法就會開始倒數計時。 (測驗還不會檢查答案，這是下一個部分)。
 
@@ -114,6 +114,6 @@ ms.locfileid: "99950831"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移至下一個教學課程步驟，請參閱 **[步驟4：新增 CheckTheAnswer ( # A1 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)**。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟4：新增 CheckTheAnswer () 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)**。
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)。

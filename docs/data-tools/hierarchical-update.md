@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05575e6cc75468a85a3dd410ea59bebca79eee0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d43d4267ce0e180a525e990e372b7a6773a9cc51
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858835"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215808"
 ---
 # <a name="hierarchical-update"></a>階層式更新
 
@@ -93,8 +93,8 @@ ms.locfileid: "99858835"
 
 2. 在呼叫 `OrdersBindingSource.EndEdit` 方法的程式碼行後方，加入一行程式碼以呼叫 `CustomersBindingSource.EndEdit` 方法。 [儲存] 按鈕 Click 事件中的程式碼應與下列類似：
 
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb" id="Snippet1":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs" id="Snippet1":::
 
 除了將資料儲存至資料庫前，先認可關聯子資料表的變更外，您可能也必須先認可新建立的父記錄，才能將子記錄加入至資料集。 換句話說，您可能必須先將新的父記錄 () 加入 `Customer` 至資料集，然後 foreign key 條件約束才會啟用新的子記錄 (`Orders`) 加入至資料集。 若要完成此工作，您可以使用子 `BindingSource.AddingNew` 事件。
 
@@ -109,8 +109,8 @@ ms.locfileid: "99858835"
 
 2. 在呼叫方法的事件處理常式中加入一行程式碼 `CustomersBindingSource.EndEdit` 。 `OrdersBindingSource_AddingNew` 事件處理常式中的程式碼應該與下列類似：
 
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb" id="Snippet2":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs" id="Snippet2":::
 
 ## <a name="tableadaptermanager-reference"></a>TableAdapterManager 參考
 

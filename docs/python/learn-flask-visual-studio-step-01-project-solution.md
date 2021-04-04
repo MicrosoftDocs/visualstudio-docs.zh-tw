@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ca82beef26f897b2f5d3a145c968c11efaabc294
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 89a84198256657ae7f94d0a923780163bee73e48
+ms.sourcegitcommit: 5c0e20fc6005bc1f8ca38f4122378c4ac21ba89a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104806052"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106110606"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Flask Web 架構
 
@@ -49,7 +49,7 @@ Flask 被稱為「微」架構，因為它並不直接提供表單驗證、資�
 > [!Note]
 > 本教學課程與 [Flask 快速入門](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)的差異在於，您可以深入了解 Flask，以及如何使用各種不同 Flask 專案範本，以便為自己的專案提供更廣泛的起點。 例如，專案範本會在建立專案時自動安裝 Flask 套件，而不像快速入門中所示，需要您手動安裝套件。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 - Windows 上具有下列選項的 Visual Studio 2017 或更新版本：
   - **Python 開發** 工作負載 (安裝程式的 [工作負載] 索引標籤)。 如需相關指示，請參閱[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
@@ -221,17 +221,17 @@ def hello():
 
 ### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>問題：Flask 如何與變數 URL 路由和查詢參數搭配運作？
 
-回答：在路由中，您可以在任何變數上標示 `<variable_name>`，而 Flask 就會使用具名引數將該變數傳遞給函式。 變數可以是 URL 路徑的一部分，或放在查詢參數中。 例如，格式為 `'/hello/<name>` 的路由會為函式產生名為 `name` 的字串引數，而在路由中使用 `?message=<msg>` 則會剖析針對 "message=" 查詢參數提供的值，並將它傳遞給函式作為 `msg`：
+答：在路由中，您可以使用標記任何變數 `<variable_name>` ，而 Flask 會使用 URL 路徑中的具名引數將變數傳遞給函式。 例如，以形式的路由會產生對 `/hello/<name>` 函數呼叫的字串引數 `name` 。 您可以透過屬性取得查詢參數 `request.args` ，特別是透過 `request.args.get` 方法。 如需詳細資訊，請參閱 Flask 文件中的[要求物件](https://flask.palletsprojects.com/en/1.1.x/quickstart/#the-request-object) \(英文\)。
 
 ```python
-@app.route('/hello/<name>?message=<msg>')
-def hello(name, msg):
-    return "Hello " + name + "! Message is " + msg + "."
+# URL: /hello/<name>?message=Have%20a%20nice%20day
+@app.route('/hello/<name>')
+def hello(name):
+    msg = request.args.get('message','')
+    return "Hello " + name + "! "+ msg + "."
 ```
 
 若要變更類型，請在變數前面加上 `int`、`float`、`path` (可接受使用斜線來描述資料夾名稱) 及 `uuid`。 如需詳細資料，請參閱 Flask 文件中的[變數規則](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules) \(英文\)。
-
-您也可以透過 `request.args` 屬性提供查詢參數，特別是透過 `request.args.get` 方法。 如需詳細資訊，請參閱 Flask 文件中的[要求物件](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object) \(英文\)。
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>問題：Visual Studio 是否可以在我安裝其他套件之後，從虛擬環境產生 requirements.txt 檔案？
 

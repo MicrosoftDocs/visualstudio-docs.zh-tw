@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4342af681f8e2cc38855bec6041e8b4cd83dcf5d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5f085cae185a48f3d41c6fa4bca5cad7afb46b3
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866615"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215795"
 ---
 # <a name="query-datasets"></a>查詢資料集
 若要搜尋資料集中的特定記錄，請 `FindBy` 在 DataTable 上使用方法、撰寫您自己的 foreach 語句，以在資料表的資料列集合上進行迴圈，或使用 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
@@ -39,8 +39,8 @@ ms.locfileid: "99866615"
 
      在下列範例中，資料 `CustomerID` 行是資料表的主鍵 `Customers` 。 這表示產生的 `FindBy` 方法是 `FindByCustomerID` 。 此範例示範如何使用產生的方法，將特定 <xref:System.Data.DataRow> 變數指派給變數 `FindBy` 。
 
-     [!code-csharp[VbRaddataEditing#18](../data-tools/codesnippet/CSharp/query-datasets_1.cs)]
-     [!code-vb[VbRaddataEditing#18](../data-tools/codesnippet/VisualBasic/query-datasets_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet18":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet18":::
 
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>若要在不具類型的資料集中尋找具有主鍵值的資料列
 
@@ -48,8 +48,8 @@ ms.locfileid: "99866615"
 
      下列範例示範如何宣告名為的新資料列 `foundRow` ，並為它指派方法的傳回值 <xref:System.Data.DataRowCollection.Find%2A> 。 如果找到主要索引鍵，資料行索引1的內容會顯示在訊息方塊中。
 
-     [!code-csharp[VbRaddataEditing#19](../data-tools/codesnippet/CSharp/query-datasets_2.cs)]
-     [!code-vb[VbRaddataEditing#19](../data-tools/codesnippet/VisualBasic/query-datasets_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet19":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet19":::
 
 ## <a name="find-rows-by-column-values"></a>依資料行值尋找資料列
 
@@ -59,8 +59,8 @@ ms.locfileid: "99866615"
 
      下列範例顯示如何使用的 <xref:System.Data.DataTable.Select%2A> 方法 <xref:System.Data.DataTable> 來尋找特定的資料列。
 
-     [!code-csharp[VbRaddataEditing#20](../data-tools/codesnippet/CSharp/query-datasets_3.cs)]
-     [!code-vb[VbRaddataEditing#20](../data-tools/codesnippet/VisualBasic/query-datasets_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet20":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet20":::
 
 ## <a name="access-related-records"></a>存取相關記錄
 當資料集中的資料表是相關的時， <xref:System.Data.DataRelation> 物件可以讓相關記錄可在另一個資料表中使用。 例如， `Customers` 可以使用包含和資料表的資料集 `Orders` 。
@@ -86,15 +86,15 @@ ms.locfileid: "99866615"
 
 - 呼叫 <xref:System.Data.DataRow.GetChildRows%2A> 特定資料列的方法 `Customers` ，並從資料表傳回資料列的陣列 `Orders` ：
 
-     [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]
-     [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet6":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet6":::
 
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>傳回所選子記錄的父記錄
 
 - 呼叫 <xref:System.Data.DataRow.GetParentRow%2A> 特定資料列的方法 `Orders` ，並傳回資料表中的單一資料列 `Customers` ：
 
-     [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
-     [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet7":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet7":::
 
 ## <a name="see-also"></a>另請參閱
 

@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52bd4f95160165ee67c0a35816d094238786bc38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50debf24fa691ba74d082543b1c0bb1a27b5786e
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866563"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215782"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>從物件中將資料儲存至資料庫
 
@@ -35,7 +35,7 @@ ms.locfileid: "99866563"
 > [!NOTE]
 > 當您設定 TableAdapter 時，主要查詢必須提供足夠的資訊， `DBDirect` 才能建立方法。 例如，如果將 TableAdapter 設定為從未定義主鍵資料行的資料表中查詢資料，則不會產生 `DBDirect` 方法。
 
-|TableAdapter DBDirect 方法|Description|
+|TableAdapter DBDirect 方法|描述|
 | - |-----------------|
 |`TableAdapter.Insert`|將新的記錄加入至資料庫，並讓您以方法參數的形式傳入個別的資料行值。|
 |`TableAdapter.Update`|更新資料庫中的現有記錄。 `Update`方法會採用原始和新的資料行值做為方法參數。 原始值會用來尋找原始記錄，而新的值會用來更新該記錄。<br /><br /> `TableAdapter.Update`方法也可用來將 <xref:System.Data.DataSet> 、 <xref:System.Data.DataTable> 、 <xref:System.Data.DataRow> 或的陣列當做方法參數，以將資料集的變更重新協調回資料庫 <xref:System.Data.DataRow> 。|
@@ -47,8 +47,8 @@ ms.locfileid: "99866563"
 
      下列範例會將 `Customers` 物件中的值傳遞 `currentCustomer` 給方法，以在資料表中建立新的客戶記錄 `TableAdapter.Insert` 。
 
-     [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_1.cs)]
-     [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs" id="Snippet23":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb" id="Snippet23":::
 
 ## <a name="to-update-existing-records-from-an-object-to-a-database"></a>將現有記錄從物件更新到資料庫
 
@@ -59,8 +59,8 @@ ms.locfileid: "99866563"
 
      下列範例會將 `Customers` 物件中的新和原始值傳遞給方法，以更新資料表中的現有記錄 `Customer` `TableAdapter.Update` 。
 
-     [!code-csharp[VbRaddataSaving#24](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_2.cs)]
-     [!code-vb[VbRaddataSaving#24](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs" id="Snippet24":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb" id="Snippet24":::
 
 ## <a name="to-delete-existing-records-from-a-database"></a>若要從資料庫刪除現有的記錄
 
@@ -71,8 +71,8 @@ ms.locfileid: "99866563"
 
      下列範例會藉 `Customers` 由將物件中的原始值傳遞 `Customer` 給方法，來刪除資料表中的記錄 `TableAdapter.Delete` 。
 
-     [!code-csharp[VbRaddataSaving#25](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_3.cs)]
-     [!code-vb[VbRaddataSaving#25](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs" id="Snippet25":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb" id="Snippet25":::
 
 ## <a name="net-security"></a>.NET 安全性
 

@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d03a6dbe728d77fb9158ec02e1f59016e7c4a99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3054c5c74c8844f780c3562327353fca164f1f4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858276"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215639"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新資料
 
@@ -50,8 +50,8 @@ ms.locfileid: "99858276"
 
 - 將 TableAdapter 的 `Update` 方法放在 `try` / `catch` 區塊中。 下列範例示範如何 `Customers` `NorthwindDataSet` 從區塊內更新中的資料表內容 `try` / `catch` 。
 
-     [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
-     [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs" id="Snippet9":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb" id="Snippet9":::
 
 ## <a name="see-also"></a>另請參閱
 

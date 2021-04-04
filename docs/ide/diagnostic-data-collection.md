@@ -4,17 +4,17 @@ description: 瞭解 Visual Studio 系統產生的記錄檔、所收集的資料�
 ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
-author: jillre
-ms.author: michma
+author: TerryGLee
+ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6df4a90d8ddb31db88bb91ff4e874cadd3c589
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d357b5e21ca86d7ccf11f576a15bbd0e7a90e466
+ms.sourcegitcommit: a339547aa2f4e0f64b7afbcc3e1ade0a4f9287d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894656"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106171832"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio 所收集的系統產生記錄檔
 
@@ -70,7 +70,7 @@ Visual Studio 會收集系統產生的記錄檔，以尋找損毀、UI 無回應
 
 ## <a name="opt-out-of-data-collection"></a>選擇不使用資料收集
 
-了解我們所收集的資料和其存取和保留之條件約束的用途之後，我們建議您針對 Visual Studio 和 Windows 使用預設的隱私權設定。 不過，您可以[選擇退出](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) Visual Studio 經驗改進計畫。 若要選擇退出所有計畫的系統產生記錄檔收集，請參閱 [Windows 10 中的診斷、意見反應與隱私權](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)。 選項可能會根據您所使用的 Windows 版本而異。
+了解我們所收集的資料和其存取和保留之條件約束的用途之後，我們建議您針對 Visual Studio 和 Windows 使用預設的隱私權設定。 不過，您可以[選擇退出](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) Visual Studio 經驗改進計畫。 當您退出宣告時，您會退出宣告 **選擇性** 的診斷資料收集。 **需要** 進行某些診斷資料收集，以確定 Visual Studio 安全、最新狀態，並如預期般執行。 必要的診斷資料收集將不會受到您退出宣告 VSCEIP 的影響。 若要選擇退出所有計畫的系統產生記錄檔收集，請參閱 [Windows 10 中的診斷、意見反應與隱私權](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)。 選項可能會根據您所使用的 Windows 版本而異。
 
 ## <a name="see-also"></a>另請參閱
 

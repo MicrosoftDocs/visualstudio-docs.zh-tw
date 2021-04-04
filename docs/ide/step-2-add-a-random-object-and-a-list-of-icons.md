@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 496bf75495d864024ef587849edd554bfd435db5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d38ccb600894cec523bd06d46f0aee071af8796
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950883"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214339"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步驟 2：新增隨機物件和圖示清單
 
@@ -28,14 +28,14 @@ ms.locfileid: "99950883"
 
 ## <a name="to-add-a-random-object-and-a-list-of-icons"></a>新增隨機物件和圖示清單
 
-1. 在 [**方案總管** 中，如果您使用的是 c #，請選擇 [ *Form1.cs* ] *，如果您* 使用 Visual Basic，則選擇 [form1.vb]，然後在功能表列上選擇 [ **View**  >  **Code**]。 或者，您可以選擇 **F7** 鍵或按兩下方案總管中的 [Form1]。
+1. 在 **方案總管** 中，如果您使用的是 c #，請選擇 [form1.vb] *，如果您* 使用 Visual Basic，請 *選擇 [form1.vb* ]，然後在功能表列上選擇 [**視圖** 程式  >  **代碼**]。 或者，您可以選擇 **F7** 鍵或按兩下方案總管中的 [Form1]。
 
      這會顯示 Form1 背後的程式碼模組。
 
 2. 在現有的程式碼中，加入下列程式碼。
 
-     [!code-csharp[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/CSharp/step-2-add-a-random-object-and-a-list-of-icons_1.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb" id="Snippet1":::
 
       > [!IMPORTANT]
       > 您可以使用此頁面右上方的程式設計語言控制項來查看 c # 程式碼片段或 Visual Basic 程式碼片段。<br><br>![Docs.Microsoft.com 的程式設計語言控制項](../ide/media/docs-programming-language-control.png)
