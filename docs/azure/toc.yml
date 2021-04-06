@@ -40,7 +40,7 @@
   items:
     - name: 使用雲端服務專案
       items:
-        - name: '使用雲端服務 (延伸支援)  (Preview) '
+        - name: '使用雲端服務 (延伸支援) '
           href: cloud-services-extended-support.md
         - name: 建立 Azure 雲端服務專案
           href: vs-azure-tools-azure-project-create.md

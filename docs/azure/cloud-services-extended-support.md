@@ -1,5 +1,5 @@
 ---
-title: '使用雲端服務 (延伸支援)  (Preview) '
+title: '使用雲端服務 (延伸支援) '
 description: '立即瞭解如何使用 Azure Resource Manager 搭配 Visual Studio，建立及部署雲端服務 (延伸支援) '
 author: ghogen
 manager: jmartens
@@ -9,32 +9,26 @@ ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 39a76f4c76afb2ed0c738adfc477807eebfdbc61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 289bc88d9aef40fdc260ce84395b1c4b9237c689
+ms.sourcegitcommit: 2a50f4c1705baeee5c05580f04e3f468550f44e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841129"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106381593"
 ---
-# <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio-preview"></a>在 Visual Studio (Preview 中建立並部署至雲端服務 (延伸支援) ) 
+# <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio"></a>在 Visual Studio 中建立和部署至雲端服務 (延伸支援) 
 
-從 [Visual Studio 2019 16.9 版](https://visualstudio.microsoft.com/vs/preview) (目前為預覽) ，您可以使用 Azure Resource Manager 來使用雲端服務，這可大幅簡化及將其現代化 Azure 資源的維護和管理作業。 這項功能是由稱為「雲端服務」的新 Azure 服務 *(延伸支援)*。 您可以將現有雲端服務發行至雲端服務 (延伸支援) 。 如需此 Azure 服務的詳細資訊，請參閱 [雲端服務 (延伸支援) 檔](/azure/cloud-services-extended-support/overview)。
+從 [Visual Studio 2019 版本 16.9](https://visualstudio.microsoft.com/vs/)開始，您可以使用 Azure Resource Manager 來使用雲端服務，這可大幅簡化及將其現代化 Azure 資源的維護和管理作業。 這項功能是由稱為「雲端服務」的新 Azure 服務 *(延伸支援)*。 您可以將現有雲端服務發行至雲端服務 (延伸支援) 。 如需此 Azure 服務的詳細資訊，請參閱 [雲端服務 (延伸支援) 檔](/azure/cloud-services-extended-support/overview)。
 
 ## <a name="publish-to-cloud-services-extended-support"></a>發佈至雲端服務 (延伸支援) 
 
-當您將現有的 Azure 雲端服務專案發行至雲端服務時 (延伸支援) ，您仍然可以保留發行至傳統 Azure 雲端服務的功能。 在 Visual Studio 2019 16.9 Preview 3 （含）以後版本中，傳統雲端服務專案具有特殊版本的 **發佈** 命令， **發佈 (延伸支援)**。 此命令會出現在 **方案總管** 的快捷方式功能表中。
+當您將現有的 Azure 雲端服務專案發行至雲端服務時 (延伸支援) ，您仍然可以保留發行至傳統 Azure 雲端服務的功能。 在 Visual Studio 2019 16.9 版和更新版本中，傳統雲端服務專案具有特殊版本的 **發佈** 命令， **發佈 (延伸支援)**。 此命令會出現在 **方案總管** 的快捷方式功能表中。
 
-當您發佈至雲端服務 (延伸支援) 時，會有一些差異。 例如，系統不會詢問您是否要發行至 **預備** 或 **生產環境**，因為這些部署位置不是延伸支援發佈模型的一部分。 相反地，透過雲端服務 (延伸支援) ，您可以設定多個部署，然後在 Azure 入口網站中交換部署。 雖然 Visual Studio 的工具可讓您在 16.9 Preview 3 中進行設定，但在較新版本的雲端服務 (延伸支援) 之前，將不會啟用交換功能，而且可能會在預覽期間導致部署期間發生失敗。
+當您發佈至雲端服務 (延伸支援) 時，會有一些差異。 例如，系統不會詢問您是否要發行至 **預備** 或 **生產環境**，因為這些部署位置不是延伸支援發佈模型的一部分。 相反地，透過雲端服務 (延伸支援) ，您可以設定多個部署，然後在 Azure 入口網站中交換部署。 雖然 Visual Studio 的工具可讓您在16.9 中進行設定，但在較新版本的雲端服務 (延伸支援) 之前，將不會啟用交換功能，而且可能會在預覽期間導致部署期間發生失敗。
 
 將傳統的 Azure 雲端服務發佈至雲端服務 (延伸支援) 之前，請檢查您的專案所使用的儲存體帳戶，並確定其為儲存體 V1 或儲存體 V2 帳戶。 傳統儲存體帳戶類型會在部署時失敗，並顯示錯誤訊息。 請務必檢查診斷所使用的儲存體帳戶。 若要檢查診斷儲存體帳戶，請參閱 [設定 Azure 雲端服務和虛擬機器的診斷](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)。 如果您的服務使用傳統儲存體帳戶，您可以將它升級;請參閱 [升級為一般用途 v2 儲存體帳戶](/azure/storage/common/storage-account-upgrade?tabs=azure-portal)。  如需儲存體帳戶類型的一般資訊，請參閱 [儲存體帳戶總覽](/azure/storage/common/storage-account-overview)。
 
 ### <a name="to-publish-a-classic-azure-cloud-service-project-to-cloud-services-extended-support"></a>將傳統的 Azure 雲端服務專案發佈至雲端服務 (延伸支援) 
-
-1. 雲端服務 (延伸支援) 目前為預覽狀態。 註冊訂用帳戶的功能，如下所示：
-
-   ```azurepowershell-interactive
-   Register-AzProviderFeature -FeatureName CloudServices -ProviderNamespace Microsoft.Compute
-   ```
 
 1. 在 Azure 雲端服務中的專案節點上按一下滑鼠右鍵， (傳統) 專案]，然後選擇 [ **發行 (延伸支援) ...**]。[ **發行] 嚮導** 會在第一個畫面上開啟。
 
@@ -80,7 +74,7 @@ ms.locfileid: "99841129"
 
 1. 選擇 [ **下一步]** 以移至 [ **摘要** ] 頁面。
 
-   ![摘要](./media/cloud-services-extended-support/publish-summary.png)
+   ![總結](./media/cloud-services-extended-support/publish-summary.png)
 
 1. **目標設定檔** - 您可以選擇從您所選擇的設定建立發行設定檔。 例如，您可能會建立一個設定檔用於測試環境，並建立另一個用於生產。 若要儲存這個設定檔，請選擇 [**儲存**] 圖示。 此精靈會建立設定檔並將它儲存在 Visual Studio 專案。 若要修改設定檔名稱，請開啟 [目標設定檔] 清單，然後選擇 [**管理...]**。
 
