@@ -2,7 +2,7 @@
 title: Visual Studio 系統管理員指南
 titleSuffix: ''
 description: 深入了解如何在企業環境中部署 Visual Studio。
-ms.date: 07/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ea12076e41185e9de4ee10afe3056ff97403d6ea
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 0b86d8bc6d3533d2ed50eb4e87330a81f1028f13
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190199"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547410"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 系統管理員指南
 
-在企業環境中，系統管理員通常會透過網路共用，或是使用系統管理軟體，將安裝部署給終端使用者。 我們已設計 Visual Studio 安裝程式引擎來支援企業部署，讓系統管理員可以建立網路安裝位置、預先設定安裝預設、在安裝程序期間部署產品金鑰，以及在成功推出後管理產品更新。
+在企業環境中，系統管理員通常會從網路共用或使用系統管理軟體，將安裝部署給終端使用者。 我們已設計 Visual Studio 安裝程式引擎來支援企業部署，讓系統管理員可以建立網路安裝位置、預先設定安裝預設、在安裝程序期間部署產品金鑰，以及在成功推出後管理產品更新。
 
 此系統管理員指南針對網路環境中的企業部署，提供以案例為基礎的指導方針。
 
@@ -38,53 +38,45 @@ ms.locfileid: "96190199"
 
 * 確認每部目標電腦都符合[基本安裝需求](/visualstudio/releases/2019/system-requirements/)。
 
-* 決定您的服務需求。
-
-  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 如需詳細資訊，請參閱 [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)頁面的 ***Enterprise 和 Professional 客戶的支援選項** _ 一節，以及 [在服務基準頁面上的更新 Visual Studio](update-servicing-baseline.md) 。
-
-  如果您打算套用服務更新和累積的功能更新，您可以選擇最新版本。
-
-_ 決定更新模型。
-
-  您希望個別用戶端電腦在何處取得更新？ 具體來說，請決定要從網際網路或從全公司的本機共用取得更新。 接著，如果您選擇使用本機的共用，請決定要由個別使用者更新自己的用戶端，或由系統管理員以程式設計方式更新用戶端。
-
-  您可以使用最新的產品更新來更新 Visual Studio 的網路安裝配置，使其可作為最新的 Visual Studio 更新的安裝點，也能維護已部署至用戶端工作站的安裝。 如需詳細資訊，請參閱 [更新以網路為基礎的 Visual Studio 安裝](../install/update-a-network-installation-of-visual-studio.md)。
-
-  針對未連線到網際網路的電腦，建立最基本的版面配置是更新離線 Visual Studio 實例的最簡單且最快速的方式。 如需詳細資訊，請參閱 [使用基本的離線配置來更新 Visual Studio](update-minimal-layout.md)。
-
-* 決定您公司需要的[工作負載和元件](workload-and-component-ids.md?view=vs-2019&preserve-view=true)。
-
-* 決定是否要使用[回應檔案](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true) (可簡化指令碼檔案中的詳細資料管理作業)。
-
-* 決定要啟用群組原則，還是要將 Visual Studio 設定為停用個別電腦上的客戶回函。
-
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * 確認每部目標電腦都符合[基本安裝需求](/visualstudio/productinfo/vs2017-system-requirements-vs/)。
 
+::: moniker-end
+
 * 決定您的服務需求。
 
-  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 如需詳細資訊，請參閱 [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)頁面的 ***舊版 Visual Studio _ 支援** 一節，以及 [在服務基準頁面上的更新 Visual Studio](update-servicing-baseline.md) 。
+  如果您的公司需要長時間使用功能集，但仍想要取得服務的定期更新，請計劃使用服務基準。 For more information, see the ***Support options for Enterprise and Professional customers*** section of the [Visual Studio product lifecycle and servicing](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) page, as well as the [Update Visual Studio while on a servicing baseline](update-servicing-baseline.md) page.
 
-  如果您打算套用服務更新和累積的功能更新，您可以選擇最新版本。
+* 決定更新模型。
 
-_ 決定更新模型。
-
-  您希望個別用戶端電腦在何處取得更新？ 具體來說，請決定要從網際網路或從全公司的本機共用取得更新。 接著，如果您選擇使用本機的共用，請決定要由個別使用者更新自己的用戶端，或由系統管理員以程式設計方式更新用戶端。
+  您要讓個別用戶端電腦從中取得產品更新的位置？ 具體而言，請決定是否要讓用戶端從網際網路或全公司的本機共用取得更新。 接著，如果您選擇使用本機的共用，請決定要由個別使用者更新自己的用戶端，或由系統管理員以程式設計方式更新用戶端。 最好是在用戶端電腦上執行原始安裝之前做出這些決策。 如需詳細資訊，請參閱[建立 Visual Studio 的網路型安裝](../install/create-a-network-installation-of-visual-studio.md)。
 
   您可以使用最新的產品更新來更新 Visual Studio 的網路安裝配置，使其可作為最新的 Visual Studio 更新的安裝點，也能維護已部署至用戶端工作站的安裝。 如需詳細資訊，請參閱 [更新以網路為基礎的 Visual Studio 安裝](../install/update-a-network-installation-of-visual-studio.md)。
 
+  利用企業部署工具的組織可以利用 Microsoft Update 目錄和 Windows Server Update Services 上 Visual Studio 更新的事實。 如需詳細資訊，請參閱 [啟用系統管理員更新](../install/enabling-administrator-updates.md) 和套用 [系統管理員更新](../install/applying-administrator-updates.md)。
+
   針對未連線到網際網路的電腦，建立最基本的版面配置是更新離線 Visual Studio 實例的最簡單且最快速的方式。 如需詳細資訊，請參閱 [使用基本的離線配置來更新 Visual Studio](update-minimal-layout.md)。
+
+::: moniker range="vs-2019"
+
+* 決定您公司需要的[工作負載和元件](workload-and-component-ids.md?view=vs-2019&preserve-view=true)。
+
+* 決定是否要使用[回應檔案](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true) (可簡化指令碼檔案中的詳細資料管理作業)。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 * 決定您公司需要的[工作負載和元件](workload-and-component-ids.md?view=vs-2017&preserve-view=true)。
 
 * 決定是否要使用[回應檔案](automated-installation-with-response-file.md?view=vs-2017&preserve-view=true) (可簡化指令碼檔案中的詳細資料管理作業)。
 
-* 決定要啟用群組原則，還是要將 Visual Studio 設定為停用個別電腦上的客戶回函。
-
 ::: moniker-end
+
+* 決定要啟用群組原則，還是要將 Visual Studio 設定為停用個別電腦上的客戶回函。
 
 ::: moniker range="vs-2019"
 
@@ -109,21 +101,21 @@ _ 決定更新模型。
 
 * (選擇性) 設定群組原則。 您也可以[將 Visual Studio 設定為停用個別電腦上的客戶意見反應](../ide/visual-studio-experience-improvement-program.md)。
 
-## <a name="step-3---deploy"></a>步驟 3 - 部署
+## <a name="step-3---deploy-updates"></a>步驟 3-部署更新
 
-* 使用選擇的部署技術，在目標開發人員工作站上執行指令碼。
-
-## <a name="step-4---deploy-updates"></a>步驟 4 - 部署更新
+使用選擇的部署技術，在目標開發人員工作站上執行指令碼。
 
 * 定期執行您在步驟1中所使用的命令來新增更新的元件，以[更新您的網路位置，並提供](update-a-network-installation-of-visual-studio.md?view=vs-2019&preserve-view=true)Visual Studio 的最新更新。
 
   您可以使用更新指令碼來更新 Visual Studio。 若要這樣做，請使用 [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) 命令列參數。
 
-## <a name="step-5---optional-use-visual-studio-tools"></a>步驟 5 - (選擇性) 使用 Visual Studio Tools
+  您可以使用 System Center 設定管理員等工具，從 Windows Server Update Services 或 Microsoft Update 類別目錄部署 Visual Studio 更新。  如需詳細資訊，請參閱套用 [系統管理員更新](applying-administrator-updates.md) 。 
+
+## <a name="step-4---optional-use-visual-studio-tools-to-verify-installation"></a>步驟 4- (選用) 使用 Visual Studio 工具來確認安裝
 
 我們提供數種工具來協助您[偵測和管理用戶端電腦上已安裝的 Visual Studio 執行個體](tools-for-managing-visual-studio-instances.md?view=vs-2019&preserve-view=true)。
 
-## <a name="advanced-configuration"></a>進階設定
+## <a name="advanced-configuration"></a>進階組態
 
 根據預設，Visual Studio 安裝可讓您從錯誤清單 F1 和程式碼連結，在 Bing 搜尋中包含自訂類型。 您可以藉由依原則變更下列登錄機碼的值，將 Visual Studio 設定為停用搜尋機制，使其不包含任何自訂使用者類型：
 
@@ -156,27 +148,27 @@ _ 決定更新模型。
 
 * (選擇性) 設定群組原則。 您也可以[將 Visual Studio 設定為停用個別電腦上的客戶意見反應](../ide/visual-studio-experience-improvement-program.md)。
 
-## <a name="step-3---deploy"></a>步驟 3 - 部署
+## <a name="step-3---deploy-updates"></a>步驟 3-部署更新
 
-* 使用選擇的部署技術，在目標開發人員工作站上執行指令碼。
-
-## <a name="step-4---deploy-updates"></a>步驟 4 - 部署更新
+使用選擇的部署技術，在目標開發人員工作站上執行指令碼。
 
 * 定期執行您在步驟1中所使用的命令來新增更新的元件，以[更新您的網路位置，並提供](update-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true)Visual Studio 的最新更新。
 
   您可以使用更新指令碼來更新 Visual Studio。 若要這樣做，請使用 [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) 命令列參數。
 
-## <a name="step-5---optional-use-visual-studio-tools"></a>步驟 5 - (選擇性) 使用 Visual Studio Tools
+  您可以使用 System Center 設定管理員等工具，從 Windows Server Update Services 或 Microsoft Update 類別目錄部署 Visual Studio 更新。 如需詳細資訊，請參閱套用 [系統管理員更新](applying-administrator-updates.md)。
+
+## <a name="step-4---optional-use-visual-studio-tools-to-verify-installation"></a>步驟 4- (選用) 使用 Visual Studio 工具來確認安裝
 
 我們提供數種工具來協助您[偵測和管理用戶端電腦上已安裝的 Visual Studio 執行個體](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true)。
 
-## <a name="advanced-configuration"></a>進階設定
+## <a name="advanced-configuration"></a>進階組態
 
 根據預設，Visual Studio 安裝可讓您從錯誤清單 F1 和程式碼連結，在 Bing 搜尋中包含自訂類型。 您可以藉由依原則變更下列登錄機碼的值，將 Visual Studio 設定為停用搜尋機制，使其不包含任何自訂使用者類型：
 
 **"PutCustomTypeInBingSearch" DWORD 0**
 
-登錄位於您私用登錄區的 * Software\Microsoft\VisualStudio\15.0_ {InstanceId} \ Roslyn\Internal\Diagnostics \* 目錄中。 如需如何開啟登錄 hive 的指示，請參閱 [編輯 Visual Studio 實例的](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance)登錄。
+登錄位於 `Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\` 您私人登錄 hive 的目錄中。 如需如何開啟登錄 hive 的指示，請參閱 [編輯 Visual Studio 實例的](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance)登錄。
 
 ::: moniker-end
 
@@ -184,6 +176,8 @@ _ 決定更新模型。
 
 ## <a name="see-also"></a>另請參閱
 
+* [啟用系統管理員更新](enabling-administrator-updates.md)
+* [套用系統管理員更新](applying-administrator-updates.md)
 * [命令列參數範例](command-line-parameter-examples.md)
 * [安裝 Visual Studio 離線安裝所需的憑證](install-certificates-for-visual-studio-offline.md)
 * [匯入或匯出安裝組態](import-export-installation-configurations.md)

@@ -2,7 +2,7 @@
 title: 用於偵測及管理 Visual Studio 執行個體的工具
 titleSuffix: ''
 description: 深入了解您可用來偵測及管理用戶端電腦上 Visual Studio 安裝的工具。
-ms.date: 08/14/2017
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,34 +16,51 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: efd4091407d228a15cc80971d759e5371bddd3ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b6b641081c9b969cadd2c9517967adb8cc4cb1e
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959255"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547436"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>用於偵測及管理 Visual Studio 執行個體的工具
 
-有數個工具，您可以使用來偵測用戶端電腦上的 Visual Studio 安裝，以及管理安裝。
+您可以使用數個工具來偵測用戶端電腦上的 Visual Studio 安裝，以及管理安裝。
 
 ## <a name="detecting-existing-visual-studio-instances"></a>偵測現有的 Visual Studio 執行個體
 
-我們提供許多工具來協助您偵測和管理用戶端電腦上已安裝的 Visual Studio 執行個體︰
+下列工具和公用程式可協助您偵測和管理用戶端電腦上已安裝的 Visual Studio 實例：
 
-* [vswhere](https://github.com/microsoft/vswhere)：內建于 Visual Studio 或可用於個別散發的可執行檔，可協助您尋找特定電腦上所有 Visual Studio 實例的位置。
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell)︰PowerShell 指令碼，使用安裝程式組態 API 來識別已安裝的 Visual Studio 執行個體。
-* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples)：C# 和 C++ 範例，示範如何使用安裝程式組態 API 來查詢現有安裝。
-
-此外，[安裝程式組態 API](<xref:Microsoft.VisualStudio.Setup.Configuration>) 還提供介面，讓想要建置其專屬公用程式的開發人員查閱 Visual Studio 執行個體。
+* [**vswhere**](https://github.com/microsoft/vswhere)：內建于 Visual Studio 或可用於個別散發的可執行檔，可協助您尋找特定電腦上所有 Visual Studio 實例的位置。
+* [**Vssetup.powershell**](https://github.com/microsoft/vssetup.powershell)： powershell 腳本，使用安裝設定 API 來識別 Visual Studio 的已安裝實例。
+* [**VS-設定-範例**](https://github.com/microsoft/vs-setup-samples)： c # 和 c + + 範例，示範如何使用安裝程式設定 API 來查詢現有安裝。
+* [**Windows Management Instrumentation (WMI)**](https://docs.microsoft.com/windows/win32/wmisdk/wmi-start-page)：可透過 Visual Studio 類別 MSFT_VSInstance 查詢 Visual Studio 實例資訊。 
+* [**安裝程式設定 API**](<xref:Microsoft.VisualStudio.Setup.Configuration>)提供的介面可供開發人員想要為詢問 Visual Studio 實例建立自己的公用程式。
+* [**Microsoft Endpoint Configuration Manager 軟體清查**](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)：可以用來收集用戶端裝置上 Visual Studio 實例的相關資訊。 
 
 ## <a name="using-vswhereexe"></a>使用 vswhere.exe
 
-`vswhere.exe` 會自動包含在 Visual Studio (從 Visual Studio 2017 15.2 版和更新版本) 開始，您也可以從 [[vswhere 版本] 頁面](https://github.com/Microsoft/vswhere/releases)下載。 使用 `vswhere -?` 來取得該工具的說明資訊。 作為範例，此命令會顯示 Visual Studio 的所有版本 (包括產品的較舊版本及發行前版本)，並以 JSON 格式輸出結果：
+`vswhere.exe` 會自動包含在 Visual Studio 2017 和更新版本中，或者您可以從 [[vswhere 版本] 頁面](https://github.com/Microsoft/vswhere/releases)下載。 使用 `vswhere -?` 來取得該工具的說明資訊。 例如，此命令會顯示 Visual Studio 的所有版本（包括舊版的產品和發行前版本），並以 JSON 格式輸出結果：
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+
+## <a name="using-windows-management-instrumentation-wmi"></a>使用 Windows Management Instrumentation (WMI) 
+
+如果電腦上已安裝 Visual Studio 用戶端偵測器公用程式，您可以使用 WMI 查詢 Visual Studio 的實例資訊。 Visual Studio 用戶端偵測器公用程式預設會隨每個 Visual Studio 2017 和 Visual Studio 2019 更新（在2020年5月12日或之後發行）進行安裝。 如果您想要獨立安裝，也可以在 [Microsoft Update 目錄](https://catalog.update.microsoft.com/) 中取得。  如需如何使用公用程式傳回 Visual Studio 實例資訊的範例，請在用戶端電腦上以系統管理員身分開啟 PowerShell，然後輸入下列命令：
+
+```cmd
+Get-CimInstance MSFT_VSInstance
+```
+
+## <a name="using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 
+
+[Microsoft Endpoint Configuration Manager 軟體清查](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) 功能可以用來查詢和收集用戶端裝置上 Visual Studio 實例的相關資訊。 例如，下列查詢會針對所有已安裝的 Visual Studio 2017 和2019實例，傳回 Visual Studio 安裝所在的顯示名稱、版本和裝置名稱： 
+
+```WQL 
+select distinct SMS_G_System_COMPUTER_SYSTEM.Name, SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName, SMS_G_System_ADD_REMOVE_PROGRAMS.Version from SMS_R_System inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceID = SMS_R_System.ResourceId inner join SMS_G_System_ADD_REMOVE_PROGRAMS on SMS_G_System_ADD_REMOVE_PROGRAMS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName like "Visual Studio %[a-z]% 201[7,9]" 
+``` 
 
 ::: moniker range="vs-2017"
 
@@ -82,4 +99,4 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 
 ## <a name="see-also"></a>另請參閱
 
-* [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
+* [Visual Studio 系統管理員指南](../install/visual-studio-administrator-guide.md)

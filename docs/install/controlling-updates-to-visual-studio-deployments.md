@@ -1,7 +1,7 @@
 ---
 title: 控制部署的更新
 description: 深入了解當您從網路安裝時如何變更 Visual Studio 尋找更新的位置。
-ms.date: 03/30/2019
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,22 +15,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ffa088de8852b0d5884cd4d9db5e65e1c179164b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8360c48e9868f6ed5d81fffc748d050404211228
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868539"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547488"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>控制網路型 Visual Studio 部署的更新
 
-企業系統管理員通常會建立配置，並將配置裝載於網路檔案共用上，以部署給終端使用者。
+企業系統管理員通常會建立配置，並將其裝載于網路檔案共用上，以部署至其終端使用者。 此頁面說明如何正確地設定網路設定選項。 
 
 ## <a name="controlling-where-visual-studio-looks-for-updates"></a>控制 Visual Studio 尋找更新的位置
 
-根據預設，即使從網路共用中部署安裝，Visual Studio 仍然會持續在線上尋找更新。 如果有可用的更新，使用者即可安裝它。 從 Web 下載離線配置中找不到的任何已更新內容。
+**案例1：用戶端原本是從配置安裝，但設定為從網路設定位置或 web 接收更新**
 
-如果您想要直接控制 Visual Studio 如何查看更新，則可以修改它所尋找的位置。 您也可以控制您的使用者要更新的目標版本。 若要這樣做，請依照下列步驟執行：
+根據預設，即使安裝原本是從網路共用部署，Visual Studio 仍會繼續線上尋找更新。 如果網路上有可用的更新，則使用者可以安裝該更新。 雖然系統會先針對任何更新的產品位檢查網路設定快取，如果找不到，則 Visual Studio 會從 web 尋找並下載更新的產品位。
+
+**案例2：原本安裝的用戶端應該只從網路設定接收更新**
+
+如果您想要控制 Visual Studio 用戶端尋找更新的位置，例如，如果您的用戶端電腦沒有網際網路存取，而且您想要確保它只會從配置中進行安裝，則您可以設定用戶端安裝程式尋找更新產品位的位置。 最好先確定已正確設定這項設定，然後用戶端才會從配置進行初始安裝。 
 
 1. 建立離線配置：
 
@@ -44,7 +48,7 @@ ms.locfileid: "99868539"
    xcopy /e C:\vsoffline \\server\share\VS
    ```
 
-3. 修改配置中的 response.json 檔案，並變更 `channelUri` 值，以指向系統管理員所控制的 channelManifest.json 複本。
+3. 修改配置 `response.json` 中的檔案，並將 `channelUri` 值變更為指向系統管理員控制的 channelManifest.js複本。
 
    請務必在值中逸出反斜線，如下列範例所示：
 
@@ -52,7 +56,7 @@ ms.locfileid: "99868539"
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
 
-   使用者現在就可以從這個共用執行安裝程式，以安裝 Visual Studio。
+   終端使用者現在可以從這個共用執行安裝程式，以安裝 Visual Studio。
 
    ```cmd
    \\server\share\VS\vs_enterprise.exe
@@ -66,15 +70,20 @@ ms.locfileid: "99868539"
    vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
 
-2. 請確認已更新配置中的 response.json 檔案仍然包含您的自訂，尤其是 channelUri 修改，如下所示：
+2. 確定 `response.json` 已更新版面配置中的檔案仍包含您的自訂專案，特別是 channelUri 修改，如下所示：
 
    ```json
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
 
-   來自此配置的現有 Visual Studio 安裝會在 `\\server\share\VS\ChannelManifest.json` 上尋找更新。 如果 channelManifest.json 比使用者安裝的還新，Visual Studio 會通知使用者有可用的更新。
+來自此配置的現有 Visual Studio 安裝會在 `\\server\share\VS\ChannelManifest.json` 上尋找更新。 如果 channelManifest.json 比使用者安裝的還新，Visual Studio 會通知使用者有可用的更新。
 
-   新的安裝會直接從配置中自動安裝已更新的 Visual Studio 版本。
+從用戶端起始的任何安裝更新都會自動直接從配置安裝更新版的 Visual Studio。
+
+**案例3：用戶端原本是從 web 安裝，但現在應該只從網路設定接收更新**
+
+在某些情況下，用戶端電腦可能已從 web 安裝 Visual Studio，但現在系統管理員想要讓所有未來的更新都來自受控版面配置。 唯一支援的方法是建立具有所需產品版本的網路設定，然後在用戶端電腦上， _從配置位置_ 執行啟動載入器 (例如 `\\network\share\vs_enterprise.exe`) 。 在理想的情況下，原始用戶端安裝會使用啟動載入器從網路設定使用正確設定的 ChannelURI 進行，但是從網路設定位置執行更新的啟動載入器也可以運作。 其中一個動作會在用戶端電腦上，以該特定版面配置位置的連接來內嵌。 這種情況下，唯一需要注意的是，設定檔案中的 "ChannelURI" `response.json` 必須與在原始安裝發生時在用戶端電腦上設定的 ChannelURI 相同。 這個值最有可能是設定為網際網路 [發行頻道](https://aka.ms/vs/16/release/channel)。 
+
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>控制 Visual Studio IDE 中的通知
 
@@ -94,7 +103,7 @@ ms.locfileid: "99868539"
 
 ::: moniker-end
 
-如果您不想要通知使用者有可用的更新，則可以停用通知。 (例如，如果您透過中央軟體散發機制提供更新，則可能會想要停用通知)。
+如果您不想讓終端使用者收到更新通知，可以停用通知。 (例如，如果您透過中央軟體散發機制提供更新，則可能會想要停用通知)。
 
 ::: moniker range="vs-2017"
 
@@ -125,8 +134,9 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝 Visual Studio](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
+* [啟用系統管理員更新](enabling-administrator-updates.md)
+* [套用系統管理員更新](applying-administrator-updates.md)
 * [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)
 * [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)

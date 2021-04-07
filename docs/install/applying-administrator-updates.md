@@ -2,7 +2,7 @@
 title: 使用 Microsoft Endpoint Configuration Manager 將系統管理員更新套用至 Visual Studio
 titleSuffix: ''
 description: 瞭解如何將系統管理員更新套用至 Visual Studio。
-ms.date: 03/10/2021
+ms.date: 04/06/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 78c2de8b1d1ffb28cc536b770bf6bd9a4ab0aa35
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: d316fc35df8c571a9112d7a653737e099df80559
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105617322"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547449"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>套用使用 Microsoft Endpoint Configuration Manager 的系統管理員更新
 
@@ -44,52 +44,70 @@ Visual Studio 系統管理員更新適用于受支援的 Visual Studio 服務版
 
 每個系統管理員更新的標題都會描述適用的版本範圍和更新的結果版本。例如，
 
-* 將16.7.12 更新分類為「安全性更新」的 **Visual Studio 2019 版本 16.7.0** ，將會套用至用戶端上的任何 Visual Studio 版本（透過 16.7.12 16.7.0），並將這些用戶端版本更新為16.7.12。  
+::: moniker range="vs-2017"
 
-* 將16.9.0 更新分類為「功能套件」的 **Visual Studio 2019 版本16.0.0 版**，將會套用到用戶端上從16.0.0 版到16.9.0 的整個產品版本範圍內選取 Visual Studio 版本，並且會更新這些用戶端版本 (尚未設定為維持在先前的維護基準) 到16.9.0。 
+* **Visual Studio 2017 版本 15.9.0 15.9.35 更新** 分類為「安全性更新」時，將會套用至用戶端上的 Visual Studio 任何2017版，這些版本是透過 15.9.35 15.9.0 的版本，並且會將這些用戶端版本更新為15.9.35。
 
-* **Visual Studio 2019 版本16.8.0 至16.8.7 更新** 分類為單純的「更新」，則會套用到在用戶端上選取的 Visual Studio 版本，以16.8.0 至16.8.7 之間的版本，並將這些用戶端版本更新為16.8.7。 
+* **15.0.0 版2017版的15.9.0 更新** 分類為「Feature Pack」，將適用于在15.0.0 版至15.9.0 的整個產品版本範圍之間，在用戶端上授權供企業使用的 Visual Studio 2017 版，並將這些用戶端版本更新為15.9.0。 Visual Studio 套用此功能套件基本上可讓用戶端接收安全性更新。 
+
+* **Visual Studio 2017 版本的15.9.37 更新** 分類為單純的「更新」，將會套用至在用戶端上針對企業使用所授權的 Visual Studio 2017 版本（從15.9.0 到15.9.37 的版本之間），並將這些用戶端版本更新為15.9.37。 
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+* **Visual Studio 2019 版本 16.7.0 16.7.12 更新** 分類為「安全性更新」時，將會套用至用戶端上的 Visual Studio 任何2019版，這些版本是透過 16.7.12 16.7.0 的版本，並且會將這些用戶端版本更新為16.7.12。  
+
+* **Visual Studio 2019 版的16.9.0 更新** 分類為「Feature Pack」，將適用于在16.0.0 版至16.9.0 的整個產品版本範圍之間，于用戶端上以企業用途授權的 Visual Studio 2019 版本，並且會更新尚未設定為維持在舊版服務基準) 16.9.0 的用戶端 (版本。 
+
+* **Visual Studio 2019 版本的16.8.7 更新** 分類為單純的「更新」，將會套用至在用戶端上針對企業使用所授權的 Visual Studio 2019 版本（從16.8.0 到16.8.7 的版本之間），並將這些用戶端版本更新為16.8.7。 
+
+::: moniker-end
 
 ## <a name="using-configuration-manager-to-deploy-visual-studio-updates"></a>使用設定管理員部署 Visual Studio 更新
 
 ### <a name="understanding-configuration-options"></a>瞭解設定選項
 
-有幾個設定選項可用來自訂 Visual Studio 系統管理員更新，使其相容並符合您組織的部署需求。 最常見的選項如下所示。  如需系統管理員更新所支援之所有命令列參數的詳盡清單，請參閱 [使用命令列參數安裝 Visual Studio 檔](../install/use-command-line-parameters-to-install-visual-studio.md) ，並只需注意與「更新」動作對應的程式。
+有幾個設定選項可用來自訂 Visual Studio 系統管理員更新，使其相容並符合您組織的部署喜好設定和需求。 最常見的設定選項如下所示。 如需所有支援之系統管理員更新行為的詳盡清單，請參閱 [使用命令列參數安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) ，並只需注意與「更新」動作對應的程式。
 
-* **系統管理員更新加入宣告**：需要 [啟用系統管理員更新](../install/enabling-administrator-updates.md) 中所述的登錄機碼，用戶端電腦才能接收系統管理員更新。 它是全電腦的金鑰，這表示它適用于所有安裝在 box Visual Studio 實例。 
+* **[系統管理員更新加入宣告](../install/enabling-administrator-updates.md#encoding-administrator-intent-on-the-client-machines)**：需要此登錄機碼才能讓用戶端電腦接收系統管理員更新。 它是全電腦的金鑰，這表示它適用于所有安裝在 box Visual Studio 實例。 
  
-* **開發人員退出**：開發人員可以使用個別全電腦的 **AdministratorUpdatesOptOut**   金鑰，以 *選擇* 不接收 Visual Studio 系統管理員更新。 此金鑰的目的是要將 Visual Studio 使用者的意圖編碼。 若要將用戶端電腦設定為封鎖系統管理員更新，請將 **AdministratorUpdatesOptOut**   REG_DWORD 機碼設定為 **1**。 缺少索引鍵或設定值為 **0**，表示 Visual Studio 使用者想要接收 Visual Studio 的系統管理員更新。
+* **Visual Studio 使用者退出**： Visual Studio 使用者可以使用個別的全電腦 **AdministratorUpdatesOptOut** 登錄機碼，以 *選擇* 不接收 Visual Studio 系統管理員更新。 此金鑰的目的是要讓 Visual Studio 的使用者有權控制自動套用至電腦的更新。 若要將用戶端電腦設定為封鎖系統管理員更新，請將 **AdministratorUpdatesOptOut**   REG_DWORD 機碼設定為 **1**。 缺少索引鍵或設定值為 **0**，表示 Visual Studio 使用者想要接收 Visual Studio 的系統管理員更新。
 
-    請注意， ****   編碼開發人員意圖的 AdministratorUpdatesOptOut 金鑰 () 會優先于 **AdministratorUpdatesEnabled** 索引   鍵，以將 IT 系統管理員意圖編碼。 如果 **AdministratorUpdatesOptOut**   設定為 **1**，則即使 **AdministratorUpdatesEnabled** 索引   鍵也設為 **1**，也會在用戶端上封鎖更新。此動作會假設 IT 系統管理員可以存取並監視哪些開發人員退出宣告，而雙方接著可以討論其需求更重要。IT 系統管理員隨時都可以在需要時變更任何金鑰。
+    請注意， ****   編碼使用者喜好設定的 AdministratorUpdatesOptOut 索引鍵會優先于 **AdministratorUpdatesEnabled**   金鑰，以將 IT 系統管理員意圖編碼。 如果 **AdministratorUpdatesOptOut**   設定為 **1**，則即使 **AdministratorUpdatesEnabled** 索引   鍵也設為 **1**，也會在用戶端上封鎖更新。此動作會假設 IT 系統管理員可以存取並監視哪些開發人員退出宣告，而雙方接著可以討論其需求更重要。IT 系統管理員隨時都可以在需要時變更任何金鑰。
  
-* **更新產品位的位置**：大多數時間，用戶端電腦會透過 Microsoft CDN 從網際網路下載更新的產品位。 此案例要求用戶端電腦必須能夠存取網際網路。 不過，某些企業會將用戶端電腦限制為只安裝和更新內部網路設定位置的 bits。 若要確保系統管理員更新可以從內部網路位置套用，下列條件必須成立： 
+* **更新產品位的位置**：大多數時間，用戶端電腦會透過 Microsoft CDN 從網際網路下載更新的產品位。 此案例要求用戶端電腦必須能夠存取網際網路。 不過，某些企業會將用戶端電腦限制為只安裝和更新內部網路設定位置的 bits。 若要確保系統管理員可以使用內部網路位置上的更新位來套用系統管理員更新，必須符合下列條件，才能成功部署系統管理員更新： 
 
-  - 用戶端電腦最初必須從網路設定位置安裝產品 (也就是本機安裝快取) 。 
-  - 該網路版面配置位置 (原本安裝自) 的用戶端已更新為包含系統管理員更新所指定 [的更新產品位](../install/update-a-network-installation-of-visual-studio.md) 。 
- 
-* **即使 Visual Studio 正在使用中，仍強制進行更新**：在安裝更新之前，必須先關閉 Visual Studio。 如果 Visual Studio 已開啟或正在使用中，更新安裝將會中止。 確保關閉 Visual Studio 的簡單方式，是將確認管理員設定為在機器重新開機後立即套用更新。 您也可以使用 `--force` 參數來強制關閉 Visual Studio。 強制關閉 Visual Studio 可能會導致工作遺失，因此請小心使用。 在預設系統內容中執行系統管理員更新將會忽略 `–-force` 旗標，因此您必須將系統管理員更新設定為在使用者內容中執行。
- 
+  - 在某個時間點，用戶端電腦必須已從該網路設定位置執行啟動載入器。 在理想情況下，原始用戶端安裝會使用從網路設定的啟動載入器進行，但是也可以在相同的網路位置中使用更新的啟動載入器來安裝更新。 其中一個動作會在用戶端電腦上，以該特定版面配置位置的連接來內嵌。   
+  - 網路設定位置 (用戶端連線到) 必須更新，以包含系統管理員更新要部署 [的更新產品位](../install/update-a-network-installation-of-visual-studio.md) 。 
+
+::: moniker range="vs-2019"
+
 * **維護基準** 的內容：如上所述，功能更新的系統管理員更新會將 Visual Studio 安裝前進到產品的最新次要版本。 不過，有時候開發小組會維持在特定穩定且安全的服務基準層級，並想要控制其用戶端前進至較新的次要版本。 若要將用戶端電腦設定為維持服務基準，並忽略傳送給它的不想要的系統管理員功能更新，您必須建立 **BaselineStickinessVersions2019** Reg_SZ 資料值，並將其設定為代表用戶端電腦可以貼齊並保持開啟之允許基準的字串。  此字串可以包含一連串的服務基準版本，並以逗號分隔，例如 **16.4.0 版、16.7.0**。 您也可以在字串中包含任意數目的服務基準版本，而且 **全部** 都是參考所有支援服務基準的縮寫。 
 
      如果登錄 `BaselineStickinessVersions2019` 值的格式不正確，則所有功能更新都會遭到封鎖而無法安裝在電腦上。 此外，請注意 [Visual Studio 功能更新的支援時程表](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)。 雖然技術上可能會套用已達到存留期結束的功能更新，但我們不建議您這麼做，因為它們會不受支援，因此可能不安全。
+
+::: moniker-end
+
+* **即使 Visual Studio 正在使用中，仍強制進行更新**：在安裝更新之前，必須先關閉 Visual Studio。 如果 Visual Studio 已開啟或正在使用中，更新安裝將會中止。 確保關閉 Visual Studio 的簡單方式，是將確認管理員設定為在機器重新開機後立即套用更新。 您也可以使用 `--force` 參數來強制關閉 Visual Studio。 強制關閉 Visual Studio 可能會導致工作遺失，因此請小心使用。 在預設系統內容中執行系統管理員更新將會忽略 `–-force` 旗標，因此您必須將系統管理員更新設定為在使用者內容中執行。
 
 ### <a name="methods-for-configuring-an-administrator-update"></a>設定系統管理員更新的方法
 
 有三種主要的方法可以設定系統管理員更新：登錄機碼、用戶端電腦上的設定檔，或設定管理員部署套件本身的修改。   
 
-* 登錄機 **碼**：系統管理員更新會尋找任何標準 Visual Studio 位置中的特定登錄機碼，如 [設定企業部署的預設值] 檔中所述。 由登錄機碼控制的選項是 **AdministratorUpdatesOptOut** Reg_DWORD、 **AdministratorUpdatesOptOut**   Reg_DWORD 和 **BaselineStickinessVersions2019** Reg_SZ 等專案。 需要用戶端電腦上的系統管理員存取權，才能建立及設定登錄機碼的值。 
+* 登錄機 **碼**：系統管理員更新會尋找任何標準 Visual Studio 位置中的特定登錄機碼，如 [設定企業部署的預設值](../install/set-defaults-for-enterprise-deployments.md)中所述。 由登錄機碼控制的選項是 **AdministratorUpdatesOptOut** Reg_DWORD、 **AdministratorUpdatesOptOut**   Reg_DWORD 和 **BaselineStickinessVersions2019** Reg_SZ 等專案。 需要用戶端電腦上的系統管理員存取權，才能建立及設定登錄機碼的值。 
  
-* **設定檔**：某些設定可以保留在用戶端電腦上的選擇性設定檔中，此設定檔的優點是只將它設定為一次，並將它套用至所有未來的系統管理員更新。 設定檔方法的行為就像是登錄機碼，而且是電腦範圍，這表示它會套用至用戶端電腦上安裝的 Visual Studio 的所有安裝。 設定檔案的標準位置為 `C:\ProgramData\Microsoft\VisualStudio\updates.config` 。 但是，如果您想要使用另一個位置來儲存檔案，您可以建立名為 **UpdateConfigurationFile** 的 Reg_SZ 登錄機碼，並將此機碼的值設定為設定檔的路徑。 此登錄機碼可放置在任何 Visual Studio 登錄位置中，如「 [設定企業部署的預設值](../install/set-defaults-for-enterprise-deployments.md)」中所述。 如果您選擇新增自訂設定檔位置的登錄值，它會尋找該檔案;如果檔案不存在，則會擲回例外狀況，且更新會失敗。    
+* **設定檔**：某些設定可以保留在用戶端電腦上的選擇性設定檔中，此設定檔的優點是只將它設定為一次，並將它套用至所有未來的系統管理員更新。 設定檔方法的行為就像是登錄機碼，而且是電腦範圍，這表示它會套用至用戶端電腦上安裝的 Visual Studio 的所有安裝。 設定檔案的標準位置為 `C:\ProgramData\Microsoft\VisualStudio\updates.config` 。 但是，如果您想要使用另一個位置來儲存檔案，您可以建立名為 **UpdateConfigurationFile** 的 Reg_SZ 登錄機碼，並將此機碼的值設定為設定檔的路徑。 此登錄機碼可放置在任何 Visual Studio 登錄位置中，如 [設定企業部署的預設值](../install/set-defaults-for-enterprise-deployments.md)中所述。 如果您選擇新增自訂設定檔位置的登錄值，它會尋找該檔案;如果檔案不存在，則會擲回例外狀況，且更新會失敗。    
  
-設定檔（採用 JSON 格式）支援選項， `installerUpdateArgs` 這是以逗號分隔的字串陣列，可指定可傳遞給 Visual Studio 安裝程式的更多參數。 如果檔案的內容包含不正確欄位或不支援的選項，則更新將會失敗。 如需詳細資訊，請參閱 [使用命令列參數來安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)。
+     設定檔（採用 JSON 格式）支援選項， `installerUpdateArgs` 這是以逗號分隔的字串陣列，可指定可傳遞給 Visual Studio 安裝程式的更多參數。 如果檔案的內容包含不正確欄位或不支援的選項，則更新將會失敗。 如需詳細資訊，請參閱 [使用命令列參數來安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)。
  
-以下是範例設定檔案： 
+   以下是範例設定檔案： 
 
-```
-“installerUpdateArgs” : [“--quiet”, “--noWeb”], 
+   ```
+   “installerUpdateArgs” : [“--quiet”, “--noWeb”], 
 
-“checkPendingReboot” :  “true” 
-```
+   “checkPendingReboot” :  “true” 
+   ```
 
 * **在 sccm 中手動更新系統管理員更新套件**：您也可以手動修改 sccm 中個別系統管理員更新套件的命令列參數。
 
@@ -133,9 +151,9 @@ Visual Studio 系統管理員更新適用于受支援的 Visual Studio 服務版
 
 您可以使用下列方法來提供有關 Visual Studio 系統管理員更新的意見反應，或回報影響更新的問題：
 * 請參閱 [疑難排解 Visual Studio 安裝和升級問題](../install/troubleshooting-installation-issues.md) 的指引。
-* 在 [視覺設定 Q&論壇](https://docs.microsoft.com/answers/topics/vs-setup.html)提出問題。
+* 在 [Visual Studio 設定 Q&論壇](https://docs.microsoft.com/answers/topics/vs-setup.html)中詢問有關社區的問題。
 * 移至 [ [Visual Studio 支援] 頁面](https://visualstudio.microsoft.com/vs/support/)，並檢查問題是否列在常見問題中。  您也可以選取 [交談說明] 的 [ [支援連結](https://visualstudio.microsoft.com/vs/support/#talktous) ] 按鈕。
-* [提供功能意見](https://aka.ms/vs/wsus/feedback) 反應，或向 Visual Studio 團隊回報問題，以獲得這項體驗。
+* [提供功能意見](https://aka.ms/vs/wsus/feedback) 反應，或向 Visual Studio 團隊回報有關套用系統管理員更新之體驗的問題。
 * 洽詢您組織的 Microsoft 技術客戶經理。
 
 ## <a name="see-also"></a>另請參閱

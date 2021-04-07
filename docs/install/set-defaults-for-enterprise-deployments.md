@@ -1,7 +1,7 @@
 ---
 title: 設定企業部署的預設
 description: 深入了解 Visual Studio 企業部署的網域原則和其他組態作業。
-ms.date: 03/30/2019
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8fd5e96246778e1a8fd4ec1d87221ff04e8647cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d3d6f658e3d24f3c82737c0c457323b9d4eb4b6
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959268"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547462"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>設定 Visual Studio 企業部署的預設值
 
@@ -50,12 +50,30 @@ ms.locfileid: "99959268"
 
 您可以設定下列登錄值：
 
+::: moniker range="vs-2017"
 | **名稱** | **型別** | **預設值** | **說明** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | 儲存套件資訊清單和套件承載 (後者為選擇性) 的目錄。 如需詳細資訊，請參閱[停用或移動套件快取](disable-or-move-the-package-cache.md)頁面。 |
-| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | 保留套件承載，即使已安裝它們。 您可以隨時變更該值。 停用原則將移除您所修復或修改之執行個體的任何已快取套件承載。 如需詳細資訊，請參閱[停用或移動套件快取](disable-or-move-the-package-cache.md)頁面。 |
-| `SharedInstallationPath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | 在各個 Visual Studio 執行個體版本上共用之某些套件的安裝目錄。 您可以隨時變更該值，但這只會影響未來的安裝。 任何已安裝在舊位置的產品都不得移動，否則可能無法正常運作。 |
+| `CachePath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | 儲存套件資訊清單和套件承載 (後者為選擇性) 的目錄。 如需詳細資訊，請參閱 [停用或移動套件](disable-or-move-the-package-cache.md) 快取頁面。 |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | 保留套件承載，即使已安裝它們。 您可以隨時變更該值。 停用原則將移除您所修復或修改之執行個體的任何已快取套件承載。 如需詳細資訊，請參閱 [停用或移動套件](disable-or-move-the-package-cache.md) 快取頁面。 |
+| `SharedInstallationPath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | 在各個 Visual Studio 執行個體版本上共用之某些套件的安裝目錄。 您可以隨時變更此值，但它只會影響未來的安裝。 任何已安裝在舊位置的產品都不得移動，否則可能無法正常運作。 |
 | `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | 防止安裝程式為所有已安裝的 Visual Studio 產品自動下載更新。 您可以隨時變更該值。 |
+| `AdministratorUpdatesEnabled` | `REG_DWORD` | 1 | 允許將系統管理員更新套用至用戶端電腦。 如果此值遺失或設為0，系統管理員更新將會遭到封鎖。 此值適用于系統管理用途。 如需詳細資訊，請參閱 [啟用系統管理員更新](enabling-administrator-updates.md)。 | 
+| `AdministratorUpdatesOptOut` | `REG_DWORD` | 1 | 指出使用者不想接收 Visual Studio 的系統管理員更新。 如果登錄值不存在或集合值為0，表示 Visual Studio 使用者想要接收 Visual Studio 的系統管理員更新。 這適用于開發人員使用者 (是否擁有用戶端電腦) 的系統管理員許可權。 如需詳細資訊，請參閱套用 [系統管理員更新](../install/applying-administrator-updates.md#understanding-configuration-options)。 | 
+| `UpdateConfigurationFile` | `REG_SZ` 或 `REG_EXPAND_SZ` | % ProgramData% \Microsoft\VisualStudio\updates.config | 用於設定系統管理更新的檔案路徑。 如需詳細資訊，請參閱設定 [系統管理員更新的方法](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update)。 | 
+::: moniker-end
+
+::: moniker range="vs-2019"
+| **名稱** | **型別** | **預設值** | **說明** |
+| -------- | -------- | ----------- | --------------- |
+| `CachePath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | 儲存套件資訊清單和套件承載 (後者為選擇性) 的目錄。 如需詳細資訊，請參閱 [停用或移動套件](disable-or-move-the-package-cache.md) 快取頁面。 |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | 保留套件承載，即使已安裝它們。 您可以隨時變更該值。 停用原則將移除您所修復或修改之執行個體的任何已快取套件承載。 如需詳細資訊，請參閱 [停用或移動套件](disable-or-move-the-package-cache.md) 快取頁面。 |
+| `SharedInstallationPath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | 在各個 Visual Studio 執行個體版本上共用之某些套件的安裝目錄。 您可以隨時變更此值，但它只會影響未來的安裝。 任何已安裝在舊位置的產品都不得移動，否則可能無法正常運作。 |
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | 防止安裝程式為所有已安裝的 Visual Studio 產品自動下載更新。 您可以隨時變更該值。 |
+| `AdministratorUpdatesEnabled` | `REG_DWORD` | 1 | 允許將系統管理員更新套用至用戶端電腦。 如果此值遺失或設為0，系統管理員更新將會遭到封鎖。 此值適用于系統管理用途。 如需詳細資訊，請參閱 [啟用系統管理員更新](enabling-administrator-updates.md)。 | 
+| `AdministratorUpdatesOptOut` | `REG_DWORD` | 1 | 指出使用者不想接收 Visual Studio 的系統管理員更新。 如果登錄值不存在或集合值為0，表示 Visual Studio 使用者想要接收 Visual Studio 的系統管理員更新。 這適用于開發人員使用者 (是否擁有用戶端電腦) 的系統管理員許可權。 如需詳細資訊，請參閱套用 [系統管理員更新](../install/applying-administrator-updates.md#understanding-configuration-options)。 | 
+| `UpdateConfigurationFile` | `REG_SZ` 或 `REG_EXPAND_SZ` | % ProgramData% \Microsoft\VisualStudio\updates.config | 用於設定系統管理更新的檔案路徑。 如需詳細資訊，請參閱設定 [系統管理員更新的方法](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update)。 | 
+| `BaselineStickinessVersions2019` | `REG_SZ` 或 `REG_EXPAND_SZ` | `ALL` 或 `16.4.0,16.7.0,16.9.0` | 授權更新的版本仍會保留在指定的服務基準中。 如需詳細資訊，請參閱套用 [系統管理員更新](../install/applying-administrator-updates.md#understanding-configuration-options) 頁面。 | 
+::: moniker-end
 
 > [!IMPORTANT]
 > 如果在任何安裝之後變更 `CachePath` 登錄原則，則必須將現有的套件快取移至新位置，並確定它受到保護，讓 `SYSTEM` 和 `Administrators` 都具有完全控制權限，而 `Everyone` 具有讀取權限。
@@ -66,5 +84,6 @@ ms.locfileid: "99959268"
 ## <a name="see-also"></a>另請參閱
 
 - [安裝 Visual Studio](install-visual-studio.md)
+- [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 - [停用或移動套件快取](disable-or-move-the-package-cache.md)
 - [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

@@ -1,8 +1,8 @@
 ---
 title: 更新 Visual Studio 2017
 titleSuffix: ''
-description: 了解如何將 Visual Studio 逐步更新至最新版本。
-ms.date: 10/12/2020
+description: 瞭解如何將 Visual Studio 更新至最新版本的逐步解說。
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: how-to
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d087ed0a43296f77ca934671f63f716bf6ddfae8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02beb43dede8e38f290ff02febb3b84c53b90f9e
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935712"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547501"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>將 Visual Studio 更新至最新版本
 
@@ -287,12 +287,17 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 ::: moniker-end
 
+## <a name="administrator-updates"></a>系統管理員更新 
+
+如果您是集中管理軟體安裝之組織的一部分，您的企業系統管理員可能會導致電腦上的 Visual Studio 更新。 如需如何控制或設定電腦可接受哪些更新類型的詳細資訊，請參閱 [使用設定管理員部署 Visual Studio 更新](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates)。 
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>另請參閱
 
 * [並存安裝 Visual Studio 版本](install-visual-studio-versions-side-by-side.md)
 * [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)
+* [Visual Studio 企業版指南](visual-studio-enterprise-guide.md)
 * [在維護基底上時更新 Visual Studio](update-servicing-baseline.md)
 * [控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 * [修改 Visual Studio 2017](modify-visual-studio.md)

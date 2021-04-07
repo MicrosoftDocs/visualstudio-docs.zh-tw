@@ -2,7 +2,7 @@
 title: 使用 Microsoft Endpoint Configuration Manager 啟用系統管理員更新 Visual Studio
 titleSuffix: ''
 description: 深入瞭解如何將系統管理員更新部署至 Visual Studio。
-ms.date: 03/04/2021
+ms.date: 04/06/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 546fbad6-f12b-49cf-bccc-f2e63e051a18
@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ae0bdde60cbf4c4c1eed00847c76ee797809b8db
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: 9ca14e1f4e84777fd1781249dd54a6646fb2c72a
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105617321"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547475"
 ---
 # <a name="enabling-administrator-updates-to-visual-studio-with-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 啟用系統管理員更新 Visual Studio
 
@@ -63,7 +63,7 @@ Microsoft Endpoint Configuration Manager (SCCM) 可以使用軟體更新管理�
 
 ### <a name="visual-studio-client-detector-utility"></a>Visual Studio 用戶端偵測器公用程式 
 
-用戶端電腦必須安裝 Visual Studio 用戶端偵測器公用程式，才能正確地接收系統管理員更新。 此公用程式隨附于所有最近的 Visual Studio 版本。  
+用戶端電腦上必須安裝 [Visual Studio 用戶端偵測器公用程式](https://support.microsoft.com/help/5001148) ，才能正確辨識及接收系統管理員更新。 此公用程式隨附于2017年5月 12 2020 日或之後發行的所有 Visual Studio 和 Visual Studio 2019 產品更新，其包含為所有 Visual Studio 系統管理員更新的必要條件，而且也可在 [Microsoft Update 類別目錄](https://catalog.update.microsoft.com) 上個別安裝。 
 
 ### <a name="encoding-administrator-intent-on-the-client-machines"></a>在用戶端電腦上編碼系統管理員意圖 
 
@@ -79,9 +79,9 @@ Microsoft Endpoint Configuration Manager (SCCM) 可以使用軟體更新管理�
 
 您可以使用下列方法來提供有關 Visual Studio 系統管理員更新的意見反應，或回報影響更新的問題：
 * 請參閱 [疑難排解 Visual Studio 安裝和升級問題](../install/troubleshooting-installation-issues.md) 的指引。
-* 在 [視覺設定 Q&論壇](https://docs.microsoft.com/answers/topics/vs-setup.html)提出問題。
+* 在 [Visual Studio 設定 Q&論壇](https://docs.microsoft.com/answers/topics/vs-setup.html)中詢問有關社區的問題。
 * 移至 [ [Visual Studio 支援] 頁面](https://visualstudio.microsoft.com/vs/support/)，並檢查問題是否列在常見問題中。  您也可以選取 [交談說明] 的 [ [支援連結](https://visualstudio.microsoft.com/vs/support/#talktous) ] 按鈕。
-* [提供功能意見](https://aka.ms/vs/wsus/feedback) 反應，或向 Visual Studio 團隊回報問題，以獲得這項體驗。
+* 提供有關啟用系統管理員更新的這項體驗的[功能意見](https://aka.ms/vs/wsus/feedback)反應，或向 Visual Studio 團隊回報問題。
 * 洽詢您組織的 Microsoft 技術客戶經理。
 
 ## <a name="see-also"></a>另請參閱

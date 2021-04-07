@@ -1,7 +1,7 @@
 ---
 title: 更新網路型安裝
 description: 了解如何使用 --layout 命令來更新網路型 Visual Studio 安裝
-ms.date: 06/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6829bac79f747d4f9bacfe5e71f57352fcad0970
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5ad0231c2dc21acc4a8d954456921dbe2838e39
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959151"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547397"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
 
@@ -33,17 +33,7 @@ ms.locfileid: "99959151"
 
 若要重新整理您的網路安裝共用，以便其包含最新的更新，請執行 `--layout` 命令，以累加方式下載更新的套件。
 
-::: moniker range="vs-2017"
-
-**15.3 中的新** 功能：如果您在 [第一次建立網路](create-a-network-installation-of-visual-studio.md)配置時已選取部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
 如果您在 [第一次建立網路](create-a-network-installation-of-visual-studio.md)配置時已選取部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項
-
-::: moniker-end
 
 如果您在檔案共用上裝載配置，則應該更新配置的私用複本 (例如 c:\VSLayout) ，然後在下載所有已更新的內容之後，將它複製到您的檔案共用 (例如 \\ server\products\VS) 。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
 
