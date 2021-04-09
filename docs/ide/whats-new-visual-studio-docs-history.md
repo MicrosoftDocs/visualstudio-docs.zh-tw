@@ -15,23 +15,69 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bbad51f6d06c221118ffda01e1c7e93374eea2ff
-ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
+ms.openlocfilehash: 05af4933569e988b35bea9763a27d8f68aae3627
+ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103622565"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107031589"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio 文件中的新功能歷程記錄
 
-歡迎使用 Visual Studio 檔的新功能歷程記錄。本文包含在2021年2月 (開始 2020) 之前的檔主要變更。 如需最新的新功能，請參閱 [Visual Studio 檔：檔中的新功能](whats-new-visual-studio-docs.md)。
+歡迎使用 Visual Studio 檔的新功能歷程記錄。本文包含2021年3月之前的檔的重大變更 (從2020年7月) 開始。 如需最新的新功能，請參閱 [Visual Studio 檔：檔中的新功能](whats-new-visual-studio-docs.md)。
+
+## <a name="february-2021"></a>2021年2月
+
+### <a name="debugger"></a>偵錯工具
+
+**更新的文章**
+
+- [在 Visual Studio 偵錯工具中使用中斷點](../debugger/using-breakpoints.md) -協助工具的更新
+
+### <a name="get-started"></a>開始使用
+
+**更新的文章**
+
+- [教學課程：在 Visual Studio 2017 的存放庫中開啟專案](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) -更新另請參閱 VS2017 Open project 中的連結。
+- [教學課程：從存放庫開啟專案](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md) -將連結新增至 [從存放庫開啟專案] 頁面的 VS2017 版本
+
+### <a name="ide"></a>IDE
+
+**更新的文章**
+
+- [針對 MSBuild 問題進行疑難排解和建立記錄](./msbuild-logs.md) -新增使用專案系統工具延伸模組的指示
+
+### <a name="install"></a>安裝
+
+**更新的文章**
+
+- [使用最小離線版面配置來更新 Visual Studio](../install/update-minimal-layout.md)
+  - 在選項資料表中新增2017範例
+  - 新增 VS2017 的範例
+
+### <a name="msbuild"></a>MSBuild
+
+**新文章**
+
+- [MSB3644：找不到 ' FrameworkVersion ' 的參考元件](../msbuild/errors/msb3644.md) -MSBuild 錯誤
+- [MSB8036：找不到 Windows SDK ' version '](../msbuild/errors/msb8036.md) -MSBuild 錯誤
+
+### <a name="test"></a>測試
+
+**更新的文章**
+
+- [在 Visual Studio 中使用適用于 c + + 的 Microsoft 單元測試架構](../test/how-to-use-microsoft-test-framework-for-cpp.md) -小型內容重新整理和編輯
+- [在 Visual Studio 中撰寫 c + + dll 的單元測試](../test/how-to-write-unit-tests-for-cpp-dlls.md) -小型內容重新整理和編輯
+- [使用 Test Explorer 執行單元測試](../test/run-unit-tests-with-test-explorer.md) -協助工具的更新
+- [逐步解說：針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) -協助工具的更新
+- [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md) -在 Fakes 檔中明確提及 .net 5。0
 
 ## <a name="january-2021"></a>2021 年 1 月
 ### <a name="azure"></a>Azure
 
 **新文章**
 
-- [在 Visual Studio 中建立和部署至雲端服務 (延伸支援)  (Preview) ](../azure/cloud-services-extended-support.md) -雲端服務延伸支援-沒有範本
+- [建立及部署至雲端服務 (延伸支援) Visual Studio (Preview) ](../azure/cloud-services-extended-support.md) -雲端服務延伸支援-沒有範本
 
 ### <a name="code-quality"></a>程式碼品質
 
@@ -44,7 +90,7 @@ ms.locfileid: "103622565"
 
 **新文章**
 
-- [使用 Visual Studio 在 WSL 2 中調試 .Net Core 應用程式](../debugger/debug-dotnet-core-in-wsl-2.md) -.NET core WSL2 偵錯工具
+- [在 WSL 2 中使用 Visual Studio 進行 .Net CORE WSL2 的偵錯工具](../debugger/debug-dotnet-core-in-wsl-2.md)
 
 **更新的文章**
 
@@ -67,7 +113,7 @@ ms.locfileid: "103622565"
 
 **新文章**
 
-- [教學課程：在 Visual Studio 2017 中從存放庫開啟專案](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) -更新從存放庫開啟專案教學課程
+- [教學課程：在 Visual Studio 2017 的存放庫中開啟專案](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) -更新從存放庫開啟專案教學課程
 
 **更新的文章**
 
@@ -77,12 +123,12 @@ ms.locfileid: "103622565"
 
 **新文章**
 
-- [Visual Studio 的 JavaScript F1](./not-in-toc/default-f1-javascript.md) 說明-已新增 JS 和 TS 預設 F1 頁面
-- [TypeScript F1 Help For Visual Studio](./not-in-toc/default-f1-typescript.md) -已新增 JS 和 TS 預設 F1 頁面
+- Visual Studio 新增的 JS 和 TS 預設 F1 頁面[的 JavaScript F1](./not-in-toc/default-f1-javascript.md)說明
+- [適用于 Visual Studio](./not-in-toc/default-f1-typescript.md) 新增的 JS 和 TS 預設 F1 頁面的 TypeScript F1 說明
 
 **更新的文章**
 
-- [Visual studio 中的方案和專案](./solutions-and-projects-in-visual-studio.md) -新增 Visual Studio 影像庫的連結
+- [Visual Studio 中的方案和專案](./solutions-and-projects-in-visual-studio.md) -新增 Visual Studio 影像庫的連結
 
 ### <a name="install"></a>安裝
 
@@ -100,7 +146,7 @@ ms.locfileid: "103622565"
 
 **新文章**
 
-- [從 Visual Studio profiler 將 dotnet 計數器視覺化](../profiling/dotnet-counters-tool.md) -新增 .net 計數器工具檔
+- [從 Visual Studio 分析工具將 dotnet 計數器視覺化](../profiling/dotnet-counters-tool.md) -新增 .net 計數器工具檔
 
 ### <a name="test"></a>測試
 
@@ -113,7 +159,7 @@ ms.locfileid: "103622565"
 
 **新文章**
 
-- [使用 Visual Studio 已連線的服務新增 Azure 應用程式](../azure/vs-azure-tools-connected-services-app-configuration.md) 設定-應用程式設定連接服務教學課程
+- [使用 Visual Studio 已連線的服務](../azure/vs-azure-tools-connected-services-app-configuration.md) 應用程式設定新增 Azure 應用程式組態已連線的服務教學課程
 
 ### <a name="code-quality"></a>程式碼品質
 
@@ -129,13 +175,13 @@ ms.locfileid: "103622565"
 
 **更新的文章**
 
-- 針對[使用 docker 的 Visual studio 開發進行疑難排解](../containers/troubleshooting-docker-errors.md)-更新 Docker For Visual studio 疑難排解指南
+- [使用 docker 進行 Visual Studio 開發的疑難排解](../containers/troubleshooting-docker-errors.md) -更新 docker For Visual Studio 疑難排解指南
 
 ### <a name="debugger"></a>偵錯工具
 
 **更新的文章**
 
-- [常見問題-在 Visual Studio 中尋找您需要的調試](../debugger/find-your-debugging-task.md) 程式-探索工作以尋找您的偵錯工具和總覽主題
+- [常見問題-在 Visual Studio 探索工作中尋找您需要的偵錯工具功能](../debugger/find-your-debugging-task.md) ，以尋找您的偵錯工具和總覽主題
 
 ### <a name="get-started"></a>開始使用
 
@@ -156,7 +202,7 @@ ms.locfileid: "103622565"
 - [如何回報 Visual Studio 或 Visual Studio 安裝程式的問題](./how-to-report-a-problem-with-visual-studio.md)
   - 更新的螢幕擷取畫面
   - 開發人員群體變更
-- [Visual Studio 效能秘訣和訣竅](./visual-studio-performance-tips-and-tricks.md) -更新停用診斷工具區段
+- [Visual Studio 效能秘訣和訣竅](./visual-studio-performance-tips-and-tricks.md) -更新停用的診斷工具區段
 - [專案和解決方案簡介](../get-started/tutorial-projects-solutions.md)
   - 方案 & 專案的更新主題
   - 更新 tutorial-projects-solutions.md
@@ -167,8 +213,8 @@ ms.locfileid: "103622565"
 **更新的文章**
 
 - [開始使用單元測試](../test/getting-started-with-unit-testing.md) -探索工作和其他測試控管的改進
-- [先查看 Visual Studio 中的測試控管](../test/improve-code-quality.md) -探索工作和測試控管的其他改進
-- [Visual Studio 中的測試控管 # Required;頁面標題顯示在搜尋結果中。包含品牌。< 60 個字元。](../test/index.yml) -探索工作和其他測試控管的改進
+- [先查看 Visual Studio](../test/improve-code-quality.md) 探索工作的測試控管，以及測試控管的其他改良功能
+- [測試控管 Visual Studio # Required;頁面標題顯示在搜尋結果中。包含品牌。< 60 個字元。](../test/index.yml) -探索工作和其他測試控管的改進
 - [使用 Test Explorer 執行單元測試](../test/run-unit-tests-with-test-explorer.md) -為差異架構新增動態播放清單 xml
 
 ## <a name="november-2020"></a>2020 年 11 月
@@ -219,16 +265,16 @@ ms.locfileid: "103622565"
 - [Visual Studio 中的部署簡介](../deployment/deploying-applications-services-and-components.md)
   - 編輯階段
   - .NET 5 的探索和連結更新
-- [Visual Studio 中的部署為必要項;頁面標題顯示在搜尋結果中。包含品牌。< 60 個字元。](../deployment/index.yml) -.NET 5 的探索和連結更新
+- [部署 Visual Studio # Required;頁面標題顯示在搜尋結果中。包含品牌。< 60 個字元。](../deployment/index.yml) -.NET 5 的探索和連結更新
 - [從命令列建立 clickonce 應用程式](../deployment/building-clickonce-applications-from-the-command-line.md) -新增 clickonce For .net Windows 專案的快速入門
 - 將[您的應用程式部署到資料夾、IIS、Azure 或其他目的地](../deployment/deploying-applications-services-and-components-resources.md)-新增適用于 .net Windows 專案的 ClickOnce 快速入門
-- [使用 Visual Studio 將應用程式部署到資料夾](../deployment/quickstart-deploy-to-local-folder.md) -新增 .net Windows 專案的 ClickOnce 快速入門
+- 使用 Visual Studio-新增適用于 .NET Windows 專案的 ClickOnce 快速入門，將[應用程式部署到資料夾](../deployment/quickstart-deploy-to-local-folder.md)
 
 ### <a name="designers"></a>設計工具
 
 **更新的文章**
 
-- [教學課程：開始使用 Windows Forms 設計](../designers/walkthrough-windows-forms-designer.md) 工具-更正錯誤
+- [教學課程：開始使用已](../designers/walkthrough-windows-forms-designer.md) 更正的 Windows Form 設計工具錯誤
 
 ### <a name="get-started"></a>開始使用
 
@@ -241,7 +287,7 @@ ms.locfileid: "103622565"
 
 **新文章**
 
-- 使用[Visual Studio 中的 github 帳戶](./work-with-github-accounts.md)-新增使用 github 頁面，以及 github 登入其他頁面的相關資訊
+- 使用 github[帳戶 Visual Studio](./work-with-github-accounts.md)新增的使用 github 頁面，以及 github 登入其他頁面的相關資訊
 - 將[基礎類別](./reference/extract-base-class.md)新增的 dotnet 生產力功能解壓縮
 - [內嵌方法](./reference/inline-method.md) -新增的 dotnet 生產力功能
 - [將類別設為抽象](./reference/make-class-abstract.md) -新增 dotnet 生產力功能
@@ -255,8 +301,8 @@ ms.locfileid: "103622565"
   - 16.8 GA 的新 Git 體驗內容更新
 - [Visual Studio 2019 的新功能](./whats-new-visual-studio-2019.md)
   - 更新 & 中繼資料的替代文字
-  - 已更新適用于 16.8 GA 的 Visual Studio 2019 頁面新功能
-- [連接至 Team explorer 中的專案](./connect-team-project.md) -使用新的 Git 體驗更新 Team Explorer 頁面 & 連結
+  - 已更新 16.8 GA Visual Studio 2019 頁面的新功能
+- [連接到 Team Explorer 中的專案](./connect-team-project.md) -使用新的 Git 體驗附注 & 連結來更新 Team Explorer 頁面
 - [使用多個使用者帳戶](./work-with-multiple-user-accounts.md) -已將 GitHub 登入的相關資訊新增至其他頁面
 - [C++ EditorConfig 格式設定慣例](./cpp-editorconfig-properties.md)
   - 前置詞是 cpp_，而不是 editorconfig 設定的 _cpp_ _。
@@ -271,14 +317,14 @@ ms.locfileid: "103622565"
   - 已新增16.8.2 資料
   - 已新增16.8。1
   - 已更新 16.8 GA 和更多的組建編號
-- [Azure 上的 Visual Studio 映射](../install/using-visual-studio-vm.md) -變更發行日期和更新的次要修訂版本
+- [Azure 上的 Visual Studio 映射](../install/using-visual-studio-vm.md) -變更的發佈日期和更新的次要修訂版本
 - [Visual Studio 工作負載和元件識別碼](../install/workload-and-component-ids.md) -已更新16.8 的元件檔
-- [Visual Studio Build Tools 元件目錄](../install/workload-component-id-vs-build-tools.md) -已更新16.8 的元件檔
-- [Visual Studio 元件目錄](../install/workload-component-id-vs-community.md) -已更新16.8 的元件檔
-- [Visual Studio Enterprise 元件目錄](../install/workload-component-id-vs-enterprise.md) -更新16.8 的元件檔
-- [Visual Studio Team Explorer 元件目錄](../install/workload-component-id-vs-team-explorer.md) -已更新16.8 的元件檔
-- [Visual Studio Test Agent 元件目錄](../install/workload-component-id-vs-test-agent.md) -已更新16.8 的元件檔
-- [Visual Studio Test Controller 元件目錄](../install/workload-component-id-vs-test-controller.md) -已更新16.8 的元件檔
+- [Visual Studio Build Tools 元件目錄](../install/workload-component-id-vs-build-tools.md) -16.8 的元件更新元件檔
+- [Visual Studio Community 元件目錄](../install/workload-component-id-vs-community.md) -16.8 的元件更新元件檔
+- [Visual Studio Enterprise 元件目錄](../install/workload-component-id-vs-enterprise.md) -16.8 的元件更新元件檔
+- [Visual Studio Team Explorer 元件目錄](../install/workload-component-id-vs-team-explorer.md) -更新16.8 的元件檔
+- [Visual Studio 測試代理程式元件目錄](../install/workload-component-id-vs-test-agent.md) -已更新16.8 的元件檔
+- [Visual Studio 測試控制器元件目錄](../install/workload-component-id-vs-test-controller.md) -已更新16.8 的元件檔
 - [在防火牆或 proxy 伺服器後方安裝及使用 Visual Studio 和 Azure 服務](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md) -已新增遺失的網域
 
 ### <a name="msbuild"></a>MSBuild
@@ -303,14 +349,14 @@ ms.locfileid: "103622565"
 **更新的文章**
 
 - [使用 Test Explorer 執行單元測試](../test/run-unit-tests-with-test-explorer.md) -新增播放清單 xml 格式的簡短區段
-- 使用 .NET Core 支援將測試中的程式[代碼與 Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)更新檔隔離
+- 使用 .NET Core 支援將測試中的程式[代碼與 Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)更新的檔隔離
 - [使用填充碼將應用程式](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) 與 .net Core 支援隔離，以進行單元測試-更新的檔
 
 ### <a name="xaml-tools"></a>XAML 工具
 
 **更新的文章**
 
-- [使用 Visual Studio 中的 XAML 設計工具來使用設計階段資料](../xaml-tools/xaml-designtime-data.md)
+- [使用 XAML 設計工具的設計階段資料 Visual Studio](../xaml-tools/xaml-designtime-data.md)
   - 已更新 16.8 GA 的需求一節
   - 修改了需求區段
   - 更新 16.8 Preview 批註 + GA 連結
@@ -339,12 +385,12 @@ ms.locfileid: "103622565"
 
 **更新的文章**
 
-- [在 Visual Studio 中對 ASP.NET 或 ASP.NET Core 應用程式進行調試](../debugger/how-to-enable-debugging-for-aspnet-applications.md) 程式-GitHub 問題的偵錯工具內容修正
-- [使用 Visual Studio 偵錯工具中的中斷點](../debugger/using-breakpoints.md) -GitHub 問題的偵錯工具內容修正
-- [在 Visual Studio 中進行 Azure 服務的調試](../debugger/debug-azure-apps.md) 程式-適用于快照偵錯工具的 SEO 和連結更新
-- [使用快照偵錯工具來進行即時 ASP.NET Azure 應用程式](../debugger/debug-live-azure-applications.md) -適用于快照偵錯工具的 SEO 和連結更新
+- [在 Visual Studio 中偵錯工具 ASP.NET 或 ASP.NET Core 應用程式](../debugger/how-to-enable-debugging-for-aspnet-applications.md) -GitHub 問題的偵錯工具內容修正
+- [在 Visual Studio 偵錯工具中使用中斷點](../debugger/using-breakpoints.md) -GitHub 問題的偵錯工具內容修正
+- [在 Visual Studio 中偵錯工具的 Azure 服務](../debugger/debug-azure-apps.md) -SEO 和快照偵錯工具的連結更新
+- 使用適用于快照偵錯工具的快照偵錯工具 SEO 和連結更新來進行[即時 ASP.NET Azure 應用程式的調試](../debugger/debug-live-azure-applications.md)程式
 - [遠端偵錯](../debugger/remote-debugging.md) 程式-適用于快照偵錯工具的 SEO 和連結更新
-- [Visual Studio 圖形診斷總覽](../debugger/graphics/overview-of-visual-studio-graphics-diagnostics.md) -Vsdg dx12
+- [Visual Studio 圖形診斷的總覽](../debugger/graphics/overview-of-visual-studio-graphics-diagnostics.md) -Vsdg dx12
 - [Visual Studio 圖形診斷](../debugger/graphics/visual-studio-graphics-diagnostics.md) -Vsdg dx12
 
 ### <a name="get-started"></a>開始使用
@@ -357,7 +403,7 @@ ms.locfileid: "103622565"
 
 **新文章**
 
-- [使用 Visual Studio 搜尋](./visual-studio-search.md) -VS 搜尋檔
+- [使用 Visual Studio 搜尋](./visual-studio-search.md) 和搜尋檔
 
 ### <a name="install"></a>安裝
 
@@ -389,19 +435,19 @@ ms.locfileid: "103622565"
 - [使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
   - 程式碼剖析的記憶體使用量更新-連結和說明
   - 記憶體使用量工具更新
-- [在效能分析工具中分析 CPU 使用量，而不進行調試](../profiling/cpu-usage.md) 程式-記憶體使用量工具更新
+- 在效能分析工具記憶體使用量工具更新[中分析 CPU 使用量，而不進行調試](../profiling/cpu-usage.md)程式
 
 ### <a name="windows"></a>Windows
 
 **更新的文章**
 
-- [Visual Studio 檔 |Microsoft](../windows/index.yml) 檔-Windows 中樞更新
+- [Visual Studio 檔 |Microsoft Docs](../windows/index.yml) -Windows 中樞更新
 
 ### <a name="xaml-tools"></a>XAML 工具
 
 **新文章**
 
-- [使用 Visual Studio 中的 XAML 設計工具來使用設計階段資料](../xaml-tools/xaml-designtime-data.md)
+- [使用 XAML 設計工具的設計階段資料 Visual Studio](../xaml-tools/xaml-designtime-data.md)
   - 已將擴充性區段新增至 XAML 設計階段檔
   - 新的設計階段 XAML 文章
 
@@ -430,18 +476,18 @@ ms.locfileid: "103622565"
 **更新的文章**
 
 - 將[您的應用程式部署到資料夾、IIS、Azure 或其他目的地](../deployment/deploying-applications-services-and-components-resources.md)部署更新
-- [使用 Visual Studio 將應用程式部署到資料夾](../deployment/quickstart-deploy-to-local-folder.md) -部署更新
+- [使用 Visual Studio 部署更新將應用程式部署到資料夾](../deployment/quickstart-deploy-to-local-folder.md)
 
 ### <a name="ide"></a>IDE
 
 **新文章**
 
-- [Visual Studio 中新的 git 體驗 (preview) ](./git-with-visual-studio.md) -新增 git 體驗內容 (預覽) 
+- [Visual Studio (preview 中的新 git 體驗) ](./git-with-visual-studio.md) -將新的 git 體驗內容新增 (預覽) 
 - [C + + EditorConfig 格式設定慣例](./cpp-editorconfig-properties.md) -新文章
 - [什麼是 GitHub Codespaces？ (preview) ](./codespaces/codespaces-overview.md) -新增 Codespaces (preview) 內容
 - [如何自訂 codespace (預覽) ](./codespaces/customize-codespaces.md) -新增 Codespaces (preview) 內容
-- [支援的 Visual Studio 功能 (預覽) ](./codespaces/supported-features-codespaces.md) -新增 Codespaces (預覽) 內容
-- [如何使用 Visual Studio 搭配 codespace (preview) ](./codespaces/use-visual-studio-with-codespaces.md) -新增 Codespaces (預覽) 內容
+- [支援的 Visual Studio 功能 (預覽) ](./codespaces/supported-features-codespaces.md) -新增 Codespaces (preview) 內容
+- [如何搭配使用 Visual Studio 與 codespace (preview) ](./codespaces/use-visual-studio-with-codespaces.md) -新增 Codespaces (preview) 內容
 
 **更新的文章**
 
@@ -452,17 +498,17 @@ ms.locfileid: "103622565"
 
 **新文章**
 
-- [Arm 裝置上的 Visual Studio-裝置](../install/visual-studio-on-arm-devices.md) -在 arm 上新增 VS 的 doc
+- [Arm 裝置上的 Visual Studio](../install/visual-studio-on-arm-devices.md) -在 arm 上新增 VS 的 doc 檔
 
 **更新的文章**
 
-- 針對[您安裝或使用 Visual Studio 時的網路相關錯誤進行疑難排解](../install/troubleshooting-network-related-errors-in-visual-studio.md)-新增回饋驗證 proxy 損毀的因應措施
+- [當您安裝或使用 Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md) -新增因應措施驗證 proxy 損毀的因應措施時，針對網路相關錯誤進行疑難排解
 
 ### <a name="profiling"></a>程式碼剖析
 
 **更新的文章**
 
-- [測量 Visual Studio 中的記憶體使用量](../profiling/memory-usage.md) -分析功能的更新功能導覽
+- [測量 Visual Studio 中的記憶體使用量](../profiling/memory-usage.md) -分析功能導覽的更新
 - [效能提示](../profiling/perftips.md) -分析功能導覽的更新
 - [先查看程式碼剖析工具](../profiling/profiling-feature-tour.md) -分析功能導覽的更新
 - [使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
@@ -474,11 +520,11 @@ ms.locfileid: "103622565"
 
 **新文章**
 
-- [使用 Visual Studio 已連接服務](../azure/azure-app-insights-add-connected-service.md) 的已聯機服務（適用于 VS 2019 16.7）來新增 Azure application Insights
-- [使用 Visual Studio 已連接服務加入 Azure Cache For Redis](../azure/azure-cache-for-redis-add-connected-service.md) -VS 2019 16.7 的已連接服務
-- [使用 Visual Studio 已連接服務的 VS 2019 16.7 連接服務，將 Azure COSMOS DB 新增至您的應用程式](../azure/azure-cosmosdb-add-connected-service.md)
-- [使用 Visual Studio 已連接服務來新增 Azure SignalR](../azure/azure-signalr-add-connected-service.md) -適用于 VS 2019 16.7 的已連接服務
-- [將連線新增至與 AZURE SQL Database](../azure/azure-sql-database-add-connected-service.md) 連接的服務（適用于 VS 2019 16.7）
+- 使用 Visual Studio 的 VS 2019 16.7 已連線的服務連接服務來[新增 Azure 應用程式見解](../azure/azure-app-insights-add-connected-service.md)
+- 使用適用于 VS 2019 16.7 的 Visual Studio 已連線的服務連接服務來[新增 Azure Cache for Redis](../azure/azure-cache-for-redis-add-connected-service.md)
+- 使用適用于 VS 2019 16.7 的 Visual Studio 已連線的服務連接服務，[將 Azure Cosmos DB 新增至您的應用程式](../azure/azure-cosmosdb-add-connected-service.md)
+- 使用適用于 VS 2019 16.7 的[Visual Studio 已連線的服務聯機服務新增 Azure SignalR](../azure/azure-signalr-add-connected-service.md)
+- [將連接加入至](../azure/azure-sql-database-add-connected-service.md) VS 2019 16.7 Azure SQL Database 連接的服務
 
 **更新的文章**
 
@@ -515,37 +561,37 @@ ms.locfileid: "103622565"
 
 **更新的文章**
 
-- [使用 Visual studio 將 ASP.NET 容器部署到容器](../containers/hosting-web-apps-in-docker.md) 登錄-visual Studio 16.7 發佈 UI 的容器工具更新
-- [Visual Studio Kubernetes 工具](../containers/bridge-to-kubernetes.md) 入門-Kubernetes 教學課程：新增移除步驟
+- 使用 Visual Studio 16.7 發佈 UI 的 Visual Studio 容器工具更新將[ASP.NET 容器部署到容器](../containers/hosting-web-apps-in-docker.md)登錄
+- [開始使用 Visual Studio Kubernetes 工具](../containers/bridge-to-kubernetes.md) -Kubernetes 教學課程：新增移除步驟
 
 ### <a name="deployment"></a>部署
 
 **新文章**
 
-- [Visual Studio 安裝程式專案延伸模組和 .Net core 3.1](../deployment/installer-projects-net-core.md) -建立安裝程式專案的新說明頁面 .net Core 3.1 功能
+- [Visual Studio 安裝程式專案擴充功能和 .Net core 3.1](../deployment/installer-projects-net-core.md) -建立安裝程式專案的新說明頁面 .net Core 3.1 功能
 
 **更新的文章**
 
 - 將[您的應用程式部署到資料夾、IIS、Azure 或其他目的地](../deployment/deploying-applications-services-and-components-resources.md)部署更新
-- [Visual Studio 中的部署](../deployment/index.yml) -部署更新
+- [部署 Visual Studio](../deployment/index.yml) 部署更新
 
 ### <a name="extensibility"></a>擴充性
 
 **更新的文章**
 - [專案子類型](../extensibility/internals/project-subtypes.md) -修正清單專案縮排
-- [Visual Studio 的色彩值參考](../extensibility/ux-guidelines/color-value-reference-for-visual-studio.md) -AB # 1759333 修正遺漏的資料行標題
+- Visual Studio-AB # 1759333[的色彩值參考](../extensibility/ux-guidelines/color-value-reference-for-visual-studio.md)修正遺漏的資料行標題
 
 ### <a name="get-started"></a>開始使用
 
 **更新的文章**
 
-- [步驟5：將您的 ASP.NET Core 應用程式部署至 Azure](../get-started/csharp/tutorial-aspnet-core-ef-step-05.md) -新的已聯機服務 UI 的影片教學課程更新
+- [步驟5：將您的 ASP.NET Core 應用程式部署至 Azure](../get-started/csharp/tutorial-aspnet-core-ef-step-05.md) -新已連線的服務 UI 的影片教學課程更新
 
 ### <a name="ide"></a>IDE
 
 **新文章**
 
-- [變更 Visual Studio 中的 F1 說明鍵](./not-in-toc/change-f1-help-key.md) -重構預設 f1 說明頁面
+- [變更 Visual Studio 中的 f1 說明鍵](./not-in-toc/change-f1-help-key.md) -重構預設 f1 說明頁面
 - [文字編輯器的 F1](./not-in-toc/default-f1-text-editor.md) 說明-重構預設 F1 說明頁面
 - [轉換 `typeof` 為 `nameof` ](./reference/convert-typeof-to-nameof.md) -convert typeof 轉換成 nameof 重構
 - [簡化 linq 運算式](./reference/simplify-linq-expression.md) -簡化 linq 運算式重構
@@ -558,16 +604,16 @@ ms.locfileid: "103622565"
   - Redid 整份回報問題頁面
 - [F1](./not-in-toc/default.md) 說明-重構預設 F1 說明頁面
 - [[自動回復]、[環境]、[選項] 對話方塊](./reference/autorecover-environment-options-dialog-box.md)-新增更新的自動儲存檔案位置資訊
-- 內嵌參數名稱提示的[選項、文字編輯器、基本 (Visual Basic) 、Advanced](./reference/options-text-editor-basic-visual-basic.md) -已新增的基本檔
+- [選項、文字編輯器、基本 (Visual Basic) 、](./reference/options-text-editor-basic-visual-basic.md) 內嵌參數名稱提示的 Advanced-已新增基本檔
 - 內嵌參數名稱提示的[選項、文字編輯器、c #、Advanced](./reference/options-text-editor-csharp-advanced.md) -已新增的基本檔
 - [Visual Studio 效能秘訣和訣竅](./visual-studio-performance-tips-and-tricks.md) -新增「停用地圖模式」和「停用自動換行」資訊
-- [Visual studio 2019 中的新功能](./whats-new-visual-studio-2019.md) -使用 16.7 GA 資訊更新 visual studio 2019 中的新功能
+- [Visual Studio 2019 中的新功能](./whats-new-visual-studio-2019.md) -使用 16.7 GA 資訊更新 Visual Studio 2019 中的新功能
 
 ### <a name="rtvs"></a>RTVS
 
 **更新的文章**
 
-- [使用 SQL Server 和 R](../rtvs/integrating-sql-server-with-r.md) 更正資料表來包含資料行標頭
+- [使用 SQL Server 和 R](../rtvs/integrating-sql-server-with-r.md) 更正的資料表來包含資料行標頭
 
 ## <a name="july-2020"></a>2020 年 7 月
 ### <a name="code-quality"></a>程式碼品質
@@ -600,8 +646,8 @@ ms.locfileid: "103622565"
 
 **更新的文章**
 
-- [變更 log (Visual Studio Tools For Unity，Windows) ](/gamedev/unity/change-log-visual-studio-tools-for-unity.md) -將 VSTU 變更記錄至4.7.1。0
-- [變更 Log (Visual Studio Tools For Unity，Mac) ](/gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md) -將 VSTUM 變更記錄至2.7.1。0
+- [變更 log (Visual Studio Tools for Unity，Windows) ](/gamedev/unity/change-log-visual-studio-tools-for-unity.md) 將 VSTU 變更記錄至4.7.1。0
+- [變更 Log (Visual Studio Tools for Unity、Mac) ](/gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md) 將 VSTUM 變更記錄至2.7.1。0
 
 ### <a name="get-started"></a>開始使用
 
@@ -613,14 +659,14 @@ ms.locfileid: "103622565"
 
 **新文章**
 
-- [開發人員社區指導方針](./developer-community-guidelines.md) -已新增 DevCom 指導方針
+- [開發人員社群指導方針](./developer-community-guidelines.md) -新增 DevCom 指導方針
 - [未匯入類型和擴充方法的 IntelliSense 完成](./reference/intellisense-completion-unimported-types-extension-methods.md)
 
 ### <a name="install"></a>安裝
 
 **新文章**
 
-- [使用基本的離線版面配置來更新 Visual Studio](../install/update-minimal-layout.md) -檔基本版面配置功能
+- [使用基本離線配置更新 Visual Studio](../install/update-minimal-layout.md) -檔基本版面配置功能
 - [Visual Studio enterprise 指南](../install/visual-studio-enterprise-guide.md) -企業指南
 
 ### <a name="javascript"></a>JavaScript
