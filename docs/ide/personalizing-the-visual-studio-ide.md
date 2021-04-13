@@ -2,19 +2,19 @@
 title: 自訂 IDE
 description: 瞭解如何以最能支援您自己開發樣式和需求的方式來個人化 Visual Studio IDE。
 ms.custom: SEO-VS-2020
-ms.date: 11/20/2017
+ms.date: 04/12/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 550ab6449cc74d3d0d81d60a41b11f0273003c51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a1bcfdc9489ee59f5697f1d96de21e31a71fb17
+ms.sourcegitcommit: 5035ccb32fb5e06451337cbf9a150687082ae2af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909027"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107373163"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>將 Visual Studio IDE 個人化
 
@@ -40,7 +40,7 @@ ms.locfileid: "99909027"
 
 ## <a name="environment-color-themes"></a>環境色彩佈景主題
 
-若要在 [淺色]、[深色] 和 [藍色] 之間變更色彩主題，請在 [搜尋] 方塊中輸入 **環境** ，然後選擇 [ **環境 > 一般**]。 在 [選項] 對話方塊中，變更 [色彩佈景主題] 選項。
+若要變更 [深色]、[淺色]、[藍色] 和 [藍色] (額外對比) ，請在 [搜尋] 方塊中輸入 **主題** ，然後選擇 [ **環境 > 一般**]。 在 [選項] 對話方塊中，變更 [色彩佈景主題] 選項。
 
 若要變更編輯器中的顏色標示選項，請在 [搜尋] 方塊中輸入 **環境** ，然後選擇 [ **環境 > 字型和色彩**]。 請參閱[如何：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)。
 
