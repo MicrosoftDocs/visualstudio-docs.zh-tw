@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 419fa05ae510f3dc22ce82c3805f9f54b4e53b27
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682877"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295568"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>教學課程：使用 C 建立簡單的應用程式\#
 
@@ -46,7 +46,7 @@ ms.locfileid: "101682877"
 
 Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以及主視窗空間。 工具視窗會停駐在應用程式視窗的左右端，同時 [ **快速啟動**]、功能表列和標準工具列則位於視窗的上方。 位於應用程式視窗中央的是 [ **起始頁**]。 當您載入方案或專案時，編輯器和設計工具會出現在 [起始頁]  所在的空間中。 在開發應用程式時，您大部分時間都會在此中央區域工作。
 
-![已套用一般設定的 Visual Studio 2017 IDE](../media/exploreide-idewithgeneralsettings.png "已套用一般設定的 Visual Studio 2017 IDE 螢幕擷取畫面")
+![Visual Studio 已套用一般設定的 2017 IDE](../media/exploreide-idewithgeneralsettings.png "已套用一般設定的 Visual Studio 2017 IDE 螢幕擷取畫面")
 
 ::: moniker-end
 
@@ -103,11 +103,11 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且 **方案總管** �
 
 建立專案之後，您可以進行自訂。 若要這麼做，請選擇 [檢視] 功能表中的 [屬性] 視窗，或按 **F4**。 然後，您可以顯示和變更應用程式中專案項目、控制項及其他項目的選項。
 
-   ![屬性視窗](../media/exploreide-hellowpfappfiles.png "具有 WPF 檔案應用程式名稱的 [屬性] 視窗螢幕擷取畫面")   
+   ![屬性視窗](../media/exploreide-hellowpfappfiles.png "使用 WPF 檔案應用程式名稱屬性視窗的螢幕擷取畫面")   
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>變更 MainWindow.xaml 的名稱
 
-讓我們給 MainWindow 一個更具體的名稱。 在 [ **方案 Explorer**] 中，以滑鼠右鍵按一下 [ *MainWindow* ]，然後選擇 [ **重新命名**]。 將檔案重新命名為 *問候. xaml*。
+讓我們給 MainWindow 一個更具體的名稱。 在 **方案總管** 中，以滑鼠右鍵按一下 *MainWindow* ，然後選擇 [ **重新命名**]。 將檔案重新命名為 *問候. xaml*。
 
 ## <a name="design-the-user-interface-ui"></a>設計使用者介面 (UI)
 
@@ -207,7 +207,7 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且 **方案總管** �
 
 ### <a name="add-the-button-control"></a>新增按鈕控制項
 
-1. 在 [工具箱] 中尋找 **Button** 控制項，然後將它拖曳至設計檢視中的表單，將它新增至設計介面的 RadioButton 控制項底下。 如果您使用的是 Visual Studio 2019 或更新版本，有一條紅線可協助您將控制項置中。
+1. 在 [工具箱] 中尋找 **Button** 控制項，然後將它拖曳至設計檢視中的表單，將它新增至設計介面的 RadioButton 控制項底下。 如果您使用 Visual Studio 2019 或更新版本，則會有一條紅線可協助您將控制項置中。
 
 1. 在 XAML 檢視中，將 Button 控制項的 [內容] 值從 `Content="Button"` 變更為 `Content="Display"`，然後儲存變更。
 
@@ -293,13 +293,13 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且 **方案總管** �
 
 立即關閉應用程式視窗停止偵錯。
 
-### <a name="debug-with-breakpoints"></a>使用中斷點進行偵錯
+### <a name="debug-with-breakpoints&quot;></a>使用中斷點進行偵錯
 
 新增一些中斷點，即可在偵錯時測試程式碼。 若要加入中斷點，您可以選擇 [ **Debug**  >  **切換中斷點**]，方法是在編輯器的左邊界中，按一下您想要發生中斷的程式程式碼旁邊，或是按 **F9**。
 
-#### <a name="add-breakpoints"></a>新增中斷點
+#### <a name=&quot;add-breakpoints&quot;></a>新增中斷點
 
-1. 開啟 *Greetings.xaml.cs*，然後選取下列程式程式碼： `MessageBox.Show("Hello.")`
+1. 開啟 [ *問候*]，然後選取下列程式程式碼： `MessageBox.Show(&quot;Hello.")`
 
 1. 依序選取 [ **偵錯**] 和 [ **切換中斷點**]，以新增中斷點。
 

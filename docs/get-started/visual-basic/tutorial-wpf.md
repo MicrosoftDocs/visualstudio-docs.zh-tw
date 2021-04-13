@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f337551c16aa63b606c10492bab9956a92cbe141
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944364"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295425"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教學課程：使用 Visual Basic 建立簡單的應用程式
 
@@ -259,13 +259,13 @@ IsChecked="True"
 
  立即關閉應用程式視窗停止偵錯。
 
-### <a name="debug-with-breakpoints"></a>使用中斷點進行偵錯
+### <a name="debug-with-breakpoints&quot;></a>使用中斷點進行偵錯
 
 新增一些中斷點，即可在偵錯時測試程式碼。 若要加入中斷點，您可以選擇 [ **Debug**  >  **切換中斷點**]，方法是在編輯器的左邊界中，按一下您想要發生中斷的程式程式碼旁邊，或是按 **F9**。
 
-#### <a name="add-breakpoints"></a>新增中斷點
+#### <a name=&quot;add-breakpoints&quot;></a>新增中斷點
 
-1. 開啟 [ *app.xaml*]，然後選取下列程式程式碼： `MessageBox.Show("Hello.")`
+1. 開啟 [ *app.xaml*]，然後選取下列程式程式碼： `MessageBox.Show(&quot;Hello.")`
 
 2. 按 **F9**，或從功能表中依序選取 [偵錯] 和 [切換中斷點]，來新增中斷點。
 
@@ -283,13 +283,13 @@ IsChecked="True"
 
 6. 在功能表列上，選擇 [ **Debug**  >  **跳出**]。
 
-     應用程式會繼續執行，而且會顯示含有文字 "Hello" 的訊息方塊。
+     應用程式會繼續執行，而且會顯示含有文字 "Hello&quot; 的訊息方塊。
 
 7. 選擇訊息方塊上的 [ **確定** ] 按鈕將它關閉。
 
 8. 在 [ **Greetings** ] 視窗中，選擇 [ **Goodbye** ] 選項按鈕，然後選擇 [ **顯示** ] 按鈕。
 
-     程式碼行 `MessageBox.Show("Goodbye.")` 會以黃色反白顯示。
+     程式碼行 `MessageBox.Show(&quot;Goodbye.")` 會以黃色反白顯示。
 
 9. 選擇 **F5** 鍵繼續偵錯。 當訊息方塊出現時，選擇訊息方塊中的 [ **確定** ] 按鈕關閉它。
 

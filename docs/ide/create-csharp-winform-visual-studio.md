@@ -6,19 +6,19 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.devlang: CSharp
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fcc42b999039abe5d682394e378cb95f12b9283
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26f13d12324beb0e414761ce2d79297767c5d708
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956928"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297115"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>使用 C 在 Visual Studio 中建立 Windows Forms 應用程式\#
 
@@ -133,11 +133,11 @@ ms.locfileid: "99956928"
 
 ### <a name="add-code-to-the-form"></a>將程式碼新增至表單
 
-1. 在 [ **Form1.cs &#91;設計&#93;** ] 視窗中，按兩下 [ **按一下這個** 按鈕以開啟 [ **Form1.cs** ] 視窗。
+1. 在 [form1.vb **&#91;設計&#93;** ] 視窗中，按兩下 [ **按一下這個** 按鈕以開啟 [ **form1** ] 視窗。
 
-       (另外，您也可以在 **方案總管** 中展開 [ **Form1.cs** ]，然後選擇 [ **Form1**]。 ) 
+       (另外，您也可以在 **方案總管** 中展開 form1.vb，然後選擇 [ **form1** **]。 )**
 
-1. 在 [ **Form1.cs** ] 視窗中，于私用的 **void** 行後面輸入或輸入， `lblHelloWorld.Text = "Hello World!";` 如下列螢幕擷取畫面所示：
+1. 在 [ **Form1** ] 視窗中，于私用的 **void** 行後面輸入或輸入， `lblHelloWorld.Text = "Hello World!";` 如下列螢幕擷取畫面所示：
 
      ![將程式碼新增至表單](../get-started/csharp/media/csharp-winforms-add-code.png)
 

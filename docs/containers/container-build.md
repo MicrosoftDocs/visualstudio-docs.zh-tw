@@ -3,15 +3,15 @@ title: Visual Studio 容器工具組建和調試總覽
 author: ghogen
 description: 容器工具組建和偵錯工具的總覽
 ms.author: ghogen
-ms.date: 11/20/2019
+ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 07ecc9a171cf6c0ca254ddbf284f116545ddd0f0
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: 6b860abeab0745ebae580e3020c94e446f2441c8
+ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884079"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107315949"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio 如何建置容器化應用程式
 
@@ -26,7 +26,7 @@ ms.locfileid: "104884079"
 多階段組建可讓您以產生中繼映射的階段建立容器映射。 例如，假設 Visual Studio 產生的一般 Dockerfile-第一個階段是 `base` ：
 
 ```
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
+FROM mcr.microsoft.com/dotnet/aspnet:3.1-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
@@ -37,24 +37,24 @@ Dockerfile 中的行會以 Microsoft Container Registry 中的 Debian 映射開�
 下一個階段是 `build` ，其顯示如下：
 
 ```
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
+FROM mcr.microsoft.com/dotnet/sdk:3.1-buster-slim AS build
 WORKDIR /src
 COPY ["WebApplication43/WebApplication43.csproj", "WebApplication43/"]
 RUN dotnet restore "WebApplication43/WebApplication43.csproj"
 COPY . .
 WORKDIR "/src/WebApplication43"
-RUN dotnet build "WebApplication43.csproj" -c Release -o /app
+RUN dotnet build "WebApplication43.csproj" -c Release -o /app/build
 ```
 
 您可以看到階段從登錄中的 `build` 不同原始映射開始 (`sdk` 而不是 `aspnet`) ，而不是從基底繼續。  `sdk`映射具有所有的組建工具，因此它會比僅包含執行時間元件的 aspnet 映射大很多。 當您查看 Dockerfile 的其餘部分時，使用個別影像的原因會變得很清楚：
 
 ```
 FROM build AS publish
-RUN dotnet publish "WebApplication43.csproj" -c Release -o /app
+RUN dotnet publish "WebApplication43.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 ```
 

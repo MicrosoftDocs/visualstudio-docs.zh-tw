@@ -8,20 +8,20 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b9c7f41fd2977ca00294eabd941bc371d8a3220e
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: a86b7273a123a5c9ed0519caf2166127c090d16f
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295800"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296920"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 
@@ -45,7 +45,7 @@ ms.locfileid: "103295800"
 
 ### <a name="update-visual-studio"></a>更新 Visual Studio 2017
 
-如果您已經安裝 Visual Studio，請確定您執行的是最新版本。 如需如何更新安裝的詳細資訊，請參閱將 [Visual Studio 更新至最新版本](../../install/update-visual-studio.md) 頁面。
+如果您已經安裝 Visual Studio，請確定您執行的是最新版本。 如需有關如何更新安裝的詳細資訊，請參閱 [最新版本頁面的更新 Visual Studio](../../install/update-visual-studio.md) 。
 
 ### <a name="choose-your-theme-optional"></a>選擇您的佈景主題 (選擇性)
 
@@ -98,7 +98,7 @@ ms.locfileid: "103295800"
    ![新增 ASP.NET Core Web 應用程式對話方塊](media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > 如果您在頂端的下拉式功能表中沒有看到 **ASP.NET Core 2.1**，請確定您執行的是最新版 Visual Studio。 如需如何更新安裝的詳細資訊，請參閱將 [Visual Studio 更新至最新版本](../../install/update-visual-studio.md) 頁面。
+   > 如果您在頂端的下拉式功能表中沒有看到 **ASP.NET Core 2.1**，請確定您執行的是最新版 Visual Studio。 如需有關如何更新安裝的詳細資訊，請參閱 [最新版本頁面的更新 Visual Studio](../../install/update-visual-studio.md) 。
 
 ::: moniker-end
 
@@ -110,12 +110,12 @@ ms.locfileid: "103295800"
 
 1. 在 [ **建立新專案** ] 視窗中，從 [語言] 清單中選擇 [ **c #** ]。 接著，從 [平臺] 清單中選擇 [ **Windows** ]，然後從 [專案類型] 清單中選擇 [ **Web** ]。
 
-      套用 [語言]、[平臺] 和 [專案類型] 篩選器之後，請選擇 [ **ASP.NET Core Web 應用程式** ] 範本，然後選擇 [ **下一步]**。
+      套用語言、平臺和專案類型篩選器之後，請選擇 **ASP.NET Core Web 應用程式** 範本，然後選擇 [ **下一步]**。
 
    :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="選擇 ASP.NET Core Web 應用程式的 c # 範本":::
 
    > [!NOTE]
-   > 如果您沒有看到 **ASP.NET Core Web 應用程式** 範本，您可以從 [ **建立新專案** ] 視窗進行安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   > 如果您沒有看到 **ASP.NET Core 的 Web 應用程式** 範本，您可以從 [ **建立新專案** ] 視窗進行安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
    >
    > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -139,7 +139,7 @@ ms.locfileid: "103295800"
 
    :::image type="content" source="./media/vs-2019/aspnet-core-additional-information.png" alt-text="在 [其他資訊] 視窗中，確認已選取 [.NET Core 3.1]，並保留所有預設值":::
 
-   Visual Studio 會開啟您的新專案。
+   Visual Studio 將會開啟您的新專案。
 
 ::: moniker-end
 
@@ -168,7 +168,7 @@ ms.locfileid: "103295800"
 
  1. 在程式碼編輯器中檢視 **About.cshtml.cs** 檔案。
 
-     ![螢幕擷取畫面，顯示 Visual Studio 程式碼編輯器中 About.cshtml.cs 檔案的前18行。 ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
+     ![螢幕擷取畫面，顯示 [Visual Studio 程式碼編輯器] 中的 [About]、[About] 檔案的前18行。 ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
  1. 專案包含 [wwwroot] 資料夾，即為網站的根資料夾。 展開資料夾可檢視其內容。
 
@@ -245,7 +245,7 @@ ms.locfileid: "103295800"
 
    ![檢視包含您所做變更的 [關於] 頁面](media/csharp-aspnet-razor-browser-page-about-changed.png)
 
-1. 關閉網頁瀏覽器，按 **Shift** + **F5** 以停止偵錯模式，然後關閉 Visual Studio。
+1. 關閉網頁瀏覽器，按 **Shift** + **F5** 以停止 Debug 模式，然後關閉 Visual Studio。
 
 ::: moniker-end
 
@@ -259,17 +259,17 @@ ms.locfileid: "103295800"
 
  1. 展開 [ **頁面** ] 資料夾。
 
-     ![方案 Explorer 中的 Pages 資料夾](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
+     ![方案總管中的 Pages 資料夾](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
 
  1. 在程式碼編輯器中，查看 **索引的 cshtml** 檔案。
 
-     ![在 Visual Studio 程式碼編輯器中查看索引 cshtml 檔案](media/vs-2019/csharp-aspnet-index-cshtml.png)
+     ![在 Visual Studio 程式碼編輯器中，查看索引 cshtml 檔](media/vs-2019/csharp-aspnet-index-cshtml.png)
 
- 1. 每個 cshtml 檔案都有相關聯的程式碼檔案。 若要在編輯器中開啟程式碼檔案，請在 [方案瀏覽器] 中展開 [ **Index** ] 節點，然後選擇 **Index.cshtml.cs** 檔案。
+ 1. 每個 cshtml 檔案都有相關聯的程式碼檔案。 若要在編輯器中開啟程式碼檔案，請在方案總管中展開 [ **index** ] 節點，然後選擇 [ **.]. .cs** 檔案。
 
-     ![選擇 Visual Studio 程式碼編輯器中的 Index.cshtml.cs 檔案](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
+     ![選擇 Visual Studio 程式碼編輯器中的 [檔案名]。](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
 
- 1. 在程式碼編輯器中，查看 **Index.cshtml.cs** 檔。
+ 1. 在程式碼編輯器中，查看 **索引。**
 
      ![在 Visual Studio 程式碼編輯器中檢視 About.cshtml 檔案](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
 
@@ -308,11 +308,11 @@ ms.locfileid: "103295800"
 
     ![變更隱私權. cshtml 檔案中的文字](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
 
-1. 現在，讓我們進行程式碼變更。 選擇 [ **Privacy.cshtml.cs**]。 然後，使用下列快速鍵清除檔案頂端的 `using` 指示詞：
+1. 現在，讓我們進行程式碼變更。 選擇 [ **隱私權**]。 然後，使用下列快速鍵清除檔案頂端的 `using` 指示詞：
 
    選擇任何呈現灰色的 `using` 指示詞，而且[快速動作燈泡](../../ide/quick-actions.md)會顯示在插入點正下方或左邊界中。 選擇燈泡，然後將滑鼠停留在 **移除不必要的 using**。
 
-   ![移除 Privacy.cshtml.cs 檔案中不必要的 Using](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
+   ![移除隱私權 .cs 檔案中不必要的 Using](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 
    現在選擇 [ **預覽變更** ] 以查看將會變更的內容。
 
@@ -348,7 +348,7 @@ ms.locfileid: "103295800"
 
    ![查看已更新的隱私權頁面，其中包含您所做的變更](media/vs-2019/csharp-aspnet-browser-page-privacy-changed.png)
 
-1. 關閉網頁瀏覽器，按 **Shift** + **F5** 以停止偵錯模式，然後關閉 Visual Studio。
+1. 關閉網頁瀏覽器，按 **Shift** + **F5** 以停止 Debug 模式，然後關閉 Visual Studio。
 ::: moniker-end
 
 ## <a name="quick-answers-faq"></a>常見問題集快問快答

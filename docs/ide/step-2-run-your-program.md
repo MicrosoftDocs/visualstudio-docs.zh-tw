@@ -7,17 +7,17 @@ ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4939e7a307e39f0548a72feeed7537efdcbd7f2c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7113c308416a5ddcd9bf2bb989cf17d31c4fffa6
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950844"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296490"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>步驟2：執行您的圖片檢視器應用程式
 

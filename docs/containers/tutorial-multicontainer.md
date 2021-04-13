@@ -1,22 +1,22 @@
 ---
-title: 使用 Docker 撰寫來處理多個容器
+title: 使用 Docker Compose 來處理多個容器
 author: ghogen
-description: 瞭解如何搭配 Docker 撰寫使用多個容器
+description: 瞭解如何使用多個容器搭配 Docker Compose
 ms.custom: SEO-VS-2020
 ms.author: ghogen
-ms.date: 01/10/2020
+ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: tutorial
-ms.openlocfilehash: eca1d66ddef1a0f89a3971a4867254549118e2a1
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: 412156894658cdb2160574e77ea052e4b194d386
+ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295719"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107315975"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教學課程：使用 Docker Compose 建立多容器應用程式
 
-在本教學課程中，您將瞭解如何管理一個以上的容器，並在使用 Visual Studio 中的容器工具時在這些容器之間進行通訊。  管理多個容器需要 *容器協調流程* ，且需要 Docker 撰寫、Kubernetes 或 Service Fabric 等協調器。 在這裡，我們將使用 Docker 撰寫。 在開發週期的過程中，Docker 撰寫很適合用來進行本機的偵錯工具和測試。
+在本教學課程中，您將瞭解如何在 Visual Studio 中使用容器工具來管理多個容器並在它們之間進行通訊。  管理多個容器需要 *容器協調流程* ，而且需要協調器，例如 Docker Compose、Kubernetes 或 Service Fabric。 在這裡，我們會使用 Docker Compose。 Docker Compose 在開發週期的過程中，很適合用來進行本機的偵錯工具和測試。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -67,7 +67,7 @@ ms.locfileid: "103295719"
 
 ## <a name="add-code-to-call-the-web-api"></a>新增程式碼以呼叫 Web API
 
-1. 在 `WebFrontEnd` 專案中，開啟 *Index.cshtml.cs* 檔案，並 `OnGet` 以下列程式碼取代方法。
+1. 在 `WebFrontEnd` 專案中，開啟 [ *...* ] 檔案，然後 `OnGet` 以下列程式碼取代方法。
 
    ```csharp
     public async Task OnGet()
@@ -89,7 +89,7 @@ ms.locfileid: "103295719"
     > [!NOTE]
     > 在真實世界的程式碼中，您不應該在 `HttpClient` 每個要求之後處置。 如需最佳作法，請參閱 [使用 HttpClientFactory 來執行復原的 HTTP 要求](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)。
 
-   若為 Visual Studio 2019 或更新版本中的 .NET Core 3.1，Web API 範本會使用 WeatherForecast API，因此請將該行取消批註，並將 ASP.NET 2.x 的行加上批註。
+   針對 Visual Studio 2019 或更新版本中的 .NET Core 3.1，Web API 範本會使用 WeatherForecast API，因此請將該行取消批註，並將 ASP.NET 2.x 的行加上批註。
 
 1. 在 [Index.cshtml] 檔案中，新增一行以顯示 `ViewData["Message"]`，讓檔案看起來像下列程式碼：
     
@@ -118,7 +118,7 @@ ms.locfileid: "103295719"
         }
       ```
 
-    使用 .NET Core 3.1 時，您不需要這麼做，因為您可以使用已經存在的 WeatherForecast API。 不過，您需要在 Startup.cs 的方法中將呼叫批註為 <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> `Configure` ， 因為此程式碼會使用 HTTP 而非 HTTPS 來呼叫 Web API。
+    使用 .NET Core 3.1 時，您不需要這麼做，因為您可以使用已經存在的 WeatherForecast API。 不過，您必須在 Startup 的方法中將呼叫批註為 <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> `Configure` ， 因為此程式碼會使用 HTTP 而非 HTTPS 來呼叫 Web API。
 
     ```csharp
                 //app.UseHttpsRedirection();
@@ -126,7 +126,7 @@ ms.locfileid: "103295719"
 
 1. 在 `WebFrontEnd` 專案中，選擇 [ **新增 > 容器協調器支援**]。 [ **Docker 支援選項** ] 對話方塊隨即出現。
 
-1. 選擇 [ **Docker 撰寫**]。
+1. 選擇 [ **Docker Compose**]。
 
 1. 選擇您的目標作業系統（例如 Linux）。
 
@@ -134,9 +134,9 @@ ms.locfileid: "103295719"
 
    Visual Studio 會在解決方案的 **docker 撰寫** 節點中建立 *>docker-compose.yml yml* 檔案和 *>.dockerignore* 檔案，而該專案會顯示為粗體字型，其顯示為啟始專案。
 
-   ![已新增 docker 撰寫專案的 [Solution Explorer] 螢幕擷取畫面](media/tutorial-multicontainer/multicontainer-solution-explorer.png)
+   ![已新增 docker 撰寫專案方案總管的螢幕擷取畫面](media/tutorial-multicontainer/multicontainer-solution-explorer.png)
 
-   *>docker-compose.yml* 會如下所示：
+   *>Docker-compose.yml* 會如下所示：
 
    ```yaml
    version: '3.4'
@@ -149,16 +149,16 @@ ms.locfileid: "103295719"
           dockerfile: WebFrontEnd/Dockerfile
    ```
 
-   *>.dockerignore* 檔案包含您不希望 Docker 包含在容器中的檔案類型和延伸模組。 這些檔案通常會與開發環境和原始檔控制相關聯，而不是您正在開發的應用程式或服務的一部分。
+   *>.Dockerignore* 檔案包含您不希望 Docker 包含在容器中的檔案類型和延伸模組。 這些檔案通常會與開發環境和原始檔控制相關聯，而不是您正在開發的應用程式或服務的一部分。
 
    查看 [輸出] 窗格的 [ **容器工具** ] 區段，以取得執行中命令的詳細資料。  您可以看到使用 docker 撰寫的命令列工具來設定和建立執行時間容器。
 
-1. 在 Web API 專案中，再次以滑鼠右鍵按一下專案節點，然後選擇 [**新增**  >  **容器協調器支援**]。 選擇 [ **Docker 撰寫**]，然後選取相同的目標 OS。  
+1. 在 Web API 專案中，再次以滑鼠右鍵按一下專案節點，然後選擇 [**新增**  >  **容器協調器支援**]。 選擇 [ **Docker Compose**]，然後選取相同的目標 OS。  
 
     > [!NOTE]
-    > 在這個步驟中，Visual Studio 會提供建立 Dockerfile。 如果您在已經有 Docker 支援的專案上這麼做，系統會提示您是否要覆寫現有的 Dockerfile。 如果您在 Dockerfile 中進行了想要保留的變更，請選擇 [否]。
+    > 在此步驟中，Visual Studio 將會提供建立 Dockerfile。 如果您在已經有 Docker 支援的專案上這麼做，系統會提示您是否要覆寫現有的 Dockerfile。 如果您在 Dockerfile 中進行了想要保留的變更，請選擇 [否]。
 
-    Visual Studio 會對您的 docker 撰寫 YML 檔案進行一些變更。 現在會包含這兩項服務。
+    Visual Studio 會對您的 docker 撰寫 YML 檔進行一些變更。 現在會包含這兩項服務。
 
     ```yaml
     version: '3.4'
@@ -195,5 +195,5 @@ ms.locfileid: "103295719"
 
 ## <a name="see-also"></a>另請參閱
   
-[Docker 撰寫](https://docs.docker.com/compose/)  
+[Docker Compose](https://docs.docker.com/compose/)  
 [容器工具](./index.yml)

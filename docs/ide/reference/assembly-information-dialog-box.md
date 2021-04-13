@@ -14,18 +14,18 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1ed2fd5fe9e49ab947752f84accb326499392fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a8f4d5612fe8ceaa4470f441133767178b119cc
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836418"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295438"
 ---
 # <a name="assembly-information-dialog-box"></a>組件資訊對話方塊
 
 您可以使用 [組件資訊] 對話方塊來指定 .NET Framework 全域組件屬性的值，該值會儲存在隨專案自動建立的 AssemblyInfo 檔案中。 在 [方案總管] 中，AssemblyInfo 檔案位於 Visual Basic 專案的 [我的專案] 節點中 (按一下 [顯示所有檔案] 以檢視它)。 針對 C# 專案，它位於 [屬性] 底下。 如需詳細資訊，請參閱[屬性 (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index)。
 
-若要存取此對話方塊，請在 [方案總管] 中選取專案節點，然後在 [專案] 功能表上，選取 [屬性]。在 [應用程式] 頁面上，選取 [組件資訊] 按鈕。
+若要存取這個對話方塊，請在 **方案總管** 中選取專案節點，然後在 [ **專案** ] 功能表上選取 [ **屬性**]。 在 [ **應用程式** ] 頁面上，選取 [ **元件資訊** ] 按鈕。
 
 ## <a name="uielement-list"></a>UIElement 清單
 
@@ -65,7 +65,7 @@ ms.locfileid: "99836418"
 指定組件中的類型是否可供 COM 使用。 對應至 <xref:System.Runtime.InteropServices.ComVisibleAttribute>。
 
 > [!NOTE]
-> 如需在 .NET Framework 類別庫中產生 NuGet 套件時設定這些屬性的詳細資訊，請參閱設定 [封裝的專案屬性](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)。
+> 如需在 .NET Framework 類別庫中產生 NuGet 套件時設定這些屬性的詳細資訊，請參閱設定 [封裝的專案屬性](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)。 如需有關授權和與 NuGet 套件相關之運算式的詳細資訊，請參閱 [licenses.nuget.org](/nuget/nuget-org/licenses.nuget.org/)。
 
 ## <a name="see-also"></a>另請參閱
 

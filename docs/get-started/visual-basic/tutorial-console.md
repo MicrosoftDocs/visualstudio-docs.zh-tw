@@ -7,23 +7,23 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 70782687b6220adf1c61c5b2bb6487d68fde70f4
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 075c84433e5784106bbe1f9c6ac6f58d9613bfdb
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682644"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295490"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 
-在 Visual Basic (VB) 的這個教學課程中，您將使用 Visual Studio 來建立和執行一些不同的主控台應用程式，並在執行此動作時，探索 [Visual studio 整合式開發環境 (IDE) ](visual-studio-ide.md) 的一些功能。
+在本教學課程中 Visual Basic (VB) ，您將使用 Visual Studio 來建立和執行一些不同的主控台應用程式，並探索 Visual Studio [整合式開發環境 (IDE) ](visual-studio-ide.md) 的一些功能。
 
 ::: moniker range="vs-2017"
 
@@ -177,7 +177,7 @@ ms.locfileid: "101682644"
 
 ::: moniker range="vs-2017"
 
-1. 開啟 Visual Studio 2017，然後從頂端功能表列中選擇 [檔案 > **新增** > **專案**]。
+1. 開啟 Visual Studio 2017]，然後從頂端功能表列 **中選擇 [** 檔案 > **新增** > **專案**]。
 
 1. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將檔案命名為 *CalculateThis*。
 

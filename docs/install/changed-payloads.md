@@ -3,19 +3,19 @@ title: 套件承載在發行後變更的時間
 description: 建立版面配置時，了解如何判斷套件承載是否在推出版本之後變更。
 ms.date: 05/22/2019
 ms.topic: how-to
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bd0013df051def28c57552c0aeb733888d55e9b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e773ddf85df1d7f71b1ed929b8f942a5f3b36421
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905545"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295293"
 ---
 # <a name="package-payload-changes"></a>套件承載變更
 

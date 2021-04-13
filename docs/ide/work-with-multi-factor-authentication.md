@@ -4,18 +4,18 @@ ms.date: 05/27/2020
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
 description: 瞭解如何搭配使用 Visual Studio 與需要多重要素驗證的帳戶。
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 6b85d64d3f84bce34f2a9b30d9caf01127149abc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6935c2f37f75f0318ec9402c3fcd0ff763555032
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878483"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296010"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>如何搭配需要多重要素驗證的帳戶使用 Visual Studio
 

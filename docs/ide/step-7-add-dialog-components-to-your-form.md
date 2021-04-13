@@ -7,17 +7,17 @@ ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a485433ef73ef853a186a5b441396f6d5a57f679
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66a6663cfbbcc212f05f75a8bc87bf30a3e4f880
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868851"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297063"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>步驟 7：將對話方塊元件新增至您的表單
 
@@ -27,7 +27,7 @@ ms.locfileid: "99868851"
 
 ## <a name="to-add-dialog-components-to-your-form"></a>若要將對話方塊元件加入至您的表單
 
-1. 選擇 [ **Windows Form 設計工具** **] (Form1.cs [Design]**) ，然後開啟 [**工具箱**] 中的 [**對話方塊**] 群組。
+1. 選擇 [ **Windows Form 設計工具**] (**[Design]]**) ，然後開啟 [**工具箱**] 中的 [**對話方塊**] 群組。
 
     > [!NOTE]
     > [工具箱] 中的 [對話方塊] 群組包含可開啟許多實用對話方塊的元件，您可用來開啟和儲存檔案、瀏覽資料夾及選擇字型和色彩。 您在本專案中會使用下列兩個對話方塊元件：OpenFileDialog 和 ColorDialog。
