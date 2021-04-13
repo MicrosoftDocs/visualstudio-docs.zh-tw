@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eae980a1dafc8e9b7f95f5d40593e57045cc01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6b984a9f885f137cf387837a242cc1207e45ae
+ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971319"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107221714"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 Intellisense
 
@@ -68,7 +68,7 @@ IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 In
 
 ![C&#35; 程式碼檔案中的參數資訊](../ide/media/vs2015_paraminfo.png)
 
-您可以選擇 [**編輯**  >  **IntelliSense**  >  **快速** 諮詢]、按 **Ctrl** + **I**，或選擇編輯器工具列上的 [**快速** 諮詢] 按鈕，手動叫用快速資訊。
+您可以選擇 [**編輯**  >  **IntelliSense**  >  **快速** 諮詢]、按 **ctrl** + **K**、 **ctrl** + **I**，或選擇編輯器工具列上的 [**快速** 諮詢] 按鈕，手動叫用快速資訊。
 
 如果函式是多載函式，IntelliSense 可能不會顯示所有多載形式的資訊。
 
@@ -93,7 +93,7 @@ IntelliSense 中的圖示可以搭配圖示修飾詞來傳達其他意義。 這
 | ![內部圖示修飾詞](../ide/media/intellisenseInternalModifier.png)       |    內部類別    |    存取限於目前組件。    |
 |![私人圖示修飾詞](../ide/media/intellisensePrivateModifier.png)        |    私人類別    |    存取限於目前組件內包含類別或衍生自包含類別的類型。 (自 C# 7.2 起可用。)    |
 
-## <a name="troubleshoot-intellisense"></a>針對 IntelliSense 進行疑難排解
+## <a name="troubleshoot-intellisense&quot;></a>針對 IntelliSense 進行疑難排解
 
 IntelliSense 選項在某些情況下可能不會依照您的預期運作。
 
@@ -104,7 +104,7 @@ IntelliSense 選項在某些情況下可能不會依照您的預期運作。
 **游標位於字串常值中。** 如果游標如下列範例所示位於用引號括住的字串常值中，則無法使用 IntelliSense：
 
 ```cpp
-MessageBox( hWnd, "String literal|")
+MessageBox( hWnd, &quot;String literal|")
 ```
 
 **已關閉自動選項。** IntelliSense 預設會自動運作，但您可將其停用。 即使停用自動陳述式完成，還是可以叫用 IntelliSense 功能。

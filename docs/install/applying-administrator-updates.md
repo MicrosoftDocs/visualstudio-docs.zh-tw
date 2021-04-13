@@ -2,7 +2,7 @@
 title: 使用 Microsoft Endpoint Configuration Manager 將系統管理員更新套用至 Visual Studio
 titleSuffix: ''
 description: 瞭解如何將系統管理員更新套用至 Visual Studio。
-ms.date: 04/06/2021
+ms.date: 04/07/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d316fc35df8c571a9112d7a653737e099df80559
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 4df931ee5eb5eaefdf6d918ff05df65b799bef7e
+ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547449"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107031602"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>套用使用 Microsoft Endpoint Configuration Manager 的系統管理員更新
 
@@ -83,9 +83,9 @@ Visual Studio 系統管理員更新適用于受支援的 Visual Studio 服務版
 
 ::: moniker range="vs-2019"
 
-* **維護基準** 的內容：如上所述，功能更新的系統管理員更新會將 Visual Studio 安裝前進到產品的最新次要版本。 不過，有時候開發小組會維持在特定穩定且安全的服務基準層級，並想要控制其用戶端前進至較新的次要版本。 若要將用戶端電腦設定為維持服務基準，並忽略傳送給它的不想要的系統管理員功能更新，您必須建立 **BaselineStickinessVersions2019** Reg_SZ 資料值，並將其設定為代表用戶端電腦可以貼齊並保持開啟之允許基準的字串。  此字串可以包含一連串的服務基準版本，並以逗號分隔，例如 **16.4.0 版、16.7.0**。 您也可以在字串中包含任意數目的服務基準版本，而且 **全部** 都是參考所有支援服務基準的縮寫。 
+* **維護基準** 的內容：如上所述，系統管理員功能更新會將 Visual Studio 安裝前移至產品的最新次要版本。 不過，有時候 Visual Studio 使用者必須維持在特定穩定且安全的服務基準層級，而且他們想要控制其機器移至較新的次要版本的時間。 若要將用戶端電腦設定為維持服務基準，並忽略傳送給它的不想要的系統管理員功能更新，您必須建立 **BaselineStickinessVersions2019** Reg_SZ 資料值，並將其設定為代表用戶端電腦應貼齊並保持開啟之慣用基準的字串。 此字串可以包含可允許的服務基準版本，例如 **16.7.0**。  
 
-     如果登錄 `BaselineStickinessVersions2019` 值的格式不正確，則所有功能更新都會遭到封鎖而無法安裝在電腦上。 此外，請注意 [Visual Studio 功能更新的支援時程表](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)。 雖然技術上可能會套用已達到存留期結束的功能更新，但我們不建議您這麼做，因為它們會不受支援，因此可能不安全。
+     如果 `BaselineStickinessVersions2019` 登錄值的格式不正確，則會禁止所有系統管理員功能更新安裝在電腦上。 請務必留意 [Visual Studio 功能更新所支援](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)的時間範圍。 此外，不論金鑰的存在與否或值 `BaselineStickinessVersions2019` 為何，雖然技術上可能會套用已達到存留期結束的系統管理員功能更新，但我們不建議您這麼做，因為它們會不受支援，因此可能不安全。
 
 ::: moniker-end
 

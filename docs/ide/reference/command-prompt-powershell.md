@@ -1,8 +1,8 @@
 ---
-title: 適用于開發人員的命令列 shell
-description: 瞭解如何尋找和使用 Visual Studio 開發人員命令提示字元、Visual Studio 開發人員 PowerShell 和 Visual Studio 終端機，讓您更輕鬆地使用 .NET 和 c + + 工具。
-ms.date: 03/04/2021
-ms.custom: contperf-fy21q3
+title: 命令列 shell & 提示開發人員
+description: 從 [工具] > 命令列功能表開始。 Visual Studio 開發人員命令提示字元、開發人員 PowerShell 和終端機可讓您更輕鬆地使用 .NET 和 c + + 工具。
+ms.date: 04/11/2021
+ms.custom: contperf-fy21q4
 helpviewer_keywords:
 - Visual Studio command prompt
 - command prompt, Visual Studio
@@ -11,27 +11,21 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: fb2c99037577528b77ab5c1b0c74bf7af9e73d1b
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 57cbc93f4b6e8cf64dd5149462788e0cde833350
+ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672321"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107221727"
 ---
-# <a name="developer-command-prompt-and-developer-powershell"></a>開發人員命令提示字元和開發人員 PowerShell
+# <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Visual Studio 開發人員命令提示字元和開發人員 PowerShell
 
 Visual Studio 2019 包含適用于開發人員的兩個命令列 shell：
 
 - **Visual Studio 開發人員命令提示字元** -具有特定環境變數的標準命令提示字元，設定為使用命令列開發人員工具更容易。 自 Visual Studio 2015 起提供。
+
 - **Visual Studio Developer PowerShell** -比命令提示字元更強大。 例如，您可以將一個命令的輸出 (稱為) ）傳遞 *cmdlet* 給另一個 cmdlet 。 這個 shell 的環境變數與開發人員命令提示字元的設定相同。 自 Visual Studio 2019 起提供。
 
-這兩個 shell 都有特定的環境變數設定，可讓您更輕鬆地使用命令列開發人員工具。 開啟其中一個 shell 之後，您可以為不同的公用程式輸入命令，而不需要知道它們的所在位置。 您可以執行的命令包括：
-
-- [`MSBuild`](../../msbuild/msbuild-command-line-reference.md)，用來建立專案或方案。
-- [.NET Framework 工具](/dotnet/framework/tools/index)，例如 [`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool) 和 [`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler) 。
-- C/c + + 編譯工具，例如 [`CL`](/cpp/build/reference/compiler-command-line-syntax) 和 [`NMAKE`](/cpp/build/reference/running-nmake) 。
-- 其他 C/c + + 組建工具，例如 [`LIB`](/cpp/build/reference/lib-reference) 和 [`DUMPBIN`](/cpp/build/reference/dumpbin-reference) 。
-- [.NET CLI 命令](/dotnet/core/tools/index)，例如 [`dotnet`](/dotnet/core/tools/dotnet) 和 [`dotnet run`](/dotnet/core/tools/dotnet-run) 。 您也可以從一般的命令提示字元使用這些命令 (。 ) 
 
 :::image type="content" source="media/developer-command-prompt-for-vs/command-prompt.png" alt-text="顯示 clrver 工具的 Visual Studio 開發人員命令提示字元":::
 
@@ -41,7 +35,22 @@ Visual Studio 2019 包含適用于開發人員的兩個命令列 shell：
 
 當您從 Visual Studio 開啟其中一個開發介面（可以是個別的應用程式或在終端機視窗中）時，它會開啟至您目前解決方案的目錄 (如果您已) 載入解決方案。 此行為可讓您輕鬆地針對方案或其專案執行命令。
 
-## <a name="start-the-shell-from-inside-visual-studio"></a>從內部啟動 shell Visual Studio
+這兩個 shell 都有特定的環境變數設定，可讓您更輕鬆地使用命令列開發人員工具。 開啟其中一個 shell 之後，您可以為不同的公用程式輸入命令，而不需要知道它們的所在位置。 
+
+|常用命令|Description|
+|--|--|
+|[`MSBuild`](../../msbuild/msbuild-command-line-reference.md)|建立專案或方案|
+|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| 適用于 clr 的 [.NET Framework 工具](/dotnet/framework/tools/index) 。|
+|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|解譯器的 [.NET Framework 工具](/dotnet/framework/tools/index) 。|
+|[`dotnet`](/dotnet/core/tools/dotnet)|[.NET CLI 命令](/dotnet/core/tools/index)|
+|[`dotnet run`](/dotnet/core/tools/dotnet-run)|[.NET CLI 命令](/dotnet/core/tools/index)|
+|[`CL`](/cpp/build/reference/compiler-command-line-syntax)|C/c + + 編譯工具|
+|[`NMAKE`](/cpp/build/reference/running-nmake)|C/c + + 編譯工具|
+|[`LIB`](/cpp/build/reference/lib-reference)| C/c + + 組建工具|
+|[`DUMPBIN`](/cpp/build/reference/dumpbin-reference)| C/c + + 組建工具|
+
+
+## <a name="start-in-visual-studio"></a>從 Visual Studio 開始
 
 請遵循下列步驟，從 Visual Studio 內開啟開發人員命令提示字元或開發人員 PowerShell：
 
@@ -51,9 +60,9 @@ Visual Studio 2019 包含適用于開發人員的兩個命令列 shell：
 
    ![Visual Studio 中的命令提示字元功能表項目](./media/developer-command-prompt-for-vs/vs-menu.png)
 
-## <a name="use-the-windows-start-menu"></a>使用 Windows [開始] 功能表
+## <a name="start-from-windows-menu"></a>從 Windows 功能表啟動
 
-您可能會有多個命令提示字元，視 Visual Studio 版本以及您已安裝的任何其他 Sdk 和工作負載而定。 如果下列步驟沒有作用，您可以嘗試 [手動找出電腦上的](#manually-locate-the-file) 檔案，或 [從 Visual Studio 內啟動 shell](#start-the-shell-from-inside-visual-studio)。
+啟動 shell 的另一種方式是從 [開始] 功能表。 您可能會有多個命令提示字元，視 Visual Studio 版本以及您已安裝的任何其他 Sdk 和工作負載而定。 
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -85,7 +94,7 @@ Visual Studio 2019 包含適用于開發人員的兩個命令列 shell：
 
 如果您已安裝其他 Sdk （例如 [WINDOWS 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 或 [舊版](https://developer.microsoft.com/windows/downloads/sdk-archive)），您可能會看到其他的命令提示字元。 查看個別工具的文件以判斷要使用哪個版本的命令提示字元。
 
-## <a name="manually-locate-the-file"></a>手動找出檔案
+## <a name="start-from-file-browser"></a>從檔案瀏覽器啟動 
 
 您已安裝之 shell 的快捷方式通常會放在 Visual Studio 的 [ **開始功能表** ] 資料夾中，例如 *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019 \ Visual Studio Tools*。 但是如果搜尋命令提示字元並不會產生預期的結果，您可以嘗試手動找出電腦上的檔案。
 
