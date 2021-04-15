@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c83b13b852b9ae53bd2218a62b6681478369df1b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e1576f8865fc5945514ce6965cdba66a1cfda55
+ms.sourcegitcommit: 3985d0ae8d6332f4682c82a10897763173d52961
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970513"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107386046"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -85,7 +85,7 @@ ms.locfileid: "99970513"
 
    例如，您可以選取符合測試架構的正確檔索引標籤，以使用下列程式碼：僅限 .NET) 上支援 MSTest、NUnit 或 xUnit (。
 
-   # <a name="mstest"></a>[MSTest](#tab/mstest)
+   ### <a name="mstest"></a>[MSTest](#tab/mstest)
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -114,7 +114,7 @@ ms.locfileid: "99970513"
    }
    ```
 
-   # <a name="nunit"></a>[NUnit](#tab/nunit)
+   ### <a name="nunit"></a>[NUnit](#tab/nunit)
 
    ```csharp
    using NUnit.Framework;
@@ -147,7 +147,7 @@ ms.locfileid: "99970513"
    }
    ```
 
-    # <a name="xunit"></a>[xUnit](#tab/xunit)
+    ### <a name="xunit"></a>[xUnit](#tab/xunit)
 
     ```csharp
     using System;
@@ -174,6 +174,8 @@ ms.locfileid: "99970513"
         }
     }
     ```
+
+    ---
 
 ## <a name="run-unit-tests"></a>執行單元測試
 

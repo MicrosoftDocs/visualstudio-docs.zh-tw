@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d57fa806ae565d0752fb9970c3f335295e83535
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: ee849354d82b11b8d94a737a2b546f686d04d34a
+ms.sourcegitcommit: 3985d0ae8d6332f4682c82a10897763173d52961
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684216"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107386033"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>完全初學者如何偵錯
 
@@ -64,19 +64,19 @@ ms.locfileid: "101684216"
 
 在偵錯工具 (也稱為「偵錯模式」) 中執行應用程式，表示偵錯工具會在程式執行時主動監視發生的所有情況。 它也可讓您在任何位置暫停應用程式以檢查其狀態，然後逐行執行程式碼，以監看發生的所有詳細資料。
 
-在 Visual Studio 中，您可以使用 **F5** (或 [偵錯工具  >  **開始調試** 程式] 命令或 [**開始** 偵錯工具] 按鈕在偵錯工具的工具列中 ![啟動](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")偵錯工具) 來進入偵錯工具模式。 如果發生任何例外狀況，Visual Studio 的例外狀況協助程式會帶您前往發生例外狀況的確切位置，並提供其他實用的資訊。 如需如何在程式碼中處理例外狀況的詳細資訊，請參閱[偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)。
+在 Visual Studio 中，您可以使用 **F5** (或 [偵錯工具  >  **開始調試** 程式] 命令，或在偵錯工具列) 中 **啟動調試** 程式按鈕 ![開始調試](../debugger/media/dbg-tour-start-debugging.png "[偵錯]")程式，進入偵錯工具模式。 如果發生任何例外狀況，Visual Studio 的例外狀況協助程式會帶您前往發生例外狀況的確切位置，並提供其他實用的資訊。 如需如何在程式碼中處理例外狀況的詳細資訊，請參閱[偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)。
 
 如果您未收到例外狀況，您可能知道要到程式碼中的何處尋找問題。 這是您搭配偵錯工具使用「中斷點」的位置，讓您有機會更仔細地檢查程式碼。 中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值、記憶體的行為，或程式碼執行的順序。
 
 在 Visual Studio 中，您可以按一下程式碼行旁的左邊界，快速設定中斷點。 或是將游標放在該行，然後按 **F9** 鍵。
 
-為了協助說明這些概念，我們將引導您進行已含數個 Bug 的一些範例程式碼。 我們將使用 C#，但這些偵錯工能也適用於 Visual Basic、C++、JavaScript、Python 及其他支援的語言。
+為了協助說明這些概念，我們將引導您進行已含數個 Bug 的一些範例程式碼。 我們將使用 C#，但這些偵錯工能也適用於 Visual Basic、C++、JavaScript、Python 及其他支援的語言。 此外也提供 Visual Basic 的範例程式碼，但螢幕擷取畫面是以 c # 撰寫。
 
 ### <a name="create-a-sample-app-with-some-bugs"></a>建立範例應用程式 (內含一些 Bug)
 
 接下來，我們將建立內含一些 Bug 的應用程式。
 
-1. 您必須安裝 Visual Studio 並安裝 **.Net Core 跨平臺開發** 工作負載。
+1. 您必須安裝 Visual Studio，並安裝 **.Net Core 跨平臺開發** 工作負載。
 
     如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面免費進行安裝。
 
@@ -85,19 +85,21 @@ ms.locfileid: "101684216"
 1. 開啟 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    在 [開始] 視窗中，選擇 [ **建立新專案**]。 在搜尋方塊中輸入 **主控台** ，選取 **c #** 做為語言，然後選擇 [適用于 .Net Core 的 **主控台應用程式** ]。 選擇 [下一步]。 輸入專案名稱（例如 **consoleapp.exe-FirstApp）** ，然後按 **[下一步]**。
+    在 [開始] 視窗中，選擇 [ **建立新專案**]。 在搜尋方塊中輸入 **主控台** ，選取 [ **c #** ] 或 [ **Visual Basic** ] 作為語言，然後選擇 [適用于 .net Core 的 **主控台應用程式** ]。 選擇 [下一步]。 輸入類似 **ConsoleApp_FirstApp** 的專案名稱，然後按 **[下一步]**。
 
     選擇建議的目標架構 ( .NET Core 3.1) 或 .NET 5，然後選擇 [ **建立**]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇 [ **Visual c #**] 底下的 [ **主控台應用程式**]，然後在中間窗格中選擇 [ **主控台應用程式 ( .net Core])**。 鍵入像 **ConsoleApp-FirstApp** 的名稱，並按一下 [確定]。
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，在 [ **Visual c #** ] 或 [ **Visual Basic**] 下，選擇 [ **主控台應用程式**]，然後在中間窗格中選擇 [ **主控台應用程式] ( [.net Core])**。 輸入類似 **ConsoleApp_FirstApp** 的名稱，然後按一下 **[確定]**。
     ::: moniker-end
 
     如果您沒有看到適用于 .net Core 的 **主控台應用程式** 專案範本，請移至 **工具** 的 [  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 選擇 [ **.Net Core 跨平臺開發** ] 工作負載，然後選擇 [ **修改**]。
 
     Visual Studio 隨即建立主控台專案，並出現在右窗格的 [方案總管] 中。
 
-1. 在 *Program.cs* 中，將所有預設程式碼取代為下列程式碼：
+1. 在 *.cs* (或 *.vb*) 中，以下列程式碼取代所有的預設程式碼。  (先選取正確的語言索引標籤，請選擇 [c #] 或 [Visual Basic]。 ) 
+
+   #### <a name="c"></a>[C#](#tab/csharp)
 
     ```csharp
     using System;
@@ -178,6 +180,109 @@ ms.locfileid: "101684216"
     }
     ```
 
+   #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    Imports System
+    Imports System.Collections.Generic
+
+    Namespace ConsoleApp_FirstApp
+        Friend Class Program
+            Public Shared Sub Main(ByVal args As String())
+                Console.WriteLine("Welcome to Galaxy News!")
+                Call IterateThroughList()
+                Console.ReadKey()
+            End Sub
+
+            Private Shared Sub IterateThroughList()
+                Dim theGalaxies = New List(Of Galaxy) From {
+                    New Galaxy() With {
+                        .Name = "Tadpole",
+                        .MegaLightYears = 400,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Pinwheel",
+                        .MegaLightYears = 25,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Cartwheel",
+                        .MegaLightYears = 500,
+                        .GalaxyType = New GType("L"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Small Magellanic Cloud",
+                        .MegaLightYears = 0.2,
+                        .GalaxyType = New GType("I"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Andromeda",
+                        .MegaLightYears = 3,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Maffei 1",
+                        .MegaLightYears = 11,
+                        .GalaxyType = New GType("E"c)
+                    }
+                }
+    
+                For Each theGalaxy As Galaxy In theGalaxies
+                    Console.WriteLine(theGalaxy.Name & "  " & theGalaxy.MegaLightYears & ",  " & theGalaxy.GalaxyType)
+                Next
+
+            End Sub
+        End Class
+    
+        Public Class Galaxy
+            Public Property Name As String
+            Public Property MegaLightYears As Double
+            Public Property GalaxyType As Object
+        End Class
+    
+        Public Class GType
+    
+            Shared Operator &(ByVal left As String, ByVal right As GType) As String
+                Return New String(left & right.ToString())
+            End Operator
+            Public Sub New(ByVal type As Char)
+                Select Case type
+                    Case "S"c
+                        MyGType = GType.Type.Spiral
+                    Case "E"c
+                        MyGType = GType.Type.Elliptical
+                    Case "l"c
+                        MyGType = GType.Type.Irregular
+                    Case "L"c
+                        MyGType = GType.Type.Lenticular
+                    Case Else
+                End Select
+    
+            End Sub
+    
+            Private _MyGType As String
+            Public Property MyGType As Object
+                Get
+                    Return _MyGType
+                End Get
+                Set(ByVal value As Object)
+                    _MyGType = value.ToString()
+                End Set
+            End Property
+    
+            Private Enum Type
+                Spiral
+                Elliptical
+                Irregular
+                Lenticular
+            End Enum
+        End Class
+    End Namespace
+    ```
+
+    ---
+
     此程式碼的意圖為銀河名稱、與銀河的距離及銀河類型，全部都顯示在一份清單中。 為了進行偵錯，請務必了解程式碼的意圖。 以下是下列輸出所要顯示之清單中的單行格式：
 
     *銀河名稱*, *距離*, *銀河類型*。
@@ -214,6 +319,8 @@ ms.locfileid: "101684216"
 
 1. 在應用程式仍在執行時，按一下此程式碼行中 `Console.WriteLine` 方法呼叫旁的左邊界來設定中斷點。
 
+    #### <a name="c"></a>[C#](#tab/csharp)
+
     ```csharp
     foreach (Galaxy theGalaxy in theGalaxies)
     {
@@ -221,6 +328,15 @@ ms.locfileid: "101684216"
     }
     ```
 
+    #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    For Each theGalaxy As Galaxy In theGalaxies
+        Console.WriteLine(theGalaxy.Name & "  " & theGalaxy.MegaLightYears & ",  " & theGalaxy.GalaxyType)
+    Next
+    ```
+
+    ---
     當您設定中斷點時，左邊界會出現紅點。
 
     由於我們在輸出中看到問題，因此我們將在偵錯工具中查看設定輸出的上述程式碼來開始偵錯。
@@ -231,13 +347,16 @@ ms.locfileid: "101684216"
 
 1. 將滑鼠游標移至右邊的 `GalaxyType` 變數上方，然後移至左邊的扳手圖示上方，展開 `theGalaxy.GalaxyType`。 您會看到 `GalaxyType` 包含 `MyGType` 屬性，且該屬性值已設定為 `Spiral`。
 
-    ![Visual Studio 偵錯工具的螢幕擷取畫面，其中包含以黃色顯示的程式碼，並在行尾的 theGalaxy. GalaxyType 屬性下方展開功能表。](../debugger/media/beginners-inspect-variable.png)
+    ![Visual Studio 偵錯工具的螢幕擷取畫面，其中包含黃色的程式碼，以及在行尾的 theGalaxy. GalaxyType 屬性下方展開的功能表。](../debugger/media/beginners-inspect-variable.png)
 
     "Spiral" 實際上是您預期列印至主控台的正確值！ 因此，這是一個不錯的起點，您可以在執行應用程式時存取這段程式碼中的這個值。 在此案例中，我們將使用不正確的 API。 我們將了解是否可以在偵錯工具中執行程式碼時修正此問題。
 
-1. 當您仍在偵錯時，將游標放在相同程式碼中的 `theGalaxy.GalaxyType` 結尾處，然後將它變更為 `theGalaxy.GalaxyType.MyGType`。 雖然您可以進行這項變更，但程式碼編輯器會顯示錯誤，指出無法編譯此程式碼。
+1. 當您仍在偵錯時，將游標放在相同程式碼中的 `theGalaxy.GalaxyType` 結尾處，然後將它變更為 `theGalaxy.GalaxyType.MyGType`。 雖然您可以進行這項變更，但程式碼編輯器會顯示錯誤，指出無法編譯此程式碼。  (在 Visual Basic 中，您將不會看到錯誤，而且這段程式碼會正常運作) 
 
     ![Visual Studio 偵錯工具的螢幕擷取畫面，其中包含以紅色醒目提示的程式程式碼，以及已選取 [編輯] 按鈕的 [編輯後繼續] 訊息方塊。](../debugger/media/beginners-edit.png)
+
+   > [!NOTE]
+   > 如需 Visual Basic 範例程式碼的偵錯工具，請略過接下來的幾個步驟，直到指示您按一下 [ **重新** 啟動 ![重新開機應用程式](../debugger/media/dbg-tour-restart.png ">restartapp") ] 按鈕為止。
 
 1. 在 [編輯後繼續] 訊息方塊中，按一下 [編輯]。 您現在會在 [錯誤清單] 視窗中看到錯誤訊息。 錯誤指出 `'object'` 不包含 `MyGType` 的定義。
 
@@ -274,11 +393,21 @@ ms.locfileid: "101684216"
     Maffei 1,  Elliptical
     ```
 
-1. 在此程式碼行上設定中斷點。
+1. 在 Visual Basic) 中的 Select 語句之前 (switch 語句之前，在這行程式碼上設定中斷點。
+
+    #### <a name="c"></a>[C#](#tab/csharp)
 
     ```csharp
     public GType(char type)
     ```
+
+    #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    Public Sub New(ByVal type As Char)
+    ```
+
+    ---
 
     此程式碼是設定銀河類型的位置，因此我們想要進一步查看。
 
@@ -290,13 +419,13 @@ ms.locfileid: "101684216"
 
 1. 按 **F5** 鍵，並再次將滑鼠游標移至 `type` 變數上方。 重複此步驟，直到您在 `type` 變數中看到 `I` 值。
 
-    ![Visual Studio 偵錯工具的螢幕擷取畫面，其中包含以黃色顯示的程式碼，以及一個小視窗，其中顯示類型變數的值為 73 ' I '。](../debugger/media/beginners-inspecting-data.png)
+    ![Visual Studio 偵錯工具的螢幕擷取畫面，其中包含以黃色顯示的程式程式碼，以及一個小視窗，其中顯示類型變數的值為 73 ' I '。](../debugger/media/beginners-inspecting-data.png)
 
 1. 現在，按 **F11** 鍵 ([偵錯] > [逐步執行] 或偵錯工具列中的 [逐步執行] 按鈕)。
 
     **F11** 鍵會將偵錯工具一次往前推進一個陳述式 (並執行程式碼)。 **F10** (**不進入函式**) 是類似的命令，這兩者對於了解如何使用偵錯工具都非常有用。
 
-1. 按 **F11** 鍵，直到停在 `switch` 陳述式中值為 'I' 的程式碼行。 在這裡，您會看到問題很明顯是由於錯字所造成。 您預期程式碼往前推進到 `MyGType` 設定為不規則銀河類型的位置，但偵錯工具卻完全略過此程式碼，並於 `switch` 陳述式的 `default` 區段上暫停。
+1. 按 **F11** 鍵，直到您在語句中的程式程式碼上停止 `switch` Visual Basic) 的值 ' I ' (`Select` 語句為止。 在這裡，您會看到問題很明顯是由於錯字所造成。 您預期程式碼會前進到它設定 `MyGType` 為異常 galaxy 類型的位置，但偵錯工具會改為完全略過此程式碼，並在 `default` `switch` `Else` Visual Basic) 中的語句 (語句的區段上暫停。
 
     ![尋找錯字](../debugger/media/beginners-typo.png)
 
@@ -310,7 +439,7 @@ ms.locfileid: "101684216"
 
     按任意鍵完成應用程式。
 
-## <a name="summary"></a>摘要
+## <a name="summary"></a>總結
 
 當您看到問題時，請使用偵錯工具和 [步驟命令](../debugger/navigating-through-code-with-the-debugger.md) (例如 **F10** 和 **F11**)，以找出有問題的程式碼區域。
 
