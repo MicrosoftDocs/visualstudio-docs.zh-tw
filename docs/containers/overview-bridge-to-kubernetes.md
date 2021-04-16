@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 49c3081e68baf4f2bf1d0975bcdae7ea25ab90b3
-ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
+ms.openlocfilehash: 1709785c63bd4fbcd702fbcacfe59dddcb71d1b3
+ms.sourcegitcommit: 0135fc6ffa38995cc9e6ab05fa265758890d2e15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103571541"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107526151"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 的運作方式
 
@@ -27,9 +27,11 @@ ms.locfileid: "103571541"
 > [!WARNING]
 > Bridge Kubernetes 僅供開發和測試案例使用。 不適用於生產叢集或主動使用中的即時服務。
 
+如需目前支援的功能和橋接器至 Kubernetes 的未來藍圖的相關資訊，請參閱 [橋接器至 Kubernetes 藍圖](https://github.com/microsoft/mindaro/projects/1)。
+
 ## <a name="using-bridge-to-kubernetes"></a>使用 Bridge Kubernetes
 
-若要在 Visual Studio 中使用 Bridge Kubernetes，您需要在 Windows 10 上執行 [Visual Studio 2019][visual-studio] 16.7 Preview 4 或更新版本，且已安裝 *ASP.NET 和 網頁程式開發* 工作負載，並已安裝 [橋接器至 Kubernetes 擴充][btk-extension] 功能。 當您使用 Bridge Kubernetes 來建立 Kubernetes 叢集的連線時，您可以選擇將叢集中現有 pod 的所有流量，重新導向至您的開發電腦。
+若要使用橋接器在 Visual Studio 中 Kubernetes，您需要在已安裝 *ASP.NET 和 網頁程式開發* 工作負載的 Windows 10 上執行 [Visual Studio 2019][visual-studio] 16.7 Preview 4 版或更新版本，並安裝 [橋接器至 Kubernetes 擴充][btk-extension]功能。 當您使用 Bridge Kubernetes 來建立 Kubernetes 叢集的連線時，您可以選擇將叢集中現有 pod 的所有流量，重新導向至您的開發電腦。
 
 > [!NOTE]
 > 使用 Bridge Kubernetes 時，系統會提示您輸入服務的名稱，以重新導向至您的開發電腦。 此選項可讓您輕鬆地識別要重新導向的 pod。 Kubernetes 叢集與開發電腦之間的所有重新導向皆適用于 pod。
@@ -53,7 +55,7 @@ ms.locfileid: "103571541"
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>使用 KubernetesLocalProcessConfig 的其他設定。 yaml
 
-此檔案可 `KubernetesLocalProcessConfig.yaml` 讓您將環境變數和已掛接的檔案複寫至叢集中的 pod。 如需其他設定選項的詳細資訊，請參閱 [設定橋接器至 Kubernetes][using-config-yaml]。
+此檔案可 `KubernetesLocalProcessConfig.yaml` 讓您將環境變數和已掛接的檔案複寫至叢集中的 pod。 使用 Visual Studio 來進行 Kubernetes 開發時，KubernetesLocalConfig. yaml 檔案必須位於與您要重新導向之服務的專案檔相同的目錄中。 如需其他設定選項的詳細資訊，請參閱 [設定橋接器至 Kubernetes][using-config-yaml]。
 
 ## <a name="using-routing-capabilities-for-developing-in-isolation"></a>使用路由功能來以隔離方式進行開發
 
@@ -69,7 +71,7 @@ ms.locfileid: "103571541"
 * 在相同的命名空間中，將您選擇的服務複寫至叢集中，並新增 *routing.visualstudio.io/route-from=SERVICE_NAME* 標籤和 *routing.visualstudio.io/route-on-header=kubernetes-route-as： GENERATED_NAME* 注釋。
 * 在 Kubernetes 叢集上的相同命名空間中設定和啟動路由管理員。 當您在命名空間中設定路由時，路由管理員會使用標籤選取器來尋找 *routing.visualstudio.io/route-from=SERVICE_NAME* 標籤和  *routing.visualstudio.io/route-on-header=kubernetes-route-as： GENERATED_NAME* 注釋。
 
-如果 Bridge 與 Kubernetes 偵測到您的 Kubernetes 叢集上已啟用 Azure Dev Spaces，系統會提示您停用 Azure Dev Spaces，您才能使用 Bridge 來 Kubernetes。
+如果 Bridge 與 Kubernetes 偵測到您的 Kubernetes 叢集上已啟用 Azure Dev Spaces，系統會提示您停用 Azure Dev Spaces，然後才能使用 Bridge 來 Kubernetes。
 
 路由管理員會在啟動時執行下列動作：
 
@@ -145,11 +147,11 @@ kubectl -n <namespace> apply -f <yaml file name>
 * Pod 可能只有在該 pod 中執行的單一容器，才能讓 Bridge Kubernetes 成功連接。
 * 目前，Kubernetes pod 的 Bridge 必須是 Linux 容器。 不支援 Windows 容器。
 * 橋接器至 Kubernetes 需要較高的許可權，才能在您的開發電腦上執行，以編輯主機檔案。
-* 無法在已啟用 Azure Dev Spaces 的叢集上使用 Bridge 至 Kubernetes。
+* 無法在已啟用 Azure Dev Spaces 的叢集上使用 Bridge 與 Kubernetes。
 
-### <a name="bridge-to-kubernetes-and-clusters-with-azure-dev-spaces-enabled"></a>使用已啟用 Azure Dev Spaces 的 Kubernetes 和叢集橋接
+### <a name="bridge-to-kubernetes-and-clusters-with-azure-dev-spaces-enabled"></a>在啟用 Azure Dev Spaces 的情況下橋接至 Kubernetes 和叢集
 
-您無法在已啟用 Azure Dev Spaces 的叢集上使用 Bridge Kubernetes。 如果您想要在啟用 Azure Dev Spaces 的叢集上使用 Bridge Kubernetes，您必須在連線到叢集之前停用 Azure Dev Spaces。
+您無法在已啟用 Azure Dev Spaces 的叢集上使用 Bridge 進行 Kubernetes。 如果您想要在已啟用 Azure Dev Spaces 的叢集上使用橋接器來 Kubernetes，則必須先停用 Azure Dev Spaces，然後再連接到您的叢集。
 
 ## <a name="next-steps"></a>下一步
 

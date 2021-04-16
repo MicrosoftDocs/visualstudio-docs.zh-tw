@@ -10,18 +10,18 @@ user.type: subscriber
 tags: download, activate, licensing
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: ac57b500685ae885d5cd68c5901a6ee2617462d0
-ms.sourcegitcommit: bbf532e50b9140724c1a0f66f9a35862bf6e4a97
+ms.openlocfilehash: 755574a0ae60b078a2ea5414e43e16c80c91fa67
+ms.sourcegitcommit: f6aa84e34c2f41877b84c01e7ead956a1b4c24f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107291411"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "107511444"
 ---
 ## <a name="visual-studio-ide-technical-support"></a>Visual Studio IDE 技術支援  
 
 Visual Studio 訂閱支援人員可提供銷售、訂用帳戶、帳戶和計費的協助。 如果您有 Visual Studio 的 IDE 技術問題或問題，您的問題必須導向 [Visual Studio 技術支援](https://visualstudio.microsoft.com/vs/support/)。 在您使用您的 Visual Studio 訂用帳戶隨附的有限 [Visual Studio 技術支援事件](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support) 之前，建議您先嘗試一些其他線上資源。
 
-如 Visual Studio 安裝問題，請參閱 [疑難排解 Visual Studio 安裝和升級問題](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues?view=vs-2019) ，以取得逐步指引。 您也可以在安裝相關的問題 (僅英文版) 支援選項，嘗試 [安裝聊天](https://visualstudio.microsoft.com/vs/support/#talktous) 。
+如 Visual Studio 安裝問題，請參閱 [疑難排解 Visual Studio 安裝和升級問題](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues) ，以取得逐步指引。 您也可以在安裝相關的問題 (僅英文版) 支援選項，嘗試 [安裝聊天](https://visualstudio.microsoft.com/vs/support/#talktous) 。
 
 
 ## <a name="developer-community--visual-studio-ide"></a>開發人員群體 |Visual Studio IDE
