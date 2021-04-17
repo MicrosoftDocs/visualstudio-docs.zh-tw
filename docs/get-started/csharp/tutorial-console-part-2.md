@@ -2,7 +2,7 @@
 title: '教學課程：擴充簡單的 c # 主控台應用程式'
 description: '逐步瞭解如何在 Visual Studio 中開發 c # 主控台應用程式。'
 ms.custom: get-started
-ms.date: 07/09/2020
+ms.date: 04/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e5552cc3d84eb0dd2a44943c36ddaa60c827ceb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cce069b1c4acb1784388b7afb06e810dbe826d59
+ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909321"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107584131"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>教學課程：擴充簡單的 c # 主控台應用程式
 
@@ -39,15 +39,15 @@ ms.locfileid: "99909321"
 
    ![類別庫專案範本選取專案的螢幕擷取畫面](media/vs-2019/calculator2-add-project-dark.png)
 
-1. 輸入專案名稱 **CalculatorLibrary**，然後選擇 [ **建立**]。 Visual Studio 會建立新的專案，並將其加入至方案。
+1. 輸入專案名稱 **CalculatorLibrary**，然後選擇 [ **建立**]。 同樣地，當系統詢問時，選擇 .NET 3.1。 Visual Studio 會建立新的專案，並將其加入至方案。
 
    ![已新增 CalculatorLibrary 類別庫專案方案總管的螢幕擷取畫面](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
-1. 請重新命名 **CalculatorLibrary.cs** 檔案，而不是 *Class1.cs*。 您可以按一下 **方案總管** 中的名稱來重新命名，或按一下滑鼠右鍵並選擇 [ **重新命名**]，或按 **F2** 鍵。
+1. 請將 CalculatorLibrary 檔案重新命名為 **.cs**，而不是有 *Class1*。 您可以按一下 **方案總管** 中的名稱來重新命名，或按一下滑鼠右鍵並選擇 [ **重新命名**]，或按 **F2** 鍵。
 
    如果您想要重新命名檔案中的任何參考，可能會被詢問您 `Class1` 。 這並不重要，因為您將會在未來的步驟中取代程式碼。
 
-1. 我們現在必須加入專案參考，讓第一個專案可以使用新類別庫所公開的 Api。  以滑鼠右鍵按一下第一個專案中的 [ **參考** ] 節點，然後選擇 [ **加入專案參考**]。
+1. 我們現在必須加入專案參考，讓第一個專案可以使用新類別庫所公開的 Api。  以滑鼠右鍵按一下第一個專案中的 [相依性] 節點，然後選擇 [**加入專案參考** **]** 。
 
    ![[新增專案參考] 功能表項目的螢幕擷取畫面](media/vs-2019/calculator2-add-project-reference-dark.png)
 
@@ -59,7 +59,7 @@ ms.locfileid: "99909321"
 
    ![專案參考方案總管的螢幕擷取畫面](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. 在 *Program.cs* 中，選取 `Calculator` 類別及其所有程式碼，然後按下 **CTRL + X** 以將它從 Program.cs 剪下。 然後在 **CalculatorLibrary** 的 *CalculatorLibrary.cs* 中，將程式碼貼到 `CalculatorLibrary` 命名空間中。 然後，讓計算機類別 `public` 在程式庫外部公開。 *CalculatorLibrary.cs* 中的程式碼現在應該類似下列程式碼：
+1. 在 [ *program*] 中，選取 `Calculator` 類別及其所有程式碼，然後按 **CTRL + X** 以從 Program 中剪下。 然後在 **CalculatorLibrary** 的 *CalculatorLibrary* 中，將程式碼貼到 `CalculatorLibrary` 命名空間中。 然後，讓計算機類別 `public` 在程式庫外部公開。 *CalculatorLibrary* 中的程式碼現在應該類似下列程式碼：
 
    ```csharp
    using System;
@@ -121,14 +121,14 @@ ms.locfileid: "99909321"
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>參考 .NET 程式庫：寫入記錄檔
 
-1. 假設您現在想要新增所有作業的記錄檔，並將它寫出至文字檔。 .NET `Trace` 類別提供這種功能。  (也適用于基本的列印偵錯工具。 ) Trace 類別是在 System.IO 中，而我們需要像這樣的類別 `StreamWriter` ，所以請從新增 using 指示詞開始：
+1. 假設您現在想要新增所有作業的記錄檔，並將它寫出至文字檔。 .NET `Trace` 類別提供這種功能。  (也適用于基本的列印偵錯工具。 ) Trace 類別是在 System.IO 中，而我們需要像這樣的類別 `StreamWriter` ，所以請從在 *CalculatorLibrary* 的頂端加入 using 指示詞開始：
 
    ```csharp
    using System.IO;
    using System.Diagnostics;
    ```
 
-1. 查看 Trace 類別的使用方式，您需要在與 filestream 相關聯的類別上保存參考。 這表示，計算機的運作方式會優於物件，所以讓我們加入一個函式。
+1. 查看 Trace 類別的使用方式，您需要在與 filestream 相關聯的類別上保存參考。 這表示，計算機的運作方式會優於物件，因此，讓我們在 *CalculatorLibrary* 的計算機類別開頭新增一個函式。
 
    ```csharp
    public Calculator()
@@ -144,7 +144,7 @@ ms.locfileid: "99909321"
         {
    ```
 
-1. 而且我們必須將靜態方法變更 `DoOperation` 為成員方法。  讓我們也將輸出新增至記錄檔的每個計算，讓 Dooperation-add-0.invoke 看起來像下列程式碼：
+1. 而且我們必須將靜態方法變更 `DoOperation` 為成員方法，因此請移除 `static` 關鍵字。  讓我們也將輸出新增至記錄檔的每個計算，讓 Dooperation-add-0.invoke 看起來像下列程式碼：
 
    ```csharp
    public double DoOperation(double num1, double num2, string op)
@@ -182,13 +182,13 @@ ms.locfileid: "99909321"
     }
    ```
 
-1. 現在回到 Program.cs，靜態呼叫會以紅色曲線標示。 若要修正此問題，請在 `calculator` while 迴圈之前新增下面這一行來建立變數：
+1. 現在回到 *Program .cs*，靜態呼叫會以紅色曲線標示。 若要修正此問題，請在 `calculator` 迴圈之前新增下面這一行來建立變數 `while (!endApp)` ：
 
    ```csharp
    Calculator calculator = new Calculator();
    ```
 
-   以及修改的呼叫位置， `DoOperation` 如下所示：
+   以及修改的呼叫位置，如下所示 `DoOperation` ，如此一來，就會參考以小寫命名的物件 `calculator` ，藉此使其成為成員調用，而不是呼叫靜態方法：
 
    ```csharp
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -203,9 +203,154 @@ ms.locfileid: "99909321"
     3 * 3 = 9
     ```
 
+此時， *CalculatorLibrary* 應該看起來像這樣：
+
+```csharp
+using System;
+using System.IO;
+using System.Diagnostics;
+
+
+namespace CalculatorLibrary
+{
+    public class Calculator
+    {
+
+        public Calculator()
+        {
+            StreamWriter logFile = File.CreateText("calculator.log");
+            Trace.Listeners.Add(new TextWriterTraceListener(logFile));
+            Trace.AutoFlush = true;
+            Trace.WriteLine("Starting Calculator Log");
+            Trace.WriteLine(String.Format("Started {0}", System.DateTime.Now.ToString()));
+        }
+
+        public double DoOperation(double num1, double num2, string op)
+        {
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
+
+            // Use a switch statement to do the math.
+            switch (op)
+            {
+                case "a":
+                    result = num1 + num2;
+                    Trace.WriteLine(String.Format("{0} + {1} = {2}", num1, num2, result));
+                    break;
+                case "s":
+                    result = num1 - num2;
+                    Trace.WriteLine(String.Format("{0} - {1} = {2}", num1, num2, result));
+                    break;
+                case "m":
+                    result = num1 * num2;
+                    Trace.WriteLine(String.Format("{0} * {1} = {2}", num1, num2, result));
+                    break;
+                case "d":
+                    // Ask the user to enter a non-zero divisor.
+                    if (num2 != 0)
+                    {
+                        result = num1 / num2;
+                        Trace.WriteLine(String.Format("{0} / {1} = {2}", num1, num2, result));
+                    }
+                    break;
+                // Return text for an incorrect option entry.
+                default:
+                    break;
+            }
+            return result;
+        }
+    }
+}
+```
+
+和 *程式 .cs* 應如下所示：
+
+```csharp
+using System;
+using CalculatorLibrary;
+
+namespace CalculatorProgram
+{
+   
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool endApp = false;
+            // Display title as the C# console calculator app.
+            Console.WriteLine("Console Calculator in C#\r");
+            Console.WriteLine("------------------------\n");
+
+            Calculator calculator = new Calculator();
+            while (!endApp)
+            {
+                // Declare variables and set to empty.
+                string numInput1 = "";
+                string numInput2 = "";
+                double result = 0;
+
+                // Ask the user to type the first number.
+                Console.Write("Type a number, and then press Enter: ");
+                numInput1 = Console.ReadLine();
+
+                double cleanNum1 = 0;
+                while (!double.TryParse(numInput1, out cleanNum1))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput1 = Console.ReadLine();
+                }
+
+                // Ask the user to type the second number.
+                Console.Write("Type another number, and then press Enter: ");
+                numInput2 = Console.ReadLine();
+
+                double cleanNum2 = 0;
+                while (!double.TryParse(numInput2, out cleanNum2))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput2 = Console.ReadLine();
+                }
+
+                // Ask the user to choose an operator.
+                Console.WriteLine("Choose an operator from the following list:");
+                Console.WriteLine("\ta - Add");
+                Console.WriteLine("\ts - Subtract");
+                Console.WriteLine("\tm - Multiply");
+                Console.WriteLine("\td - Divide");
+                Console.Write("Your option? ");
+
+                string op = Console.ReadLine();
+
+                try
+                {
+                    result = calculator.DoOperation(cleanNum1, cleanNum2, op); 
+                    if (double.IsNaN(result))
+                    {
+                        Console.WriteLine("This operation will result in a mathematical error.\n");
+                    }
+                    else Console.WriteLine("Your result: {0:0.##}\n", result);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
+                }
+
+                Console.WriteLine("------------------------\n");
+
+                // Wait for the user to respond before closing.
+                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+                if (Console.ReadLine() == "n") endApp = true;
+
+                Console.WriteLine("\n"); // Friendly linespacing.
+            }
+            return;
+        }
+    }
+}
+```
+
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>新增 NuGet 套件：寫入 JSON 檔案
 
-1. 現在假設我們想要以 JSON 格式輸出作業，這是常用且可攜的格式，可用於儲存物件資料。 若要執行該功能，我們必須參考 Newtonsoft.Js上的 NuGet 套件。 NuGet 套件是發佈 .NET 類別庫的主要工具。 在 **方案總管** 中，以滑鼠右鍵按一下 CalculatorLibrary 專案的 [ **參考** ] 節點，然後選擇 [ **管理 NuGet 封裝**]。
+1. 現在假設我們想要以 JSON 格式輸出作業，這是常用且可攜的格式，可用於儲存物件資料。 若要執行該功能，我們必須參考 Newtonsoft.Js上的 NuGet 套件。 NuGet 套件是發佈 .NET 類別庫的主要工具。 在 **方案總管** 中，以滑鼠右鍵按一下 CalculatorLibrary 專案的 [相依性] 節點，然後選擇 [**管理 NuGet 封裝** **]** 。
 
    ![在快捷方式功能表上管理 NuGet 套件的螢幕擷取畫面](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
@@ -219,7 +364,7 @@ ms.locfileid: "99909321"
 
    封裝會下載並加入至您的專案，而新的專案會出現在 **方案總管** 的 [參考] 節點中。
 
-1. 在 *CalculatorLibrary.cs* 的開頭加入 System.IO 和 Newtonsoft.Json 封裝的 using 指示詞。
+1. 在 *CalculatorLibrary* 的開頭加入 System.IO 和 Newtonsoft.Json 封裝的 using 指示詞。
 
    ```csharp
    using Newtonsoft.Json;
@@ -300,7 +445,7 @@ ms.locfileid: "99909321"
     }
    ```
 
-1. 在 *Program.cs* 中，新增在結尾處完成的呼叫。
+1. 在 *Program* 中，在結尾加入完成的呼叫。
 
    ```csharp
             // And call to close the JSON writer before return
@@ -334,7 +479,7 @@ ms.locfileid: "99909321"
 
 Visual Studio 偵錯工具是一項功能強大的工具，可讓您逐步執行程式碼，以找出發生程式設計錯誤的確切點。 然後，您會瞭解您需要在程式碼中進行哪些修正。 Visual Studio 可讓您進行暫時性變更，讓您可以繼續執行程式。
 
-1. 在 [ *Program.cs*] 中，按一下下列程式碼左邊的邊界 (或開啟快捷方式功能表，然後選擇 [**中斷點**  >  **插入中斷點**]，或按下 **F9**) ：
+1. 在 [ *Program*] 中，按一下下列程式碼左邊的邊界 (或開啟快捷方式功能表，然後選擇 [**中斷點**  >  **插入中斷點**]，或按下 **F9**) ：
 
    ```csharp
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -392,7 +537,7 @@ Visual Studio 偵錯工具是一項功能強大的工具，可讓您逐步執行
 
    ![呼叫堆疊的螢幕擷取畫面](media/vs-2019/calculator-2-debug-call-stack.png)
 
-   這個視圖會顯示目前的 `Calculator.DoOperation` 方法（以黃色指標表示），而第二個數據列會顯示從 `Main` *Program.cs* 中的方法呼叫它的函式。 [呼叫堆疊] 視窗會顯示方法和函式的呼叫順序。 此外，它還可讓您從快捷方式功能表存取許多偵錯工具功能，例如 [ **移至原始程式碼**]。
+   這個視圖會顯示目前的 `Calculator.DoOperation` 方法（以黃色指標表示），而第二個數據列會顯示從 `Main` *程式* 中的方法呼叫它的函式。 [呼叫堆疊] 視窗會顯示方法和函式的呼叫順序。 此外，它還可讓您從快捷方式功能表存取許多偵錯工具功能，例如 [ **移至原始程式碼**]。
 
 1. 在   >  語句上暫停應用程式之前，請按下 F10 (或「偵錯工具不) 多次」 `switch` 。
 
@@ -434,6 +579,174 @@ Visual Studio 偵錯工具是一項功能強大的工具，可讓您逐步執行
 
 1. 使用 ' n ' 命令，正確地關閉應用程式。
 
+## <a name="code-complete"></a>程式碼完成
+
+以下是完成所有步驟之後， *CalculatorLibrary .cs* 檔案的完整程式碼：
+
+```csharp
+using System;
+using System.IO;
+using System.Diagnostics;
+using Newtonsoft.Json;
+
+namespace CalculatorLibrary
+{
+    public class Calculator
+    {
+
+        JsonWriter writer;
+
+        public Calculator()
+        {
+            StreamWriter logFile = File.CreateText("calculatorlog.json");
+            logFile.AutoFlush = true;
+            writer = new JsonTextWriter(logFile);
+            writer.Formatting = Formatting.Indented;
+            writer.WriteStartObject();
+            writer.WritePropertyName("Operations");
+            writer.WriteStartArray();
+        }
+
+        public double DoOperation(double num1, double num2, string op)
+        {
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
+            writer.WriteStartObject();
+            writer.WritePropertyName("Operand1");
+            writer.WriteValue(num1);
+            writer.WritePropertyName("Operand2");
+            writer.WriteValue(num2);
+            writer.WritePropertyName("Operation");
+            // Use a switch statement to do the math.
+            switch (op)
+            {
+                case "a":
+                    result = num1 + num2;
+                    writer.WriteValue("Add");
+                    break;
+                case "s":
+                    result = num1 - num2;
+                    writer.WriteValue("Subtract");
+                    break;
+                case "m":
+                    result = num1 * num2;
+                    writer.WriteValue("Multiply");
+                    break;
+                case "d":
+                    // Ask the user to enter a non-zero divisor.
+                    if (num2 != 0)
+                    {
+                        result = num1 / num2;
+                        writer.WriteValue("Divide");
+                    }
+                    break;
+                // Return text for an incorrect option entry.
+                default:
+                    break;
+            }
+            writer.WritePropertyName("Result");
+            writer.WriteValue(result);
+            writer.WriteEndObject();
+
+            return result;
+        }
+
+        public void Finish()
+        {
+            writer.WriteEndArray();
+            writer.WriteEndObject();
+            writer.Close();
+        }
+    }
+}
+```
+
+以下是 *程式的程式* 代碼： 
+
+```csharp
+using System;
+using CalculatorLibrary;
+
+namespace CalculatorProgram
+{
+   
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool endApp = false;
+            // Display title as the C# console calculator app.
+            Console.WriteLine("Console Calculator in C#\r");
+            Console.WriteLine("------------------------\n");
+
+            Calculator calculator = new Calculator();
+            while (!endApp)
+            {
+                // Declare variables and set to empty.
+                string numInput1 = "";
+                string numInput2 = "";
+                double result = 0;
+
+                // Ask the user to type the first number.
+                Console.Write("Type a number, and then press Enter: ");
+                numInput1 = Console.ReadLine();
+
+                double cleanNum1 = 0;
+                while (!double.TryParse(numInput1, out cleanNum1))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput1 = Console.ReadLine();
+                }
+
+                // Ask the user to type the second number.
+                Console.Write("Type another number, and then press Enter: ");
+                numInput2 = Console.ReadLine();
+
+                double cleanNum2 = 0;
+                while (!double.TryParse(numInput2, out cleanNum2))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput2 = Console.ReadLine();
+                }
+
+                // Ask the user to choose an operator.
+                Console.WriteLine("Choose an operator from the following list:");
+                Console.WriteLine("\ta - Add");
+                Console.WriteLine("\ts - Subtract");
+                Console.WriteLine("\tm - Multiply");
+                Console.WriteLine("\td - Divide");
+                Console.Write("Your option? ");
+
+                string op = Console.ReadLine();
+
+                try
+                {
+                    result = calculator.DoOperation(cleanNum1, cleanNum2, op); 
+                    if (double.IsNaN(result))
+                    {
+                        Console.WriteLine("This operation will result in a mathematical error.\n");
+                    }
+                    else Console.WriteLine("Your result: {0:0.##}\n", result);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
+                }
+
+                Console.WriteLine("------------------------\n");
+
+                // Wait for the user to respond before closing.
+                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+                if (Console.ReadLine() == "n") endApp = true;
+
+                Console.WriteLine("\n"); // Friendly linespacing.
+            }
+            calculator.Finish();
+            return;
+        }
+    }
+}
+```
+
 ## <a name="next-steps"></a>下一步
 
 恭喜您完成此教學課程！ 若要更深入了解，請繼續下列教學課程。
@@ -446,5 +759,5 @@ Visual Studio 偵錯工具是一項功能強大的工具，可讓您逐步執行
 
 ## <a name="see-also"></a>另請參閱
 
-* [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
-* [了解如何在 Visual Studio 中偵錯 C# 程式碼](tutorial-debugger.md)
+- [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+- [了解如何在 Visual Studio 中偵錯 C# 程式碼](tutorial-debugger.md)

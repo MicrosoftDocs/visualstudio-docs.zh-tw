@@ -5,21 +5,23 @@ ms.topic: include
 ms.assetid: eed8114a-651a-47e2-bb24-130acd2a76d0
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 8/14/2020
+ms.date: 4/16/2021
 user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 91014bf9e942d874316cf74b9631d23426a61ea1
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: 4481af6b1ff33df7542d230abba2d39964027d41
+ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541210"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590185"
 ---
 ## <a name="im-getting-an-error-while-trying-to-activate-my-azure-monthly-credit"></a>我在嘗試啟用 Azure 每月點數時收到錯誤。
 
-每個與您的 Visual Studio 訂用帳戶相關聯的 Azure 訂用帳戶，只能有一個 Azure 開發/測試個人點數權益。 如果您先前已啟用每月 Azure 點數，您可能會看到錯誤。 如果您不確定是否已啟用點數，請登入 [Azure 入口網站](https://portal.azure.com/) 進行驗證。 
+每個 Azure 訂用帳戶只能有一個每月 Azure 開發/測試人員點數權益，與您的 Visual Studio 訂用帳戶相關聯。 如果您先前已啟用每月 Azure 點數，您可能會看到錯誤。 如果您不確定是否已啟用點數，請登入 [Azure 入口網站](https://portal.azure.com/) 進行驗證。 
+
+如果您有新的 Visual Studio 訂用帳戶，而且在嘗試啟用每月 Azure 點數權益時收到錯誤「您無法啟用此 Visual Studio 權益超過一次」，請按一下此解決方案底部的 [建立支援票證] 按鈕，以 Visual Studio 訂閱支援人員聯絡。 
 
 ## <a name="verify-your-email"></a>驗證您的電子郵件 
 
