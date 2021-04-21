@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aabc7dec0a9965a055bce07cafeca25ac0165037
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48381d452b0c67a34581092a47896aba60e7125c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937410"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826300"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>逐步解說：建立書簽的快捷方式功能表
   本逐步解說示範如何 <xref:Microsoft.Office.Tools.Word.Bookmark> 在 Word 的檔層級自訂中建立控制項的快捷方式功能表。 當使用者以滑鼠右鍵按一下書簽中的文字時，會出現快捷方式功能表，並提供使用者選項來格式化文字。
@@ -92,7 +92,7 @@ ms.locfileid: "99937410"
 
 1. 將 **功能區 XML** 專案加入至專案。 如需詳細資訊，請參閱 [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。
 
-2. 在 **方案總管** 中，選取 [ **ThisDocument.cs** ] 或 [ **ThisDocument**]。
+2. 在 **方案總管** 中，選取 [ **ThisDocument** ] 或 [ **ThisDocument**]。
 
 3. 在功能表列上，選擇 [**視圖** 程式  >  **代碼**]。
 
@@ -100,8 +100,8 @@ ms.locfileid: "99937410"
 
 4. 將下列程式碼加入至 **ThisDocument** 類別。 此程式碼會覆寫 CreateRibbonExtensibilityObject 方法，並將功能區 XML 類別傳回至 Office 應用程式。
 
-     [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
-     [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet1":::
 
 5. 在方案總管 中選取功能區 XML 檔案。 根據預設，功能區 XML 檔名為 Ribbon1.xml。
 
@@ -131,10 +131,10 @@ ms.locfileid: "99937410"
 
 9. 在類別層級宣告下列變數和書簽變數。
 
-     [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
-     [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet2":::
 
-10. 在 **方案總管** 中，選取功能區程式碼檔案。 依預設，功能區程式碼檔的名稱為 **Ribbon1.cs** 或 **Ribbon1。**
+10. 在 **方案總管** 中，選取功能區程式碼檔案。 依預設，功能區程式碼檔的名稱為 **Ribbon1 .cs** 或 **Ribbon1 .vb**。
 
 11. 在功能表列上，選擇 [**視圖** 程式  >  **代碼**]。
 
@@ -142,8 +142,8 @@ ms.locfileid: "99937410"
 
 12. 在功能區程式碼檔案中，新增下列方法。 這是兩個按鈕的回呼方法，您已新增至檔的快捷方式功能表。 此方法會決定這些按鈕是否出現在快捷方式功能表中。 只有當您以滑鼠右鍵按一下書簽中的文字時，才會顯示粗體和斜體按鈕。
 
-     [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
-     [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb" id="Snippet5":::
 
 ## <a name="format-the-text-in-the-bookmark"></a><a name="BKMK_formattextbkmk"></a> 格式化書簽中的文字
 
@@ -151,10 +151,10 @@ ms.locfileid: "99937410"
 
 1. 在功能區程式碼檔案中，新增 `ButtonClick` 事件處理常式以將格式套用至書簽。
 
-     [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
-     [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb" id="Snippet6":::
 
-2. **方案總管**，請選取 [ **ThisDocument.cs** ] 或 [ **ThisDocument**]。
+2. **方案總管**，請選取 [ **ThisDocument** ] 或 [ **ThisDocument**]。
 
 3. 在功能表列上，選擇 [**視圖** 程式  >  **代碼**]。
 
@@ -162,15 +162,15 @@ ms.locfileid: "99937410"
 
 4. 將下列程式碼加入至 **ThisDocument** 類別。
 
-     [!code-csharp[Trin_Word_Document_Menus#3](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#3)]
-     [!code-vb[Trin_Word_Document_Menus#3](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet3":::
 
     > [!NOTE]
     > 您必須撰寫程式碼來處理書簽重迭的情況。 如果您沒有這麼做，則預設會針對選取專案中的所有書簽呼叫程式碼。
 
 5. 在 c # 中，您必須將書簽控制項的事件處理常式加入至 <xref:Microsoft.Office.Tools.Word.Document.Startup> 事件。 如需建立事件處理常式的詳細資訊，請參閱 [如何：在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet4":::
 
 ## <a name="test-the-application"></a>測試應用程式
  測試您的檔，確認當您以滑鼠右鍵按一下書簽中的文字，並將文字格式化時，快速鍵功能表中會出現粗體和斜體功能表項目。

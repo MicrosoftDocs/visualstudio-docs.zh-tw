@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0bbbd381ff84714b780bbb817ccfea64ac05e949
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be3b789fabf00d853d447cb3489ef07a5b494fcd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882540"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826989"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>將表單區域與 Outlook 訊息類別產生關聯
   您可以將表單區域與每個專案的 message 類別產生關聯，以指定哪些 Microsoft Office Outlook 專案顯示表單區域。 例如，如果您想要將表單區域附加到訊息項目的底部，您可以建立表單區域與 `IPM.Note` message 類別的關聯。
@@ -87,8 +87,8 @@ ms.locfileid: "99882540"
 
  下列範例顯示已 <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute> 套用至名為之表單區域 factory 類別的兩個屬性 `myFormRegion` 。 第一個屬性會將表單區域與郵件訊息表單的標準訊息類別產生關聯。 第二個屬性會將表單區域與名為的自訂訊息類別產生關聯 `IPM.Task.Contoso` 。
 
- [!code-vb[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Attributes/FormRegion1.vb#1)]
- [!code-csharp[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Attributes/FormRegion1.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Attributes/FormRegion1.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Attributes/FormRegion1.cs" id="Snippet1":::
 
  屬性必須符合下列指導方針：
 

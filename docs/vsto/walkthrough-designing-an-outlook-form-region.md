@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9eaa78a04c7dfda42a82a5d5a9ff3b407e6502d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 80c574799029f3fe8c4769d852886a625ffd93aa
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842001"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824274"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>逐步解說：設計 Outlook 表單區域
   自訂的表單區域會擴充標準或自訂的 Microsoft Office Outlook 表單。 在此逐步解說中，您要設計自訂的表單區域，它在連絡人項目的 [偵測器] 視窗中會顯示為新頁面。 這個表單區域會將地址資訊傳送至 Windows Live 當地搜尋網站，顯示連絡人清單中每個地址的對應。 如需表單區域的詳細資訊，請參閱 [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
@@ -90,14 +90,14 @@ ms.locfileid: "99842001"
 
 8. 在 [ **識別將顯示此表單區域的訊息類別** ] 頁面上，清除 [ **郵件訊息**]，選取 [ **連絡人**]，然後按一下 **[完成]**。
 
-     系統會將 *MapIt.cs* 或 *mapit.vb .vb* 檔案新增至您的專案。
+     系統會將 *mapit.vb .cs* 或 *mapit.vb .vb* 檔案新增至您的專案。
 
 ## <a name="design-the-layout-of-the-form-region"></a>設計表單區域的版面配置
  使用 [ *表單區域設計* 工具] 以視覺化方式開發表單區域。 您可以將 Managed 控制項拖曳至表單區域設計工具介面。 使用設計工具和 [ **屬性** ] 視窗來調整控制項版面配置和外觀。
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>設計表單區域的版面配置
 
-1. 在 **方案總管** 中，展開 [ **MapItAddIn** ] 專案，然後按兩下 [ *MapIt.cs* ] 或 [ *Mapit.vb* ] 以開啟 [表單區域設計工具]。
+1. 在 **方案總管** 中，展開 [ **MapItAddIn** ] 專案，然後按兩下 [ *mapit.vb* ] 或 [ *Mapit.vb* ] 以開啟 [表單區域設計工具]。
 
 2. 以滑鼠右鍵按一下設計工具，然後按一下 [ **屬性**]。
 
@@ -116,9 +116,9 @@ ms.locfileid: "99842001"
 
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>自訂表單區域的行為
 
-1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ *MapIt.cs* ] 或 [ *mapit.vb*]，然後按一下 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ *mapit.vb* ] 或 [ *mapit.vb*]，然後按一下 [ **視圖程式碼**]。
 
-    *MapIt.cs* 或 *mapit.vb* 會在程式碼編輯器中開啟。
+    *Mapit.vb .cs* 或 *mapit.vb* 會在程式碼編輯器中開啟。
 
 2. 展開 **表單區域 Factory** 程式碼區域。
 
@@ -126,8 +126,8 @@ ms.locfileid: "99842001"
 
 3. 將下列程式碼加入至 `MapItFactory_FormRegionInitializing` 事件處理常式。 當使用者開啟連絡人項目時，即會呼叫這個事件處理常式。 下列程式碼會判斷連絡人項目是否包含地址。 如果連絡人項目不包含位址，這個程式碼就會將 <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> 類別的屬性設定 <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> 為 **true** ，而且不會顯示表單區域。 否則，VSTO 增益集會引發 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 事件，並顯示表單區域。
 
-    [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
-    [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb" id="Snippet1":::
 
 4. 將下列程式碼加入至 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 事件處理常式。 此程式碼會執行下列工作：
 
@@ -137,8 +137,8 @@ ms.locfileid: "99842001"
 
      當地搜尋網站會出現在 Map It 表單區域中，並在便條簿中顯示每個地址。
 
-     [!code-csharp[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#2)]
-     [!code-vb[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb" id="Snippet2":::
 
 ## <a name="test-the-outlook-form-region"></a>測試 Outlook 表單區域
  當您執行專案時，Visual Studio 會開啟 Outlook。 開啟連絡人項目，以檢視 Map It 表單區域。 在包含地址的任何連絡人項目表單中，Map It 表單區域會顯示為頁面。

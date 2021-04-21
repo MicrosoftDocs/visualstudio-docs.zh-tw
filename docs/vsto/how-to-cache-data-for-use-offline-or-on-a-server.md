@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ab53676d6c00fdda3bb7f4554321f0c0550e5748
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07d7a33d90fd9d05c041ddc27f92a5b6a59bb75e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954042"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825988"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>如何：快取資料供離線使用或在伺服器上使用
   您可以標示要在檔中快取的資料項目，使其可供離線使用。 這也可讓檔中的資料在儲存在伺服器上時，由其他程式碼操作。
@@ -42,8 +42,8 @@ ms.locfileid: "99954042"
 
 2. 將屬性套用至 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 成員，以將資料項目標記為儲存在檔的資料快取中。 下列範例會將這個屬性套用至的欄位宣告 <xref:System.Data.DataSet> 。
 
-     [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]
-     [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet11":::
 
 3. 加入程式碼以建立資料項目的實例（如果適用的話），以從資料庫載入該專案。
 

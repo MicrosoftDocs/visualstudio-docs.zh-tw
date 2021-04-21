@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f6e6b00e8e26d261aac18dd48af1d912bd6ffad1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dc9322dd2ad3c3a2111222d7491f9e1a82cd6c4
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899551"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825845"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>如何：防止 Outlook 顯示表單區域
   在某些情況下，您可能不想 Microsoft Office Outlook 顯示特定專案的表單區域。 例如，如果連絡人項目不包含商務位址，您可以防止在地圖中顯示企業位置的表單區域出現。
@@ -38,8 +38,9 @@ ms.locfileid: "99899551"
    在此範例中，如果連絡人項目不包含位址， <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> 屬性會設定為 **true**，而且不會顯示表單區域。
 
 ## <a name="example"></a>範例
- [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
- [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb" id="Snippet1":::
+
 
 ## <a name="see-also"></a>另請參閱
 - [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)

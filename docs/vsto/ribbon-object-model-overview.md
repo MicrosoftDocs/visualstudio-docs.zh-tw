@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f053e87f8cdfd2bdf87bbdf4b7d115f6d9bbec26
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888689"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823986"
 ---
 # <a name="ribbon-object-model-overview"></a>功能區物件模型總覽
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]會公開強型別物件模型，您可以在執行時間用來取得和設定功能區控制項的屬性。 例如，您可以動態填入功能表控制項，或顯示和隱藏內容控制項。 您也可以將索引標籤、群組和控制項加入至功能區，但只有在 Office 應用程式載入功能區之前。 如需詳細資訊，請參閱 [設定變成隻讀的屬性](#SettingReadOnlyProperties)。
@@ -111,12 +111,12 @@ ms.locfileid: "99888689"
 
  加入下列程式碼。
 
- [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
- [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb" id="Snippet1":::
 
  在您從 Visual Studio 2008 升級的 Visual c # 專案中，此函式會出現在功能區程式碼檔案中。
 
- 在 Visual Basic 專案或您在中建立的 Visual c # 專案中 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ，此函式會出現在功能區設計工具程式碼檔案中。 這個檔案的名稱是 *yourribbonitem.designer.vb*。Designer.cs 或 *yourribbonitem.designer.vb*。設計工具 .vb。 若要在 Visual Basic 專案中查看此檔案，您必須先按一下方案總管中的 [ **顯示所有** 檔案] 按鈕。
+ 在 Visual Basic 專案或您在中建立的 Visual c # 專案中 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ，此函式會出現在功能區設計工具程式碼檔案中。 這個檔案的名稱是 *yourribbonitem.designer.vb*。.Cs 或 *yourribbonitem.designer.vb*。設計工具 .vb。 若要在 Visual Basic 專案中查看此檔案，您必須先按一下方案總管中的 [ **顯示所有** 檔案] 按鈕。
 
 ### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>在 CreateRibbonExtensibilityObject 方法中設定屬性
  `Ribbon`當您在 `CreateRibbonExtensibilityObject` 專案的 `ThisAddin` 、 `ThisWorkbook` 或類別中覆寫方法時，您可以設定控制項的屬性 `ThisDocument` 。 如需此方法的詳細資訊 `CreateRibbonExtensibilityObject` ，請參閱 [功能區總覽](../vsto/ribbon-overview.md)。
@@ -125,8 +125,8 @@ ms.locfileid: "99888689"
 
  加入下列程式碼。
 
- [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
- [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb" id="Snippet2":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs" id="Snippet2":::
 
 ### <a name="properties-that-become-read-only"></a><a name="ReadOnlyProperties"></a> 變成隻讀的屬性
  下表顯示只能在功能區載入之前設定的屬性。

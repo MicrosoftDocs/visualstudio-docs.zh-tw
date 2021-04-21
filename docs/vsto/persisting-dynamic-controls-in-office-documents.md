@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e833a480713e3c04215c03a3dc4a549c92e0f772
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d42aa2d8594ed44e4fd4edbac8a0d64c4dc16da
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938469"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826144"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>在 Office 檔中保存動態控制項
 
@@ -57,8 +57,8 @@ ms.locfileid: "99938469"
 
 例如，若您想要在文件開啟時從現有的原生 <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> 建立 <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> 主控制項，請使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> 方法並傳入現有 <xref:Microsoft.Office.Interop.Excel.ListObject>。 下列程式碼範例示範如何在 Excel 的文件層級專案中執行這項作業。 此程式碼重新建立動態 <xref:Microsoft.Office.Tools.Excel.ListObject> ，其以 <xref:Microsoft.Office.Interop.Excel.ListObject> 類別中名為 `MyListObject` 的現有 `Sheet1` 為基礎。
 
-[!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs#6)]
-[!code-vb[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb#6)]
+:::code language="csharp" source="../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs" id="Snippet6":::
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb" id="Snippet6":::
 
 ### <a name="re-create-chart"></a>重新建立圖表
 
@@ -94,8 +94,8 @@ ms.locfileid: "99938469"
 
 下列程式碼範例示範如何在文件開啟時呼叫 `GetVstoObject` 方法。
 
-[!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
-[!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet11":::
+:::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet11":::
 
 雖然此 `GetVstoObject` 方法主要是用來在執行時間產生新的主專案，但這個方法也會在第一次針對特定檔呼叫檔時，從檔中清除所有的 ActiveX 包裝函式。 如需如何使用方法的詳細資訊 `GetVstoObject` ，請參閱 [在 VSTO 增益集中，于執行時間擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
@@ -107,8 +107,8 @@ ms.locfileid: "99938469"
 
 下列程式碼範例示範如何在 Word 文件關閉時，從該文件移除所有的 Windows Form 控制項。
 
-[!code-vb[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#10)]
-[!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet10":::
+:::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet10":::
 
 ## <a name="see-also"></a>另請參閱
 

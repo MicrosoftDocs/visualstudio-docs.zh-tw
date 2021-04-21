@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cd7efe4aa2aa14cb94a68f0729bc7fe3535888ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccdb906022d4dcfc321af294eec59afa36832773
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954029"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824181"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>如何：快取受密碼保護檔中的資料
   如果您將資料加入至以密碼保護的檔或活頁簿中的資料快取，系統不會自動儲存對快取資料的變更。 您可以藉由覆寫專案中的兩個方法，來儲存快取資料的變更。
@@ -45,8 +45,8 @@ ms.locfileid: "99954029"
 ### <a name="example"></a>範例
  下列程式碼範例示範如何在以密碼保護的 Word 檔中快取資料。 在程式碼移除方法中的保護之前，會儲存 <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> 目前的 <xref:Microsoft.Office.Tools.Word.Document.ProtectionType%2A> 值，以便在方法中重新套用相同類型的保護 <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> 。
 
- [!code-csharp[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs#1)]
- [!code-vb[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedDocument/ThisDocument.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedDocument/ThisDocument.vb" id="Snippet1":::
 
 ### <a name="compile-the-code"></a>編譯程式碼
  將此程式碼新增至 `ThisDocument` 專案中的類別。 這段程式碼假設密碼是儲存在名為的欄位中 `securelyStoredPassword` 。
@@ -69,8 +69,8 @@ ms.locfileid: "99954029"
 ### <a name="example"></a>範例
  下列程式碼範例示範如何在以密碼保護的 Excel 活頁簿中快取資料。 在程式碼移除方法中的保護之前，會儲存 <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> 目前的 <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectStructure%2A> 和 <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectWindows%2A> 值，以便在方法中重新套用相同類型的保護 <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> 。
 
- [!code-vb[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb#1)]
- [!code-csharp[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedWorkbook/ThisWorkbook.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_CachedDataProtectedWorkbook/ThisWorkbook.cs" id="Snippet1":::
 
 ### <a name="compile-the-code"></a>編譯程式碼
  將此程式碼新增至 `ThisWorkbook` 專案中的類別。 這段程式碼假設密碼是儲存在名為的欄位中 `securelyStoredPassword` 。

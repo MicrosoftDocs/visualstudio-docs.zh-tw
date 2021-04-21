@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c610bdc33564e3e211d1ec5aab943af4eec49d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0df6aef3c83d66b84f569e85e953fde8a3f0e16c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965794"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826768"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>存取伺服器檔中的資料
   您可以針對檔層級自訂中的資料進行程式設計，而不需要使用 Microsoft Office Word 或 Microsoft Office Excel 的物件模型。 這表示您可以在未安裝 Word 或 Excel 的伺服器上，存取包含在檔中的資料。 例如，伺服器上的程式碼 (例如，在頁面中 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]) 可以自訂檔中的資料，並將自訂檔傳送給終端使用者。 當使用者開啟檔時，方案元件中的資料系結程式碼會將自訂資料系結至檔。 這是可能的，因為檔中的資料與使用者介面分開。 如需詳細資訊，請參閱 [檔層級自訂中](../vsto/cached-data-in-document-level-customizations.md)的快取資料。
@@ -45,8 +45,8 @@ ms.locfileid: "99965794"
 
   下列程式碼範例示範如何存取 `Sheet1` Excel 活頁簿專案類別中的快取字串。 這個範例是針對方法所提供之較大範例的一部分 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> 。
 
-  [!code-csharp[Trin_ServerDocument#12](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#12)]
-  [!code-vb[Trin_ServerDocument#12](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#12)]
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet12":::
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet12":::
 
 ## <a name="modify-data-in-the-cache"></a>修改快取中的資料
  若要修改快取的資料物件，您通常會執行下列步驟：
@@ -66,8 +66,8 @@ ms.locfileid: "99965794"
 
  下列程式碼範例示範如何在 Excel 活頁簿專案的類別中變更快取字串的值 `Sheet1` 。 這個範例是針對方法所提供之較大範例的一部分 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> 。
 
- [!code-csharp[Trin_ServerDocument#11](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#11)]
- [!code-vb[Trin_ServerDocument#11](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#11)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet11":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet11":::
 
 ### <a name="modify-null-values-in-the-data-cache"></a>修改資料快取中的 null 值
  儲存並關閉檔時，資料快取不會儲存具有 **null** 值的物件。 當您修改快取資料時，這項限制會有數個結果：

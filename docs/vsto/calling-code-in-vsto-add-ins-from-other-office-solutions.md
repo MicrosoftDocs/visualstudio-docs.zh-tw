@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: deb8fec9212c686bce670df6bab23ed56e51741f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2519c9d1a22eb6f5577a258fb9b465cfd7caafc2
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903808"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826976"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>從其他 Office 方案呼叫 VSTO 增益集的程式碼
   您可以將 VSTO 增益集中的物件公開給其他方案 (包括其他 Microsoft Office 方案)。 如果您想要讓其他方案也能使用 VSTO 增益集提供的服務，這就很有用。 例如，如果您有 Microsoft Office Excel 的 VSTO 增益集，該增益集會在 Web 服務的財務資料上執行計算，則其他方案可以在執行時間呼叫 Excel VSTO 增益集來執行這些計算。
@@ -78,8 +78,8 @@ ms.locfileid: "99903808"
 
    下列程式碼範例示範 `AddInUtilities` 類別，該類別具有其他方案可以呼叫的 `ImportData` 方法。 若要在較大的逐步解說內容中查看這個程式碼，請參閱 [逐步解說：從 VBA 呼叫 VSTO 增益集中的程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。
 
-   [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
-   [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]
+   :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs" id="Snippet3":::
+   :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb" id="Snippet3":::
 
 ### <a name="expose-classes-to-vba"></a>將類別公開給 VBA
  當您執行上述步驟時，VBA 程式碼只能呼叫您在介面中宣告的方法。 VBA 程式碼無法呼叫您類別中的其他任何方法，包括您的類別從 <xref:System.Object>等基底類別取得的方法。
@@ -96,8 +96,8 @@ ms.locfileid: "99903808"
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>覆寫 RequestComAddInAutomationService 方法
  下列程式碼範例示範如何在您的 VSTO 增益集中覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 類別中的 `ThisAddIn` 。 此範例假設您已定義一個名為 `AddInUtilities` 的類別，而您想要將它公開給其他方案。 若要在較大的逐步解說內容中查看這個程式碼，請參閱 [逐步解說：從 VBA 呼叫 VSTO 增益集中的程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。
 
- [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
- [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb" id="Snippet1":::
 
  載入 VSTO 增益集時， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會呼叫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 方法。 執行時間會將傳回的物件指派給 <xref:Microsoft.Office.Core.COMAddIn> 代表 VSTO 增益集之物件的 Microsoft.office.core.comaddin.object 物件屬性。 這個 <xref:Microsoft.Office.Core.COMAddIn> 物件可供其他 Office 方案以及將 Office 自動化的方案使用。
 

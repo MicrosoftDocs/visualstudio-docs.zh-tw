@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c2b702d2986315ce32a9ab489db239f2c784f3e6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa6a45a199d4edce924f0e36a971026726d96eca
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877859"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824792"
 ---
 # <a name="how-to-programmatically-send-email"></a>如何：以程式設計方式傳送電子郵件
   此範例會將電子郵件訊息傳送給其電子郵件地址中有功能變數名稱 **example.com** 的連絡人。
@@ -32,7 +32,7 @@ ms.locfileid: "99877859"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="example"></a>範例
- [!code-csharp[Trin_OL_ProgramEmail#1](../vsto/codesnippet/CSharp/Trin_OL_ProgramEMail/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_ProgramEMail/thisaddin.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要：

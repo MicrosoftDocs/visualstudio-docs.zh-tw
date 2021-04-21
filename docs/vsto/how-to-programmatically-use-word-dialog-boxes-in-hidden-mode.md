@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0977e7241920ad23a6248bb2349ddaeb10a5e931
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39a81ccec284541d93d3a5901211d8a46ea6b61a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931236"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826183"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>如何：以程式設計方式在隱形模式中使用 Word 對話方塊
   您可以叫用 Microsoft Office Word 中的內建對話方塊，而不將其顯示給使用者，藉此使用一個方法呼叫來執行複雜作業。 您可以使用物件的方法來完成這項作業， <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> <xref:Microsoft.Office.Interop.Word.Dialog> 而不需要呼叫 <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> 方法。
@@ -34,12 +34,12 @@ ms.locfileid: "99931236"
 
  下列範例示範如何在 Visual Basic 專案中執行這項工作，其中 **Option Strict** 為 off，而 Visual c # 專案中的目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 。 在這些專案中，您可以在 Visual Basic 和 Visual c # 編譯器中使用晚期繫結功能。 若要使用此範例，請從 `ThisDocument` 專案的或 `ThisAddIn` 類別中執行它。
 
- [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)]
- [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet123":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet123":::
 
  下列範例示範如何在 **Option Strict** 為 on 的 Visual Basic 專案中執行這項工作。 在這些專案中，您必須使用反映來存取晚期繫結屬性。 若要使用此範例，請從 `ThisDocument` 專案的或 `ThisAddIn` 類別中執行它。
 
- [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet104":::
 
 ## <a name="see-also"></a>另請參閱
 - [如何：以程式設計方式使用 Word 中的內建對話方塊](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)

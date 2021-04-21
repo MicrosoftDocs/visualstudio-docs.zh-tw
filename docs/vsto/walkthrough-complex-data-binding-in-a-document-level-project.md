@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a85f46cf9c234ad662966372a8d014ae0f98be84
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927661"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826365"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>逐步解說：檔層級專案中的複雜資料系結
   本逐步解說示範檔層級專案中的複雜資料系結的基本概念。 您可以將 Microsoft Office Excel 工作表中的多個資料格系結至 Northwind SQL Server 資料庫中的欄位。
@@ -117,16 +117,16 @@ ms.locfileid: "99927661"
 
 ### <a name="to-initialize-the-control"></a>若要初始化控制項
 
-1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **sheet1** ] 或 [ **sheet1**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
 
 2. 將下列程式碼加入至 `Sheet1_Startup` 方法，以設定 b 的文字 `utton` 。
 
-    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet8":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb" id="Snippet8":::
 
 3. 針對 c #，請將事件的事件處理常式加入 <xref:System.Windows.Forms.Control.Click> 至 `Sheet1_Startup` 方法。
 
-    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet9":::
 
    現在，新增程式碼來處理 <xref:System.Windows.Forms.Control.Click> 按鈕的事件。
 
@@ -137,8 +137,8 @@ ms.locfileid: "99927661"
 
 1. 加入事件的事件處理常式 <xref:System.Windows.Forms.Control.Click> `button` ，並加入下列程式碼，將資料集內已進行的所有變更認可至資料庫。
 
-     [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
-     [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb" id="Snippet10":::
 
 ## <a name="test-the-application"></a>測試應用程式
  現在您可以測試您的活頁簿，確認資料如預期般出現，而且您可以動作清單物件中的資料。

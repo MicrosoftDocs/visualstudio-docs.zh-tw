@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b87113b47ee0dc4d296bb5e206d6d277394160c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3886e20d45834f98f36b8d7e48f3b11c9ef7d5dd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962271"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824818"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>逐步解說：使用功能區設計工具建立自訂索引標籤
   您可以使用功能區設計工具，建立自訂索引標籤，然後在其上加入和放置控制項。
@@ -68,7 +68,7 @@ ms.locfileid: "99962271"
 
 2. 在 [ **加入新專案** ] 對話方塊中，選取 [ **ActionsPaneControl**]，然後選擇 [ **加入**]。
 
-     **ActionsPaneControl1.cs** 或 **ActionsPaneControl1 .vb** 檔案會在設計工具中開啟。
+     **ActionsPaneControl1 .cs** 或 **ActionsPaneControl1 .vb** 檔會在設計工具中開啟。
 
 3. 從 [工具箱] 的 [ **通用控制項** ] 索引標籤中，將標籤加入至設計 **工具** 介面。
 
@@ -116,22 +116,22 @@ ms.locfileid: "99962271"
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>使用自訂索引標籤中的按鈕隱藏和顯示執行窗格
 
-1. 在 **方案總管** 中，開啟 [ *MyRibbon.cs* ] 或 [ *myribbon.vb*] 的快捷方式功能表，然後選擇 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，開啟 [ *myribbon.vb* ] 或 [ *myribbon.vb*] 的快捷方式功能表，然後選擇 [ **視圖程式碼**]。
 
 2. 將下列程式碼加入至 `MyRibbon` 類別的頂端。 這個程式碼會建立兩個執行窗格物件。
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet1":::
 
 3. 以下列程式碼取代 `MyRibbon_Load` 方法。 這個程式碼會將執行窗格物件加入至 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> 集合，並且隱藏物件不提供檢視。 Visual C# 程式碼也會將委派附加至數個功能區控制項事件。
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet2":::
 
 4. 將下列三個事件處理常式方法加入至 `MyRibbon` 類別。 這些方法會處理兩個按鈕的 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> 事件及切換按鈕的 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 事件。 button1 和 button2 的事件處理常式會顯示交替的執行窗格。 toggleButton1 的事件處理常式則會顯示和隱藏作用中的執行窗格。
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet3":::
 
 ## <a name="test-the-custom-tab"></a>測試自訂索引標籤
  當您執行專案時，Excel 會啟動，而 [ **我的自訂** 索引標籤] 索引標籤會出現在功能區。 選擇 [我的 **自訂]** 索引標籤上的按鈕，以顯示和隱藏 [動作] 窗格。

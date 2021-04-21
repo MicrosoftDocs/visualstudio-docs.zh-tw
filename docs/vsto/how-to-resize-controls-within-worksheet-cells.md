@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7b62d3fed62b4d17b9f1918b76760593b38d83a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b42c10fd82ec077b295a8bc683fa138c2eb095b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927817"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825741"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>如何：調整工作表儲存格內的控制項大小
   當您調整工作表上的資料行或資料列時，資料格內的任何主控制項都會自動調整大小，以調整大小的儲存格高度或寬度。 Windows Forms 控制項預設不會自動調整大小。
@@ -54,8 +54,8 @@ ms.locfileid: "99927817"
 
 1. 將控制項新增至範圍 A1。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet5":::
 
      當您調整包含控制項的儲存格大小時，控制項會調整大小以符合儲存格。
 
@@ -72,8 +72,8 @@ ms.locfileid: "99927817"
 
 1. 呼叫控制項的 [位置] 屬性，並將值設定為 <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating> 。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet6":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet6":::
 
 ## <a name="see-also"></a>另請參閱
 - [Office 檔上的控制項](../vsto/controls-on-office-documents.md)

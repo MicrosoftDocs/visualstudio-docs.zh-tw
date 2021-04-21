@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc6c608d406cabe6962a47dae4c86fa7503a05a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 178180e8c698ca56b15e46bcbe65877d68c6b2a1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921788"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824675"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>逐步解說：在執行時間于 VSTO 增益集專案中，將控制項加入工作表
   您可以使用 Excel VSTO 增益集，將控制項加入任何開啟的工作表中。 本逐步解說將示範如何使用功能區，讓使用者將 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 及 <xref:Microsoft.Office.Tools.Excel.ListObject> 加入工作表。 如需詳細資訊，請參閱 [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)。
@@ -65,7 +65,7 @@ ms.locfileid: "99921788"
 
 2. 在 [ **加入新專案** ] 對話方塊中，選取 [ **功能區 (的視覺化設計工具)**]，然後按一下 [ **加入**]。
 
-     名為 **Ribbon1.cs** 或 **Ribbon1** 的檔案會在功能區設計工具中開啟，並顯示預設索引標籤和群組。
+     名為 **Ribbon1** 或 **Ribbon1** 的檔案會在功能區設計工具中開啟，並顯示預設索引標籤和群組。
 
 3. 從 [工具箱]  的 [Office 功能區控制項] 索引標籤，將 CheckBox 控制項拖曳至 [group1] 。
 
@@ -105,10 +105,10 @@ ms.locfileid: "99921788"
 
      此程式碼會使用 `GetVstoObject` 方法來取得代表活頁簿中第一個工作表的主項目，然後將 <xref:Microsoft.Office.Tools.Excel.Controls.Button> 控制項加入目前選取的儲存格。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet2":::
 
-3. 在 **方案總管** 中，選取 [ *Ribbon1.cs* ] 或 [ *Ribbon1*]。
+3. 在 **方案總管** 中，選取 [ *Ribbon1* ] 或 [ *Ribbon1*]。
 
 4. 在 [ **View** ] 功能表上，按一下 [ **設計** 工具]。
 
@@ -118,8 +118,8 @@ ms.locfileid: "99921788"
 
      此程式碼會使用 `GetVstoObject` 方法來取得代表活頁簿中第一個工作表的主項目，然後為目前選取的儲存格定義 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#3)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet3":::
 
 7. 在功能區設計工具中，按兩下 [ **ListObject**]。
 
@@ -127,31 +127,31 @@ ms.locfileid: "99921788"
 
      此程式碼會使用 `GetVstoObject` 方法來取得代表活頁簿中第一個工作表的主項目，然後為目前選取的儲存格定義 <xref:Microsoft.Office.Tools.Excel.ListObject>。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#4)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet4":::
 
 9. 在功能區程式碼檔的頂端加入下列陳述式。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#1)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet1":::
 
 ## <a name="remove-controls-from-the-worksheet"></a>移除工作表中的控制項
  當工作表儲存和關閉時，都不會保存控制項。 您應該在儲存工作表之前，以程式設計方式移除所有產生的 Windows Form 控制項，否則該活頁簿下次開啟時，只會顯示控制項的外框。 請將程式碼加入 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件，以便從產生之主項目的控制項集合移除 Windows Form 控制項。 如需詳細資訊，請參閱 [在 Office 檔中保存動態控制項](../vsto/persisting-dynamic-controls-in-office-documents.md)。
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>若要移除工作表的控制項
 
-1. 在 **方案總管** 中，選取 [ *ThisAddIn.cs* ] 或 [ *ThisAddIn*]。
+1. 在 **方案總管** 中，選取 [ *ThisAddIn* ] 或 [ *ThisAddIn*]。
 
 2. 在 [檢視] 功能表中，按一下 [程式碼]。
 
 3. 將下列方法新增至 `ThisAddIn` 類別。 此程式碼會取得活頁簿中的第一個工作表，然後使用 `HasVstoObject` 方法檢查工作表是否具有產生的工作表物件。 如果產生的工作表物件具有控制項，程式碼便會取得該工作表物件，並逐一查看控制項集合，同時移除控制項。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb" id="Snippet6":::
 
 4. 在 C# 中，您必須建立 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件處理常式。 您可以將這個程式碼放入 `ThisAddIn_Startup` 方法中。 如需建立事件處理常式的詳細資訊，請參閱 [如何：在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。 以下列程式碼取代 `ThisAddIn_Startup` 方法。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs" id="Snippet5":::
 
 ## <a name="test-the-solution"></a>測試解決方案
  從功能區上的自訂索引標籤中選取控制項，將控制項加入工作表。 當您儲存工作表時，這些控制項將會被移除。

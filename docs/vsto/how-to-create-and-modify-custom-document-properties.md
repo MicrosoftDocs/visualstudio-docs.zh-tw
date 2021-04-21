@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0080c9b0ddd7ffba4730a8cfb305bc34b6ba1690
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd89cb1e2991f48fefd9984eaa6d5894d9b506c1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964312"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826573"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>如何：建立和修改自訂文件屬性
   上列 Microsoft Office 應用程式提供與文件一起儲存的內建屬性。 此外，如果您有想要與文件一起儲存的其他資訊，則可以建立和修改自訂文件屬性。
@@ -33,8 +33,8 @@ ms.locfileid: "99964312"
  下列範例示範如何在 Excel 的文件層級自訂中加入自訂屬性，並指派該屬性的值。
 
 ## <a name="example"></a>範例
- [!code-vb[Trin_VstcoreProgramming#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#6)]
- [!code-csharp[Trin_VstcoreProgramming#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#6)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb" id="Snippet6":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs" id="Snippet6":::
 
 ## <a name="robust-programming"></a>穩固程式設計
  嘗試存取未定義之屬性的 `Value` 屬性將會引發例外狀況。

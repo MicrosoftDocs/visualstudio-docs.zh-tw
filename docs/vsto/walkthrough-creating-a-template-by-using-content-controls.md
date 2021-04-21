@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4bd636070a8375b6761cb2d3ab62d08be4302db4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f78ca406d19461de7fa8e2a8c147b1003c9c852
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937494"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826963"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>逐步解說：使用內容控制項建立範本
   本逐步解說示範如何建立文件層級自訂，這個自訂會使用內容控制項在 Microsoft Office Word 範本中建立可重複使用的結構化內容。
@@ -139,17 +139,17 @@ ms.locfileid: "99937494"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>以程式設計方式修改內容控制項的 UI
 
-1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **ThisDocument.cs** ] 或 [ **ThisDocument**]，然後按一下 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **ThisDocument** ] 或 [ **ThisDocument**]，然後按一下 [ **視圖程式碼**]。
 
 2. 將下列程式碼新增至 `ThisDocument` 類別。 這個程式碼會宣告數個物件，您稍後於此逐步解說中會用到。
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet1":::
 
 3. 將下面程式碼加新增至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法。 此程式碼會將項目加入資料表中的 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 和 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>，然後設定預留位置文字，在使用者編輯這些控制項之前先行顯示在控制項中。
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet2":::
 
 ## <a name="prevent-users-from-editing-the-employee-table"></a>防止使用者編輯員工資料表
  使用您稍早宣告的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 物件可保護員工資料表。 保護資料表之後，使用者仍然可以編輯資料表中的內容控制項。 但是，無法編輯第一欄中的文字或以其他方式修改資料表，例如加入或刪除資料列和資料行。 如需如何使用 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 保護檔一部分的詳細資訊，請參閱 [內容控制項](../vsto/content-controls.md)。
@@ -158,8 +158,8 @@ ms.locfileid: "99937494"
 
 1. 請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會將資料表放到您稍早宣告的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 物件內，藉以防止使用者編輯員工資料表。
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet3":::
 
 ## <a name="add-the-tables-to-the-building-block-collection"></a>將資料表新增至組建區塊集合
  將資料表加入至範本中文件建置組塊的集合，以便使用者可以將您建立的資料表插入至文件。 如需檔建立區塊的詳細資訊，請參閱 [內容控制項](../vsto/content-controls.md)。
@@ -168,13 +168,13 @@ ms.locfileid: "99937494"
 
 1. 請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會將包含資料表的新組建區塊加入至 BuildingBlockEntries 集合，其中包含範本中所有可重複使用的組建區塊。 新的組建區塊會定義在名為 **Employee 和 Customer Information** 的新類別中，而且會被指派建立區塊類型 `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` 。
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet4":::
 
 2. 請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會從範本刪除資料表。 因為您已將資料表加入至範本中可重複使用的建置組塊庫，所以不再需要它們了。 程式碼會先讓文件進入設計模式，如此就可以刪除受保護的員工資料表。
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet5":::
 
 ## <a name="create-a-content-control-that-displays-the-building-blocks"></a>建立顯示組建區塊的內容控制項
  建立內容控制項，用來存取您稍早建立的建置組塊 (亦即資料表)。 使用者可以按一下此控制項，將資料表加入文件。
@@ -183,8 +183,8 @@ ms.locfileid: "99937494"
 
 1. 請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會初始化您稍早宣告的 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 物件。 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>會顯示在類別目錄 **員工和客戶資訊** 中定義的所有組建區塊，以及具有建立區塊類型的組建區塊 `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` 。
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet6":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet6":::
 
 ## <a name="test-the-project"></a>測試專案
  使用者可以按一下文件中的建置組塊庫控制項，插入員工資料表或客戶回函資料表。 使用者可以在這兩個資料表的內容控制項中輸入或選取回應。 使用者可以修改客戶回函資料表的其他部分，但是應該無法修改員工資料表的其他部分。
