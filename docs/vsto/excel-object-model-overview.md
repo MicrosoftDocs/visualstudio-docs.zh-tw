@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a49dcc36d4079a6a945806b3112e3949ddcd79e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 509378b13e48f21a1148d700addd9ac4e78985e9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910289"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825689"
 ---
 # <a name="excel-object-model-overview"></a>Excel 物件模型總覽
   若要開發使用 Microsoft Office Excel 的方案，您可以與 Excel 物件模型提供的物件進行互動。 本主題將介紹最重要的物件：
@@ -50,7 +50,7 @@ ms.locfileid: "99910289"
   本主題提供 Excel 物件模型的簡短概觀。 如需可深入瞭解整個 Excel 物件模型的資源，請參閱 [使用 excel 物件模型檔](#ExcelOMDocumentation)。
 
 ## <a name="access-objects-in-an-excel-project"></a>存取 Excel 專案中的物件
- 當您建立 Excel 的新 VSTO 增益集專案時，Visual Studio 會自動建立 *ThisAddIn .vb* 或 *ThisAddIn.cs* 程式碼檔案。 您可以使用 `Me.Application` 或 `this.Application`，來存取 Application 物件。
+ 當您建立 Excel 的新 VSTO 增益集專案時，Visual Studio 會自動建立 *ThisAddIn .vb* 或 *ThisAddIn .cs* 程式碼檔案。 您可以使用 `Me.Application` 或 `this.Application`，來存取 Application 物件。
 
  當您建立 Excel 的新文件層級專案時，可以選擇建立新的 Excel 活頁簿或 Excel 範本專案。 Visual Studio 會在新的 Excel 專案中，自動為活頁簿和範本專案建立下列程式碼檔。
 
@@ -63,8 +63,8 @@ ms.locfileid: "99910289"
 
  您可以在專案中使用 `Globals` 類別，從個別的類別之外存取 `ThisWorkbook`、`Sheet1`、`Sheet2` 或 `Sheet3`。 如需詳細資訊，請參閱 [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。 下列範例會呼叫的 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> 方法， `Sheet1` 不論程式碼是否放在其中一個 `Sheet` *n* 類別或 `ThisWorkbook` 類別中。
 
- [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
- [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet82":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet82":::
 
  由於 Excel 文件包含高度結構化的資料，因此物件模型不僅層級分明，而且非常明確。 Excel 提供數百個您可能想要進行互動的物件，但是您可以將焦點放在可用物件的一小部分，以在物件模型上取得良好的起點。 這些物件包含下列四個項目：
 

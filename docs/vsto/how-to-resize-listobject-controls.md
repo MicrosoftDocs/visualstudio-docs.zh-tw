@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e839e253e54e7c9c0358bef7330f9e330684b809
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a2fd0b8ce46ba15066ab4cf070807e2457c21e70
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927830"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828952"
 ---
 # <a name="how-to-resize-listobject-controls"></a>如何：調整 ListObject 控制項的大小
   在將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入 Microsoft Office Excel 活頁簿時，會設定該控制項的大小，不過也可以稍後再進行調整。 例如，您可能想要將兩個資料行的清單變更為三個資料行。
@@ -61,13 +61,13 @@ ms.locfileid: "99927830"
 
 1. 在 <xref:Microsoft.Office.Tools.Excel.ListObject> 上建立跨越資料格 **A1** 到 **B3** 的 `Sheet1`。
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#6)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet6":::
 
 2. 將清單大小調整成包含儲存格 **A1** 到 **C5**。
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet7":::
 
 ## <a name="resize-a-listobject-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> 在 VSTO 增益集專案中，于執行時間調整 ListObject 的大小
  您可以在執行階段調整任何開啟之工作表上 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項的大小。 如需如何 <xref:Microsoft.Office.Tools.Excel.ListObject> 使用 VSTO 增益集將控制項加入工作表的詳細資訊，請參閱 [如何：將 ListObject 控制項加入工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)。
@@ -76,13 +76,13 @@ ms.locfileid: "99927830"
 
 1. 在 <xref:Microsoft.Office.Tools.Excel.ListObject> 上建立跨越資料格 **A1** 到 **B3** 的 `Sheet1`。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#12)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#12)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs" id="Snippet12":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb" id="Snippet12":::
 
 2. 將清單大小調整成包含儲存格 **A1** 到 **C5**。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#13)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#13)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs" id="Snippet13":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb" id="Snippet13":::
 
 ## <a name="see-also"></a>另請參閱
 - [在 VSTO 增益集的執行時間中擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

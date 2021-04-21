@@ -34,12 +34,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 83fdc3b6a60c5f8972ff5d955c56476fb13315d9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ee62f35b0626139a8080649076d2ac941366a26
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971826"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828705"
 ---
 # <a name="program-vsto-add-ins"></a>程式 VSTO 增益集
   當您建立 VSTO 增益集來擴充 Microsoft Office 應用程式時，會直接針對專案中的 `ThisAddIn` 類別撰寫程式碼。 您可以使用這個類別來執行工作，例如存取 Microsoft Office 主應用程式的物件模型、自訂應用程式的使用者介面 (UI)，以及將 VSTO 增益集中的物件公開給其他 Office 解決方案。
@@ -51,7 +51,7 @@ ms.locfileid: "99971826"
  如需 VSTO 增益集和其他類型方案的一般資訊，您可以使用 Visual Studio 中的 Office 開發工具來建立，請參閱 [office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
 
 ## <a name="use-the-thisaddin-class"></a>使用 ThisAddIn 類別
- 您可以在 `ThisAddIn` 類別中開始撰寫 VSTO 增益集程式碼。 Visual Studio 會在 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] VSTO 增益集專案中，于 c # ) 程式碼檔案 (的) 或 *ThisAddIn.cs* (中，自動產生此類別。 當 Microsoft Office 應用程式載入您的 VSTO 增益集時， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會自動為您具現化這個類別。
+ 您可以在 `ThisAddIn` 類別中開始撰寫 VSTO 增益集程式碼。 Visual Studio 會在 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] VSTO 增益集專案中，于 c # ) 程式碼檔案中 (的) 或 *ThisAddIn* (中，自動產生此類別。 當 Microsoft Office 應用程式載入您的 VSTO 增益集時， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會自動為您具現化這個類別。
 
  `ThisAddIn` 類別有兩個預設事件處理常式。 若要在載入 VSTO 增益集時執行程式碼，請將程式碼加入 `ThisAddIn_Startup` 事件處理常式中。 若要在卸載 VSTO 增益集之前執行程式碼，請將程式碼加入 `ThisAddIn_Shutdown` 事件處理常式。 如需這些事件處理常式的詳細資訊，請參閱 [Office 專案中的事件](../vsto/events-in-office-projects.md)。
 
@@ -112,8 +112,8 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  下列程式碼範例只有在使用者建立文件或開啟現有文件時，才適用於 Word 文件。
 
- [!code-csharp[Trin_WordAddIn_Menus#3](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#3)]
- [!code-vb[Trin_WordAddIn_Menus#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#3)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs" id="Snippet3":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb" id="Snippet3":::
 
 ### <a name="thisaddin-members-to-use-for-other-tasks"></a>要用於其他工作的 ThisAddIn 成員
  下表說明其他常見工作，並顯示可以用來執行這些工作的 `ThisAddIn` 類別。

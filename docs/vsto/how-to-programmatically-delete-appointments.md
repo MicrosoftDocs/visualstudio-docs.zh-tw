@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0520014edc97f7517338652fa89e4c8269ba552c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a8c86917392859afe323deb01916b2b6bf12452
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963922"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828679"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>如何：以程式設計方式刪除約會
   本範例會刪除一個週期性約會執行個體。 本範例假設有個週期性約會執行個體發生於 2006 年 6 月 28 日 08:00。
@@ -29,8 +29,8 @@ ms.locfileid: "99963922"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>範例
- [!code-vb[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteAppointment/thisaddin.vb#1)]
- [!code-csharp[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteAppointment/thisaddin.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteAppointment/thisaddin.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteAppointment/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>另請參閱
 - [使用行事曆專案](../vsto/working-with-calendar-items.md)

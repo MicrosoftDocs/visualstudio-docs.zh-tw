@@ -33,12 +33,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fbc3258f3ea7e0b3cc93a2887dfff5a3bfefb19d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 463543a40ac9443959b06cf9f65dad4c99c52ee3
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891887"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828822"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>主專案和主控制項的程式設計限制
   每個主項目和主控制項的行為，都已設計成像是對應的原生 Microsoft Office Word 或 Microsoft Office Excel 物件一樣，同時還具備額外的功能。 不過，主項目和主控制項在執行階段的行為，還是與原生 Office 物件有些基本差異。
@@ -74,8 +74,8 @@ ms.locfileid: "99891887"
 
  下列範例會建立 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項，並將其傳遞至 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 方法。 這個程式碼使用具名範圍的 <xref:Microsoft.Office.Tools.Excel.NamedRange.InnerObject%2A> 屬性，傳回 <xref:Microsoft.Office.Interop.Excel.Range> 方法所需的基礎 Office <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 。
 
- [!code-csharp[Trin_VstcoreHostControlsExcel#28](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#28)]
- [!code-vb[Trin_VstcoreHostControlsExcel#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#28)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet28":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet28":::
 
 ### <a name="return-types-of-native-office-methods-and-properties"></a>原生 Office 方法和屬性的傳回類型
  主項目的大多數方法和屬性都會傳回主項目所依據的基礎原生 Office 物件。 例如，Excel 之 <xref:Microsoft.Office.Tools.Excel.NamedRange.Parent%2A> 主控制項的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 屬性會傳回 <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件，而不是 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。 同樣地，Word 之 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.Parent%2A> 主控制項的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 屬性會傳回 <xref:Microsoft.Office.Interop.Word.Document> 物件，而不是 <xref:Microsoft.Office.Tools.Word.Document> 主項目。
@@ -83,8 +83,8 @@ ms.locfileid: "99891887"
 ### <a name="access-collections-of-host-controls"></a>存取主控制項的集合
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 不會為每種主控制項類型提供個別集合。 相反地，請使用主專案的 Controls 屬性來逐一查看所有 managed 控制項， (主控制項和檔或工作表上) 的 Windows Forms 控制項，然後尋找符合您感興趣之主控制項類型的專案。 下列程式碼範例會檢查 Word 文件上的每個控制項，並判斷控制項是否為 <xref:Microsoft.Office.Tools.Word.Bookmark>。
 
- [!code-csharp[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#10)]
- [!code-vb[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#10)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs" id="Snippet10":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb" id="Snippet10":::
 
  如需主專案之控制項屬性的詳細資訊，請參閱 [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 

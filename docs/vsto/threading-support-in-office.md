@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6fd35551c5c40494c169fb569113e3530f633a6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dce8bb0667cecbe073c734595d341f9c7b7ccac9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940796"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826079"
 ---
 # <a name="threading-support-in-office"></a>Office 中的執行緒支援
   本文提供 Microsoft Office 物件模型中如何支援執行緒的相關資訊。 Office 物件模型並非安全線程，但可以在 Office 方案中使用多個執行緒。 Office 應用程式是 COM) 伺服器 (元件物件模型。 COM 可讓用戶端呼叫任意執行緒上的 COM 伺服器。 若為不安全線程的 COM 伺服器，COM 會提供一種機制來序列化並行呼叫，如此一來，伺服器上一次只會執行一個邏輯執行緒。 這項機制稱為單一執行緒的單元 (STA) 模型。 由於呼叫是序列化的，因此呼叫端可能會在伺服器忙碌或處理背景執行緒上的其他呼叫時封鎖一段時間。
@@ -65,8 +65,8 @@ ms.locfileid: "99940796"
 ## <a name="start-the-thread-correctly"></a>正確啟動執行緒
  當您建立新的 STA 執行緒時，請在啟動執行緒之前將單元狀態設定為 STA。 下列程式碼範例會示範如何執行這項操作。
 
- [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
- [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs" id="Snippet5":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb" id="Snippet5":::
 
  如需詳細資訊，請參閱 [Managed 執行緒最佳做法](/dotnet/standard/threading/managed-threading-best-practices)。
 

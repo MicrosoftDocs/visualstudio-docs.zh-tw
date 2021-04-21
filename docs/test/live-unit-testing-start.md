@@ -1,6 +1,6 @@
 ---
 title: 了解如何使用 Live Unit Test 來測試程式碼
-description: 藉由建立以 .NET Standard 為目標的簡單類別庫，並建立以 .NET Core 為目標的 MSTest 專案來進行測試，以瞭解如何使用即時單元測試。
+description: 若要瞭解如何使用 Live Unit Testing，請建立以 .NET Standard 為目標的簡單類別庫，並建立以 .NET Core 為目標的 MSTest 專案以進行測試。
 ms.custom: SEO-VS-2020
 ms.date: 04/03/2020
 ms.topic: how-to
@@ -11,28 +11,28 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: d411465869cc960631063d09752d38536af94119
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 5c965fd73f63906f7a1e055ae5ff051eebab19d5
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683611"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828809"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Live Unit Testing 的使用者入門
 
-當您在 Visual Studio 方案中啟用即時單元測試時，它會以視覺化方式呈現您的測試涵蓋範圍和測試狀態。 當您修改程式碼時，即時單元測試也會動態地執行測試，並在您的變更導致測試失敗時立即通知您。
+當您在 Visual Studio 解決方案中啟用 Live Unit Testing 時，它會以視覺化方式呈現您的測試涵蓋範圍和測試狀態。 當您修改程式碼時，Live Unit Testing 也會動態地執行測試，並在您的變更導致測試失敗時立即通知您。
 
-您可以使用即時單元測試來測試以 .NET Framework 或 .NET Core 為目標的方案。 在本教學課程中，您將瞭解如何藉由建立以 .NET Standard 為目標的簡單類別庫來使用即時單元測試，並建立以 .NET Core 為目標的 MSTest 專案以進行測試。
+Live Unit Testing 可以用來測試以 .NET Framework 或 .NET Core 為目標的解決方案。 在本教學課程中，您將瞭解如何藉由建立以 .NET Standard 為目標的簡單類別庫來使用 Live Unit Testing，而且您將建立以 .NET Core 為目標的 MSTest 專案以進行測試。
 
 您可以從 GitHub 的 [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) 存放庫下載完整 C# 方案。
 
 ## <a name="prerequisites"></a>必要條件
 
-本教學課程需要您已安裝具有 **.Net Core 跨平臺開發** 工作負載的 Visual Studio Enterprise edition。
+本教學課程需要您已安裝具有 **.Net Core 跨平臺開發** 工作負載的 Visual Studio Enterprise 版本。
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>建立方案和類別庫專案
 
-首先，建立名為 UtilityLibraries 的 Visual Studio 方案，其中包含單一的 .NET Standard 類別庫專案 StringLibrary。
+首先，建立名為 UtilityLibraries 的 Visual Studio 方案，其中包含單一 .NET Standard 類別庫專案 StringLibrary。
 
 方案只是一或多個專案的容器。 若要建立空白方案，請開啟 Visual Studio 並執行下列作業：
 
@@ -50,16 +50,16 @@ ms.locfileid: "101683611"
 
 現在您已建立解決方案，您將建立名為 StringLibrary 的類別庫，其中包含一些用於處理字串的擴充方法。
 
-1. 在 [**方案 Explorer**] 中，以滑鼠右鍵按一下 UtilityLibraries 方案，然後選取 [**加入**  >  **新專案**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 UtilityLibraries 方案，然後選取 [**加入**  >  **新專案**]。
 
 ::: moniker range="vs-2017"
 
 2. 在 [新增專案] 對話方塊中，選取 C# 節點，然後選取 [.NET Standard]。
 
    > [!NOTE]
-   > 因為我們的程式庫是以 .NET Standard 為目標，而不是特定的 .NET 執行，所以可以從支援該 .NET Standard 版本的任何 .NET 執行呼叫。 如需詳細資訊，請參閱 [.NET Standard](/dotnet/standard/net-standard)。
+   > 由於程式庫的目標是 .NET Standard 而不是特定的 .NET 執行，因此可以從任何支援該版本 .NET Standard 的 .NET 執行呼叫。 如需詳細資訊，請參閱 [.NET Standard](/dotnet/standard/net-standard)。
 
-3. 在右窗格中選取 [ **.Net Standard) 範本 ( 類別庫**，並在 [**名稱**] 文字方塊中輸入 **StringLibrary** ，如下圖所示：
+3. 在右窗格中選取 [**類別庫] ( .NET Standard)** 範本，然後在 [**名稱**] 文字方塊中輸入 **StringLibrary** ，如下圖所示：
 
    ![[新增專案] 對話方塊](./media/lut-start/add-project-cs.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "101683611"
 2. 在範本的搜尋方塊中鍵入 **類別庫**，然後選取 [類別庫 (.NET Standard)] 範本。 按一下 [下一步] 。
 
    > [!NOTE]
-   > 因為我們的程式庫是以 .NET Standard 為目標，而不是特定的 .NET 執行，所以可以從支援該 .NET Standard 版本的任何 .NET 執行呼叫。 如需詳細資訊，請參閱 [.NET Standard](/dotnet/standard/net-standard)。
+   > 由於程式庫的目標是 .NET Standard 而不是特定的 .NET 執行，因此可以從任何支援該版本 .NET Standard 的 .NET 執行呼叫。 如需詳細資訊，請參閱 [.NET Standard](/dotnet/standard/net-standard)。
 
 3. 將專案命名為 **StringLibrary**。
 
@@ -82,7 +82,41 @@ ms.locfileid: "101683611"
 
 5. 以下列程式碼取代程式碼編輯器中的所有現有程式碼：
 
-   [!code-csharp[StringLibrary source code](samples/csharp/utilitylibraries/stringlibrary/class1.cs)]
+   ```csharp
+   using System;
+
+   namespace UtilityLibraries
+   {
+       public static class StringLibrary
+       {
+           public static bool StartsWithUpper(this string s)
+           {
+               if (String.IsNullOrWhiteSpace(s))
+                   return false;
+
+               return Char.IsUpper(s[0]);
+           }
+
+           public static bool StartsWithLower(this string s)
+           {
+               if (String.IsNullOrWhiteSpace(s))
+                   return false;
+
+               return Char.IsLower(s[0]);
+           }
+
+           public static bool HasEmbeddedSpaces(this string s)
+           {
+               foreach (var ch in s.Trim())
+               {
+                   if (ch == ' ')
+                       return true;
+               }
+               return false;
+           }
+       }
+   }
+   ```
 
    StringLibrary 有三種靜態方法：
 
@@ -92,13 +126,13 @@ ms.locfileid: "101683611"
 
    - 如果字串包含內嵌空白字元，則 `HasEmbeddedSpaces` 會傳回 `true`；否則會傳回 `false`。
 
-6.   >  從最上層的 Visual Studio 功能表中選取 [組建 **組建方案**]。 組建應該會成功。
+6.   >  從頂層 Visual Studio 功能表中選取 [組建 **組建方案**]。 組建應該會成功。
 
 ## <a name="create-the-test-project"></a>建立測試專案
 
 下一步是建立單元測試專案來測試 StringLibrary 程式庫。 執行下列步驟，以建立單元測試：
 
-1. 在 [**方案 Explorer**] 中，以滑鼠右鍵按一下 UtilityLibraries 方案，然後選取 [**加入**  >  **新專案**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 UtilityLibraries 方案，然後選取 [**加入**  >  **新專案**]。
 
 ::: moniker range="vs-2017"
 
@@ -123,7 +157,7 @@ ms.locfileid: "101683611"
 2. 在 [範本搜尋] 方塊中輸入 **單元測試** ，選取 **c #** 做為語言，然後選取 [.net Core] 範本的 **單元測試專案** 。 按一下 [下一步] 。
 
    > [!NOTE]
-   > 從 Visual Studio 2019 版本16.9 開始，MSTest 專案範本名稱從 **Mstest 單元測試專案 ( .Net Core)** 變更為 **單元測試專案**。
+   > 從 Visual Studio 2019 16.9 版開始，MSTest 專案範本名稱從 **Mstest 單元測試專案變更 ( .Net Core)** 變更為 **單元測試專案**。
 
 3. 將專案命名為 **StringLibraryTests** ，然後按 **[下一步]**。
 
@@ -140,7 +174,59 @@ ms.locfileid: "101683611"
 
 6. 將範本所提供的未定案單元測試程式碼取代為下列程式碼：
 
-   [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest1.cs)]
+   ```csharp
+   using System;
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
+   using UtilityLibraries;
+
+   namespace StringLibraryTest
+   {
+       [TestClass]
+       public class UnitTest1
+       {
+           [TestMethod]
+           public void TestStartsWithUpper()
+           {
+               // Tests that we expect to return true.
+               string[] words = { "Alphabet", "Zebra", "ABC", "Αθήνα", "Москва" };
+               foreach (var word in words)
+               {
+                   bool result = word.StartsWithUpper();
+                   Assert.IsTrue(result,
+                                 $"Expected for '{word}': true; Actual: {result}");
+               }
+           }
+
+           [TestMethod]
+           public void TestDoesNotStartWithUpper()
+           {
+               // Tests that we expect to return false.
+               string[] words = { "alphabet", "zebra", "abc", "αυτοκινητοβιομηχανία", "государство",
+                                  "1234", ".", ";", " " };
+               foreach (var word in words)
+               {
+                   bool result = word.StartsWithUpper();
+                   Assert.IsFalse(result,
+                                  $"Expected for '{word}': false; Actual: {result}");
+               }
+           }
+
+           [TestMethod]
+           public void DirectCallWithNullOrEmpty()
+           {
+               // Tests that we expect to return false.
+               string[] words = { String.Empty, null };
+               foreach (var word in words)
+               {
+                   bool result = StringLibrary.StartsWithUpper(word);
+                   Assert.IsFalse(result,
+                                  $"Expected for '{(word == null ? "<null>" : word)}': " +
+                                  $"false; Actual: {result}");
+               }
+           }
+       }
+   }
+   ```
 
 7. 選取工具列上的 **儲存** 圖示，以儲存專案。
 
@@ -154,7 +240,7 @@ ms.locfileid: "101683611"
 
    ![選擇 UTF-8 編碼](media/lut-start/utf8-encoding.png)
 
-10.   >  從最上層 Visual Studio 功能表中選取 [組建 **重建方案**]，以編譯單元測試專案。
+10.   >  從最上層的 Visual Studio 功能表中選取 [組建 **重建方案**]，以編譯單元測試專案。
 
 您已為其建立類別庫以及一些單元測試。 您現在已完成使用 Live Unit Testing 所需的準備工作。
 
@@ -162,9 +248,9 @@ ms.locfileid: "101683611"
 
 到目前為止，雖然您已撰寫 StringLibrary 類別庫的測試，但尚未執行這些測試。 Live Unit Testing 會在啟用之後自動執行它們。 若要這麼做，請執行下列作業：
 
-1. （選擇性）選取包含 StringLibrary 程式碼的 [程式碼編輯器] 視窗。 這會針對 c # 專案 *Class1.cs* ，或針對 Visual Basic 專案為 *Class1。*  (此步驟可讓您在啟用即時單元測試之後，以視覺化方式檢查測試結果和程式碼涵蓋範圍的範圍。 ) 
+1. （選擇性）選取包含 StringLibrary 程式碼的 [程式碼編輯器] 視窗。 這可以是 c # 專案的 *class1* ，或 Visual Basic 專案的 *class1* 。  (此步驟可讓您在啟用 Live Unit Testing 之後，以視覺化方式檢查測試的結果和程式碼涵蓋範圍的範圍。 ) 
 
-1.   >    >  從最上層的 Visual Studio 功能表中，選取 [從最上層 Visual Studio **開始** 測試即時單元測試]。
+1. 選取 [**測試**  >  **Live Unit Testing**  >  從最上層 Visual Studio] 功能表 **開始**。
 
 1. Visual Studio 會啟動 Live Unit Test，以自動執行所有測試。
 
@@ -174,18 +260,18 @@ ms.locfileid: "101683611"
 ![啟動即時單元測試之後的 [測試瀏覽器] 和 [程式碼編輯器] 視窗](media/lut-start/lut-results-cs.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-當測試完成執行您的測試時， **即時單元測試** 會顯示整體結果和個別測試的結果。 此外，[程式碼編輯器] 視窗會以圖形方式顯示測試程式碼涵蓋範圍和測試結果。 如下圖所示，所有三項測試都已成功執行。 它也會顯示我們的測試已涵蓋 `StartsWithUpper` 方法中的所有程式碼路徑，而且已成功執行這些測試 (以綠色核取記號 "✓" 指出)。 最後，它會顯示 StringLibrary 中的其他方法都沒有程式碼涵蓋範圍 (，以藍色線 "➖" ) 表示。
+當測試完成執行您的測試時， **Live Unit Testing** 會顯示整體結果和個別測試的結果。 此外，[程式碼編輯器] 視窗會以圖形方式顯示測試程式碼涵蓋範圍和測試結果。 如下圖所示，所有三項測試都已成功執行。 它也會顯示我們的測試已涵蓋 `StartsWithUpper` 方法中的所有程式碼路徑，而且已成功執行這些測試 (以綠色核取記號 "✓" 指出)。 最後，它會顯示 StringLibrary 中的其他方法都沒有程式碼涵蓋範圍 (，以藍色線 "➖" ) 表示。
 
 ![啟動即時單元測試之後的 [即時測試瀏覽器] 和 [程式碼編輯器] 視窗](media/lut-start/vs-2019/lut-results-cs.png)
 ::: moniker-end
 
 您也可以在 [程式碼編輯器] 視窗中選取特定的程式碼涵蓋範圍圖示，以取得測試涵蓋範圍和測試結果的詳細資訊。 若要檢查此詳細資料，請執行下列作業：
 
-1. 按一下 `StartsWithUpper` 方法之 `if (String.IsNullOrWhiteSpace(s))` 行中的綠色核取記號。 如下圖所示，即時單元測試表示三項測試涵蓋該程式程式碼，而且全部都已成功執行。
+1. 按一下 `StartsWithUpper` 方法之 `if (String.IsNullOrWhiteSpace(s))` 行中的綠色核取記號。 如下圖所示，Live Unit Testing 表示三項測試涵蓋該程式程式碼，而且全部都已成功執行。
 
    !['if' 條件陳述式的程式碼涵蓋範圍](media/lut-start/code-coverage-cs1.png)
 
-1. 按一下 `StartsWithUpper` 方法之 `return Char.IsUpper(s[0])` 行中的綠色核取記號。 如下圖所示，即時單元測試表示只有兩個測試涵蓋該程式程式碼，而且全部都已成功執行。
+1. 按一下 `StartsWithUpper` 方法之 `return Char.IsUpper(s[0])` 行中的綠色核取記號。 如下圖所示，Live Unit Testing 指出只有兩個測試涵蓋該程式程式碼，而且全部都已成功執行。
 
    ![return 陳述式的程式碼涵蓋範圍](media/lut-start/code-coverage-cs2.png)
 
@@ -199,11 +285,11 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
 1. 將下列 `TestStartsWithLower` 和 `TestDoesNotStartWithLower` 方法新增至專案的測試原始程式檔：
 
-    [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
+   :::code language="csharp" source="../test/samples/snippets/csharp/lut-start/unittest2.cs" id="Snippet1":::
 
 1. 藉 `DirectCallWithNullOrEmpty` 由在呼叫方法之後立即新增下列程式碼來修改方法 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) 。
 
-    [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#2)]
+   :::code language="csharp" source="../test/samples/snippets/csharp/lut-start/unittest2.cs" id="Snippet2":::
 
 1. Live Unit Testing 會在您修改原始程式碼時自動執行新的和修改過的測試。 如下圖所示，所有測試（包括您已新增的兩個測試，以及您修改過的所有測試）都已成功。
 
@@ -228,9 +314,9 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
 1. 將下列方法新增至測試檔案：
 
-    [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
+   :::code language="csharp" source="../test/samples/snippets/csharp/lut-start/unittest2.cs" id="Snippet3":::
 
-1. 當測試執行時，即時單元測試會指出 `TestHasEmbeddedSpaces` 方法已失敗，如下圖所示：
+1. 當測試執行時，Live Unit Testing 指出 `TestHasEmbeddedSpaces` 方法已失敗，如下圖所示：
 
    ::: moniker range="vs-2017"
    ![測試瀏覽器報告失敗的測試](media/lut-start/test-failure.png)
@@ -239,19 +325,19 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
    ![Live Test Explorer 報告測試失敗](media/lut-start/vs-2019/test-failure.png)
    ::: moniker-end
 
-1. 選取顯示程式庫程式碼的視窗。 Live Unit 測試已擴充方法的程式碼涵蓋範圍 `HasEmbeddedSpaces` 。 它也會在失敗測試所涵蓋的程式行中新增紅色 "🞩"，以報告測試失敗。
+1. 選取顯示程式庫程式碼的視窗。 Live Unit Testing 已擴充方法的程式碼涵蓋範圍 `HasEmbeddedSpaces` 。 它也會在失敗測試所涵蓋的程式行中新增紅色 "🞩"，以報告測試失敗。
 
-1. 將游標停留在含 `HasEmbeddedSpaces` 方法簽章的行上方。 Live Unit 測試會顯示一個工具提示，報告該方法是否由一個測試所涵蓋，如下圖所示：
+1. 將游標停留在含 `HasEmbeddedSpaces` 方法簽章的行上方。 Live Unit Testing 會顯示一個工具提示，報告該方法是否包含在一項測試中，如下圖所示：
 
-   ![測試失敗的即時單元測試資訊](media/lut-start/test-failure-info-cs.png)
+   ![測試失敗的 Live Unit Testing 資訊](media/lut-start/test-failure-info-cs.png)
 
-1. 選取失敗的 **TestHasEmbeddedSpaces** 測試。 即時單元測試提供您幾個選項，例如執行所有測試和所有測試的測試，如下圖所示：
+1. 選取失敗的 **TestHasEmbeddedSpaces** 測試。 Live Unit Testing 提供幾個選項，例如執行所有測試和所有測試的測試，如下圖所示：
 
    ::: moniker range="vs-2017"
-   ![測試失敗的即時單元測試選項](media/lut-start/test-failure-options.png)
+   ![測試失敗的 Live Unit Testing 選項](media/lut-start/test-failure-options.png)
    ::: moniker-end
    ::: moniker range=">=vs-2019"
-   ![測試失敗的即時單元測試選項](media/lut-start/vs-2019/test-failure-options.png)
+   ![測試失敗的 Live Unit Testing 選項](media/lut-start/vs-2019/test-failure-options.png)
    ::: moniker-end
 
 1. 選取 [ **全部調試** ] 以偵測失敗的測試。
@@ -260,7 +346,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
    測試會將陣列中的每個字串指派給名為的變數 `phrase` ，並將它傳遞給 `HasEmbeddedSpaces` 方法。 assert 運算式第一次為 `false` 時，執行程式會暫停並叫用偵錯工具。 下圖顯示由方法呼叫中非預期值所產生的例外狀況對話方塊 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) 。
 
-   ![Live Unit 測試例外狀況對話方塊](media/lut-start/exception-dialog-cs.png)
+   ![Live Unit Testing 例外狀況對話方塊](media/lut-start/exception-dialog-cs.png)
 
    此外，Visual Studio 提供的所有偵錯工具都可協助我們疑難排解失敗的測試，如下圖所示：
 
@@ -275,11 +361,11 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
 1. 將相等比較取代為 <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> 方法呼叫：
 
-    [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/program2.cs#1)]
+   :::code language="csharp" source="../test/samples/snippets/csharp/lut-start/program2.cs" id="Snippet1":::
 
-1. 即時單元測試會自動重新運行失敗的測試方法。
+1. Live Unit Testing 會自動重新運行失敗的測試方法。
 
-   即時單元測試會顯示更新後的結果，這也會出現在 [程式碼編輯器] 視窗中。
+   Live Unit Testing 會顯示更新後的結果，這也會出現在 [程式碼編輯器] 視窗中。
 
 ## <a name="see-also"></a>另請參閱
 

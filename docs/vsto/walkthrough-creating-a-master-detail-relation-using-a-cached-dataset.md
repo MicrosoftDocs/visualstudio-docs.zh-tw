@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 843718ea49ae7df7d34775283ce8120f077b0a0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 177b21e2278153693601adf7b7dc18b751cf184e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925506"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824844"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>逐步解說：使用快取資料集建立主要詳細資料關聯
   本逐步解說將示範如何在工作表上建立主要/詳細資料關聯，以及如何快取資料，讓方案可以離線使用。
@@ -138,16 +138,16 @@ ms.locfileid: "99925506"
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>若要初始化資料和控制項
 
-1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **sheet1** ] 或 [ **sheet1**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
 
 2. 將下列程式碼加入至 `Sheet1_Startup` 方法，以設定按鈕的文字。
 
-     [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]
-     [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet15":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet15":::
 
 3. 針對 c #，請將按鈕 click 事件的事件處理常式加入至 `Sheet1_Startup` 方法。
 
-     [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet16":::
 
 ## <a name="add-code-to-enable-scrolling-through-the-records"></a>新增程式碼以啟用記錄的滾動
  將程式碼加入至 <xref:System.Windows.Forms.Control.Click> 每個按鈕的事件處理常式，以移動記錄。
@@ -156,13 +156,13 @@ ms.locfileid: "99925506"
 
 1. 加入事件的事件處理常式 <xref:System.Windows.Forms.Control.Click> `Button1` ，並加入下列程式碼，以便在記錄中向前移動：
 
-     [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]
-     [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet17":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet17":::
 
 2. 加入事件的事件處理常式 <xref:System.Windows.Forms.Control.Click> `Button2` ，並加入下列程式碼以前進記錄：
 
-     [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
-     [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet18":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet18":::
 
 ## <a name="test-the-application"></a>測試應用程式
  現在您可以測試您的活頁簿，以確定資料會如預期般顯示，而且您可以離線使用方案。

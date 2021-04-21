@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 57b330884ef6638e5c853cfb5670e3552aca46cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58cd5f7a26be57ce0cb742e153d88ee455b2f85b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940822"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826105"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office 方案的特定安全性考慮
   Microsoft .NET Framework 和 Microsoft Office 所提供的安全性功能，可協助保護您的 Office 解決方案免於可能的安全性威脅。 本主題說明一些這類威脅，並提供建議協助您免於威脅。 本主題也包含 Microsoft Office 安全性設定如何影響 Office 方案的相關資訊。
@@ -67,13 +67,13 @@ ms.locfileid: "99940822"
 
  如果物件模型保護已啟用，則下列程式碼範例會顯示安全性警告。 `Microsoft.Office.Interop.Outlook.MailItem` 類別的 `To` 屬性受物件模型保護限制。 `Microsoft.Office.Interop.Outlook.MailItem`物件不受信任 `Microsoft.Office.Interop.Outlook.Application` ，因為程式碼會從使用 **new** 運算子所建立的來取得它，而不是從欄位取得它 `Application` 。
 
- [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
- [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb" id="Snippet1":::
 
  下列程式碼範例將示範如何使用物件模型保護所信任之物件的 [限制為] 屬性 `Microsoft.Office.Interop.Outlook.MailItem` 。 此程式碼會使用受信任的 `Application` 欄位以取得 `Microsoft.Office.Interop.Outlook.MailItem`。
 
- [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)]
- [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs" id="Snippet2":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb" id="Snippet2":::
 
 > [!NOTE]
 > 如果 Outlook 與 Exchange 搭配使用，則從 `ThisAddIn.Application` 取得所有 Outlook 物件並不保證 VSTO 增益集可存取整個 Outlook 物件模型。 例如，如果 Exchange 系統管理員設定 Outlook 自動拒絕使用 Outlook 物件模型存取位址資訊的所有嘗試，則 Outlook 將不會允許先前的程式碼範例存取 To 屬性，即使該程式碼範例使用了受信任的欄位也一樣 `ThisAddIn.Application` 。
