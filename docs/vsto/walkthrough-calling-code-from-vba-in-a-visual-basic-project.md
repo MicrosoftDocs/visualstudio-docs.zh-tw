@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bcb13ec0e26b1668a397d56982d049bf9ebcceb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f4fe056f70e0af03809b43d60968bd8a1a50bf08
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906544"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824480"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>逐步解說：在 Visual Basic 專案中呼叫 VBA 的程式碼
   本逐步解說示範如何從文件中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Office Word 文件層級自訂中的方法。 這個程序和三個基本步驟相關：將方法加入 `ThisDocument` 主項目類別、將方法公開至 VBA 程式碼，然後從文件中的 VBA 程式碼呼叫此方法。
@@ -160,7 +160,7 @@ ms.locfileid: "99906544"
 
 2. 將下列方法新增至 `ThisDocument` 類別。 此方法會在文件開頭建立有兩列和兩欄的資料表。 此參數指定第一列中顯示的文字。 稍後在本逐步解說中，您會從本文件中的 VBA 程式碼呼叫此方法。
 
-     [!code-vb[Trin_CallingVBCustomizationFromVBA#1](../vsto/codesnippet/VisualBasic/CallingCodeFromVBA/ThisDocument.vb#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/CallingCodeFromVBA/ThisDocument.vb" id="Snippet1":::
 
 3. 建置專案。
 

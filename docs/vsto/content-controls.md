@@ -40,12 +40,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ce692bf10c5473c648fd6587b6b6568d369ed496
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0d55daba4dee07454a31fcb6fc5fa210e8bcc34
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947993"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825052"
 ---
 # <a name="content-controls"></a>內容控制項
   內容控制項提供一種設計文件和範本的方式，能讓它們具有下列功能：
@@ -233,8 +233,8 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="check-box-content-controls-in-word-projects"></a><a name="checkbox"></a> Word 專案中的核取方塊內容控制項
  Word 2010 導入了表示核取方塊的新型別內容控制項。 但是，不 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會提供您要在 Office 專案中使用的對應 CheckBoxContentControl 類型。 若要在 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 Word 2010 專案中建立核取方塊內容控制項，請使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> 方法建立 <xref:Microsoft.Office.Tools.Word.ContentControl> 物件，並將 <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> 值傳遞給方法，以指定核取方塊內容控制項。 下列程式碼範例會示範如何執行這項操作。
 
- [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
- [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb" id="Snippet800":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs" id="Snippet800":::
 
 ## <a name="see-also"></a>另請參閱
 - [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)

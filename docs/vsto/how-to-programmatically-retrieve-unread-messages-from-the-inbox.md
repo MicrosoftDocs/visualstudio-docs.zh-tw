@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 82bd595b76a03ee730995e546fd9c4e827c95a53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5a7c19dbaed9e2f8829845e777130e0f09084046
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953847"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823934"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>如何：以程式設計方式從收件匣取出未讀取的訊息
   此範例會從 Outlook **收件** 匣抓取未閱讀的電子郵件訊息，並顯示專案數。
@@ -30,8 +30,8 @@ ms.locfileid: "99953847"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>範例
- [!code-vb[Trin_Outlook_RL_UnreadItems#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_UnreadItems/thisaddin.vb#1)]
- [!code-csharp[Trin_Outlook_RL_UnreadItems#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_UnreadItems/thisaddin.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_UnreadItems/thisaddin.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_UnreadItems/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>另請參閱
 - [使用訊息項目](../vsto/working-with-mail-items.md)

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 34992bb4f76f68229bebbdb98265838f049dc288
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 97f56ce0bd44eac71430a099b4fda9a7eddc7958
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949775"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107829004"
 ---
 # <a name="how-to-programmatically-save-documents"></a>如何：以程式設計方式儲存檔
 
@@ -34,15 +34,15 @@ ms.locfileid: "99949775"
 
 1. 請呼叫 <xref:Microsoft.Office.Tools.Word.Document.Save%2A> 類別的 <xref:Microsoft.Office.Tools.Word.Document> 方法。 若要使用此程式碼範例，請從專案的 `ThisDocument` 類別中執行它。
 
-     [!code-vb[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#7)]
-     [!code-csharp[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#7)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet7":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet7":::
 
 ### <a name="to-save-the-active-document"></a>若要儲存使用中的檔
 
 1. 呼叫 <xref:Microsoft.Office.Interop.Word._Document.Save%2A> 現用檔的方法。 若要使用這個程式碼範例，請從專案的 `ThisDocument` 或 `ThisAddIn` 類別中執行它。
 
-    [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
-    [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet8":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet8":::
 
    如果您不確定要儲存的檔是否為使用中的檔，您可以依名稱來參考它。
 
@@ -50,8 +50,8 @@ ms.locfileid: "99949775"
 
 1. 使用檔案名稱做為集合的引數 <xref:Microsoft.Office.Interop.Word.Documents> 。 若要使用這個程式碼範例，請從專案的 `ThisDocument` 或 `ThisAddIn` 類別中執行它。
 
-     [!code-vb[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#9)]
-     [!code-csharp[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#9)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet9":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet9":::
 
 ## <a name="save-a-document-with-a-new-name"></a>使用新名稱儲存檔
 
@@ -67,8 +67,8 @@ ms.locfileid: "99949775"
     > [!NOTE]
     > `SaveAs`如果目標目錄不存在或儲存檔案時發生其他問題，方法會擲回例外狀況。 最好的作法是在 `try...catch` 方法前後使用區塊， `SaveAs` 或在呼叫方法中使用區塊。
 
-     [!code-vb[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#10)]
-     [!code-csharp[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#10)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet10":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet10":::
 
 ### <a name="to-save-a-native-document-with-a-new-name"></a>使用新名稱儲存原生檔
 
@@ -79,8 +79,8 @@ ms.locfileid: "99949775"
     > [!NOTE]
     > <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>如果目標目錄不存在或儲存檔案時發生其他問題，方法會擲回例外狀況。 最佳做法是使用 **try .。。** <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> 方法周圍或呼叫方法內的 catch 區塊。
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#10)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#10)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet10":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet10":::
 
 ## <a name="compile-the-code"></a>編譯程式碼
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3cc88b5ee48241a15a66144c992936b55fb2acf3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2088a4d2ca81418ca16b51b53b0af38595d75b2
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838083"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825390"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>逐步解說：在 VSTO 增益集中，于執行時間將控制項加入至檔
   您可以使用 VSTO 增益集，將控制項加入任何開啟的 Microsoft Office Word 檔中。 本逐步解說示範如何使用功能區，讓使用者在 <xref:Microsoft.Office.Tools.Word.Controls.Button> 檔中加入或 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。
@@ -109,46 +109,46 @@ ms.locfileid: "99838083"
 
 ### <a name="to-add-and-remove-controls-on-the-active-document"></a>加入和移除使用中文件的控制項
 
-1. 在 **方案總管** 中，按兩下 [ *ThisAddIn.cs* ] 或 [ *ThisAddIn* ]，以在程式碼編輯器中開啟檔案。
+1. 在 **方案總管** 中，按兩下 [ *ThisAddIn* ] 或 [ *ThisAddIn* ]，以在程式碼編輯器中開啟檔案。
 
 2. 將下列程式碼新增至 `ThisAddIn` 類別。 此程式碼會宣告 <xref:Microsoft.Office.Tools.Word.Controls.Button> 和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 物件，它們代表將會加入文件的控制項。
 
-     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs" id="Snippet1":::
 
 3. 將下列方法新增至 `ThisAddIn` 類別。 當使用者按一下功能區上的 [加入按鈕]  核取方塊時，如果已選取核取方塊，則此方法會將 <xref:Microsoft.Office.Tools.Word.Controls.Button> 加入文件目前的選取範圍，如果已清除核取方塊則會移除 <xref:Microsoft.Office.Tools.Word.Controls.Button> 。
 
-     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs" id="Snippet2":::
 
 4. 將下列方法新增至 `ThisAddIn` 類別。 當使用者按一下功能區上的 [加入 RTF 控制項]  核取方塊時，如果已選取核取方塊，則此方法會將 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 加入文件目前的選取範圍，如果已清除核取方塊則會移除 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。
 
-     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs" id="Snippet3":::
 
 ## <a name="remove-the-button-control-when-the-document-is-saved"></a>儲存檔時移除按鈕控制項
  在儲存文件然後關閉時，不會保存 Windows Forms 控制項。 不過，每個控制項的 ActiveX 包裝函式會保留在文件中，而當使用者重新開啟文件時，會看到這個包裝函式的框線。 有幾種方式可以清除 VSTO 增益集中動態建立的 Windows Forms 控制項。在這個逐步解說中，您會在儲存檔時以程式設計方式移除 <xref:Microsoft.Office.Tools.Word.Controls.Button> 控制項。
 
 ### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>儲存文件時移除按鈕控制項
 
-1. 在 *ThisAddIn.cs* 或 *ThisAddIn .vb* 程式碼檔案中，將下列方法新增至 `ThisAddIn` 類別。 這個方法是 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的事件處理常式。 如果已儲存的文件有與它相關的 <xref:Microsoft.Office.Tools.Word.Document> 主項目，事件處理常式會取得主項目並移除 <xref:Microsoft.Office.Tools.Word.Controls.Button> 控制項 (如果存在的話)。
+1. 在 *ThisAddIn .cs* 或 *ThisAddIn .vb* 程式碼檔案中，將下列方法新增至 `ThisAddIn` 類別。 這個方法是 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的事件處理常式。 如果已儲存的文件有與它相關的 <xref:Microsoft.Office.Tools.Word.Document> 主項目，事件處理常式會取得主項目並移除 <xref:Microsoft.Office.Tools.Word.Controls.Button> 控制項 (如果存在的話)。
 
-     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#4)]
-     [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs" id="Snippet4":::
 
 2. 在 C# 中，將下列程式碼加入 `ThisAddIn_Startup` 事件處理常式。 在 C# 中連接 `Application_DocumentBeforeSave` 事件處理常式和 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件時需要此程式碼。
 
-     [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs" id="Snippet5":::
 
 ## <a name="add-and-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>當使用者按一下功能區上的核取方塊時，加入和移除控制項
  最後，修改 <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> 您新增至功能區之核取方塊的事件處理常式，以新增或移除檔上的控制項。
 
 ### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>當使用者按一下功能區上的核取方塊時，加入或移除控制項
 
-1. 在 *MyRibbon.cs* 或 *myribbon.vb .vb* 程式碼檔案中，以下列程式碼取代產生的 `addButtonCheckBox_Click` `addRichTextCheckBox_Click` 事件處理常式。 此程式碼會重新定義這些事件處理常式，呼叫您稍早在本逐步解說中加入 `ToggleButtonOnDocument` 類別的 `ToggleRichTextControlOnDocument` 和 `ThisAddIn` 方法。
+1. 在 *myribbon.vb .cs* 或 *myribbon.vb .vb* 程式碼檔案中，以下列程式碼取代產生的 `addButtonCheckBox_Click` `addRichTextCheckBox_Click` 事件處理常式。 此程式碼會重新定義這些事件處理常式，呼叫您稍早在本逐步解說中加入 `ToggleButtonOnDocument` 類別的 `ToggleRichTextControlOnDocument` 和 `ThisAddIn` 方法。
 
-     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.vb#6)]
-     [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.cs#6)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.vb" id="Snippet6":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.cs" id="Snippet6":::
 
 ## <a name="test-the-solution"></a>測試解決方案
  從功能區上的自訂索引標籤選取控制項，將此控制項加入文件。 當您儲存文件時，會移除 <xref:Microsoft.Office.Tools.Word.Controls.Button> 控制項。

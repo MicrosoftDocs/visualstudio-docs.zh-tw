@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d49c7fa9224b2d527956536cb0c56b016f6b52e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 64a4d4dcd2e6115a3b8093a0a9338cb126f49a28
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948644"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825130"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>在執行時間將控制項新增至 Office 檔
   您可以在執行階段將控制項加入 Microsoft Office Word 文件與 Microsoft Office Excel 活頁簿中。 您也可以在執行階段加以移除。 您在執行階段加入或移除的控制項稱為 *動態控制項*。
@@ -62,6 +62,9 @@ ms.locfileid: "99948644"
 
  [!code-vb[Trin_ExcelWorkbookDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb#3)]
  [!code-csharp[Trin_ExcelWorkbookDynamicControls#3](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#3)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb" id="Snippet3":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs" id="Snippet3":::
+
 
 ### <a name="access-and-delete-controls"></a>存取和刪除控制項
  您可以使用 <xref:Microsoft.Office.Tools.Excel.Worksheet> 或 <xref:Microsoft.Office.Tools.Word.Document> 的 `Controls` 屬性來逐一查看文件中的所有控制項，包括在設計階段加入的控制項。 您在設計階段加入的控制項也稱為 *靜態控制項*。
@@ -70,6 +73,9 @@ ms.locfileid: "99948644"
 
  [!code-vb[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb#4)]
  [!code-csharp[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#4)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb" id="Snippet4":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs" id="Snippet4":::
+
 
  您無法在執行階段移除靜態控制項。 如果您嘗試使用 `Delete` 或 `Remove` 方法來移除靜態控制項，就會擲回 <xref:Microsoft.Office.Tools.CannotRemoveControlException>。
 
@@ -116,8 +122,8 @@ ms.locfileid: "99948644"
 
   下列程式碼範例示範如何使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> 方法，以動態方式將自訂使用者控制項加入文件層級 Excel 專案的工作表中。 在此範例中，使用者控制項名為 `UserControl1`，而 <xref:Microsoft.Office.Interop.Excel.Range> 名為 `range1`。 若要使用此範例，請從專案中的 `Sheet`*n* 類別加以執行。
 
-  [!code-vb[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#2)]
-  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#2)]
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet2":::
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet2":::
 
 ### <a name="use-members-of-custom-controls"></a>使用自訂控制項的成員
  在使用其中一個 `AddControl` 方法，將控制項加入工作表或文件中後，您現在便有兩個不同的控制項物件：
@@ -136,8 +142,8 @@ ms.locfileid: "99948644"
 
   例如，<xref:Microsoft.Office.Tools.Excel.ControlSite> 類別與 <xref:System.Windows.Forms.Control> 類別皆具有 `Top` 屬性。 若要取得或設定控制項的頂端和文件頂端之間的距離，請使用 <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> 的 <xref:Microsoft.Office.Tools.Excel.ControlSite>屬性，而非 <xref:System.Windows.Forms.Control.Top%2A> 的 <xref:System.Windows.Forms.Control>屬性。
 
-  [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
-  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet3":::
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet3":::
 
 ## <a name="see-also"></a>另請參閱
 - [Office 檔上的控制項](../vsto/controls-on-office-documents.md)

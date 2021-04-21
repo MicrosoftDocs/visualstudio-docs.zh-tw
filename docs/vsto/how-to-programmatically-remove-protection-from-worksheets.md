@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 85f659248528d0d7cf4357ffe2d1c2c5f88df9e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c392ee3434edf9211a4a3061e7a83a8621960430
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906762"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824155"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>如何：以程式設計方式移除工作表的保護
   您可以程式設計的方式，移除 Microsoft Office Excel 工作表保護。
@@ -36,15 +36,15 @@ ms.locfileid: "99906762"
 
 1. <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A>如有需要，請呼叫工作表的方法並傳入密碼。 這個範例會假設您是使用名為 `Sheet1`的工作表。
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#28)]
-     [!code-vb[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#28)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet28":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet28":::
 
 ## <a name="to-unprotect-a-worksheet-in-a-vsto-add-in"></a>若要取消保護 VSTO 增益集中的工作表
 
 1. <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A>如有需要，請呼叫活動工作表的方法並傳入密碼。
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#18)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet18":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet18":::
 
 ## <a name="see-also"></a>另請參閱
 - [使用工作表](../vsto/working-with-worksheets.md)

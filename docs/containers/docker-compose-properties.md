@@ -4,15 +4,15 @@ author: ghogen
 description: 瞭解如何編輯 Docker Compose 組建屬性，以自訂 Visual Studio 建立和執行 Docker Compose 應用程式的方式。
 ms.custom: SEO-VS-2020
 ms.author: ghogen
-ms.date: 08/12/2019
+ms.date: 04/06/2021
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 4478656af7fff4cfd3a0fdafefe623af5811154f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7f1ebb11133c640c2e0bdcfd84660592792d4205
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068293"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825000"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 組建屬性
 
@@ -43,7 +43,7 @@ ms.locfileid: "105068293"
 |DockerComposeProjectName| docker-compose.dcproj | 如果有指定，會覆寫 docker 撰寫專案的專案名稱。 | "dockercompose" + 自動產生的雜湊 |
 |DockerComposeProjectPath|.csproj 或 vbproj|Docker 撰寫專案的相對路徑 (docker-compose.dcproj) 檔。 發佈服務專案時設定此屬性，以尋找儲存在 >docker-compose.yml. yml 檔案中的相關聯映射組建設定。|-|
 |DockerComposeUpArguments|docker-compose.dcproj|指定要傳遞給命令的額外參數 `docker-compose up` 。 例如， `--timeout 500`|-|
-|DockerDevelopmentMode|docker-compose.dcproj| 控制是否啟用「內部主機」優化 ( 「快速模式」的偵錯工具) 。  允許的值為 **Fast** 和 **Regular**。 | 快速 |
+|DockerDevelopmentMode|docker-compose.dcproj| 控制是否啟用「內部主機」優化 ( 「快速模式」的偵錯工具) 。  允許的值為 `Fast` 和 `Regular` 。 | `Fast` 在 Debug 設定或 `Regular` 所有其他設定中 |
 |DockerLaunchAction| docker-compose.dcproj | 指定要在 F5 或 Ctrl + F5 執行的啟動動作。  允許的值為 None、LaunchBrowser 和 LaunchWCFTestClient。|無|
 |DockerLaunchBrowser| docker-compose.dcproj | 指出是否要啟動瀏覽器。 如果已指定 DockerLaunchAction，則會忽略。 | 否 |
 |DockerServiceName| docker-compose.dcproj|如果指定了 DockerLaunchAction 或 DockerLaunchBrowser，則 DockerServiceName 是應啟動之服務的名稱。  您可以使用這個屬性來判斷哪些專案可能會啟動 docker 組成檔案可以參考的專案。|-|
@@ -93,9 +93,16 @@ services:
 > [!NOTE]
 > DockerComposeBuildArguments、DockerComposeDownArguments 和 DockerComposeUpArguments 是 Visual Studio 2019 16.3 版中的新功能。
 
-## <a name="docker-compose-file-labels"></a>Docker Compose 檔標籤
+## <a name="overriding-visual-studios-docker-compose-configuration"></a>覆寫 Visual Studio 的 Docker Compose 設定
 
-您也可以將名為 >docker-compose.yml 的檔案放在與 *>docker-compose.yml* 檔案相同的目錄中 **，來覆** 寫某些設定，方法是將名為的檔案放在 *yml* (進行 **debug** 設定) 或 *>docker-compose.yml。 yml*)  (  在此檔案中，您可以指定設定，如下所示：
+您可以覆寫某些設定，方法是將名為 *>docker-compose.yml* 的檔案放在 yml (的 **快速** 模式) 或 *>docker-compose.yml。 yml* (適用于 **一般** 模式) 在與 *>docker-compose.yml. yml* 檔案相同的目錄中。 
+
+>[!TIP] 
+>若要找出任何這些設定的預設值，請查看 *>docker-compose.yml. yml* 或 *>docker-compose.yml. yml. g.*。
+
+### <a name="docker-compose-file-labels"></a>Docker Compose 檔標籤
+
+ 在 *>docker-compose.yml* 中，您可以在 yml 或 *>docker-compose.yml* 中定義覆寫特定標籤，如下所示：
 
 ```yml
 services:
@@ -109,13 +116,26 @@ services:
 |標籤名稱|Description|
 |----------|-----------|
 |visualstudio。引數|啟動偵錯工具時傳遞給程式的引數。 若是 .NET Core 應用程式，這些引數通常是 NuGet 套件的額外搜尋路徑，後面接著專案輸出元件的路徑。|
-|visualstudio. killprogram。|此命令可用來停止在容器內執行的偵錯工具程式 (必要時) 。|
 |visualstudio.. 程式|啟動偵錯工具時啟動的程式。 若是 .NET Core 應用程式，這項設定通常是 **dotnet**。|
 |visualstudio. workingdirectory。|開始調試時當做起始目錄使用的目錄。 這項設定通常會 */app* 適用于 Linux 容器，或適用于 Windows 容器的 *C:\app* 。|
+|visualstudio. killprogram。|此命令可用來停止在容器內執行的偵錯工具程式 (必要時) 。|
 
-## <a name="customize-the-app-startup-process"></a>自訂應用程式啟動進程
+### <a name="customize-the-docker-build-process"></a>自訂 Docker 組建進程
 
-您可以使用設定來執行命令或自訂腳本，然後再啟動應用程式 `entrypoint` ，並使其相依于設定。 例如，如果您只需要執行，而不是在發行模式中，**只在「** 偵測」模式中設定憑證 `update-ca-certificates` ，您只能在 >docker-compose.yml 中新增下列程式碼 *yml*： 
+您可以使用屬性中的設定，宣告要在 Dockerfile 中建立的階段 `target` `build` 。 此覆寫只能用在 >docker-compose.yml. *yml* 或 >docker-compose.yml 中。 *yml* 
+
+```yml
+services:
+  webapplication1:
+    build:
+      target: customStage
+    labels:
+      ...
+```
+
+### <a name="customize-the-app-startup-process"></a>自訂應用程式啟動進程
+
+您可以使用設定來執行命令或自訂腳本，然後再啟動應用程式 `entrypoint` ，並使其相依于 `DockerDevelopmentMode` 。 例如，如果您只需要在執行的 **快速** 模式中設定憑證 `update-ca-certificates` ，而不是在 **一般** 模式下，則 **只能** 在 *>docker-compose.yml 和 yml* 中新增下列程式碼：
 
 ```yml
 services:
@@ -124,8 +144,6 @@ services:
     labels:
       ...
 ```
-
-如果您省略 *>docker-compose.yml. yml* 或 *>docker-compose.yml. yml* ，則 Visual Studio 根據預設設定產生一個。
 
 ## <a name="next-steps"></a>下一步
 

@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a026732f9b49107b8c113796251e1a2b916cf9a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 260872096f36f91a2618f636e297d3c48b3fe51b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906487"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824467"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>逐步解說：在 Visual c # 專案中呼叫 VBA 的程式碼
   本逐步解說示範如何從活頁簿中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Office Excel 文件層級自訂中的方法。 這個程序和三個基本步驟相關：將方法加入 `Sheet1` 主項目類別、將方法公開至活頁簿中的 VBA 程式碼，然後從活頁簿中的 VBA 程式碼呼叫此方法。
@@ -161,15 +161,15 @@ ms.locfileid: "99906487"
 
 2. 將下列程式碼新增至 `Sheet1` 類別。 `CreateVstoNamedRange` 方法會建立位於指定範圍的新 <xref:Microsoft.Office.Tools.Excel.NamedRange> 物件。 這個方法還會建立 <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected> 之 <xref:Microsoft.Office.Tools.Excel.NamedRange>事件的事件處理常式。 稍後在本逐步解說中，您會從本文件中的 VBA 程式碼呼叫 `CreateVstoNamedRange` 方法。
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet2":::
 
 3. 將下列方法新增至 `Sheet1` 類別。 這個方法會覆寫 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> 方法，以傳回 `Sheet1` 類別目前的執行個體。
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet3":::
 
 4. 將下列屬性套用於 `Sheet1` 類別宣告的第一行之前。 這些屬性可以讓 COM 看到類別，但是不會產生類別介面。
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#1](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet1":::
 
 ## <a name="extract-an-interface-for-the-sheet1-class"></a>將 Sheet1 類別的介面解壓縮
  您必須先建立用以定義此方法的公用介面，且必須將此介面公開至 COM，才能將 `CreateVstoNamedRange` 方法公開至 VBA 程式碼。
@@ -188,7 +188,7 @@ ms.locfileid: "99906487"
 
 5. 在 **ISheet1.cs** 檔案中，請以下列程式碼取代 `ISheet1` 介面宣告。 此程式碼會使 `ISheet1` 介面變成公用，並套用 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 屬性，而讓 COM 看得見介面。
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#4](../vsto/codesnippet/CSharp/CallingCodeFromVBA/ISheet1.cs#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/ISheet1.cs" id="Snippet4":::
 
 6. 建置專案。
 

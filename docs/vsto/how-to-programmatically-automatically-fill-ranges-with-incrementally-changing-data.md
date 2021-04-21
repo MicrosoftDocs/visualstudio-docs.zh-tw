@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 64af8ddfa0d3d086b661483e76cb9b2bd82ae5c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 615331181b9402e0d2062142ad266bdd41dca4eb
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892069"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824935"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>如何：以程式設計方式自動以累加方式變更資料填滿範圍
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>物件的方法可 <xref:Microsoft.Office.Interop.Excel.Range> 讓您自動以值填滿工作表中的範圍。 最常見的 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 方法是在範圍內以累加方式儲存或減少值。 您可以藉由提供列舉中的選擇性常數來指定行為 <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> 。
@@ -40,8 +40,8 @@ ms.locfileid: "99892069"
     > 您無法傳遞 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項來取代 <xref:Microsoft.Office.Interop.Excel.Range> 。 如需詳細資訊，請參閱 [主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
 
 ## <a name="example"></a>範例
- [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
- [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet49":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet49":::
 
 ## <a name="compile-the-code"></a>編譯程式碼
  您要填滿之範圍的第一個資料格必須包含初始值。

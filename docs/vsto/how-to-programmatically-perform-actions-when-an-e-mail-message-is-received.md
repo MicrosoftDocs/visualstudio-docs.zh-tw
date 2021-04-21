@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d0909b94f00b344383c2b042ec1e143f9294ee8d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 72cedcf25e54ca10c6a4c73c7b995c234f2cd137
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888702"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827236"
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>如何：以程式設計方式在收到電子郵件訊息時執行動作
   此範例會在使用者收到電子郵件訊息時執行自訂動作。
@@ -31,8 +31,8 @@ ms.locfileid: "99888702"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>範例
- [!code-vb[Trin_Outlook_RL_PerformActions#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_PerformActions/thisaddin.vb#1)]
- [!code-csharp[Trin_Outlook_RL_PerformActions#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_PerformActions/thisaddin.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_PerformActions/thisaddin.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_PerformActions/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>另請參閱
 - [如何：在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)

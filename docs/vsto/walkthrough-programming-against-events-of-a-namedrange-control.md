@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b3305fdc8f4fbadb3dcdd9775c3a6fe3dac3a1fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec1c670867fae277a3c3c8290cd34d0d4be7ddf3
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937390"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824961"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>逐步解說：針對 NamedRange 控制項的事件進行程式設計
   本逐步解說將示範如何 <xref:Microsoft.Office.Tools.Excel.NamedRange> 使用 Visual Studio 中的 Office 開發工具，將控制項加入至 Microsoft Office Excel 工作表，並針對其事件進行程式設計。
@@ -101,16 +101,16 @@ ms.locfileid: "99937390"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>根據 BeforeDoubleClick 事件將文字插入至 NamedRange2
 
-1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs** ]，然後選取 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **sheet1** ] 或 [ **sheet1** ]，然後選取 [ **View Code**]。
 
 2. 加入程式碼，讓 `namedRange1_BeforeDoubleClick` 事件處理常式看起來如下所示：
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet24":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet24":::
 
 3. 在 c # 中，您必須加入命名範圍的事件處理常式，如 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 下列事件所示。 如需建立事件處理常式的詳細資訊，請參閱 [如何：在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet25":::
 
 ## <a name="add-code-to-respond-to-the-change-event"></a>加入程式碼以回應變更事件
 
@@ -118,8 +118,8 @@ ms.locfileid: "99937390"
 
 1. 加入程式碼，讓 `NamedRange1_Change` 事件處理常式看起來如下所示：
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#26)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet26":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet26":::
 
     > [!NOTE]
     > 因為按兩下 Excel 範圍中的儲存格進入編輯模式， <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> 即使沒有對文字進行任何變更，當選取範圍移至範圍之外時，也會發生事件。
@@ -130,8 +130,8 @@ ms.locfileid: "99937390"
 
 1. 加入程式碼，讓 **NamedRange1_SelectionChange** 的事件處理常式看起來如下所示：
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#27)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet27":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet27":::
 
     > [!NOTE]
     > 因為按兩下 Excel 範圍中的資料格會使選取範圍移至範圍中，事件發生 <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> 之前就會發生事件 <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> 。

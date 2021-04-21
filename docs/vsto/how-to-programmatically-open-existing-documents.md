@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 81d134c88d93b3da3b0f0e6c3ded3cbe0d6d3f89
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0153413a357a122b4bb5a1f1cbfb44079f78e128
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951676"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827301"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>如何：以程式設計方式開啟現有檔
   <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法會開啟以完整路徑和檔案名指定的現有 Microsoft Office Word 檔。 這個方法會傳回 <xref:Microsoft.Office.Interop.Word.Document> 表示已開啟檔的。
@@ -31,15 +31,15 @@ ms.locfileid: "99951676"
 
 - 呼叫 <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 集合的方法 <xref:Microsoft.Office.Interop.Word.Documents> ，並提供檔的路徑。
 
-     [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]
-     [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet5":::
 
 ## <a name="to-open-a-document-as-read-only"></a>以唯讀方式開啟檔
 
 - 呼叫 <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 方法，提供檔的路徑，並在方法呼叫中將 *ReadOnly* 引數設定為 **True** 。
 
-     [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
-     [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet6":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet6":::
 
 ## <a name="compile-the-code"></a>編譯程式碼
  這段程式碼範例需要下列項目：

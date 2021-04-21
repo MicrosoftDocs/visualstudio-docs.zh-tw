@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4df11976832359363c639a49dd767e7e87b41a26
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9aab30b9c2fa363ef68d7d3f70ca05ca6c387a3c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894435"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828926"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何：使用主控制項的資料更新資料來源
   您可以將主控制項繫結至資料來源，並以在控制項中對資料所做的變更來更新資料來源。 這個程序包含兩個主要步驟：
@@ -49,8 +49,8 @@ ms.locfileid: "99894435"
 
      下列範例會將對 Excel 工作表上 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項所做的變更儲存至資料來源。 這個範例假設您有名為 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 `namedRange1` 控制項，而且控制項的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 屬性已繫結至資料來源中的欄位。
 
-     [!code-csharp[Trin_VstcoreDataExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#1)]
-     [!code-vb[Trin_VstcoreDataExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet1":::
 
 ### <a name="automatically-update-the-in-memory-data-source"></a>自動更新記憶體內部資料來源
  您也可以設定控制項，讓它自動更新記憶體內部資料來源。 在文件層級專案中，您可以使用程式碼或設計工具來執行這項作業。 在 VSTO 增益集專案中，您必須使用程式碼。
@@ -68,8 +68,8 @@ ms.locfileid: "99894435"
 
      下列範例會將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項設定為只要控制項中的值一變更就自動更新資料來源。 這個範例假設您有名為 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 `namedRange1` 控制項，而且控制項的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 屬性已繫結至資料來源中的欄位。
 
-     [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
-     [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet19":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet19":::
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>使用設計工具將控制項設定為自動更新記憶體內部資料來源
 
@@ -103,8 +103,8 @@ ms.locfileid: "99894435"
 
      下列程式碼範例假設您的專案包含名為 <xref:System.Windows.Forms.BindingSource> 的 `customersBindingSource`。
 
-     [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
-     [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet20":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet20":::
 
 2. `Update`在您的專案中呼叫所產生之 TableAdapter 的方法。
 
@@ -112,8 +112,8 @@ ms.locfileid: "99894435"
 
      下列程式碼範例假設您已連接到 Northwind 資料庫中的 Customers 資料表，而且您的專案包含名為的 TableAdapter `customersTableAdapter` 和名為的具類型資料集 `northwindDataSet` 。
 
-     [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
-     [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet21":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet21":::
 
 ## <a name="see-also"></a>另請參閱
 - [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)

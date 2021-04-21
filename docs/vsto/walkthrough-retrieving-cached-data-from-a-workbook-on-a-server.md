@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 818c7c9aa5edeae32859d0b5af6449b513df1c85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e11099b0ea37856919affb927c3f118572d339af
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937436"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826872"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>逐步解說：從伺服器上的活頁簿取出快取的資料
   本逐步解說示範如何從 Microsoft Office Excel 活頁簿中快取的資料集取出資料，而不需要使用類別啟動 Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 。
@@ -82,9 +82,9 @@ ms.locfileid: "99937436"
 
 8. 按一下 [確定]  。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 **AdventureWorksDataSet** 專案加入 **方案總管** ，並開啟 *Class1.cs* 或 *Class1* 程式碼檔案。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 **AdventureWorksDataSet** 專案加入 **方案總管** ，並開啟 *class1* 或 *class1* 程式碼檔案。
 
-9. 在 **方案總管** 中，以滑鼠右鍵按一下 [ *Class1.cs* ] 或 [ *Class1*]，然後按一下 [ **刪除**]。 在此逐步解說中不需要此檔案。
+9. 在 **方案總管** 中，以滑鼠右鍵按一下 [ *class1* ] 或 [ *class1*]，然後按一下 [ **刪除**]。 在此逐步解說中不需要此檔案。
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>在類別庫專案中定義資料集
  定義具類型的資料集，其中包含 SQL Server 2005 之 AdventureWorksLT 資料庫的資料。 稍後在此逐步解說中，您將從 Excel 活頁簿專案和主控台應用程式專案參考此資料集。
@@ -149,7 +149,7 @@ ms.locfileid: "99937436"
 ## <a name="add-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>將資料集新增至 Excel 活頁簿專案中的資料來源
  在 Excel 活頁簿中顯示資料集之前，您必須先將資料集加入至 Excel 活頁簿專案中的資料來源。
 
-1. 在 **方案總管** 中，按兩下 [ **AdventureWorksReport** ] 專案底下的 [ *Sheet1.cs* ] 或 [ *Sheet1]。*
+1. 在 **方案總管** 中，按兩下 [ **AdventureWorksReport** ] 專案底下的 [ *sheet1* ] 或 [ *sheet1* ]。
 
      活頁簿會在設計工具中開啟。
 
@@ -192,12 +192,12 @@ ms.locfileid: "99937436"
 ## <a name="initialize-the-dataset-in-the-workbook"></a>初始化活頁簿中的資料集
  使用主控台應用程式從快取的資料集取出資料之前，您必須先將資料填入快取的資料集。
 
-1. 在 **方案總管** 中，以滑鼠右鍵按一下 *Sheet1.cs* 或 *Sheet1* 檔案，然後按一下 [ **視圖程式碼**]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 *sheet1* 或 *sheet1* 檔案，然後按一下 [ **視圖程式碼**]。
 
 2. 以下列程式碼取代 `Sheet1_Startup` 事件處理常式。 此程式碼會使用 `ProductTableAdapter` **AdventureWorksDataSet** 專案中定義之類別的實例，以資料填入快取的資料集（如果它目前是空的）。
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs#8)]
-     [!code-vb[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb#8)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs" id="Snippet8":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb" id="Snippet8":::
 
 ## <a name="checkpoint"></a>Checkpoint
  建立並執行 Excel 活頁簿專案，以確保它會在沒有錯誤的情況下進行編譯和執行。 這項作業也會填滿快取的資料集，並將資料儲存在活頁簿中。
@@ -229,7 +229,7 @@ ms.locfileid: "99937436"
 
 5. 按一下 [確定]  。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 **DataReader** 專案加入 **方案總管** ，並開啟 *Program.cs* 或 *Module1* 程式碼檔案。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 **DataReader** 專案加入 **方案總管** ，並開啟 *程式 .cs* 或 *Module1* 程式碼檔案。
 
 ## <a name="retrieve-data-from-the-cached-dataset-by-using-the-console-application"></a>使用主控台應用程式從快取的資料集取出資料
  使用 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 主控台應用程式中的類別，將資料讀取至本機 `AdventureWorksLTDataSet` 物件。 為了確認本機資料集已使用快取資料集的資料進行初始化，應用程式會顯示本機資料集中的資料列數目。
@@ -246,12 +246,12 @@ ms.locfileid: "99937436"
 
 5. 在 [ **專案** ] 索引標籤上，選取 [ **AdventureWorksDataSet**]，然後按一下 **[確定]**。
 
-6. 在程式碼編輯器中開啟 *Program.cs* 或 *Module1 檔。*
+6. 在程式碼編輯器中開啟 *程式 .cs* 或 *Module1* 檔案。
 
 7. **使用** c # 的 (新增下列程式 ) ，或將 Visual Basic) 語句的 (匯 **入** 至程式碼檔案頂端。
 
-    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet1":::
 
 8. 將下列程式碼新增至 `Main` 方法。 此程式碼會宣告下列物件：
 
@@ -264,8 +264,8 @@ ms.locfileid: "99937436"
      > [!NOTE]
      > 下列程式碼假設使用 *.xlsx* 副檔名來儲存活頁簿。 如果您專案中的活頁簿具有不同的延伸模組，請視需要修改路徑。
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#10)]
-     [!code-vb[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet10":::
 
 9. 將下列程式碼新增至 `Main` 方法，在您于上一個步驟中新增的程式碼之後。 此程式碼會執行下列工作：
 
@@ -275,8 +275,8 @@ ms.locfileid: "99937436"
 
    - 它會顯示本機資料集中的資料列數目，以確認它有資料。
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#11)]
-     [!code-vb[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet11":::
 
 10. 在 [ **組建** ] 功能表上，按一下 [ **建立 DataReader**]。
 

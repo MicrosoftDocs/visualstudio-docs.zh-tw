@@ -28,12 +28,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ed33208d58e380b688ce2553b71033de0b7d07d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a902e85f8c53aa7a3d1ebe3b6480a7c68fa60601
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954289"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827899"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>如何：將內容控制項新增至 Word 檔
   在文件層級的 Word 專案中，您可以於設計階段或執行階段，將內容控制項加入專案中的文件。 在 Word VSTO 增益集專案中，您可以在執行階段將內容控制項加入任何開啟的文件。
@@ -116,8 +116,8 @@ ms.locfileid: "99954289"
 
      下列程式碼範例會使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法，將新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 加入文件的開頭。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `AddRichTextControlAtSelection` 事件處理常式呼叫 `ThisDocument_Startup` 方法。
 
-     [!code-csharp[Trin_ContentControlReference#700](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#700)]
-     [!code-vb[Trin_ContentControlReference#700](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#700)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs" id="Snippet700":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb" id="Snippet700":::
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>若要在指定的範圍加入內容控制項
 
@@ -125,8 +125,8 @@ ms.locfileid: "99954289"
 
      下列程式碼範例會使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法，將新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 加入文件的開頭。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `AddRichTextControlAtRange` 事件處理常式呼叫 `ThisDocument_Startup` 方法。
 
-     [!code-csharp[Trin_ContentControlReference#701](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#701)]
-     [!code-vb[Trin_ContentControlReference#701](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#701)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs" id="Snippet701":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb" id="Snippet701":::
 
 ### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>若要加入以原生內容控制項為基礎的內容控制項
 
@@ -134,8 +134,8 @@ ms.locfileid: "99954289"
 
      下列程式碼範例會針對文件中的每個原生 Rich Text 控制項，使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法建立新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `CreateRichTextControlsFromNativeControls` 事件處理常式呼叫 `ThisDocument_Startup` 方法。
 
-     [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
-     [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs" id="Snippet702":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb" id="Snippet702":::
 
 ## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> 在 VSTO 增益集專案中的執行時間加入內容控制項
  您可以使用 VSTO 增益集，透過程式設計的方式，在執行階段將內容控制項加入至任何開啟的文件。 若要這麼做，請產生以開啟文件為基礎的 <xref:Microsoft.Office.Tools.Word.Document> 主項目，然後使用這個主項目之 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 屬性的方法。 每個方法都有三個多載，可供您以下列方式加入內容控制項：
@@ -159,8 +159,8 @@ ms.locfileid: "99954289"
 
      下列程式碼範例會使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法，將新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 加入使用中文件的開頭。 若要執行這個程式碼，請將程式碼加入專案的 `ThisAddIn` 類別中，並從 `AddRichTextControlAtSelection` 事件處理常式呼叫 `ThisAddIn_Startup` 方法。
 
-     [!code-vb[Trin_WordAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_WordAddInDynamicControls#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet1":::
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>若要在指定的範圍加入內容控制項
 
@@ -168,8 +168,8 @@ ms.locfileid: "99954289"
 
      下列程式碼範例會使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法，將新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 加入使用中文件的開頭。 若要執行這個程式碼，請將程式碼加入專案的 `ThisAddIn` 類別中，並從 `AddRichTextControlAtRange` 事件處理常式呼叫 `ThisAddIn_Startup` 方法。
 
-     [!code-vb[Trin_WordAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_WordAddInDynamicControls#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet2":::
 
 #### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>若要加入以原生內容控制項為基礎的內容控制項
 
@@ -177,12 +177,12 @@ ms.locfileid: "99954289"
 
      下列範例程式碼會使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法，在文件開啟之後，對文件中每一個原生 Rich Text 控制項建立新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。 若要使用這個程式碼，請將程式碼加入專案中的 `ThisAddIn` 類別。
 
-     [!code-vb[Trin_WordAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_WordAddInDynamicControls#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet3":::
 
      若為 C#，您還必須將 `Application_DocumentOpen` 事件處理常式附加至 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> 事件。
 
-     [!code-csharp[Trin_WordAddInDynamicControls#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet6":::
 
 ## <a name="see-also"></a>另請參閱
 - [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)

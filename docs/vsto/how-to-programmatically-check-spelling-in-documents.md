@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9afbb96cce5848894c83c8780e5855eadc0e59d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d7e04c542f91b9d7675eb81e7a3178e3427c52a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836133"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828848"
 ---
 # <a name="how-to-programmatically-check-spelling-in-documents"></a>如何：以程式設計方式檢查檔中的拼寫
   若要檢查檔中的拼寫，請使用 <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> 方法。 這個方法會傳回布林值，指出提供的參數是否拼寫正確。
@@ -31,8 +31,8 @@ ms.locfileid: "99836133"
 
 1. 呼叫 <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> 方法，並將某個範圍的文字傳遞給它，以檢查是否有拼寫錯誤。 若要使用這個程式碼範例，請從專案的 `ThisDocument` 或 `ThisAddIn` 類別中執行它。
 
-     [!code-vb[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#113)]
-     [!code-csharp[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#113)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet113":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet113":::
 
 ## <a name="see-also"></a>另請參閱
 - [如何：以程式設計方式定義和選取檔中的範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)

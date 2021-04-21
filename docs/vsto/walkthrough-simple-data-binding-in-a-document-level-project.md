@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 31084703a581999a1f25bfc82db6c36d9e2cbf6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 36d4da65a6cd39c53f1f9d8edf4f9d9b1fe46284
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937403"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826846"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說：檔層級專案中的簡單資料系結
   本逐步解說示範檔層級專案中資料系結的基本概念。 SQL Server 資料庫中的單一資料欄位會系結至 Microsoft Office Excel 中的已命名範圍。 本逐步解說也會示範如何加入控制項，讓您可以在資料表中的所有記錄之間進行滾動。
@@ -128,16 +128,16 @@ ms.locfileid: "99937403"
 
 ### <a name="to-initialize-the-controls"></a>若要初始化控制項
 
-1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **Sheet1** ] 或 [ **Sheet1.cs**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **sheet1** ] 或 [ **sheet1**]，然後按一下快捷方式功能表上的 [ **視圖程式碼** ]。
 
 2. 將下列程式碼加入至 `Sheet1_Startup` 方法，以設定每個按鈕的文字。
 
-    [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]
-    [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet2":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet2":::
 
 3. 針對 c #，請將按鈕 click 事件的事件處理常式加入至 `Sheet1_Startup` 方法。
 
-    [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet3":::
 
    現在，新增程式碼來處理 <xref:System.Windows.Forms.Control.Click> 按鈕的事件，讓使用者可以流覽記錄。
 
@@ -148,29 +148,29 @@ ms.locfileid: "99937403"
 
 1. 新增按鈕事件的事件處理常式 <xref:System.Windows.Forms.Control.Click> `Button1` ，並加入下列程式碼以移至第一筆記錄：
 
-     [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]
-     [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet4":::
 
 ### <a name="to-move-to-the-previous-record"></a>移至上一個記錄
 
 1. 新增按鈕事件的事件處理常式 <xref:System.Windows.Forms.Control.Click> `Button2` ，並加入下列程式碼，將位置向後移動一個：
 
-     [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]
-     [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet5":::
 
 ### <a name="to-move-to-the-next-record"></a>移到下一筆記錄
 
 1. 新增按鈕事件的事件處理常式 <xref:System.Windows.Forms.Control.Click> `Button3` ，並加入下列程式碼以將位置前移一：
 
-     [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]
-     [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet6":::
 
 ### <a name="to-move-to-the-last-record"></a>移至最後一筆記錄
 
 1. 新增按鈕事件的事件處理常式 <xref:System.Windows.Forms.Control.Click> `Button4` ，並加入下列程式碼以移至最後一筆記錄：
 
-     [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
-     [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet7":::
 
 ## <a name="test-the-application"></a>測試應用程式
  現在您可以測試您的活頁簿，以確定您可以流覽資料庫中的記錄。

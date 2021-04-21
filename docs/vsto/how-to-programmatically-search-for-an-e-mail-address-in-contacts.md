@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 43baafee82cf38dfd346ebe50e9b348857a3fdc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd977840cd75081d87011540ca00675fb84cee36
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920462"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828939"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>如何：以程式設計方式在連絡人中搜尋電子郵件地址
   本範例會在 [連絡人] 資料夾中，搜尋其電子郵件地址中有網域名稱 **example.com** 的連絡人。
@@ -29,7 +29,7 @@ ms.locfileid: "99920462"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>範例
- [!code-csharp[Trin_OL_SearchEmail#1](../vsto/codesnippet/CSharp/Trin_OL_SearchEmail/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_SearchEmail/thisaddin.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要：

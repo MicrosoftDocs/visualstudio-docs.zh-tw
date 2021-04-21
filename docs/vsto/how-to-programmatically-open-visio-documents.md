@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cb24851562beec0b40a8e66a38db202745f4771e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f96efd41eb91551fe3cf7c03b55a44b7a9e1bf1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903666"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824740"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>如何：以程式設計方式開啟 Visio 檔
   開啟現有 Microsoft Office Visio 檔的方法有兩種：開啟和 OpenEx。 OpenEx 方法與 Open 方法相同，不同之處在于它會提供引數，讓呼叫端指定檔的開啟方式。
@@ -33,8 +33,8 @@ ms.locfileid: "99903666"
 
 - 呼叫 `Microsoft.Office.Interop.Visio.Documents.Open` 方法並提供 Visio 文件的完整路徑。
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#5)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet5":::
 
 ## <a name="open-a-visio-document-with-specified-arguments"></a>使用指定的引數開啟 Visio 檔
 
@@ -42,8 +42,8 @@ ms.locfileid: "99903666"
 
 - 呼叫 `Microsoft.Office.Interop.Visio.Documents.OpenEx` 方法，提供 Visio 文件的完整路徑，以及包含要使用的引數，在本例中為「停駐」和「唯讀」。
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#6)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet6":::
 
 ## <a name="compile-the-code"></a>編譯程式碼
  這段程式碼範例需要下列項目：

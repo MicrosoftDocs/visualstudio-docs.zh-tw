@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c05f8bc0174807a5336a9d9f79ac3dc81e87476e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c947395b67fca15e06e1164dc25ab2dc8fa3209d
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953873"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823935"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>如何：以程式設計方式依名稱取出資料夾
   這個範例會取得名為自訂資料夾的參考，然後顯示資料夾的內容。
@@ -27,7 +27,7 @@ ms.locfileid: "99953873"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>範例
- [!code-csharp[Trin_OL_GetFolderName#1](../vsto/codesnippet/CSharp/Trin_OL_GetFolderName/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_GetFolderName/thisaddin.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要：

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a5aeddeecf7fb76000817f2c57b90e30465fa4ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b12b7e94109391928ad7c83387917e5934ae1c7
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964026"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825312"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>如何：以程式設計方式建立新的 Visio 檔
   當您建立新的 Microsoft Office Visio 繪圖文件時，您會將它加入已開啟 Visio 文件的 `Microsoft.Office.Interop.Visio.Documents` 集合。 因此，`Microsoft.Office.Interop.Visio.Documents.Add` 方法會建立新的 Visio 繪圖文件。 如需詳細資訊，請參閱 Microsoft.Office.Interop.Visio.Documents.Add [myTemplate.vst](/office/vba/api/Visio.Documents.Add) 方法的 VBA 參考文件。
@@ -31,8 +31,8 @@ ms.locfileid: "99964026"
 
 - 使用 `Microsoft.Office.Interop.Visio.Documents.Add` 方法來建立不是以範本為基礎的空白新文件。
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#1)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet1":::
 
 ## <a name="create-documents-copied-from-existing-documents"></a>建立從現有檔案複製的檔
  `Microsoft.Office.Interop.Visio.Documents.Add` 方法可建立現有 Visio 文件複本的新文件。 您必須提供圖表的檔案名稱和完整路徑。
@@ -41,8 +41,8 @@ ms.locfileid: "99964026"
 
 - 呼叫 `Microsoft.Office.Interop.Visio.Documents.Add` 方法並指定 Visio 圖表的路徑。
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#2)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]
+:::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet2":::
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet2":::
 
 ## <a name="create-stencils-copied-from-existing-stencils"></a>建立從現有的模版複製的樣板
  Microsoft.Office.Interop.Visio.Documents.Add [myTemplate.vst](/office/vba/api/Visio.Documents.Add) 方法可建立現有 Visio 樣板複本的新樣板。 您必須提供樣板的檔案名稱和完整路徑。
@@ -51,8 +51,8 @@ ms.locfileid: "99964026"
 
 - 呼叫 `Microsoft.Office.Interop.Visio.Documents.Add` 方法並指定樣板的路徑。
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#3)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet3":::
 
 ## <a name="create-documents-based-on-existing-templates"></a>根據現有範本建立檔
  `Microsoft.Office.Interop.Visio.Documents.Add`方法可以建立新 *檔*， (以現有的 Visio (範本為基礎的 *.vsd* 檔案) ) 。 這個方法會複製屬於範本工作區一部分的樣板、樣式和設定。 您必須提供範本的檔案名稱和完整路徑。
@@ -61,8 +61,8 @@ ms.locfileid: "99964026"
 
 - 呼叫 `Microsoft.Office.Interop.Visio.Documents.Add` 方法並指定範本的路徑。
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#4)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet4":::
 
 ## <a name="compile-the-code"></a>編譯程式碼
  這段程式碼範例需要下列項目：
