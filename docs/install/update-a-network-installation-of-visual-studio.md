@@ -1,7 +1,7 @@
 ---
 title: 更新網路型安裝
 description: 了解如何使用 --layout 命令來更新網路型 Visual Studio 安裝
-ms.date: 04/06/2021
+ms.date: 04/16/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0f6e13333b6cab86f6485ddc18516039c712455a
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 0400f4be06afab2326ac738e1ac15f9d93a6ecee
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295945"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800783"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
 
@@ -29,9 +29,9 @@ ms.locfileid: "107295945"
 ## <a name="how-to-update-a-network-layout"></a>如何更新網路配置
 
 > [!IMPORTANT]
-> 這些指示假設您先前已建立網路安裝版面配置。 如需如何進行這項操作的詳細資訊，請參閱 [建立 Visual Studio 的網路安裝](create-a-network-installation-of-visual-studio.md) 頁面。
+> 這些指示假設您先前已建立網路安裝版面配置，並對用戶端應該如何取得更新做出一些決定。 如需如何進行這項操作的詳細資訊，請參閱 [建立 Visual Studio 的網路安裝](create-a-network-installation-of-visual-studio.md) ，以及 [控制 Visual Studio 部署的更新](../install/controlling-updates-to-visual-studio-deployments.md) 頁面。
 
-若要重新整理您的網路安裝共用，以便其包含最新的更新，請執行 `--layout` 命令，以累加方式下載更新的套件。
+若要重新整理您的網路安裝共用，讓它包含最新的更新，請使用參數執行啟動載入器， `--layout` 以下載更新的套件。
 
 如果您在 [第一次建立網路](create-a-network-installation-of-visual-studio.md)配置時已選取部分版面配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項
 

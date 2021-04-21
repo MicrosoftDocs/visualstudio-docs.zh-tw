@@ -5,14 +5,14 @@ ms.topic: include
 ms.assetid: 9109bf1e-f725-439d-a870-13741e0dbc90
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 04/02/2021
+ms.date: 04/20/2021
 ms.faqid: q3_2
-ms.openlocfilehash: b2f8fbed33908c16252d958d627e4d19f07c1c13
-ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
+ms.openlocfilehash: 8938ce58100630a13205b54e98515e41440b78ce
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "106283203"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800854"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>我要如何使用自己的權益？
 

@@ -6,13 +6,13 @@ ms.topic: include
 ms.assetid: 5b27454c-f036-4f4d-9d67-54d1fc775f72
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/12/2021
-ms.openlocfilehash: bb436cfdff0f6783d041858430b4fd9864ceb569
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.date: 04/20/2021
+ms.openlocfilehash: cdacf4bb150d4fb836b4c7088f80f63e738aea15
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104493"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800897"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>如何購買 Visual Studio 訂閱？
 
@@ -27,6 +27,8 @@ ms.locfileid: "99104493"
 - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
 
 每個訂用帳戶都提供進行初始購買或更新現有訂用帳戶的選項。 續約價格提供極優惠的折扣，但僅限於現有的訂閱。 若要享有折扣的續約價格，必須在訂閱到期前續約。 
+
+如果您想要在沒有訂用帳戶或訂用帳戶所包含的任何權益的情況下，進行一次性的 Visual Studio 購買，請造訪 [Visual Studio Professional 2019](https://www.microsoft.com/p/visual-studio-professional-2019/dg7gmgf0f6q1?cid=msft_web_collection&activetab=pivot%3aoverviewtab)的 Microsoft Store。 
 
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace 
 您也可以選擇月租方案來租用 Visual Studio 及 Azure DevOps。此方式不需要簽訂長期合約。 計費則是透過 Microsoft Azure 訂用帳戶處理。 若還沒有 Azure 訂閱，您可以在第一次購買時免費設定。  

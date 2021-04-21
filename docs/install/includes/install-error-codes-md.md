@@ -2,20 +2,22 @@
 author: j-martens
 ms.author: jmartens
 manager: jmartens
-ms.date: 04/25/2019
+ms.date: 04/16/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: aba4605626585ff8f789baf7862ffdd54f49faa0
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 78a3a231a8a2ce50e574ff0a2e86b6c8ce79f42f
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296974"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800823"
 ---
 | **值** | **結果** |
 | --------- | ---------- |
 | 0 | 作業成功完成 |
+| 1001 | Visual Studio 安裝程式的進程正在執行 |
+| 1003 | Visual Studio 正在使用中 |
 | 1602 | 作業已取消 |
 | 1641 | 作業已成功完成，並已初始重新開機 |
 | 3010 | 作業成功完成，但安裝需要重新開機才能使用 |

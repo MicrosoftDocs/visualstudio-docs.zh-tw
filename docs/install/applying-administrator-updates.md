@@ -2,31 +2,31 @@
 title: 使用 Microsoft Endpoint Configuration Manager 將系統管理員更新套用至 Visual Studio
 titleSuffix: ''
 description: 瞭解如何將系統管理員更新套用至 Visual Studio。
-ms.date: 04/07/2021
+ms.date: 04/16/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4df931ee5eb5eaefdf6d918ff05df65b799bef7e
-ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
+ms.openlocfilehash: d7d2950b9495846693d5edee7790b8611cbca170
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107031602"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800793"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>套用使用 Microsoft Endpoint Configuration Manager 的系統管理員更新
 
-本檔說明 Visual Studio 系統管理員更新的不同類型和特性。 您可以在下面找到有關如何及何時將其散發至整個組織、哪些設定選項可供使用，以及如何查看報告和疑難排解的資訊。 如需使用系統管理員更新之必要條件的詳細資訊，請參閱 [啟用系統管理員更新](../install/enabling-administrator-updates.md)。
+本檔說明 Visual Studio 系統管理員更新的不同類型和特性。 您可以在下面找到有關如何及何時將其散發至整個組織、哪些設定選項可供使用，以及如何查看報告和疑難排解的資訊。 如需使用系統管理員更新之必要條件的詳細資訊，請參閱 [啟用系統管理員更新](../install/enabling-administrator-updates.md)。 系統管理員更新會假設電腦上已安裝 Visual Studio。 套用系統管理員更新不會起始全新安裝。
 
 ## <a name="understanding-visual-studio-administrator-updates"></a>瞭解 Visual Studio 系統管理員更新 
 
-發佈至 Microsoft Update 供 Microsoft Catalog 和 WSUS 取用的 Visual Studio 系統管理員更新套件，包含設定管理員必須能夠下載並將更新散發至用戶端電腦 Visual Studio 的資訊。 它也包含 IT 系統管理員所需的資訊，以決定要在整個組織中散發哪些更新，並有助於維護網路設定。 Visual Studio 系統管理員更新套件未包含足夠的資訊來進行產品的全新安裝，也不包含任何發佈至內容傳遞網路的實際產品二進位檔。 Visual Studio 系統管理員更新是累積的，就像定期 Visual Studio 更新一樣。 您可以假設有更高產品版本號碼和更新版本的任何 Visual Studio 更新都是舊版較低版本的超集合。 
+發佈至 Microsoft Update 供 Microsoft Catalog 和 WSUS 取用的 Visual Studio 系統管理員更新套件，包含設定管理員必須能夠下載並散發 Visual Studio 更新至用戶端電腦的資訊。 它也包含 IT 系統管理員所需的資訊，以決定要在整個組織中散發哪些更新。 它也可以用來協助維護網路版面配置。 Visual Studio 系統管理員更新套件未包含足夠的資訊來進行產品的全新安裝，也不包含任何發佈至內容傳遞網路的實際產品二進位檔。 Visual Studio 系統管理員更新是累積的，就像定期 Visual Studio 更新一樣。 您可以假設有更高產品版本號碼和更新版本的任何 Visual Studio 更新都是舊版較低版本的超集合。 
 
 Visual Studio 系統管理員更新適用于受支援的 Visual Studio 服務版本。 如需特定時間範圍內仍支援哪些 Visual Studio 服務基準的詳細資訊，請參閱 [Visual Studio 產品生命週期和服務](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)。 所有支援的 Visual Studio 服務基準都會保持安全。  
 
