@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 43104ad8b26045056ca8d8d653fcb9625734f7eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd3509ab674faa220ed7bbea15a9762f52b1a525
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899426"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828276"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>逐步解說：建立 Word 的第一個 VSTO 增益集
   本入門逐步解說將示範如何建立 Microsoft Office Word 的 VSTO 增益集。 不論開啟哪一份文件，您在這類方案中建立的功能都可供應用程式本身使用。
@@ -81,15 +81,15 @@ ms.locfileid: "99899426"
 
     當使用者儲存文件時，事件處理常式會將新文字加入此文件開頭。
 
-    [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
-    [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb" id="Snippet1":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs" id="Snippet1":::
 
    > [!NOTE]
    > 此程式碼會使用索引值 1 來存取 <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> 集合中的第一個段落。 雖然 Visual Basic 和 Visual C# 都是使用以 0 為起始的陣列，但是在 Word 物件模型中，大多數集合的陣列界限下限都是 1。 如需詳細資訊，請參閱 [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)。
 
 2. 如果使用的是 C#，請將下列必要的程式碼加入 `ThisAddIn_Startup` 事件處理常式中。 這段程式碼是用來連接 `Application_DocumentBeforeSave` 事件處理常式和 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件。
 
-    [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs" id="Snippet2":::
 
    若要在儲存文件時修改文件，前面的程式碼範例可以使用下列物件：
 

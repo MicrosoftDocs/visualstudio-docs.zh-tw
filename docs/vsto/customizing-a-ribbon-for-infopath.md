@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0bc66a9266baf865e2efb87497361bc0c525e55a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5af7c4ed2f396c5a806cc42c49c8f4209b6b5c2c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99849888"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828133"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>自訂 InfoPath 的功能區
   當您在 Microsoft Office InfoPath 自訂功能區時，您必須考慮自訂功能區在應用程式中出現的位置。 [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 可以在下列三種 InfoPath 應用程式視窗中顯示功能區：
@@ -60,8 +60,8 @@ ms.locfileid: "99849888"
 
  下列程式碼範例示範如何只在會顯示設計模式中表單範本的視窗中顯示自訂功能區。 要顯示的功能區會在 `GetResourceText()` 方法中指定，這是在功能區類別中產生的。 如需功能區類別的詳細資訊，請參閱 [Ribbon XML](../vsto/ribbon-xml.md)。
 
- [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
- [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb" id="Snippet1":::
 
 ## <a name="see-also"></a>另請參閱
 - [在執行時間存取功能區](../vsto/accessing-the-ribbon-at-run-time.md)

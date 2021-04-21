@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c12e92ef77130ca2d9b55ccec737f37c73396c2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: df28de0f8a9497fabecff816c26db7593bf349bd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99849875"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828055"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>自訂 Outlook 的功能區
   當您在 Microsoft Office Outlook 自訂功能區時，您必須考慮自訂功能區在應用程式中出現的位置。 Outlook 會將功能區顯示在主應用程式使用者介面 (UI) 中，以及在使用者執行建立電子郵件訊息等特定工作時開啟的視窗中。 這些應用程式視窗名為偵測器。
@@ -47,8 +47,8 @@ ms.locfileid: "99849875"
 
  下列程式碼範例示範如何只在 `Microsoft.Outlook.Mail.Compose` 偵測器中顯示自訂功能區。 這是在使用者建立新的電子郵件訊息時開啟的偵測器。 要顯示的功能區會在方法中指定 `GetResourceText()` ，該方法會在 **功能區** 類別中產生。 如需 **功能區** 類別的詳細資訊，請參閱 [功能區 XML](../vsto/ribbon-xml.md)。
 
- [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)]
- [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb" id="Snippet1":::
 
 ## <a name="see-also"></a>另請參閱
 - [在執行時間存取功能區](../vsto/accessing-the-ribbon-at-run-time.md)

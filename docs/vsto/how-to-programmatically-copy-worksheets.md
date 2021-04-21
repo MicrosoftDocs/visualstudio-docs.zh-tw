@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 67bd9257e96b9c7e22dea2ca6af005ccc74637dc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a5b24d7896ec1f81c7e8d5d4c41a5e6af807b13
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964208"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828575"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>如何：以程式設計方式複製工作表
   您可以建立一份工作表，並將其插入活頁簿中現有工作表的前面或後面。 如不指定工作表的插入位置，Excel 會建立新的活頁簿以收納新的工作表。
@@ -34,15 +34,15 @@ ms.locfileid: "99964208"
 
 1. 使用 <xref:Microsoft.Office.Interop.Excel.Worksheets.Copy%2A> 方法複製目前活頁簿中的第一張工作表，並將複本放在第三張工作表之後。
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#16](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#16)]
-     [!code-vb[Trin_VstcoreExcelAutomation#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#16)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet16":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet16":::
 
 ## <a name="to-add-a-copied-worksheet-to-a-workbook-in-a-vsto-add-in"></a>將複製的工作表加入 VSTO 增益集活頁簿
 
 1. 使用 <xref:Microsoft.Office.Interop.Excel.Worksheets.Copy%2A> 方法複製目前活頁簿中的第一張工作表，並將複本放在第三張工作表之後。
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#12](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#12)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#12](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#12)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet12":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet12":::
 
 ## <a name="see-also"></a>另請參閱
 - [使用工作表](../vsto/working-with-worksheets.md)

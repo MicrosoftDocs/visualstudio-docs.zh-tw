@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2f5c244d78ab5a6b5d98550b11c280159f285db7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 276dc7b8094c495a1b3896a4a93a068b1005c8d5
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913454"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828445"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>如何：將命令新增至快捷方式功能表
   本主題示範如何使用 VSTO 增益集，將命令加入 Office 應用程式中的快捷方式功能表。
@@ -39,8 +39,8 @@ ms.locfileid: "99913454"
 
 4. 將下列程式碼加入 **ThisAddin** 類別中。 此程式碼會覆寫 `CreateRibbonExtensibilityObject` 方法，並將功能區 XML 類別傳回 Office 應用程式。
 
-     [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
-     [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb" id="Snippet1":::
 
 5. 在方案總管 中選取功能區 XML 檔案。 依預設，功能區 XML 檔案的名稱為 *Ribbon1.xml*。
 
@@ -78,8 +78,8 @@ ms.locfileid: "99913454"
 
      下列回呼方法會處理 [My Button]  按鈕。 此程式碼會在使用中文件的目前游標位置加入字串。
 
-     [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
-     [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs" id="Snippet2":::
 
 ## <a name="see-also"></a>另請參閱
 - [Office UI 自訂](../vsto/office-ui-customization.md)

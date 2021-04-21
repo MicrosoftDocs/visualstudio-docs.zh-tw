@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2456f92e6bd0b6e1a6b8bf6389718ec6a41342dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf5d3bcb09ce1db013b89e60b22308f1904c4796
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937429"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827717"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>逐步解說：在伺服器的活頁簿中插入資料
   本逐步解說示範如何將資料插入 Microsoft Office Excel 活頁簿中快取的資料集，而不需要使用類別啟動 Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 。
@@ -81,9 +81,9 @@ ms.locfileid: "99937429"
 
 8. 按一下 [確定]  。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 **AdventureWorksDataSet** 專案加入 **方案總管** ，並開啟 **Class1.cs** 或 **Class1** 程式碼檔案。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 **AdventureWorksDataSet** 專案加入 **方案總管** ，並開啟 **class1** 或 **class1** 程式碼檔案。
 
-9. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **Class1.cs** ] 或 [ **Class1**]，然後按一下 [ **刪除**]。 在此逐步解說中不需要此檔案。
+9. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **class1** ] 或 [ **class1**]，然後按一下 [ **刪除**]。 在此逐步解說中不需要此檔案。
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>在類別庫專案中定義資料集
  定義具類型的資料集，其中包含 SQL Server 2005 之 AdventureWorksLT 資料庫的資料。 稍後在此逐步解說中，您將從 Excel 活頁簿專案和主控台應用程式專案參考此資料集。
@@ -150,7 +150,7 @@ ms.locfileid: "99937429"
 
 ### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>若要將資料集加入至 Excel 活頁簿專案中的資料來源
 
-1. 在 **方案總管** 中，按兩下 [ **AdventureWorksReport** ] 專案底下的 [ **Sheet1.cs** ] 或 [ **Sheet1]。**
+1. 在 **方案總管** 中，按兩下 [ **AdventureWorksReport** ] 專案底下的 [ **sheet1** ] 或 [ **sheet1** ]。
 
      活頁簿會在設計工具中開啟。
 
@@ -220,7 +220,7 @@ ms.locfileid: "99937429"
 
 5. 按一下 [確定]  。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 **>datawriter** 專案加入 **方案總管** ，並開啟 **Program.cs** 或 **Module1** 程式碼檔案。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將 >datawriter 專案加入 **方案總管**，並開啟 **程式 .Cs** 或 **的** 程式碼檔案。
 
 ## <a name="add-data-to-the-cached-dataset-by-using-the-console-application"></a>使用主控台應用程式將資料新增至快取的資料集
  使用 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 主控台應用程式中的類別，在活頁簿中將資料填入快取的資料集。
@@ -237,12 +237,12 @@ ms.locfileid: "99937429"
 
 5. 在 [ **專案** ] 索引標籤上，選取 [ **AdventureWorksDataSet**]，然後按一下 **[確定]**。
 
-6. 在程式碼編輯器中開啟 *Program.cs* 或 *Module1 檔。*
+6. 在程式碼編輯器中開啟 *程式 .cs* 或 *Module1* 檔案。
 
 7. **使用** c # 的 (新增下列程式 ) ，或將 Visual Basic) 語句的 (匯 **入** 至程式碼檔案頂端。
 
-    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet1":::
 
 8. 將下列程式碼新增至 `Main` 方法。 此程式碼會宣告下列物件：
 
@@ -255,8 +255,8 @@ ms.locfileid: "99937429"
      > [!NOTE]
      > 下列程式碼假設您使用副檔名為 *.xlsx* 的活頁簿。 如果您專案中的活頁簿具有不同的副檔名，請視需要修改路徑。
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#3)]
-     [!code-vb[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet3":::
 
 9. 將下列程式碼新增至 `Main` 方法，在您于上一個步驟中新增的程式碼之後。 此程式碼會執行下列工作：
 
@@ -266,8 +266,8 @@ ms.locfileid: "99937429"
 
    - 它會使用 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 方法，將來自區域具類型資料集的資料填入快取的資料集。
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#4)]
-     [!code-vb[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet4":::
 
 10. 在 **方案總管** 中，以滑鼠右鍵按一下 **>datawriter** 專案，指向 [ **Debug**]，然後按一下 [ **開始新實例**]。
 

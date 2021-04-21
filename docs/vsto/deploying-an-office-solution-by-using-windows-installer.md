@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ef515ce323322dee667dab5690b85b29af97c07d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6dfa2bb4d3309420cf0a9a71e79b5d07b5477ce
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875415"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828523"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 方案
 
@@ -222,7 +222,7 @@ ms.locfileid: "99875415"
 
 6. 在 [ **另存新檔** ] 對話方塊中，瀏覽至 [ **桌面** ] 資料夾。
 
-7. 在 [檔 **類型** ] 清單中，選擇 [所有檔案] **( # A0. &#42;)**。
+7. 在 [檔 **類型** ] 清單中，選擇 [ **所有檔案 (&#42;] &#42;)**。
 
 8. 在 [ **檔案名稱** ] 方塊中，輸入 **Visual Studio 2010 Tools for Office Runtime.prq**，然後選擇 [ **儲存** ] 按鈕。
 
@@ -335,7 +335,7 @@ ms.locfileid: "99875415"
 
 7. 重複這個程序，建立下列值。
 
-|實值類型<br /><br />|名稱<br /><br />|
+|實值類型<br /><br />|Name<br /><br />|
 |--------------|--------|
 |字串值<br /><br />|**FriendlyName**<br /><br />|
 |DWORD 值<br /><br />|**LoadBehavior**<br /><br />|
@@ -410,8 +410,8 @@ ms.locfileid: "99875415"
 
 9. 以下列程式碼取代這整個檔案的內容。
 
-[!code-vb[Trin_CustomAction#1](../vsto/codesnippet/VisualBasic/setexceldocumentproperties/module1.vb#1)]
-[!code-csharp[Trin_CustomAction#1](../vsto/codesnippet/CSharp/setexceldocumentproperties/program.cs#1)]
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/setexceldocumentproperties/module1.vb" id="Snippet1":::
+:::code language="csharp" source="../vsto/codesnippet/CSharp/setexceldocumentproperties/program.cs" id="Snippet1":::
 
 10. 編譯專案。
 

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 459c50b5f8135756f85de852a62de44b3878148d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccc45e9ec389e265e69c81baaf569aa3eb3c978b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882475"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825624"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>將資料系結至 Office 方案中的控制項
   您可以將 Microsoft Office Word 文件或 Microsoft Office Excel 工作表中的 Windows Form 控制項和「主控制項」  (host control) 繫結至資料來源，讓控制項自動顯示資料。 您可以將資料繫結至應用程式層級和文件層級專案中的控制項。
@@ -43,8 +43,8 @@ ms.locfileid: "99882475"
 
  下列範例示範如何在文件層級專案中，將 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 屬性繫結至資料項目。
 
- [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)]
- [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb" id="Snippet4":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs" id="Snippet4":::
 
  如需示範簡單資料系結的逐步解說，請參閱逐步解說：檔層級專案的 [檔層級專案中的簡單資料](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) 系結和逐步解說： vsto 增益集專案的 [vsto 增益集專案中的簡單資料](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) 系結。
 
@@ -55,8 +55,8 @@ ms.locfileid: "99882475"
 
  下列程式碼範例會建立具有兩個 <xref:System.Data.DataSet> 物件的 <xref:System.Data.DataTable> ，並將資料填入其中一個資料表。 然後程式碼會將 <xref:Microsoft.Office.Tools.Excel.ListObject> 繫結至含有資料的資料表。 這是示範 Excel 文件層級專案的範例。
 
- [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)]
- [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs" id="Snippet18":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb" id="Snippet18":::
 
  如需示範複雜資料系結的逐步解說，請參閱逐步解說：檔層級專案的 [檔層級專案中的複雜資料](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) 系結和逐步解說： vsto 增益集專案的 [vsto 增益集專案中的複雜資料](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) 系結。
 

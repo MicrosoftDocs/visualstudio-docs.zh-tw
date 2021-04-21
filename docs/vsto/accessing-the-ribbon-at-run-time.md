@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 224396d7b4328164c55bc58c746909ada015e02f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e20c9a54d2fa352c51d5ae5383f5c5b7861e0fdf
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965729"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825221"
 ---
 # <a name="access-the-ribbon-at-run-time"></a>在執行時間存取功能區
   您可以撰寫程式碼以顯示、隱藏和修改功能區，並且讓使用者從自訂工作窗格、執行窗格或 Outlook 表單區域中的控制項執行程式碼。
@@ -37,24 +37,24 @@ ms.locfileid: "99965729"
 
  以下範例將使用 `Globals` 類別存取名為 `Ribbon1` 的自訂功能區，並且將出現在功能區下拉式方塊中的文字設定為 `Hello World`。
 
- [!code-vb[Trin_Outlook_FR_Access#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#4)]
- [!code-csharp[Trin_Outlook_FR_Access#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#4)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet4":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet4":::
 
 ## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>存取出現在特定 [Outlook 檢查] 視窗中的功能區集合
  您可以存取出現在 Outlook *檢查* 器中的功能區集合。 [檢查] 是一個視窗，會在使用者執行特定工作 (例如建立電子郵件訊息) 時，在 Outlook 中開啟。 若要存取 [檢查] 視窗的功能區，請呼叫 `Globals` 類別的 `Ribbons` 屬性，並傳入代表 [檢查] 的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件。
 
  以下範例將取得目前擁有焦點之 [檢查] 中的功能區集合。 然後這個範例會存取名為 `Ribbon1` 的功能區，並且將出現在功能區上下拉式方塊中的文字設定為 `Hello World`。
 
- [!code-vb[Trin_Outlook_FR_Access#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#5)]
- [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet5":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet5":::
 
 ## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>存取針對特定 Outlook Explorer 顯示的功能區集合
  您可以存取出現在 Outlook *Explorer* 中的功能區集合。 [總管] 是 Outlook 執行個體的主要應用程式使用者介面 (UI)。 若要存取 [總管] 視窗的功能區，請呼叫 `Globals` 類別的 `Ribbons` 屬性，並傳入代表 [總管] 的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件。
 
  下列範例會取得目前擁有焦點的 [總管] 中的功能區集合。 然後這個範例會存取名為 `Ribbon1` 的功能區，並且將出現在功能區上下拉式方塊中的文字設定為 `Hello World`。
 
- [!code-vb[Trin_Outlook_FR_Access#6](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#6)]
- [!code-csharp[Trin_Outlook_FR_Access#6](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#6)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet6":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet6":::
 
 ## <a name="see-also"></a>另請參閱
 - [功能區總覽](../vsto/ribbon-overview.md)

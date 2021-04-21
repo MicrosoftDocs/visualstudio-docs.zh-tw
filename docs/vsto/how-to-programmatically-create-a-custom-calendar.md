@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 21a4b172fe2a29ac098f236cebb33efa43fb11c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7a21f51c42f1f55423019361d1b1535482f4e4b1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964169"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828003"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>如何：以程式設計方式建立自訂行事曆
   這個範例會建立名為 **PersonalCalendar** 的新行事曆資料夾，然後建立新的約會專案並將它加入行事曆資料夾中。 然後，程式碼會顯示行事曆資料夾。
@@ -29,7 +29,7 @@ ms.locfileid: "99964169"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>範例
- [!code-csharp[Trin_OL_CustomCalendar#1](../vsto/codesnippet/CSharp/Trin_OL_CustomCalendar/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_CustomCalendar/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>另請參閱
 - [使用行事曆專案](../vsto/working-with-calendar-items.md)

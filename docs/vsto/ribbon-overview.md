@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2eff346425dca31cb88342e69701a229de2b80ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8920c8a402b4566cf95bb74626171cca833d32de
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940861"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825546"
 ---
 # <a name="ribbon-overview"></a>功能區總覽
   功能區是一種組織相關命令的方式，可讓您更輕鬆地找到它們。 命令會以控制項形式出現在功能區上。 在應用程式視窗的上邊緣，會將控制群組織成 *群組* 和水準帶狀。 相關的群組會組織在索引標籤上。
@@ -112,8 +112,8 @@ ms.locfileid: "99940861"
 
  新增下列程式碼：
 
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.vb#1)]
- [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.cs" id="Snippet1":::
 
 ### <a name="related-topics"></a>相關主題
 

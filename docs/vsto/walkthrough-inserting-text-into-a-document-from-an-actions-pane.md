@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0f24c7270dc3c174be124506e1e36dafe7581f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ac42954e32b30a293abbe031218213948fb103a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937377"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824974"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>逐步解說：從執行窗格將文字插入檔
   本逐步解說示範如何在 Microsoft Office Word 檔中建立執行窗格。 [動作] 窗格包含兩個可收集輸入的控制項，然後將文字傳送至檔。
@@ -142,12 +142,12 @@ ms.locfileid: "99937377"
 
 1. 將下列程式碼加入至 <xref:System.Windows.Forms.Control.Click> [ **shapes.addtext** ] 按鈕的事件處理常式。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs" id="Snippet8":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb" id="Snippet8":::
 
 2. 在 c # 中，您必須加入按一下按鈕的事件處理常式。 在呼叫之後，您可以將此程式碼放在函式中 `InsertTextControl` `InitializeComponent` 。 如需建立事件處理常式的詳細資訊，請參閱 [如何：在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs" id="Snippet9":::
 
 ## <a name="add-code-to-show-the-actions-pane"></a>加入程式碼以顯示 [動作] 窗格
  若要顯示 [執行] 窗格，請將您建立的控制項加入至控制項集合。
@@ -156,13 +156,13 @@ ms.locfileid: "99937377"
 
 1. 在類別中建立執行窗格控制項的新實例 `ThisDocument` 。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#10)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet10":::
 
 2. 將下列程式碼加入至的 <xref:Microsoft.Office.Tools.Word.Document.Startup> 事件處理常式 `ThisDocument` 。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#11)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet11":::
 
 ## <a name="test-the-application"></a>測試應用程式
  測試您的檔，以確認開啟檔時，[動作] 窗格會開啟，並在按下按鈕時，將輸入文字方塊的文字插入書簽中。

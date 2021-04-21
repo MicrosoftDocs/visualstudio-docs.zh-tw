@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc61f66b2aefaf0e43b1b5af819e0e244feec114
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3d77085808fb54cd0a0517cc6d039e2345a1872
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910314"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827977"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 方案的全球化與當地語系化
   本節包含在非英文設定的 Windows 電腦上執行 Microsoft Office Excel 解決方案之特殊考量的相關資訊。 當您使用 Visual Studio 建立其他種類的解決方案時，遇到的 Microsoft Office 解決方案全球化和當地語系化問題層面，大部分都一樣。 如需一般資訊，請參閱 [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)。
@@ -81,15 +81,15 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  例如：
 
- [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
- [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb" id="Snippet6":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs" id="Snippet6":::
 
  您應該盡可能使用強型別資料，不要使用字串常值。 例如，不要用字串常值儲存日期，而要儲存為 <xref:System.Double>，然後將它轉換成 <xref:System.DateTime> 物件操作。
 
  下列程式碼範例採用使用者在儲存格 A5 輸入的日期，儲存為 <xref:System.Double>，然後再轉換成 <xref:System.DateTime> 物件顯示在儲存格 A7 中。 儲存格 A7 必須格式化才能顯示日期。
 
- [!code-vb[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#7)]
- [!code-csharp[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#7)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb" id="Snippet7":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs" id="Snippet7":::
 
 ### <a name="excel-worksheet-functions"></a>Excel 工作表函數
  大部分語言的 Excel 版本，工作表函數名稱都是內部轉譯。 不過，由於可能的語言和 COM interop 問題，建議您在程式碼中只使用英文函式名稱。

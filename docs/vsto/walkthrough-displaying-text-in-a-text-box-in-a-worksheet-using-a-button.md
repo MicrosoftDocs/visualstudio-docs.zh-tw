@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 270754005704d91569f014ed2e0be382bc2dd707
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b1209bf903f5a5b9c0005d9ba4ba6a891752aedd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906471"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827782"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>逐步解說：使用按鈕在工作表的文字方塊中顯示文字
   本逐步解說會示範在 Microsoft Office Excel 工作表上使用按鈕和文字方塊的基本概念，以及如何在 Visual Studio 中使用 Office 開發工具建立 Excel 專案。 若要以完整範例的形式查看結果，請參閱 [Office 開發範例和](../vsto/office-development-samples-and-walkthroughs.md)逐步解說中的 Excel 控制項範例。
@@ -87,12 +87,12 @@ ms.locfileid: "99906471"
 
 2. 將下列程式碼加入至 <xref:System.Windows.Forms.Control.Click> 按鈕的事件處理常式：
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet11":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet11":::
 
 3. 在 c # 中，您必須將事件處理常式加入至 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 事件，如下所示。 如需建立事件處理常式的詳細資訊，請參閱 [如何：在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet12":::
 
 ## <a name="test-the-application"></a>測試應用程式
  您現在可以測試活頁簿，以確保訊息 **Hello World！** 當您按一下按鈕時，會出現在文字方塊中。

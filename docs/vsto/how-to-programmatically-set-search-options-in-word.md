@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e583b7deb9fbe37f40e582d2c8a946332dd00ffa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 605f782bf6dc3bb56b52bdcd896d1c6419cf5f51
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913465"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825026"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>如何：以程式設計方式在 Word 中設定搜尋選項
   有兩種方式可以在 Microsoft Office Word 檔中設定選項的搜尋選項：
@@ -42,7 +42,7 @@ ms.locfileid: "99913465"
 
 1. 設定物件的屬性 <xref:Microsoft.Office.Interop.Word.Find> ，以便在 [ **尋找我** 的文字] 的選取範圍內向前搜尋。
 
-     [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet76":::
 
 ## <a name="use-execute-method-arguments"></a>使用 Execute 方法引數
  下列程式碼會使用 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 物件的方法 <xref:Microsoft.Office.Interop.Word.Find> 來搜尋目前選取範圍內的文字。 請注意，搜尋條件（例如搜尋向前、換行和要搜尋的文字）會做為方法的參數傳遞 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 。
@@ -51,8 +51,8 @@ ms.locfileid: "99913465"
 
 1. 將搜尋準則傳遞為方法的參數 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> ，以便向前搜尋文字 **尋找** 的選項。
 
-     [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
-     [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet77":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet77":::
 
 ## <a name="see-also"></a>另請參閱
 - [如何：以程式設計方式搜尋和取代檔中的文字](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)

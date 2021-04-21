@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9579de6712b742dde1f9b399ca8a1e4598783679
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 61e7ab9f00db6036d3bc8e41b9a2f19cf51f5511
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896769"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828146"
 ---
 # <a name="actions-pane-overview"></a>動作窗格總覽
   [動作] 窗格是附加至特定 Microsoft Office Word 檔或 Microsoft Office Excel 活頁簿的可自訂 **檔動作** 工作窗格。 [動作] 窗格會與其他內建工作窗格一起裝載在 Office 工作窗格內，例如 Excel 的 [ **XML 來源** ] 工作窗格或 Word 中的 [ **樣式與格式** ] 工作窗格。 您可以使用 Windows Form 控制項或 WPF 控制項，設計執行窗格使用者介面。
@@ -37,8 +37,8 @@ ms.locfileid: "99896769"
 ## <a name="display-the-actions-pane"></a>顯示動作窗格
  執行窗格由 <xref:Microsoft.Office.Tools.ActionsPane> 類別代表。 當您建立文件層級專案時，在專案中使用 `ThisWorkbook` 類別 (Excel) 或 `ThisDocument` 類別 (Word) 的 `ActionsPane` 欄位，就可在程式碼中使用這個類別的執行個體。 若要顯示執行窗格，請將 Windows Form 控制項加入 `ActionsPane` 欄位的 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> 屬性。 下列程式碼範例會將名為 `actions` 的控制項加入執行窗格。
 
- [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
- [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet7":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet7":::
 
  只要明確地將控制項加入執行窗格，就可在執行階段顯示執行窗格。 當執行窗格出現後，您可以動態加入或移除控制項，以回應使用者的動作。 一般而言，加入程式碼是為了在 `ThisDocument` 或 `ThisWorkbook` 的 `Startup` 事件處理常式中顯示執行窗格，讓使用者第一次開啟文件時即看見執行窗格。 不過，您可能希望執行窗格只在回應文件中的使用者動作時才出現。 例如，您可能會在文件的控制項 `Click` 事件中加入程式碼。
 
@@ -63,18 +63,18 @@ ms.locfileid: "99896769"
 
 - 若是 Word，請將 <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> <xref:Microsoft.Office.Interop.Word.TaskPane> 代表 [檔動作] 工作窗格之物件的屬性設定為 [ **false**]。 下列程式碼範例宜從專案的 `ThisDocument` 類別執行。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet34":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet34":::
 
 - 若為 Excel，請將 <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> 物件的屬性設定 <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> 為 **false**。 下列程式碼範例宜從專案的 `ThisWorkbook` 類別執行。
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet11":::
 
 - 針對 Word 或 Excel，您可以另外將 <xref:Microsoft.Office.Core.CommandBar.Visible%2A> 表示工作窗格之命令列的屬性設為 **false**。 下列程式碼範例宜從專案的 `ThisDocument` 或 `ThisWorkbook` 類別執行。
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet9":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet9":::
 
 ### <a name="clear-the-actions-pane-when-the-document-is-opened"></a>在檔開啟時清除 [動作] 窗格
  當使用者在顯示 [執行] 窗格時儲存檔時，無論 [執行] 窗格是否包含任何控制項，每次開啟檔時都可以看見 [動作] 窗格。 如果想要控制其出現時機，請呼叫 `ThisDocument` 或 `ThisWorkbook` 的 `Startup` 事件處理常式中 `ActionsPane` 欄位的 <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> 方法，以確保文件開啟時不顯示執行窗格。
@@ -118,8 +118,8 @@ ms.locfileid: "99896769"
 
  下列程式碼設定 <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 屬性從執行窗格頂端開始堆疊使用者控制項。
 
- [!code-csharp[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#10)]
- [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet10":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet10":::
 
 ## <a name="anchor-controls"></a>錨定控制項
  如果使用者在執行階段調整執行窗格的大小，控制項大小可隨著執行窗格調整。 您可以使用 Windows Form 控制項的 <xref:System.Windows.Forms.Control.Anchor%2A> 屬性，將控制項錨定到執行窗格。 您也可以相同方式將 Windows Form 控制項錨定到使用者控制項。 如需詳細資訊，請參閱 [如何：錨定 Windows Forms 上的控制項](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)。
@@ -129,16 +129,16 @@ ms.locfileid: "99896769"
 
  不建議以程式設計的方式調整工作窗格的大小，因為使用者應該要能夠選取最適合其需求的工作窗格大小。 不過，如果必須調整工作窗格的寬度，您可以使用下列程式碼完成這項工作。
 
- [!code-csharp[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#102)]
- [!code-vb[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#102)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet102":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet102":::
 
 ## <a name="reposition-the-actions-pane"></a>重新置放動作窗格
  您無法直接重新置放 <xref:Microsoft.Office.Tools.ActionsPane>，因為它內嵌在工作窗格中。 不過，您可設定代表工作窗格之 <xref:Microsoft.Office.Core.CommandBar> 的 <xref:Microsoft.Office.Core.CommandBar.Position%2A> 屬性，以程式設計方式移動工作窗格。
 
  不建議以程式設計的方式重新置放工作窗格，因為使用者應該要能夠選擇最符合其需求的工作窗格位置。 不過，如果必須將工作窗格移至特定位置，您可以使用下列程式碼完成這項工作。
 
- [!code-csharp[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#100)]
- [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet100":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet100":::
 
 > [!NOTE]
 > 使用者可以隨時手動重新置放工作窗格。 沒有任何方式可以確保工作窗格會一直停駐在您以程式設計方式指定的位置上。 不過，您可以檢查方向的變更，確保執行窗格上的控制項依正確的方向堆疊。 如需詳細資訊，請參閱 [如何：管理執行窗格的控制項版面](../vsto/how-to-manage-control-layout-on-actions-panes.md)配置。
@@ -147,8 +147,8 @@ ms.locfileid: "99896769"
 
  如果工作窗格未停駐，您可以設定代表工作窗格之 <xref:Microsoft.Office.Core.CommandBar> 的 <xref:Microsoft.Office.Core.CommandBar.Top%2A> 和 <xref:Microsoft.Office.Core.CommandBar.Left%2A> 屬性。 下列程式碼會將未停駐的工作窗格移至文件的左上角。
 
- [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
- [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet101":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet101":::
 
 ## <a name="see-also"></a>另請參閱
 - [在 Office 方案中使用 WPF 控制項](../vsto/using-wpf-controls-in-office-solutions.md)

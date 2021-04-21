@@ -34,12 +34,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7bf4da3f0b2dd9cbab960a779690aa752744cdae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be1625be3d8c3fce409562be948c83a34d40d7b1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910320"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825676"
 ---
 # <a name="events-in-office-projects"></a>Office 專案中的事件
   每個 Office 專案範本會自動產生數個事件處理常式。 文件層級自訂的事件處理常式與 VSTO 增益集的事件處理常式有些許不同。
@@ -91,16 +91,16 @@ ms.locfileid: "99910320"
 
  下列程式碼範例會顯示 Word 文件層級專案中的預設事件處理常式。
 
- [!code-vb[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#121)]
- [!code-csharp[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#121)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet121":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet121":::
 
  下列程式碼範例會顯示 Excel 文件層級專案中的預設事件處理常式。
 
 > [!NOTE]
 > 下列程式碼範例顯示 `Sheet1` 類別中的事件處理常式。 其他主項目類別中的事件處理常式名稱會對應至這個類別名稱。 例如，在 `Sheet2` 類別中， **Startup** 事件處理常式的名稱為 `Sheet2_Startup`。 在 `ThisWorkbook` 類別中， **Startup** 事件處理常式的名稱為 `ThisWorkbook_Startup`。
 
- [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
- [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet83":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet83":::
 
 ### <a name="order-of-events-in-document-level-excel-projects"></a>檔層級 Excel 專案中的事件順序
  呼叫 Excel 專案中 **Startup** 事件處理常式的順序如下：

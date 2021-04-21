@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d6824d53d552a27a68a49d63497156147283fd29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c95842ac2c6d77a2312ac5c4c197ba22ed2020e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847696"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825416"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office 方案中的選擇性參數
   Microsoft Office 應用程式物件模型中的許多方法，都接受選擇性參數。 如果您使用 Visual Basic 在 Visual Studio 中開發 Office 方案，就不必傳遞選擇性參數的值，因為每個遺漏的參數都會自動使用預設值。 在大部分的情況下，也可以省略 Visual C# 專案中的選擇性參數。 不過，您無法 `ThisDocument` 在檔層級 Word 專案中省略類別的選擇性 ref 參數。
@@ -40,19 +40,19 @@ ms.locfileid: "99847696"
 ## <a name="example-in-excel"></a>Excel 範例
  <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> 方法有許多選擇性參數。 某些參數可以指定值，其他還可以接受預設值，如下列程式碼範例所示。 這個範例需要有名為 `Sheet1` 工作表類別的文件層級專案。
 
- [!code-csharp[Trin_VstrefGeneralExcel#1](../vsto/codesnippet/CSharp/excelworkbook1/Sheet1.cs#1)]
- [!code-vb[Trin_VstrefGeneralExcel#1](../vsto/codesnippet/VisualBasic/excelworkbook1/Sheet1.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/excelworkbook1/Sheet1.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/excelworkbook1/Sheet1.vb" id="Snippet1":::
 
 ## <a name="example-in-word"></a>Word 範例
  <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 方法有許多選擇性參數。 某些參數可以指定值，其他還可以接受預設值，如下列程式碼範例所示。
 
- [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)]
- [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs" id="Snippet1":::
 
 ## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>在 Word 的 Visual c # 檔層級專案中，于 ThisDocument 類別中使用方法的選擇性參數
  Word 物件模型包含許多具有可接受值之選擇性 **ref** 參數的方法 <xref:System.Object> 。 不過，您無法 `ThisDocument` 在 Word 的 Visual c # 檔層級專案中，省略所產生類別之方法的選擇性 ref 參數。 Visual c # 可讓您只針對介面的方法（而非類別）省略選擇性的 **ref** 參數。 例如，下列程式碼範例不會進行編譯，因為您不能省略類別的方法的選擇性 **ref** 參數 <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> `ThisDocument` 。
 
- [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs" id="Snippet3":::
 
  當您呼叫 `ThisDocument` 類別的方法時，請遵循這些指導方針：
 
@@ -62,11 +62,11 @@ ms.locfileid: "99847696"
 
   下列程式碼範例示範如何藉 <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> 由指定 *ignoreUppercase* 參數的值，以及接受其他參數的預設值，來呼叫方法。
 
-  [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs" id="Snippet4":::
 
   如果您想要撰寫程式碼來省略類別中方法的選擇性 **ref** 參數 `ThisDocument` ，您也可以在屬性傳回的物件上呼叫相同的方法 <xref:Microsoft.Office.Interop.Word.Document> <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> ，並省略該方法中的參數。 您可以執行這項操作的原因是，<xref:Microsoft.Office.Interop.Word.Document> 是介面不是類別。
 
-  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs" id="Snippet5":::
 
   如需有關值和參考型別參數的詳細資訊，請參閱以 [傳值方式傳遞引數，並以傳址方式 &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic [C) 程式設計手冊 &#40;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)。
 

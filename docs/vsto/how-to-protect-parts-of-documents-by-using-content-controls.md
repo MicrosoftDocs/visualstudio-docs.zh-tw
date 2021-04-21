@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1dc962e372f4406fffb5cf8a6357f3826f0c8845
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc333871d4f371530db84a0c4f07ab891db2a937
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942252"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825468"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何：使用內容控制項保護檔的元件
   當您保護文件的某個部分時，使用者即無法變更或刪除文件中該部分的內容。 您可使用多種方法，透過內容控制項來保護 Microsoft Office Word 文件的下列部分：
@@ -60,13 +60,13 @@ ms.locfileid: "99942252"
 
      下列程式碼範例示範在文件層級專案中，使用兩個不同 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 物件的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> 和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> 屬性。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `AddProtectedContentControls` 事件處理常式呼叫 `ThisDocument_Startup` 方法。
 
-     [!code-csharp[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#2)]
-     [!code-vb[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb" id="Snippet2":::
 
      下列程式碼範例示範在 VSTO 增益集專案中，使用兩個不同 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 物件的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> 和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> 屬性。 若要執行這個程式碼，請將程式碼加入專案的 `ThisAddIn` 類別中，並從 `AddProtectedContentControls` 事件處理常式呼叫 `ThisAddIn_Startup` 方法。
 
-     [!code-vb[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#14)]
-     [!code-csharp[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#14)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet14":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet14":::
 
 ## <a name="protect-a-part-of-a-document-that-is-not-in-a-content-control"></a>保護檔中不在內容控制項內的部分
  您可以將文件區域放入 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 中，防止使用者變更該區域。 這在下列案例中很有用：
@@ -97,13 +97,13 @@ ms.locfileid: "99942252"
 
      下列文件層級專案的程式碼範例會將文字加入文件的第一個段落，然後選取此段落，再執行個體化 <xref:Microsoft.Office.Tools.Word.GroupContentControl>。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `ProtectFirstParagraph` 事件處理常式呼叫 `ThisDocument_Startup` 方法。
 
-     [!code-csharp[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#1)]
-     [!code-vb[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb" id="Snippet1":::
 
      下列 VSTO 增益集專案的程式碼範例會將文字加入使用中文件的第一個段落，然後選取此段落，再執行個體化 <xref:Microsoft.Office.Tools.Word.GroupContentControl>。 若要執行這個程式碼，請將程式碼加入專案的 `ThisAddIn` 類別中，並從 `ProtectFirstParagraph` 事件處理常式呼叫 `ThisAddIn_Startup` 方法。
 
-     [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]
-     [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet15":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet15":::
 
 ## <a name="see-also"></a>另請參閱
 - [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)

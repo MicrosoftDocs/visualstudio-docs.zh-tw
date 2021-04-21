@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cbda0a4b7977f962751ed9803bd1b39103f67679
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3bc1b674caf46dc84ff7bf57c983131b79cfde51
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968823"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827808"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>針對 Office 方案中的錯誤進行疑難排解
   當您使用 Visual Studio 開發 Office 方案時，如果於過程中執行下列工作，則可能會遇到一些問題：
@@ -121,7 +121,7 @@ ms.locfileid: "99968823"
 
  例如，<xref:Microsoft.Office.Interop.Excel.Application> 物件具有 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> 事件和 <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A> 屬性。 若要處理 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> 事件，請將 <xref:Microsoft.Office.Interop.Excel.Application> 轉換成 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> 介面。 下列程式碼範例示範如何在 Excel 的文件層級專案中執行這項作業。
 
- [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs" id="Snippet1":::
 
  如需 Office Pia 中事件介面的詳細資訊，請參閱 [office 主要 interop 元件中的類別和介面總覽](/previous-versions/office/office-12//ms247299(v=office.12))。
 
@@ -157,18 +157,18 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="references-to-office-classes-are-not-recognized"></a>無法辨認 Office 類別的參考
  某些類別名稱（例如應用程式）位於多個命名空間，例如 <xref:Microsoft.Office.Interop.Word> 和 <xref:System.Windows.Forms> 。 基於這個理由，在 / 專案範本頂端 **使用** 語句的 Imports 包含速記限定常數，例如：
 
- [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
- [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet2":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet2":::
 
  使用 **Imports** using 語句的這種用法， / 需要您區分 Office 類別的參考與 Word 或 Excel 限定詞，例如：
 
- [!code-csharp[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#3)]
- [!code-vb[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#3)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet3":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet3":::
 
  如果您使用未限定的宣告，將會發生錯誤，例如：
 
- [!code-csharp[Trin_VstcoreTroubleshootingWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#4)]
- [!code-vb[Trin_VstcoreTroubleshootingWord#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#4)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet4":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet4":::
 
  即使您已匯入 Word 或 Excel 命名空間，並可存取它內的所有類別，您還是必須完整限定所有類型與 Word 或 Excel，以移除命名空間的混淆。
 

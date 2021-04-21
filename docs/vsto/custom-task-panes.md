@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8ed86cb10f6521e5863562cdb67e768b1a2367d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c35d963b426fe24a43bef24617f79c042c272e9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850031"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828159"
 ---
 # <a name="custom-task-panes"></a>自訂工作窗格
   工作窗格是通常停駐在 Microsoft Office 應用程式視窗一側的使用者介面面板。 自訂工作窗格為您提供建立個人專屬工作窗格的方法，也為使用者提供了熟悉的介面，供他們用來存取您方案的功能。 例如，介面中可以包含控制項，而這些控制項則會執行程式碼來修改文件或顯示資料來源中的資料。
@@ -66,8 +66,8 @@ ms.locfileid: "99850031"
 ### <a name="instantiate-the-custom-task-pane"></a>具現化自訂工作窗格
  建立包含自訂工作窗格使用者介面的使用者控制項之後，您必須具現化 <xref:Microsoft.Office.Tools.CustomTaskPane>。 若要這樣做，請呼叫其中一個 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法，以便將使用者控制項傳遞至 VSTO 增益集中的 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection>。 此集合會公開為 `ThisAddIn` 類別的 `CustomTaskPanes` 欄位。 下列程式碼範例預定由 `ThisAddIn` 類別執行。
 
- [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
- [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb" id="Snippet2":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs" id="Snippet2":::
 
  <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法會傳回新的 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件。 您可以使用這個物件修改工作窗格的外觀，並回應使用者事件。
 

@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2a0511fd103345859f96b18f333465106505057a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1514410094deaf9c77e088c3b69e2d39d29175c2
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953977"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825585"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>如何：將功能區設計工具的功能區匯出至功能區 XML
   **功能區 (的視覺化設計工具)** 專案不支援所有可能的功能區自訂類型。 若要以先進的方式自訂功能區，您可以從設計工具將功能區匯出至功能區 XML，並直接編輯 XML。
@@ -54,8 +54,8 @@ ms.locfileid: "99953977"
 
      在您取消批註程式碼之後，它應該會類似下列範例。 在此範例中，會呼叫功能區類別 `MyRibbon` 。
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb" id="Snippet1":::
 
 6. 切換至功能區 XML 程式碼檔案，並尋找 `Ribbon Callbacks` 區域。
 

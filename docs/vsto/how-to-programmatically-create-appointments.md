@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2d9e9ccd2d69c1f0956a3160589ab2204059d83e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b2125291331de76605c0bcad449b97f36a640cf
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964091"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827626"
 ---
 # <a name="how-to-programmatically-create-appointments"></a>如何：以程式設計方式建立約會
   此範例會建立約會，並將收件者新增至約會會議要求。
@@ -28,7 +28,7 @@ ms.locfileid: "99964091"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>範例
- [!code-csharp[Trin_OL_CreateAppts#1](../vsto/codesnippet/CSharp/Trin_OL_CreateAppts/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_CreateAppts/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>另請參閱
 - [使用行事曆專案](../vsto/working-with-calendar-items.md)

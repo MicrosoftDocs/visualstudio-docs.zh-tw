@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d1e66b587a149c02059e549fb20a5293f296a4a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 070253fb7ec57bedad628e116ce193fa2d9cf50b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968940"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827587"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>如何：以程式設計方式快取 Office 檔中的資料來源
   您可以藉由呼叫 `StartCaching` 主專案的方法（例如、或），以程式設計方式將資料物件新增至檔中的資料快取 <xref:Microsoft.Office.Tools.Word.Document> <xref:Microsoft.Office.Tools.Excel.Workbook> <xref:Microsoft.Office.Tools.Excel.Worksheet> 。 藉由呼叫主專案的方法，從資料快取中移除資料物件 `StopCaching` 。
@@ -38,20 +38,20 @@ ms.locfileid: "99968940"
 
 1. 在類別層級宣告資料物件，而不是在方法內。 此範例假設您要宣告您想要以程式設計方式快取的 <xref:System.Data.DataSet> 名稱 `dataSet1` 。
 
-     [!code-csharp[Trin_VstcoreDataExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#12)]
-     [!code-vb[Trin_VstcoreDataExcel#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#12)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet12":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet12":::
 
 2. 將資料物件具現化，然後呼叫 `StartCaching` 檔或工作表實例的方法，並傳入資料物件的名稱。
 
-     [!code-csharp[Trin_VstcoreDataExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#13)]
-     [!code-vb[Trin_VstcoreDataExcel#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#13)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet13":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet13":::
 
 ## <a name="to-stop-caching-a-data-object"></a>停止快取資料物件
 
 1. 呼叫 `StopCaching` 檔或工作表實例的方法，並傳入資料物件的名稱。 此範例假設您有想要停止快取的 <xref:System.Data.DataSet> 命名 `dataSet1` 。
 
-     [!code-csharp[Trin_VstcoreDataExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#14)]
-     [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet14":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet14":::
 
     > [!NOTE]
     > 請勿 `StopCaching` 從事件處理常式呼叫 `Shutdown` 檔或工作表的事件。 `Shutdown`引發事件時，修改資料快取的時間太晚。 如需事件的詳細資訊 `Shutdown` ，請參閱 [Office 專案中的事件](../vsto/events-in-office-projects.md)。

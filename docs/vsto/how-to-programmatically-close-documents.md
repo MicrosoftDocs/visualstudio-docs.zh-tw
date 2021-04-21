@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 96a18245e477000e1d4969a3e1e597443c6f3372
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b31a35ac1fa452f526d109dd93ca8264f78947b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903721"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825351"
 ---
 # <a name="how-to-programmatically-close-documents"></a>如何：以程式設計方式關閉檔
   您可以關閉使用中文件，或者指定要關閉的文件。
@@ -37,8 +37,8 @@ ms.locfileid: "99903721"
     > [!NOTE]
     > 這個範例會將 <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> 值傳遞給 *SaveChanges* 參數，關閉但不儲存變更或提示使用者。
 
-     [!code-vb[Trin_VstcoreWordAutomation#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#3)]
-     [!code-csharp[Trin_VstcoreWordAutomation#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet3":::
 
 ### <a name="to-close-the-active-document-in-a-vsto-add-in"></a>關閉 VSTO 增益集中的使用中文件
 
@@ -47,8 +47,8 @@ ms.locfileid: "99903721"
     > [!NOTE]
     > 這個範例會將 <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> 值傳遞給 *SaveChanges* 參數，關閉但不儲存變更或提示使用者。
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet3":::
 
 ## <a name="close-a-document-that-you-specify-by-name"></a>關閉您依名稱指定的檔
  對 VSTO 增益集和文件層級自訂而言，依指定名稱關閉文件的方式都是相同的。
@@ -60,8 +60,8 @@ ms.locfileid: "99903721"
     > [!NOTE]
     > 這個範例會將 <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> 值傳遞給 *SaveChanges* 參數，關閉但不儲存變更或提示使用者。
 
-     [!code-vb[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#4)]
-     [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet4":::
 
 ## <a name="see-also"></a>另請參閱
 - [如何：以程式設計方式開啟現有檔](../vsto/how-to-programmatically-open-existing-documents.md)

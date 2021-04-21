@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62d8236b987afbb7dc9d5e4462b79ffb4fe00bc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dbd60f5773392af2066e4693751dd6fff99128b9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928870"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827964"
 ---
 # <a name="access-a-form-region-at-run-time"></a>在執行時間存取表單區域
 
@@ -38,24 +38,24 @@ ms.locfileid: "99928870"
 
  以下範例將取得目前擁有焦點之檢查中出現的表單區域集合。 然後這個範例會存取名為 `formRegion1` 之集合中的表單區域，並且將出現在文字方塊中的文字設定為 `Hello World`。
 
- [!code-vb[Trin_Outlook_FR_Access#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#2)]
- [!code-csharp[Trin_Outlook_FR_Access#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#2)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet2":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet2":::
 
 ## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>在特定的 Outlook Explorer 視窗中顯示的存取表單區域
  若要存取出現在特定 Outlook 總管中的所有表單區域，請呼叫 `FormRegions` 類別的 `Globals` 屬性，並傳入代表該總管的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件。
 
  以下範例將取得目前擁有焦點之總管中出現的表單區域集合。 然後這個範例會存取名為 `formRegion1` 之集合中的表單區域，並且將出現在文字方塊中的文字設定為 `Hello World`。
 
- [!code-vb[Trin_Outlook_FR_Access#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#3)]
- [!code-csharp[Trin_Outlook_FR_Access#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#3)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet3":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet3":::
 
 ## <a name="access-all-form-regions"></a>存取所有表單區域
  若要存取出現在所有總管及檢查中的全部表單區域，請呼叫 `FormRegions` 類別的 `Globals` 屬性。
 
  以下範例將取得在所有總管及所有檢查中出現的表單區域集合。 然後這個範例會存取名為 `formRegion1` 的表單區域，並且將出現在文字方塊中的文字設定為 `Hello World`。
 
- [!code-vb[Trin_Outlook_FR_Access#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#1)]
- [!code-csharp[Trin_Outlook_FR_Access#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet1":::
 
 ## <a name="access-controls-on-a-form-region"></a>存取表單區域上的控制項
  若要使用 `Globals` 類別存取表單區域上的控制項，您必須使控制項能存取表單區域程式碼檔案外部的程式碼。
