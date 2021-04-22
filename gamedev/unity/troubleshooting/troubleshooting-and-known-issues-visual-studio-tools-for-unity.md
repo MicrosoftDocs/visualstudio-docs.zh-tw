@@ -2,7 +2,7 @@
 title: 疑難排解和已知問題 (VS Tools for Unity)
 description: 請參閱 Visual Studio Tools for Unity 中的疑難排解。 查看已知問題的描述，並瞭解這些問題的解決方案。
 ms.custom: ''
-ms.date: 07/03/2018
+ms.date: 04/15/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: troubleshooting
@@ -12,12 +12,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e447c8cb94e536aeed9e01d00098fe4a98c6c006
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 37ee35fa66d37f9b85af01f5012e8ede76e877de
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341529"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879365"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
 
@@ -25,9 +25,15 @@ ms.locfileid: "94341529"
 
 ## <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>針對 Unity 與 Visual Studio 之間的連線進行疑難排解
 
-### <a name="confirm-editor-attaching-is-enabled"></a>確認已啟用 [編輯器附加]
+### <a name="confirm-editor-attaching-is-enabled-or-code-optimization-on-startup-is-set-to-debug"></a>確認 `Editor Attaching` 已啟用或 `Code Optimization On Startup` 設為 `Debug`
 
-在 Unity 功能表中，選取 [ **編輯 > 喜好** 設定]，然後選取 [ **外部工具** ] 索引標籤。確認已啟用 [ **編輯器附加** ] 核取方塊。 如需詳細資訊，請參閱 [Unity 喜好設定文件](https://docs.unity3d.com/Manual/Preferences.html)。
+在 Unity 功能表中，選取 `Edit / Preferences` 。
+
+視使用的 Unity 版本而定：
+- 確認 `Code Optimization On Startup` 設定為 `Debug` 。
+- 或選取索引標籤 `External Tools` 。請確認已 `Editor Attaching` 啟用此核取方塊。 
+
+如需詳細資訊，請參閱 [Unity 喜好設定文件](https://docs.unity3d.com/Manual/Preferences.html)。
 
 ### <a name="unable-to-attach"></a>無法附加
 
@@ -60,11 +66,22 @@ ms.locfileid: "94341529"
 
 ## <a name="incompatible-project-in-visual-studio"></a>Visual Studio 中的不相容專案
 
-首先，檢查 Unity 中是否已將 Visual Studio 設定為您的外部指令碼編輯器 ([編輯]/[喜好設定]/[外部工具])。 然後，檢查 Unity 外掛程式中是否已安裝 Visual Studio  ([說明]/[關於] 底部必須顯示一則類似 Microsoft Visual Studio Tools for Unity 已啟用的訊息)。 接著，檢查 Visual Studio 中是否已正確安裝延伸模組 ([說明]/[關於])。
+最重要的一點是，Visual Studio 在專案設定中儲存「不相容」狀態，而且在您明確使用之前，不會嘗試重載專案 `Reload Project` 。 因此，在每個疑難排解步驟之後，請確定您嘗試重新開啟方案，並嘗試以滑鼠右鍵按一下所有不相容的專案，然後選擇 `Reload Project` 。
+
+1. 使用，檢查是否已將 Visual Studio 設定為 Unity 中的外部腳本編輯器 `Edit / Preferences / External Tools` 。
+2. 視您的 Unity 版本而定：
+   - 檢查 Visual Studio 外掛程式是否已安裝在 Unity 中。 `Help / About` 應該會顯示類似 Microsoft Visual Studio Tools for Unity 已在底部啟用的訊息。
+   - Unity 2020. x +：確認您在中使用最新的 Visual Studio 編輯器套件 `Window / Package Manager` 。
+3. 請嘗試刪除專案中的所有專案/方案檔案和 `.vs` 資料夾。
+4. 請嘗試使用或重建專案/方案 `Open C# Project` `Edit / Preferences / External tools / Regenerate Project files` 。
+5. 請確定您已在 Visual Studio 中安裝遊戲/Unity 工作負載。
+6. 請嘗試清除 MEF 快取，如 [這裡](#visual-studio-crashes)所述。
+7. 請嘗試只使用遊戲/Unity 工作負載重新安裝 Visual Studio (，以啟動) 。
+8. 嘗試停用協力廠商延伸模組，以防它們可能會干擾中的 Unity 延伸模組 `Tools / Extensions` 。
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>額外重新載入，或 Visual Studio 遺失所有開啟的視窗
 
-請務必不要再直接從資產處理器或任何其他工具處理專案檔。 如果您真的需要操作專案檔，我們會公開它的 API。 請參閱[組件參考問題](#assembly-reference-issues)一節。
+請務必不要再直接從資產處理器或任何其他工具處理專案檔。 如果您真的需要操作專案檔，我們會公開它的 API。 請參閱[組件參考問題](#assembly-reference-or-project-property-issues)一節。
 
 如果您發生額外重新載入，或如果 Visual Studio 在重新載入中遺失所有開啟的視窗，請確定您安裝了正確的 .NET 目標套件。 如需架構的詳細資訊，請參閱下節。
 
@@ -78,13 +95,15 @@ ms.locfileid: "94341529"
 
 ## <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>使用 Windows 時，Visual Studio 會要求下載 Unity 目標 Framework
 
-Visual Studio Tools for Unity 需要 .NET Framework 3.5，但 Windows 8 或 Windows 10 上預設為未安裝。 若要修正這個問題，請遵循指示下載並安裝 .Net Framework 3.5。
+使用舊版 Unity runtime ( .NET 3.5 對等) 時，Visual Studio Tools for Unity 需要 .NET framework 3.5，預設不會安裝在 Windows 8 或10上。 若要修正這個問題，請遵循指示下載並安裝 .Net Framework 3.5。
 
-使用新的 Unity 執行階段時，也需要 .NET 以 4.6 和 4.7.1 版的組件為目標。 使用 VS2017 安裝程式有可能快速安裝它們 (修改您的 VS2017 安裝、個別元件、.NET 分類、選取所有 4.x 目標組件)。
+使用新的 Unity 執行時間時，根據 Unity 版本，也需要 .NET 目標套件版本4.6 或4.7.1。 您可以使用 Visual Studio 安裝程式來快速安裝它們 (修改您的安裝、個別元件、.NET 類別、選取所有4.x 目標套件) 。
 
-## <a name="assembly-reference-issues"></a>組件參考問題
+## <a name="assembly-reference-or-project-property-issues"></a>元件參考或專案屬性問題
 
-如果您的專案參考很複雜，或您想更妥善控制這個產生步驟，則可以使用我們的 [API](/cross-platform/customize-project-files-created-by-vstu.md) 來操作產生的專案或方案內容。 您也可以在 Unity 專案中使用[回應檔](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html)，我們即會進行處理。
+如果您的專案參考很複雜，或您想更妥善控制這個產生步驟，則可以使用我們的 [API](../extensibility/customize-project-files-created-by-vstu.md) 來操作產生的專案或方案內容。 您也可以在 Unity 專案中使用[回應檔](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html)，我們即會進行處理。
+
+在最近的 Visual Studio 和 Unity 版本中，最好的方法就是使用自訂檔案 `Directory.Build.props` 以及產生的專案。 然後，您將能夠參與專案結構，而不會干擾產生程式。 詳細資訊請參閱 [這裡](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build#directorybuildprops-and-directorybuildtargets)。
 
 ## <a name="breakpoints-with-a-warning"></a>中斷點與警告
 
@@ -92,7 +111,7 @@ Visual Studio Tools for Unity 需要 .NET Framework 3.5，但 Windows 8 或 Wind
 
 ## <a name="breakpoints-not-hit"></a>未達到的中斷點
 
-請檢查您正在使用的指令碼是否已正確載入/用於目前的 Unity 場景中。 結束 Unity 和 Visual Studio，然後刪除所有產生的檔案 (\*.csproj、\*.sln) 和整個文件庫資料夾。
+請檢查您正在使用的指令碼是否已正確載入/用於目前的 Unity 場景中。 退出 Visual Studio 和 Unity，然後刪除所有產生的檔案 (\* .csproj、 \* .sln) 、 `.vs` 資料夾和整個程式庫資料夾。 您可以在 Unity [網站](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)上找到有關 c # 調試的詳細資訊。
 
 ## <a name="unable-to-debug-android-players"></a>無法偵錯 Android 播放器
 
@@ -102,13 +121,13 @@ WiFi 很靈活，但因為延遲，所以相較於 USB 速度超慢。 我們發
 
 USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測 USB 裝置，與 adb 伺服器通訊以正確轉送連接埠來進行偵錯。
 
-## <a name="issues-with-visual-studio-2015-and-intellisense-or-code-coloration"></a>Visual Studio 2015 和 IntelliSense 或程式碼色彩的問題
+## <a name="issues-with-intellisense-or-code-coloration"></a>IntelliSense 或程式碼色彩的問題
 
-嘗試將您的 Visual Studio 2015 升級到更新 3。
+請嘗試將您的 Visual Studio 升級到最新版本。 嘗試與 [不相容的專案](#incompatible-project-in-visual-studio)相同的疑難排解步驟。
 
 ## <a name="known-issues"></a>已知問題
 
- Visual Studio Tools for Unity 在偵錯工具如何與 Unity 的舊版 C# 編譯器互動方面有已知問題。 我們正在努力協助修正這些問題，在此同時，您可能會遇到下列問題：
+Visual Studio Tools for Unity 在偵錯工具如何與 Unity 的舊版 C# 編譯器互動方面有已知問題。 我們正在努力協助修正這些問題，在此同時，您可能會遇到下列問題：
 
 - 偵錯時，Unity 有時會損毀。
 
@@ -118,11 +137,11 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
 
 ## <a name="report-errors"></a>報告錯誤
 
- 當您遇到損毀、凍結或其他錯誤時，請傳送錯誤報告，以協助我們改善 Visual Studio Tools for Unity 的品質。 這可協助我們調查並修正 Visual Studio Tools for Unity 的問題。 感謝您！
+當您遇到損毀、凍結或其他錯誤時，請傳送錯誤報告，以協助我們改善 Visual Studio Tools for Unity 的品質。 這可協助我們調查並修正 Visual Studio Tools for Unity 的問題。 感謝您！
 
 ### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>如何在 Visual Studio 凍結時回報錯誤
 
- 根據報告，當使用 Visual Studio Tools for Unity 進行偵錯時，Visual Studio 有時會凍結，不過我們需要更多資料來了解這個問題。 您可以執行下列步驟來協助我們進行調查。
+根據報告，當使用 Visual Studio Tools for Unity 進行偵錯時，Visual Studio 有時會凍結，不過我們需要更多資料來了解這個問題。 您可以執行下列步驟來協助我們進行調查。
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>回報使用 Visual Studio Tools for Unity 進行偵錯時 Visual Studio 凍結的情形
 
@@ -134,7 +153,7 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
 
 1. 將偵錯工具附加至 Visual Studio 的已凍結執行個體。 在 [附加至處理序]  對話方塊中，從 [可使用的處理序]  資料表選取 Visual Studio 的已凍結執行個體，然後選擇 [附加]  按鈕。
 
-1. 暫停偵錯工具。 在 Visual Studio 新執行個體的主功能表上，選擇 [偵錯]、[全部中斷]，或直接按 **Ctrl+Alt+Break** 。
+1. 暫停偵錯工具。 在 Visual Studio 新執行個體的主功能表上，選擇 [偵錯]、[全部中斷]，或直接按 **Ctrl+Alt+Break**。
 
 1. 建立執行緒傾印。 在命令視窗中輸入下列命令，然後按 **Enter** 鍵：
 
@@ -172,6 +191,6 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
 
 最後，將執行緒傾印傳送至 [vstusp@microsoft.com](mailto:vstusp@microsoft.com) ，以及當 Visual Studio 變成凍結時所執行之工作的描述。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)

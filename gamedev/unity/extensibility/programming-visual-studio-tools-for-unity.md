@@ -1,8 +1,8 @@
 ---
 title: Visual Studio Tools for Unity 程式設計 | Microsoft Docs
-description: 請參閱使用 Visual Studio Tools for Unity (VSTU) API 的程式設計範例。 自訂 VSTU 所建立的專案檔。 與 VSTU 共用 Unity 記錄回呼。
+description: 請參閱使用 Visual Studio Tools for Unity (VSTU) API 的程式設計範例。 自訂 VSTU 所建立的專案檔。
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 04/19/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c98a3cdbcece87ad5e8fbe0e91ae76f677494477
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 4d81284faba4d75eb00c5905c868a4b4b69a82a4
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341556"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879287"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity 設計程式
 在本節中，您將找到使用 Visual Studio Tools for Unity 應用程式開發介面的範例。
@@ -26,7 +26,4 @@ ms.locfileid: "94341556"
  以下是一些範例，示範如何使用 Visual Studio Tools for Unity 應用程式開發介面。
 
 ### <a name="customize-project-files-created-by-vstu"></a>自訂 VSTU 所建立的專案檔
- Visual Studio Tools for Unity 在專案檔產生期間提供 Unity 樣式回呼。 若要瞭解如何在每次重新產生專案檔時進行修改，請參閱 [範例：產生專案](./customize-project-files-created-by-vstu.md)檔。
-
-### <a name="share-the-unity-log-callback-with-vstu"></a>與 VSTU 共用 Unity 記錄回呼
- Visual Studio Tools for Unity 使用 Unity 註冊記錄回呼，以便將其主控台串流至 Visual Studio。 如果您的編輯器指令碼也使用 Unity 註冊記錄回呼，VSTU 回呼可能會與這個回呼相衝突。 若要瞭解如何與 VSTU 共用 Unity 記錄回呼，請參閱 [範例：記錄回呼](./share-the-unity-log-callback-with-vstu.md)。
+ Unity 提供專案檔產生期間的回呼。 若要瞭解如何在每次重新產生專案或方案檔時進行修改，請參閱 [範例：產生專案](./customize-project-files-created-by-vstu.md)檔。

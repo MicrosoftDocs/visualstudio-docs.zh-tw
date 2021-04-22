@@ -12,12 +12,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 12a6e122d6193b7aa98cf27668dab201bbb86ce4
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: a03d0fc896fcbc971bc62cd9391c4f38d0aad06c
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683479"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879378"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>變更記錄檔 (Visual Studio Tools for Unity，Windows)
 
@@ -328,7 +328,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - **集成：**
 
-  - 未來，Visual Studio Tools for Unity 只會支援 Visual Studio 2017 +。
+  - 接下來，Visual Studio Tools for Unity 只會支援 Visual Studio 2017 +。
 
 ## <a name="4400"></a>v4.4.0.0
 
@@ -360,7 +360,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - **集成：**
 
-  - 我們已藉由新增 Unity 專屬的診斷功能，deepened Visual Studio 針對 Unity 專案所擁有的瞭解。 我們也隱藏了對 Unity 專案不適用的通用 C# 診斷，讓 IDE 更有智慧。 例如，IDE 不會顯示快速修正來變更偵測器變數， `readonly` 讓您無法在 Unity 編輯器中修改變數。
+  - 我們已藉由新增 Unity 專屬的診斷，deepened 對 Unity 專案 Visual Studio 的瞭解。 我們也隱藏了對 Unity 專案不適用的通用 C# 診斷，讓 IDE 更有智慧。 例如，IDE 不會顯示快速修正來變更偵測器變數， `readonly` 讓您無法在 Unity 編輯器中修改變數。
     - [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0001.md)： Unity 訊息是由執行時間呼叫，即使它們是空的，也不會將其宣告為避免 Unity 執行時間的 unity 處理。
     - [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0002.md)：使用字串相等的標記比較比內建的 CompareTag 方法慢。
     - [`UNT0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0003.md)：型別安全的慣用 GetComponent 一般形式。
@@ -1879,9 +1879,9 @@ Visual Studio Tools for Unity 變更記錄。
 
 - 剖析資訊主控台訊息，以在按一下 [錯誤清單] 時，前往第一個含有符號的 StackFrame。
 
-- 新增 [應用程式開發介面](extensibility/customize-project-files-created-by-vstu.md) ，讓使用者參與專案產生。
+- 新增應用程式開發介面，讓使用者參與專案產生。
 
-- 新增 [應用程式開發介面](extensibility/share-the-unity-log-callback-with-vstu.md) ，讓使用者參與 LogCallback。
+- 新增應用程式開發介面，讓使用者參與 LogCallback。
 
 ### <a name="bug-fixes"></a>錯誤修正
 
