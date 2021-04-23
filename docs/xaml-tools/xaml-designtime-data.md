@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 4bd059fa82f8a959d6e3b8a843f19cbec636fb7e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 915fe38da63f0b3994a809b20515fdc18e0790ce
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880407"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913068"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>使用 XAML 設計工具的設計階段資料 Visual Studio
 
@@ -66,7 +66,10 @@ mc:Ignorable="d"
 
 ## <a name="design-time-data-for-listviews"></a>Listview 的設計階段資料
 
-Listview 是在桌面應用程式中顯示資料的常用方式。 不過，它們不會在沒有任何資料的情況下進行視覺化。 您可以使用這項功能來建立內嵌設計階段資料 ItemSource。 XAML 設計工具會在設計階段顯示 ListView 中該陣列的內容。 這是 WPF .NET Core 的範例。 若要使用 system： String 類型，請確定您已 `xmlns:system="clr-namespace:System;assembly=mscorlib` 在 XAML 標頭中包含。
+Listview 是在桌面應用程式中顯示資料的常用方式。 不過，它們不會在沒有任何資料的情況下進行視覺化。 您可以使用這項功能來建立內嵌設計階段資料 ItemSource 或專案。 XAML 設計工具會在設計階段顯示 ListView 中該陣列的內容。
+
+### <a name="wpf-net-core--example"></a>WPF .NET Core 範例
+若要使用 system： String 類型，請確定您已 `xmlns:system="clr-namespace:System;assembly=mscorlib` 在 XAML 標頭中包含。
 
 ```xml
 <StackPanel>
@@ -135,6 +138,22 @@ xmlns:models="clr-namespace:Cities.Models"
 [![使用 ListView 設計階段資料中的實際模型](media\xaml-design-time-listview-models.png "使用 ListView 的實際模型設計階段資料")](media\xaml-design-time-listview-models.png#lightbox)
 
 這裡的好處是您可以將控制項系結至模型的設計階段靜態版本。
+
+### <a name="uwp-example"></a>UWP 範例 
+
+UWP 中不支援 x:Array。 因此，我們可以 `<d:ListView.Items>` 改用。 若要使用 system： String 類型，請確定您已 `http://schemas.microsoft.com/winfx/2009/xaml` 在 XAML 標頭中包含。
+
+```xml
+    <StackPanel>
+        <ListView>
+            <d:ListView.Items>
+                <system:String>Item One</system:String>
+                <system:String>Item Two</system:String>
+                <system:String>Item Three</system:String>
+            </d:ListView.Items>
+        </ListView>
+    </StackPanel>
+```
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>使用自訂類型和屬性的設計階段資料
 

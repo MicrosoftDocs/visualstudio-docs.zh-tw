@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e6e7dfd0d677412ded44459c7850fa9028142c42
-ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
+ms.openlocfilehash: 863ba91f88ee953ce7d62179ff3b50aca5500c83
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107031576"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913055"
 ---
 # <a name="visual-studio-docs-whats-new-for-march-2021"></a>Visual Studio 檔：2021年3月的新功能
 
@@ -85,9 +85,9 @@ ms.locfileid: "107031576"
 ## <a name="ide"></a>IDE
 
 **新文章**
-- [Visual Studio 如何讓原始檔控制變得簡單](./git-visual-studio-source-control.md) -建立新的 Visual Studio 原始檔控制主題
+- [Visual Studio 如何讓原始檔控制變得簡單](../version-control/git-visual-studio-source-control.md) -建立新的 Visual Studio 原始檔控制主題
 - [開發人員命令提示字元和開發人員 powershell](./reference/command-prompt-powershell.md) -開發人員命令提示字元和開發人員 powershell
-- [Git 和 Team Explorer 的並列比較](./git-team-explorer-feature-comparison.md) -新增 Team Explorer 和新 Git 功能的並排比較頁面
+- [Git 和 Team Explorer 的並列比較](../version-control/git-team-explorer-feature-comparison.md) -新增 Team Explorer 和新 Git 功能的並排比較頁面
 
 **更新的文章**
 

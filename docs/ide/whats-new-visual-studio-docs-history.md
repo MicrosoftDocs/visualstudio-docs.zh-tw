@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 05af4933569e988b35bea9763a27d8f68aae3627
-ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
+ms.openlocfilehash: d29c8be82ba0461231d9cd02eb6799dd38a690ed
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107031589"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913029"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio 文件中的新功能歷程記錄
 
@@ -296,7 +296,7 @@ ms.locfileid: "107031589"
 
 **更新的文章**
 
-- [Visual Studio 中的 Git 體驗](./git-with-visual-studio.md)
+- [Visual Studio 中的 Git 體驗](../version-control/git-with-visual-studio.md)
   - 更新 & 中繼資料的替代文字
   - 16.8 GA 的新 Git 體驗內容更新
 - [Visual Studio 2019 的新功能](./whats-new-visual-studio-2019.md)
@@ -482,7 +482,7 @@ ms.locfileid: "107031589"
 
 **新文章**
 
-- [Visual Studio (preview 中的新 git 體驗) ](./git-with-visual-studio.md) -將新的 git 體驗內容新增 (預覽) 
+- [Visual Studio (preview 中的新 git 體驗) ](../version-control/git-with-visual-studio.md) -將新的 git 體驗內容新增 (預覽) 
 - [C + + EditorConfig 格式設定慣例](./cpp-editorconfig-properties.md) -新文章
 - [什麼是 GitHub Codespaces？ (preview) ](./codespaces/codespaces-overview.md) -新增 Codespaces (preview) 內容
 - [如何自訂 codespace (預覽) ](./codespaces/customize-codespaces.md) -新增 Codespaces (preview) 內容

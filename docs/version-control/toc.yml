@@ -1,0 +1,20 @@
+- name: 版本控制檔
+  href: index.yml
+- name: 概觀
+  items:
+    - name: Visual Studio 中的 Git 體驗
+      href: git-with-visual-studio.md
+    - name: Visual Studio 如何讓原始檔控制變得更容易
+      href: git-visual-studio-source-control.md
+- name: 開始使用
+  items:
+    - name: Visual Studio 中的 Git 和 GitHub 入門
+      href: /learn/modules/visual-studio-github-push/
+    - name: 比較 Git 和 Team Explorer 並存
+      href: git-team-explorer-feature-comparison.md
+- name: 最新消息
+  items:
+    - name: Visual Studio (Preview) 的 Git 增強生產力
+      href: 'https://devblogs.microsoft.com/visualstudio/enhanced-productivity-with-git-in-visual-studio/'
+    - name: Visual Studio 2019 版本資訊
+      href: /visualstudio/releases/2019/release-notes/

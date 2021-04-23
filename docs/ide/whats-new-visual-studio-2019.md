@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e1aca5e0f561539f3e27cf36dac67bb92c4ddf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9e4c432afb1a4341dbe30f023d95bfccb4689094
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082019"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913094"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -146,7 +146,7 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 
 **16.8** 中的新功能： Git 現在是 Visual Studio 2019 中的預設版本控制體驗。 我們已根據您在過去兩個版本中的意見反應，建立功能集並逐一查看。 所有人現在都已預設開啟新的體驗。 您可以從新的 Git 功能表複製、建立或開啟存放庫。 使用整合式 Git 工具視窗來認可和推送程式碼的變更、管理分支、隨時掌握遠端存放庫的最新狀態，以及解決合併衝突。
 
-如需詳細資訊，請參閱 [Visual Studio 頁面中的 Git 體驗](git-with-visual-studio.md) 。
+如需詳細資訊，請參閱 [Visual Studio 頁面中的 Git 體驗](../version-control/git-with-visual-studio.md) 。
 
 ### <a name="live-share"></a>Live Share
 
@@ -228,7 +228,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
    雖然新的 Git 版本控制體驗現已在 Visual Studio 2019 [16.8 版](/visualstudio/releases/2019/release-notes/)中預設為開啟，但我們仍會繼續新增功能，以增強最新預覽版本的體驗。
 
-   如需詳細資訊，請參閱 [Visual Studio 頁面中的 Git 體驗](git-with-visual-studio.md) 。
+   如需詳細資訊，請參閱 [Visual Studio 頁面中的 Git 體驗](../version-control/git-with-visual-studio.md) 。
 
 如需預覽版本的詳細資訊 &mdash; 和下載連結，如果您想要試用， &mdash; 請參閱 **[Visual Studio 預覽](https://aka.ms/vspreview/)** 頁面。
 

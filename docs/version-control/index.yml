@@ -1,0 +1,48 @@
+### YamlMime:Landing
+title: Visual Studio 版本控制檔
+summary: 使用版本控制技術（例如 Git 和 GitHub），在 Visual Studio 2019 內共用您的程式碼。
+metadata:
+  title: Visual Studio 中的版本控制
+  description: Git 和 GitHub 等版本控制技術可直接從 Visual Studio 內取得。 您可以使用它們來共用和管理您的程式碼，而不需要離開程式碼基底。
+  ms.topic: landing-page
+  ms.date: 04/20/2021
+  author: TerryGLee
+  ms.author: tglee
+  manager: jmartens
+  ms.prod: visual-studio-windows
+  ms.technology: vs-general-ide
+  ms.openlocfilehash: a377d39b0d8184dc7aca038238f2dacb0345627d
+  ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 04/23/2021
+  ms.locfileid: "107917720"
+landingContent:
+- title: 概觀
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Visual Studio 中的 Git 體驗
+      url: git-with-visual-studio.md
+  - linkListType: concept
+    links:
+    - text: Visual Studio 如何讓原始檔控制變得更容易
+      url: git-visual-studio-source-control.md
+- title: 開始使用
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Visual Studio 中的 Git 和 GitHub 入門
+      url: /learn/modules/visual-studio-github-push/
+  - linkListType: how-to-guide
+    links:
+    - text: 比較 Git 和 Team Explorer 並存
+      url: git-team-explorer-feature-comparison.md
+- title: 最新消息
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Visual Studio (Preview) 的 Git 增強生產力
+      url: https://devblogs.microsoft.com/visualstudio/enhanced-productivity-with-git-in-visual-studio/
+    - text: Visual Studio 2019 版本資訊
+      url: /visualstudio/releases/2019/release-notes/
