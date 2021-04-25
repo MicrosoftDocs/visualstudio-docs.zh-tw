@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 461e68979de6c3b711c05cc4be3ef9d5bd761397
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: df3d32bfedfc730b8fae0837ce0e48f50e6496f4
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885933"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941145"
 ---
 # <a name="create-a-c-extension-for-python"></a>建立適用於 Python 的 C++ 延伸模組
 
@@ -399,16 +399,16 @@ Visual Studio 可支援同時偵錯 Python 和 C++ 程式碼。 本節將逐步�
 
 有各種方式可以建立 Python 延伸模組，如下表所述。 CPython 及 PyBind11 的前兩個項目已在本文中討論。
 
-| 方法 | 老式 | 代表使用者 | 正面意見 | 反面意見 |
-| --- | --- | --- | --- | --- |
-| 適用於 CPython 的 C/C++ 延伸模組 | 1991 | 標準程式庫 | [大量文件與教學課程](https://docs.python.org/3/c-api/)。 完全控制。 | 編譯、可攜性、參考管理。 高度 C 知識。 |
-| [PyBind11](https://github.com/pybind/pybind11) (建議用於 c + +)  | 2015 |  | 輕量型、僅限標頭的程式庫，適合建立現有 C++ 程式碼的 Python 繫結。 低相依性。 PyPy 相容性。 | 較新穎、較不成熟。 大量使用 C++11 功能。 支援編譯器的簡短清單 (包含 Visual Studio)。 |
-| Cython (建議用於 C) | 2007 | [gevent](https://www.gevent.org/)、[kivy](https://kivy.org/) | 類似 Python。 高度成熟。 高效能。 | 編譯、新的語法和新的工具鏈。 |
-| [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | 幾乎可搭配每種 C++ 編譯器使用。 | 大型且複雜的程式庫套件，包含許多舊型編譯器的因應措施。 |
-| ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 不需編譯、廣泛可用。 | 存取與變更 C 結構麻煩又容易出錯。 |
-| SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | 一次產生許多語言的繫結。 | 如果 Python 是唯一的目標，負荷會過大。 |
-| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/)、[pypy](https://pypy.org/) | 輕鬆整合、PyPy 相容性。 | 較新穎、較不成熟。 |
-| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | 類似於使用 C++ 的 cffi。 | 較新，搭配 VS 2017 使用時可能會有一些問題。 |
+| 方法 | 老式 | 代表使用者 | 
+| --- | --- | --- |
+| 適用於 CPython 的 C/C++ 延伸模組 | 1991 | 標準程式庫 | 
+| [PyBind11](https://github.com/pybind/pybind11) (建議用於 c + +)  | 2015 |  |
+| Cython (建議用於 C) | 2007 | [gevent](https://www.gevent.org/)、[kivy](https://kivy.org/) |
+| [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | |
+| ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 
+| SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | 
+| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/)、[pypy](https://pypy.org/) |
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | |
 
 ## <a name="see-also"></a>另請參閱
 

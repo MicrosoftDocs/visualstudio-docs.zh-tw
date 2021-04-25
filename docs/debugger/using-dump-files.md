@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 993b5f61d8517d5638cb785fa2d79b47f80d1caf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3b72db232e5e83a0d83fbab1d1223da507054d9
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940549"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941119"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中傾印檔案
 
@@ -43,6 +43,10 @@ Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔
 ## <a name="requirements-and-limitations"></a><a name="BKMK_Requirements_and_limitations"></a> 需求和限制
 
 - 若要從64位的電腦來偵測傾印檔案，Visual Studio 必須在64位電腦上執行。
+
+::: moniker range=">= vs-2019"
+- Visual Studio 可以從 Linux OS 進行受管理應用程式的傾印檔案的偵錯工具。 
+::: moniker-end
 
 - Visual Studio 可以對來自 ARM 裝置的原生應用程式傾印檔案進行偵錯。 它也可以從 ARM 裝置進行受管理應用程式的傾印，但只能從原生偵錯工具進行。
 
@@ -116,6 +120,7 @@ Visual Studio 會自動搜尋這些位置，以尋找未包含在傾印檔案中
 
 ## <a name="see-also"></a>另請參閱
 
+- [如何使用 .NET 診斷分析器來對 managed 記憶體傾印進行偵錯工具](../debugger/how-to-debug-managed-memory-dump.md)
 - [即時調試](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [指定符號 ( .pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

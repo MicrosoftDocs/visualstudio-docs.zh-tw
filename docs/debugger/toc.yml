@@ -688,6 +688,8 @@
       items:
         - name: 使用傾印檔案
           href: using-dump-files.md
+        - name: 調試 managed 記憶體傾印
+          href: how-to-debug-managed-memory-dump.md
         - name: 傾印檔案摘要擴充性 API
           href: dump-file-summary-extensibility-api.md
     - name: 偵錯工具安全性

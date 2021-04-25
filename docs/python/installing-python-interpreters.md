@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c4cd4c110b55837009ea9d081a95180727d331
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8070bb93a1dd76ad29832afae15d83788300ae7a
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916524"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941106"
 ---
 # <a name="install-python-interpreters"></a>安裝 Python 解譯器
 
@@ -29,7 +29,7 @@ ms.locfileid: "99916524"
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio 支援 Python 2.7 版，以及 3.5 版及更新版本。 雖然您可能可以使用 Visual Studio 來編輯以其他 Python 版本所撰寫的程式碼，那些版本並非正式支援的版本，因此 IntelliSense 和偵錯之類的功能可能會無法運作。
+> Visual Studio 支援 Python 2.7 版以及3.5 版至3.7。 雖然您可能可以使用 Visual Studio 來編輯以其他 Python 版本所撰寫的程式碼，那些版本並非正式支援的版本，因此 IntelliSense 和偵錯之類的功能可能會無法運作。
 ::: moniker-end
 
 針對 **Visual Studio 2015 及更早版本**，您必須手動安裝其中一個解譯器。
