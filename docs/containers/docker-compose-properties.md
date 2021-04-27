@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 04/06/2021
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 7f1ebb11133c640c2e0bdcfd84660592792d4205
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: ed4b2a0dc1dc7a0520bf8e83ab1968a3815196e0
+ms.sourcegitcommit: e12d6cdaeb37564f05361965db2ec8ad0d4f21ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825000"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108025861"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 組建屬性
 
@@ -37,16 +37,17 @@ ms.locfileid: "107825000"
 | 屬性名稱 | Location | 描述 | 預設值  |
 |---------------|----------|-------------|----------------|
 |AdditionalComposeFilePaths|docker-compose.dcproj|以分號分隔的清單，指定要傳送給所有命令 docker-compose.exe 的其他撰寫檔。 允許 (docker-compose.dcproj) 的 docker 撰寫專案檔的相對路徑。|-|
-|DockerComposeBaseFilePath|docker-compose.dcproj|指定 docker 組成檔案的第一個部分，不含副檔名為 *yml* 的檔案。 例如： <br>1. DockerComposeBaseFilePath = null/undefined：使用以 *docker 撰寫* 的基底檔案路徑，檔案將命名為 *>docker-compose.yml. yml* 和 *>docker-compose.yml. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*：檔案將命名為 *mydockercompose. yml* 和 *mydockercompose。 yml*<br> 3. DockerComposeBaseFilePath = *.。。\mydockercompose*：檔案將會啟動一個層級。 |>docker-compose.yml|
-|DockerComposeBuildArguments|docker-compose.dcproj|指定要傳遞給命令的額外參數 `docker-compose build` 。 例如， `--parallel --pull` |
-|DockerComposeDownArguments|docker-compose.dcproj|指定要傳遞給命令的額外參數 `docker-compose down` 。 例如， `--timeout 500`|-|
+|DockerComposeBaseFilePath|docker-compose.dcproj|指定 docker 組成檔案的第一個部分，不含副檔名為 *yml* 的檔案。 例如： <br>1. DockerComposeBaseFilePath = null/undefined：使用以 *docker 撰寫* 的基底檔案路徑，檔案將命名為 *>docker-compose.yml. yml* 和 *>docker-compose.yml. yml*。<br>2. DockerComposeBaseFilePath = *mydockercompose*：檔案將命名為 *mydockercompose. yml* 和 *mydockercompose. yml*。<br> 3. DockerComposeBaseFilePath = *.。。\mydockercompose*：檔案將會啟動一個層級。 |>docker-compose.yml|
+|DockerComposeBuildArguments|docker-compose.dcproj|指定要傳遞給命令的額外參數 `docker-compose build` 。 例如： `--parallel --pull` 。 |
+|DockerComposeDownArguments|docker-compose.dcproj|指定要傳遞給命令的額外參數 `docker-compose down` 。 例如： `--timeout 500` 。|-|  
 |DockerComposeProjectName| docker-compose.dcproj | 如果有指定，會覆寫 docker 撰寫專案的專案名稱。 | "dockercompose" + 自動產生的雜湊 |
 |DockerComposeProjectPath|.csproj 或 vbproj|Docker 撰寫專案的相對路徑 (docker-compose.dcproj) 檔。 發佈服務專案時設定此屬性，以尋找儲存在 >docker-compose.yml. yml 檔案中的相關聯映射組建設定。|-|
-|DockerComposeUpArguments|docker-compose.dcproj|指定要傳遞給命令的額外參數 `docker-compose up` 。 例如， `--timeout 500`|-|
-|DockerDevelopmentMode|docker-compose.dcproj| 控制是否啟用「內部主機」優化 ( 「快速模式」的偵錯工具) 。  允許的值為 `Fast` 和 `Regular` 。 | `Fast` 在 Debug 設定或 `Regular` 所有其他設定中 |
-|DockerLaunchAction| docker-compose.dcproj | 指定要在 F5 或 Ctrl + F5 執行的啟動動作。  允許的值為 None、LaunchBrowser 和 LaunchWCFTestClient。|無|
+|DockerComposeProjectsToIgnore|docker-compose.dcproj| 指定要在 debug 期間由 docker 撰寫工具忽略的專案。 這個屬性可用於任何專案。 您可以透過下列兩種方式之一來指定檔案路徑： <br> 1. 相對於 docker-compose.dcproj。 例如： `<DockerComposeProjectsToIgnore>path\to\AngularProject1.csproj</DockerComposeProjectsToIgnore>` 。 <br> 2. 絕對路徑。<br> **注意**：路徑應以分隔符號分隔 `;` 。|-|
+|DockerComposeUpArguments|docker-compose.dcproj|指定要傳遞給命令的額外參數 `docker-compose up` 。 例如： `--timeout 500` 。|-|
+|DockerDevelopmentMode| docker-compose.dcproj | 控制使用者專案是否建立在容器中。 允許的 **快速** 或 **一般** 控制項值， [是](https://aka.ms/containerfastmode) 以 Dockerfile 建立的階段。 依預設，Debug 設定為快速模式，否則為一般模式。 | 快速 |
+|DockerLaunchAction| docker-compose.dcproj | 指定要在 F5 或 Ctrl + F5 執行的啟動動作。  允許的值為 None、LaunchBrowser 和 LaunchWCFTestClient。 | 無 |
 |DockerLaunchBrowser| docker-compose.dcproj | 指出是否要啟動瀏覽器。 如果已指定 DockerLaunchAction，則會忽略。 | 否 |
-|DockerServiceName| docker-compose.dcproj|如果指定了 DockerLaunchAction 或 DockerLaunchBrowser，則 DockerServiceName 是應啟動之服務的名稱。  您可以使用這個屬性來判斷哪些專案可能會啟動 docker 組成檔案可以參考的專案。|-|
+|DockerServiceName| docker-compose.dcproj| 如果指定 DockerLaunchAction 或 DockerLaunchBrowser，則 DockerServiceName 會指定啟動 docker 組成檔案中參考的服務。|-|
 |DockerServiceUrl| docker-compose.dcproj | 要在啟動瀏覽器時使用的 URL。  有效的取代權杖為 "{ServiceIPAddress}"、"{ServicePort}" 和 "{配置}"。  例如： {配置}：//{ServiceIPAddress}： {ServicePort}|-|
 |DockerTargetOS| docker-compose.dcproj | 建立 Docker 映射時所使用的目標 OS。|-|
 
