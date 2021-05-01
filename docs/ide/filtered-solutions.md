@@ -3,7 +3,6 @@ title: 載入專案的子集
 description: 瞭解解決方案篩選，以及它如何讓您快速地在方案中載入專案的子集。
 ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
-ms.prod: visual-studio-dev16
 ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
@@ -12,12 +11,12 @@ author: TerryGLee
 ms.author: stsu
 manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 3fc64b5f0623a03443278eaa8e4ee1f47b86da38
-ms.sourcegitcommit: 30c404655fb83ea28f96ab1edb1c09b4d8d7eec4
+ms.openlocfilehash: ea30edbaac7248af8e1a58b76aebd66cf44befba
+ms.sourcegitcommit: a667ce8394a800906d633737f4fcbc77f0fcba7b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "108217193"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108298726"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中已篩選的方案
 
@@ -30,6 +29,9 @@ ms.locfileid: "108217193"
 - 當您重新開啟方案時，Visual Studio 會記住您在先前的工作階段中載入了哪些專案，並僅載入這些專案。
 
 - 您可以建立方案篩選檔案以儲存一或多個專案載入組態，或與團隊成員共用組態。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。
 
 ## <a name="open-a-filtered-solution"></a>開啟已篩選的方案
 
