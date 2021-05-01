@@ -1,18 +1,18 @@
 ---
 title: 使用 XAML 設計工具的設計階段資料 Visual Studio
 description: 瞭解如何在 XAML 中使用設計階段資料。
-ms.date: 11/17/2020
+ms.date: 04/22/2021
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 915fe38da63f0b3994a809b20515fdc18e0790ce
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.openlocfilehash: a9f7f23625bb01c227158f720260f14347d39f9d
+ms.sourcegitcommit: 60b7a6159045a44293043a519c8ea6d915bf2c31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107913068"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "108334937"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>使用 XAML 設計工具的設計階段資料 Visual Studio
 
@@ -68,7 +68,7 @@ mc:Ignorable="d"
 
 Listview 是在桌面應用程式中顯示資料的常用方式。 不過，它們不會在沒有任何資料的情況下進行視覺化。 您可以使用這項功能來建立內嵌設計階段資料 ItemSource 或專案。 XAML 設計工具會在設計階段顯示 ListView 中該陣列的內容。
 
-### <a name="wpf-net-core--example"></a>WPF .NET Core 範例
+### <a name="wpf-net-core-example"></a>WPF .NET Core 範例
 若要使用 system： String 類型，請確定您已 `xmlns:system="clr-namespace:System;assembly=mscorlib` 在 XAML 標頭中包含。
 
 ```xml
@@ -139,7 +139,7 @@ xmlns:models="clr-namespace:Cities.Models"
 
 這裡的好處是您可以將控制項系結至模型的設計階段靜態版本。
 
-### <a name="uwp-example"></a>UWP 範例 
+### <a name="uwp-example"></a>UWP 範例
 
 UWP 中不支援 x:Array。 因此，我們可以 `<d:ListView.Items>` 改用。 若要使用 system： String 類型，請確定您已 `http://schemas.microsoft.com/winfx/2009/xaml` 在 XAML 標頭中包含。
 

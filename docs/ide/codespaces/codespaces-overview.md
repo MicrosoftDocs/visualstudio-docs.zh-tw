@@ -3,25 +3,25 @@ title: GitHub Codespaces (Preview) 總覽
 description: 深入瞭解 GitHub Codespaces Visual Studio，以及它如何協助將您的開發環境延伸到雲端。
 ms.topic: overview
 ms.date: 09/04/2020
-author: TerryGLee
-ms.author: tglee
+author: gregvanl
+ms.author: gregvanl
 manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: a4bf2cf948b6df65ee0407c1cc736e8056820a54
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: ab50c3c2df2cfad6d489d800f47624503844dc9d
+ms.sourcegitcommit: a667ce8394a800906d633737f4fcbc77f0fcba7b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672783"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108298739"
 ---
 # <a name="what-is-github-codespaces-preview"></a>什麼是 GitHub Codespaces？ (預覽)
 
-> [!Important] 
-> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 我們建議您參與我們的 [開發人員社區論壇](https://developercommunity.visualstudio.com/home) ，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。 
+> [!Important]
+> 自2021年4月12日起，將不再支援從 Visual Studio 2019 連接到 GitHub Codespaces，且此私人預覽已結束。 我們著重于針對一組廣泛的 Visual Studio 工作負載優化的雲端式內部迴圈和 VDI 解決方案的不斷演進體驗。 我們建議您參與我們的 [開發人員社區論壇](https://developercommunity.visualstudio.com/home) ，以取得 Visual Studio 的詳細資訊，以取得未來預覽和藍圖資訊的相關資訊。
 
 歡迎使用 Codespaces！ 很高興您在這裡。
 
@@ -39,9 +39,9 @@ GitHub Codespaces 功能是以一些基本概念為基礎。 本節涵蓋這些�
 
 現今許多開發人員都嘗試在以特定開發和執行時間堆疊設定的遠端設定或 Vm 中撰寫程式碼。 因為它太難、過度干擾，而且在某些情況下，在本機設定這些開發環境幾乎不可能發生。 此外，個人還想要試用新的技術或新的架構，而不必擔心「因為各家」他們的日常工作所需的機器。
 
-雖然使用遠端環境和遠端功能的工具可讓開發人員使用，但通常會造成機器管理的額外負荷。 環境設定通常會讓上線和內容切換變得複雜。 GitHub Codespaces 可讓許多環境同時存在，以移除快速上線和內容切換的阻礙。 
+雖然使用遠端環境和遠端功能的工具可讓開發人員使用，但通常會造成機器管理的額外負荷。 環境設定通常會讓上線和內容切換變得複雜。 GitHub Codespaces 可讓許多環境同時存在，以移除快速上線和內容切換的阻礙。
 
-GitHub Codespaces 提供受控解決方案，可讓您專注于設定的生產力。 GitHub Codespaces 在概念上和技術上擴充了 Visual Studio 2019 以進行遠端開發。 
+GitHub Codespaces 提供受控解決方案，可讓您專注于設定的生產力。 GitHub Codespaces 在概念上和技術上擴充了 Visual Studio 2019 以進行遠端開發。
 
 ### <a name="about-codespaces"></a>關於 codespaces
 

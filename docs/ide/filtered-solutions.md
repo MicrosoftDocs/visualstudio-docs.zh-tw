@@ -8,16 +8,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
 - solution filtering
-author: jillre
+author: TerryGLee
 ms.author: stsu
 manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: eae0d02e1fff3f9ad5b35384e6ccab599805372b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3fc64b5f0623a03443278eaa8e4ee1f47b86da38
+ms.sourcegitcommit: 30c404655fb83ea28f96ab1edb1c09b4d8d7eec4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869384"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "108217193"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中已篩選的方案
 

@@ -52,3 +52,5 @@
       href: overview-bridge-to-kubernetes.md
     - name: 設定 Bridge to Kubernetes
       href: configure-bridge-to-kubernetes.md
+    - name: 使用 Azure AD Bridge 的受控識別來 Kubernetes
+      href: managed-identity.md
