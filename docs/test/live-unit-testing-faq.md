@@ -11,11 +11,11 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 ms.openlocfilehash: bb2c9a4cae25b388d5817b04ff54f6e6443b2f44
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329285"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108800474"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
@@ -33,7 +33,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 如果您有較舊的 MSTest 測試專案參考， `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 而您不想要移至新版 Mstest NuGet 套件，請升級至 Visual Studio 2019 或 Visual Studio 2017。
 
-在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 您可以藉由執行方案的明確組建 (**Build**  >  從最上層 Visual Studio) 功能表選取 [組建 **重建方案**]，或在方案上按一下滑鼠右鍵，然後選取 [**還原 NuGet 套件**]，再啟用即時單元測試，來還原封裝。
+在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 您可以藉由執行方案的明確組建 (  >  從最上層 Visual Studio) 功能表選取 [組建 **重建方案**]，或在方案上按一下滑鼠右鍵，然後選取 [**還原 NuGet 套件**]，再啟用即時單元測試，來還原封裝。
 
 ## <a name="net-core-support"></a>.NET Core 支援
 

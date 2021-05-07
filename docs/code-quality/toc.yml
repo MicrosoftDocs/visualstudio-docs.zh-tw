@@ -49,7 +49,7 @@
             - name: 隱藏程式碼分析違規項目
               href: in-source-suppression-overview.md
         - name: 常見問題集
-          href: analyzers-faq.md
+          href: analyzers-faq.yml
     - name: 舊版分析
       items:
         - name: 概觀
@@ -92,7 +92,7 @@
             - name: 從 FxCop 分析器移轉至 .NET 分析器
               href: migrate-from-fxcop-analyzers-to-net-analyzers.md
             - name: 常見問題集
-              href: net-analyzers-faq.md
+              href: net-analyzers-faq.yml
         - name: 規則集
           items:
             - name: 概觀

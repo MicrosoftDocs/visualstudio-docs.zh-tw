@@ -13,11 +13,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 9bd8a80f7f6d11587c9f0cd5c6b9bf96e38a0a74
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873233"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108800472"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中快照集偵錯的常見問題集
 

@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: e435502587e65bd694567f4100516a91fa97cc0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6f9c36b1b64abe648c3aa9014c633e4e4949b1a
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867863"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798254"
 ---
 # <a name="migrate-from-fxcop-analyzers-to-net-analyzers"></a>從 FxCop 分析器移轉至 .NET 分析器
 
@@ -49,8 +49,8 @@ ms.locfileid: "99867863"
 
 ## <a name="see-also"></a>另請參閱
 
-- [原始碼分析與舊版分析](net-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-net-analyzers)
+- [原始碼分析與舊版分析](net-analyzers-faq.yml#what-s-the-difference-between-legacy-fxcop-and--net-analyzers-)
 - [從舊版分析移轉至 .NET 分析器](migrate-from-legacy-analysis-to-net-analyzers.md)
 - [啟用或安裝 .NET 分析器](install-net-analyzers.md)
-- [.NET 分析器的常見問題](net-analyzers-faq.md)
+- [.NET 分析器的常見問題](net-analyzers-faq.yml)
 - [設定 .NET 分析器](/dotnet/fundamentals/code-analysis/code-quality-rule-options)

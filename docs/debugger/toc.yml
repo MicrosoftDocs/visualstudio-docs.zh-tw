@@ -415,7 +415,7 @@
         - name: 對即時 Azure Kubernetes 應用程式偵錯
           href: debug-live-azure-kubernetes.md
         - name: 快照集偵錯的常見問題集
-          href: debug-live-azure-apps-faq.md
+          href: debug-live-azure-apps-faq.yml
         - name: 針對快照集偵錯進行疑難排解
           href: debug-live-azure-apps-troubleshooting.md
         - name: 時間移動偵錯即時 Azure 虛擬機器應用程式
@@ -949,6 +949,6 @@
 - name: 資源
   items:
     - name: 常見問題集 - 尋找您的偵錯功能
-      href: find-your-debugging-task.md
+      href: find-your-debugging-task.yml
     - name: Visual Studio 中偵錯工具的新功能
       href: what-s-new-for-the-debugger-in-visual-studio.md

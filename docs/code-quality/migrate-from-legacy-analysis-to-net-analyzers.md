@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 96a0c0b7fa1f2c703cefde31070ed98c5edddcb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a673e7467816e71b8240de9e5f68840c9188dcd
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859758"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798228"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-net-analyzers"></a>從舊版分析 (FxCop) 遷移至來源分析 ( .NET 分析器) 
 
@@ -28,11 +28,11 @@ ms.locfileid: "99859758"
 
 如需舊版分析和來源分析之間差異的詳細資訊，請參閱下列各項：
 
-- [原始碼分析與舊版分析](../code-quality/net-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-net-analyzers)
+- [原始碼分析與舊版分析](../code-quality/net-analyzers-faq.yml#what-s-the-difference-between-legacy-fxcop-and--net-analyzers-)
 
-- [.NET 分析器的常見問題](../code-quality/net-analyzers-faq.md)
+- [.NET 分析器的常見問題](../code-quality/net-analyzers-faq.yml)
 
-## <a name="migration"></a>遷移
+## <a name="migration"></a>移轉
 
 若要遷移至來源分析，請 [啟用或安裝 .net 分析器](install-net-analyzers.md)。 如同舊版分析規則違規，原始程式碼分析違規會出現在 Visual Studio 的 [錯誤清單] 視窗中。 此外，來來源程式代碼分析違規也會在程式碼編輯器中顯示為有問題的程式碼下的 *波浪線* 。 波形曲線色彩取決於規則的[嚴重性設定](../code-quality/use-roslyn-analyzers.md#configure-severity-levels)。 若要查看已移植至新 .NET 分析器之規則的狀態，請參閱 [移植和 unported 規則](../code-quality/fxcop-rule-port-status.md)。
 

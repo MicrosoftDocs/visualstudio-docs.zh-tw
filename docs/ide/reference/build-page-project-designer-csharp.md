@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95404beb5c2be5363c9ef91e770237b453970429
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91b254f4c075693e23d8f650356cd97e86a4c746
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836445"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798553"
 ---
 # <a name="build-page-project-designer-c"></a>專案設計工具、建置頁 (C#)
 
@@ -119,7 +119,7 @@ ms.locfileid: "99836445"
 **特定警告** -將指定的警告視為錯誤。 請以逗號或分號分隔多個警告編號。
 
 > [!TIP]
-> 如果您不想要將程式碼分析警告視為錯誤，請參閱程式 [代碼分析常見問題](../../code-quality/analyzers-faq.md#treat-warnings-as-errors)。
+> 如果您不想要將程式碼分析警告視為錯誤，請參閱程式 [代碼分析常見問題](/visualstudio/code-quality/analyzers-faq#treat-warnings-as-errors)。
 
 ## <a name="output"></a>輸出
 

@@ -12,11 +12,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c215b232c64b97c57285618056ee4675587b48e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870710"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108800471"
 ---
 # <a name="faq---find-the-debugging-feature-you-need-in-visual-studio"></a>常見問題-在 Visual Studio 中尋找您需要的調試功能
 

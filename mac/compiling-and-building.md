@@ -4,14 +4,14 @@ description: 本文描述如何在 Visual Studio for Mac 中編譯和建置專�
 ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 08/29/2019
+ms.date: 05/03/2021
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: b4f1cfc3dfdffcc3dd4cb90cd7d29d4333578b9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24c57907afedb4f02068a071d2c9f81eb8962bb
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71128412"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108640970"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中編譯和建置
 
@@ -27,7 +27,7 @@ Visual Studio for Mac 可用來在專案開發期間建置應用程式和建立�
 | MSBuild 命令列| - 無須安裝 Visual Studio for Mac 即可建置專案。<br />- 對所有專案類型執行多處理器建置。<br />- 自訂建置系統大部分的區域。|
 | Azure Pipelines | - 將建置流程自動化，這是持續整合/持續傳遞管線的一部分。<br />- 在每個組建套用自動化的測試。<br />- 在建置流程採用幾乎不受限制的雲端式資源。<br />- 修改建置工作流程，以及建立建置活動以執行深入自訂的工作。|
 
-本節文件進一步說明使用 IDE 的建置流程詳細資料。 如需有關透過命列列建置應用程式的詳細資訊，請參閱 [MSBuild](/visualstudio/msbuild/msbuild)。 如需有關使用 Azure Pipelines 來建置應用程式的詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines)。
+本節文件進一步說明使用 IDE 的建置流程詳細資料。 若要從命令列建立應用程式，而不安裝 Visual Studio for Mac，您可以安裝最新的 [.NET Core SDK](https://dotnet.microsoft.com/download)。 如需有關透過命列列建置應用程式的詳細資訊，請參閱 [MSBuild](/visualstudio/msbuild/msbuild)。 如需有關使用 Azure Pipelines 來建置應用程式的詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines)。
 
 
 > [!NOTE]

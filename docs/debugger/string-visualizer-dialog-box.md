@@ -2,7 +2,7 @@
 title: 字串視覺化對話方塊 |Microsoft Docs
 description: 當您在 Visual Studio 中進行調試時，使用內建的 [字串視覺化檢視] 對話方塊來查看字串。
 ms.date: 10/10/2018
-ms.custom: seoapril2019, SEO-VS-2020
+ms.custom: contperf-fy21q4
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3084db99226ab268bb6ce70611628dcafcf1753b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85092f6a339fdaaa3ddaa56112cc351d8b8e9bdc
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904281"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108640835"
 ---
 # <a name="string-visualizer-dialog-box"></a>[字串視覺化檢視] 對話方塊
 
 當您在 Visual Studio 中進行調試時，您可以使用內建的字串視覺化檢視來查看字串。 字串視覺化檢視會顯示對資料提示或偵錯工具視窗而言太長的字串。 它也可以協助您識別格式錯誤的字串。
 
-內建的字串視覺化檢視包含純文字、XML、HTML 和 JSON 選項。 您也可以從自動變數或其他偵錯工具視窗，開啟一些其他 **類型的內** 建視覺化檢視，例如 [資料集、DataTable 和 DataView](../debugger/dataset-visualizer-dialog-box.md)物件。
+內建的字串視覺化檢視包括 [Text](#text-string-data)、 [XML](#xml-string-data)、 [HTML](#html-string-data)和 [JSON](#json-string-data) 選項。 您也可以從自動變數或其他偵錯工具視窗，開啟一些其他 **類型的內** 建視覺化檢視，例如 [資料集、DataTable 和 DataView](../debugger/dataset-visualizer-dialog-box.md)物件。
 
 > [!NOTE]
 > 如果您需要在視覺化檢視中檢查 XAML 或 WPF UI 元素，請參閱或在 [調試過程中檢查 xaml 屬性](../xaml-tools/inspect-xaml-properties-while-debugging.md) ，或是 [如何使用 WPF 樹狀結構視覺化檢視](../debugger/how-to-use-the-wpf-tree-visualizer.md)。
@@ -44,6 +44,12 @@ ms.locfileid: "99904281"
 [**運算式**] 欄位會顯示您要停留在上面的變數或運算式。
 
 **值** 欄位：顯示字串值。 空白 **值** 表示選擇的視覺化程式無法辨識字串。 例如， **Xml 視覺化檢視** 會顯示沒有 XML 標記之文字字串的空白 **值** ，或 JSON 字串。 若要查看所選的視覺化程式無法辨識的字串，請改為選擇 **文字視覺化檢視** 。 **文字視覺化檢視** 會顯示純文字。
+
+### <a name="text-string-data"></a>文字字串資料
+
+**文字視覺化檢視** 會顯示純文字。 如果您需要 c + + 字串的自訂格式，請建立 [Natvis 視覺效果](../debugger/create-custom-views-of-native-objects.md)。
+
+![文字字串視覺化](../debugger/media/dbg-string-visualizer-text.png "文字字串視覺化")
 
 ### <a name="json-string-data"></a>JSON 字串資料
 

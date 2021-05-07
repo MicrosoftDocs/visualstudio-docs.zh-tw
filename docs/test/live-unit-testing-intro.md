@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c3e8220857a454dc7ab5c7cb6308650075f9577
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c4da809455a859479d0421bffaa1b257a18c4b5
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887740"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798514"
 ---
 # <a name="live-unit-testing-overview"></a>Live Unit Testing 總覽
 
@@ -34,7 +34,7 @@ Live Unit Testing 指出您的單元測試是否充分涵蓋您的程式碼。 �
 
 - 閱讀詳細檔： [使用 Live Unit Testing 搭配 Visual Studio Enterprise 版](live-unit-testing.md)。
 
-- 閱讀 [LIVE UNIT TESTING 常見問題](live-unit-testing-faq.md) 以瞭解 Live Unit Testing 的新功能，以及秘訣和技巧。
+- 閱讀 [LIVE UNIT TESTING 常見問題](live-unit-testing-faq.yml) 以瞭解 Live Unit Testing 的新功能，以及秘訣和技巧。
 
 - 觀看 Channel 9 影片，以了解 Live Unit Testing 和其功能的概觀。</p>
 

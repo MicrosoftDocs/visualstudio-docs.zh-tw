@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: eb0db0bab5295925f71a81645e64fdeb5f2077df
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f8aabb109de02a1beec326407472a841fe16425a
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809566"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798449"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>使用快照偵錯工具在 Azure 虛擬機器上記錄和重新播放即時 ASP.NET 應用程式
 
@@ -35,9 +35,9 @@ ms.locfileid: "90809566"
 > * 設定快照點並收集時間移動記錄
 > * 開始進行時間移動記錄的調試
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
-* Azure 虛擬機器 (VM) 的時間移動偵錯工具，僅適用于使用 **azure 開發工作負載**的 Visual Studio 2019 Enterprise 或更高版本。 (您可以在 [個別元件]**** 索引標籤下的 [偵錯和測試]**** > [快照偵錯工具]**** 底下找到它。)
+* Azure 虛擬機器 (VM) 的時間移動偵錯工具，僅適用于使用 **azure 開發工作負載** 的 Visual Studio 2019 Enterprise 或更高版本。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具]底下找到它。)
 
     如果尚未安裝，請安裝 [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
 
@@ -56,9 +56,9 @@ ms.locfileid: "90809566"
       ![選取 Azure 資源](../debugger/media/time-travel-debugging-select-azure-resource-vm.png)
 
     > [!IMPORTANT]
-    > 第一次為 VM 選取 [附加快照偵錯工具]**** 時，IIS 會自動重新啟動。
+    > 第一次為 VM 選取 [附加快照偵錯工具] 時，IIS 會自動重新啟動。
 
-    **模組**的中繼資料一開始不會啟用。 流覽至 web 應用程式，[ **開始收集** ] 按鈕就會變成作用中狀態。 Visual Studio 現在已經處於快照集偵錯模式。
+    **模組** 的中繼資料一開始不會啟用。 流覽至 web 應用程式，[ **開始收集** ] 按鈕就會變成作用中狀態。 Visual Studio 現在已經處於快照集偵錯模式。
 
    ![快照集偵錯模式](../debugger/media/snapshot-message.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "90809566"
 
    ![收集時間移動追蹤至方法的結尾](../debugger/media/time-travel-debugging-set-snappoint-action.png)
 
-1. 按一下 [開始收集]**** 以開啟快照點。
+1. 按一下 [開始收集] 以開啟快照點。
 
    ![開啟快照點](../debugger/media/snapshot-start-collection.png)
 
@@ -89,13 +89,13 @@ ms.locfileid: "90809566"
 
 ## <a name="start-debugging-a-time-travel-recording"></a>開始進行時間移動記錄的調試
 
-1. 叫用快照點時，[診斷工具] 視窗中會顯示快照點。 若要開啟此視窗，請選擇 [偵錯] > [Windows] > [顯示診斷工具]****。
+1. 叫用快照點時，[診斷工具] 視窗中會顯示快照點。 若要開啟此視窗，請選擇 [偵錯] > [Windows] > [顯示診斷工具]。
 
    ![開啟快照點](../debugger/media/snapshot-diagsession-window.png)
 
 1. 按一下 [視圖快照] 連結，以在程式碼編輯器中開啟時間移動記錄。
   
-   您可以使用 [ **繼續** ] 和 [ **反向繼續** ] 按鈕，執行 TTD 所記錄的每一行程式碼。 此外，**調試**的工具列還可以用來**顯示下一個語句**、**逐步**執行、不進入 **、跳**過 **、逐步執行、逐步****執行、****跳**回。 **Step Over**
+   您可以使用 [ **繼續** ] 和 [ **反向繼續** ] 按鈕，執行 TTD 所記錄的每一行程式碼。 此外，**調試** 的工具列還可以用來 **顯示下一個語句**、**逐步** 執行、不進入 **、跳** 過 **、逐步執行、逐步****執行、****跳** 回。 
 
    ![[偵錯]](../debugger/media/time-travel-debugging-step-commands.png)
 
@@ -103,17 +103,17 @@ ms.locfileid: "90809566"
 
    ![檢查快照集資料](../debugger/media/time-travel-debugging-start-debugging.png)
 
-    網站本身仍在上線，且使用者不會受到任何後續 TTD 活動的影響。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合]**** 以重新開啟快照點。
+    網站本身仍在上線，且使用者不會受到任何後續 TTD 活動的影響。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合] 以重新開啟快照點。
 
-**需要協助嗎？** 請參閱[疑難排解和已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)與[快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)頁面。
+**需要協助嗎？** 請參閱[疑難排解和已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)與[快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.yml)頁面。
 
 ## <a name="set-a-conditional-snappoint"></a>設定條件式快照點
 
 如果很難在應用程式中重新建立特定狀態，請考量使用條件式快照點是否能有所幫助。 條件式快照點可協助您避免在應用程式進入所需狀態之前收集時間移動記錄，例如，當變數有您想要檢查的特定值時。 [您可以使用運算式、篩選或計數來設定條件](../debugger/debug-live-azure-apps-troubleshooting.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在本教學課程中，您已瞭解如何收集 Azure 虛擬機器的時間移動記錄。 您可能想要閱讀更多有關快照偵錯工具的詳細資料。
 
 > [!div class="nextstepaction"]
-> [快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)
+> [快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.yml)

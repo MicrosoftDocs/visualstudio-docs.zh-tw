@@ -13,12 +13,12 @@ manager: jmartens
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 53a7d00548e6d273e2afa2da48669b3d1f3cf827
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94c65814572c99f95d7a6edc6769e5af0ea6e748
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873320"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798371"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>使用快照偵錯工具針對即時 ASP.NET Azure 應用程式進行偵錯
 
@@ -127,7 +127,7 @@ ms.locfileid: "99873320"
 
 您也可以將更多快照點新增至應用程式，並使用 [更新集合] 按鈕將它們開啟。
 
-**需要協助嗎？** 請參閱[疑難排解和已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)與[快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)頁面。
+**需要協助嗎？** 請參閱[疑難排解和已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)與[快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.yml)頁面。
 
 ## <a name="set-a-conditional-snappoint"></a>設定條件式快照點
 
@@ -170,4 +170,4 @@ ms.locfileid: "99873320"
 在此教學課程中，您已了解如何為 App Service 使用快照偵錯工具。 您可以閱讀和此功能有關的更多詳細資料。
 
 > [!div class="nextstepaction"]
-> [快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)
+> [快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.yml)
