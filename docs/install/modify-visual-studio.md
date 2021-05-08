@@ -1,5 +1,5 @@
 ---
-title: 修改 Visual Studio 2017
+title: 修改 Visual Studio 工作負載、元件 & 語言套件
 titleSuffix: ''
 description: 了解如何逐步修改 Visual Studio。
 ms.date: 10/12/2020
@@ -11,21 +11,21 @@ helpviewer_keywords:
 - changing Visual Studio
 - customize Visual Studio
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ba8f9ff3bc0aca36aa42582e5c76504aae757c0c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30b28af562e5dbaa8c05624f6cc9d531cf652419
+ms.sourcegitcommit: 8d3d51042261df603487169a7a008fe8f71404ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897866"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109501768"
 ---
-# <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>透過新增或移除工作負載和元件來修改 Visual Studio
+# <a name="modify-visual-studio-workloads-components-and-language-packs"></a>修改 Visual Studio 工作負載、元件和語言套件
 
 ::: moniker range="vs-2019"
 
@@ -39,17 +39,15 @@ ms.locfileid: "99897866"
 
 ::: moniker-end
 
-方法如下。
+## <a name="prerequisites"></a>必要條件
 
->[!IMPORTANT]
->若要安裝、更新或修改 Visual Studio，您必須以具有系統管理權限的帳戶登入。 如需詳細資訊，請參閱 [使用者權限和 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
++ 若要安裝、更新或修改 Visual Studio，您必須以具有系統管理權限的帳戶登入。 如需詳細資訊，請參閱 [使用者權限和 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
 
->[!NOTE]
-> 下列程式假設您有網際網路連接。
->
-> 如需如何修改先前所建立 Visual Studio [離線安裝](create-an-offline-installation-of-visual-studio.md)的詳細資訊，請參閱[更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)頁面和[控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)頁面。
++ 下列程式假設您有網際網路連接。 如需如何修改先前所建立 Visual Studio [離線安裝](create-an-offline-installation-of-visual-studio.md)的詳細資訊，請參閱[更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)頁面和[控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)頁面。
 
-## <a name="open-the-visual-studio-installer"></a>開啟 Visual Studio 安裝程式
+## <a name="launch-the-installer"></a>啟動安裝程式
+
+若要對您的安裝進行修改，您必須啟動 Visual Studio 安裝程式。
 
 ::: moniker range="vs-2017"
 
@@ -99,13 +97,15 @@ ms.locfileid: "99897866"
 
 ::: moniker-end
 
-## <a name="modify-workloads"></a>修改工作負載
+## <a name="change-workloads-or-individual-components"></a>變更工作負載或個別元件
 
 ::: moniker range="vs-2017"
 
  [工作負載](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) 包含您所使用之程式設計語言或平臺所需的功能。 您可以使用工作負載來修改 Visual Studio，以便在需要時支援您要執行的工作。
 
 1. 在 [Visual Studio 安裝程式中，選擇 [ **工作負載** ] 索引標籤，然後選取或取消選取您想要的工作負載。
+
+   或者，如果您不想要使用工作負載來自訂您的 Visual Studio 安裝，請選擇 [ **個別元件** ] 索引標籤並選取您想要的元件，然後遵循提示進行。
 
     ![Visual Studio 2017 安裝對話方塊](media/modify-workloads.png "選擇 Visual Studio 2019 中的工作負載")
 
@@ -116,6 +116,9 @@ ms.locfileid: "99897866"
     如果您想要下載後再安裝，則 [全部下載後安裝] 選項會很方便。
 
 1. 選擇 [修改]。
+
+1. 如有需要，請選擇 [ **工作負載** ] 索引標籤，然後選取或取消選取您想要的工作負載。
+
 
 1. 安裝新的工作負載之後，請選擇 [從 Visual Studio 安裝程式 **啟動** ] 以開啟 Visual Studio。
 
@@ -144,16 +147,18 @@ ms.locfileid: "99897866"
 
 ::: moniker-end
 
-## <a name="modify-individual-components"></a>修改個別元件
-
-如果您不想要使用工作負載來自訂您的 Visual Studio 安裝，請選擇 Visual Studio 安裝程式中的 [ **個別元件** ] 索引標籤，選取您要的元件，然後遵循提示進行。
 
 >[!TIP]
 > 如需 SQL Server Data Tools (SSDT) 元件的相關資訊，請參閱 [下載並安裝適用于 Visual Studio 的 SSDT](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true)。
 
 ## <a name="modify-language-packs"></a>修改語言套件
 
-根據預設，安裝程式會在第一次執行時，符合作業系統的語言。 不過，您可以在需要時變更語言。 若要這樣做，請選擇 Visual Studio 安裝程式中的 [ **語言套件** ] 索引標籤，選取您偏好的語言，然後遵循提示進行。
+根據預設，安裝程式會在第一次執行時，符合作業系統的語言。 不過，您可以在需要時變更語言。 
+
+操作方法：
+1. 選擇 Visual Studio 安裝程式中的 [ **語言套件** ] 索引標籤。
+2. 選取您偏好的語言。
+3. 遵循提示。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -162,6 +167,4 @@ ms.locfileid: "99897866"
 * [Visual Studio 工作負載與元件識別碼清單](workload-and-component-ids.md)
 * [更新 Visual Studio 2017](update-visual-studio.md)
 * [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)
-* [在維護基底上時更新 Visual Studio](update-servicing-baseline.md)
-* [控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 * [解除安裝 Visual Studio](uninstall-visual-studio.md)

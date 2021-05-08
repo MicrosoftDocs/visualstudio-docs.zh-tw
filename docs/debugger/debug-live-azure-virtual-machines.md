@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 9ed85616080859cd69c44c66b442f3f46d81f51a
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: bdab6b3f559628506dd301d6ced449f1e69152a6
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846959"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798488"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>使用快照偵錯工具針對 Azure 虛擬機器上的即時 ASP.NET 應用程式和 Azure 虛擬機器擴展集進行偵錯
 
@@ -110,7 +110,7 @@ ms.locfileid: "97846959"
 
 您也可以將更多快照點新增至應用程式，並使用 [更新集合] 按鈕將它們開啟。
 
-**需要協助嗎？** 請參閱[疑難排解和已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)與[快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)頁面。
+**需要協助嗎？** 請參閱[疑難排解和已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)與[快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.yml)頁面。
 
 ## <a name="set-a-conditional-snappoint"></a>設定條件式快照點
 
@@ -148,9 +148,9 @@ ms.locfileid: "97846959"
 
     如果您選擇 [傳送到應用程式記錄檔]，當叫用記錄點時，只要可以看到來自 `System.Diagnostics.Trace` (或在 .NET Core 中為 `ILogger`) (例如[應用程式深入解析](/azure/application-insights/app-insights-asp-net-trace-logs)) 之訊息的位置，就會顯示訊息。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 您已經在此教學課程中學到如何針對 Azure 虛擬機器和 Azure 虛擬機器擴展集使用快照偵錯工具。 您可以閱讀和此功能有關的更多詳細資料。
 
 > [!div class="nextstepaction"]
-> [快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)
+> [快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.yml)
