@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8360c48e9868f6ed5d81fffc748d050404211228
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 3504e866a7f89de8fa38f92a8bfea501ddd952c9
+ms.sourcegitcommit: cc66c898ce82f9f1159bd505647f315792cac9fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547488"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "109666792"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>控制網路型 Visual Studio 部署的更新
 
@@ -82,7 +82,7 @@ ms.locfileid: "106547488"
 
 **案例3：用戶端原本是從 web 安裝，但現在應該只從網路設定接收更新**
 
-在某些情況下，用戶端電腦可能已從 web 安裝 Visual Studio，但現在系統管理員想要讓所有未來的更新都來自受控版面配置。 唯一支援的方法是建立具有所需產品版本的網路設定，然後在用戶端電腦上， _從配置位置_ 執行啟動載入器 (例如 `\\network\share\vs_enterprise.exe`) 。 在理想的情況下，原始用戶端安裝會使用啟動載入器從網路設定使用正確設定的 ChannelURI 進行，但是從網路設定位置執行更新的啟動載入器也可以運作。 其中一個動作會在用戶端電腦上，以該特定版面配置位置的連接來內嵌。 這種情況下，唯一需要注意的是，設定檔案中的 "ChannelURI" `response.json` 必須與在原始安裝發生時在用戶端電腦上設定的 ChannelURI 相同。 這個值最有可能是設定為網際網路 [發行頻道](https://aka.ms/vs/16/release/channel)。 
+在某些情況下，用戶端電腦可能已從 web 安裝 Visual Studio，但現在系統管理員想要讓所有未來的更新都來自受控版面配置。 唯一支援的方法是建立具有所需產品版本的網路設定，然後在用戶端電腦上， _從配置位置_ 執行啟動載入器 (例如 `\\server\share\vs_enterprise.exe`) 。 在理想的情況下，原始用戶端安裝會使用啟動載入器從網路設定使用正確設定的 ChannelURI 進行，但是從網路設定位置執行更新的啟動載入器也可以運作。 其中一個動作會在用戶端電腦上，以該特定版面配置位置的連接來內嵌。 這種情況下，唯一需要注意的是，設定檔案中的 "ChannelURI" `response.json` 必須與在原始安裝發生時在用戶端電腦上設定的 ChannelURI 相同。 這個值最有可能是設定為網際網路 [發行頻道](https://aka.ms/vs/16/release/channel)。 
 
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>控制 Visual Studio IDE 中的通知

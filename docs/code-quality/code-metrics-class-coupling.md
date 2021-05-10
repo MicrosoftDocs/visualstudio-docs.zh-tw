@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8320c460faf7532887364693080d38c0ff6baa6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0853b807d3287eb584e76d9640ac98f930edb1a7
+ms.sourcegitcommit: cc66c898ce82f9f1159bd505647f315792cac9fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860512"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "109666805"
 ---
 # <a name="code-metrics---class-coupling"></a>程式碼計量-類別結合
 
@@ -70,8 +70,6 @@ ms.locfileid: "99860512"
 ![類別結合規則](media/class-coupling-maintainability-area-rules.png)
 
 當類別結合過度時，此規則會發出警告。 如需詳細資訊，請參閱 [CA1506：避免過度的類別](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)結合。
-
-如需這項規則的描述，請參閱「封存的程式碼分析」 blog 文章：在80的「 [簽入原則](/archive/blogs/codeanalysis/code-metrics-as-check-in-policy) 」和「在上的臨界值描述警告」（適用于類別），以及 *高於30的方法*。  這些值看起來很高，但至少提供極大的上限。 如果您遇到這個警告，就表示有一些問題。
 
 ## <a name="citations"></a>引文
 
