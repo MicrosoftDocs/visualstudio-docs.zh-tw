@@ -1,5 +1,5 @@
 ---
-title: 使用 GitHub Enterprise 指派 Visual Studio 訂閱 |Microsoft 檔
+title: 使用 GitHub Enterprise 指派 Visual Studio 訂閱 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/03/2021
 ms.topic: conceptual
 description: 使用 GitHub Enterprise 管理 Visual Studio 訂用帳戶中的訂閱
-ms.openlocfilehash: c66932d9f0da5e7dbca6dccb8efc911b1453bb8e
-ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
+ms.openlocfilehash: c174b9beb7a7a0eec6bdb65e684869bc0be7dadb
+ms.sourcegitcommit: 8da735b586276c95bf566a867655e3464ab1f989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104757655"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109740658"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>管理含 GitHub Enterprise 的 Visual Studio 訂閱
 與 Microsoft (EA) 的 Enterprise 合約客戶，有資格購買新的訂用帳戶供應專案，以結合 Visual Studio 標準訂用帳戶和 GitHub Enterprise。 Visual Studio 訂閱者若想取得 GitHub Enterprise，這是個既簡單又經濟實惠的方法。 
@@ -40,8 +40,7 @@ ms.locfileid: "104757655"
 
 > [!IMPORTANT]
 > 如上所述，將會保留現有的訂閱者資料、歷程記錄和訂用帳戶識別碼，而且任何已啟用的權益都不會因為這項移動而中斷。  
->
-> 這項功能是以階段部署，在您的合約 (的) 可能無法立即提供。
+
 
 當您按一下 [ **立即移動** ] 按鈕時，飛出面板將會提供您移動企業和/或專業版訂閱的建議：
 
@@ -50,8 +49,7 @@ ms.locfileid: "104757655"
 
 在此磚中，您可以查看受影響的訂閱者，並指定您是否要在移動完成後通知他們收到電子郵件通知。  這封電子郵件會通知訂閱者其權益保持不變，並鼓勵他們開始在 GitHub 中設定存在。  
 
-按一下 [ **移動所有訂閱者** ] 按鈕之後，您將會確認選取專案，並等候幾秒鐘讓訂用帳戶移動完成。  如果適用，您將需要分別針對 Professional 和 Enterprise 執行這些步驟。  
-
+按一下 [ **移動訂閱者**]   按鈕可讓您移動所有建議的訂閱者，或從清單中選擇個人。  確認您的選擇之後，需要幾秒鐘的時間才能完成訂用帳戶的移動。 如果適用，您將需要分別針對 Professional 和 Enterprise 執行這些步驟。  
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>什麼是含 GitHub Enterprise 設定程序的 Visual Studio？
 GitHub Enterprise 是與 Visual Studio 訂用帳戶分開設定及管理的。 在 GitHub Enterprise 購買的 Visual Studio 訂用帳戶之後，GitHub Enterprise 帳戶設定程式會與 (平行起始，但不同于) 在 [manage.visualstudio.com](https://manage.visualstudio.com)中建立協定。 建立此 GitHub Enterprise 帳戶可能需要一些時間。 
@@ -81,7 +79,7 @@ GitHub 以雲端式 GitHub.com 或內部部署 GitHub Enterprise Server 的形�
 - [Azure 檔](/azure/)
 - [Microsoft 365 檔](/microsoft-365/)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 深入瞭解如何管理 Visual Studio 的訂閱。
 - [指派個別訂用帳戶](assign-license.md)
 - [指派多個訂用帳戶](assign-license-bulk.md)
