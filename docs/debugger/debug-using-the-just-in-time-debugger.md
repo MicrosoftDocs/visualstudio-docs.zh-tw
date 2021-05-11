@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e082f5346d22fd574b7f9b725f8ec88b8a3b08f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3bdd35056706491ace6e5e6b2f7c3f6a45464d2e
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873193"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729243"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>使用 Visual Studio 中的即時偵錯工具進行偵錯工具
 
@@ -108,7 +108,7 @@ ms.locfileid: "99873193"
 
 1. 在 Visual Studio 中，建立 c # 主控台應用程式 **， (**  >    >    >  名為 ThrowsNullException 的新專案 **Visual c #**  >  **主控台應用程式**) 。  如需在 Visual Studio 中建立專案的詳細資訊，請參閱 [逐步解說：建立簡單的應用程式](../get-started/csharp/tutorial-wpf.md)。
 
-1. 當專案在 Visual Studio 中開啟時，開啟 *Program.cs* 檔案。 以下列程式碼取代主要 ( # A1 方法，它會將一行列印到主控台，然後擲回 NullReferenceException：
+1. 當專案在 Visual Studio 中開啟時，開啟 *程式 .cs* 檔案。 以下列程式碼取代主要 () 方法，它會將一行列印到主控台，然後擲回 NullReferenceException：
 
    ```csharp
    static void Main(string[] args)
@@ -177,7 +177,7 @@ ms.locfileid: "99873193"
 
     偵錯工具嘗試附加至在其他使用者下執行的進程。
 
-    若要解決這個問題，請在 Visual Studio 中，開啟 [ **Debug**  >  **附加至進程**]，然後在 [**可用的進程**] 清單中尋找您想要進行偵錯工具的進程。 如果您不知道進程的名稱，請在 [ **Visual Studio 即時偵錯工具** ] 對話方塊中尋找處理序識別碼。 在 [ **可使用的進程** ] 清單中選取該進程，然後選取 [ **附加**]。 選取 [ **否** ] 以關閉即時偵錯工具對話方塊。
+    若要解決這個問題，請在 Visual Studio 中開啟 [ **Debug**  >  **附加至進程**] (或按 **Ctrl**  +  **Alt**  +  **P**) ，然後在 [**可用的進程**] 清單中尋找您想要進行偵錯工具的進程。 如果您不知道進程的名稱，請在 [ **Visual Studio 即時偵錯工具** ] 對話方塊中尋找處理序識別碼。 在 [ **可使用的進程** ] 清單中選取該進程，然後選取 [ **附加**]。 選取 [ **否** ] 以關閉即時偵錯工具對話方塊。
 
 - **由於沒有使用者登入，無法啟動偵錯工具。**
 

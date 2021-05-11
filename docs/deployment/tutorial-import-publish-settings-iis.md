@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9681e01beaa9fcae3163c607290f5793bfae1cdd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aeaaff68ab0abe85838456e8c8b69e2520295689
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945028"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729269"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>在 Visual Studio 中匯入發行設定，即可將應用程式發行至 IIS
 
@@ -52,7 +52,7 @@ ms.locfileid: "99945028"
     如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面免費進行安裝。
 ::: moniker-end
 
-* 在您的伺服器上，您必須執行 Windows Server 2012、Windows Server 2016 或 Windows Server 2019，而且必須正確安裝 [IIS 網頁伺服器角色](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (才能產生發佈設定檔案 (*\* . .publishsettings*) # A3。 另外還必須在伺服器上安裝 ASP.NET 4.5 或 ASP.NET Core。 若要設定 ASP.NET 4.5，請參閱[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。 若要設定 ASP.NET Core，請參閱[在使用 IIS 的 Windows 上裝載 ASP.NET Core](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 針對 ASP.NET Core，請務必將應用程式集區設定為 **不使用 Managed 程式碼**，如本文中所述。
+* 在您的伺服器上，您必須執行 Windows Server 2012、Windows Server 2016 或 Windows Server 2019，而且必須正確安裝 [IIS 網頁伺服器角色](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (才能產生發佈設定檔案 (*\* . .publishsettings*) ) 。 另外還必須在伺服器上安裝 ASP.NET 4.5 或 ASP.NET Core。 若要設定 ASP.NET 4.5，請參閱[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。 若要設定 ASP.NET Core，請參閱[在使用 IIS 的 Windows 上裝載 ASP.NET Core](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 針對 ASP.NET Core，請務必將應用程式集區設定為 **不使用 Managed 程式碼**，如本文中所述。
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>在 Visual Studio 中建立新的 ASP.NET 專案
 
@@ -70,7 +70,7 @@ ms.locfileid: "99945028"
 
     Visual Studio 會建立專案。
 
-1. 選擇 [**組建**  >  **組建方案**] 以建立專案。
+1. 選擇 [**組建**  >  **組建方案** (]，或按 **Ctrl**  +  **Shift**  +  **B**) 以建立專案。
 
 ## <a name="install-and-configure-web-deploy-on-windows-server"></a>在 Windows Server 上安裝並設定 Web Deploy
 
