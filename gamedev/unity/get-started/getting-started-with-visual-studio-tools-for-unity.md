@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: e05a94ecf9cf690f46299684c82f2b3961a783c8
-ms.sourcegitcommit: 585547ea7363ab1b6bb9d41f6d008cbe478d1a3b
+ms.openlocfilehash: 791f25b61c86f0115c225d505bdb1edb07869961
+ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98912564"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109782604"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>開始使用 Visual Studio 和 Unity
 
@@ -34,7 +34,7 @@ Visual Studio Tools for Unity 是免費的延伸模組，可支援撰寫和偵�
 > [!NOTE]
 > 本安裝指南適用于 Visual Studio。 如果您是使用 Visual Studio Code，請流覽 [Unity 開發與 VS Code 檔](https://code.visualstudio.com/docs/other/unity)。
 
-1. [下載 Visual Studio 安裝程式](/visualstudio/docs/install/install-visual-studio.md)，或在已安裝的情況下執行。
+1. [下載 Visual Studio 安裝程式](/visualstudio/install/install-visual-studio.md)，或在已安裝的情況下執行。
 2. 針對您想要的 Visual Studio 版本按一下 (若已安裝) 或 [安裝] (針對新安裝)。
 3. 在 [ **工作負載** ] 索引標籤上，選取 [ **遊戲** ] 區段，然後選取 [ **使用 Unity 工作負載進行遊戲開發** ]。
 
