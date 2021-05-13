@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 286d5f2c316379316b1a1cf55334cab39cdc247c
-ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
+ms.openlocfilehash: 866b588b8b46477b397cda92076780d1955cfa83
+ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109782630"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109848301"
 ---
 # <a name="create-a-c-extension-for-python"></a>建立適用於 Python 的 C++ 延伸模組
 
@@ -120,12 +120,12 @@ ms.locfileid: "109782630"
     ::: moniker range=">=vs-2019"
     | 索引標籤 | 屬性 | 值 |
     | --- | --- | --- |
-    | **一般** | **目標名稱** | 依您希望來指定模組名稱，用 `from...import` 陳述式從 Python 中參考它。 為 Python 定義模組時，會在 C++ 中使用相同名稱。 如果想用專案名稱當作模組名稱，請保留預設值 **$(ProjectName)**。 針對 `python_d.exe` ，加入 `_d` 至名稱的結尾。 |
-    | | **組態類型** | **動態程式庫 (.dll)** |
-    | **進階** | **目標副檔名** | **.pyd** |
+    | **一般** | **一般** > **目標名稱** | 依您希望來指定模組名稱，用 `from...import` 陳述式從 Python 中參考它。 為 Python 定義模組時，會在 C++ 中使用相同名稱。 如果想用專案名稱當作模組名稱，請保留預設值 **$(ProjectName)**。 |
+    | | **Advanced** >**目標副檔名** | **.pyd** |
+    | | **專案預設值** > **設定類型** | **動態程式庫 (.dll)** |
     | **C/C++** > **一般** | **其他 Include 目錄** | 視情況為您的安裝新增 Python *include* 資料夾，例如 `c:\Python36\include`。  |
-    | **C/C++** > **前置處理器** | **前置處理器定義** | 如果有的話，請將 **_DEBUG** 值變更為 **NDEBUG**，以符合的非 DEBUG 版本 `CPython` 。 使用時 (`python_d.exe` ，請保持不變。 )  |
-    | **C/C++** > **程式碼產生** | **執行階段程式庫** | **多執行緒 DLL (/md)** 與的非 debug 版本相符 `CPython` 。 使用時 (`python_d.exe` ，請保持不變。 )  |
+    | **C/C++** > **前置處理器** | **前置處理器定義** | **僅限 CPython**：將 `Py_LIMITED_API;` 新增至字串的開頭 (包括分號)。 此定義會限制您可以從 Python 呼叫的某些功能，並使程式碼更容易在不同版本的 Python 之間移植。 如果您使用 PyBind11，請勿新增這個定義，否則您將會看到建置錯誤。 |
+    | **C/C++** > **程式碼產生** | **執行階段程式庫** | **多執行緒 DLL (/md)** (請參閱以下警告)  |
     | **連結器** > **一般** | **其他程式庫目錄** | 視您的安裝新增適當的 Python *libs* 資料夾並包含 *.lib* 檔案，例如 `c:\Python36\libs`。 (請務必指向包含 *.lib* 檔案的 *libs* 資料夾，而「不是」包含 *.py* 檔案的 *Lib* 資料夾。) |
     ::: moniker-end
     ::: moniker range="=vs-2017"

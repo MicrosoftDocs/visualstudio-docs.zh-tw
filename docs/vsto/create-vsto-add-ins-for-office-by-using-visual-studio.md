@@ -3,7 +3,7 @@ title: 使用 Visual Studio 建立適用於 Office 的 VSTO 增益集
 description: 瞭解如何使用 Visual Studio 中的 Microsoft Office 開發人員工具，建立可延伸 Office 的 .NET Framework 應用程式。
 titleSuffix: ''
 ms.custom: seodec18, SEO-VS-2020
-ms.date: 08/14/2019
+ms.date: 04/28/2021
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,14 +13,17 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 611feb69dc4c5ebdd340a61c49e76e0d7c33e713
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 990caeec642a745bec5b6e0f2d29ff5d6213d095
+ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947954"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109848314"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 建立適用於 Office 的 VSTO 增益集
+> [!IMPORTANT]
+> VSTO 相依于 [.NET Framework](https://docs.microsoft.com/dotnet/framework/get-started/overview)。 您也可以使用 .NET Framework 來寫入 COM 增益集。 Office 增益集無法使用 [.Net Core 和 .net 5 +](https://docs.microsoft.com/dotnet/core/dotnet-five)（最新版本的 .net）建立。 這是因為 .NET Core/.NET 5 + 無法在相同的程式中與 .NET Framework 一起運作，而且可能會導致增益集載入失敗。 您可以繼續使用 .NET Framework 撰寫適用于 Office 的 VSTO 和 COM 增益集。 Microsoft 將不會更新 VSTO 或 COM 增益集平臺，以使用 .NET Core 或 .NET 5 +。 您可以利用 .NET Core 和 .NET 5 + （包括 ASP.NET Core）來建立 [Office Web 增益集](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)的伺服器端。
+
   您可以使用 Visual Studio 中的 Microsoft Office Developer Tools 來建立 .NET Framework 應用程式，以擴充 Office 功能。 這些應用程式也稱為 *「Office 方案」*(Office Solution)。
 
  Office 開發人員工具提供的功能，可協助您針對各種商務需求來建立 Office 方案。 這些工具包含可協助您使用 Visual Basic 或 Visual C# 建立 Office 方案的專案範本，以及可協助您為 Office 方案建立自訂使用者介面的視覺化設計工具。

@@ -2,7 +2,7 @@
 title: VSTO 增益集程式設計入門
 description: 瞭解如何使用 VSTO 增益集來自動化 Microsoft Office 的應用程式、擴充應用程式的功能，以及自訂應用程式的使用者介面。
 ms.custom: SEO-VS-2020
-ms.date: 02/02/2017
+ms.date: 04/28/2021
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Outlook
@@ -17,14 +17,17 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d7e6f891f8485d4e08734e59a11db8018eaa07b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1757dd6042536b6a042e67a8b3dcd9b12a2ea758
+ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860630"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109848288"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO 增益集程式設計入門
+> [!IMPORTANT]
+> VSTO 相依于 [.NET Framework](https://docs.microsoft.com/dotnet/framework/get-started/overview)。 您也可以使用 .NET Framework 來寫入 COM 增益集。 Office 增益集無法使用 [.Net Core 和 .net 5 +](https://docs.microsoft.com/dotnet/core/dotnet-five)（最新版本的 .net）建立。 這是因為 .NET Core/.NET 5 + 無法在相同的程式中與 .NET Framework 一起運作，而且可能會導致增益集載入失敗。 您可以繼續使用 .NET Framework 撰寫適用于 Office 的 VSTO 和 COM 增益集。 Microsoft 將不會更新 VSTO 或 COM 增益集平臺，以使用 .NET Core 或 .NET 5 +。 您可以利用 .NET Core 和 .NET 5 + （包括 ASP.NET Core）來建立 [Office Web 增益集](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)的伺服器端。
+
   您可以使用 VSTO 增益集來自動化 Microsoft Office 應用程式、擴充應用程式的功能，以及自訂應用程式的使用者介面 (UI)。 如需 VSTO 增益集與您可以使用 Visual Studio 建立之其他類型 Office 方案相較之下的詳細資訊，請參閱 [Office 方案開發總覽 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
@@ -35,7 +38,7 @@ ms.locfileid: "99860630"
  如需如何建立 VSTO 增益集專案的詳細資訊，請參閱 [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。 如需專案範本的詳細資訊，請參閱 [Office 專案範本總覽](../vsto/office-project-templates-overview.md)。
 
 ## <a name="develop-vsto-add-in-projects"></a>開發 VSTO 增益集專案
- 當您建立 VSTO 增益集專案時，Visual Studio 會在 c #  ) 程式碼檔案的 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 或 *ThisAddIn.cs* (中自動建立 ThisAddIn (。 這個檔案包含 `ThisAddIn` 類別，該類別會提供 VSTO 增益集的基礎。 載入或卸載 VSTO 增益集時，您可以使用這個類別的成員來執行程式碼，以存取主應用程式的物件模型及擴充應用程式的功能。 如需詳細資訊，請參閱 [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
+ 當您建立 VSTO 增益集專案時，Visual Studio 會在 c #  ) 程式碼檔案的 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 或 *ThisAddIn* (中自動建立 ThisAddIn .vb (。 這個檔案包含 `ThisAddIn` 類別，該類別會提供 VSTO 增益集的基礎。 載入或卸載 VSTO 增益集時，您可以使用這個類別的成員來執行程式碼，以存取主應用程式的物件模型及擴充應用程式的功能。 如需詳細資訊，請參閱 [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
 
 ## <a name="automate-applications-by-using-the-object-models"></a>使用物件模型將應用程式自動化
  Microsoft Office 應用程式的物件模型公開許多您可以在 VSTO 增益集中進行程式設計的類型。 您可以使用這些類型將應用程式自動化。 例如，您可以在 Outlook 中以程式設計的方式建立和傳送電子郵件訊息，也可以在 Word 中開啟文件和加入內容。 如需如何在程式碼中存取主應用程式物件模型的詳細資訊，請參閱 [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
@@ -71,7 +74,7 @@ ms.locfileid: "99860630"
 
   如需如何自訂 Microsoft Office 應用程式 UI 的詳細資訊，請參閱 [OFFICE UI 自訂](../vsto/office-ui-customization.md)。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
  若要了解如何建立 VSTO 增益集，請參閱下面的逐步解說：
 
 - [逐步解說：建立 Excel 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
