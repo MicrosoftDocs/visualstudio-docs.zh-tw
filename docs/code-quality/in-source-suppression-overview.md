@@ -1,6 +1,6 @@
 ---
 title: 隱藏程式碼分析違規項目
-ms.date: 08/27/2020
+ms.date: 05/10/2021
 description: 瞭解如何在 Visual Studio 中隱藏程式碼分析違規。 瞭解如何將 SuppressMessageAttribute 屬性用於來源隱藏專案。
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -16,16 +16,92 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: c61803c21832367ede01817029b8d0318ac741a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd177a96b8789760927933fad5c0320553a72f57
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859901"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973330"
 ---
 # <a name="suppress-code-analysis-violations"></a>隱藏程式碼分析違規項目
 
-指出警告不適用時，通常會很有用。 這表示小組成員已審核程式碼，而且可以隱藏警告。  (ISS 的原始檔隱藏) 使用 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性來抑制警告。 屬性可放置於接近產生警告的程式碼區段。 您可以 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 在原始程式檔中輸入屬性，將其加入至原始程式檔，也可以使用 [ **錯誤清單** ] 中警告的快捷方式功能表自動新增。
+指出警告不適用時，通常會很有用。 這表示小組成員已審核程式碼，而且可以隱藏警告。 本文說明使用 Visual Studio IDE 來隱藏程式碼分析違規的不同方式。
+
+::: moniker range=">=vs-2019"
+
+## <a name="suppress-violations-using-the-editorconfig-file"></a>使用 EditorConfig 檔隱藏違規
+
+在 **EditorConfig** 檔案中，將嚴重性設定為 `none` ，例如 `dotnet_diagnostic.CA1822.severity = none` 。 若要加入 EditorConfig 檔，請參閱 [將 EditorConfig 檔案加入至專案](../ide/create-portable-custom-editor-options.md#add-and-remove-editorconfig-files)。
+
+::: moniker-end
+
+## <a name="suppress-violations-in-source-code"></a>隱藏原始程式碼中的違規
+
+您可以使用預處理器指示詞隱藏程式碼中的違規， [#pragma 警告 (c # ) ](/dotnet/csharp/language-reference/preprocessor-directives.md#pragma-warning) 或 [停用 (Visual Basic) ](/dotnet/visual-basic/language-reference/directives/disable-enable.md) 指示詞，只隱藏特定程式程式碼的警告。 或者，您可以使用 [SuppressMessage 屬性](#in-source-suppression-and-the-suppressmessage-attribute)。
+
+- 從程式 **代碼編輯器**
+
+  將游標放在具有違規的程式程式碼中，然後按下 **Ctrl** + **句號 (。 )** 開啟 [**快速動作**] 功能表。 選取 [ **隱藏 CAXXXX**]，然後在 [ **來源** ] 或 [ **來源 (屬性)** 中選擇 []。
+
+  如果您 **在 [來源] 中** 選擇，您會看到將新增至程式碼之預處理器指示詞的預覽。
+
+  ::: moniker range="vs-2017"
+  :::image type="content" source="media/suppress-diagnostic-from-editor.png" alt-text="從 [快速動作] 功能表隱藏診斷":::
+  ::: moniker-end
+  ::: moniker range=">=vs-2019"
+  :::image type="content" source="media/vs-2019/suppress-diagnostic-from-editor.png" alt-text="從 [快速動作] 功能表隱藏診斷":::
+
+  如果您 **在 [來源 (屬性]) 中** 選擇，您會看到將新增至程式碼的 [SuppressMessage 屬性](#in-source-suppression-and-the-suppressmessage-attribute) 預覽。
+
+  :::image type="content" source="media/vs-2019/suppress-diagnostic-from-editor-attribute.png" alt-text="使用屬性從 [快速動作] 功能表隱藏診斷":::
+  ::: moniker-end
+
+- 從 **錯誤清單**
+
+  選取您要隱藏的規則，然後以滑鼠右鍵按一下並選取 [   >  **在來源中** 隱藏]。
+
+  - 如果您 **在 [來源] 中** 隱藏，[ **預覽變更** ] 對話方塊隨即開啟，並顯示已新增至原始程式碼的 c # [#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) 或 Visual Basic [#Disable 警告](/dotnet/visual-basic/language-reference/directives/directives) 指示詞的預覽。
+
+    ![在程式碼檔案中新增 #pragma 警告的預覽](media/pragma-warning-preview.png)
+
+  在 [ **預覽變更** ] 對話方塊中 **，選取 [** 套用]。
+
+  > [!NOTE]
+  > 如果您在 **方案總管** 中看不到 [**隱藏**] 功能表選項，則可能是來自組建而不是即時分析的違規。 **錯誤清單** 會顯示即時程式碼分析和組建中的診斷或規則違規。 由於組建診斷可能會過時，例如，如果您已編輯程式碼來修正違規，但尚未重建，則無法從 **錯誤清單** 中隱藏這些診斷。 從即時分析或 IntelliSense 進行的診斷一律會以最新的來源為最新狀態，而且可以從 **錯誤清單** 中隱藏。 若要從您的選取範圍中排除 *組建* 診斷，請將 **錯誤清單** 來源篩選器從 **Build + Intellisense** 改為 **僅限 intellisense**。 然後，選取您要隱藏的診斷，並依照先前的說明進行。
+  >
+  > ![Visual Studio 中的錯誤清單來源篩選](media/error-list-filter.png)
+
+## <a name="suppress-violations-using-a-global-suppression-file"></a>使用全域隱藏專案檔隱藏違規
+
+[全域隱藏](#global-level-suppressions)專案檔會使用[SuppressMessage 屬性](#in-source-suppression-and-the-suppressmessage-attribute)。
+
+- 從 [**錯誤清單**] 中，選取您要隱藏的規則，然後以滑鼠右鍵按一下並選取 [**隱藏**  >  **在隱藏** 專案檔中]。 [ **預覽變更** ] 對話方塊隨即開啟，並顯示 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 已新增至全域隱藏隱藏檔案的屬性預覽。
+
+  ![將 SuppressMessage 屬性新增至隱藏專案檔的預覽](media/preview-changes-in-suppression-file.png)
+
+- 從 [程式 **代碼編輯器**] 中，將游標放在具有違規的程式程式碼中，然後按 [**快速動作] 和 [重構**] (或按 **Ctrl** + **句號 (。 )**) 以開啟 [**快速動作**] 功能表。 選取 [ **隱藏 CAXXXX**]，然後選擇 [ **在隱藏** 專案檔中]。 您會看到將建立或修改的 [全域隱藏](#global-level-suppressions) 專案檔預覽。
+
+::: moniker range=">=vs-2019"
+
+- 從 [**分析**] 功能表中，選取 [**分析** 組建]，  >  **並隱藏** 功能表列上的 [作用中問題]，以隱藏所有目前的違規。 這有時稱為「基準」。
+
+::: moniker-end
+::: moniker range="vs-2017"
+
+- 從 [**分析**] 功能表中，選取 [**分析**  >  **執行程式碼分析]，並隱藏** 功能表列上的 [作用中問題]，以隱藏所有目前的違規。 這有時稱為「基準」。
+::: moniker-end
+
+## <a name="suppress-violations-using-project-settings"></a>使用專案設定隱藏違規
+
+在 **方案總管** 中，開啟專案的屬性 (以滑鼠右鍵按一下專案，然後選擇 [ **屬性** ] (或按 **Alt + Enter**) ，然後使用 [程式 **代碼分析** ] 索引標籤來設定選項。 例如，您可以停用即時程式碼分析或停用 .NET 分析器。
+
+## <a name="suppress-violations-using-a-rule-set"></a>使用規則集隱藏違規
+
+從 [ **規則集編輯器**] 中，清除其名稱旁邊的核取方塊，或將 [ **動作** ] 設為 [ **無**]。
+
+## <a name="in-source-suppression-and-the-suppressmessage-attribute"></a>來源隱藏專案和 SuppressMessage 屬性
+
+ (ISS 的原始檔隱藏) 使用 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 屬性來抑制警告。 屬性可放置於接近產生警告的程式碼區段。 您可以 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 在原始程式檔中輸入屬性，將其加入至原始程式檔，也可以使用 [ **錯誤清單** ] 中警告的快捷方式功能表自動新增。
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性是條件式屬性，只有在編譯時期定義 CODE_ANALYSIS 編譯符號時，才會包含在 managed 程式碼元件的 IL 中繼資料中。
 
@@ -43,21 +119,21 @@ ms.locfileid: "99859901"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=vs-2019&quot;
 
 > [!NOTE]
 > 如果您將專案遷移至 Visual Studio 2019，可能突然遇到大量的程式碼分析警告。 如果您還沒準備好修正這些警告，您可以選取 [**分析**  >  **組建] 並隱藏** 作用中的問題，來抑制這些警告。
 
 ::: moniker-end
 
-## <a name="suppressmessage-attribute"></a>SuppressMessage 屬性
+### <a name=&quot;suppressmessage-attribute&quot;></a>SuppressMessage 屬性
 
 當您從 [**錯誤清單**] 中的程式碼分析警告的內容或右鍵功能表中選取 [**隱藏**] 時， <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 會在您的程式碼或專案的全域隱藏專案檔中加入屬性。
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性具有下列格式：
 
 ```vb
-<Scope:SuppressMessage("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")>
+<Scope:SuppressMessage(&quot;Rule Category&quot;, &quot;Rule Id&quot;, Justification = &quot;Justification&quot;, MessageId = &quot;MessageId&quot;, Scope = &quot;Scope&quot;, Target = &quot;Target")>
 ```
 
 ```csharp
@@ -96,7 +172,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 當您在 Visual Studio 中看到警告時，您可以在 `SuppressMessage` 全域隱藏專案檔中 [加入隱藏](../code-quality/use-roslyn-analyzers.md#suppress-violations)專案，以查看的範例。 隱藏專案屬性及其必要屬性會出現在預覽視窗中。
 
-## <a name="suppressmessage-usage"></a>SuppressMessage 使用方式
+### <a name="suppressmessage-usage"></a>SuppressMessage 使用方式
 
 程式碼分析警告會隱藏于套用屬性的層級 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 。 例如，屬性可套用於元件、模組、類型、成員或參數層級。 這項功能的目的是要將隱藏的資訊緊密地結合到違規發生的程式碼。
 
@@ -110,7 +186,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 基於可維護性的理由，不建議省略規則名稱。
 
-## <a name="suppress-selective-violations-within-a-method-body"></a>隱藏方法主體內的選擇性違規
+### <a name="suppress-selective-violations-within-a-method-body"></a>隱藏方法主體內的選擇性違規
 
 隱藏專案屬性可以套用至方法，但無法內嵌于方法主體內。 這表示，如果您將屬性加入至方法，就會隱藏特定規則的所有違規 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 。
 
@@ -151,7 +227,7 @@ public class Animal
 }
 ```
 
-## <a name="global-level-suppressions"></a>全域層級隱藏
+### <a name="global-level-suppressions"></a>全域層級隱藏
 
 Managed 程式碼分析工具 `SuppressMessage` 會檢查元件、模組、類型、成員或參數層級所套用的屬性。 它也會對資源和命名空間引發違規。 這些違規必須套用到全域層級，並設定範圍並設為目標。 例如，下列訊息會抑制命名空間違規：
 
@@ -169,11 +245,11 @@ Managed 程式碼分析工具 `SuppressMessage` 會檢查元件、模組、類�
 > [!NOTE]
 > `Target` 一律包含完整的專案名稱。
 
-### <a name="global-suppression-file"></a>全域隱藏專案檔
+#### <a name="global-suppression-file"></a>全域隱藏專案檔
 
 全域隱藏專案檔會維護不指定目標的全域層級隱藏專案或隱藏專案。 例如，元件層級違規的隱藏項會儲存在此檔案中。 此外，某些 ASP.NET 隱藏專案會儲存在此檔案中，因為表單背後的程式碼無法使用專案層級設定。 當您第一次在 [**錯誤清單**] 視窗中，于 [**隱藏**] 命令的 [**專案隱藏** 檔] 選項中選取時，即會建立全域隱藏專案檔並將其新增至您的專案。
 
-### <a name="module-suppression-scope"></a>模組隱藏範圍
+#### <a name="module-suppression-scope"></a>模組隱藏範圍
 
 您可以使用 **模組** 範圍來抑制整個元件的程式碼品質違規。
 
@@ -181,7 +257,7 @@ Managed 程式碼分析工具 `SuppressMessage` 會檢查元件、模組、類�
 
 `[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
 
-## <a name="generated-code"></a>產生的程式碼
+### <a name="generated-code"></a>產生的程式碼
 
 Managed 程式碼編譯器和一些協力廠商工具會產生程式碼，以加速程式碼開發。 在原始程式檔中出現的編譯器產生程式碼通常會以 `GeneratedCodeAttribute` 屬性標記。
 

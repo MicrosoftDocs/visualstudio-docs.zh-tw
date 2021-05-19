@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: tutorial
-ms.openlocfilehash: 412156894658cdb2160574e77ea052e4b194d386
-ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
+ms.openlocfilehash: 43684288eea2e1864bf31a8bb68bbac1b217a976
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107315975"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973274"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教學課程：使用 Docker Compose 建立多容器應用程式
 
@@ -192,6 +192,8 @@ ms.locfileid: "107315975"
 ## <a name="next-steps"></a>下一步
 
 查看將 [容器部署至 Azure](/azure/containers)的選項。
+
+若要更充分掌控在 debug 會話期間啟動的服務，請瞭解如何使用 Docker Compose 啟動設定檔來設定在進行偵錯工具時所執行的服務。 請參閱 [管理 Docker Compose 的啟動設定檔](launch-profiles.md)
 
 ## <a name="see-also"></a>另請參閱
   

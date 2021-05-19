@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 24a36bdbe0d3c6ac57b7595883301841ffa138e1
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: e50935145913bcd1f3c4457f4704376a0ac0f6ef
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846712"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973235"
 ---
 # <a name="container-tools-launch-settings"></a>容器工具啟動設定
 
@@ -83,10 +83,11 @@ CommandName 設定會識別此區段適用于容器工具。 下表顯示可在�
 
 ::: moniker-end
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 藉由設定 [容器工具組建屬性](container-msbuild-properties.md)來設定您的專案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[Docker Compose 組建屬性](docker-compose-properties.md)
+- [Docker Compose 組建屬性](docker-compose-properties.md)
+- [管理 Docker Compose 的啟動設定檔](launch-profiles.md)

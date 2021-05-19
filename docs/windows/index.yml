@@ -11,199 +11,193 @@ metadata:
   ms.date: 03/30/2021
   monikerRange: '>=vs-2017'
   f1_keywords:
-  - MSDNSTART
-  ms.openlocfilehash: c2f3b148f99924047c71f2bf1a13a99183e77063
-  ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
-  ms.translationtype: MT
-  ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/31/2021
-  ms.locfileid: "106083538"
+    - MSDNSTART
 highlightedContent:
   items:
-  - title: 設定與安裝
-    itemType: download
-    url: ../install/install-visual-studio.md
-  - title: 歡迎使用 Visual Studio IDE
-    itemType: overview
-    url: ../get-started/visual-studio-ide.md
-  - title: Visual Studio 2019 版本資訊
-    itemType: whats-new
-    url: /visualstudio/releases/2019/release-notes/
-  - title: 改進您的 Visual Studio 技能
-    itemType: learn
-    url: /learn/browse/?products=vs
+    - title: 設定與安裝
+      itemType: download
+      url: ../install/install-visual-studio.md
+    - title: 歡迎使用 Visual Studio IDE
+      itemType: overview
+      url: ../get-started/visual-studio-ide.md
+    - title: Visual Studio 2019 版本資訊
+      itemType: whats-new
+      url: /visualstudio/releases/2019/release-notes/
+    - title: 改進您的 Visual Studio 技能
+      itemType: learn
+      url: /learn/browse/?products=vs
 conceptualContent:
   title: 開始使用
   items:
-  - title: 了解如何使用 Visual Studio
-    links:
-    - text: 撰寫和編輯程式碼
-      url: ../ide/index-writing-code.yml
-      itemType: tutorial
-    - text: 建置程式碼
-      url: ../ide/compiling-and-building-in-visual-studio.md
-      itemType: tutorial
-    - text: 偵錯程式碼
-      itemType: tutorial
-      url: ../debugger/debugger-feature-tour.md
-    - text: 測試程式碼
-      itemType: tutorial
-      url: ../test/getting-started-with-unit-testing.md
-    - text: 從存放庫開啟程式碼
-      url: ../get-started/tutorial-open-project-from-repo.md
-      itemType: tutorial
-  - title: 追隨教學課程
-    links:
-    - text: 建立簡單的 C# 主控台應用程式
-      url: ../get-started/csharp/tutorial-console.md
-      itemType: get-started
-    - text: 建立 C++ 主控台計算機
-      url: /cpp/get-started/tutorial-console-cpp
-      itemType: get-started
-    - text: 建立 Visual Basic 主控台應用程式
-      url: ../get-started/visual-basic/tutorial-console.md
-      itemType: get-started
-    - text: 開始使用 Python
-      url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
-      itemType: get-started
-    - text: 建立 Node.js 與 Express 應用程式
-      url: ../javascript/tutorial-nodejs.md
-      itemType: get-started
-    - text: 建立 F# Web 服務
-      url: ../ide/quickstart-fsharp.md
-      itemType: get-started
-  - title: Visual Studio 語言指導方針
-    links:
-    - text: C#
-      itemType: get-started
-      url: ../get-started/csharp/index.yml
-    - text: C++
-      itemType: get-started
-      url: /cpp/overview/visual-cpp-in-visual-studio
-    - text: Visual Basic
-      itemType: get-started
-      url: ../get-started/visual-basic/index.yml
-    - text: Python
-      itemType: get-started
-      url: ../python/index.yml
-    - text: JavaScript
-      url: ../javascript/index.yml
-      itemType: get-started
-    - text: F#
-      itemType: get-started
-      url: /dotnet/fsharp/get-started/get-started-visual-studio
+    - title: 了解如何使用 Visual Studio
+      links:
+        - text: 撰寫和編輯程式碼
+          url: ../ide/index-writing-code.yml
+          itemType: tutorial
+        - text: 建置程式碼
+          url: ../ide/compiling-and-building-in-visual-studio.md
+          itemType: tutorial
+        - text: 偵錯程式碼
+          itemType: tutorial
+          url: ../debugger/debugger-feature-tour.md
+        - text: 測試程式碼
+          itemType: tutorial
+          url: ../test/getting-started-with-unit-testing.md
+        - text: 從存放庫開啟程式碼
+          url: ../get-started/tutorial-open-project-from-repo.md
+          itemType: tutorial
+    - title: 追隨教學課程
+      links:
+        - text: 建立簡單的 C# 主控台應用程式
+          url: ../get-started/csharp/tutorial-console.md
+          itemType: get-started
+        - text: 建立 C++ 主控台計算機
+          url: /cpp/get-started/tutorial-console-cpp
+          itemType: get-started
+        - text: 建立 Visual Basic 主控台應用程式
+          url: ../get-started/visual-basic/tutorial-console.md
+          itemType: get-started
+        - text: 開始使用 Python
+          url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
+          itemType: get-started
+        - text: 建立 Node.js 與 Express 應用程式
+          url: ../javascript/tutorial-nodejs.md
+          itemType: get-started
+        - text: 建立 F# Web 服務
+          url: ../ide/quickstart-fsharp.md
+          itemType: get-started
+    - title: Visual Studio 語言指導方針
+      links:
+        - text: C#
+          itemType: get-started
+          url: ../get-started/csharp/index.yml
+        - text: C++
+          itemType: get-started
+          url: /cpp/overview/visual-cpp-in-visual-studio
+        - text: Visual Basic
+          itemType: get-started
+          url: ../get-started/visual-basic/index.yml
+        - text: Python
+          itemType: get-started
+          url: ../python/index.yml
+        - text: JavaScript
+          url: ../javascript/index.yml
+          itemType: get-started
+        - text: F#
+          itemType: get-started
+          url: /dotnet/fsharp/get-started/get-started-visual-studio
 tools:
   title: 程式設計語言文件
   items:
-  - title: C++
-    imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
-    url: /cpp/
-  - title: C#
-    imageSrc: https://docs.microsoft.com/media/logos/logo_Csharp.svg
-    url: /dotnet/csharp
-  - title: F#
-    imageSrc: https://docs.microsoft.com/media/logos/logo_Fsharp.svg
-    url: /dotnet/fsharp
-  - title: Visual Basic
-    imageSrc: https://docs.microsoft.com/media/logos/logo_VB.svg
-    url: /dotnet/visual-basic
-  - title: Python
-    imageSrc: https://docs.microsoft.com/media/logos/logo_python.svg
-    url: ../python/index.yml
-  - title: JavaScript
-    imageSrc: https://docs.microsoft.com/media/logos/logo_js.svg
-    url: ../javascript/index.yml
-  - title: TypeScript
-    imageSrc: https://docs.microsoft.com/media/logos/logo_TS.svg
-    url: http://www.typescriptlang.org/docs/tutorial.html
-  - title: R
-    imageSrc: https://docs.microsoft.com/media/logos/logo_R.svg
-    url: ../rtvs/index.md?view=vs-2017&preserve-view=true
+    - title: C++
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
+      url: /cpp/
+    - title: C#
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_Csharp.svg'
+      url: /dotnet/csharp
+    - title: F#
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_Fsharp.svg'
+      url: /dotnet/fsharp
+    - title: Visual Basic
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_VB.svg'
+      url: /dotnet/visual-basic
+    - title: Python
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_python.svg'
+      url: ../python/index.yml
+    - title: JavaScript
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_js.svg'
+      url: ../javascript/index.yml
+    - title: TypeScript
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_TS.svg'
+      url: 'http://www.typescriptlang.org/docs/tutorial.html'
+    - title: R
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_R.svg'
+      url: ../rtvs/index.md?view=vs-2017&preserve-view=true
 additionalContent:
   sections:
-  - title: 使用 Visual Studio 開發
-    items:
-    - title: Web 和雲端
-      links:
-      - text: Web 程式開發
-        url: /aspnet/
-      - text: Azure 開發和管理
-        url: ../azure/index.yml
-      - text: Python
-        url: ../python/index.yml
-      - text: Node.js
-        url: ../javascript/index.yml
-      - text: 資料儲存體和流程
-        url: ../data-tools/index.yml
-      - text: 資料科學
-        url: ../python/data-science-and-analytical-applications-workload.md
-      - text: Office/Sharepoint 開發
-        url: https://developer.microsoft.com/office/docs
-    - title: 傳統型與行動裝置
-      links:
-      - text: Windows 應用程式開發
-        url: /windows/apps/
-      - text: .NET 桌面開發
-        url: /dotnet/framework/develop-client-apps
-      - text: 使用 C++ 進行 Windows 開發
-        url: /cpp/windows/desktop-applications-visual-cpp
-      - text: 使用 .NET 進行行動開發 (Xamarin)
-        url: /xamarin/
-      - text: 使用 C++ 的行動裝置程式開發
-        url: /visualstudio/cross-platform/
-      - text: 使用 JavaScript 的行動裝置程式開發
-        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017&preserve-view=true
-        note: (僅 Visual Studio 2017 與 2015)
-    - title: 遊戲
-      links:
-      - text: 使用 Unity 的遊戲程式開發
-        url: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity
-      - text: 使用 C++ 的遊戲程式開發
-        url: /windows/uwp/gaming/e2e
-    - title: 其他工具組
-      links:
-      - text: Visual Studio 擴充功能開發
-        url: ../extensibility/index.yml
-      - text: 使用 C++ 的 Linux 程式開發
-        url: /cpp/linux/
-      - text: .NET Core 跨平台開發
-        url: /dotnet/core/
-  - title: 工作
-    items:
-    - title: 開發
-      summary: 使用程式碼編輯器撰寫並管理您的程式碼。
-      url: ../ide/index-writing-code.yml
-    - title: 組建
-      summary: 編譯和建置您的原始程式碼。
-      url: ../ide/compiling-and-building-in-visual-studio.md
-    - title: 偵錯
-      summary: 調查及修正程式碼中的 Bug。
-      url: ../debugger/index.yml
-    - title: 測試
-      summary: 對專案執行測試。
-      url: ../test/improve-code-quality.md
-    - title: 部署
-      summary: 使用 Web Deploy、InstallShield、NuGet 和持續整合等功能，共用您的應用程式與程式碼。
-      url: ../deployment/index.yml
-    - title: 版本控制
-      summary: 使用版本控制技術（例如 Git 和 GitHub）共用程式碼。
-      url: ../ide/git-with-visual-studio.md
-    - title: DevOps
-      summary: 利用 Azure DevOps Services 持續在雲端建置及發行您的應用程式及施行敏捷式運作。
-      url: /azure/devops
-    - title: 測量效能
-      summary: 識別瓶頸，並使用診斷工具將程式碼效能最佳化。
-      url: ../profiling/index.yml
-    - title: 擴充
-      summary: 將您自己的功能加入至 Visual Studio IDE 來改善您的開發經驗。
-      url: ../extensibility/index.yml
-    - title: 資料
-      summary: 建立連線到任何資料庫或服務，及任何位置 (本機或雲端) 的資料應用程式。
-      url: ../data-tools/accessing-data-in-visual-studio.md
-    - title: 共同作業
-      summary: 在共同作業的即時環境中，共用、編輯和偵錯程式碼。
-      url: /visualstudio/liveshare/
-    - title: 使用 Docker 容器開發
-      summary: 使用 Docker 容器隔離模組化元件及改善延展性。
-      url: ../containers/index.yml
-  footer: '[部落格](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [問題回報](../ide/feedback-options.md) - [開發人員社群](https://aka.ms/feedback/suggest?space=8) - [疑難排解](/troubleshoot/visualstudio/welcome-visual-studio)'
+    - title: 使用 Visual Studio 開發
+      items:
+        - title: Web 和雲端
+          links:
+            - text: Web 程式開發
+              url: /aspnet/
+            - text: Azure 開發和管理
+              url: ../azure/index.yml
+            - text: Python
+              url: ../python/index.yml
+            - text: Node.js
+              url: ../javascript/index.yml
+            - text: 資料儲存體和流程
+              url: ../data-tools/index.yml
+            - text: 資料科學
+              url: ../python/data-science-and-analytical-applications-workload.md
+            - text: Office/Sharepoint 開發
+              url: 'https://developer.microsoft.com/office/docs'
+        - title: 傳統型與行動裝置
+          links:
+            - text: Windows 應用程式開發
+              url: /windows/apps/
+            - text: .NET 桌面開發
+              url: /dotnet/framework/develop-client-apps
+            - text: 使用 C++ 進行 Windows 開發
+              url: /cpp/windows/desktop-applications-visual-cpp
+            - text: 使用 .NET 進行行動開發 (Xamarin)
+              url: /xamarin/
+            - text: 使用 C++ 的行動裝置程式開發
+              url: /visualstudio/cross-platform/
+            - text: 使用 JavaScript 的行動裝置程式開發
+              url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017&preserve-view=true
+              note: (Visual Studio 2017 and 2015 only)
+        - title: 遊戲
+          links:
+            - text: 使用 Unity 的遊戲程式開發
+              url: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity
+            - text: 使用 C++ 的遊戲程式開發
+              url: /windows/uwp/gaming/e2e
+        - title: 其他工具組
+          links:
+            - text: Visual Studio 擴充功能開發
+              url: ../extensibility/index.yml
+            - text: 使用 C++ 的 Linux 程式開發
+              url: /cpp/linux/
+            - text: .NET Core 跨平台開發
+              url: /dotnet/core/
+    - title: 工作
+      items:
+        - title: 開發
+          summary: 使用程式碼編輯器撰寫並管理您的程式碼。
+          url: ../ide/index-writing-code.yml
+        - title: 組建
+          summary: 編譯和建置您的原始程式碼。
+          url: ../ide/compiling-and-building-in-visual-studio.md
+        - title: 偵錯
+          summary: 調查及修正程式碼中的 Bug。
+          url: ../debugger/index.yml
+        - title: 測試
+          summary: 對專案執行測試。
+          url: ../test/improve-code-quality.md
+        - title: 部署
+          summary: 使用 Web Deploy、InstallShield、NuGet 和持續整合等功能，共用您的應用程式與程式碼。
+          url: ../deployment/index.yml
+        - title: 版本控制
+          summary: 使用版本控制技術（例如 Git 和 GitHub）共用程式碼。
+          url: ../version-control/index.yml
+        - title: DevOps
+          summary: 利用 Azure DevOps Services 持續在雲端建置及發行您的應用程式及施行敏捷式運作。
+          url: /azure/devops
+        - title: 測量效能
+          summary: 識別瓶頸，並使用診斷工具將程式碼效能最佳化。
+          url: ../profiling/index.yml
+        - title: 擴充
+          summary: 將您自己的功能加入至 Visual Studio IDE 來改善您的開發經驗。
+          url: ../extensibility/index.yml
+        - title: 資料
+          summary: 建立連線到任何資料庫或服務，及任何位置 (本機或雲端) 的資料應用程式。
+          url: ../data-tools/accessing-data-in-visual-studio.md
+        - title: 共同作業
+          summary: 在共同作業的即時環境中，共用、編輯和偵錯程式碼。
+          url: /visualstudio/liveshare/
+        - title: 使用 Docker 容器開發
+          summary: 使用 Docker 容器隔離模組化元件及改善延展性。
+          url: ../containers/index.yml
+  footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Issue Reporting](../ide/feedback-options.md) - [Developer Community](https://aka.ms/feedback/suggest?space=8) - [Troubleshooting](/troubleshoot/visualstudio/welcome-visual-studio)'

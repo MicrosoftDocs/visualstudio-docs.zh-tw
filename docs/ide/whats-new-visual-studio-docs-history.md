@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b45b67f03c7f95fe12c0f4322e682588a7f50714
-ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
+ms.openlocfilehash: c735eea8fe3a8b62f1901f7b9c6edf50d42aaf2c
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108640983"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973629"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio 文件中的新功能歷程記錄
 
@@ -362,7 +362,7 @@ ms.locfileid: "108640983"
 
 **更新的文章**
 
-- [常見問題-在 Visual Studio 探索工作中尋找您需要的偵錯工具功能](../debugger/find-your-debugging-task.md) ，以尋找您的偵錯工具和總覽主題
+- [常見問題-在 Visual Studio 探索工作中尋找您需要的偵錯工具功能](../debugger/find-your-debugging-task.yml) ，以尋找您的偵錯工具和總覽主題
 
 ### <a name="get-started"></a>開始使用
 
@@ -406,11 +406,11 @@ ms.locfileid: "108640983"
 - [啟用或安裝 .net 分析器](../code-quality/install-net-analyzers.md) -新增檔以從 FxCop 分析器遷移至 .net 分析器
 - [從 fxcop 分析器遷移至 .net 分析器](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) -新增檔以從 fxcop 分析器遷移至 .net 分析器
 - [從舊版分析 (FxCop) 遷移至來源分析 ( .net 分析器) ](../code-quality/migrate-from-legacy-analysis-to-net-analyzers.md) -新增檔以從 FxCop 分析器遷移至 .net 分析器
-- [舊版 FxCop 和 .net 分析器](../code-quality/net-analyzers-faq.md) 的常見問題-新增檔以從 FxCop 分析器遷移至 .net 分析器
+- [舊版 FxCop 和 .net 分析器](../code-quality/net-analyzers-faq.yml) 的常見問題-新增檔以從 FxCop 分析器遷移至 .net 分析器
 
 **更新的文章**
 
-- 程式[代碼分析常見問題](../code-quality/analyzers-faq.md)-已新增從 FxCop 分析器遷移至 .net 分析器的檔
+- 程式[代碼分析常見問題](../code-quality/analyzers-faq.yml)-已新增從 FxCop 分析器遷移至 .net 分析器的檔
 - [Fxcop 規則埠狀態](../code-quality/fxcop-rule-port-status.md) -已新增從 Fxcop 分析器遷移至 .net 分析器的檔
 - 已[淘汰的規則](../code-quality/fxcop-unported-deprecated-rules.md)-已新增從 FxCop 分析器遷移至 .net 分析器的檔
 - [Unported 可能已移植的檔的規則，](../code-quality/fxcop-unported-rules-may-get-ported.md) 以從 FxCop 分析器遷移至 .net 分析器
@@ -665,10 +665,6 @@ ms.locfileid: "108640983"
 
 - [Visual Studio (preview 中的新 git 體驗) ](../version-control/git-with-visual-studio.md) -將新的 git 體驗內容新增 (預覽) 
 - [C + + EditorConfig 格式設定慣例](./cpp-editorconfig-properties.md) -新文章
-- [什麼是 GitHub Codespaces？ (preview) ](./codespaces/codespaces-overview.md) -新增 Codespaces (preview) 內容
-- [如何自訂 codespace (預覽) ](./codespaces/customize-codespaces.md) -新增 Codespaces (preview) 內容
-- [支援的 Visual Studio 功能 (預覽) ](./codespaces/supported-features-codespaces.md) -新增 Codespaces (preview) 內容
-- [如何搭配使用 Visual Studio 與 codespace (preview) ](./codespaces/use-visual-studio-with-codespaces.md) -新增 Codespaces (preview) 內容
 
 **更新的文章**
 

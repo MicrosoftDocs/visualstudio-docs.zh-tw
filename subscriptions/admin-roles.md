@@ -7,12 +7,12 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 03/19/2021
 ms.topic: conceptual
 description: 深入瞭解超級管理員和系統管理員角色，以及如何指派系統管理員。
-ms.openlocfilehash: eca87026c681454925974f2e394737092c3e226d
-ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
+ms.openlocfilehash: 1f107a5bcef9be61c4693549ee8e628a207cc789
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104757590"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973534"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Visual Studio 訂用帳戶協定的超級管理員和系統管理員
 
@@ -55,4 +55,4 @@ ms.locfileid: "104757590"
 ## <a name="next-steps"></a>下一步
 - 了解如何[指派訂用帳戶](assign-license.md)
 - 深入了解[訂用帳戶權益](https://visualstudio.microsoft.com/vs/benefits/)的完整範圍
-- [設定合約喜好設定](admin-prefs.md)
+- [設定合約喜好設定](admin-preferences.md)

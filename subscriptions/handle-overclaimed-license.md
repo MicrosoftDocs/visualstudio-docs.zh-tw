@@ -1,18 +1,18 @@
 ---
-title: 在 Visual Studio 訂用帳戶中處理過度配置的授權 |Microsoft 檔
+title: 在 Visual Studio 訂用帳戶中處理過度配置的授權 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 03/21/2021
+ms.date: 05/18/2021
 ms.topic: conceptual
 description: 瞭解系統管理員如何解決過度配置的訂閱
-ms.openlocfilehash: d92671a3478fd8044b959c56f3201df5ff5c5a85
-ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
+ms.openlocfilehash: 533ce71e8795e89bcb21fd437da6bea91db291f4
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104776554"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973391"
 ---
 # <a name="over-allocated-subscriptions"></a>過度配置的訂用帳戶
 有時，在新增訂閱者之後訂單也有所變更，而可能導致已指派的訂閱數超過公司所擁有的授權數。 這稱為「過度配置」。  
@@ -26,6 +26,9 @@ ms.locfileid: "104776554"
 > ![過度領取的訂閱通知](_img/over-claimed/over-claimed-alert.png "配置中會列出過度配置的數目，並以每個訂用帳戶類型的圖形上的雜湊清單示。")
 
 請注意，顯示會使用雜湊的橫條來指出過度配置的訂用帳戶。  所有訂用帳戶類型的過度配置數目都包含在頂端的 [總覽] 區段中，而且每個訂用帳戶層級也會顯示自己的配置狀態。  
+
+## <a name="receive-notifications-when-over-allocations-occur"></a>發生過度分配時接收通知
+您可以指定在發生過度分配時接收通知的電子郵件地址，以及設定在傳送通知之前必須超過的閾值。  深入瞭解如何在系統管理員入口網站中 [設定您的合約喜好設定](admin-preferences.md) 。
 
 ## <a name="resolve-over-allocated-subscriptions"></a>解析過度配置的訂閱
 有數種方式可解決過度配置：

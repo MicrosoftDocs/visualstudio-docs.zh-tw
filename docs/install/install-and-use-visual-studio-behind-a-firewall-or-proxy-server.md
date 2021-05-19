@@ -1,7 +1,7 @@
 ---
 title: 在防火牆或 Proxy 伺服器後方安裝及使用
 description: 如果您的組織使用防火牆或 Proxy 伺服器，請檢閱建議新增至允許清單或開啟的網域 URL、連接埠及通訊協定
-ms.date: 06/17/2020
+ms.date: 05/07/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e30354d55d6ec7ebe70c19e07208aee99ae69109
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 7e6df4c1e05d7f20ff59eeb3869947640942cedc
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296244"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973641"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
@@ -61,6 +61,8 @@ ms.locfileid: "107296244"
 | \*.windows.net | 登入位置 |
 | \*.microsoftonline.com | 登入位置 |
 | \*.live.com | 登入位置 |
+| github-releases.githubusercontent.com | Linux 開發 |
+| az837173.vo.msecnd.net | 使用 Azure 儲存體開發 |
 | | |
 
 #### <a name="non-microsoft-domains"></a>非 Microsoft 網域

@@ -161,7 +161,7 @@
         - name: 進階管理員與系統管理員
           href: admin-roles.md
         - name: 設定合約喜好設定
-          href: admin-prefs.md
+          href: admin-preferences.md
         - name: 概觀
           href: using-admin-portal.md
         - name: 新增每月訂閱

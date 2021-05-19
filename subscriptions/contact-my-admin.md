@@ -1,18 +1,18 @@
 ---
-title: 在訂閱者入口網站中聯絡訂用帳戶管理員 |Microsoft 檔
+title: 在訂閱者入口網站中聯絡訂用帳戶管理員 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
-ms.date: 02/18/2021
+ms.date: 05/18/2021
 ms.topic: how-to
 description: 瞭解如何聯繫訂用帳戶管理員，取得問題的協助。
-ms.openlocfilehash: 4eb17f5480b3839248d0968b6c20434c149bb756
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 343cf2eede966e83390c6f2689d0db840507f827
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250039"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973513"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>取得訂用帳戶管理員的協助
 如果您的 Visual Studio 訂用帳戶是由您的公司或學校提供給您，則您可能會被訂用帳戶管理員或「系統管理員」指派給您。  管理員可以指派或移除訂用帳戶、變更登入電子郵件地址、判斷您是否能夠下載軟體，以及執行與訂用帳戶相關的其他功能。
@@ -30,7 +30,7 @@ ms.locfileid: "102250039"
 6. 最後，選取 [ **傳送**]。
 
 > [!NOTE]
-> **超級管理員：**  若要設定傳送「連絡人我的系統管理員」要求的電子郵件地址，請在 [合約喜好](admin-prefs.md#contact-email-address)設定中指定該位址。
+> **超級管理員：**  若要設定傳送「連絡人我的系統管理員」要求的電子郵件地址，請在 [合約喜好](admin-preferences.md#contact-email-address)設定中指定該位址。
 
 ## <a name="resources"></a>資源
 - [Visual Studio 訂閱支援](https://my.visualstudio.com/gethelp)

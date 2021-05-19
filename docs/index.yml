@@ -6,7 +6,7 @@ metadata:
   title: Visual Studio 產品系列文件
   description: 探索 Visual Studio 產品系列文件，包括適用於 Windows 和 Mac 的 Visual Studio IDE、Visual Studio Code、Visual Studio App Center、GitHub Codespaces 以及 Visual Studio 訂閱。
   ms.topic: hub-page
-  ms.custom: contperf-fy21q1, contperf-fy21q3
+  ms.custom: 'contperf-fy21q1, contperf-fy21q3'
   ms.date: 03/23/2021
   searchScope: []
   titleSuffix: ''
@@ -15,73 +15,65 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: d9aa5ff71a4dc24b32827f24e0df219db3674df2
-  ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
-  ms.translationtype: MT
-  ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "105073738"
 productDirectory:
   items:
-  - title: Visual Studio
-    imageSrc: ./media/vs-ide-2019.svg
-    links:
-    - url: ./windows/index.yml?view=vs-2019&preserve-view=true
-      text: Visual Studio 2019 (目前)
-    - url: ./windows/index.yml?view=vs-2017&preserve-view=true
-      text: Visual Studio 2017
-    - url: /previous-versions/visualstudio/
-      text: 舊版本
-    - url: /visualstudio/releases/2019/release-notes
-      text: 版本資訊
-    - url: https://visualstudio.microsoft.com/
-      text: 產品頁面
-  - title: Visual Studio for Mac
-    imageSrc: ./media/vs-mac-2019.svg
-    links:
-    - url: /visualstudio/mac
-      text: Visual Studio 2019 for Mac (目前)
-    - url: /visualstudio/mac/?view=vsmac-2017&preserve-view=true
-      text: Visual Studio 2017 for Mac
-    - url: /visualstudio/releasenotes/vs2019-mac-relnotes
-      text: 版本資訊
-    - url: https://visualstudio.microsoft.com/vs/mac/
-      text: 產品頁面
-  - title: Visual Studio Code
-    imageSrc: ./media/vs-code-logo.svg
-    links:
-    - url: https://code.visualstudio.com/docs
-      text: 文件
-    - url: https://code.visualstudio.com/updates
-      text: 版本資訊
-    - url: https://code.visualstudio.com
-      text: 產品頁面
-  - title: GitHub Codespaces
-    imageSrc: https://docs.microsoft.com/media/logos/logo_octokitty.svg
-    links:
-    - url: https://docs.github.com/github/developing-online-with-codespaces/
-      text: 文件
-    - url: https://code.visualstudio.com/docs/remote/codespaces/
-      text: 使用 Visual Studio Code
-    - url: ./ide/codespaces/use-visual-studio-with-codespaces.md
-      text: 使用 Visual Studio
-    - url: https://github.com/features/codespaces/
-      text: 產品頁面
-  - title: Visual Studio 應用程式中心
-    imageSrc: ./media/vs-mobile-center.svg
-    links:
-    - url: /appcenter
-      text: 文件
-    - url: https://visualstudio.microsoft.com/app-center/
-      text: 入口網站
-  - title: Visual Studio 訂閱
-    imageSrc: ./media/vs-subscription-temp.svg
-    links:
-    - url: /visualstudio/subscriptions
-      text: 文件
-    - url: https://visualstudio.microsoft.com/subscriptions
-      text: visualstudio.com 的資訊
-    - url: https://my.visualstudio.com
-      text: 訂閱者入口網站
-    - url: https://manage.visualstudio.com
-      text: 系統管理員入口網站
+    - title: Visual Studio
+      imageSrc: ./media/vs-ide-2019.svg
+      links:
+        - url: ./windows/index.yml?view=vs-2019&preserve-view=true
+          text: Visual Studio 2019 (目前)
+        - url: ./windows/index.yml?view=vs-2017&preserve-view=true
+          text: Visual Studio 2017
+        - url: /previous-versions/visualstudio/
+          text: 舊版本
+        - url: /visualstudio/releases/2019/release-notes
+          text: 版本資訊
+        - url: 'https://visualstudio.microsoft.com/'
+          text: 產品頁面
+    - title: Visual Studio for Mac
+      imageSrc: ./media/vs-mac-2019.svg
+      links:
+        - url: /visualstudio/mac
+          text: Visual Studio 2019 for Mac (目前)
+        - url: /visualstudio/mac/?view=vsmac-2017&preserve-view=true
+          text: Visual Studio 2017 for Mac
+        - url: /visualstudio/releasenotes/vs2019-mac-relnotes
+          text: 版本資訊
+        - url: 'https://visualstudio.microsoft.com/vs/mac/'
+          text: 產品頁面
+    - title: Visual Studio Code
+      imageSrc: ./media/vs-code-logo.svg
+      links:
+        - url: 'https://code.visualstudio.com/docs'
+          text: 文件
+        - url: 'https://code.visualstudio.com/updates'
+          text: 版本資訊
+        - url: 'https://code.visualstudio.com'
+          text: 產品頁面
+    - title: GitHub Codespaces
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_octokitty.svg'
+      links:
+        - url: 'https://docs.github.com/github/developing-online-with-codespaces/'
+          text: 文件
+        - url: 'https://code.visualstudio.com/docs/remote/codespaces/'
+          text: 使用 Visual Studio Code
+        - url: 'https://github.com/features/codespaces/'
+          text: 產品頁面
+    - title: Visual Studio 應用程式中心
+      imageSrc: ./media/vs-mobile-center.svg
+      links:
+        - url: /appcenter
+          text: 文件
+        - url: 'https://visualstudio.microsoft.com/app-center/'
+          text: 入口網站
+    - title: Visual Studio 訂閱
+      imageSrc: ./media/vs-subscription-temp.svg
+      links:
+        - url: /visualstudio/subscriptions
+          text: 文件
+        - url: 'https://visualstudio.microsoft.com/subscriptions'
+          text: visualstudio.com 的資訊
+        - url: 'https://my.visualstudio.com'
+          text: 訂閱者入口網站
+        - url: 'https://manage.visualstudio.com'
+          text: 系統管理員入口網站

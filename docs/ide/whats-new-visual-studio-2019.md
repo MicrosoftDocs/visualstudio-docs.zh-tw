@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e4c432afb1a4341dbe30f023d95bfccb4689094
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.openlocfilehash: 72b97b87a7edd8fdba46b755b7253af62f6de39f
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107913094"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973462"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -228,7 +228,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
    雖然新的 Git 版本控制體驗現已在 Visual Studio 2019 [16.8 版](/visualstudio/releases/2019/release-notes/)中預設為開啟，但我們仍會繼續新增功能，以增強最新預覽版本的體驗。
 
-   如需詳細資訊，請參閱 [Visual Studio 頁面中的 Git 體驗](../version-control/git-with-visual-studio.md) 。
+   如需詳細資訊，請參閱 [Visual Studio 頁面中的版本控制](/visualstudio/version-control/) 。
 
 如需預覽版本的詳細資訊 &mdash; 和下載連結，如果您想要試用， &mdash; 請參閱 **[Visual Studio 預覽](https://aka.ms/vspreview/)** 頁面。
 

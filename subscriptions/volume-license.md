@@ -1,18 +1,18 @@
 ---
-title: 存取 Visual Studio 大量授權客戶的系統管理員入口網站 |Microsoft 檔
+title: 存取 Visual Studio 大量授權客戶的系統管理員入口網站 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 03/18/2021
+ms.date: 05/18/2021
 ms.topic: conceptual
 description: 瞭解大量授權合約的管理員如何存取 Visual Studio 訂用帳戶管理員入口網站
-ms.openlocfilehash: 0ab0ca532c1c2cdb848a3f6df9862c1d80518248
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 70a44dd659fe2c972db6ae3b6155e3c2374b159f
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672526"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973555"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>以大量授權合約的系統管理員身分存取系統管理員入口網站
 
@@ -37,4 +37,4 @@ ms.locfileid: "104672526"
 ## <a name="next-steps"></a>下一步
 - 了解如何[指派訂用帳戶](assign-license.md)
 - 深入了解[訂用帳戶權益](https://visualstudio.microsoft.com/vs/benefits/)的完整範圍
-- [設定合約喜好設定](admin-prefs.md)
+- [設定合約喜好設定](admin-preferences.md)
