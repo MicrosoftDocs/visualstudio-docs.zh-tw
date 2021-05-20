@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/03/2021
 ms.topic: conceptual
 description: 使用 GitHub Enterprise 管理 Visual Studio 訂用帳戶中的訂閱
-ms.openlocfilehash: c174b9beb7a7a0eec6bdb65e684869bc0be7dadb
-ms.sourcegitcommit: 8da735b586276c95bf566a867655e3464ab1f989
+ms.openlocfilehash: a1ece92990bf54d85140b1d3548ebf811913fae4
+ms.sourcegitcommit: 0088835f22334b8fee89f8c07bb12bcdfdef1639
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109740658"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110188109"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>管理含 GitHub Enterprise 的 Visual Studio 訂閱
 與 Microsoft (EA) 的 Enterprise 合約客戶，有資格購買新的訂用帳戶供應專案，以結合 Visual Studio 標準訂用帳戶和 GitHub Enterprise。 Visual Studio 訂閱者若想取得 GitHub Enterprise，這是個既簡單又經濟實惠的方法。 
@@ -33,6 +33,10 @@ ms.locfileid: "109740658"
 > 如果有 GitHub Enterprise 的 Visual Studio 訂用帳戶是由 Visual Studio 訂用帳戶管理員所指派，且沒有先購買，則不會收到 GitHub 的通知，指出您想要建立 GitHub Enterprise 帳戶。  **至少購買一個** 您應在指派訂用帳戶之前，先進行 GitHub Enterprise 的 Visual Studio 訂用帳戶。
 
 ## <a name="moving-to-visual-studio-with-github-enterprise"></a>使用 GitHub Enterprise 移至 Visual Studio
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEAsv]
+
 如果您的組織在標準 Visual Studio Enterprise 和 Visual Studio Professional 訂用帳戶指派 Visual Studio 訂用帳戶時 GitHub Enterprise 配套，則系統管理員入口網站所包含的功能，可協助您將現有的訂閱者移至具有 Visual Studio Enterprise 和/或 GitHub Enterprise Visual Studio Professional 訂閱的對應 GitHub Enterprise。  例如，具有 Visual Studio Professional 訂用帳戶的訂閱者將會移至 Visual Studio Professional GitHub Enterprise 訂閱。 在左側的 [總覽] 面板中，您會看到下列磚：
 
    > [!div class="mx-imgBorder"]

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9971007ed38a1f09aa28145ead468f6e5383eeae
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.openlocfilehash: f3bc253f0babbc404164a9e85fda1e54ba5f5297
+ms.sourcegitcommit: 0088835f22334b8fee89f8c07bb12bcdfdef1639
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "109973603"
+ms.locfileid: "110188105"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>使用最小離線版面配置來更新 Visual Studio
 
@@ -134,12 +134,18 @@ ms.locfileid: "109973603"
     MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
     ```
 
-使用 [ **產生** ] 命令的其他幾個範例：
+使用 [ **產生** ] 命令的其他一些範例：
 
 - 以下說明如何新增額外的工作負載，並只包含建議的封裝。
 
     ```cmd
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Professional --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    ```
+
+- 您也可以產生支援多項產品的基本離線版面配置。
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise,Microsoft.VisualStudio.Product.Professional --baseVersion 16.4.0 --targetVersion 16.4.4 --languages en-US
     ```
 
 - 最後，以下是您在最基本的版面配置中包含多種語言的方式。
@@ -170,12 +176,18 @@ ms.locfileid: "109973603"
     MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
     ```
 
-使用 [ **產生** ] 命令的其他幾個範例：
+使用 [ **產生** ] 命令的其他一些範例：
 
 - 以下說明如何新增額外的工作負載，並只包含建議的封裝。
 
     ```cmd
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    ```
+
+- 您也可以產生支援多項產品的基本離線版面配置。
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise,Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
     ```
 
 - 最後，以下是您在最基本的版面配置中包含多種語言的方式。
