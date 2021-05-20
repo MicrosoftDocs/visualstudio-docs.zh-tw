@@ -2,7 +2,7 @@
 title: 無法設定資料中斷點 |Microsoft Docs
 description: 尋找使用「當值變更時中斷」時所發生的「無法設定資料中斷點錯誤」的說明、解決方案和因應措施。
 ms.custom: SEO-VS-2020
-ms.date: 12/3/2019
+ms.date: 5/19/2020
 ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unable_to_set_data_breakpoint
@@ -17,25 +17,25 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e90c3d4af8e568f1bb2e6987c66c7fbc0856c57
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 73e7e02d90e2a89c81b5e690718c95fe7efe0fb3
+ms.sourcegitcommit: 6e27b1238a8aa704b127eac34f4173e9d56690c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150453"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110231961"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>針對資料中斷點錯誤進行疑難排解
 此頁面將逐步引導您解決在使用「值變更時中斷」時所看到的常見錯誤
 
 ## <a name="diagnosing-unable-to-set-data-breakpoint-errors"></a>診斷「無法設定資料中斷點」錯誤
 > [!IMPORTANT]
-> .NET Core 3.0 和更新的支援 Managed 資料中斷點。 您可以在 [這裡](https://dotnet.microsoft.com/download)下載最新版本。
+> .NET Core 3.0 和更新的和 .NET 5.0.3 和更新支援 Managed 資料中斷點。 您可以在 [這裡](https://dotnet.microsoft.com/download)下載最新版本。
 
-以下是使用 managed 資料中斷點時可能發生的錯誤清單。 其中包含錯誤發生原因的其他說明，以及解決錯誤的可能解決方案或因應措施。
+以下是使用 managed 資料中斷點時可能發生的錯誤清單。 其中包含錯誤發生原因的更多說明，以及解決錯誤的可能解決方案或因應措施。
 
-- *「目標進程所使用的 .NET 版本不支援資料中斷點。資料中斷點需要在 x86 或 x64 上執行的 .NET Core 3.0 +。」*
+- *「目標進程所使用的 .NET 版本不支援資料中斷點。資料中斷點需要 .NET Core 3.x 或 .NET 5.0.3 + （在 x86 或 x64 上執行）。*
 
-  - Managed 資料中斷點的支援是從 .NET Core 3.0 開始。 在3.0 下的 .NET Core .NET Framework 或版本中，目前不支援此功能。 
+  - Managed 資料中斷點的支援是從 .NET Core 3.0 開始。 目前不支援 .NET Framework 在3.0 版或5.0.3 下的 .NET 版本中的 .NET Core 版本中支援此功能。 
     
   - **解決方案**：解決方法是將您的專案升級至 .net Core 3.0。
 
@@ -69,6 +69,11 @@ ms.locfileid: "98150453"
 
   - 只有非舊版 c # 運算式評估工具支援資料中斷點。 
   - **解決方案**：若要停用舊版 c # 運算式評估工具，請前往 [取消核取] `Debug -> Options` 下 `Debugging -> General` `"Use the legacy C# and VB expression evaluators"` 。
+
+- *「類別 **X** 有一個自訂偵錯工具視圖，它會封鎖僅對其特定資料使用資料中斷點。」*
+  
+  - 只有當目標進程所建立的記憶體 (正在) 調試的應用程式時，才支援資料中斷點。 設定資料中斷點的記憶體已標示為 [DebuggerTypeProxy 屬性](using-debuggertypeproxy-attribute.md) 所建立的物件，或其他不屬於目標進程的物件所擁有的物件。
+  - 因應 **措施：將** 物件的「原始視圖」展開 (s) ，而不是展開物件 () 的 DebuggerTypeProxy 視圖，然後設定資料中斷點。 這可確保資料中斷點不在由 DebuggerTypeProxy 屬性所建立之物件所擁有的記憶體上。
 
 ## <a name="data-breakpoint-hardware-limitations"></a>資料中斷點硬體限制
 

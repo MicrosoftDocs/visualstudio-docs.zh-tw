@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 訂閱 Microsoft Azure 權益 |Microsoft 檔
+title: Visual Studio 訂閱 Microsoft Azure 權益 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 03/18/2021
+ms.date: 05/18/2021
 ms.topic: how-to
 description: 瞭解如何啟用 Visual Studio 訂用帳戶中所含的 Azure DevTest 個人點數權益。
-ms.openlocfilehash: 1fb85c64ec49d906ba843ac944d550ef1e41fd4d
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 0888f20c80dbacad0237fdd12f987870c4834f2b
+ms.sourcegitcommit: 6e27b1238a8aa704b127eac34f4173e9d56690c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672253"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110231973"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  使用您的 [每月 Azure DevTest 個人點數](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，azure 就是您開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
@@ -55,7 +55,7 @@ ms.locfileid: "104672253"
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
 - **如果組織中有人為您的組織購買訂用** 帳戶，請 [洽詢您的 Visual Studio 訂](./contact-my-admin.md) 用帳戶管理員，並要求提供所需每月信用額度的訂用帳戶。  
-- 如果您在與另一個 Microsoft 帳戶相關聯的相同訂用帳戶層級上 **有另一個** 作用中的 Visual Studio 訂用帳戶，您可以在 Visual Studio 訂用帳戶 [入口網站](https://my.visualstudio.com/subscriptions)中 [新增其他帳戶](./manage-vs-subscriptions.md#managing-my-profile)，將 Azure 權益轉移到另一個有效的 Visual Studio 訂用帳戶  
+- 如果您在相同的訂用帳戶層級上 **有另一個** 作用中的 Visual Studio 訂用帳戶，您可以使用它來設定新的 Azure 點數訂用帳戶。  
 
 您可以使用以下的資格表，來判斷每個訂用帳戶類型所包含的信用額度數目。  
 
