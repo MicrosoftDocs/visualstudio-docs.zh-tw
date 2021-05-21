@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: f16ecd899bc1dddd7383ef1a815ed6197b799a19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f48b5c06e91b9c05e6edc7e2a1738aeb677a7ba
+ms.sourcegitcommit: 69456d802203d21dabc3ae8662547a3241c24f47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859524"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110235907"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>對使用 Docker 進行的 Visual Studio 開發進行疑難排解
 
@@ -29,7 +29,7 @@ ms.locfileid: "99859524"
 1. 以滑鼠右鍵按一下通知區域中的 [適用於 Windows 的 Docker]，然後選取 [設定]。
 1. 選取 **資源**  >  **檔共用**，並共用需要存取的資料夾。 您可以共用整個系統磁片磁碟機，但不建議這麼做。
 
-    ![共用的磁碟機](media/troubleshooting-docker-errors/docker-settings-image.png)
+    :::image type="content" source="media//troubleshooting-docker-errors/docker-settings-image.png" alt-text="共用磁片磁碟機":::
 
 > [!TIP]
 > 當未設定 **共用磁片磁碟機** 時，Visual Studio Visual Studio 2017 15.6 版以後的版本將會提示。
@@ -86,7 +86,7 @@ net localgroup docker-users DOMAIN\username /add
     "graph": "D:\\mypath\\images"
 ```
 
-![Docker 檔案共用的螢幕擷取畫面](media/troubleshooting-docker-errors/docker-daemon-settings.png)
+:::image type="content" source="media/troubleshooting-docker-errors/docker-daemon-settings.png" alt-text="Docker 檔案共用的螢幕擷取畫面":::
 
 按一下 [套用 **& 重新開機**]。 這些步驟會修改 *% ProgramData% \docker\config\daemon.js上* 的設定檔。 先前建立的映射不會移動。
 
@@ -94,7 +94,7 @@ net localgroup docker-users DOMAIN\username /add
 
 將 Docker 支援新增至專案時，您可以選擇 Windows 或 Linux 容器。 如果 Docker Server 主機未設定為與專案目標執行相同的容器類型，您可能會看到類似下面的錯誤：
 
-![Docker 主機和專案不符的螢幕擷取畫面](media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png)
+:::image type="content" source="media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png" alt-text="Docker 主機和專案不符的螢幕擷取畫面":::
 
 若要解決此問題：
 
