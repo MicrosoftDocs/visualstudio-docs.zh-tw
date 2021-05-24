@@ -2,7 +2,7 @@
 title: 預設鍵盤快速鍵
 description: 瞭解 Visual Studio 中的預設鍵盤快速鍵，可讓您存取各種命令和視窗。
 ms.custom: SEO-VS-2020
-ms.date: 03/10/2021
+ms.date: 05/21/2021
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 73bb5e48c37cb24d434e57356a90f2bc3907a696
-ms.sourcegitcommit: 6f18481e4f84d86a837ec5d0e8f12fff1a1a8b65
+ms.openlocfilehash: ac74ed04faaaf4626e63be7393a650b1bea225f3
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "102782820"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110328688"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
@@ -32,7 +32,7 @@ ms.locfileid: "102782820"
 - [鍵盤祕訣](../ide/productivity-shortcuts.md)
 - [生產力秘訣](../ide/productivity-features.md)。
 
-如需 Visual Studio 協助工具的詳細資訊，請參閱 [協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md) 和 how [to：以獨佔方式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
+如需 Visual Studio 中協助工具的詳細資訊，請參閱 [協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md) 和 how [to：以獨佔方式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
 
 - [分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [編輯](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
@@ -46,7 +46,7 @@ ms.locfileid: "102782820"
 - [檔案](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
 - [重構](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)
 - [工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)
-- [類別視圖內容功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)
+- [類別檢視內容功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)
 - [說明](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)
 - [方案總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
 - [檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
@@ -87,7 +87,7 @@ ms.locfileid: "102782820"
 |Build.Compile|**Ctrl+F7**|
 |Build.RunCodeAnalysisonSolution|**Alt+F11**|
 
-### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a> 類別視圖內容功能表
+### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a> 類別檢視內容功能表
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -98,6 +98,7 @@ ms.locfileid: "102782820"
 |命令|鍵盤快速鍵|
 |--------------| - |
 |Debug.ApplyCodeChanges|**Alt+F10**|
+|Debug.AttachtoProcess |**Ctrl + Alt + P**|
 |Debug.Autos|**Ctrl + Alt + V、A**|
 |Debug.BreakAll|**Ctrl + Alt + Break**|
 |Debug.Breakpoints|**Ctrl + Alt + B**|
@@ -133,6 +134,7 @@ ms.locfileid: "102782820"
 |Debug.ParallelWatch4|**Ctrl+Shift+D、4**|
 |Debug.Processes|**Ctrl + Alt + Z**|
 |Debug.QuickWatch|**Shift+F9** 或 **Ctrl+Alt+Q**|
+|ReattachtoProcess|**Shift+Alt+P**|
 |Debug.RefreshWindowsapp|**Ctrl + Shift + R**|
 |Debug.Registers|**Ctrl + Alt + G**|
 |Debug.Restart|**Ctrl+Shift+F5**|

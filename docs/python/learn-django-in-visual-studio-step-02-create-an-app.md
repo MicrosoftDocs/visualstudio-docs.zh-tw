@@ -11,12 +11,12 @@ ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9c8da2566be9b389b3ae36f2e6aa46686011ac0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 196b15dff25681a23c05118a02f19109e09e3959
+ms.sourcegitcommit: 5fe2462ffc33c7ece9cf3a179fb598354c916e1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942590"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "110320468"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本建立 Django 應用程式
 
@@ -48,6 +48,7 @@ Django 應用程式通常會以一組標準的檔案作為開始。 Visual Studi
 
 ![[方案總管] 中的 Django 應用程式檔案](media/django/step02-django-app-in-solution-explorer.png)
 
+::: moniker range="vs-2017"
 | 項目 | 描述 |
 | --- | --- |
 | **\_\_\_ \_ .py** | 此檔案會將應用程式識別為套件。 |
@@ -58,6 +59,20 @@ Django 應用程式通常會以一組標準的檔案作為開始。 Visual Studi
 | **models.py** | 模型是由函式識別的資料物件，檢視會透過它和應用程式基礎資料庫互動 (請參閱步驟 6)。 Django 提供資料庫連線層，使應用程式本身不需要處理那些詳細資料。 *models.py* 檔案是建立模型的預設位置，而且一開始只包含陳述式 `from django.db import models`。 |
 | **tests.py** | Python 檔案，包含單元測試的基本結構。 |
 | **views.py** | 檢視就是一般所認知的網頁，會接收 HTTP 要求並傳回 HTTP 回應。 檢視通常會轉譯成網頁瀏覽器知道如何顯示的 HTML，但檢視不一定需要顯示出來 (例如以中繼形式呈現)。 檢視是由負責轉譯 HTML 以傳送至瀏覽器的 Python 函式所定義。 *views.py* 檔案是建立檢視的預設位置，而且一開始只包含陳述式 `from django.shortcuts import render`。 |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+| 項目 | 描述 |
+| --- | --- |
+| **\_\_\_ \_ .py** | 此檔案會將應用程式識別為套件。 |
+| **遷移** | Django 儲存指令碼的資料夾，這些指令碼會更新資料庫以配合對模型所做的變更。 接著，Django 的移轉工具會對任何舊版資料庫套用必要的變更，以使它符合目前的模型。 透過使用移轉，您可以專注於模型上，並讓 Django 處理基礎資料庫結構描述。 [Django 檔](https://docs.djangoproject.com/en/3.2/topics/migrations/)中會討論遷移;目前，該資料夾只會包含 *\_ \_ \_ \_ .py* 檔案， (表示該資料夾定義自己的 Python 套件) 。 |
+| **templates** | Django 頁面範本的資料夾，在與應用程式名稱相符的資料夾內包含單一檔案 *index.html*。  (在 Visual Studio 2017 15.7 和更早版本中，檔案會直接包含在 *範本* 中，而步驟2-4 則會指示您建立子資料夾。 ) 範本是可在其中新增資訊以動態轉譯頁面的 HTML 區塊。 頁面範本「變數」(例如 *index.html* 中的 `{{ content }}`) 是動態值的預留位置，如本文稍後所述 (步驟 2)。 Django 應用程式通常會將其範本置於名稱與應用程式名稱相符的子資料夾中，來為範本建立命名空間。 |
+| **admin.py** | Python 檔案，您可以在其中擴充應用程式的系統管理介面，用來植入和編輯資料庫中的資料。 此檔案一開始只包含陳述式 `from django.contrib import admin`。 根據預設，Django 是透過 Django 專案中的 *settings.py* 檔案來包含標準系統管理介面，您可以藉由取消註解 *urls.py* 中的現有項目來開啟它。 |
+| **apps.py** | Python 檔案，定義應用程式的設定類別 (請參閱本表後面的內容)。 |
+| **models.py** | 模型是由函式識別的資料物件，可透過這些資料物件和應用程式的基礎資料庫進行互動。 Django 提供資料庫連線層，使應用程式本身不需要處理那些詳細資料。 *models.py* 檔案是建立模型的預設位置，而且一開始只包含陳述式 `from django.db import models`。 |
+| **tests.py** | Python 檔案，包含單元測試的基本結構。 |
+| **views.py** | 檢視就是一般所認知的網頁，會接收 HTTP 要求並傳回 HTTP 回應。 檢視通常會轉譯成網頁瀏覽器知道如何顯示的 HTML，但檢視不一定需要顯示出來 (例如以中繼形式呈現)。 檢視是由負責轉譯 HTML 以傳送至瀏覽器的 Python 函式所定義。 *views.py* 檔案是建立檢視的預設位置，而且一開始只包含陳述式 `from django.shortcuts import render`。 |
+::: moniker-end
 
 使用 "HelloDjangoApp" 名稱時， *apps.py* 的內容會如下所示：
 
@@ -269,7 +284,7 @@ Django 頁面範本是 HTML 區塊，可包含任意數目的取代權杖 (稱�
 
 回答：當 Django 尋找在 `render` 函式中參考的範本時，它會使用所找到第一個和相對路徑相符的檔案。 如果您在相同專案中有多個 Django 應用程式，且專案範本都使用相同的資料夾結構時，很可能會有應用程式不小心用到另一個應用程式的範本。 若要避免發生這類錯誤，請一律在應用程式的 *templates* 資料夾下建立與應用程式名稱相符的子資料夾，以避免任何重複情況。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [提供靜態檔案、新增頁面，然後使用範本繼承](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
