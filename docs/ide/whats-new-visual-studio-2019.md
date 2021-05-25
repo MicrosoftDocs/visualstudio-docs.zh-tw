@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 03/19/2021
+ms.date: 05/25/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,19 +15,22 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b97b87a7edd8fdba46b755b7253af62f6de39f
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.openlocfilehash: 4dcd5ef4ee34df1a95ab494a18d8fec68499bf43
+ms.sourcegitcommit: d6fb4f8dff6ac69dfdd61e481a4ddd6b0dd8fa63
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "109973462"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110395433"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
-**[16.9 版](/visualstudio/releases/2019/release-notes/)的更新**
+**[16.10 版](/visualstudio/releases/2019/release-notes/)的更新**
 
 >[!div class="button"]
 >[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+
+> [!TIP]
+> 加入我們的 **[Microsoft Build](https://devblogs.microsoft.com/visualstudio/the-visual-studio-family-welcomes-you-at-microsoft-build-2021/)** 研討會，以深入瞭解最新的 Visual Studio 2019 功能，並搶先查看 [Visual Studio 2022](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)推出的功能。
 
 使用 Visual Studio 2019，您會獲得同類產品中最佳的工具和服務，任何開發人員、任何應用程式及任何平台均適用。 無論您是第一次使用 Visual Studio，還是使用了數年的時間，我們最新的版本都有很大的需要！
 
@@ -231,6 +234,8 @@ Visual Studio 2019 預設會安裝這項服務。
    如需詳細資訊，請參閱 [Visual Studio 頁面中的版本控制](/visualstudio/version-control/) 。
 
 如需預覽版本的詳細資訊 &mdash; 和下載連結，如果您想要試用， &mdash; 請參閱 **[Visual Studio 預覽](https://aka.ms/vspreview/)** 頁面。
+
+若要深入瞭解我們的下一版，請參閱 **[Visual Studio 2022](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)** 的 blog 文章！ 此外，我們也會在 **[Microsoft Build](https://devblogs.microsoft.com/visualstudio/the-visual-studio-family-welcomes-you-at-microsoft-build-2021/)** 會議中提供有關 Visual Studio 2022 的詳細資訊（如果您也想要加入我們）。
 
 ## <a name="give-us-feedback"></a>提供意見反應
 
