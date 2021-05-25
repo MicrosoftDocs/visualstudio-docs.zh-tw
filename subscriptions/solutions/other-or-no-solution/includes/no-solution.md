@@ -10,16 +10,16 @@ user.type: subscriber, admin
 tags: no-solution
 subscription.type: vl, cloud, retail, partner
 sap.id: 34fccc61-0a31-cc35-22dd-016a1ebf1134
-ms.openlocfilehash: 47df65df2b139fa910843da3659d5a520e787d17
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: d26b75015c427d771ab91526802d9b58e3ddb5e8
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590087"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349774"
 ---
 ## <a name="sorry-we-couldnt-find-a-solution-for-you"></a>抱歉，我們找不到您的解決方案。 
 
-我們的小組很樂意協助您。Visual Studio 訂閱支援人員可提供銷售、訂用帳戶、帳戶和計費的協助。 按一下下方的 [建立支援票證] 按鈕以建立線上票證，我們的團隊會在1個工作天內取回您。 
+我們的小組很樂意協助您。Visual Studio 訂閱支援人員可提供銷售、訂用帳戶、帳戶和計費的協助。 按一下此解決方案底部的 [線上要求] 按鈕來建立線上票證，我們的團隊會在1個工作天內回復您。 
 
 ## <a name="visual-studio-ide-technical-support-resources"></a>Visual Studio IDE 技術支援資源  
 
@@ -29,7 +29,7 @@ Visual Studio IDE 技術問題或問題應導向 [Visual Studio 技術支援](ht
 
 - 複習教學課程、疑難排解指南，以及 [VISUAL STUDIO IDE 檔](https://docs.microsoft.com/visualstudio/ide/)內的實用資源。 
 
-- 搜尋線上 [開發人員社群](https://developercommunity.visualstudio.com/) ，並從支援社區的論壇取得專家解答。 您可以搜尋關鍵字，並在不登入的情況下讀取、投票、批註。  
+- 搜尋線上 [開發人員社群](https://developercommunity.visualstudio.com/) ，並從支援社區的論壇取得專家解答。 您可以在不登入的情況下搜尋關鍵字、讀取、投票和批註。  
 
 - 搜尋以 [visual studio 標記的 Stack Overflow 公用 Q&](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) ，以取得已提出問題的解答，或註冊帳戶並提出新問題。  
 

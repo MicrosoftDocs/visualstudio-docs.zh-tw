@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 7f1978f0d0679d94bbde3b565ff5680ce89f9063
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: bb387f9a359b6f645dd6a160ffb281375cd747a9
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107589868"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349976"
 ---
 ## <a name="how-to-activate-the-monthly-azure-devtest-individual-credit-benefit"></a>如何啟用每月 Azure 開發/測試個人點數權益
 
@@ -30,7 +30,7 @@ ms.locfileid: "107589868"
 
 ## <a name="azure-credit-benefit-activation-errors"></a>Azure 點數權益啟用錯誤
 
-如果您有新的 Visual Studio 訂用帳戶，而且在嘗試啟用每月 Azure 點數權益時收到錯誤「您無法啟用此 Visual Studio 權益超過一次」，請按一下此解決方案底部的 [建立支援票證] 按鈕，以 Visual Studio 訂閱支援人員聯絡。 
+如果您有新的 Visual Studio 訂用帳戶，而且在嘗試啟用每月 Azure 點數權益時收到錯誤「您無法啟用此 Visual Studio 權益超過一次」，請按一下此解決方案底部的 [線上要求] 按鈕，以 Visual Studio 訂閱支援人員聯絡。 
 
 如果您的訂用帳戶已指派一段時間，以下是要先檢查的一些事項：
 - 查看訂用帳戶入口網站的 [ [權益] 頁面](https://my.visualstudio.com/benefits) 上的 [Azure 每月信用額度] 磚，確認您尚未啟用此權益。 
