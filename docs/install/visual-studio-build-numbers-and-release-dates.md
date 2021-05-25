@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 73ec976b14501ae8f6d5315cdcc6a80677b6762b
-ms.sourcegitcommit: 55aeafdd369bea434adaebe5f9d4631e33623545
+ms.openlocfilehash: a0aa395864aa05c268819e5da52d6fed80d96a56
+ms.sourcegitcommit: d6fb4f8dff6ac69dfdd61e481a4ddd6b0dd8fa63
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/25/2021
-ms.locfileid: "110399017"
+ms.locfileid: "110395420"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -29,7 +29,6 @@ ms.locfileid: "110399017"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.11.0 | Preview 1 | 2021 5 月25日 | 16.11.31320.298 |
 | 16.10.0 | 版本 | 2021 5 月25日 | 16.10.31321.278 |
 | 16.10.0 | Preview 4 | 2021年5月18日 | 16.10.31313.381 |
 | 16.9.6 | 版本 | 2021年5月18日 | 16.9.31313.79 |

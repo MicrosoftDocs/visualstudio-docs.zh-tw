@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4dce707d51d7a2840aeef78f4d70392c884275
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c4a6254f15a4108c525231d0e5e93c6fc71bfb3
+ms.sourcegitcommit: d3577395cf016f2836eb5a3c1d496cca6d449baa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932006"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110413334"
 ---
 # <a name="property-functions"></a>屬性函式
 
@@ -153,7 +153,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 
 以下是 MSBuild 屬性函式的清單：
 
-|函式簽章|Description|
+|函式簽章|描述|
 |------------------------|-----------------|
 |double Add(double a, double b)|將兩個雙精度浮點數相加。|
 |long Add(long a, long b)|將兩個長整數相加。|
@@ -344,9 +344,9 @@ Output:
 
 ## <a name="msbuild-targetframework-and-targetplatform-functions"></a>MSBuild TargetFramework 和 TargetPlatform 函數
 
-MSBuild 定義了數個函數來處理 [TargetFramework 和 TargetPlatform 屬性](msbuild-target-framework-and-target-platform.md)。
+MSBuild 16.7 和更新版本定義了數個函式來處理 [TargetFramework 和 TargetPlatform 屬性](msbuild-target-framework-and-target-platform.md)。
 
-|函式簽章|Description|
+|函式簽章|描述|
 |------------------------|-----------------|
 |GetTargetFrameworkIdentifier (字串 targetFramework) |從 TargetFramework 剖析 r。|
 |GetTargetFrameworkVersion (字串 targetFramework) |從 TargetFramework 剖析 TargetFrameworkVersion。|
@@ -384,6 +384,39 @@ Value3 = windows
 Value4 = 7.0
 Value5 = True
 ```
+
+## <a name="msbuild-version-comparison-functions"></a>MSBuild 版本比較函數
+
+MSBuild 16.5 和更新版本會定義數個函式來比較代表版本的字串。
+
+> [!Note]
+> 條件中的比較運算子 [可以比較可剖析為 `System.Version` 物件的字串](#msbuild-conditions.md#Comparing-versions)，但比較可能會產生非預期的結果。 偏好屬性函數。
+
+|函式簽章|描述|
+|------------------------|-----------------|
+|VersionEquals (字串 a，字串 b) |`true` `a` 根據下列規則傳回版本和相等 `b` 。|
+|VersionGreaterThan (字串 a，字串 b) |`true`如果版本 `a` 大於下列規則，則傳回 `b` 。|
+|VersionGreaterThanOrEquals (字串 a，字串 b) |`true`如果版本 `a` 大於或等於 `b` 下列規則，則傳回。|
+|VersionLessThan (字串 a，字串 b) |`true`如果版本低於 `a` 下列規則，則傳回 `b` 。|
+|VersionLessThanOrEquals (字串 a，字串 b) |`true`如果版本 `a` 小於或等於下列規則，則傳回 `b` 。|
+|VersionNotEquals (字串 a，字串 b) |`false` `a` 根據下列規則傳回版本和相等 `b` 。|
+
+在這些方法中，會剖析類似的版本 <xref:System.Version?displayProperty=fullName> ，但有下列例外狀況：
+
+* 前置 `v` 或 `V` 會被忽略，可允許與進行比較 `$(TargetFrameworkVersion)` 。
+
+* 從第一個 '-' 或 ' + ' 到版本字串結尾的所有專案都會被忽略。 這可讓 (semver) 的語義版本傳遞，但順序與 semver 並不相同。 但是，發行前版本規範和組建中繼資料沒有任何排序權數。 這項功能很有用，例如，為了開啟功能， `>= x.y` 並讓它啟動 `x.y.z-pre` 。
+
+* 未指定的元件與零值部分相同。 (`x == x.0 == x.0.0 == x.0.0.0`).
+
+* 整陣列件中不允許空白字元。
+
+* 主要版本只是有效 (`3` 等於 `3.0.0.0`) 
+
+* `+` 不允許為整陣列件的正整數， (它會被視為 semver 中繼資料並加以忽略) 
+
+> [!TIP]
+> [TargetFramework 屬性](msbuild-target-framework-and-target-platform.md)的比較通常應該使用[IsTargetFrameworkCompatible](#MSBuild-TargetFramework-and-TargetPlatform-functions) ，而不是解壓縮和比較版本。 這可讓您比較 `TargetFramework` 和版本之間的不同 `TargetFrameworkIdentifier` 。
 
 ## <a name="msbuild-condition-functions"></a>MSBuild 條件函數
 
