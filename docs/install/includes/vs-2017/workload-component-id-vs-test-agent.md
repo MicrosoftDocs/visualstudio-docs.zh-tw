@@ -3,19 +3,19 @@ title: Visual Studio Test Agent 2017 工作負載和元件識別碼
 titleSuffix: ''
 description: 使用 Visual Studio 工作負載和元件識別碼，遠端執行自動化測試和負載測試
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 01e339f3f9efc14c68e88fa9e9a422914284f2f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6bc7bd8bd629ea50606136af863220edb9b04ac
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937968"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449598"
 ---
 ## <a name="test-agent"></a>測試代理程式
 

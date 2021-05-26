@@ -2,19 +2,19 @@
 title: Visual Studio Build Tools 2017 工作負載和元件識別碼
 titleSuffix: ''
 description: 使用 Visual Studio 工作負載和元件識別碼來建置傳統 Windows 型應用程式
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 3d38a5dac5ae23b048e9faf4142cec630b77f9be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3fe0d729902ea454d9f81e51e4957bf2c7d37d1
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881920"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449788"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 開發建置工具
 
@@ -287,7 +287,7 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | C++ 的 Windows XP �
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | 選擇性
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | 選擇性
 
-## <a name="visual-studio-extension-development"></a>Visual Studio 擴充功能開發
+## <a name="visual-studio-extension-development"></a>Visual Studio 延伸模組開發
 
 **識別碼：** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
 

@@ -3,10 +3,10 @@ title: Visual Studio 工作負載與元件識別碼
 titleSuffix: ''
 description: 使用工作負載和元件識別碼透過命令列安裝 Visual Studio，或是在 VSIX 資訊清單中指定為相依性
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2020
+ms.date: 05/24/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: be97c0c56395a9fe87633ccf48f0382b15fae560
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 0493cd72151fe8985eeeb1bb47a5af859796d1b6
+ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683681"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110449769"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 工作負載與元件識別碼
 
@@ -63,7 +63,7 @@ ms.locfileid: "101683681"
 | [Visual &nbsp; Studio Test &nbsp; Agent &nbsp; 2019](workload-component-id-vs-test-agent.md?view=vs-2019&preserve-view=true)  | Microsoft.VisualStudio.Product.TestAgent | 支援在遠端執行自動化的測試與負載測試 |
 | [Visual &nbsp; Studio 負載 &nbsp; 測試 &nbsp; 控制器2019](workload-component-id-vs-test-controller.md?view=vs-2019&preserve-view=true) | Microsoft.VisualStudio.Product.TestController | 將自動化的測試散發至多部電腦 |
 
-如需如何使用這些清單的詳細資訊，請參閱 [使用命令列參數安裝 Visual studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) 頁面和如何：將擴充性 [專案遷移至 visual studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019&preserve-view=true) 頁面。
+如需如何使用這些清單的詳細資訊，請參閱 [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) 頁面和如何：將擴充性 [專案遷移至 Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019&preserve-view=true) 頁面。
 
 > [!NOTE]
 > 如需先前版本的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼](workload-and-component-ids.md?view=vs-2017&preserve-view=true)

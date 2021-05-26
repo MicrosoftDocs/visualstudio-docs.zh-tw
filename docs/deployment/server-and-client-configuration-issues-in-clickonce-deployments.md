@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 469749c28acdb90e835082dd05010102ab50e52b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8040fb8028666d0dd551369b6b7f782de09058ca
+ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877612"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110449938"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 如果您在 Windows Server 上使用 Internet Information Services (IIS) ，而您的部署包含 Windows 無法辨識的檔案類型，例如 Microsoft Word 檔案，IIS 將拒絕傳輸該檔案，而且您的部署將不會成功。
@@ -91,12 +91,12 @@ ms.locfileid: "99877612"
 |`.msp`|`application/octet-stream`|
 
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce 和對應的磁片磁碟機
- 如果您使用 Visual Studio 來發行 ClickOnce 應用程式，則無法將對應的磁片磁碟機指定為安裝位置。 不過，您可以使用資訊清單產生器和編輯器 ( # A0 和 MageUI.exe) ，修改 ClickOnce 應用程式以從對應的磁片磁碟機安裝。 如需詳細資訊，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)並[MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。
+ 如果您使用 Visual Studio 來發行 ClickOnce 應用程式，則無法將對應的磁片磁碟機指定為安裝位置。 不過，您可以使用資訊清單產生器和編輯器 (Mage.exe 和 MageUI.exe) ，修改 ClickOnce 應用程式以從對應的磁片磁碟機安裝。 如需詳細資訊，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)並[MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。
 
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>不支援安裝應用程式的 FTP 通訊協定
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 支援從任何 HTTP 1.1 Web 服務器或檔案伺服器安裝應用程式。 安裝應用程式時，不支援 FTP （檔案傳輸通訊協定）。 您只能使用 FTP 來發佈應用程式。 下表摘要說明這些差異：
 
-| URL 類型 | Description |
+| URL 類型 | 描述 |
 |----------| - |
 | ftp:// | 您可以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用此通訊協定來發行應用程式。 |
 | http:// | 您可以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用此通訊協定來安裝應用程式。 |
@@ -132,7 +132,7 @@ ms.locfileid: "99877612"
 
  如果您使用 IIS，您可以輕鬆地啟用 HTTP 壓縮。 但是，當您啟用 HTTP 壓縮時，只會針對特定檔案類型（也就是 HTML 和文字檔）啟用它。 若要啟用元件 (*.dll*) 、xml (*.xml*) 、部署指令 *清單 (、應用程式指令* 清單) 和應用程式指令 *清單 (的* 壓縮，您必須將這些檔案類型新增至要壓縮的 IIS 類型清單。 在您將檔案類型新增至部署之前，只會壓縮文字和 HTML 檔案。
 
- 如需 IIS 的詳細指示，請參閱 [如何為 HTTP 壓縮指定其他檔案類型](https://support.microsoft.com/help/234497)。
+ 如需 IIS 的詳細指示，請參閱 [如何為 HTTP 壓縮指定其他檔案類型](/troubleshoot/iis/content-types-http-compression.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [針對 ClickOnce 部署進行疑難排解](../deployment/troubleshooting-clickonce-deployments.md)

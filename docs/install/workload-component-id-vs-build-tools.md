@@ -3,8 +3,8 @@ title: Visual Studio Build Tools 工作負載和元件識別碼
 titleSuffix: ''
 description: 使用 Visual Studio 工作負載和元件識別碼來建置傳統 Windows 型應用程式
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 3/2/2021
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 73be2972b3f0bb5d34ee95f2cfb25087e9759cdc
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: ad6ef7d1efa743370d55e4b16c65a333e704e176
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683423"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449787"
 ---
 # <a name="visual-studio-build-tools-component-directory"></a>Visual Studio Build Tools 元件目錄
 

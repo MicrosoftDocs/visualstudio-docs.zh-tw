@@ -3,19 +3,19 @@ title: Visual Studio Enterprise 2017 工作負載和元件識別碼
 titleSuffix: ''
 description: 使用工作負載和元件識別碼透過命令列安裝 Visual Studio，或是在 VSIX 資訊清單中指定為相依性
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: d250a1b00c65c24d38a47f7a9a2791f9ef7a2e82
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 977c50d42a5c3b59a397714a656f6fd84d94de36
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881829"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449823"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2017"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Enterprise 2017)
 
@@ -126,7 +126,7 @@ Microsoft.NetCore.ComponentGroup.Web | .NET Core 2.0 開發工具 | 15.7.27625.0
 Microsoft.VisualStudio.Component.Azure.Storage.AzCopy | Azure 儲存體 AzCopy | 15.0.26906.1 | 選擇性
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | 選擇性
 
-## <a name="data-storage-and-processing"></a>資料的儲存與處理
+## <a name="data-storage-and-processing"></a>資料儲存與處理
 
 **識別碼：** Microsoft.VisualStudio.Workload.Data
 
@@ -979,7 +979,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ 通用 Windows 平台工具 |
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | 選擇性
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | 選擇性
 
-## <a name="visual-studio-extension-development"></a>Visual Studio 擴充功能開發
+## <a name="visual-studio-extension-development"></a>Visual Studio 延伸模組開發
 
 **識別碼：** Microsoft.VisualStudio.Workload.VisualStudioExtension
 

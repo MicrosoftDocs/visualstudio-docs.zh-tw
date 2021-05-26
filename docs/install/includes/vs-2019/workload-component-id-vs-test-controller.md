@@ -3,19 +3,19 @@ title: Visual Studio Test Controller 2019 工作負載和元件識別碼
 titleSuffix: ''
 description: 使用 Visual Studio 工作負載和元件識別碼將自動化測試散發到多部電腦
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2021
+ms.date: 05/24/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 7e401ff1cfaea4821b987636261e2dfea8660b3d
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: f72eea5ebbe8ca6f8197002c03237733af6bc2c2
+ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683644"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110449905"
 ---
 ## <a name="test-controller"></a>測試控制器
 

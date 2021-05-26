@@ -3,19 +3,19 @@ title: Visual Studio Test Agent 2019 工作負載和元件識別碼
 titleSuffix: ''
 description: 使用 Visual Studio 工作負載和元件識別碼，遠端執行自動化測試和負載測試
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2021
+ms.date: 05/24/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: c5b9805b466f23be12fb6c66f0231d5c9a6ccec8
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 8f9d4c873748f273515465f0ed833eaa9c1fe6b7
+ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683693"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110449602"
 ---
 ## <a name="test-agent"></a>測試代理程式
 
@@ -27,7 +27,7 @@ ms.locfileid: "101683693"
 
 元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent 核心功能 | 16.9.31004.209 | 必要
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent 核心功能 | 16.10.31205.180 | 必要
 
 ## <a name="unaffiliated-components"></a>非附屬元件
 
