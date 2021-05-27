@@ -6,7 +6,7 @@ keywords: ''
 author: j-martens
 ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2020
+ms.date: 05/25/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: af9f8600a9d1e61739a30c03200fa9e0886ad564
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: ad505ef8d57d5d681fd0b5b0af0ccba72f83780f
+ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "110449822"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110565241"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Visual Studio Enterprise 元件目錄
 

@@ -6,7 +6,7 @@ keywords: ''
 author: j-martens
 ms.author: jmartens
 manager: jmartens
-ms.date: 05/24/2021
+ms.date: 05/25/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 0493cd72151fe8985eeeb1bb47a5af859796d1b6
-ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
+ms.openlocfilehash: 15f54a3de7a0954238388bc5f414aa0cc971e39c
+ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110449769"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110565176"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 工作負載與元件識別碼
 

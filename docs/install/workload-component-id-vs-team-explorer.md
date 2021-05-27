@@ -6,7 +6,7 @@ keywords: ''
 author: j-martens
 ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2020
+ms.date: 05/25/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 8ae5e7236ecae86786782477edc1bd023da3a9a4
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 072711323bf46576bcfb6b0b2183e4d34aba269c
+ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "110449807"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110565266"
 ---
 # <a name="visual-studio-team-explorer-component-directory"></a>Visual Studio Team Explorer 元件目錄
 

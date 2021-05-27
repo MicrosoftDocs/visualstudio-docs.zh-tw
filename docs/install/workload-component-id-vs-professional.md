@@ -6,7 +6,7 @@ keywords: ''
 author: j-martens
 ms.author: jmartens
 manager: jmartens
-ms.date: 05/19/2020
+ms.date: 05/25/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 002c85cb5b5237f8539b33d1445416612881bd75
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 70e5d2003f0da6776a3ea7df1da3c55e85ba3962
+ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "110449695"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110565254"
 ---
 # <a name="visual-studio-professional-component-directory"></a>Visual Studio Professional 元件目錄
 
