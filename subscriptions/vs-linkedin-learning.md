@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 訂用帳戶中的 LinkedIn 學習權益 |Microsoft 檔
+title: Visual Studio 訂用帳戶中的 LinkedIn 學習權益 |Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 03/17/2021
 ms.topic: how-to
 description: 了解包含為所選取 Visual Studio 訂用帳戶中所含 LinkedIn Premium 訂用帳戶一部分的 LinkedIn Learning 權益。
-ms.openlocfilehash: dcf242dc09c833b091454ea1863184229e3b71c0
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: c4004bd72b269a2f7ad6ef5904f31bb742e68563
+ms.sourcegitcommit: 62e39ea1bf0ed939376c4375fc180ff7c4c760fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672913"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110660208"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 LinkedIn Learning 權益
 
@@ -67,6 +67,9 @@ ms.locfileid: "104672913"
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 首頁](_img/vs-linkedin/vs-linkedin-learning-home.png "歡迎使用 LinkedIn 學習的 LinkedIn Premium！")
 
+> [!NOTE]
+> 這項供應專案不包含在 Visual Studio Dev Essentials 成員資格中。
+
 ## <a name="eligibility"></a>資格
 
 | 訂用帳戶層級                                                 |     通道                                            | 優點                                                          | 可續約？    |
@@ -75,11 +78,11 @@ ms.locfileid: "104672913"
 | 使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶   | Vl | 6 個月       |  不會。  僅提供給新訂閱者使用          |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 3 個月                                                            |不會。  僅提供給新訂閱者使用         |
 | 使用 GitHub Enterprise Visual Studio Professional 訂用帳戶 | Vl | 3 個月      | 不會。  僅提供給新訂閱者使用         |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                            |  NA         |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              | NA         |
-| Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 尚未提供                                            |  NA         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 尚未提供                                              | NA         |
+| Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 尚未提供                                                           |NA|
 
-<sup>1</sup>  *排除： NFR、NFR Basic、Visual Studio 產業夥伴、Microsoft 合作夥伴網路 (MPN) 、FTE、MCT Software & Services Developer、BizSpark、假想、最有價值專家 (MVP) 區域主管 (RD) 。 MCT 軟體 & 服務。*
+<sup>1</sup>  *排除： Visual Studio Dev Essentials、NFR、NFR Basic、Visual Studio 產業夥伴、Microsoft 合作夥伴網路 (MPN) 、FTE、MCT Software & Services Developer、BizSpark、假想、最有價值專家 (MVP) 、區域主管 (RD) 。 MCT 軟體 & 服務。*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。

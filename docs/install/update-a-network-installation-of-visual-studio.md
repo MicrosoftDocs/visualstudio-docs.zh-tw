@@ -1,7 +1,7 @@
 ---
 title: 更新網路型安裝
 description: 了解如何使用 --layout 命令來更新網路型 Visual Studio 安裝
-ms.date: 04/16/2021
+ms.date: 05/26/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0400f4be06afab2326ac738e1ac15f9d93a6ecee
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: 74464aa76c24a798d33fa7639cdd0b6a07489bf7
+ms.sourcegitcommit: 62e39ea1bf0ed939376c4375fc180ff7c4c760fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800783"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110660217"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
 
@@ -64,9 +64,9 @@ ms.locfileid: "107800783"
   ```
 
     > [!IMPORTANT]
-    > 更新作業不會安裝新增的選擇性元件。 如果您需要新增的選用元件，請移除回應檔中的舊選用元件，並在的 `Layout.JSON` [](automated-installation-with-response-file.md) [新增] 區段中包含所需的元件 `Layout.JSON` 。 
+    > 更新作業不會下載或安裝其他選擇性元件至版面配置或用戶端。 如果您需要新增或變更選用元件，請先從回應檔中移除舊的選用元件， `Layout.JSON` [](automated-installation-with-response-file.md)並在的 [新增] 區段中包含所需的新元件 `Layout.JSON` 。 然後，當您對配置執行 update 命令時，就會將新加入的元件下載至配置中。 
     >
-    > 因應 **措施：在升級之後執行個別** 的修改作業，以安裝遺失的元件。
+    > 若要取得用戶端電腦上安裝的這些新元件，請務必執行這三個步驟。 首先，確認配置包含如上所述的新元件。 接下來，將您的用戶端更新為版面配置中的最新位。  最後，再次在用戶端上執行修改作業，以安裝新增至配置) 至用戶端電腦的新元件 (。
 
 * 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。  (此命令會新增 *ASP.NET 和 網頁程式開發* 工作負載。現在 ) 此配置中包含受管理的桌面、Azure 和 ASP.NET & 網頁程式開發工作負載。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
 
