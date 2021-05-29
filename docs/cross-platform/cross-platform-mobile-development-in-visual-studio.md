@@ -12,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: b50edfe91a9b497760c44d3fd548eb6d2a15a049
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 2f3c611ae157be4f2ea89254856bdd3b6fba448d
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399373"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687683"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 
@@ -110,7 +110,7 @@ ms.locfileid: "93399373"
 |**深入了解**|
 |--------------------|
 |[安裝 Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[開始使用 Visual Studio Tools for Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)|
+|[開始使用 Visual Studio Tools for Apache Cordova](/previous-versions/visualstudio/cross-platform/tools-for-cordova/)|
 |[了解 Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ::: moniker-end
@@ -167,7 +167,7 @@ ms.locfileid: "93399373"
 |[觀賞 Visual Studio Tools for Unity 2.0 Preview 的介紹影片](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408&preserve-view=true) (影片)|
 |[了解 Unity](https://unity.com/) (Unity 網站)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將 Microsoft 365 Api 新增至 Visual Studio 專案](/office/developer-program/office-365-developer-program)
 - [Azure App Service - Mobile Apps](https://azure.microsoft.com/services/app-service/mobile/)

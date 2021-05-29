@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b048250b2529e21dd30738821b273c268e3498
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51b25ff5f5f71291bb1aa1fd006b60566a576d7f
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862079"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687604"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -82,13 +82,9 @@ Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適�
 
 - 使用 [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/) 以 C# 和 F# 建置 iOS、Android 和 Windows 用的行動應用程式。
 
-- 透過 [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)，使用標準 Web 技術 &mdash;HTML、CSS 和 JavaScript&mdash; 建置 iOS、Android 和 Windows 用的行動應用程式。
-
 - 使用 [Visual Studio Tools for Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md) 以 C# 建置 2D 和 3D 遊戲。
 
 - 建置適用於 iOS、Android 和 Windows 裝置的原生 C++ 應用程式。 使用[適用於跨平台開發的 C++](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development)，在為 iOS、Android 和 Windows 建置的程式庫中共用通用程式碼。
-
-- 使用 [Android 模擬器](../cross-platform/visual-studio-emulator-for-android.md)部署、測試及偵錯 Android 應用程式。
 
 ## <a name="connect-to-databases"></a>連線至資料庫
 

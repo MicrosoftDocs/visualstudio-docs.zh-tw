@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fe46ea835a119978fd3decd26949db3d59944e5e
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089338"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687618"
 ---
 # <a name="create-a-settings-category"></a>建立設定分類
 
@@ -98,7 +98,7 @@ ms.locfileid: "105089338"
 
 3. 在左窗格的樹狀檢視中，展開 [ **我的類別** ]，然後按一下 [ **我的格線頁**]。
 
-4. 將 **OptionFloat** 的值變更為3.1416，並將 **OptionInteger** 變更為12。 按一下 [確定]  。
+4. 將 **OptionFloat** 的值變更為3.1416，並將 **OptionInteger** 變更為12。 按一下 [確定]。
 
 5. 按一下 [工具] 功能表上的 [匯入和匯出設定]。
 
@@ -118,7 +118,9 @@ ms.locfileid: "105089338"
 
 9. 將新的設定檔命名為 *MySettings .vssettings* ，並將它儲存在適當的目錄中。 按一下 [完成] 。
 
-     **匯出完成** 頁面會報告您的設定已成功匯出。
+   檔案 `.vssettings` 是 Visual Studio 設定檔案。 檔案的架構已開啟。 最常見的情況是，架構會遵循 XML 結構，其中每個類別都是標記，它本身就包含子類別標記。 這些子類別標記可以包含屬性值標記。 雖然大部分的封裝都使用通用結構，但是 Visual Studio 中的任何封裝都可以使用它所選擇的架構，對檔案提供任意的 XML。
+
+   **匯出完成** 頁面會報告您的設定已成功匯出。
 
 10. 在 [檔案] 功能表上，指向 [開啟舊檔]，再按一下 [檔案]。 找出並開啟 *MySettings .vssettings* 。
 
@@ -139,7 +141,7 @@ ms.locfileid: "105089338"
 
 11. 關閉設定檔，而不加以變更。
 
-12. 在 [ **工具** ] 功能表上，依序按一下 [ **選項**]、[ **我的類別**]、[ **格線頁** ]，然後將 **OptionFloat** 的值變更為1.0，並將 **OptionInteger** 變更為1。 按一下 [確定]  。
+12. 在 [ **工具** ] 功能表上，依序按一下 [ **選項**]、[ **我的類別**]、[ **格線頁** ]，然後將 **OptionFloat** 的值變更為1.0，並將 **OptionInteger** 變更為1。 按一下 [確定]。
 
 13. 按一下 [**工具**] 功能表上的 [匯 **入和匯出設定**]，選取 [匯 **入選取的環境設定**]，然後按 **[下一步]**
 

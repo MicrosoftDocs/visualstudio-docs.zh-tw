@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d5fe8755450fd5068688064bf36b08c741c862
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3dcd034a76fbc371c95a2bbf386687830e3b63d
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878639"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687652"
 ---
 # <a name="secure-applications"></a>保護應用程式
 
@@ -45,6 +45,6 @@ ms.locfileid: "99878639"
 - [.NET 的安全性](/dotnet/standard/security/index)
 - [Azure 安全性](/azure/security/)
 - [Windows 10 行動裝置版安全性指南](/windows/security/threat-protection/windows-10-mobile-security-guide)
-- [Apache Cordova 平台安全性功能](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true)
+- [Apache Cordova 平台安全性功能](/previous-versions/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true)
 - [ASP.NET Core 安全性](/aspnet/core/security/?view=aspnetcore-2.1&preserve-view=true)
 - [Windows Forms 安全性](/dotnet/framework/winforms/windows-forms-security)
