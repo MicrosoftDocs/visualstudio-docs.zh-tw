@@ -9,21 +9,21 @@ helpviewer_keywords:
 - automate
 - installation
 - command-line
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d3fa063d82a9d0ba9f26e326961b1345b47151b8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7554ac46d7c4171cfb71166c51689ff4ae95c0d5
+ms.sourcegitcommit: a8031c1387d2090129ed33e063744f9f31653dcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868723"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "110724547"
 ---
-# <a name="how-to-define-settings-in-a-response-file"></a>如何在回應檔中定義設定
+# <a name="automate-installs-by-using-settings-in-a-response-file"></a>使用回應檔中的設定自動安裝
 
 部署 Visual Studio 的系統管理員可以使用 `--in` 參數指定回應檔，如下列範例所示：
 

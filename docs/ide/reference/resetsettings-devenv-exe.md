@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c7a5b8bacaa7d78be0c7b88bba8e20b416a3c076
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e523738ff23b40c80b5df21d90b582d94c59087f
+ms.sourcegitcommit: a8031c1387d2090129ed33e063744f9f31653dcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957994"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "110724534"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
-還原 Visual Studio 預設設定，並會自動啟動 Visual Studio IDE。 此參數會選擇性地將設定重設為指定的設定檔案。
+還原 Visual Studio 預設設定，並會自動啟動 Visual Studio IDE。 此參數可選擇性地將設定重設為指定的設定檔 (`*.vssettings`) 。
 
 第一次啟動 Visual Studio 時，預設設定會來自所選取的設定檔。
 
@@ -41,7 +41,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 - *SettingsFile*
 
-  選擇性。 要套用至 Visual Studio 之設定檔案的完整路徑和名稱。
+  選擇性。 要套用至 Visual Studio 之檔案的完整路徑和名稱 `.vssettings` 。
 
 - *DefaultCollectionSpecifier*
 
@@ -54,12 +54,13 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
   | **Visual Basic** | `VB` |
   | **Visual C#** | `CSharp` |
   | **Visual C++** | `VC` |
-  | **Web 開發** | `Web` |
+  | **Web 程式開發** | `Web` |
   | **網頁程式開發 (僅限程式碼)** | `WebCode` |
 
 ## <a name="remarks"></a>備註
 
-如果未指定 *SettingsFile*，IDE 就會使用現有的設定來開啟。
+如果未指定 *SettingsFile*，IDE 就會使用現有的設定來開啟。 
+
 
 ## <a name="example"></a>範例
 
@@ -67,10 +68,14 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 第二個範例會還原 Visual C# 預設設定檔。
 
-```shell
-devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
+第三個範例也會在套用設定之後關閉 Visual Studio。 您可以附加 `/Command "File.Exit"` 。
 
-devenv /resetsettings CSharp
+```shell
+devenv /ResetSettings "%USERPROFILE%\MySettings.vssettings"
+
+devenv /ResetSettings CSharp
+
+devenv /NoSplash /ResetSettings General /Command Exit 
 ```
 
 ## <a name="see-also"></a>另請參閱
