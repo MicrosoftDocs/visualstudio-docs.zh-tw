@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8040fb8028666d0dd551369b6b7f782de09058ca
-ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
+ms.openlocfilehash: 9f0361816d0621f52e9f95f4159dd0d46f4f5951
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110449938"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111352003"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 如果您在 Windows Server 上使用 Internet Information Services (IIS) ，而您的部署包含 Windows 無法辨識的檔案類型，例如 Microsoft Word 檔案，IIS 將拒絕傳輸該檔案，而且您的部署將不會成功。
@@ -33,7 +33,7 @@ ms.locfileid: "110449938"
 
  雖然這項限制不會造成下載核心檔案 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] （例如資訊清單和元件）的問題，但這項限制可能會讓您無法下載包含在應用程式中的資料檔案 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 在中 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ，您可以藉由移除防止從 IIS 設定管理員下載這類檔案的處理常式來解決此錯誤。 如需其他詳細資料，請參閱 IIS 伺服器檔。
 
- 某些網頁伺服器可能會封鎖副檔名為 *.dll*、 *.config* 和 *.mdf* 等副檔名的檔案。 以 Windows 為基礎的應用程式通常包含具有其中一些延伸模組的檔案。 如果使用者嘗試在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Web 服務器上執行存取封鎖檔案的應用程式，則會產生錯誤。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]預設會以 .deploy 副檔名發行每個應用程式檔，而不是解除封鎖所有副檔名 *。* 因此，系統管理員只需要設定 Web 服務器來解除封鎖下列三個副檔名：
+ 某些網頁伺服器可能會封鎖副檔名如下的檔案，例如 *.dll*、 *.config* 和 *.mdf*。 以 Windows 為基礎的應用程式通常包含具有其中一些延伸模組的檔案。 如果使用者嘗試在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Web 服務器上執行存取封鎖檔案的應用程式，則會產生錯誤。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]預設會以 .deploy 副檔名發行每個應用程式檔，而不是解除封鎖所有副檔名 *。* 因此，系統管理員只需要設定 Web 服務器來解除封鎖下列三個副檔名：
 
 - *。應用程式*
 
@@ -96,7 +96,7 @@ ms.locfileid: "110449938"
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>不支援安裝應用程式的 FTP 通訊協定
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 支援從任何 HTTP 1.1 Web 服務器或檔案伺服器安裝應用程式。 安裝應用程式時，不支援 FTP （檔案傳輸通訊協定）。 您只能使用 FTP 來發佈應用程式。 下表摘要說明這些差異：
 
-| URL 類型 | 描述 |
+| URL 類型 | Description |
 |----------| - |
 | ftp:// | 您可以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用此通訊協定來發行應用程式。 |
 | http:// | 您可以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用此通訊協定來安裝應用程式。 |
@@ -112,7 +112,7 @@ ms.locfileid: "110449938"
  根據預設，Windows Server 沒有安裝 FrontPage Server Extensions。 如果您想要使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 發佈至搭配 FrontPage Server Extensions 使用 HTTP 的 Windows Server Web 服務器，您必須先安裝 FrontPage Server Extensions。 您可以使用 Windows Server 中的 [管理您的伺服器管理] 工具來執行安裝。
 
 ## <a name="windows-server-locked-down-content-types"></a>Windows Server：鎖定的內容類型
- [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)]除了特定的已知內容類型之外，IIS 會鎖定所有檔案類型 (例如， *.htm*、 *.html*、 *.txt* 等) 。 若要 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用此伺服器來啟用應用程式的部署，您需要變更 IIS 設定，以允許下載類型為 *. 應用* 程式、 *資訊清單* 和其他任何自訂檔案類型的檔。
+ [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)]除了特定的已知內容類型以外，IIS 會鎖定所有檔案類型 (例如， *.htm*、 *.html*、 *.txt* 等，) 。 若要 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用此伺服器來啟用應用程式的部署，您需要變更 IIS 設定，以允許下載類型為 *. 應用* 程式、 *資訊清單* 和其他任何自訂檔案類型的檔。
 
  如果您使用 IIS 伺服器進行部署，請執行 *inetmgr.exe* ，並為預設的網頁加入新的檔案類型：
 
@@ -130,9 +130,9 @@ ms.locfileid: "110449938"
 ## <a name="http-compression-issues"></a>HTTP 壓縮問題
  透過 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，您可以執行使用 HTTP 壓縮的下載，這是使用 GZIP 演算法來壓縮資料流程，然後將資料流程傳送至用戶端的網頁伺服器技術。 在此案例中，用戶端會 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 先解壓縮串流，然後再讀取檔案。
 
- 如果您使用 IIS，您可以輕鬆地啟用 HTTP 壓縮。 但是，當您啟用 HTTP 壓縮時，只會針對特定檔案類型（也就是 HTML 和文字檔）啟用它。 若要啟用元件 (*.dll*) 、xml (*.xml*) 、部署指令 *清單 (、應用程式指令* 清單) 和應用程式指令 *清單 (的* 壓縮，您必須將這些檔案類型新增至要壓縮的 IIS 類型清單。 在您將檔案類型新增至部署之前，只會壓縮文字和 HTML 檔案。
+ 如果您使用 IIS，您可以輕鬆地啟用 HTTP 壓縮。 但是，當您啟用 HTTP 壓縮時，只會針對特定檔案類型（也就是 HTML 和文字檔）啟用它。 若要啟用元件的壓縮 (*.dll*) 、XML (*.xml*) 、部署資訊清單 (、 *應用程式*) ，以及應用程式資訊清單 (*指令* 清單) ，您必須將這些檔案類型新增至要壓縮的 IIS 類型清單。 在您將檔案類型新增至部署之前，只會壓縮文字和 HTML 檔案。
 
- 如需 IIS 的詳細指示，請參閱 [如何為 HTTP 壓縮指定其他檔案類型](/troubleshoot/iis/content-types-http-compression.md)。
+ 如需 IIS 的詳細指示，請參閱 [如何為 HTTP 壓縮指定其他檔案類型](/troubleshoot/iis/content-types-http-compression)。
 
 ## <a name="see-also"></a>另請參閱
 - [針對 ClickOnce 部署進行疑難排解](../deployment/troubleshooting-clickonce-deployments.md)

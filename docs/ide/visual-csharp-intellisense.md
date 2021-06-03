@@ -2,22 +2,22 @@
 title: C# IntelliSense
 description: '瞭解在撰寫 c # 專案的程式碼時，可以使用的一些 IntelliSense 功能。'
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 06/01/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7e67c3a00a427a9f3cd6167af494484a02cc3f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3156b1236a130478d83fe82c8fa462a1144a8e6a
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862059"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351951"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -101,6 +101,10 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 ![新增 using，快速動作展開的影像](../ide/media/addusing-quickaction.png)
 
 按一下錯誤燈泡圖示，然後選擇 [using System.Xml;] 自動新增 using 指示詞。
+
+### <a name="add-missing-using-directives-on-paste"></a>貼上時新增缺少的 Using 指示詞
+
+當您將型別貼到程式碼檔案時，IntelliSense 可以自動將遺漏的指示詞新增 `using` 至您的程式碼。 這項功能可讓您在將類型貼到檔案時，將新增遺漏 using 指示詞的工作自動化，以節省您的時間。 在 [**工具**  >  **選項**  >  **文字編輯器** c #] 或 [基本] Advanced 中啟用這項功能  >     >   ，並選取 [**貼上時加入遺漏 using** 指示詞
 
 ### <a name="remove-and-sort-usings"></a>移除和排序 Using
 

@@ -2,22 +2,22 @@
 title: 進階、C#、文字編輯器、選項
 description: '瞭解如何使用 c # 區段中的 [Advanced] 頁面，修改 c # 的編輯器格式、程式碼重構和 XML 檔批註的設定。'
 ms.custom: SEO-VS-2020
-ms.date: 11/13/2020
+ms.date: 06/01/2021
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: akhera99
+author: mikadumont
 ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa202f5c0abc490967a40255332976cdf9dca25a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29f6dd2b4a101132bc7bc19664c51fd5d4b8283e
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959320"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351980"
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 
@@ -103,6 +103,10 @@ ms.locfileid: "99959320"
 
    ![在 Visual Studio 中安裝 NuGet 套件的快速動作](media/nuget-lightbulb.png)
 
+- 貼上時新增缺少的 Using 指示詞
+
+    選取此選項時， `using` 當您將類型貼到檔案時，會自動將指示詞加入至您的程式碼。
+
 ## <a name="highlighting"></a>反白顯示
 
 - 反白顯示游標下的符號參考
@@ -129,8 +133,16 @@ ms.locfileid: "99959320"
 
 選取這些核取方塊， **{}** 在您的程式碼中 () 的大括弧之間顯示虛線垂直線。 然後，您可以輕鬆查看宣告層級和程式碼層級建構的個別程式碼區塊。
 
-## <a name="editor-help"></a>編輯器說明
+## <a name="comments"></a>註解
+
+- 產生 /// 的 XML 文件註解
+
+   選取此選項時，會在您鍵入 `///` 註解簡介後插入 XML 文件註解的 XML 元素。 如需有關 XML 文件的詳細資訊，請參閱 [XML 文件註解 (C# 程式設計指南)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)。
+
 ::: moniker range=">=vs-2019"
+
+## <a name="inline-hints"></a>內嵌提示
+
 - 內嵌參數名稱提示 
     
     選取此選項時，會在函式呼叫中的每個引數之前，插入常值、轉換常值和物件具現化的參數名稱提示。  
@@ -142,10 +154,14 @@ ms.locfileid: "99959320"
     選取此選項時，會針對具有推斷型別和 lambda 參數類型的變數插入型別提示。  
     
     ![CSharp 的內嵌類型提示](media/inline-type-hints-csharp.png)
-::: moniker-end
-- 產生 /// 的 XML 文件註解
 
-   選取此選項時，會在您鍵入 `///` 註解簡介後插入 XML 文件註解的 XML 元素。 如需有關 XML 文件的詳細資訊，請參閱 [XML 文件註解 (C# 程式設計指南)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)。
+## <a name="inheritance-margin"></a>繼承邊界 
+
+- 選取時，會將圖示新增至代表程式碼的執行和覆寫的邊界。 按一下繼承邊界圖示將會顯示您可以選取以流覽的繼承選項。
+
+    ![繼承邊界](media/inheritance-margin.png)
+
+::: moniker-end
 
 ## <a name="see-also"></a>另請參閱
 

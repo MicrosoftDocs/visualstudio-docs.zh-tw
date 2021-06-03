@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5160608379549abbd469bd6cf1c17e4357eac15
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ffef522cb85816c36bee1cb623810fb254d1ddec
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060753"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351938"
 ---
 # <a name="regpkg-utility"></a>RegPkg 公用程式
 > [!NOTE]
@@ -34,9 +34,7 @@ ms.locfileid: "105060753"
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath
 ```
 
- /root： root 在指定的底下執行註冊
-
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]根帳戶
+ /root： root 在指定的根目錄下執行註冊 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
  /regfile： FileName 會建立 .reg 檔，而不是更新登錄。  無法搭配/vrgfile 或/rgsfile 或/wixfile. 使用
 
