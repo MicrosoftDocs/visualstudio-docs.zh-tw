@@ -9,14 +9,14 @@ ms.topic: how-to
 ms.date: 05/10/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 003205525f883b010f897e6e47d4cab92a31b8a1
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.openlocfilehash: e740ea3b7950c14bf11522c4e438a105b09eb7f6
+ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110018495"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111433697"
 ---
-# <a name="manage-launch-profiles-for-docker-compose-preview"></a>Docker Compose (Preview 的管理啟動設定檔) 
+# <a name="manage-launch-profiles-for-docker-compose"></a>管理 Docker Compose 的啟動設定檔
 
 如果您的應用程式是由多個服務所組成並使用 Docker Compose，您可以在 Docker Compose 啟動設定中建立或編輯現有的啟動設定檔，以設定要執行和偵測的服務。 啟動設定檔可讓您以動態方式只執行與目前案例相關的服務。 您可以建立和選取啟動設定檔，以自訂您的偵錯工具體驗，並設定特定的啟動動作（例如） `Browser Launch URL` 。 您也可以選擇個別選擇每項服務，或選擇 Docker Compose 設定檔，這也會查看您的撰寫檔案，以判斷要執行的服務群組。
 
@@ -24,7 +24,7 @@ ms.locfileid: "110018495"
  
 ## <a name="prerequisites"></a>必要條件
 
-- [Visual Studio 2019 16.10 版 Preview](https://visualstudio.microsoft.com/vs/preview/) 或更新版本
+- [Visual Studio 2019 16.10 版](https://visualstudio.microsoft.com/vs/) 或更新版本
 - 具有[Docker Compose 容器協調流程](tutorial-multicontainer.md)的解決方案
 
 ## <a name="manage-launch-settings"></a>管理啟動設定

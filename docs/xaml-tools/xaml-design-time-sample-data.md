@@ -1,18 +1,18 @@
 ---
 title: 使用設計階段範例資料搭配中的 XAML 設計工具 Visual Studio
 description: 瞭解如何在 XAML 中使用設計階段範例資料。
-ms.date: 05/28/2021
+ms.date: 06/01/2021
 ms.topic: conceptual
 author: alihamie
 ms.author: tglee
 manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: a987435d454771bdecf078e78af089405718d261
-ms.sourcegitcommit: 5366c6bca3fb217a2fbf847998387578f51ec45c
+ms.openlocfilehash: 8303e1150db7c12c404e8f67bce52418fbd05b9d
+ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748072"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111433788"
 ---
 # <a name="use-design-time-sample-data-with-the-xaml-designer-in-visual-studio"></a>使用設計階段範例資料搭配中的 XAML 設計工具 Visual Studio
 
@@ -23,7 +23,7 @@ ms.locfileid: "110748072"
 範例資料僅適用于設計階段視覺效果，這表示它只會出現在 XAML 設計工具中，而不會出現在執行中的應用程式。 因此，它會套用至 ItemsSource 屬性的設計階段版本 `d:ItemsSource` 。 範例資料需要設計階段命名空間才能運作。 若要開始使用，請將下列程式程式碼新增至 XAML 檔的標頭（如果尚未存在）：
 
 > [!NOTE]
-> 流覽 [xaml 設計階段屬性](/xaml/xaml-tools/xaml/xaml-designtime-data.md) ，以深入瞭解 xaml 中的設計階段屬性。
+> 流覽 [xaml 設計階段屬性](../xaml-tools/xaml-designtime-data.md) ，以深入瞭解 xaml 中的設計階段屬性。
 
 ```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -93,7 +93,7 @@ mc:Ignorable="d"
 
 ## <a name="see-also"></a>另請參閱
 
-- [XAML 設計階段屬性](/xaml/xaml-tools/xaml/xaml-designtime-data)
+- [XAML 設計階段屬性](../xaml-tools/xaml-designtime-data.md)
 - [WPF 應用程式中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [UWP 應用程式中的 XAML](/windows/uwp/xaml-platform/xaml-overview)
 - [Xamarin.Forms 應用程式中的 XAML](/xamarin/xamarin-forms/xaml/)

@@ -11,11 +11,11 @@ tags: sign-in
 subscription.type: vl, cloud,
 sap.id: ''
 ms.openlocfilehash: a77e01c102c99e5c92aa00107fabb3ee98b6e50d
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915877"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448357"
 ---
 ## <a name="how-to-change-sign-in-emails-for-admins-and-super-admins"></a>如何變更系統管理員和超級管理員的登入電子郵件
 
@@ -23,11 +23,11 @@ ms.locfileid: "96915877"
 
 如果您是超級系統管理員，您可以建立新的系統管理員和超級管理員。  若要變更您自己的登入位址：
 1. 登入管理入口網站，網址為 [https://manage.visualstudio.com](https://manage.visualstudio.com)
-0. 按一下 [新增] 。
+0. 按一下 **[新增]** 。
 0. 輸入您的姓名 
 0. 輸入您想要用來登入的電子郵件地址。
 0. 按一下 [ **超級系統管理員** ] 核取方塊。
-0. 按一下 **[儲存]** 。
+0. 按一下 [儲存]。
 0. 選取系統管理員清單中的專案，以顯示您的舊登入電子郵件地址。
 0. 按一下 [ **...]** ，然後選擇 [ **刪除** ]，或按一下清單頂端功能表上的 [ **刪除** ]。
 0. 按一下 [確認]  。

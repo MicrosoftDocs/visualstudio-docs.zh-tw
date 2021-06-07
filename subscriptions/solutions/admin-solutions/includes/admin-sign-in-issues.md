@@ -10,11 +10,11 @@ user.type: subscriber
 tags: sign-in
 subscription.type: vl, cloud,
 ms.openlocfilehash: 39aafd757c710257cf5f8185ecc8b54eba2c4645
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915883"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448354"
 ---
 ## <a name="resolve-issues-signing-in-to-visual-studio-subscriptions-administration-portal"></a>解決登入 Visual Studio 訂閱系統管理入口網站的問題
 如果您的公司或學校透過大量授權或 Visual Studio Marketplace 購買訂閱，這些訂用帳戶是由系統管理員所管理。  有兩種類型：•系統管理員 (管理員) 可以指派、編輯和刪除訂閱。

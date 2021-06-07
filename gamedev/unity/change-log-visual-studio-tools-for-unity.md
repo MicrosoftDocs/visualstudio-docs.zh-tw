@@ -2,7 +2,7 @@
 title: 變更記錄檔 (Visual Studio Tools for Unity，Windows) | Microsoft Docs
 description: 查看 Visual Studio Tools for Unity、Windows 的變更記錄檔。 查看從1.0.0.0 版到4.7.0.0 的變更。
 ms.custom: ''
-ms.date: 3/1/2021
+ms.date: 6/2/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,71 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a03d0fc896fcbc971bc62cd9391c4f38d0aad06c
-ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
+ms.openlocfilehash: 2ff13b017ffe0d310ddfd1b302c6436e9d708a36
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107879378"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448307"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>變更記錄檔 (Visual Studio Tools for Unity，Windows)
 
 Visual Studio Tools for Unity 變更記錄。
+
+## <a name="41020"></a>4.10.2.0
+2021年5月25日發行
+
+### <a name="new-features"></a>新功能
+
+- **集成：**
+
+  - 已新增 [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) 診斷。 提供優先順序給向量計算的純量計算。
+
+- **評價：**
+
+  - 已新增使用可移植 pdb 符號來適當篩選可見區域變數的支援。
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 已修正資產參考搜尋穩定性。
+
+  - 修正玩家宣佈使用最新 Unity 版本進行剖析。
+
+## <a name="41010"></a>4.10.1.0
+2021年5月11日發行
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 修正 quickfix 的穩定性問題 [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) 。
+
+  - 修正執行緒的效能問題。
+
+## <a name="41000"></a>4.10.0.0
+2021年4月13日發行
+
+### <a name="new-features"></a>新功能
+
+- **集成：**
+
+  - 已新增 [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md) 診斷。 的不必要間接呼叫 `GameObject.gameObject` 。
+
+  - 已新增 [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) 診斷。 `MenuItem` 在非靜態方法上使用的屬性。
+
+  - 已新增 [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) 診斷。 Unity 訊息應受保護 (加入) 。
+
+  - 已新增 [`UNT0022`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0022.md) 診斷。 設定位置和旋轉的效率不佳方法。
+
+  - 已新增 [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md) 診斷。 Unity 物件的聯合指派。
+
+  - 已新增 [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) 的抑制器 `IDE0074` 。 Unity 物件不應使用聯合指派。
+
+  - 已新增以 Unity 為目標的 unflavored c # 專案偵測。
+
+  - 已在 CodeLens 中新增 Unity 資產參考搜尋。
 
 ## <a name="4910"></a>4.9.1.0
 2021年3月2日發行

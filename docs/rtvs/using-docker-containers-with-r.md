@@ -9,12 +9,12 @@ ms.reviewer: karthiknadig
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 01048bc9b21287eb62693096b34a1ea8305e0ee9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3aefba3880443269dbdb1c933e2c12b2f8001469
+ms.sourcegitcommit: fc05a763b59e212c86350d117a1900a1f2686ec8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851864"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "111551276"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>搭配 Visual Studio R 工具使用 Docker 容器
 
@@ -53,7 +53,7 @@ Visual Studio R 工具 (RTVS) 版本 1.3 以後，與[適用於 Windows 的 Dock
 RTVS 會偵測及允許管理使用自訂映像建立的容器，例如下列 Docker 檔案中描述的 microsoft/rtvs 映像。 這裡使用的基礎映像已預先安裝 rtvs-daemon、R 3.4.2，以及常見的 R 套件。 **注意**：請根據您的需要變更此處顯示的使用者名稱及密碼。
 
 ```docker
-FROM microsoft/rtvs:1.3-ub1604-r3.4.2
+FROM mcr.microsoft.com/rtvs:1.3-ub1604-r3.4.2
 RUN useradd --create-home ruser1
 RUN echo "ruser1:foobar" | chpasswd
 

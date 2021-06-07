@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28451b9bf317c33e1aff52a62247374ea2b6871e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1675cf43cb9632d4480265f00a377c1f5c530b51
+ms.sourcegitcommit: c5f2a142ebf9f00808314f79a4508a82e6df1198
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913882"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111395354"
 ---
 # <a name="item-metadata-in-task-batching"></a>工作批次處理中的項目中繼資料
 
@@ -138,9 +138,9 @@ MSBuild 可以根據相同的中繼資料，將多個專案清單分割成多個
 
 ## <a name="batch-one-item-at-a-time"></a>一次批次處理一個項目
 
-在於建立每個項目時指派給項目的已知項目中繼資料上，也可以執行批次處理。 這可確保集合中的每個項目都具有相同的中繼資料可用於批次處理。 每個項目的 `Identity` 中繼資料值都是唯一的，可用來將項目清單中的每個項目分割成個別的批次。 如需已知專案中繼資料的完整清單，請參閱 [已知的專案中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。
+在於建立每個項目時指派給項目的已知項目中繼資料上，也可以執行批次處理。 這可確保集合中的每個項目都具有相同的中繼資料可用於批次處理。 `Identity`中繼資料值適用于將專案清單中的每個專案分割成不同的批次。 如需已知專案中繼資料的完整清單，請參閱 [已知的專案中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。
 
-下列範例示範如何以一次一個的方式，批次處理項目清單中的每個項目。 由於每個項目的 `Identity` 中繼資料值是唯一的，因此 `ExampColl` 項目清單會分割成六個批次，每個批次包含項目清單的一個項目。 `%(Identity)`屬性中的存在會 `Text` 通知 MSBuild 應該執行批次處理。
+下列範例示範如何以一次一個的方式，批次處理項目清單中的每個項目。 `ExampColl`專案清單分為六個批次，每個批次包含專案清單中的一個專案。 `%(Identity)`屬性中的存在會 `Text` 通知 MSBuild 應該執行批次處理。
 
 ```xml
 <Project
@@ -174,6 +174,35 @@ Identity: 'Item3' -- Items in ExampColl: Item3
 Identity: 'Item4' -- Items in ExampColl: Item4
 Identity: 'Item5' -- Items in ExampColl: Item5
 Identity: 'Item6' -- Items in ExampColl: Item6
+```
+
+但是， `Identity` 不保證是唯一的，其值為屬性的評估最終值 `Include` 。 因此，如果 `Include` 多次使用任何屬性，它們會一起批次處理。 如下列範例所示，這項技術要求 `Include` 群組中的每個專案都必須有唯一的屬性。 為了說明這一點，請考慮下列程式碼：
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Item Include="1">
+      <M>1</M>
+    </Item>
+    <Item Include="1">
+      <M>2</M>
+    </Item>
+    <Item Include="2">
+      <M>3</M>
+    </Item>
+  </ItemGroup>
+
+  <Target Name="Batching">
+    <Warning Text="@(Item->'%(Identity): %(M)')" Condition=" '%(Identity)' != '' "/>
+  </Target>
+</Project>
+```
+
+輸出會顯示前兩個專案都在相同的批次中，因為 `Include` 它們的屬性相同：
+
+```output
+test.proj(15,5): warning : 1: 1;1: 2
+test.proj(15,5): warning : 2: 3
 ```
 
 ## <a name="filter-item-lists"></a>篩選項目清單

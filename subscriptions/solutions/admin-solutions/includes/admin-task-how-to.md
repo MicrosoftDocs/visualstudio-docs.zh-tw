@@ -9,11 +9,11 @@ ms.topic: include
 ms.faqid: ''
 description: 瞭解如何在 Visual Studio 訂閱系統管理入口網站中執行一般工作，例如指派訂用帳戶、進行變更、搜尋和設定喜好設定
 ms.openlocfilehash: 96584966d974e5d0595463f120aa6ccf98cc633a
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915926"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448356"
 ---
 ## <a name="using-the-visual-studio-subscriptions-administration-portal-to-manage-subscriptions"></a>使用 Visual Studio 訂閱系統管理入口網站來管理訂閱
 系統管理員或超級系統管理員可以使用管理入口網站來管理組織的訂用帳戶。  您可以在我們的檔中找到執行各種管理工作的特定指導方針。  請參閱下列連結以取得詳細資料。 

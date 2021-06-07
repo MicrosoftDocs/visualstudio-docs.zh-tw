@@ -8,11 +8,11 @@ ms.assetid: 2004856f-7f54-411f-9bff-2f3472c8fff2
 ms.topic: conceptual
 description: 瞭解如何在您的工作場所要求 Visual Studio 訂用帳戶。
 ms.openlocfilehash: 8fc393782ca8e32cdbdc9f2f1b3a1716633d455c
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541224"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448358"
 ---
 ## <a name="how-to-request-a-visual-studio-subscription-from-your-workschool"></a>如何向您的公司/學校要求 Visual Studio 訂用帳戶
 許多組織（包括工作場所和學校）都會透過各種授權方案購買 Visual Studio 訂閱。 這些訂用帳戶是由訂用帳戶管理員管理 (系統管理員) 可指派訂用帳戶、建立喜好設定，以及啟用或停用特定功能的訂閱。  

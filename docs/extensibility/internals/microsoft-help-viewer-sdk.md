@@ -10,12 +10,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c53191c5f6e02c0b37d29f89a65119f1edab92ea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8bc2ed473e25dc75d0155bc864aa02c157e3482f
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063314"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448320"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -362,7 +362,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 在下表中，在括弧之間出現的任何字串都是必須以可辨識值取代的預留位置。 例如，在中 \<meta name="Microsoft.Help.Locale" content="[language code]" /> ，必須將 "[language code]" 取代為 "en-us" 之類的值。
 
-|  (HTML 標記法的屬性)  | Description |
+|  (HTML 標記法的屬性)  | 描述 |
 | - | - |
 | \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | 設定本主題的地區設定。 如果主題中使用此標籤，則只能使用一次，而且必須插入任何其他 Microsoft 說明標記的上方。 如果未使用此標籤，則會使用與產品地區設定相關聯的斷詞工具（如果有指定的話）來編制主題的主體文字。否則，會使用 en-us 斷詞工具。 此標記符合 ISOC RFC 4646。 為確保 Microsoft 說明正常運作，請使用這個屬性，而不是一般語言屬性。 |
 | \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | 如果也使用其他地區設定，則設定本主題的地區設定。 如果在主題中使用此標籤，則只能使用一次。 當目錄包含多種語言的內容時，請使用此標記。 目錄中的多個主題可以有相同的識別碼，但每個主題都必須指定唯一的 TopicLocale。 指定符合目錄地區設定之 TopicLocale 的主題，是顯示在目錄中的主題。 不過，主題的所有語言版本都會顯示在搜尋結果中。 |
@@ -435,7 +435,7 @@ Visual Studio Help Viewer 商標套件中的支援檔案包括：
 
 - 或當 SelfBranded = false，且在 .MSHA 中定義了唯一的商標套件，且在內容安裝時可供使用
 
-針對執行自訂商標套件的 .Vsps (.VSP 內容，SelfBranded = True) ，要繼續的其中一種方式就是從 [說明檢視器] (安裝的 [取代品牌) ] 套件開始，然後視需要變更檔案的名稱。  .Mshc 檔案 \<locale> 是副檔名變更為 .mshc 的 zip 檔案，因此只要將副檔名從 .mshc 變更為 .zip，並將內容解壓縮。 Branding_  請參閱下方的商標套件元素，並視需要進行修改 (例如，將標誌變更為 .VSP 標誌，以及 Branding.xml 檔案中標誌的參考、依 .VSP 詳細資訊更新 Branding.xml 等 ) 。
+針對執行自訂商標套件的 .Vsps (.VSP 內容，SelfBranded = True) ，要繼續的其中一種方式就是從 [說明檢視器] (安裝的 [取代品牌) ] 套件開始，然後視需要變更檔案的名稱。  .Mshc 檔案 \<locale> 是副檔名變更為 .mshc 的 zip 檔案，因此只要將副檔名從 .mshc 變更為 .zip，然後將內容解壓縮。 Branding_  請參閱下方的商標套件元素，並視需要進行修改 (例如，將標誌變更為 .VSP 標誌，以及 Branding.xml 檔案中標誌的參考、依 .VSP 詳細資訊更新 Branding.xml 等 ) 。
 
 當所有修改都完成時，請建立包含所需商標元素的 zip 檔案，並將副檔名變更為 .mshc。
 
@@ -471,7 +471,7 @@ Branding.xml 檔案包含的專案清單，會在主題包含時，用來在主�
 | LogoTitle | [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] |
 | LogoFileName | vs_logo_bk.gif |
 | LogoFileNameHC | vs_logo_wh.gif |
-| 功能： | **免責 聲明** |
+| 功能： | **免責聲明** |
 | 使用︰ | 機器翻譯內容的一組案例特定免責聲明。 |
 | **Element** | **值** |
 | MT_Editable | 本文已轉譯機器翻譯。 如果您有網際網路連線，請選取 [線上查看此主題]，以同時使用原始英文內容來查看此頁面的可編輯模式。 |
@@ -608,14 +608,14 @@ Visual Studio 內容會顯示 Visual Studio 標誌以及其他圖形。  Visual 
 |tabLeftBD.gif|用來呈現程式碼片段容器||
 |tabRightBD.gif|用來呈現程式碼片段容器||
 |vs_logo_bk.gif|用於 Branding.xml 標記中所定義的一般對比標誌參考 \<LogoFileName> 。  針對 Visual Studio 產品，標誌名稱是 vs_logo_bk.gif。||
-|vs_logo_wh.gif|用於 Branding.xml 標記中所定義的一般高標誌參考 \<LogoFileNameHC> 。  針對 Visual Studio 產品，標誌名稱是 vs_logo_wh.gif。||
+|vs_logo_wh.gif|用於 Branding.xml 標籤中定義的高對比標誌參考 \<LogoFileNameHC> 。  針對 Visual Studio 產品，標誌名稱是 vs_logo_wh.gif。||
 |ccOff.png|字幕圖形||
 |ccOn.png|字幕圖形||
 |ImageSprite.png|用來呈現可折迭區域|展開或折迭圖形|
 
 ## <a name="deploy-a-set-of-topics"></a>部署一組主題
 
-這是簡單且快速的教學課程，可讓您建立包含 .MSHA 檔案的說明檢視器內容部署集，以及包含主題的一組 cab 或 MSHCs。 .MSHA 是一種 XML 檔案，可描述一組 cab 或 .MSHC 檔案。 說明檢視器可以讀取 .MSHA，以取得 (的內容清單。CAB 或。.MSHC 檔) 可用於本機安裝。
+這是簡單且快速的教學課程，可讓您建立包含 .MSHA 檔案的說明檢視器內容部署集，以及包含主題的一組 cab 或 MSHCs。 .MSHA 是一種 XML 檔案，可描述一組 cab 或 .MSHC 檔案。 說明檢視器可以讀取 .MSHA，以取得 .CAB 或 (的內容清單。.MSHC 檔) 可用於本機安裝。
 
 這只是描述說明檢視器 .MSHA 之非常基本 XML 架構的入門。  此簡短總覽和範例 Helpcontentsetup.msha .msha 的範例如下。
 
@@ -650,7 +650,7 @@ Visual Studio 內容會顯示 Visual Studio 標誌以及其他圖形。  Visual 
 
 1. 建立本機資料夾，類似 "C:\SampleContent"
 
-2. 在此範例中，我們將使用 .MSHC 檔案來包含主題。  .MSHC 是副檔名從 .zip 變更為的 zip。.MSHC.
+2. 在此範例中，我們將使用 .MSHC 檔案來包含主題。  .MSHC 是副檔名從 .zip 變更為的 zip 壓縮檔案。.MSHC.
 
 3. 將下列 Helpcontentsetup.msha 建立為文字檔， (記事本用來建立) 的檔案，並將其儲存至上述的已注明資料夾 (請參閱步驟 1) 。
 

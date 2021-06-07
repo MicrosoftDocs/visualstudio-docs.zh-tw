@@ -1,8 +1,8 @@
 ---
 title: 變更記錄檔 (Visual Studio Tools for Unity，Mac) | Microsoft Docs
-description: 查看 Visual Studio Tools for Unity、Mac 的變更記錄檔。 查看從1.0.0.0 版到2.7.0.0 的變更。
+description: 查看 Visual Studio Tools for Unity、Mac 的變更記錄。 查看從1.0.0.0 版到2.7.0.0 的變更。
 ms.custom: ''
-ms.date: 3/1/2021
+ms.date: 6/3/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,87 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f11c5c1407d16d7a82a9d8d24e6a8dd3a04e57eb
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 2d3faf8e5231ca5d2e99bcf80dc18b6d4f4607cd
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683377"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448294"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>變更記錄檔 (Visual Studio Tools for Unity，Mac)
 
 Visual Studio Tools for Unity 變更記錄。
+
+## <a name="21020"></a>2.10.2.0
+2021年6月2日發行
+
+### <a name="new-features"></a>新功能
+
+- **集成：**
+
+  - 已新增 [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) 診斷。 提供優先順序給向量計算的純量計算。
+
+- **評價：**
+
+  - 已新增使用可移植 pdb 符號來適當篩選可見區域變數的支援。
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 修正玩家宣佈使用最新 Unity 版本進行剖析。
+
+## <a name="21010"></a>2.10.1.0
+2021年5月11日發行
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 修正 quickfix 的穩定性問題 [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) 。
+
+  - 修正執行緒的效能問題。
+
+  - 修正篩選隱藏了 errorlist 中的警告和錯誤。
+
+  - 已修正篩選 Unity 背景進程。
+
+## <a name="21000"></a>>2.10.0.0
+2021年4月13日發行
+
+### <a name="new-features"></a>新功能
+
+- **集成：**
+
+  - 已新增 [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md) 診斷。 的不必要間接呼叫 `GameObject.gameObject` 。
+
+  - 已新增 [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) 診斷。 `MenuItem` 在非靜態方法上使用的屬性。
+
+  - 已新增 [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) 診斷。 Unity 訊息應受保護 (加入) 。
+
+  - 已新增 [`UNT0022`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0022.md) 診斷。 設定位置和旋轉的效率不佳方法。
+
+  - 已新增 [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md) 診斷。 Unity 物件的聯合指派。
+
+  - 已新增 [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) 的抑制器 `IDE0074` 。 Unity 物件不應使用聯合指派。
+
+## <a name="2940"></a>2.9.4.0
+2021年4月6日發行
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 修正測試列舉的問題
+
+## <a name="2930"></a>2.9.3.0
+2021年3月30日發行
+
+### <a name="bug-fixes"></a>錯誤修正
+
+- **集成：**
+
+  - 修正測試執行器的問題 
 
 ## <a name="2920"></a>2.9.2.0
 2021年3月2日發行
@@ -377,7 +448,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - **集成：**
 
-  - 未來，Visual Studio Tools for Unity 只會支援 Visual Studio 2017 +。
+  - 接下來，Visual Studio Tools for Unity 只會支援 Visual Studio 2017 +。
 
 ## <a name="2400"></a>2.4.0.0
 
@@ -410,7 +481,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - **集成：**
 
-  - 我們已藉由新增 Unity 專屬的診斷功能，deepened Visual Studio 針對 Unity 專案所擁有的瞭解。 我們也隱藏了對 Unity 專案不適用的通用 C# 診斷，讓 IDE 更有智慧。 例如，IDE 不會顯示快速修正來變更偵測器變數， `readonly` 讓您無法在 Unity 編輯器中修改變數。
+  - 我們已藉由新增 Unity 專屬的診斷，deepened 對 Unity 專案 Visual Studio 的瞭解。 我們也隱藏了對 Unity 專案不適用的通用 C# 診斷，讓 IDE 更有智慧。 例如，IDE 不會顯示快速修正來變更偵測器變數， `readonly` 讓您無法在 Unity 編輯器中修改變數。
     - `UNT0001`： Unity 訊息是由執行時間呼叫，即使它們是空的，也不會將其宣告為避免 Unity 執行時間的 unity 處理。
     - `UNT0002`：使用字串相等的標記比較比內建的 CompareTag 方法慢。
     - `UNT0003`：型別安全的慣用 GetComponent 一般形式。

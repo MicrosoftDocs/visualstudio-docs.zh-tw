@@ -10,14 +10,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 966b08a912a7bab59998daf39590a6fd46920eb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96e5689c0108231be26ddf7d598227137f7bc1f7
+ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969525"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111433775"
 ---
-# <a name="compile-typescript-code-nodejs"></a>編譯 TypeScript 程式碼 ( # A0) 
+# <a name="compile-typescript-code-nodejs"></a>編譯 TypeScript 程式碼 (Node.js) 
 
 您可以使用 TypeScript SDK （預設可在 Visual Studio 安裝程式中使用）或使用 npm，將 TypeScript 支援新增至專案。 對於在 Visual Studio 2019 中開發的專案，我們鼓勵您使用 TypeScript npm 套件，以在不同的平臺和環境之間獲得更高的可攜性。
 
@@ -109,13 +109,13 @@ ms.locfileid: "99969525"
 
    雖然應用程式會在您執行時自動建立，但我們想要查看在建立程式期間所發生的問題：
 
-   如果您產生來源對應，請開啟 *outDir* 選項中指定的資料夾，然後您會找到產生的 \* .js 檔案 (s) 以及產生的 \* js. 對應檔 (s) 。
+   如果您已產生來源對應，請開啟 *outDir* 選項中指定的資料夾，然後您會找到產生的 \*.js 檔案 (s) 以及產生的 \* js. 對應檔 (s) 。
 
    需要來源對應檔案才能進行 [調試](../javascript/debug-nodejs.md)程式。
 
 ### <a name="run-the-application"></a>執行應用程式
 
-如需在編譯後執行應用程式的指示，請參閱 [建立您的第一個 Node.js 應用程式](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-application)。
+如需在編譯後執行應用程式的指示，請參閱 [建立您的第一個 Node.js 應用程式](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-app)。
 
 ## <a name="automate-build-tasks"></a>將組建工作自動化
 

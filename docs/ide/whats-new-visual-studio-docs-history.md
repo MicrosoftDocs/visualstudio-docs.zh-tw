@@ -16,11 +16,11 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: c735eea8fe3a8b62f1901f7b9c6edf50d42aaf2c
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.sourcegitcommit: c5f2a142ebf9f00808314f79a4508a82e6df1198
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "109973629"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111516931"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio 文件中的新功能歷程記錄
 
