@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 9e4a695a26e17e20fbd19081b863d9f108fc16b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26a01bfe2a34422f9596710f832a1c4af699fd3b
+ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841194"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111588484"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>將連接新增至 Azure SQL Database
 
-使用 Visual Studio，您可以使用 **已連線的服務** 功能，將下列任何一項連線到 Azure SQL database：
+使用 Visual Studio，您可以使用 **已連線的服務** 功能，將下列任何一項連接到 Azure SQL Database：
 
 - .NET Framework 主控台應用程式
 - ASP.NET MVC ( .NET Framework)  

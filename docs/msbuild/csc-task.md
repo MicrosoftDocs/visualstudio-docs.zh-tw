@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3787d5aa21e029ab4900bdd89c88f1cc60f3489
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 10a63b114379f56ca5f253f853a1ff6bdd6c60dc
+ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901349"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111588471"
 ---
 # <a name="csc-task"></a>Csc 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "99901349"
 
 下表說明 `Csc` 工作的參數。
 
-| 參數 | Description |
+| 參數 | 描述 |
 |------------------------------| - |
 | `AdditionalLibPaths` | 選擇性的 `String[]` 參數。<br /><br /> 指定要搜尋參考的其他目錄。 如需詳細資訊，請參閱 [-lib (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option)。 |
 | `AddModules` | 選擇性的 `String` 參數。<br /><br /> 指定要成為組件一部分的一個或多個模組。 如需詳細資訊，請參閱 [-addmodule (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option)。 |
@@ -50,6 +50,7 @@ ms.locfileid: "99901349"
 | `Deterministic` | 選擇性的 `Boolean` 參數。<br/><br/> 若為 `true`，可讓編譯器輸出在輸入相同時編譯之間二進位內容相同的組件。<br/><br/>如需詳細資訊，請參閱 [-deterministic (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option)。 |
 | `DisabledWarnings` | 選擇性的 `String` 參數。<br /><br /> 指定要停用的警告清單。 如需詳細資訊，請參閱 [-nowarn (c # 編譯器選項) ](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option)。 |
 | `DocumentationFile` | 選擇性的 `String` 參數。<br /><br /> 將文件註解處理成 XML 檔案。 如需詳細資訊，請參閱 [-doc (c # 編譯器選項) ](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option)。 |
+| `EmbedAllSources` | 選擇性的 `Boolean` 參數。<br /><br /> 在 PDB 中內嵌所有來源檔案。 如需詳細資訊，請參閱 [-內嵌 (c # 編譯器選項) ](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically) |
 | `EmitDebugInformation` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，工作就會產生偵錯資訊，並將其放在程式資料庫 (.pdb) 檔案中。 如果是 `false`，工作就不會發出任何偵錯資訊。 預設為 `false`。 如需詳細資訊，請參閱 [-debug (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)。 |
 | `ErrorReport` | 選擇性的 `String` 參數。<br /><br /> 提供將 C# 內部錯誤回報給 Microsoft 的便利方式。 此參數可以具有 `prompt`、`send` 或 `none` 的值。 如果將此參數設為 `prompt`，您將會在編譯器內部錯誤發生時收到提示。 此提示可讓您以電子方式將錯誤報告傳送給 Microsoft。 如果將此參數設為 `send`，就會自動傳送錯誤報告。 如果將此參數設為 `none`，則只會在編譯器的文字輸出中報告錯誤。 預設為 `none`。 如需詳細資訊，請參閱 [-errorreport (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)。 |
 | `FileAlignment` | 選擇性的 `Int32` 參數。<br /><br /> 指定輸出檔案中區段的大小。 如需詳細資訊，請參閱 [-filealign (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option)。 |

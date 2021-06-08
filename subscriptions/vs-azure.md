@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 05/18/2021
+ms.date: 06/07/2021
 ms.topic: how-to
 description: 瞭解如何啟用 Visual Studio 訂用帳戶中所含的 Azure DevTest 個人點數權益。
-ms.openlocfilehash: 0888f20c80dbacad0237fdd12f987870c4834f2b
-ms.sourcegitcommit: 6e27b1238a8aa704b127eac34f4173e9d56690c5
+ms.openlocfilehash: 4946efb3aa32fd7c80a2926ad2b83c15cfe92452
+ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "110231973"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111588436"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  使用您的 [每月 Azure DevTest 個人點數](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，azure 就是您開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
@@ -43,7 +43,7 @@ ms.locfileid: "110231973"
 0. 將 [Azure 入口網站](https://portal.azure.com) 加入書簽，以便日後能夠輕鬆存取。
 
 ## <a name="maintain-a-subscription-to-use-monthly-credits"></a>維護使用每月信用額度的訂用帳戶
-如果您的 Visual Studio 訂用帳戶到期或已移除，將無法再使用所有訂用帳戶權益，包括每月 Azure 開發/測試個人點數。 若要以每月點數繼續使用 Azure，您必須更新您的訂用帳戶、購買新的訂用帳戶，或將 Azure 權益轉移至包含 Azure 開發/測試個人點數的有效訂用帳戶。  
+如果您的 Visual Studio 訂用帳戶到期或已移除，將無法再使用所有訂用帳戶權益，包括每月 Azure 開發/測試個人點數。 若要以每月點數繼續使用 Azure，您必須更新您的訂用帳戶、購買新的訂用帳戶，以及/或將您的 Azure 資源轉移至包含 Azure 開發/測試個人點數的不同 Azure 訂用帳戶。  
 
 > [!IMPORTANT]
 > 您必須將您的資源傳輸到另一個 Azure 訂用帳戶，才能停用目前的 Azure 訂用帳戶，否則您將無法存取您的資料。  
@@ -72,23 +72,23 @@ ms.locfileid: "110231973"
 ## <a name="eligibility"></a>資格
 |                 訂用帳戶等級/方案                 |           優點           |                         可續約？                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             Yes                             |
-|              使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶               |     每月信用點數 $150 美元     |                             Yes                             |
+|              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             是                             |
+|              使用 GitHub Enterprise Visual Studio Enterprise 訂用帳戶               |     每月信用點數 $150 美元     |                             是                             |
 |               Visual Studio Enterprise 每月               |        無法使用        |                                                             |
-|             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             Yes
-|              使用 GitHub Enterprise Visual Studio Professional 訂用帳戶              |     每月信用點數 $50 美元     |                             Yes                             |
+|             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             是
+|              使用 GitHub Enterprise Visual Studio Professional 訂用帳戶              |     每月信用點數 $50 美元     |                             是                             |
 |              Visual Studio Professional 每月              |        無法使用        |                                                             |
-|                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             Yes                             |
-|                        MSDN 平台                        |     每月信用點數 $100 美元     |                             Yes                             |
-|               Visual Studio Enterprise - NFR<sup>1</sup>                 |     每月信用點數 $150 美元     |                             Yes                             |
-|                Visual Studio Enterprise - FTE                |     每月信用點數 $150 美元     |                             Yes                             |
-|     Visual Studio Enterprise - Microsoft 合作夥伴網路     |     每月信用點數 $150 美元     |                             Yes                             |
+|                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             是                             |
+|                        MSDN 平台                        |     每月信用點數 $100 美元     |                             是                             |
+|               Visual Studio Enterprise - NFR<sup>1</sup>                 |     每月信用點數 $150 美元     |                             是                             |
+|                Visual Studio Enterprise - FTE                |     每月信用點數 $150 美元     |                             是                             |
+|     Visual Studio Enterprise - Microsoft 合作夥伴網路     |     每月信用點數 $150 美元     |                             是                             |
 |    Visual Studio Professional - Microsoft 合作夥伴網路    |        無法使用        |                                                             |
 |        Visual Studio Enterprise – Imagine (Standard)         |        無法使用        |                                                             |
 |         Visual Studio Enterprise – Imagine (Premium)         |        無法使用        |                                                             |
-|             Visual Studio Enterprise – BizSpark              |     每月信用點數 $150 美元     |                             Yes                             |
-|      Visual Studio Enterprise – MCT 軟體與服務      |     每月信用點數 $100 美元     |                             Yes                             |
-| Visual Studio Enterprise – MCT 軟體與服務開發人員 |     每月信用點數 $150 美元     |                             Yes                             |
+|             Visual Studio Enterprise – BizSpark              |     每月信用點數 $150 美元     |                             是                             |
+|      Visual Studio Enterprise – MCT 軟體與服務      |     每月信用點數 $100 美元     |                             是                             |
+| Visual Studio Enterprise – MCT 軟體與服務開發人員 |     每月信用點數 $150 美元     |                             是                             |
 
 <sup>1</sup>  *包括：禁止轉售 (NFR) 、最有價值專家 (MVP) 、區域主管 (RD) 、Visual Studio 產業合作夥伴 (VSIP) 排除： NFR Basic*
 

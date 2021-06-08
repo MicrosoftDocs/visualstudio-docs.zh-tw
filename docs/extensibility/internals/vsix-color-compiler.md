@@ -10,15 +10,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9486f1cd3e931d134c6fe2842f8704926de70966
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 92914703ea4b293ac054c841251b37886bbc1d5a
+ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060701"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111588458"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 色彩編譯器
-Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，它會採用代表現有 Visual Studio 主題色彩的 .xml 檔案，並將其將至 .pkgdef 檔案，以便在 Visual Studio 中使用這些色彩。 因為比較簡單的方式是比較 .xml 檔案之間的差異，所以此工具對於管理原始檔控制中的自訂色彩相當有用。 它也可以連結到組建環境，讓組建的輸出成為有效的 .pkgdef 檔案。
+Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，它會採用 .xml 檔案來代表現有 Visual Studio 主題的色彩，並將其將至 .pkgdef 檔案，以便在 Visual Studio 中使用這些色彩。 因為很容易比較 .xml 檔案之間的差異，所以此工具適用于管理原始檔控制中的自訂色彩。 它也可以連結到組建環境，讓組建的輸出成為有效的 .pkgdef 檔案。
 
  **主題 XML 架構**
 
@@ -114,7 +114,7 @@ Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，
 
  **全部一起**
 
- 以下是有效的主題 .xml 檔案的簡單範例：
+ 以下是有效主題 .xml 檔的簡單範例：
 
 ```xml
 <Themes>
@@ -137,10 +137,10 @@ Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，
 
 |**交換器名稱**|**注意事項**|**必要或選擇性**|
 |-|-|-|
-|未命名的 ( .xml 檔案) |這是第一個未命名的參數，是要轉換之 XML 檔案的路徑。|必要|
-|未命名的 ( .pkgdef 檔案) |這是第二個未命名的參數，而且是所產生之 .pkgdef 檔案的輸出路徑。<br /><br /> 預設值： \<XML Filename> . .pkgdef|選擇性|
-|/noLogo|設定此旗標會停止產品和著作權資訊的列印。|選擇性|
-|/?|列印出說明資訊。|選擇性|
+|未命名的 (.xml 檔案) |這是第一個未命名的參數，是要轉換之 XML 檔案的路徑。|必要|
+|未命名的 ( .pkgdef 檔案) |這是第二個未命名的參數，而且是所產生之 .pkgdef 檔案的輸出路徑。<br /><br /> 預設值： \<XML Filename> . .pkgdef|選用|
+|/noLogo|設定此旗標會停止產品和著作權資訊的列印。|選用|
+|/?|列印出說明資訊。|選用|
 |/help|列印出說明資訊。|選用|
 
  **範例**
@@ -154,6 +154,8 @@ Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，
 - 這項工具需要安裝最新版本的 VC + + 執行時間。
 
 - 僅支援單一檔案。 不支援透過資料夾路徑進行大量轉換。
+
+- 您可以在中找到此工具。 `<VS Install Path>\VSSDK\VisualStudioIntegration\Tools\Bin\`
 
 ## <a name="sample-output"></a>範例輸出
  工具所產生的 .pkgdef 檔案將類似下列索引鍵：
