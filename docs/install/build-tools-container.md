@@ -6,19 +6,19 @@ ms.date: 03/25/2020
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 941a991e28a2d545bbc4da809a1e663c9fc41a5a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dcf28f818760320b215cbff0d3a2eb5ad6d9f623
+ms.sourcegitcommit: 55b99dbce29d19e493feae9b8d2fdac73718e4de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902733"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111873064"
 ---
 # <a name="install-build-tools-into-a-container"></a>將 Build Tools 安裝至容器
 
@@ -63,7 +63,7 @@ ms.locfileid: "99902733"
    # escape=`
 
    # Use the latest Windows Server Core image with .NET Framework 4.7.2.
-   FROM mcr.microsoft.com/dotnet/framework/sdk:4.7.2-windowsservercore-ltsc2019
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
