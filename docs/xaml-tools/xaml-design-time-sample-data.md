@@ -6,13 +6,13 @@ ms.topic: conceptual
 author: alihamie
 ms.author: tglee
 manager: jmartens
-monikerRange: vs-2019
-ms.openlocfilehash: 8303e1150db7c12c404e8f67bce52418fbd05b9d
-ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
+monikerRange: '>=vs-2019'
+ms.openlocfilehash: 66418d351280a0c067327716766725d22488131b
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111433788"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111760909"
 ---
 # <a name="use-design-time-sample-data-with-the-xaml-designer-in-visual-studio"></a>使用設計階段範例資料搭配中的 XAML 設計工具 Visual Studio
 

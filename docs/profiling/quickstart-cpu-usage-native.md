@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86b5e44f5b9e2fec07fef4e54a48ff89ebb2ff74
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c68cc67d768dbe2b1c42671a02360e5cef2b56b
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861630"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111760935"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (C++)
 
@@ -33,13 +33,13 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 1. 開啟 Visual Studio 並建立專案。
 
    ::: moniker range="vs-2017"
-   從頂端功能表列中，選擇 [檔案]**[新增]** > **[專案]** > 。
+   從頂端功能表列中 **，選擇 [** 檔案 > **新增** > **專案**]。
 
    在左窗格的 [ **新增專案** ] 對話方塊中，展開 [ **Visual C++**]，然後選擇 [ **Windows 桌面**]。 在中間窗格中，選擇 [ **Windows 主控台應用程式**]。 然後將專案命名為 *Diagnostics_Get_Started_Native*。
 
    如果您沒有看到 [ **Windows 主控台應用程式**] 專案範本，請在 [**新增專案**] 對話方塊的左窗格中，選擇 [**開啟] Visual Studio 安裝程式** 連結。 Visual Studio 安裝程式即會啟動。 選擇 [ **使用 c + + 的桌面開發** ] 工作負載，然後選擇 [ **修改**]。
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    如果 [開始] 視窗未開啟，請 **選擇 [** 檔案 > **開始視窗]**。
 
    在 [開始] 視窗中，選擇 [ **建立新專案**]。

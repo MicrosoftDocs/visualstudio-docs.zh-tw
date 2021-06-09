@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af974731fac6842c38f2a0e4ccbc9f32748e29b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 011f04d05d468b23955527e05aebf9f6e45ce43c
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874791"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111760987"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 C++ 程式碼進行偵錯
 
@@ -54,7 +54,7 @@ ms.locfileid: "99874791"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
 
@@ -70,7 +70,7 @@ ms.locfileid: "99874791"
 
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列中，選擇 [檔案]**[新增]** > **[專案]** > 。
+2. 從頂端功能表列中 **，選擇 [** 檔案 > **新增** > **專案**]。
 
 3. 在左窗格的 [ **新增專案** ] 對話方塊中，展開 [ **Visual C++** ]，然後選擇 [ **Windows 桌面**]。 在中間窗格中，選擇 [ **Windows 主控台應用程式**]。 然後將專案命名為 *開始使用-調試*。
 
@@ -82,7 +82,7 @@ ms.locfileid: "99874791"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 開啟 Visual Studio 2019。
 

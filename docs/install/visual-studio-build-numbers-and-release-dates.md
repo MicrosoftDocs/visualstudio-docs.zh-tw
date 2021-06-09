@@ -5,19 +5,19 @@ description: Visual Studio 已發行版本和組件編號的清單，依日期�
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 05/25/2021
+ms.date: 06/08/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a0aa395864aa05c268819e5da52d6fed80d96a56
-ms.sourcegitcommit: d6fb4f8dff6ac69dfdd61e481a4ddd6b0dd8fa63
+ms.openlocfilehash: 3006e92289a425c327241384e88fb69c567a7a5e
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110395420"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761117"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -29,6 +29,11 @@ ms.locfileid: "110395420"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.10.1 | 版本 | 2021年6月8日 | 16.10.31402.337 |
+| 16.9.7 | 版本 | 2021年6月8日 | 16.9.31328.270 |
+| 16.7.16 | 版本 | 2021年6月8日 | 16.7.31327.30 |
+| 16.4.23| 版本 | 2021年6月8日 | 16.4.31327.141 |
+| 16.11.0 | Preview 1 | 2021 5 月25日 | 16.11.31320.298 |
 | 16.10.0 | 版本 | 2021 5 月25日 | 16.10.31321.278 |
 | 16.10.0 | Preview 4 | 2021年5月18日 | 16.10.31313.381 |
 | 16.9.6 | 版本 | 2021年5月18日 | 16.9.31313.79 |

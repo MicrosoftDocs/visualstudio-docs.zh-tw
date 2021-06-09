@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ce27b8fdd73c1fcc001861a9b1fb7c2e9e4f4058
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: 9a2d362bc9fd22f7bb1db2fa005534f2f67e3155
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105616983"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111760961"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>教學課程：在 Visual Studio 中建立具有 TypeScript 的 ASP.NET Core 應用程式
 
@@ -28,7 +28,7 @@ ms.locfileid: "105616983"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
 
@@ -220,7 +220,7 @@ Visual Studio 可在「專案」中管理單一應用程式的檔案。 專案�
 1. 依照 [npm 套件管理](../javascript/npm-package-management.md#aspnet-core-projects) 中的指示，將檔案新增 `package.json` 至您的專案。 這會將 npm 支援新增至您的專案。
 
    >[!NOTE]
-   > 針對 ASP.NET Core 專案，您也可以使用連結 [庫管理員](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) 或 yarn 而不是 npm 來安裝用戶端 JAVASCRIPT 和 CSS 檔案。
+   > 針對 ASP.NET Core 專案，您也可以使用連結 [庫管理員](/aspnet/core/client-side/libman/) 或 yarn 而不是 npm 來安裝用戶端 JAVASCRIPT 和 CSS 檔案。
 
 1. 在此範例中，將 jQuery 的 TypeScript 定義檔新增至您的專案。 在檔案的 *package.js* 中包含下列各項。
 
