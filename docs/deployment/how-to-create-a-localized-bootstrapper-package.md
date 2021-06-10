@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eb06c54caceb2e9329347fb1dd0114749975e7d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a9d1fc91dcb385a9250dde3adb47c0d9553147f
+ms.sourcegitcommit: 6aa55db5e1fe19d4d17886e0bfe140dbd186f8ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927583"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111877711"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：建立當地語系化啟動載入器套件
 建立啟動載入器套件之後，您可以為每一個地區設定建立另外兩個檔案，藉此建立當地語系化版本的啟動載入器套件：軟體授權條款檔案 (例如 *eula.rtf*) 和套件資訊清單 (*package.xml*)。
 
  根據預設，Visual Studio 2010 只包含 .NET Framework 4、.NET Framework 4 Client Profile、F# Runtime 2.0 和 F# Runtime 4.0 的當地語系化啟動載入器套件。 您只要完成三個步驟，就能為其他啟動載入器建立當地語系化套件。
 
-1. 在 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName>* 中，建立以地區設定名稱命名的資料夾。
+1. 在 *\Program Files (x86) \Microsoft \\ \<BootstrapperPackageName> SDKs\ClickOnce Bootstrapper\Packages* 中的地區設定名稱之後，建立名為的資料夾。
 
 2. 建立包含啟動載入器套件之軟體授權合約的檔案，然後放入新資料夾中。
 
@@ -41,9 +41,9 @@ ms.locfileid: "99927583"
 
 1. 以地區設定名稱建立資料夾。
 
-     在32位的電腦上，于 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> \\* 資料夾中建立資料夾。
+     在32位的電腦上，于 *\Program Files\Microsoft SDKs\ClickOnce Bootstrapper\Packages \\ \<BootstrapperPackageName> \\* 資料夾中建立資料夾。
 
-     在64位的電腦上，于 \Program 檔案中建立資料夾 *(86) \microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> \\* 資料夾。
+     在64位的電腦上， *(x86) \microsoft \\ \<BootstrapperPackageName> \\ SDKs\ClickOnce Bootstrapper\Packages* 資料夾的 \Program 檔中建立資料夾。
 
      下表顯示可用來比對地區設定的資料夾名稱。
 
@@ -78,19 +78,22 @@ ms.locfileid: "99927583"
 
 1. 建立名為 *fr* 的資料夾。 資料夾名稱必須符合地區設定名稱。
 
-     在 32 位元電腦上，於 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* 資料夾中建立資料夾。
+     在32位的電腦上，于 *\Program Files\Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1 \\* 資料夾中建立資料夾。
 
-     在 64 位元電腦上，於 *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* 資料夾中建立資料夾。
+     在64位的電腦上， *(x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1 \\* 資料夾的 \Program 檔中建立資料夾。
 
 2. 將當地語系化版本的軟體授權條款放入 *fr* 資料夾中。
 
-3. 將 *\Program 檔案 (x86) \microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* 檔複製到 *fr* 資料夾，然後在 XML 設計工具中開啟該檔案。
+3. 將 *\Program 檔案 (x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* 檔複製到 *fr* 資料夾，然後在 XML 設計工具中開啟該檔案。
 
 4. 更新套件資訊清單的 `<Strings>` 區段，讓錯誤字串以法文顯示。
 
 5. 將 `<String Name="Culture">` 值變更為 *fr*。
 
 6. 儲存 *package.xml* 檔案。
+
+>[!NOTE]
+> 從 Visual Studio 2019 Update 7 release 啟動載入器套件開始，也會在路徑 *<VS Install Path> \MSBuild\Microsoft\VisualStudio\BootstrapperPackages* 下探索到。
 
 ## <a name="see-also"></a>另請參閱
 - [建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)

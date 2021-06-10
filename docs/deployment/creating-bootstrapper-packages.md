@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 04cbb0db729d39295ee9c608a19302a109980f10
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 007a7f42448ab8026d8acdc262ce5e0dcdd99b28
+ms.sourcegitcommit: 6aa55db5e1fe19d4d17886e0bfe140dbd186f8ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912211"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111877724"
 ---
 # <a name="create-bootstrapper-packages"></a>建立啟動載入器套件
 安裝程式是一般安裝程式，可設定來偵測及安裝可轉散發元件，例如 Windows Installer (*.msi*) 檔案和可執行程式。 安裝程式也稱為啟動載入器。 其程式設計方式是透過一組 XML 資訊清單，指定用於管理元件安裝的中繼資料。  ClickOnce 的必要條件對話方塊中顯示的每個可轉散發元件（或 **必要條件** ）都是啟動載入器套件。 啟動載入器套件是一組目錄和檔案，內含描述必要條件安裝方式的資訊清單檔案。
@@ -63,20 +63,17 @@ CustomBootstrapperPackage
 接下來，將可轉散發檔案複製到啟動載入器資料夾位置。 如需詳細資訊，請參閱 [如何：建立當地語系化的](../deployment/how-to-create-a-localized-bootstrapper-package.md)啟動載入器套件。
 
 ```
-*\Program Files (x86)\Microsoft SDKs\ClickOnce Bootstrapper*
-```
-
-或者，針對較舊版本的 Visual Studio
-
-```
-*\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+*\Program Files (x86)\Microsoft SDKs\ClickOnce Bootstrapper\Packages*
 ```
 
 或
 
 ```
-*\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+*<VS Install Path>\MSBuild\Microsoft\VisualStudio\BootstrapperPackages*
 ```
+
+>[!NOTE]
+>上方所列的路徑，在 Visual Studio 安裝路徑下的運作方式，從 Visual Studio 2019 更新7版開始運作。
 
 您也可以從下列登錄機碼中的 [ **路徑** ] 值尋找啟動載入器資料夾位置：
 
@@ -102,7 +99,7 @@ CustomBootstrapperPackage
 |ProcessorArchitecture|可執行檔之目標平台的處理器和每個字組的位元。 包括下列值：<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|
 |[Version9x](/windows/desktop/Msi/version9x)|Microsoft Windows 95、Windows 98 或 Windows ME 作業系統的版本號碼。 版本的語法是 Major.Minor.ServicePack。|
 |[VersionNT](/windows/desktop/Msi/versionnt)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 作業系統的版本號碼。 版本的語法是 Major.Minor.ServicePack。|
-|[VersionMSI](/windows/desktop/Msi/versionmsi)|要在安裝期間執行的 Windows Installer 元件 ( # A0) 版本。|
+|[VersionMSI](/windows/desktop/Msi/versionmsi)|Windows Installer 元件的版本 (msi.dll) 要在安裝期間執行。|
 |[AdminUser](/windows/desktop/Msi/adminuser)|如果使用者具有系統管理員權限，則會設定這個屬性。 值為 true 或 false。|
 |InstallMode|安裝模式指出需要從中安裝元件的位置。 包括下列值：<br /><br /> -   HomeSite - 從廠商的網站安裝必要條件。<br />-   SpecificSite - 從您選取的位置安裝必要條件。<br />-   SameSite - 從應用程式的相同位置安裝必要條件。|
 
