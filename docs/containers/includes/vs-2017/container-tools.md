@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 53bf0d559d9737494567b079621879b97a403a95
-ms.sourcegitcommit: fc05a763b59e212c86350d117a1900a1f2686ec8
+ms.openlocfilehash: 92b97cb1091722bdf0caa6e7708e015612c545ad
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "111564859"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112044705"
 ---
-有了 Visual Studio，您就可以輕鬆地建立、偵測和執行容器化 ASP.NET Core 應用程式，並將其發佈至 Azure Container Registry (ACR) 、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們將發佈到 ACR。
+有了 Visual Studio，您就可以輕鬆地建立、偵測和執行容器化 ASP.NET Core 應用程式，並將其發佈至 Azure Container Registry、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們將發佈至 Container Registry。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 已安裝 [網頁程式開發]、[Azure Tools] 工作負載及/或 [.NET Core 跨平台開發] 工作負載的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
