@@ -1,5 +1,5 @@
 ---
-title: 偵錯工具中的格式規範 (c + +) |Microsoft 檔
+title: 偵錯工具中的格式規範 (c + +) |Microsoft Docs
 description: 使用格式規範來變更在 [監看式]、[自動變數] 或 [區域變數] 視窗中顯示值的格式。 本文提供使用詳細資料。
 ms.custom: SEO-VS-2020
 ms.date: 3/11/2019
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a3fa99594f42e7e9c3739a8a8d57abf226bc04c
-ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
+ms.openlocfilehash: 868c02091814fe49ea0224190c7d205e8b67c42b
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103483189"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042973"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中 c + + 的格式規範
 
@@ -40,7 +40,7 @@ ms.locfileid: "103483189"
 您也可以 **在 [即時** 運算] 視窗、 **命令** 視窗、追蹤 [點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，甚至是在來源視窗中使用格式規範。 如果您在這些視窗中的運算式上暫停，結果會顯示在 [資料提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中。 DataTip 顯示會反映格式規範。
 
 > [!NOTE]
-> 當 Visual Studio 原生偵錯工具變更為新的偵錯工具引擎時，會加入一些新的格式規範，並移除一些舊的格式規範。 當您使用 C++/CLI 執行 Interop (混合原生和 Managed) 偵錯時仍會使用較舊的偵錯工具。
+> 當 Visual Studio 原生偵錯工具變更為新的偵測引擎時，會加入一些新的格式規範，並移除一些舊的格式規範。 當您使用 C++/CLI 執行 Interop (混合原生和 Managed) 偵錯時仍會使用較舊的偵錯工具。
 
 ## <a name="set-format-specifiers"></a>設定格式規範
 
@@ -56,7 +56,7 @@ int main() {
 
 將 `my_var1` 變數加入至 [**監看** 式] 視窗（在進行調試時），並將它設為 [ **Debug**  >  ****]  >    >   接下來，以滑鼠右鍵按一下變數，然後選取 [ **十六進位顯示**]。 現在 [ **監看** 式] 視窗會顯示值0x0065。 若要查看以字元而非整數表示的此值，請先以滑鼠右鍵按一下並取消選取 [ **十六進位顯示**]。 然後在 **名稱** 資料行中 **，** 將字元格式規範 c 加入變數名稱後面。 **值** 資料行現在會顯示 **101 ' e '**。
 
-![Visual Studio 監看式視窗的螢幕擷取畫面，其中有一個選取的線條顯示 my_var1，其值為 101 ' e ' 和 int 類型。](../debugger/media/watchformatcplus1.png)
+![Visual Studio 監看式視窗的螢幕擷取畫面，其中有一個選取的線條顯示 my_var1 的值為 101 ' e ' 和 int 類型。](../debugger/media/watchformatcplus1.png)
 
 ::: moniker range=">= vs-2019" 
 您可以在 [ **監看** 式] 視窗中附加逗號 (，) ，以從可用的格式規範清單中查看並選取。 
@@ -67,7 +67,7 @@ int main() {
 
 ## <a name="format-specifiers"></a><a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 格式規範
 
-下表說明您可以在 Visual Studio 中使用的格式規範。 只有新的偵錯工具才支援粗體的規範，而不支援以 c + +/CLI 進行 interop 偵錯工具
+下表描述您可以在 Visual Studio 中使用的格式規範。 只有新的偵錯工具才支援粗體的規範，而不支援以 c + +/CLI 進行 interop 偵錯工具
 
 ::: moniker range=">= vs-2019" 
 
@@ -104,6 +104,7 @@ int main() {
 |nr|隱藏「未經處理的檢視」項目|
 |nvo|只顯示數值的「原始視圖」專案|
 |!|未經處理格式，忽略任何資料類型檢視自訂|\<customized representation>|4|
+|處理|顯示 win32 控制碼的相關資訊|0x000000000000009c| 顯示有關控制碼的有用資訊，例如執行緒識別碼等等。 |
 
 ::: moniker-end
 

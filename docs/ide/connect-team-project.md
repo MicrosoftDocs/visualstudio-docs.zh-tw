@@ -2,17 +2,17 @@
 title: 在 Team Explorer 中連線到專案
 description: 瞭解如何使用 Visual Studio 中的 Team Explorer，與小組成員合作來開發和管理專案。
 ms.custom: SEO-VS-2020
-ms.date: 03/31/2021
+ms.date: 06/11/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 78a71911bb4334e04a085d91ff51238d34981beb
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 4d3d2c005f32aaebacc251414218f5ae03edf546
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216601"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043012"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>在 Team Explorer 中連線到專案
 
@@ -27,7 +27,7 @@ ms.locfileid: "106216601"
 Team Explorer 會將 Visual Studio 連接至 Team Foundation 版本控制 (TFVC) 儲存機制，以及裝載于 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 或內部部署 [Azure DevOps Server](/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops&preserve-view=true) (上的專案（先前稱為 TFS) ）。 您可以管理原始程式碼、工作項目和組建。
 
 > [!IMPORTANT]
-> 在最新版本的 Visual Studio 2019 [**16.8 版**](/visualstudio/releases/2019/release-notes/)中，現在預設會開啟新的 Git 版本控制體驗。 如果您想要深入瞭解它與 Team Explorer 的比較，請參閱 [**Git 和 Team Explorer 頁面的並列比較**](git-team-explorer-feature-comparison.md) 。
+> 在 Visual Studio 2019 [**16.8 版**](/visualstudio/releases/2019/release-notes-history)的版本中，預設會開啟 Git 版本控制體驗。 如果您想要深入瞭解它與 Team Explorer 的比較，請參閱 [**Git 和 Team Explorer 頁面的並列比較**](../version-control/git-team-explorer-feature-comparison.md) 。
 >
 > 但是，如果您想要繼續使用 Team Explorer，請移至 [ **工具** > **選項** > **環境** > **預覽功能** ]，然後切換 [ **新的 Git 使用者體驗** ] 核取方塊。
 
@@ -99,9 +99,9 @@ Team Explorer 會將 Visual Studio 連接至 Team Foundation 版本控制 (TFVC)
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="vs-2017&quot;
 
-![Visual Studio 中的 Team Explorer [首頁]](media/team-explorer/team-explorer.png "Visual Studio 中的 Team Explorer 首頁。")
+![Visual Studio 中的 Team Explorer [首頁]](media/team-explorer/team-explorer.png &quot;Visual Studio 中的 Team Explorer 首頁。")
 
 > [!TIP]
 > 如果您開啟 Visual Studio 但 **Team Explorer** 未出現，請從功能表列選擇 [ **View**  >  **Team Explorer** ]，或按 **ctrl** + **&#92;**、 **ctrl** + **M** 來開啟它。
@@ -118,7 +118,7 @@ Team Explorer 會將 Visual Studio 連接至 Team Foundation 版本控制 (TFVC)
 
    ![Team Explorer 中的 [管理連線] 按鈕](media/team-explorer/manage-connections.png "Visual Studio 中的 [Team Explorer-管理連接] 按鈕。")
 
-1. 在 [連線] 頁面上，選擇 [管理連線]**[連線到專案]** > 。
+1. 在 [ **連接]** 頁面上，選擇 [ **管理連接** > **連接到專案]**。
 
    ![在 Team Explorer 中連線到專案](media/team-explorer/connect-project.png "Team Explorer-連接到 Visual Studio 中的專案選項。")
 

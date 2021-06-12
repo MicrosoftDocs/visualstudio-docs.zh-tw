@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dcf28f818760320b215cbff0d3a2eb5ad6d9f623
-ms.sourcegitcommit: 55b99dbce29d19e493feae9b8d2fdac73718e4de
+ms.openlocfilehash: fc3133692007a53b48d658ed284d6af0bde0af4a
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111873064"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043077"
 ---
 # <a name="install-build-tools-into-a-container"></a>將 Build Tools 安裝至容器
 
@@ -68,18 +68,22 @@ ms.locfileid: "111873064"
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
 
-   # Download the Build Tools bootstrapper.
-   ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
-
-   # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
-   RUN start /wait C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
-       --installPath C:\BuildTools `
-       --add Microsoft.VisualStudio.Workload.AzureBuildTools `
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
-       --remove Microsoft.VisualStudio.Component.Windows81SDK `
-    || IF "%ERRORLEVEL%"=="3010" EXIT 0
+   RUN `
+       # Download the Build Tools bootstrapper.
+       curl -SL --output vs_buildtools.exe https://aka.ms/vs/15/release/vs_buildtools.exe `
+       `
+       # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
+       && (start /w vs_buildtools.exe --quiet --wait --norestart --nocache `
+           --installPath C:\BuildTools `
+           --add Microsoft.VisualStudio.Workload.AzureBuildTools `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+           --remove Microsoft.VisualStudio.Component.Windows81SDK `
+           || IF "%ERRORLEVEL%"=="3010" EXIT 0) `
+       `
+       # Cleanup
+       && del /q vs_buildtools.exe
 
    # Define the entry point for the Docker container.
    # This entry point starts the developer command prompt and launches the PowerShell shell.
@@ -110,22 +114,26 @@ ms.locfileid: "111873064"
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
 
-   # Download the Build Tools bootstrapper.
-   ADD https://aka.ms/vs/16/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
-
-   # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
-   RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
-       --installPath C:\BuildTools `
-       --add Microsoft.VisualStudio.Workload.AzureBuildTools `
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
-       --remove Microsoft.VisualStudio.Component.Windows81SDK `
-    || IF "%ERRORLEVEL%"=="3010" EXIT 0
+   RUN `
+       # Download the Build Tools bootstrapper.
+       curl -SL --output vs_buildtools.exe https://aka.ms/vs/16/release/vs_buildtools.exe `
+       `
+       # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
+       && (start /w vs_buildtools.exe --quiet --wait --norestart --nocache modify `
+           --installPath "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\BuildTools" `
+           --add Microsoft.VisualStudio.Workload.AzureBuildTools `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+           --remove Microsoft.VisualStudio.Component.Windows81SDK `
+           || IF "%ERRORLEVEL%"=="3010" EXIT 0) `
+       `
+       # Cleanup
+       && del /q vs_buildtools.exe
 
    # Define the entry point for the docker container.
    # This entry point starts the developer command prompt and launches the PowerShell shell.
-   ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+   ENTRYPOINT ["C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
    > [!TIP]

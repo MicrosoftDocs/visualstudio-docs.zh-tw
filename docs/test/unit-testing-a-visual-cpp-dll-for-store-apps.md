@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 5117ffb8731ef06f054b0ecbfc651aef2563078e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1981b3876d2e42e992ef261738da2443edfc114
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962622"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042908"
 ---
 # <a name="how-to-test-a-c-dll"></a>如何測試 c + + DLL
 
@@ -26,7 +26,7 @@ ms.locfileid: "99962622"
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a> 建立方案和單元測試專案
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 從建立新的測試專案開始。 在 [檔案] 功能表上，依序選擇 [新增] 和 [專案] > 。 在 [新增專案] 對話方塊中，在搜尋方塊中鍵入 "test"，然後將 [語言] 設為 C++。 接著從專案範本清單中選擇 [單元測試應用程式 (通用 Windows)]。
 
@@ -81,7 +81,7 @@ ms.locfileid: "99962622"
 
 ## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a> 將 DLL 專案加入至方案
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 在 **方案總管** 中，選擇方案名稱。 從捷徑功能表選擇 [新增]，然後選擇 [新增專案]。 在 [新增專案] 對話方塊中，將 [語言] 設為 C++，並在搜尋方塊中鍵入 "DLL"。 從結果清單中，選擇 [單元測試應用程式 (通用 Windows - C++/CX)。
 

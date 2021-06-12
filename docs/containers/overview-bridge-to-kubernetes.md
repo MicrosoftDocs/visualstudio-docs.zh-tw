@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 1709785c63bd4fbcd702fbcacfe59dddcb71d1b3
-ms.sourcegitcommit: 0135fc6ffa38995cc9e6ab05fa265758890d2e15
+ms.openlocfilehash: 838589e0dd81232de25b88989d621a07fb22f972
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107526151"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043051"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 的運作方式
 
@@ -52,6 +52,9 @@ ms.locfileid: "107526151"
 
 > [!NOTE]
 > 在連線到叢集的持續期間 (加上15分鐘的) ，Bridge Kubernetes 會在您的本機電腦上以系統管理員許可權執行稱為 *EndpointManager* 的進程。
+
+> [!NOTE]
+> 您可以使用多個服務，以平行方式進行偵錯工具，但您必須將 Visual Studio 的多個實例啟動為您要進行偵錯工具的服務。 請確定您的服務在本機接聽不同的埠，然後個別設定和偵測它們。 此案例不支援隔離。
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>使用 KubernetesLocalProcessConfig 的其他設定。 yaml
 

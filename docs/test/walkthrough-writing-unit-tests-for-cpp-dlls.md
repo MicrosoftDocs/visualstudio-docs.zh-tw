@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 2d145e1383e8f6c0d7c25ae72232fdbe2a8d703d
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: cfdc580b94760cb0c5160918210ba6c3dd8fa2f6
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727537"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042921"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：撰寫 C++ DLL 的單元測試
 
@@ -86,7 +86,7 @@ ms.locfileid: "97727537"
 
 ## <a name="create-a-dll-project"></a><a name="create_dll_project"></a> 建立 DLL 專案
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 下列步驟會示範如何在 Visual Studio 2019 中建立 DLL 專案。
 
@@ -358,7 +358,7 @@ ms.locfileid: "97727537"
     >
     > 將重構作業與其他變更分開。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 - **分離。** 大部分 DLL 相依於其他子系統，例如資料庫和其他 DLL。 這些其他元件通常會以平行方式開發。 若要在還無法使用其他元件時，允許單元測試，您必須替換模擬或
 
@@ -368,7 +368,7 @@ ms.locfileid: "97727537"
 
    您也可以強制規定程式碼涵蓋範圍的最低層級。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [將單元測試新增至現有的 C++ 應用程式](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)

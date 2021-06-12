@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 11/09/2020
 ms.topic: how-to
-ms.openlocfilehash: e2bfb78369ae5da389820a318196dd7e9e13e897
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 4ddb15c8bc5bf90663c5431d2379af61b43e73a6
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493071"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043090"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>開始使用 Visual Studio for Mac 中的 Docker
 
@@ -30,8 +30,8 @@ ms.locfileid: "94493071"
 1. 藉由移至 [檔案] > [新增解決方案] 來建立新解決方案。
 1. 在 [ **.Net Core > 應用** 程式] 下，選擇 [ **Web 應用程式** ] 範本： ![ 建立新的 ASP.NET 應用程式](media/docker-quickstart-1.png)
 1. 選取目標 Framework。 在此範例中，我們將使用 .NET Core 2.2： ![ 設定目標 framework](media/docker-quickstart-2.png)
-1. 輸入專案詳細資料，例如，名稱 (此範例中為 _DockerDemo_ )。 所建立的專案包含建置和執行 ASP.NET Core 網站所需的所有基本項目。
-1. 在 [方案] 視窗中，以滑鼠右鍵按一下 >dockerdemo 專案，然後選取 [ **新增] > 新增 Docker 支援** ： ![ 新增 docker 支援]](media/docker-quickstart-3.png)
+1. 輸入專案詳細資料，例如，名稱 (此範例中為 _DockerDemo_)。 所建立的專案包含建置和執行 ASP.NET Core 網站所需的所有基本項目。
+1. 在 [方案] 視窗中，以滑鼠右鍵按一下 >dockerdemo 專案，然後選取 [ **新增] > 新增 Docker 支援**： ![ 新增 docker 支援]](media/docker-quickstart-3.png)
 
 Visual Studio for Mac 會將稱為 **docker-compose** 的專案自動新增到解決方案，並將 **Dockerfile** 新增到您的現有專案。
 
@@ -42,24 +42,25 @@ Visual Studio for Mac 會將稱為 **docker-compose** 的專案自動新增到�
 Dockerfile 是用於建立最終 Docker 映像的配方。 請參閱 [Dockerfile 參考](https://docs.docker.com/engine/reference/builder/) ，以瞭解其內的命令。
 
 ```
-FROM microsoft/dotnet:2.2-aspnetcore-runtime AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
 WORKDIR /app
 EXPOSE 80
+EXPOSE 443
 
-FROM microsoft/dotnet:2.2-sdk AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
 WORKDIR /src
 COPY DockerDemo/DockerDemo.csproj DockerDemo/
-RUN dotnet restore DockerDemo/DockerDemo.csproj
+RUN dotnet restore "DockerDemo/DockerDemo.csproj"
 COPY . .
-WORKDIR /src/DockerDemo
-RUN dotnet build DockerDemo.csproj -c Release -o /app
+WORKDIR "/src/DockerDemo"
+RUN dotnet build "DockerDemo.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish DockerDemo.csproj -c Release -o /app
+RUN dotnet publish "DockerDemo.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "DockerDemo.dll"]
 ```
 

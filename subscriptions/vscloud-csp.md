@@ -7,12 +7,12 @@ ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
 ms.date: 03/18/2021
 ms.topic: conceptual
 description: 如何為您的客戶購買和管理 Visual Studio 雲端訂用帳戶的雲端解決方案提供者資訊。
-ms.openlocfilehash: b905d698f3d9f1a763ae7d9e9dbc8276a5362da6
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 09c905d113920a0bb55aed8851d3fb62c92a39bf
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104673017"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042847"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>為您的客戶購買及管理 Visual Studio 雲端訂閱
 [雲端解決方案提供者計畫](https://partner.microsoft.com/cloud-solution-provider)中的合作夥伴可以為他們的客戶購買 Visual Studio Enterprise 和 Visual Studio Professional 的雲端訂閱。
@@ -22,7 +22,7 @@ ms.locfileid: "104673017"
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 建議新客戶移至，以 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 探索購買 Visual Studio 的不同選項。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 您必須先在合作夥伴中心設定您的客戶租用戶，為此租用戶建立 Azure 訂用帳戶。
 
 [深入了解](/azure/devops/organizations/billing/csp/set-up-csp-customer)
@@ -116,4 +116,4 @@ ms.locfileid: "104673017"
 - [Microsoft 365 檔](/microsoft-365/)
 
 ## <a name="next-steps"></a>下一步
-如需常見帳單問題的解答，請參閱 [雲端帳單常見問題](vscloud-billing-faq.md) 。
+如需常見帳單問題的解答，請參閱 [雲端帳單常見問題](vscloud-billing-faq.yml) 。

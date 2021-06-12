@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 6cf29d16432b677c6e83ba4cbaedb39f0a8d1ed2
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: a338b6f62aee6ec342ef6a16abec71cb6a833bc0
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572989"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042960"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 Google Test
 
@@ -21,11 +21,11 @@ ms.locfileid: "99572989"
 
 ![安裝 Google Test](media/cpp-google-component.png)
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="add-a-google-test-project-in-visual-studio-2019"></a>在 Visual Studio 2019 中新增 Google Test 專案
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下解決方案節點，然後選擇 [新增]**[新增專案]** > 。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下方案節點，然後選擇 [ **加入** > **新專案**]。
 2. 將 [語言] 設為 [C++]，然後在搜尋方塊中鍵入 **test**。 從結果清單中，選擇 **Google Test 專案**。
 3. 提供測試專案名稱，然後按一下 [確定]。
 
@@ -37,8 +37,8 @@ ms.locfileid: "99572989"
 
 ## <a name="add-a-google-test-project-in-visual-studio-2017"></a>在 Visual Studio 2017 中新增 Google Test 專案
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下解決方案節點，然後選擇 [新增]**[新增專案]** > 。
-2. 在左窗格中選擇 [Visual C++]**[測試]** > ，然後在中間窗格中選擇 [Google Test 專案]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下方案節點，然後選擇 [ **加入** > **新專案**]。
+2. 在左窗格中，選擇 [ **Visual C++** > **測試** ]，然後在中間窗格中選擇 [ **Google Test 專案** ]。
 3. 提供測試專案名稱，然後按一下 [確定]。
 
 ![新增 Google Test 專案](media/cpp-gtest-new-project.png)

@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 02/19/2021
 ms.topic: overview
 description: 每月或每年租 Visual Studio Professional 或 Visual Studio Enterprise，沒有長期合約。
-ms.openlocfilehash: 56988001272fb11252b85cb60bdcae109edf8e29
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 5e6346b640415b7888826669427512a75427f0cc
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672539"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043103"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 購買 [Visual Studio Professional 和 Visual Studio Enterprise 訂用帳戶](https://visualstudio.microsoft.com/subscriptions/)。 這些稱為「雲端訂用帳戶」。
@@ -125,7 +125,7 @@ ms.locfileid: "104672539"
 
 ## <a name="related-resources"></a>相關資源
 - [Visual Studio 訂閱系統管理員入口網站](https://manage.visualstudio.com/)
-- [Visual Studio 雲端訂用帳戶帳單常見問題集](vscloud-billing-faq.md)
+- [Visual Studio 雲端訂用帳戶帳單常見問題集](vscloud-billing-faq.yml)
 - [適合 CSP 購買的 Visual Studio 雲端訂閱](vscloud-csp.md)
 - - 如需有關 Visual Studio 訂閱的銷售、訂用帳戶、帳戶和計費的協助，請參閱 Visual Studio [訂閱支援](https://visualstudio.microsoft.com/subscriptions/support/)
 

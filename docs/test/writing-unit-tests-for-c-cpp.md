@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: d20bcdef769d8cd751230000b0e4d4319b10e46f
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 877c9163d05f458ce45a46d6b3e6d14e354df591
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217459"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042883"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中撰寫 C/C++ 的單元測試
 
@@ -51,7 +51,7 @@ C++ 單元測試專案支援 [CodeLens](../ide/find-code-changes-and-other-histo
 
 下列各節說明協助您開始使用 C++ 單元測試的基本步驟。 Microsoft 和 Google Test framework 的基本設定都很類似。 Boost.Test 需要您手動建立測試專案。
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ### <a name="create-a-test-project-in-visual-studio-2019"></a>在 Visual Studio 2019 中建立測試專案
 
