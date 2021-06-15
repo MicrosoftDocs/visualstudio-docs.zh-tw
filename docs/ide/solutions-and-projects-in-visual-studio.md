@@ -1,5 +1,5 @@
 ---
-title: 了解解決方案與專案
+title: 什麼是 Visual Studio 解決方案 &amp; 專案？
 description: 瞭解 Visual Studio 專案和方案、如何從範本建立新專案，以及如何在方案總管中查看 & 管理專案。
 ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 12/31/2020
@@ -22,16 +22,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 473c3ca0e4a9998d6a320e384bf39b4b5e037085
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eaba06b2da73fc0bc80219ce58baff49a760ebc0
+ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878496"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112066965"
 ---
-# <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
+# <a name="what-are-solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解決方案和專案是什麼？
 
-本頁面描述 *專案* 和 *方案* 在 Visual Studio 中的概念。 它也會簡短介紹方案總管工具視窗，以及如何建立新專案。
+在本文中，您將瞭解 Visual Studio 中的 *專案* 和 *解決方案* 。 它也會簡短介紹方案總管工具視窗，以及如何建立新專案。
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中的專案和方案](/visualstudio/mac/projects-and-solutions)。
@@ -65,7 +65,7 @@ Visual Studio 使用 [msbuild](../msbuild/msbuild.md) 在方案中建立每個�
 
 Visual Studio 會使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存解決方案的設定：
 
-|分機|名稱|描述|
+|分機|Name|描述|
 |---------------|----------|-----------------|
 |.sln|Visual Studio 方案|將專案、專案項目和方案項目組織到方案中。|
 |.suo|方案使用者選項|儲存使用者層級設定和自訂項目，例如中斷點。|

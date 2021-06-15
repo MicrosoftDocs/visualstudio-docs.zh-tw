@@ -1,8 +1,8 @@
 ---
-title: 使用解決方案與專案
+title: 建立 &amp; 使用 Visual Studio projects &amp; 方案
 description: 瞭解方案和專案之間的差異，以及如何在 Visual Studio 中使用它們。
 ms.custom: SEO-VS-2020, contperf-fy21q2
-ms.date: 12/23/2020
+ms.date: 06/14/2021
 ms.topic: how-to
 f1_keywords:
 - vs.openprojectfromweb
@@ -16,14 +16,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f702908c60b08ac1eaae5aa1f941a2f56eaf8fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f253492e5c1b3bf0c27448d59d754260e9e70912
+ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956798"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112066939"
 ---
-# <a name="work-with-solutions-and-projects"></a>使用解決方案與專案
+# <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>建立、使用及刪除 Visual Studio 專案和方案
+
+在本文中，您將瞭解如何從頭開始建立和使用 Visual Studio 專案，以儲存您需要用來建立應用程式的構件。  如果您不熟悉 Visual Studio 中的專案，請參閱此 [專案和方案](solutions-and-projects-in-visual-studio.md)的總覽。  若要瞭解如何從範本快速建立專案，請參閱 [從範本建立專案](create-new-project.md)。
 
 「專案」用以保存在 Visual Studio 中建置您應用程式所需的項目，例如原始程式碼檔、點陣圖、圖示，以及元件和服務參考。 當您建立新的專案時，Visual Studio 會建立一個包含該專案的「解決方案」。 接著可以視需要將新的或現有專案新增至解決方案。 解決方案也可以包含未連線至任何特定專案的檔案。
 
