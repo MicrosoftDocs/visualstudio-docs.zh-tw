@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2958b45fc64383fde7d762d4c20887b3f58669d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 294877e4884ae7b89f1e9d6f015c5c9213eba52d
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878392"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254819"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
 
@@ -44,9 +44,19 @@ ms.locfileid: "99878392"
 </Target>
 ```
 
- 如果 `AfterBuild` 執行，它只會顯示「第二次發生」，因為的第二個定義會 `AfterBuild` 隱藏第一個。
+如果 `AfterBuild` 執行，它只會顯示「第二次發生」，因為的第二個定義會 `AfterBuild` 隱藏第一個。
 
- MSBuild 需相依於匯入順序，且目標的最後一個定義將會是系統所使用的定義。
+MSBuild 需相依於匯入順序，且目標的最後一個定義將會是系統所使用的定義。 如果您嘗試重新定義目標，則在稍後定義內建目標時，將不會生效。 在使用 SDK 的專案中，定義的順序並不一定很明顯，因為目標的匯入會在專案檔結尾之後隱含加入。
+
+因此，若要擴充現有目標的行為，請建立新的目標，並指定 `BeforeTargets` (或 `AfterTargets` 適當的) ，如下所示：
+
+```xml
+<Target Name="MessageBeforePublish" BeforeTargets="BeforePublish">
+  <Message Text="BeforePublish" Importance="high" />
+</Target>
+```
+
+為您的目標提供描述性名稱，如同您在程式碼中命名函式一樣。
 
 ## <a name="target-build-order"></a>目標組建順序
 
@@ -123,14 +133,12 @@ The main build entry point.
 
 ===================================================
 BeforeBuild
-Redefine this target in your project in order to run tasks just before Build
 ===================================================
 <Target Name="BeforeBuild"/>
 
 
 ===================================================
 AfterBuild
-Redefine this target in your project in order to run tasks just after Build
 ===================================================
 <Target Name="AfterBuild"/>
 
@@ -155,21 +163,18 @@ Delete all intermediate and final build outputs, and then build the project from
 
 ===================================================
 BeforeRebuild
-Redefine this target in your project in order to run tasks just before Rebuild
 ===================================================
 <Target Name="BeforeRebuild"/>
 
 
 ===================================================
 AfterRebuild
-Redefine this target in your project in order to run tasks just after Rebuild
 ===================================================
 <Target Name="AfterRebuild"/>
 
 
 ===================================================
 BuildGenerateSources
-Redefine this target in your project in order to run tasks for BuildGenerateSources
 Set BuildPassReferences to enable P2P builds
 ===================================================
 <Target Name="BuildGenerateSources"
@@ -178,7 +183,6 @@ Set BuildPassReferences to enable P2P builds
 
 ===================================================
 BuildCompile
-Redefine this target in your project in order to run tasks for BuildCompile
 ===================================================
 <Target Name="BuildCompile"
         DependsOnTargets="BuildCompileTraverse;$(BuildCompileAction)" />
@@ -186,7 +190,6 @@ Redefine this target in your project in order to run tasks for BuildCompile
 
 ===================================================
 BuildLink
-Redefine this target in your project in order to run tasks for BuildLink
 ===================================================
 <Target Name="BuildLink"
         DependsOnTargets="BuildLinkTraverse;$(BuildLinkAction)" />
@@ -302,14 +305,12 @@ ResolveReferences
 
 ===================================================
 BeforeResolveReferences
-Redefine this target in your project in order to run tasks just before ResolveReferences
 ===================================================
 <Target Name="BeforeResolveReferences"/>
 
 
 ===================================================
 AfterResolveReferences
-Redefine this target in your project in order to run tasks just after ResolveReferences
 ===================================================
 <Target Name="AfterResolveReferences"/>
 
@@ -570,14 +571,12 @@ Run GenerateResource on the given resx files.
 
 ===================================================
 BeforeResGen
-Redefine this target in your project in order to run tasks just before Resgen.
 ===================================================
 <Target Name="BeforeResGen"/>
 
 
 ===================================================
 AfterResGen
-Redefine this target in your project in order to run tasks just after Resgen.
 ===================================================
 <Target Name="AfterResGen"/>
 
@@ -624,14 +623,12 @@ Emit any specified code fragments into a temporary source file for the compiler.
 
 ===================================================
 BeforeCompile
-Redefine this target in your project in order to run tasks just before Compile.
 ===================================================
 <Target Name="BeforeCompile"/>
 
 
 ===================================================
 AfterCompile
-Redefine this target in your project in order to run tasks just after Compile.
 ===================================================
 <Target Name="AfterCompile"/>
 
@@ -802,14 +799,12 @@ Delete all intermediate and final build outputs.
 
 ===================================================
 BeforeClean
-Redefine this target in your project in order to run tasks just before Clean.
 ===================================================
 <Target Name="BeforeClean"/>
 
 
 ===================================================
 AfterClean
-Redefine this target in your project in order to run tasks just after Clean.
 ===================================================
 <Target Name="AfterClean"/>
 
@@ -875,14 +870,12 @@ by the BuildManager.
 
 ===================================================
 BeforePublish
-Redefine this target in your project in order to run tasks just before Publish.
 ===================================================
 <Target Name="BeforePublish"/>
 
 
 ===================================================
 AfterPublish
-Redefine this target in your project in order to run tasks just after Publish.
 ===================================================
 <Target Name="AfterPublish"/>
 

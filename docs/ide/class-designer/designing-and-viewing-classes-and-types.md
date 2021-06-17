@@ -19,16 +19,19 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 236efe20ee652e2690cedf36843d539bf8a9cc46
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85921343ac52c066735d607ce32635e953cf2e6a
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850291"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254781"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>使用類別設計工具設計及檢視類別和類型
 
 使用 Visual Studio 中的 **類別設計工具** 來設計、視覺化及重構程式碼中的類別和其他類型。 您可以使用類別圖表來建立和編輯 C#、Visual Basic 或 C++ 專案中的類別。 也可以使用類別圖表來進一步了解您的專案結構，或重新組織您的程式碼。
+
+>[!NOTE]
+>類別設計工具尚無法於 .NET Core 專案中使用。
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>您可以使用類別圖表來執行的工作
 

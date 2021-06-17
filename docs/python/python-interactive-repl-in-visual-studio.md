@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f34ee9e852c1210425407f80788aa1b9d5c33c1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21115673a41e26b2f1685442d2ed0ad93a147990
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912286"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254884"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 互動式視窗
 
@@ -25,7 +25,7 @@ Visual Studio 為您的每個 Python 環境提供互動式「讀取、求值、�
 
 Visual Studio 有多個 Python REPL 模式可供選擇：
 
-| REPL | Description | 編輯中 | 偵錯 | 映像 |
+| REPL | 描述 | 編輯中 | 偵錯 | 映像 |
 | --- | --- | --- | --- | --- |
 | 標準 | 預設的 REPL，直接與 Python 交談 | 標準編輯 (多行等)。 | 是，透過 `$attach` | 否 |
 | 偵錯 | 預設的 REPL，與已完成偵錯的 Python 程序交談 | 標準編輯 | 僅偵錯 | 否 |
@@ -73,7 +73,9 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 
 <a name="meta-commands"></a>**互動式** 視窗也支援數個中繼命令。 所有中繼命令的開頭都是 `$`，而且您可以輸入 `$help` 來取得中繼命令清單，並輸入 `$help <command>` 來取得特定命令的詳細使用方式。
 
-| 中繼命令 | Description |
+:::moniker range="<=vs-2017"
+
+| 中繼命令 | 描述 |
 | --- | --- |
 | `$$` | 插入註解，這對於在工作階段期間為程式碼做出註解非常有用。 |
 | `$attach` | 將 Visual Studio 偵錯工具附加至 REPL 視窗程序以啟用偵錯。 |
@@ -83,6 +85,22 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 | `$mod` | 將目前的範圍切換到指定的模組名稱。 |
 | `$reset` | 將執行環境重設為初始狀態，但保留記錄。 |
 | `$wait` | 至少等候指定的毫秒數。 |
+
+:::moniker-end
+
+:::moniker range=">=vs-2019"
+
+| 中繼命令 | 描述 |
+| --- | --- |
+| `$$` | 插入註解，這對於在工作階段期間為程式碼做出註解非常有用。 |
+| `$cls`, `$clear` | 清除編輯視窗的內容，但不變更記錄和執行內容。 |
+| `$help` | 顯示命令清單，或特定命令的說明。 |
+| `$load` | 從檔案載入命令並執行，直到完成為止。 |
+| `$mod` | 將目前的範圍切換到指定的模組名稱。 |
+| `$reset` | 將執行環境重設為初始狀態，但保留記錄。 |
+| `$wait` | 至少等候指定的毫秒數。 |
+
+:::moniker-end
 
 命令也是可由 Visual Studio 延伸模組擴充，方法是實作及匯出 `IInteractiveWindowCommand` ([範例](https://github.com/Microsoft/PTVS/blob/master/Python/Product/PythonTools/PythonTools/Repl/InteractiveWindowCommands.cs#L85))。
 

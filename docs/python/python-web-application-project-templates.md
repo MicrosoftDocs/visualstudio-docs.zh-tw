@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a309ba898c22836fb5c0cebfc390b6c8d7c116c5
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 6553017034dc46cfd1c035564a83dde89d77d057
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104805987"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254845"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 
@@ -31,7 +31,17 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 ![Web 應用程式的 [新專案] 對話方塊](media/projects-new-project-dialog-web.png)
 
+::: moniker range="<=vs-2017"
+
 先前提及的一般 [Web 專案] 範本只提供空白 Visual Studio 專案，而且除了作為 Python 專案之外，不會包含任何程式碼和假設。 如需 [Azure 雲端服務] 範本的詳細資料，請參閱[適用於 Python 的 Azure 雲端服務專案](python-azure-cloud-service-project-template.md)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+先前提及的一般 [Web 專案] 範本只提供空白 Visual Studio 專案，而且除了作為 Python 專案之外，不會包含任何程式碼和假設。
+
+::: moniker-end
 
 所有其他的專案都是以 Bottle、Flask 或 Django Web 架構為基礎，且分為三個一般群組，如以下小節所述。 由這些範本之一所建立的應用程式，都會包含在本機對應用程式進行執行與偵錯的必要程式碼。 每一個範本也都會提供必要的 [WSGI 應用程式物件](https://www.python.org/dev/peps/pep-3333/) (python.org)，以便搭配生產網頁伺服器使用。
 
@@ -79,7 +89,11 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 部署至 Microsoft Azure App Service 時，請選取 Python 的版本作為[網站延伸模組](./managing-python-on-azure-app-service.md?view=vs-2019&preserve-view=true)，並手動安裝套件。 此外，由於從 Visual Studio 部署時，Azure App Service **不會** 自動從 *requirements.txt* 檔案安裝套件，請依照 [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md) 上的設定詳細資料進行。
 
+::: moniker range="<=vs-2017"
+
 Microsoft Azure 雲端服務「確實」支援 *requirements.txt* 檔案。 如需詳細資料，請參閱 [Azure 雲端服務專案](python-azure-cloud-service-project-template.md)。
+
+::: moniker-end
 
 ## <a name="debugging"></a>偵錯
 
@@ -115,7 +129,7 @@ Microsoft Azure 雲端服務「確實」支援 *requirements.txt* 檔案。 如�
 
 - [偵錯伺服器命令] 群組：
   - **命令**： `bottle` (模組) 
-  - **引數** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **引數**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 使用 Visual Studio 進行偵錯時，不建議使用 `--reload` 選項。
 
@@ -124,7 +138,7 @@ Microsoft Azure 雲端服務「確實」支援 *requirements.txt* 檔案。 如�
 Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 一旦建立應用程式之後，就可以使用 [ [**從現有的 Python 程式碼**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) ] 範本匯入該應用程式。 這麼做之後，請選取 [一般 Web 專案] 自訂項目來設定選項。 這些設定會假設 Pyramid 已經安裝到位於 `..\env` 的虛擬環境。
 
 - [偵錯] 群組：
-  - **伺服器埠**： 6543 (或 *.ini* 檔案中設定的任何內容) 
+  - **伺服器埠**： 6543 (或 *.ini* 檔案中設定的內容) 
 
 - [執行伺服器命令] 群組：
   - 命令：`..\env\scripts\pserve-script.py` (指令碼)
@@ -141,11 +155,15 @@ Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 一
 
 如果您有另一個架構的設定想要共用，或是想要求另一個架構的設定，請在 [GitHub 上提出問題](https://github.com/Microsoft/PTVS/issues)。
 
+::: moniker range="<=vs-2017"
+
 ## <a name="convert-a-project-to-azure-cloud-service"></a>將專案轉換成 Azure 雲端服務
 
 [ **轉換成 Microsoft Azure 雲端服務專案** ] 命令 (下圖) 將雲端服務專案新增至您的方案。 此專案包括要使用之虛擬機器和服務的部署設定及組態。 使用雲端專案上的 [發行] 命令以部署至雲端服務；Python 專案上的 [發行] 命令仍然會部署至網站。 如需詳細資訊，請參閱 [Azure 雲端服務專案](python-azure-cloud-service-project-template.md)。
 
 ![[轉換為 Microsoft Azure 雲端服務專案] 命令](media/template-web-convert-menu.png)
+
+::: moniker-end
 
 ## <a name="see-also"></a>另請參閱
 

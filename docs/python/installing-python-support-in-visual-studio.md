@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0c1cf29c7579978d5992de46b14c01fee0799c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 09fb452d579130cdf6597ada3af509b35f24ff43
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881642"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254806"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安裝 Python 支援
 
@@ -71,7 +71,7 @@ ms.locfileid: "99881642"
     ::: moniker-end
 
     ::: moniker range="<=vs-2017"
-    | 選項 | Description |
+    | 選項 | 描述 |
     | --- | --- |
     | Python 散發 | 選擇任何可用選項的組合，例如您計劃使用的 Python 2、Python 3、Miniconda、Anaconda2 和 Anaconda3 散發的任何 32 位元和 64 位元變異組合。 每個都包含散發的解譯器、執行階段和程式庫。 具體而言，Anaconda 是包含各種預先安裝套件的開放型資料科學平台。  (您隨時都可返回 Visual Studio 安裝程式來新增或移除散發套件。 )  **注意**：如果您已在 Visual Studio 安裝程式之外安裝發佈，就不需要在此檢查對應的選項。 Visual Studio 會自動偵測現有的 Python 安裝。 請參閱 [Python 環境視窗](managing-python-environments-in-visual-studio.md#the-python-environments-window)。 此外，如果已提供比安裝程式中所示還要新的 Python 版本，您可以另外安裝該版本，而且 Visual Studio 將會偵測到該版本。 |
     | **Cookiecutter 範本支援** | 安裝 Cookiecutter 圖形化 UI 來探索範本、輸入範本選項，以及建立專案和檔案。 請參閱[使用 Cookiecutter 延伸模組](using-python-cookiecutter-templates.md)。 |
@@ -82,13 +82,12 @@ ms.locfileid: "99881642"
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
-    | 選項 | Description |
+    | 選項 | 描述 |
     | --- | --- |
     | Python 散發 | 選擇任何可用選項的組合，例如您計劃使用的 Python 2、Python 3、Miniconda、Anaconda2 和 Anaconda3 散發的任何 32 位元和 64 位元變異組合。 每個都包含散發的解譯器、執行階段和程式庫。 具體而言，Anaconda 是包含各種預先安裝套件的開放型資料科學平台。  (您隨時都可返回 Visual Studio 安裝程式來新增或移除散發套件。 )  **注意**：如果您已在 Visual Studio 安裝程式之外安裝發佈，就不需要在此檢查對應的選項。 Visual Studio 會自動偵測現有的 Python 安裝。 請參閱 [Python 環境視窗](managing-python-environments-in-visual-studio.md#the-python-environments-window)。 此外，如果已提供比安裝程式中所示還要新的 Python 版本，您可以另外安裝該版本，而且 Visual Studio 將會偵測到該版本。 |
     | **Cookiecutter 範本支援** | 安裝 Cookiecutter 圖形化 UI 來探索範本、輸入範本選項，以及建立專案和檔案。 請參閱[使用 Cookiecutter 延伸模組](using-python-cookiecutter-templates.md)。 |
     | **Python Web 支援** | 安裝進行 Web 開發的工具 (包含 HTML、CSS 和 JavaScript 編輯支援)，以及使用 Bottle、Flask 和 Django 架構之專案的範本。 請參閱 [Python Web 專案範本](python-web-application-project-templates.md)。 |
     | **Python 原生開發工具** | 安裝 C++ 編譯器和其他必要元件，以開發 Python 的原生延伸模組。 請參閱[建立適用於 Python 的 C++ 延伸模組](working-with-c-cpp-python-in-visual-studio.md)。 同時也請安裝 [使用 C++ 的桌面開發] 工作負載，以取得完整的 C++ 支援。 |
-    | **Azure 雲端服務核心工具** | 提供 Python 中 Azure Cloud Services 之開發人員的其他支援。 請參閱 [Azure 雲端服務專案](python-azure-cloud-service-project-template.md)。 |
     ::: moniker-end
 
 1. 安裝之後，安裝程式會提供選項來修改、啟動、修復或解除安裝 Visual Studio。 任何已安裝元件有 Visual Studio 的更新時，[修改] 按鈕會變更為 [更新]。  ([ **修改** ] 選項接著就會出現在下拉式功能表中 ) 。您也可以從 Windows [ **開始** ] 功能表中搜尋「Visual Studio」來啟動 Visual Studio 和安裝程式。

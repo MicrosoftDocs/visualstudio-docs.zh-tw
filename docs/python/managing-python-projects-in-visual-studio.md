@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 09203557fd9adcd6580dfafa981d6ed4f80eca16
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9a20ea3baee84657e26e2d98bb5726c20ceba9e
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936453"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254897"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 專案
 
@@ -73,7 +73,9 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 
 ![含有 Python 範本的 [新增專案] 對話方塊](media/projects-new-project-dialog.png)
 
-下表摘要說明 Visual Studio 2017 和更新版本中可用的範本 (並非所有範本在所有舊版中都有提供)：
+::: moniker range="<=vs-2017"
+
+下表摘要說明 Visual Studio 2017 中可用的範本 (並非所有範本在所有舊版中都有提供)：
 
 | 範本 | 描述 |
 | --- | --- |
@@ -87,6 +89,24 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 | **IronPython Windows Forms 應用程式** | 一種使用 IronPython 的專案結構，其中是使用程式碼搭配 Windows Forms 來建立 UI。 應用程式會在不顯示主控台的情況下執行。 |
 | **背景應用程式 (IoT)** | 支援將 Python 專案部署成在裝置上以背景服務的形式執行。 如需詳細資訊，請瀏覽 [Windows IoT 開發人員中心](https://dev.windows.com/en-us/iot)。 |
 | **Python 延伸模組** | 如果您已在 Visual Studio 2017 或更新版本中安裝 **Python 原生開發工具** 與 Python 工作負載 (請參閱 [安裝](installing-python-support-in-visual-studio.md))，此範本會出現在 Visual C++ 下。 它提供的 C++ 延伸模組 DLL 的核心結構，類似於[建立適用於 Python 的 C++ 延伸模組](working-with-c-cpp-python-in-visual-studio.md)中所述。 |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+下表摘要說明 Visual Studio 2019 中的可用範本， (並非所有舊版) 都可使用所有範本：
+
+| 範本 | 描述 |
+| --- | --- |
+| [**從現有 Python 程式碼**](#create-project-from-existing-files) | 從資料夾結構中的現有 Python 程式碼建立 Visual Studio 專案。  |
+| **Python 應用程式** | 具有單一空白原始程式檔的新 Python 應用程式基本專案結構。 根據預設，專案會在預設全域環境的主控台解譯器中執行，您可以透過[指派不同的環境](selecting-a-python-environment-for-a-project.md)來變更此環境。 |
+| [**Web 專案**](python-web-application-project-templates.md) | 針對以各種不同的架構 (包括 Bottle、Django 和 Flask) 為基礎的 Web 應用程式專案。 |
+| **IronPython 應用程式** | 與「Python 應用程式」範本類似，但預設使用 IronPython，可藉由 .NET 語言啟用 .NET 互通性及混合模式偵錯。 |
+| **IronPython WPF 應用程式** | 一種針對應用程式的使用者介面使用 IronPython 搭配 Windows Presentation Foundation XAML 檔案的專案結構。 Visual Studio 會提供 XAML UI 設計工具、程式碼後置可以用 Python 來撰寫，應用程式則會在不顯示主控台的情況下執行。 |
+| **IronPython Silverlight 網頁** | 一種使用 Silverlight 在瀏覽器中執行的 IronPython 專案。 應用程式的 Python 程式碼會以指令碼的形式包含在網頁中。 重複使用指令碼標記會向下拖曳出一些 JavaScript 程式碼，這些程式碼會將在 Silverlight 內部執行的 IronPython 初始化，而您的 Python 程式碼便可從中與 DOM 互動。 |
+| **IronPython Windows Forms 應用程式** | 一種使用 IronPython 的專案結構，其中是使用程式碼搭配 Windows Forms 來建立 UI。 應用程式會在不顯示主控台的情況下執行。 |
+| **背景應用程式 (IoT)** | 支援將 Python 專案部署成在裝置上以背景服務的形式執行。 如需詳細資訊，請瀏覽 [Windows IoT 開發人員中心](https://dev.windows.com/en-us/iot)。 |
+| **Python 延伸模組** | 如果您已在 Visual Studio 2017 或更新版本中安裝 **Python 原生開發工具** 與 Python 工作負載 (請參閱 [安裝](installing-python-support-in-visual-studio.md))，此範本會出現在 Visual C++ 下。 它提供的 C++ 延伸模組 DLL 的核心結構，類似於[建立適用於 Python 的 C++ 延伸模組](working-with-c-cpp-python-in-visual-studio.md)中所述。 |
+::: moniker-end
 
 > [!Note]
 > 因為 Python 是解譯式語言，所以 Visual Studio 中的 Python 專案不會產生其他編譯式語言專案 (例如 C#) 所產生的獨立式可執行檔。 如需詳細資訊，請參閱[問與答](overview-of-python-tools-for-visual-studio.md#questions-and-answers)。

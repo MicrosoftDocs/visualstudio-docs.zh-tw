@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: efd75e79d7c015539dfe045f7b0a3b266cfb4756
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26bcf0fa4d56d4e8df100a0d3e65904d065d8757
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923750"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254871"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中建立及管理 Python 環境
 
@@ -151,7 +151,7 @@ Conda 環境是使用 `conda` 工具建立的環境，或在 Visual Studio 2017 
 
 ::: moniker range=">=vs-2019"
 
-1. 在 [Python 環境] 視窗 (或從 Python 工具列) 中選取 [+ 新增環境]，這會開啟 [新增環境] 對話方塊。 在該對話方塊中，選取 [Conda 環境] 索引標籤：
+1. 在 [ **Python 環境**] 視窗中選取 [**新增環境 ...** ] (或從 python 工具列) 開啟 [**新增環境**] 對話方塊。 在該對話方塊中，選取 [Conda 環境] 索引標籤：
 
     ![[新增環境] 對話方塊中的 [Conda 環境] 索引標籤](media/environments/environments-conda-1-2019.png)
 
@@ -160,7 +160,7 @@ Conda 環境是使用 `conda` 工具建立的環境，或在 Visual Studio 2017 
     | 欄位 | 描述 |
     | --- | --- |
     | Project | 要在其中建立環境的專案 (如果您在相同的 Visual Studio 解決方案中有多個專案)。 |
-    | 名稱 | Conda 環境的名稱。 |
+    | Name | Conda 環境的名稱。 |
     | 新增套件自 | 如果您有描述相依性的 *environment.yml* 檔案，請選擇 [環境檔案]，或選擇 **一或多個 Anaconda 套件名稱**，並在下方欄位中至少列出一個 Python 封裝或 Python 版本。 套件清單會指示 conda 建立 Python 環境。 若要安裝最新版的 Python，請使用 `python`；若要安裝特定版本，請使用 `python=,major>.<minor>` (就像在 `python=3.7` 中那樣)。 您也可以使用套件按鈕從一系列的功能表中選取 Python 版本和通用套件。 |
     | 設定為目前環境 | 建立環境之後，在所選取的專案中啟動新環境。 |
     | 將新專案設為預設環境 | 在 Visual Studio 中建立的任何新專案中，自動設定並啟動 conda 環境。 此選項和使用 [Python 環境] 視窗中的 [將此設定為新專案的預設環境] 是一樣的。 |
@@ -231,7 +231,7 @@ Visual Studio 2017 15.7 版和更新版本會自動偵測 Conda 環境，並在 
 
 ::: moniker range=">=vs-2019"
 
-1. 在 [Python 環境] 視窗 (或從 Python 工具列) 中選取 [+ 新增環境]，這會開啟 [新增環境] 對話方塊。 在該對話方塊中，選取 [現有環境] 索引標籤：
+1. 在 [ **Python 環境**] 視窗中選取 [**新增環境 ...** ] (或從 python 工具列) 開啟 [**新增環境**] 對話方塊。 在該對話方塊中，選取 [現有環境] 索引標籤：
 
     ![[新增環境] 對話方塊中的 [現有環境] 索引標籤](media/environments/environments-custom-1-2019.png)
 

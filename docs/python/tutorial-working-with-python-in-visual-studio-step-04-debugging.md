@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a66268d5d6bd200eb3ef0e2c8bcf53471e3a735f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13080f69de9a8bfc6b1da35a7126f1f0c89a64c7
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839159"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254858"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>步驟 4：在偵錯工具中執行程式碼
 
@@ -50,6 +50,8 @@ ms.locfileid: "99839159"
     > 若要在程式完成時自動關閉 [輸出] 視窗，請選取 [**工具**  >  **選項**] 功能表命令，展開 [ **Python** ] 節點，選取 [**調試** 程式]，然後清除 [**進程正常結束時等候輸入**] 選項：
     >
     > ![Python 偵錯選項，可在正常的程式結束下關閉輸出視窗](media/vs-getting-started-python-22-debugging5.png)
+    >
+    > 如需有關偵錯工具的詳細資訊，包括如何設定腳本和解譯器引數的詳細資訊，請參閱 [Debug Python 程式碼](debugging-python-in-visual-studio.md)。
 
 1. 在語句上設定中斷點 `for` ，方法是按一下該行的灰色邊界中的一次，或將插入點放在該行，並使用 **Debug**  >  **切換中斷點** 命令 (**F9**) 。 灰色邊界會出現紅點，以指出中斷點 (如下方箭號所註)：
 
@@ -68,7 +70,7 @@ ms.locfileid: "99839159"
     - **中斷所有** (**Ctrl** + **Alt** + **break**) 會暫停長時間執行的程式。
     - **停止調試** 程式 (**Shift** + **F5**) 在程式的任何位置停止程式，並結束偵錯工具。
     - **重新開機** (**Ctrl** + **Shift** + **F5**) 停止程式的任何位置，並從偵錯工具開始重新開機它。
-    - [顯示下一個陳述式] (**Alt**+**Num** **&#42;**) 會切換至下一行要執行的程式碼。 如果您在偵錯工作階段期間巡覽程式碼，而且想要快速回到偵錯工具的暫停點，則這極有幫助。
+    - **顯示下一個語句** (**Alt** + **Num** **&#42;**) 切換到下一行要執行的程式碼。 如果您在偵錯工作階段期間巡覽程式碼，而且想要快速回到偵錯工具的暫停點，則這極有幫助。
     - **逐步** 執行 (**F11**) 會執行下一行程式碼，並進入呼叫的函式。
     - [不進入函式] (**F10**) **會執行下** 一行程式碼，而不需要輸入呼叫的函式。
     - **跳出** (**Shift** + **F11**) 會執行目前函式的其餘部分，並在呼叫程式碼中暫停。
