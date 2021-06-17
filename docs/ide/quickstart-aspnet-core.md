@@ -1,7 +1,7 @@
 ---
 title: 以 C# 建立 ASP.NET Core Web 應用程式
 description: 了解如何在 Visual Studio 中使用 C# 與 ASP.NET Core 逐步建立簡單的 Hello World Web 應用程式。
-ms.custom: mvc,seodec18
+ms.custom: acquisition, mvc,seodec18
 ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d4f36ac4199d082b6ab0eae3154307bd8f4f7487
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: b361446bb128fcc01ac9a33f3a367b7e60a050c4
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296933"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113243"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
@@ -53,7 +53,7 @@ ms.locfileid: "107296933"
 
 1. 開啟 Visual Studio 2017。
 
-1. 從頂端功能表列中，選擇 [檔案]**[新增]** > **[專案]** > 。
+1. 從頂端功能表列中 **，選擇 [** 檔案 > **新增** > **專案**]。
 
 1. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [ASP.NET Core Web 應用程式]。 <br/><br/>接著，將您的檔案命名為 `HelloWorld` 並選擇 [確定]。
 
@@ -210,7 +210,7 @@ Visual Studio 隨即開啟您的專案檔。
 
 ::: moniker-end
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 若要深入了解，請繼續下列教學課程：
 

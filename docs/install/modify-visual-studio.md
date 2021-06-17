@@ -4,7 +4,7 @@ titleSuffix: ''
 description: 了解如何逐步修改 Visual Studio。
 ms.date: 10/12/2020
 ms.topic: how-to
-ms.custom: contperf-fy21q2
+ms.custom: acquisition
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 30b28af562e5dbaa8c05624f6cc9d531cf652419
-ms.sourcegitcommit: 8d3d51042261df603487169a7a008fe8f71404ec
+ms.openlocfilehash: 3f4040023dd023db351571482ac2a17c18b46e06
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109501768"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112927"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>修改 Visual Studio 工作負載、元件和語言套件
 
@@ -39,7 +39,7 @@ ms.locfileid: "109501768"
 
 ::: moniker-end
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 + 若要安裝、更新或修改 Visual Studio，您必須以具有系統管理權限的帳戶登入。 如需詳細資訊，請參閱 [使用者權限和 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
 

@@ -1,7 +1,7 @@
 ---
 title: 快速入門： Visual Studio IDE 導覽
 description: 瞭解 Visual Studio 整合式開發環境 (IDE) 的部分視窗、功能表和其他 UI 功能。
-ms.custom: SEO-VS-2020
+ms.custom: acquisition
 titleSuffix: ''
 ms.date: 03/02/2021
 ms.topic: quickstart
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 237b3384d6bec010a760c4bc193b9a95f33febeb
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 1f10c3fcca5d87f8371d1373314406cf4aa47ec3
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683986"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113226"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio IDE 初探
 
@@ -91,13 +91,13 @@ ms.locfileid: "101683986"
 
 1. 在上方的搜尋方塊中，輸入 **console**，從專案類型清單中篩選出名稱包含 "console" 的專案類型。 從 [**所有語言**] 下拉式清單中挑選 **c #** (或您) 選擇的另一種語言，進一步精簡搜尋結果。
 
-    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Visual Studio 2019 中 [建立新專案] 視窗的螢幕擷取畫面，您可以在其中選取所需的範本。":::
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="在 Visual Studio 2019 的 [建立新專案] 視窗的螢幕擷取畫面，您可以在其中選取所需的範本。":::
 
 1. 如果您選取 c #、Visual Basic 或 F # 作為您的語言，請選取 [ **主控台應用程式** ] 範本，然後選擇 [ **下一步]**。 (如果您選取不同的語言，只需挑選任意範本。 我們稍後要介紹的 UI 在所有程式設計語言中都很類似)。
 
 1. 在 [ **設定您的新專案** ] 視窗中，接受預設的 [專案名稱] 和 [位置]，然後選擇 **[下一步**]。
 
-    :::image type="content" source="media/vs-2019/configure-new-project-console.png" alt-text="Visual Studio 2019 中 [設定新專案] 視窗的螢幕擷取畫面，您可以在其中輸入專案的名稱。":::
+    :::image type="content" source="media/vs-2019/configure-new-project-console.png" alt-text="在 Visual Studio 2019 的 [設定新專案] 視窗的螢幕擷取畫面，您可以在其中輸入專案的名稱。":::
 
 1. 在 [**其他資訊**] 視窗中，確認 [**目標 Framework** ] 下拉式功能表中出現 **.net Core 3.1** ，然後按一下 [**建立**]。
 
@@ -111,7 +111,7 @@ ms.locfileid: "101683986"
 
 ## <a name="solution-explorer"></a>方案總管
 
-[方案總管] 一般位在 Visual Studio 右側，並示範以圖形呈現專案、方案或程式碼資料夾中的檔案和資料夾階層。 您可以流覽階層，並流覽至 **方案 Explorer** 中的檔案。
+[方案總管] 一般位在 Visual Studio 右側，並示範以圖形呈現專案、方案或程式碼資料夾中的檔案和資料夾階層。 您可以流覽階層，並流覽至 **方案總管** 中的檔案。
 
 ![Visual Studio 中的 [方案總管]](media/quickstart-IDE-solution-explorer.png)
 
@@ -199,7 +199,7 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 
 ::: moniker-end
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 我們已經介紹 Visual Studio 的幾個功能，藉以熟悉使用者介面。 若要進一步探索：
 

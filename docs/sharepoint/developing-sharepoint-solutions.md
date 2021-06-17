@@ -17,24 +17,27 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2f085f5679db2c5c4a1e3cf0cc8d7bbf7cad58eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f839f4148054b4e10a7fc1703aa8f03549bdbf36
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948826"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112901"
 ---
 # <a name="develop-sharepoint-solutions"></a>開發 SharePoint 方案
+
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供數個 SharePoint 專案類型範本，以用來建立 SharePoint 網站和網站元素。 如需可用專案類型的清單，請參閱 [SharePoint 專案和專案專案範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是 SharePoint 專案的元素和屬性描述。
 
- 如需 SharePoint 2013 與 SharePoint 增益集的相關資訊，請參閱 [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) 與 [建置 SharePoint 增益集](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
+ 如需 SharePoint 增益集的相關資訊，請參閱 [建立 sharepoint 增益集](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
 
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint 專案的元素
+
  SharePoint 專案下方的節點稱為 *「SharePoint 項目」*(SharePoint item)。 SharePoint 項目也可能會包含一個以上的子檔案，稱為 *「SharePoint 項目檔案」*(SharePoint item file)，例如 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 組態檔、.aspx 表單等等。
 
  若不使用已填入專案項目檔案的專案範本來建立專案，您可以使用 [空專案]  範本來建立空白的 SharePoint 專案，然後手動加入專案項目。 SharePoint 專案也可以選擇性地包含一或多個功能檔案 (用於在 SharePoint 中啟用) 和用來散發專案的套件檔案。
 
 ### <a name="special-nodes"></a>特殊節點
+
  每個 SharePoint 專案皆包含兩個節點，您無法重新命名、刪除、剪下、複製或從專案拖曳這兩個節點。 以下為這兩個節點：
 
 - 功能
@@ -43,6 +46,7 @@ ms.locfileid: "99948826"
   即使專案沒有定義任何功能或套件，這兩個節點仍會出現在所有 SharePoint 專案中。
 
 #### <a name="features-node"></a>功能節點
+
  [功能]  節點包含一或多個 SharePoint 專案功能。 每種功能都是 SharePoint 擴充功能的容器。 將功能部署至 SharePoint 伺服器之後，它可以包含在網站定義中或由 SharePoint 網站上的 SharePoint 系統管理員個別啟用。 如需詳細資訊，請參閱 [使用功能](/previous-versions/office/developer/sharepoint-2010/ms460318(v=office.14))。
 
  當您將內容類型或清單執行個體這類項目加入 SharePoint 專案時，會將其加入 [功能]  節點中的一項功能。 而項目範圍可決定要將它加入新的或現有的功能。 如果新項目和現有功能具有相同的範圍，就會將其加入該功能。 若否，就會將該項目加入新的功能。
@@ -52,11 +56,13 @@ ms.locfileid: "99948826"
  將功能加入 SharePoint 專案時，它會顯示為 [方案總管]  中的節點，並使用預設節點名稱：Feature *x*.feature，其中 *x* 是唯一的編號。 將功能部署至 SharePoint 伺服器之後，SharePoint 系統管理員可以啟動它，以讓 SharePoint 網站的使用者使用。
 
 #### <a name="package-node"></a>封裝節點
- [套件]  節點包含單一檔案，以做為 SharePoint 專案的散發機制。 這個檔案稱為「 *方案套件*」。以 CAB 為基礎。WSP 延伸模組。 方案套件是一種可部署並重複使用的檔案，其中包含套用至 SharePoint 網站而可個別啟用或停用的一組功能、網站定義和組件。 同樣地，[套件]  節點一定會包含名為 Package.wspdef 的檔案，其為套件的 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 定義檔。 將套件部署到執行 SharePoint 的伺服器之後，SharePoint 系統管理員即可加以安裝並啟用其功能。
+
+ [套件]  節點包含單一檔案，以做為 SharePoint 專案的散發機制。 這個檔案（也稱為 *方案套件*）是以 .CAB 為基礎。WSP 延伸模組。 方案套件是一種可部署並重複使用的檔案，其中包含套用至 SharePoint 網站而可個別啟用或停用的一組功能、網站定義和組件。 同樣地，[套件]  節點一定會包含名為 Package.wspdef 的檔案，其為套件的 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 定義檔。 將套件部署到執行 SharePoint 的伺服器之後，SharePoint 系統管理員即可加以安裝並啟用其功能。
 
  您可以按兩下套件節點或開啟其快捷方式功能表，然後選擇 [ **開啟**]，以在封裝設計工具中查看或變更封裝的內容。 如需詳細資訊，請參閱 [建立 SharePoint 方案套件](../sharepoint/creating-sharepoint-solution-packages.md)。
 
 ## <a name="sharepoint-project-and-project-item-properties"></a>SharePoint 專案和專案專案屬性
+
  SharePoint 專案就像其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 專案一樣，會在 [屬性] 視窗和 [屬性] 頁面中顯示相關屬性。 所顯示的屬性視所選取的節點而定。
 
  在 [方案總管] 中選取 SharePoint 專案、專案項目或專案項目檔案節點時，[屬性] 視窗或 [屬性] 頁面會顯示下列屬性：
@@ -131,6 +137,7 @@ ms.locfileid: "99948826"
 |[URL 選擇器對話方塊 &#40;Visual Studio 中的 SharePoint 開發&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|說明可用來在您的專案或本機 SharePoint 伺服器上新增資源路徑參考的對話方塊。|
 
 ## <a name="see-also"></a>另請參閱
+
 - [在 Visual Studio&#41;中開始 &#40;SharePoint 開發 ](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
 - [使用伺服器總管流覽 SharePoint 連接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)

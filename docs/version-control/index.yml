@@ -11,12 +11,12 @@ metadata:
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 50226243cc698391d79a52371262ec6202b45ad9
-  ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+  ms.openlocfilehash: 385457bbeb63054a5f72a5055c55dedfeb9f9b1c
+  ms.sourcegitcommit: 113b7df611583307d3965984233a33355d6b0318
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/11/2021
-  ms.locfileid: "109729222"
+  ms.lasthandoff: 06/16/2021
+  ms.locfileid: "112126511"
 landingContent:
 - title: 概觀
   linkLists:
@@ -24,6 +24,8 @@ landingContent:
     links:
     - text: Visual Studio 中的 Git 體驗
       url: git-with-visual-studio.md
+    - text: Git 設定和喜好設定
+      url: git-settings.md
   - linkListType: concept
     links:
     - text: Visual Studio 如何讓原始檔控制變得更容易

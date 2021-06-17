@@ -3,7 +3,7 @@ title: 更新 Visual Studio 2017
 titleSuffix: ''
 description: 瞭解如何將 Visual Studio 更新至最新版本的逐步解說。
 ms.date: 04/06/2021
-ms.custom: seodec18
+ms.custom: acquisition
 ms.topic: how-to
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - change [Visual Studio]
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02beb43dede8e38f290ff02febb3b84c53b90f9e
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 9244c9e234c56b058dbfe92a4ef6a10d8c9c702d
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547501"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113189"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>將 Visual Studio 更新至最新版本
 
@@ -74,7 +74,7 @@ ms.locfileid: "106547501"
 
 1. 儲存您的工作。
 
-1. 選擇 [說明]**[檢查更新]** > 。
+1. 選擇 **[說明**] > **以查看更新**。
 
      ![Visual Studio 15.6 版中的新 [說明] 功能表](media/vs-help-menu-check-for-updates.png "Visual Studio 15.6 版中的新 [說明] 功能表")
 
@@ -277,7 +277,7 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 方法如下：
 
-1. 在功能表列上選擇 [工具]**[選項]** > 。
+1. 在功能表列上，選擇 [ **工具** > **選項**]。
 
 2. 展開 [環境]，然後選擇 [產品更新]。
 

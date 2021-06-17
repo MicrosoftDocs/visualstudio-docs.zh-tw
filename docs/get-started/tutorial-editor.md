@@ -4,6 +4,7 @@ description: 瞭解如何在 Visual Studio 中使用程式碼編輯器將程式�
 ms.date: 11/30/2017
 ms.technology: vs-ide-general
 ms.custom:
+- acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -14,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f76eb5ba3ccab85a4cf6c8ca5ad4a8fa3e021f47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6cdbd70160da596648b24604634de337b7dae2f6
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951208"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113141"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
@@ -182,7 +183,7 @@ Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中
 
    出現的這兩個 `words` 已重新命名，以及程式碼註解中的 `words` 參考。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [了解專案與解決方案](../get-started/tutorial-projects-solutions.md)

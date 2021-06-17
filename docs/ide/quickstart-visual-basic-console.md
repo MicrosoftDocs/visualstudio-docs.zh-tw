@@ -1,7 +1,7 @@
 ---
 title: 使用 Visual Basic 建立您的第一個主控台應用程式
 description: 了解如何使用 Visual Basic 在 Visual Studio 中逐步建立簡單的 Hello World 主控台應用程式。
-ms.custom: seodec18
+ms.custom: acquisition, seodec18
 ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a103c672b6539f5893cf52a6e83acde6c87176d
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 5d963762772060296f38a9c9c1ebfce85fbf5f8e
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296634"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113143"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入門：使用 Visual Basic 在 Visual Studio 中建立第一個主控台應用程式
 
@@ -45,7 +45,7 @@ ms.locfileid: "107296634"
 
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列中，選擇 [檔案]**[新增]** > **[專案]** > 。
+2. 從頂端功能表列中 **，選擇 [** 檔案 > **新增** > **專案**]。
 
 3. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將專案命名為 *HelloWorld*。
 
@@ -140,7 +140,7 @@ ms.locfileid: "107296634"
 
    ![顯示 Hello World 的主控台視窗，並按任意鍵繼續](../ide/media/vb-console-hello-world-press-any-key.png)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 恭喜您完成此快速入門！ 我們希望您更了解 Visual Basic 和 Visual Studio IDE。 若要深入了解，請繼續下列教學課程。
 

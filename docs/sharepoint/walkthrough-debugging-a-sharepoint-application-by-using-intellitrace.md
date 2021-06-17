@@ -18,20 +18,20 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e2ce8bc2c493d59b8a06a64ff69838e828315bf2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf7fa6c7255e05c465d6c209db5e9581a49aee64
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952651"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112834"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>逐步解說：使用 IntelliTrace 來對 SharePoint 應用程式進行偵錯工具
 
 藉由使用 IntelliTrace，您可以更輕鬆地進行 SharePoint 方案的偵錯工具。 傳統的偵錯工具目前只提供解決方案的快照。 不過，您可以使用 IntelliTrace 來檢查您的解決方案中發生的過去事件以及它們發生的內容，然後流覽至程式碼。
 
- 本逐步解說將示範如何使用 Microsoft Monitoring Agent 來從已部署的應用程式收集 IntelliTrace 資料，以在 Visual Studio 中將 SharePoint 2010 或 SharePoint 2013 專案進行 debug 錯。 若要分析該資料，您必須使用 Visual Studio Enterprise。 此專案會併入功能接收器，在功能啟用時，會將工作新增至 [工作清單]，並將公告新增至 [公告] 清單。 停用此功能時，會將工作標示為已完成，並將第二個公告新增至公告清單中。 不過，此套裝程式含導致專案無法正確執行的邏輯錯誤。 藉由使用 IntelliTrace，您將會找出並更正錯誤。
+ 本逐步解說示範如何使用 Microsoft Monitoring Agent，從已部署的應用程式收集 IntelliTrace 資料，以在 Visual Studio 中將 SharePoint 專案進行 debug 錯。 若要分析該資料，您必須使用 Visual Studio Enterprise。 此專案會併入功能接收器，在功能啟用時，會將工作新增至 [工作清單]，並將公告新增至 [公告] 清單。 停用此功能時，會將工作標示為已完成，並將第二個公告新增至公告清單中。 不過，此套裝程式含導致專案無法正確執行的邏輯錯誤。 藉由使用 IntelliTrace，您將會找出並更正錯誤。
 
- **適用于：** 本主題中的資訊適用于在 Visual Studio 中建立的 SharePoint 2010 和 SharePoint 2013 方案。
+ **適用于：** 本主題中的資訊適用于在 Visual Studio 中建立的 SharePoint 方案。
 
  本逐步解說將說明下列工作：
 
@@ -59,7 +59,7 @@ ms.locfileid: "99952651"
 
 首先，您要建立一個具有功能接收器的空白 SharePoint 專案。
 
-1. 建立 SharePoint 2010 或 SharePoint 2013 方案專案，並將它命名為 **IntelliTraceTest**。
+1. 建立以您已安裝的 SharePoint 版本為目標的 SharePoint 方案專案，並將其命名為 **IntelliTraceTest**。
 
      [ **Sharepoint 自訂] Wizard** 隨即出現，您可以在其中指定專案的 SharePoint 網站和方案的信任層級。
 
@@ -272,7 +272,7 @@ ms.locfileid: "99952651"
 
    4. 在 [警告] 頁面上，選擇 [ **停用此功能** ] 連結。
 
-      FeatureDeactivating ( # A1 事件處理常式會擲回錯誤。
+      FeatureDeactivating () 事件處理常式會擲回錯誤。
 
 ## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent 收集 IntelliTrace 資料
 
@@ -293,7 +293,7 @@ ms.locfileid: "99952651"
 
    4. 在 [警告] 頁面上，選擇 [ **停用此功能** ] 連結。
 
-      在此情況下， (發生錯誤，因為 FeatureDeactivating ( # A2 事件處理常式) 擲回錯誤。
+      在此情況下， (發生錯誤，因為在 FeatureDeactivating () 事件處理常式) 中擲出錯誤。
 
 3. 在 PowerShell 視窗中，執行 [stop-webapplicationmonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) 命令來建立 .itrace 檔案、停止監視，然後重新開機您的 SharePoint 方案。
 
@@ -313,7 +313,7 @@ ms.locfileid: "99952651"
 
      在 [IntelliTrace] 視窗中，選擇例外狀況以顯示失敗的程式碼。
 
-3. 請開啟 SharePoint 方案，然後在 FeatureDeactivating ( # A1 程式的頂端批註或移除 **throw** 語句，以修正錯誤。
+3. 若要修正錯誤，請開啟 SharePoint 方案，然後在 FeatureDeactivating () 程式頂端批註化或移除 **throw** 語句。
 
 4. 在 Visual Studio 中重建方案，然後將它重新部署到 SharePoint。
 

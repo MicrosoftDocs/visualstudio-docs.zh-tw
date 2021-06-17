@@ -17,17 +17,18 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 109cf2fe5661f23ae7fb051829ec1c9e9a6d2329
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a710d71b80f8aa64efef52b891a8c8a760b92c10
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876624"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112859"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>在 Visual Studio) 中開始 (SharePoint 開發
-  本節可協助您開始使用利用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 的 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]開發 SharePoint 解決方案。
 
- 如需 SharePoint 2013 與 SharePoint 增益集的相關資訊，請參閱 [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) 與 [建置 SharePoint 增益集](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
+  本節可協助您開始使用利用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] 的 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]開發 SharePoint 解決方案。
+
+ 如需 SharePoint 增益集的相關資訊，請參閱 [建立 sharepoint 增益集](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
 
  SharePoint 提供網頁型的共同作業平台。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供許多專案範本，可用來建立 SharePoint 網站和內容，包括清單定義、工作流程、商務資料連接模型以及網站定義。 此外，您還可以在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中建立 SharePoint 專案的擴充功能和工具。
 

@@ -1,7 +1,7 @@
 ---
 title: 教學課程：開始使用 Visual Basic
 description: 逐步了解如何在 Visual Studio 中建立 Visual Basic 主控台應用程式。
-ms.custom: seodec18, get-started
+ms.custom: acquisition, seodec18, get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 075c84433e5784106bbe1f9c6ac6f58d9613bfdb
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: cc9557c4b7558488fd8757d3c50920debe134568
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295490"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112464"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 
@@ -45,7 +45,7 @@ ms.locfileid: "107295490"
 
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列中，選擇 [檔案]**[新增]** > **[專案]** > 。
+2. 從頂端功能表列中 **，選擇 [** 檔案 > **新增** > **專案**]。
 
 3. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將專案命名為 *>whatisyourname*。
 
@@ -67,7 +67,7 @@ ms.locfileid: "107295490"
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
 
-1. 請取消 [新增專案] 對話方塊，然後從頂端功能表列中選擇 [工具]**[取得工具和功能]** > 。
+1. 取消 [ **新增專案** ] 對話方塊，然後從頂端功能表列中選擇 [ **工具** > **取得工具和功能**]。
 
 1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
@@ -267,7 +267,7 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 
 .NET Core 是 .NET Framework 的下一個進化步驟。 如果 .NET Framework 可讓您跨程式設計語言來共用程式碼，則 .NET Core 會新增跨平台共用程式碼的能力。 更好的是，它是開放原始碼  (.NET Framework 和 .NET Core 包含預先建置功能的程式庫以及 Common Language Runtime (CLR)，而後者作為在其中執行程式碼的虛擬機器)。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 恭喜您完成此教學課程！ 若要更深入了解，請參閱下列教學課程。
 

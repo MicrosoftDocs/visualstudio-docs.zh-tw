@@ -9,12 +9,12 @@ author: TerryGLee
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.manager: jmartens
-ms.openlocfilehash: 7ca09edada7715b9e7be754dbec22e1654288df8
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: 7e8f428ea82fb36abf944b06c22e73f1b9ca9fb6
+ms.sourcegitcommit: 113b7df611583307d3965984233a33355d6b0318
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729308"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "112126552"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 體驗
 
@@ -184,7 +184,7 @@ Visual Studio 中的「合併編輯器」是三向合併工具，可顯示內送
 
 ## <a name="personalize-your-git-settings"></a>將您的 Git 設定個人化
 
-若要在存放庫層級以及全域層級進行個人化和自訂 git 設定，請移至  >  功能表列上的 [git **設定**]，或移至功能表列上的 [**工具**  >  **選項**  >  **原始檔控制**]。 然後，選擇您想要的選項。
+若要在存放庫層級以及全域層級進行個人化和自訂 git 設定，請移至  >  功能表列上的 [git **設定**]，或移至功能表列上的 [**工具**  >  **選項**  >  **原始檔控制**]。 然後，選擇您想要的 [選項](git-settings.md) 。
 
 :::image type="content" source="media/git-options-settings.png" alt-text="您可以在 Visual Studio IDE 中選擇個人化和自訂設定的 [選項] 對話方塊 ":::
 

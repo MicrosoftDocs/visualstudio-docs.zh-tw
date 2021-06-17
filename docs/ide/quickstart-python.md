@@ -8,16 +8,18 @@ ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
-ms.custom: SEO-VS-2020
+ms.custom:
+- acquisition
+- SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc47bdb2913e2d18998663967d4da3c0a7dcdd9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1cefae42025407e0252b5aedc28e979e0d86debc
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939938"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113178"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
@@ -48,7 +50,7 @@ ms.locfileid: "99939938"
 
     ![已選取 Python Web專案的 [新增專案] 對話方塊](media/quickstart-python-00-web-project.png)
 
-    如果您不使用 Python 專案範本，請執行 **Visual Studio 安裝程式**，選取 [更多]**[修改]** > ，再選取 [Python 開發] 工作負載，然後選取 [修改]。
+    如果您看不到 Python 專案範本，請執行 **Visual Studio 安裝程式**，選取 [ **更多** > **修改**]，選取 **Python 開發** 工作負載，然後選擇 [ **修改**]。
 
     ![Visual Studio 安裝程式中的 Python 開發工作負載](../python/media/installation-python-workload.png)
 
@@ -64,7 +66,7 @@ ms.locfileid: "99939938"
 
     ![以選取的 Python Web 專案建立新專案畫面](media/quickstart-python-00-web-project-2019a.png)
 
-    如果您不使用 Python 專案範本，請執行 **Visual Studio 安裝程式**，選取 [更多]**[修改]** > ，再選取 [Python 開發] 工作負載，然後選取 [修改]。
+    如果您看不到 Python 專案範本，請執行 **Visual Studio 安裝程式**，選取 [ **更多** > **修改**]，選取 **Python 開發** 工作負載，然後選擇 [ **修改**]。
 
     ![Visual Studio 安裝程式中的 Python 開發工作負載](../python/media/installation-python-workload.png)
 
@@ -198,7 +200,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 **解答**：您使用 [開始偵錯] 在 [Visual Studio 偵錯工具](../python/debugging-python-in-visual-studio.md)的環境中執行應用程式，可讓您設定中斷點、檢查變數，以及一行一行地逐步執行程式碼。 在偵錯工具中，應用程式可能會執行得較慢，原因是有各種不同的攔截程序在進行偵錯。 相反地，[開始偵錯] 會直接執行應用程式，就像是您從命令列執行它一樣，沒有任何偵錯內容，而且也會自動啟動瀏覽器並瀏覽到專案屬性的 [偵錯] 索引標籤中指定的 URL。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 恭喜您從 Visual Studio 執行第一個 Python 應用程式，您已了解將 Visual Studio 當成 Python IDE 使用的一些內容！
 

@@ -7,16 +7,16 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
-ms.custom: seodec18
+ms.custom: acquisition
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9767630fc7fee4eafce72e4eb99aa12db8469691
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4c0b50a74566edfb00cba7efae68a3626ec8ec6d
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970539"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112848"
 ---
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安裝 Python 支援
 

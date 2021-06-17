@@ -8,15 +8,15 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
-  author: jillre
-  ms.author: jillfra
-  ms.date: 09/24/2019
-  ms.openlocfilehash: a97cdc17a9e71520d34437e8897f3301de58fb5e
-  ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
-  ms.translationtype: HT
+  author: j-martens
+  ms.author: jmartens
+  ms.date: 06/14/2021
+  ms.openlocfilehash: 91e49ade3715f507523cc09c83c2cfb5fea0459c
+  ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+  ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/19/2020
-  ms.locfileid: "90809657"
+  ms.lasthandoff: 06/15/2021
+  ms.locfileid: "112112401"
 landingContent:
 - title: 開始使用
   linkLists:
@@ -74,9 +74,11 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
+    - text: 版本資訊
+      url: /visualstudio/releases/2019/release-notes
     - text: Visual Studio 2019 的新功能
       url: ../ide/whats-new-visual-studio-2019.md
     - text: Visual Studio 2017 的新功能
       url: ../ide/whats-new-visual-studio-2017.md
-    - text: Visual Studio 文件中的新功能
+    - text: 文件中的新功能
       url: ../ide/whats-new-visual-studio-docs.md

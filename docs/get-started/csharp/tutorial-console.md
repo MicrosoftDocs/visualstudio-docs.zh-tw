@@ -1,7 +1,7 @@
 ---
 title: '教學課程：建立簡單的 c # 主控台應用程式'
 description: 了解如何逐步在 Visual Studio 中建立 C# 主控台應用程式。
-ms.custom: seodec18, get-started
+ms.custom: acquisition, seodec18, get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 12f00bedba6078fc5c471d02b92630b49dd35afa
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 7317af5667f09ff30d0f2cb54d1399da9d0358de
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295620"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113247"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立簡單的 c # 主控台應用程式
 
@@ -69,7 +69,7 @@ ms.locfileid: "107295620"
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
 
-1. 請取消 [新增專案] 對話方塊，然後從頂端功能表列中選擇 [工具]**[取得工具和功能]** > 。
+1. 取消 [ **新增專案** ] 對話方塊，然後從頂端功能表列中選擇 [ **工具** > **取得工具和功能**]。
 
 1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
@@ -602,7 +602,7 @@ namespace Calculator
 
 ```
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 :::moniker range="vs-2017"
 

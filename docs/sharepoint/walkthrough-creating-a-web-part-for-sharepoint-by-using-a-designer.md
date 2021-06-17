@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 066ae0ab9c23ebb1d55f6c0480d7aeed4255fb4f
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 55f69875b06428c9bbe179e73dd6ea9b4ef40b8e
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217732"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112431"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>逐步解說：使用設計工具建立 SharePoint 的網頁元件
 
@@ -52,15 +52,21 @@ ms.locfileid: "106217732"
 1. 首先 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，使用 [以 **系統管理員身分執行** ] 選項。
 
 2. 在功能表列上 **，選擇 [** 檔案  >  **新增**  >  **專案**]。
-
-     [新增專案]  對話方塊隨即出現。
+::: moniker range="=vs-2017"
 
 3. 在 [ **新增專案** ] 對話方塊的 [ **Visual c #** ] 或 [ **Visual Basic**] 底下，展開 [ **Office/SharePoint**]，然後選擇 [ **SharePoint 方案** ] 類別。
 
 4. 在範本清單中，選擇 [ **SharePoint 2013-視覺 Web 元件** ] 範本，然後選擇 [ **確定]** 按鈕。
 
      [ **SharePoint 自訂] Wizard** 隨即出現。 您可以使用此嚮導來指定用來偵測專案的網站和方案的信任層級。
+::: moniker-end
+::: moniker range=">=vs-2019"
+3. 在 [ **建立新專案** ] 對話方塊中，針對您已安裝的特定 sharepoint 版本選取 [ *sharepoint 空白專案*]。 例如，如果您有 SharePoint 2019 安裝，請選取 **sharepoint 2019-空白專案** 範本。
+    [!INCLUDE[new-project-dialog-search](../sharepoint/includes/new-project-dialog-search-md.md)]
 
+4. 在 [ **名稱** ] 方塊中，輸入 **TestProject1**，然後選擇 [ **建立** ] 按鈕。
+
+::: moniker-end
 5. 在 [ **此 SharePoint 方案的信任層級為何？** ] 區段中，選擇 [ **部署為伺服器陣列方案** ] 選項按鈕。
 
 6. 選擇 [ **完成]** 按鈕以接受預設的本機 SharePoint 網站。
