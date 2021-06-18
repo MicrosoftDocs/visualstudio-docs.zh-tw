@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f571860d08d16d85e53148bc1023cb08a1c36d2
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: d34c3a3b4d808b1f4e24051763f1c0876a175a3a
+ms.sourcegitcommit: a9526ab1556c47570286c7a7d3314af67fd1dcf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307774"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "112365465"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -232,7 +232,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 - **Visual Studio 2022 (Preview) 的第一個公開版本現已推出**
 
-    下一個主要版本的公開預覽版 [Visual Studio 2022](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)，現已推出。 新版本的速度更快、更平易近人且更輕量。 而且，第一次 Visual Studio 是64位。 如需下載連結和詳細資訊，請參閱 **[下載 Visual Studio 2022 Preview 1](https://devblogs.microsoft.com/visualstudio/?p=232975&preview=true)** 的 blog 文章。
+    下一個主要版本的公開預覽版 [Visual Studio 2022](/visualstudio/releases/2022/release-notes-preview/)，現已推出。 新版本的速度更快、更平易近人且更輕量。 而且，第一次 Visual Studio 是64位。 如需下載連結和詳細資訊，請參閱 **[Visual Studio 2022 Preview 1 現已推出！](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-1-now-available/)** 部落格文章。
 
 ## <a name="give-us-feedback"></a>提供意見反應
 

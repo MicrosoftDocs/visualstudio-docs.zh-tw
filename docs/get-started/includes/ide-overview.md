@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 3c5cb8d78b254c667ecd131ef3850475a0460323
-ms.sourcegitcommit: 5366c6bca3fb217a2fbf847998387578f51ec45c
+ms.openlocfilehash: 128a09500aaa326fad717efcade9040496452963
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748532"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112362048"
 ---
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
@@ -21,7 +21,7 @@ Visual Studio「整合式開發環境」是一個有創意的啟動控制板，�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 :::image type="content" source="../media/vs-2019/ide-overview.png" alt-text="Visual Studio IDE 的螢幕擷取畫面，其中包含指出主要特性和功能所在位置的標注。" lightbox="../media/vs-2019/ide-overview.png":::
 
@@ -51,7 +51,7 @@ Visual Studio 共有三種版本：「社區」、「專業」和「企業」。
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2019 相同的功能，並已針對開發跨平台和行動應用程式最佳化。 此文章著重於 Windows 版的 Visual Studio 2019。
 

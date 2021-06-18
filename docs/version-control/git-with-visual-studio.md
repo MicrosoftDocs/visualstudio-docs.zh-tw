@@ -2,19 +2,19 @@
 title: Visual Studio 2019 的 Git 體驗
 titleSuffix: ''
 description: 瞭解 Visual Studio 2019 中新的整合式 Git 體驗如何協助您提高生產力。
-ms.date: 04/01/2021
+ms.date: 06/17/2021
 ms.topic: overview
 ms.author: tglee
 author: TerryGLee
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.manager: jmartens
-ms.openlocfilehash: 7e8f428ea82fb36abf944b06c22e73f1b9ca9fb6
-ms.sourcegitcommit: 113b7df611583307d3965984233a33355d6b0318
+ms.openlocfilehash: ae5d17bfe09f2ebac5abb37c6d6ceed59c5398d3
+ms.sourcegitcommit: a9526ab1556c47570286c7a7d3314af67fd1dcf0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "112126552"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "112365452"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 體驗
 
@@ -188,11 +188,15 @@ Visual Studio 中的「合併編輯器」是三向合併工具，可顯示內送
 
 :::image type="content" source="media/git-options-settings.png" alt-text="您可以在 Visual Studio IDE 中選擇個人化和自訂設定的 [選項] 對話方塊 ":::
 
+::: moniker range="vs-2019"
+
 ## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>如何使用 Visual Studio 的完整 Team Explorer 體驗
 
 新的 Git 體驗是從 [16.8 版](/visualstudio/releases/2019/release-notes/) 開始 Visual Studio 2019 的預設版本控制系統。 但是，如果您想要關閉它，可以。 移至 [**工具**  >  **選項**  >  **環境**  >  **預覽功能**]，然後切換 [**新的 git 使用者體驗**] 核取方塊，這會將您切換回 git 的 Team Explorer。
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Visual Studio 中 [選項] 對話方塊的 [預覽功能] 區段 ":::
+
+::: moniker-end
 
 ## <a name="whats-next"></a>後續步驟
 
