@@ -14,12 +14,12 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f337551c16aa63b606c10492bab9956a92cbe141
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 5fc5b9308c854649a4f10482a54ff395bec5d8df
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295425"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308190"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教學課程：使用 Visual Basic 建立簡單的應用程式
 
@@ -31,9 +31,15 @@ ms.locfileid: "107295425"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+如果您尚未安裝 Visual Studio 2022 Preview，請前往 [Visual Studio 2022 preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022) 頁面，免費進行安裝。
 
 ::: moniker-end
 
@@ -77,9 +83,9 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且 **方案總管** �
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. 開啟 Visual Studio 2019。
+1. 開啟 Visual Studio。
 
 2. 在 [建立新專案] 畫面上，搜尋 "WPF"、選擇 [WPF 應用程式 (.NET Framework)]，然後選擇 [下一步]。
 
@@ -313,7 +319,7 @@ IsChecked="True"
 
 3. 選擇 [**組建**  >  **組建方案**] 來建立方案。
 
-恭喜您完成此教學課程！ 您可以在方案和專案目錄下找到您所建立的 *.exe* (*..\HelloWPFApp\HelloWPFApp\bin\Release*) 。
+恭喜您完成此教學課程！ 您可以在方案和專案目錄下找到您所建立的 *.exe* (*. ..\HelloWPFApp\HelloWPFApp\bin\Release*) 。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -327,6 +333,12 @@ IsChecked="True"
 ::: moniker range="vs-2019"
 
 - [Visual Studio 2019 的新功能](../../ide/whats-new-visual-studio-2019.md)
+- [生產力祕訣](../../ide/productivity-features.md)
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
 - [生產力祕訣](../../ide/productivity-features.md)
 
 ::: moniker-end

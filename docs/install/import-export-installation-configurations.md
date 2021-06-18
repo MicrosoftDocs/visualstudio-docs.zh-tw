@@ -11,19 +11,19 @@ helpviewer_keywords:
 - export installation configuration
 - install Visual Studio
 - Visual Studio installer
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 043622d08b5389db8bf4cce80450f62c070a0ace
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1fc4b181436b5e214300b334163b9257af0d0d35
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949463"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307462"
 ---
 # <a name="import-or-export-installation-configurations"></a>匯入或匯出安裝組態
 
@@ -66,7 +66,7 @@ ms.locfileid: "99949463"
 
 1. 請確定您已獲得所需的工作負載和元件，然後選擇 [關閉]。
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="automatically-install-missing-components"></a>自動安裝遺漏的元件
 
@@ -78,7 +78,7 @@ ms.locfileid: "99949463"
 
 1. 以滑鼠右鍵按一下您的方案檔案。
 
-1. 選擇 [新增]**[安裝組態檔]** > 。
+1. 選擇 [ **新增** > **安裝設定檔**]。
 
 1. 確認您要儲存 .vsconfig 檔案的位置，然後選擇 [檢閱詳細資料]。
 

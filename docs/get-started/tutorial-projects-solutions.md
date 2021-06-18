@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11db2d793f284557f709a4f72362cfc89a77a059
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 0f962d9e534262fd12cd0ce5c808c9c604db466b
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113038"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308398"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>專案和解決方案簡介
 
@@ -35,6 +35,12 @@ ms.locfileid: "112113038"
 ::: moniker range="vs-2019"
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+如果您尚未安裝 Visual Studio 2022 Preview，請前往 [Visual Studio 2022 preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022) 頁面，免費進行安裝。
 
 ::: moniker-end
 
@@ -223,7 +229,7 @@ ms.locfileid: "112113038"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 選取 **QuickTest** 專案中的 [相依性] 節點，然後從滑鼠右鍵按一下或操作功能表中，選取 [**加入專案參考**... **]** 。
 
@@ -293,7 +299,7 @@ ms.locfileid: "112113038"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 如果您想要檢查單元測試是否正常運作，請從功能表列選擇 [**測試**  >  **執行所有測試**]。 稱為 [測試總管] 的視窗隨即開啟，而且您應該會看到 **TestGetCurrentDate** 測試通過。
 

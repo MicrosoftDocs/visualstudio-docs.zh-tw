@@ -11,19 +11,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e328bf8420f9cc7cf207ede6b6447ed291b77745
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0584673880a56bbde0ef44ad14c24acca252c5a2
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949450"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307475"
 ---
 # <a name="disable-or-move-the-package-cache"></a>停用或移動套件快取
 
@@ -34,7 +34,7 @@ ms.locfileid: "99949450"
 
 在您使用新的安裝程式安裝、修改或修復 Visual Studio 或其他產品之前，可以針對安裝程式使用 `--nocache` 參數來啟動安裝程式。
 
-```cmd
+```shell
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" --nocache
 ```
 
@@ -42,7 +42,7 @@ ms.locfileid: "99949450"
 
 如果您想要重新啟用快取，請改為傳遞 `--cache`。 系統只會針對所需的套件進行快取，因此如果您需要還原所有套件，便應該在中斷網路連線之前修復 Visual Studio。
 
-```cmd
+```shell
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
 ```
 

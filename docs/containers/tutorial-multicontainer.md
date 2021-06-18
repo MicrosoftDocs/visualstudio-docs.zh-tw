@@ -7,29 +7,39 @@ ms.author: ghogen
 ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: tutorial
-ms.openlocfilehash: 43684288eea2e1864bf31a8bb68bbac1b217a976
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.openlocfilehash: 78af96eaa8f340129b2b445dd92419f84cf91ab1
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "109973274"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307813"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教學課程：使用 Docker Compose 建立多容器應用程式
 
 在本教學課程中，您將瞭解如何在 Visual Studio 中使用容器工具來管理多個容器並在它們之間進行通訊。  管理多個容器需要 *容器協調流程* ，而且需要協調器，例如 Docker Compose、Kubernetes 或 Service Fabric。 在這裡，我們會使用 Docker Compose。 Docker Compose 在開發週期的過程中，很適合用來進行本機的偵錯工具和測試。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 ::: moniker range="vs-2017"
+
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 已安裝 **Web 開發**、 **Azure Tools** 工作負載或 **.net Core 跨平臺開發** 工作負載的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 ::: moniker-end
 
-::: moniker range=">= vs-2019"
+::: moniker range="vs-2019"
+
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 已安裝 **網頁程式開發**、**Azure Tools** 工作負載及(或) **.NET Core 跨平台開發** 工作負載的 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * 適用於 .NET Core 2.2 開發的 [.NET Core 2.2 開發工具](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 * .Net [core 3 開發工具](https://dotnet.microsoft.com/download/dotnet-core/3.1)，可供使用 .net core 3.1 進行開發。
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+* [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+* 已安裝 **Web 開發**、 **Azure 工具** 工作負載及/或 **.net Core 跨平臺開發** 工作負載的 [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022)
+* .Net [core 3 開發工具](https://dotnet.microsoft.com/download/dotnet-core/3.1)，可供使用 .net core 3.1 進行開發。
+* 使用 .NET 5 開發的[.net 5 開發工具](https://dotnet.microsoft.com/download/dotnet-core/5.0)。
 ::: moniker-end
 
 ## <a name="create-a-web-application-project"></a>建立 Web 應用程式專案
@@ -44,7 +54,7 @@ ms.locfileid: "109973274"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ![建立 ASP.NET Core Web 應用程式專案](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
 
@@ -61,7 +71,7 @@ ms.locfileid: "109973274"
 ::: moniker range="vs-2017"
    ![建立 Web API 專案的螢幕擷取畫面](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
    ![建立 Web API 專案的螢幕擷取畫面](./media/tutorial-multicontainer/vs-2019/create-webapi-project.png)
 ::: moniker-end
 
@@ -189,7 +199,7 @@ ms.locfileid: "109973274"
 
    適用于 .NET 3.1 的 web 應用程式會顯示 JSON 格式的氣象資料。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 查看將 [容器部署至 Azure](/azure/containers)的選項。
 

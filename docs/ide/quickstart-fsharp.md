@@ -12,12 +12,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: cbb85c41a01a03461bc1a73bdb58620e8a0c472f
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 5048a92f2a8029a4d4fc1c4c44d14f1630116e83
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113202"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307930"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入門：使用 Visual Studio 在 F 中建立您的第一個 ASP.NET Core web 服務\#
 
@@ -32,6 +32,12 @@ ms.locfileid: "112113202"
 ::: moniker range="vs-2019"
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+如果您尚未安裝 Visual Studio 2022 Preview，請前往 [Visual Studio 2022 preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022) 頁面，免費進行安裝。
 
 ::: moniker-end
 

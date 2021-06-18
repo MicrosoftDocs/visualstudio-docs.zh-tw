@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eac51637b3f3b732f1293337080ef851f34c459
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 2cbc35eaabec2dae8bd8b97ba22f55a50fc436c3
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682734"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308450"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 C# 程式碼進行偵錯
 
@@ -36,7 +36,7 @@ ms.locfileid: "101682734"
 > * 檢查資料提示和偵錯工具視窗中的變數
 > * 檢查呼叫堆疊
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 ::: moniker range=">=vs-2019"
 
@@ -61,7 +61,13 @@ ms.locfileid: "101682734"
 
 ::: moniker-end
 
-如果您需要安裝工作負載，但已有 visual studio，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 visual studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 **.Net Core 跨平臺開發** 工作負載，然後選擇 [ **修改**]。
+::: moniker range="vs-2022"
+
+如果您尚未安裝 Visual Studio 2022 Preview，請前往 [Visual Studio 2022 preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022) 頁面，免費進行安裝。
+
+::: moniker-end
+
+如果您需要安裝工作負載，但已有 Visual Studio，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 **.Net Core 跨平臺開發** 工作負載，然後選擇 [ **修改**]。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -71,7 +77,7 @@ ms.locfileid: "101682734"
 
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列中，選擇 [檔案]**[新增]** > **[專案]** > 。
+2. 從頂端功能表列中 **，選擇 [** 檔案 > **新增** > **專案**]。
 
 3. 在 [新增專案] 對話方塊的左窗格中，展開 [C#]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將專案命名為 *開始使用-調試*。
 
@@ -81,9 +87,9 @@ ms.locfileid: "101682734"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. 開啟 Visual Studio 2019。
+1. 開啟 Visual Studio。
 
    如果 [開始] 視窗未開啟，請 **選擇 [** 檔案 > **開始視窗]**。
 
@@ -108,7 +114,7 @@ ms.locfileid: "101682734"
 
 ## <a name="create-the-application"></a>建立應用程式
 
-1. 在 *Program.cs* 中，以下列程式碼取代所有的預設程式碼：
+1. 在 *Program* 中，以下列程式碼取代所有的預設程式碼：
 
     ```csharp
     using System;
@@ -316,7 +322,7 @@ ms.locfileid: "101682734"
 
     恭喜您完成此教學課程！
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 在本教學課程中，您已了解如何啟動偵錯工具、逐步執行程式碼，以及檢查變數。 建議您進一步查看偵錯工具功能，以及詳細資訊的連結。
 

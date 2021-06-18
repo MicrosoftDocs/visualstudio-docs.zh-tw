@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9557c4b7558488fd8757d3c50920debe134568
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 8491869f5c0d518b394c0baa6a6da91bfeb6c7a3
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112464"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308372"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 
@@ -34,6 +34,12 @@ ms.locfileid: "112112464"
 ::: moniker range="vs-2019"
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+如果您尚未安裝 Visual Studio 2022 Preview，請前往 [Visual Studio 2022 preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022) 頁面，免費進行安裝。
 
 ::: moniker-end
 
@@ -73,12 +79,12 @@ ms.locfileid: "112112464"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 > [!NOTE]
 > 本教學課程中的某些螢幕擷取畫面使用深色佈景主題。 如果您未使用深色佈景主題，但想要使用，請參閱[將 Visual Studio IDE 和編輯器個人化](../../ide/quickstart-personalize-the-ide.md)頁面以了解做法。
 
-1. 開啟 Visual Studio 2019。
+1. 開啟 Visual Studio。
 
 1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
@@ -146,7 +152,7 @@ ms.locfileid: "112112464"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 在 *WhatIsYourName* 專案中，於 `Sub Main(args As String())` 行之後的左括弧後方，以及 `End Sub` 行之前，輸入下列 Visual Basic 程式碼：
 
@@ -208,7 +214,7 @@ ms.locfileid: "112112464"
 
 ::: moniker-end 
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。 
 

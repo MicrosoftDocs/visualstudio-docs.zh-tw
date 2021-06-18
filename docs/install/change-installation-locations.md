@@ -16,16 +16,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9e9ee5972a0f1acba37a6b6b417df00a925e5558
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 0e780cca2515118b92b71c406368d29424f7017c
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112494"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307618"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>在 Visual Studio 2017 中選取安裝位置
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 您可以變更某些檔案的位置，來減少 Visual Studio 在系統磁碟機上的安裝磁碟使用量。 具體而言，您可以針對下載快取、共用元件、SDK 和工具檔案使用不同的位置。
 
@@ -76,7 +76,7 @@ ms.locfileid: "112112494"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 當您安裝 Visual Studio 時，選擇 [安裝位置] 索引標籤。
 

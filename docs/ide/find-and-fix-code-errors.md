@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d6da05729be409b142f6c9cec2c543fb2b9171ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5af76de5dbcc7a70722acf0ee01cfed93dbad761
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869423"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308255"
 ---
 # <a name="make-code-work-in-visual-studio"></a>讓程式碼在 Visual Studio 中運作
 
@@ -100,7 +100,7 @@ Visual Studio 包含一組內建的 [.NET Compiler Platform 分析器](../code-q
 
 使用經驗，您可以快速地使用方向鍵和 **Ctrl** + **。** 找出輕鬆重構的機會，並清除您的程式碼！
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="run-code-cleanup"></a>執行程式碼清除
 

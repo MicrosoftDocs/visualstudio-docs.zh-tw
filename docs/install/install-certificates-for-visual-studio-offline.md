@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d8441b0a4b8acba3f24f60d5ea8dc7030b79253
-ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
+ms.openlocfilehash: 6dc4137157e2fa5136a0b8c86c5cf72f284a9eb7
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105981286"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307372"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 
@@ -42,7 +42,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 當您建立 [網路](../install/create-a-network-installation-of-visual-studio.md) 配置或 [本機離線](../install/create-an-offline-installation-of-visual-studio.md)快取時，會將必要的憑證下載至 [憑證] 資料夾。 您可以用滑鼠右鍵按一下每個憑證檔案、選取 [安裝憑證]，然後逐一完成 [憑證管理員精靈] 來手動安裝憑證。 如果要求您輸入密碼，請保留空白。
 
@@ -60,7 +60,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 
 2. 使用下列命令建立批次檔：
 
-   ```cmd
+   ```shell
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
 
    certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
@@ -70,7 +70,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
    
    或是使用以下命令，來建立使用 certutil.exe (隨附於 Windows) 的批次檔：
    
-      ```cmd
+      ```shell
    certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"

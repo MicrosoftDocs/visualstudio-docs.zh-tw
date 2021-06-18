@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 227d54fbc2734290954fc1c847a34846bb6dc5cf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 56f6570b633941c8f7102e245b7668cd31936f83
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944533"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308359"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>瞭解如何使用程式碼編輯器搭配 Visual Basic
 
@@ -34,6 +34,13 @@ ms.locfileid: "99944533"
 
 > [!TIP]
 > 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+> [!TIP]
+> 如果您尚未安裝 Visual Studio Preview，請前往 [Visual Studio 2022 preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022) 頁面，免費進行安裝。
 
 ::: moniker-end
 
@@ -182,7 +189,7 @@ Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中
 
    出現的這兩個 `words` 已重新命名，而程式碼註解中的 `words` 參考亦然。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [了解專案與解決方案](tutorial-projects-solutions.md)

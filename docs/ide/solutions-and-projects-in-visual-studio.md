@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eaba06b2da73fc0bc80219ce58baff49a760ebc0
-ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
+ms.openlocfilehash: f632922078383708319e610d82a4c94a58619424
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112066965"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306393"
 ---
 # <a name="what-are-solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解決方案和專案是什麼？
 
@@ -92,9 +92,9 @@ Visual Studio 會使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存解決方
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-![Visual Studio 2019 中具有兩個專案方案總管的螢幕擷取畫面。](../ide/media/solution-explorer.png)
+![Visual Studio 中有兩個專案方案總管的螢幕擷取畫面。](../ide/media/solution-explorer.png)
 
 **方案總管** 頂端的工具列具有可從方案視圖切換至資料夾檢視、篩選暫止的變更、顯示所有檔案、折迭所有節點、視圖 [屬性](managing-project-and-solution-properties.md)頁面、在程式 [代碼編輯器](writing-code-in-the-code-and-text-editor.md)中預覽程式碼等的按鈕。
 

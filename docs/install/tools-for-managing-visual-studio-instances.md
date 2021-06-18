@@ -9,19 +9,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2b6b641081c9b969cadd2c9517967adb8cc4cb1e
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 914449fe1db792614af1f9ed22464cb9fdb91481
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547436"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306887"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>用於偵測及管理 Visual Studio 執行個體的工具
 
@@ -34,33 +34,33 @@ ms.locfileid: "106547436"
 * [**vswhere**](https://github.com/microsoft/vswhere)：內建于 Visual Studio 或可用於個別散發的可執行檔，可協助您尋找特定電腦上所有 Visual Studio 實例的位置。
 * [**Vssetup.powershell**](https://github.com/microsoft/vssetup.powershell)： powershell 腳本，使用安裝設定 API 來識別 Visual Studio 的已安裝實例。
 * [**VS-設定-範例**](https://github.com/microsoft/vs-setup-samples)： c # 和 c + + 範例，示範如何使用安裝程式設定 API 來查詢現有安裝。
-* [**Windows Management Instrumentation (WMI)**](https://docs.microsoft.com/windows/win32/wmisdk/wmi-start-page)：可透過 Visual Studio 類別 MSFT_VSInstance 查詢 Visual Studio 實例資訊。 
+* [**Windows Management Instrumentation (WMI)**](/windows/win32/wmisdk/wmi-start-page)：可透過 Visual Studio 類別 MSFT_VSInstance 查詢 Visual Studio 實例資訊。
 * [**安裝程式設定 API**](<xref:Microsoft.VisualStudio.Setup.Configuration>)提供的介面可供開發人員想要為詢問 Visual Studio 實例建立自己的公用程式。
-* [**Microsoft Endpoint Configuration Manager 軟體清查**](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)：可以用來收集用戶端裝置上 Visual Studio 實例的相關資訊。 
+* [**Microsoft Endpoint Configuration Manager 軟體清查**](/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)：可以用來收集用戶端裝置上 Visual Studio 實例的相關資訊。
 
 ## <a name="using-vswhereexe"></a>使用 vswhere.exe
 
 `vswhere.exe` 會自動包含在 Visual Studio 2017 和更新版本中，或者您可以從 [[vswhere 版本] 頁面](https://github.com/Microsoft/vswhere/releases)下載。 使用 `vswhere -?` 來取得該工具的說明資訊。 例如，此命令會顯示 Visual Studio 的所有版本（包括舊版的產品和發行前版本），並以 JSON 格式輸出結果：
 
-```cmd
+```shell
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
 
 ## <a name="using-windows-management-instrumentation-wmi"></a>使用 Windows Management Instrumentation (WMI) 
 
-如果電腦上已安裝 Visual Studio 用戶端偵測器公用程式，您可以使用 WMI 查詢 Visual Studio 的實例資訊。 Visual Studio 用戶端偵測器公用程式預設會隨每個 Visual Studio 2017 和 Visual Studio 2019 更新（在2020年5月12日或之後發行）進行安裝。 如果您想要獨立安裝，也可以在 [Microsoft Update 目錄](https://catalog.update.microsoft.com/) 中取得。  如需如何使用公用程式傳回 Visual Studio 實例資訊的範例，請在用戶端電腦上以系統管理員身分開啟 PowerShell，然後輸入下列命令：
+如果電腦上已安裝 Visual Studio 用戶端偵測器公用程式，您可以使用 WMI 查詢 Visual Studio 的實例資訊。 Visual Studio 的用戶端偵測器公用程式預設會隨每個 Visual Studio 2017、Visual Studio 2019，以及在年5月 12 2020 日或之後發行的 Visual Studio 2022 更新進行安裝。 如果您想要獨立安裝，也可以在 [Microsoft Update 目錄](https://catalog.update.microsoft.com/) 中取得。  如需如何使用公用程式傳回 Visual Studio 實例資訊的範例，請在用戶端電腦上以系統管理員身分開啟 PowerShell，然後輸入下列命令：
 
-```cmd
+```shell
 Get-CimInstance MSFT_VSInstance
 ```
 
-## <a name="using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 
+## <a name="using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager
 
-[Microsoft Endpoint Configuration Manager 軟體清查](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) 功能可以用來查詢和收集用戶端裝置上 Visual Studio 實例的相關資訊。 例如，下列查詢會針對所有已安裝的 Visual Studio 2017 和2019實例，傳回 Visual Studio 安裝所在的顯示名稱、版本和裝置名稱： 
+[Microsoft Endpoint Configuration Manager 軟體清查](/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) 功能可以用來查詢和收集用戶端裝置上 Visual Studio 實例的相關資訊。 例如，下列查詢會針對所有已安裝的 Visual Studio 2017 和2019實例，傳回 Visual Studio 安裝所在的顯示名稱、版本和裝置名稱：
 
-```WQL 
+```WQL
 select distinct SMS_G_System_COMPUTER_SYSTEM.Name, SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName, SMS_G_System_ADD_REMOVE_PROGRAMS.Version from SMS_R_System inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceID = SMS_R_System.ResourceId inner join SMS_G_System_ADD_REMOVE_PROGRAMS on SMS_G_System_ADD_REMOVE_PROGRAMS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName like "Visual Studio %[a-z]% 201[7,9]" 
-``` 
+```
 
 ::: moniker range="vs-2017"
 
@@ -83,7 +83,7 @@ select distinct SMS_G_System_COMPUTER_SYSTEM.Name, SMS_G_System_ADD_REMOVE_PROGR
 
 1. 從 Regedit 主功能表選取 [檔案  >  **載入 Hive ...** ]，然後選取私人登錄檔（儲存在 **AppData\Local** 資料夾中）。 例如：
 
-   ```
+   ```shell
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
 

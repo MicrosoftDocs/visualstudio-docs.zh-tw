@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9a2d362bc9fd22f7bb1db2fa005534f2f67e3155
-ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
+ms.openlocfilehash: 0728011c05d47996a313c11a18f31a196ec08e10
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111760961"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306495"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>教學課程：在 Visual Studio 中建立具有 TypeScript 的 ASP.NET Core 應用程式
 
@@ -34,6 +34,12 @@ ms.locfileid: "111760961"
 
 ::: moniker-end
 
+::: moniker range="vs-2022"
+
+如果您尚未安裝 Visual Studio 2022 Preview，請前往 [Visual Studio 2022 preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022) 頁面，免費進行安裝。
+
+::: moniker-end
+
 在本教學課程中，您會了解如何：
 > [!div class="checklist"]
 > * 建立 ASP.NET Core 專案
@@ -42,7 +48,7 @@ ms.locfileid: "111760961"
 > * 執行應用程式
 > * 使用 npm 新增協力廠商程式庫
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 * 您必須安裝 Visual Studio，以及 ASP.NET 網頁程式開發工作負載。
 
@@ -285,7 +291,7 @@ Visual Studio 可在「專案」中管理單一應用程式的檔案。 專案�
 
     ![jquery 範例](../javascript/media/aspnet-core-ts-jquery-example.png)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 您可能會想要深入瞭解搭配 ASP.NET Core 使用 TypeScript 的詳細資料。 如果您有興趣在 Visual Studio 中 AngularJS 程式設計，您可以使用 [AngularJS language service 延伸](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio) 模組進行 Visual Studio。
 

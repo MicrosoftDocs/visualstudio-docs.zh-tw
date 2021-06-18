@@ -18,16 +18,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f4040023dd023db351571482ac2a17c18b46e06
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 638ec555a6fbef53d19a15c8a6cde26ff121aa0e
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112927"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306978"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>修改 Visual Studio 工作負載、元件和語言套件
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 因為修改 Visual Studio 很容易，所以在您需要它時，它只包含您需要的內容。 若要執行修改作業，請開啟 Visual Studio 安裝程式來新增或移除工作負載和元件。
 
@@ -71,7 +71,7 @@ ms.locfileid: "112112927"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 在您的電腦上找到 **Visual Studio 安裝程式**。
 
@@ -119,12 +119,11 @@ ms.locfileid: "112112927"
 
 1. 如有需要，請選擇 [ **工作負載** ] 索引標籤，然後選取或取消選取您想要的工作負載。
 
-
 1. 安裝新的工作負載之後，請選擇 [從 Visual Studio 安裝程式 **啟動** ] 以開啟 Visual Studio。
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
  工作負載包含您使用之程式設計語言或平台所需的功能。 您可以使用工作負載來修改 Visual Studio，以便在需要時支援您要執行的工作。
 
@@ -147,7 +146,6 @@ ms.locfileid: "112112927"
 
 ::: moniker-end
 
-
 >[!TIP]
 > 如需 SQL Server Data Tools (SSDT) 元件的相關資訊，請參閱 [下載並安裝適用于 Visual Studio 的 SSDT](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true)。
 
@@ -156,9 +154,10 @@ ms.locfileid: "112112927"
 根據預設，安裝程式會在第一次執行時，符合作業系統的語言。 不過，您可以在需要時變更語言。 
 
 操作方法：
+
 1. 選擇 Visual Studio 安裝程式中的 [ **語言套件** ] 索引標籤。
-2. 選取您偏好的語言。
-3. 遵循提示。
+1. 選取您偏好的語言。
+1. 遵循提示。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

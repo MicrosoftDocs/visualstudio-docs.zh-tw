@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f3bc253f0babbc404164a9e85fda1e54ba5f5297
-ms.sourcegitcommit: 0088835f22334b8fee89f8c07bb12bcdfdef1639
+ms.openlocfilehash: 1c3a6254c3205038be3d56c64de091e659d2bbd5
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110188105"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306731"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>使用最小離線版面配置來更新 Visual Studio
 
@@ -54,59 +54,58 @@ ms.locfileid: "110188105"
 ```MinimalLayout.exe [command] <options>...```
 
 #### <a name="commands"></a>命令
+
 * **預覽**：使用此命令可預覽要下載的套件數目，以及用來建立此配置的總空間。
 * **產生**：使用此命令來產生更新 Visual Studio 的最基本版面配置。
 * **重新** 產生：使用此命令可使用現有的基本版面配置回應檔來重新產生配置。 每個最基本的版面配置都會產生一個 `MinimalLayout.json` 回應檔案，其中包含原始的最基本版面配置輸入參數。 您可以使用 [ **重新** 產生] 命令和 `MinimalLayout.json` 回應檔來重新產生最基本的版面配置。 如果您想要根據先前最基本的版面配置回應檔，建立新 Visual Studio 更新的最基本配置，這會很有用。
 
    此命令 `MinimalLayout.json` 需要已產生之配置的檔案路徑。
 
-    ```cmd
-    MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
-    ```
+   ```shell
+   MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
+   ```
 
 * **確認**：使用此命令來判斷版面配置資料夾是否已損毀。
 * **修正**：使用此命令來修正損毀的版面配置資料夾，包括從版面配置資料夾取代任何遺漏的封裝。
 
-::: moniker range="vs-2019"
-
 #### <a name="options"></a>選項
 
-|選項。    |描述    |必要/選用 |範例 |
-|:----------|:-----------|:------------|:--------------|
-|--targetLocation &lt; dir&gt; |指定要在其中建立基本離線版面配置的目錄。       |必要        |--targetLocation c:\VSLayout\ |
-|--baseVersion &lt; 版本&gt;|從這個版本開始，將會產生最基本的離線版面配置。   |必要|--baseVersion 16.4.0 版 |
-|--targetVersion &lt; 版本&gt;|將會產生最基本的離線配置，包括此版本。|必要|--targetVersion 16.4.4 版|
-|--語言    |指定要包含在最基本離線配置中的語言。 您可以指定多個值，並以空格分隔。    |必要    |--語言 en-us fr-fr |
-|--productIds &lt; 一或多個產品識別碼&gt;    |從最基本的離線配置（以逗號分隔）將產生的產品 () 的識別碼 (s) 。 <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|必要|--productIds VisualStudio，VisualStudio.. Professional |
-|--filePath    |從已建立的版面配置，檔案 MinimalLayout.js檔案路徑。 此選項只適用于重新產生命令。     |重新產生命令的必要參數    |--filePath C:\VSLayout\minimalLayout.js開啟 <br><br> **請注意，[重新產生] 命令只會採用--filePath 作為選項。** |
-|--新增 &lt; 一或多個工作負載或元件識別碼&gt;    |指定要新增的一或多個工作負載或元件識別碼。 您可以使用--includeRecommended 和/或，全域新增其他元件 <br> –-includeOptional。 您可以指定多個工作負載或元件識別碼，並以空格分隔。    |選擇性    |--新增 VisualStudio ManagedDesktop VisualStudio. NetWeb 元件。元件。 VisualStudio |
-|--includeRecommended    |包含所安裝任何工作負載的建議元件，但不包含選擇性元件。    |選擇性    |針對特定工作負載： <br> --新增 VisualStudio 工作負載。 ManagedDesktop; includeRecommended <br><br> 適用于所有工作負載：--includeRecommended |
-|--includeOptional |針對任何已安裝的工作負載（包括建議的元件），包含選用的元件。    |選擇性    |針對特定工作負載： <br>--新增 VisualStudio 工作負載。 ManagedDesktop; includeOptional <br><br> 適用于所有工作負載：--includeOptional |
+::: moniker range=">=vs-2019"
+
+| 選項。                                             | 描述                                                                                                                                                                                                                                                                                                                                                                                                                                 | 必要/選用               | 範例                                                                                                                                                          |
+|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --targetLocation &lt; dir&gt;                        | 指定要在其中建立基本離線版面配置的目錄。                                                                                                                                                                                                                                                                                                                                                                          | 必要                        | --targetLocation c:\VSLayout\                                                                                                                                    |
+| --baseVersion &lt; 版本&gt;                       | 從這個版本開始，將會產生最基本的離線版面配置。                                                                                                                                                                                                                                                                                                                                                                    | 必要                        | --baseVersion 16.4.0 版                                                                                                                                             |
+| --targetVersion &lt; 版本&gt;                     | 將會產生最基本的離線配置，包括此版本。                                                                                                                                                                                                                                                                                                                                                              | 必要                        | --targetVersion 16.4.4 版                                                                                                                                           |
+| --語言                                         | 指定要包含在最基本離線配置中的語言。 您可以指定多個值，並以空格分隔。                                                                                                                                                                                                                                                                                                                    | 必要                        | --語言 en-us fr-fr                                                                                                                                          |
+| --productIds &lt; 一或多個產品識別碼&gt;        | 從最基本的離線配置（以逗號分隔）將產生的產品 () 的識別碼 (s) 。 <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul> | 必要                        | --productIds VisualStudio，VisualStudio.. Professional                                                               |
+| --filePath                                          | 從已建立的版面配置，檔案 MinimalLayout.js檔案路徑。 此選項只適用于重新產生命令。                                                                                                                                                                                                                                                                                                          | 重新產生命令的必要參數 | --filePath C:\VSLayout\minimalLayout.js開啟 <br><br> **請注意，[重新產生] 命令只會採用--filePath 作為選項。**                                      |
+| --新增 &lt; 一或多個工作負載或元件識別碼&gt; | 指定要新增的一或多個工作負載或元件識別碼。 您可以使用--includeRecommended 和/或，全域新增其他元件 <br> –-includeOptional。 您可以指定多個工作負載或元件識別碼，並以空格分隔。                                                                                                                                                                                                   | 選用                        | --新增 VisualStudio ManagedDesktop VisualStudio. NetWeb 元件。元件。 VisualStudio                                        |
+| --includeRecommended                                | 包含所安裝任何工作負載的建議元件，但不包含選擇性元件。                                                                                                                                                                                                                                                                                                                                  | 選用                        | 針對特定工作負載： <br> --新增 VisualStudio 工作負載。 ManagedDesktop; includeRecommended <br><br> 適用于所有工作負載：--includeRecommended |
+| --includeOptional                                   | 針對任何已安裝的工作負載（包括建議的元件），包含選用的元件。                                                                                                                                                                                                                                                                                                                                | 選用                        | 針對特定工作負載： <br>--新增 VisualStudio 工作負載。 ManagedDesktop; includeOptional <br><br> 適用于所有工作負載：--includeOptional         |
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-#### <a name="options"></a>選項
-
-|選項。    |描述    |必要/選用 |範例 |
-|:----------|:-----------|:------------|:--------------|
-|--targetLocation &lt; dir&gt; |指定要在其中建立基本離線版面配置的目錄。       |必要        |--targetLocation c:\VSLayout\ |
-|--baseVersion &lt; 版本&gt;|從這個版本開始，將會產生最基本的離線版面配置。   |必要|--baseVersion 15.0.0 版 |
-|--targetVersion &lt; 版本&gt;|將會產生最基本的離線配置，包括此版本。|必要|--targetVersion 15.9.31|
-|--語言    |指定要包含在最基本離線配置中的語言。 您可以指定多個值，並以空格分隔。    |必要    |--語言 en-us fr-fr |
-|--productIds &lt; 一或多個產品識別碼&gt;    |從最基本的離線配置（以逗號分隔）將產生的產品 () 的識別碼 (s) 。 <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|必要|--productIds VisualStudio，VisualStudio.. Professional |
-|--filePath    |從已建立的版面配置，檔案 MinimalLayout.js檔案路徑。 此選項只適用于重新產生命令。     |重新產生命令的必要參數    |--filePath C:\VSLayout\minimalLayout.js開啟 <br><br> **請注意，[重新產生] 命令只會採用--filePath 作為選項。** |
-|--新增 &lt; 一或多個工作負載或元件識別碼&gt;    |指定要新增的一或多個工作負載或元件識別碼。 您可以使用--includeRecommended 和/或，全域新增其他元件 <br> –-includeOptional。 您可以指定多個工作負載或元件識別碼，並以空格分隔。    |選擇性    |--新增 VisualStudio ManagedDesktop VisualStudio. NetWeb 元件。元件。 VisualStudio |
-|--includeRecommended    |包含所安裝任何工作負載的建議元件，但不包含選擇性元件。    |選擇性    |針對特定工作負載： <br> --新增 VisualStudio 工作負載。 ManagedDesktop; includeRecommended <br><br> 適用于所有工作負載：--includeRecommended |
-|--includeOptional |針對任何已安裝的工作負載（包括建議的元件），包含選用的元件。    |選擇性    |針對特定工作負載： <br>--新增 VisualStudio 工作負載。 ManagedDesktop; includeOptional <br><br> 適用于所有工作負載：--includeOptional |
+| 選項。                                             | 描述                                                                                                                                                                                                                                                                                                                                                                                                                                 | 必要/選用               | 範例                                                                                                                                                          |
+|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --targetLocation &lt; dir&gt;                        | 指定要在其中建立基本離線版面配置的目錄。                                                                                                                                                                                                                                                                                                                                                                          | 必要                        | --targetLocation c:\VSLayout\                                                                                                                                    |
+| --baseVersion &lt; 版本&gt;                       | 從這個版本開始，將會產生最基本的離線版面配置。                                                                                                                                                                                                                                                                                                                                                                    | 必要                        | --baseVersion 15.0.0 版                                                                                                                                             |
+| --targetVersion &lt; 版本&gt;                     | 將會產生最基本的離線配置，包括此版本。                                                                                                                                                                                                                                                                                                                                                              | 必要                        | --targetVersion 15.9.31                                                                                                                                          |
+| --語言                                         | 指定要包含在最基本離線配置中的語言。 您可以指定多個值，並以空格分隔。                                                                                                                                                                                                                                                                                                                    | 必要                        | --語言 en-us fr-fr                                                                                                                                          |
+| --productIds &lt; 一或多個產品識別碼&gt;        | 從最基本的離線配置（以逗號分隔）將產生的產品 () 的識別碼 (s) 。 <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul> | 必要                        | --productIds VisualStudio，VisualStudio.. Professional                                                               |
+| --filePath                                          | 從已建立的版面配置，檔案 MinimalLayout.js檔案路徑。 此選項只適用于重新產生命令。                                                                                                                                                                                                                                                                                                          | 重新產生命令的必要參數 | --filePath C:\VSLayout\minimalLayout.js開啟 <br><br> **請注意，[重新產生] 命令只會採用--filePath 作為選項。**                                      |
+| --新增 &lt; 一或多個工作負載或元件識別碼&gt; | 指定要新增的一或多個工作負載或元件識別碼。 您可以使用--includeRecommended 和/或，全域新增其他元件 <br> –-includeOptional。 您可以指定多個工作負載或元件識別碼，並以空格分隔。                                                                                                                                                                                                   | 選用                        | --新增 VisualStudio ManagedDesktop VisualStudio. NetWeb 元件。元件。 VisualStudio                                        |
+| --includeRecommended                                | 包含所安裝任何工作負載的建議元件，但不包含選擇性元件。                                                                                                                                                                                                                                                                                                                                  | 選用                        | 針對特定工作負載： <br> --新增 VisualStudio 工作負載。 ManagedDesktop; includeRecommended <br><br> 適用于所有工作負載：--includeRecommended |
+| --includeOptional                                   | 針對任何已安裝的工作負載（包括建議的元件），包含選用的元件。                                                                                                                                                                                                                                                                                                                                | 選用                        | 針對特定工作負載： <br>--新增 VisualStudio 工作負載。 ManagedDesktop; includeOptional <br><br> 適用于所有工作負載：--includeOptional         |
 
 ::: moniker-end
 
 ### <a name="generating-a-minimal-layout"></a>產生基本版面配置
 
 > [!IMPORTANT]
->  這些指示假設您先前已建立網路安裝版面配置。 如需如何進行這項操作的詳細資訊，請參閱 [建立 Visual Studio 的網路安裝](create-a-network-installation-of-visual-studio.md) 頁面。
+> 這些指示假設您先前已建立網路安裝版面配置。 如需如何進行這項操作的詳細資訊，請參閱 [建立 Visual Studio 的網路安裝](create-a-network-installation-of-visual-studio.md) 頁面。
 
 使用指定版本範圍的 [ **產生** ] 命令建立最基本的版面配置。 您也需要瞭解 productId、語言和任何需要的特定工作負載。 這種最基本的版面配置會將基底版本的任何 Visual Studio 實例更新為目標版本，並包含目標版本。
 
@@ -114,87 +113,87 @@ ms.locfileid: "110188105"
 
 讓我們逐步解說一些範例，說明如何預覽、產生和重新產生最基本的版面配置：
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-- 首先，我們將示範如何預覽16.4.0 版至僅16.4.4 版英文版的 Visual Studio Enterprise 版本版面配置。
+* 首先，我們將示範如何預覽16.4.0 版至僅16.4.4 版英文版的 Visual Studio Enterprise 版本版面配置。
 
-    ```cmd
-    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --languages en-US
+  ```
 
-- 以下說明如何使用一個工作負載來產生相同的版面配置。
+* 以下說明如何使用一個工作負載來產生相同的版面配置。
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+  ```
 
-- 以下說明如何使用現有的回應檔重新產生最基本的離線配置。
+* 以下說明如何使用現有的回應檔重新產生最基本的離線配置。
 
-    ```cmd
-    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
-    ```
+  ```shell
+  MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+  ```
 
 使用 [ **產生** ] 命令的其他一些範例：
 
-- 以下說明如何新增額外的工作負載，並只包含建議的封裝。
+* 以下說明如何新增額外的工作負載，並只包含建議的封裝。
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Professional --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Professional --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+  ```
 
-- 您也可以產生支援多項產品的基本離線版面配置。
+* 您也可以產生支援多項產品的基本離線版面配置。
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise,Microsoft.VisualStudio.Product.Professional --baseVersion 16.4.0 --targetVersion 16.4.4 --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise,Microsoft.VisualStudio.Product.Professional --baseVersion 16.4.0 --targetVersion 16.4.4 --languages en-US
+  ```
 
-- 最後，以下是您在最基本的版面配置中包含多種語言的方式。
+* 最後，以下是您在最基本的版面配置中包含多種語言的方式。
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+  ```
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-- 首先，我們將示範如何預覽15.0.0 版至僅15.9.31 英文版的 Visual Studio Enterprise 版本版面配置。
+* 首先，我們將示範如何預覽15.0.0 版至僅15.9.31 英文版的 Visual Studio Enterprise 版本版面配置。
 
-    ```cmd
-    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+  ```
 
-- 以下說明如何使用一個工作負載來產生相同的版面配置。
+* 以下說明如何使用一個工作負載來產生相同的版面配置。
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+  ```
 
-- 以下說明如何使用現有的回應檔重新產生最基本的離線配置。
+* 以下說明如何使用現有的回應檔重新產生最基本的離線配置。
 
-    ```cmd
-    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
-    ```
+  ```shell
+  MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+  ```
 
 使用 [ **產生** ] 命令的其他一些範例：
 
-- 以下說明如何新增額外的工作負載，並只包含建議的封裝。
+* 以下說明如何新增額外的工作負載，並只包含建議的封裝。
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+  ```
 
-- 您也可以產生支援多項產品的基本離線版面配置。
+* 您也可以產生支援多項產品的基本離線版面配置。
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise,Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise,Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+  ```
 
-- 最後，以下是您在最基本的版面配置中包含多種語言的方式。
+* 最後，以下是您在最基本的版面配置中包含多種語言的方式。
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+  ```
 
 ::: moniker-end
 
@@ -202,17 +201,17 @@ ms.locfileid: "110188105"
 
 在建立之後，請使用 [ **驗證** ] 和 [ **修正** ] 命令來維持最基本的版面配置。 **Verify** 命令可判斷最基本配置中是否有任何損毀或遺漏的套件。 如果您在執行 [ **驗證** ] 命令之後遇到任何問題，請使用 [ **修正** ] 命令來更正遺失或損毀的封裝。
 
-- 以下是如何驗證配置是否損毀或遺失套件：
+* 以下是如何驗證配置是否損毀或遺失套件：
 
-    ```cmd
-    MinimalLayout.exe Verify --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe Verify --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --languages en-US
+  ```
 
-- 以下是修正該配置的方法：
+* 以下是修正該配置的方法：
 
-    ```cmd
-    MinimalLayout.exe fix --targetLocation C:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeRecommended --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe fix --targetLocation C:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeRecommended --languages en-US
+  ```
 
 >[!NOTE]
 > 此配置不能用來修復 Visual Studio 安裝。 若要修復 Visual Studio 的現有實例，請參閱 [修復 Visual Studio](repair-visual-studio.md)。
@@ -224,19 +223,21 @@ ms.locfileid: "110188105"
 
 流覽至資料夾，並找出啟動載入器應用程式名稱。 啟動載入器應用程式的名稱，取決於產生最基本版面配置時指定的 ProductId 值。 請參閱下表中的常見範例。
 
-|ProductId 值    |應用程式名稱|
-|:-----------|:------------|
-|Microsoft.VisualStudio.Product.Enterprise    |vs_enterprise.exe|
-|Microsoft.VisualStudio.Product.Professional    |vs_professional.exe|
-|Microsoft.VisualStudio.Product.BuildTools    |vs_buildtools.exe|
+| ProductId 值                             | 應用程式名稱    |
+|---------------------------------------------|---------------------|
+| Microsoft.VisualStudio.Product.Enterprise   | vs_enterprise.exe   |
+| Microsoft.VisualStudio.Product.Professional | vs_professional.exe |
+| Microsoft.VisualStudio.Product.BuildTools   | vs_buildtools.exe   |
 
 更新會以兩個步驟套用至 Visual Studio 實例。 從更新 Visual Studio 安裝程式開始，然後更新 Visual Studio。
+
+::: moniker range="vs-2017"
 
 1. **更新 Visual Studio 安裝程式**
 
     如有必要，請執行下列命令， `vs_enterprise.exe`  並以正確的啟動載入器應用程式名稱取代。
 
-    ```cmd
+    ```shell
     vs_enterprise.exe --quiet --update --offline C:\VSLayout\vs_installer.opc
     ```
 
@@ -246,9 +247,55 @@ ms.locfileid: "110188105"
 
     執行下列命令，適當地替代 installPath 命令列參數。 也請務必使用正確的啟動載入器應用程式名稱。
 
-    ```cmd
+    ```shell
     vs_enterprise.exe update --noWeb --quiet --installpath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise"
     ```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. **更新 Visual Studio 安裝程式**
+
+    如有必要，請執行下列命令， `vs_enterprise.exe`  並以正確的啟動載入器應用程式名稱取代。
+
+    ```shell
+    vs_enterprise.exe --quiet --update --offline C:\VSLayout\vs_installer.opc
+    ```
+
+2. **更新 Visual Studio 應用程式**
+
+    若要更新 Visual Studio，您必須指定要更新 Visual Studio 實例的 installPath。 如果安裝了多個 Visual Studio 實例，每一個實例都需要個別更新。 強烈建議您以 `–noWeb` update 命令指定選項，以防止安裝不是最基本配置的元件。 這可防止您離開 Visual Studio 處於無法使用的狀態。
+
+    執行下列命令，適當地替代 installPath 命令列參數。 也請務必使用正確的啟動載入器應用程式名稱。
+
+    ```shell
+    vs_enterprise.exe update --noWeb --quiet --installpath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise"
+    ```
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. **更新 Visual Studio 安裝程式**
+
+    如有必要，請執行下列命令， `vs_enterprise.exe`  並以正確的啟動載入器應用程式名稱取代。
+
+    ```shell
+    vs_enterprise.exe --quiet --update --offline C:\VSLayout\vs_installer.opc
+    ```
+
+2. **更新 Visual Studio 應用程式**
+
+    若要更新 Visual Studio，您必須指定要更新 Visual Studio 實例的 installPath。 如果安裝了多個 Visual Studio 實例，每一個實例都需要個別更新。 強烈建議您以 `–noWeb` update 命令指定選項，以防止安裝不是最基本配置的元件。 這可防止您離開 Visual Studio 處於無法使用的狀態。
+
+    執行下列命令，適當地替代 installPath 命令列參數。 也請務必使用正確的啟動載入器應用程式名稱。
+
+    ```shell
+    vs_enterprise.exe update --noWeb --quiet --installpath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise"
+    ```
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

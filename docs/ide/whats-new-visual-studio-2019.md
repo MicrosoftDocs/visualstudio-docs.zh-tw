@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 05/28/2021
+ms.date: 06/17/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 1860c399318dbe68c55db9b07068c3dd635481c9
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 2f571860d08d16d85e53148bc1023cb08a1c36d2
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113058"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307774"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -220,20 +220,19 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ## <a name="whats-next"></a>後續步驟
 
-我們對 Visual Studio 2019 的更新通常附帶可大幅改善您開發體驗的新功能。 若要深入瞭解我們最新的創新，請參閱 [Visual Studio 的 Blog](https://devblogs.microsoft.com/visualstudio/)。 如需我們在預覽版本中發行之內容的記錄，請參閱 [Preview 版本](/visualstudio/releases/2019/release-notes-preview/)資訊。 如需我們接下來打算發行的內容清單，請參閱 [Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap)。
+我們會經常更新 Visual Studio 的新功能，讓您的開發體驗更好。 若要深入瞭解我們最新的創新，請參閱 [Visual Studio 的 Blog](https://devblogs.microsoft.com/visualstudio/)。 如需我們在預覽版本中發行之內容的記錄，請參閱 [Preview 版本](/visualstudio/releases/2019/release-notes-preview/)資訊。 如需我們接下來打算發行的內容清單，請參閱 [Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap)。
 
-同時，這裡有一項新功能，目前正在運作。
+同時，這裡的功能目前已在運作中：
 
 - **改良 Visual Studio 2019 (Preview) 的 Git 體驗**
 
-   雖然新的 Git 版本控制體驗現已在 Visual Studio 2019 [16.8 版](/visualstudio/releases/2019/release-notes/)中預設為開啟，但我們仍會繼續新增功能，以增強最新預覽版本的體驗。
+   雖然 Git 版本控制工具是 Visual Studio 2019 [16.8 版](/visualstudio/releases/2019/release-notes-history/) 和更新版本中的預設體驗，但我們仍會繼續新增功能，以增強最新 Visual Studio 2019 Preview 版本 [16.11 版](/visualstudio/releases/2019/release-notes-preview/)的體驗。
 
    如需詳細資訊，請參閱 [Visual Studio 頁面中的版本控制](/visualstudio/version-control/) 。
 
-如需 Visual Studio 2019 預覽版本的詳細資訊 &mdash; ，如果您想要試用， &mdash; 請參閱 **[Visual Studio 預覽](https://aka.ms/vspreview/)** 頁面。
+- **Visual Studio 2022 (Preview) 的第一個公開版本現已推出**
 
-> [!TIP]
-> 若要深入瞭解我們的下一版，請參閱 **[Visual Studio 2022](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)** 的 blog 文章。
+    下一個主要版本的公開預覽版 [Visual Studio 2022](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)，現已推出。 新版本的速度更快、更平易近人且更輕量。 而且，第一次 Visual Studio 是64位。 如需下載連結和詳細資訊，請參閱 **[下載 Visual Studio 2022 Preview 1](https://devblogs.microsoft.com/visualstudio/?p=232975&preview=true)** 的 blog 文章。
 
 ## <a name="give-us-feedback"></a>提供意見反應
 

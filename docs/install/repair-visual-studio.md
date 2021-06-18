@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8bbd0fe6fdb724c5b3928d430f6ef836f2e49b4c
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 5fd791b035bc99d46f53d499339a9e9f80a42905
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112916"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306939"
 ---
 # <a name="repair-visual-studio"></a>修復 Visual Studio
 
@@ -59,7 +59,7 @@ ms.locfileid: "112112916"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 在您的電腦上找到 **Visual Studio 安裝程式**。
 

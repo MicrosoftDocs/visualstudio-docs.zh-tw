@@ -15,18 +15,18 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6e42681d2c25162df22af9711d47b71ba155d67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a377acba7b8c64503e5e5f821b5f3f833a8d73b2
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867434"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308047"
 ---
 # <a name="add-new-data-sources"></a>新增新資料來源
 
-:::moniker range="vs-2019"
+:::moniker range=">=vs-2019"
 > [!NOTE]
-> 本文所述的功能適用于 .NET Framework Windows Forms 和 WPF 開發。 在 Visual Studio 2019 (和舊版) 中，.NET Core 開發並不支援 WPF 和 Windows Forms 的功能。
+> 本文所述的功能適用于 .NET Framework Windows Forms 和 WPF 開發。 針對 WPF 和 Windows Forms，.NET Core 開發不支援這些功能。
 :::moniker-end
 
 在 Visual Studio 中的 .NET data tools 的內容中，「 *資料來源* 」一詞是指連接到資料存放區，並將資料提供給 .net 應用程式的 .net 物件。 當您從 [ **資料來源** ] 視窗中拖放資料庫物件時，Visual Studio 設計工具可以取用資料來源的輸出，以產生將資料系結至表單的未定案程式碼。 這種資料來源可以是：

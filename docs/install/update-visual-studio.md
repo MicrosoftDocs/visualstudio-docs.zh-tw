@@ -17,12 +17,12 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9244c9e234c56b058dbfe92a4ef6a10d8c9c702d
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: b541568da45c9bd8dda7258534193371e7e9f04b
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113189"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306835"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>將 Visual Studio 更新至最新版本
 
@@ -164,9 +164,9 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 ::: moniker range="vs-2019"
 
-我們建議您更新到[最新發行](/visualstudio/releases/2019/release-notes/)的 Visual Studio 2019，使您可以持續取得最新的功能、修正及功能改進。
+建議您更新至最 [新版本](/visualstudio/releases/2019/release-notes/) 的 Visual Studio，以便隨時取得最新的功能、修正和改進。
 
-如果您尚未安裝 Visual Studio 2019，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads) 頁面，免費進行安裝。 如果您目前使用不同版本的 Visual Studio，您可以 [並存安裝 Visual Studio 版本](../install/install-visual-studio-versions-side-by-side.md)，或 [卸載舊版的 Visual Studio](../install/uninstall-visual-studio.md)。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。 如果您目前使用不同版本的 Visual Studio，您可以 [並存安裝 Visual Studio 版本](../install/install-visual-studio-versions-side-by-side.md)，或 [卸載舊版的 Visual Studio](../install/uninstall-visual-studio.md)。
 
 > [!IMPORTANT]
 > 您必須以具有安裝、更新或修改 Visual Studio 之系統管理權限的帳戶登入。 如需詳細資訊，請參閱[使用者權限和 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
@@ -287,9 +287,133 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 ::: moniker-end
 
-## <a name="administrator-updates"></a>系統管理員更新 
+::: moniker range=">=vs-2022"
 
-如果您是集中管理軟體安裝之組織的一部分，您的企業系統管理員可能會導致電腦上的 Visual Studio 更新。 如需如何控制或設定電腦可接受哪些更新類型的詳細資訊，請參閱 [使用設定管理員部署 Visual Studio 更新](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates)。 
+建議您更新至最 [新版本](/visualstudio/releases/2022/release-notes/) 的 Visual Studio，以便隨時取得最新的功能、修正和改進。
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。 如果您目前使用不同版本的 Visual Studio，您可以 [並存安裝 Visual Studio 版本](../install/install-visual-studio-versions-side-by-side.md)，或 [卸載舊版的 Visual Studio](../install/uninstall-visual-studio.md)。
+
+> [!IMPORTANT]
+> 您必須以具有安裝、更新或修改 Visual Studio 之系統管理權限的帳戶登入。 如需詳細資訊，請參閱[使用者權限和 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
+>
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[更新 Visual Studio for Mac](/visualstudio/mac/update)。
+
+以下是更新 Visual &nbsp; Studio 2022 的方式 &nbsp; 。
+
+## <a name="use-the-visual-studio-installer"></a>使用 Visual Studio 安裝程式
+
+1. 在您的電腦上找到 **Visual Studio 安裝程式**。
+
+   在 Windows [開始] 功能表中，您可搜尋「安裝程式」。
+
+   ![Visual Studio 安裝程式](media/vs-2019/visual-studio-installer.png "搜尋 Visual Studio 安裝程式")
+
+   您可能需要更新安裝程式才能繼續。 若是如此，請遵循提示。
+
+1. 請在安裝程式中尋找您安裝的 Visual Studio 版本。
+
+   例如，如果您先前已安裝 Visual &nbsp; Studio 社區 &nbsp; 2022，並有更新，則安裝程式中會出現 **更新可用** 訊息。
+
+     ![選取您要更新的 Visual Studio 2019 版本](media/vs-2019/vs-installer-update-visual-studio-community.png "選取您要更新的 Visual Studio 2019 版本")
+
+1. 選擇 [更新] 安裝更新。
+
+    ![選取 [更新] 按鈕來安裝更新](media/vs-2019/vs-installer-choose-update-visual-studio-community.png "選取 [更新] 按鈕來安裝更新")
+
+1. 在更新完成之後，可能會要求您重新啟動電腦。 若是這樣，請這麼做，然後像平常一樣啟動 Visual Studio。
+
+   如果未要求您重新啟動電腦，請選擇 [啟動] 以從安裝程式啟動 Visual Studio。
+
+    ![選取 [啟動] 按鈕以開始 Visual Studio](media/vs-2019/choose-launch-visual-studio-community.png "選取 [啟動] 按鈕以開始 Visual Studio")
+
+## <a name="use-the-ide"></a>使用 IDE
+
+您可以使用功能表列或 Visual Studio 2022 中的 [搜尋] 方塊來檢查更新，然後再進行安裝。
+
+### <a name="open-visual-studio"></a>開啟 Visual Studio
+
+1. 從 Windows [ **開始** ] 功能表中，選擇 **Visual Studio 2022**。
+
+    ![開啟 Visual Studio 2022](media/vs-2019/vs-installer-visual-studio-2019.png "從 Windows 開啟 Visual Studio 2019")
+
+1. 在 [開始使用] 下，選擇任一選項開啟 IDE。
+
+    ![開啟 Visual Studio 安裝程式](media/vs2019-choose-option-from-get-started.png "開啟 Visual Studio 安裝程式")
+
+    Visual Studio 隨即開啟。 在 IDE 中，會顯示 **Visual Studio 2022 更新** 訊息。
+
+    ![IDE 中的「Visual Studio 2019 更新」訊息](media/vs-2019/update-visual-studio-ide-message.png "IDE 中的「Visual Studio 2019 更新」訊息")
+
+1. 在 **Visual Studio 2022 更新** 訊息中，選擇 [ **視圖詳細資料**]。
+
+   ![選擇 Visual Studio 2019 IDE 更新訊息中的 [視圖詳細資料] 按鈕](media/vs-2019/update-visual-studio-ide-view-details.png "選擇 Visual Studio 2019 更新訊息中的 [查看詳細資料] 按鈕")
+
+1. 在 [已下載更新，可以開始安裝] 對話方塊方塊中，選擇 [更新]。
+
+     ![選擇 [更新已下載並準備安裝] 對話方塊中的 [更新] 按鈕](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "選擇 [更新已下載並準備安裝] 對話方塊中的 [更新] 按鈕")
+
+   Visual Studio 隨即更新，然後關閉再重新開啟。
+
+### <a name="in-visual-studio"></a>在 Visual Studio 中
+
+1. 從功能表列選擇 [說明]，然後選擇 [查看是否有更新]。
+
+     ![選擇 [說明] 功能表中的 [檢查更新]](media/vs-2019/vs-ide-check-updates-help-menu.png "選擇 [說明] 功能表中的 [檢查更新]")
+
+    > [!NOTE]
+    > 您也可以使用 IDE 中的搜尋方塊來檢查更新。 按下 **Ctrl** + **Q**，輸入「檢查更新」，然後選擇符合的搜尋結果。
+
+1. 在 [有可用的更新] 對話方塊中，選擇 [更新]。
+
+     ![選擇 [可用的更新] 對話方塊中的 [更新] 按鈕](media/vs-2019/update-visual-studio-community-from-ide.png "選擇 [可用的更新] 對話方塊中的 [更新] 按鈕")
+
+   Visual Studio 隨即更新，然後關閉再重新開啟。
+
+## <a name="use-the-notifications-hub"></a>使用 [通知] 中樞
+
+1. 在 Visual Studio 中，儲存您的工作。
+
+1. 從 Visual Studio IDE 的右下角選擇通知圖示，以開啟 [通知] 中樞。
+
+   ![Visual Studio IDE 中的通知圖示](media/vs-2019/notification-bar.png "Visual Studio IDE 中的通知圖示")
+
+1. 在 [通知] 中樞中，選擇您要安裝的更新，然後選擇 [檢視詳細資料]。
+
+     ![Visual Studio 2019 中的通知中樞](media/vs-2019/notification-hub-update.png "Visual Studio 2019 中的通知中樞")
+
+      > [!TIP]
+      > Visual Studio 2022 版的更新是累積的，因此請一律選擇安裝具有最新版本號碼的更新。
+
+1. 在 [有可用的更新] 對話方塊中，選擇 [更新]。
+
+   Visual Studio 隨即更新，然後關閉再重新開啟。
+
+## <a name="customize-update-settings"></a>自訂更新設定
+
+您能以數個不同方式自訂 Visual Studio 中的更新設定，例如，變更安裝模式和選取自動下載。
+
+有兩種安裝模式可選擇：
+
+* **在下載時安裝**
+* **全部下載後安裝**
+
+您也可以選擇 [自動下載更新] 設定，讓系統在機器閒置時下載更新。
+
+方法如下：
+
+1. 在功能表列上，選擇 [ **工具** > **選項**]。
+
+2. 展開 [環境]，然後選擇 [產品更新]。
+
+    ![Visual Studio 中的更新設定](media/vs-2019/update-settings-options.png)
+
+3. 選擇您要用於 Visual Studio 更新的安裝模式和自動下載選項。
+::: moniker-end
+
+## <a name="administrator-updates"></a>系統管理員更新
+
+如果您是集中管理軟體安裝之組織的一部分，您的企業系統管理員可能會導致電腦上的 Visual Studio 更新。 如需如何控制或設定電腦可接受哪些更新類型的詳細資訊，請參閱 [使用設定管理員部署 Visual Studio 更新](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates)。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

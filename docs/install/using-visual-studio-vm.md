@@ -17,14 +17,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 339b3661760ee539bb4135c59863e7e9fdae5afc
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 41247c13e8b35fd6e6cd26ac0ad0ea82f742fbb0
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295815"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306692"
 ---
-# <a name="visual-studio-images-on-azure"></a><a id="top"></a> Azure 上的 Visual Studio 映射
+# <a name="visual-studio-images-on-azure"></a>Azure 上的 Visual Studio 映像
 
 在預先設定的 Azure 虛擬機器 (VM) 中使用 Visual Studio，是從零開始到建立已啟動並執行中之開發環境的快速簡單方式。 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure) 中提供具有各種不同 Visual Studio 設定的系統映像。
 
@@ -34,12 +34,12 @@ ms.locfileid: "107295815"
 
 在 Azure Marketplace 中，您可以找到適用於最新主要版本的映像：Visual Studio 2019、Visual Studio 2017 和 Visual Studio 2015。  針對每個已發行的主要版本，您會看到原始發行至 Web (RTW) 版本和最新更新版本。  每個版本都提供 Visual Studio Enterprise 和 Visual Studio Community 版本。  這些映像會每個月至少更新一次，以納入最新的 Visual Studio 和 Windows 更新。  雖然映像的名稱會維持不變，但每個映像的描述會納入已安裝的產品版本和映像的「生效」日期。
 
-| 發行版本                                                                                                                                          | 版本              |    產品版本    |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019：最新的 (16.8 版) ](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise、Community | 版本16.8。0    |
-| [Visual Studio 2019：RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 版本16.0.20    |
-| [Visual Studio 2017：最新 (版本 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise、Community | 版本15.9.29   |
-| [Visual Studio 2017：RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise、Community | 版本 15.0.28   |
+| 發行版本                                                                                                                                                | 版本              | 產品版本       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|-----------------------|
+| [Visual Studio 2019：最新的 (16.8 版) ](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise、Community | 版本16.8。0        |
+| [Visual Studio 2019：RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 版本16.0.20       |
+| [Visual Studio 2017：最新 (版本 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise、Community | 版本15.9.29       |
+| [Visual Studio 2017：RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise、Community | 版本 15.0.28       |
 | [Visual Studio 2015：最新 (更新 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise、Community | 14.0.25431.01 版 |
 
 > [!NOTE]
@@ -92,8 +92,9 @@ Azure 提供各種不同的虛擬機器大小。 由於 Visual Studio 是一個�
 ## <a name="after-the-vm-is-running-whats-next"></a>在 VM 執行之後，接下來呢？
 
 Visual Studio 會依循 Azure 中的「自備授權」模型。 如同專用硬體上的安裝，前幾個步驟之一，就是為您的 Visual Studio 安裝取得授權。 若要將 Visual Studio 解除鎖定，請執行下列任何一項作業：
-- 使用與 Visual Studio 訂用帳戶相關聯的 Microsoft 帳戶進行登入
-- 使用最初購買所隨附的產品金鑰將 Visual Studio 解除鎖定
+
+* 使用與 Visual Studio 訂用帳戶相關聯的 Microsoft 帳戶進行登入
+* 使用最初購買所隨附的產品金鑰將 Visual Studio 解除鎖定
 
 如需詳細資訊，請參閱[登入 Visual Studio](../ide/signing-in-to-visual-studio.md) 和[如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
 

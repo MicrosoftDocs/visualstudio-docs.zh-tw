@@ -13,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 26f13d12324beb0e414761ce2d79297767c5d708
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 0efdb7d35549a32e1151a134ce3a665337bb27ce
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107297115"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308307"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>使用 C 在 Visual Studio 中建立 Windows Forms 應用程式\#
 
@@ -39,6 +39,15 @@ ms.locfileid: "107297115"
 
 ::: moniker-end
 
+::: moniker range="vs-2022"
+
+如果您尚未安裝 Visual Studio，請移至 [Visual Studio 2022 Preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022) 頁面，免費進行安裝。
+
+> [!NOTE]
+> 本教學課程中的某些螢幕擷取畫面使用深色佈景主題。 如果您未使用深色佈景主題，但想要使用，請參閱[將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)頁面以了解做法。
+
+::: moniker-end
+
 ## <a name="create-a-project"></a>建立專案
 
 首先，您將建立 C# 應用程式專案。 在您新增任何項目之前，專案類型會隨附您需要的所有範本檔案。
@@ -47,7 +56,7 @@ ms.locfileid: "107297115"
 
 1. 開啟 Visual Studio 2017。
 
-1. 從頂端功能表列中，選擇 [檔案]**[新增]** > **[專案]** > 。
+1. 從頂端功能表列中 **，選擇 [** 檔案 > **新增** > **專案**]。
 
 1. 在左窗格的 [ **新增專案** ] 對話方塊中，展開 [ **Visual c #**]，然後選擇 [ **Windows 桌面**]。 在中間窗格中，選擇 [Windows Forms App (.NET Framework)]。 然後將檔案命名為 `HelloWorld`。
 
@@ -57,9 +66,9 @@ ms.locfileid: "107297115"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. 開啟 Visual Studio 2019。
+1. 開啟 Visual Studio。
 
 1. 在 [開始] 視窗中，選擇 [ **建立新專案**]。
 
@@ -155,7 +164,7 @@ ms.locfileid: "107297115"
 
 1. 關閉 [ **Form1** ] 對話方塊以停止執行應用程式。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 若要深入了解，請繼續下列教學課程：
 

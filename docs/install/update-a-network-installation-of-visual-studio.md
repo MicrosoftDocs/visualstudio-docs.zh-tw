@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 74464aa76c24a798d33fa7639cdd0b6a07489bf7
-ms.sourcegitcommit: 62e39ea1bf0ed939376c4375fc180ff7c4c760fc
+ms.openlocfilehash: b833551d00f4bd8fb158c848d3bf5b48173e563b
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110660217"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306653"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
 
@@ -41,25 +41,25 @@ ms.locfileid: "110660217"
 
 * 首先，以下是如何建立只包含一份英文工作負載的配置範例：
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
 * 以下是如何該相同的配置更新為較新版本。 您不需要指定任何其他命令列參數。 已儲存先前的設定，並且將供這個配置資料夾中的任何後續配置命令使用。
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout
   ```
 
 * 以下是如何以自動方式將配置更新為較新版本。 配置作業會在新的主控台視窗中執行安裝程序。 此視窗會保持開啟，好讓使用者可以看到最後的結果及可能發生之任何錯誤的摘要。 如果您正以自動方式執行配置作業 (例如讓指令碼定期執行以將配置更新為最新版本)，則使用 `--passive` 參數和處理序將會自動關閉視窗。
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
 * 以下是如何新增額外的工作負載和當地語系化語言   (此命令會新增 *Azure 開發* 工作負載。 ) 現在會在此版面配置中包含受管理的桌面和 Azure。  所有這些工作負載也會包含英文和德文的語言資源。  而且，配置會更新為最新的可用版本。
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
@@ -70,7 +70,7 @@ ms.locfileid: "110660217"
 
 * 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。  (此命令會新增 *ASP.NET 和 網頁程式開發* 工作負載。現在 ) 此配置中包含受管理的桌面、Azure 和 ASP.NET & 網頁程式開發工作負載。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
@@ -98,6 +98,14 @@ ms.locfileid: "110660217"
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+* 利用兩個不同的命令，系統管理員可以更新 Visual Studio 的用戶端部署，而不需要任何使用者互動：
+  * 首先，更新 Visual Studio 安裝程式： <br>```vs_enterprise.exe --quiet --update```
+  * 接著，更新 Visual Studio 應用程式本身： <br>```vs_enterprise.exe update --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
 > [!NOTE]
 > 使用 [vswhere.exe 命令](tools-for-managing-visual-studio-instances.md)來識別用戶端電腦上 Visual Studio 現有執行個體的安裝路徑。
 >
@@ -108,7 +116,7 @@ ms.locfileid: "110660217"
 
 使用 `--verify`，對提供的離線快取執行驗證。 它會檢查套件檔案為遺失或無效。 在驗證結束時，會列印遺失檔案和無效檔案的清單。
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --verify
 ```
 
@@ -126,7 +134,7 @@ Microsoft 會定期提供 Visual Studio 更新，因此，您建立的新配置�
 
 使用 `--fix` 執行與 `--verify` 相同的驗證，同時嘗試修正已識別的問題。 `--fix` 程序需要網際網路連線，因此請先確定您的電腦連線至網際網路，再叫用 `--fix`。
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --fix
 ```
 
@@ -142,17 +150,17 @@ vs_enterprise.exe 可以在 layoutDir 內進行叫用。
 
 以下是如何使用 --clean 選項的一些範例：
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
 ```
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <file-path-of-catalog2> …
 ```
 
 您也可以叫用 &lt;layoutDir&gt; 內的 vs_enterprise.exe。 以下為範例：
 
-```cmd
+```shell
 c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 

@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c37ccb9c6dce1f6b20b8ade317e8135462c65011
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: eef6a8bbdf5afc3aa5f36b0afdb374fd5beac471
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800865"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307488"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 
@@ -31,9 +31,9 @@ ms.locfileid: "107800865"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然我們建議您嘗試 Visual Studio 的[web 安裝程式](https://visualstudio.microsoft.com/downloads)， &mdash; 這是一個小型檔案，可讓您隨時掌握我們瞭解的最新修正程式和功能， &mdash; 您可能無法使用。
+我們設計 Visual Studio 2019 和更新版本，以便在各種網路和電腦設定中順利運作。 雖然我們建議您嘗試 Visual Studio 的[web 安裝程式](https://visualstudio.microsoft.com/downloads)， &mdash; 這是一個小型檔案，可讓您隨時掌握我們瞭解的最新修正程式和功能， &mdash; 您可能無法使用。
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然我們
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
 
@@ -72,7 +72,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然我們
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 下載小型啟動載入器檔案之後，請使用命令列來建立本機快取。 然後，使用本機快取安裝 Visual Studio
 
@@ -84,40 +84,60 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然我們
 
 ::: moniker range="vs-2017"
 
-若要取得 Visual Studio 2017 15.9 版的最新啟動載入器，請移至 [Visual Studio 的舊版](https://visualstudio.microsoft.com/vs/older-downloads/) 頁面，並下載下列其中一個啟動載入器檔案： 
+若要取得 Visual Studio 2017 15.9 版的最新啟動載入器，請移至 [Visual Studio 的舊版](https://visualstudio.microsoft.com/vs/older-downloads/) 頁面，並下載下列其中一個啟動載入器檔案：
 
-| 版本 | 檔案名稱 |
-|-------------|-----------------------|
-|Visual Studio Professional 2017 15.9 版 | vs_professional.exe |
-|Visual Studio Enterprise 2017 15.9 版 | vs_enterprise.exe |
-|Visual Studio Build Tools 2017 15.9 版  | vs_buildtools.exe |
+| 版本                                      | 檔案名稱            |
+|----------------------------------------------|---------------------|
+| Visual Studio Professional 2017 15.9 版 | vs_professional.exe |
+| Visual Studio Enterprise 2017 15.9 版   | vs_enterprise.exe   |
+| Visual Studio Build Tools 2017 15.9 版  | vs_buildtools.exe   |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-一開始請從 [Visual Studio 下載] 頁面](https://visualstudio.microsoft.com/downloads) 或 [Visual Studio 2019 發行](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) 版頁面下載 Visual Studio 2019 啟動載入器，以供您選擇的版本和版本的 Visual Studio 使用。 您的安裝程式檔案或啟動載入器 &mdash; &mdash; 將會符合或類似于下列其中一項：
+一開始請從 [Visual Studio 下載] 頁面](https://visualstudio.microsoft.com/downloads) 或 [Visual Studio 2019 發行](/visualstudio/releases/2019/history#installing-an-earlier-release) 版頁面下載 Visual Studio 2019 啟動載入器，以供您選擇的版本和版本的 Visual Studio 使用。 您的安裝程式檔案或啟動載入器 &mdash; &mdash; 將會符合或類似于下列其中一項：
 
-| 版本                    | 檔案                                                                    |
-|----------------------------|-------------------------------------------------------------------------|
+| 版本                         | 檔案                                                                                                                                                                                                                               |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Visual Studio 2019 Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio 2019 Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 | Visual Studio 2019 Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
-| Visual Studio 2019 Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+| Visual Studio 2019 Build Tools  | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+>[!TIP]
+> Visual Studio 2022 的發行版本尚無法使用，以下啟動載入器適用于 Visual Studio 2022 的預覽版本。
+>從 [Visual Studio 下載] 頁面](https://aka.ms/vs2022preview)下載 Visual Studio 2022 啟動載入器開始。
+
+| 版本                         | 下載                                                            |
+|---------------------------------|---------------------------------------------------------------------|
+| Visual Studio 2022 專業版 | [vs_professional.exe](https://aka.ms/vs/17/pre/vs_professional.exe) |
+| Visual Studio 2022 企業版   | [vs_enterprise.exe](https://aka.ms/vs/17/pre/vs_enterprise.exe)     |
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 >[!TIP]
->如果您先前已下載啟動載入器檔案，而且想要確認它的版本，請參閱。 在 Windows 中，開啟檔案總管，以滑鼠右鍵按一下啟動載入器檔案，選擇 [ **屬性**]，選擇 [ **詳細資料** ] 索引標籤，然後查看 **產品版本** 號碼。 若要將該號碼符合 Visual Studio 的版本，請參閱 [Visual Studio 組建編號和發行日期](visual-studio-build-numbers-and-release-dates.md) ] 頁面。
+>如果您先前已下載啟動載入器檔案，而且想要確認它的版本，請參閱。 在 Windows 中，開啟檔案總管，以滑鼠右鍵按一下啟動載入器檔案，選擇 [ **屬性**]，選擇 [ **詳細資料** ] 索引標籤，然後查看 **產品版本** 號碼。 若要將該號碼符合 Visual Studio 的版本，請參閱 [Visual Studio 組建編號和發行日期](/visual-studio-build-numbers-and-release-dates.md) ] 頁面。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 >[!TIP]
->如果您先前已下載啟動載入器檔案，而且想要驗證其版本，請參閱以下說明。 在 Windows 中，開啟檔案總管，以滑鼠右鍵按一下啟動載入器檔案，選擇 [ **屬性**]，選擇 [ **詳細資料** ] 索引標籤，然後查看 **產品版本** 號碼。 若要將該號碼符合 Visual Studio 的版本，請參閱 [Visual Studio 2019 版本](https://docs.microsoft.com/visualstudio/releases/2019/history) 頁面。
+>如果您先前已下載啟動載入器檔案，而且想要驗證其版本，請參閱以下說明。 在 Windows 中，開啟檔案總管，以滑鼠右鍵按一下啟動載入器檔案，選擇 [ **屬性**]，選擇 [ **詳細資料** ] 索引標籤，然後查看 **產品版本** 號碼。 若要將該號碼符合 Visual Studio 的版本，請參閱 [Visual Studio 2019 版本](/visualstudio/releases/2019/history) 頁面。
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+>[!TIP]
+>如果您先前已下載啟動載入器檔案，而且想要驗證其版本，請參閱以下說明。 在 Windows 中，開啟檔案總管，以滑鼠右鍵按一下啟動載入器檔案，選擇 [ **屬性**]，選擇 [ **詳細資料** ] 索引標籤，然後查看 **產品版本** 號碼。 若要將該號碼符合 Visual Studio 的版本，請參閱 [Visual Studio 2022 版本](/visualstudio/releases/2022/history) 頁面。
 
 ::: moniker-end
 
@@ -132,25 +152,25 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然我們
 
 - 針對 .NET Web 和 .NET 桌面開發，請執行：
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
     ```
 
 - 針對 .NET 桌面和 Office 開發，請執行：
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
     ```
 
 - 針對 C++ 桌面開發，請執行：
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
 - 若要建立完整的本機版面配置（僅限英文版）， (這項功能需要很長 &mdash; 的時間！ ) ，請執行： 
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --lang en-US
     ```
 
@@ -161,7 +181,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然我們
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
    > [!NOTE]
    > 完整的 Visual Studio 配置至少需要 35 GB 磁碟空間。 如需詳細資訊，請參閱 [系統需求](/visualstudio/releases/2019/system-requirements/)。
@@ -174,13 +194,13 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然我們
 
 例如，如果您使用下列命令來建立本機安裝快取：
 
-```cmd
+```shell
 vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
 ```
 
 然後，使用此命令來執行安裝：
 
-```cmd
+```shell
 c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
 
@@ -190,7 +210,7 @@ c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.Mana
 > [!NOTE]
 > 如果您收到錯誤，表示簽章無效，則必須 [安裝更新的憑證](install-certificates-for-visual-studio-offline.md)。 開啟離線快取中的 [憑證] 資料夾。 按兩下每個憑證檔案，然後點選完成 [憑證管理員精靈]。 如果系統要求您輸入密碼，則請保留空白。
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 > [!TIP]
 > 針對離線安裝，如果您收到錯誤訊息，指出「找不到符合下列參數的產品」，請確定您使用的是 `--noweb` 16.3.5 版版或更新版本的參數。
 
@@ -198,22 +218,22 @@ c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.Mana
 
 ### <a name="list-of-language-locales"></a>語言地區設定清單
 
-| **語言地區設定** | **Language** |
-| ----------------------- | --------------- |
-| cs-CZ | 捷克文 |
-| de-DE | 德文 |
-| en-US | 英文 |
-| es-ES | 西班牙文 |
-| fr-FR | 法文 |
-| it-IT | 義大利文 |
-| ja-JP | 日文 |
-| ko-KR | 韓文 |
-| pl-PL | 波蘭文 |
-| pt-BR | 葡萄牙文 - 巴西 |
-| ru-RU | 俄文 |
-| tr-TR | 土耳其文 |
-| zh-CN | 中文 - 簡體 |
-| zh-TW | 中文 - 繁體 |
+| **語言地區設定** | **Language**          |
+|---------------------|-----------------------|
+| cs-CZ               | 捷克文                 |
+| de-DE               | 德文                |
+| en-US               | 英文               |
+| es-ES               | 西班牙文               |
+| fr-FR               | 法文                |
+| it-IT               | 義大利文               |
+| ja-JP               | 日文              |
+| ko-KR               | 韓文                |
+| pl-PL               | 波蘭文                |
+| pt-BR               | 葡萄牙文 - 巴西   |
+| ru-RU               | 俄文               |
+| tr-TR               | 土耳其文               |
+| zh-CN               | 中文 - 簡體  |
+| zh-TW               | 中文 - 繁體 |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

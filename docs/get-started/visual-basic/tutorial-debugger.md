@@ -1,6 +1,6 @@
 ---
-title: 教學課程：偵錯工具的 Visual Basic 程式碼
-description: 瞭解 Visual Studio 偵錯工具的功能，以及如何啟動偵錯工具、逐步執行程式碼，以及檢查 Visual Basic 應用程式中的資料。
+title: 教學課程： Debug Visual Basic 程式碼
+description: 學習 Visual Studio 偵錯工具的功能，以及如何啟動偵錯工具、逐步執行程式碼，以及檢查 Visual Basic 應用程式中的資料。
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 02/03/2020
 ms.technology: vs-ide-debug
@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6bc1cd4dd994a744e814ab893bfe67e24f110bb
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 42dd3c6b7301162e239bc87764056fdda2d08413
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682688"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308411"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 Visual Basic 程式碼進行偵錯
 
 本文以逐步解說介紹 Visual Studio 偵錯工具的功能。 如果您希望檢視偵錯工具功能的概要，請參閱[偵錯工具簡介](../../debugger/debugger-feature-tour.md)。 當您「偵錯您的應用程式」，通常表示您正在執行附加偵錯工具的應用程式。 執行此作業時，偵錯工具會提供許多方式來查看您程式碼所執行的功能。 您可以逐步執行程式碼並查看儲存在變數中的值、可以設定變數的監看式以查看值變更、可以檢查程式碼的執行路徑，查看是否正在執行程式碼的分支，依此類推。 如果這是您第一次嘗試偵錯程式碼，您可能需要先閱讀[適用於徹底初學者偵錯](../../debugger/debugging-absolute-beginners.md)，再瀏覽本文。
 
-雖然示範應用程式是 Visual Basic，但大部分的功能都適用于 c #、c + +、F #、Python、JavaScript 和 Visual Studio 支援的其他語言 (F # 不支援編輯後繼續。 F# 和 JavaScript 不支援 [自動變數] 視窗)。 螢幕擷取畫面是在 Visual Basic 中。
+雖然示範應用程式是 Visual Basic 的，但大部分的功能都適用于 c #、c + +、F #、Python、JavaScript 和其他 Visual Studio 所支援的語言 (F # 不支援編輯後繼續。 F# 和 JavaScript 不支援 [自動變數] 視窗)。 螢幕擷取畫面位於 Visual Basic 中。
 
 在本教學課程中，您將：
 
@@ -36,7 +36,7 @@ ms.locfileid: "101682688"
 > * 檢查資料提示和偵錯工具視窗中的變數
 > * 檢查呼叫堆疊
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 ::: moniker range=">=vs-2019"
 
@@ -61,7 +61,13 @@ ms.locfileid: "101682688"
 
 ::: moniker-end
 
-如果您需要安裝工作負載，但已有 visual studio，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 visual studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 **.Net Core 跨平臺開發** 工作負載，然後選擇 [ **修改**]。
+::: moniker range="vs-2022"
+
+如果您尚未安裝 Visual Studio 2022 Preview，請前往 [Visual Studio 2022 preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022) 頁面，免費進行安裝。
+
+::: moniker-end
+
+如果您需要安裝工作負載，但已有 Visual Studio，請移至 [**工具**  >  **取得工具和功能**]，這會開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 **.Net Core 跨平臺開發** 工作負載，然後選擇 [ **修改**]。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -71,7 +77,7 @@ ms.locfileid: "101682688"
 
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列中，選擇 [檔案]**[新增]** > **[專案]** > 。
+2. 從頂端功能表列中 **，選擇 [** 檔案 > **新增** > **專案**]。
 
 3. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將專案命名為 *開始使用-調試*。
 
@@ -81,9 +87,9 @@ ms.locfileid: "101682688"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. 開啟 Visual Studio 2019。
+1. 開啟 Visual Studio。
 
    如果 [開始] 視窗未開啟，請 **選擇 [** 檔案 > **開始視窗]**。
 
@@ -195,7 +201,7 @@ ms.locfileid: "101682688"
 
      ![使用 F11 來逐步執行程式碼](../visual-basic/media/get-started-f11-vb.png "F10 逐步執行")
 
-     F11 鍵是 **逐步執行** 命令，可將應用程式執行一次往前推進一個陳述式。 F11 鍵是以最詳細的方式檢查執行流程的好方法  (透過程式碼加快移動速度，我們也會示範一些其他選項 ) 。根據預設，偵錯工具會略過非使用者程式碼 (如果您需要更多詳細資料，請參閱我的程式 [代碼](../../debugger/just-my-code.md)) 。
+     F11 鍵是 **逐步執行** 命令，可將應用程式執行一次往前推進一個陳述式。 F11 鍵是以最詳細的方式檢查執行流程的好方法  (透過程式碼更快地移動，我們也會示範一些其他選項 ) 。根據預設，偵錯工具會略過非使用者程式碼 (如果您需要更多詳細資料，請參閱 [Just My Code](../../debugger/just-my-code.md)) 。
 
      假設您已完成方法的檢查 `SendMessage` ，而您想要退出該方法，但仍留在偵錯工具中。 您可以使用 [跳離函式] 命令完成這項動作。
 
@@ -318,7 +324,7 @@ ms.locfileid: "101682688"
 
     恭喜您完成此教學課程！
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 在本教學課程中，您已了解如何啟動偵錯工具、逐步執行程式碼，以及檢查變數。 建議您進一步查看偵錯工具功能，以及詳細資訊的連結。
 

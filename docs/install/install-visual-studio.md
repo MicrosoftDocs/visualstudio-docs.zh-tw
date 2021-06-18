@@ -20,18 +20,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e4db39c55ff669477efc833c2d482897d529b30b
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: b7955759c6c60e8074408cbc179f15d6a7a6e194
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113048"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307397"
 ---
 # <a name="install-visual-studio"></a>安裝 Visual Studio
 
 ::: moniker range="vs-2019"
 
 歡迎使用 Visual Studio 2019！ 在此版本中，您可以輕鬆選擇並安裝需要的功能。 因為降低了磁碟使用量下限，所以安裝快速，且對系統影響更小。
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+歡迎使用 Visual Studio 2022！ 在此版本中，您可以輕鬆選擇並安裝需要的功能。 因為降低了磁碟使用量下限，所以安裝快速，且對系統影響更小。
 
 ::: moniker-end
 
@@ -47,6 +53,12 @@ ms.locfileid: "112113048"
 ::: moniker range="vs-2019"
 
 是否想要深入了解此版本的其他新功能？ 請參閱[版本資訊](/visualstudio/releases/2019/release-notes/)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+是否想要深入了解此版本的其他新功能？ 請參閱[版本資訊](/visualstudio/releases/2022/release-notes/)。
 
 ::: moniker-end
 
@@ -86,6 +98,18 @@ ms.locfileid: "112113048"
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+1. 檢查[系統需求](/visualstudio/releases/2022/system-requirements)。 這些需求可協助您瞭解電腦是否支援 Visual Studio 2022。
+
+1. 套用最新的 Windows 更新。 這些更新可以確保您的電腦已具備最新的安全性更新，以及 Visual Studio 所需的系統元件。
+
+1. 重新開機。 重新開機可以確保不會有任何擱置的安裝或更新會阻礙 Visual Studio 安裝。
+
+1. 釋出空間。 透過執行 [磁碟清理] 應用程式之類的方式，將不必要的檔案及應用程式從 %SystemDrive% 移除。
+
+::: moniker-end
+
 ::: moniker range="vs-2017"
 
 針對並存執行舊版 Visual Studio 及 Visual Studio 2017 的相關問題，請參閱 [Visual Studio 相容性詳細資料](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases)。
@@ -95,6 +119,12 @@ ms.locfileid: "112113048"
 ::: moniker range="vs-2019"
 
 如有並存執行舊版 Visual Studio 及 Visual Studio 2019 的相關問題，請參閱 [Visual Studio 2019 平台目標及相容性](/visualstudio/releases/2019/compatibility/)頁面。
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+如有關于與 Visual Studio 2022 並存執行舊版 Visual Studio 的問題，請參閱 [Visual Studio 2022 平臺目標和相容性](/visualstudio/releases/2019/compatibility/) 頁面。
 
 ::: moniker-end
 
@@ -108,7 +138,7 @@ ms.locfileid: "112113048"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 若要這麼做，請依序選擇下列按鈕、您想要的 Visual Studio 版本、[儲存] 和 [開啟資料夾]。
 
@@ -151,7 +181,7 @@ ms.locfileid: "112113048"
 
  ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 在 **Visual Studio 安裝程式** 中尋找您想要的工作負載。
 
@@ -178,7 +208,7 @@ ms.locfileid: "112113048"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
   ![Visual Studio 2019-安裝個別元件](media/vs-2019/vs-installer-individual-components.png "安裝 Visual Studio 的個別元件")
 
@@ -194,7 +224,7 @@ ms.locfileid: "112113048"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
   ![Visual Studio 2019-安裝語言套件](media/vs-2019/vs-installer-language-packs.png "安裝 Visual Studio 語言套件")
 
@@ -214,7 +244,7 @@ ms.locfileid: "112113048"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 您可以減少系統磁碟機上的 Visual Studio 安裝磁碟使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
 
@@ -243,7 +273,7 @@ ms.locfileid: "112113048"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 在完成 Visual Studio 安裝後，請選擇 [啟動] 按鈕以開始使用 Visual Studio 來進行開發。
 

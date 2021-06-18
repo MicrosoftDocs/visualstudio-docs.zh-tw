@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b214452a2eb7a85b4a9baea5e4b4e80a1a71e63
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3a301c1bd4758ea08f49036fcf8756c8d7e7c26
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933852"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306445"
 ---
 # <a name="walkthrough-use-msbuild"></a>逐步解說：使用 MSBuild
 
@@ -38,8 +38,8 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
 如果您有 Visual Studio，則已安裝 MSBuild。 若要在沒有 Visual Studio 的系統上安裝 MSBuild 15，請移至 [Visual Studio 較舊的下載](https://visualstudio.microsoft.com/vs/older-downloads/)，並展開 **Visual Studio 2017** ，然後選擇 [ **下載** ] 按鈕。 如果您有 Visual Studio 訂用帳戶，請登入並尋找下載最新版 **Build Tools for Visual Studio 2017** 的連結。 如果您沒有 Visual Studio 訂用帳戶，您仍然可以安裝最新版本的組建工具。 在此頁面上，使用版本選擇器切換至2019版的頁面，並遵循安裝指示。
 ::: moniker-end
 
-::: moniker range="vs-2019"
-如果您有 Visual Studio，則已安裝 MSBuild。 在 Visual Studio 2019 中，它會安裝在 Visual Studio 安裝資料夾底下。 針對 Windows 10 上的一般預設安裝，MSBuild.exe 位於 *MSBuild\Current\Bin* 的安裝資料夾下。
+::: moniker range=">=vs-2019"
+如果您有 Visual Studio，則已安裝 MSBuild。 在 Visual Studio 2019 和更新版本中，它會安裝在 Visual Studio 安裝資料夾底下。 針對 Windows 10 上的一般預設安裝，MSBuild.exe 位於 *MSBuild\Current\Bin* 的安裝資料夾下。
 
 若要在沒有 Visual Studio 的系統上安裝 MSBuild，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 並向下移至 [ **所有下載**]，然後展開 [ **工具] 以 Visual Studio 2019**。 安裝 **Visual Studio 2019 的組建工具**，其中包含 MSBuild 或安裝 [.NET Core SDK](/dotnet/core/sdk#acquiring-the-net-core-sdk)。
 
@@ -351,7 +351,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 </ItemGroup>
 ```
 
-定義一個包含兩個項目的項目群組。 Compile 專案類型有兩個值： *Program.cs* 和 *Properties\AssemblyInfo.cs*。
+定義一個包含兩個項目的項目群組。 Compile 專案類型有兩個值： *Program .cs* 和 *Properties\AssemblyInfo.cs*。
 
 下列程式碼會在一個 Include 屬性中宣告這兩個檔案 (以分號分隔)，藉以建立相同的項目類型。
 
@@ -481,7 +481,7 @@ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Includ
 <Compile Include="*.res" Exclude="Form1.cs">
 ```
 
-不會排除在先前的 item 專案中加入的 file *Form1.cs*。
+不會排除在前一個 item 專案中加入的 *Form1. .cs* 檔案。
 
 **包含與排除項目**
 
@@ -627,7 +627,7 @@ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Includ
 
 請注意，此語法中所表示的中繼資料不會導致批次處理。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
  若要瞭解如何一次建立一個簡單的專案檔，請嘗試逐步解說 [：從頭開始建立 MSBuild 專案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)檔。
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 3eafb6f3ef345da4316fdbe5d6b96a25d7dc90a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8fb821acb48dd05aa09723fe5c6c254e7d1ca648
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867629"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306380"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本機 Docker 容器中偵錯工具
 
@@ -25,7 +25,7 @@ Visual Studio 可提供一致的方式來開發 Docker 容器，並在本機驗�
 
 如果您已經有受支援類型的專案，Visual Studio 可以建立 Dockerfile，並將您的專案設定為在容器中執行。 請參閱 [Visual Studio 中的容器工具](overview.md)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要在本機 Docker 容器中對應用程式進行偵錯工具，必須安裝下列工具：
 
@@ -38,6 +38,12 @@ Visual Studio 可提供一致的方式來開發 Docker 容器，並在本機驗�
 ::: moniker range="vs-2019"
 
 * 已安裝 Web 開發工作負載的[Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+* 已安裝 Web 開發工作負載的[Visual Studio 2022 Preview]()
 
 ::: moniker-end
 
@@ -62,7 +68,7 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 
 1. 請確定 Docker 已設定為使用您所使用 (Linux 或 Windows) 的容器類型。 以滑鼠右鍵按一下工作列上的 Docker 圖示，然後選擇 [ **切換至 Linux 容器** ] 或 [適當 **地切換到 Windows 容器** ]。
 
-1.  ( .NET Core 3 和更新版本僅) 編輯您的程式碼，以及重新整理執行中的網站，如本節中的預設範本未在 .NET Core >= 3.0 中啟用。 若要啟用它，請新增 NuGet 套件 [AspNetCore >microsoft.aspnetcore.mvc.razor.runtimecompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/)。 在 *Startup.cs* 中，將擴充方法的呼叫新增 `IMvcBuilder.AddRazorRuntimeCompilation` 至方法中的程式碼 `ConfigureServices` 。 您只需要在「偵錯工具」模式中啟用此功能，因此請依照下列程式碼：
+1.  ( .NET Core 3 和更新版本僅) 編輯您的程式碼，以及重新整理執行中的網站，如本節中的預設範本未在 .NET Core >= 3.0 中啟用。 若要啟用它，請新增 NuGet 套件 [AspNetCore >microsoft.aspnetcore.mvc.razor.runtimecompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/)。 在 *Startup* 中，將擴充方法的呼叫加入 `IMvcBuilder.AddRazorRuntimeCompilation` 至方法中的程式碼 `ConfigureServices` 。 您只需要在「偵錯工具」模式中啟用此功能，因此請依照下列程式碼：
 
     ```csharp
     public IWebHostEnvironment Env { get; set; }
@@ -119,7 +125,7 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 
 變更通常需要進一步檢查。 您可以針對這項工作使用 Visual Studio 的偵錯工具功能。
 
-1. 在 Visual Studio 中，開啟 *Index.cshtml.cs*。
+1. 在 Visual Studio 中， *開啟 [...]*。
 2. 使用下列程式碼來取代 `OnGet` 方法的內容：
 
    ```csharp
@@ -130,29 +136,29 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 4. 若要啟動調試和點擊中斷點，請按 F5。
 5. 切換至 Visual Studio 以查看中斷點。 檢查值。
 
-   ![顯示 Visual Studio 中的部分程式碼的螢幕擷取畫面，其中中斷點會設定為以黃色反白顯示的程式程式碼左邊。](media/edit-and-refresh/breakpoint.png)
+   ![顯示 Visual Studio 中的部分程式碼的螢幕擷取畫面，其中中斷點是設定為以黃色反白顯示的程式程式碼左方。](media/edit-and-refresh/breakpoint.png)
 
-## <a name="create-a-net-framework-console-app"></a>建立.NET Framework 主控台應用程式
+## <a name="create-a-net-framework-console-app&quot;></a>建立.NET Framework 主控台應用程式
 
 當您使用 .NET Framework 主控台應用程式專案時，不支援在沒有協調流程的情況下新增 Docker 支援的選項。 即使您只使用單一 Docker 專案，仍然可以使用下列程式。
 
 1. 建立新的 .NET Framework 主控台應用程式專案。
 1. 在方案總管中，以滑鼠右鍵按一下專案節點，然後選取 [**新增**  >  **容器協調流程支援**]。  在出現的對話方塊中，選取 [ **Docker Compose**]。 Dockerfile 會加入至您的專案，並新增具有相關聯支援檔案的 Docker Compose 專案。
 
-### <a name="debug-with-breakpoints"></a>使用中斷點進行偵錯
+### <a name=&quot;debug-with-breakpoints&quot;></a>使用中斷點進行偵錯
 
-1. 在方案總管中，開啟 *Program.cs*。
+1. 在方案總管中，開啟 *程式 .cs*。
 2. 使用下列程式碼來取代 `Main` 方法的內容：
 
    ```csharp
-       System.Console.WriteLine("Hello, world!");
+       System.Console.WriteLine(&quot;Hello, world!");
    ```
 
 3. 在程式碼行的左側設定中斷點。
 4. 按 F5 開始調試，並點擊中斷點。
 5. 切換至 Visual Studio 以查看中斷點並檢查值。
 
-   ![Visual Studio 中的 [程式碼] 視窗的螢幕擷取畫面，其中中斷點設定為以黃色反白顯示的程式程式碼左邊。](media/edit-and-refresh/breakpoint-console.png)
+   ![Visual Studio 中的程式碼視窗的螢幕擷取畫面，其中中斷點設定為以黃色反白顯示的程式程式碼左邊。](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="container-reuse"></a>容器重複使用
 
@@ -164,7 +170,7 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 
 瞭解如何針對 [Docker 開發 Visual Studio 進行疑難排解](troubleshooting-docker-errors.md)。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 閱讀 [Visual Studio 建立容器化應用程式的方式](container-build.md)，以取得更多詳細資料。
 

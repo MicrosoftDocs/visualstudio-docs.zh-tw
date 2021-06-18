@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a90198ce4cf3dc54eedbf80bbf4ffbad634cbc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 007e82ee7c1c2839ba266794432605f1f92a1669
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836484"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307787"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>選項對話方塊、環境、自動回復
 
@@ -35,6 +35,12 @@ ms.locfileid: "99836484"
 :::image type="content" source="media/autorecover-options.png" alt-text="[選項] 對話方塊中 [自動回復] 區段的螢幕擷取畫面":::
 
 **每隔 [n] 分鐘儲存一次自動回復資訊**
+
+::: moniker range=">=vs-2022"
+
+使用此選項，可自訂在編輯器中自動儲存檔案的頻率。 針對先前儲存的檔案，Visual Studio 會將檔案的複本儲存在 ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [專案名稱]*** 中。 如果檔案是新檔案，但尚未儲存，Visual Studio 使用隨機產生的檔案名來 autosaves 它。
+
+::: moniker-end
 
 ::: moniker range="vs-2019"
 

@@ -7,12 +7,13 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 4d3d2c005f32aaebacc251414218f5ae03edf546
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+monikerRange: <=vs-2019
+ms.openlocfilehash: b45399f7a4115ce5946a67caca22ca92148e7434
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112043012"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308242"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>在 Team Explorer 中連線到專案
 

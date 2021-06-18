@@ -1,5 +1,5 @@
 ---
-title: 在調試時檢查 XAML 屬性 |Microsoft 檔
+title: 在調試時檢查 XAML 屬性 |Microsoft Docs
 description: 瞭解如何在偵錯工具時使用即時視覺化樹狀結構和即時屬性瀏覽器工具來檢查 XAML 屬性，並取得 UI 元素的樹狀檢視。
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2021
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 76edf9f1af414a67abd83cec3c2f597c6cdf8707
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 86310346566e8c937c2769a9fcc9f0d4e98b3ae2
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683461"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308437"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在偵錯時檢查 XAML 屬性
 
@@ -26,7 +26,7 @@ ms.locfileid: "101683461"
 |應用程式類型|作業系統與工具|
 |-----------------|--------------------------------|
 |Windows Presentation Foundation (4.0 和更新版本) 應用程式|Windows 7 和更新版本|
-|通用 Windows 應用程式|Windows 10 和更新版本，使用 [windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)|
+|通用 Windows 應用程式|使用[WINDOWS 10 SDK](https://dev.windows.com/downloads/windows-10-sdk) Windows 10 和更新版本|
 
 ## <a name="look-at-elements-in-the-live-visual-tree"></a>查看即時視覺化樹狀結構中的元素
 
@@ -34,7 +34,7 @@ ms.locfileid: "101683461"
 
 ### <a name="create-the-project"></a>建立專案
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 建立新的 c # WPF 應用 **程式 (檔案** > **新增** > **專案**、輸入 "c # WPF"、選擇 [ **WPF 應用程式**] 專案範本、將專案命名為 **TestXAML**，然後確認 [**目標 Framework** ] 下拉式清單中是否出現 **.net Core 3.1** 。
 
@@ -42,7 +42,7 @@ ms.locfileid: "101683461"
 
 ::: moniker range="vs-2017"
 
-1. 建立新的 c # WPF 應用 **程式 (檔案**  >  **新**  >  **專案**，然後輸入 "c # wpf"，然後選擇 [ **wpf 應用程式 ( .net Framework)**) 。 將其命名為 **TestXAML**。
+1. 建立新的 c # WPF 應用 **程式 (檔案**  >  **新**  >  **專案**，然後輸入 "c # wpf"，然後選擇 [ **wpf 應用程式 ( .NET Framework)**) 。 將其命名為 **TestXAML**。
 
 ::: moniker-end
 
@@ -105,7 +105,7 @@ ms.locfileid: "101683461"
 1. 在 [即時視覺化樹狀結構] 視窗中，展開 [ContentPresenter] 節點。 其應包含按鈕和清單方塊的節點。 展開清單方塊 (然後展開 [ScrollContentPresenter] 和 [ItemsPresenter]) 來尋找清單方塊項目。
 
    ::: moniker range=">= vs-2019"
-   如果您沒有看到 [ **ContentPresenter** ] 節點，請切換工具列上的 [ **僅顯示我的 XAML** ] 圖示。 從 Visual Studio 2019 版本16.4 開始，XAML 專案的觀看預設會使用 [僅我的 XAML] 功能來簡化。 您也可以在 [選項] 中 [停用這項設定](../debugger/general-debugging-options-dialog-box.md) ，永遠顯示所有的 XAML 元素。
+   如果您沒有看到 [ **ContentPresenter** ] 節點，請切換工具列上的 [ **僅顯示我的 XAML** ] 圖示。 從 Visual Studio 2019 16.4 版開始，XAML 專案的觀看預設會使用 [僅我的 XAML] 功能來簡化。 您也可以在 [選項] 中 [停用這項設定](../debugger/general-debugging-options-dialog-box.md) ，永遠顯示所有的 XAML 元素。
    ::: moniker-end
 
    視窗類似下圖所示：
@@ -131,7 +131,7 @@ ms.locfileid: "101683461"
    XAML 的實際結構有許多您可能不會直接感興趣的項目，如果您不熟悉此程式碼，可能很難在巡覽樹狀結構時找到您要尋找的項目。 因此 [即時視覺化樹狀結構] 有好幾種方式可讓您使用應用程式的 UI 來協助找出您想要檢查的項目。
 
    ::: moniker range=">= vs-2019"
-   **選取執行中應用程式的元素**。 只要選取 [即時視覺化樹狀結構] 工具列最左邊的按鈕，即可啟用此模式。 啟用此模式後，您便可以在應用程式中選取 UI 項目，而 [即時視覺化樹狀結構] (和 [即時屬性檢閱器]) 會自動更新，以顯示樹狀結構中的節點對應至該項目及其屬性。 從 Visual Studio 2019 版本16.4 開始，您可以 [設定元素選取專案的行為](../debugger/general-debugging-options-dialog-box.md)。
+   **選取執行中應用程式的元素**。 只要選取 [即時視覺化樹狀結構] 工具列最左邊的按鈕，即可啟用此模式。 啟用此模式後，您便可以在應用程式中選取 UI 項目，而 [即時視覺化樹狀結構] (和 [即時屬性檢閱器]) 會自動更新，以顯示樹狀結構中的節點對應至該項目及其屬性。 從 Visual Studio 2019 版本16.4 開始，您可以 [設定元素選取的行為](../debugger/general-debugging-options-dialog-box.md)。
 
    **在執行中應用程式顯示版面配置提示**。 只要選取緊鄰 [啟用選取範圍] 按鈕右邊的按鈕時，即可啟用此模式。 [顯示版面配置提示] 開啟時，會使此應用程式視窗沿著所選取物件的界限顯示水平及垂直線條，讓您能夠查看其向何處對齊，以及查看顯示此邊界的矩形。 例如，開啟 [ **選取** 專案] 和 [ **顯示版面** 配置]，然後選取應用程式中的 [ **加入專案** ] 文字區塊。 您應該會看到 [即時視覺化樹狀結構] 中的文字區塊節點和 [即時屬性檢閱器] 中的文字區塊屬性，以及文字區塊界限內的水平和垂直線條。
 
@@ -164,4 +164,4 @@ ms.locfileid: "101683461"
 
 ## <a name="see-also"></a>另請參閱
 
-[使用 XAML 熱重載撰寫和偵測執行中的 XAML 程式碼](xaml-hot-reload.md)
+[使用 XAML 熱重新載入撰寫和偵測執行中的 XAML 程式碼](xaml-hot-reload.md)

@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8724fcb717953f3897bab092eb3895e228e10c60
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c1170f7420cc605b713357d94526c76eb5c51641
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909232"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308424"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>瞭解如何搭配 C 使用程式碼編輯器\#
 
@@ -32,8 +32,13 @@ ms.locfileid: "99909232"
 
 ::: moniker range="vs-2019"
 
-> [!TIP]
-> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+如果您尚未安裝 Visual Studio 2022 Preview，請前往 [Visual Studio 2022 preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022) 頁面，免費進行安裝。
 
 ::: moniker-end
 
@@ -183,7 +188,7 @@ Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中
 
    出現的這兩個 `words` 已重新命名，以及程式碼註解中的 `words` 參考。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [了解專案與解決方案](../tutorial-projects-solutions.md)

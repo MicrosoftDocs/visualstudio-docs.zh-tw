@@ -17,12 +17,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: ce0f7cb1b5f970da7b6e47797dd4c59012a46892
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75437af41cec6fd770af9dfcdb399ed51543b7ff
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924782"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308216"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
@@ -68,7 +68,7 @@ Dotfuscator Community 的註冊使用者，以及 ***PreEmptive Protection - Dot
 
 ## <a name="getting-started"></a>使用者入門
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 若要開始從 Visual Studio 使用 Dotfuscator Community，請在 [搜尋方塊] \(Ctrl+Q) 中輸入 `dotfuscator`。
 

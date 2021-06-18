@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 38e5f612c6a9b39874c952560627e04c26fafc25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 349483a672b8240f7ca622638221766d6da4864c
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897976"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308151"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 意見反應選項
 
@@ -28,11 +28,11 @@ ms.locfileid: "99897976"
 
 ## <a name="report-a-problem"></a>回報問題
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 如果您使用 Visual Studio 時遇到問題&mdash;如當機、效能緩慢或非預期行為&mdash;請使用 [回報問題] 工具讓我們知道。 在 Visual Studio 中 **，選擇右上** 角的意見反應圖示，或  >  從功能表列選擇 [說明 **傳送意見** 反應回報  >  **問題**]。
 
-![Visual Studio 2019 IDE 中的傳送意見反應圖示](./media/vs-2019/send-feedback-icon.png)
+![Visual Studio IDE 中的 [傳送意見反應] 圖示](./media/vs-2019/send-feedback-icon.png)
 
 接著，Visual Studio 會開啟 [開發人員社群](https://aka.ms/feedback/suggest?space=8) 介面，您可以在其中登入以回報問題。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)。
 
@@ -50,7 +50,7 @@ ms.locfileid: "99897976"
 
 ## <a name="suggest-a-feature"></a>建議功能
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 如果您有想要讓 Visual Studio 更好的想法或建議，請使用 [ **建議功能** ] 工具讓我們知道。 在 Visual Studio 中，選擇右上角的意見反應圖示，或從功能表列 **選擇 [** 說明  >  **傳送意見** 反應]  >  **建議功能**。
 
