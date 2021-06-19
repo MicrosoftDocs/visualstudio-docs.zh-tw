@@ -1,7 +1,7 @@
 ---
 title: 教學課程：開始使用 Visual Basic
 description: 逐步了解如何在 Visual Studio 中建立 Visual Basic 主控台應用程式。
-ms.custom: acquisition, seodec18, get-started
+ms.custom: vs-acquisition,  get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 8491869f5c0d518b394c0baa6a6da91bfeb6c7a3
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 8d34fef6251da95b6c3ac99430b87d853d4b5ba7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308372"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390707"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 

@@ -1,8 +1,8 @@
 ---
-title: Code Map
+title: 使用 code map 將相依性視覺化
 description: 瞭解 code map 如何協助您瞭解程式碼如何搭配使用，而不需讀取檔案和程式程式碼。
 ms.custom: SEO-VS-2020
-ms.date: 05/16/2018
+ms.date: 05/16/2021
 ms.topic: how-to
 f1_keywords:
 - vs.progression.codemap
@@ -13,28 +13,27 @@ helpviewer_keywords:
 - code visualization [Visual Studio]
 - dependencies, visualizing
 - dependency graphs
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9723fd44aedf4950b99a49b62d421230b43d55fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d33e3d882d25045802f2c015c88b87b970d9d04e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946523"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390433"
 ---
 # <a name="map-dependencies-with-code-maps"></a>使用 code map 對應相依性
 
-您可以藉由建立 code map 來視覺化程式碼之間的相依性。 Code map 可協助您瞭解程式碼如何搭配使用，而不需透過檔案和程式程式碼進行讀取。
+在本文中，您將瞭解如何使用 code map 將程式碼中的相依性視覺化。
+
+## <a name="what-are-code-maps"></a>什麼是 code map？
+
+在 Visual Studio 中，code map 可協助您更快速地瞭解程式碼如何搭配使用，而不需透過檔案和程式程式碼來讀取。  您可以使用這些對應，查看程式碼中的組織和關聯性，包括其結構和其相依性、如何更新，以及預估建議的變更成本。
 
 ![在 Visual Studio 中使用 code map 來查看相依性](../modeling/media/codemapsmainintro.png)
-
-若要建立和編輯 code map，您需要 Visual Studio Enterprise 版。 在 Visual Studio Community 和專業版中，您可以開啟在 Enterprise edition 中產生的圖表，但無法編輯它們。
-
-> [!NOTE]
-> 在您與使用 Visual Studio Professional 的其他人共用 Visual Studio Enterprise 中建立的對應之前，請確定已顯示地圖上的所有專案 (例如隱藏專案、展開的群組和跨群組連結) 。
 
 您可以針對這些語言的程式碼對應相依性：
 
@@ -47,21 +46,14 @@ ms.locfileid: "99946523"
 > [!NOTE]
 > 針對 c # 或 Visual Basic 以外的專案，啟動 code map 或將專案加入至現有 code map 的選項較少。 例如，您無法以滑鼠右鍵按一下 C++ 專案中 [文字編輯器] 的物件並將它加入 Code Map。 不過，您可以從 **方案總管**、 **類別檢視** 和 **物件瀏覽器** 拖放個別的程式碼元素或檔案。
 
-## <a name="install-code-map-and-live-dependency-validation"></a>安裝 Code Map 和即時相依性驗證
+## <a name="prerequisites"></a>必要條件
 
-若要在 Visual Studio 中建立 code map，請先安裝 **Code map** 和即時相依性 **驗證** 元件：
+若要在 Visual Studio 中建立 code map，請先 [安裝 **code Map** 和 **即時** 相依性驗證元件](install-architecture-tools.md)
 
-1. 開啟 **Visual Studio 安裝程式**。 您可以從 Windows [開始] 功能表或 Visual Studio 中選取 [**工具**  >  **取得工具和功能**] 來開啟它。
+若要建立和編輯 code map，您需要 **Visual Studio Enterprise 版**。 不過，在 Visual Studio Community 和專業版中，您可以開啟在 Enterprise edition 中產生的圖表，但無法編輯它們。
 
-1. 選取 [個別元件] 索引標籤。
-
-1. 向下滾動至 [程式 **代碼工具** ] 區段，然後選取 [ **code Map** ] 和 [即時相依性 **驗證**]。
-
-   ![Visual Studio 安裝程式中的 Code Map 和即時相依性驗證元件](media/modeling-components.png)
-
-1. 選取 [修改]。
-
-   **Code Map** 和即時相依性 **驗證** 元件會開始安裝。 系統可能會要求您關閉 Visual Studio。
+> [!NOTE]
+> 在您與使用 Visual Studio Professional 的其他人共用 Visual Studio Enterprise 中建立的對應之前，請確定已顯示地圖上的所有專案 (例如隱藏專案、展開的群組和跨群組連結) 。
 
 ## <a name="add-a-code-map"></a>新增 code map
 
@@ -81,6 +73,11 @@ ms.locfileid: "99946523"
    方案的 [ **方案專案** ] 資料夾中會出現空白對應。
 
 同樣地，您可以選取 [**架構**  >  **新的 code map** ] 或 [檔案  >  **新** 檔案]，建立新的 code map 檔案，而不將它加入至  >  **方案中**。
+
+深入了解：
+- [共用 code map](share-code-maps.md)
+- [建立 c + + 的 code map](code-maps-for-cpp.md)
+- [改善 code map 效能](code-maps-performance.md)
 
 ## <a name="generate-a-code-map-for-your-solution"></a>產生方案的 code map
 
@@ -154,7 +151,7 @@ ms.locfileid: "99946523"
 - [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
 - 藉由[執行分析器](../modeling/find-potential-problems-using-code-map-analyzers.md)，在您的程式碼中找出潛在的問題
 
-## <a name="view-specific-dependencies-in-a-code-map"></a>在 code map 中查看特定相依性
+## <a name="view-dependencies"></a>查看相依性
 
 假設您有一個程式碼評論，可在某些具有暫止變更的檔案中執行。 若要查看這些變更中的相依性，您可以從那些檔案建立 Code Map。
 
@@ -191,7 +188,7 @@ ms.locfileid: "99946523"
 
     對於 **組件**，選擇：
 
-    |選項|Description|
+    |選項|描述|
     |-|-|
     |**顯示這一項參考的組件**|加入這個組件參考的組件。 外部組件會出現在 [外部]  群組中。|
     |**顯示參考這一項的組件**|從參考這個組件的方案中加入組件。|
@@ -200,7 +197,7 @@ ms.locfileid: "99946523"
 
     對於 **類別** 或 **介面**，選擇：
 
-    |選項|Description|
+    |選項|描述|
     |-|-|
     |**顯示基底類型**|對於類別，加入基底類別和實作的介面。<br /><br /> 對於介面，加入基底介面。|
     |**顯示衍生類型**|對於類別，加入衍生類別。<br /><br /> 對於介面，加入衍生介面和實作類別或結構。|
@@ -213,7 +210,7 @@ ms.locfileid: "99946523"
 
      對於 **方法**，選擇：
 
-    |選項|Description|
+    |選項|描述|
     |-|-|
     |**顯示這一項呼叫的方法**|加入這個方法呼叫的方法。|
     |**顯示這一項參考的欄位**|加入這個方法所參考的欄位。|
@@ -223,7 +220,7 @@ ms.locfileid: "99946523"
 
      對於 **欄位** 或 **屬性**，選擇：
 
-    |選項|Description|
+    |選項|描述|
     |-|-|
     |**顯示包含的類型**|加入父類型。|
     |**顯示包含的類型、命名空間和組件**|加入父容器階層架構。|
@@ -240,6 +237,10 @@ ms.locfileid: "99946523"
 
 ## <a name="see-also"></a>另請參閱
 
+- [共用 code map](share-code-maps.md)
+- [建立 c + + 的 code map](code-maps-for-cpp.md)
+- [改善 code map 效能](code-maps-performance.md)
+- [影片：利用 Visual Studio 2015 code map 瞭解程式碼的設計](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [影片：利用 Visual Studio 2015 code map 瞭解程式碼的設計](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)
 - [進行偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)

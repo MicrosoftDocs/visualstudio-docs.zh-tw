@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a7e3d7ba31778c5d5a94f77b52f13bfe8fff8473
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be19b34c51744c6bab1c6021a006f7ec9b4da0f4
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897862"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390967"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 
@@ -288,7 +288,7 @@ using (Transaction t =
  `link.MoveBefore(role, nextLink);`
 
 ## <a name="locks"></a><a name="locks"></a> 鎖
- 鎖定可能會妨礙您的變更。 鎖定可以針對個別元素、分割區和存放區設定。 如果其中任何一個層級的鎖定防止您想要進行的變更類型，則在您嘗試時可能會擲回例外狀況。 您可以使用元素來探索鎖定是否已設定。GetLocks ( # A1，這是在命名空間中定義的擴充方法 <xref:Microsoft.VisualStudio.Modeling.Immutability> 。
+ 鎖定可能會妨礙您的變更。 鎖定可以針對個別元素、分割區和存放區設定。 如果其中任何一個層級的鎖定防止您想要進行的變更類型，則在您嘗試時可能會擲回例外狀況。 您可以使用元素來探索鎖定是否已設定。GetLocks () ，這是在命名空間中定義的擴充方法 <xref:Microsoft.VisualStudio.Modeling.Immutability> 。
 
  如需詳細資訊，請參閱 [定義鎖定原則以建立 Read-Only 區段](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)。
 

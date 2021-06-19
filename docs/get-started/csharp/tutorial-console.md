@@ -1,7 +1,7 @@
 ---
 title: '教學課程：建立簡單的 c # 主控台應用程式'
 description: 了解如何逐步在 Visual Studio 中建立 C# 主控台應用程式。
-ms.custom: acquisition, seodec18, get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 14128a6c5b533d1bf2fe573310c174f6b6a7f897
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 5f155c2477c97b6f0d18a4cfd3d54386aee68dd9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308528"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390368"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立簡單的 c # 主控台應用程式
 

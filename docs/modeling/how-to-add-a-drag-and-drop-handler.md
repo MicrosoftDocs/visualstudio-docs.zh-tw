@@ -4,17 +4,17 @@ description: 瞭解如何將拖放事件的處理常式加入至您的 DSL，讓
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c9e6960cdd84e518b2d58eb77c25278bd52475d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79b58ee6ebd4db3ee9727bf59b260f281ba00275
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941433"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390407"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：加入拖放處理常式
 
@@ -128,7 +128,7 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
 
 - <xref:System.Windows.Forms.IDataObject>  `Data` -此屬性會攜帶來源物件的序列化版本，通常是以一種以上的格式來執行。 其最有用的函式包括：
 
-  - diagramEventArgs. GetDataFormats ( # A1-列出您可以用來解碼拖曳物件的格式。 例如，如果使用者從桌面拖曳檔案，可用的格式包括檔案名稱 ("`FileNameW`")。
+  - diagramEventArgs. GetDataFormats () -列出您可以用來解碼拖曳物件的格式。 例如，如果使用者從桌面拖曳檔案，可用的格式包括檔案名稱 ("`FileNameW`")。
 
   - `diagramEventArgs.Data.GetData(format)` -以指定的格式解碼拖曳的物件。 將物件轉換成適當的類型。 例如：
 

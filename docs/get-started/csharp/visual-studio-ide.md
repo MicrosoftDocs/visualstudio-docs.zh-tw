@@ -4,6 +4,7 @@ description: '瞭解 Visual Studio 整合式開發環境，以及如何為 c # �
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: overview
@@ -14,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: eb34f9dbf0c4778431bbf1eed31b20bc3cd4833b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e3625e272f6279fa06a863c4feb12adab8c016f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925002"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390577"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>歡迎使用 Visual Studio IDE | C\#
 
@@ -41,7 +42,7 @@ ms.locfileid: "99925002"
 
 若要了解您可以個人化 IDE 的其他方式，請參閱[個人化 Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 遵循以下其中一篇簡介文章，進一步探索 Visual Studio：
 

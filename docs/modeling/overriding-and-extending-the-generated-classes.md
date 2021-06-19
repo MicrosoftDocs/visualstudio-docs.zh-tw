@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b570601ad273a948f46d95105fcd4054419c71
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07c44e7ff7a603f339ec268b06bd78cc84cd6be2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897778"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390941"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>覆寫及擴充產生的類別
 
@@ -90,7 +90,7 @@ public partial class Book
 
 ### <a name="net-events"></a>.NET 事件
 
-您可以訂閱圖形上的某些事件。 例如，您可以聆聽圖形上的滑鼠點擊。 您必須撰寫程式碼來訂閱每個物件的事件。 這段程式碼可以用 InitializeInstanceResources ( # A1 的覆寫來撰寫。
+您可以訂閱圖形上的某些事件。 例如，您可以聆聽圖形上的滑鼠點擊。 您必須撰寫程式碼來訂閱每個物件的事件。 這段程式碼可以用 InitializeInstanceResources () 的覆寫來撰寫。
 
 某些事件是在 ShapeFields 上產生的，用來在圖形上繪製裝飾專案。 如需範例，請參閱 [如何：攔截圖形或裝飾專案的點擊](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。
 

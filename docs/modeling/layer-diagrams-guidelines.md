@@ -9,23 +9,23 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f4baed4851681065f3f7ccafecd3af339398f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f46e2b774cd4da2ef9cdb9ddef7efd19f731ade7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957370"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391019"
 ---
 # <a name="dependency-diagrams-guidelines"></a>相依性圖表：指導方針
 
 在 Visual Studio 中建立相依性 *圖表* ，以概要描述您的應用程式架構。 使用相依性圖表驗證程式代碼，以確定您的程式碼與這項設計保持一致。 您也可以在建置流程中包含圖層驗證。 請參閱 [Channel 9 影片：使用相依性圖表設計及驗證您的架構](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)。
 
-若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 > [!NOTE]
 > 從 Visual Studio 2019 16.2 版開始支援 .NET Core 專案的相依性圖表。

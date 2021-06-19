@@ -4,7 +4,7 @@ description: 瞭解專案和解決方案之間的差異，以及如何在 Visual
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom:
-- acquisition
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f962d9e534262fd12cd0ce5c808c9c604db466b
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 1d06b53afc811517ac86be9bdc3e86cf7593bbaf
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308398"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390030"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>專案和解決方案簡介
 

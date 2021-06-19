@@ -17,23 +17,23 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f173e27588538c806d075e0a6b010fbd848f2690
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bb138164cfab44778c932a4bcb93572a3053a70
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917001"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391032"
 ---
 # <a name="dependency-diagrams-reference"></a>相依性圖表：參考
 
 在 Visual Studio 中，您可以使用相依性 *圖表* 來視覺化系統的高層級邏輯架構。 相依性圖表會將您系統中的實體成品組織為邏輯的抽象群組，稱為 *圖層*。 您可以使用圖層來說明成品或系統主要元件所執行的主要工作。 每個圖層也可以包含巢狀圖層以描述更詳細的工作。
 
-若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 > [!NOTE]
 > 從 Visual Studio 2019 16.2 版開始支援 .NET Core 專案的相依性圖表。

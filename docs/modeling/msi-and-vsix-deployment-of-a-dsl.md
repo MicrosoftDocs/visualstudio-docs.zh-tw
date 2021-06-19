@@ -4,17 +4,17 @@ description: 瞭解如何在您自己的電腦或其他電腦上安裝特定領�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6082ec8860f7f50e758eb65a8471ece94103aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 879028746eac10160492f03651ef8b51714e9c6a
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950407"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391006"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 您可以在自己的電腦或其他電腦上安裝特定領域語言。 必須已在目的電腦上安裝 Visual Studio。

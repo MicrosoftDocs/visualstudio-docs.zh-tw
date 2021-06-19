@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain relationships
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb50018dccbe03512c8ab6e5f07c17dbcee307d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc92bbc32a454208f3d455734b7697a2e69037b4
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941329"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390655"
 ---
 # <a name="properties-of-domain-relationships"></a>網域關聯性的屬性
 下表中的屬性與網域關聯性相關聯。 如需有關網域關聯性的詳細資訊，請參閱 [瞭解模型、類別和關聯](../modeling/understanding-models-classes-and-relationships.md)性。 如需有關如何使用這些屬性的詳細資訊，請參閱 [自訂和擴充 Domain-Specific 語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -31,10 +31,10 @@ ms.locfileid: "99941329"
 |允許重複|如果為 `True` ，則可能在相同的兩個元素之間建立網域關聯性的重複連結。|`False`|
 |基底關聯性|如果衍生的是網域關聯性，則為網域關聯性的基底關聯性。|\<none>|
 |正在內嵌|如果 `True` 為，則網域關聯性是內嵌關聯性。 如果 `False` 為，則關聯性是參考關聯性。|\<both>|
-|名稱|網域關聯性的名稱。|目前的名稱|
+|Name|網域關聯性的名稱。|目前的名稱|
 |命名空間|與網域關聯性相關聯的命名空間。|目前的命名空間|
 |備註|與網域關聯性相關聯的非正式附注。|\<none>|
-|Description|用來記錄程式碼的描述，用於產生之設計工具的 UI 中。|\<none>|
+|描述|用來記錄程式碼的描述，用於產生之設計工具的 UI 中。|\<none>|
 |顯示名稱|針對網域關聯性所產生的設計工具中顯示的名稱。|\<none>|
 |說明關鍵字|選擇性的關鍵字，用來為定義域關聯性的 F1 說明編制索引。|\<none>|
 

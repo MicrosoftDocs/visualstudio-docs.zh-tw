@@ -1,7 +1,7 @@
 ---
 title: 教學課程：在 Visual Studio 2019 的存放庫中開啟專案
 description: 瞭解如何使用 Visual Studio 2019，在 Git 或 Azure DevOps 存放庫中開啟專案。
-ms.custom: get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 03/18/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2019
-ms.openlocfilehash: 76dcd5061e2e12688f5119598071c3235e620967
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: b6f7cd57a1753ca5926ac73a9bb4c8c918d1bd10
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104671709"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389939"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教學課程：從存放庫開啟專案
 
@@ -196,7 +196,7 @@ ms.locfileid: "104671709"
 
 ---
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 如果您已準備好使用 Visual Studio 來撰寫程式碼，請深入了解下列任一個語言特定的教學課程：
 

@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain properties
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f9cca8468e99d41d879bee02dded8538e5fa9c5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f2f026f62c5440b48b04d05e080515c47dd11979
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941355"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390642"
 ---
 # <a name="properties-of-domain-properties"></a>網域屬性的屬性
 *網域屬性* 是可保存值之模型專案的功能。 例如，`Person` 網域類別可能具有屬性 `Name` 和 `BirthDate`。 在 DSL 定義中，網域屬性會列在圖表上的網域類別方塊中以及 DSL Explorer 中的網域類別之下。 如需詳細資訊，請參閱 [如何定義 Domain-Specific 語言](../modeling/how-to-define-a-domain-specific-language.md)。
@@ -48,7 +48,7 @@ ms.locfileid: "99941355"
 |**名稱**|此網域屬性的名稱。 它必須是有效的識別碼，例如 **SongTitle**。|\<none>|
 |**注意事項**|與此網域屬性相關聯的非正式附註。|\<none>|
 |**Setter 存取修飾詞**|Setter 的存取修飾詞。 此修飾詞可控制程式碼設定屬性的範圍。|`public`|
-|**型別**|屬性的類型。 若要加入可用類型的清單，請以滑鼠右鍵按一下 [DSL explorer] 中 DSL 的根，然後按一下 [ **加入外部類型**]。|`String`|
+|**類型**|屬性的類型。 若要加入可用類型的清單，請以滑鼠右鍵按一下 [DSL explorer] 中 DSL 的根，然後按一下 [ **加入外部類型**]。|`String`|
 
 ## <a name="see-also"></a>另請參閱
 

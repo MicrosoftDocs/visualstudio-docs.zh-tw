@@ -1,7 +1,7 @@
 ---
 title: 教學課程： Debug Visual Basic 程式碼
 description: 學習 Visual Studio 偵錯工具的功能，以及如何啟動偵錯工具、逐步執行程式碼，以及檢查 Visual Basic 應用程式中的資料。
-ms.custom: debug-experiment, seodec18, get-started
+ms.custom: debug-experiment, vs-acquisition, get-started
 ms.date: 02/03/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 42dd3c6b7301162e239bc87764056fdda2d08413
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 48e6b383b0dfdee3a3cb0cc355ffa5900d4dc428
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308411"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390212"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 Visual Basic 程式碼進行偵錯
 
@@ -36,7 +36,7 @@ ms.locfileid: "112308411"
 > * 檢查資料提示和偵錯工具視窗中的變數
 > * 檢查呼叫堆疊
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 ::: moniker range=">=vs-2019"
 

@@ -1,8 +1,8 @@
 ---
-title: 使用 Visual Studio 和 C 建立 UWP 應用程式#
+title: 教學課程：使用 Visual Studio & C 建立 UWP 應用程式#
 description: 在 Visual Studio 中使用 XAML 和 C# 建立 UWP 應用程式
 titleSuffix: ''
-ms.custom: seodec18, get-started, SEO-VS-2020
+ms.custom: vs-acquisition, get-started, SEO-VS-2020
 ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e68039e02a6181ef7970fdc6a1b3bd6ad173093
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 2e89c58e3c0dca2b5d009a592d3f242646339f8f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295633"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390290"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教學課程：使用 XAML 和 C&#35; 在 Visual Studio 中建立您的第一個通用 Windows 平臺應用程式
 
@@ -39,7 +39,7 @@ ms.locfileid: "107295633"
 ::: moniker range="vs-2017"
 1. 開啟 Visual Studio。
 
-1. 從頂端功能表列中，選擇 [檔案]**[新增]** > **[專案]** > 。
+1. 從頂端功能表列中 **，選擇 [** 檔案 > **新增** > **專案**]。
 
 1. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [Windows 通用]。 在中間窗格中，選擇 [空白應用程式 (通用 Windows)]。 接著，將專案命名為 *HelloWorld*，然後選擇 [確定]。
 
@@ -168,7 +168,7 @@ ms.locfileid: "107295633"
 
    ![按一下 [本機電腦] 以啟動 UWP 應用程式並對其進行偵錯](media/uwp-start-or-debug.png)
 
-   (或者，您也可以從功能表列中選擇 [偵錯]**[開始偵錯]** > ，或按 F5，來啟動應用程式)。
+    (或者，您可以從功能表列選擇 [ **Debug** > **開始** 錯]，或按 F5 啟動應用程式。 ) 
 
 1. 檢視您的應用程式 (在啟動顯示畫面消失後會立即出現)。 應用程式應該看起來像這樣：
 
@@ -188,7 +188,7 @@ ms.locfileid: "107295633"
 
    ![按一下 [本機電腦] 以啟動 UWP 應用程式並對其進行偵錯](media/uwp-start-or-debug.png)
 
-   (或者，您也可以從功能表列中選擇 [偵錯]**[開始偵錯]** > ，或按 F5，來啟動應用程式)。
+    (或者，您可以從功能表列選擇 [ **Debug** > **開始** 錯]，或按 F5 啟動應用程式。 ) 
 
 1. 檢視您的應用程式 (在啟動顯示畫面消失後會立即出現)。 應用程式應該看起來像這樣：
 
@@ -202,7 +202,7 @@ ms.locfileid: "107295633"
 
 ::: moniker-end
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 恭喜您完成此教學課程！ 我們希望您已了解有關 UWP 和 Visual Studio IDE 的一些基本概念。 若要深入了解，請繼續下列教學課程：
 

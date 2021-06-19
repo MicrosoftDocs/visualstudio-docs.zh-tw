@@ -4,17 +4,17 @@ description: 瞭解如何將數個特定領域的語言封裝 (Dsl) 成為單一
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10eeee4d36e6a28bb6cd872573c500bbdf6dca14
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 11baf6439062e28c7361e2fabb4dea4a3430f237
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950342"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390915"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>一個方案中有多個 DSL
 

@@ -1,7 +1,7 @@
 ---
 title: 'C #、VB 的建議偵錯工具屬性設定 |Microsoft Docs'
 description: 請參閱所有 managed 偵錯工具的組建和編譯屬性設定。 其他設定會視專案類型而有所不同。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b3061823a97faa53680bb358475a583493be5b93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2262194dbb6a8f4b0a47b4fcfc7f9f696c60167
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893096"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390394"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Managed 偵錯：建議的屬性設定
 在所有 Managed 偵錯案例中，某些屬性必須以相同的方式設定。

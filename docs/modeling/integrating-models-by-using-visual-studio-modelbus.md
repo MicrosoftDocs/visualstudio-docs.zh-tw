@@ -4,17 +4,17 @@ description: 瞭解 Visual Studio ModelBus 提供一個方法來建立模型之�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c1d076edc09f7978dcc188b167ce953f631068
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 350398d91d73a722956d195b300311f313ff34db
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957409"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391058"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 來整合模型
 
@@ -96,7 +96,7 @@ Visual Studio ModelBus 配接器預設會使用元素的 guid 來識別它。 �
 
 2. 在對話方塊中，選取 [ **我要讓此模型使用模型匯流排參考**]。
 
-3. 在使用 DSL 的 Dsl 專案中，將下列組件加入至專案參考。 您將會在 \\ 公開 DSL 的 ModelBusAdapter\bin * 目錄中找到這些元件 ( .dll 檔案) 。
+3. 在使用 DSL 的 Dsl 專案中，將下列組件加入至專案參考。 您將會在公開 DSL 的 ModelBusAdapter\bin * 目錄中找到這些元件 (.dll 檔案) \\ 。
 
     - 公開的 DSL 元件，例如 **Fabrikam.FamilyTree.Dsl.dll**
 

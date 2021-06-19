@@ -6,22 +6,22 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e78e88884801b7aa7fcbcfe1147afd6fad653fd8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa2be8f4da963c21d9f7f68939421dd7d2d72d0b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954367"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390108"
 ---
 # <a name="model-your-app39s-architecture"></a>將您的應用程式模型&#39;s 架構
 若要協助確保您的軟體系統或應用程式符合使用者的需求，您可以在 Visual Studio 中建立模型，做為軟體系統或應用程式之整體結構和行為的描述之一部分。 您也可以使用模型來描述整個設計所使用的模式。 這些模型可協助您了解現有架構、討論變更，並清楚地傳達您的意圖。
 
- 若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
  模型的目的是要減少自然語言描述中所發生的語意模糊，並且協助您和同事將此設計視覺化以及討論替代設計。 模型應該搭配其他文件或討論一起使用。 模型本身無法代表完整的架構規格。
 

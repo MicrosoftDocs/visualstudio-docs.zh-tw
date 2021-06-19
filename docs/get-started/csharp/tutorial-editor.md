@@ -1,7 +1,7 @@
 ---
-title: C# 開發人員編輯簡介
+title: '教學課程： c # 開發人員的編輯'
 description: 這個 10 分鐘的 Visual Studio 程式碼編輯器簡介，說明 Visual Studio 可讓撰寫、巡覽和了解 C# 程式碼更加輕鬆的一些方式。
-ms.custom: seodec18, get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c1170f7420cc605b713357d94526c76eb5c51641
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 2a6b01e9c26ea816e05a1d2186d904bdb080f098
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308424"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390251"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>瞭解如何搭配 C 使用程式碼編輯器\#
 

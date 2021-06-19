@@ -1,5 +1,5 @@
 ---
-title: F1 說明的預設頁面
+title: F1 說明無相符的回復
 description: 糟糕！ 找不到任何 F1 相符。
 ms.prod: visual-studio
 ms.technology: ''
@@ -12,12 +12,12 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 1670b694374c72c641eaedf8a65c5c8b2fa93bb2
-ms.sourcegitcommit: a9526ab1556c47570286c7a7d3314af67fd1dcf0
+ms.openlocfilehash: cc15c7ac377899ddb8660782e6015cfc975aa8dc
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "112365428"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390564"
 ---
 # <a name="oops-no-f1-help-match-was-found"></a>糟糕！ `F1`找不到任何協助相符
 

@@ -1,7 +1,7 @@
 ---
 title: '教學課程：擴充簡單的 c # 主控台應用程式'
 description: '逐步瞭解如何在 Visual Studio 中開發 c # 主控台應用程式。'
-ms.custom: get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 04/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: cce069b1c4acb1784388b7afb06e810dbe826d59
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: c7c38ed40143064090535735b2050dd31904d608
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107584131"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390173"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>教學課程：擴充簡單的 c # 主控台應用程式
 
@@ -747,7 +747,7 @@ namespace CalculatorProgram
 }
 ```
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 恭喜您完成此教學課程！ 若要更深入了解，請繼續下列教學課程。
 

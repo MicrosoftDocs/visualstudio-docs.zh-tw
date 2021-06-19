@@ -1,7 +1,7 @@
 ---
 title: 檢查變數-自動變數和區域變數視窗 |Microsoft Docs
 description: 在 Visual Studio 中進行調試時，檢查 [自動變數] 和 [區域變數] 視窗中的變數。 當您進行調試時，[自動變數] 和 [區域變數] 視窗會顯示變數值。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 10/18/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61378b697b8cf2d50851926bb9f9b64b50878a59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5f1378f87ff8717b9bc9d9125b03c1b28c5007f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857938"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389796"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>在 [自動變數] 和 [區域變數] 視窗中檢查變數
 

@@ -4,17 +4,17 @@ description: 瞭解如何改善 code map 效能，以及如何將完成轉譯所
 ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c37f07d309551ae0f8aa0062b7847722f33671be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5a279a04b1bd76933df335bc0b2527ab4b2418f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861682"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389640"
 ---
 # <a name="improve-performance-for-code-maps"></a>改善 code map 的效能
 
