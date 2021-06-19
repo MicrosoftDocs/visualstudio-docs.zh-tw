@@ -8,17 +8,17 @@ helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eb988854cb1bc049e024bf204553dd715e652a4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8034e0d1df6410c842f7d93a4ee3023957904744
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923982"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388083"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 文字範本包含將透過它產生的文字。 例如，建立網頁的範本將會包含 " \<html> ..."以及 HTML 網頁的所有其他標準部分。 插入範本中的 *控制項區塊* 是程式碼的片段。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。
@@ -33,7 +33,7 @@ ms.locfileid: "99923982"
 
 - **控制區塊** -將變數值插入文字中的程式碼，並控制文字的條件式或重複的部分。
 
-若要嘗試本主題中的範例，請將它們複製到範本檔案中，如 [使用 T4 文字模板在設計階段產生程式碼時](../modeling/design-time-code-generation-by-using-t4-text-templates.md)所述。 編輯範本檔之後，請儲存它，然後檢查輸出 **.txt** 檔案。
+若要嘗試本主題中的範例，請將它們複製到範本檔案中，如 [使用 T4 文字模板在設計階段產生程式碼時](../modeling/design-time-code-generation-by-using-t4-text-templates.md)所述。 編輯範本檔之後，請儲存它，然後檢查輸出 **.txt** 檔。
 
 ## <a name="directives"></a>指示詞
  文字範本指示詞提供有關如何產生轉換程式碼和輸出檔案之文字範本引擎的一般指示。

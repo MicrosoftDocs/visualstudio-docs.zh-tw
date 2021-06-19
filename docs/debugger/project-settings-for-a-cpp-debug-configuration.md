@@ -1,7 +1,7 @@
 ---
 title: C + + debug config 的專案設定
 description: 在屬性頁中設定 C 和 c + + 調試。 本文描述這些設定，並告訴您其類別。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/26/2018
 ms.topic: reference
 f1_keywords:
@@ -113,12 +113,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 168dac192972c2ee670d733a07503ffe2776910e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 34dd9b82a642c9e9ec32dde383a8c2e02ac57aa2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842717"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385184"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 偵錯組態的專案設定
 您可以在 [ **屬性頁** ] 對話方塊中變更 C 或 c + + 偵錯工具設定的專案設定，如 [如何：設定 Debug 和 release 設定](../debugger/how-to-set-debug-and-release-configurations.md)中所述。 下表顯示 [屬性頁] 對話方塊中與偵錯工具相關的設定位置。
@@ -156,19 +156,19 @@ ms.locfileid: "99842717"
 
 ## <a name="cc-folder-general-category"></a>C/C++ 資料夾 (一般分類)
 
-|設定|Description|
+|設定|描述|
 |-------------|-----------------|
 |**偵錯資訊格式** ([/Z7、/Zd、Zi、/ZI](/cpp/build/reference/z7-zi-zi-debug-information-format))|指定要為專案建立的偵錯資訊類型。<br /><br /> 預設選項 (/ZI) 會以 [編輯後繼續] 相容格式建立程式資料庫 (PDB)。 如需詳細資訊，請參閱 [/Z7、/Zd、/Zi、/ZI (偵錯資訊格式)](/cpp/build/reference/z7-zi-zi-debug-information-format)。|
 
 ## <a name="cc-folder-optimization-category"></a>C/C++ 資料夾 (最佳化分類)
 
-|設定|Description|
+|設定|描述|
 |-------------|-----------------|
 |**最佳化**|指定編譯器是否應該將它所產生的程式碼最佳化。 最佳化會變更執行的程式碼。 優化的程式碼不再符合原始程式碼，讓偵錯工具更困難。<br /><br /> 預設選項 ([停用 (/0d]) 會隱藏最佳化。 您可以在隱藏最佳化的情況下進行開發，然後在建立程式碼的生產環境版本時再將此功能開啟。|
 
 ## <a name="linker-folder-debugging-category"></a>連結器資料夾 (偵錯分類)
 
-|設定|Description|
+|設定|描述|
 |-------------|-----------------|
 |**產生偵錯資訊** ([/DEBUG](/cpp/build/reference/debug-generate-debug-info))|通知連結器要包含偵錯資訊，資訊的格式是由 [/Z7、/Zd、Zi 或 /ZI](/cpp/build/reference/z7-zi-zi-debug-information-format) 所指定。|
 |**產生程式資料庫檔案** ([/PDB:name](/cpp/build/reference/pdb-use-program-database))|在此方塊中指定程式資料庫 (PDB) 檔案的名稱。 您必須選取 ZI 或 /Zi 以指定 [偵錯資訊格式]。|

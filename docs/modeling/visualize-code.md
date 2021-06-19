@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code, understanding
 - code, visualizing
 - code, exploring
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a261589af027c76708a70631426d8033eb2ada63
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90c180bf9d910227013c2e089001ce5332cd1bd3
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924234"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388343"
 ---
 # <a name="visualize-code"></a>視覺化程式碼
 
@@ -32,7 +32,7 @@ ms.locfileid: "99924234"
 
 這些工具也可協助您更輕鬆地與專案相關人員通訊。
 
-若要查看 Visual Studio 支援每項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
+若要查看 Visual Studio 支援每項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
 
 ## <a name="what-do-you-want-to-do"></a>您想要做什麼事？
 
@@ -44,6 +44,7 @@ ms.locfileid: "99924234"
 
 ## <a name="see-also"></a>另請參閱
 
+- [安裝架構程式碼工具](install-architecture-tools.md)
 - [情節：使用視覺化和模型功能變更設計](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
 - [分析和模型架構](../modeling/analyze-and-model-your-architecture.md)
 - [建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)

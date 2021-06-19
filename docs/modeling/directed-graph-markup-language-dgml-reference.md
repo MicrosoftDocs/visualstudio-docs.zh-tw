@@ -4,23 +4,23 @@ description: 瞭解有向圖形標記語言 (DGML) 描述用於視覺效果的�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abc3d3596a64c04bf25c0471d32a00f1cb7705d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: adaa09ca7c58652c85cf6c3510e9e47bc4af00f3
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935075"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389107"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>有向圖形標記語言 (DGML) 參考
 
 有向圖形標記語言 (DGML) 描述用於視覺化以及執行複雜度分析的資訊，而且是用來在 Visual Studio 中保存 Code Map 的格式。 它使用簡單的 XML 來描述循環與非循環的有向圖形。 有向圖形是一組用連結或邊緣相連的節點。 節點和連結可用來表示網路結構，例如軟體專案中的項目。
 
-請注意，某些版本的 Visual Studio 僅支援 DGML 功能的子集，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+請注意，某些版本的 Visual Studio 僅支援 DGML 功能的子集，請參閱 [架構和模型工具的版本支援](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 > [!NOTE]
 > 當您編輯 .dgml 檔案時，IntelliSense 會協助您識別每個項目的可用屬性和其值。 若要以屬性指定色彩，請使用常見色彩名稱 (例如 "Blue") 或 ARGB 十六進位值 (例如 "#ffa0b1c3")。 DGML 使用一小部分的 Windows Presentation Foundation (WPF) 色彩定義格式。 如需詳細資訊，請參閱 [色彩類別](/dotnet/api/system.windows.media.colors?view=netframework-4.8&preserve-view=true)。
@@ -312,7 +312,7 @@ ms.locfileid: "99935075"
 </Paths>
 ```
 
-若要從 .dgml 檔案中的專案參考別名，請以 `Id` \<Path/> 貨幣符號 ($) ，並以括弧括住元素 ( # A3 # A4 # A5：
+若要從 .dgml 檔案中的專案參考別名，請以 `Id` \<Path/> 貨幣符號 ($) 和括弧 ( () ) 來括住元素：
 
 ```xml
 <Nodes>

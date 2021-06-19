@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Show Map Lines
 - Domain-Specific Language Tools, Show As Class
 - Domain-Specific Language Tools, Bring Tree Here
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 705134b5dfa31bb317360073e336abebcefdb13d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f401fe0509fc425fff873a7dc224c69359156861
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923977"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388070"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定義圖表
 定義的圖表 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 是定義網域特定語言的重要工具。 您可以將項目加入至網域模型，並定義圖表上的關聯性；也可以修改圖表配置，讓圖表更容易讀取。

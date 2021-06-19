@@ -4,17 +4,17 @@ description: 瞭解獨立模式 shell 如何讓您判斷需要與 DSL 互動的 
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1293593e71aa57d8e74b9035320b3da5108aba09
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 946cbf99fa7836fa8d7ec5aa1d921e7cda93bf46
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924221"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388304"
 ---
 # <a name="vs-shell-deployment"></a>VS Shell 部署
 

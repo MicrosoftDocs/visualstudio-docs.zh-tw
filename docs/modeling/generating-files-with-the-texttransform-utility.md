@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 741e7625d301e250daa28a93f18a82193675e068
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 743b7deb118bb3506773ec1a82d2331633afa7bc
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902691"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388824"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>使用 TextTransform 公用程式產生檔案
 

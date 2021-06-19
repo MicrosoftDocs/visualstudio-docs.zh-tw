@@ -6,23 +6,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 73b0d46e1e293d0713cf7e71706fa0188aaea269
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 095a6f17691d3265320a7b77905f70903bec1cb5
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959060"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388499"
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 
 在 Visual Studio 中，您可以使用模型來協助您了解並變更系統、應用程式或元件。 模型可以協助您將系統運作的領域視覺化、釐清使用者的需求、定義系統的架構、分析程式碼，以及確定您的程式碼符合需求。 請參閱 [Channel 9 影片：透過模型改進架構](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)。
 
-若要查看支援各類型之模型的 Visual Studio 版本，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看支援各類型之模型的 Visual Studio 版本，請參閱 [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 模型可以藉由許多方式協助您：
 
@@ -136,7 +136,7 @@ ms.locfileid: "99959060"
 |**影片**|![連結至影片 ](../data-tools/media/playvideo.gif) [MSDN how Do I 影片：如何建立和使用 UML 模型和圖表 (Visual Studio 2010 旗艦) ](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![連結至影片 ](../data-tools/media/playvideo.gif) [Channel 9：使用 Visual Studio 2010 的 UML](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![連結至影片 ](../data-tools/media/playvideo.gif) [MSDN 如何系列： UML 工具和擴充性 (Visual Studio 2010 旗艦) ](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**論壇**|- [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**部落格**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
-|**技術文件和日誌**|[MSDN 架構中心](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**技術文件和日誌**|[MSDN 架構中心](/previous-versions/dn630665(v=msdn.10))|
 
 ## <a name="see-also"></a>另請參閱
 

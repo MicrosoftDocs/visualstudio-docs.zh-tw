@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, creating extensions
 - layer models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10e0e07b6a8ee4245e19628e03bfdf484f94d34c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2ed8700cfb18aacf41464bfdfacaedac557bb00
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935140"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388902"
 ---
 # <a name="extend-dependency-diagrams"></a>擴充相依性圖表
 
@@ -35,7 +35,7 @@ ms.locfileid: "99935140"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-您必須在要執行圖層擴充功能的電腦上安裝適當的 Visual Studio 版本。 若要查看 Visual Studio 支援相依性圖表的版本，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+您必須在要執行圖層擴充功能的電腦上安裝適當的 Visual Studio 版本。 若要查看 Visual Studio 支援相依性圖表的版本，請參閱 [架構和模型工具的版本支援](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 ## <a name="see-also"></a>另請參閱
 

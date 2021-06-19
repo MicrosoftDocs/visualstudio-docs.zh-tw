@@ -3,18 +3,18 @@ title: 建立 Windows Forms 架構的特定領域語言
 description: 提供有關如何使用 Windows Forms 來顯示特定領域語言模型狀態的資訊。
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 41c3ba299df1e6f9ce0e2848f7ffad59e5b3fbea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a77a22b7ed888b28f12154974d735213952899c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945405"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389536"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>建立以 Windows Forms 為基礎的 Domain-Specific 語言
 
@@ -141,7 +141,7 @@ ms.locfileid: "99945405"
 
     保留其他屬性的預設設定。
 
-4. 在設計檢視中開啟 FarmControl.cs。
+4. 在設計檢視中開啟 FarmControl。
 
     將 [ **伺服器** 陣列] 從 [資料來源] 視窗拖曳至 FarmControl。
 
@@ -237,7 +237,7 @@ DSL 解決方案現在可以建立並執行，不過您稍後可能會想要新�
 
 ### <a name="make-the-properties-update-immediately"></a>立即更新屬性
 
-1. 在 FarmControl.cs 的設計檢視中，選取簡單的欄位，例如 [名稱]、[大小] 或 [IsOrganic]。
+1. 在 FarmControl 的設計檢視中，選取簡單的欄位，例如 [名稱]、[大小] 或 [IsOrganic]。
 
 2. 在屬性視窗中 **，展開 []，然後** 開啟 **(Advanced)**。
 
@@ -249,7 +249,7 @@ DSL 解決方案現在可以建立並執行，不過您稍後可能會想要新�
 
 ### <a name="provide-add-buttons"></a>提供新增按鈕
 
-1. 在 FarmControl.cs 的設計檢視中，使用 [工具箱] 在表單上建立按鈕。
+1. 在 FarmControl 的設計檢視中，使用 [工具箱] 在表單上建立按鈕。
 
     編輯按鈕的名稱和文字，例如 `New Sheep` ：。
 

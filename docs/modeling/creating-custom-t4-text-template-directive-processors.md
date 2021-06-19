@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf17d2a7e3b38e267f0353f71c7cd83826b141bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59644275f17eac197074351a777959bb1826a5de
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945327"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389497"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器
 
@@ -56,7 +56,7 @@ ms.locfileid: "99945327"
 
 - `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -範本引擎會針對範本中的每個指示詞呼叫這個方法。 您的處理器應儲存結果。
 
-對 ProcessDirective 的所有呼叫都 ( # A1 之後，範本化引擎會呼叫這些方法：
+所有對 ProcessDirective 的呼叫 () 範本化引擎會呼叫這些方法：
 
 - `string[] GetReferencesForProcessingRun()` -傳回範本程式碼所需的元件名稱。
 

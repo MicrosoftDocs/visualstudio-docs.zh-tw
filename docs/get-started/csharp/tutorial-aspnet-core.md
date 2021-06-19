@@ -2,8 +2,8 @@
 title: '教學課程：開始使用 c # 和 ASP.NET Core'
 titleSuffix: ''
 description: 了解如何在 Visual Studio 中使用 C# 逐步建立 ASP.NET Core Web 應用程式。
-ms.custom: seodec18, get-started
-ms.date: 02/12/2021
+ms.custom: vs-acquisition, get-started
+ms.date: 06/12/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,46 +16,41 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 58f9604cbecdbe6414e91079a9e0e4691a32b768
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 25840b820a92925c3d7434d0c76b0138b533b2dc
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308541"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388109"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 
 在這個使用 Visual Studio 透過 ASP.NET Core 進行 C# 開發的教學課程中，您將建立 C# ASP.NET Core Web 應用程式、對其進行變更、探索 IDE 的一些功能，然後執行應用程式。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="prerequisites"></a>必要條件
 
-### <a name="install-visual-studio"></a>安裝 Visual Studio
+1. 安裝 Visual Studio
+   ::: moniker range="vs-2017"
+   
+   如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
+   
+   ::: moniker-end
+   
+   ::: moniker range="vs-2019"
+   
+   如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
+   
+   ::: moniker-end
 
-::: moniker range="vs-2017"
+   ::: moniker range="vs-2022"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
+   如果您尚未安裝 Visual Studio 2022 Preview，請前往 [Visual Studio 2022 preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022) 頁面，免費進行安裝。
 
-::: moniker-end
+   ::: moniker-end
 
-::: moniker range="vs-2019"
+1. 更新 Visual Studio-如果您已安裝 Visual Studio，請確定您正在執行最新版本。 如需有關如何更新安裝的詳細資訊，請參閱 [最新版本頁面的更新 Visual Studio](../../install/update-visual-studio.md) 。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
-
-::: moniker-end
-
-::: moniker range="vs-2022"
-
-如果您尚未安裝 Visual Studio 2022 Preview，請前往 [Visual Studio 2022 preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022) 頁面，免費進行安裝。
-
-::: moniker-end
-
-### <a name="update-visual-studio"></a>更新 Visual Studio 2017
-
-如果您已經安裝 Visual Studio，請確定您執行的是最新版本。 如需有關如何更新安裝的詳細資訊，請參閱 [最新版本頁面的更新 Visual Studio](../../install/update-visual-studio.md) 。
-
-### <a name="choose-your-theme-optional"></a>選擇您的佈景主題 (選擇性)
-
-本教學課程包含使用深色佈景主題的螢幕擷取畫面。 如果您未使用深色佈景主題，但想要使用，請參閱[將 Visual Studio IDE 和編輯器個人化](../../ide/quickstart-personalize-the-ide.md)頁面以了解做法。
+1. 選擇您的主題 (選擇性) -本教學課程包含使用深色主題的螢幕擷取畫面。 您可以 [個人化 VISUAL STUDIO IDE 和編輯器](../../ide/quickstart-personalize-the-ide.md) 頁面，以瞭解做法。
 
 ## <a name="create-a-project"></a>建立專案
 

@@ -3,18 +3,18 @@ title: 逐步解說：可存取模型的偵錯工具文字模板
 description: 提供有關如何對存取模型的文字模板進行 debug 的資訊。
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d39b1ac72210145cc1efa1c513b7f3b76d8c2e36
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924115"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388226"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>逐步解說：偵錯存取模型的文字範本
 當您修改或新增特定領域語言方案中的文字模板時，當引擎將範本轉換為原始程式碼或編譯產生的程式碼時，可能會收到錯誤。 下列逐步解說將示範您可以用來對文字模板進行的一些動作。

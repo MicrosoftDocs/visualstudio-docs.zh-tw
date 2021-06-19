@@ -1,7 +1,7 @@
 ---
 title: CPU 取樣的初級開發人員指南
 description: 瞭解 Visual Studio 程式碼剖析工具如何顯示您應用程式中的函式所使用的時間，並引導您進行應用程式的加速工作。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 02/27/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +17,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9368ca0bf2c10afb86f61683bf58b631c4ba5f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07a0593e5139479c1b2d82f7b2f4cd78fde8a884
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954380"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387979"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 取樣的初級開發人員指南
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [取樣] 資料。

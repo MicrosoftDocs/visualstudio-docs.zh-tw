@@ -8,23 +8,23 @@ helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: df0ecb55e72683a09bb68ec61410271b8c6a8774
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5aa5a1d5d1e64dbb5fbbe5a7ab1c0bb6968351b8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935101"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388889"
 ---
 # <a name="export-diagrams-as-images"></a>將圖表匯出為影像
 
 在 Visual Studio 中，您可以將模型圖表儲存成唯讀格式，如此就可與專案關係人、使用者或使用不同版本的 Visual Studio 專案小組成員共用這些圖表。
 
-若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 ## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>將圖表或部分圖表複製到另一個應用程式
 

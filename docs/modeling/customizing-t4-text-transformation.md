@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, API
 - text templates, custom hosts
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4565e710d1b3172507cb3f966cd2a920d3b3aaa8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35942b5f87458d1ccaf4892d33b5bba1dcdbb8a0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935400"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389354"
 ---
 # <a name="customize-t4-text-transformation"></a>自訂 T4 文字轉換
 

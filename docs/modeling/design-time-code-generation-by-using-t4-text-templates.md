@@ -12,17 +12,17 @@ helpviewer_keywords:
 - text templates, getting started
 - Text Template project item
 - text templates, generating code for your application
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec309be7fbeb81951af73517412f36f7b28bc82f
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: f8b7bc48a5c409dbecbb313fd277a31ad1cec287
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884144"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389133"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 
@@ -66,7 +66,7 @@ ms.locfileid: "104884144"
 
     您可能會看到 **安全性警告** 訊息方塊，要求您確認是否要執行該範本。 按一下 [確定]  。
 
-6. 在 **方案總管** 中，展開 [範本檔案] 節點，您會發現副檔名為 **.txt** 的檔案。 此檔案包含從範本產生的文字。
+6. 在 **方案總管** 中，展開 [範本檔案] 節點，您會找到副檔名 **.txt** 的檔案。 此檔案包含從範本產生的文字。
 
    > [!NOTE]
    > 如果您的專案是 Visual Basic 專案，您必須按一下 [ **顯示所有** 檔案]，才能看到輸出檔。
@@ -355,7 +355,7 @@ Warning("A warning message");
    |屬性 |設定 |
    |-|-|
    | **自訂工具 =** | **TextTemplatingFileGenerator** |
-   | **建置動作 =** | **None** |
+   | **建置動作 =** | **無** |
 
 5. 在檔案開頭，插入下列各行：
 
@@ -380,7 +380,7 @@ Warning("A warning message");
 
 請參閱 [撰寫 T4 文字模板的指導方針](../modeling/guidelines-for-writing-t4-text-templates.md)。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 |後續步驟|主題|
 |-|-|

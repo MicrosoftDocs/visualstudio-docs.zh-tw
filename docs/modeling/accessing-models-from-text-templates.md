@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - text templates, accessing models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13cae79908e3a760c37ac590ca61f43001d384d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05e21dacfe56f41f1d2c0da51659ab55203db1a0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908924"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389159"
 ---
 # <a name="access-models-from-text-templates"></a>從文字模板存取模型
 
@@ -102,7 +102,7 @@ Here is a list of elements in the model:
 > [!NOTE]
 > 這個方法可讓您讀取相同範本中的多個模型，但不支援 ModelBus 參考。 若要讀取由 ModelBus 參考 interlinked 的模型，請參閱 [使用文字模板中的 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
- 如果您想要從相同的文字模板存取一個以上的模型，您必須為每個模型呼叫產生的指示詞處理器一次。 您必須在參數中指定每個模型的檔案名 `requires` 。 您必須在參數中指定要用於根域類別的名稱 `provides` 。 您必須為每個指示詞呼叫中的參數指定不同的值 `provides` 。 例如，假設您有三個稱為 Library 的模型檔案： xyz、School 和 Work。 若要從相同的文字模板存取它們，您必須撰寫與下列類似的三個指示詞呼叫。
+ 如果您想要從相同的文字模板存取一個以上的模型，您必須為每個模型呼叫產生的指示詞處理器一次。 您必須在參數中指定每個模型的檔案名 `requires` 。 您必須在參數中指定要用於根域類別的名稱 `provides` 。 您必須為每個指示詞呼叫中的參數指定不同的值 `provides` 。 例如，假設您有三個模型檔案，稱為 Library.xyz、School.xyz 和 Work.xyz。 若要從相同的文字模板存取它們，您必須撰寫與下列類似的三個指示詞呼叫。
 
 ```
 <#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Library.xyz'" provides="ExampleModel=LibraryModel" #>

@@ -6,23 +6,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bac26664a2ef98cffbd60eee0647b39dd1108675
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae85c7f98aab3e852a810976cc1cecbd83b65307
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924313"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388369"
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 
 Visual Studio 可協助讓您的軟體與使用者需求和系統架構保持一致。
 
-若要查看支援每項功能的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看支援每項功能的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 ## <a name="key-tasks"></a>主要工作
 

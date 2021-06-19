@@ -10,17 +10,17 @@ helpviewer_keywords:
 - code analysis, dependency graphs
 - dependency graphs, analyzing code
 - graph documents, analyzing
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 77e5d8f6241f6f1978f24b9ebb5ad49aa9f24331
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8817e50ae96a27f6b3b76e28262390271c1fdf4c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934984"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388850"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>使用 Code Map 分析器尋找潛在問題
 
@@ -36,7 +36,7 @@ ms.locfileid: "99934984"
 
 在對應工具列上，選擇 [**版面** 配置  >  **分析器**]，然後選擇您想要執行的分析器：
 
-|**分析儀**|**若要識別具有下列項目的節點：**|
+|**分析器**|**若要識別具有下列項目的節點：**|
 |-|-|
 |**循環參考分析器**|對彼此具有循環的相依性。 **注意：**  當您展開群組時，[ **泛型** ] 群組中的迴圈相依性不會顯示在對應上。|
 |**尋找中樞分析器**|為前 25% 的高度連接節點<br /><br /> **隱藏對應上的所有其他節點**<br /><br /> -開啟對應的快捷方式功能表，選擇 [ **Advanced**]、[ **選取**]、[ **隱藏未選取**]。<br />     對應會隱藏未選取的節點，且分析器將識別作為中樞的新節點。|

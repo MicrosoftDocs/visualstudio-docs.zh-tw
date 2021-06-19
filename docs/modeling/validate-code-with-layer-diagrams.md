@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e330b95d2de6da53d9d1bd0f3d553ab8319bdd04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f2d62433d150f61e9a7e21cceb20eb715a0767a
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924325"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388356"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -52,7 +52,7 @@ ms.locfileid: "99924325"
 
 - 具有具有相依性圖表之模型專案的方案。 此相依性圖表必須連結到您想要驗證的 c # 或 Visual Basic 專案中的構件。 請參閱 [從您的程式碼建立](../modeling/create-layer-diagrams-from-your-code.md)相依性圖表。
 
-若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 您可以在 Visual Studio 中或從命令提示字元，以手動方式從開啟的相依性圖表驗證程式代碼。 您也可以在執行本機組建或 Azure Pipelines 組建時，自動驗證程式代碼。 請參閱 [Channel 9 影片：使用相依性圖表設計及驗證您的架構](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)。
 

@@ -1,7 +1,7 @@
 ---
 title: 分析 XAML 應用程式中的資源耗用量
 description: 使用應用程式時間軸分析工具來尋找 XAML 應用程式中的效能問題。 您可以針對各種案例中的各種工作，分析花費的時間。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/01/2018
 ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 40fc899aecc3b8aea239703080d8db4efcfaec52
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d352c118bd8b21b9dcbf62f7dd32eaf2999ed471
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901193"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388018"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析資源耗用量和 UI 執行緒活動 (XAML)
 
@@ -101,7 +101,7 @@ ms.locfileid: "99901193"
 
 支援的事件如下：
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**剖析**|剖析 XAML 檔案和建立物件所花費的時間。<br /><br /> 展開 [時間軸詳細資料] 中的 [剖析] 節點，會顯示由於根事件而剖析的所有 XAML 檔案相依性鏈結。 這可讓您識別效能敏感情節中不必要的檔案剖析和物件建立作業，並排除這些作業以取得最佳化。|
 |**版面配置**|在大型應用程式裡，螢幕上可能會同時顯示數千個項目。 此顯示可能導致低 UI 畫面播放速率和對應不佳的應用程式回應性。 配置事件準確地判斷每個項目的配置成本 (也就是在 Arrange、Measure、ApplyTemplate、ArrangeOverride 和 MeasureOverride 中所花的時間)。 也會建置參與版面配置階段的視覺化樹狀結構。 您可以使用此視覺效果，來判斷要清除哪些邏輯樹狀結構，或評估其他延遲機制以最佳化版面配置階段。|
@@ -117,7 +117,7 @@ ms.locfileid: "99901193"
 
 您可以使用 [時間軸詳細資料]  工具列來排序、篩選及指定 [時間軸詳細資料]  檢視項目的註釋。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**排序依據**|依開始時間或事件長度排序。|
 |![依畫面格分組事件](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|加入或移除依框架分組事件的最上層 [框架]  分類。|

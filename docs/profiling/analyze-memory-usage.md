@@ -1,7 +1,7 @@
 ---
 title: 分析記憶體使用量
 description: 瞭解您可以用來找出記憶體流失和沒有效率的記憶體使用量的工具，例如記憶體使用量工具和 .NET 物件組態工具。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 10/12/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2af4bc47d711275716eea528a4d9bd816408322f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6af0cd98e69a3c43ba70f5609567243e6285201
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901142"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387966"
 ---
 # <a name="analyze-memory-usage"></a>分析記憶體使用量
 

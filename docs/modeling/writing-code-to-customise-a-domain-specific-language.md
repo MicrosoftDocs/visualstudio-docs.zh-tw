@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3363857d9a953b61e18eb4b0cb891b20dbed1eb5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2231ef94bee01558e2c26899a5d9a0c855489e94
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923959"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388044"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>撰寫程式碼來自訂特定領域語言
 
@@ -52,7 +52,7 @@ ms.locfileid: "99923959"
 
      `}`
 
-     如果在變更期間發生例外狀況，所以不會執行最終認可 ( # A1，則存放區將重設為先前的狀態。 這可協助您確保錯誤不會讓模型處於不一致的狀態。 如需詳細資訊，請參閱 [在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+     如果在變更期間發生例外狀況，所以不會執行最終認可 () ，則會將存放區重設為先前的狀態。 這可協助您確保錯誤不會讓模型處於不一致的狀態。 如需詳細資訊，請參閱 [在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
 - **二元關聯** 性。 如果您定義兩個類別之間的關聯性，兩端的實例都有一個可流覽至另一端的屬性。 這兩個端點一律會進行同步處理。 例如，如果您使用名為父系和子系的角色來定義 parenthood 關聯性，您可以撰寫：
 

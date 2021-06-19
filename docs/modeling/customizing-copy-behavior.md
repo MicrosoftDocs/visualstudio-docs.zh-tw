@@ -4,17 +4,17 @@ description: 瞭解在使用 Visual Studio 視覺效果和模型 SDK 建立的 D
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a32ed2bb4f375e8938c9a3b9ff34c7af47e0e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2e5ffbc7dde0bd1274756d1721088b18ea6ec34
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935595"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389406"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 在特定領域語言 (DSL) 使用 Visual Studio 的視覺效果和模型 SDK 所建立，您可以改變當使用者複製和貼上專案時所發生的情況。

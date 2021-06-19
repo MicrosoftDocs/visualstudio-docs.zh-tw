@@ -1,7 +1,7 @@
 ---
 title: 在偵錯工具中使用傾印檔案 |Microsoft Docs
 description: 傾印檔案是執行中應用程式和已載入模組的快照。 如果您沒有應用程式的 debug 存取權，請考慮建立傾印檔案。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f3b72db232e5e83a0d83fbab1d1223da507054d9
-ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
+ms.openlocfilehash: 1496c50d6a4022083a5cd093a0682ef36c70bbaa
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107941119"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389224"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中傾印檔案
 
@@ -95,18 +95,18 @@ Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔
    - 若要設定符號載入位置，請選取 [ **設定符號路徑**]。
    - 若要啟動調試，請選取 [ **僅限 Managed**]、[僅限 **原生** 的 debug]、[ **使用混合** 的 Debug] 或 [ **使用 managed 記憶體** 進行調試
 
-## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 尋找 .exe、.pdb 和來源檔案
+## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 尋找 .exe、.pdb 和原始檔
 
 若要在傾印檔案上使用完整的調試功能，Visual Studio 需要：
 
-- 建立傾印的 *.exe* 檔案，以及 (dll 等其他二進位檔，) 該傾印處理常式所使用的檔案。
-- *.Exe* 和其他二進位檔的符號 (*.pdb*) 檔。
+- 已建立傾印的 *.exe* 檔案，以及傾印程式所使用的其他二進位檔 (dll 等等 ) 。
+- 符號 (*.exe* 和其他二進位檔的 *.pdb*) 檔。
 - 在建立傾印時，完全符合檔案版本和組建的 *.exe* 和 *.pdb* 檔案。
 - 相關模組的原始程式檔。 如果找不到原始程式檔，您可以使用模組的反組解碼。
 
 如果傾印有堆積資料，Visual Studio 可以處理某些模組遺漏的二進位檔，但它必須有足夠的模組二進位檔，才能產生有效的呼叫堆疊。
 
-### <a name="search-paths-for-exe-files"></a>.Exe 檔的搜尋路徑
+### <a name="search-paths-for-exe-files"></a>搜尋 .exe 檔案的路徑
 
 Visual Studio 會自動搜尋這些位置，以尋找未包含在傾印檔案中的 *.exe* 檔案：
 

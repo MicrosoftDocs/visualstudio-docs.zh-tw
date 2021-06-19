@@ -8,17 +8,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 019f77320e9118d5f3d31e647a59c71bb474d204
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be19b3026010e37108ca1b19096d48a3c8d88ab6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935530"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389367"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 
@@ -81,7 +81,7 @@ ms.locfileid: "99935530"
 
 請注意下列有關序列化模型的重點：
 
-- 每個 XML 節點的名稱與網域類別名稱相同，不同之處在于初始字母是小寫。 例如 `familyTreeModel` 和 `person`。
+- 每個 XML 節點的名稱與網域類別名稱相同，不同之處在于初始字母是小寫。 例如，`familyTreeModel` 與 `person`。
 
 - 網域屬性（例如 Name 和 BirthYear）會序列化為 XML 節點中的屬性。 同樣地，會將屬性名稱的初始字元轉換成小寫。
 
@@ -246,7 +246,7 @@ ms.locfileid: "99935530"
 
 您可以取代部分或所有序列化演算法。
 
-我們建議您研究 **Dsl\Generated Code\Serializer.cs** 和 **SerializationHelper.cs** 中的程式碼。
+我們建議您研究 **Dsl\Generated Code\Serializer.cs** 和 **SerializationHelper** 中的程式碼。
 
 ### <a name="to-customize-the-serialization-of-a-particular-class"></a>自訂特定類別的序列化
 

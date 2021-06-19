@@ -4,17 +4,17 @@ description: 瞭解如何根據模型中屬性的狀態，來控制圖示或裝�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23df6dc45d1d96997a18942e7878a84a5d9f60a7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c60d66188364ddd18be1d60a92b51ee5d7a9fc8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942798"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389614"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 裝飾 *專案是在* 特定領域語言的圖形中出現的圖示或文字行 (DSL) 。 您可以根據模型中的屬性狀態，使裝飾專案出現並消失。 例如，在代表人的圖形上，您可能會有不同的圖示，這些圖示會根據人的性別、子女數目等而出現。
@@ -88,7 +88,7 @@ ms.locfileid: "99942798"
 
      文字編輯器會在 Dsl\GeneratedCode\DomainClasses.cs. 上開啟 反白顯示的錯誤上方是要求您新增方法的批註。
 
-6. 請注意缺少的命名空間、類別和方法。  例如，FamilyTree. GetDecoratorControlValue ( # A1。
+6. 請注意缺少的命名空間、類別和方法。  例如，FamilyTree 的 GetDecoratorControlValue () 。
 
 7. 在不同的程式碼檔案中，撰寫包含遺漏方法的部分類別定義。 例如：
 

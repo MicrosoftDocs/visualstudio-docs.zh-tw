@@ -1,7 +1,7 @@
 ---
 title: 部署 UWP 應用程式 |Microsoft Docs
 description: 從 Visual Studio 部署通用 Windows 平臺 (UWP) 應用程式。 指定要部署的本機或遠端目標裝置。 瞭解部署選項。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 6d8819f92e19960aefc7e485acb2fb7fa827b6ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a1c1802d92beb436bbd2ac87bd1e7a39f6086f1
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872166"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387862"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>從 Visual Studio 部署 UWP 應用程式
 
@@ -50,7 +50,7 @@ Visual Studio 部署功能會建立並註冊在目標裝置上使用 Visual Stud
 
 ## <a name="how-to-specify-a-remote-device"></a><a name="BKMK_How_to_specify_a_remote_device"></a> 如何指定遠端裝置
 
-**先決條件**
+**必要條件**
 
 在 Windows 10 遠端裝置上，您必須啟用 [開發人員模式](/windows/uwp/get-started/enable-your-device-for-development)。 在執行 Creator 更新或更新版本的 Windows 10 裝置上，當您部署應用程式時，會自動安裝遠端工具。 如需詳細資訊，請參閱 [Debug 已安裝的應用程式套件](../debugger/debug-installed-app-package.md)。
 

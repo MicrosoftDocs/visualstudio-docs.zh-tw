@@ -2,7 +2,7 @@
 title: 針對安裝或升級問題進行疑難排解
 description: 有時可能會發生一些問題。 如果您的 Visual Studio 安裝或升級失敗，則這個頁面會有所幫助。
 ms.date: 06/24/2020
-ms.custom: acquisition
+ms.custom: vs-acquisition
 ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e0bc092663cc0e100598f991ae1b2a18a4b94501
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 802e4cfb78a9302bd24bca55cda1bf9eab79f9ef
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306861"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387823"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>針對 Visual Studio 安裝和升級問題進行疑難排解
 

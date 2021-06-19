@@ -18,23 +18,23 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9adf4445ca4b52e23fce91bb1f574e55fbab4f1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4642c73279340c710ed82d57563bdc3b84aff4f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945379"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389510"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 
 模型圖表可幫助您了解、釐清和溝通程式碼和軟體必須支援之使用者需求的想法。
 
-若要查看 Visual Studio 支援每種圖表類型的版本，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看 Visual Studio 支援每種圖表類型的版本，請參閱 [架構和模型工具的版本支援](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 若要將系統或現有程式碼的架構視覺化，請建立下列圖表：
 

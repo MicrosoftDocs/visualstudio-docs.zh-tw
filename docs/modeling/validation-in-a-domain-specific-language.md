@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ee0d9e10a4f96979362d8613dc6ca949ff2fd7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6de3a8940c845b29d2d0c7454b7c585f4676dba0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924254"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388330"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 身為網域指定的語言 (DSL) 的作者，您可以定義驗證條件約束，以驗證使用者建立的模型是否有意義。 例如，如果您的 DSL 允許使用者繪製人們與其祖先的家譜，您可以撰寫條件約束，確保孩子的出生日期晚於父母的出生日期。
@@ -331,7 +331,7 @@ validationController.ValidateCustom
 
  **調整變更，以恢復成有效的模型。** 例如，如果使用者將屬性設得超過允許的上限，您可以將屬性重設為最大值。 若要達成目標，請定義規則。 如需詳細資訊，請參閱 [規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。
 
- **如果嘗試無效的變更，則復原異動。** 您也可以定義此用途的規則，但在某些情況下，您可以覆寫 **OnValueChanging ( # B1** 的屬性處理常式，或覆寫方法（例如 `OnDeleted().` 回復交易）。如需 `this.Store.TransactionManager.CurrentTransaction.Rollback().` 詳細資訊，請參閱 [定義域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。
+ **如果嘗試無效的變更，則復原異動。** 您也可以定義此用途的規則，但在某些情況下，您可以覆寫屬性處理常式 **OnValueChanging ()**，或覆寫方法（例如） `OnDeleted().` 以回復交易。如需 `this.Store.TransactionManager.CurrentTransaction.Rollback().` 詳細資訊，請參閱 [定義域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。
 
 > [!WARNING]
 > 確定使用者知道已調整或已復原變更。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`

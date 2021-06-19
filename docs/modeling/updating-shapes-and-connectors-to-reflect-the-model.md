@@ -4,17 +4,17 @@ description: 瞭解 Visual Studio 中的特定領域語言，您可以讓圖形�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f3785fe232b20123475bd85be2be7148e5b87e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6439a01de2a02361914ce227c43d903f1b24b405
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924349"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388564"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>更新圖形和接點來反映模型
 
@@ -110,7 +110,7 @@ partial class MyLanguageDiagram
 
 這個方法可以用於定義域屬性和非存放區功能，例如圖形的大小。
 
-## <a name="use-associatevaluewith-to-update-other-features-of-a-shape"></a><a name="OnAssociatedProperty"></a> 使用 AssociateValueWith ( # A1 來更新圖形的其他功能
+## <a name="use-associatevaluewith-to-update-other-features-of-a-shape"></a><a name="OnAssociatedProperty"></a> 使用 AssociateValueWith () 更新圖形的其他功能
 
 針對圖形的某些功能（例如它是否有陰影或接點的箭號樣式），沒有任何內建方法可將功能公開為網域屬性。  這類功能的變更不在交易系統的控制之下。 因此，使用規則來更新它們並不適合，因為當使用者執行復原命令時，不會叫用規則。
 

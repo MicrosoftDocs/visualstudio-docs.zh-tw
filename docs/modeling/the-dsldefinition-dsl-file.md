@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1a9e633bf832021ee2f6262afed108b1515808
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3f2e2ae6e406b8967cb7de49573ce5b26377806e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924494"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388629"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔
 
@@ -42,7 +42,7 @@ ms.locfileid: "99924494"
 
 ### <a name="types"></a>類型
 
-此區段定義每一種類型以及其命名空間。 網域屬性有兩種類型。 `DomainEnumerations` 在模型中定義，並在 DomainModel.cs 中產生類型。 `ExternalTypes` 請參閱在其他地方所定義的類型 (例如 `String` 或 `Int32`) ，而不會產生任何其他類型。
+此區段定義每一種類型以及其命名空間。 網域屬性有兩種類型。 `DomainEnumerations` 在模型中定義，並在 DomainModel 中產生類型。 `ExternalTypes` 請參閱在其他地方所定義的類型 (例如 `String` 或 `Int32`) ，而不會產生任何其他類型。
 
 ### <a name="shapes"></a>圖形
 

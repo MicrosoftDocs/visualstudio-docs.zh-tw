@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 330a2a8f4173ddb22303064ee7f97ee025d05758
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 84f75298bc2854172eb7ec63bd6412e5703cfad7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924484"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388577"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 
@@ -124,7 +124,7 @@ Domain-Specific 語言 (DSL) 解決方案會產生一個 API，讓您可以用�
 
 - 項目群組原型 (EGP) 處理常式方法。 如果使用者可以 *合併* (將) 其他專案新增至這個類別的實例，則需要這些專案。 使用者通常會透過從項目工具或另一個圖形拖曳，或透過貼上作業，來執行這項操作。
 
-   在範例 DSL 中，「輸入通訊埠」或「輸出通訊埠」可合併為一個「元件」。 此外，「元件」和「註解」可合併為模型。 必須提供
+   在範例 DSL 中，「輸入通訊埠」或「輸出通訊埠」可合併為一個「元件」。 此外，「元件」和「註解」可合併為模型。 此
 
    「元件」類別中的 EGP 處理常式方法允許「元件」接受「通訊埠」，但不接受「註解」。 根模型類別中的 EGP 處理常式接受「元件」和「註解」，但不接受「通訊埠」。
 
@@ -335,7 +335,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Package.cs`
 
- 此檔案會定義 DSL 如何整合至 Visual Studio。 封裝類別上的屬性可將 DSL 註冊為具有您的副檔名之檔案的處理常式；定義其工具箱；以及定義如何開啟新視窗。 第一個 DSL 載入 Visual Studio 實例時，會呼叫 Initialize ( # A1 方法一次。
+ 此檔案會定義 DSL 如何整合至 Visual Studio。 封裝類別上的屬性可將 DSL 註冊為具有您的副檔名之檔案的處理常式；定義其工具箱；以及定義如何開啟新視窗。 第一個 DSL 載入 Visual Studio 實例時，會呼叫 Initialize () 方法一次。
 
  `Source.extension.vsixmanifest`
 

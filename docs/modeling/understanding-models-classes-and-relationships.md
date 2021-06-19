@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da5817711c7131868c4bad22bbe93447119d19d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b086f21b466863c3498ce15c15f7077b358c6d39
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924523"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388616"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 特定領域語言 (DSL) 是由其 DSL 定義檔所定義，以及您可能會撰寫的任何自訂程式碼。 DSL 解決方案中的大部分程式碼都是從這個檔案產生的。
@@ -134,7 +134,7 @@ ms.locfileid: "99924523"
 
  您可以在圖表上輸入或修改 [ `Multiplicity` **屬性** ] 視窗中的屬性，以設定角色的多重性。 下表描述這個屬性的設定。
 
-|多重性類型|Description|
+|多重性類型|描述|
 |-|-|
 |0 ... * (零到多個) |網域類別的每個實例都可以有多個關聯性實例或沒有關聯性的實例。|
 |0 ..1 (零到一個) |網域類別的每個實例都不能有一個以上的關聯性實例，或是沒有關聯性的實例。|

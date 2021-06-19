@@ -4,17 +4,17 @@ description: 瞭解如何自訂文字和影像檔案。 此外，也請瞭解當
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 42819379aa2b21788686bf0917b1523bf77e6c64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f52c4deda5b934a9b55c5ecfeec95ca633edf15e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935361"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389263"
 ---
 # <a name="customizing-text-and-image-fields"></a>自訂文字和影像欄位
 當您在圖形中定義文字裝飾專案時，它會以文字欄位表示。 如需 TextFields 和其他 ShapeFields 初始化的範例，請檢查 DSL 解決方案中的 Dsl\GeneratedCode\Shapes.cs。
@@ -170,7 +170,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
 ## <a name="style-sets"></a>樣式集
- 上述範例顯示如何將文字欄位變更為任何可用的字型。 不過，最好的方法是將其變更為與圖形或應用程式相關聯之一組樣式的其中一組。 若要這樣做，請覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> 或 GetTextBrushId ( # A1。
+ 上述範例顯示如何將文字欄位變更為任何可用的字型。 不過，最好的方法是將其變更為與圖形或應用程式相關聯之一組樣式的其中一組。 若要這樣做，請覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> 或 GetTextBrushId () 。
 
  或者，請考慮藉由覆寫來變更圖形的樣式集 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A> 。 這會影響變更所有圖形欄位的字型和筆刷。
 
