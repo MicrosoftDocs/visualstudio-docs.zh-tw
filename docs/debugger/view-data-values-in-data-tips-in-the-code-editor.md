@@ -1,7 +1,7 @@
 ---
 title: 在資料提示中查看變數值 |Microsoft Docs
 description: 您可以使用資料提示來輕鬆地查看變數的相關資訊，包括陣列和結構，同時進行調試。 您也可以修改值。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c9d0449fca38371e07ddaca6cef8758f53a2aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a84c3379c04799aa1faea5b0e62afe0ef1aa11e9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904920"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386471"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在程式碼編輯器的資料提示中查看資料值
 

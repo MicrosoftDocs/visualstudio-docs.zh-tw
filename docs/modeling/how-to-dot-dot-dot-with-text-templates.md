@@ -4,17 +4,17 @@ description: 深入瞭解使用文字模板產生文字時所遇到的常見問�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5b5e1f4e7488253112eb33905fe534be3591782
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c65a7ba67c3972620b3d589188e233827a12ffd
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934893"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387264"
 ---
 # <a name="how-to--with-text-templates"></a>如何 ... 使用文字範本
 Visual Studio 中的文字模板提供了一種實用的方法來產生任何種類的文字。 您可以使用文字模板在執行時間產生文字，做為應用程式的一部分，並在設計階段產生您的部分專案程式碼。 本主題摘要說明最常被詢問的「如何? ...」 問題。

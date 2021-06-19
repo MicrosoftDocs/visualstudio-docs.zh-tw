@@ -1,7 +1,7 @@
 ---
 title: 快速入門： Visual Studio IDE 導覽
 description: 瞭解 Visual Studio 整合式開發環境 (IDE) 的部分視窗、功能表和其他 UI 功能。
-ms.custom: acquisition
+ms.custom: vs-acquisition
 titleSuffix: ''
 ms.date: 03/02/2021
 ms.topic: quickstart
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f10c3fcca5d87f8371d1373314406cf4aa47ec3
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 0e3a0c62c1ec13ba6fec464a2903512b2acf33ad
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113226"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386289"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio IDE 初探
 

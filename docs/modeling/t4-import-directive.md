@@ -4,17 +4,17 @@ description: 瞭解在 Visual Studio T4 文字模板中，匯入指示詞可讓�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d9eb50261b346d8751a76817d97d59a798d17236
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0d441ec5a62dfa5266a17a06ac8fe33941136c6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899669"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386315"
 ---
 # <a name="t4-import-directive"></a>T4 匯入指示詞
 

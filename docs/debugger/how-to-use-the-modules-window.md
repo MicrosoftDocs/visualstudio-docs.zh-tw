@@ -1,7 +1,7 @@
 ---
 title: 查看 Dll 和可執行檔
-description: 查看 Dll 和可執行檔 ( .exe 檔) 您的應用程式在 Visual Studio 的偵錯工具期間，在 [模組] 視窗中使用這些檔案。
-ms.custom: SEO-VS-2020, seodec18
+description: 查看 Dll 和可執行檔 (.exe 檔案，) 您的應用程式在 Visual Studio 的偵錯工具期間，在 [模組] 視窗中使用這些檔案。
+ms.custom: SEO-VS-2020
 titleSuffix: Visual Studio Modules window
 ms.date: 11/04/2018
 ms.topic: how-to
@@ -26,16 +26,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8add274d74d9d8d7d72f2808a2b0100c66a19717
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f82b8a5051cf1c338c4b1aab6e78209fb2bc08b0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912216"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385405"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在 [模組] 視窗中查看 Dll 和可執行檔 (c #、c + +、Visual Basic、F # ) 
 
-在 Visual Studio 偵錯工具期間，[ **模組** ] 視窗會列出並顯示) 您的應用程式所使用的 dll 和可執行檔的相關資訊 (*.exe* 檔案。
+在 Visual Studio 的偵錯工具期間，[ **模組** ] 視窗會列出並顯示 dll 和可執行檔的相關資訊 (*.exe*) 您的應用程式所使用的檔案。
 
 > [!NOTE]
 > [模組] 視窗無法用於 SQL 或腳本的偵錯工具。

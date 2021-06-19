@@ -3,7 +3,7 @@ title: 安裝 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步安裝 Visual Studio。
 ms.date: 12/13/2019
-ms.custom: acquisition
+ms.custom: vs-acquisition
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b7955759c6c60e8074408cbc179f15d6a7a6e194
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 692989d5bf8979752757fb5630a78d55426f85b9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307397"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387069"
 ---
 # <a name="install-visual-studio"></a>安裝 Visual Studio
 

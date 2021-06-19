@@ -1,7 +1,7 @@
 ---
 title: 進階功能
 description: 深入瞭解可能更適合有經驗的開發人員，或已經熟悉 Visual Studio 的開發人員的先進功能。
-ms.custom: acquisition
+ms.custom: vs-acquisition
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 843c6f66b833c8f68dad8722c6d32a1975d07913
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 6cc6604816921b054b0c909177c8e641493920a8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113004"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386192"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 

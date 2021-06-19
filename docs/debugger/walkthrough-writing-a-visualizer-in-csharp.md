@@ -1,7 +1,7 @@
 ---
 title: '以 c # 撰寫視覺化檢視 |Microsoft Docs'
 description: '遵循逐步解說，以 c # 建立簡單的視覺化檢視。 它會顯示使用和不使用視覺化檢視專案範本時所需的步驟。'
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f127d178a8103cfaa01c43970848f5772827440f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86123ece79f7bbde4f4f91fac657dcc235056c0b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884061"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384989"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C\# 中撰寫視覺化檢視
 
@@ -50,14 +50,14 @@ ms.locfileid: "99884061"
 
    建立類別庫之後，必須新增 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的參考，如此您才能使用於該處定義的類別。 不過，在加入參考之前，您必須重新命名一些類別，使其具有有意義的名稱。
 
-### <a name="to-rename-class1cs-and-add-microsoftvisualstudiodebuggervisualizers"></a>重新命名 Class1.cs 並新增 VisualStudio. Microsoft.visualstudio.debuggervisualizers.dll
+### <a name="to-rename-class1cs-and-add-microsoftvisualstudiodebuggervisualizers"></a>若要重新命名 Class1 並新增 VisualStudio. Microsoft.visualstudio.debuggervisualizers.dll
 
-1. 在 **方案總管** 中，以滑鼠右鍵按一下 Class1.cs，然後在快捷方式功能表上選擇 [ **重新命名** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [Class1]，然後在快捷方式功能表上選擇 [ **重新命名** ]。
 
-2. 將名稱從 Class1.cs 變更為有意義的內容，例如 DebuggerSide.cs。
+2. 將名稱從 Class1 變更為有意義的名稱，例如 Debuggerside.vb .cs。
 
    > [!NOTE]
-   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 自動變更 DebuggerSide.cs 中的類別宣告，以符合新的檔案名。
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 自動變更 Debuggerside.vb 中的類別宣告，使其符合新的檔案名。
 
 3. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **參考** ]，然後在快捷方式功能表上選擇 [ **加入參考** ]。
 
@@ -67,7 +67,7 @@ ms.locfileid: "99884061"
 
 5. 按一下 [確定]  。
 
-6. 在 DebuggerSide.cs 中，將下列內容新增至指示詞 `using` ：
+6. 在 Debuggerside.vb 中，將下列內容新增至指示詞 `using` ：
 
    ```csharp
    using Microsoft.VisualStudio.DebuggerVisualizers;
@@ -77,7 +77,7 @@ ms.locfileid: "99884061"
 
 ### <a name="to-inherit-from-dialogdebuggervisualizer"></a>若要繼承自 DialogDebuggerVisualizer
 
-1. 在 DebuggerSide.cs 中，移至下列程式程式碼：
+1. 在 Debuggerside.vb 中，移至下列程式程式碼：
 
    ```csharp
    public class DebuggerSide
@@ -113,7 +113,7 @@ ms.locfileid: "99884061"
 
 3. 按一下 [確定]  。
 
-4. 在 DebuggerSide.cs 中，將下列內容新增至指示詞 `using` ：
+4. 在 Debuggerside.vb 中，將下列內容新增至指示詞 `using` ：
 
    ```csharp
    using System.Windows.Forms;
@@ -139,7 +139,7 @@ ms.locfileid: "99884061"
 
 在偵錯工具端程式碼中，您可以使用屬性來指定要將物件來源) 視覺化 (物件來源的型別 <xref:System.Diagnostics.DebuggerVisualizerAttribute> 。 `Target`屬性會設定要視覺化的型別。
 
-1. 在指示詞之後，將下列屬性程式碼新增至 DebuggerSide.cs `using` `namespace MyFirstVisualizer` ：
+1. 將下列屬性程式碼新增至 Debuggerside.vb，在指示詞之後， `using` 但在前面 `namespace MyFirstVisualizer` ：
 
    ```csharp
    [assembly:System.Diagnostics.DebuggerVisualizer(
@@ -202,14 +202,14 @@ ms.locfileid: "99884061"
 
 ### <a name="to-add-code-to-mytestconsole"></a>若要將程式碼加入至 MyTestConsole
 
-1. 在 **方案總管** 中，以滑鼠右鍵按一下 Program.cs，然後在快捷方式功能表上選擇 [ **重新命名** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [Program]，然後在快捷方式功能表上選擇 [ **重新命名** ]。
 
-2. 將名稱從 Program.cs 編輯為更有意義的名稱，例如 TestConsole.cs。
+2. 將 Program. .cs 的名稱編輯成更有意義的名稱，例如 Testconsole.vb .cs。
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 自動變更 TestConsole.cs 中的類別宣告，以符合新的檔案名。
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 自動變更 Testconsole.vb 中的類別宣告，使其符合新的檔案名。
 
-3. 在 TestConsole.cs 中，將下列程式碼新增至指示詞 `using` ：
+3. 在 Testconsole.vb 中，將下列程式碼新增至指示詞 `using` ：
 
    ```csharp
    using MyFirstVisualizer;
@@ -266,11 +266,11 @@ ms.locfileid: "99884061"
 
 3. 在 [ **加入新專案** ] 對話方塊的 [ **Visual c # 專案**] 底下，選取 **[偵錯工具視覺化**]。
 
-4. 在 [ **名稱** ] 方塊中，輸入適當的名稱，例如 SecondVisualizer.cs。
+4. 在 [ **名稱** ] 方塊中，輸入適當的名稱，例如 SecondVisualizer .cs。
 
 5. 按一下 **[新增]** 。
 
-   這就是這樣的。 查看檔案 SecondVisualizer.cs，並查看範本為您新增的程式碼。 請繼續進行，並使用程式碼進行實驗。 既然您已經瞭解基本概念，就可以開始建立更複雜且有用的視覺化檢視。
+   這就是這樣的。 查看 SecondVisualizer 的檔案，並查看範本為您新增的程式碼。 請繼續進行，並使用程式碼進行實驗。 既然您已經瞭解基本概念，就可以開始建立更複雜且有用的視覺化檢視。
 ::: moniker-end
 
 ## <a name="see-also"></a>另請參閱

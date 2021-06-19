@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0874302a7cae4b7a2a3c02edade3ef88fd402a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f98dca6759b9e4a77e71139b6d9ec9b394d99b04
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861838"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385418"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算及自訂的儲存區屬性
 特定領域語言中的所有網域屬性 (DSL) 可在圖表和您的 language explorer 中顯示給使用者，並且可透過程式碼存取。 但是，屬性的值儲存方式會有所不同。
@@ -24,7 +24,7 @@ ms.locfileid: "99861838"
 ## <a name="kinds-of-domain-properties"></a>網域屬性的種類
  在 DSL 定義中，您可以設定網域屬性的 **種類** ，如下表所示：
 
-|網域屬性種類|Description|
+|網域屬性種類|描述|
 |-|-|
 |**標準** (預設) |*儲存在存放區* 中並序列化為檔案的網域屬性。|
 |**導出**|唯讀網域屬性，不會儲存在存放區中，而是從其他值計算而來。<br /><br /> 例如， `Person.Age` 可以從計算 `Person.BirthDate` 。<br /><br /> 您必須提供執行計算的程式碼。 一般而言，您會從其他定義域屬性計算值。 不過，您也可以使用外部資源。|
@@ -49,7 +49,7 @@ ms.locfileid: "99861838"
 
 5. 按兩下錯誤訊息。
 
-     Dsl\GeneratedCode\DomainClasses.cs 或 DomainRelationships.cs 隨即開啟。 在反白顯示的方法呼叫上方，批註會提示您提供 Get *YourProperty* 的實 ( # A1。
+     Dsl\GeneratedCode\DomainClasses.cs 或 DomainRelationships 會開啟。 在反白顯示的方法呼叫上方，批註會提示您提供 Get *YourProperty* () 的實作為。
 
     > [!NOTE]
     > 這個檔案是從 Dsldefinition.dsl 檔產生。 如果您編輯這個檔案，下次按一下 [ **轉換所有範本**] 時，您的變更將會遺失。 相反地，請在個別的檔案中新增必要的方法。

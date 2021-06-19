@@ -4,17 +4,17 @@ description: 瞭解如何將 code map 儲存為 Visual Studio 專案的一部分
 ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 324f8fe7ee34f469d31ad1ce6cf6bd25ab97f225
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e58e06c48ed9fa3a9d459c6c615abae4d4b4823f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899822"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385678"
 ---
 # <a name="share-code-maps"></a>共用 Code Map
 

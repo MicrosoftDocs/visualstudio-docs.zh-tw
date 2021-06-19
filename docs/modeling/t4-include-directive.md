@@ -4,17 +4,17 @@ description: '瞭解在 Visual Studio 的文字模板中，您可以使用 < # #
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed43ff63eb6605a27885eb1030ebc8689fa37a93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7361d92b05fd6838d20b32ea9f0b3b14530266fa
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899626"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386302"
 ---
 # <a name="t4-include-directive"></a>T4 包含指示詞
 

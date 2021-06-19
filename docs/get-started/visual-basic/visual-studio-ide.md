@@ -1,9 +1,10 @@
 ---
 title: Visual Basic 開發人員概觀
-description: 瞭解如何使用 Visual Studio 來編輯、偵測和建立程式碼，然後以 Visual Basic 開發人員的形式發行應用程式。
+description: 瞭解如何使用 Visual Studio 來編輯、偵測和建立程式碼，然後將應用程式發佈為 Visual Basic 開發人員。
 ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: conceptual
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 398070e0214e36f696bb69614bb6a51b3462a551
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 486201d61f6bd2d149c9aea66efee1814ce667e7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682960"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386627"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>歡迎使用 Visual Studio IDE | Visual Basic
 
@@ -39,7 +40,7 @@ Visual Studio「整合式開發環境」是一個有創意的啟動控制板，�
 
 此圖顯示 Visual Studio，其中包含一個開啟的專案，以及您想要使用的數個重要工具視窗：
 
-- 「方案總管」(右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 **方案 Explorer** 可將檔案分組到 [方案和專案](tutorial-projects-solutions.md)中，以協助組織程式碼。
+- 「方案總管」(右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 **方案總管** 可以將檔案分組到 [方案和專案](tutorial-projects-solutions.md)中，以協助組織程式碼。
 
 - 「編輯器視窗」(中間) 會顯示檔案內容，您大部分的時間可能都是花在這裡。 您在這裡編輯程式碼或設計使用者介面，例如有按鈕和文字方塊的視窗。
 
@@ -91,7 +92,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [智慧](../../ide/using-intellisense.md)
 
-   IntelliSense 為一組功能的字詞，會直接在編輯器中顯示有關您程式碼的資訊，而在某些情況下會為您撰寫一些程式碼。 就像內嵌在編輯器中的基本文件，讓您不必在其他位置查閱類型資訊。 IntelliSense 功能會因語言而異。 如需詳細資訊，請參閱 [c # intellisense](../../ide/visual-csharp-intellisense.md)、 [Visual c + + IntelliSense](../../ide/visual-cpp-intellisense.md)、 [JavaScript intellisense](../../ide/javascript-intellisense.md)和 [visual Basic intellisense](../../ide/visual-basic-specific-intellisense.md)。 下圖顯示 IntelliSense 如何顯示類型的成員清單：
+   IntelliSense 為一組功能的字詞，會直接在編輯器中顯示有關您程式碼的資訊，而在某些情況下會為您撰寫一些程式碼。 就像內嵌在編輯器中的基本文件，讓您不必在其他位置查閱類型資訊。 IntelliSense 功能會因語言而異。 如需詳細資訊，請參閱 [c # intellisense](../../ide/visual-csharp-intellisense.md)、 [Visual C++ IntelliSense](../../ide/visual-cpp-intellisense.md)、 [JavaScript intellisense](../../ide/javascript-intellisense.md)和 [Visual Basic intellisense](../../ide/visual-basic-specific-intellisense.md)。 下圖顯示 IntelliSense 如何顯示類型的成員清單：
 
    ::: moniker range="vs-2017"
 
@@ -233,7 +234,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 1. 開啟 Visual Studio。 在 [開始] 視窗中，選取 [ **繼續但不** 撰寫程式碼]。
 
 
-    :::image type="content" source="media/vs-2019/continue-without-code.png" alt-text="Visual Studio 2019 中 [開始] 視窗的螢幕擷取畫面，其中反白顯示 [繼續但未撰寫程式碼] 連結。":::
+    :::image type="content" source="media/vs-2019/continue-without-code.png" alt-text="在 Visual Studio 2019 的 [開始] 視窗的螢幕擷取畫面，其中反白顯示 [不使用程式碼繼續] 連結。":::
 
    IDE 隨即開啟。
 
@@ -281,7 +282,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker range="vs-2017"
 
-1. 在 Visual Studio 功能表列上，選擇 [檔案]**[新增專案]** > 。
+1. 在 [Visual Studio] 功能表列上 **，選擇 [** 檔案 > **新增專案**]。
 
    ![功能表列上的 [檔案] > [新增專案]](media/file-new-project-menu.png)
 
@@ -310,7 +311,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![[偵錯] > [啟動但不偵錯] 功能表](../media/overview-start-without-debugging.png)
 
-   Visual Studio 會建立應用程式，而主控台視窗則會開啟，並顯示訊息 **Hello World！**。 您現在已有一個執行中的應用程式！
+   Visual Studio 會建立應用程式，而主控台視窗隨即開啟，並顯示訊息 **Hello World！**。 您現在已有一個執行中的應用程式！
 
    ![主控台視窗](../media/overview-console-window.png)
 
@@ -345,21 +346,21 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker range=">=vs-2019"
 
-1. 在 Visual Studio 功能表列上 **，選擇 [** 檔案  >  **新增**  >  **專案**]。  (或者，按下 **Ctrl** + **Shift** + **N**. ) 
+1. 在 [Visual Studio] 功能表列上 **，選擇 [** 檔案  >  **新增**  >  **專案**]。  (或者，按下 **Ctrl** + **Shift** + **N**. ) 
 
-    :::image type="content" source="media/vs-2019/file-new-project.png" alt-text="Visual Studio 2019 功能表列中，> 新的 > 專案選取專案的螢幕擷取畫面。":::
+    :::image type="content" source="media/vs-2019/file-new-project.png" alt-text="從 Visual Studio 2019 功能表列中，> 新的 > 專案選取專案的螢幕擷取畫面。":::
 
    [建立新專案] 視窗隨即開啟，並顯示數個專案「範本」。 範本包含指定專案類型所需的基本檔案和設定。
 
-1. 若要尋找所需的範本，在搜尋方塊中鍵入或輸入 **.net core 主控台**。 系統即會根據您所輸入的關鍵字自動篩選可用的範本清單。 您可以從 [**所有語言**] 下拉式清單中選擇 [ **Visual Basic** ]，然後從 [**所有平臺**] 清單中選擇 [ **Windows** ]，然後從 [**所有專案類型**] 清單中選擇 [**主控台**]，以進一步篩選範本結果。
+1. 若要尋找所需的範本，在搜尋方塊中鍵入或輸入 **.net core 主控台**。 系統即會根據您所輸入的關鍵字自動篩選可用的範本清單。 您可以從 [**所有語言**] 下拉式清單中選擇 [ **Visual Basic** ]，然後從 [所有 **平臺**] 清單中選擇 [ **Windows** ]，然後從 [**所有專案類型**] 清單中選擇 [**主控台**]，以進一步篩選範本結果。
 
    選取 [ **主控台應用程式** ] 範本，然後按 **[下一步]**。
 
-    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Visual Studio 2019 中 [建立新專案] 視窗的螢幕擷取畫面，您可以在其中選取所需的範本。":::
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="在 Visual Studio 2019 的 [建立新專案] 視窗的螢幕擷取畫面，您可以在其中選取所需的範本。":::
 
 1. 在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中輸入 **HelloWorld** ，選擇性地變更專案檔的目錄位置 (預設的地區設定為 `C:\Users\<name>\source\repos`) ，然後按 **[下一步]**。
 
-    :::image type="content" source="media/vs-2019/configure-new-project.png" alt-text="Visual Studio 2019 中 [設定您的新專案] 視窗的螢幕擷取畫面，您可以在其中輸入專案的名稱。":::
+    :::image type="content" source="media/vs-2019/configure-new-project.png" alt-text="[設定您的新專案] 視窗的螢幕擷取畫面，您可以在 Visual Studio 2019 中輸入專案的名稱。":::
 
 1. 在 [**其他資訊**] 視窗中，確認 [**目標 Framework** ] 下拉式功能表中出現 **.net Core 3.1** ，然後按一下 [**建立**]。
 
@@ -381,7 +382,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![[偵錯] > [啟動但不偵錯] 功能表](media/vs-2019/start-without-debugging.png)
 
-   Visual Studio 會建立應用程式，而主控台視窗則會開啟，並顯示訊息 **Hello World！**。 您現在已有一個執行中的應用程式！
+   Visual Studio 會建立應用程式，而主控台視窗隨即開啟，並顯示訊息 **Hello World！**。 您現在已有一個執行中的應用程式！
 
    ![顯示 Hello World 訊息之主控台視窗的螢幕擷取畫面。](../media/vs-2019/overview-console-window.png)
 
@@ -432,7 +433,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    此變數會在專案中重新命名，在我們的案例中只有兩個位置。
 
-4. 現在，讓我們看看 IntelliSense。 在 `Console.WriteLine("Hello " + username + "!")` 行下面，輸入下列程式碼片段：
+4. 現在，讓我們看看 IntelliSense。 在 `Console.WriteLine("Hello &quot; + username + &quot;!")` 行下面，輸入下列程式碼片段：
 
     ```vb
    Dim now = Date.
@@ -481,13 +482,13 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker-end
 
-## <a name="debug-code"></a>偵錯程式碼
+## <a name="debug-code&quot;></a>偵錯程式碼
 
 當您撰寫程式碼時，必須執行並測試它，以找出 Bug。 Visual Studio 偵錯系統可讓您以一次一個陳述式的方式逐步偵錯程式碼，並一邊檢查變數。 您可以設定「中斷點」，其會停止執行特定行的程式碼。 您可以觀察變數值如何隨著程式碼執行而變更，以及更多。
 
 讓我們來設定中斷點，以查看程式「進行」期間的 `username` 變數值。
 
-1. 尋找程式碼行 `Console.WriteLine("Hello " + username + "!")`。 若要設定這行程式碼的中斷點，讓程式在這行暫停執行，請按一下編輯器的左邊界。 您也可以按一下該行程式碼的任何位置，然後按下 **F9** 鍵。
+1. 尋找程式碼行 `Console.WriteLine(&quot;Hello &quot; + username + &quot;!")`。 若要設定這行程式碼的中斷點，讓程式在這行暫停執行，請按一下編輯器的左邊界。 您也可以按一下該行程式碼的任何位置，然後按下 **F9** 鍵。
 
    左邊界會出現一個紅色圓圈，並以紅色醒目顯示程式碼。
 
@@ -507,7 +508,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 如需有關 Visual Studio 中之 偵錯的更多詳細資料，請參閱[偵錯工具功能導覽](../../debugger/debugger-feature-tour.md)。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 遵循以下其中一篇簡介文章，進一步探索 Visual Studio：
 

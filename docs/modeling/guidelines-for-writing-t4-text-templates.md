@@ -4,17 +4,17 @@ description: 瞭解當您在 Visual Studio 中產生程式碼或其他應用程�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5418013898f24b15cf51926022d974d23f4a7215
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f043e95ef477558028e634bf6b48aded2960ec2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966353"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386653"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>撰寫 T4 文字範本的方針
 
@@ -111,7 +111,7 @@ MyProject
 
 `The total is: <#= ComputeTotal() #>`
 
-在 **MyReportText-Methods.cs** 中：
+在 **MyReportText** 中：
 
 `private string ComputeTotal() { ... }`
 

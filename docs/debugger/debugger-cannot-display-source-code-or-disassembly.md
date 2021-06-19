@@ -1,7 +1,7 @@
 ---
 title: 偵錯工具無法顯示原始程式碼或反組解碼
 description: 請參閱「偵錯工具無法針對執行已停止的目前位置顯示原始程式碼或反組解碼」訊息的原因。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2966405378d2a6144c921c442e7412a41c454c52
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bac2f04ab77e34186a4f0ee202fa8d16f6e45e38
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873063"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387342"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>偵錯工具無法顯示原始程式碼或反組譯碼
 這個錯誤為：

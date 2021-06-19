@@ -1,7 +1,7 @@
 ---
 title: Web Form 的 Debug |Microsoft Docs
 description: 遵循逐步解說，以瞭解如何將 ASP.NET Web 應用程式 (Web Form) ，包括如何設定中斷點和檢查變數。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 476d36a8ea303f2dd6062eaf0a597c47df580ff7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 18347b7ba9ff52778b5acef685acd8f1ee400793
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884165"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385200"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>逐步解說：偵錯 Web 表單
 這個逐步解說中的步驟將示範如何偵錯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式 (也稱為 Web Form)。 會向您示範如何啟動及停止執行、設定中斷點，以及在 [監看式] 視窗中檢查變數。

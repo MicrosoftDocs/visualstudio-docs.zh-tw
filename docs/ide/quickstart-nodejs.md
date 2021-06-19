@@ -1,7 +1,7 @@
 ---
 title: 建立您的第一個 Node.js 應用程式
 ms.custom:
-- acquisition
+- vs-acquisition
 - SEO-VS-2020
 description: 在此快速入門中，您會在 Visual Studio 中建立 Node.js 應用程式
 ms.date: 03/25/2021
@@ -16,18 +16,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d9397cb121ab3aa68d368a0cc7e1ab709411f6b6
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 0c44bfcfe1e7f07f83ca2b7dbb8b0604f5efe5f1
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113161"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386159"
 ---
 # <a name="quickstart-create-your-first-nodejs-app-with-visual-studio"></a>快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式
 
 在這項 Visual Studio 整合式開發環境 (IDE) 的5至10分鐘簡介中，您將建立一個簡單的 Node.js web 應用程式。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 開始之前，請先安裝 Visual Studio 並設定 Node.js 環境。
 

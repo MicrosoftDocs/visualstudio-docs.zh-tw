@@ -2,6 +2,7 @@
 title: 建立 Node.js 與 Express 應用程式
 description: 在本教學課程中，您將瞭解如何在 Visual Studio 中使用 Express web 應用程式架構建立簡單的 Node.js 應用程式。
 ms.date: 03/25/2021
+ms.custom: vs-acquisition
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2bca688977187071b5530911f9aa975e10ceef99
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: d4ea086d20f5a1000067343ac7571a9a8f8309db
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306523"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386809"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 Express 應用程式
 
@@ -64,7 +65,7 @@ npm 是 Node.js 的預設套件管理員。 套件管理員可讓程式設計人
 
 Express 是一種 Web 應用程式架構，用作 Node.js 的伺服器架構以建置 Web 應用程式。 Express 可讓您選擇不同的前端架構來建立 UI，例如 Pug (先前稱為 Jade) 。 本教學課程中使用 Pug。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 * 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 

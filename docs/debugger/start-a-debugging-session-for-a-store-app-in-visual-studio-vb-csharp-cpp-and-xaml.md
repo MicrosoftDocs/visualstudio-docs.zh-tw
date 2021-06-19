@@ -1,7 +1,7 @@
 ---
 title: 啟動 UWP 應用程式的偵測會話 |Microsoft Docs
 description: 針對通用 Windows 平臺 (UWP) 應用程式啟動 Visual Studio 的偵錯工具。 設定偵錯工具會話，並選擇啟動應用程式的方式。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: how-to
 f1_keywords:
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: e90a6466a4bff0f3299e3f47bce7e0b54d540fcf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0669f9838073571018eb762e98aa6d907456f12
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905026"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386458"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>啟動 UWP 應用程式 的偵錯工作階段
 
@@ -77,7 +77,7 @@ ms.locfileid: "99905026"
 
 您可以在 [Visual Studio] 工具列或專案的 [偵錯工具] 屬性頁中設定偵錯工具的目標。 選取下列其中一個選項：
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**本機電腦**|在本機電腦上對目前工作階段中的應用程式進行偵錯。|
 |**模擬器**|在適用于 UWP 應用程式的 Visual Studio 模擬器中，為應用程式進行偵錯工具。 模擬器是一個桌面視窗，可模擬本機電腦上可能不存在的裝置功能，例如觸控手勢和裝置旋轉。 只有當您應用程式的 **目標平臺最低版本** 小於或等於本機電腦上的作業系統時，才可使用模擬器選項。 如需詳細資訊，請參閱 [在模擬器中執行 UWP 應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。|
@@ -115,7 +115,7 @@ ms.locfileid: "99905026"
 
 - 若是 c + + 應用程式，請從 [**調試** 程式] 屬性頁的 [調試 **程式類型**] 下拉式清單中選取下列其中一個偵錯工具。
 
-|名稱|描述|
+|Name|描述|
 |-|-|
 |**僅限 Managed**|在您的應用程式中偵錯 Managed 程式碼。 JavaScript 程式碼與原生 C/C++ 程式碼都會被忽略。|
 |**僅限原生**|在您的應用程式中偵錯原生 C/C++程式碼。 Managed 程式碼與 JavaScript 程式碼都會被忽略。|

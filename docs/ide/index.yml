@@ -11,12 +11,13 @@ metadata:
   author: j-martens
   ms.author: jmartens
   ms.date: 06/14/2021
-  ms.openlocfilehash: 91e49ade3715f507523cc09c83c2cfb5fea0459c
-  ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+  ms.custom: vs-acquisition
+  ms.openlocfilehash: a8f0b61e9978accf1af7142271b66f84ec5cbdb4
+  ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/15/2021
-  ms.locfileid: "112112401"
+  ms.lasthandoff: 06/19/2021
+  ms.locfileid: "112385158"
 landingContent:
 - title: 開始使用
   linkLists:

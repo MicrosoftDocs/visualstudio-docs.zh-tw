@@ -1,7 +1,7 @@
 ---
+title: 評估函數函 &apos; &apos; 式超時，需要以不安全的方式中止 |Microsoft Docs
 description: 完整郵件內文：評估函式 ' function ' 超時，且需要以不安全的方式中止。
-title: 評估函數函 &apos; &apos; 式超時，需要以不安全的方式中止 |Microsoft 檔
-ms.date: 11/04/2016
+ms.date: 06/18/2021
 ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a540f6f80029039644b22a24a31510042236de2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e928bb0ebae1e644729fcaf4f47b7dd461399be6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147012"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386666"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>錯誤：評估函數 &#39;函式&#39; 超時，而且需要以不安全的方式中止
 
@@ -27,26 +27,30 @@ ms.locfileid: "102147012"
 
 ## <a name="to-correct-this-error"></a>更正這個錯誤
 
-有幾個可能的解決方案可解決此問題。
+請參閱下列各節，以瞭解此問題的幾個可能解決方案。
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>方案 #1：防止偵錯工具呼叫 getter 屬性或 ToString 方法
+## <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>方案 #1：防止偵錯工具呼叫 getter 屬性或 ToString 方法
 
 錯誤訊息會告訴您偵錯工具嘗試呼叫的函式名稱。 如果您可以修改此函式，則可以防止偵錯工具呼叫 property getter 或 ToString 方法。 請嘗試下列其中一項：
 
 * 將方法變更為其他類型的程式碼（property getter 或 ToString 方法除外），問題就會消失。
-    -或-
-*  (ToString) 定義型別上的 DebuggerDisplay 屬性，而且您可以讓偵錯工具評估 ToString 以外的內容。
-    -或-
-* 屬性 getter 的 () 將屬性放 `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` 在屬性上。 如果您有需要針對 API 相容性的屬性保留屬性的方法，這會很有用，但其實它應該是方法。
+  -或-
+*  (ToString) 定義型別上的 [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) 屬性，而且您可以讓偵錯工具評估 ToString 以外的內容。
+  -或-
+* 針對屬性 getter 的 () 將 [DebuggerBrowsable (DebuggerBrowsableState。屬性上不) ](/dotnet/api/system.diagnostics.debuggerbrowsableattribute) 屬性。 如果您有需要針對 API 相容性的屬性保留屬性的方法，這會很有用，但其實它應該是方法。
 
-### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>解決方案 #2：讓目的程式代碼要求偵錯工具中止評估
+## <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>解決方案 #2：讓目的程式代碼要求偵錯工具中止評估
 
-錯誤訊息會告訴您偵錯工具嘗試呼叫的函式名稱。 如果屬性 getter 或 ToString 方法有時無法正常執行，特別是在問題是程式碼需要另一個執行緒執行程式碼的情況下，則執行函式可以呼叫， `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency` 要求偵錯工具中止函數評估。 使用此解決方案時，仍然可以明確地評估這些函式，但預設行為是在發生 NotifyOfCrossThreadDependency 呼叫時停止執行。
+錯誤訊息會告訴您偵錯工具嘗試呼叫的函式名稱。 如果屬性 getter 或 ToString 方法有時無法正常執行，尤其是在問題是程式碼需要另一個執行緒執行程式碼的情況下，則執行函式可以呼叫 [NotifyOfCrossThreadDependency](/dotnet/api/system.diagnostics.debugger.notifyofcrossthreaddependency) 來要求偵錯工具中止函數評估。 使用此解決方案時，仍然可以明確地評估這些函式，但預設行為是在發生 NotifyOfCrossThreadDependency 呼叫時停止執行。
 
-### <a name="solution-3-disable-all-implicit-evaluation"></a>解決方案 #3：停用所有隱含評估
+## <a name="solution-3-disable-all-implicit-evaluation"></a>解決方案 #3：停用所有隱含評估
 
 如果先前的解決方案無法修正問題，請移至 [**工具**  >  **選項**]，並取消核 **取 [**  >  **一般** 設定]  >  **啟用屬性評估及其他隱含函式呼叫** 的設定。 這將會停用大部分的隱含函式評估，並且應該解決問題。
 
-### <a name="solution-4-enable-managed-compatibility-mode"></a>解決方案 #4：啟用受管理的相容性模式
+## <a name="solution-4-check-compatibility-with-third-party-developer-tools"></a>解決方案 #4：檢查與協力廠商開發人員工具的相容性
+
+如果您使用的是 Resharper，請參閱此 [問題](https://youtrack.jetbrains.com/issue/RSRP-476824) 以取得建議。
+
+## <a name="solution-5-enable-managed-compatibility-mode"></a>解決方案 #5：啟用受管理的相容性模式
 
 如果您切換至舊版的偵測引擎，您可以消除此錯誤。 移至 [**工具**  >  **選項**]，然後選取[一般] 設定 [  >  **一般**  >  **使用 managed 相容性模式]**。 如需詳細資訊，請參閱 [一般偵錯工具選項](../debugger/general-debugging-options-dialog-box.md)。

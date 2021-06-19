@@ -1,7 +1,7 @@
 ---
 title: 圖形診斷 |Microsoft Docs
 description: Visual Studio 圖形診斷是一組用來記錄和分析 Direct3D 活動的工具。 您可以使用它們來針對轉譯和效能問題進行疑難排解。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 679b9464ef10f121bbe38f486291b135872fb36b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6b769131831a0f1f94aa4fcc8e94a9a88bf9890
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861487"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386120"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷
 >[!NOTE]

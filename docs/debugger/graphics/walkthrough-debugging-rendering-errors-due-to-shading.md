@@ -1,7 +1,7 @@
 ---
 title: 逐步解說：由於陰影而偵測轉譯錯誤 |Microsoft Docs
 description: 遵循尋找著色器 bug 的調查。 它會顯示使用 Visual Studio 圖形診斷，包括圖形圖元歷程記錄和 HLSL 偵錯工具。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 491a2c5ab0bcb923d9999bd55249150d33a650ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 218b263d7e971a0d2bdaa72020bb7cb58c31e000
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891861"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387082"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：對因著色而產生的顯示錯誤進行偵錯
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷來調查因為著色器錯誤而不正確著色的物件。

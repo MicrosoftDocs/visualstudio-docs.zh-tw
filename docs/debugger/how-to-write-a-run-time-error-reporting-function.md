@@ -1,7 +1,7 @@
 ---
 title: 撰寫運行時錯誤報表函式 |Microsoft Docs
 description: 請參閱在 Visual Studio 中撰寫自訂運行時錯誤報表函式的範例。 它必須與 _CrtDbgReportW 具有相同的宣告，並傳回值1。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23f5234cb0184de14f7506fd540004a200a65a4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ff82afdfda8af746533f07f21d330c359a1618c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925357"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385132"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>如何：撰寫執行階段錯誤報告函式 (C++)
 執行階段錯誤的自訂報告函式，它必須具有與 `_CrtDbgReportW` 相同的宣告。 它應該向偵錯工具傳回值 1。

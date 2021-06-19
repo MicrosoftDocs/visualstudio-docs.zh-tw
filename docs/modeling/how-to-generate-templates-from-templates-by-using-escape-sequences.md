@@ -5,18 +5,18 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, generating templates from templates
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: e3debeeafa55e483e9625c67534694debff6acfa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9347e32a72e7f590f8f513c4b47a4b7aae699f27
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922788"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387173"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>如何：使用逸出序列從範本產生範本
 您可以建立文字模板，以建立另一個文字模板作為其產生的文字輸出。 若要這樣做，您必須使用 escape 序列來描繪文字模板標記。 如果您未使用 escape 序列，則產生的文字模板將會有預先定義的意義。 如需在文字模板中使用 escape 序列的詳細資訊，請參閱 [在文字模板中使用 Escape 序列](../modeling/using-escape-sequences-in-text-templates.md)。

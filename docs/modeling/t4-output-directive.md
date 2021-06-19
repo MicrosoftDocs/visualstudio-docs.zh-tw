@@ -4,17 +4,17 @@ description: 瞭解 Visual Studio 文字模板中，output 指示詞是用來定
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e7c255d767e9b35764e03a76f9cda516dbe606
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8105edc57e68aa7cedcb612ec4f6bcd0ef367d2f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899603"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386107"
 ---
 # <a name="t4-output-directive"></a>T4 輸出指示詞
 
@@ -24,7 +24,7 @@ ms.locfileid: "99899603"
 
  `<#@output extension=".cs"#>`
 
- 然後 Visual Studio 會產生名為 **MyTemplate.cs** 的檔案。
+ 然後 Visual Studio 會產生名為 MyTemplate 的檔案 **。**
 
  在執行階段 (前置處理過的) 文字範本中，不需要 `output` 指示詞。 而是，您的應用程式會呼叫 `TextTransform()` 來取得產生的字串。 如需詳細資訊，請參閱 [使用 T4 文字模板的執行時間文字產生](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 

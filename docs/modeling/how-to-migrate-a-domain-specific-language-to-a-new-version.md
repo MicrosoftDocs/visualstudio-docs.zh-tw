@@ -3,18 +3,18 @@ title: 如何：遷移 Domain-Specific 語言專案
 description: 提供有關如何將特定領域語言專案遷移至較新版本的 Visual Studio 的資訊。
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: bbefb1cd5ae546c5454660b6782f9c76f35a63f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8119f465e32d3754dc446524286e0a2c12dedc40
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922700"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387186"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：將網域指定的語言移轉至新的版本
 您可以 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 從與一起散發的版本，將定義和使用特定領域語言的專案遷移至 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 。

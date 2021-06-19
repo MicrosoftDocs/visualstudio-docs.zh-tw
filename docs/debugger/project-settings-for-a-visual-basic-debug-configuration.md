@@ -1,7 +1,7 @@
 ---
 title: VB debug config 的專案設定 |Microsoft Docs
 description: 瞭解如何在 Visual Studio 的 [屬性頁] 視窗中，變更 Visual Basic debug 設定的專案設定。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a1f0e7aa0e6ee7523f8ff7ae1f3c8e34745a3af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f16d0dde62a23d8272cb89aec46f2ce952f18979
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842704"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385199"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Project Settings for a Visual Basic Debug Configuration
 您可以在 [屬性頁] 視窗中使用[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)中所討論的方法，變更 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 偵錯組態的專案設定。 下表顯示 [屬性頁] 視窗中，偵錯工具相關設定的位置。
@@ -39,7 +39,7 @@ ms.locfileid: "99842704"
 
 ### <a name="debug-tab"></a>[偵錯] 索引標籤
 
-| 設定 | Description |
+| 設定 | 描述 |
 |------------------------------| - |
 | **Configuration** | 設定應用程式的編譯模式。 請選擇 [現用 (偵錯)]、[偵錯]、[發行] 或 [所有組態] 其中之一。 |
 | **啟動執行** | 這個控制項群組會指定當您從 [偵錯] 功能表選擇 [啟動] 時會發生的動作。<br /><br /> -   [起始專案] 是預設動作，並且會啟動用於偵錯的啟始專案。 <br />-   [啟動外部程式] 讓您可以啟動並附加至不屬於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案一部分的程式。 如需詳細資訊，請參閱 [附加至正在](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)執行的進程。<br />-   [以 URL 啟動瀏覽器] 可讓您偵錯 Web 應用程式。 |
@@ -51,7 +51,7 @@ ms.locfileid: "99842704"
 
 ### <a name="compile-tab-press-advanced-compile-options-button"></a>編譯索引標籤：按下進階編譯選項按鈕
 
-| 設定 | Description |
+| 設定 | 描述 |
 |---------------------------| - |
 | **啟用最佳化** | 一定要取消勾選這個選項。 最佳化會讓實際執行的程式碼，與 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中所見的原始程式碼不同，導致偵錯更加困難。 如果對程式碼進行最佳化，則使用 Just My Code 進行偵錯時，預設為不載入符號。 |
 | **產生偵錯資訊** | 預設已定義在偵錯版本和發行版本中，此設定 (相當於 /debug 編譯器選項) 會在建置期間建立偵錯資訊。 偵錯工具會在偵錯時，使用這份資訊以有用的格式顯示變數名稱和其他資訊。 如果您沒有用這份資訊來編譯程式，偵錯工具的功能便會有所侷限。 如需詳細資訊，請參閱 [/debug](/dotnet/visual-basic/reference/command-line-compiler/debug)。 |

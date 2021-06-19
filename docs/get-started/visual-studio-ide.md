@@ -6,7 +6,7 @@ ms.date: 05/28/2021
 ms.technology: vs-ide-general
 ms.topic: overview
 ms.custom:
-- acquisition
+- vs-acquisition
 - vs-get-started
 - SEO-VS-2020
 author: TerryGLee
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3012676af42b1cb575e86948e9bc27e0a0e29821
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: d50a7f37a3dfe6c5a8ef8e7bf8e113485cf8bc95
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112504"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385119"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>歡迎使用 Visual Studio IDE
 

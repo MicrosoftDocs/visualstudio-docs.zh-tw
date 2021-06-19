@@ -1,7 +1,7 @@
 ---
 title: 在使用者帳戶下執行背景工作進程 |Microsoft Docs
-description: '設定您的電腦，讓您可以在 Visual Studio 中的使用者帳戶下執行 ASP.NET worker 進程 ( # A0 或 w3wp.exe) 。'
-ms.custom: SEO-VS-2020, seodec18
+description: 設定您的電腦，讓您可以在 Visual Studio 中的使用者帳戶下執行 ASP.NET worker 進程 (aspnet_wp.exe 或 w3wp.exe) 。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8642ed1643b88cdcb28bfa8cabef9200a59cb8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 752d09a0d0c6fe49e49e1298d475c90c86991836
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881304"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384638"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在使用者帳戶下執行背景工作處理序
 若要設定電腦以便在某個使用者帳戶下執行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序 (aspnet_wp.exe 或 w3wp.exe)，請依照下列步驟執行。

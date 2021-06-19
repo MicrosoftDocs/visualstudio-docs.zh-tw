@@ -1,7 +1,7 @@
 ---
 title: Web 應用程式的偵錯工具-疑難排解 |Microsoft Docs
 description: 探索可用來在 web 應用程式中偵測和解決錯誤的常見程式連結。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e256e62152d774eb5e296784d934f205a1003d2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01b298d84bd626a73c0b21526281dc788f7e2f8b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872283"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387719"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>偵錯 Web 應用程式：疑難排解
 本節包含可以用來解決錯誤的通用程序。

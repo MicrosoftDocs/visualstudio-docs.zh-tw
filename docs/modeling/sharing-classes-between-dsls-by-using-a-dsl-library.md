@@ -4,17 +4,17 @@ description: 瞭解在 Visual Studio 的視覺效果和模型 SDK 中，您可�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61e4785ab99ecccc61a097dd27140e250f103de2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3729e4f386ec5a21c8f30ee3f0df6e7ffa8d891
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899810"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385496"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 程式庫共用 DSL 之間的類別
 在 Visual Studio 的視覺效果和模型 SDK 中，您可以建立不完整的 DSL 定義，以將其匯入至另一個 DSL。 這可讓您考慮類似模型的一般部分。

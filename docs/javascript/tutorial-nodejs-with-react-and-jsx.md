@@ -1,7 +1,7 @@
 ---
 title: 建立 Node.js 與 React 應用程式
 description: 瞭解如何從 Visual Studio 範本建立 Node.js web 應用程式專案。
-ms.custom: ''
+ms.custom: vs-acquisition
 ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 80516adffcb058d6ce28751e7a9f30002ca3a640
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: 9a45be2c18466754fba5469c59396f7a7791156d
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729295"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386835"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 React 應用程式
 
@@ -518,7 +518,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
    * 如果您需要中斷 *app-bundle.js* 中的程式碼，但無法這麼做，請移除 *app-bundle.js 對應* 的來源對應檔。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [將應用程式部署至 Linux App Service](../javascript/publish-nodejs-app-azure.md)

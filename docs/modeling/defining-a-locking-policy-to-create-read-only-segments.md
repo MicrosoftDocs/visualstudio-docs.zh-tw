@@ -4,17 +4,17 @@ description: 瞭解如何為程式定義原則，以鎖定部分或所有特定�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aa7590689b4d7acdb7a7ebe501584ed6a8bd41bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bb8e05ffc030716f32ab7e79233ca9e02ef2e11
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935413"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385782"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定義鎖定原則來建立唯讀區段
 Visual Studio 視覺效果和模型 SDK 的永久性 API 可讓程式鎖定部分或所有特定領域語言 (DSL) 模型，讓它可以讀取但不會變更。 例如，您可以使用這個唯讀選項，讓使用者可以要求同事標注和審核 DSL 模型，但不允許他們變更原始模型。
@@ -89,7 +89,7 @@ partition.SetLocks(Locks.Delete);
 |全部|其他值的位 OR。|
 
 ## <a name="locking-policies"></a>鎖定原則
- 作為 DSL 的作者，您可以定義 *鎖定原則*。 鎖定原則會審核 SetLocks ( # A1 的作業，讓您可以防止設定特定鎖定或強制設定特定鎖定。 一般而言，您會使用鎖定原則來防止使用者或開發人員不慎 contravening 預期的 DSL 使用方式，就像您可以宣告變數一樣 `private` 。
+ 作為 DSL 的作者，您可以定義 *鎖定原則*。 鎖定原則會審核 SetLocks () 的作業，讓您可以防止設定特定鎖定或強制設定特定鎖定。 一般而言，您會使用鎖定原則來防止使用者或開發人員不慎 contravening 預期的 DSL 使用方式，就像您可以宣告變數一樣 `private` 。
 
  您也可以使用鎖定原則來設定相依于專案類型之所有專案的鎖定。 這是因為 `SetLocks(Locks.None)` 當第一次從檔案建立或還原序列化專案時，一律會呼叫。
 

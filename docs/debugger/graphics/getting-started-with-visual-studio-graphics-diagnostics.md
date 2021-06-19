@@ -1,7 +1,7 @@
 ---
 title: 開始使用圖形診斷 |Microsoft Docs
 description: 準備第一次使用圖形診斷，然後從 Direct3D 應用程式中取得畫面格，並在 [圖形分析器] 中檢查。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: how-to
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1559854c1b293c33c16cfab6e638a33908c2eb8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70512b4df3be7f11973af244c336b22c59c90f8f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881291"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387602"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷快速入門
 在本節中，您將準備第一次使用圖形診斷，並從 Direct3D 應用程式擷取畫面格，然後在圖形分析器中檢查它們。

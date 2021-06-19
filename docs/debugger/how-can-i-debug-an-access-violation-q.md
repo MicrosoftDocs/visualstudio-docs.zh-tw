@@ -1,7 +1,7 @@
 ---
 title: 對 c + + 存取違規進行 Debug |Microsoft Docs
 description: 當有一個以上的指標是候選時，請參閱疑難排解存取違規的秘訣。 最新版本的 Visual Studio 命名不當指標。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 02/05/2019
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f7e33ff34357dc0aa258f179f55d379bdf05636
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3689942c9db9fde3598590cf30100fc590c50753
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904312"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387030"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>如何將 c + + 存取違規進行調試
 
@@ -33,7 +33,7 @@ ms.locfileid: "99904312"
 
 我的程式產生存取違規。 該如何偵錯？
 
-## <a name="solution"></a>解決方案
+## <a name="solution"></a>解決方法
 
 如果您在對多個指標取值的程式碼行上取得存取違規，可能很難找出哪個指標造成存取違規。 從 Visual Studio 2015 Update 1 開始，例外狀況對話方塊現在會明確地指出造成存取違規的指標。
 

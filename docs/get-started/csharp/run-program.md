@@ -1,7 +1,7 @@
 ---
 title: '如何 (c # ) 執行程式'
 description: '如何在 Visual Studio 中執行 c # 程式的初學者指南。'
-ms.custom: get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 10/16/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: bbebcec3f5b2de01bcbfa7839f68e6f7a3e2cc64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e20caabb55e65801224177168f5c936f81402bbd
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922835"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385223"
 ---
 # <a name="how-to-run-a-c-program-in-visual-studio"></a>如何：在 Visual Studio 中執行 c # 程式
 
@@ -118,7 +118,7 @@ Visual Studio 會嘗試協助您找出遺漏的參考。 當名稱無法解析�
 
 若要變更目標 framework，請參閱 [變更目標 framework](../../ide/visual-studio-multi-targeting-overview.md#select-a-target-framework-version)。 如需詳細資訊，請參閱 [疑難排解 .NET Framework 目標錯誤](../../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 閱讀 [歡迎使用 VISUAL STUDIO IDE，以](../visual-studio-ide.md)探索 Visual Studio 開發環境。
 

@@ -4,17 +4,17 @@ description: 瞭解定義和使用特定領域語言的基本概念 (DSL) 建立
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe531b127d657228ed68fa79358ef5df69ff17c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2637703e068a98e20f209d5de51a6003a4dd7f4
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941485"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386731"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>特定領域語言的使用者入門
 

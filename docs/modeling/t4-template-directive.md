@@ -4,17 +4,17 @@ description: 瞭解 Visual Studio T4 文字模板通常會以範本指示詞開�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb5a216aa9a43581327b04d4b6b56f49f9b2bae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 622a6392df2608048a3ac24fda0f4dffc8e43dd4
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924642"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386133"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 

@@ -2,7 +2,7 @@
 title: 選取安裝位置
 description: 了解如何將下載快取、共用元件、SDK 和工具的位置變更為不同的磁碟機，來減少 Visual Studio 在系統磁碟機上的安裝磁碟使用量。 例如，將一些檔案從 C 磁碟機移至 D 磁碟機。
 ms.date: 03/30/2019
-ms.custom: acquisition
+ms.custom: vs-acquisition
 ms.topic: how-to
 helpviewer_keywords:
 - change installation locations for Visual Studio
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0e780cca2515118b92b71c406368d29424f7017c
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 5ad065a780a16420727d90605d95038cc5f4080a
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307618"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387563"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>在 Visual Studio 2017 中選取安裝位置
 

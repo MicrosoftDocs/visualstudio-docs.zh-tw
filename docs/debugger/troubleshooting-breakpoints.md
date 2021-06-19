@@ -1,7 +1,7 @@
 ---
 title: 針對偵錯工具中的中斷點進行疑難排解 |Microsoft Docs
 description: 如果中斷點已停用或無法設定，則會顯示為空心圓。 請在這裡尋找設定中斷點時可能發生之問題的相關資訊。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 01/23/2018
 ms.topic: troubleshooting
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bb7d2d15e9cb04b541fba3d68607fb250054b707
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0801a687529b5e0f8cdf34030460f0b5fe45bc91
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870424"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386380"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>針對 Visual Studio 偵錯工具中的中斷點進行疑難排解
 
@@ -36,7 +36,7 @@ ms.locfileid: "99870424"
 
 * 如果您的模組尚未載入，請檢查下列各項以找出原因：
   * 確認您正在進行正確的處理常式。
-  * 查看您正在對正確的程式碼進行偵錯工具。 您可以在 [**進程**] 視窗中，找出偵錯工具所設定的程式碼類型， (**debug**  >  **Windows**  >  **進程**) 。 例如，如果您嘗試將 c # 程式碼進行偵錯工具，請確認您的偵錯工具已設定為適用于 .NET 的適當類型和版本 (例如，Managed (v4 \*) 與 managed (v2 \* /v3 \*) 和 managed (CoreCLR) # A7。
+  * 查看您正在對正確的程式碼進行偵錯工具。 您可以在 [**進程**] 視窗中，找出偵錯工具所設定的程式碼類型， (**debug**  >  **Windows**  >  **進程**) 。 例如，如果您嘗試將 c # 程式碼進行偵錯工具，請確認您的偵錯工具已設定為適當的 .NET 類型和版本 (例如，Managed (v4 \*) 與 managed (v2 \* /v3 \*) 和 managed (CoreCLR) ) 。
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… 目前的原始程式碼與內建的版本不同 ...」
 

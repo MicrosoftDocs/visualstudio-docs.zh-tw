@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, accessing the current selection
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83903c8ff911fdd1d4900714137a7f6976513dad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 28d0f99743535965b3cf203d461fac5d0193607c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890561"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386601"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>如何：存取及限制目前的選取範圍
 
@@ -103,7 +103,7 @@ ms.locfileid: "99890561"
 
 4. 將 ClassDiagram 類別的部分類別定義新增至您的自訂程式碼檔案。
 
-     `ClassDiagram`類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> 類別，並定義于所產生的程式碼檔案（Diagram.cs）中（在 DSL 專案中）。
+     `ClassDiagram`類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> 類別，並定義于 DSL 專案中產生的程式碼檔（.cs）中。
 
 5. 覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 類別的屬性 `ClassDiagram` ，以傳回自訂選取規則。
 

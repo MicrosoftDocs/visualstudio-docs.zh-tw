@@ -1,7 +1,7 @@
 ---
 title: 使用偵錯工具流覽程式碼 |Microsoft Docs
 description: 瞭解如何使用 Visual Studio 偵錯工具來針對程式碼進行疑難排解。 主題包括：進入中斷模式、逐步執行程式碼，以及執行至目標。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/12/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6ad377ddb457018099256cd64b6b8382c69df81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9c0424b07ba7a24f109e967d464856781e5dbb2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942070"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385236"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具流覽程式碼
 
@@ -82,7 +82,7 @@ Visual Studio 偵錯工具可協助您流覽程式碼來檢查應用程式的狀
 
 在進行偵錯工具時，您可能不在意函式，或您知道它的運作方式，就像是經過妥善測試的程式庫程式碼。 您可以使用下列命令，在程式碼逐步執行時略過程式碼。 函數仍會執行，但偵錯工具會略過這些函式。
 
-|鍵盤命令|偵錯功能表命令|Description|
+|鍵盤命令|偵錯功能表命令|描述|
 |----------------------|------------------|-----------------|
 |**F10**|**逐程序**|如果目前的行包含函式呼叫，[不進入函式] **會執行程式** 代碼，然後在呼叫的函式傳回之後，于第一行程式碼上暫停執行。|
 |**Shift** +**F11**|**跳出**|**跳出** 執行程式碼，並在目前的函式傳回時暫停執行。 偵錯工具會略過目前的函式。|

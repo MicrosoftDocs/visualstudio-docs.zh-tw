@@ -1,7 +1,7 @@
 ---
 title: 將分析工具附加至 .NET 服務以收集應用程式統計資料
 description: 使用 Visual Studio 分析工具命令列工具將分析工具附加至 .NET Framework 服務，並使用取樣方法取得效能統計資料。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
@@ -11,12 +11,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3808f004d9813e846a10c2b672b6406f9cc54cde
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 92b5e24100e43a6a03352c49111226298160521b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958878"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385470"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至 .NET 服務以收集應用程式統計資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至 .NET Framework 服務，並使用取樣方法收集效能統計資料。
@@ -38,7 +38,7 @@ ms.locfileid: "99958878"
 
 1. 安裝服務。
 
-2. 開啟 [命令提示字元] 視窗。
+2. 開啟命令提示字元視窗。
 
 3. 初始化程式碼剖析環境變數。 輸入：
 
@@ -50,11 +50,11 @@ ms.locfileid: "99958878"
 
 4. 重新啟動電腦。
 
-5. 開啟 [命令提示字元] 視窗。
+5. 開啟命令提示字元視窗。
 
 6. 啟動分析工具。 輸入：
 
-    **>vsperfcmd**  [/start](../profiling/start.md) **： sample**  [/output](../profiling/output.md) **：** `OutputFile` [ `Options` ]
+    **>Vsperfcmd**  [/start](../profiling/start.md) **： sample**  [/output](../profiling/output.md) **：** `OutputFile` [ `Options` ]
 
    - **/Start： sample** 選項會初始化 profiler。
 
@@ -65,7 +65,7 @@ ms.locfileid: "99958878"
    > [!NOTE]
    > **/User** 和 **/crosssession** 選項通常是服務的必要選項。
 
-   | 選項 | Description |
+   | 選項 | 描述 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **：**[ `Domain` **\\** ]`UserName` | 指定擁有程式碼剖析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 處理序擁有者會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [使用者名稱] 欄。 |
    | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果服務在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [工作階段識別碼] 欄。 **/crosssession** 可縮寫成 **/CS**。 |
@@ -77,13 +77,13 @@ ms.locfileid: "99958878"
 
 8. 將程式碼剖析工具附加至服務。 輸入：
 
-    **>vsperfcmd**[/attach](../profiling/attach.md) **：** { `PID`&#124;`ProcName` } [ `Sample Event` ] [[/targetclr](../profiling/targetclr.md)**：** `Version` ]  
+    **>Vsperfcmd**[/attach](../profiling/attach.md) **：** { `PID`&#124;`ProcName` } [ `Sample Event` ] [[/targetclr](../profiling/targetclr.md)**：** `Version` ]  
 
    - 指定服務的處理序識別碼 (`PID`) 或處理序名稱 (ProcName)。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序識別碼和名稱。
 
      根據預設，每經過 10,000,000 個未暫止處理器時脈週期，會取樣一次效能資料。 這在 1GH 處理器上大約是每秒 100 次取樣。 您可以指定下列任一選項來變更時脈週期間隔，或指定不同的取樣事件。
 
-   |取樣事件|Description|
+   |取樣事件|描述|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **：**`Interval`|將取樣間隔變更為 `Interval` 指定的未暫止時脈週期數。|
    |[/pf](../profiling/pf.md)[**：** `Interval` ]|將取樣事件變更為分頁錯誤。 如果指定 `Interval`，請設定樣本間的分頁錯誤數。 預設值為 10。|
@@ -99,7 +99,7 @@ ms.locfileid: "99958878"
 
 - 下列 **>vsperfcmd** 選項配對會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|Description|
+    |選項|描述|
     |------------|-----------------|
     |[/globalon/globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **：** `PID` [/processoff](../profiling/processon-and-processoff.md) **：**`PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|

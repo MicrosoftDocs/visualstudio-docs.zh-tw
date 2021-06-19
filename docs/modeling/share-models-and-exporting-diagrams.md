@@ -7,22 +7,22 @@ ms.topic: conceptual
 helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e12dcd1fcb9119aa65811fc149d86150a8b084e7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef33052e8ae98e5a716265a130f8b2031bbfd340
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899781"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385652"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>共用模型及匯出圖表
 在 Visual Studio 中，有多種方式可與同事共用模型和圖表。
 
- 若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。
 
 ## <a name="working-on-a-model-as-a-team"></a>以小組型態處理模型
  Visual Studio 的使用者可以建立和編輯模型、相依性圖表和引導式圖形。
@@ -32,7 +32,7 @@ ms.locfileid: "99899781"
  如需在中型或大型專案中組織模型的建議，請參閱 [結構化方案](../modeling/structure-your-modeling-solution.md)。
 
 ## <a name="reading-and-reviewing-models"></a>讀取和檢閱模型
- 使用某些無法建立模型之 Visual Studio 版本的小組成員，可以讀取模型，以及建立圖表和有向圖形的模型，但是無法編輯。  若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 使用某些無法建立模型之 Visual Studio 版本的小組成員，可以讀取模型，以及建立圖表和有向圖形的模型，但是無法編輯。  若要查看 Visual Studio 支援這項功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
  相依性圖表只能在建立它的模型內開啟。 若要提供圖表的存取，即必須提供所有模型化專案檔案的存取，或其複本的存取。
 

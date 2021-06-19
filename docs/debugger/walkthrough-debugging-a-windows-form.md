@@ -1,7 +1,7 @@
 ---
 title: Windows Form 的調試 |Microsoft Docs
 description: '遵循逐步解說來瞭解如何建立和偵測 Windows Form （一般受控應用程式）。 您可以使用 c #、Visual Basic、c + + 或 F #。'
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9293956e2ca47e68ff5bf22502251b22115a827
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73b58326bb594f275a508e5ba7fb17071f283ac2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884126"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385171"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>逐步解說：偵錯 Windows Form
 Windows Form 是其中一個最常見的 managed 應用程式。 Windows Form 會建立標準的 Windows 應用程式。 您可以使用 Visual Basic、c # 或 c + + 來完成此逐步解說。
@@ -176,7 +176,7 @@ Windows Form 是其中一個最常見的 managed 應用程式。 Windows Form �
 
      [附加至處理序]  對話方塊隨即出現。
 
-4. 在 [ **可用的進程** ] 窗格中，于 [ **處理** ] 資料行中尋找 ( # A0) 的進程名稱，然後按一下它。
+4. 在 [ **可用的進程** ] 窗格中，于 [ **處理** ] 資料行中尋找 (Walkthrough_SimpleDebug.exe) 的進程名稱，然後按一下它。
 
 5. 按一下 [ **附加** ] 按鈕。
 

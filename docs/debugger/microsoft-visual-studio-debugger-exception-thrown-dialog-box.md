@@ -2,7 +2,7 @@
 title: Microsoft Visual Studio 偵錯工具 () 對話方塊擲回例外狀況 |Microsoft Docs
 titleSuffix: ''
 description: 瞭解當程式需要處理的例外狀況時，該怎麼辦。 您可以： 1) 中斷進入偵錯工具;2) 繼續;或 3) 略過。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2982912a0bf165f25b7777311d6db9a1bbe01a8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c7a4b92a3ec5c6876fae3054b692ff46f26e82cd
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930274"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387043"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Microsoft Visual Studio 偵錯工具 (擲回例外狀況) 對話方塊
 您的程式發生了例外狀況。 這個對話方塊將報告擲回的例外狀況類型。 您的程式碼需要處理這個例外狀況。 您可以選擇下列選項處理例外狀況：

@@ -4,17 +4,17 @@ description: 瞭解與網域角色相關聯的屬性，例如集合類型、代�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9edee5f8128933b2ecb36434a64d39c40d3d799f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 670704a86f0c149d26c7c869259c0f2f6bb75881
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941303"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385142"
 ---
 # <a name="properties-of-domain-roles"></a>網域角色的屬性
 下表中的屬性與網域角色相關聯。 如需有關網域角色的詳細資訊，請參閱 [瞭解模型、類別和關聯](../modeling/understanding-models-classes-and-relationships.md)性。 如需有關如何使用這些屬性的詳細資訊，請參閱 [自訂和擴充 Domain-Specific 語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -28,14 +28,14 @@ ms.locfileid: "99941303"
 |屬性 Getter 存取修飾詞|產生的屬性之 getter 的存取修飾詞 (`public` 、、 `internal` `private` 、 `protected` 或 `protected internal`) 。|`public`|
 |屬性 Setter 存取修飾詞|產生的屬性之 setter 的存取修飾詞 (`public` 、、 `internal` `private` 、 `protected` 或 `protected internal`) 。|`public`|
 |多重性|可以播放相反角色 (`0..1` 、 `1..1` 、 `0..*` 或) 的模型元素數目 `1..*` 。 如果多重性為 `0..*` 或 `1..*` ，則產生的屬性工作表示集合，否則產生的屬性工作表示單一模型元素。|相依于關聯性類型，以及這是否為關聯性中的來源或目標角色。|
-|名稱|網域角色的名稱。 這個屬性不能包含空格。|此角色之角色扮演者的網域類別名稱。|
+|Name|網域角色的名稱。 這個屬性不能包含空格。|此角色之角色扮演者的網域類別名稱。|
 |傳播複本|`DoNotPropagateCopy` -複製的角色扮演者將不會有此連結的複本。<br /><br /> `PropagateCopyToLinkOnly` -複製的連結指向現有的相反角色扮演者。<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -複製的連結指向相對角色扮演者的複本。|`PropagateCopyToLinkAndOppositeRolePlayer` 適用于內嵌的來源角色。<br /><br /> `DoNotPropagateCopy` 適用于其他角色。<br /><br /> 如需詳細資訊，請參閱 [自訂複製行為](../modeling/customizing-copy-behavior.md)|
 |傳播刪除|`True` 刪除相關聯的連結時，刪除扮演此角色的元素。|`True` 適用于嵌入角色的目標。<br /><br /> `False` 適用于其他角色。|
 |屬性名稱|角色扮演者程式碼中產生的屬性名稱。 此名稱不能包含空格。|如果此角色有零對一或一對一多重性，則為相反角色的名稱;否則為相反角色的複數化名稱。|
 |角色扮演者|可以在關聯性中扮演此角色之專案的網域類別。 這是唯讀的屬性。|此角色之角色扮演者的網域類別。|
 |備註|與網域角色相關聯的非正式附注。|<無\>|
 |類別|在產生的設計工具中，產生的屬性會出現在 [ **屬性** ] 視窗中的分類。 如果這個屬性是空的，則產生的屬性會出現在 [ **其他** ] 類別之下。|<無\>|
-|Description|用來記錄程式碼的描述，用於產生之設計工具的 UI 中。<br /><br /> 此描述會出現在「角色扮演者」類別上產生之屬性的 IntelliSense 工具提示中。|`Description for`*角色的完整名稱*|
+|描述|用來記錄程式碼的描述，用於產生之設計工具的 UI 中。<br /><br /> 此描述會出現在「角色扮演者」類別上產生之屬性的 IntelliSense 工具提示中。|`Description for`*角色的完整名稱*|
 |顯示名稱|針對網域角色所產生的設計工具中顯示的名稱。|Name 屬性的調整值。|
 |說明關鍵字|選擇性的關鍵字，用來為網域角色的 F1 說明編制索引。|\<none>|
 |屬性顯示名稱|產生的角色屬性在產生的設計工具中顯示的名稱。|[屬性名稱] 屬性的調整值。|

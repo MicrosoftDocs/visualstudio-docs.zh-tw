@@ -13,18 +13,18 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a27f5ae8320e942d5167fcc8260179f8cec96e37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0af2717efec7cab8594f193c06e8813bd556b01f
+ms.sourcegitcommit: c3713f284c4fe10b10996d5eb67077ddd8641424
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850278"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112375782"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>如何：將類別圖表新增到專案
 
 若要設計、編輯和重構類別及其他類型，請將類別圖加入至 C#、Visual Basic 或 C++ 專案。 若要在專案中視覺化程式碼的不同部分，請將多個類別圖加入至專案。
 
-您不能從跨多個應用程式共用程式碼的專案建立類別圖。 若要建立 UML 類別圖表，請參閱[建立 UML 模組化專案和圖表](../../modeling/what-s-new-for-design-in-visual-studio.md)。
+您不能從跨多個應用程式共用程式碼的專案建立類別圖。 若要建立 UML 類別圖表，請參閱[建立 UML 模組化專案和圖表](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)。
 
 ## <a name="install-the-class-designer-component"></a>安裝類別設計工具元件
 

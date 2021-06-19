@@ -1,7 +1,7 @@
 ---
 title: 準備進行 Windows 服務的調試 |Microsoft Docs
 description: 準備在 Visual Studio 中，偵錯工具是在 Windows 下的背景中執行的程式。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf82b708440cb3201c5d05bd936c7f7d9c30729
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01448fcd477f5b17b78ad2b142b965f30798746b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872387"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387732"
 ---
 # <a name="debugging-preparation-windows-services"></a>偵錯準備：Windows 服務
 Windows 服務是在 Microsoft Windows 背景中執行的程式。 參考範例包括 Telnet 服務和 Windows 時間服務 (這會更新您電腦上的時鐘)。 Windows 服務不能在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 內執行；它必須在服務控制管理員的內容中執行。 如需詳細資訊，請參閱[建立 Windows 服務](/dotnet/framework/windows-services/how-to-create-windows-services)、[偵錯 Windows 服務應用程式](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)和 [Windows 服務應用程式](/dotnet/framework/windows-services/index)。

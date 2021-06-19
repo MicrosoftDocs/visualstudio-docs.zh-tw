@@ -4,17 +4,17 @@ description: 瞭解在 Visual Studio 的視覺效果和模型 SDK 中，您可�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ca83bd9f6ac88e26247f6c9beea9c242a505887c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9304117932b92408f12a23747253de66dfd767d1
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873771"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385665"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>設定圖表上的背景影像
 在 Visual Studio 視覺效果和模型 SDK 中，您可以使用自訂程式碼，為產生的設計工具設定背景影像。
@@ -43,7 +43,7 @@ ms.locfileid: "99873771"
 
 10. 確認檔案 Dsl\Properties\Resources.resx 存在且其下有檔案 Resources.Designer.cs。
 
-11. 如果 Resources.Designer.cs 遺失，請按一下 **方案總管** 中的檔案資源 .resx。
+11. 如果缺少 .cs，請按一下 **方案總管** 中的檔案資源 .resx。
 
 12. 在 [屬性]  視窗中，將 `Custom Tool` 屬性設定為 `ResXFileCodeGenerator`。
 

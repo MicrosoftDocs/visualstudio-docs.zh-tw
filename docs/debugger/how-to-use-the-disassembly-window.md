@@ -1,7 +1,7 @@
 ---
 title: 在偵錯工具中查看反組解碼程式碼 |Microsoft Docs
 description: 使用 Visual Studio 中的 [反組解碼] 視窗，顯示對應于編譯器所建立之指令的元件程式碼。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b7d772ed757b231ce68fe27b74123f7f5878d0ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8cc67b2f8136ea426eb56c25fb3c345198701f1
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99845044"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387459"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 偵錯工具中查看反組解碼程式碼 (c #、c + +、Visual Basic、F # ) 
 

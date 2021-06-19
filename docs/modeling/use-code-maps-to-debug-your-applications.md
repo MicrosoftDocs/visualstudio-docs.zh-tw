@@ -18,22 +18,24 @@ ms.author: joshuapa
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a39be2e465ebe8b04501f319e89d6f8bc926b4c2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b422c6c7857ca1baaa5bd1d8a7d6955e8b6751b3
+ms.sourcegitcommit: c3713f284c4fe10b10996d5eb67077ddd8641424
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924460"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112375795"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用 Code Map 偵錯您的應用程式
 
-Code Map 有助於避免在大型程式碼基底、不熟悉的程式碼或舊版程式碼當中不知所措。 例如，當您要進行偵錯工具時，您可能必須跨多個檔案和專案查看程式碼。 使用 Code Map 巡覽程式碼片段並了解它們之間的關聯性。 如此一來，您就不必在腦中持續追蹤此程式碼，或繪製個別的圖表。 因此，當您工作中斷時，Code Map 可協助重新整理您正在處理之程式碼的記憶。
+[Visual Studio 中的 code map](../modeling/map-dependencies-across-your-solutions.md) 可協助您避免在大型程式碼基底、不熟悉的程式碼或舊版程式碼中遺失。 例如，當您要進行偵錯工具時，您可能必須跨多個檔案和專案查看程式碼。 使用 Code Map 巡覽程式碼片段並了解它們之間的關聯性。 如此一來，您就不必在腦中持續追蹤此程式碼，或繪製個別的圖表。 因此，當您工作中斷時，Code Map 可協助重新整理您正在處理之程式碼的記憶。
 
 ![Code map &#45; 對應程式碼中的關聯性](../modeling/media/codemapstoryboardpaint.png)
 
 **綠色箭號會顯示游標出現在編輯器中的位置**
 
 如需使用 code map 時可使用的命令和動作的詳細資訊，請參閱 [流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)。
+
+[在使用偵錯工具工具的 Visual Studio 中深入瞭解偵錯工具](../debugger/debugger-feature-tour.md)。
 
 > [!NOTE]
 > 若要建立和編輯 code map，您需要 Visual Studio Enterprise 版。 在 Visual Studio Community 和專業版中，您可以開啟在 Enterprise edition 中產生的圖表，但無法編輯它們。

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 440d2f42fb7967ebbcb97433c3faa55e2d91ca0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51717e4bdbf12478e22bb825a9c84cfc82815f98
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903936"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387355"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要 (DSL) 定義特定領域語言，您可以從範本建立 Visual Studio 解決方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
@@ -82,7 +82,7 @@ ms.locfileid: "99903936"
 
 4. 您可以調整其他頁面上的設定，或是保留預設值。
 
-5. 按一下 [完成] 。
+5. 按一下 [完成]  。
 
     精靈會建立包含兩個或三個專案的方案，並從 DSL 定義產生程式碼。
 
@@ -306,7 +306,7 @@ ms.locfileid: "99903936"
 
         若要建立新的圖示，請在 **方案總管** 中開啟 Dsl\Resources。 複製並貼上其中一個現有的項目工具 BMP 檔案。 將貼上的複本重新命名，然後按兩下加以編輯。
 
-        返回 DSL 定義圖，選取工具，然後在屬性視窗按一下 [**工具箱] 圖示** 中的 **[...]** 。 在 [ **選取點陣圖** ] 對話方塊中，選取您的。從下拉式功能表中的 BMP 檔。
+        返回 DSL 定義圖，選取工具，然後在屬性視窗按一下 [**工具箱] 圖示** 中的 **[...]** 。 在 [ **選取點陣圖** ] 對話方塊中，從下拉式功能表中選取您的 .BMP 檔案。
 
    如需詳細資訊，請參閱 [幾何圖形的屬性](../modeling/properties-of-geometry-shapes.md) 和 [影像圖形的屬性](../modeling/properties-of-image-shapes.md)。
 
@@ -384,7 +384,7 @@ ms.locfileid: "99903936"
 
      若要建立新的圖示，請在 **方案總管** 中開啟 Dsl\Resources。 複製並貼上其中一個現有的項目工具 BMP 檔案。 將貼上的複本重新命名，然後按兩下加以編輯。
 
-     返回 DSL 定義圖，選取工具，然後在屬性視窗按一下 [**工具箱] 圖示** 中的 **[...]** 。 在 [ **選取點陣圖** ] 對話方塊中，選取您的。從下拉式功能表中的 BMP 檔。
+     返回 DSL 定義圖，選取工具，然後在屬性視窗按一下 [**工具箱] 圖示** 中的 **[...]** 。 在 [ **選取點陣圖** ] 對話方塊中，從下拉式功能表中選取您的 .BMP 檔案。
 
 ##### <a name="to-test-a-reference-relationship-and-connector"></a>測試參考關聯性和連接器
 

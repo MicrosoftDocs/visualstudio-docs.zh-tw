@@ -1,7 +1,7 @@
 ---
 title: 指定要用於偵錯工具的 .NET Framework 版本 |Microsoft Docs
 description: 指定用於偵錯工具的舊版 .NET Framework 版本。 Visual Studio 偵錯工具支援 .NET Framework 的舊版本和目前版本的偵錯工具。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 197cd51d31729119d48e255d038ad2e53f17a891
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 83b30067530b9a48769879f3a222fee2afa725c0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908369"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384664"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>指定舊版的 .NET Framework 版本以進行偵錯工具 (c #、Visual Basic、F # ) 
 

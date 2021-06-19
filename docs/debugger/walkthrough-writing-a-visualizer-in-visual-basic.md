@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Basic 中撰寫視覺化Microsoft Docs
 description: 遵循逐步解說，在 Visual Basic 中建立簡單的視覺化檢視。 您也會建立測試控管，以測試您的視覺化檢視。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49d730fe6fef116577f26acabd72440950a6e192
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b1a4fc7d6f33d1bdfd469ec352674b08dd2495e6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884048"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384999"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>逐步解說：在 Visual Basic 中撰寫視覺化檢視
 

@@ -6,24 +6,24 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23629c2503fd14a758cf3f68f2576db601dd39cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c1c638c5a45427fd474f085ff58c9d38682ee054
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861851"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385431"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>選擇網域指定的語言方案範本
 若要建立特定領域語言方案，請選擇 Domain-Specific Language Designer Wizard 中提供的其中一個方案範本。 藉由選擇最接近您要建立之語言的範本，您可以將必須對起始方案所做的修改減至最少。
 
  下列解決方案範本可在 Domain-Specific 語言設計工具] 中取得。
 
-|範本|功能|Description|
+|範本|功能|描述|
 |-|-|-|
 |類別圖表|-區間圖形<br />-類別繼承<br />-關聯性繼承<br />-圖形繼承<br />-關聯性屬性|如果您的特定領域語言包含具有屬性的實體和關聯性，請使用此解決方案範本。 此範本會建立類似 UML 類別圖表的特定領域語言。 主要實體是類別和介面，以及關聯、一般化和執行關聯性。 類別或介面會顯示為包含屬性清單的方塊。|
 |元件圖|-埠|如果您的網域特定語言包含元件，也就是軟體系統的元件，請使用此解決方案範本。 此範本會建立類似于 UML 元件圖的特定領域語言。 主要實體是元件和埠，在元件外部顯示為小圖形。|

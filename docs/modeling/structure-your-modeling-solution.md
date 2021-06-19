@@ -4,17 +4,17 @@ description: 瞭解將應用程式分割成與整體分層圖中各層對應之�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85a0bfc178c2aea86a04123815ae946226691477
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54275c55d3d7a80dc2df1721585bc6c39ba8b06e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899793"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385483"
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 
@@ -24,7 +24,7 @@ ms.locfileid: "99899793"
 
 本主題假設您正在處理的專案，大到需要多個小組成員，而且可能有多個小組。 專案的程式碼和模型儲存在原始檔控制系統上，例如 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]。 至少有部分小組成員使用 Visual Studio 開發模型，而其他小組成員可以使用其他 Visual Studio 版本檢視模型。
 
-若要查看 Visual Studio 支援每項工具和模型化功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看 Visual Studio 支援每項工具和模型化功能的版本，請參閱 [架構和模型工具的版本支援](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 ## <a name="solution-structure"></a>方案結構
 
@@ -111,4 +111,3 @@ ms.locfileid: "99899793"
 ## <a name="see-also"></a>另請參閱
 
 - [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)
-- [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)

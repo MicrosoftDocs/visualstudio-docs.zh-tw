@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2697e3d17e289297bcad57155c1c9ea6f1880acc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2bcc16a6f2be70ae9ba0bfec0f3a24c94213dcf
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922709"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387160"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：攔截圖案或 Decorator 上的點選
 下列程式示範如何攔截圖形或圖示裝飾專案的點擊。 您可以攔截點擊、按兩下、拖曳和其他手勢，然後讓元素回應。

@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf2aff512b98e7a813134c3b376b6972c8cd4f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2edfd4b9391beed5c379817c55871759ff02eec
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897748"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384924"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild 保留和已知屬性
 
@@ -71,7 +71,10 @@ MSBuild 提供一組預先定義的屬性，用來儲存專案檔和 MSBuild 二
 | `MSBuildThisFileName` | 保留 | `MSBuildThisFileFullPath` 的檔案名稱部分，不包含副檔名。 | `ConsoleApp1` |
 | `MSBuildToolsPath` | 保留 | 與值相關聯之 MSBuild 版本的安裝路徑 `MSBuildToolsVersion` 。<br /><br /> 不要在路徑中包含結尾的反斜線。<br /><br /> 這個屬性無法覆寫。 | `C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin` |
 | `MSBuildToolsVersion` | 保留 | 用來建立專案的 MSBuild 工具組版本。<br /><br /> 注意： MSBuild 工具組包含用來建立應用程式的工作、目標和工具。 工具包括編譯器，例如 *csc.exe* 和 vbc.exe。 如需詳細資訊，請參閱 [工具組 (ToolsVersion) ](../msbuild/msbuild-toolset-toolsversion.md)以及 [標準和自訂工具](../msbuild/standard-and-custom-toolset-configurations.md)組設定。 | `Current` |
-| `MSBuildVersion` | 保留 | 用來建立專案的 MSBuild 版本。 <br /><br/> 這個屬性無法覆寫，否則就會傳回錯誤訊息 `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.`。 | 16.7.0 |
+| `MSBuildVersion` | 保留 | 用來建立專案的 MSBuild 版本。 <br /><br/> 這個屬性無法覆寫，否則就會傳回錯誤訊息 `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.`。 | 16.11.0 |
+| `MSBuildAssemblyVersion` | 保留 | 用來建立專案的 MSBuild 元件版本。 | 16.0 |
+| `MSBuildFileVersion` | 保留 | 用來建立專案的 MSBuild 元件的4部分版本。 | 16.11.0.30701 |
+| `MSBuildSemanticVersion` | 保留 | 用來建立專案之 MSBuild 元件的完整 semver 2.0 版本。 | 16.11.0-preview-21302-05 + 5e37cc992 |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>與 MSBuild 項目發生衝突的名稱
 

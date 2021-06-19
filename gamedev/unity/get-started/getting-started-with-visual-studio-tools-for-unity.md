@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Tools for Unity 使用者入門 | Microsoft Docs
 description: 瞭解如何安裝及設定適用于 Unity 開發的 Visual Studio。
-ms.custom: ''
+ms.custom: acquisition
 ms.date: 01/27/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 791f25b61c86f0115c225d505bdb1edb07869961
-ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
+ms.openlocfilehash: 8eea998731c4d29e533d1e6bf21d4a2870a81ff5
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109782604"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386692"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>開始使用 Visual Studio 和 Unity
 

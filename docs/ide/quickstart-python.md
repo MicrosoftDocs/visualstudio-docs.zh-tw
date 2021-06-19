@@ -9,17 +9,17 @@ author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
 ms.custom:
-- acquisition
+- vs-acquisition
 - SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1cefae42025407e0252b5aedc28e979e0d86debc
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: a94d28b6f9cb2aa9ee870dd6c4cc914e09b6efee
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113178"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386250"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 

@@ -1,7 +1,7 @@
 ---
 title: 在偵錯時切換到另一個執行緒
 description: 檢查 Visual Studio 中的多執行緒應用程式時，切換至另一個執行緒的不同方法。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 04/27/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: affc4dec196169580ff23c5faf2f7876a71fbba9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0a68047c5c9e772fc978c56f2cd70dc9454ca57
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896514"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384690"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>如何：在 Visual Studio 中進行調試時切換至另一個執行緒 (c #、Visual Basic、c + +) 
 當您對多執行緒應用程式進行偵錯工具時，您可以使用數種方法中的任一個，從您已使用的執行緒切換至另一個執行緒。

@@ -4,17 +4,17 @@ description: 瞭解 DSL 定義延伸模組如何讓您建立延伸模組套件�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1208c152534206a0ed2894fc0e41d844e0b77d47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d9f1c92ebb879517d497af41fe98cec4492bd95
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861955"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384885"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>在 DSL 定義中新增延伸模組
 

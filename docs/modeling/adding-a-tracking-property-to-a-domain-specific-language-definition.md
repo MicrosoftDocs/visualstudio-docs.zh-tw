@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tracking properties [Domain-Specific Language Tools], walkthrough
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c58e01fa5da5608b183827e366c115c214aa483d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 546636ec3de4656bf0f6480dfaa5141d38e963d6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862007"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384911"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>在特定領域語言定義中新增追蹤屬性
 
@@ -153,7 +153,7 @@ ms.locfileid: "99862007"
 
 3. 選取程式 **代碼** 檔案範本，將 **名稱** 設定為 `NamespaceTrackingProperty.cs` ，然後按一下 **[確定]**。
 
-     NamespaceTrackingProperty.cs 檔案會建立並開啟以供編輯。
+     會建立並開啟 NamespaceTrackingProperty .cs 檔案進行編輯。
 
 4. 在資料夾中，建立下列程式碼檔案： `ExampleModel.cs,``HelperClasses.cs` 、 `Serialization.cs` 和 `TypeDescriptor.cs` 。
 
@@ -161,9 +161,9 @@ ms.locfileid: "99862007"
 
 ## <a name="add-helper-classes-to-support-tracking-properties"></a>新增 Helper 類別以支援追蹤屬性
 
-在 HelperClasses.cs 檔案中，新增和類別，如下所 `TrackingHelper` `CriticalException` 示。 您稍後將在本逐步解說中參考這些類別。
+在 HelperClasses .cs 檔案中，加入和類別，如下所 `TrackingHelper` `CriticalException` 示。 您稍後將在本逐步解說中參考這些類別。
 
-1. 將下列程式碼新增至 HelperClasses.cs 檔案。
+1. 將下列程式碼新增至 HelperClasses .cs 檔案。
 
     ```csharp
     using System;
@@ -249,7 +249,7 @@ ms.locfileid: "99862007"
 
 ### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>若要修改 Examplemodel.store.customer 網域類別的類型描述元
 
-1. 將下列程式碼新增至 TypeDescriptor.cs 檔案。
+1. 將下列程式碼加入至 .cs 檔案。
 
     ```csharp
     using System;
@@ -311,7 +311,7 @@ ms.locfileid: "99862007"
 
 產生的程式碼會定義 ExampleElement 網域類別的型別描述提供者。不過，您必須加入程式碼，指示 DSL 使用此類型描述提供者。
 
-1. 將下列程式碼新增至 Package.cs 檔案。
+1. 將下列程式碼加入至封裝 .cs 檔案。
 
     ```csharp
     using System.ComponentModel;
@@ -349,7 +349,7 @@ ms.locfileid: "99862007"
 
 ### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>若要修改追蹤屬性的屬性處理常式
 
-1. 將下列程式碼新增至 ExampleModel.cs 檔案。
+1. 將下列程式碼新增至 Examplemodel.store.customer .cs 檔案。
 
     ```csharp
     using System.Linq;
@@ -425,7 +425,7 @@ ms.locfileid: "99862007"
 
 ### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>若要加入自訂類型描述元的方法
 
-1. 將下列程式碼新增至 NamespaceTrackingProperty.cs 檔案。
+1. 將下列程式碼新增至 NamespaceTrackingProperty .cs 檔案。
 
     ```csharp
     using System;
@@ -592,7 +592,7 @@ ms.locfileid: "99862007"
 
 ### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>加入程式碼以支援自訂的後續載入行為
 
-1. 將下列程式碼新增至 Serialization.cs 檔案。
+1. 將下列程式碼加入至序列化 .cs 檔案。
 
     ```csharp
     using System;
@@ -752,7 +752,7 @@ ms.locfileid: "99862007"
 
 10. 儲存方案，然後關閉實驗組建。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 如果您打算使用一個以上的追蹤屬性，或在多個 DSL 中執行追蹤屬性，您可以建立文字模板來產生支援每個追蹤屬性的通用程式碼。 如需文字模板的詳細資訊，請參閱程式 [代碼產生和 T4 文字模板](../modeling/code-generation-and-t4-text-templates.md)。
 
