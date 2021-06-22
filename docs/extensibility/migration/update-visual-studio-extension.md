@@ -9,14 +9,19 @@ manager: jmartens
 monikerRange: vs-2022
 ms.workload:
 - vssdk
-ms.openlocfilehash: 514c9654a741e4e1e565f0cb2becdbe3157fab0c
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 6e7c4990d513bfb276984611b2d38f3e35a825eb
+ms.sourcegitcommit: a7a4c5545a269ca74a7291966ff77afb3b57f5ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308697"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "112424649"
 ---
 # <a name="update-a-visual-studio-extension-for-visual-studio-2022"></a>更新 Visual Studio 2022 的 Visual Studio 延伸模組
+
+> [!IMPORTANT]
+> 本指南的建議旨在引導開發人員遷移擴充功能，這些擴充功能需要主要變更才能在 Visual Studio 2019 和2022中運作。 在這些情況下，建議使用兩個 VSIX 專案和條件式編譯。
+> 許多延伸模組都能在 Visual Studio 2019 和2022中運作，而且不需要遵循本指南中現代化延伸模組的建議。
+> 在 Visual Studio 2022 中試用您的延伸模組，並評估您的延伸模組最適合的選項。
 
 您可以遵循本指南來更新您的延伸模組，以使用 Visual Studio 2022 Preview。 Visual Studio 2022 Preview 是64位應用程式，並引進了 VS SDK 的一些重大變更。 本指南將逐步引導您完成使用目前的 Visual Studio 2022 預覽版來使用您的延伸模組所需的步驟，讓您的擴充功能可在 Visual Studio 2022 達到 GA 之前，供使用者安裝。
 
