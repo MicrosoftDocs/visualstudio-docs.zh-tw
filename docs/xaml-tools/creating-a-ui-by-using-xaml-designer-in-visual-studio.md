@@ -1,5 +1,5 @@
 ---
-title: XAML 設計工具概觀
+title: 使用 Visual Studio XAML 設計工具建立 Ui
 description: 深入瞭解 Blend for Visual Studio 中的 XAML 設計工具工作區 UI 和功能，其中提供視覺化介面，協助您設計以 XAML 為基礎的應用程式。
 ms.date: 03/03/2020
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 8f022d0f27977488fb089f2cffb40aad22365b46
-ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
+ms.openlocfilehash: ef7d94acbb558ef2a8a3c557051e6dea16be916c
+ms.sourcegitcommit: 809fff25b7701882c899c639eeb6da38ad4fb88a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110565228"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112550684"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>使用 XAML 設計工具建立 UI
 

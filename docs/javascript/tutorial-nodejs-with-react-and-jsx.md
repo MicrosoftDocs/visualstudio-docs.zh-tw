@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9a45be2c18466754fba5469c59396f7a7791156d
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 3299f38e99c6b96cacd3c3661937a29bdec3c93d
+ms.sourcegitcommit: 809fff25b7701882c899c639eeb6da38ad4fb88a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386835"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112550697"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 React 應用程式
 
@@ -308,7 +308,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 1. 在命令提示字元中鍵入下列命令：
 
-    `node_modules\.bin\webpack app.tsx --config webpack-config.js`
+    `node_modules\.bin\webpack ./app.tsx --config webpack-config.js`
 
     [命令提示字元] 視窗會顯示結果。
 
@@ -336,7 +336,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
    ```json
    "scripts": {
-    "build": "webpack-cli app.tsx --config webpack-config.js"
+    "build": "webpack-cli ./app.tsx --config webpack-config.js"
    }
    ```
 
