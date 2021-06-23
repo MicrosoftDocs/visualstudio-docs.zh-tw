@@ -1,5 +1,5 @@
 ---
-title: 什麼是 Visual Studio 解決方案 &amp; 專案？
+title: 什麼是 Visual Studio 解決方案 & 專案？
 description: 瞭解 Visual Studio 專案和方案、如何從範本建立新專案，以及如何在方案總管中查看 & 管理專案。
 ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 12/31/2020
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f632922078383708319e610d82a4c94a58619424
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 61cc760eb34df7f643bbdc16607f2316e92785bf
+ms.sourcegitcommit: 40646cd90ca0701c034311931f026cf67edb74de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306393"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112500886"
 ---
 # <a name="what-are-solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解決方案和專案是什麼？
 

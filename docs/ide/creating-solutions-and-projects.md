@@ -1,5 +1,5 @@
 ---
-title: 建立 &amp; 使用 Visual Studio projects &amp; 方案
+title: 建立 & 使用 Visual Studio 專案 & 解決方案
 description: 瞭解方案和專案之間的差異，以及如何在 Visual Studio 中使用它們。
 ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 06/14/2021
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f253492e5c1b3bf0c27448d59d754260e9e70912
-ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
+ms.openlocfilehash: 7971226767fe114e3618e9dfc6a161a50d5374ee
+ms.sourcegitcommit: 40646cd90ca0701c034311931f026cf67edb74de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112066939"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112500899"
 ---
 # <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>建立、使用及刪除 Visual Studio 專案和方案
 
