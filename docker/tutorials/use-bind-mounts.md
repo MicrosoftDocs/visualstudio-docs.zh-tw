@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 57cb56d0d9a93d0f11e4047f6e25b64841c47e93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a4aa7623f69f9b02f9649a1a66ade010a823669
+ms.sourcegitcommit: 98d187abd9352d2255348b84d99d015e65caa0ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841675"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112574109"
 ---
 # <a name="use-bind-mounts"></a>使用系結裝載
 
@@ -49,14 +49,15 @@ ms.locfileid: "99841675"
 
     ```bash
     docker run -dp 3000:3000 \
-        -w /app -v ${PWD}:/app \
+        -w /app \
+        -v "%cd%:/app" \
         node:12-alpine \
         sh -c "yarn install && yarn run dev"
     ```
 
     - `-dp 3000:3000` -與之前相同。 在卸離 (背景) 模式中執行，並建立埠對應
     - `-w /app` -設定要執行命令的「工作目錄」或目前目錄
-    - `-v ${PWD}:/app` -將目前目錄從容器中的主機掛接到 `/app` 目錄中
+    - `-v "%cd%:/app"` -將目前目錄從容器中的主機掛接到 `/app` 目錄中
     - `node:12-alpine` -要使用的映射。 請注意，這是您的應用程式從 Dockerfile 的基礎映射
     - `sh -c "yarn install && yarn run dev"` -命令。 我們正在使用 `sh` (alpine 啟動 shell 沒有 `bash`) 並正在執行， `yarn install` 以安裝 *所有* 相依性，然後執行 `yarn run dev` 。 如果您查看 `package.json` ，我們會看到 `dev` 腳本正在啟動 `nodemon` 。
 
@@ -98,7 +99,7 @@ ms.locfileid: "99841675"
 
 為了準備生產環境，您需要將您的資料庫從 SQLite 中的工作遷移到可以更妥善擴充的事物。 為了簡單起見，您將會繼續使用關係資料庫，並將您的應用程式切換為使用 MySQL。 但是，您應該如何執行 MySQL？ 您要如何讓容器互相溝通？ 您將會瞭解下一步！
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 繼續進行本教學課程！
 
