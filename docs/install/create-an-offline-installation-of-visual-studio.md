@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: eef6a8bbdf5afc3aa5f36b0afdb374fd5beac471
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: b10fc1adbb0b4a6e053549749ea90acf3919d0c6
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307488"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602205"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 
@@ -184,7 +184,7 @@ ms.locfileid: "112307488"
 ::: moniker range=">=vs-2019"
 
    > [!NOTE]
-   > 完整的 Visual Studio 配置至少需要 35 GB 磁碟空間。 如需詳細資訊，請參閱 [系統需求](/visualstudio/releases/2019/system-requirements/)。
+   > 完整的 Visual Studio 版面配置需要至少 41 GB 的磁碟空間。 如需詳細資訊，請參閱 [系統需求](/visualstudio/releases/2019/system-requirements/)。
 
 ::: moniker-end
 

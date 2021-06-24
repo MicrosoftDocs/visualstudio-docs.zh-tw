@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8f195b6d77aeab9a01a6f3f6262f4024de1153
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63e78d935d515ccafda461a8f7af77623387940b
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951650"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602151"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 
@@ -67,6 +67,8 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
     <AvailableItemName Include="JScript"/>
 </ItemGroup>
 ```
+
+在專案類型中加入專案類型名稱 `AvailableItemName` 會導致該類型的專案出現在 **方案總管** 中。
 
 > [!NOTE]
 > 某些專案類型名稱是 Visual Studio 特殊的，但未列在此下拉式清單中。

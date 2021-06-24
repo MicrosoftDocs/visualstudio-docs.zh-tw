@@ -9,12 +9,12 @@ manager: jmartens
 monikerRange: vs-2022
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df7c20e93073ab2fc6a727e29f738a4313fd1d7
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 12bbc159884c16ea89849e5c97a4b87292f7089d
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308712"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602225"
 ---
 # <a name="imageoptimizer---update-a-visual-studio-extension-step-by-step"></a>ImageOptimizer-逐步更新 Visual Studio 擴充功能
 
@@ -23,7 +23,7 @@ ms.locfileid: "112308712"
 本指南將說明新增 Visual Studio 2022 支援所需的所有步驟，同時保有使用影像優化程式擴充功能的 Visual Studio 2019 支援作為個案研究。  
 這是每個步驟的 git 認可連結的完整指南，但您可以在這裡看到已完成的 PR： [https://github.com/madskristensen/ImageOptimizer/pull/46](https://github.com/madskristensen/ImageOptimizer/pull/46) 。
 
-本指南的結尾也有 [其他範例](https://github.com/microsoft/VSExtensibility/wiki/Samples#other-samples) 。
+本指南的結尾也有 [其他範例](#other-samples) 。
 
 ## <a name="step-1---modernize-the-project"></a>步驟 1-將專案現代化
 

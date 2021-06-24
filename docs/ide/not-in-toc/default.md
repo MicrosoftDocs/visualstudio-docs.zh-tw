@@ -12,26 +12,25 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: cc15c7ac377899ddb8660782e6015cfc975aa8dc
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 7e8051c058018a3c433972cfdf19bb091685a482
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390564"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602160"
 ---
 # <a name="oops-no-f1-help-match-was-found"></a>糟糕！ `F1`找不到任何協助相符
-
-很抱歉！ 似乎找不到您要尋找的內容。 
 
 :::image type="content" source="../media/search-error-page-sm.png" alt-text="抱歉，找不到相符項" border="false":::
 
 ## <a name="now-what"></a>接下來呢？
 
+很抱歉！ 似乎找不到您要尋找的內容。 
+
 **尋找有關 `F1` 視窗、關鍵字或 API 名稱的說明嗎？**
 - 試用您最愛的搜尋引擎 **[建議]**
 - 使用 [ [docs.microsoft.com](/) ] 工具列搜尋 
-- 請參閱[.NET API 瀏覽器](/dotnet/api/)的參考檔
-- 在[文字程式碼編輯器](../../ide/writing-code-in-the-code-and-text-editor.md)上取得協助
+- 搜尋 [.NET API 瀏覽器](/dotnet/api/) ，或閱讀我們的 [文字程式碼編輯器總覽](../../ide/writing-code-in-the-code-and-text-editor.md)
 - 流覽知識庫以取得 [Visual Studio 疑難排解](/troubleshoot/visualstudio/welcome-visual-studio/)
 
 

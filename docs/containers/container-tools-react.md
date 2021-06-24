@@ -1,19 +1,19 @@
 ---
-title: 具有 ASP.NET Core 和 React.js 的 Visual Studio 容器工具
+title: 使用 ASP.NET Core 和 React.js Visual Studio 容器工具
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 author: ghogen
-description: 瞭解如何使用 Visual Studio 容器工具和 Docker 建立容器化回應 SPA 應用程式
+description: 瞭解如何使用 Visual Studio 容器工具和 Docker 來建立容器化回應 SPA 應用程式
 ms.author: ghogen
 ms.date: 02/21/2021
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 7a2a9e7c8b2c53dcee7f11d4b0b795b66ab80a80
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 177a44f8af73226d4352c4a48c23c65eadc3e608
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684343"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602029"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>快速入門：在 Visual Studio 中搭配使用 Docker 與回應單一頁面應用程式
 
@@ -26,7 +26,7 @@ ms.locfileid: "101684343"
 * 已安裝 [網頁程式開發]、[Azure Tools] 工作負載及/或 [.NET Core 跨平台開發] 工作負載的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 * 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊以免費試用](https://azure.microsoft.com/offers/ms-azr-0044p/)。
 * [Node.js](https://nodejs.org/en/download/)
-* 若為 Windows 容器（Windows 10 版本1903或更新版本），則會使用本文中所參考的 Docker 映射。
+* 針對 Windows 容器（Windows 10 1809 版或更新版本），以使用本文中所參考的 Docker 映射。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -34,7 +34,7 @@ ms.locfileid: "101684343"
 * 使用 .NET Core 3.1 開發的[.Net core 3.1 開發工具](https://dotnet.microsoft.com/download/dotnet-core/3.1)。
 * 發佈至 Azure Container Registry (Azure 訂用帳戶)。 [註冊以免費試用](https://azure.microsoft.com/offers/ms-azr-0044p/)。
 * [Node.js](https://nodejs.org/en/download/)
-* 若為 Windows 容器（Windows 10 版本1903或更新版本），則會使用本文中所參考的 Docker 映射。
+* 針對 Windows 容器（Windows 10 1809 版或更新版本），以使用本文中所參考的 Docker 映射。
 ::: moniker-end
 
 ## <a name="installation-and-setup"></a>安裝與設定
@@ -49,7 +49,7 @@ ms.locfileid: "101684343"
 
    ![新 React.js 專案的螢幕擷取畫面](media/container-tools-react/vs-2017/new-react-project.png)
 
-1. 以滑鼠右鍵按一下專案節點，然後選擇 [新增]**[Docker 支援]** > ，將 Dockerfile 新增至您的專案。
+1. 以滑鼠右鍵按一下專案節點，然後選擇 [ **新增** > **Docker 支援** ]，將 Dockerfile 新增至您的專案。
 
    ![新增 Docker 支援](media/container-tools-react/vs-2017/add-docker-support.png)
 
@@ -58,7 +58,7 @@ ms.locfileid: "101684343"
 
 ::: moniker range=">=vs-2019"
 
-1. 使用 **ASP.NET Core 搭配 React.js** 範本建立新專案。
+1. 使用 React.js範本的 **ASP.NET Core** 建立新專案。
 
    ![建立新 React.js 專案的螢幕擷取畫面](media/container-tools-react/vs-2019/create-reactjs-project.png)
 
@@ -66,7 +66,7 @@ ms.locfileid: "101684343"
 
    ![建立新的 React.js 專案-其他資訊畫面的螢幕擷取畫面](media/container-tools-react/vs-2019/new-react-project-additional-information.png)
 
-1. 以滑鼠右鍵按一下專案節點，然後選擇 [新增]**[Docker 支援]** > ，將 Dockerfile 新增至您的專案。
+1. 以滑鼠右鍵按一下專案節點，然後選擇 [ **新增** > **Docker 支援** ]，將 Dockerfile 新增至您的專案。
 
    ![新增 Docker 支援](media/container-tools-react/vs-2017/add-docker-support.png)
 
@@ -91,14 +91,14 @@ RUN apt-get install -y nodejs
 ```Dockerfile
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 WORKDIR /src
@@ -135,26 +135,26 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
    1. 在之前新增下列幾行 `FROM … base`
 
       ```Dockerfile
-      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      FROM mcr.microsoft.com/powershell AS downloadnodejs
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
       Expand-Archive nodejs.zip -DestinationPath C:\; `
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
       ```
 
-   1. 在前面和之後加入下行 `FROM … build`
+   2. 在前面和之後加入下行 `FROM … build`
 
       ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       ```
 
-   1. 完成的 Dockerfile 現在看起來應該像這樣：
+   3. 完成的 Dockerfile 現在看起來應該像這樣：
 
       ```Dockerfile
       # escape=`
       #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
       #For more information, please see https://aka.ms/containercompat
-      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      FROM mcr.microsoft.com/powershell AS downloadnodejs
       RUN mkdir -p C:\nodejsfolder
       WORKDIR C:\nodejsfolder
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
@@ -162,13 +162,13 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
       Expand-Archive nodejs.zip -DestinationPath C:\; `
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
 
-      FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS base
+      FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
       WORKDIR /app
       EXPOSE 80
       EXPOSE 443
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
 
-      FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
+      FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       WORKDIR /src
       COPY ["WebApplicationReact1/WebApplicationReact1.csproj", "WebApplicationReact1/"]
@@ -186,7 +186,7 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
       ENTRYPOINT ["dotnet", "WebApplicationReact1.dll"]
       ```
 
-   1. 藉由移除來更新 >.dockerignore `**/bin` 檔案。
+   4. 藉由移除來更新 >.dockerignore `**/bin` 檔案。
 
 ## <a name="debug"></a>偵錯
 
@@ -207,12 +207,12 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
 
 從 [工具] > [NuGet 套件管理員]、[套件管理員主控台] 功能表開啟 [套件管理員主控台] (PMC)。
 
-產生的應用程式 Docker 映像，會標記為 *dev*。 映射是以 *dotnet/core/aspnet* 基底映射的 *3.1-nanoserver-1903* 標記為基礎。 在 [套件管理員主控台] (PMC) 視窗中，執行 `docker images` 命令。 這會顯示電腦上的映像：
+產生的應用程式 Docker 映像，會標記為 *dev*。 映射是以 *dotnet/core/aspnet* 基底映射的 *3.1* 標記為基礎。 在 [套件管理員主控台] (PMC) 視窗中，執行 `docker images` 命令。 這會顯示電腦上的映像：
 
 ```console
 REPOSITORY                             TAG                 IMAGE ID            CREATED             SIZE
 webapplicationreact1                   dev                 09be6ec2405d        2 hours ago         352MB
-mcr.microsoft.com/dotnet/core/aspnet   3.1-buster-slim     e3559b2d50bb        10 days ago         207MB
+mcr.microsoft.com/dotnet/core/aspnet   3.1                 e3559b2d50bb        10 days ago         207MB
 ```
 
 > [!NOTE]
@@ -247,7 +247,7 @@ CONTAINER ID        IMAGE                      COMMAND               CREATED    
 
     ![Visual Studio 的 [建立 Azure Container Registry] 對話方塊](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
 
-1. 選取 [建立]  。
+1. 選取 [建立]。
 
    ![顯示成功發佈的螢幕擷取畫面](media/container-tools/publish-succeeded.png)
 :::moniker-end
@@ -260,12 +260,12 @@ CONTAINER ID        IMAGE                      COMMAND               CREATED    
 
    ![選擇 Docker Container Registry](media/container-tools-react/vs-2019/publish-dialog1.png)
 
-1. 接下來，選擇 [ **Azure Container Registry**]。
+1. 接著，選擇 [ **Azure Container Registry**]。
 
    ![選擇 Azure Container Registry](media/container-tools-react/vs-2019/publish-dialog-acr.png)
 
 1. 選擇 [ **建立新的 Azure Container Registry**]。
-1. 在 [ **建立新的 Azure Container Registry** ] 畫面中填入您想要的值。
+1. 在 [ **建立新的 Azure Container Registry** ] 畫面中，填入所需的值。
 
     | 設定      | 建議的值  | 描述                                |
     | ------------ |  ------- | -------------------------------------------------- |
@@ -288,7 +288,7 @@ CONTAINER ID        IMAGE                      COMMAND               CREATED    
    若要使用 [ **發佈** ] 對話方塊再次開始，請使用此頁面上的 [ **刪除** ] 連結來刪除發行設定檔，然後再次選擇 [ **發行** ]。
 :::moniker-end
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 您現在可以從登錄中，將容器提取至能夠執行 Docker 映像的任何主機，例如 [Azure 容器執行個體](/azure/container-instances/container-instances-tutorial-deploy-app)。
 

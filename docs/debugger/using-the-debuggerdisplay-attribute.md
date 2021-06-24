@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: edb257f6e5e0b74ef7f60a8447b7c89053a04e24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e9579e4969cb53ed2f1bcf749e8114386af85d0
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896481"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602142"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 屬性告訴偵錯工具要顯示的內容 (c #、Visual Basic、F #、c + +/CLI) 
 
@@ -96,9 +96,9 @@ public sealed class MyClass
 "，Nq" 後置詞會指示運算式評估工具在顯示最終值時移除引號 (nq = no 引號) 。
 
 ## <a name="example"></a>範例
-下列程式碼範例將示範如何使用 `DebuggerDisplay`搭配 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在偵錯工具變數視窗中檢視時 (例如 [ **監看式** ] 視窗)，它會產生類似下面所示的展開：
+下列程式碼範例將示範如何使用 `DebuggerDisplay`搭配 `DebuggerBrowsable` 和 `DebuggerTypeProxy`。 在偵錯工具變數視窗中檢視時 (例如 [ **監看式** ] 視窗)，它會產生類似下面所示的展開：
 
-|**名稱**|**ReplTest1**|**型別**|
+|**名稱**|**ReplTest1**|**類型**|
 |--------------|---------------|--------------|
 |答案|"three"|object {string}|
 |值|3|object {int}|
