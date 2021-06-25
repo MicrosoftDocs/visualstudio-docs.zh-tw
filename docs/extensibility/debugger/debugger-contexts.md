@@ -3,7 +3,7 @@ title: 偵錯工具內容 |Microsoft Docs
 description: 瞭解 Visual Studio debug engine 如何在不同的內容中運作：程式碼內容、檔內容或位置，以及運算式評估內容。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 725123ef8dc2aa67742784fb8c2eb35e242487f9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5103561a420c3836f60a22790335522a83798966
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094818"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903667"
 ---
 # <a name="debugger-contexts"></a>偵錯工具內容
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 調試中，debug engine (DE) 在數個不同的內容中同時運作，如下所示：

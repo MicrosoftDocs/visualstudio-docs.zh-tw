@@ -3,7 +3,7 @@ title: QUERYCHANGESFUNC |Microsoft Docs
 description: QUERYCHANGESFUNC 回呼函式是用來列舉檔案名的集合，並決定每個檔案的狀態。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - QUERYCHANGESFUNC
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc797d68f6df6d9aab93554ba95955a7d9f45eea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b061fbfb6644f77348574020c0a5cb614691ae6b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068618"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899130"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 這是 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 作業用來列舉檔案名集合，並決定每個檔案狀態的回呼函數。

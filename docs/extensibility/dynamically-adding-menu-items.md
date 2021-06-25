@@ -3,7 +3,7 @@ title: 以動態方式加入功能表項目 |Microsoft Docs
 description: 瞭解如何使用 DynamicItemStart 命令旗標，在執行時間加入功能表項目。 本文說明如何在 Visual Studio 方案中設定啟始專案。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - DYNAMICITEMSTART
 - menu items, adding dynamically
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa85d5b5cf4b99840e181fb24b5913ff72a3fee0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6867baafa45ca794f65b4cb0cc365dbebfbd4219
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070332"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898353"
 ---
 # <a name="dynamically-add-menu-items"></a>以動態方式加入功能表項目
 您可以在執行時間加入功能表項目，方法是在 `DynamicItemStart` Visual Studio 命令 (*. .vsct*) 檔中的預留位置按鈕定義上指定命令旗標，然後在程式碼中定義 (，) 顯示和處理命令 () 的功能表項目數目。 載入 VSPackage 時，會將預留位置取代為動態功能表項目。

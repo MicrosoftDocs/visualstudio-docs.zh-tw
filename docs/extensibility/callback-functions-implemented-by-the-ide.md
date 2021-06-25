@@ -3,7 +3,7 @@ title: IDE 所執行的回呼函式 |Microsoft Docs
 description: 瞭解外掛程式可在原始檔控制作業期間于適當時間呼叫的回呼函式，以將資訊傳遞至 IDE。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2e361551fbe03b7f0ef41b19c5d4136aa50472
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 78ce3a9cdd183cff0518ee3c6da9326c63297a85
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068098"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899143"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE 所執行的回呼函數
 為了與整合式開發環境整合 (IDE) 盡可能順暢地進行整合，並提供統一的終端使用者體驗，原始檔控制外掛程式可以使用 IDE 所執行的回呼函數。 外掛程式可以在原始檔控制作業期間，于適當的時間呼叫這些函式，以將資訊傳遞至 IDE;然後，IDE 可以將此資訊顯示為其原生 UI 中的內嵌元素。 在此案例中，使用者在此案例中的使用方式不會比外掛程式採用自己的 UI 更少。

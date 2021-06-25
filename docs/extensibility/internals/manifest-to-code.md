@@ -3,19 +3,19 @@ title: Manifest to Code |Microsoft Docs
 description: 瞭解如何使用程式碼工具的資訊清單，該工具會使用 imagemanifest 檔案搭配 Visual Studio 映射服務使用。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ae844b0b0b6d585895b6939d1d33b2a699c2756
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e63349b27ec8ea5617f6d1836ce9ece3251662d3
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095156"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903161"
 ---
 # <a name="manifest-to-code"></a>資訊清單至程式碼
 Manifest to Code 工具是一種主控台應用程式，它會採用 Visual Studio 映射服務的 imagemanifest 檔，並產生包裝函式檔案或檔案，以參考 Visual Studio 擴充功能的 c + +、c #、VB 或 .vsct 檔案中的影像資訊清單值。 此工具會產生包裝函式檔案，這些檔案可用來直接向 Visual Studio 映射服務要求影像，或在程式碼不會處理它自己的任何 UI 和轉譯時，透過 Api 來傳遞資訊清單值。
@@ -31,12 +31,12 @@ Manifest to Code 工具是一種主控台應用程式，它會採用 Visual Stud
 |-|-|-|
 |/manifest|要用來建立或更新程式碼包裝函式的影像資訊清單路徑。|必要|
 |/language|要在其中產生程式碼包裝函式的語言。<br /><br /> 有效值： CPP、c + +、CS、CSharp、c #、VB 或 .VSCT 值不區分大小寫。<br /><br /> 針對 .VSCT language 選項，會忽略/monikerClass、/classAccess 和/namespace 選項。|必要|
-|/imageIdClass|ImageIdClass 的名稱和工具所建立的相關聯檔案。 針對 c + + 語言選項，只會產生 .h 檔案。<br /><br /> 預設值： \<Manifest Path> \MyImageIds。\<Lang Ext>|選擇性|
-|/monikerClass|MonikerClass 的名稱和工具所建立的相關聯檔案。 針對 c + + 語言選項，只會產生 .h 檔案。 這會忽略 .VSCT 語言。<br /><br /> 預設值： \<Manifest Path> \MyMonikers。\<Lang Ext>|選擇性|
-|/classAccess|ImageIdClass 和 monikerClass 的存取修飾詞。 請確定存取修飾詞對指定的語言有效。 .VSCT language 選項會忽略這個選項。<br /><br /> 預設值： Public|選擇性|
-|/namespace|程式碼包裝函式中定義的命名空間。 .VSCT language 選項會忽略這個選項。 無論選擇的語言選項是 '. ' 或 '：： ' 都是有效的命名空間分隔符號。<br /><br /> 預設值： MyImages|選擇性|
-|/noLogo|設定此旗標會停止產品和著作權資訊的列印。|選擇性|
-|/?|列印出說明資訊。|選擇性|
+|/imageIdClass|ImageIdClass 的名稱和工具所建立的相關聯檔案。 針對 c + + 語言選項，只會產生 .h 檔案。<br /><br /> 預設值： \<Manifest Path> \MyImageIds。\<Lang Ext>|選用|
+|/monikerClass|MonikerClass 的名稱和工具所建立的相關聯檔案。 針對 c + + 語言選項，只會產生 .h 檔案。 這會忽略 .VSCT 語言。<br /><br /> 預設值： \<Manifest Path> \MyMonikers。\<Lang Ext>|選用|
+|/classAccess|ImageIdClass 和 monikerClass 的存取修飾詞。 請確定存取修飾詞對指定的語言有效。 .VSCT language 選項會忽略這個選項。<br /><br /> 預設值： Public|選用|
+|/namespace|程式碼包裝函式中定義的命名空間。 .VSCT language 選項會忽略這個選項。 無論選擇的語言選項是 '. ' 或 '：： ' 都是有效的命名空間分隔符號。<br /><br /> 預設值： MyImages|選用|
+|/noLogo|設定此旗標會停止產品和著作權資訊的列印。|選用|
+|/?|列印出說明資訊。|選用|
 |/help|列印出說明資訊。|選用|
 
  **範例**

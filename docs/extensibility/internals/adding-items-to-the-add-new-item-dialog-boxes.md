@@ -3,7 +3,7 @@ title: 將專案加入至 [加入新專案] 對話方塊 |Microsoft Docs
 description: 瞭解如何將專案加入至 Visual Studio 中的 [加入新專案] 對話方塊，讓您可以顯示要用於專案中的範本和專案專案。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 574cc5384018d14fdc05a834876002bbcbdbaaf7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 70bc1a0c4d90d8cab0b2193550773745fc2dd47e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079094"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904405"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>在 [加入新專案] 對話方塊中加入專案
 在 [ **加入新專案** ] 對話方塊中加入專案的程式會以登錄機碼開頭。 如下列登錄專案所示，[ **AddItemTemplates** ] 區段包含可在 [ **加入新專案** ] 對話方塊中使用之專案的目錄路徑和名稱。
@@ -37,7 +37,7 @@ ms.locfileid: "105079094"
 
  **SortPriority** = dword：00000064
 
-| 名稱 | 類型 | 從 *.rgs* 檔案 (的資料)  | Description |
+| 名稱 | 類型 | 從 *.rgs* 檔案 (的資料)  | 描述 |
 |------------------|-----------| - | - |
 | @ (預設)  | REG_SZ | % IDS_ADDITEM_TEMPLATES_ENTRY% | **新增專案** 範本的資源識別碼。 |
 | Val TemplatesDir | REG_SZ | % TEMPLATE_PATH% \\ &lt; SomeProjectItems&gt; | 在 [ **加入新專案** ] 嚮導的對話方塊中顯示之專案專案的路徑。 |

@@ -3,7 +3,7 @@ title: 以啟動為基礎的附件 |Microsoft Docs
 description: 深入瞭解以啟動為基礎的程式附件（自動），並遵循與手動附件類似的路徑。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines, launching
 - debug engines, attaching to programs
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe698d8d1b29f02ae3971fc95a66c4823f7252c7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 97bbc098e766a1025c372ff35c5849bfe652649f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059713"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904330"
 ---
 # <a name="launch-based-attachment"></a>以啟動為基礎的附件
 以啟動為基礎的程式附件是自動的。 當裝載程式的進程由 SDM 啟動時，以啟動為基礎的附件會遵循與手動附件方法類似的路徑。 如需詳細資訊，請參閱 [附加至程式](../../extensibility/debugger/attaching-to-the-program.md)。

@@ -2,19 +2,19 @@
 title: Visual Studio 的共用色彩 |Microsoft Docs
 description: 瞭解如何使用 common Visual Studio shell 元素和主題，來設計與 Visual Studio 環境一致的自訂 UI。
 ms.date: 04/26/2017
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8edd16744a6c094ece00ee5e4b8239f3d4f5a92e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 262f90fb8d03a9404cdbba8b942e90f6fe6fd3aa
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054019"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903966"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio 的共用色彩
 當您設計使用 common Visual Studio shell 專案的 UI，或您想要讓介面專案與類似的功能一致時，請使用套件定義檔案中現有的標記名稱，來選擇並指派色彩。 這可確保您的 UI 與整體 Visual Studio 環境保持一致，而且會在加入或更新佈景主題時自動更新。

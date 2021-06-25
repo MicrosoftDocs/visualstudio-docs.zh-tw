@@ -3,7 +3,7 @@ title: 公開 Visual Studio SDK 中的事件 |Microsoft Docs
 description: 瞭解公開專案和專案專案事件的 Visual Studio SDK 方法和登錄專案。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 019efb11d7a31af875425888a1f70423bca76ca9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 99298329b969df3b9d7dbb46a3f4b9e7d4ed7091
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069799"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898325"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>在 Visual Studio SDK 中公開事件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可讓您使用自動化來來源事件。 建議您輸入專案和專案專案的來源事件。
@@ -54,7 +54,7 @@ ms.locfileid: "105069799"
 
  **AutomationProjectItemEvents** = 傳回 `AutomationProjectItemsEvents` 物件。
 
-|名稱|類型|範圍|Description|
+|名稱|類型|範圍|描述|
 |----------|----------|-----------|-----------------|
 |預設 ( @ ) |REG_SZ|未使用|未使用的。 您可以使用資料欄位來取得檔。|
 |*AutomationProjectsEvents*|REG_SZ|事件物件的名稱。|只有索引鍵名稱是相關的。 您可以使用資料欄位來取得檔。<br /><br /> 此範例來自基本專案範例。|

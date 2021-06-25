@@ -3,7 +3,7 @@ title: 訊息列舉值 |Microsoft Docs
 description: 此列舉值的成員會用於 TEXTOUTPROC 函式，此函式是 IDE 在呼叫 SccOpenProject 時所提供的回呼函數。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 113f9fe8470b718a219e967b41bc92ecab2cf3c8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 77c49f79ccdcfc4aa0325b89dfb38f3f8d4da721
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063990"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902588"
 ---
 # <a name="message-enumerator"></a>訊息列舉值
 下列旗標用於函式 `TEXTOUTPROC` ，這是 IDE 在呼叫 [SccOpenProject](../extensibility/sccopenproject-function.md) 時所提供的回呼函式 (如需回呼函式) 的詳細資訊，請參閱 [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) 。

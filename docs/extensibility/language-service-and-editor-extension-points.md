@@ -3,7 +3,7 @@ title: 語言服務及編輯器擴充點 |Microsoft Docs
 description: 瞭解您可以擴充的 Visual Studio 程式碼編輯器中的擴充點，包括大部分的語言服務功能。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d71e6c7cd7569c9e73134345584a8237337bc7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 293851f1f3e72508a9bc119fb7551b0118ab2a9b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073296"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903143"
 ---
 # <a name="language-service-and-editor-extension-points"></a>語言服務及編輯器擴充點
 編輯器會提供擴充點，讓您可以擴充為 Managed Extensibility Framework (MEF) 元件元件，包括大部分的語言服務功能。 以下是主要的延伸點類別：

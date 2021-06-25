@@ -3,7 +3,7 @@ title: Bitmap 元素 |Microsoft Docs
 description: Bitmap 元素會定義點陣圖。 點陣圖是從資源或檔案載入的。 本文包含範例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32f07857f2d04989b0de021988b2961d4a1553d2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c8f3daf25a3ffe025bcdef65dbaa6def942d0fb4
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068215"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903316"
 ---
 # <a name="bitmap-element"></a>Bitmap 元素
 定義點陣圖。 點陣圖是從資源或檔案載入的。
@@ -39,7 +39,7 @@ ms.locfileid: "105068215"
 |guid|必要。 GUID/識別碼命令識別碼的 GUID。<br /><br /> 點陣圖的 guid 屬性與任何 VSPackage 或其他命令群組沒有關聯。  它應該是點陣圖定義的唯一的，而且不應該用於任何其他用途。|
 |渣 油|GUID/識別碼命令識別碼的識別碼。 必須是 resID 或 href 屬性。<br /><br /> ResID 屬性是一個整數資源識別碼，可決定要在命令表格合併期間載入的點陣圖區。  載入命令資料表時，將會從相同模組的資源載入資源識別碼所指定的點陣圖。|
 |usedList|如果 resID 屬性存在，則為必要項。 選取點陣圖條紋中的可用影像。|
-|href|點陣圖的路徑。 必須是 resID 或 href 屬性。<br /><br /> 會搜尋包含路徑中指出的影像檔案，並將其內嵌在產生的二進位檔中。  在命令表格合併期間，會複製影像，而不需要額外的資源查閱或載入。  如果 usedList 屬性不存在，則會提供帶狀中的所有影像。 **注意：**  影像可能會以數種格式提供，包括 *.bmp*、 *.png* 和 *.gif*。  舊版編譯器不支援具有部分透明度之 Alpha 資訊的32位點陣圖影像。 這些版本的因應措施是使用 *.png* 格式。|
+|href|點陣圖的路徑。 必須是 resID 或 href 屬性。<br /><br /> 會搜尋包含路徑中指出的影像檔案，並將其內嵌在產生的二進位檔中。  在命令表格合併期間，會複製影像，而不需要額外的資源查閱或載入。  如果 usedList 屬性不存在，則會提供帶狀中的所有影像。 **注意：**  影像可提供數種格式之一，包括 *.bmp*、 *.png* 和 *.gif*。  舊版編譯器不支援具有部分透明度之 Alpha 資訊的32位點陣圖影像。 這些版本的因應措施是使用 *.png* 格式。|
 |條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素

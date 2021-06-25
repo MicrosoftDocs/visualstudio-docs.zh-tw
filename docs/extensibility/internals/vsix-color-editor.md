@@ -3,28 +3,28 @@ title: VSIX 色彩編輯器 |Microsoft Docs
 description: 瞭解 Visual Studio 擴充功能色彩編輯器工具，它可以建立和編輯 Visual Studio 的自訂色彩，以及產生主題資源金鑰。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfd6ff388119d829c2e5994c0fa78d01958326bc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 95fec01beabb66180089a75e772b40788a1f7f0d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069279"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898936"
 ---
 # <a name="vsix-color-editor"></a>VSIX 色彩編輯器
-Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Studio 的自訂色彩。 此工具也可以產生主題資源索引鍵，讓您可以在程式碼中使用這些色彩。 此工具適用于為支援主題的 Visual Studio 延伸模組建立色彩。 此工具可以開啟 .pkgdef 和 .xml 檔案。 Visual Studio 主題 (. vstheme 檔案) 可透過將副檔名變更為 .xml 來搭配 Visual Studio 延伸模組色彩編輯器使用。 此外，也可以將 vstheme 檔案匯入到目前的 .xml 檔案中。
+Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Studio 的自訂色彩。 此工具也可以產生主題資源索引鍵，讓您可以在程式碼中使用這些色彩。 此工具適用于為支援主題的 Visual Studio 延伸模組建立色彩。 此工具可以開啟. .pkgdef 和 .xml 檔案。 Visual Studio 主題 (. vstheme 檔案) 可透過將副檔名變更為 .xml 來搭配 Visual Studio 延伸模組色彩編輯器使用。 此外，也可以將 vstheme 檔案匯入至目前的 .xml 檔案。
 
  ![VSIX 色彩編輯器主圖](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX 色彩編輯器主圖")
 
  **套件定義檔**
 
- 封裝定義 (. .pkgdef) 檔案是定義主題的檔案。 色彩本身會儲存在主題色彩 .xml 檔案中，這些檔案會編譯成 .pkgdef 檔案。 .Pkgdef 檔案會部署到 Visual Studio 可搜尋的位置，在執行時間處理，併合並在一起以定義主題。
+ 封裝定義 (. .pkgdef) 檔案是定義主題的檔案。 色彩本身會以主題色彩儲存 .xml 檔案，這些檔案會編譯成 .pkgdef 檔案。 .Pkgdef 檔案會部署到 Visual Studio 可搜尋的位置，在執行時間處理，併合並在一起以定義主題。
 
  **色彩標記**
 
@@ -129,7 +129,7 @@ Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Stud
 
   輸入高對比的值時，請輸入有效的 Windows 系統色彩名稱。 請勿輸入硬式編碼的 ARGB 值。 您可以從色彩值下拉式功能表中選取 [Background： System] 或 [前景： System]，以查看有效的系統色彩名稱清單。 當您建立具有文字元件的元素時，請使用正確的背景/文字系統色彩組，否則可能無法讀取文字。
 
-  當您完成建立、設定和編輯色彩標記時，請將它們儲存為所需的 .xml 或 .pkgdef 格式。 沒有背景或前景集合的色彩標記，將會以 .xml 格式儲存為空白色彩，但會以 .pkgdef 格式來捨棄。 如果您嘗試將空白色彩儲存至 .pkgdef 檔案，對話方塊會警告您可能會遺失色彩。
+  當您完成建立、設定和編輯色彩標記時，請將它們儲存為所需的 .xml 或 .pkgdef 格式。 沒有背景或前景集的色彩標記將會以 .xml 格式儲存為空白色彩，但會以 .pkgdef 格式來捨棄。 如果您嘗試將空白色彩儲存至 .pkgdef 檔案，對話方塊會警告您可能會遺失色彩。
 
   **步驟4：使用 Visual Studio 擴充功能中的色彩。**
 
@@ -195,7 +195,7 @@ namespace MyCustomColors
 ## <a name="sample-output"></a>範例輸出
  **XML 色彩輸出**
 
- 工具所產生的 .xml 檔案將如下所示：
+ 工具產生的 .xml 檔將如下所示：
 
 ```xml
 <Themes>

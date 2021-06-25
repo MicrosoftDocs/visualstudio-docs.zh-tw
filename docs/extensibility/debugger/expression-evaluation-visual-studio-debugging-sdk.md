@@ -3,7 +3,7 @@ title: 運算式評估 (Visual Studio 調試 SDK) |Microsoft Docs
 description: 在中斷模式期間，IDE 會評估涉及程式變數的運算式。 瞭解 debug engine 如何剖析和評估運算式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e6a79a3268f0bd4acebde795109d39466032a2f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cf213c30ef26490b44579d83c68b2640360584a7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096794"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904509"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>運算式評估 (Visual Studio 調試 SDK) 
 在中斷模式期間，IDE 必須評估涉及數個程式變數的簡單運算式。 若要完成其評估，debug engine (DE) 必須剖析和評估輸入至 IDE 其中一個視窗的運算式。

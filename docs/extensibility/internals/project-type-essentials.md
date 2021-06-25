@@ -3,7 +3,7 @@ title: 專案類型基本 |Microsoft Docs
 description: 瞭解何時必須建立專案類型，以及何時可以使用專案子類型來擴充現有的專案類型。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86ed1c1098fe13cd19ce686782e18b190f455f8c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 051e7b76edd4559914307459fdcbdf1b7c0b600e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064289"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903551"
 ---
 # <a name="project-type-essentials"></a>專案類型的基本資訊
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包含多種語言的專案類型，例如 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 也可讓您建立自己的專案類型。
@@ -56,7 +56,7 @@ ms.locfileid: "105064289"
 
 - 針對 c + + 開發人員，HierUtil 程式庫中的類別會以類似的方式運作。 如需詳細資訊，請參閱 [不在組建中：使用 HierUtil7 專案類別 (c + +) 執行專案類型 ](/previous-versions/bb166212(v=vs.100))。
 
-- 專案類型可以支援建立為 .exe 或 .dll 元件的一般原始程式碼檔以外的資料。 例如， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 資料庫專案包含對儲存在磁片上之腳本和查詢檔案的參考，並將命令新增至 **方案總管** ，以針對資料庫執行腳本和查詢，但專案不支援組建行為。 如需詳細資訊，請參閱 [開啟和儲存專案專案](../../extensibility/internals/opening-and-saving-project-items.md)。
+- 專案類型可以支援內建至 .exe 或 .dll 元件的一般原始程式碼檔以外的資料。 例如， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 資料庫專案包含對儲存在磁片上之腳本和查詢檔案的參考，並將命令新增至 **方案總管** ，以針對資料庫執行腳本和查詢，但專案不支援組建行為。 如需詳細資訊，請參閱 [開啟和儲存專案專案](../../extensibility/internals/opening-and-saving-project-items.md)。
 
 - 專案類型完全不需要使用檔案。 例如，專案類型可以將其所有資料儲存在資料庫中。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可讓專案類型完整控制其保存專案和專案專案資料的方式。 如需詳細資訊，請參閱 [專案類型設計決策](../../extensibility/internals/project-type-design-decisions.md)。
 

@@ -3,7 +3,7 @@ title: CreateExpInstance 公用程式 |Microsoft Docs
 description: 瞭解可讓您建立、重設或刪除實驗 Visual Studio 實例的 CreateExpInstance 公用程式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - experimental builds
 - experimental hive
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0010c4a98d0ea50ec7feb2f7a379f3c84bc3d53
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cce9bc25cb2ed820d3291ab65d94a868bb401ec9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056983"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898132"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 公用程式
 您可以使用 **CreateExpInstance** 公用程式來建立、重設或刪除 Visual Studio 的實驗實例。 您可以使用實驗性實例，在不變更基礎產品的情況下，對 Visual Studio 擴充功能進行調試和測試。

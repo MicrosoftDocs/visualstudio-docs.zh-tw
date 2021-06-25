@@ -3,7 +3,7 @@ title: 在 [加入新專案] 對話方塊中加入目錄 |Microsoft Docs
 description: 瞭解如何使用登入指令檔登錄目錄，將目錄新增至 Visual Studio 中的 [加入新專案] 對話方塊。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Add New Item dialog box, extending
 ms.assetid: 67ae8af6-3752-49e8-8ce3-007aca5f7982
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 131c04d1025885c59a884220a61098b2c85dd5a1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: dab135f8e8632755674d7b3ddf5972592f74d315
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079146"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904356"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>將目錄新增至加入新專案對話方塊
 下列程式碼範例示範如何為 [ **加入新專案** ] 對話方塊註冊一組新的目錄。 每個專案的 [ **加入新專案** ] 對話方塊的目錄都是不同的。 因此，這些目錄會在 [ **專案** ] 子機碼下註冊（可在 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects** 中找到）。

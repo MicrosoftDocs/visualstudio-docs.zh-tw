@@ -3,19 +3,19 @@ title: 影像庫檢視器 |Microsoft Docs
 description: 瞭解載入和搜尋影像資訊清單的 Visual Studio 影像庫檢視器工具，讓您能夠查看和操作影像屬性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d60443e97bc557bc964d59750417b2662e4c3c8f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 02e7c5d5ed45b7a6c19c248e949e667ec0a1bdc0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085971"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898706"
 ---
 # <a name="image-library-viewer"></a>影像庫檢視器
 Visual Studio 影像庫檢視器工具可以載入和搜尋影像資訊清單，讓使用者以 Visual Studio 的相同方式來操作它們。 使用者可以改變背景、大小、DPI、高對比和其他設定。 此工具也會顯示每個影像資訊清單的載入資訊，並顯示影像資訊清單中每個影像的來源資訊。 此工具適用于：
@@ -97,7 +97,7 @@ Visual Studio 影像庫檢視器工具可以載入和搜尋影像資訊清單，
 |系統|Windows\System32 資料夾|
 |WinDir|% WinDir% 環境變數的值|
 
- **影像**
+ **映像**
 
  \<Image>元素會定義可由標記參考的影像。 建立的 GUID 和識別碼會形成映射的標記。 影像的標記在整個映射庫中必須是唯一的。 如果有一個以上的影像具有指定的名字，則建立程式庫時所遇到的第一個映射就是保留的映射。
 
@@ -173,7 +173,7 @@ Visual Studio 影像庫檢視器工具可以載入和搜尋影像資訊清單，
 ## <a name="how-to-use-the-tool"></a>如何使用工具
  **驗證自訂映射資訊清單**
 
- 若要建立自訂資訊清單，建議您使用 ManifestFromResources 工具來自動產生資訊清單。 若要驗證自訂資訊清單，請啟動映射庫檢視器，然後選取 [檔案] > 設定路徑 .。。開啟 [搜尋目錄] 對話方塊。 此工具將使用搜尋目錄來載入影像資訊清單，但它也會使用它來尋找資訊清單中包含映射的 .dll 檔案，因此請務必在此對話方塊中包含資訊清單和 DLL 目錄。
+ 若要建立自訂資訊清單，建議您使用 ManifestFromResources 工具來自動產生資訊清單。 若要驗證自訂資訊清單，請啟動映射庫檢視器，然後選取 [檔案] > 設定路徑 .。。開啟 [搜尋目錄] 對話方塊。 此工具將使用搜尋目錄來載入影像資訊清單，但它也會使用它來尋找資訊清單中包含影像的 .dll 檔案，因此請務必在此對話方塊中包含資訊清單和 DLL 目錄。
 
  ![影像庫檢視器搜尋](../../extensibility/internals/media/image-library-viewer-search.png "影像庫檢視器搜尋")
 

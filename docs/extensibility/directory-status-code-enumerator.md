@@ -3,7 +3,7 @@ title: 目錄狀態碼列舉值 |Microsoft Docs
 description: SccDirStatus 列舉值包含的常數值，可指定原始檔控制系統中的目錄狀態，並由 SccDirQueryInfo 使用。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - directory status code enumerator
 - source control plug-ins, directory status enumeration
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e995fb1dcb879645f59d6d8750852a790c99e90
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a504c6c080c34b4506cf4078b64465a3bd6c7d97
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091249"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904226"
 ---
 # <a name="directory-status-code-enumerator"></a>目錄狀態碼列舉值
 `SccDirStatus`列舉值包含指定原始檔控制系統中目錄狀態的指定常數值。 此列舉是由 [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)所使用。 這是在原始檔控制外掛程式 API 的1.2 版中引進。

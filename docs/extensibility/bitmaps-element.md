@@ -3,7 +3,7 @@ title: 點陣圖元素 |Microsoft Docs
 description: 點陣圖元素會將一或多個點陣圖元素分組。 本文包含點陣圖元素的範例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc17162c8d66df99eefe721589863ee4221c8602
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a86943e683502bdd1cd19668e9aafcb8fe7e1bc8
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068202"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903303"
 ---
 # <a name="bitmaps-element"></a>點陣圖元素
 群組 [點陣圖元素](../extensibility/bitmap-element.md) 元素。

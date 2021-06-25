@@ -3,19 +3,19 @@ title: Visual Studio 的通用控制項模式 |Microsoft Docs
 description: 瞭解 Visual Studio 通用控制項如何遵循 Windows 桌面互動指導方針，以及加強這些指導方針的特殊情況。
 ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e55bb5f4473971f99ce04f9e48b7e05ec13f94c6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 12d514bdc0aa37598ad57e0466bf57ba75ed2601
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090105"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899299"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>適用於 Visual Studio 的通用控制項模式
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> 通用控制項
@@ -301,7 +301,7 @@ Visual Studio 中的大部分按鈕會出現在公用程式對話方塊中，不
 > [!NOTE]
 > 使用者必須索引標籤至這些按鈕 (沒有) 的存取金鑰，因此請以合理的順序放置它們。 將 `name` 按鈕的屬性對應至它所採取的動作，讓畫面讀取器正確地解讀按鈕動作。
 
-| 函式 | 按鈕 |
+| 函數 | 按鈕 |
 | --- | --- |
 | 加 | ![圖形 [加入] 按鈕](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
 | 移除 | ![圖形 [移動] 按鈕](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |

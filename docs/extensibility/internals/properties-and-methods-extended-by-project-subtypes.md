@@ -3,7 +3,7 @@ title: 專案子類型所擴充的屬性和方法 |Microsoft Docs
 description: 瞭解專案子類型可以增強或修改的功能，可讓您自訂 Visual Studio 專案系統的行為。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project subtypes, extended methods
 - project subtypes, extended properties
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32c489ba2907cabff47b916039f96754d403455
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8ddcf020cf0b3e3e4f0f4a7c61ff1f15ce9ded5e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064237"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903537"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>專案子類型所擴充的屬性和方法
 專案子類型有許多強大的功能可影響專案的行為，因為它會被視為基底專案的匯總工具。 本節將摘要說明專案子類型可以增強或修改的部分功能。

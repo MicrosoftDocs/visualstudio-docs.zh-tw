@@ -3,7 +3,7 @@ title: 通常用來擴充專案的物件 Catid
 description: '瞭解物件的 Catid，這些物件是用來擴充 Visual Basic、Visual c # 和 Visual C++ 專案的專案和專案自動化物件。'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSPackages, CATIDs
 - GUIDs, VSPackages
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 276e7f146858c2de166c0ba20063a0bf4d8b88a0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: abc0df47c243cff4bf80ab18b15f1cbaa9526cdd
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086088"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898667"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>通常用來擴充專案的物件 Catid
 下表列出用來擴充、和專案之 `Project` `ProjectItem` 物件的 catid [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 。 這些 Catid 是在 *VSLangProj. .olb* 中定義。

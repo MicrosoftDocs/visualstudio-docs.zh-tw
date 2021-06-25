@@ -3,7 +3,7 @@ title: 模組 |Microsoft Docs
 description: 本文說明 Visual Studio 中偵錯工具架構中模組的定義和角色。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - modules
 - debugging [Debugging SDK], modules
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f40cb7d0c65822fcb6ba4d4ca0132147f62d9286
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 03a3ad588b0a2e0f3aa6f04ddeb742ab66064bc9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054760"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902601"
 ---
 # <a name="modules"></a>單元
 就偵錯工具架構而言， *模組*：

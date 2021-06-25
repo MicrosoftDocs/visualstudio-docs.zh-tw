@@ -3,7 +3,7 @@ title: 內容參數 |Microsoft Docs
 description: 瞭解 Visual Studio 整合式開發環境中的內容參數 (IDE) ，以在您新增或執行 wizard 時定義專案的狀態。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - wizards, context parameters
 - context parameters
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14d60aa31fb586651ea6e2b00a8f8038bfaa42b9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 536e5abf92884c5c19399e73b4e1773e66919657
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057061"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898223"
 ---
 # <a name="context-parameters"></a>內容參數
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境中 (IDE) ，您可以將嚮導加入至 [ **新增專案**]、[ **加入新** 專案] 或 [ **加入子專案** ] 對話方塊。 您可以在 [檔案 **] 功能表上，或** 以滑鼠右鍵按一下 **方案總管** 中的專案，來使用新增的嚮導。 IDE 會將內容參數傳遞至 wizard 的執行。 當 IDE 呼叫 wizard 時，內容參數會定義專案的狀態。
@@ -27,7 +27,7 @@ ms.locfileid: "105057061"
 
 ## <a name="context-parameters-for-new-project"></a>新專案的內容參數
 
-| 參數 | Description |
+| 參數 | 描述 |
 |-------------------------| - |
 | `WizardType` | 已註冊的 wizard 類型 (<xref:EnvDTE.Constants.vsWizardNewProject>) 或表示 wizard 類型的 GUID。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 執行中，wizard 的 GUID 是 {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}。 |
 | `ProjectName` | 唯一 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 專案名稱的字串。 |
@@ -39,7 +39,7 @@ ms.locfileid: "105057061"
 
 ## <a name="context-parameters-for-add-new-item"></a>新增專案的內容參數
 
-| 參數 | Description |
+| 參數 | 描述 |
 |-------------------------| - |
 | `WizardType` | 已註冊的 wizard 類型 (<xref:EnvDTE.Constants.vsWizardAddItem>) 或表示 wizard 類型的 GUID。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 執行中，wizard 的 GUID 是 {0F90E1D1-4999-11D1-B6D1-00A0C90F2744}。 |
 | `ProjectName` | 唯一 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 專案名稱的字串。 |
@@ -50,7 +50,7 @@ ms.locfileid: "105057061"
 
 ## <a name="context-parameters-for-add-sub-project"></a>加入子專案的內容參數
 
-| 參數 | Description |
+| 參數 | 描述 |
 |-------------------------| - |
 | `WizardType` | 已註冊的 wizard 類型 (<xref:EnvDTE.Constants.vsWizardAddSubProject>) 或表示 wizard 類型的 GUID。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 執行中，wizard 的 GUID 是 {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}。 |
 | `ProjectName` | 唯一 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 專案名稱的字串。 |

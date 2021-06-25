@@ -3,7 +3,7 @@ title: VSPackage 結構 (原始檔控制 VSPackage) |Microsoft Docs
 description: 深入瞭解原始檔控制封裝 SDK，此 SDK 提供 VSPackage 與原始檔控制實施者整合，以與 Visual Studio 整合的指導方針。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae037e3bda4ca09ee11969325b67ff0f8323722d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b95c382342675d79c0c6e854b5fc087d495827e2
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060688"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898818"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 結構 (原始檔控制 VSPackage)
 
@@ -42,7 +42,7 @@ VSPackage 會宣告其功能表項目，並透過 .vsct 檔案建立預設專案
 
 - 編輯器
 
-- 解決方案
+- 方案
 
 - Windows
 

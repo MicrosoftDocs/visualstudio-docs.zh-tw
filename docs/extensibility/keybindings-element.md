@@ -3,7 +3,7 @@ title: Keybindings.json 元素 |Microsoft Docs
 description: Keybindings.json 元素會將 KeyBinding 元素和其他 Keybindings.json 群組分組。 本文包含範例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - KeyBindings
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a590dc8bc1313e5c32b26465ae3dd346ed0564fd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 128b28ff77515ac4b567ecdb8f536851da4d33ce
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074011"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903368"
 ---
 # <a name="keybindings-element"></a>Keybindings.json 元素
 Keybindings.json 元素會將 KeyBinding 元素和其他 Keybindings.json 群組分組。

@@ -3,7 +3,7 @@ title: 編輯器匯入 |Microsoft Docs
 description: 瞭解如何匯入編輯器服務、factory 和訊息代理程式，以提供您的擴充功能與核心編輯器的不同存取類型。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0587ed6487ec3a1bb833a804bb5ffa76cbc101f9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7f2fa91b41017512b3f38ad61b800b293e0abaa1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070150"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898340"
 ---
 # <a name="editor-imports"></a>編輯器匯入
 您可以匯入一些編輯器服務、factory 和訊息代理程式，以提供您的擴充功能與核心編輯器的不同存取類型。 例如，您可以匯入， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 以提供 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> 指定之內容類型的。  (此導覽器可讓您在文字緩衝區上執行不同種類的搜尋。 ) 

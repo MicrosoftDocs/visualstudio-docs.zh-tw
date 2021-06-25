@@ -1,9 +1,9 @@
 ---
 title: CreatePkgDef 公用程式 |Microsoft Docs
-description: 瞭解 CreatePkgDef 公用程式，此公用程式會將 Visual Studio 擴充功能的 .dll 檔案作為參數，並建立與 .dll 檔案伴隨的 .pkgdef 檔案。
+description: 瞭解 CreatePkgDef 公用程式，此公用程式會採用 Visual Studio 擴充功能的 .dll 檔案作為參數，並將 .pkgdef 檔案與 .dll 檔一起建立。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - package definition
 - create pkgdef
@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 519cc251a245e1eeb65ddb1fcd34b0fa1af8f686
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bfbd4b42d9ceddd40e08c28926a59aecba719fe9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056879"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898119"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 公用程式
-取得 Visual Studio 擴充功能的 .dll 檔作為參數，並建立與 *.dll* 檔案伴隨的 *.pkgdef* 檔案。 *.Pkgdef* 檔案包含在安裝擴充功能時，將寫入系統登錄的所有資訊。
+取得 Visual Studio 擴充功能的 .dll 檔案作為參數，並建立隨附于 *.dll* 檔案的 *.pkgdef* 檔案。 *.Pkgdef* 檔案包含在安裝擴充功能時，將寫入系統登錄的所有資訊。
 
 > [!NOTE]
 > Visual Studio SDK 中包含的大部分專案範本會在組建程式中自動建立 *.pkgdef 檔案。* 本檔適用于想要手動建立套件，或轉換現有套件以使用 *.pkgdef*  部署的使用者。

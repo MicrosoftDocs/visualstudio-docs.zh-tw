@@ -3,7 +3,7 @@ title: 錯誤碼 |Microsoft Docs
 description: 本文包含原始檔控制外掛程式 API 函式的錯誤碼、值和描述清單。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - error codes, source control plug-ins
 - source control plug-ins, error codes
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32557b2a476be9f662decc9992771fe359967a94
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: eedc9311bcafdd4241e065b40079abed3977dcef
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070163"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898301"
 ---
 # <a name="error-codes"></a>錯誤碼
 當原始檔控制外掛程式 API 函式傳回錯誤時，預期會是下列其中一個錯誤碼。 所有錯誤都是否定的、警告或參考用的錯誤碼是正面的，成功則為0。

@@ -3,7 +3,7 @@ title: 屬性頁 |Microsoft Docs
 description: 瞭解如何在 Visual Studio SDK 中使用新專案類型的屬性頁面，讓使用者能夠查看和變更專案屬性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - configuration options, changing properties
 - property pages
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3e36960b35119434e56f075f622ae2513454dd6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 88ebf99ef2361a232c4a5c4c02b9a140155d66e9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061013"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903407"
 ---
 # <a name="property-pages"></a>屬性頁
 使用者可使用屬性頁來查看和變更專案設定相依且獨立的屬性。 在 [**屬性**] 視窗或 [方案總管] 工具列上，會針對提供所選取物件之屬性頁視圖的物件啟用 [**屬性頁**] 按鈕。 屬性頁是由環境所建立，而且適用于方案和專案。 不過，它們也可以提供給利用設定相依屬性的專案專案使用。 當專案中的檔案需要不同的編譯器切換設定才能正確建立時，可能會使用這項功能。

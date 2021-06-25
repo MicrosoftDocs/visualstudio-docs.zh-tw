@@ -4,7 +4,7 @@ titleSuffix: ''
 description: 瞭解如何從舊版 Visual Studio SDK 更新您的自訂專案和專案範本，以搭配 Visual Studio 2017 和更新版本使用。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 author: leslierichardson95
 ms.author: lerich
@@ -12,16 +12,16 @@ manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8442e24bf971b8a2a0bcf5baeeb397e4646ba766
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0d07af0a00ab840df8a9af437bcddc427f606948
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060272"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903056"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升級自訂 Visual Studio 的專案與項目範本2017
 
-從 Visual Studio 2017 開始，Visual Studio 會探索由 .vsix 或 .msi 以不同方式安裝在舊版 Visual Studio 的專案和專案範本。 如果您擁有使用自訂專案或專案範本的擴充功能，則必須更新您的延伸模組。 本文說明您必須做的事。
+從 Visual Studio 2017 開始，Visual Studio 會探索由 .vsix 或 .msi 所安裝的專案和專案範本，並以不同的方式使用舊版的 Visual Studio。 如果您擁有使用自訂專案或專案範本的擴充功能，則必須更新您的延伸模組。 本文說明您必須做的事。
 
 此變更只會影響 Visual Studio 2017。 它不會影響舊版 Visual Studio。
 
@@ -31,7 +31,7 @@ ms.locfileid: "105060272"
 
 在舊版 Visual Studio 中， **devenv/setup** 或 **devenv/installvstemplates** 掃描本機磁片以尋找專案和專案範本。 從 Visual Studio 2017 開始，掃描只會針對使用者層級位置執行。 預設的使用者層級位置是 **%USERPROFILE%\Documents \\<Visual Studio 版本 \> \Templates \\**。   >  如果已在 wizard 中選取 [**自動將範本匯入 Visual Studio** ] 選項，則會使用這個位置作為 [專案 **匯出範本**] 命令所產生的範本。
 
-針對其他 (非使用者) 位置，您必須包含指定範本位置和其他特性的資訊清單 (. vstman) 檔。 Vstman 檔案會連同用於範本的 .vstemplate 檔案一起產生。 如果您使用 .vsix 安裝您的延伸模組，您可以在 Visual Studio 2017 中重新編譯延伸模組來完成這項操作。 但是，如果您使用 .msi，則需要手動進行變更。 如需進行這些變更所需執行的動作清單，請參閱  **隨安裝的擴充功能更新。** 此頁面稍後的 MSI。
+針對其他 (非使用者) 位置，您必須包含指定範本位置和其他特性的資訊清單 (. vstman) 檔。 Vstman 檔案會連同用於範本的 .vstemplate 檔案一起產生。 如果您使用 .vsix 安裝您的延伸模組，您可以在 Visual Studio 2017 中重新編譯延伸模組來完成這項操作。 但是，如果您使用 .msi，則必須手動進行變更。 如需進行這些變更所需執行的動作清單，請參閱此頁面稍後的  **升級隨 .MSI安裝的擴充** 功能。
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>如何使用專案或專案範本更新 VSIX 擴充功能
 
@@ -178,7 +178,7 @@ ms.locfileid: "105060272"
 
  如需 vstman 檔案的不同元素的詳細資訊，請參閱 [Visual Studio 範本資訊清單架構參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
 
-## <a name="upgrades-for-extensions-installed-with-an-msi"></a>升級與一起安裝的擴充功能。微星
+## <a name="upgrades-for-extensions-installed-with-an-msi"></a>升級隨 .MSI 安裝的擴充功能
 
 某些以 MSI 為基礎的擴充功能會將範本部署至一般範本位置，例如下列目錄：
 

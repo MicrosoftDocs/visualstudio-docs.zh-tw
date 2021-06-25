@@ -3,7 +3,7 @@ title: 舊版語言服務中的文字自動完成 |Microsoft Docs
 description: 在 Visual Studio SDK 中，舊版語言服務可以支援 Word 自動完成。 瞭解如何在 VSPackage 中實行舊版語言服務。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - language services [managed package framework], IntelliSense Complete Word
 - IntelliSense, Complete Word
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 360778e4dbc89130e8a533640fefb188047fe8ca
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ea386aea3a17b0fb0d93ff9872f92e86a166be5c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074076"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902627"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>舊版語言服務中的文字自動完成
 單字完成會在部分類型的單字上填滿遺漏的字元。 如果只有一個可能的完成，則會在輸入完成字元時完成此字。 如果部分單字元合一個以上的可能性，則會顯示可能的完成清單。 完成字元可以是不會用於識別碼的任何字元。

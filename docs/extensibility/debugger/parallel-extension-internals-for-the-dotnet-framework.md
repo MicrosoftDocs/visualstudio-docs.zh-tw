@@ -3,7 +3,7 @@ title: .NET Framework 的平行延伸模組內部 |Microsoft Docs
 description: 這些資源會說明用來為 .NET Framework 平行擴充功能實作為自訂偵錯工具之類別的內部類型、方法和欄位。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines, internals [.NET Framework]
 ms.assetid: 93e07cfa-91fa-464c-b866-8bf5570411df
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9aec52f354043dabb3bf816bbd35352f0c3a28bb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 858bf85e65cd761e7f881856286578495db6143a
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067825"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903004"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>.NET Framework 的平行延伸模組內部
 本節說明類別的內部類型、方法和欄位，可協助您為 .NET Framework 的平行擴充功能，執行自訂偵錯工具。

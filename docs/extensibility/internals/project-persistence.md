@@ -3,7 +3,7 @@ title: 專案持續性 |Microsoft Docs
 description: 瞭解專案設計中的持續性，包括使用 IPersistFileFormat 來保存檔案和非檔案型專案物件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - persistence, projects
 - projects [Visual Studio SDK], persistance
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ffaeb6d43597e93586db79c305b654b42bf6dbb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 17b9fc40a93a926fde5edc28e93f7751b919611c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062794"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903641"
 ---
 # <a name="project-persistence"></a>專案持續性
 持續性是您專案的重要設計考慮。 大部分的專案都會使用代表檔案的專案專案; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 也支援以非檔案為基礎之資料的專案。 專案和專案檔案所擁有的兩個檔案都必須保存。 IDE 會指示專案儲存本身或專案專案。

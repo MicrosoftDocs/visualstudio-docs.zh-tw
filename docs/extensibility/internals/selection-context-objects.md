@@ -3,7 +3,7 @@ title: 選取專案內容物件 |Microsoft Docs
 description: 瞭解 Visual Studio IDE 如何使用全域選取內容物件，以判斷應該在 IDE 中顯示的內容。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - selection, tracking
 - selection, context objects
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca6239264ca1fa42edb0b73e8a96f523cb450857
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b0c97108eaba426a4def4c1052d3adc7348eb88b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080836"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898483"
 ---
 # <a name="selection-context-objects"></a>選取項目內容物件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 會使用全域選取內容物件來判斷應該在 IDE 中顯示的內容。 IDE 中的每個視窗都可以將自己的選取內容物件推送至全域選取內容。 當視窗具有焦點時，IDE 會使用視窗中的值來更新全域選取範圍內容。 如需詳細資訊，請參閱 [對使用者的意見](../../extensibility/internals/feedback-to-the-user.md)反應。

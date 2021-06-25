@@ -3,7 +3,7 @@ title: Task 類別-內部成員 |Microsoft Docs
 description: 深入瞭解可協助您執行自訂偵錯工具之 System.object 的內部成員。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines, Task class [.NET Framework]
 - Task class [.NET Framework debug engines]
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfa57329b3f321d2703683639644783be60d651f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 37691714d0168594b61a1a3849f7b65264e9999e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079367"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902887"
 ---
 # <a name="task-class---internal-members"></a>Task 類別-內部成員
 本文說明 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 可協助您執行自訂偵錯工具之類別的內部成員。 如需此類別的一般資訊，請參閱 <xref:System.Threading.Tasks.Task> 參考文章。
