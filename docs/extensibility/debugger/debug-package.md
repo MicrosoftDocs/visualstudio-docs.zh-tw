@@ -3,7 +3,7 @@ title: Debug 封裝 |Microsoft Docs
 description: 瞭解 debug 封裝如何在 Visual Studio shell 中執行，並透過取用偵錯工具和與會話偵錯工具通訊來處理 UI。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], packages
 ms.assetid: 99947fd4-fb87-4c69-b26c-65634e17d285
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90c4c82895f7a30d4df9126a280c6c9ffa7ffa76
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8be920ae352067a6e77593ca0a922474d68851d9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067903"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905666"
 ---
 # <a name="debug-package"></a>Debug 封裝
 Debug 封裝會在 Visual Studio shell 中執行，並處理所有的 UI。 它會取用 Visual Studio 的偵錯工具，並與會話 debug manager (SDM) 進行通訊。

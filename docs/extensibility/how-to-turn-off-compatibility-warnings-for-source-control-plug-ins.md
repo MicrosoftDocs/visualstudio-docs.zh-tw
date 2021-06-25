@@ -3,7 +3,7 @@ title: 關閉原始檔控制外掛程式的警告
 description: 在 Visual Studio 中使用原始檔控制時，使用者可能會看到數個相容性警告。 瞭解如何停用這些警告。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - source control plug-ins, turning off compatibility warnings
 - compatibility warnings, turning off
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7bbf2f01b2fb82e3bbb640eba5c44f99f2b7a53
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ced04b09f8d4442cf0769ef503ee52772eccc0f6
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074895"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905744"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何：關閉原始檔控制外掛程式的相容性警告
 

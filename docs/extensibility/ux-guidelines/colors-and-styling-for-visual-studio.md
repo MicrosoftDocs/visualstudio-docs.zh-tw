@@ -3,19 +3,19 @@ title: Visual Studio 的色彩和樣式 |Microsoft Docs
 description: 瞭解 Visual Studio 使用者體驗如何使用色彩作為通訊工具，而不是純粹美觀的原因。
 ms.custom: SEO-VS-2020
 ms.date: 07/31/2017
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc98e3c2717b14ac1933e5b41269af1efb8e932f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 307a4013c06258524c60619c6eff40e4d64740b6
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089910"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904483"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>適用於 Visual Studio 的色彩和樣式設定
 

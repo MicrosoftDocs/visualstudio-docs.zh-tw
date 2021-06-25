@@ -3,7 +3,7 @@ title: Debug Engine |Microsoft Docs
 description: 瞭解 debug engine 如何與解譯器或作業系統搭配使用，以提供執行控制、中斷點和運算式評估等服務。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c13dd7165a5f85dc0122f97aaee838c528207f96
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 87c4648ed37ef4fad0d79b7048593ff0c5b7d6d0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067942"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905705"
 ---
 # <a name="debug-engine"></a>Debug 引擎
 Debug engine (DE) 可搭配解譯器或作業系統使用，以提供偵錯工具，例如執行控制、中斷點和運算式評估。 DE 負責監視正在進行偵錯工具的狀態。 為了達成此目的，在支援的執行時間中，不論是從 CPU 或執行時間所提供的 Api，DE 都會使用任何可用的方法。

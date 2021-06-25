@@ -3,7 +3,7 @@ title: VisibilityItem 元素 |Microsoft Docs
 description: VisibilityItem 元素決定命令和工具列的靜態可見度。 專案會識別命令或功能表，以及相關聯的命令 UI 內容。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VisibilityItem element (VSCT XML schema)
 - VSCT XML schema elements, VisibilityItem
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1229c5e63838a8192c7622cdddd9881799a2da11
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 025e05dd0346c7da0a70985aa579d1673f2ffcaa
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062508"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905432"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 元素
 `VisibilityItem`元素會決定命令和工具列的靜態可見度。 每個專案都會識別命令或功能表，以及相關聯的命令 UI 內容。 Visual Studio 會偵測命令、功能表和工具列，以及它們的可見度，而不會載入定義它們的 Vspackage。 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 會使用方法來判斷命令 UI 內容是否為作用中。

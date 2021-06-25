@@ -3,7 +3,7 @@ title: Visual Studio SDK 詞彙 |Microsoft Docs
 description: 本詞彙提供 Visual Studio SDK 檔中所使用之詞彙的定義。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b6ca48ef867aea11bcc5b5be85e4f8d85f07f0a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 49e91a64220882eea196819a1860052dc871bec4
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062547"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905419"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK 詞彙
 本詞彙提供檔中使用之詞彙的定義 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 。

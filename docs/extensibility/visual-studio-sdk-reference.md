@@ -3,7 +3,7 @@ title: Visual Studio SDK 參考 |Microsoft Docs
 description: 這些文章包含 Visual Studio 命名空間、相關命名空間，以及使用 Visual Studio SDK 的開發人員感興趣的其他領域的相關資訊。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio SDK, reference
 - reference, Visual Studio SDK
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d07a1148911347d4ff8bdb94e1de4625877872d3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 72ee3a1567f2f0c3de3a266af04e20d1354b96a7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062534"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905393"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考
 

@@ -1,20 +1,20 @@
 ---
-title: Visual Studio Tools for Docker with ASP.NET
+title: 使用 ASP.NET Visual Studio Tools for Docker
 author: ghogen
-description: 瞭解如何使用適用于 Windows 的 Visual Studio 2019 工具和 Docker
+description: 瞭解如何使用 Visual Studio 2019 工具和適用於 Windows 的 Docker
 ms.author: ghogen
 ms.date: 02/22/2021
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 3a2c0d9ac31857fb2389455b0262373414981c5b
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 35beb1bb67dbfe4d0d1707c499b605f6ff698956
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101749901"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112907931"
 ---
-使用 Visual Studio，您可以輕鬆地建立、偵測和執行容器化 .NET、ASP.NET 和 ASP.NET Core 應用程式，並將其發佈至 Azure Container Registry (ACR) 、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們會將 ASP.NET Core 應用程式發佈至 ACR。
+有了 Visual Studio，您就可以輕鬆地建立、偵測和執行容器化 .NET、ASP.NET 和 ASP.NET Core 應用程式，並將其發佈至 Azure Container Registry (ACR) 、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們會將 ASP.NET Core 應用程式發佈至 ACR。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -29,12 +29,12 @@ ms.locfileid: "101749901"
 
 ## <a name="add-a-project-to-a-docker-container"></a>將專案新增至 Docker 容器
 
-1. 使用 **ASP.NET Core Web 應用程式** 範本建立新的專案，或者，如果您想要使用 .net framework，而不是使用 .net Core，請選擇 [ **ASP.NET Web 應用程式] ( .net framework)**。
+1. 使用 **ASP.NET Core Web 應用程式** 範本建立新的專案，或者，如果您想要使用 .NET Framework 而不是 .net Core，請選擇 [ **ASP.NET Web 應用程式] ( .NET Framework)**。
 1. 在 [ **其他資訊** ] 畫面上，確認已選取 [ **啟用 Docker 支援** ] 核取方塊。
 
    ![啟用 Docker 支援核取方塊](../../media/container-tools/vs-2019/webapp-additional-information-31-docker.png)
 
-   螢幕擷取畫面顯示 .NET Core;如果您使用的是 .NET Framework，它看起來會有點不同。
+   螢幕擷取畫面顯示 .NET Core;如果您使用 .NET Framework，看起來會有點不同。
 
 1. 選取您想要的容器類型 (Windows 或 Linux)，然後按一下 [建立]。
 
@@ -43,12 +43,12 @@ ms.locfileid: "101749901"
 *Dockerfile* 是用於建立最終 Docker 映像的配方，會在專案中建立。 請參閱 [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) (Dockerfile 參考) 以了解其中的命令：
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /src
 COPY ["WebApplication1/WebApplication1.csproj", "WebApplication1/"]
 RUN dotnet restore "WebApplication1/WebApplication1.csproj"
@@ -65,7 +65,7 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 ```
 
-上述的 *Dockerfile* 以 [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) 映像為基礎，其中包含藉由建置專案並將其新增至容器來修改基底映像的指示。 如果您使用的是 .NET Framework，基底映射將會不同。
+上述的 *Dockerfile* 以 [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) 映像為基礎，其中包含藉由建置專案並將其新增至容器來修改基底映像的指示。 如果您是使用 .NET Framework，基底映射將會不同。
 
 核取新專案對話方塊的 [設定 HTTPS] 核取方塊時，*Dockerfile* 會提供兩個連接埠。 其中一個連接埠用於 HTTP 流量，另一個連接埠則用於 HTTPS。 如果未選取該核取方塊，則會為 HTTP 流量提供單一連接埠 (80)。
 
@@ -90,7 +90,7 @@ ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 
 ![[容器] 視窗的螢幕擷取畫面](../../media/overview/vs-2019/container-tools-window.png)
 
-如需詳細資訊，請參閱 [在 Visual Studio 中查看及診斷容器和影像](../../view-and-diagnose-containers.md)。
+如需詳細資訊，請參閱 [在 Visual Studio 中查看及診斷容器和映射](../../view-and-diagnose-containers.md)。
 
 ## <a name="publish-docker-images"></a>發行 Docker 映像
 
@@ -104,7 +104,7 @@ ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 
 1. 選擇 [ **建立新的 Azure Container Registry**]。
 
-   ![[發佈] 對話方塊的螢幕擷取畫面-選擇 [建立新的 Azure Container Registry]](../../media/container-tools/vs-2019/select-existing-or-create-new-azure-container-registry.png)
+   ![[發佈] 對話方塊的螢幕擷取畫面-選擇 [建立新的 Azure Container Registry](../../media/container-tools/vs-2019/select-existing-or-create-new-azure-container-registry.png)
 
 1. 在 [建立新的 Azure Container Registry] 中填入您想要的值。
 
@@ -120,7 +120,7 @@ ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 
 1. 按一下頁面底部的 [新增]  。 [ **發行** ] 對話方塊現在會顯示已建立的登錄。
 
-   ![[發佈] 對話方塊的螢幕擷取畫面，顯示已建立 Azure Container Registry](../../media/container-tools/vs-2019/created-azure-container-registry.png)
+   ![顯示 Azure Container Registry 建立之 [發佈] 對話方塊的螢幕擷取畫面](../../media/container-tools/vs-2019/created-azure-container-registry.png)
 
 1. 選擇 **[完成]** 以完成將容器映射發佈到 Azure 中新建立之登錄的程式。
 

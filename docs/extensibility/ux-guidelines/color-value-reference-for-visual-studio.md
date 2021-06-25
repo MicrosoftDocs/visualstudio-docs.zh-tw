@@ -5,16 +5,16 @@ keywords: 色彩，十六進位碼，色調，主題 UI，主題
 author: brickgeorge
 ms.author: madsk
 ms.date: 08/04/2017
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jmartens
-ms.openlocfilehash: c3867bc6fd489642bfa856caed434312a9d2d571
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 720eae847a9569a270cfa138ee25e5b4a12b980e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953145"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905523"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的色彩值參考
 
@@ -346,7 +346,7 @@ ms.locfileid: "99953145"
 |**背景**| ![#ECECF0 樣本](../../extensibility/ux-guidelines/media/ECECF0.png "#ECECF0 樣本")<br />`#ECECF0` | ![#3F3F46 樣本](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 樣本")<br />`#3F3F46` | ![#ECECF0 樣本](../../extensibility/ux-guidelines/media/ECECF0.png "#ECECF0 樣本")<br />`#ECECF0` | ![控制樣本](../../extensibility/ux-guidelines/media/HCControl.png "控制樣本")<br />`Control` |
 |**Border**| ![#CCCEDB 樣本](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 樣本")<br />`#CCCEDB` | ![#555555 樣本](../../extensibility/ux-guidelines/media/555555.png "#555555 樣本")<br />`#555555` | ![CCCEDB 樣本](../../extensibility/ux-guidelines/media/CCCEDB.png "CCCEDB 樣本")<br />`#CCCEDB` | ![ControlDark 樣本](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 樣本")<br />`ControlDark` |
 
-### <a name="disabled"></a>Disabled
+### <a name="disabled"></a>停用
 
 | | 淺色佈景主題 | 深色佈景主題 | 藍色主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
@@ -397,7 +397,7 @@ ms.locfileid: "99953145"
 |**Text**| ![#1E1E1E 樣本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![#F1F1F1 樣本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 樣本")<br />`#F1F1F1` | ![#1E1E1E 樣本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![ControlText 樣本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 |**圖像**| ![ 樣本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![#F1F1F1 樣本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 樣本")<br />`#F1F1F1` | ![#1E1E1E 樣本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![ControlText 樣本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 
-### <a name="disabled"></a>Disabled
+### <a name="disabled"></a>停用
 
 | | 淺色佈景主題 | 深色佈景主題 | 藍色主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
@@ -455,7 +455,7 @@ ms.locfileid: "99953145"
 |**圖像**| ![#717171 樣本](../../extensibility/ux-guidelines/media/717171.png "# 717171swatch")<br />`#717171` | ![#999999 樣本](../../extensibility/ux-guidelines/media/999999.png "#999999 樣本")<br />`#999999` | ![#1B293E 樣本](../../extensibility/ux-guidelines/media/1B293E.png "#1B293E 樣本")<br />`#1B293E` | ![ControlText 樣本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 |**字符背景**| ![#FFFFFF 樣本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF 樣本")<br />`#FFFFFF` | ![#333337 樣本](../../extensibility/ux-guidelines/media/333337.png "#333337 樣本")<br />`#333337` | ![#FCFCFC 樣本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC 樣本")<br />`#FCFCFC` | ![控制樣本](../../extensibility/ux-guidelines/media/HCControl.png "控制樣本")<br />`#Control` |
 
-#### <a name="disabled"></a>Disabled
+#### <a name="disabled"></a>停用
 
 | | 淺色佈景主題 | 深色佈景主題 | 藍色主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |

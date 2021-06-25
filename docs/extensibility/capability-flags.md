@@ -3,7 +3,7 @@ title: 功能旗標 |Microsoft Docs
 description: 瞭解 SCC_CAP_xxx 旗標，這些旗標表示原始檔控制外掛程式的功能，以及表示擴充功能的 SCC_EXCAP_xxx 旗標。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12acefb99de787d55bc0f932757dde5ea928c6cb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3fdb660fd4e7c595f522686280f8bec6c0acae81
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094922"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905094"
 ---
 # <a name="capability-flags"></a>功能旗標
 SCC_CAP_ *xxx* 旗標是用來表示原始檔控制外掛程式功能的位旗標。 SCC_EXCAP_ *xxx* 旗標是遞增旗標，表示擴充的功能並解析為整數值。

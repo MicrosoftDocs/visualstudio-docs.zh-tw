@@ -3,7 +3,7 @@ title: 在執行時間驗證專案的子類型 |Microsoft Docs
 description: 瞭解如何讓您的 VSPackage 確認所相依的指定自訂專案子類型是否存在。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project subtypes
 - check subtypes
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c52d3297ce4903cb8f8e7cb2f9ab5169d21ac94e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 621a40e1857d7c78ec4c5be08a3b7c3808a0d48b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062599"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905469"
 ---
 # <a name="verify-subtypes-of-a-project-at-run-time"></a>在執行時間驗證專案的子類型
 相依于自訂專案子類型的 VSPackage 應該包含尋找該子類型的邏輯，以便在子類型不存在時正常地失敗。 下列程式顯示如何確認指定的子類型是否存在。

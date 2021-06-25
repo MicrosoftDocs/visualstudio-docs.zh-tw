@@ -3,7 +3,7 @@ title: 註冊專案和專案範本 |Microsoft Docs
 description: 瞭解 Visual Studio 如何針對您的專案類型使用註冊資訊，以判斷要在 [加入新專案] 和 [加入新專案] 對話方塊中顯示的內容。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6f4abe3a8632f4fe9208922aee1ccd92da3dab5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8b60022c6adf65d0b0d60d32b4ad7ae72067726d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062690"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905627"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 專案類型必須註冊其專案和專案專案範本所在的目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用與您的專案類型相關聯的註冊資訊，來決定要在 [ **加入新專案** ] 和 [ **加入新** 專案] 對話方塊中顯示的內容。
@@ -39,7 +39,7 @@ ms.locfileid: "105062690"
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|名稱|類型|Description|
+|名稱|類型|描述|
 |----------|----------|-----------------|
 |@|REG_SZ|這種專案的預設名稱。|
 |DisplayName|REG_SZ|要從在封裝下註冊的附屬 DLL 中取出之名稱的資源識別碼。|
@@ -57,7 +57,7 @@ ms.locfileid: "105062690"
 "SortPriority"=dword:00000064
 ```
 
-| 名稱 | 類型 | Description |
+| 名稱 | 類型 | 描述 |
 |--------------------------|-----------| - |
 | @ | REG_SZ | 新增專案範本的資源識別碼。 |
 | TemplatesDir | REG_SZ | 在 [ **加入新專案** ] 嚮導的對話方塊中顯示之專案專案的路徑。 |
@@ -84,7 +84,7 @@ ms.locfileid: "105062690"
 "SortPriority"=dword:00000064
 ```
 
-|名稱|類型|Description|
+|名稱|類型|描述|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|在 [檔案 **中尋找** ] 對話方塊中，篩選出其中一個常見的篩選準則。 一般篩選準則會在篩選器清單中列出，然後才會將篩選標記為通用。|
 |CommonOpenFilesFilter|REG_DWORD|在 [ **開啟** 檔案] 對話方塊中，讓篩選準則成為其中一個常見的篩選準則。 一般篩選準則會在篩選器清單中列出，然後才會將篩選標記為通用。|

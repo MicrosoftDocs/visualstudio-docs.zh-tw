@@ -3,7 +3,7 @@ title: Menu 元素 |Microsoft Docs
 description: Menu 元素會定義 VSPackage 所執行的所有功能表和工具列。 本文包含範例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5b6010945bd176f0663c7b0d57c3991470fff07
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 59c8cb242322cbb52aa90b821e14698ace6d0534
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064003"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905575"
 ---
 # <a name="menus-element"></a>Menu 元素
 定義 VSPackage 所實行的所有功能表和工具列。
