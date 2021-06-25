@@ -3,7 +3,7 @@ title: 註冊檔案名副檔名的動詞 |Microsoft Docs
 description: 瞭解如何使用 Shell 索引鍵，註冊與副檔名的程式設計識別碼相關聯的動詞命令。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9936efc2e01c0d82d5cc9fce140d543eb95247ad
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c223dea7e265d8d040d502c99ded09380e89690f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068475"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901223"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>註冊副檔名的動詞
 副檔名與應用程式的關聯通常會有使用者按兩下檔案時所發生的慣用動作。 這個慣用的動作會連結至對應至動作的動詞，例如 open。
@@ -37,7 +37,7 @@ ms.locfileid: "105068475"
 
 - 預覽
 
-  請盡可能註冊標準動詞。 最常見的選擇是開啟的動詞命令。 只有在開啟檔案和編輯檔案之間有明顯的差異時，才使用編輯動詞。 例如，開啟 *.htm* 檔案時，它會在瀏覽器中顯示，而編輯 *.htm* 檔則會啟動 HTML 編輯器。 標準動詞會以作業系統地區設定來當地語系化。
+  請盡可能註冊標準動詞。 最常見的選擇是開啟的動詞命令。 只有在開啟檔案和編輯檔案之間有明顯的差異時，才使用編輯動詞。 例如，開啟 *.htm* 檔案時，會在瀏覽器中顯示該檔案，而編輯 *.htm* 檔案會啟動 HTML 編輯器。 標準動詞會以作業系統地區設定來當地語系化。
 
 > [!NOTE]
 > 註冊標準動詞時，請勿設定 Open 鍵的預設值。 預設值包含功能表上的顯示字串。 作業系統會為標準動詞提供這個字串。

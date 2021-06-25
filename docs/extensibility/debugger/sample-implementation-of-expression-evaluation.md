@@ -3,7 +3,7 @@ title: 運算式評估的範例執行 |Microsoft Docs
 description: 瞭解 Visual Studio 如何呼叫 ParseText 來產生 Watch windows 運算式的 IDebugExpression2 物件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: sample
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60d01917bb3a21f6d8ea2644fbeef2b22064cc00
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: de0e052fd42f1603889f7521a1e45e50b0f36eea
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070449"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902302"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>運算式評估的範例執行
 > [!IMPORTANT]

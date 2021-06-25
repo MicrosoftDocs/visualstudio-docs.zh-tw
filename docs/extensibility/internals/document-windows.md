@@ -3,7 +3,7 @@ title: 文件視窗 |Microsoft Docs
 description: 瞭解 Visual Studio 中的文件視窗，包括如何執行這些工作，以及執行中的檔資料表 (RDT) 追蹤其狀態的方式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio SDK, document windows
 ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79706c98e98be55e69aaeeed7320c8b13bfd2a9c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: df7a797c0b4587698197412f49eef6bfab183a7a
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061273"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899910"
 ---
 # <a name="document-windows"></a>文件視窗
 在 Visual Studio 中， *文件視窗* 是與多重文件介面（ (MDI) 視窗）相關聯的框架子視窗。 文件視窗通常是用來顯示和修改原始程式碼或文字，但也可以裝載其他功能類型。 文件視窗：

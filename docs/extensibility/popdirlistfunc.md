@@ -3,7 +3,7 @@ title: POPDIRLISTFUNC |Microsoft Docs
 description: 深入瞭解 POPDIRLISTFUNC 回呼函式，此函式會傳遞至更新目錄以找出原始檔控制下的目錄。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - POPLISTFUNC
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f8cde3e6835a7d3262bbb89fed13e0dbc8e540e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8c98b35d9f915e16072333c72df2e1e045850f5d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090248"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900391"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 這是提供給 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 函式的回呼函式，可更新目錄的集合，並 (選擇性地) 檔案名，以找出原始檔控制下的檔案名稱。

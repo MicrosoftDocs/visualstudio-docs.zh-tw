@@ -2,7 +2,7 @@
 description: 此函式會抓取佇列狀態事件。
 title: SccGetEvents 函式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetEvents
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7611a3f71b5fa6205708aca6b957f3921a71517
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9438ac10301e2da43b26a88575e44a8ad2c0bf82
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072984"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901054"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 函式
 此函式會抓取佇列狀態事件。

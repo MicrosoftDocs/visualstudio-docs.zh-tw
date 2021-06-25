@@ -3,7 +3,7 @@ title: VSIX 延伸架構2.0 參考 |Microsoft Docs
 description: VSIX 延伸架構2.0 會定義 VSIX 部署資訊清單檔的檔案格式，以描述 VSIX 封裝的內容。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - vsix
 - extension schema
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b94c7b2cacb7ad78031721156bdd90cb666c4f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 66393bbe6383fcc6cae942a3d7e86f1d701a9634
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062287"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905237"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸架構2.0 參考
 VSIX 部署資訊清單檔案會描述 VSIX 封裝的內容。 檔案格式是由架構所控管。 此架構的版本2.0 支援新增自訂類型和屬性。  資訊清單的架構是可擴充的。 資訊清單載入器會忽略其不了解的 XML 元素和屬性。
@@ -61,9 +61,9 @@ VSIX 部署資訊清單檔案會描述 VSIX 封裝的內容。 檔案格式是�
 
 - `<MoreInfo>` -這個選擇性元素是包含此封裝完整描述的頁面線上 URL。 通訊協定必須指定為 HTTP。
 
-- `<License>` -這個選擇性專案是套件中所含的授權檔案 ( .txt、.rtf) 的相對路徑。
+- `<License>` -這個選擇性專案是套件中所含之授權檔案 (.txt、.rtf) 的相對路徑。
 
-- `<ReleaseNotes>` -這個選擇性專案是封裝中包含的版本資訊檔案的相對路徑 ( .txt、.rtf) 或顯示版本資訊的網站 URL。
+- `<ReleaseNotes>` -這個選擇性專案是封裝中包含的版本資訊檔案的相對路徑 (.txt、.rtf) 或網站的 URL，以顯示版本資訊。
 
 - `<Icon>` -這個選擇性元素是封裝中所含之影像檔案 (png、bmp、jpeg、.ico) 的相對路徑。 圖示影像應為32x32 圖元 (或會壓縮為該大小) ，並顯示在 listview UI 中。 如果未 `Icon` 指定任何元素，則 UI 會使用預設值。
 

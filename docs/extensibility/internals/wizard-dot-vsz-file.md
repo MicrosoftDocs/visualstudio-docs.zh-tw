@@ -3,7 +3,7 @@ title: Wizard (。.Vsz) 檔案 |Microsoft Docs
 description: 深入瞭解 IDE 用來啟動嚮導的 .vsz 檔。 這些檔案包含要呼叫哪個 wizard 以及要傳遞至 wizard 的資訊。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - .vsz files
 - vsz files
@@ -14,18 +14,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2663a6b05780b16d05b419c00aba904ded848796
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: de687dae79fa1613090fb400f73ab658ee5d66cb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074232"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900650"
 ---
 # <a name="wizard-vsz-file"></a>精靈檔 (.Vsz)
 
 整合式開發環境 (IDE) 使用 .vsz 檔案來啟動嚮導。 這些 .vsz 檔案包含的資訊，可讓 IDE 用來判斷要呼叫的 wizard 以及要傳遞給嚮導的資訊。
 
-.Vsz 檔案是沒有區段的 .ini 格式文字檔的版本。 IDE 已知的資訊會儲存在檔案的開頭。 這會在嚮導之間提供一個連結，IDE 會在此呼叫，以及要傳遞至 IDE 的 .vsz 檔案中的參數。 檔案的其餘部分會提供 wizard 專屬的參數，以及 IDE 所要收集並傳遞至特定 wizard 的參數。
+.Vsz 檔案是 .ini 格式的文字檔版本，沒有任何區段。 IDE 已知的資訊會儲存在檔案的開頭。 這會在嚮導之間提供一個連結，IDE 會在此呼叫，以及要傳遞至 IDE 的 .vsz 檔案中的參數。 檔案的其餘部分會提供 wizard 專屬的參數，以及 IDE 所要收集並傳遞至特定 wizard 的參數。
 
 下列範例會顯示 .vsz 檔案的內容。
 

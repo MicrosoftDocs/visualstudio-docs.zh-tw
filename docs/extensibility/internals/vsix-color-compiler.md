@@ -3,19 +3,19 @@ title: VSIX 色彩編譯器 |Microsoft Docs
 description: 瞭解 Visual Studio 擴充功能色彩編譯器工具，這是主控台應用程式，可將 Visual Studio 主題中的色彩將至 .pkgdef 檔案。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92914703ea4b293ac054c841251b37886bbc1d5a
-ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
+ms.openlocfilehash: 2f7277299d3cedd2ea0db49a44109d8a0441ebd0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111588458"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901756"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 色彩編譯器
 Visual Studio 延伸模組色彩編譯器工具是一個主控台應用程式，它會採用 .xml 檔案來代表現有 Visual Studio 主題的色彩，並將其將至 .pkgdef 檔案，以便在 Visual Studio 中使用這些色彩。 因為很容易比較 .xml 檔案之間的差異，所以此工具適用于管理原始檔控制中的自訂色彩。 它也可以連結到組建環境，讓組建的輸出成為有效的 .pkgdef 檔案。

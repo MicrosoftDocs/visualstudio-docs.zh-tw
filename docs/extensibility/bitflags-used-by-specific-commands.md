@@ -3,7 +3,7 @@ title: 特定命令所使用的位旗標 |Microsoft Docs
 description: 瞭解原始檔控制外掛程式 API 所使用的位旗標，並依使用這些 API 的函式進行組織。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41f070d61e547724b3067a9f4a1980d658fc30be
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: be5915d96b574336d7091239275a2aaef456a7f3
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097288"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899363"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定命令所使用的位旗標
 您可以藉由在單一值中設定一或多個位，來修改原始檔控制外掛程式 API 中許多函數的行為。 這些值稱為位旗標。 原始檔控制外掛程式 API 所使用的各種位旗標詳述于此處，並依使用它們的函式進行分組。

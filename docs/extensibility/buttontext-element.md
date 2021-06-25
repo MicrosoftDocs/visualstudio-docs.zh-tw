@@ -3,7 +3,7 @@ title: ButtonText 元素 |Microsoft Docs
 description: ButtonText 元素可讓您指定出現在各種功能表中的文字。 即使指定了其他文字欄位，ButtonText 元素也不能空白。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ButtonText element (VSCT XML schema)
 - VSCT XML schema elements, ButtonText
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fa9ad6aab9d42113f3e01760e191184e168b62d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cf20a6876dd7ba52413a11f30a3d0130b32e535d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068111"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900706"
 ---
 # <a name="buttontext-element"></a>ButtonText 元素
 此欄位可讓您指定出現在各種功能表中的文字。 依預設，專案 `ButtonText` 會出現在功能表控制器中。 `ButtonText`如果其他文字欄位是空白的，元素也會成為預設值。 `ButtonText`即使已指定其他文字欄位，元素也不能空白。

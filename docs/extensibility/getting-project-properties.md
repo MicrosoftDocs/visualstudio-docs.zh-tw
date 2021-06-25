@@ -3,7 +3,7 @@ title: 取得專案屬性 |Microsoft Docs
 description: 瞭解如何在工具視窗中顯示專案屬性。 此範例顯示工具視窗中的樹狀目錄控制項。
 ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8de3f32951cb70b8115781ce067950c7e518b102
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d3f7f6cc788e693ae143b288c589fc868c59d531
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057659"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900664"
 ---
 # <a name="get-project-properties"></a>取得專案屬性
 

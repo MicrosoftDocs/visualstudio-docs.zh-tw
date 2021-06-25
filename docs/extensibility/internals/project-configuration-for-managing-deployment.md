@@ -3,7 +3,7 @@ title: 管理部署的專案設定 |Microsoft Docs
 description: 瞭解如何部署到預期的偵測和安裝位置，以及兩種 Visual Studio 支援支援部署之專案的方式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project configurations, managing deployment
 - projects [Visual Studio SDK], configuration for managing deployment
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589403f126a4fd614911c1deb99e9acd32d1ec7d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3c6077665ccc3bbe5f87b91a1d2fc5636e08539d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074414"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899897"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>管理部署的專案組態
 部署是指將輸出專案從組建進程實際移至預期位置以進行偵錯工具的動作。 例如，Web 應用程式可能會建立在本機電腦上，然後放在伺服器上。

@@ -3,7 +3,7 @@ title: POPLISTFUNC |Microsoft Docs
 description: 深入瞭解 POPLISTFUNC 回呼函式，此函式是由原始檔控制外掛程式用來更新檔案或目錄清單。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - POPDIRLISTFUNC
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aec322d73e49d4aae91956bd8df015a01c922a10
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b52ed40397793b44f8a9c7ed9c36aa5996ae0176
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090235"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900378"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 此回呼會由 IDE 提供給 [SccPopulateList](../extensibility/sccpopulatelist-function.md) ，並且由原始檔控制外掛程式用來更新檔案或目錄的清單， (也提供給 `SccPopulateList` 函數) 。

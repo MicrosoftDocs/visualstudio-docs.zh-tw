@@ -3,7 +3,7 @@ title: 屬性視窗總覽 |Microsoft Docs
 description: 瞭解在此總覽中，用來與 Visual Studio IDE 中的屬性視窗互動的介面。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5f378200072df603817a445a9c3406cf62233c8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e0b775cbc96303f53bcd795b2121d10af83714e6
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061000"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899663"
 ---
 # <a name="properties-window-overview"></a>屬性視窗概觀
 [ **屬性** ] 視窗是用來顯示在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 所提供的兩個主要 windows 類型中所選取物件的屬性。 這兩種類型的 windows 為：

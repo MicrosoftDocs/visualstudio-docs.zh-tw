@@ -3,7 +3,7 @@ title: IDE Guid |Microsoft Docs
 description: VSConstants 類別會發行 IDE 某些部分的一組 Guid。 本文列出 Guid。
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6351ea576c8976bd12fe206d8c4dbbe5f34a72d8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 884f2e7bb25eacfd3118632082d321ceb2b45da8
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069851"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904925"
 ---
 # <a name="ide-guids"></a>IDE GUID
 

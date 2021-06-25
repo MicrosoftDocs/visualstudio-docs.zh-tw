@@ -3,7 +3,7 @@ title: .VSCT XML 架構條件式屬性 |Microsoft Docs
 description: 瞭解如何將條件式屬性套用至 .VSCT XML 架構清單和專案。 屬性評估為 true 或 false，可控制產生的輸出。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, conditional attributes
 - conditional attributes (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bc1bcb9d80474b467e90de6262e797087589065
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e91207016ed6e1baab80b323680d10a40e0331d8
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062352"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905250"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>.VSCT XML 架構條件式屬性
 您可以將條件屬性套用至所有清單和專案。 邏輯運算子和符號展開運算式的評估結果為 true 或 false。 若為 true，則產生的輸出中會包含相關聯的清單或專案。

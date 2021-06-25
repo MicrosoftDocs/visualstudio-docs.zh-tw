@@ -3,7 +3,7 @@ title: TaskScheduler 類別-內部成員 |Microsoft Docs
 description: 深入瞭解可協助您執行自訂偵錯工具之 TaskScheduler 類別的內部成員。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - TaskScheduler class [.NET Framework debug engines]
 - debug engines, TaskScheduler class [.NET Framework]
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45e2aff7d16826a631bb5126447d60b8b2468455
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 58b370a6742387f7493e4c6357cffd05f2bd88a5
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057867"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900144"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler 類別-內部成員
 本文說明 <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> 可協助您執行自訂偵錯工具之類別的內部成員。 如需此類別的一般資訊，請參閱 <xref:System.Threading.Tasks.TaskScheduler> 參考文章。

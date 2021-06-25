@@ -3,7 +3,7 @@ title: 必要的埠提供者介面 |Microsoft Docs
 description: 瞭解埠供應商必須執行的介面。 埠供應商會提供埠並加以實行。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - port suppliers, required interfaces
 - debugging [Debugging SDK], port suppliers
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f5755ce47a2b76c9a0d38b1f7eed3b38d64c876
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 96cf70302839a9de3c5fb0fec01136d9700ee17e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070605"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902367"
 ---
 # <a name="required-port-supplier-interfaces"></a>必要的埠提供者介面
 埠供應商必須執行 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) 介面。[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)

@@ -2,7 +2,7 @@
 description: 此函式會在 lpParentProjPath 引數所指定的現有父專案下，建立具有指定名稱的子專案。
 title: SccCreateSubProject 函式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccCreateSubProject
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70568c27afb4bdb5794db64322113dffbd824452
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a6df7a801d282113b530f24472419a9735256702
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073998"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904678"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函式
 此函式會在引數所指定的現有父專案下，建立具有指定名稱的子專案 `lpParentProjPath` 。

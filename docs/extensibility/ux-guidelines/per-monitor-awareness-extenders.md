@@ -1,5 +1,5 @@
 ---
-title: 針對 Visual Studio 擴充項的個別監視器感知支援
+title: Visual Studio 擴充項的 Per-Monitor 感知支援
 titleSuffix: ''
 description: 瞭解 Visual Studio 2019 中可用之個別監視器感知的新擴充項支援。
 ms.date: 04/10/2019
@@ -10,18 +10,18 @@ author: rub8n
 ms.author: rurios
 manager: anthc
 monikerRange: vs-2019
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - CPP
-ms.openlocfilehash: 09ec5d82251fa4598096fca8a59c9a1fd29e3f27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 90ec038e8f27407ba08633bacbb5576bee2a7883
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69585379"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902042"
 ---
-# <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>針對 Visual Studio 擴充項的個別監視器感知支援
+# <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio 擴充項的 Per-Monitor 感知支援
 
 Visual Studio 2019 之前的版本，其 DPI 感知內容會設定為系統感知，而不是個別監視器 DPI 感知 (PMA) 。 在系統感知中執行，會導致視覺效果變差 (例如模糊字型或圖示) 每次 Visual Studio 必須在不同的縮放比例之間轉譯，或從遠端進入不同的顯示器設定 (例如，不同的 Windows 調整) 。
 
@@ -72,7 +72,7 @@ Visual Studio 正式支援 WPF、Windows Forms、Win32 和 HTML/JS UI 架構。 
 
   此案例可協助測試 UI 是否回應動態 Windows DPI 變更。
 
-若要瞭解您的 UI 是否有問題，有一個很好的初步測試，就是程式碼是否會使用 *DpiHelper*、 *VisualStudio. PlatformUI. DpiHelper*或 *VsUI：： CDpiHelper* 類別。 這些舊的 DpiHelper 類別僅支援系統 DPI 感知，而且在 PMA 程式時，不一定會正確運作。
+若要瞭解您的 UI 是否有問題，有一個很好的初步測試，就是程式碼是否會使用 *DpiHelper*、 *VisualStudio. PlatformUI. DpiHelper* 或 *VsUI：： CDpiHelper* 類別。 這些舊的 DpiHelper 類別僅支援系統 DPI 感知，而且在 PMA 程式時，不一定會正確運作。
 
 這些 DpiHelpers 的一般用法如下所示：
 
@@ -95,7 +95,7 @@ IntPtr monitor = MonitorFromPoint(screenIntTopRight, MONITOR_DEFAULTTONEARST);
 當 Visual Studio 啟用 PMA 模式時，UI 會以數種常見的方式複寫問題。 這些問題大多都可能發生在任何 Visual Studio 支援的 UI 架構中。 此外，當您在混合模式的 DPI 縮放案例中裝載 UI 時，也可能會發生這些問題 (請參閱 Windows [檔](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) ，以深入瞭解) 。 
 
 #### <a name="win32-window-creation"></a>建立 Win32 視窗
-使用 CreateWindow ( # A1 或 CreateWindowEx ( # A3 建立 windows 時，常見的模式是在座標 (0、0)  (主顯示器) 的左上角，然後將其移至其最終位置。 不過，這麼做可能會導致視窗觸發 DPI 變更的訊息或事件，這可能會重新觸發其他 UI 訊息或事件，最後導致不想要的行為或轉譯。
+建立具有 CreateWindow () 或 CreateWindowEx () 的 windows 時，常見的模式是在座標 (0、0)  (主顯示器) 的左上角，然後將其移至其最終位置。 不過，這麼做可能會導致視窗觸發 DPI 變更的訊息或事件，這可能會重新觸發其他 UI 訊息或事件，最後導致不想要的行為或轉譯。
 
 #### <a name="wpf-element-placement"></a>WPF 元素放置
 使用舊的 VisualStudio 來移動 WPF 專案時，如果專案是在非主要 DPI 上，則可能無法正確計算左上角座標。
@@ -155,7 +155,7 @@ IntPtr monitor = MonitorFromPoint(screenIntTopRight, MONITOR_DEFAULTTONEARST);
 ### <a name="pma-nuget-package"></a>PMA NuGet 套件
 您可以在 [VisualStudio DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) NuGet 套件中找到新的 DpiAwarness 程式庫。
 
-### <a name="recommended-tools"></a>建議的工具
+### <a name="recommended-tools"></a>建議工具
 下列工具可協助您跨 Visual Studio 所支援的一些不同 UI 堆疊，來偵測 PMA 相關的問題。
 
 #### <a name="snoop"></a>探聽
@@ -178,7 +178,7 @@ Point deviceTopLeft = new Point(window.Left, window.Top).LogicalToDeviceUnits();
 Point deviceTopLeft = window.LogicalToDevicePoint(new Point(window.Left, window.Top));
 ```
 
-若為機器碼，則需要使用新的*VsUI：： CDpiAwareness*類別的呼叫來取代舊*VsUI：： CDpiHelper*類別的呼叫。 
+若為機器碼，則需要使用新的 *VsUI：： CDpiAwareness* 類別的呼叫來取代舊 *VsUI：： CDpiHelper* 類別的呼叫。 
 
 ```cpp
 // Remove this kind of use:

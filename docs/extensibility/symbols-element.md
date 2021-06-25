@@ -3,7 +3,7 @@ title: 符號元素 |Microsoft Docs
 description: 符號元素定義其他 .VSCT 元素所使用的 Guid 和識別碼。 本文包含範例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
 - VSCT XML schema elements, Symbols
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a013bbe438d1e4dd1f6b5149dcb7da78835fd09
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b593f353714f2fbb6f5b726fa2bbc0da449043ea
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056047"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901730"
 ---
 # <a name="symbols-element"></a>Symbols 項目
 定義其他 .VSCT 元素所使用的 Guid 和識別碼。 針對非受控碼，這項資訊通常來自 [Extern 元素](../extensibility/extern-element.md)所指定的標頭檔。 Managed 程式碼會使用符號元素的子項目來定義這項資訊。

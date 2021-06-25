@@ -3,7 +3,7 @@ title: 組合元素 |Microsoft Docs
 description: 組合元素會定義出現在下拉式方塊中的命令。 有四種類型： DropDownCombo、DynamicCombo、IndexCombo 和 MRUCombo。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e4a4895997e5c7511c694511000f7a0ac671db2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 431d68b6e545506f5fc90cc5a98a52dd4f1c33ad
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089741"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904950"
 ---
 # <a name="combo-element"></a>組合元素
 定義出現在下拉式方塊中的命令。 下拉式方塊有四種類型，如下所示： DropDownCombo、DynamicCombo、IndexCombo 和 MRUCombo。
@@ -45,7 +45,7 @@ ms.locfileid: "105089741"
 |defaultWidth|必要。 指定下拉式方塊之圖元寬度的整數。|
 |idCommandList|必要。 傳送至使用中命令目標的識別碼，以取得要顯示在下拉式方塊中的專案清單。 此識別碼將會在與控制項相同的 GUID 範圍中。|
 |priority|選擇性。 指定優先權的數位值。|
-|類型|選擇性。 指定按鈕類型的列舉值。<br /><br /> 如果未指定，會使用按鈕。<br /><br /> DropDownCombo<br /> VSPackage 負責填入此下拉式方塊的內容。 使用者無法在這個下拉式清單的文字方塊中輸入任何內容。<br /><br /> DynamicCombo<br /> VSPackage 負責填入這個下拉式方塊的內容。 使用者可以編輯這個下拉式方塊，也可以選取其中的專案。<br /><br /> IndexCombo<br /> 與 DynamicCombo 相同，不同之處在于它會引發專案的索引，而不是其文字。<br /><br /> MRUCombo<br />  (IDE) 代表 VSPackage 填入整合式開發環境。  使用者可以在此下拉式方塊中編輯。 IDE 會記住每個下拉式方塊最多最後16個專案。<br /><br /> 當使用者在下拉式方塊中選取某個內容，或輸入新的內容時，IDE 會通知適當的 VSPackage。|
+|type|選擇性。 指定按鈕類型的列舉值。<br /><br /> 如果未指定，會使用按鈕。<br /><br /> DropDownCombo<br /> VSPackage 負責填入此下拉式方塊的內容。 使用者無法在這個下拉式清單的文字方塊中輸入任何內容。<br /><br /> DynamicCombo<br /> VSPackage 負責填入這個下拉式方塊的內容。 使用者可以編輯這個下拉式方塊，也可以選取其中的專案。<br /><br /> IndexCombo<br /> 與 DynamicCombo 相同，不同之處在于它會引發專案的索引，而不是其文字。<br /><br /> MRUCombo<br />  (IDE) 代表 VSPackage 填入整合式開發環境。  使用者可以在此下拉式方塊中編輯。 IDE 會記住每個下拉式方塊最多最後16個專案。<br /><br /> 當使用者在下拉式方塊中選取某個內容，或輸入新的內容時，IDE 會通知適當的 VSPackage。|
 |條件|選擇性。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素

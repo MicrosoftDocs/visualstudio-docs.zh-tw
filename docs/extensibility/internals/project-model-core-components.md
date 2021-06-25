@@ -3,7 +3,7 @@ title: 專案模型核心元件 |Microsoft Docs
 description: 本文包含專案模型核心中所識別之介面和服務的描述，以及與物件相關聯的介面和服務。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae01d149611afe5bf75a6952f19baff7d70f6210
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 88dc53378e7e06d0a7d4ad362f7bb3876e186c80
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062807"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899702"
 ---
 # <a name="project-model-core-components"></a>專案模型的核心元件
 下表會在專案模型上展開。 這些表格會顯示模型中所識別之介面和服務的簡短描述，以及與特定物件相關聯的介面和服務。 此外，根據特定專案類型的需求，資料表會詳細說明專案建立和維護中的其他介面。

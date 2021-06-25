@@ -3,7 +3,7 @@ title: 將資料儲存在專案檔中 |Microsoft Docs
 description: 瞭解 Managed Package Framework 提供的介面，以儲存及取出專案檔中的子類型特定資料。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data [Visual Studio], saving in project files
 - project files
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24f3f0b84f22532187537c31ba6e47a823eef8f7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5859fc9286a3e584c04ccacc1d8b8a35d98dea89
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060493"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904977"
 ---
 # <a name="save-data-in-project-files"></a>將資料儲存在專案檔案中
 專案子類型可以儲存和取出專案檔中的子類型特定資料。 受控封裝架構 (MPF) 提供兩個介面來完成這項工作：

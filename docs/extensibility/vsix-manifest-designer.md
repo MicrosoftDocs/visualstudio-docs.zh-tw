@@ -3,7 +3,7 @@ title: VSIX 資訊清單設計工具 |Microsoft Docs
 description: 瞭解 VSIX 資訊清單設計工具如何修改 VSIX 套件資訊清單檔，此檔案會設定 Visual Studio 擴充功能的安裝行為。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfa6e402bfa6b0ef1949a967c37773557b79b0a3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: baea7be60c67f186da2372c4644366b4a1a7a202
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062222"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905185"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 資訊清單設計工具
 修改 VSIX 套件資訊清單檔，此檔案會設定 Visual Studio 擴充功能的安裝行為。
@@ -62,15 +62,15 @@ ms.locfileid: "105062222"
 
   **授權** 指定包含使用者授權（如果有的話）的文字檔。
 
-  **圖示** 指定圖形檔案 (*.png*、 *.bmp*、 *jpeg*、 *.ico*) ，其中包含要在 [ **擴充管理員**] 中顯示的圖示（如果有圖示的話）。 圖示影像必須為32x32 圖元，否則會調整大小為這些維度。 如果未指定圖示， **延伸模組管理員** 會使用預設圖示。
+  **圖示** 指定圖形檔 (*.png*、 *.bmp*、 *jpeg*、 *.ico*) ，其中包含要在 [ **擴充管理員**] 中顯示的圖示（如果有圖示的話）。 圖示影像必須為32x32 圖元，否則會調整大小為這些維度。 如果未指定圖示， **延伸模組管理員** 會使用預設圖示。
 
-  **預覽影像** 指定圖形檔案 (*.png*、 *.bmp*、 *jpeg*、 *.ico*) ，其中包含要在 [ **擴充管理員**] 中顯示的預覽影像（如果有預覽影像）。 預覽映射必須是200x200 圖元。 如果未指定預覽影像， **擴充管理員** 會使用預設映射。
+  **預覽影像** 指定 (*.png*、 *.bmp*、 *jpeg*、 *.ico*) 的圖形檔案，其中包含要在 [ **擴充管理員**] 中顯示的預覽影像（如果有預覽影像）。 預覽映射必須是200x200 圖元。 如果未指定預覽影像， **擴充管理員** 會使用預設映射。
 
   **標記** 新增要用於搜尋提示的文字標記。
 
-  **版本** 資訊指定包含版本資訊 (*.txt*、 *.rtf*) 的檔案。 也會取得顯示版本資訊的網站 URL。
+  **版本** 資訊指定包含版本資訊的檔案 (*.txt*、 *.rtf) 。* 也會取得顯示版本資訊的網站 URL。
 
-  **開始使用指南** 指定 (*.txt*， *.rtf*) 的檔案，其中包含如何在 VSIX 封裝中使用擴充功能或內容的相關資訊。 當擴充功能安裝完成時，即會顯示此指南。 也會取得顯示指南之網站的 URL。
+  **開始使用指南** 指定檔案 (*.txt*， *.Rtf*) ，其中包含如何使用延伸模組或在 VSIX 封裝中內容的相關資訊。 當擴充功能安裝完成時，即會顯示此指南。 也會取得顯示指南之網站的 URL。
 
   **詳細資訊 URL** 指定網站的 URL，其中包含產品的其他相關資訊。
 
@@ -96,7 +96,7 @@ ms.locfileid: "105062222"
 
   **此 VSIX 會針對所有使用者安裝 (需要在安裝時提高許可權)** 如果您選取此核取方塊，則會為所有使用者安裝此延伸模組。否則，它只會針對目前的使用者進行安裝。
 
-  **此 VSIX 由 Windows Installer 安裝** 。如果您選取此核取方塊，此延伸模組會由 Windows Installer (*.msi* 檔案安裝) ;否則，它會安裝為 (*.vsix* 檔案) 的一般 vsix 套件。
+  **此 VSIX 由 Windows Installer 安裝** 。如果您選取此核取方塊，則會由 Windows Installer (*.msi* 檔案) 安裝擴充功能。否則，它會安裝為 (*.vsix* 檔案) 的一般 vsix 套件。
 
   [ **資產** ] 索引標籤包含下列控制項。
 

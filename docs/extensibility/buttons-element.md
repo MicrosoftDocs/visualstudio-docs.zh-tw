@@ -3,7 +3,7 @@ title: 按鈕元素 |Microsoft Docs
 description: 按鈕元素群組按鈕元素，代表個別的命令。 本文包含範例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2988654ebd676d49c8a5dd02652fc8a3662869
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2952f9f6747e52604e9f24cd173ab07f8d5a4756
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068124"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900794"
 ---
 # <a name="buttons-element"></a>按鈕元素
 代表個別命令的群組 [按鈕](../extensibility/button-element.md) 元素。

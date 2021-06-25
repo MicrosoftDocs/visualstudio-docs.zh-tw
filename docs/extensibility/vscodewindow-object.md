@@ -3,7 +3,7 @@ title: VSCodeWindow 物件 |Microsoft Docs
 description: 瞭解程式碼視窗，這是可包含一或多個文字視圖（通常是 VsTextView 物件）的特殊文件視窗。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VSCodeWindow
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77839bf80f30de3177f647795ffb89aa3e103d58
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9803132605ee81c67785c8c0154861b26730ca5f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062417"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905328"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow 物件
 程式碼視窗是一個特製化的文件視窗，其中可包含一或多個文字視圖，通常是 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> 物件。

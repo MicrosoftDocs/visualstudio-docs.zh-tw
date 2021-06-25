@@ -3,7 +3,7 @@ title: CommandName 元素 |Microsoft Docs
 description: CommandName 專案會在 [選項] 對話方塊和 [自訂] 對話方塊的命令清單中，指定出現在鍵盤類別中的文字。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - CommandName element (VSCT XML schema)
 - VSCT XML schema elements, CommandName
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba74c0a61ddf01407f2af6ebb8053e2f1e4fe6ac
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 193e97880fbc543568636e1979a847877e42db14
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089624"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902003"
 ---
 # <a name="commandname-element"></a>CommandName 元素
 專案 `CommandName` 會在 [選項] 對話方塊的 [**選項**] 對話方塊中，以及在 [**自訂**] 對話方塊的 **命令** 清單中，指定出現在鍵盤類別中的文字。

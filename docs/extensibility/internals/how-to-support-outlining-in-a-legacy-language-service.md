@@ -3,7 +3,7 @@ title: 如何：在舊版語言服務中支援大綱 |Microsoft Docs
 description: 瞭解如何在舊版語言服務中提供大綱、擴充或折迭不同文字區域的支援。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], collapse to definitions command
 - language services, supporting Collapse to Definitions command
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c275a6a466cc58187293f6ebd84a39fdf8064e6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 028d1a9aae21aae8c6368e4eea3820aabd200be6
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078681"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901795"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何：在舊版語言服務中支援大綱
 大綱是用來展開或折迭不同的文字區域。 使用大綱的方式可以不同的語言來定義。 如需詳細資訊，請參閱[大綱](../../ide/outlining.md)。

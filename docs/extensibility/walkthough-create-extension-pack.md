@@ -3,7 +3,7 @@ title: 建立延伸模組套件
 description: 瞭解如何使用延伸模組套件專案範本建立延伸模組套件
 ms.custom: SEO-VS-2020
 ms.date: 07/27/2018
-ms.topic: conceptual
+ms.topic: tutorial
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 5388EEBA-211D-4114-8CD9-70C899919F7E
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b447be3ee411b737c1aea5b0a4be5ef966c8c6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 213e3e71503ebea8074594bbc88a06980e3e64b4
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062144"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905133"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>逐步解說：建立延伸模組組件
 
@@ -33,7 +33,7 @@ ms.locfileid: "105062144"
 
 延伸模組套件專案範本會建立延伸模組套件，其中包含可一起安裝的延伸模組集合。
 
-1. 在 [ **新增專案** ] 對話方塊中，搜尋 "vsix" 並選取 [ **vsix 專案**]。 在 [ **專案名稱**] 中，輸入「測試擴充功能套件」。 選取 [建立]  。
+1. 在 [ **新增專案** ] 對話方塊中，搜尋 "vsix" 並選取 [ **vsix 專案**]。 在 [ **專案名稱**] 中，輸入「測試擴充功能套件」。 選取 [建立]。
 
 2. 在 [**方案總管** 中，以滑鼠右鍵按一下專案節點，然後選取 [**加入**  >  **新專案**]。 移至 [ **Visual c #** 擴充性] 節點，然後選取 [擴充功能 **套件**]。 將預設的檔案名保留 (ExtensionPack1]) 。
 

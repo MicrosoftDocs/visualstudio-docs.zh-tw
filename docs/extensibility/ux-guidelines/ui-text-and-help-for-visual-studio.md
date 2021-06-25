@@ -2,19 +2,19 @@
 title: Visual Studio 的 UI 文字和說明 |Microsoft Docs
 description: 瞭解 Visual Studio 的說明資訊中所使用的 UI 文字和術語。
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8635907b5c0190165855378fa692fb9abca4b0ec
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 40b128c5e95c70457d92843e620b4aa072c409ba
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105052654"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899429"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>適用於 Visual Studio 的 UI 文字和說明
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> UI 文字和術語

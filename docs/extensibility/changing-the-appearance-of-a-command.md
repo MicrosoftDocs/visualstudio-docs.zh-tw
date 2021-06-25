@@ -3,7 +3,7 @@ title: 變更命令的外觀 |Microsoft Docs
 description: 瞭解如何提供變更命令外觀的意見反應，例如讓命令可供使用/無法使用、隱藏/顯示或核取/取消核取。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - commands, changing appearance
 - menu commands, changing appearance
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b6911d865b253ff82ffcc6c4911e0989f109f28
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ddeed08d7bc33b9a9ae5405876f3b28459d4eaf2
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089819"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905029"
 ---
 # <a name="change-the-appearance-of-a-command"></a>變更命令的外觀
 您可以藉由變更命令的外觀，將意見反應提供給您的使用者。 例如，您可能會想讓命令在無法使用時看起來不同。 您可以讓命令可供使用或無法使用、隱藏或顯示命令，或是在功能表上核取或取消選取。

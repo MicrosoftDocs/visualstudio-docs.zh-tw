@@ -3,7 +3,7 @@ title: 執行舊版語言 Service1 |Microsoft Docs
 description: 瞭解如何使用 managed package framework (MPF) ，來實行支援擴充語言服務功能的舊版語言服務。 第1部，共2部。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e3f11a9ea60595b2372921702282c2bb4d8dcd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 34be4e54fbce413fe5ba916892216a9234d4ba93
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085906"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901145"
 ---
 # <a name="implementing-a-legacy-language-service-1"></a>執行舊版語言服務1
 您可以使用 managed package framework 中的類別 (MPF) 來執行支援各種功能的舊版語言服務，例如語法醒目提示、括弧對稱和 IntelliSense 完成。

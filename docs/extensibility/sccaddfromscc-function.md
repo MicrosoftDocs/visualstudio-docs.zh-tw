@@ -2,7 +2,7 @@
 description: 這個函式可讓使用者流覽已在原始檔控制系統中的檔案，然後再將這些檔案設為目前專案的一部分。
 title: SccAddFromScc 函式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccAddFromScc
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be67fd18c6cac7217da0d79aaef766e942e15fb9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 48560f135d73c4e53ba132845f4c768cdf4ac982
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085672"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904872"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 函式
 這個函式可讓使用者流覽已在原始檔控制系統中的檔案，然後再將這些檔案設為目前專案的一部分。 例如，此函式可以在不復制檔案的情況下，取得目前專案的通用標頭檔。 傳回的檔案陣列， `lplpFileNames` 包含使用者想要新增至 IDE 專案的檔案清單。

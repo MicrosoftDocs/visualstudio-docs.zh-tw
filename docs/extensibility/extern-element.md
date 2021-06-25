@@ -3,7 +3,7 @@ title: Extern 元素 |Microsoft Docs
 description: Extern 元素會參考任何外部標頭 ( .h) 檔案，以便在編譯時期與 .vsct 檔案合併。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - Extern
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5771dbc1c6b17b0f488d42c30a036ff1d90a5a18
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 502b93f18aacfed26d3ea440c017e6de5281a35d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074986"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900183"
 ---
 # <a name="extern-element"></a>Extern 元素
 Extern 元素會參考任何外部標頭 (*.h*) 檔案，以便在編譯時期與 *.vsct* 檔案合併。 要合併的檔案必須位於提供給 .VSCT 編譯器的 Include 路徑上，或是由 [include 元素](../extensibility/include-element.md)所參考。 檔案可能是其他 *.vsct* 檔案或 c + + 標頭檔。

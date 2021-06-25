@@ -2,7 +2,7 @@
 description: 此函式會列舉指定的檔案清單，並透過回呼函數提供每個檔案的名稱變更相關資訊。
 title: SccQueryChanges 函式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccQueryChanges
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c821453642a3632c98fac153a367e8ba41495adc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f93ed14671995502356ae4a19664b14bbd32ce7b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073933"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900469"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函式
 此函式會列舉指定的檔案清單，並透過回呼函數提供每個檔案的名稱變更相關資訊。

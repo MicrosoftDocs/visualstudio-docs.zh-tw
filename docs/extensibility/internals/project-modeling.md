@@ -3,7 +3,7 @@ title: 專案模型 |Microsoft Docs
 description: 瞭解為新的專案類型和專案自動化所遵循的路徑建立自動化所需的標準專案物件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio SDK], implementing project objects
 - project models, automation
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 506606291996c94ff10514c6c57f83c6e1133862
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b90271fcc43c627f2eb7dbb2f318427ad0d9839e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062820"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899676"
 ---
 # <a name="project-modeling"></a>將專案模型化
 為您的專案提供自動化的下一個步驟是執行標準專案物件： <xref:EnvDTE.Projects> 和集合、 `ProjectItems` `Project` 和 <xref:EnvDTE.ProjectItem> 物件，以及您的實作為唯一的其餘物件。 這些標準物件定義于 Dteinternal 檔中。 BscPrj 範例中提供標準物件的執行。 您可以使用這些類別作為模型來建立您自己的標準專案物件，這些物件與其他專案類型的專案物件並存。

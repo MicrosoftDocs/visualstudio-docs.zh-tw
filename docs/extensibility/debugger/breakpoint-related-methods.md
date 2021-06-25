@@ -3,7 +3,7 @@ title: Breakpoint-Related 方法 |Microsoft Docs
 description: Visual Studio 的偵錯工具支援系結的中斷點，其已成功系結至程式碼中的位置，而暫止的中斷點尚未系結。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
 - breakpoints, methods
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06494b5ed6c1826e665f42e180ad8c71de596e30
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ec218cea05dffc1c558cabdef47895da9ad7ba9c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055231"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901496"
 ---
 # <a name="breakpoint-related-methods"></a>中斷點相關的方法
 Debug engine (DE) 必須支援中斷點的設定。 Visual Studio 的偵錯工具支援下列類型的中斷點：

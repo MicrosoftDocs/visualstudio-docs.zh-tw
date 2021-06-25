@@ -2,7 +2,7 @@
 description: 此函式會提示使用者輸入專案路徑，這是僅對原始檔控制外掛程式有意義的字串。
 title: SccGetProjPath 函式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetProjPath
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07c6b8f865d8b1b1d87c9c9468d74e2208265290
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 93266464249b8de037a618bab55ede31988384cb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063964"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901067"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函式
 此函式會提示使用者輸入專案路徑，這是僅對原始檔控制外掛程式有意義的字串。 當使用者為時，就會呼叫它：

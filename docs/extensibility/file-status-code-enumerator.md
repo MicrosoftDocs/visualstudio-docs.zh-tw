@@ -3,7 +3,7 @@ title: 檔案狀態碼列舉值 |Microsoft Docs
 description: SccStatus 列舉值包含常數值，可指定原始檔控制系統中檔案的狀態，並由 SccQueryInfo 和 POPLISTFUNC 使用。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - named constants, SccStatus enumerator
 - source control plug-ins, file status enumeration
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af2ff3293a55dc76925aedd7a029e1bfdd367186
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 95de8a29efcd56880cdaf452c9f21b90bba1c5c9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074947"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900963"
 ---
 # <a name="file-status-code-enumerator"></a>檔案狀態碼列舉值
 `SccStatus`列舉值包含指定原始檔控制系統中檔案狀態的指定常數值。 [SccQueryInfo](../extensibility/sccqueryinfo-function.md)和回呼函式會使用這個列舉 `POPLISTFUNC` (如需詳細資料) ，請參閱[POPLISTFUNC](../extensibility/poplistfunc.md) 。

@@ -3,7 +3,7 @@ title: 選項和選項頁面 |Microsoft Docs
 description: 瞭解 [選項] 頁面的支援，讓您變更決定 VSPackage 狀態的選項值。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
 - managed package framework, Tools Options pages support
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32bcb32c4fc80a5806c9007c3119a2ba3de62427
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: ea05e894c0bfca077f1256c35e6fbe5c58bc91ea
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106214508"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899884"
 ---
 # <a name="options-and-options-pages"></a>選項和選項頁
 按一下 [**工具**] 功能表上的 [**選項**]，即可開啟 [**選項**] 對話方塊。 此對話方塊中的選項統稱為選項頁面。 流覽窗格中的樹狀目錄控制項包含選項分類，而每個類別都有選項頁面。 當您選取頁面時，其選項會顯示在右窗格中。 這些頁面可讓您變更決定 VSPackage 狀態的選項值。

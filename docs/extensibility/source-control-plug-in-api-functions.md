@@ -3,7 +3,7 @@ title: 原始檔控制外掛程式 API 函式 |Microsoft Docs
 description: 瞭解原始檔控制外掛程式 API 提供的函式，這些函式必須由原始檔控制外掛程式來執行。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, functions
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c28c175d53fb37cf890dad4240a84fb132f6af35
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4f93ddff78aa151218d0b46d017e4631d9489e44
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090118"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899598"
 ---
 # <a name="source-control-plug-in-api-functions"></a>原始檔控制外掛程式 API 函式
 原始檔控制外掛程式 API 提供下列函式，這些函式必須由原始檔控制外掛程式根據此 API 來執行。 這項參考會詳細說明每個函式的簽章，以及與位旗標和其他參數相關聯的語法。

@@ -3,7 +3,7 @@ title: 專案內容 |Microsoft Docs
 description: 瞭解 Visual Studio IDE 如何使用專案內容來決定當使用者加入或處理專案和專案專案時，如何執行作業。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38571b51c31b20bd38e50dd32644be4c262e0702
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 73e3c8a94607e7e0b31bacddac8e7f19b6139328
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062859"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899819"
 ---
 # <a name="project-context"></a>專案內容
 當使用者加入或使用專案和專案專案時，IDE 會使用專案內容的概念來決定應該如何執行各種作業。

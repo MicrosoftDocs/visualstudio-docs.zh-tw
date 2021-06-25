@@ -3,7 +3,7 @@ title: VSTextBuffer 物件 |Microsoft Docs
 description: VSTextBuffer 物件代表 Unicode 文字的資料流程，通常與檔案相關聯。 本文列出 VSTextBuffer 的介面。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VSTextBuffer
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a72491b118e0a51454181734a8fe388c2f7e851e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b3660a8dbb4a0a1280d5a3f428f73f3498244af7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062183"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905172"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 物件
 文字緩衝區物件代表 Unicode 文字的資料流程，通常與檔案相關聯。 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>物件可以在核心編輯器的內容之外使用，如同在中的 wizard。

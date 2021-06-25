@@ -3,7 +3,7 @@ title: 擴充輸出視窗 |Microsoft Docs
 description: 瞭解如何在 Visual Studio SDK 中擴充輸出視窗，以及如何建立和管理您自己的自訂窗格。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf875d070d27d307380f23e71af2bda7c4a205b5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 402c53691525530171edafd6a0751dfc72c9798d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075025"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900199"
 ---
 # <a name="extend-the-output-window"></a>擴充輸出視窗
 [ **輸出** ] 視窗是一組讀取/寫入文字窗格。 Visual Studio 具有下列內建窗格： **Build**，其中的專案會傳達有關組建的訊息，而 **一般** 會傳達 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 有關 IDE 的訊息。 專案會透過介面方法自動取得 **組建** 窗格的參考 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> ，而 Visual Studio 可透過服務直接存取 [ **一般** ] 窗格 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 。 除了內建的窗格之外，您還可以建立和管理自己的自訂窗格。

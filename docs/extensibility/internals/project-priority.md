@@ -3,7 +3,7 @@ title: 專案優先順序 |Microsoft Docs
 description: 瞭解 Visual Studio IDE 所使用的優先順序配置，以決定如果專案是多個專案的成員，則開啟專案的最佳專案。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aefb6b1670da812a36efcc1baa3cb23f23e2561
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2ac0556e63b25f0f2a0df399cb23d5e2e9473008
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064484"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899637"
 ---
 # <a name="project-priority"></a>專案優先順序
 專案專案通常是方案中唯一一個專案的成員。 因此，IDE 可以輕鬆地判斷要使用哪個專案來開啟專案。 但是，如果專案是多個專案的成員，則 IDE 會使用優先順序配置來判斷開啟專案的最佳專案。

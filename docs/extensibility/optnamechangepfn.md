@@ -3,7 +3,7 @@ title: OPTNAMECHANGEPFN |Microsoft Docs
 description: 深入瞭解 OPTNAMECHANGEPFN 回呼函式，此函式會將名稱變更從原始檔控制外掛程式傳達給 Visual Studio IDE。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - OPTNAMECHANGEPFN
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e6cb58aebbe76eff5c66dc29ecfad8c77c8717c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 340012663ad7d21c0b5c2ef81283f5d780d6011c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090365"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901522"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 這是在 [SccSetOption](../extensibility/sccsetoption-function.md) (中指定的回呼函式，其使用選項 `SCC_OPT_NAMECHANGEPFN`) ，並且用來將原始檔控制外掛程式所做的名稱變更傳遞回 IDE。

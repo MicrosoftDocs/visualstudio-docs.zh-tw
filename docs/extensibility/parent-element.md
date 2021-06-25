@@ -3,7 +3,7 @@ title: Parent 元素 |Microsoft Docs
 description: 父元素會指定專案是按鈕、下拉式方塊、功能表或群組的父系。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
 - Parent element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ac914fd3245982af89facb97ff2d528b410da99
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3dbf7202ac7fb94762ea132a2620625fae97ddfb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090378"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901548"
 ---
 # <a name="parent-element"></a>父元素
 按鈕或下拉式方塊的父系可能只是群組。 功能表或群組的父系可以是任何其他功能表或群組。 在 [CommandPlacement 元素](../extensibility/commandplacement-element.md)中，需要這個元素。在其他所有實例中，則是選擇性的。 如果省略這個元素，就會隱含的父系 `Group_Undefined:0` 。

@@ -3,7 +3,7 @@ title: '[Content_types] .xml 檔案的結構 |Microsoft Docs'
 description: 深入瞭解內容類型檔案的結構，其中包含 VSIX 封裝中內容類型的相關資訊。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - content_types
 - content types
@@ -15,18 +15,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5dea58176269536ae7f0e5857c938c60f76c5c6b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 96d4d0eeea34300894674a2105d080e8a6abb607
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055891"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900417"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 檔案的結構
-包含 VSIX 封裝中內容類型的相關資訊。 Visual Studio 使用 [Content_Types] .xml 檔案安裝套件，但不會安裝檔案本身。
+包含 VSIX 封裝中內容類型的相關資訊。 Visual Studio 使用 [Content_Types] .xml 檔來安裝套件，但不會安裝檔案本身。
 
 > [!NOTE]
-> 雖然本主題僅適用于 VSIX 封裝中所使用的 [Content_Type] .xml 檔案，但 [Content_Types] .xml 檔案類型是 *開放式封裝慣例 (OPC)* 標準的一部分。 如需詳細資訊，請參閱 [OPC：將資料封裝](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) 在 MSDN 網站的新標準。
+> 雖然本主題僅適用于 VSIX 封裝中使用的 [Content_Type] .xml 檔案，但是 [Content_Types] .xml 檔案類型是 *開放式封裝慣例 (OPC)* 標準的一部分。 如需詳細資訊，請參閱 [OPC：將資料封裝](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) 在 MSDN 網站的新標準。
 
 ## <a name="attributes-and-elements"></a>屬性和項目
  下列各節描述根項目及其屬性和子項目。
@@ -41,7 +41,7 @@ ms.locfileid: "105055891"
 
 |屬性|描述|
 |---------------|-----------------|
-|`Xmlns`| (必要項。 ) 用於這個 [Content_Types] .xml 檔案的架構位置。|
+|`Xmlns`| (必要項。 ) 此 [Content_Types] .xml 檔案所使用之架構的位置。|
 
 ### <a name="attribute-name-attribute"></a>{屬性名稱}屬性
 
@@ -86,7 +86,7 @@ ms.locfileid: "105055891"
 ## <a name="example"></a>範例
 
 ### <a name="description"></a>描述
- 下列 [Content_Types] .xml 檔案描述一般 VSIX 套件。
+ 下列 [Content_Types] .xml 檔描述一般 VSIX 套件。
 
 ### <a name="code"></a>程式碼
 

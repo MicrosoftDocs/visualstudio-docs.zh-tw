@@ -3,7 +3,7 @@ title: 指定副檔名的檔案處理常式 |Microsoft Docs
 description: 瞭解如何使用 OpenWithList 和 OpenWithProgids，判斷哪一個應用程式處理 Visual Studio SDK 中的副檔名。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65705467b1531e139c0ec857d6a7b57015d5f2f9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6ab370b4be8c12ad0df0c4822bcc7b487fb4aa21
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089962"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899442"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定適用於副檔名的檔案處理常式
 有幾種方式可以決定處理具有特定副檔名之檔案的應用程式。 OpenWithList 和 OpenWithProgids 動詞是在副檔名的登錄專案底下指定檔案處理常式的兩種方式。

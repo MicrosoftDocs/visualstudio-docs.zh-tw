@@ -3,7 +3,7 @@ title: 會話 Debug Manager |Microsoft Docs
 description: 深入瞭解會話 debug manager，此管理員可跨任意數目的電腦管理多個進程中的多個偵測引擎偵錯工具。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - session debug manager, unifying session views
 - session debug manager, broadcasting
@@ -17,12 +17,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e5a206b8ece21b14758dfeb02563d4d323dcf60
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 217a2d401e61c58a58d958bb754265a19a2a367d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079458"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902081"
 ---
 # <a name="session-debug-manager"></a>會話偵錯工具管理員
 會話 debug manager (SDM) 管理任何數目的偵錯工具， (取消在任意數目的電腦之間，對多個進程中任何數目的程式進行偵錯工具的) 。 除了做為「偵測引擎多工器」之外，SDM 也提供對 IDE 之 debug 會話的統一觀點。

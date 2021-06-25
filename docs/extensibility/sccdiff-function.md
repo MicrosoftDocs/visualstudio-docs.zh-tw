@@ -2,7 +2,7 @@
 description: 此函式會顯示 (，或選擇性地檢查) 本機) 磁片上的目前檔案 (與原始檔控制系統中的最後一個簽入版本之間的差異。
 title: SccDiff 函式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccDiff
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 151620a81af515bd8cd74938a1006d4a98959dd9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 484d8b5e988ede9b50099e3c0376f2c3afce8317
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073985"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904652"
 ---
 # <a name="sccdiff-function"></a>SccDiff 函式
 此函式會顯示 (，或選擇性地檢查) 本機) 磁片上的目前檔案 (與原始檔控制系統中的最後一個簽入版本之間的差異。

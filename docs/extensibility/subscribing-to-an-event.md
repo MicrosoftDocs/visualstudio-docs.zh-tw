@@ -3,7 +3,7 @@ title: 訂閱事件 |Microsoft Docs
 description: 瞭解如何建立工具視窗，以回應 Visual Studio SDK 中執行中檔資料表內的事件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - running document table (RDT), responding to events
 - running document table (RDT), subscribing to events
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a887e7d50f14c76cf993eae64b0efd88dee2181
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 01271016eed9a4a157b333a2f0435589b0a028d5
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056281"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899385"
 ---
 # <a name="subscribing-to-an-event"></a>訂閱事件
 本逐步解說將說明如何建立工具視窗，以回應執行中的檔資料表中的事件 (RDT) 。 工具視窗會裝載可執行檔使用者控制項 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> 。 方法會將 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> 介面連接到事件。

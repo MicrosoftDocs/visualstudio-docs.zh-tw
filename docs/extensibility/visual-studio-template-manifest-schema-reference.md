@@ -3,19 +3,19 @@ title: Visual Studio 範本資訊清單架構參考 |Microsoft Docs
 description: 此架構參考描述針對 Visual Studio 專案或專案範本所產生 Visual Studio 範本資訊清單檔的格式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 033e735b93a534164d96cf47d6412c609525ad8f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 259d2dd050f4681053f331bfd4ec39dd7b214059
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062495"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905380"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 範本資訊清單架構參考
 此架構描述為 Visual Studio 專案或專案範本產生的 Visual Studio 範本資訊清單 (*vstman*) 檔案的格式。 此架構也會描述範本的位置和其他相關資訊。

@@ -3,7 +3,7 @@ title: 將鍵盤快速鍵系結至功能表項目 |Microsoft Docs
 description: 瞭解如何將 Visual Studio 中的鍵盤快速鍵對應至預設編輯器或自訂編輯器的自訂按鈕、功能表項目或工具列命令。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - keyboard command
 - keyboards
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88cc7d91ee8cd24daae278efdbfd35271412af40
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6a9591a7412b0bcaf506483a16a6660790df5f40
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097301"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900430"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>將鍵盤快速鍵系結至功能表項目
 若要將鍵盤快速鍵系結至自訂功能表命令，請只將專案加入至封裝的 *.vsct* 檔案。 本主題說明如何將鍵盤快速鍵對應至自訂按鈕、功能表項目或工具列命令，以及如何在預設編輯器中套用鍵盤對應，或將它限制為自訂編輯器。

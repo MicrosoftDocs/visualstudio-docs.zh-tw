@@ -3,7 +3,7 @@ title: Strings 元素 |Microsoft Docs
 description: Strings 元素包含 ButtonText 子專案和其他選擇性子項目。 文字字串中的 & 符號會指定鍵盤快速鍵。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Strings element (VSCT XML schema)
 - VSCT XML schema elements, Strings
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0bd9ad9b8059eb7fd566c1e0c26a938af6d18b2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 27a649c7d3a8bb808153c280921d2304de59c379
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089897"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899403"
 ---
 # <a name="strings-element"></a>Strings 項目
 Strings 元素至少必須包含 **ButtonText** 子項目。 所有其他子項目都是選擇性的。 不正確 XML 字元，例如 ' & ' 和 ' < ' 必須編碼為實體 ( ' &amp; ' 和 ' &lt; ' 等等，) 。
