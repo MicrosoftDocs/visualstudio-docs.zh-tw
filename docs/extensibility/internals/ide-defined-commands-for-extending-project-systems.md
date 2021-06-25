@@ -3,7 +3,7 @@ title: 擴充專案系統的 IDE-Defined 命令 |Microsoft Docs
 description: 瞭解用來擴充專案系統的 Visual Studio 整合式開發環境 (IDE) 中定義的命令和命令群組。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - commands, project systems
 - project systems, environment-defined commands
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fedca7081c531fef257e20e64426f8b35e88e87
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4525802bf308d740ea5c468fac171e74bff2b34e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085997"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901158"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>用來擴充專案系統的 IDE 定義的命令
 當您想要擴充專案系統時，可以使用 IDE 所提供的命令和命令群組 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
@@ -28,7 +28,7 @@ ms.locfileid: "105085997"
 ## <a name="command-menus"></a>命令功能表
  下表顯示的命令功能表是很實用的位置，可讓您放置高階命令以叫用專案擴充項。
 
-|命令功能表|Description|
+|命令功能表|描述|
 |------------------|-----------------|
 |IDM_VS_MENU_PROJECT|**專案** 最上層功能表。|
 |IDM_VS_TOOL_PROJWIN|**方案總管** 的工具列。|
@@ -36,7 +36,7 @@ ms.locfileid: "105085997"
 ## <a name="shortcut-menus"></a>快顯功能表
  下表顯示在 **方案總管** 中選取單一節點時，或當 **方案總管** 中有多個同質選取時（當所有選取的節點都屬於相同類型時）適用的快捷方式功能表。
 
-|捷徑功能表|Description|
+|捷徑功能表|描述|
 |-------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|適用于選取專案節點時。|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|當選取檔案時套用。|
@@ -47,7 +47,7 @@ ms.locfileid: "105085997"
 
  下表顯示當 **方案總管** 中的選取範圍跨越多個階層時適用的快捷方式功能表。
 
-|捷徑功能表|Description|
+|捷徑功能表|描述|
 |-------------------|-----------------|
 |IDM_VS_CTXT_XPROJ_SLNPROJ|當目前的選取範圍包含方案節點和根專案節點時套用。|
 |IDM_VS_CTXT_XPROJ_SLNITEM|當目前的選取範圍包含方案節點和專案專案時套用。|
@@ -58,7 +58,7 @@ ms.locfileid: "105085997"
 ## <a name="command-groups"></a>命令群組
  下表顯示您可以在擴充專案時使用的命令群組，以及可透過快捷方式功能表存取的命令群組 <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> 。
 
-|命令群組|Description|
+|命令群組|描述|
 |-------------------|-----------------|
 |IDG_VS_CTXT_PROJECT_BUILD|用來建立、重建和部署專案的命令。|
 |IDG_VS_CTXT_COMPILELINK|用來編譯和連結專案的命令。|

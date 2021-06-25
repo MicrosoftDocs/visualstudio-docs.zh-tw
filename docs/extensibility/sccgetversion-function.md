@@ -2,7 +2,7 @@
 description: 此函式會取得原始檔控制外掛程式所支援的原始檔控制外掛程式 API 版本號碼。
 title: SccGetVersion 函式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetVersion
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42273951768591dc89f4c9e4b9a27de1d646e209
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f49d33ebe70390a364d0ae8336e7f69549b6876f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063808"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901080"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion 函式
 此函式會取得原始檔控制外掛程式所支援的原始檔控制外掛程式 API 版本號碼。
@@ -35,7 +35,7 @@ LONG SccGetVersion(void);
 ## <a name="return-value"></a>傳回值
  `LONG`資料類型，包含支援的原始檔控制外掛程式 API 的版本號碼：
 
-|WORD|Description|
+|WORD|描述|
 |----------|-----------------|
 |HIWORD|主要版本|
 |LOWORD|次要版本|

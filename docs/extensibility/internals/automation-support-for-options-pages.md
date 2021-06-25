@@ -3,7 +3,7 @@ title: 選項頁的自動化支援 |Microsoft Docs
 description: 瞭解如何將 Vspackage 中的自訂工具選項頁面提供給 Visual Studio automation 模型。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], automation support
 - automation [Visual Studio SDK], creating Tools Options pages
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b587af698cf7f044c02baab1a8207be1457d6cfd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5a4f6b33b7a5e17c610831db5d4387065915ea00
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086218"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901652"
 ---
 # <a name="automation-support-for-options-pages"></a>選項頁的自動化支援
 Vspackage 可以提供自訂 **選項** 對話方塊至 [ **工具** ] 功能表 (的 [ **工具選項** ] 頁面) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，並可讓這些對話方塊提供給 automation 模型使用。

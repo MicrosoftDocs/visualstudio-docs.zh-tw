@@ -3,7 +3,7 @@ title: 傳送事件 |Microsoft Docs
 description: 瞭解偵錯工具和偵測引擎如何使用以 DCOM 為基礎的事件模型。 事件會以 COM 物件的形式傳送。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], sending events
 ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 135dd0278ee765ef88ae6cef39675a2fa92236d7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6e9af2618150df522a459e47f312c1dc1e6a220c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070385"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902250"
 ---
 # <a name="send-events"></a>傳送事件
 偵錯工具與 debug engine (DE) 之間的通訊機制是以 DCOM 為基礎的事件模型。 事件會以 COM 物件的形式傳送，且每個事件都有參數，可指定：

@@ -2,7 +2,7 @@
 description: 此函式會判斷指定專案的父專案路徑。
 title: SccGetParentProjectPath 函式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetParentProjectPath
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 305f226117bbb9cf906231a0b9bbaa24c1d87a8e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 13a0a77808004c7bc8f408bbf34a3ed4f0715b36
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063977"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900131"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 函式
 此函式會判斷指定專案的父專案路徑。 當使用者將 Visual Studio 專案加入至原始檔控制時，會呼叫這個函式。

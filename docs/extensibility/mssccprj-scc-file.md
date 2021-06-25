@@ -3,7 +3,7 @@ title: MSSCCPRJ.SCC.SCC 檔案 |Microsoft Docs
 description: 深入瞭解 MSSCCPRJ.SCC。SCC 檔，這是原始檔控制外掛程式所使用的本機用戶端檔案，可搭配 Visual Studio SDK 使用。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 945d1a4d1acde0ac3fef9918123f963cf27127f1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e006e4462522f4c464f40e0656dcef4d32c85fb7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090547"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899247"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC.SCC 檔案
 當您使用 IDE 在原始檔控制下放置 Visual Studio 的方案或專案時，IDE 會收到兩個重要的資訊片段。 此資訊來自原始檔控制外掛程式的字串格式。 這些字串 "AuxPath" 和 "ProjName" 對 IDE 而言是不透明的，但外掛程式會使用它們來尋找版本控制中的方案或專案。 IDE 通常會藉由呼叫 [SccGetProjPath](../extensibility/sccgetprojpath-function.md)來取得這些字串，然後將它們儲存在方案或專案檔中，以供未來對 [SccOpenProject](../extensibility/sccopenproject-function.md)的呼叫使用。 內嵌在方案和專案檔中時，當使用者分支、派生或複製版本控制中的方案和專案檔時，不會自動更新 "AuxPath" 和 "ProjName" 字串。 為了確保方案和專案檔指向版本控制中的正確位置，使用者必須手動更新字串。 因為這些字串是不透明的，不一定會清楚應如何更新。

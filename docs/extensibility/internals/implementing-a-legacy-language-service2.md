@@ -3,7 +3,7 @@ title: 執行舊版語言 Service2 |Microsoft Docs
 description: 瞭解如何使用 managed package framework (MPF) ，來實行支援擴充語言服務功能的舊版語言服務。 第2部，共2部。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - language services [managed package framework], implementing
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bdb0d05faaa139b808d8d117125c5208da470e9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fca2548ddb0c8281241b14de0ec470cfe22db1a1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085815"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900118"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>執行舊版語言服務2
 若要使用 managed package framework (MPF) 來執行語言服務，您必須從類別衍生類別， <xref:Microsoft.VisualStudio.Package.LanguageService> 並執行下列抽象方法和屬性：
@@ -195,7 +195,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-languageservice-class"></a>在 LanguageService 類別中
 
-|方法|傳回的類別|Description|
+|方法|傳回的類別|描述|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|支援文字視圖的自訂新增。|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|支援自訂文件屬性。|
@@ -212,7 +212,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-source-class"></a>在來源類別中
 
-|方法|傳回的類別|Description|
+|方法|傳回的類別|描述|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|若要自訂 IntelliSense 完成清單的顯示 (此方法通常不會覆寫) 。|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|錯誤清單工作清單中的支援標記;具體而言，除了開啟檔案並跳到造成錯誤的那一行之外，還支援其他功能。|
@@ -222,7 +222,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-authoringscope-class"></a>在 AuthoringScope 類別中
 
-|方法|傳回的類別|Description|
+|方法|傳回的類別|描述|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|提供宣告的清單，例如成員或類型。 這個方法必須已完成，但可能會傳回 null 值。 如果這個方法傳回有效的物件，則物件必須是您的類別版本的實例 <xref:Microsoft.VisualStudio.Package.Declarations> 。|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|提供指定內容的方法簽章清單。 這個方法必須已完成，但可能會傳回 null 值。 如果這個方法傳回有效的物件，則物件必須是您的類別版本的實例 <xref:Microsoft.VisualStudio.Package.Methods> 。|

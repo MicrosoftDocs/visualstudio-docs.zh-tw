@@ -3,7 +3,7 @@ title: Visual Studio 命令的 Guid 和識別碼 |Microsoft Docs
 description: 瞭解如何在 (IDE) 中找出 Visual Studio 整合式開發環境中所包含命令的 GUID 和識別碼值。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - commands
 - id
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f25853f8f1ece583b460d39550af680001b3d4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8442e6430ead8f28d2afc7f51d14968b6999fcd9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069591"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898275"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 命令的 Guid 和識別碼
 Visual Studio 整合式開發環境中所包含命令的 GUID 和識別碼值 (IDE) 是在安裝為 Visual Studio SDK 一部分的 .vsct 檔案中定義。 如需詳細資訊，請參閱 [IDE 定義的命令、功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。

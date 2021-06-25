@@ -3,19 +3,19 @@ title: Visual Studio 的複合模式 |Microsoft Docs
 description: 瞭解 Visual Studio 中一致性的重要複合模式。 複合模式結合了互動和設計項目。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c6f609842f2531fe39158e871a330e136603433
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b8b84baa7be7449b8edb6241e415fc90c9acd594
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090053"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901418"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>適用於 Visual Studio 的複合模式
 複合模式會將互動和設計項目合併在不同的設定中。 Visual Studio 中與一致性相關的一些最重要複合模式包括：
@@ -528,7 +528,7 @@ ms.locfileid: "105090053"
 |**時間範圍**||調整視窗大小<br /><br /> 快速存取||
 |**檔妥善**||在開啟的檔案之間輕鬆流覽||
 |**手勢**||確定一般手勢可跨 IDE 運作|以手勢為基礎的動作<br /><br /> 支援拖放和設計工具|
-|**其他考量**|||自訂螢幕小鍵盤|
+|**其他考慮**|||自訂螢幕小鍵盤|
 
 #### <a name="gestures"></a>軌跡
  手勢可為使用者提供可能需要更複雜互動的命令快捷方式。 請參閱 [適用于桌面應用程式的常見觸控手勢](/windows/desktop/wintouch/windows-touch-gestures-overview)的 Windows 指導方針，並針對大部分的手勢遵循此指引，包括移動流覽和縮放等簡單手勢。

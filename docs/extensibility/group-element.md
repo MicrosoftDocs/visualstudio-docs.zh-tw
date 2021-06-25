@@ -3,7 +3,7 @@ title: Group 元素 |Microsoft Docs
 description: Group 元素定義 VSPackage 命令群組。 本文說明屬性、子項目和父元素。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf0115161963448d47cb6721c92d0f9ffe623a0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 422ff5d3d962198953a24210eaa3ffa30c7fc8a1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057581"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898587"
 ---
 # <a name="group-element"></a>Group 元素
 定義 VSPackage 命令群組。
