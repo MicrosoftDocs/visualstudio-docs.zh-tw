@@ -4,8 +4,6 @@ description: 深入瞭解 [錯誤清單] 視窗，以及如何使用它來執行
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- VS.ErrorList
 helpviewer_keywords:
 - Task List
 - build errors
@@ -17,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: df8d9545ce8179451530e2eb30bef7f98ba365d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90d3f8f95cb4b6aef3b2538a26226f5bad40f33b
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907544"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924938"
 ---
 # <a name="error-list-window"></a>[錯誤清單] 視窗
 
@@ -78,7 +76,7 @@ ms.locfileid: "99907544"
 
 ## <a name="ui-element-list"></a>UI 項目清單
 
-嚴重性
+Severity
 
 會顯示不同類型的 [錯誤清單] 項目 ([錯誤]、[訊息]、[警告]、[警告 (使用中)] 和 [警告 (非使用中)])。
 
@@ -86,7 +84,7 @@ ms.locfileid: "99907544"
 
 會顯示錯誤碼。
 
-Description
+描述
 
 會顯示項目的文字。
 
@@ -98,6 +96,6 @@ Project
 
 會顯示檔案名稱。
 
-線條
+折線圖
 
 會顯示發生錯誤的行。

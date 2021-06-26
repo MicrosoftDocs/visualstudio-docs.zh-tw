@@ -10,12 +10,12 @@ manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 6935c2f37f75f0318ec9402c3fcd0ff763555032
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 9ac42ccff8c7bffcc22c453002aad1caf6935d28
+ms.sourcegitcommit: e4630a3bb89b4d606fe2cbd709bc773c5b538b78
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296010"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "112975679"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>如何搭配需要多重要素驗證的帳戶使用 Visual Studio
 
@@ -68,11 +68,16 @@ ms.locfileid: "107296010"
 
 ## <a name="how-to-opt-out-of-using-a-specific-azure-active-directory-tenant-in-visual-studio"></a>如何選擇不要在 Visual Studio 中使用特定的 Azure Active Directory 租使用者
 
-Visual Studio 2019 16.6 版提供篩選特定租使用者的彈性，而這些租使用者會將這些租使用者隱藏 Visual Studio。 篩選不需要向該租使用者進行驗證，但這也表示您將無法存取任何相關聯的資源。 
+Visual Studio 2019 16.6 版提供個別或全域篩選出租使用者的彈性，可有效地從 Visual Studio hidding 它們。 篩選不需要向該租使用者進行驗證，但這也表示您將無法存取任何相關聯的資源。
 
 當您有多個租使用者，但想要將目標設為特定子集來優化開發環境時，這項功能會很有用。 當您無法驗證特定 CA/MFA 原則時，它也可以協助實例，因為您可以篩選出違規的租使用者。 
 
-### <a name="how-to-filter-out-a-tenant"></a>如何篩選出租使用者
+### <a name="how-to-filter-out-all-tenants"></a>如何篩選出所有租使用者
+若要全域篩選所有租使用者，請開啟 [帳戶設定] 對話方塊， **(檔案 > 帳戶設定 ... )** 並取消選取 [ **跨所有 Azure Active directory 進行驗證** ] 核取方塊。
+
+取消選擇該選項可確保您只會使用帳戶的預設租使用者進行驗證。 這也表示您將無法存取任何與其他租使用者相關聯的資源。您的帳戶可能是來賓帳戶。
+
+### <a name="how-to-filter-out-individual-tenants"></a>如何篩選掉個別租使用者
 若要篩選與您的 Visual Studio 帳戶相關聯的租使用者，請開啟 [帳戶設定] 對話方塊， ([檔案 **> 帳戶設定 ...] )** 然後按一下 [套用 **篩選**]。 
 </br>
 </br>

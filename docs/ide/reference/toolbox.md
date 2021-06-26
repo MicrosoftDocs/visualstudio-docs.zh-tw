@@ -6,7 +6,6 @@ ms.date: 06/01/2020
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
-- vs.toolbox
 helpviewer_keywords:
 - Toolbox [Visual Studio]
 - custom controls [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a926084ccd8b1aafabb50f5a93f3f46d77bc6d4
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 0a4947562eb49501e60711111d8765716cbae5c6
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308463"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925211"
 ---
 # <a name="toolbox"></a>工具箱
 
@@ -74,7 +73,7 @@ ms.locfileid: "112308463"
 
 您可以使用以 [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) 或 [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md) 為基礎的專案範本，以開始建立自訂 [工具箱] 控制項。 您接著可以將自訂控制項發佈給小組成員，或使用[工具箱控制項安裝程式](https://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)將它發佈到網路上。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 詳閱下列連結，以深入瞭解一些可用的 [ **工具箱** ] 索引標籤：
 

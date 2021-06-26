@@ -4,8 +4,6 @@ description: 瞭解如何使用 [參考管理員] 對話方塊來新增和管理
 ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: how-to
-f1_keywords:
-- VS.ReferenceManager
 helpviewer_keywords:
 - C# projects, references
 - references [Visual Studio], adding
@@ -23,12 +21,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 82300d90d890cf632693fe07b5873423a29da0ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 552ec8364bb58b72199bacecca99283303eb174c
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893356"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924912"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用參考管理員新增或移除參考
 
@@ -191,11 +189,11 @@ SDK 是檔案集合，Visual Studio 會將這個集合視為單一元件。 在 
 
 您無法瀏覽至 SDK，並將它新增至您的專案。 您只能流覽至檔案 (例如，元件或 *winmd*) ，並將它新增至您的專案。
 
-當執行 winmd 的檔案參考時，預期的配置是將 *\<FileName> WinMD*、 *\<FileName> .dll* 和 *\<FileName> pri* 檔案全部放置在一起。 如果您在下列情境中參考 WinMD，會將不完整的檔案集合複製到專案輸出目錄中，因此造成建置和執行階段失敗發生。
+當執行 winmd 的檔案參考時，預期的配置是將 *\<FileName> WinMD*、 *\<FileName>.dll* 和 *\<FileName> pri* 檔案全部放置在一起。 如果您在下列情境中參考 WinMD，會將不完整的檔案集合複製到專案輸出目錄中，因此造成建置和執行階段失敗發生。
 
-- **原生元件**：原生專案會為每一個不相鄰的命名空間集合建立一個 WinMD，並且建立一個包含實作的 DLL。 WinMD 會有不同的名稱。 參考這個原生元件檔時，MSBuild 不會將採用不同名稱的 WinMD 辨識為同一個元件。 因此，只會複製名稱相同的 *\<FileName> .dll* 和 *\<FileName> winmd* ，而且會發生執行階段錯誤。 若要解決這個問題，請建立延伸模組 SDK。 如需詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。
+- **原生元件**：原生專案會為每一個不相鄰的命名空間集合建立一個 WinMD，並且建立一個包含實作的 DLL。 WinMD 會有不同的名稱。 參考這個原生元件檔時，MSBuild 不會將採用不同名稱的 WinMD 辨識為同一個元件。 因此，只會複製名稱相同的 *\<FileName>.dll* 和 *\<FileName> winmd* ，並且會發生執行階段錯誤。 若要解決這個問題，請建立延伸模組 SDK。 如需詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。
 
-- **使用控制項**：XAML 控制項至少包含 \<FileName>.winmd、\<FileName>.dll、\<FileName>.pri、\<XamlName>.xaml 和 \<ImageName>.jpg。 建立專案時，與檔案參考相關聯的資源檔將不會複製到專案的輸出目錄中，而且只會複製 *\<FileName> winmd*、 *\<FileName> .dll* 和 *\<FileName> pri* 。 系統會記錄組建錯誤，通知使用者缺少資源 *\<XamlName> .xaml* 和 *\<ImageName> .jpg* 。 若要成功，使用者必須手動將這些資源檔複製到專案輸出目錄中供建置和偵錯/執行階段使用。 若要解決這個問題，請遵循[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)中的步驟建立延伸模組 SDK，或編輯專案檔以新增下列屬性：
+- **使用控制項**：XAML 控制項至少包含 \<FileName>.winmd、\<FileName>.dll、\<FileName>.pri、\<XamlName>.xaml 和 \<ImageName>.jpg。 建立專案時，與檔案參考相關聯的資源檔將不會複製到專案的輸出目錄中，而且只會複製 *\<FileName> winmd*、 *\<FileName>.dll* 和 *\<FileName> pri* 。 系統會記錄組建錯誤，通知使用者缺少資源 *\<XamlName> .xaml* 和 *\<ImageName>.jpg* 。 若要成功，使用者必須手動將這些資源檔複製到專案輸出目錄中供建置和偵錯/執行階段使用。 若要解決這個問題，請遵循[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)中的步驟建立延伸模組 SDK，或編輯專案檔以新增下列屬性：
 
     ```xml
     <PropertyGroup>

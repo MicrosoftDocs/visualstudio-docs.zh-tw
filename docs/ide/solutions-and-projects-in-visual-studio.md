@@ -5,14 +5,11 @@ ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 12/31/2020
 ms.topic: conceptual
 f1_keywords:
-- vs.addnewitem
-- vs.addnewsolutionitem
 - vs.openproject
 - vs.addexistingitem
 - vs.addexistingsolutionitem
 - vs.environment.projects
 - vs.environment.solutions
-- VS.SolutionExplorer
 - VS.SolutionExplorer.Solutions
 helpviewer_keywords:
 - solutions [Visual Studio]
@@ -22,12 +19,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cc760eb34df7f643bbdc16607f2316e92785bf
-ms.sourcegitcommit: 40646cd90ca0701c034311931f026cf67edb74de
+ms.openlocfilehash: 0a186c63cf695184b74780eeb6ab16b85c8aef5e
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112500886"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924964"
 ---
 # <a name="what-are-solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解決方案和專案是什麼？
 

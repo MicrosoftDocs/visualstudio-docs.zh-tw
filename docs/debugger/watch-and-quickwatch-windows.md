@@ -4,8 +4,6 @@ description: 當您進行調試時，請參閱 Watch 和快速監看式中的變
 ms.custom: SEO-VS-2020
 ms.date: 10/11/2018
 ms.topic: how-to
-f1_keywords:
-- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 192a11a028c297dc2c642e65982a978f7b5596a7
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 246f82b2d55e8e15bb5a56afba846a8b5dc8f245
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385015"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924899"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>使用監看式視窗和快速監看變數
 

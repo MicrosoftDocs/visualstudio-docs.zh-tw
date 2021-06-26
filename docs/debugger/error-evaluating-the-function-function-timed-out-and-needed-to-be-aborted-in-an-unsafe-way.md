@@ -3,6 +3,7 @@ title: 評估函數函 &apos; &apos; 式超時，需要以不安全的方式中�
 description: 完整郵件內文：評估函式 ' function ' 超時，且需要以不安全的方式中止。
 ms.date: 06/18/2021
 ms.topic: error-reference
+ms.custom: contperf-fy21q4
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e928bb0ebae1e644729fcaf4f47b7dd461399be6
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 94c308e9ec960f744a98f0f930999df36afff475
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386666"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925003"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>錯誤：評估函數 &#39;函式&#39; 超時，而且需要以不安全的方式中止
 
