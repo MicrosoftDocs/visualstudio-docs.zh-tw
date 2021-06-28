@@ -1,7 +1,10 @@
 ---
 title: 命令列 shell & 提示開發人員
 description: 從 [工具] > 命令列功能表開始。 Visual Studio 開發人員命令提示字元、開發人員 PowerShell 和終端機可讓您更輕鬆地使用 .NET 和 c + + 工具。
-ms.date: 04/11/2021
+author: TerryGLee
+ms.author: tglee
+ms.date: 06/11/2021
+ms.topic: reference
 ms.custom: contperf-fy21q4
 helpviewer_keywords:
 - Visual Studio command prompt
@@ -11,12 +14,12 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 57cbc93f4b6e8cf64dd5149462788e0cde833350
-ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
+ms.openlocfilehash: 858845ca5629f64e282e3864daa0201935316062
+ms.sourcegitcommit: b4cc3dee59421f7089112becf128a369acadaf61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107221727"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "112990515"
 ---
 # <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Visual Studio 開發人員命令提示字元和開發人員 PowerShell
 
@@ -37,7 +40,7 @@ Visual Studio 2019 包含適用于開發人員的兩個命令列 shell：
 
 這兩個 shell 都有特定的環境變數設定，可讓您更輕鬆地使用命令列開發人員工具。 開啟其中一個 shell 之後，您可以為不同的公用程式輸入命令，而不需要知道它們的所在位置。 
 
-|常用命令|Description|
+|常用命令|描述|
 |--|--|
 |[`MSBuild`](../../msbuild/msbuild-command-line-reference.md)|建立專案或方案|
 |[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| 適用于 clr 的 [.NET Framework 工具](/dotnet/framework/tools/index) 。|
