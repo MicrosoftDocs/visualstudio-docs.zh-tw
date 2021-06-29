@@ -7,14 +7,26 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: a40434845187490ee4f8437f8e15963bddd1998f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab67a81d761f2e17c82b75fb59a201188cf80986
+ms.sourcegitcommit: b770b99034e65c91b29bea87bc6f5fa02348515b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843783"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "112997627"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>從伺服器總管存取 Azure 虛擬機器
+
+::: moniker range=">=vs-2022"
+> [!Important]
+> 伺服器總管的 Azure 節點已在 Visual Studio 2022 中淘汰。 您可以使用 Azure 入口網站，或繼續使用舊版 Visual Studio 中伺服器總管的 Azure 節點。
+>
+> 此外， [Microsoft Azure 儲存體總管](/azure/vs-azure-tools-storage-manage-with-storage-explorer) 是 Microsoft 提供的免費獨立應用程式。 您可以使用它在 Windows、macOS 和 Linux 上以視覺化方式處理 Azure 儲存體資料。
+>
+> 如需 Visual Studio 2022 的詳細資訊，請參閱我們的 [版本](/visualstudio/releases/2022/release-notes-preview/)資訊。
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 如果您有 Azure 主控的虛擬機器，您可以在 [伺服器總管] 中存取它們。 您必須先登入您的 Azure 訂用帳戶，才能檢視您的行動服務。 若要登入，請在 [伺服器總管] 中開啟 [Azure] 節點的捷徑功能表，並選擇 [連線到 Microsoft Azure] 。
 
@@ -26,7 +38,7 @@ ms.locfileid: "99843783"
    | --- | --- |
    | DNS 名稱 |包含虛擬機器網際網路位址的 URL。 |
    | 環境 |若是虛擬機器，這個屬性的值一定是 [生產]。 |
-   | 名稱 |虛擬機器的名稱。 |
+   | Name |虛擬機器的名稱。 |
    | 大小 |虛擬機器的大小，此值會反映可用的記憶體和磁碟空間數量。 如需詳細資訊，請參閱 [虛擬機器大小](/azure/cloud-services/cloud-services-sizes-specs)。 |
    | 狀態 |值包括 [啟動中]、[已啟動]、[停止中]、[已停止] 和 [正在擷取狀態]。 如果出現 [正在擷取狀態]，則目前狀態是未知的。 這個屬性的值不同於 [Azure 入口網站](https://portal.azure.com)上所使用的值。 |
    | SubscriptionID |Azure 帳戶的訂用帳戶識別碼。 您可以透過檢視訂用帳戶的屬性，在 [Azure 入口網站](https://portal.azure.com)上顯示這項資訊。 |
@@ -35,7 +47,9 @@ ms.locfileid: "99843783"
 
    | 屬性 | 描述 |
    | --- | --- |
-   | 名稱 |端點的識別碼 |
+   | Name |端點的識別碼 |
    | 私人連接埠 |網路內部存取應用程式的連接埠。 |
    | 通訊協定 |此端點的傳輸層所使用的通訊協定：TCP 或 UDP。 |
    | 公用連接埠 |提供公用存取應用程式使用的通訊埠。 |
+
+::: moniker-end

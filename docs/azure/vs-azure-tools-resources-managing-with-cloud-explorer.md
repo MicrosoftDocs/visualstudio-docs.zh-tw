@@ -7,14 +7,28 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 532195bad81fc9162b854493d5aca9bb2fa7f600
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 08ccab99df40247390894aa53d5073a3aff0c561
+ms.sourcegitcommit: b770b99034e65c91b29bea87bc6f5fa02348515b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843939"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "112997653"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>在 Visual Studio Cloud Explorer 中管理與 Azure 帳戶關聯的資源
+
+::: moniker range=">=vs-2022"
+> [!Important]
+> Cloud Explorer 已在 Visual Studio 2022 中淘汰。 相反地，您可以使用下列替代方案：
+> - 使用 [Microsoft Azure 儲存體總管](/azure/vs-azure-tools-storage-manage-with-storage-explorer) 是 Microsoft 提供的免費獨立應用程式。 您可以使用它在 Windows、macOS 和 Linux 上以視覺化方式處理 Azure 儲存體資料。
+> - [Kudu console](https://github.com/projectkudu/kudu/wiki/Kudu-console) (Kudu 主控台) 可讓您透過直接且提高權限的命令列存取 App Service 伺服器和其檔案系統。 這既是一項重要的偵錯工具，也可讓 CLI 作業 (例如安裝套件) 順利進行。
+>
+> 如有需要，您可以使用 Azure 入口網站，或繼續使用舊版 Visual Studio 中伺服器總管的 Azure 節點。
+>
+> 如需 Visual Studio 2022 的詳細資訊，請參閱我們的 [版本](/visualstudio/releases/2022/release-notes-preview/)資訊。
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 Cloud Explorer 可讓您從 Visual Studio 內檢視您的 Azure 資源和資源群組、檢查其屬性，以及執行重要的開發人員診斷動作。
 
@@ -104,3 +118,5 @@ Cloud Explorer 可讓您從 Visual Studio 內檢視您的 Azure 資源和資源�
   ![在 [雲端總管] 中尋找資源](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 
 當您在 [搜尋] 方塊中輸入字元時，只有符合這些字元的資源才會出現在資源樹狀目錄中。
+
+::: moniker-end
