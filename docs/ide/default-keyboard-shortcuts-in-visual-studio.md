@@ -2,7 +2,7 @@
 title: 預設鍵盤快速鍵
 description: 瞭解 Visual Studio 中的預設鍵盤快速鍵，可讓您存取各種命令和視窗。
 ms.custom: SEO-VS-2020
-ms.date: 05/21/2021
+ms.date: 06/21/2021
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac74ed04faaaf4626e63be7393a650b1bea225f3
-ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
+ms.openlocfilehash: a474a81ea70276ecee54beb8e82ab85afdb225b9
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110328688"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038638"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
@@ -28,11 +28,171 @@ ms.locfileid: "110328688"
 
 如需常用鍵盤快速鍵的清單和其他產能資訊，請參閱：
 
-- [常用命令的鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [鍵盤祕訣](../ide/productivity-shortcuts.md)
 - [生產力秘訣](../ide/productivity-features.md)。
 
 如需 Visual Studio 中協助工具的詳細資訊，請參閱 [協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md) 和 how [to：以獨佔方式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
+
+
+
+## <a name="most-popular-keyboard-shortcuts"></a>最熱門鍵盤快速鍵
+
+除非另有指定，否則本節中的所有快速鍵都會全域套用。 「全域」內容表示快速鍵適用於 Visual Studio 中的任何工具視窗。
+
+> [!NOTE]
+> 您可以開啟 [選項] 對話方塊，展開 [環境] 節點，然後選擇 [鍵盤]，以[查看任何命令的捷徑](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。
+
+
+#### <a name="build-popular-shortcuts"></a>組建：熱門快速鍵
+
+|命令|鍵盤快速鍵 |
+|--------------| - |
+|Build.BuildSolution|**Ctrl + Shift + B** |
+|Build.Cancel|**Ctrl + Break** |
+|Build.Compile|**Ctrl+F7** |
+|Build.RunCodeAnalysisonSolution|**Alt+F11**|
+
+#### <a name="debug-popular-shortcuts"></a>Debug：熱門快速鍵
+
+|命令|鍵盤快速鍵 [特殊內容]|
+|--------------| - |
+|Debug.BreakatFunction|**Ctrl + B**|
+|Debug.BreakAll|**Ctrl + Alt + Break**|
+|Debug.DeleteAllBreakpoints|**Ctrl + Shift + F9**|
+|Debug.Exceptions|**Ctrl + Alt + E**|
+|Debug.QuickWatch|**Ctrl + Alt + Q**<br /><br />或 **Shift + F9**|
+|Debug.Restart|**Ctrl+Shift+F5**|
+|Debug.RunToCursor|**Ctrl + F10**|
+|Debug.SetNextStatement|**Ctrl+Shift+F10**|
+|Debug.Start|**F5**|
+|Debug.StartWithoutDebugging|**Ctrl + F5**|
+|Debug.StepInto|**F11**|
+|Debug.StepOut|**Shift + F11**|
+|Debug.StepOver|**F10**|
+|Debug.StopDebugging|**Shift + F5**|
+|Debug.ToggleBreakpoint|**F9**|
+
+#### <a name="edit-popular-shortcuts"></a>編輯：熱門快速鍵
+
+|命令|鍵盤快速鍵 [特殊內容]|
+|--------------| - |
+|Edit.BreakLine|**Enter** [文字編輯器、報表設計工具、Windows Form 設計工具]<br /><br />或 **Shift + Enter** [文字編輯器]|
+|Edit.CollapseToDefinitions|**Ctrl + M**、 **ctrl + O** [文字編輯器]|
+|Edit.CommentSelection|**Ctrl + K**、 **ctrl + C** [文字編輯器]|
+|Edit.CompleteWord|**Alt + 向右箭** 號 [文字編輯器，工作流程設計工具]<br /><br />或 **Ctrl+空格鍵** [文字編輯器、工作流程設計工具]<br /><br />或 **Ctrl+K**、**W** [工作流程設計工具]<br /><br />或 **Ctrl+K、Ctrl+W** [工作流程設計工具]|
+|Edit.Copy|**Ctrl + C**<br /><br />或 **Ctrl + Insert**|
+|Edit.Cut|**Ctrl + X**<br /><br />或 **Shift + Delete**|
+|Edit.Delete|**刪除** [Team Explorer]<br /><br />或 **Shift + Delete** [順序圖、UML 活動圖、分層圖]<br /><br />或 **Ctrl + Delete** [類別圖表]|
+|Edit.Find|**Ctrl + F**|
+|Edit.FindAllReferences|**Shift + F12**|
+|Edit.FindinFiles|**Ctrl + Shift + F**|
+|Edit.FindNext|**F3**|
+|Edit.FindNextSelected|**Ctrl + F3**|
+|Edit.FormatDocument|**Ctrl+K、Ctrl+D** [文字編輯器]|
+|Edit.FormatSelection|**Ctrl+K、Ctrl+F** [文字編輯器]|
+|Edit.GoTo|**Ctrl + G**|
+|Edit.GoToDeclaration|**Ctrl+F12**|
+|Edit.GoToDefinition|**F12**|
+|Edit.GoToFindCombo|**Ctrl+D**|
+|Edit.GoToNextLocation|**F8**|
+|Edit.InsertSnippet|**Ctrl + K**、 **ctrl + X**|
+|Edit.InsertTab|**Tab** [報表設計工具、Windows Form 設計工具、文字編輯器]|
+|Edit.LineCut|**Ctrl+L** [文字編輯器]|
+|Edit.LineDownExtendColumn|**Shift+Alt+向下鍵** [文字編輯器]|
+|Edit.LineOpenAbove|**Ctrl + Enter** [文字編輯器]|
+|Edit.ListMembers|**Ctrl+J** [文字編輯器、工作流程設計工具]<br /><br />或 **ctrl + K、ctrl + L** [工作流程設計工具]<br /><br />或 **Ctrl+K、L** [工作流程設計工具]|
+|Edit.NavigateTo|**Ctrl +、**|
+|Edit.OpenFile|**Ctrl + Shift + G**|
+|Edit.OvertypeMode|**插入** [文字編輯器]|
+|Edit.ParameterInfo|**Ctrl+Shift+空格鍵** [文字編輯器、工作流程設計工具]<br /><br />或 **Ctrl+K、Ctrl+P** [工作流程設計工具]<br /><br />或 **Ctrl+K、P** [工作流程設計工具]|
+|Edit.Paste|**Ctrl + V**<br /><br />或 **Shift + Insert**|
+|Edit.PeekDefinition|**Alt + F12** [文字編輯器]|
+|Edit.Redo|**Ctrl + Y**<br /><br />或 **Shift + Alt + 倒退鍵**<br /><br />或 **Ctrl + Shift + Z**|
+|Edit.Replace|**Ctrl + H**|
+|Edit.SelectAll|**Ctrl + A**|
+|Edit.SelectCurrentWord|**Ctrl + W** [文字編輯器]|
+|Edit.SelectionCancel|**Esc** [文字編輯器、報表設計師、設定設計工具、Windows Form 設計工具、Managed 資源編輯器]|
+|Edit.SurroundWith|**Ctrl + K、Ctrl + S**|
+|Edit.TabLeft|**Shift+Tab** [文字編輯器、報表設計工具、Windows Form 編輯器]|
+|Edit.ToggleAllOutlining|**Ctrl+M、Ctrl+L** [文字編輯器]|
+|Edit.ToggleBookmark|**Ctrl + k、ctrl + k** [文字編輯器]|
+|Edit.ToggleCompletionMode|**Ctrl+Alt+空格鍵** [文字編輯器]|
+|Edit.ToggleOutliningExpansion|**Ctrl+M、Ctrl+M** [文字編輯器]|
+|Edit.UncommentSelection|**Ctrl+K、Ctrl+U** [文字編輯器]|
+|Edit.Undo|**Ctrl + Z**<br /><br />或 **Alt + 倒退鍵**|
+|Edit.WordDeleteToEnd|**Ctrl + Delete** [文字編輯器]|
+|Edit.WordDeleteToStart|**Ctrl+退格鍵** [文字編輯器]|
+
+#### <a name="file-popular-shortcuts"></a>File：常用的快捷方式
+
+|命令|鍵盤快速鍵 [特殊內容]|
+|--------------| - |
+|File.Exit|**Alt + F4**|
+|File.NewFile|**Ctrl + N**|
+|File.NewProject|**Ctrl + Shift + N**|
+|File.NewWebSite|**Shift+Alt+N**|
+|File.OpenFile|**Ctrl + O**|
+|File.OpenProject|**Ctrl + Shift + O**|
+|File.OpenWebSite|**Shift+Alt+O**|
+|File.Rename|**F2** [Team Explorer]|
+|File.SaveAll|**Ctrl + Shift + S**|
+|File.SaveSelectedItems|**Ctrl + S**|
+|File.ViewinBrowser|**Ctrl + Shift + W**|
+
+#### <a name="project-popular-shortcuts"></a>專案：熱門快速鍵
+
+|命令|鍵盤快速鍵 [特殊內容]|
+|--------------| - |
+|Project.AddExistingItem|**Shift + Alt + A**|
+|Project.AddNewItem|**Ctrl + Shift + A**|
+
+#### <a name="refactor-popular-shortcuts"></a>重構：熱門快速鍵
+
+|命令|鍵盤快速鍵 [特殊內容]|
+|-------------| - |
+|Refactor.ExtractMethod|**Ctrl+R、Ctrl+M**|
+
+#### <a name="tools-popular-shortcuts"></a>工具：熱門快速鍵
+
+|命令|鍵盤快速鍵 [特殊內容]|
+|-------------| - |
+|Tools.AttachtoProcess|**Ctrl + Alt + P**|
+
+#### <a name="view-popular-shortcuts"></a>View：熱門快速鍵
+
+|命令|鍵盤快速鍵 [特殊內容]|
+|--------------| - |
+|View.ClassView|**Ctrl + Shift + C**|
+|View.EditLabel|**F2**|
+|View.ErrorList|**Ctrl + \\ 、ctrl + E**<br /><br />或 **Ctrl + \\ 、E**|
+|View.NavigateBackward|**Ctrl +-**|
+|View.NavigateForward|**Ctrl + Shift +-**|
+|View.ObjectBrowser|**Ctrl + Alt + J**|
+|View.Output|**Ctrl + Alt + O**|
+|View.PropertiesWindow|**F4**|
+|View.Refresh|**F5** [Team Explorer]|
+|View.ServerExplorer|**Ctrl+Alt+S**|
+|View.ShowSmartTag|**Ctrl +。**<br /><br />或 **Shift + Alt + F10** [HTML 編輯器設計檢視]|
+|View.SolutionExplorer|**Ctrl + Alt + L**|
+|View.TfsTeamExplorer|**Ctrl + \\ 、ctrl + M**|
+|View.Toolbox|**Ctrl + Alt + X**|
+|View.ViewCode|**Enter** [類別圖表]<br /><br />或 **F7** [設定設計工具]|
+|View.ViewDesigner|**Shift+F7** [HTML 編輯器原始碼檢視]|
+
+#### <a name="window-popular-shortcuts"></a>視窗：熱門快速鍵
+
+|命令|鍵盤快速鍵 [特殊內容]|
+|--------------| - |
+|Window.ActivateDocumentWindow|**Esc**|
+|Window.CloseDocumentWindow|**Ctrl + F4**|
+|Window.NextDocumentWindow|**Ctrl + F6**|
+|Window.NextDocumentWindowNav|**Ctrl + Tab**|
+|Window.NextSplitPane|**F6**|
+
+
+## <a name="global-shortcuts"></a>全域快速鍵
+
+這些鍵盤快速鍵都是 *全域* 的，也就是說，您可以在任何 Visual Studio 視窗有焦點時使用這些快速鍵。
 
 - [分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [編輯](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
@@ -59,10 +219,6 @@ ms.locfileid: "110328688"
 - [Team Foundation 內容功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
 - [Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
 - [診斷中樞](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
-
-## <a name="global-shortcuts"></a>全域快速鍵
-
-這些鍵盤快速鍵都是 *全域* 的，也就是說，您可以在任何 Visual Studio 視窗有焦點時使用這些快速鍵。
 
 ### <a name="analyze"></a><a name="bkmk_analyze"></a> 分析
 
@@ -466,7 +622,12 @@ ms.locfileid: "110328688"
 |WindowsAzure.RetryMobileServiceScriptOperation|**Ctrl + Num \* 、ctrl + R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**Ctrl + Num \* 、ctrl + D**|
 
-## <a name="adonet-entity-data-model-designer"></a>ADO.NET 實體資料模型設計工具
+## <a name="context-specific-shortcuts"></a>特定內容的快捷方式
+
+
+### <a name="adonet-entity-data-model-designer"></a>ADO.NET 實體資料模型設計工具
+
+此內容的特定快速鍵如下：
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -481,7 +642,10 @@ ms.locfileid: "110328688"
 |View.EntityDataModelBrowser|**Ctrl + 1**|
 |View.EntityDataModelMappingDetails|**Ctrl + 2**|
 
-## <a name="class-diagram"></a>類別圖表
+### <a name="class-diagram"></a>類別圖表
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -493,7 +657,10 @@ ms.locfileid: "110328688"
 |Edit.RemovefromDiagram|**刪除**|
 |View.ViewCode|**Enter**|
 
-## <a name="coded-ui-test-editor"></a>自動程式碼 UI 測試編輯器
+### <a name="coded-ui-test-editor"></a>自動程式碼 UI 測試編輯器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -504,14 +671,20 @@ ms.locfileid: "110328688"
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**Ctrl + Alt + C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**Ctrl + Shift + T**|
 
-## <a name="dataset-editor"></a>資料集編輯器
+### <a name="dataset-editor"></a>資料集編輯器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**插入**|
 |OtherContextMenus.DbTableContext.Add.Column|**Ctrl + L**|
 
-## <a name="difference-viewer"></a>差異檢視器
+### <a name="difference-viewer"></a>差異檢視器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -527,7 +700,10 @@ ms.locfileid: "110328688"
 |EditorContextMenus.CodeWindow.AddComment|**Ctrl+Shift+K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**Ctrl + Shift + P**|
 
-## <a name="dom-explorer"></a>DOM 總管
+### <a name="dom-explorer"></a>DOM 總管
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -535,25 +711,34 @@ ms.locfileid: "110328688"
 |DOMExplorer.SelectElement|**Ctrl + B**|
 |DOMExplorer.ShowLayout|**Ctrl + Shift + I**|
 
-## <a name="f-interactive"></a>F# Interactive
+### <a name="f-interactive"></a>F# Interactive
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**Ctrl + Break**|
 
-## <a name="graph-document-editor"></a>圖形文件編輯器
+### <a name="graph-document-editor"></a>圖形文件編輯器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**插入**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**我**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**輸出**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl+Shift+K**<br /><br /> 或<br /><br /> **Ctrl+E、C**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**刪除**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-## <a name="graphics-diagnostics"></a>圖形診斷
+### <a name="graphics-diagnostics"></a>圖形診斷
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -567,13 +752,19 @@ ms.locfileid: "110328688"
 |Graphics.ZoomIn|**Shift + Alt + =**|
 |Graphics.ZoomOut|**Shift + Alt +-**|
 
-## <a name="html-editor"></a>HTML 編輯器
+### <a name="html-editor"></a>HTML 編輯器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M、Ctrl+G**|
 
-## <a name="html-editor-design-view"></a>HTML 編輯器設計檢視
+### <a name="html-editor-design-view"></a>HTML 編輯器設計檢視
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -596,7 +787,10 @@ ms.locfileid: "110328688"
 |View.ViewMarkup|**Shift+F7**|
 |Window.PreviousTab|**Ctrl+PgUp**|
 
-## <a name="html-editor-source-view"></a>HTML 編輯器原始碼檢視
+### <a name="html-editor-source-view"></a>HTML 編輯器原始碼檢視
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -606,13 +800,19 @@ ms.locfileid: "110328688"
 |View.ViewDesigner|**Shift+F7**|
 |Window.PreviousTab|**Ctrl+PgUp**|
 
-## <a name="layer-diagram"></a>分層圖
+### <a name="layer-diagram"></a>分層圖
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.Delete|**Shift + Delete**|
 
-## <a name="managed-resources-editor"></a>Managed 資源編輯器
+### <a name="managed-resources-editor"></a>Managed 資源編輯器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -627,7 +827,10 @@ ms.locfileid: "110328688"
 |Resources.Other|**Ctrl + 6**|
 |Resources.Strings|**Ctrl + 1**|
 
-## <a name="merge-editor-window"></a>合併編輯器視窗
+### <a name="merge-editor-window"></a>合併編輯器視窗
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -635,7 +838,10 @@ ms.locfileid: "110328688"
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**Alt+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**Alt+3**|
 
-## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools，結構描述比較
+### <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools，結構描述比較
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -646,7 +852,10 @@ ms.locfileid: "110328688"
 |SQL.SSDTSchemaCompareStop|**Alt + Break**|
 |SQL.SSDTSchemaCompareWriteUpdates|**Shift+Alt+U**|
 
-## <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools，資料表設計工具
+### <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools，資料表設計工具
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -657,7 +866,10 @@ ms.locfileid: "110328688"
 |SQL.Rename|**F2**<br /><br /> 或<br /><br /> **Ctrl+R、R**<br /><br /> 或<br /><br /> **Ctrl+R、Ctrl+R**|
 |ViewFileInScriptPanel|**Shift+Alt+PgDn**|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools，T-SQL 編輯器
+### <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools，T-SQL 編輯器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -678,7 +890,10 @@ ms.locfileid: "110328688"
 |TSqlEditorCloneQuery|**Ctrl + Alt + N**|
 |TSqlEditorDatabaseCombo|**Shift+Alt+PgDn**|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools，T-SQL PDW 編輯器
+### <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools，T-SQL PDW 編輯器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -693,13 +908,19 @@ ms.locfileid: "110328688"
 |TSqlEditorCloneQuery|**Ctrl + Alt + N**|
 |TSqlEditorDatabaseCombo|**Shift+Alt+PgDn**|
 
-## <a name="page-inspector"></a>Page Inspector
+### <a name="page-inspector"></a>Page Inspector
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
-## <a name="query-designer"></a>查詢設計工具
+### <a name="query-designer"></a>查詢設計工具
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -712,7 +933,10 @@ ms.locfileid: "110328688"
 |QueryDesigner.Results|**Ctrl + 4**|
 |QueryDesigner.SQL|**Ctrl + 3**|
 
-## <a name="query-results"></a>查詢結果
+### <a name="query-results"></a>查詢結果
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -720,7 +944,10 @@ ms.locfileid: "110328688"
 |SQL.QueryResultsRefresh|**Shift+Alt+R**|
 |SQL.QueryResultsStop|**Alt + Break**|
 
-## <a name="report-designer"></a>報表設計師
+### <a name="report-designer"></a>報表設計師
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -746,14 +973,20 @@ ms.locfileid: "110328688"
 |Edit.TabLeft|**Shift + Tab**|
 |View.ReportData|**Ctrl + Alt + D**|
 
-## <a name="sequence-diagram"></a>順序圖表
+### <a name="sequence-diagram"></a>順序圖表
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**Shift+Del**|
 
-## <a name="settings-designer"></a>設定設計工具
+### <a name="settings-designer"></a>設定設計工具
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -762,13 +995,19 @@ ms.locfileid: "110328688"
 |Edit.SelectionCancel|**Esc**|
 |View.ViewCode|**F7**|
 
-## <a name="solution-explorer"></a>方案總管
+### <a name="solution-explorer"></a>方案總管
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**Ctrl+K、Ctrl+G**|
 
-## <a name="team-explorer"></a>Team Explorer
+### <a name="team-explorer"></a>Team Explorer
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |-------------| - |
@@ -793,13 +1032,19 @@ ms.locfileid: "110328688"
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Shift+Alt+L**|
 |View.Refresh|**F5**|
 
-## <a name="test-explorer"></a>測試總管
+### <a name="test-explorer"></a>測試總管
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-## <a name="text-editor"></a>文字編輯器
+### <a name="text-editor"></a>文字編輯器
+
+此內容的特定快速鍵如下：
+
 
 | 命令 | 鍵盤快速鍵 |
 | - | - |
@@ -918,38 +1163,56 @@ ms.locfileid: "110328688"
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **Alt+PgDn** |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **Alt+PgUp** |
 
-## <a name="uml-activity-diagram"></a>UML 活動圖表
+### <a name="uml-activity-diagram"></a>UML 活動圖表
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.Delete|**Shift+Del**|
 
-## <a name="uml-class-diagram"></a>UML 類別圖表
+### <a name="uml-class-diagram"></a>UML 類別圖表
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
-## <a name="uml-component-diagram"></a>UML 元件圖表
+### <a name="uml-component-diagram"></a>UML 元件圖表
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
-## <a name="uml-use-case-diagram"></a>UML 使用案例圖表
+### <a name="uml-use-case-diagram"></a>UML 使用案例圖表
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
-## <a name="vc-accelerator-editor"></a>VC 快速鍵編輯器
+### <a name="vc-accelerator-editor"></a>VC 快速鍵編輯器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |Edit.NewAccelerator|**插入**|
 |Edit.NextKeyTyped|**Ctrl + W**|
 
-## <a name="vc-dialog-editor"></a>VC 對話方塊編輯器
+### <a name="vc-dialog-editor"></a>VC 對話方塊編輯器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -983,7 +1246,10 @@ ms.locfileid: "110328688"
 |Format.TestDialog|**Ctrl + T**|
 |Format.ToggleGuides|**Ctrl + G**|
 
-## <a name="vc-image-editor"></a>VC 影像編輯器
+### <a name="vc-image-editor"></a>VC 影像編輯器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1025,13 +1291,19 @@ ms.locfileid: "110328688"
 |Image.ZoomIn|**Ctrl + Shift +。**<br /><br /> 或<br /><br /> **Ctrl + 向上鍵**|
 |Image.ZoomOut|**Ctrl + Shift +、**<br /><br /> 或<br /><br /> **Ctrl + 向下鍵**|
 
-## <a name="vc-string-editor"></a>VC 字串編輯器
+### <a name="vc-string-editor"></a>VC 字串編輯器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.NewString|**插入**|
 
-## <a name="view-designer"></a>檢視設計工具
+### <a name="view-designer"></a>檢視設計工具
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1044,13 +1316,19 @@ ms.locfileid: "110328688"
 |QueryDesigner.Results|**Ctrl + 4**|
 |QueryDesigner.SQL|**Ctrl + 3**|
 
-## <a name="visual-studio"></a>Visual Studio
+### <a name="visual-studio"></a>Visual Studio
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**Ctrl + 1**|
 
-## <a name="windows-forms-designer"></a>Windows Form 設計工具
+### <a name="windows-forms-designer"></a>Windows Form 設計工具
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1079,7 +1357,10 @@ ms.locfileid: "110328688"
 |Edit.SizeControlUp|**Ctrl+Shift+向上鍵**|
 |Edit.TabLeft|**Shift + Tab**|
 
-## <a name="work-item-editor"></a>工作項目編輯器
+### <a name="work-item-editor"></a>工作項目編輯器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1087,7 +1368,10 @@ ms.locfileid: "110328688"
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Shift+Alt+L**|
 
-## <a name="work-item-query-view"></a>工作項目查詢檢視
+### <a name="work-item-query-view"></a>工作項目查詢檢視
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1098,7 +1382,10 @@ ms.locfileid: "110328688"
 |Team.Refresh|**F5**|
 |Window.Toggle|**Shift+Alt+V**|
 
-## <a name="work-item-results-view"></a>工作項目結果檢視
+### <a name="work-item-results-view"></a>工作項目結果檢視
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1111,7 +1398,10 @@ ms.locfileid: "110328688"
 |Team.Refresh|**F5**|
 |Window.Toggle|**Shift+Alt+V**|
 
-## <a name="workflow-designer"></a>工作流程設計工具
+### <a name="workflow-designer"></a>工作流程設計工具
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1139,7 +1429,10 @@ ms.locfileid: "110328688"
 |WorkflowDesigner.ZoomIn|**Ctrl+Num +**|
 |WorkflowDesigner.ZoomOut|**Ctrl + Num-**|
 
-## <a name="xaml-ui-designer"></a>XAML 設計工具
+### <a name="xaml-ui-designer"></a>XAML 設計工具
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1161,14 +1454,20 @@ ms.locfileid: "110328688"
 |View.EdgeRightMoveRight|**Ctrl + Shift + Alt +。**|
 |View.ShowPropertyMarkerMenu|**Ctrl + 空格鍵**|
 
-## <a name="xml-text-editor"></a>XML (文字) 編輯器
+### <a name="xml-text-editor"></a>XML (文字) 編輯器
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |XML.StartXSLTDebugging|**Alt + F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl+Alt+F5**|
 
-## <a name="xml-schema-designer"></a>XML 結構描述設計工具
+### <a name="xml-schema-designer"></a>XML 結構描述設計工具
+
+此內容的特定快速鍵如下：
+
 
 |命令|鍵盤快速鍵|
 |--------------| - |

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6de31ed1b649f226ac47161fdadfe44d434289b9
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 09a33db9df8e1309792cd6a3722bb82333348d84
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308515"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038651"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>適用於 C# 開發人員的 Visual Studio 生產力指南
 
@@ -64,7 +64,7 @@ ms.locfileid: "112308515"
 > [!NOTE]
 > 有些擴充功能會將預設的 Visual Studio 按鍵繫結關係解除繫結。 若要使用上述命令，請前往 [**工具** 匯  >  **入和匯出設定**  >  **重設所有設定** 或 **工具**  >  **選項** 的  >  **鍵盤**  >  **重設**]，將您的 keybindings.json 還原為 Visual Studio 的預設值。
 
-如需鍵盤快速鍵和命令的詳細資訊，請參閱[生產力快速鍵](../ide/productivity-shortcuts.md)及[常用鍵盤快速鍵](default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)。
+如需鍵盤快速鍵和命令的詳細資訊，請參閱[生產力快速鍵](../ide/productivity-shortcuts.md)及[常用鍵盤快速鍵](default-keyboard-shortcuts-in-visual-studio.md)。
 
 ## <a name="navigate-quickly-to-files-or-types"></a>快速巡覽至檔案或類型
 

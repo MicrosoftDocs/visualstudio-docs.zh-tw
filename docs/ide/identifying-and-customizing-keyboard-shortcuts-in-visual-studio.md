@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4686a6459f62fceeebe202cf52d7c30cf99f6fc3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a1a3aa2ace6279211c27847b8b9cc46d71b0d9ad
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221245"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038599"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>識別及自訂 Visual Studio 中的鍵盤快速鍵
 
@@ -35,7 +35,7 @@ ms.locfileid: "102221245"
 
 - 當您選擇捷徑時，是在使用什麼內容。 例如，如果您使用 [設定設計工具]，則 **F2** 快速鍵會叫用 `Edit.EditCell` 命令，如果您使用 Team Explorer，則會叫用 `File.Rename` 命令。
 
-不論設定、自訂和內容為何，您一定可以在 [選項] 對話方塊中找到和變更鍵盤快速鍵。 您也可以在[熱門的鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)中查閱數十個命令的預設鍵盤快速鍵。 如需所有預設快速鍵的完整清單 (以 [一般開發] 設定為基礎)，請參閱[所有鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
+不論設定、自訂和內容為何，您一定可以在 [選項] 對話方塊中找到和變更鍵盤快速鍵。 您也可以在[熱門的鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md#most-popular-keyboard-shortcuts)中查閱數十個命令的預設鍵盤快速鍵。 如需所有預設快速鍵的完整清單 (以 [一般開發] 設定為基礎)，請參閱[所有鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
 如果已在「全域」內容中將捷徑指派給某個命令，而且沒有其他內容，則該捷徑一定會叫用該命令。 不過，捷徑可以在全域內容中指派給某個命令，並在特定的內容中指派給不同命令。 如果您在特定內容中使用這類捷徑，該捷徑會叫用特定內容的命令，而不是全域內容的命令。
 
