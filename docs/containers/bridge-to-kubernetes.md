@@ -1,31 +1,40 @@
 ---
-title: 將橋接至 Kubernetes 與 Visual Studio 搭配使用
-titleSuffix: ''
+title: 教學課程：使用 Bridge 將開發電腦連線至 Kubernetes
 ms.technology: vs-azure
 ms.date: 03/24/2021
-ms.topic: quickstart
-description: 瞭解如何使用橋接器與 Visual Studio Kubernetes，以將您的開發電腦連線至 Kubernetes 叢集
+ms.topic: tutorial
+description: 將您的開發電腦連線至 Kubernetes 叢集，並搭配使用 Bridge 與 Kubernetes 與 Visual Studio。
 keywords: 橋接至 Kubernetes、Azure Dev Spaces、Dev Spaces、Docker、Kubernetes、Azure、容器
 monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jmartens
-ms.openlocfilehash: fdcf31d062fe2be72709979f0892e6a7f535024a
-ms.sourcegitcommit: 2049ec99f1439ec91d002853226934b067b1ee70
+ms.openlocfilehash: b8d6c98d2e2146ad57871b74cd2d522ed2b04259
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105635025"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046114"
 ---
-# <a name="use-bridge-to-kubernetes"></a>使用 Bridge Kubernetes
+# <a name="tutorial-use-bridge-to-kubernetes-to-connect-your-clusters-and-your-development-computers"></a>教學課程：使用 Bridge Kubernetes 來連接您的叢集和開發電腦
 
-您可以使用 Bridge Kubernetes，在您的 Kubernetes 叢集和開發電腦上執行的程式碼之間重新導向流量。 本指南也會提供一個腳本，以在 Kubernetes 叢集上部署具有多個微服務的大型範例應用程式。
+在本教學課程中，您將瞭解如何使用 Bridge Kubernetes，在您的 Kubernetes 叢集和開發電腦上執行的程式碼之間重新導向流量。 
 
-## <a name="before-you-begin"></a>開始之前
+本指南也會提供一個腳本，以在 Kubernetes 叢集上部署具有多個微服務的大型範例應用程式。
 
-本指南使用 [TODO 應用程式範例應用程式][todo-app-github] ，示範如何將您的開發電腦連接到 Kubernetes 叢集。 如果您已經在 Kubernetes 叢集上執行自己的應用程式，您仍然可以遵循下列步驟，並使用您自己的服務名稱。
+若要深入瞭解 Kubernetes 的橋樑，請參閱 [Kubernetes 如何運作的橋樑](overview-bridge-to-kubernetes.md)。
 
-此範例說明如何使用 Bridge Kubernetes，在任何 Kubernetes 叢集上開發簡單待辦事項應用程式的微服務版本。 使用 Visual Studio 的這個範例已從 [TodoMVC](http://todomvc.com)所提供的程式碼中進行調整。 這些步驟應該適用于任何 Kubernetes 叢集。
+## <a name="prerequisites"></a>必要條件
+
+- Kubernetes 叢集
+- [Visual Studio 2019][visual-studio] 16.7 版 Preview 4 或更高版本的 Windows 10 上執行。
+- [已安裝橋接器至 Kubernetes 擴充功能][btk-extension]
+
+## <a name="about-the-data"></a>關於資料
+
+本教學課程會使用 Bridge Kubernetes，在任何 Kubernetes 叢集上開發簡單待辦事項範例應用程式的微服務版本。 此 [TODO 應用程式範例應用程式][todo-app-github]（使用 Visual Studio）已從 [TodoMVC](http://todomvc.com)所提供的程式碼中進行調整。 
+
+ 這些步驟應該適用于任何 Kubernetes 叢集。 因此，如果您已經在 Kubernetes 叢集上執行自己的應用程式，您仍然可以遵循下列步驟，並使用您自己的服務名稱。
 
 TODO 應用程式範例是由前端和後端所組成，可提供持續性的儲存體。 這個擴充的範例會新增統計資料元件，並將應用程式分成數個微服務，具體而言：
 
@@ -37,15 +46,10 @@ TODO 應用程式範例是由前端和後端所組成，可提供持續性的儲
 
 畢竟，這個延伸的 TODO 應用程式是由六個相互關聯的元件所組成。
 
-### <a name="prerequisites"></a>必要條件
-
-- Kubernetes 叢集
-- [Visual Studio 2019][visual-studio] 16.7 版 Preview 4 或更高版本的 Windows 10 上執行。
-- [已安裝橋接器至 Kubernetes 延伸][btk-extension]模組。
 
 ## <a name="check-the-cluster"></a>檢查叢集
 
-開啟命令提示字元，並檢查是否已安裝 kubectl 並在路徑上，您想要使用的叢集是否可用且就緒，並將內容設定為該叢集。
+開啟命令提示字元，並檢查是否已 `kubectl` 安裝且在路徑上，您想要使用的叢集是否可用且就緒，並將內容設定為該叢集。
 
 ```cmd
 kubectl cluster-info
@@ -144,7 +148,7 @@ http://{external-ip}:{local-port}
 
 您可以在 `Bridge to Kubernetes` 開發電腦的 *暫存* 目錄中尋找目錄中的診斷記錄。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 瞭解 Kubernetes 的橋樑如何運作。
 
