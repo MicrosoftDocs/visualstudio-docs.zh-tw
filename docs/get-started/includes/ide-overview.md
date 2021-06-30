@@ -1,17 +1,17 @@
 ---
-ms.date: 05/28/2021
+ms.date: 06/29/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 128a09500aaa326fad717efcade9040496452963
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 452549030d77b90049b12716087544bdd1288a3f
+ms.sourcegitcommit: 7393a37ce77c5b80312ce787baa060c91d41d959
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112362048"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113113660"
 ---
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
@@ -29,7 +29,7 @@ Visual Studio「整合式開發環境」是一個有創意的啟動控制板，�
 
 此圖顯示 Visual Studio，其中包含一個開啟的專案，以及您想要使用的數個重要工具視窗：
 
-- 「方案總管」(右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 **方案總管** 可以將檔案分組到 [方案和專案](../tutorial-projects-solutions.md)中，以協助組織程式碼。
+- 「方案總管」(右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 **方案總管** 可以將檔案分組到 [方案和專案](../../ide/use-solution-explorer.md)中，以協助組織程式碼。
 
 - 「編輯器視窗」(中間) 會顯示檔案內容，您大部分的時間可能都是花在這裡。 您在這裡編輯程式碼或設計使用者介面，例如有按鈕和文字方塊的視窗。
 

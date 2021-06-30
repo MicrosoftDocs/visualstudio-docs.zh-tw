@@ -2,7 +2,7 @@
 title: Visual Studio 概觀
 titleSuffix: ''
 description: 瞭解 Visual Studio 整合式開發環境。
-ms.date: 05/28/2021
+ms.date: 06/29/2021
 ms.technology: vs-ide-general
 ms.topic: overview
 ms.custom:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d50a7f37a3dfe6c5a8ef8e7bf8e113485cf8bc95
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 17f4d80e82a24b5fe4692482c37fcbfa615ee4f9
+ms.sourcegitcommit: 7393a37ce77c5b80312ce787baa060c91d41d959
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385119"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113113661"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>歡迎使用 Visual Studio IDE
 
 [!INCLUDE [overview-part-1](includes/ide-overview.md)]
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 遵循以下其中一篇簡介文章，進一步探索 Visual Studio：
 
