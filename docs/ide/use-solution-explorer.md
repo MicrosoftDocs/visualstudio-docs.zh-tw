@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8360f553dc913164d302ef03a0a32626f83a51c2
-ms.sourcegitcommit: 7393a37ce77c5b80312ce787baa060c91d41d959
+ms.openlocfilehash: 005e6fd3e49d3a3ab739740d2aaa1dd77df5e5df
+ms.sourcegitcommit: 3d0f4930e0ccf49f89bbcfe12a949fbbf37aae07
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113114773"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113131496"
 ---
 # <a name="how-to-use-solution-explorer"></a>如何使用方案總管
 
@@ -48,7 +48,7 @@ ms.locfileid: "113114773"
 
 若要繼續，讓我們仔細看看方案總管的功能表列。
 
-[Visual Studio 中的 [方案總管] 功能表列。](media/solution-explorer-menu-bar.png)
+![Visual Studio 中的 [方案總管] 功能表列。](media/solution-explorer-menu-bar.png)
 
 功能表列包含下列 UI 元素，從左至右：
 
