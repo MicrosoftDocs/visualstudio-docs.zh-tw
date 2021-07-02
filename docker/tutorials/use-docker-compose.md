@@ -5,28 +5,27 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 3bcf3a69dcf8053851e3d8519a25f61fe23ae7e3
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 645d168aefe05040193d564d5c158acfb6688c11
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106082561"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222743"
 ---
 # <a name="use-docker-compose"></a>使用 Docker Compose
 
 [Docker Compose](https://docs.docker.com/compose/) 是為了協助定義和共用多容器應用程式而開發的工具。 透過撰寫，您可以建立 YAML 檔案來定義服務，並使用單一命令，將所有專案向上或全部拉出。
 
-使用撰寫的 *主要* 優點是您可以在檔案中定義應用程式堆疊，將它保留在專案存放庫的根目錄 (它現在是) 的版本控制，而且可以輕鬆地讓其他人參與您的專案。 有些人只需要複製您的存放庫，就可以開始撰寫應用程式。 事實上，您可能會在 GitHub/GitLab 上看到相當多的專案，現在就完成這項工作。
+使用撰寫的 *主要* 優點是您可以在檔案中定義應用程式堆疊，將它保留在專案存放庫的根目錄 (它現在是) 的版本控制，而且可以輕鬆地讓其他人參與您的專案。 有些人只需要複製您的存放庫，就可以開始撰寫應用程式。 事實上，您可能會在 GitHub/GitLab 上看到很多專案，現在就完成這項工作。
 
 那麼，您該如何著手？
 
 ## <a name="install-docker-compose"></a>安裝 Docker Compose
 
-如果您已安裝適用于 Windows 或 Mac 的 Docker Desktop，您已經有 Docker Compose！ Docker 實例也已 Docker Compose 安裝。 如果您是在 Linux 機器上，則必須使用 [此處的指示](https://docs.docker.com/compose/install/)來安裝 Docker Compose。
+如果您已安裝 Windows 或 Mac 的 Docker Desktop，則已 Docker Compose！ Docker 實例也已 Docker Compose 安裝。 如果您是在 Linux 機器上，則必須使用 [此處的指示](https://docs.docker.com/compose/install/)來安裝 Docker Compose。
 
 安裝之後，您應該能夠執行下列各項，並查看版本資訊。
 
@@ -243,7 +242,7 @@ volumes:
 
 1. 首先，請確定沒有任何其他複本的應用程式和資料庫正在執行 (`docker ps` 和 `docker rm -f <ids>`) 。
 
-1. 使用命令來啟動應用程式堆疊 `docker-compose up` 。 新增 `-d` 旗標以在背景中執行所有專案。 或者，您也可以用滑鼠右鍵按一下您的撰寫檔案，然後選取 [VS Code 提要欄位的 [ **撰寫** ] 選項。 
+1. 使用命令來啟動應用程式堆疊 `docker-compose up` 。 新增 `-d` 旗標以在背景中執行所有專案。 或者，您也可以用滑鼠右鍵按一下您的撰寫檔案，然後選取 [VS Code 提要欄位的 [**撰寫**] 選項。 
 
     ```bash
     docker-compose up -d
@@ -280,7 +279,7 @@ volumes:
 
 ## <a name="see-the-app-stack-in-the-docker-extension"></a>請參閱 Docker 延伸模組中的應用程式堆疊
 
-如果您查看 Docker 延伸模組，您可以使用 [齒輪] 和 [group by] 來變更群組選項。 在此情況下，您會想要查看依「撰寫專案名稱」分組的容器：
+如果您查看 Docker 延伸模組，您可以使用 [齒輪] 和 [group by] 來變更群組選項。 在此情況下，您會想要查看依撰寫 Project 名稱來分組的容器：
 
 ![具有撰寫的 VS 延伸模組](media/vs-app-project-collapsed.png)
 
@@ -290,7 +289,7 @@ volumes:
 
 ## <a name="tear-it-all-down"></a>全部拉出
 
-當您準備好將其卸載時，只要執行 `docker-compose down` ，或在 VS Code Docker 擴充功能的 [容器] 清單中的應用程式上按一下滑鼠右鍵，然後選取 [ **向下撰寫**]。 容器將會停止，且會移除網路。
+當您準備好將其卸載時，只要執行 `docker-compose down` ，或在 VS Code Docker 擴充功能的 [容器] 清單中的應用程式上按一下滑鼠右鍵，然後選取 [**向下撰寫**]。 容器將會停止，且會移除網路。
 
 > [!WARNING]
 > **移除磁片** 區依預設，在執行時，不會移除撰寫檔案中的命名磁片區 `docker-compose down` 。 如果您想要移除磁片區，就必須新增 `--volumes` 旗標。

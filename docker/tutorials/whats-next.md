@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 8ca68b2eba710037535b4bd76c744e7c029a53e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e777d80f44c9a11e4d2a893c968d33e348ca442a
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841649"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222691"
 ---
 # <a name="whats-next"></a>後續步驟
 
@@ -37,7 +36,7 @@ CNCF 是不同開放原始碼專案的廠商中立家用，包括 Kubernetes、P
 
 深入瞭解如何使用 VS Code Docker 延伸模組：
 
-- [VS Code Docker 延伸模組總覽](https://code.visualstudio.com/docs/containers/overview)
+- [VS CodeDocker 延伸模組總覽](https://code.visualstudio.com/docs/containers/overview)
 - [開始使用 Node.js](https://code.visualstudio.com/docs/containers/quickstart-node)
 - [開始使用 Python](https://code.visualstudio.com/docs/containers/quickstart-python)
 - [.NET Core 使用者入門](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core)

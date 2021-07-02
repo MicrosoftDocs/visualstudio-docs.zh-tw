@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 8913c558c2860599fbfaaba03fa466d11931a528
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f669baf6f3275f54c7e4a6ff2b31f9c260b2bb9
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837953"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222665"
 ---
 # <a name="image-layering"></a>影像分層
 
@@ -178,9 +177,9 @@ COPY --from=build /app/target/file.war /usr/local/tomcat/webapps
 
 此範例會使用一個稱為 `build`) 的階段 (，以使用 Maven 來執行實際的 JAVA 組建。 第二個階段 (從 `FROM tomcat` 階段開始) 複製檔案 `build` 。 最終的映射只是最後建立的階段 (可以使用旗標) 來覆寫 `--target` 。
 
-### <a name="react-example"></a>回應範例
+### <a name="react-example"></a>React 範例
 
-建立回應的應用程式時，您需要節點環境來編譯 JS 程式碼 (通常會 JSX) 、SASS 樣式表單，以及更多靜態 HTML、JS 和 CSS。 如果您未進行伺服器端轉譯，則您甚至不需要在生產組建中使用節點環境。 為什麼不在靜態 nginx 容器中傳送靜態資源？
+建立 React 的應用程式時，您需要節點環境來編譯 JS 程式碼 (通常會 JSX) 、SASS 樣式表單，以及更多靜態 HTML、JS 和 CSS。 如果您未進行伺服器端轉譯，則您甚至不需要在生產組建中使用節點環境。 為什麼不在靜態 nginx 容器中傳送靜態資源？
 
 ```dockerfile
 FROM node:12 AS build

@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 9ee4109c888888d2dee36804a178f7db8d41753f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9408e099caaef097be3fc4eea26cee2b1889e8e
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841766"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222899"
 ---
 # <a name="persist-your-data"></a> 保存您的資料
 
@@ -36,7 +35,7 @@ ms.locfileid: "99841766"
 
     如果您對命令感到好奇，則會啟動 bash shell，並叫用兩個命令 (它有) 的原因 `&&` 。 第一個部分會挑選單一亂數字，並將其寫入 `/data.txt` 。 第二個命令只是監看檔案，讓容器保持執行狀態。
 
-1. 驗證您可以使用取得容器來查看輸出 `exec` 。 若要這樣做，請開啟 VS Code 擴充功能，然後按一下 [ **附加 Shell** ] 選項。 這會用 `exec` 來在 VS Code 終端機內的容器中開啟 shell。
+1. 驗證您可以使用取得容器來查看輸出 `exec` 。 若要這樣做，請開啟 VS Code 擴充功能，然後按一下 [**附加 Shell** ] 選項。 這會用 `exec` 來在 VS Code 終端機內的容器中開啟 shell。
 
     ![VS Code 將 CLI 開啟至 ubuntu 容器](media/attach_shell.png)
 

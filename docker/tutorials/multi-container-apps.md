@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 0c8c9fb4072da071ba06d5dc371e85db8291353a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d23d1f5d94729741630ee76263fd5b32041e9cfd
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841779"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222912"
 ---
 # <a name="multi-container-apps"></a>多容器應用程式
 
@@ -46,7 +45,7 @@ ms.locfileid: "99841779"
     docker network create todo-app
     ```
 
-1. 啟動 MySQL 容器並將它連結至網路。 我們也會定義一些環境變數，資料庫將使用這些變數來初始化資料庫 (請參閱 [MySQL Docker Hub 清單](https://hub.docker.com/_/mysql/) 中的「環境變數」一節)  (` \ ` `` ` `` 以 Windows PowerShell) 取代字元。
+1. 啟動 MySQL 容器並將它連結至網路。 我們也會定義一些環境變數，資料庫將使用這些變數來初始化資料庫 (請參閱[MySQL Docker Hub 清單](https://hub.docker.com/_/mysql/)中的「環境變數」一節)  (` \ ` `` ` `` 以 Windows PowerShell) 取代字元。
 
     ```bash
     docker run -d \
@@ -179,7 +178,7 @@ Todo 應用程式支援設定一些環境變數來指定 MySQL 連線設定。 �
 
 1. 在您的瀏覽器中開啟應用程式，並將一些專案新增至待辦事項清單。
 
-1. 連接至 MySQL 資料庫，並證明正在將這些專案寫入資料庫中。 請記住，密碼是 **秘密**。
+1. 連線至 MySQL 資料庫，並證明正在將專案寫入資料庫中。 請記住，密碼是 **秘密**。
 
     ```bash
     docker exec -ti <mysql-container-id> mysql -p todos

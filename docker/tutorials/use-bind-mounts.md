@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 6a4aa7623f69f9b02f9649a1a66ade010a823669
-ms.sourcegitcommit: 98d187abd9352d2255348b84d99d015e65caa0ea
+ms.openlocfilehash: ad3737ccfa4b0dae8ad427bd79e4adeb2756795b
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112574109"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222756"
 ---
 # <a name="use-bind-mounts"></a>使用系結裝載
 
@@ -99,7 +98,7 @@ ms.locfileid: "112574109"
 
 為了準備生產環境，您需要將您的資料庫從 SQLite 中的工作遷移到可以更妥善擴充的事物。 為了簡單起見，您將會繼續使用關係資料庫，並將您的應用程式切換為使用 MySQL。 但是，您應該如何執行 MySQL？ 您要如何讓容器互相溝通？ 您將會瞭解下一步！
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 繼續進行本教學課程！
 

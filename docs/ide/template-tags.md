@@ -13,18 +13,18 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: a5f8c3f6e96e8e593fe74fd58b3e8bafab0ad88e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ac4757464d720ca50632833b3911f0d594e1becb
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950610"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222977"
 ---
 # <a name="add-tags-to-project-templates"></a>將標籤新增到專案範本
 
 從 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 16.1 版 Preview 2 開始，您可以將語言、平台和專案類型標籤新增到您的專案範本。 
 
-標記會在 [ **新增專案** ] 對話方塊的兩個位置中使用：
+標記可用於 [**新增 Project** ] 對話方塊中的兩個位置：
 
 - 標籤會出現在範本描述下面。
 
@@ -93,7 +93,7 @@ Visual Studio 提供內建標籤清單。 當您新增內建標籤時，標籤�
 
 下列清單顯示 Visual Studio 中可用的內建標籤。 對應值顯示在括弧中。
 
-| 語言標記 | 平臺標記 | 專案類型標記 |
+| 語言標記 | 平臺標記 | Project 類型標記 |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | 雲端 (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | 主控台 (`console`) |
@@ -123,7 +123,7 @@ Visual Studio 提供內建標籤清單。 當您新增內建標籤時，標籤�
         <Description>A basic template</Description>
         <Icon>TemplateIcon.ico</Icon>
         <ProjectType>csharp</ProjectType>
-        <LanguageTag>C#</LanguageTag>
+        <LanguageTag>csharp</LanguageTag>
         <PlatformTag>windows</PlatformTag>
         <PlatformTag>linux</PlatformTag>
         <PlatformTag>My Platform</PlatformTag>

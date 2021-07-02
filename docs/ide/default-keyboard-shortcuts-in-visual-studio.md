@@ -15,24 +15,30 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23c4fcc02f94f5987ccbfd6c445188990db43de0
-ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
+ms.openlocfilehash: 182102d4de3a2acbec8be82f69650c708817e54c
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113046075"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222964"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
-您可以選擇適當的鍵盤快速鍵，在 Visual Studio 中存取各種 [命令](reference/visual-studio-commands.md) 和視窗。 此頁面會針對您可能已經在安裝 Visual Studio 時選擇的 [一般] 設定檔，列出預設命令捷徑。 無論您選擇哪一個設定檔，都可以開啟 [**選項**] 對話方塊，展開 [**環境**] 節點，然後選擇 [**鍵盤**] 來識別命令 [的快捷方式](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
+您可以選擇適當的鍵盤快速鍵，在 Visual Studio 中存取各種[命令](reference/visual-studio-commands.md)和視窗。 此頁面會針對您可能已經在安裝 Visual Studio 時選擇的 [一般] 設定檔，列出預設命令捷徑。 無論您選擇哪一個設定檔，都可以開啟 [**選項**] 對話方塊，展開 [**環境**] 節點，然後選擇 [**鍵盤**] 來識別命令 [的快捷方式](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
 
 如需常用鍵盤快速鍵的清單和其他產能資訊，請參閱：
 
 - [鍵盤祕訣](../ide/productivity-shortcuts.md)
 - [生產力秘訣](../ide/productivity-features.md)。
 
-如需 Visual Studio 中協助工具的詳細資訊，請參閱 [協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md) 和 how [to：以獨佔方式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
+如需 Visual Studio 中協助工具的詳細資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)和 how [to：以獨佔方式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
 
+<!---## Printable shortcut cheatsheet
+
+Download and print our Visual Studio shortcut cheatsheet.
+
+[ ![Visual Studio Cheatsheet.](media/default-keyboard-shortcuts-in-visual-studio/visual-studio-shortcut-cheatsheet.png)](media/default-keyboard-shortcuts-in-visual-studio/visual-studio-shortcut-cheatsheet-extended.png#lightbox)
+-->
 ## <a name="most-popular-keyboard-shortcuts"></a>最熱門鍵盤快速鍵
 
 除非另有指定，否則本節中的所有快速鍵都會全域套用。 「全域」內容表示快速鍵適用於 Visual Studio 中的任何工具視窗。
@@ -137,7 +143,7 @@ ms.locfileid: "113046075"
 |File.SaveSelectedItems|**Ctrl + S**|
 |File.ViewinBrowser|**Ctrl + Shift + W**|
 
-#### <a name="project-popular-shortcuts"></a>專案：熱門快速鍵
+#### <a name="project-popular-shortcuts"></a>Project：熱門快速鍵
 
 |命令|鍵盤快速鍵 [特殊內容]|
 |--------------| - |
@@ -198,7 +204,7 @@ ms.locfileid: "113046075"
 - [測試](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)
 - [架構](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
 - [編輯器內容功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
-- [專案和方案內容功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
+- [Project 和方案內容功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
 - [測試總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
 - [建置](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)
 - [檔案](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
@@ -727,7 +733,7 @@ ms.locfileid: "113046075"
 |--------------| - |
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**插入**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**我**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**輸出**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl+Shift+K**<br /><br /> 或<br /><br /> **Ctrl+E、C**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**刪除**|

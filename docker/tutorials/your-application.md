@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 00eb3a7cff3ffeaac783b929a000d9258fae7e63
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.openlocfilehash: 9229c3717b686a3f08ef49e7912ac0515864d793
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112042936"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222808"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>建立並執行待辦事項範例應用程式
 
@@ -28,13 +27,13 @@ ms.locfileid: "112042936"
 
 在您可以執行應用程式之前，您必須先將應用程式原始程式碼放到您的電腦上。 針對真實的專案，您通常會複製存放庫。 但是在本教學課程中，我們建立了一個包含應用程式的 ZIP 檔案。
 
-1. 請確定您已在本機電腦上安裝適用於 Windows 的 Docker 或 Docker 社區版。 請參閱 [適用於 Windows 的 Docker 安裝檔](https://docs.docker.com/docker-for-windows/install/)。 安裝程式會將包含範例的 ZIP 檔案提供給 localhost 位址。
+1. 請確定您已在本機電腦上安裝適用於 Windows 的 Docker 或 Docker Community Edition。 請參閱[適用於 Windows 的 Docker 安裝檔](https://docs.docker.com/docker-for-windows/install/)。 安裝程式會將包含範例的 ZIP 檔案提供給 localhost 位址。
 
 1. 從 [Docker](https://github.com/docker/getting-started) 存放庫下載應用程式的來源。 您可以下載存放庫的 ZIP 檔案。 若要下載 ZIP 檔案，請使用綠色的 [程式 **代碼** ] 按鈕，然後選擇 [ **下載 zip**]。 開啟 ZIP 檔案並解壓縮全部，以 *將應用程式資料夾中* 的應用程式來源解壓縮至硬碟上的資料夾。
 
    ![顯示綠色程式碼按鈕和下載 ZIP 選項的螢幕擷取畫面](media/download-zip.png)
 
-1. 解壓縮之後，請使用您慣用的程式碼編輯器來開啟專案。 如果您需要編輯器，可以使用 [Visual Studio Code](https://code.visualstudio.com/)。 您應該會看到 `package.json` 和兩個子目錄 (`src` 和 `spec`) 。
+1. 解壓縮之後，請使用您慣用的程式碼編輯器來開啟專案。 如果您需要編輯器，可以使用[Visual Studio Code](https://code.visualstudio.com/)。 您應該會看到 `package.json` 和兩個子目錄 (`src` 和 `spec`) 。
 
     ![已載入應用程式時所開啟 Visual Studio Code 的螢幕擷取畫面](media/ide-screenshot.png)
 

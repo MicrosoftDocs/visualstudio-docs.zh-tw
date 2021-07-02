@@ -1,6 +1,6 @@
 ---
 title: 屬性函式 | Microsoft Docs
-description: 瞭解如何使用屬性函式，這些函式會呼叫出現在 MSBuild 屬性定義中 .NET Framework 方法。
+description: 瞭解如何使用屬性函式，這些函式是 .NET Framework MSBuild 屬性定義中出現之方法的呼叫。
 ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
@@ -12,16 +12,16 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4a6254f15a4108c525231d0e5e93c6fc71bfb3
-ms.sourcegitcommit: d3577395cf016f2836eb5a3c1d496cca6d449baa
+ms.openlocfilehash: a47ff76c98c5788fdfca3d633c87664b6802de70
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110413334"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222950"
 ---
 # <a name="property-functions"></a>屬性函式
 
-屬性函式是呼叫出現在 MSBuild 屬性定義中 .NET Framework 方法。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。
+屬性函式是呼叫 .NET Framework 的方法，這些方法會出現在 MSBuild 屬性定義中。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。
 
 在不使用 MSBuild 工作的情況下，您可以讀取系統時間、比較字串、比對規則運算式，以及執行組建指令碼中的其他動作。 MSBuild 會嘗試將字串轉換為數字或將數字轉換為字串，並視需要進行其他轉換。
 
@@ -265,7 +265,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Windows 64 位作業系統會維護 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** 登錄機碼，以呈現32位應用程式的 **HKEY_LOCAL_MACHINE\SOFTWARE** 登錄視圖。
+Windows 64 位作業系統會維護 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** 的登錄機碼，以提供32位應用程式的 **HKEY_LOCAL_MACHINE\SOFTWARE** 登錄視圖。
 
 根據預設，在 WOW64 上執行的 32 位元應用程式會存取 32 位元登錄檢視，而 64 位元應用程式會存取 64 位元登錄檢視。
 
@@ -342,9 +342,11 @@ Output:
 -->
 ```
 
-## <a name="msbuild-targetframework-and-targetplatform-functions"></a>MSBuild TargetFramework 和 TargetPlatform 函數
+<a name="TargetFramework"></a>
 
-MSBuild 16.7 和更新版本定義了數個函式來處理 [TargetFramework 和 TargetPlatform 屬性](msbuild-target-framework-and-target-platform.md)。
+## <a name="msbuild-targetframework-and-targetplatform-functions"></a>MSBuildTargetFramework 和 TargetPlatform 函式
+
+MSBuild 16.7 和更新版本會定義數個函式來處理[TargetFramework 和 TargetPlatform 屬性](msbuild-target-framework-and-target-platform.md)。
 
 |函式簽章|描述|
 |------------------------|-----------------|
@@ -390,7 +392,7 @@ Value5 = True
 MSBuild 16.5 和更新版本會定義數個函式來比較代表版本的字串。
 
 > [!Note]
-> 條件中的比較運算子 [可以比較可剖析為 `System.Version` 物件的字串](#msbuild-conditions.md#Comparing-versions)，但比較可能會產生非預期的結果。 偏好屬性函數。
+> 條件中的比較運算子 [可以比較可剖析為 `System.Version` 物件的字串](msbuild-conditions.md#comparing-versions)，但比較可能會產生非預期的結果。 偏好屬性函數。
 
 |函式簽章|描述|
 |------------------------|-----------------|
@@ -416,11 +418,11 @@ MSBuild 16.5 和更新版本會定義數個函式來比較代表版本的字串�
 * `+` 不允許為整陣列件的正整數， (它會被視為 semver 中繼資料並加以忽略) 
 
 > [!TIP]
-> [TargetFramework 屬性](msbuild-target-framework-and-target-platform.md)的比較通常應該使用[IsTargetFrameworkCompatible](#MSBuild-TargetFramework-and-TargetPlatform-functions) ，而不是解壓縮和比較版本。 這可讓您比較 `TargetFramework` 和版本之間的不同 `TargetFrameworkIdentifier` 。
+> [TargetFramework 屬性](msbuild-target-framework-and-target-platform.md)的比較通常應該使用[IsTargetFrameworkCompatible](#TargetFramework) ，而不是解壓縮和比較版本。 這可讓您比較 `TargetFramework` 和版本之間的不同 `TargetFrameworkIdentifier` 。
 
 ## <a name="msbuild-condition-functions"></a>MSBuild 條件函數
 
-函數 `Exists` 和 `HasTrailingSlash` 不是屬性函數。 它們可與屬性搭配使用 `Condition` 。 請參閱 [MSBuild 條件](msbuild-conditions.md)。
+函數 `Exists` 和 `HasTrailingSlash` 不是屬性函數。 它們可與屬性搭配使用 `Condition` 。 請參閱[MSBuild 條件](msbuild-conditions.md)。
 
 ## <a name="see-also"></a>另請參閱
 

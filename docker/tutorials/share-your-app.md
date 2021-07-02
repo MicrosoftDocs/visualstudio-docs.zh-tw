@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: ad9f7d329bf00e3fadd665cefea22a2301fdf695
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d64d10c7abefc14f31c39c3b8397e95cec67e9f4
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061780"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222782"
 ---
 # <a name="share-your-app"></a>共用您的應用程式
 
@@ -64,7 +63,7 @@ ms.locfileid: "105061780"
     docker push <username>/getting-started
     ```
 
-    除了命令列之外，您也可以在 Docker view 的 [ **Images** ] 區段中，以滑鼠右鍵按一下映射標籤，然後選擇 [ **推送 ...**]，然後選擇 [連線登錄 **...]** ，再 **Docker Hub**。
+    除了命令列之外，您也可以在 Docker view 的 [ **Images** ] 區段中，以滑鼠右鍵按一下映射標籤，然後選擇 [**推送 ...**]，再選擇 [**連線** 登錄]，然後 **Docker Hub**。
 
 ## <a name="run-the-image-on-a-new-instance"></a>在新的實例上執行映射
 
