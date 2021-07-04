@@ -209,8 +209,6 @@
           href: how-to-add-update-or-remove-a-wcf-data-service-reference.md
     - name: 升級 .mdf 檔案
       href: upgrade-dot-mdf-files.md
-    - name: 針對資料存取錯誤進行疑難排解
-      href: additional-resources-for-troubleshooting-data-access-errors.md
 - name: 參考
   items:
     - name: O/R 設計工具 (LINQ to SQL)

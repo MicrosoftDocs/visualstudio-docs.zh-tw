@@ -2,13 +2,15 @@
   href: analyze-and-model-your-architecture.md
 - name: 在 Visual Studio 2017 中設計的新功能
   href: what-s-new-for-design-in-visual-studio.md
+- name: 安裝架構工具
+  href: install-architecture-tools.md
 - name: 使用視覺化和模型製作工具變更設計
   href: scenario-change-your-design-using-visualization-and-modeling.md
 - name: Code Map 和相依性圖表
   items:
     - name: 視覺化程式碼
       href: visualize-code.md
-    - name: 使用程式碼對應來對應相依性
+    - name: 使用 code map 對應相依性
       href: map-dependencies-across-your-solutions.md
     - name: 共用 Code Map
       href: share-code-maps.md
@@ -58,8 +60,6 @@
       href: generate-and-configure-your-app-from-models.md
     - name: 建構模型方案
       href: structure-your-modeling-solution.md
-    - name: Visual Studio 架構工具指南
-      href: visual-studio-architecture-tooling-guidance.md
 - name: 在開發期間驗證您的系統
   items:
     - name: 驗證工作與資源

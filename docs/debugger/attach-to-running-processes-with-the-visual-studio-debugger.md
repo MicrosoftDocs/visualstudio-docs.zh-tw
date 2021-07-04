@@ -29,18 +29,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e3836403af80d06a2ecaa7f77cb7f49f0c6f0e8
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 9774878b8d8862fca0b8b35de924b7bc1ab45656
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389783"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280521"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具附加至執行中處理序
 
 您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 在程式執行之後，選取 [ **Debug**  >  **附加至進程**] 或在 Visual Studio 中按下 **Ctrl** + **Alt** + **p** ，然後使用 [**附加至進程**] 對話方塊，將偵錯工具附加至進程。
 
-您可以使用 [ **附加至進程** ]，在本機或遠端電腦上偵測執行中的應用程式、同時調試多個進程、將未在 Visual Studio 中建立的應用程式進行偵錯工具，或將您未從 Visual Studio 啟動的任何應用程式進行偵錯工具。 例如，如果您在沒有偵錯工具的情況下執行應用程式，並遇到例外狀況，您可以將偵錯工具附加至執行應用程式的進程，並開始進行偵錯工具。
+您可以使用 [**附加至進程**]，在本機或遠端電腦上偵測執行中的應用程式、同時調試多個進程、將未在 Visual Studio 中建立的應用程式進行偵錯工具，或將您未從 Visual Studio 啟動的任何應用程式進行偵錯工具。 例如，如果您在沒有偵錯工具的情況下執行應用程式，並遇到例外狀況，您可以將偵錯工具附加至執行應用程式的進程，並開始進行偵錯工具。
 
 > [!TIP]
 > 不確定是否要在您的偵錯工具案例中使用 **附加至進程** ？ 請參閱 [常見的調試案例](#BKMK_Scenarios)。
@@ -84,13 +84,13 @@ ms.locfileid: "112389783"
 1. 選取 [附加]。
 
 >[!NOTE]
->您可以附加至多個應用程式進行偵測，但偵錯工具一次只能有一個作用中的應用程式。 您可以在 [Visual Studio **Debug Location** ] 工具列或 [ **進程** ] 視窗中設定使用中的應用程式。
+>您可以附加至多個應用程式進行偵測，但偵錯工具一次只能有一個作用中的應用程式。 您可以在 [Visual Studio **Debug Location** ] 工具列或 [**進程**] 視窗中設定使用中的應用程式。
 
 ## <a name="attach-to-a-process-on-a-remote-computer"></a><a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> 附加至遠端電腦上的處理常式
 
 您也可以在 [ **附加至進程** ] 對話方塊中選取遠端電腦、查看該電腦上執行的可用進程清單，然後附加至一個或多個處理常式以進行調試。 遠端電腦上必須執行遠端偵錯程式 (*msvsmon.exe*) 。 如需詳細資訊，請參閱 [遠端偵錯](../debugger/remote-debugging.md)程式。
 
-如需有關將已部署至 IIS 的 ASP.NET 應用程式進行偵錯工具的更完整指示，請參閱 [遠端 IIS 電腦上的遠端偵錯程式 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。
+如需有關將已部署至 IIS 的 ASP.NET 應用程式進行偵錯工具的完整指示，請參閱遠端[IIS 電腦上的遠端偵錯程式 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。
 
 **若要附加至遠端電腦上執行中的進程：**
 
@@ -139,7 +139,7 @@ ms.locfileid: "112389783"
    - 若要尋找在所有使用者帳戶下執行的進程，請選取 [ **顯示所有使用者的進程** ] 核取方塊。
 
      >[!NOTE]
-     >如果您嘗試附加至未受信任的使用者帳戶所擁有的處理序，會出現安全性警告對話方塊確認訊息。 如需詳細資訊，請參閱 [安全性警告：附加至不受信任的使用者所擁有的進程可能會造成危險。如果下列資訊看起來很可疑，或您不確定，請不要附加至此進程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。
+     >如果您嘗試附加至未受信任的使用者帳戶所擁有的處理序，會出現安全性警告對話方塊確認訊息。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。
 
 5. 在 [ **附加至** ] 欄位中，確定已列出您打算進行 debug 錯的程式碼類型。 預設的 **自動** 設定適用于大部分的應用程式類型。
 
@@ -154,11 +154,17 @@ ms.locfileid: "112389783"
 6. 選取 [附加]。
 
 >[!NOTE]
->您可以附加至多個應用程式進行偵測，但偵錯工具一次只能有一個作用中的應用程式。 您可以在 [Visual Studio **Debug Location** ] 工具列或 [ **進程** ] 視窗中設定使用中的應用程式。
+>您可以附加至多個應用程式進行偵測，但偵錯工具一次只能有一個作用中的應用程式。 您可以在 [Visual Studio **Debug Location** ] 工具列或 [**進程**] 視窗中設定使用中的應用程式。
 
-在某些情況下，當您在遠端桌面 (終端機服務) 會話中進行偵錯工具時，[ **可使用的進程** ] 清單不會顯示所有可用的進程。 如果您是以受限使用者帳戶的使用者身分執行 Visual Studio，[ **可使用的進程** ] 清單不會顯示在會話0中執行的進程。 會話0用於服務和其他伺服器進程，包括 *w3wp.exe*。 您可藉由使用系統管理員帳戶來執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，或是從伺服器主控台 (而非終端機服務工作階段) 執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，來解決這個問題。
+在某些情況下，當您在遠端桌面 (終端機服務) 會話中進行偵錯工具時，[ **可使用的進程** ] 清單不會顯示所有可用的進程。 如果您是以受限使用者帳戶的使用者身分執行 Visual Studio，[**可使用的進程**] 清單不會顯示在會話0中執行的進程。 會話0用於服務和其他伺服器進程，包括 *w3wp.exe*。 您可藉由使用系統管理員帳戶來執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，或是從伺服器主控台 (而非終端機服務工作階段) 執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，來解決這個問題。
 
 如果這些解決方法都沒有效，則第三個選項是從 Windows 命令列執行 `vsjitdebugger.exe -p <ProcessId>` 以附加至處理序。 您可以使用 *tlist.exe* 來決定處理序識別碼。 若要取得 *tlist.exe*，您可以從 [WDK 和 WinDbg 下載](/windows-hardware/drivers/download-the-wdk)來下載並安裝適用於 Windows 的偵錯工具。
+
+## <a name="attach-to-a-net-core-process-running-on-azure-app-service-windows"></a>附加至在 Azure App Service (Windows 上執行的 .net Core 進程) 
+
+如果您要發行至 Azure App Service (Windows) ，則會在 [**裝載**] 下的 [...] 功能表底下找到 [**附加偵錯工具**] 選項 **。** Visual Studio 會嘗試將遠端偵錯程式附加至設定檔所發佈的 Azure App Service (Windows) 實例。
+
+:::image type="content" source="../debugger/media/attach-debugger-publish-profile.png" alt-text="[發行摘要] 頁面中 [附加偵錯工具] 選項的螢幕擷取畫面。":::
 
 ## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>使用 SSH 附加至在 Linux 上執行的 .NET Core 進程
 
@@ -168,7 +174,7 @@ ms.locfileid: "112389783"
 
 ## <a name="attach-to-a-process-running-on-a-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> 附加至在 Docker 容器上執行的進程
 
-從 Visual Studio 2019 開始，您可以將 Visual Studio 偵錯工具附加至在 Docker 容器上執行的進程。 針對 Linux .NET Core Docker 容器，請參閱 [附加至在 Linux Docker 容器上執行的進程](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container)。 若為 Windows Docker 容器，請參閱 [附加至在 Windows docker 容器上執行的進程](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-windows-docker-container)。
+從 Visual Studio 2019 開始，您可以將 Visual Studio 偵錯工具附加至在 Docker 容器上執行的進程。 針對 Linux .NET Core Docker 容器，請參閱 [附加至在 Linux Docker 容器上執行的進程](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container)。 如需 Windows Docker 容器的相關資訊，請參閱[附加至在 Windows Docker 容器上執行的進程](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-windows-docker-container)。
 
 ::: moniker-end
 
@@ -177,34 +183,34 @@ ms.locfileid: "112389783"
 您可以藉由選擇 [ **Debug** 重新  >  **附加至進程**] (**Shift** + **Alt** + **P**) ，快速重新附加至您先前附加的進程。 當您選擇此命令時，偵錯工具會立即嘗試附加至您附加的最後一個處理常式，方法是先嘗試比對先前的處理序識別碼，如果失敗，則比對先前的進程名稱。 如果找不到相符專案，或有數個進程具有相同的名稱，將會開啟 [ **附加至進程** ] 對話方塊，讓您可以選取正確的進程。
 
 > [!NOTE]
-> 從 Visual Studio 2017 開始，可以使用 [重新 **附加至進程** ] 命令。
+> 從 Visual Studio 2017 開始，可以使用 [重新 **附加至進程**] 命令。
 
 ## <a name="common-debugging-scenarios"></a><a name="BKMK_Scenarios"></a> 常見的調試案例
 
 為了協助您判斷是否要使用 [ **附加至進程** ] 以及要附加的進程，下表顯示一些常見的偵錯工具，並提供更多指示的連結。  (清單不完整。 ) 
 
-針對某些應用程式類型（例如 (UWP) 應用程式的通用 Windows 應用程式），您不會直接附加至進程名稱，但請改用 Visual Studio 中的 [ **已安裝的應用程式套件** ] 功能表選項 (查看資料表) 。
+針對某些應用程式類型（例如通用 Windows 應用程式 (UWP) 應用程式），您不會直接附加至進程名稱，但請改用 Visual Studio 中的 [**已安裝的應用程式套件**] 功能表選項 (查看資料表) 。
 
 偵錯工具若要附加至以 C++ 撰寫的程式碼，該程式碼必須發出 `DebuggableAttribute`。 您可以使用 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) 連結器選項連結，將其自動加入程式碼。
 
-針對用戶端腳本的偵錯工具，您必須在瀏覽器中啟用腳本偵錯工具。 若要在 Chrome 上偵測用戶端腳本，請選擇 **javascript (chrome)** 或 **javascript (Microsoft Edge-Chromium)** 作為程式碼類型，並視您的應用程式類型而定，您可能需要關閉所有 Chrome 實例，並在偵錯工具模式中， `chrome.exe --remote-debugging-port=9222` 從命令列 (的類型啟動瀏覽器) 。 在舊版 Visual Studio 中，Chrome 的腳本偵錯工具是 **Web 套件**。
+針對用戶端腳本的偵錯工具，您必須在瀏覽器中啟用腳本偵錯工具。 若要在 Chrome 上偵測用戶端腳本，請選擇 **javascript (chrome)** 或 **javascript (Microsoft Edge Chromium**) 作為程式碼類型，並視您的應用程式類型而定，您可能需要關閉所有 Chrome 實例，並在偵錯工具模式中， `chrome.exe --remote-debugging-port=9222` 從命令列 (中啟動瀏覽器) 類型。 在舊版 Visual Studio 中，Chrome 的腳本偵錯工具是 **Web 套件**。
 
 若要快速選取要附加的執行中進程，請在 [Visual Studio 中輸入 **Ctrl** + **Alt** + **P**，然後輸入進程名稱的第一個字母。
 
 |狀況|Debug 方法|程序名稱|附注和連結|
 |-|-|-|-|
-|IIS 伺服器上的遠端偵錯程式 ASP.NET 4 或4。5|使用遠端工具並 **附加至進程**|*w3wp.exe*|請參閱遠端 [IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|IIS 伺服器上的遠端 debug ASP.NET Core|使用遠端工具並 **附加至進程**|*w3wp.exe* 或 *dotnet.exe*|從 .NET Core 3 開始， *w3wp.exe* 進程會用於預設的 [應用程式內裝載模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)。 如需應用程式部署，請參閱 [發行至 IIS](/aspnet/core/host-and-deploy/iis/)。 如需詳細資訊，請參閱 [遠端 IIS 電腦上的遠端偵錯程式 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
+|IIS 伺服器上的遠端 debug ASP.NET 4 或4。5|使用遠端工具並 **附加至進程**|*w3wp.exe*|請參閱遠端[IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|IIS 伺服器上的遠端 debug ASP.NET Core|使用遠端工具並 **附加至進程**|*w3wp.exe* 或 *dotnet.exe*|從 .NET Core 3 開始， *w3wp.exe* 進程會用於預設的 [應用程式內裝載模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)。 如需應用程式部署，請參閱 [發行至 IIS](/aspnet/core/host-and-deploy/iis/)。 如需詳細資訊，請參閱[遠端 IIS 電腦上的遠端偵錯程式 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
 |針對支援的應用程式類型在本機 IIS 伺服器上進行用戶端腳本的偵錯工具 |使用 **附加至進程**|*chrome.exe*、 *MicrosoftEdgeCP.exe* 或 *iexplore.exe*|必須啟用腳本調試。 若是 Chrome，您也必須從命令列執行 Chrome in debug 模式 (類型 `chrome.exe --remote-debugging-port=9222`) ，然後在 [**附加至**] 欄位中選取 [ **JavaScript (Chrome)** ]。|
 |在本機電腦上進行 c #、Visual Basic 或 c + + 應用程式的偵錯工具|使用標準的偵錯工具 (**F5**) 或 **附加至進程**|*\<appname>.exe*|在大部分的情況下，請使用標準的偵錯工具，而不是 **附加至進程**。|
-|遠端偵錯 Windows 傳統型應用程式|遠端工具|N/A| 請參閱 [遠端偵測 c # 或 Visual Basic 應用程式](../debugger/remote-debugging-csharp.md) 或 [遠端偵錯程式 c + + 應用程式](../debugger/remote-debugging-cpp.md)|
+|Windows 桌面應用程式的遠端偵錯程式|遠端工具|N/A| 請參閱[遠端偵測 c # 或 Visual Basic 應用程式](../debugger/remote-debugging-csharp.md)或[遠端偵錯程式 c + + 應用程式](../debugger/remote-debugging-cpp.md)|
 |在 Linux 上對 .NET Core 偵錯|使用 **附加至進程**|*dotnet.exe* 或唯一的進程名稱|若要使用 SSH，請參閱 [使用 ssh 在 Linux 上執行的遠端偵錯 .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)。 針對容器化應用程式，請參閱 [附加至在 Docker 容器中執行的進程](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container)。|
 |對容器化應用程式進行 Debug|使用 **附加至進程**|*dotnet.exe* 或唯一的進程名稱|請參閱 [附加至在 Docker 容器中執行的進程](../debugger/attach-to-process-running-in-docker-container.md)|
 |Linux 上的遠端 debug Python|使用 **附加至進程**|*debugpy*|請參閱 [從 Python 工具遠端附加](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
 |在沒有偵錯工具的情況下啟動應用程式之後，在本機電腦上進行 ASP.NET 應用程式的偵錯工具|使用 **附加至進程**|*iiexpress.exe*|這有助於讓您的應用程式載入更快，例如在分析時 (例如) 。 |
 |在伺服器進程上進行其他支援的應用程式類型的偵錯工具|如果伺服器在遠端，請使用遠端工具，並 **附加至進程**|*chrome.exe*、 *iexplore.exe* 或其他進程|如有必要，請使用資源監視器來協助識別進程。 請參閱[遠端偵錯](../debugger/remote-debugging.md)。|
-|將通用 Windows 應用程式遠端偵錯 (UWP) 、OneCore、HoloLens 或 IoT 應用程式|針對已安裝的應用程式套件進行偵錯|N/A|請參閱 [Debug 已安裝的應用程式套件](debug-installed-app-package.md) ，而不是使用 **附加至進程**|
-|將通用 Windows 應用程式 (UWP) 、OneCore、HoloLens 或未從 Visual Studio 啟動的 IoT 應用程式進行偵錯工具|針對已安裝的應用程式套件進行偵錯|N/A|請參閱 [Debug 已安裝的應用程式套件](debug-installed-app-package.md) ，而不是使用 **附加至進程**|
+|將通用 Windows 應用程式從遠端偵錯 (UWP) 、OneCore、HoloLens 或 IoT 應用程式|針對已安裝的應用程式套件進行偵錯|N/A|請參閱 [Debug 已安裝的應用程式套件](debug-installed-app-package.md) ，而不是使用 **附加至進程**|
+|針對您不是從 HoloLens 啟動的 Windows 應用程式 (UWP) 、OneCore、Visual Studio 或 IoT 應用程式進行 Debug 錯|針對已安裝的應用程式套件進行偵錯|N/A|請參閱 [Debug 已安裝的應用程式套件](debug-installed-app-package.md) ，而不是使用 **附加至進程**|
 
 ## <a name="use-debugger-features"></a>使用偵錯工具功能
 
@@ -239,7 +245,7 @@ ms.locfileid: "112389783"
 
     1. 在 [附加至處理序] 對話方塊的 [可使用的處理序] 清單中，選取該處理序。
 
-    2. 選取 [選取]  。
+    2. 選取 [選取] 。
 
     3. 在 [選取程式碼類型]  對話方塊中，選取 [偵錯這些程式碼類型]  以及之前附加失敗的程式碼類型。 取消選取其他程式碼類型。
 
