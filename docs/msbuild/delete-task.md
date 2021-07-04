@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b49ba26cc1e88ab3241094e1fd92be0907e8dd60
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 09945306a2260bed5b264d380dcea745ff3f7c07
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877339"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280422"
 ---
 # <a name="delete-task"></a>Delete 工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "99877339"
 
 下表說明 `Delete` 工作的參數。
 
-|參數|Description|
+|參數|描述|
 |---------------|-----------------|
 |`DeletedFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定已成功刪除的檔案。|
 |`Files`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要刪除的檔案。|
@@ -50,7 +50,7 @@ ms.locfileid: "99877339"
 
 ## <a name="example"></a>範例
 
-下列範例會在您建立目標時刪除檔案 *MyApp。* `DeleteDebugSymbolFile`
+下列範例會在您建立目標時刪除 *ConsoleApp1 檔案。* `DeleteDebugSymbolFile`
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

@@ -4,11 +4,13 @@
   items:
     - name: Visual Studio 中的 Git 體驗
       href: git-with-visual-studio.md
+    - name: Git 設定和喜好設定
+      href: git-settings.md
     - name: Visual Studio 如何讓原始檔控制變得更容易
       href: git-visual-studio-source-control.md
 - name: 開始使用
   items:
-    - name: Visual Studio 中的 Git 和 GitHub 入門
+    - name: 開始在 Visual Studio 中使用 Git 和 GitHub
       href: /learn/modules/visual-studio-github-push/
     - name: 比較 Git 和 Team Explorer 並存
       href: git-team-explorer-feature-comparison.md

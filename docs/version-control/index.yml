@@ -2,21 +2,21 @@
 title: Visual Studio 版本控制檔
 summary: 使用版本控制技術（例如 Git 和 GitHub），在 Visual Studio 2019 內共用您的程式碼。
 metadata:
-  title: Visual Studio 中的版本控制
-  description: Git 和 GitHub 等版本控制技術可直接從 Visual Studio 內取得。 您可以使用它們來共用和管理您的程式碼，而不需要離開程式碼基底。
+  title: 版本控制 & 在 Visual Studio 中使用 Git 的原始檔控制
+  description: 在 Visual Studio 中使用版本控制技術。 您可以在不離開程式碼基底的情況下，在 Git & GitHub 中共用、整合及管理您的程式碼版本。
   ms.topic: landing-page
-  ms.date: 04/20/2021
+  ms.date: 07/02/2021
   author: TerryGLee
   ms.author: tglee
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 385457bbeb63054a5f72a5055c55dedfeb9f9b1c
-  ms.sourcegitcommit: 113b7df611583307d3965984233a33355d6b0318
+  ms.openlocfilehash: 9bdd994d5fe1d5f54251ce49047feaf75145dcda
+  ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/16/2021
-  ms.locfileid: "112126511"
+  ms.lasthandoff: 07/03/2021
+  ms.locfileid: "113280403"
 landingContent:
 - title: 概觀
   linkLists:
@@ -34,7 +34,7 @@ landingContent:
   linkLists:
   - linkListType: learn
     links:
-    - text: Visual Studio 中的 Git 和 GitHub 入門
+    - text: 開始在 Visual Studio 中使用 Git 和 GitHub
       url: /learn/modules/visual-studio-github-push/
   - linkListType: how-to-guide
     links:

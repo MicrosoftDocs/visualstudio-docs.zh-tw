@@ -1,17 +1,17 @@
 ---
-ms.date: 06/29/2021
+ms.date: 07/01/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 452549030d77b90049b12716087544bdd1288a3f
-ms.sourcegitcommit: 7393a37ce77c5b80312ce787baa060c91d41d959
+ms.openlocfilehash: 007327dc525f515523f98323bc95e133209e1531
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113113660"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113280119"
 ---
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
@@ -29,7 +29,7 @@ Visual Studio「整合式開發環境」是一個有創意的啟動控制板，�
 
 此圖顯示 Visual Studio，其中包含一個開啟的專案，以及您想要使用的數個重要工具視窗：
 
-- 「方案總管」(右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 **方案總管** 可以將檔案分組到 [方案和專案](../../ide/use-solution-explorer.md)中，以協助組織程式碼。
+- 「方案總管」(右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 **方案總管** 可以將檔案分組到 [方案和專案](../../ide/solutions-and-projects-in-visual-studio.md)中，以協助組織程式碼。
 
 - 「編輯器視窗」(中間) 會顯示檔案內容，您大部分的時間可能都是花在這裡。 您在這裡編輯程式碼或設計使用者介面，例如有按鈕和文字方塊的視窗。
 
@@ -47,7 +47,7 @@ Visual Studio「整合式開發環境」是一個有創意的啟動控制板，�
 
 Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2017 相同的功能，並已針對開發跨平台和行動應用程式最佳化。 本文著重於 Windows 版的 Visual Studio 2017。
 
-Visual Studio 共有三種版本：「社區」、「專業」和「企業」。 請參閱 [比較 Visual Studio 版本](https://visualstudio.microsoft.com/vs/compare/) ，以瞭解每個版本支援哪些功能。
+Visual Studio 共有三種版本： Community、Professional 和 Enterprise。 請參閱[比較 Visual Studio 版本](https://visualstudio.microsoft.com/vs/compare/)，以瞭解每個版本支援哪些功能。
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Visual Studio 共有三種版本：「社區」、「專業」和「企業」。
 
 Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2019 相同的功能，並已針對開發跨平台和行動應用程式最佳化。 此文章著重於 Windows 版的 Visual Studio 2019。
 
-有三種版本的 Visual Studio 2019：「社團」、「專業」和「企業」。 請參閱 [比較 Visual Studio 版本](https://visualstudio.microsoft.com/vs/compare/) ，以瞭解每個版本支援哪些功能。
+有三種版本的 Visual Studio 2019： Community、Professional 和 Enterprise。 請參閱[比較 Visual Studio 版本](https://visualstudio.microsoft.com/vs/compare/)，以瞭解每個版本支援哪些功能。
 
 ::: moniker-end
 
@@ -87,7 +87,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [智慧](../../ide/using-intellisense.md)
 
-   IntelliSense 為一組功能的字詞，會直接在編輯器中顯示有關您程式碼的資訊，而在某些情況下會為您撰寫一些程式碼。 就像內嵌在編輯器中的基本文件，讓您不必在其他位置查閱類型資訊。 IntelliSense 功能會因語言而異。 如需詳細資訊，請參閱 [c # intellisense](../../ide/visual-csharp-intellisense.md)、 [Visual C++ IntelliSense](../../ide/visual-cpp-intellisense.md)、 [JavaScript intellisense](../../ide/javascript-intellisense.md)和 [Visual Basic intellisense](../../ide/visual-basic-specific-intellisense.md)。 下圖顯示 IntelliSense 如何顯示類型的成員清單：
+   IntelliSense 為一組功能的字詞，會直接在編輯器中顯示有關您程式碼的資訊，而在某些情況下會為您撰寫一些程式碼。 就像內嵌在編輯器中的基本文件，讓您不必在其他位置查閱類型資訊。 IntelliSense 功能會因語言而異。 如需詳細資訊，請參閱[c # intellisense](../../ide/visual-csharp-intellisense.md)、 [Visual C++ intellisense](../../ide/visual-cpp-intellisense.md)、 [JavaScript intellisense](../../ide/javascript-intellisense.md)和[Visual Basic intellisense](../../ide/visual-basic-specific-intellisense.md)。 下圖顯示 IntelliSense 如何顯示類型的成員清單：
 
    ![Visual Studio 成員清單](../media/intellisense-list-members.png)
 
@@ -107,7 +107,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![Visual Studio 2019 中的搜尋方塊](../media/vs-2019/quick-launch-nuget.png)
 
-    如需資訊和生產力秘訣，請參閱 [如何使用 Visual Studio 搜尋](../../ide/visual-studio-search.md)。
+    如需資訊和生產力秘訣，請參閱[如何使用 Visual Studio 搜尋](../../ide/visual-studio-search.md)。
 
    ::: moniker-end
 
@@ -145,13 +145,13 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker range="vs-2017"
 
-若要開始使用，請 [下載 Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ，並將它安裝在您的系統上。 模組安裝程式可讓您選擇並安裝「工作負載」，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 若要遵循 [建立程式](#create-a-program)的步驟，請務必在安裝期間選取 **.NET Core 跨平台開發** 工作負載。
+若要開始使用，請[下載 Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ，並將它安裝在您的系統上。 模組安裝程式可讓您選擇並安裝「工作負載」，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 若要遵循 [建立程式](#create-a-program)的步驟，請務必在安裝期間選取 **.NET Core 跨平台開發** 工作負載。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-若要開始使用，請 [下載 Visual Studio](https://visualstudio.microsoft.com/downloads) ，並將它安裝在您的系統上。 模組安裝程式可讓您選擇並安裝「工作負載」，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 若要遵循 [建立程式](#create-a-program)的步驟，請務必在安裝期間選取 **.NET Core 跨平台開發** 工作負載。
+若要開始使用，請[下載 Visual Studio](https://visualstudio.microsoft.com/downloads) ，並將它安裝在您的系統上。 模組安裝程式可讓您選擇並安裝「工作負載」，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 若要遵循 [建立程式](#create-a-program)的步驟，請務必在安裝期間選取 **.NET Core 跨平台開發** 工作負載。
 
 ::: moniker-end
 
@@ -167,11 +167,11 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 1. 開啟 Visual Studio。
 
-1. 在功能表列上 **，選擇 [** 檔案 > **新增** > **專案**]。
+1. 在功能表列上 **，選擇 [** 檔案 > **新增** > **Project**]。
 
    ![功能表列上的 [檔案] > [新增專案]](../media/file-new-project-menu.png)
 
-   [ **新增專案** ] 對話方塊會顯示數個專案 *範本*。 範本包含指定專案類型所需的基本檔案和設定。
+   [**新增 Project** ] 對話方塊會顯示數個專案 *範本*。 範本包含指定專案類型所需的基本檔案和設定。
 
 1. 選擇 [Visual C#] 下的 [.NET Core] 範本類別，然後選擇 [主控台應用程式 (.NET Core)] 範本。 在 [名稱] 文字方塊中，鍵入 **HelloWorld**，然後選取 [確定] 按鈕。
 
@@ -241,19 +241,19 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    [建立新專案] 視窗隨即開啟，並顯示數個專案「範本」。 範本包含指定專案類型所需的基本檔案和設定。
 
-1. 若要尋找所需的範本，在搜尋方塊中鍵入或輸入 **.net core 主控台**。 系統即會根據您所輸入的關鍵字自動篩選可用的範本清單。 您可以從 [**所有語言**] 下拉式清單中選擇 [ **c #** ]、[**所有平臺**] 清單中的 [ **Windows** ] 和 [**所有專案類型**] 清單中的 [**主控台**]，進一步篩選範本結果。
+1. 若要尋找所需的範本，在搜尋方塊中鍵入或輸入 **.net core 主控台**。 系統即會根據您所輸入的關鍵字自動篩選可用的範本清單。 您可以從 [**所有語言**] 下拉式清單中選擇 [ **c #** ]、從 [**所有平臺**] 清單 **Windows** ，然後從 [**所有專案類型**] 清單中選擇 [**主控台**]，以進一步篩選範本結果。
 
     選取 [ **主控台應用程式** ] 範本，然後按 **[下一步]**。
 
     :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="在 Visual Studio 2019 的 [建立新專案] 視窗的螢幕擷取畫面，您可以在其中選取所需的範本。":::
 
-1. 在 [**設定您的新專案**] 視窗中，于 [**專案名稱**] 方塊中輸入 **HelloWorld** ，選擇性地變更專案檔的目錄位置 (預設的地區設定為 `C:\Users\<name>\source\repos`) ，然後按 **[下一步]**。
+1. 在 [**設定您的新專案**] 視窗中，于 [ **Project 名稱**] 方塊中輸入 **HelloWorld** ，選擇性地變更專案檔的目錄位置 (預設的地區設定為 [ `C:\Users\<name>\source\repos`) ]，然後按 **[下一步]**。
 
     :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="[設定您的新專案] 視窗的螢幕擷取畫面，您可以在 Visual Studio 2019 中輸入專案的名稱。":::
 
 1. 在 [**其他資訊**] 視窗中，確認 [**目標 Framework** ] 下拉式功能表中出現 **.net Core 3.1** ，然後按一下 [**建立**]。
 
-    :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="Visual Studio 2019 中 [其他資訊] 視窗的螢幕擷取畫面，您可以在其中選取所需的 .NET Core Framework 版本。":::
+    :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="Visual Studio 2019 中 [其他資訊] 視窗的螢幕擷取畫面，您可以在其中選取所需的 .net Core Framework 版本。":::
 
    Visual Studio 會建立專案。 其為簡單的 "Hello World" 應用程式，會呼叫 <xref:System.Console.WriteLine?displayProperty=nameWithType> 方法來顯示常值字串 "Hello World!" 在主控台 (程式輸出) 視窗中。
 

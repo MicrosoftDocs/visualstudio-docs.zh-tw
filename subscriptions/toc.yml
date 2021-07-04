@@ -13,7 +13,7 @@
             - name: 概觀
               href: vscloud-overview.md
             - name: 計費常見問題集
-              href: vscloud-billing-faq.md
+              href: vscloud-billing-faq.yml
             - name: 購買 CSP
               href: vscloud-csp.md
         - name: Microsoft 合作夥伴網路
@@ -56,16 +56,22 @@
       items:
         - name: 關於優點
           href: about-benefits.md
+        - name: Azure 開發/測試供應專案
+          items:
+            - name: '適用于個人 (信用額度) '
+              items:
+                - name: Azure DevTest 個人點數
+                  href: vs-azure.md
+            - name: 針對組織
+              items:
+                - name: Azure DevTest 隨用隨付
+                  href: vs-azure-payg.md
+                - name: Azure EA DevTest
+                  href: azure-ea-devtest.md
         - name: 工具
           items:
-            - name: Azure DevTest 個人點數
-              href: vs-azure.md
             - name: Azure DevOps
               href: vs-azure-devops.md
-            - name: Azure DevTest 隨用隨付
-              href: vs-azure-payg.md
-            - name: Azure EA DevTest
-              href: azure-ea-devtest.md
             - name: CAST Highlight
               href: vs-cast.md
             - name: CloudPilot

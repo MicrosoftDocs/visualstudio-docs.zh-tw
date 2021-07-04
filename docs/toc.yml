@@ -151,32 +151,33 @@
       href: ide/quickstart-ide-orientation.md
     - name: C++：建立主控台應用程式
       href: /cpp/get-started/tutorial-console-cpp
-    - name: Python：建立 Web 應用程式
-      href: ide/quickstart-python.md
-    - name: Node.js：建立 Web 應用程式
-      href: ide/quickstart-nodejs.md
-    - name: F#：建立 Web 服務
-      href: ide/quickstart-fsharp.md
     - name: 'C#: 建立 Web 應用程式'
       href: ide/quickstart-aspnet-core.md
     - name: 'C#: 建立主控台應用程式'
       href: ide/quickstart-csharp-console.md
     - name: Visual Basic：建立主控台應用程式
       href: ide/quickstart-visual-basic-console.md
+    - name: Node.js：建立 Web 應用程式
+      href: ide/quickstart-nodejs.md
+    - name: Python：建立 Web 應用程式
+      href: ide/quickstart-python.md
+    - name: F#：建立 Web 服務
+      href: ide/quickstart-fsharp.md
 - name: 教學課程
+  expanded: true
   items:
-    - name: C#
-      href: get-started/csharp/
-    - name: F#
-      href: /dotnet/fsharp/
-    - name: Visual Basic
-      href: get-started/visual-basic/
-    - name: C++
+    - name: C + + >>
       href: /cpp/get-started/tutorial-console-cpp
-    - name: Python
-      href: python/
-    - name: Node.js
+    - name: 'C #   >>'
+      href: get-started/csharp/
+    - name: Visual Basic  >>
+      href: get-started/visual-basic/
+    - name: Node.js  >>
       href: javascript/
+    - name: Python  >>
+      href: python/
+    - name: 'F #   >>'
+      href: /dotnet/fsharp/
 - name: 開發
   items:
     - name: 組織與編輯程式碼
@@ -199,6 +200,8 @@
           href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 移植、移轉及升級專案
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
+        - name: 使用方案總管工具視窗
+          href: ide/use-solution-explorer.md
         - name: 管理專案和解決方案屬性
           href: ide/managing-project-and-solution-properties.md
         - name: 專案參考
@@ -443,6 +446,8 @@
                   href: ide/reference/regex-completion-through-intellisense.md
                 - name: 移除執行不到的程式碼
                   href: ide/reference/remove-unreachable-code.md
+                - name: 移除未使用的參考
+                  href: ide/reference/remove-unused-references.md
                 - name: 重新命名
                   href: ide/reference/rename.md
                 - name: 簡化條件運算式
@@ -897,6 +902,7 @@
 - name: 偵錯 >>
   href: debugger/index.yml
 - name: 版本控制 >>
+  displayName: 'git, github, source control, source, versioning, clone, integrate, release'
   href: version-control/index.yml
 - name: 測試 >>
   displayName: Unit testing
@@ -977,14 +983,9 @@
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
 - name: 參考
   items:
-    - name: 鍵盤快速鍵
-      items:
-        - name: 常用命令
-          displayName: keyboard shortcuts
-          href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
-        - name: 所有命令
-          displayName: keyboard commands
-          href: ide/default-keyboard-shortcuts-in-visual-studio.md
+    - name: '& 命令的鍵盤快速鍵'
+      displayName: 'keyboard, shortcuts, short cuts, ctrl, short-cut'
+      href: ide/default-keyboard-shortcuts-in-visual-studio.md
     - name: Visual Studio 命令
       items:
         - name: 參考
@@ -1426,14 +1427,12 @@
 - name: 資源
   expanded: true
   items:
-    - name: Visual Studio 2017 的新功能
+    - name: Visual Studio 2017：新功能
       href: ide/whats-new-visual-studio-2017.md
-    - name: Visual Studio 2019 的新功能
+    - name: Visual Studio 2019：新功能
       href: ide/whats-new-visual-studio-2019.md
-    - name: 文件中的新功能
+    - name: Docs 的新功能
       href: ide/whats-new-visual-studio-docs.md
-    - name: 檔的新功能歷程記錄
-      href: ide/whats-new-visual-studio-docs-history.md
     - name: 版本資訊
       items:
         - name: 發行節奏
@@ -1448,14 +1447,16 @@
           href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: 支援生命週期和服務
           href: /visualstudio/productinfo/vs-servicing-vs/
-    - name: 客戶經驗改進計畫
+    - name: 客戶經驗改進
       items:
-        - name: 概觀
+        - name: 關於程式
           displayName: Customer Experience Improvement Program
           href: ide/visual-studio-experience-improvement-program.md
         - name: 由系統產生的記錄檔
           href: ide/diagnostic-data-collection.md
-    - name: IDE 錯誤疑難排解資源
+    - name: Visual Studio 中的連線體驗
+      href: ide/reference/connected-experiences.md
+    - name: 針對 IDE 錯誤進行疑難排解
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
 - name: 傳送意見反應
   items:
@@ -1463,7 +1464,7 @@
       href: ide/feedback-options.md
     - name: 回報問題
       items:
-        - name: 如何回報問題
+        - name: 回報問題
           href: ide/how-to-report-a-problem-with-visual-studio.md
         - name: 回報問題狀態和常見問題集
           href: ide/report-a-problem.md

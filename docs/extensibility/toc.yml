@@ -9,6 +9,20 @@
       href: starting-to-develop-visual-studio-extensions.md
     - name: 建立您的第一個延伸模組：Hello World
       href: extensibility-hello-world.md
+    - name: 更新 Visual Studio 2022 (Preview) 的延伸模組
+      items:
+        - name: 更新擴充功能
+          href: migration/update-visual-studio-extension.md
+        - name: 範例： ImageOptimizer
+          href: migration/samples.md
+        - name: 以先前的版本為目標
+          href: migration/target-previous-versions.md
+        - name: 中斷 API 清單
+          href: migration/breaking-api-list.md
+        - name: 已移除 API 清單
+          href: migration/removed-api-list.md
+        - name: 已遷移 PIA
+          href: migration/migrated-assemblies.md
     - name: 新功能 Visual Studio 2019 SDK
       items:
         - name: 新功能 Visual Studio 2019 SDK

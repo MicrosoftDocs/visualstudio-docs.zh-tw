@@ -3,6 +3,8 @@ title: 瞭解方案總管工具視窗
 description: 瞭解如何使用 Visual Studio 中的 [方案總管] 工具視窗，建立 & 管理您的檔案、專案和方案。
 ms.date: 06/29/2021
 ms.topic: conceptual
+f1_keywords:
+- vs.addnewitem
 helpviewer_keywords:
 - solution explorer [Visual Studio]
 author: TerryGLee
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 005e6fd3e49d3a3ab739740d2aaa1dd77df5e5df
-ms.sourcegitcommit: 3d0f4930e0ccf49f89bbcfe12a949fbbf37aae07
+ms.openlocfilehash: fbbae8b974a7e88abffd9a12eb253dfea6c7165b
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113131496"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280498"
 ---
 # <a name="how-to-use-solution-explorer"></a>如何使用方案總管
 
@@ -26,7 +28,7 @@ ms.locfileid: "113131496"
 
 ## <a name="solution-explorer-tool-window"></a>方案總管工具視窗
 
-首先，讓我們看看 [VISUAL STUDIO IDE](../get-started/visual-studio-ide.md)中的方案總管工具視窗，以及具有兩個專案的 Open c # 主控台解決方案。
+首先，讓我們看看[Visual Studio IDE](../get-started/visual-studio-ide.md)中的方案總管工具視窗，以及具有兩個專案的 open c # 主控台解決方案。
 
 [![Visual Studio 中的 [方案總管] 工具視窗。](media/solution-explorer-tool-window.png)](media/solution-explorer-tool-window.png#lightbox)
 
@@ -36,10 +38,10 @@ ms.locfileid: "113131496"
 - **搜尋** 列，您可以在其中搜尋特定檔案和檔案類型
 - **主視窗**，您可以在其中查看及管理檔案、專案、& 方案
 - **方案節點**，您可以在其中管理您的解決方案 () 
-- **專案節點**，您可以在其中管理專案 (s) 
+- 您可以在其中管理專案 (**Project 節點**) 
 - [相依性 **] 節點**，您可以在其中管理方案 & 專案相依性
 - **程式節點**，您可以在其中查看、編輯及管理您的程式或應用程式 (應用程式) 
-- [ **[Git 變更]](../version-control/git-with-visual-studio.md?view=vs-2019&preserve-view=true#git-changes-window)** 索引標籤，您可以在 Visual Studio 中使用 Git & GitHub，以與您的小組共同作業專案
+- [ **[git 變更]](../version-control/git-with-visual-studio.md?view=vs-2019&preserve-view=true#git-changes-window)** 索引標籤，可讓您在 Visual Studio 中使用 git & GitHub，以便與您的小組共同作業專案
 
 > [!TIP]
 > 如果您沒有看到 [方案總管] 工具視窗，您可以在 Visual Studio 功能表列中，使用 **View**  >  **方案總管** 或按下 **Ctrl** + **Alt** + **L** 來開啟它。
