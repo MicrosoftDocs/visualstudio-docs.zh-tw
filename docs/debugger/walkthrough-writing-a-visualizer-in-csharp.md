@@ -2,7 +2,7 @@
 title: '以 c # 撰寫視覺化檢視 |Microsoft Docs'
 description: '遵循逐步解說，以 c # 建立簡單的視覺化檢視。 它會顯示使用和不使用視覺化檢視專案範本時所需的步驟。'
 ms.custom: SEO-VS-2020
-ms.date: 05/27/2020
+ms.date: 07/02/2021
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 86123ece79f7bbde4f4f91fac657dcc235056c0b
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 47c7fa8eaa5a735f05b338101a1aefe0601e9915
+ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384989"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "113298271"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C\# 中撰寫視覺化檢視
 
-本逐步解說顯示如何使用 C# 撰寫簡易的視覺化檢視。 您在本逐步解說中建立的視覺化檢視會使用 Windows 表單訊息方塊來顯示字串內容。 這個簡單的字串視覺化程式本身並不實用，但它會顯示您必須遵循的基本步驟，以建立其他資料類型的更實用視覺化檢視。
+本逐步解說顯示如何使用 C# 撰寫簡易的視覺化檢視。 您將在本逐步解說中建立的視覺化檢視會使用 Windows 表單來顯示字串的內容。 這個簡單的字串視覺化程式本身並不實用，但它會顯示您必須遵循的基本步驟，以建立其他資料類型的更實用視覺化檢視。
 
 > [!NOTE]
-> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更您的設定，請移至 [ **工具** ] 功能表，然後選擇 [匯 **入和匯出設定**]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
+> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更您的設定，請移至 [**工具**] 功能表，然後選擇 [匯 **入和匯出設定**。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
 視覺化程式碼必須放在 DLL 中，偵錯工具將會讀取這個 DLL。 因此，第一個步驟是建立 DLL 的類別庫專案。
 
@@ -37,16 +37,18 @@ ms.locfileid: "112384989"
 
 ### <a name="to-create-a-class-library-project"></a>若要建立類別庫專案
 
-1. 建立新的類別庫專案。
+* 建立新的類別庫專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 輸入 **Ctrl + Q** 以開啟 [搜尋] 方塊，輸入 **類別庫**，選擇 [ **範本**]，然後選擇 [ **建立新的類別庫 ( .NET Framework)**。 在出現的對話方塊中選擇 [建立]。
+    選擇 **[** 檔案  >  **新增**  >  **Project**]。 在 [語言] 下拉式清單中，選擇 [ **c #**]。 在 [搜尋] 方塊中，輸入 **類別庫**，然後選擇 [**類別庫]， (.NET Framework)**。 按一下 [下一步] 。 在出現的對話方塊中，輸入名稱，然後 `MyFirstVisualizer` 按一下 [ **建立**]。
+
+    針對視覺化程式專案，請確定您選取的是 .NET Framework 類別庫，而不是 .net。 雖然需要 .NET Framework 視覺化，但呼叫的應用程式可以是 .net Core。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [ **新增專案** ] 對話方塊的左窗格中，選擇 [ **Visual c #**] 底下的 [ **.NET Framework**]，然後在中間窗格中選擇 [ **類別庫] ( .NET Framework)**。
-    ::: moniker-end
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **Project**]。 在 [**新增專案**] 對話方塊的左窗格中，選擇 [ **Visual c #**] 底下的 [ **.NET Framework**]，然後在中間窗格中選擇 [**類別庫] (.NET Framework)**。
 
-2. 輸入類別庫的適當名稱（例如），然後 `MyFirstVisualizer` 按一下 [ **建立** **] 或 [確定]**。
+    輸入類別庫的適當名稱（例如），然後 `MyFirstVisualizer` 按一下 [ **建立** **] 或 [確定]**。
+    ::: moniker-end
 
    建立類別庫之後，必須新增 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的參考，如此您才能使用於該處定義的類別。 不過，在加入參考之前，您必須重新命名一些類別，使其具有有意義的名稱。
 
@@ -101,7 +103,7 @@ ms.locfileid: "112384989"
   }
   ```
 
-  `Show` 方法中包含實際建立視覺化檢視對話方塊 (或其他使用者介面) 的程式碼，並會在偵錯工具中顯示已傳遞至視覺化檢視的資訊。 您必須加入該程式碼，以建立對話方塊並顯示資訊。 在本逐步解說中，您將使用 Windows 表單訊息方塊進行上述動作。 首先，您必須加入 System.object 的參考和指示詞 `using` 。
+  `Show` 方法中包含實際建立視覺化檢視對話方塊 (或其他使用者介面) 的程式碼，並會在偵錯工具中顯示已傳遞至視覺化檢視的資訊。 您必須加入該程式碼，以建立對話方塊並顯示資訊。 在本逐步解說中，您將使用 Windows Form 訊息方塊進行上述動作。 首先，您必須 `using` 為 System. Windows 加入參考和指示詞。形式。
 
 ### <a name="to-add-systemwindowsforms"></a>若要加入 System.Windows.Forms
 
@@ -109,7 +111,7 @@ ms.locfileid: "112384989"
 
 2. 在 [ **加入參考** ] 對話方塊的 [ **流覽** ] 索引標籤上，選取 **[流覽**]，然後尋找 System.Windows.Forms.DLL。
 
-    您可以在 *C:\Windows\Microsoft.NET\Framework\v4.0.30319* 中找到 DLL。
+    您可以在 *C：\ Windows \Microsoft.NET\Framework\v4.0.30319* 中找到 DLL。
 
 3. 按一下 [確定]  。
 
@@ -167,20 +169,24 @@ ms.locfileid: "112384989"
 
 2. 在 [ **組建** ] 功能表上，選擇 [ **組建 MyFirstVisualizer**]。 專案應該會順利建置。 在繼續進行之前，請更正任何建置錯誤。
 
-   接下來，您必須建立可執行的專案，以呼叫視覺化檢視的 DLL。 為了簡單起見，我們將使用主控台應用程式專案。
+   接下來，您必須建立可執行的專案，以呼叫視覺化檢視的 DLL。 為了簡單起見，請使用主控台應用程式專案。
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>若要將主控台應用程式專案加入至方案
 
-1. 在方案總管中，以滑鼠右鍵按一下方案，選擇 [ **加入**]，然後按一下 [ **新增專案**]。
+1. 在方案總管中，以滑鼠右鍵按一下方案，選擇 [**加入**]，然後按一下 [**新增 Project**。
 
     ::: moniker range=">=vs-2019"
-    在 [搜尋] 方塊中，輸入 **主控台應用程式**，選擇 [ **範本**]，然後選擇 [ **建立新的主控台應用程式 ( .NET Framework)**。 在出現的對話方塊中選擇 [建立]。
+
+    選擇 **[** 檔案  >  **新增**  >  **Project**]。 在 [語言] 下拉式清單中，選擇 [ **c #**]。 在 [搜尋] 方塊中，輸入 **主控台應用** 程式，然後選擇主控台應用程式 **(.NET Framework)** 或適用于 .net 的 **主控台應用程式**。 按一下 [下一步] 。 在出現的對話方塊中，輸入名稱，然後 `MyTestConsole` 按一下 [ **建立**]。
+
+    > [!NOTE]
+    > 如果您想要使用測試控管輕鬆地測試視覺化檢視，請建立 .NET Framework 主控台應用程式。 您可以改為建立 .NET 主控台應用程式，但 .NET 尚未支援稍後所述的測試控管，因此您必須安裝視覺化程式來進行測試。 在此案例中，請先在此建立主控台應用程式，然後遵循 [加入偵錯工具端資料物件](#add-a-debuggee-side-data-object)中所述的步驟。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。 在 [新增專案] 對話方塊左窗格的 [Visual C#] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。
-    ::: moniker-end
+    從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **Project**]。 在 [新增專案] 對話方塊左窗格的 [Visual C#] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。
 
-2. 輸入類別庫的適當名稱（例如），然後 `MyTestConsole` 按一下 [ **建立** **] 或 [確定]**。
+    輸入類別庫的適當名稱（例如），然後 `MyTestConsole` 按一下 **[確定]**。
+    ::: moniker-end
 
    此時，你必須加入必要的參考，如此 MyTestConsole 才能呼叫 MyFirstVisualizer。
 
@@ -226,15 +232,112 @@ ms.locfileid: "112384989"
 
 ### <a name="to-test-the-visualizer"></a>若要測試視覺化檢視
 
-1. 在 **方案總管** 中，以滑鼠右鍵按一下 **MyTestConsole** ，然後在快捷方式功能表上選擇 [ **設定為啟始專案** ]。
+1. 在 **方案總管** 中，以滑鼠右鍵按一下 [ **MyTestConsole** ]，然後選擇快捷方式功能表上的 [**設定為啟動 Project** ]。
 
 2. 在 [偵錯] 功能表上選擇 [啟動]。
 
     主控台應用程式隨即啟動，並出現視覺化檢視，並顯示 "Hello，World" 字串。
 
-   恭喜。 您已完成建置和測試第一個視覺化檢視。
+   恭喜。 您剛建立並測試了第一個視覺化檢視！
 
    如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用視覺化檢閱，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢閱。 如需詳細資訊，請參閱 [如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)。
+
+::: moniker range=">=vs-2019"
+## <a name="add-a-debuggee-side-data-object"></a>加入調試的端資料物件
+
+在本節中，您會從 `System.String` 資料物件切換至自訂資料物件。  
+
+1. 選擇 **[** 檔案  >  **新增**  >  **Project**]。 在 [語言] 下拉式清單中，選擇 [ **c #**]。 在 [搜尋] 方塊中，輸入 **類別庫**，然後選擇 [**類別庫] (.NET Framework)** 或 **類別庫** 以進行 .NET Standard。
+
+   >[!NOTE]
+   >如果您使用 .NET Framework 測試主控台應用程式，請確定您已建立 .NET Framework 類別庫專案。
+
+1. 按一下 [下一步] 。 在出現的對話方塊中，輸入名稱，然後 `MyDataObject` 按一下 [ **建立**]。
+
+1.  ( .NET Standard 類別庫僅) 方案總管中，請以滑鼠右鍵按一下專案，然後選擇 [**編輯 Project** 檔]。 將 `<TargetFramework>` 值變更為 `netstandard2.0` 。
+
+1. 在 `MyDataObject` 命名空間內，將預設程式碼取代為下列程式碼。
+
+   ```csharp
+   [Serializable] 
+   public class CustomDataObject
+   {
+      public CustomDataObject()
+      {
+         this.MyData = "MyTestData";
+      }
+      public string MyData { get; set; }
+   }
+   ```
+
+   針對唯讀的視覺化程式，例如在此範例中，不需要實 [VisualizerObjectSource](/dotnet/api/microsoft.visualstudio.debuggervisualizers.visualizerobjectsource)的方法。
+
+   接下來，將 MyFirstVisualizer 專案更新為使用新的資料物件。
+
+1. 在 [MyFirstVisualizer] 專案底下的方案總管中，以滑鼠右鍵按一下 [ **參考** ] 節點，然後選擇 [ **加入參考**]。
+
+1. 在 [ **專案**] 底下，選取 [ **MyDataObject** ] 專案。
+
+1. 在 Debuggerside.vb 的屬性程式碼中，更新目標值， `System.String` 並將變更為 `MyDataObject.CustomDataObject` 。
+
+   ```csharp
+   Target = typeof(MyDataObject.CustomDataObject),
+   ```
+
+1. 在 MyFirstVisualizer 專案中，將方法的程式碼取代為 `Show` 下列程式碼。
+
+   ```csharp
+   var data = objectProvider.GetObject() as MyDataObject.CustomDataObject;
+
+   // You can replace displayForm with your own custom Form or Control.  
+   Form displayForm = new Form();
+   displayForm.Text = data.MyData;
+   windowService.ShowDialog(displayForm);
+   ```
+
+   上述程式碼會使用資料物件的屬性，以表單的標題顯示。
+
+   接下來，更新主控台應用程式以使用自訂資料物件。
+
+1. 在 [MyTestConsole] 專案底下的方案總管中，以滑鼠右鍵按一下 [ **參考** ] 或 [相依性 **]** 節點，並將專案參考加入至 `MyDataObject` 。
+
+1. 在程式 .cs 中，以下列程式碼取代方法中的程式碼 `Main` 。
+
+   ```csharp
+   // String myString = "Hello, World";
+   CustomDataObject customDataObject = new CustomDataObject();
+
+   DebuggerSide.TestShowVisualizer(customDataObject.MyData);
+   ```
+
+1.  ( .NET 主控台應用程式) 將的呼叫括 `TestShowVisualizer` 在 try-catch 語句中，因為不支援測試控管。
+
+   ```csharp
+   try
+   {
+         DebuggerSide.TestShowVisualizer(customDataObject.MyData);
+   }
+   catch (Exception) {
+   }
+   ```
+
+   偵錯工具需要對視覺化檢視的參考。 維護參考的其中一種方式是將上述程式碼保持在原處。
+
+1. 針對 .NET Framework 主控台應用程式，您可以 (按 **F5**) 執行測試控管，也可以依照 [如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)中的指示進行。
+
+   如果您使用測試控管來執行應用程式，應用程式會顯示 Windows 表單。
+
+1. 若為 .NET 主控台應用程式，請將 `MyFirstVisualizer.dll` 和複製 `MyDataObject.dll` 到 how [To：安裝視覺化](../debugger/how-to-install-a-visualizer.md)程式中所述的資料夾。
+
+1. 安裝視覺化檢視之後，請設定中斷點，執行主控台應用程式，並將滑鼠停留在上方 `customDataObject` 。 如果一切都已正確設定，您應該會看到放大鏡圖示 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示")。
+
+   :::image type="content" source="../debugger/media/vs-2019/visualizer-csharp-data-object.png" alt-text="視覺化檢視放大鏡圖示。":::
+
+   當您從放大鏡選擇 [ **MyFirstVisualizer** ] 時，您會在標題中看到含有資料物件文字的表單。
+
+   ![顯示 Windows 表單的視覺化](../debugger/media/vs-2019/visualizer-csharp-windows-form.png)
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -248,7 +351,7 @@ ms.locfileid: "112384989"
 
 1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
 
-2. 在 [ **新增專案** ] 對話方塊的 [ **Visual c #**] 底下，選取 [ **.NET Framework**]。
+2. 在 [**新增 Project** ] 對話方塊的 [ **Visual c #**] 底下，選取 [ **.NET Framework**]。
 
 3. 在中間窗格中，選擇 [ **類別庫**]。
 

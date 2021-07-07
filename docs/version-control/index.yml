@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Visual Studio 版本控制檔
-summary: 使用版本控制技術（例如 Git 和 GitHub），在 Visual Studio 2019 內共用您的程式碼。
+summary: 使用版本控制技術（例如 Git 和 GitHub），從 Visual Studio 內共用您的程式碼。
 metadata:
   title: 版本控制 & 在 Visual Studio 中使用 Git 的原始檔控制
   description: 在 Visual Studio 中使用版本控制技術。 您可以在不離開程式碼基底的情況下，在 Git & GitHub 中共用、整合及管理您的程式碼版本。
@@ -11,12 +11,12 @@ metadata:
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 9bdd994d5fe1d5f54251ce49047feaf75145dcda
-  ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
+  ms.openlocfilehash: 8143a897914a0b9c2ca3adcdc5093c89852a2f53
+  ms.sourcegitcommit: 4b19d18874a5d3c3dbea67a8e478dc7d3a813769
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/03/2021
-  ms.locfileid: "113280403"
+  ms.lasthandoff: 07/07/2021
+  ms.locfileid: "113363985"
 landingContent:
 - title: 概觀
   linkLists:
@@ -44,7 +44,9 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Visual Studio (Preview) 的 Git 增強生產力
+    - text: Visual Studio 中的 Git 增強生產力
       url: https://devblogs.microsoft.com/visualstudio/enhanced-productivity-with-git-in-visual-studio/
+    - text: Visual Studio 2022 (Preview) 版本資訊
+      url: /visualstudio/releases/2022/release-notes-preview/
     - text: Visual Studio 2019 版本資訊
       url: /visualstudio/releases/2019/release-notes/

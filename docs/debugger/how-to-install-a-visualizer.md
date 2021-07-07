@@ -2,7 +2,7 @@
 title: 安裝視覺化 |Microsoft Docs
 description: 瞭解如何安裝視覺化檢視，使其可用於 Visual Studio 中的偵錯工具使用。
 ms.custom: SEO-VS-2020
-ms.date: 06/10/2020
+ms.date: 07/02/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2521983a797b676b9136ca14b733eb7afd054e27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 611347acfe48e561653d644097d56d029b6a4fa6
+ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904266"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "113298253"
 ---
 # <a name="how-to-install-a-visualizer"></a>如何：安裝視覺化檢視
 建立視覺化檢視後，您必須安裝該視覺化檢視，使 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以使用它。 安裝視覺化檢視的程序很簡單。
@@ -37,7 +37,10 @@ ms.locfileid: "99904266"
 
 1. 找出包含您所建立之視覺化的 DLL。
 
-   一般而言，如果偵錯工具端 DLL 和偵錯工具端 DLL 都指定 **任何 CPU** 做為目標平臺，這是最好的做法。 偵錯工具端 DLL 必須是 **任何 CPU** 或 **32** 位。 偵錯工具端 DLL 的目標平臺應該對應至偵錯專案進程。
+   一般而言，如果偵錯工具端 DLL 和偵錯工具端 DLL 都指定 **任何 CPU** 做為目標平臺，這是最好的做法。 偵錯工具端 DLL 必須是 **任何 CPU** 或 **32** 位。 偵錯工具端 DLL 的目標平臺應該對應至偵錯工具進程。
+
+   >[!NOTE]
+   > 偵錯工具端的視覺化檢視會載入 Visual Studio 進程，因此它必須是 .NET Framework DLL。 偵錯工具端可以是 .NET Framework 或 .NET Standard，視 Visual Studio 中正在進行的進程而定。
 
 2. 將 [偵錯工具端](create-custom-visualizers-of-data.md#to-create-the-debugger-side) DLL (以及相依于) 的任何 dll 複製到下列其中一個位置：
 
