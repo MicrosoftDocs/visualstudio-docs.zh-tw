@@ -7,6 +7,8 @@ ms.custom:
 - contperf-fy21q1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
+f1_keywords:
+- vs.publish
 dev_langs:
 - FSharp
 - VB
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e0a8e8a313e351d175822e2427378fb89703444
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 099bd2c6cc47895c913b3f852835d2fd09d0f9c3
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879224"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549481"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>將您的應用程式部署到資料夾、IIS、Azure 或其他目的地
 
@@ -31,7 +33,7 @@ ms.locfileid: "99879224"
 取得部署工作的協助：
 
 - 不確定要選擇哪一個部署選項？ 查看 [哪些發佈選項適合我？](#what-publishing-options-are-right-for-me)
-- 如需 Azure App Service 或 IIS 部署問題的說明，請參閱 [Azure App Service 和 iis 上的 ASP.NET Core 疑難排解](/aspnet/core/test/troubleshoot-azure-iis)。
+- 如需 Azure App Service 或 iis 部署問題的說明，請參閱[Azure App Service 和 iis 上的 ASP.NET Core 疑難排解](/aspnet/core/test/troubleshoot-azure-iis)。
 - 如需設定 .NET 部署設定的說明，請參閱 [設定 .net 部署設定](#configure-net-deployment-settings)。
 - 若要部署到新的目標，如果您先前已建立發行設定檔，請從已設定設定檔的 [**發行**] 視窗中選取 [**新增**]。
 
@@ -75,7 +77,7 @@ ms.locfileid: "99879224"
 
 當您選擇 Azure 時，可以選擇：
 
-- 在 Windows、Linux 或 Docker 映射上執行[Azure App Service](#azure-app-service)
+- [Azure App Service](#azure-app-service)在 Windows、Linux 或 Docker 映射上執行
 - 部署至[Azure Container Registry](#azure-container-registry)的 Docker 映射
 - [Azure 虛擬機器](#azure-virtual-machine)
 
@@ -121,7 +123,7 @@ ms.locfileid: "99879224"
 
 調整裝載於虛擬機器的應用程式涉及依需求啟動其他 VM，然後部署必要軟體。 這個額外控制層可讓您在全球各地區以不同的方式調整。 例如，如果您的應用程式服務各種地區辦公室的員工，則可以依據這些地區域中的員工數目來調整 VM，而這可能會降低成本。
 
-如需詳細資訊，請參閱 Azure App Service、Azure 虛擬機器和其他 Azure 服務之間的 [詳細比較](/azure/architecture/guide/technology-choices/compute-decision-tree) ，您可以使用 Visual Studio 中的 [自訂] 選項作為部署目標。
+如需詳細資訊，請參閱 Azure App Service、Azure 虛擬機器和其他 Azure 服務之間的[詳細比較](/azure/architecture/guide/technology-choices/compute-decision-tree)，您可以使用 Visual Studio 中的 [自訂] 選項作為部署目標。
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>選擇 Azure 虛擬機器的時機
 
@@ -149,9 +151,9 @@ ms.locfileid: "99879224"
 
 部署至檔案系統表示將應用程式的檔案複製到自己電腦上的特定資料夾。 部署到資料夾最常用於測試用途，或部署應用程式以供有限數目的人員使用（如果電腦也正在執行伺服器）。 如果在網路上共用目標資料夾，則部署至檔案系統之後，其他可能接著將它部署至特定伺服器的人員將可使用 Web 應用程式檔案。
 ::: moniker range=">=vs-2019"
-從 Visual Studio 2019 16.8 開始，資料夾目標包含使用 ClickOnce 發行 .Net Windows 應用程式的功能。
+從 Visual Studio 2019 16.8 開始，資料夾目標包含使用 ClickOnce 發佈 .net Windows 應用程式的功能。
 
-如果您想要使用 ClickOnce 發行 .NET Core 3.1 或更新版本的 Windows 應用程式，請參閱 [使用 Clickonce 部署 .Net Windows 應用程式](quickstart-deploy-using-clickonce-folder.md)。
+如果您想要使用 ClickOnce 發行 .net Core 3.1 或更新版本的 Windows 應用程式，請參閱[使用 ClickOnce 部署 .net Windows 應用程式](quickstart-deploy-using-clickonce-folder.md)。
 ::: moniker-end
 任何正在執行伺服器的本機電腦都可以透過網際網路或內部網路使用應用程式，而這取決於其設定方式和其所連接的網路。  (如果您將電腦直接連線到網際網路，請特別小心保護它免于遭受外部安全性威脅。 ) 因為您管理這些機器，所以您完全掌控軟體和硬體設定。
 
@@ -161,14 +163,14 @@ ms.locfileid: "99879224"
 
 - 您只需要將應用程式部署至檔案共用，而其他人將從該檔案共用部署至不同伺服器。
 ::: moniker range=">=vs-2019"
-- 您想要使用 ClickOnce 部署 .NET Windows 應用程式
+- 您想要使用 ClickOnce 部署 .net Windows 應用程式
 ::: moniker-end
 - 您只需要本機測試部署。
 - 您想要個別檢查並可能修改應用程式檔案，再將它們傳送至另一個部署目標。
 
 如需詳細資訊，請參閱 [快速入門-部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
 ::: moniker range=">=vs-2019"
-如需使用 ClickOnce 部署 .NET Windows 應用程式的詳細資訊，請參閱 [使用 Clickonce 部署 .Net windows 應用程式](quickstart-deploy-using-clickonce-folder.md)。
+如需使用 ClickOnce 部署 .net Windows 應用程式的詳細資訊，請參閱[使用 ClickOnce 部署 .net Windows 應用程式](quickstart-deploy-using-clickonce-folder.md)。
 ::: moniker-end
 
 如需選擇設定的其他說明，請參閱下列各項：
@@ -217,7 +219,7 @@ IIS 網頁伺服器可讓您將應用程式部署至 Azure 以外的 web 伺服�
 
 如需詳細資訊，請參閱 [快速入門-部署至網站](quickstart-deploy-to-a-web-site.md)。
 
-如需有關 IIS 上 ASP.NET Core 疑難排解的說明，請參閱 [Azure App Service 和 IIS 上的 ASP.NET Core 疑難排解](/aspnet/core/test/troubleshoot-azure-iis)。
+如需有關 IIS 上 ASP.NET Core 疑難排解的說明，請參閱[Azure App Service 和 IIS 上的 ASP.NET Core 疑難排解](/aspnet/core/test/troubleshoot-azure-iis)。
 
 ## <a name="import-profile"></a>匯入設定檔
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47c7fa8eaa5a735f05b338101a1aefe0601e9915
-ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
+ms.openlocfilehash: a6ce1a6d9f2f8a36d892d484cf9353e1312758b4
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "113298271"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549507"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C\# 中撰寫視覺化檢視
 
@@ -180,7 +180,7 @@ ms.locfileid: "113298271"
     選擇 **[** 檔案  >  **新增**  >  **Project**]。 在 [語言] 下拉式清單中，選擇 [ **c #**]。 在 [搜尋] 方塊中，輸入 **主控台應用** 程式，然後選擇主控台應用程式 **(.NET Framework)** 或適用于 .net 的 **主控台應用程式**。 按一下 [下一步] 。 在出現的對話方塊中，輸入名稱，然後 `MyTestConsole` 按一下 [ **建立**]。
 
     > [!NOTE]
-    > 如果您想要使用測試控管輕鬆地測試視覺化檢視，請建立 .NET Framework 主控台應用程式。 您可以改為建立 .NET 主控台應用程式，但 .NET 尚未支援稍後所述的測試控管，因此您必須安裝視覺化程式來進行測試。 在此案例中，請先在此建立主控台應用程式，然後遵循 [加入偵錯工具端資料物件](#add-a-debuggee-side-data-object)中所述的步驟。
+    > 如果您想要使用測試控管輕鬆地測試視覺化檢視，請建立 .NET Framework 主控台應用程式。 您可以改為建立 .NET 主控台應用程式，但 .NET 尚未支援稍後所述的測試控管，因此您必須安裝視覺化程式來進行測試。 針對 .NET 主控台應用程式，請先在這裡建立主控台應用程式，並新增必要的 DLL 和專案參考，然後依照 [加入偵錯工具端資料物件](#add-a-debuggee-side-data-object)中所述的步驟進行。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **Project**]。 在 [新增專案] 對話方塊左窗格的 [Visual C#] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。
@@ -247,7 +247,7 @@ ms.locfileid: "113298271"
 
 在本節中，您會從 `System.String` 資料物件切換至自訂資料物件。  
 
-1. 選擇 **[** 檔案  >  **新增**  >  **Project**]。 在 [語言] 下拉式清單中，選擇 [ **c #**]。 在 [搜尋] 方塊中，輸入 **類別庫**，然後選擇 [**類別庫] (.NET Framework)** 或 **類別庫** 以進行 .NET Standard。
+1. 在方案總管中，以滑鼠右鍵按一下方案，選擇 [**加入**]，然後按一下 [**新增 Project**。 在 [語言] 下拉式清單中，選擇 [ **c #**]。 在 [搜尋] 方塊中，輸入 **類別庫**，然後選擇 [**類別庫] (.NET Framework)** 或 **類別庫** 以進行 .NET Standard。
 
    >[!NOTE]
    >如果您使用 .NET Framework 測試主控台應用程式，請確定您已建立 .NET Framework 類別庫專案。
@@ -255,6 +255,10 @@ ms.locfileid: "113298271"
 1. 按一下 [下一步] 。 在出現的對話方塊中，輸入名稱，然後 `MyDataObject` 按一下 [ **建立**]。
 
 1.  ( .NET Standard 類別庫僅) 方案總管中，請以滑鼠右鍵按一下專案，然後選擇 [**編輯 Project** 檔]。 將 `<TargetFramework>` 值變更為 `netstandard2.0` 。
+
+   ```xml
+   <TargetFramework>netstandard2.0</TargetFramework>
+   ```
 
 1. 在 `MyDataObject` 命名空間內，將預設程式碼取代為下列程式碼。
 
@@ -321,7 +325,7 @@ ms.locfileid: "113298271"
    }
    ```
 
-   偵錯工具需要對視覺化檢視的參考。 維護參考的其中一種方式是將上述程式碼保持在原處。
+   主控台應用程式需要對視覺化檢視的執行時間參考。 您可以保留先前的程式碼來維護參考，而不是將其批註化。
 
 1. 針對 .NET Framework 主控台應用程式，您可以 (按 **F5**) 執行測試控管，也可以依照 [如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)中的指示進行。
 

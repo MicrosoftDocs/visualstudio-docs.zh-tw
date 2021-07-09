@@ -7,8 +7,8 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: ghogen
-ms.author: ghogen
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 monikerRange: '>=vs-2019'
 dev_langs:
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c7c38ed40143064090535735b2050dd31904d608
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 84a79015dc4b1147f078b0a970df52c553189c92
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390173"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549494"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>教學課程：擴充簡單的 c # 主控台應用程式
 
@@ -33,7 +33,7 @@ ms.locfileid: "112390173"
 
 真實世界的程式碼牽涉到許多專案在解決方案中一起運作。 現在，讓我們將另一個專案新增至計算機應用程式。 這會是提供一些計算機函數的類別庫。
 
-1. 在 Visual Studio 中，您可以使用最上層的 **功能表命令檔**[  >  **加入**  >  **新的專案**] 來加入新的專案，但您也可以用滑鼠右鍵按一下現有的專案名稱， (稱為「專案節點」 ) 然後開啟專案的快捷方式功能表 (或內容功能表) 。 此快捷方式功能表包含許多方法，可將功能新增至您的專案。 因此，以滑鼠右鍵按一下 **方案總管** 中的專案節點，然後選擇 [**加入**  >  **新專案**]。
+1. 在 Visual Studio 中，您可以使用最上層的 **功能表命令檔**[  >  **加入**  >  **新的 Project** 加入新的專案，但是您也可以用滑鼠右鍵按一下現有的專案名稱 (稱為「專案節點」 ) 開啟專案的快捷方式功能表 (或操作功能表) 。 此快捷方式功能表包含許多方法，可將功能新增至您的專案。 因此，以滑鼠右鍵按一下 **方案總管** 中的專案節點，然後選擇 [**加入**  >  **新的 Project**。
 
 1. 選擇 c # 專案範本 **類別庫 ( .NET Standard)**。
 
@@ -47,9 +47,9 @@ ms.locfileid: "112390173"
 
    如果您想要重新命名檔案中的任何參考，可能會被詢問您 `Class1` 。 這並不重要，因為您將會在未來的步驟中取代程式碼。
 
-1. 我們現在必須加入專案參考，讓第一個專案可以使用新類別庫所公開的 Api。  以滑鼠右鍵按一下第一個專案中的 [相依性] 節點，然後選擇 [**加入專案參考** **]** 。
+1. 我們現在必須加入專案參考，讓第一個專案可以使用新類別庫所公開的 Api。  以滑鼠右鍵按一下第一個專案中的 [相依性] 節點，然後選擇 [**加入 Project 參考** **]** 。
 
-   ![[新增專案參考] 功能表項目的螢幕擷取畫面](media/vs-2019/calculator2-add-project-reference-dark.png)
+   ![[新增 Project 參考] 功能表項目的螢幕擷取畫面](media/vs-2019/calculator2-add-project-reference-dark.png)
 
    [參考管理員] 對話方塊隨即顯示。 這個對話方塊可讓您加入其他專案的參考，以及您的專案所需的元件和 COM Dll。
 
@@ -350,7 +350,7 @@ namespace CalculatorProgram
 
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>新增 NuGet 套件：寫入 JSON 檔案
 
-1. 現在假設我們想要以 JSON 格式輸出作業，這是常用且可攜的格式，可用於儲存物件資料。 若要執行該功能，我們必須參考 Newtonsoft.Js上的 NuGet 套件。 NuGet 套件是發佈 .NET 類別庫的主要工具。 在 **方案總管** 中，以滑鼠右鍵按一下 CalculatorLibrary 專案的 [相依性] 節點，然後選擇 [**管理 NuGet 封裝** **]** 。
+1. 現在假設我們想要以 JSON 格式輸出作業，這是常用且可攜的格式，可用於儲存物件資料。 若要執行該功能，我們必須參考 NuGet 套件 Newtonsoft.Js。 NuGet 套件是發佈 .net 類別庫的主要工具。 在 **方案總管** 中，以滑鼠右鍵按一下 CalculatorLibrary 專案的 [相依性] 節點，然後選擇 [**管理 NuGet 封裝** **]** 。
 
    ![在快捷方式功能表上管理 NuGet 套件的螢幕擷取畫面](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
@@ -511,7 +511,7 @@ Visual Studio 偵錯工具是一項功能強大的工具，可讓您逐步執行
 
    在進行偵錯工具時，檢查變數是否持有您預期的值，通常是修正問題的關鍵。
 
-2. 在下方窗格中，查看 [ **區域變數** ] 視窗。  (如果已關閉，請選擇 [ **Debug**  >  **Windows**  >  **區域變數**] 來開啟它。 ) 
+2. 在下方窗格中，查看 [ **區域變數** ] 視窗。  (如果已關閉，請選擇 [ **Debug**]  >  **Windows**  >  **區域變數** 來開啟它。 ) 
 
    在 [區域變數] 視窗中，您會看到目前在範圍中的每個變數，以及其值和類型。
 
@@ -747,7 +747,7 @@ namespace CalculatorProgram
 }
 ```
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 恭喜您完成此教學課程！ 若要更深入了解，請繼續下列教學課程。
 

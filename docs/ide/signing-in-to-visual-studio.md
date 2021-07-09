@@ -1,6 +1,6 @@
 ---
 title: 登入
-description: 瞭解如何登入 Visual Studio。
+description: 登入 Visual Studio 來延長 Visual Studio 的試用期、解除鎖定 Visual Studio 等等
 ms.custom: contperf-fy21q1
 ms.date: 09/11/2020
 ms.topic: how-to
@@ -10,16 +10,16 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1335ab3d8f679f00fb7f52420d378baa1f2bd905
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 4b4c91a2ff4693b62ce8ac4d40d493995c52b81b
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222990"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549468"
 ---
-# <a name="sign-in-to-visual-studio-on-windows"></a>登入 Visual Studio Windows
+# <a name="sign-in-to-visual-studio-on-windows"></a>登入 Visual Studio Windows 
 
-雖然您不需要登入，但這麼做有許多好處。 當您登入時，您可以個人化、優化及豐富您的 Visual Studio 體驗。 
+雖然您不需要登入，但這麼做有許多好處。 在本文中，您將瞭解如何登[入](#how-to-sign-in)、如何[更新您的設定檔](#update-your-profile)，以及您的 Visual Studio 體驗的權益。 
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[登入 Visual Studio for Mac](/visualstudio/mac/signing-in)。
@@ -31,8 +31,6 @@ ms.locfileid: "113222990"
 > 使用 Visual Studio 2017 存取針對條件式存取設定的資源，可能會觸發降級的驗證體驗，並在相同的 Visual Studio 會話中提示重新驗證數次。 
 > 
 ::: moniker-end
-
-## <a name="benefits"></a>優點
 
 以下是您在登入後預期及可執行事項的完整清單：
 
