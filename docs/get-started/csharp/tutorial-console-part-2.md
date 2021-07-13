@@ -1,5 +1,5 @@
 ---
-title: '教學課程：擴充簡單的 c # 主控台應用程式'
+title: '教學課程2：擴充您的 c # 主控台應用程式'
 description: '逐步瞭解如何在 Visual Studio 中開發 c # 主控台應用程式。'
 ms.custom: vs-acquisition, get-started
 ms.date: 04/15/2021
@@ -16,20 +16,33 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 84a79015dc4b1147f078b0a970df52c553189c92
-ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
+ms.openlocfilehash: f7d1ae7d0d5f045c0772243c7fc4011a9f31088e
+ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549494"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113649157"
 ---
-# <a name="tutorial-extend-a-simple-c-console-app"></a>教學課程：擴充簡單的 c # 主控台應用程式
+# <a name="tutorial-extend-c-console-app-and-debug-in-visual-studio-part-2-of-2"></a>教學課程：在 Visual Studio 中擴充 c # 主控台應用程式和偵錯工具 (第2部，共2部) 
 
-在本教學課程中，您將瞭解如何使用 Visual Studio 來延伸您在第一個部分中建立的主控台應用程式。 您將瞭解每日開發需要 Visual Studio 的一些功能，例如管理多個專案，以及參考協力廠商套件。
+在本教學課程系列的第2部分中，您將深入瞭解每日開發所需要 Visual Studio 中的組建和偵錯工具功能，例如管理多個專案、偵錯工具和參考協力廠商套件。 您將會執行您在 [本教學課程的第1部分 (tutorial-console.md) 中所建立的 c # 主控台應用程式，並探索 Visual Studio 整合式開發環境 (IDE) 的一些功能。 本教學課程是兩部分教學課程系列的第二部分。
 
-如果您剛完成本系列的 [第一個部分](tutorial-console.md) ，則您已經有計算機主控台應用程式。  若要略過第1部分，您可以從 GitHub 存放庫開啟專案開始。 C # 計算機應用程式位於 vs 教學課程 [範例](https://github.com/MicrosoftDocs/vs-tutorial-samples)存放庫中，因此您可以直接依照 [教學課程：從存放庫開啟專案](../tutorial-open-project-from-repo.md) 以開始使用中的步驟進行。
+在本教學課程中，您將：
 
-## <a name="add-a-new-project"></a>新增專案
+> [!div class="checklist"]
+> * 將另一個專案加入至您的第一個專案。
+> * 參考程式庫和新增套件。
+> * 更進一步地進行調試。
+> * 檢查您的完整程式碼。
+
+
+## <a name="prerequisites"></a>必要條件
+
+因此，您必須：
++ [從本教學課程系列的第1部分使用計算機主控台應用程式](tutorial-console.md) 
++ 使用您可以從存放庫[開啟](../tutorial-open-project-from-repo.md)的[vs-教學課程範例](https://github.com/MicrosoftDocs/vs-tutorial-samples)存放庫中的 c # 計算機應用程式，開始使用。
+
+## <a name="add-another-project"></a>新增另一個專案
 
 真實世界的程式碼牽涉到許多專案在解決方案中一起運作。 現在，讓我們將另一個專案新增至計算機應用程式。 這會是提供一些計算機函數的類別庫。
 
@@ -749,15 +762,12 @@ namespace CalculatorProgram
 
 ## <a name="next-steps"></a>下一步
 
-恭喜您完成此教學課程！ 若要更深入了解，請繼續下列教學課程。
+恭喜您完成此教學課程！ 若要深入瞭解，請繼續進行下列內容：
 
-> [!div class="nextstepaction"]
-> [繼續更多 C# 教學課程](/dotnet/csharp/tutorials/)
-
-> [!div class="nextstepaction"]
-> [繼續 Visual Studio IDE 總覽](/../visual-studio-ide.md)
-
-## <a name="see-also"></a>另請參閱
-
-- [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+- [繼續更多 C# 教學課程](/dotnet/csharp/tutorials/)
+- [快速入門：建立 ASP.NET Core web 應用程式](../../ide/quickstart-aspnet-core.md)
 - [了解如何在 Visual Studio 中偵錯 C# 程式碼](tutorial-debugger.md)
+- 如何[建立和執行單元測試](../../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)的逐步解說
+- [執行 c # 程式](run-program.md)
+- [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+- [繼續 Visual Studio IDE 總覽](/../visual-studio-ide.md)

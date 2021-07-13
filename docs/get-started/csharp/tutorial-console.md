@@ -1,5 +1,5 @@
 ---
-title: '教學課程：建立簡單的 c # 主控台應用程式'
+title: '教學課程：建立簡單的 c # 主控台應用程式 '
 description: 了解如何逐步在 Visual Studio 中建立 C# 主控台應用程式。
 ms.custom: vs-acquisition, get-started
 ms.date: 02/10/2021
@@ -15,16 +15,31 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 5f155c2477c97b6f0d18a4cfd3d54386aee68dd9
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 20732b0d7fb09de6079b0c1b7b06d2ae89802a5b
+ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390368"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113649186"
 ---
-# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立簡單的 c # 主控台應用程式
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio-part-1-of-2"></a>教學課程：在 Visual Studio 中建立簡單的 c # 主控台應用程式 (第1部，共2部) 
 
-在 C# 的這個教學課程中，您將使用 Visual Studio 建立並執行主控台應用程式，並在這樣做的同時探索 Visual Studio 整合式開發環境 (IDE) 的一些功能。
+在本教學課程中，您將使用 Visual Studio 來建立和執行 c # 主控台應用程式，並探索 Visual Studio 整合式開發環境的一些功能， (IDE) 。 本教學課程是兩部分教學課程系列的第1部分。
+
+在本教學課程中，您將：
+
+> [!div class="checklist"]
+> * 建立 Visual Studio 專案。
+> * 建立 c # 主控台應用程式。
+> * 對您的應用程式進行偵錯。
+> * 關閉您的應用程式。
+> * 檢查您的完整程式碼。
+
+[在第2部分中](tutorial-console-part-2.md)，您將使用其他專案、偵錯工具和參考協力廠商套件來擴充此應用程式。
+
+## <a name="prerequisites"></a>必要條件
+
+您必須安裝 Visual Studio。
 
 ::: moniker range="vs-2017"
 
@@ -40,7 +55,7 @@ ms.locfileid: "112390368"
 
 ::: moniker range="vs-2022"
 
-如果您尚未安裝 Visual Studio 2022 Preview，請前往 [Visual Studio 2022 preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022) 頁面，免費進行安裝。
+如果您尚未安裝 Visual Studio 2022 preview，請前往[Visual Studio 2022 preview 下載](https://visualstudio.microsoft.com/vs/preview/vs2022)頁面，免費進行安裝。
 
 ::: moniker-end
 
@@ -52,7 +67,7 @@ ms.locfileid: "112390368"
 
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **專案**]。
+2. 從頂端功能表列中 **，選擇 [** 檔案  >  **新增**  >  **Project**]。
     (或者，按下 **Ctrl** + **Shift** + **N**) 。
 
 3. 在 [新增專案] 對話方塊的左窗格中，展開 C#]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將檔案命名為 **_計算機_**。
@@ -75,7 +90,7 @@ ms.locfileid: "112390368"
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
 
-1. 取消 [ **新增專案** ] 對話方塊，然後從頂端功能表列中選擇 [ **工具** > **取得工具和功能**]。
+1. 取消 **新的 Project** 對話方塊，然後從頂端功能表列中選擇 [**工具** > **取得工具和功能**]。
 
 1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
@@ -89,7 +104,7 @@ ms.locfileid: "112390368"
 
    ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在 [ **建立新專案** ] 視窗中，從 [語言] 清單中選擇 [ **c #** ]。 接下來，從 [平臺] 清單中選擇 [ **Windows** ]，然後從 [專案類型] 清單中選擇 **主控台** 。 
+1. 在 [ **建立新專案** ] 視窗中，從 [語言] 清單中選擇 [ **c #** ]。 接下來，從 [專案類型] 清單中選擇 [平臺清單] 和 [**主控台**] 中的 [ **Windows** ]。 
 
    套用 [語言]、[平臺] 和 [專案類型] 篩選器之後，請選擇 [ **主控台應用程式** ] 範本，然後選擇 [ **下一步]**。
 
@@ -478,7 +493,7 @@ ms.locfileid: "112390368"
 
 1. 如果您尚未這麼做，請關閉計算機應用程式。
 
-1. 關閉 Visual Studio 中的 [ **輸出** ] 窗格。
+1. 關閉 Visual Studio 中的 [**輸出**] 窗格。
 
    ![關閉 Visual Studio 中的 [輸出] 窗格](./media/csharp-calculator-close-output-pane.png)
 
@@ -486,7 +501,7 @@ ms.locfileid: "112390368"
 
 1. 關閉 Visual Studio。
 
-## <a name="code-complete"></a>程式碼完成
+## <a name="review-code-complete"></a>審核：程式碼完成
 
 在本教學課程中，我們對計算機應用程式進行了許多變更。 應用程式現在會更有效率處理運算資源，並處理大部分的使用者輸入錯誤。
 
@@ -608,7 +623,7 @@ namespace Calculator
 
 ```
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 :::moniker range="vs-2017"
 
@@ -627,10 +642,15 @@ namespace Calculator
 繼續進行本教學課程的第二部分：
 
 > [!div class="nextstepaction"]
-> [繼續進行第2部分](tutorial-console-part-2.md)
+> [教學課程第2部分：使用多個專案和協力廠商套件](tutorial-console-part-2.md)
 :::moniker-end
 
-## <a name="see-also"></a>另請參閱
+也請注意：
 
-* [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
-* [了解如何在 Visual Studio 中偵錯 C# 程式碼](tutorial-debugger.md)
+- [繼續更多 C# 教學課程](/dotnet/csharp/tutorials/)
+- [快速入門：建立 ASP.NET Core web 應用程式](../../ide/quickstart-aspnet-core.md)
+- [了解如何在 Visual Studio 中偵錯 C# 程式碼](tutorial-debugger.md)
+- 如何[建立和執行單元測試](../../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)的逐步解說
+- [執行 c # 程式](run-program.md)
+- [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+- [繼續 Visual Studio IDE 總覽](/../visual-studio-ide.md)
